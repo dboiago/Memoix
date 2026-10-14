@@ -1,0 +1,70 @@
+{
+  "url": "https://www.chinasichuanfood.com/chicken-feet-salad/",
+  "slug": "chicken-feet-salad_chinasichuanfood_704bd438",
+  "title": "Chicken Feet Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:34:23.177Z",
+  "ldName": "Chicken Feet Salad",
+  "ldTime": "PT734M",
+  "ldPrepTime": "PT14M",
+  "ldCookTime": "PT720M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Chinese, Sichuan",
+  "ldCategory": "Snack",
+  "ldKeywords": "chicken, feet, sweet and sour",
+  "ldIngredientsRaw": [
+    "20  chicken feet",
+    "1 tbsp. Chinese cooking wine",
+    "1/2 tbsp. white rice vinegar",
+    "3 tbsp. light soy sauce",
+    "1/3 cup rice vinegar (, or black vinegar )",
+    "2  lemon (, smaller ones  (around 200g))",
+    "1/4 cup chopped coriander",
+    "1 tbsp. chopped ginger",
+    "2  garlic cloves ( ,smashed)",
+    "1 tbsp. sugar",
+    "3  fresh Thai chili pepper (, one red and one green| cut into small circles. This can be adjusted by persoanl perference)",
+    "1 tsp. salt"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the claws and then cut each chicken foot into 2 pieces.  Smaller pieces mean better flavors in a shorter time.",
+    "In a deep pot with enough cold water, add chicken feet, cooking wine, and rice vinegar. Bring the content to a boil and then cook for 8 minutes (depending on how soft you want the chicken feet to be).",
+    "Once cooked, transfer out and clean with warm water (removing extra colloid) . Then pour in cold water to soak the chicken feet for 20 minutes. Soaking with cold water makes the chicken feet&#39; skin more elastic.",
+    "Prepare all the seasonings and herbs: add lemon pieces, garlic, ginger, chili peppers, coriander steam, and coriander.",
+    "Mix in light soy sauce, vinegar, and sugar. Make a message with the chicken feet for 1 or 2 minutes. Let the sauce combine completely.",
+    "Cover with plastic wrapper and set aside in the fridge overnight."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "522 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "41 g",
+    "fatContent": "27 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "156 mg",
+    "sodiumContent": "2296 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "20 chicken feet",
+    "1 tbsp. Chinese cooking wine",
+    "1/2 tbsp. white rice vinegar",
+    "[Sauce]",
+    "3 tbsp. light soy sauce",
+    "1/3 cup rice vinegar , or black vinegar",
+    "2 lemon , smaller ones  (around 200g)",
+    "1/4 cup chopped coriander",
+    "1 tbsp. chopped ginger",
+    "2 garlic cloves  ,smashed",
+    "1 tbsp. sugar",
+    "3 fresh Thai chili pepper , one red and one green| cut into small circles. This can be adjusted by persoanl perference",
+    "1 tsp. salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

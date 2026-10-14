@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Coconut Curry Chicken",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "328",
+      "carbohydrateContent": "16",
+      "fatContent": "22",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "Heat the oil in a large skillet or Dutch oven over low heat, and immediately add the curry powder. Let it cook in the oil for 1-2 minutes, making sure not to burn it. In the meantime, dice the onion and smash the garlic. Add them to the pot, turn the heat up to medium, and give everything a stir.",
+      "Stir in the coconut milk and water (or chicken broth). Bring to a boil. While you’re waiting for that, dice the tomatoes and prep the potatoes. Add them both to the pot and season with salt, then add the sugar. Cover the lid and simmer for 10-15 minutes, until the potatoes are cooked through.",
+      "Cut the chicken thighs into chunks and season with salt and pepper. Once the potatoes are cooked through, add the chicken to the pot and give everything a stir. Cover the lid and cook for 10 minutes. Adjust seasoning to taste, and serve with rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": "400 ml",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: chicken broth, 475 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled and cut into bite-sized chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, skinless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and White Pepper (black Pepper May Be Substituted)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3dc0b3089a76588a711b4a0af2931658c627cf8b67bdfee6a22f9386b6e918e9",
+    "lineage_hash": "a1b2c8b1f6253ce3b828ed01d3f9c1e0f0abf44eefeea95870a782bc3fc5be99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/coconut-curry-chicken/",
+    "fetchedAt": "2026-08-02T02:15:34.920Z"
+  },
+  "rawSource": "https://thewoksoflife.com/coconut-curry-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

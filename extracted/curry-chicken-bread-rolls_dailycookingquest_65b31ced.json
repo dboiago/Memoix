@@ -1,0 +1,253 @@
+{
+  "recipe": {
+    "name": "Curry Chicken Bread Rolls",
+    "time": "2 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a frying pan on medium high heat, sauté onion, garlic, and shallot until fragrant. About 3 minutes.",
+      "Add curry leaves and curry paste into the pan, mix well, cook until fragrant. About 3 minutes.",
+      "Add chicken and potato, mix well. Add water, mix well, and bring to a boil. Reduce heat to a simmer, cook until chicken and potato are cooked, and until the sauce is really really dry.",
+      "Turn the heat off, remove to a mixing bowl, and chill in the fridge.",
+      "Mix together warm milk with 10 gram sugar and active dry yeast. Set aside for 15 minutes until foamy.",
+      "Whisk together bread flour (or all purpose flour), 10 gram sugar, and salt in a mixing bowl. Make a well, then add the foamy yeast solution, 2 eggs, and butter. Knead until the dough is non-sticky, soft, smooth, and elastic. You may need to add a bit more flour if it is too sticky. Kneading time is about 20 minutes.",
+      "Divide the dough into 18 portions.",
+      "Roll each portion of dough into a flat circle, about 4\" in diameter, place 1 medium ice cream scoop of chicken curry filling (1 1/2 tablespoon of filling) at the center of the dough, seal by pinching the edges together, and gently shape into a ball. Place on a baking tray lined with parchment paper.",
+      "Repeat for another 17 portions.",
+      "Cover the bread with a wet kitchen towel/saran plastic wrap. Proof until the volume is doubled, about 1 hour in a warm kitchen.",
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Brush each bread with egg wash. Bake the bread for 20-25 minutes, or until golden brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Curry Filling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken (breast/thigh)",
+        "unit": "g",
+        "notes": "cut into small cubes, about 1/4\" to 1/2\"",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "g",
+        "notes": "cut into small cubes, about 1/4\" to 1/2\"",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Milk",
+        "unit": "g",
+        "notes": "38 Celsius or 100 Fahrenheit",
+        "amount": "240",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": "or all purpose flour",
+        "amount": "600",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "60",
+        "section": "Curry paste",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Milk/water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b65cf4f7471a1eb888fe92814606fe601ce6ce7d88eb902987cab0e0929d888",
+    "lineage_hash": "f7f7be8725c70b0d3e193c9aef7da6b28875e01b3cbd951810abfbb259ac4926"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-curry-bread-rolls.html",
+    "fetchedAt": "2026-08-02T03:37:42.353Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-curry-bread-rolls.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

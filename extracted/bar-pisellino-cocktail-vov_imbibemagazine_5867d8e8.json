@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Bar Pisellino Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cordial",
+    "garnish": [
+      "Grated Dark Chocolate"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour a fresh shot of espresso into a cordial glass. Add the Cognac, then spoon warm zabaione over the surface. Garnish with grated dark chocolate.",
+      "Zabaione: In a small copper or glass mixing bowl, combine 4 medium egg yolks and 8 Tbsp. of granulated sugar and beat with an electric hand mixer until the mixture is fluffy, creamy and pale. Place the bowl over a saucepan filled with 1 inch of barely simmering water, and slowly add 4 oz. of Cognac and 2 oz. of nocino in a steady stream, whisking until smooth. Continue whisking for approximately 10 minutes, or until the zabaione is thick enough to coat the back of a spoon. Let the mixture cool, and keep it at room temperature for use. Use immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zabaione",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shot Espresso",
+        "unit": null,
+        "notes": "freshly brewed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nocino",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14175750190777008317fdcdacb8a9d57cd31cd394589f0e0acd4393d83b435f",
+    "lineage_hash": "1973e474cb88d2248c5e45d7a1e77847da11e4ae4850259b50c5b44f0da02ad6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-pisellino-cocktail-vov/",
+    "fetchedAt": "2026-08-03T17:58:26.413Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-pisellino-cocktail-vov/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

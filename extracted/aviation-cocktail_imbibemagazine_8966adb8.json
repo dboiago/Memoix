@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Aviation Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, double strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Maraschino Liqueur",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Crème De Violette",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad5f044646364c40160e3a6ff083fd7455e8a9d1a551cf1b61a9fe96951b1fd1",
+    "lineage_hash": "01d96432b9ce235f9d388ab34c5d4360bfce839668dcc6a75c1314ec3fe67ae3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-aviation/",
+    "fetchedAt": "2026-08-03T23:36:02.875Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-aviation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

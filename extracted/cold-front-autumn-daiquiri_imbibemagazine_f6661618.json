@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Cold Front Autumn Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker. Shake with ice, then double strain into a chilled coupe. Garnish.",
+      "Sweet Spice Demerara Syrup2 grams star anise\n8 grams dried ginger\n6 grams vanilla bean\n6 grams black pepper\n6 grams cinnamon\n3 grams nutmeg\n5 grams dried orange peel\n2 cups water\n2 cups granulated sugar",
+      "Grind all of the ingredients in a spice grinder, sift and regrind until all the spices are powdery and pass easily through a strainer. Add 1 oz. of the spice mix to 2 cups of water and 2 cups of sugar and simmer on low heat for 20 minutes. Fine strain into a glass container and refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Spice Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17dffc4d70424b397471610088836029b86babe00b603e7e36063b4b2d1859f0",
+    "lineage_hash": "f79f55fe3d9413425c24c0dd4b1e26db7cfe8f12e80edc829e8ea5e753238d54"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-front-autumn-daiquiri/",
+    "fetchedAt": "2026-08-03T18:13:38.672Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-front-autumn-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

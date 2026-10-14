@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Braised Beef With Red Wine & Vegetables",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large frying pan, saute the carrots, onion, celery, garlic and tomatoes in oil until golden brown. Remove the vegetables from the pan and allow to cool. Place them in a large bowl with the wines and beef cheeks",
+      "Completely cover the meat and vegetables by 3cm, adding water if necessary. Leave to marinate for at least 12 hours",
+      "After marinading, empty the bowl into a colander over another bowl to collect all the liquid from the marinade, reserving the meat and vegetables",
+      "Place a large frying pan on a high heat. Once hot add the vegetable oil and cook the cheeks until dark golden in colour As you remove the sealed pieces of meat, dust each one with flour and place in a braising pot",
+      "Add the marinade and vegetables to the braising pot and bring to the boil. Skim the top, then add the beef stock, Worcestershire sauce and bouquet garni. Bring back to simmering point then cover with a tight-fitting lid and place in the oven at 150˚C/Gas mark 2",
+      "After about two and a half hours check the meat is tender all the way through. If it is still not tender, cook it further, checking it every 15 minutes or so until it reaches desired tenderness",
+      "Remove the pot from the oven and allow the cheeks to cool in the liquid. Transfer the meat from the braising pot to a clean pot and cover with foil. Thicken the cooking liquid if necessary by simmering until reduced to the required consistency, then pour it over the braised beef",
+      "Slice the courgette and pan fry in olive oil until golden",
+      "Reheat the meat and liquid and adjust the seasoning, adding the tomato quarters and courgette",
+      "Divide the braised beef and vegetables between serving plates, sprinkle with chopped parsley and basil and drizzle with olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheek",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "peeled and quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2227e805025171b6b2df7c5c7117bee669075d759ace75a4caba39d975ed266",
+    "lineage_hash": "9dcd1e8ed218786e8ee5088bf31323ebc596b223723fbb8f6d008f49cef6261c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-recipe-red-wine-vegetables",
+    "fetchedAt": "2026-08-03T16:16:42.517Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-recipe-red-wine-vegetables",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

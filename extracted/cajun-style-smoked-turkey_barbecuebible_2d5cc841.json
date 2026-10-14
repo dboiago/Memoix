@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Cajun-Style Smoked Turkey",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the packet of giblets from the neck and/or body cavity of the turkey and set aside for another use. If your turkey has a metal trussing clamp, leave it in place if possible. Remove and discard the fat just inside the body cavities of the turkey. Rinse the bird, inside and out, under cold running water and then drain and blot dry. If the turkey does not have a metal clamp, truss the bird with butchers string.",
+      "Using a kitchen syringe, inject the Injector Sauce into the turkey.",
+      "Set up the grill for indirect grilling and preheat to medium-low. If using a charcoal grill, place a large drip pan in the center. If using a gas grill, place all the wood chips in the smoker box or in a smoker pouch and preheat on high until you see smoke, then reduce the heat to medium-low.",
+      "When ready to cook, brush and oil the grill grate. If using a charcoal grill, toss 1 cup of wood chips on the coals. Place the turkey in the center of the hot grate, away from the heat, and cover the grill. Grill the turkey until cooked through, 3 to 4 hours. To test for doneness, insert an instant-read meat thermometer into the thickest part of a thigh, but do not touch the bone. The internal temperature should be between 160 and 170 degrees F. If using charcoal, you’ll need to add 12 fresh coals and 1/2 cup wood chips per side every hour. If the turkey starts to brown too much, cover it with aluminum foil.",
+      "Transfer the turkey to a platter, cover loosely with aluminum foil, and let rest for 10 minutes, then untruss. Carve and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turkey (12 to 14 Pounds)",
+        "unit": null,
+        "notes": "completely thawed if frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Injector Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: vegetable oil, melted",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b560211fbab31861785f084ffcf3cb94dedd5b7f86e1de8bc735f2c445590889",
+    "lineage_hash": "533df9e9cafad8d5b86611211652aff3964f52f5ff26b167e4c5fbddf732c82f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cajun-style-smoked-turkey/",
+    "fetchedAt": "2026-08-03T04:58:37.864Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cajun-style-smoked-turkey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

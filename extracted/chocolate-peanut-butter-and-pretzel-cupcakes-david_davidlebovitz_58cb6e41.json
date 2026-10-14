@@ -1,0 +1,271 @@
+{
+  "recipe": {
+    "name": "Chocolate, Peanut Butter and Pretzel Cupcakes",
+    "time": null,
+    "course": "breads",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the cupcakes, preheat the oven to 350ºF (180ºC) and line two 12 cup muffin pans with cupcake liners.",
+      "Mix the cocoa powder and hot coffee together in a medium bowl, stirring until it’s a thick paste. In a separate bowl, stir together the buttermilk, oil, vanilla, egg, egg yolk, and salt. Gradually stir the buttermilk mixture into the cocoa, mixing until smooth.",
+      "Sift together the flour, sugar, baking powder, and baking soda.",
+      "Stir the dry ingredients into the cocoa mixture just until combined. Divide the batter between in the muffin cups so each is 2/3rd full; depending on the size of your cups or molds, you may get a few less. (You can pour the batter into a measuring cup or use a spring-loaded ice cream scoop to portion the batter more easily.)",
+      "Bake the cupcakes for 20 to 25 minutes, until the centers lightly spring back when you touch them. Let cool completely.",
+      "To make the peanut butter buttercream, put the water, sugar, corn syrup, and cream of tartar in a heavy, nonreactive saucepan fitted with a candy thermometer.",
+      "Put the egg yolks and the egg in the bowl of a stand mixer fitted with the whip attachment. Turn the mixture to high speed and let whip until the eggs become thick and hold their shape. When the sugar syrup reaches 235ºF (113ºC), turn off the mixer, add the xanthan gum, then turn it back on. With the mixer on medium-high speed, rest the syrup pot against the side of the bowl and gradually pour the syrup into the eggs in a slow, steady stream – making sure to aim between the sides of the bowl and the whip. Do not pour too fast, or you’ll scramble the eggs.",
+      "Turn the mixer back to high and whip until the side of the bowl feels cool to the touch. (The authors wisely recommend using the inside of your wrist for a more accurate gauge.) Once the mixture is cool, remove the whip and replace with the paddle attachment. Cut the butter into tiny slivers or bits, no thinner than a slim coin or no larger than peas, and add them one-by-one while the mixer is going at medium-high speed. (If you have a pouring shield, you might want to use it as the buttercream can splatter – a towel draped over the top can work to contain splatters as well.)",
+      "Continue beating and adding the butter until it’s all added and smooth. (They offer some tips in the book in case your buttercream is slightly separated – namely adding a bit more butter – but adding the peanut butter in the next step should bring it back to smoothness, if necessary.)",
+      "When done, switch the speed to low and add the peanut butter, salt, and vanilla. Taste, and add more peanut butter a tablespoon at a time, if desired, until the right taste is achieved. You can add more salt as well.",
+      "Spread the buttercream thickly over the cupcakes, or pipe it in mounds over each cupcake, using a pastry bag fitted with a large plain tip (1/2-inch, 1,75cm), then refrigerate the cupcakes for 20 minutes. If you don’t use it all, see the notes for freezer storage.",
+      "Pulse the peanuts and pretzel pieces in a food processor, or crush in a ziptop bag with a rolling pin, just enough so there are a few bigger, unruly pieces, here and there. Dump the mixture into a bowl and press the tops of the cupcakes in the pretzel mixture; if it doesn’t stick well, let the frosted cupcakes sit at room temperature to warm up a bit.",
+      "To make the ganache, warm the cream in a small saucepan until almost boiling. Remove from heat and add the chopped chocolate. Let sit 2 minutes, then stir until smooth. If it’s too thick to drizzle, add a touch more cream to thin it out. Use a teaspoon to drizzle the chocolate ganache over the cupcakes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dutch-process Cocoa Powder",
+        "unit": "C",
+        "notes": "75g",
+        "amount": "¾",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Very Hot Coffee",
+        "unit": "C",
+        "notes": "160ml",
+        "amount": "⅔",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "160ml",
+        "amount": "⅔",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "125ml, such as canola or grapeseed",
+        "amount": "½",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "½",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "190g",
+        "amount": "1⅓",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "1¾",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chocolate Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "400g",
+        "amount": "2",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Thxanthan Gum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "lb",
+        "notes": "680g, cold",
+        "amount": "1½",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Natural Peanut Butter",
+        "unit": "C",
+        "notes": "180g, plus additional if necessary",
+        "amount": "¾",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": "Peanut Butter Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": "110g",
+        "amount": "¾",
+        "section": "Pretzel-Peanut Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Broken Up Large Pretzels",
+        "unit": "C",
+        "notes": "90g",
+        "amount": "1½",
+        "section": "Pretzel-Peanut Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": "Chocolate Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 55g, chopped",
+        "amount": "2",
+        "section": "Chocolate Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "pinch",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": "Chocolate Ganache",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "438f14bc65a998ba24a49b77917ba8c19e7e0e31ff2021f8e9503ba3403536b3",
+    "lineage_hash": "c8646a0f3c9315927a0af43537ad0e9ca95f10f54189bb387866f45c310c9458"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/robicellis-recipe-chocolate-peanut-butter-pretzel-cupcakes/",
+    "fetchedAt": "2026-08-02T22:42:32.281Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/robicellis-recipe-chocolate-peanut-butter-pretzel-cupcakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

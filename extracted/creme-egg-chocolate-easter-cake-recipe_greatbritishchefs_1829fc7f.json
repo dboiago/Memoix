@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Creme Egg Chocolate Easter Cake",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Butter 2 x 20.5cm (8”) sandwich tins and line the base with some baking paper",
+      "Place all of the cake ingredients in a food mixer, or a bowl if using a hand mixer, and mix on low for 2–3 minutes before turning to high and beating for 1 minute. You will have a light and fluffy cake batter",
+      "Divide the cake batter between the prepared tins and smooth the tops with a spoon. Bake for 20–25 minutes, or until the cakes are well risen and a toothpick or skewer inserted in the middle of the cakes comes out clean",
+      "Leave the cakes to cool for 2 minutes in the tin before carefully turning them out onto a wire rack. Allow to cool completely before decorating them",
+      "Place 1 cake half on a serving platter and spread half of the chocolate cream cheese over the cake; place the second cake on top and spread the remaining chocolate cream cheese over the top as frosting",
+      "Drizzle the melted white chocolate over the top and then arrange the Creme Egg halves around the cake in a circle before scattering the chocolate buttons over the top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "mixed with 2 tablespoons full fat milk",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Buttons",
+        "unit": "g",
+        "notes": "or grated milk chocolate",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": "chocolate flavour",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creme Eggs",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Chips",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Chips",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f55832b5cc9d6d1aa506ee234d92d9c5a1b66961ed906c1597cc96796028256",
+    "lineage_hash": "cf48c4447605770977cb92757296247bc0f6f53c2dd7234edf21f0ae332fa089"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/creme-egg-cake-recipe",
+    "fetchedAt": "2026-08-03T13:24:19.134Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/creme-egg-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

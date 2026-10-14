@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Damson Mess",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the hazelnuts on a baking tray and toast in the preheated oven for 5–10 minutes, or until golden. Set aside to cool and reduce the oven temperature to 170°C/gas mark 4",
+      "Add the egg whites to the bowl of an electric mixer and whisk on high speed until stiff peaks form",
+      "Gradually add the sugar, a spoonful at a time, whisking well between each addition.  When all the sugar has been added, scrape down the sides of the bowl with a spatula. Add the vinegar and whisk for another 6–8 minutes until the mixture is stiff and glossy",
+      "Roughly chop the hazelnuts in half and fold 80g of them gently into the meringue, reserving 20g to garnish",
+      "Line a large baking tray with baking paper and dollop large spoonfuls of mixture onto the paper, leaving some space for them to expand in the oven. Bake for 1 hour, remove from the oven and allow to cool",
+      "Meanwhile, prepare the damson sauce by placing the damsons and the sugar in a small saucepan over a low heat. When the fruit has completely broken down, pass it through a sieve into a small bowl. Discard the stones and skins",
+      "When you are ready to serve, whip the cream until soft peaks form and break up the meringue into bite-size pieces. Loosely fold the meringue into the cream and add a spoonful to a glass serving dish, or individual glasses",
+      "Drizzle over some damson sauce and add another layer of cream and meringue mix. Repeat, alternating with meringue and sauce until you have filled the dish or individual glasses"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f9f5b4687f8ba7184b214f35219ec6b02ab4d919431f954d905cb0fbb78cfa5",
+    "lineage_hash": "04954cc3f89942366289aa5d0c226f1eb8a83f044c02ba30212a3c3341f4c573"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/damson-mess-recipe",
+    "fetchedAt": "2026-08-03T09:29:48.447Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/damson-mess-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

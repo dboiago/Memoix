@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Dill Pickles",
+    "time": "10 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place all of the ingredients (except the cucumbers and dill) in a pan. Bring to the boil, then turn down to a simmer and add the dill",
+      "Stir until the sugar and salt have dissolved, then remove from the heat and allow to cool",
+      "Place the cucumbers in a sterilised jar. Once the pickling liquor has cooled to room temperature, pour over the cucumbers",
+      "Leave the cucumbers to pickle for at least 2 weeks, and when you are happy with the flavour, transfer the jar to the fridge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Cucumbers",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a220d2bffdaaad4d2bbdbec0640b8519b4ec37b47cb176bb84110be2a28cee4",
+    "lineage_hash": "95c059dc513bce9761844b008ebaf99b71224a712596ef79a8fae8cf411e6922"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dill-pickles-recipe",
+    "fetchedAt": "2026-08-03T11:01:31.256Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dill-pickles-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

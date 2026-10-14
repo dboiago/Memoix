@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Dutch Artist's Special",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Coupe",
+    "garnish": [
+      "Redcurrant Bunch Laid Across Rim"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of redcurrant bunch laid across rim.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oloroso Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirschwasser",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groseille Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f08380907ded308566ebadf2274415c85eae3218ea45acf6496e5d7d6d054873",
+    "lineage_hash": "bfc54c133c6b53e377b1118eb0ebfc1999796b5f749cbe037a7c17558a8a7ca3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4043/dutch-artists-special",
+    "fetchedAt": "2026-08-03T12:15:15.803Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4043/dutch-artists-special",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

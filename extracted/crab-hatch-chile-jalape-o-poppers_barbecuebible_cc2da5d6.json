@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Crab-Hatch Chile Jalapeño Poppers",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 400°F. Line a baking sheet with foil; lightly spray with cooking spray. In a large bowl, gently combine cheese, crabmeat, and Hatch chile.",
+      "Carefully remove seeds and veins from jalapeño chile halves. Spoon crabmeat mixture evenly into jalapeño chile halves. Spoon crabmeat mixture evenly into jalapeño chile halves. Arrange on prepared baking sheet. Bake at 400°F until jalapeño chiles just start to get tender and cheese browns, about 7 to 10 minutes. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "C",
+        "notes": "about 1 pound, shredded",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lump Crabmeat",
+        "unit": "lb",
+        "notes": "cleaned",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hatch Chile Peppers",
+        "unit": null,
+        "notes": "about ⅓ cup, fresh, roasted, peeled, stems and seeds removed, and diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Chile Peppers (about 1½ Pounds)",
+        "unit": "large",
+        "notes": "fresh, halved",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "107f2d9e01292ac6da475ac34388888b294dcceb5fbc82ba9c7a8f68f35fcfb2",
+    "lineage_hash": "bd6525507f250d6d9f840b654664103c6b7b442e8d16bc10d186841134511085"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/crab-hatch-chile-jalapeno-poppers/",
+    "fetchedAt": "2026-08-03T06:46:11.622Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/crab-hatch-chile-jalapeno-poppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

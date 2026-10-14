@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chinese Pickled Peppers (Quick Pickled Pao Jiao)",
+    "time": "24 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "4",
+      "carbohydrateContent": "0.5",
+      "fatContent": null,
+      "proteinContent": "0.1"
+    },
+    "directions": [
+      "Place the jalapenos, garlic, and ginger in a heat proof 16-oz (473 ml) jar or a container, they should be well packed together. Sprinkle over the salt, sugar, and pour in baijiu.",
+      "Combine the water and rice vinegar in a small pot and bring to a boil. Pour over the jalapenos.",
+      "Cover the pickles and allow them to cool. Seal and refrigerate for 24 to 48 hours before serving. The pickles should be able to stay well for at least a month in the refrigerator. Always use a clean pair of chopsticks to serve them, to prevent contamination."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jalapenos",
+        "unit": null,
+        "notes": "*Footnote 1, quartered and deseeded, or sliced and deseeded",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baijiu",
+        "unit": "tsp",
+        "notes": "or vodka",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese White Rice Vinegar",
+        "unit": "C",
+        "notes": "or regular rice vinegar, or distilled vinegar",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe12b35f0d2b688da3b87f7abdf80f1b73daf757dc6da88521278cd38dec7f96",
+    "lineage_hash": "aef7bb5d4104c8f1904e9da9d13f0bc8251fbae138166788ace3e2b0861e27dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-pickled-peppers/",
+    "fetchedAt": "2026-08-01T22:10:20.832Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-pickled-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,259 @@
+{
+  "recipe": {
+    "name": "Bay Panna Cotta",
+    "time": "5 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by topping and tailing the rhubarb batons until you have 50g of rhubarb trimmings. Place the trimmings, ginger and sugar in a blender and blitz until smooth. Transfer the contents of the blender to a vacuum bag with the hibiscus, lime zest and rhubarb, vacuum seal using a chamber sealer and leave overnight to marinate",
+      "To make the shortbread, mix together all the dry ingredients in a bowl. Thoroughly cream in the butter then add the egg yolks and vanilla to form a dough. Rest in the bowl for 10 minutes in the fridge then roll out between sheets of parchment paper to a 2mm thickness and place in the freezer until completely solid",
+      "Bake the shortbread for 12 minutes, until golden. Allow to cool, crumble into rough pieces and store in an airtight container until ready to serve",
+      "When ready to make the parfait, cook the marinated rhubarb in a water bath at 63°C for 20 minutes. Drain the rhubarb and dice, retaining the liquid from the bag for making the parfait",
+      "To make the rhubarb purée for the parfait, add 75g of the diced rhubarb to a blender with 300g of the rhubarb poaching liquor and blitz until smooth. Meanwhile, add the yolks and sugar to a bain marie, whisking continuously until you have a sabayon",
+      "Bloom the gelatine in cold water. Meanwhile, bring 25g of the whipping cream to the boil in a small saucepan with the gin. Remove from the heat and whisk in the gelatine until dissolved. Pour the mixture into the sabayon, followed by the rhubarb purée. Whip the remaining cream and carefully fold into the sabayon mixture. Churn the mixture in an ice cream maker until set",
+      "To make the panna cotta, hold the bay leaves over an open flame until burnt. Pour the UHT into a vacuum bag, add the bay leaves and seal using a chamber sealer. Cook in a water bath for 3 hours at 85°C. If you don’t have sous vide equipment, add the burnt bay and UHT to a pan, cover with cling film and gently simmer for 3 hours 20 minutes, but do not allow the mixture to boil",
+      "Soak the gelatine in cold water until bloomed. Pass the UHT through a fine sieve into a clean pan, bring to the boil and stir in the gelatine. Place the chocolate in a heatproof bowl, pour over the UHT and stir until dissolved. Stir in the vanilla, vodka, milk, salt and cultured cream, allow to cool to room temperature then pour into a container and leave to set in the fridge",
+      "To serve, add a scoop of the panna cotta to a serving plate. Scatter the diced poached rhubarb over the top, sprinkle over the shortbread pieces and add a quenelle of the parfait just before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Flowers",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cultured Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a3a2df8ce0e45ac71d5d8984de03ed0ebb59284333c7de56fe585af95f8a7437",
+    "lineage_hash": "c97fd8a417d431c12513fe85184ed77f02ed6a240bd05c397a796264142c94f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bay-panna-cotta-recipe-rhubarb-parfait",
+    "fetchedAt": "2026-08-03T10:07:50.362Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bay-panna-cotta-recipe-rhubarb-parfait",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

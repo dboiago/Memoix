@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Bloody Mary",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice, strain into ice-filled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35f45152d58fcf9159d285e433a829481667ed35b89b2d803f2b2b933bb9b049",
+    "lineage_hash": "4065fe0e6bb83967ff98a48433718e0092fa2e1904f033db4a2ee75f6d28c712"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bloody-mary/",
+    "fetchedAt": "2026-08-03T20:23:22.427Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bloody-mary/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

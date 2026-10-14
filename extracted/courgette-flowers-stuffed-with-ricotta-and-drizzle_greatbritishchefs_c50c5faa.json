@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Courgette Flowers stuffed with Ricotta and drizzled with Honey",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the batter. Tip the flour and baking powder into a bowl. Whisk in the water and ensure everything is incorporated well. Leave to rest while you stuff the courgette flowers",
+      "Carefully peel down the petals of the flowers and remove the stamen, since this can be bitter",
+      "Mould a ball of cheese and then stuff it into a flower. Twist the leaves back up to form a tight seal. Be careful with the petals – they are very delicate and will tear easily",
+      "Cut a small slit in the bottom of the courgette stalks. This will help speed up the cooking process of the courgette in the fryer",
+      "Pour the vegetable oil into a deep-sided pan or deep fat fryer. Slowly heat up to 180°C. It’s ready when a little bit of the batter is dropped in and it fizzles and browns immediately. Keep the oil at a steady temperature while you batter the flowers",
+      "Carefully dip the flowers – in batches of two or three at a time – into the batter and then place in the fryer. Cook the flowers until they are golden brown on both sides. You will need to turn the flowers during this process to cook them on both sides",
+      "When ready, remove the flowers from the oil and drain well on paper towels, and keep warm. Fry the mint leaves for a few seconds until crisp, then remove with a slotted spoon",
+      "Continue cooking the other flowers in the same fashion",
+      "When the flowers are all ready and drained of excess oil, transfer to serving plates and drizzle with honey and garnish with mint leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": "stalks intact",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": "divided into 12 rough balls",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Blossom Honey",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "390925d057219720764e6ba7e5dae4ba956bbbcd4874aae7bfc587d471a16655",
+    "lineage_hash": "c0a531d65b902b9e4ef0c321b614a8cfcdab984b7969130e7ebb24dd06312f38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-flowers-stuffed-ricotta-honey-recipe",
+    "fetchedAt": "2026-08-02T03:47:48.824Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-flowers-stuffed-ricotta-honey-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

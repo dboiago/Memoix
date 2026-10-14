@@ -1,0 +1,40 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/37996/caffe-american-italiano",
+  "slug": "caff-american-italiano-cocktail-recipe_diffordsguide_04e5cd11",
+  "title": "Caffè American Italiano Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T22:52:08.019Z",
+  "ldName": "Caffè American Italiano",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif"
+  ],
+  "ldIngredientsRaw": [
+    "37.5 ml Gin",
+    "37.5 ml Rosso/sweet vermouth",
+    "10 ml Espresso coffee (hot)"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of lemon zest twist.",
+    "STIR all ingredients with ice.",
+    "STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+    "EXPRESS lemon or orange zest twist over cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "145 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Crispy Potato Terrine with Confit Garlic and Parmesan",
+    "time": "2 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the confit garlic, add the peeled garlic cloves to a small saucepan with the oil and a pinch of salt. Cook over the lowest heat for 50-60 minutes, keeping the oil below a simmer, until the cloves are soft and pale gold. Set aside to cool in the oil, then transfer to a clean container and store in the fridge",
+      "For the potato terrine, preheat the oven to 160°C fan",
+      "Toss the sliced potatoes in the melted butter and season with a good pinch of salt",
+      "Line a loaf tin with baking paper, leaving an overhang. Arrange a layer of the potato slices into the tin, press flat, add another layer, and then press again. Repeat until you have used up all the potatoes, pressing as you go to avoid air pockets",
+      "Once full, fold over the paper, cover the tin with foil and bake for 1 hour 45 minutes until the potatoes are completely tender",
+      "Place a second loaf tin on top and weigh it down with tins or another heavy object. Refrigerate the terrine overnight to set",
+      "The next day, before serving, blend all the confit garlic cloves with 100ml of their oil until smooth. Add the cream and parmesan, then blend again to form a thick, glossy cream. Season to taste",
+      "Unmould the terrine and trim the edges. Portion into 6 neat rectangles",
+      "Heat enough oil to cover the slices of potato terrine in a high-sided, heavy-bottomed pan to 180°C",
+      "Once the oil is at temperature, deep-fry the slices of potato terrine for 4-5 minutes, or until crisp and golden all over",
+      "Gently warm the confit garlic cream, then spoon it onto plates (or a platter). Place the hot terrine pieces on top and finish with garlic oil, extra parmesan and black pepper. Any leftover garlic oil can be used to cook with; keep it in the fridge for up to 2 weeks"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nanna Tate Potatoes",
+        "unit": "kg",
+        "notes": "peeled and thinly sliced on a mandoline",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "heads",
+        "notes": "cloves peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely, grated, plus extra to serve",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3b24647a7860027279987704674d40af87885f9f55a22fe67e346106af69cc5",
+    "lineage_hash": "19759a7b9237f847db05090a863e1a414a230d4eece597fb8e94a22fa77abd23"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-potato-terrine-garlic-recipe",
+    "fetchedAt": "2026-08-01T23:47:18.743Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-potato-terrine-garlic-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

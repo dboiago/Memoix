@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Chocolate, Peanut Butter and Coffee Ice Cream Sandwich",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Line a baking tray with baking parchment",
+      "Add the cocoa powder, flour, sugar and pinch of salt to a large bowl and stir to combine. Add in the softened butter and work it in with your hands until the mixture becomes sandy with no visible lumps of butter",
+      "Add the peanut butter and milk, and work through quickly with a fork, before bringing the dough together with your hands. Wrap in cling film and chill in the fridge for 15 minutes",
+      "Roll out the chilled dough to just under 1cm thick, then stamp out shapes with a heart or circular cutter. Place on the lined baking tray and re-roll any leftover dough to continue cutting out biscuits until it is all used up",
+      "Bake in the preheated oven for 15 minutes until just firm to the touch, then transfer the biscuits to a wire rack to cool",
+      "When ready to serve, take the ice cream out of the freezer and allow to soften for 12 minutes. Meanwhile, break up the chocolate into separate bowls and melt each in the microwave in short blasts (no more than 30 seconds), stirring between each time until smooth",
+      "Place half the biscuits on a board or plate, and top each with a generous scoop of the softened ice cream. Top each with a second biscuit, then smooth over a layer of the melted dark chocolate",
+      "Drizzle over the melted white chocolate and sprinkle over the chopped peanuts to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Peanuts",
+        "unit": null,
+        "notes": "salted, roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream",
+        "unit": null,
+        "notes": "1 tub of Häagen-Dazs coffee flavour",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d39451ef26ee7471f473e071f3b276ee318c09922203ab1337a38c44532a27f",
+    "lineage_hash": "dd7633812fa9946287dfc80db6b5fb72aa9ab7f71eea1702d1b7d6278ed1bebd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-coffee-ice-cream-sandwich-recipe",
+    "fetchedAt": "2026-08-03T14:16:51.640Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-coffee-ice-cream-sandwich-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

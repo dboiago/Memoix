@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-walnut-cookie/",
+  "slug": "chinese-walnut-cookie_chinasichuanfood_a2ed42fe",
+  "title": "Chinese Walnut Cookie",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:59:42.427Z",
+  "ldName": "Chinese Walnut Cookie",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT20M",
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "Cookie, walnut",
+  "ldIngredientsRaw": [
+    "100 g vegetable oil",
+    "1  egg",
+    "80 g sugar",
+    "230 g cake flour",
+    "1/4 tsp. baking soda",
+    "1/2 tsp. baking powder",
+    "1 g salt",
+    "70 g walnut ( , finely chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "In a mixing bowl, combine sugar, vegetable oil with egg.",
+    "Shift cake flour, baking soda, baking powder and salt. Combine well.",
+    "Add walnuts and combine well.",
+    "Divide into similar portions (25g to 30g each one) and shape to round balls.",
+    "Flat each one, brush the egg wash and decorate with black sesame seeds (slightly press to avoid dropping off after baking). You can create cracked edges by flatting only the middle part of the cookie. I love smooth edges. Set the cookie aside for 10 minutes to 15 minutes.",
+    "Pre-heat oven to 180 degree C and then bake for 20 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "141 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "12 mg",
+    "sodiumContent": "45 mg",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[smooth edges ingredients in brackets]",
+    "100 g vegetable oil",
+    "1 egg",
+    "80 g sugar",
+    "230 g cake flour",
+    "1/4 tsp. baking soda",
+    "1/2 tsp. baking powder",
+    "1 g salt",
+    "70 g walnut  , finely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

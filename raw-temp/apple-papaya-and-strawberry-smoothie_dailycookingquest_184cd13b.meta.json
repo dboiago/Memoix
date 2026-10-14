@@ -1,0 +1,44 @@
+{
+  "url": "https://dailycookingquest.com/apple-papaya-and-strawberry-smoothie.html",
+  "slug": "apple-papaya-and-strawberry-smoothie_dailycookingquest_184cd13b",
+  "title": "Apple, Papaya, and Strawberry Smoothie",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:45:02.852Z",
+  "ldName": "Apple, Papaya, and Strawberry Smoothie",
+  "ldTime": "PT0H10M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "easy apple smoothie",
+    "easy papaya smoothie",
+    "easy strawberry smoothie",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "1 Fuji Apple, peeled and cored (about 200 gram)",
+    "150 gram papaya",
+    "4 tablespoon strawberry yoghurt",
+    "2 tablespoon honey",
+    "200 ml water"
+  ],
+  "ldInstructionsRaw": [
+    "Put everything in a blender and process until smooth.",
+    "Divide into two serving glasses and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 Fuji Apple, peeled and cored (about 200 gram)",
+    "150 gram papaya",
+    "4 tablespoon strawberry yoghurt",
+    "2 tablespoon honey",
+    "200 ml water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

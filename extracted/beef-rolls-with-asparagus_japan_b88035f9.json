@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Beef Rolls with Asparagus",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove hard part of the asparagus stem at lower end and cut into half length each (Note 3).",
+      "Boil water in a pan, add a pinch of salt and par boil asparagus for 30 seconds to 1 minute. Drain.",
+      "Spread a beef slice on a cutting board, place 3 pieces of asparagus at the end closer to you and roll forward. The asparagus should be wrapped in 2 layers of the beef.",
+      "Repeat and wrap the rest of the asparagus with beef. This will make 6 uncooked beef rolls.",
+      "Heat a frying pan with oil over medium high heat. Add beef rolls and cook, rolling them occasionally to brown beef rolls evenly. When surface of the beef is slightly burnt all over (a couple of minutes), remove excess oil with kitchen paper as the sauce will not coat the beef well if there is too much oil.",
+      "Add Sauce ingredients to the pan and coat the beef roll with the sauce.",
+      "When the sauce is almost evaporated, turn the heat off and remove the beef rolls onto a cutting board.",
+      "Cut each roll into 3 or 4cm (1¼-1½\") depending on the length of the roll and your preference. Place the rolls upright on a plate and serve. (Note 4)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thin Slices of Beef",
+        "unit": null,
+        "notes": "about 160-200g/6-7oz in total, Wagyu beef if possible, Note 1",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Stems",
+        "unit": null,
+        "notes": "moderate thickness",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa1a43870aa8e51953db9d35d7f52c275275d94b611b2b8d5bca8d0f26c255f8",
+    "lineage_hash": "9a98ccb56729460a02af192de9673805c10a6f8516e8aedbdcd446ef4900a1d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/beef-rolls-asparagus/",
+    "fetchedAt": "2026-08-01T22:23:32.036Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/beef-rolls-asparagus/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Coffee Chuhi: A Shochu Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build all of the ingredients in an ice-filled highball glass and gently stir to combine.",
+      "Coffee-Infused ShochuCombine 5 grams of dark-roast coffee beans with 1 cup of shochu and let soak for 3 hours. Strain and bottle for use within one week, before the coffee character turns stale."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee-infused Mugi Shochu",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark-roast Coffee Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shochu",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85d8f8fc8a50e98af7de2891fc0b9c9a7ab55bed95e08aae16b52fbd0b4f86d7",
+    "lineage_hash": "49bb8a7aeec3bc711740fedfa482a14338c3edb8be39909366e1e4d540745a14"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coffee-chuhi-shochu-highball/",
+    "fetchedAt": "2026-08-03T23:16:58.367Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coffee-chuhi-shochu-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

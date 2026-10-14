@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Cranberry and Bergamot Vodka Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Glass",
+    "garnish": [
+      "Bergamot Peel"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients in a cocktail shaker with plenty of ice",
+      "Shake well and strain in a glass, garnish with bergamot peel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": "preferably Ketel One",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": "citroen",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "ml",
+        "notes": "or Mandarin Napoléon",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a662fcc580802662c73bc0a1468273e15579d33ad278c28dd3e188925e4657f",
+    "lineage_hash": "bae7a426643a0ea0abd063c000af199eda30daba04cf69d0dc0b9d58794328dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/mandarine-vodka-cranberry-cocktail-recipe",
+    "fetchedAt": "2026-08-03T13:33:17.024Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/mandarine-vodka-cranberry-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

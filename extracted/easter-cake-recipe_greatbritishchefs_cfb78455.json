@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Easter Cake",
+    "time": "1 hr 35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to about 170°C/gas mark 3.5. Grease a patterned bundt tin really really well with butter, make sure you get it into all of the pattered bits (otherwise you’ll be swearing at me when it doesn’t come out in one piece)",
+      "Crack the eggs into a large bowl and add the caster sugar. Using an electric hand whisk or free standing mixer whisk the eggs and sugar together until they’re really pale, thick and fluffy",
+      "Stick the butter in the microwave or in a small pan on the hob until just melted. Turn the beaters back on and keep whisking as you pour the melted butter onto the eggs and sugar in a steady stream",
+      "Once the butter is in add the flour and baking powder then grate in the zest from the lemon and add a spritz of the juice. Fold these ingredients in with a metal spoon until completely mixed together",
+      "Pour the lot into your prepared tin and place in the middle of the oven for about 1 hour – 1 hour 15 minutes – check it after 30 minutes and see how it’s ticking along. When it’s ready it should be a pale golden brown and if you push a skewer into the sponge it should come out cleanly, if it’s still gooey bop it back in the oven for a bit longer",
+      "While the cake is baking you’ll have plenty of time to have a vague tidy round, get the coffee on and prepare the toppings",
+      "In a small pan (totally ok to use the one you melted the butter in) put the butter and honey and warm them over a low heat. Once the butter has melted add the chocolate and remove from the hob. Keep stirring until the chocolate has melted and you’ve got a lovely thick sauce. If you’ve made the chocolate glaze way before the cake is ready and it has started to set, you can pop it back on a low heat to melt it again so you can drizzle it, just keep stirring it and it will be absolutely fine",
+      "Squeeze the rest of the lemon juice into a small bowl and add enough icing sugar to make a thick, runny icing",
+      "When the cake is ready, let it cool for a moment or two in the tin then turn it out onto a board or plate. If you want to trim the base so that it sits flat you can do, but it isn’t essential – it will still look ace! Once the cake is on the board start drizzling, first with the chocolate glaze, then the lemon icing, go totally freestyle, scribbly is good. Dust the surface with a bit more icing sugar and randomly dot a selection of chocolate eggs over the top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "runny",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45307eb1ff260e11714ffb816688ffaf0afe3442849966c725ed5c9a86e94fd3",
+    "lineage_hash": "819d6d4f008e7c4273a58edd76c47dc1ad2eed98f20a09b51407097b4f2a1b5d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/last-minute-easter-cake-recipe",
+    "fetchedAt": "2026-08-03T22:49:34.415Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/last-minute-easter-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

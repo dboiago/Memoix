@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Desi Superfood Panjiri & Pinni Sugarcane Shikanji",
+    "time": "40-50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi or kadai, add ghee, once it's hot, add edible gum and fry them until golden in colour.",
+      "Transfer it to a tray and keep it aside for further use.",
+      "In the same handi or kadai, add ghee, once it's hot, add almonds, cashew nuts and fry them until golden in colour.",
+      "Transfer it to a tray and keep it aside for further use.",
+      "In the same handi or kadai, add remaining ghee, once it's hot, add whole wheat flour and dry roast it for 25-30 minutes until it's golden in color.",
+      "Add crushed black peppercorns, carom seeds, fried nuts & edible gum, dry ginger powder and give it a good mix.",
+      "Transfer it to a big tray or parat and keep it aside to cool down at room temperature.",
+      "Add powdered sugar, sugar and mix it well.",
+      "Transfer it to a serving dish and garnish it with almond slivers.",
+      "Serve with hot milk.",
+      "In a bowl, add sugarcane jaggery, ginger, hot water and give it a good stir until the jaggery melts.",
+      "Add water, black pepper powder, fresh mint leaves, a pinch of salt, lemon juice and give it a stir.",
+      "Transfer it into the serving glass and serve cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Edible Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "50-60",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "150",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "150",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": "remaining",
+        "amount": "0",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Nuts & Edible Gum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Ginger Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "For Panjiri",
+        "isOptional": false
+      },
+      {
+        "name": "Sugarcane Jaggery",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & grated",
+        "amount": "1",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, roughly torn",
+        "amount": "2-3",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugarcane Shikanji",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "sliver",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ecc0da55ff4c2f45fa94fccaf1dd3ae52c6bbcb52d28cb626cd52ee891d6dcfe",
+    "lineage_hash": "1627851f2aaf105607f74943638bbdd5ce922056f599b65710747898628532c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/panjiri/",
+    "fetchedAt": "2026-08-02T18:40:18.795Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/panjiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

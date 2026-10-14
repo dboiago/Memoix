@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Coconut Ice Cream with Toffee Sauce",
+    "time": "4 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make coconut ice cream with toffee sauce, first boil the coconut milk with 4 oz cream and melt the honey. Work 4 oz sugar with the egg yolks, diluting them with the coconut milk and heating the cream until it reaches about 180°F. (Fun fact: In Italian, we call this cottura alla rosa, which translates to ‘rose cooking’ in English – so called because blowing on the spoon forms little “petal” shapes.) Let the cream cool, then put it in the ice-cream maker. Set for the time indicated on the machine instructions. (It should take about 1 hour.)",
+      "In the meantime, put a plate in the freezer to cool. Shape the ice cream – as soon as it is ready – between 2 wet spoons and form 6 large dumpling shapes. Put a wooden stick in the center of each one and transfer to the cold plate. Let them cool in the freezer for about 3 hours.",
+      "When you’re ready to serve the ice cream, make the toffee sauce: Pour 2 ½ oz of sugar and a tablespoon of water into a small saucepan. Turn the heat on low and let the sugar caramelize – cooking until the sauce becomes a dark amber color. Still cooking over low heat, add 3 oz of cream, stirring well. Sprinkle the ice cream with grated coconut and serve with the toffee sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Acacia Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Coconut",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "40df5a1831f72e2de1dcfefa31e66d6e4c085442119902ed5ffa14de02a25f7b",
+    "lineage_hash": "af8a074805f1fe4f506ad87ba60e8cff30fba4a14ee0e04d57f2405476fc0cb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-ice-cream-toffee-sauce",
+    "fetchedAt": "2026-08-03T08:51:11.104Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-ice-cream-toffee-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

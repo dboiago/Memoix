@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Chinese Rice Cake Soup (年糕汤)",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "368",
+      "carbohydrateContent": "46",
+      "fatContent": "14",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Combine the pork (or chicken) with the Shaoxing wine, light soy sauce, sesame oil, white pepper, cornstarch, and water. Marinate for 15 to 20 minutes.",
+      "Preheat your wok until it starts to smoke lightly. Over high heat, add 2 tablespoons oil, and stir-fry the pork until browned. Remove the pork from the wok and set aside.",
+      "Reduce the heat to medium, and add 2 more tablespoons oil to the wok, along with the ginger and the white parts of the scallions. Cook for 1 minute and add the carrots. Cook for another minute and add the napa cabbage. Stir fry everything together for a few minutes until the napa cabbage leaves are wilted.",
+      "Add 4 cups low sodium chicken stock and 4 cups water. Bring everything to a boil, then lower the heat and simmer for 5 minutes, until the thick stems of the napa cabbage are tender.",
+      "Add salt to taste, ½ teaspoon white pepper, 1 teaspoon sesame oil, and 1 tablespoon light soy sauce.",
+      "Stir in the cooked pork, and sprinkle the rice cakes over the surface of the soup, along with green parts of the scallions. The rice cakes should be resting on top of the soup so they don’t sink into it and stick to the bottom of the wok/pot. Cover and cook for another minute, or as long as it takes to cook the rice cakes through (please see the Recipe Notes if you are using dried rice cakes). Salt to taste again and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lean Pork",
+        "unit": "oz",
+        "notes": "alt: chicken, cut into small, thin strips",
+        "amount": "8",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "4",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "julienned",
+        "amount": "4",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced on an angle, white and green parts separated",
+        "amount": "3",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "lb",
+        "notes": "stems cut into ½-inch pieces and leaves cut into 1-inch pieces",
+        "amount": "1¼",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To assemble the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Cakes",
+        "unit": "lb",
+        "notes": "oval-shaped slices preferred",
+        "amount": "1",
+        "section": "To assemble the soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01f24deec3ef50625042c71ceef6be0408258e42aa2ea80f3322e4a8e65f403d",
+    "lineage_hash": "34cbee788b4515d62594b15e173f7544ef0d264a54c32754c186556b4995a1e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-rice-cake-soup/",
+    "fetchedAt": "2026-08-02T14:14:19.496Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-rice-cake-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

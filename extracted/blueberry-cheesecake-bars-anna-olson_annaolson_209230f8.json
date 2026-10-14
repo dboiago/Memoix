@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Blueberry Cheesecake Bars",
+    "time": "4 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Lightly grease an 8-inch (20 cm) square pan and line it with parchment paper so that the paper comes up the sides.",
+      "For the base and crumble, in a large mixing bowl, stir the flour, granulated sugar, brown sugar, cinnamon and salt. Add the butter and use a pastry blender to cut it in until a rough, crumbly texture.",
+      "Press about two-thirds of the mixture into the bottom of the pan. Pierce the base with a fork. Stir the sliced almonds, if using, into the remaining crumble and set aside.",
+      "Bake the base for about 25 minutes, until lightly browned at the edges. Cool the pan on a rack while preparing the cheesecake filling. Keep the oven on at 350°F (180°C).",
+      "For the cheesecake filling, in a mixing bowl, beat the cream cheese with a wooden spoon to soften. Add the granulated and brown sugars and beat well until the sugar dissolves into the cheese. Beat in the flour and vanilla. Switch to a whisk and whisk in the eggs one at a time, blending well after each addition. Whisk in the sour cream.",
+      "Pour the batter over the cooled crust and sprinkle the blueberries overtop. Sprinkle the reserved crumble over the berries. Bake for 30 minutes at 350°F (180°C), then reduce the oven temperature to 325°F (160°C) and bake for an additional 30 minutes, until you see the cheesecake soufflé (puff up) a bit at the edges but the centre is still a little wobbly.",
+      "Cool the bars in their pan fully to room temperature (this could take 90 minutes), then chill for at least 2 hours before dusting with icing sugar and slicing into bars to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "175 g, diced, at room temperature",
+        "amount": "¾",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "sliced, 55 g, optional",
+        "amount": "½",
+        "section": "Base & Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Brick Cream Cheese",
+        "unit": "lb",
+        "notes": "570 g, softened",
+        "amount": "1¼",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "18 g",
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Sour Cream",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "fresh, 190 g",
+        "amount": "1½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61223afc3f0d2e4746dfc3ee2a236f560c071fac81d24774309c5a1d2640fda8",
+    "lineage_hash": "a028a2dba16e2c4c9a9e684b5d55abe4fb27b80b823e18f680e9ffc51c73c443"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/blueberry-cheesecake-bars/",
+    "fetchedAt": "2026-08-02T01:04:26.362Z"
+  },
+  "rawSource": "https://annaolson.ca/project/blueberry-cheesecake-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Dulce de Leche Macaron",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the macarons, make the ground almond base. Add the almonds, icing sugar and egg white to the bowl of a food mixer and whisk together until combined. Set to one side while you make the Italian meringue base",
+      "For the meringue base, add the egg whites to a food mixer and whisk on a low speed. Meanwhile, add the water and 280g of the sugar to a pan and place over a medium-high heat. Bring to a boil to reach ‘soft ball’ stage, or 118°C",
+      "Once the sugar syrup has reached 105°C, increase the speed of the food mixer and sprinkle in the remaining 20g of the sugar to stabilise the meringue",
+      "When the sugar syrup reaches 118°C, reduce the speed of the mixer again and slowly drizzle the hot sugar syrup down the side of the bowl into the egg whites. Increase the speed, mix for 1 more minute then turn off the machine",
+      "Add the white food colouring to the meringue, turn on the machine and mix on a medium speed until the meringue has cooled to blood temperature and is thick and fluffy",
+      "Use a pastry scraper or stiff rubber spatula to mix one third of the Italian meringue into the ground almond base until smooth and incorporated. Repeat this process twice more until all of the meringue is incorporated and you are left with a smooth and shiny macaron mix",
+      "Transfer the mix to a piping bag fitted with a 1cm nozzle. Line a baking sheet with silicone paper if not using a non-stick mat, and pipe 4.5cm rounds (bulbs) of the meringue onto the sheet. Sprinkle with the porridge oats and set aside for 30 minutes to 1 hour, until a dry skin forms on the surface of the meringues",
+      "When ready, place the macarons into the oven and cook for 17-18 minutes, until they just peel off the tray. Allow to cool, then match the sizes of each macaron halves so each bottom has a top",
+      "Now make the fillings for the macarons. For the sheep’s milk dulce de leche, bring the milk, caster sugar, glucose and flaky sea salt to the boil. Whisk in the bicarbonate of soda and continue to cook on a medium heat, stirring every so often until the temperature reaches 115°C",
+      "Remove the pan from the heat and allow to cool. Place into a blender or Thermomix, blend on a high speed until smooth then set aside in a clean saucepan",
+      "To finish the dulce de leche ganache, break the white chocolate into pieces and spread out onto a lined baking tray. Place in the oven for 45 minutes, stirring occasionally until it is caramelised and golden. Transfer to a clean blender or Thermomix",
+      "Bring the prepared sheep’s milk dulce de leche to the boil, then pour over the white chocolate in the blender and blitz until smooth. Gradually add the unsalted butter, continue to mix for 1-2 minutes then scrape into a container and allow to set",
+      "To finish the macarons, transfer the ganache to a piping bag and pipe into the centre of each macaron base. Top with another half and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Food Colouring",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheep's Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "00e342289c1bb1d77dc12a1941560bb68b7032f80ee2721157d102e8377406db",
+    "lineage_hash": "d446b869d98360edfaf0a4f0ffc8d9c21a710ebc2eeeb628908fcebc155dcf84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dulce-de-leche-macaron-recipe",
+    "fetchedAt": "2026-08-03T22:32:11.922Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dulce-de-leche-macaron-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

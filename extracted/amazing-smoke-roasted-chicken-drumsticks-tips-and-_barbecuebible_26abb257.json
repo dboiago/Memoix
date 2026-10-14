@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Smoke-Roasted Chicken Drumsticks",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "250",
+      "carbohydrateContent": "15",
+      "fatContent": "12",
+      "proteinContent": "28"
+    },
+    "directions": [
+      "Buy the best chicken you can find, preferably organic. One brand we like after using it on the set of Project Smoke is Smart Chicken.",
+      "Remove any loose pieces of cartilage at the joints with poultry shears or a sharp knife. Also be on the lookout for pinfeathers the pluckers may have missed. Remove them with paper towels or kitchen tweezers.",
+      "Submerge the drumsticks in brine (1/2 cup of kosher salt per 2 quarts of water) for 24 hours before smoking or grilling. You can cut the time down to as little as 4 hours.",
+      "If the skin has receded from the thickest end of the drumstick, gently coax it back before arranging the legs on the grill grate.",
+      "Dry the legs with paper towels after removing them from the brine. Place a cooling rack over a rimmed baking sheet, and if desired, air-dry the legs (uncovered) in the refrigerator for several hours.",
+      "Set up your grill or smoker for indirect grilling and preheat to 375 degrees.",
+      "Arrange the legs in a single layer on the grill grate, rounded side up (the flatter side is the side closest to the body).",
+      "Cook the chicken to an internal temperature of 175 to 185 degrees using an instant-read meat thermometer inserted in the thickest part of the leg, being careful not to touch bone with the tip of the probe.",
+      "Make the Maple-Sriracha Glaze while the chicken cooks. Keep warm. Apply during the last 10 minutes of cooking and again before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Drumsticks",
+        "unit": "lb",
+        "notes": "organic, preferably Smart Chicken brand",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "C",
+        "notes": "for brine",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": "for brine",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "C",
+        "notes": "for glaze",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "Tbsp",
+        "notes": "for glaze",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d40b1d908e62315b85c7e7d81ed58c5780b98d2ba00f50bbe9d753fcc4ddf5d",
+    "lineage_hash": "2e50abc97831382bb109d2bf06e18709b1bf3da3abfdeb676e1a7f2ed56af61e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2017/02/10/smoke-roasted-chicken-drumsticks-recipe/",
+    "fetchedAt": "2026-08-02T12:08:03.213Z"
+  },
+  "rawSource": "https://barbecuebible.com/2017/02/10/smoke-roasted-chicken-drumsticks-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

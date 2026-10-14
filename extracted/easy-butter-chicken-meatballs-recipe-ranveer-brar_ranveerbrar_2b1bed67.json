@@ -1,0 +1,292 @@
+{
+  "recipe": {
+    "name": "Butter chicken meatballs (बटर चिकन कोफ्ता)",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a thick bottom pan, add butter, oil, ginger, green chilli, onion, salt to taste, degi red chilli powder, turmeric powder, coriander powder and saute it well.",
+      "Add tomato and little water and cook on medium flame.",
+      "Add dry fenugreek leaves and mix well. Remove spoonfull prepared masala and keep it aside for further use.",
+      "In the remaining masala, add cashew nut, tomato ketchup, butter, sugar, degi red chilli powder and mix everything well.",
+      "Once it's cool down, blend it into a smooth puree. Keep it aside for further use.",
+      "In a large bowl, add chicken mince, white bread crumb, salt to taste, prepared masala, degi red chilli powder, garam masala, poha powder, coriander leaves and mix everything well.",
+      "Heat oil in a kadai and in meanwhile make bite size balls from the mixture and deep fry them in medium hot oil until golden brown and crispy.",
+      "Remove on an absorbent paper and then serve them with prepared gravy.",
+      "In a pan, add butter, let it melt, add fried chicken balls, fresh cream, coriander leaves and saute it well.",
+      "In a pan, add butter, let it melt and add the prepared gravy and mix well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped, प्याज",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "chopped, टमाटर",
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "मक्खन",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "तेल",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped, अदरक",
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "No Green Chilli",
+        "unit": null,
+        "notes": "chopped, हरी मिर्च, कटी हुई",
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, नमक स्वादअनुसार",
+        "amount": "0",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": "देगी लाल मिर्च पाउडर",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "हल्दी पाउडर",
+        "amount": "¼",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": "धनिया पाउडर",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": "पानी",
+        "amount": "0",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "dried, crushed, कसूरी मेथी",
+        "amount": "¼",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nut",
+        "unit": "Tbsp",
+        "notes": "chopped, काजू",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tomato Ketchup",
+        "unit": null,
+        "notes": "टोमेटो केचप",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "मक्खन",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "चीनी",
+        "amount": "¼",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": "देगी लाल मिर्च पाउडर",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "mince, चिकन",
+        "amount": "250",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Crumb",
+        "unit": "C",
+        "notes": "ब्रेड क्रंब्स",
+        "amount": "½",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, नमक स्वादअनुसार",
+        "amount": "0",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Masala",
+        "unit": null,
+        "notes": "तैयार किया हुआ मसाला",
+        "amount": "1½",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": "देगी लाल मिर्च पाउडर",
+        "amount": "1",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": "गरम मसाला",
+        "amount": "¼",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Poha Powder",
+        "unit": "Tbsp",
+        "notes": "पोहा पाउडर",
+        "amount": "1",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped, धनिया पत्त कटा हुआ",
+        "amount": "2",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying, तेल",
+        "amount": "0",
+        "section": "For Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "मक्खन",
+        "amount": "1",
+        "section": "For Butter Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh, मलाई",
+        "amount": "1",
+        "section": "For Butter Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Chicken Balls",
+        "unit": null,
+        "notes": "चिकन बॉल्स",
+        "amount": "0",
+        "section": "For Butter Chicken Balls",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "मक्खन",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Gravy",
+        "unit": "C",
+        "notes": "तैयार की हुई ग्रेवी",
+        "amount": "⅓",
+        "section": "For Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d4a0043703adf85763d70ec484bedb78a037e351b235ce25aeb1ce869217324f",
+    "lineage_hash": "47c1d69326d18ccfd2ca96b097f2c1a7b25ff8dd96eae400050bff2dc3814982"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/butter-chicken-meatballs/",
+    "fetchedAt": "2026-08-02T15:46:02.982Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/butter-chicken-meatballs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

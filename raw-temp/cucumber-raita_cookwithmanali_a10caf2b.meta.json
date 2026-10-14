@@ -1,0 +1,58 @@
+{
+  "url": "https://www.cookwithmanali.com/cucumber-raita/",
+  "slug": "cucumber-raita_cookwithmanali_a10caf2b",
+  "title": "Cucumber Raita",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T00:20:34.827Z",
+  "ldName": "Cucumber Raita",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 cups"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Sides",
+  "ldKeywords": "cucumber raita",
+  "ldIngredientsRaw": [
+    "1.5 cups plain yogurt (I used whole milk plain yogurt, 360 grams)",
+    "1 medium cucumber (300 grams)",
+    "1/4 teaspoon chaat masala",
+    "1/4 teaspoon  kala namak",
+    "1/2 teaspoon cumin powder",
+    "1/8 teaspoon salt (or to taste )",
+    "2 tablespoons chopped mint"
+  ],
+  "ldInstructionsRaw": [
+    "Before, you start peel the cucumber and grate it using a grater.To a bowl add plain milk yogurt and whish it until smooth. To that now add, chaat masala, kala namak, cumin powder and salt. Mix until spices are well combined with the yogurt.",
+    "Then add the grated cucumber to the yogurt and mix.",
+    "Stir in the chopped mint leaves and mix.",
+    "Garnish with mint and serve cucumber raita as a side with any Indian meal or with biryanis and pulao. You may sprinkle some cumin powder on top before serving. I also sprinkle some kashmiri red chili powder for presentation."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "131 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "7 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "24 mg",
+    "sodiumContent": "525 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "10 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.5 cups plain yogurt, I used whole milk plain yogurt, 360 grams",
+    "▢ 1 medium cucumber, 300 grams",
+    "▢ 1/4 teaspoon chaat masala",
+    "▢ 1/4 teaspoon  kala namak",
+    "▢ 1/2 teaspoon cumin powder",
+    "▢ 1/8 teaspoon salt, or to taste",
+    "▢ 2 tablespoons chopped mint"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

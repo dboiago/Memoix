@@ -1,0 +1,70 @@
+{
+  "url": "https://dailycookingquest.com/cantonese-braised-beef.html",
+  "slug": "cantonese-braised-beef_dailycookingquest_f5485f49",
+  "title": "Cantonese Braised Beef",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:56:08.189Z",
+  "ldName": "Cantonese Braised Beef",
+  "ldTime": "PT2H45M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT2H30M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Beef"
+  ],
+  "ldIngredientsRaw": [
+    "1 kilogram beef brisket, cut into 1 inch cubes",
+    "2 tablespoon oil",
+    "3 cloves garlic, sliced",
+    "1 inch ginger, sliced",
+    "1 1/2 tablespoon chu hou paste",
+    "1 tablespoon hoisin sauce",
+    "1 tablespoon oyster sauce",
+    "2 star anise",
+    "1 dried orange peel, broken into several pieces",
+    "1 bay leaf",
+    "2 tablespoon Shaoxing wine",
+    "2 cups water",
+    "500 gram daikon, peeled and cut into triangular wedges",
+    "1 tablespoon light soy sauce",
+    "1/2 tablespoon dark soy sauce",
+    "1 tablespoon rock sugar",
+    "1 scallion, thinly sliced"
+  ],
+  "ldInstructionsRaw": [
+    "Blanch beef in a pot of boiling water for 8-10 minutes. Rinse under running cold water, drain, and set aside.",
+    "Heat oil in a wok and sauté garlic and ginger until fragrant, about 2-3 minutes.",
+    "Add chu hou paste, hoisin sauce, and oyster sauce. Mix well, and cook for 1 minute.",
+    "Return the beef to the wok, add star anise, orange peel, bay leaf, and Shaoxing. Cook until beef is slightly browned, about 3 minutes.",
+    "Add water and bring to a boil. Lower heat, cover the wok, and simmer until the beef is tender, about 2 hours.",
+    "Add daikon, light soy sauce, dark soy sauce, and rock sugar. Return to a boil, then lower the heat again, cover the wok, and simmer until the daikon is tender and has absorbed most of the liquid.",
+    "Turn off heat, transfer to a serving plate, and garnish with sliced scallions. Serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 kilogram beef brisket, cut into 1 inch cubes",
+    "2 tablespoon oil",
+    "3 cloves garlic, sliced",
+    "1 inch ginger, sliced",
+    "1 1/2 tablespoon chu hou paste",
+    "1 tablespoon hoisin sauce",
+    "1 tablespoon oyster sauce",
+    "2 star anise",
+    "1 dried orange peel, broken into several pieces",
+    "1 bay leaf",
+    "2 tablespoon Shaoxing wine",
+    "2 cups water",
+    "500 gram daikon, peeled and cut into triangular wedges",
+    "1 tablespoon light soy sauce",
+    "1/2 tablespoon dark soy sauce",
+    "1 tablespoon rock sugar",
+    "1 scallion, thinly sliced"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

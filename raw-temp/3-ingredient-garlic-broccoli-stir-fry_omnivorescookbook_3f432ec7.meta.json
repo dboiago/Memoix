@@ -1,0 +1,41 @@
+{
+  "url": "https://omnivorescookbook.com/garlic-broccoli-stir-fry/",
+  "slug": "3-ingredient-garlic-broccoli-stir-fry_omnivorescookbook_3f432ec7",
+  "title": "3-Ingredient Garlic Broccoli Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T15:58:26.139Z",
+  "ldName": "3-Ingredient Garlic Broccoli Stir Fry",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 teaspoons olive oil",
+    "2 cloves garlic",
+    "1  big head broccoli (, separated into florets)",
+    "1/4 teaspoon salt",
+    "1/4 cup chicken stock"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a large heavy-duty skillet until hot. Add oil. Swirl to coat the bottom. Add garlic and broccoli, and sprinkle with salt. Cook and stir to coat broccoli with oil.",
+    "Add chicken stock. Cover and cook for 1 minute, or until the broccoli reaches your desired doneness. Turn to low heat and carefully taste the broccoli. Adjust seasoning by adding more salt, or cover to cook a bit longer if necessary.",
+    "Serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 teaspoons olive oil",
+    "2 cloves garlic",
+    "1 big head broccoli , separated into florets",
+    "1/4 teaspoon salt",
+    "1/4 cup chicken stock"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Double-Down Reuben",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slather two rye bread with half the butter and place buttered side down on a plate. Spread the tops of these slices with half the Reuben Sauce. Lay the corned beef and pastrami on top of the dressing, followed by the sauerkraut and Gruyère.",
+      "Spread the remaining two bread slices with the remaining Reuben Sauce. Place them dressing side down on the sandwiches and spread the tops with the remaining butter.",
+      "If using a contact grill, preheat it. Grill the sandwiches until the bread crisps and melts, and the meats are hot, 3 to 5 minutes. Alternatively, if using a skillet, griddle, or plancha, heat it over medium-high heat. Add the sandwiches and place a grill press on top. Cook until the bread crisps and browns, the cheese melts, and the meats are hot, 3 to 5 minutes per side, carefully turning with a spatula.",
+      "Cut each sandwich in half on the diagonal and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark",
+        "unit": "slices",
+        "notes": "alt: marbled rye bread",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter at Room Temperature",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reuben Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corned Beef Sliced Thin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pastrami Beef Sliced Thin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Well-drained Sauerkraut",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Gruyère Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44401890ad94e9a6ee9a92e98628b9fb5d4f2f5769a0014b98903d539c7d7ec0",
+    "lineage_hash": "4f60368b776bf011e1ff3a03dfd257343687a0ec762702ee875664323c94e8f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/double-down-reuben/",
+    "fetchedAt": "2026-08-03T10:14:31.304Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/double-down-reuben/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

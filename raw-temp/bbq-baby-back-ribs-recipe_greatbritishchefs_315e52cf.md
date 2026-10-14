@@ -1,0 +1,3 @@
+Summer calls for outdoor eating, so the [barbecue](https://www.greatbritishchefs.com/collections/barbecue-recipes) makes its way to the garden, balcony or any outside area we can manage. It's a very fun time to be had, but entertaining can be quite demanding. This recipe is so [easy](https://www.greatbritishchefs.com/collections/easy-recipes) and can be made in advance.
+
+The prune marinade involves covering the meat in a seasoned, fruity, acidic liquid before cooking very slowly in the oven and leaving the meat marinating overnight ready for next day enjoyment. The final cooking process happens on the barbecue. This process adds a wonderful fruity flavour through the marinade, and the prunes give the meat an extra stickiness when barbecued.

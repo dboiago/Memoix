@@ -1,0 +1,375 @@
+{
+  "recipe": {
+    "name": "Diwani Subz Handi with Jeera Pulao",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep bottom pan, add oil, ghee onces it's hot, add cumin seeds and let it splutter.",
+      "Add onion and saute for a minute. Add tomatoes, prepared paste and saute it well.",
+      "Onces the tomatoes are melted, add turmeric powder, degi red chilli powder, coriander powder.",
+      "Saute on medium flame, add curd, cashewnut and mix it well to cook until the row smell goes away.",
+      "Add a little water and bring it to a boil, add sugar and mix it well.",
+      "Let it come to room temperature and then grind it into a smooth puree.",
+      "Strain the gravy and transfer it into a bowl. Keep aside for further use.",
+      "In a mortar pestle, add ginger, green chilli, salt to taste and make a paste of it.",
+      "Heat oil in a deep handi, add ghee, garlic, Carrot, mushroom, cauliflower saute for a minute.",
+      "Add dry fenugreek leaves powder, cumin powder and mix it well.",
+      "Add salt to taste, french beans and water let it cook on medium flame.",
+      "Add prepared gravy and mix everything well.",
+      "Add cashewnut, cover it with the lid and cook on medium flame for 5-10 minutes.",
+      "Once the vegetables are cooked, add coriander leaves, kewra water and mix well.",
+      "To finish, add dry fenugreek leaves powder and mix well.",
+      "Finally serve veg diwani handi with jeera rice.",
+      "In a deep non-stick pan, add ghee once it's hot, add cumin seeds, let it splutter well.",
+      "Add garlic cloves and saute until garlic is light brown in color.",
+      "Add green chilli, asafoetida and cooked rice and saute it well on medium flame.",
+      "Add coriander leaves. Salt to taste and toss it well.",
+      "Serve hot with veg diwani handi."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnut",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "½",
+        "section": "For Ginger Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Ginger Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Carrot",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "C",
+        "notes": "medium size florets",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10-12",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Gravy",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnut",
+        "unit": null,
+        "notes": "blanched",
+        "amount": "5-6",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccdf5f93c7bf3dbe94109148958296c67161f5d43065aaa1f8f13dde22db5289",
+    "lineage_hash": "8e306b25963de8a7c9cac03948e67951f5e1f792aa1cea91b89436d79577d978"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/diwani-handi-jeera-pulao/",
+    "fetchedAt": "2026-08-02T07:26:02.403Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/diwani-handi-jeera-pulao/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-coleslaw/",
+  "slug": "chinese-coleslaw_omnivorescookbook_6666db65",
+  "title": "Chinese Coleslaw",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T08:09:31.667Z",
+  "ldName": "Chinese Coleslaw",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 to 6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "4 cups purple cabbage (, sliced (about 1/4 head, or 4 cups coleslaw mix))",
+    "1 small carrot (, julienned)",
+    "1/4 teaspoon salt",
+    "1/3 cup toasted peanuts (, coarsely chopped)",
+    "2 tablespoons cilantro (, minced)",
+    "1 tablespoon vegetable oil ((or other neutral oil))",
+    "2 tablespoons Chinkiang vinegar",
+    "1 tablespoon soy sauce",
+    "1 tablespoon honey",
+    "2 teaspoons toasted sesame oil",
+    "2 cloves garlic (, minced)",
+    "1  green onion (, sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Add the purple cabbage and carrot to a big bowl. Sprinkle with salt. Rub the salt evenly over the vegetables. Let sit while preparing the rest of the ingredients.",
+    "Whisk all the dressing ingredients together in a small bowl.",
+    "Pour the dressing into the big bowl and toss to mix well. Add the peanuts and cilantro and toss lightly again. You can serve it now or store it covered in the fridge until serving time, up to 2 days."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "175 kcal",
+    "carbohydrateContent": "15.1 g",
+    "proteinContent": "4.8 g",
+    "fatContent": "11.9 g",
+    "saturatedFatContent": "1.9 g",
+    "sodiumContent": "406 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "8.7 g"
+  },
+  "htmlIngredientLines": [
+    "4 cups purple cabbage , sliced (about 1/4 head, or 4 cups coleslaw mix)",
+    "1 small carrot , julienned",
+    "1/4 teaspoon salt",
+    "1/3 cup toasted peanuts , coarsely chopped",
+    "2 tablespoons cilantro , minced",
+    "[Dressing]",
+    "1 tablespoon vegetable oil (or other neutral oil)",
+    "2 tablespoons Chinkiang vinegar",
+    "1 tablespoon soy sauce",
+    "1 tablespoon honey",
+    "2 teaspoons toasted sesame oil",
+    "2 cloves garlic , minced",
+    "1 green onion , sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dutch Blood And Sand",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "172",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f22db0083a7d86761d464796f99986d08809d643496e50e15d1124e02ee50e8f",
+    "lineage_hash": "8f51c89cc9ac6712f8c9a236445c59b1f4f5aca2f846ad88c0537e64840e25ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/3129/dutch-blood-and-sand",
+    "fetchedAt": "2026-08-03T09:21:56.545Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/3129/dutch-blood-and-sand",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

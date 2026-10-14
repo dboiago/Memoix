@@ -1,0 +1,240 @@
+{
+  "recipe": {
+    "name": "Baja Fish Tacos with Pistachio Guacamole",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the chipotle cream by mixing all the ingredients together. Cover and reserve in the fridge until needed",
+      "Dissolve the Marmite (if using) into the sparkling water, then whisk in the flour, masa harina, baking powder and a pinch of salt. Cover and set aside",
+      "For the salsa, place the garlic clove and serrano chilli in a dry frying pan and toast for 5-10 minutes until blackened all over. Leave until cool enough to handle, then peel the garlic and remove the stem and seeds from the chilli",
+      "Place the pistachios in a food processor and blitz to a powder, then add the toasted garlic and serrano chilli along with the onion, cucumber, minnt, coriander and lemon juice. Pulse a few times to create a bright green chunky sauce, adding a little oil to loosen if needed, then season to taste with salt. Set aside",
+      "Heat a large, deep pan of sunflower oil to 170°C. Meanwhile, cut the fish into 12 equal pieces, then dust with the rice flour and give the batter a quick whisk as it may have separated. Once the oil is hot, dip the fish in the batter and deep-fry for 3 minutes, or until the batter is golden and crisp (work in batches if needed). Drain on kitchen paper and set aside",
+      "To serve, mix together the cabbages, sauerkraut and habanero chilli with a pinch of salt in a serving dish and heat up the tortillas in a dry frying pan. Bring both to the table along with the fish, chipotle cream and salsa for everyone to help themselves to"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Marmite",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Masa Harina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pollack",
+        "unit": "g",
+        "notes": "or any white fish",
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chilli",
+        "unit": "Tbsp",
+        "notes": "in adobo",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "shelled",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Chilli Pepper",
+        "unit": null,
+        "notes": "or green Thai chilli",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "deseeded and diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauerkraut",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Chilli",
+        "unit": null,
+        "notes": "fresh, sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "504e8242bc1d38d7028ff7d1ec0e0a6e6089f196037c9065f317f1f1ddaa7970",
+    "lineage_hash": "7362131fcfc2a8f5de1dbe91c58fc448ffde59ec1f6e5ba8f317c32b623919d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baja-fish-taco-recipe",
+    "fetchedAt": "2026-08-03T04:21:37.218Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baja-fish-taco-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

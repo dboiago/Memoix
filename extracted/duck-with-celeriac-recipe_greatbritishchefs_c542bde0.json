@@ -1,0 +1,284 @@
+{
+  "recipe": {
+    "name": "Duck with Celeriac",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 180°C/Gas mark 4. For the duck pastilles, remove the skin from both duck legs. Cut the legs in two, separating the thigh from the drum stick. Place the legs into a pressure boiler and cover with chicken stock",
+      "Bring to the boil on the stove, put the lid on and pressure cook for 30 minutes (if you don’t have a pressure cooker, cook in the oven whole covered in stock until the meat comes easily away from the bone)",
+      "Carefully release the pressure from the cooker, take the duck out of the pan and flake down the meat. You don’t want any cartilage or bones in the mix. Season with salt and pepper and mush the meat up with your hands",
+      "Take the feuille de brick and square it up by taking a centimetre off the edges. Brush with melted butter and form the duck mix into a cylinder, around 5cm in length and a centimetre in width",
+      "Roll this duck mix inside the feuille de brick, trying to form a tight cylinder shape, but retaining the duck mix together. (Do not trim the feuille de brick yet)",
+      "Stick the potato to the turning mandolin slicer, carefully apply pressure and turn the handle without stopping until all the potato has gone through the mandolin",
+      "Pick out all the long strands of potato and wrap around central part of the feulle de brick. Wrap around till you can no longer see the duck through the feulle de brick",
+      "Stick in the freezer on a greaseproof sheet till needed",
+      "For the celeriac purée, take a thick bottomed saucepan (less likely to burn your purée) and cover with water so it literally just covers the bottom of the pan",
+      "Put all of the other ingredients in and season lightly now. Bring to the boil on the stove and turn to a simmer till celeriac is soft like mash potato",
+      "Pass the celeriac through a course sieve, but keep the cooking liquor. Add the celeriac mush to a jug blender and pour some of the cooking liquid in as well",
+      "Turn on the food processor and blitz till smooth, keep adding the cooking liquor till smooth and the purée can hold its own weight",
+      "Check the seasoning, and put through a fine sieve to make sure it’s smooth. Place into a container and fridge until needed",
+      "For the five spice jus, roast the carcass in the oven until golden, put into a colander to drain the fat off (keeping a little for frying the vegetables)",
+      "Heat up a thick bottomed pan on a medium heat; put a little duck fat and all the veg into it. You want colour on the veg, but not burnt, so keep stirring it until golden",
+      "At this stage add the thyme, duck carcass and the alcohol. Bring up the heat and reduce the alcohol to a syrup. Add the Chinese five spice and veal stock",
+      "Reduce this stock by 3/4 at a simmer and remove any scum that surfaces with a spoon or ladle. Put this stock carefully through a fine sieve and discard anything left in the sieve",
+      "Put the jus back on the stove in a pan and check its consistency and flavour",
+      "The sauce should have a hint of five spice and be sticky on the lips. Add more five spice if needed and re pass, or if it seems watery add some corn flour. You want the sauce to coat the back of a spoon",
+      "For the fondant potatoes, cut the top and bottom off the potato so it sits flat. Using a metal cutter (1cm wide and 2cm deep). Push the cutter through the potato: you need 4 potato cylinders",
+      "Make sure each potato sits level and has straight edges",
+      "Heat a wide, shallow, thick-bottomed frying pan on a medium heat. Add the butter. Once it starts to foam, place the 4 potato cylinders into the butter with the neatest flat side down",
+      "Once they start to colour turn them onto the other side and pour in your chicken stock",
+      "Bring to the boil and place into an oven at 180°C/Gas mark 4 for 15-20 minutes, or until cooked. Once cooked, discard the liquor and keep warm until needed",
+      "Lay the duck breast skin side down and trim any visible excess skin. Place a thick bottomed pan on the stove, season the pan with a little salt and season the duck breast meat a little bit",
+      "Place the duck into the cold pan skin side down. Turn the stove onto a medium heat. You want to render the skin down so it’s nice and crisp",
+      "When the skins starts to crisp turn the breast over and place the pan into the oven at 180°C/Gas mark 4 for approximately 8 minutes. The breast should be around 54-56°C in the middle. Leave to rest and carve when needed",
+      "For the vegetable garnish, cook the smijis in a hot pan with 25g of butter until tender. In a separate pan cook the carrot shavings in 25g of butter and one tablespoon of water until tender",
+      "Wilt eight of the inner leaves of the bok choi in a hot pan with the rest of the butter and a tablespoon of water. Drain all of the vegetables to remove any excess butter",
+      "To serve, fry the duck pastille off at 180°C in a fryer until golden. Then place in the oven at 180°C/Gas mark 4; at the same time you would place the sealed duck breast in the oven as well",
+      "Place the hot celeriac purée on the left hand side of the plate, and using a step pallet knife swipe across the plate in one motion giving you a 10cm rectangle with rounded edges",
+      "Take the duck breasts and brush with the honey and cut in half lengthways. Cut each half into three and arrange six duck breast pieces inside each celeriac rectangle",
+      "Trim the outer edges of the crisp pastille, cut into four pieces and arrange on each plate so they get two each. Put 2 fondants and arrange the rest of the hot vegetable garnish inside the celeriac purée",
+      "Last of all put the sauce on the plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": "large",
+        "notes": "breasts and legs removed and the carcass retained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Feuille De Brick Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potato",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "weighing 400g, peeled and diced to a rough 1 cm cube",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jacket Potato",
+        "unit": "large",
+        "notes": "wide and deep",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "peeled and sliced thinly",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "cut in half length ways and sliced thinly",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bok Choi",
+        "unit": null,
+        "notes": "washed and leaves separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Carrots",
+        "unit": null,
+        "notes": "peeled and shaved with a peeler",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": "g",
+        "notes": "tops only",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Runny Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4085eb2097a921dfa4f03ecceaf7ce455d0480229f9bf5f67fc5cfc6ba709ea9",
+    "lineage_hash": "d96482dfd01957490e11bf5fdc5c597d23700cf752b84f29af02d42e75f3c582"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-celeriac-recipe",
+    "fetchedAt": "2026-08-03T22:03:05.507Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-celeriac-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chinese Potato Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "113",
+      "carbohydrateContent": "3",
+      "fatContent": "11",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Wash the shredded potato with a strainer under running water to remove extra starch and obtain a crunchy texture. Cook the shredded potato in a large pot of boiling water.  Transfer out, soak in cold water until cooled and drain.",
+      "In a bowl, mix shredded potato with coriander and then add salt, sugar, light soy sauce and vinegar. Mix well.",
+      "Heat oil until almost smoky. Spread Sichuan peppercorn, ,green onion, dried chili pepper and chopped garlic. Pour the hot oil evenly on those three ingredients."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Potatoes",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Coriander",
+        "unit": "small",
+        "notes": "cut into sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried, optional",
+        "amount": "2",
+        "section": "Hot oil drizzling",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "heated until hot",
+        "amount": "1",
+        "section": "Hot oil drizzling",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Hot oil drizzling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Hot oil drizzling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "cut into smaller pieces",
+        "amount": "1",
+        "section": "Hot oil drizzling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce Seasonings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4796e20a82c5f187893003232c97586a68e45d42229e8337aa252dbc005eb9d",
+    "lineage_hash": "6f95e1e993527bd1431efe16862528b71dbe883d0f74c2cb83b54bb21347cc8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-potato-salad/",
+    "fetchedAt": "2026-08-01T23:34:02.696Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

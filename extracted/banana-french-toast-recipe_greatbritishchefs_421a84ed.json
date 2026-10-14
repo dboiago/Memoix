@@ -1,0 +1,228 @@
+{
+  "recipe": {
+    "name": "Banana French Toast",
+    "time": "2 hr",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the banana bread, whisk the milk, sugar and yeast together in a large mixing bowl and leave to ferment for 15 minutes, until bubbly",
+      "Whisk in the spices and eggs until smooth, then mix in the banana chunks. Sieve the flour and salt into another large bowl, then stir in the banana mixture until incorporated. Line a 2-3 litre loaf tin with baking paper and pour in the bread mix. Place the tin on a baking tray and leave to prove in a warm area until it has increased in size by 50% - this should take 1-1/2 hours",
+      "Place in the oven and cook for 8 minutes, then reduce the temperature to 170°C/gas mark 3.5 and cook for a further 20-25 minutes. To check if the banana bread is cooked, insert a wooden skewer - it should come out clean",
+      "Remove from the oven and allow to cool in the tin for 10 minutes before turning out and allowing to cool completely. The banana bread is best made 2 days before serving so it can firm up a little. Store in the fridge until required",
+      "To make the chilli labne, mix together all of the ingredients and place into a strainer lined with cheese cloth or a tea towel. Leave in the fridge over an empty container to strain for 24 hours. The result will be a thick yoghurt spread, or labne. Transfer to a container and refrigerate until required",
+      "To make the tamarind caramel, add the sugar and star anise to a pan and cook over a moderate heat until dark brown and caramelised (190-200˚C). Meanwhile, bring the coconut cream to a simmer. When the sugar has caramelised, whisk in the hot coconut cream and simmer until all of the lumps have dissolved",
+      "Remove from the heat, discard the star anise and whisk in the tamarind. Set aside until needed",
+      "Place the bacon on an oven tray and cook under a hot grill on both sides until golden and crispy",
+      "To prepare the French toast, cut the banana bread into 4 1.5cm thick slices. Whisk together the eggs and cream and dredge the bread through the mix to coat evenly. Heat a knob of butter and a dash of oil in a frying pan and cook the bread until golden all over. Repeat with the remaining slices",
+      "Warm the caramel lightly in the microwave or a saucepan. Add the grilled bacon and a good dollop of the chilli labne to the banana bread and drizzle over the caramel before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": "g",
+        "notes": "peeled weight, cut into chunks",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "tepid",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted and ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": "thick",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped with seeds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b59d12ea830953eb2cae7140baa547c4aef88b77c0594ad9bdccfe23d5635a62",
+    "lineage_hash": "ddee270c36c64bea68ec0aa28a89cff8bcbd6079c30f20eda2a165f7ccb0876f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-french-toast-recipe",
+    "fetchedAt": "2026-08-03T20:20:48.353Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-french-toast-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

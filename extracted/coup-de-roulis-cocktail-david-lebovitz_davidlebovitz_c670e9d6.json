@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Coup de Roulis",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the gin, vermouth, triple sec, guignolet or cherry liqueur, and bitters to a cocktail mixing glass.",
+      "Fill two-thirds full of ice and stir briskly until well-chilled, 15 to 20 seconds. Strain into a chilled coupe glass. Hold the orange twist over the glass, colorful side down, and squeeze the zest over the glass so the oils spray into the drink. (I don't put the zest in the glass to garnish it afterward, but you could if you wish.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": "such as Pierre Ferrand Curacao, Cointreau, or Grand Marnier",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guignolet",
+        "unit": "oz",
+        "notes": "alt: Cherry Rocher, see headnote for other substitutes",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Twist",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42cffa79f1032ee31d19047432dfb9b6bb803ef61cfcafb9bcf374289f77446e",
+    "lineage_hash": "4d4fccf57551ed3c91e4b1a20b778571756da00c032bb18f53d898b9d5cb0046"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/coup-de-roulis-cocktail-recipe-cherry-gin-vermouth-drinking-french/",
+    "fetchedAt": "2026-08-03T02:41:35.852Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/coup-de-roulis-cocktail-recipe-cherry-gin-vermouth-drinking-french/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

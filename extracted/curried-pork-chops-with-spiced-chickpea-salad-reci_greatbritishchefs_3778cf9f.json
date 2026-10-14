@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Curried Pork Chops with Spiced Chickpea Salad",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by marinating the chops the day before or at least 2 hours before cooking. Mix the yoghurt with the curry powder and a pinch of salt, then place in a non-metallic container with the pork chops and mix to evenly coat. Leave in the fridge for 2 hours or ideally overnight",
+      "Drain the chickpeas and toss with the diced pork fat, a dash of vegetable oil and garam masala. Roast in the hot oven for 15 minutes, or until the chickpeas are crispy. Once cooked, set aside and turn the oven down to 180°C/gas mark 4",
+      "Bring the chops out of the fridge half an hour before cooking allowing them to come up to room temperature. Wipe the yoghurt marinade off the fatty edge of the chops with kitchen paper then place in a heavy-bottomed frying pan (cast-iron is ideal), fat-side down. You can use a spoon or pair of tongs to keep them propped up – the flesh shouldn't touch the pan as you only want to be rendering the fat at this stage",
+      "Cook slowly on a low heat until the fat has melted right down and is a deep amber colour (about 15–20 minutes). Drain the pan of fat periodically into a bowl",
+      "Whilst the fat is slowly cooking, add the red onion, tomatoes, cucumber and chilli to a bowl with the chopped herbs and pomegranate seeds. Set aside to mix with the chickpeas just before serving",
+      "To make the mint yoghurt, chop the mint leaves and stir into the yoghurt along with the turmeric and salt",
+      "Once the fat has rendered, cook the chops for a minute on each side, then add a knob of butter and cook for 3–4 minutes in the oven. Leave the pork to rest for 5 minutes in a warm place or under tin foil before carving",
+      "When ready to serve, mix the crispy chickpeas through the salad and season with lemon juice and the chaat masala spice mix",
+      "Slice the rested pork chops and serve with the salad and mint yoghurt on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Chops",
+        "unit": null,
+        "notes": "around 250g each and at least 2.5cm thick, most of the fat removed and finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chickpeas",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked and chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a47a5bd1892cdb0f13e60add43593744339458fccad3d0b53e063427427a6d74",
+    "lineage_hash": "a91cb3f64c5dfafe3adccbec722a17e005ccd3eccddec553b5bc67d78c33fbc9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-pork-chops-spiced-chickpea-salad-recipe",
+    "fetchedAt": "2026-08-03T04:45:30.980Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-pork-chops-spiced-chickpea-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

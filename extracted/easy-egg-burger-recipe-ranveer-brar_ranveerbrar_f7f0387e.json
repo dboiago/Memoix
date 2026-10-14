@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Easy Egg Burger",
+    "time": "20-25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare fried egg, break egg in a bowl and add egg whites.",
+      "Grease the inside of a large cookie cutter with some oil.",
+      "Heat butter in a non-stick pan. Place the greased mould in the center of the pan and pour in the eggs.",
+      "Sprinkle some salt and crushed peppercorns on top. Pour some water on the sides, cover and cook till the eggs are done.",
+      "Halve the bun horizontally and spread some mayonnaise and tomato ketchup.",
+      "Place 1-2 torn lettuce leaves, tomato roundels and cucumber slices on the base bun. Place cheese slices and fried egg on top then cover with the top bun with spread side on. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "for greasing",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burger Bun",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Few Lettuce Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e462479c35eacf821703f4e6b48221c0d4c8ea7afc07179a3938fcb51bf1329",
+    "lineage_hash": "a31abe2f18f3e4ff8a77969b9d2f13eeeb0c93bf27297bbccf416caed38b3982"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-burger/",
+    "fetchedAt": "2026-08-02T06:15:53.420Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-burger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

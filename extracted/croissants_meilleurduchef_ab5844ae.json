@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Croissants",
+    "time": "4 hours (+ 1 night in fridge)",
+    "course": "breads",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Easy Croissant and Pain au Chocolat recipe, organise all the necessary ingredients.",
+      "Start the day before: Pour the flour in the stand mixer recipient. Place the salt on one side.",
+      "Add the honey (melted in the microwave beforehand until liquid).",
+      "Pour the castor sugar over the salt.",
+      "Add the fresh baker's yeast on the opposite side of the sugar and salt. If you're using dehydrated yeast, reduced quantities by 2.5 times. The salt should not come into direct contact with the yeast. To make sure this doesn't happen, place the yeast at the bottom of the bowl then pour the flour on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour T45",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": "melted in the microwave beforehand until liquid",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": "fresh, if using dehydrated yeast, reduced quantities by 2.5 times",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Dry Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Dark Chocolate Baking Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb3a3bd2ce5655446bba9c973657de6734bb65b992485b5cff50ecb91bfc85f6",
+    "lineage_hash": "680c5f57f8b330371bc697baa8dcafbb7448d75cc5caeb1b81518c0af9486b72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/viennoiserie-recipes/croissant-recipes.html",
+    "fetchedAt": "2026-08-01T23:14:45.963Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/viennoiserie-recipes/croissant-recipes.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

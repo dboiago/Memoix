@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Beef Short Rib Birria",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cover the short ribs in salt and set aside",
+      "Heat 1 tablespoon of oil or lard in a frying pan over a medium heat and when hot, add the short ribs. You want to sear the ribs on all sides to obtain a deeply caramelised surface",
+      "Heat another tablespoon of oil or lard in an ovenproof casserole dish. Once hot, add the onions and leeks and cook down for 5 minutes. Add the garlic, cook for 3–4 minutes then add the soy sauce, ketchup, brown sugar, cayenne pepper, star anise, chipotles, mushrooms and beer",
+      "Cook uncovered for 30 minutes over a low heat, then add the short ribs to the pot. If there seems to be too little liquid to cover the ribs, add some water",
+      "Place the lid on the casserole dish and cook the short ribs for 3–4 hours. You’ll know when the ribs are cooked when you can take a teaspoon and scoop some meat off the ribs",
+      "Remove from the oven and allow to cool. Once cool, transfer the ribs to a tray and place the casserole back over a medium heat to reduce the sauce for another 20 minutes or so to make the glaze – you’re looking for a sauce that will thickly coat the back of a spoon",
+      "Add the beans, marjoram and chicken stock to a small pan and bring to a gentle boil. Continue to boil for 10 minutes, stirring every now and then to avoid sticking. Transfer to a bowl a sprinkle with the sesame seeds",
+      "Meanwhile, warm up some tortillas using a dry pan and wrap in a moist tea towel to keep warm",
+      "When the glaze is ready, return the ribs to the sauce, rib-side down, and serve in the dish",
+      "Place all the elements on the table and dig in, building each taco with some black beans sprinkled sliced short rib, coriander and a squeeze of lime"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Rib",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porcini Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porter",
+        "unit": "ml",
+        "notes": "or other dark beer",
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "or lard",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Black Beans",
+        "unit": null,
+        "notes": "drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "good quality",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "a mixture of black and white",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed8b0c35e563f08caf358059d578ccd206982c44516ceed69546c373e5ca39aa",
+    "lineage_hash": "80c3ff669f52e2bf6df2719c17f82a0f5b8f57f7d74ba9f08cc26a378f18b2c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-short-rib-birria-recipe",
+    "fetchedAt": "2026-08-03T10:47:02.939Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-short-rib-birria-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

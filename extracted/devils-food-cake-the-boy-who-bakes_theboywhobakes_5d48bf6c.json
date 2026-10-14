@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Devils Food Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180c (160c fan) and lightly grease 3x20cm round cake pans and line the base with parchment paper",
+      "Place the butter and coffee together in a large bowl and set over a pan of simmering water and heat, stirring occasionally, until the butter is fully melted",
+      "Remove the bowl from the heat and add the cocoa powder and chocolate and mix together until the chocolate is melted",
+      "Add the light brown sugar and vanilla and mix together until combined",
+      "Add the cold eggs and egg yolks and whisk into the batter until fully combined",
+      "Finally mix together the flour, baking powder and salt and sieve over the chocolate mixture, mixing together until just combined",
+      "Divide the batter between the prepared pans, preferably weighing to make super equal layers",
+      "Bake in the preheated oven for about 30 minutes or until the cake is starting to come away from the sides of the pan and springs back to a light touch",
+      "Allow the cakes to cool in the pans for 10-15 minutes before inverting onto wire racks to cool completely",
+      "To make the frosting place the chocolate into a heatproof bowl and set over a pan of simmering water and heat, stirring regularly, until fully melted",
+      "At the same time place all the remaining ingredients, except the sour cream, into a small saucepan and place over medium heat and cook, stirring frequently until the butter and sugar has melted and the mixture is smooth",
+      "Remove both from the heat and combine together",
+      "Pour the cream over the chocolate in three additions, stirring gently in the middle of the bowl until the two mixtures are combined and a super glossy finish is achieved",
+      "Finally add the sour cream and fold into the ganache",
+      "Set this mixture aside until it has thickened enough to spread and use like a regular frosting",
+      "To assemble the cake first use a serrated knife to level the cakes, if needed",
+      "Place the first cake layer onto a plate or cardboard cake round and spread with a small amount of the frosting",
+      "Repeat with the second layer of cake and then finally add the third cake layer and top with the remaining frosting spreading over the top and sides of the cake, decorating in whatever manner you prefer"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Brewed Black Coffee",
+        "unit": "ml",
+        "notes": null,
+        "amount": "340",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch-process Cocoa Powder",
+        "unit": "g",
+        "notes": "Guittard",
+        "amount": "85",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "around 72% cocoa solids",
+        "amount": "170",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "455",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "cold from the fridge",
+        "amount": "6",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": "cold from the fridge",
+        "amount": "3",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "255",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Devils Food Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "around 70% cocoa solids",
+        "amount": "400",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Large Pinch Flaked Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Chocolate Sour Cream Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be8d1cfc6b247fc7ac3f3b70557bf25b24ffdcb90bc04564b5f8865f7dacd39d",
+    "lineage_hash": "546ef3252a72864ad221aa48b4fc0759c3a76f47ca90ef741c846d89eabc0586"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/6/7/devils-food-cake",
+    "fetchedAt": "2026-08-01T20:18:22.616Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/6/7/devils-food-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

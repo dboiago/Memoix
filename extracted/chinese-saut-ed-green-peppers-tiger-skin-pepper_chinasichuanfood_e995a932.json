@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Tiger Skin Pepper",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "122",
+      "carbohydrateContent": "12",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cap the green peppers and remove the seeds. If you like spicy taste a lot, you can keep the seeds inside. Mince garlic",
+      "Heat up around 1 tablespoon cooking oil in wok and then add the green peppers in to sauté until the skins become slightly crinkly. Turn the peppers from time and time to water the cooking process. If you are using a non-stick wok, place the green peppers directly.",
+      "Move the green peppers to the edges of the wok and add around cooking oil in, fry garlic until aromatic. Add light soy sauce, vinegar and sugar.  Simmer for a while until the sauce is slightly thickened. Add a very small pinch of salt if necessary (this actually depending on how salty your soy sauce is)",
+      "Serve hot with steam rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shishito Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "883fee731bcf151f0796eba6f444098b22e1a92ceabb047a12bd87119d71f463",
+    "lineage_hash": "4a71269733db0964fabaa6a96743f79160652fe3da767be789b048ca662db8ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-sauteed-green-peppers-tiger-skin-pepper/",
+    "fetchedAt": "2026-08-01T19:34:36.253Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-sauteed-green-peppers-tiger-skin-pepper/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

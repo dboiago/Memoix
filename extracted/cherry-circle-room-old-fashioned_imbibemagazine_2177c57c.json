@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Cherry Circle Room Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Coin"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a mixing glass with ice and sir to chill. Strain into an Old Fashioned glass over a large chunk of ice. Express the oils of an orange coin over the top of the drink, and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amontillado Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Maple Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea3e0b7b5ee07fa6c5397f9074d1e39b35ff4e85650aa7167ccece2f400eefb4",
+    "lineage_hash": "2a17670af7d4d34c7832610099f6e0497d6619456bf8ded63b867ec276e67e98"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-circle-room-old-fashioned/",
+    "fetchedAt": "2026-08-03T19:56:21.560Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-circle-room-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

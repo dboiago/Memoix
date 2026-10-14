@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/dill-pickles-recipe",
+  "slug": "dill-pickles-recipe_greatbritishchefs_5d52fde0",
+  "title": "Dill Pickles Recipe",
+  "byline": "by Kerth Gumbs",
+  "fetchedAt": "2026-08-03T11:01:31.256Z",
+  "ldName": "Dill pickles",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Pickle",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "12 baby cucumbers",
+    "1 handful of dill",
+    "300ml of cider vinegar",
+    "100ml of water",
+    "2 tbsp of sugar",
+    "1 tbsp of mustard seeds",
+    "1 tsp salt",
+    "1 tbsp of peppercorns"
+  ],
+  "ldInstructionsRaw": [
+    "To begin, place all of the ingredients (except the cucumbers and dill) in a pan. Bring to the boil, then turn down to a simmer and add the dill",
+    "Stir until the sugar and salt have dissolved, then remove from the heat and allow to cool",
+    "Place the cucumbers in a sterilised jar. Once the pickling liquor has cooled to room temperature, pour over the cucumbers",
+    "Leave the cucumbers to pickle for at least 2 weeks, and when you are happy with the flavour, transfer the jar to the fridge"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

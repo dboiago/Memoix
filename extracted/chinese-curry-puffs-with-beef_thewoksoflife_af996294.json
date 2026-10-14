@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Chinese Curry Puffs with Beef",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "244",
+      "carbohydrateContent": "14",
+      "fatContent": "18",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a skillet or wok, heat the oil over medium high heat. Add the onions and garlic and cook until translucent and just slightly caramelized.",
+      "Add the ground beef, breaking it up with a spatula. Cook until browned. Next, add the curry powder, turmeric, cumin, sugar, black pepper, and salt. Stir everything together and allow the mixture to cook for another couple of minutes.",
+      "While that’s happening, make a cornstarch slurry by mixing the beef broth with 1 tablespoon of cornstarch. Stir the slurry into the beef mixture and simmer for a few minutes, until the entire mixture has thickened. You’ll know it’s ready when there’s no more pooling liquid––just a very viscous curry beef! Transfer the beef mixture to a bowl and allow to cool.",
+      "Once the filling has cooled, take your puff pastry out of the freezer and defrost for about 35-40 minutes--no more. Unfold each puff pastry sheet, and cut each one into 9 squares.",
+      "Spoon about 3 tablespoons of filling onto each square, and fold diagonally to form a triangle, pressing the edges together. Crimp the edges with a fork and transfer to a baking sheet. Repeat with the remaining squares of puff pastry. You’ll need two baking sheets.",
+      "When the puffs are formed, refrigerate for 15-20 minutes and preheat your oven to 400 degrees F. When the oven is preheated, remove the puffs from the refrigerator, and brush with egg wash. Bake the puffs (one sheet at a time) for 15-18 minutes or until golden brown. Let cool for 10-15 minutes before attempting to eat, as the filling will be very hot! And if you don’t finish these in one sitting, they can be reinvigorated by a quick re-heat in a toaster oven."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets Puff Pastry",
+        "unit": null,
+        "notes": "about 17 ounces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten with 1 tablespoon water to make an egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd513f8a161b4f5023b24352f3fe6ba1f473f0ab15900d47b7c5a6c1fc2cacc2",
+    "lineage_hash": "ecf55187ee03700a79a8354cde7aac07e8755e728cfa5c1461439fb317f1811a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/curry-puffs/",
+    "fetchedAt": "2026-08-02T07:22:15.926Z"
+  },
+  "rawSource": "https://thewoksoflife.com/curry-puffs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

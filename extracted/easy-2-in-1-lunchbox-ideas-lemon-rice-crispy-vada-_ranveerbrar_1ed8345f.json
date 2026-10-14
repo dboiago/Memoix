@@ -1,0 +1,290 @@
+{
+  "recipe": {
+    "name": "Lemon rice & Crispy Vada",
+    "time": "30-40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a wok or kadai, add oil, once it's hot, add small mustard seeds and let it splutter well.",
+      "Add urad dal, chana dal, dry red chillies, peanuts, cashew nuts and saute it well until golden in color.",
+      "Add green chillies, curry leaves, turmeric powder and saute it for a minute.",
+      "Add lemon juice, sugar, leftover cooked rice, salt to taste and give it a good mix.",
+      "Finish it with lemon juice, curry leaves, a pinch of salt, water and cover it with the lid and let it cook for a while.",
+      "Transfer it to the serving dish, garnish it with fried cashew nuts, fried red chillies and fried curry leaves.",
+      "Serve hot.",
+      "In a bowl, add curd, semolina and leave it aside for 4-5 minutes.",
+      "Add green chillies, ginger, prepared lemon rice, curry leaves and mix it well.",
+      "Divide the mixture into small lemon size balls and give it a desired shape.",
+      "Keep it aside for further use.",
+      "In a non-stick kadai, add oil, once it's hot, add prepared vada and fry until golden brown.",
+      "Transfer it to an absorbent paper and keep it aside for further use.",
+      "In the same kadai, add green chillies and fry it for a minute.",
+      "Add cashew nuts and fry it for a minute until golden in color.",
+      "Transfer it to an absorbent paper and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "1",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "2",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & cut into diagonally",
+        "amount": "2",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Leftover Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly torn",
+        "amount": "1",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Lemon Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "⅓",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Lemon Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Rice Vada Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "slit into middle",
+        "amount": "3",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": null,
+        "notes": "fried",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "fried",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "fried",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7c525dd8a41f36a379f84f143a6d7fa470eea9cd9d17fb7c8c10d2aa848137f",
+    "lineage_hash": "5d75618b59986b6f0fa4e57b2853aaad35b299f7d1b7633da9301450c965282f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/lemon-rice-crispy-vada/",
+    "fetchedAt": "2026-08-02T18:38:20.836Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/lemon-rice-crispy-vada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

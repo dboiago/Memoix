@@ -1,0 +1,72 @@
+{
+  "url": "https://muybuenoblog.com/bunuelos-mexican-fritters/",
+  "slug": "authentic-mexican-bu-uelos-muy-bueno_muybuenoblog_347dea70",
+  "title": "Authentic Mexican Buñuelos - Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T03:45:54.261Z",
+  "ldName": "Mexican Buñuelos Recipe (Buñuelos Mexicanos)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "20",
+    "20 Buñuelos"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Desserts",
+  "ldKeywords": "bunuelos recipe, Mexican doughnuts recipe, Mexican fritters",
+  "ldIngredientsRaw": [
+    "3 cups all-purpose flour",
+    "1 teaspoon baking powder",
+    "1 teaspoon salt",
+    "1 teaspoon ground cinnamon",
+    "¾ cup milk",
+    "¼ cup butter",
+    "1 teaspoon vanilla",
+    "2  beaten eggs",
+    "Canola or vegetable oil for frying",
+    "1 cup sugar",
+    "1 teaspoon ground cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "In a mixing bowl combine flour, baking powder, salt, and cinnamon.",
+    "In a saucepan heat milk, butter, and vanilla and bring to a boil. Set aside to cool.",
+    "In a separate bowl, mix the eggs, then add the beaten eggs to the room temperature milk mixture and whisk quickly.",
+    "Add the liquid mixture to dry ingredients and mix well.",
+    "Knead dough on lightly floured surface 2 to 3 minutes until smooth.",
+    "After you knead the dough, divide into 20 dough balls. With a rolling pin, roll out thin tortillas.",
+    "Lay out all the thin tortilla flats on a tablecloth and let them dry. Turn them over once to ensure drying on both sides. This helps remove most of the moisture before frying.",
+    "Heat one-inch of oil in a skillet wide enough for the tortillas to fry flat. Deep-fry tortillas until golden brown, turning once. Remove from pan; stand vertically in a bowl lined with paper towels and drain excess oil.",
+    "While warm, sprinkle fried tortillas on both sides with sugar-cinnamon mixture."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "171 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "3 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "23 mg",
+    "sodiumContent": "147 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "11 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 cups all-purpose flour",
+    "▢ 1 teaspoon baking powder",
+    "▢ 1 teaspoon salt",
+    "▢ 1 teaspoon ground cinnamon",
+    "▢ ¾ cup milk",
+    "▢ ¼ cup butter",
+    "▢ 1 teaspoon vanilla",
+    "▢ 2 beaten eggs",
+    "▢ Canola or vegetable oil for frying",
+    "[Sugar coating]",
+    "▢ 1 cup sugar",
+    "▢ 1 teaspoon ground cinnamon"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

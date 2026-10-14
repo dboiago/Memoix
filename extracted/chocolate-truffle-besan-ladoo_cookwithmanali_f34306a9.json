@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chocolate Truffle Besan Ladoo",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the chocolate truffle. Take 100 grams of good quality dark chocolate (I would not recommend using chocolate chips) and chop it fine. You need to chop the chocolate fine so that all the chocolate melts easily when you pour hot cream over it.",
+      "Heat 1/3 cup of heavy cream in a pan just until it starts to sizzle from the edges, do not boil it. Pour the warm cream over the bowl of chocolate and let it sit for 5 minutes.",
+      "Now, take a wire whisk and stir the cream and chocolate together. Add a splash of vanilla if you like. The chocolate should melt complete and you should have a smooth ganache. If you see that some of the chocolate hasn’t melted and the mixture isn’t smooth, pop the bowl into the microwave and microwave in 10 seconds increments as needed and it should be all smooth.",
+      "Cover the bowl with a cling sheet with the sheet touching the surface of the ganache. Refrigerate for 2 to 3 hours for the ganache to harden.",
+      "Once the ganache has hardened, take the bowl out of the refrigerator. Line a baking sheet or plate with parchment paper or silicone mat. Use a mini cookie scoop to scoop out the ganache, don’t try to shape it at this point. Just scoop out the ganache using the mini cookie scoop and drop it on the sheet. Place the sheet in the refrigerator for 30 minutes.",
+      "Take out the sheet from the refrigerator after 30 minutes, now start shaping the truffles. This can get messy as the chocolate will melt as soon as it comes in contact with your hands. What I like to do is that rather than rolling the truffles between the palms, I push the ganache from both sides to bring it together and shape it into a round (as much as I can). Once it’s reasonably round, then I roll it quickly between my palms to make it more round and then roll into cocoa powder. You have to work here quickly especially if you live in a warm place.",
+      "Roll all truffles in cocoa powder.",
+      "Place the prepared truffles in the refrigerator while you work on the besan ladoo mixture.",
+      "Melt 1/4 cup ghee (55 ml) in a pan on medium heat. Once the ghee melts, add 1 cup besan (110 grams) to the pan and stir and set heat to low. At first it will clump and then start to loosen up around 7 to 8 minutes mark. Keep stirring at all times. Please read my detailed post on besan ladoo for complete instructions, it has all tips and tricks that you need to make this mithai.",
+      "After roasting the besan for around 25 minutes, it has this nutty aroma and changes to a light caramel color. It also becomes very smooth and liquid-y at this point. Do not burn it. You can also taste test to check if the besan is well roasted or not.",
+      "Let the besan cool down for around 10 minutes and then add 1/2 cup boora (75 grams) and 1/2 teaspoon cardamom powder. Mix until the boora is well combined with the besan.",
+      "Now, let the mixture cool down a little more. Since we are going to stuff these with truffles, we don’t want the mixture warm. We don’t want the mixture to become completely cold either because then the ghee will solidify and it will become difficult to shape ladoos. So, just let it cool down a bit more after adding the sugar. After it’s just slightly warm, start making the ladoos. Take some mixture and press it between your palms. Also, take out the truffles from the fridge at this point.",
+      "Make a well in the center by using your thumb.",
+      "Add the prepared truffles in the center.",
+      "Now use a little more of the besan ladoo mixture and place it on top of the truffle to seal the ladoo.",
+      "Then gently roll between your palms to shape the ladoo. Do not try to reshape the ladoo once you have shaped it. The chocolate will melt inside the ladoo and if you try to reshape it, the ladoo will break and chocolate will ooze out and then you can’t reshape it again. Make all the ladoos similarly. You would get around 8 truffles from the mixture, keep in mind these truffles are large in size."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "use good quality chocolate, do not use chocolate chips",
+        "amount": "100",
+        "section": "chocolate truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "80 ml",
+        "amount": "⅓",
+        "section": "chocolate truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Splash Vanilla Extract",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "chocolate truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "55 ml, not melted",
+        "amount": "¼",
+        "section": "besan ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": "ladoo besan, 110 grams I used coarse besan",
+        "amount": "1",
+        "section": "besan ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Bura/boora",
+        "unit": "C",
+        "notes": "75 grams, not to be confused with icing sugar/confectioners sugar OR pulse granulated white sugar and use that",
+        "amount": "½",
+        "section": "besan ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "besan ladoo",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c268e9277d14be3d3becafe5df8e9e8e4b5caf4f3094b9264cb2eb3153b59062",
+    "lineage_hash": "144dc548ec1d6fbd0be765f03ac583eb175c1357f38b9cb9190dc901a19e5f46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chocolate-truffle-besan-ladoo/",
+    "fetchedAt": "2026-08-02T08:34:45.893Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chocolate-truffle-besan-ladoo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

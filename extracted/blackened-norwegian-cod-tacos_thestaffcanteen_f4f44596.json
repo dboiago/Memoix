@@ -1,0 +1,230 @@
+{
+  "recipe": {
+    "name": "Blackened Norwegian cod tacos",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "NO",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the spice mix, toast the seeds and then grind all the ingredients together in a pestle and mortar.",
+      "For the salsa, mix all the ingredients together and leave at room temperature for 30 minutes. Drain any excess liquid and check the seasoning.",
+      "Spread the spice mix on a plate or small tray and press one side of the fish slices into the spice mix. Heat some oil in a heavy non-stick pan and fry the fish, spice side down, to develop a dark crust. Turn the fish over for a few seconds to cook through.",
+      "Fill the tortillas with lettuce, avocado and salsa, lay the blackened Norwegian cod on top and served with the pickled chillis and sour cream on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Herbes De Provence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "blackened spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Tomatoes",
+        "unit": "large",
+        "notes": "peeled, deseeded and diced",
+        "amount": "4",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Passata",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Norwegian Frozen at Sea Cod Fillet",
+        "unit": "g",
+        "notes": "skinned and sliced into 16 pieces",
+        "amount": "650",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "To Serve",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": "small",
+        "notes": null,
+        "amount": "8",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Little Gem",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Avocados",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream/yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": "cod",
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeños",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "cod",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e5731c0c4144d1b0ec3511fb9c9f105cc70e3652e722aee3739e3dcf78cafebb",
+    "lineage_hash": "d743b87c31def15717663750eef7737918c3521154691404c0f9bfb86150bbcc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Blackened-Norwegian-cod-tacos",
+    "fetchedAt": "2026-08-03T14:01:09.664Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Blackened-Norwegian-cod-tacos",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

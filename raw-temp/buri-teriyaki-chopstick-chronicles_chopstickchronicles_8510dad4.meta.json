@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chopstickchronicles.com/buri-teriyaki/",
+  "slug": "buri-teriyaki-chopstick-chronicles_chopstickchronicles_8510dad4",
+  "title": "Buri Teriyaki - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T17:39:48.824Z",
+  "ldName": "Buri Teriyaki 鰤の照り焼き",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 serves"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main Dish, Side Dish",
+  "ldKeywords": "#Buri teriyaki, #teriyaki",
+  "ldIngredientsRaw": [
+    "150 g yellow tail fish fillet",
+    "1/4 cup Teriyaki sacue",
+    "10 g butter",
+    "1  shiso leaf",
+    "1  amzu radish to garnish",
+    "1 bunch bunch of radish",
+    "4 tbsp rice vinegar",
+    "1 tbsp sugar",
+    "pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the yellow tail fillet. Sprinkle salt and leave them for about 15 minutes.",
+    "After 15 minutes, wipe the excess liquid off the fish with paper towels.",
+    "Heat the butter in a frying pan over medium heat.",
+    "Fry both side of the fish until brown.",
+    "Turn the heat up and pour the teriyaki sauce over the fish.",
+    "Cook till the sauce has reduced and become thick and shiny.",
+    "Turn the heat off and serve it with shiso leaf and radish.",
+    "Kikka Kabu (Chrysanthemum radish)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "350 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "35 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "77 mg",
+    "sodiumContent": "2947 mg",
+    "sugarContent": "23 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 150 g yellow tail fish fillet",
+    "▢ 1/4 cup Teriyaki sacue",
+    "▢ 10 g butter",
+    "▢ 1 shiso leaf",
+    "▢ 1 amzu radish to garnish",
+    "[Amazu]",
+    "▢ 1 bunch bunch of radish",
+    "▢ 4 tbsp rice vinegar",
+    "▢ 1 tbsp sugar",
+    "▢ pinch of salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

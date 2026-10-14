@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Bronx Cocktail",
+    "time": "15 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the gin, sweet and dry vermouth, orange juice (or orange and lemon juice), and orange bitters, to a cocktail shaker. Fill the shakers two-thirds full with ice, cover and shake vigorously until well-chilled, about 15 seconds.",
+      "Strain the mixture into a chilled coupe glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Orange Juice",
+        "unit": "oz",
+        "notes": "or 3/4 ounce orange juice and 1/4 ounce lemon juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62d92de9c0c8c0332fbb06a11c9ec123e2c592c752f7889b60dea8e66863e42b",
+    "lineage_hash": "ef6babd85c18f9658b9c69c9ff5db7f336c7f3c4a4b5fcc685745329ee835873"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/bronx-cocktail-gin-cocktail-recipe-drinking-french/",
+    "fetchedAt": "2026-08-02T20:13:35.060Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/bronx-cocktail-gin-cocktail-recipe-drinking-french/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

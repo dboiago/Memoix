@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Cured Cod with Pickled Potato Noodles",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "All the elements for this dish need to be prepared the day before serving, so bear this in mind. Begin by curing the cod. Sprinkle half of the salt into a container and sit the cod on top, then sprinkle the rest of the salt over and pat down, ensuring the fish is evenly coated. Leave to cure in the fridge for 12 hours",
+      "Next, pickle the potatoes. Peel and spiralise them into noodles, then rinse in cold water several times to remove as much starch as possible. Submerge the rinsed noodles in a bowl of cold water whilst you make the pickle liquor",
+      "Place the water, sugar and vinegar in a pan and bring to the boil, then remove from the heat. Strain the potato noodles, place them back in the bowl and pour over the pickle liquor. Cover and leave in the fridge to pickle for 12 hours",
+      "To make the coriander oil, roughly chop the coriander (including stalks) and add to a blender with the oil. Blitz on full power for at least 3 minutes until it is smooth and bright green",
+      "Transfer the contents of the blender to a pan and heat until bubbles appear. Line a sieve with muslin cloth or kitchen towel and set it over a bowl. Pour the hot oil into the sieve, then transfer to the fridge to strain overnight",
+      "After 12 hours, rinse the cod under cold water then pat dry and finely slice into strips",
+      "To serve, divide the sliced cod between 4 serving plates. Strain the pickled potato noodles, then place in a neat tangle over the fish. Finish with a generous amount of coriander oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Loin",
+        "unit": "g",
+        "notes": "skin on",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large White Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "fresh, washed and dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7fcbc07e9d3706f6336b81b3a44b37ed1abad00d969567412ef40328ddef078c",
+    "lineage_hash": "808577ab190d3c1a1fbde543fc11039d275f5102e24328d0febd485406fd9af1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-cod-with-pickled-potato-recipe",
+    "fetchedAt": "2026-08-02T20:24:04.925Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-cod-with-pickled-potato-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Creole Seasoning Rub",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix everything together. Store in a tightly closed container for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "American Style Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbd7bd5bcd33040c454ee4c5ecaa52cbabd7e0dd1dd57559aa0d55ad804d3e5e",
+    "lineage_hash": "17a996ee36dbe73ac79655d6baacdafeae19cfedc7a418a649ffad1b749a6f81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/creole-seasoning-rub-recipe/",
+    "fetchedAt": "2026-08-02T04:26:24.854Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/creole-seasoning-rub-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

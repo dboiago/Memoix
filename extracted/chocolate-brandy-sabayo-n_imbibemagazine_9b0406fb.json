@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Chocolate Brandy Sabayón",
+    "time": "12 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the egg yolks and sugar in a medium heatproof bowl until pale yellow. Whisk in the brandy, cocoa powder and 1/2 cup of water until smooth. Set the bowl over a saucepan of simmering water and whisk continuously until thick and an instant-read thermometer registers 165 degrees F, about 12 minutes. Remove from the heat and whisk in the chopped chocolate until smooth. Divide among serving dishes and top with raspberries. Sprinkle with salt, drizzle with oil and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "preferably 60 percent cacao, finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf712f4a04577c1e63129c4ad83da9070b4fcaf00c096a5603618ac02735cd29",
+    "lineage_hash": "50db89f8e2833e14d4342294856f973a027c7e96d878f2692a5a410fa2973004"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-brandy-sabayon/",
+    "fetchedAt": "2026-08-04T00:29:04.213Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-brandy-sabayon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

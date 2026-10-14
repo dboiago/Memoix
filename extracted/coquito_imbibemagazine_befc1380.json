@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Coquito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Small, Short",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a blender and blend until well-mixed and frothy. Seal in an airtight container and refrigerate until well-chilled.",
+      "Spiced Coconut Milk In a saucepan over medium heat, combine 15 oz. (1 can) of coconut milk with 2 cinnamon sticks, 3 whole cloves, 2 star anise and 3 allspice berries. Bring the mixture to a simmer, then reduce the heat to low, and simmer for 30 minutes. Strain through a mesh strainer, then cool before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gold Puerto Rican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Coconut Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Coconut",
+        "unit": "oz",
+        "notes": "such as Coco López",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9029fc7d263c575bb1e2c3f9b74006803470766d3147f653781674d19a5f5bb",
+    "lineage_hash": "018905f3b78723a964f48675bd9b2e7caba5bce4a26dda8caff1b1ba0cfe1d98"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coquito/",
+    "fetchedAt": "2026-08-04T01:31:34.524Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coquito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

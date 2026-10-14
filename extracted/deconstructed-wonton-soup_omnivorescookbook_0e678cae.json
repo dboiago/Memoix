@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Deconstructed Wonton Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "287",
+      "carbohydrateContent": "28.2",
+      "fatContent": "9",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "Mix all the filling ingredients together in a medium bowl. Stir in a circular motion in one direction until the meat becomes sticky.",
+      "Heat the chicken stock in a medium pot. Add the light soy sauce and ginger. Once boiling, let the broth simmer for 5 minutes.",
+      "To cut baby bok choy, slice off and discard the end. Remove the large outer leaves. If the outer leaves are quite large and thick, further slice the white part into 1/2” pieces and the greens into 1” pieces. Halve the core. Once cut, soak the baby bok choy in cold tap water for 2 to 3 minutes. Gently rinse with your hands to remove any dirt. Then drain off the water.",
+      "Turn to medium-low heat. Use a spoon to scoop about 1 tablespoon of the filling, then use another spoon to release the filling into the soup. (Use a cookie scoop for this step if you have one). Add meatballs until all the filling is used. Turn to medium-high heat and let the soup come to a low boil. When the meatballs have floated to the top, cook for 1 more minute. Skim and discard any foam from the top while the meatballs are cooking.",
+      "Then add the baby bok choy. Let cook for 1 minute, or 2 minutes for a very tender texture.",
+      "Add the wonton wrappers, one sheet at a time. Use a spatula to push the wrapper into the soup so you get more space to add more wrappers. Try to avoid letting the wrappers crowd in one spot, which causes sticking. Once all the wrappers are added, cook for 1 minute.",
+      "Turn off the heat. Add the scallion, white pepper and sesame oil. Stir to mix well. Transfer the wonton soup into individual bowls and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy",
+        "unit": "oz",
+        "notes": "4 to 6 stalks",
+        "amount": "10",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Wonton Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fedcba3745d68ff55ef00c701224e062f246cfe687647795cb597e31d778217e",
+    "lineage_hash": "4c8ec9d537e6646b062390f830583147f594b404c2732d81c1cfb5012b4c595f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/deconstructed-wonton-soup/",
+    "fetchedAt": "2026-08-02T07:58:58.821Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/deconstructed-wonton-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Conquistador Holiday Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a large pitcher, adding clementine syrup last and to taste. Chill thoroughly. When ready to serve, place ice block in a punch bowl and pour punch over. Float clementine slices in the punch and garnish each serving with small coins of clementine peel gently squeezed over the glass.\nClementine Zest SyrupUse a microplane grater to remove the zest from the two clementines. Add zest to 8 1/2 oz. of cold simple syrup (1:1). Cover and refrigerated overnight or up to 24 hours. Strain out the zest and keep the syrup refrigerated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pedro Ximenez Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "12-13 limes",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine Juice",
+        "unit": "C",
+        "notes": "12-13 clementines",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine Zest Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Block",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbd7e04cb36a7e1b36c0d2fb2ee2297e4cc1ee57566d33a3601dac0f9b61a1f2",
+    "lineage_hash": "d366281cfedb56da984ec02f8204e8e03c91fe7fcfcb9551e57e85a731111c88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/25-days-of-holiday-drinks-day-12-conquistador-punch/",
+    "fetchedAt": "2026-08-04T01:25:41.877Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/25-days-of-holiday-drinks-day-12-conquistador-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

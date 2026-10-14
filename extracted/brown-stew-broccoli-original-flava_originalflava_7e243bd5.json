@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Brown stew broccoli",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First you’ll need to wash your fresh broccoli and cauliflower and cut into florets then add to a mixing bowl.",
+      "Then season with 1tsp salt, pepper, browning, pimento, paprika, half of bell peppers, fresh thyme then mix together and marinate for a few hours.",
+      "In your frying pan add vegetable oil on a high heat, then add your onions and garlic and saute for a few minutes.",
+      "Add 1 tsp browning, thyme, black pepper, 1 sliced scotch bonnet and mix until you form a brown paste.",
+      "Add your marinated broccoli & cauliflower and mix together.",
+      "Add 1 cup of water, and steam vegetable until soft. Give it one last mix together and add the remaining bell peppers.",
+      "Then serve as a side dish on eat on its own!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Browning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento / All Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "Sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": null,
+        "notes": "Sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": "Sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "229dae7b326b5d9d6f5bb2387d530cbbfd750c8afb8ac029ba03bfef00e2bee9",
+    "lineage_hash": "f25ac2551cef7c745406caf3d383e418c3b50fb550fda2569875d2ab61875f0e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/brown-stew-broccoli/",
+    "fetchedAt": "2026-09-30T17:02:42.914Z"
+  },
+  "rawSource": "https://originalflava.com/meals/brown-stew-broccoli/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

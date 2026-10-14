@@ -1,0 +1,7 @@
+Each time I make [pandan extract](https://dailycookingquest.com/pandan-extract.html), I am left with pulverized pandan leaf pulp, which is actually still very flavorful. Throwing them away seems like a major waste, so I use it to make home made coco pandan syrup. The store bought version always has red color, but when I go through the ingredient lists, the color actually comes red food coloring (gasp!), so I don’t bother adding any artificial coloring and leave my syrup all natural. The home made version will has a slight tinge of green from the pandan leaf, but this is totally okay and safe to be consumed. ♥
+
+![Coco Pandan Syrup](https://dailycookingquest.com/img/2014/04/coco_pandan_syrup2_hu19240a57853935c4645135bda75bc385_130108_1200x1800_resize_q75_lanczos.jpg)
+
+Coco Pandan Syrup
+
+So, what is coco pandan syrup good for? Well, I love using this to sweeten my tea. Trust me, it is going to be so heavenly. Or if you are making [_es campur_](https://dailycookingquest.com/es-campur-mixed-shaved-ice-dessert.html) and cannot locate instant coco pandan syrup, you can use this instead. Note that your es campur will not have red color, though I think it is totally fine given now you know where that red color comes from :)

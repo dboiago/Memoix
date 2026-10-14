@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Crumpets",
+    "time": "1 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of a stand mixer, mix the tepid milk with the sugar and yeast. Let proof for 10 minutes, or until the yeast starts to bubble.",
+      "Fit the mixer with the paddle attachment and gradually mix in the flour and salt. Turn the mixer to high speed and beat for 3 minutes. (You can also make this by hand in a large bowl, and beat the mixture vigorously.)",
+      "Cover the bowl with a kitchen towel and let rise in a warm place until the dough has doubled, about 1 hour.",
+      "Mix the water and baking soda together and beat them into the dough.",
+      "Heat a wide skillet over medium heat. Pour some neutral-flavored oil into a small bowl and use a paper towel to wipe the bottom of the pan with oil, and the inside of the crumpet rings or molds. (Mine were 4-in/10cm, but you can use another size.)",
+      "Place the rings in the pan and fill the molds with batter so they're halfway full. Let the crumpets cook; bubbles will appear on the top while the bottom browns. Cook them long enough so bubbles can form, checking the bottom (and perhaps adjusting the heat) to make sure the undersides of the crumpets aren't getting too dark.",
+      "When there are bubbles on top and the bottoms are browned, about 4 to 5 minutes, use tongs to remove the rings and flip the crumpets over. (Tip: You can actually remove the rings once the crumpets appear set, so they have a few minutes to cool down before you reuse for the next batch.) Cook the crumpets on the other side until golden brown. If you're like me, you'll probably toast them so they don't need to be very dark. When done, place the crumpets on a cooling rack.",
+      "Wipe the inside of the crumpet rings clean of any stuck-on bits, wipe the bottom of the pan with a bit of additional oil, and repeat the process, making more crumpets with the remaining batter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "355ml, about 110ºF, 43ºC, regular or lowfat, at slightly above room temperature",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "390g",
+        "amount": "2¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "plus 1 tablespoon (195ml) tepid water",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7b7f0a1cbe7c0e9837e66143db07ad0c628eeccfecfe3444b047050704f887c",
+    "lineage_hash": "6d66a852d449ff4236019a8efe8bfd1079da930318fceeb584dc3a6ca189e650"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/crumpets-recipe/",
+    "fetchedAt": "2026-08-02T21:53:32.019Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/crumpets-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

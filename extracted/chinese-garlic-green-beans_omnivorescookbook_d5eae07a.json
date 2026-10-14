@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Chinese Garlic Green Beans",
+    "time": "22 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "169",
+      "carbohydrateContent": "11.6",
+      "fatContent": "13.7",
+      "proteinContent": "2.5"
+    },
+    "directions": [
+      "Thoroughly pat the green beans dry with paper towels to prevent oil splatter.",
+      "Heat 3 tablespoons of oil in a large skillet over medium-high heat until hot. Turn to medium heat and add the green beans. Toss to coat well with the oil. Spread out the green beans as much as possible with minimal overlap and sprinkle with the salt. Let cook without touching for 2 to 3 minutes, until the bottom starts to blister and turn golden. Remove any green beans that have blistered and charred on one side and transfer them to a big plate. Keep cooking the rest of the green beans, flipping occasionally and taking out the ones that are blistered. The whole process should take about 6 to 8 minutes.",
+      "If your pan looks dry, add the remaining 1 tablespoon of oil. Otherwise, directly add the garlic and ginger to the pan. Stir and cook for a few minutes to release fragrance. Add back all the cooked green beans and stir to mix a few times.",
+      "Pour in the Shaoxing wine and soy sauce and sprinkle with salt. Stir immediately to mix everything well. Taste the green beans. Adjust seasoning by adding more salt or soy sauce, if needed.",
+      "Transfer everything to a big plate. Sprinkle with chili flakes, if using. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Beans",
+        "unit": "lb",
+        "notes": "tough ends removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Minced Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry, or chicken broth",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Flakes (for Garnish) (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "924774e5b32c7eaaffd17242ab6cd8e825255edf8ec241cba3cbc647fae03f1d",
+    "lineage_hash": "f4ddb25e8320d1e8a385b53ffe1640eb6be741176b71b719ede5a8404e19bf7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-garlic-green-beans/",
+    "fetchedAt": "2026-08-02T07:25:56.778Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-garlic-green-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

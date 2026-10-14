@@ -1,0 +1,62 @@
+{
+  "url": "https://dailycookingquest.com/broccoli-and-tofu-stir-fry.html",
+  "slug": "broccoli-and-tofu-stir-fry_dailycookingquest_df5c4fb1",
+  "title": "Broccoli and Tofu Stir-Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:47:18.148Z",
+  "ldName": "Broccoli and Tofu Stir-Fry",
+  "ldTime": "PT0H15M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish, Vegetarian",
+  "ldKeywords": [
+    "15 minutes quick Chinese stir-fry recipe",
+    "Chinese vegetarian stir-fry recipe",
+    "Chinese tofu and vegetables stir-fry recipe",
+    "Chinese vegan stir-fry recipe",
+    "Tofu",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon oil",
+    "3 cloves garlic, minced",
+    "450 gram (1 lb) broccoli florets, washed and drained",
+    "1 block (450 gram / 1 lb) firm tofu, cut into cubes",
+    "cornstarch slurry (mix 1 tablespoon cornstarch + 2 tablespoon water)",
+    "1 cup stock (Note 1)",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon ground white pepper",
+    "2 tablespoon soy sauce (Note 2)",
+    "2 tablespoon Shaoxing wine",
+    "1 teaspoon dark soy sauce (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a wok over medium-high heat. Once the wok feels hot, add oil and swirl to coat the pan.",
+    "Add minced garlic and sauté for 30 seconds, or until the color turns golden brown.",
+    "Add broccoli florets and cook for 1 minute, stirring often. Add tofu cubes and the sauce, mix well and bring to a boil.",
+    "Once the sauce boils, add the cornstarch slurry and cook for another 2 minutes or until the sauce is thick.",
+    "Turn off the heat, transfer the dish to a serving plate, and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon oil",
+    "3 cloves garlic, minced",
+    "450 gram (1 lb) broccoli florets, washed and drained",
+    "1 block (450 gram / 1 lb) firm tofu, cut into cubes",
+    "cornstarch slurry (mix 1 tablespoon cornstarch + 2 tablespoon water)",
+    "Sauce (mix the following)",
+    "1 cup stock (Note 1)",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon ground white pepper",
+    "2 tablespoon soy sauce (Note 2)",
+    "2 tablespoon Shaoxing wine",
+    "1 teaspoon dark soy sauce (optional)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

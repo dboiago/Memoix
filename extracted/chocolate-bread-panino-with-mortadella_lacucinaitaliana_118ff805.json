@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Chocolate Bread Panino with Mortadella",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make this recipe for chocolate bread panino with mortadella, first mix all ingredients in a large bowl and knead with 350 g water until the dough is soft and sticky. (It’s easiest to use a stationary mixer in this case.) Cover with a cloth and let the dough rise in a warm place for about 1 hour. Then knead it with the utmost delicacy on a floured surface. Line a bread loaf mold with a cloth dusted with flour and fill it with the dough.",
+      "Cover with another damp cloth and let it rise for another 40 minutes. Finally, turn the dough out onto a baking sheet lined with baking parchment. Make oblique cuts on the surface and bake at over on a baking sheet lined with baking paper, cut the surface with oblique cuts and bake at 480°F for 10 minutes. Reduce the temperature to 430°F and continue baking for another 15 minutes.",
+      "To make sure the bread is baked through, stick a toothpick in the center: The crust should be crunchy and the toothpick should come out clean. If you have a baking thermometer, the temperature at the center of the dough should be 200°F. Remove from the oven and let cool on a wire rack. Serve in slices, completing to taste with mortadella, mixed salad, sprouts and mayonnaise."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Manitoba Flour",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double-milled Durum Wheat Semolina",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brewer's Yeast",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f4d01c78328a2f47e788c3ef5f7015f2da9778458adf6003231fc9b095969f6",
+    "lineage_hash": "f1492956f5d9250a2ff978aa44eca11bc5f973ca19891b4312e91671a3e7486b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/chocolate-bread-panino-mortadella",
+    "fetchedAt": "2026-08-03T09:17:16.385Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/chocolate-bread-panino-mortadella",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

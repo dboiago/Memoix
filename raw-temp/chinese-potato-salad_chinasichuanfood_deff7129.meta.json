@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-potato-salad/",
+  "slug": "chinese-potato-salad_chinasichuanfood_deff7129",
+  "title": "Chinese Potato Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:34:02.696Z",
+  "ldName": "Chinese Potato Salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "potatoes",
+  "ldIngredientsRaw": [
+    "2 middle size  potatoes (  , finely shredded )",
+    "1  small bunch of coriander ( , cut into sections)",
+    "2  dried chili peppers ( , optional)",
+    "1 tbsp.  vegetable cooking oil ( , heated until hot )",
+    "1/4 tsp. Sichuan peppercorn",
+    "2 cloves garlic ( , chopped)",
+    "1  scallion ( , cut into smaller pieces)",
+    "1 tbsp. black vinegar",
+    "Pinch of salt",
+    "1/8 teaspoon sugar",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the shredded potato with a strainer under running water to remove extra starch and obtain a crunchy texture. Cook the shredded potato in a large pot of boiling water.&nbsp; Transfer out, soak in cold water until cooled and drain.&nbsp;",
+    "In a bowl, mix shredded potato with coriander and then add salt, sugar, light soy sauce and vinegar. Mix well.",
+    "Heat oil until almost smoky. Spread Sichuan peppercorn, ,green onion, dried chili pepper and chopped garlic. Pour the hot oil evenly on those three ingredients.",
+    "Mix well and serve directly.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "113 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "1 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "6 g",
+    "sodiumContent": "415 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 middle size  potatoes   , finely shredded",
+    "1 small bunch of coriander  , cut into sections",
+    "[Hot oil drizzling]",
+    "2 dried chili peppers  , optional",
+    "1 tbsp.  vegetable cooking oil  , heated until hot",
+    "1/4 tsp. Sichuan peppercorn",
+    "2 cloves garlic  , chopped",
+    "1 scallion  , cut into smaller pieces",
+    "[Sauce Seasonings]",
+    "1 tbsp. black vinegar",
+    "Pinch of salt",
+    "1/8 teaspoon sugar",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cotillion Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice, then shake to chill. Double strain into a chilled glass. Garnish.",
+      "Adapted from the Stork Club Bar Book by Scott Kennedy, Café Cancale, Chicago"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "Kennedy uses Old Forester 86 proof",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": "Kennedy uses Angostura 5 year",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "128652abad0287f7d43a98757b295e1f3989fa358fb548e53a5a7c70379a8051",
+    "lineage_hash": "69e63507352ce7bae53d015de1a7177c132562667fd662c0c62d524e4f293b2d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cotillion-cocktail/",
+    "fetchedAt": "2026-08-03T19:14:49.960Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cotillion-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Cornell Chicken Barbecue Sauce",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a bowl and whisk to mix, adding salt and pepper to taste.  Cover and refrigerate for up to a week if not using immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "preferably Hellmann’s",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poultry Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1df6187b77a6375a2368934c89099499cd2c660df4a25317363a802b9863218",
+    "lineage_hash": "9d3ac35c7d9e0e9d6600d7d0c9b328c266c295d0f68a0534f688c73c70f2af41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cornell-chicken-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T06:25:28.662Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cornell-chicken-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

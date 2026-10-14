@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Coconut Peanut Mochi (Nuo Mi Ci)",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "219",
+      "carbohydrateContent": "22",
+      "fatContent": "14",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Brush a square 11” x 11” flat-bottomed cake pan with some vegetable oil to prevent sticking, and set aside. The 11” X 11” cake pan yields the perfect thickness of dough for this recipe. Other sized pans will also work, but you will need to roll out the dough a bit when assembling the mochi. Prepare your steamer with water and bring to a boil.",
+      "In a large bowl, mix together the sweet rice flour, cornstarch, caster sugar, coconut milk, and melted coconut oil until smooth. Transfer the mixture to the prepared cake pan, and gently tap on a table to distribute it evenly. Once the water in the steamer is boiling, steam the dough mixture for 15 minutes over high heat. Let it cool completely.",
+      "While the dough is cooling, make the filling by combining the chopped peanuts, coconut flakes, sugar and 1 tablespoon coconut oil. Set it aside.",
+      "Once the dough cools, transfer it onto a large piece of wax paper (or a clean smooth counter top lightly greased) and cut it into 16 equal squares. Take a piece of dough, add about 1 tablespoon of filling in the center, and close the dough around the filling, pinching it closed. Roll in the coconut flakes to coat. Place in a paper cupcake cup, and repeat until all the mochi are assembled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Rice Flour",
+        "unit": "C",
+        "notes": "190g",
+        "amount": "1½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": "35g",
+        "amount": "¼",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "¼",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "1½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flakes",
+        "unit": "C",
+        "notes": "coarsely chopped",
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": "optional, melted",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Wax Paper",
+        "unit": "large",
+        "notes": "about 18×18”, optional",
+        "amount": "1",
+        "section": "To assemble the coconut peanut mochi",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flakes",
+        "unit": "C",
+        "notes": "coarsely chopped",
+        "amount": "1",
+        "section": "To assemble the coconut peanut mochi",
+        "isOptional": false
+      },
+      {
+        "name": "Paper Cupcake Cups",
+        "unit": "small",
+        "notes": null,
+        "amount": "16",
+        "section": "To assemble the coconut peanut mochi",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "271fb8cd62f79018604d67aa9b36ec458450b776172e57a1b83d18bc0b228f7f",
+    "lineage_hash": "773c22a9c6dfd3dfd9b1194c65926d4207d0378a1c6f42bb34c81324ff37bc0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/peanut-mochi-coconut/",
+    "fetchedAt": "2026-08-01T20:09:38.133Z"
+  },
+  "rawSource": "https://thewoksoflife.com/peanut-mochi-coconut/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

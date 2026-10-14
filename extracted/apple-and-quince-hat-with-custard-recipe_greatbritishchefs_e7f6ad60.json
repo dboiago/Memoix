@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Apple and Quince Hat with Custard",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, sieve the self-raising flour into a bowl along with a pinch of salt and then mix in the suet. Add the water, a little at a time and mix with your hand until it begins to form into a soft dough-like pastry that is not too sticky",
+      "Dust your worktop with some flour and roll out the pastry so that you have a nice flat piece that is about 5mm thick. If using individual pudding basins, grease the insides with butter and then divide the suet pastry into four pieces",
+      "Line each basin with the pastry, pressing down and easing out any air pockets. You should have some of the pastry overlapping so trim that off and put to one side. Also keep these pieces separate as they will form the lids later. If using one large pudding basin, obviously keep your pastry intact when lining the basin",
+      "Next core and peel both the Bramley apples and quince, quarter and then slice into moon shaped pieces. Not too thick, but not too thin either. Place in a bowl and dress with the lemon juice and then add the sultanas, sugar, cinnamon and ginger. Mix through so that the fruit is nicely covered",
+      "Then place the apple and quince slices into each pudding basin, again pressing the pieces down and filling spaces with the sultanas. Pop in a clove into each filled basin and then take the leftover pastry, rolling each piece into a ball and with the rolling pin roll into a flat circle",
+      "Dampen the pastry with a smidgen of water and place the lids on top, pressing to seal and again, trim off any excess with a knife",
+      "Double up some square sheets of foil (approximately 10 x 10 cm) and cover the puddings, wrapping the foil to seal",
+      "Take a large stock pot and place inside a smaller cake tin for the puddings to sit on and pour in some boiling water. Pop the puddings in, cover and stick on a medium heat on the hob to steam for 2 hours. Check every now and then to see if the water needs topping up",
+      "Meanwhile, make your custard by beating the egg yolks and sugar together in a glass bowl until nicely blended and creamy. Then place the milk and bay leaves into a pan and bring to the boil",
+      "Leave the milk and bay to infuse for half an hour. When the milk is ready, take out the bay leaves and place the bowl with the creamed eggs over a pan of hot water. Slowly pour the milk over the egg mixture, whisking as you do so",
+      "Keep whisking and slowly the sauce will begin to emulsify and thicken. A good test to see if your custard is ready, is to dip a wooden spoon into the custard. Run your finger through and if a line remains, it’s ready",
+      "To serve, take the puddings out of the steamer and leave to cool slightly. Unwrap the foil and upturn the basin into a dessert bowl, give the bottom a little tap and remove. Your suet pudding should easily fall out",
+      "Cut a small hole in the top and add a healthy spoonful of clotted cream and pour the hot bay custard around the outside",
+      "Enjoy, but beware of that rogue clove though, that can be a touch too powerful when eating and will remind you of visiting the dentist"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quince",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clotted Cream",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "270e41c5092c758513cbc43016a4c03ff3b6ca94e6fa8f9f9056a94aaad54b25",
+    "lineage_hash": "5281326ca200696e81613c07d4e7bbc46a2490b2e2e9003175d91e3bf5c2522c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/quince-apple-hat-bay-custard-recipe",
+    "fetchedAt": "2026-08-03T22:55:59.040Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/quince-apple-hat-bay-custard-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

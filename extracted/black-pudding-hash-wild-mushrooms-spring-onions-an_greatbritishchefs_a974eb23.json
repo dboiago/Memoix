@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Black Pudding Hash, Wild Mushrooms, Spring Onions and Tarragon",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the shallot in a little olive oil until softened and translucent, about 5 minutes",
+      "Transfer to a large bowl, add the rest of the black pudding hash ingredients except for the olive oil and season with salt",
+      "Mix thoroughly, then divide into 4 pieces. Shape each piece into a patty",
+      "Heat up some olive oil in a frying pan until hot, then fry the patties until golden brown on each side",
+      "Transfer the patties to a baking tray and bake in the oven for 5 minutes to finish cooking",
+      "While the patties are baking, melt the butter in a small saucepan. Add the sliced spring onions, mushrooms and salt. Fry until the mushrooms are soft and beginning to brown around the edges",
+      "Once cooked, stir in the picked tarragon leaves",
+      "Serve the black pudding hash with the wild mushrooms on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "cooked and mashed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "trimmed and finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Wild Mushrooms",
+        "unit": "g",
+        "notes": "washed and sliced",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "bunch",
+        "notes": "fresh, leaves picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebba6a10bd15e7b70b580d8bde37a194e1933ab1edc90e55ca49007a2e7cf0aa",
+    "lineage_hash": "dd2ec5d1ea9311a69f905309fc093515dc83f886d11ef2b079ec5cdb663711e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pudding-hash-wild-mushrooms-recipe",
+    "fetchedAt": "2026-08-02T17:51:53.822Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pudding-hash-wild-mushrooms-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

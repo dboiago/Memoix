@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Banana Ketchup Wings",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the banana ketchup by heating the oil in a medium non-stick pan on medium heat. Add the shallots and cook until translucent",
+      "Add the ginger, garlic, turmeric and allspice to the pan. Cook until the spices start to release their aroma",
+      "Add the tomato paste and cook out for a minute, stirring well. Add the vinegar, soy sauce, sugar, chilli and banana. Simmer on low heat for 10-15 minutes, stirring often until it starts to thicken",
+      "Add the water, taste and add seasoning to your liking. Take off the heat. Place mixture into blender and blitz till you get a smooth texture. Set aside",
+      "Joint the chicken wings (discard the wing tips or use for stock)",
+      "Combine the vinegar, soy sauce, garlic and ginger in a bowl. Place the jointed wings in the bowl and marinate for at least 4 hrs or overnight",
+      "Pour the vegetable oil into a deep fat fryer or high sided saucepan (make sure it is no more than half full) and heat to a temperature of 160C. In a bowl, combine the flour, potato starch and some salt and pepper and whisk until well combined",
+      "Strain the wings, removing all the excess marinade. Add the wings to the flour mix and coat them well, ensuring you press the flour into the chicken. Fry the wings a few at a time for 6 minutes, then remove and place on a tray with a rack",
+      "Increase the oil temperature to 180c and fry the wings for a second time for 4 minutes, then place on a rack to drain excess oil",
+      "Place the wings in a large mixing bowl, add the banana ketchup and toss until all the wings are well coated, then sprinkle chopped coriander and sliced red chilli to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Bananas",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Coriander",
+        "unit": null,
+        "notes": "leaves only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa40b0b53edce6eb6d7f0d24cc6a385c96daad8ec163c43308b8d75910fff142",
+    "lineage_hash": "33f707700dcde7c0d0640eee503bdf166f988afbf193d4497fbd1f796e573154"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-ketchup-wings",
+    "fetchedAt": "2026-08-02T18:58:06.560Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-ketchup-wings",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

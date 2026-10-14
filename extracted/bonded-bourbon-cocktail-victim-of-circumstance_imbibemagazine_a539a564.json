@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bonded Bourbon Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients with ice to chill, and strain into a glass holding a single large ice cube. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottled-in-bond Bourbon",
+        "unit": "oz",
+        "notes": "Old Granddad recommended",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Becherovka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Riesling",
+        "unit": "oz",
+        "notes": "Trimbach recommended",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Liqueur",
+        "unit": "oz",
+        "notes": "such as Giffard",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8e1e1dd0ddfafe2630556054df63a88ee593e2d1186332c2735da2d82a1e8f2",
+    "lineage_hash": "069dc5e14fa762dddb44cf25703ced35b21db7ea67411c88b79350bc0b8b0935"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bonded-bourbon-victim-of-circumstance/",
+    "fetchedAt": "2026-08-03T21:49:48.410Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bonded-bourbon-victim-of-circumstance/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

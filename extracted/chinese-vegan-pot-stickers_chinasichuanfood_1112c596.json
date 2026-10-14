@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chinese Vegan Pot Stickers",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "50",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "34",
+      "carbohydrateContent": "6",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Peel the eggplants, cut into small cubes and then soak the cubes in salted water for around 10 minutes. Transfer out and drain. This will help to reduce the oil absorbed by the eggplants in stir-fry process.",
+      "In a sauce pan, heat up around 1/2 tablespoon of vegetable cooking oil and then stir fry eggplants with mashed garlic until soft. Transfer out.",
+      "In a large bowl, mix stir-fried eggplants, mung bean sections, coriander, green onion and shitake mushroom with salt, light soy sauce and Chinese five spice powder.",
+      "Assemble the potstickers one by one.",
+      "Brush some oil on a pan; lay the potstickers and sauté with medium fire until golden brown. In order to make sure the potstickers are cooked toughly, I would suggest pouring around 1 tablespoon warm water after sauté the bottom side to golden brown. The theory is to steam other parts of the potstickers with vapour. Turn the potstickers over from time to time.",
+      "Transfer out when the water added are evaporated and potstickers become crispy again.",
+      "Serve immediately or with chili sauce you prefer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Package of Wrappers",
+        "unit": null,
+        "notes": "around 50",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Eggplants",
+        "unit": null,
+        "notes": "peeled and cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shitake Mushrooms",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Mung Bean Noodles",
+        "unit": "small",
+        "notes": "soak in warm water for around 15 minutes and then cut into small sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52227763331c4a6b305527891e5f6b28b3038de70a437535784cf93949935594",
+    "lineage_hash": "06d7f6bbafa76cff1b002c88f3f68222c553740aaee0774870ebd485fdd7d978"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-vegan-potstickers/",
+    "fetchedAt": "2026-08-01T21:07:03.112Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-vegan-potstickers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

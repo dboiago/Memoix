@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Chocolate Honeycomb Biscuit Cake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lightly grease a 1kg loaf tin with butter then line with baking parchment making sure it comes a few centimetres above the edges",
+      "In a large bowl suspended over a pan of barely simmering water, melt the chocolate, butter and golden syrup, stirring until smooth. Remove from the heat and set aside to cool slightly",
+      "Place the biscuits in a large bowl and use the end of a rolling pin to gently bash them into rough pieces: you want a mixture of chunks of biscuit and large crumbs. Add the honeycomb and bash again",
+      "Pasteurise the egg by stirring it slowly and continuously into the chocolate mixture. Stir in the biscuits, honeycomb and pecans until well combined. Scrape the mixture into the prepared tin, levelling it with a spatula. Press a piece of baking parchment over the top then chill in the fridge for about 4 hours or until firm",
+      "Remove the cake from the fridge 10 minutes before serving to allow it to soften slightly. Turn it out of the tin, dust the top with cocoa powder then serve in thick slices.\r\nThe cake will keep in the fridge for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honeycomb",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lighly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "for dusting",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f42a86b6e627930d107fe11c51a477c8eba8362c380615114de927f3993b3c82",
+    "lineage_hash": "31cc2cfc92017b7e207ecbdf87b6579b2af9d3734ce5e101628cf2510089ac9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-honeycomb-biscuit-cake-recipe",
+    "fetchedAt": "2026-08-03T14:15:07.909Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-honeycomb-biscuit-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

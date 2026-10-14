@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Air Fryer Korean Pork Belly",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1395",
+      "carbohydrateContent": "1",
+      "fatContent": "142",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "Combine the mustard sauce and the salt in a small bowl. Mix well. Paste all sides of the pork belly with the mustard sauce mixture.",
+      "Place the meat onto the air fryer basket and cook at 180 C / 356 F for 15 minutes.",
+      "Wipe the oil in the air fryer pan with some kitchen paper. Flip the meat over and cook for another 15 mins.",
+      "Remove the pork belly from the air fryer. Slice them into bite sized pieces. Serve with lettuce, Korean BBQ dipping sauce (ssamjang), a bowl of rice and kimchi."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "1.8 pounds, skinless",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Mustard",
+        "unit": "C",
+        "notes": "American mustard, mild",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "239f8a9cba336430f8b60050ada1f8267cb05d001bd723569cb06f4180843247",
+    "lineage_hash": "52da0e9a5e6ce2770a1f98403818d538a992ebc0cf6a4967ecaa19ae81af4d4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/air-fryer-pork-belly/",
+    "fetchedAt": "2026-08-01T23:52:02.152Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/air-fryer-pork-belly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

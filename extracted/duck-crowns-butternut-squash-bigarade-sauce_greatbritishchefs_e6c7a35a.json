@@ -1,0 +1,243 @@
+{
+  "recipe": {
+    "name": "Duck Crowns, Butternut Squash, Bigarade Sauce",
+    "time": "3 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the butternut squash mousse, preheat the oven to 180ºC/Gas mark 4",
+      "Place the cubes of butternut squash onto a large piece of aluminium foil, drizzle over a good splash of rapeseed oil, and season to taste with salt and freshly ground black pepper",
+      "Mix well to coat the butternut squash in the oil, then gather the edges of the aluminium foil together and scrunch together to form a loose parcel",
+      "Place the parcel onto a roasting tray and cook for 25-30 minutes, or until the butternut squash has softened",
+      "Meanwhile, heat the chicken stock, double cream and water in a saucepan over a medium heat until almost boiling",
+      "While the cream mixture is heating up, soak the gelatine leaves in cold water for a couple of minutes or until softened",
+      "Transfer the cooked butternut squash to a food processor, add the warm cream mixture and blend well. Squeeze any excess water from the softened gelatine leaves, add them to the food processor and continue to blend until really smooth",
+      "Pass the butternut squash purée through a fine sieve into a jug, then pour into four dariole moulds. Set aside until completely cooled, then chill in the fridge until set",
+      "For the bigarade sauce, heat a splash of rapeseed oil in a frying pan over a medium heat. Add the duck wings and fry until browned all over",
+      "Meanwhile, zest the lemon and two of the oranges and set aside. Then squeeze the juice from the lemon and all of the oranges into a bowl and set aside",
+      "Heat the sugar and red wine vinegar in a deep-sided, non-reactive frying pan over a low heat until the sugar has dissolved",
+      "Increase the heat slightly and continue to cook the sugar until it forms a deep golden-brown caramel. As soon as the vinegar syrup has formed a caramel, add the lemon and orange juice mixture and the browned duck wings",
+      "Continue to cook the caramel for 3-4 minutes, shaking the pan from time to time to prevent the duck wings sticking to the bottom and to coat them in the caramel",
+      "Pour in the stock and bring to the boil, then reduce the heat and simmer gently for 40-45 minutes, or until the sauce is thick enough to lightly coat the back of a spoon. Skim any froth that rises to the surface from time to time during cooking",
+      "While the sauce is cooking, julienne the citrus zest. Bring a pan of water to the boil and blanch the julienned zest for one minute. Drain thoroughly. Set aside",
+      "For the duck, increase the oven temperature to 220ºC/Gas mark 7. Season the duck crowns with salt and freshly ground black pepper",
+      "Heat a splash of rapeseed oil in a frying pan over a medium heat. When the oil is smoking, add the duck crowns, skin-side down, and fry until the skin on the breasts is crisp and golden-brown",
+      "Turn over the crowns and fry the underside until golden-brown all over",
+      "Meanwhile, place the carrot, celery, onion and garlic into a roasting tray and mix well",
+      "Remove the duck crowns from the pan and place on top of the vegetables in the roasting tray. Roast the duck crowns and vegetables for 15 minutes, basting the meat from time to time with any juices in the bottom of the roasting tin",
+      "Reduce the oven temperature to 200ºC/Gas mark 6. Continue to roast the duck and vegetables for a further 15-20 minutes, then remove from the oven and set the duck crowns aside to rest for at least 5 minutes",
+      "Heat another splash of oil in a separate frying pan; add the watercress and cook until wilted, stirring well. Season, to taste, with salt and freshly ground black pepper",
+      "Just before serving, strain the bigarade sauce through a fine sieve into a clean pan and season, to taste, with salt and freshly ground black pepper. Add the reserved, blanched lemon and orange zests to the bigarade sauce and stir well",
+      "Arrange some of the wilted watercress into the centre of each of four serving plates. Remove the duck breasts from the crowns and carve",
+      "Place one carved breast and some of the vegetables on top of each portion of watercress. Turn out one cold butternut squash mousse alongside each duck breast. Drizzle over the bigarade sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Crowns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "peeled and cut into small cubes",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Wings",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e7032834e602a57a84288684a9d3e45291c173a379107f777be0dc637e76902",
+    "lineage_hash": "cbafd60b04ea427cf8be09009a5c956fafb2110710e66e775048f8b7ae471047"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/roast-gressingham-duck-recipe-with-wilted-wat",
+    "fetchedAt": "2026-08-03T16:46:55.313Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/roast-gressingham-duck-recipe-with-wilted-wat",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Cashew Chicken",
+    "time": "23 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "391",
+      "carbohydrateContent": "20",
+      "fatContent": "25",
+      "proteinContent": "26"
+    },
+    "directions": [
+      "For the cashews: Preheat the oven to 350°F (175°C) and roast the cashews (yes even if you bought them roasted, roast them again) on a baking sheet for 8-10 minutes, and until they darken in color. If starting with raw cashews, roast them for 10-12 minutes, stirring them half way through for more even roasting, until they are slightly darker than golden.",
+      "Combine the chicken thigh with soy sauce and mix well. If using chicken breast, add 1 ½ Tbsp of water in addition to the soy sauce. In either case let it sit for at least 15 minutes.",
+      "Combine all sauce ingredients in a small bowl.",
+      "If using dried chilies, add the oil to a wok and add the dried chilies; turn the heat on to low. Keep stirring the chilies until they puff and darken into a maroon colour, about 1 minute. Quickly remove them with a mesh skimmer, leaving the oil behind, and place them onto a paper towel lined plate to drain.",
+      "In the same wok, turn the heat up to high. Once the oil is very hot, add the chicken and spread the pieces out into one layer as much as you can.Allow the chicken to sear, undisturbed, for about 2 minutes or until the underside is nicely browned. Once browned, toss the chicken, and keep cooking, stirring frequently, until the chicken is completely cooked. Turn off the heat and remove the chicken from the pan, leaving all the oil behind.",
+      "With the heat still off, add the chopped garlic, then turn the heat on to medium. Stir the garlic until the smallest pieces turn golden, then add the onions and stir for about one minute.",
+      "Turn the heat up to high then add the bell peppers, the chicken, and the sauce mixture and toss until heated through and well mixed, about 1 minute.",
+      "Turn off the heat, then add the green onions and cashews and toss just until mixed. Plate and top with fried chilies, and serve immediately with jasmine rice. Note: Cashews should only be added right before serving to maintain crunch. Trust me, soggy cashews are NOT good! So if you’re making more of this recipe than you can finish today, set aside what you won’t eat before adding the cashews."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "oz",
+        "notes": "see note 1, boneless, skinless, bite-sized pieces",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies",
+        "unit": null,
+        "notes": "optional, dried, small to medium size",
+        "amount": "7-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "1-inch diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": "C",
+        "notes": "1-inch diced",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red",
+        "unit": "C",
+        "notes": "orange and/or yellow bell pepper, 1-inch diced",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Roasted",
+        "unit": "C",
+        "notes": "alt: raw cashews, see note 2, plus extra for sprinkles",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "halved lengthwise and cut in 1.5-inch",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Mountain Sauce",
+        "unit": "tsp",
+        "notes": "see note 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e5bb5df22d687ceb1760e4ee24ba8f5cb75badb47a6dc175913dd226a4507cc8",
+    "lineage_hash": "33fa0309818da6d11abf303a9ca8378c8bf2311dbd4f8729c57f1c6d4eaf7ea6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/cashew-chicken/",
+    "fetchedAt": "2026-08-02T02:53:46.528Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/cashew-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

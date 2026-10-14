@@ -1,0 +1,370 @@
+{
+  "recipe": {
+    "name": "Aloo Mutton Keema",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add garlic, ginger, green chili and make a coarse paste.",
+      "Keep it aside for further use.",
+      "In a lagan or handi, add oil, once it's hot, add mutton bones and sautÃ© it on high flame for 8-10 minutes or until golden brown in color.",
+      "Add mutton mince, prepared ginger garlic paste, salt to taste, coriander powder, turmeric powder, degi red chili powder, tender coriander stems, onions and mix it well.",
+      "Cover it with a lid and add water on the top, cook it for 10-15 minutes on moderate heat or until partially cooked.",
+      "Add water, curd and mix it well. Cover it with a lid and cook it for 7-8 minutes on moderate heat.",
+      "Add water, potatoes and cover it with the lid, simmer it for a while on moderate heat.",
+      "Add coriander leaves, green chili, prepared masala and mix it well",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti or chapati and prepared chutney.",
+      "On a gas range, place a cooking rack, tomato, green chili and roast them well.",
+      "In a bowl, add roasted tomato, green chili, dry pomegranate seeds, salt to taste, sugar, oil, mint leaves, ginger, coriander leaves and transfer it into a mixer grinder jar.",
+      "Grind it into a smooth paste and keep it aside for further use.",
+      "In a pan, add cumin seeds, black peppercorns, black cardamom, cloves, cinnamon stick, salt to taste and dry roast it on moderate heat.",
+      "Transfer it into a mixer grinder jar and grind into fine powder.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "2",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Grm Mutton Bones",
+        "unit": null,
+        "notes": null,
+        "amount": "400",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Mutton Mince",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled & cubed",
+        "amount": "3-4",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chilies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "4-5",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aloo Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "roasted",
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "roasted",
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Dry Pomegranate Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Few Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly sliced",
+        "amount": "½",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Roundels",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Pearls",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ade57863be95d9cd1e307c6f302841cac6864f14dce4087ade7161f6a5e2ac50",
+    "lineage_hash": "c948d94207697fdbd49a1ab7b9fa424815ce40939b226e4356d2d7da6f1d6ad1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-mutton-keema/",
+    "fetchedAt": "2026-08-02T15:55:27.698Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-mutton-keema/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

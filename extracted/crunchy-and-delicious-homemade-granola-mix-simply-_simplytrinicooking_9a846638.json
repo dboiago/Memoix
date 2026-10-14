@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Crunchy and Delicious Homemade Granola Mix",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 350 degrees F (175 degrees C). Prepare two cookie sheets with cooking spray.",
+      "In a large bowl, combine oats, wheat germ, almonds, cinnamon and nutmeg. In a separate bowl, mix apple juice, molasses and extract. Pour the wet ingredients into the dry ingredients, stirring to coat.",
+      "Spread mixture onto baking sheets. Bake for 30 minutes in preheated oven, stirring mixture every  10 to 15 minutes.  Or until granola has a golden brown colour. Let cool. Stir in dried fruit. Store in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Germ",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Silvered Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": "non-sweetened",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tdp Vanilla Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Fruit",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quartered Dried Apricots",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07ef2657b26af23c47f35c6dc08743799ac19b48cbb7b4c0e9f4b957f89d61aa",
+    "lineage_hash": "f3286cb78fd0c71250e4534d97aa0421ce4941577da8047def508f7b4c1c4524"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/crunchy-and-delicious-homemade-granola-mix/",
+    "fetchedAt": "2026-09-25T19:11:54.195Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/crunchy-and-delicious-homemade-granola-mix/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

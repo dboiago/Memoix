@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Chamomile Toddy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brew a pot of chamomile tea and set aside. Pour the honey into the glass. Add the rye, tea, spices and citrus and stir until the honey dissolves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chamomile Tea",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoons Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1196da2f76c2aa0e8e1f72bbf7fb51e80aa06abbbfc86101bdcfc3d53545e92a",
+    "lineage_hash": "39ffb265c02921e505a32eea7bea325ad58c2ebcef6eeaa314886c0e925dd554"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chamomile-toddy/",
+    "fetchedAt": "2026-08-03T18:31:37.889Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chamomile-toddy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

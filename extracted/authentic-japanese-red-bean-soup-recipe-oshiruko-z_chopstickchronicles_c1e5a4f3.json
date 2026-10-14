@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Japanese Red Bean Soup (Oshiruko/Zenzai)",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "416",
+      "carbohydrateContent": "73",
+      "fatContent": "7",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Wash the azuki beans, drain the washing water.",
+      "Place the azuki beans in a pot and add plenty of water (not listed in the ingredients list) *5",
+      "Heat it over high heat and bring the water to boil.",
+      "Discard the cooking water by using a strainer. *6",
+      "Place back the azuki beans in a pot and add 3 cups of water out of the 5 cups listed.",
+      "Heat the pot over high heat and once it boils, reduce the heat to low to mid and simmer for an hour.",
+      "Check occasionally and add water if necessary. *7",
+      "After 1 hour check the azuki beans are cooked or not by squishing a bean with your finger tips.",
+      "If the azuki beans are soft and cooked, add sugar and salt and stir.",
+      "Simmer furthur till the soup reduces a little and becomes thicker.",
+      "Cook mochi by using the grill function of oven or microwave. If you use oven grill, cook for 6-7 minutes, if you use microwave, cook for 1-2 minutes. Watch it does not over cook and explode.",
+      "Stir the bean paste to mix well with water, bring to simmer and add mochi.",
+      "Serve two pieces of toasted mochi with sweet azuki bean soup  together in a small soup bowl. Garnish with sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Azuki Beans",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mochi Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seed Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a3f24a79f7a527ad9875c4c080d6e89b23ec3c99de5f8be65fbe5c01cb5d818",
+    "lineage_hash": "b9c0fcf22bac406824935f6db7561344ba04d6fc5f39e3caa871c2ba42ca702e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/sweet-red-bean-soup/",
+    "fetchedAt": "2026-08-02T00:33:26.174Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/sweet-red-bean-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

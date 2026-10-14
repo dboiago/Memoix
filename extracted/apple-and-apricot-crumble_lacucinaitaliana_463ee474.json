@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Apple and Apricot Crumble",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and core the apples and cut them into cubes. Arrange in a single layer in a round baking dish suitable for serving. Chop the apricots into small pieces and distribute over the apples. Sprinkle the fruit with 2 Tbsp. sugar.",
+      "Mix the softened butter with the remaining sugar (1/2 cup), the flour and a dash of cinnamon to form a crumbly dough. Cover the apples and apricots with the crumble. Bake in the preheated oven for around 20 minutes. Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rennet Apples",
+        "unit": "C",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "softened",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "oz",
+        "notes": "dried, pitted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ea1d92c07641552d84e486978354f2a50ddae9dff2a223f035f5595296d09ce",
+    "lineage_hash": "76aa637b5fd3191f5c2d40ab38e19f6499feb57565b62516540f19280b4b904f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-and-apricot-crumble",
+    "fetchedAt": "2026-08-03T05:29:52.291Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-and-apricot-crumble",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

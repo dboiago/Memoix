@@ -1,0 +1,9 @@
+It’s a happy coincidence that Valentine’s Day arrives in the middle of one the coldest and dreariest months. I’ve tried to embrace February, but the days are often bitterly cold, dark and grey, so a little frivolity and festivity is something to look forward to, as winter hopefully begins to release its vice-like grip.
+
+I always think that girls get the best of Valentine’s Day……with bunches of roses, boxes of chocolates and lace-edged cards and maybe a “jewel” if they’re lucky. So, I thought, why not devise a recipe for the boys this year? These Little “Chocolate Box” Chocolate Cakes are suitable for both sexes, of course, but I do think that it would be a nice baking project for someone to make these for their male “other half”.
+
+They are small, there’s no denying it, but they are also big enough to satisfy any “rufty-tufty” chocoholic’s fantasy, aka the man in your life. They are sinfully rich and more than a couple of bites, and therefore perfect, in my humble opinion, for most “blokes” on the appointed romantic day. Plus, they’d make a lovely romantic addition to the office lunch box too.
+
+You can make the cakes ahead of time, and even freeze them if you like, and then just spread them with acres of indulgent chocolate buttercream and decorate them on the day. If, like me, you were careful with your Christmas chocolates, you may still have a few choccies left to decorate the top, if not, then just buy a small box for the final flourish, which is where the cakes get their name from.
+
+I made a dozen of these a week ago, and within two hours my husband and two of his “mates” had polished off six or seven of them……it was then that I realised that these were indeed the perfect Valentine’s Day treat for most chaps with a penchant for chocolate! The recipe is an adapted Be-Ro recipe from my blog, and is fail-safe for larger cakes too.

@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Croissant",
+    "time": "1 hr",
+    "course": "brunch",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the milk and water in a saucepan and warm gently. You do not want the liquid to be hot, just 30 to 35°C. Dissolve the yeast in the warm liquid",
+      "Sift the flour into a large bowl and add the sugar to one side of the bowl and the salt to the other. Form a well in the middle of the flour and pour the yeast, milk and water into the centre",
+      "Bring the dry ingredients into the wet from the edges, mixing everything together until it forms a dough. Tip the dough onto a lightly floured surface and work the dough until elastic and pliable",
+      "Put the dough into a lightly floured bowl, cover with cling film and place in the fridge to rest for at least 2 hours, or preferably overnight",
+      "Roll the dough on a lightly floured work surface into a rough rectangle. Bash the cold butter (while still in its wrapper) with a rolling pin until slightly flattened, unwrap it and place it in the middle of the rectangle. Fold the dough over the butter and seal all the edges with your fingers",
+      "Roll out the dough to a rectangle about 16 x 8 inches. Position the dough so that one of the narrow ends is facing you. Brush off the excess flour and fold the dough into three. Fold the top section, the one furthest away from you, first and then fold the bottom section up to meet it, just like folding a business letter",
+      "Seal the edges together with your fingers. Dust the work surface with more flour and turn the dough 90 degrees so that the folds are running vertically in front of you",
+      "Repeat this rolling and folding twice more, so that you have rolled and folded the dough 3 times in total. Place the dough to rest in the fridge for at least half an hour",
+      "On a lightly floured work surface, roll the dough out until it is about 0.5cm thick. Cut the rolled dough into isosceles triangles approximately 20x10cm",
+      "With the narrow point of the triangle facing away from you, roll up the base towards it and place on a baking tray lined with baking parchment. Repeat with the remaining triangles of dough. Leave the croissants to rise for 1 hour",
+      "Preheat the oven to 200°C (180°C fan)/ gas mark 6",
+      "Place the croissants on a baking tray and bake for 20–25 minutes. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93a02958f5aec1ed47d7b45101a7e552f3079bfd53961051b343cbd2c6c6a93d",
+    "lineage_hash": "7dfeff7dde8caaf2d2af711ea7328c4cf8bff3ed2cfc1f97cda3b2af5f491274"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/croissant-recipe",
+    "fetchedAt": "2026-08-03T22:43:30.595Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/croissant-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

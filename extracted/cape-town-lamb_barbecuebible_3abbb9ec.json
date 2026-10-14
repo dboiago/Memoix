@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Cape Town Lamb",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the lamb: Using the tip of a sharp paring knife, make slits about an inch deep all over the surface of the lamb. Insert a sliver each of garlic and ginger into each slit. Place the lamb in a nonreactive roasting pan and set aside while you prepare the glaze.",
+      "Make the glaze: Combine the Worcestershire sauce, soy sauce, brown sugar, Dijon and Chinese-style mustards, lemon juice, oil, and minced garlic and ginger in a small, heavy saucepan and bring to a boil over medium heat, stirring to dissolve the sugar. Cook the glaze until thick and syrupy, about 3 minutes, stirring frequently to prevent sticking. Remove the glaze from the heat and taste for seasoning, adding salt and pepper as necessary. Let cool to room temperature.",
+      "Pour half of the cooled glaze over the lamb in the roasting pan, brushing to coat it on all sides. Cover and let marinate, in the refrigerator, for 3 to 8 hours (the longer the better). Refrigerate the remaining glaze, covered.",
+      "Set up the grill for indirect grilling (preferably, you’ll have built a wood fire; let it burn down to glowing embers), place a large drip pan in the center, and preheat the grill to medium. Toss the wood chips on the coals.",
+      "When ready to cook, place the lamb on the hot grate over the drip pan and cover the grill. Cook the lamb until done to taste, 1 to 1-1/4 hours for rare (internal temperature of 120 to 125 degrees); 1-1/2 to 1-3/4 hours for medium-rare (130 to 135 degrees); 2 hours for medium (145 to 150 degrees). Start brushing the lamb with the remaining glaze during the last 45 minutes of grilling, brushing it two or three times. If using a charcoal grill, you’ll need to add 10 to 12 fresh coals to each side every hour.",
+      "Transfer the lamb to a cutting board and brush it one last time with glaze, then let rest for 10 minutes before carving. While the lamb rests, heat any remaining glaze to serve as a sauce with the lamb."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leg of Lamb (6 to 8 Pounds)",
+        "unit": null,
+        "notes": "bone-in, trimmed of any papery skin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "cut into thin slivers",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Peeled Fresh Ginger",
+        "unit": null,
+        "notes": "cut into thin slivers",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "adbb20e48a9259b27071a47f3e4ce78bfe2832b9d81abb5aad0cc76e9f90c8ba",
+    "lineage_hash": "3a3a42f021ae73df0481f26aeb70b4bbbe1cbc28b2f26ad9d4dae5c92e8d95f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cape-town-lamb/",
+    "fetchedAt": "2026-08-03T06:40:28.387Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cape-town-lamb/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

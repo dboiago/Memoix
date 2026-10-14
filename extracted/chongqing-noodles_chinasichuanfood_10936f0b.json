@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Chongqing Noodles",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "673",
+      "carbohydrateContent": "83",
+      "fatContent": "31",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "In the serving bowl, add a small pinch of salt, vinegar, soy sauce, gourmet powder, minced green onion whites, minced garlic, minced ginger, chili oil, sesame oil and lard.",
+      "Cook noodles in boiling water according to the instructions on the package. Pour some noodle cooking soup into the serving bowl to tune the seasonings. And then transfer the noodles to serving bowl. Rinse the greens and transfer to serving bowl too.",
+      "Garnish peanuts, minced green onions, minced coriander and minced Za cai. Add more chili oil if a stronger taste is wanted!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Serving Fresh Noodles",
+        "unit": null,
+        "notes": "you can use thin dried noodles instead",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Water Spinach",
+        "unit": "handful",
+        "notes": "alt: Bok Choy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "white part and green part separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": "smashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zha Cai",
+        "unit": "Tbsp",
+        "notes": "minced, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt If Necessary",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gourmet Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Red Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn Powder to Strong the Numbing Tastes",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9180b878bb945d4a4de1a0d342b8d56a9b07c7d1f96cd5b0ac5474c836bbb3c",
+    "lineage_hash": "382fc16caa270ef150f8f10873733975516ee5ff77e6550038636c3902b2df80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chongqing-noodles/",
+    "fetchedAt": "2026-08-02T01:31:43.006Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chongqing-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

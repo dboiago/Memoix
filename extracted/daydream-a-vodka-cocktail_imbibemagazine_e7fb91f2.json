@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Daydream",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker tin with ice and shake to chill. Strain",
+      "Earl Grey Vodka: Place 2 Earl Grey teabags in a 750-ml. bottle of vodka. Let infuse for at least 2 hours. Remove the teabags."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Earl Grey Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemonade",
+        "unit": "oz",
+        "notes": "1:1 simple syrup to fresh lemon juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Germain Elderflower Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb44b3e22f54f339dc06bd6a61c95270b6e8dde623c2f4973b9c37f694635469",
+    "lineage_hash": "868eba6293a8ddd54118cd61dedbffabdb7696549f21dde952b2913cc1e847c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/daydream-a-vodka-cocktail/",
+    "fetchedAt": "2026-08-04T01:45:56.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/daydream-a-vodka-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://spanishsabores.com/chorizo-a-la-sidra-recipe/",
+  "slug": "chorizo-a-la-sidra-spanish-chorizo-in-cider-spanis_spanishsabores_55a8ec19",
+  "title": "Chorizo a la Sidra (Spanish Chorizo in Cider) - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T09:28:09.592Z",
+  "ldName": "Chorizo a la Sidra (Spanish Chorizo in Cider)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "Chorizo a la Sidra, chorizo tapas",
+  "ldIngredientsRaw": [
+    "18 ounces chorizo (fresh or semi-cured)",
+    "1 tablespoon extra virgin olive oil",
+    "1 1/2 cups hard apple cider (preferably Spanish sidra)",
+    "2  bay leaves",
+    "2 tablespoons chopped parsley (for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the chorizo into 2 centimeter slices (just under an inch long).",
+    "Heat the olive oil in a skillet over a medium heat. Add the chorizo to the pan and cook until browned, about 5 minutes.",
+    "Add the hard cider and the bay leaves, and toss the chorizo to coat. Simmer until the liquid turns syrupy with streaks of red oil on top from the chorizo; about 5-8 minutes.",
+    "Serve the chorizo in bowls as a side dish, or enjoy as a main course with slices of hearty bread. Garnish with chopped parsley."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "286.44 kcal",
+    "carbohydrateContent": "6.78 g",
+    "proteinContent": "13.49 g",
+    "fatContent": "21.77 g",
+    "saturatedFatContent": "7.78 g",
+    "cholesterolContent": "52.08 mg",
+    "sodiumContent": "1000.19 mg",
+    "fiberContent": "0.16 g",
+    "sugarContent": "5.69 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 18 ounces chorizo fresh or semi-cured",
+    "▢ 1 tablespoon extra virgin olive oil",
+    "▢ 1 ½ cups hard apple cider preferably Spanish sidra",
+    "▢ 2 bay leaves",
+    "▢ 2 tablespoons chopped parsley for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

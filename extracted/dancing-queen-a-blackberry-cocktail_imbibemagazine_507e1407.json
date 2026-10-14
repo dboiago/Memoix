@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Dancing Queen",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a glass filled with crushed ice, and garnish.",
+      "Blackberry SyrupIn a saucepan over medium heat, combine 2 cups of sugar with 1 cup of water and stir until sugar has dissolved. Add 1 cup of fresh blackberries and reduce heat to a simmer; cook for about 15-20 minutes. Let the mixture cool, then strain out the solids and bottle the syrup for use. Keeps refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c686f9700e5ff7198452b0807d5d04b81dc001ed3b5720d005e044535dd02053",
+    "lineage_hash": "52f93fb38ef1890cea526c39defefaf12260eeb9b2610e5437feabb62381863d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dancing-queen-a-blackberry-cocktail/",
+    "fetchedAt": "2026-08-03T22:24:25.803Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dancing-queen-a-blackberry-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

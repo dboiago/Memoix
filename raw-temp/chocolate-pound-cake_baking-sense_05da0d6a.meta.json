@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2019/12/13/chocolate-pound-cake/",
+  "slug": "chocolate-pound-cake_baking-sense_05da0d6a",
+  "title": "Chocolate Pound Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:31:09.908Z",
+  "ldName": "Chocolate Pound Cake Recipe",
+  "ldTime": "PT85M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT55M",
+  "ldYield": [
+    "12",
+    "12 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "cocoa powder, pound cake",
+  "ldIngredientsRaw": [
+    "3  large eggs (room temp)",
+    "4  egg yolks (room temp)",
+    "1 teaspoon vanilla extract",
+    "2 oz whole milk (¼ cup, divided)",
+    "6 oz cake flour (1 ½ cups, see note)",
+    "2 oz Dutch process cocoa powder (½ cup)",
+    "¼ teaspoon table salt",
+    "1 teaspoon baking powder",
+    "1 tablespoon instant espresso powder (optional)",
+    "10 oz granulated sugar (1 ¼ cups)",
+    "9 oz unsalted butter (room temp)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to at 350 °F. Butter and flour a 9&quot;x5&quot; loaf pan or Bundt pan.",
+    "Combine 3&#32;large eggs, 4&#32;egg yolks, 1 teaspoon&#32;vanilla extract and half the milk in a small bowl, whisk to combine and set aside.",
+    "Sift together 6 oz&#32;cake flour, 2 oz&#32;Dutch process cocoa powder, ¼ teaspoon&#32;table salt, 1 teaspoon&#32;baking powder and 1 tablespoon&#32;instant espresso powder in a mixing bowl. Add 10 oz&#32;granulated sugar to the flour and mix at low speed for 30 seconds. Add 9 oz&#32;unsalted butter to the flour and mix until combined. Add the other ½ of the milk and increase the speed to medium high. Mix for a full 2-3 minutes. The batter will lighten in color and texture. If your using a hand mixer add another minute or two to the mixing time.",
+    "Scrape the bowl and paddle thoroughly. On low speed, add the egg mixture in 3 increments, scraping the bowl after each addition. Mix just until the eggs are incorporated.",
+    "Pour the batter into the prepared pan and smooth to an even layer. Bake until a toothpick inserted in the middle comes out clean (about 55 minutes)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "346 kcal",
+    "carbohydrateContent": "38 g",
+    "proteinContent": "5 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "12 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "152 mg",
+    "sodiumContent": "108 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "24 g",
+    "unsaturatedFatContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 large eggs (room temp)",
+    "4 egg yolks (room temp)",
+    "1 teaspoon vanilla extract",
+    "2 oz whole milk (¼ cup, divided)",
+    "6 oz cake flour (1 ½ cups, see note)",
+    "2 oz Dutch process cocoa powder (½ cup)",
+    "¼ teaspoon table salt",
+    "1 teaspoon baking powder",
+    "1 tablespoon instant espresso powder (optional)",
+    "10 oz granulated sugar (1 ¼ cups)",
+    "9 oz unsalted butter (room temp)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

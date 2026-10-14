@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Cherry Hazelnut Loaf Cake",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C (400°F) and grease a loaf pan (mine is 9x26 cm or 3 1/2-by-10 1/4-inch). You can line it with parchment paper instead if you prefer.",
+      "In a large mixing bowl, whisk together the sugar, eggs, and vanilla until frothy. Add the melted butter and the yogurt (or the starter, if using) and whisk again. (If using yogurt/buttermilk, the mixture may look curdled at this point; it's nothing to worry about.)",
+      "In another mixing bowl, combine the flour, ground hazelnuts, baking powder, baking soda, and salt, and stir with a whisk to remove any lump. Add the cherries and toss to coat.",
+      "Pour the flour/cherry mixture into the wet ingredients, and fold in gently with a spatula until no trace of flour remains. The batter will be thick and lumpy; don't overwork it. Pour into the prepared loaf pan, level the surface, and put into the oven to bake.",
+      "Bake at 200°C (400°F) for 15 minutes, then lower the heat to 180°C (360°F) and bake for another 30 minutes, or until a cake tester inserted in the center comes out clean. Transfer to a rack to cool for 15-20 minutes before unmolding; run a knife along the sides to loosen the cake first. Let cool completely on the rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unrefined Cane Sugar",
+        "unit": "g",
+        "notes": "1/2 cup plus 2 tablespoons",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "pure",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "if you use semi-salted like I do, omit the salt below, melted",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "ml",
+        "notes": "see note, plain or buttermilk",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "see note, 7 ounces, about 1 2/3 cups",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Flour",
+        "unit": "g",
+        "notes": "alt: finely ground hazelnuts, see note below to make your own, 1 cup",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Cherries",
+        "unit": "g",
+        "notes": "please wear an apron when you pit cherries, it is a murderously messy task; you can also use frozen cherries, no need to thaw them, 12 ounces, about 2 1/2 cups, pitted",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93d3de8800135b4506ca8b3d7e2f5160bcd2bd4368894918a1e2a34c54fedac6",
+    "lineage_hash": "db80930f6cdb54a5bbe6b72120e34ce16d6e4b1ff3e699ebd548764de0ba2ca3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/cherry-hazelnut-loaf-cake-recipe/",
+    "fetchedAt": "2026-09-30T18:54:07.519Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/cherry-hazelnut-loaf-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

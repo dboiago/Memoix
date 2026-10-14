@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chinese Fish Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "88",
+      "carbohydrateContent": "1",
+      "fatContent": "2",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Brush some oil on a pan. Carefully slide the drained fish in. Let it stay for around 30 seconds over medium fire until one side becomes slightly brown. Turn the fish over and continue frying the second side.",
+      "Pour around 2 Liters of hot water or enough water to almost cover the fish’s body.",
+      "Add ginger , and green onion and then turn up the fire and bring it to boil. Let it simmer for 15 minutes.",
+      "Remove the ginger, scallion, and the foam on top.",
+      "Then add white radish and tofu. Continue heating for 2 minutes. Add salt to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fish Around",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Middle Size White Radish",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Tofu",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt or As Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander for Decorating and Garnishing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "497e993dd4d007fd04e99e9621734177c32cf209739bc29a72a96d7286483ac9",
+    "lineage_hash": "7f4e18c1d098b523ddf0a4650b507c23634d6214910ae762a5aaf7ea84ea459c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-fish-soup/",
+    "fetchedAt": "2026-08-01T22:18:58.109Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-fish-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

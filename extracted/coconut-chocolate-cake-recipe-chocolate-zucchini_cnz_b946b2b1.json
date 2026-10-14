@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Coconut Chocolate Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F). Line a 25-cm (10-inch) cake pan with parchment paper. I used a square 23-cm (9-inch) baking dish for easier sharing.",
+      "Line a cookie sheet with parchment paper, and sprinkle the coconut flakes over it. Put into the oven for 8 minutes or until golden, stirring halfway through. Remove from the oven (leave the heat on) and set aside.",
+      "In a large mixing bowl or in a food processor, combine the sugar and butter. Mix until white and fluffy. Add in the fromage blanc and the eggs one by one, mixing well between each addition. Add in the cocoa powder mixture and mix again.",
+      "In a medium bowl, combine the flour with the baking powder, salt, and coconut flakes. Add the flour mixture into the batter, and mix until just combined. Try not to overmix.",
+      "Pour the batter into the cake pan, level the surface with a spoon, and bake for 30 minutes, or until the top of the cake springs back to the touch, and a knife inserted in the center comes out with just a few crumbs. Don't bake it to death, otherwise it won't be as moist inside. Let rest on the counter for a few minutes, then remove from the pan and transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "diluted in 4 tablespoons hot water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe64ab4be2ae9c0312d69dc6ebd01fd4fb9ed8136d6d640a26608c33bc59b91c",
+    "lineage_hash": "430207cec9526a54bf49a1c914fc31ec177a54c3f92b9669d4b2528adf2c28d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/coconut-chocolate-cake-recipe/",
+    "fetchedAt": "2026-09-30T18:04:37.630Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/coconut-chocolate-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

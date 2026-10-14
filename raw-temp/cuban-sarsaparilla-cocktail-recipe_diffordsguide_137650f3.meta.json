@@ -1,0 +1,39 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/4882/cuban-sarsaparilla",
+  "slug": "cuban-sarsaparilla-cocktail-recipe_diffordsguide_137650f3",
+  "title": "Cuban Sarsaparilla Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T14:39:33.448Z",
+  "ldName": "Cuban Sarsaparilla",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Cuban Sarsaparilla"
+  ],
+  "ldIngredientsRaw": [
+    "40 ml Cacao spiced rum",
+    "15 ml Red bitter liqueur",
+    "15 ml Lemon juice",
+    "8 drop Chocolate bitters",
+    "75 ml Root beer"
+  ],
+  "ldInstructionsRaw": [
+    "SHAKE first 4 ingredients with ice and strain into ice-filled glass",
+    "TOP with rootbeer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "158 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

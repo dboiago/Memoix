@@ -1,0 +1,306 @@
+{
+  "recipe": {
+    "name": "Crab Salad with Pineapple",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the squid ink tapioca crisp, cook the tapioca in a large pan of boiling water for 18 minutes. Drain and run under hot water",
+      "Allow the tapioca to drain, then measure out 500g and add to a bowl. Stir through the squid ink, then spread onto a tray. Leave to dry overnight in a cool, dry place",
+      "To prepare the pineapple jelly, start by making a pineapple essence. Peel the pineapple, dice roughly and add to a bowl with the sugar and lemon juice. Set aside to macerate for 3-4 hours, then add to a blender and blitz quickly",
+      "Pass the mix through 3-4 layers of muslin - this will produce a clear pineapple essence. Measure out 265g of the pineapple essence and add to a saucepan over a medium heat.  Spray a tray with oil and set aside",
+      "Add the Vege-Gel to the pan with the pineapple essence and bring to the boil. Remove from the heat and pour onto the oiled tray in an even layer - the jelly will set in a matter of minutes so you will need to move quickly. Once set, cut the jelly into circles using a pastry cutter and store on parchment paper in the fridge until required",
+      "To prepare the crab salad, pick through the meat, ensuring there are no pieces of shell and carcass. Squeeze out the meat to remove any excess liquid, then add to a bowl with the remaining ingredients. Season, stir well and keep in an airtight container in the fridge until ready to serve",
+      "For the spiced pineapple, remove the skin and cut into quarters, lengthways. Stand each quarter on a chopping board and cut out the core using the tip of a sharp knife",
+      "Add the sugar to a pan and place over a medium-high heat, melting until a light golden caramel is formed. Remove from the heat, add 1/3 of the pineapple juice and stir to combine",
+      "Add the remaining juice and stir to incorporate. Add the Szechuan pepper, cinnamon stick and star anise and allow to infuse for 20 minutes and pass through a fine sieve",
+      "Add the liquid to a pan and bring to the boil. Remove from the heat, leave for 5 minutes and place the pineapple quarters in the liquid to infuse for 20 minutes. Remove from the liquid and allow to drain",
+      "Place a chargrill pan over a very high heat. Coat the pineapple in a very small amount of the vegetable oil and a pinch of salt, then grill on one side until dark golden in colour. Remove from the grill, allow to rest and slice the pineapple into 1/2cm thick pieces",
+      "For the burnt coconut, heavily toast half of the coconut in a hot, dry frying pan until dark brown. Add to a bowl, mix in the remaining ingredients and store in a container until required",
+      "For the cashew nuts, place all of the ingredients in a pan and bring to a thick syrup. Remove from the heat, drain and allow most of syrup to drain off in a fine sieve",
+      "Deep-fry the cashews for 1-2 minutes, until the nuts are golden and candied. Drain, allow to cool on a tray and chop roughly. Store in a container until required",
+      "10 minutes before plating, break the squid ink tapioca into pieces and deep-fry until puffed up. Season and set aside while you plate the other elements",
+      "Divide the crab salad onto plates and neatly spread out to form circles. Add a circle of pineapple jelly on top, then add the pineapple and the burnt coconut, decorate with the coriander, tomato, cucumber, rocket and flowers and finish with the fried tapioca and a little more of the burnt coconut"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "fresh, small",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Szechuan Pepper",
+        "unit": "pinch",
+        "notes": "unground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "extra sweet",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vege-gel",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "diced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cut into concasse",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89f2794891424e5793b1ca321921e903037bc530ee1cd4279e50f341bd75be0d",
+    "lineage_hash": "906cbebfc2aa830f4010a130732523190d80c56ba8953d34bcdec1ecd5b9f0f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-salad-pineapple-recipe",
+    "fetchedAt": "2026-08-03T18:19:21.575Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-salad-pineapple-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

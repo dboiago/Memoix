@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Derrick Riches’ Cumin Marinated Skirt Steak",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the marinade: In a mixing bowl, combine the lime juice, water, garlic, cumin, ancho chile powder, oregano, Worcestershire sauce, chipotle chile powder, salt, onion powder, and black pepper. Whisk to combine. Add the vegetable oil in a thin stream, whisking constantly to emulsify.",
+      "Score a crosshatch pattern on the top and bottom of each steak. The cuts should be 1/8 inch deep and 1/4 inch apart. (This aids with the absorption of the marinade and helps prevent the steaks from curling.) Place steak in a nonreactive baking dish or large resealable plastic bag. Pour the marinade over the skirt steak, turning the meat to make sure it’s thoroughly coated. Marinate in the refrigerator for 2 to 4 hours.",
+      "Set up the grill for direct grilling and preheat to medium-high. When ready to cook, drain the steaks and pat dry with paper towels. Discard the marinade. Brush and oil the grill grate. Arrange the steaks on the hot grate and grill for 3 to 5 minutes per side for medium-rare, turning with tongs. Transfer to a cutting board and let rest for 2 minutes. Thinly slice the meat on a diagonal and transfer to a platter or plates. Garnish with the tomatoes, cilantro, scallions, and jalapeño. Serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "2 to 3 limes, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Chile Powder",
+        "unit": "Tbsp",
+        "notes": "such as ancho",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried, preferably Mexican",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skirt Steak",
+        "unit": "lb",
+        "notes": "trimmed",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a2a5caf68eddb3c179a73a5bfce8653c30ee2e4cb3521468920937a13191cc7",
+    "lineage_hash": "94d814720015df8d6617bc64a47cd7edc393b0b204d1ba3346c2c868b4feb98c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/derrick-riches-cumin-marinated-skirt-steak/",
+    "fetchedAt": "2026-08-03T02:39:43.719Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/derrick-riches-cumin-marinated-skirt-steak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

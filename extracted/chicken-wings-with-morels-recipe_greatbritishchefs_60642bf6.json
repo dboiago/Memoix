@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Chicken Wings with Morels",
+    "time": "2 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Scatter a bed of salt onto a baking tray, place the potato on top and bake in the oven until cooked and fluffy in the middle, approximately 50 - 60 minutes",
+      "Once cooked, allow to cool slightly and scoop out the flesh. Pass through a ricer while still warm - try not to overwork the potato, keep it as light as possible. Add the flour and the egg yolk, season with salt and pepper and gently mix to form a dough",
+      "Roll the dough out between 2 pieces of silicone paper to a thickness of 5mm, then use a 4cm round cutter to cut out 12 gnocchi discs. Leave on the silicone paper and transfer to the fridge until ready to cook",
+      "To make the sauce, place a frying pan over a medium heat and add the oil. Once hot, add the chopped chicken wings. Then, once the wings have seared for a minute, add the 150g of butter, turning down the heat so that the wings gently caramelise in the butter",
+      "Once the wings are nicely caramelised, add the sliced shallot and garlic and cook gently until soft and tender. Once soft, add the button mushrooms and any morel trimmings from the stuffed morels",
+      "Cook until all of the water from the mushrooms has evaporated and the mix starts to fry again, then tip everything into a colander or sieve to remove any excess fat",
+      "Place the wings and mushroom mix into a separate saucepan and deglaze the frying pan with the chicken stock. Pour the contents of the frying pan into the saucepan. Add the thyme and the remaining 150g of butter, bring to the boil and simmer slowly - it will eventually start to thicken because of the butter",
+      "Once it thickens, pass the liquid through a fine chinois or muslin into a small saucepan. Emulsify using a hand blender and set aside until required",
+      "Wash the morels, then set aside to drain. Place the diced chicken in a food processor with the egg white and blitz until completely smooth. Scrape the mix into a bowl and transfer to the fridge immediately - if the mix gets too warm it will split",
+      "Once the mix is completely cold, use a wooden spoon to slowly beat in the cream until smooth, then season with salt and pepper",
+      "Scoop the mix into a disposable piping bag and cut a small hole in the end. Prick the pointy end of each morel with a cocktail stick and pipe the mousse into the morels until full",
+      "Bring the chicken stock to the boil and drop in the morels. Return to the boil and poach for 4 minutes, then leave to cool in the pan",
+      "To roast the chicken wings, add the butter to a frying pan just large enough to hold all of the wings",
+      "Place the pan over a low-medium heat and add the butter to make a beurre noisette. Then, add the chicken wings and thyme and cook very gently, turning occasionally until golden brown all over. Season with salt and pepper",
+      "Once cooked, remove the wings from the butter and place onto a piece of kitchen paper. Cut the ends off each wing with a large, sharp chopping knife or cleaver - you will then be able to pull the bones carefully out of the wings. Once deboned, return to the butter to keep warm",
+      "To prepare the asparagus, snap the thick end off each stalk (it has a natural breaking point). Peel halfway up each spear, then cut in half across the centre and cook in salted boiling water for 2 minutes. Strain and set aside",
+      "To cook the gnocchi, remove from the fridge and plunge into boiling water. Cook for 1 minute at a steady boil then drain",
+      "To assemble the dish, place 3 gnocchi in the centre of each serving bowl. Place a chicken wing on top of each gnocchi and place a stuffed morel between each wing. Place the asparagus on top of the chicken, pour in the sauce and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Floury Potato",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": "Gnocchi",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": "Gnocchi",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Gnocchi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Gnocchi",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Gnocchi",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "15",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "8",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Morels",
+        "unit": null,
+        "notes": "medium-sized, root end trimmed and reserved for sauce",
+        "amount": "12",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": "sinew removed, diced",
+        "amount": "150",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stuffed morels",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stuffed morels",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94ecb42308799980cf2ca94a3592ceaeef45542f98120542b6bda98da7f31f02",
+    "lineage_hash": "3a9111be5ceeea98688dfaabd7b9ceaddf2f883b37ab7800e682d09b665df7f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-wings-morels-recipe",
+    "fetchedAt": "2026-08-03T15:37:40.923Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-wings-morels-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

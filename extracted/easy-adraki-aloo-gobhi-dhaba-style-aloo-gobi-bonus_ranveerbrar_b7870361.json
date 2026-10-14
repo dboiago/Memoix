@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Adraki Aloo Gobhi (Dhaba Style Aloo Gobi)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add cauliflower, salt to taste, water and mix it well.",
+      "Keep it aside to soak for a while.",
+      "Strain the cauliflower and transfer it into the tray or bowl.",
+      "Keep it aside for further use.",
+      "In a bowl, add ginger, green chili, tender coriander stems and curd.",
+      "Transfer it to a mixer grinder jar and grind it into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a kadai, add mustard oil, once it's smoky hot, add cumin seeds and let it splutter.",
+      "Add prepared paste, turmeric powder, coriander powder, degi red chili powder, a pinch of asafoetida and cook for a while.",
+      "Add potatoes, water and cook for 2-3 minutes.",
+      "Add cauliflower, salt to taste and give it a mix.",
+      "Cover it with a lid and cook it for 12-15 minutes on medium flames.",
+      "Finish it with lemon juice, ginger, green chillies, fresh coriander leaves, ghee and toss it gently.",
+      "Transfer it to a serving dish, garnish it with ginger, green chillies and coriander sprig.",
+      "Serve hot with roti.",
+      "In the same kadai or pan, add prepared sabji, water and give it a quick boil.",
+      "Transfer it to a serving dish, garnish it with ginger, green chillies and coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "cut into medium florets, फूलगोभी",
+        "amount": "2",
+        "section": "For Cleaning Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, नमक स्वादअनुसार",
+        "amount": "0",
+        "section": "For Cleaning Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "पानी",
+        "amount": "2-3",
+        "section": "For Cleaning Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly sliced, अदरक",
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & roughly chopped, हरी मिर्च",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems with Roots",
+        "unit": "Tbsp",
+        "notes": "roughly chopped, धनिये के डंठल और जड़ें",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten, दही",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Mustard Oil",
+        "unit": null,
+        "notes": "सरसों का तेल",
+        "amount": "2-3",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "जीरा",
+        "amount": "1",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": "तैयार किया हुआ पेस्ट",
+        "amount": "0",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "हल्दी पाउडर",
+        "amount": "½",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Coriander Powder",
+        "unit": null,
+        "notes": "धनिया पाउडर",
+        "amount": "1",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": "देगी लाल मिर्च पाउडर",
+        "amount": "1",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": "हींग",
+        "amount": "1",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled & roughly diced, आलू",
+        "amount": "4-5",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "पानी",
+        "amount": "¼",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "medium",
+        "notes": "cut into medium florets, फूलगोभी",
+        "amount": "2",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, नमक स्वादअनुसार",
+        "amount": "0",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "नींबू का रस",
+        "amount": "1-2",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned, अदरक",
+        "amount": "1",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & cut into diagonally, हरी मिर्च",
+        "amount": "2",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped, धनिया पत्ता",
+        "amount": "2",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "घी",
+        "amount": "½",
+        "section": "For Adraki Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Sabji",
+        "unit": null,
+        "notes": "तैयार की हुई सब्जी",
+        "amount": "0",
+        "section": "For Dhaba Style Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "पानी",
+        "amount": "¼",
+        "section": "For Dhaba Style Aloo Gobhi",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned, अदरक",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & cut into diagonally, हरी मिर्च",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": "धनिया पत्ता",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89228c8d0a8b2d68fd930a92305d2141e03bdbe6b5ab3b820661d23c5f51d5c2",
+    "lineage_hash": "3cb0463fb8c04a4179f2c191d9fb01913ff917204fb60cab956e491254c7b98a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/adraki-aloo-gobhi/",
+    "fetchedAt": "2026-08-02T17:50:36.682Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/adraki-aloo-gobhi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

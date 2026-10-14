@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Daikon Salad with Pickled Plum Dressing",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all the Dressing ingredients in a jar with a lid and shake well (or in a bowl and mix very well). It is OK to have chunks of umeboshi left in the dressing.",
+      "Place a daikon disk on a cutting board, circle face down. Slice 2mm (1/16\") thick, then cut the slices same direction into 2mm matchsticks. Leave the daikon sticks in a bowl filled with chilled water (not in ingredients) for 5 minutes to make them crisp. Drain.",
+      "Spread baby spinach on a cutting board and cut them 3-4 times at equal intervals. This will make the size of spinach smaller. If using mizuna, cut them into 4cm (1½\") long.",
+      "Mix daikon and spinach in a bowl. Then, transfer the salad onto a serving plate.",
+      "Top with bonito flakes and roasted seaweed if using. Pour the plum dressing over the salad and serve, or serve the salad with the dressing on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(7oz) Diakon (about 2 X 4cm (1½\") Thick Discs, Note 1)",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": "alt: mizuna, 2.1-2.8oz",
+        "amount": "60-80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Umeboshi (note 3)",
+        "unit": null,
+        "notes": "seed removed, cut into very small pieces",
+        "amount": "1",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "Tbsp",
+        "notes": "note 3",
+        "amount": "2",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Salad Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Plum Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "C",
+        "notes": "note 3",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Roasted Seaweed",
+        "unit": null,
+        "notes": "finely julienned into about 3cm (1¾\") long pieces (optional)",
+        "amount": "¼",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0caa363e5b721c88f72f06a60b93426d2f86d2ba081c9aebb1ee42861d90042",
+    "lineage_hash": "9fcee3174e76efa954f461b7fe2522d0ce72cf7c5f02d12a45f57d1080ae679d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/daikon-salad-with-pickled-plum-dressing/",
+    "fetchedAt": "2026-08-01T17:49:46.379Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/daikon-salad-with-pickled-plum-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chinese Milky Fish Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "112",
+      "carbohydrateContent": "2.2",
+      "fatContent": "8.5",
+      "proteinContent": "7.3"
+    },
+    "directions": [
+      "When you purchase the fish, ask the fishmonger to gut and scale the fish. Before cooking, check to see if the fish is fully scaled by running your fingers from the tail of the fish to the head. Use kitchen shears to scale further if needed. Wash the fish thoroughly with cold tap water and drain. Score the fish with 1” space in between cuts. Dry the fish very thoroughly with paper towels.",
+      "Boil 6 cups of water, then reduce to low heat to keep it hot.",
+      "Add oil into a wok and heat over medium-high heat until smoking. Lower the fish carefully into the wok. Let cook without moving until the bottom is brown, 3 to 4 minutes. Flip the fish and add the ginger and scallion whites into the oil. Cook for 3 to 4 minutes until the bottom of the fish is browned.",
+      "Swirl in the Shaoxing wine along the side of the wok to deglaze. Use a wok spatula to detach the fish from the wok. Pour in the boiling water carefully down the side of the wok (*Footnote 3).",
+      "Cook over high heat until boiling, then turn to medium-high heat to maintain a rolling boil. Cook covered for 10 minutes. Add tofu and salt. Keep cooking for another 10 minutes.",
+      "Turn off the heat. Add white pepper if using. Adjust seasoning with more salt if needed. Garnish with scallion greens. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole (about 1 Lb) Sea Carp (or 1 Whole Branzino)",
+        "unit": null,
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "halved crosswise, green part thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Firm Tofu",
+        "unit": null,
+        "notes": "cut into bite sized pieces.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper (*optional)",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f105acc5a0ef379d67fa0bf7ec76ed160bc2db8a2bc5835d6a51a4cbf5e8a0b",
+    "lineage_hash": "552d6addd4e7ee57b830c74f379857c0b50b6da65d7e43afe13e2a4fcbbf8072"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-milky-fish-soup/",
+    "fetchedAt": "2026-08-02T09:23:46.772Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-milky-fish-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

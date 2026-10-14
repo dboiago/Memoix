@@ -1,0 +1,303 @@
+{
+  "recipe": {
+    "name": "Aloo Ki Jalebi",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a grinder jar, add topica and salt to taste, grind into a fine powder, strain the powder and transfer it into a bowl.",
+      "In the same grinder jar, add boiled crumble potatoes, curd and water and grind into a smooth paste.",
+      "Transfer it into the same bowl and mix everything well.",
+      "Add water as required and refined flour and whisk properly and rest for 10 minutes.",
+      "Add ginger juice, degi red chilli powder, water as required and soda whisk it well.",
+      "Strain the mixture so that there's no lums.",
+      "Now , pour the batter into the zip lock bag.",
+      "Heat oil in a deep pan and make round spirals with the batter.",
+      "when one side is partly cooked, turn over and fry the other side.",
+      "Fry until the jalebis are a light golden and crisp.",
+      "Remove on a absorben paper.",
+      "Garnish it with aloo chaat, green chutney, tamarind chutney and coriander sprig on top.",
+      "Serve hot.",
+      "In a saucepot, add water, tamarind and let it boil on medium flame.",
+      "Add jaggery and let it boil on medium flame.",
+      "Once the jaggery is melted switch off the flame and strain the mixture into a bowl.",
+      "Heat oil in a pan, add cumin seeds and let it splutter.",
+      "Add dry red chilli and Transfer the tamarind chutney into the pan.",
+      "Add salt to taste and mix it well and let it reduce for 5-6 minutes",
+      "Remove from the flames and let it cool down.",
+      "In a bowl, add boiled cube potatoes, red chilli powder, salt to taste, coriander sprig, oil, ginger, lemon juice and roasted cumin powder mix everything well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tapioca",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "boiled, peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": "alt: Barnyard millet flour",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tamarind chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Tamarind chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tamarind chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "boiled, cube",
+        "amount": "2",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Aloo Chaat",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Aloo Chaat",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fd600609d2037fe2bfc094d85230f948be1d9867e7368aa4241ee33f2856581",
+    "lineage_hash": "5c291c1adffff14cbd809f7f1d38a53df69b3dc1888bea18fd84bbde7105f075"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-jalebi/",
+    "fetchedAt": "2026-08-02T00:37:54.432Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-jalebi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

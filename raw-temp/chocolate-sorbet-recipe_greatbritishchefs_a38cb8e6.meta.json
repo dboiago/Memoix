@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-sorbet-recipe",
+  "slug": "chocolate-sorbet-recipe_greatbritishchefs_a38cb8e6",
+  "title": "Chocolate Sorbet Recipe",
+  "byline": "by Cristina Bowerman",
+  "fetchedAt": "2026-08-03T18:52:21.098Z",
+  "ldName": "Chocolate sorbet",
+  "ldTime": "PT25M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of dark chocolate",
+    "150g of caster sugar",
+    "2 tbsp of Grand Marnier",
+    "750ml of water"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 150ml of water and 150g of caster sugar in a saucepan and bring to the boil while whisking to dissolve",
+    "Remove from the heat and whisk in the chocolate until melted. Allow to cool slightly and add the Grand Marnier and remaining 600ml of water. Using a blender, blitz until smooth",
+    "Place the mixture into an ice cream maker and churn until a sorbet consistency is reached (If the sorbet mix is too thick to pour into the ice cream maker, whisk thoroughly to loosen. Freeze until ready to use"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

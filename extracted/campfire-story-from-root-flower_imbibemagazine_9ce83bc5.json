@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Campfire Story",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir. Strain over a large ice cube into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Nonino",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zirbenz Stone Pine Liqueur",
+        "unit": "oz",
+        "notes": "or Braulio",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Cinnamon Bitters",
+        "unit": "dashes",
+        "notes": "or Angostura bitters",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5441bb28a38d4cba9153d314ac5501261066df2838973759899ace7e790e33ec",
+    "lineage_hash": "efaa598dd9522e9871a22bf5d633553f4eef32728fc0c4d0fd98820e23c471e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campfire-story-from-root-flower/",
+    "fetchedAt": "2026-08-03T22:42:44.210Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campfire-story-from-root-flower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-braised-pea-shoots/",
+  "slug": "chinese-braised-pea-shoots_omnivorescookbook_13538069",
+  "title": "Chinese Braised Pea Shoots (上汤碗豆尖)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T08:08:21.768Z",
+  "ldName": "Chinese Braised Pea Shoots (上汤碗豆尖)",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "2 tablespoons dried scallops",
+    "2 tablespoons dried shrimp",
+    "1 lb snow pea shoots ((*Footnote 1))",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "4 cloves garlic (, gently smashed)",
+    "2 teaspoons ginger (, minced)",
+    "1 pack (3.5 oz) white shimeji mushrooms",
+    "2 cups chicken stock",
+    "1/2 teaspoon chicken bouillon powder",
+    "1  century egg (, peeled and diced)"
+  ],
+  "ldInstructionsRaw": [
+    "Add the dried scallop and dried shrimp into cold water and soak for 30 minutes. Then drain the soaking water. If short on time, you can also soak them in warm water for 10 minutes.",
+    "Add the pea shoots into a big colander and cover with cold tap water. Soak for 5 minutes, rub gently with your hands, then drain. Check the ends of the pea shoot by feeling the cut side of the stem with your fingers with a snapping motion. If the ends are tough to snap, move up the stem until you can easily snap them off. Discard the fibrous tough stem ends. (*Footnote 2)",
+    "Heat oil in a wok or a 4qt dutch oven over medium heat until shimmering. Add the garlic. Cook until the surface turns light golden.",
+    "Add the ginger, rehydrated scallops, and rehydrated shrimp. Cook and stir for 30 seconds to release fragrance. Add the mushrooms. Cook over high heat until lightly browned.",
+    "Pour in the chicken stock along the edge of the hot wok, to let it evaporate as much as you can. Cook over high heat until bringing to a boil. Let boil for 2 minutes, to infuse flavor and slightly reduce the broth.",
+    "Add the century egg and the pea shoots. Cook covered for 2 minutes, until the pea shoots are wilted. Uncover, then stir to submerge the pea shoots in the broth. Cover to braise until the pea shoots are tender, or cooked to your preferred texture, 1 to 2 more minutes. Immediately transfer everything to a deep plate, so the pea shoots won’t overcook in the residual heat. Serve as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "156 kcal",
+    "carbohydrateContent": "14.4 g",
+    "proteinContent": "12.1 g",
+    "fatContent": "6.7 g",
+    "saturatedFatContent": "1.5 g",
+    "cholesterolContent": "107 mg",
+    "sodiumContent": "525 mg",
+    "fiberContent": "4.1 g",
+    "sugarContent": "5.2 g"
+  },
+  "htmlIngredientLines": [
+    "2 tablespoons dried scallops",
+    "2 tablespoons dried shrimp",
+    "1 lb snow pea shoots (*Footnote 1)",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "4 cloves garlic , gently smashed",
+    "2 teaspoons ginger , minced",
+    "1 pack (3.5 oz) white shimeji mushrooms",
+    "2 cups chicken stock",
+    "1/2 teaspoon chicken bouillon powder",
+    "1 century egg , peeled and diced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

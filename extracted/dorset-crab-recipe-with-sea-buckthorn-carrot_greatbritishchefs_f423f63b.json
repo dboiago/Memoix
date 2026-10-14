@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Dorset Crab With Sea Buckthorn & Carrot",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start on the crab by bringing a large pot of salted water up to a boil. Reduce to a simmer and drop the crab in the water, cooking for 5 minutes per kg",
+      "Remove from the water and place on a tray to cool. Once cool pick out all the white meat and set aside for later use",
+      "For the buckthorn jelly, combine the carrot juice, buckthorne juice and agar agar in medium sauce pan and bring to a boil while stirring. Once the agar agar is dissolved, remove from the heat and add the gelatine. Pour onto a suitable tray to create a thin layer and set in the fridge",
+      "For the buckthorn broken gel, bring the carrot juice to the boil with agar until dissolved, cool down and leave it in the fridge to firm",
+      "Once set, blend the hard jelly at a medium speed while adding the sea buckthorn juice. Pour the set gel in a squeeze bottle and leave in the fridge before serving",
+      "Start on the rye crisp by removing the crust and slicing very thinly. Dry the rye in the oven at 90-100°C for 20 minutes or until very crispy. Remove from the oven and brush with the melted butter, return to the oven at 100˚C and heat until golden",
+      "Cut the jelly sheets into sheets 14cm x 10cm; roll the picked seasoned crab meat inside the jelly, dress with broken gel, rye crisp and herbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dorset Brown Crab",
+        "unit": null,
+        "notes": "1-1.4kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Buckthorn Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Buckthorn Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loaf of Rye Bread",
+        "unit": null,
+        "notes": "Danish or Swedish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Stone Crop",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Sea Purslane",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "147d8bea37d68e6dc7675ac89fc70de9bf773579f15359492c1ba9e15f826a2b",
+    "lineage_hash": "93df2c90387f3c1808df28f4fb52f0c26796d3563cc85fc092019e29f27759cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dorset-crab-recipe-sea-buckthorn-carrot",
+    "fetchedAt": "2026-08-03T15:33:16.639Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dorset-crab-recipe-sea-buckthorn-carrot",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

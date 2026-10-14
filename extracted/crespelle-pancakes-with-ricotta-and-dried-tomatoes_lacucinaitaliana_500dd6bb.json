@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Crespelle Pancakes with Ricotta and Dried Tomatoes",
+    "time": "1 hr",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the crespelle pancakes with ricotta and dried tomatoes recipe, prepare a batter: mix the milk and flour with a whisk, then mix in the eggs and a pinch of salt. Boil the spinach in salted water, squeeze it well and blend it with the batter. Melt a knob of butter in a pan; pour the melted butter into the batter and stir.",
+      "Prepare the pancakes, pouring 1 small ladle of mixture into the greased pan; cook for about 1 minute until the edges begin to curl; then turn the pancake and continue cooking for another 30-40 seconds. Repeat the operation until the mixture is finished: you will get about 12 pancakes.",
+      "Mix the ricotta with the grated cheese and 30 chopped tomatoes, obtaining the filling for the pancakes. Spread 1 tablespoon of filling in the center of each pancake; close it, first folding the edges inward, then rolling it up to form a cannelloni. Thicken the cream by boiling it in a pan for 6-7 minutes.",
+      "Arrange the pancakes on the plates, dress in the cream and finish with the remaining dried tomatoes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ricotta Cheese",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Spinach",
+        "unit": "oz",
+        "notes": "cleaned and stemmed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano (or Parmigiano) Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a0a1e1f9ce4814f6d056649c6b1dc14f38d5e7d40d88643c44e596f295fadb6",
+    "lineage_hash": "026b0e3e39cebe6c58c55387c3c74de0255333aeeaea899c40eab7b9ccfc033d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/pasta/crespelle-pancakes-with-ricotta-and-dried-tomatoes",
+    "fetchedAt": "2026-08-03T07:40:43.324Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/pasta/crespelle-pancakes-with-ricotta-and-dried-tomatoes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

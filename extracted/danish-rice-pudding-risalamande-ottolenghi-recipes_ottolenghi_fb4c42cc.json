@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Danish rice pudding (Risalamande)",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DK",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the milk, sugar, salt, vanilla, lemon strips and rice in a medium saucepan, for which you have a lid, and place on medium high heat. Bring to a simmer, reduce the heat to medium low and cook, partially covered, for 30-35 minutes until the rice is fully cooked and is thick and creamy, stirring occasionally at the beginning and then more frequently towards the end. Transfer to a shallow bowl, cover the surface of the rice with a piece of parchment paper and leave to cool. Once cool, transfer to the fridge overnight (the rice will absorb more of the milk as it sits).",
+      "Preheat the oven to 160c and line a baking tray with parchment paper. Add the almonds to the tray and roast for about 15 minutes, stirring halfway through, until they are nicely toasted. Keep warm. Meanwhile, heat a small saucepan on medium high heat and, when hot, sprinkle in half of the sugar. Cook, stirring occasionally, until the sugar has melted and is starting to turn golden. Add the remaining sugar and cook, stirring occasionally, to a medium amber colour. Add the butter and whisk until fully combined. Take off the heat and add the warm almonds (keep the tray and paper) and salt and stir until they are evenly coated in the caramel, placing the pan back on the heat briefly if the mixture cools down too quickly. Transfer the mixture back to the tray and spread out a little. Set aside to cool. Once cool, roughly chop 75g of the brittle and set aside. The brittle can be kept in an airtight container at room temperature for up to two weeks.",
+      "For the compote, combine the cherries, sugar, lemon zest and juice in a medium saucepan and place on medium high heat. Make a slurry with the Amaretto and cornflour and set aside. As soon as the cherries come up to a simmer, stream in the slurry, stirring constantly, followed by the sumac. Let the cherries bubble for about 1 minute until thickened. Keep warm.",
+      "Transfer the rice pudding to a medium bowl and add the Amaretto, if using, to help loosen the mixture. Whip the cream with the vanilla to soft peaks and fold it through the rice in two additions, adding 75g of the chopped almond brittle with the second addition. Spoon the rice into 4 serving bowls (there will be enough for seconds!), hiding the whole almond in one of the bowls. Spoon over the warm cherry compote, sprinkle with some extra sumac and finish with a couple of pieces of brittle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pod Vanilla",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Strips",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest and Juice",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59fdd0162db47f35ce27513ca1b3ba153e31f338b9933ca4606e74ce6d929299",
+    "lineage_hash": "71988d0709c38b0bc6175c7e235cb02f246a882369745d33dca1076a2a6cf6c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ottolenghi.co.uk/pages/recipes/danish-rice-pudding-risalamande-salted-almond-brittle-sour-sumac-cherries",
+    "fetchedAt": "2026-08-02T09:57:28.384Z"
+  },
+  "rawSource": "https://ottolenghi.co.uk/pages/recipes/danish-rice-pudding-risalamande-salted-almond-brittle-sour-sumac-cherries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

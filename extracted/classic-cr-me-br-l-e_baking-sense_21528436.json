@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Crème Brûlée",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "653",
+      "carbohydrateContent": "47",
+      "fatContent": "50",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Arrange eight 6-oz ramekins in a large baking pan. Preheat the oven to 300 °F, don't use convection setting for this recipe.",
+      "Pour 1 quart heavy cream into a small saucepan. Split ½ vanilla bean and scrape out the seeds. Add the vanilla seeds and pod to the cream.",
+      "Heat the cream until scalding hot. Do not allow it to boil.",
+      "While the cream is heating, whisk together 12 large egg yolks, 8 oz granulated sugar and ⅛ teaspoon table salt. Slowly whisk the hot cream into the egg yolk mixture. Strain the custard through a fine sieve into a pitcher or large measuring cup with a pour spout.",
+      "Divide the custard evenly between the ramekins. Pour water into the baking dish so that the level comes 1/2 way up the sides of the ramekins. I like to pour from a corner to avoid spilling into the ramekins.",
+      "Carefully transfer the baking dish to the middle rack of the preheated oven. Bake just until the custard is set, about 30 minutes. The exact baking time will depend on the size and shape of the ramekins, check after 20 minutes and continue checking every five minutes until they're done.",
+      "Carefully life the ramekins out of the water bath and set on a wire rack to cool. Refrigerate the custards until cold, at least 2-3 hours, can be made the day before.",
+      "Sprinkle an even layer of granulated sugar (4 oz granulated sugar over the surface of each custard, the exact amount will depend on the size and shape of the ramekins. The sugar should not be too thick or it won't caramelize evenly.",
+      "Use a blow torch to caramelize the sugar by evenly waving the flame across the surface of the sugar. Do not hold the flame in one spot, keep the flame moving until the sugar is melted and nicely browned.",
+      "You can brown the custards just before dinner and keep in the refrigerator until serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup, for topping",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8fcde9d905dad96f26c1d80b26e155a7cd2ced88d97cdf9ab8ac103825585e1",
+    "lineage_hash": "b5e190562ef3e3eb7d91cebd3714bd73bd6154af0747a6774c35990a2e435f37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/08/27/creme-brulee-and-sauternes-a-classic-pairing/",
+    "fetchedAt": "2026-08-01T18:35:18.383Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/08/27/creme-brulee-and-sauternes-a-classic-pairing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

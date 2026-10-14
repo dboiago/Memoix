@@ -1,0 +1,55 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-tofu/",
+  "slug": "crispy-tofu-pan-fried-baked-air-fryer_itdoesnttastelikechicken_949b6ec2",
+  "title": "Crispy Tofu (Pan-Fried, Baked & Air Fryer!)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T10:08:45.934Z",
+  "ldName": "Crispy Tofu (Pan-Fried, Baked &amp; Air Fryer!)",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Chinese",
+  "ldCategory": "Main Course, Side Dish",
+  "ldKeywords": "air-fryer, baked, tofu",
+  "ldIngredientsRaw": [
+    "1 block (14–16 oz) extra-firm or firm tofu (cut into small cubes)",
+    "1 tablespoon soy sauce",
+    "1 tablespoon light oil ((such as canola or vegetable))",
+    "½ teaspoon garlic powder",
+    "¼ teaspoon black pepper",
+    "2 tablespoons cornstarch"
+  ],
+  "ldInstructionsRaw": [
+    "Prep the tofu: If your tofu is very wet, gently press it with a clean towel to remove excess moisture. Cut into bite-sized cubes.",
+    "Season: Add the tofu to a bowl and toss with the soy sauce, oil, garlic powder, and black pepper. Sprinkle the cornstarch over the tofu and toss until evenly coated.",
+    "Choose your cooking method:Pan-Fried: Heat 1–2 tablespoons neutral oil in a large non-stick pan over medium-high heat. Add tofu in a single layer (don’t overcrowd). Cook for 8–12 minutes, flipping occasionally, until golden and crispy on all sides.Baked: Preheat oven to 425°F (220°C). Spread tofu on a parchment-lined baking sheet. Bake for 20–25 minutes, flipping halfway through, until crispy.Air Fryer: Preheat air fryer to 400°F (200°C). Lightly grease the basket if needed. Add tofu in a single layer. Air fry for 10–15 minutes, shaking halfway through."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "calories": "180 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "15 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.02 g",
+    "sodiumContent": "257 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 block (14-16 oz) extra-firm or firm tofu, cut into small cubes",
+    "▢ 1 tablespoon soy sauce",
+    "▢ 1 tablespoon light oil, (such as canola or vegetable)",
+    "▢ ½ teaspoon garlic powder",
+    "▢ ¼ teaspoon black pepper",
+    "▢ 2 tablespoons cornstarch"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

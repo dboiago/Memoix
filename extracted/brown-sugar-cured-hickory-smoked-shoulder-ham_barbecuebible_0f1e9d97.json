@@ -1,0 +1,55 @@
+{
+  "recipe": {
+    "name": "Brown Sugar-Cured, Hickory-Smoked Shoulder Ham",
+    "time": "10 hr 30 min",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a sharp knife, score the ham in a crosshatch pattern, cutting through the skin, but not through the meat, spacing the cuts 1 1/2 inches apart. This is optional, as you’ll remove the skin anyway. But it facilitates injecting, and it sure gives the shoulder ham a cool-looking appearance.",
+      "Make the spice bundle: Tie the cloves, bay leaves, lemon zest, and peppercorns in a piece of cheesecloth.",
+      "Make the brine: Place half the water (2 1/2 quarts), the salt, brown sugar, and Prague powder #1 in a large pot and bring to a boil, stirring until the salt and sugar are dissolved.",
+      "Stir in the spice bundle and the remaining water (2 1/2 quarts) and let the mixture cool completely to room temperature.",
+      "Measure out 2 cups of the brine and place in a deep measuring cup. Place the ham in a roasting pan. Draw the brine into the injector and inject it deep into the ham all over, inserting the needle at 1 1/2-inch intervals.",
+      "Place the ham in a large pot, food-safe bucket, or jumbo resealable plastic bag. Add the brine (plus any brine in the roasting pan). If using a plastic bag, tightly seal, squeezing out any air, and place the bag in the roasting pan to corral any leaks. Brine the ham in the refrigerator for 3 days, turning the ham twice a day so it cures evenly.",
+      "Remove the ham from the brine and place it in a roasting pan. Using the marinade injector, re-inject the ham with brine, again, inserting the needle at 1-1/2-inch intervals. Continue brining the ham in the refrigerator for another 3 days, turning twice a day so it brines evenly.",
+      "Drain the ham in a large colander, rinse well with cold water, drain again, and blot dry with paper towels. Place the ham on a wire rack over a roasting pan and let it dry for 2 hours in the refrigerator.",
+      "If using wood chips, soak them in water to cover for 30 minutes, then drain. There is no need to soak wood chunks.",
+      "If using a charcoal grill, set it up for indirect grilling and heat it to 250 degrees. (With a kettle grill, use less charcoal than normal to obtain this low temperature.) Add wood chips (about 1 1/2 cups) or chunks (1 large or 2 medium) per hour to the embers. If using a smoker, heat it to 250 degrees following the manufacturer’s instructions.",
+      "Smoke the ham until handsomely browned and cooked through (the internal temperature will be about 160 degrees). This typically takes about 7 hours, but you may need more or less time depending on your ham, smoker, and the weather. Replenish the charcoal and wood as needed to maintain a light but steady stream of smoke.",
+      "Transfer the ham to a cutting board and let it cool for 20 minutes. Pull off the skin. (If you’re feeling ambitious, you can fry the skin in hot (350 degree) oil to make smoke-flavored cracklings.)",
+      "Thinly slice the ham across the grain and serve. Note: You can serve the ham hot, at room temperature, or chilled. Refrigerated, it will keep for at least a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shoulder Ham",
+        "unit": null,
+        "notes": "sometimes called picnic ham—9 to 10 pounds, fresh, skin-on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31f6b01fa73b85caf798ace05cd7ded33f7126e60f2bbea552c3d2610c153b8d",
+    "lineage_hash": "fbd93c61c62660ac876c267ce54650064bd498b492eeaf8d7799a3eae900bc01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brown-sugar-cured-hickory-smoked-shoulder-ham/",
+    "fetchedAt": "2026-08-03T09:57:36.304Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brown-sugar-cured-hickory-smoked-shoulder-ham/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

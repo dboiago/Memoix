@@ -1,0 +1,342 @@
+{
+  "recipe": {
+    "name": "Cauliflower Croquetas with Black Garlic Mayonnaise",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the Black Garlic Mayo, melt the butter and add the chopped garlic cloves. Cook gently on a very low heat until it turns sweet in flavour and is lightly caramelised, then place into a blender with the black garlic cloves and blitz until as smooth as possible (add a few drops of water if it becomes too thick to blend). Leave to cool",
+      "Place the egg yolks, cold garlic mix, mustard and lemon juice into the blender and blitz, gradually adding the oil until thick and emulsified. Taste and adjust to your liking with salt, vinegar and more lemon juice if you wish. Store in the fridge for up to a week",
+      "To make the cheese sauce, melt the butter in a pan and stir in the flour to create a roux. Cook out for 5 minutes until a sandy texture has formed then add the milk bit by bit to ensure a smooth white sauce. Keep adding the milk until the desired consistency is achieved– you want a thick sauce to ensure the croquetas hold",
+      "Remove the sauce from the heat, add the cheese and mustard and beat well until all the cheese is melted. Then add the garlic and egg yolk and beat again to fully incorporate. Finally season to taste with lemon juice, salt and pepper",
+      "For the pureé, melt the butter and oil in a large pan and when hot, add the blitzed cauliflower. Cook the cauliflower, stirring regularly until a deep golden colour is achieved, then add the cream to the cauliflower and warm through. Transfer to a blender with the parmesan, salt and vinegar and blitz until smooth, adding a dash of milk if needed to blend (but keep it as thick as possible)",
+      "For the caramelised cauliflower pieces, melt the butter and oil in a large pan, place the cauliflower into the pan and cook on a high heat until lightly caramelised all over, stirring regularly. You want the cauliflower to still have a slight bite to it",
+      "To finish, place the cheese sauce back onto the heat to warm through slightly, then mix in the caramelised cauliflower pureé, ensuring it is fully incorporated. Finally, gently fold in the cauliflower pieces and taste the final mix for seasoning and acidity",
+      "Transfer the mixture to piping bags and pipe out 3cm logs into a greaseproof lined tray. Place in the freezer for at least 24 hours",
+      "Once frozen, slice into 5cm portions, then dust in flour, followed by the egg, followed by the panko breadcrumbs",
+      "Heat a deep fat fryer or pan of oil to 190ºC, then deep fry the croquetas in batches until golden, ensuring you don't overcrowd the pan",
+      "Drain on kitchen paper then deep-fry the cauliflower leaves until crisp",
+      "To plate, squeeze dots of the black garlic mayonnaise over the plates and top with 2 croquettes. Balance the crisp leaves on top and finish with the grated cheese"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Pulp",
+        "unit": "g",
+        "notes": "confit",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "pulse blitzed in the blender",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": null,
+        "notes": "to adjust thickness",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "sliced 2mm thick",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "seasoned",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Cheese",
+        "unit": "g",
+        "notes": "chef uses Bermondsey hard press, grated",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Leaves",
+        "unit": null,
+        "notes": "(inner leaves that are softer and sweeter are ideal)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "286e5b21a73e815d4bbbba6f610c845c3c1ff90361129ff303dd369f10812898",
+    "lineage_hash": "1c7d97183f83526060388137e1f1ef01aeb6178175f491266414b077c86bc0c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-croquetas-recipe",
+    "fetchedAt": "2026-08-02T19:09:15.951Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-croquetas-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

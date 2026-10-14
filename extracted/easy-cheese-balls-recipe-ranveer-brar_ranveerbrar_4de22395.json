@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cheese Balls (चीज बॉल्स)",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mash the potato in a mixing bowl, add in refined flour, black pepper powder, garam masala, cheese and salt. Mix well and add water.",
+      "Make thick paste dough, add coriander and mix.",
+      "Form lemon sized balls from the dough.",
+      "Heat oil for deep frying. Dab the balls in the bread crumbs, deep fry in oil till golden and crisp.",
+      "Serve hot with sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98348da989859b75a20d5832a1facdc12546a1ee2548aa45df73928a24a978ac",
+    "lineage_hash": "230c2d1969d43479701174febf23189d6e76337b683df36f9f39fce9401b4300"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-balls/",
+    "fetchedAt": "2026-08-02T11:48:48.809Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

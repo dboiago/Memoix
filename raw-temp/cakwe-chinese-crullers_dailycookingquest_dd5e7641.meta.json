@@ -1,0 +1,53 @@
+{
+  "url": "https://dailycookingquest.com/cakwe-chinese-crullers.html",
+  "slug": "cakwe-chinese-crullers_dailycookingquest_dd5e7641",
+  "title": "Cakwe - Chinese Crullers",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:50:56.294Z",
+  "ldName": "Cakwe - Chinese Crullers",
+  "ldTime": "PT0H45M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "7"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Bread, Snack",
+  "ldKeywords": [
+    "Homemade Chinese crullers (cakwe)",
+    "How to make Chinese crullers (cakwe) for breakfast/congee"
+  ],
+  "ldIngredientsRaw": [
+    "200 gram bread flour (or all purpose flour)",
+    "1 large egg (~ 55 gram)",
+    "1 1/2 tablespoon milk (~ 25 gram)",
+    "1/4 teaspoon baking soda",
+    "1/4 teaspoon baking powder",
+    "1/2 teaspoon salt",
+    "2 teaspoon vegetable oil",
+    "3-5 tablespoon water"
+  ],
+  "ldInstructionsRaw": [
+    "Mix all ingredients together (start with 3 tablespoon of water) in a mixing bowl, knead into a soft and smooth dough, adding more water only if necessary.",
+    "Shape the dough into a roughly rectangular shape, cover it with a saran plastic wrap, and let it rest inside the fridge for 4 hours (overnight is best).",
+    "Return the dough to room temperature. Flour your work surface, then turn the dough out onto the floured surface. Roll into a rectangle of 1/8\" thickness (~ 1/2 cm) by 6\" (~ 15cm) wide and 12\" (~30cm) long , then cut into 14 strips.",
+    "One portion of the cruller consists of 2 strips stack on top of one another, so we will end up with 7 portions.",
+    "To glue together 2 stacks of dough into 1 cruller, use one chopstick (or the dull part of a butter knife), press the two pieces right through the center along its length.",
+    "Heat enough oil for deep frying in a wok/frying pan over medium heat. Once the oil is hot (200 Celsius/400 Fahrenheit), gently hold the two ends of each stack of crullers and pull it slightly to fit the length of your wok/frying pan. fry the crullers until golden brown, about 30 seconds. Drain over a wire rack to remove excess oil.",
+    "Serve as is with soy milk, or cut into pieces and serve with congee."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "200 gram bread flour (or all purpose flour)",
+    "1 large egg (~ 55 gram)",
+    "1 1/2 tablespoon milk (~ 25 gram)",
+    "1/4 teaspoon baking soda",
+    "1/4 teaspoon baking powder",
+    "1/2 teaspoon salt",
+    "2 teaspoon vegetable oil",
+    "3-5 tablespoon water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

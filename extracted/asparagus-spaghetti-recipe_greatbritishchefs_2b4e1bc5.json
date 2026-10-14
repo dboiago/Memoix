@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Asparagus Spaghetti",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the rocket pesto. Place all the ingredients, minus the oil, into the container of an immersion blender (or into a regular blender). Pour in the oil in a thin stream, blending all the while. Carry on blending until you have a smooth pesto. (If you see that you’ll need more oil to get there, go for it.) Transfer the pesto to a bowl, cover with cling film and keep refrigerated until ready to use",
+      "Bring a large pot of salted water to the boil. Blanch the peas and asparagus for 30 seconds, just so as they lose their crudeness. Drain with a slotted spoon and plunge into iced water to halt the cooking. Drain, pat dry, and set aside",
+      "Let the water come back to a rolling boil and add the spaghetti. Cook until al dente, drain and add to a large, warm serving bowl. Add the asparagus, peas and pesto and toss until evenly coated",
+      "Serve the spaghetti with some extra rocket leaves and the crumbled goat’s cheese on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wild Rocket Leaves",
+        "unit": "g",
+        "notes": "plus extra to garnish",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": "or as needed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "trimmed and halved lengthwise",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Peas",
+        "unit": "g",
+        "notes": "fresh or frozen",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Cheese",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f92dfe2d13de3c5057b6b8fbd2b952f70065462f5ce038b6f4833858c70d12d2",
+    "lineage_hash": "266cda98d5df5fdc7f7b200d73b063509c1944710b5a3194d75c470c860970c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-spaghetti-recipe",
+    "fetchedAt": "2026-08-03T11:09:35.678Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-spaghetti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Celtuce Leaves Salad (凉拌莴笋叶)",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "160",
+      "carbohydrateContent": "9.3",
+      "fatContent": "12.9",
+      "proteinContent": "3.9"
+    },
+    "directions": [
+      "To prepare the celtuce leaves, tear the leaves off the stem and rinse them thoroughly with cold tap water to remove any dirt. Once done, drain well and set aside to dry. If the leaves are still wet when you prepare the salad, pat them dry with paper towels. Cut the celtuce leaves into bite-sized pieces and place them on a serving plate.",
+      "Mix the sauce ingredients in a small bowl and stir until smooth. Pour half of the sauce onto the celtuce.",
+      "Serve the celtuce with the rest of the sauce. Drizzle more sauce if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Batch Celtuce Leaves",
+        "unit": "small",
+        "notes": "yields about 4 cups, cut into bite size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds (for Garnish) (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "or unsweetened natural peanut butter, or tahini",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": "or rice vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": "or sugar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0abec47d9fc542ce4eea8e657eb713d6074ef9181b3e451f7f331a1d8b6aa310",
+    "lineage_hash": "7a8702991c7df0e4557bb4c4ce9dd8c4f52e3e65fe46771174fa161fdc4e215b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/celtuce-leaves-salad/",
+    "fetchedAt": "2026-08-01T16:34:39.276Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/celtuce-leaves-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

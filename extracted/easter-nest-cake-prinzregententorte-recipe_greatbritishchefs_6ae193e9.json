@@ -1,0 +1,218 @@
+{
+  "recipe": {
+    "name": "Easter nest cake (Prinzregententorte)",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190˚C/gas mark 5. On 8 sheets of baking parchment, use a compass or draw round the insert of an 8-inch loose bottomed cake tin, so you are left with an 8-inch circle on each piece of parchment. Upturn the circles, so the pencil marking is on the bottom and place them on baking trays. You may not have enough baking trays, but don’t worry, they can be baked in batches",
+      "Whisk the egg whites with salt until stiff, but not dry and gradually whisk in half of the sugar until you have a stiff meringue. Set aside. In a separate bowl, but with the same beaters (there’s no need to wash them up in between), whisk the egg yolks with the remaining sugar and vanilla paste until pale, thick and mousse-like",
+      "Fold the egg whites and yolk mixture together using a large metal spoon.  Sift over the flour and bicarbonate of soda and fold in, being careful not to knock the air out of the mixture. Finally, pour the melted butter down the side of the bowl and fold in",
+      "Divide the mixture into 8, spooning the batter equally in the middle of each sheet of parchment. Use a palette knife to spread the batter thinly and neatly up to the edge of each circle. Bake for 6 – 8 minutes, or until golden and no longer sticky to touch",
+      "You may have to bake them in batches depending on the size of your oven. Leave them to cool on top of wire racks until cold enough to touch, then peel off the paper and leave to cool completely",
+      "Next, make the syrup. Simply stir the sugar, vanilla and water together in a pan over a gentle heat until all the sugar has melted. Increase the heat and bring to the boil before reducing the heat again and leaving the syrup to gently simmer for 1 minute. Take the pan off the heat and leave to cool",
+      "To make the butter cream, simply whisk the butter until very soft, then whisk in the melted chocolate. Sift over half of the icing sugar and whisk until fully incorporated. Sift over the remaining icing sugar and whisk again to combine. Add the milk and continue to whisk until the buttercream is very fluffy and spreadable",
+      "Place one layer of sponge on a board. Brush the top with syrup and spread over a thin layer of buttercream. Stack another layer on top, brush with syrup and spread with buttercream and continue building up the layers until you reach the last circle of sponge.  Do not brush the top with syrup or spread the top with buttercream yet",
+      "Use a clean baking tray to press down firmly so the top of your cake is nice and level. Pop the cake in the freezer for 15 – 20 minutes to chill. This will make it easier to trim. Place the 8-inch cake tin insert on the top of the cake and use a long, serrated knife to trim the cake so the sides are neat",
+      "Brush the final layer with syrup before spreading the remaining buttercream on the top and sides of the cake using a palette knife. Try to make the cake edges as neat and squared off as possible. The neater the buttercream is now, the neater your cake will look in the end. Pop the cake in the fridge to chill",
+      "To make the ganache, put the chopped chocolate in a heatproof bowl and heat the cream until it just reaches boiling point. Leave the cream to stand for 1 minute before pouring it over the chopped chocolate",
+      "Leave to stand for 30 seconds before gently stirring with a rubber spatula until all the chocolate has melted and you are left with a smooth, glossy ganache. Leave to cool until thick enough to pour without the chocolate just running off the sides of the cake",
+      "Take the cake out of the fridge and carefully transfer it on to a wire rack. Place a sheet of baking parchment underneath to catch any drips",
+      "Spoon the glaze on top of the cake and use a palette knife to tease the chocolate over the sides of the cakes. Neaten the top and sides with the palette knife and leave to set at room temperature",
+      "In the meantime, make the nest by melting the chocolate, butter and golden syrup together in a heatproof bowl suspended over a pan of barely simmering water and crumbling the Shredded Wheat into it. Mix to combine and shape into a nest on a sheet of baking parchment, with a dip in the middle for the eggs. Leave to set",
+      "Once everything is set, transfer the cake on to a serving plate/stand and top with the nest. Fill with mini eggs and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62949586ef3c10f4b000de08ce06e359b50df7208fc13c4de97d4d1c4acb170e",
+    "lineage_hash": "bc2cddb9533fe32b6d2a5ffb31dee6558982d3f79397b22b64393f9dd19cebc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-nest-layer-cake-recipe",
+    "fetchedAt": "2026-08-03T22:48:59.319Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-nest-layer-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,246 @@
+{
+  "recipe": {
+    "name": "Confit Leek with Maitake Mushrooms",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150ºC/gas mark 2. Wash the leeks and cut the green tops off, reserving them for the oil. Then place the white parts into a container and cover with rapeseed oil. Place a lid or foil over the container and cook for 90 minutes, then strain",
+      "For the green oil, roughly chop the vegetables and herbs then blend with the oil until warm (around 65ºC) – this will take up to 10 minutes. Strain over a bowl of ice, using a sieve lined with a muslin cloth then reserve in fridge until needed",
+      "For the garlic pulp, coarsely chop the garlic in a food processor. Melt the butter in a pan, and once melted add the chopped garlic. Cook on a low heat until the garlic is completely soft (the garlic should lose all its raw flavour and taste slightly sweet). Remove from the heat and pulse with a hand blender, to achieve a pulpy texture– be careful not to blend into a purée. Keep refrigerated",
+      "For the leek gel, melt the butter in a pan, then add the sliced onions and 750g of the leeks. Sweat on a medium heat until soft but not caramelised– approx. 15 minutes. Add the vegetable stock, milk and cream and bring to 85ºC. Pulse with a hand blender a few times, then cover and leave to infuse for 15 minutes",
+      "After 15 minutes, add the remaining 250g of finely sliced leeks and cover again for a further 10 minutes. After this time add the grated parmesan, pulse once more with a hand blender and leave to rest for a final 5 minutes. Then pass through a colander and after that a fine chinois. Really squeeze hard at each stage to ensure maximum yield and flavour",
+      "Place the leek stock into the thermomix and add the salt. Bring the stock up to 90ºC on speed number 3. Once up to 90ºC, add the gellan gum. Blitz for 10 seconds on speed 8, stop the thermo and scrape down the sides ensuring all gellan gum is mixed in, then blitz for a further 2 minutes on speed 8",
+      "Pour the mix into a deep metal tray and set over ice, chill the gel down to 45ºC and mix gently whilst cooling, but don’t break up the mix too much. Once the mix is at 45ºC, place back into the clean thermo and blitz on speed 8 to desired consistency (Approx. 60sec). The gel is now ready and can be stored in the fridge",
+      "For the mushrooms, heat rapeseed oil in pan until hot. Add the mushrooms to the pan and ensure you get good colour on them, then reduce the heat and stir through the garlic and parsley",
+      "For the breadcrumbs, melt butter in a pan over a medium heat. Add in the panko breadcrumbs and cook until golden, then drain on kitchen paper. Once cooled, add parmesan shavings and chopped chives",
+      "To cook the cavelo nero, lay the leaves face down in a dry pan and heat slowly until crisp, then season with salt",
+      "Portion the confit leeks into 3 batons, then place under a hot grill or blacken using a blowtorch. Stir the garlic pulp into the green oil and gently heat– only do this right before serving so you don't lose the bright green colour",
+      "To plate up, add the confit leeks to a plate with the mushrooms draped over. Add a quenelle of the fluid gel and top with the panko crumb. Drizzle with plenty of the garlicky green oil and finish with crisp cavolo nero leaves. Any leftover confit garlic and garlicky green oil should be refrigerated quickly and used within two days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leeks",
+        "unit": "medium",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cavolo Nero",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Tops",
+        "unit": "g",
+        "notes": "plus any other green veg tops/herbs you have, I.e. spring onion tops and parsley",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "sliced to 2mm",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "kg",
+        "notes": "middle and tops, finely sliced sliced 2mm",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Stock",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum Type F",
+        "unit": "g",
+        "notes": null,
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maitake Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Chives",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cavolo Nero Leaves",
+        "unit": null,
+        "notes": "stalk removed and leaves cut into quarters",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d89ee3b4f7f29f0a3e8dd8e99ee384cbe6e5210c703b7b3c3a081f0f3d088268",
+    "lineage_hash": "9e0b8138a006dda62db21e7a2e2f593bcc7b47efd77358170a8aff62b8ffce9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-leek-hen-of-the-wood-mushrooms-recipe",
+    "fetchedAt": "2026-08-02T19:16:43.485Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-leek-hen-of-the-wood-mushrooms-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

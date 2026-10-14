@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Aloo/Batata Bhajia",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make a medium thick batter with all the dry ingredients using sufficient water. Check and adjust the seasoning.",
+      "Heat oil for frying in a kadai or pan.",
+      "Dip each potato slice in the batter and place it gently in hot oil. Fry till golden brown and crisp.",
+      "Drain the Bhajias on paper towels to remove excess oil. Repeat with the remaining batch.",
+      "Serve hot with fried green chilies and lehsun chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled and thinly sliced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour (besan)",
+        "unit": "C",
+        "notes": "sieved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Rice Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": "Ajwain",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder Garam Masala Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida/hing",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7d4db0c667a83415bc57d757b01da00c664454cba8555adb5de19fdb769f7bf",
+    "lineage_hash": "57a8ef9dda46e358e1e195ebcba46efaec6598077eafa21e8af44567cb10d188"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-batata-bhajia/",
+    "fetchedAt": "2026-08-02T11:01:25.183Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-batata-bhajia/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

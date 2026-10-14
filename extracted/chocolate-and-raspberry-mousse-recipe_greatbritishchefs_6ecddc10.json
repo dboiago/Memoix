@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Chocolate and Raspberry Mousse",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the coulis, crush or lightly blend the raspberries then pass through a sieve to remove the seeds. Sweeten the coulis to taste with a little icing sugar",
+      "Transfer the coulis to 3cm silicone dome moulds and place in the freezer to freeze solid",
+      "Now prepare the chocolate cases. Break or chop the chocolate into pieces and melt in a heatproof bowl over a pan of simmering water (do not allow the bottom of the bowl to touch the surface of the water), stirring occasionally until smooth",
+      "Brush the silicone moulds with the melted chocolate evenly and place in the fridge until set and hard",
+      "To make the mousse, beat the egg yolks with half the sugar in a mixing bowl",
+      "Whisk the egg whites in a separate bowl. Once they start to foam, add the remaining sugar to the bowl and continue whisking until the eggs have formed soft peaks",
+      "Meanwhile, melt the chocolate, using the same method as for the chocolate cases",
+      "Transfer the melted chocolate to the bowl with the egg yolk and sugar mixture and beat until smooth and combined. Fold in the lightly-whipped cream. Finally, fold in the egg whites",
+      "Spoon the mousse into the prepared moulds, filling halfway up. Remove the frozen coulis from the moulds and press into each mousse. Cap off with a little extra mousse to seal the coulis inside. Return to the freezer to set",
+      "To serve, carefully remove the mousses from the moulds and turn out onto serving plates. Allow to defrost fully at room temperature before serving – the coulis will have melted and you will have a nice liquid coulis core"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "lightly blitzed and passed through a sieve",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "Willie suggests Peruvian Chulucanas chocolate as it has the perfect fruitiness to go with the raspberries",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "lightly whipped",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39d930ceb8e708161ce6676d4b6f358980f812840b37f6a77951859a184daf6c",
+    "lineage_hash": "95ba4a64be3da7f9817272a3f91452de05ba3b724fcd01dc075cb8693a767224"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-raspberry-mousse-recipe",
+    "fetchedAt": "2026-08-03T10:15:04.453Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-raspberry-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

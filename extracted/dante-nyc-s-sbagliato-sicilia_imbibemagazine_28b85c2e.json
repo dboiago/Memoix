@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Sbagliato Sicilia",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to the glass over ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Luxardo Bitter Bianco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dolin Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limoncello",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosecco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8450928643c3fc550ef8a7ac79de7ada3b92c3463e3433900e5ee306ef5b6dd",
+    "lineage_hash": "30241a749eb44c597e78b5060530aa81642cfc1ffcca840fb52d43568ef6e6ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dante-nyc-sbagliato-sicilia/",
+    "fetchedAt": "2026-08-03T22:09:43.471Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dante-nyc-sbagliato-sicilia/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

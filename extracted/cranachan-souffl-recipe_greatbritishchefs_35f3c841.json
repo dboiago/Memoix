@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Cranachan Soufflé",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The soufflé base can be made up to three days in advance. Warm the whisky in a small frying pan until the liquor flames - this is the point at which the alcohol burns off leaving only the flavour of the whisky. Add the milk, honey and vanilla pod to the pan and using a thermometer probe heat up to 80°C. Set aside to cool",
+      "Sift the flour and cornflour into a bowl.  Whisk the egg yolks and sugar in a food processor. Then, slowly add the flour and cornflour mixture to the food processor, one spoonful at a time. Slowly add the milk and whisky from the pan to the processor. Whisk the mixture for 20 seconds",
+      "Pour this mixture into the pan. Heat gently over a low heat, whisking continuously, for 12 minutes",
+      "Place a silicon sheet of piece or greaseproof paper over the top of the pan and leave to cool.  Once cooled, transfer the base to a suitable plastic container and set aside in the fridge until ready to use",
+      "To prepare the ramekins, butter the insides and dust with caster sugar. Knock out the excess",
+      "To make the soufflé, whisk up the egg whites - you can use an electric or hand whisk - with the caster sugar and lemon juice to firm peaks. Fold the egg whites into the cranachan soufflé base being careful not to knock out any air. Pour a few tablespoons of the mixture into the lined ramekins to cover the bottom",
+      "Place a few raspberries into the middle and continue to fill with the mixture until flush with the rim. Wipe of any excess mixture from the rim and gently tap the bottom of the ramekin onto a work surface to knock out any large air bubbles",
+      "Top the uncooked soufflé with a sprinkling of toasted oatmeal and place into an oven at 220˚C for approximately 6 minutes",
+      "Check the soufflés have risen and are evenly browned. To check the consistency, remove the baking tray from the oven and gently wobble the tray from side to side: the soufflé should be firm but soft inside",
+      "To serve, place the soufflés onto plates and garnish with a quenelle of raspberry sorbet or fresh raspberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": "18 year old, if possible",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "preferably Scottish honey",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for lining mold",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Oatmeal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Scottish Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Scottish Raspberries",
+        "unit": null,
+        "notes": "weighing 250g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43e8852311ae6f3cf107997a33a2ce39620cb99817d9dff52c969f409ce31fe4",
+    "lineage_hash": "1e4f3176d4a9c15c8c6c9b0520e6f5b14dafc64a3e181170b8ea0e337cebff65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranachan-souffle-recipe",
+    "fetchedAt": "2026-08-03T15:01:05.788Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranachan-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

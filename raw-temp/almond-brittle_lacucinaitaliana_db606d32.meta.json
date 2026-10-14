@@ -1,0 +1,30 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-brittle",
+  "slug": "almond-brittle_lacucinaitaliana_db606d32",
+  "title": "Almond Brittle",
+  "byline": "by  Editorial staff   December 23, 2019",
+  "fetchedAt": "2026-08-02T19:17:17.042Z",
+  "ldName": "Almond Brittle",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Mandorle,Natale,Natale 2016,Natale 2017",
+  "ldIngredientsRaw": [
+    "9OZ. almonds, unblanched",
+    "nullCUP sugar"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Chop the almonds by cutting them into three pieces with a knife.|In a pot, dissolve the sugar in 1 tablespoon of water, on medium heat, stirring.|Cook for about 4-5 minutes and, when the sugar has dissolved and begins to brown, add the almond pieces.|Stir them into the caramel and cook on low for 1-2 minutes.|Transfer to a non-stick mold, such as a star-shaped mold measuring 12 inches across.|Use a meat tenderizer to flatten the almonds into an even layer.|Trim the points of the star with a spoon to create a perfect star shape.|Let the brittle cool for 15-20 minutes, then unmold.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "9 OZ. of almonds, unblanched",
+    "sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

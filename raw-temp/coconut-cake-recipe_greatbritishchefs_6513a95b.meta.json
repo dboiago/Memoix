@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/coconut-cake-recipe",
+  "slug": "coconut-cake-recipe_greatbritishchefs_6513a95b",
+  "title": "Coconut Cake Recipe",
+  "byline": "by Andrew Wong",
+  "fetchedAt": "2026-08-03T13:15:11.017Z",
+  "ldName": "Coconut cake",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "225g of self-raising flour",
+    "300g of caster sugar, divided into 2 bowls",
+    "12 large egg whites, at room temperature (make sure there is absolutely no egg yolk in the whites)",
+    "1 1/2 tsp cream of tartar",
+    "1/4 tsp salt",
+    "2 tsp vanilla extract",
+    "250ml of coconut cream, left overnight in the fridge before using",
+    "500ml of whipping cream",
+    "75g of shredded coconut, or coconut flakes"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 190°C/gas mark 5",
+    "To make the angel food cake, sift the flour and 150g of the sugar together into a mixing bowl and set aside",
+    "Whisk the egg whites in a food mixer with the cream of tartar and salt until stiff peaks form",
+    "Add the flour and sugar mixture, remaining sugar and vanilla extract and beat on low until well-mixed. You should have a thick batter that is glossy and white",
+    "Pour or spoon the batter into the cake tins and bake for 30–35 minutes until the cakes spring away from the sides of the tins and are a pale golden brown",
+    "Gently run a butter knife around the edges of the cake tins to loosen the cakes, then invert them onto a wire cooking rack. Allow to cool before cutting horizontally through the middle of each cake to make 4 sponge layers",
+    "To make the coconut cream, beat the cold coconut cream with the whipping cream until stiff peaks form and you have a nice thick mixture",
+    "Sandwich the 4 layers together with the coconut cream, then swirl the remaining coconut cream all over the top and sides of the layered cake. Scatter the coconut flakes or shredded coconut all over the outside the cake and cut into slices to serve. Refrigerate any leftover cake for up to 48 hours"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

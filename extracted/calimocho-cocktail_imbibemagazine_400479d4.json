@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Calimocho (Kalimoxto)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the wine and cola in cups filled with ice. Give it a quick stir. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cola",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedge",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "222d6309a895dc29ab362f6219fc31043314db4b2000e7cf02823e81a92563af",
+    "lineage_hash": "99fca5050415aba1d43252567fac2119536d0800ae004fa24075558235080a32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calimocho-cocktail/",
+    "fetchedAt": "2026-08-03T19:27:40.397Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calimocho-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

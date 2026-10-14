@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chocolate Ganache Dessert with Cherries",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the cake base, beat the eggs with the sugar until doubled in volume. Meanwhile, melt the butter with the chocolate in a bowl set over a pan of simmering water, ensuring the base of the bowl doesn't touch the water",
+      "Gently fold half the egg mixture into the chocolate then fold in the other half. Mix in the ground almonds and spread out on a lined baking tray. Bake for 7 minutes",
+      "Meanwhile, mix together 2 tbsp of the syrup from the cherries and all of the brandy. Remove the cake from the oven and, while still warn, prick all over with a fork and drizzle over the syrup mixture. Cut into circles using the metal pastry rings, leaving them in place. Discard (or nibble on) the remaining sponge",
+      "To make the ganache topping, gently heat the cream in a heavy-based pan. Once hot but not bubbling, place the chocolate and sugar in the pan and stir over a very low heat until everything has melted together",
+      "Cut strips of baking paper big enough to line the tops of the moulds. Pour in the ganache to a 2cm depth and push 3 cherries into the top of each, so they are just poking out of the top. Place in the fridge for 30 minutes to set and cool",
+      "Remove fromthe fridge, gently remove the moulds and peel off the baking paper. Serve immediately with a drizzle of cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "100% Cacao",
+        "unit": "g",
+        "notes": "Willie recommends Rio Caribe. If you'd rather use 70% cacao chocolate, use 260g of it and reduce the sugar to 100g",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amarena Cherries in Syrup",
+        "unit": null,
+        "notes": "preferably Fabri",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": "Willie recommends Somerset cider brandy",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "100% Cacao",
+        "unit": "g",
+        "notes": "preferably Rio Caribe. If you'd rather use 70% cacao chocolate, use 130g of it and reduce the sugar to 40g",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "013c3ac9eff3f0364de6bc59a0172d0a2171f2542c1194447f9648ceb4fb1b36",
+    "lineage_hash": "b78a2641ae6b3a014ffbfd22d67c9a828afb065bc1d901bd36d65c7f07af22d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-ganache-dessert-recipe-with-cherries",
+    "fetchedAt": "2026-08-03T10:08:42.174Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-ganache-dessert-recipe-with-cherries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

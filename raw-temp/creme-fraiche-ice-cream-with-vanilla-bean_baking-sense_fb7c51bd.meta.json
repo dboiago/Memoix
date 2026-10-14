@@ -1,0 +1,56 @@
+{
+  "url": "https://www.baking-sense.com/2017/05/04/creme-fraiche-ice-cream/",
+  "slug": "creme-fraiche-ice-cream-with-vanilla-bean_baking-sense_fb7c51bd",
+  "title": "Creme Fraiche Ice Cream with vanilla bean",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T20:26:14.050Z",
+  "ldName": "Creme Fraiche Ice Cream Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "frozen dessert, ice cream",
+  "ldIngredientsRaw": [
+    "21 oz creme fraiche",
+    "½  vanilla bean ( or 1 teaspoon vanilla extract)",
+    "8 oz whole milk (1 cup)",
+    "6  egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 21 oz&#32;creme fraiche and 8 oz&#32;whole milk in a saucepan. Scrape the seeds out of the vanilla bean and add them to the cream along with the pod. Heat over medium high. As the mixture heats up it will thin out a bit. Heat just until scalding hot. Do not allow the milk come to a full boil.",
+    "While the milk mixture is heating, whisk together 6&#32;egg yolks, 8 oz&#32;granulated sugar and ⅛ teaspoon&#32;salt. Whisk the scalding hot milk into the yolks. Return the mixture to the pan and reduce the heat to medium low. Cook the custard, stirring constantly, until it coats the back of a spoon or spatula.",
+    "Strain the mixture into a bowl, allow it to cool to room temperature. Cover with plastic wrap and refrigerate for at least 6-8 hours, until very cold. Run the custard in your ice cream maker according to the manufacturer's directions.",
+    "Pack into a container. Place plastic wrap directly on the surface of the ice cream and cover the container with a lid. Freeze 8 hours or overnight."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "317 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "5 g",
+    "fatContent": "19 g",
+    "saturatedFatContent": "9 g",
+    "cholesterolContent": "193 mg",
+    "sodiumContent": "77 mg",
+    "sugarContent": "32 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "21 oz creme fraiche",
+    "½ vanilla bean ( or 1 teaspoon vanilla extract)",
+    "8 oz whole milk (1 cup)",
+    "6 egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

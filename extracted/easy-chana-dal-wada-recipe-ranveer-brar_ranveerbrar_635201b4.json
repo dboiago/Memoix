@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Chana Dal Wada (चना दाल वड़ा)",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drain the soaked chana in a mixer grinder and coarsely grind it.",
+      "Transfer the chana in a mixing bowl. Add onion, green chilli, ginger, curry leaves, coriander leaves and salt, mix well.",
+      "Shape them into thin flat wadaâs and keep aside.",
+      "In a heavy bottom pan, heat oil for deep frying.",
+      "Add the wadaâs carefully in the oil and cook till golden brown and crisp.",
+      "Remove in an absorbent kitchen paper towel.",
+      "Serve hot with coconut chutney or choice of your sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "washed & soaked",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "hand torn",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c2311229ebc887f5bee1175186e80c1c663020c917c93cef2bec11e9951eaae",
+    "lineage_hash": "4eafe8ffa397dfba5c0e34f1fcd0f5dc35833aaf96df6b3bbf36228a9497f2a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chana-dal-wada/",
+    "fetchedAt": "2026-08-02T12:15:01.675Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chana-dal-wada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

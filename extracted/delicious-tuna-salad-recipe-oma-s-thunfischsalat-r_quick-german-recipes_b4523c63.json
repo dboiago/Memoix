@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Tuna Salad (Thunfischsalat)",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix everything together in a bowl.",
+      "Spread thickly on buttered bread or buns."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cans Tuna",
+        "unit": null,
+        "notes": "170 grams, drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Pickles",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Eggs",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": "89 grams",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24a2001413e0aadeb8a18f357577d3a9a7b782a77236ac247b692efa0c35dca6",
+    "lineage_hash": "65b77a44b933499cc9b6404fba5c36f00de44a2005c00d4d1bf637ed957a6ba9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/best-tuna-salad-recipe.html",
+    "fetchedAt": "2026-09-25T19:43:08.518Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/best-tuna-salad-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

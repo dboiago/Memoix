@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "Brazilian Sweet Corn Chowder (sopa de milho)",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large soup or stockpot lightly brown the sausage with 2 tbsp of butter, over medium to high heat – about 3 minutes",
+      "Remove the sausage and set aside",
+      "Add the other 2tbsp of butter, and melt. Then, add the onions and cook until they are transparent, about 3 mins"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter Sausage",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Onions",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa09a264e736912e8a04fb368eb8384525ee00dc828061fc7007600f09489ecc",
+    "lineage_hash": "c053c8434cea2b7f0a85372e71be56ec97c04a0229c1c0d499ae5bced6da0ed6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/delectable-brazilian-sweet-corn-chowder-a-taste-of-comfort/",
+    "fetchedAt": "2026-09-25T21:17:01.077Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/delectable-brazilian-sweet-corn-chowder-a-taste-of-comfort/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

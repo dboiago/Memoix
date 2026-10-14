@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Cosmopolitan Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chill a coupe or martini glass in the freezer.",
+      "Add the ingredients to a cocktail shaker, except for the lime wedge, fill two-thirds full with ice, and shake vigorously",
+      "Strain into the icy cold cocktail glasse and garnish with a lime wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedge",
+        "unit": "small",
+        "notes": "for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ddc78d73adbaf57725e1fd4c8b1aba39c0dfe16da6bbbae11b9480101d37d07c",
+    "lineage_hash": "dbe46c9c45a61b2a0ae74932bb1d5b01063035a172dc2d841ce8ec8418abed1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cosmopolitans-cocktail-recipe-roasted-nuts-rosemary/",
+    "fetchedAt": "2026-08-02T20:17:51.306Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cosmopolitans-cocktail-recipe-roasted-nuts-rosemary/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

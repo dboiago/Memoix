@@ -1,0 +1,291 @@
+{
+  "recipe": {
+    "name": "Beef Dandy Ribs",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the brine 48 hours before using. Toast the spices individually in a pan and then crush lightly",
+      "In a large pan combine the water, garlic, salt and spices and bring to the boil. Remove from the heat and allow to cool. Leave to infuse for 24 hours, then strain and store in the fridge",
+      "For the kombu seasoning, turn your oven onto its lowest possible setting. Line a baking tray with baking parchment and place the salted kombu on top in an even layer. Place into an oven and leave to dehydrate until completely dry. Once dry, let it cool and then place into a blender with the other ingredients and blitz until fine. Store in an airtight container",
+      "To make the BBQ rub, blend the coriander seeds and black peppercorns together to a fine consistency. Mix with all the remaining ingredients and store in an airtight container",
+      "Place the beef ribs into the chilled brine for 4 hours. After 4 hours, set the oven to 98°C, remove the ribs from the brine and rinse in the sink under cold running water for 20 minutes. (The brine can be stored in the fridge and re-used)",
+      "Take the ribs out of the sink and dry them off. Very lightly season the ribs all over with the BBQ rub, and place into deep metal trays. Place 500g of water into each tray and then cover with cling film and then tin foil. Place the ribs into the preheated oven and cook for 8 hours (or overnight)",
+      "As the beef is cooking, you can make the sauce. Place the wine and port into a pan and reduce until a glaze. Add the stock to the reduced alcohol and whisk in the butter. Taste and season the sauce with salt, lemon juice, vinegar and sugar to taste",
+      "After 8 hours, remove the ribs from the oven and chill down in the trays– do not try to take out as they will fall apart. When completely chilled, remove the racks and portion",
+      "When ready to serve, grill the ribs either on a BBQ or skillet pan to get a charred smoky flavour and heat all the way through. To serve, pile ribs on top of each other, pour warmed-up sauce generously over and dust with kombu seasoning"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "peeled and halved",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": "salted",
+        "amount": "52",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Bay Seasoning",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Chilli Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Ribs",
+        "unit": null,
+        "notes": "2 racks of 5",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ruby Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Wine Vinegar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83868c2f08e58cbbf6590fc63ebbf6e0fb6add4ba841f478ccd6353ec85645a1",
+    "lineage_hash": "e711275c4343f51357e4aec607ce50a580f6e7a0141a7e44f0e6a64f5614a52b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-dandy-ribs-recipe",
+    "fetchedAt": "2026-08-02T19:18:48.530Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-dandy-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

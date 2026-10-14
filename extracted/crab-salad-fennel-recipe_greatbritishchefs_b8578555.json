@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Crab Salad, Fennel",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take off the crab claws and legs, turn the crab onto its back and push centre body upwards, this should dislodge itself from the main shell. Pick out all the brown feathery pieces and scoop the brown meat out, (this will look lumpy and unappetizing but tastes delicious) keep to one side",
+      "With a rolling pin and a large chopping board bash the crab claws until they break, scoop out all the crab meat into a bowl. Be careful about the shell but don’t worry too much as you can pick through the crab later",
+      "With the legs, cut the ends off with a sharp knife and scrape out the meat with a long fork. Finally take the centre body, place it on the chopping board and split it into two, this should make getting into all the cavities easier – remove as much meat as you can",
+      "Place all the crab meat on a flat tray and use your fingertips to go through the meat and make sure there is no shell",
+      "Season the white crab meat with salt and pepper, squeeze of lemon and a dash of olive oil. With the brown meat – place all of it including the lumpy bits into a bowl and bash it with a whisk until every part of it is smooth. Add squeeze of lemon, oil, salt & pepper",
+      "Mix the chopped fennel, radichhio, pissenlit and rocket together with the olive oil, lemon juice and salt, pepper and place on a plate. Spoon over 1 tablespoon of brown meat on each portion of salad then carefully put white crab meat on top and finish by grating bottarga all over"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Crab",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulbs of Fennel",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radicchio",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Dandelion Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Rocket",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottarga",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "519659b7149f474384f432a03c0a0de220794a2151a98b901f755ab05e2ff3b3",
+    "lineage_hash": "635e5549be432562d2b5566aa58120ac235bd6a50fb02dfc271c340865106220"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-salad-bottarga-wild-fennel",
+    "fetchedAt": "2026-08-03T17:46:17.434Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-salad-bottarga-wild-fennel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

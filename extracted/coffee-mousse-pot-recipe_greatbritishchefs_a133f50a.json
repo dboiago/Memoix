@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Coffee Mousse Pot",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the egg yolks and sugar together until light and creamy. In a separate bowl, whip the egg whites until they are stiff",
+      "Remove the gelatine leaves from the water and squeeze out any excess moisture, then add to a bowl along with the coffee, coffee liqueur and the hot water. Mix well until the gelatine has dissolved completely",
+      "Combine the coffee mixture with the egg yolks, then fold in the beaten egg whites and whipped cream, alternating between the two, using a large metal spoon to gently fold them in together",
+      "Spoon the mousse into small glass bowls and allow to set in the fridge for at least 1 hour. Top with double cream and chocolate sprinkles to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "free-range, separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "Tbsp",
+        "notes": "mixed with 2 tbsp hot water to make a paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped until stiff",
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sprinkles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0929a0041eb259e1de0d110a2fc55051b28372a5114bdb8991a82ab310b06ab",
+    "lineage_hash": "0dc683f7878fb28544c88545055983fe7e74f5b39382a82d0964e800d6370025"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-mousse-recipe",
+    "fetchedAt": "2026-08-03T14:09:03.538Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Coconut Curry Cod",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the Cod: Pat the cod dry and season with salt, pepper, all-purpose, garlic powder, and dried thyme. Rub it all in gently and set aside.",
+      "Sauté the Base: In a large frying pan, heat a drizzle of olive oil over medium heat. Add onions, garlic, scotch bonnet, ginger and bell peppers and cook for 2–3 minutes until soft.",
+      "Add the Curry & Coconut: Pour in the coconut milk and mix well. Let it simmer for 5 minutes until it thickens slightly. Add curry powder, stir, and cook it for 30 seconds to bring out the aroma.",
+      "Cook the Cod: Gently place the seasoned cod into the sauce. Spoon the curry over the fish, cover, and let it simmer on low for 8–10 minutes, or until the fish is tender and flaky.",
+      "Serve It Up: Dish it out over some fluffy rice. Make sure yuh pour plenty of that rich curry sauce pon top!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillets",
+        "unit": null,
+        "notes": "cut in two",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, or use ground if dat’s what yuh have",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "adjust to your heat level, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Bell Peppers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3d3d664320c0484e6e0fb5f0d01094713ca2b937b7fd71f1980476ea798a4fa",
+    "lineage_hash": "0154825d0c53ae79e50f33aba6142e29900cd77b967bf7c381983524fc8ef532"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/coconut-curry-cod/",
+    "fetchedAt": "2026-09-30T17:43:17.716Z"
+  },
+  "rawSource": "https://originalflava.com/meals/coconut-curry-cod/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

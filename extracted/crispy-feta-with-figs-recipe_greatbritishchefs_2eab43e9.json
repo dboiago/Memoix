@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Crispy Feta with Figs",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add a generous glug of olive oil to a saucepan and place over a medium heat. Tip in the onions, then fry for around 10 minutes, stirring regularly, until browned and caramelised. Remove from the heat, then mix in the za’atar, vinegar and a pinch of salt. Set aside",
+      "For the white wine dressing, add the wine, sugar and coriander seeds to a pan and place over a medium heat. Bring to a simmer then leave to reduce by about a third until syrupy",
+      "Quarter the figs, then toss them in the warm dressing, ensuring they’re well coated. Add the vinegar, then set aside",
+      "Cut the feta into 8 thick slices. Set up a breadcrumbing station with the flour, egg and breadcrumbs in separate bowls. Dust each piece of feta in the flour, then cover in egg, then cover in breadcrumbs, ensuring they are fully coated. Set aside on a tray",
+      "Bring a deep-fat fryer or deep pan of vegetable oil to 180°C. Deep-fry the feta for 2-3 minutes until golden brown, then drain on kitchen paper",
+      "Dress the mixed herbs in the olive oil, vinegar and a pinch of salt",
+      "To serve, place 2 pieces of feta on each plate. Add 3 dressed fig quarters to each plate, drizzling over some of the dressing. Add a few small piles of the onions, then finish with the dressed herbs and a scattering of pistachios"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Za'atar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "Tbsp",
+        "notes": "or any other vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "lightly toasted and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": null,
+        "notes": "you may need 2 blocks of regular feta as they are smaller, ideally tinned Turkish feta",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mixed Herbs",
+        "unit": null,
+        "notes": "such as parsley, tarragon, chives, thyme and mint",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pistachio Nuts",
+        "unit": null,
+        "notes": "lightly toasted and blitzed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d0a62d2a5c876d3677c1e4f39c75be4dd56fc63b7d7995e014fc585647ee998",
+    "lineage_hash": "630aaf3686a99bef805b9158b22261831c1772dd6a97c5f9e673fc0ecda64a0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-feta-figs-recipe",
+    "fetchedAt": "2026-08-02T21:42:50.034Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-feta-figs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

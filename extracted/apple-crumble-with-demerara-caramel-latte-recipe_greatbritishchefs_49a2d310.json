@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Apple Crumble With Demerara Caramel Latte",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190°C / 170°C fan",
+      "For the filling, mix the apples, orange zest and juice, cinnamon and sugar. Tip into a 22 cm round dish or rectangular casserole baking dish",
+      "For the topping, mix together the flour, oats, a pinch of salt, light brown sugar and butter. Using your fingertips, rub the butter into flour until you have a bread crumb consistency. Squeeze handfuls of the crumble so it forms clusters",
+      "Sprinkle the crumble on top of the apple mixture then sprinkle over the demerara sugar. Bake for 40–45 minutes until the crumble is golden and apples are cooked through. This is best served hot alongside ice cream or custard",
+      "For each coffee, mix the caramel, demerara, espresso, and cream together in a mug. Top with the hot milk. Finish with whipped cream and more caramel if you like"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dessert Apples",
+        "unit": "g",
+        "notes": "about 5-6, peeled, cored and chopped into 2 cm chunks",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cold and cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel",
+        "unit": "tsp",
+        "notes": "plus extra to serve",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shots of Espresso",
+        "unit": null,
+        "notes": "about 60ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "167fb1d40a383f0f6aedd8442c4d5f94649d262e8ee2d2dcae7ec670aa8aa69d",
+    "lineage_hash": "d1c38d5b104b1516336632d3ff3d32044d052ff43c6c50a589b77ef889919282"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-crumble-demerara-caramel-latte-recipe",
+    "fetchedAt": "2026-08-02T09:57:59.382Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-crumble-demerara-caramel-latte-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

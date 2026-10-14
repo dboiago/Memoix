@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Blueberry Fruit Tart (Obstkuchen)",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 350°F.",
+      "Mix dry ingredients together.",
+      "Blend in butter. Add water and mix well.",
+      "Roll out to ¼ inch thickness to fit in a well-greased 9x13-inch baking pan. Make sure you go up the sides of the pan with the dough to hold in the liquid filling.",
+      "Arrange fruit on top of dough.",
+      "Sprinkle fruit lightly with sugar.",
+      "Mix all filling ingredients together, adding just enough flour to make a thin batter.",
+      "Pour evenly over the sugared fruit.",
+      "Bake at 350°F for 30 to 40 minutes or until golden brown.",
+      "Shut off oven and leave tart in oven for about another 10 minutes.",
+      "Dipping a clean knife in the center of the tart should come out clean."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "all-purpose",
+        "amount": "3¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit (fresh, Frozen) Blueberries",
+        "unit": "C",
+        "notes": "raspberries, cherries, plums, or rhubarb",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Granulated Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd44275f3bb11ede2971d1fc4618f3b85448038c569675ec7c1a36b9155ba0b4",
+    "lineage_hash": "c9b74ae9c5120cb0964701dcce2b2a3c795b0717c960cd350edbbcb6ebd917c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/fruit-tart-recipe.html",
+    "fetchedAt": "2026-09-25T21:00:18.093Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/fruit-tart-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

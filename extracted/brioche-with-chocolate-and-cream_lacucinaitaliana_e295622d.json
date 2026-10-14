@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Brioche with Chocolate and Cream",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, combine the egg yolks, granulated sugar, and corn starch. Heat the milk with 1 1/2 tablespoons of cream, then pour it over the egg yolks and mix quickly; bring everything over low heat and continue to stir for a few minutes, until you obtain a smooth crème anglaise thick enough to coat a spoon once lifted out of the mixture.",
+      "Remove it from the heat and melt in the chopped chocolate, then transfer the creme into a bowl, seal with plastic wrap, and chill in the refrigerator for 1 hour. Prepare a mixture of 4 tablespoons of Maraschino liqueur and 4 tablespoons of water. Cut the brioche into cubes and brush them with the liqueur mixture.",
+      "Whip the rest of the cream with 1 tablespoon of powdered sugar, then incorporate the sour cream. Distribute some of the brioche into 4 glasses, cover it with a bit of the chocolate crème, then continue adding layers of brioche and whipped cream until you use up all the ingredients. Top with 3 chopped raspberries each and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brioche Loaf",
+        "unit": "lb",
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ffe668b7905c3a297b3ee7601441e4a3de9aed5b9cc7c67e30750cdf835c7d1",
+    "lineage_hash": "d639f2d216d292ff87b185487fd2fb44f39f1b9ad6496c345c4926b1d216b2a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/brioche-with-chocolate-and-cream",
+    "fetchedAt": "2026-08-02T22:20:15.304Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/brioche-with-chocolate-and-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

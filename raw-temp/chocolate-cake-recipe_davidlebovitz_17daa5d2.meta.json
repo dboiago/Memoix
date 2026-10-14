@@ -1,0 +1,43 @@
+{
+  "url": "https://www.davidlebovitz.com/shf-27-chocolat-1/",
+  "slug": "chocolate-cake-recipe_davidlebovitz_17daa5d2",
+  "title": "Chocolate cake recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T22:50:56.067Z",
+  "ldName": "Chocolate Idiot Cake",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "10 ounces (290gr) bittersweet or semisweet chocolate (coarsely chopped)",
+    "7 ounces (200gr) butter (salted or unsalted, cut into pieces)",
+    "5  large eggs (at room temperature)",
+    "1 cup (200gr) sugar",
+    "unsweetened cocoa powder (for preparing the cake pan)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350ºF (175ºC).",
+    "Butter a 9-inch (23cm) springform pan and dust it with cocoa powder, tapping out any excess. Wrap the outside with aluminum foil, in several layers if necessary (see headnote), making sure it goes all the way up to the outer rim.",
+    "Melt the chocolate and butter in a double boiler (or microwave), stirring occasionally, until smooth. Remove from heat.",
+    "In a large bowl, whisk together the eggs and sugar, then whisk in the melted chocolate mixture until smooth.",
+    "Pour the batter into the prepared springform pan and cover the top of the cake pan snugly with a sheet of foil. Put the springform pan into a larger baking pan, such as a roasting pan, and add enough hot water to the baking pan to reach halfway up to the outside of the cake pan.",
+    "Bake the cake for about 1 hour and 15 minutes. It should feels just set in the center, like quivering chocolate pudding. If you gently touch the center, your finger should come away almost clean.",
+    "Lift the cake pan from the water bath and remove the foil. Let cake cool completely on a cooling rack.",
+    "When cool, serve thin wedges of this very rich cake at room temperature, with crème anglaise, ice cream, or whipped cream. It could also be served with a drizzle of chocolate sauce."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "10 ounces (290gr) bittersweet or semisweet chocolate, coarsely chopped",
+    "7 ounces (200gr) butter, salted or unsalted, cut into pieces",
+    "5 large eggs, at room temperature",
+    "1 cup (200gr) sugar",
+    "unsweetened cocoa powder, for preparing the cake pan"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

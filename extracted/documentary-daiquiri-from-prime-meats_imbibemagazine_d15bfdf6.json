@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Documentary Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a coupe with a light rinse of Branca Menta. Shake the rum, lime and simple syrup in a shaker with ice. Strain into the prepared coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": "Galli uses El Dorado 3 Year",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Branca Menta",
+        "unit": null,
+        "notes": "to rinse",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec0ab49efe7011b9152de7487b767b2d3762dbe4108287e111078347d55c9bc1",
+    "lineage_hash": "5f0d328c611c25823d9a45987f2bc2f4f8148b0c53e807b881b786f59aa6ea79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/documentary-daiquiri-from-prime-meats/",
+    "fetchedAt": "2026-08-04T00:57:37.392Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/documentary-daiquiri-from-prime-meats/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

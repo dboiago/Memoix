@@ -1,0 +1,28 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/berry-compote-recipe",
+  "slug": "berry-compote-recipe_greatbritishchefs_1a66afe4",
+  "title": "Berry Compote Recipe",
+  "byline": "by Robert Thompson",
+  "fetchedAt": "2026-08-03T17:15:00.599Z",
+  "ldName": "Berry compote",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "370g of frozen mixed berries",
+    "1 tbsp of brown sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Place the berries in a small saucepan over a low heat with the brown sugar and bring to a simmer",
+    "Cook the fruit for around 20-30 minutes until soft, then remove from the heat and allow to cool"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

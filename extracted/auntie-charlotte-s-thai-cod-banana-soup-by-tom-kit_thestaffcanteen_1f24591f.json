@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Auntie Charlotte’s Thai Cod & Banana Soup",
+    "time": "1 hr 5 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the soup, which can be stored in a covered container in the fridge for up to one day.",
+      "Heat a large heavy-based saucepan over a medium-high heat, then add the oil. When it is hot, add the spring onions and garlic and sauté for 1 minute.",
+      "Now add the bananas, chilli, fish sauce and sugar, and season with salt. Continue sautéing for a further minute, then stir in the coconut milk and vegetable stock and bring to the boil. Reduce the heat and leave to simmer for 5 minutes.",
+      "Transfer the soup to a blender or food processor and blitz until smooth. Pass the soup through a fine sieve, then leave to cool completely and chill if not using immediately.",
+      "When you’re ready to cook the fish, preheat the oven to 180°C Fan/200°C/Gas Mark 6. Pat the cod fillets dry and season with salt.",
+      "Heat a well-seasoned ovenproof sauté or frying pan over a medium-high heat, then add a splash of oil. When it is hot, add the cod, skin side down, and fry for 2 minutes.",
+      "Put the pan in the oven and roast the cod for 5 minutes, then gently turn the portions over and roast for a final minute, or until the flesh flakes easily.",
+      "To finish, reheat the soup and adjust the seasoning, if necessary. Thinly slice the uncooked banana just before serving.",
+      "Divide the soup among four bowls and add a cod portion to each, then garnish with the banana slices, chilli, spring onions and coriander. Add a squeeze of lime to each bowl and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Portions",
+        "unit": null,
+        "notes": "about 160g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groundnut Oil",
+        "unit": null,
+        "notes": "unskinned",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": "and freshly cracked black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groundnut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": "including the green shoots, sliced",
+        "amount": "50",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "large",
+        "notes": "fresh, deseeded and sliced",
+        "amount": "1",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": "ideally homemade",
+        "amount": "200",
+        "section": "For the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "fresh, deseeded and thinly sliced",
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "thinly sliced on the angle",
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0eeeccab0ea43d46c75dfab12bd5265cc566c00fb811ab685af4f31b151ab5f5",
+    "lineage_hash": "19ec8d8de02888a0334c2721bbcad177cac774d6491fe75bda6c3272b358fbba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Auntie-Charlotte’s-Thai-Cod---Banana-Soup-by-Tom-Kitchin",
+    "fetchedAt": "2026-08-03T13:48:07.957Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Auntie-Charlotte’s-Thai-Cod---Banana-Soup-by-Tom-Kitchin",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

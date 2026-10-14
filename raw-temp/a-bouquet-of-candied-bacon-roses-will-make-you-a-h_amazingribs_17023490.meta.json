@@ -1,0 +1,54 @@
+{
+  "url": "https://amazingribs.com/candied-bacon-roses/",
+  "slug": "a-bouquet-of-candied-bacon-roses-will-make-you-a-h_amazingribs_17023490",
+  "title": "A Bouquet Of Candied Bacon Roses Will Make You A Hero",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T03:00:25.972Z",
+  "ldName": "Candied Bacon Roses Recipe",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6",
+    "6 2 slices per serving"
+  ],
+  "ldCuisine": "American, Southern",
+  "ldCategory": "Appetizer, Snack",
+  "ldKeywords": "bacon, brown sugar",
+  "ldIngredientsRaw": [
+    "1 pound thick-cut bacon",
+    "2 to 3 tablespoons agave syrup",
+    "1/4 cup light brown sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Fire up. You can cook the bacon roses on a smoker or grill. I usually grill them. Set up the grill for 2-zone cooking with the indirect side at about 300°F (162.8°C) to help crisp the bacon. If you wish, add wood to the direct side to create smoke. Use a lot of smoke.",
+    "Prep the bacon. Lay the bacon slices on a parchment covered sheet pan and brush the top side of the slices with agave syrup. Sprinkle the brown sugar over the slices and use the pastry brush to create an even coating of agave syrup and brown sugar over the slices.",
+    "Flip the slices over. Starting at one end of each, begin rolling each slice in to a tight spiral. When you get to the end, insert one toothpick through the side each spiral/rose to keep the outer end of the slice in place.",
+    "Cook. Place the bacon spirals/roses on the indirect side of the grill or smoker as far from the heat as possible. Cover the grill and allow the bacon to cook until firm and nicely browned, approximately 30 minutes. Remove the bacon spirals from the grill and set aside.",
+    "Assemble. Remove the flowers from the flower bouquet, leaving only the stems and leaves. Set the bouquet in a vase and impale one bacon spiral/rose on the end of each stem. If the bacon slides down the stem a bit, use the wire on the stem to secure the bacon on the stem. You can also use green florist tape to tape the bottom of the bacon to the stem.",
+    "Serve. Present the candied bacon bouquet to your special someone and watch them smile!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 slices",
+    "calories": "372 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "10 g",
+    "fatContent": "30 g",
+    "saturatedFatContent": "10 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "50 mg",
+    "sodiumContent": "503 mg",
+    "fiberContent": "0.01 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "18 g"
+  },
+  "htmlIngredientLines": [
+    "1 pound thick-cut bacon",
+    "2 to 3 tablespoons agave syrup",
+    "1/4 cup light brown sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

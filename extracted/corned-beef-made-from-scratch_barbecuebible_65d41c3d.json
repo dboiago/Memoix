@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Corned Beef Made-From-Scratch",
+    "time": "8 days 2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the brine: Combine the hot water, salt, brown sugar, whiskey, pickling spice, ginger, and curing salt in a nonreactive stockpot. Bring to a boil on the stovetop over high heat. Let cool to room temperature, then stir in the ice water and whiskey. Let cool to room temperature.",
+      "Meanwhile, trim the brisket, leaving a 1/4-inch layer of fat.",
+      "Place the brisket in one of the resealable plastic bags. Add the brine, seal the bag, and place it in another resealable plastic bag in a baking dish to catch any potential leaks.",
+      "Brine the corned beef in the refrigerator for 8 days, turning it daily.",
+      "Drain the brisket in a colander, discarding the brine. Soak the meat in fresh cold water for 30 minutes, then drain again.",
+      "Heat your pellet grill or oven to 250 degrees. If using a gas or charcoal grill, set up for indirect grilling and heat to 250 degrees,",
+      "Place the corned beef in a dutch oven with water to cover by 3 inches. Bring the meat to a boil over medium-high heat. Using a ladle, skim off any foam that rises to the surface.",
+      "Pin the bay leaf to one of the onion quarters with a clove. Add the onion to brisket pot with the carrots and celery. Bring the mixture to a simmer.",
+      "Tightly cover the dutch oven and place it in the grill or oven. Braise the corned beef until very tender (test it by inserting a chopstick—it should pierce the meat easily), 2-1/2 to 3 hours.",
+      "Once the corned beef is cooked, transfer it to a welled cutting board. You can slice it (1/4-inch thick slices across the grain) and serve it hot. Or let it cool to room temperature, then refrigerate it until cold (preferably overnight). At this point, put it on a meat slicer (if you have one) or slice paper-thin by hand.",
+      "Serve hot corned beef with boiled potatoes and cabbage. Serve cold corned beef thinly sliced on rye bread with mustard. Or use it to make the Double Down Reuben Sandwich or Corned Beef Hash Just replace Pastrami with Corned Beef."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "kosher or sea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "light or dark—your choice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickling Spice",
+        "unit": "Tbsp",
+        "notes": "see below, or use your favorite commercial brand",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prague Powder",
+        "unit": "Tbsp",
+        "notes": "pink curing salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Irish Whiskey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bc748c415fa7548a5009a7fbe44fff84046bc0851b8654040f644ae56e2c74c",
+    "lineage_hash": "fcd26afa387e25e596fed07747500871be295dd623a969198a85c019e30b0cb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/corned-beef-made-from-scratch/",
+    "fetchedAt": "2026-08-03T09:55:51.385Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/corned-beef-made-from-scratch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

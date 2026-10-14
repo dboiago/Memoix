@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Camarones a la Mexicana",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": "7",
+      "fatContent": "10",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Place shrimp on paper towels to dry until needed.",
+      "Combine paprika, salt, pepper, and garlic in a small bowl.",
+      "Place shrimp in a large bowl. Pour spices and garlic over shrimp.",
+      "Heat large skillet on medium-high heat until almost smoking. Add 2 tablespoons butter.",
+      "When the pan is nice and hot, add the shrimp and spread out evenly. The shrimp will cook quickly, so turn over after 1 to 2 minutes on each side.",
+      "Remove the shrimp from the pan.",
+      "To the same pan add additional tablespoon of butter.",
+      "Add diced onion and sauté for 2 minutes.",
+      "Add the tomatoes and serrano and cook for 2 to 3 minutes.",
+      "Add the shrimp back in, along with the fresh lime juice and cilantro. Toss to combine just until the shrimp are warm.",
+      "Remove from heat and serve warm. Serve over rice or with crusty bread or tortillas for tacos."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Raw Shrimp",
+        "unit": "lb",
+        "notes": "peeled and deveined",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "or olive oil, divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano",
+        "unit": null,
+        "notes": "alt: jalapeño, diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1df26d7d83f1d29f5fd045a7ef6592b10c3a80ef8731f21ef5efe66bfabb3c37",
+    "lineage_hash": "df929f6af84e48fd060bb832a97e922c996ec07fb30df78c35f93b7217d9eff2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/camarones-a-la-mexicana/",
+    "fetchedAt": "2026-08-02T11:12:00.845Z"
+  },
+  "rawSource": "https://muybuenoblog.com/camarones-a-la-mexicana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

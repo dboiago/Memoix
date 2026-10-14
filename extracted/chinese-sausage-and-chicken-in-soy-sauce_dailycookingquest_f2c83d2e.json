@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Chinese Sausage and Chicken in Soy Sauce",
+    "time": "8 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare Chinese sausage: Steam Chinese sausages in a steamer over medium-high heat for 5 minutes. Remove the sausages from the steamer and cut into thin slices diagonally.",
+      "Prepare shiitake mushrooms: Soak dried shiitake mushrooms in cold water overnight until soft and rehydrated. Gently squeeze the soaked mushrooms. Use a sharp knife to cut and discard the stems, then cut the mushroom caps into thin slices. Reserve the soaking liquid for the sauce.",
+      "Prepare the sauce: Mix 1⁄4 cup water, 1⁄4 cup shiitake soaking liquid, 3 tablespoons dark soy sauce, 1 tablespoon sugar, and 1 teaspoon ground white pepper.",
+      "Heat oil in a wok over medium-high heat. Sauté garlic for 2 minutes or until fragrant.",
+      "Add Chinese sausages and cook for 30 seconds, then add chicken and mushrooms and cook until chicken is no longer pink.",
+      "Pour the sauce into the wok and bring to a boil. Reduce the heat and simmer for 10-15 minutes, or until the chicken is fully cooked and the sauce has reduced.",
+      "Turn off the heat and stir in half of the scallions and mix well.",
+      "Transfer the dish to a serving plate. Garnish with the remaining scallions. Serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Sausages",
+        "unit": null,
+        "notes": "200 gram / 7 oz, Chinese: 腊肠 - lap cheong",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(40 Gram / 1.5 Oz) Dried Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "600 gram / 20 oz, boneless, skinless, cut into cubes",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Soaking Liquid",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper/ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e538cf6159f2420be5f4cb4bd49616d49d22545f27732a0ac2072a41348ce34e",
+    "lineage_hash": "3d61741f1196e8aa52e28bb304b5529a7afed93e645d79f06713f217378299ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chinese-sausage-and-chicken-in-soy-sauce.html",
+    "fetchedAt": "2026-08-01T21:09:40.344Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chinese-sausage-and-chicken-in-soy-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

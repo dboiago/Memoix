@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Bells Will Be Ringing Hot Toddy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Warm a serving cup by rinsing with hot water. Add ingredients to the glass and stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "oz",
+        "notes": "or 2 pieces of fresh ginger muddled",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d1677e17f834133d1b5a430426e1357e08eaee749e63675a091a9e3531d9f0b",
+    "lineage_hash": "9ee330a291bd5ee18fa1201f028c8ee8a03730c3c23ac80988393f249e5d212d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bells-will-be-ringing-cocktail/",
+    "fetchedAt": "2026-08-03T18:28:49.835Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bells-will-be-ringing-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

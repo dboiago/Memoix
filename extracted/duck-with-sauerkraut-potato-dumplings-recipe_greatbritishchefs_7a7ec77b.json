@@ -1,0 +1,414 @@
+{
+  "recipe": {
+    "name": "Duck with Sauerkraut Potato Dumplings",
+    "time": "2 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "This recipe requires a few days of advanced planning, as the duck needs brining for 24 hours and then drying for 24 hours before it goes into the smoker. Few people are lucky enough to have a dedicated cold-smoker at home, but if you have a barbecue with a lid you can buy a cheap piece of kit that will slowly burn wood shavings, turning your barbecue into a cold-smoking chamber. You can skip the smoking process and still get a very tasty plate of food at the end, but do brine the bird if you can as it will ensure moist, perfectly seasoned meat throughout",
+      "Trim away any excess fat from the duck, then pour the water and salt into a container large enough to hold the crown, stirring until the salt has dissolved. Score the skin of the bird and place it in the container, then cover and keep in the fridge or a cold place for 24 hours",
+      "At this point, you can make the sauce, then keep it in the fridge until needed. (You could also make it tomorrow, while the duck dries out). You'll probably end up with more sauce than you need for this recipe, but it will keep for a few days in the fridge or can be frozen. Pour the wine into a large stockpot or saucepan and bring to a simmer, then reduce by half",
+      "Meanwhile, melt the butter in a large frying pan over a medium heat, then caramelise the reserved wings, wishbone and back of the duck until golden. Drain away most of the butter, then add the vegetables and mushrooms and continue cooking until softened and beginning to brown",
+      "Transfer the contents of the frying pan into the pan with the reduced wine, then add the bouquet garni, chicken stock and cream. Bring to the boil, skimming any scum that rises to the surface, then simmer for 30 minutes",
+      "Pass the sauce through a fine sieve into a clean pan and add the honey, vinegar and five-spice. Taste for seasoning, then if necessary continue simmering until thickened slightly – you can use a few teaspoons of arrowroot mixed with a tablespoon of water to help this process along. Once you’re happy with the consistency, cool and chill in the fridge until needed",
+      "The next day, remove the duck crown from the brine and pat dry. Return to the fridge uncovered to dry out for 24 hours",
+      "Once the duck has been brined and dried, set up a cold smoker (or your barbecue with wood shavings in the bottom) and smoke the duck for 4 hours",
+      "While the duck smokes, preheat an oven to 180°C/gas mark 4. Wash the potatoes and place in the oven to bake until fully cooked (around 1 hour). Once soft in the middle, halve the potatoes and scoop out the flesh, discarding the skins. Weigh out 400g of the flesh and pass through a potato ricer, mixing with the potato flour. Mix in the egg yolk and season with salt, then continue to mix until it comes together like a dough. It should be moist and pliable. Wrap the dough in cling film and place in the fridge to cool",
+      "To make the glaze, place all the ingredients in a saucepan and bring to the boil. Continue to simmer until it lightly reduces to a sticky consistency. Once you’re happy with the consistency, set aside",
+      "After the duck has been cold-smoking for 4 hours, carve off the legs and trim the crown of any excess fat. Set both aside",
+      "For the dumpling filling, heat the oven to 160°C/gas mark 3. Lay half the sauerkraut in the bottom of a small, deep roasting tray, then chop the rehydrated porcini mushrooms (reserving the liquid) and scatter half over the top with half the onion. Place the duck legs on top, season with black pepper and top with the remaining sauerkraut, onion and mushrooms. Pour in the mushroom soaking liquid and chicken stock, then cover tightly with foil. Roast in the oven for about 2 hours, until the meat is completely tender, then leave to cool",
+      "Once the mixture is cool, remove the bones and skin from the duck legs then shred or finely chop the meat and place in a bowl. Strain the sauerkraut mixture, reserving the liquid, then mix the sauerkraut into the duck meat. Stir in the chopped parsley, add a little of the reserved stock to moisten the mixture, then taste for seasoning",
+      "Now it’s time to make the dumplings. Diving the dumpling dough into equal balls (roughly 50g each), then flatten them into discs. Press around 30g of the filling into a tight ball and place into the centre of each disc, then wrap the dough up and around it, ensuring it is completely covered. Roll into balls, then blanch in boiling salted water for around 2 minutes. Drain, then set aside to finish cooking in the sauce later. (At this point you can also chill or freeze the dumplings, if you want to make them in advance)",
+      "Preheat the oven to 180°C/gas mark 4. Line a roasting tray with baking paper and drizzle with oil. Place the halved onions, cut-side down, in a single layer on the tray, then season with salt and scatter the thyme sprigs over the top. Cover with foil, then place in the oven for 25 minutes. Note that the onions can also be cooked in advance if desired, then reheated and finished in the oven with the vinegar",
+      "After the onions have gone into the oven, place an ovenproof frying pan over a high heat. Season the duck crown with salt and stuff the cavity with the garlic, rosemary and thyme sprigs. Brush with a little oil then seal in the pan breast-side down until for a few minutes. Stick a thermometer probe into the thickest part of the duck, then transfer to the oven with the onions and cook for around 30-45 minutes, or until the internal temperature reaches 55°C. Brush the duck with the glaze a few times during cooking",
+      "After 25 minutes, remove the foil from the onions and turn them over – they should be nicely coloured and lightly charred. Deglaze with the vinegar and return to the oven to finish cooking through",
+      "Once the duck has reached 55°C, remove from the oven and place on a board to rest for at least 15 minutes (reserve the juices and fat in the bottom of the pan). Meanwhile, bring the duck sauce to a simmer",
+      "Place the dumplings in the simmering sauce, turn the heat down and leave to finish warming through. Meanwhile, stir-fry the hispi cabbage in the same pan you used to cook the duck, coating it in the duck fat and leftover glaze",
+      "To serve, sprinkle a few chives and sesame seeds over the duck, then carve each breast into 3 slices lengthways and place on the plates. Add an onion half alongside (removing the peel and any roots), then a spoonful of the hispi cabbage. Lift the dumplings out of the sauce and sprinkle with the remaining chives, then divide between plates. Pour a little of the remaining sauce onto the plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": null,
+        "notes": "wings, wishbone and back removed to create a crown with the legs still attached (reserve all the trimmings for the sauce) – you can ask your butcher to do this for you",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "plus extra for seasoning",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arrowroot",
+        "unit": null,
+        "notes": "or cornflour, to thicken (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porcini Mushrooms",
+        "unit": "g",
+        "notes": "reserve the liquid, dried, soaked in boiling water for 20 minutes",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauerkraut",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "finely chopped, to garnish",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hispi Cabbage",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "halved and unpeeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1841054975bf239810525d966f3dfb5bd7cf9a7a35594e9161d5b2936c427a3",
+    "lineage_hash": "c4b7cc77c916862bb86b72d5d33de4b1e3cc5456fdbc548a01f916b95323bc65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-potato-dumpling-recipe",
+    "fetchedAt": "2026-08-03T03:09:09.593Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-potato-dumpling-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://thewoksoflife.com/chinese-new-year-snacks-sesame-twists/",
+  "slug": "chinese-sesame-twists-zha-ma-ye-a-chinese-new-year_thewoksoflife_21771188",
+  "title": "Chinese Sesame Twists (Zha Ma Ye - 炸麻叶), a Chinese New Year Snack",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T08:55:03.415Z",
+  "ldName": "Chinese Sesame Twists (Zha Ma Ye - 炸麻叶)",
+  "ldTime": "PT150M",
+  "ldPrepTime": "PT105M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizers and Snacks",
+  "ldKeywords": "chinese new year snack, sesame twists, zha ma ye",
+  "ldIngredientsRaw": [
+    "1 1/2 cups all-purpose flour",
+    "1 tablespoon vegetable oil ((plus more for frying))",
+    "2 tablespoons sesame seeds ((black or white, preferably toasted))",
+    "2 teaspoons granulated sugar",
+    "1/2 teaspoon salt",
+    "1  large egg",
+    "4-5 tablespoons water"
+  ],
+  "ldInstructionsRaw": [
+    "Preparing the dough:",
+    "To make a twisted shape:",
+    "To make a fan shape:",
+    "Frying the twists:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "204 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "4 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "20 mg",
+    "sodiumContent": "203 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 1/2 cups all-purpose flour",
+    "▢ 1 tablespoon vegetable oil (plus more for frying)",
+    "▢ 2 tablespoons sesame seeds (black or white, preferably toasted)",
+    "▢ 2 teaspoons granulated sugar",
+    "▢ 1/2 teaspoon salt",
+    "▢ 1 large egg",
+    "▢ 4-5 tablespoons water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

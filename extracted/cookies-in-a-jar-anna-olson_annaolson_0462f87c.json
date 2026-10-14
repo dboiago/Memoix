@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Cookies in a Jar",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have ready a 4-cup (1 L) mason jar with a sealable lid. With a paring knife, split the vanilla bean open and scrape out the seeds into a small bowl. Add the sugar to the seeds and rub together to infuse the flavour.",
+      "Sift the flour, baking soda, cream of tartar and salt on top of the sugar and whisk to combine. Use a canning funnel to pour half of this mixture into the mason jar. Add half of the crushed candy canes and then top with the remaining dry mixture and crushed candy cane.",
+      "If there is a gap at the top of the jar, crush a piece of coloured tissue paper and arrange it over the ingredients to keep everything in place. Seal the jar and include a tag with the following baking instructions:",
+      "Stir ¾ cup (175 g) of unsalted butter, melted, and 1 egg in a mixing bowl. Stir in the entire contents of the jar until blended. Drop spoonfuls of the batter onto 2 parchment-lined baking trays, chill for 30 minutes and bake for 10 to 12 minutes at 350°F (180°C), until lightly browned at the edges. Cool on the tray and dive in!",
+      "Have ready a 4-cup (1 L) mason jar with a sealable lid. Stir together the flour, both sugars, cinnamon, ginger and baking soda. Use a canning funnel to pour the mixture into the jar. Place the chocolate chips in a layer on top, followed by the cranberries and then the oats.",
+      "Seal the jar and include a tag with the following baking instructions:",
+      "Pour this mix into a large bowl and stir in 1/2 cup (115 g) of unsalted butter, melted, and 1 egg until the mixture comes together. Drop spoonfuls of the batter onto 2 parchment-lined baking trays and bake at 375°F (190°C) for about 10 minutes until lightly browned. Enjoy warm with a glass of cold milk.",
+      "Have ready a 4-cup (1 L) mason jar with a sealable lid. Sift the flour, baking powder and salt together and spoon this mixture into the mason jar. Sift the cocoa powder and spoon it on top. In individual layers, add the brown sugar, then the granulated sugar, Skor bits and walnut (or pecan) pieces. Place a piece of parchment paper over the walnut pieces and spoon the chopped chocolate on top.",
+      "Seal the jar and include a tag with the following baking instructions:",
+      "Melt the chocolate with 6 Tbsp (90 g) of unsalted butter and stir in the contents of the jar along with 2 eggs until combined. Drop spoonfuls of the batter onto 2 parchment-lined baking trays and bake at 350°F (180°C) for 11 to 12 minutes, until the cookies lose their shine. Cool on the trays before jumping in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Crushed Candy Canes",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Candy Cane Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "150 g",
+        "amount": "1",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": "2.5 g",
+        "amount": "½",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": "40 g, Dutch process or conventional",
+        "amount": "⅓",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "150 g",
+        "amount": "¾",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50 g",
+        "amount": "¼",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Skor Toffee Bits",
+        "unit": "C",
+        "notes": "120 g",
+        "amount": "¾",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Walnut",
+        "unit": "C",
+        "notes": "alt: pecan pieces, 75 g",
+        "amount": "¾",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "225 g",
+        "amount": "8",
+        "section": "Chocolate Toffee",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "110 g",
+        "amount": "¾",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": "115 g",
+        "amount": "⅔",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Dried Cranberries",
+        "unit": "C",
+        "notes": "85 g",
+        "amount": "⅔",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      },
+      {
+        "name": "Regular Rolled Oats",
+        "unit": "C",
+        "notes": "125 g, not instant",
+        "amount": "1¼",
+        "section": "Holiday Oatmeal",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0851eeeca86da6a567cc9fb1799b83b26e6ecaa03c4246c9f0ebc7833a927d64",
+    "lineage_hash": "3b71d638b4be93f7d7bd13c91d9fd0ac7c0161028b74c2d276232fdbf1778b59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cookies-in-a-jar-candy-cane-sugar-holiday-oatmeal-chocolate-toffee/",
+    "fetchedAt": "2026-08-01T20:22:11.769Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cookies-in-a-jar-candy-cane-sugar-holiday-oatmeal-chocolate-toffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

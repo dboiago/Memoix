@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Cuernitos de Nuez (Butter Pecan Cookies)",
+    "time": "27 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "85",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "50",
+      "carbohydrateContent": "4",
+      "fatContent": "4",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat oven to 350 degrees F.",
+      "In a medium bowl beat butter, sugar, and vanilla with an electric mixer until creamy.",
+      "Gradually, beat in flour, salt, and chopped pecans.",
+      "Cuernitos: take a generous tablespoon of dough and roll it into a log. Place it on the prepared cookie sheet lined with parchment paper and shape it into a crescent by pressing the edges and bending them slightly. Repeat until all the dough is used.",
+      "Balls: roll the dough by 2 teaspoonfuls between your palms into balls.",
+      "Arrange the cookies on a large baking sheet, spacing them 1/2 inch apart.",
+      "Bake for about 10 to 12 minutes or until slightly golden.",
+      "Cool the cookies for 5 minutes on the baking sheet.",
+      "While cookies are still warm, dust with confectioner’s sugar.",
+      "Dough can be prepared one day in advance. Keep dough in a tightly sealed container in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "853675ff6fe9d0d6f6d488e76ba28d431eb449006951642478b815b8c5350bfd",
+    "lineage_hash": "f948bd8a6b2ea605ee9345ede55ed3055ef9057b9021a38267cb8782743a1c22"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cuernitos-de-nuez-butter-pecan-cookies/",
+    "fetchedAt": "2026-08-01T19:05:43.702Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cuernitos-de-nuez-butter-pecan-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

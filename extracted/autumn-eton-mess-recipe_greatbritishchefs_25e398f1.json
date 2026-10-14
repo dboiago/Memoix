@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Autumn Eton mess",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the lemon curd, combine the lemon juice, sugar and eggs in a bowl. Set the bowl over a pan of gently simmering water and whisk continuously until a thick ribbon forms",
+      "Continue to whisk while slowly adding the butter in small amounts. Once the butter is completely incorporated into the mix, allow to cool slightly before transferring into a piping bag with a 1cm nozzle",
+      "For the poached pears, combine the tea, sugar and water in a pan and stir to dissolve. Place the pan over a medium heat and bring to a simmer. Remove from the heat and allow to infuse for 30 minutes",
+      "Peel, core and cut the pears into 4 wedges. Remove the tea bags and add the pears to the pan, reheat until simmering. Remove the pan from the heat and allow the pears to cool in the liquid. Store the pears in the liquid until required",
+      "For the meringue, whisk the egg whites, vanilla and a pinch of salt until medium peaks form. Slowly sprinkle in the sugar and continue to whisk until stiff and glossy",
+      "Preheat the oven to 90˚C. Line a baking tray with baking paper. Spread the meringue in a thin layer across the baking tray and place into the oven for 1 1/2 to 2 hours until lightly golden",
+      "Wash the blackberries and add half to a small pan with the sugar and 50ml of water. Warm the blackberries over a medium heat and gently crush until the mixture starts to boil",
+      "Remove from the heat and push through a fine strainer to remove the seeds. Cut the other punnet of blackberries in half, add the creme de mere and strained liquid and macerate the berries until required",
+      "Trim the stems from the figs and cut into 4 wedges. Dust with icing sugar and glaze with a blow torch (or under a hot grill) until a deep golden brown colour. Place on a baking tray and warm through in the oven for a few minutes",
+      "To arrange the Eton mess, place some of the blackberries at the base of each glass and pipe over the lemon curd to cover. Slice the pears finely and arrange on top of the curd",
+      "Next, crush the meringue and sprinkle over the pears. Top with the warm figs and a dusting of icing sugar. Serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds removed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Comice Pears",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Blackberries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Mure Blackberry Liqueur",
+        "unit": "dash",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab85d2e9abf4f2dc473bfa331980ee37131ad0a972400a4406a523af643d0455",
+    "lineage_hash": "03a2b308753592adf21eb434f68d87936215b1699bd9cd6ab4792de032b98f15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/autumn-eton-mess-recipe",
+    "fetchedAt": "2026-08-03T16:23:49.618Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/autumn-eton-mess-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

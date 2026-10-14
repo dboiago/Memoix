@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Crab Eggs Benedict",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the dish by making a reduction for the hollandaise. Place all of the hollandaise ingredients, except the egg yolks and butter, in a small pan and bring to the boil",
+      "Leave to simmer until the liquid has reduced by just over half. Strain through a fine sieve and set aside - discard the other ingredients",
+      "Whisk the brown crab meat into the mayonnaise until smooth, then add the white crab meat, a touch of lemon juice, and salt and pepper to taste. Mix well, check the seasoning and set aside until needed",
+      "Place the egg yolks for the hollandaise in a heatproof bowl and set over a pan of gently simmering water. Whisk the yolks until soft and fluffy and, while still whisking, slowly pour the melted butter into the yolks",
+      "When the mix has thickened, add a little of the reserved reduction to taste and check the seasoning. Remove the bowl from the pan of water, cover with cling film and set aside in a warm place",
+      "To poach the eggs, bring a medium saucepan of water to the boil with a pinch of salt and a dash of white wine vinegar. Crack each egg into a teacup and swirl the water round in the pan using a whisk",
+      "Gently pour in the eggs, poaching until they are cooked to your taste. Remove with a slotted spoon and drain on kitchen paper",
+      "Meanwhile, toast the English muffins until golden. Place the muffins onto plates and divide the crab mix between them. Top with the poached eggs, then spoon the hollandaise. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "free-range",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Muffins",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "072f57f479182e1303868c314b2b6f723d461dedd75a1b96d1975a86c715cc58",
+    "lineage_hash": "14ceeb350b78483653ba87aad814eec5b20dd043804a02835826347d2e130b50"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-benedict-recipe",
+    "fetchedAt": "2026-08-03T19:59:29.805Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-benedict-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

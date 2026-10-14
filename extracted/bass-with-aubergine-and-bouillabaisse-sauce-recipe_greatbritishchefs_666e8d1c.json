@@ -1,0 +1,306 @@
+{
+  "recipe": {
+    "name": "Bass with Aubergine and Bouillabaisse Sauce",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the bouillabaisse sauce. Place the bones in a saucepan with a drizzle of olive oil over a medium heat until lightly coloured. Add the fennel, shallot, carrot, leek, celery and garlic bulb and continue to cook until the vegetables soften (but do not allow to colour)",
+      "Add the tomato puree and cook for 2 minutes, stirring, then add the saffron, coriander, star anise, fennel seeds, thyme, bay lead and orange zest. Deglaze with the white wine, add the salt then pour in the stock. Bring the mixture to the boil, then reduce to a simmer and cook uncovered for 25 minutes",
+      "Meanwhile, light a barbecue and char the aubergine until completely collapsed and soft (you can also do this directly over the flame of a gas hob) – this should take around 20 minutes. Leave to cool",
+      "Once the sauce has finished simmering, strain it through a fine sieve into a clean pan, pushing the solids with a ladle to extract as much liquid as possible. Place the saucepan over a medium heat and reduce the sauce to a shiny, syrupy consistency",
+      "While the sauce is reducing, scrape the aubergine flesh from the charred skins into a blender. Add the rest of the ingredients for the puree and blitz until smooth. Set aside until ready to plate",
+      "For the garnish, slice 1 of the courgettes into 6 long portions and toss in olive oil. Season and lightly oil the tomatoes, then place on the barbecue (still on the vine) along with the courgettes and grill until the tomatoes are soft and the courgettes are tender (you can also do this in a pan). Once the courgette is cooked, season with salt and scatter with thyme leaves",
+      "While the vegetables are cooking, season the wild bass fillets. Pour a drizzle of olive oil into a hot frying pan and place the fish skin-side down. Cook for a few minutes, then flip and fry for a further minute or until just cooked",
+      "When ready to serve, peel the skins off the tomatoes and use a vegetable peeler to cut 12 thin ribbons of the raw courgette. Place a grilled piece of courgette on each place, then top with the bass. Roll the courgette ribbons into cylinders and place 2 on each plate. Add a spoonful of aubergine purée alongside the fish, then finish with 3 peeled tomatoes per plate and the bouillabaisse sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wild Sea Bass Fillets",
+        "unit": null,
+        "notes": "skin scored",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergine",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aleppo Chilli Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "on the vine",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d378a3c9829b18d2ac37c1623582c72f7729fe66469608f859513d71602346a4",
+    "lineage_hash": "005edc56a5e7bd3186bef4c14a45a304fc961bc109f8a20cc5c4a299fbfee6b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bass-aubergine-bouillabaisse-recipe",
+    "fetchedAt": "2026-08-03T06:21:59.753Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bass-aubergine-bouillabaisse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

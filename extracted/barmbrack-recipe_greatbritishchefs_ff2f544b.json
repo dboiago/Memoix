@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Barmbrack",
+    "time": "1 hr 15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The night before you plan to serve the loaf, heat the cider to a simmer and pour over the mixed dried fruits. Leave to steep overnight, or for 48 hours if you have time",
+      "Activate the yeast by combining it with the warm milk and 2 teaspoons of sugar. Set aside for 5–10 minutes",
+      "While the yeast gets going, sift the flour and spices and combine with the soft sugar. Make a well in the centre for the beaten egg, melted butter and activated yeast. Bring the wet and dry ingredients together to form a soft, supple dough and transfer to a lightly floured surface",
+      "Strain the fruit, discarding the unabsorbed cider or saving it for other culinary experiments!",
+      "Knead the dough gently for a few minutes until the dough starts to feel smooth, then begin to combine the strained fruit, a small handful at a time. Keep the surface well-floured and go gently while adding the fruit. You don’t want the dough to be too wet or to be forced to add too much extra flour. Keep softly kneading the dough and folding in the fruit until it is evenly distributed and the ball is smooth with a soft sheen",
+      "Put the dough in a lightly greased bowl and leave covered with a damp cloth to prove in a warm place for about an hour, or until it has doubled in size",
+      "Prepare a 2lb loaf tin by greasing with butter and covering with a thin dusting of flour",
+      "When the dough has completed its first prove, punch down and knead for a minute or so before re-shaping to fit your loaf tin, ensuring the top is smooth and any folds in the dough are at the bottom. Leave to rise in the tin for a further 30 minutes while preheating an oven to 200°C/gas mark 5",
+      "Apply an egg wash to the risen dough and place in the hot oven with a separate pan of hot water to create some steam. Bake for 30–35 minutes or until the loaf comes out clean and sounds hollow when you tap it. Leave to cool on a wire rack then slice and serve with or without butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "warm",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Cider",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e6c6da41cf31d1ee9da447e1dfefa3e09ceb9c7b6a41e9df0418beb3f5f99e0",
+    "lineage_hash": "c3f1ed5755faaf864c67b373a55af5ee52d48dcdb59c4143850b3c8075bdf1d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barmbrack-recipe",
+    "fetchedAt": "2026-08-03T05:20:48.963Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barmbrack-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

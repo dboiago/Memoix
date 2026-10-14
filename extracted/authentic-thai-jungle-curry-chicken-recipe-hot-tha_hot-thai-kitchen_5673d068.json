@@ -1,0 +1,286 @@
+{
+  "recipe": {
+    "name": "Thai Jungle Curry Chicken",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the quick-fix curry paste, grind grachai, lemongrass and green chilies until fine.",
+      "Add red curry paste.",
+      "Pound to mix well",
+      "Finished jungle curry paste can be used right away or frozen for a few months.",
+      "Saute the curry paste in oil until aromatic",
+      "Add the chicken thigh and toss to coat",
+      "Add the chicken stock.",
+      "Simmer for 15 mins until chicken is fork tender.",
+      "Add long beans, eggplant, baby corn, makrut lime leaves, fish sauce and sugar. Simmer a few minutes until veggies are cooked to your liking.",
+      "Once veggies are done, turn off the heat and add holy basil and bell pepper and stir to wilt.",
+      "Before serving, add the toasted rice powder.",
+      "Ready to serve with jasmine rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Curry Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": "Quick-Fix Jungle Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Thai Chilies",
+        "unit": null,
+        "notes": "or as many as you can take",
+        "amount": "3-5",
+        "section": "Quick-Fix Jungle Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Fingerroot (grachai)",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Quick-Fix Jungle Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "Tbsp",
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": "Quick-Fix Jungle Curry Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh",
+        "unit": "oz",
+        "notes": "boneless, skinless, cut into strips",
+        "amount": "12",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Long Beans",
+        "unit": "oz",
+        "notes": "2-inch pieces",
+        "amount": "4.2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Corn",
+        "unit": null,
+        "notes": "bite-sized pieces",
+        "amount": "8",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Eggplant",
+        "unit": null,
+        "notes": "cut in 4 or 6 wedges",
+        "amount": "4",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Stems Young Green Peppercorns",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Julienned Fingerroot (grachai)",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "¼",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Spur Chilies",
+        "unit": null,
+        "notes": "see note, julienned",
+        "amount": "2",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Holy Basil Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Rice Powder",
+        "unit": "Tbsp",
+        "notes": "see note",
+        "amount": "1½",
+        "section": "Jungle Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mild Dried Chilies",
+        "unit": "oz",
+        "notes": "such as guajillo or puya",
+        "amount": "0.7",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Green Thai Chilies",
+        "unit": null,
+        "notes": "or as many as you can handle",
+        "amount": "3-5",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Grain Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "bottom half only, thinly sliced",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Fingerroot (grachai)",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Zest",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Roots",
+        "unit": "tsp",
+        "notes": "alt: stems, finely chopped",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Shrimp Paste",
+        "unit": "tsp",
+        "notes": "gapi",
+        "amount": "1",
+        "section": "Jungle Curry Paste from Scratch",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01a425ccddfaa2e9de9cc65a5e229c0e09ce039651cbb2fb7488d930993bde95",
+    "lineage_hash": "71a5bbfbd625c7fe56b1e18ad15fc672bb734beec19444ff94a7861866b61f10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/jungle-curry/",
+    "fetchedAt": "2026-08-02T02:58:06.569Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/jungle-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Calcutta Christmas Fruitcake",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "331",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Chop dates, apricots, ginger, and orange peels into 1 cm chunks.",
+      "Put the chopped dates, apricots, ginger, and orange peels along with the raisins, and the tutti frutti into an airtight glass jar.",
+      "Pour 180 ml of dark rum (we are using Old Monk), or brandy, or whiskey or a mixture into the jar over the fruits.",
+      "Shut the jar and leave it in a cool, dark place for 20 days. Give the jar a mild shake every couple of days.",
+      "Grind the cloves, cinnamon, nutmeg, and allspice to a fine powder. Also grind up the almonds separately. Set these aside.",
+      "Zest an entire orange, making sure not to grate any of the white pith as it is bitter. Chop up the cashew and pistachio into 5 mm pieces.",
+      "Prepare the tin as explained above and set your oven to preheat at 150°C.",
+      "In a large mixing bowl, cream the butter until it is airy and pale. Add in the brown sugar and cream again.",
+      "Now whisk in the eggs, one at a time. Follow this with the ground almond, spice mix, and orange zest. Incorporate everything thoroughly. Get rid of your whisk; you won’t need it after this point.",
+      "Sift in the flour and fold it in using a rubber spatula. Make sure to not overmix the batter after you add the flour as the cake may turn chewy.",
+      "Add the chopped cashew and pistachio. Also add your rum-soaked dried fruits. The fruits should have absorbed all the alcohol, but if they contain excess liquid, strain and add just the fruits.",
+      "Mix everything until well combined, but don’t overwork the batter.",
+      "Spoon the batter into your prepared cake tin, pushing it into all the corners and leveling the top. Tap out any trapped air bubbles.",
+      "Place it in the preheated oven and bake for 3.5 hours, checking on it regularly after the first 2 hours. Your cake is done when a thermometer inserted in the centre registers a temperature of 95°C, or when a skewer comes out clean. Your cake should develop a rich brown colour.",
+      "Remove the cake from the oven and allow it to cool completely in the tin. This should take about 5 hours or so.",
+      "Feed the cake: This step is optional. Poke holes in the cake with a skewer. ‘Feed’ a spoon of rum, brandy, or whisky through the holes. You can do this once a week for as long as you want, until you are ready to cut the cake. Store it at room temperature wrapped in baking paper and aluminium foil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystallised Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange/mixed Peels",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum/whiskey/brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "softened; extra for greasing",
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Cinnamon",
+        "unit": "cm",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Allspice Berries",
+        "unit": null,
+        "notes": "optional",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eade2d64bcb49e861555c64a16d120d64532324ea91c42362dd78a3844cb965f",
+    "lineage_hash": "ef1501381d3cc819f1d084be276fb3962ebad743ddb144e6beaed0f59b3330db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/calcutta-christmas-fruitcake",
+    "fetchedAt": "2026-08-01T17:42:07.006Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/calcutta-christmas-fruitcake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

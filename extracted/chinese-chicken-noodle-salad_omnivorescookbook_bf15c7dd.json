@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Noodle Salad",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "330",
+      "carbohydrateContent": "26.2",
+      "fatContent": "16.6",
+      "proteinContent": "19.3"
+    },
+    "directions": [
+      "Chop the green onions into 2” (5 cm) sticks, reserving a small amount of the green part for garnishing. For garnishing, thinly slice the green onion into rounds.",
+      "Prepare a steamer by adding 2” (5 cm) water into the pot. Cover and heat over medium-high heat until boiling. Use a plate that can fit into your steamer rack. Spread the green onion sticks onto the plate to make a bed. Place the chicken breast on top. Sprinkle salt evenly over the chicken.",
+      "When steam comes out of the steamer, place the steamer rack with the chicken on top, and cover the steamer. Cook for 15 minutes. Test the chicken by using a thermometer inserted into the thickest part. It should read 165°F (73°C). Or insert a knife into the thickest part, and the juice should run clear. If the chicken is still pink inside, steam for another 5 minutes. Once done, transfer the chicken to a plate to cool.",
+      "Once the chicken is cooked, you can use the same pot of water to boil the noodles according to the package instructions. Once done, drain the noodles, rinse with tap water to stop cooking. Then drain again and set aside.",
+      "While cooking the chicken, combine the rest of the ingredients in a large bowl. Whisk to mix well.",
+      "Boil the noodles according to package instructions, until al dente. Drain the cooked noodles and rinse the noodles with cold tap water to stop cooking. Then transfer to a big bowl.",
+      "Once the chicken has cooled, transfer it onto a cutting board. Shred the chicken into thin slices using two forks.",
+      "To assemble, add the sauce into the cooked noodles. Toss to mix well.",
+      "To serve, transfer the noodles into individual serving bowls. Top with the shredded chicken, cucumber and green onion. Serve at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Total Small Boneless Skinless Chicken Breasts (or Thighs)",
+        "unit": null,
+        "notes": "1 lb / 450 g, *Footnote 1",
+        "amount": "2",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Thin Wheat Noodles",
+        "unit": "lb",
+        "notes": "450 g, *Footnote 2, fresh, or 14 oz (400 g dried noodles)",
+        "amount": "1",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "*Footnote 3, thinly sliced",
+        "amount": "½",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion for Garnish",
+        "unit": null,
+        "notes": "chopped (Optional)",
+        "amount": "0",
+        "section": "Chinese Chicken Noodle Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste",
+        "unit": "C",
+        "notes": "or unsweetened natural peanut butter",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": "or soy sauce",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (optional)",
+        "unit": "tsp",
+        "notes": "*Footnote 4",
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "or honey, or maple syrup",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil (or to Taste)",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1646da1a779396ce99195b57846fecd5007f54129ccb1c31ed9dac0d621f13fc",
+    "lineage_hash": "a8a8cec3993202405c511cb6303d8fda5ebac1d484cf13881bcf5f7aaf950ea2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-noodle-salad-with-garlicky-nutty-and-spciy-sauce/",
+    "fetchedAt": "2026-08-01T23:00:07.592Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-noodle-salad-with-garlicky-nutty-and-spciy-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

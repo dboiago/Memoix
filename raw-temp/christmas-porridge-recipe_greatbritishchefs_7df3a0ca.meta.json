@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/christmas-porridge-recipe",
+  "slug": "christmas-porridge-recipe_greatbritishchefs_7df3a0ca",
+  "title": "Christmas Porridge Recipe",
+  "byline": "by Josh Eggleton",
+  "fetchedAt": "2026-08-03T18:27:02.286Z",
+  "ldName": "Rudolph's breakfast",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Breakfast",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "200g of rolled porridge oats",
+    "400ml of milk",
+    "40g of honey",
+    "160g of half fat crème fraîche, plus extra for garnish",
+    "100g of grapes",
+    "1 banana, chopped",
+    "1 apple, roughly chopped",
+    "100g of dried cranberries",
+    "4 glacé cherries"
+  ],
+  "ldInstructionsRaw": [
+    "Place the porridge oats into a bowl and mix in the milk, honey and crème fraîche. Leave in the fridge to soak overnight (if it goes too thick, add a little more milk in the morning)",
+    "The next day, add some cut grapes, banana, dried cranberries, apple and a small dollop of crème fraîche",
+    "Divide the porridge into bowls and top with small dollops of crème fraîche. Place a cherry on top of each dollop to make Rudolph's nose, serve with a little extra milk if necessary"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

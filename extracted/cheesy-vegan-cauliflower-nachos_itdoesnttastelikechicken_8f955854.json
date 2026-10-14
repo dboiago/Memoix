@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Cheesy Vegan Cauliflower Nachos",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "479",
+      "carbohydrateContent": "47",
+      "fatContent": "22",
+      "proteinContent": "28"
+    },
+    "directions": [
+      "Preheat your oven to 450F (230C). Set aside two large baking sheets.",
+      "Add the cauliflower with all of the seasonings to a large bowl and toss well to combine and evenly coat the cauliflower.",
+      "Softening the cashews (optional): Softening the cashews first helps them blend. If you have a high-powered blender you can skip this step, but if not, this step is important to get a smooth and creamy cheese sauce. To soften the cashews add the cashews to a small pot, cover with water, and boil for about 10 minutes until the cashews are very tender. Drain and rinse cashews before using.",
+      "To make the nacho vegan nacho cheese: Add the cashews, water, tapioca starch, nutritional yeast, apple cider vinegar, salt, paprika, garlic powder, and turmeric to a blender. Blend until completely smooth. It will be a watery milk consistency but will thicken when cooked.",
+      "Pour the vegan nacho cheese mixture into a small saucepan and heat over medium-high heat, while stirring. As you stir it will start forming clumps, and then all of a sudden it will become a cheesy gooey mass of yumminess. This takes about 5 minutes. Set aside.",
+      "Once the cauliflower is roasted, pile up all of the roasted cauliflower onto just one baking sheet. Drizzle the nacho cheese sauce over top of the cauliflower, and sprinkle over the vegan chorizo or vegan bacon bits, black beans, and corn kernels (or any toppings you would like to be warmed). Return to the oven for another 5 - 8 minutes to heat through. Remove from the oven and top with the tomato, red onion, jalapeno, cilantro, and drizzle the vegan sour cream or vegan yogurt on top (or any toppings you choose). Serve right away."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "head",
+        "notes": "cut into florets",
+        "amount": "1",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cauliflower",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "softened if needed, see instructions",
+        "amount": "½",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "- 1 ½ Cups Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1¼",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "Tbsp",
+        "notes": "also called tapioca flour",
+        "amount": "2",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "vegan nacho cheese (or sub store-bought vegan cheese)",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Meat Crumbles",
+        "unit": "C",
+        "notes": "alt: vegan bacon bits, homemade or store-bought *see notes for recipe options",
+        "amount": "1",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Black Beans",
+        "unit": "C",
+        "notes": "(I used canned) drained and rinsed",
+        "amount": "1",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "C",
+        "notes": "frozen, thawed",
+        "amount": "1",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "fresh, chopped",
+        "amount": "¼",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Sour Cream",
+        "unit": "C",
+        "notes": "alt: plain vegan yogurt",
+        "amount": "¼",
+        "section": "toppings (optional, choose however many toppings you like)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4aa983c10c9adb6bc5fbbfdfc997b41b49870a89c3507131cee241494b601fa8",
+    "lineage_hash": "afb86b0c01613b1ed59b3f46618cccc64efe07e8fcc51fa8ac7cdf0c67b24fcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/cheesy-vegan-cauliflower-nachos/",
+    "fetchedAt": "2026-08-02T01:20:55.164Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/cheesy-vegan-cauliflower-nachos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

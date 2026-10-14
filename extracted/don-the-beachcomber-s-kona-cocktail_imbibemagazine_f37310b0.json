@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Don the Beachcomber's Kona Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a blender and blend on high for 20 seconds, or until pineapple has liquified. Strain through a medium-mesh strainer into a chilled glass, agitating as you strain to force as much liquid as possible into the glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gold Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "Tbsp",
+        "notes": "fresh, diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac4aef85d525315e30b568f23d04b2b1d28b53c42c3ad34a3ebdef5772dab221",
+    "lineage_hash": "2229f1c68eec825e3690df41b87b9823d4b2a4c6f29325932f3c03bb4f54a63a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/don-the-beachcombers-kona-cocktail/",
+    "fetchedAt": "2026-08-03T19:34:31.405Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/don-the-beachcombers-kona-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

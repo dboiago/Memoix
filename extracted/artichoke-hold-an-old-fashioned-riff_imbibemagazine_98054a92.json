@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Artichoke Hold",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together with ice in a mixing glass. Strain into an Old Fashioned glass over fresh ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d791b110f10b6732e0c426f9a68498f3d844567daa31c7ad86fc4cef5d27313",
+    "lineage_hash": "1109aa1a03b86ee06d1da932f0b2f78f04e4ec12a78b861c925e5d64306525ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/artichoke-hold-old-fashioned-riff/",
+    "fetchedAt": "2026-08-03T17:57:16.434Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/artichoke-hold-old-fashioned-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

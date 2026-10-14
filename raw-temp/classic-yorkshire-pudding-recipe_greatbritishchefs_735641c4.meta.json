@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/classic-yorkshire-pudding-recipe",
+  "slug": "classic-yorkshire-pudding-recipe_greatbritishchefs_735641c4",
+  "title": "Classic Yorkshire Pudding Recipe",
+  "byline": "by James Mackenzie",
+  "fetchedAt": "2026-08-03T19:59:46.676Z",
+  "ldName": "Yorkshire pudding",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "80g of plain flour",
+    "1 egg",
+    "80ml of milk",
+    "60ml of water",
+    "2 tbsp of vegetable oil, or beef dripping",
+    "1 pinch of salt",
+    "1 pinch of pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 220°C/gas mark 8",
+    "Sift the flour into a mixing bowl and use a wooden spoon to make a well in the centre. Break the egg into the well and mix with the flour",
+    "Add the milk, water, salt and pepper, whisk until you have a smooth batter and set aside",
+    "Add the vegetable oil or dripping to a 28 x 18cm roasting tray. Place into the oven until the fat gets smoking hot, for around 10 minutes",
+    "Carefully remove the tray from the oven, pour in the batter and return to the oven until crispy and puffed up around the edges - this should take approximately 30 - 40 minutes. Serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

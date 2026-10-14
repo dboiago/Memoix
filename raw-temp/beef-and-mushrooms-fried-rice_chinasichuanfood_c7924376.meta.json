@@ -1,0 +1,69 @@
+{
+  "url": "https://www.chinasichuanfood.com/beef-and-mushrooms-fried-rice/",
+  "slug": "beef-and-mushrooms-fried-rice_chinasichuanfood_c7924376",
+  "title": "Beef and Mushrooms Fried Rice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T09:11:06.794Z",
+  "ldName": "Beef and Button Mushrooms Fried Rice",
+  "ldTime": "PT8M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "Half steak of beef (cut into cubes)",
+    "5  mushrooms (cut into small pieces)",
+    "1/4  onion (chopped)",
+    "3  garlic cloves (chopped)",
+    "3  green onions (chopped)",
+    "1 cups of leftover rice",
+    "2 tbsp. cooking oil",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. dark soy sauce",
+    "1/4 tsp. black pepper",
+    "1/2 tbsp. sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Pour sauce and seasoning into a bowl and mix well.",
+    "Heat oil in a pan and add the mushrooms. Fry until the mushrooms turn soft. Then, add the red onions. Fry for about a half minute until aromatic.",
+    "Spread the beef cubes in, sear for 2 minutes until well browned.",
+    "Add the leftovers and sauce, turn up the heat, and stir-fry until well combined.",
+    "Turn off the heat, add 1/8 tbsp. salt and sprinkle chopped green onion. Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "180 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "3 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.1 g",
+    "sodiumContent": "865 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Ingredients]",
+    "Half steak of beef cut into cubes",
+    "5 mushrooms cut into small pieces",
+    "1/4 onion chopped",
+    "3 garlic cloves chopped",
+    "3 green onions chopped",
+    "1 cups of leftover rice",
+    "2 tbsp. cooking oil",
+    "[Sauce]",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. dark soy sauce",
+    "1/4 tsp. black pepper",
+    "1/2 tbsp. sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

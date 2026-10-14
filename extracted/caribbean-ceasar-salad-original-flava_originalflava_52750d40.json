@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Caribbean Caesar Salad",
+    "time": "45 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut up bread into bite sized pieces and season with salt pepper, dried thyme and olive oil then add to baking tray and cook for 20 minutes on 200 degrees.",
+      "Butterfly your chicken breast and season with salt pepper, all-purpose garlic powder paprika and let it marinate for 10 minutes.",
+      "To make the dressing blend together yogurt, anchovies, olive oil, lemon, roasted garlic, scotch bonnet, lemon juice anchovies salt and pepper to taste.",
+      "In a frying pan add olive oil on a high heat then place your seasoned chicken away from you on the pan. Cook for 5 minutes on each side until cooked. Slice chicken then set aside.",
+      "Assemble salad by chopping up 2 romaine lettuce then adding to a bowl with croutons, chicken breasts and dressings. Toss well then Top with parmesan cheese and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wholemeal Hardo’ Bread",
+        "unit": null,
+        "notes": "cut in bite size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": "large",
+        "notes": "Butterfly",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full Fat Yogurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Lemon Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "de-seeded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Garlic",
+        "unit": null,
+        "notes": "roasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Romaine Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chillies",
+        "unit": null,
+        "notes": "dried, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb89ac006c5563022ea06e4a60f8a80ff7b098784d95d70ff6b4e225ab24d6ad",
+    "lineage_hash": "8da30a374967c08751ae5d48123fe2558d01a3200523301e948e319ba342d107"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/uncategorized/caribbean-ceasar-salad/",
+    "fetchedAt": "2026-09-30T17:41:01.818Z"
+  },
+  "rawSource": "https://originalflava.com/uncategorized/caribbean-ceasar-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

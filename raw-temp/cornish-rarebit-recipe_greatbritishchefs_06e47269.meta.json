@@ -1,0 +1,34 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cornish-rarebit-recipe-cheddar",
+  "slug": "cornish-rarebit-recipe_greatbritishchefs_06e47269",
+  "title": "Cornish Rarebit Recipe",
+  "byline": "by Robert Thompson",
+  "fetchedAt": "2026-08-03T15:27:48.689Z",
+  "ldName": "Cornish rarebit",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "120g of mature cheddar",
+    "60ml of lager beer",
+    "30g of plain flour",
+    "30g of breadcrumbs",
+    "1 tbsp of English mustard",
+    "3 egg yolks",
+    "1 loaf of bread, sliced"
+  ],
+  "ldInstructionsRaw": [
+    "Grate the cheddar and place in a saucepan with the beer over a medium heat. Cook, stirring occasionally, until the cheese melts and the mixture starts to bubble",
+    "Stir in the flour, breadcrumbs, and mustard and continue cooking until the mixture comes cleanly away from the sides of the pan and forms a ball. Remove from the heat and leave to cool",
+    "Once cool, beat in the egg yolks until you have a smooth mixture, then the rarebit is ready to use. Spread across some slices of bread and pop under the grill until bubbling. Cut into soldiers and serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

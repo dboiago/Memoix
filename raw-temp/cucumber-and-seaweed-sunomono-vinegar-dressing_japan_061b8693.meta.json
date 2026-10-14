@@ -1,0 +1,46 @@
+{
+  "url": "https://japan.recipetineats.com/cucumber-and-seaweed-sunomono-vinegar-dressing/",
+  "slug": "cucumber-and-seaweed-sunomono-vinegar-dressing_japan_061b8693",
+  "title": "Cucumber and Seaweed Sunomono (Vinegar Dressing)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T18:11:38.304Z",
+  "ldName": "Cucumber and Seaweed Sunomono (Vinegar Dressing)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Sides",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup thinly sliced cucumber",
+    "½ tsp salt",
+    "2 tbsp dried cut wakame seaweed ((Note 1))",
+    "2 tbsp dashi stock ((Note 2))",
+    "1 tbsp soy sauce",
+    "1 tbsp mirin",
+    "2 tbsp rice wine vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "Soak dried wakame in a bowl filled with water for about 10-15 minutes until rehydrated. Drain water well and move to a mixing bowl. If the wakame is not cut into bite size pieces, you need to cut them into about 2cm / 1 inch length.",
+    "Sprinkle salt over the cucumber and massage in to soften the cucumber. Squeeze to remove excess water well. Add to the bowl and mix with wakame.",
+    "Combine vinegar marinade ingredients and mix well.",
+    "When ready to serve, add vinegar dressing to ingredients and mix well. Serve immediately (Note 3)."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcup\n\t\t\t\t\t\t\t\t\t\tthinly sliced cucumber",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsalt",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdried cut wakame seaweed\n\t\t\t\t\t\t\t\t\t\t(Note 1)",
+    "[Vinegar dressing (Tosazu)]",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdashi stock\n\t\t\t\t\t\t\t\t\t\t(Note 2)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tmirin",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\trice wine vinegar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

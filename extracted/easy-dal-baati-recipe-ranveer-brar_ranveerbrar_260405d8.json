@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Dal Baati",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For baati, combine all the ingredients in a mixing bowl except milk. Mix well.",
+      "Now add little milk at a time and knead in to stiff dough.",
+      "Divide in to equal portions and make round balls.",
+      "Heat oil for frying. Deep fry the baatis till golden brown.",
+      "Remove on absorbent paper and drain off the excess oil.",
+      "Serve along with dal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Rava/ Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds/ Fennel",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "3",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "to knead use accordingly",
+        "amount": "½",
+        "section": "For Baati",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa0ad582fe8e7949d28b3e1e8749dc34a9894b499f79694fee232c6df7395dff",
+    "lineage_hash": "88a6b6e8933d666fe3c0d0c7d66ce5033fc22e2c4387c88caff60cfba8fe9ce6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-baati/",
+    "fetchedAt": "2026-08-02T03:17:27.473Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-baati/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

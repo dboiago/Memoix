@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Concord Grape Shrub and Cocktail",
+    "time": "1 hr 5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Tumbler",
+    "garnish": [
+      "Orange or Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. Put the grapes in a non-reactive saucepan. Mash or squeeze them to release some of the juices. Cover and cook over medium heat, stirring occasionally, until the grapes are cooked through, about 5 minutes.",
+      "2. Remove from heat and stir in the sugar and vinegar. Cover and let steep overnight at room temperature.",
+      "3. The next day, pass the grapes through a food mill to remove the seeds and skins. If you don't have a food mill, you can press them through a mesh sieve with a flexible silicone spatula into a bowl. If a lot of the pulp remains in the stainer after pressing the grapes through, gently rewarm the grape pulp in the saucepan and the rest should pass through more easily. Transfer the grape shrub into a bottle and refrigerate until ready to use. It'll keep for several months in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Concord Grapes",
+        "unit": "lb",
+        "notes": "450g, stemmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "100g, raw granulated, or regular granulated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "C",
+        "notes": "120ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d76b6783e62b6a44026189a7564bd93ccbf935b0e45958c89ebf874ba9663bd",
+    "lineage_hash": "f702d0a0940102de607d9393fb7580e1b5c69922d5f46d2a17903fb0f11ab8b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/concord-grape-shrub-recipe-cocktail/",
+    "fetchedAt": "2026-08-02T17:59:31.729Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/concord-grape-shrub-recipe-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

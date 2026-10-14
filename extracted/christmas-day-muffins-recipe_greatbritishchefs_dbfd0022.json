@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Christmas Day Muffins",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a 12-bun muffin tin with muffin papers - you could also use silicone inserts",
+      "Mix the flour, baking powder, bicarb, caster sugar and spices in a bowl",
+      "Grate the zest of the clementine into the bowl and mix to combine. If you are doing this in advance, leave the zesting until the day of baking",
+      "Squeeze the juice of the clementines into a measuring jug, pour in the milk until it comes up to the 200ml mark",
+      "Lightly beat in the oil and egg until just combined",
+      "Pour this liquid mixture into the bowl of dried ingredients and stir until everything is combined",
+      "Fold in the cranberries then spoon the batter into the muffin cases and sprinkle the Demerara sugar on top",
+      "Bake in the oven for 15-20 minutes until golden brown. Remove and serve warm, or allow to cool and store in an airtight container for up to 3 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementines",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7762ee67b0a513758e252827d41a8ed6309fa5113db54b177d6bb6cd0b0dcc44",
+    "lineage_hash": "a4d8afbf2d5dda488a002bfad0c8669e859a6828f42679270c91992698d17bd9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-day-muffins-recipe",
+    "fetchedAt": "2026-08-03T18:39:44.209Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-day-muffins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

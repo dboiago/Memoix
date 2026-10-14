@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Barbecued Salmon with Brown Sugar Butter Glaze",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Run your fingers over the flesh of the salmon fillet, feeling for bones. Remove any you find with needle-nosed pliers or kitchen tweezers. Place the fish in a single layer in a nonreactive baking dish.",
+      "Make the marinade: Place the soy sauce, mirin, sake, sesame oil, Worcestershire sauce, scallions, ginger, and garlic in a mixing bowl and whisk to mix. Pour the marinade over the salmon, turning the fish to coat it on all sides. Let the salmon marinate in the refrigerator, covered, for 2 to 4 hours, turning twice.",
+      "Drain the salmon, reserving the marinade.",
+      "Set up your grill for indirect grilling and heat to medium-high (400 degrees).",
+      "Char the plank on both sides directly over the fire. Let it cool.",
+      "Arrange the salmon fillet on the plank and place the plank in the center of the grill over the drip pan away from the heat. Add wood chips or chunks to the fire. Indirect grill the salmon until browned and cooked through, 20 to 30 minutes.",
+      "Meanwhile make the sauce: Strain the reserved marinate into a heavy saucepan. Boil until reduced by half. Whisk in the butter, sugar, sriracha, lemon zest and juice, and black pepper. Correct the seasoning, adding salt or lemon juice to taste: the sauce should be sweet, spicy, and salty.",
+      "Baste the salmon with the barbecue sauce a couple of times the last 5 minutes of cooking. When the salmon is cooked, the internal temperature will be 140 degrees.",
+      "Serve the salmon on the plank. Brush one final time with the barbecue sauce and sprinkle with scallion greens. Serve the remaining barbecue sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Center-cut Salmon Fillet (2 Pounds)",
+        "unit": null,
+        "notes": "preferably skin-on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b482f2e8707fc4e997e1034770aec301a97d73044d1eb7ed8f273676ae8f92f1",
+    "lineage_hash": "eda8065a419d4bd8a24c9496e371f18a01b25a1421b5ec1403f7c3210723d48d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-salmon-with-brown-sugar-butter-glaze/",
+    "fetchedAt": "2026-08-03T07:14:52.556Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-salmon-with-brown-sugar-butter-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

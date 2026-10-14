@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Chinese Oyster Broccoli Salad",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "109",
+      "carbohydrateContent": "11",
+      "fatContent": "6",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Cut the broccoli into small pieces.",
+      "Bring some water to a boiling in a pot. Add 3 drops of cooking oil and salt in the water. Blend the broccoli around 1 minute. Transfer out and drain.",
+      "Prepare a pan, add oyster sauce, light soy sauce, water and sugar together. Bring them to a boiling.",
+      "Mix the sauce with broccoli."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Broccoli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "drops",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c03a528b1d4b5dd8169c7a28806736382e33aa897c33f51ea61c78d85ff832c5",
+    "lineage_hash": "cb8873e4e3861a63bdeaebc31ad2af7ca3983aa4ca9099b1580e49be2f80ccb2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-oyster-broccoli-salad/",
+    "fetchedAt": "2026-08-01T19:40:44.057Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-oyster-broccoli-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

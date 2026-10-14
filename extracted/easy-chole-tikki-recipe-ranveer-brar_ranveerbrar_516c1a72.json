@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chole Tikki (छोले टिक्की)",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a grinder jar, add boiled chickpeas and grind it to a smooth texture.",
+      "Transfer this mixture into a bowl, add ginger garlic paste, green chilli, garam masala, coriander powder, red chilli powder, gram flour and mix well.",
+      "Now , add lemon juice, coriander leaves and salt to taste and mix everything well.",
+      "Heat oil in a deep pan, shallow fry the tiki from both the sides.",
+      "Till nice golden and crisp from all over the sides and properly cooked.",
+      "Serve hot chole tikki with green chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "C",
+        "notes": "soaked, boiled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for shallow fry",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd2c5857f70d5f88f9003e6a886cbc752d006d0458e4b9fe84b7b5abc00dae65",
+    "lineage_hash": "0b6974a72499ffccec7d2ba12aaa3272e3fa77e3c4ad274bb2c08a6d175cb636"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chole-tikki/",
+    "fetchedAt": "2026-08-02T05:38:06.954Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chole-tikki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

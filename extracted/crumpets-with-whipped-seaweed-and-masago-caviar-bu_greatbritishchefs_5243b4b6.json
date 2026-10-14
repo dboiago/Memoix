@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Crumpets With Whipped Seaweed and Masago Caviar Butter",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soften the butter at room temperature for at least 30 minutes",
+      "Whip the butter on high speed for 5 minutes, or until well aerated and creamy in texture",
+      "Reduce the speed to incorporate the milk and seaweed, then turn up the speed and whip for another 5 minutes",
+      "Use to top the crumpets, adding more masago, if you like"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crumpets",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dulse Seaweed Flakes",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Masago",
+        "unit": "g",
+        "notes": "plus more for topping",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e320677d9bf6bc8d2cead2a7241604676f5685d3aa3d5013c0b923f2374a690a",
+    "lineage_hash": "b5d2875ad7c1fd4d7cc2f0b637e2270be1089bdbf1a5bb91204a470876c027e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crumpets-whipped-seaweed-masago-recipe",
+    "fetchedAt": "2026-08-02T13:31:06.226Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crumpets-whipped-seaweed-masago-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

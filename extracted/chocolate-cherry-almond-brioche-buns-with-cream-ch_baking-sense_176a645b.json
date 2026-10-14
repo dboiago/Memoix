@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Chocolate Cherry Almond Brioche Buns with Cream Cheese Frosting",
+    "time": "12 hr 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "528",
+      "carbohydrateContent": "64",
+      "fatContent": "29",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Knead for a full 10-15 minutes – kneading for a good 10 minutes before the butter is added allows the gluten to develop. Fat inhibits gluten formation, so you want a nice stretchy dough before adding the butter. Good gluten formation is key for a light texture. A strong gluten network allows the bread to rise fully and hold it’s shape without collapsing under it’s own weight.",
+      "Soften the butter to match the texture of the dough – Having the butter the same texture as the dough allows it to emulsify into the dough. This helps create the beautiful brioche texture.",
+      "Rest the dough before shaping – Giving the dough several hours in the refrigerator relaxes the dough and firms up the butter, making the dough easier to shape."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "⅔ cup scalded and cooled to 100 °F",
+        "amount": "5",
+        "section": "Starter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Starter",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Starter",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 ¼ cups, see note",
+        "amount": "16¼",
+        "section": "Starter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "2¾",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "2¾",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cherries (1 Cup Chopped (see Note))",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "6",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Covered Almonds",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cream Cheese Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cream Cheese Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "3",
+        "section": "Cream Cheese Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cream Cheese Icing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d5b8d09aec7413e97e18c5e737bac9e1e08390ced1d7e4af513f657f3d938bf4",
+    "lineage_hash": "40f3b3ee12b2a0bce6d54ce5f27d01a37c044084c1acb002d3c9349663287f72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/12/13/chocolate-cherry-almond-brioche-buns/",
+    "fetchedAt": "2026-08-02T03:54:26.704Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/12/13/chocolate-cherry-almond-brioche-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

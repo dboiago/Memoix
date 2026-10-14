@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-brown-sugar-bread-guo-kui/",
+  "slug": "chinese-brown-sugar-bread-guo-kui_chinasichuanfood_19bacde3",
+  "title": "Chinese Brown Sugar Bread (Guo Kui)",
+  "byline": "",
+  "fetchedAt": "2026-08-02T03:29:41.163Z",
+  "ldName": "Chinese Brown Sugar Bread (Guo Kui)",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT35M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "14",
+    "14 making 14 small breads"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "staple",
+  "ldKeywords": "bread, sugar",
+  "ldIngredientsRaw": [
+    "300 g all-purpose flour ( ,more for dusting)",
+    "150 ml water",
+    "1/2 tsp. salt",
+    "1 tsp. yeast",
+    "oil for brushing",
+    "2 tbsp. all purpose flour",
+    "1/4 cup powdered brown sugar",
+    "a tiny pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Mix brown sugar with flour and salt in a small bowl. Set aside.",
+    "In a stand mixer, add flour, salt, instant yeast and water, then mix at low speed for 8-9 minutes until the dough is soft and smooth.",
+    "Cover with a wet cloth or plastic wrap to rest for around 30 minutes to 45 minutes depending on your temperature until the dough is ⅓ bigger than the previous one. (The surface is completely smooth but there is no Honeycomb texture inside).",
+    "Knead the dough again to pinch the air out. Then roll the dough into a uniform long log around 4cm in diameter. Cut the long log into 14 equal portions.",
+    "Wrap the powdered filling in.",
+    "Brush a thin layer of oil in a casting iron pan，place the bread in one by one, cover the lid and then fry each side for 6-8 minutes over slow fired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "104 kcal",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "2 g",
+    "sodiumContent": "70 mg",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g all-purpose flour  ,more for dusting",
+    "150 ml water",
+    "1/2 tsp. salt",
+    "1 tsp. yeast",
+    "oil for brushing",
+    "[Filling]",
+    "2 tbsp. all purpose flour",
+    "1/4 cup powdered brown sugar",
+    "a tiny pinch of salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

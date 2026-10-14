@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Bravas Sauce",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "190",
+      "carbohydrateContent": "5.67",
+      "fatContent": "19.09",
+      "proteinContent": "1.49"
+    },
+    "directions": [
+      "Heat the olive oil in a small saucepan over medium heat. Add the hot and sweet smoked paprika and stir until combined.",
+      "Add 1 tablespoon of flour and stir until combined. Keep stirring for about a minute to toast the flour slightly.",
+      "Over a medium-low heat, add the broth very gradually, stirring constantly. The flour will absorb the liquid and leave you with a delicious sauce.",
+      "The sauce should start to thicken as you incorporate the broth; add more flour only if necessary to achieve the right consistency.  It should be velvety and smooth, but not so thick that it holds its shape alone.",
+      "Reduce to low heat and simmer for 3-5 minutes, stirring occasionally. Season with salt to taste.",
+      "Drizzle over some fried potatoes and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Smoked Paprika Pimentón Picante",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Smoked Paprika Pimentón Dulce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "alt: vegetable broth",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "723ca584a946fd15563c8ca7cb3a3dd4d3903000e53659e410e34a5166aceeae",
+    "lineage_hash": "e3ca2cdb8470785ade3069465a6f9917060d66947579e8c46a9ece073ed580e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/bravas-sauce-recipe-a-spanish-condiment-with-a-kick/",
+    "fetchedAt": "2026-08-02T09:09:24.092Z"
+  },
+  "rawSource": "https://spanishsabores.com/bravas-sauce-recipe-a-spanish-condiment-with-a-kick/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

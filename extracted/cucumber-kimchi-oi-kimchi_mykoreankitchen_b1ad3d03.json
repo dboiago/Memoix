@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Cucumber Kimchi (Oi Kimchi)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "42",
+      "carbohydrateContent": "8",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cut off both ends of the cucumber. Divide the cucumber into 3 pieces then cross cut each piece length ways. You should end up with 4 to 5 cm (1.5 inch) length cucumber pieces. Put the cucumber into a large bowl then scatter the coarse sea salt around on top. Gently mix them so that the cucumber gets pickled evenly. Set it aside for 20 minutes.",
+      "Gently brush off the salt from the cucumber then transfer the cucumber into a clean bowl. Pour in the kimchi sauce then mix them gently. (If using) Add the carrots and garlic chives then mix with the rest again. Transfer into a glass container and cover.",
+      "Keep it at room temperature for about 12 to 18 hours then move it to the fridge. Serve once chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lebanese Cucumbers (450 G / 1 Pound)",
+        "unit": null,
+        "notes": "other cucumber suitable for pickling is ok to use, rinsed",
+        "amount": "3",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots (1.7 Ounces)",
+        "unit": "g",
+        "notes": "optional, julienned",
+        "amount": "50",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chives",
+        "unit": "g",
+        "notes": "alt: chives (0.7 ounces), optional, chopped in same length as the cucumber",
+        "amount": "20",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "Tbsp",
+        "notes": "korean chili flakes",
+        "amount": "2",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Red Apple",
+        "unit": "Tbsp",
+        "notes": "alt: asian pear, grated",
+        "amount": "1",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "alt: sugar",
+        "amount": "1",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Saeujeot (korean Salted Shrimp)",
+        "unit": "Tbsp",
+        "notes": "if you don’t have this add more fish sauce below, minced",
+        "amount": "½",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "KIMCHI SAUCE (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2514596d8b69d50887cf09a2c6980c0d3bb210c1d65968bef3bb2bf59b4e632e",
+    "lineage_hash": "94f4f4dcd6081f682393c8f39c3a3158b3f0f317f88bb051264ea448e0a9943b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/cucumber-kimchi-oi-kimchi/",
+    "fetchedAt": "2026-08-01T23:33:12.226Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/cucumber-kimchi-oi-kimchi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://dailycookingquest.com/broiled-spicy-miso-mayo-salmon.html",
+  "slug": "broiled-spicy-miso-mayo-salmon_dailycookingquest_334230ad",
+  "title": "Broiled Spicy Miso Mayo Salmon",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:49:13.644Z",
+  "ldName": "Broiled Spicy Miso Mayo Salmon",
+  "ldTime": "PT0H15M",
+  "ldPrepTime": "PT0H5M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Seafood"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram (~ 1 lb) salmon fillet(s)",
+    "salt and pepper",
+    "3 tablespoon mayonnaise",
+    "1 tablespoon white miso paste",
+    "1-2 tablespoon Thai sweet chili sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Line a baking sheet with aluminum foil. Preheat oven broiler (high) for at least 3 minutes. Set the oven rack to second from top, mine comes in 5 levels.",
+    "Place salmon fillets on the baking sheet, skin side down, and sprinkle with salt and pepper.",
+    "Mix together mayonnaise, white miso paste, and Thai sweet chili sauce. Brush the salmon fillets liberally with the sauce mixture.",
+    "Broil until the salmon is fully cooked. This should take about 8-10 minutes, depending on the thickness of the fillet.",
+    "Serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram (~ 1 lb) salmon fillet(s)",
+    "salt and pepper",
+    "3 tablespoon mayonnaise",
+    "1 tablespoon white miso paste",
+    "1-2 tablespoon Thai sweet chili sauce"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

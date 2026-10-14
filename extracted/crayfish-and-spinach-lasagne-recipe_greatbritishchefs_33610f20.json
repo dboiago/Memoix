@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Crayfish and Spinach Lasagne",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large pan of water over a medium heat, add the salt and bring to the boil. Cook the crayfish in batches for 4 minutes per batch. Set aside to drain in a colander until cool enough to peel",
+      "Once cool, remove the heads, peel the shells from the tails and place the tail meat in bowl. When all the crayfish have been peeled, place roughly half the heads and empty shells onto an ovenproof tray, discarding the rest",
+      "Place the tray in the preheated oven and roast the crayfish heads and shells for 20 minutes",
+      "Meanwhile, heat the olive oil in a large saucepan over a medium heat. Add the shallot, carrot, leek, garlic, fennel seeds, tarragon, dill, thyme and bay leaf. Turn the heat down and cook gently for 10 minutes, stirring now and then, until the vegetables start to colour",
+      "When ready, add the roasted crayfish heads and shells to the saucepan with the vegetables. Stir well and cook for a further 5 minutes",
+      "Add the butter, stir well, then add the tomato purée and stir again. Cook for another minute before turning up the heat and adding the wine. When the wine has reduced by half, add the flour, stirring well",
+      "Slowly add the chicken stock, stirring continuously. Season with salt and pepper and simmer gently for 20 minutes, adding a little more chicken stock if the sauce becomes too thick (it should be the consistency of double cream)",
+      "Meanwhile, prepare the spinach, broad beans and pasta. Sauté the spinach in a little water until just cooked. Stir through the butter and season with salt and pepper",
+      "Blanch the podded broad beans in boiling water for 3 minutes and immediately refresh in iced water. Remove the skins from the beans and set aside the skinned beans in a bowl",
+      "Cook the strips of fresh lasagne in boiling, salted water for 4–5 minutes or until soft. Drain and drizzle with a little olive oil",
+      "Place a colander over a bowl and drain the sauce, pressing down on the shells with the back of a spoon to extract all the liquid. Discard the contents of the colander. Strain the sauce again through a fine meshed sieve back into a clean saucepan and gently reheat",
+      "Stir in the double cream, check the seasoning and pour the sauce into a tall jug. Using a hand blender, whisk the sauce briefly",
+      "Place a spoonful of spinach in the middle of each plate. Spoon a little sauce over the spinach and fold over 3 strips of lasagne. Add half the crayfish, broad beans and layer again with 2 more strips of lasagne, the remaining spinach, crayfish and broad beans. Spoon over a little more sauce and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Live Crayfish",
+        "unit": "kg",
+        "notes": "or 200g of cooked fresh crayfish tails",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "fresh is best",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "fresh, podded",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lasagne Sheets",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d012e03407f0719ad0a2121c0070621e423a50608f586db7d3b600583f9b0b5",
+    "lineage_hash": "a81683184b3c90badeca3fe4463c03d4a22ebb68ec72a9653dcfe76edc402cf7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crayfish-spinach-lasagne-recipe",
+    "fetchedAt": "2026-08-03T10:20:03.745Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crayfish-spinach-lasagne-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

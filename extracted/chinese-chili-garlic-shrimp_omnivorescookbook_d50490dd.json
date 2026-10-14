@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chinese Chili Garlic Shrimp",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "201",
+      "carbohydrateContent": "9.1",
+      "fatContent": "15.8",
+      "proteinContent": "6.3"
+    },
+    "directions": [
+      "Combine the shrimp and Shaoxing wine in a medium-sized bowl. Sprinkle evenly with salt. Mix until the salt is evenly dispersed. Set aside while preparing the rest of the ingredients.",
+      "Combine all the sauce ingredients in a bowl and stir until the brown sugar is dissolved. Set aside.",
+      "Heat 4 tablespoons of oil (or just enough to cover the bottom of the pan) in a medium-sized skillet until hot. Meanwhile, add the cornstarch and all-purpose flour to the bowl with the shrimp. Toss until the shrimp are fully coated.",
+      "Shake the extra flour off the shrimp and add them to the pan. You might need to cook them in two batches. Let the shrimp cook without touching them, until the bottom turns golden, 2 to 3 minutes. Flip to brown the other side, another 2 to 3 minutes. Once done, transfer the shrimp to a large plate without overlapping and keep cooking the rest.",
+      "Once you’re done cooking the shrimp, turn off the stove and use paper towels to wipe the pan to remove any residue.",
+      "Add the remaining 1/2 tablespoon of oil to the pan and heat over medium heat. Add the ginger and stir until fragrant, about 1 minute.",
+      "Add the sauce to the pan. Cook and stir until the sauce becomes thick and glossy, 20 to 30 seconds.",
+      "Turn the heat off and return the shrimp into the pan, tossing to coat thoroughly. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Shrimp",
+        "unit": "lb",
+        "notes": "*Footnote 1, peeled & deveined",
+        "amount": "1",
+        "section": "Shrimp",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Shrimp",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Shrimp",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Shrimp",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Shrimp",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Garlic Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "4½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59d82b75929ac994e3b1685dc3c532d225b691891f8039da38810060886294da",
+    "lineage_hash": "f2193a697e60c8fe031fc78ac395820baa72e863f93a5860de19ce7435a0edd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/sichuan-spicy-shrimp-stir-fry/",
+    "fetchedAt": "2026-08-02T05:31:14.698Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/sichuan-spicy-shrimp-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

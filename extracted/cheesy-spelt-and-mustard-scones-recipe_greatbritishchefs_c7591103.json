@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Cheesy Spelt and Mustard Scones",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oven to 220°C (200°C fan) and line a flat baking tray with baking paper",
+      "Whisk together the white and wholemeal spelt flour, mustard powder, baking powder, sugar, chives and a big pinch of salt in a large mixing bowl until combined",
+      "Add in the butter and rub into the flour between your fingertips until you have a breadcrumb-like/sandy consistency. Stir through the cheddar",
+      "Pour in the milk and mix until you have a shaggy dough. Knead slightly for 2 minutes until you have a smooth mix",
+      "Gently roll out the dough to a 2 cm-thick circle (ours was 22 cm). Cut into 8 triangles, like a pizza, spreading them all out so they’re about 5 cm apart but still in a circle. Brush the top of the triangles with the beaten egg and top with a small grating of cheddar",
+      "Bake for 17–20 mins until golden brown. Leave to cool before tearing open and serving with salted butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholemeal Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "cubed and cold, plus extra for serving",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "half coarsely grated and half crumbled into small 1 cm chunks, plus extra finely grated for the top",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b1c10b1c3a137534c0914b8bc4785ca726ae32f4ee78709e794f935bc658432",
+    "lineage_hash": "98b3d919b324e2553bc1fedede8b714d73ed85cec68a655e2d0b49769695272e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-spelt-mustard-scones-recipe",
+    "fetchedAt": "2026-08-02T02:20:34.964Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-spelt-mustard-scones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

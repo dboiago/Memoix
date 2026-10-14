@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Eastern North Carolina-Style Sauce",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the vinegar, salt, sugar, black pepper, hot red pepper flakes, and hot sauce in a large nonreactive bowl, add 1 cup of water, and whisk until the salt and sugar dissolve. Or, place the ingredients in a large jar and shake to mix.",
+      "Taste for seasoning, adding more salt and/or hot red pepper flakes as necessary. The sauce can be refrigerated for several weeks. Bring it to room temperature before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Red Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "Tbsp",
+        "notes": "such as Tabasco or Texas Pete",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9758df6512a76fece2dd311efc8670241da89702728004582dd90dc1d022dc61",
+    "lineage_hash": "70b2895be5ad9ccbc8ce56d5068e41c3e95506404ccfd0f3a518f4202e18bc8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/eastern-north-carolina-style-sauce/",
+    "fetchedAt": "2026-08-03T02:53:37.557Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/eastern-north-carolina-style-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

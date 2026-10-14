@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chapati Samosa",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a hot pan add oil, cumin seeds, fennel seeds, ginger, green chillies, asafoetida, turmeric powder, coriander powder and mix everything properly, switch off the flames and add the boiled potatoes salt and mix it properly and mash it little. Keep aside for further use.",
+      "Take the leftover chapatis and cut in half.",
+      "Now take one half of the chapati and apply the maida slurry to the straight end of it and make a cone shaped by sticking it .",
+      "Now add the filling in it and again apply the maida slurry to the open ends and close it properly and add a clove in it to keep it together.",
+      "Fry in medium hot oil until golden brown and crispy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chapatis",
+        "unit": null,
+        "notes": "leftover",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maida Slurry",
+        "unit": null,
+        "notes": "thick",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Inch Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "medium, boiled & diced",
+        "amount": "2-3",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh, for garnish",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bad0395d59954ddefcfc658d9f9abc4ce6b235cf32eff523b539506e9de7bb22",
+    "lineage_hash": "d24768999290d27d8700ea6c4c6f75a90950d39413ddaf56f18b3a035068c906"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chapati-samosa/",
+    "fetchedAt": "2026-08-02T11:21:05.493Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chapati-samosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

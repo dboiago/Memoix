@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Coconut Willie",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut large coconut in half and use as the container for the drink. Add ingredients to shaker with crushed ice and shake. Pour unstrained contents into the coconut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "121fdac546d7bf25f5105c7e3984d2c60232cedd23a6d5bf691176fe17e710ab",
+    "lineage_hash": "c4eeb121a63c77b0d83152f23f8b57256a202b5ce3d119b9e8e8554b6d2a2569"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-willie-from-hawaiian-room/",
+    "fetchedAt": "2026-08-03T20:43:38.933Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-willie-from-hawaiian-room/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

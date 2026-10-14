@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Confit Leeks with Puy Lentils and Leek Cream",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160°C fan/gas mark 4",
+      "Soak the cut leek rounds in a large bowl of water to get rid of any excess grit. Drain, then pat dry, being sure to keep the rounds intact",
+      "Put the leeks, garlic, thyme, 1 teaspoon of salt and a good grind of pepper into a baking dish roughly 30cm x 20cm in size. Mix gently to combine, then pour over the oil. Arrange the leeks so they are cut side up, then cover tightly with foil and bake for 35 minutes",
+      "Remove from the oven and gently turn the leeks over. Cover again with foil and return to the oven for 35 minutes more, until completely softened. Remove from the oven and turn the temperature up to 180°C fan/gas mark 6",
+      "Meanwhile, cook the lentils in plenty of boiling water for 12–15 minutes, or until tender but not at all mushy. Drain well and set aside",
+      "When ready, remove the confit leeks from the oven and transfer 100g of the cooked leeks plus five garlic cloves to a bowl. Add the lentils to the remaining leeks in the baking dish along with ¼ teaspoon of salt and a good grind of pepper, and mix gently to combine. Cover again with the foil and return to the oven for 15 minutes. Remove the foil and leave to settle for 10 minutes. Discard the thyme sprigs",
+      "While the lentils are in the oven, make the leek cream. Add the measured-out leeks (100g) and garlic (5 cloves) to a food processor along with the cream, mustard, lemon juice and ⅛ teaspoon of salt, and blitz until smooth",
+      "When ready, stir the 60ml of lemon juice and the chopped herbs into the lentil and leek mixture. Transfer to a rimmed platter and serve with the leek cream in a bowl alongside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Medium Leeks",
+        "unit": "kg",
+        "notes": "white and light green parts only, 620g trimmed weight, trimmed, cut into 2cm-thick rounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puy Lentils",
+        "unit": "g",
+        "notes": "dried lentils not cooked, washed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "from 2-3 lemons",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06aef6c586ddf799e6faa7a6e572fb5e3de45f1e055e49e85157aff84e13cb87",
+    "lineage_hash": "62a56a3875be6fa5fd644d4831233c311946ee841e5ad48fa0149283e22d3333"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-leeks-puy-lentils-leek-cream-recipe",
+    "fetchedAt": "2026-08-02T17:34:48.468Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-leeks-puy-lentils-leek-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

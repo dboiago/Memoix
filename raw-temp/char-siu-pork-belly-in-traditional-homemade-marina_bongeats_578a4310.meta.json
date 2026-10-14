@@ -1,0 +1,41 @@
+{
+  "url": "https://www.bongeats.com/recipe/char-siu-pork-belly",
+  "slug": "char-siu-pork-belly-in-traditional-homemade-marina_bongeats_578a4310",
+  "title": "Char Siu Pork Belly in Traditional Homemade Marinade (No Colour) recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:59:45.694Z",
+  "ldName": "Char Siu Pork Belly in Traditional Homemade Marinade (No Colour)",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT60M",
+  "ldYield": "6",
+  "ldCuisine": "Indian",
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "581"
+  },
+  "htmlIngredientLines": [
+    "1 kg pork belly (divided in 5-cm sections)",
+    "30 g char siu sauce",
+    "40 g hoisin sauce",
+    "45 g oyster sauce",
+    "8 g soy sauce",
+    "12 g rice wine",
+    "8 g toasted sesame oil",
+    "¼ tsp red rice yeast (powdered)",
+    "¼ tsp Chinese five-spice powder",
+    "¼ tsp pepper",
+    "10 g sugar",
+    "20 g rock sugar",
+    "40 g water",
+    "4 g oil",
+    "¼ tsp lime juice"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

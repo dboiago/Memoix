@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Easy Egg Masala Curry (Spicy Egg Curry)",
+    "time": "40-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a hot pan add coriander seeds, cumin seeds, fennel seeds, black pepper cons, cloves, green cardamom and roast them on medium heat until fragrant.",
+      "Remove on a plate and add salt then keep aside to cool down.",
+      "Once cooled grind it into a fine powder and keep aside for further use.",
+      "In a hot pan add ghee, oil and add boiled eggs and saute for a minute.",
+      "Then add degi red chilli powder and saute it until light golden from outside.",
+      "Remove and cut in half then keep aside for further use.",
+      "In a kadai heat oil and add mustard seeds, curry leaves, ginger, green chillies, dry red chillies and saute for a few seconds.",
+      "Now add onion and saute until golden brown then add degi red chilli powder, coriander powder, turmeric powder, and saute until fragrant.",
+      "Then add tomato and saute until they are soft.",
+      "Then add salt, water, sugar and continue cooking until everything comes together properly.",
+      "Now add prepared masala and saute for half a minute then add lemon juice, coriander leaves and mix everything.",
+      "Remove on the serving plate and keep the sauteed eggs on it and garnish with chopped onion, tomato, green chilli, fried curry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": "broken in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamoms",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteed Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteed Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Sauteed Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauteed Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a828d8e2bd455f2da7cd85e6a7cbd900dea6c88b8583f04c22e6cc7177bf41bf",
+    "lineage_hash": "8aa0670305d7a74cfe6ebe5012f721cb419ef2d9c6cade07f34b3117b288277a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-masala-curry-spicy-egg-curry/",
+    "fetchedAt": "2026-08-01T22:55:00.312Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-masala-curry-spicy-egg-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

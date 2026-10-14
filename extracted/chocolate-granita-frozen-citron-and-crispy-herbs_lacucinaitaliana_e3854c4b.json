@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chocolate Granita, Frozen Citron, and Crispy Herbs",
+    "time": "8 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the chocolate granita: place the chopped chocolate, cane sugar, cocoa, and 3 cups water in a pot; place over medium heat and stir with a whisk until fully melted and combined (do not bring to a boil, or the chocolate will spoil).",
+      "Transfer the mixture to a bowl and leave to cool at room temperature, then place in the freezer. Stir every 30-45 minutes: after chilling for 6-8 hours, a granular granita will form.",
+      "For the frozen citron: cut the citron peel into pieces, including the white part; dredge it in some sugar and arrange on a baking sheet lined with parchment paper. Place in the freezer alongside the granita.",
+      "For the crispy herbs: gently brush 20 mint leaves and 20 lemon balm leaves with beaten egg white. Dip in the sugar and arrange on a cooking rack. Let dry for a few hours until crisp.",
+      "For the whipped cream: beat the cream and 1 Tbsp. granulated sugar in a medium bowl with a handheld mixer or whisk until soft peaks just begin to form. Cover and chill until ready to serve.",
+      "Divide the granita between frozen glasses, top with the whipped cream and serve with the frozen pieces of citron zest and the crispy herbs. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or 2 Citron",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves of Lemon Balm",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves of Mint",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "271e30da8455f6876f399100d6c5b54893295be8c0505ac99cb61e7c04d3ab7e",
+    "lineage_hash": "f5afd5d9d3efbef3fc0ba8a297fd25e5cf122f715ec11f3e144da1547725238c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-granita-frozen-citron-and-crispy-herbs",
+    "fetchedAt": "2026-08-03T04:37:38.929Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-granita-frozen-citron-and-crispy-herbs",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

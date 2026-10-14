@@ -1,0 +1,363 @@
+{
+  "recipe": {
+    "name": "4 Types Masoor Dal Nashta",
+    "time": "30-40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add soaked whole masoor dal, garlic, green chillies, ginger. Semolina, salt to taste, curd, water and mix it well.",
+      "Transfer it to a mixer grinder jar and grind it into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a bowl, add boiled potatoes, soaked whole masoor dal, coriander leaves, degi red chili powder, cumin powder, coriander powder, curry leaves, salt to taste, green chillies, onion, oil and give it a good mix.",
+      "Divide the mixture into small lemon size balls and them a tikki shape or ant desired shapes.",
+      "Heat oil in a pan, place prepared tikkis and shallow fry them until golden in colour.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and lemon wedge.",
+      "Serve hot with green chutney and tomato ketchup.",
+      "In a pan, add oil, once it's hot, add small mustard seed, cumin seeds and let it splutter.",
+      "Add curry leaves, dry red chillies and gently toss it for a minute.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared tadka, prepared batter, lemon juice, baking soda, oil and give it a good mix.",
+      "Pour the batter into a greased plate or tray and top it up with fresh coriander leaves.",
+      "Place the plate in a steamer and cook it for 15-20 minutes on medium flames.",
+      "Once the dhokla is cooked, transfer it to a plate and leave it aside for a while.",
+      "Demold the dhokla and cut into desired shape.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and lemon wedge.",
+      "Serve hot with green chutney.",
+      "Heat a nonstick tawa or pan and season it with oil.",
+      "Pour a ladleful of prepared batter into a nonstick pan and spread it evenly.",
+      "Apply butter and cook it for 3-4 minutes on medium flames until it's cooked.",
+      "Transfer it into a serving dish and serve hot with green chutney.",
+      "In a bowl, add prepared batter, baking soda, oil and give it a good mix.",
+      "Take appe chetti, add butter, once it melts, add a spoonful of batter in the cavity and cook it for a while.",
+      "Transfer the appe into the serving dish and serve hot with green chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Masoor Dal",
+        "unit": "C",
+        "notes": "washed & soaked overnight",
+        "amount": "3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¼",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "boiled & diced",
+        "amount": "4",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Masoor Dal",
+        "unit": "C",
+        "notes": "washed & soaked",
+        "amount": "¼",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "4",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masoor Dal Tikki",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Batter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Masoor Dal Dhokla",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Batter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Appe",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Appe",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Appe",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1-2",
+        "section": "For Appe",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "for greasing",
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ea784d8dfffc1c7e9c5853433fdc79a4f8fc3483218a60b519e011eca8fa7ed",
+    "lineage_hash": "897ac471cd34a8af9a7b4b8621e4649e95dd8379118242dbf64a4ea4c1118b44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/4-types-masoor-dal-nashta/",
+    "fetchedAt": "2026-08-02T19:34:36.993Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/4-types-masoor-dal-nashta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

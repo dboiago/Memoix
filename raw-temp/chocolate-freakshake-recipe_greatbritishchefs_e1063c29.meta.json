@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-freakshake-recipe",
+  "slug": "chocolate-freakshake-recipe_greatbritishchefs_e1063c29",
+  "title": "Chocolate Freakshake Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T12:21:08.943Z",
+  "ldName": "Chocolate freakshake",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of chocolate ice cream",
+    "250ml of milk",
+    "60g of dark chocolate",
+    "200ml of double cream",
+    "1 brownie cube",
+    "1 marshmallow",
+    "2 chocolate wafers"
+  ],
+  "ldInstructionsRaw": [
+    "Melt 50g of the chocolate in a bowl over a pan of simmering water, remove from the heat and whisk in 100ml of the double cream to make a smooth, glossy ganache. Transfer to a squeezy bottle or piping bag",
+    "Whip the remaining double cream and transfer to a piping bag fitted with a star nozzle",
+    "Blend the chocolate ice cream with the milk",
+    "Using a blowtorch, toast the marshmallow until golden",
+    "Line the inside and outside of a glass with lines of the chocolate ganache. Pour in the milkshake then add a large scoop of ice cream",
+    "Pipe the whipped cream around the top of the glass",
+    "Thread the marshmallow and chocolate brownie onto a wooden skewer and rest on top of the cream",
+    "Add the chocolate wafers, drizzle over some more chocolate ganache and grate over some dark chocolate",
+    "Finish with a couple of straws and serve straight away"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

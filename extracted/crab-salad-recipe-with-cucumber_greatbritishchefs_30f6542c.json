@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Crab Salad with Cucumber",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the cucumber and lemon verbena jelly. Soak the gelatine leaves in cold water and set aside",
+      "Add the cucumber pieces and lemon verbena to a blender and blitz until completely liquidised. Strain through a fine sieve and measure out 500ml of the liquid to make the jelly",
+      "Stir in the sugar and apple vinegar and add 150ml of the liquid to a small saucepan set over a low-medium heat. Squeeze any excess water from the gelatine and whisk into the heated cucumber juice until completely dissolved. Transfer to the cold cucumber mixture and chill over a bowl of ice. Place in the fridge until ready to serve, at which point you could either cut into cubes or spoon only the plate for a more rustic finish",
+      "To make the herb mayonnaise, first make a soft herb purée. Bring the water to the boil with the salt then add the herbs, cooking until soft when rubbed between your fingers. Place in a blender, blitz to a smooth purée then transfer to a bowl set over ice to chill",
+      "To make the mayonnaise, add the vinegar, salt and egg yolk to a bowl with 1 tbsp of water. Whisk together to combine, then very slowly mix in the rapeseed and olive oils to emulsify. Keep going until you have a thick mayonnaise, then stir in 25g of the herb purée at the end (you can freeze any leftover for other dishes). Add to a squeezy bottle or piping bag",
+      "To assemble the salad, mix the picked white crab meat with the crème fraîche and season with salt and the grated zest of 1 lemon",
+      "Slice the apple with a sharp knife or mandoline to a thickness of 2mm, use a small round cutter to cut out thin apple discs",
+      "Dress the plates with the herbs and herb mayonnaise and spoon the crab mixture on top in a natural fashion. Spoon on some cucumber jelly and arrange the apple discs and cresses on top of the crab"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "freshly picked",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Mint Leaves",
+        "unit": null,
+        "notes": "freshly picked",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marigold Flower",
+        "unit": null,
+        "notes": "petals plucked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumbers",
+        "unit": "large",
+        "notes": "peeled and cut into small pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7697a8d273029f051bfb6e0d5b0d2eab00d8506b8c199315cfbc9ad40dc34223",
+    "lineage_hash": "fa77806cbb2483d445a523b0d13152e74f9c122cf1e1a757dee6b685c88355f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-salad-with-cucumber-jelly-recipe",
+    "fetchedAt": "2026-08-03T10:42:00.214Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-salad-with-cucumber-jelly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

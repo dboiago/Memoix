@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Chupe de camarones (Shrimp Chupe)",
+    "time": "1 hr 40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the achiote oil in a saucepan over medium heat. Add onion, garlic, oregano, and sauté until golden. Add tomato paste and continue cooking for 5 minutes, then add the shrimp stock, and bring to a boil, skimming the stock every few minutes. Turn the heat to medium low, add rice and simmer for 15 minutes.",
+      "Add potatoes and corn, and continue simmering until the potatoes are tender, then add the peeled shrimp. Cook for 3 minutes. Add milk, salt, and pepper, and turn off the heat. Add cheese and green peas.",
+      "Heat the tablespoon of oil in a skillet and fry the eggs, one by one, sunny side up.",
+      "In each plate put some shrimp with rice, one or two potatoes, chese cubes, green peas, and the hot soup around this. Top with a fried egg and garnish with parsley and 2 large shrimps. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Achiote Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "I used 2 tablespoons roasted and pureed onion, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "I used 1 tablespoon roasted and pureed garlic, chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ají Panca Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "C",
+        "notes": "alt: fish stock",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Yellow Potatoes",
+        "unit": "lb",
+        "notes": "about 6, peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Ears",
+        "unit": null,
+        "notes": "cut in thick slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "lb",
+        "notes": "peeled and cleaned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Queso Fresco",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Sprigs",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "23e265add377c47e7e2c3a8469cfb052ed71c1c4893658a449ca313a8d2dab28",
+    "lineage_hash": "134e07c5027c6a5a090fa4269c78e8a00d9892233be910f819d803e7a3d87437"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/chupe-de-camarones-shrimp-chupe-our-champion-soup/",
+    "fetchedAt": "2026-09-25T22:21:00.178Z"
+  },
+  "rawSource": "https://perudelights.com/chupe-de-camarones-shrimp-chupe-our-champion-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

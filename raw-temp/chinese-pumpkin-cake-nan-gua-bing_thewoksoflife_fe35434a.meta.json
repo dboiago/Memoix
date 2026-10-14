@@ -1,0 +1,63 @@
+{
+  "url": "https://thewoksoflife.com/chinese-pumpkin-cake-nan-gua-bing/",
+  "slug": "chinese-pumpkin-cake-nan-gua-bing_thewoksoflife_fe35434a",
+  "title": "Chinese Pumpkin Cake (Nan Gua Bing - 南瓜饼)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T19:01:06.161Z",
+  "ldName": "Chinese Pumpkin Cakes (Nan Gua Bing - 南瓜饼)",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chinese pumpkin cake, nan gua bing",
+  "ldIngredientsRaw": [
+    "¾ cup pumpkin puree ((canned or freshly steamed))",
+    "3 tablespoons granulated sugar ((double the sugar if you have no filling))",
+    "2 tablespoons dry milk powder",
+    "2 tablespoons regular rice flour",
+    "1½ cups sweet rice flour ((glutinous rice flour))",
+    "⅛ teaspoon salt",
+    "180 g sweet filling of your choice",
+    "½ cup toasted sesame seeds",
+    "4 tablespoons neutral oil"
+  ],
+  "ldInstructionsRaw": [
+    "In a large mixing bowl, mix the pumpkin puree with the sugar, milk powder, the regular rice flour, the sweet (glutinous) rice flour, and salt. Knead into a soft dough ball. The texture should be similar to play-doh—soft and pliable. (Some pumpkins are drier than others because of age or type. If the dough is too dry to come together, add a tablespoon of water at a time until it does. If too wet, add a little glutinous rice flour.)",
+    "Divide the dough into 12 equal pieces. Take a piece, and roll it into a smooth ball between your palms. If using filling, dig a deep crater into the dough ball. Thin out the edges, add a ball of filling, close it tight, and roll it again into a smooth ball between your palms.",
+    "Fill a small bowl with water and pour the sesame seeds into a bowl or shallow dish. Next roll the dough ball in a little bit of water to moisten it, then transfer it to the sesame seeds to coat. Roll it between your palms to press in the sesame seeds. Finally, flatten it into a 3-inch disc. Repeat with all 12 balls of dough.",
+    "To cook the cakes, add about 2 tablespoons of neutral oil to a large flat-bottomed pan over medium-high heat. Arrange half the cakes in the pan with some space in between each. Cook each side until golden brown and slightly puffed in the center. Add more oil if the pan looks dry, and adjust the heat as needed to avoid burning. Repeat with the second batch and serve warm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "219 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "4 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.02 g",
+    "cholesterolContent": "1 mg",
+    "sodiumContent": "30 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "11 g",
+    "unsaturatedFatContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ¾ cup pumpkin puree (canned or freshly steamed)",
+    "▢ 3 tablespoons granulated sugar (double the sugar if you have no filling)",
+    "▢ 2 tablespoons dry milk powder",
+    "▢ 2 tablespoons regular rice flour",
+    "▢ 1½ cups sweet rice flour (glutinous rice flour)",
+    "▢ ⅛ teaspoon salt",
+    "▢ 180 g sweet filling of your choice (such as red bean paste, lotus paste, or pumpkin paste, divided into 12 equal portions and rolled into balls)",
+    "▢ ½ cup toasted sesame seeds",
+    "▢ 4 tablespoons neutral oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

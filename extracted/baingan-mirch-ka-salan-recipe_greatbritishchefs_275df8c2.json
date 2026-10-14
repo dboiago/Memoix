@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Baingan Mirch Ka Salan",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil for deep-frying to 160°C in a large pan. Cut a slit in each aubergine, lengthways and across, but not all the way through, and cut a slit down one side of each chilli. Deep-fry the aubergines and chillies until cooked through. Set aside",
+      "To make the masala, dry roast the sesame seeds, poppy seeds, dried chillies, coriander seeds, fenugreek seeds, peanuts and coconut in a small pan until lightly browned",
+      "Remove to a bowl. Once the mixture cools slightly, add enough water to grind them to a smooth paste, using a mortar and pestle or blender",
+      "Heat 1 tablespoon of the oil in the same pan and sauté the onions until lightly browned. Remove from the pan and grind to a smooth paste",
+      "Heat the remaining oil in a second pan and add the curry leaves, cumin seeds, mustard seeds and nigella seeds and once they start to crackle, add the onion paste. Cook for 1–2 minutes, so that the paste absorbs the flavours",
+      "Add the ginger-garlic paste and cook for 1 minute. Then add the masala and cook, covered, for 3–4 minutes",
+      "Add the tamarind paste, turmeric, chilli powder, some salt and the sautéed aubergines and chillies along with 500–750ml of water. Mix well. Lower the heat to medium-low, then cover the pan and cook for 20–25 minutes, or until the vegetables are completely cooked through and the gravy is thick"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for deep-frying",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Coconut",
+        "unit": "g",
+        "notes": "or desiccated coconut",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8828901de3c4e85c28ba13377385abaeae6e781b136d9ce5a7d5158c9a4314ce",
+    "lineage_hash": "1c63c8efbded56d8e58b67e4bd89d37b8f1a6640976c63504b55aa38686f5eb2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baingan-mirch-ka-salan-recipe",
+    "fetchedAt": "2026-08-02T20:12:41.615Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baingan-mirch-ka-salan-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Curry",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "197",
+      "carbohydrateContent": "7",
+      "fatContent": "10",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "In a medium bowl, combine the sliced chicken breast, 1 teaspoon vegetable oil, 1 teaspoon soy sauce, and 1 teaspoon cornstarch.",
+      "Heat your wok over high heat until smoking. Add a couple tablespoons of oil, and then add the chicken to the pan in one layer. Stir-fry the chicken just until it turns opaque, and remove from the wok. Set aside.",
+      "Add another tablespoon of oil to the wok, and add the onions. Stir-fry for one minute, then stir in the chicken stock, curry powder, turmeric, sugar, and salt to taste.",
+      "Combine the remaining 1 teaspoon of cornstarch with 2 teaspoons of water and mix until the cornstarch is dissolved. Stir it into the curry and stock mixture, and simmer for 1 minute, until thickened. If the sauce isn’t thick enough, add more cornstarch slurry. If it’s too thick, add more chicken stock.",
+      "Add the cooked chicken back to the wok, and stir for another 30 seconds. Serve with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "thinly sliced, boneless, skinless",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "halved and sliced into small wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6be0767a02dd9121b12824b33687147e2047bbf0d35b7bae803a52821503261c",
+    "lineage_hash": "ea8dba559689f7383f610e1ccb4fccbeabd32640142c3b8856df610e02fe707a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chicken-curry-takeout/",
+    "fetchedAt": "2026-08-02T19:25:57.690Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chicken-curry-takeout/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

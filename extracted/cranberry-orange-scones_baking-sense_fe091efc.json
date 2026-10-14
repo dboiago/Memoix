@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Cranberry Orange Scones",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "333",
+      "carbohydrateContent": "53",
+      "fatContent": "10",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line a ½ sheet pan with parchment paper.",
+      "In a large mixing bowl, whisk together 12 ½ oz unbleached all purpose flour, 1 tablespoon baking powder, 4 oz granulated sugar, 1 teaspoon ground cinnamon, ½ teaspoon salt, and finely grated zest from 1 large orange. Toss in 3 oz unsalted butter chunks. Work the butter in with your fingers until the bits are the size of a pea.",
+      "Whisk together 7 oz buttermilk, 2 teaspoons vanilla extract and 1 large egg. Add the buttermilk mixture to the dry ingredients all at once and mix until just barely combined. Some loose flour may remain at the bottom of the bowl. DON'T OVER MIX.",
+      "Sprinkle 8 oz cranberries over the dough and finish mixing by hand until all the loose flour is absorbed and the cranberries are evenly distributed. Turn the dough out onto a lightly floured surface and knead a few times to bring the dough together.",
+      "Using well-floured hands, pat the dough a 8” round that is 1\" thick. Cut the round into 8 wedges. Transfer the scones to the prepared baking sheet.",
+      "Brush the top of the scones with buttermilk and sprinkle with Demerarra or granulated sugar.",
+      "Bake until golden brown, about 20-25 minutes. Serve warm or room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unbleached All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold, cut into 1″ chunks",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "¾ cup plus 2 tablespoons",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh or frozen, 1 ½ cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerarra Sugar for Sprinkling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9e5fb1cc0e0b91cb5ed79cfd222875026fa91c2aff92bfc4a7413c24de588948",
+    "lineage_hash": "9d2780755cc9e0312d5b2a4140a4f86ad3663241562726df41456a08e3339d83"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/10/15/cranberry-orange-scones/",
+    "fetchedAt": "2026-08-02T07:01:22.298Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/10/15/cranberry-orange-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

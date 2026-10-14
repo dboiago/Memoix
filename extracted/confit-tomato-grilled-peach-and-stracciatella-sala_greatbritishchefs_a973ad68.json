@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Confit Tomato, Grilled Peach and Stracciatella Salad",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Light a barbecue for direct cooking or preheat a griddle pan over high heat for at least 5 minutes",
+      "Brush the peach quarters with neutral oil and cook cut side down for a few minutes or until nicely charred and softened",
+      "Char the sourdough slices for 30 seconds or so each side, taking care not to burn the bread. Set aside to cool",
+      "Combine all the ingredients for the dressing in a clean lidded jar or bowl and shake or whisk to combine",
+      "Tear the sourdough into pieces and arrange on a platter with the salad leaves, peaches, and torn stracciatella. Top with confit tomatoes and the dressing, and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peaches",
+        "unit": null,
+        "notes": "quartered and stoned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Lamb's Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buffalo Stracciatella",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confit Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated to a paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Tarragon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2148a89962ef521b3741b9a94cf876f7c274961d9a1a662b82e1da34bc900443",
+    "lineage_hash": "06839d51fb03872b80356c520c52ad9bc3091a6a871e52051dd0300f7d1bf584"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-tomato-grilled-peach-stracciatella-salad-recipe",
+    "fetchedAt": "2026-08-02T15:25:26.769Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-tomato-grilled-peach-stracciatella-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

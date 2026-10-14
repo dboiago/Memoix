@@ -1,0 +1,71 @@
+{
+  "url": "https://thewoksoflife.com/century-eggs-green-peppers/",
+  "slug": "century-eggs-with-green-peppers_thewoksoflife_1ef610b2",
+  "title": "Century Eggs with Green Peppers",
+  "byline": "Bill",
+  "fetchedAt": "2026-08-02T19:14:47.723Z",
+  "ldName": "Century Eggs with Green Peppers",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "century eggs with peppers",
+  "ldIngredientsRaw": [
+    "3  green bell peppers ((can also add jalapeño peppers if you like it spicy))",
+    "3  century eggs",
+    "½ cup low sodium chicken stock",
+    "1 tablespoon light soy sauce",
+    "1 teaspoon dark soy sauce",
+    "¼ teaspoon granulated sugar",
+    "⅛ teaspoon ground white pepper",
+    "½ teaspoon sesame oil",
+    "3 tablespoons neutral oil ((such as vegetable, canola, or avocado oil; divided))",
+    "1 teaspoon minced fresh ginger",
+    "10 cloves garlic ((sliced))",
+    "1 tablespoon Shaoxing wine"
+  ],
+  "ldInstructionsRaw": [
+    "Deseed and slice peppers into 1½ to 2-inch thick slices. Prepare the century eggs by peeling them and giving them a quick rinse. Cut the eggs in half, then cut each half into 3 to 4 wedges.",
+    "In a small bowl, add the chicken stock, light soy sauce, dark soy sauce, sugar, white pepper, and sesame oil. Set aside.",
+    "Heat a wok until it starts to smoke lightly, and add two tablespoons of oil around the perimeter. Add the peppers, and sear on both sides, turning occasionally. After the peppers are blistered on both sides, turn the heat down to medium so they don’t burn. Continue to cook the peppers (3 to 5 minutes) until they are tender and wilted. Remove them to a plate.",
+    "Add the remaining tablespoon of oil, along with the minced ginger, and cook until fragrant – about 20 seconds. Add the garlic, and cook over medium heat until fragrant (watch for burning!)",
+    "Next, add the peppers back to the wok with the Shaoxing wine. Stir well, then add the seasoned broth you prepared earlier. Stir, bring to a simmer, then add the eggs.",
+    "Give everything a stir. When the mixture is simmering, cover and cook for 1 minute. Uncover, and increase the heat to high to reduce the liquid while stirring gently and occasionally, taking care not to break up the century egg wedges. Once the sauce has reduced, plate and serve immediately with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "159 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "6 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "309 mg",
+    "sodiumContent": "283 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "10 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 green bell peppers (can also add jalapeño peppers if you like it spicy)",
+    "▢ 3 century eggs",
+    "▢ ½ cup low sodium chicken stock",
+    "▢ 1 tablespoon light soy sauce",
+    "▢ 1 teaspoon dark soy sauce",
+    "▢ ¼ teaspoon granulated sugar",
+    "▢ ⅛ teaspoon ground white pepper",
+    "▢ ½ teaspoon sesame oil",
+    "▢ 3 tablespoons neutral oil (such as vegetable, canola, or avocado oil; divided)",
+    "▢ 1 teaspoon minced fresh ginger",
+    "▢ 10 cloves garlic (sliced)",
+    "▢ 1 tablespoon Shaoxing wine"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

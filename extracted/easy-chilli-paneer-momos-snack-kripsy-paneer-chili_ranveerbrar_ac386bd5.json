@@ -1,0 +1,333 @@
+{
+  "recipe": {
+    "name": "Chilli Paneer Momos",
+    "time": "25-35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bow, add refined flour, salt to taste, sugar, water and knead it into a smooth dough.",
+      "Drizzle some oil and keep it aside for a while.",
+      "In a bowl, add carrots, cabbage, salt to taste, a pinch of sugar, light soy sauce and mix it well.",
+      "Keep it aside for a while until vegetables lose their moisture.",
+      "Squeeze out the moisture and transfer vegetables into a bowl.",
+      "Add green chillies, ginger, paneer, fresh coriander leaves, salt to taste, black pepper powder and mix it well.",
+      "Keep it aside for further use.",
+      "In a bowl, add vinegar, light soy sauce, green chilli sauce, red chilli sauce, sugar, ginger, tender coriander stems with roots, tomato ketchup, water and give it a good mix.",
+      "Keep it aside for further use.",
+      "Take prepared dough, divided into small lemon size balls, flatten with the rolling pin and add a spoonful of prepared stuffing.",
+      "Close the edges, shape them by making pleats on one side and sticking on the other side. Make it a crescent or any desired shape.",
+      "Heat oil in a kadai, add prepared momos in oil and fry them until crispy and golden in colour.",
+      "Transfer it to an absorbent sheet and keep it aside for further use.",
+      "In a wok, add oil, once it’s hot, add dry kashmiri red chillies and saute it for a minute.",
+      "Add onions, capsicum and toss it on high flames.",
+      "Add prepared sauce mixture and cook it for 2-3 minutes.",
+      "Add fried momos and saute it on high flames for a while.",
+      "Transfer it to a serving dish, garnish it with toasted sesame seeds, spring onion greens and coriander sprig.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "after kneading",
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "peeled & finely chopped",
+        "amount": "2",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "3",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Green Chilli Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Red Chilli Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems with Roots",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tomato Ketchup",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sauce Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "small",
+        "notes": "cut into diced",
+        "amount": "2",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "medium",
+        "notes": "cut into diced",
+        "amount": "1",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Sauce Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Momos",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Paneer Chilli Momos",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Greens",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fad0d9cb9cb46d83e015c0572d8c0dc17b90f64b0cb722b8ecfa812ef5f830a7",
+    "lineage_hash": "966a18198b9f74fd512922066b9a2fbfc0d5b6b49def7fc2149a7dedf230bd65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chilli-paneer-momos/",
+    "fetchedAt": "2026-08-02T20:37:26.943Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chilli-paneer-momos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

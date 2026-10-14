@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Damn Fine Coffee Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a chilled coupe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spiced Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fernet-branca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f864298e2e270829a0e00d666ce76ca92abbe1d3b24f0649008b6cbc374f940d",
+    "lineage_hash": "6dc8d29b75ec95a939d7c586159d201d3c2b898d2f1ef85555fd940bd4a4603b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/damn-fine-espresso-martini/",
+    "fetchedAt": "2026-08-04T00:15:26.012Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/damn-fine-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

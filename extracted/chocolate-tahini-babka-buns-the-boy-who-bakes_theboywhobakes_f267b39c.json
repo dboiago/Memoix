@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Chocolate Tahini Babka Buns",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the bread dough add the flour, sugar, salt and yeast to the bowl of an electric stand mixer with the dough hook attachment and mix briefly to combine.",
+      "Add the milk and eggs and knead on medium-low speed for about 10 minutes, or until the dough is smooth, elastic and pulling away from the sides of the bowl.",
+      "With the mixer still running, add the butter, a little bit at a time. Once the butter has been worked into the dough, continue kneading for a further 10 minutes or so until the dough is once again pulling away from the sides of the bowl.",
+      "Place the dough in a lightly greased bowl, cover with clingfilm and refrigerate overnight or for up to 2 days. If you prefer, you can let the dough rise at room temperature, but it’s worth making this in advance as the dough is much easier to handle when thoroughly chilled.",
+      "The next day, lightly grease or line the base of the 9x13 baking tin with a piece of parchment paper. Make the filling. Place the chocolate and butter in a heatproof bowl set over a pan of simmering water (ensuring the bottom of the bowl doesn’t touch the water underneath) until melted.",
+      "Remove from the heat, stir in the brown sugar and tahini, then set aside.",
+      "Remove the dough from the refrigerator and, working on a lightly floured surface, roll out into a large 50 x 50cm (20 x 20in) square.",
+      "Spread the chocolate tahini mixture evenly over the dough. At this point, the tahini mixture will be loose and glossy, so if you attempt to roll the dough up now it will be very messy, therefore, allow the mixture to sit for a couple of minutes until it goes a little tackier and loses its shine (don’t leave this too long though, because the filling will eventually set, meaning it won’t stick to the dough when it’s rolled).",
+      "Sprinkle over a little flaked sea salt and roll up the dough into a tight sausage.",
+      "Cut the sausage into 12 equal-sized slices and place them, cut-side up, into the prepared baking tin.",
+      "Cover with clingfilm and set aside to prove in a warm place for 45 minutes to 1 hour, or until the rolls are touching each other and feel puffy to the touch.",
+      "Meanwhile, preheat the oven to 190°C (375°F), Gas Mark 5. Bake the buns for 30–35 minutes, or until golden brown.",
+      "Meanwhile, make the syrup. Place the caster (superfine) sugar and 60ml (1⁄4cup) water in a small saucepan and cook over a low heat just until the sugar has dissolved.",
+      "Remove from the heat and add the vanilla.",
+      "When the buns come out of the oven, while still hot, liberally brush them with the syrup and then sprinkle over the sesame seeds.",
+      "Leave the buns to cool completely in the tin before removing and serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature, diced, plus extra for greasing",
+        "amount": "100",
+        "section": "Brioche Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "65–70% cocoa solids, finely chopped",
+        "amount": "100",
+        "section": "Chocolate Tahini Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": "Chocolate Tahini Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": "Chocolate Tahini Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Chocolate Tahini Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Sea Salt",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": "Chocolate Tahini Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "635236221febce1a5e1af0a8d69b76f2a770ae3eacfbdada8025764c4d267b6b",
+    "lineage_hash": "c46aa8e3b16718b4a68a85a4f44147ebaf5190311df360fccb22c49be2c5df41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2020/6/20/chocolate-tahini-babka-buns",
+    "fetchedAt": "2026-08-01T17:56:42.108Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2020/6/20/chocolate-tahini-babka-buns",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

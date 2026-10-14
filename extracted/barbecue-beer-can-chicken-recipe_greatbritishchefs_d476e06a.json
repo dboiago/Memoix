@@ -1,0 +1,378 @@
+{
+  "recipe": {
+    "name": "Barbecue Beer Can Chicken",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the chicken, remove the wishbone with a sharp knife, then make 3 incisions into each of the legs of the chicken",
+      "In a bowl, mix 70ml of the beer with the rest of the marinade ingredients to make a paste, rub the paste into the chicken all over, place into a ziplock bag and seal. Leave to marinade for 3 hours in the fridge",
+      "After 3 hours add the rest of the beer and reseal in the bag, then leave for 24 hours to marinate then remove from the bag and pat dry with a cloth",
+      "Rub the butter  under the skin and around the chicken, then season the whole chicken with salt",
+      "Open the can of beer and pour out a little of the beer so it's not quite full. Place the can into a beer can chicken holder (or prop up in a deep tray) then place the chicken onto the holder",
+      "Place the chicken onto a hot barbecue or in an oven at 190°C. Cook for 40 minutes (or until cooked through), basting the chicken twice during cooking. Once cooked, remove from the barbecue or oven, and leave to rest for 15 minutes before serving",
+      "To make the chicken sauce, in a heavy-based pan add the oil and caramelize the onions for 2–3 minutes. Add the chicken bones, garlic and thyme cook for a further 3–4 minutes",
+      "Add the Madeira and reduce the sauce by three-quarters, then add the chicken stock and bring to the boil. Lower the heat to a simmer and reduce by half until it reaches a consistency that coats the back of a spoon",
+      "Remove the sauce from the pan and pass through a muslin cloth, or fine sieve, into a pan. Season to taste",
+      "For the summer beans,  in a large pan sweat the onions in the olive oil for 2-3 minutes until soft, then add the garlic and haricot beans and cook for a further 5 minutes.\r\nAdd the tomato juice and stock and bring to the boil, reduce to a simmer and cook for 45 minutes – 1 hour until the beans are tender",
+      "Remove the lid, add the chorizo, fresh tomatoes, runner beans, broad beans, green beans, peas and salt and cook for a further 2-3 minutes. Just before serving add the fresh herbs and a squeeze of lime",
+      "To make the bread (you can start this ahead), preheat the oven to 160°C/gas mark 4. Drizzle the whole garlic heads with olive oil and wrap tightly in tinfoil. Place onto a baking tray and bake in the oven for 40 minutes until completely soft. Leave to cool slightly then push each garlic clove individually from its skin. Pass through a fine sieve and weigh out 40g of the roasted garlic",
+      "Dissolve the fresh yeast into the warm water.\r\nSieve the flour and salt into a mixing bowl then add 30g of the roasted garlic paste. Mix in a stand mixer with the dough hook attachment, adding the yeast and water bit by bit. Mix the dough for 5 minutes until smooth",
+      "Cover the dough  with a cloth and leave in a warm place to prove for 15–20 minutes. Once proved remove from the bowl and press into a tray rectangular baking tray. Cover with a cloth and leave to prove again for 15 minutes",
+      "Preheat the oven to 200°C/gas mark 6. Bake the bread for 12 minutes until golden brown. Mix together the remaining roasted garlic paste, a little olive oil and the dried thyme and brush over the bread",
+      "To serve place the chicken, sauce, vegetables and tear and share bread on the table and let everyone help themselves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Chicken",
+        "unit": "kg",
+        "notes": "preferably organic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": "in a can",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "570",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Muscavado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bones",
+        "unit": "g",
+        "notes": "roasted",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Haricot Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Sausage",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "skinned, deseeded and cut into petals",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "podded",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runner Beans",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh, shelled",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulbs of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to drizzle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "325",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7ac895c1f8c6e4f213d9d4f7a09bd9e80c2d91dbbc9b91d4a1bf15a4ae5122a",
+    "lineage_hash": "d8bc602b60a5a2c46dd4fb7a7107e5d382e54ef709814a47b3371d49c8ed8969"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-can-chicken-recipe",
+    "fetchedAt": "2026-08-03T15:42:50.190Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-can-chicken-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

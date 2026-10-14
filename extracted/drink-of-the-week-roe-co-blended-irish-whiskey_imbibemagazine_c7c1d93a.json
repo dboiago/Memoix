@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Irish Gold Brew",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IE",
+    "glass": "Irish Coffee Mug",
+    "garnish": [
+      "Shaved Chocolate"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the butter-washed whiskey, cold brew, saline or salt, and bitters into a mixing glass with ice. Stir to shill, then and strain into a mug and top with the vanilla cold foam. Top with shaved chocolate.",
+      "Melt 5 oz. of butter in a pan over medium heat until browned (5-10 min). Remove from the heat and combine with 750 ml. of Roe & Co in a sealed container. Shake gently every 10 minutes for 1 hour. Freeze until the butter solidifies, then strain through cheesecloth to remove the solids.",
+      "Whip 3 Tbsp. of heavy cream with 1 tsp. of vanilla extract."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Butter-washed Roe & Co Blended Irish Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or a Pinch Saline Solution (20%)",
+        "unit": "drops",
+        "notes": "alt: sea salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mole Bitters",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Cold Foam",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "brown",
+        "amount": "5",
+        "section": "Brown Butter-Washed Roe & Co",
+        "isOptional": false
+      },
+      {
+        "name": "Roe & Co",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": "Brown Butter-Washed Roe & Co",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Vanilla Cold Foam",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla Cold Foam",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf15b3a321753c1df34a67db437ac2b35a7d004612a348e397f10b4b4cac5d15",
+    "lineage_hash": "ee413396276ed1ba3540d7a99964079cd6f194d812423159363049a52a3bb008"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/drink-of-the-week-roe-co-blended-irish-whiskey/",
+    "fetchedAt": "2026-08-03T12:20:03.759Z"
+  },
+  "rawSource": "https://imbibemagazine.com/drink-of-the-week-roe-co-blended-irish-whiskey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

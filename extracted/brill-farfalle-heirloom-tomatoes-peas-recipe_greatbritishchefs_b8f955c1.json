@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Brill, Farfalle, Heirloom Tomatoes, Peas",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pod all of the peas apart from 4 small pods. Cook the podded peas for 4 minutes in water seasoned with the salt and sugar",
+      "Lift out the peas and save 4 tbsp of the cooking water to use in the next step. Put a few of the peas back into their pods and set aside",
+      "Blend the remainder in a thermomix or blender for 6 minutes along with the 4 tbsp of water, pass through a sieve and chill",
+      "Heat the oven to 90°C. Blanch the kilo of tomatoes in boiling water for 15 seconds then peel but leave the stalks on 8 of them. Slice the remaining and lay in a single layer on baking trays. Add the whole tomatoes. Roast in the pre-heated oven 2 hours",
+      "For the pasta, put the flour and eggs in a food processor and whizz until a dough forms. Wrap in cling film and allow to rest for 20 minutes",
+      "Roll the dough through a pasta machine, starting with seven passes through the fattest setting. Drop the setting and pass the pasta through again. Continue dropping the setting until the pasta is approx 3mm thick",
+      "Cut into 16 5cm squares with a serrated pasta cutter. Pinch each square in the middle to form the ‘bow-tie’ shape of farfalle",
+      "Heat the oven to 200°C/gas mark 6. Season the brill then roast for 10 minutes or until cooked",
+      "Heat the chicken stock in a pan. Add the fresh herbs and a dash of olive oil. Whizz in a blender until very fine. Season",
+      "Meanwhile, blanch the pasta for 2 minutes or until tender in seasoned water, drain",
+      "Warm the pea purée and pour some into each bowl. Add some tomatoes, a piece of fish and 4 farfalle. Dress each plate with the herb sauce and finish with some of the whole peas, a pea pod and 2 of the whole tomatoes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heirloom Tomato",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brill Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5670f600ecd386b451c995cc1dd779efe53e4024efa5031ad9e90132fcefd782",
+    "lineage_hash": "acd93fb178cee290bbfef70b0714c041b416dbdc58271e91fc7bb840cc60039e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brill-farfalle-english-peas-heirloom-tomatoes",
+    "fetchedAt": "2026-08-03T18:28:25.184Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brill-farfalle-english-peas-heirloom-tomatoes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Baked Asparagus with Parmesan",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "88",
+      "carbohydrateContent": "8",
+      "fatContent": "5",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 425F.",
+      "Arrange the asparagus in a baking sheet and drizzle with just a little olive oil.",
+      "In a bowl, mix the Brazilian sofrito, the parmesan, the breadcrumbs and the tablespoon of olive oil.",
+      "Sprinkle breadcrumb mixture on top of the asparagus, and season with salt and pepper. Sprinkle with a bit more parmesan cheese, if desired.",
+      "Bake for 15 minutes, or until golden brown. Rotate the pan halfway through the bake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "lb",
+        "notes": "trimmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brazilian Sofrito",
+        "unit": "Tbsp",
+        "notes": "alt: minced garlic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Parmesan Cheese",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Breadcrumbs",
+        "unit": "C",
+        "notes": "alt: panko",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e6e26137932e77727169578c6546365380a188c89512de579b51f32fe5f64b6",
+    "lineage_hash": "cdd421d48a8f80efe3990bac960da5b19c7b6f9b3e3482c0afb6ca5aa71918ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/baked-asparagus-with-parmesan/",
+    "fetchedAt": "2026-09-25T20:21:13.595Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/baked-asparagus-with-parmesan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

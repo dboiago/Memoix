@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Chinese Stuffed Peppers (青椒酿肉)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "234",
+      "carbohydrateContent": "17.9",
+      "fatContent": "8.6",
+      "proteinContent": "22.3"
+    },
+    "directions": [
+      "To prepare the chili peppers: Cut off the ends and remove and discard the seeds.",
+      "Mix all the stuffing ingredients together in a medium-sized bowl. Stir until the paste becomes sticky. Stuff the meat into each pepper, using a long spoon to push the filling down, to pack in as much filling as you can. If you don't have enough filling to fill the last pepper, cut off the part that is not filled. Dry the peppers with paper towels so the surface is dry, to prevent splatter.",
+      "Mix all the sauce ingredients together in a small bowl.",
+      "Heat the oil in a large skillet over medium-high heat until shimmering. Add the peppers. Let cook, flipping occasionally, until the surface has blistered, about 3 minutes per side. Then use a pair of tongs to stand the peppers up on their ends to brown the filling. Turn to medium heat if the oil starts to splatter.",
+      "Pour in the sauce and cover the pan. Let simmer for 5 minutes, flipping the peppers halfway through, until the meat stuffing is cooked through.",
+      "Mix the cornstarch and water until the cornstarch dissolves completely.",
+      "Uncover the pan, then transfer the peppers onto a serving plate. Pour the cornstarch slurry into the pan, stirring immediately until the sauce thickens.  Splash with the rice vinegar. Turn off the heat and pour the sauce over the peppers. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cubanelle Peppers (or Anaheim Peppers)",
+        "unit": null,
+        "notes": "*Footnote 1",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Water Chestnut",
+        "unit": "C",
+        "notes": "coarsely minced",
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1011df0e88499c2fc0a3c32c44353b09b34f9dfce45cab74a1b98b2d14007aa2",
+    "lineage_hash": "84bc3a5493e88f275ac31c3b93be5b2779d9a2328e1a51b0e293b96574e7244c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-stuffed-peppers/",
+    "fetchedAt": "2026-08-02T08:04:53.447Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-stuffed-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

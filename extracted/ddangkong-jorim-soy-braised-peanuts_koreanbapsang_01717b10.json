@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Ddangkong Jorim (Soy Braised Peanuts)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the peanuts and 2 cups of water to a small pot, bring it to a boil, and boil for about 5 minutes.",
+      "Drain the peanuts, discarding the cooking liquid.",
+      "Return the peanuts to the pot. Add the soy sauce, rice wine (or mirin), sugar, corn syrup, and water (or dasima broth).",
+      "Bring it to a boil. Reduce the heat to medium and gently boil, uncovered, until almost all the sauce has evaporated, about 20 to 25 minutes. You can increase the heat to medium high during the last few minutes. Stir occasionally and keep your eyes on the pot to avoid burning the peanuts. Sprinkle with the sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Shelled Peanuts with Skins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "alt: mirin, or white wine",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "Tbsp",
+        "notes": "1.5 TB, Korean oligodang or honey",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: dasima broth",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds - Optional Garnish",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db49eca92ee8affe814cd00d44523c2120eb348f3d2dbb0c0649553bd3140439",
+    "lineage_hash": "152c9f6bd7f2f8f563921e10fb4ed461bbf23ebfd247e9a67f31a7dfa5603dd1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/ddangkong-jorim-soy-braised-peanuts/",
+    "fetchedAt": "2026-08-02T00:03:36.862Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/ddangkong-jorim-soy-braised-peanuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

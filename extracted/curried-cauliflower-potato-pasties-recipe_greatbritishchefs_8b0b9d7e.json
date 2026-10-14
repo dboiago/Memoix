@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Curried Cauliflower & Potato Pasties",
+    "time": "1 hr 25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the filling, warm 1 tablespoon of the oil in a large frying pan over a medium heat. Add the mustard seeds and let sizzle for 30 seconds. Add the onions and a pinch of salt and cook for 10–15 minutes until just starting to colour. Add the potatoes, garlic, ginger, chillies and spices, and cook for a further 5 minutes before adding the tomatoes and 100ml of water. Simmer for a further 15 minutes or until the potatoes are just cooked and the sauce\r\nhas thickened",
+      "Meanwhile, preheat the oven to 220°C fan/240°C/gas mark 9",
+      "Rub the cauliflower florets all over with the remaining oil and scatter across a roasting tray. Place the tray in the preheated oven and roast the cauliflower for 15 minutes until softened and coloured",
+      "Lower the oven temperature to 200°C fan/220°C/gas mark 7",
+      "Add the cauliflower to the potato mixture, squeeze in the juice of half a lime, season to taste and then set aside to cool",
+      "Divide the pastry dough into four equal balls. On a lightly floured surface, roll out each ball to a 1cm thick circle. Divide the filling mixture equally between the pastry discs, spooning it onto one half of each disc. Fold over the other half of each pastry disc to cover the filling and crimp the edges together",
+      "Line a baking tray with parchment paper. Place the pasties on the lined tray, brush the surface of the pastry all over with the egg wash and add a sprinkle of sea salt. Place the tray in the hot oven and bake the pasties for 25 minutes or until the pastry is golden brown. Serve either while still warm or at room temperature with a spoonful of mango chutney"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hot Water Crust Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "beaten with 1 tsp water, for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Chutney",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Floury Potatoes",
+        "unit": "g",
+        "notes": "peeled and cut into 1cm chunks",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "cut into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e4b2e66aaf2e51895b58e101bc8cc88a50085fd1aad5ac7271d82c8913442f8",
+    "lineage_hash": "501cfca9c3acd8faafd203dc8067a0ad3697f542b8b2a09b59d225173b5d5700"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-cauliflower-potato-pasty-recipe",
+    "fetchedAt": "2026-08-03T03:30:52.521Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-cauliflower-potato-pasty-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

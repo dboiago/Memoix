@@ -1,0 +1,49 @@
+{
+  "url": "https://muybuenoblog.com/crema-mexicana/",
+  "slug": "crema-mexicana-mexican-style-sour-cream_muybuenoblog_f92d6426",
+  "title": "Crema Mexicana (Mexican-Style Sour Cream) -",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T06:03:19.532Z",
+  "ldName": "Crema Mexicana (Mexican-Style Sour Cream)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "condiment",
+  "ldKeywords": "cream, crema",
+  "ldIngredientsRaw": [
+    "1 cup heavy cream",
+    "1 cup sour cream",
+    "1 teaspoon salt",
+    "fresh lime juice (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the creams and salt in a bowl and whisk until smooth.",
+    "Add fresh lime juice to taste and combine."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "126 kcal",
+    "carbohydrateContent": "2 g",
+    "proteinContent": "1 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "40 mg",
+    "sodiumContent": "246 mg",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup heavy cream",
+    "▢ 1 cup sour cream",
+    "▢ 1 teaspoon salt",
+    "▢ fresh lime juice, to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

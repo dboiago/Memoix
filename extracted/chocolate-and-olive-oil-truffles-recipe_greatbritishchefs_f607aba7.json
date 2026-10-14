@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Chocolate and Olive Oil Truffles",
+    "time": "1 hr 15 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the cream and milk together in a medium pan and bring to the boil",
+      "Melt the chocolate, pour it into the milk and cream, and then slowly mix in the olive oil until well combined",
+      "Pour the mixture into a bowl and leave to set uncovered in the fridge for at least 3 hours",
+      "Whilst the truffles cool, make the red pepper and raspberry jelly. Preheat the oven to 180°C/Gas mark 4 and roast the peppers for 40 minutes until soft. When they have cooled slightly, peel them and deseed",
+      "Pour the vinegar, water, sugar and raspberries into a pan and bring to the boil. Add to the peppers and blitz with the stick blender until smooth",
+      "Soak the gelatine in cold water for 4 minutes, squeeze it out and then add to the pepper mixture. Stir until dissolved and then pass through a fine sieve into a bowl — it should form a 1cm thick layer",
+      "Leave the mix to set in the fridge. Once set, cut into 1cm cubes",
+      "Quenelle the truffle mixture using a dry, warm spoon. Place the truffle quenelles on a plate with the cubes of jelly around and finish with a sprinkling of salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da480ec72b3f7d47c786f718d2188490882cb953051850abd618210487cd684f",
+    "lineage_hash": "ea40bf75fa147d5ac6d596482e0dff0f052ea594998c9cb67ddaff32f3399ecb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-olive-oil-truffles-recipe",
+    "fetchedAt": "2026-08-03T18:41:39.874Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-olive-oil-truffles-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

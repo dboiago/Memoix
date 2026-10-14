@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chocolate Semifreddo",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chopped dark chocolate in the microwave or in a double boiler and set aside to cool down slightly. Whip the cream and set aside",
+      "Whip the egg whites with the lemon juice until stiff peaks form and set aside. In the bowl of an electric mixer, beat the egg yolks and the granulated sugar until fluffy and pale",
+      "Add the rum and the melted chocolate to the eggs and keep mixing until combined. Gently fold in the whipped cream and egg whites and mix with a spatula to incorporate until smooth. Do so gently, so as not to deflate the mixture",
+      "Divide into small glasses or cups and place in the freezer for at least 4 hours. Remove from the freezer 5 minutes before serving. To serve, decorate with grated dark chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped, plus some extra grated chocolate to garnish",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "35% fat",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3733f796c9fc1e60aa3b47b1317a3b9c3c982ead03c59cd3ea0738ed63ff4cf5",
+    "lineage_hash": "7cb8de43e5167c99b1c55e53175dea00f0d6e0408409cb0824a0d306245fb7c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chocolate-semifreddo-recipe",
+    "fetchedAt": "2026-08-02T02:58:36.122Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chocolate-semifreddo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

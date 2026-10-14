@@ -1,0 +1,55 @@
+{
+  "url": "https://www.baking-sense.com/2016/01/20/cajeta-milk-caramel-sauce/",
+  "slug": "cajeta_baking-sense_f1ae1181",
+  "title": "Cajeta",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T15:49:43.005Z",
+  "ldName": "Cajeta Recipe - Mexican Caramel Sauce",
+  "ldTime": "PT135M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT120M",
+  "ldYield": [
+    "48",
+    "48 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Dessert",
+  "ldKeywords": "caramel, goat milk",
+  "ldIngredientsRaw": [
+    "32 oz goat milk (4 cups (see note))",
+    "8 oz granulated sugar (1 cup)",
+    "1  Cinnamon stick (\"true\" or Mexican cinnamon is preferred)",
+    "1/2 teaspoon baking soda"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 2 cups of the goat milk with the sugar, cinnamon stick and baking soda in a very large, heavy pot like a Dutch oven. Heat over medium high.",
+    "As soon as the mixture begins to boil it will foam up. Quickly stir with a wooden spoon to reduce the foam. Once the foaming subsides add the rest of the milk to the mixture. Continue to cook over medium keeping a close eye to watch for boil over.",
+    "Once the mixture is simmering evenly and the foam has subsided, reduce the heat to medium low. Stir occasionally. The cajeta will deepen in color and reduce in volume as it cooks. After about 1 ½ to 2 hours you&#39;ll need to stir more frequently as the mixture thickens.",
+    "You can check the thickness by dropping a spoonful of the cajeta on a chilled plate and placing it in the freezer to chill. Once it&#x27;s chilled run a finger through the cajeta to check the texture.",
+    "Towards the end of cooking the mixture will boil thickly. At this point stir very frequently to avoid burning the bottom.",
+    "Cook for about 2 hours or to the desired color and thickness. Pour the hot cajeta through a sieve to remove any broken bits of cinnamon. Cool to room temperature and store in the refrigerator until ready to use. The cajeta can be frozen for longer term storage."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "31 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "2 mg",
+    "sodiumContent": "21 mg",
+    "fiberContent": "0.04 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "0.23 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "32 oz goat milk (4 cups (see note))",
+    "8 oz granulated sugar (1 cup)",
+    "1 Cinnamon stick (“true” or Mexican cinnamon is preferred)",
+    "1/2 teaspoon baking soda"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

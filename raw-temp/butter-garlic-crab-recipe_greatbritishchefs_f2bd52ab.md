@@ -1,0 +1,5 @@
+A buttery, rich, sweet dip brimming with [crab](https://www.greatbritishchefs.com/ingredients/crab-recipes) meat is the ultimate indulgence, and this recipe from Will Bowlby is ready in as little as 10 minutes.
+
+Will says: _‘If you ever visit Mumbai as a tourist, one of the first restaurants that is always recommended is a place called Trishna in Kala Ghoda – its fame carried on this one dish alone. The buttery-sweet crab makes this indulgent dish hard to resist and I have also used a little brown crab meat, for added flavour. The papads (dusted with blitzed seaweed) are the perfect vehicle for scooping up all that delicious crab meat – this is definitely one to try out at home! You can also serve this with freshly baked bread, to mop up all the juices.’_
+
+This recipe is taken from _Kricket: An Indian-Inspired Cookbook_ by Will Bowlby (£28, Hardie Grant). Photography by Hugh Johnson.

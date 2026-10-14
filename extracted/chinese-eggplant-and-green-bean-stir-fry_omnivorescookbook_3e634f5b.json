@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Chinese Eggplant and Green Bean Stir Fry",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "179",
+      "carbohydrateContent": "13.7",
+      "fatContent": "13.9",
+      "proteinContent": "2.4"
+    },
+    "directions": [
+      "Remove the tough end of the Chinese eggplant. Cut the eggplant into large batons that are about 1/2” thick and 3” long. Transfer to a large bowl, add cold tap water to cover. Add 2 teaspoons of salt and stir to dissolve. Soak the eggplant while preparing the rest of the ingredients.",
+      "Mix all the sauce ingredients together in a small bowl and set aside.",
+      "Once you’re ready to cook, drain the eggplant and pat dry with paper towels.",
+      "Heat 1 tablespoon of oil in a wok over medium-high heat until it shimmers. Spread out the green beans without overlapping. Cook over medium heat for 8 to 10 minutes, stirring occasionally, until the green beans have turned tender but still have some crispness, and are charred on the surface. Turn to medium-low heat if the pan gets too hot and the green beans start to burn. Transfer the cooked green beans to a plate.",
+      "Add 2 tablespoons of oil and the eggplant. Stir to coat the eggplant with oil, then spread out everything without overlapping. Cook for 6 minutes, stirring occasionally, until the eggplant has turned tender. Transfer to a plate.",
+      "Add the remaining 1 tablespoon of oil, garlic, scallion whites and dried chili pepper. Stir and cook over medium heat to release fragrance. Add back the cooked eggplant and green beans and pour in the sauce. Stir and cook until the sauce has thickened. Add scallion greens, stir again and transfer to a big plate. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Eggplant",
+        "unit": null,
+        "notes": "about 1/2 lb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "lb",
+        "notes": "tough ends removed",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts divided",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Pepper",
+        "unit": null,
+        "notes": "dried, halved and seeds removed",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "488db8bf07f751966415708f8a773e043ab379733743e315c5dcfe3cbc75c4d7",
+    "lineage_hash": "a2eb2f836bcf412a18c59bbbf97c6097b98c5e60f8416dd7a46bb05289740707"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-eggplant-and-green-bean-stir-fry/",
+    "fetchedAt": "2026-08-02T10:09:57.471Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-eggplant-and-green-bean-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

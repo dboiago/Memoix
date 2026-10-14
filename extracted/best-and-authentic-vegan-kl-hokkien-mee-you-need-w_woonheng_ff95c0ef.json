@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "KL Hokkien Mee",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the vegetables: Separate the gailan stems and leaves. Slice the stems diagonally into bite size pieces, then transfer them into two different bowls. If using yuchoy, simply separate the leaves from the stems.",
+      "⁣To prepare the mushrooms, clean them with a brush or towel to remove debris. Then, cut into 1 inch thick coins. Using a paring knife, score both sides and set them aside.",
+      "Slice about 5oz of tofu into rectangle slices and the rest into tiny cubes. Then, pan-fry tofu rectangles with a drizzle of oil until golden brown, season with salt & set aside.",
+      "Using the same pan, add a little more oil & cook tofu cubes until crispy & season with salt - these will be saved as toppings. ⁣",
+      "Now, pan-fry the mushrooms until golden brown and season with salt as well. Set aside.",
+      "Soak thawed noodles in cold water or cook frozen noodles in boiling water for 1-2 mins to loosen up the strands. Drain & set aside⁣.",
+      "To make the sauce, combine soy sauce and thick caramel sauce in a bowl, then whisk to combine. Set it aside.",
+      "Heat a large wok or non-stick skillet over medium heat and add a tablespoon of oil. Sauté garlic until fragrant, about 30 seconds or so.",
+      "Add the tofu slices and gai lan stem and toss to combine. If you are using yuchoy, add that along with cabbage later.",
+      "Then, add the noodles and swirl in the sauce. Give it a quick toss to coat the noodles with sauce.",
+      "Add the vegetable stock and turn up the heat. Cover the pan with a lid and let the mixture cook until the sauce has reduced to almost half.",
+      "Uncover, add the cabbage and remaining gai lan leaves, then toss to combine. Taste and season with more soy sauce or mushrooms seasoning if needed.",
+      "Once the cabbage is as crisp-tender as you like, fold in the mushrooms and gently toss to combine.",
+      "Turn off the heat and transfer the noodles to a large plate.",
+      "Top with the crispy tofu cubes and serve warm with a side of sambal or chopped Thai chile in soy sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Udon Cakes",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Oyster Mushrooms",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firm Tofu – Drained",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove Finely Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gailan Stems and Leaves Removed",
+        "unit": "C",
+        "notes": "or use yuchoy, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Caramel Sauce See Notes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Seasoning",
+        "unit": "tsp",
+        "notes": "alt: vegetable bouillon",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "½ Cups Vegetable Stock See Notes",
+        "unit": null,
+        "notes": null,
+        "amount": "2-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f26f223179642330ef49475a38197a1890a30bb52c1ca6167e892ee016df1c9",
+    "lineage_hash": "be044d363e8d3da45e0fc212adf99a9709a9a4b5eda4fa59bbb1928232505d02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/vegan-kl-hokkien-mee/",
+    "fetchedAt": "2026-08-01T18:43:10.869Z"
+  },
+  "rawSource": "https://woonheng.com/vegan-kl-hokkien-mee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Coconut and Yoghurt Arancini with Yoghurt Sorbet",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the yoghurt sorbet. Ensure the bowl of your ice cream machine is fully frozen",
+      "Place the double cream, sugar, honey and glucose in a pan and gently heat, stirring to dissolve the sugar and glucose. Remove from the heat and cool",
+      "Once cooled, stir in the yoghurt until equally combined. Churn in the ice cream machine and then freeze until ready to serve",
+      "Lightly fry the rice in the tablespoon of oil until toasted and starting to turn light golden",
+      "Add half the water and stir until thick, then add the rest of the water. Stir every now and then to avoid sticking to the pan",
+      "After about 10–15 minutes, when the rice is almost cooked, add the desiccated coconut, creamed coconut, black sesame seeds and sugar then remove from the heat and allow to cool",
+      "Once the rice is at room temperature add the yoghurt and mix well to combine. Place the mixture in the fridge until chilled",
+      "Roll the rice mixture out into 20g balls",
+      "Set up three shallow bowls; one with the flour, the next with the beaten egg and the final with the Panko breadcrumbs",
+      "Roll the balls in the flour, then egg, then coat in breadcrumbs. Store in the fridge until needed",
+      "To serve, heat a pan of oil until it reaches 170°C. Deep-fry the balls for around 4–6 minutes, or until the balls are nice and golden and hot in the centre",
+      "Serve with the diced mango and the yoghurt sorbet on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pudding Rice",
+        "unit": "g",
+        "notes": "Michael also suggests risotto rice for a different texture",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creamed Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "diced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "440dfcdfe0240e9f498fe58af4b1ea9b9013aa6776f49788e2ad178bde9b5124",
+    "lineage_hash": "fb0fc5fef03bbb0c848aed3f6b5a69d8d38327e2cc625e02c462bf52f94edcee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-yoghurt-arancini-recipe",
+    "fetchedAt": "2026-08-03T07:22:02.036Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-yoghurt-arancini-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

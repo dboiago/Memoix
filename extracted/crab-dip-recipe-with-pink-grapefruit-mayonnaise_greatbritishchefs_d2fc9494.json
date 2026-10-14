@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crab Dip With Pink Grapefruit Mayonnaise",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the crab dip, squeeze the grapefruit juice into a saucepan and bring to the boil. Simmer gently until reduced by half",
+      "Remove from the heat and pass through a fine sieve, then leave to cool to room temperature",
+      "Mix the crab meat, mayonnaise, chopped parsley and cayenne pepper together",
+      "Add the reduced pink grapefruit juice to taste and mix in thoroughly. Check the seasoning, cover and refrigerate",
+      "Preheat the oven 180˚C/Gas mark 4. Slice the wholemeal rolls into thin slices and arrange on a baking tray. Drizzle with the rapeseed oil and place another baking tray on top",
+      "Transfer to the oven and cook for 15-18 minutes or until golden brown. Remove the sliced bread from the trays and leave to cool to room temperature",
+      "To serve, place the dip alongside the toasts on a board. Add a few pink grapefruit segments and garnish with the micro pea shoots"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cornish Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholemeal Bread Rolls",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": "segmented, to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd03c702221ef363ddb26b18f87aa51f5ab71eff8981d277399aef60ffd3661e",
+    "lineage_hash": "210d1c9e850c213b38fd135210b5615c6646be1c632b583a1e2a221757be4634"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-dip-pink-grapefruit-mayonnaise-canape",
+    "fetchedAt": "2026-08-03T22:23:29.590Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-dip-pink-grapefruit-mayonnaise-canape",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

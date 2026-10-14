@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chocolate Pie with Rice Pudding",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the flours, sugar and cocoa powder with a pinch of salt. Add the cold butter cut into small pieces and mix the ingredients until you obtain a coarse mixture. Quickly mix it with half an egg. Shape it into a ball and let it rest in the fridge for 1 hour in a bowl covered with plastic wrap.",
+      "Roll out the pastry to 3 mm. thick and use it to coat a mold (ø 7 in.) with straight edges (h 3/4 in.). Place a circle of parchment paper above it, fill it with dried beans and bake at 350 °F for 20 minutes. Remove from the oven, remove the paper and beans and let cool.",
+      "Add the rice to lightly salted boiling water and cook it for 5 minutes from when it returns to a boil, letting it lose a bit of its starch. Drain and pour it into a saucepan with the cold milk, sugar and and a vanilla pod sliced in half lengthwise. As soon as it comes to a boil, turn the heat to low and cook for 45-60 minutes, stirring often so it does not stick to the pan. Cook until all the milk has absorbed and the rice has a creamy texture without being too dry. Then transfer it to a bowl and let it fully cool to room temperature.",
+      "Then mix it with the honey and yogurt and add aroma, if you like, with a teaspoon of rose water or orange blossom water. Fill the pie with the rice pudding and put it in the fridge for 1 hour. Decorate as desired just before serving with sliced pan-toasted almonds, shortbread crumbs, cocoa beans (chopped, peeled and pan-toasted) and rose petals."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅞",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Originario Rice",
+        "unit": "C",
+        "notes": "round rice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Acacia Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad4e847ff164181ab9a0a1e09ab1f32956923778db3bb5dc489ec030fd28e485",
+    "lineage_hash": "03d1cf9f6fdb98757bc5a86153a185afe7c779e26e6a46ed317837ce5f753b0b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-pie-with-rice-pudding",
+    "fetchedAt": "2026-08-03T03:39:51.546Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-pie-with-rice-pudding",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

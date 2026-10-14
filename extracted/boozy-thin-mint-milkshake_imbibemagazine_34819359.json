@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Boozy Thin Mint Milkshake",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and blend until smooth. Pour into a glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Menthe",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Mint Cookies",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "542c05cee14998192e19b18b0541d653eca6e2ca4a6ea29696492e92fe7111ad",
+    "lineage_hash": "c19105fac517d24ae809b150745d782c5785455915c662b1171314f164b2c46b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-thin-mint-milkshake-recipe/",
+    "fetchedAt": "2026-08-03T20:10:48.737Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-thin-mint-milkshake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

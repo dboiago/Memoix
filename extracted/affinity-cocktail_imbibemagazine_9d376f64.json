@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Affinity Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, strain into a chilled glass, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Highland Single Malt Scotch Whisky",
+        "unit": "oz",
+        "notes": "Bramble uses Glenmorangie 10 year old",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Byrrh Grand Quinquina",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "Bramble uses Noilly Prat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b77946b51886ed9f1d18c5014b863c3f090b3bcfd0d697643c41637fa3d966a2",
+    "lineage_hash": "8a1820e8ca92a5687e522f6bcde3c3d0c0d03f3f32af2756249353c10d7ce58c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/affinity-cocktail/",
+    "fetchedAt": "2026-08-03T18:53:36.598Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/affinity-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

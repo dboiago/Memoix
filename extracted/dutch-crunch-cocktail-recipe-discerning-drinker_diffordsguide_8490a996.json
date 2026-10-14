@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Dutch Crunch Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "A dusting of freshly grated nutmeg completes this satisfying old-school cocktail"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro Montenegro",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thomas Henry Tonic Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c27c3fd03933368a21ffeb8e0d94f28870d22ccd1da8f461ebed8b8b6fb4f9e5",
+    "lineage_hash": "af66e16942c81f48bfe0f96ed6a3e2cff5cbebdf171e77664ca09d6e8513bd4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/16688/dutch-crunch",
+    "fetchedAt": "2026-08-04T05:12:09.035Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/16688/dutch-crunch",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

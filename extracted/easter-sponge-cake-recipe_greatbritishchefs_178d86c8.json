@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Easter Sponge Cake",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 180°C/gas mark 4 and grease a 26cm plain bundt tin or ring pan",
+      "Begin by making the cake batter. In a large clean bowl, whisk the butter until fluffy and add the egg yolks one-by-one. Mix in the sugar, flour and cornflour with a spoon",
+      "Transfer to a food mixer fitted with a paddle attachment and work the batter for at least 8 minutes. Add the lemon juice, lemon zest, brandy, salt and baking powder",
+      "Meanwhile, whisk the egg whites in a medium bowl until stiff",
+      "Once stiff, turn off the food mixer and carefully the egg whites into the batter. Pour the batter into the tin and bake in the oven for 40 minutes",
+      "Meanwhile, make the cake filling. Add the butter to a food mixer and beat until light and fluffy. Gradually add the icing sugar, then fold in the Easter eggs or ground almonds (if using)",
+      "Remove the cake from the tin, allow to cool and cut horizontally with a bread knife. Spread half of the filling onto the bottom sponge and top with the remaining sponge half",
+      "Combine the ground almonds, butter and sugar in a pan and heat until lightly browned and caramelised",
+      "Mix with the reserved filling until well-combined then use to ice the cake. Alternatively, you can ice the cake with the filling and drizzle the almond, butter and sugar mix over the cake to descorate",
+      "Place the cake on a serving platter, fill the hole with Easter eggs and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature, separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": "crushed, or almonds (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "tsp",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2dfa990c299eb3d103cd58e9db7731d166b335fa78a7de3073dc5ec8a7cb100",
+    "lineage_hash": "4776a7991fe365c2cb0ec53a155b6f0600ae035a3b653db8f1e9ca31a9839b29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-crown-cake-recipe",
+    "fetchedAt": "2026-08-03T13:21:38.268Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-crown-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

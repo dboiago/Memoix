@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Churrascaria Lamb Skewers",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut lamb steaks into 3cm pieces (about 40). Combine vinegar, oil, garlic, paprika, lemon rind and thyme in a medium bowl and marinate for 10 minutes while you make the sauce",
+      "Mix together all the ingredients for the ají sauce and set aside",
+      "Thread the red onion, red peppers and lamb alternately onto the skewers",
+      "Cook the skewers on a barbecue or in an oiled griddle pan over medium-high heat until browned all over and lamb is cooked through, about 15 minutes. Serve with creamy ají sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Leg Steaks",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": null,
+        "notes": "cut into 2cm squares",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "cut into 2cm squares",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeños",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "small, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81c16d580c93a409fde1f4b75afcb7a18d4f64c42279704b0d35dd429e2d2447",
+    "lineage_hash": "b108866f3c0bc656036e589c92f4f57cf4a833f6ed0f3d7a1eb9bd294bf67e59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/churrascaria-lamb-skewers-recipe",
+    "fetchedAt": "2026-08-03T11:07:06.198Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/churrascaria-lamb-skewers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

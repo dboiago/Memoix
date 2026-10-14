@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Batata Vada With Coriander Chutney",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the potatoes in a pan of cold salted water and bring to the boil. Simmer for 15-18 minutes until tender, then drain well and allow to steam dry",
+      "Meanwhile for the coriander chutney, blitz all of the ingredients in a food processor or blender, adding water as needed to achieve a spoonable consistency. Taste and adjust the seasoning with salt and black pepper. Set aside",
+      "For the batter, whisk together the gram flour, turmeric, chilli powder, baking powder and salt in a bowl. Gradually whisk in enough water to form a thick, smooth batter – it should coat the back of a spoon (you may need slightly more or less water). Set aside to rest",
+      "Once the potatoes are tender, mash them until smooth but still with a little texture – a slightly rougher texture gives a better bite after frying",
+      "Heat the vegetable oil in a pan over a medium heat. Add the mustard seeds and allow them to pop, then add the cumin seeds and curry leaves. Add the chopped green chillies and ginger, cooking for 1 minute more until fragrant",
+      "Stir in the turmeric, add the mashed potatoes and salt and mix thoroughly. Finally stir in lemon juice and coriander",
+      "Allow the mixture to cool slightly, then shape into golf ball-sized portions approximately 40-45g each",
+      "Place the oil in a deep saucepan no more than two thirds full and heat to 170-175°C",
+      "Dip each potato ball into the batter to fully coat, then carefully lower into the oil. Fry for 4-5 minutes until golden, crisp and the batter is cooked through, turning occasionally – you will need to fry in batches to maintain the oil temperature at around 170°C. Once done, remove with a slotted spoon and drain on kitchen paper",
+      "Arrange the vada in a serving dish. Serve with the coriander chutney, reserved coriander leaves, some lemon zest and a pinch of cayenne pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nanna Tate Potatoes",
+        "unit": "g",
+        "notes": "peeled and cut into chunks",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "cm",
+        "notes": "finely grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunches",
+        "notes": "a few leaves reserved for garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d1eb8bb2eef763ca264a5829e9efb80af2a36a6a93191b8b40f3da6aa67c456",
+    "lineage_hash": "4c93214bb4866720d685aeb30d3de814b2c2a6e2d6a16a872d01cd3cd215274a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/batata-vada-coriander-chutney-recipe",
+    "fetchedAt": "2026-08-01T19:38:17.737Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/batata-vada-coriander-chutney-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

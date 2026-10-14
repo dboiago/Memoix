@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Beijing Peach",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": "Cocktail",
+    "garnish": [
+      "Orchid"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in cocktail shaker filled with ice.",
+      "Shake until chilled and strain into a cocktail glass.",
+      "Garnish with an orchid."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jasmine Tea-infused Vodka",
+        "unit": "oz",
+        "notes": "see Editor's Note",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peach Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90e6c8dbafc3f1ef3453f4674c17731bce7d8886a324a7f0d97d4fbdd8c8a015",
+    "lineage_hash": "4be720b22ed648daeef54d6e62f44f4d831271cb5ab813b605d5ff21362dfc13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/beijing-peach/",
+    "fetchedAt": "2026-08-02T21:49:45.252Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/beijing-peach/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

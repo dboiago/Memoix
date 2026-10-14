@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Autumn-Spiced Lentil Dhal with Crispy Onions and Pickled Coriander",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil or ghee in a saucepan. Add the onion and cook until soft and golden, about 10 minutes",
+      "Stir in the garlic, ginger and spices and cook for 1 minute until fragrant",
+      "Add the lentils, stock and coconut milk. Simmer for 20-25 minutes until the lentils are soft and creamy. Season to taste",
+      "Meanwhile, make the toppings. Finely chop the coriander stems and mix with lime juice, vinegar and a pinch of salt. Leave to pickle while the dhal simmers",
+      "Heat up a few centimetres of oil in a small saucepan, and fry the sliced onion until deep golden brown and crisp. Drain on paper towels",
+      "Spoon the warm dhal over each slice. Top with crispy onions, pickled coriander stems and fresh coriander leaves. Add a final squeeze of lime and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sourdough",
+        "unit": "slices",
+        "notes": "seeded",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "leaves picked and stems reserved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "plus extra wedges and a little more juice to finish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or ghee",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Lentils",
+        "unit": "g",
+        "notes": "rinsed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee2b24c5dd3096c7e960a9c7ee912b4a3365c87be42e206d1d8f11462cf5f5ee",
+    "lineage_hash": "91a5245b139ddc2f0026a48cc5329c5c21d7d56eed8264b7b1a267722f9f8e42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/lentil-dhal-crispy-onions-pickled-coriander-recipe",
+    "fetchedAt": "2026-08-01T23:59:44.866Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/lentil-dhal-crispy-onions-pickled-coriander-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

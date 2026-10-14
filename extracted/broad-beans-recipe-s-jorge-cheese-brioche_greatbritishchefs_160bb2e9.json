@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Broad Beans Recipe, S. Jorge Cheese & Brioche",
+    "time": "2 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the brioche crumbs, cut the crusts off the loaf and make the inside into crumbs. Put them on a baking tray and toast under the grill until golden",
+      "To prepare the broad beans, char the pods under the grill. Once charred, open the pods with scissors and remove the beans",
+      "Reserve the pods and peel the beans. Transfer the beans to a bowl and season with olive oil and salt",
+      "To put together the pea purée, make a dill oil by blitzing the dill in the grapeseed oil with 1 teaspoon of the salt. Pour into a pan and cook until the dark green oil separates off from the dill paste",
+      "Put 4 tablespoons of the dill oil in a blender with the peas, lemon juice and 1 teaspoon of salt and whizz to a purée",
+      "Put a spoonful of the crumbs on each plate. Carefully put the beans back into each pod and make dots of pea purée between each bean. Put on the plate and garnish with the crumbled pieces of cheese and torn sprigs of dill"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broad Bean Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Loaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Jorge Cheese",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f53bd3798216d7bfeaa571c61f865b1efcd89812f1cabaafc744c81105be018",
+    "lineage_hash": "b9b07796e0378c64cdb7b67779afb4ce3b07d88fc48bc4fa5a99710e1338ba33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/broad-beans-recipe-cheese-brioche-crumbs",
+    "fetchedAt": "2026-08-03T15:57:57.040Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/broad-beans-recipe-cheese-brioche-crumbs",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

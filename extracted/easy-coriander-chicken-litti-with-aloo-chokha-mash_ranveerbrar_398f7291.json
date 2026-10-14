@@ -1,0 +1,232 @@
+{
+  "recipe": {
+    "name": "Coriander Chicken Litti With Aloo Chokha Mash",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "place the coriander, green chillies, ginger, garlic, salt and lemon juice in a blender and grind into a paste.",
+      "Heat the oil in a pan. Add the paste and fry for a minute. Add the shredded chicken and fry for a little bit longer. Check the seasoning and adjust as required.",
+      "Make sure the mixture is completely dry. Remove from heat and keep aside to cool down.",
+      "sieve the flour into a bowl. Add the ghee, carom seeds, baking soda and salt to this.",
+      "Add the yoghurt into the mixture and knead into a soft dough. Add some warm water, if required.",
+      "Cover the dough with cling film and keep it aside for 30 minutes to rest.",
+      "Once ready, shape the dough into medium size individual portions.",
+      "Use your fingers to expand each piece into a circle, 2-3’ in diameter. Place 2 tsp of the stuffing in it, wrap up the dough piece around it, close from all sides and flatten it a bit. Repeat with the other portions.",
+      "Heat the oil in a deep pan; fry the littis, a few at a time, till golden brown. Remove and drain the excess oil on absorbent kitchen towel.",
+      "For the mash, heat the mustard oil in a pan. Add the red chillies and let it release its flavour into the oil.",
+      "Add the onion and garlic and fry till golden brown.",
+      "Add the spice powders and cook for a minute more.",
+      "Add the potato mash to this and mix well.",
+      "Check for seasoning and adjust as required. Serve hot along with the littis."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "boiled and shredded",
+        "amount": "200",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Green Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "roughly cut",
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Wholewheat Flour",
+        "unit": "C",
+        "notes": "atta",
+        "amount": "2",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": "ajwain",
+        "amount": "½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "C",
+        "notes": "lightly whisked",
+        "amount": "¾",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "boiled and mashed",
+        "amount": "250",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilies",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1-2",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "amchur",
+        "amount": "½",
+        "section": "For Litti & Aloo Mash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e34472a582d6c483c7ea55dfb85999579a0025d533acc63d14e24721b61cb69",
+    "lineage_hash": "b753788c49a4047817cd39a2cbe335f0e0437009f237d26186788bb7b98d0fb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/coriander-chicken-litti-with-aloo-chokha/",
+    "fetchedAt": "2026-08-02T14:23:40.629Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/coriander-chicken-litti-with-aloo-chokha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

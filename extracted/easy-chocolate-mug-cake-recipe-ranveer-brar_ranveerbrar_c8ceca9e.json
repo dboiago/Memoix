@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chocolate Mug Cake (चॉकलेट मग केक)",
+    "time": "6-7 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Whipped Cream",
+      "Mint Leaves",
+      "Strawberry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add cocoa powder, all purpose flour, chocolate spread, and castor sugar.",
+      "Add baking powder, milk, vegetable oil and mix it well",
+      "Microwave for 60 seconds.",
+      "Top with whipped cream, strawberry, mint leaves and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Spread",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d2c5809485065cd5c46eddd14b72890d2bb3833d6a6734eacf4b9bc43c0bc080",
+    "lineage_hash": "51be1b881bc68b72f2883a0a797040a59b10bdcd9c17d2613ba88b52db0856d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chocolate-mug-cake/",
+    "fetchedAt": "2026-08-02T19:45:16.141Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chocolate-mug-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

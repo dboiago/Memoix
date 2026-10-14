@@ -1,0 +1,277 @@
+{
+  "recipe": {
+    "name": "Dal Maharani (शाही दाल महारानी / मिक्स दाल तड़का / शादी वाली दाल)",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortal pastel add ginger, garlic, green chillies, salt and crush them coarsely.",
+      "Keep aside for further use.",
+      "In a press cooker add whole black gram, whole green moong, chana dal, crushed paste, salt, water, turmeric powder, degi red chilli powder, coriander powder, butter and cover the lid and give 3-4 whistles on medium high heat.",
+      "In a heavy bottom pot heat ghee and add cloves, cumin seeds let them crackle and add onion saute until translucent.",
+      "Now add garlic-ginger paste saute it along with onion until light brown.",
+      "Then add turmeric powder, degi red chilli powder, asafoetida, coriander powder and saute until fragrant.",
+      "Add the fresh tomato puree, salt and continue cooking until the ghee starts coming from sides.",
+      "Pour the cooked dal from the cooker and mix everything properly by mashing the dal.",
+      "Now add a lid, turn the heat to low and let it cook for 5-10 minutes, stir in between.",
+      "Remove the lid and add butter, fresh cream and give it a last boil and switch off the flames.",
+      "Serve hot in a serving bowl and garnish with fresh cream and coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Crushed Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Crushed Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Crushed Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Crushed Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Gram",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Green Moong",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Paste",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Cooking Dals",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes Puree",
+        "unit": "medium",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb26425f0497d697f0a758f56776f7676666759b3cfaa4ae80aed6d1f2e46671",
+    "lineage_hash": "baf54e40dafd60feae33ceaf5f331a4b7bfe7f20825eabc7c0b40c1c1da13d8d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-maharani/",
+    "fetchedAt": "2026-08-02T07:45:07.213Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-maharani/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

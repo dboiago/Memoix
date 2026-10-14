@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Dakgaejang (Spicy Chicken Soup with Scallions)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the chicken breast, onion, scallion, and garlic to a medium size pot along with 5 cups of water. Bring it to a boil over high heat. Reduce the heat to medium low. Cover, and continue to boil for about 7 to 8 minutes.",
+      "Turn the heat off and remove the chicken to a bowl. Strain the broth into another bowl, remove any visible fat and discard the aromatic vegetables. When cool enough to handle, remove the skin and bones if any, shred the chicken and season with salt and pepper.",
+      "In the same pot, heat the sesame oil until hot (but not smoking hot) over low heat. Add the chili pepper flakes and turn the heat off. Stir gently until the oil turns red and the chili pepper flakes become pasty. Do not burn the flakes. Mix in the soup soy sauce and garlic.",
+      "Add the broth to the pot, and bring it to a boil. Add the meat and scallions into the stock. Continue to boil for an additional 3 – 4 minutes. Add salt and pepper to taste. Gently drizzle the egg over the soup before turning off the heat. Do not stir. Serve with a bowl of rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "lb",
+        "notes": "alt: thigh fat removed",
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions 1",
+        "unit": null,
+        "notes": "alt: 2 if using the large variety, cut into 2-inch pieces",
+        "amount": "3-4",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Soup Soy Sauce Gukganjang",
+        "unit": "Tbsp",
+        "notes": "국간장",
+        "amount": "½",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Lightly Beaten",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Other",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1ffdc43ba0c7c02ec40514f38407559d199aab7cabec71ded3cfdd662c0c4bc",
+    "lineage_hash": "bc271d050e156b099b83af962bf466ca8f305435730f7157d0467ad91ece558f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dakgaejang-spicy-chicken-soup-scallions/",
+    "fetchedAt": "2026-08-02T00:45:00.454Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dakgaejang-spicy-chicken-soup-scallions/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

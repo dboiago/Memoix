@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Brown Rice & Quinoa Porridge",
+    "time": "35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "241",
+      "carbohydrateContent": "48",
+      "fatContent": "2",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Put all ingredients in a sauce pan and bring to boil.",
+      "Reduce the heat to low and simmer for about 5 minutes.",
+      "Top with blueberries, raspberries, flaked almonds and rice malt syrup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Brown Rice and Quinoa",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy",
+        "unit": "C",
+        "notes": "alt: almond milk",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natvia",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7dbd4573b4569848337fe436abdf0334d19ca940cd33e00c971b8f4c7e44bcc8",
+    "lineage_hash": "b7f20dffefd5a22ae22f543596771b619551581c72d9cec94b65575bb61c2c30"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/brown-rice-quinoa-porridge/",
+    "fetchedAt": "2026-08-01T20:26:50.989Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/brown-rice-quinoa-porridge/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

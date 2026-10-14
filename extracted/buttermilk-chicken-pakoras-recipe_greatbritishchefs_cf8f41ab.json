@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Buttermilk Chicken Pakoras",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the chicken in a pan with the buttermilk, cloves, cinnamon, bay leaves, fennel seeds, cardamom pods and 1 teaspoon of the salt. Bring to the boil, then reduce the heat and simmer, uncovered, for about 20 minutes until the chicken is cooked and tender. To check, take out one piece of chicken and cut it in half to ensure it is no longer pink in the middle",
+      "Remove the chicken from the buttermilk and spread out on a plate. Strain the liquid and keep aside; discard the spices",
+      "Put the rice flour in a bowl, add the cumin, chilli powder and the remaining salt and whisk in 200ml of the strained buttermilk, followed by the yoghurt, until evenly combined",
+      "Heat the oil in a deep pan over a high heat. Drop a little of the batter into the oil to test if it is ready – it should immediately start to sizzle and darken. If the oil is not hot enough, heat it for a bit longer and test again. Using a slotted spoon, remove the trial batter and lower the heat to medium. Do not fry pakoras over a high heat as the outside will burn and the inside of the batter will remain raw",
+      "Dip the chicken pieces in the batter, ensuring they are totally covered, and then fry the pakoras in the hot oil in small batches. Do not overfill the pan as that will reduce the temperature of the oil and the pakoras will not get crisp. Drain on kitchen paper as you take each batch out of the oil. Serve hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "kg",
+        "notes": "boneless, skinless and diced to 2.5cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "cm",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Natural Yoghurt",
+        "unit": "ml",
+        "notes": "full fat",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a406e08f061af21b15e314e9aeb3e9b8db6ae2c22460abd1e5dd35c2e42463ce",
+    "lineage_hash": "486c0f1a3dd36893a0b1a15497468b8d0c485a8e41b0b4c0aee7d2bdee2fff91"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-pakoras-recipe",
+    "fetchedAt": "2026-08-02T19:15:39.263Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-pakoras-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

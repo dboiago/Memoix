@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Frozen Watermelon Margarita",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Margarita",
+    "garnish": [
+      "Mint Sprig",
+      "Watermelon Wedge",
+      "Lime Round"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "337",
+      "carbohydrateContent": "51",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Blend the frozen watermelon, tequila, sugar, and lime juice in a blender.",
+      "Pour into margarita glasses.",
+      "Add a sprig of mint, a small wedge of melon, and/or a lime round to the glass, then enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Watermelon",
+        "unit": "C",
+        "notes": "seeded, cubed and frozen",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Silver Tequila",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "freshly squeezed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4ccc73b7808f3dd535fe847ed65fcf18a60bdd3e525482b054dcaa54d4a3699",
+    "lineage_hash": "b1174669e32140f4e658c2b0006cf903efec49b456baf2791dd8e5b90a249df3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/frozen-watermelon-margarita-video/",
+    "fetchedAt": "2026-08-02T06:56:12.944Z"
+  },
+  "rawSource": "https://muybuenoblog.com/frozen-watermelon-margarita-video/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

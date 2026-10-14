@@ -1,0 +1,278 @@
+{
+  "recipe": {
+    "name": "Baked Bream",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the salt crust pastry, mix all of the ingredients together until they form a dough. Wrap in cling film and chill in the fridge for half an hour",
+      "Meanwhile, make the nero sauce. Add the shallots, thyme, bay leaf and Noilly Prat to a saucepan and reduce by a third over a high heat, this should take approximately 5 minutes",
+      "Pour in the fish stock and cook over a medium heat for 10 minutes before adding the cream. Reduce the sauce over a high heat until it is thick enough to coat the back of a spoon",
+      "Remove the thyme and the bay leaf, add the squid ink and blitz the sauce in a blender for one minute. Pass through a damp muslin cloth, transfer back into a pan, cling film and set aside until ready to serve",
+      "Preheat the oven to 180°C/gas mark 4. Place the herbs, star anise and half a lemon inside the belly of fish and set aside",
+      "Roll out the salt crust pastry to over twice the size of the fish. Carefully fold the pastry over the whole fish, keeping close to the fish to follow the shape. Leave a little extra over the top edge of the fish so you can create the spiky dorsal fins",
+      "Using the offcuts of pastry, create fins and eyes for the fish, brushing them with egg wash to stick them on. Very carefully, use a knife to score scales into the pastry and cut dorsal fins along the top edge of the fish",
+      "Brush the entire pastry covered fish with egg wash and place into the oven to bake for 15 minutes. Remove from the oven and allow to rest for 5 minutes",
+      "Meanwhile, place a large pan over a medium heat and add a knob of butter. Add the spinach and cook until wilted down, seasoning with salt and pepper",
+      "Reheat the sauce in a pan over a low heat - do not allow it to boil. Gradually whisk in the butter then season with salt, pepper and add a drop of Noilly Prat to refresh the sauce",
+      "To serve, place the baked fish on a serving platter or board, and using a knife, carefully crack the pastry, starting from the top edge. Remove a section of the pastry an ease the flesh off the bone until completely removed. Repeat of the opposite side and divide between 2-4 plates",
+      "Serve the fillets with some of the nero sauce, wilted spinach and garnish with the whole radishes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bream",
+        "unit": null,
+        "notes": "weighing 600g, whole and gutted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "1600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "370",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "peeled and finely sliced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noilly Prat Vermouth",
+        "unit": "ml",
+        "notes": "plus a drop extra to serve",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "picked and washed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "picked and washed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2cd20e52b051490eacf705312dfedc08235b827d08279b2f728766abaad2aea3",
+    "lineage_hash": "4e54b1bec29de7534be43e7eb7ae2051fd244e811218f5f4b1d3c3aa80c822f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-bream-recipe",
+    "fetchedAt": "2026-08-03T17:02:50.039Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-bream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

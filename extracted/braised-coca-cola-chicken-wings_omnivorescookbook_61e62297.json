@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Braised Coca-Cola Chicken Wings",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "281",
+      "carbohydrateContent": "13.1",
+      "fatContent": "11.2",
+      "proteinContent": "31.2"
+    },
+    "directions": [
+      "Heat 1/2 tablespoon oil in a large skillet over medium-high heat until hot. Add the chicken wings, skin side down without overlapping. Let cook without moving until the bottom side turns golden, 3 to 4 minutes. Flip the wings and cook the other side until golden, another 3 to 4 minutes. Turn to medium-low heat and transfer the wings to a big plate.",
+      "Add the remaining 1/2 tablespoon oil and turn to medium-high heat again. Add the chili pepper, green onion and ginger. Stir for 1 minute to release the fragrance.",
+      "Pour in the Shaoxing wine and use a spatula to scrape off any brown bits from the pan. Add the Coca-Cola, soy sauce, and salt. Add the chicken wings. Stir a few times to coat with sauce.",
+      "When the sauce starts to boil, turn to medium heat or the heat level needed to maintain a vibrant boil for a total of 20 minutes. During the first 5 minutes, use a fine mesh strainer to skim off and discard any brown foam from the top of the broth. Check on the sauce every 5 minutes and flip the wings occasionally. During the last 5 minutes, the sauce will reduce to a lower level and you should check on the sauce often, because the sauce will start to thicken very quickly. When the sauce thickens, stir and flip the wings to coat them well with the sauce. Turn off the heat and transfer the wings to a serving platter to prevent the sauce from reducing too much.",
+      "Garnish with green onion if using. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": "patted dry with a paper towel",
+        "amount": "1.5-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "and extra for garnish, if needed, cut into 4” (10cm) pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coca-cola",
+        "unit": "can",
+        "notes": "12 oz / 350 ml can",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "use 1/2 teaspoon salt if you do not plan to serve the dish with rice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9bb8336b734871e3da7574d3273c949aa60861051226483df5c2ca941842dab1",
+    "lineage_hash": "fbfadc83a626777e5d86f3d286746cbbaf594b991680cc70e2de49a3da139036"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/braised-coca-cola-chicken-wings/",
+    "fetchedAt": "2026-08-02T05:09:24.391Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/braised-coca-cola-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Chakli (Kodubale Kulkul)",
+    "time": "25-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, add gram flour, poha powder, semolina powder, and salt to taste.",
+      "Add ginger garlic juice, black pepper powder, papad khar, ghee and mix well.",
+      "Add degi red chilli powder, water and mix it well, combine everything well and make a dough.",
+      "Add hot oil, powder sugar and knead it again.",
+      "Form dough into small sized balls. Take some dough and make a lemon sized ball.",
+      "Roll it out into a thick rope. Join two ends of the rope to form a loop. Press the joint nicely so that the loop doesn't break.",
+      "Or else you can just simply take a small dough and press with your thumb and give it a shape.",
+      "You can give any desired shape you want. Or",
+      "Grease back of a fork with some oil. Flatten the ball of dough and press it onto the back of the fork, forming a rectangle the length of the back of the fork tines.",
+      "Starting at the bottom end of the fork, roll dough up tines and off fork and into a tight curl. The end result will be a tube-like curl with ridges from the fork on it. Place curl on a plate and work the remaining dough similarly until it is all used up.",
+      "Heat oil in a kadai, once the oil reduces the flame to medium fry kulkuls, making sure to turn them often until they are a light golden brown color.",
+      "Fry on medium hot oil. Fry the rings in batches until nicely golden in color.",
+      "Transfer to a paper napkin to drain excess oil.",
+      "Serve or cool down then store in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poha Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Papad Khar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c38cd98bb2adbe488864d375876cfd31994442f6c5a9567bb7551557e7141903",
+    "lineage_hash": "282538e248ae135f269fdcfb6414fe7bea22c5a74f76852b1b5eac04b23e48d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/4-easy-chakli-recipes/",
+    "fetchedAt": "2026-08-02T20:00:55.229Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/4-easy-chakli-recipes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Banana Bread",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "406",
+      "carbohydrateContent": "56.06",
+      "fatContent": "20.19",
+      "proteinContent": "4.72"
+    },
+    "directions": [
+      "Preheat oven to 350 degrees F.",
+      "Grease a 9x5-inch loaf pan with 1 tablespoon butter and dust with flour, tapping out any excess. Or spray loaf pan with Baker’s Joy.",
+      "Using a potato masher, mash peeled ripe bananas until smooth.",
+      "Melt remaining butter and add to mashed bananas.",
+      "Stir in crema, sugar, salt, beaten egg, and vanilla extract.",
+      "In a separate bowl, whisk together the flour, cocoa powder, baking soda, ground cinnamon, and grated chocolate.",
+      "Add the flour mixture to the banana mixture and stir until just incorporated and then fold in pecans.",
+      "Transfer batter to prepared pan and smooth top with a spatula.",
+      "Bake, rotating halfway through, until batter is set and sides are starting to pull away from pan, and a toothpick inserted into center of bread comes out clean, 50 to 55 minutes.",
+      "Cool in pan on a wire rack at least 15 minutes.",
+      "Run a butter knife around the perimeter of the pan to loosen loaf, then tap pan gently on its side until loaf releases. Transfer to a cutting board or plate and let cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "1 stick, divided",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "plus more for pan",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crema Mexicana",
+        "unit": "C",
+        "notes": "or sour cream",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tablet Mexican Chocolate",
+        "unit": null,
+        "notes": "3.3 ounce, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan",
+        "unit": "C",
+        "notes": "alt: walnuts, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb240dde0afb68071cae7f4accb5ad54b61b6aa8a0df378cb67141401def675a",
+    "lineage_hash": "4711171134d0ce7f72ea3eced6ff216cabbdb8a6f5c52f8f5702b6e70d77121b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/mexican-chocolate-banana-bread/",
+    "fetchedAt": "2026-08-02T04:14:41.200Z"
+  },
+  "rawSource": "https://muybuenoblog.com/mexican-chocolate-banana-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

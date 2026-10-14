@@ -1,0 +1,36 @@
+{
+  "url": "https://www.davidlebovitz.com/the-alaska-cocktail-gin-chartreuse-drinking-french-recipe/",
+  "slug": "alaska-cocktail-recipe_davidlebovitz_251e9d07",
+  "title": "Alaska Cocktail recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T20:16:20.678Z",
+  "ldName": "The Alaska Cocktail",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 ounces gin ((preferably Old Tom gin))",
+    "3/4 ounce yellow Chartreuse",
+    "3 dashes orange bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Add the gin, Chartreuse, and orange bitters to a cocktail mixing glass. Fill two-thirds full with ice and stir briskly until well-chilled, about 15 seconds.",
+    "Strain into a chilled coupe glass."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 ounces gin, (preferably Old Tom gin)",
+    "3/4 ounce yellow Chartreuse",
+    "3 dashes orange bitters"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

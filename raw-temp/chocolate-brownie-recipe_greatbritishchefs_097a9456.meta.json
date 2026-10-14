@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-brownie-recipe",
+  "slug": "chocolate-brownie-recipe_greatbritishchefs_097a9456",
+  "title": "Chocolate Brownie Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T15:38:37.915Z",
+  "ldName": "Chocolate brownie",
+  "ldTime": "PT50M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Petit four",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "160g of butter",
+    "200g of plain chocolate",
+    "225g of caster sugar",
+    "3 eggs",
+    "55g of plain flour",
+    "55g of cocoa powder",
+    "100g of white chocolate buttons",
+    "100g of hazelnuts, chopped",
+    "icing sugar for dusting"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 170ºC/Gas mark 3",
+    "Melt the butter and the plain chocolate, separately",
+    "Whisk together the sugar and eggs. Add the melted butter and plain chocolate and stir well to combine",
+    "Add the sieved flour and cocoa, white chocolate buttons and chopped nuts and pour on to a greased and lined Swiss roll tin. Bake for 20–30 minutes",
+    "Once cooked, allow to cool slightly, then cut into small squares and dust with icing sugar"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

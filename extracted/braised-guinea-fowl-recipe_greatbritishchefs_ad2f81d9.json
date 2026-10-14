@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Braised Guinea Fowl",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the stock using 4 teaspoons of Essential Cuisine concentrated chicken stock in 300ml of boiling water. Add the dried porcini mushrooms and soak for 30 minutes",
+      "When the mushrooms are soft, remove them, squeezing any juice back into the stock. Set the mushrooms and stock aside",
+      "Meanwhile, season the guinea fowl pieces with salt and pepper. Heat half the butter in a large frying pan with a tablespoon of olive oil. Fry the guinea fowl in batches until golden brown on all sides, adding more oil if necessary. As you cook the batches, spoon the browned guinea fowl pieces into a bowl and set aside, leaving any oil/butter in the pan",
+      "Add the shallots and garlic to the butter and oil in the frying pan and cook over a low heat until they soften",
+      "Add the rest of the butter and the mushrooms and thyme leaves to the pan. Cook until the mushrooms have softened, around 1–2 minutes",
+      "Turn up the heat, add the Marsala and cook for another minute before returning the guinea fowl pieces to the pan. Add the stock, bring to a simmer, then lower the heat and cover lightly with foil or a lid. Leave to simmer gently for 25 minutes",
+      "Use a slotted spoon to remove the guinea fowl and the mushrooms from the pan and place them in a bowl",
+      "Place the pan with juices in over a high heat and allow to bubble for a few minutes until the sauce has thickened slightly, then add the cream to the pan. Stir, return the guinea fowl and mushrooms to the pan and gently reheat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Guinea Fowl",
+        "unit": null,
+        "notes": "(1.5kg approx), cut into eight pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "made with 4 tsp Essential Cuisine chicken stock and 300ml boiling water",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porcini Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Girolles",
+        "unit": "g",
+        "notes": "any grit removed",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chanterelles",
+        "unit": "g",
+        "notes": "any grit removed",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marsala Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "003723bbe552e73f8957033f55bf401eb9470e6320b40cdc2737b5527b94fb2b",
+    "lineage_hash": "79072979923e1c440ae5ae791cdfa1696f9b594f935a62b4f88a5837edb16b37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-guinea-fowl-recipe",
+    "fetchedAt": "2026-08-03T10:27:19.517Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-guinea-fowl-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

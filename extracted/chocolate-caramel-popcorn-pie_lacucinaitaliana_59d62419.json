@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chocolate Caramel Popcorn Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "and the cocoa powder, then combine with the softened butter until a crumbly mixture forms; then incorporate the egg",
+      "and form the dough into a ball; wrap in parchment paper and chill in the fridge for 1 hour. Roll out the dough until it is 1/8-inch thick and use it to line a pan with a removable bottom (7 to 8 inches in diameter). Line the bottom of the crust with parchment paper, cover it with dried beans, and bake at 350°F for 20 minutes. Remove from the oven, discard the parchment paper and beans, and bake for another 5 minutes. Remove the crust from the oven and let cool.",
+      "FOR THE CARAMEL Heat 2/3 cup of cream. In a saucepan with high edges, melt 1 cup of sugar with 3 1/2 tablespoons of water; cook until a golden caramel forms, then add in the heated cream, being careful as it may boil up vigorously; mix well until smooth and even. Remove from the heat, let cool, then add the butter, continuing to mix. Fill the crust with half of the caramel and let chill.",
+      "Partially whip the rest of the cream and add it to the rest of the caramel; use this to fill the rest of the crust and chill in the fridge for 2 hours. Right before serving, top with the popcorn and drizzle with caramel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Salted Butter",
+        "unit": null,
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Popcorn",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1fe412339b0188fbc453bd5d454ed9cbad5baa9e1d8cbc23f0341e6a0c4e91d6",
+    "lineage_hash": "7bd0d6fd98e18596f64d2bdb38251473edb3c771df33ddc4a3e74f445d57eb48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-caramel-popcorn-pie",
+    "fetchedAt": "2026-08-03T08:07:53.254Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-caramel-popcorn-pie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

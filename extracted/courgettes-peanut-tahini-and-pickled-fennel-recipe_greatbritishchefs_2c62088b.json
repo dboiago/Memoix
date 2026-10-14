@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Courgettes, Peanut Tahini And Pickled Fennel",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the fennel, take a nonstick saucepan and set it over a high heat. Add the fennel and cook, without any oil, for 4-5 minutes until charred, tossing regularly to ensure it colours evenly",
+      "Add the lime juice and stir for a further 30 seconds until it’s all absorbed and the fennel is looking slightly sticky. Transfer to a bowl",
+      "If you have a high-powered bullet blender, use it to blend the lime leaves and oil together until it feels hot to the touch (or reaches 85°C if you have a probe thermometer); this will take about 3 minutes. You can also do this in the small bowl of a regular blender: just blitz until the lime leaves are finely chopped and the colour of the oil has darkened a little to pale green. Strain this into the fennel along with the jalapeño brine, pickled jalapeños and salt, then set aside",
+      "Put all the ingredients for the peanut tahini except the measured water in a small bowl and whisk to combine, then slowly add the water as you whisk until you have a sauce the consistency of thick pancake batter. You want it to be a bit thicker than regular tahini sauce, as the fennel mixture will cause it to thin a little when the dish is served",
+      "To cook the courgettes, lay them cut-side up and sprinkle with the salt. Leave for 5 minutes, then pat dry and heat the oil in a large nonstick frying pan over a high heat. Place the courgettes in the pan cut-side down and fry for 8-10 minutes until deeply browned. Flip over and cook for a further 2 minutes. This will give you quite an al dente courgette, but by all means cook them further if you wish them to be softer",
+      "Smooth the tahini over a serving plate, then top with the courgettes and fennel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "halved vertically, then halved horizontally",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": "about 200g, tops, tough outer leaves and core removed, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Leaves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeños",
+        "unit": "g",
+        "notes": "finely chopped, plus 1 tbsp pickled jalapeño brine",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smooth Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6173368ef7bbed09f7dff040e9fdef04431c5862e7275328ad41ada6f5e19de3",
+    "lineage_hash": "a14cf25cccbf572364491ac37440df264f85d31859168bbb8a09d420ccf91141"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgettes-peanut-tahini-pickled-fennel-recipe",
+    "fetchedAt": "2026-08-01T18:31:38.130Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgettes-peanut-tahini-pickled-fennel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

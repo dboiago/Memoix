@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Chinese Potato Salad (土豆沙拉)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "120",
+      "carbohydrateContent": "13.6",
+      "fatContent": "6.9",
+      "proteinContent": "1.6"
+    },
+    "directions": [
+      "Bring a medium pot of water to a boil, add potato, then boil until the potato is cooked through, but still crisp, 1 to 2 minutes. Taste along the process, and stop cooking as soon as the potatoes turn tender but are still crisp.",
+      "Drain potato and rinse with cold water, to remove the starch and maintain a firm texture. Drain and transfer potato to a large bowl. Pat dry with paper towels to remove any excess water.",
+      "Add garlic to potato, and sprinkle salt on top.",
+      "Heat oil over medium heat in a small pan. When the oil is hot but not smoking hot, add ground peppercorn and chili pepper, stir a few times to release fragrance. Then immediately pour the hot oil over the garlic on the potato, and use two pairs of chopsticks to mix everything together to coat the potato evenly with oil and salt when the oil is still hot. Taste the dish and more salt if needed. Serve as an appetizer or side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yukon Potatoes",
+        "unit": null,
+        "notes": "julienned , julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "remove seeds for a less spicy taste, dried, broken into 2 to 3 pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "305d0c478b56e1543e00d8afce47a81409713ad87278988823f7af64821294ef",
+    "lineage_hash": "e48e42cc425824511df5955c97bd9993571c10c1ddda3d7bf9026d1fbe285438"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-style-potato-salad/",
+    "fetchedAt": "2026-08-02T08:53:59.898Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-style-potato-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

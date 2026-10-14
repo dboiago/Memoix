@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Apple, Amaretti and Marsala Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and core the apples, cut them in half and then into slices (1/4\" thick). Melt 2 Tbsp. butter in a large pan with the sugar; once it foams, add the apples and cook for 5 minutes.",
+      "Add the raisins at the last minute, stir and remove from heat. Set aside to cool.",
+      "Crush the amaretti, reducing them into coarse crumbs and mix with the bread crumbs. Grease a baking dish (around 12\" in diameter, height 1 3/4\"). Sprinkle around half of the crumble mixture on the bottom, then sprinkle 1/2 cup Marsala on top, pressing it slightly.",
+      "Arrange the apples and raisins over the layer of amaretti, distributing them in an even layer. Cover with the remaining crumbled amaretti and sprinkle with the remaining Marsala. Bake the cake in the lower part of the oven at 350 °F for around 30 minutes. Serve as desired with unsweetened sour cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rennet Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Amaretti Cookies",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marsala Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3285fd735572a1ff5cdd6665e2ae8575efb8cac82ee5106c88d1a741973a199e",
+    "lineage_hash": "6d158d7ac98b3de08a888659805ea466975efa0ef8564a473e3785385706e877"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-amaretti-and-marsala-cake",
+    "fetchedAt": "2026-08-03T02:38:50.955Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-amaretti-and-marsala-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Chinese Cold Tofu Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "190",
+      "carbohydrateContent": "7",
+      "fatContent": "13",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Carefully take your silken tofu out and cut into bite sized pieces. You can use it as a whole block too.",
+      "Mix all the seasonings well in the small bowl and set aside for 1-2 minutes.",
+      "Pour the sauce over the tofu and decorate with coriander leaves and chopped green onion. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Box of Silken Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves for Decorating",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Peppers",
+        "unit": null,
+        "notes": "fresh, you can replace it with chili oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Stem",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "41b3604953b37bd1ccfc4438e4ffbd13ca15eb7d3547ee99ba5fe2d1e3f37550",
+    "lineage_hash": "bd0b83f43a79e5403c5fdd422bd884ca9a0696a844d99de4f8500a0af40d3ca4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/cold-tofu-liangban-tofu/",
+    "fetchedAt": "2026-08-02T01:53:33.679Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/cold-tofu-liangban-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

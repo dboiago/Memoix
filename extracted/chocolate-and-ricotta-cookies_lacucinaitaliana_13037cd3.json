@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chocolate and Ricotta Cookies",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, mix the flour with the sugar, egg, baking powder, oil and a pinch of salt, using a spoon first and then with your hands. Melt the chocolate in a double boiler and add it to the dough, kneading it until it is smooth. Let it rest covered in the refrigerator for 30 minutes.",
+      "Roll it out to 3-4 mm thick with a rolling pin; cut it into strips 1 1/4 inches wide, then into diamonds, obtaining about 25 cookies.",
+      "Place them on a baking tray lined with parchment paper and bake at 340°F for 12-15 minutes. Dab the ricotta to remove any excess liquid. Mix it with 1 tablespoon of powdered sugar. Serve the cookies with the ricotta and raspberries cut in half: you can make small balls using two teaspoons, or distribute it with the help of a pastry bag."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Farina 00",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamponi",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cioccolato Fondente",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchero Semolato",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olio Di Semi Di Arachide",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lievito in Polvere Per Dolci",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uovo",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchero a Velo",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sale",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb6a6eecbc23b163842394d1c9f0bd1fe3a1ab87c224e06fa0cea6932346dc85",
+    "lineage_hash": "71e335006a5415b2c3c29b31b7228334c1d576d5890de704b7149fc9c1222970"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-and-ricotta-cookies",
+    "fetchedAt": "2026-08-02T14:09:31.808Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-and-ricotta-cookies",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

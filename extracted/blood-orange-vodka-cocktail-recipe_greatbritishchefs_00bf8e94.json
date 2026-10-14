@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Blood Orange Vodka Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Coupe",
+    "garnish": [
+      "Cherry"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all the cocktail ingredients except the cherries in a cocktail shaker. Shake well for 30 seconds until combined and lightly frothy",
+      "Divide between 2 coupes or cocktail glasses to serve, garnishing each drink with a cherry"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": "preferable Black Cow Vodka",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b14580fc957d6dd35a0a11eaa12a64deb0ee5dba64cd2d8415fb095a5e69a938",
+    "lineage_hash": "526b49b7c8b0c4d950a7a19eb1ce86d687ca55943c513bb74d3f3fe518f69b33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-cocktail-recipe",
+    "fetchedAt": "2026-08-03T13:26:45.425Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

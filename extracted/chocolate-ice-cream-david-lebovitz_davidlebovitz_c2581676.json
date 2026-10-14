@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chocolate Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Making a slurry by mixing a few tablespoons of the milk with the corn starch in a small bowl, until smooth.",
+      "In a 4-quart (4l) saucepan, heat the rest of the milk, cream, evaporated milk, sugar, and corn syrup. When the mixture comes to a moderate boil, whisk in the cocoa powder, then let it cook at a modest boil for 4 minutes.",
+      "After four minutes, whisk in the corn starch slurry then continue to cook for one minute, stirring constantly with a spatula, until slightly thickened.",
+      "Remove from heat and add the chopped chocolate and salt, stirring until the chocolate is completely melted and the mixture is smooth. Stir in the vanilla or chocolate extract.",
+      "Transfer the ice cream mixture into a zip-top plastic bag then submerge the bag into a bowl filled with ice, and let sit until cool, about 30 minutes. (If necessary, add more ice during the cooling period.)",
+      "Remove the bag from the ice bath and wipe off any excess water. Pour the mixture into the canister of an ice cream maker, then freeze according to the manufacturer’s instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "C",
+        "notes": "250ml, unsweetened condensed milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "130g",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "Tbsp",
+        "notes": "60g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": "35g, natural or Dutch-process",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 85g, chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or 1 teaspoon chocolate extract",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9b96d093252d04279303ea1f72ceef08d817a286a95daafdec7c4d691785613",
+    "lineage_hash": "f43eaddc5e5bd0d1c84e5a1e3ead5ca75baa97831cd259ed4807a8083e939e3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-ice-cream-recipe/",
+    "fetchedAt": "2026-08-02T21:46:54.753Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-ice-cream-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

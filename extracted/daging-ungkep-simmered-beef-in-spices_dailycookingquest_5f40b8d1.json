@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Daging Ungkep (Simmered Beef in Spices)",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place beef, spice paste, palm sugar, salt, and tamarind paste in a wok/pot. Massage the spices to the meat, then add Indonesian bay leaves.",
+      "Cook the meat on medium heat until the meat is no longer pink and all the juices are almost dry, stir occasionally.",
+      "Add water, mix well, and bring to a boil. Reduce heat to a bare simmer, cover the wok/pan, and cook until dry or almost dry. This should take about 2 hours and the meat should become tender at the end of the cooking process. (*)",
+      "Turn off heat, and serve warm or at room temperature with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef (any Stew Cut Is Okay)",
+        "unit": "kg",
+        "notes": "cut into thin slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "Indonesian: gula Jawa",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": "Indonesian: air asam Jawa tebal",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indonesian Bay Leaves",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Shallots (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "about 75 gram",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (indonesian: Sereh)",
+        "unit": null,
+        "notes": "white part only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Indonesian: jahe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "inch",
+        "notes": "Indonesian: lengkuas",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": "Indonesian: bubuk ketumbar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk jinten",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kunyit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed22fe07d69115f9057a2f1b9ae574ee785621c09b918cdddc16a284524eb331",
+    "lineage_hash": "8c3f14c57e0127569d5a4d761dd31f610fe6ee888eea120464686ee9f1723f2d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/daging-ungkep-simmered-beef-in-spices.html",
+    "fetchedAt": "2026-08-02T06:10:49.070Z"
+  },
+  "rawSource": "https://dailycookingquest.com/daging-ungkep-simmered-beef-in-spices.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

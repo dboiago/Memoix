@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse Pie",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "569",
+      "carbohydrateContent": "37",
+      "fatContent": "48",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Grind the cookies to a powder and toss with melted butter.",
+      "Spread the crumbs evenly into a pie plate.",
+      "Press the crumbs firmly into the pan and bake for 10 minutes.",
+      "Whip the yolks and sugar and add the melted chocolate.",
+      "Fold the whipped cream into the eggs & chocolate.",
+      "Fold the egg whites into the mousse.",
+      "Spoon the mousse into the pie crust while it’s still soft.",
+      "Spread it into an even layer and chill until set.",
+      "Top with whipped cream and chocolate curls or chocolate chips."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oreo Cookies",
+        "unit": null,
+        "notes": "One 14.3 oz package",
+        "amount": "36",
+        "section": "Chocolate Oreo Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "6 tablespoons, melted",
+        "amount": "3",
+        "section": "Chocolate Oreo Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "10",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Ea Egg Yolks",
+        "unit": null,
+        "notes": "large eggs",
+        "amount": "5",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/2 cup, divided",
+        "amount": "4",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Each Egg Whites",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": "Chocolate Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "12",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "2",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "4",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dbd6ae5379461834bbb75f500fa48c2b12ca921c48498ff43edcb0bb9a8f9be4",
+    "lineage_hash": "4183e289906f8901be219ac732c086403ac24fdb064f33b324ac7bc17bb05716"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/12/16/chocolate-mousse-pie/",
+    "fetchedAt": "2026-08-02T06:17:10.318Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/12/16/chocolate-mousse-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

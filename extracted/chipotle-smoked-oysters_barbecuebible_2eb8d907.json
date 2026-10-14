@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chipotle-Smoked Oysters",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the sauce. Place the ingredients in a saucepan and whisk to mix. Simmer until flavorful, 5 minutes, and let sauce cool slightly. The sauce can be made ahead of time.",
+      "Set up your smoker or grill following the manufacturer’s instructions. Preheat to 400 degrees.",
+      "Just before serving, shuck the oysters, discarding the top shells; be careful not to spill the juices. Pass the shucking knife under each oyster to loosen it from the bottom shell. Leave the oyster in the shells. Arrange the oysters in a shellfish rack or on a wire rack, again, taking care not to spill the juices. Place a spoonful of sauce and a thin slice of butter on top of each oyster.",
+      "Smoke the oysters until the butter is melted and the oysters are cooked to taste, about 10 minutes. (I like them warm but still raw in the center.) Serve with grilled or crusty bread and an icy glass of Sauvignon Blanc."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canned Tomato Sauce",
+        "unit": "C",
+        "notes": "alt: ketchup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Horseradish",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Chipotle Chile",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2605dd2a65c7b87cb4c00b0e4dd80e2f919ef2b91203ceaff3b998dfcb424019",
+    "lineage_hash": "821809fb989513b7de151809accf323b718a6d8be4524e9255bb4c842bd6f57c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-smoked-oysters/",
+    "fetchedAt": "2026-08-03T07:10:03.831Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-smoked-oysters/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

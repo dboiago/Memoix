@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Greek Yogurt Tzatziki Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Stir together all the ingredients.",
+      "Serve. You can use it immediately, but if you leave it in the fridge a few hours the flavors have a chance to mingle more."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "the thick Greek or strained kind is best",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "tsp",
+        "notes": "dried or fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "alt: cilantro, chopped, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bcddadbc7959140c16dbadf7a4b1bb1acad77fd44921ef1b5b59688688569b2",
+    "lineage_hash": "e75592c3306243934cd19f7092eef22d5c215bb055fb88e3216ace71dac03ccb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/yogurt-sauce-recipe/",
+    "fetchedAt": "2026-08-02T04:40:07.309Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/yogurt-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Cous Cous",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Check the maker’s recipe for couscous and measure out the water for 125g of cous cous (recommendations vary slightly although it is normally around equal quantities).",
+      "Prepare the vegetables for the couscous.  Start with the cooking and shelling the broad beans. Cook the sweetcorn and peas until tender",
+      "Chop the onions and finely crush the garlic.  Add them both to a thick-bottomed pan with the butter and gently fry them for a couple of minutes",
+      "Add the cooked peas, beans and corn to the onions and garlic.  Chop the olives and add them to the mixture along with the raisins and the whole almonds",
+      "Add the water, bring to the boil and remove from the heat",
+      "Chop the mint and add along with the couscous. Give a good stir before placing a lid on top and leave for 3 minutes",
+      "The cous cous will now be cooked, season with sea salt and freshly milled pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Couscous",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f5aa4c267d8dcd31a29e63d3472e1fc20a8ccb782619d127546cd1f246530a8",
+    "lineage_hash": "6e6c2f1c1d98658e0b63c52f5f5cc2b4fc7bd52d01db4359df36589ed3422fe9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cous-cous-recipe",
+    "fetchedAt": "2026-08-03T20:10:30.197Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cous-cous-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

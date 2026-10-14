@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Chocolate Fondant With Peanut Ice Cream",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate and butter over a bain marie. Whisk together the eggs, yolks and sugar and combine with the melted chocolate/butter mixture. Next, gently fold in the flour until just combined. Set aside while you prepare the moulds",
+      "For the ganache, combine the milk and peanut butter in a saucepan  and bring to the boil. Remove from the heat and pour over the white chocolate, whisking together until combined. Set aside in the fridge to cool",
+      "While the ganache is cooling, line the dariole moulds; firstly with a generous amount of butter and then cocoa powder",
+      "Pour the chocolate fondant mixture one third of the way up the mould, then place a small dollop of the ganache into the middle of the mix. Fill the remainder of the mould with the fondant mixture up to three quarters full. Set aside in the fridge until all the other elements are prepared",
+      "For the chocolate sauce, combine the double cream and sugar and bring to the boil. Remove from the heat and pour onto the melted dark chocolate, whisking thoroughly to combine",
+      "For the peanut butter ice cream, combine the milk, cream and vanilla in a saucepan. Bring to the boil and then remove from the heat. In a large bowl, thoroughly whisk the yolks and sugar until pale and smooth. Slowly pour the hot milk mixture over the yolks to combine and then return the mixture to the saucepan",
+      "Place on a low to medium heat and stir constantly until it reaches 80˚C. While still warm, whisk in the glucose and peanut butter then strain. Leave to chill before churning until you reach the desired consistency",
+      "While the ice cream is churning, heat the oven to 200˚C/gas mark 6. Cook the fondants for 8-11 minutes, making sure that the edges have just started to come away from the sides of the mould before turning out",
+      "Turn the fondants out into a shallow bowl, top with a generous scoop of ice cream, chocolate sauce and chopped peanuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Peanuts",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter for Greasing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04ad0c96cf27b78330636930b972a33aef96de641853c8502f604303821c4b1a",
+    "lineage_hash": "34755186e77599a81dd76ec06e926ac63b2b6a3b29045e5f81b0de12ba50126e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe-peanut-butter-ice-cream",
+    "fetchedAt": "2026-08-03T22:35:34.505Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe-peanut-butter-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

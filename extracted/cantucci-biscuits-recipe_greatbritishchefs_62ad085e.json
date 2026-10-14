@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Cantucci Biscuits",
+    "time": "1 hr 10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "60",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150˚C/gas mark 2 and line 2 baking trays with baking paper",
+      "Using an electric whisk or standing mixer, cream the butter and sugar together until pale and fluffy",
+      "Gradually add the eggs into the mixture, combining well each time. Scrape the mixture down with a spatula",
+      "Beat in the remaining ingredients until the mixture comes together",
+      "On the baking trays form the dough into 3 or 4 logs, approximately 5cm wide, and pat into an even shape using wet hands. Bake for 25-30 minutes, or until risen and lightly golden",
+      "Transfer the logs onto a wire rack to cool slightly for 5-10 minutes. When still warm, cut the cantucci diagonally into 1cm thick pieces. Lay on the baking sheets, turn the oven down to 120˚C and bake for 30-40 minutes, turning halfway through",
+      "Cool on a wire rack before serving. These cantucci will keep in an airtight container for up to a month"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Seeds",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6129f0bda53ca541f1f56c6f7af2ece8df072f0680c4f6e38f031774d69b0a82",
+    "lineage_hash": "1a8799761e427435f6a375f7d021ae443f4323211925f00dfb93c7d5358f6092"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cantucci-biscuits-recipe",
+    "fetchedAt": "2026-08-04T00:04:59.205Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cantucci-biscuits-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

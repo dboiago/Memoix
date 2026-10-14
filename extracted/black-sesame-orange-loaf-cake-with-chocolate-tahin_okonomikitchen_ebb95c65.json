@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Black Sesame Orange Loaf Cake with Chocolate Tahini Glaze",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-heat oven to 350 F (180 C). Line or  grease a 7 x 3.5 inch loaf pan. Sprinkle the sesame seeds on the bottom (you can even sprinkle some on the side if greasing your loaf pan). Set aside.",
+      "Sift the flour, baking powder and baking soda into a bowl and then add the salt. Whisk to combine. In another bowl, whisk together orange zest, orange juice, oil, soy milk, yogurt and cane sugar. Add the dry ingredients to the wet ingredients and mix with a spatula using the cut and fold method until just combined and there are no more streaks of flour.",
+      "Portion out 1/3 of the batter into the empty dry ingredient bowl and mix in the sesame powder. Spoon the black sesame batter into the bowl with the orange batter into 5 portions. Use a spatula and mix the batter 3 times (no more), scooping from the bottom and cutting through the spooned batter.",
+      "Transfer the batter into the prepared loaf pan and bake for 45-50 minutes or until springy to the touch. Remove from the loaf pan shortly after it comes out of the oven and cool in a wire rack.",
+      "In the meantime, whisk together the dark chocolate, cacao butter and black sesame powder.",
+      "Once the cake has cooled, pour the chocolate drizzle on top to coat the loaf.",
+      "When slicing, dip your knife into boiling water for 30 seconds, dry with a towel and then slice (the heat will help achieve clean cuts through the chocolate). Serve and enjoy!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": "white and/or black",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strained Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "ml",
+        "notes": "I used melted refined coconut",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Oat Yogurt",
+        "unit": "ml",
+        "notes": "thicker is better, I used Rivera greek style vanilla oat",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": "sweetness preference",
+        "amount": "95-115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake",
+        "unit": "g",
+        "notes": "alt: all purpose flour",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "white sesame paste or tahini",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Butter",
+        "unit": "g",
+        "notes": "alt: coconut oil",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "728cb6f0acea403c014c350cc3ca72adaa395a3449fe42d295bd7bb713d117c8",
+    "lineage_hash": "276907b244ae0ede24b119db171150f5dab91dc6cdfa998a2f3c77f3629cad50"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/black-sesame-orange-loaf-cake/",
+    "fetchedAt": "2026-09-26T00:00:33.903Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/black-sesame-orange-loaf-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dutch Highlander Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Modern America Rocks",
+    "garnish": [
+      "Lemon Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "170",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "STIR all ingredients with ice.",
+      "STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+      "EXPRESS lemon zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Batavia Arrack",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine D.o.m",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b0c74dc916cf847d15ee52519b561d09ccc7747fa0e1dcbecf8b862aba78264",
+    "lineage_hash": "7b9ab377affef8f0af18e9b90f8f8206ef1676e8e6cc0387d11674c409f5e285"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/17403/dutch-highlander",
+    "fetchedAt": "2026-08-03T18:31:40.420Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/17403/dutch-highlander",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

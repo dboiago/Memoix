@@ -1,0 +1,69 @@
+{
+  "url": "https://www.chopstickchronicles.com/california-roll-sushi/",
+  "slug": "california-roll_chopstickchronicles_b3167937",
+  "title": "California Roll",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T23:23:36.618Z",
+  "ldName": "California Roll カリフォルニア巻き",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "5",
+    "5 rolls"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetizer, Rice",
+  "ldKeywords": "#sushi, California Roll",
+  "ldIngredientsRaw": [
+    "2 cups rice *1",
+    "4 tbsp rice vinegar",
+    "2 tbsp  sugar",
+    "2 tsp salt",
+    "1  piece Kombu kelp strip",
+    "1.8 cups  water",
+    "5  Nori Seaweed sheets *2",
+    "6  imitation crab meat(Kanikama)",
+    "1  cucumber *3",
+    "1  small avocado",
+    "5 tsp Japanese mayonnaise *4",
+    "5 tsp  White sesame seeds *5"
+  ],
+  "ldInstructionsRaw": [
+    "Sushi Rice *6",
+    "Rolling California Rolls"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "416 kcal",
+    "carbohydrateContent": "71 g",
+    "proteinContent": "9 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "8 mg",
+    "sodiumContent": "1109 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Sushi Rice]",
+    "▢ 2 cups rice *1",
+    "▢ 4 tbsp rice vinegar",
+    "▢ 2 tbsp  sugar",
+    "▢ 2 tsp salt",
+    "▢ 1  piece Kombu kelp strip",
+    "▢ 1.8 cups  water",
+    "[California Rolls]",
+    "▢ 5 Nori Seaweed sheets *2",
+    "▢ 6 imitation crab meat(Kanikama)",
+    "▢ 1 cucumber *3",
+    "▢ 1 small avocado",
+    "▢ 5 tsp Japanese mayonnaise *4",
+    "▢ 5 tsp  White sesame seeds *5"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Classic Frozen Margarita",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Rocks",
+    "garnish": [
+      "Lime Wedge or Slice"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "292",
+      "carbohydrateContent": "31",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Rub a wedge of lime around the rim of the glass and the dip the outside of the rim of the glass in kosher salt.",
+      "Put the peeled limes into the blender and pour in tequila, Cointreau, and agave syrup.",
+      "Top with 3 cups of ice cubes and blend until smooth and slushy. Add more agave to taste and blend again.",
+      "Pour into the salt-rimmed glass and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tequila",
+        "unit": "oz",
+        "notes": "blanco or reposado",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut into wedges or slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "08c4742cd5e892206d73cb9104696eb1bf829c62a37a07d4c0b67c38c85f639b",
+    "lineage_hash": "36fa4f8574fa6b36e4f1565ebc303316182b2c563de7c650cac434f1fde697b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/frozen-margarita/",
+    "fetchedAt": "2026-08-02T10:26:39.328Z"
+  },
+  "rawSource": "https://muybuenoblog.com/frozen-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

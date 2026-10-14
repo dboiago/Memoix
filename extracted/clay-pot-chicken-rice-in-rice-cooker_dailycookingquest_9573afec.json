@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Clay Pot Chicken Rice",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate chicken breast with the marinating sauce, set aside for 15 minutes.",
+      "Heat oil in a frying pan/wok, sauté garlic and ginger until fragrant, about 2 to 3 minutes. Add shiitake mushroom, Chinese sausages, chicken cubes along with all the marinating sauce, then season with salt, sugar, and ground white/black pepper. Cook until chicken is no longer pink.",
+      "Add the rice into the pan/wok, stir until well combined. Note that the rice is not yet cooked at this stage, it just got mixed in with the rest of the ingredients in the pan/wok. Transfer all the mixture from the pan/wok into a rice cooker pot, add the required water to cook the rice (this should follow the instruction for your rice cooker), then drizzle with sesame oil.",
+      "Cook in the rice cooker, with a simple \"cook rice\" function or \"white rice\" function for fancier machines, until it turns to \"keep warm\", wait for 15 minutes, then open the lid and add the sliced scallions. Fluff the rice with a paddle and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh/breast",
+        "unit": "g",
+        "notes": "1 lb., boneless, skinless, cut into 1 inch cubes",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (indonesian: Jahe)",
+        "unit": "inch",
+        "notes": "cut into 6 sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rehydrated Dried Shiitake Mushrooms",
+        "unit": null,
+        "notes": "*, thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sausages (chinese: Lap Cheong)",
+        "unit": null,
+        "notes": "thinly sliced diagonally",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White/black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Cooker Cups Rice (or Regular 1 1/2 Cup Rice)",
+        "unit": null,
+        "notes": "washed and drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Water to Cook Rice According to Your Rice Cooker (mine Needs 3 Rice Cooker Cups)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "thinly sliced diagonally",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marinating Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: saus tiram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (indonesian: Jahe)",
+        "unit": "inch",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "122eb8410851bb51e1c8f7920391c939dca5b8ebe2dba6435f96d8c82bf8c61c",
+    "lineage_hash": "af61d2adce518e3854b55d3516f54a578f8bbc0903c3a3638b69fce0ac22e8dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/clay-pot-chicken-rice-in-rice-cooker.html",
+    "fetchedAt": "2026-08-01T23:57:23.408Z"
+  },
+  "rawSource": "https://dailycookingquest.com/clay-pot-chicken-rice-in-rice-cooker.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

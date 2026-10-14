@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Apple Croustade",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the croustade dough by whisking the egg whites with the salt and sugar until foamy. In a separate bowl, whisk the egg yolks with 240ml of the warm water, then stir this into the egg whites. Place the flour and yeast into the bowl of a stand mixer with a dough hook attachment, then run on a low speed and slowly incorporate the egg mixture",
+      "When the dough starts to come away from the sides of the bowl, add a third of the oil and continue mixing until absorbed. Add the remaining 20ml of water and continue to mix on a low speed for 10 minutes. Add the remaining oil and mix for 4 more minutes on a medium speed until absorbed, then turn the dough out onto a lightly floured surface and knead by hand into a smooth ball. Divide into 4, wrap each in cling film and refrigerate overnight",
+      "The next day, place 3 of the balls of dough into the freezer for future use. Leave the remaining ball of dough out at room temperature for 4 hours before shaping",
+      "To shape the croustades, it helps if you have someone else to assist you. Cover your work surface with a large, clean cloth, then gradually pull and stretch the dough on the cloth with someone else on the other side. Using the minimum of flour and the back of your hands, continue to stretch the dough until it is very thin. Use a pastry brush to apply a thin coat of clarified butter over the dough, then sprinkle with caster sugar",
+      "Cut out 4 squares from the dough, 20x20cm in size, allow them to dry out a little and then invert each one into a 10cm tart tin. Press into the base and edges of the tin, then fold and shape the overhanging pastry decoratively into the tin with your fingers, giving height to the croustades. Leave to dry at room temperature overnight",
+      "The next day, preheat an oven to 220°C/gas mark 7. Bake the croustades for 3 minutes or until golden brown and crisp, then set aside",
+      "To make the apple rosaces, lower the temperature of the oven to 200°C/gas mark 6. Line the bases of 4 non-stick 14cm moulds with a disc of baking paper. In a small bowl, mix the clarified butter with the Calvados, sugar and lemon juice until the sugar has dissolved. Lightly brush the moulds with the Calvados butter",
+      "Peel, core and slice the apples into fine 2mm slices, using a mandoline if you have one. Place an apple slice in the centre of each mould, then fan the remaining apple slices around it, overlapping them tightly in a rosace shape. Brush the apple slices with the remaining Calvados butter, then cook the rosaces in the oven for 40 minutes",
+      "While the rosaces cook, make the apple coulis. Place all the ingredients into a small pan and bring to a simmer, then cook for 2 minutes. Remove from the heat and allow to cool, then blitz in a blender for 1 minute. Pass through a sieve into a bowl and leave to cool",
+      "Once the rosaces have been cooking for 40 minutes, remove from the oven and cover each mould in cling film. Leave for 10 minutes – the trapped heat will finish cooking the apples",
+      "To serve, turn out the rosaces onto a sheet of greaseproof paper. Place one in the middle of each plate and spoon the apple coulis around it. Top with a croustade and crown with a scoop of ice cream or sorbet. Finish with the crystallised ginger (if using)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": "at about 50°C",
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Bread Flour",
+        "unit": "g",
+        "notes": "ideally organic and from Shipton Mill",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh, crumbled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "tsp",
+        "notes": "or brandy",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cox’s Orange Pippin Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cox’s Orange Pippin Apple",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystallised Stem Ginger",
+        "unit": "g",
+        "notes": "optional, chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream",
+        "unit": null,
+        "notes": "or sorbet, in your flavour of choice",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a74d50d9a4cf0d8991c1780ee14aa1c08625a88fd401a8a7aebc64e18f5d8cf",
+    "lineage_hash": "0db40927207c9b20a9c797f20e01e9c0b680be1698d37971673be172880212e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-croustade-recipe",
+    "fetchedAt": "2026-08-03T04:23:56.063Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-croustade-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

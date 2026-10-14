@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Dashimaki Tamago (Japanese Rolled Omelette)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently beat eggs in a bowl or a large measuring cup, trying to cut the egg white into small chunks but do not beat hard (note 3).",
+      "Add all the ingredients except oil into the bowl/measuring cup and mix until sugar is dissolved.",
+      "Place a non-stick frypan (note 4) or a tamagoyaki pan over medium low to medium heat and oil using the oil-soaked paper towel as if you are wiping the pan so that the amount of oil is not excessive.",
+      "When the frypan and oil is heated up (note 5), pour about 1/5 of the egg mixture into the pan. The egg should start cooking straight away and you should see some bubbles lifting the surface of the egg.",
+      "Poke the large bubbles to flatten using chopsticks or the edge of a spatula.",
+      "When the surface of the egg starts drying but is still half wet, fold the both sides of the egg sheet inwards using a spatula so that the sides are straight instead of round (frypan only). Use a spatula to roll the egg starting from the furthest end from you. Place the spatula underneath the egg about 1.5cm (½”) into the egg, then lift and flip towards you. It will fold with about 1.5cm (½”) width.",
+      "Repeat to roll the rest using the first fold as the core of the roll until the egg roll shifts to the end of the frypan closest to you.",
+      "Tidy up the rolled egg using the spatula so that the width of the egg is even (note 6).",
+      "Lightly oil the farthest end part of the frypan using the oiled paper towel. Slide the egg to the farthest end of the frypan and oil the rest of the frypan lightly.",
+      "Pour 1/5 of the original egg mixture amount to the frypan. Do not pour the egg mixture over the cooked egg roll but lift the egg roll slightly so that the new egg mixture goes underneath it.",
+      "Repeat steps 5 to 10 until the egg mixture is used up (note 7), ending with step 8.",
+      "Transfer the egg to a cutting board (note 8). Slice it or dice it and place the pieces on serving plates.",
+      "Squeeze excess water out of grated daikon, add it next to the egg slices and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "note 1",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "Tbsp",
+        "notes": "note 2",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil with a Small Piece of Paper Towel Soaked in",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon",
+        "unit": "Tbsp",
+        "notes": "white radish, grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f681cf225728dc3388f8542673ffe965356cca419c0df417c7aae60e9e68d4e2",
+    "lineage_hash": "225a1fdb96f9d901f23b745422a4eee82def5783afbef7db44e1583a8776ab39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/dashimaki-tamago-japanese-rolled-omelette/",
+    "fetchedAt": "2026-08-01T16:32:22.744Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/dashimaki-tamago-japanese-rolled-omelette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

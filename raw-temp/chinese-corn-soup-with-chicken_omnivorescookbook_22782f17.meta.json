@@ -1,0 +1,72 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-corn-soup/",
+  "slug": "chinese-corn-soup-with-chicken_omnivorescookbook_22782f17",
+  "title": "Chinese Corn Soup with Chicken (鸡蛋玉米羹)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T09:28:15.952Z",
+  "ldName": "Chinese Corn Soup with Chicken (鸡蛋玉米羹)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1/2 lb ground chicken ((or ground turkey))",
+    "1 teaspoon salt (, divided (or to taste))",
+    "2 teaspoons Shaoxing wine ((or dry sherry))",
+    "2 tablespoons cornstarch (, divided)",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "1 large slice ginger",
+    "4 cups chicken broth",
+    "1 cup canned or frozen corn (, drained (*see footnote 1))",
+    "1/8 teaspoon turmeric powder ((for color, optional))",
+    "1/8 teaspoon white pepper",
+    "3  eggs (, beaten)",
+    "1 teaspoon sesame oil",
+    "1  green onion (, chopped (and extra for garnish))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the ground chicken, 1/2 teaspoon salt, Shaoxing wine and 1 teaspoon of the cornstarch in a small bowl. Mix well and let marinate while preparing the other ingredients.",
+    "Heat the oil in a big pot until warm. Add ground chicken. Let cook as you chop the chicken into smaller pieces. Keep cooking until the chicken is almost cooked through and the surface is lightly browned.",
+    "Add chicken stock and ginger. Turn to high heat. Cook until brought to a boil. Skim and discard the foam from the top of the soup. Then add the corn and the remaining 1/2 teaspoon salt. Turn to medium-low heat.",
+    "While boiling the soup, combine the remaining cornstarch, turmeric powder, and pepper white pepper with 2 tablespoons of water in a small bowl. Stir to dissolve the cornstarch completely. Swirl the cornstarch starch slurry into the soup. Stir until the soup thickens. Turn to medium-low heat so the soup comes to a low simmer.",
+    "Put a spatula (or a fork) against one end of the bowl with the egg in it. Slowly drizzle the egg into the soup in a swirling motion. Let the egg sit for 15 seconds, then stir the soup again to mix everything together. Taste the soup with a small spoon. If the soup is not as thick as you’d like, mix a bit more cornstarch slurry and add it into the soup. Add more salt to adjust seasoning if necessary.",
+    "Drizzle with sesame oil and add green onion. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "244 kcal",
+    "carbohydrateContent": "13.6 g",
+    "proteinContent": "22.7 g",
+    "fatContent": "10.9 g",
+    "saturatedFatContent": "2.6 g",
+    "cholesterolContent": "156 mg",
+    "sodiumContent": "865 mg",
+    "fiberContent": "1.2 g",
+    "sugarContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 lb ground chicken (or ground turkey)",
+    "1 teaspoon salt , divided (or to taste)",
+    "2 teaspoons Shaoxing wine (or dry sherry)",
+    "2 tablespoons cornstarch , divided",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "1 large slice ginger",
+    "4 cups chicken broth",
+    "1 cup canned or frozen corn , drained (*see footnote 1)",
+    "1/8 teaspoon turmeric powder (for color, optional)",
+    "1/8 teaspoon white pepper",
+    "3 eggs , beaten",
+    "1 teaspoon sesame oil",
+    "1 green onion , chopped (and extra for garnish)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,246 @@
+{
+  "recipe": {
+    "name": "Cured Salmon With Fennel, Beetroot and Dill",
+    "time": "10 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To cure the salmon, mix the caster sugar, salt, pink peppercorns, fennel seeds and mixed spice together in a bowl. Peel off the skin from the salmon and remove any pin bones",
+      "Place a large piece of cling film on the work surface and sit the salmon on top. Spread the spice mixture evenly over both sides of the salmon and place another piece of cling film on top. Wrap the salmon in the cling film, making sure there is plenty of spice mixture on the flesh",
+      "Place the wrapped salmon on a tray and sit another tray on top. Weigh it down with a couple of food tins or a heavy-based pan to help draw the moisture from the salmon and place in the refrigerator for 6-8 hours",
+      "To cook the beetroot for the beetroot and crème fraîche mixture, preheat the oven to 180°C/Gas mark 4. Wrap each beetroot in foil and bake for approximately 2 hours or until fully cooked, then set aside until cool enough to handle",
+      "Peel the beetroot and set two aside for cutting into cubes. Quarter the remaining four and put them in a food processor. Crush the garlic and add to the processor with the crème fraîche, plus Tabasco, caster sugar and salt to taste. Mix well and set aside",
+      "To make the dill dressing, whisk the vinegar, mustard, sugar and egg yolk together in a bowl. Gradually whisk in the hazelnut and sunflower oils in a steady trickle, making sure it emulsifies; you can increase the pace a little once the mixture is stable. Add the dill and season to taste with salt and pepper. Set aside",
+      "Remove the salmon from the cling film and wash in cold water to remove the cure. Leave the salmon on a tray in the refrigerator for a further 2 hours to dry a little",
+      "Trim the two remaining cooked beetroot and cut them into 1cm cubes ready to garnish the dish. Quarter the tomatoes and remove the pulp and seeds. Flatten each piece of tomato flesh and carefully peel away the skin. Cut the flesh into small squares and set aside until just before serving",
+      "Shortly before you are ready to serve, preheat the oven to 180°C/Gas mark 4. Heat some oil in a deep-fryer. Finely shred the raw beetroot and deep-fry the shreds for 1-2 minutes, until crisp. Drain on kitchen paper",
+      "Cut the salmon into 60-gram cylindrical portions and fry in a little oil in an ovenproof frying pan for 30 seconds on each side. Transfer the fish to the oven for 3 minutes to finish cooking",
+      "Using a stainless steel ring the same size as your salmon portions, spoon a mound of the beetroot and crème fraîche mixture onto each serving plate and pat it down firmly",
+      "Top with the salmon, then arrange a nest of fried beetroot on top of the fish. Swirl the dill dressing around the plate and decorate with the cubes of beetroot and tomato, plus the flowers and basil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Side of Fresh Salmon",
+        "unit": null,
+        "notes": "weighing 600g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": null,
+        "notes": "medium raw",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": null,
+        "notes": "medium raw",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "sprigs",
+        "notes": "fresh, small",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Edible Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2750977816b74e9f250b833169d294c7d8efed0c64970cab0152f2c805b1134e",
+    "lineage_hash": "f8c42dbb8475907a2ffe338c20fbd9544c5b36de7c50ec79ee7bdd6199192c21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-salmon-recipe-fennel-beetroot-dill",
+    "fetchedAt": "2026-08-03T23:11:50.477Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-salmon-recipe-fennel-beetroot-dill",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

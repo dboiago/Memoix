@@ -1,0 +1,59 @@
+{
+  "url": "https://muybuenoblog.com/cucumber-mojito/",
+  "slug": "cucumber-mojitos_muybuenoblog_143785c0",
+  "title": "Cucumber Mojitos",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T00:19:39.813Z",
+  "ldName": "Cucumber Mojito",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 drink"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "5 de mayo recipe, cucumber cocktail recipe, mojito recipe",
+  "ldIngredientsRaw": [
+    "½  lime (juiced)",
+    "½  lime (cut into wedges)",
+    "3-4  sprigs fresh mint leaves",
+    "1 tablespoon Truvia Original Sweetener",
+    "1/2  cucumber (peeled and pureed)",
+    "Ice",
+    "2 ounces white rum",
+    "4 ounces club soda"
+  ],
+  "ldInstructionsRaw": [
+    "Puree cucumber in a food processor with the fresh lime juice. Pour into a glass filled with ice.",
+    "Gently muddle lime wedges, mint, and Truvia Original Sweetener in the muddler.",
+    "Add the muddled ingredients to the glass with rum and club soda."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "141 kcal",
+    "sugarContent": "1 g",
+    "sodiumContent": "25 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "4 g",
+    "fiberContent": "1 g",
+    "proteinContent": "1 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ½ lime, juiced",
+    "▢ ½ lime, cut into wedges",
+    "▢ 3-4 sprigs fresh mint leaves",
+    "▢ 1 tablespoon Truvia Original Sweetener",
+    "▢ 1/2 cucumber, peeled and pureed",
+    "▢ Ice",
+    "▢ 2 ounces white rum",
+    "▢ 4 ounces club soda"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

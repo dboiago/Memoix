@@ -1,0 +1,270 @@
+{
+  "recipe": {
+    "name": "Bharti Amritsari Mutton Curry",
+    "time": "40-55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, mustard oil, once it's hot, add cinnamon stick, bay leaf, cloves, onions and saute it for a minute.",
+      "Add mutton with bones and saute for a while until onions are cooked well.",
+      "Add coriander powder, degi red chili powder, turmeric powder, coriander powder and cook it for a while.",
+      "Add curd and cook for 5-6 minutes on medium flames.",
+      "Add water to adjust the consistency, cover it with a lid and cook it for 30-40 minutes on medium flames.",
+      "Finish it with some prepared masala, salt to taste and cook for 5-6 minutes.",
+      "Transfer it to a serving bowl or dish, garnish it with ginger, green chillies, coriander leaves & stems.",
+      "Serve hot with roti or rice.",
+      "In a pan, add black peppercorns, cloves, black cardamom, mace, cumin seeds, green cardamom, fennel seeds, coriander seeds, salt to taste and roast them for a while until it's aromatic.",
+      "Transfer it to a tray, add carom seeds and mix it well.",
+      "Transfer it to a mixer grinder jar and grind it smoothly.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "roughly sliced",
+        "amount": "5",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mutton with Bones",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Amritsari Mutton Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienne",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & diagonally sliced",
+        "amount": "2",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves & Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "3-4",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1f6ffe84259a42f82e5f89824ca677e088d3eac6dd9fbc96a1e58f1a0724938",
+    "lineage_hash": "d61853391136a99a81d400b8dcb19f9f7269c9a942723158ef3e181d7f8fa4d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bharti-amritsari-mutton-curry-2/",
+    "fetchedAt": "2026-08-02T17:07:31.956Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bharti-amritsari-mutton-curry-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,52 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-egg-noodles-handmade-version/",
+  "slug": "chinese-egg-noodles-handmade-version_chinasichuanfood_d623e1e5",
+  "title": "Chinese Egg Noodles- Handmade Version",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:40:13.288Z",
+  "ldName": "Chinese Egg Noodles- Handmade Version",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "pantry, staple",
+  "ldKeywords": "homemade, noodles",
+  "ldIngredientsRaw": [
+    "2 cups all-purpose flour",
+    "2  middle sized egg ( , whisked)",
+    "pinch of salt",
+    "50-60 ml water",
+    "flour or cornstarch for dusting and coating"
+  ],
+  "ldInstructionsRaw": [
+    "In a bowl, mix salt with flour and then stir in egg and water slowly. Keep stirring until all the liquid is almost absorbed.",
+    "Grasp everything with hand and knead to smooth dough. It is ok to have some dry flour in the bottom at the beginning, as we need to control the water content to make sure our noodles are chewy enough.",
+    "When the dough is well kneaded, cover with plastic wrapper and rest for 30 minutes, so the gluten is well relaxed and you can further pat the noodle dough.",
+    "Use a rolling pin to pat, press and flat the dough for several minutes (5-6) and then shape the dough to a ball, cover with plastic wrapper and rest for another 30 minutes.",
+    "Cut the dough in half; roll one half into a larger and thin wrapper (I show the degree in the video).",
+    "Fold the wrapper up (three or flour layers) and then cut into thin and even strips with a very sharp knife. When cutting the noodles, hold the knife vertically and push the newly cut strip with the knife to make sure it is completed with the dough wrapper. Dust with flour and loose the strips and if necessary, you can slightly stretch the strips slightly. Shake off extra flour when finished.",
+    "Repeat to finish the other half. Cook immediately or cover with plastic wrapper and freeze for later recipes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "100 g",
+    "calories": "245 kcal",
+    "carbohydrateContent": "44 g",
+    "proteinContent": "9 g",
+    "fatContent": "2 g",
+    "cholesterolContent": "94 mg",
+    "sodiumContent": "450 mg",
+    "fiberContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "2 cups all-purpose flour",
+    "2 middle sized egg  , whisked",
+    "pinch of salt",
+    "50-60 ml water",
+    "flour or cornstarch for dusting and coating"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

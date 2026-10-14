@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Curried Pickled Eggs",
+    "time": "15 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pan of water to the boil and carefully add the eggs. Boil for 6 minutes then plunge into ice water. This will give a slightly runny yolk – if you'd prefer hard boiled, boil for 10 minutes",
+      "Place the rest of the ingredients in a pan and bring to a simmer, stirring until the sugar and salt have dissolved. Remove from the heat and allow to cool",
+      "When the eggs have finished cooking, place in iced water to cool quickly. Once cool, peel the eggs",
+      "Place the eggs into a sterilised jar and pour over the pickling liquor. Place a circle of greaseproof paper on top of the liquid to ensure the eggs are fully submerged in the liquid",
+      "The eggs will be slightly pickled after 12 hours, but after about 3–5 days they will be at their prime. They will keep for months if fully submerged in the brine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": null,
+        "notes": "one 7cm piece, peeled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Peel",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "061aa29659194d9a4b5232388bb9837de68ef2a6f8acf766d017c6806a21f09b",
+    "lineage_hash": "f0a7cc51d3306cbc87698bb78f193fd04cf173d1bff14ab8ba31c901e7d8b8cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-pickled-eggs-recipe",
+    "fetchedAt": "2026-08-03T11:01:17.956Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-pickled-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

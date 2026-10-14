@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Cucumber Soba Noodles with Sweet Chili Soy Dressing",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Make the sweet chilli soy dressing by mixing the listed ingredients above.",
+      "Rinse the cucumber thoroughly. (I used the skin as well, as I think it’s visually more appealing. But you can peel the skin off if you wish.) Removed the seeds. Thinly slice the cucumber like a match stick. (You could use a julienne peeler or spiralizer per your preference.)",
+      "Cook the soba noodles in rapidly boiling water until al dente. (Follow the directions from the package.) Drain the water and cool down the noodles under cold running water for about 1 minute. Stir the noodles with some tongs or your hand while it’s under the water. Drain the noodles well.",
+      "Put together the noodles, cucumber and dressing in a large mixing bowl and mix them well with your hands. (Wear a food handling glove). Serve it in a pasta or noodle bowl. Alternatively, you could serve them individually without mixing them so your guest has some fun mixing these together. In this case, about 2 Tbsp of the dressing sauce per person should be adequate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chilled Lebanese Cucumber",
+        "unit": "large",
+        "notes": "170g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bundles Soba Noodles",
+        "unit": null,
+        "notes": "180g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boiled Egg (optional)",
+        "unit": null,
+        "notes": "halved to serve on top of the noodles",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6508a641b284ca26b4c566241967da9f55f3f645a4ca2dc90999797a63be26fa",
+    "lineage_hash": "a53577bf8c7779272f6b901aa1cf63d983de01f27371cfacf117c474bc4264ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/cucumber-soba-noodles-with-sweet-chili-soy-dressing/",
+    "fetchedAt": "2026-08-01T18:07:05.179Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/cucumber-soba-noodles-with-sweet-chili-soy-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Confit Suckling Pig",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean and wash the suckling pig in plenty of water, then remove, pat dry and spread the salt onto the skin. Submerge the pig in the oil with the herbs and garlic, making sure to completely cover the meat. Cover with foil and place in the oven",
+      "Cook the pig for 3 hours, making sure it is nicely caramelised but not burnt. Carefully strain the pig from the oil and chill",
+      "Gently remove the skin and set aside. Shred the meat, removing any excess fat, sinew and bones. Place the meat in a rectangular tray, check the seasoning and add a little of the reserved cooking oil to bind the meat and ensure it is moist. Cover with the skin, making sure it does not overlap too much",
+      "Add a flat tray on top of the skin and distribute weights onto the surface. Leave overnight to press",
+      "For the corn purée, place a saucepan over a medium heat and add the oil. Once the oil is hot, sweat the onions and garlic until soft but not coloured. Add the cooked sweetcorn, stir through, then add the salt and sugar",
+      "Continue to cook until the ingredients start to brown and caramelise. Add the milk, gently simmer and reduce by half, then repeat with the cream. Remove from the heat and allow to cool for 15 minutes. Use a high-powered stick blender to form a purée with a slightly textural, rustic finish. Store in a clean pan until required",
+      "Preheat the oven to 180˚C/gas mark 4 and at the same time preheat a deep-fat fryer to 180˚C",
+      "Once ready to serve, cut the meat into rectangular pieces in the tray and heat a pan with a dash of oil. Once the oil is hot, add the pressed rectangles, skin-side down, and cook until the skin is golden and crispy - this should take approximately 4 minutes on a low heat. Place in the oven for 4 minutes to warm through",
+      "While the pork is finishing in the oven, use a mandoline or knife to cut the yam into very long thin strips. Lower into the hot oil and allow to lightly brown and crisp up. Remove from the oil, drain on absorbent kitchen towel and season with salt",
+      "Reheat the corn purée (if necessary) until warmed through",
+      "Remove the pork from the oven and place each portion onto plates, skin-side up on a bed of warm corn purée. Add a little algarrobo syrup and garnish with the yam crisps and red sorrel. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Suckling Pig",
+        "unit": "kg",
+        "notes": null,
+        "amount": "2.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "including the skin",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "L",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn Kernels",
+        "unit": "kg",
+        "notes": "cooked",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "72",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Yam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Vein Sorrel Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Algarrobo Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b0090454300ae03f0c97e0ee8ce48c5413cb7a4ac62af9725079934d96c9151",
+    "lineage_hash": "9ad748e14742fbedb41d8ccfcb6af132c296f4a28fec9b35fdd25144e032f952"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-suckling-pig-recipe",
+    "fetchedAt": "2026-08-03T18:33:27.552Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-suckling-pig-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

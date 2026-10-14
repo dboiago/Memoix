@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Paneer (Punjabi Tari Wala Paneer)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar and pestle, add green chillies, ginger, garlic, salt to taste and grind it into the coarsely paste. Keep it aside for further use.",
+      "In a handi, add ghee, once it’s hot, add fenugreek seeds, cumin seeds, prepared ginger garlic green chilli paste and saute for a minute.",
+      "Add black & green cardamom, tender coriander stems, onion, ghee, oil and cook for 4-5 minutes until onion gets light golden in colour.",
+      "Add coriander powder, turmeric powder, degi red chili powder and let it cook for 2 minutes.",
+      "Add little water, tomato puree and cook for another 4-5 minutes until oil separates from the masala.",
+      "Now, add hot water, soaked dry fenugreek leaves, cover it with the lid and let it simmer for a while.",
+      "Add soaked paneer, salt to taste and cook for 5-6 minutes or until it’s cooked.",
+      "Transfer it into the serving dish and garnish it with coriander sprig. Serve hot with roti or naan.",
+      "In a pan, add oil for frying, once it’s hot, add paneer and fry them until light golden in colour.",
+      "Transfer the paneer into the absorbent sheet and keep it aside for further use.",
+      "In a bowl, add warm water, salt to taste and give it a good mix. Add fried paneer and leave it aside for a while until the paneer gets softs texture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "3",
+        "section": "For Ginger Garlic Green Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": "For Ginger Garlic Green Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "3-4",
+        "section": "For Ginger Garlic Green Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Green Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Green Chilli Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Each Black & Green Cardamom",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "grated",
+        "amount": "2",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "puree",
+        "amount": "2-3",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": "soaked",
+        "amount": "2",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "2",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Punjabi Style Tari Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "For Frying Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Frying Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into medium size cubed",
+        "amount": "800",
+        "section": "For Frying Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soaking Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Soaking Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Paneer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soaking Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9597103befc708c61244c6388478e9b6ba628cc9ebe3cb19311a57eddf16009f",
+    "lineage_hash": "2318b02a3381869fb0dfb11d386b0c8fd97e7c9732917737b381bceb7ec92b7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/punjabi-tari-wala-paneer/",
+    "fetchedAt": "2026-08-02T20:34:56.501Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/punjabi-tari-wala-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

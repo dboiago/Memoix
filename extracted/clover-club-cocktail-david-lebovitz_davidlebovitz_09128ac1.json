@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Clover Club Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Skewered Raspberry or Two"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the gin, vermouth, lemon juice, raspberry syrup and egg whites in a cocktail shaker and fill two-thirds full with ice. Cover and shake vigorously for 25 seconds.",
+      "Strain the mixture into a glass or small bowl, dump out the ice, and return the mixture to the shaker, cover and shake for 15 to 20 seconds.",
+      "Pour into a chilled coupe glass. Garnish with a skewered raspberry or two."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Syrup",
+        "unit": "oz",
+        "notes": "see Note below",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71710e80c700f66212de60b031c698e45a188738a963e69bca19d98f360f8270",
+    "lineage_hash": "4469572ebc2df18ca57f84469034d2c99292754486e6e62d801208225985e411"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/clover-club-cocktail-recipe-raspberry-gin/",
+    "fetchedAt": "2026-08-02T17:56:21.934Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/clover-club-cocktail-recipe-raspberry-gin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

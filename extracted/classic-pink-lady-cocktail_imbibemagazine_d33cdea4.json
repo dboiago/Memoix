@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Pink Lady Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker and shake without ice to froth the egg white. Add ice and shake well, then strain into the chilled glass and garnish if desired.",
+      "Adapted from Vintage Spirits & Forgotten Cocktails by Ted Haigh"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Applejack",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized, if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7eb4dc9210154ceeef3609bc0c2d28ceceb43fe7d132401df3b6f86d006245d",
+    "lineage_hash": "fb87a827a425b5b7c4bfbcef8035627180ce692b71401abcad05c73099985c36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-pink-lady/",
+    "fetchedAt": "2026-08-03T19:14:36.320Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-pink-lady/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

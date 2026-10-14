@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "Dulce de Leche Ice Cream",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Open the can of dulce de leche. Scoop out 4 tablespoons into a bowl and set aside to use to make swirls later.",
+      "Whip the cream until stiff peaks form. (This will take some time, depending on how quickly you're whipping the cream.) You want to work with cold cream and cold bowl to ensure maximum creaminess.",
+      "Add in the rest of the can of dulce de leche. Whip until all is combined and frothy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dulce De Leche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4189c33482c3443530fa41bd6189be78b245f1a3f0a5d7c85fbe23be7e9367fc",
+    "lineage_hash": "e5140f46793eff3322b9fd6547fd1448aee45944a91b14963f69c3b8b0501e72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/dreamy-dulce-de-leche-ice-cream-recipe-no-churn-decadent-treat/",
+    "fetchedAt": "2026-09-25T22:38:24.007Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/dreamy-dulce-de-leche-ice-cream-recipe-no-churn-decadent-treat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

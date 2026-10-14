@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Double Agent",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canadian Rye Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f2293cff3dbff62153b314983c8df2814104b7dfe64eba6c09e5e0834cd0874",
+    "lineage_hash": "04be6fd8d366febfd5c6d40c4b9dc94e656fcfee164810c490e9ca0b27813331"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/double-agent-manhattan-riff/",
+    "fetchedAt": "2026-08-04T01:32:28.998Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/double-agent-manhattan-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,353 @@
+{
+  "recipe": {
+    "name": "Plum cake",
+    "time": "35-40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chopped almonds, walnuts, pistachios, dried cranberries, candied cherry, apricot, tutti frutti, black raisins, orange juice, vanilla extract and dates.",
+      "Microwave the nuts for a minute.",
+      "In a sauce pot, add butter once the butter is melted, add brown sugar and melt the sugar a little bit. Add a little water and mix well. Keep it aside for further use.",
+      "In a bowl, add grated carrots, soaked nuts and mix it well.",
+      "Add a pinch of salt, christmas spice powder, dry ginger powder, refined flour, fresh bread crumbs and mix everything well and keep it aside for a minute.",
+      "In a small bowl, add baking soda, oil and mix well. Transfer this into the mixture and mix everything properly.",
+      "In a pressure cooker place the small cooking stand, add water into it.",
+      "Take the savarin mould and grease it nicely with butter.",
+      "Transfer the prepared mixture into the grease mould and set it nicely.",
+      "Cover it with butter paper and foil paper, and seal it properly.",
+      "Place the mould carefully inside the cooker and cover it with the lid and steam for 20 minutes on low to medium flame.",
+      "Check the pudding with a toothpick by poking it in the center, if it's clear take the pudding mould out.",
+      "In a bowl, add milk, cornstarch, sugar and whisk it well.",
+      "Transfer it into a sauce pot and whisk it continuously on medium flame.",
+      "Add vanilla essence and whisk continuously.",
+      "Once the custard is cooked properly to a thick consistency. Remove from the flame.",
+      "And let it cooldown at room temperature.",
+      "Strain the custard sauce and keep aside for further use.",
+      "In a double boiler, place the bowl, add icing sugar, water, lemon juice and mix well",
+      "Until the icing is smooth and thick enough.",
+      "Once the pudding is cooldown, demould the pudding on a serving dish.",
+      "Spread the icing evenly on christmas pudding, pour the prepared custard sauce in the center of the pudding.",
+      "Place the candied cherries, apricot, fresh mint leaves and dust a little icing sugar on top of it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": null,
+        "notes": "blanched, peeled, chopped",
+        "amount": "4-5",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": null,
+        "notes": "dried, chopped",
+        "amount": "4-5",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherry",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3-4",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Black Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Size Carrot",
+        "unit": "medium",
+        "notes": "optional, grated",
+        "amount": "2",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Christmas Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½-2",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "½",
+        "section": "For Custard Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Custard Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": "For Custard Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Custard Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Custard Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a866c03597c684561ff35e062e991be2a220a7d703c7c8b41bb6caa91a7e7c56",
+    "lineage_hash": "8db53b5aab821a5cbc20065093abf7ca9d8e4d9f14231546c3a1ceacb62ccaff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-plum-cake/",
+    "fetchedAt": "2026-08-02T20:02:53.920Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-plum-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

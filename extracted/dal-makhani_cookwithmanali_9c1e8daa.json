@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Dal Makhani",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "293",
+      "carbohydrateContent": "22",
+      "fatContent": "19",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Wash and rinse urad dal (whole black lentil) and rajma (kidney beans) in a large bowl. Soak in 3 cups water overnight.",
+      "In the morning, drain the water in which the dal and rajma was soaked. Transfer the dal and rajma to a pressure cooker with 1 teaspoon salt. Add around 3.5 cups water.",
+      "Pressure cook on high-medium heat for 10 whistles, then lower the heat to low-medium and cook for another 10 minutes. In total around 15 to 20 whistles.",
+      "Let the pressure release naturally. The dal and rajma should be completely cooked and you should be able to mash them with your fingers. If using the Instant pot, pressure cook the lentils on high pressure for 30 minutes with natural pressure release.",
+      "Mash some of the dal and rajma using a potato masher. Then turn on the heat to lowest heat and let the dal simmer while you make the masala.",
+      "To make the masala, in a large pot/pan, heat 2 tablespoons butter  (I use and recommend amul salted butter here) and 1 tablespoon ghee on medium heat.",
+      "Once the butter melts and is hot, add the finely grated onion. Cook the onion for around 6 to 7 minutes or until it turns light golden brown. Keep stirring it continuously so that it doesn't burn and keep heat on medium.",
+      "Add the ginger garlic paste and cook for 1 to 2 minute until the raw smell goes away.",
+      "Add the tomato puree and mix. Cook for 2 minutes or until the puree mixes well with masala and oil starts oozing out from the sides.",
+      "Add in the boiled dal (which had been simmering for around 10 to 15 mins you were making the masala) and mix.",
+      "Add garam masala, kashmiri red chili powder and salt. Mix to combine.",
+      "Add 1/2 cup water, stir and set heat to low. Let it simmer on low heat uncovered for around 45 minutes.",
+      "Stir often (every 10 minutes or so) else dal will stick to the bottom of the pot. You will also need to add water. I added total of 1.5 cups water as the dal was simmering.",
+      "Add sugar and mix after the dal has simmered for 45 minutes.",
+      "Also add the remaining 1 tablespoon butter and 1/4 cup cream. Mix well.",
+      "Simmer for 10 more minutes on low heat after adding the cream. Dal will become really creamy by now. You may serve the dal at this point or do the additional step of giving it a smokey flavor.",
+      "This last step (dhungar method) is optional but recommend. For the smokey flavor, place a steel bowl on top of a trivet placed inside the dal. Then heat a piece of charcoal over direct heat until its red hot.",
+      "Place hot charcoal in that steel bowl on top of the trivet. Pour melted ghee (around 1 tablespoon) on top of charcoal.",
+      "You will immediately see fumes coming out of charcoal. Immediately close the pan with a lid. Let it remain like this for 2 minutes. After 2 minutes, remove lid and remove the bowl from dal. The longer you keep the lid closed, the smokier dal will get and for dal makhani I don't like it very smokey so 2 minutes was good for me. You may do 5 minutes but don't do more.",
+      "Garnish dal makhani with more cream and serve with a pat of amul butter. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Urad Dal Sabut (whole Black Lentil)",
+        "unit": "C",
+        "notes": "165 grams",
+        "amount": "¾",
+        "section": "To Pressure Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Rajma (red Kidney Beans)",
+        "unit": "C",
+        "notes": "60 grams",
+        "amount": "¼",
+        "section": "To Pressure Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To Pressure Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "28 oz",
+        "amount": "3.5",
+        "section": "To Pressure Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "divided, use amul butter (salted) if possible",
+        "amount": "3",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "medium",
+        "notes": "115 grams, finely grated using a food processor",
+        "amount": "1",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": "use fresh paste if possible",
+        "amount": "2",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "use store bought tomato puree",
+        "amount": "½",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "12 oz, as needed",
+        "amount": "1.5",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "More Amul Butter (salted)",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Charcoal",
+        "unit": null,
+        "notes": "optional, for giving dal a smokey flavor",
+        "amount": "0",
+        "section": "Masala for the Dal",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c7c0f3a4e7a1efe64f1f4a2d75a99707a03308699c4180d393cfb5d4f85b5bc",
+    "lineage_hash": "11b0a9b36afcc63e38345500f8ac3f185ac1fb056604a38660c795a8c7700eca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dal-makhani/",
+    "fetchedAt": "2026-08-01T22:28:15.985Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dal-makhani/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

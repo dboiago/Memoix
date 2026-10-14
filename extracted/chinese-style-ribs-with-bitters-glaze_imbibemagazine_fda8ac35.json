@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chinese-Style Ribs with Bitters Glaze",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients, except for the spareribs, in a bowl and whisk to combine. Set aside ½ cup of the sauce.",
+      "Place the ribs in a non-reactive baking dish, pour the sauce on top, and turn to coat the ribs. Marinate in the refrigerator for 1 to 3 hours, turning the ribs once.",
+      "Preheat the oven to 400°F and line a rimmed baking sheet with aluminum foil.",
+      "Place the ribs on the prepared baking sheet and bake for 50 minutes, turning once halfway through the cooking time and basting with half of the reserved sauce.",
+      "At the end of 50 minutes, remove the ribs from the oven and brush with the remaining sauce.",
+      "Preheat the broiler. When hot, broil the ribs, meaty side up, until the ribs begin to char, about 5 minutes.",
+      "Remove from the broiler, hack the ribs apart with a cleaver or chef’s knife, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hoisin Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "peeled and grated fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura",
+        "unit": "Tbsp",
+        "notes": "alt: other aromatic bitters",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rack Pork Spareribs",
+        "unit": null,
+        "notes": "2 to 4 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "beb878e17b4e7cf531efbf981c4604ac29f1297be61267dbfb13ad518e498f48",
+    "lineage_hash": "303865b7ea2e5406cfed5fddcf208ffd1be6cfafb69f641f34afc4e2dab9bdeb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chinese-style-ribs-with-bitters-glaze-recipe/",
+    "fetchedAt": "2026-08-03T15:38:51.104Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chinese-style-ribs-with-bitters-glaze-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

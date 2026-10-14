@@ -1,0 +1,52 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-pumpkin-cake/",
+  "slug": "chinese-pumpkin-cake_omnivorescookbook_fb947ac1",
+  "title": "Chinese Pumpkin Cake (南瓜饼)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T20:32:12.366Z",
+  "ldName": "Chinese Pumpkin Cake (南瓜饼)",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "16",
+    "16 cakes"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 can (15 oz) pumpkin puree ((or 25 oz (700 g) pumpkin))",
+    "2 cups (250 g) glutinous rice flour",
+    "1/2 cup bread crumbs",
+    "Oil spray ((or oil for frying))",
+    "2/3 cup red bean paste"
+  ],
+  "ldInstructionsRaw": [
+    "Make pumpkin puree (optional)",
+    "Make the pumpkin cake",
+    "Cook the pumpkin cake"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "134 kcal",
+    "carbohydrateContent": "28.4 g",
+    "proteinContent": "2.5 g",
+    "fatContent": "1.1 g",
+    "saturatedFatContent": "0.2 g",
+    "sodiumContent": "36 mg",
+    "fiberContent": "1.9 g",
+    "sugarContent": "1.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 can (15 oz) pumpkin puree (or 25 oz (700 g) pumpkin)",
+    "2 cups (250 g) glutinous rice flour",
+    "1/2 cup bread crumbs",
+    "Oil spray (or oil for frying)",
+    "2/3 cup red bean paste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

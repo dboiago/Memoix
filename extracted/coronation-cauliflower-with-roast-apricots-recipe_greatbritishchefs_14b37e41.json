@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Coronation Cauliflower with Roast Apricots",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200C/gas mark 6 then make the pickle. Peel the turmeric and finely dice. Combine the vinegar, water and sugar in a pan then add the turmeric and raisins. Bring to the boil, stir to dissolve the sugar then take off the heat and leave out to cool",
+      "Cut the cauliflower down into florets and dice the stalk, this can be roasted too. Combine the yoghurt, curry powder, lemon and oil. Taste a season with salt if needed (some curry powder contains salt). Toss the cauliflower in the marinade and massage in to make sure it is all evenly covered",
+      "Place onto an oven tray and cook for around 20 minutes",
+      "After 20 minutes, give the cauliflower a shuffle then add the apricots and roast for a further 10–15 minutes until the cauliflower is tender and the apricots just starting to fall apart",
+      "To serve, spoon some coconut yoghurt onto the plate then pile the cauliflower and apricots on top. Drain the turmeric and raisins and sprinkle over the top with some fresh coriander leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Yoghurt",
+        "unit": "g",
+        "notes": "dairy free",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Fresh Turmeric",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "or sultanas",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "halved and stoned",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8457383f088be9ab0587732046c5e2050ab207598dfe7e4b9093a2e033b826cc",
+    "lineage_hash": "60fc096b24233b95e4654f48a552085386ea3ec831c1e8232c883c9927bc2a37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coronation-cauliflower-recipe",
+    "fetchedAt": "2026-08-03T06:46:26.895Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coronation-cauliflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

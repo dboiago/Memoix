@@ -1,0 +1,57 @@
+{
+  "recipe": {
+    "name": "Cornmeal, Bacon and Sun-Dried Tomato Madeleines",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mint Tisane (page 22): 2 cups (20g) fresh mint leaves",
+      "Thé à la menthe (page 23): 2 cups (24g) fresh mint leaves and sprigs (the springs weigh more, hence the discrepancy",
+      "Fresh Mint Syrup (page 272): 2 cups (20g) fresh mint leaves",
+      "And the amount of boiling water in the Tisane recipes (page 22) should be “4 cups (1liter).”",
+      "On page 88, the Seat of Your Pants recipe is correct. The headnote story mentions a 2:1 ratio but the 3:1 listed in the ingredient list is correct.",
+      "Due to an indexing error, in some places in the book, the Homemade Grenadine Syrup recipe directs you to page 247, which is on page 274.",
+      "The Saint/Sinner Cocktail on page 73 says to shake it but should say to stir it in a mixing glass over ice until well-chilled, about 15 seconds, before straining it into a chilled coupe glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose",
+        "unit": "C",
+        "notes": "alt: corn flour, 70g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stone-ground Cornmeal",
+        "unit": "C",
+        "notes": "95g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d1fb0e76961de9509dfd2c166c75df4cc80b54750a18fbd9b13aac16c9bb4c1",
+    "lineage_hash": "fd66c3bab3ba5f0d0478c0772c86b0717c5bdfe99789c63f96eb68ef4d8d1a9b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/drinking-french-erratum-cornmeal-bacon-and-sun-dried-tomato-madeleine-recipe/",
+    "fetchedAt": "2026-08-02T17:25:58.273Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/drinking-french-erratum-cornmeal-bacon-and-sun-dried-tomato-madeleine-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

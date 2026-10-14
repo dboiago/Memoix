@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Black Russian Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "RU",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Skewered Lemon Slice Wheel",
+      "Luxardo Maraschino Cherry Sail"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "204",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of skewered lemon slice wheel and Luxardo Maraschino Cherry sail. (Skewer through either side of lemon with cherry skewered in the centre.)",
+      "STIR all ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "Garnish with skewered lemon slice wheel and maraschino cherry (sail)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b714a47cb0c1a7b8d2b3c81057c3d295b82da211c97b3488844fcebbc95e3cf",
+    "lineage_hash": "8a2511dc1d9a32f1e17e1b9873c45bd8736684829074945d02518a8770ef7238"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/236/black-russian",
+    "fetchedAt": "2026-08-01T23:18:01.891Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/236/black-russian",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

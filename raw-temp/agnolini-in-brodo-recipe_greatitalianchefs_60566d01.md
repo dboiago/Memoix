@@ -1,0 +1,5 @@
+_Agnolini_ are a type of filled pasta hailing from the Lombard city of Mantova with historic origins. It is said to date back to 1662, when it first appeared in Bartolomeo Stefani’s book _L’arte di ben cucinare_ (he was a cook for Mantova’s royal family, The Gonzaga). From then onwards, the recipe has been passed on to the people of the city, who still consider it one of the founding dishes in their culinary heritage.
+
+_Agnolini_, like the more widely known _cappelletti_ or _tortellini_, are served '_in brodo_', meaning bobbing about in a clear chicken broth. Unlike _tortellini_, however, _agnolini_ contain a filling which counts local salumi and chicken livers, while the shape can be round, square or akin to tortellini.
+
+A classic _minestra della festa_ (holiday soup), _agnolini_ are served on special occasions such as Christmas. On Christmas Eve, families often gather to prepare _agnolini_ for the following day, making it a collective effort that involves multiple generations.

@@ -1,0 +1,237 @@
+{
+  "recipe": {
+    "name": "Drunk Lobster with Trivet Noodles",
+    "time": "1 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "This dish might be simple to look at, but there are actually a lot of steps and elements to work through, so make sure you read the recipe thoroughly before beginning. Many of the elements need beginning a day in advance and it's best to get everything up to step 10 completed the day before serving, so plan accordingly",
+      "To make the parsley oil, blanch the parsley leaves in boiling water for 5 seconds, then plunge into iced water. Squeeze as much water as possible out of them, then pat dry between 2 cloths to remove any excess liquid. Blitz the blanched leaves with the oil in a blender until the oil turns bright green, then strain through a sieve lined with muslin cloth into a bowl in the fridge overnight",
+      "To make the dashi, submerge the kombu in the water and leave to infuse overnight",
+      "To make the noodles, place the Tipo 1 flour, semolina flour and salt in the bowl of a stand mixer with a paddle attachment. With the motor running at the slowest setting, slowly add the egg yolks and whole egg until a stiff dough begins to form. Roll the dough into a ball, wrap in cling film and place in the fridge to rest overnight",
+      "To prepare the lobsters, you need to separate the claws and tails from the main head and body. You can ask your fishmonger to do this for you, but remember to keep the bodies for making the stock. You should have 4 claws with the arms attached (2 larger claws and 2 smaller claws) and 2 tails, all still in their shells. Separate the arms from the claws. Set the tails aside for now",
+      "Set a steamer to 90°C if you have a temperature-controlled one, or you could just place one over a pan of lightly simmering water if not. Steam the arms for 6-7 minutes, the small claws for 8-9 minutes and the large claws for 9-10 minutes. As soon as they’re ready, plunge them into iced water to halt the cooking process",
+      "Once cooled, carefully remove the lobster meat from the claws and arms (reserving the shells for the stock), then place on a tray lined with j-cloth and wrap with cling film. Reserve in the fridge until needed",
+      "To make the lobster stock, chop up all your reserved shells, heads and bodies. Place a large stockpot over a medium-high heat and add the oil. Once hot, fry off the shells, heads and bodies until golden, stirring regularly to make sure they don’t catch. Strain the shells, reserving the oil, then set both the shells and oil aside (the oil is used to finish the dish, so this can be stored in the fridge until serving). Add a little of the water to the pan and heat to deglaze, then pour in the remaining water and add the roast lobster shells back in, along with sake and kombu",
+      "Bring the stock to the boil, then turn down to a simmer. Continue to simmer until reduced by two-thirds, skimming the stock of any oil that rises to the surface. You should be left with around 1 litre of stock. Strain the stock into a clean pan – ideally through a layer of muslin cloth – then place in the fridge overnight",
+      "The next day, continue with the dashi. Bring the water (with the kombu still in it) to a simmer and skim off any impurities, then strain and chill as quickly as possible. Once chilled, add the bonito and ginger, leave to infuse for 30 minutes, then strain again into a container",
+      "Add the mirin to a small pan and gently warm it up. Use a blowtorch or lighter to set the mirin alight to remove the alcohol, then add it to the dashi along with the soy sauce, whisking to incorporate. Add a little of the ponzu until you’re happy with the flavour, then reserve in the fridge. You will only need 400g of the dashi for this recipe, but the remaining stock can be used in all sorts of other dishes",
+      "Take the noodle dough out of the fridge and leave to come up to room temperature for 30 minutes. Unwrap and roll the dough into a sheet suitable for running through a pasta machine (it should be quite stiff and dry). Starting at the widest setting, roll the dough through the machine a few times, then fold it into thirds lengthways and repeat. Continue this process but gradually work your way down through the thickness settings of the pasta machine, until you get to setting 3. Lightly flour the dough with semolina as needed throughout the rolling process to prevent it from sticking",
+      "Once your noodle dough is rolled out, cut it into 20cm long sheets, then run it through the pasta machine’s cutting attachment. Divide the noodles into 4 nests and reserve on a tray dusted with semolina flour in the fridge until ready to cook",
+      "Remove any oil that has risen to the top of the chilled lobster stock. You will only need around 600g of stock for this dish, but it’s important to leave a little in the bottom of the container to avoid any solids that have settled there",
+      "To cook the lobster tails, measure out 260g of the lobster stock (avoiding any sediment or oil) into a pan and add the 260g of sake. Cut each of the lobster tails in half lengthways, then thread a skewer through each half tail lengthways to stop it curling up during cooking. Add the tails to the cold liquid shell-side down – you want the liquid to be sitting just below the tails. Cover the pan with a lid, then place it over a medium heat. Cook until the meat starts to turn opaque, giving the pan a shake every 2 minutes to allow some of the liquid to cover the meat. As soon as they turn opaque, lift the tails out of the liquid and chill as quickly as possible. Reserve the liquid and chill it as quickly as possible too. Once chilled, cover both the liquid and the tails separately and reserve in the fridge until required",
+      "Combine 400g of your dashi, 400g of your lobster stock and 200g of the liquid used to poach the lobster tails in. Measure out 325g of this mixture into a separate container, then whisk the miso paste into it. This is your lobster sauce. The remaining mixture will be used to cook the noodles",
+      "You now have all the elements ready to finish this dish. Bring the noodle cooking liquid to a simmer, then add the noodles. Cook and stir until almost all the stock has been absorbed by the noodles, then add the monk’s beard and stir again. Meanwhile, gently warm the lobster tails, arms and claws in the lobster sauce",
+      "Once warmed through, carefully peel the lobster tail halves. Place the peeled and cooked tails, arms and claws on a tray and brush with the reserved lobster oil. Strain the hot lobster sauce through a fine sieve into a jug and add some of the parsley oil to split",
+      "Divide the noodles and monk’s beard between 4 bowls, then add the tails, arms and claws alongside. Pour over the lobster sauce and finish with a little more lobster oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lobsters",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Kombu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ponzu",
+        "unit": null,
+        "notes": "to taste (Jonny uses Ponzu Yuzu Katsuo)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tipo 1 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lobster Shell",
+        "unit": "g",
+        "notes": "use all the leftover shells, heads and bodies from the 2 lobsters above",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Monk's Beard",
+        "unit": "g",
+        "notes": "washed and prepped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "827ed1c68cf01df2e9579eb56886e93f012687e1a03de97ff18f7496d893765b",
+    "lineage_hash": "2b58717408e1559278de97cfcc828d5f83a0687cd48008edd929c6be2563ea80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/drunk-lobster-trivet-noodles-recipe",
+    "fetchedAt": "2026-08-02T19:20:56.618Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/drunk-lobster-trivet-noodles-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

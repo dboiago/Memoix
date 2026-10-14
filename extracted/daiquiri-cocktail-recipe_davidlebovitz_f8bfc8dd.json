@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Couple",
+    "garnish": [
+      "Pineapple Wedge",
+      "Lime Wheel"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rum, lime juice, and simple syrup to a cocktail shaker.",
+      "Fill shaker 2/3rds full with ice and shake until the mixture is well-chilled, 15 to 20 seconds. Strain into a chilled couple glass. Garnish with pineapple wedge or lime wheel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "preferably Stiggins Fancy Pineapple rum",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Wedge",
+        "unit": null,
+        "notes": "alt: lime wheel, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71fa42c0bd198624c15bcce3f3db4d8501d1ed27b34384681e69ba4bd34e5ce8",
+    "lineage_hash": "cabd5692ff6ad28040325cc5e35b669fa9d1c0fe8d0e794739d4d6250fb5d8eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/stiggins-pineapple-lime-cocktail-recipe-plantation-rum-rhum-daiquiri/",
+    "fetchedAt": "2026-08-02T20:16:51.424Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/stiggins-pineapple-lime-cocktail-recipe-plantation-rum-rhum-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

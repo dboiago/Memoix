@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Cicada Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except the soda to a shaker, then shake well with ice. Strain into a Collins glass filled with crushed ice, then top\nwith soda water, and garnish.",
+      "Salted Cucumber-Wasabi SyrupIn a blender, add 20 grams of wasabi (Yvonne’s uses Kinjirushi Nama Oroshi grated wasabi), 1 cup of sugar, 1 cup of fresh cucumber juice, and 1/2 tsp. of kosher salt. Blend until the sugar is dissolved and strain through a fine-mesh sieve. Keep refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": "Yvonne’s uses Plantation 3-star",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Cucumber-wasabi Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italicus Rosolio Bergamot Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Soda Water",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi",
+        "unit": "g",
+        "notes": "Yvonne’s uses Kinjirushi Nama Oroshi grated wasabi",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "666553a357c61c579de542961368fe8d0f6ae0799686eb7ffcdd57cb61f7de7f",
+    "lineage_hash": "9c022f06993ada152ada157aa897e7822c68589a22ddf6af5760718991d9a04e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/yvonnes-boston-cicada-cocktail/",
+    "fetchedAt": "2026-08-03T22:22:55.721Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/yvonnes-boston-cicada-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

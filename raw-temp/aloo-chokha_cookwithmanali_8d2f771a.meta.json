@@ -1,0 +1,56 @@
+{
+  "url": "https://www.cookwithmanali.com/aloo-chokha/",
+  "slug": "aloo-chokha_cookwithmanali_8d2f771a",
+  "title": "Aloo Chokha",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T09:13:18.893Z",
+  "ldName": "Aloo Chokha (Easy Authentic Recipe)",
+  "ldTime": "PT29M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Sides",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "500 grams potatoes (I used yukon gold potatoes)",
+    "1 small red onion (finely chopped)",
+    "½ teaspoon salt (or to taste)",
+    "1-2  green chilies (finely chopped)",
+    "1 &amp; ¼ teaspoon mustard oil",
+    "1 &amp; ½ teaspoon achar masala (use the achar masala from your favorite achar (pickle))",
+    "2-3 tablespoons cilantro (finely chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash 500 gram potatoes and then cut them in half, add them to a pot and then fill the pot with water. Boil on a stove-top on medium-high heat until potatoes are soft and complete cooked. This takes around 20 minutes on stove-top. You can also do this step in a pressure cooker or using a microwave.",
+    "Drain the water and let the potatoes cool slightly and then remove the potato skin. Transfer them to a large bowl and mash them using a potato masher.",
+    "Now, to the bowl add 1 small red onion (chopped), ½ teaspoon salt, 1-2 green chilies, 1 &amp; ¼ teaspoon mustard oil, 1 &amp; ½ teaspoon achar masala, and 2-3 tablespoons cilantro (chopped). Mix and mash everything together using a fork or potato masher. Aloo chokha is ready! Taste test and adjust salt/spice levels as needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "123 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "3 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "0.2 g",
+    "sodiumContent": "337 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "1.4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 500 grams potatoes, I used yukon gold potatoes",
+    "▢ 1 small red onion, finely chopped",
+    "▢ ½ teaspoon salt, or to taste",
+    "▢ 1-2 green chilies, finely chopped",
+    "▢ 1 & ¼ teaspoon mustard oil",
+    "▢ 1 & ½ teaspoon achar masala, use the achar masala from your favorite achar (pickle)",
+    "▢ 2-3 tablespoons cilantro, finely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

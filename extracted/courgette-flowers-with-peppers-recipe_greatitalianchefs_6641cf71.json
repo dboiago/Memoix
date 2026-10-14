@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Courgette Flowers with Peppers",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently rinse the courgette flowers then leave to drain upside down on some kitchen paper",
+      "Melt half of the butter in a hot pan, then add the pepper strips and roast until crisp. In a separate pan, sauté the courgette flowers in the remaining butter on a high heat, until they just start to wilt. Season with salt to taste",
+      "Grate the apple into the centre of a serving plate to make a mound, then repeat with the cheese on top",
+      "Top with the pepper strips, then the wilted courgette flowers, and a final grating of fresh horseradish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "washed and cut into thin strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Montasio Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "644106172e003ab5301ca7100cd356e96d75bb5ec72c7163500c62f0efa47ad0",
+    "lineage_hash": "fb09a1a17b90df365562be2272d2fcd4076848687da86562533ee1407452e62b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/courgette-flowers-horseradish-recipe",
+    "fetchedAt": "2026-08-02T08:37:01.679Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/courgette-flowers-horseradish-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cyrano",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Lime Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a small knife, cut a coin-size piece of peel from the lime, cutting deep enough to include a small amount of flesh with the peel. Muddle the lime piece in an Old Fashioned glass, then add the remaining ingredients. Fill the glass with cracked ice, briefly stir the drink, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Rhum Agricole",
+        "unit": "oz",
+        "notes": "Death & Co uses Rhum JM VSOP",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stiggins’ Fancy Pineapple Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d48a8d5b59e7017e7bbb2049e59d455525a5277a2dd8b2c1d881e16515400be6",
+    "lineage_hash": "bb3b1474392bb6bbf56121f30f961f41c6421febc8ea554cf5f086f363c3d552"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cyrano-from-death-co-denver/",
+    "fetchedAt": "2026-08-03T18:49:58.085Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cyrano-from-death-co-denver/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

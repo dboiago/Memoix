@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Confit Duck With Lentils and Mustard-Pickled Vegetables",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "A day ahead of cooking, begin by preparing the mustard pickled vegetables. in a saucepan combine the white vinegar, water, sugar, mustard seeds and salt. Bring to a boil and stir until the sugar is dissolved. Turn off the heat and leave the mixture to cool",
+      "Add the prepared vegetables to a jar, then cover with the cooled pickling liquid. Seal the jar and leave to pickle in the fridge overnight",
+      "The next day, season the duck legs generously with salt and pepper, then place them in a large pot along with the crushed garlic, thyme, coriander seeds and rosemary",
+      "Cover the duck legs with the duck fat, making sure they are completely submerged, then cover the pot with a lid. Cook the duck legs on low heat for around 3 hours or until the meat falls off the bone",
+      "Meanwhile preheat the oven to 200°C on the grill setting",
+      "Rinse the green lentils under cold water. Heat the olive oil over medium heat in a medium saucepan then add in the chopped shallot and minced garlic. Cook for around 4 minutes, until softened",
+      "Add in the lentils, along with the tomato paste. Cook out for a minute or so then add in the flour and stir well",
+      "Add in the Calvet Prestige Côtes Du Rhône Villages Red Wine and leave to reduce by half. Add in the chicken broth and bay leaf then bring the mix to a boil. Reduce the heat to low, then cover and simmer for 25 minutes or until the lentils are tender but still hold their shape. Season with salt and pepper to taste",
+      "Meanwhile, remove the duck legs from the fat, and place them onto a parchment lined oven tray. Place into the oven and cook for around 10 minutes or until the skin is crisp",
+      "To serve, stir the chopped parsley through the lentils then spoon them onto serving plates, then place over a confit duck leg. Arrange the mustard-pickled vegetables over the lentils. Enjoy with a glass of Calvet Prestige Côtes Du Rhône Villages Red Wine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "sliced into thin rounds",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Onions",
+        "unit": "g",
+        "notes": "sliced in half",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Endive",
+        "unit": null,
+        "notes": "sliced into quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": "to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Rosemary",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "L",
+        "notes": "or enough to fully submerge the duck legs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Côtes Du Rhone",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17d2d080b30f371f01fec19197d784d5f3de39fb179f0b6cf3256afcc73a5693",
+    "lineage_hash": "0d287b2e9bd3d9d9174260b0cc6cf08485458ac47f4f690e3a47ce5d09f7e4ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-duck-lentils-mustard-pickled-vegetables-recipe",
+    "fetchedAt": "2026-08-02T12:12:44.173Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-duck-lentils-mustard-pickled-vegetables-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

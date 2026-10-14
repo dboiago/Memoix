@@ -1,0 +1,35 @@
+{
+  "url": "https://www.bongeats.com/recipe/alu-peyaj-bhaja",
+  "slug": "aloo-peyaj-bhaja-recipe-by-bong-eats_bongeats_0093e8f5",
+  "title": "Aloo Peyaj Bhaja recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:35:52.056Z",
+  "ldName": "Aloo Peyaj Bhaja",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": "4 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "dinner",
+  "ldKeywords": "aloo peyaj bhaja, sauteed potato and onion, bengali style fried onions and potato",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "176"
+  },
+  "htmlIngredientLines": [
+    "400 g potatoes",
+    "100 g onions",
+    "¼ tsp kaalo jeere (nigella seeds)",
+    "2 pcs dried red chillies",
+    "2 pcs green chillies",
+    "6 g salt",
+    "¼ tsp sugar",
+    "¼ tsp turmeric powder",
+    "40 g mustard oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

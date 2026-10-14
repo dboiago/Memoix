@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Duncan Cabbage with Wasabi and Pickled Shimeji",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin 10-14 days in advance, as you need to give the shimeji mushrooms time to ferment. Separate the mushroom stalks from the heads and set the heads aside. Place the stalks in a sous-vide bag or Kilner jar and top with 120ml of water mixed with 2.4g of table salt and seal. Leave to ferment at room temperature for 10-14 days, after which you will be left with an amazing fermented mushroom stock which is used for the sauce. You will have to 'burp' the jar each day to allow built-up gas to escape",
+      "For the pickled mushrooms, heat the vinegar, sugar and remaining 100ml of water in a small saucepan until the sugar has dissolved. Pour over the mushroom heads and leave to come to room temperature in the pickle. Cover or seal and reserve in the fridge until ready to serve",
+      "The day before cooking, remove the outer leaves from the cabbage and place them in a dehydrator or low oven overnight until completely crisp. The next day, blitz into a powder using a spice grinder",
+      "The next day, cook the cabbage. Cut the cabbage into four segments, removing most of the core but keeping enough that it holds together. Brush each quarter liberally with the melted beef fat and sprinkle with a little salt. Place the leaves in a sous-vide bag and steam at 90ºC for 13–15 minutes until tender. If you don't have sous-vide equipment, you can cook the leaves in a lidded casserole dish in the oven set to 100ºC or the lowest your oven will go",
+      "Once the segments of cabbage are tender with a little bite, it's time to roll them up. Place a large sheet of cling film on a work surface and pile the quarters of cabbage on top. Tightly roll them into a cylinder, wrapping them with the cling film to create a sausage shape. Secure the ends, then place in the fridge for an hour or 2 to set firm",
+      "To make the crispy kale, place a dry frying pan over a medium to low heat and add the kale. Cook for around 20–30 minutes turning occasionally to ensure it turns crispy all over. Season with salt and store in an airtight container to keep crisp",
+      "To make the mayonnaise, whisk together the egg, yolks, vinegar, wasabi and salt together for a minute until thick and pale. Slowly drizzle in the oil whilst continuously whisking to create an emulsion. If it begins to split, add in the water which should bring it back together. Once all the oil is added, taste and season if needed. Transfer to an ISI gun if you have one",
+      "To make the mock teriyaki sauce, pour all the ingredients into a pan along with 120ml of the liquid from the fermented mushrooms. Bring to the boil and reduce until the thickness of teriyaki sauce. Transfer to a squeezy bottle",
+      "Now that all the elements are ready, slice the cabbage into 4 portions, unwrap and discard the cling film and use a blowtorch to char it all over (a hot grill will also do the job if you don’t have a blowtorch). Place them in a hot oven for 5 minutes to ensure they are warm all the way through",
+      "Place each portion of cabbage in the centre of a warmed plate and top with the pickled mushrooms and the teriyaki sauce. Add a dollop of the mayonnaise and balance the crispy kale on top, getting as much height as possible. Finish with a dusting of the powdered cabbage and a few micro herbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pointed Cabbage",
+        "unit": null,
+        "notes": "ideally Duncan variety",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fat",
+        "unit": "g",
+        "notes": "ideally dry-aged, melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Peacock Kale",
+        "unit": null,
+        "notes": "or regular kale",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Herbs",
+        "unit": "pinch",
+        "notes": "to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi",
+        "unit": "g",
+        "notes": "fresh, or 15g wasabi from a tube if you can't get fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stout",
+        "unit": "ml",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mead Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "606475ce13de75a1feb910ad1f429bf80d2c15e8faa34579a5aa16b0708968c8",
+    "lineage_hash": "58167d00fc26248203afd7c7227dc11201c771148e95fffbc241a6d0ceab8bbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cabbage-wasabi-teriyaki-recipe",
+    "fetchedAt": "2026-08-02T19:50:52.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cabbage-wasabi-teriyaki-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

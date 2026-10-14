@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Cider Squirt Mop Sauce",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a heavy saucepan and bring to a boil. Reduce the heat and simmer the sauce for 5 minutes. Let cool to room temperature. Transfer the squirt to a spray bottle and use right away or refrigerate. Use within 1 or 2 days of making."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9e099eee1ed9928049e3865f2d72b5b2fec5c42093d03d74ad3f8cc80d36aef",
+    "lineage_hash": "3a8d69d8b75dd2b1abd8d4b7d0d0c547d0542b8759f417f717c0931f2ee3b4c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cider-squirt-mop-sauce/",
+    "fetchedAt": "2026-08-03T02:33:26.078Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cider-squirt-mop-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

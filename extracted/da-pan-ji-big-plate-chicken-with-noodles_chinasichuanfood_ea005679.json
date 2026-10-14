@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Da Pan Ji-Big Plate Chicken with Noodles",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "985",
+      "carbohydrateContent": "13",
+      "fatContent": "68",
+      "proteinContent": "73"
+    },
+    "directions": [
+      "Cut chicken into small chunks (you can use 4 chicken thighs as a substitute to a whole chicken). Place in a large pot, add 1 green onion and 2 slices of ginger and then bring to a boiling. Cook for 1 minute, pick the chicken out and clean with warm water. Set aside and drain.",
+      "Heat up 3 tablespoons of oil in wok, add garlic, ginger, white part of green onion, dried chili pepper, star anise and Sichuan peppercorn, fry over slow fire until aroma. Add doubanjiang and continue frying for 1 minute until the oil turns red.",
+      "Place chicken chunks in, turn up the fire and fry until slightly browned. Add Shaoxing wine and light soy sauce. Mix well.",
+      "Pour in enough water until 1cm higher than than chicken. Bring to a boiling, and cover with a lid. Simmer over slow fire. Add potato chunks after 10 minutes and then continue cooking for another 15 minutes.",
+      "Turn up the fire and start to evaporate extra water. When the liquid lever is around reduced to 1/3, add red pepper, green pepper and red onion. Give everything a big stir fry to mix well.",
+      "Meanwhile, cook wide noodles in another pot according to the instruction and lay the noodles in the bottle of your serving plate.",
+      "Transfer the braised chicken to top the noodles and serve directly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "around 1.5 kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "white part only, cut into 1 inch sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Potatoes",
+        "unit": null,
+        "notes": "peeled and cut into 3-4cm chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b923d67f893df7014a513feb05d5643ae2dd54bcd3ee2413ae405b68ca8f0168",
+    "lineage_hash": "34077f55d8e9f90d3bac934c218794f547d4c25468241432fcdfa1cb7f7f1d9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/da-pan-ji-big-plate-chicken-with-noodles/",
+    "fetchedAt": "2026-08-02T03:10:21.676Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/da-pan-ji-big-plate-chicken-with-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

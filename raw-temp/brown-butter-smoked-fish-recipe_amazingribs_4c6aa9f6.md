@@ -1,0 +1,37 @@
+-   2 pounds fresh skin-on fish
+-   1/2 cup hot water
+-   1/4 pound salt, any type 
+-   1/2 gallon cold water
+-   1/4 cup sugar
+-   2 tablespoons garlic powder
+-   2 tablespoons fine grind black pepper
+-   2 teaspoons [Marietta’s Fish Rub](https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/mariettas-fish-rub-recipe)
+
+1.  **Prep**. To prepare the fish, start by removing the guts, head, fins, tail, scales, and slime, but leave the skin on.
+    
+2.  Filet the fish by drawing a flexible fileting knife along the back on both sides of the dorsal fin from head to tail. Keep sliding the knife towards the belly and when you hit the ribs, let the knife glide along them. (Tip: When you’re done you should have two boneless filets and a skeleton with a little meat on it. If you wish, you can freeze the skeleton and when you get six or eight, simmer them to make fish stock.)
+    
+    ![Closeup of hand filleting a fish showing proper knife placement.](https://amazingribs.com/wp-content/uploads/2023/09/filleting-300x247.jpg)
+    
+3.  **Pin bones.** Run your hand along the flesh and if you feel pin bones, drape the filets one at a time over the bottom of an inverted bowl so the pin bones stick out, and yank them with tweezers or needle nose pliers.
+    
+4.  **Brine**. Brining is not required. You can just sprinkle on some rub and go to the grill, but salmon especially loves the added moisture and salt. Your call. You can make the brine days in advance and keep it chilled if you wish. Start with a one-cup measuring cup. Add 1/2 cup hot water and then pour in salt, any salt, until the water line reaches 3/4 cup. As noted above, any type of salt is OK to use for this purpose. Pour the slurry into a clean container that’s large enough to hold the meat and a bit more than 1/2 gallon of water. It cannot be made of aluminum, copper, or cast iron, all of which can react with the salt. Do not use a Styrofoam cooler. Now add 1/2 gallon of cold water. Then add the sugar, garlic powder, and black pepper. Stir until most of the sugar is dissolved. The garlic powder and pepper will not dissolve much at first.
+    
+5.  **Submerge** the fish skin side up in the brine and refrigerate. Make sure the meat part is thoroughly submerged. If you need to hold it under the water, add a plate with a weight on top. Cover with plastic wrap, not aluminum foil. Gently stir the container occasionally to make sure all parts of the fish come into contact with the brine. The brining time will vary depending on how thick the filets are. Brine 2-inch thick filets for about 2 hours in the fridge, and 1-inch filets for 1 hour. Do not leave the fish in brine longer than 3 hours. If the filets are thin, brine for less time. Rinse the fish to remove excess surface salt. Pat dry with paper towels. (Note: Some folks go through a process to form a “pellicle” on the fish. I have done it and don’t think it is worth the effort.) Discard the brine.
+    
+    ![Pan of salmon soaking in brine.](https://amazingribs.com/wp-content/uploads/2023/09/brining-300x169.jpg)
+    
+6.  **Brown butter.** While the fish is brining, make the brown butter. Melt the butter in a light-colored saucepan over medium heat without stirring. Don’t use a dark-colored pan or you won’t see the transformation. Stay right at the stove and watch carefully, it can burn in a hurry. It will foam and sizzle as long as there is water and then go silent. The color will move from yellow to golden to tan to amber to brown. You should smell a nutty scent and the milk solids should settle along the bottom. You can store it in the fridge until the fish is ready.
+    
+7.  **Rub.** Sprinkle the fleshy side with the rub.
+    
+8.  **Fire up**. Set up your grill in a 2-zone configuration. Get a lot of white smoke rolling. I will often use old dried herbs or sawdust.
+    
+9.  **Smoke**. Place the fish on the grate on your grill on the indirect side so the pieces are not touching each other. Cover them with the smoke catcher. Start spot-checking the meat temps after about 30 minutes. As the meat approaches doneness, droplets of milky “boogers” (albumen) may come to the surface of salmon and some other species. They are harmless but a bit unsightly. You can brush them off with a wet brush if you want. Remove the meat when it is at about 130°F internally. Don’t overcook. The total cooking time will be about an hour depending on the actual temperature of your oven and the thickness of the meat.
+    
+10.  **Serve**. While the fish is smoking, warm the brown butter. Remove the filets, plate them, and drizzle with the brown butter. Pour extra brown butter into a glass jar including the solids and all, and store in the fridge or freezer. Brown butter is also great on Smoked Cauliflower.
+     
+
+_**About the salt.** While we normally recommend Morton Coarse Kosher Salt in recipes in order to ensure consistency, the water in this brine will swallow up almost exactly 1/4 pound regardless of whether you use table salt, kosher salt, pickling salt, or sea salt. The volume of these salts may differ, but their water displacement is the same._
+
+[Let us know](#comment) how it was!

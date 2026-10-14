@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Aubergine Couscous Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grill aubergine with little oil. keep aside.",
+      "Make mixture using all dressing ingredients",
+      "Now add all other ingredients except aubergine to dressing",
+      "Roll up grilled aubergine & mix stuff it with above mixture.",
+      "Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "unit": null,
+        "notes": "cut into long stripes",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Couscous",
+        "unit": "Tbsp",
+        "notes": "cooked",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "soy Yogurt",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika/ Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b20161fa088503936d54f7efed490a6a8350065ad2e017819b295a0d4f513be6",
+    "lineage_hash": "eec2afefe2f79d9fa71c751783516cebef6af7f1e84fe306c1c04f5e02887658"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aubergine-couscous-salad/",
+    "fetchedAt": "2026-08-02T01:34:18.749Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aubergine-couscous-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "3 Dry Fruit Mithai",
+    "time": "25-30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai or shallow pan, add the, once it’s hot, add TATA SAMPANN foxnuts and roast them for a while or until it’s crispy.",
+      "Transfer it to a parat or bowl and keep it aside for further use.",
+      "In the same pan or kadai, add ghee, once it’s hot, add TATA SAMPANN cashew nuts, almonds and roast it well until golden in color.",
+      "Transfer it to the same bowl and keep it aside to cool down at room temperature.",
+      "Transfer the dry fruits to a mixer grinder jar and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In the same kadai, add ghee, once it’s hot, add mawa and saute it well.",
+      "Add powdered sugar and cook it for 7-8 minutes or until it reduces the moisture.",
+      "Add mixed dry fruit mixture, cardamom powder and mix it well.",
+      "Add sugar and mix well, transfer the mixture to the tray and keep it aside for 2-3 hours to cool down at room temperature.",
+      "Demold the mixture and cut into desired shape.",
+      "Transfer it to a serving dish, garnish it with silver vark, almonds and pistachios.",
+      "In a bowl or parat, add mixed dry fruit mixture, TATA SAMPANN raisins, a pinch of salt, black peppercorns, dry ginger powder and mix it well.",
+      "Divide the mixture into the small lemon size balls and give it a desired shape.",
+      "Transfer it to a serving dish, garnish it with almonds and fresh rose petals.",
+      "In the same kadai, add kesar, water and give it a quick boil.",
+      "Add sugar and let it boil until sugar dissolves.",
+      "Add mixed dry fruit mixture and cook until desired consistency.",
+      "Transfer it to a serving bowl, garnish it with pistachios, almonds and saffron strands.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "Dry Fruit Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Foxnut",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dry Fruit Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nut",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Dry Fruit Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Dry Fruit Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Mawa",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dry Fruit Mixture",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Fruit Barfi",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dry Fruit Mixture",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Dry Fruit Ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Rainins",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": "Dry Fruit Ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Fruit Ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "Dry Fruit Ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dry Fruit Ladoo",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dry Fruit Halwa",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Fruit Halwa",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Dry Fruit Halwa",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dry Fruit Mixture",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Dry Fruit Halwa",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a89b242bd2127f7af93172d45d61305565405cd4e8370c3392ee13c1b18e874",
+    "lineage_hash": "30334fac5e43d0b8915973f5c32d40e0d400d445a6bc02bec4c2c8d08e1eaa6d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/3-dry-fruit-mithai-in-10-mins/",
+    "fetchedAt": "2026-08-02T17:03:10.623Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/3-dry-fruit-mithai-in-10-mins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

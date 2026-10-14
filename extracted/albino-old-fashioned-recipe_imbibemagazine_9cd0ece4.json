@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Albino Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Brandied Cherries",
+      "White Grapefruit Wedge"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle 2 brandied cherries with a wedge of white grapefruit in a heavy-bottomed Old Fashioned glass. Remove the grapefruit wedge for easier drinking. In the glass, add whiskey, simple syrup, Angostura bitters and a large chunk of ice and stir to chill. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Whiskey",
+        "unit": "oz",
+        "notes": "Carducci uses Death’s Door",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandied Cherries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Grapefruit Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ef322867e380c7d88d74a32ab5ad79893ea04d45e758d077af8e8a3419e6c01",
+    "lineage_hash": "dd802f1103b2ded04f2d12daa2aa704959f218758199031596f5d53538980a95"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/albino-old-fashioned-recipe/",
+    "fetchedAt": "2026-08-03T20:15:20.339Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/albino-old-fashioned-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

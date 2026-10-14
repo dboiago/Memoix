@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2024/11/21/chestnut-cookies/",
+  "slug": "chestnut-cookies_baking-sense_d57b9369",
+  "title": "Chestnut Cookies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:17:26.746Z",
+  "ldName": "Chestnut Cookies",
+  "ldTime": "PT58M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "28",
+    "28 cookies"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "chestnut, thumbprint cookie",
+  "ldIngredientsRaw": [
+    "6 oz unsalted butter (room temperature)",
+    "3 oz granulated sugar (¼ cup plus 2 tablespoons)",
+    "2  egg yolks",
+    "½ teaspoon vanilla extract",
+    "3 ½ oz cake flour (¾ cup, see note )",
+    "2 ½ oz chestnut flour (¾ cup)",
+    "½ teaspoon  ground cinnamon",
+    "⅛ teaspoon grated nutmeg",
+    "¼ teaspoon  table salt",
+    "1   egg white (whisked)",
+    "4 oz chestnut spread (¼ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Cream 6 oz&#32;unsalted butter with 3 oz&#32;granulated sugar until light and fluffy. Add 2&#32;egg yolks and ½ teaspoon&#32;vanilla extract.",
+    "Add 3 ½ oz&#32;cake flour 2 ½ oz&#32;chestnut flour, ½ teaspoon&#32;ground cinnamon, ⅛ teaspoon&#32;grated nutmeg and ¼ teaspoon&#32;table salt. Mix just until the flour is incorporated. Dump the dough out onto a lightly flour work surface and knead into a ball. Wrap the dough and refrigerate for at least 60 minutes or up to 2 days. The dough can be frozen for a month.",
+    "Preheat the oven to 350 °F. Line a baking sheet with parchment paper or a silicone baking mat.",
+    "Remove the dough from the refrigerator and use your hands to roll the dough into a 1” thick dowel.",
+    "Slice the dowel into 1” long segments and roll each piece into a ball. Place the balls onto the prepared baking sheet leaving ½” between cookies. Use your thumb to make a deep indent in the middle of each cookie. Lightly brush the cookies with egg white. Spoon a ½ teaspoon of chestnut paste into the indentations.",
+    "Bake until the cookies are just beginning to brown around the edges, about 8 minutes. Cool on the pan for 5 minutes then transfer to a rack to cool completely."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "90 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "1 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "27 mg",
+    "sodiumContent": "23 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "1.3 g"
+  },
+  "htmlIngredientLines": [
+    "6 oz unsalted butter (room temperature)",
+    "3 oz granulated sugar (¼ cup plus 2 tablespoons)",
+    "2 egg yolks",
+    "½ teaspoon vanilla extract",
+    "3 ½ oz cake flour (¾ cup, see note )",
+    "2 ½ oz chestnut flour (¾ cup)",
+    "½ teaspoon  ground cinnamon",
+    "⅛ teaspoon grated nutmeg",
+    "¼ teaspoon  table salt",
+    "1  egg white (whisked)",
+    "4 oz chestnut spread (¼ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

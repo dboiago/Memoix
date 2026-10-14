@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Barbecue Spice Mix",
+    "time": "10 min",
+    "course": "rubs",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "54",
+      "carbohydrateContent": "5",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Toast peanut and walnut with slow fire. Set aside to cool down.",
+      "Toast Sichuan peppercorn, fennel and cumin seeds over slowest fire until aromatic.",
+      "Place toasted peanuts, walnut, sesame seeds and all the other ingredients expect pepper flakes in a blender. Blend until fine and smooth.",
+      "Add pepper flakes, ginger powder and garlic powder, sugar and salt in. Continue blend for a while to mix well. Break well and then slightly cool, contained in air-tight bag or container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sichuan Pepper Flakes",
+        "unit": "C",
+        "notes": "you can make this with the same instruction in How to make Chinese red oil.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nuts",
+        "unit": "C",
+        "notes": "cashew can work fine too, peanuts and walnuts",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Chinese Cinnamon",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Dried Tangerine",
+        "unit": "small",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Sand Ginger",
+        "unit": "small",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20ef125d6fd5ca22fe95528153b0b37c5976462a9bc310aec8f2ae34c159eb1a",
+    "lineage_hash": "b0ce4cc1d85e5150519d8cdb204bfd75ec5837d25fdeeaa4725713b26b8239b8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/barbecue-spice-mix/",
+    "fetchedAt": "2026-08-02T06:18:49.384Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/barbecue-spice-mix/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

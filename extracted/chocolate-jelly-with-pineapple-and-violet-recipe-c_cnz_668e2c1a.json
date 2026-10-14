@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Chocolate Jelly with Pineapple and Violet",
+    "time": "2 hr",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Divide the pineapple among four glasses or ramekins, arranging it in a single layer at the bottom.",
+      "Combine the chocolate, milk, sugar, agar-agar, and violet extract in a small saucepan. Cook over medium heat, stirring regularly until the chocolate is melted. Bring to a simmer and remove from heat. Let cool for a minute and pour carefully into the prepared glasses.",
+      "Refrigerate for about two hours, or until set.",
+      "Dust the surface of the gelées with cocoa powder (put a tablespoon of cocoa powder in a fine-mesh sieve and shake over the glasses) and decorate each glass with a slice of dried pineapple.",
+      "Preheat the oven to 100°C (200°F) and grease an oven rack with vegetable oil.",
+      "Scrub and dry the pineapple. Cut it in very thin slices using a sharp serrated knife. Arrange the slices on the prepared rack in a single layer (it’s okay if the slices touch, but they shouldn’t overlap) and bake for 3 hours, flipping the slices every hour or so, until dry.",
+      "Let cool completely (they will turn crisp as they cool) and keep in a tin box at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar-agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Violet Extract",
+        "unit": "drops",
+        "notes": "optional, substitute 1/4 teaspoon pure vanilla essence",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "slices",
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smallish Ripe Pineapple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fad44d534da9c59dacfb7e6b5645ac422ee62722c4293f40fe24852f237f1080",
+    "lineage_hash": "b7aa9f5b62f666d24b949e41299b8fbd0c5f9e256a8e87c245c0c5d8c1107b1e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/chocolate-jelly-with-pineapple-and-violet-recipe/",
+    "fetchedAt": "2026-09-30T18:29:38.773Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/chocolate-jelly-with-pineapple-and-violet-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

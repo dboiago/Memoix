@@ -1,0 +1,290 @@
+{
+  "recipe": {
+    "name": "Crispy Salmon with Cabbage",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the sweet and sour cabbage. Sprinkle the cabbage with a generous pinch of salt and leave to stand in a colander for 1 hour. Rinse well under cold water and drain",
+      "Heat the sesame oil in a pan and stir-fry the cabbage for 30 seconds. Add the sugar and leave to caramelise, then add the vinegar, sherry, ginger, chilli and sultanas and cook over a high heat for a few minutes until all of the liquid has evaporated. Season and leave to cool",
+      "To prepare the sauce, simmer the honey and vinegar together in a pan until the mixture thickens and darkens in colour slightly. Add the coriander, mustard and oil and stir through",
+      "Add all of the spices and simmer for 1 minute, then leave to cool. Boil the chicken stock, add the honey and spice mixture and reduce slightly to achieve a sauce-like consistency. Pass through a sieve into a pan and set aside",
+      "Cut each salmon portion lengthways into 4 pieces and place some of the pickled ginger between each slice. Skewer the pieces back together",
+      "Place a large, non-stick frying pan over a high heat and add a dash of rapeseed oil. Once hot, season the salmon well and sear skin-side down until crispy. Turn over, remove from the heat and allow to rest - the residual heat should cook the fish to rare. If you prefer your salmon cooked through, keep the stove on and fry the other side of each fillet",
+      "Trim the roots from the pak choi, break down into individual leaves and wash thoroughly. Heat a dash of rapeseed oil in a hot wok or pan and stir-fry the pak choi leaves for 1-2 minutes until tender",
+      "Reheat the cabbage and divide evenly onto warm plates. Place the pak choi leaves next to the cabbage and arrange the salmon on top. Pour the spicy sauce over each plate and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Ginger",
+        "unit": null,
+        "notes": "1 small packet, sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": null,
+        "notes": "small, finely shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pak Choi",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "734e61516da1648c4a2d1c8f3772f1c44285e30685f04cf6dadfd7e9e24ef05f",
+    "lineage_hash": "e3e373efd35a2a98b53fc037c68c2d7541e934a833ba4c329dba41d09f4abc2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/salmon-cabbage-recipe",
+    "fetchedAt": "2026-08-03T21:16:47.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/salmon-cabbage-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

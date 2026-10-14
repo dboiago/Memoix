@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Coorgi Chicken Masala",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Apply red chili powder and turmeric to chicken pieces and leave it aside.",
+      "Roast the coconut without oil till it turns slightly brownish. Grind it to a smooth paste.",
+      "Heat a little oil and fry onions. When they turn slightly brownish, add tomatoes and fry for some time. Now add raw masala and fry till the raw smell goes off and a nice aroma comes out of it. Now add the chicken pieces, salt and fry for about 5mins. Add 2 cups of water, cover and cook till chicken is tender.",
+      "Add the ground coconut, tamarind extract and cook for about 7-8 mins till the curry thickens.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Pieces",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "\" Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "fresh/frozen",
+        "amount": "½",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Extract",
+        "unit": "tsp",
+        "notes": "or 2 pieces of tamarind soaked in warm water",
+        "amount": "¼",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Raw masala –Ground into paste",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2763e6915fc0b1506c58547127f6516bb60ce5d95b0f4be39ab1c94af76552d4",
+    "lineage_hash": "582c30d878a2c83698768a96ed7b2ce0d14a73b0099eb3036b1c34e57ac2f3e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/coorgi-chicken-masala/",
+    "fetchedAt": "2026-08-02T14:16:41.150Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/coorgi-chicken-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

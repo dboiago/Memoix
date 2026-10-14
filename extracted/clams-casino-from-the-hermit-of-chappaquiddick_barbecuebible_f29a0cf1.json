@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Clams Casino",
+    "time": "1 hr 5 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a large skillet. Add the slivered bacon, ramps (or scallions and garlic), oregano, basil, lemon zest, and plenty of black pepper. Cook over medium-high heat until the mixture is browned, 3 to 5 minutes, stirring with a wooden spoon. Stir in the bread crumbs and cook until lightly browned, 2 minutes more. Set the stuffing aside.",
+      "Scrub the clams, discarding any with gapped shells that fail to close when tapped. Shuck the clams, working over a bowl catch the juices. Discard the top shells and loosen the clams from the bottom shell with your shucking knife. Arrange the clams on the half shell in pie pans or a baking sheet filled with a 1/4-inch layer of coarse salt (this holds the clam shells upright).",
+      "Strain the clam juices into the stuffing mixture and stir to mix. Spoon the stuffing into the shells over the clam meat. Top each with a piece of bacon. The clams can be prepared several hours ahead to this stage, covered and refrigerated.",
+      "Preheat the oven to 450 degrees. Bake the clams until the bacon pieces and crumb mixture are sizzling and browned, 6 to 10 minutes. Serve the Chappaquiddick Clams Casino at once with sarsaparilla or dry white wine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Smokehouse Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ramps",
+        "unit": null,
+        "notes": "alt: large scallions",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "optional, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus oil for drizzling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Bread Crumbs",
+        "unit": "C",
+        "notes": "preferably homemade",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Littleneck Clams",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt for Baking the Clams",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "091a74d66abdec5d34bea386abc64ac6b8a2a36a1c915d74175c4ef4796fae97",
+    "lineage_hash": "0377a7dce3b2e19f5662a74688002fb819c74d5562375e709a1d67e90307b4dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/clams-casino/",
+    "fetchedAt": "2026-08-03T05:49:14.391Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/clams-casino/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

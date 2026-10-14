@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Bean Sprout Salad (凉拌豆芽)",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "107",
+      "carbohydrateContent": "5.9",
+      "fatContent": "8.3",
+      "proteinContent": "4.2"
+    },
+    "directions": [
+      "Bring a medium-sized pot of water to a boil. Add the salt and stir to dissolve completely. Add the bean sprouts. Cook for 40 seconds, or until al dente. Immediately drain and transfer the bean sprouts to a colander. Rinse with cold tap water to stop cooking. Once cooled completely, drain thoroughly, then pat dry with paper towels. Transfer to a big bowl.",
+      "Add the sliced pepper, green onion, and garlic to the bowl with the bean sprouts. Do not stir. Make sure the garlic is on the very top of the bowl.",
+      "Add the soy sauce, Chinkiang vinegar, sugar and Sichuan peppercorns.",
+      "Heat the peanut oil over medium heat until hot. Immediately drizzle the oil into the bowl, directly over the garlic and Sichuan peppercorns. You should see the ingredients sizzle in the hot oil.",
+      "Mix everything together and pour in the sesame oil (or chili oil, if you prefer a spicy dish). Mix again and serve as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "oz",
+        "notes": "340 g",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anaheim Pepper",
+        "unit": null,
+        "notes": "*Footnote 1, or half a red pepper, or 1 Asian long red pepper",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "*Footnote 2, grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": "or homemade chili oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a3757811c0206fac630fa7f64be481ca2d3639d421d88cc33b3353ef938628f",
+    "lineage_hash": "e8d448ac9892b7bc9849a5bce6af53d5132b0c368655cb1454107436390b4fff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bean-sprout-salad/",
+    "fetchedAt": "2026-08-02T00:57:32.110Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bean-sprout-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

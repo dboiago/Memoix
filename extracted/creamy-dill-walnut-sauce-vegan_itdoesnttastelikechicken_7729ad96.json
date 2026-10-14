@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Creamy Dill Walnut Sauce",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "122",
+      "carbohydrateContent": "4",
+      "fatContent": "12",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Blend the Ingredients: In a blender or food processor, combine all the ingredients except for the water. Blend until the mixture is combined. Add water, one tablespoon at a time, until the sauce reaches your desired consistency. I like a chunkier texture but you can also blend it a bit longer for a smoother sauce.",
+      "Serve: Serve this sauce over roasted veggies, toss it with pasta, dollop it on grain bowls, drizzle it over tofu dishes, or use it as a dip with tortilla chips. This sauce is so tasty, you’ll want to use it everywhere!",
+      "Store and Freeze: Store leftovers in an airtight container in the fridge for up to 5 days. For longer storage, freeze the sauce in small portions (like in an ice cube tray) and thaw as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dill",
+        "unit": "C",
+        "notes": "fresh, loosely packed (about 1 small bunch), roughly chopped, stems removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "for best flavor, toasted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "sub with veggie broth or aquafaba for oil-free",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": "optional, for a subtle cheesy taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove Garlic",
+        "unit": "small",
+        "notes": "minced or pressed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave",
+        "unit": "tsp",
+        "notes": "alt: maple syurp",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "or more as needed for consistency",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b8c8b6e298047016c8f82953a49e66c89798354ca1ac9c84c0eb1f2c3700348",
+    "lineage_hash": "60d91f4019f14bb911deba40f9a6f4a12dd37d36caafe38dbea00395187d7ef5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-dill-walnut-sauce-vegan/",
+    "fetchedAt": "2026-08-02T01:47:50.546Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-dill-walnut-sauce-vegan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

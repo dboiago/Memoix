@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Bengali Style Macher Jhol (बंगाली स्टाइल माछेर झोली)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinade the fish with salt and turmeric powder.",
+      "Keep aside for further use.",
+      "In a small bowl, add salt, turmeric and water to make a thin paste. Keep aside for further use.",
+      "In a kadhai, heat mustard oil till smokes.",
+      "Once it starts smoking, add fish and shallow fry till done.",
+      "Drain the fish in a paper towel and keep aside for further use.",
+      "In the same oil, add kalonji, mustard seeds and green chillies, sear them for a minute.",
+      "Add the turmeric and salt mixture. Cook it for 2-3 minutes on high flame or until moisture evaporates.",
+      "Add marinated fish and stir carefully to avoid breaking, for the masala to coat through it.",
+      "Add water as required and cook for another 2-3 minutes.",
+      "Garnish with coriander leaves.",
+      "Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Hilsa Fish",
+        "unit": null,
+        "notes": "Ilish Macher",
+        "amount": "1",
+        "section": "For marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Kalonji",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "3-4",
+        "section": "For the Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "chopped, for garnishing",
+        "amount": "0",
+        "section": "For the Gravy",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d12f4e7c2b54353c5754ffaf4e784f45f73f5702f7fa33e504bcc5b94e72c60",
+    "lineage_hash": "7faa316b49c24b56506c8b7ea5f1f3293dddb1dbad87d64fe34f208c67ddbec0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bengali-style-macher-jhol/",
+    "fetchedAt": "2026-08-02T04:40:49.762Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bengali-style-macher-jhol/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

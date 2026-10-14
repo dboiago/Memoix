@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Chocolate Pudding With Lavender Sorbet",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the lavender sorbet, bring the water and the sugar to the boil, stirring to dissolve the sugar, then remove from the heat. Infuse the syrup with lavender for 10 minutes, then add the blackberry purée. Pass the mixture through a fine sieve, then put the mix in your ice cream maker according to the manufacturer’s instructions",
+      "For the mousse, make a caramel with the sugar by melting the sugar in a large warmed pot over a medium heat. While melting the sugar, if the caramel is looking lumpy or grainy, reduce the heat and keep stirring until the sugar has dissolved. When the caramel is golden, slowly add the milk, simmer, and stir until smooth. Remove from the heat",
+      "In a mixing bowl, beat the egg yolk and the sugar until pale. Whisk in the cornflour",
+      "Pour the cooled caramel into the egg mixture and whisk together. Return the mixture to the pan and cook at a gentle heat, stirring until thickened, then remove from the heat",
+      "Add the chocolate and mix until the chocolate melts and the mixture is smooth. Allow to cool at room temperature. Whip the double cream until soft peaks form, then add the cream to the cooled chocolate, folding through gently until just combined. Store in a container in the fridge until ready to use",
+      "For the blackcurrant sauce, boil the blackcurrant purée with the sugar in a saucepan. In another pan, boil the cream with the cocoa powder, whisking until blended. Whisk in the blackcurrant and bring to the boil. Remove from the heat and allow to cool",
+      "For the chocolate pudding, melt the chocolate and butter together in a bain-marie. In a mixing bowl, whisk the sugar with the eggs until pale. Carefully pour the melted chocolate into the sugar mix, whisking well, then slowly add the sifted flour to the mixture",
+      "Grease 10 ramekins with butter and dust with cocoa powder. Pour the chocolate mixture into each ramekin, taking care not to fill more than ⅔ of the containers. Bake the pudding at 160ºC/gas mark 3 for 6 minutes, or when the cakes begin to pull away from the ramekins",
+      "Once baked, turn out the puddings onto plates. Serve immediately with the sauce, mousse and lavender sorbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "72%",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrant Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6bd9959d2a3700ab92e10d9cdbf658d12213704bee64fc16820e62043679624",
+    "lineage_hash": "343e8fb106af53f25304b0fbb8cd6ee943408660a4a4c9cb06e0778d73ba1e8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-pudding-recipe-lavender-sorbet",
+    "fetchedAt": "2026-08-03T21:40:40.450Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-pudding-recipe-lavender-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

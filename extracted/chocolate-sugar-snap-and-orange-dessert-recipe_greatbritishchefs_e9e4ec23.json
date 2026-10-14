@@ -1,0 +1,303 @@
+{
+  "recipe": {
+    "name": "Chocolate, Sugar Snap and Orange Dessert",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the mint ice cream. Bring the milk and sugar to the boil and add the milk powder and stabiliser. Bring to 85°C and cook for 1 minute",
+      "Add the gelatine and mint and leave to infuse for 2 hours. Pass through a fine sieve into Pacojet containers and transfer to the freezer",
+      "For the nitro orange segments, place the orange segments into the freezer until solid then dip into liquid nitrogen. Break into shards with a rolling pin or other heavy object and return to the freezer",
+      "To make the white chocolate aero, melt the chocolate to 50°C then mix with the olive oil. Transfer to a gas canister and charge 3 times. Siphon into a vacuum box and vacuum until doubled in size. Transfer to the fridge and allow to set for 4 hours",
+      "For the sponge, melt the chocolate over a bain marie of simmering water. Whisk the yolks and sugar until pale. Whisk the whites to soft peaks, then mix the melted chocolate into the yolk and sugar mixture. Mix in the egg whites in 2 stages, then steam at 100°C for 35–40 minutes",
+      "For the orange rocks, blitz all of the ingredients together in a blender and transfer to a gas canister. Charge with 2 canisters and syphon into liquid nitrogen, continuously stirring to break into pieces",
+      "To make the olive oil jam, boil the glucose and trimoline and transfer to a blender. Allow to cool, then slowly add the yolks followed by the olive oil. Season to taste with salt",
+      "For the sugar snap gel, juice the sugar snaps and bring the juice to the boil with the agar for 1 minute. Set in a tray in the fridge. Once completely set transfer to a blender and blitz until smooth. Pass through a fine sieve",
+      "Preheat the oven to 160°C/gas mark 3. Line a tray with baking paper and sprinkle over the white chocolate. Bake for 6–8 minutes or until caramelised",
+      "To make the orange gel, boil all of the ingredients for one minute then transfer to a tray to set. Blitz in a blender until smooth then pass through a fine sieve. Drop from a pipette into liquid nitrogen and store in the freezer",
+      "Slice the sugar snaps thinly and dress with olive oil",
+      "To plate, place the chocolate sponge on the plate with a piece of aero and freeze dried mandarin on top. Dot the sugar snap gel and the olive oil jam around the sponge",
+      "Scatter around the baked white chocolate, sugar snaps and orange segments. Finish with the frozen orange gel, orange rocks, and a quenelle of the sorbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "softened in iced water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "fresh, leaves only",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "segmented",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "485",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pro Espuma",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Mandarin",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0cd4d85711b281fff05f9114547d0dc20af488c2d4a7f82875742b07d161cea6",
+    "lineage_hash": "dc0c34ad1dcc7d8fbdd376e69aafc2300ca7279e147215ecef7ab901d1fc0113"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-sponge-sugar-snap-recipe",
+    "fetchedAt": "2026-08-03T15:10:54.480Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-sponge-sugar-snap-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Cornmeal Pie Crust",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "231",
+      "carbohydrateContent": "31",
+      "fatContent": "10",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Combine 10 oz all purpose flour, 3 ½ oz stone ground cornmeal, 1 teaspoon salt and 1 tablespoon granulated sugar. Whisk together to mix the ingredients evenly.",
+      "Using your fingers, cut 4 oz lard or shortening into the flour mixture until it resembles coarse cornmeal. Using your fingers, toss 4 oz unsalted butter into the flour mixture. Allow the slices of butter to break up into slightly smaller pieces into the flour. Work quickly so the butter doesn't get warm. Don't break the butter down completely. There should be some large flakes remaining.",
+      "Pour 4 oz ice cold water onto the flour all at once and toss to combine. Gently press the dough just until it comes together. It will look a little dry in spots. The water will redistribute in the dough as it rests.",
+      "Wrap the dough and refrigerate for at least 2-3 hours before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "⅔ cup",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Shortening",
+        "unit": "oz",
+        "notes": "or leaf lard, cold",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "very cold and sliced into 1/4″ thin slices",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68434f392ec0e3adbe3c1e93aa12805e72f68474674b8aa3c7e062478c83e571",
+    "lineage_hash": "37406634adf82654fcd1234ab9808eac54a04062058c032fa215168aa0a30186"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/07/22/cornmeal-pie-crust/",
+    "fetchedAt": "2026-08-01T17:12:59.339Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/07/22/cornmeal-pie-crust/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

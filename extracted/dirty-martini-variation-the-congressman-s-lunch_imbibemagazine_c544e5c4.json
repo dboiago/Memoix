@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Dirty Martini Variation: The Congressman's Lunch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing glass with ice. Stir until well chilled. Strain into a chilled coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": "alt: vodka",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gordy's Pickle Brine",
+        "unit": "oz",
+        "notes": "Or regular dill pickle brine",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "903ff35bc56115228de5cc05f8b6d58bdf68760283ba59a98bbabe0ad0fd8d9c",
+    "lineage_hash": "ff9771ba6ef998c5c1f1f39cb344eb59212b8c259c907448d658ee1b9c669298"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/congressmans-lunch-dirty-martini/",
+    "fetchedAt": "2026-08-03T21:56:32.803Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/congressmans-lunch-dirty-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

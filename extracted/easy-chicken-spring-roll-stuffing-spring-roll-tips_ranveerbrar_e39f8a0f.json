@@ -1,0 +1,340 @@
+{
+  "recipe": {
+    "name": "Chicken Spring Roll",
+    "time": "30-40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, salt to taste, light soy sauce, green chili sauce, ginger garlic paste and mix it well. Keep it aside to marinate for a while.",
+      "Take a pan, add oil, once it's hot, add marinated chicken and sear it for 12-15 minutes until tender.",
+      "Transfer it to a chopping board and shred it with the knife.",
+      "Keep it aside for further use.",
+      "In a bowl, add cabbage, carrots, salt to taste, vinegar, sugar and give it a good mix.",
+      "Keep it aside for a while until vegetables lose their moisture.",
+      "Take a muslin cloth, add vegetables and squeeze out excess moisture.",
+      "Transfer it to a tray or bowl and keep it aside for further use.",
+      "In a bowl, add refined flour, cornstarch, salt to taste, whole egg, water, oil and make a smooth batter. Keep it aside to rest.",
+      "Add oil in the batter and give it a good mix.",
+      "Take a pan, add a ladleful of batter, spread it evenly and cook it for 2-3 minutes on low flames.",
+      "Transfer it to a chopping board and trim the edges.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared pickled vegetables, cooked chicken, fresh coriander leaves, ginger and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared batter, cornstarch, salt to taste and give it a good mix.",
+      "Keep it aside for further use.",
+      "Take the prepared spring roll sheet, add stuffing in the middle of the sheet, apply prepared slurry and seal the edges.",
+      "Gently roll the sheet and give it a desired shape.",
+      "Coat the spring roll with the prepared batter and drop it in hot oil.",
+      "Fry them until crispy and golden in colour on medium flames.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared garlic sauce.",
+      "In a pan, add oil, once it's hot, add vinegar, garlic and saute it for 2-3 minutes until golden in colour.",
+      "Add red chilli sauce, remaining chicken sauce, tender coriander stems and cook it for a minute on high flames.",
+      "Transfer it to a serving bowl and serve hot with prepared chicken spring roll."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "thigh boneless",
+        "amount": "450",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "medium",
+        "notes": "shredded",
+        "amount": "½",
+        "section": "For Pickled Vegetable",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "peeled & julienned",
+        "amount": "3",
+        "section": "For Pickled Vegetable",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Pickled Vegetable",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Pickled Vegetable",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pickled Vegetable",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Vegetable",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chicken",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "0",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned",
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Batter",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4-5",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e069752480e80a079ac476b4f289f9508881419326faad8fc3d666c45116894f",
+    "lineage_hash": "0461f8b71c26f418f079c32a1227239dc5c5a943369b272a27761894222e92fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-spring-rolls-2/",
+    "fetchedAt": "2026-08-02T21:07:55.143Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-spring-rolls-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

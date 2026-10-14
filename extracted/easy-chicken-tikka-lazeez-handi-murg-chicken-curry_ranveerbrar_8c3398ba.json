@@ -1,0 +1,379 @@
+{
+  "recipe": {
+    "name": "Chicken Lazeez (Handi Murg Chicken curry)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, curd, ginger garlic paste, salt to taste, turmeric powder, degi red chili powder and mix it well.",
+      "Keep it aside to marinate for 10-15 minutes.",
+      "In a handi, add water, salt to taste, ghee, onions, green chillies, garlic, cashew nuts, sugar and give it a quick.",
+      "Strain the excess water, transfer it to a mixer grinder jar and grind it smoothly.",
+      "Keep it aside for further use.",
+      "In a pan, add oil, once it's hot, add marinated chicken pieces and saute it for 3-4 minutes on both sides until tender.",
+      "Transfer it to a bowl or tray and keep it aside for further use.",
+      "In the same handi, add oil, ghee, once it's hot, add bay leaf, green cardamom, black cardamom and let it splutter.",
+      "Add prepared paste, ginger garlic paste and saute it for a while.",
+      "Add coriander powder, turmeric powder, degi chili powder, ghee and mix it well.",
+      "Add curd, black peppercorns crushed and cook it well.",
+      "Add fresh tomato puree, green chili, tender coriander stems and give it a good mix.",
+      "Cover it with a lid and allow it to cook for 5-6 minutes on medium flames.",
+      "Add water to adjust the consistency, add ghee, sauteed chicken, sugar and cook it for 7-8 minutes on medium flames.",
+      "Finish it with dry fenugreek leaves, butter and mix it well.",
+      "Transfer it to a serving bowl or dish, garnish it with coriander sprig, butter and dry fenugreek leaves.",
+      "Serve hot with roti or rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": "cut into diced",
+        "amount": "900",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onions",
+        "unit": null,
+        "notes": "large, roughly sliced",
+        "amount": "4",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "2",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Boiling Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Onion Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "slit into middle",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ae484c0d65a3f66bbf6c03491f8f7ca114fd09e54ee6d9c7d92d6064103f9ca",
+    "lineage_hash": "4e99b7dd292547dab358edd9ab7ebbf6b7254c13930090d7dff90c8be56fe1d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-tikka-lazeez/",
+    "fetchedAt": "2026-08-02T16:55:03.653Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-tikka-lazeez/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

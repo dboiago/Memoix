@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Cured Sea Bream and Oyster Chaat",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making a cure. Crush the coriander seeds, peppercorns and chilli flakes in a mortar and pestle then mix with the salt and sugar. Apply the mix to the fleshy side of the fish and leave in the fridge to cure for 2 hours",
+      "After this time, wash the cure off the bream and use a sharp knife to remove any silverskin on the fillet. Skin the fish, then cut it into a small dice. Reserve in the fridge or in a bowl set over a bowl of ice",
+      "Shuck the oysters, carefully retaining all the juices. Clean the shells and reserve for serving. Carefully cut the oysters into a similar-sized dice as the bream, then mix with the fish, pouring in the reserved juices",
+      "To make the dressing, place the unripe mango flesh in a pan with 100ml of water. Simmer for 5-7 minutes, until it breaks down and forms a marmalade-like consistency. Add the spices, salt and sugar, then cook for a further minute. Taste to check the balance of seasonings, then chill as quickly as possible",
+      "Add the zest and juice of the lemon, lime and orange to the fish mixture, then stir to combine. Mix in a few tablespoons of the mango dressing, taste to check you're happy with the flavour, then mix in the ginger, chilli, mint and coriander",
+      "Divide the mixture between the clean oyster shells and finish with the diced avocado"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream Fillet",
+        "unit": null,
+        "notes": "weighing approx. 140g, pin-boned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oysters",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Mango",
+        "unit": "g",
+        "notes": "(unripe mango), peeled and diced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "pinch",
+        "notes": "toasted and ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Fresh Ginger",
+        "unit": null,
+        "notes": "small, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "ripe, diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "12b7dc61c7055f1e71213992f1f7d1d8fa34ef514eaf90c6952458e8311905a4",
+    "lineage_hash": "967ac0717093c3a6ddc388b62be3466e04c3bf9bf9281b3cc479551bd8d8cfe2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-bream-with-oyster-chaat-recipe",
+    "fetchedAt": "2026-08-02T22:50:38.118Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-bream-with-oyster-chaat-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

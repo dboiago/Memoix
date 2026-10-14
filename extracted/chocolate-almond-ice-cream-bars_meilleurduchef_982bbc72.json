@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Chocolate & Almond Ice Cream Bars",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate & Almond Ice Cream Bars recipe, make sure you have organised all the necessary ingredients.",
+      "For this recipe, you will need a silicone ice cream bar mould. Fill each cavity with the ice cream of your choice.",
+      "Insert one wooden stick (supplied with the ice cream mould) in the appropriate slots.",
+      "Even the surface with a metallic spatula.",
+      "Place in the freezer for a few hours. The ice cream should be set.",
+      "A few hours later, remove from the freezer.",
+      "Gently remove the bars from the mould.",
+      "Reserve in the freezer.",
+      "In a bain-marie, melt the milk chocolate pistoles. When melted, add the chopped almonds. almonds have been roasted beforehand.)",
+      "When the melted chocolate is at room temperature, dip the ice cream bars one by one.",
+      "Make sure the whole bar is immersed, up to the base of the wooden stick. Let the chocolate excess drip off.",
+      "Place the ice cream bars on a sheet of greaseproof paper and set aside until set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate Ice Cream (or Any Other Flavour of Your Choice: Coffee, Vanilla or Pistachio)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lactée Supérieure Milk Chocolate Pistoles",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c16c9e6dcf44cf07a675614259a3be10912e170973d87f5099fcdc8dfdb08d5",
+    "lineage_hash": "72f9a92fe652dcb120da8b60073438240e846ffee7bd9023a81d2404f23a77ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-almond-ice-cream-bars.html",
+    "fetchedAt": "2026-08-02T08:54:24.181Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-almond-ice-cream-bars.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

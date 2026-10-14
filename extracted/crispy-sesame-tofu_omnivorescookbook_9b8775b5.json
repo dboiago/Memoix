@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Crispy Sesame Tofu",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "337",
+      "carbohydrateContent": "25.7",
+      "fatContent": "22",
+      "proteinContent": "11.5"
+    },
+    "directions": [
+      "Marinate the tofu: Pat tofu dry with paper towels. Cut into 1/2” (1 cm) pieces and transfer into a large ziploc bag. Add the 2 tablespoons soy sauce. Gently flip the bag a few times to coat tofu with the liquid. Marinate for 10 to 15 minutes while preparing other ingredients.",
+      "Prepare the tofu: Once the tofu is marinated, open the bag just a little bit without letting the tofu fall out. Drain and discard all the liquid. Add the 1 tablespoon oil and 4 tablespoons cornstarch, a tablespoon at a time, then gently toss the bag to coat the tofu. It is OK if the tofu doesn’t get coated evenly.",
+      "For the sauce: Mix the sauce ingredients together in a medium-sized bowl.",
+      "To cook the stir fry: Heat oil over medium-high heat in a large skillet until hot. Add the tofu pieces in a single layer.",
+      "Cook over medium heat until the bottom turns golden, 4 to 5 minutes or so. If using a nonstick skillet, use a pair of chopsticks to separate the tofu as much as you can during this time (*Footnote 1). Flip to brown the other side, another 3 to 4 minutes until turning golden. Transfer the tofu to a big plate and turn to low heat.",
+      "You should still have 1 to 2 tablespoons of oil in the pan. Wipe off any excess oil beyond that with paper towels if needed. Add green onion and garlic, then turn to medium heat. Cook and stir a few times until it releases fragrance.",
+      "Stir the sauce again to dissolve the cornstarch completely. Pour it into the pan. Stir and cook until it thickens.",
+      "Add back the cooked tofu. Stir to coat everything with the sauce, 30 seconds or so. Transfer everything to a big plate. Garnish with green onions. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (16 Ounces / 450 G) Extra Firm Tofu",
+        "unit": null,
+        "notes": "firm and medium tofu work as well",
+        "amount": "1",
+        "section": "Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "C",
+        "notes": "or vegetable oil, or enough to coat the bottom of the pan",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "reserve some for garnish, sliced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "485931a3a6ba8890493881b50bc54249f6426aa1e551a6a7f51cbf76d7cd6423",
+    "lineage_hash": "761f2d57a4a4ab9a5fd48ece0bdf9dc98710ad7d1239c087291a01bf2e51e4a1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/crispy-sesame-tofu/",
+    "fetchedAt": "2026-08-02T10:10:56.386Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/crispy-sesame-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

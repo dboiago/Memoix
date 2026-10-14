@@ -1,0 +1,392 @@
+{
+  "recipe": {
+    "name": "Citrus-Poached turbot with Delica Pumpkin",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the day before – you can make everything up to step 10 in advance, but the tarragon oil needs to strain overnight. To make the tarragon oil, blanch the tarragon leaves in boiling water for 5 seconds, then plunge into iced water. Squeeze as much water as possible out of them, then pat dry between 2 cloths to remove any excess liquid. Blitz the blanched leaves with the oil in a blender until the oil turns bright green, then strain through a sieve lined with muslin cloth into a bowl in the fridge overnight",
+      "To make the pickled radish, add the stock, vinegar, sugar and salt to a pan and heat until the salt and sugar dissolves. Leave to cool, then pour over the finely sliced radish. Store in the fridge overnight",
+      "For the burnt lemon gel, place the lemons on a charcoal grill and burn them on all sides (this should take around 20-30 minutes). While the lemons burn, place the ginger juice into a small pan and reduce by three-quarters. Once soft and burnt, remove from the heat and leave until cool enough to handle",
+      "Halve the burnt lemons and scoop out the caramelised insides into a fine sieve, along with any juices you can collect. Push the pulp through the sieve to create a paste, then add the reduced ginger juice, salt, sugar and Espelette pepper. Mix well, bring the mixture to the boil then remove from the heat. Transfer to a squeezy bottle and reserve in the fridge",
+      "To make the beurre blanc base, sweat the shallots and fennel in the butter for 8 minutes, until soft but without colour. Pour in the white wine, bring to a simmer and reduce by three-quarters. Pass through a fine sieve into a bowl, then add the cream and sugar. Mix until the sugar has dissolved, then weigh out 100g of the mixture – this is your beurre blanc base. Reserve in the fridge until needed",
+      "To make the citrus butter that will be used to poach the fish, heat the clarified butter in a pan over a medium heat until it reaches 60°C. Meanwhile, peel and roughly chop the flesh of the citrus fruits",
+      "Once the butter reaches 60°C, add the citrus flesh along with the rest of the ingredients. Turn the heat down and try to maintain the temperature as much as possible for 30 minutes, then pass the melted butter through a fine sieve into a clean pan. Reserve the citrus butter in the fridge until needed",
+      "To cook the pumpkin, preheat a water bath to 85°C. Scrape out the seeds of the pumpkin, then cut into 2cm wedges and set aside. Pour the filtered water into a pan and heat to 80°C, then add the butter and emulsify with a hand blender. Add the zests and a pinch of salt and blitz again to combine",
+      "Place 6 pumpkin wedges into a large vacuum bag, ensuring they are all lying flat, then pour in the butter emulsion until they are half-submerged. Seal then cook in the water bath for 20-25 minutes, or until soft but not cooked through. Plunge the bags into iced water to cool, then store in the fridge until needed",
+      "Around an hour before serving, finish the beurre blanc. Pour the base into a clean pan over a medium heat. Whisk in the diced butter a cube at a time until fully emulsified, then remove from the heat and add the lemon zest, bergamot zest and half of the lemon juice. Whisk to combine, then add the lemon thyme and a pinch of salt and Espelette pepper. Set aside to infuse for 15 minutes, then strain through a fine sieve, pushing the contents of the sieve with the back of a ladle to get the maximum flavour. Keep warm to ensure it doesn’t split",
+      "You now have all the elements ready to begin the final cooking of the dish. Gently heat the citrus butter in a pan until it reaches 55°C, then try to maintain this temperature as much as possible throughout. Submerge the turbot fillets in the butter, then cook until the core temperature of the fish reaches 44-46°C, flipping every few minutes. This will take at least 15 minutes, depending on the size of the fillet",
+      "Meanwhile, to finish the pumpkin, cut open the bag and pour the liquid into a pan over a medium heat. Place the pumpkin wedges in the emulsion to warm through, then cut each wedge into 3. Season the wedges generously with salt and Espelette pepper",
+      "Toss the alexander shoots in a little oil and salt",
+      "To serve, pour the beurre blanc and some of the tarragon oil into a jug to split it, then divide between serving dishes. Slice the turbot fillets in half then arrange on top of the sauce, along with the pumpkin. Add dots of lemon gel onto the pumpkin, fish and plate, then arrange sliced of pickled radish in between. Finish with the lemon thyme leaves and alexander shoots"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Portions of Turbot Fillet",
+        "unit": null,
+        "notes": "weighing approx. 180g each",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "188",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Radish",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Delica Pumpkin",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filtered Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alexanders",
+        "unit": "bunch",
+        "notes": "shoots only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dc9ec058224694885f0d1007e7a7f31267215c49b12313dc053e38d72b18d489",
+    "lineage_hash": "26c0bd7f84d653ce345adc4a9ebf95e2bb5f7efff038289817f3911113d18ddc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/citrus-poached-turbot-recipe",
+    "fetchedAt": "2026-08-02T19:19:19.899Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/citrus-poached-turbot-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

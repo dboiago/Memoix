@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Ciabatta Bread",
+    "time": "18 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine flour, yeast, salt, and water until no dry bits remain. Cover and rest 30 minutes.",
+      "Do 3 sets of stretch-and-folds every 30 minutes.",
+      "Cover and ferment 12-18 hours at room temperature until bubbly and roughly doubled.",
+      "Heat oven to 500°F with a Baking Steel inside for at least 45 minutes.",
+      "Gently turn dough onto a floured surface. Handle lightly to preserve gas. Divide into 3 rectangles and give each a gentle stretch.",
+      "Transfer on parchment to the hot Baking Steel and bake 18-20 minutes until deep golden and crisp. Add some ice cubes when you launch to create steam. Cool on a rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread",
+        "unit": "g",
+        "notes": "alt: all-purpose flour",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water (80% Hydration)",
+        "unit": "g",
+        "notes": "room temp",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52f1d1ae06521f0d2b9782764297619ca7e173851ba95c892ff97abbdb7a9dea",
+    "lineage_hash": "e42e174aef1fbba744a6ee6a5c9085a1ee9eed682f582bf2feb6e28902e161b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakingsteel.com/blogs/recipes/the-easy-way-to-make-kick-ass-ciabatta-bread",
+    "fetchedAt": "2026-08-01T21:23:02.194Z"
+  },
+  "rawSource": "https://bakingsteel.com/blogs/recipes/the-easy-way-to-make-kick-ass-ciabatta-bread",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

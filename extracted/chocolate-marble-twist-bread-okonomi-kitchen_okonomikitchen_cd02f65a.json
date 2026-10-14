@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Chocolate Marble Twist Bread",
+    "time": "42 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "265",
+      "carbohydrateContent": "34",
+      "fatContent": "11.5",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Make the chocolate sheet: Mix the dry ingredients with milk and cook until thick and glossy. Add egg white and butter, then chill the mixture into a firm rectangle. This becomes your chocolate insert.",
+      "Prepare the bread dough: Combine the flour, yeast, sugar, salt, water, and egg-milk. Knead until smooth, then incorporate butter and develop gluten until elastic. Let the dough rise until doubled in size.",
+      "Enclose and roll: Roll the risen dough out, place the chilled chocolate sheet in the center, and fold the dough over. Press and roll gently so the chocolate disperses without leaking. Fold into thirds like a letter. Repeat this process two more times.",
+      "Shape the twists: After final rolling, trim edges, cut the dough into strips, and slice lengthwise while leaving the ends attached. Loop the ends in opposite directions for clean twist, then place them on a baking tray.",
+      "Proof and bake: Let the shaped dough proof until puffy, brush with egg wash, and bake until lightly golden brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": "or 10 g all-purpose flour + 2 g cornstarch",
+        "amount": "12",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "Chocolate Sheet",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "or 180 g bread flour + 20 g cake flour",
+        "amount": "200",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Total Egg + Milk",
+        "unit": "g",
+        "notes": "about 30 g whole egg + 35 ml milk",
+        "amount": "65",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "20",
+        "section": "Bread Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": "reserved from earlier",
+        "amount": "10",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": "Egg Wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a132b1f86ee821fc7c92cf0eccc6b034acc308225efed13c279e4d293ab31989",
+    "lineage_hash": "1845db5aa3bd9d40b7d09e9fbfacb490de170979edfa546370bbfe65e0e39224"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/chocolate-marble-twist-bread/",
+    "fetchedAt": "2026-09-26T01:32:58.842Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/chocolate-marble-twist-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

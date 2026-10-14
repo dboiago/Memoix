@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Braised White Radish with Pork Mince (Daikon no Soboro-an)",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place daikon and rice in a pot (note 4) , then add water, enough to cover daikon.",
+      "Boil for 10 minutes or until daikon is nearly cooked through (a bamboo skewer can get through the daikon). Drain hot water, and run cold water to rinse quickly with cold water , then and drain well.",
+      "Heat oil in a deep frypan over medium heat, add pork/chicken mince and fry, breaking the lumps. Cook until the meat changes colour to pale brown.",
+      "Add daikon and stir. Add the remaining ingredients, except corn flour with water, and place a drop lid (note 3) over to cover the surface.",
+      "When it starts boiling, reduce the heat to low and cook for 10 minutes.",
+      "Remove the drop lid, add corn flour with water and mix well.",
+      "When the sauce is thickened, turn the heat off and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Daikon (white Radish) Cut Into Bite Size Rangiri",
+        "unit": "g",
+        "notes": "0.9lb, roll cutting, note 1",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful of Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "g",
+        "notes": "alt: chicken mince, 0.6lb, ground pork or chicken",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(250ml/8.5oz) Dashi Stock (note 2)",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "40ml/1.4oz",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Sake",
+        "unit": "Tbsp",
+        "notes": "20ml/0.7oz, mirin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heap of Grated Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour (corn Starch) Diluted in ½ Tbsp Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "40fecc852835fd1b0190b2086a3b52b3198ecf2f4bbfb41239a24b4b819d5eb3",
+    "lineage_hash": "e6d3fec6e5aa1a8a0d393e776a2301f7f4b5e8139aea2f9efb84f4193c86aa90"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/braised-white-radish-with-pork-mince-daikon-no-soboro-an/",
+    "fetchedAt": "2026-08-01T21:33:21.301Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/braised-white-radish-with-pork-mince-daikon-no-soboro-an/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Chicken Angara (spicy Chicken Angara restaurant style)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot, add oil. Once it gets hot, add onions and saute well.",
+      "Once it turns light brown in color, add salt to taste saute well.",
+      "Add tomatoes and cook on medium flame. Once it's cooked well, keep it aside for further use.",
+      "In a large bowl, add curd, ginger garlic paste, bay leaf, cloves, green cardamom, black cardamom.",
+      "Add black peppercorns, mace, cinnamon stick, degi red chili powder, turmeric powder, a pinch of asafoetida.",
+      "Add coriander powder, cumin powder, and prepared onion tomato mixture.",
+      "Now, add chicken drumstick, salt to taste, almonds and marinate well. Rest it for 10-15 minutes.",
+      "In a saucepot, add the marinated chicken mixture.",
+      "Cover it with the lid and cook for 5-10 minutes on low flame.",
+      "Now, heat up a piece of charcoal directly on the gas stove.",
+      "Once the charcoal is hot enough, place it in the steel bowl along with cloves. Now, add rogan from chicken angara and place the steel bowl in chicken angara.",
+      "Cover the lid and let it cook for 15-20 minutes.",
+      "Once the chicken is cooked well, transfer it into a serving dish, garnish it with coriander sprig.",
+      "Serve hot with roti or rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "roughly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Onion Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Drumstick",
+        "unit": null,
+        "notes": null,
+        "amount": "8-9",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "10-12",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coal",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Smoke",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Smoke",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed181a130bb4642eb8d041cf0785a0cf15c8e0e991c964cd383f593e699c14e3",
+    "lineage_hash": "825fd1921ced3a2ba52ee77912e5f6224612d95bbf1fe14b534b09ff6534608f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-angara/",
+    "fetchedAt": "2026-08-02T14:03:05.348Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-angara/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Creamy Lemon Asparagus Pasta",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "351",
+      "carbohydrateContent": "58",
+      "fatContent": "7",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Cook the pasta + asparagus: Bring a large pot of water to a boil. Cook the pasta according to package directions. In the last 3 minutes of cooking, add the asparagus to the pot. Reserve ½ cup of pasta water, then drain.",
+      "Sauté the garlic: While the pasta cooks, heat the olive oil in a large skillet or saucepan over medium heat. Add the garlic and cook for 30 seconds, just until fragrant.",
+      "Make a roux: Sprinkle in the flour and whisk constantly for 30–60 seconds.",
+      "Make it creamy: Slowly whisk in the plant-based milk. Keep whisking until smooth, then simmer for 2–3 minutes, until the sauce thickens slightly.",
+      "Season the sauce: Whisk in the Dijon mustard, nutritional yeast, salt, and pepper.",
+      "Add the lemon last: Remove from heat, then stir in the lemon zest and lemon juice.",
+      "Toss it all together: Add the drained pasta and asparagus to the skillet with the sauce and toss well. Add a splash of reserved pasta water as needed until the sauce is silky and coats everything beautifully. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pasta of Choice",
+        "unit": "oz",
+        "notes": "spaghetti, linguine, penne, or fusilli",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "bunch",
+        "notes": "trimmed and cut into 2-inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or oat",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Optional Garnishes: Chopped Parsley",
+        "unit": null,
+        "notes": "alt: basil, vegan parmesan, extra lemon zest, chili flakes, cracked black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97df4e0f70cb726a744c8df374c11f436da4e03deba9ce983264a94821d60311",
+    "lineage_hash": "4c5bad8778199b7a7f39dee5669a78368652370728c88803b0ba54b684b7c828"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-vegan-lemon-asparagus-pasta/",
+    "fetchedAt": "2026-08-02T08:15:20.880Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-vegan-lemon-asparagus-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

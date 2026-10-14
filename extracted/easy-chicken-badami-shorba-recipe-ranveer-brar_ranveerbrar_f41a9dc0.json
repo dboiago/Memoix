@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chicken Badami Shorba",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in sauce pan and add in chicken pieces. Sprinkle salt as per taste.",
+      "Saute chicken pieces for 2 minutes and take out on a plate.",
+      "In the same pan add in sliced ginger, fresh chilli and saute for a minute.",
+      "Add in turmeric, yellow chilli powder and stir for 30 seconds. Pour in chicken stock, and soaked almonds. Cook on a medium flame for 3-4 minutes.",
+      "Add in cooked tovar dal, garam masala, crushed black pepper and adjust salt. Cook for another 2 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inches",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chilli Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "soaked & skinned, sliced",
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tovar Dal",
+        "unit": "C",
+        "notes": "well churned, boiled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb4cb07584884cc71efc9e91986cb8434696badf5f3840f5bdefdfa48a3b6c97",
+    "lineage_hash": "b6676c36926806d2688052f057ed4e5ef6e517d12a80ec509edf7b5de951e4b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-badami-shorba/",
+    "fetchedAt": "2026-08-02T14:42:42.356Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-badami-shorba/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

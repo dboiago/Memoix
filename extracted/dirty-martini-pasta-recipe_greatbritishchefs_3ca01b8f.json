@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Dirty Martini Pasta",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by placing a frying pan over a medium-high heat with a drizzle of olive oil. Add the breadcrumbs and fry, stirring until golden brown and crisp. Remove from the heat and leave to cool",
+      "Bring a large pot of salted water to the boil. Cook the pasta until al dente (7 minutes), reserving about 100ml of pasta water before draining",
+      "In a large pan, heat another drizzle of olive oil over a medium heat. Add the garlic and cook for about 1 minute until fragrant",
+      "Add the chopped olives, chilli flakes and all the lemon zest. Cook for 2–3 minutes until everything is lightly golden and aromatic",
+      "Pour in the gin and let it bubble and deglaze the pan, then add the lemon juice and butter and stir until melted. Add a splash of the reserved pasta water and mix – this should make the sauce glossy and thicker",
+      "Add the cooked pasta to the pan and toss. Add pasta water bit by bit if needed until silky and clinging to the pasta, then remove from the heat and stir through the chopped parsley",
+      "Divide between four bowls and top with crumbled feta, breadcrumbs and more parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Linguine",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fragata Marinated Olives with Olive Oil & Lemon",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "both zested and 1 juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped, plus extra to garnish",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee7ddeb5d2617380053906fe0e48bf95dadb88324b079d25374abf210269bc20",
+    "lineage_hash": "262c1187709a0f86e5a551788e737f6f6d351f764a4bcbf62eebf74377a337b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dirty-martini-pasta-recipe",
+    "fetchedAt": "2026-08-01T19:30:17.730Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dirty-martini-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

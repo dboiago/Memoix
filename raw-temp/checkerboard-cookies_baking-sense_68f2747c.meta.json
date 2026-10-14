@@ -1,0 +1,62 @@
+{
+  "url": "https://www.baking-sense.com/2021/12/09/checkerboard-cookies/",
+  "slug": "checkerboard-cookies_baking-sense_68f2747c",
+  "title": "Checkerboard Cookies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:11:19.029Z",
+  "ldName": "Checkerboard Cookie Recipe",
+  "ldTime": "PT72M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "32",
+    "32 cookies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "cookie",
+  "ldIngredientsRaw": [
+    "12 oz unsalted butter (1 1/2 cups, room temperature)",
+    "8 oz  granulated sugar (1 cup)",
+    "1/2 teaspoon salt",
+    "2 teaspoon  vanilla extract",
+    "12 1/2 oz all purpose flour (2 1/2 cups, see note)",
+    "2 tablespoons dutch process cocoa powder"
+  ],
+  "ldInstructionsRaw": [
+    "Cream the butter with the sugar until creamy and well combined, but not fluffy. Add the salt, vanilla and the flour. Mix just until combined. Turn the dough out onto a lightly floured surface and finish kneading until the dough comes together.",
+    "Split the dough in half and knead the cocoa powder into one half to make the chocolate dough. Pat each piece of dough into a rectangle shape. Wrap both pieces of dough and refrigerate at least 30 minutes until firm.",
+    "Roll each piece of dough to 6” wide x 12” long rectangle. Lightly brush the chocolate dough with water. Place the vanilla dough on top of the chocolate dough and line up the edges. Trim each of the longs sides of the dough, saving the scraps. Cut the rectangle into three equal 2” x 12&quot;  slices, lengthwise. Stack the 3 rectangles on top of each other, lightly brushing the dough with water to stick the layers together. You should now have a 2” wide by 12” long rectangle with 6 alternating layers of chocolate and vanilla. Once again, trim the two long sides so they are straight, saving the scraps.",
+    "Slice the dough, lengthwise, into four ½”-wide slices. Lay one slice on its side with a vanilla stripe on the left side. Brush it lightly with water. Lay the next slice on top of the first, flipping the slice so a chocolate stripe is on the left side, lined up with the vanilla strip on the first slice. Line the next slice, vanilla strip to the left and lay the final strip on so that the chocolate stripe is to the left.",
+    "Knead the dough scraps that you reserved and roll into an 8” x 12” rectangle. Lightly brush the dough with water and place the log along one edge of the rectangle. Roll the log so that it is now wrapped in the dough. Wrap the log in plastic wrap and chill until firm. At this point you can freeze the log for up to a month.",
+    "Preheat the oven to 325°F. Line two baking sheets with parchment paper or a silicone baking mat.",
+    "Trim the uneven ends off the log. Use a sharp knife to cut 3/8” thick slices. Lay the cookies on the prepared baking sheet, ½” apart. Bake until the edges are beginning to brown and the dough is set, about 14 minutes.",
+    "Transfer to a baking rack to cool completely. The cookies will keep in an air-tight container for up to a week."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "145 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "1 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "23 mg",
+    "sodiumContent": "38 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz unsalted butter (1 1/2 cups, room temperature)",
+    "8 oz  granulated sugar (1 cup)",
+    "1/2 teaspoon salt",
+    "2 teaspoon  vanilla extract",
+    "12 1/2 oz all purpose flour (2 1/2 cups, see note)",
+    "2 tablespoons dutch process cocoa powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

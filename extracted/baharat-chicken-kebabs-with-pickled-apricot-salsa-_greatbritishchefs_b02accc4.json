@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Baharat Chicken Kebabs with Pickled Apricot Salsa",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the yoghurt, garlic, ginger and baharat with some salt and mix well. Add the chicken pieces and mix well to combine. Cover and refrigerate – overnight if possible or for at least a few hours",
+      "Combine the honey, lemon juice and 50 ml water and mix well to combine. Add the diced apricots and red onion and set aside",
+      "When you’re ready to cook, light a grill or barbecue to medium heat",
+      "Thread the chicken pieces onto skewers and grill over direct heat for around 10 minutes, turning regularly, until cooked through and lightly charred",
+      "Drain the apricots and onions and mix with all the other salsa ingredients",
+      "Combine the yoghurt with the harissa and some salt",
+      "Serve the chicken with the harissa yoghurt, flatbread or pitta and pickled apricot salsa"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, skinless, cut into chunks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "in",
+        "notes": "fresh, grated to a paste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baharat Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried, cut into a fairly small dice",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very finely diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fronds of Fresh Dill",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Harissa",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flatbread",
+        "unit": null,
+        "notes": "or pitta",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c7caab028a9afaa965f6d0bb3b3a0700650114d97a8839ba84c36750049f4d5",
+    "lineage_hash": "30951fbea3e0b91b24bcaabf3ae80a17c60fedb173d31ead7543536479305ee2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baharat-chicken-kebabs-pickled-apricot-salsa-recipe",
+    "fetchedAt": "2026-08-02T13:46:43.865Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baharat-chicken-kebabs-pickled-apricot-salsa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Creamy Fruit Salad (Korean Style)",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "118",
+      "carbohydrateContent": "10",
+      "fatContent": "9",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine the dressing ingredients in a small bowl. Mix them well and set aside. Combine the main ingredients in a medium size mixing bowl. Pour over the salad dressing and gently toss to coat. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Persimmon",
+        "unit": null,
+        "notes": "peeled, core & stem removed, cubed",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Mandarin Orange",
+        "unit": null,
+        "notes": "peeled & separated",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "seeded & cubed",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Apple (use Red Apple Varieties)",
+        "unit": null,
+        "notes": "core removed, cubed",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Salted Peanuts",
+        "unit": null,
+        "notes": "alt: other nuts of your choice",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": "regular",
+        "amount": "5",
+        "section": "CREAMY FRUIT SALAD DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": "adjust per your preference",
+        "amount": "1-1.5",
+        "section": "CREAMY FRUIT SALAD DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CREAMY FRUIT SALAD DRESSING",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "CREAMY FRUIT SALAD DRESSING",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef29e7c312817bf039feeb303b22062ef01d90627e29590f99a43f77174a19ee",
+    "lineage_hash": "3599588baa547bc02d02636195e431bc388adcb6e3304fad0569ad630f4bd310"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/creamy-fruit-salad/",
+    "fetchedAt": "2026-08-01T21:00:16.611Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/creamy-fruit-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

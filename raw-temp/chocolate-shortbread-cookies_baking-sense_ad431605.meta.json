@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2022/10/14/chocolate-shortbread-cookies/",
+  "slug": "chocolate-shortbread-cookies_baking-sense_ad431605",
+  "title": "Chocolate Shortbread Cookies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:54:00.071Z",
+  "ldName": "Chocolate Shortbread Cookie Recipe",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "24",
+    "24 cookies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bar cookie, shortbread",
+  "ldIngredientsRaw": [
+    "8 oz unsalted butter (1 cup, at cool room temp)",
+    "5 oz granulated sugar (plus more for topping)",
+    "1/4 teaspoon table salt",
+    "2 oz dutch process cocoa powder (1/2 cup)",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 8 oz&#32;unsalted butter, 5 oz&#32;granulated sugar and 1/4 teaspoon&#32;table salt in a mixer bowl and mix on medium speed until softened and well-combined. You don&#39;t want to aerate the dough, just mix the ingredients. Scrape the bowl and beater.",
+    "Add 2 oz&#32;dutch process cocoa powder and mix to combine. Add 7 ½ oz&#32;all purpose flour and mix until combined. The dough will look crumbly at this point. Dump the dough onto a lightly floured surface and knead to bring it together. Form the dough into a  small square.",
+    "On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 8”x12” rectangle. Use the straight edge of a ruler or a bench scraper to square off the edges. Use a long knife to cut the dough into 1”x 3” pieces. Don&#39;t separate the cookies after cutting.  Poke each cookie with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+    "Remove the pan from the refrigerator and sprinkle the dough generously with granulated sugar.",
+    "Bake the cookies until the dough is set all the way to the center, about 25 minutes. If you&#39;re oven bakes unevenly, rotate the tray halfway through baking. Allow the cookies to cool completely then use a long knife to cut along the scored lines to separate the cookies."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "158 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "2 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "21 mg",
+    "sodiumContent": "31 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "10 g",
+    "unsaturatedFatContent": "2.3 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz unsalted butter (1 cup, at cool room temp)",
+    "5 oz granulated sugar (plus more for topping)",
+    "1/4 teaspoon table salt",
+    "2 oz dutch process cocoa powder (1/2 cup)",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

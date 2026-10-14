@@ -1,0 +1,3 @@
+_Cacciucco alla Livornese_ hails from the port city of Livorno and is said to have been created by fisherman as a way of using up the smaller fish which couldn’t be sold. Like with many of soups and stews of the region, bread plays a role. The Tuscans often make their bread without salt which means it goes stale very quickly, so to use up the stale bread it is toasted, rubbed with garlic and then topped with the stew.
+
+While many fish stews would contain white wine, this rich stew has a red wine base which is enriched with squid and octopus, giving it an excellent depth of flavour. The selection of fish and seafood are interchangeable here so switch for your favourites if you prefer. If you have the time, it’s nice to buy whole fish and make your own fish stock.

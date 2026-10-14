@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Kalakand (दानेदार कलाकंद)",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai add milk, paneer and keep on sauteing until the milk is evaporated.",
+      "Now add ghee, cashew nuts, almonds, pistachio and saute them for 2 minutes.",
+      "Then add the condensed milk, cardamom powder, saffron and continue sauteing until the mixture gets thickened.",
+      "Finish with a pinch of salt and mix everything properly then switch off the flames.",
+      "Grease a tray with ghee and spread the mixture in it and keep in the fridge for 30-40 minutes to set properly.",
+      "Remove and cut it into your desired shape and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Saffron Strands",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": "for greasing",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "201a862bcc2327782611c5c60170bf74b9c9dd5407bab08efdaec85ea4f534d6",
+    "lineage_hash": "813dcdfa5de5712cc423bddacace43b9c81323e159b70c6f718a256d53db0e6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/quick-kalakand/",
+    "fetchedAt": "2026-08-01T22:23:44.774Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/quick-kalakand/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

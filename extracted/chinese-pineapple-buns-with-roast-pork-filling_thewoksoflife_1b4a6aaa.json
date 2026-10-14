@@ -1,0 +1,273 @@
+{
+  "recipe": {
+    "name": "Chinese Pineapple Buns with Roast Pork Filling",
+    "time": "3 hr 35 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "614",
+      "carbohydrateContent": "43",
+      "fatContent": "20",
+      "proteinContent": "62"
+    },
+    "directions": [
+      "In the bowl of a mixer, add the dough ingredients: heavy cream, milk, egg, sugar, cake flour, bread flour, yeast, and salt. Use the dough hook attachment, and turn on the mixer to “stir.” Let it go for 15 minutes, occasionally stopping the mixer to push the dough together. If you're in a humid climate and the dough is too sticky, feel free to add a little more flour ¼ cup at a time until it comes together. If you don't have a mixer and would like to knead by hand, extend the kneading time by 5-10 minutes.",
+      "After 15 minutes of mixing, the dough is ready for proofing. Cover the bowl with a damp towel and place in a warm spot for 1 hour. The dough will grow to 1.5X its original size.",
+      "Meanwhile, prepare your filling and topping. To make the filling, heat 2 tablespoons oil in a wok over medium high heat. Add the onion and stir-fry for 2 minutes. Add the sugar, soy sauce, oyster sauce, sesame oil, and dark soy. Stir and cook until it starts to bubble up. Add the water and flour. Reduce the heat to medium low and cook, stirring, for a couple minutes until thickened. Remove from the heat and stir in the roast pork. Set aside to cool.",
+      "To prepare the topping, add the dry milk powder to a mixing bowl. If your dry milk powder has some larger clumps, crush them up with your fingers so it’s uniformly powdery. Add the flour, baking soda, baking powder, and superfine sugar. Stir to combine. Add the shortening, milk, egg yolk, and vanilla. Use your hands to mix everything together into a dough. If it’s too dry, add a little more milk a teaspoon at a time until it comes together. Cover with an overturned bowl or plate, and set aside at room temperature.",
+      "After the hour of proofing, put the dough back in the mixer and stir for another 5 minutes to get rid of air bubbles. You can also knead by hand. Dump the dough onto a lightly floured surface, and cut it into 18 equal pieces.",
+      "To assemble, divide the topping mixture into 18 equal pieces and roll each into a ball. Roll each ball out into a flat circle using a rolling pin.",
+      "Take a piece of bread dough, and flatten with your hands into a rough circle. Put a heaping tablespoon of pork filling in the middle, and wrap the dough around it. Roll into a smooth ball between your hands, and place on a parchment-lined baking sheet, seam-side down. Top the bun with a circle of topping.",
+      "Continue assembling until all the buns are made. Cover with a clean, damp towel and allow to rise for another hour.",
+      "After they’re done rising, position a rack in the middle of the oven and preheat to 350 degrees F. Brush the topping with egg yolk and any exposed dough with egg white. Bake for 18-20 minutes until golden. If you notice the topping getting too dark, tent the buns lightly with foil.",
+      "These are great warm out of the oven, but they’re also great reheated in the microwave for about 30 seconds. Store them in an airtight container in the fridge and reheat to enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "160 ml, at room temperature",
+        "amount": "⅔",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "235 ml, at room temperature",
+        "amount": "1",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "75g",
+        "amount": "⅓",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": "70g",
+        "amount": "½",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "C",
+        "notes": "500g",
+        "amount": "3½",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "Tbsp",
+        "notes": "11g",
+        "amount": "1",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "7g",
+        "amount": "1½",
+        "section": "buns",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "alt: red onion, finely, chopped",
+        "amount": "½",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "25g",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "175 ml",
+        "amount": "¾",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": "24g",
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Roast Pork",
+        "unit": "C",
+        "notes": "char siu, diced",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nonfat Dry Milk Powder",
+        "unit": "C",
+        "notes": "30g",
+        "amount": "¼",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "160g",
+        "amount": "1¼",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Superfine",
+        "unit": "C",
+        "notes": "alt: caster sugar, 150g, very important that it’s superfine",
+        "amount": "⅔",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Shortening",
+        "unit": "C",
+        "notes": "alt: butter, 50g",
+        "amount": "¼",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "topping",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "2",
+        "section": "To finish the buns",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26947ac9bbaba9543369c93f2f91dd0988e7dea36a2efdeaa1a7620e9ef41147",
+    "lineage_hash": "d139d103cee9267558638e5073c98d483fe4519955f6b1823a0a2243d48d39d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-pineapple-buns-pork/",
+    "fetchedAt": "2026-08-02T12:38:00.986Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-pineapple-buns-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

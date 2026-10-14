@@ -1,0 +1,62 @@
+{
+  "url": "https://www.baking-sense.com/2019/08/29/concord-grape-pie/",
+  "slug": "concord-grape-pie_baking-sense_5a4bb540",
+  "title": "Concord Grape Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T17:08:39.055Z",
+  "ldName": "Concord Grape Pie",
+  "ldTime": "PT115M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT55M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "concord grapes, summer",
+  "ldIngredientsRaw": [
+    "1 recipe Perfect Pie Crust",
+    "2 ½ pounds Concord grapes (weight after stemming)",
+    "4 oz water (1/2 cup)",
+    "1 ½ oz cornstarch (¼ cup)",
+    "10 oz granulated sugar (1 ¼ cups)",
+    "½  vanilla bean (split)",
+    "¼ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Roll half the dough to line a 9&quot; deep dish pie pan. Roll the other half of the dough to a 12&quot; circle. Sprinkle a little flour over the circle and fold it in half. Sprinkle with flour again and fold in half again. Wrap the folded dough and set it into the lined pie pan. Refrigerate the pie dough while you make the concord grape filling. The dough can be rolled up to a day ahead.",
+    "Separate the grape skins from the pulp, reserving both. In a food processor or blender, pulse the grape skins with 4 oz&#32;water until you have a chunky puree. Transfer the skins to a small bowl and stir in 1 ½ oz&#32;cornstarch. Set it aside while you prepare the pulp.",
+    "In a large saucepan over medium heat cook the pulp with 10 oz&#32;granulated sugar,   ½&#32;vanilla bean and ¼ teaspoon&#32;table salt until soft, about 10-15 minutes, stirring frequently. Run the grape pulp through a food mill or strainer to remove the seeds, pressing on the solids to get as much pulp as possible through the strainer.",
+    "Return the strained pulp to the saucepan. Scrape the the seeds from vanilla bean and add them to the pulp.",
+    "Bring the mixture to a full boil. Stir in the grape skin/cornstarch and cook until it returns to a full boil and begins to thicken. Transfer the pie filling to a large bowl and cool completely before assembling the pie. Refrigerate the pie filling until ready to use, up to 1 day ahead of baking.",
+    "Preheat the oven to 350°F350 °F. Remove the pie plate from the refrigerator and remove the top crust from the pan. Pour the grape filling into the pie plate. Unfold the dough round for the top crust. Use a small round cutter to cut a holes in the middle of the crust in the shape of a cluster of grapes. Use the tip of a small knife to cut a &quot;stem&quot; at the top of the cluster.",
+    "Brush the edges of the bottom crust with egg white. Lay the top crust over the filling with the cluster design centered on the pie. Pinch the two crusts together to seal. Trim the excess dough and crimp the edges for an attractive crust. Brush the top of the pie with egg white and sprinkle with granulated sugar.",
+    "Bake until golden brown and the fruit in the middle of the pie is bubbling, about 55 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "295 kcal",
+    "carbohydrateContent": "62 g",
+    "proteinContent": "2 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "143 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "46 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Perfect Pie Crust",
+    "2 ½ pounds Concord grapes (weight after stemming)",
+    "4 oz water (1/2 cup)",
+    "1 ½ oz cornstarch (¼ cup)",
+    "10 oz granulated sugar (1 ¼ cups)",
+    "½ vanilla bean (split)",
+    "¼ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chilli Nimbu Fish Tikki",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the fish in a little bit of salt and water for 10 mins and let it cool.",
+      "Drain excessive water and mash with a fork.",
+      "Mix all the ingredients with the fish. Divide into 15 portions, flatten them with your hands & keep aside. Roll all tikkies in refined flour till well-coated.",
+      "Heat oil in a flat nonstick pan and shallow fry the tikkis until golden brown in color from both the sides.",
+      "Serve hot with green chutney and onion salad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Surmai/ Rawas Fish Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled, mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "830cd016057751a39e6b03a87291cd4b359a362e3e7be4a7fa341be4a3a9e7ee",
+    "lineage_hash": "698d1d22fbccdc25e0ed5f8b25930ad00cf0df647a401b858a1f568069896322"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chilli-nimbu-fish-tikki/",
+    "fetchedAt": "2026-08-02T11:53:03.457Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chilli-nimbu-fish-tikki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

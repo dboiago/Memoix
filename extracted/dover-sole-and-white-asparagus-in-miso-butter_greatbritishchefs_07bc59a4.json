@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Dover Sole and White Asparagus in Miso Butter",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the kombu and water and leave to infuse overnight",
+      "The next day, start by making the miso butter. Melt the butter in a large frying pan or sauté pan, then whisk in the miso and set aside",
+      "To make lovage oil, blitz the lovage and grapeseed oil in a blender for 7-10 minutes until completely smooth, then simmer in a small pot for 5 minutes to evaporate any water. Pass through a muslin cloth to remove the solids",
+      "For the white asparagus, snap the ends off the white asparagus and peel from the tip downwards. Place in a pot with 300ml water, 300ml of the kombu dashi you made overnight and the lemon juice. Bring to a boil, then simmer gently for 20-30 minutes until the asparagus is tender",
+      "Warm the miso butter in the frying pan with 50ml of water. Gently poach the Dover sole in the miso butter for 8-10 minutes, spooning the miso butter over the fish regularly. If the miso butter looks like it’s burning, add a splash of water to the pan",
+      "Once the fish is poached, remove from the pan and keep somewhere warm. Add the white asparagus to the pan and reduce the miso butter to a thick sauce consistency",
+      "Serve the sole with the white asparagus on top and plenty of miso butter sauce. Finish with the lovage oil and a wedge of lemon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dover Sole",
+        "unit": null,
+        "notes": "400-600g, skinned and head removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Asparagus",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "half juiced, half cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saikyo Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lovage",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ce277053035778650bfc9ab38a505b6589ab09ca1299c6aeceb991b990cedac",
+    "lineage_hash": "2ad4b298c28611a32c0e0ae622dc72105a53d5982a6c25316ab684ea7091ce09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dover-sole-miso-butter-recipe",
+    "fetchedAt": "2026-08-03T04:34:35.670Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dover-sole-miso-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

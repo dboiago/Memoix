@@ -1,0 +1,355 @@
+{
+  "recipe": {
+    "name": "Chicken saagwala Palak Chicken",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep sauce pot, Add water for boiling. Once it starts boiling, add sugar, salt to taste, baking soda, spinach, coriander leaves, green chilli, cook for 1 minute. Remove and dip it into ice cold water to stop further cooking. After cooling, strain the spinach and remove excess water.",
+      "Puree the blanched spinach with smooth consistency. Use a little amount of water if required.",
+      "Keep the puree aside for further use.",
+      "In a bowl, add chicken (drumstick) , salt to taste, dry fenugreek leaves, degi red chilli powder.",
+      "Marinate everything well and keep it for 10-15 minutes.",
+      "In a bowl, add curd, turmeric powder, degi red chilli powder, coriander powder, cumin powder and ginger garlic paste and mix it well. Keep aside for further use.",
+      "In a heavy bottom pot, add ghee, oil once it's hot, add cumin seeds, mace, green cardamom, black peppercorns, cloves and let it splutter well.",
+      "Add onion and saute on medium flame until light brown in color.",
+      "Add tomatoes, dry fenugreek leaves and saute it for 2-3 minutes.",
+      "Add curd mixture and mix it well.",
+      "Add marinated chicken and sear it on medium flame. Add prepared spinach paste and mix it well.",
+      "Cook on medium flame for 15-20 minutes.",
+      "Add a little water and mix it well. Cover it with a lid and cook for 3 minutes.",
+      "Serve in a serving bowl garnish with prepared rogan, crushed black peppercorn, coriander sprig and serve hot.",
+      "In a tadka pan, add heat ghee, add garlic and saute it well.",
+      "Add degi red chilli powder and mix it well.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Spinach",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Chilled Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "Drumstick",
+        "amount": "500",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Spinach Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "Little",
+        "amount": "½",
+        "section": "For Palak Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Rogan (Tadka)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Rogan (Tadka)",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Rogan (Tadka)",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da2a528aa9e20192f5268958dceef60367183e919e783a89e282f067e7ea85a3",
+    "lineage_hash": "cddd931501f3107cb865732ba421b485081d8a2d4afada5ccddced7d15ba57e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-saagwala-palak-chicken-recipe/",
+    "fetchedAt": "2026-08-02T14:26:43.099Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-saagwala-palak-chicken-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

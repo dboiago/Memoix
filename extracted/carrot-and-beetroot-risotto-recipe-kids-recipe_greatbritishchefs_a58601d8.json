@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Carrot and Beetroot Risotto",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a juicer, juice 2 of the carrots and set aside the juice. Repeat with 2 of the beetroots, keeping the 2 juices separate",
+      "Dice the remaining 2 carrots and beetroots, again keeping separate",
+      "Using 2 pans, add the carrots and 100ml of milk and a knob of butter to a pan, and the beetroot with the remaining milk and butter to the other. Gently simmer both until the vegetables are cooked",
+      "Add the cooked carrots to the blender with the carrot juice and blitz to form a purée, set aside. Repeat with the beetroot and its juice",
+      "Preheat the oven to 180°C/gas mark 4. Toss the diced butternut squash in olive oil, salt and pepper and then roast until tender, approximately 20-25 minutes. Set aside",
+      "Now start the risottos. Place 2 pans over a medium-high heat. Add a knob of butter to each, then add the garlic, celery and shallots and sweat until soft",
+      "Wash the barley for a few seconds under running cold water. Drain and divide evenly between the 2 pans. Add the white wine and a splash of water to both pans. Cook until absorbed",
+      "Add 100g of the carrot purée to one pan and 100g of beetroot purée to the other, stirring constantly until the grains are coated",
+      "Once all of the purée has been absorbed, divide the chopped almonds and Parmesan (reserving some of each for garnish) between the pans and stir until melted and combined",
+      "As the risottos cook, keep adding more of the purée - as you would do traditionally with a stock - to ensure they don't dry out",
+      "Add a pinch of salt and pepper to season each pan",
+      "Divide the carrot risotto into bowls, top with the beetroot risotto and then the reserved almonds, butternut squash and Parmesan. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pearl Barley",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Beetroots",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knobs of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": "or non-alcoholic white wine",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "or use a vegetarian alternative, grated",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "158fd94a4508a4934b50330dea957eee5a67f48c808884945853138c6b8b3c2a",
+    "lineage_hash": "4fc376e68bb265140801caed0aac3ffa1e9a4378d24ff48fee0744faddd14706"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-beetroot-risotto-recipe",
+    "fetchedAt": "2026-08-03T19:29:49.601Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-beetroot-risotto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

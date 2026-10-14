@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Almond and Vanilla Custard Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 200°C/gas mark 6. Grease a muffin tray or a pie dish (or both) with some softened butter. You can also use tinfoil pie/tart cases too",
+      "Cut out the pastry to fit the muffin tin, pie tin or foil cases, allowing a little excess pastry as an overhang",
+      "Place the pastry shapes into the prepared tin or cases and press down slightly",
+      "Whisk the eggs with the cream, milk, vanilla extract and caster sugar and then pour through a strainer into the pastry lined cases. (If you are not bothered about a super smooth custard filling, you can dispense with this step and just pour the filling in without straining.)",
+      "Scatter the flaked almonds over the top of the tarts",
+      "Bake the tart/s for 25 to 30 minutes, or until the pastry has puffed up and is golden brown, and the filling has just set with a slight wobble, and the nuts are golden brown",
+      "Remove the tarts from the oven and allow cool for a minute before taking the individual ones out of the tin and allowing them to cool on a wire rack. Leave the larger pie in the tin to serve. (You can take the larger pie out of the tin to serve if you wish, once it has cooled slightly.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packet of Puff Pastry",
+        "unit": null,
+        "notes": "ready-rolled, 275g in weight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0c44ef14547bcba57cd61d64c9fcb97e06ded70e51d4ba608eb260bd3f99ee3",
+    "lineage_hash": "fff2a462b6bf1b9ee9ce168146fdbe1ef48d64e05dfc6b615522b7ee542d5e2b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/almond-vanilla-custard-tart-recipe",
+    "fetchedAt": "2026-08-03T23:34:17.032Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/almond-vanilla-custard-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

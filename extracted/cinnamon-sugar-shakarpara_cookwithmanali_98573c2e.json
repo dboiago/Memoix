@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Cinnamon Sugar Shakarpara",
+    "time": "52 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add water and sugar to a pot over medium heat. Stir until the sugar dissolves and then remove the pot from heat. Don't boil the solution.",
+      "Meanwhile, take a large bowl or plate and add the flour, salt and cinnamon powder to it. Mix everything using a wire whisk.",
+      "Add the melted ghee or oil and mix it with the flour by rubbing the flour between your palms for 1 to 2 minutes. This makes sure that the ghee incorporates well with the flour.",
+      "Then pour the sugar-water solution into the flour and start mixing with your hands. Knead to a smooth dough. You might need some extra water while kneading. Cover the dough with a damp cloth and let it rest for at least 30 minutes.",
+      "Once 30 minutes are up, give the dough a quick knead and then divide it into 2 parts. Roll one part of the dough to 1/4 inch thickness while keeping the other part covered with a cloth so that it doesn't dry out. Cut into small squares or any shape that you like. Roll and cut all the dough similarly.",
+      "Preheat your air fryer according to the manufacturer's instructions. Then arrange the cinnamon sugar shakarpara in a single layer and spray with an oil spray. Air fry at 370 F degrees for 10 to 12 minutes or until crisp and golden brown in color. Every air fryer is different so start checking around the 8 minute mark. You would need to air fry in batches.",
+      "Let them cool completely and them store in an airtight container at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C + 1 Tbsp",
+        "notes": "60 ml + 15 ml, + more as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": "67 to 100 grams, adjust sweetness to taste",
+        "amount": "⅓-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ¼ Teaspoon Cinnamon Powder",
+        "unit": null,
+        "notes": "use only 1 teaspoon if you prefer less cinnamon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "melted, 60 ml or use oil",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "361470f9649a7f0705e5c77628dac7a5a290231792b148b85a3b213710d6d1c1",
+    "lineage_hash": "5970792688b76af48463e56e9a09503be03229f86fe1ea992b7bdd93d7819366"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/cinnamon-sugar-shakarpara/",
+    "fetchedAt": "2026-08-02T06:43:23.191Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/cinnamon-sugar-shakarpara/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

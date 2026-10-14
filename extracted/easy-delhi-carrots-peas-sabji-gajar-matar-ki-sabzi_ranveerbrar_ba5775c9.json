@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "गाजर मटर की सब्ज़ी (Carrots & Peas Sabji)",
+    "time": "20-25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a grinder, add onion, tomato, ginger, green chilli and water blend it well smooth paste.",
+      "In a kadai, add ghee,cumin, prepared paste and turmeric powder, coriander powder, degi mirch powder and saute well.",
+      "Add asafoetida, salt to taste, and mix them well.",
+      "Add winter carrots, green peas and let it cook.",
+      "Garnish with coriander leaves, and lime wedge.",
+      "Serve hot with chapati."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "roughly cut",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "roughly cut",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Mirch Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Winter Carrots",
+        "unit": null,
+        "notes": "peeled & cut into small cubes",
+        "amount": "3",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "tender",
+        "amount": "1",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Wedge Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Sabzi",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sabzi",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6cbda70d040e4c9f6ade70269c6d0bf06adb6e163d657dfcb8f7a5f1ab660ed",
+    "lineage_hash": "04efaf135a3140904cd3e5d5e0ac1bf2b0213a0a96e469f27bee7b0624940cab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/gajar-matar-ki-sabzi/",
+    "fetchedAt": "2026-08-02T18:01:35.742Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/gajar-matar-ki-sabzi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Doughnuts with Custard",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the doughnuts, bring the water to the boil along with the salt, sugar and butter. Add the flour and mix for approximately 5 minutes until smooth and silky. Remove from the heat and whisk in the eggs one at a time. Place a sheet of cling film in direct contact ith the mix to prevent and skin from forming and set aside to cool",
+      "Set a deep fat fryer to 170°C. Add spoonfuls of the doughnut mix to the fryer and fry until golden and crispy. Drain and leave to cool at room temperature",
+      "For the custard, bring the orange purée to the boil. Whisk the eggs and sugar together in a large bowl, then whisk in the purèe. Add to a pan over a low-medium heat and cook gently until the mixture just coats the back of a spoon, stirring continuously",
+      "Add to a blender and blitz with the diced butter. Pass through a fine strainer, stir in the mustard and set aside to cool",
+      "Once cool, add the custard to a piping bag with a small nozzle and pipe into the doughnuts",
+      "For the orange sauce, simply warm the orange jam in a small pot until soft. Mix in the olive oil, salt and a drop of lemon juice, remove and set aside until required",
+      "Use a wheel cutter or a peeler to finely cut the cheese into shavings as pictured",
+      "Blend or finely chop the pistachios until they resemble a powder",
+      "Serve the doughnuts with the orange sauce, cheese shavings and pistachio powder"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "163",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange and Pistachio Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Jam",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ossau Iraty",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72624a2d33187a310fa2ba6a197c63ba9dadeeeabbc0919b59753a8ed6e63e08",
+    "lineage_hash": "63ec4ff8779a2dbf0e597aa44806f69dca51975f5344a4c75c29cd2fa0270e73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/doughnuts-custard-recipe",
+    "fetchedAt": "2026-08-03T18:46:38.443Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/doughnuts-custard-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

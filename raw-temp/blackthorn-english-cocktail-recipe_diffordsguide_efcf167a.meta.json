@@ -1,0 +1,46 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/239/blackthorn-english",
+  "slug": "blackthorn-english-cocktail-recipe_diffordsguide_efcf167a",
+  "title": "Blackthorn (English) Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:23:18.647Z",
+  "ldName": "Blackthorn (English)",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Classic/vintage",
+    "Fruity (e.g. Pornstar Martini)",
+    "Nightcap/sipping"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Gin",
+    "30 ml Sloe gin liqueur",
+    "7.5 ml Rosso/sweet vermouth",
+    "7.5 ml Dry vermouth",
+    "1 dash Orange bitters",
+    "1 dash Aromatic bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of orange zest twist and Luxardo Maraschino Cherry.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS orange zest twist over cocktail and discard.",
+    "Garnish with skewered maraschino cherry."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "157 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

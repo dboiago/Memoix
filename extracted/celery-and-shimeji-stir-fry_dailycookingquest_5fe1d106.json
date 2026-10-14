@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Celery and Shimeji Stir Fry",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a wok/frying pan on medium high heat, sauté garlic until fragrant, about 2-3 minutes.",
+      "Add shimeji, mix well, stir fry for 2 minutes, or until the mushroom starts to look wilted.",
+      "Add celery, mix well, season with oyster sauce, water, sugar, and white pepper. Cover the wok/pan with a lid, let it cook for 2 minutes.",
+      "Turn off heat, take the lid off, transfer to a serving plate and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Package Shimeji (i Use 1 White and 1 Brown Shimeji)",
+        "unit": null,
+        "notes": "tear into pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "head",
+        "notes": "cut into diagonal slices about 1/2\" thick",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59a63061f448ebd719932532d7559fd5d05e8a5df5055aa52921cf70893a54d3",
+    "lineage_hash": "95a4cde5605ea595b790c014f5eb3f3b35408e95774a3ed535a279384f5be6d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/celery-and-shimeji-stir-fry.html",
+    "fetchedAt": "2026-08-02T04:44:46.874Z"
+  },
+  "rawSource": "https://dailycookingquest.com/celery-and-shimeji-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

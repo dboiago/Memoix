@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Bacon \"Dog\"",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the jalapeño jelly. Cut the stems and seeds from the peppers, and chop them into quarters. Dump them and half the cider vinegar into a blender and puree it. Add the puree, the remaining vinegar, and the sugar to a saucepan and boil for about 5 minutes, stirring often to dissolve the sugar. Whisk in the pectin until it is dissolved. Take it off the heat and skim off any foam, let it cool for about 30 minutes, and then refrigerate. When it is thick, it is ready to use.",
+      "Make the slaw. In a big serving bowl, mix the cabbage, carrots, and parsley and put it in the fridge. Make the dressing by combining everything else in a saucepan over medium heat. Stir until the sugar and salt dissolve. Remove from the heat, cool for about 30 minutes, and refrigerate. When the dressing is chilled, take the slaw out of the fridge and pour off any liquid. Pour about 1/2 (118ml) cup over the slaw, more if you wish.",
+      "Assemble the dogs. Butter and toast the buns. Cut the slab bacon into super thick strips about the width and length of a large hot dog, about 7 ounces (198g) each. Sear the strips in hot pan or on a hot direct-heat grill until they brown and sizzle. Spread the jelly on the buns, add the dogs, top with slaw, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Jalapeño Peppers",
+        "unit": "oz",
+        "notes": "about 3 medium peppers",
+        "amount": "3",
+        "section": "Jalapeño Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Green Serrano Pepper",
+        "unit": "oz",
+        "notes": "about 1 medium pepper",
+        "amount": "1",
+        "section": "Jalapeño Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Jalapeño Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Jalapeño Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Pectin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jalapeño Jelly",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "lb",
+        "notes": "shredded",
+        "amount": "1",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "And Grated Carrot",
+        "unit": "C",
+        "notes": "peeled",
+        "amount": "¾",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "minced, fresh",
+        "amount": "2",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Safflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted and Ground Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Zimmern's Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Slab Bacon",
+        "unit": null,
+        "notes": "alt: pork belly, about 42 ounces, uncut",
+        "amount": "1",
+        "section": "\"Dog\"",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "\"Dog\"",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "\"Dog\"",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3a161a3248060fcb388996efea8a84c6ea306cfd7d6768550f06a4d68d9ccef",
+    "lineage_hash": "bdc1f36f5a348379d01b518bb4e71f7a7096371448858b2ef5c2cd851f3f3bf2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-recipes/andrew-zimmerns-bacon-dog-jalapeno/",
+    "fetchedAt": "2026-08-02T04:29:04.785Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-recipes/andrew-zimmerns-bacon-dog-jalapeno/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

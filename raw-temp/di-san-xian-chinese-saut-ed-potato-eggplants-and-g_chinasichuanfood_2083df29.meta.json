@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chinasichuanfood.com/di-san-xian-chinese-sauteed-potato-eggplants-and-green-peppers/",
+  "slug": "di-san-xian-chinese-saut-ed-potato-eggplants-and-g_chinasichuanfood_2083df29",
+  "title": "Di San Xian—Chinese Sautéed Potato Eggplants and Green Peppers",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:42:34.951Z",
+  "ldName": "Di San Xian—Chinese Sautéed Potato Eggplants and Green Peppers",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Eggplant, potatoes",
+  "ldIngredientsRaw": [
+    "2  long eggplants (, cut into 2cm chunks)",
+    "1/4 cup cornstarch for coating",
+    "1  potatoes ( , cut into thick slices or chunks )",
+    "1  green pepper ( , cut into small pieces)",
+    "1  green onion ( , white part only, chopped)",
+    "2  garlic cloves ( , chopped)",
+    "oil for frying",
+    "2 tbsp. light soy sauce",
+    "1/4 tsp. sugar",
+    "1/4 tsp. salt",
+    "1/2 tbsp. dark soy sauce",
+    "1 tsp. cornstarch",
+    "3 tbsp. water"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the eggplants in slightly salted water for 15 minutes. Drain completely and then coat evenly with a thin layer of cornstarch.",
+    "In a small bowl, mix all of the stir-frying sauce together.",
+    "If you cut potatoes in chunks, then cook the chunks in boiling water for around 4-5 minutes. Transfer out and drain.",
+    "Heat oil in wok (recommend adding more oil to fasten the process, do not worry, we will remove extra oil later) to form a 3 cm oil layer.",
+    "Place potatoes in and fry until the surface becomes slightly crispy. Then place the eggplant in and gently fry during the process until well cooked. Fry green pepper for 10 seconds.",
+    "Pour extra oil out and leave around 1/2 tablespoon of cooking oil in. Fry green onion and garlic until aromatic. Place the stir fry sauce in. Wait for a while until boiling. Place potato, green pepper and eggplants in. Fry until each piece is well coated.",
+    "Serve hot with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "187 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "4 g",
+    "fatContent": "5 g",
+    "sodiumContent": "1314 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 long eggplants , cut into 2cm chunks",
+    "1/4 cup cornstarch for coating",
+    "1 potatoes  , cut into thick slices or chunks",
+    "1 green pepper  , cut into small pieces",
+    "1 green onion  , white part only, chopped",
+    "2 garlic cloves  , chopped",
+    "oil for frying",
+    "[Stir-frying sauce]",
+    "2 tbsp. light soy sauce",
+    "1/4 tsp. sugar",
+    "1/4 tsp. salt",
+    "1/2 tbsp. dark soy sauce",
+    "1 tsp. cornstarch",
+    "3 tbsp. water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

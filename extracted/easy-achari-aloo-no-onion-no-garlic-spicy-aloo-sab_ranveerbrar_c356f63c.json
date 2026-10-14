@@ -1,0 +1,250 @@
+{
+  "recipe": {
+    "name": "Achari Aloo",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add ginger, green chillies, salt to taste and make a coarse paste.",
+      "Keep it aside for further use.",
+      "In a bowl, add curd, prepared ginger green chili paste, achar masala and mix it well.",
+      "Add degi red chili powder, turmeric powder, asafoetida, coriander powder and mix everything properly and make a smooth mixture.",
+      "Keep it aside for further use.",
+      "In a handi, add mustard oil on a high flame until smoky hot.",
+      "Once the oil itâs hot, turn off the flame for 1-2 minutes or until it's at normal temperature.",
+      "Now, add bay leaf, cumin seeds, fennel seeds, onion seeds, mustard seeds, fenugreek seeds and let it splutter.",
+      "Add potatoes, and saute them for a while, add dry red chili and saute it well.",
+      "Cover it with the lid and let it cook for 2-3 minutes or until potatoes are golden brown in color.",
+      "Add prepared curd mixture, tender coriander stems and cook well.",
+      "Once curd and masala gets cooked well, add water and cover the lid and let it cook for a while.",
+      "Open the lid, add sugar and cook for a minute on low flame.",
+      "Once potatoes are cooked well, turn off the flame.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, roughly slice",
+        "amount": "1",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "2",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1¼",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Green Chili Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Achari Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "cut into dice",
+        "amount": "4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Kashmiri Red Chili",
+        "unit": null,
+        "notes": "deseed, broken into half",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curd Mixture",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c93d01f55152825ff18c807aead2c221bbfc400462150a12ecee25a78c56dee7",
+    "lineage_hash": "5437fc22151ab62588dad0af28b73dc8ee84b8f790a6a9b09d28736208885d14"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/achari-aloo/",
+    "fetchedAt": "2026-08-02T10:40:20.113Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/achari-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

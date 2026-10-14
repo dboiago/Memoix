@@ -1,0 +1,35 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/3062/cajun-thunder",
+  "slug": "cajun-thunder-cocktail-recipe_diffordsguide_3137d3c1",
+  "title": "Cajun Thunder Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T09:02:39.984Z",
+  "ldName": "Cajun Thunder",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Shot cocktails"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Southern liqueur",
+    "4 drop Red hot pepper sauce"
+  ],
+  "ldInstructionsRaw": [
+    "POUR ingredients into glass and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "75 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

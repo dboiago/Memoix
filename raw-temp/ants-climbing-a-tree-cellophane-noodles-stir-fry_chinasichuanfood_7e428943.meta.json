@@ -1,0 +1,70 @@
+{
+  "url": "https://www.chinasichuanfood.com/ants-climbing-a-tree/",
+  "slug": "ants-climbing-a-tree-cellophane-noodles-stir-fry_chinasichuanfood_7e428943",
+  "title": "Ants Climbing a Tree-Cellophane Noodles Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T15:36:32.592Z",
+  "ldName": "Ants Climbing a Tree-vermicelli recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple",
+  "ldKeywords": "noodles, stir fry",
+  "ldIngredientsRaw": [
+    "200 g mung bean vermicelli",
+    "1 cup minced beef or pork",
+    "pinch of salt",
+    "1 tablespoon cooking oil",
+    "1 tablespoon Doubanjiang",
+    "1/2 tsp. dou-chi (, optional)",
+    "1 tablespoon soy sauce",
+    "1/4 tsp. dark soy sauce",
+    "1 teaspoon scallion white  ( , white part and green part minced separately)",
+    "2 cloves garlic ( , minced)",
+    "1 teaspoon minced ginger",
+    "1 teaspoon sugar",
+    "1 cup water or chicken stock"
+  ],
+  "ldInstructionsRaw": [
+    "Marinade the minced beef or pork with pinch of salt. Soak Chinese vermicelli in warm water until soft around 10 minutes Move out and drain.",
+    "Heat up oil in wok and fry the ground pork until aromatic and crispy.",
+    "Add doubanjiang, minced garlic, dou-chi if using, sliced ginger and chopped scallion in wok and stir-fry over medium fire until the oil becomes red and you can smell the aroma.",
+    "Add soaked vermicelli, and add around 1 cup of water. Heat until it thickened once again. Add light soy sauce, dark doy sauce, and sugar. Give a big stir-fry to mix everything well. (There is no need to cook off all the liquid as the vermicelli continues to adsorb liquid after transferring out).",
+    "Sprinkle chopped green onions and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "488 kcal",
+    "carbohydrateContent": "86 g",
+    "proteinContent": "6 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "7 mg",
+    "sodiumContent": "1673 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "200 g mung bean vermicelli",
+    "1 cup minced beef or pork",
+    "pinch of salt",
+    "1 tablespoon cooking oil",
+    "1 tablespoon Doubanjiang",
+    "1/2 tsp. dou-chi , optional",
+    "1 tablespoon soy sauce",
+    "1/4 tsp. dark soy sauce",
+    "1 teaspoon scallion white   , white part and green part minced separately",
+    "2 cloves garlic  , minced",
+    "1 teaspoon minced ginger",
+    "1 teaspoon sugar",
+    "1 cup water or chicken stock"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

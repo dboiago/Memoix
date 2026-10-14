@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Cascabel Mole",
+    "time": "1 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the tortillas. Grill the tortillas until they start to brown, turning them every 30 to 60 seconds to prevent them from burning.",
+      "Prep and cook. Peel, stem, and slice the onion into 3 thick rings and grill on medium high heat with the lid up the until they char a little. Set aside.",
+      "Heat a large dry sauce pan on the grill on medium high heat. Stem and seed the anchos and cascabels and break them into large flat pieces. Lay them in the pan and as they warm, gently press them flat against the hot metal to toast them skin side down and release their oils. Do not burn them. The moment you see smoke, flip them and get them outta there.",
+      "Put the sesame seeds in the pan and toast them until they get faint golden splotches. Set them aside in two piles, one with two tablespoons to be used for garnish and 4 tablespoons to be blended into the sauce. Add the raw almond slivers. When they get golden spots, remove them too.",
+      "Coarsely chop the garlic, and add the lard or vegetable oil to the pot. When it is hot, all at once throw in the onions, chiles, sesame seeds, almonds, garlic, cinnamon stick, black pepper, oregano, and clove. Let them fry for only about a minute. Chop or shave the chocolate and add it to the pot along with everything else except the lime juice, water, and salt. Yes, tear up the tortillas and add them. Simmer for about 30 minutes.",
+      "Puree. Remove the pot and let it cool a bit. Then pour it into a blender or food processor a little at a time and beat the heck out of it until it is pureed and fairly smooth. Pour it through a medium mesh strainer back into the original pot that you have wiped clean. Now add the lime juice and salt. Add water until you get it to the desired thickness, about like bottled spaghetti sauce.",
+      "Now, if you wish, you can add a pound (458 g) of meat to the pot and let it braise in the potent liquid on a low simmer, improving both the food and the sauce, or grill the meat and spoon the sauce over the top.",
+      "Serve. Before serving, taste and add more salt and sugar if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas [8\" (20.3 Cm)]",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Dried Ancho Chiles",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Dried Cascabel Chiles",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Almond Slivers",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "C",
+        "notes": "alt: vegetable oil",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Clove",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91174f4826395fc74365765eecce94218f1f06400c0862c37b267a64b988e873",
+    "lineage_hash": "db8630f9735f2a88d7e2e64fe236b0794eafbb25c767cf4d3b34d61b22e0b310"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/cascabel-mole-recipe-inspired-chef-rick-bayless/",
+    "fetchedAt": "2026-08-02T07:01:58.952Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/cascabel-mole-recipe-inspired-chef-rick-bayless/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

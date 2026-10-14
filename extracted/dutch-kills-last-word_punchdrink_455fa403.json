@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Last Word",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Coupe",
+    "garnish": [
+      "Lime Twist",
+      "Maraschino Cherry"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a cocktail shaker with a single Hundredweight or similar large-format ice cube.",
+      "Shake vigorously and strain into a chilled coupe.",
+      "Express a lime twist over the surface of the drink and discard.",
+      "Sink a maraschino cherry into the cocktail and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraska Maraschino Syrup",
+        "unit": "oz",
+        "notes": "equal parts Maraska liqueur and simple syrup",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Monkey 47 Schwarzwald Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a1cd5f27075d9b714c245f377b61fe15c954fffb5c9d0a7e506704f5320d28ce",
+    "lineage_hash": "1412c309833ba11f441a91868b60655c3de556cc04f67ba19d082e6898b331a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/dutch-kills-last-word/",
+    "fetchedAt": "2026-08-03T08:21:29.350Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/dutch-kills-last-word/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

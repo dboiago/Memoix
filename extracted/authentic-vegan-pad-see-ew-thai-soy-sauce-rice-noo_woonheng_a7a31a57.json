@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Vegan Pad See Ew (Thai soy sauce rice noodles)",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, prepare the sauce by combining the soy sauce, vegan fish sauce, sugar, and thick caramel sauce (or dark soy sauce) in a bowl. Whisk until the sugar has dissolved.",
+      "Cut the homemade flat rice noodles into 1-inch-wide ribbons. See notes on how to handle store-bought fresh noodles.",
+      "Heat a large wok or nonstick skillet over medium heat and add 1 tablespoon of oil. Add the garlic and sauté until fragrant, about 1 minute.",
+      "Add the gai lan, tofu, and toss to combine.",
+      "Add the noodles and sauce. Toss the noodles until all of them are coated. (You may use a spatula or chopsticks to help if needed.)",
+      "Spread out the noodles and let cook, untouched, to char the noodles a little, 1 to 2 minutes. This step is to give the noodles the wok aroma and flavor.",
+      "Taste and season with more soy sauce or vegan fish sauce if needed. Add the ground pepper, then serve with pickled chiles and their vinegar or red pepper flakes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flat Rice Noodles Used Homemade",
+        "unit": "lb",
+        "notes": "see notes for store-bought, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firm Tofu Sliced",
+        "unit": "oz",
+        "notes": "pan-fried, and salted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Finely Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roughly Chopped Gai Lan Chinese Broccoli",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil for Cooking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Chiles",
+        "unit": null,
+        "notes": "alt: red pepper flakes see notes",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce (used Golden Mountain Brand) Plus More to Taste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Fish Sauce (see Notes) Plus More to Taste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Caramel Sauce*",
+        "unit": "tsp",
+        "notes": "alt: ½ teaspoon dark soy sauce",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80cf2d68620f6afa4632b9b40820a1c71942c7a97b99cc7bac5983a5327cd9c5",
+    "lineage_hash": "0d3066b05ac4a1b868167c2445bee7c555c4e0e0eb7a9734c7e20891258af597"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/vegan-pad-see-ew/",
+    "fetchedAt": "2026-08-01T19:45:10.478Z"
+  },
+  "rawSource": "https://woonheng.com/vegan-pad-see-ew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

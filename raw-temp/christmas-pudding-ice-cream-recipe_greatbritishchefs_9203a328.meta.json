@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/christmas-pudding-ice-cream-recipe",
+  "slug": "christmas-pudding-ice-cream-recipe_greatbritishchefs_9203a328",
+  "title": "Christmas Pudding Ice Cream Recipe",
+  "byline": "by Asma Khan",
+  "fetchedAt": "2026-08-03T19:42:39.316Z",
+  "ldName": "Christmas pudding ice cream",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "250g of christmas pudding, crumbled into pieces",
+    "600ml of single cream",
+    "300ml of milk",
+    "1/2 vanilla pod, split lengthways",
+    "6 egg yolks",
+    "125g of caster sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Add the cream and milk to a pan and scrape in the seeds from the vanilla pod. Add the scraped pod and place the pan over a medium-high heat",
+    "Bring to a gentle simmer, then remove from the heat and set aside to infuse for 30 minutes",
+    "In a bowl, whisk the egg yolks and sugar until pale and smooth. Bring the milk and cream back up to a simmer",
+    "While slowly whisking the eggs, gradually pour in the hot cream",
+    "Return the mixture to the saucepan. Place the pan over a low heat and stir continuously until you have a thin custard that coats the back of a wooden spoon",
+    "Remove the pan from the heat. Pass the custard through a fine sieve into a bowl and allow to cool completely, laying cling film directly on top of the custard to prevent a skin forming",
+    "Churn the custard in an ice cream maker, stirring in the Christmas pudding as the mixture begins to thicken and freeze. Store in the freezer until ready to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

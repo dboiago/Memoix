@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Courgette and Grana Padano Pancakes",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the tomato and apple relish. Place a thick-bottomed saucepan over a medium heat and pour in the olive oil. Add the onion, chilli and garlic and cook for a few minutes until softened but without colour",
+      "Add the fennel seeds, mixed spice and bay leaf, then continue to cook for 5 more minutes. Add the tomatoes, apples, white wine vinegar, honey and water, bring to a simmer then leave to cook for 45 minutes, stirring regularly until thickened",
+      "Meanwhile, get started on the pancakes. Mix the grated courgette and Grana Padano in a large bowl, then add the flour and paprika. Stir until combined, then add the beaten eggs until fully incorporated. Season with salt and white pepper, then cover the bowl with cling film and leave to rest in the fridge for 15–20 minutes",
+      "Once the relish has reduced and thickened, add the lemon juice until you're happy with the taste, season and set aside to cool",
+      "To cook the pancakes, preheat an oven to 180°C/gas mark 4. Place a small ovenproof frying pan over a medium heat and add a little rapeseed oil. Once hot, place 2 large tablespoons of the courgette mixture in the pan (you can use a metal chef ring to give the pancakes a neater shape, as in the image above, but they will also work when simply placed in the pan). If you can fit more than one pancake in the pan then do so, otherwise you will need to work in batches. Immediately transfer the pan to the oven and cook for 3 minutes",
+      "The pancake mixture will start to rise as it cooks. After 3 minutes carefully flip the pancakes over and cook in the oven for a further minute. Once cooked, remove from the pan and place on a plate",
+      "To serve, top the pancakes with a dollop of the cooled relish and some final shavings of Grana Padano"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": "large, coarsely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "finely grated, plus extra shavings to garnish",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": "for frying",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "peeled, cored and cut into 0.5cm dice",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "roughly cut into 0.5cm dice",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "926014b547629abb139eb520b912fab1fefb04321376a53297f31e5b72097391",
+    "lineage_hash": "6113bf7914c91b99f81746a1af297e80c23ffe6e65a8aca7f6b7a9866ed9925f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-grana-padano-pancakes-recipe",
+    "fetchedAt": "2026-08-03T06:13:22.870Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-grana-padano-pancakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

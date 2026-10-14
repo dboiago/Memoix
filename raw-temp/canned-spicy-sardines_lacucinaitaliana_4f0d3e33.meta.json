@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/main-course/canned-spicy-sardines",
+  "slug": "canned-spicy-sardines_lacucinaitaliana_4f0d3e33",
+  "title": "Canned Spicy Sardines",
+  "byline": "by  Editorial staff   October 9, 2020",
+  "fetchedAt": "2026-08-02T17:06:10.546Z",
+  "ldName": "Canned Spicy Sardines",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "main course",
+  "ldKeywords": "Pesce",
+  "ldIngredientsRaw": [
+    "30 sardine fillets",
+    "1/4PC. Cruschi (crunchy) pepper",
+    "1 chili pepper",
+    "2 mint leaves",
+    "Fennel fronds",
+    "1/2OZ. Extravirgin olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Mince about 1/4 of a Cruschi bell pepper, 1 chili pepper, 2 mint leaves and a little fennel; mix with 1/2 cup of extra-virgin olive oil. In a jam jar, set 30 sardine fillets and cover them with the oil, leaving a little space at the top. Vacuum seal the jar and boil it submerged in water for 30 minutes.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "30  of sardine fillets",
+    "1/4 PC. of Cruschi (crunchy) pepper",
+    "1 chili pepper",
+    "2  of mint leaves",
+    "Fennel fronds",
+    "1/2 OZ. of Extravirgin olive oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

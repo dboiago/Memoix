@@ -1,0 +1,329 @@
+{
+  "recipe": {
+    "name": "Surti Paneer Ghotala",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add ginger, tender coriander stems, garlic, green chillies, fresh coriander leaves.",
+      "Add degi red chilli powder, turmeric powder, coriander powder, cumin seeds and salt to taste.",
+      "Transfer it into the mixer grinder jar and grind it into the smooth fine paste.",
+      "Keep it aside for further use.",
+      "In a shallow tawa or handi, add ghee, oil, once it’s hot, add prepared paste and cook for 7-8 minutes until oil separates from the masala.",
+      "Add onions, capsicum, tomatoes, butter and let it cook for another 4-5 minutes or until it’s cooked.",
+      "Add water to adjust the consistency, add fried paneer and cook for a while until it’s cooked.",
+      "Finish it with fresh coriander leaves, cheese and give it a good mix.",
+      "Transfer it into the serving dish, garnish it with fried paneer, butter and coriander sprig.",
+      "Serve hot with ladi pav and roti.",
+      "In a tray, place paneer slabs, sprinkle some garam masala, salt to taste, oil and marinate well.",
+      "In a separate bowl, add grated paneer, salt to taste, degi red chilli powder and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a pan, add oil, once it’s hot, add marinated paneer slabs and fry them until it’s light golden in color and crispy on texture.",
+      "Remove it into the absorbent sheet and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly sliced",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "3-4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "fresh, chopped",
+        "amount": "⅓",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Paneer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Paneer",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Surati Paneer Ghotala",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into thin slabs",
+        "amount": "200",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "600",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Paneer Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Frying Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Paneer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Frying Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Paneer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79e05588450ca892d628744f26259b1b1f7e53a4e62ccbe34d1b07a663f7ae4a",
+    "lineage_hash": "56bdb448a050c81328ce41a18313aa46a18f3a86fbadb89a8c30c0323db7d41e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheesy-surti-paneer-ghotala/",
+    "fetchedAt": "2026-08-02T20:39:32.377Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheesy-surti-paneer-ghotala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Adonis Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 3 ingredients in a wine glass and add ice. Top with sparkling wine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aperitivo Cappelletti",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amontillado Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sparkling Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ce1eb4284a18e2827e58add26acb56a76a552934e09a4e09a289617678caba0",
+    "lineage_hash": "f7e4fedf3f727e369966c78b30c292a01542562049cc988a24c50ca1ace92341"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/adonis-spritz/",
+    "fetchedAt": "2026-08-03T21:22:03.108Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/adonis-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

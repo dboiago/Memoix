@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Duck Madras",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the roasted ground spices. In a large non-stick or sauté pan, roast the spices (starting with the larger ones and adding the cumin halfway through roasting) over a medium heat, stirring constantly for about 5 minutes. Transfer to a plate and set aside to cool before grinding into a powder",
+      "Heat the vegetable oil in a large saucepan and flash-fry a few of the curry leaves. Remove with a slotted spoon and set aside for garnish",
+      "Add the chopped onions to the same oil and sauté until lightly browned. Add the remaining curry leaves, followed by the ginger-garlic paste, ground fennel seeds, turmeric, chilli powder, ground cumin and ground coriander. Sauté for a further minute",
+      "Add the duck meat and stir well over a high heat for 5 minutes. Reduce the heat to low, cover with a lid and simmer for 20 minutes",
+      "Uncover the pan, stir well and add some salt and 1 tbsp of the roasted ground spices (adding more to taste if required). Stir in the tomatoes",
+      "Cover again and simmer for a further 30 minutes, or a little longer, until the meat is tender (if using duck breast, the cooking time is significantly reduced). Check the seasoning and serve sprinkled with a pinch or two of the roasted spices and fried curry leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cassia",
+        "unit": null,
+        "notes": "one 5cm (2 inch) piece",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pod",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": "boned and diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe4e23253d91a3f1fb9a7ae3dffb838f89e08db592f2d9b1e0914fed40a470ce",
+    "lineage_hash": "ef5a35231f5b75816d6267016fb849d873fecaffe9b65e5edfad12084de8c9d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-madras-recipe",
+    "fetchedAt": "2026-08-03T10:37:12.526Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-madras-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

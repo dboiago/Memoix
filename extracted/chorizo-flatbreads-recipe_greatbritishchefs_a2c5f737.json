@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Chorizo Flatbreads",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the bread ingredients together in a bowl and knead briefly, until smooth. Set aside for an hour or so in a warm place until roughly doubled in size",
+      "Preheat a griddle pan until very hot. Divide the dough into 8 evenly-sized pieces, then stretch out to the size of a pitta bread (it’s easiest to use your hands for this) – pick the dough up and let it ‘hang’ turning it around to stretch it. Cook both sides in the pan until char marks appear – a couple of minutes on each side. Set aside",
+      "To prepare the onions, add the sugar and vinegar to a small pan and heat gently until dissolved. Remove from the heat, add the onion slices and set aside while you prepare the remaining elements",
+      "Whip the yoghurt with the crumbled feta and crushed garlic. Add a pinch of salt and a squeeze of lemon juice and set aside in the fridge",
+      "Press the chorizo meat into the top of the flatbreads, making sure it goes right to the edges, then place under a hot grill for a couple of minutes until the meat is cooked through",
+      "Dress with the pink pickled onions, dressing and parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek-style Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Ristra",
+        "unit": null,
+        "notes": "raw, remove from their casings",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7034458ee667c9f6aadcf0c6ae61e2edac3594a6774172ce3c0bfbbce228ba6",
+    "lineage_hash": "5c5b85835be08ed4023d0405439b2c2e0bd49aae7dd336e04763449eb63bc4a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-flatbreads-recipe",
+    "fetchedAt": "2026-08-03T09:50:37.817Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-flatbreads-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

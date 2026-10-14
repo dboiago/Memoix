@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Cullen Skink",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the milk into a pan and add the haddock. Place over a medium heat and bring to a gentle simmer. Cook for 8-10 minutes, or until the flesh of the fish turns opaque. Once poached, remove the haddock and set aside to keep warm - reserve the milk",
+      "Sauté the potato cubes in a pan with a knob of butter. Add the shallots and cook until both the potato and shallots are soft",
+      "Cover with the chicken stock, white wine, double cream and reserved milk, bring to the boil and allow to simmer for 10 minutes. Season the soup with salt, pepper and mustard powder to taste",
+      "Meanwhile, in a separate pan, boil the quails eggs for 3 minutes, remove and cool in ice water. Once cooled, carefully remove the shells and slice each egg in half",
+      "Blitz the soup in a blender and then pass through a sieve",
+      "Remove the skin from the fish and flake into large chunks. Season with lemon juice and salt",
+      "Place 4 slices of quails eggs at the bottom of each bowl and lay some, but not all, of the fish flakes on top. Pour the soup on top and finish with the rest of the fish and more slices of quails eggs. Sprinkle chopped chives and parsley leaves on top and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Haddock",
+        "unit": "g",
+        "notes": "undyed",
+        "amount": "470",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Potatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quail Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "885649c96ee7688c6280755111c1660e8826a41780405c0b72e6e30dc0612560",
+    "lineage_hash": "406606e7e1452b4dc24408acbcdfbf993068fb45e5bebdb9def844f7b37b3257"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cullen-skink-recipe",
+    "fetchedAt": "2026-08-02T22:35:02.947Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cullen-skink-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

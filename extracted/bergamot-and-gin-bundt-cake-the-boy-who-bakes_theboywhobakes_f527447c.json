@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Bergamot and Gin Bundt Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180C (160C fan).",
+      "Place the sugar, bergamot zest and eggs into a large mixing bowl and use an electric mixer to whisk together until pale and light, about 5 minutes.",
+      "Pour in the olive oil, yoghurt and bergamot juice and whisk to combine.",
+      "In a separate bowl mix together the remaining ingredients.",
+      "Add the dry goods to the egg mixture and whisk together briefly to combine.",
+      "Spray a large bundt pan with oil and pour in the cake batter.",
+      "Bake in the oven for 45-50 minutes or until a skewer inserted into the middle of the cake comes out clean.",
+      "Allow the cake to cool in the tin for 10 minutes before carefully inverting onto a wire rack to cool completely.",
+      "Whilst the cake is still warm you can brush with a bergamot syrup if you fancy but I actually don't think this cake needs it, it is perfectly moist and flavourful on its own.",
+      "For the glaze mix together the bergamot juice, gin, vanilla and icing sugar until a thick but pourable glaze is formed.",
+      "Pour over the top of the cake and allow to drip down the sides of the cake.",
+      "If you prefer you can sprinkle the cake with bergamot zest."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot Zest",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Semolina",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self Raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2874d506fd080792746d9230ba0c4a1b8c756e46b9cc3da95490a58466bacda5",
+    "lineage_hash": "1b9e35e76e2b4114fd1ea57d9a1a9fbc95fe06aef58b6955bf06a55a1843ef89"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/2/8/bergamot-and-gin-bundt-cake",
+    "fetchedAt": "2026-08-01T21:26:05.779Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/2/8/bergamot-and-gin-bundt-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

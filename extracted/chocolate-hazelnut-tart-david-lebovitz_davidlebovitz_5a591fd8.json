@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the crust, put the oven racks in the top and bottom third of the oven, and preheat the oven to 350ºF (180ºC). Invert the bottom of a 9-inch (24cm) springform pan so that what's usually the concave bottom, is the top, for easier removal of the finished tart. (If you look at mine shown in the post, it's already set up like that which is pretty sweet. You can't turn it over even if you want to, as it has a lip to collect any cake juices that may run out, which isn't a problem with this tart.) As Gourmet says, the \"turned up edge\" should be underneath. Lightly butter the bottom of the pan, or spray the bottom lightly with nonstick spray.",
+      "In a medium bowl, mix together the Graham cracker crumbs, butter, and 1/8th teaspoon of the salt. Scrape the moistened crumbs into the springform pan. Spread and shake the pan so they're in an even layer, then press them down with the bottom of a water glass so the buttered crumbs are as even as possible.",
+      "Bake the crust on the upper rack of the oven for 7 minutes. Cool the crust in the pan completely on a wire rack before filling.",
+      "To make the filling, bring the heavy cream and salt to a near boil in a medium saucepan. When the edges start to bubble, turn off the heat and add the chopped chocolate. Stir the chocolate with a whisk until it's completely melted and smooth, then whisk in the chocolate-hazelnut spread. Stir in the hazelnuts.",
+      "Pour the filling over the crust then smooth and/or gently shake the pan so the filling is even. Refrigerate the tart for about 1 1/2 hours (or freeze for 25 minutes) until just set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "C",
+        "notes": "150g, from about 13 crackers",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "85g, melted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt, preferably flaky sea salt, divided",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "240g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet (not Unsweetened) Chocolate",
+        "unit": "oz",
+        "notes": "300g, chopped",
+        "amount": "10½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate-hazelnut Spread",
+        "unit": "C",
+        "notes": "150g, see headnote",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "140g, toasted, either left whole (if small), or very coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1db1e088536fad59cd5bf0ed2c3e18a0aea7874662c58004f4f52d6b828a5666",
+    "lineage_hash": "662d16f008889a0f2a3a872c14bee9b5d6a4356bb669bcb9bbfa7091934f180b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-hazelnut-tart-recipe-graham-cracker-crust/",
+    "fetchedAt": "2026-08-02T17:39:01.302Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-hazelnut-tart-recipe-graham-cracker-crust/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,309 @@
+{
+  "recipe": {
+    "name": "Aloo Tikki Chaat (Aam ka Murabba)",
+    "time": "30-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add grated frying potatoes, boiled frying potato, oil, salt to taste, cornstarch and give it a good mix.",
+      "Finish it with oil, cover it with cling wrap and keep it aside for further use.",
+      "In a handi or sauce pot, add oil, once it's hot, add cumin seeds, dry red chillies and let it splutter.",
+      "Add raw mangoes, water, jaggery, salt to taste, degi red chili powder and mix it well.",
+      "Cook it for 10-12 minutes on medium flame until mushy.",
+      "Add prepared asafoetida water and give it a good mix.",
+      "Transfer it to a bowl and keep it aside to cool down at room temperature.",
+      "Serve with prepared aloo tikki.",
+      "In a pan, add oil, once it's hot, add asafoetida and saute it for a minute.",
+      "Add water, get a quick boil and keep it aside for further use.",
+      "Take aloo tikki mixture, divide in medium lemon size balls and keep it aside.",
+      "In a tawa, add ghee, oil, once it's hot, add tikkis and shallow fry it until crispy and golden in color.",
+      "Transfer it to an absorbent paper and keep it aside for further use.",
+      "In a pan, add black peppercorns, coriander seeds, fennel seeds, cumin seeds, salt to taste and dry roast it for a while until aromatic.",
+      "Transfer it to a mortar pestle and grind it into a coarse powder.",
+      "Keep it aside for further use.",
+      "In a bowl, add curd, powdered sugar, whisk it well and keep it aside for further use.",
+      "In a serving dish, place the prepared crushed aloo tikki, pour some prepared sweetened curd, sprinkle some prepared masala, add prepared Aam ka murabba and top it up with pomegranate pearls.",
+      "Garnish it with coriander sprig and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Frying Potatoes",
+        "unit": null,
+        "notes": "peeled & grated",
+        "amount": "3",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Boiled Frying Potato",
+        "unit": null,
+        "notes": "peeled & grated",
+        "amount": "1",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Cornstarch",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Tikki Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "No. Raw Mangoes",
+        "unit": null,
+        "notes": "peeled & chopped",
+        "amount": "5-6",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Asafoetida Water",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Asafoetida Water",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Asafoetida Water",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Sweetened Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sweetened Curd",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Aloo Tikki",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Sweetened Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Aam Ka Murabba",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Pearls",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a6b0d0c1216d7e5ff757022165437828417327f43c75b9afc82a929428d9571",
+    "lineage_hash": "e93b71c5d20132bea29c0026b7f7a9ae5c7cd53a98a8e003cbdab8ccd3b194c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-tikki-chaat-aam-ka-murabba/",
+    "fetchedAt": "2026-08-02T17:58:24.520Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-tikki-chaat-aam-ka-murabba/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

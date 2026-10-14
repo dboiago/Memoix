@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Collard Greens Soup with Borlotti Beans; Karalahana Çorbası",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dried borlotti beans overnight or for 8 hours in plenty of cold water.",
+      "The next day, drain the beans, place in a large saucepan and cover with hot water. Bring to the boil, then cook over a medium heat for 20 minutes. Stir often and skim off any foam forming on the top with a spoon. Drain in a colander and refresh under cold running water (to retain colour and texture) and set aside in a bowl. They will be partially cooked and still firm, with a bite to them.",
+      "Heat the butter (or olive oil) in a large pan over a medium–high heat, add the onions and sauté for 7 minutes, stirring often to soften. Stir in the tomato paste, sweetcorn and the beans, and combine well. Add the collard greens and the measured hot water and bring to the boil. Gently mix – the collard greens will start to wilt. Season with salt and pepper, then cover, reduce the heat to medium–low and cook for 15 minutes, gently mixing a few times.",
+      "Place the fine cornmeal/maize flour in a small bowl and add 3 ladlefuls of the soup liquid. Mix with a spoon until the flour is dissolved and the mixture smooth. Pour into the pan and gently combine well. Cover and simmer for a further 10 minutes. This is a chunky soup but if it appears to be too thick for you, add a little more water and combine well.",
+      "For the sauce, heat the butter (or olive oil) in a small pan and stir in the pul biber. Gently infuse for 30–45 seconds over a low heat.",
+      "Pour the pul biber sauce over the soup and check the seasoning. Serve immediately while hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Borlotti Beans",
+        "unit": "g",
+        "notes": "dried, soaked overnight or for 8 hours in plenty of cold water",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "or olive oil for a vegan option, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": "double concentrated, 3 oz/1/3 cup",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn Kernels",
+        "unit": "g",
+        "notes": "cut from 2 medium cobs",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Collard Greens",
+        "unit": "g",
+        "notes": "washed, rough stems removed and coarsely chopped",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "L",
+        "notes": "52 fl oz/6 cups",
+        "amount": "1.475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "g",
+        "notes": "alt: maize flour, not cornflour/cornstarch, fine, 1 oz/¼ cup",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "sea salt, to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": "freshly ground black pepper, to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "or olive oil, melted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber / Aleppo Pepper",
+        "unit": "Tbsp",
+        "notes": "use less or more to your taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a81a23025e7a2925a73d96104eb86dfbc989f7a5c4f7cb1a84e0e74a8db255b0",
+    "lineage_hash": "79ecfa3fadd5a5e6b3ffda394fdc51e62aa06905920170f5bf5757de9992382f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2024/09/collard-greens-soup-with-borlotti-beans-karalahana-corbasi/",
+    "fetchedAt": "2026-09-25T23:18:05.559Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2024/09/collard-greens-soup-with-borlotti-beans-karalahana-corbasi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

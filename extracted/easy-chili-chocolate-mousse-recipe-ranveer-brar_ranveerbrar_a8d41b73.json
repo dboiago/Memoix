@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chilli Chocolate Mousse",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk and cream in a non-stick pan and bring to a boil. Remove from heat and add the basil leaves. Let them soak for 15 minutes.",
+      "Boil again and pass through a sieve. Add the chili flakes and set aside.",
+      "Place the egg yolks in a mixing bowl. Add the sugar and beat together till creamy yellow.",
+      "Pour the creamed yolks slowly over the basil infused milk. Stir well and heat again till the mixture begins to thicken slightly. Do not boil, or it will curdle. This is the basic custard.",
+      "Remove the custard from heat and slowly add the chocolate and olive oil. Mix well and allow it to cool.",
+      "Once the mixture is cooled, gently fold in the heavy cream and whip to form soft peaks. Refrigerate for 1 hour and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e468fef66a3bdeea006f5b9b8c116a4aae04089d81d9c3a1d5118d9d525e8ccf",
+    "lineage_hash": "35075d403b05bd408d58a35b12fc049b1a71100258361e730cececf7906973cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chili-chocolate-mousse/",
+    "fetchedAt": "2026-08-02T08:20:19.338Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chili-chocolate-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

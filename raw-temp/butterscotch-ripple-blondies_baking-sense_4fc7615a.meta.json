@@ -1,0 +1,62 @@
+{
+  "url": "https://www.baking-sense.com/2017/05/11/butterscotch-ripple-blondies/",
+  "slug": "butterscotch-ripple-blondies_baking-sense_4fc7615a",
+  "title": "Butterscotch Ripple Blondies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T16:46:15.544Z",
+  "ldName": "Butterscotch Ripple Blondies",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "16",
+    "16 blondies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bar cookie, brownie",
+  "ldIngredientsRaw": [
+    "1 cup extra thick Butterscotch Sauce (see note)",
+    "6 oz unsalted butter (melted)",
+    "6 oz granulated sugar (¾ cup)",
+    "8 oz brown sugar (1 cup)",
+    "3  large eggs",
+    "1 tablespoon vanilla extract",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "½ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Butter a 9&quot; square baking pan and line with parchment paper. You can just butter the pan but the parchment makes it much easier to remove the blondies from the pan.",
+    "In a large bowl, combine 6 oz&#32;unsalted butter (melted) with 6 oz&#32;granulated sugar and 8 oz&#32;brown sugar. Add 3&#32;large eggs and 1 tablespoon&#32;vanilla extract. Add 7 ½ oz&#32;all purpose flour and ½ teaspoon&#32;table salt. Spread the batter into the pan.",
+    "Use a small melon baller or spoon to scoop balls of butterscotch. Dot the top of the batter with the butterscotch balls, setting them about 1&quot; apart. Bake until the center springs back when lightly pressed, about 40 minutes.",
+    "Cool to room temperature before removing from the pan and cutting into 16 squares."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 blondie",
+    "calories": "348 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "3 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "11 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "109 mg",
+    "sugarContent": "39 g",
+    "transFatContent": "0.4 g",
+    "fiberContent": "0.4 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "1 cup extra thick Butterscotch Sauce (see note)",
+    "6 oz unsalted butter (melted)",
+    "6 oz granulated sugar (¾ cup)",
+    "8 oz brown sugar (1 cup)",
+    "3 large eggs",
+    "1 tablespoon vanilla extract",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "½ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

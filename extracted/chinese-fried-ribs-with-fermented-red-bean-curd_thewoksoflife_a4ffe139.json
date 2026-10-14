@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chinese Fried Ribs with Fermented Red Bean Curd",
+    "time": "2 hr 35 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "320",
+      "carbohydrateContent": "6",
+      "fatContent": "26",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Place your pork rib pieces into a large bowl. Add the red fermented bean curd, white pepper, sesame oil, five spice powder, Shaoxing wine, soy sauce, maple syrup, garlic powder, onion powder, and baking soda—everything except the cornstarch and frying oil.",
+      "Using your hands, work the mixture into the pork ribs until they are well coated. Marinate anywhere from 2 hours to overnight.",
+      "If you refrigerate the pork ribs overnight, let them come up to room temperature before cooking. When you’re ready to fry, pour 3 or more cups of peanut or vegetable oil into a small to medium pot—enough so you have 2-3 inches of oil. Heat your frying oil to 300 degrees F/150 degrees C. It’s best to use a kitchen thermometer to monitor the oil temperature before and during the frying process.",
+      "When the marinated ribs are at room temperature and while your oil is heating, toss the ribs once more to redistribute the marinade, as there may be liquid that has pooled. Make sure everything is well-combined. Next, add the cornstarch to the ribs and mix until a paste forms that evenly coats the ribs.",
+      "When the oil reaches frying temperature—either via your thermometer, or when a rib dipped in the oil sizzles strongly—deep fry the pork ribs in small batches, about 4-6 pieces at a time. Use a slotted spoon to separate them as soon as you place them in the oil to avoid sticking and ensure even cooking.",
+      "Turn up the heat once you drop in the ribs, as the oil will cool. As you fry, continue to adjust the heat lower or higher as needed to maintain temperature. The pork ribs should fry fairly quickly, about 5-7 minutes.",
+      "When they’re cooked, they’ll be a light maroon color and should be crisp all around. Transfer to a paper towel using a slotted spoon. When all the ribs are fried, serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Ribs",
+        "unit": "lb",
+        "notes": "either baby back pork ribs cut in half or country ribs cut into 1- to 2-inch nuggets",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Red Fermented Bean Curd",
+        "unit": "large",
+        "notes": "about 1 tablespoon, .85 ounces or 25g, along with 1 teaspoon of the sauce from the jar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "can substitute honey or 2 teaspoons sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": "or potato starch, 30g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": "or peanut oil, for frying",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7d62292123933b10399de3ebf383d3b61d7b07b48942f084b880f5941ea04a8",
+    "lineage_hash": "2a7ef2993d5ce3b11d1c6d6045d7deadc03214b462640d1e256bf5ac5fac7b58"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/fried-chinese-spareribs/",
+    "fetchedAt": "2026-08-02T09:00:42.562Z"
+  },
+  "rawSource": "https://thewoksoflife.com/fried-chinese-spareribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

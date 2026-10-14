@@ -1,0 +1,48 @@
+{
+  "url": "https://www.chopstickchronicles.com/brown-rice-quinoa-porridge/",
+  "slug": "brown-rice-quinoa-porridge-chopstick-chronicles_chopstickchronicles_8da69e22",
+  "title": "Brown Rice & Quinoa Porridge 玄米とキヌアのお粥 - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T20:26:50.989Z",
+  "ldName": "Brown Rice & Quinoa Porridge 玄米とキヌアのお粥",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 people"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "#brown rice and quinoa porridge, #brown rice porridge",
+  "ldIngredientsRaw": [
+    "2/3  cup cooked brown rice and quinoa",
+    "2/3 cup soy or almond milk",
+    "1 tsp Natvia",
+    "1 pinch cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "Put all ingredients in a sauce pan and bring to boil.",
+    "Reduce the heat to low and simmer for about 5 minutes.",
+    "Top with blueberries, raspberries, flaked almonds and rice malt syrup."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "241 kcal",
+    "carbohydrateContent": "48 g",
+    "proteinContent": "5 g",
+    "fatContent": "2 g",
+    "sodiumContent": "110 mg",
+    "fiberContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2/3  cup cooked brown rice and quinoa",
+    "▢ 2/3 cup soy or almond milk",
+    "▢ 1 tsp Natvia",
+    "▢ 1 pinch cinnamon"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

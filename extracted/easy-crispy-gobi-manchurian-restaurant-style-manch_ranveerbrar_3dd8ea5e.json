@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Crispy Gobi Manchurian (Restaurant style Manchurian)",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add cauliflower, salt, corn-starch and mix it properly.",
+      "Meanwhile heat oil for frying in a kadai.",
+      "Then add these coated cauliflower in the prepared batter and deep fry in medium hot oil until golden brown and crispy.",
+      "Remove on an absorbent paper and keep aside for further use.",
+      "In a bowl add ginger-garlic paste, salt, refined flour, corn-starch or arrowroot, black pepper powder, degi red chilli powder, water and mix to make flowy thick batter.",
+      "In a wok or kadai heat oil and add ginger, garlic saute for a minute.",
+      "Now add onion, capsicum, green chillies, celery and saute for 2 minutes.",
+      "Then add soya sauce, tomato ketchup, water, coriander leaves, spring onion saute once and add corn-starch slurry mix and cook for semi thick sauce.",
+      "Now add the fried cauliflower in it and mix it once and serve hot or add the sauce in the serving plate and place the fried cauliflower on it and garnish with spring onion."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "medium",
+        "notes": "cut in florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch / Arrowroot",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tomato Ketchup",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch Slurry",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "602d719ae24285e07b5ab9a81ae4665c8b41d7ea2103172ac0ad95003099d61b",
+    "lineage_hash": "81adfaf1e13f7bf76506b64d0554e1c28df6052253a2ddd669d97e4b9a0a63e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/gobi-manchurian/",
+    "fetchedAt": "2026-08-01T22:38:41.151Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/gobi-manchurian/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

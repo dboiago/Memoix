@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Crema Gelato",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the milk and cream in a saucepan and gently heat to 45°C. Add the yolks and whisk well to combine",
+      "Add the rest of the ingredients and whisk out any lumps. Slowly bring up to 85°C and cook out for 5 minutes until it coats the back of a spoon (make sure you don't exceed 85°C or the eggs will scramble)",
+      "Transfer the gelato base to a bowl set over an ice bath and whisk until cool. Place in the freezer to chill for 2–3 hours, or overnight in the fridge, but make sure the mixture is still liquid before churning (the dextrose prevents the gelato base freezing as quickly)",
+      "Churn in your ice cream maker as per machine instructions"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "the best quality you can find",
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "the freshest you can find",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skimmed Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ab2bbea8929f682eb264c310262afaab0b539754704ced7aad61cd9e400073d",
+    "lineage_hash": "1e311db05d5e0da1bf1aa47543cfb1a2b3a7e4e06ee12bf742a9b7ad567dfdda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/crema-gelato-recipe",
+    "fetchedAt": "2026-08-02T00:25:18.330Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/crema-gelato-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

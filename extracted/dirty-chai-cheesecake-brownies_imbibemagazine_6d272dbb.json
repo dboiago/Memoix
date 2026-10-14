@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Dirty Chai Cheesecake Brownies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F (160°C). Grease a 9 × 13 (23 × 33 cm) pan and line with parchment paper.",
+      "Coffee CheesecakeIn a medium bowl, beat together the cream cheese and granulated sugar until smooth. Whisk in the egg, vanilla, instant coffee, and salt until well combined. Set aside.",
+      "BrowniesIn a small bowl, whisk together the flour, cocoa powder, and baking soda and set aside. In a saucepan, melt the butter over medium heat. Remove from the heat and stir in the dark chocolate until melted. Set aside to cool.",
+      "In a stand mixer fitted with the whisk, combine the eggs, granulated sugar, brown sugar, chai masala, salt, and vanilla. Whisk on high speed for 6 minutes until thick and glossy. Slowly pour in the chocolate/butter mixture and mix until well combined. Sift in the flour mixture and mix until all the dry ingredients are incorporated. Fold in the semisweet chocolate chips until just combined.",
+      "Spoon half the batter into the baking pan and use an offset spatula to spread it into an even layer. Add dollops of each batter on top and use a knife to swirl the two batters. Tap the pan on the counter four or five times to get rid of any air bubbles and to level out the batter.",
+      "Bake until the center is set and a toothpick inserted into the center comes out with a few crumbs, 30 to 35 minutes. Cool the brownies for 1 hour and then refrigerate for at least 4 hours before serving.",
+      "To decorate, dip a fluffy brush, like a blush brush, into gold luster dust and tap the brush with your hand over the cooled brownies.",
+      "Make It EgglessFor the cheesecake batter, use 3 Tbsp. of heavy cream or whole milk whisked with 1/2 tsp. of cornstarch. Substitute 1/2 cup aquafaba and add an additional 1/2 tsp. of baking soda for the brownie batter.",
+      "Chai MasalaIn a bowl, whisk 3 Tbsp. of ground cardamom, 2 Tbsp. of ground ginger, 4 1/2 tsp. of ground cinnamon, 3/4 tsp. of ground cloves, 3/4 tsp. of ground anise seeds, 3/4 tsp. of ground fennel, and 1/2 tsp. of ground nutmeg until well combined. Store in an airtight container for up to 6 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": "alt: espresso powder",
+        "amount": "1¼",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coffee Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "C",
+        "notes": "about 72% cacao, finely chopped",
+        "amount": "½",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "10",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Chai Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Gold Luster Dust",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4d7ccc893819840b0403f7ccc71ae81ad43174fbf576d64347be4750328093c",
+    "lineage_hash": "157ffedf1bd42346d8fb86507141e1f22bcde238b05ea17f91c592a24e4bd3b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dirty-chai-cheesecake-brownies/",
+    "fetchedAt": "2026-08-04T00:01:37.338Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dirty-chai-cheesecake-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

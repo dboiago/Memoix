@@ -1,0 +1,225 @@
+{
+  "recipe": {
+    "name": "Dakgalbi (Stir-fried Spicy Chicken)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the rice cakes in cold water for about 20 minutes.",
+      "Mix all the sauce ingredients well in a bowl.",
+      "Cut the chicken into bite size pieces.",
+      "Combine the chicken pieces with the sauce (reserving one tablespoon if you’re going to make fried rice at the end) and marinate while preparing vegetables.",
+      "Cut the sweet potato in half lengthwise and then thinly slice crosswise and slightly diagonally. Cut the cabbage, kkaennip, and scallion into small pieces.",
+      "Heat a pan  over medium high heat. You can add a tablespoon of oil if you want, but it should not be necessary. Add the chicken, sweet potatoes, rice cakes, and cabbages. Cook for 5 minutes, stirring occasionally. Lower the heat if the ingredients (especially the rice cakes) stick to the pan and browns too fast. The steam from the vegetables should keep them from sticking to the pan, but you can also add about 1/4 cup of water.",
+      "Add the kkaennip and scallion and cook for another 3 to 4 minutes until the rice cake and the sweet potato pieces turn soft. By then the chicken should be cooked through as well. If using cheese, you can add it in this step with 2 to 3 minutes remaining."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "And Skinless Chicken Thighs",
+        "unit": "lb",
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cabbage",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Sweet Potato (goguma 고구마)",
+        "unit": "small",
+        "notes": "about 6 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tteokbokki Tteok 떡볶기 떡 (10 to 12 Pieces)",
+        "unit": "oz",
+        "notes": "rice cakes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kkaennip (깻잎)",
+        "unit": null,
+        "notes": "perilla leaves",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese (mozzarella, Pizza Blend, Etc.)",
+        "unit": "C",
+        "notes": "alt: more to taste -- optional, shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green or Red Leaf Lettuce and Ssamjang - Optional See Note",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "Tbsp",
+        "notes": "고추가루  Use 1 to 1.5 TBS for less spicy dish",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Curry Powder 카레가루 Powder Form of Curry Sauce Mix",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Corn",
+        "unit": "Tbsp",
+        "notes": "alt: oligo syrup, or more sugar",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "고추장",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Servings Cooked Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Optional fried rice",
+        "isOptional": false
+      },
+      {
+        "name": "Dak Galbi Sauce Reserved",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional fried rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional fried rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Roasted Gim (김)",
+        "unit": null,
+        "notes": "dried seaweed sheet",
+        "amount": "1",
+        "section": "Optional fried rice",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Optional fried rice",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c26ce7ce2239b2a6b6f5c7e315f94439bc61e1ca3697d58adb95f8391f158cf",
+    "lineage_hash": "1c8a51a4da81d21ae1679df33d0ef22f93132df16d71aec910d16a0b04531200"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dak-galbi/",
+    "fetchedAt": "2026-08-01T23:02:45.201Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dak-galbi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

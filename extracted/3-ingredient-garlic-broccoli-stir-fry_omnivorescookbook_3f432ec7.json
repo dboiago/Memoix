@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "3-Ingredient Garlic Broccoli Stir Fry",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a large heavy-duty skillet until hot. Add oil. Swirl to coat the bottom. Add garlic and broccoli, and sprinkle with salt. Cook and stir to coat broccoli with oil.",
+      "Add chicken stock. Cover and cook for 1 minute, or until the broccoli reaches your desired doneness. Turn to low heat and carefully taste the broccoli. Adjust seasoning by adding more salt, or cover to cook a bit longer if necessary.",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Head Broccoli",
+        "unit": null,
+        "notes": "separated into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "375476df836f18410965e7e6e61206fd15268c83c29df226b16033ed9eaa5e9b",
+    "lineage_hash": "50c406c4a382f4c6f5c578d11bb0bee5535198896bbc163ad6f1e8149bc4db72"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/garlic-broccoli-stir-fry/",
+    "fetchedAt": "2026-08-01T15:58:26.139Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/garlic-broccoli-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

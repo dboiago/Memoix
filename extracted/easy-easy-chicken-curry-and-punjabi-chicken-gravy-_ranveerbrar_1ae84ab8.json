@@ -1,0 +1,243 @@
+{
+  "recipe": {
+    "name": "Chicken Curry and Punjabi Chicken Gravy",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add chicken, yogurt, salt, green chillies, turmeric powder, red chilli powder, coriander powder, cardamom powder and cloves. Mix well. Set aside to marinate for 15-20 minutes.",
+      "Heat ghee in a pan, add some oil as well. Add black cardamom, bay leaves, cumin seeds and cloves. Saute till fragrant.",
+      "Add ginger and garlic, saute till fragrant. Add onions and saute till they turn brown.",
+      "Add turmeric powder and roast for 2 minutes. Add salt and mix well. Add coriander powder and roast for 2 minutes.",
+      "Add chilli powder, mix well and roast for 2 minutes. Add some water, mix well and cook for a few minutes.",
+      "Add the tomatoes, mix well. Cover and cook till tomatoes leave their oil.",
+      "Add the marinated chicken and mix well. Cook till ghee starts floating on top.",
+      "Add some water, mix well. Cover and cook till the chicken is done.",
+      "Garnish with coriander and serve hot with rice or roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "on bone, curry cut",
+        "amount": "750",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2-3",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly crushed",
+        "amount": "6-7",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "5-6",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "1",
+        "section": "For Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8997f7f0318e3a7202bedeb5c42310e60f5475cf22011c870db486b2107866c0",
+    "lineage_hash": "bfc3472617c0d49c04f00840f4d09f0343e2a967ced91b38ccb116dd0b458162"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-curry/",
+    "fetchedAt": "2026-08-02T04:17:46.436Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

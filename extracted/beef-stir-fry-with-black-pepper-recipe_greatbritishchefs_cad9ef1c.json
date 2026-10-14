@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Beef Stir-Fry with Black Pepper",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the black pepper sauce. Whisk together the butter, ketchup, Worcestershire sauce, sugar, Maggi and black pepper in a small saucepan. Heat gently until incorporated then set aside until required",
+      "Heat a dash of oil in a wok and fry the beef quickly on a high heat until coloured on the outside – the beef should still be pink inside. Remove from the pan and leave to rest",
+      "Add the onion, spring onion and garlic to the wok and cook until browned. Return the beef to the wok and add the black pepper sauce and red wine. Bring to the boil, cook until sticky then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": "cut into 2.5cm cubes",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "thickly sliced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": "preferably Merlot",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Seasoning Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "095fa85de880161114651b101fdfb31ab1a449995453271c2994243faafc8f77",
+    "lineage_hash": "03a32f4d0badd70e079729043e93a9aae48fa6ae3a424bc394a34bacc403ce1b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/stir-fried-black-pepper-beef-recipe",
+    "fetchedAt": "2026-08-03T15:48:33.823Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/stir-fried-black-pepper-beef-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Doom Bar Collins",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Tall",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Beer",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the gin, lemon juice and sugar syrup to a cocktail shaker, add ice and shake hard for 6 seconds",
+      "Strain the cocktail into a tall glass filled with ice. Top up with Doom Bar and garnish with a twist of lemon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": "ideally Tarquin's The Hopster Gin",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sharps Doom Bar Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Twist of Lemon Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2af7af8c96d7d3b2f9e44cc95d5ae1a4150b99400a239eada81a37523dc74c00",
+    "lineage_hash": "3dc86522eca37196c6aa8ee01f21ddfb6763705189dc4ba52e29bd56f856b357"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/doom-bar-collins-recipe",
+    "fetchedAt": "2026-08-02T20:26:02.755Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/doom-bar-collins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

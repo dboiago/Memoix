@@ -1,0 +1,55 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/cucumber-dill-salad/",
+  "slug": "cucumber-dill-salad-easy-crunchy-vinegar-based_itdoesnttastelikechicken_91ab7bb4",
+  "title": "Cucumber Dill Salad (Easy, Crunchy & Vinegar-Based)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T09:44:24.341Z",
+  "ldName": "Cucumber Dill Salad (Easy, Crunchy &amp; Vinegar-Based)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Mediterranean",
+  "ldCategory": "Salad, Side Dish",
+  "ldKeywords": "cucumber, cucumber onion salad, cucumber salad, cucumber salad with vinegar, dill cucumber salad, potluck sidedish, summer salad, vinegar cucumber salad",
+  "ldIngredientsRaw": [
+    "2  English cucumbers (thinly sliced)",
+    "1/2 small red onion (very thinly sliced)",
+    "3 tablespoons fresh dill (finely chopped)",
+    "4 tablespoons rice vinegar (or white wine vinegar)",
+    "1 tablespoon maple syrup (or sugar)",
+    "3/4 teaspoon salt (plus more to taste)",
+    "Freshly ground black pepper (to taste (I like lots))"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the salad: In the bottom of a large bowl, whisk the vinegar, maple syrup, salt, and pepper. Add the cucumber, red onion, and dill, and toss very well until everything is evenly coated.",
+    "Chill (optional but recommended): For best flavor, let the salad rest in the fridge for 10–20 minutes before serving. Toss again, taste, and add more salt and pepper if needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "calories": "45 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.1 g",
+    "sodiumContent": "441 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "0.11 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 English cucumbers, thinly sliced",
+    "▢ ½ small red onion, very thinly sliced",
+    "▢ 3 tablespoons fresh dill, finely chopped",
+    "▢ 4 tablespoons rice vinegar, or white wine vinegar",
+    "▢ 1 tablespoon maple syrup, or sugar",
+    "▢ ¾ teaspoon salt, plus more to taste",
+    "▢ Freshly ground black pepper, to taste (I like lots)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

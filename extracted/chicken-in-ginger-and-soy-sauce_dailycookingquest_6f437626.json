@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chicken in Ginger and Soy Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a skillet and stir fry ginger, garlic, scallion, and cilantro until fragrant, about 2-3 minutes.",
+      "Add chicken pieces and stir fry until no longer pink.",
+      "Add kecap manis, light soy sauce, sugar, and water and mix well.",
+      "Bring to a boil, then cover with a lid and simmer for 20 minutes.",
+      "Remove the lid and cook until liquid is reduced by half.",
+      "Add salt if needed, transfer to a serving plate, garnish with some chopped scallion, and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "cut into 8 pieces, or use 8 drumsticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inches",
+        "notes": "peeled and cut into match sticks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "reserve some for garnish, chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "bunch",
+        "notes": "~ 1 cup, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kecap Manis",
+        "unit": "Tbsp",
+        "notes": "Indonesian sweet soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f089088dbf3dd9b6adc4901ba586ab77fdeb2669d6267e69fc19be1f9c334e6",
+    "lineage_hash": "5c343e4cc9fc89479a88f0631c13c4fa64a329c7316604dce73ad5b37097d004"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-in-ginger-and-soy-sauce.html",
+    "fetchedAt": "2026-08-02T00:12:57.631Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-in-ginger-and-soy-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

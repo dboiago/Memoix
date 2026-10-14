@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Black Sesame Snowball Cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the sesame seeds in a dry saute pan over medium heat, stirring constantly. Listen for the popping. Once the popping is fast and quite aggressive, let them continue to pop for another 15 seconds and remove from heat.",
+      "Grind the sesame seeds using a coffee grinder by pulsing and shaking the grinder frequently until they are finely ground. Be careful not to over grind them as they will start releasing the oil and become wet and clumpy.",
+      "In the bowl of a stand mixer fitted with the paddle attachment, cream butter on medium speed until light and fluffy; 2 minutes, scraping the sides once in between.",
+      "Sift the Redpath® Icing Sugar into the creamed butter and beat on medium-low speed until smooth and pale in colour, scraping once in between.",
+      "Whisk together the flour, cornstarch, salt, ground sesame seeds and chopped cashews until thoroughly combined.",
+      "Add half of the dry ingredients into the mixer bowl and blend on low until just combined. Add the other half of the dry ingredients and mixed until just combined. Transfer into a bowl, cover and chill in the fridge for 30 minutes.",
+      "While the dough is chilling, preheat oven to 325°F (163°C). Line a large baking sheet with parchment paper.",
+      "Using a small ice cream scoop (I use one that has a 10mL/2 tsp capacity) and scoop even-sized balls of dough. Roll the dough into balls, using the warmth of your hands to help shape the dough, and put them on a plate or container (you can stack them at this point). Place into the fridge to chill until firm; 20 minutes.",
+      "Place cookies onto the prepared baking sheet, about 2 inches apart, and bake for 15 to 18 minutes, until bottoms are light golden in colour.",
+      "Allow to cool slightly on pan; 5 to 10 minutes. Meanwhile, prepare the icing sugar for coating in a shallow dish.",
+      "Gently roll the still-warm cookies in the Redpath® Icing Sugar. Place onto a wire cooling rack to cool completely.",
+      "Roll or dust the completely cooled cookies again with icing sugar and they’re ready to be enjoyed! Cookies can be kept in an airtight container at room temperature for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "227g, unsalted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redpath Icing Sugar",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": "25g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "C",
+        "notes": "75g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Roasted Cashews",
+        "unit": "C",
+        "notes": "35g, or sub another nut of your choice, finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "½ Cups (120g - 180g) Redpath Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1-1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6baa28cfe0754e23cc2857a9ac505a56db76622008a9f5e4c96529c4df90b0e8",
+    "lineage_hash": "c865fe95da1651dbf9264593f79a149bb374b49bb73d93eec478c2a45fa4e9f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/black-sesame-snowball-cookies/",
+    "fetchedAt": "2026-08-02T05:13:33.530Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/black-sesame-snowball-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,7 @@
+I have this habit of snacking in between meals, and am always on the lookout for something easy to whip up. Most of the time laziness gets the better of me and I end up chewing on leftovers from the previous night or opening a bag of crisps. Needless to say, this snacking has not been too kind on my hips.
+
+On days when I'm enthusiastic – mostly when the husband works from home so I have an extra mouth to feed – I almost always make something from scratch, but nothing that would take a lot of time. Quesadillas are my favourite for this kind of indulgence and I have quite a collection of mix and match fillings for them.
+
+[Chorizo](https://www.greatbritishchefs.com/collections/chorizo-recipes) and spinach, I feel, is a brilliant match. They work perfectly well in pastas, soups, tarts and as fillings for sandwiches and wraps. Pair it with a unique and flavourful cheese like the classic [Le Gruyère AOP](https://www.greatbritishchefs.com/collections/gruyere-recipes), and it’s even better. Instead of grating, slice the cheese into small cubes if you want a more prominent flavour and an obvious bite in every mouthful.
+
+For even more cheesy indulgence, add a generous amount of grated Gruyère on top of the quesadilla and place under a preheated grill for a cheesy, melty, delicious finish. You won't regret it.

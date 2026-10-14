@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Chocolate Scones",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the tangerine fool, place a saucepan over a low heat and gently cook the peeled tangerines with the sugar and orange juice",
+      "Once the tangerines begin to soften, remove the pan from the heat",
+      "Using a hand blender, blitz the cooked tangerines into a smooth pulp. Set aside to cool",
+      "Whip the cream to soft peak stage and then gently fold in the cold tangerine pulp",
+      "Place the tangerine fool in a bowl and store in the fridge until needed",
+      "For the scones, sieve the flour, baking powder and cocoa powder into a bowl. Add the sugar and rub in the butter until the mix resembles fine breadcrumbs",
+      "A little at a time, add the cream and gently work the mix with your hands until a dough forms - you may not need to add all of the cream",
+      "Wrap the chocolate mixture in cling film and rest in the fridge for 2 hours",
+      "Once the dough has rested, roll out on a lightly floured surface to approximately 1/2cm thick",
+      "Use a round 6cm cutter to cut out the chocolate scones, being careful not to twist the cutter or the circles will be wonky",
+      "Place the circles on a greased baking tray, cover with a tea towel and leave to rest in a warm place for 1 hour",
+      "Bake the chocolate scones for 9 minutes. Then, remove from the oven and allow to cool, dusting lightly with icing sugar",
+      "Serve the scones with the tangerine fool - you can slice the scones in half and spoon some of the fool in between, if preferred"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tangerine",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1cd52cf2bcc83e7ff9cd873ea0f22600675f30f301d5a2336b728667e4f9fb4f",
+    "lineage_hash": "5876179a525a2868ef1b65da6a01c268f88fd11df030cc726432e7e13ae11baa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/tangerine-fool-scone-recipe",
+    "fetchedAt": "2026-08-03T17:11:32.674Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/tangerine-fool-scone-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

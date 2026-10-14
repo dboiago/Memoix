@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Assorted Pakoda",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In mixing bowl add all the batter ingredients except water and mix well.",
+      "Now add in water slowly and keep mixing; make sure youâll get thick consistency.",
+      "Now dip vegetables in batches and deep fry them in hot oil until they turn crisp.",
+      "Remove on absorbent paper and serve hot immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "florets, blanched",
+        "amount": "200",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Big Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves/palak",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Eggplants",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "8-10",
+        "section": "Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour/besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder/ Dhania Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seed Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds/ Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "handful",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required (to make thick batter)",
+        "amount": "0",
+        "section": "Pakoda Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "895ac4010b819b0aac83bdd9e2e4c4c84b6ceb026be0e07cf1c2cd131bfe692e",
+    "lineage_hash": "a7dbaa30bf913d22ee17e04b9d6b0a74518c92aa5260aebb3a08dfa8008e1f8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/assorted-pakoda/",
+    "fetchedAt": "2026-08-02T10:27:47.910Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/assorted-pakoda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

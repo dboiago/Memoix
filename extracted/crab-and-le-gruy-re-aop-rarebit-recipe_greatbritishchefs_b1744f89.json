@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Crab and Le Gruyère AOP Rarebit",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the butter in a saucepan and gently melt. Meanwhile, pour the milk and beer into a separate saucepan and gently bring to just below the boil",
+      "Once the butter has melted, gradually add the flour, stirring constantly with a wooden spoon to create a roux. Once well incorporated, slowly add the milk and beer mixture to the roux, stirring continuously to get rid of any lumps. When all the milk and beer has been incorporated, continue cooking and stirring for a few minutes to cook out the raw flour taste",
+      "Add the mustard, Worcestershire sauce, brown crab meat, Gruyère and egg yolk, stirring thoroughly to combine. Season to taste and set aside",
+      "When ready to serve, preheat a grill to high. Toast the bread on both sides, then spread a liberal amount of the rarebit mixture on top of each slice. Return to the grill for a few minutes until golden and beginning to brown on top",
+      "Dress the white crab meat in lemon juice, olive oil and a little salt, then spoon on top of the rarebit. Garnish with flowers and herbs and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ale",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough",
+        "unit": "slices",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked but kept in large chunks where possible",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "top quality",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": null,
+        "notes": "shaved or cut into neat triangles, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic Flowers",
+        "unit": null,
+        "notes": "and/or sea herbs, to garnish (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0433c56f337a63c2c7403218fa54a91d939ab84bead37ff73e7f9f1236c91ba7",
+    "lineage_hash": "3857398b81eeb9a34e1b93f90bcacac070d6e982399f7f77898c302597853d1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-gruyere-rarebit-recipe",
+    "fetchedAt": "2026-08-02T22:06:50.727Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-gruyere-rarebit-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

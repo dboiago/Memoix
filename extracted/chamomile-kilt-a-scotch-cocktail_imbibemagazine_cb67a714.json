@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chamomile Kilt",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the lemon in a shaker tin. Add the Scotch, chamomile syrup, and mint leaves, fill with ice, and shake until chilled. Double-strain into a glass filled with ice, garnish, and serve.",
+      "Chamomile Simple Syrup Combine the sugar and tea in a saucepan and bring to a simmer over medium-high heat. As soon as the sugar is dissolved, remove from the heat and allow to cool. Transfer to a nonreactive container and store airtight in the fridge for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Speyside Single Malt Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chamomile Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or 4 Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Part Chamomile Simple Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Part White Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Part Freshly Brewed Chamomile Tea",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64878b8519c9dc0876c162d878aec93b1e47c3cca209e38fd87e97ceb4188063",
+    "lineage_hash": "adf488d407f86b2d86d17fe3f71428602d1eb7a727f72f10efb6e0de0c426b54"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chamomile-kilt-a-scotch-cocktail/",
+    "fetchedAt": "2026-08-03T21:25:13.513Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chamomile-kilt-a-scotch-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

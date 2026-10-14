@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Classic Pimm's Cup",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cup",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the Pimm’s and lemon juice into an ice-filled glass, top with ginger ale, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pimm's No. 1",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Ale",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f66324c534a77c1bf26ae61d1f91685bc0324db6afec6990a32302d657662ed",
+    "lineage_hash": "7a588d961f5ec74bdc2f7cc7033bc9873eda6fe777510258f21a3d502b7ae7e5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-classic-pimm-s-cup/",
+    "fetchedAt": "2026-08-03T18:57:57.789Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-classic-pimm-s-cup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

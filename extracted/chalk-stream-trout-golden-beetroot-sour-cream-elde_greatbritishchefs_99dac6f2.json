@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Chalk Stream Trout, Golden Beetroot, Sour Cream, Elderflower",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the salt, sugar and lemon zest",
+      "Take a large piece of cling film, and cover with half of the salt and sugar mixture. Top with the trout, and then add the other half of the salt and sugar mixture to the top of the trout. Fold over the cling film, making sure the fillet is completely covered in the salt and sugar",
+      "Transfer the fish to the fridge, and leave to cure for 5 hours",
+      "Once cured, remove the trout from the fridge, and wash off the salt and sugar",
+      "Transfer to a tray and leave overnight in the fridge, covered with a cloth",
+      "Next prepare the pickled beetroot, which also needs to be left overnight. Slice the beetroot very thinly, and cut out into shapes, using a flower cutter if you have one",
+      "Mix together the remaining pickle ingredients, and add the beetroot. Leave to pickle overnight",
+      "For the beetroot sauce, simply mix together all of the ingredients, and then transfer to the fridge to chill",
+      "The next day, smoke the cured trout over smoking chips until done to your liking – this will depend on the size of your fillets",
+      "Mix together the olive oil and roe with 250g beetroot sauce",
+      "To plate, add some of the beetroot sauce to the plate. Add the trout and garnish with pickled beetroot, roe, borage and violas"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Trout Fillet",
+        "unit": "g",
+        "notes": "skin, bones and bloodline removed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "from 1 lemon",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beetroot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": "gluten-free",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trout Roe",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Borage",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Viola Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afacacdcd62e52f70e724410831809cf2874c8c41dfb8562689d45e18cb4df43",
+    "lineage_hash": "897586374ed06b19cb823cc451ab9c09354df983fccaafbc1b3bdffc9217439a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/trout-golden-beetroot-sour-cream-elderflower-recipe",
+    "fetchedAt": "2026-08-02T11:39:13.015Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/trout-golden-beetroot-sour-cream-elderflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

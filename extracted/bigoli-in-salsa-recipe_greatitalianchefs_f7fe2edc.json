@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Bigoli In Salsa",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour some of the oil from the anchovies into a non-stick frying pan and gently fry the onions until soft",
+      "Meanwhile, cook the bigoli in a pan of salted boiling water for 8–10 minutes, or as per packet instructions",
+      "Add the wine to the onions with a splash of water and reduce by three quarters",
+      "Add the anchovies and stir until they dissolve",
+      "Drain the pasta then add to the frying pan. Toss to coat evenly in the anchovies and onions and serve immediately with a sprinkle of chopped parsley and some cracked black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": "g",
+        "notes": "in oil",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bigoli Pasta",
+        "unit": "g",
+        "notes": "wholewheat if you can find it",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55de910683f5b332b3381b8d92d9f556d6097280325a884478c475acb23da1a5",
+    "lineage_hash": "c048f4d84ba6997cfd6783ab6d3ec3e6b20a07a3b232f91b46522af85126e499"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/bigoli-in-salsa-recipe",
+    "fetchedAt": "2026-08-01T21:04:53.089Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/bigoli-in-salsa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

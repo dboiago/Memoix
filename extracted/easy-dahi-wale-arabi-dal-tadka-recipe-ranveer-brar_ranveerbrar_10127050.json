@@ -1,0 +1,257 @@
+{
+  "recipe": {
+    "name": "Dahi Wale Arabi & Dal Tadka",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat mustard oil in a kadai, add arabi roots and fry until nice crispy and golden in color.",
+      "Remove on absorbent paper.",
+      "In a bowl, add curd, turmeric powder, red chilli powder and coriander powder mix well.",
+      "Add little water, gram flour and whisk it properly.",
+      "Remove the extra oil from the kadai and let it heat remaining oil, add mustard seeds, curry leaves and let it splutter.",
+      "Add green chilli, ginger saute well.",
+      "Add prepared curd mixture and mix it well.",
+      "Add salt to taste, tomato, fried arabi and mix everything well and let it cook for 2 to 4 minutes.",
+      "Heat mustard oil in a pan, add dry red chillies and asafoetida.",
+      "Pour the tadka over the gravy and mix well.",
+      "Garnish with some coriander leaves and serve hot with roti.",
+      "Heat oil in a kadai, add cumin seeds, asafoetida, garlic and saute well.",
+      "Add cooked toor dal and mix well and cook for 2 minutes.",
+      "Garnish with chopped coriander leaves and mix well.",
+      "Serve hot with steam rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For frying arabi",
+        "isOptional": false
+      },
+      {
+        "name": "Arabi Roots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "10-12",
+        "section": "For frying arabi",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": "besan",
+        "amount": "1",
+        "section": "For curd mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2-3",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cut in 8 pieces",
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Arabi",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For second tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For second tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For second tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "12-15",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Toor Dal",
+        "unit": "C",
+        "notes": "Cookedl",
+        "amount": "2",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Dal Tadka",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ce9b8a7d87538f33e39aa703df143bd21cc5ababe19781111fee4143f3f42be",
+    "lineage_hash": "3d7e0802994452ed069de5ef09b4a8e95298af017ab1ff4df64bb76b32556d47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-wale-arabi-dal-tadka/",
+    "fetchedAt": "2026-08-01T22:40:31.264Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-wale-arabi-dal-tadka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

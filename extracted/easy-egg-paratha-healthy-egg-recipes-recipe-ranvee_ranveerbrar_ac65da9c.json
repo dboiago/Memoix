@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Easy Egg Paratha (अंडे का पराठा)",
+    "time": "20-25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add all the ingredients and knead a semi soft dough.",
+      "In a bowl, add all the ingredients and mix well and set aside.",
+      "Take a portion from the dough and roll it out.",
+      "Then roast it from both sides half way through. Now set it aside and heat oil in the same pan and pour the egg mixture and spread it around.",
+      "Place the half cooked paratha on it then flip it and cook from both sides until cooked properly.",
+      "Remove and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Making Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Making Egg Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19008ce1bc55aa25c669a5d4f94b380ff4d57d18dc3d05a39c66c62434e509cb",
+    "lineage_hash": "46801abbffa8bdb503802a91ea963162af6aa7332ebefac13574841ca7e4b0d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-paratha-healthy-egg-recipes/",
+    "fetchedAt": "2026-08-01T21:27:48.676Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-paratha-healthy-egg-recipes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

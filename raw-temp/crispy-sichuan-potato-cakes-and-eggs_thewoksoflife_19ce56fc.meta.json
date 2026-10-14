@@ -1,0 +1,69 @@
+{
+  "url": "https://thewoksoflife.com/sichuan-potato-cakes-eggs/",
+  "slug": "crispy-sichuan-potato-cakes-and-eggs_thewoksoflife_19ce56fc",
+  "title": "Crispy “Sichuan” Potato Cakes and Eggs",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-01T22:14:07.319Z",
+  "ldName": "Crispy “Sichuan” Hashbrowns and Eggs",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese American Fusion",
+  "ldCategory": "Breakfast and Brunch",
+  "ldKeywords": "hashbrowns",
+  "ldIngredientsRaw": [
+    "1  large russet potato ((peeled))",
+    "¼ teaspoon crushed red pepper flakes",
+    "1/2 teaspoon salt",
+    "⅛ teaspoon pepper",
+    "1  scallion ((julienned))",
+    "2 cloves garlic ((minced))",
+    "1 teaspoon ginger ((minced))",
+    "1 teaspoon soy sauce",
+    "1 teaspoon rice vinegar",
+    "4  eggs ((plus 1 for the potato mixture))",
+    "¼ cup vegetable oil ((plus more as needed))",
+    "2 teaspoons Sichuan peppercorns"
+  ],
+  "ldInstructionsRaw": [
+    "Using a food processor with a coarse grating disc or a regular box grater, grate the potatoes. Place the grated potato in the middle of a clean dish towel, wrap it up, and squeeze out as much liquid from the shredded potatoes as you can.",
+    "Transfer to a bowl, and toss with red pepper flakes, salt, pepper, scallions, garlic, ginger, soy sauce, rice vinegar, and 1 egg until thoroughly combined.",
+    "In a 12-inch skillet, heat the vegetable oil over medium heat. Add the sichuan peppercorns and allow them to toast in the oil for 10 minutes or so, until fragrant.",
+    "Use a slotted spoon to scoop out the peppercorns and discard. Turn up the heat to medium high. Divide the potatoes into four portions, and add to the pan, making 4 “pancakes.”",
+    "Use a spatula to press each into an even circle, and cook until the bottom is golden brown (5-8 minutes), shaking the pan frequently so the potatoes don’t stick and adding more oil as needed. Flip, and cook until the other side is golden brown.",
+    "Meanwhile cook the eggs sunny side up. Serve the eggs on top of the hashbrowns."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "466 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "14 g",
+    "fatContent": "36 g",
+    "saturatedFatContent": "25 g",
+    "cholesterolContent": "327 mg",
+    "sodiumContent": "886 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 large russet potato (peeled)",
+    "▢ ¼ teaspoon crushed red pepper flakes",
+    "▢ 1/2 teaspoon salt",
+    "▢ ⅛ teaspoon pepper",
+    "▢ 1 scallion (julienned)",
+    "▢ 2 cloves garlic (minced)",
+    "▢ 1 teaspoon ginger (minced)",
+    "▢ 1 teaspoon soy sauce",
+    "▢ 1 teaspoon rice vinegar",
+    "▢ 4 eggs (plus 1 for the potato mixture)",
+    "▢ ¼ cup vegetable oil (plus more as needed)",
+    "▢ 2 teaspoons Sichuan peppercorns"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Chocolate Passion Fruit Brioche Buns",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you want to bake these buns make the brioche and the pastry cream.",
+      "For the brioche place 20g of the flour and 80ml of the milk into a small butter pan and cook over medium heat, stirring with a small whisk or spatula, until the mixture cooks into a thick paste. Scrape into a small bowl and set aside for the moment.",
+      "In the bowl of a stand mixer add the remaining flour, salt and yeast and whisk to combine.",
+      "Add the sugar and lemon zest to a small bowl and use your fingers to rub together until the sugar resembles moist sand and you can smell the aroma from the lemon. Add this to the bowl along with the remaining milk and egg, and the cooked flour mixture.",
+      "With the dough hook attached mix on low speed until the mixture forms a shaggy dough. Continue mixing for 10-15 minutes or until the dough no longer sticks to the sides of the bowl.",
+      "Add the butter a little bit at time until all of it has been added. Continue mixing on low speed until the butter has been combined and the dough is once again no longer sticking to the sides of the bowl and has formed a ball of dough around the dough hook.",
+      "The finished dough should have a slight sheen and be stretchy and elastic. Scrape the dough onto the worksurface and form into a ball. Place into a bowl and cover with clingfilm and refrigerate overnight until ready to use (the dough can be stored in the fridge for a couple days before using).",
+      "To make the pastry cream place the passion fruit puree into a saucepan with half of the sugar. Place the pan over medium heat and bring to a simmer.",
+      "Meanwhile, in another bowl, mix together the remaining sugar and cornflour. Add the egg yolks and salt and whisk together until smooth.",
+      "When the puree is simmering pour over the yolk mixture, whisking as you pour to prevent the yolks from scrambling.",
+      "Pour the custard back into saucepan and place back over medium/high heat and cook, whisking constantly, until the custard comes to a boil and is thick.",
+      "Immediately scrape the custard into the bowl, add the butter and stir until fully combined. Press a sheet of clingfilm onto the surface of the custard and refrigerate until needed.",
+      "The custard can be stored in the fridge for 2-3 days before using.",
+      "On the day you want to bake the buns remove the dough from the fridge and divide into 8 equal sized pieces. Form the dough into neat round buns and place them on a large parchment lined baking tray.",
+      "Cover the buns lightly with clingfilm and set aside for about 60-90 minutes or until the buns have almost doubled in size.",
+      "Just before they have finished proofing preheat the oven to 200ºC (180ºC Fan). Lightly beat the remaining egg with a fork and brush each bun with the egg wash.",
+      "Bake in the preheated oven for about 15-20 minutes or until the buns are golden. Remove and set aside to cool.",
+      "For the pastry cream remove the bowl from the fridge and beat the custard until smooth and lump free.",
+      "In a separate bowl beat the cream and vanilla until it holds soft peaks. Add the cream to the custard and fold together until smooth and fully combined.",
+      "Using a skewer, poke a hole in the bottom of each bun. Scrape the custard into a piping bag fitted with a Bismarck piping tip (you can use whatever thin round piping tip you have but anything doughnut-like is much easier with a bismarck tip).",
+      "Pipe in as much custard as each bun will take before it squeezes out. Once filled the buns should feel a little heavy, if they feel light they need more custard.",
+      "For the glaze melt together the cream and chocolate until fully melted and a smooth ganache is formed. Scrape the ganache into a small bowl and whisk in the passion fruit puree.",
+      "Dip the buns into the glaze, allowing any excess to dip back into the bowl. Place back onto the baking tray and set aside until the glaze is set.",
+      "If you want to can decorate the buns, either with a little grated chocolate like Arome do with their buns, a little cocoa powder or a little freeze dried passion fruit powder as I did."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Fast Action Dried Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Plus One for Egg Wash Large Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "50",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Puree",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Passion Fruit Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "dark milk chocolate, something around 50% cocoa solids",
+        "amount": "50",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Puree",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f75d721e8e06f144939ae175813e4a3d0de5c2fda31a4d37c51d4bcf5948f72",
+    "lineage_hash": "c1c27619a710e7dd9dd68c4875da427ba22acc5290605bb350a3562f8fa3022e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/3/22/chocolate-passion-fruit-brioche-buns",
+    "fetchedAt": "2026-08-01T16:39:28.072Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/3/22/chocolate-passion-fruit-brioche-buns",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

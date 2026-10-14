@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Chikuzenni (Simmered Chicken and Vegetables)",
+    "time": "1 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "241",
+      "carbohydrateContent": "32",
+      "fatContent": "5",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Prepare vegetables (1-8): Cut and slice vegetables. Use the rangiri technique, which increases the surface area for better flavor absorption. For osechi ryori, try decorative cuts (see below). Soak lotus root, burdock root and satoimo in vinegar water to prevent discolouration.",
+      "Cut konnyaku (9): Use a spoon to scoop bite size pieces or turn them into twisted knots or ribbons (see below).",
+      "For the Chicken (9-10): Slice into larger bite size pieces and season with sake and soy sauce. Toss in potato starch and then cook in a pan with oil until the outside is no longer pink. Transfer to a plate.",
+      "Cook vegetables (11): Add your root vegetables and stir-fry to coat them in the oil.",
+      "Simmer (12-15): Add the soaking water from dried shiitake mushrooms, soy sauce, and mirin. Add the chicken back and bring to a simmer. Remove any scum. Cover with a otoshibuta (drop lid) and cover with a lid. Uncover and continue to simmer until reduced.",
+      "Chill (16-17): completely to allow the flavours to meld. In the meantime, blanch snow peas and flower carrots if using.",
+      "Finish cooking (18): Reheat and add mirin and soy sauce to make it glossy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "350 g",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": "or neutral oil of choice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms (160 G Rehydrated)",
+        "unit": "pcs",
+        "notes": "30 g, reserve soaking water, dried, soaked in 1 cup water overnight",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Renkon",
+        "unit": "medium",
+        "notes": "150-200 g, lotus root",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gobo",
+        "unit": null,
+        "notes": "100 g, burdock root",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Satoimo (taro)",
+        "unit": null,
+        "notes": "200-250 g",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "150 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Bamboo Shoot",
+        "unit": "pc",
+        "notes": "100 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block (125 G) Konnyaku",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Snap Peas",
+        "unit": null,
+        "notes": "ends removed and blanched in salted water",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": "or neutral oil of choice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Soaking Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "22.5-50 g, to taste",
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": "90 ml",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "45 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": "30 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5822a53040eea83f65d6bac4d7544b8d3ce188ce12dca0749e2f977a8dc179d9",
+    "lineage_hash": "fb9ec44cd1d096951251ec1bf8adefdb9449b67d79f1f8b2c2832a4341186704"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/chikuzenni-simmered-chicken-and-vegetables/",
+    "fetchedAt": "2026-09-26T00:59:03.895Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/chikuzenni-simmered-chicken-and-vegetables/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

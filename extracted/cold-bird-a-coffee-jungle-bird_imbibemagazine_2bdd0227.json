@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cold Bird",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Nutmeg"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all ingredients with ice, then strain into an ice-filled glass. Grate nutmeg over the top of the drink."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackstrap Rum",
+        "unit": "oz",
+        "notes": "Hudson Hill uses Cruzan",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": "Hudson Hill uses Flor de Caña 12-year",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Brew Coffee Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": "see link for recipe",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cacao",
+        "unit": "tsp",
+        "notes": "Hudson Hill uses Tempus Fugit",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saline Solution",
+        "unit": "drops",
+        "notes": "10:1 salt to water",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3da12b7ecf9e9575a7f29b37189304681fe2817a208956a42f43d62b7aa4662",
+    "lineage_hash": "32ba65900a15d7477f5c76f4fe283fc6dc0eb7dd00bcdb0939afe393973bfdaf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-bird-coffee-jungle-bird/",
+    "fetchedAt": "2026-08-03T20:45:41.331Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-bird-coffee-jungle-bird/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Corn Flakes Chocolate Chips Cookies",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Line 2 half-sheet pans (or cookie sheets) with parchment paper and set aside.",
+      "In a mixing bowl, beat together butter and confectioners sugar until pale and fluffy. Add egg and vanilla extract, beat again until well mixed. Add in flour, baking powder, and salt in 2-3 batches and beat until uniform.",
+      "With a spatula, fold in corn flakes and chocolate chips until the cookie dough looks uniform.",
+      "Use a medium-size cookie scoop (1 1/2 tablespoon), scoop out cookie dough and drop them on prepared baking sheet (or cookie sheet).",
+      "Bake in preheated oven for 20 minutes, or until golden brown. Remove from oven and cool completely on a wire rack before storing in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "1 stick, softened",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners Sugar",
+        "unit": "g",
+        "notes": "~ 2/3 cup",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "~ 1 1/4 cup",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flakes",
+        "unit": "g",
+        "notes": "~ 4 cup, lightly crushed",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "g",
+        "notes": "~ 1/3 cup",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3213f2d2977ac093ac93b3cbfc1054fd7253e0cdd366b03775cf2a41de816a81",
+    "lineage_hash": "a905bf508dad559273498cde0cd99cbb7c19c0799398ef2e037639b90508dc11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/corn-flakes-chocolate-chips-cookies.html",
+    "fetchedAt": "2026-08-02T02:06:22.821Z"
+  },
+  "rawSource": "https://dailycookingquest.com/corn-flakes-chocolate-chips-cookies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

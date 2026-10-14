@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/barbecue-bourbon-bloody-mary-recipe",
+  "slug": "barbecue-bourbon-bloody-mary-recipe_greatbritishchefs_8d324d40",
+  "title": "Barbecue Bourbon Bloody Mary Recipe",
+  "byline": "by Anna Hansen",
+  "fetchedAt": "2026-08-03T14:58:33.022Z",
+  "ldName": "Barbecue Bourbon Bloody Mary",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "25ml of bourbon whiskey, preferably Wild Turkey",
+    "25ml of vodka, preferably Ketel",
+    "150ml of tomato juice",
+    "20ml of barbecue sauce",
+    "3 dashes of Tabasco",
+    "1 pinch of salt",
+    "1 pinch of black pepper",
+    "1 celery stick, to garnish",
+    "1 slice of grilled bacon, to garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Add all of the ingredients (except the celery and bacon) to a cocktail shaker and shake to combine",
+    "Pour into a high ball tumbler to serve. Wrap the cooked bacon around the celery stick (you may need to secure it with a toothpick) and use to garnish"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

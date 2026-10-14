@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Curried Chicken With Mango Mayonnaise",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the curried chicken, combine the shallot, garlic, ginger, lemon grass, lemon juice, turmeric and garam masala in a liquidiser and blend thoroughly. Place the paste in a bowl and mix with the coconut milk, the yoghurt, chillies and coriander. Season with salt and pepper to taste",
+      "Cut each chicken breast lengthways into 3, place in the bowl and mix carefully. Make sure the chicken is well coated. Cover with cling film and chill in the fridge to marinate for as long as possible, preferably overnight",
+      "Place the chicken strips in a roasting tin and bake for about 15 minutes, turning them fairly frequently to ensure they are cooked right through",
+      "While the chicken is roasting, put the egg, vinegar and Dijon mustard in a food processor, season with salt and pepper and combine well. With the machine still running, slowly pour in the sunflower oil in a steady stream until the mixture has emulsified and thickened",
+      "Once you have added all the oil, mix in the lime zest and juice. Scrape the mayonnaise out of the food processor into a bowl. Fold the chopped mango flesh into the mayonnaise, taste and re-season if necessary",
+      "Serve the curried chicken hot or cold, with the mango mayonnaise and garnish with some baby watercress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skin on",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "seeds removed and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "finely grated zest and juice only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Watercress",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fabafab639dda1fb98daf999f4def603c8d342a9156240df87b54bf0b99fd89",
+    "lineage_hash": "01411bde2375b58767eda4dfb4adaa990e422397e83b7ccea1748b957819a162"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/lightly-curried-chicken-with-mango-mayonnaise",
+    "fetchedAt": "2026-08-03T22:06:42.834Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/lightly-curried-chicken-with-mango-mayonnaise",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

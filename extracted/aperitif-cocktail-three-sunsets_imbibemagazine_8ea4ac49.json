@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Three Sunsets",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients except rosé to a shaker with ice. Shake and then double strain into glass over fresh ice. Top with 2 oz. of brut sparkling rosé and garnish.",
+      "Sage SyrupCombine 1 cup of sugar with 1 cup of water in a saucepan over medium heat, stirring until the sugar is dissolved. Remove from heat and allow to cool to room temperature. Add 7-10 fresh sage leaves and let sit for 24 hours. Strain out the leaves and bottle for use. Refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Di Torino",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brut Sparkling Rosé",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea4a73118741555efe9aeb0a57ada8a6836bb166150f818813f87f7a309bbb45",
+    "lineage_hash": "f903b44d402551a73fe9f19e60545bf39c9139489760e766ae18e4a4a42f4078"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitif-cocktail-three-sunsets/",
+    "fetchedAt": "2026-08-03T20:37:37.069Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitif-cocktail-three-sunsets/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

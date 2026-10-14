@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Chorizo with black pudding",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dice the chorizo into 1cm slices and place in a preheated pan.",
+      "Pour in a drizzle of olive oil.",
+      "Add the garlic and chilli to the pan.",
+      "Add a chopped red onion.",
+      "Chop the black pudding into chunks and add to the pan to help richen and thicken as it cooks.",
+      "Chop the tomatoes and place in the pan too.",
+      "Add chopped basil and pour into the red wine.",
+      "Simmer for 20 minutes until the sauce thickens",
+      "Serve with sour cream, fresh coriander and crusty bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Basil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Coriander Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d89c94cb4a2cb7a095151847bc9c2f03313c10b9b6c156e884b651f5d125e74",
+    "lineage_hash": "d90b3fe9122a48d3f5afd7733c7ebf2e87da3b7b6b426eccf5e0dc8e35ca284e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Chorizo-with-black-pudding-|-British-charcuterie-recipe",
+    "fetchedAt": "2026-08-03T13:16:38.976Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Chorizo-with-black-pudding-|-British-charcuterie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

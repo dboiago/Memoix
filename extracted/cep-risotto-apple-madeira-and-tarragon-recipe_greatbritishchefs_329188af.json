@@ -1,0 +1,401 @@
+{
+  "recipe": {
+    "name": "Cep Risotto, Apple, Madeira and Tarragon",
+    "time": "5 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before serving, place the vegetable oil for the Madeira jelly in the freezer",
+      "Prepare an ice bath for the chlorophyll oil",
+      "Heat the grapeseed oil to 60°C, then blend for 4 minutes in a liquidiser with the spinach",
+      "Transfer the oil to a sous-vide bag, and submerge the bag in the ice bath",
+      "Once cool, strain out the spinach. Transfer the oil the freezer, and freeze for around 2 hours. After 2 hours, any water in the oil will solidify, and stick to the tray. Pour off the chlorophyll oil and pass it through a fine sieve",
+      "Blend 500g chlorophyll oil with the tarragon. Infuse for 24 hours",
+      "The next day, strain and filter the tarragon oil. Leftover tarragon oil can be stored in the freezer",
+      "For the Madeira jelly, bring the wine, sugar and gellan gum to the boil. Take off the heat and allow to cool slightly, then transfer to a squeezy bottle",
+      "Drip the mixture into the frozen oil so that it forms little pearls. Strain the pearls through a fine sieve, and rinse them with warm water to remove all the oil. Set aside",
+      "Mix the tarragon, apple and salt with the Madeira pearls and 100ml tarragon oil",
+      "For the puffed wild rice, first heat the oil to 200°C",
+      "Add the wild rice, and then quickly remove as soon as it puffs. Drain in a sieve, and season with salt, nutritional yeast and cep powder",
+      "For the mushroom stock, first sweat off the vegetables in the oil in a large stockpot. Add the water to the pot along with the mushrooms and miso, and bring to a simmer. Simmer for 1 hour",
+      "While the mushroom stock cooks, sweat the shallots for the risotto in oil until they are tender",
+      "Add the rice and toast with the shallots. Add the white wine and simmer until it reduces to nothing",
+      "After 1 hour, add the soy sauce to the mushroom stock and then pass the stock through a fine sieve",
+      "Add the hot mushroom stock into the risotto ladle by ladle",
+      "Simmer for around 13-15 minutes, or until the rice is tender. Season with salt",
+      "For the cep purée, sweat the mushrooms and the butter together until golden. Add the garlic, and mix for a minute or so",
+      "Add the double cream and bring to the boil. Add the cep powder, and then blend until smooth. Season with salt",
+      "When ready to serve, sauté the halved ceps in butter with thyme and garlic. Drain and season with salt",
+      "Finish each portion of risotto with 100g cep purée, 50g grated parmesan and 50g butter. Stir into the risotto and spoon into the centre of the risotto",
+      "Dress the risotto with the tarragon, apple and Madeira dressing, puffed rice, chopped chives and sautéed ceps"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum Type F",
+        "unit": "g",
+        "notes": "low acyl",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "L",
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "bunch",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": "cored and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and cut into 2cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and cut into 2cm pieces",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "trimmed and cut into 2cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "trimmed and cut into 2cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "kg",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and finely hcopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vialone Nano Risotto Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "032148eb52e48bc7d5ad17504f28cf994ed73966caede7864ebc93bc73b95012",
+    "lineage_hash": "a37c2f478f5f663f01ae088c30b963e6cfcbb8a47dec443b1144f427a35a6514"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cep-risotto-apple-madeira-tarragon-recipe",
+    "fetchedAt": "2026-08-02T16:55:18.799Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cep-risotto-apple-madeira-tarragon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

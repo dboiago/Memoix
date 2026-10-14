@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Ciambelline al Vino Rosso",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "MAKE THE RED WINE COOKIES Preheat the oven to 350°F and line two half sheet baking pans with parchment paper.",
+      "In a large mixing bowl, whisk together the sugar, baking powder, salt, and flour. Make a well in the center and add the wine, olive oil, and liqueur, if using. Use a wooden spoon to combine until a shaggy dough forms. Turn the dough out onto a work surface and knead with your hands until the dough feels uniform, about 30 seconds.",
+      "Pinch off about 1 heaping tablespoon of dough and roll it out into a rope\n5 to 6 inches in length and about 1/2 inch in width (it does not have to be exact). Shape into circles with the ends overlapping by about 1/2 inch. Pinch gently to seal the ends.",
+      "Dip the top half of your biscuits in the cinnamon-sugar mixture to coat and then place them on the prepared baking sheet—sugar side facing up—about 1/2 inch apart.",
+      "Bake for 31 to 35 minutes, until nice and golden. (Note: Thicker ropes will take slightly longer to bake.) Remove from the oven and allow to cool completely on the pans.",
+      "Store the cookies in an airtight container at room temperature for up to a week.",
+      "CINNAMON-SUGAR TOPPING In a shallow bowl, stir together 2 Tbsp. of granulated sugar and 1/2 tsp. of ground cinnamon. Set aside.",
+      "SURE THING NOTESGive yourself some grace during the shaping process and don’t become too fixated on making each “rope” the exact same length and width. I just plop a school ruler on my counter as a way to eyeball the length as I go, but each one ends up slightly different. Also, the cinnamon topping is divisive. Some folks think the cinnamon overpowers the red wine flavor too much. I suggest you do a taste test by making some with a cinnamon-sugar and some just with sugar before making any hard decisions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lambrusco",
+        "unit": "Tbsp",
+        "notes": "alt: any red wine",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sambuca Liqueur",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16454e64077ce741adc049a94e7dfc73a1601060a0a2ac46ff27ba7b907e1c4a",
+    "lineage_hash": "1518884c18ebda59b82f3fddffd2c8e8f89e014d207a4737d339ada9db4ce2e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ciambelline-al-vino-rosso-italian-red-wine-cookies/",
+    "fetchedAt": "2026-08-04T01:11:46.682Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ciambelline-al-vino-rosso-italian-red-wine-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

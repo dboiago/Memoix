@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Creamy Avocado Lime Dressing",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "207",
+      "carbohydrateContent": "6",
+      "fatContent": "21",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Add the ripe avocado, garlic, olive oil, cilantro, lime juice and water to a food processor. Season with salt and pepper.",
+      "Blend until creamy.",
+      "Taste, and add additional salt and pepper, if necessary. Add extra water if you want the dressing to be more pourable. (You might also have to add additional salt, pepper and lime juice if you do this.)",
+      "Serve or store."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice Freshly Squeezed",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e517b7264d563d8f2b84fd6063c9448835e387a3200c0f63fda68761a8ea92c9",
+    "lineage_hash": "cacace391fa3394d59843a9c3e1461d7c58f94dff7ed0978c03e87938a4cc655"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/creamy-avocado-lime-dressing/",
+    "fetchedAt": "2026-09-25T20:28:29.722Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/creamy-avocado-lime-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

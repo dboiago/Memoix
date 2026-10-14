@@ -1,0 +1,63 @@
+{
+  "url": "https://spanishsabores.com/antonias-salmorejo-recipe/",
+  "slug": "antonia-s-easy-salmorejo-recipe-spanish-cold-tomat_spanishsabores_4ed2a97a",
+  "title": "Antonia’s Easy Salmorejo Recipe – Spanish Cold Tomato Soup",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T07:42:31.479Z",
+  "ldName": "Salmorejo Recipe",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Main Course",
+  "ldKeywords": "salmorejo receta, salmorejo recipe",
+  "ldIngredientsRaw": [
+    "8  medium plum tomatoes (preferably vine-ripened)",
+    "1  medium-sized stale baguette (or other stale bread)",
+    "1 cup good-quality extra virgin olive oil",
+    "1 clove garlic",
+    "1 splash sherry vinegar (Vinagre de Jerez)",
+    "1 pinch salt",
+    "2  hard boiled eggs",
+    "diced serrano ham (or other cured ham, such as prosciutto)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a large pot of salted water to a boil, then cut a small cross on the bottom of each tomato. Place the tomatoes in the boiling water for 30-60 seconds, then remove them immediately and place in a bowl of ice water to cool briefly. The tomato skins should slide off easily.",
+    "Cut out the cores of the tomatoes and add the tomatoes to a blender. Blend on high speed for about 30 seconds, or until smooth.",
+    "Pull out the soft center of the baguette and tear it into small pieces.  You should have 2-3 cups of bread pieces.",
+    "Add 2 cups of bread pieces to the blended tomatoes, then let the mixture stand for 5 minutes. (For a thicker texture, add all of the bread pieces.)",
+    "Add the vinegar, salt, and garlic and blend until the soup is very smooth.",
+    "Turn the blender to medium speed, then remove the small lid on the top and slowly trickle in the oil.  If your blender doesn&#39;t have this small hole, simply stop the blender and add the oil gradually.",
+    "Add 1 hard-boiled egg and blend until incorporated. Adjust the levels of salt, vinegar, garlic, and bread to taste.",
+    "Chill the salmorejo until you&#39;re ready to serve it.  Serve the soup cold in small bowls, then garnish with diced hard-boiled egg and sliced ham. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 bowl",
+    "calories": "369 kcal",
+    "carbohydrateContent": "25.45 g",
+    "proteinContent": "4.96 g",
+    "fatContent": "28.59 g",
+    "saturatedFatContent": "4.07 g",
+    "sodiumContent": "277.3 mg",
+    "fiberContent": "3.81 g",
+    "sugarContent": "6.74 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 8 medium plum tomatoes preferably vine-ripened",
+    "▢ 1 medium-sized stale baguette or other stale bread",
+    "▢ 1 cup good-quality extra virgin olive oil",
+    "▢ 1 clove garlic",
+    "▢ 1 splash sherry vinegar (Vinagre de Jerez)",
+    "▢ 1 pinch salt",
+    "▢ 2 hard boiled eggs",
+    "▢ diced serrano ham or other cured ham, such as prosciutto"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

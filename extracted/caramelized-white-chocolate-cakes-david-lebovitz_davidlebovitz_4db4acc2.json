@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Caramelized White Chocolate Cakes",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375ºF (190ºC).",
+      "Generously butter sixteen 2-ounce ramekins, or similar-sized molds, and set them on a baking sheet.",
+      "Whisk together the almond flour, all-purpose flour, and salt in a bowl and set aside.",
+      "In a medium bowl, whisk together the white chocolate with the melted butter and sugar. Add in the eggs one at a time, until they’re completely incorporated. The mixture may be lumpy, which is normal.",
+      "Stir in the flour mixture with a spatula just until no specks of flour remain.",
+      "Spoon the batter into the butter molds, filling them no more than two-thirds full.",
+      "Bake for 12 to 15 minutes, until the cakes are still quite soft in the center, but firm at the edges.",
+      "Remove from the oven and when cool enough to handle, run a small knife around the outside of the cake to loosen it from the mold, then turn the cake out onto a serving plate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": "1 1/2 cups, 170g, see Note",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "110g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm",
+        "unit": "oz",
+        "notes": "340g, caramelized white chocolate",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted",
+        "unit": "oz",
+        "notes": "alt: unsalted butter, 45g, melted",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "45g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "691e2c62bbd7a34f95bff0dd10302ecf259bd3153ea23149d96f319012d84a2a",
+    "lineage_hash": "0d29277f38260d1d1e23ec9dac421954f4703f57f1a74f80004535f0296c7b1e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/caramelized-white-chocolate-cake-recipe-hidden-kitchen/",
+    "fetchedAt": "2026-08-02T22:47:49.540Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/caramelized-white-chocolate-cake-recipe-hidden-kitchen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

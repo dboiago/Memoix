@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Cheesy bacon and egg breakfast cups",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Grease a 12 hole muffin tray with butter or cake-release spray",
+      "Line the muffin tins with the bacon. Add the milk, chives and ¾ of the grated cheese to the beaten eggs and mix well",
+      "Carefully pour the egg and cheese mixture into the bacon cups. Sprinkle the rest of the grated cheese over the top",
+      "Bake for 25 to 30 minutes, or until the bacon is crisp and the egg filing has puffed up and is golden brown. Serve immediately with bread, grilled tomatoes, salad leaves or spinach"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canadian Bacon",
+        "unit": "slices",
+        "notes": "12 rashers of streaky bacon, or 12 slices of ham",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten with salt and pepper",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped, freeze-dried or fresh when in season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6400e938462537f553b485c4548697a60308c3411d9a2e25945d3c2c866e01bc",
+    "lineage_hash": "81ac89ae3b086cab5488144c962fad7e84fc827a06719eebdfeeb726446e3a84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-bacon-egg-breakfast-cup-recipe",
+    "fetchedAt": "2026-08-03T23:36:00.635Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-bacon-egg-breakfast-cup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

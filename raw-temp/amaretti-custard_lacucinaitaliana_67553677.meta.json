@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/amaretti-custard",
+  "slug": "amaretti-custard_lacucinaitaliana_67553677",
+  "title": "Amaretti Custard",
+  "byline": "by  Editorial staff   June 18, 2020",
+  "fetchedAt": "2026-08-02T01:53:21.153Z",
+  "ldName": "Amaretti Custard",
+  "ldTime": "PT80M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "12",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2C. milk",
+    "1C. sugar",
+    "2OZ. stale bread",
+    "1.5OZ. amaretti cookies",
+    "1/2C. unsweetened cocoa powder",
+    "2 eggs",
+    "2 egg yolks",
+    "Vanilla bean pod",
+    "1 Lemon"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 C. of milk",
+    "1 C. of sugar",
+    "2 OZ. of stale bread",
+    "1.5 OZ. of amaretti cookies",
+    "1/2 C. of unsweetened cocoa powder",
+    "2  of eggs",
+    "2  of egg yolks",
+    "Vanilla bean pod",
+    "1  of Lemon"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

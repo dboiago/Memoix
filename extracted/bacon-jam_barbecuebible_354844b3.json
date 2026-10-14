@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Bacon Jam",
+    "time": "30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the bacon in a large cold cast-iron skillet. Cook over medium heat until the bacon is browned and crisp, 5 minutes. Work in several batches, as needed.",
+      "Transfer the bacon to a colander set in a heatproof bowl and drain. Pour off all but 2 tablespoons bacon fat. (Reserve the remaining bacon fat for later use).",
+      "Return the skillet to the stove and heat over medium-high heat. Add the onion, and cook until lightly browned, 4 minutes, stirring with a wooden spoon. Stir in the garlic and cook until fragrant, 1 minute.",
+      "Return the bacon to the pan along with the coffee, vinegar, syrup, molasses, brown sugar, pepper, and hot sauce. Stir well and gradually bring the mixture to a boil, stirring often. Lower the heat and gently simmer the mixture, uncovered, until thick and syrupy, 15 to 20 minutes, stirring often.",
+      "For a chunky jam, use as is. For a smoother jam, puree the ingredients in a food processor, running the machine in short bursts.",
+      "Serve the bacon jam at once, either warm or at room temperature. Or transfer to a jar, cover, and cool to room temperature. The jam will keep refrigerated for at least 3 days, but for the best results, let it warm to room temperature before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bacon",
+        "unit": "lb",
+        "notes": "thinly slivered crosswise",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-sized Onion",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Brewed Coffee",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "light or dark—your choice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Sauce",
+        "unit": null,
+        "notes": "or your favorite hot sauce, to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "571fa95beb108c802bb35e42be3d22616974999c44bd69a14ac2e580d5ad5a1d",
+    "lineage_hash": "a4294b27d61adba9e59e5e0f4a250a540da06f8708165de95dd2b7e8e04c3340"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-jam/",
+    "fetchedAt": "2026-08-03T09:13:56.113Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-jam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Avocado, Lime & Chocolate Parfait",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the parfait, soak the gelatine leaves in cold water for 4-5 minutes. Combine the caster sugar, double cream, vanilla essence and 150ml of water in a saucepan, bring to the boil then remove from the heat",
+      "Squeeze as much moisture out the soaked gelatine as possible and add it to the cream mixture, whisking until it has completely dissolved",
+      "Peel and de-stone the avocados, putting the flesh in a food processor. Add the limejuice and purée until smooth. Add the contents of the saucepan to the processor and continue to blend until well combined",
+      "Pour the parfait mixture through a fine strainer to remove any lumps. Pour into into 10 dry moulds that have been arranged on a tray and chill until set, ideally overnight",
+      "To make the chocolate topping, put the chocolate drops, cream and butter in a heatproof bowl and sit it over a pan of steaming water, making sure the water does not touch the bottom of the bowl. Stir until the chocolate melts and the mixture is well combined",
+      "Pour the chocolate onto the set parfaits while they are still in their moulds, so that it completely covers the top. Return to the fridge for at least one hour to ensure the chocolate is set",
+      "To serve, fill a medium size bowl with boiling water from the kettle. Submerge ¾ of each mould in the hot water for 30 seconds, being careful not to allow any water to get inside the mould",
+      "Turn onto a plate and tap the base of the mould to release the parfait. If you are still having problem releasing the parfait from the mould, slide a small knife down one side of the mould to release the parfait and serve with a quenelle of chocolate ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Drops",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Ice Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5eccdd37dd4055806c993237291fb28c574bbf74d76d4d02e2685a8036101cfa",
+    "lineage_hash": "bf6d2bf3c063b4ef4e0c898e18df909257a6f8b544ca5aa064183268c1b9fbda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-lime-chocolate-parfait-recipe",
+    "fetchedAt": "2026-08-03T16:28:22.543Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-lime-chocolate-parfait-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crimson Spice Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Cocktail",
+    "garnish": [
+      "Fresh Mint",
+      "Pomegranate Seeds"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the syrup. Combine the sugar and water in a pan and bring to the boil, stirring until the sugar has dissolved fully. Remove from the heat and transfer to a bottle or jar, adding the cinnamon stick and orange peel. Seal and leave to infuse for two days",
+      "Muddle the mint and pomegranate together in a cocktail glass using a bar spoon, then fill with enough crushed ice to come two thirds of the way up the glass",
+      "Pour in the vodka, ginger, lime and 10ml of the cinnamon-orange syrup and use the bar spoon to swizzle the ingredients around in the glass for approximately 10 seconds. Add more crushed ice to the glass and pour over the soda water",
+      "Garnish with more fresh mint and pomegranate seeds and serve immediately with a long straw"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh, plus extra to garnish",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "tsp",
+        "notes": "plus extra to garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "305e4115f0e4b74d54da42a5676f6d9074d63f18c301bd9436d41ccc659e7733",
+    "lineage_hash": "c0c40b0e3632d7497d7d6c595c519373cb6c7991ba1f13d404c8267aefeaf402"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crimson-spice-cocktail-recipe",
+    "fetchedAt": "2026-08-03T11:48:42.583Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crimson-spice-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

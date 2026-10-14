@@ -1,0 +1,59 @@
+{
+  "url": "https://omnivorescookbook.com/zucchini-stir-fry/",
+  "slug": "chinese-zucchini-stir-fry_omnivorescookbook_99909b9a",
+  "title": "Chinese Zucchini Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T05:27:12.522Z",
+  "ldName": "Chinese Zucchini Stir Fry",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb zucchini",
+    "1 teaspoon salt ((Optional))",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "4  dried chili pepper",
+    "1/2 tablespoon minced ginger",
+    "2  garlic cloves (, minced)",
+    "1/4 teaspoon ground Sichuan peppercorns",
+    "1 teaspoon soy sauce ((or to taste) (*Footnote 1))"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the tough ends from the zucchini. Halve it lengthwise, then cut into 1/4” (4 mm) thick half-moon slices.",
+    "(Optional but highly recommended) Transfer the zucchini to a large bowl and add 1 teaspoon salt. Mix well and set aside for 10 minutes. Once done, drain and discard the water from the bowl. Rinse the zucchini with cold tap water to remove the salt. Drain again and gently squeeze excess water from the zucchini. (*Footnote 2)",
+    "Add oil to a medium-sized skillet and heat over medium-high heat until hot. Add the dried chili pepper, ginger and garlic. Stir a few times to release fragrance.",
+    "Add the ground Sichuan peppercorns and the zucchini. Cook and stir for 1 minute. Swirl in the soy sauce. Cook until the zucchini has softened, but is still a bit crisp, 1 to 2 minutes. Turn down the heat and try a piece of zucchini. Sprinkle a bit more salt if needed. Transfer everything to a big plate and serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "53 kcal",
+    "carbohydrateContent": "4.9 g",
+    "proteinContent": "315 g",
+    "fatContent": "3.6 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "87 mg",
+    "fiberContent": "1.4 g",
+    "sugarContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb zucchini",
+    "1 teaspoon salt (Optional)",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "4 dried chili pepper",
+    "1/2 tablespoon minced ginger",
+    "2 garlic cloves , minced",
+    "1/4 teaspoon ground Sichuan peppercorns",
+    "1 teaspoon soy sauce (or to taste) (*Footnote 1)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

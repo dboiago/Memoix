@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Beef Shin",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add a drizzle of oil to a large pan and place over a high heat. Sear the beef shin on all sides until caramelised. Remove and set aside, then add the chopped vegetables to the pan and allow to caramelise in the residual fat",
+      "Remove the vegetables from the pan and set aside with the shin, deglazing the pan with the red wine. Continue to cook until the liquid has reduced by three-quarters, then add the shin and vegetables back to the pan",
+      "Cover with the chicken and veal stocks and add the herbs and some seasoning. Turn the heat down very low then allow to simmer gently for 8 hours. After this time, remove from the heat and allow everything to cool in the liquor",
+      "Meanwhile, blanch the quinoa. Bring a small pan of water to the boil over a medium heat then add both types of quinoa, cook for 2–3 minutes and drain carefully. Set the quinoa to one side, leaving to cool until required",
+      "Prepare the wild garlic oil by bringing a large pan of salted water to the boil and blanching the wild garlic leaves for 3 minutes. Drain and transfer to a blender with the oil. Blitz everything until smooth and thoroughly combined",
+      "Line a sieve with a muslin cloth and place over a bowl, pouring the blended oil into the cloth so that it slowly strains through into the bowl below. Once fully strained, transfer to a squeezy bottle and set aside until serving",
+      "When nearly ready to serve, remove the shin from the cooking liquor and cut the meat from the bone to create 4 portions and set aside. Strain the liquor through a fine sieve into a clean pan and place over a medium-high heat, simmering for 20–30 minutes until reduced to a thick glaze",
+      "Meanwhile, transfer the blanched quinoa to a wide-bottomed pan with a ladleful of vegetable stock. Place over a medium heat and stir together until most of the stock has been absorbed, then add another ladleful of stock",
+      "Continuing adding the stock bit by bit – as if making a risotto – until fully absorbed and the quinoa is soft and cooked through. Stir through the parsley, spring onions and crème fraîche and keep warm until ready to serve",
+      "Once the beef liquor has reduced, add the pieces of shin back into the pan to coat in the glaze and warm through. Place a small pan over a medium heat and wilt the wild garlic leaves with a dash of water for 1–2 minutes, finely chopping the reserved stems for garnish",
+      "To serve, divide the quinoa between serving dishes and top with a piece of the glazed shin. Add a few wilted wild garlic leaves and finish with the chopped wild garlic stems, Parmesan shavings and a drizzle of wild garlic oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shin",
+        "unit": "kg",
+        "notes": "on the bone",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinoa",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Quinoa",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "ml",
+        "notes": "1",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Wild Garlic",
+        "unit": null,
+        "notes": "leaves and stems separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Shavings",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af9192200ad7b63a9cd513015a94d69fba1d5a49bd4215851218917e47a73ad5",
+    "lineage_hash": "020b2d6fbda0d28d45eb02c0ed05dd520b4eafddf081038f31be47fac933b88e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-shin-recipe",
+    "fetchedAt": "2026-08-03T13:26:05.118Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-shin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

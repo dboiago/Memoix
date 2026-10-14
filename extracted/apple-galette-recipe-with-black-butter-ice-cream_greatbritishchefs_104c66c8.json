@@ -1,0 +1,279 @@
+{
+  "recipe": {
+    "name": "Apple Galette With Black Butter Ice Cream",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the black butter ice cream, place the milk and cream into a heavy-bottomed saucepan and add the vanilla pod. Slowly bring this up to the boil",
+      "Meanwhile, place the eggs into a bowl and whisk until light and fluffy, then add the sugar. Slowly pour the milk and cream mix onto the eggs, whisking all the time",
+      "Add the black butter to the mix and place back in the saucepan, stirring all the time. Reheat to 72°C",
+      "Pass the mix through a fine sieve and cool as quickly as possible. Once cooled place into an ice cream machine and churn until set, following the manufacturer’s instructions",
+      "Remove from the machine and store in a plastic container with a lid in the freezer",
+      "For the apple crisp, preheat the oven to its lowest setting and line two baking sheets with parchment paper. Put the sugar, water and juice into a saucepan and bring to the boil",
+      "Leaving the skin on the apples slice them as thinly and as evenly as possible on a mandoline or slicer. As you slice the apples dip each one into the syrup mix and then lay them onto the parchment paper",
+      "Place the apples into the oven for around 3 hours or until you are able to remove them from the paper and they are crisp and dry. Cool and store in an air tight container. They will keep for 3 to 4 days",
+      "For the apple balls, place the stock syrup with the vanilla pod, orange and lemon zests, cloves, star anise and the five spice into a saucepan and slowly bring up to the boil",
+      "Peel the apples and, using a Parisienne scoop, scoop out as many balls as you can from each apple. Add the apple balls to the syrup and remove the pan from the heat. Cover and leave to cool",
+      "For the mint opaline, preheat the oven to 160°C. Add the sugar to a thick flat-bottomed saucepan and place onto a low heat. Gently heat the sugar until it dissolves and turns a golden brown colour",
+      "Chop the mint finely then add to the sugar mix, pour this straightaway onto a non-stick tray and leave to cool and set into a caramel. Break up the caramel and add this to a food processor and pulse until the caramel is like powder. Sprinkle this finely onto a piece of baking parchment and place into the oven for 1 minute",
+      "The caramel needs to turn back into a liquid and look like a sheet of glass. Allow the sugar to cool enough so that you are able to cut 8 even-sized rectangles out of it using a large knife. If it sets too hard place it back into the oven for a further minute or so. Once you have enough rectangles store them in an air-tight container until required – they will keep for 2 days",
+      "For the calvados cream, place the cream into a bowl along with the Calvados, icing sugar and the seeds from the vanilla pod. Whisk the ingredients together until the cream forms very soft peaks. Place into a container in the fridge until required",
+      "For the apple jelly, place the apple juice into a saucepan and bring to the boil. Meanwhile soak the gelatine in a bowl of cold water and once soft, add the bloomed gelatine to the apple juice, discarding the water",
+      "Stir well until the gelatine is completely dissolved, pass through a fine sieve and pour into a square container that has been lined with a sheet of clingfilm. Place in the fridge until set",
+      "To serve, place four rectangular plates in front of you then place one rectangle of the puff pastry in the middle of each plate",
+      "Remove the poached apple balls from the syrup and arrange eight balls (or more if necessary) side by side along the length of the rectangle of the pastry. Place a rectangle of the opaline on top of the apple",
+      "Place the calvados cream into a piping bag with a small plain nozzle and pipe little mounds of cream all the way around the middle opaline",
+      "In the centre of the cream fill this with a little pool of the maple syrup. Place the final rectangle of opaline on top of the cream and dust with a little icing sugar",
+      "Remove the black butter ice cream from the freezer and make a small ball of ice cream and place on each plate (using any leftover opaline to create a bed for it to sit on). Garnish the dish with an apple crisp and apple jelly cubes topped with mint leaves and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "halved with seeds removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cox's Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": "baked between 2 baking sheets until crisp and caramelised, then cut into 4 rectangles",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3117d046579bb7ab5af1faafcdaf14212ef24c66ebb676302fbab564fbdcc45d",
+    "lineage_hash": "341ecc20f268d8cb20d7a1f4c8293e92a3dee67c0ffb79a2ed8c20ab721b4d92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-galette-recipe-mint-butter-ice-cream",
+    "fetchedAt": "2026-08-03T15:44:34.648Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-galette-recipe-mint-butter-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

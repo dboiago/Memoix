@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Red & Green Tomato Chutney",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a pan on high heat until super hot then add the raw green tomatoes, mustard oil and roast them until charred.",
+      "Remove and keep aside for further use.",
+      "In a kadai heat mustard oil and add cumin seeds, asafoetida dry red chilli, roasted tomatoes, jaggery, water, tamarind pulp, black pepper powder, ginger, salt and mix everything together then cover and cook it for 12-15 minutes on low heat.",
+      "Remove the lid and blend it using a hand blender, now cover and let it cook until the oil starts separating and also keep on stirring in between. Switch off the flames.",
+      "Now in another pan heat mustard oil, then add cumin seeds, sesame seeds, fenugreek seeds and let them crackle then add it to the chutney and also roasted peanuts then mix everything properly and keep aside to cool down. Store in an airtight container in the fridge.",
+      "In a small pan and tomato wedges, sugar, water then cover and cook until soft.",
+      "Remove and place them as a garnish on the chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Tomatoes",
+        "unit": null,
+        "notes": "cut in 4 pieces",
+        "amount": "6-8",
+        "section": "For Roasting Tomato",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasting Tomato",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tamarind Pulp",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For First Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "baaad0fb98f880a5cc458ef589028c696e48debfb6ab12c5123ed83d64862700",
+    "lineage_hash": "2e78f4c2113ad295da2e48502a1f5139bbf4c7dcef3a510318e047ba0e1903b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/hara-tamatar-ki-chutney/",
+    "fetchedAt": "2026-08-01T20:32:27.892Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/hara-tamatar-ki-chutney/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

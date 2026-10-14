@@ -1,0 +1,264 @@
+{
+  "recipe": {
+    "name": "Bhopali Chicken Rezala (unique Chicken curry)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot, add water, once it's roaring boiled, add salt to taste, sugar, onions, cover it with the lid and cook it for 7-8 minutes until cooked well.",
+      "Strain out the onions, transfer it to a mixer grinder jar and grind it smoothly.",
+      "Keep it aside for further use.",
+      "In a bowl, add chicken, salt to taste, oil, green chillies, ginger garlic paste, turmeric powder and mix it well.",
+      "Keep it aside to marinate for 10-15 minutes.",
+      "In a handi, add ghee, oil, once it's hot, add cumin seeds, green cardamom, bay leaf, cinnamon stick and let it splutter.",
+      "Add marinated chicken and saute it for a while.",
+      "Add prepared boiled onion paste and cook it well.",
+      "Add green chillies, coriander powder, turmeric powder, degi red chili powder and saute it a minute.",
+      "Add curd and simmer it for a minute, cover it with the lid and cook it for 5-6 minutes until cooked well.",
+      "Add water, fresh coriander leaves, black cardamom & black peppercorns powder and let it simmer for a while.",
+      "Finish it with some fried onions & cashew nuts paste and mix it well.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and boiled egg.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onions",
+        "unit": null,
+        "notes": "medium, roughly diced",
+        "amount": "3",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "drumsticks & thighs",
+        "amount": "900",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Boiled Onions Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "fresh, finely chopped",
+        "amount": "½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom & Black Peppercorns Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onions & Cashew Nuts Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rezala",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb167209d5ff7dd423ba5db06fa8d7dff029fa05b4c0299e9da31ea42c616bc9",
+    "lineage_hash": "580c41071506bf4ee0553fa1c1c4cd86d67c9cf92fb13e8988bf57b7d418ad87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhopali-chicken-rezala/",
+    "fetchedAt": "2026-08-02T16:51:48.604Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhopali-chicken-rezala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Chinese Tomato Fish",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "501",
+      "carbohydrateContent": "10",
+      "fatContent": "28",
+      "proteinContent": "47"
+    },
+    "directions": [
+      "Add starch, cooking wine, spring onion whites, ginger, ground pepper, egg white and salt. Marinate the fish meat for around 1 hour.",
+      "Peel the tomato and them cut into small dices. Heat around 2 tablespoons of cooking oil in wok or pot, fry green onion and garlic until aroma. Add diced tomato and fry over slow fire for around 7-10 minutes until the tomato becomes soft and they are lots of juice out. Add around 2L hot water and simmer the soup for 20 minutes.",
+      "Add fish bones, celery, red onion and oyster mushrooms and continue cooking 10 minutes. Add salt and pepper.",
+      "Transfer all the content expect the soup to the serving pot and leave the soup in the original wok. Turn up the fire and cook the fish slices for around 30 seconds until they turn white. Transfer the fish slices along with the soup to the serving plate.",
+      "Heat around 2 tablespoons of oil in wok until slightly smoky and then pour over the fish slices. Sprinkle coriander and green onion before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grass Carp",
+        "unit": "g",
+        "notes": "or you can use fillet",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "peeled and cut into small cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "unit": "g",
+        "notes": "you can change it to bean sprouts, cucumber or shitake mushrooms, hard ends removed and spilt into smaller pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "cut into 1 inch sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "cut into pieces",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Starch",
+        "unit": "Tbsp",
+        "notes": "I use homemade sweet potato starch, you can use cornstarch",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7471a79bc0e5013206145215258a7ca9e6510b135620206be83a9974f93b5c70",
+    "lineage_hash": "de27f021a0d1f2e49cd82b101c8d2ba78b4afad56f0ac60778a7a8aa75f28d32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-tomato-fish/",
+    "fetchedAt": "2026-08-02T01:25:16.954Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-tomato-fish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

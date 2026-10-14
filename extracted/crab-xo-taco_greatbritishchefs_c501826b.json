@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Crab XO Taco",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [
+      "Viola Flowers"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190°C, fan speed 2",
+      "For the taco mix, combine everything except the egg whites and set aside to cool slightly",
+      "Spread the taco mix thinly into a silpat mat, and then bake for 3 minutes. Remove from the oven, but don’t turn off the oven",
+      "Cut out six tacos with a round cutter to 6 cm",
+      "Drape the taco over tubes covered with greaseproof paper, and then cook for 5 minutes or until golden brown",
+      "Leave on the tubes to cool. Place into a sealed container once cold",
+      "For the XO mayo, emulsify all the ingredients together using a stick blender",
+      "Mix together all the ingredients for the crab taco with 45g XO mayo",
+      "Fill each taco with 13g crab mix, and then garnish with violas"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "XO Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": "g",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Viola Flowers",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3a58f97e0dc60b0b0744f5e01f27233ff60db6273d7c77a58eddc869a24909a",
+    "lineage_hash": "1b04b3cb854da65da586412b0ab943c398a75d6048b735379a9f058ba46e9790"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-xo-taco-recipe",
+    "fetchedAt": "2026-08-02T11:34:40.620Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-xo-taco-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

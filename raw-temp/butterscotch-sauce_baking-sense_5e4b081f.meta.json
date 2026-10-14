@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2017/04/27/butterscotch-sauce/",
+  "slug": "butterscotch-sauce_baking-sense_5e4b081f",
+  "title": "Butterscotch Sauce",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:43:25.445Z",
+  "ldName": "Butterscotch Sauce",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "butterscotch, sauce",
+  "ldIngredientsRaw": [
+    "2 oz unsalted butter",
+    "8 oz dark brown sugar (1 cup)",
+    "4 oz heavy cream (1/2 cup)",
+    "2 oz butterscotch schnapps (1/4 cup (see note))",
+    "2 teaspoons real vanilla extract",
+    "1/2 teaspoon kosher salt (not table salt (see note))"
+  ],
+  "ldInstructionsRaw": [
+    "Melt 2 oz&#32;unsalted butter over medium low heat (see note). Add 8 oz&#32;dark brown sugar and stir until the sugar looks like wet sand. Cook on medium low, stirring occasionally, for about 5 minutes. The mixture will begin to liquify.",
+    "Whisk in 4 oz&#32;heavy cream, then whisk in the 2 oz&#32;butterscotch schnapps. BE CAREFUL, the mixture will bubble up and steam when the liquids are added. Keep your face away from the pot.",
+    "Cook over medium low heat for for about 10 minutes, whisking occasionally, until the butterscotch becomes viscous, very smooth and silky. Remove the pot from the heat and whisk in 2 teaspoons&#32;real vanilla extract and 1/2 teaspoon&#32;kosher salt.",
+    "Pour into a heat proof container to cool. I like to use canning jars to store the butterscotch sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "69 kcal",
+    "carbohydrateContent": "9 g",
+    "fatContent": "4 g",
+    "proteinContent": "0.2 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "10 mg",
+    "sodiumContent": "53 mg",
+    "sugarContent": "9 g",
+    "unsaturatedFatContent": "1.1 g"
+  },
+  "htmlIngredientLines": [
+    "2 oz unsalted butter",
+    "8 oz dark brown sugar (1 cup)",
+    "4 oz heavy cream (1/2 cup)",
+    "2 oz butterscotch schnapps (1/4 cup (see note))",
+    "2 teaspoons real vanilla extract",
+    "1/2 teaspoon kosher salt (not table salt (see note))"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/496/cuban-master",
+  "slug": "cuban-master-cocktail-recipe_diffordsguide_5952de69",
+  "title": "Cuban Master Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:39:27.922Z",
+  "ldName": "Cuban Master",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Anytime",
+    "Fruity (e.g. Pornstar Martini)",
+    "Long drinks and highballs",
+    "Sours (citrus)"
+  ],
+  "ldIngredientsRaw": [
+    "40 ml Light white rum",
+    "22.5 ml Cognac (brandy)",
+    "40 ml Orange juice",
+    "40 ml Pineapple juice",
+    "15 ml Lemon juice",
+    "10 ml Sugar syrup (2:1)"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COLLINS GLASS.",
+    "Prepare garnish of pineapple wedge skewered with a Luxardo Maraschino Cherry.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with pineapple wedge on rim skewered with maraschino cherry."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "208 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

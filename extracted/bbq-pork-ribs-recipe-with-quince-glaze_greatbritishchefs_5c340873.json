@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "BBQ Pork Ribs with Quince Glaze",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the rib racks in a large roasting tin and pour in 3 litres of water, then add the salt, peppercorns and bay leaves. Cover the tin with foil, transfer to the oven and cook for about 11⁄2 hours, or until the ribs are very soft and tender – you should be able to pull out a bone quite easily. Remove the ribs from the tin and leave to cool for an hour or so to firm up",
+      "Meanwhile, make the quince glaze. Place all the ingredients in a medium saucepan and stir over low heat on the hob until the quince paste has completely melted",
+      "Light the barbecue and set for direct/indirect cooking. Place the lump of wood onto the ashen charcoal to start smoking",
+      "Brush the ribs with the glaze, then place on the grill in the direct heat zone. Cook for 2 minutes on each side before moving them to the indirect heat zone and basting with the glaze",
+      "Close the lid of the barbecue and continue to cook the ribs, turning and basting them every 3 minutes or so, until they are beautifully glazed and lightly charred with a good crust. Serve with a hearty salad and some extra warm glaze on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack of Spare Ribs",
+        "unit": "kg",
+        "notes": "Ibérico or Gloucester Old Spot",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Membrillo Quince Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8926b2d1689c1dec15de20ff53445a3cc97a5feb0c50c95a29b88433aa1cbd90",
+    "lineage_hash": "8e655b70d2953a148b6cbd1e13036d8f3483f49e6c7c75884039f73a882d411d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bbq-pork-ribs-recipe",
+    "fetchedAt": "2026-08-03T12:24:44.851Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bbq-pork-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

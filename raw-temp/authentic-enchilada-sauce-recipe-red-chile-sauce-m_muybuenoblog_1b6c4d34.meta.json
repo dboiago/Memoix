@@ -1,0 +1,52 @@
+{
+  "url": "https://muybuenoblog.com/make-authentic-red-chile-sauce/",
+  "slug": "authentic-enchilada-sauce-recipe-red-chile-sauce-m_muybuenoblog_1b6c4d34",
+  "title": "Authentic Enchilada Sauce Recipe (Red Chile Sauce) - Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T03:12:22.057Z",
+  "ldName": "Enchilada Sauce Recipe",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 cups"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Entrees, Main Course, sauce, Side Dish",
+  "ldKeywords": "enchilada sauce, homemade chile sauce, homemade Mexican sauce, Mexican chile sauce, red enchilada sauce",
+  "ldIngredientsRaw": [
+    "8 ounces California or New Mexico red chile pods",
+    "6 cups water",
+    "6 tablespoons all-purpose flour (sub gluten free if necessary)",
+    "4 cloves garlic",
+    "1 tablespoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Remove stems, seeds, and veins from the chile pods. Place in a colander and rinse well with cool water.",
+    "Add the chiles to a large pot and add enough water so they are just covered. Bring water to a boil. Lower the heat, cover, and simmer for about 20 minutes. After 10 minutes turn the chiles over with tongs to make sure the chiles soften evenly. Drain cooked pods and allow time to cool down before blending. Discard water.",
+    "Fill blender with 3 cups of water, half of the cooled chile pods, 3 tablespoons flour, 2 cloves garlic, and half of the salt. Blend until smooth. Strain sauce through a fine sieve to remove skins and seeds; discard skins and seeds. Repeat blending and straining process with remaining water, pods, flour, garlic, and salt. If necessary, season with more salt."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cup",
+    "calories": "45 kcal",
+    "sugarContent": "2 g",
+    "sodiumContent": "1178 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "10 g",
+    "fiberContent": "1 g",
+    "proteinContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 8 ounces California or New Mexico red chile pods",
+    "▢ 6 cups water",
+    "▢ 6 tablespoons all-purpose flour, sub gluten free if necessary",
+    "▢ 4 cloves garlic",
+    "▢ 1 tablespoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

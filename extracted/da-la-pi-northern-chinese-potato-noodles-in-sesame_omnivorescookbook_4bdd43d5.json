@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Da La Pi (Northern Chinese Potato Noodles in Sesame Sauce)",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "268",
+      "carbohydrateContent": "33.7",
+      "fatContent": "11.7",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Make the egg ribbons by pouring the egg mixture into a heated pan",
+      "Roll up the egg as soon as it’s set",
+      "Once the egg cools off, slice it into ribbons",
+      "Cook the potato noodles according to package directions (if using dried, you will need to pre-soak them)",
+      "Mix the cooked potato noodles with half of the sauce",
+      "Plate the noodles in the center of your dish, with the vegetables around the outside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray for Cooking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Shredded eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste (or Unsalted Natural Peanut Butter)",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "Tbsp",
+        "notes": "or more",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Potato Noodles",
+        "unit": "oz",
+        "notes": "200 g, or 3.5 oz / 100 g dried potato noodles, fresh",
+        "amount": "7",
+        "section": "Noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "sliced to thin strips",
+        "amount": "1",
+        "section": "Noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "sliced to thin strips",
+        "amount": "½",
+        "section": "Noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Purple Cabbage",
+        "unit": "C",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "Noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": "Noodle bowl",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6bf2bd9cf2e63ec551431261469750ec0d692234902e859cc45970d5aa77401",
+    "lineage_hash": "758547ca3caf96de6fd1229bf430fbbebed3788a8e283f68f52c7c632c3d98d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/da-la-pi/",
+    "fetchedAt": "2026-08-01T21:00:12.555Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/da-la-pi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

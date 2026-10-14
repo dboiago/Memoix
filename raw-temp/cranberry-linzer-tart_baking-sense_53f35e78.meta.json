@@ -1,0 +1,65 @@
+{
+  "url": "https://www.baking-sense.com/2015/12/19/cranberry-linzer-tart/",
+  "slug": "cranberry-linzer-tart_baking-sense_53f35e78",
+  "title": "Cranberry Linzer Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:15:54.276Z",
+  "ldName": "Cranberry Linzer Tart",
+  "ldTime": "PT85M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "12",
+    "12 \" tart"
+  ],
+  "ldCuisine": "Austrian",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "christmas, holidays, thanksgiving",
+  "ldIngredientsRaw": [
+    "6 ¾ oz hazelnuts (1½ cups)",
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz granulated sugar (2 cups)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon salt",
+    "1 teaspoon cinnamon",
+    "8 oz unsalted butter (cut into 1&quot; chunks and chilled)",
+    "3  egg yolks",
+    "1 teaspoon vanilla",
+    "2 cups Cranberries in Red Wine"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 350 °F",
+    "Make the dough",
+    "Assemble the tart"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "485 kcal",
+    "carbohydrateContent": "59 g",
+    "proteinContent": "6 g",
+    "fatContent": "27 g",
+    "saturatedFatContent": "11 g",
+    "cholesterolContent": "89 mg",
+    "sodiumContent": "73 mg",
+    "sugarContent": "35 g",
+    "transFatContent": "1 g",
+    "fiberContent": "3 g",
+    "unsaturatedFatContent": "14 g"
+  },
+  "htmlIngredientLines": [
+    "6 ¾ oz hazelnuts (1½ cups)",
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz granulated sugar (2 cups)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon salt",
+    "1 teaspoon cinnamon",
+    "8 oz unsalted butter (cut into 1\" chunks and chilled)",
+    "3 egg yolks",
+    "1 teaspoon vanilla",
+    "2 cups Cranberries in Red Wine"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

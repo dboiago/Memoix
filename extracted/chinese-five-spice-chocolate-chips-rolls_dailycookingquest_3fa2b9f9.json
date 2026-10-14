@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Chinese Five Spice Chocolate Chips Rolls",
+    "time": "3 hr 25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together active dry yeast, 5 gram sugar, and lukewarm milk. Set aside to bloom, or until foamy and frothy, about 10 minutes.",
+      "In a mixing bowl, sift together all-purpose flour, sugar, and salt. Make a well, then add in egg yolks, butter, and yeast solution. Knead until smooth and soft, only adding a bit of flour if necessary. Kneading time is about 20-30 minutes.",
+      "Place bread dough in a bowl, cover with a wet kitchen towel/saran plastic. Set aside to proof until volume is almost doubled, about 1 hour in a warm kitchen.",
+      "Once the bread has finished proofing, punch down to remove air bubbles. Then transfer the bread to a lightly floured work surface. Knead for 2 minutes, then roll into a rectangle of about 8-inch by 14-inch.",
+      "Brush melted butter evenly over the dough, leaving only about 1/2-inch uncovered. Mix together sugar and Chinese five spice powder, then sprinkle evenly over the buttered surface. Scatter the chocolate chips evenly over the surface.",
+      "Starting with the short edge, roll into a log. Use a sharp knife and cut into 8 pieces. Arrange on a greased 9-inch round cake pan (mine has a 2-inch height). Cover the pan with a wet kitchen towel/saran plastic and proof again until the dough fill the pan, about 1 hour in a warm kitchen",
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Bake the bread in the preheated oven for 20-25 minutes.",
+      "(Optional) If you love shiny looking bread, make the simple syrup by mixing together sugar with hot water. Once the bread is out from the oven, brush the top with simple syrup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "g",
+        "notes": "1 packet, or 2 1/4 teaspoon",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "~ 1 teaspoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "13.5 tablespoon, 38 Celsius/100 Fahrenheit, lukewarm",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "~ 3 cup",
+        "amount": "320-360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "~ 6 tablespoon",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "~ 2.5 tablespoon, softened",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Chocolate Chips Filling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eadff263f7923a7fd3c0c5398b6337490a102e667d59589ac422267b9c1b9736",
+    "lineage_hash": "c65cbdb7daca317acf9d11e457b0312d7051f48c46b3bab4ec1929a906c5f14e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chinese-five-spice-chocolate-chips-rolls.html",
+    "fetchedAt": "2026-08-02T00:47:24.886Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chinese-five-spice-chocolate-chips-rolls.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

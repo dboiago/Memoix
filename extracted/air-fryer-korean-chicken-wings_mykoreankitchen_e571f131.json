@@ -1,0 +1,268 @@
+{
+  "recipe": {
+    "name": "Air Fryer Korean Chicken Wings",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "389",
+      "carbohydrateContent": "23",
+      "fatContent": "21",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "In a bowl, place the chicken wings and add rice wine. Mix them well and set aside it for 5 mins.",
+      "Gently shake off the liquid from the wings and place them into a clean bowl. (Discard any residual liquid in the bowl from step.1). Add the onion powder, garlic powder, salt, ginger powder, and ground black peppers. Mix them well.",
+      "Spray some cooking oil onto the air fryer basket. Place the seasoned chicken into the basket without overlapping too much. Set the air fryer temperature at 200 C / 400 F and cook each side for 10 mins or until the chicken wings are crisp and golden brown outside. Just note that the cook time may vary depending on your air fryer.",
+      "Make your choice of chicken wing sauce following the instructions below.Soy Garlic SauceIn a sauce pan, combine all sauce ingredients (except for corn starch and water). Bring it to boil over medium low heat while stirring often. Once the sauce starts bubbling, take out (and discard) the chilies and green onion pieces. In a small bowl, combine the corn starch and water. Mix well then pour it over the sauce. Stir often. Once the sauce thickens or turns to glaze (within 1 – 2 mins), remove from the heat and cool down for 3-5 mins.Sweet & Spicy sauceIn a sauce pan, combine all sauce ingredients. Bring it to boil over medium low heat while stirring often. Once the sauce starts bubbling and thickens (about 4-5 mins), remove from the heat. Cool down the sauce for 3-5 mins.",
+      "Place the air fried chicken onto a lined sheet pan. Gently coat the chicken with your choice of sauce using a basting brush. Once all the chicken is coated with the sauce, serve.Coleslaw salad, Korean macaroni salad, corn cheese or pickled radish will go well with these chicken wings. Leftover chicken can be refrigerated for a day or two and eaten cold or reheated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wing Pieces (2 Pounds)",
+        "unit": "g",
+        "notes": "separated into flats and drumettes",
+        "amount": "900",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Cracks Ground Black Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "CHICKEN & BASE SEASONINGS",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "regular",
+        "amount": "3",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Cracks Ground Black Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions (1 Ounce)",
+        "unit": "g",
+        "notes": "optional, white part",
+        "amount": "30",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Chilies",
+        "unit": null,
+        "notes": "optional, dried",
+        "amount": "3",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SOY GARLIC SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "Korean chilli paste",
+        "amount": "1",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "SWEET & SPICY SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "GARNISH (OPTIONAL)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "0",
+        "section": "GARNISH (OPTIONAL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f13d3fca76c00650dcdf28bc9b2c477cdd1f85de45896c45ebc902e5c47720d3",
+    "lineage_hash": "96bf05f26ad676fb4f85615caba80c3a453c07edc8f6f402c091099058c56c87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/air-fryer-chicken-wings/",
+    "fetchedAt": "2026-08-02T03:27:17.882Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/air-fryer-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

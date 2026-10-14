@@ -1,0 +1,70 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chris-lillys-spiced-apricot-sauce/",
+  "slug": "chris-lilly-s-spiced-apricot-sauce-recipe_amazingribs_9f400f0f",
+  "title": "Chris Lilly's Spiced Apricot Sauce Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T09:22:13.182Z",
+  "ldName": "Spiced Apricot Glaze Recipe",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Sauces and Condiments",
+  "ldKeywords": "apricot glaze, barbecue, barbecue sauce, bbq sauce, Easter, fruit glaze, fruit sauce, glaze, grill, ham glaze",
+  "ldIngredientsRaw": [
+    "½ cup apricot or peach preserves",
+    "½ cup honey",
+    "¼ cup chicken broth",
+    "2 tablespoons salad grade balsamic vinegar",
+    "2 tablespoons brown sugar",
+    "1 tablespoon Dijon-style mustard",
+    "1 ½ teaspoons Worcestershire sauce",
+    "½ teaspoon soy sauce",
+    "½ teaspoon paprika ((or smoked paprika))",
+    "¼ teaspoon black pepper",
+    "¼ teaspoon ground chipotle",
+    "¼ teaspoon garlic powder",
+    "⅛ teaspoon cinnamon powder",
+    "⅛ teaspoon rubbed sage ((sage powder))",
+    "⅛ teaspoon ground cloves"
+  ],
+  "ldInstructionsRaw": [
+    "Prep. In a small saucepan, combine the glaze ingredients and mix well. Refrigerate until you need it. It will keep for weeks.",
+    "Serve. If using as a ham glaze, begin brushing the ham during the last hour of heating so that the sugars do not burn. Brush the ham once more just prior to serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "57 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "31 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "½ cup apricot or peach preserves",
+    "½ cup honey",
+    "¼ cup chicken broth",
+    "2 tablespoons salad grade balsamic vinegar",
+    "2 tablespoons brown sugar",
+    "1 tablespoon Dijon-style mustard",
+    "1 ½ teaspoons Worcestershire sauce",
+    "½ teaspoon soy sauce",
+    "½ teaspoon paprika (or smoked paprika)",
+    "¼ teaspoon black pepper",
+    "¼ teaspoon ground chipotle",
+    "¼ teaspoon garlic powder",
+    "⅛ teaspoon cinnamon powder",
+    "⅛ teaspoon rubbed sage (sage powder)",
+    "⅛ teaspoon ground cloves"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

@@ -1,0 +1,265 @@
+{
+  "recipe": {
+    "name": "Dhaba style Handi Paneer",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add ginger, green chillies, garlic and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In a handi, add oil, ghee, once it's hot, add bay leaf, black peppercorns, black cardamom, cumin seeds and let it splutter.",
+      "Add prepared ginger garlic paste and saute it for a minute.",
+      "Add onions and saute it until translucent.",
+      "Add coriander powder, crushed black peppercorns, turmeric powder, degi red chili powder, curd and saute it for a while.",
+      "Add tomatoes and cook it for 5-6 minutes on medium flames until mushy.",
+      "Add water as required and give it a quick boil.",
+      "Finish it with prepared handi masala, fresh coriander leaves, salt to taste, paneer and simmer it for 5-6 minutes on low flames.",
+      "Transfer it to a serving bowl or dish, garnish it with coriander sprig and green chili.",
+      "Serve hot with roti or paratha.",
+      "In a pan, add coriander seeds, fennel seeds, cumin seeds, black peppercorns and roast them for a while until aromatic.",
+      "Transfer it to a mixer grinder jar and grind it smoothly.",
+      "Transfer it to a tray, add cornstarch and give it a good mix.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "4",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1⅓",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Handi Masala",
+        "unit": "Tbsp",
+        "notes": "prepared",
+        "amount": "3-4",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "3-4",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into medium cubed",
+        "amount": "1200",
+        "section": "For Dhaba Style Handi Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Handi Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Handi Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Handi Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Handi Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Cornstarch",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Handi Masala",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "00c5e6a97b9d48fbc989361788655027d5ab37b55d82f7db2f583451820b39ad",
+    "lineage_hash": "027e282fa4b4a017b7bab361206f0bd8a9b666db9c7038e07482ec849abcd286"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-handi-paneer/",
+    "fetchedAt": "2026-08-02T17:21:59.256Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-handi-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

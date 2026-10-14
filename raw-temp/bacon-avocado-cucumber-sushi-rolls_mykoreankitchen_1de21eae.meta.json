@@ -1,0 +1,73 @@
+{
+  "url": "https://mykoreankitchen.com/bacon-avocado-cucumber-sushi-rolls/",
+  "slug": "bacon-avocado-cucumber-sushi-rolls_mykoreankitchen_1de21eae",
+  "title": "Bacon Avocado Cucumber Sushi Rolls",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T17:45:22.773Z",
+  "ldName": "Bacon Avocado Cucumber Sushi Rolls",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "7",
+    "7 rolls"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "5 1/2 cup steamed short grain rice ((short grain rice))",
+    "1 Tbsp toasted sesame seeds",
+    "7  dried seaweed sheets",
+    "14  rindless short cut bacon rashers (, cooked until well done (not too crispy))",
+    "mayonnaise (, I used Japanese Kewpie mayonnaise)",
+    "1  avocado (pitted, peeled and sliced, I used hass avocado)",
+    "1  cucumber (peeled and sliced into thin strips, I used English cucumber)",
+    "1 Tbsp sesame oil ((optional) to give some Korean flavour and/or to give a shiny look to the rolls)",
+    "3 Tbsp rice vinegar",
+    "2 Tbsp white sugar",
+    "1 tsp fine sea salt",
+    "A dab of wasabi sauce",
+    "A dash of soy sauce"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, mix the cooked sushi rice with the sushi seasoning and roasted sesame seeds. Set aside while other ingredients are being prepared as mentioned in the ingredients section.",
+    "Place one seaweed sheet on a bamboo (sushi) mat and thinly spread the rice on the seaweed sheet. (I covered about 90% of the sheet)",
+    "Place the prepared ingredients on top of the rice (in the lower centre of the rice) in the order of bacon, mayonnaise (3 to 4 rows), avocado and cucumber strips. (I used 2 short cut bacon, 2 avocado strips and 2 cucumber strips per one sushi rolls).",
+    "Once all the ingredients are set, lift the bottom end of the sushi mat to cover the ingredients. Once you cover them, roll up the seaweed to the top. (Paste some water or put some rice pieces at the edge of the seaweed sheet, if it doesn’t stick) Roll the sushi roll with the bamboo mat once more to give a firm shape. Repeat this process with the remaining ingredients.",
+    "(Optionally brush the sesame oil on the outer layer of seaweed.) Cut the sushi roll into bite size pieces. Alternatively, halve the roll and eat like a burrito. Serve with a dab of wasabi sauce and a dash of soy sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "226 kcal",
+    "carbohydrateContent": "36 g",
+    "proteinContent": "4 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "388 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Main]",
+    "▢ 5 1/2 cup steamed short grain rice (short grain rice)",
+    "▢ 1 Tbsp toasted sesame seeds",
+    "▢ 7 dried seaweed sheets",
+    "▢ 14 rindless short cut bacon rashers , cooked until well done (not too crispy)",
+    "▢ mayonnaise , I used Japanese Kewpie mayonnaise",
+    "▢ 1 avocado pitted, peeled and sliced, I used hass avocado",
+    "▢ 1 cucumber peeled and sliced into thin strips, I used English cucumber",
+    "▢ 1 Tbsp sesame oil (optional) to give some Korean flavour and/or to give a shiny look to the rolls",
+    "[Sushi seasoning (Mix these in a small bowl and microwave it for about 30 seconds to dissolve the sugar. Alternatively you could use 3 Tbsp of pre-made sushi seasoning sauce)]",
+    "▢ 3 Tbsp rice vinegar",
+    "▢ 2 Tbsp white sugar",
+    "▢ 1 tsp fine sea salt",
+    "[Serve with]",
+    "▢ A dab of wasabi sauce",
+    "▢ A dash of soy sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

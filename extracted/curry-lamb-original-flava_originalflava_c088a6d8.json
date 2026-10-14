@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Curry Lamb",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl season lamb with salt, black pepper, 2 tbsp. curry powder, ginger, dried thyme, paprika, onions, garlic, spring onions, scotch bonnet. cover then marinate for a few hours.",
+      "Brown the meat in a pan with oil for around 10 minutes and mix.",
+      "Then add 250ml of water, cover and cook on a medium heat for up to an hour until meat is tender.",
+      "Stir every 15 minutes and add the remaining 250ml of water halfway through.",
+      "Add your potatoes and cook until tender.",
+      "Serve with Rice, fried plantain and steamed cabbage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Shoulder",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled and cut in 2inch cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87520b2f97e1ba1bb130034df6280954433d73677e3373263bd63d44d859ace0",
+    "lineage_hash": "651dab3631e0b3d35159f453e6cdf17a6ae1f3448a2211ff334fceefa8954c15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/curry-lamb/",
+    "fetchedAt": "2026-09-30T17:35:26.789Z"
+  },
+  "rawSource": "https://originalflava.com/meals/curry-lamb/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

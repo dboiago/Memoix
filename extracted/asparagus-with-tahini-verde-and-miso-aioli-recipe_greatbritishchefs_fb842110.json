@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Asparagus with Tahini Verde and Miso Aioli",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the tahini verde, place all of the ingredients into a small food processor or a beaker for a stick blender, add 1 tablespoon of cold water and blend together until combined but slightly coarse. Add a little more water if needed",
+      "To make the miso aioli, use a hand blender to blitz the aquafaba and garlic together for 5 seconds. Slowly drizzle in the oil, a little at a time, mixing continuously until emulsified. Mix the miso paste with 1 tablespoon of water and the vinegar until smooth, then add to the aioli and blend again to combine",
+      "Bring a pan of salted water to the boil. Remove the woody ends from the asparagus and blanch 3 minutes, then drain",
+      "Serve the asparagus drizzled with the miso aioli and the tahini verde on the side. Finish with a scattering of sesame seeds"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquafaba",
+        "unit": "g",
+        "notes": "the liquid from a tin of chickpeas",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "57753c3b591bb955abaec7e5c2b3e0a7d2d8a1f1cbbab1782f9d481735cc9d86",
+    "lineage_hash": "70f6ec899a3b9f352b087a29faebf0851b4154775ff924efd20d0b4e14ce7652"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-tahini-verde-miso-aioli-recipe",
+    "fetchedAt": "2026-08-03T04:42:13.533Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-tahini-verde-miso-aioli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

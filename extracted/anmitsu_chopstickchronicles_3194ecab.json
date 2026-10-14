@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Anmitsu",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "218",
+      "carbohydrateContent": "46",
+      "fatContent": "1",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Dissolve kanten powder in water according to package instructions.!disolved kanten in a cooking pot and sugar added",
+      "Pour the mixture into a shallow container and refrigerate until set.!Kanten dissolved and poured into a form",
+      "Once set, cut the jelly into small cubes.!cutted into small cubes set kanten jelly on a chopping board with a small knife",
+      "Mix shiratamako (glutinous rice flour) with water to form a dough.",
+      "Roll the dough into small balls.",
+      "Boil the dango in water until they float, then cool in ice water. See detailed recipe and instructions in this post.",
+      "In a bowl, place a portion of the kanten jelly cubes.!kanten jelly cues arranged in a bottom of a serving bowl",
+      "Add a scoop of sweet red bean paste.",
+      "Arrange the shiratama dango and cut fruits in the bowl.!fresh fruits, shiratama dango, and sweet red bean paste arraged over the kanetn jelly",
+      "If using, add a small scoop of matcha ice cream (to make cream anmitsu)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stick Kanten",
+        "unit": null,
+        "notes": "alt: 2 g of Kanten powder*1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiratama Dango",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Azuki Bean Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruits of Your Choice",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kuromitsu Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09baf4e8169ba46eba69e2f27270d2ac5f593e1c5791bb77f6d61483ca0de2d5",
+    "lineage_hash": "149df273cb5fa77c1b14faf8798ea036aa0e7c14b9d90b5c4c69fa082ce011de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/anmitsu/",
+    "fetchedAt": "2026-08-01T20:41:11.484Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/anmitsu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

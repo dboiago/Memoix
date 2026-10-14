@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Banana & Peanut Butter Shake (केला और मूंगफली का मक्खन शेक)",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": "Serving",
+    "garnish": [
+      "Cinnamon Powder"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender jar, add bananas, dates, peanut butter, chia seeds.",
+      "Add milk and blend until smooth in consistency.",
+      "Transfer it into a serving glass. Garnish it with cinnamon powder and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fda38ae96ad64be48ae0111ebc29d3ebeeb21d78362d74cba6bc248a0f036bcb",
+    "lineage_hash": "408a663a5b2d4d3a1f0e09dc8d08e353ea6dd2bcb31e12bafadcf0bcbbeb6527"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/banana-peanut-butter-shake/",
+    "fetchedAt": "2026-08-02T06:42:55.067Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/banana-peanut-butter-shake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

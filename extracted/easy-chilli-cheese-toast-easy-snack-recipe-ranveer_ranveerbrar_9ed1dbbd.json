@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chilli Cheese Toast",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add green chillies, red bell pepper, garlic, coriander leaves, butter, ed cheese and mix everything properly until the mixture is smooth.",
+      "Now heat a pan and toast the bread from one side properly then remove them and apply the cheese mixture on the toasted side.",
+      "Put the bread back in the pan on the non toasted side then cover and let it cook on medium heat until the cheese has melted.",
+      "Remove and cut in triangles and serve warm with tomato ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "medium, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "cloves, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": null,
+        "notes": "slices",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a54f3bbbc9cb3f143b0fb210a1a26c861ce777ffca1786860ce37588f0d02ed5",
+    "lineage_hash": "13a4fb35a2fcf671174308213a07303ed5d72308d1276eb92bc17d962e62b716"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chilli-cheese-toast/",
+    "fetchedAt": "2026-08-01T22:08:42.707Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chilli-cheese-toast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

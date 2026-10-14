@@ -1,0 +1,38 @@
+{
+  "url": "https://www.davidlebovitz.com/stiggins-pineapple-lime-cocktail-recipe-plantation-rum-rhum-daiquiri/",
+  "slug": "daiquiri-cocktail-recipe_davidlebovitz_f8bfc8dd",
+  "title": "Daiquiri Cocktail recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T20:16:51.424Z",
+  "ldName": "Daiquiri",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2  ounces  dark rum (preferably Stiggins Fancy Pineapple rum)",
+    "3/4 ounce freshly squeezed lime juice",
+    "1/2 ounce simple syrup",
+    "pineapple wedge or lime wheel (for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Add the rum, lime juice, and simple syrup to a cocktail shaker.",
+    "Fill shaker 2/3rds full with ice and shake until the mixture is well-chilled, 15 to 20 seconds. Strain into a chilled couple glass. Garnish with pineapple wedge or lime wheel."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2  ounces  dark rum, preferably Stiggins Fancy Pineapple rum",
+    "3/4 ounce freshly squeezed lime juice",
+    "1/2 ounce simple syrup",
+    "pineapple wedge or lime wheel, for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

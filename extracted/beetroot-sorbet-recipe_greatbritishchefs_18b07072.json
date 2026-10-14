@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Beetroot Sorbet",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar and water into a medium sized pan to dissolve into a sugar syrup. Remove from the heat",
+      "Add the sugar syrup to the beetroot juice, lemon juice and liquid glucose",
+      "In a small cup, soften the gelatine leaf by soaking in cold water, squeeze any excess water off and add to the beetroot mix",
+      "Churn the mixture in an ice cream maker until it reaches a sorbet consistency and then freeze. Serve into bowls"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b92821953e8e0f165730e8a9d0aa171a96bc909306f4a06bcaf553285b2d3500",
+    "lineage_hash": "257c1c4a2800a0f5499eb9426c7920ad3c41e507fffe0946041dc6e6252bd71a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-sorbet-recipe",
+    "fetchedAt": "2026-08-03T17:19:18.704Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

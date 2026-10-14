@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Curry Beef Rice Bowls",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "494",
+      "carbohydrateContent": "22",
+      "fatContent": "34",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "In a skillet or wok, heat the oil over medium high heat. Add the onions and garlic and cook until translucent and just slightly caramelized. Add the potatoes. Let cook for 10 minutes, turning the heat down if the potatoes are crisping too much.",
+      "Add the ground beef, breaking it up with a spatula, and cook the beef until browned. Next, add the curry powder, turmeric, cumin, sugar, black pepper, and salt. Stir to combine.",
+      "Make a cornstarch slurry by mixing the beef broth with 1 tablespoon of cornstarch. Add it to the beef mixture and bring to a boil. Simmer for a few minutes until the entire mixture has thickened. You’ll know it’s ready when there’s no more pooling liquid––just a very viscous curry beef!",
+      "Add the peas (if using). Let the entire mixture simmer, covered, for 10-15 minutes, until the potatoes are fork tender. Season with additional salt to taste, if necessary. Spoon over a bed of rice to serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potato",
+        "unit": "large",
+        "notes": "cut into a ½-inch dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": "450g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": "350 ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0427a0d01235056af77410f73108bae9d3061fa670c9441a5b03f07fe0ffd7f6",
+    "lineage_hash": "9aa8322a5c2a928d80ed137afd9b177a86bd9f1a6a22ba9a4bcc518ab70a27f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/curry-beef-bowls/",
+    "fetchedAt": "2026-08-01T23:50:17.733Z"
+  },
+  "rawSource": "https://thewoksoflife.com/curry-beef-bowls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

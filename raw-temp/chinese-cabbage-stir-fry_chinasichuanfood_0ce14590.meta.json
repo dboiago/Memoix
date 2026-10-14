@@ -1,0 +1,58 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-style-cabbage-stir-fry/",
+  "slug": "chinese-cabbage-stir-fry_chinasichuanfood_0ce14590",
+  "title": "Chinese Cabbage Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:28:17.882Z",
+  "ldName": "Chinese Style Cabbage Stir Fry",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "stir fry",
+  "ldKeywords": "Cabbage, stir fry, Vegetarian",
+  "ldIngredientsRaw": [
+    "1  middle size cabbage ( ,hand shredded and remove the tough parts)",
+    "2  garlic cloves sliced",
+    "1 inch root ginger ( ,minced)",
+    "3 to 6  dried chili pepper depending how spicy you want it to be",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. black vinegar",
+    "1/2 tsp. salt or as needed",
+    "2 tbsp.  vegetable cooking oil"
+  ],
+  "ldInstructionsRaw": [
+    "Hand tear the cabbage, and keep the tender green leaves only. Discard the hard white pate. Wash gently and drain completely. This is the key step to guarantee the success of the dish.",
+    "Heat the wok first, and pour in the oil. Add dried chili pepper, to fry over a slow fire until an aromatic, place in garlic and ginger too.",
+    "Add cabbage immediately. Quickly fry the cabbage, add salt, light soy sauce, and vinegar.",
+    "This process should be finished within 30 seconds.  You will have full of flavor, crunchy cabbage side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "189 kcal",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "7 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "5 g",
+    "sodiumContent": "1167 mg",
+    "fiberContent": "11 g",
+    "sugarContent": "14 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 middle size cabbage  ,hand shredded and remove the tough parts",
+    "2 garlic cloves sliced",
+    "1 inch root ginger  ,minced",
+    "3 to 6 dried chili pepper depending how spicy you want it to be",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. black vinegar",
+    "1/2 tsp. salt or as needed",
+    "2 tbsp.  vegetable cooking oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

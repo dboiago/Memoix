@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Colorful Pickled Eggs",
+    "time": "48 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "208",
+      "carbohydrateContent": "33",
+      "fatContent": "6",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Prep. Pour liquid from the beets into a large bowl or jar that won't stain, glass is perfect.",
+      "Add the vinegar, sugar, and salt. Stir until the sugar and salt dissolve almost completely. Thinly slice the onion, separate it into rings then add it to the bowl or jar. Add the beets, eggs, and pickling spices too.",
+      "Chill. Cover and chill for 2 hours or longer before serving. That's long enough for the beet juice to color the eggs, and penetrate a bit. If you keep them for a day or longer the beet color will penetrate farther until the entire egg turns royal purple.",
+      "Serve. Enjoy them how you like (they make very colorful deviled eggs). They must be kept in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Can",
+        "unit": "oz",
+        "notes": "alt: jar of plain beets",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickling Spices",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Cooked Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20ba15058371800744a9c98876b74b40d4a2ecb1f4dea564fe7ff704c352a89e",
+    "lineage_hash": "a2d3868d64ab084ea1ce89fd09389af7161ffa559277fa5601dab4ae133837ee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/snacks-and-munchies-recipes/colorful-pickled-eggs-recipe/",
+    "fetchedAt": "2026-08-01T20:19:17.433Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/snacks-and-munchies-recipes/colorful-pickled-eggs-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

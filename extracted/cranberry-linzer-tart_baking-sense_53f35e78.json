@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Cranberry Linzer Tart",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "485",
+      "carbohydrateContent": "59",
+      "fatContent": "27",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "In the bowl of a food processor, grind the hazelnuts with the other dry ingredients.",
+      "Add the butter and eggs and process until the dough comes together.",
+      "Refrigerate the dough until firm.",
+      "Roll half the dough to line a tart pan with a removeable bottom. If the dough crumbles as you work with it, just smush the broken pieces it into the pan. It will come together as it bakes.",
+      "Trim the edges of the dough and fill the pan with the cranberry compote.",
+      "Roll the remaining dough and cut it into strips.",
+      "Use an offset spatula to pick up the strips and transfer them to the tart.",
+      "You can weave the strips over the filling, or just criss-cross them over the dough without weaving.",
+      "Trim the edges of the tart.",
+      "Bake until the dough is golden brown and set all the way to the center.",
+      "Cool completely before removing the sides of the pan.",
+      "Sprinkle generously with powdered sugar and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "oz",
+        "notes": "1½ cups",
+        "amount": "6¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cut into 1\" chunks and chilled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries in Red Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60062e1a4de8a5b18d341f5803795b64f409c1d789f7f562bf18e5cecb225f19",
+    "lineage_hash": "d05540a5827f0ae0f34f0d8b094b5ac441f8db844406c4aff90bf879eb253c5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/12/19/cranberry-linzer-tart/",
+    "fetchedAt": "2026-08-02T02:15:54.276Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/12/19/cranberry-linzer-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

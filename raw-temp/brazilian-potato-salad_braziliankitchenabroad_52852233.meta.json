@@ -1,0 +1,73 @@
+{
+  "url": "https://braziliankitchenabroad.com/mayo-potato-salad/",
+  "slug": "brazilian-potato-salad_braziliankitchenabroad_52852233",
+  "title": "Brazilian Potato Salad",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T19:10:44.863Z",
+  "ldName": "Brazilian Potato Salad",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "8",
+    "8 portions"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Salad, Side Dish",
+  "ldKeywords": "barbecue, churrasco, grilling, holiday",
+  "ldIngredientsRaw": [
+    "2 lbs of yellow potatoes (peeled and diced)",
+    "3 cups large carrots (peeled and diced)",
+    "1/2 cup mayonnaise (or more if you like it creamier)",
+    "1/2 teaspoon of apple cider vinegar (or more to taste)",
+    "1/4 cup of chopped parsley",
+    "salt and pepper to taste",
+    "1 teaspoons of yellow or dijon mustard",
+    "1/2 cup of sliced green olives",
+    "2-3  chopped boiled eggs",
+    "1/2 cup of corn",
+    "1/4 cup of chives or green onions"
+  ],
+  "ldInstructionsRaw": [
+    "Place the diced potatoes and carrots in a medium to large pan, then add enough cold water to cover. Season generously with salt, and place over medium heat and bring to gentle a boil.",
+    "Cook until the potatoes and carrots are tender all the way through when gently pierced with a fork.",
+    "When they are cooked, remove the pan from the heat and drain the hot water.",
+    "Place the cooked carrots and potatoes in a strainer, and run some cold water to stop the cooking process and avoid the potatoes to overcook with the residual heat.",
+    "When the carrots and potatoes are cool to touch, stop the water and let them sit for a few minutes in the strainer to drain.",
+    "Add the cooled potatoes and carrots to a large bowl, season with salt and pepper, and mix in the vinegar, mayonnaise, the chopped parsley, and any other optional add-ons you like.",
+    "Cover and refrigerate a few hours before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "203 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "3 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "6 mg",
+    "sodiumContent": "130 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "8 g"
+  },
+  "htmlIngredientLines": [
+    "[Classic Brazilian Potato Salad]",
+    "2 lbs of yellow potatoes peeled and diced",
+    "3 cups large carrots peeled and diced",
+    "1/2 cup mayonnaise or more if you like it creamier",
+    "1/2 teaspoon of apple cider vinegar or more to taste",
+    "1/4 cup of chopped parsley",
+    "salt and pepper to taste",
+    "[Optional Add-ons and Variations]",
+    "1 teaspoons of yellow or dijon mustard",
+    "1/2 cup of sliced green olives",
+    "2-3 chopped boiled eggs",
+    "1/2 cup of corn",
+    "1/4 cup of chives or green onions"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

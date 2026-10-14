@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Creamy German Cucumber Salad (Norddeutscher Gurkensalat)",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the thin cucumber slices into a large bowl. Cover and refrigerate.",
+      "In a small bowl, mix the dressing ingredients: sour cream, dill, lemon juice, and sugar. Season with salt and pepper to taste. Refrigerate.",
+      "Just before serving, pour the creamy dressing over the thinly sliced cucumbers and mix."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "120 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(2.5 Grams) Fresh Dill Weed",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "7.5 milliliters",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": "6 grams",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4d3e46a278dccdb7b72591b63ee59dc5483096fffa9b015271e08a490fd285a",
+    "lineage_hash": "88cc00b660acbd0bcb31ff8f28c502858b788e3d11c03318e8b30f61153771a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/german-cucumber-salad-recipe.html",
+    "fetchedAt": "2026-09-25T19:24:15.509Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/german-cucumber-salad-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

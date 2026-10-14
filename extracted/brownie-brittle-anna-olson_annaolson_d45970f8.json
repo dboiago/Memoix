@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Brownie Brittle",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F (160°C) and line two baking trays with parchment paper.",
+      "In a medium saucepan over low heat, stir the granulated and brown sugars, chocolate and milk until the chocolate is melted—the sugar will not dissolve. Remove the pan from the heat.",
+      "Whisk the eggs, oil and vanilla into the saucepan until evenly combined. Whisk in the flour, cocoa powder, baking powder and salt until smooth. Pour the batter onto the two baking trays and spread to level until the batter almost reaches the edges of the trays (it does not have to touch them)",
+      "Bake the brittle for about 30 minutes, until it appears dry on the surface. Cool the brittle on the trays on racks.",
+      "Break the brittle into pieces to serve and store."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "150 g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Baking Chocolate",
+        "unit": "oz",
+        "notes": "120 g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "60 mL",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large, at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "110 g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": "40 g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a8f48660e408fe1054852a9ad183912f2e8d0412ff29640d233bd2a07065355",
+    "lineage_hash": "d47858875d960b0b74b31d15806354b714e5e86ad7f28f2441de6d1467271b0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/brownie-brittle/",
+    "fetchedAt": "2026-08-02T00:25:02.725Z"
+  },
+  "rawSource": "https://annaolson.ca/project/brownie-brittle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Beetroot Samosa",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a mandolin thinly slice one each of the golden and red beetroots. Cut the slices into 8cm squares and quickly blanch each colour separately in boiling water. Refresh in iced water",
+      "Boil the red wine and red wine vinegar together and place the red beetroot in to the mix. Cool and allow to marinate for up to 2 weeks",
+      "Repeat the process with the white wine and white wine vinegar and the golden beetroot",
+      "Cook the whole red and golden beetroots in boiling water and allow to cool. Slice into discs approximately 5mm thick and then cut out smaller discs, about 3cm in diameter. Mix the goat’s curd with the truffle",
+      "For the samosas, drain the beetroot squares on a tea towel and place a small amount of goats curd in the centre",
+      "Pull up all the corners to meet in the middle and squeeze together with finger and thumb, brush with oil and sprinkle with the seeds and herbs",
+      "Place on a disc of cooked beetroot the opposite colour to the samosa and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Golden Beetroots",
+        "unit": null,
+        "notes": "one must be 12cm in diameter, the other at least 4cm in diameter",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Beetroots",
+        "unit": null,
+        "notes": "one must be over 12cm in diameter, the other at least 4cm in diameter",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Onion Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chives",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d299a10110388309f5f8866b070ac7d9d294179b1de283ae05479e378701ea18",
+    "lineage_hash": "ecf27120b1a3b68811e30ee9c9862d6c7842bbde3e13ed2f8b74e63480069f9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-samosa-recipe",
+    "fetchedAt": "2026-08-03T16:30:20.562Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-samosa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

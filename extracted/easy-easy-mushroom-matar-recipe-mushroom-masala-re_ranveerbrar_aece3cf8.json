@@ -1,0 +1,313 @@
+{
+  "recipe": {
+    "name": "Mushroom Matar Masala",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a stock pot, add mushroom steam, butter and saute it well.",
+      "Add black peppercorns, coriander seeds, green cardamom, water and boil it for 5-10 minutes.",
+      "Add curd and mix it well. Give it a boil.",
+      "In a deep bottom pan, add butter, garlic cloves, ginger, green chilli and saute it well.",
+      "Add butter, onion and saute it for a minute.",
+      "Add raisins, turmeric powder, degi red chilli powder, coriander powder and saute for 2-3 minutes.",
+      "Add butter and saute it for 2 minutes.",
+      "Add tomato puree, butter and cook on medium flame till the paste thickens.",
+      "Add mushroom and saute it well. Cover it with the lid and cook for 2 minutes.",
+      "Now, strain the mushroom stock and transfer it into a pan and mix it well.",
+      "Add green peas and cook on low flame, add butter and mix it well.",
+      "Add mint leaves, spring onion, coriander leaves and mix it well.",
+      "Garnish it with coriander sprig and sprinkle some prepared masala and serve hot with roti.",
+      "In a bowl, add green cardamom, black peppercorns, dry fenugreek leaves.",
+      "Transfer it into a grinder jar and grind it into a fine powder. Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mushroom Stem",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¼",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8-10",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushroom",
+        "unit": "g",
+        "notes": "cut into quarter",
+        "amount": "400",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Stock",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Mushroom Mutter",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Few Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Few Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Few Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0dabdcb8fb6a80015a6e213def1ba799c9858a62ac08e1d8e988a81c7d4ec85a",
+    "lineage_hash": "ee8470cd4b89866a8cbf79cb1905680b8420f19a3106da9090ea6e577df1ca16"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/mushroom-matar-masala/",
+    "fetchedAt": "2026-08-02T07:30:48.917Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/mushroom-matar-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

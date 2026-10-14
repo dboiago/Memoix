@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Boiled Okra",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "108",
+      "carbohydrateContent": "7",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Cut off the tail end of okras. Peel off the hard part around okra.",
+      "Bring a large pot of water to a boiling, sprinkle a small pinch of salt and add 1/4 tsp. sesame oil. Place okra in and blanch for 1 minute.",
+      "Transfer out to chilled water to cool down and stop the heating process.",
+      "Then strain and transfer to serving plate.",
+      "In a small bowl, mix all the season together.  Serve along with okra."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Okra",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Pepper Cut Into Small Circles",
+        "unit": null,
+        "notes": "fresh, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f9b489b9302f5088ec26cf5e0e3d5443602632231b830c0376654d3f8944f81",
+    "lineage_hash": "bc085e9bcab724f88e980dbf5d46119dfffe012f6a5f412e3ec827fdb0235972"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/boiled-okra/",
+    "fetchedAt": "2026-08-02T05:37:20.349Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/boiled-okra/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,49 @@
+{
+  "url": "https://muybuenoblog.com/agua-de-melon/",
+  "slug": "agua-de-mel-n-melon-water_muybuenoblog_382ff324",
+  "title": "Agua de Melón (Melon Water)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T10:23:41.078Z",
+  "ldName": "Agua de Melón (Melon Water)",
+  "ldTime": "PT8M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT3M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "agua fresca recipes, Mexican agua fresca recipe",
+  "ldIngredientsRaw": [
+    "1  ripe cantaloupe",
+    "8 cups water (divided)",
+    "1/2 cup pure cane sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Slice cantaloupe in half and scoop out seeds. Chop melon and place in blender with 2 cups water and blend until smooth.",
+    "Pour through a course strainer and into a large pitcher or vitrolero.",
+    "Add remaining 6 cups water and sugar. Stir until the sugar dissolves. Serve over ice.",
+    "Strain for a smoother drink."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "8 g",
+    "calories": "72 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "23 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "18 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 ripe cantaloupe",
+    "▢ 8 cups water, divided",
+    "▢ 1/2 cup pure cane sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

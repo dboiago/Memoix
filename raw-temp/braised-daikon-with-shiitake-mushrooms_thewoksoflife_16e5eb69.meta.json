@@ -1,0 +1,67 @@
+{
+  "url": "https://thewoksoflife.com/braised-daikon-shiitake-mushrooms/",
+  "slug": "braised-daikon-with-shiitake-mushrooms_thewoksoflife_16e5eb69",
+  "title": "Braised Daikon with Shiitake Mushrooms",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T18:22:16.249Z",
+  "ldName": "Braised Daikon with Mushrooms",
+  "ldTime": "PT150M",
+  "ldPrepTime": "PT120M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "braised daikon",
+  "ldIngredientsRaw": [
+    "½ cup small dried shiitake mushrooms",
+    "1½ cups hot water",
+    "1 tablespoon neutral oil ((such as vegetable, canola, or avocado oil))",
+    "1 large slice ginger",
+    "1¼ pounds daikon ((halved lengthwise and cut into ½-inch/1.25cm thick pieces))",
+    "1  star anise",
+    "1  bay leaf",
+    "1 tablespoon oyster sauce ((or vegetarian oyster sauce to make this vegan))",
+    "2 teaspoons light soy sauce",
+    "1 teaspoon cornstarch ((mixed into a slurry with 1 tablespoon water）)",
+    "1 tablespoon chopped scallion ((optional garnish))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse your dried shiitake mushrooms to remove any dust and dirt, then add them to a bowl with the hot water. Cover with a plate to ensure the mushrooms are submerged, and soak for 2 hours, or overnight, until they are completely reconstituted.",
+    "Squeeze the mushrooms dry. Allow any sediment to settle in the mushroom soaking liquid, and then pour it off into a measuring cup, stopping short of pouring in any sediment (discard the rest). Add additional water if needed so you have 1 cup.",
+    "Heat a medium pot (or your wok) over medium heat. Coat the bottom with neutral oil, and pan fry the mushrooms and ginger for a few minutes, until fragrant.",
+    "Add the daikon pieces along with the mushroom soaking liquid/water, star anise, bay leaf, oyster sauce, and light soy sauce. Stir, cover, and cook for 20-25 minutes over medium heat, or until the daikon is tender and slightly translucent. Check periodically to avoid burning and adjust the heat accordingly. Add more water during braising if needed (up to ¼ cup).",
+    "Uncover, and stir in the cornstarch slurry. Cook until the sauce has thickened and coats the daikon and mushrooms. Add salt to taste if needed, top with chopped scallion if using, and serve!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "74 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "2 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "0.3 g",
+    "transFatContent": "0.01 g",
+    "sodiumContent": "325 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ½ cup small dried shiitake mushrooms",
+    "▢ 1½ cups hot water",
+    "▢ 1 tablespoon neutral oil (such as vegetable, canola, or avocado oil)",
+    "▢ 1 large slice ginger",
+    "▢ 1¼ pounds daikon (halved lengthwise and cut into ½-inch/1.25cm thick pieces)",
+    "▢ 1 star anise",
+    "▢ 1 bay leaf",
+    "▢ 1 tablespoon oyster sauce (or vegetarian oyster sauce to make this vegan)",
+    "▢ 2 teaspoons light soy sauce",
+    "▢ 1 teaspoon cornstarch (mixed into a slurry with 1 tablespoon water）",
+    "▢ 1 tablespoon chopped scallion (optional garnish)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

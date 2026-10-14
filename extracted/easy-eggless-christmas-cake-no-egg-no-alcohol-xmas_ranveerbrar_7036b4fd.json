@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Christmas Cake",
+    "time": "50-55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add in jaggery, 2-3 tbsp water and caramelize it until it turns dark golden brown.",
+      "Add butter and mix it well.",
+      "Allow it to cool down and keep it aside for further use.",
+      "In a bowl, caramelized jaggery, desiccated coconut, black peppercorns, tutti frutti , black raisins, orange rind and mix it well.",
+      "Add flour, NestlÃ© MILKMAID, cashew nuts, orange juice and make a smooth batter.",
+      "Fold in tutti frutti, black raisins, baking soda and give it a good mix.",
+      "Transfer it to a greased baking tray and top it up with tutti frutti.",
+      "Place it in a preheated oven and bake it for 35-40 minutes at 170Â°c until cooked well.",
+      "Gently demold the cake and transfer it to a serving dish.",
+      "Garnish it with tutti frutti, icing sugar, candied cherries and mint sprig."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jaggery",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "For Caramelized Jaggery",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Caramelized Jaggery",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "salted",
+        "amount": "250",
+        "section": "For Caramelized Jaggery",
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice Powder",
+        "unit": "tsp",
+        "notes": "cinnamon, nutmeg, clove",
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Black Raisins",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Rind",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Tin Nestlé Milkmaid",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Black Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kerala Christmas Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Sprig",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "28aa294cda271c26683c32c448ad01ab5a14ebca2996da8c17002fa25c409642",
+    "lineage_hash": "187c50bac513dbe2678c6e2e88bdb168a9fd0768dde17314dfd3fba22c7e4085"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-christmas-cake-2/",
+    "fetchedAt": "2026-08-02T19:50:07.215Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-christmas-cake-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

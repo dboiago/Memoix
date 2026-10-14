@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Coffee Ice Cream Roulade",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C/gas mark 4. Line a 28cm x 40cm roulade (or swiss roll) tin with parchment paper, then grease and dust the parchment with flour, tapping our any excess",
+      "Begin by separating two of the eggs into yolks and whites, discarding one of the yolks so you are left with two whole eggs, one yolk and two whites",
+      "Add the two whole eggs, egg yolk and 55g of caster sugar to a metal bowl and place over a pan of gently simmering water (making sure the bowl does not touch the water). Split the vanilla pod lengthways and scrape in the seeds",
+      "Whisk together until the mixture comes to just above body temperature, then remove the bowl from the heat and continue to whisk for 4 minutes until doubled in volume",
+      "In a separate, clean bowl, beat the egg whites with a pinch of salt. Start on a low speed until foamy, then increase to high, adding the remaining 5 tbsp of caster sugar gradually. Continue to whisk until the whites hold a medium peak when the beaters are lifted",
+      "Sift the flour and ground almonds over the  whole egg mixture and fold in using a whisk. Add some of the egg whites and gently fold in, then fold in the rest until combined",
+      "Spread the batter out in the prepared tin, being sure that it is level. Bake for about 10 minutes until it springs back when gently pressed, then allow the cake to cool in the tin for 2 minutes. Meanwhile, take the ice cream out of the freezer to soften slightly",
+      "Loosen the sides of the warm cake with a spatula, and sift a layer of icing sugar over the top of the cake. Cover the cake and tin with a clean tea towel and place a large cooling rack or tray over top. Hold together tightly and quickly flip over, so that the cake comes out of the tin onto the tea towel and tray",
+      "Remove the baking tin and carefully peel off the parchment paper from the base of the cake. Cover the exposed surface of the cake with a layer of icing sugar, then use the tea towel to help you roll the two shorter sides in towards the centre of the cake. Allow the cake to cool this way so that it 'remembers' the rolled shape",
+      "Once cooled, gently unroll the cake and remove the tea towel. Spread the softened ice cream over the cake with a spatula, leaving a 3cm border at both of the shorter ends. Roll up the cake again and wrap the rolled roulade in cling film",
+      "Freeze this way for a minimum of 2 hours, or until ready to serve. Remove from the freezer 10 minutes before serving, then remove the cling film, dust in a final coating of icing sugar and sprinkle with slivered almonds. Serve with your favourite coffee"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus 5 tbsp",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Sliced Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream",
+        "unit": null,
+        "notes": "1 tub of Häagen-Dazs coffee flavour",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ff6f932b79556762ca0b1b5c54ea4207a9e30ec05e0a9c45cf047910d7bcb541",
+    "lineage_hash": "ea6c2294c53d1b16cb50030fb748ffb7665722ee815aeddd0c4e675f2158654f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-ice-cream-roulade-recipe",
+    "fetchedAt": "2026-08-03T14:17:14.709Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-ice-cream-roulade-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,54 @@
+{
+  "recipe": {
+    "name": "Brownies",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the dark chocolate pistoles into a bowl and melt in the microwave, stirring every 30 seconds so the chocolate doesn't burn.",
+      "Place the banana flour into a [mixing bowl](https://www.meilleurduchef.com/en/shop/kitchenware/utensils/mixing-bowls/mfr-stainless-steel-mixing-bowl-25cm.html \"Stainless Steel Mixing Bowl - Ø 25cm - Matfer\").",
+      "Add the cocoa powder...",
+      "... Muscovado sugar..."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate Pistoles",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa6c8bd7fb084a796af6f606195ec80c25e8668fa0953539e5049462cb49b32f",
+    "lineage_hash": "d518b533d84709c027ef67ea7075695373bd5ffd1b2b5e545da2921bfeef9398"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/french-cake-recipes/brownie-recipes.html",
+    "fetchedAt": "2026-08-01T20:14:25.456Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/french-cake-recipes/brownie-recipes.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

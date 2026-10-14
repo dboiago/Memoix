@@ -1,0 +1,54 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-broccoli-with-oyster-sauce/",
+  "slug": "chinese-broccoli-with-oyster-sauce-gai-lan_omnivorescookbook_c44067ea",
+  "title": "Chinese Broccoli with Oyster Sauce (蚝油芥蓝, Gai Lan)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T04:50:15.159Z",
+  "ldName": "Chinese Broccoli with Oyster Sauce (蚝油芥蓝, Gai Lan)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Cantonese, Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "dim sum",
+  "ldIngredientsRaw": [
+    "2 tablespoons oyster sauce",
+    "1/2 teaspoon sugar",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "10 oz Chinese broccoli (, tough ends and stem surfaces removed)",
+    "1 tablespoon garlic (, minced)",
+    "1 teaspoon ginger (, minced)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the oyster sauce, sugar and 2 tablespoons of water in a small bowl. Mix well and set aside.",
+    "Bring a large pot of water to a boil. Add a pinch of salt and a drizzle of oil for vibrant color (Optional). Add the Chinese broccoli and boil over medium heat, until the broccoli is cooked through and the stem part remains crisp, 1 to 2 minutes. Drain broccoli, rinse with cold tap water for a few seconds to stop cooking, then drain again and transfer to a large plate. Spread them out so there’s little overlap. If the Chinese broccoli is very wet, you can use paper towels to pat the surface dry.",
+    "Heat a small skillet or a saucepan over medium heat until hot. Add peanut oil, garlic and ginger. Stir a few times until fragrant.",
+    "Turn to low heat. Add the oyster sauce mixture and stir immediately. When the sauce becomes fragrant, after 10 to 20 seconds, pour the oyster sauce over the Chinese broccoli. Serve immediately as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "101 kcal",
+    "carbohydrateContent": "8.8 g",
+    "proteinContent": "3.9 g",
+    "fatContent": "6.8 g",
+    "saturatedFatContent": "1.2 g",
+    "sodiumContent": "137 mg",
+    "sugarContent": "1.1 g"
+  },
+  "htmlIngredientLines": [
+    "2 tablespoons oyster sauce",
+    "1/2 teaspoon sugar",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "10 oz Chinese broccoli , tough ends and stem surfaces removed",
+    "1 tablespoon garlic , minced",
+    "1 teaspoon ginger , minced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.baking-sense.com/2020/10/08/apple-danish-braid/",
+  "slug": "apple-danish-braid_baking-sense_06f2145f",
+  "title": "Apple Danish Braid",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T18:54:05.411Z",
+  "ldName": "Apple Danish Recipe",
+  "ldTime": "PT200M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT120M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Snack",
+  "ldKeywords": "apple, braided, pastry",
+  "ldIngredientsRaw": [
+    "1 ½ pounds apples (peeled, cored and cut into 1/2\" cubes)",
+    "2 oz brown sugar (¼ cup)",
+    "4 oz apple cider (½ cup, or apple juice)",
+    "⅛ teaspoon salt",
+    "½ teaspoon ground cinnamon",
+    "½ teaspoon vanilla extract",
+    "1 tablespoon cornstarch",
+    "1  recipe Danish Dough",
+    "OR",
+    "1  recipe Sourdough Danish",
+    "1  large egg for egg wash",
+    "¼ cup apple jelly (or apricot preserves)",
+    "2-3 teaspoons milk",
+    "2 oz confectioner’s sugar (½ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Make the Apple Filling",
+    "Assembly:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "188 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "2 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "0.1 mg",
+    "sodiumContent": "80 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "15 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "[Apple Filling]",
+    "1 ½ pounds apples (peeled, cored and cut into 1/2″ cubes)",
+    "2 oz brown sugar (¼ cup)",
+    "4 oz apple cider (½ cup, or apple juice)",
+    "⅛ teaspoon salt",
+    "½ teaspoon ground cinnamon",
+    "½ teaspoon vanilla extract",
+    "1 tablespoon cornstarch",
+    "[Assembly]",
+    "1 recipe Danish Dough",
+    "OR",
+    "1 recipe Sourdough Danish",
+    "1 large egg for egg wash",
+    "¼ cup apple jelly (or apricot preserves)",
+    "2-3 teaspoons milk",
+    "2 oz confectioner’s sugar (½ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

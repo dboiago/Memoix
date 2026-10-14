@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Brown Butter Hazelnut Chocolate Madeleines",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the butter into a small saucepan and place over medium heat. Cook the butter until melted, once melted it will start spattering, this is the water cooking out of the butter, it will then foam up and the milk solids will sink to the bottom of the pan and then brown. Once the butter starts to foam, keep your eyes on the butter because it can go from browned to burnt very quickly. Tip the butter into a small bowl, making sure to scrape out all of the browned milk solids, add the water or milk and then set aside to cool slightly.",
+      "To make the batter place the sugar, eggs and vanilla and whisk briefly just until the sugar has dissolved, you don’t need to incorporate any air in this stage.",
+      "Sieve the flour, baking powder and salt into the batter and using the whisk stir together until a smooth and thick batter is formed. Pour in the melted browned butter and stir until a smooth batter is formed. Scrape the batter into a piping bag then seal either by tying the end in a not or using a sandwich bag clip. Refrigerate the batter for at least an hour but preferably overnight.",
+      "When ready to bake preheat the oven to 210ºC (190ºC Fan). Whilst the oven preheats lightly grease a 12-hole Madeleine pan (I prefer traditional metal tins without a non-stick coating) with softened butter and dust with a thin layer of flour. Tip out any excess flour so that you have a very thin coating. Place the tin into the freezer.",
+      "To make the madeleines, make the batter as above using the browned butter. Once you have piped the madeleines scatter the chopped hazelnuts over the madeleines before baking. Bake for 10-12 minutes until the madeleines are risen and browned around the edges but still a little pale in the centre. Remove from the oven and allow to cool for a minute or so before turning out from the tin to cool.",
+      "When the madeleines have cooled scrape the chocolate spread into a piping bag fitted with a thin narrow piping tip (a Bismarck tip is perfect for this). Stick the piping tip into the middle of the Madeleine and pipe in some of the spread.",
+      "To coat the madeleines in chocolate you can simply melt the chocolate or if you want a more polished and professional finish you can also temper the chocolate. Whichever method you choose simply add about a tablespoon of chocolate to each depression in your Madeleine tin and gently press in a Madeleine to each depression. Place the tray into the freezer for 10-15 until the chocolate is set then turn out and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "or milk",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Hazelnut Spread",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4287aa0c0dcc6e6ecc87714bc60ec58663129240bbebea8861eb555dc1cd1eeb",
+    "lineage_hash": "3d2f8e41f45acba01047737e5f2e0caf29f43f64a625db2dee94904dc001e88f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/8/11/brown-butter-hazelnut-chocolate-madeleines",
+    "fetchedAt": "2026-08-01T16:14:46.829Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/8/11/brown-butter-hazelnut-chocolate-madeleines",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

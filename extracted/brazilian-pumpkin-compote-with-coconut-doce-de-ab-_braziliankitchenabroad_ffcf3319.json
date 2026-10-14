@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Brazilian Pumpkin Compote with Coconut",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "215",
+      "carbohydrateContent": "38",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Add all ingredients except the coconut to a medium-large Dutch oven or heavy-bottomed pot, and stir to combine.",
+      "Cover the pot, and cook over medium-high heat, stirring occasionally, for 20-30 minutes or until the pumpkin is soft enough to mash with the back of a spoon.",
+      "Once soft, uncover the pot, and cook for an additional 20 minutes, or until the water from the pumpkin has evaporated. This is extremely important. Otherwise, the texture will be too soggy.",
+      "Add the shredded coconut and cook for another 3-5 minutes. If using fresh coconut, cook slightly longer to prevent spoilage.",
+      "Once beautiful and thickened, transfer to mason jars or airtight containers and allow it to cool completely before sealing and refrigerating.",
+      "Serve warm or cold, by itself or with cheese."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin* Peeled",
+        "unit": "lb",
+        "notes": "seeded and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": "alt: 1 teaspoon vanilla extract",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened",
+        "unit": "C",
+        "notes": "shredded coconut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8cadb1da28385a1e706e81ae5d1f70dfe7817d2dbb3336fdbf4da5bffc7fa97b",
+    "lineage_hash": "c3f7d14c0fc7b184c623eaea90ef359d917557baac1be12823596c42e18516a1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-pumpkin-compote-with-coconut-doce-de-abobora-com-coco/",
+    "fetchedAt": "2026-09-26T01:48:54.044Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-pumpkin-compote-with-coconut-doce-de-abobora-com-coco/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,56 @@
+{
+  "recipe": {
+    "name": "Cajun Thunder",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Shot",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "75",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "POUR ingredients into glass and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Southern Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Hot Pepper Sauce",
+        "unit": "drop",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f2604bd6d2bc57bde0b6fed316fe1f0b90c9b0cce3a96372800a544701f0bcf",
+    "lineage_hash": "6082c4fa3fdecafe581e126bf3da8d0552bd9800242d354d839687ae006fdba5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/3062/cajun-thunder",
+    "fetchedAt": "2026-08-03T09:02:39.984Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/3062/cajun-thunder",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

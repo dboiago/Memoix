@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Cheesecake with Passion Fruit and Vanilla",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare your mould for the cheesecake. Place a 20cm x 20cm x 4cm pastry frame on a very flat baking tray so that the bottom sits flush against the tray. Set aside",
+      "To make this vanilla cheesecake recipe start by creaming the mascarpone and cream cheese in a mixing bowl. In a heavy based saucepan bring the double cream, sugar, lemon and orange zests and vanilla to the boil. Remove from the heat, strain into a clean pan and allow to cool slightly",
+      "Add the gelatine to the pan with the cream and stir well while heating through. When the gelatine has melted, remove from the heat and save for later",
+      "Crush the biscuits in a food processor or put them in a plastic bag and bash with a rolling pin. Stir the butter into the food processor bowl and then press the mixture into the mould",
+      "Fold the cream mix into the mascarpone mix and combine thoroughly. Pour onto the biscuit base in the mould. Leave approximately 5mm from the top for the jelly and allow to set",
+      "To make the jelly, soak the gelatine in cold water for about 5 minutes, until soft and pliable. Heat the purée, sugar and water in a pan. Add the drained gelatine and let it melt into the mix. Turn off the heat and allow the mixture to settle to room temperature",
+      "Once cool but not set, pour the passion fruit jelly over the set cheesecake to fill the remaining 5mm. Allow to set in the fridge for a couple of hours",
+      "Once set, remove the vanilla cheesecake from the mould and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "large",
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0a7d208f480bb8a51dc671f44368bf378d8e93e247a3415e8d09fdda283f3a60",
+    "lineage_hash": "bcabf2708e73708a6f6216ad97fbc1662e6c5e3ba0bb59f0c2c0bf686e251b40"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/passion-fruit-vanilla-cheesecake-recipe",
+    "fetchedAt": "2026-08-03T18:38:52.626Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/passion-fruit-vanilla-cheesecake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

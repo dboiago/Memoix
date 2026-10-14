@@ -1,0 +1,40 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-and-apricot-crumble",
+  "slug": "apple-and-apricot-crumble_lacucinaitaliana_463ee474",
+  "title": "Apple and Apricot Crumble",
+  "byline": "by  Editorial staff   July 12, 2021",
+  "fetchedAt": "2026-08-03T05:29:52.291Z",
+  "ldName": "Apple and Apricot Crumble",
+  "ldTime": "PT25M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Apricots,Mele,Torte",
+  "ldIngredientsRaw": [
+    "7CUPS rennet apples",
+    "2/3CUP cane sugar",
+    "9TBSP. unsalted butter, softened",
+    "1CUP all-purpose flour",
+    "2OZ. dried, pitted apricots",
+    "ground cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Preheat the oven to 410°F.&nbsp;</p>",
+    "<p>Peel and core the apples and cut them into cubes. Arrange in a single layer in a round baking dish suitable for serving. Chop the apricots into small pieces and distribute over the apples. Sprinkle the fruit with 2 Tbsp. sugar.</p>",
+    "<p>Mix the softened butter with the remaining sugar (1/2 cup), the flour and a dash of cinnamon to form a crumbly dough. Cover the apples and apricots with the crumble. Bake in the preheated oven for around 20 minutes. Serve warm.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "7 CUPS of rennet apples",
+    "2/3 CUP of cane sugar",
+    "9 TBSP. of unsalted butter, softened",
+    "1 CUP of all-purpose flour",
+    "2 OZ. of dried, pitted apricots",
+    "ground cinnamon"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

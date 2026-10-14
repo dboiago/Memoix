@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crispy Chicken Finger (खस्ता चिकन फिंगर)",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add refined flour, corn flour, black pepper powder.",
+      "Add garlic powder, italian seasoning, degi red chilli powder, salt to taste.",
+      "Add some water to make a paste just enough to coat the chicken pieces well.",
+      "Add chicken strips in the batter and then coat in corn flakes from all the sides.",
+      "Repeat this step for the rest of the chicken strips.",
+      "When oil is hot enough ,deep fry chicken strips until golden brown on both sides. Remove & drain on a paper towel.",
+      "Serve crispy & crunchy chicken fingers with tomato"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½-¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "boneless, cut in strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flakes / Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1ac528f9309e11a3dcfd0587558ee0be59f292c041d3a4e40ff2382fadae3c0",
+    "lineage_hash": "c5341a6b30580c43b699d68367a8ed175ba22d5b9f8acc425062b0730734fb22"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-chicken-finger/",
+    "fetchedAt": "2026-08-02T14:30:31.739Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-chicken-finger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

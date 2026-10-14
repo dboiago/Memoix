@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Ciammotta (Summer Vegetable Stew)",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a large saucepan, then add the onion, garlic and chilli flakes. Sweat on a medium heat until the onions are translucent and keep stirring to prevent the garlic from burning",
+      "Add the chopped vegetables along with the tinned tomatoes and leave to simmer for 1 hour. If the liquid reduces too much, top up with a little stock or water",
+      "Fold through plenty of torn basil and serve immediately or at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergine",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "San Marzano Tomatoes",
+        "unit": "g",
+        "notes": "tinned",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9094a287534fcd592580b1c0ec22ffe6643406ad38ff384b7afbe3c9af54ad0c",
+    "lineage_hash": "ce65c58a461b1fcab0231c756d96e9bebb4639c52ef6719023b7036a9d4f71e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/ciammotta-recipe",
+    "fetchedAt": "2026-08-01T16:24:17.916Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/ciammotta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

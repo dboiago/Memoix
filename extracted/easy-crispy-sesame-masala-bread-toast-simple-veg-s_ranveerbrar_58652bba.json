@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Crispy Sesame Masala Bread Toast (Simple Veg Sandwich)",
+    "time": "30-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add crushed sweet corn kernels, chopped carrot, french beans, green chillies, ginger, toasted sesame seeds, salt, coriander leaves, grated potatoes and mix everything properly until well combined.",
+      "Take sliced bread and sprinkle some water on them then spread a big spoonful of the vegetable sesame mixture on the bread properly and evenly.",
+      "Now apply sesame seeds on the mixture and shallow fry in medium hot oil until golden brown and crispy from both sides.",
+      "Remove and cut the edges of the bread and serve in it by cutting in your desired shape with Sesame Garlic Ketchup.",
+      "In a pan heat oil and add chopped garlic saute until fragrant.",
+      "Now add sesame seeds saute for a few seconds then switch off the flames and add degi red chilli powder mix it once.",
+      "Then add water, tomato ketchup and mix everything properly. Keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Corn Kernels",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8-10",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Sesame Seeds",
+        "unit": null,
+        "notes": "lightly toasted",
+        "amount": "2-3",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & grated",
+        "amount": "2",
+        "section": "For Vegetable Sesame Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "for coating",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Garlic",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sesame Garlic Ketchup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "503726e9837e929338c9a393be1be1e081286b8ec05379812edc8b14e0158880",
+    "lineage_hash": "43766a689f18f6aa9af2e2f4c1711bdcdfa0b8c6fec09eccde83cbcee179586b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-sesame-masala-bread-toast/",
+    "fetchedAt": "2026-08-01T21:12:03.546Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-sesame-masala-bread-toast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

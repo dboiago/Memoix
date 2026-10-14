@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Cherry Pie with Flaky Crust",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt 1 stick of butter in 3/4 cup of water with a pinch of salt and 1/4 cup of granulated sugar; place 3 cups of the 00 flour in a bowl and add in the butter mixture; combine to obtain a soft dough; let it cool, then let it chill in the fridge for 1 hour.",
+      "Cream the rest of the butter with the powdered sugar until fluffy. In a separate bowl, beat the egg yolks with 1/4 cup of the granulated sugar until fluffy, then add to the butter.",
+      "Mix the rest of the 00 flour with the almond flour and hazelnut flour. Melt the chocolate and combine it with the butter mixture and the flour mixture. Beat the egg whites to stiff peaks with the rest of the granulated sugar and gently incorporate them into the batter, folding from the bottom upwards.",
+      "Roll out the dough until it is about 1/8-inch thick; butter and flour a springform pan (7 1/2-inch diameter, 3-inch height) and line it with the dough. Add in the black cherries, then pour the batter on top. Bake at 350°F.",
+      "After 40 minutes, cover the pie with aluminum foil and continue baking for another 20 minutes. Then turn off the oven and leave the pie inside for another 10 minutes. Remove the pie from the oven and let it cool; garnish to taste with dark chocolate shavings."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Italian 00 Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cherries in Syrup",
+        "unit": "C",
+        "notes": "drained",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c82ce08c7a03ec74e853c670fafaaf9e386d2ee806f0f74cba66f487b2bd57c",
+    "lineage_hash": "b9f2fcbed6e91a7aee9ea90ce042fb285fc8d7d83e71536d53ac096d1e3ff32c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cherry-pie-with-flaky-crust",
+    "fetchedAt": "2026-08-01T20:20:45.439Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cherry-pie-with-flaky-crust",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

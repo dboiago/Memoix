@@ -1,0 +1,354 @@
+{
+  "recipe": {
+    "name": "Curried Chickpea Veggie Burger",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by pickling the cucumber. Place the vinegar, sugar, spices and salt in a pan over a medium heat. Stir to dissolve the sugar and bring to the boil, then remove from the heat and leave to cool. Strain through a fine sieve into a bowl and transfer to the fridge to chill",
+      "Once chilled, slice the cucumber into 4mm thick rounds and place in a jar or container. Pour over the chilled vinegar solution, cover and return to the fridge for 3 days to pickle – it is important that the solution is cold as this will preserve the green colour of the cucumber",
+      "Place the chickpeas in a bowl and cover with cold water. Place in the fridge and leave to soak overnight before using",
+      "Once soaked, drain and rinse the chickpeas. Place in a large pan and cover with cold water. Place over a medium heat and cook for 40–50 minutes, or until tender. Drain through a colander",
+      "Place the chopped onions, garlic and dry spices in a frying pan over a medium heat and cook until softened but not coloured. Transfer to a food processor with half of the cooked chickpeas, the lemon zest and juice and 50g of the panko breadcrumbs. Blitz to combine",
+      "Scrape the spiced burger mixture into a bowl and fold in the remaining chickpeas, fresh herbs and seasoning. Divide the mixture into 4  and form into burger patties. Place on a tray in the fridge for at least 20 minutes to firm up",
+      "To make the chips, place the potatoes in a large pan and cover with cold water. Season well with salt – about 15g per 500ml of water – and place over a high heat. When barely at a simmer, remove from the heat and drain the chips through a colander. Allow to steam in the residual heat for 5 minutes then spread the chips out on a tray to cool",
+      "For the coleslaw, place all the vegetables in a colander over the sink. Sprinkle over a little salt and mix through the vegetables. Repeat this so the salt is evenly distributed then leave for 15 minutes to draw out excess moisture",
+      "For the lemon mayonnaise, place the lemon juice in a small pan over a medium heat. Allow to gently simmer until reduced by half then set aside to cool to room temperature. Once cooled, place in a bowl with the egg yolks, salt and mustard then start whisking together",
+      "Slowly trickle in the rapeseed oil while still whisking until the mixture thickens and emulsifies – you may not need all of the oil. Set aside until ready to serve",
+      "When ready to cook, preheat the deep-fryer to 140°C",
+      "Fry the chips for a few minutes until soft but still pale and holding their shape. Lift the chips out of the oil and increase the temperature to 180°C. Return the chips to the fryer and cook for 3–5 minutes until crisp and golden. Maintain the heat of the fryer for the burger and leave the chips to drain on kitchen paper",
+      "For the burgers, place the  flour in a shallow dish and season well. Place the beaten eggs in another dish and the remaining 100g of panko breadcrumbs in a third. Coat the chilled burger patties first in the flour, then eggs, then breadcrumbs",
+      "Fry the coated burgers in the deep fryer for about 5 minutes until golden and piping hot all the way through. Drain any excess oil on kitchen paper before serving",
+      "Shake out any excess moisture from the coleslaw vegetables and transfer to a bowl. Mix in 1–2 tablespoons of the lemon mayonnaise and stir well so everything is lightly coated",
+      "Halve and lightly toast the burger buns, then layer up the chutney, lettuce leaves, tomato slices, burgers, pickled cucumber and lemon mayonnaise. Serve with the coleslaw and chips on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": "cut into 2cm chips",
+        "amount": "900",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "435",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savoy Cabbage",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burger Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": null,
+        "notes": "leaves separated and washed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Tomatoes",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chutney",
+        "unit": null,
+        "notes": "tomato and chilli (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3856e3b7b8c3a64b3d9421e4382dafa6f4c80f446b4754be1492dbfd9902be48",
+    "lineage_hash": "692e83af7d39cfcffb2c717e9a633450899d8ff7267a4bafeb8069e8f4ad399d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chickpea-veggie-burger-recipe",
+    "fetchedAt": "2026-08-03T13:32:08.006Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chickpea-veggie-burger-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

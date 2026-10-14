@@ -1,0 +1,62 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-egg-drop-soup/",
+  "slug": "chinese-egg-drop-soup_omnivorescookbook_f0432c9d",
+  "title": "Chinese Egg Drop Soup",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T10:38:05.349Z",
+  "ldName": "Chinese Egg Drop Soup",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side, Soup",
+  "ldKeywords": "comfort food, takeout",
+  "ldIngredientsRaw": [
+    "4 cups chicken broth",
+    "2  green onions (, sliced, white and green parts separated)",
+    "2 slices ginger",
+    "2 tablespoons cornstarch ((*Footnote 1))",
+    "1 teaspoon chicken bouillon powder (, or 3/4 teaspoon salt (*Footnote 2))",
+    "1/4 teaspoon white pepper powder",
+    "1/8 teaspoon turmeric powder (, for the yellow color (Optional))",
+    "2 to 3  large eggs (, beaten (*Footnote 3))",
+    "2 teaspoons sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the chicken broth, the white part of the green onion and ginger in a small pot. Cook over high heat until brought to a boil. Turn to low heat and let the soup reduce to a simmer.",
+    "Combine cornstarch, chicken bouillon, sea salt, white pepper, turmeric, and 2 tablespoons of water in a small bowl. Whisk until cornstarch is completely dissolved. Swirl into the soup and mix well with a spatula. Stir and cook until the soup thickens.",
+    "To add eggs, make sure the soup is simmering. (*Footnote 4) Hold a fork (or two chopsticks slightly apart) across the top of a small bowl, drizzle the egg mixture in 3 batches into the soup, where no egg strands have formed. Let the eggs sit for at least 10 to 20 seconds to make sure they have cooked, then stir gently to break up the egg to the desired sized pieces. Then keep drizzling and breaking up the rest of the egg mixture. (*Footnote 5)",
+    "Turn off the heat. Drizzle sesame oil and sprinkle with the green part of the green onion. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "52 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "2 g",
+    "fatContent": "3 g",
+    "cholesterolContent": "5 mg",
+    "sodiumContent": "857 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "1 g",
+    "saturatedFatContent": "0.3 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "4 cups chicken broth",
+    "2 green onions , sliced, white and green parts separated",
+    "2 slices ginger",
+    "2 tablespoons cornstarch (*Footnote 1)",
+    "1 teaspoon chicken bouillon powder , or 3/4 teaspoon salt (*Footnote 2)",
+    "1/4 teaspoon white pepper powder",
+    "1/8 teaspoon turmeric powder , for the yellow color (Optional)",
+    "2 to 3 large eggs , beaten (*Footnote 3)",
+    "2 teaspoons sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

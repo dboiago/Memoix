@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Brazilian Contessa",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "172",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of orange slice wheel.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+      "Garnish with orange slice wheel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange-red Aperitivo",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49a31c9cfbb3a9114309bb03b67afb82ca60cfb99424636dfd50d7250a7a6609",
+    "lineage_hash": "35b1bd9888b5bcccdfb2c871bb2a0b217583de0ecbb3ab3bb1d7d926c522e21c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/33254/brazilian-contessa",
+    "fetchedAt": "2026-08-03T22:04:35.278Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/33254/brazilian-contessa",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

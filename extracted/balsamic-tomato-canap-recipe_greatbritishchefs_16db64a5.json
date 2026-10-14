@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Balsamic Tomato Canapé",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the pastry from the fridge and allow to come up to room temperature before using",
+      "Preheat the oven to 200°C/gas mark 6, and line 2 baking sheets with greaseproof paper",
+      "Heat a frying pan and add the cherry tomatoes - do not use any oil. When the tomatoes start to crack, add a good slug of balsamic vinegar to the pan. This will seep into the cracks and caramelise slightly in the heat of the pan",
+      "Remove the tomatoes from the pan and set aside until you need them",
+      "Now make the pesto. Whizz up all the ingredients in a food processor or bash the basil, garlic and nuts in a pestle and mortar, before adding the oil and seasoning",
+      "Roll out half of the pastry and cut out little circles using a shot glass or egg cup - something just a little bigger than the cherry tomatoes",
+      "Place the circles on one of the baking trays and top each with a little dollop of pesto and a cherry tomato. Bake in the oven for approximately 15 minutes until the pastry has risen and is golden",
+      "While the first batch is baking, prepare the second batch. Serve warm"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": "chilled",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": "salted",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "475eb900f6440fa2bbf881ee071036841edffd95328e1197d3a32429ca0961c3",
+    "lineage_hash": "3e7ee986bf47d9800e5aafa206e41ff834da04e47af09778114ab5653661f709"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/balsamic-tomato-pesto-canapes-recipe",
+    "fetchedAt": "2026-08-03T23:38:16.938Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/balsamic-tomato-pesto-canapes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

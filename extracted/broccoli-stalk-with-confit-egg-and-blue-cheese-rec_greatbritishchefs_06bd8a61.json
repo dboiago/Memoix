@@ -1,0 +1,320 @@
+{
+  "recipe": {
+    "name": "Broccoli Stalk with Confit Egg and Blue Cheese",
+    "time": "2 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The green powder scattered over the top of this dish is used regularly at Ivan's restaurant Native. He takes the tops of vegetables and any green leaves that would otherwise go to waste, dehydrates them (using a dehydrator or a low oven) until crisp, then blitzes them into a powder. This step is optional, but it's a great way to utilise ingredients that would otherwise be thrown away",
+      "Preheat a water bath to 63°C. Place the yolks in a small metal tray and pour over the oil. Agitate the tray gently to ensure that the yolks aren’t stuck together. Place the tray in the water bath and leave to cook for 1 hour. Once ready, leave submerged in the oil until needed. Alternatively, if you don’t have a water bath at home, you can confit the egg yolks in a very low oven",
+      "To make the onion jam, place a saucepan over a medium heat and, once hot, add a dash of oil. Add the onions and slowly caramelise until golden and soft. Add the sugar and cook until the sugar turns to caramel, then deglaze the pan with the vinegar. Add the water, then cook the mixture out until reduced to a jam consistency. Keep a close eye on the jam to ensure it doesn’t burn",
+      "For the broccoli purée, melt the butter in a saucepan and add the cream and milk. Remove from the heat and add the bicarbonate of soda",
+      "Add the mixture to a Thermomix with the raw broccoli and blend at 90°C for 10 minutes, until smooth. Spread the purée on a tray and chill quickly. If you don’t have a Thermomix at home, you can cook all of the ingredients together in a pan until soft and then blend until smooth, but you may risk losing some colour vibrancy. Taste for seasoning",
+      "To make the dressing, add all of the ingredients to a narrow, tall container, and blend until smooth with a stick blender. Pass through a fine sieve to remove any lumps and set aside",
+      "For the crispy kale leaves, spread the leaves out on a baking tray and drizzle with the oil. Scrunch together using your hands to coat the leaves, then top with another baking tray and bake for 5 minutes. Mix the salt and sugar together then use to season the kale",
+      "To prepare the broccoli stalks, peel away the tough outer layer of the stalks, then slice in half lengthways. Cook in salted boiling water for 8 minutes, then transfer to iced water to halt the cooking process. Set aside",
+      "When ready to serve, preheat a deep-fryer to 180°C",
+      "For the tempura radishes, add the flour to a bowl with a pinch of salt. Gradually whisk in the cold water to make a smooth batter",
+      "Working in batches, dip the radishes into the batter, then deep-fry until lightly coloured and crisp. Drain on kitchen paper and season with salt",
+      "Gently reheat the onion jam, broccoli purée, and blue cheese dressing. Transfer the dressing to a squeezy bottle",
+      "To cook the broccoli stalks, add a large knob of butter to a hot pan and allow to bubble until it starts to brown slightly. Add the slices of stalk and cook until caramelised, then add the honey and cook for 2 minutes. Deglaze the pan with vinegar",
+      "To plate, add a spoonful of onion jam on to one side of each plate, making an indentation in the middle. Pipe zigzags of the blue cheese dressing onto the plate, working around the jam. Spoon the broccoli purée loosely on top, then place a broccoli stalk over the purée. Arrange the crispy kale leaves and radishes around the plate. Finally, very carefully drain the confit egg yolks from the oil and place in the indentations on top of the onion jam. Sprinkle the yolks with the finely chopped broccoli and dust the entire plate with the green powder (if using). Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "g",
+        "notes": "washed and chopped",
+        "amount": "285",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "77",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stilton",
+        "unit": "g",
+        "notes": "ideally Colston Bassett Stilton",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "g",
+        "notes": "or broccoli leaves if you can get them",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gluten-free Self-raising Flour",
+        "unit": "g",
+        "notes": "Ivan uses Doves Farm",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "cold",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breakfast Radishes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": null,
+        "notes": "stalks only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Tops",
+        "unit": null,
+        "notes": "turnip tops and green leaves (anything that would normally go to waste)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "g",
+        "notes": "florets only, finely chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "999f0f03f1cc7839c70f8ff254c2891f1b8d19b6be7214d150e29cdca363c107",
+    "lineage_hash": "21450e5d436f3030d47d0fe1f658ac7172a2e1382ea3810e003a027c774eed2c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/broccoli-egg-blue-cheese-recipe",
+    "fetchedAt": "2026-08-03T05:12:12.137Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/broccoli-egg-blue-cheese-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

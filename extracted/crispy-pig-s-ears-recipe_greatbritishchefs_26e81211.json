@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Crispy Pig's Ears",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the ears and place into a pan of cold water. Bring to the boil and then remove from the heat after 3 minutes",
+      "In a separate pan, add the shallots, carrot, leek, bay leaf, thyme and peppercorns and then add the ears. Cover with water, place on a low-medium heat and simmer for 2-3 hours",
+      "You will know the ears are cooked when a knife passes through them easily. Remove the ears from the pan. Place between 2 sheets of greaseproof paper and press down with weights - blocks of butter will work well",
+      "Once cool, slice into 5cm long by 1/2cm wide strips. Prepare 3 bowls and dust each strip of ear in flour, egg and finally breadcrumbs. Set aside until needed",
+      "For the tartare sauce, add the shallots, capers, gherkins and hard boiled egg into a bowl and mix with mayonnaise. Add a dash of lemon juice, the nasturtiums and parsley and mix through. Season to taste and set aside",
+      "Heat the vegetable oil to 180˚C and deep fry the ears until golden brown. Drain, season and serve with the tartare sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pigs' Ears",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs (1)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Mayonnaise",
+        "unit": "g",
+        "notes": "store bought will also work",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gherkins",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "hard boiled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Nasturtium Flowers and Leaves",
+        "unit": null,
+        "notes": "if available",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af908a1729e9e1bde2e29fa146baea9edb90f26cec111c7ec4ee608e67298d91",
+    "lineage_hash": "dbd343198855499b8c719d42b0ef5e132b5fb40586e48f6e0b1685977ce4da7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-pigs-ears-recipe",
+    "fetchedAt": "2026-08-03T15:44:45.780Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-pigs-ears-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

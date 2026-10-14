@@ -1,0 +1,60 @@
+{
+  "url": "https://www.chopstickchronicles.com/creme-caramel/",
+  "slug": "cr-me-caramel-recipe-chopstick-chronicles_chopstickchronicles_bf0c5c67",
+  "title": "Crème Caramel Recipe 低糖質プリン - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:08:48.152Z",
+  "ldName": "Crème Caramel Low Carb 低糖質プリン",
+  "ldTime": "PT70M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Europian/Japanese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "creme caramel, low carb creme caramel",
+  "ldIngredientsRaw": [
+    "3  eggs",
+    "300 ml milk",
+    "75 g monk fruit sugar",
+    "vanilla essence",
+    "½ tsp gelatin powder",
+    "½ tsp instant coffee",
+    "¼ cup water",
+    "1 tbsp monk fruit sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Custard",
+    "Mock Caramel Sauce"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "96 kcal",
+    "carbohydrateContent": "3.7 g",
+    "proteinContent": "8.4 g",
+    "fatContent": "6.3 g",
+    "saturatedFatContent": "2.6 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "146.5 mg",
+    "sodiumContent": "88.8 mg",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "0.8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[custard]",
+    "▢ 3 eggs",
+    "▢ 300 ml milk",
+    "▢ 75 g monk fruit sugar",
+    "▢ vanilla essence",
+    "[caramel]",
+    "▢ ½ tsp gelatin powder",
+    "▢ ½ tsp instant coffee",
+    "▢ ¼ cup water",
+    "▢ 1 tbsp monk fruit sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

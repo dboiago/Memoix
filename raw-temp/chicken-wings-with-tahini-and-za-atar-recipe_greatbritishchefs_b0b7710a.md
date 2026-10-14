@@ -1,0 +1,3 @@
+Helen says: _"These wings went down a storm when I cooked them for a Lebanese-themed supper club in collaboration with Château Ka – a winery based out in the Beqaa Valley. The wings at that supper club were oven-cooked not grilled but trust me, they absolutely would’ve been had I had access to a barbecue."_
+
+_"Could you use shop-bought za’atar for this? Absolutely, although it won’t be the same dish, so please bear that in mind. The recipe below makes a large batch, tastes about 1,000 times nicer and is good for throwing on anything from your eggs in the morning to flatbreads, salads and grilled fish. Both the tahini sauce and za’atar can be made the day before."_

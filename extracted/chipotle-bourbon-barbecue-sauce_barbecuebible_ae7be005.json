@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Chipotle Bourbon Barbecue Sauce",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ingredients in a heavy saucepan and whisk to mix. Bring to a boil over medium-high heat, whisking often. Reduce the heat to obtain a gentle simmer and simmer the sauce, uncovered, until thick and richly flavored, 5 minutes or as needed. Correct the seasoning, adding salt and pepper to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Sweet Chili Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Chipotle Chiles",
+        "unit": null,
+        "notes": "minced with 1 to 2 teaspoons can juices",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly and Finely Grated Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "561b86727766dcdb6c9736097d59ffc6a28dd6a11906124b58cf3671c24d378c",
+    "lineage_hash": "0fb91cdc65f08dca6bd494f1b55733effd9aaf8171e8cf66848f5a01ae911c79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-bourbon-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T07:27:07.449Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-bourbon-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

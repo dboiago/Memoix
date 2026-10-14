@@ -1,0 +1,316 @@
+{
+  "recipe": {
+    "name": "Confit Pollock",
+    "time": "2 hr 55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the cockles, thoroughly wash and scrub under cold water, discarding any that are broken. If the shells are open, give them a light tap; if they do not close, discard",
+      "Place a pan over a medium heat and add a dash of oil. Once hot, add the celery and carrot and cook until slightly coloured. Add the shallot and allow to caramelise but not burn",
+      "Once the vegetables are nicely caramelised, add the herbs and spices and cook for 1-2 minutes, stirring occasionally. Add the wine and bring to the boil, then add the cockles. Cover the pan quickly with a lid and steam the cockles for approximately 4 minutes until they have opened, shaking the pan as they cook",
+      "Tip the cockles into a colander and strain away the liquid, discarding any cockles that have not opened. Remove the meat from the shells and set aside in the fridge until needed",
+      "To prepare the white cauliflower, remove the outer green leaves and the base of the stem. Cut or break up into small, bite-sized florets",
+      "Add the butter to a heavy-based pan and heat until foaming, then add the cauliflower florets and a pinch of salt. Cover and cook on a low heat until tender, make sure the cauliflower doesn’t take on any colour",
+      "Add the vegetable stock to a separate pan and reduce by half. Add the double cream, bring back to the boil and remove from the heat",
+      "Place the cauliflower in a blender with half of the stock and cream mixture. Blitz until smooth,  gradually adding the remainder of the liquid to achieve the thick purée consistency. Pour into a pan, season to taste with salt, cover and set aside",
+      "Now prepare the purple cauliflower. Place the sugar and vinegar in a pan and bring to the boil, then remove from the heat and set aside to cool. Thinly slice the purple florets and place in the sugar and vinegar solution to lightly pickle for 30 seconds",
+      "Drain the cauliflower and set aside. You can reserve or freeze the liquid for other homemade pickling if desired",
+      "Finely grate 200g of the Romanesco cauliflower florets. Add the butter to a heavy-based pan and once foaming, add the grated cauliflower. Cook on a high heat for 30 seconds then drain off excess butter, season and set aside until needed",
+      "For the Parmesan gel, bring the Parmesan and water to the boil. Remove from the heat and leave to infuse for 30 minutes, depending on how strong the cheese is",
+      "Pass through a sieve and sprinkle in the ultratex, blitzing with a hand blender until the gel thickens. Season with salt and transfer to a squeezy bottle",
+      "To make the curing mix for the pollock, mix all of the marinade ingredients together, then cover the pollock loin in the mixture. Wrap tightly in cling film and leave to marinate for 20 minutes",
+      "After 20 minutes, rinse the pollock loin under cold water and pat dry with kitchen paper. Cut the pollock into 80g pieces, wrap in clingfilm and tightly seal in a vac pac bag - this will ensure the fish holds its shape",
+      "Place in the water bath, ensuring the fish is completely submerged and set at 54°C for 14 minutes. Remove the pollock and set aside in a warm place",
+      "To serve, place a portion of confit pollock onto each plate. Loosely quenelle the cauliflower purée and arrange around the pollock in a triangular formation",
+      "Scatter the Romanesco cauliflower, cockles, pickled purple cauliflower and grated Parmesan in a circle around the pollock. Drizzle the Parmesan gel around the edge of the dish and garnish with celery cress. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pollock Loin",
+        "unit": "g",
+        "notes": "pin-boned and skinned",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cockles",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and cut into 1cm dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "peeled and cut into 1cm dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "cut into 1cm dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Purple Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Romanesco",
+        "unit": null,
+        "notes": "broken into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ultratex",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "351164377266891149cd96f9ab5d1106d3727436a8124dcef14b26cbc6d6ad2a",
+    "lineage_hash": "40743c116e457e68f001ecb935bd54254997dab60d2b8b963f076324837020e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-pollock-recipe",
+    "fetchedAt": "2026-08-03T22:24:33.489Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-pollock-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

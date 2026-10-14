@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Cuttlefish Salad With Ink Vinaigrette",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make this cuttlefish recipe, begin by chopping the onion and carrots, quarter the tomatoes and crush the garlic",
+      "Melt the butter in a large saucepan over a medium heat, stir in the vegetables and fry gently, without colouring, for about 5 minutes or until softened",
+      "Pour in the wine. Increase the heat to high and boil until the wine has reduced to about a teaspoon of liquid, then pour in the fish stock. Bring to a simmer",
+      "Clean the cuttlefish, leaving it whole, and set the cuttlefish ink aside",
+      "Once the pan is simmering, add the cuttlefish. Reduce the heat to low and simmer for 1½ hours, or until the cuttlefish is tender",
+      "Strain the contents of the pan through a sieve into a bowl and leave the collected cooking liquor and cuttlefish to cool",
+      "When the cuttlefish is cool enough to handle, slice across the body into 2cm-thick strips and set aside",
+      "To make the vinaigrette, finely chop the shallots and place in a bowl with the vinegar",
+      "Measure out 75ml of the reserved cooking liquor, add to the bowl and leave to stand for 30 minutes",
+      "Stir 1 tablespoon of the cuttlefish ink into the shallot mixture, then whisk in the olive oil. Season with salt",
+      "Pour about half the vinaigrette into a small saucepan and warm very gently over a low heat – do not let it boil. Add the sliced cuttlefish and heat through for 2-3 minutes",
+      "Meanwhile, bring a large saucepan of salted water to the boil",
+      "Add the purple sprouting broccoli and simmer for 2 minutes, until just tender. Drain and place in a large bowl",
+      "Chop the tarragon and add to the broccoli with the capers",
+      "Gently stir in the warm vinaigrette and cuttlefish",
+      "Add lemon juice to taste and season with sea salt and black pepper",
+      "Spoon the cuttlefish recipe onto serving plates and serve with the remaining vinaigrette in a jug on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Cuttlefish",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Purple Sprouting Broccoli Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c0e223da90ee4a08e7ee2dad38ffd5557756a5bda62f5cedfe05696a0e5613d",
+    "lineage_hash": "98d44419e46ebfae7ce8e7ca8ead0be172be9e796f52e17109cc4c73694161b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-cuttlefish-salad-ink-vinaigrette",
+    "fetchedAt": "2026-08-03T22:26:44.974Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-cuttlefish-salad-ink-vinaigrette",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

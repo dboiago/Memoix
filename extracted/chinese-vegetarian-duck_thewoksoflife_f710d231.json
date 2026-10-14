@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Chinese Vegetarian Duck (素鸭)",
+    "time": "4 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "220",
+      "carbohydrateContent": "18",
+      "fatContent": "15",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Rinse the shiitake mushrooms clean, and soak them in 2 cups of hot water for 2-3 hours, until they are completely rehydrated. Reserve the water they soaked in.",
+      "Julienne the bamboo shoots, carrots, and ginger, and set aside. Once the shitake mushrooms are done soaking, squeeze out any excess water, remove the tough stems, and thinly slice them.",
+      "With your wok over medium heat, add 3 tablespoons oil. Add the ginger, and cook for 20 seconds. Add the carrots, and stir-fry for 1 minute. Add the mushrooms and bamboo shoots, turn up the heat, and and cook for another 2-3 minutes, until fragrant.",
+      "Stir in the Shaoxing wine, light soy sauce, and vegetarian oyster sauce. Continue cooking until all the liquid has reduced. Remove from the wok, and let the filling cool.",
+      "Prepare your steamer with enough water for 12 minutes of steaming over high heat, and bring to a boil.",
+      "Lay out one of your sheets of bean curd on a clean work surface. Take your mixture of vegetarian oyster sauce and water, and brush lightly onto one of the sheets. Stack another sheet on top and brush that one too with the oyster sauce mixture.",
+      "Add half of the filling to the lower part of the bean curd circle (about 5 inches/13 cm) from the edge closest to you), arranging it in a roughly 7x3 inch horizontal rectangle. Fold the sheet over the filling tightly. Fold the sides over the middle, and continue rolling tightly until you’ve formed a rectangular roll. Repeat with another 2 sheets of bean curd skin and the other half of the filling.",
+      "With the opening side down, lay them side by side on a heat proof dish. When the water in your steamer has come to a boil, steam the rolls for 12 minutes over high heat.",
+      "Meanwhile, mix the braising sauce. Combine 1 ¼ cups of the mushroom soaking water, 1 tablespoon vegetarian oyster sauce, 2 teaspoons sugar, 1 tablespoon Shaoxing wine, 1 tablespoon light soy sauce, 1/2 teaspoon sesame oil and 1/2 teaspoon dark soy sauce. Mix until sugar is completely dissolved, and set aside.",
+      "Remove the rolls from the steamer. Heat a clean wok/pan over medium heat. When the wok is heated, add the oil, and swirl it around the perimeter of the wok to coat it evenly.",
+      "Add the rolls, and brown each side, about 1-2 minutes per side. Handle gently when flipping.",
+      "Once both sides are browned, add the sauce mixture. Braise over medium heat, cooking for 2 minutes covered, and then 2-3 minutes uncovered. Flip the rolls, and do the same on the other side. Try not to move them too much. Just slide them around to prevent them from breaking or fall apart.",
+      "Once the sauce has reduced (it should coat the rolls, but they shouldn’t be sitting in a pool of sauce), carefully transfer the rolls to a plate, and cool completely.",
+      "Once cooled, slice into ¾ inch thick slices, and garnish with chopped scallions. Serve at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Shoots",
+        "unit": "oz",
+        "notes": "thinly julienned",
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "oz",
+        "notes": "thinly julienned",
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely julienned",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "can substitute regular oyster sauce if you don’t mind the recipe not being completely vegetarian",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sheets Bean Curd Skin",
+        "unit": null,
+        "notes": "large circles, about 24 inches in diameter",
+        "amount": "4",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "mixed with 2 tablespoons/30 ml water",
+        "amount": "2",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Soaking Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "rest of the recipe",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "rest of the recipe",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b694d6cf4e6e3039d6edf1b83455579fb9c8cf89560c769a8fb678b64dd6184",
+    "lineage_hash": "2cf7404047b2860ee309fb58ff3efc9f9f6e817f36411be32c8596231fd36a6b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-vegetarian-duck/",
+    "fetchedAt": "2026-08-02T14:12:02.242Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-vegetarian-duck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

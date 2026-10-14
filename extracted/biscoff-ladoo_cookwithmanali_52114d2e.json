@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Biscoff Ladoo",
+    "time": "22 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "113",
+      "carbohydrateContent": "15",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Start by making the cookie crumbs first. Add biscoff cookies to a food processor and pulse until you get fine crumbs. You need 1 cup of cookie crumbs for this recipe. Set this side.",
+      "Now add ghee along with desiccated coconut powder to a pan on medium heat and cook for around 2 minutes, stirring constantly until coconut is lightly fragrant.",
+      "Then add the biscoff cookie crumbs to the pan and mix until everything is well combined.",
+      "Then add the sweetened condensed milk along with 3 tablespoons milk and mix. You can reduce the condensed milk by 1 tablespoon if you prefer less sweet ladoo. Stir and cook for 1 minute or so until everything comes together as a dough. Remove dough from the pan and transfer it to a bowl to make ladoos.",
+      "To make the ladoo, take a small portion from the dough and then press and roll between your palms to give it a round shape. Roll the ladoo into more desiccated coconut powder. Make all ladoos similarly and store them in an airtight container for up to 2-3 days at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Biscoff Cookies",
+        "unit": null,
+        "notes": "114 grams , you need  1 cup  of cookie crumbs",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut Powder",
+        "unit": "C",
+        "notes": "57 grams",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": "sweetened, reduce 1 tablespoon for a less sweet ladoo",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "45 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f1f45151f0ab60aad51af95be5ef9b893bc415fb9f10d1770ebe86805187753",
+    "lineage_hash": "e15e888216d8a768ad81b912fa35f4ade94243816aecda57452392609bdb58e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/biscoff-ladoo/",
+    "fetchedAt": "2026-08-02T03:52:07.765Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/biscoff-ladoo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

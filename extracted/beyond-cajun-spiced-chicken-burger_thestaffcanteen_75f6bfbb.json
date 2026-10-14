@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Beyond Cajun-Spiced Chicken Burger",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the slaw, mix together the plant-based mayonnaise, Dijon mustard, sugar, apple cider vinegar, onion granules and celery salt. Put the cabbage and carrot in a larger bowl and mix with the mayonnaise.",
+      "Season with freshly ground pepper, to taste. Set aside.",
+      "To make the Cajun mayo, mix the Cajun seasoning into the mayonnaise. Add a squeeze of lime juice. Season with sea salt and freshly ground pepper. Set aside.",
+      "Cook the  Beyond Burger® Chicken-Style according to the packet instructions",
+      "When ready to serve, spread some of the mayo onto the bottom of the bun. Add a lettuce leaf. Top with the burger, a slice of smoky vegan cheese and a spoonful of the slaw. Serve with extra slaw on the side and grilled corn on the cob."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "X Beyond Burger® Chicken-style",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Granules",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": "head",
+        "notes": "finely shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "head",
+        "notes": "finely shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cajun Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squeeze of Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "X Burger Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoky Plant Based Cheese Slices",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Gem Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "grilled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4da18b1597aef81b25875ef7c2e3476ae9cf773fe272ce0e54fcc079e2662603",
+    "lineage_hash": "5155d6c7a8a6d2de8642ccc1a024103bfe26c3fe710ba94e6e412c2a58a1ee92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/beyond-cajun-spiced-chicken-burger-1702645112",
+    "fetchedAt": "2026-08-03T16:47:59.787Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/beyond-cajun-spiced-chicken-burger-1702645112",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

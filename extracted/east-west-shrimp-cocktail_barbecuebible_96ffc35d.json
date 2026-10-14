@@ -1,0 +1,46 @@
+{
+  "recipe": {
+    "name": "East-West Shrimp Cocktail",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the marinade: In a large bowl, combine the chipotle chile, garlic, brown sugar, lime zest and juice, the first sauce, vegetable oil, and salt and pepper. Whisk to combine. Add the shrimp, turning to coat. Marinate for 15 to 30 minutes.",
+      "Make the cocktail sauce: In a medium bowl, combine the ketchup, sriracha, sambal oelek, lime zest and juice, and the mezcal. Stir in the cilantro.",
+      "Set up your grill for direct grilling and heat to high. Drain the shrimp and discard the marinade. Thoroughly oil the grill basket, if using. (Alternatively, thread the shrimp on bamboo skewers for easier turning.)",
+      "Grill the shrimp for 2 to 3 minutes per side, or until they are firm and opaque. (Do not overcook.) Serve chilled or at room temperature with the cocktail sauce; garnish with chopped cilantro."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Large Headless Shrimp (u-8s)",
+        "unit": "lb",
+        "notes": "peeled and deveined",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01d5381b897951d9de35f4907eea277a1edb4b2d9d4a2a1c5142a9b1bc3ab037",
+    "lineage_hash": "bc3a52843ae5f95208bf1adb56c8b5381ac792192ae7d7c2cf5530abb62152bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/east-west-shrimp-cocktail/",
+    "fetchedAt": "2026-08-03T08:47:13.600Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/east-west-shrimp-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/spicy-cauliflower-stir-fry/",
+  "slug": "chinese-cauliflower-stir-fry_omnivorescookbook_c3eb1db6",
+  "title": "Chinese Cauliflower Stir Fry (干锅菜花)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T00:49:11.257Z",
+  "ldName": "Chinese Cauliflower Stir Fry (干锅菜花)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "home style, weekday dinner",
+  "ldIngredientsRaw": [
+    "1 small head (18 oz./500g) Chinese cauliflower ((or regular cauliflower))",
+    "2 tablespoons peanut oil ((or vegetable oil))",
+    "5  dried chili peppers ((Optional))",
+    "2  shallots (, sliced (or 1/2 white onion))",
+    "4 cloves garlic (, minced)",
+    "1 tablespoon ginger (, minced)",
+    "2 tablespoons Doubanjiang ((spicy fermented bean paste), or 1 tablespoon for a less spicy and less salty dish (*Footnote 1))",
+    "1/4 teaspoon ground Sichuan peppercorn",
+    "1/4 cup vegetable stock ((or water))",
+    "2 tablespoons Shaoxing wine ((or dry sherry))",
+    "1 tablespoon light soy sauce ((or soy sauce))",
+    "1 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the cauliflower into bite-sized florets. Rinse, drain, and set aside.",
+    "Mix the sauce ingredients in a small bowl.",
+    "Heat oil over medium-high heat in a large carbon steel (or non stick skillet) over medium-high heat until hot. Add the dried chili peppers, shallots, garlic, and ginger. Stir a few times to release the fragrance. Add the Doubanjiang and ground Sichuan peppercorns. Cook and stir to roast the doubanjiang, for 1 minute or so, or until the aromatics are evenly coated. If the doubanjiang looks dry and starts to burn, pour in a spoonful of Shaoxing wine (or water) and stir to bring down the pan temperature.",
+    "Add the cauliflower. Stir and cook for 1 minute.",
+    "Pour in the sauce. Stir again to mix well. Cover the pan. Let steam until the cauliflower turns tender. It takes 6 to 8 minutes to cook through Chinese cauliflower, and 3 to 4 minutes to cook through regular cauliflower. Check on the cauliflower every 2 to 3 minutes, stirring a few times when you check it. Add a bit of water or veggie broth if the pan gets too dry.",
+    "Uncover. If there’s still a lot of liquid in the pan, you can turn up the heat, cook and stir a few more times to let the liquid evaporate. Transfer everything to a plate.",
+    "Serve hot as a side or main dish over steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "4 servings",
+    "calories": "123 kcal",
+    "carbohydrateContent": "14.4 g",
+    "proteinContent": "3.2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1.2 g",
+    "sodiumContent": "523 mg",
+    "fiberContent": "3.4 g",
+    "sugarContent": "6.3 g"
+  },
+  "htmlIngredientLines": [
+    "1 small head (18 oz./500g) Chinese cauliflower (or regular cauliflower)",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "5 dried chili peppers (Optional)",
+    "2 shallots , sliced (or 1/2 white onion)",
+    "4 cloves garlic , minced",
+    "1 tablespoon ginger , minced",
+    "2 tablespoons Doubanjiang (spicy fermented bean paste), or 1 tablespoon for a less spicy and less salty dish (*Footnote 1)",
+    "1/4 teaspoon ground Sichuan peppercorn",
+    "[Sauce]",
+    "1/4 cup vegetable stock (or water)",
+    "2 tablespoons Shaoxing wine (or dry sherry)",
+    "1 tablespoon light soy sauce (or soy sauce)",
+    "1 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

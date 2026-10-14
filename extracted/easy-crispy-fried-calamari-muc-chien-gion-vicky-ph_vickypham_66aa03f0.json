@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Easy Crispy Fried Calamari (Muc Chien Gion)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, combine calamari with granulated garlic, onion powder, cayenne pepper, black pepper, and sea salt. Mix well to coat evenly.",
+      "Add cornstarch to the seasoned squid and toss until all pieces are well-coated.",
+      "In a wide pan or wok, heat about 3 inches of vegetable oil to 400°F over medium heat.",
+      "Fry the squid in small batches to prevent overcrowding, turning as needed. Cook for about 2-3 minutes, or until golden and crispy. Use a slotted spoon to transfer to a wire rack or paper towel-lined plate to drain excess oil.",
+      "In a small bowl, mix mayonnaise, sriracha, and lemon or lime juice until smooth.",
+      "Serve the fried calamari immediately with lemon wedges and spicy aioli on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calamari",
+        "unit": "lb",
+        "notes": "rings and tentacles",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Garlic",
+        "unit": "Tbsp",
+        "notes": "or garlic powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "tsp",
+        "notes": "alt: lime juice, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a65f5e3aa0e587d13ef0deabde8220b122b3c253259bb55c7675ea8cdf57983f",
+    "lineage_hash": "ba043979f3267621310519c85ed50ad6c4e2a7af345f4535c1aba6682fe85fce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/easy-crispy-fried-calamari-muc-chien-gion/",
+    "fetchedAt": "2026-08-01T17:38:55.861Z"
+  },
+  "rawSource": "https://vickypham.com/blog/easy-crispy-fried-calamari-muc-chien-gion/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

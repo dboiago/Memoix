@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/stir-fried-black-pepper-beef-recipe",
+  "slug": "beef-stir-fry-with-black-pepper-recipe_greatbritishchefs_cad9ef1c",
+  "title": "Beef Stir-Fry with Black Pepper Recipe",
+  "byline": "by Robert Thompson",
+  "fetchedAt": "2026-08-03T15:48:33.823Z",
+  "ldName": "Stir-fry black pepper beef",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of beef fillet, cut into 2.5cm cubes",
+    "40g of onion, thickly sliced",
+    "10g of garlic",
+    "40g of spring onions",
+    "100ml of red wine, preferably Merlot",
+    "20g of butter",
+    "80g of tomato ketchup",
+    "10g of Worcestershire sauce",
+    "12g of sugar",
+    "15g of Maggi seasoning sauce",
+    "6g of black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by making the black pepper sauce. Whisk together the butter, ketchup, Worcestershire sauce, sugar, Maggi and black pepper in a small saucepan. Heat gently until incorporated then set aside until required",
+    "Heat a dash of oil in a wok and fry the beef quickly on a high heat until coloured on the outside – the beef should still be pink inside. Remove from the pan and leave to rest",
+    "Add the onion, spring onion and garlic to the wok and cook until browned. Return the beef to the wok and add the black pepper sauce and red wine. Bring to the boil, cook until sticky then serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

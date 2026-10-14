@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Beetroot, Rhubarb and Goat's Curd Taco",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a barbecue or grill for grilling the chillies",
+      "Take your favourite chilli – mine is lemon chilli – and grill it on the barbecue until scorched, or use a blow torch to char the skin",
+      "Chop up the chillies and and weigh them, then mix them with 2% of the weight of the chillies with salt. For example, if you have 50g chilli add 1g salt",
+      "Place the chillies and salt into a sterilised Kilner jar and leave at room temperature for 5–10 days. The length of time will depend on your room temperature",
+      "Lift the lid on your ferment (known as burping) every day to release excess gas build up. When your chilli takes on a pleasant sourness you know you're ready",
+      "For the salted beetroot, whisk together the salt and water until the salt dissolves and put to one side",
+      "Peel and slice the white beetroot on a mandolin to the thickness of a 50p coin",
+      "Take the beetroot slices and punch them with a ring cutter that is as close to the full size of the beetroot as possible",
+      "Place the beetroot slices in the salt brine and leave for at least 6 hours and up to 24",
+      "Once brined, drain the beetroot, wash and place into a covered container in the fridge, until needed",
+      "Take 200g rhubarb juice and whisk in the 3g agar agar. Bring to a gentle simmer for 1 minute to cook out the agar. Pour into a tray and allow to set in the fridge",
+      "Once set, turn out onto a board and chop the jelly as finely as possible before putting it back into a container in the fridge",
+      "Cut the stalk and leaves away from the chard. Slice the stalk into thin slices and cut small enough strips of the leaves that they can be used to garnish the top of the beetroot snack. Place in the fridge in a covered container",
+      "Slice the remaining rhubarb into thin slices. If you have a particularly thick rhubarb stalk, quarter it and then slice it. Put the rhubarb in the fridge in a covered container",
+      "Whisk together the rapeseed oil and remaining 25g of rhubarb juice and put to one side",
+      "Whisk the goat’s curd in a bowl. If it doesn't hold its shape, place it in some muslin cloth and leave to hang in a colander over a bowl for a couple of hours to release some of the moisture. If your curd is very dense you can add a splash of cream to loosen it. Season the goats curd with black pepper, a teaspoon of lacto-fermented chilli and a little salt",
+      "Spoon or pipe the curd into one half of the beetroot discs, leaving a gap around the rim. Spoon over the chopped rhubarb jelly and smooth off",
+      "Dress the leaves and chard stems in the rapeseed dressing, season with salt and place over the top of the rhubarb jelly, completely covering it. Add a few slices of rhubarb in between the leaves and stems and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sticks of Rhubarb",
+        "unit": null,
+        "notes": "you need 225g juice, 4 sticks juiced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swiss Chard Leaves",
+        "unit": null,
+        "notes": "with stalks",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chilli",
+        "unit": null,
+        "notes": "such as lemon chilli",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Beetroots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "192f0a2d0908e8e21d4d5e1149688257ef477699886473c7f0aaffcecc977205",
+    "lineage_hash": "708e78efab52b9dce2e879d341dce86189231bdb4bdddc6563ed08d22507156c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/white-beetroot-taco-rhubarb-goats-curd-chilli-chard-recipe",
+    "fetchedAt": "2026-08-02T12:03:49.186Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/white-beetroot-taco-rhubarb-goats-curd-chilli-chard-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

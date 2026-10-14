@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Cranberry Muffins",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "274",
+      "carbohydrateContent": "34",
+      "fatContent": "14",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 375°F. Butter and flour 18 standard-size muffin cups or line with paper liners. Alternately, this recipe will make 9-10 jumbo muffins.",
+      "Place 14 oz all purpose flour, 1 teaspoon baking powder, 1 teaspoon ground cinnamon, 1/2 teaspoon baking soda, 1/2 teaspoon table salt and 4 oz granulated sugar in a large mixing bowl. Whisk the dry ingredients to combine.",
+      "In a separate bowl, whisk together 2 large eggs, 8 oz Buttermilk, 5 oz vegetable oil and the finely grated zest and 1/4 cup of juice from 1 orange.",
+      "Make a well in the center of the dry ingredients and pour in the wet ingredients. Stir until the flour is barely incorporated, then fold in 8 oz cranberries. Scoop the batter into the prepared muffin tins filling no more than 2/3 full.",
+      "Bake until the center of a muffin springs back when lightly pressed or a toothpick inserted into the center of a muffin comes out with a few moist crumbs, 15-20 minutes. While the muffins are baking prepare either the sugar topping or the glaze.",
+      "For the sugar topping: In a small bowl, combine 4 oz granulated sugar with the finely grated zest from 1 orange. In another small bowl combine 4 oz unsalted butter and 1/4 cup of orange juice.",
+      "For the Glaze: Combine 4 oz confectioner sugar with the finely grated zest from the orange and 3 tablespoons of the juice.",
+      "Cool the muffins in the pan for 10 minutes. They should still be warm, but not too hot to handle. For sugar topped muffins dip the top of each muffin into the melted butter and then into the sugar. For glazed muffins, dip each muffin into the glaze. Allow the sugar or glaze to set for a few minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 3/4 cups, see note",
+        "amount": "14",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "2/3 cup",
+        "amount": "5",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "2 heaping cups",
+        "amount": "8",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Sugar Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Sugar Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "4",
+        "section": "Sugar Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Glaze Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Glaze Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "383e7095ee8b33a139e26346784c9d6ef74e1e3be104acede131ef5568853808",
+    "lineage_hash": "a3a158b19a32e0a4d83b7bab459c3f70bc5f6cf30e983d5bdb897264499a2537"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/11/04/cranberry-muffins/",
+    "fetchedAt": "2026-08-02T01:51:25.891Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/11/04/cranberry-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

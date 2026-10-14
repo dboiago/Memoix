@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Avocado Cashew Caesar Salad",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "255",
+      "carbohydrateContent": "23",
+      "fatContent": "16",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Soften the Cashews (Optional): Softening the cashews helps them blend smoothly. If you have a high-powered blender, you can skip this step. Otherwise, add the cashews to a small pot, cover with water, and boil for about 10 minutes until very tender. Drain and rinse well before using. Alternatively, you can soak the cashews in cool water overnight.",
+      "Prepare the Dressing: In a blender, combine the avocado, raw cashews, water, nutritional yeast, lemon juice, Dijon mustard, garlic, salt, and pepper. Blend until smooth. If the dressing is too thick, add more water, one tablespoon at a time, until the desired consistency is reached. The dressing should be thick and creamy.",
+      "Assemble the Salad: In a large bowl, add the chopped romaine lettuce. Add some of the dressing to the lettuce and toss until evenly coated, using tongs if you prefer. Add more dressing to taste if needed. Top the salad with sliced avocado, croutons, roasted cashews, and vegan parmesan cheese.",
+      "Storage: Store leftover dressing in an airtight container in the fridge for up to 4 days. Use it for another salad, as a dip, or a sandwich spread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "see step 1, softened if needed",
+        "amount": "½",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "plus more if needed",
+        "amount": "½",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dressing (makes enough for 2 salads)",
+        "isOptional": false
+      },
+      {
+        "name": "Head Romaine Lettuce",
+        "unit": "large",
+        "notes": "(or two romaine hearts), washed and chopped",
+        "amount": "1",
+        "section": "Caesar Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade",
+        "unit": "C",
+        "notes": "alt: store-bought vegan croutons, see recipe notes for homemade croutons",
+        "amount": "1",
+        "section": "Caesar Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Avocado",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Caesar Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Salted Cashews",
+        "unit": "C",
+        "notes": "see recipe notes for homemade roasted cashews",
+        "amount": "½",
+        "section": "Caesar Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Parmesan Cheese",
+        "unit": "C",
+        "notes": "optional, store-bought or homemade",
+        "amount": "¼",
+        "section": "Caesar Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9432d8a3780ab7eb675335f7a72d21d1d6bedbf38bb53fe3005a76c537b1e9c8",
+    "lineage_hash": "09f09e1d1ddea44f36de7ede32b2adbee32c7c08c54109d59b6f7007ea6b6593"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/avocado-cashew-caesar-salad/",
+    "fetchedAt": "2026-08-02T06:27:52.613Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/avocado-cashew-caesar-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Chana Aloo",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "297",
+      "carbohydrateContent": "39",
+      "fatContent": "11",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Heat oil in a Circulon Elementum 3 Qt. Covered Saute Pan on medium heat. Once the oil is hot, add the bay leaf, cardamom pods, cloves and cumin seeds. Saute for few seconds until the cumin seeds sizzle and the spices are fragrant.",
+      "Add the chopped onion, garlic and ginger and cook for 4-5 minutes until the onions turn light golden brown in color.",
+      "Then add in a can of diced tomatoes and stir well.",
+      "Add the spices- coriander powder, turmeric powder, garam masala, ground cumin, smoked paprika, cayenne pepper and stir. Also add the salt, mix well and let it all cook for 3-4 minutes.",
+      "Add in the chickpeas and cubed potatoes. Mix well until the chickpeas and the potatoes are coated with the masala.",
+      "Add 1.5 to 2 cups of water to the pan and stir.",
+      "Close the pan with its lid and let the curry cook on medium heat for around 12 to 15 minutes until the potatoes are cooked and the curry thickens up.",
+      "Once the curry is done, add in the cilantro and the lime juice and mix.",
+      "Serve chana aloo over rice for a comforting meal!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "200 grams, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Diced Tomatoes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Chickpeas",
+        "unit": "oz",
+        "notes": "850 grams/2 x 15 oz",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "320 grams, cut into 1/2\" cubes, around 1.5 cups cubed potatoes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "plus more to garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1/2 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "176c2777e43bd965f3c5f3846900d637fd7d3fe840cce40557357ae73301f7d0",
+    "lineage_hash": "21432b6d98138b6230314af2c0cf74093fad7bd5ca22460b61ee060b96a6169d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/easy-chana-aloo/",
+    "fetchedAt": "2026-08-01T20:47:22.142Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/easy-chana-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

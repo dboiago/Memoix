@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Apricot Sticky Toffee Pudding",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F), and lightly butter a 7\" (18 cm) square or round cake pan.",
+      "Combine the apricots and the baking soda in a heatproof bowl. Add the boiling water, stir, and leave to stand.",
+      "In a food processor (Jill does it by hand), mix a cup of sugar and 2 tablespoons of butter. Add the eggs one by one, mixing well after each addition. Add in the flour (sifted if you're hand-mixing), baking powder and salt, mix well. Add the apricots and their water, and mix again thoroughly.",
+      "Pour the batter into the cake pan, and bake for 30 to 40 minutes, until puffed and golden. Jill recommends using a skewer to test the cake for doneness (it is ready when the skewer comes out clean), but my wooden skewer still came out with moist crumbs after 40 minutes, and the result was fine.",
+      "To make the sauce, combine the sauce ingredients in a medium saucepan, large enough to allow the mixture to rise when it boils. Bring to a boil, stirring until the sugar is dissolved. Simmer for five minutes, without stirring, until thick and golden brown. Set aside, and reheat just before serving.",
+      "The pudding and the sauce should be served warm. Glaze the whole pudding with the sauce, or cut the pudding into slices or squares and pour the sauce over each serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "pitted and quartered",
+        "amount": "200",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "boiling",
+        "amount": "1",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Pudding base",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Toffee sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Toffee sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Toffee sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Toffee sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "921cefa5df07dd0457bd7575a51d9b87640bfe13a5b65661dbfc61fabf2dd919",
+    "lineage_hash": "5aa27538ec1d30627d5506109445e9c6fbf3c14c63e5e3c3f1258bbd9ac7c458"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/apricot-sticky-toffee-pudding-recipe/",
+    "fetchedAt": "2026-09-30T19:36:02.144Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/apricot-sticky-toffee-pudding-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

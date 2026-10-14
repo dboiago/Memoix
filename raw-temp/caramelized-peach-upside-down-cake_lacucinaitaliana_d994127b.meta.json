@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramelized-peach-upside-down-cake",
+  "slug": "caramelized-peach-upside-down-cake_lacucinaitaliana_d994127b",
+  "title": "Caramelized Peach Upside-Down Cake",
+  "byline": "by  Editorial staff   July 16, 2023",
+  "fetchedAt": "2026-08-02T22:22:31.996Z",
+  "ldName": "Caramelized Peach Upside-Down Cake",
+  "ldTime": "PT120M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "8",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Peaches,Torte",
+  "ldIngredientsRaw": [
+    "3/4C. sugar",
+    "3/4C. flour",
+    "2/3STICK butter",
+    "1/3C. potato starch",
+    "1/2TBSP. honey",
+    "4 peaches",
+    "4 egg yolks",
+    "2 eggs",
+    "1 vanilla bean pod"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3/4 C. of sugar",
+    "3/4 C. of flour",
+    "2/3 STICK of butter",
+    "1/3 C. of potato starch",
+    "1/2 TBSP. of honey",
+    "4  of peaches",
+    "4  of egg yolks",
+    "2  of eggs",
+    "1 vanilla bean pod"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

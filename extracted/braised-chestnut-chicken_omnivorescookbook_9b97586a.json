@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Braised Chestnut Chicken",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "387",
+      "carbohydrateContent": "35.3",
+      "fatContent": "12.3",
+      "proteinContent": "36"
+    },
+    "directions": [
+      "Place the shiitake mushrooms in a small bowl and add 1/2 cup warm water. Let soak until the mushrooms turn soft throughout. Once done, gently rub the mushrooms to remove any dust on the surface. Squeeze the excess water from the mushrooms and reserve the soaking liquid.",
+      "Add the cut chicken pieces and the light soy sauce in a big bowl. Toss to mix well and set aside.",
+      "Bring a small pot of water to a boil over high heat. For fresh chestnuts, slice off their bases, boil for 3 to 5 minutes. Once done, transfer the chestnuts using a slotted spoon to a bowl. Taking care not to burn yourself, rub until the skins fall off and a pale yellow nut is revealed. Dry thoroughly. If using peeled frozen chestnuts, boil according to the package instructions (mine said 10 mins, but yours may be less).",
+      "In a medium-sized dutch oven or wok, add the oil and heat over medium heat until hot. Add the chestnuts. Cook, stirring occasionally, until lightly browned. Transfer to a plate.",
+      "Add the green onion, garlic, ginger and soaked mushrooms. Cook until lightly browned. Transfer everything to the plate with the chestnuts.",
+      "Add the chicken pieces without overlapping (you might need to cook them in two batches). Let cook until the bottom side is lightly browned, and then flip to brown the other side. (*Footnote 3)",
+      "Pour 1 1/2 cups water into the pan. Use your spatula to scrape off the browned bits from the bottom. Add the 1/2 cup of the reserved mushroom soaking liquid, but be careful not to add the residual bits on the bottom of the bowl.",
+      "Add the Shaoxing wine, dark soy sauce, kosher salt, rock sugar, star anise pod, Sichuan peppercorns, and cinnamon stick. Add back the cooked chestnuts with the aromatics. The liquid should cover most of the chicken. If not, you can add a bit more water.",
+      "Cook over medium-high heat until bringing the broth to a low boil. Then adjust the heat so the broth remains at a low boil (*Footnote ). Cook uncovered for 25 minutes, or until the chicken turns very tender. Over the final 10 minutes of cooking, keep an eye on the chicken and stir carefully a few times.",
+      "Once the cooking is done, the broth should be reduced to able to coat the chicken with a thin layer. And it will thicken a bit more once it has cooled a bit. If there’s too much broth left but the chicken has already turned very tender, you should transfer the chicken to a serving bowl and keep reducing the broth over high heat, until it thickens. If the chicken is not too tender, you can reduce the sauce while keeping the chicken in the pot.",
+      "Once done, drizzle sesame oil over the chicken if using. Sprinkle chopped green onions for garnish.",
+      "Serve hot over steamed rice as a main course."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Leg Quarters",
+        "unit": "lb",
+        "notes": "680 g, *Footnote 2, bone-in, cut into four bite-sized pieces",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnuts",
+        "unit": null,
+        "notes": "*Footnote 1, fresh, frozen, canned, or vacuum packed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "vegetable oil, or lard",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "two chopped into 2” (5 cm) pieces and one finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": "or 1 tablespoon regular sugar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "pc",
+        "notes": "3” / 7.5cm",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d0a4a9d52ec840a0452e6c9e2f463ea4df86ac239b8b06c33448bc5584cb5d9",
+    "lineage_hash": "71db5685276d630676f67bd39503d2378be7537b9190dd2d3bef3c54f7331548"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/braised-chestnut-chicken/",
+    "fetchedAt": "2026-08-02T03:02:26.709Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/braised-chestnut-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

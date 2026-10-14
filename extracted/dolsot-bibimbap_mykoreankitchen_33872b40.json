@@ -1,0 +1,218 @@
+{
+  "recipe": {
+    "name": "Dolsot Bibimbap",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "529",
+      "carbohydrateContent": "56",
+      "fatContent": "22",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Prepare and cook ingredients as below.– In a bowl, combine the meat with the marinade. Cover the bowl and leave it in the fridge while you are working on other the ingredients. When ready, Add some cooking oil into a wok and cook the meat on medium high to high heat. It takes about 3 to 5 mins to thoroughly cook it.– Prepare the Korean cucumber side dish, fernbrake side dish and bellflower root side dish per the linked recipes. These can be prepared on a different day to save your bibimbap making time.– Separately sauté carrots, zucchini and mushrooms in a frying pan. Season them lightly with fine sea salt.– Mix the bibimbap sauce ingredients in a small bowl. Set aside.– Pan fry the eggs per your preference. (Sunny side up is a popular choice.)",
+      "Preheat an oven for 10 minutes at 220 C / 428 F. Once heated, place your stone bowl into the oven. Leave it there for 10 minutes. 10 minutes later, take it out. Drop in some sesame oil (about 1 Tbsp per medium size bowl) and brush it around. Quickly assemble your bibimbap ingredients inside the hot stone bowl. First you will have to lay down the rice. Make sure you flatten it well. Then add the meat, assorted vegetables, and the egg on top of the rice. Transfer the hot stone bowl onto the gas stove and cook it for 5 minutes over low heat. You will hear the rice crackling noise. Remove from the heat.",
+      "Pour the bibimbap sauce into the hot stone bowl and mix all the ingredients well. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rib Eye Fillets (3.5 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "100",
+        "section": "MEAT AND MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MEAT AND MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MEAT AND MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MEAT AND MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "MEAT AND MEAT MARINADE",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Cucumber Side Dish",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Gosari Namul",
+        "unit": "C",
+        "notes": "Korean fernbrake side dish",
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Doraji Namul",
+        "unit": "C",
+        "notes": "sautéed bellflower root",
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms Thinly Sliced",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Some Cooking Oil",
+        "unit": null,
+        "notes": "rice bran oil",
+        "amount": "0",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "VEGETABLES AND OTHER",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "Korean chili paste",
+        "amount": "2",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": "or rice vinegar",
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "DOLSOT BIBIMBAP SAUCE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "57830802128da971d79022398b0d115f26780758951da8772be72d60e0484bc4",
+    "lineage_hash": "6353a71f21ed9d66436c84f017723448d21565f0b87028b9279b6b1620d9cad8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/dolsot-bibimbap/",
+    "fetchedAt": "2026-08-02T02:15:40.629Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/dolsot-bibimbap/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

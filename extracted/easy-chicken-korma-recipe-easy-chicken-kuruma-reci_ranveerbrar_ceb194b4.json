@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Chicken Korma",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepot, add ghee, bay leaves, green cardamom, black peppercorns, cloves, mace and saute well.",
+      "Add chicken, ginger garlic paste, salt to taste and saute well.",
+      "In a mixing bowl, add curd, turmeric powder, coriander powder, red chilli powder, yellow chilli powder and mix well and add the mixture into the sauce pot and mix well.",
+      "Add brown onion paste, brown cashew nut & chironji paste and mix well.",
+      "In a large bowl remove the chicken pices and keep it aside. Let the gravy cook , Add a pinch of mace, green cardamom powder and saute well. Strain the gravy in the same bowl.",
+      "Add the hole chicken gravy into the saucepot again and let it cook.",
+      "For smoking.",
+      "In a small bowl, add coal, clove and ghee.",
+      "Cover and cook on low flame till the chicken is cooked and tender.",
+      "Garnish with coriander leaves.",
+      "Serve hot with rice and naan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "Curry Cut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "To Taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onion Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Cashew Nut & Chironji Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace & Green Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coal",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e092c18a92af4f7a0c4497eee20a915e874e52e3c698987b454cbb9aede63df",
+    "lineage_hash": "f5b877971edc99ca46b92896a0a65e5dba08f3096595b35ff5cc449c661a1048"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/awadhi-chicken-korma/",
+    "fetchedAt": "2026-08-02T14:41:13.094Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/awadhi-chicken-korma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

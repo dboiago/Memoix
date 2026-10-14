@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Beetroot and Beef Curry",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a large, non-stick lidded wok or saucepan, heat the oil over a medium heat, add the cardamom, cinnamon, cumin and coriander seeds. Once the spices start to sizzle, add the onions and stir-fry until light golden brown",
+      "Add the garlic and ginger, and cook for 1 minute until it no longer smells raw. Add a splash of water if the garlic and ginger start to stick to the pan, then add the tomatoes and cook until soft",
+      "Add 1 tsp salt, red chilli powder and the beef, turn up the heat and stir-fry until the meat is sealed on all sides. Reduce the heat to medium-low, cover loosely and cook for about 10 minutes",
+      "Turn up the heat and add the grated beetroot. Stir-fry for a few minutes, then cover the pan, reduce the heat and cook for 1 hour and 15 minutes or until the meat is tender. Stir from time to time and add a little water if the curry becomes too dry",
+      "The finished dish should be a thick mushy curry with chunky, tender beef pieces and softened beetroot. Sprinkle with the coriander leaves and green chilli, add a squeeze of lime, and serve with naan or basmati rice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": "chopped into chunks",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroot",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Half a Lime",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c74b077cdb8b9b12617c6f33694de281582c146270d63969633a93bc663bb5f",
+    "lineage_hash": "411407285811eb39ca1802c1529ad3f43c693f07a648432f4f95c71bbe7ec51e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chaukandar-gosht-recipe",
+    "fetchedAt": "2026-08-03T14:23:28.749Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chaukandar-gosht-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

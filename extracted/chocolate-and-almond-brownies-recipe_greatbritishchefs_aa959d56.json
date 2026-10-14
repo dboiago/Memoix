@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chocolate and Almond Brownies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a pan and fry the almonds until browned, then season with salt and leave to cool",
+      "Heat the oven to 170°C/Gas mark 3. Cream the sugar and eggs together. Melt the butter and stir this in with the flour and cocoa",
+      "Melt the chocolate in a microwave or over a pan of simmering water. Add the melted chocolate and salted almonds to the cream mixture and stir in",
+      "Tip the mixture into a 22cm square baking tin tray lined with silicone paper, level the top and bake for 30 - 40 minutes. Leave to cool",
+      "Cut into small squares and dust with cocoa powder. Arrange on a serving plate and top with a whole almond per square and a little fleck of gold leaf"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanched Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gold Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a846346366e77137c495366e3b4140fbed53d6f89b39941b31d791dca993918a",
+    "lineage_hash": "29e4ffb6afd6ad783dc7c68b9c9a64b38405fa814e70e462cbdd88efbff52eab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-and-almond-brownies-recipe",
+    "fetchedAt": "2026-08-03T15:40:55.288Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-and-almond-brownies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

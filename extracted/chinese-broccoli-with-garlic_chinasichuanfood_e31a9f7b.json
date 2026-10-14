@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chinese Broccoli with Garlic",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "244",
+      "carbohydrateContent": "11",
+      "fatContent": "21",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Trim Chinese broccoli, remove the hard skins and cut into sections with angle. Separate the leaves too.",
+      "Bring a large pot of water to a boiling and then add salt and vegetable cooking oil. Add the stem firstly (cook for 20 seconds) and then add the leaves to cook for 10 seconds. Transfer out and drain.",
+      "Add oil in already heated wok and fry the garlic until slightly seared. Place Chinese broccoli back, add cooking wine and sesame oil. Mix well quickly and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Broccoli",
+        "unit": "g",
+        "notes": "trimmed and cut into small sections",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ca21f9de6d5e67832d8800fe747e1b4b89b024e978e6e92c39c08c8545dc958",
+    "lineage_hash": "a5a2b1a019b1f61c28d501c5c1b9dfa24f4ca93493a36713042f848607004bd3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-broccoli-with-garlic/",
+    "fetchedAt": "2026-08-02T05:56:28.435Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-broccoli-with-garlic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

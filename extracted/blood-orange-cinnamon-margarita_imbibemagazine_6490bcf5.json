@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Blood Orange–Cinnamon Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker. Add ice and shake to chill. Strain over fresh ice into an Old Fashioned glass. Garnish.",
+      "Tip: As an alternative to making cinnamon syrup, and for a bit more dramatic presentation, substitute plain simple syrup (1:1) for the cinnamon syrup and rim the glass with a salt of equal parts kosher salt and freshly grated cinnamon and a half part of granulated white sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba7528e5f10c8017e502d903219ae0dc9702b6e556eaab9bdc5f16dbe89ba6af",
+    "lineage_hash": "0952b483bb1e60e868beaefa5c261d73d5d3336e84e57f5355cc523b8d441ace"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blood-orange-cinnamon-margarita/",
+    "fetchedAt": "2026-08-03T20:20:03.224Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blood-orange-cinnamon-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

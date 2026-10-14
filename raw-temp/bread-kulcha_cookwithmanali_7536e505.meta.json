@@ -1,0 +1,69 @@
+{
+  "url": "https://www.cookwithmanali.com/bread-kulcha/",
+  "slug": "bread-kulcha_cookwithmanali_7536e505",
+  "title": "Bread Kulcha",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T07:58:27.273Z",
+  "ldName": "Bread Kulcha",
+  "ldTime": "PT100M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 kulcha"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Breads",
+  "ldKeywords": "bread kulcha, indian bread",
+  "ldIngredientsRaw": [
+    "1/2 cup milk (4 oz, I used whole milk)",
+    "2 teaspoons active dry yeast (8 grams)",
+    "1 tablespoon granulated white sugar (13 grams)",
+    "2 cups all purpose flour (260 grams)",
+    "1/2 teaspoon salt",
+    "3 teaspoon oil (15 ml, I used avocado oil)",
+    "2 tablespoons chopped cilantro (+ more for serving)",
+    "1/4 cup  water (2 oz, may need extra 1-2 tablespoons)",
+    "2 tablespoons butter (amul salted butter, to serve)"
+  ],
+  "ldInstructionsRaw": [
+    "To a bowl (I used the steel bowl of my stand mixer) add warm milk (110-115 F degrees, not cold and not too hot), to that add active dry yeast and sugar. Give a quick stir and let it stand for 5 to 10 minutes to proof.After 10 minutes, the mixture will be all bubble and frothy on top indicating that the yeast is active (if you don&#39;t see any such activity, throw the mixture and start over).",
+    "To that mixture now, add flour, salt, 3 teaspoons oil and 2 tablespoons chopped cilantro. Turn your mixer on medium speed and mix using the paddle attachment.",
+    "Slowly start adding water to bring it all together in a dough. Once you have the dough, change to the dough hook and knead the dough for 7 to 8 minutes on medium speed. You can also knead using your hands for 10 minutes.",
+    "Once you have a nice smooth dough, grease it with little oil and place it in a warm place. I used the yogurt button on my instant pot but you can also place it inside an oven with lights on (but oven off) or just leave on the counter if you live in a warm place. If using the Instant Pot, grease the steel bowl with little oil before placing the dough and cover the pot with a clean kitchen towel (don&#39;t use the IP lid).",
+    "If using the yogurt button, set the time for 1 hour. If using the oven or your counter, it might take 1.5 hours for the dough to more than double in size. Once the dough has more than doubled in size, punch the dough to release the air.",
+    "Now, divide the dough into 8 equal parts (around 56 grams each). Now take one dough ball, roll it between your palms to make a smooth round. Then using a rolling pin, roll it into a circle, around 5 inch diameter. Similarly smoothen and then roll all dough balls.",
+    "Place them on a baking sheet lined with parchment paper and place in a warm place again for second rise for around 30 minutes. After 30 minutes, you would see the kulchas would have puffed up a little at few places.",
+    "Heat a skillet on medium heat. Once the pan is hot, carefully lift and place the kulcha on the pan. We are going to half cook the kulcha at this point. So cook on one side for 1 minute, then flip and cook the other side for another minute until it has some light brown spots. Half cook all the kulchas similarly.",
+    "Now, take another pan (or use the same pan) on medium heat and add some butter to it (say 1/2-1 teaspoon butter for each kulcha), once the butter melts, add some chopped cilantro. Add the half cooked kulcha, and press with the spatula to get it browned. Flip and repeat with the other side until browned from both sides. Cook all the kulchas similarly and serve with matar chaat."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "175 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "5 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "9 mg",
+    "sodiumContent": "180 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/2 cup milk, 4 oz, I used whole milk",
+    "▢ 2 teaspoons active dry yeast, 8 grams",
+    "▢ 1 tablespoon granulated white sugar, 13 grams",
+    "▢ 2 cups all purpose flour, 260 grams",
+    "▢ 1/2 teaspoon salt",
+    "▢ 3 teaspoon oil, 15 ml, I used avocado oil",
+    "▢ 2 tablespoons chopped cilantro, + more for serving",
+    "▢ 1/4 cup  water, 2 oz, may need extra 1-2 tablespoons",
+    "▢ 2 tablespoons butter, amul salted butter, to serve"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

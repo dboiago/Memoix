@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Classic Custard Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pastry, place the flour, butter and sugar into a food processor and pulse until they resemble breadcrumbs. Add the egg and yolk and run the processor again until a dough comes together, then turn it out onto a lightly floured work surface and knead for 30 seconds, forming the dough into a disc. Wrap in baking paper or cling film, then place in the fridge for at least 1 hour to rest",
+      "Roll the rested pastry out on a lightly floured work surface until it is about ¼cm thick. Use the rolling pin to gently lift the pastry over the 22cm tart case and press it into the corners, using a small ball of offcut pastry to help nudge everything into place. Trim off any excessive overhang but be sure to leave some around the ridge as the pastry will shrink slightly during cooking. Return to the fridge for 30 minutes and preheat an oven to 180°C/160°C fan/gas mark 4",
+      "Line the pastry with baking paper then fill with baking beans or dry rice. Blind-bake for 15 minutes, then gently remove the beans and paper. Bake for a further 7 minutes or until golden brown",
+      "Brush the pastry with the beaten egg and return to the oven for 1 minute, ensuring every part of the pastry has been sealed with egg. Repeat this process once more to ensure a full coverage of set egg wash, then set the tart case aside and turn the oven down to 120°C/100°C fan/gas mark ½",
+      "To make the custard, pour the cream into a saucepan and split and scrape the vanilla pod seeds into it. Add the pod in too, then place over a medium heat until it comes to a simmer. Meanwhile, mix together the egg yolks and sugar in a separate bowl until just combined – don’t beat or whisk vigorously",
+      "As soon as the cream comes to a simmer, discard the vanilla pod and pour a little over the egg yolks, whisking constantly to avoid curdling. Gradually add the rest of the hot cream, whisking constantly, until fully combined. Gently skim off any bubbles and allow the custard to settle for 1 minute",
+      "Trim the tart case of any remaining overhang, then place it on a flat tray and have it just poking out of the oven. Gently fill the case as full as you dare with the cream mixture, then coat with a grating of nutmeg. Gently push the tart into the oven, close the door and cook for 45 minutes, or until just set and wobbly in the centre",
+      "Leave the tart to cool slightly before serving. It is particularly delicious served a little warm, but can also be served cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten, for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": "for grating",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab39657de30b60d9ba4bcf9eae0188488e737ba8d02f7e52aec34e2a4570a471",
+    "lineage_hash": "35040148cc359f7bc16720c5c2f6e66086fabbc240a475062036e54671e605ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/custard-tart-recipe",
+    "fetchedAt": "2026-08-03T02:56:24.746Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/custard-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

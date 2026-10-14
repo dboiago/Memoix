@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Claire’s Bay Scallops with Saffron and Leeks",
+    "time": "1 hr 5 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 400 degrees.",
+      "Soak the saffron in a small bowl with 2 teaspoons of warm water for 10 minutes. Trim and wash the leeks (see note below). Thinly slice the white parts crosswise.",
+      "Melt 2 tablespoons butter in a cast iron skillet or saute pan. Cook the leeks over medium heat until very soft and tender, 6 to 10 minutes, stirring often. Do not let brown. (You may need to lower the heat as the leeks cook.) The leeks should lose half their volume.",
+      "Increase the heat to high and stir in the tomatoes. Cook until the tomato liquid has evaporated, about 2 minutes, stirring often. Stir in the vermouth and boil until it’s reduced to 2 tablespoons. Stir in the saffron with its soaking liquid and crème fraiche. Reduce the heat and gently simmer the mixture until the crème fraiche is absorbed and the mixture is creamy and flavorful, 5 minutes. Add salt and pepper to taste: The mixture should be highly seasoned. If using a saute pan, spoon the mixture into the prepared baking dish.",
+      "Remove and discard the small crescent-shaped muscle on the side of each bay scallop. (Pull it off with your fingers—it’s tougher than the rest of the scallop.) Season the scallops with salt and pepper. Arrange the scallops on top of the tomato-leek mixture.",
+      "Sprinkle the bread crumbs evenly over the scallops. Dot the top with the remaining butter. Bake the scallops until the bread crumbs are sizzling and browned, the scallops are cooked through (but just barely), and the tomato leek mixture is bubbling, 10 to 15 minutes. Serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Genuine Bay Scallops",
+        "unit": "lb",
+        "notes": "from Martha’s Vineyard or Nantucket",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": "lb",
+        "notes": "see note below",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "C",
+        "notes": "see note, peeled, seeded, diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Vermouth",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "C",
+        "notes": "alt: heavy cream",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "preferably brioche crumbs, dried",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93b6ac01e6a54f19987d0a69805e210951f29df3e71056e3d574932d66ac6454",
+    "lineage_hash": "58257f66f970d6426b6b3a1e8fc4bc4cdbcf387d86a9f385e86d74156f7e9b88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/claires-bay-scallops-saffron-leeks/",
+    "fetchedAt": "2026-08-03T05:49:33.918Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/claires-bay-scallops-saffron-leeks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

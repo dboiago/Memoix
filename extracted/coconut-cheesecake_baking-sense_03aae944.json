@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Coconut Cheesecake",
+    "time": "6 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "474",
+      "carbohydrateContent": "38",
+      "fatContent": "34",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Pour the graham cracker/coconut crumbs into the prepared cake pan.",
+      "Tamp the crumbs to an even layer.",
+      "Bake the crust for 10 minutes.",
+      "Set the baked crust aside to cool while you prepare the cheesecake batter.",
+      "Beat the cream cheese and sugar in a mixing bowl until smooth.",
+      "Add the thick cream from the top of the canned coconut cream to the cheese mixture. Mix to combine.",
+      "Pour the coconut liquid from the bottom of the can into the batter.",
+      "Add the eggs and mix to combine.",
+      "Pour the cheesecake batter over the pre-baked crust.",
+      "Place the cake pan into a larger pan and pour water to come 1/2 way up the sides of the cake pan.",
+      "Slide the pan into the oven. Bake until the entire cake shimmies as a mass without a liquid spot in the center.",
+      "Chill the cake for at least 6 hours before removing it from the pan.",
+      "If you use a springform pan, run a knife around the sides and release the pan. If you use a regular cake pan warm the bottom of the pan with a torch or in a bowl of hot water.",
+      "Run a knife around the sides of the pan and flip the cold cheesecake out of the pan.",
+      "Spread whipped cream over the top of the cake.",
+      "Sprinkle generously with shredded sweetened coconut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": "½ cup, packed",
+        "amount": "2",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "2",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "24",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Canned Coconut Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "2 tablespoons, optional",
+        "amount": "1",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "C",
+        "notes": "for finishing",
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42c46300043c70a9826a2f44d117f442444852b9089d1b34ec1729c5ebc4675f",
+    "lineage_hash": "d8b3866d61f89e84d0aa666004717aa318597b87410d4fbfeb6f4f5292797a19"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/03/07/coconut-cheesecake/",
+    "fetchedAt": "2026-08-02T08:08:30.965Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/03/07/coconut-cheesecake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

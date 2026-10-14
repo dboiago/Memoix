@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Confit Piccolo Cherry Tomato and Pecorino Risotto",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place 200g of the cherry tomatoes in a small roasting tray with the thyme and 6 of the garlic cloves, lightly crushed but still in their skins. Pour over 200ml of the olive oil and season with salt and pepper. The tomatoes should be roughly half submerged in the oil. Sprinkle with the red wine vinegar and bake in the oven for 1½-2 hours until the tomatoes are very soft but still holding their shape",
+      "Meanwhile, halve the remaining tomatoes and finely slice the remaining garlic",
+      "Gently heat the remaining 100ml of olive oil in a medium-sized saucepan and add the sliced garlic. Cook over a low heat for 5 minutes until the garlic is very soft but not browned at all. If it looks like it is starting to brown, add a tablespoon of water to slow it down",
+      "Once the garlic is soft add the halved cherry tomatoes and a pinch of salt and gently simmer over a medium heat for 40-50 minutes, stirring occasionally, until the tomatoes have broken down completely and you have a rich tomato sauce. Set aside",
+      "In another medium-sized, heavy-based saucepan gently heat the butter then add the chopped shallots. Sauté for 5-10 minutes over a very low heat until, like the garlic, they are very soft but not brown",
+      "Add the rice and cook for 2–3 minutes, stirring constantly with a wooden spoon. Add the wine and cook for another 2 minutes, stirring occasionally (it is very important to cook off the alcohol in the wine otherwise the risotto will taste very 'winey'!). Add the tomato purée and cook for a further minute, stirring continuously",
+      "Begin adding the warm stock, one ladle at a time, gently but frequently stirring it into the rice with a wooden spoon. Allow the rice to absorb the stock before the next ladle is added",
+      "Once about half of the stock has been used, stir in the tomato sauce, then continue to add the stock, one ladle at a time until it has all been absorbed and the rice is cooked, but still with a slight bite. Be sure to start tasting the rice regularly towards the end of the cooking time so you can ensure it's the right texture – it should be creamy and oozy",
+      "Stir in the grated pecorino and season to taste with salt and pepper. Serve immediately and garnish with the confit tomatoes and a good drizzle of the oil they were cooked in. Finish with a few extra shavings of pecorino cheese"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Risotto Rice",
+        "unit": "g",
+        "notes": "Arborio or Carnaroli",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piccolo Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": "or vegetable stock, heated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "grated, plus some shavings for garnish",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09dae1bea6a02e67104c99abd170355e0feffb049650e5d5f5e1862f79fd30ca",
+    "lineage_hash": "51ddec45295fd8f51498e617ca5c16d9345641e8513183e5b9bff2e51bf76f3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-tomato-pecorino-ricotto",
+    "fetchedAt": "2026-08-02T20:45:11.204Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-tomato-pecorino-ricotto",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

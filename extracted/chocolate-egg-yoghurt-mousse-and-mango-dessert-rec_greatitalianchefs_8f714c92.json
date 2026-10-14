@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Chocolate Egg, Yoghurt Mousse and Mango Dessert",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the mango purée 'egg yolks'. Divide the purée between 8 2cm hemisphere moulds and place in the freezer for at least 1 hour to set",
+      "Meanwhile, make the yoghurt mousse 'egg white'. Start by whisking the egg whites until semi-whisked and foamy. Heat the water and sugar to 121°C in a small saucepan and add this to the egg whites, beating together to form a meringue",
+      "In a separate pan, warm 100g of the UHT cream over a low heat. Squeeze any excess liquid from the gelatine and blend this into the cream until dissolved",
+      "Stir the warmed cream into the yoghurt, then weigh out 250g of meringue mixture and gently fold this through the yoghurt and cream. Semi-whip the remaining UHT cream and fold into the mixture, then pour the mousse into the egg moulds and leave to set in the fridge for 30 minutes",
+      "Gently remove the frozen mango purée from their moulds and place a ball of purée into the centre of 8 of the yoghurt mousse egg halves. Top each of these with a plain half and gently push them together, then transfer to the freezer and leave to set for approximately 1 hour",
+      "For the chocolate 'egg shells', dissolve 400g of cocoa butter in a bowl over a pan of hot water, adding the milk and white chocolate to the bowl to melt. Mix well to combine, then pour the molten chocolate into a spray gun",
+      "In a clean bowl over a pan of hot water melt the remaining cocoa butter. Remove the frozen yoghurt eggs from the freezer and roll each in the molten cocoa butter, leaving the coated eggs to rest in a deep metal tray for a few minutes. Spray each egg all over with the chocolate shell mixture and leave to set in the fridge for 2 hours",
+      "Meanwhile, prepare the the tonka bean custard. Place the milk, cream and tonka beans in a pan and bring to a gentle simmer over a medium heat",
+      "In a separate bowl, beat together the egg yolks and sugar until well combined. Pass the tonka bean mixture through a sieve and gradually pour it into the egg and sugar, stirring well until smooth and incorporated",
+      "Pour the mixture into a clean pan and heat at 83°C for 20 minutes, stirring continuously with a spatula. Remove from the heat and stir in the softened gelatine, squeezing the gelatine first to remove any excess moisture. Leave to cool, then transfer to the fridge and leave to set for 1 hour",
+      "For the puffed amaranth, heat the olive oil in a small pan over a medium heat and add the amaranth. Put a lid on the pan and cook until they have all popped and puffed up like popcorn, then drain on kitchen paper",
+      "To serve, place a spoonful of tonka bean custard on each plate and sprinkle over a circle of puffed amaranth. Place an 'egg' in the centre of the plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasteurised Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Purée",
+        "unit": "g",
+        "notes": "preferably Boiron",
+        "amount": "128",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonka Beans",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "softened in cold water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaranth Grain",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fac71fa823af2ef0e0f5628b04c694208083c5cf54f23b16705be920b101d96",
+    "lineage_hash": "50727e4f52bc293395f9746e41c98ca4edce71f837650bf14e1076c669ef0214"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/yoghurt-mousse-mango-coulis-recipe",
+    "fetchedAt": "2026-08-02T05:37:10.334Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/yoghurt-mousse-mango-coulis-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

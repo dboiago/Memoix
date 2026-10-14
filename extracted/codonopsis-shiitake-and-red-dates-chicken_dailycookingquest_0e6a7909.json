@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Codonopsis, Shiitake, and Red Dates Chicken",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a skillet over medium high heat and sauté garlic and ginger until fragrant (about 2 minutes), then add chicken and cook until no longer pink.",
+      "Add shiitake, codonopsis and red dates, mix well. Then add water, sugar, soy sauce, and dark soy sauce. Continue cooking until it reaches boiling point, then reduce heat to a simmer, cover the skillet, and cook for about 90 minutes to 2 hour until the meat falls off the bones.",
+      "Remove the cover and return to a boil, thicken the sauce by adding corn starch slurry and stir continuously for about 2-3 minutes.",
+      "Turn off the heat and serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "or use 8 drumsticks, cut into 8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake",
+        "unit": null,
+        "notes": "dried, soak in water to rehydrate until soft, remove stems",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Codonopsis",
+        "unit": "g",
+        "notes": "cut into 2\" sections",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Dates",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch Slurry (2 Tablespoon Corn Starch + 2 Tablespoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e9038c11b40cf78cb65562e07dd54983e8d17293a5d1f5fe84eee0514d13d2a",
+    "lineage_hash": "1e275d5ecb385a583cfba741d9cbd176c8315b5e36e7329f884ccada117747b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/codonopsis-shiitake-red-dates-chicken.html",
+    "fetchedAt": "2026-08-02T03:15:08.630Z"
+  },
+  "rawSource": "https://dailycookingquest.com/codonopsis-shiitake-red-dates-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

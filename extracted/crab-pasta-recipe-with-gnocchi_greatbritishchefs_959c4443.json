@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Crab Pasta With Gnocchi",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start your gnocchi by placing three large potatoes into a pan of water and bringing to the boil, reduce to a simmer and cook gently to avoid breaking the skin. Once the potatoes are soft, drain and mash thoroughly",
+      "Allow the potatoes to cool until luke warm. In a large mixing bowl combine the mashed potato, rice flour, herbs and 1 teaspoon of salt. Mix well until totally combined",
+      "Add in the brown crab meat until mixture forms a soft dough (you may need to add a little more rice flour - the dough should not be too sticky)",
+      "To see if the mixture is correctly seasoned, take a small amount of the mixture and roll into a small log on a board. Cook in boiling salted water (as soon as the gnocchi floats to the surface, leave for 1 more 1 minute then remove). Taste to check the seasoning and adjust if necessary",
+      "Put the mixture into a piping bag and cut an opening of 1cm in diameter. Dust a chopping board with some more of the rice flour and pipe long logs across the length of the board – roll along the board to coat in flour. Repeat until all the mix is used up",
+      "Dust a sharp knife with flour and cut the gnocchi into logs 4cm in length",
+      "Cook in boiling water, as above. If not using immediately, plunge into ice water to cool and you can store the gnocchi coated in oil in the fridge. This will keep for up to two days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "Tbsp",
+        "notes": "fresh, freshly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf9083444a60402cb59fa1e6f9d1a4b08df726afd0a0cd05b3daa885b86b571a",
+    "lineage_hash": "a5a8ea4c4ebc8a06bbd2a9f19b43d86fbbe953e027a61b010f01aacdc0a9f428"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/homemade-crab-pasta-recipe-gnocchi",
+    "fetchedAt": "2026-08-03T16:13:04.994Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/homemade-crab-pasta-recipe-gnocchi",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Mixed Salad",
+    "time": "15 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add the apple, tomatoes, cucumber, carrot and sweet pepper. Then add the lettuce. Pour the garlic sauce and toss."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Matoes Quartered",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaves Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Pepper Chopped",
+        "unit": "large",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "678c70d6df8cb51e6b9077ae28973a4ac3e03cd4c1c63a2255193943d6bda3f9",
+    "lineage_hash": "c393d3ec03c2af6a8e5bc54f6bc6023f7f2028feab9c8f2669d7a3b6adf21195"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/mixed-salad/",
+    "fetchedAt": "2026-09-25T23:34:55.851Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/mixed-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

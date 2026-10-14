@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Crispy Pav Bhaji Balls",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan heat oil and add mustard seeds, green chillies, onion, tomato and saute for 2 minutes on medium heat.",
+      "Now add pav bhaji masala degi red chilli powder and continue cooking for 4-5 minutes or until tomatoes are soft.",
+      "Add ladi pav, butter and saute everything properly for 2 minutes.",
+      "Then add grated potatoes, paneer, coriander leaves and mix everything properly and cook for a minute.",
+      "Remove and let it cool down then grind it into a fine thick paste.",
+      "Heat oil in a kadai and in meanwhile make bite size balls from the mixture and deep fry them in medium hot oil until golden brown and crispy.",
+      "Remove on an absorbent paper and then serve them with, cheesy mayonnaise and guava lemonade drink.",
+      "In a bowl add grated cheese, mayonnaise, spring onion and mix everything properly and keep aside for further use.",
+      "In a jar add mint leaves, ginger, green chillies, lemon juice, ice cubes, chopped guava and muddle them properly.",
+      "Now add black salt, guava juice, black pepper powder and then top it with some club soda. Serve in a serving glass chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pav Bhaji Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ladi Pav",
+        "unit": null,
+        "notes": "cut into 4 pieces",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pav Bhaji Masala",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cheesy Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cheesy Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Green Spring Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Cheesy Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "brake in half",
+        "amount": "2",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": "(as required)",
+        "amount": "0",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Guava",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Guava Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Drink",
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": null,
+        "notes": "to top-up",
+        "amount": "0",
+        "section": "For Drink",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f4d606f83781e89404a87ba41b856645a2f0a7bcd81c56e6fdba8c60b9cd820",
+    "lineage_hash": "87bc50e9614af3d462f380cda01178a509dda27f90417b5e44e99ab660510c93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-pav-bhaji-balls/",
+    "fetchedAt": "2026-08-02T12:41:46.722Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-pav-bhaji-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

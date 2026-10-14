@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Apple Cider Spice Bread",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small saucepan, bring the apple cider to a simmer over medium heat. Simmer until it has reduced to 1/2 cup, about 20 minutes. Set aside to cool. It will be used for the bread and the glaze.",
+      "Preheat the oven to 350° F (177° C). Grease a 9×5-inch or 8×4-inch\nloaf pan with nonstick spray.",
+      "In a large bowl, whisk the flour, cinnamon, baking soda, salt, allspice, cloves, and nutmeg. In a medium bowl, whisk the oil, granulated sugar, brown sugar, eggs, applesauce, orange zest, and 1/4 cup of the reduced apple cider until well combined. Pour the liquid mixture into the flour mixture and whisk until combined. Fold in the shredded apple. The batter should be thin.",
+      "Pour the batter into the prepared pan and smooth the top. Bake until a toothpick inserted in the center comes out clean, 55 to 65 minutes, tenting with aluminum foil after about 30 minutes to prevent the top from becoming too brown. Cool the bread in the pan set on a cooling rack for 1 hour. Remove the bread from the pan and return it to the rack to cool completely before glazing.",
+      "In a small saucepan over medium heat, combine the butter and reduced apple cider. Whisking constantly, bring to a boil. Once boiling, stop whisking and let boil for 1 minute. Remove from heat and whisk in the powdered sugar, cinnamon, and salt. Let the glaze cool for 10 to 15 minutes to slightly thicken.",
+      "Pour the warm glaze over the bread. It will thicken and set as it cools. Slice and serve. Store covered tightly at room temperature for up to 2 days or in the refrigerator for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "And Shredded Apple",
+        "unit": "C",
+        "notes": "about 1 large apple, peeled",
+        "amount": "1½",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "alt: melted coconut oil",
+        "amount": "½",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Applesauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Nonstick Spray",
+        "unit": null,
+        "notes": "alt: butter, (for the pan)",
+        "amount": "0",
+        "section": "For the bread",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "1",
+        "section": "For the apple cider glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Reduced Apple Cider",
+        "unit": "Tbsp",
+        "notes": "from above",
+        "amount": "3",
+        "section": "For the apple cider glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the apple cider glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "For the apple cider glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For the apple cider glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0a8427b57cd3561ee4582fac2be8809199a8330deda4e50b276b50a0ed665da2",
+    "lineage_hash": "b8ebebcd02c23fc1b38c50934dee635ff35d9e5883c182bec59845c462192591"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apple-cider-bread/",
+    "fetchedAt": "2026-08-04T01:07:22.513Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apple-cider-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

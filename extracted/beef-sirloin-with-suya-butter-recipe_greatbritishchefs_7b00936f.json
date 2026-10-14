@@ -1,0 +1,610 @@
+{
+  "recipe": {
+    "name": "Beef Sirloin with Suya Butter",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the beef stock at least one day before you make the carrot maafe sauce. Preheat the oven to 170°C/gas mark 3.5",
+      "Spread the beef bones and oxtail out in a large roasting tray and roast in the oven for 1 hour 20 minutes, turning every 20 minutes until the oxtail and bones are nicely coloured all over. When ready, reduce the oven temperature to 90°C",
+      "Place a large ovenproof stockpot over a high heat and, when hot, add a dash of oil. Add the beef shanks and allow to caramelise, turning occasionally until golden-brown all over. Remove the shanks and set aside. Add another dash of oil to the pan, reduce the heat a little and add the carrots, sweating until soft. Add the roasted bones, oxtail and the star anise, cover with the water and bring to a simmer, skimming any scum off of the top. Top with a lid, place in the oven and cook for 15 hours, checking occasionally to see if you need to top up the water. Using a heavy stock pot with a well-fitting lid will help to retain moisture",
+      "Make the roasted kelp paste on the day you start making the stock, as it'll need time to strain overnight. Place the kelp on a roasting tray and cook in the oven for 20 minutes. Remove and, once cool enough to handle, break into pieces and place in the blender with the oil. Blend for 7 minutes, then place in the freezer until frozen solid. Remove and place in a bag of muslin, allowing to defrost overnight",
+      "The next day, strain the beef stock through a sieve lined with muslin and set aside",
+      "Collect the strained roasted kelp paste that has gathered in the cloth and place in a container for later. You won’t need the kelp oil for this dish, but save it for other dishes in the fridge, it makes a great garnish",
+      "To make the ground roasted peanut powder, spread the peanuts on a tray and roast in the oven for 25 minutes, checking after 15 minutes. The peanuts should be fairly dark when ready. Allow to cool to room temperature. Once cool, blitz in batches to create a dry powdery consistency – you will need 80g for the suya marinade and 30g for the umami tenderiser",
+      "To make the umami tenderiser, blitz together all the ingredients, along with 75g of the roasted kelp paste and the 30g of roasted peanut powder. Loosen with water until you get a smooth consistency",
+      "Cut the sirloin into thick, even steaks (about 3–4cm thick), and coat in the tenderiser. Marinate for a minimum of 4 hours, or overnight for a stronger flavour",
+      "To make the carrot maafe sauce, spread the peanuts out on a roasting tray and roast in the oven for 20 minutes. Add to a high-power blender and blitz until a smooth peanut butter is formed (no need to add oil)",
+      "Toast the whole spices in a hot, dry pan and grind in a spice grinder. Peel and wash the carrots then add to a high-power blender with the ginger and garlic. Blend to a fine paste",
+      "Melt the butter in a pan and add the paste, cooking until very sweet and golden. Add the tomato paste, chillies and peanut butter and continue to cook down until the chillies have softened. Add all the spices and stir well",
+      "Cover with the rich beef stock (you'll need between 1.75l–2l) and simmer on a very low heat to cook out the spices and soften the paste, for around 45 minutes. Blend in a high-power blender in batches, blending each batch for 3 minutes. Set aside",
+      "Preheat a steam oven to 100°C and 100% steam",
+      "To make the sour carrot baobab purée, wash and peel the carrots, then slice very thinly to the same size. Place with the remaining ingredients into vacuum bags, then seal in a chamber sealer and steam in the oven for 2 hours. The carrots should be completely mushy",
+      "Empty the contents of the bags into a high-power blender and blend until completely smooth. The purée should be very light, sour and well-seasoned",
+      "To make the suya marinade, toast the whole spices in a hot, dry pan separately, then blitz together in a spice grinder with the crayfish powder, the bonito flakes and 80g of the peanut powder. Mix with the rest of the ground spices and condiments then pass through a sieve. You will only need 40g of this for the suya butter, but it's worth making in a larger batch as it makes a superb marinade for meat and fish, or can be used to season stews",
+      "To make the suya butter, melt the butter in a deep pan, then increase the heat to medium to help brown the butter. Once it has reached 180°C, remove from the heat and allow to cool to 60°C. Pour through a chinois into a bowl and add 40g of the suya marinade and the garlic cloves, mixing well. Infuse for 1 hour, then strain and set aside",
+      "To cook the beef, melt the beef fat in a large, wide pan fitted with a cooking thermometer over a low heat. Once it reaches 50°C, wipe the tenderiser from the beef using kitchen paper and add to the beef fat. Keep steadily at 50°C for 70 minutes to confit the beef",
+      "Meanwhile, preheat a steam oven to 100°C at 100% steam",
+      "Now prepare the red carrots. Mix together the butter and sugar and add to vacuum bags with the carrots. Seal and cook in the steam oven for 25 minutes. When ready, place in an ice bath to chill quickly, then remove from the bags and pat dry with kitchen paper",
+      "When ready to serve, gently reheat the sour carrot purée and carrot maafe sauce. Drain the sirloin pieces from the beef fat and sear on all sides in a hot, dry pan util nicely caramelised. Set aside to rest",
+      "Roast the steamed carrots in a generous helping of the suya butter until nicely caramelised, then place a piece on each plate alongside the purée and the maafe sauce",
+      "Once rested, carve the sirloin pieces into individual portions and place on each plate. Brush with the suya butter and season with smoked salt before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Bones",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oxtail",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shank",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "188",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "kg",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kelp",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": "peeled and cored",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled and cored",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filtered Water",
+        "unit": null,
+        "notes": "to loosen",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chillies",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sirloin of Beef",
+        "unit": "kg",
+        "notes": "in one piece",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fat",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uziza Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Carrots",
+        "unit": "g",
+        "notes": "peeled weight",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chillies",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Carrots",
+        "unit": "g",
+        "notes": "peeled weight",
+        "amount": "333",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "58",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baobab Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uda Pods",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": "Jeremy uses a mixture of black and Gola peppercorns in the restaurant, but these can be very tricky to get hold of, so try experimenting with varieties that are accessible",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pods",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "g",
+        "notes": "Scotch Bonnet",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madras Curry Powder",
+        "unit": "g",
+        "notes": "mild",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Carrots",
+        "unit": null,
+        "notes": "trimmed and halved lengthways",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44b9f099b710ec18d18218b77a99f790c1d0a9593302b8fd30578070f75bb623",
+    "lineage_hash": "a521d1821a19268e62f8046a1bba530342677739b1710d213f4c76c9be88e3c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-sirloin-suya-butter-carrot-puree",
+    "fetchedAt": "2026-08-03T07:56:31.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-sirloin-suya-butter-carrot-puree",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

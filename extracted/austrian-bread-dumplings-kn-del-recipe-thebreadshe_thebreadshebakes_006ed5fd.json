@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Austrian Bread Dumplings (Knödel)",
+    "time": "45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the Zedl or other white bread into small cubes (roughly 0.5 – 1 cm)",
+      "Fill up a large bowl with the cubed bread",
+      "Boil the milk-water mixture and pour over the bread",
+      "Cover the bowl with a cover or use a plate or chopping board to cover it. This keeps the steam inside the bowl and helps to soften the bread cubes.",
+      "Leave for about 10 minutes to allow the bread to soak up and absorb all the liquid.",
+      "Add the eggs and the salt and mix everything together with wet hands",
+      "There shouldn't be any dry bits of bread in the mixture. If there are, add a little bit more hot milk or water.",
+      "On the other hand, the mixture shouldn't be too liquid either or you are running the risk that the dumplings will fall apart. If you've added too much liquid, you should balance this out by adding a little flour.",
+      "Overall, the liquid should have been fully soaked up and the mixture should feel firm and just a little sticky.",
+      "Once mixed, leave to rest for another 5 minutes before shaping the dumplings.",
+      "Wet your hands, take a portion of the dumpling mixture to comfortably fit into your cupped hand and squeeze everything together while you shape and form a round dumpling.",
+      "Bring a large pan of water to the boil. You can boil the dumplings straight away or leave them to rest for 30 mins. I would recommend this if you make the dumplings with normal white bread as they will keep their shape better.",
+      "Add the dumplings once the water is bubbling away and boil for 15 minutes.",
+      "Remove with a slotted spoon and place on a serving plate.",
+      "Decorate with chopped chives."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zedl",
+        "unit": "g",
+        "notes": "The bread should ideally be several days old and a little stale.",
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid",
+        "unit": "ml",
+        "notes": "combine 325g milk and 325g water",
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b4b8710fbf7fa214d3a80f3efd75d6fe2aec559d2212e737984f3c10bbeb055",
+    "lineage_hash": "afe333044221b89af7d43cf7b5dfc2b5ec7c1d46a5edc6713961293971391aa9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2013/05/austrian-bread-dumplings-recipe/",
+    "fetchedAt": "2026-08-01T17:24:05.124Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2013/05/austrian-bread-dumplings-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

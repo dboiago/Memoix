@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Buttermilk Pancake",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the dry ingredients in a large bowl and make a well in the centre. Add the buttermilk, melted butter and egg and whisk until you have a smooth batter",
+      "Place a large non-stick frying pan over a high heat. Once the pan is just about smoking, turn down to medium and add a splash of oil. Add a large tablespoon of batter and gently spread into a neat circle with the back of the spoon",
+      "Cook the pancake for 2–3 minutes, or until nicely browned on one side, then flip over and cook for a further 1–2 minutes. Adjust the heat or add a little more oil if necessary. Work in batches until you have used up all the batter",
+      "Warm the pancakes under a hot grill if they need heating up and serve with crispy bacon and plenty of maple syrup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Streaky Bacon",
+        "unit": null,
+        "notes": "grilled until crispy",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca853b3b0128fcb17d31f9f1e412ad214a8a1f43a063cc6cac40e635435aa8a2",
+    "lineage_hash": "4ce57c67b5b12c30906d4e98e1a18bb2c245548fa506ee94b1e9a9c100fd5467"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttermilk-pancakes-recipe",
+    "fetchedAt": "2026-08-03T08:09:51.544Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttermilk-pancakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

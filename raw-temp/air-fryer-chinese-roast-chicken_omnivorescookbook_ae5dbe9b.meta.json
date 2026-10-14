@@ -1,0 +1,57 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-chinese-roast-chicken/",
+  "slug": "air-fryer-chinese-roast-chicken_omnivorescookbook_ae5dbe9b",
+  "title": "Air Fryer Chinese Roast Chicken",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T07:40:12.525Z",
+  "ldName": "Air Fryer Chinese Roast Chicken",
+  "ldTime": "PT180M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT50M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "main dish",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 small (3 to 4 lbs) whole chicken ((*Footnote 1))",
+    "1 tablespoon Shaoxing wine",
+    "1 tablespoon salt",
+    "1 teaspoon black pepper",
+    "1 head garlic (, outer skins removed and cut across the cloves)",
+    "4  scallion (, halved crosswise)",
+    "1 thumb ginger (, sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Place the chicken onto a big plate. Rub the Shaoxing wine inside of the cavity. Rub the inside evenly with 2 teaspoons of the salt, and sprinkle evenly with the black pepper. Stuff the garlic, scallion and ginger into the cavity. Sprinkle the other 1 teaspoon of salt evenly over the skin. Tuck the wing tips under the back. Tie the chicken legs with kitchen twine. Place the chicken in the fridge, uncovered, and let it marinate for at least 2 hours, or up to overnight.",
+    "When you’re ready to cook, place the chicken on the kitchen counter for 30 minutes in the summer, or 1 hour in winter. (*Footnote 2)",
+    "Place the chicken, breast side down, on the air fryer tray. Air fry at 400°F (200°C) for 20 to 30 minutes, until golden brown. Flip the chicken and air fry for another 15 to 30 minutes, until a thermometer reads 165°F when inserted into the thickest part. Check on the chicken from time to time. If some parts of the chicken char too quickly, cover them with aluminum foil to prevent burning. Once done cooking, transfer the chicken onto a cutting board and let cool for 10 minutes, or until cooled enough to handle. Carve and serve hot as a main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "237 kcal",
+    "carbohydrateContent": "2.1 g",
+    "proteinContent": "23.4 g",
+    "fatContent": "14.4 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "86 mg",
+    "sodiumContent": "983 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "1 small (3 to 4 lbs) whole chicken (*Footnote 1)",
+    "1 tablespoon Shaoxing wine",
+    "1 tablespoon salt",
+    "1 teaspoon black pepper",
+    "1 head garlic , outer skins removed and cut across the cloves",
+    "4 scallion , halved crosswise",
+    "1 thumb ginger , sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

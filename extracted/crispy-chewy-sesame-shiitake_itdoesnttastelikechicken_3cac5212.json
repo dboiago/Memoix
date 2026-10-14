@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Crispy & Chewy Sesame Shiitake",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "190",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Cover the mushrooms in boiling water, and put something on top to keep them submerged. Soak for around 40 minutes until tender. Drain the mushrooms. If you wish you can save the liquid to use as a mushroom broth. Now squeeze out the excess water from the mushrooms. Don’t mush them to death, but just lightly squeeze them and shake off the water so they are on the drier side. Slice them into nice thick slices, about 1/2 inch. Toss them in the cornstarch so they are evenly coated and shake off the excess.",
+      "Heat oil in a skillet over medium-high heat. Make sure the oil is nice and hot before adding in the mushrooms so that they fry, and not just soak up the oil. Fry the mushrooms until they are lightly golden on all sides, and no white cornstarch remains.",
+      "In the meantime make the sauce by adding all of the ingredients to a small sauce pan. Cook the sauce for about 2 minutes until it begins to thicken. Add in the fried shiitakes and toss to coat. Serve immediately over rice or in anyway that you desire, and garnish with green onions and sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitakes",
+        "unit": "C",
+        "notes": "12-16 mushrooms, dried",
+        "amount": "2",
+        "section": "shiitake",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": null,
+        "notes": "(to soak the mushrooms)",
+        "amount": "0",
+        "section": "shiitake",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "shiitake",
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil",
+        "unit": "Tbsp",
+        "notes": "(such as canola or peanut), plus more if needed",
+        "amount": "2",
+        "section": "shiitake",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "1",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "tsp",
+        "notes": "alt: other hot sauce, optional",
+        "amount": "2",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": "garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6414b9330d8f39938ffe02bf835b16b591ad420b2943b7aec10d90ca43abedf6",
+    "lineage_hash": "c3bf5579ceee6c45ab1b1f10ecb6a8bcfd1c63adf81873105a56038990a5427e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-chewy-sesame-shiitake/",
+    "fetchedAt": "2026-08-01T18:43:12.800Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-chewy-sesame-shiitake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

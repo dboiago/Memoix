@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Brisket in a Hurry Tacos with Chili Jam",
+    "time": "45 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before, trim any excess fat off the brisket (by excess, I mean more than 1/2 inch.) Save a few pieces of that fat in the refrigerator for greasing the grill grate. If you have an electric meat slicer, place the whole brisket point in the freezer. If you plan to use a food processor, cut the brisket point along the grain into chunks just narrow enough to fit in the processor feed tube. Take note of which way the grain of the meat (the meat fibers) runs: when it comes time for slicing, it’s very important to cut it across the grain.",
+      "If you have an electric meat slicer, cut the frozen brisket across the grain into paper-thin slices. As they come off the slicer, they’ll naturally curl into rolls. Arrange them on a platter.",
+      "If using a food processor, install the thinnest possible slicing blade (1/8 inch). Place the frozen brisket chunks in the feed tube (the grain of the meat should run vertical and parallel to the feed tube). Turn on the processor and slice the meat. The slices won’t be quite as pretty as on a meat slicer, but you will get the requisite thinness. Keep the sliced brisket on its platter in the freezer until the moment of serving. The brisket can be sliced and frozen several hours ahead.",
+      "A few hours before serving, make the Chili Jam and Pickled Carrots. Have the cucumbers thinly sliced.",
+      "Just prior to grilling, heat your grill to high. Oil the grate with chunks of brisket fat. Warm the tortillas and place on a dish covered with a dishcloth to keep warm.",
+      "Arrange the brisket slices on the grate and grill until browned on both sides, 30 seconds per side, or until cooked to taste. For even more fun, place the hibachi in the center of the table and have each guest grill his own meat.",
+      "To serve, spread each tortilla on one side with chili jam. Top with a lettuce leaf. Add cucumber slices and pickled carrots. Top with the grilled brisket. Serve at once. Eat like a taco and get ready for one of the most amazing brisket dishes on Planet Barbecue."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hunk of Brisket",
+        "unit": "lb",
+        "notes": "cut from the thickest part of the flat and point",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0307533dbfce95a64a9557e2af59e2a2c9603cb7653bc03ddb783a987c091818",
+    "lineage_hash": "66adb77cd5ae55f716eb8052943a1b5ad482ef02fab9823acb82505085941e0b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brisket-in-a-hurry-tacos-with-chili-jam/",
+    "fetchedAt": "2026-08-03T06:58:40.235Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brisket-in-a-hurry-tacos-with-chili-jam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

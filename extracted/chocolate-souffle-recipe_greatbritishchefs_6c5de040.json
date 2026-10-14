@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chocolate Souffle",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start this chocolate soufflé recipe by buttering the insides of 4 10cm x 5cm individual soufflé dishes. Put 20g of sugar into one of the dishes and rotate it to coat the surface. Tip all the excess sugar into another dish and rotate to coat it. Repeat on the other dishes",
+      "Very finely pare the zest from the orange, and chop as finely as possible. Blanch in boiling water for 1 minute, drain and then dry on paper towels",
+      "Preheat the oven to 200°C/Gas mark 6. Whisk 8 egg yolks with 50g of the sugar until light and pale. Fold the cocoa powder, whisky and orange zest in to the egg mixture",
+      "In a large, clean stainless steel or glass bowl, whisk 12 egg whites with a tiny pinch of salt to a soft peak. Add the remaining sugar and whisk until the mixture becomes firm but not too stiff",
+      "Add one quarter of the egg whites to the egg yolk mixture. Mix with a whisk, then fold in the remaining egg whites",
+      "Fill the prepared soufflé dishes with the mixture, right to the top and then above the rim by about 1cm",
+      "Be careful not to get any of the mixture on the edges of the dishes or the chocolate soufflés will stick and will not rise evenly",
+      "Set the dishes in a roasting tin and add hot water to the tin (about 1cm deep). Put the tin on top of the stove and bring the water to the boil, then transfer to the oven",
+      "Bake for about 12 minutes, reducing the temperature to 190°C/Gas mark 5 as soon as the chocolate soufflés start to rise",
+      "When the chocolate soufflés are puffed, remove them from their bain-marie of hot water. Quickly dry the dishes and place on plates. Sprinkle with cocoa powder and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "plus a little extra for sprinkling",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "softened",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b92bed67f05dd42ed72f3f8d8ef4655223be6e6260bee09da72cb191d73cb1a",
+    "lineage_hash": "7ea2e8d5f1e49a9fc14731f5822bd6bba203aea0f32f7031e29f802dcadb219c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-souffle-recipe",
+    "fetchedAt": "2026-08-03T17:07:41.315Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

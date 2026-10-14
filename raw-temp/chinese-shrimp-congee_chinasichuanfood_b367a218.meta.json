@@ -1,0 +1,63 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-shrimp-congee/",
+  "slug": "chinese-shrimp-congee_chinasichuanfood_b367a218",
+  "title": "Chinese Shrimp Congee",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:22:01.262Z",
+  "ldName": "Shrimp Congee",
+  "ldTime": "PT80M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Breakfast, staple food",
+  "ldKeywords": "Congee",
+  "ldIngredientsRaw": [
+    "1 cup rice",
+    "2 L water",
+    "10  small-sized shrimps or more if you wanted ( , divined and unshelled, I keep the tail)",
+    "1/2 cup minced greens ( , Bok Choy, Yu Choy etc)",
+    "Pinch of salt to taste",
+    "1 piece of ginger ( , shredded)",
+    "Pinch of ground pepper",
+    "Green onion ( , minced for garnish)",
+    "1 tablespoon cooking wine",
+    "1/2 teaspoon cooking oil"
+  ],
+  "ldInstructionsRaw": [
+    "In a small bowl, marinate shrimp with 2-3 ginger shreds, cooking wine and ground pepper.",
+    "Soak the rice for around 30 minutes and then wash and drain. In a small bowl, marinade the rice with pinch of salt and cooking oil for 10 minutes.",
+    "In a large pot, bring enough water to boil and then add rice. Use lowest fire to simmer for around 40 minutes until the rice is broken and get a thick soup base.",
+    "Add ginger and minced greens and continue cooking for 1 minute.",
+    "Add shrimp in; Turn off immediately the fire until the shrimp becomes red.",
+    "Garnish with green onion and serve hot with small side dishes like cucumber salad, pickles or fried shallot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "215 kcal",
+    "carbohydrateContent": "41 g",
+    "proteinContent": "8 g",
+    "fatContent": "1 g",
+    "cholesterolContent": "50 mg",
+    "sodiumContent": "1163 mg",
+    "fiberContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 cup rice",
+    "2 L water",
+    "10 small-sized shrimps or more if you wanted  , divined and unshelled, I keep the tail",
+    "1/2 cup minced greens  , Bok Choy, Yu Choy etc",
+    "Pinch of salt to taste",
+    "1 piece of ginger  , shredded",
+    "Pinch of ground pepper",
+    "Green onion  , minced for garnish",
+    "1 tablespoon cooking wine",
+    "1/2 teaspoon cooking oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Cranberry Orange Steamed Pudding",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C). Grease six 5-oz (150 mL) ramekins and sprinkle them with a coating of granulated sugar, tapping out any excess. Place the ramekins in a roasting pan with sides higher than the ramekins.",
+      "Beat the butter, sugar and orange zest by hand until smooth. Add the eggs one at a time, blending well after each addition, and then beat in the egg yolk, orange juice and vanilla.",
+      "Sift in the flour, baking powder and salt and stir until evenly combined. Stir in the cranberries. Spoon the batter into the ramekins, spreading to level.",
+      "Pour boiling water around the ramekins to reach halfway up the sides. Cover the pan with aluminum foil (or a lid, if you have it) and bake for about 30 minutes, until the tops of the puddings spring back when gently pressed.",
+      "Using a tea towel or a jam jar lifter (used in canning), transfer the ramekins from the roasting pan to a wire rack. Let the puddings cool for at least 20 minutes before serving.",
+      "To serve, unmold the puddings from the ramekins by inverting them onto individual plates."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "441dfc05c65ba786e82dabfc769c102ed441e6a8dce5546a8adc4e7919413fad",
+    "lineage_hash": "258f027b9feda14b1e4c8871619fdfddba988ebe37780549afdb56725810c874"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cranberry-orange-steamed-pudding/",
+    "fetchedAt": "2026-08-01T20:26:20.607Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cranberry-orange-steamed-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

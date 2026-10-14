@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Day at the Races Beer Julep",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Angostura Bitters"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the lime juice, cane syrup, whiskey, and mint leaves to a shaker. Lightly muddle the mint. Add one ice cube and shake. Add the IPA, give it a quick swirl to chill and pour the contents into a rocks glass. Top with crushed ice. Add a few drops of Angostura bitters on top of the ice, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "IPA",
+        "unit": "oz",
+        "notes": "Giger uses Bear Republic Racer 5",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b91f3c023493fd171f5c0c259a4747394ae4130451f798864f60dce1fd94044a",
+    "lineage_hash": "1a54fa27adea34234b1b5fd43986b3565ee23c25dd8bba25512641422792d79e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/day-at-the-races-beer-julep/",
+    "fetchedAt": "2026-08-03T20:30:31.500Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/day-at-the-races-beer-julep/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

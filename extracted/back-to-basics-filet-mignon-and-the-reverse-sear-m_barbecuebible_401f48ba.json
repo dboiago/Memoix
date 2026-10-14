@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Filet Mignon",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up grill for indirect grilling and add two oak wood chunks to create smoke.",
+      "Season the filets with kosher salt and freshly cracked black pepper.",
+      "Once the grill reaches 250°F, introduce the steaks and monitor them with a wireless thermometer while preparing side dishes.",
+      "Remove the steaks from the grill when they reach an internal temperature of 100 to 110°F and let them rest on a rack over a rimmed baking sheet.",
+      "Remove the diffuser plate and put in the cast iron grill grates.",
+      "Grill the steaks 3- to 4-minutes on each side, reaching 130 to 135°F for medium-rare, and 140 to 145°F for medium.",
+      "Use an instant-read thermometer inserted sidewise into the thickest part of the steak to check doneness."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Filet Mignon",
+        "unit": "pc",
+        "notes": "prime, 1 to 1½ inches thick",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "wrapped around the filet",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Sage Leaves",
+        "unit": null,
+        "notes": "wrapped around the filet",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Cracked Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5eb59e6dca282edbecfaca829fd4797a09c9bf9c127290bea1c5be447b3a21ca",
+    "lineage_hash": "ddda7235194f86a2a73742136f3de659b71537b1d1009c9ce622dbcd9b29d39b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2026/02/20/filet-mignon-reverse-sear-method/",
+    "fetchedAt": "2026-08-02T22:22:33.810Z"
+  },
+  "rawSource": "https://barbecuebible.com/2026/02/20/filet-mignon-reverse-sear-method/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Chicken Pahadi kebab no Tandoor (Pahadi Chicken Tikka Kebab)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add chicken, salt, ginger-garlic-green chilli paste, lemon juice and mix everything properly and keep aside at least for 15-20 minutes.",
+      "After 15-20 minutes, take the marinated chicken and squeeze out the excess water from the chicken and keep aside for further use.",
+      "In a grinder jar add coriander leaves, mint leaves, dried fenugreek leaves, green chillies, salt, oil and grind it into a fine paste and keep aside for further use.",
+      "In a bowl add prepared green paste, hung curd, mustard oil, salt, ginger-garlic-green chilli paste, cardamom powder, carom seeds and mix it properly.",
+      "Now add the squeezed chicken mix it properly ensuring that it coat's everything and keep it aside for 10-15 minutes.",
+      "After 10-15 minutes, add roasted gram flour, mustard oil, mix it properly.",
+      "Now put this marinated chicken on the skewers and cook on a hot grill pan with some oil and cook from both sides until golden brown & cooked.",
+      "Remove and serve hot and sprinkle some chaat masala, black pepper powder and garnish with coriander leaves and lemon wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken (boneless)",
+        "unit": "g",
+        "notes": "cubes",
+        "amount": "500",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic-green Chilli Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Coriander Leaves",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Mint Leaves",
+        "unit": "small",
+        "notes": "plucked",
+        "amount": "½",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2-3",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Green paste",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Green Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic-green Chilli Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Second Marination",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "A Sprinkle Black Pepper Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "342bfa8faf37ac87620707ea516b7efec89255bd9140d39ded1535e9ac5f71f3",
+    "lineage_hash": "0e23f2b078b0a858619d164e4b06638535776f6477af508d8ee6ed778337ec3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-pahadi-kabab-tikka/",
+    "fetchedAt": "2026-08-02T14:40:28.170Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-pahadi-kabab-tikka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

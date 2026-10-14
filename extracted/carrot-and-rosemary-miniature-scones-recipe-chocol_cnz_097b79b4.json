@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Carrot and Rosemary Miniature Scones",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F) and line a baking sheet with parchment paper.",
+      "In a medium mixing bowl, combine the flours, baking powder, and salt. Add the butter and rub it into the dry ingredients with the tips of your fingers or a wire pastry blender, until the mixture forms coarse crumbs. Add the grated carrots, cheese, rosemary, and garlic, and blend with a fork. (This can also be done in a food processor.)",
+      "Add the mustard and cream and mix them in gently with the fork just until the dough comes together -- add a tad more cream if the dough is too dry.",
+      "Turn the dough out on a floured work surface or a silicon mat, and gather into a ball without kneading. (This can be prepared up to a day ahead; cover tightly and refrigerate until ready to rumble.)",
+      "Roll the dough out into a rough rectangle, about 2-cm-thick (3/4-inch). If the dough is on the wet 'n sticky side, it helps to cover it with a sheet of parchment paper and roll the pin over the paper rather directly on the dough.",
+      "Cut the dough into 3-cm (1 1/4-inch) squares and transfer onto the prepared baking sheet, leaving about a little space between each.",
+      "Bake for 20 minutes, until puffy and golden, rotating the baking sheet halfway through.",
+      "Let cool on a rack for a few minutes and serve, warm or at room temperature, on its own as an appetizer, with a salad, or as part of a brunch."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "1 1/4 cups",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour",
+        "unit": "g",
+        "notes": "substitute another kind of interesting nutty flour, such as chestnut or buckwheat, or just use all-purpose flour, 270 grams or 2 1/4 cups of it",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "tsp",
+        "notes": "substitute kosher salt",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "9 tablespoons, chilled, unsalted, diced",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "1 1/2 cups, coarsely grated, about 1 1/2 medium",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "1 cup, coarsely grated, aged",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "or 1 tablespoon dried rosemary, fresh needles, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and finely minced, or pressed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": "strong Dijon",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "7 tablespoons, light (15%), plus a little more as needed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2610856a9dad497859cae8b8af60cff79572b2a153ae8f8b4c451c090a8f8529",
+    "lineage_hash": "1f954e908d703350bd61419176e414222fd46f4413100904fa08d6ff797d016e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/appetizers/carrot-and-rosemary-miniature-scones-recipe/",
+    "fetchedAt": "2026-09-30T19:35:26.529Z"
+  },
+  "rawSource": "https://cnz.to/recipes/appetizers/carrot-and-rosemary-miniature-scones-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

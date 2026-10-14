@@ -1,0 +1,3 @@
+If you like sloe gin, then you'll love damson gin – it has the same rich, fruity, deep flavours and really showcases this delicious British fruit at its best. Pick them when they're at their best (usually in September), and experiment with other additions to the gin such as orange peel, cinnamon, star anise or cloves. We recommend making a few batches and playing around with additional spices to see which you like best.
+
+The gin will have taken on the flavours of the damsons after three months, but even after it's strained and bottled it will continue to develop in flavour. If you can hide away a few bottles for a year (or even longer), the gin will gradually become incredibly smooth and well-rounded.

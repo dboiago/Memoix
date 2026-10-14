@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Cinder Bloom",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place 4 ají dulce peppers in a shaker and muddle. Add the rest of the ingredients along with ice. Shake hard for about 5 seconds, or until the outside of the shaker is frosty. Strain into the glass over ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ají Dulce Peppers",
+        "unit": null,
+        "notes": "muddled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7582f6a4eb967a44c34a7c4888eca010ee7d4c54f006cd8d186b31344327df9",
+    "lineage_hash": "7c217d566a365a8eb0ddeb2cc2ae8c97e4ff954eede7e33795ba9dde47e19d7d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cinder-bloom-tequila-cocktail-with-passion-fruit-and-peppers/",
+    "fetchedAt": "2026-08-04T01:37:44.969Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cinder-bloom-tequila-cocktail-with-passion-fruit-and-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

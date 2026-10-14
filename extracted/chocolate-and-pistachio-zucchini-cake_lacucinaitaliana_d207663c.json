@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Chocolate and Pistachio Zucchini Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the zucchini into thin strips. In a food processor, blend the pistachios with the oil and the almond milk. Mix in the honey, sugar, and a pinch of salt; add in the zucchini and pulse.",
+      "Sift the flour, wheat starch, vanilla baking powder and cocoa powder together and add to the zucchini mixture. Blend to combine.",
+      "Butter and flour a bundt pan (7 1/2\" diameter) and pour in the batter; top with the chocolate chips and bake for 50-55 minutes. Serve the cake cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": "trimmed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Pistachios",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Acacia Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet of Vanilla Baking Powder",
+        "unit": null,
+        "notes": "Vanillina",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faa87f98a0661bea0dbeddedb3b5aba5626b68d262aeb21c2964649699ff3e25",
+    "lineage_hash": "672a2ce3b29b5d3d48ccf74dea7ffdee42a7cce19e8006e7aa47f7ad048b4dc0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-and-pistachio-zucchini-cake",
+    "fetchedAt": "2026-08-01T20:28:46.478Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-and-pistachio-zucchini-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

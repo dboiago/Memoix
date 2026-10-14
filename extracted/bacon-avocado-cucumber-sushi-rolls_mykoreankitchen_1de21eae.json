@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Bacon Avocado Cucumber Sushi Rolls",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "226",
+      "carbohydrateContent": "36",
+      "fatContent": "7",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "In a large bowl, mix the cooked sushi rice with the sushi seasoning and roasted sesame seeds. Set aside while other ingredients are being prepared as mentioned in the ingredients section.",
+      "Place one seaweed sheet on a bamboo (sushi) mat and thinly spread the rice on the seaweed sheet. (I covered about 90% of the sheet)",
+      "Place the prepared ingredients on top of the rice (in the lower centre of the rice) in the order of bacon, mayonnaise (3 to 4 rows), avocado and cucumber strips. (I used 2 short cut bacon, 2 avocado strips and 2 cucumber strips per one sushi rolls).",
+      "Once all the ingredients are set, lift the bottom end of the sushi mat to cover the ingredients. Once you cover them, roll up the seaweed to the top. (Paste some water or put some rice pieces at the edge of the seaweed sheet, if it doesn’t stick) Roll the sushi roll with the bamboo mat once more to give a firm shape. Repeat this process with the remaining ingredients.",
+      "(Optionally brush the sesame oil on the outer layer of seaweed.) Cut the sushi roll into bite size pieces. Alternatively, halve the roll and eat like a burrito. Serve with a dab of wasabi sauce and a dash of soy sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Steamed Short Grain Rice",
+        "unit": "C",
+        "notes": "short grain rice",
+        "amount": "5½",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed Sheets",
+        "unit": null,
+        "notes": "dried",
+        "amount": "7",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Rindless Short Cut Bacon Rashers",
+        "unit": null,
+        "notes": "not too crispy, cooked until well done",
+        "amount": "14",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": null,
+        "notes": "Japanese Kewpie mayonnaise",
+        "amount": "0",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado Pitted",
+        "unit": null,
+        "notes": "peeled and sliced, I used hass avocado",
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Peeled and Sliced Into Thin Strips",
+        "unit": null,
+        "notes": "English cucumber",
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil (optional) to Give Some Korean Flavour And/or to Give a Shiny Look to the Rolls",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sushi seasoning (Mix these in a small bowl and microwave it for about 30 seconds to dissolve the sugar. Alternatively you could use 3 Tbsp of pre-made sushi seasoning sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sushi seasoning (Mix these in a small bowl and microwave it for about 30 seconds to dissolve the sugar. Alternatively you could use 3 Tbsp of pre-made sushi seasoning sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sushi seasoning (Mix these in a small bowl and microwave it for about 30 seconds to dissolve the sugar. Alternatively you could use 3 Tbsp of pre-made sushi seasoning sauce)",
+        "isOptional": false
+      },
+      {
+        "name": "Dab of Wasabi Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Serve with",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": "Serve with",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20dbc464ee6ebd3a3c85fc1c313dd31be56cee71fe6705c7d9e2d1a90c2ea593",
+    "lineage_hash": "b61d827d204d5e3a037983069f65b2ea6ed2791230780d763c31ab06b6f25bb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/bacon-avocado-cucumber-sushi-rolls/",
+    "fetchedAt": "2026-08-01T17:45:22.773Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/bacon-avocado-cucumber-sushi-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

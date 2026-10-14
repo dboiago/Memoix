@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Anna’s Easy Flatbread",
+    "time": "1 hr 15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Into a large mixing bowl, measure the flour, salt, sugar (if using) and yeast. Add the water, honey (if using in place of sugar), yogurt and 1 Tbsp (15 mL) olive oil and stir with a wooden spoon until too difficult to do so.",
+      "Turn the dough out onto a worktable and knead for about 5 minutes, until elastic. Return to the bowl, cover and let rise on the counter for 40 minutes before shaping and baking.",
+      "Here are easy ways to shape and cook your flatbread, depending on how you wish to serve it:",
+      "Preheat the oven to 400°F (200°C). Divide the dough into two pieces and shape each into a ball. On a lightly floured work surface and using a rolling pin, roll each piece of dough into a flat circle or oblong shape just under ½ inch (1.2 cm) thick. Place these onto a parchment-lined baking tray and dock with a fork.",
+      "Bake for 12 to 14 minutes, until golden brown. If they happen to puff up like pita bread, pierce each with a skewer to allow it to deflate. Brush the flatbreads with olive oil after they out of the oven.",
+      "Preheat a heavy-bottomed skillet over medium-high heat (do not grease the pan). (You can On a lightly floured work surface and using a rolling pin, roll the dough into a flat circle or oblong shape just under ½ inch (1.2 cm) thick (you can divide the dough first into three or four pieces to better fit into your skillet, if needed).",
+      "Drop in a flatbread into the skillet and cook for about 3 minutes on each side, until the bread blisters and the blisters brown. Repeat with the remaining flatbread and then brush each with olive oil before serving.",
+      "Preheat your grill on high heat. Divide the dough into two pieces and shape each into a ball. On a lightly floured work surface and using a rolling pin, roll each piece of dough into a flat circle or oblong shape just under ½ inch (1.2 cm) thick. Place these on a tray to bring to the grill.",
+      "Grilling one at a time, set a flatbread on the grill carefully, cover the grill and cook for 2 to 3 minutes on each side (use tongs to flip the bread over), until blistered and grill marks appear. Remove and brush each with olive oil before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": "alt: honey",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": "160 mL",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Greek Yogurt",
+        "unit": "Tbsp",
+        "notes": "90 mL",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "15 mL, plus extra for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae6e06c598f12db931e937aa2b33a54527c17e7747f66ff25c5f2a3afbe9c770",
+    "lineage_hash": "6cf53bf46482b9882ca82273655e4dfeb81dfeb8324e9be95e88ec853f010c3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/annas-easy-flatbread/",
+    "fetchedAt": "2026-08-02T01:12:50.746Z"
+  },
+  "rawSource": "https://annaolson.ca/project/annas-easy-flatbread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

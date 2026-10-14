@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Bloom No. 5",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake vigorously. Strain into a chilled coupe. Express a lemon peel and use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suze",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c3ed47397441d309cd6dcbe2d5e5097ab234caaf7c1972a96ffdcdb733848b20",
+    "lineage_hash": "dde58ce03a76e07177a305b1c685b69a90d9333bc1c62475716438029ff57c99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bloom-no-5-spring-cocktail/",
+    "fetchedAt": "2026-08-04T01:57:32.341Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bloom-no-5-spring-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

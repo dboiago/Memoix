@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Beef and Mushrooms Fried Rice",
+    "time": "8 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "180",
+      "carbohydrateContent": "10",
+      "fatContent": "15",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Pour sauce and seasoning into a bowl and mix well.",
+      "Heat oil in a pan and add the mushrooms. Fry until the mushrooms turn soft. Then, add the red onions. Fry for about a half minute until aromatic.",
+      "Spread the beef cubes in, sear for 2 minutes until well browned.",
+      "Add the leftovers and sauce, turn up the heat, and stir-fry until well combined.",
+      "Turn off the heat, add 1/8 tbsp. salt and sprinkle chopped green onion. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Steak of Beef Cut Into Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms Cut Into Small Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Leftover Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e480c045e21649ec26b9f337ce9e6237dcbbf4aa4cba0a25dc616f1e374c89bb",
+    "lineage_hash": "b05ef2cbb7c9dfa1e4aa14d3351df6e7d077b4eb73db6363f2a8d66f92442aeb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-and-mushrooms-fried-rice/",
+    "fetchedAt": "2026-08-02T09:11:06.794Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-and-mushrooms-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

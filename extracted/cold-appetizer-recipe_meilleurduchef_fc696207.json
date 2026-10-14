@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Pâté en Croûte",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Pâté en Croûte recipe, organise all the necessary ingredients for the stuffing.",
+      "Trim the meat chunks to remove the fatty bits. Discard the trimmings.",
+      "Cut the bacon into thick slices.",
+      "Cut the slices into thick chunks.",
+      "Place the shallots and garlic in the food processor bowl...",
+      "... then blend for a short while.",
+      "Melt the butter in a saucepan.",
+      "Add the chopped shallots and garlic."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Spare Ribs",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Neck",
+        "unit": "kg",
+        "notes": null,
+        "amount": "⅘",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Streaky Bacon",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cl Dry White Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Foie Gras",
+        "unit": "g",
+        "notes": "raw",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "whole",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Cushion",
+        "unit": "g",
+        "notes": "noix de veau",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": "cut to a thickness of 4mm",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Foie Gras",
+        "unit": "g",
+        "notes": "partially cooked",
+        "amount": "300-400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "fresh or in a jar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c1967f0d0a73fe6007344dc554de27057471bf822ed1af80e534b565757cff9",
+    "lineage_hash": "376dcc6b7ce5d2e5c1911eace1efc34488e086f2a7325e9ab6078dd94ffb6d40"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-recipes/cold-appetizer-recipe.html",
+    "fetchedAt": "2026-08-01T21:45:50.977Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-recipes/cold-appetizer-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

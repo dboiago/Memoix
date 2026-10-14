@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "AmeriCollins",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the soda, to a shaker with ice. Shake to chill and strain into a glass over ice. Top with soda.\nBlackberry Bramble SyrupAdd 8 oz. of water, 1 cup of sugar, 1 1/3 cup of fresh blackberries, and 1 vanilla bean or 1 Tbsp. of quality vanilla bean paste in a saucepan and simmer on low for 10 minutes, blend until smooth and double strain.\nRosemary SyrupStir together 1 cup of sugar, 1 cup of water and a handful of fresh rosemary sprigs in a medium saucepan over medium-high heat. Bring to a boil, stirring occasionally, and boil 1 minute or until the sugar is dissolved. Remove from heat and let stand 30 minutes. Pour the liquid through a wire-mesh strainer into an airtight container, discarding the rosemary. Cover and chill for 4 hours. Store in refrigerator up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Bramble Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alpine Amaro",
+        "unit": "oz",
+        "notes": "Intermezzo uses Pasubio",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Suze",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4321c12c1fd8c16505a82eee3cadc19397677ac05e1d66080477e3d93632f508",
+    "lineage_hash": "7ace897f099015bfb92b5d21f6900b60a1bcc780a9d28dbc125d46a67b8d27b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/americollins-americano-collins-cocktail/",
+    "fetchedAt": "2026-08-04T01:59:28.390Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/americollins-americano-collins-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

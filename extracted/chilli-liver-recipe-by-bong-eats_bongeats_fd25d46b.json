@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chilli Liver",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "298",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Clean and slice the chicken liver.",
+      "Slice onions, chop garlic, cut green chillies and slice tomatoes.",
+      "Hear 25 g oil in a wok. When hot, add in the chicken liver and stir-fry for 2–3 mins on high heat until the water evaporates (do not overcook).",
+      "Season with 2 g salt and ¼ tsp pepper. Set aside.",
+      "Add another 15 g oil to the wok. Add the sliced onions and fry on high heat for a minute.",
+      "Add garlic and green chillies, and fry for another minute.",
+      "Add back the fried liver, along with the remaining (3 g) salt and 4 g dark soy sauce.",
+      "Toss everything together for a minute, then add the tomatoes.",
+      "Toss for another minute before finally garnishing with spring onions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Liver",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "chopped lengthwise",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions (for Garnish)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5daf59c7f88395bae6300fe7f7daf532d592e940b2ca05c2f247eafdb9e70326",
+    "lineage_hash": "80c9671e072a6f8518e570b093f514a30b8dd494379782cb5808ede04e586b65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chilli-liver",
+    "fetchedAt": "2026-08-01T18:34:02.337Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chilli-liver",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

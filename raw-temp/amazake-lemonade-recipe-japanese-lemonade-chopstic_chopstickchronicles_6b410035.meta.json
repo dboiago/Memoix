@@ -1,0 +1,43 @@
+{
+  "url": "https://www.chopstickchronicles.com/amazake-2/",
+  "slug": "amazake-lemonade-recipe-japanese-lemonade-chopstic_chopstickchronicles_6b410035",
+  "title": "Amazake Lemonade Recipe (Japanese Lemonade) - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:01:01.706Z",
+  "ldName": "Amazake Lemonade 甘酒レモネード",
+  "ldTime": "PT3M",
+  "ldPrepTime": "PT1M",
+  "ldCookTime": "PT2M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Drinks",
+  "ldKeywords": "#amazake lemonade",
+  "ldIngredientsRaw": [
+    "400 ml Amazake",
+    "2 tbs lemon juice",
+    "2 tsp honey (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Follow the instructions for making amazake (by clicking the link).",
+    "Pour Amazake in a cup or glass.",
+    "Add lemon juice and honey and stir."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "174 kcal",
+    "carbohydrateContent": "36 g",
+    "proteinContent": "2 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 400 ml Amazake",
+    "▢ 2 tbs lemon juice",
+    "▢ 2 tsp honey optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

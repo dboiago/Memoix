@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Classic Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients briskly with ice, then strain into a chilled glass. Twist a small strip of lemon peel over the drink. You may drop it in, if you prefer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9d34424a474fd1cfd0c67fa70d8386b45ce311ba3a582b2270362f9acf7336d",
+    "lineage_hash": "3b6cb2dc62431c1a0eb82571f305e569d5bfa2cd250fdc74b97e8f1c769776bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/martini/",
+    "fetchedAt": "2026-08-03T21:31:23.280Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

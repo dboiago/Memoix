@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Asian Chicken Salad with Lemon",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "217",
+      "carbohydrateContent": "4",
+      "fatContent": "12",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "In a medium pot, bring 6 to 7 cups of water to a boil, along with 3 slices of ginger and 1 scallion.",
+      "Add the chicken thighs, and bring the water to a boil again. Immediately turn off the heat, cover tightly, and let the chicken sit in the pot for 12 to 15 minutes (depending on the size of your chicken thighs). The chicken is done when you poke the thickest part of the thigh with a chopstick and the juice runs clear.",
+      "Meanwhile, make the sauce. Heat the oil in a small saucepan over medium heat. Add the minced garlic, and cook for 15 seconds. Then add the Shaoxing wine, and bring the mixture to a simmer.",
+      "When it starts to simmer, immediately turn off the heat. Stir in the light soy sauce, rice vinegar and oyster sauce.",
+      "When the chicken is cooked through, transfer it to an ice bath to stop the cooking process. Use your hands to shred it into smaller bite-sized pieces, and transfer to a mixing bowl.",
+      "Add the sauce to the chicken, along with the chilies (if using), cilantro, and lemon slices. Toss well, and add salt to taste. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "about 1/8 inch thick x 2 inches wide, or 0.3cm x 5 cm",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "boneless, skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced, about 2 tablespoons",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Bird Chilies",
+        "unit": null,
+        "notes": "finely chopped, optional",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "de-seeded and very thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3bb08696fd78b5e73335713be88cf99dd7c12442a82d87a845ced3a180b512a",
+    "lineage_hash": "07272df8c3f4c94add99a2111b2247bc525a14a6b827a00ec694fc90fbc01fb2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/asian-chicken-salad-lemon/",
+    "fetchedAt": "2026-08-02T07:27:07.459Z"
+  },
+  "rawSource": "https://thewoksoflife.com/asian-chicken-salad-lemon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

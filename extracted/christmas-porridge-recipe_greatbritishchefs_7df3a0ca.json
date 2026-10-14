@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Christmas Porridge",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the porridge oats into a bowl and mix in the milk, honey and crème fraîche. Leave in the fridge to soak overnight (if it goes too thick, add a little more milk in the morning)",
+      "The next day, add some cut grapes, banana, dried cranberries, apple and a small dollop of crème fraîche",
+      "Divide the porridge into bowls and top with small dollops of crème fraîche. Place a cherry on top of each dollop to make Rudolph's nose, serve with a little extra milk if necessary"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half Fat Crème Fraîche",
+        "unit": "g",
+        "notes": "plus extra for garnish",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glacé Cherries",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49a4a7db2bf63a49bfb3007321f9ce81754b2aa9076cf6f29e81a0fc9b0c1152",
+    "lineage_hash": "927e4b5fa7f15e61b74e758ece8c4072f9a0aad2b60e888d8425a0fb366ede61"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-porridge-recipe",
+    "fetchedAt": "2026-08-03T18:27:02.286Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-porridge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

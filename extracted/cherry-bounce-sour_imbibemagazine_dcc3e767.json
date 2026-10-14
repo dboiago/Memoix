@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Cherry Bounce Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Spritz of Angostura Bitters",
+      "Fresh Grated Cinnamon",
+      "Bourbon Cherry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker and shake vigorously without ice to start emulsion. Add ice and shake again to chill and thoroughly emulsify. Strain over ice cubes in a Collins glass and garnish with a spritz of Angostura bitters, fresh grated cinnamon and a bourbon cherry.",
+      "*Cherry Bounce note: Our recipe calls for rye whiskey, but Huerta prefers using bourbon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "Huerta uses Old Grand-Dad",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Cherry Bounce",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "673227c5adfbd616eebd32cf2546dc2738cf4c2bcac3f0f845862e6d7aab4d21",
+    "lineage_hash": "ef2394430f0cca8650ad382a2d84490c93cd4e05663efb0ecc7ac75d1cc377f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-bounce-sour/",
+    "fetchedAt": "2026-08-03T22:11:03.881Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-bounce-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

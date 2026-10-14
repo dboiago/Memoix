@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Coffee and Chocolate Dessert",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, make the milk chocolate cream. Place the milk, cream and salt in a pan and bring to the boil",
+      "Place the cocoa butter and chocolate in a bowl and pour over the warmed cream and milk, stirring to melt everything together",
+      "In a separate bowl, mix together the egg yolks and sugar and gradually whisk in the chocolate milk mixture - make sure the milk has cooled slightly or the egg yolks will scramble due to the heat",
+      "Add the mixture to a clean saucepan and gently heat to thicken (between 76-80°C). Stir continuously to prevent the eggs from overcooking, especially in the corners of the pan - this is now known as pan anglaise",
+      "Add the gelatine leaves to a bowl of cold water and leave to soften for approximately 5 minutes. Once soft, squeeze out any excess water and add to the chocolate anglaise. Stir to dissolve the gelatine, then pass the mixture through a fine sieve",
+      "Divide equally between small individual serving bowls, cover and cool in the fridge until set",
+      "To make the foam, toast the coffee beans in the oven for 3-5 minutes until they release a nice coffee aroma - make sure that they don't burn",
+      "Add the coffee beans to a pan with the milk and cream and bring to the boil. Remove from the heat and leave to infuse for about 10 minutes",
+      "In a bowl, mix the yolks and the sugar together",
+      "Bring the coffee milk to the boil ,then gently whisk into the yolks in small additions until entirely incorporated. Mix together and return to the pan",
+      "Over a gentle heat, cook the mixture until it thickens (between 76-80°C), stirring continuously to prevent the eggs from overheating and scrambling. Once thick, remove from the heat",
+      "In a clean bowl, soften the gelatine in water for 5 minutes",
+      "Whilst still warm, add the gelatine to the crème anglaise and stir to dissolve. Pass the mixture through a fine sieve into a clean bowl and discard the coffee beans. Set the bowl over another bowl of iced water and gently stir the mixture to cool it down - it will thicken as it cools",
+      "Preheat the oven to 160°C/gas mark 3 - slow fan if this option is available",
+      "For the biscuit crumb, cream together the butter and sugars in a mixing bowl, then add all of the dry ingredients and mix to form a smooth paste",
+      "Roll the dough out to an even thickness of 1cm and place in the oven. Cook for approximately 10-15 minutes until the biscuit is cooked through",
+      "Remove the biscuit from the oven and leave to cool on a wire rack. Once cool, smash into crumbs",
+      "To plate, remove the bowls with the set milk chocolate cream from the fridge. Divide the coffee cream into 2 espuma guns, add 1-2 gas charges until the appropriate thickness. Shake the gun vigorously and add a layer of coffee foam on top of the set chocolate in each bowl, followed by a layer of crushed cookie. Add more coffee foam and finish with more of the cookie crumb. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Valrhona Tanariva Chocolate",
+        "unit": "g",
+        "notes": "broken into even pieces",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": "broken into even pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "232",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa60c34b9b9ebcd2bbe6af87c3fa73f6c0fc23688d0e5110c50c5b08e37e0794",
+    "lineage_hash": "da15590b5715d7456e55542805257ebe173e18c8281b18173e268f78dc628bbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-chocolate-dessert-recipe",
+    "fetchedAt": "2026-08-02T22:16:40.535Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-chocolate-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

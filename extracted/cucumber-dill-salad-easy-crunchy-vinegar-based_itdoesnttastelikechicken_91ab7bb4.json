@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Cucumber Dill Salad",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "45",
+      "carbohydrateContent": "10",
+      "fatContent": "0.2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix the salad: In the bottom of a large bowl, whisk the vinegar, maple syrup, salt, and pepper. Add the cucumber, red onion, and dill, and toss very well until everything is evenly coated.",
+      "Chill (optional but recommended): For best flavor, let the salad rest in the fridge for 10–20 minutes before serving. Toss again, taste, and add more salt and pepper if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Cucumbers",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "or white wine vinegar",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": "to taste (I like lots)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "723b001d09990eef879826b434f9be52fc44ebe2485ba35ecfb0c7aff42360e4",
+    "lineage_hash": "0bcfde96253938300ed1e7d1518e3c07a533610430a6f61d5a7c015065a4ae67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/cucumber-dill-salad/",
+    "fetchedAt": "2026-08-02T09:44:24.341Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/cucumber-dill-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

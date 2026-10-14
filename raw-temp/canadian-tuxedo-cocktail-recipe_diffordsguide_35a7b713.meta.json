@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/4362/canadian-tuxedo",
+  "slug": "canadian-tuxedo-cocktail-recipe_diffordsguide_35a7b713",
+  "title": "Canadian Tuxedo Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T13:23:57.811Z",
+  "ldName": "Canadian Tuxedo",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif"
+  ],
+  "ldIngredientsRaw": [
+    "22.5 ml Gentian liqueur",
+    "15 ml Amaro (e.g. Montenegro)",
+    "45 ml Canadian rye whisky",
+    "15 ml Lemon juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of a fresh strawberry.",
+    "STIR all ingredients with ice.",
+    "STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+    "Garnish with strawberry."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "179 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

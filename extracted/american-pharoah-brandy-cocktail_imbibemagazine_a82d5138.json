@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "American Pharoah Brandy Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Julep Cup",
+    "garnish": [
+      "Crushed Ice"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the mint with the strawberry syrup in a chilled julep cup, then add the remaining ingredients and fill with crushed ice. Swizzle until the cup frosts over, then top with crushed ice. Garnish.",
+      "Strawberry SyrupMake a 1:1 simple syrup (16 oz. of granulated sugar and 16 oz. of water). Combine 16 oz. of washed and de-stemmed fresh strawberries with 16 oz. of the simple syrup in an immersion blender. Bottle and refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lustau East India Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c96ef481943a33e215d8886e295cce849ef89413273c5431329aef5b305f1547",
+    "lineage_hash": "3e1b6332e8eb4a5637816629bf7080d3f70365ac8335beb57b246e5ace457cbb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/american-pharoah-brandy-cocktail/",
+    "fetchedAt": "2026-08-03T21:08:57.652Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/american-pharoah-brandy-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

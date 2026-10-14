@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Citrus-Smoked Turkey Breast",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the turkey breast and blot dry with paper towels. If using a bone-in breast, trim off any visible rib tips. Place the turkey in a jumbo heavy-duty resealable plastic bag.",
+      "Make the citrus seasoning: Place the lime, lemon, orange, grapefruit, salt, sugar, pepper, and fennel pollen in a food processor and grind to a coarse paste. Grind in 4 tablespoons of the olive oil and ¼ to ½ cup of water—enough to make a thick but pourable paste. Pour this mixture over the turkey in the bag, massaging the bag to coat the meat evenly. Seal the bag and place it in a large aluminum foil pan to contain any leaks. Marinate the turkey in this mixture in the refrigerator for 24 hours, turning the bag over several times so the meat marinates evenly.",
+      "Drain the turkey on a wire rack over a rimmed baking sheet. For a finished look, scrape off the marinade; for a more rustic look, leave it on. Let it dry in the refrigerator for 2 hours.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 225° to 250ºF. Add the wood as specified by the manufacturer.",
+      "Place the turkey breast in the smoker. After 1 hour, start basting the turkey with the remaining olive oil, and continue basting every 45 minutes. Smoke until the outside is bronzed with smoke and the internal temperature of the meat reaches 165ºF on an instant-read thermometer. This will take 2 to 3 hours.",
+      "Transfer the turkey to a cutting board. To serve it hot, let it rest for 5 minutes, then thinly slice across the grain. To serve it cold (which is how we like it at my house), let the turkey breast cool to room temperature, then thinly slice. Store any extra in the refrigerator, where it will keep for at least 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turkey Breast Half",
+        "unit": null,
+        "notes": "preferably bone-in; 5 to 6 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "quartered and seeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "quartered and seeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit",
+        "unit": null,
+        "notes": "with rind, seeded and cut into 1-inch pieces",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "sea or kosher",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light",
+        "unit": "C",
+        "notes": "alt: dark brown sugar",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Pollen",
+        "unit": "Tbsp",
+        "notes": "alt: fennel seeds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "or as needed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47d4755ed4afaad2b8d2684ee8c7555a875a8c2db54af28a139f413460485ce3",
+    "lineage_hash": "5e8f0c1d69de5dbb61cca6921e320c244286549a13618b80509d9416a727e5a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/citrus-smoked-turkey-breast/",
+    "fetchedAt": "2026-08-03T08:28:47.511Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/citrus-smoked-turkey-breast/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

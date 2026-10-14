@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Bao Dough",
+    "time": "15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the dry mix ingredients into the bowl of a free-standing mixer fitted with a dough hook attachment",
+      "Mix the liquid ingredients in a measuring jug. Slowly pour the liquid into the mixer while kneading on a low speed for around 2 minutes, until all the water is mixed into the flour. Once combined, turn the speed up to high for a further 2 minutes, until the dough has a smooth yet tacky feel to it",
+      "Once the dough has been well kneaded, dust it with 2 tablespoons of flour. Shape the dough into a rough ball, scraping off any bits of dough on the sides of the bowl, then coat it lightly with 1 tablespoon of vegetable oil. Place the dough back into the bowl, cover with a damp cloth and leave in a warm and preferably moist draught-free location (such as inside a room-temperature oven) for 1–1 1/2 hours",
+      "Once the dough has doubled in size, you can make it into whatever shapes you wish before steaming. Steaming time will vary between 10 and 15 minutes, depending on the shape and size of your finished buns (the thinner the bun, the shorter the steaming time)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "530",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": "approx. 200–250ml depending on how humid your room feels – if the air feels very dry you'll want to add a little more water, but if it's very humid less is required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "or sunflower oil",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ce5530188b7a336b30392d7eb2a1c8dc3390fa27d8ceb752b46f67db485f639",
+    "lineage_hash": "99f47f6a8132ed10f0bc184f2897ffa29a1c1f2115505da02e89a85995459259"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bao-dough-recipe",
+    "fetchedAt": "2026-08-03T09:10:30.606Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bao-dough-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

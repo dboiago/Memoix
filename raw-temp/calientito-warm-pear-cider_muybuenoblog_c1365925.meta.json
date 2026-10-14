@@ -1,0 +1,56 @@
+{
+  "url": "https://muybuenoblog.com/calientito-warm-pear-cider/",
+  "slug": "calientito-warm-pear-cider_muybuenoblog_c1365925",
+  "title": "Calientito (Warm Pear Cider)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T23:48:35.217Z",
+  "ldName": "Calientito (Warm Pear Cider)",
+  "ldTime": "PT18M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "alcoholic drinks, cider, pear",
+  "ldIngredientsRaw": [
+    "3 ½ cups pear nectar",
+    "1-2  sticks of cinnamon",
+    "3  whole cloves",
+    "4  whole anise stars",
+    "¾ cup tequila gold",
+    "4  Asian pears (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine pear nectar, cinnamon sticks, cloves, and anise stars in a medium saucepan. Bring to a boil, then reduce heat and simmer for 10-15 minutes.",
+    "Add tequila and stir to incorporate.",
+    "Cut off the pear top and with a sharp knife carefully outline a rim on your pear cup.",
+    "With a melon baller or a spoon, hollow out the pear making sure to leave about 1/4 inch at the bottom and around the edges, creating a cup.",
+    "Pour warm nectar into pear cups and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "241 kcal",
+    "sugarContent": "33 g",
+    "sodiumContent": "10 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "36 g",
+    "fiberContent": "2 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 ½ cups pear nectar",
+    "▢ 1-2 sticks of cinnamon",
+    "▢ 3 whole cloves",
+    "▢ 4 whole anise stars",
+    "▢ ¾ cup tequila gold",
+    "▢ 4 Asian pears, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

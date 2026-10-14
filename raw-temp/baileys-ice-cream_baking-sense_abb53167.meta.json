@@ -1,0 +1,59 @@
+{
+  "url": "https://www.baking-sense.com/2024/07/31/baileys-ice-cream/",
+  "slug": "baileys-ice-cream_baking-sense_abb53167",
+  "title": "Baileys Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:35:39.875Z",
+  "ldName": "Baileys Ice Cream Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "frozen dessert, gelato, ice cream",
+  "ldIngredientsRaw": [
+    "12 oz whole milk (1 ½ cups)",
+    "8 oz heavy cream (1 cup)",
+    "6  egg yolks",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon salt",
+    "6 oz Baileys Irish Cream (¾ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat 12 oz&#32;whole milk and 8 oz&#32;heavy cream in a small saucepan until scalding hot.",
+    "While the milk heats up, whisk together 6&#32;egg yolks, 6 oz&#32;granulated sugar and ⅛ teaspoon&#32;salt in a small bowl.",
+    "Once the milk is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+    "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a boil.",
+    "Remove from the heat and strain into a bowl. Stir 6 oz&#32;Baileys Irish Cream into the custard. Cover the bowl and chill until very cold. At least 4-5 hours or over night (see note).",
+    "Freeze according to the directions for your ice cream machine.",
+    "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "317 kcal",
+    "carbohydrateContent": "30 g",
+    "proteinContent": "5 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "183 mg",
+    "sodiumContent": "67 mg",
+    "sugarContent": "28 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz whole milk (1 ½ cups)",
+    "8 oz heavy cream (1 cup)",
+    "6 egg yolks",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon salt",
+    "6 oz Baileys Irish Cream (¾ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

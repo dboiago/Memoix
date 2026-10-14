@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cucumber Fresco Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake to chill. Strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": "alt: gin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df78df52795a1ca6a0bca8d7b327e9563a0d50fb37261c0fffbd0dc864f1681f",
+    "lineage_hash": "2667ddba75b62bd8cb76b454bfbb04192eee0f6216e0dac0e6cead772171223a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cucumber-fresco-cocktail/",
+    "fetchedAt": "2026-08-03T18:39:51.463Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cucumber-fresco-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

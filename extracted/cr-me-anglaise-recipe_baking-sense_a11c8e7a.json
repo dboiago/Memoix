@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Crème Anglaise",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "132",
+      "carbohydrateContent": "9",
+      "fatContent": "10",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Split ½ vanilla bean and scrape out the seeds. Combine 8 oz whole milk, 8 oz heavy cream the vanilla beans and the pod in a pan over medium high heat. Cook  until scalding hot. Do not let it come to a full boil.",
+      "While the milk heats up, whisk together 6 large egg yolks and 3 oz granulated sugar. Whisk the hot milk into the bowl of egg yolks, then return the mix to the pan.",
+      "Cook the sauce over low heat, stirring constantly, until the mixture thickens enough to coat the back of a spoon (see photo). Remove from the heat immediately and strain.",
+      "Refrigerate until serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 teaspoon vanilla extract",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d19c1be4d75b82bc3eaea0a0ea0b950c8fd8771e1a737e06355596f88736e75",
+    "lineage_hash": "a1ffa3b341abe7f8d16610a005b76a364ab27928191f083288ece046030fe997"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/12/14/creme-anglaise/",
+    "fetchedAt": "2026-08-01T16:48:24.229Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/12/14/creme-anglaise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

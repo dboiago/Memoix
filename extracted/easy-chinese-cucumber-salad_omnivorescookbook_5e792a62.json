@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chinese Cucumber Salad (拍黄瓜)",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "38",
+      "carbohydrateContent": "7.6",
+      "fatContent": "0.9",
+      "proteinContent": "1.3"
+    },
+    "directions": [
+      "Dry the cucumber with a paper towel. Place the cucumber on a large cutting board and carefully use a cleaver to crush it. If you don't own a cleaver, a meat pounder will work as well. Then cut it into bite-size pieces and place them into a bowl.",
+      "Add the garlic on top of the cucumber.",
+      "Combine the vinegar, soy sauce, sugar, salt and sesame oil in a small bowl and mix well.",
+      "Right before serving, pour the sauce mixture over the cucumber and mix well. (Do not add the sauce beforehand. It will cause the cucumber to lose water, and the sauce will be diluted.",
+      "(Optional) To give the salad an extra kick, you can drizzle some chili oil or add a spoonful of chili crisp. It makes the dish addictively good."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Cucumbers (about 11 Oz / 300 G)",
+        "unit": null,
+        "notes": "tough skin removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed and minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": "or rice vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil (or Store-bought Chili Oil)",
+        "unit": "tsp",
+        "notes": "Optional, or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lao Gan Ma Chili Crisp",
+        "unit": "Tbsp",
+        "notes": "Optional, or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53192e112973225f40d1c2ced2112eed38f45ba82ee1acacd812973724eabda0",
+    "lineage_hash": "b0d1bdefa6953154a79ca6925d67e257cabcfb3ddb21c66eb936ca8128c6b2a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/easy-chinese-cucumber-salad/",
+    "fetchedAt": "2026-08-02T04:20:11.218Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/easy-chinese-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

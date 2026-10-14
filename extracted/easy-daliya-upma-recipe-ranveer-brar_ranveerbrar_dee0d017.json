@@ -1,0 +1,259 @@
+{
+  "recipe": {
+    "name": "Daliya Upma दलिया उपमा",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai add ghee and daliya and roast it properly until fragrant.",
+      "Remove and keep aside for further use.",
+      "In the same kadai add oil, ghee, black pepper cons, cinnamon stick, dry red chillies, cloves, mustard seeds, curry leaves and saute for a minute.",
+      "Now add the onion and cook until translucent, the add the carrots, salt, water mix and add turmeric powder, degi red chilli powder, roasted daliya and the second tempering and bring it to a boil.",
+      "Now add the french beans and cover with a lid and cook until completely cooked.",
+      "Remove the lid and add coriander leaves, mint leaves, lemon juice and mix everything properly.",
+      "Serve in a plate and garnish with coriander leaves, lemon wedges, fresh green chillies.",
+      "In a pan add ghee, chana dal, urad dal and saute until nutty brown.",
+      "Then add the peanuts, cashew nuts and saute them for a minute and add it in the upma."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "Daliya",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Big Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6-8",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Second Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Second Tempering",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68fdf0b901f59f6b8d2bbedae08416ce2361db783e8b9a3215b05b22a6603948",
+    "lineage_hash": "71637a2208d9cffd49b1146cd41aef2136a585bfd658d7d25f22729486bc86a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/daliya-upma/",
+    "fetchedAt": "2026-08-02T18:16:31.633Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/daliya-upma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

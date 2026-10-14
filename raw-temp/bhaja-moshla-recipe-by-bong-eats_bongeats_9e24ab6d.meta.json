@@ -1,0 +1,30 @@
+{
+  "url": "https://www.bongeats.com/recipe/bhaja-masala",
+  "slug": "bhaja-moshla-recipe-by-bong-eats_bongeats_9e24ab6d",
+  "title": "Bhaja Moshla recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:18:02.857Z",
+  "ldName": "Bhaja Moshla",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": "10g",
+  "ldCuisine": "Indian",
+  "ldCategory": "seasoning",
+  "ldKeywords": "indian spice blends, tala jeera mosla, bhaja moshla, bhaja jeera",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "0"
+  },
+  "htmlIngredientLines": [
+    "1 tbsp cumin seeds (jeera)",
+    "1 tbsp fennel seeds (mouri)",
+    "1 tsp coriander seeds (dhone)",
+    "2 pc cardamom (elach)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

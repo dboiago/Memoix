@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Benjawan: A Yuzu Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Inverted Lime Shell",
+      "Dried Thai Pepper"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim your glass, then set aside. Add the mezcal, Ancho Reyes, lime juice, yuzu, and agave syrup to a shaker with ice and shake. Strain the cocktail into the glass over an ice cube. Place an inverted lime shell on top and add the dried Thai pepper. Pour the sambuca into the inverted lime shell and carefully light it on fire with a long match and serve. Blow out the flame before taking a sip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Chile Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sambuca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d9cc3ebc4345e8ceac6e1fd5bb71c199c68c3a318d89fd24c5347dc23b50e65",
+    "lineage_hash": "f8d8d0848772e061614774433c56100af48dcd4c88322394d77e0b7da21add8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/benjawan-a-yuzu-cocktail/",
+    "fetchedAt": "2026-08-03T21:19:47.959Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/benjawan-a-yuzu-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

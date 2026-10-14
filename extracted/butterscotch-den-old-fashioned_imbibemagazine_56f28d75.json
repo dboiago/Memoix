@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Butterscotch Den Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain over a large ice cube and garnish.",
+      "Butterscotch Magic Combine 8 oz. of butterscotch liqueur (such as Bols) with 8 oz. of demerara syrup (1:1). Keeps refrigerated for up to 2 months.",
+      "Butterscotch Chartreuse Bitters In a jar, combine 5 butterscotch candies with 125 ml. of Angostura bitters. Store at room temperature and wait for the candies to dissolve, about 48 hours. Once the candies have dissolved, add 40 ml. (about 1 1/3 oz.) of green Chartreuse and shake to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tennessee Whiskey",
+        "unit": "oz",
+        "notes": "such as George Dickel",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-aged Rum",
+        "unit": "oz",
+        "notes": "Butterscotch Den uses El Dorado 5 year",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butterscotch Magic",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butterscotch Chartreuse Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "985581842c85fa2ca194d38b82b9ca56555badc79e6ada5f5901b2d903361c62",
+    "lineage_hash": "6a8cc27cfd7e36ca8285f5e6d9f19edb4d54b266de3eece370024ae273cd33d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/butterscotch-den-old-fashioned/",
+    "fetchedAt": "2026-08-03T21:32:36.635Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/butterscotch-den-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

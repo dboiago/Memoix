@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Drunken Lamb Chops",
+    "time": "1 hr 4 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the marinade, combine the Soy Balsamic Sauce, brandy, hoisin, sesame oil, rosemary and garlic in a small bowl and mix well. Measure out ¼ cup of the marinade and reserve it for basting the meat on the grill.",
+      "Place the lamb chops in a large, shallow dish. Spoon the remaining marinade over the chops and turn the chops to coat evenly. Marinate at room temperature for 1 hour.",
+      "Heat a grill to medium (350°F to 375°F). Once the grill is hot, place the chops on the grill over the flames and cook for 3 minutes. Brush or lightly spoon some of the reserved marinade on the lamb, turn them over, and brush or lightly spoon marinade on the second side. Cook the chops for about 3 minutes longer, until lightly charred on each side.",
+      "Transfer the lamb to a serving platter and let rest for 4 minutes, then serve.",
+      "1 tsp. cornstarch, or as needed\n2 Tbsp. water\n1/4 cup dark brown sugar, firmly packed\n1/2 cup balsamic vinegar\n1/2 cup soy sauce",
+      "In a small bowl stir together the cornstarch and water until the cornstarch dissolves and the mixture has the consistency of heavy cream, adding more cornstarch if the mixture is too thin.",
+      "Combine the brown sugar, vinegar, and soy sauce in a small saucepan and bring to a boil over medium heat, stirring to dissolve the sugar. Stir the cornstarch mixture briefly to recombine, then add it to the soy-vinegar mixture and simmer over low heat for about 3 minutes, until the sauce thickens enough to coat the back of a spoon. Remove the sauce from the heat and let it cool completely. Set aside 1/2 cup of the sauce and refrigerate the remainder in a sealable container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soy Balsamic Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Leaves",
+        "unit": "C",
+        "notes": "loosely packed, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Loin Chops",
+        "unit": null,
+        "notes": "about 1 inch thick",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "firmly packed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd0156bb2758feda152c8a53e2ba8db8eb36c88584eb3a8384951f40a57dac49",
+    "lineage_hash": "f9e94f0711d85d84989a3a550ac25be001e478e6e1b1333d1988426f3e61fe12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/drunken-lamb-chops/",
+    "fetchedAt": "2026-08-03T23:31:25.388Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/drunken-lamb-chops/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

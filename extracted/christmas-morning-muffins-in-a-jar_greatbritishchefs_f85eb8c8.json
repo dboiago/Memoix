@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Christmas morning muffins in a jar",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Layer the dried ingredients in a 1 litre Kilner jar with clip-top lid and a rubber seal, in the order that they are listed",
+      "Attach the label and a wooden spoon to the top of the jar with some raffia or coloured ribbon and a sprig of holly or seasonal herbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dried Fruits",
+        "unit": "g",
+        "notes": "such as cranberries, red and green cherries, sultanas, raisins, currants, glace ginger, mixed citrus peel, blueberries, bananas, mango and kumquats",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted, or sunflower oil",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98c0eeb8f6d53c21ddf3fb775c9f55541cd085be93ac743d465f28131f25d432",
+    "lineage_hash": "f6a5814ffae1915ae3c8483072a4bb12e36535a79c65f0dbab4d8f9c8ed9d2c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-muffins-in-jar-recipe",
+    "fetchedAt": "2026-08-03T23:39:00.912Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-muffins-in-jar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

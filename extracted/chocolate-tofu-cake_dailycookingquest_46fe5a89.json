@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Chocolate Tofu Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, beat together silken tofu, egg yolks, cocoa powder, and rum/brandy. Set aside.",
+      "In a microwave proof bowl, place chocolate and milk. Heat in microwave until the chocolate melts. I only need 30 seconds with my microwave. Stir to combine the chocolate and milk. Add this to the silken tofu mixture and mix well.",
+      "In another mixing bowl (use stainless steel one for this), whisk egg whites until it starts to foam, then start adding sugar in 3 batches and keep whisking until stiff peak.",
+      "With a spatula, scoop 1/3 of egg whites into the chocolate tofu mixture. Fold until well mixed. Repeat two more times.",
+      "Grease a 9\"x5\" loaf pan with some butter. Preheat oven to 170 Celcius (340 Fahrenheit).",
+      "Pour the cake batter to the prepared pan and bake for 45 minutes, or until a cake tester comes out clean. Cool completely, then remove the cake from the pan, cut into slices.",
+      "Serve as is, of dress up with some powdered sugar, whipped cream, or even some berries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Silken Tofu",
+        "unit": "g",
+        "notes": "about 1/2 block typically",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "4 tablespoon",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum/brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark/bittersweet Chocolate",
+        "unit": "g",
+        "notes": "~ 1 cup, roughly chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "~ 1/2 cup",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4dac262dd2e6c6cd435f2148433d825e07b4b2d9072392a266579c3a1af4ffa",
+    "lineage_hash": "3bf994b1595cea0d2802cc75fb61389a5e71d5f491b27da17b96e7d9f2d6b64e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chocolate-tofu-cake.html",
+    "fetchedAt": "2026-08-02T05:33:53.511Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chocolate-tofu-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

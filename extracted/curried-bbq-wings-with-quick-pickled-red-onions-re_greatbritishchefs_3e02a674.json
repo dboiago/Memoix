@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Curried BBQ Wings with Quick Pickled Red Onions",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the yoghurt, turmeric, curry powder, garlic and lime juice with some salt and mix to combine. Add the wings, mix well, then refrigerate overnight, if possible",
+      "Make the quick pickled onions by combining the vinegar, hot water, caster sugar and salt in a bowl and mixing until the sugar and salt are dissolved. Add the onions and set aside. The pickle can be made the day before and refrigerated until needed",
+      "To cook the wings, light a BBQ for indirect cooking, with the coals arranged either in the centre or off to one side",
+      "Cook the wings over direct heat but close to the coals for around 30 minutes, or until cooked through and charred in places (move them closer to the coals as they start to burn down)",
+      "Transfer the wings to a serving plate and garnish with the quick pickled onions and coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": "separated into drums and flats",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": "from the tap is fine",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d803dc0395b1d58412b4d549c5feb59f3fed768dfea7564f9d55ee53077fd33",
+    "lineage_hash": "3b6d65ee8d79d0e3aeab319d10b390a30edb1c1bcd49375857bed138ea49d9f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-bbq-wings-quick-pickled-red-onions-recipe",
+    "fetchedAt": "2026-08-02T18:11:16.525Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-bbq-wings-quick-pickled-red-onions-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

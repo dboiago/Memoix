@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Bream Recipe With Mustard & Tarragon Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the sauce, bring a saucepan of salted water to the boil and add the peas. Cook for 1 minute, then lift out with a slotted spoon and refresh in cold water. Set aside to drain. Peel and dice the potato into 1cm cubes and add to the boiling water. Cook until just tender, then drain and set aside to cool",
+      "Whisk the egg yolk, vinegar and mustard together in a bowl for 1 minute, then slowly add the olive oil – don't add the oil too quickly, otherwise the mixture will split. Season with a little salt",
+      "Gently heat the stock in a saucepan. Stir the cream into the mayonnaise then whisk in the hot fish stock a little at a time until the sauce is a coating consistency. Set aside",
+      "To cook the fish, preheat the grill. Season a baking tray with salt, drizzle over a small amount of olive oil and lay the bream fillets on top. Grill for around 6 minutes, then remove from the grill set aside for 2 minutes – the residual heat will finish cooking the fish as it rests",
+      "Meanwhile, bring a pan of salted water to the boil. Peel the asparagus spears and blanch them for 2–3 minutes, depending on thickness. Drain and refresh",
+      "To finish the sauce, remove the skins from the peas, finely shred the lettuce and chop the gherkins. Place the sauce in a saucepan over a medium heat and stir in the lettuce, peas and potatoes. Allow to heat through for a minute, then stir in the gherkins and tarragon. Season to taste",
+      "Ladle the sauce into four warm serving bowls and lay the fish on top. Garnish each portion with four asparagus spears and a drizzle of olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream Fillets",
+        "unit": null,
+        "notes": "100g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gherkins",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4008f8b74fb2e93ef597fea1d93ba7443fff71ab6428cf450c947163346c17a2",
+    "lineage_hash": "ad2f2a4b887b9c909025a6130d4cba9e7a9197aebc6c40ea74c43161c47a923c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/grilled-bream-mustard-tarragon-sauce",
+    "fetchedAt": "2026-08-03T16:10:56.734Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/grilled-bream-mustard-tarragon-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

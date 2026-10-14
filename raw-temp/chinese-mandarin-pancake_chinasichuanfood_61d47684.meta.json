@@ -1,0 +1,47 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-mandarin-pancake/",
+  "slug": "chinese-mandarin-pancake_chinasichuanfood_61d47684",
+  "title": "Chinese Mandarin Pancake",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:16:49.308Z",
+  "ldName": "Chinese Mandarin Pancake",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT10M",
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple food",
+  "ldKeywords": "pancake",
+  "ldIngredientsRaw": [
+    "2 cups all-purpose flour",
+    "1/2 cup boiling water",
+    "1/2 cup cold water",
+    "3 tablespoon sesame oil or other vegetable oil"
+  ],
+  "ldInstructionsRaw": [
+    "Pour the flour into a large bowl. Prepare boiling water and a pair of chop stickers. Slowly pour the water in, at the meantime stir the flour in one direction immediately. Then pour the cold water with the same process.",
+    "Wait for the flour to cool down to room temperature. Then knead the dough until smooth (around 6-10 minutes, you can use a stand mixer to help this process). Cover with wet towel and set aside for 20 to 30 minutes.",
+    "Transfer the dough into a floured surface. Roll the dough into a long strip and then cut into 10 equal sections. Press each a little bit to a thick wrapper.",
+    "Prepare two wrappers. Brush some oil on top of one wrapper, and also the bottom of the other one. Press the two together. Roll the overlapped pancake to a large circle.",
+    "Brush some oil in your pan and then fry the pancake over middle heat until one side becomes slightly browned, turn over to fry the other side until slightly browned too.",
+    "Tear one pancake from the other one."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "128 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "2 g",
+    "fatContent": "4 g",
+    "sodiumContent": "1 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 cups all-purpose flour",
+    "1/2 cup boiling water",
+    "1/2 cup cold water",
+    "3 tablespoon sesame oil or other vegetable oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

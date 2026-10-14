@@ -1,0 +1,60 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-coconut-garlic-mushrooms/",
+  "slug": "creamy-coconut-garlic-mushrooms_itdoesnttastelikechicken_a13bcfd9",
+  "title": "Creamy Coconut Garlic Mushrooms",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T18:11:14.464Z",
+  "ldName": "Creamy Coconut Garlic Mushrooms",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 (as a side)"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "coconut, mushrooms, side dish",
+  "ldIngredientsRaw": [
+    "1 tablespoon coconut oil ((or other light oil))",
+    "16 oz mushrooms, (sliced)",
+    "4 cloves garlic, (minced)",
+    "1/3 cup full-fat coconut milk ((the kind in a can))",
+    "1/2 teaspoon dried thyme leaves",
+    "1/2 teaspoon dried oregano",
+    "Salt &amp; pepper to taste",
+    "1 tablespoon nutritional yeast ((optional))",
+    "2 tablespoons cilantro or parsley"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the coconut oil in a pan over medium-high heat. When it's hot, add the mushrooms and garlic.&nbsp;Sauté the mushrooms for about 5 minutes until they soften and begin to release their juices.&nbsp;",
+    "Stir in the coconut milk, thyme, oregano, salt and pepper. Reduce heat to a simmer. Continue to cook for about another 5 minutes.",
+    "Stir in nutritional yeast if using, and cilantro or parsley. If you feel it needs a bit more sauce, add a dash more coconut milk as desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "104 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "5 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "6 g",
+    "sodiumContent": "8 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon coconut oil, (or other light oil)",
+    "▢ 16 oz mushrooms,, sliced",
+    "▢ 4 cloves garlic,, minced",
+    "▢ ⅓ cup full-fat coconut milk, (the kind in a can)",
+    "▢ ½ teaspoon dried thyme leaves",
+    "▢ ½ teaspoon dried oregano",
+    "▢ Salt & pepper to taste",
+    "▢ 1 tablespoon nutritional yeast, (optional)",
+    "▢ 2 tablespoons cilantro or parsley"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

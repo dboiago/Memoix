@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Creamy Coconut Garlic Mushrooms",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "104",
+      "carbohydrateContent": "6",
+      "fatContent": "8",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Heat the coconut oil in a pan over medium-high heat. When it's hot, add the mushrooms and garlic. Sauté the mushrooms for about 5 minutes until they soften and begin to release their juices.",
+      "Stir in the coconut milk, thyme, oregano, salt and pepper. Reduce heat to a simmer. Continue to cook for about another 5 minutes.",
+      "Stir in nutritional yeast if using, and cilantro or parsley. If you feel it needs a bit more sauce, add a dash more coconut milk as desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": "or other light oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "oz",
+        "notes": "sliced",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": "the kind in a can",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "alt: parsley",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae2017e4f93dbcb4b1bbe1c9dbe667eee69342cba09b1284bc6b6548ffdf40a0",
+    "lineage_hash": "418912e2e0e413653c1e268e1d3e2cfc429e1028ff8f213ea75a73f55ab358de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-coconut-garlic-mushrooms/",
+    "fetchedAt": "2026-08-01T18:11:14.464Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-coconut-garlic-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

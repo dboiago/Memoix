@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Apple Crisp with Oatmeal (Apfel-Crumble)",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 350°F.",
+      "Mix ¼ cup sugar and lemon juice with apple slices. Pour into 8-inch baking dish.",
+      "Mix rest of the ingredients together until crumbly. Sprinkle over fruit.",
+      "Bake until apples are tender and crumbs are browned, about 40 minutes.",
+      "Serve warm or cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "large",
+        "notes": "for types, see below, peeled and sliced",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50 grams, if needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "15 milliliters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": "80 grams",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "42 grams",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "53 grams",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "1 gram",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "75 grams, melted",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": "2.5 milliliters, to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8dbd76d7f774c63e571945f6890e867c29759e8b731d481f679b502722348a4",
+    "lineage_hash": "cdf1f7828434165c2b691f8cad6e8aa8b1b4ea876eea4cd6baf34382a4d26f69"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/best-apple-crisp-recipe.html",
+    "fetchedAt": "2026-09-25T21:35:24.983Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/best-apple-crisp-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

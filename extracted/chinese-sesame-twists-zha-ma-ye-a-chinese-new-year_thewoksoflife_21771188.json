@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chinese Sesame Twists (Zha Ma Ye)",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "204",
+      "carbohydrateContent": "26",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "If you can’t find toasted sesame seeds for this recipe, you can toast them at home. Add them to a small, dry pan, and toast for 3 minutes over medium-low heat. Be careful not to burn them. Cool completely.",
+      "In a large mixing bowl (or bowl of a stand mixer fitted with the dough hook), combine the flour, oil, sesame seeds, sugar, salt, and egg. Use a rubber spatula to mix everything together (or turn the mixer on to its lowest setting), then gradually add the water 1 tablespoon at a time until the mixture resembles large flakes/chunks.",
+      "Knead with your hands for about 3 minutes to form a rough dough ball. The dough should be on the drier side—not sticky or too soft. If the dough still has a hint of stickiness, knead in a little more flour. Cover the dough with an overturned bowl and let rest for 30 minutes on the counter.",
+      "After resting, knead the dough on a lightly floured surface for 2 minutes, or until smooth. Cover and let the dough rest for another 20 minutes, so it’s easy to roll it out.",
+      "Use a rolling pin to roll the rested dough on a lightly floured surface into a large thin rectangle sheet that measures about 12×20 inches (30x50cm). The thickness should be just slightly thicker than a sesame seed. (If the dough retracts and is hard to roll out, it needs to rest longer. Cover and let rest for 10-15 minutes more, then continue.)",
+      "Sprinkle the surface of the dough with flour, and cut it into 2×4 inch (5×10 cm) pieces for twists, or 2×5 inch (5×13 cm) pieces for the fan shape. Keep the dough covered with a clean kitchen towel while shaping.",
+      "Fold a 2×4 inch (5×10 cm) piece of dough in half, with the floured side facing inward. Cut 3 to 5 equidistant slits into the folded side of the dough, with ½-inch (1.25cm) of the top edge still intact. Open the fold and loop one end through the middle slit to create a twist, then gently straighten it out. (See video for a demonstration.) As you assemble them, line them up on a lightly floured surface so they’re not touching.",
+      "Fold a 2×5 inch (5×13 cm) piece of dough in half with the floured side facing inward. Cut 8 to 10 equidistant slits into the folded side of the dough, with ½-inch (1.25cm) of the top edge still intact. Unfold the rectangle and gently stretch it out slightly. Fold the dough in half once again, this time folding one corner of the rectangle to its opposite corner. Then press the two loose corners into the middle to form the base of the fan. (See video for a demonstration.) As you assemble them, line them up on a lightly floured surface so they’re not touching.",
+      "Add about 1½ inches (about 4 cm) of oil in a small pan or pot to reduce the amount of oil you’ll need to use. Heat the oil over medium-high heat until it reaches 350°F/175°C on an instant read thermometer. Be sure to maintain this frying temperature throughout the frying process (increase or reduce the heat as needed).",
+      "Fry a few twists at a time for about 7 minutes per batch, or until golden brown. Flip them often to avoid sticking, and for even coloring. Check the oil temperature often; if your heat is too high, they will brown quickly without cooking through.",
+      "Cool before enjoying for maximum crunchiness!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "plus more for frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "black or white, preferably toasted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b10656577e2573866c80f9d47816659fca8a9b0120372fd28a2284c77f53ce44",
+    "lineage_hash": "f6996696288de33f0bedfa9f4f1360ee4ededece49fbae714f4675232d2fdd35"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-new-year-snacks-sesame-twists/",
+    "fetchedAt": "2026-08-02T08:55:03.415Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-new-year-snacks-sesame-twists/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chocolate Peanut Fudge",
+    "time": "1 hr 12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the milk chocolate and place it in a bowl. Heat the condensed milk together with the fresh milk and 2 tablespoons of butter, then pour it over the chocolate while still hot. Add the peanut butter and mix until smooth.",
+      "Add the salted peanuts and pour the mixture in a square baking pan (6.5\", 1\" deep) lined with parchment paper on the bottom and sides. Level it off with a spatula. Chop the dark chocolate and melt it in a double boiler.",
+      "As soon as it has melted, add the remaining butter and combine. Pour the dark chocolate into the baking pan on top of the chocolate peanut mixture, forming an 1/8-inch thick later. Refrigerate for at least 12 hours.",
+      "Cut the fudge into cubes with a sharp smooth knife. Garnish to taste with candied peanuts, held down with drops of melted dark chocolate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "lb",
+        "notes": "plus extra",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef52e7688f677ff91f6a935a6430af780a62149685e374b20a647c119c2e154d",
+    "lineage_hash": "f355b18cd03c67eb46e5a6d532215dfb52a09def87846c7eb05c3b1a2af771f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-peanut-fudge",
+    "fetchedAt": "2026-08-02T10:57:54.906Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-peanut-fudge",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

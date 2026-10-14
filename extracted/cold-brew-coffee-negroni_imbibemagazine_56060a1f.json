@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Cold-Brew Coffee Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients in a mixing glass with ice. Strain into a rocks glass over fresh ice. Twist the orange peel over the cocktail, then use as a garnish.",
+      "Cold-brew concentrate: In a French press, combine 15 tablespoons of coarsely ground coffee and 16 oz. of room temperature water. Don’t plunge the strainer. Let it stand for 17 hours, then plunge to separate the grounds. Pour into a bottle and store the concentrate in the refrigerator for 2 weeks. You can also purchase premade coffee concentrate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcb4efad88cf1edf8bda2e1d095131d0ffc65f5d2e19e80a76b98f7267c6e044",
+    "lineage_hash": "0bf939b2fa060d2d963ec203a7c90ca2621ccaf21010e253e0e15e3f7461c62d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-brew-negroni/",
+    "fetchedAt": "2026-08-04T01:02:17.590Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-brew-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://mykoreankitchen.com/cucumber-soba-noodles-with-sweet-chili-soy-dressing/",
+  "slug": "cucumber-soba-noodles-with-sweet-chili-soy-dressin_mykoreankitchen_f38dcc16",
+  "title": "Cucumber Soba Noodles with Sweet Chili Soy Dressing",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T18:07:05.179Z",
+  "ldName": "Cucumber Soba Noodles with Sweet Chili Soy Sauce Dressing",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT7M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1  large chilled Lebanese cucumber ((170g))",
+    "2 bundles soba noodles ((180g))",
+    "3 Tbsp soy sauce",
+    "2 Tbsp raw sugar",
+    "1 Tbsp Korean chili powder",
+    "1 Tbsp white vinegar",
+    "1 Tbsp toasted sesame seeds",
+    "1 tsp minced garlic",
+    "1  hard boiled egg ((optional), halved to serve on top of the noodles)"
+  ],
+  "ldInstructionsRaw": [
+    "Make the sweet chilli soy dressing by mixing the listed ingredients above.",
+    "Rinse the cucumber thoroughly. (I used the skin as well, as I think it’s visually more appealing. But you can peel the skin off if you wish.) Removed the seeds. Thinly slice the cucumber like a match stick. (You could use a julienne peeler or spiralizer per your preference.)",
+    "Cook the soba noodles in rapidly boiling water until al dente. (Follow the directions from the package.) Drain the water and cool down the noodles under cold running water for about 1 minute. Stir the noodles with some tongs or your hand while it’s under the water. Drain the noodles well.",
+    "Put together the noodles, cucumber and dressing in a large mixing bowl and mix them well with your hands. (Wear a food handling glove). Serve it in a pasta or noodle bowl. Alternatively, you could serve them individually without mixing them so your guest has some fun mixing these together. In this case, about 2 Tbsp of the dressing sauce per person should be adequate."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "417 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 large chilled Lebanese cucumber (170g)",
+    "▢ 2 bundles soba noodles (180g)",
+    "[Dressing for soba noodles(mix these in a small bowl)]",
+    "▢ 3 Tbsp soy sauce",
+    "▢ 2 Tbsp raw sugar",
+    "▢ 1 Tbsp Korean chili powder",
+    "▢ 1 Tbsp white vinegar",
+    "▢ 1 Tbsp toasted sesame seeds",
+    "▢ 1 tsp minced garlic",
+    "▢ 1 hard boiled egg (optional), halved to serve on top of the noodles"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

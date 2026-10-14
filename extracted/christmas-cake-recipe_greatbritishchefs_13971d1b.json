@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Christmas Cake",
+    "time": "4 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the dried mixed fruit, peel and cherries in a bowl and add the brandy. Mix to coat all the fruit with the brandy, cover with a tea towel and leave to soak overnight",
+      "To prepare the tin for baking, place the tin on a sheet of baking paper and draw around it; cut the \r\ncircle (or square) out – this will be the paper liner for the bottom of the cake. Measure the \r\ncircumference of the cake tin, and cut out a long strip (or 2 strips) of paper – making sure the strips will sit well above the cake tin to protect the cake as it is baking",
+      "Turn over the bottom 5cm of the paper, and make even cuts all along the paper (see photo) this will make the strips sit in the cake tin easily and form a circle",
+      "Grease the tin with softened butter and place the side strips around the cake tin – then place the circle on top of the cut strips to make a secure paper liner",
+      "The next day when you are ready to make and bake the cake, preheat the oven to 150°C/gas mark 2",
+      "Sieve the flour, mixed spice and ground almonds together and beat the eggs with the brandy and milk mixture",
+      "Cream the butter and sugar together until light and fluffy and add the flour and egg mixture alternately, a little at a time, gently folding them in with a wooden spoon",
+      "Add the brandied fruit and mix well before spooning the mixture into the prepared cake tin. Smooth the top with the back of a metal spoon and bake in the oven for 3 ½–4 hours",
+      "Allow to cool in the cake tin before lifting out and placing in a cake tin with a fitted lid. Make several \r\nholes with a skewer all over the cake and ‘feed’ the cake with brandy – pouring it down into the \r\nholes. Repeat this every week until just before you want to marzipan and ice the cake"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glacé Cherries",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Peel",
+        "unit": "g",
+        "notes": "cut",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": "white, sifted",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": "mixed with 75ml whole milk",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3102e7d64662df904c3981d9a94dbe5c1cb45fa2565a330cddcec40a5cbb2e75",
+    "lineage_hash": "07f93dfc06a4c3254f9243eb45c07194e4712b1d9e53d48e70529ab067d16ae8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-cake-recipe",
+    "fetchedAt": "2026-08-03T14:05:24.918Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

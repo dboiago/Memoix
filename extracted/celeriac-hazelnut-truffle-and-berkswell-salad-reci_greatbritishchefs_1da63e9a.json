@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Celeriac, Hazelnut, Truffle and Berkswell Salad",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and quarter the celeriac, then slice finely lengthways on a mandoline – don't go wafer thin as there will be no texture in the end dish. Cook in heavily salted boiling water for around 30 seconds then drain and plunge into iced water",
+      "Once cooled, drain then dry the slices using kitchen paper or a clean tea towel",
+      "Toast the hazelnuts in a dry frying pan over medium heat for a few minutes. Keep shaking the pan to ensure a nice golden colour all over then remove from the pan to cool",
+      "Return the frying pan to the heat and add the butter. Make a beurre noisette by continuing to cook the butter until it is brown and nutty. Remove from the heat and add the sherry vinegar – this will stop the butter from browning any further",
+      "Once the nuts are cool, roughly chop with a knife and place them into a small bowl. Pour over the warm brown butter and sherry dressing. Add the mustard and mix well. If you are using truffle oil, add this to the dressing too",
+      "Place the celeriac into a bowl and season with a pinch of salt. Add the dressing, tossing to ensure all the slices are coated evenly",
+      "Finely grate a little of the Berkswell and fresh truffle (if using) into the bowl and mix well. To serve, plate the celeriac and hazelnuts into neat little piles and finish with the rest of the cheese and truffle"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Berkswell Cheese",
+        "unit": "g",
+        "notes": "or pecorino",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": null,
+        "notes": "(small) or a good dash of truffle oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6b8911ad91cea0b338370635bc8ffc3d1fa14a3c254388634238d1a2cc4f6fa",
+    "lineage_hash": "1485c7143d39a57557ec1df76b5e9a96564a4abb9dfc904d71c98111a5cc2cdb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/celeriac-hazelnut-truffle-salad-recipe",
+    "fetchedAt": "2026-08-02T21:26:03.852Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/celeriac-hazelnut-truffle-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

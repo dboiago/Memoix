@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Beef Tartare with Black Truffle",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, finely cut the meat into 5mm thin slices and place in a bowl. Cover with cold beer and leave to marinate for about 3 minutes",
+      "After this time, dry the beef slices and cut into small cubes. Season with pepper, flaky sea salt and the olive oil. Work well until the meat completely absorbs all of the oil",
+      "To serve, divide the tartare between plates and add some black truffle Perlage on top. Serve with green shiso leaves to give the dish an aromatic touch"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": "preferably Pilsner Urquell",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": "preferably from Chianti",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle Perlage",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Leaves",
+        "unit": "g",
+        "notes": "green",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "wild Madagascan, freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed8a3a0770f02659dd259fa7ef74152c0bbeae348f892c46994aef42093455ac",
+    "lineage_hash": "468bdb22bb7fefea69100647ee7192c02ba09df9f16a556ef4e7b498d41614fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/beef-tartare-truffle-recipe",
+    "fetchedAt": "2026-08-02T07:19:04.376Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/beef-tartare-truffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

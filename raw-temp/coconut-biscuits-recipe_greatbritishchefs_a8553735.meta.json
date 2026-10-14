@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/coconut-biscuit-recipe",
+  "slug": "coconut-biscuits-recipe_greatbritishchefs_a8553735",
+  "title": "Coconut Biscuits Recipe",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T17:03:21.533Z",
+  "ldName": "Coconut cookies",
+  "ldTime": "PT35M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of jumbo rolled oats",
+    "100g of plain flour",
+    "100g of light brown sugar",
+    "100g of desiccated coconut",
+    "100g of unsalted butter",
+    "2 tbsp of golden syrup",
+    "1/2 tsp bicarbonate of soda",
+    "2 tbsp of water, boiling"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 175°C/gas mark 4",
+    "Line a baking tray with baking parchment",
+    "In a large mixing bowl, combine the flour, sugar, coconut and oats, blending well",
+    "In a small pan, melt the butter and golden syrup over a low heat",
+    "In a small bowl, dissolve the bicarbonate soda in the 2 tbsp of boiling water. Combine with the golden syrup and butter",
+    "Make a well in the centre of the dry ingredients, pour in the warm golden syrup mixture, mixing well to form a dough",
+    "Separate the mixture into balls. Place the balls onto a baking tray and press down slightly to flatten into cookies",
+    "Place into the preheated oven for 15-20 minutes until the biscuits are golden",
+    "Once baked, remove and place straight onto a wire rack to cool. Serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

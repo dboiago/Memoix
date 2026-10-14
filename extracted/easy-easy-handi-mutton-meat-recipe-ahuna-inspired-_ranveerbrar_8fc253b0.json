@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Handi Mutton/Meat",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut onion into thin slices and ensure they are almost of the same thickness.",
+      "Heat oil in a kadai, add a few onion slices at one time and deep fry until crisp and golden in color.",
+      "Transfer them to an absorbent paper. Keep it aside for further use.",
+      "In a large bowl, add green chillies, mint leaves, ginger garlic paste, curd, coriander powder.",
+      "Add degi red chilli powder, turmeric powder, salt to taste, coriander leaves, fried onions, fried onion oil and mix it well.",
+      "Add mutton and marinate well. Add ghee, fried onion oil, and whole garlic .",
+      "Season the handi with ghee on hot coal, add dry red chilli, bay leaf, cinnamon stick.",
+      "Add marinated mutton into the handi and cover it with the lid.",
+      "Attached the wheat dough across the pot rim to seal it properly.",
+      "Place the sealed pot on the hot coal. Cook until the meat is tender.",
+      "With the help of a toothpick make a small hole. Dum it properly.",
+      "Now, open the lid and slightly stir it well. Remove the whole garlic aside.",
+      "Garnish it with coriander sprig and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "slice",
+        "amount": "3",
+        "section": "For Fried Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Fried Onion",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "2-3",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": "roughly torn",
+        "amount": "¼",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1⅓",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mutton",
+        "unit": "kg",
+        "notes": "with bone, curry cuts",
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Handi Gosht",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Handi Gosht",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Handi Gosht",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Handi Gosht",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": "धनिया पत्ता",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6795e80bba7b86cb5199f31165cb8346f1305d3fbb378ba52026dc12ab7b6434",
+    "lineage_hash": "97d58cc2b655d28943c7d8ef03e421d694527a5d768b38d0b1bf759d40a18870"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/easy-handi-mutton-meat-recipe/",
+    "fetchedAt": "2026-08-02T13:18:24.678Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/easy-handi-mutton-meat-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

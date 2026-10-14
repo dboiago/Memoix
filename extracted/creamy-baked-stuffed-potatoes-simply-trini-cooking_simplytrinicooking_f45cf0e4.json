@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Creamy Baked Stuffed Potatoes",
+    "time": "40 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and boil the potatoes for approximately 25 minutes. (Note: Although time is given, what we want to achieve is a 3/4 cooked potato. The potato must not be too soft!) Cut in halves, scoop out the centre and place in a greased baking tin.",
+      "For the filling, add to the scooped out potato, sweet pepper, grated carrot, onion and garlic, green seasoning, 1 cup of grated cheese, butter and black pepper. Mix and add salt and pepper to taste.",
+      "Stuff each potato with the filling. Top with the remaining 2 cups of grated cheese. Bake for 30 minutes at 350 degrees F or until golden brown.",
+      "Allow to cool for 10 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes Washed",
+        "unit": "medium",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Pepper Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Grated",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Divided",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Unsalted",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "597120243c2e973316f295420581750700c951a72e6e31cd452fd89010f0c875",
+    "lineage_hash": "07b166b47ea7cdc23d3a9acc03455f0d1c8ab5faee35546df87036595e95bd98"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/baked-stuffed-potatoes/",
+    "fetchedAt": "2026-09-26T00:01:37.721Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/baked-stuffed-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

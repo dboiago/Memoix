@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatitalianchefs.com/recipes/chicken-sandwich-recipe",
+  "slug": "chicken-sandwich-recipe_greatitalianchefs_28cd3437",
+  "title": "Chicken Sandwich Recipe",
+  "byline": "by Helen Graves",
+  "fetchedAt": "2026-08-02T04:01:31.321Z",
+  "ldName": "Chicken salad sandwich",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 boneless and skinless chicken breast",
+    "1l water, plus extra for steaming",
+    "20g of salt",
+    "10g of sugar",
+    "1/2 apple, small green variety, diced",
+    "1 celery stick, diced",
+    "1/2 orange, zested",
+    "1 tbsp of mustard",
+    "3 tbsp of mayonnaise",
+    "2 ciabatta buns",
+    "2 tsp pomegranate seeds",
+    "2 tsp chopped walnuts",
+    "alfalfa sprouts"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by brining the chicken. Combine the water, salt and sugar together in a large bowl and stir well to combine. Place the chicken breast in the bowl and leave to brine for 1 hour",
+    "Preheat the oven to 180°C/gas mark 4",
+    "Drain the chicken from the brine and place in a deep baking tray. Pour in 1cm of water, cover the tray with foil and steam in the oven for 20 minutes, or until tender and cooked through",
+    "Allow the chicken to cool, then dice into small cubes and place in a bowl with diced apple, celery and orange zest",
+    "In a separate bowl, whisk the mustard into the mayonnaise to form a creamy dressing. Fold this through the chicken salad mixture, ensuring everything is evenly coated",
+    "Halve the buns and fill with the chicken mixture. Add fresh pomegranate seeds and walnut pieces to taste, garnishing with alfalfa sprouts to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

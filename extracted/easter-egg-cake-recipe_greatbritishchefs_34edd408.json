@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Easter Egg Cake",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Butter and line 2 rectangular baking trays (21 x 30 cm) with greased wax paper",
+      "To make the cake batter, combine the ground almonds in a mixing bowl with the flour and set aside",
+      "Separate the whites and yolks of eggs and set aside the yolks. Beat the egg whites with the salt and sugar until they reach firm peaks",
+      "Beating continuously, add the egg yolks one-by-one to the egg white mixture",
+      "Stop the mixer and, using a spatula, gently stir in the flour and ground almond mixture",
+      "Divide the batter between the prepared baking trays and bake for 15 minutes, or until the edges and the surface of the cake are lightly browned",
+      "Leave the sponge to cool, remove the wax paper and set aside. The dough should be thin (1.5cm) and pliable",
+      "To prepare the filling, melt the chocolate with the cream in a microwave or bain-marie. Mix well and add the brandy",
+      "Line a 1kg Easter egg mould with cling film and line with 1 of the sponge sheets. Neatly cut away any excess sponge using a knife",
+      "Pour some of the chocolate filling into the mould and lightly push the largest piece of excess sponge into the chocolate to create an inner sponge layer.  Pour in the remaining chocolate filling to cover the sponge piece until it is 1.5cm from the brim of the mould",
+      "Cut the remaining sheet of cake to size and place over the chocolate to seal – you may need to plug some holes with excess sponge. Refrigerate for at least 4–5 hours, or overnight, to set",
+      "Once set, turn the cake out onto a large serving plate and carefully remove the cling film",
+      "To make the buttercream, mix all of the ingredients together until smooth and spread evenly over the cake. Place in the freezer for 1 hour",
+      "Melt the chocolate for the topping in a bain-marie, then remove and allow to cool a little. Drizzle over the cake, as pictured, and place in the freezer to set for 1 hour",
+      "For the salted caramel topping, add the brown sugar, double cream and butter to a saucepan and cook for 5 minutes over a medium-low heat. Add the salt, leave to cool and drizzle the topping over the cake",
+      "Finish decorating the cake with caramel-filled Easter eggs. Happy Easter!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70%, chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70%",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Eggs",
+        "unit": null,
+        "notes": "caramel-filled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d04274e286aa1978041810ed0a091c934b945c6078eaab824574a6c5b939dc89",
+    "lineage_hash": "b0e026658439f0593978fbbe4b4f8c965b18c130cd7ae068946e1c4ffb0b4cb3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-egg-cake-recipe",
+    "fetchedAt": "2026-08-03T13:14:29.588Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-egg-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

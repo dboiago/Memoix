@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Cucumber, Milk & Sorrel",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and large dice a cucumber, and place it on a fine wire rack above the the fresh hay",
+      "Find a surface that won't burn and get a foil tent ready. Set the hay alight and then cover the tray with the foil to contain the smoke. Leave to rest for 20 minutes before removing the cucumber. Leave to cool",
+      "To make the pickled cucumber, peel and dice the cucumber",
+      "Place in a bag or container with the lemon juice and seal",
+      "Make a vanilla syrup by mixing the water, sugar and vanilla pod together and bringing to the boil",
+      "Add the diced cucumber from the container and place in a sealed bag or container with the above syrup and leave to pickle until required",
+      "To make the cucumber jelly, soak the gelatine in cold water for 5 minutes to soften. Juice the cucumber in a juicer and mix 250ml of the juice with the soaked gelatine",
+      "To make the mint oil, blanch the mint leaves briefly in boiling water before refreshing in iced water. Strain the leaves and dry on kitchen towel",
+      "Whiz the leaves in a blender with the grapeseed oil",
+      "Pour the mint oil into vacuum pack bags and cook in a water bath at 65°C for 10 minutes",
+      "To make the reduced milk ice cream, use a suitalbe sized pan and bring the milk to a gentle boil to reduce by half",
+      "Soak the gelatine in cold water for 5 minutes to soften. Into the reduced milk, mix the milk powder, sugar, glucose, ice cream stabiliser and gelatine leaves. Churn and freeze in an ice cream maker",
+      "To serve, arrange the smoked cucumber in the centre of the plate. Top with a scattering of the diced, pickled vanilla cucumber, then spoon over a helping of the cucumber jelly",
+      "Balance a scoop of the milk ice cream on top, before spooning small droplets of the mint oil across the plate. Add a garnish of wild sorrel, elderflowers and crushed black sesame seeds"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Fresh Hay",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Half a Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gold Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gold Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Wild Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Elderflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "722a7cbd8f2ab47c715a17e9c48637bbaa7ac7f42907a9dd68c7b6a95f008978",
+    "lineage_hash": "1aaa90e7f8214d8d726a9120288e45ec30bdef69e0d8236ad125237397b773ce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cucumber-milk-sorrel-recipe",
+    "fetchedAt": "2026-08-03T20:59:33.322Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cucumber-milk-sorrel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

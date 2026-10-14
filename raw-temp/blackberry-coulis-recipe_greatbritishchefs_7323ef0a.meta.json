@@ -1,0 +1,33 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blackberry-coulis-recipe",
+  "slug": "blackberry-coulis-recipe_greatbritishchefs_7323ef0a",
+  "title": "Blackberry Coulis Recipe",
+  "byline": "by Anna Hansen",
+  "fetchedAt": "2026-08-03T06:51:39.648Z",
+  "ldName": "Blackberry coulis",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of blackberries",
+    "1/2 orange, juiced",
+    "50g of icing sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Place the ingredients in a small pan and crush the berries a little",
+    "Simmer on a low heat for 5-10 minutes or until the berries are completely broken down",
+    "Taste, if the berries are particularly tart, you may want to add a little more icing sugar",
+    "Transfer to a blender and blitz to a smooth puree",
+    "Pass through a sieve for an extra smooth finish",
+    "The coulis can be reheated or served cold, it also freezes well"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chowder-recipe",
+  "slug": "chowder-recipe_greatbritishchefs_b85a92dd",
+  "title": "Chowder Recipe",
+  "byline": "by Robert Thompson",
+  "fetchedAt": "2026-08-03T22:25:33.023Z",
+  "ldName": "Smoked haddock chowder",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "400g of smoked haddock",
+    "460ml of milk",
+    "36g of onion, finely diced",
+    "330g of leek, sliced",
+    "130g of potatoes, diced",
+    "2g of nutmeg, ground",
+    "265ml of double cream",
+    "1 fish stock cube, dissolved in 500ml of water",
+    "50g of instant mash potato",
+    "25g of cornflour",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the skin of the fish and with tweezers, prise out the bones",
+    "Pour the milk into a heavy-based saucepan. Add the fish, bring to the boil and then turn down the heat and simmer gently for 3 minutes",
+    "After 3 minutes, remove the fish from the milk and set aside",
+    "Place a pan over a low-medium heat and add oil. Once hot, add the onions, leeks and potatoes and sweat for 4-5 minutes. Then, add the milk, fish stock, and ground nutmeg and simmer for 20-25 minutes",
+    "Whisk in the instant potato and ensure there are no lumps. Dilute the cornflour with water and then add to the pan, mixing well",
+    "Add the double cream and flake in the haddock",
+    "Before serving, season with salt and pepper - be careful not to add too much salt as the fish will add a level of salt"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

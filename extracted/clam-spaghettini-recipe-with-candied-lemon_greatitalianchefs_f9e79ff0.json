@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Clam Spaghettini with Candied Lemon",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the candied lemon zest – this will make more than needed for the recipe but the remainder can be stored in the fridge for up to 1 month. Peel the lemons with a vegetable peeler, being careful to not include any of the bitter white pith",
+      "Cut the zest into julienne and add to a small pan with the water and sugar. Place over a medium heat and bring to the boil. Cook for 15 minutes until the zest has softened then allow to cool completely in the syrup before storing in the fridge until needed",
+      "Before cooking, crush the taralli (or breadsticks) in a pestle and mortar to create even crumbs. Alternatively, blitz briefly in a food processor. Store the crumbs in a container until ready to serve",
+      "To cook the spaghettini, heat 1 tbsp of the olive oil in a large pan then add the whole garlic cloves. Sauté gently for a few minutes to infuse the oil then discard the garlic",
+      "Add the clams along with 2 ladles of the fish stock then cover the pan with a lid. Allow the clams to steam for a few minutes until all of the shells have opened (discard any that do not open) then strain the cooking liquor into a clean pan and reserve the clams",
+      "Place the cooking liquor back over the heat with the remaining fish stock. While heating through, pick out the clam meat and discard the shells",
+      "Add the spaghettini to the liquid and cook for 2 minutes, mixing continuously with a pair of tongs to help it soften. Stir in the shelled clams, the julienne squid and chopped parsley, along with 10g of the prepared candied lemon zest",
+      "Cook for another minute then turn the heat off. Stir through the remaining olive oil and season with a little freshly ground black pepper to taste",
+      "To serve, twirl the spaghettini into soup dishes with the clams and squid. Pour over some of the cooking liquid and garnish with a little extra candied lemon zest and the taralli crumbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spaghettini",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clams",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid",
+        "unit": "g",
+        "notes": "cleaned and cut into julienne",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "large, Amalfi lemons if available",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Taralli",
+        "unit": "g",
+        "notes": "or similar breadsticks",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32accb2c3b197ae3ac5b380ee4d35443532e5fbbce943656556ed4b903ab0a0b",
+    "lineage_hash": "0b9359e71eb31da9b383a294cd56834394dd9481af56687e35c3fe3b1b678210"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/clam-spaghettini-recipe-candied-lemon",
+    "fetchedAt": "2026-08-02T03:43:47.311Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/clam-spaghettini-recipe-candied-lemon",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

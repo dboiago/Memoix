@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Earl Grey Ice Cream",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cream, milk and glucose to a pan and bring to the boil. Meanwhile, whisk together the yolks and sugar in a heatproof bowl until pale and smooth",
+      "Pour the boiling liquid into the eggs, whisking until smooth. Add the tea leaves and set aside to cool and infuse for at least 30 minutes",
+      "Pass the custard through a fine sieve and churn in an ice cream maker. Once churned, store in the fridge until ready to use"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tregothnan Earl Grey Tea Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e75a8012f047d9fd33db5a98dc51deb7049654c8e15d0b4c99b48325f94c68b3",
+    "lineage_hash": "ab97f73b86e911ef844cafbd29bcb3ef85a22c6a078868322ff73d82cc112291"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/earl-grey-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T22:30:24.618Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/earl-grey-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

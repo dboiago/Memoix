@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Dark Hedges",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Sprinkle of Cacao Nibs"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a glass filled with fresh ice. Garnish with a sprinkle of cacao nibs.",
+      "Cacao Nib-Infused Old Tom Gin: Toast ½ cup of cacao nibs in a dry pan over medium heat until fragrant, then combine with 1 750 ml bottle of Old Tom gin in a large, sealable container. Let the mixture infuse for 12 to 24 hours, then strain and bottle for use. Keeps indefinitely, though the flavor’s intensity may fade over time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cacao Nib–infused Old Tom Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Crème De Cacao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Branca Menta",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a286fb6af6b26fd175c8abf6f9ccb0d649b6cbd1d37013da6b21919488ce896",
+    "lineage_hash": "fb0ed43b52de8f19ec861453590745be83925d6d4329dffdd493f0a9412af55b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dark-hedges-a-holiday-cocktail/",
+    "fetchedAt": "2026-08-03T19:58:56.853Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dark-hedges-a-holiday-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Classic Farmhouse Strawberry Shortcake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F and line a baking tray with parchment paper.",
+      "Stir the flour, sugar, baking powder, lemon zest, baking soda and salt to combine. Cut in the butter until the mixture is coarsely crumbly in texture (but it won’t look dramatically different). Stir in the buttermilk just until the dough comes together.",
+      "Turn the dough out onto a lightly floured work surface. Fold the dough over scraping the loose bits while you fold. Keep folding the dough over until it all comes together (this will produce a flaky shortcake). Shape the dough into a rectangle about 10-x-6-inches and 1⁄2 -inch thick. Cut the dough into 8 rectangles and place these 2-inches apart on the prepared baking tray. Brush the tops of the shortcakes with the egg wash and bake for 18 to 20 minutes, until the tops are an even golden brown. Cool the shortcakes to room temperature.",
+      "Whip the cream to a soft peak, then whip in the sugar and vanilla. To assemble, split a shortcake in half horizontally. Place the bottom half on a plate and dollop a little hipped cream on it. Spoon the strawberries overtop, then gently rest the top of the shortcake on the fruit. Dust the shortcake with icing sugar and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "1",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cut into pieces",
+        "amount": "¼",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "whisked with 2 Tbsp water, for brushing",
+        "amount": "1",
+        "section": "Shortcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": "sliced fresh",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b62172361e0b9a2ffc801b96f09947f2531ac680e6b24a58d1f6ef13e28c058",
+    "lineage_hash": "a6a0b063796865a730ea7ae030759cd37fb9db568f0ed39d29b018f03f5b69f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-farmhouse-strawberry-shortcake/",
+    "fetchedAt": "2026-08-01T19:18:01.761Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-farmhouse-strawberry-shortcake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

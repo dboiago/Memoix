@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chinese Stir-Fried Cabbage",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently tear cabbage with hands, remove the tough ribs. Washed and drained.",
+      "Heat oil in a wok/frying pan over medium heat. Sauté garlic, ginger, and white parts of scallions until fragrant, about 2-3 minutes.",
+      "Add dried chilies and Sichuan peppercorns, fry for another 30 seconds.",
+      "Turn the heat to high, then add cabbage, along with salt, black vinegar, and light soy sauce. Stir fry for 1-2 minutes until the cabbage starts to wilt. Turn off heat. Add the green parts of scallions, mix well. Transfer to a serving plate and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cabbage",
+        "unit": "head",
+        "notes": "~ 1 kilogram / 2.2 lb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced white parts and cut green parts into 1 inch sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fdfe196ee76c8f62c888a1beca6e78f157a95fb8b53afc2d59f88b4e9cce284",
+    "lineage_hash": "8d6b8ce5da894e36fec741977c7d25296c0a0eb3a46666e0ea16973340fa5134"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/stir-fry-cabbage.html",
+    "fetchedAt": "2026-08-01T20:25:42.034Z"
+  },
+  "rawSource": "https://dailycookingquest.com/stir-fry-cabbage.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

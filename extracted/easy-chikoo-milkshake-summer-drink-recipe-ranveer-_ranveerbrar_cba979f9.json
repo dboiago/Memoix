@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Chikoo Milkshake (Summer Drink)",
+    "time": "5-10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take a mixer jar and add in all the ingredients and give it a nice blend.",
+      "Pour the milkshake in a serving glass and serve chilled.",
+      "garnish with pinch of cinnamon powder & few chunks of chikoo."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chikoo",
+        "unit": null,
+        "notes": "de-skinned and de-seeded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cow’s Milk/ Soy Milk",
+        "unit": "C",
+        "notes": "chilled",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar/ Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": "Optional",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f23069d07a86ea8f713897118374b4c57aad4eb01f3a2f4c135aa8631b689e24",
+    "lineage_hash": "9e6a7919018acb92af52ac9e8a77a3f2fcb0fc5871ae20893dfe64da4ffc0f3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chikoo-milkshake/",
+    "fetchedAt": "2026-08-02T20:50:14.792Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chikoo-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

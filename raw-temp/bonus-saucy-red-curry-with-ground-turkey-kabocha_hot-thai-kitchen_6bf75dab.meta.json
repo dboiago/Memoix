@@ -1,0 +1,68 @@
+{
+  "url": "https://hot-thai-kitchen.com/ground-turkey-kabocha-curry/",
+  "slug": "bonus-saucy-red-curry-with-ground-turkey-kabocha_hot-thai-kitchen_6bf75dab",
+  "title": "BONUS: Saucy Red Curry with Ground Turkey & Kabocha",
+  "byline": "Pailin Chongchitnant",
+  "fetchedAt": "2026-08-02T04:01:02.733Z",
+  "ldName": "Saucy Red Curry with Ground Turkey and Kabocha Squash",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3",
+    "3 servings"
+  ],
+  "ldCuisine": "Thai",
+  "ldCategory": "Main Course",
+  "ldKeywords": "dairy free, gluten free",
+  "ldIngredientsRaw": [
+    "½ cup coconut milk",
+    "2-3 Tbsp red curry paste (see note 1)",
+    "1 teaspoon fermented shrimp paste (optional (see note 2))",
+    "1 ½ Tablespoons palm sugar (finely chopped, or sub brown sugar)",
+    "½ lb ground turkey (or sub ground chicken or ground pork)",
+    "12 oz kabocha squash (cut in ¼-inch thick pieces (see note 3))",
+    "¼ cup water (approximately)",
+    "Fish sauce (to taste)",
+    "4  makrut lime leaves (finely julienned (see note 4))",
+    "Jasmine rice (for serving)"
+  ],
+  "ldInstructionsRaw": [
+    "In a wok, add the coconut milk and bring to a full boil over high heat. Add the curry paste and the shrimp paste, if using, and stir to mix with the coconut milk. Reduce the heat to medium and continue stirring until the mixture is thick, and coconut oil may start to separate from the paste. If the oil doesn’t separate but the mixture is thick, you can move on.",
+    "Add the palm sugar and stir to mix, then add the ground turkey and mix well with the curry paste and break up any lumps.",
+    "Once the turkey is well mixed, add the kabocha squash pieces and stir to mix. Add just enough of the water so it looks like a very thick stew, but the squash should not be submerged completely.",
+    "Cover and let the squash steam for 5-7 minutes, stirring twice in between, until the squash can be pierced through easily with a fork.",
+    "Once the squash is cooked, turn off the heat and taste and add more fish sauce as needed. The amount you need will depend on the brand of curry paste you use, how much you used, and whether you added shrimp paste, so it is critical that you taste before adding any more fish sauce. You may need as little as 1 teaspoon or as much as 1 tablespoon.",
+    "Stir in half of the julienned makrut lime leaves, plate, and top with the remaining lime leaves. Serve with jasmine rice and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "236 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "21 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "61 mg",
+    "sodiumContent": "121 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ½ cup coconut milk",
+    "▢ 2-3 tablespoon red curry paste, see note 1",
+    "▢ 1 teaspoon fermented shrimp paste, optional (see note 2)",
+    "▢ 1 ½ Tablespoons palm sugar, finely chopped, or sub brown sugar",
+    "▢ ½ lb ground turkey, or sub ground chicken or ground pork",
+    "▢ 12 oz kabocha squash, cut in ¼-inch thick pieces (see note 3)",
+    "▢ ¼ cup water, approximately",
+    "▢ Fish sauce, to taste",
+    "▢ 4 makrut lime leaves, finely julienned (see note 4)",
+    "▢ Jasmine rice, for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TH",
+  "siteCourseHint": null
+}

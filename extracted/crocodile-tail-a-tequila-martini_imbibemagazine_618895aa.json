@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Crocodile Tail: A Tequila Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Frozen",
+    "garnish": [
+      "Floating Nasturtium Leaf",
+      "Lime Peel (peel Side Out)"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass filled with lots of ice. Strain into a frozen glass. Garnish with a floating nasturtium leaf. Squeeze a lime peel (peel side out) over the drink, dripping some juice both on the leaf and in the drink. Discard the lime peel.",
+      "NoteFor the mezcal, Eggleston says any single-varietal that isn’t espadin will work.",
+      "Freezer MartiniCombine 375ml dry vermouth, 375ml blanco vermouth, 64 oz. tequila, and 18 oz. filtered water in a bottle and store in the freezer. Add dashes of amaro and mezcal to order."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "dashes",
+        "notes": "see Note",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Brucato Chaparral",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d70fc7fc44cdc861fea808e9045f47658171cda646d283c6b293a12cfdf53776",
+    "lineage_hash": "bd3501ebbcf95132327328951ae51de2dc8cdffea3cfea8279a69a71a3ea897d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/crocodile-tail-tequila-martini/",
+    "fetchedAt": "2026-08-03T22:26:47.038Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/crocodile-tail-tequila-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

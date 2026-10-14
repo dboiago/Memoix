@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Tart with Chilli Oil-Infused Caramel",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the pastry base for the tart. Add the butter, sugar and flour to a mixing bowl and use your fingertips to rub in the butter until it forms breadcrumbs",
+      "Add the vanilla, then gradually mix in the egg yolk and milk, mixing after each addition, until smooth",
+      "Once all of the flour has been incorporated, wrap the pastry ball in cling film and chill in the fridge for 1 hour to firm up. Preheat the oven to 180°C fan for 15 minutes before removing the cold pastry from the fridge",
+      "Roll the pastry out to 3 mm thick. Carefully line the 25 cm tart tin with the pastry. Trim any excess pastry, and prick the bottom with a fork",
+      "Line the tin with baking paper and then fill it with baking beans or rice",
+      "Bake the tart until golden, approximately 25 minutes. Remove from the oven and set aside to cool in the tin",
+      "Add the sugar to a heavy-boottomed saucepan, and heat until completely liquid and golden. Be careful – it will be extremely hot. If you have any stubborn dry patches, tilt the pan to distribute the caramel, rather than stirring it",
+      "Carefully add the butter and cream – it will bubble up a lot. Stir until incorporated, then turn off the heat and stir in the chilli oil",
+      "To make the ganache, first add the chopped chocolate to a heatproof bowl. Heat the cream in a pan until just steaming, then pour it over the chopped chocolate and whisk until all the chocolate has melted and the ganache is smooth",
+      "Pour the ganache into the cooled tart case. Drizzle over the chilli oil caramel and use the back of a knife or a toothpick to swirl it in",
+      "Leave to set in the fridge for a minimum of 1 hour, then garnish with dots of chilli oil, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43773efbf0dc43f5d02f7d78f15de1c0fa8fc26e3aea9851b1a2a2a970eee4f7",
+    "lineage_hash": "0f0efa75bc00320e6c259a8deb18b72ec497a5474c24e95772937695c438bf53"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-chocolate-tart-chilli-oil-infused-caramel-recipe",
+    "fetchedAt": "2026-08-02T04:52:05.698Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-chocolate-tart-chilli-oil-infused-caramel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

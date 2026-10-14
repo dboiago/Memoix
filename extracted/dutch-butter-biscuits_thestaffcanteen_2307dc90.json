@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Dutch butter Biscuits",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Just mix it to a dough, roll into a sausage and slice into 1cm thick coins :)",
+      "I bake them myself at 160 deg C till gently browned (normally 20 minutes), but 180 deg C for about 10 minutes is also fine (That way you get to dunk it into the tea faster ;0)",
+      "Oh, and if you prefer shapes, the dough can be rolled out and cut, filled or garnished"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter/salted Butter If You Like It Like That",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b74d60eb046e7c9c9994e1adcde078ab63bb18abca4e481cdf05c2b4b6284c57",
+    "lineage_hash": "98284df9c0ba717cdd779f9b437cc97f44b2986aae5d7435ba1d641042361d8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/dutch-butter-biscuits",
+    "fetchedAt": "2026-08-02T12:17:23.523Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/dutch-butter-biscuits",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

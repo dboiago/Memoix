@@ -1,0 +1,55 @@
+{
+  "url": "https://www.baking-sense.com/2022/05/12/chocolate-strawberry-tart/",
+  "slug": "chocolate-strawberry-tart_baking-sense_9e312c8e",
+  "title": "Chocolate Strawberry Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:15:57.894Z",
+  "ldName": "Chocolate Strawberry Tart Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate mousse, strawberry, tart",
+  "ldIngredientsRaw": [
+    "1 recipe Chocolate Tart Dough",
+    "1 recipe Chocolate Pastry Cream",
+    "24 oz Strawberres (hulled)",
+    "6 oz Strawberry jelly (1/2 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Roll the chocolate short dough to fit into a 12&quot; tart pan with a removable bottom. Prick the bottom of the pan with a fork several times and refrigerate. While the tart dough is chilling, preheat the oven to 350 °F.",
+    "Bake the tart shell until it&#39;s set all the way to the center, about 15 minutes. Because of the dark color it&#39;s hard to see if it&#39;s browning. You need to press the center of the crust to make sure it&#39;s set. Cool the tart crust completely.",
+    "Make the chocolate pastry cream according to the recipe. While it&#39;s still warm pour it into the prepared tart shell. Cover with buttered parchment or wax paper and refrigerate until the pastry cream is well-chilled and set.",
+    "Slice the strawberries to 1/4&quot; thick. You can set aside the rounded end pieces for another use. Starting from the outside edge of the tart, overlap the strawberry slices with the points facing out. Continue making concentric circles working towards the center of the tart. The strawberries will form a pretty flower pattern.",
+    "Warm the strawberry jelly in a microwave proof container until it&#39;s pourable. If needed, strain the jelly to remove any chunks of fruit. Brush the warm jelly over the strawberries, allowing excess to drip between the berries. The jelly will help hold the berries in place.",
+    "Chill until serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "231 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "1 mg",
+    "sodiumContent": "8 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "12 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Chocolate Tart Dough",
+    "1 recipe Chocolate Pastry Cream",
+    "24 oz Strawberres (hulled)",
+    "6 oz Strawberry jelly (1/2 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

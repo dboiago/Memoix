@@ -1,0 +1,362 @@
+{
+  "recipe": {
+    "name": "Cooker Wala Chicken Curry",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, curd, degi red chili powder, turmeric powder, coriander powder, garam masala powder, cumin powder, salt to taste, lemon juice, fried onions and mix it well.",
+      "Keep it aside to marinate for 30-40 minutes.",
+      "In a cooker, add mustard oil, oil, once itâs hot, add black cardamom, green cardamom, bay leaf, cinnamon stick and let it splutter.",
+      "Add garlic cloves, onion and saute it until golden in color.",
+      "Add turmeric powder, degi red chili powder, coriander powder and mix it well.",
+      "Add ginger, tender coriander stems and saute it for a minute.",
+      "Add tomato, cover it with a lid and cook it for 2-3 whistles until cooked well.",
+      "Mash it with the help of a masher and cook it for a while.",
+      "Add marinated chicken, water and get a quick boil.",
+      "Add salt to taste, ghee, prepared masala, coriander leaves and green chili.",
+      "Cover it with a lid and cook it for 4-5 whistles until cooked well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti.",
+      "In a bowl, add black pepper, cloves, black cardamom and salt to taste.",
+      "Transfer it to a mixer grinder jar and grind it smoothly.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "cut into large pieces",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1⅓",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onions",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2-3",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "9-10",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "roughly chopped",
+        "amount": "2½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & slit into half",
+        "amount": "1",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooker Wala Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fbdb69c72ba7e176b52949b24e3085bfdc28be13e74b4d460243bdec023aad4",
+    "lineage_hash": "64d58f7c2471ed0d5d50c3067076c00720df31e84980f9f6c3fb3abb7a6e4926"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cooker-chicken-curry/",
+    "fetchedAt": "2026-08-02T17:00:27.874Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cooker-chicken-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

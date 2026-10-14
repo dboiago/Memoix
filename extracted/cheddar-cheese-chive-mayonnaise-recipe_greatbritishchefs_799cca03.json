@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Cheddar Cheese & Chive Mayonnaise",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the cheese and chive mayonnaise, place the egg yolks into a food processor with the cheese, mustard, vinegar and chives. Blend for 1 minute, then slowly pour in the oil as the processor runs",
+      "Once all the oil is blended, stop the processor and add a little salt to taste. Remove the mayonnaise from the processor and transfer to a sealable container. Refrigerate until ready to use"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc5b0af4709209a1634b01ff16922ee470342c16504bf9a8fd742b7b8b75a5e4",
+    "lineage_hash": "a7348f9158ac32cdab874fd7174f6e6222da5be70fea66e0e24d7bb4843a8558"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheddar-cheese-chive-mayonnaise-recipe",
+    "fetchedAt": "2026-08-03T15:31:00.965Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheddar-cheese-chive-mayonnaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

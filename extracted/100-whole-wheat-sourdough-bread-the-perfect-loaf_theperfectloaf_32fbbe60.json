@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "100% Whole Wheat Sourdough Bread",
+    "time": "25 hr 15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(9:00 a.m.)In a small container, mix and knead the levain ingredients and keep at 74-76°F (23-24°C) for 5 hours.",
+      "(9:10 a.m.)Place your sifting screen over a large container. Pour some whole wheat flour and sift it by shaking the stack. When no more flour falls through, continue until you’ve processed all the flour. Place the sifted-out bran and germ in a heatproof bowl and pour 200 grams of boiling water on top to cover. Let this soaking mixture rest near your levain until we are ready to mix the dough.",
+      "(1:00 p.m)In a medium mixing bowl, mix the Autolyse ingredients, cover and let rest for 1 hour.",
+      "(2:00 p.m.)To the mixing bowl holding your dough, add the Main Dough ingredients: salt, ripe levain (from step 1), and water. Mix by hand or with a dough whisk and strengthen the dough for 5 minutes until it becomes smoother and slightly elastic. Transfer to a bulk fermentation container and cover.",
+      "(2:30 p.m. to 5:30 p.m.)Give the dough 4 sets of stretch and folds at 30-minute intervals, where the first set starts 30 minutes after the start of bulk fermentation.",
+      "(5:30 p.m.)Lightly flour your work surface and scrape out your dough. Using your bench knife, divide the dough in half. Lightly shape each half into a round shape. Let the dough rest for 30 minutes, uncovered.",
+      "(6:00 p.m.)Shape the dough into a round (boule) or oval (batard)—place in proofing baskets.",
+      "(6:30 p.m. to 9:00 a.m. the next day)Cover proofing baskets with reusable plastic and seal shut. Then, place both baskets into the refrigerator and proof overnight.",
+      "(Preheat oven at 8:00 a.m., bake at 9:00 a.m.)Preheat your oven with a combo cooker or Dutch oven inside to 450°F (230°C). When the oven is preheated, remove your dough from the fridge, score it, and transfer to the preheated combo cooker. Place the cooker in the oven, cover with the lid, and bake for 20 minutes. After this time, remove the lid (you can keep it in the oven or remove it) and continue to bake for 30 minutes longer. When done, the internal temperature should be around 208°F (97°C). Let the loaves cool for 2 hours on a wire rack before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "64",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": "minus any sifted",
+        "amount": "857",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "or 505g if sifting and scalding",
+        "amount": "705",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "92",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Levain",
+        "unit": "g",
+        "notes": null,
+        "amount": "128",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1dfd070a4cda4d448fe4f4967bfff9050181375443479c2b87d00663f9acb609",
+    "lineage_hash": "b738b9527f79a817114a0f82e66a1cd23171ad8fdfffce10f1ca0f092a0e243b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/100-whole-wheat-sourdough/",
+    "fetchedAt": "2026-08-01T18:22:55.251Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/100-whole-wheat-sourdough/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

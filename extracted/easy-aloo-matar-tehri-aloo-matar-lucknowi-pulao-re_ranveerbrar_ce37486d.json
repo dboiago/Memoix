@@ -1,0 +1,316 @@
+{
+  "recipe": {
+    "name": "Aloo Matar Tehri",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Mint Sprig",
+      "Green Chilli",
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add ghee, once it’s hot, add green cardamom, black cardamom, black peppercorns, cloves, mace, cinnamon stick, bay leaf, cashew nuts, raisins and saute for a minute.",
+      "Add potatoes, water, cover it with the lid and let it cook for 4-5 minutes.",
+      "Add salt to taste, cauliflower, fresh green peas, prepared curd mixture and cook for a while or until oil separates from the masala.",
+      "Add fresh coriander leaves, soaked sella basmati rice, water, salt to taste, cover it with the lid and cook for 12-15 minutes on low flames or until it’s cooked.",
+      "Once tehri gets cooked properly then transfer it into the parat and add ghee for finishing and give it a good mix.",
+      "Transfer it into the serving dish and garnish it with mint sprig, green chilli and coriander sprig.",
+      "Serve hot with prepared alsi ki chutney.",
+      "In a bowl, add curd, ginger garlic paste, coriander powder, degi red chilli powder, turmeric powder and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a pan, add salt, flax seeds and roast for 2-3 minutes or until it splutters well.",
+      "Transfer it into the tray and keep it aside for further use.",
+      "In a mortar pestle, add garlic cloves, green chillies, fresh coriander leaves, toasted flax seeds and grind it into the coarsely paste.",
+      "Transfer the paste into the bowl, add curd and give it a good mix.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "peeled & cut into diced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "medium",
+        "notes": "cut into florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sella Basmati Rice",
+        "unit": "g",
+        "notes": "soaked for ½ hr",
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": "for finishing",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Flax Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "2",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Flax Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¾",
+        "section": "For Alsi Ki Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0684582badeeb8c71d0b98fb116b561dd11a7bf912ba4206753b07806da4e085",
+    "lineage_hash": "f4ee8f906ab14e57d9415a1c00dc4ff5a44193770819bab73e5ea1a3e02f617b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-matar-tehri/",
+    "fetchedAt": "2026-08-02T20:40:39.397Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-matar-tehri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

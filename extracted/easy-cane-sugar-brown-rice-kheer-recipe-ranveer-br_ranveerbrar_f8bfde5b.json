@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Cane Sugar Brown Rice Kheer",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in a deep non-stick pan and sautÃ© all dry fruits until light brown. Remove the roasted nuts and keep aside.",
+      "Add brown rice to the same ghee and sautÃ© for a minute. Now add cane sugar juice and bring it to a boil. Let simmer until rice is cooked.",
+      "Sprinkle cinnamon and cardamom powder, add milk and cook for another 5 minutes. Remove from the flame and transfer to a serving bowl.",
+      "Garnish with the roasted nuts and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ltr Cane Sugar Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Rice",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dry Fruits",
+        "unit": "C",
+        "notes": "almonds, cashew nuts etc",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7790ed987cd66a9a713e251aaf1e66b0e86e09847149b5ad3abb0787f9a45980",
+    "lineage_hash": "c78d47f8eac6c8e1bb1eae500d9f5f79305798b8af128ac806e218ed8f1bbd75"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cane-sugar-brown-rice-kheer/",
+    "fetchedAt": "2026-08-02T18:36:09.355Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cane-sugar-brown-rice-kheer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

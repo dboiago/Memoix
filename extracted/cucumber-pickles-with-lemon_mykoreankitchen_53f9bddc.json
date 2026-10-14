@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Cucumber Pickles with Lemon",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "63",
+      "carbohydrateContent": "15",
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Wash the cucumbers under running water. Scrub the cucumber skin thoroughly. Cut off both ends of the cucumber. Unless you’re using baby cucumbers, chop the cucumber into small thumb size pieces (about 4 cm / 1.5 inch length) then put them into a mixing bowl. Add the coarse sea salt and let it sit for 30 mins to drain some water out. During this time, turn the cucumber around a few times. After 30 mins, brush off residual salt from the cucumbers then put them into a clean sterile jar. Add the sliced lemon into the jar.",
+      "Combine the brine ingredients in a saucepan and boil over medium heat until the sugar dissolves (4 to 5 mins). Whisk occasionally.",
+      "Pour the pickle brine into the jar until the jar is full. Close the lid. Leave at room temperature for 3 hrs then move it to the fridge. Start eating from day 3. (You can start eating from day 1 but it becomes more flavorful from day 3.) The pickles can last for about 3 weeks in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumber (2.2 Pounds)",
+        "unit": "kg",
+        "notes": "Lebanese cucumber but you can use other cucumbers that are suitable for pickling.",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": "alt: rice vinegar",
+        "amount": "¾",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Pickling Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (0.35 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "10",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (0.17 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "5",
+        "section": "CUCUMBER PICKLE BRINE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e927c333ee9d1565aa7937f7b20e513e21c50bf35b12d52df349d06b39b04a3",
+    "lineage_hash": "d20fdc6cef485aa831773b8313f3d76560df61469a0faacab8841fe7518f3612"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/cucumber-pickles/",
+    "fetchedAt": "2026-08-01T23:19:25.781Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/cucumber-pickles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

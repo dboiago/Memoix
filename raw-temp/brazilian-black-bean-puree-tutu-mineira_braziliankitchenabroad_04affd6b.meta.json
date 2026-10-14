@@ -1,0 +1,65 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-black-bean-puree-tutu-a-mineira/",
+  "slug": "brazilian-black-bean-puree-tutu-mineira_braziliankitchenabroad_04affd6b",
+  "title": "Brazilian Black Bean Puree (Tutu à Mineira)",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T20:45:53.745Z",
+  "ldName": "Brazilian Black Bean Puree (Tutu a Mineira)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 Servings"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "beans, beans recipe, black beans",
+  "ldIngredientsRaw": [
+    "1 cup of leftover beans, cooked and seasoned (heaping cup) (make sure there is at least ½ cup of liquid)",
+    "¼ cup onion, diced",
+    "3 cloves of garlic, minced",
+    "1 thick slice of bacon, diced (approximately ¼ cup)",
+    "2 tablespoons of extra virgin olive oil (plus more for serving)",
+    "2 tablespoons of Brazilian cassava flour (farinha de mandioca)",
+    "salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Add your leftover beans to a food processor and pulse until smooth, and set aside.",
+    "In a medium pan over medium heat, drizzle about a tablespoon of olive oil.",
+    "Add in the diced bacon and fry until crispy.",
+    "When the bacon is crispy, scoop it out of the pan using a slotted spoon and place it into a plate lined with paper towels and set it aside.",
+    "Add the diced onions to the pan with the bacon fat and sauté until translucent.",
+    "Next add the minced garlic and sauté until fragrant and lightly golden.",
+    "Add the beans to the pan and stir to combine.",
+    "When the beans start to simmer, slowly sprinkle the Brazilian cassava flour and stir over low heat until it thickens into a soft puree consistency.",
+    "Serve drizzled with olive oil and the crispy bacon. You can also add a splash of your favorite vinegary hot sauce!",
+    "Additional serving suggestions for the ultimate Brazilian Tutu de Feijão experience:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving",
+    "calories": "283 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "9 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "0.5 mg",
+    "sodiumContent": "12 mg",
+    "fiberContent": "8 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "1 cup of leftover beans, cooked and seasoned (heaping cup) make sure there is at least ½ cup of liquid",
+    "¼ cup onion, diced",
+    "3 cloves of garlic, minced",
+    "1 thick slice of bacon, diced approximately ¼ cup",
+    "2 tablespoons of extra virgin olive oil plus more for serving",
+    "2 tablespoons of Brazilian cassava flour (farinha de mandioca)",
+    "salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

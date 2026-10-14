@@ -1,0 +1,287 @@
+{
+  "recipe": {
+    "name": "Barbecue T-Bone Steak",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, slightly soften the butter for the devilled butter. Blitz in a blender with the remaining ingredients until well-blended but coarse in texture",
+      "Transfer to a sheet of cling film and roll into a tight cylinder. Refrigerate until set solid",
+      "To make the oxtail for the macaroni cheese, brown the oxtail in a hot ovenproof saucepan with a dash of oil until nicely coloured all over. Remove and set aside. Add the vegetables to the pan and brown well",
+      "Add the beer, thyme and star anise and reduce until sticky. Add the oxtail pieces back to the pan along with the chicken stock. Cover and cook in the oven for 2.5 hours, then allow to cool in the pan (you can do this the day before)",
+      "Once the oxtail has cooled, pick the meat from the bone and keep in a bowl. Reduce the cooking liquor by half until rich, then set aside",
+      "Remove the T-bone from the fridge an hour before cooking",
+      "To make the macaroni cheese, melt the butter and flour to a heavy-based pan. Cook out for 5 minutes, then slowly add the milk. Continue to stir until all of the milk has been incorporated",
+      "Add the cheese and cook for a further 8 minutes",
+      "Remove from the hob and add the mustard and chopped parsley. Fold in the picked oxtail and 150ml of the reduced cooking liquid and combine with the cooked macaroni",
+      "Place the macaroni into skillets or ovenproof dishes and sprinkle the breadcrumbs over the top. Place in the oven for 15 minutes until golden brown",
+      "Before cooking the steak, preheat a barbecue or chargrill to a medium-high heat",
+      "To cook the steak, season well with salt and pepper and cook slowly on a BBQ to colour both sides well, turning regularly – the steak should reach 40°C in the centre when it is done",
+      "Carve the steak and serve with a disc of the devilled butter on top, alongside the little gem and macaroni cheese"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "T-bone Steak",
+        "unit": null,
+        "notes": "1kg in weight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": "salted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oxtail",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pale Ale",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macaroni Pasta",
+        "unit": "g",
+        "notes": "short",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Comté Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "coarse",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuces",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44c0d11c853894936e7c2c2f948a4ddfacc0cfd43920249f0c903b8b0f967b93",
+    "lineage_hash": "3a48f29b2e6e23e871d02a2e26fc20fe56b3b9ea2567d846afabe61d4431261f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-t-bone-steak-recipe",
+    "fetchedAt": "2026-08-03T12:09:37.528Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-t-bone-steak-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chicken Rice Momos",
+    "time": "30-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken keema, red chilli powder, ginger garlic paste, green chilli.",
+      "Add onion, carrots, salt to taste, soy sauce and mix them together and roll them into even sized balls.",
+      "Roll the chicken balls over rice and place them in a greased steamer vessel to steam them in a closed container for 15-20 minutes.",
+      "After steaming, leave it for 5 minutes to allow the rice to rise. And then plate it with chilli tomato or schezwan sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Keema",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f2927dd0b2b1f066e426d379f750026df939724f2f0556dfd3b0a853e4a25ee",
+    "lineage_hash": "97ffac997e860710eaf4e861d8a511affe12b213b6e8f835e12d8e7c1d81fad7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-rice-momos/",
+    "fetchedAt": "2026-08-02T14:33:34.428Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-rice-momos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Coconut Thin Cookies",
+    "time": "24 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "28",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "109",
+      "carbohydrateContent": "14",
+      "fatContent": "9",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 350F. Line two baking sheets with parchment paper (see note).",
+      "Pulse the unsweetened coconut in a food processor until it becomes a rough powder. Add the all purpose flour and pulse a few times to combine. Set the flour mixture aside.",
+      "Cream the butter and sugar until light and fluffy. Scrape the bowl. Add the cream of coconut and vanilla extract mix until well combined. Add the egg and mix until well combined. Scrape the bowl. Add the salt, baking soda and coconut/flour and mix until incorporated.",
+      "Use a .75 oz scoop or a tablespoon to scoop the cookies onto the prepared baking sheets, leaving 2\" between the cookies. They will spread as they bake so make sure to leave enough room.",
+      "Bake until the edges are golden brown and the middle of the cookies are set, 8-10 minutes.",
+      "Transfer the cookies to a cooling rack and allow to cool completely.",
+      "Store at room temperature in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": "1 cup after grinding",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature, see note*",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Coconut",
+        "unit": "Tbsp",
+        "notes": "see note **",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16c16379d0e9a0e63bb85c08023f0235184977285e044735dd362ab9ba2b3c3b",
+    "lineage_hash": "255ef7805b177df5e6b1352a8df0b8b0deb49925a0d18ef33abf6ee2228274be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/06/16/coconut-thin-cookies/",
+    "fetchedAt": "2026-08-01T22:55:06.948Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/06/16/coconut-thin-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

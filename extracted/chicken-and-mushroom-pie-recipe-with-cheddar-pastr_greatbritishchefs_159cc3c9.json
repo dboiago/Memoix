@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Chicken and Mushroom Pie with Cheddar Pastry",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the cheddar pastry, sift the flour and salt into a bowl. Dice the butter and lard, then rub into the flour mixture with your fingertips until it resembles fine breadcrumbs",
+      "Mix in the grated cheese, then add just enough of the beaten egg to bring the mixture together as a firm dough. Knead lightly and wrap the dough in cling film. Chill until required",
+      "Heat the oil in a frying pan, add the chicken and cook it begins to turn white. Add the mushrooms and continue to fry until the chicken is golden-brown and the mushroom have released all their moisture. Remove from the pan and set aside",
+      "Add a touch more oil to the same pan and sweat onion and garlic for 2-3 minutes or until softened. Remove from the heat and set aside with the chicken and mushrooms",
+      "Melt the butter in a saucepan, stir in the flour and cook for about 3 minutes, stirring constantly until it has formed a thick smooth paste",
+      "In a bowl, mix the stock, milk, white pepper and salt together. Pour the liquid slowly into the flour mixture, whisking constantly on a medium heat until smooth. Reduce the heat and simmer, stirring constantly for about 5 minutes or until the sauce has thickened",
+      "Stir in the parsley and chives and pour the sauce over the chicken and mushroom mixture. Mix well, then spoon into a pie dish and leave until completely cool",
+      "Roll out the cheddar cheese pastry dough on a lightly floured surface until it is the thickness of a pound coin (around 3mm). Brush the edges of the pie dish with beaten egg, lay the pastry on top, press down the edges and trim. Brush the top of the pie with beaten egg",
+      "Make two or three slits in the top of the pie to allow steam to escape, then bake the pie in the oven for 20-25 minutes, or until golden-brown on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Skinless Chicken Breasts",
+        "unit": null,
+        "notes": "boneless, cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "quartered",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": "plus more for dusting",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper to Season",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d26c533d3b7c0feb4c83066ec2e79e6d46237d6133bb959410a58c81128adeb",
+    "lineage_hash": "f4017af3363d17269b0b0dcdd3ce6e577c3056c80a3351b4daef750eb548c349"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-mushroom-pie-recipe-cheddar-shortcrust",
+    "fetchedAt": "2026-08-03T18:42:35.164Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-mushroom-pie-recipe-cheddar-shortcrust",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

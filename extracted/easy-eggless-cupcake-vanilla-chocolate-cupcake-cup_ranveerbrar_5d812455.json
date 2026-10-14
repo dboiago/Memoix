@@ -1,0 +1,308 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Cupcake (Vanilla/Chocolate Cupcake & Cupcake decorating)",
+    "time": "20-25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, add refined flour, baking powder, baking soda and salt. Mix it well.",
+      "Now, add milkmaid, melted butter, water, vanilla essence and lemon juice.",
+      "Whisk smooth until there are no lumps and batter turns smooth.",
+      "In a muffin tray, place the cupcake liners and transfer the batter to the muffin tray using a spoon.",
+      "Bake in a preheated oven at 180C for 12-15 minutes or only until a skewer inserted in the center comes out clean.",
+      "In a large mixing bowl, add refined flour, cocoa powder, salt, baking soda and baking powder and mix it well.",
+      "Now, add melted butter, milkmaid, lemon juice, vanilla essence and water.",
+      "Whisk until everything is well combined.",
+      "In a muffin tray, place the cupcake liners and transfer the batter to the muffin tray using a spoon.",
+      "Bake in a preheated oven at 180C for 12-15 minutes or only until a skewer inserted in the center comes out clean.",
+      "In three different bowls add mango, strawberry crush and instant coffee powder.",
+      "Now, add milkmaid in each bowl. Mix everything well.",
+      "Cut the top part of the cupcakes and scoop out the middle part with the help of a scooper or knife.",
+      "Now, gently pour the prepared fillings in the cupcakes with the help of a spoon.",
+      "In a sauce pot add water, icing sugar and lemon juice.",
+      "Whisk it well. Until the icing is smooth and thick enough.",
+      "Top the cupcakes with prepared icing",
+      "Decorate the cupcakes with crumbled cup cake, melted chocolate, chocolate sprinkles and whipped cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "alt: oil, melted",
+        "amount": "½",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "alt: apple vinegar",
+        "amount": "¾",
+        "section": "For Vanilla Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "alt: oil, melted",
+        "amount": "½",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "alt: apple vinegar",
+        "amount": "¾",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chocolate Cup Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "Tbsp",
+        "notes": "cut into small cube",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Crush",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Cake",
+        "unit": "C",
+        "notes": "crumble",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": null,
+        "notes": "melted",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sprinklers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55cb6a864cfaf277649d8ab852dd1272b4dda7b4ffede222aaf41031e8d6e364",
+    "lineage_hash": "12589acecc579ed126be7eb020cfc09bec3b603b926892a09bf89f5b4c825245"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/vanilla-chocolate-cupcake/",
+    "fetchedAt": "2026-08-02T20:04:53.951Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/vanilla-chocolate-cupcake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

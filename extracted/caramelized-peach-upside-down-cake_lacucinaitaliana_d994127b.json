@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Caramelized Peach Upside-Down Cake",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line an 8 1/2-inch springform pan with parchment paper. Slice the peaches and use them to form a compact layer on the bottom of the pan. Cook 1/2 cup of sugar together with 3 tablespoons of water until you obtain a light caramel.",
+      "Remove from the heat and add in 1 1/2 tablespoons of butter. Stir until it is completely melted into the caramel, then pour everything over the peaches in the springform pan. Melt the rest of the butter and let it cool. Sift the flour and potato starch together. Beat the eggs and the egg yolks with the rest of the sugar, the seeds from the vanilla bean pod, and the honey; beat with an electric hand mixer until you obtain a fluffy mixture: this will take at least 20 seconds.",
+      "Incorporate the melted butter into the mixture a little at a time, gently folding it in. Add in the sifted flour and potato starch and mix with a spatula from the bottom upwards so the mixture doesn’t deflate. Pour it into the pan and bake at 340°F for 30 minutes. Remove the cake from the oven and let it cool; then flip it over onto a serving dish and remove the pan. Let it cool completely before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peaches",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91f4a89246e883ae6d94a5dea8a532a6e5f326bcb5ba9ee6c21ba8e6306e4fe4",
+    "lineage_hash": "ed0d58a6c0ebb350eb3c90e69d78b07944ee899a2b7d5323f10eb3f5f3481437"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramelized-peach-upside-down-cake",
+    "fetchedAt": "2026-08-02T22:22:31.996Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramelized-peach-upside-down-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

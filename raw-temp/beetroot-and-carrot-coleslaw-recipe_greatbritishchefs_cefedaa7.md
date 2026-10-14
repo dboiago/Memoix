@@ -1,0 +1,7 @@
+I’m on a bit of a raw food kick lately. Of course when it comes to raw food, it’s all about the quality of the ingredients, which should ideally be organic and locally sourced to maximise their flavour potential.
+
+Most of us usually cook [beetroot](https://www.greatbritishchefs.com/ingredients/beetroot-recipes), either boiled or roasted, and don’t often brave the gory mess that comes with handling raw beetroot. But really, folks, the mess isn’t that bad and the result is fantastic. Just wear an apron and go to it!
+
+My favourite way to enjoy raw beetroot is shredded in combination with [carrots](https://www.greatbritishchefs.com/ingredients/carrot-recipes) and dressed with something sweet and tangy. Here I use raisins for the sweetness and lemon and white wine vinegar for the tang. Feel free to experiment with other dried fruits like dates, apricots or prunes. Same goes for the nuts: I use [pine nuts](https://www.greatbritishchefs.com/ingredients/pine-nut-recipes) but pistachios would be fantastic here, as would some toasted pumpkin and sunflower seeds.
+
+This recipe would be a nice [side dish](https://www.greatbritishchefs.com/collections/side-dish-recipes) to grilled mackerel. I could even see it piled high on a [burger](https://www.greatbritishchefs.com/collections/burger-recipes) or stuffed into a [sandwich](https://www.greatbritishchefs.com/collections/sandwich-recipes). I enjoyed mine pretty simply with a couple of boiled eggs.

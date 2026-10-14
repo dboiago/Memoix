@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Cilantro Chutney",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "65",
+      "carbohydrateContent": "9",
+      "fatContent": "2",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Remove all the hard stems/stalks from the cilantro, the tender ones are okay to have and then wash the cilantro.",
+      "To a blender add the cilantro leaves, green chili, ginger, cumin powder, chaat masala, black pepper and salt. Also add in lemon juice and sugar.Add yogurt to the blender. I have used vegan yogurt here in this recipe (plain almond milk yogurt). You can also use plain milk yogurt.",
+      "Blend it all together to a smooth consistency. If your chutney has a runny consistency, you may add a teaspoon of sev or peanuts to the chutney to make it thicker. Add 1 teaspoon at a time and then go from there.",
+      "Keep this cilantro chutney refrigerated and use it as needed. You can also freeze the chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bunches Cilantro",
+        "unit": "small",
+        "notes": "50-60 grams each, hard stems removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "plain milk yogurt or plain almond milk yogurt",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a884bc3de0c0847a9730c43f3e2650c725ea1cc14a210b571115048a67e1d2d",
+    "lineage_hash": "290943c1c02a9cb3dfc13a58d188b9f60eafc707b90a055e301bf46c859ffb07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/cilantro-yogurt-chutney/",
+    "fetchedAt": "2026-08-02T06:10:17.622Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/cilantro-yogurt-chutney/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Anpan (Japanese Sweet Bread)",
+    "time": "2 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "178",
+      "carbohydrateContent": "31",
+      "fatContent": "4",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "This amount makes about 160g (5.6oz) each of Azuki and White bean paste.",
+      "Make yudane a night before baking day. Place the bread flour in a small mixing bowl and pour in the boiling hot water. Combine them with a wooden spatula.",
+      "When it is cooled down, wrap with cling wrap and leave it on the kitchen bench in winter or leave it in refrigerator in summer.",
+      "Divide the bread dough into 12 equal sized balls and let them rest on the kitchen bench covered with well wrung out damp cloth.",
+      "Meanwhile, divide the sweet bean pastes (azuki and white) into 6 equal sized balls (so all together 12 ) and set aside.",
+      "Repeat for the remaining dough and all bean paste balls.",
+      "Gently brush with beaten egg or milk, and stamp with sesame seeds.",
+      "Bake in the preheated oven for 20 minutes.",
+      "Remove from oven tray and cool them on a cooling wire rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Azuki Bean",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": "Azuki Bean Paste (Kuro-An)",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": "Azuki Bean Paste (Kuro-An)",
+        "isOptional": false
+      },
+      {
+        "name": "White Bean",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": "White Bean Paste (Shiro-An)",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": "White Bean Paste (Shiro-An)",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": "3/8 cup or 1/4 cup + 1 tbsp",
+        "amount": "50",
+        "section": "Yudane",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Hot Water",
+        "unit": "ml",
+        "notes": "2 tbsp + 2 tsp",
+        "amount": "40",
+        "section": "Yudane",
+        "isOptional": false
+      },
+      {
+        "name": "Milk (room Temperature)",
+        "unit": "ml",
+        "notes": "1/2 cup",
+        "amount": "120",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg (room Temperature)",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "2 tbsp",
+        "amount": "25",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "3",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": "2 cups",
+        "amount": "250",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "1 tsp",
+        "amount": "4",
+        "section": "Bread dough",
+        "isOptional": false
+      },
+      {
+        "name": "Butter Chopped (room Temperature)",
+        "unit": "g",
+        "notes": "3 tbsp",
+        "amount": "40",
+        "section": "Bread dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd3af9b65c297d081fb30c7f25b8859f1266af629557ed85be7f993079726a73",
+    "lineage_hash": "1b0f3494db4d6843d2ab32857672cfe4e6d82e09e8e9f772e6228a3592e4c3d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/anpan/",
+    "fetchedAt": "2026-08-01T23:37:15.718Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/anpan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

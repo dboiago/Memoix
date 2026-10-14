@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chocolate Cherry Cheesecake Tart (Tart Michel)",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "304",
+      "carbohydrateContent": "32",
+      "fatContent": "19",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Bake the dough in a 10″ or 12″ tart pan with a removeable bottom.",
+      "Cream the butter and sugar. Do not try to incorporate air. Just get the mixture smooth.",
+      "Add the cream cheese.",
+      "Mix to incorporate the cheese.",
+      "Add the eggs and mix until smooth.",
+      "Pour the cheesecake batter into the tart shell.",
+      "Smooth to an even layer and bake.",
+      "Slice the cherries in half around the wide side.",
+      "The pit will stay in one half.",
+      "Pry the pit out of the cherry half.",
+      "The cheesecake filling will puff up in the oven but it will settle as it cools.",
+      "Sprinkle the warm tart with chopped chocolate.",
+      "Wait for the chocolate to melt completely.",
+      "Gently spread the melted chocolate to cover the cheesecake filling.",
+      "Arrange the cherry halves onto the melted chocolate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Tart Dough",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Each Large Eggs",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Cheesecake Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Cherries",
+        "unit": "oz",
+        "notes": null,
+        "amount": "16",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e2e734cd18c0466f6879ea29864addfcf4d4dd2ccf9ead416fcd83e24a6e699",
+    "lineage_hash": "8a2a682af920f147f310ace3b05c5633fa6ad8fda90084d7c6151df04ff37433"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/06/23/chocolate-cherry-cheesecake-tart-aka-tart-michel/",
+    "fetchedAt": "2026-08-02T02:43:56.935Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/06/23/chocolate-cherry-cheesecake-tart-aka-tart-michel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

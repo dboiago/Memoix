@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cucumber-gin-recipe",
+  "slug": "cucumber-gin-recipe_greatbritishchefs_f404aab6",
+  "title": "Cucumber Gin Recipe",
+  "byline": "by Kerth Gumbs",
+  "fetchedAt": "2026-08-03T07:15:08.097Z",
+  "ldName": "Cucumber gin",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1/2 cucumber",
+    "50g of sugar, (optional)",
+    "500ml of gin"
+  ],
+  "ldInstructionsRaw": [
+    "Peel and deseed the cucumber, then slice into batons",
+    "Place into a jar along with the sugar (if using) and gin",
+    "Leave to infuse in a cool dark place for 24 hours",
+    "Strain through a muslin cloth, then decant the gin into a bottle. Serve chilled. Best enjoyed within 1 month of making"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

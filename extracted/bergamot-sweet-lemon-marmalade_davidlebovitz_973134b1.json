@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Bergamot (sweet lemon) marmalade",
+    "time": null,
+    "course": "brunch",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse and dry the bergamots, trim off the stem ends, then cut each in half and pluck out the seeds.",
+      "Slice the bergamots as thinly as possible. Tip: If you have trouble getting them very small, after slicing, you can use a chef’s knife to chop them to the right size. Don’t use a food processor, as that will make the marmalade muddy.",
+      "Put in a large pot, cover with water, and bring to a boil. Let boil for five minutes, then drain well.",
+      "Return the bergamots to the pot, add the sugar, 4 cups (1l) of water, and salt, and bring to a boil. Cook the bergamots, stirring occasionally, until the marmalade begins to set using the wrinkle test: turn the marmalade off and put a dab on a plate that’s been in the freezer then check it after five minutes; if it wrinkles when you nudge it, it’s done. If not, continue to cook, repeating this step, until it reaches the desired consistency.",
+      "Depending on the heat, the marmalade will take at least 30 minutes to reach this point, although if you’re used to making other jams, it will look slightly more liquid than others when done. You can also use a candy thermometer; the marmalade will be done when the temperature reaches around 218ºF (103ºC).",
+      "Once done, stir in the liqueur, if using, then ladle into clean jars and twist on the lids. Once cool, store in the refrigerator, where they’ll keep for at least six months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bergamots (about 700g)",
+        "unit": null,
+        "notes": "alt: Meyer lemons, organic or unsprayed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "600g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "1L, plus more for blanching the bergamots",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Teaspoons",
+        "unit": null,
+        "notes": "optional, kirsch or limoncello",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1c1480ca010cf1c2ac2c77faa222d50321105b73d5629929f36e2e627ee0ad9",
+    "lineage_hash": "909285fb14a02fec12095c96e38621d5bc331759f2af8588411eadf18e30d0d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/bergamot-marmalade-recipe/",
+    "fetchedAt": "2026-08-03T02:50:02.014Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/bergamot-marmalade-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

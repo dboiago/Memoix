@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cranberry Smash",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the rosemary, cranberries, sugar and diced lemon in a shaker and muddle. Add the gin and shake hard with ice cubes. Strain over one large ice cube into a rocks glass and garnish.",
+      "Cranberry-Infused Gin: Combine a 750 mL. bottle of dry gin in a quart-sized jar with 1 cup fresh, gently muddled cranberries. Let macerate for 1 week before straining into a clean glass bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberry-infused Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Demerara Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e264500805a8738f2b7e0f190493b531ab0230c7e0c04385e9af53deb26228f4",
+    "lineage_hash": "17268e97850cb1bf7e93c4edafb972fa0d1fe962c2fefaabeb9eb4440440ec04"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cranberry-smash/",
+    "fetchedAt": "2026-08-03T18:25:41.133Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cranberry-smash/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

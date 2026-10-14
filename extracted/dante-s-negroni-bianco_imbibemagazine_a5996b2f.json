@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Dante's Negroni Bianco",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a mixing glass with ice and stir until chilled. Strain into a chilled glass. Twist a lemon peel over the top of the drink to release the oils and discard. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bianco Vermouth",
+        "unit": "oz",
+        "notes": "Young uses Martini & Rossi",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "Young uses Noilly Prat",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinquina Aperitif",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verjus",
+        "unit": "dash",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Twist",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01cfb8f26b2725526b021731ee8356c23e68baa30ee54f0ab277937f22ea79ca",
+    "lineage_hash": "9b3672bc5868d5ed0b76951b0717d86edf3590f7bc70595d31fe6dbb7d38474a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dantes-negroni-bianco/",
+    "fetchedAt": "2026-08-03T17:40:45.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dantes-negroni-bianco/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

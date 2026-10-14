@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chinese Detox Stir Fry",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "207",
+      "carbohydrateContent": "27.6",
+      "fatContent": "10.2",
+      "proteinContent": "3.2"
+    },
+    "directions": [
+      "Gently saute the ginger to release its fragrance.",
+      "Cook the lily flower and wood ear mushrooms.",
+      "Stir fry the celery and carrot.",
+      "Add the tofu puffs, mung bean noodles and sauce. Mix together."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lily Flowers",
+        "unit": "g",
+        "notes": "about 2/3 cup, dried",
+        "amount": "32",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms",
+        "unit": "g",
+        "notes": "about 1/4 cup",
+        "amount": "10",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Bundle Mung Bean Noodles (or Rice Vermicelli)",
+        "unit": null,
+        "notes": "yields about a cup after soaking",
+        "amount": "½",
+        "section": "Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetarian Oyster Sauce",
+        "unit": "tsp",
+        "notes": "or regular oyster sauce",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Small Carrot",
+        "unit": null,
+        "notes": "60 g, yield 1/2 cup once sliced, julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": "140 g, yields about 1 1/2 cups after cutting, cut into 2” (5 cm) long 1/4” (6 mm) thick sticks",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Deep Fried Tofu Puffs",
+        "unit": "C",
+        "notes": "40 g, halved",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c810205639435e49af5e4bdb94575792504c591dae960f80f36a1ec90708048",
+    "lineage_hash": "4f4685de14c416eb57d399c3751c469477a0f8b0d5697e209203c23da696e6d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-detox-stir-fry/",
+    "fetchedAt": "2026-08-02T03:32:03.106Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-detox-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

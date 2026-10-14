@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Chocolate Delice",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 110˚C/gas mark 1/2. Melt the chocolate in a bain marie. Add the egg, butter and sugar into a food processor and blend until light and creamy",
+      "Add the warm chocolate to the egg mixture and continue to blend until smooth. Add the salt and flour and pulse to combine - be careful not to over mix",
+      "Line a baking tray with parchment paper and pour on the delice mix, shaking the tray to ensure the mix is evenly distributed",
+      "Place in the oven for 16 minutes. Turning the tray around after 8 minutes so that it cooks evenly. Remove and allow to cool and set until firm",
+      "Turn the delice out from the tray and slice into 10 x 3.5cm rectangles. Store in the fridge and remove  20 minutes before serving",
+      "For the coffee mouse, whisk the mascarpone in a large bowl to loosen and soften - this will make it easier to work with. Whisk the cream to soft peaks and place in the fridge until required",
+      "Whisk the egg whites to soft peaks, while slowly adding the sugar",
+      "Place a small pan over a medium heat, add 50ml of extra cream and then the coffee, heat until both dissolve. Remove from the heat and stir in the softened gelatine until dissolved. Pour the coffee mixture into the mascarpone and mix well",
+      "Gently fold in the cream and then the meringue - do this by adding a 1/3 of each at a time - being careful to retain as much volume as possible. Place into a piping bag with a 1cm nozzle attached and store in the fridge until required",
+      "For the chocolate crackling, heat the sugar, glucose and water in a small pan. Use a sugar thermometer to bring the mixture to 160˚C. Add in the chocolate chips and stir gently to melt and combine",
+      "While the mix is still warm, pour onto a tray lined with a silicone mat and leave to set. Once completely set, roughly break up and blitz in a blender to form a powder",
+      "Preheat the oven to 180˚C/gas mark 4. Sprinkle the chocolate powder to make 10 x 3.5cm rectangles and place back at 180˚C for 2-3 minutes or until melted together. Remove, allow to set and store in an airtight container until required",
+      "For the rum crème fraîche, combine the crème fraîche and rum to your taste in a bowl. Use an electric whisk until medium peaks form. This will take a little longer than whipping regular cream so be patient. Refrigerate for a minimum of 2 hours before use",
+      "For the chocolate sauce, place the chocolate chips in a bowl and the cream in a small pan. Heat the cream to the boil, remove from the heat and pour over the chocolate. Gently whisk together until combined. Allow to cool and slightly thicken before use",
+      "To serve, place a chocolate delice into the middle of each plate. Pipe the mousse into 2 long strips to cover the delice and smooth over with a palette knife - repeat for each delice",
+      "Arrange the chocolate crackling on top of the mousse. Use a hot spoon to quenelle the rum crème fraîche and sit each quenelle on top of the crackling. Drizzle the chocolate sauce around the outside of each plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Amedei “chuao” Chocolate",
+        "unit": "g",
+        "notes": "broken into small chunks",
+        "amount": "640",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "12.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": "50ml extra",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "g",
+        "notes": "strong",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": "good quality",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d1b697872a20f863bfe42fcbdeffd6d88ae2360850e86b7b622cb29cf6868c06",
+    "lineage_hash": "d48290701ff4007b0f74bea365f322c031a974dd0b66e4e69736cf6cd5c213e5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-delice-recipe",
+    "fetchedAt": "2026-08-03T16:49:03.861Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-delice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Tart with Hazelnut Caramel",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lightly grind the instant coffee. Mix the soft butter with the cocoa powder and powdered sugar; add the coffee, a pinch of salt and the egg, and finally, the flour. Cover the dough with plastic wrap and allow to rest in the refrigerator for 1 hour. Dust the work surface with some flour mixed with cocoa powder and use a rolling pin to roll out the shortcrust dough until it is about 1/8 inch thick. Grease a loose-bottomed 10-inch diameter baking tin and dust the base and sides with a little flour mixed with cocoa powder. Lay the shortcrust pastry in the tin, push it into the sides and trim off the excess. Cover the tin with plastic wrap and let it rest in the refrigerator for 20 minutes; then prepare to blind bake the pastry by piercing holes in it with the tines of a fork and and lining it with a layer of ceramic pie weights or dried beans and bake at 350°F for about 10 minutes.",
+      "FOR THE FILLING\r\n\r\nMelt the chocolate over a bain-marie and combine it with the softened butter. Beat the eggs with the sugar until you have a pale, slightly foamy mixture; first add the chocolate, a little at a time, then the flour, baking powder and a pinch of salt. Put the mixture in the tart case and bake at 350°F for 20 minutes. Remove the pie from the oven and let it cool.",
+      "FOR THE CARAMEL\r\n\r\nToast the hazelnuts in the oven at 350°F for 7-8 minutes. Coarsely chop the chocolate. Heat the sugar in a pan until it turns golden. Gently heat 1/2 cup of light cream in a saucepan and pour it into the sugar, stirring for a couple of minutes, until you have a smooth caramel; then add the chopped chocolate, followed by 4 ounces of toasted hazelnuts and the honey. Chop the remaining hazelnuts. Whip 1 cup of light cream. Put the hazelnut caramel and the chopped hazelnuts on the tart and serve accompanied with the whipped cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "52% Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Flour",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60f418b57b51ba7ed16594c6b40944332ddfeac026739938a64205cdeeec1a2d",
+    "lineage_hash": "473027476c7b0005e2abf4681947450b077df9e2e8abd4ab66cab7fdc2606167"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/double-chocolate-tart-with-hazelnut-caramel",
+    "fetchedAt": "2026-08-03T06:14:24.958Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/double-chocolate-tart-with-hazelnut-caramel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

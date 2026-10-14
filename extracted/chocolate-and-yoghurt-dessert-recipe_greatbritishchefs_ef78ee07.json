@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Chocolate and Yoghurt Dessert",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the chocolate mousse, melt the chocolate and butter over a low heat and whisk until smooth and emulsified. Leave to sit at room temperature",
+      "Beat the eggs and sugar until thick and pale",
+      "Fold in the chocolate butter mixture and emulsify with a hand blender until smooth and glossy. Transfer to a piping bag",
+      "Pipe the mixture into 4cm diameter round silicone moulds, allowing 20g per person. Place the moulds in a deep baking tray filled with hot water, making sure the water comes midway up the moulds. Cook in the oven for 10 minutes",
+      "When cooked, remove the moulds from the water and place them in the freezer (this will harden the mousses, making them easier to get out of the moulds)",
+      "After 2 hours, remove the mousses from the moulds and place on a tray lined with silicone paper. Keep in the fridge",
+      "To make the yoghurt component, soak the gelatine in iced water. Bring the cream, glucose, sugar and citric acid up to the boil then remove from the heat and add the gelatine",
+      "Whisk in the yoghurt, emulsify with a hand blender and strain through a fine sieve",
+      "Pour the yoghurt into the same sized moulds as the chocolate mousses were in, again allowing 20g per portion",
+      "Place the yoghurts in the freezer for at least 2 hours, or until needed; they need to be brought out 10 minutes before the dish is served",
+      "To serve, carefully place the yoghurt on top of the mousse and allow to come to room temperature. Finish with a dusting of cocoa and a pinch of cumin powder"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e37d1577f11f99d5a635e65a8f8abdd8f8dba47ec246869ea8a7b0aa9ed38a5",
+    "lineage_hash": "1f0a9a61a5b0262bf7049500bf3792572bed6520b411f645f783f3902d9fd4a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-and-yoghurt-dessert-recipe",
+    "fetchedAt": "2026-08-03T11:05:05.051Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-and-yoghurt-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

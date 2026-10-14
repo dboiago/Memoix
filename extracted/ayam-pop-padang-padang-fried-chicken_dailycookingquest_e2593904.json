@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Ayam Pop Padang - Padang Fried Chicken",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat butter in a pot and stir fry the garlic until fragrant, about 2-3 minutes. Add salt, pepper, sugar, water, and coconut juice. Mix well and bring to a boil.",
+      "Add chicken pieces into the pot and cook until chicken is tender, about 20 minutes. Drain and set aside.",
+      "Heat enough oil in a pot for deep frying, fry the chicken pieces until slightly golden brown (it should still be quite whitish). Serve immediately with chili and sweet soy sauce sambal.",
+      "In a bowl, combine chili, fried shallot, sweet soy sauce and juice of kaffir lime."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ayam Pop",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Chicken (indonesian: Ayam Kampung)",
+        "unit": null,
+        "notes": "cut into 4 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "minced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Juice",
+        "unit": "ml",
+        "notes": "Indonesian: air kelapa",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili and Sweet Soy Sauce Sambal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili",
+        "unit": null,
+        "notes": "seeded and chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Shallot",
+        "unit": "Tbsp",
+        "notes": "Indonesian: bawang goreng",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "933311479bae8eb867f7ec99110a69fe4ad2b553f75b60a710a8cc9627bb7f22",
+    "lineage_hash": "376f174a36b6dbc7f1a71c140ee2f45f2211cf242db6aa77e672f557d801e39d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-pop-padang.html",
+    "fetchedAt": "2026-08-02T12:03:28.070Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-pop-padang.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

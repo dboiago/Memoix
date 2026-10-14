@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Devil’s Food Cake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease two 8-inch (20 cm) cake pans and line the bottoms with parchment. Dust the sides of the pans with flour, tapping out any excess.",
+      "For the cake, sift the flour, sugar, cocoa powder, baking soda, and salt into a large mixing bowl. Using electric beaters or in a stand mixer fitted with the paddle attachment, cut in the butter, starting on low speed and gradually increasing to medium speed until the mixture is a fine crumble (like the texture of fine breadcrumbs) and no large pieces of butter are visible.",
+      "Stir the hot coffee, milk, and vanilla together and add them all at once to the flour mixture, mixing until smooth. Break the eggs into a small dish, stir them with a fork to break the yolks, and then add them to the batter, mixing on medium speed just until smooth (the batter will be very fluid). Divide the batter evenly between the prepared pans and tap them on the counter to eliminate any air bubbles.",
+      "Bake the cakes for about 30 minutes, until a tester inserted in the centre of the cake comes out clean. Cool the cakes for 20 minutes in their pans on a cooling rack, then tip them out onto the rack to cool completely to room temperature. The cakes can be baked a day ahead and stored, in an airtight container or wrapped in plastic wrap, at room temperature before frosting.",
+      "For the frosting, place the chocolate and cream in a metal bowl and place it over a saucepan of barely simmering water. Stir the chocolate and cream occasionally and gently until all the chocolate has melted and the mixture is smooth. Remove the bowl from the heat and whisk in the sour cream, vanilla, and salt. Let the mixture cool completely to room temperature, stirring occasionally (you can chill the mixture for just a few minutes to start it setting, then let it continue to cool naturally at room temperature). Once cooled to a thicker consistency, whisk by hand to thicken just into a spreadable consistency (do not whip it vigorously or with electric beaters).",
+      "Place the first cake layer on your serving plate and, if necessary, trim it to level it. Spread a generous layer of the frosting over the top of the cake. Trim the second cake, if necessary, and place it on top of the first layer. Spread the frosting over the top and then the sides of the cake, using a swirling motion with your spatula to create a nice design. Chill the cake for at least 2 hours before serving. The cake will keep, refrigerated in an airtight container, for up to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "1 ½ Cups Cake and Pastry Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "195",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "1 ⅓ Cups Superfine (quick-dissolve) Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "C",
+        "notes": "60 g",
+        "amount": "½",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, cut into pieces",
+        "amount": "½",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Hot",
+        "unit": "C",
+        "notes": "strong brewed coffee, 125 mL",
+        "amount": "½",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large, at room temperature",
+        "amount": "2",
+        "section": "Chocolate Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "360 g, chopped",
+        "amount": "12",
+        "section": "Fudge Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "1 ¾ Cups Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "440",
+        "section": "Fudge Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "125 g",
+        "amount": "½",
+        "section": "Fudge Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Fudge Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Fudge Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9cec8ef19e5466bc12a6b71b9c62c63b4e4f8e10d7f5ef63a056c7732d588d74",
+    "lineage_hash": "e3cd56253268271b30f58a0b8e0ad2d194eb3c56ac9d1b05d44105302fe04ec9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-devils-food-cake/",
+    "fetchedAt": "2026-08-01T19:51:53.394Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-devils-food-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

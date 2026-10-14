@@ -1,0 +1,293 @@
+{
+  "recipe": {
+    "name": "Adobo Chicken Skewers With Banana Ketchup",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the marinade, mix all of the ingredients together with a generous pinch of black pepper. Add the chicken, mix well and set aside in the fridge for at least  30 minutes, or ideally overnight",
+      "For the banana ketchup, heat the vegetable oil in a saucepan. Once hot, soften the shallots for about 5 minutes, then add the garlic, green chilli, ginger, turmeric, allspice and smoked paprika and fry for a further minute until fragrant",
+      "Stir in the remaining ingredients then bring to a simmer. Turn down the heat to low and cover and cook for 15-20 minutes, until thickened. Leave to cool",
+      "Once cooled, taste and season as needed, then blend in a food processor until smooth, loosening with a splash of water if needed. Set aside a little in a small serving bowl for dipping, then pour the rest in a bowl to use for glazing the chicken as it cooks",
+      "For the brown sugar glaze, mix together all of the ingredients in a saucepan. Simmer for 5 minutes then reserve a little for brushing at the end of cooking. Pour the rest in a bowl to use for glazing the chicken as it cooks",
+      "If you are using wooden skewers, soak them in water for at least 20 minutes, then drain",
+      "Skewer the chicken onto skewers and secure a lime half onto the end of each skewer to keep everything in place. Set aside",
+      "Light a barbecue for direct cooking on a medium-high heat",
+      "Brush the chicken skewers with a little oil and place them on the grill. Cook for 15-20 minutes, with the lid on and vents open, turning every 2 minutes and basting with the banana ketchup and brown sugar glaze in turn. You may need to move the chicken to a cooler area of the grill if colouring too quickly. The final internal temperature should be at least 74°C",
+      "Meanwhile, char the lime cheeks until nicely coloured, then remove and set aside",
+      "Arrange the skewers on a platter (remove the skewers if you like) and brush over the reserved glaze with a clean brush. Sprinkle with chopped coriander and serve with the charred lime cheeks and reserved banana ketchup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "kg",
+        "notes": "boneless, chopped into 2.5cm pieces",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "3 halved and 2 with their cheeks cut off, central part discarded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "ml",
+        "notes": "or Filipino cane vinegar if you can find it",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "plus extra for brushing",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": "g",
+        "notes": "(about 4), mashed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": "or Filipino cane vinegar if you can find it",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "456fa11ad51c1ce6a828e7186caac1e13be53cf4efdcc241c74ca4f188bb87ce",
+    "lineage_hash": "009d9aa148af0d1925594ebd7a27115fdf2a84ec80623ae783d59e5a5245a997"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/adobo-chicken-skewers-banana-ketchup-recipe",
+    "fetchedAt": "2026-08-01T19:24:26.844Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/adobo-chicken-skewers-banana-ketchup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

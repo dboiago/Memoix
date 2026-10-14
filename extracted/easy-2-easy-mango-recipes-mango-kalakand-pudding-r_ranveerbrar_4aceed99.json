@@ -1,0 +1,266 @@
+{
+  "recipe": {
+    "name": "Mango Kalakand & Pudding",
+    "time": "30-40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add mango slices, sugar, transfer it into a mixer grinder jar and grind into smooth pulp.",
+      "Keep it aside for further use.",
+      "In a shallow pan, add milk, sugar and give it a boil.",
+      "Add crumble paneer and cook it for 3-4 minutes on low flame.",
+      "Add prepared mango pulp, saffron, salt to taste and cook until it thickens.",
+      "Finish it with some ghee and transfer it to a greased tray.",
+      "Garnish it with mango, pistachios, saffron and sprinkle some cardamom powder.",
+      "Refrigerate for 1-2 hrs, cut it into desired shapes and transfer it to a serving dish.",
+      "Garnish it with mango, mint sprig and rose petals.",
+      "Serve cold.",
+      "In a sauce pot, add prepared mango pulp, sugar, water and get one quick boil.",
+      "Add condensed milk and cook it for 8-10 minutes on medium flame.",
+      "Add cornstarch, water and cook for a few minutes until it thickens on medium flame.",
+      "Grease the mold with butter, pour prepared mixture and refrigerate it for 1-2 hrs.",
+      "Demold the pudding on a serving dish, garnish it with whipped cream, mint sprig, and mango slice.",
+      "Serve cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Ripe Kesar Mango",
+        "unit": null,
+        "notes": "peeled & sliced",
+        "amount": "4",
+        "section": "For Mango Pulp",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Mango Pulp",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "500",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Mango Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "A Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "No. Pistachios",
+        "unit": null,
+        "notes": "blanched, peeled, sliced",
+        "amount": "2-4",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kalakand",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": "for greasing tray",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Mango Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Mango Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f974e1fbbb1566aea6bd5f82df1030111d8f942e77410822ad62f01f4b29a88",
+    "lineage_hash": "6814e67d87be835ee31d2d2e25040764014a994d7d388915a99fa2281741c243"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/mango-kalakand-pudding/",
+    "fetchedAt": "2026-08-02T19:58:43.844Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/mango-kalakand-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

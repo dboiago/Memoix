@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Curry goat",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season curry goat with salt, black pepper. 2 tbsp. Curry powder, fresh ginger onions, spring onions, garlic, scotch bonnet, fresh thyme mix and marinate di ting!",
+      "In a large pot add some vegetable oil in on a high heat then add curry goat and brown for around 10 mins.",
+      "Add 250ml water mix and cook di ting for 30 mins. Add some all purpose seasoning for maximum FLAVA. Then add your potatoes and cook for 1 hour until meat is tender making sure you stir occasionally."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kilo Curry Goat",
+        "unit": null,
+        "notes": "with bone",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder Blend",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Potatoes",
+        "unit": "g",
+        "notes": "peeled chopped 2 inch",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f56c66bc2c4c373cd29bde17f4e98490b8085def8f7e4d8f4ac6f0eee651eae9",
+    "lineage_hash": "8f80c97a5ba4dfa1d8860a0e08dd0465f3c82f33a55600bf2840da7854df378d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/curry-goat-2/",
+    "fetchedAt": "2026-09-30T17:35:40.288Z"
+  },
+  "rawSource": "https://originalflava.com/meals/curry-goat-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Cherry Bun",
+    "time": "1 hr 20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the flour, salt, sugar, softened butter, yeast & milk to a bowl.  Combine until they start to come together",
+      "Knead for approx 10 minutes until soft and smooth (or mix in a food mixer with a dough hook for around 5 minutes)",
+      "Place in a greased bowl and cover with clingfilm and leave to double in size for around 2 hours",
+      "Tip the dough out onto a floured surface and roll out into a large rectangle. Arrange the cherry halves onto the dough and scatter flaked almonds over",
+      "Roll up lengthways as tight as possible. Slice into 12 equal pieces with a sharp knife",
+      "Lay each bun onto a baking sheet lined with baking paper and lightly greased with butter, spaced well apart. Cover with cling film and leave to prove for 1-2 hours",
+      "Brush the buns with melted butter and scatter with the remaining flaked almonds. Bake for 15-20 minutes until golden brown. Allow to cool on a wire rack",
+      "Mix the icing sugar with a little water until drizzling consistency and smooth. Drizzle the icing over the buns"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "ripe, halved and stoned",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "400814186ed7df4eecabf02fe4848db9d17ce565bf7a2513a17403435533ca91",
+    "lineage_hash": "0e7f71b50c59a563f0b1ad07bc95e51abb0dc49cacb0aa5163349c52e2a3300f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-buns-recipe",
+    "fetchedAt": "2026-08-03T23:18:26.804Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-buns-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

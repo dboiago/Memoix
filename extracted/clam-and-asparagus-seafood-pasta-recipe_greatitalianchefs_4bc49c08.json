@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Clam and Asparagus Seafood Pasta",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the maltagliati pasta. Sift the flour onto a clean work surface and make a well in the centre, cracking the eggs and egg yolk into the well. Mix the egg into the flour and knead well until it forms a smooth dough. Shape into a ball, then wrap in clingfilm and leave to rest in the fridge for 30 minutes",
+      "Using a pasta machine, roll out a sheet of pasta to a thickness of 1 mm. Leave the pasta to rest until slightly dried out (the dough should no longer stick together, but not be too brittle), then roll it up into a cylinder and cut out into long ribbons of maltagliati. Unravel the pasta ribbons into nests and dust lightly with flour, then set aside until ready to cook",
+      "Meanwhile, finely chop the shallot and garlic and sauté gently over a medium heat until the shallot is tender. Increase the heat, then add the clams and white wine to the pan turn. Cover with a lid and cook for a further 4 minutes",
+      "Take the pan off the heat and remove the clams, separating them from their shells. Pass the remaining liquid from the pan through a fine sieve, reserving the liquid but discarding the shallot and garlic",
+      "Bring a separate pan of salted water to the boil and blanch the asparagus for 1–2 minutes. Remove from the pan using tongs, then place the pasta into the pan and cook in the asparagus water for 1 minute 30 seconds",
+      "Drain the maltagliati and transfer to a frying pan along with the clam and shallot cooking juices. Mix well over a gentle heat to finish, then add the clams and asparagus to the pan",
+      "Divide the pasta between serving plates and finish with a generous drizzle of olive oil and some freshly ground black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semolina Flour",
+        "unit": "g",
+        "notes": "preferably durum wheat semolina",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clams",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Asparagus Spears",
+        "unit": "bunch",
+        "notes": "chopped into 2cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c271fa1baf3a505211be18dcc3e69dd5bde83d623391cac7c525f39a004fae7f",
+    "lineage_hash": "54613ddc1be6ffd7c3823a80a8675408670743c6d4d316ec950334d75036de3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/wild-asparagus-seafood-pasta-recipe",
+    "fetchedAt": "2026-08-02T05:42:12.105Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/wild-asparagus-seafood-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

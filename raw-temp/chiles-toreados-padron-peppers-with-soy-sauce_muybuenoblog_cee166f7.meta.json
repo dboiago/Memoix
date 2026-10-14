@@ -1,0 +1,51 @@
+{
+  "url": "https://muybuenoblog.com/padron-peppers-with-soy-sauce-chiles-toreados/",
+  "slug": "chiles-toreados-padron-peppers-with-soy-sauce_muybuenoblog_cee166f7",
+  "title": "Chiles Toreados (Padron Peppers with Soy Sauce)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T19:29:22.571Z",
+  "ldName": "Chiles Toreados (Padron Peppers with Soy Sauce)",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3",
+    "3 servings"
+  ],
+  "ldCuisine": "Mexican, Spanish",
+  "ldCategory": "Appetizer, Side Dish",
+  "ldKeywords": "chiles toreados recipe, pan-fried chiles, pimientos de padron recipe",
+  "ldIngredientsRaw": [
+    "10  padron peppers",
+    "2 tablespoon soy sauce",
+    "1 tablespoon butter",
+    "Sea salt for sprinkling"
+  ],
+  "ldInstructionsRaw": [
+    "Add butter to a hot frying pan, when the butter has melted add the peppers and drizzle with soy sauce.",
+    "Cook and stir the peppers until the skin is brown and blistered.",
+    "Remove the peppers from the pan, place on a plate and sprinkle with sea salt to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "54 kcal",
+    "sugarContent": "2 g",
+    "sodiumContent": "705 mg",
+    "fatContent": "4 g",
+    "saturatedFatContent": "2 g",
+    "carbohydrateContent": "4 g",
+    "fiberContent": "1 g",
+    "proteinContent": "2 g",
+    "cholesterolContent": "10 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 10 padron peppers",
+    "▢ 2 tablespoon soy sauce",
+    "▢ 1 tablespoon butter",
+    "▢ Sea salt for sprinkling"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

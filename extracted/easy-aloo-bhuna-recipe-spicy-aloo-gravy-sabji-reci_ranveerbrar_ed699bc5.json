@@ -1,0 +1,299 @@
+{
+  "recipe": {
+    "name": "Aloo Bhuna",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep heavy handi or pan, add oil. Once it's hot, add bay leaf, black peppercorns, green cardamom and let it splutter.",
+      "Add onion and sautÃ© until light brown in color.",
+      "Add coriander powder, turmeric powder and sautÃ© for a minute.",
+      "Add ghee, tomato and cook for 2-3 minutes.",
+      "Add curd, degi red chili powder, salt to taste and mix well.",
+      "Add baby potatoes, water and mix it well.",
+      "Cover it with the lid and cook for 8-10 minutes.",
+      "Once the potatoes are 80% cooked, add prepared gram flour mixture to thicken the gravy.",
+      "Finish it with some coriander leaves and transfer it to a serving bowl.",
+      "Garnish it with coriander sprig and chili oil.",
+      "Serve hot with roti.",
+      "In a pan, add salt to taste, cumin seeds, coriander seeds, black peppercorns, black cardamom, green cardamom, cloves, dry Kashmiri red chillies and dry roast it on medium flame or until the spices become fragrant.",
+      "Transfer it into a grinder jar and grind into a fine powder.",
+      "Keep aside for further use.",
+      "In a pan, add ghee, once it's hot, add green chillies, gram flour and sautÃ© until the rawness is gone.",
+      "Add carom seeds, prepared masala and mix well.",
+      "Turn off the flame and keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "8-9",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Potatoes",
+        "unit": "g",
+        "notes": "peeled & cut into half",
+        "amount": "700",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Gram Flour Mixture",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Aloo Bhuna",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Kashmiri Red Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gram Flour Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "2",
+        "section": "For Gram Flour Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gram Flour Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Gram Flour Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gram Flour Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "064fcd3cb542e4e22a3e945f7886419eee0b95e45c43007288b45989c8214411",
+    "lineage_hash": "ec718f3d6e715d84be5ae88f38048f5c7abf31c9ef90909da0c247689baea0cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-bhuna-recipe/",
+    "fetchedAt": "2026-08-02T12:20:31.788Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-bhuna-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

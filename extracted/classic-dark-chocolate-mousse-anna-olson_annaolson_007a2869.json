@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Classic Dark Chocolate Mousse",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate and butter in a metal bowl placed over a pot or barely simmering water, stirring gently until melted. Remove from the heat and allow to cool while preparing the other mousse components.",
+      "Whip the cream to soft peaks and stir in the espresso and brandy. Chill until ready to use.",
+      "In a clean bowl, whip the egg whites with the salt until foamy, then gradually add the sugar while continuing to whip the whites until they hold a soft peak when the beaters are lifted.",
+      "By now the chocolate should be cooled to just above room temperature. Fold the whipped cream quickly into the chocolate in 2 additions, then fold in the whites all at once (the mousse will be soft). Pour this into desired serving dishes and chill until set, about 3 hours. Top with chocolate shavings before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brewed Espresso",
+        "unit": "C",
+        "notes": "cooled",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Shavings",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ace715fe428d34dae093250c3e4cb05942fa522f46fbab38ecae0e5bebe6b2ec",
+    "lineage_hash": "c63530dcdc0cc24a436427e9f51992fdffb0aa178600a7004878da68ae1bdcfe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-dark-chocolate-mousse/",
+    "fetchedAt": "2026-08-01T19:16:04.359Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-dark-chocolate-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Papdi Chaat (बाज़ार जैसी बढ़िया पापड़ी चाट)",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add maida, wheat flour, gram flour, salt, carom seeds, ghee and mix properly until bread crumbs consistency.",
+      "Now add water little by little and knead medium hard dough. Cover and keep aside at least for 15-20 minutes.",
+      "After it's well rested properly, make proper portions of the dough and roll it thin but little thicker than roti.",
+      "Then cut it in small rounds with any round think and prick it with a fork.",
+      "Fry them in medium hot oil until golden brown and crispy. Remove on the absorbent paper and keep aside for further use.",
+      "In a serving plate place the prepared papdi and place the potatoes mixed with chaat masala & red chilli powder after that add chopped onion mixed with chopped mint leaves & coriander leaves.",
+      "Now add chopped tomatoes and a mixture of boiled brown chana & moong, add some curd on it and then add both green chutney & sweet and sour chutney.",
+      "Then sprinkle some dal mouth minutes or sev, a pinch crushed roasted cumin seeds and chaat masala.",
+      "Serve immediately.",
+      "In a blender jar add all the ingredients and blend it into a proper paste. Store in an air-tight container in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maida",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Papdi Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Papdi",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Potatoes",
+        "unit": "C",
+        "notes": "mixed with chaat masala & red chilli powder",
+        "amount": "½",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Big Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chana & Green Moong",
+        "unit": "C",
+        "notes": "boiled",
+        "amount": "¼",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet & Sour Chutney",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chutney",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Dal Mouth Mixture",
+        "unit": "C",
+        "notes": "alt: Sev",
+        "amount": "½",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4827d754336d072e06b5201fe0a35dce51d7e1f82e8ffb4c75a70cc259749ba6",
+    "lineage_hash": "2fabd0299805bfe740707165845bf4d62afb00ebfe0662ae8e931dc8ca5c11a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/papdi-chaat/",
+    "fetchedAt": "2026-08-01T23:23:05.496Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/papdi-chaat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

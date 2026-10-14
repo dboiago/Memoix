@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Chadon Beni Pesto",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the walnuts and almonds finely.",
+      "Wash the chadon beni leaves and place in a blender or food processor.",
+      "Add the nuts, cheese, garlic, salt and pepper.",
+      "Blend the ingredients while drizzling the olive oil to create a smooth consistency.",
+      "Serve immediately or refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni",
+        "unit": null,
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6a8a964e609555a16290a08164feb7c27612289856051b50de098423396e8c5",
+    "lineage_hash": "0faf98f0fb6061c2a64dbcc937c31f61ef480aa5f6ee4312486e85e5f9b667ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/chadon-beni-pesto/",
+    "fetchedAt": "2026-09-25T23:48:42.861Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/chadon-beni-pesto/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

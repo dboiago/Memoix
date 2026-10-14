@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/christmas-pudding-cocktail-recipe",
+  "slug": "christmas-pudding-cocktail-recipe_greatbritishchefs_5a9f5cc7",
+  "title": "Christmas Pudding Cocktail Recipe",
+  "byline": "by Josh Eggleton",
+  "fetchedAt": "2026-08-03T11:48:15.212Z",
+  "ldName": "Christmas pudding cocktail",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "50ml of Henry de Querville Calvados",
+    "25ml of Grand Marnier, infused with cinnamon and vanilla pod",
+    "ginger beer",
+    "1 dash of mulled wine syrup",
+    "ice cubes",
+    "1 star anise",
+    "1 cinnamon stick",
+    "1 handful of redcurrants",
+    "1 slice of dried orange crisp",
+    "1 vanilla pod, dried"
+  ],
+  "ldInstructionsRaw": [
+    "To make the mulled wine syrup, reduce 500ml of mulled wine in a small pan down to 200ml. Be sure to do this on a gentle simmer so the sugars in the mulled wine do not caramelise and burn",
+    "If necessary, strain out the spices and allow to cool before using. This can be stored in the fridge for up to 1 month",
+    "Fill a shaker halfway with ice cubes. Pour in the Calvados and infused Grand Marnier, seal with a lid or Boston Glass and shake well for 30 seconds",
+    "Fill the rocks glass to the top with ice cubes and using a Hawthorne strainer, pour the contents into the prepared glass",
+    "Top up with ginger beer and add a dash of the mulled wine syrup. You can garnish with the spices, redcurrants and orange crisp, or simply serve straight up"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

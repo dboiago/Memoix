@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Boiled Gyoza (Sui Gyoza)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "56",
+      "carbohydrateContent": "8",
+      "fatContent": "1.4",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Mix all the Sauce ingredients in a small bowl until the sugar dissolves.",
+      "Put the pork mince, prawns, choy sum, and the Flavouring ingredients in a bowl. Mix well until the mixture becomes sticky.",
+      "Place one gyoza wrapper on your palm. Dip your finger in water and run it around half of the wrapper’s edge to help seal it.",
+      "Place a lightly filled tablespoon of the filling in the centre of the wrapper.",
+      "Fold the wrapper in half and pinch it together in the middle of the arc.",
+      "Starting from the centre of the arc, make 4 pleats on one side, working outwards. Do the same on the other side of the arc. Repeat with remaining wrappers.",
+      "Boil dumplings, then transfer the cooked gyoza to a serving bowl.",
+      "Sprinkle a small amount of the cooking water from the pot over them.",
+      "Drizzle the Garlic Chives Soy-vinegar Sauce over the dumplings and serve while hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Prawns",
+        "unit": "g",
+        "notes": "chopped into about 5mm / 3⁄16\" cubes about ⅖ cup",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Choy Sum",
+        "unit": "C",
+        "notes": "finely chopped (about 50g / 1.8oz, note 1)",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gyoza Wrappers",
+        "unit": null,
+        "notes": "note 2",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour/corn Starch (to Dust Baking Tray)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": "Flavouring",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Flavouring",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Flavouring",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Sake",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Flavouring",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chives",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted White Sesame Seeds",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Garlic Chives Soy-vinegar Sauce (note 3)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bc1ed8c62a456eaad11b7efb6b347ea1cf9342852017909515b776129b8decd",
+    "lineage_hash": "64dcce97035ad6465d1faddfa0bfcf3cc70c38f321d6461ed0f23edb219a8145"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/boiled-gyoza-recipe-sui-gyoza/",
+    "fetchedAt": "2026-08-02T04:43:26.881Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/boiled-gyoza-recipe-sui-gyoza/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

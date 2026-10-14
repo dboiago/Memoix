@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Campbeltown Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker. Dry shake to emulsify. Add ice and shake again to chill. Strain into a glass (no ice) and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": "Ross recommends Springbank 15 yr",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drambuie",
+        "unit": "oz",
+        "notes": "15-year",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb8d12d71c305586709d6f4f35ffa52f61f552bc4799b37eecd3dcbf7f4d85fc",
+    "lineage_hash": "46f1a1dc3b719578fcab3202d0052d50ea4ea32f9436c8e8823f37594fda795e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campbeltown-sour/",
+    "fetchedAt": "2026-08-03T20:55:08.377Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campbeltown-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

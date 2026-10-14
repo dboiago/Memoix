@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "बेसन & मावा पेड़ा (2 Types Peda)",
+    "time": "30-35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai or pan, add the, once it’s hot, add gram flour and roast well for 7-8 minutes on low flame.",
+      "Add ghee and mix it well, add milk powder, desiccated coconut and cook it for 2-3 minutes.",
+      "Add milk in small batches and stir it with the help of whisk to avoid the lumps.",
+      "Add saffron water, castor sugar and cook it for a while until it binds well.",
+      "Finish it with the milk and cook it for a minute on medium flames.",
+      "Transfer it to a bowl, add cardamom powder and mix it well.",
+      "Keep it aside to cool down at room temperature.",
+      "Divide the mixture into lemon size balls and give it a desired shape.",
+      "Transfer it on a serving platter or dish.",
+      "In a pan, add sugar, water and cook well until it turns grainy in texture.",
+      "Transfer it to a bowl or tray and keep it aside to cool.",
+      "Sieve the sugar with the help of a strainer and keep it aside for further use.",
+      "In a kadai, add ghee, once it’s hot, add mawa and cook it well until mawa turns grainy or mixture starts leaving the pan.",
+      "Transfer it to a tray and keep it aside to cool down at room temperature.",
+      "Transfer it to a parat and knead it well until smooth.",
+      "Add prepared muscovado sugar and mix it well.",
+      "Divide the mixture into lemon size balls and give it a desired shape.",
+      "Make a thumb imprint on the peda and transfer it to a serving platter or dish.",
+      "Garnish it with green cardamom seeds and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "¼",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Besan Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Muscovado sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Muscovado sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mawa Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Mawa",
+        "unit": "kg",
+        "notes": null,
+        "amount": "½",
+        "section": "For Mawa Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "C",
+        "notes": "powdered",
+        "amount": "⅓",
+        "section": "For Mawa Peda",
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": null,
+        "notes": "powdered",
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ee4aaecc41b4372cffe34d78d51625101ae434d6cc9496f16f935a9c95f2e54",
+    "lineage_hash": "a14d8bd37439b271cb357d0dc6f12affadd5b3e48024b0ea81c8d4293d725d51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/2-types-peda/",
+    "fetchedAt": "2026-08-02T16:39:38.401Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/2-types-peda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chocolate chip, pumpkin and rye bundt cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter and flour a bundt cake pan. Preheat the oven to 180°C/gas mark 4",
+      "In a large bowl whisk together the pumpkin, vegetable oil, sugar, eggs, yogurt, vanilla extract, cinnamon and salt until smooth. Place both of the flours, salt and bicarb into a fine mesh sieve and sift into the bowl. Fold the dry ingredients in until a few floury streaks remain",
+      "Toss the chocolate chips in a tablespoon of flour then add them to the bowl and fold in briefly",
+      "Pour the batter into the cake tin and bake for 40-50 minutes until a skewer inserted into the centre of the cake comes out clean",
+      "Turn the cake out onto a wire rack and leave to cool. Dust with icing sugar and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "g",
+        "notes": "plain",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": "for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4ce806b150dbea582191f077aa58232163cde9eb6084cbea50ddbf16d9c9a7a",
+    "lineage_hash": "57839162ffdb05ebce29ec8a113a44a1127c27ec98b0064020a4736fdbedaf67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-pumpkin-bundt-cake-recipe",
+    "fetchedAt": "2026-08-03T23:05:29.881Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-pumpkin-bundt-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Cuddura Siciliana",
+    "time": "1 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the dough, mix the flour, sugar, suet and a pinch of salt in a large bowl. Gradually add water as necessary to obtain a smooth and elastic dough. Wrap in cling film and leave to rest for 30 minutes",
+      "On a floured wooden board roll the dough and cut out your favourite shapes. Brush with lightly beaten egg yolk and place the hard boiled egg in the middle, using offcuts of pastry to create cross 'straps' to hold the eggs in place. Decorate with sprinkles and bake for 20–30 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard boiled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprinkles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47dbe39c42f6d247623595850b1b140372da8d15977c868a0a94009d1826adda",
+    "lineage_hash": "a361b3e6358de3e4a2bb9fed4fac84c2fc247a9e34abb92e26ce054aff1b720c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cuddura-siciliana-recipe",
+    "fetchedAt": "2026-08-02T04:31:28.001Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cuddura-siciliana-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Crispy Corn Cheese Nuggets",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, add grated potato, sweet corn kernels.",
+      "Add bread crumbs, poha powder, green chillies,black pepper powder.",
+      "Add dried oregano, ginger, salt to taste, processed cheese and mix everything well.",
+      "Now, make a small bite size portion and give it any shape you desire.",
+      "Now make slurry in a bowl with refined flour, salt and water, mix it properly and the consistency should be medium thick (a thin coating).",
+      "Now dip the shaped nuggets in the slurry and then in a fresh bread crumb and coat it properly from all sides.",
+      "Heat oil in a kadai, dip one by one nuggets into the oil.",
+      "Fry from all the sides until golden brown in color and crisp."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "unit": "C",
+        "notes": "boiled, grated",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn Kernels",
+        "unit": "C",
+        "notes": "blanched, crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poha Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba5439915fcab5abce065c48c91d99d6f904753076e52ae44e732e2322148198",
+    "lineage_hash": "5b26a3a56c69f0f2b11dbe91d75928c6ca178cfd25c368828078831ac1abbcb8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-corn-cheese-nuggets/",
+    "fetchedAt": "2026-08-02T06:31:54.680Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-corn-cheese-nuggets/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

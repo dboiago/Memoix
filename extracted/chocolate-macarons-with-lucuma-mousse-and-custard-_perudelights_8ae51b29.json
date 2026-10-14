@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chocolate macaroons with lucuma mousse and custard",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Macaroons: Sift the dry ingredients, except the ½ tablespoon sugar.",
+      "Heat the oven to 250ºF.",
+      "Beat egg whites with ½ tablespoon sugar at high speed until it forms stiff peaks. Make sure the bowl is completely clean and dry, with no traces of fat or egg yolk because the whites won´t grow the way they should.",
+      "Fold the dry ingredients into the egg whites with a spatula. Pour in a piping bag and form small circles (2 inches, aprox.) in a baking sheet with parchment paper or silpat.",
+      "Bake for 15 minutes.",
+      "Lucuma mousse: Mix the gelatin with 1 tablespoon water in advance. Reserve. Before using, melt over very low heat.",
+      "Combine lucuma powder with condensed milk.",
+      "Whip the heavy cream at high speed until it is very thick, and add the melted gelatin.",
+      "Combine with the lucuma mixture and refrigerate for at least 3 hours.",
+      "Vanilla custard: With a wire whisk, beat the egg yolks until thick and pale. Add vanilla essence.",
+      "Meanwhile, boil the milk. Turn off the heat and add in a thin stream to the egg yolks, beating all the time.",
+      "Put back in the saucepan and cook over very low heat, stirring constantly until it begins to look thick.",
+      "Take off the heat, strain and let cool.",
+      "To serve: Put 2 macaroon halfs on each plate. Add 2 tablespoons lucuma mousse over them, and top with another macaroon half, like a sandwich.",
+      "Add a scoop of chocolate ice cream, and drizzle with vanilla custard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Powdered Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Macaroons",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Macaroons",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Macaroons",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Macaroons",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Macaroons",
+        "isOptional": false
+      },
+      {
+        "name": "Lucuma Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Lucuma mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Lucuma mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin",
+        "unit": "tsp",
+        "notes": "powdered, unflavored",
+        "amount": "½",
+        "section": "Lucuma mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "very cold",
+        "amount": "1",
+        "section": "Lucuma mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Vanilla custard",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Vanilla custard",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Vanilla custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla custard",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87ef7383daea03b3c0878d73052c91aab524cb728f2cc744a4d31bb2d1752d50",
+    "lineage_hash": "69c418eb19a08af0dd89a60294fa9be7033956891f8ec7e8c3dfafdfa86cb445"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/chocolate-macaroons-with-lucuma-mousse-and-custard/",
+    "fetchedAt": "2026-09-25T23:38:15.245Z"
+  },
+  "rawSource": "https://perudelights.com/chocolate-macaroons-with-lucuma-mousse-and-custard/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

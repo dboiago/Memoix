@@ -1,0 +1,54 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-olive-fried-rice/",
+  "slug": "chinese-olive-fried-rice_omnivorescookbook_cb7cf9b6",
+  "title": "Chinese Olive Fried Rice (橄榄菜炒饭)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T20:13:35.655Z",
+  "ldName": "Chinese Olive Fried Rice (橄榄菜炒饭)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "3 slices bacon (, chopped (*see footnote 1))",
+    "2  garlic cloves (, minced)",
+    "2  heaping tablespoons Chinese olive vegetables ((*see footnote 2))",
+    "1 teaspoon vegetable oil",
+    "4 cups cold steamed rice",
+    "1 teaspoon soy sauce ((or light soy sauce))",
+    "2  large eggs (, beaten)",
+    "1  small cucumber (, cubed (generates about 1 cup))",
+    "2  green onions (, chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Add bacon to a large nonstick pan and turn to medium heat or medium high heat (*see footnote 3). Stir and cook until golden and the fat is rendered.",
+    "(Optional) If the bacon you use is too fatty, you might get a lot of rendered fat. Remove some of the fat by dipping a paper towel into the pan with a pair of tongs. I personally like to leave a bit of bacon fat in the pan, which will make the rice extra flavorful.",
+    "Add garlic. Stir a few times until fragrant.",
+    "Add olive vegetables. Cook and stir until you can hear a vibrant sizzling. It might only take a few seconds if the pan is properly heated. Olive vegetables contain oil, so your pan should be greased and ready for the rest of the cooking. If you removed too much bacon fat earlier, you might want to add a small spoon of oil here, so the rice won’t dry out.",
+    "Add rice. Cook and chop the rice with a spatula until separated into grains and heated through. Swirl in soy sauce and stir to mix well. You should again hear vibrant sizzling, throughout the cooking, without burning the ingredients. Adjust heat accordingly and remove the pan from the stove if it’s getting too hot.",
+    "Move everything to one side of the pan. Add cucumber. Cook and stir for a few seconds to heat them.",
+    "Mix cucumber with the other ingredients, and move everything to one side of the pan.",
+    "Add vegetable oil and beaten egg to the other side of the pan. Wait until the bottom sets. Stir everything together. Carefully taste the rice. The cucumber should be cooked through and the rice slightly crisped. Add green onion, stir to mix well.",
+    "Serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 slices bacon , chopped (*see footnote 1)",
+    "2 garlic cloves , minced",
+    "2 heaping tablespoons Chinese olive vegetables (*see footnote 2)",
+    "1 teaspoon vegetable oil",
+    "4 cups cold steamed rice",
+    "1 teaspoon soy sauce (or light soy sauce)",
+    "2 large eggs , beaten",
+    "1 small cucumber , cubed (generates about 1 cup)",
+    "2 green onions , chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

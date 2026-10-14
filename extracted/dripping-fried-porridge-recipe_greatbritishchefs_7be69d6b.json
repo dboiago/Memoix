@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Dripping Fried Porridge",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the confit duck, mix the salt and sugar together and massage into duck legs. Set aside in the fridge for 2 hours",
+      "Rinse off the cure and dry the legs on kitchen paper",
+      "Add the duck legs to a vacuum bag with the duck fat, seal and cook in a water bath for 36 hours at 68°C",
+      "Remove the duck legs from the vacuum bag carefully (they will be very fragile), and allow to cool slightly before separating the meat from the bones and skin",
+      "Strain the duck fat left in the bag through a muslin cloth, and reserve for later",
+      "For the porridge, line a one litre container with greaseproof paper",
+      "Add the porridge oats, duck stock and leg meat (about 240g) to a pan, and cook over a low heat stirring constantly. When the mix thickens enough that it is pulling away from the sides of the pan in a homogenous mass, then tip into the prepared container",
+      "Place a sheet of greaseproof on top of the mix and weight down with something heavy and flat in the fridge overnight until set into a solid block",
+      "Take a jar of pickled walnuts, and add just the nuts to a food processor. Gradually add the pickling liquor, whilst blending, until it has achieved the consistency of a thick, smooth purée",
+      "Pass through a fine mesh sieve and set aside in a squeezy bottle",
+      "Slice the porridge into 2 inch × ½ inch pieces",
+      "Heat the reserved duck fat in a pan until almost smoking. Add the slices of porridge and gently turn to achieve a crisp exterior and deep brown colour",
+      "Remove the porridge from the pan, and drain on kitchen paper. Squeeze one line of the pickled walnut purée along the top of each piece of porridge and grate Isle of Mull cheddar liberally over the top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar of Pickled Walnuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isle of Mull Cheddar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69e1a8ce25bf2f6a74d0884dcb12904754459275eee40be9675d60ddab246a18",
+    "lineage_hash": "0bb0d5071c308caee28c88b4e5de84fb2000d32175c8555959369c8a7aef21c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dripping-fried-porridge-recipe",
+    "fetchedAt": "2026-08-02T02:38:19.969Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dripping-fried-porridge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

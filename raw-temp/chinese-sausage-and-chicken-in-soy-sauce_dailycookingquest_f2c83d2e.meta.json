@@ -1,0 +1,61 @@
+{
+  "url": "https://dailycookingquest.com/chinese-sausage-and-chicken-in-soy-sauce.html",
+  "slug": "chinese-sausage-and-chicken-in-soy-sauce_dailycookingquest_f2c83d2e",
+  "title": "Chinese Sausage and Chicken in Soy Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:09:40.344Z",
+  "ldName": "Chinese Sausage and Chicken in Soy Sauce",
+  "ldTime": "PT8H30M",
+  "ldPrepTime": "PT8H0M",
+  "ldCookTime": "PT0H30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Chicken",
+    "Pork"
+  ],
+  "ldIngredientsRaw": [
+    "4 (200 gram / 7 oz) Chinese sausages (Chinese: 腊肠 - lap cheong)",
+    "8-10 dried (40 gram / 1.5 oz) dried shiitake mushrooms",
+    "5-6 (600 gram / 20 oz) boneless skinless chicken thighs, cut into cubes",
+    "2 tablespoon oil",
+    "4 cloves garlic, minced",
+    "2 scallions, thinly sliced",
+    "1/4 cup water",
+    "1/4 cup shiitake soaking liquid",
+    "3 tablespoon dark soy sauce",
+    "1 tablespoon sugar",
+    "1 teaspoon ground white pepper/ground black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare Chinese sausage: Steam Chinese sausages in a steamer over medium-high heat for 5 minutes. Remove the sausages from the steamer and cut into thin slices diagonally.",
+    "Prepare shiitake mushrooms: Soak dried shiitake mushrooms in cold water overnight until soft and rehydrated. Gently squeeze the soaked mushrooms. Use a sharp knife to cut and discard the stems, then cut the mushroom caps into thin slices. Reserve the soaking liquid for the sauce.",
+    "Prepare the sauce: Mix 1⁄4 cup water, 1⁄4 cup shiitake soaking liquid, 3 tablespoons dark soy sauce, 1 tablespoon sugar, and 1 teaspoon ground white pepper.",
+    "Heat oil in a wok over medium-high heat. Sauté garlic for 2 minutes or until fragrant.",
+    "Add Chinese sausages and cook for 30 seconds, then add chicken and mushrooms and cook until chicken is no longer pink.",
+    "Pour the sauce into the wok and bring to a boil. Reduce the heat and simmer for 10-15 minutes, or until the chicken is fully cooked and the sauce has reduced.",
+    "Turn off the heat and stir in half of the scallions and mix well.",
+    "Transfer the dish to a serving plate. Garnish with the remaining scallions. Serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4 (200 gram / 7 oz) Chinese sausages (Chinese: 腊肠 - lap cheong)",
+    "8-10 dried (40 gram / 1.5 oz) dried shiitake mushrooms",
+    "5-6 (600 gram / 20 oz) boneless skinless chicken thighs, cut into cubes",
+    "2 tablespoon oil",
+    "4 cloves garlic, minced",
+    "2 scallions, thinly sliced",
+    "Sauce (mix the following ingredients)",
+    "1/4 cup water",
+    "1/4 cup shiitake soaking liquid",
+    "3 tablespoon dark soy sauce",
+    "1 tablespoon sugar",
+    "1 teaspoon ground white pepper/ground black pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

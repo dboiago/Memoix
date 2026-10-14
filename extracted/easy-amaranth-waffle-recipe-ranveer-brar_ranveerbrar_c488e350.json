@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Amaranth Waffle (राजगिरा वफ़ल)",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender jar combine amaranth flour, oats, banana, honey, melted butter, salt, baking powder, vanilla essence and blend till you get smooth homogenous batter.",
+      "Heat a waffle iron according to the instruction label. When it is hot, brush butter all over the waffle iron.",
+      "Pour 1/3 cup of batter and close the waffle iron lid.",
+      "Cook for 4-5 Open the lid and brush some butter on the waffles.",
+      "Open the lid carefully and remove the waffles.",
+      "Repeat till all the batter is used up.",
+      "Serve with banana slices and honey drizzled on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaranth Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": "medium",
+        "notes": "peeled",
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "melted, room temperature",
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "peeled & sliced",
+        "amount": "1",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95091cbc84e9fde154beb348eade80d9a9a49f11f2701cc2b56faef0df34a6ff",
+    "lineage_hash": "11f753d9c2f05eda0b8a10c7d08efcc440a6158aea8dcbbd1c594cb13b0ffdd1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/amaranth-waffle/",
+    "fetchedAt": "2026-08-02T02:49:35.501Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/amaranth-waffle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

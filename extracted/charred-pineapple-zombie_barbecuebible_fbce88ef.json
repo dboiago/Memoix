@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Charred Pineapple Zombie",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Reserved Charred Pineapple Piece",
+      "Fabbri Amarena or Luxardo Maraschino Cherry",
+      "Fresh Mint"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake well with 1 1/2 cups of crushed ice. Pour the drink and the ice into a Collins glass or tiki mug. Top with additional crushed ice as needed. Garnish with reserved charred pineapple piece, Fabbri Amarena or Luxardo Maraschino cherry, and fresh mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charred Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Rum",
+        "unit": "oz",
+        "notes": "recommended: Banks 5 Island, Panama-Pacific Blanco",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Puerto Rican Rum",
+        "unit": "oz",
+        "notes": "recommended: Don Q Gold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "151-proof Demerara Rum",
+        "unit": "oz",
+        "notes": "recommended: Lemon Hart 151, Hamilton Demerara 151",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Demerara Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66513350f0fd3b47188aee976c13eb11b6fc270b5d0f37935cdbd71768aeba6e",
+    "lineage_hash": "8037c975a9f232ce280c27fbdc8b3369fdb0cd79fe7e54a7cf00a9eb972e43fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/charred-pineapple-zombie/",
+    "fetchedAt": "2026-08-03T06:57:31.249Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/charred-pineapple-zombie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Coastal Connections",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker along with ice, shake, then double strain into the glass.",
+      "Penicillin SyrupMix together one part honey syrup (2:1 honey and hot water) and one part ginger syrup (2:1 white sugar and fresh ginger juice)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "High-proof Rye Whiskey",
+        "unit": "oz",
+        "notes": "Death & Co uses Wild Turkey 101",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oloroso Sherry",
+        "unit": "oz",
+        "notes": "Death & Co uses La Cigarrera",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Penicillin Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "836b6911af39efde7766cb4f232f575cf21d65cab5e8ec72f0db7683eb4152b1",
+    "lineage_hash": "c14b14a3669c7c0145df45ce8deba2654fc7dff7cf2d3f7bc6f997daf6bddf92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/death-and-co-coastal-connections/",
+    "fetchedAt": "2026-08-03T21:52:19.815Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/death-and-co-coastal-connections/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Chocolate and Hazelnut Torte",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the meringue. Using an electric whisk, whisk the egg whites in a large, clean bowl until they form stiff peaks. Start whisking on low speed, increasing to a higher speed once the whites begin to double in size",
+      "Gradually add the sugar, in tablespoonfuls, whisking all the time",
+      "When all of the sugar has been added, you will have a gorgeously glossy white meringue mixture. Test the mixture - if still grainy, carry on mixing until smooth. If you leave it grainy, when it goes into the oven, the meringues will leak sugar syrup during baking",
+      "Spoon the mix into circles marked on nonstick baking paper on a baking sheet, using a table knife to make gentle swirls",
+      "Bake for 30 minutes, then turn off the oven and leave the meringues to cool overnight in the oven. Crush into small pieces and reserve in a container with a tight lid",
+      "To make the ice cream, heat the milk and salt in a saucepan over medium-low heat and add the vanilla seeds and pod. Let it steep for 20 minutes. Reserve",
+      "Prepare an ice bath by setting a large bowl, enough to hold 2 litres of liquid, over a larger bowl partially filled with ice cubes and water. Set a strainer over the top bowl and set aside",
+      "In a separate bowl, whisk together the egg yolks and sugar until pale yellow and the sugar has dissolved. Gradually pour the warmed milk into the yolk mixture, whisking constantly",
+      "Pour the mixture back into the same saucepan you used to warm the milk. Cook for 5 minutes or until it reaches 80°C, constantly stirring until the custard thickens and coats the back of a wooden spoon",
+      "Strain the custard into the top bowl of the ice bath to stop the cooking process. Add the double cream and stir over the ice bath until cool. Cover the mixture tightly with cling film and chill thoroughly, preferably overnight",
+      "When the ice cream base is completely chilled, place in an ice cream maker and churn according to manufacturer instructions",
+      "Meanwhile, drain the cherries and pour the syrup in a small pan with the cherry powder and cook slowly over low heat until the powder dissolves. Set aside",
+      "Cut the cherries in half and reserve. When the ice cream has almost finished churning, stop the machine and add the syrup, the chopped cherries and the crumbled meringue, reserving some of the meringue for decoration. Continue to churn the ice cream until ready",
+      "Place the ice cream in a container and let it freeze overnight. Take out of the fridge 10 minutes before serving",
+      "Preheat the oven to 190°C/gas mark 5. Prepare a 25cm cake tin by lining with baking paper, greasing with butter and finally dusting with cocoa powder. Do not use a springform or loose-bottomed tin for this, as you will be baking the torte in a bain marie",
+      "Make the simple syrup by dissolving 200g of the sugar in 200ml of water over a medium heat. Set aside",
+      "Meanwhile, melt together the chocolate and butter in heatproof bowl set over a pan of simmering water. Set aside until needed",
+      "Beat the eggs with the rest of sugar until pale and quadrupled in volume, for about 10 minutes, then add the sugar syrup, melted chocolate and butter mix, coffee, a pinch of salt and the flour. Carefully fold the nuts and kirsch into the mixture",
+      "Place the mixture in the prepared cake tin and set the tin in a deep roasting tray. Top up the tray with water until it comes to just below the top of the pan - this will help it cook evenly. Cook until firm, for approximately 45-50 minutes",
+      "Allow to cool down completely before removing the torte from the tin. Dust with cocoa powder and decorate with cherries and serve with the cherry ice cream topped with some crushed meringue"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "organic",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "couveture 72%",
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "Tbsp",
+        "notes": "strong",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "toasted and broken up",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": "or other cherry liqueur, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": "organic",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "white",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amarena Cherries in Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Cherry Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "organic",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "25a0bd1666cca106fff4e3d7205ee63d9e0e4d4ae4fee0a6a1b750c5240b8748",
+    "lineage_hash": "075d87933fd16ac1c99068226cc76a37a8418bb99f72b70f18d1c7eeaa8cda29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-nut-torte-recipe",
+    "fetchedAt": "2026-08-03T14:38:29.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-nut-torte-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

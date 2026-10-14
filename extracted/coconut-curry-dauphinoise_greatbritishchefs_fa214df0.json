@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Coconut curry Dauphinoise",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a frying pan, add the onion slices and sauté for 10 minutes or so until they soften and begin to brown. Add your pastes and cook for a further 5 minutes before adding all your spices and salt. If you need to, add a couple of tablespoons of water to make sure the spices don’t burn",
+      "Peel your potatoes and slice them using a mandolin if you have one, otherwise slice them as finely as you can. Aim for them to be of an even thickness otherwise the potato will not cook evenly",
+      "Mix the coconut cream and stock together in a jug",
+      "Preheat the oven to 180°C fan/200°C/400°F/gas mark 6. Begin to layer your potatoes in an ovenproof dish as evenly as you can, aiming for four layers in total, and you want to divide your masala onion mix between these layers, finishing with a final layer of potatoes. Now pour in the coconut stock until the dish is full",
+      "Bake for 1 hour or until your potatoes are tender and the dish is bubbling"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced as finely as possible",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "tsp",
+        "notes": "heaping",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "tsp",
+        "notes": "heaping",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Floury Potatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": null,
+        "notes": "2 cans",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bbf0c6fed7355e9143f0921d62916538a2881b6d158c94f19b88ac327b47c8d",
+    "lineage_hash": "349b7ec52f43d4c24426c6e0538d43fd93cbec131a71397e478e986e69cd3858"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-curry-dauphinoise-recipe",
+    "fetchedAt": "2026-08-02T15:53:49.697Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-curry-dauphinoise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

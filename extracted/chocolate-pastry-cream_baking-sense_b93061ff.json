@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Chocolate Pastry Cream",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "132",
+      "carbohydrateContent": "15",
+      "fatContent": "7",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Place the milk, sugar and salt in a small sauce pan. Scrape the seeds from the vanilla bean and add the seeds and pod to the milk. Heat over medium high until scalding.",
+      "Meanwhile, in a large bowl use a hand whisk to combine the eggs, yolks and cornstarch until smooth.",
+      "Whisk the scalding milk into the egg mixture, then return the custard to the pan. Cook over low heat, stirring constantly, until the mixture thickens and just begins to boil.",
+      "Immediately strain the pastry cream back into a the bowl. Add the chocolate, butter and rum. Stir until the chocolate and butter are melted.",
+      "Cover with waxed paper or buttered parchment directly on the surface and cool to room temperature, chill several hours or overnight until completely cooled and set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/3 cup plus 1 tablespoon",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d34b985e78c3b88fef3f63d2747fd639e4d15b7344265b652b84d2961963ad08",
+    "lineage_hash": "8b2d643452ce8af62d764f93c067790c8ea898e1817a174dc1a985c54e3bd8f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/04/28/chocolate-pastry-cream/",
+    "fetchedAt": "2026-08-02T02:55:25.471Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/04/28/chocolate-pastry-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

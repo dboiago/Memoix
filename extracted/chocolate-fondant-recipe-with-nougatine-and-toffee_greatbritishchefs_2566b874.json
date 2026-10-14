@@ -1,0 +1,261 @@
+{
+  "recipe": {
+    "name": "Chocolate Fondant with Nougatine and Toffee",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the nougatine biscuit. Mix together the pectin and a small amount of the sugar in a small bowl. Boil together the milk, glucose, butter, and sugar in a heavy bottomed pan, and once the mix reaches boiling point, pour in the pectin and sugar, whisking continuously. Cook out until the mix reaches 106°C, stirring occasionally so that it cooks evenly",
+      "Remove from the heat and add the remaining ingredients to the pan. Stir to combine, then scrape out onto a silicon baking mat, taking care as the mixture will be very hot. Place another silicone mat on top and roll the mix out as thinly as possible. Leave to set at room temperature",
+      "To make the vanilla ice cream, place the cream, milk and vanilla in a pan and bring to the boil. In a separate bowl, whisk the egg yolks and sugar together until pale. Pour the contents of the pan over the egg and sugar mix, whisk to combine, then return back to the pan and cook to 82°C, stirring constantly",
+      "Pass through a fine sieve into a bowl set over ice. Allow to chill, then churn in an ice cream maker",
+      "To make the chocolate fondant, add the chocolate and butter to a heatproof bowl and set over a pan of gently simmering water (do not allow the base of the bowl to touch the water). Stir gently until the chocolate and butter have melted together to form and thick, smooth sauce",
+      "In a separate bowl, mix the eggs, egg yolks and sugar together, then fold into the chocolate and butter mix. Sift the four and gently fold into the mix until just incorporated",
+      "Butter and dust some fondant moulds with cocoa powder and leave to chill in the fridge. Carefully pour the mixture into each mould until two thirds full, and bake in the oven for 8-10 minutes",
+      "For the toffee sauce, place the sugar, both syrups and the butter in a thick-bottomed pan and heat gently to 160°C",
+      "Meanwhile, warm the cream in a separate pan until hot but not boiling. Slowly and carefully whisk the hot cream into the 160°C sugar mixture, stirring constantly until well combined",
+      "Pass through a sieve and allow to cool - the sauce should be dark in colour and taste slightly bitter",
+      "Remove the fondants, turn off the oven and allow the nougatine biscuits to warm through in the residual heat. Serve each fondant with a quenelle of the churned vanilla ice cream, nougatine biscuit and some toffee sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter for Greasing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a88fdb61a0b669b58e68a59f756bbee76604bc8719192e214bb5af8ce7c5e3d4",
+    "lineage_hash": "dd076a8df1f1c2a56b7601370b96c720ed02576c2c593778a078460d8865a12e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-nougatine-biscuit-toffee",
+    "fetchedAt": "2026-08-03T16:46:44.245Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-nougatine-biscuit-toffee",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

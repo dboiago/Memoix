@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Chinese Egg Cake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "45",
+      "carbohydrateContent": "7",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 180°C around 350°F.",
+      "Prepare a larger container and add half full warm water, then place your mixing bowl on the warm water. Add eggs and castor sugar. Whip at medium speed until light and fluffy. And then use low speed to remove some large bubbles. This step is the key of success and may take 12- 15 minutes until the mixture reach the ribbon stage.",
+      "Shift flour in. Then use a spatula to combine well. And lastly add oil and well combined too.",
+      "Prepare a mini 12 paper lined muffin tin mold and pour the batter in.",
+      "Bake at the middle rack for 15 minutes until the surface is well colored."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Eggs",
+        "unit": null,
+        "notes": "room temperature eggs",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": "sifted flour, 1 US cup",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "around 6 tablespoons+2 teaspoon",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "neutral oil without strong flavor",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water If in Super Cold Days",
+        "unit": null,
+        "notes": "for speeding up the whipping process, not required in summer days.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db251a40a84cff7c64b564e5594085b0e1eb2771aff67affc381820bed0126dd",
+    "lineage_hash": "a7c9100df2a171289d1e5fed4f91ae4545e9f7b9741e839ba2b1320d15536fc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-egg-cake/",
+    "fetchedAt": "2026-08-01T22:37:35.774Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-egg-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

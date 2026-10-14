@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Dim Sum Chicken and Shrimp Shu Mai",
+    "time": "2 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all filling ingredients, mix well, set aside in the fridge for at least 1 hour.",
+      "To fill the skins, put 1 tablespoon of filling in the center of each skin, gather all the corners to form a tiny pouch, fold the overhanging wrapper edges down, leaving the filling exposed. Press the wrapper firmly around the filling, then pat the bottom lightly to make it flat.",
+      "Prepare a steamer and line with either a parchment paper or some cabbage leaves to prevent the shu mai from sticking to the steamer basket. Steam for about 15 minutes, or until the meat is fully cooked. Serve immediately with some soy sauce and chili sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wonton Skins",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Shrimps",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jicama (or Water Chestnut)",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "dried, rehydrate in hot water for 1 hour, finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": "e.g. Shao Xing Hua Tiao Jiu",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "696e93edfdc434fa7dc98c04d0838508c6e4b71a389cf05374d7457f65a5711e",
+    "lineage_hash": "468c873a0ecd7fb340fb96581e4b01fe822762a98c3ed5725c021c8200d21c79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/dim-sum-chicken-and-shrimp-shu-mai.html",
+    "fetchedAt": "2026-08-02T11:54:34.529Z"
+  },
+  "rawSource": "https://dailycookingquest.com/dim-sum-chicken-and-shrimp-shu-mai.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

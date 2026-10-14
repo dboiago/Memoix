@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Candied Citron",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and dry the citrons, then cut them into 1/2-inch (2cm) cubes. Put the pieces in a large saucepan, cover with a sufficient amount of water so it won’t boil away, and blanch the citron pieces in barely simmering water for 30 to 40 minutes, until they’re translucent.",
+      "Drain the citrons, then put 3 cups (600g) of sugar, the 2 cups (500ml) water, and the corn syrup (if using) in the pan with the citron pieces.",
+      "Attach a candy thermometer to the side of the pot and cook the citron until the temperature reaches 230ºF. (110ºC) (If you don’t have a candy thermometer, you can cook the citron until the syrup is quite thick and almost all gone, being careful not to burn the fruit pieces.)",
+      "During the final minutes of cooking, if the citron pieces are sticking to the bottom of the pan, gently stir them from time to time with a heatproof spatula or spoon to prevent burning.",
+      "Once done, turn off the heat and let the citron pieces sit in the syrup for one hour.",
+      "You can preserve the candied citron in the syrup in the refrigerator for at least one year. Or you can let the peel sit in the strainer for a couple of hours, stirring it occasionally, to let as much of the syrup drip away as possible. (The syrup can be reserved and used to add to sparkling water for homemade soda.)",
+      "When done, toss the pieces of citron in sugar and let sit on a wire rack overnight to dry out. Then shake off the excess sugar, reserving it for another baking project, like lemon curd, marmalade, or ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Citrons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "600g, plus 1 cup (100g) for tossing the finished fruit",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "500ml, plus additional water for blanching the citron pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3cbd1dea1b8d18030ae2ddbbf81a29a72538e6ee77303595ddce1204bd0eeb6",
+    "lineage_hash": "5523676d991ae5e2535573a2e17c1f683cbb087aa23346773d0afc3e5982809e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/candied-citron-recipe/",
+    "fetchedAt": "2026-08-02T20:46:56.005Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/candied-citron-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

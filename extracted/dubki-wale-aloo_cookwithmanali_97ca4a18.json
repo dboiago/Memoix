@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Dubki Wale Aloo",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "68",
+      "carbohydrateContent": "7",
+      "fatContent": "3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Heat 1 tablespoon of mustard oil to a pan. Heat the oil really well else you will get a bitter taste. Once the oil is really hot, add cumin seeds and methi seeds. The seeds will sizzle right away.",
+      "Add hing, chopped ginger and dried red chilies and saute for few seconds. [Crush the red chilies before adding them to make the curry spicy, if you want to keep it less spicy add the chilies right away, without crushing them]",
+      "Add the boiled and crushed potatoes.",
+      "Also add turmeric powder, amchur, garam masala powder and kashmiri red chili powder. Mix and cook for 30 seconds.",
+      "Add water, salt and give a good stir. Lower the heat to medium.",
+      "Let the curry simmer. Take a potato masher, and mash the potatoes a little. You don't need to completely mash them but they should be quite crushed.",
+      "As the curry is simmering, dissolve 1 teaspoon of cornstarch in 1-2 tablespoons water and add to the curry. The curry will thicken a bit.",
+      "The curry should simmer for around 15-20 minutes in total or till all flavors come together. Add chopped cilantro and remove pan from heat.",
+      "Serve dubki wale aloo with khasta kachori or with any paratha of your choice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "alt: 2 medium, boiled and crushed a little",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Methi Seeds",
+        "unit": "tsp",
+        "notes": "also known as fenugreek seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing Powder",
+        "unit": "tsp",
+        "notes": "also known as asafoetida",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili",
+        "unit": null,
+        "notes": "dried, broken",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur Powder",
+        "unit": "tsp",
+        "notes": "also known as dry mango powder",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "dissolved in 1-2 tablespoons water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6683ae4a542e6fb8f591df5b10db11fa4d3a353c60b8d6aaf4775a387561cdaa",
+    "lineage_hash": "a95fb3f6ba48c0e72d6de4414ad18ee8c1f3bfdac78c96f91c2b73edbc6bb643"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dubki-wale-aloo/",
+    "fetchedAt": "2026-08-01T17:07:12.983Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dubki-wale-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

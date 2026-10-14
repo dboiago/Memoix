@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Chinese Cucumber Salad",
+    "time": "7 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "113",
+      "carbohydrateContent": "10",
+      "fatContent": "7",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "For long English cucumber, wash the cucumber and peel off tough skins. For small cucumber, remove the two ends.",
+      "Smash with a wide kitchen knife (like Chinese slicing knife) until the cucumber is well crushed. Then cut into one bite pieces.",
+      "Transfer all cucumber cubes into a bowl. Mix well with mashed garlic, salt and sugar.",
+      "Or further add light soy sauce and vinegar to make a more strong version.",
+      "Or add chili oil for a hot version."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "fresh, or two smaller ones, around 350g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "mashed and then chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil to Taste",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed471b608e73691c54b354084ab7e891db8427e95dd8d715c23173ec7a50dff4",
+    "lineage_hash": "c44a3948e30a07f56b1e8694eeee8014857abc48e0bd829ea8969e0b97fbe6ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-cucumber-salad/",
+    "fetchedAt": "2026-08-01T20:16:56.726Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

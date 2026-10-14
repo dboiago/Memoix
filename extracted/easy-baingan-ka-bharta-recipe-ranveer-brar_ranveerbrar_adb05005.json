@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Baingan Ka Bharta (Eggplant Bharta)",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take a two medium size eggplant and give a slit and embed garlic, roast it on high flame. apply some oil.",
+      "Keep turning the eggplant after 2-3 minutes so it is evenly cooked . roast till the eggplant become soft.",
+      "Peel the skin from the roasted eggplant.",
+      "Chop the cooked eggplant finely.",
+      "In a kadai, heat oil add mustard oil, onion and ginger and saute well till translucent.",
+      "Add green chilli, turmeric powder, red chilli powder and salt to taste and saute well.",
+      "Add tomato and mashed eggplant and cook for 2-3 minutes.",
+      "Garnish with coriander leaves.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggplant",
+        "unit": null,
+        "notes": "mideam size",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "tsp",
+        "notes": "to brush",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big",
+        "unit": null,
+        "notes": "chopped tomato",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Eggplant",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9a3cd2f6b29962ccfeb09978ac58101cd2b8ae29f6006027897ce62efe41990",
+    "lineage_hash": "b54ef2fea83393efe04728aab60da924d834a7288a57924638aecebac841881b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baingan-ka-bharta/",
+    "fetchedAt": "2026-08-02T05:09:34.896Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baingan-ka-bharta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

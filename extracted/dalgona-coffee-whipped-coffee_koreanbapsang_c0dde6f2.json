@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Dalgona Coffee (Whipped Coffee)",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": "Cup",
+    "garnish": [
+      "Broken Up Dalgona Candy"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the coffee, sugar and hot water to a large bowl.",
+      "Whip it with a hand mixer until the mix turns to light caramel color and frothy, about 3 to 4 minutes. Start at a low speed and increase to a higher speed after the coffee and sugar are dissolved. Scrape down the sides with a rubber spatula once or twice during whipping. Or, whisk it vigorously by hand with a whisk (or spoon). This will take much longer, depending on how thick you want your whipped coffee to be.",
+      "Fill up a cup with about a ⅔ to ¾ way up with milk along with some ice cubes, if desired, and top it with the whipped coffee. A rubber spatula works great to scrape it off from the bowl. You can use warm milk if you want."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Instant Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f67e6c4f8d85bd40436396ec701dbb2d8860462036bfe94e54ef09ad086289d2",
+    "lineage_hash": "52315051e8a48d3e40ae5a7e1088d7d5bb48a76e687a6783ffb78b7543102ab9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dalgona-coffee-whipped-coffee/",
+    "fetchedAt": "2026-08-01T21:42:04.311Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dalgona-coffee-whipped-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

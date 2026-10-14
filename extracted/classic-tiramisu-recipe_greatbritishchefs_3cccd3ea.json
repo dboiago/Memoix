@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Tiramisu",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the egg yolks, vanilla sugar and vanilla essence together in a bowl, over steaming hot water until pale and doubled in volume. Whisk together the mascarpone, double cream and marsala together until thick. Whisk the two mixtures together",
+      "Make up the dip for the sponge fingers. Dissolve the vanilla sugar with the hot espresso then add the coffee liqueur and brandy. Dip the sponge fingers into the coffee mixture, so that they evenly absorb the liquid. You want the sponge fingers to absorb as much liquid as possible without turning soggy",
+      "Line the base and sides of a large bread tin with a strip of baking parchment long enough to hang over at the ends. This will enable you to easily lift the Tiramisu out of the tin to serve. Aim to make 3 layers of mascarpone and 3 layers of biscuits with 8 sponge biscuits on each layer",
+      "Start with a layer of biscuits, sprinkle over a little dark chocolate and a dusting of cocoa.  Spread a layer of the mascarpone mixture all over. Arrange 8 more sponge biscuits on top, more chocolate and cocoa, then another layer of mascarpone and another layer of biscuits, then the last of the chocolate and some more cocoa. Finish with a mascarpone layer and sift on the remaining cocoa powder",
+      "Chill and leave to set in the fridge for at least a couple of hours. The Tiramisu improves over time and is very good served the next day",
+      "To serve take it out of the tin using the baking parchment tails, serve on an oblong white serving dish cut into thin slices"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marsala Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sponge Fingers",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Coffee",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Liqueur",
+        "unit": "Tbsp",
+        "notes": "or chocolate liqueur",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "peeled into curls",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "for dusting",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1203b5520cf52b3faa2b94422de3e67af0905e49acb486735513813fd082cbd8",
+    "lineage_hash": "82b89d49408386ae14b59fb8d6bc852f7f13a9dd9b2f5d17bd8fa986091e7663"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-tiramisu-recipe",
+    "fetchedAt": "2026-08-03T11:43:38.825Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-tiramisu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

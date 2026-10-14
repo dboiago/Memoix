@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-blancmange-with-mango-carpaccio",
+  "slug": "coconut-blancmange-with-mango-carpaccio_lacucinaitaliana_76771b33",
+  "title": "Coconut Blancmange with Mango Carpaccio",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-02T17:30:18.009Z",
+  "ldName": "Coconut Blancmange with Mango Carpaccio",
+  "ldTime": "PT170M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cocco,Mango",
+  "ldIngredientsRaw": [
+    "1 mango",
+    "2/3C. milk",
+    "1/2C. sugar",
+    "1/3C. cream, whipped",
+    "1/4C. coconut flour",
+    "1 1/2SHEETS gelatin",
+    "2 egg whites"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1  of mango",
+    "2/3 C. of milk",
+    "1/2 C. of sugar",
+    "1/3 C. of cream, whipped",
+    "1/4 C. of coconut flour",
+    "1 1/2 SHEETS of gelatin",
+    "2  of egg whites"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

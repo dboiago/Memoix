@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Bitter Giuseppe Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together in a mixing glass with ice until chilled. Strain into a rocks glass over a single large ice cube and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "Cole uses Carpano Antica",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "037d702b9c31ce8be06cfb03e09d2f3485276d0a3d584cc84defe79b344ca242",
+    "lineage_hash": "bf8712a5cb9ebf503e64a5ffed3bbf38423cbd049eea86f7490066ea3300e6da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-giuseppe-cocktail/",
+    "fetchedAt": "2026-08-04T01:33:15.735Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-giuseppe-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

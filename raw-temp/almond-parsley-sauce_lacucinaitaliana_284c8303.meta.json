@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/almond-parsley-sauce",
+  "slug": "almond-parsley-sauce_lacucinaitaliana_284c8303",
+  "title": "Almond Parsley Sauce",
+  "byline": "by  Editorial staff   March 17, 2020",
+  "fetchedAt": "2026-08-03T08:25:46.611Z",
+  "ldName": "Almond Parsley Sauce",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Mandorle,Salsa,Salse",
+  "ldIngredientsRaw": [
+    "2/3C. extravirgin olive oil",
+    "2OZ. almonds, blanched",
+    "1 1/2OZ. parsley (leaves only)",
+    "2TBSP. vinegar",
+    "3 small pickles",
+    "2 tsp. mustard",
+    "1 hardboiled egg white",
+    "Salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Blend the parsley with the other ingredients until you obtain a nice, bright green sauce.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2/3 C. of extravirgin olive oil",
+    "2 OZ. of almonds, blanched",
+    "1 1/2 OZ. of parsley (leaves only)",
+    "2 TBSP. of vinegar",
+    "3  of small pickles",
+    "2  of tsp. mustard",
+    "1  of hardboiled egg white",
+    "Salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

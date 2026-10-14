@@ -1,0 +1,68 @@
+{
+  "url": "https://omnivorescookbook.com/crispy-fried-pumpkin-salted-egg-yolk/",
+  "slug": "crispy-fried-pumpkin-with-salted-egg-yolk_omnivorescookbook_05dc69b9",
+  "title": "Crispy Fried Pumpkin with Salted Egg Yolk",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T21:35:18.800Z",
+  "ldName": "Crispy Fried Pumpkin with Salted Egg Yolk",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1 lb (450) peeled pumpkin or winter squash (, cut into 2”x1/2” (5 cm x 1 cm) sticks)",
+    "1/2 teaspoon salt",
+    "1/4 cup cornstarch",
+    "1 cup canola oil ((or vegetable oil))",
+    "1 clove garlic (, minced)",
+    "2  salted duck yolks (, cooked (*Footnote 1))",
+    "1 teaspoon Shaoxing wine",
+    "1/2 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Place the pumpkin in a deep plate. Sprinkle with the 1/2 teaspoon salt. Toss with your hands to coat the pumpkin evenly with salt. Let it rest for 15 minutes.",
+    "Crush the cooked yolks with a fork in a small bowl, until they are very well crumbled.",
+    "Drain off the liquid from the pumpkin and transfer it to a big bowl. Add the cornstarch and toss to coat completely.",
+    "Prepare a large plate and top it with a few layers of paper towels. Or prepare a medium-sized baking tray with a wire rack.",
+    "Heat the oil in a large skillet over medium-high heat until hot. Add the coated pumpkin. Cook until the bottom turns crisp, about 2 to 3 minutes. Flip the pumpkin to cook the other side, for another 2 to 3 minutes, until it turns crispy throughout and cooked through.",
+    "Turn off the heat. Transfer the cooked pumpkin using a spider strainer or a slotted spoon to the prepared plate (or rack) to drain the excess oil.",
+    "Remove the extra oil and only save 1 tablespoon of oil by either pouring the oil into a heat-proof bowl, or using a big ladle.",
+    "Turn the heat to medium-low. Add the garlic and fry until fragrant, 30 seconds or so.",
+    "Add the crumbled salted yolk. Cook and stir until it is thick and foaming but not browning, a few seconds.",
+    "Pour in the Shaoxing wine. Cook and stir until the liquid is mostly evaporated.",
+    "Add the fried pumpkin back to the pan and sprinkle the sugar over it. Stir everything together for 1 minute, or until the pumpkin pieces are evenly coated with the yolk. Transfer to a plate immediately.",
+    "Serve hot as a side dish or over steamed rice as a main."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 g",
+    "calories": "194 kcal",
+    "carbohydrateContent": "18.1 g",
+    "proteinContent": "2.7 g",
+    "fatContent": "13.1 g",
+    "saturatedFatContent": "1.8 g",
+    "cholesterolContent": "105 mg",
+    "sodiumContent": "312 mg",
+    "fiberContent": "3.4 g",
+    "sugarContent": "4.6 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb (450) peeled pumpkin or winter squash , cut into 2”x1/2” (5 cm x 1 cm) sticks",
+    "1/2 teaspoon salt",
+    "1/4 cup cornstarch",
+    "1 cup canola oil (or vegetable oil)",
+    "1 clove garlic , minced",
+    "2 salted duck yolks , cooked (*Footnote 1)",
+    "1 teaspoon Shaoxing wine",
+    "1/2 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

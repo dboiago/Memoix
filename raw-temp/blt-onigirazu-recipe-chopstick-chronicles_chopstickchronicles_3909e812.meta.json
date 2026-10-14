@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chopstickchronicles.com/blt-onigirazu/",
+  "slug": "blt-onigirazu-recipe-chopstick-chronicles_chopstickchronicles_3909e812",
+  "title": "BLT Onigirazu Recipe - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T20:00:16.144Z",
+  "ldName": "BLT Onigirazu おにぎらず",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Rice, Snack",
+  "ldKeywords": "#BLT onigirazu, #onigirazu, #rice sandwich",
+  "ldIngredientsRaw": [
+    "2 rice bowls cooked rice",
+    "2 sheets Nori (seaweed sheets)",
+    "2 slices rindless short cut bacon",
+    "2  eggs  (fried into a flat sheet and cut to size)",
+    "2 leaves lettuce"
+  ],
+  "ldInstructionsRaw": [
+    "Cook the rice and the other ingredients and set aside",
+    "Toast the seaweed very lightly (be careful not to burn it) and place it on a sheet of cling wrap.",
+    "Evenly, and thinly spread half a bowl of cooked rice on top of the seaweed",
+    "Place the cooked egg on top of the rice.",
+    "Then place the cooked bacon on top.",
+    "Place the pieces of lettuce on top.",
+    "Place the rest of the rice on top of the other ingredients.",
+    "Fold two sides of the seaweed to the centre.",
+    "Fold the remaining two sides to close the sandwich",
+    "Wrap the sandwich with the cling wrap",
+    "Leave it for while to make the seaweed sheets settle",
+    "Cut the rice sandwich in half and serve"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "338 kcal",
+    "carbohydrateContent": "39 g",
+    "proteinContent": "20 g",
+    "fatContent": "6 g",
+    "cholesterolContent": "12 mg",
+    "sodiumContent": "6 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 rice bowls cooked rice",
+    "▢ 2 sheets Nori seaweed sheets",
+    "▢ 2 slices rindless short cut bacon",
+    "▢ 2 eggs  fried into a flat sheet and cut to size",
+    "▢ 2 leaves lettuce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

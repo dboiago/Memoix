@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Aloo Rawa Bonda (आलू रवा बोंडा)",
+    "time": "40-45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add rawa, curd and mix everything properly then keep aside for further use.",
+      "In a pan heat oil and add mustard seeds, gota urad, ginger, green chillies, curry leaves, asafoetida, turmeric powder, degi red chilli powder and saute for half a minute.",
+      "Now add water and stir it for a few seconds then add mashed potatoes, salt and mix everything properly then continue cooking for a minute on medium heat.",
+      "Then add chopped corn kernels and stir it once then remove in a bowl and let it cool down a little bit.",
+      "Now add the rawa mixture, coriander leaves, dry rawa and a mixture of oil and baking soda then mix everything properly.",
+      "Heat a pan with oil then add a spoonful of the mixture in the pan and press it a little bit then cook it from both sides until golden brown and crispy. Repeat this process with a rest of the mixture.",
+      "OR can be made using an appam mould by an adding spoonful of mixture and then cooking it from all sides until golden brown and crispy.",
+      "Serve hot with salad and green chutney.",
+      "In a bowl mix sliced onions, fresh coriander leaves then keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Gota Urad",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly torn",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & mashed",
+        "amount": "4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Corn Kernels",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Few Coriander Leaves",
+        "unit": null,
+        "notes": "roughly torn",
+        "amount": "0",
+        "section": "For Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b4aa77dafb7e4d6ae4e7524abfe46ad150d432e34866561ee9b049030feca81",
+    "lineage_hash": "ad461457af20c2c9640a31466f863d0c0ea9e9a138551a842747d5ee7f4ad942"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-rawa-bonda/",
+    "fetchedAt": "2026-08-02T07:00:06.604Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-rawa-bonda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

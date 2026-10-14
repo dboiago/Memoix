@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Arroz con Leche (Spanish Rice Pudding)",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "329",
+      "carbohydrateContent": "51.38",
+      "fatContent": "8.45",
+      "proteinContent": "11.25"
+    },
+    "directions": [
+      "Rinse the rice under cold water, and then put it in a saucepan.  Pour in enough milk to barely cover the rice, then place over medium heat.",
+      "Add the cinnamon stick and lemon rind , and stir continuously until all of the milk is absorbed.",
+      "Add the rest of the milk about ½ cup (120 ml) at a time, stirring between each addition until all the milk is absorbed.",
+      "Once all the milk is added, taste to see if the rice is cooked to your liking.  Some like it al dente, while others like it almost mushy.",
+      "When the rice is cooked, remove the rice from the heat, and add a pinch of salt and the ground cinnamon. Add the sugar a few tablespoons at a time until it is sweet enough for you.",
+      "Serve warm or cold with a garnish of cinnamon on each dish.  Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Short Grain Rice Arroz Bomba",
+        "unit": "C",
+        "notes": "alt: arborio",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wide Slices Lemon Rind",
+        "unit": null,
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "alt: full-fat coconut milk",
+        "amount": "4¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c85ae91aed0933c2d4d5a3e3acb75a15c034f39d86b016fe7604382db3bc537b",
+    "lineage_hash": "cef1e6628e096db7504a9bf47b7a60daffe48cae66df5b835d5e9a265397f4c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/antonias-arroz-con-leche-recipe/",
+    "fetchedAt": "2026-08-02T08:32:51.174Z"
+  },
+  "rawSource": "https://spanishsabores.com/antonias-arroz-con-leche-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

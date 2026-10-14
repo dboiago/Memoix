@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Austrian Goulash Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the sunflower oil in a large pot (don’t use a non-stick pot for this recipe or the onions won’t brown), add the chopped onions and fry until nicely browned.",
+      "Take the pot off the flame, then add the mild and hot paprika spice, mild chilli powder and vinegar and stir in the beef cubes until fully coated. Add 250g of water to help with this process. You can dial up the Goulash’s spiciness by replacing the mild paprika with hot paprika.",
+      "Put the pot back on the flame. Add the bay leaves, caraway seeds, garlic, lemon zest and salt. Stir and simmer for about 5 minutes.",
+      "Add one litre of hot water to the pot, cover and simmer on a low heat for about an hour or more. Stir every now and then to ensure the stew doesn’t burn or catch on the bottom of the pot.",
+      "Add the potato cubes and top up with more water to ensure everything is covered.",
+      "Simmer for a further 30 minutes.",
+      "In the meantime, mix the cornflour with 5 tbsp water in a small bowl, then add to the pot. This will thicken the liquid of the stew.",
+      "Finally, add the Wiener sausages and simmer for a further 10 minutes.",
+      "Add more salt and vinegar to taste if required.",
+      "Serve with chives and some dark rye bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Paprika Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Paprika Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "alt: balsamic vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Quality",
+        "unit": "g",
+        "notes": "very lean stewing beef, cut into 1 cm cubes",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes",
+        "unit": "g",
+        "notes": "peeled and cut into 1 cm cubes",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wiener (frankfurter) Sausages",
+        "unit": null,
+        "notes": "cut into 0.5 cm slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "finely sliced to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "931b9a0da61ef74b45a937dc18e6507f49842aed2d4da86135145ea2213ce51a",
+    "lineage_hash": "7358c1ff0a4f3a43a4f42d2be32bf70ad28e0e63ac161a997011fe848e3f5d8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2016/07/austrian-goulash-soup-recipe/",
+    "fetchedAt": "2026-08-01T19:26:09.584Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2016/07/austrian-goulash-soup-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

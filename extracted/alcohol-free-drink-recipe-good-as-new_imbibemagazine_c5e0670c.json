@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Good As New",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the grapefruit juice, lemon juice, orgeat and simple syrup in shaker and shake with ice until cold. Strain into a highball glass over ice. Top with soda water. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grapefruit Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "15f505d6168f34a664a43ca7d0896096878d6971bd5c1f7fcf75dd80616302c9",
+    "lineage_hash": "f46c95a3bdb94ef68e5069132cf3871c8b2e227667031b651d3df39ee073a9e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alcohol-free-drink-recipe-rhythm-blues/",
+    "fetchedAt": "2026-08-03T22:53:02.767Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alcohol-free-drink-recipe-rhythm-blues/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

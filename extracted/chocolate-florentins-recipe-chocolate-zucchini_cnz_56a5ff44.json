@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chocolate Florentins",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F), and line a cookie sheet with parchment paper (or use a silicon tray for mini-tartlets or petits fours).",
+      "In a medium mixing bowl, combine the fruits, almonds, and nuts.",
+      "In a medium saucepan over low heat, heat the butter, cream, sugar, and maple syrup until the sugar is completely melted and the mixture is just simmering.",
+      "Whisk in the flour. Fold in the fruits and nuts with a wooden spoon.",
+      "Use two spoons to form small mounds of this mixture on the cookie sheet. Flatten the tops slightly.",
+      "Put into the oven to bake for 10 to 12 minutes, until golden. Transfer to a rack to cool.",
+      "When the florentins have completely cooled, melt the chocolate in a double boiler (or in a heatproof bowl set over a pan of simmering water).",
+      "Dip the bottom of the florentins in chocolate, holding them carefully by the sides, and leave on a sheet of parchment paper or a feuille guitare (a special sheet of food-safe plastic that chocolate makers use to ensure a shiny finish to the chocolate) until set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fruits",
+        "unit": "g",
+        "notes": "orange rind, apricots, raisins, dried blueberries..., dried, or candied fruits",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slivered Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Other Nuts",
+        "unit": "g",
+        "notes": "pistachios, hazelnuts..., chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": "or honey",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cced33d66dc23b56a8735d4416bcdd9f2a6287c4cade81d52fe956939bcbe2e2",
+    "lineage_hash": "260a45f4fa9dbf5d39090966c141d1a6f99ae452973cdc888b842d0edf74f82f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/florentins-recipe/",
+    "fetchedAt": "2026-09-30T19:19:18.222Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/florentins-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

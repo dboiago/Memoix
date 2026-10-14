@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Capo Lavoro",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Crushed Ice"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the cold-brew concentrate and Cappelletti in a glass. Fill halfway with crushed ice and stir to chill. Add club soda and top with more crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Coffee Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cappelletti",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cbcbe783632fb5697165a58be61cff63eb6db68c3d806846539e7577daf85392",
+    "lineage_hash": "983805f2bb3ad94b904eef67a2fb61f9ad3c41d4f49813bda2174b39e63a7ecc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/capo-lavoro-coffee-cocktail/",
+    "fetchedAt": "2026-08-03T17:55:31.744Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/capo-lavoro-coffee-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

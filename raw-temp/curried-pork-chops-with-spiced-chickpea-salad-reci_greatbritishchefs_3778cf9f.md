@@ -1,0 +1,3 @@
+This dish is inspired by _chana chaat_, a street food salad popular in India, Bangladesh, Pakistan and Nepal. Chickpeas (_chana_) are mixed with red onion, tomato, chilli, cucumber and plenty of fresh herbs and seasoned with lemon juice and chaat masala (a spice blend used in all chaat dishes) to create a very fresh and healthy salad.
+
+It is very important to take the time to slowly render down the pork fat so you end up with a delicious golden crust on the chops. Ensure you buy organic pork (you'll really notice the difference in flavour) and select chops no thinner than an inch thick, otherwise the meat can dry out before the fat fully renders.

@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Broccoli Mac and Cheese Soup",
+    "time": "25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, fry onions and garlic.",
+      "Add the potatoes and carrots, and mix. Then add 2 c of broth to cover, simmering until potatoes are soft (around 15 mins).",
+      "Transfer soup into blender and blend. Then transfer back into the pot.",
+      "Blend 1 c of broth, cashews, nutritional yeast, paprika, ground mustard, lemon juice, miso paste and tomato paste until smooth. Add mixture into the pot and mix.",
+      "Lastly, combine the streamed or roasted broccoli and cooked macaroni and mix. Add salt and pepper to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "150g, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "small",
+        "notes": "400 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "450g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": "700ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": "C",
+        "notes": "70g, soaked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "Tbsp",
+        "notes": "15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": "15g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Servings of Macaroni",
+        "unit": null,
+        "notes": "cooked",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "head",
+        "notes": "250g, steamed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b935f5ad61da2652b989f39dc410b4d54ed247fd07fd489a0f76b80c21e6c76",
+    "lineage_hash": "0f6a2bb7dc961914a293b1e5fae62420bff93486fd53195f7af80281ce603226"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/broccoli-mac-and-cheese-soup/",
+    "fetchedAt": "2026-09-25T19:19:51.542Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/broccoli-mac-and-cheese-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Coconut Cream Pie",
+    "time": "5 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "626",
+      "carbohydrateContent": "48",
+      "fatContent": "47",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Pulse the graham cracker crumbs, sugar and coconut in a food processor. Add the melted butter.",
+      "Pour the crumbs into a pie plate and use a flat heavy object to press the crumbs into the pan.",
+      "Use your fingers to press the crust up the sides of the pan.",
+      "Bake until the crust is golden brown.",
+      "Sprinkle chopped white chocolate over the warm crust and allow it to melt.",
+      "Spread the chocolate over the crust.",
+      "Sprinkle coconut over the white chocolate.",
+      "Whisk together the eggs and cornstarch in a medium bowl.",
+      "Add scalding hot coconut milk to the eggs then return them to the pan to cook just until the custard begins to boil.",
+      "Strain the custard into a bowl with the butter and optional rum.",
+      "Pour the cream into the prepared pie plate.",
+      "Chill the pie for at least 4 hours to set the custard filling.",
+      "Spread whipped cream over the filling and sprinkle with more coconut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "5",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut",
+        "unit": "oz",
+        "notes": "1 cup, divided, shredded",
+        "amount": "3",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": "chopped fine",
+        "amount": "4",
+        "section": "Coconut Graham Cracker Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Canned Coconut Milk",
+        "unit": "oz",
+        "notes": "2 ½ cups",
+        "amount": "20",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "5 tablespoons",
+        "amount": "1¾",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "2 tablespoons, optional",
+        "amount": "1",
+        "section": "Coconut Rum Pastry Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "154af2bf6ee7d866ab1c73278463045f9fc4e1758bb4182b149a07607e5ca681",
+    "lineage_hash": "75d1553e81252108eff3a0dbbccde379099c94173358fd59c77e15229a8c6b3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/03/20/coconut-cream-pie/",
+    "fetchedAt": "2026-08-02T05:01:35.532Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/03/20/coconut-cream-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

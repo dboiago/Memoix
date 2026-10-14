@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Christmas Steamed Sponge Pudding",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Generously grease the inside of a 1.2 litre (2 pint) pudding basin. Pour the golden syrup into the base and arrange the orange slices on the base and sides",
+      "Place the butter and sugar in an electric mixer and beat until light and fluffy",
+      "Gradually add the beaten egg to the butter and sugar mixture, beating well between each addition",
+      "Sift the flour and spice into the bowl and fold in the breadcrumbs, chopped fruit, orange and lemon zest and juice with a large metal spoon (don’t worry if the mixture curdles)",
+      "Spoon the mixture into the prepared pudding basin and smooth the top",
+      "Cut out a large circles of buttered baking paper and foil (approximately 30cm/12 inches wide). Place one on top of the other and and create a 2.5cm/1 inch pleat down the middle",
+      "With the foil uppermost and buttered baking paper underneath, place on top of the pudding basin. Tie the foil and baking paper tightly around the bowl using a long piece of string. Trim away any excess paper and foil, leaving about 5cm/2 inches of foil and paper around the sides of the bowl. Tie a piece of string over the top to act as a handle",
+      "Place a small heatproof plate upside down in the bottom of a large saucepan and put the pudding basin on top. Pour in enough boiling water so that it comes halfway up the basin",
+      "Cover and steam for 2 hours over a medium heat, topping up with more boiling water as necessary",
+      "Turn out onto a plate, drizzle with the extra syrup and serve with cream or ice-cream. The pudding will keep for up to 5 days in the fridge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "1 juiced and zested, 1 cut into thin slices to decorate",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": "plus extra to drizzle",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened, plus a little extra for greasing",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": "light",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "medium, beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": "ready-to-eat, chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": "ready-to-eat, chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53ecf0c80e3c3117c1c823598bdeb75ab091458f13a2fdbe7d9175d46ca4d993",
+    "lineage_hash": "38986fbc785886a60af5efaa704676539436470f1ad7bc399eb4e4ad04dd916f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-steamed-sponge-pudding-recipe",
+    "fetchedAt": "2026-08-03T11:53:01.624Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-steamed-sponge-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

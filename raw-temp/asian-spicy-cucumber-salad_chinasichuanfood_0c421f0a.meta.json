@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chinasichuanfood.com/asian-spicy-cucumber-salad/",
+  "slug": "asian-spicy-cucumber-salad_chinasichuanfood_0c421f0a",
+  "title": "Asian Spicy Cucumber Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T08:50:01.960Z",
+  "ldName": "Asian Spicy Cucumber Salad - Suo Yi Cucumber",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "3  Persian Cucumber or 1 Japanese (or English Cucumber)",
+    "3  garlic cloves (minced)",
+    "2  dried chili pepper (cut into sections (or you can choose to use pepper flakes))",
+    "2 tbsp. hot oil (heat until smoky)",
+    "! Sauce",
+    "2 tbsp. black vinegar",
+    "1 tbsp. light soy sauce",
+    "1 tsp. sugar",
+    "1 tsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Place a pair of chopsticks and then add the cucumber in the middle. Hold the knife perpendicular to the chopsticks, then start slicing from one end of the cucumber to the other, stopping when you reach the bottom chopstick. You can cut the cucumber into smaller sections for better serving or leave it as a fun to break them when eating.",
+    "Place the cut cucumbers in a bowl and sprinkle with 1/2 tsp salt. Mix well. Let sit for 10 minutes. This salt treatment will draw out excess moisture.",
+    "Gently squeeze the cucumber to remove the extra liquid.",
+    "Combine the minced garlic, chili flakes, sugar, soy sauce, vinegar, and sesame oil in a small bowl.",
+    "Heat 1 tbsp cooking oil in a small pan or wok until smoky hot. Carefully pour the hot oil over the garlic and dried chili pepper. The hot oil will help release the aromas of the seasoning mix.",
+    "Pour the mixed sauce to serving plate. Serve immediatly."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "177 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "1 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.1 g",
+    "sodiumContent": "414 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 Persian Cucumber or 1 Japanese or English Cucumber",
+    "3 garlic cloves minced",
+    "2 dried chili pepper cut into sections (or you can choose to use pepper flakes)",
+    "2 tbsp. hot oil heat until smoky",
+    "! Sauce",
+    "2 tbsp. black vinegar",
+    "1 tbsp. light soy sauce",
+    "1 tsp. sugar",
+    "1 tsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Asian Crème Caramel",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the thai red chilli in water along with salt.",
+      "Heat the sugar in a heavy bottomed pan, pour the boiled chilli water on the top of the sugar evenly.",
+      "Allow to melt, do not stir to avoid crystallization.",
+      "Once done, divide the prepared caramel sauce into the moulds evenly.",
+      "Heat milk in a deep pan, add sugar along with vanilla extract to the hot milk.",
+      "Mix and stir until the sugar dissolves. Meanwhile, on another side boil water with kaffir lime and lemon grass, reduce to half. Add in the condensed milk, mix and cook for 3-4 minutes.",
+      "Strain the mixture into the milk.",
+      "Mix well and lower the flame, allow the temperature of the milk to come down a little.",
+      "Transfer the milk to an ice bath and whisk in the eggs, strain the mixture. The creme pudding mix is ready.",
+      "Pour the prepared pudding mixture into the caramel lined molds.",
+      "Prepare a water bath in a baking tray & place the molds in it.",
+      "Bake for about 40 minutes at 165 degree. Note: the water shouldnât come to a boil.",
+      "Remove from the oven, allow to cool down a little and refrigerate it.",
+      "Invert on a serving plate, garnish with thai red chillies and serve cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thai Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "0",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Chilli",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": "For Crème Pudding",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27a6b930d476779d5d2e22c26b1db95fea3336639d72fcd4f8c358c5b12d229c",
+    "lineage_hash": "5e442e807c4d237f81dcd07355d7f047ce11d8b9fc47de752a84569af0697854"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/asian-creme-caramel/",
+    "fetchedAt": "2026-08-02T19:55:57.950Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/asian-creme-caramel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

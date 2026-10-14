@@ -1,0 +1,225 @@
+{
+  "recipe": {
+    "name": "Bison Steak Tatanka Tacos",
+    "time": "18 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "320",
+      "carbohydrateContent": "38.34",
+      "fatContent": "16.18",
+      "proteinContent": "10.09"
+    },
+    "directions": [
+      "Drizzle olive oil in an iron skillet and place it over medium-high heat.",
+      "In a small bowl, combine salt, pepper, and ground coffee and then coat steak well on both sides.",
+      "Cook steak 3 minutes, turn over and cook other side for an additional 3 minutes for medium-rare. Cook an additional minute on each side for medium.",
+      "Allow steak to rest for 5 minutes before slicing.",
+      "Place avocado, garlic, cilantro, jalapeño, crema, and salt. Blend until creamy.",
+      "Combine cabbage, and onion in a large bowl. Combine the remaining ingredients in a separate bowl and then pour over the cabbage mixture and stir. Cover and refrigerate for at least 2 hours before serving. Drain before serving.",
+      "To serve, place sliced beef on top of a tortilla, followed by a dollop of avocado crema, red cabbage slaw, and sprinkle with green onions.",
+      "I love my steaks medium-rare, and I recommend not cooking bison steaks past medium doneness, leaving some pink. If you cook your steak too quickly or well-done, it will become tough and chewy.",
+      "As long as you cook it to medium doneness (or less), you will be left with an amazingly tender, delicious steak. Just make sure that your steak hits an internal temperature of 145F for food safety.",
+      "If you are unable to get a hold of bison beef I highly recommend replacing with grass-fed organic beef top sirloin."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bison Top Sirloin",
+        "unit": "oz",
+        "notes": "or grass-fed organic beef top sirloin",
+        "amount": "4",
+        "section": "Top Sirloin",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Top Sirloin",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Top Sirloin",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Top Sirloin",
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "3",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juiced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Red Cabbage Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": "large",
+        "notes": "pitted and peeled",
+        "amount": "2",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": null,
+        "amount": "1",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juiced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": "rough chopped",
+        "amount": "1",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Avocado Crema",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": "Tacos",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": "Tacos",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "74c38d5c78ea0350ed04800f127b57c0ae542150ad03b70dddcb6b59313d705a",
+    "lineage_hash": "d1f65aef44bb27fe423629533adc96e629b98a73c288b553e4cc47b261858bdf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/tatanka-tacos/",
+    "fetchedAt": "2026-08-01T21:23:31.365Z"
+  },
+  "rawSource": "https://muybuenoblog.com/tatanka-tacos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

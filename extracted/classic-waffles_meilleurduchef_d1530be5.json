@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Classic Waffles",
+    "time": "1 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Waffles recipe, make sure you have organised all the necessary ingredients.",
+      "Tip the flour in a bowl.",
+      "Add the sugar, salt, baking powder...",
+      "... and the eggs.",
+      "Combine with a whisk, gradually incorporating the flour...",
+      "... and adding the water.",
+      "The preparation should be smooth, homogeneous and free of lumps.",
+      "Add the melted butter when it's lukewarm. Combine well.",
+      "Add the flavour of your choice (vanilla, kirsch or rum). Set aside at room temperature between 30 minutes and 1 hour.",
+      "Turn the waffle maker on and grease the plates with a brush.",
+      "Transfer the batter into a jug with pouring spout. This way, it will be easier to pour the batter directly on the plates. Fill the cavities with the batter.",
+      "Make sure you fill each grid completely up to the rim to make regular waffles. Cook for a few seconds...",
+      "... then close the top part...",
+      "... and flip so the batter is evenly distributed between the four plates.",
+      "Cook for about 2 minutes, then lift the top part and check whether the waffles are ready. Cook further if the batter is still pale.",
+      "Gently detach the waffles from the plates, using the tip of a knife.",
+      "Trim the edges with a knife...",
+      "... and cut in the middle to detach each waffle.",
+      "Drizzle some icing sugar over the waffles before serving.\nWaffles are also delicious with honey, jam, chestnut spread, chocolate spread, Chantilly whipped cream, maple syrup, ice cream or fresh berries...\nEnjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sachet of Baking Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sachets of Vanilla Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Vanilla Extract (or Rum, Kirsch...)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7dc1c53e2c42cb2a36de18e74d94b7f02a81cb387f4b8fb3e58b5f9523a9e1de",
+    "lineage_hash": "efb94da5aee97f7624fafbcedeccf564cea56a412f444e7207417d3557b02999"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/classic-waffle.html",
+    "fetchedAt": "2026-08-02T10:35:25.755Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/classic-waffle.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

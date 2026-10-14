@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Salad with Creamy Dressing",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "376",
+      "carbohydrateContent": "27.7",
+      "fatContent": "17.3",
+      "proteinContent": "27.7"
+    },
+    "directions": [
+      "Combine all the ingredients for the dressing in a mason jar. Shake until it is well mixed. Let it sit for 10 to 15 minutes while preparing other ingredients. If not serving immediately, store the dressing in the fridge for up to a week.",
+      "Add romaine lettuce, red cabbage, carrots, chicken, cherry tomatoes, and green onion in a large bowl.",
+      "Right before serving, pour in the salad dressing and toss to mix well.",
+      "Garnish with chow mein noodles, if using.",
+      "Serve immediately as an appetizer or a light main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "3",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "*Footnote 2",
+        "amount": "2",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Natural Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "or agave syrup",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "yield about 2 teaspoons, minced",
+        "amount": "2",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Head Romaine Lettuce",
+        "unit": "small",
+        "notes": "yield about 4 cups, chopped",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "head",
+        "notes": "yield about 2 cups, shredded",
+        "amount": "¼",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Big Carrots",
+        "unit": null,
+        "notes": "yield about 2 cups, sliced to thin strips",
+        "amount": "2",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "rotisserie chicken or leftover chicken, shredded",
+        "amount": "2",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": "halved",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Crunchy Chow Mein Noodles",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro for Garnish (optional)",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5681fb7b4f827bb7443fe89dd3d1c2199cea6a15227ad50b2dd38e69d225acc7",
+    "lineage_hash": "9f757f0c46d352e3d0c7bcbf242c74eb38addbbc976f1b2d57936a96f9e2cf2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-chicken-salad/",
+    "fetchedAt": "2026-08-01T17:30:08.411Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-chicken-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

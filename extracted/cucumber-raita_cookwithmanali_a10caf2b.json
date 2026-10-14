@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Cucumber Raita",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "131",
+      "carbohydrateContent": "12",
+      "fatContent": "6",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Before, you start peel the cucumber and grate it using a grater.To a bowl add plain milk yogurt and whish it until smooth. To that now add, chaat masala, kala namak, cumin powder and salt. Mix until spices are well combined with the yogurt.",
+      "Then add the grated cucumber to the yogurt and mix.",
+      "Stir in the chopped mint leaves and mix.",
+      "Garnish with mint and serve cucumber raita as a side with any Indian meal or with biryanis and pulao. You may sprinkle some cumin powder on top before serving. I also sprinkle some kashmiri red chili powder for presentation."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "whole milk plain yogurt, 360 grams",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "medium",
+        "notes": "300 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kala Namak",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f0a10de589cf039bee51f5f6cd5ed3ceaa0e072f8ec1c3f3d3b8856e74c199b",
+    "lineage_hash": "bd03884d92d41c0bcabf2927a79385fcb8a79fbcb72c908cd47965564dab553f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/cucumber-raita/",
+    "fetchedAt": "2026-08-02T00:20:34.827Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/cucumber-raita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

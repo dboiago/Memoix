@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Denver Steak with Pink Onion Salsa",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the pink pickled onions. Add the finely sliced onions to a bowl and whisk together the vinegar, water, salt, sugar and pink peppercorns. Pour this mixture over the onions, then chill in the fridge, leaving to quick-pickle for at least an hour",
+      "Mix 200g of the pink pickled onions with the rest of the salsa ingredients (except the olive oil) in a bowl and season well with salt and pepper. Drizzle in the olive oil, stirring, until you’re happy with the consistency (you might like it quite thick, in which case you won’t need all of it). Set aside",
+      "Put a frying pan over a medium-high heat and add the vegetable oil. Season the steaks liberally with salt and pepper",
+      "When the pan is smoking hot, carefully lay the steaks in it. Leave to cook undisturbed for 2 minutes",
+      "Flip the steaks over and add the butter, rosemary, thyme and garlic cloves. Baste the steaks for another minute or so, then use a temperature probe to check the internal temperature. Once they reach 55°C, transfer them to a tray and leave to rest for 5 minutes",
+      "Slice the steaks against the grain and serve topped with the pink pickled onion salsa and a scattering of pink peppercorns"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Denver Steaks",
+        "unit": null,
+        "notes": "300g each, patted dry and at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Fresh Thyme",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "bashed in their skins",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "pinch",
+        "notes": "to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "ml",
+        "notes": "white wine or cider",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pink Peppercorns",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "large",
+        "notes": "deseeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d86c2153368b2a978826fb884989155cf4bacccf1b4177fbbc35c5e0fb118533",
+    "lineage_hash": "528c333da31e0ecc827b5ec40debf9d895809cc3c3fae6bf22b921aff52b4730"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/denver-steak-pink-onion-salsa-recipe",
+    "fetchedAt": "2026-08-01T22:22:19.621Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/denver-steak-pink-onion-salsa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

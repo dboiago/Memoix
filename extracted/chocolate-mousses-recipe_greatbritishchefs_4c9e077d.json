@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousses",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the crème pâtissière, which will form the base of the mousse. Heat the milk and vanilla pod in a heavy-based saucepan until it simmers, then take off the heat",
+      "Whisk the egg yolks and sugar to thin ribbon stage, then whisk in the flour",
+      "Pour and whisk the milk into the egg yolk mix, and return to a clean, heavy-based saucepan",
+      "Place the pan on the heat and stir constantly, but do not allow to boil. Keep stirring for 2-3 minutes, until the custard coats the back of the spoon. Squeeze the gelatine leaf to drain, then whisk it into the mixture until dissolved. Remove from the heat",
+      "Melt the dark chocolate pellets over a large pan of simmering water, ensuring the bowl does not touch the surface of the water.",
+      "Add half of the crème pâtissière and the whisky to the chocolate and mix well to combine. Remove from the heat and allow to cool to room temperature",
+      "Whisk the double cream until thickened, but be careful not to overwhip or the cream will separate. Use a large spoon to fold the cream into the chocolate custard mixture",
+      "Repeat steps 5-7, this time using the white chocolate pellets and Cointreau",
+      "Pour the dark chocolate mousse into the base of a terrine-shaped container until half full and level out the surface with a palette knife",
+      "Next, pour over the white chocolate mousse to fill the terrine and level the surface once more. \r\nPlace in the fridge and allow to set overnight. Once set, serve with your choice of puréed fruit"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "softened in cold water for 10 minutes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Pellets",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Pellets",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63aa50188e604c4cfdab9c62102b1980b5544ac31cdcc4c1e29590d8960c1c07",
+    "lineage_hash": "6b05cd824c4a52d581218c146bb2673f8053c2a4e0568557b215baae246ac3bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousses-recipe",
+    "fetchedAt": "2026-08-03T22:07:15.172Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousses-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

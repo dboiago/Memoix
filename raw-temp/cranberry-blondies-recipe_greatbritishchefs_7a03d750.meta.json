@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cranberry-blondies-recipe",
+  "slug": "cranberry-blondies-recipe_greatbritishchefs_7a03d750",
+  "title": "Cranberry blondies recipe",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T19:31:02.095Z",
+  "ldName": "Cranberry Blondies",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "250g of white chocolate",
+    "250g of butter",
+    "150g of dried cranberries",
+    "100g of plain flour",
+    "1 tsp baking powder",
+    "280g of caster sugar",
+    "5 eggs"
+  ],
+  "ldInstructionsRaw": [
+    "Roughly chop the chocolate and butter and add to a heatproof bowl",
+    "Line a baking tray with parchment paper. Preheat the oven to 200°C/gas mark 6",
+    "Slowly melt the chocolate and butter in the bowl over a pan of gently simmering water, making sure the mixture does not burn",
+    "Meanwhile, sift the flour and baking powder into a separate bowl and mix in the sugar",
+    "Remove the bowl of melted chocolate and butter from the pan. Stir well using a spatula, then pour into the bowl of dry ingredients. Continue stirring until the mix is smooth and shiny with no lumps",
+    "In a separate bowl, lightly whisk the eggs then add to the chocolate mixture along with the cranberries, mix well until combined",
+    "Pour the mixture into the lined tray and bake for 20-25 minutes. The edges will be set but the centre should still be slightly soft",
+    "Remove the blondie from the oven and allow to cool in the tray for an hour or so before cutting into 25 rectangles and serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

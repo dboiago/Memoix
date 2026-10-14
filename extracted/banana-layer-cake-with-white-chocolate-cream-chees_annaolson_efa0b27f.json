@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Banana Layer Cake with White Chocolate Cream Cheese Frosting",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease the bottoms of three 8-inch (20 cm) round cake pans and line them with parchment paper. Dust the sides of the pans with flour, tapping out any excess.",
+      "Sift the flour, sugar, baking powder, baking soda, cinnamon and salt into a large bowl or the bowl of a stand mixer fitted with the paddle attachment.",
+      "In a separate bowl, whisk the bananas with the oil, buttermilk, eggs and vanilla. Add all at once to the flour mixture and beat using electric beaters or the mixer at low speed until no flour is visible. Increase the speed to medium-high and beat until pale, light and fluffy, about a minute. Divide the batter between the pans (it is fluid enough that it will settle into place) and bake for about 30 minutes, until a tester inserted in the centre of a cake comes out clean.",
+      "Cool the cakes in their pans on a cooling rack for 20 minutes and then turn them out of the pans onto the rack to finish cooling.",
+      "For the frosting, melt the white chocolate by stirring it gently in a metal bowl placed over a pot of barely simmering water (medium-low heat) until smooth. Set aside to cool for 5 minutes.",
+      "Using electric beaters or a stand mixer fitted with the paddle attachment, beat the cream cheese and butter. Add ½ cup (65 g) icing sugar and beat at medium-low speed until smooth. Add the white chocolate and vanilla and beat in. Add the remaining icing sugar and blend first at medium-low until smooth and then at medium-high for about a minute to fluff up the frosting.",
+      "To assemble the cake, place the first layer onto a cake stand or plate. Spread a third of the frosting onto the cake so that it covers the top of the cake completely. Top with the second cake layer and repeat with another third of the frosting. Top with the final cake layer. Spread the remaining frosting to cover the top, then use your spatula to create swirls and swishes as you wish. Chill, uncovered, for at least 2 hours to set, before covering if storing longer. The cake will keep, uncovered, in the fridge for up to 3 days. Once cut, place a piece of parchment or plastic wrap directly on the cut surface of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake and Pastry Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Very Ripe Bananas",
+        "unit": "C",
+        "notes": "about 3 large",
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "White Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "divided, sifted",
+        "amount": "1",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "abed8eeec21549705fa1b285dbc876aaa973cd4a311c0c3e09823ab4a2111e61",
+    "lineage_hash": "a90a544289e1851c27c8095986959fdd6907f25bbb9fa8519cb04d64984f15da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/banana-layer-cake-with-white-chocolate-cream-cheese-frosting/",
+    "fetchedAt": "2026-08-01T16:30:30.865Z"
+  },
+  "rawSource": "https://annaolson.ca/project/banana-layer-cake-with-white-chocolate-cream-cheese-frosting/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

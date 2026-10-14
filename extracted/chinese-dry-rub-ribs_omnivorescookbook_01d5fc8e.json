@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chinese Dry Rub Ribs",
+    "time": "14 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "328",
+      "carbohydrateContent": "5.5",
+      "fatContent": "20.1",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "(Optional) Remove the membrane from the back of the ribs by slicing the edge with a knife, then pull off the membrane sheet using your hand.",
+      "Combine the rub ingredients in a small bowl and mix well. Sprinkle evenly all over the ribs, front, back and sides. Gently pat and rub in the spice using your hands. Cover with plastic wrap and marinate overnight in the fridge.",
+      "Preheat the oven to 300°F (150°C). Line a baking sheet with foil or parchment paper for easy cleaning. Place a rack on top.",
+      "Place the marinated ribs on the rack. Cover with a large piece of foil that’s enough to cover the baking sheet. Fold the foil along the edges of the baking sheet to seal the ribs.",
+      "Bake covered for 2 hours.",
+      "Remove the baking sheet from the oven and carefully remove the foil. Turn on the boiler to 550°F (280°C). Broil for 8 to 10 minutes, or until the surface of the ribs are charred. You should stay close to the oven during the time and check on the ribs from time to time, to prevent it from burning.",
+      "Once done, remove the baking sheet and let it rest for 10 minutes. Carve the ribs and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack (about 3 Lbs / 1.4 Kg) St Louis Ribs",
+        "unit": null,
+        "notes": "or baby back ribs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "Tbsp",
+        "notes": "or paprika for less spicy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": "or 1/2 tablespoon ground Sichuan peppercorns",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f0a2b52814352eb940cafa6d9b3afe5fb3f767120d8873f0c3d762150a7876fb",
+    "lineage_hash": "ffd241db065db0f069407153071063177cc42e1a6352a4138be6422f56b3c564"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/oven-baked-five-spice-ribs/",
+    "fetchedAt": "2026-08-01T19:17:37.631Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/oven-baked-five-spice-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

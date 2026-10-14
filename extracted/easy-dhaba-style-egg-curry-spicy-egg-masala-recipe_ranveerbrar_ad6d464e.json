@@ -1,0 +1,311 @@
+{
+  "recipe": {
+    "name": "Dhaba style Egg Curry",
+    "time": "30-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add tomatoes, ginger, green chillies, oil, tender coriander stems, curd, degi red chili powder and coriander powder.",
+      "Transfer it to a mixer grinder jar and grind it to a smooth paste.",
+      "Keep it aside for further use.",
+      "In a mortar pestle, add green chilies, garlic, ginger and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In a handi, heat oil, add cumin seeds and let it splutter.",
+      "Add prepared ginger garlic paste, onions and sauté it until golden in color.",
+      "Add prepared paste and cook it for a while until thick.",
+      "Add prepared masala and sauté it well.",
+      "Add water, salt to taste, sauteed eggs, tomato, capsicum, dry fenugreek leaves and let it simmer for a while until cooked well.",
+      "Finish it with some coriander leaves, egg yolk and rest it aside for a while.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti.",
+      "In a bowl, add coriander seeds, green cardamom, black peppercorns and salt to taste.",
+      "Transfer it to a mixer grinder jar and grind it to a fine powder.",
+      "Keep it aside for further use.",
+      "In a pan, heat oil, add boiled eggs and fry it for a minute.",
+      "Add degi red chili powder and cook it well for 2-3 minutes.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¼",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "2",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly sliced",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "½",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "1",
+        "section": "For Dhaba Style Egg Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Egg",
+        "isOptional": false
+      },
+      {
+        "name": "No. Eggs",
+        "unit": null,
+        "notes": "hard boiled",
+        "amount": "8-9",
+        "section": "For Sauteing Egg",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauteing Egg",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbac3b3f1a8889f641e7df8020f1c1772940c98c4a7d2910b2e639e1cb60854d",
+    "lineage_hash": "82dfd4e3c338586358f9a62b0afd7c8435a1afabc937882e8b1b5a44bef0f01c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-egg-curry/",
+    "fetchedAt": "2026-08-02T16:25:46.243Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-egg-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

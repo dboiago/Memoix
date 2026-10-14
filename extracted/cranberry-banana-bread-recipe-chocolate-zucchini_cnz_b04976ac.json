@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cranberry Banana Bread",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F). Grease a 9 by 5 inch (22 by 12 cm) loaf pan.",
+      "Cream the butter and sugar together in a food processor. Add in the eggs one by one, mixing well between each addition. Add in the banana slices, the cranberries, the water and the vanilla extract. Mix again until blended, but not too much : it’s nice if the banana and cranberries are not completely mushed.",
+      "Sift together the flour, baking powder, baking soda, salt and cinnamon. Add the dry ingredients into the batter, and mix until just combined — do not overmix.",
+      "Pour the batter into the pan and bake for approximately 55 min or until the top of the cake is nicely brown and a cake tester comes out clean.",
+      "Let rest for ten minutes, then run a knife around to loosen the sides, remove from the pan, and transfer to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a53cdbb69a5161e3761a20a86fa209bc505d9553e4a4b6bac7bf8a60c3ab5fb",
+    "lineage_hash": "e1bf51c1e091724def11af5e68649881acc70c9957cbe03e2da9d341942ea3f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/cranberry-banana-bread-recipe/",
+    "fetchedAt": "2026-09-30T18:36:04.734Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/cranberry-banana-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

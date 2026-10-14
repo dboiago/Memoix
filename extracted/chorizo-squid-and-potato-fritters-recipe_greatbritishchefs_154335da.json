@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chorizo, Squid and Potato Fritters",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the aioli, place the saffron in a small bowl and pour over 20ml of boiling water. Allow to infuse and cool for 5 minutes",
+      "Place the egg yolks, garlic and cooled saffron water in a small blender (or use a hand blender) and blitz until smooth. Blend in the lemon juice and salt, then, with the blender still running, slowly drizzle in the oil until a fully emulsified aioli forms. Cover and set aside until ready to serve",
+      "For the fritters, peel and coarsely grate the potatoes, then squeeze the mixture in a tea towel to remove as much water as possible. Combine with the rest of the ingredients (apart from the vegetable oil and parsley) to create a smooth, dropping consistency which isn’t too loose and liquid",
+      "Bring a deep saucepan of oil or a deep-fat fryer to 170°C, then deep fry the fritters in batches until golden and crisp (around 3 minutes). Drain on a tea towel, very lightly season (as the chorizo is already quite salty) and sprinkle with the chopped parsley. Serve alongside the saffron aioli for dipping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid",
+        "unit": "g",
+        "notes": "cleaned and cut into thin strips",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31ea262892adefd03daad3a87fa38c6e6dc408bcef97a1540ba32dc6c3a48a22",
+    "lineage_hash": "130ed9f558cb86736b55726d58d19df6292d05962918ea3c76d6b08edc88d7e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/squid-chorizo-fritters-recipe",
+    "fetchedAt": "2026-08-03T04:11:24.541Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/squid-chorizo-fritters-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

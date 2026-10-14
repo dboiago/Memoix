@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Baked Haddock with Tahini Sauce",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, marinate the haddock. Gently toast the cumin and coriander seeds until fragrant, then crush to a powder in a pestle and mortar or spice grinder. Mix with the chilli powder, pepper, oil and a pinch of salt",
+      "Place the haddock in an ovenproof dish then rub with the marinade. Cover and set aside in the fridge for 30 minutes",
+      "To make the crispy onions, heat some groundnut or other neutral oil to a depth of 1cm in a heavy-based skillet or frying pan and add the onions (probably in 2 batches) and fry until golden for around 5 minutes. Drain on kitchen paper and set aside",
+      "Next prepare the cabbage salad. Add the sliced cabbage, salt and vinegar to a bowl and scrunch it up with your fingers, mixing really well and crunching it to soften. Add the oil, mix to coat evenly and set aside while you cook the fish",
+      "Cover the haddock loosely with foil and bake for 15–20 minutes or until cooked through",
+      "To make the tahini sauce, whisk all the ingredients together in a pan, off the heat, with a large pinch of salt. It will curdle and look weird but just keep whisking until it all comes together. Taste and add more lemon juice and salt if necessary",
+      "When the fish is ready, warm the tahini sauce through over a low heat. Divide the haddock between plates, pour over the tahini sauce and top with crispy onions. This is fantastic with rice or flatbreads"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Haddock Fillets",
+        "unit": null,
+        "notes": "approx. 175g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "neutral in flavour like groundnut",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "neutral in flavour like groundnut",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": null,
+        "notes": "very finely sliced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "cold",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pitta Bread",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "caa690c6df2439ed7d8780680810112a0e7b45bb30a83a6617dca65defeaa27f",
+    "lineage_hash": "1d90c44d28099b798772b670c4e9d80b93b5e679c4814ba170c28f4b34e6cf4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-haddock-recipe-tahini-sauce",
+    "fetchedAt": "2026-08-03T11:16:32.394Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-haddock-recipe-tahini-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

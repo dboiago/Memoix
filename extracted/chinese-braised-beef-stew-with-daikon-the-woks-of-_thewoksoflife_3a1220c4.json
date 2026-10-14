@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Beef Stew with Daikon",
+    "time": "3 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "345",
+      "carbohydrateContent": "10",
+      "fatContent": "13",
+      "proteinContent": "37"
+    },
+    "directions": [
+      "Add the beef to a large pot, and add enough water to cover the beef. Place over high heat, bring to a boil, and cook the beef for 1 minute. You will see scum and foam rise to the top of the water. Remove from heat, drain, and rinse the beef chunks clean. Set aside.",
+      "Heat the oil in a Dutch oven or other thick bottomed pot over medium heat, and add the ginger, cloves, star anise, and bay leaves. Cook for 2-3 minutes until fragrant.",
+      "Increase the heat to high, and add the beef back to the pot. Cook for 8-10 minutes, until the pieces of beef are lightly browned around the edges.",
+      "Stir in the Shaoxing wine, light soy sauce, dark soy sauce, and oyster sauce, and bring to a boil. Once boiling, add the water and sugar.",
+      "Cover the pot, and bring it to a boil once again. Once boiling, reduce the heat to medium-low, cover, and simmer for 90 minutes to 2 hours, depending on how tough your beef is! The liquid should be at a slow bubble. Stir the pot occasionally to prevent sticking or burning.",
+      "Then gently stir in the daikon, and continue cooking for another 45 minutes, until the daikon is tender. Season with salt to taste, and add the scallions just before serving.",
+      "You also have the option of thickening the sauce before serving. If you’d like to thicken the sauce, combine the cornstarch with 2 tablespoons of water to make a slurry. Pour the slurry into the bubbling sauce, and stir until the sauce thickens slightly and has a glossy appearance. Add more slurry if the sauce is still too thin for your liking. Serve with steamed rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Rough Flank",
+        "unit": "lb",
+        "notes": "cut into 1½- to 2-inch/4-5cm pieces; can substitute well-marbled chuck, which will take less time to cook",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "lb",
+        "notes": "peeled and cut into 1½- to 2-inch/4-5cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut on a diagonal into 2-inch pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "mixed into a slurry with 2 tablespoons water, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "323d676422b2dbb307ad678aa6468c6d81e64ffba6c502ce33631359769cb8aa",
+    "lineage_hash": "1a4cb632744d09927c4d514c968922f8dd1949b40951f1d79160298b4df01f2d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-braised-beef-turnips/",
+    "fetchedAt": "2026-08-02T14:35:48.708Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-braised-beef-turnips/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

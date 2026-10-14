@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Braised Beef Short Ribs with Star Anise",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a lidded casserole dish large enough to hold the ribs over a medium heat, and add a dash of oil. Once the oil is hot, add the onion and a pinch of salt. Cook the onion over a medium heat until soft, 10-15 minutes",
+      "Add the garlic and ginger and cook, stirring, until fragrant and soft. This should be about a minute or so",
+      "Add the coriander seeds, cumin seeds and five spice then cook for another minute. Take care not to burn the spices and add another dash of oil if necessary",
+      "Add the stock, followed by the short ribs, star anise, soy sauce, vinegar and some salt and the white pepper. Put the lid on and transfer to the oven for 3 hours, 30 minutes, or until the ribs are tender (the exact cooking time will vary depending on size and shape of the ribs)",
+      "After the ribs have been cooking for 2 hours 30 minutes, add the prunes and top up with more stock if needed",
+      "Serve the short ribs garnished with the herbs, red chilli and spring onion"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": "plus an extra 250ml for topping up if needed",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Short Ribs",
+        "unit": null,
+        "notes": "about 1kg",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": "or use 2 tbsps honey",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Red Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ede57420264e68e2848a907a5636c7516894414c75d1cf32e3a22c1ba6a4dc7e",
+    "lineage_hash": "bac311c707a04b5770389e8f8fc7e594c9413c8b36cb0d40e5d9f7ea8f63f399"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-short-ribs-star-anise-recipe",
+    "fetchedAt": "2026-08-02T17:54:01.989Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-short-ribs-star-anise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

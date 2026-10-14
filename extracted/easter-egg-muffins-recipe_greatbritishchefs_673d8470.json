@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Easter egg muffins",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Line a 6-hole muffin tray with paper cases",
+      "Place all the dry ingredients into a mixing bowl and then add the egg mixture; mix until the dry ingredients are just moistened – don’t over mix",
+      "Spoon the mixture into the cases and bake for 20 to 25 minutes until they are well risen and cooked in the middle – you can check this by inserting a skewer in the middle of the muffins, they are cooked if the skewer comes out clean",
+      "Allow the muffins to cool on a wire rack",
+      "Meanwhile, make the buttercream icing; melt the butter, blending in cocoa, then stir in icing sugar, milk and extract. Beat until smooth and thick",
+      "To decorate, cut the top of the muffins off, and spoon some of the buttercream on top – replace the muffin tops on top of the buttercream upside down (so the cut side is facing up) and spread more buttercream on top before adding three mini chocolate eggs to decorate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "mixed with 100ml milk and 3 tbsp vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": "to decorate",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc649d30ee5ee103948cfe4d29e37204d10105ae0a39e9c11585290db3ff4ac3",
+    "lineage_hash": "cb406dc0207bf6046369af5832779abf1f6928fa686899d480314fbdde8193b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-egg-muffins-recipe",
+    "fetchedAt": "2026-08-03T22:49:43.870Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-egg-muffins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

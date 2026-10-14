@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Rock & Rye Milkshake",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Parfait",
+    "garnish": [
+      "Whipped Cream",
+      "Luxardo Cherry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender, combine the rock & rye, cherry purée, and ice cream, and blend until smooth. Pour into a parfait or pint glass, top with whipped cream and a cherry, and serve with a straw and a spoon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mister Katz's Rock & Rye",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherry Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoops Coffee Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream & a Luxardo Cherry for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a21d5df7fc7a8c6504ba5562d7a4efda79880dd615d228a935b81240f96796b",
+    "lineage_hash": "3246185b8f3fa43f30172bb473f6b2e23fd4dce02dd631584798ca46f8b0ba92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/butter-and-scotch-brooklyn-new-york-city-bakery-bar/",
+    "fetchedAt": "2026-08-02T18:00:05.547Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/butter-and-scotch-brooklyn-new-york-city-bakery-bar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

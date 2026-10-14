@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse and Caramel Cups",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the basic shortbread cups, beat together the butter and sugar until light and fluffy (this takes about 3 minutes using an electric whisk or food mixer)",
+      "Add the flour and vanilla essence and mix until well combined. You should end up with a nice soft dough. Scoop a heaped tablespoon of the mixture and roll it into a ball, repeating until you have sixteen balls",
+      "Grease a mini muffin tray with butter, and then pop each ball into a muffin hole. Using the handle of a wooden spoon (or something similar like a honey drizzler), push down gently into each ball and make a little well in the centre, this will be for the fillings. Pop the tray into the freezer for 15 minutes or so to chill",
+      "Preheat the oven on to 190°C/gas mark 5",
+      "Bake the shortbreads for 20 minutes and then take them out of the oven. Using the spoon handle, honey drizzler or your thumb, gently push down again on the cavity as the shortbread is likely to have puffed up. It will also help the inside of the shortbread to cook a little more. Put the tray back in the oven for 5 more minutes and then leave the shortbreads to cool",
+      "Make the chocolate mousse by melting the chocolate in a heatproof bowl at 30 second intervals in the microwave.  Leave it to cool slightly and then mix in the mascarpone and chill in the fridge while you fill the shortbreads",
+      "Remove the shortbread cups from the tray and fill each cavity with a spoonful of the caramel sauce. Pipe or dollop the mousse on top. I topped mine with strawberries for an extra flourish!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b33b38bec99563d2037c527ee9a2b0b5e81afdf4191fe34d8ad67bb250d03cf",
+    "lineage_hash": "af24512d8c11a9636a50ce8fdb3c27e1cec9d2dbeed314e8790c9ba7472f8ff3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-caramel-shortbread-recipe",
+    "fetchedAt": "2026-08-03T14:24:49.928Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-caramel-shortbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

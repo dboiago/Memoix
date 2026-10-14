@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Banana Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker and fill with ice. Shake and strain into a chilled glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": "Geraldine's uses Caña Brava 7-year",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Giffard Banana Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f203719a0067dc2379912af0fcb24ca98c194699aecc84e832cef09a8530b1e",
+    "lineage_hash": "5150d048510dd88e9c9cdb2046b6d3e5170189bc1a9a0a8ddeec65654def45e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-daiquiri/",
+    "fetchedAt": "2026-08-03T23:45:19.605Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Coq Au Vin",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put 2 tablespoons of flour in a shallow dish and season it with salt and pepper. Dip the chicken breasts in the flour and coat both sides. Heat 2 tablespoons olive oil in a large, lidded frying pan and add the chicken breasts, frying for 2–3 minutes on each side until lightly browned.",
+      "Remove the chicken from the pan, discard the oil and wipe out the pan. Return the pan to the heat and pour in the remaining tablespoon of oil. Add the chopped bacon or pancetta cubes and the shallots and fry until lightly browned. Stir in the garlic, then return the chicken to the pan. Put the brandy in a small saucepan and heat it until almost boiling. Set it alight with a long cook’s match or taper and carefully pour it over the chicken. Let the flames die down, then add the thyme and bay leaf and pour in enough wine to just cover the chicken. Bring back to a simmering point, then reduce the heat, half cover the pan and simmer very gently for 45 minutes.",
+      "Add the mushrooms to the pan and cook for another 10–15 minutes. Remove the chicken from the pan, as well as the shallots, bacon and mushrooms with a slotted spoon, and set aside separately to keep warm. Increase the heat under the pan and let the sauce simmer until it has reduced by half. If the sauce needs thickening, mix the soft tablespoon of butter with 1 tablespoon of flour to make a smooth paste, then add it gradually, whisking well after each addition until the sauce is smooth and glossy.",
+      "Return the shallots, bacon and mushrooms to the pan and salt and pepper the sauce to taste. Cut each chicken breast into four slices and arrange them on warm serving plates. Spoon a generous amount of sauce over the chicken and sprinkle with parsley. Serve with creamy mashed potatoes or tagliatelle pasta."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "halved or quartered if large",
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": "large",
+        "notes": "skinless, boneless",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "oz",
+        "notes": "alt: pancetta cubes",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Dry",
+        "unit": null,
+        "notes": "750 ml., fruity red wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Button Mushrooms",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "softened (optional) butter",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Chopped Flat Leaf Parsley",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f39bcf44418b13a16f9b9f6ef6822a7eb67e2c95716ad86d179fffa1dfa13f96",
+    "lineage_hash": "64dd73be8b08c9b30068161b0123bafe82270a37f58b7e3bd99130492641ec28"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coq-au-vin/",
+    "fetchedAt": "2026-08-03T21:28:46.650Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coq-au-vin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

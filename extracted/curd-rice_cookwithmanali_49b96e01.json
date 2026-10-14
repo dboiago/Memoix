@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Curd Rice",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "299",
+      "carbohydrateContent": "44",
+      "fatContent": "9",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Rinse 1 cup of rice and place it in a pressure cooker with 3 cups water and 1/2 teaspoon salt. Pressure cook the rice until very soft- 2 to 3 whistles on high heat then lower the heat and cook for additional 2 to 3 minutes. Let the pressure release on its own.",
+      "Once the rice is cooked, mash it a little using a masher or back of a spoon or using your hands. You may also leave it as is if you don't like mashed rice.",
+      "Transfer rice to a large bowl and let it cool completely.",
+      "Once the rice has cooled completely, add in the whisked yogurt and milk and mix to combine. I add around 2 cups of whisked yogurt because I like a lot of it, you can adjust to taste and reduce the quantity.",
+      "Then add in the grated carrot, chopped cilantro and green chili and mix to combine.",
+      "Now for the tempering/tadka, heat oil in a small pan on medium heat.",
+      "Once the oil is hot, add the mustard seeds and let them pop.",
+      "Then add the urad dal and cook until it starts changing color. (Tip: if you want dal to be soft and not super crunchy in the tadka, just soak it in water for 10 minutes before using in the recipe).",
+      "Add the ginger, curry leaves and dried red chilies. Cook until the curry leaves turn crisp.",
+      "Transfer the tadka to the bowl of curd rice and mix.",
+      "Cover and refrigerate the curd rice for few hours until chilled. Then top with pomegranate arils (optional) and serve with achar (pickle) and papadum."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "200 grams, I used long grain rice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "24 oz",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "whisked, I use 2 cups",
+        "amount": "1.5-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "4 oz",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grate Carrots",
+        "unit": "C",
+        "notes": "from 2 medium carrots",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "22 ml, I used avocado oil",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a70ef71b2374563a06e3b8c80cbadedad43706bae51bbcfc84afa29bb35892f9",
+    "lineage_hash": "057ed974f7d75c9286f39aa476a47c25dd57085a68b46f9d5a6dafbf0b0ebcb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/curd-rice/",
+    "fetchedAt": "2026-08-01T21:26:42.832Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/curd-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

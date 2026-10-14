@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-box-cakes-recipe",
+  "slug": "chocolate-box-cakes_greatbritishchefs_8f14344b",
+  "title": "Chocolate box cakes",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T22:55:16.136Z",
+  "ldName": "Chocolate box cakes",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "225g of self-raising flour",
+    "225g of caster sugar",
+    "1/2 tsp salt",
+    "40g of cocoa powder",
+    "115g of butter",
+    "3 eggs",
+    "150ml of whole milk",
+    "1 tsp vanilla extract",
+    "75g of butter, softened",
+    "3 tbsp of cocoa powder",
+    "200g of icing sugar",
+    "3 tbsp of milk, mixed with 1 tsp vanilla extract",
+    "12 chocolates, of your choice"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oven to 180ºC/gas mark 4. Grease 12 x muffin or individual Victoria sandwich tins",
+    "Mix the flour, sugar, salt and cocoa together. Rub the butter into the flour mixture. Beat the eggs with the milk",
+    "Stir in the egg and milk mixture with the vanilla extract into the dry ingredients and beat well",
+    "Spoon the mixture into the prepared tins and bake for about 22 to 25 minutes until well risen. Allow them to cool before cutting the cakes in half",
+    "To make the buttercream, add the softened butter to the cocoa and then stir in the icing sugar, milk and vanilla extract. Beat until smooth and thick",
+    "Sandwich the cakes with buttercream in the middle and spread some buttercream on top.  Decorate each cake with a chocolate from a box of chocolates"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

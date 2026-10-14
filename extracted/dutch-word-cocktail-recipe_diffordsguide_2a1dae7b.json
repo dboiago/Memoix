@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Dutch Word",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "167",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lime zest twist and lime wedge.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Express lime zest twist over cocktail and discard.",
+      "Garnish with lime wedge on rim."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chartreuse Green",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee4769f2d7e4ad98272d4417ee0a5449e6e26164201ed64ee9ae1354491330ab",
+    "lineage_hash": "1061598d18ea7ad6c1063e87c5c7c938f58d8b4c7c17fe62dd9e9c6c83ce9c75"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2926/dutch-word",
+    "fetchedAt": "2026-08-03T08:17:31.113Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2926/dutch-word",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

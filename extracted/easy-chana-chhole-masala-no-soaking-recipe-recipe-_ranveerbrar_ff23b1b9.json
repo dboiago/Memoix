@@ -1,0 +1,406 @@
+{
+  "recipe": {
+    "name": "Chana / Chhole Masala (No Soaking Recipe)",
+    "time": "40-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Onion Rings",
+      "Ginger Juliennes",
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shallow pan, add water, salt to taste. Once it gets warm add the water into a bowl.",
+      "In a bowl, add chickpeas, warm water and let it soak for 30 minutes.",
+      "In a cooker or sauce pot, add soaked chole, water, degi red chili powder, turmeric powder, crushed garlic, green chili, ginger, baking soda and byadgi red chillies, black cardamom.",
+      "Cook it for 5-6 whistles.",
+      "In a mortar pestle, add garlic, ginger, green chilli, and salt to taste.",
+      "Make a coarse paste and keep it aside for further use.",
+      "In a bowl, add curd, degi red chili powder, coriander powder, turmeric powder and mix well.",
+      "Keep aside for further use.",
+      "In a shallow pan or kadai, add oil, ghee. Once it gets hot, add bay leaf, black peppercorns, cinnamon sticks, dry red chillies and let it splutter well.",
+      "Now, add ginger garlic paste, onions, green chillies.",
+      "Cook it on a slow flame for 30 seconds until light golden in color.",
+      "Now, add tomatoes, pinch of salt, degi red chili powder and sauté well.",
+      "Add curd mixture and mix well and cook on low flame for 2-3 minutes.",
+      "Add water, tender coriander stems, salt to taste and let it cook for 10-15 minutes.",
+      "Add coriander leaves, black pepper powder and mix well.",
+      "Once done transfer it into a serving dish, garnish it with onion rings, ginger juliennes ,coriander sprig."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpeas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Chickpeas",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly crushed",
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "¼",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Byadgi Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "roughly slice",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Chickpeas",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "¼",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "rings",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f385b6e5aed344a66f4bd38d31db09c35b55e630b51a68a0dcc9692408f45ee5",
+    "lineage_hash": "212540ff494b1be733e8ea8492d173b46e27ebfffdd5033409782dfd566b68f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chana-chole-masala/",
+    "fetchedAt": "2026-08-01T23:29:49.184Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chana-chole-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

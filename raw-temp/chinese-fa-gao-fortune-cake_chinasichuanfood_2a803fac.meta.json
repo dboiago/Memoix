@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-fa-gao-fortune-cake/",
+  "slug": "chinese-fa-gao-fortune-cake_chinasichuanfood_2a803fac",
+  "title": "Chinese Fa Gao (Fortune Cake)",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:18:29.739Z",
+  "ldName": "Chinese Fa Gao (Fortune Cake)",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "cake",
+  "ldIngredientsRaw": [
+    "1 cup all-purpose flour",
+    "130 ml hot water",
+    "1/2 cup brown sugar",
+    "2 teaspoons baking powder"
+  ],
+  "ldInstructionsRaw": [
+    "Melt brown sugar with hot water and set aside.",
+    "Combine flour with baking powder. Add the sugar water. Stir the batter in one direction for around 3-5 minutes. The longer; the better.",
+    "Pour batter to molds. I will recommend using a scoop and pour the batter directly to the center of the molds from higher places and let the batter flat by itself. Set aside.",
+    "Bring enough water to boil in a large wok or deep pot, set up the steamer and place the batter in when the water begins to boil. I would suggest add more water with the level just below the moulds.",
+    "Cove the lid and continue steam for around 20 to 25 minutes. The blossoming should occur around 10 minutes. So in the first 10 minutes, use high fire and you can choose to slow down your fire slightly or use high fire during the whole process (depending on how much water you added for steaming and do not burn your wok)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "440 kcal",
+    "carbohydrateContent": "103 g",
+    "proteinContent": "6 g",
+    "sodiumContent": "23 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "53 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 cup all-purpose flour",
+    "130 ml hot water",
+    "1/2 cup brown sugar",
+    "2 teaspoons baking powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

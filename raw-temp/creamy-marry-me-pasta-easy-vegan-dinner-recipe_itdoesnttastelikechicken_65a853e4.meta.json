@@ -1,0 +1,66 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/marry-me-pasta/",
+  "slug": "creamy-marry-me-pasta-easy-vegan-dinner-recipe_itdoesnttastelikechicken_65a853e4",
+  "title": "Creamy Marry Me Pasta - Easy Vegan Dinner Recipe!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T09:49:58.943Z",
+  "ldName": "Marry Me Pasta",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "Main Course, Pasta",
+  "ldKeywords": "30 minute meals, marry me pasta, pasta",
+  "ldIngredientsRaw": [
+    "12 oz pasta (any shape (gluten-free if preferred))",
+    "½ cup raw cashews ((softened if needed, see step 1))",
+    "½ cup water",
+    "1 tablespoon olive oil ((sub water or broth for oil-free))",
+    "5 cloves garlic (sliced)",
+    "½ cup sun-dried tomatoes (drained if packed in oil, sliced)",
+    "1 cup water",
+    "3 tablespoons tomato paste",
+    "½ cup fresh basil (chopped (plus more for garnish))",
+    "Salt and pepper (to taste)",
+    "Optional for garnish: extra fresh basil, parsley, crushed red pepper flakes, a squeeze of lemon, or vegan parmesan"
+  ],
+  "ldInstructionsRaw": [
+    "To make cashew cream (optional)",
+    "To make the pasta:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "487 kcal",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "carbohydrateContent": "80 g",
+    "proteinContent": "17 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "122 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "10 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "[pasta]",
+    "▢ 12 oz pasta, any shape (gluten-free if preferred)",
+    "[cashew cream (or use 1 cup vegan heavy cream)]",
+    "▢ ½ cup raw cashews, (softened if needed, see step 1)",
+    "▢ ½ cup water",
+    "[sun-dried tomato sauce]",
+    "▢ 1 tablespoon olive oil, (sub water or broth for oil-free)",
+    "▢ 5 cloves garlic, sliced",
+    "▢ ½ cup sun-dried tomatoes, drained if packed in oil, sliced",
+    "▢ 1 cup water",
+    "▢ 3 tablespoons tomato paste",
+    "▢ ½ cup fresh basil, chopped (plus more for garnish)",
+    "▢ Salt and pepper, to taste",
+    "▢ Optional for garnish: extra fresh basil, parsley, crushed red pepper flakes, a squeeze of lemon, or vegan parmesan"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

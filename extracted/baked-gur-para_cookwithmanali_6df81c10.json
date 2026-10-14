@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Baked Gur Para",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "51",
+      "carbohydrateContent": "7",
+      "fatContent": "2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Pre-heat oven to 375 F degrees. Line a large baking sheet with parchment paper and set aside.",
+      "In a bowl mix together atta (whole wheat flour), sooji (semolina), white sesame seeds, baking powder and pinch of salt. Set aside.",
+      "To the steel bowl of your stand mixer fitted with paddle attachment or use your hand mixer, beat together ghee with jaggery powder until creamy.",
+      "Start adding the dry ingredients into the ghee-jaggery mixture. Add slowly until it is all incorporated. Mixture will resemble crumbs.",
+      "Now add warm water to bring the dough together. Start with 1 tablespoon of water and add more as needed to bring it all together. You will have a soft and smooth dough ready.",
+      "Wrap the dough with a cling sheet and refrigerate for 10 to 15 minutes.",
+      "Then take out the dough and roll it using a rolling pin to 1/4 inch thickness. You can trim the sides to make it a square.",
+      "Then use a pastry wheel to cut the dough. You may also use a cookie cutter here. I cut squares around 1.5 x 1.5 inch using the pastry wheel.",
+      "Transfer the cut squares to the baking sheet lined with parchment paper. Bake at 375 F degrees for 15 to 16 minutes until crisp. If you want them extra-crispy, you may bake for an additional 1 minute or so.",
+      "Transfer the baked gur para to a wire rack to cool completely. Store in an airtight container and enjoy with chai or coffee."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "durum wheat flour, 130 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sooji",
+        "unit": "Tbsp",
+        "notes": "semolina, 30 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "22 grams",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "not melted, 75 grams, in semi-solid form",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery Powder",
+        "unit": "C",
+        "notes": "65 grams, measured after sifting the powder",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Powder",
+        "unit": "tsp",
+        "notes": "you may reduce the amount if you do not like the fennel flavor",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "Tbsp",
+        "notes": "as needed, 30-37 ml",
+        "amount": "2-2.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c641848f6e6bf1dc2ef600527aa4ded9d6580a2b32080f58179bbd246165f9d",
+    "lineage_hash": "bc137b11a11c29c4f2b1f7974d7a77371866a8c1a2c47bd1ffbf37663623cb61"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/baked-gur-para/",
+    "fetchedAt": "2026-08-02T06:06:34.963Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/baked-gur-para/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

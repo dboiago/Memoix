@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Classic Barbecue Dipping Sauce",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the vinegar, garlic, salt, and pepper together in a bowl and stir."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "gently crushed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "or more to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ead4f3cfe6e1e75a84beceff590466daa55141d871cce16c31cdd05480e1c2de",
+    "lineage_hash": "ecdaeab720201d9f9cf616c2f121e3b385d9568a52a4516db47cb57b41f09126"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/classic-barbecue-dipping-sauce/",
+    "fetchedAt": "2026-08-03T05:24:17.631Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/classic-barbecue-dipping-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

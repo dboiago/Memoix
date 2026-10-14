@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chocolate Caramel Cake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Butter a 9-inch (23cm) springform pan. Dust the inside with flour or cocoa powder, and tap out any excess. If not using a glass-bottom springform pan, line the bottom with a circle of parchment paper.",
+      "In a small bowl, whisk together the flour, cocoa powder, and baking powder.",
+      "In a large bowl set over a saucepan of barely simmering water, melt the chocolate and butter together, stirring until smooth. Remove from heat and stir in the 2/3 cup (130g) of sugar, then the egg yolks, vanilla extract, and chocolate extract (if using). Mix the dry ingredients into the chocolate mixture until it's free of any lumps.",
+      "In the bowl of a stand mixer fitted with the whip attachment, or by hand in a large bowl with a whisk, beat the egg whites on medium-high speed until they just start to hold their shape. Add the salt and gradually add the remaining 1/3 cup (70g) of sugar gradually, whipping until the egg whites hold their shape and are smooth and creamy. Do not overbeat.",
+      "Fold one-third of the beaten egg whites into the chocolate mixture, then fold in the remaining egg whites just until no streaks of white are visible. Scrape the batter into the prepared pan, smooth the top, and strew the pieces of caramels over the top of the cake. (Avoid putting them too close to the sides of the pan: the caramels will stick to the side of the cake pan and make it harder to cut.)",
+      "Bake for 25 minutes, until the center still feels soft, but like it's almost about to set. Let cool, then remove the sides of the springform pan and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "200g, cubed",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 230g, chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "70g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "natural or Dutch-process",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "2/3",
+        "unit": null,
+        "notes": "plus  1/3 cup (200g, total) sugar",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Caramels (85g)",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1657250e3d803836d61c5f7692feda0634d38f3739079134daddd9778a375072",
+    "lineage_hash": "4d4c3eb443902d7d38f808de814928e819910f296b63200630976967b6b4b890"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-caramel-cake-recipe/",
+    "fetchedAt": "2026-08-02T22:19:33.512Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-caramel-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

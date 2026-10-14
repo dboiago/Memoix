@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Bird Cage Rye Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupette",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker. Add ice and shake. Double strain.",
+      "5 Spice SyrupCombine all of the ingredients in a medium saucepan, stirring occasionally until all the sugar is dissolved. Simmer for a short time. After the liquid is cool enough, transfer to a jar, place in the refrigerator, and let the spices infuse in the syrup for 24 hours. Afterward, fine strain out the spices, then refrigerate until ready to use. Will keep refrigerated for up to a month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye",
+        "unit": "oz",
+        "notes": "Minaya/Breen use Rittenhouse Bottled in Bond Rye, 100-proof",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Averna",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "5-spice Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reagans Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Allspice Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6c0d0ca3867b4b7edcc2f3379abfced46d773a0cde72d63905cecfb20bce88c",
+    "lineage_hash": "1be6a1279f6339031db0745ed9009ae2ac6b66b3ecfa74f4f6ba6c8e2db66b8e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bird-cage-rye-sour/",
+    "fetchedAt": "2026-08-03T20:32:14.634Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bird-cage-rye-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

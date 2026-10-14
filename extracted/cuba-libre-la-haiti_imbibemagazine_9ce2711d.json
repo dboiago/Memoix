@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Cuba Libre à la Haiti",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Spent Lime Shell"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the liquid ingredients to an ice-filled glass. Squeeze the juice from the lime half into the glass and stir briefly to combine. Garnish with the spent lime shell."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Haitian White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Cola Syrup",
+        "unit": "oz",
+        "notes": "Interval uses Monin, or substitute the syrup and seltzer for 2 oz. of Mexican Coke or other cane cola",
+        "amount": "⅜",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seltzer",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Medium-sized Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac3e15896b65ca1b0de2e7351b4c39b5ee37b61f5035142e0cc46b13710283ae",
+    "lineage_hash": "5dbe8fa50f2d81349db5f5942bbc119e2dbbd652ce9787bc861fec10135d35eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cuba-libre-a-la-haiti/",
+    "fetchedAt": "2026-08-03T19:16:05.761Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cuba-libre-a-la-haiti/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

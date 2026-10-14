@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Dak Bulgogi (Korean BBQ Chicken)",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse chicken pieces. Trim off excess fat. Cut each of the chicken pieces into small sizes (about 2-inch long and 1-inch wide). If you want to use this recipe for outdoor grilling, cut the chicken into larger pieces and marinate longer. Double (or triple) the recipe as needed.",
+      "Mix the marinade ingredients in a bowl until the sugar has dissolved.",
+      "Coat the chicken pieces with the marinade. Marinate for about 30 minutes in the refrigerator.",
+      "Preheat a skillet over medium high heat. Add the chicken pieces, reserving the marinade. Cook until cooked through and slightly caramelized, about 2 minutes each side. (The sugar and honey in the marinade will burn easily, so watch it carefully and add the reserved marinade by tablespoon when the pan gets dry. You can slightly reduce the heat to avoid burning, if needed.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh And/or Breast",
+        "unit": "lb",
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Use Regular Sugar If Unavailable",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "alt: 1 - ⅓ more tablespoons brown sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "or mirin or white wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f50fbd2ee6029db7cfd37db2ce24c6aa5ea34187b976ac4061b34e79ab4cbf4",
+    "lineage_hash": "01b485aca94c2731a5f0947ec633b091d06188c764307d5308d26d2918f2c6ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dak-bulgogi-korean-bbq-chicken/",
+    "fetchedAt": "2026-08-01T19:12:37.750Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dak-bulgogi-korean-bbq-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

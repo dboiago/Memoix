@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Bold Botanist Gin Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Mint"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker and dry shake (no ice). Add ice and shake vigorously. Strain into a chilled glass. Drop the bitters onto the surface and use a toothpick to create a star shape. Garnish with mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "586b3767b93ebd18d2c14d102d869e67ba9a60226ed675cd063772c02def3802",
+    "lineage_hash": "faa5008f49aca84e73e6ce10a3e70c5da77629c917330dd48989d305e69c60ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bold-botanist-gin-sour/",
+    "fetchedAt": "2026-08-03T21:36:08.036Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bold-botanist-gin-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,263 @@
+{
+  "recipe": {
+    "name": "Christmas Sauces",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the apple sauce, peel and core the apples, then slice as thinly as possible",
+      "Melt butter in a pan over a low-medium heat. Add the apples, sugar and water and cook gently until soft and puréed. Finish with the cinnamon and lemon juice. Store in a jar in the fridge",
+      "For the mint sauce, pick the mint leaves and reserve the stalks. Blanch the mint leaves for a few seconds in boiling water. Then, refresh in ice water, drain and squeeze dry before finely chopping",
+      "Add the sugar, water, vinegar and mint stalks to a pan and bring to the boil, seasoning with a pinch of salt. Once boiling, remove from the heat and leave to cool",
+      "Once cool, pour over the chopped mint. Transfer to a jar and store in the fridge",
+      "For the cranberry sauce, combine the orange juice, zest and spices in a heavy-based saucepan and bring to the boil. Reduce the heat and simmer until reduced by half",
+      "Add the cranberries and cook over a low heat to slowly stew the fruit - do not allow the cranberries to burn",
+      "Once the cranberry mixture has a loose, jam-like consistency, add the sugar and bring back to the boil",
+      "Reduce the heat and simmer for a further 10 minutes, then remove from the heat and allow to cool slightly",
+      "Once warm, taste for sweetness and add sugar, if necessary - you are looking for a balance between sweet and sour. Transfer to a jar and freeze (if storing for more than 3 days) or refrigerate",
+      "For the bread sauce, blitz the bread in a blender until you are left with chunky breadcrumbs. Alternatively, use your hands to tear up the bread",
+      "Stud the onion with a clove and add to a pan along with the milk and bay leaf. Bring up to a gentle simmer and then strain into a bowl",
+      "Add the breadcrumbs and stir until the bread softens. Add the cream, nutmeg and seasoning. Cool, then chill before use (or freeze in an airtight container until needed)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon for Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunches",
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread",
+        "unit": "g",
+        "notes": "crusts removed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": "freshly grated to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca92a9bb4f593754cf2e3763214311c02868feb74562870d860a586d504c097f",
+    "lineage_hash": "9fed32e550b5b6f7fd3d0a7406bb776c50c677e743dcef4361393a4dd57a1c20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-sauces-recipe",
+    "fetchedAt": "2026-08-03T19:58:08.606Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-sauces-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

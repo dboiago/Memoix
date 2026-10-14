@@ -1,0 +1,5 @@
+My Mom was born in Aceh, so I am quite familiar with Acehnese food, and among my favorites are [_sate godok_](https://dailycookingquest.com/sate-godok-aceh-skewerless-acehnese-beef-satay.html), _mie Aceh_, _martabak_, and of course _acar bawang_. The best thing about _acar bawang_ is that it is so easy to make, and the next best thing is I eat it with just about every kind of Indonesian dishes, especially for _sate_, _nasi goreng_, _mie goreng_, and even _soto_. If you get a hold of really fresh looking shallots and green Thai chilies, do give this simple pickle a try. ♥
+
+![Acar Bawang Aceh - Acehnese Shallot Pickle](https://dailycookingquest.com/img/2014/03/acar_bawang_aceh_hu4cbf7eb672f593391514034de2986cf1_150755_1200x1800_resize_q75_lanczos.jpg)
+
+Acar Bawang Aceh - Acehnese Shallot Pickle

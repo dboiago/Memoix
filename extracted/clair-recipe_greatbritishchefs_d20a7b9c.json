@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Éclair",
+    "time": "1 hr 5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the eggs in a small bowl and set aside. Measure the flour so you have it on hand when you need it",
+      "In a medium saucepan, bring the butter, milk, water, sugar and salt to a boil over medium heat, stirring occasionally",
+      "When the liquid is boiling, remove from the heat and tip in the flour. Stir until combined, then return to the heat, stirring constantly, until the dough is slightly shiny",
+      "Add the dough to a food processor or stand mixer and mix for a few seconds to bring down the \r\ntemperature. With the machine still on, add the eggs a little at a time until they have all been \r\nabsorbed and the dough is smooth and sticky. Scrape the dough into a disposable piping bag and twist the open plastic end to close",
+      "Line a baking sheet with greaseproof paper. Cut a 2cm wide piece off the piping end of the bag",
+      "Pipe eight 2.5cm x 10cm strips (the dough will pipe a little wider than the cut end) onto the baking paper, leaving a gap of at least 3cm between each éclair. You may need more than one baking \r\nsheet",
+      "Put the éclairs in the oven and bake for 15 minutes. Turn the oven down to 190°C/gas mark 5 and continue to bake until they are golden brown, about 8-10 minutes more. To check if they are done, press one of the éclairs – it shouldn’t be squishy, rather firm to the touch",
+      "Remove the éclairs from the oven and use a sharp knife to poke a hole in the side of each tube – this is to allow the steam to escape",
+      "Turn off the oven and return the éclairs to the cooling oven. Prop the door open with a wooden spoon or similar tool and leave the shells to dry out – about 45 minutes. They should be very slightly moist when they are ready, but not at all soft. Cool completely on a cake rack"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "or 1 lightly heaped teaspoon",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ec113d29bc2d22c8059fac3b49fd3acad376b3f234972b0719e2cfd29a8fcfe",
+    "lineage_hash": "851b4fc106e5a03659f96c66c16ddb5cecc620f3a2218fcb2ad510aa9fc76bac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/eclair-recipe",
+    "fetchedAt": "2026-08-03T15:05:13.943Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/eclair-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

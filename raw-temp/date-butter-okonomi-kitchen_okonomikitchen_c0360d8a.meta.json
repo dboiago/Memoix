@@ -1,0 +1,48 @@
+{
+  "url": "https://www.okonomikitchen.com/date-butter/",
+  "slug": "date-butter-okonomi-kitchen_okonomikitchen_c0360d8a",
+  "title": "Date Butter - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-26T01:37:46.117Z",
+  "ldName": "Date Butter",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 1/4 cups"
+  ],
+  "ldCuisine": "Modern Pantry",
+  "ldCategory": "Condiments",
+  "ldKeywords": "date butter, homemade date spread, easy date butter, 2-ingredient spread, healthy sweet spread, natural caramel spread, butter and date recipe, no-cook spread",
+  "ldIngredientsRaw": [
+    "1 stick (113 g) salted butter, room temperature",
+    "1.5 cups (200-220 g) dates, room temperature",
+    "pink himalayan salt or flaky salt, to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Add butter to a food processor and blend until smooth.",
+    "Add the dates and blend until smooth and well combined.",
+    "Taste and add more salt to your liking.",
+    "Transfer to air tight container. Keep refrigerated for up to 1 month."
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 tbsp",
+    "calories": "65 calories",
+    "sugarContent": "6.5 g",
+    "sodiumContent": "3.9 mg",
+    "fatContent": "4.3 g",
+    "saturatedFatContent": "2.7 g",
+    "unsaturatedFatContent": "1.5 g",
+    "transFatContent": "0.14 g",
+    "carbohydrateContent": "7.3 g",
+    "fiberContent": "0.74 g",
+    "proteinContent": "0.28 g",
+    "cholesterolContent": "11 mg",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

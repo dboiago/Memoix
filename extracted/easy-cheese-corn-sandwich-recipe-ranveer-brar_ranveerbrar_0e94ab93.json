@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Cheese corn sandwich",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take a pan heated on a medium flame add butter, refined flour and cook it till it releases the aroma.",
+      "Add milk and cook till it thickens into a sauce like consistency.",
+      "Meanwhile in another pan heat oil and saute onion and garlic for a few minutes. Add in blanched corns and bell pepper for another 2 minutes.",
+      "Transfer this mixture into prepared sauce, add in salt, dried italian herbs red chilli flakes, grated cheese and mix well. When mixture is thicken completely remove from the flame and allow it to cool down.",
+      "Spread the mixture on bread slices. Toast it on a pan till bread crisp from both sides.",
+      "Serve hot with ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn",
+        "unit": null,
+        "notes": "boiled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Italian Herbs Mix",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a50e370e70efebc555c29b0dd2dd57a2cefcb28a47bf660118da8e58c37c4693",
+    "lineage_hash": "7c54fb8d0efa799a446f86f0137a81d1c5dd48ecadfb6af15690647eae63ec05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-corn-sandwich/",
+    "fetchedAt": "2026-08-02T11:57:14.992Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-corn-sandwich/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

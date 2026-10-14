@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Creole-Rum Sazerac",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing tin and shake with ice.",
+      "Strain into a rocks glass over a large ice cube.",
+      "Garnish with lemon peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Guyanese Rum",
+        "unit": "oz",
+        "notes": "preferably El Dorado 3-Year",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": "preferably Plantation Xaymaca Special Dry",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystal Hot Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "662c753bd3a448d5e87159229a3ffd1dabdaa316f0a9c32ec4be9bebcf5b0c6f",
+    "lineage_hash": "34ba2bcf6a745bc8cdea1eb714c4e9fa5e8926d8d2d28b8e76e7c6f20327edb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/creole-rum-sazerac/",
+    "fetchedAt": "2026-08-03T05:05:50.482Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/creole-rum-sazerac/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

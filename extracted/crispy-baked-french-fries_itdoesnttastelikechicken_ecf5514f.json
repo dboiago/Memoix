@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Crispy Baked French Fries",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "118",
+      "carbohydrateContent": "20",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Put the cut fries in a big bowl of water to soak for a minim of 30 minutes and up to overnight. If you are soaking them overnight, just cover and pop the bowl in the fridge.",
+      "When you're ready to bake Preheat your oven to 425F (220C). Lightly grease two baking sheets.",
+      "Drain and rinse the fries. Dump the fires onto a clean dish towel, and dry them off as best as you can. Add the dried fries to a large bowl and toss well with the oil and salt so that they are evenly coated.",
+      "Spread the fries across the two baking sheets in a single layer, as evenly spread out as possible. Bake for 30 to 40 minutes, stopping to flip halfway through until the fries are golden. Optionally toss with the parsley, rosemary, and garlic powder."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Russet Potatoes",
+        "unit": null,
+        "notes": "cut into very thin fries, peels left on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "olive, canola, melted coconut oil, whatever your preference",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "optional, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "optional, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9f8b7dfa1e53ef7922d03b0c7d77da31b2be1e861a499f3008bb5890761b964",
+    "lineage_hash": "ab1fd3f36022b4c82112de4a64421f092083aa1c1d9c507d40952e949e12a751"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-baked-french-fries/",
+    "fetchedAt": "2026-08-01T21:21:19.913Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-baked-french-fries/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

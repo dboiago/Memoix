@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bear the Palm Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass with ice. Stir to chill, then strain into a rocks glass over a large cube."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": "Wiggins uses The Real McCoy 12-Year",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Clairin Rum",
+        "unit": "oz",
+        "notes": "Wiggins uses Casimir",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "010dd30fd2332da9dd5d80bdc430d7d7c61968d331a69b5ff8c1007d12e0dcfa",
+    "lineage_hash": "6a25ec0c3508be137d3aaa677078ae09de08806a5b5bd29c6c5b7b6624c181d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bear-the-palm-old-fashioned/",
+    "fetchedAt": "2026-08-03T18:47:12.472Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bear-the-palm-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

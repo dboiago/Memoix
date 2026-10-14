@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Doraji Namul (Sautéed Bellflower Root)",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "86",
+      "carbohydrateContent": "9",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Place the dried doraji / bellflower root in a large bowl and immerse in water overnight (8 to 12 hours). Drain the water. Add the coarse sea salt and wash the bellflower root a few times with running water. This is to remove the bitter taste of the bellflower root. Boil some water in a sauce pan (enough to cover the root) and blanch the bellflower root in rolling boiling water for about 2 minutes. Drain the water and rinse under cold running water.",
+      "Place the blanched bellflower root in a mixing bowl then add the seasoning sauce. Mix them well with your hands.",
+      "Heat up a skillet over medium high heat. Once heated, spread the cooking oil. Add the seasoned bellflower root and stir around quickly. Add the green onion and sesame seeds. Remove from the heat. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hydrated Doraji (6 Ounces)",
+        "unit": "g",
+        "notes": "bellflower root",
+        "amount": "170",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "I used rice bran oil",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Some Water to Boil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SEASONING SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "SEASONING SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "SEASONING SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "SEASONING SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "580d436ee69c86a1ff1ed58afa5682e5e89d5494ab5fd2ab05ca7fa52edf54f0",
+    "lineage_hash": "18efc1163b311b15023cd12990de2471b9c736289438a8f6b997e9bd6ef5a2f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/doraji-namul-sauteed-bellflower-root/",
+    "fetchedAt": "2026-08-01T17:08:19.331Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/doraji-namul-sauteed-bellflower-root/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

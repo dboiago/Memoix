@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Baked Tuna Empanada (Empanada de Atún)",
+    "time": "2 hr 40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "409",
+      "carbohydrateContent": "34.89",
+      "fatContent": "22.27",
+      "proteinContent": "17.34"
+    },
+    "directions": [
+      "Start the empanada dough by _whisking an egg_ with the baking soda, olive oil, wine or cider, and salt. (image 1)",
+      "Gradually mix in the flour until the dough is _soft, but not sticky._ (image 2)",
+      "Shape the dough into a ball, cover it with plastic wrap, and let it rest at room temperature for 1 hour. (image 3)",
+      "Cook the onions in olive oil until soft and golden, then _add the roasted red peppers_ and cook for a couple of minutes. (image 4)",
+      "Add the tomato sauce and mix it in well. (image 5)",
+      "Dump in the tuna, chopped eggs, Worcestershire sauce, honey, cumin, and paprika, and stir to combine. _Adjust the salt to taste._ (image 6)",
+      "Once the empanada dough has rested, roll out two-thirds of the dough thinly. (image 7)",
+      "Place the rolled out dough in an 11-inch oiled pie plate, making sure the dough _covers the base and sides._ (image 8)",
+      "Brush the crust with an egg white, then bake at 350°F (175°C) for 10 minutes. _Let it cool for 10-15 minutes_ before adding the tuna filling. (image 9)",
+      "Roll out the other piece of dough and cover the empanada with it. _Seal the edge_ by pinching it closed. (image 10)",
+      "Brush the top of the empanada with _an egg yolk and water mixture_ and bake at 350°F (175°C) for 40 minutes. (image 11)",
+      "Enjoy this baked tuna empanada hot or cold! (image 12)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Spanish Hard Cider",
+        "unit": "C",
+        "notes": "alt: dry white wine",
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Flour Plus Extra for Rolling",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Separated",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Red Peppers Drained and Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tomate Frito",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Canned Tuna Drained",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Manzanilla Olives Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boiled Eggs Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": "alt: anchovy paste",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d7dbd9f57124ad23d23b5e58ddf9a47d4e3f2d58634b776d638e23634a0d9c0",
+    "lineage_hash": "3bbc8c3b1c9fb01272534404e809f67499f81dfd6f980e3a50d9449eaec5f251"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/baked-tuna-empanada-recipe-empanada-de-atun/",
+    "fetchedAt": "2026-08-02T09:30:22.663Z"
+  },
+  "rawSource": "https://spanishsabores.com/baked-tuna-empanada-recipe-empanada-de-atun/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

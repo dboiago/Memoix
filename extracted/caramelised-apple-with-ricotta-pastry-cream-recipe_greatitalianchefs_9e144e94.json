@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Caramelised Apple with Ricotta Pastry Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the arlettes, combine the icing sugar and ground ginger and sift into a bowl",
+      "Roll out the pastry to a 3mm thickness on a lightly floured work surface",
+      "Brush egg wash all over the sheet of pastry and dust generously with the ginger icing sugar. Sprinkle the flaked almonds over the pastry, then roll it into a tight spiral. Return to the fridge to firm up for 1 hour",
+      "Line 2 baking sheets with non-stick baking mats. Remove the prepared dough from the fridge and use a sharp knife to slice into 1cm pieces",
+      "Dust the work surface with ginger icing sugar and use a rolling pin to shape each cut slice into a thin disc of pastry. Place each disc on the prepared baking sheet and leave to rest in the fridge for 30 minutes",
+      "When ready to bake, place a sheet of parchment paper on top of the biscuits and cover with another baking sheet to keep the arlettes flat while baking. Bake for 8–10 minutes, then remove and use a palette knife to turn each one upside down. Return to the oven to bake for a further 4–5 minutes until the pastry has caramelised",
+      "To make the crème diplomat, place the milk in a saucepan and gently bring to the boil with the split vanilla pod",
+      "Whisk the egg yolks and sugar until pale and creamy then add the flour, whisking thoroughly to ensure there are no lumps. Pour half the boiling milk into the egg mixture and whisk well",
+      "Return the mixture back to the pan and place over a medium heat. Cook, whisking constantly, for 5 minutes until the custard is smooth and until there is no flavour of flour left in the custard",
+      "Remove from the heat, transfer to a bowl and cover the surface with cling film to stop a skin forming on top. Allow to cool completely",
+      "While the pastry cream is cooling, prepare the apples. Make a dry caramel by adding the sugar to a heavy-based pan and placing over a medium heat. When it reaches an amber colour, add the honey and cook for 1–2 minutes",
+      "Add the apples and cook over a low heat for approximately 5 minutes until the apples are caramelised and golden. Remove from the heat, add the sweet wine and allow to cool",
+      "Once the pastry cream is cool, pass the ricotta through a sieve to remove any lumps and whisk into the pastry cream until smooth. Half-whip the double cream and fold into the mixture. Keep in the fridge until ready to serve",
+      "To serve, plate an arlette in the centre of each plate and add a large spoonful of the ricotta cream on top. Place another arlette in the cream and place two pieces of apple to the side. Drizzle with any excess caramel from the pan and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": "good quality",
+        "amount": "625",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten for brushing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled, cored and cut into 8 wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba9508dc3d80301a20b1c21362f63cbab667233861fc652fb675d141207a5513",
+    "lineage_hash": "29639a6d22a5ae8fdaa5bd118f9adf0f34e0d11348b8c4254e014592a37ffa95"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/apple-ricotta-creme-diplomat-recipe",
+    "fetchedAt": "2026-08-01T23:38:56.336Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/apple-ricotta-creme-diplomat-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

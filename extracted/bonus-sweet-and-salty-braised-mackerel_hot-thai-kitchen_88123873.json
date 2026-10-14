@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Sweet and Salty Braised Mackerel (Pla Tom Kem)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar and pestle, pound the peppercorns into a powder, then at the garlic and cilantro stems and pound into a fine paste.",
+      "In a medium-size pot, add the oil and the herpes and saute over medium heat until aromatic and the herbs have started to brown slightly.",
+      "Deglaze with the water, then add the ginger, fish sauce, palm sugar, and black soy sauce. Stir until the sugar is dissolved then at the mackerel fillets and the pork belly (if using). Top it up with more water if needed to keep the fish almost submerged, then loosely cover the pot and let it simmer gently on low heat for at least 20 minutes or until the pork belly is fork tender. You can keep it braising longer if you wish, the longer you braise the firmer and more flavourful the fish will be.",
+      "Once the fish is done, taste the sauce and adjust seasonings as needed. you want it to be sweet and salty in equal parts.",
+      "Serve with jasmine rice and pickled mustard greens, or another kind of pickle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": "or more if you like it peppery",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Stems",
+        "unit": null,
+        "notes": "chopped, or use 2 cilantro roots",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "chopped, or dark brown sugar",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "see note 1, or dark soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mackerel Filets",
+        "unit": null,
+        "notes": "cut in half if they won’t fit in your pot",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "oz",
+        "notes": "alt: pork butt, optional, see note 2, cut in ½-inch pieces",
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Mustard Greens",
+        "unit": null,
+        "notes": "for serving (optional, see note 3)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3834f4508480834c01e94abdbfddc6f22eafc42bc55731084800efb90df8b71a",
+    "lineage_hash": "f8b9754690006210e46f5902e344e3f2648ddca06819cf2c3825666fa4f0a340"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/braised-mackerel/",
+    "fetchedAt": "2026-08-02T02:05:07.306Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/braised-mackerel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

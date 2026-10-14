@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Chinese Mongolian Beef",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "437",
+      "carbohydrateContent": "7",
+      "fatContent": "31",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Cut the beef into thin slices.",
+      "Add salt, black pepper powder, starch and light soy sauce in the beef within a small blow and mix evenly.",
+      "Just before cooking process, add egg white to marinated beef and stir in one direction until you get a paste.",
+      "Heat up cooking oil in wok and stir fry beef slices around 1 to 2 minutes or until the beef begins to change color.",
+      "Move the beef slices out and leave the oil in wok. Add ginger slices, 2/3 of scallion sections and chili pepper shred to cook until aroma.",
+      "Return the beef slices in wok, do a quick fry and stir in stir fry sauce. Turn off the fire and add green onion sections and the left scallion. Mix well.",
+      "Transfer to serving bowl and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Tenderloin",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced into sections around 3cm",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced into sections around 3cm long",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": "dried, optional, cut into slices and seeds removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "peeled and cut into shreds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Egg",
+        "unit": null,
+        "notes": "only egg white needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Starch",
+        "unit": "tsp",
+        "notes": "cornstarch",
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir-fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir-fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir-fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir-fry sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir-fry sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71340dbf13c4872d04e7b65a18fb5a4c4243c47cfc36b0fb77765f99c266789a",
+    "lineage_hash": "151e466f265f52bab3e3777ea1823420ce16b1a8c5059698c33ca6660f891d65"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-mongolian-beef/",
+    "fetchedAt": "2026-08-01T22:01:57.025Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-mongolian-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

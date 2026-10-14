@@ -1,0 +1,269 @@
+{
+  "recipe": {
+    "name": "Christmas Fruit Cake",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Christmas Fruit Cake, organise all the necessary ingredients for the filling.",
+      "For the filling:  Place the dried apricot cubes in a mixing bowl.",
+      "Add the candied ginger...",
+      "... candied cherries...",
+      "... and pecans. I recommend using whole pecans instead of pecan halves for a crunchier effect.",
+      "Add the candied fruit mix...",
+      "... candied pineapple...",
+      "... Golden raisins...",
+      "... Port wine...",
+      "... and combine carefully with a spatula.",
+      "The filling mix is ready. Cover the bowl with cling film and set aside overnight at room temperature.",
+      "For the cake batter:  Organise all the necessary ingredients.",
+      "Tip the flour in the stand mixer recipient.",
+      "Add the salt...",
+      "... baking powder...",
+      "... ground ginger...",
+      "... ground cloves...",
+      "... and the cinnamon powder.",
+      "Combine the dry ingredients with a whisk. Set aside.",
+      "Place the softened butter and brown sugar in a separate bowl.",
+      "Beat the ingredients with the flat beater until homogeneous.",
+      "Add the eggs one by one. Start with one egg.",
+      "Continue kneading while adding the eggs. Make sure one egg is completely incorporated before adding another one.",
+      "Add the second egg and continue mixing.",
+      "Add the molasses to the stand mixer bowl...",
+      "... and combine again.",
+      "Add the tea (which has cooled down beforehand)...",
+      "... and the dry ingredients...",
+      "... and knead with the flat beater at low speed.",
+      "The finished batter should be brown, smooth and homogeneous.",
+      "Add the macerated mix to the cake batter. Add all of the Port wine as well.",
+      "Mix at low speed with the flat beater.",
+      "This is what the result should look like at this stage.",
+      "Use the base of a round springform mould and draw a circle with a pencil on a sheet of greaseproof paper.",
+      "Using scissors, cut a disc of greaseproof paper following the drawing.",
+      "Using the mould as a guide, cut a hole in the centre of the paper disc.",
+      "The mould has a height of 6cm.",
+      "Draw three strips to a width of 7cm (slightly larger than the mould height) on a sheet of greaseproof paper.",
+      "Cut the paper strips with a graduated ruler and a box cutter.",
+      "Grease the inside of the mould with an oil spray.",
+      "Line the sides of the mould with the paper strips. They will easily stick to the grease.",
+      "The result should be as shown in the photo.",
+      "Line the sides of the central cone with a paper strip as well.",
+      "Place the paper disc at the bottom of the mould. Flatten the paper disc with your hand.",
+      "Grease the baking parchment with oil spray.",
+      "Fill the mould with the fruit cake batter.",
+      "Even the surface of the cake with a rubber spatula.",
+      "On the surface of the cake batter, arrange pecan nuts...",
+      "... and whole candied fruits.",
+      "The result should be as shown in the photo.",
+      "Place in a fan-assisted oven preheated at 135°C...",
+      "... and bake for 2 hours.",
+      "Take the cake of the oven and insert the blade of a knife in the centre of the cake to check if it's cooked. The blade should be dry. Set aside to cool at room temperature.",
+      "Prepare a sugar syrup 30° baumé, using 100 grams of water and 135 grams of sugar. Bring to boil, then take the pan away from the heat when the sugar is completely melted.",
+      "Using a pastry brush, apply the sugar syrup over the surface of the cake. This will give a glossy finish to the candied fruits on the surface. Set aside to cool.",
+      "Open the springform pan and remove the sides of the mould.",
+      "Remove the strips of greaseproof paper on the sides...",
+      "... and in the central hole. Arrange the fruit cake on a serving plate.",
+      "The Christmas fruit cake is ready. It will keep well in an airtight container at room temperature. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricot Cubes",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Fruit Mix",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Pineapple",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour T55",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": "ground",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": "cassonade",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "g",
+        "notes": "cane sugar syrup",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tea",
+        "unit": "g",
+        "notes": "cooled down",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Fruit Mix",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup 30° Baumé",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b524c54810695379540a590252a8591defc725e465320151ce9f7e755ec0f68b",
+    "lineage_hash": "3e5aee27de0c21adacd463e31224770055f7e62e0e03752d8bfe242db9748731"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-fruit-cake.html",
+    "fetchedAt": "2026-08-02T10:13:16.529Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-fruit-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

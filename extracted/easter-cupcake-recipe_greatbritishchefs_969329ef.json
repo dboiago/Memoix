@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Easter Cupcake",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the flour, sugar, baking powder, salt and butter in a freestanding mixer with a paddle attachment, or use a handheld whisk. Beat on a slow speed until you have a sandy consistency",
+      "Gradually pour in half of the milk, and beat until the milk is just incorporated",
+      "Whisk the egg, vanilla extract and remaining milk together in a separate bowl. Then pour the liquid into the flour mixture and beat until just incorporated. Scrape down the sides, and beat for a few more minutes. It’s important not to over-mix the batter",
+      "Spoon the mixture into the paper cases until two-thirds full, and bake in the preheated oven for 20-25 minutes, or until light golden and the sponge springs back when pressed. A toothpick inserted into the centre should come out clean",
+      "Cool on a wire rack, and ice with frosting and sprinkles once cool",
+      "For the frosting, beat the icing sugar and butter together with a handheld whisk or free standing mixer with paddle attachment, until the mixture comes together",
+      "Turn the mixer down to a slow speed. Combine the milk and vanilla extract, and add to the mixture a few tablespoons at a time",
+      "Once incorporated, turn the mixer speed up and beat for about 5 minutes, or until the frosting is light and fluffy. Then use food colourings to create whatever shade you like!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "756bc5b1e853268ddbd093d7a752b5b41013c912b7981e817649e9070dada4ef",
+    "lineage_hash": "ffb300ad3eecf55844a252c1397293302e774efc33f9d933c158c8e97a0c0063"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-animal-cupcake-recipe",
+    "fetchedAt": "2026-08-03T22:49:08.690Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-animal-cupcake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

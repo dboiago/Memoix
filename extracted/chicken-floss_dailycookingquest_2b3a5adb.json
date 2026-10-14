@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chicken Floss",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place chicken breast, scallions, ginger, soy sauce, Shaoxing wine, and water in a pot. Bring to a boil. Reduce to a simmer, cover the pot, and cook for 30 minutes. Turn off heat, remove the chicken from the pot and set aside to cool.",
+      "Once the chicken is cool enough to handle, tear the meat into thin shreds. I use my hands, but you can use two forks.",
+      "In a mixing bowl, mix the shredded chicken meat with soy sauce, fish sauce, oyster sauce, sugar, brown sugar, and ground white pepper.",
+      "Heat 3 tablespoon oil in a wok/frying pan on medium heat. Add the chicken into the pan. Stir until dry, about 10-15 minutes. Then turn the heat to low, keep stirring and tossing until fully dry and even slightly toasty, about 45 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pair Boneless Skinless Chicken Breast",
+        "unit": null,
+        "notes": "about 650-700 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "knotted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "cut into thin slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "939a531b4646301ee0f858f7e9bed136005e69761cefa8924457aa4b2992b7e7",
+    "lineage_hash": "f71a053c3ff25b7ea0dbdbf3671dad7b71eb496049cb4d6de165a9df1b90c4e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chicken-floss.html",
+    "fetchedAt": "2026-08-02T04:26:45.656Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chicken-floss.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

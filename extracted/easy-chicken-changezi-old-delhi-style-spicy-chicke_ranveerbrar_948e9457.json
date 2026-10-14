@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Chicken Changezi (Old Delhi style spicy Chicken)",
+    "time": "30-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, ginger garlic paste, salt to taste, curd, turmeric powder, degi red chili powder, coriander powder and mix everything well.",
+      "Keep it aside for further use.",
+      "In a shallow pan, add oil, once it's hot, add onion and shallow fry on medium flame for 3-4 minutes until translucent, transfer it into a tray.",
+      "Add cashew nuts into the same pan and fry for 1-2 minutes on low flame and transfer it to the",
+      "Add degi red chili powder, turmeric powder, coriander powder and salt to taste.",
+      "Transfer it into a grinder jar and make a coarse paste.",
+      "Keep it aside for further use.",
+      "In a shallow pan or tawa, add fried onion oil, once it's hot, place marinated chicken into the oil.",
+      "Shallow fry the chicken for 7-8 minutes on medium flame or until tender.",
+      "Transfer it onto a plate and keep it aside for further use.",
+      "In the same pan or tawa, add fried onion oil, once it's hot, add black cardamom, cloves, cinnamon stick and let it splutter.",
+      "Add ginger garlic paste, green chili and saute on medium flame.",
+      "Add fresh tomato puree and let it cook for 4-5 minutes.",
+      "Once the tomato puree is cooked, add prepared onion masala and saute it well on medium flame.",
+      "Add curd, coriander powder, degi red chili powder, cumin powder and saute well.",
+      "Add cooked chicken and mix well, add water and let it cook for 5-6 minutes on medium flame.",
+      "Transfer it onto a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "thigh & drumstick",
+        "amount": "900",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for shallow fry",
+        "amount": "0",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Onion Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Cooking Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooking Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Onion Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Chicken Changezi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a307f172843cd981befba6af98dc4f03b3c211f8609d2816d712a111f8eeee02",
+    "lineage_hash": "b96f0046b54da917b269b900612799bd591af98159b58f582829eeaec2766a73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-changezi/",
+    "fetchedAt": "2026-08-02T13:40:00.748Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-changezi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

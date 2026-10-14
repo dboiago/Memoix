@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Corn Pudding Flambé",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the corn and drain it. Heat the corn in a saucepan with the milk; bring to a boil and cook for 7-8 minutes.",
+      "Puree it in a blender as finely as possible. For a smoother, silkier pudding, run it through a sieve.",
+      "In a separate bowl, break the egg and mix it with 1/4 cup sugar and 2 tablespoons flour.",
+      "Pour the puree over the beaten egg and heat it in a pan. Cook, stirring, for 2-3 minutes and remove from heat.",
+      "Pour the pudding into a cold bowl to stop the cooking, then transfer it into 4 small cups and let it cool completely.",
+      "Cover the surface with 1 teaspoon sugar and ignite it, or run it briefly under the broiler on maximum temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Corn",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f0627030cdacc0e0758af9c1e858e20f9b9eecea131ccb9e277a1a1eb4a3a8c",
+    "lineage_hash": "18f8bbe1b13c31826dd35e04b9b7a2534d8081ef1a4f1b738c8b2263ab8127c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/corn-pudding-flambe",
+    "fetchedAt": "2026-08-03T05:04:25.290Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/corn-pudding-flambe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

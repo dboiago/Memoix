@@ -1,0 +1,301 @@
+{
+  "recipe": {
+    "name": "Coconut, Lime, Chilli and Lemon Balm",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the ice cream, bring the coconut boiron, full fat milk, semi-skimmed milk powder and salt to the boil",
+      "Whisk together the egg yolks and sugar. Add half of the heated milk mixture over the yolks and sugar, then transfer back to the pan",
+      "Cook the custard to 82°C, ensuring that the heat is at medium-low, and mixing with a spoon as you go. The mixture should just coat the back of the spoon",
+      "Remove from the heat, then pass through a fine mesh strainer into a bowl set over an ice bath",
+      "Chill in the fridge until fully cold, about 3 hours",
+      "Add the Malibu and churn in an ice cream machine. Store in the freezer, ideally at -18°C, until needed",
+      "For the granita, first make a simple stock syrup by bringing the sugar and water to the boil, and then boiling hard for 30 seconds. Remove from the heat and let cool",
+      "Blend the remaining granita ingredients in a high speed blender",
+      "Mix them with the cold simple syrup, then pass through a fine mesh strainer",
+      "Spread the mixture in a half gastro tray and then place in the blast chiller or the freezer. Scrape up the granita with a fork every 30 minutes until you obtain a fine grain granita. Store in the freezer until needed",
+      "For the gel, mix the lime purée, calamansi purée, agar agar, sugar and a drizzle of lime juice in a pan",
+      "Bring to the boil and cook for 2 minutes at a simmer",
+      "Pass through a fine mesh strainer over a half gastro tray and allow to set, about 2 hours",
+      "Once set, blend in a Thermomix at 40°C for 3 minutes. Then, blitz without any temperature on full speed for a further 6–8 minutes until a smooth gel is obtained",
+      "Pass again through a fine mesh strainer and store in piping bags until needed",
+      "Heat the mandarin boiron, then add the sugar and salt to taste",
+      "Remove the purée from the heat, and then let cool",
+      "Weigh the cooled purée, and add 15g agar agar for every 1kg of mandarin boiron",
+      "Bring to the boil and cook for 2 minutes at a simmer",
+      "Pass through a fine mesh strainer over a half gastro tray and allow to set in the fridge – about 2 hours",
+      "Once set, blend in a Thermomix at 40°C for 3 minutes. Then, blitz without any temperature on full speed for a further 6–8 minutes until a smooth gel is obtained",
+      "Pass again through a fine mesh strainer and store in piping bags until needed",
+      "For the meringue, sieve the icing sugar and then add the toasted coconut. Mix well",
+      "In a stand mixer with the whisk attachment fitted, start whisking the egg whites at a slow speed",
+      "Increase the speed in three stages while adding the coconut and icing sugar until you have a meringue with stiff peaks",
+      "Preheat the oven to 120°C, fan speed 1",
+      "Use a spatula to transfer the meringue to a piping bag with a small round nozzle fitted",
+      "Pipe straight, thin and even lines of meringue over a silpat-lined baking sheet",
+      "Bake in a preheated for 25 minutes or until crispy",
+      "Allow to cool, then remove and cut into 10 cm long sticks. Store in a dry container until needed",
+      "On a cold plate with a 12cm-wide well, place three dots of the mandarin gel and two dots of the calamansi gel",
+      "Crush some meringue sticks and sprinkle over them",
+      "Spoon over the granita, taking care that it does not overlap the gel, then add some meringue sticks",
+      "Garnish with a few lemon balm sprigs, and some strips of lime peel",
+      "Top with a small rocher of the coconut ice cream and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Boiron",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malibu",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "seeds removed",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Boiron Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calamansi Boiron Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mandarin Boiron",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": "toasted and cooled",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Balm Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Peel",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af076390e0fa9e24577cd36b5903157e4d9bc751d7f013c484e4d4ff1f7178dc",
+    "lineage_hash": "2181becbc3bb64683e21171098ceb67502409ca0a49e693bf4ffa729b44d373e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-lime-chilli-lemon-balm-recipe",
+    "fetchedAt": "2026-08-02T10:35:22.997Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-lime-chilli-lemon-balm-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

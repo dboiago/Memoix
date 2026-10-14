@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Braised Pork Carnitas",
+    "time": "1 hr 25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "249",
+      "carbohydrateContent": "6",
+      "fatContent": "8",
+      "proteinContent": "36"
+    },
+    "directions": [
+      "In a large, deep frying pan or a stockpot over medium-high heat, melt the lard. While the lard is heating, season the pork on all sides with 1 teaspoon salt. When the lard is hot, working in batches to avoid crowding, add the pork and cook, turning once, until browned on both sides, 3–4 minutes on each side. Transfer to a plate and repeat until all the pork is browned.",
+      "While the pork is browning, make the braising liquid. In a blender, combine the water, orange juice, onion, garlic, chiles, oregano, cumin, cinnamon, 1 tablespoon salt, and the pepper and blend until smooth.",
+      "When all the pork is browned, return it to the pan and pour in the braising liquid. Sprinkle the sugar evenly over the meat and set the thyme sprigs and bay leaves on top. Reduce the heat to medium-low, cover, and cook until the pork is fork-tender, about 1 hour.",
+      "If you like carnitas tender, shred the pork or chop it into bite-size pieces and keep warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lard",
+        "unit": "Tbsp",
+        "notes": "or solid vegetable shortening",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Shoulder",
+        "unit": "lb",
+        "notes": "do not remove fat, boneless, cut into 5-inch chunks",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Peppers in Adobo Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c50047aaebcb5ef3c3b1b9e4996d1c041d92039f771ebfc9bae4869c28287ec",
+    "lineage_hash": "8c4f05593d27c3199bd626087994dcaf56619ffff4ea82b8afa188d2c3ad26d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/braised-crispy-pork-carnitas-dutch-oven/",
+    "fetchedAt": "2026-08-02T04:26:49.522Z"
+  },
+  "rawSource": "https://muybuenoblog.com/braised-crispy-pork-carnitas-dutch-oven/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Breakfast Tartlets",
+    "time": "35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the bacon and the sausages on a baking tray for 15 minutes, or until cooked through. Set aside to cool slightly",
+      "Unroll the pastry onto a lightly floured board and cut into six rectangles. Using a sharp knife, score a border 1cm from the edge so that it looks like a picture frame, but being careful not to cut all the way through the pastry",
+      "Spread 1 tsp of tomato purée over the centre of each tartlet, leaving the border clear. Chop the cooked bacon and sausages into small pieces and scatter over the tomato base, leaving a small area in the centre for the egg",
+      "Transfer the pastry rectangles to a baking tray lined with baking parchment, leaving a small gap in between each tartlet",
+      "Bake in the oven for 5 minutes, by which time the pastry border should have puffed up around the edge. Carefully crack a quail egg into the centre of each tartlet and bake for a further 5 minutes",
+      "Remove from the oven and scatter each tartlet with some chopped chives before serving immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": "ready-rolled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": "for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": null,
+        "notes": "rashers",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipolatas",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quail Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "499d8fe2d1c73327a87303ff8d77dc7f32bd348a339bc901792ff2041892a553",
+    "lineage_hash": "e32a15a568eea5cc7589d7554f64fea8c440f90c9ae6cf6dc24862c9bbc7ccb5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/all-day-breakfast-tartlets-recipe",
+    "fetchedAt": "2026-08-03T14:11:32.411Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/all-day-breakfast-tartlets-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

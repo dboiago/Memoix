@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Classic Black Forest Cake",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "236",
+      "carbohydrateContent": "33",
+      "fatContent": "10",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cook the cherries with the sugar until boiling. Stir in the corn starch slurry and bring it to a boil to thicken.",
+      "Gather all the components for the cake.",
+      "Brush the layer with lots of Kirschwasser syrup. Pipe a dam of cream around the layer. Spread the cherry filling inside the dam and top the cherries with cream.",
+      "Wrap the sides of the cake with plastic so the cake doesn’t dry out. Refrigerate several hours or over night before serving.",
+      "Combine 24 oz fresh or frozen pitted sour cherries and their juice with 4 oz Kirschwasser, set aside for at least 3-4 hours (I like to soak the cherries the night before baking).",
+      "Drain 1 cup of juice from the cherries, set is aside for later.",
+      "In a small bowl, whisk together 1 ¼ oz corn starch with another ¼ cup of the juice. Combine the cherries and any remaining juice with 4 oz granulated sugar in a saucepan.",
+      "Cook over medium heat until the sugar melts and the liquid begins to boil. Reduce the heat to low and stir the cornstarch slurry into the cherries. Cook until the mixture comes to a boil, thickens and the juice becomes translucent. Transfer the cherries to a bowl, cover with plastic wrap and cool to room temperature. Chill until you're ready to assemble the cake.",
+      "Combine the reserved cup of cherry juice with 4 oz granulated sugar in a small saucepan and heat until the sugar is melted. Remove from the heat and stir in 2 tablespoons kirschwasser. Remove 12 nice looking cherries from the cherry filling and set them aside for garnishing the top of the cake.",
+      "Split each cake horizontally into 2 layers so you have a total of 4 layers. Whip 16 oz heavy cream with 1 oz confectioner’s sugar and 1 ½ teaspoons vanilla extract to stiff peak. Fill a pastry bag fitted with a large star tip with ½ of the whipped cream and leave the rest of the cream in the bowl.",
+      "Set one layer of the cake onto a cardboard cake round or a serving plate. Brush the layer with ¼ of the cherry/Kirschwasser syrup. Pipe a dam of cream around the edge of the layer.",
+      "Spread ⅓ of the cherry filling within the border. Spread ¼ of the cream from the bowl over the cherries.",
+      "Add the second and third layers of the cake in the same way. Top with the final layer and brush the remaining syrup on top. Spread the remaining cream from the bowl evenly over the top of the cake and use the rest of the cream in the bag to pipe 12 rosettes evenly spaced around the top of the cake.",
+      "Wrap the sides of the cake in plastic wrap so it doesn’t dry out and refrigerate for at least 2-3 hours.",
+      "To serve, place one of the reserved cherries on each rosette and then scatter chocolate shavings (or use sprinkles or mini chocolate chips) over the center of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Or Frozen Pitted Sour Cherries and Their Juice",
+        "unit": "oz",
+        "notes": "see note, fresh",
+        "amount": "24",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Kirschwasser",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¼",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cherry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Chocolate Genoise",
+        "unit": null,
+        "notes": "baked in two 8\"x3\" pans",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Kirschwasser",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Shavings (or Mini Chips for Decoration)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38069f901f9cf74890f9a8cc9cbea96181a9eeee9607fa2db37d0eb84aa4fe4f",
+    "lineage_hash": "eba20418a5fcae314b34175064e69c93b16856600330fccea724ccaaeff24212"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/06/19/classic-black-forest-cake/",
+    "fetchedAt": "2026-08-01T16:10:10.056Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/06/19/classic-black-forest-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

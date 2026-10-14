@@ -1,0 +1,232 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse Cake With Raspberry Sorbet",
+    "time": "3 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the chocolate mousse by melting the dark chocolate, butter and cocoa powder together over a bain marie and combine with a whisk. When the chocolate butter mixture is combined, take off the heat",
+      "Whisk the egg yolks with 100g of caster sugar until pale and smooth. Fold in the chocolate/butter mix and start to make a meringue with whites and remaining sugar. As they start to foam, slowly start to add the remaining 100g of caster sugar. Continue to whisk until all the sugar has been added and soft to medium peaks form",
+      "When the meringue is ready, gently fold into the chocolate mixture a third at a time. Leave to cool for 10 minutes. Whisk the cream until medium to stiff peaks form",
+      "Gently fold the cream into the chocolate mix a third at a time, being careful not to continue mixing as soon as all the ingredients are combined. Place into a suitable container and leave to set in the fridge",
+      "Preheat the oven to 180°/gas mark 4. For the chocolate sponge whisk the yolks and 150g of caster sugar until pale and fluffy. Make a meringue using the same method as above with the whites and remainder of the caster sugar",
+      "Sift the cocoa powder into the egg yolk mix and mix well. Gently fold the meringue into the egg yolk, cocoa powder mixture a third at a time. Spread evenly into a shallow, lined baking tray so the sponge mix is approximately 1cm thick",
+      "Bake for 5-8 minutes in the preheated oven until it starts to come away from the edges of the tray. Remove from the oven and sprinkle with caster sugar. Turn onto a cooling rack and remove silicon paper while still warm",
+      "Start the glaze by soaking the gelatine in cold water. Combine the water, caster sugar, cocoa powder and cream and bring to the boil. Remove from the heat. Remove the gelatine from the water and squeeze out any excess. Add to the hot cream mixture and whisk until combined",
+      "Strain the mixture into a pouring jug and  and leave in a warm place as it will be used to coat the sponge at a later stage",
+      "For the sorbet, combine the water, sugar and glucose in a saucepan and bring to the boil. Remove from the heat and set aside to cool. Once the syrup has cooled, combine with the raspberries in a blender and blitz until smooth. Pass through a fine strainer. Churn in an ice cream machine until desired consistency is reached",
+      "For the raspberry sauce, combine the sugar and water in a saucepan and bring to 104˚C. Add the the raspberries and remove from the heat. Leave to sit for thirty minutes before pushing through a fine chinois. Refrigerate until ready for use",
+      "To assemble, cut the sponge into even sized pieces. Place half the sponge into a second tray that has been lined with cling film. Pour over the chocolate mousse until approximately 1.5cm deep. Place the remaining sponge onto of the mousse and place in the freezer until firm",
+      "Remove from the freezer and cut into1 ½ cm x 5 cm pieces. Place the pieces onto a cooling rack with a tray underneath. Coat with the glaze using a ladle and leave to set in the fridge for at least two hours",
+      "To serve, mix a few fresh raspberries with the raspberry sauce and arrange on the plate. Place the mousse cake beside the berries and on the other side of the plate add a little raspberry sauce as a base for a quenelle of sorbet. Garnish with some extra raspberry sauce and grated chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "255",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "few reserved for garnish",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fc10b7f14705585f25403329957c944f35d1b1ee97da1254f16375522f6582dc",
+    "lineage_hash": "4941c8486c63684312b7a715fbea13f37e25767ae01a7c9ccb8d63d96db5283a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-cake-recipe-raspberry-sorbet",
+    "fetchedAt": "2026-08-03T21:32:28.065Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-cake-recipe-raspberry-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

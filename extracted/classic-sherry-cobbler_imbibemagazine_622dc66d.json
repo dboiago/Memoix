@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Classic Sherry Cobbler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Julep Cup",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sherry, sugar and 2 quarter wheels each of the orange and lemon in a shaker with ice and shake briskly. Strain into a julep cup filled with crushed ice, garnish and serve with a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amontillado Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar",
+        "unit": "tsp",
+        "notes": "or granulated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheel Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheel Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4953b982a340f68f42999ba34b33fbd31c279af35e65ccc7fa484cf6fcabddd5",
+    "lineage_hash": "8121fb255d9af20a0b95d7f435a6a02b46c7904286ac5424aa417e01e6387df5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/sherry-cobbler/",
+    "fetchedAt": "2026-08-03T23:48:15.364Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/sherry-cobbler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

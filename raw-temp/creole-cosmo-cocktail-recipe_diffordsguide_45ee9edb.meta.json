@@ -1,0 +1,44 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/598/creole-cosmo",
+  "slug": "creole-cosmo-cocktail-recipe_diffordsguide_45ee9edb",
+  "title": "Creole Cosmo Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:42:52.879Z",
+  "ldName": "Creole Cosmo",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "After dinner/digestif",
+    "Aperitivo/aperitif",
+    "Citrusy",
+    "Sours (citrus)"
+  ],
+  "ldIngredientsRaw": [
+    "40 ml Créole Shrubb liqueur",
+    "20 ml Agricole rhum (unaged)",
+    "30 ml Cranberry juice",
+    "15 ml Lime juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of lime zest twist.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Express lime zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "158 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Crunchy And Lightly Charred Carrots",
+    "time": "1 hr 5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Prepare a sous vide immersion circulator, such as Joule by ChefSteps, according to the manufacturer's instructions and set the water temperature for 185°F (85°C).",
+      "Peel the carrots. Place the purple, red, and orange carrots into one zipper freezer bag then place the yellow and white carrots in a second bag in order to keep the darker colored carrots from staining the lighter ones. Divide the butter, sage, and rosemary between the two bags. Carefully submerge the bags in the water bath until most of the air has been removed and then seal the bags. Once the bags are submerged, cook for one hour.",
+      "Fire up. Prepare a grill for medium high heat cooking.",
+      "Cook. Once the grill is ready, remove the carrots from the bags and set the remaining liquid aside to use later. Place the carrots on the hot side of the grill. Grill until lightly charred, four to five minutes.",
+      "Serve. Remove carrots from the grill, immediately toss with the herb butter sauce from the sous vide bag, and plate. Sprinkle with coarse sea salt just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rainbow Carrots",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "136f73e4b57b243c572a5d4699078bd49275c1bda1f54375fa9177158d5a4f21",
+    "lineage_hash": "d9a8e0bcd18a192093c81c2df997879161f95da7ec56e2ceeb6a0ef513ec06f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/vegetable-slaw-salad-and-dressing-recipes/sous-vide-que-charred-carrots-recipe/",
+    "fetchedAt": "2026-08-01T22:26:40.491Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/vegetable-slaw-salad-and-dressing-recipes/sous-vide-que-charred-carrots-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

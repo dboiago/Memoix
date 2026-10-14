@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Air Fryer Garlic Green Beans",
+    "time": "13 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "70",
+      "carbohydrateContent": "9",
+      "fatContent": "3.7",
+      "proteinContent": "2.4"
+    },
+    "directions": [
+      "Thoroughly pat the green beans dry with paper towels. Preheat the air fryer to 400°F (200°C). Line the air fryer tray with parchment paper for easy cleanup (optional).",
+      "Place the green beans in a big bowl, then add olive oil and salt. Toss to mix well. Spread the green beans onto the air fryer tray with as little overlap as possible. You might need to cook them in two batches. Air fry for 4 to 5 minutes, until the green beans are blistered but have not turned soft.",
+      "Remove the air fryer tray. If you are cooking in two batches, add back the first batch of blistered green beans. Add the garlic, soy sauce and chili oil, if using. Toss a few times to mix well. Arrange the green beans so they’re spread out evenly with minimal overlap. Keep air frying for another 2 to 3 minutes, until the green beans have reached the desired doneness.",
+      "Transfer everything to a serving plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Beans",
+        "unit": "lb",
+        "notes": "450 g, tough ends removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edb3d01c06f4e9f054a82f8850551083d96c3c6b170f1bf336b782d141bcda28",
+    "lineage_hash": "40a0158971a55daa7434c2a3f3847e4f02a959fbd0d90382d5112588ed5bf379"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-garlic-green-beans/",
+    "fetchedAt": "2026-08-02T01:32:32.091Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-garlic-green-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

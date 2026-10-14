@@ -1,0 +1,44 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/605/cuban-cocktail-no-2",
+  "slug": "cuban-cocktail-no-2-recipe_diffordsguide_25b4f84e",
+  "title": "Cuban Cocktail No. 2 Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:51:08.004Z",
+  "ldName": "Cuban Cocktail No. 2",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif",
+    "Classic/vintage"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Light gold rum 1-3yo",
+    "5 ml Maraschino liqueur",
+    "5 ml Grenadine syrup",
+    "5 ml Lemon juice",
+    "1 dash Orange bitters",
+    "2.5 ml Sugar syrup (2:1)"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a NICK &AMP; NORA GLASS.",
+    "Prepare garnish of lemon zest twist.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS lemon zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "130 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

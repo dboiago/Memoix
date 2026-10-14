@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chinese Brined Turkey",
+    "time": "3060 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "341",
+      "carbohydrateContent": "3.9",
+      "fatContent": "19.1",
+      "proteinContent": "35.3"
+    },
+    "directions": [
+      "The purpose of the citrus is to fill the turkey cavity. A mix of citrus is best, but use whatever you have on hand! You just need enough to fill the turkey.",
+      "The container should be large enough to hold the turkey and fit inside the fridge. I found the fridge vegetable drawer (the one on the bottom) works perfectly in this case.",
+      "USDA recommended safe temperature.",
+      "The small window on the top will let steam out and keep the turkey skin crispy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Young Turkey",
+        "unit": null,
+        "notes": "14 to 16 pound / 6 to 7 kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inches",
+        "notes": "5 cm, sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onions",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citrus Fruits (i Used Lemon, Grapefruit and Orange) *",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Sake",
+        "unit": "C",
+        "notes": "or Shaoxing wine, or dry sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": "or make your own",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4eaaca58c07870afb0f307b46b7429ebad1523684cbeb7c911b7ff7c424634a8",
+    "lineage_hash": "59d4ca8f30f3aa173df0e27328f3862348fbf7ca0237807a11269cf4065a8751"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-brined-turkey/",
+    "fetchedAt": "2026-08-01T18:02:48.840Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-brined-turkey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

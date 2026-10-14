@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Double-Blueberry Streusel Muffins",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 375°F (190°C) and line a muffin tin with paper liners.",
+      "In a mixing bowl, whisk the flour, ½ cup (100 g) sugar, lemon zest, baking powder, salt and nutmeg. Stir in the melted butter and blend until the mixture is an even crumbly texture. Set aside.",
+      "Measure ½ cup (75 g) of the flour mixture into a separate bowl and stir in the remaining 1 Tbsp (12 g) sugar and the cinnamon to make a streusel topping. Set aside.",
+      "Add the milk, eggs and vanilla to the remaining flour mixture and whisk until smooth. Stir in the fresh and dried blueberries.",
+      "Divide the batter between the muffin cups and sprinkle the tops with the streusel topping. Bake the muffins for about 25 minutes, until a toothpick inserted in the centre of one comes out clean. Cool the muffins in the tin for 10 minutes, then remove them from the tin to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "260 g",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "112 g, divided",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "still warm is ok, 115 g, melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "2% Milk",
+        "unit": "C",
+        "notes": "160 mL, at room temperature",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "fresh, 190 g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "dried, 75 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "386396506b66e42f4374148d86629d2890cbf5d908b5719a9e4b8d2f419c9b33",
+    "lineage_hash": "334b3da1c2f3a1665da3a248731cc266d9f9f057db188cca984d8f578afef5aa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/double-blueberry-streusel-muffins/",
+    "fetchedAt": "2026-08-02T00:52:55.851Z"
+  },
+  "rawSource": "https://annaolson.ca/project/double-blueberry-streusel-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

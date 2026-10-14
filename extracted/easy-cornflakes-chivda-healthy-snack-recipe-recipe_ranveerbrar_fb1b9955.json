@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Cornflakes Chivda (healthy snack)",
+    "time": "20-25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai dry toast the corn flakes for a minute and then add salt and sugar let it milt and coat the corn flakes.",
+      "Now in another bowl add salt, sugar, red chilli powder, dried mango powder and mix it properly, add it to the corn flakes and keep on tossing it until well coated. Remove in a bowl and keep aside.",
+      "In same kadai add oil heat it and add green chilli, dried red chilli, curry leaves, saute it and add cashew nuts, peanuts, coconut flakes, raisins, dried cranberries and saute for some time.",
+      "Now add the corn flakes mixture in it and mix well.",
+      "Do a final seasoning with dried mango powder, Sugar, black pepper and store it in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Corn Flakes",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Seasoning mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoning mix",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoning mix",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "Seasoning mix",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "cut into pieces",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": "cut into pieces",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flakes",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "⅓",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "Final Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Final Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "Final Seasoning",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c65af3ef5f242c9a003eb9dae10ae3593337eeb4afa7ac3e4b4e7578421a0a8",
+    "lineage_hash": "e2e564c6c7e411cf33caa320ce4bdf866c545131b38f7b6b65171fd410bbdd5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cornflakes-chivda/",
+    "fetchedAt": "2026-08-02T17:47:21.028Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cornflakes-chivda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Banana Bread",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter a 9-inch (23cm) loaf pan and line the bottom with a sheet of parchment paper. Preheat the oven to 350ºF (180ºC).",
+      "Whisk together in a large bowl, the flour, baking powder, baking soda, salt, and cinnamon, making sure there are no lumps. Whisk in the sugar.",
+      "In a large bowl, mix together the butter, egg white, egg, banana puree, sour cream or buttermilk, vanilla, and espresso, if using.",
+      "Make a well in the center of the flour mixture and use a flexible rubber or silicone spatula to stir in the wet ingredients with a spatula until partially mixed. Add in the chocolate chips, cocoa nibs, or chopped nuts, and fold them in until everything is just combined, but don’t overmix. Stop when any traces of flour disappear.",
+      "Scrape the mixture into the prepared pan and bake for 50-55 minutes, or until the center feels done. A toothpick inserted into the center should come out clean.",
+      "Cool on a baking rack before removing from the pan and slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "30g, melted, salted or unsalted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Puree",
+        "unit": "C",
+        "notes": "250ml, made from about 2 very ripe, large bananas",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "125ml, regular or low-fat, or buttermilk",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Espresso",
+        "unit": "Tbsp",
+        "notes": "cooled to room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": "80g, 1/4 cup (40g) roasted cocoa nibs, or 2/3 cup (75g) toasted pecans or walnuts, coarsely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48813ef8259c5486f3340432f365566fd9cec5c8686b08cc01677d195c43375d",
+    "lineage_hash": "88b1748a1f117590dd8bb4ec74bd7dc5f8cbe9138ffd3bbe28d79a9278490435"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/banana-bread-or-1/",
+    "fetchedAt": "2026-08-02T20:49:13.386Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/banana-bread-or-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

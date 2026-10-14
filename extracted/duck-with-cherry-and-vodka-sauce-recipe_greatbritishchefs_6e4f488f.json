@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Duck with Cherry and Vodka Sauce",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pat the duck breasts dry with kitchen paper. Score the skin with a sharp knife and season with sea salt and black pepper",
+      "Place the duck breasts, skin-side down, into a cold, dry frying pan. Turn the heat up to a high heat and cook for 5 minutes, until the fat begins to render and the skin turns golden brown",
+      "Slice the courgettes lengthways and drizzle with half of the oil. Season with salt and pepper and place in the oven",
+      "Flip the duck breasts over, cook for a further minute and then transfer them to a tray. Cook in the oven for 15 minutes (pink) or up to 18 minutes (well-cooked)",
+      "When the duck and courgettes are ready, remove from the oven, cover with foil and leave in a warm place to rest",
+      "In the meantime, make the cherry and vodka sauce. Place the cherries, vodka, stock, honey and cornflour in the Vitamix container and secure the lid. Turn the dial to 1 and slowly increase the speed to 10. Blend for 3 minutes",
+      "Pour the remaining olive oil through the lid plug opening and secure the lid plug again. Turn the dial to 1 and slowly increase the speed to 10 then blend for a further 2 minutes",
+      "To reheat the sauce or thicken it, transfer to a small pan and simmer for 5 minutes to reduce or reheat",
+      "To serve, pour some of the sauce onto the base of each plate. Carve the duck breasts and serve with the courgettes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Courgettes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": "mixed into a paste with a little water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8eebc3ca2b5ee997f3965ba15c175041f5e55953d0fc832109f1a84d6ed036f7",
+    "lineage_hash": "86d452fface71aecb21f121040fd17ad6e9cec1de345293809c3db606b11ee6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-with-cherry-vodka-sauce-recipe",
+    "fetchedAt": "2026-08-03T10:50:03.917Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-with-cherry-vodka-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

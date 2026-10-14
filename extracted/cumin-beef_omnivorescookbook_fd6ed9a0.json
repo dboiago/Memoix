@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Cumin Beef (孜然牛肉)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "418",
+      "carbohydrateContent": "13.1",
+      "fatContent": "22.2",
+      "proteinContent": "39.8"
+    },
+    "directions": [
+      "Cut the flank steak along the grain into two even pieces, then slice it against the grain into pieces that are around 1/4” (5 mm) thick.",
+      "Combine beef, salt, baking soda and vegetable oil in a big bowl. Mix well. Let marinate for 30 minutes at room temperature.",
+      "Combine the ingredients for the spice mix in a small bowl.",
+      "When you’re ready to cook, drain the extra liquid from the bowl of beef. Add the cornstarch, a few tablespoons at a time, and mix, until all pieces are coated.",
+      "Heat 2 tablespoons of oil in a wok or large skillet over medium-high heat until hot. Cook in batches, spreading the beef slices without overlapping. Cook until the bottom turns golden and crispy, 2 to 3 minutes. Flip the slices to fry the other side, until golden brown and crispy, another 1 to 2 minutes. (*Footnote 1) Transfer the beef to a large plate. Cook the rest of the batches. Add more oil if the pan gets dry, and turn to medium heat if the pan starts to smoke too much.",
+      "Add the remaining 1 tablespoon oil, the dried Chinese chili peppers, ginger, and garlic. Stir a few times to release the fragrance. Add the onion. Stir and cook for about 1 minute, until the onion just starts to turn tender. Add back the beef and sprinkle the spice mix all over. Stir immediately to coat the meat with spice. Remove the pan from the stove and carefully taste a piece of beef. Sprinkle a bit more salt on it, if needed. Turn off the heat. Add the sesame seeds and cilantro. Stir again. Transfer everything to a big plate immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Flank Steak",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Chili Flakes",
+        "unit": "tsp",
+        "notes": "or Korean chili flakes",
+        "amount": "2",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "¼",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried, halved crosswise and seeds removed",
+        "amount": "8",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "sliced into 1/2” (1 cm) thick pieces",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "5",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "for garnish",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Cilantro",
+        "unit": "C",
+        "notes": "Optional, for garnish",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da3a541dc3d767aea9c45e959a555ad2917b4579a0909e99e2fa150407f567a9",
+    "lineage_hash": "f5b385637056c69f3450aad66274ca6bbd3d81c717124af4d3b665e6f95bedc0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cumin-beef/",
+    "fetchedAt": "2026-08-02T08:22:29.399Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cumin-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

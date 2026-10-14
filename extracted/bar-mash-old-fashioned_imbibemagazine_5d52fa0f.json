@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Bar Mash Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Peel",
+      "Lemon Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the orange peel with the simple syrup in an Old Fashioned glass. Add the bourbon and bitters and stir, then add a large chunk of ice and stir to chill. Twist a lemon peel over the drink to express the citrus oils and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hopped Grapefruit Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strip Orange Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strip Lemon Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f3affba1fbd1945c8c43d98403104dded3f349196ddb200b96013e41927a4c6",
+    "lineage_hash": "6ce468706894521dc9171ad60ca2e39b86894fa47149a5c5423a06f46475b604"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-mash-old-fashioned/",
+    "fetchedAt": "2026-08-03T19:42:16.165Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-mash-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

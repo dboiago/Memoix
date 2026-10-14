@@ -1,0 +1,71 @@
+{
+  "url": "https://thewoksoflife.com/peanut-mochi-coconut/",
+  "slug": "coconut-peanut-mochi-nuo-mi-ci_thewoksoflife_ea082064",
+  "title": "Coconut Peanut Mochi (Nuo Mi Ci - 糯米糍)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T20:09:38.133Z",
+  "ldName": "Coconut Peanut Mochi",
+  "ldTime": "PT80M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "16"
+  ],
+  "ldCuisine": "Desserts",
+  "ldCategory": "Chinese",
+  "ldKeywords": "coconut peanut mochi",
+  "ldIngredientsRaw": [
+    "Vegetable oil",
+    "1 1/2 cups sweet rice flour ((190g))",
+    "1/4 cup cornstarch ((35g))",
+    "1/4 cup caster sugar ((60g))",
+    "1 ½ cups coconut milk ((350g))",
+    "2 tablespoons coconut oil ((melted))",
+    "1/2 cup roasted peanuts ((finely chopped))",
+    "1/2 cup coconut flakes ((coarsely chopped))",
+    "3 tablespoons sugar",
+    "1 tablespoon melted coconut oil ((optional))",
+    "A large piece of wax paper ((about 18x18”, optional))",
+    "1 cup coconut flakes ((coarsely chopped))",
+    "16  small paper cupcake cups"
+  ],
+  "ldInstructionsRaw": [
+    "Brush a square 11” x 11” flat-bottomed cake pan with some vegetable oil to prevent sticking, and set aside. The 11” X 11” cake pan yields the perfect thickness of dough for this recipe. Other sized pans will also work, but you will need to roll out the dough a bit when assembling the mochi. Prepare your steamer with water and bring to a boil.",
+    "In a large bowl, mix together the sweet rice flour, cornstarch, caster sugar, coconut milk, and melted coconut oil until smooth. Transfer the mixture to the prepared cake pan, and gently tap on a table to distribute it evenly. Once the water in the steamer is boiling, steam the dough mixture for 15 minutes over high heat. Let it cool completely.",
+    "While the dough is cooling, make the filling by combining the chopped peanuts, coconut flakes, sugar and 1 tablespoon coconut oil. Set it aside.",
+    "Once the dough cools, transfer it onto a large piece of wax paper (or a clean smooth counter top lightly greased) and cut it into 16 equal squares. Take a piece of dough, add about 1 tablespoon of filling in the center, and close the dough around the filling, pinching it closed. Roll in the coconut flakes to coat. Place in a paper cupcake cup, and repeat until all the mochi are assembled."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "219 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "3 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "10 g",
+    "sodiumContent": "26 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[dough]",
+    "▢ Vegetable oil",
+    "▢ 1 1/2 cups sweet rice flour (190g)",
+    "▢ 1/4 cup cornstarch (35g)",
+    "▢ 1/4 cup caster sugar (60g)",
+    "▢ 1 ½ cups coconut milk (350g)",
+    "▢ 2 tablespoons coconut oil (melted)",
+    "[filling]",
+    "▢ 1/2 cup roasted peanuts (finely chopped)",
+    "▢ 1/2 cup coconut flakes (coarsely chopped)",
+    "▢ 3 tablespoons sugar",
+    "▢ 1 tablespoon melted coconut oil (optional)",
+    "[To assemble the coconut peanut mochi]",
+    "▢ A large piece of wax paper (about 18×18”, optional)",
+    "▢ 1 cup coconut flakes (coarsely chopped)",
+    "▢ 16 small paper cupcake cups"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

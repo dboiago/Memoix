@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Brioche Tea Sandwiches",
+    "time": null,
+    "course": "breads",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spread a little Dijon onto the slice of brioche (you can trim the crusts or use a cookie cutter to shape the brioche). Top with cucumber smoked salmon and capers and chill until ready to serve.",
+      "Trim the crusts of the brioche or use a cookie cutter to shape it (optional) and lay the arugula on the bread and place the egg slice on top. Cut the shrimp in half (to make 2 \"C\"s) and arrange them criss-cross on the egg. Top with a little drizzle or dollop of dill mayonnaise and chill until ready to serve.",
+      "Stir the almond butter and melted chocolate together. Spread this over the slice of brioche and use a cookie cutter (1 ½ to 2-inches across) to cut out a round. Place a raspberry on top and chill until ready to serve.",
+      "Soak the dried cherries in the brandy for 5 minutes. Drain and roughly chop the cherries, stirring them into the cream cheese (you can add a little sugar to taste, if you wish). Spread this over a slice of brioche and top with the second slice. Trim away the crusts and cut into triangles or finger. Chill until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brioche Bread",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salmon",
+        "unit": "slice",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Bread",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Baby Arugula",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Boiled Egg",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked & Peeled Shrimp",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Mayonnaise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "30 g, melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Bread",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Brandy",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "30 g, at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db602f6644da13040926be6a27dce2f037e41c3c76147852705ba6279af9cf4f",
+    "lineage_hash": "d6fa1e6c62fbc82394eb1fb60939e94fcfba7a4146cd84c9efa7c1bcdeb9e17a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/brioche-tea-sandwiches/",
+    "fetchedAt": "2026-08-01T17:56:40.296Z"
+  },
+  "rawSource": "https://annaolson.ca/project/brioche-tea-sandwiches/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

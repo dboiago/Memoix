@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Dim-Sum Shrimp Dumpling (Har Gow)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "376",
+      "carbohydrateContent": "55",
+      "fatContent": "5",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "In a large bowl, combine the wheat starch, tapioca starch and the salt. Slowly stir in the boiling water and you can see there is no dry flour in the bowl. Set aside for around 5 minutes.",
+      "Add some lard (or not) and knead the flour into a dough until smooth. If you are using cooking oil, add the oil in the middle of your kneading process. Set the dough aside.",
+      "Peel fresh shrimp and devein. Finely mince the shrimp and add cooking wine, soy sauce, pepper powder and chopped ginger firstly. Stir the filling in one direction until you get a paste like texture. Set aside to marinate for around 10 minutes.",
+      "Get the dough out and knead around another 4~5 minutes to punch the air out and then roll the dough into a cylinder around 1 inch and then cut it into small sections around 1 inch diameter.",
+      "Roll the small sections out to thin round wrappers one by one.",
+      "Add chopped spring onions in the shrimp meat and mix well. Wrap the dumplings one by one.",
+      "Slice some carrots slices and put the carrots slices firstly in your steamer and then place the dumplings on the carrots slices one by one.",
+      "Put the steamer in wok, bring water to a boiling and steam for around 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Section of Carrots",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "tsp",
+        "notes": "alt: flour",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "tsp",
+        "notes": "or around 1 teaspoons of cooking oil",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Shrimp",
+        "unit": "g",
+        "notes": "rinsed, tails removed, chopped",
+        "amount": "150",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "finely chopped or grated",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1fd4630abc706887dccc01a8d28d52ff28bd950094c62ca706d1e3b7a57d76f7",
+    "lineage_hash": "47cd507a85e5d73c7aa1be2fbed5344492f1abdfaaa8311f9ae364e5ef0f5a30"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/dim-sum-shrimp-dumpling-har-gow/",
+    "fetchedAt": "2026-08-01T19:48:38.431Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/dim-sum-shrimp-dumpling-har-gow/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

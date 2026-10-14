@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Brown Stew Salmon with Coconut Couscous",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Warm up your pre-cooked couscous in a pan and with coconut milk water , garlic, thyme, all-purpose, salt and pepper. Mix and steam through for 5 minutes.",
+      "Season your salmon with salt, pepper, garlic, paprika, all-purpose, and a splash of browning and massage in.",
+      "Pan-sear both sides in olive oil until golden, then remove and set aside.",
+      "In the same pan, sauté onions, garlic,  scotch bonnet and your bell peppers til soft.",
+      "Add vegetable stock, bring it to a simmer, then gently place your salmon back in and cook for 10 minutes.",
+      "Let it steam down in that beautiful  brown stew sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Browning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Salmon:",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Brown Stew Sauce:",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": "For Brown Stew Sauce:",
+        "isOptional": false
+      },
+      {
+        "name": "Each Red",
+        "unit": null,
+        "notes": "Green & Yellow bell peppers, cut into strips",
+        "amount": "½",
+        "section": "For Brown Stew Sauce:",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": "For Brown Stew Sauce:",
+        "isOptional": false
+      },
+      {
+        "name": "Pre-cooked Couscous",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh, or 1/4 tsp dried",
+        "amount": "2",
+        "section": "For Coconut Couscous:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f5bd93e45dd7baa0ab6cc9ae095239bd209f14e926060c16ce55f26a3b472ac",
+    "lineage_hash": "2673f1813667d2582d0a79610e96da419cdcae0acaca43ff24fdffdfe8b80fdd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/brown-stew-salmon-w-coconut-cous-cous/",
+    "fetchedAt": "2026-09-25T22:11:45.754Z"
+  },
+  "rawSource": "https://originalflava.com/meals/brown-stew-salmon-w-coconut-cous-cous/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

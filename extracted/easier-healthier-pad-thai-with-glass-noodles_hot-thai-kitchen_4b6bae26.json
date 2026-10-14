@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Easier & Healthier Pad Thai (with glass noodles)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the sauce by melting the palm sugar, and letting it caramelize a bit until the colour darkens slightly.",
+      "Turn off the heat then add water, and once the sizzling subsides, add fish sauce and tamarind paste. Let it sit until ready to use, and any undissolved palm sugar will be dissolved by then.",
+      "Soak the glass noodles in room temp water for 7-10 minutes.",
+      "Drain the noodles and cut in half for easier tossing.",
+      "To make shrimp oil (you can do this right in the wok you're using to make pad thai), add the oil and shrimp heads and cook over medium heat, pressing the heads to release the orange tamalley into the oil.",
+      "Cook until the shrimp heads brown slightly, and they start to smell like grilled shrimp.",
+      "Drain the oil and discard the heads.",
+      "Add some of the oil into a wok, then sear the shrimp in the oil on both sides until fully cooked. Remove them from the pan.",
+      "Add a little more oil if desired, then add the shallots, garlic, chili flakes, and tofu. Cook for a few minutes until the garlic starts to turn golden.",
+      "Add the glass noodles, the sauce and about ¼ cup of water.",
+      "Cook, stirring constantly, until all the sauce has been absorbed.",
+      "Push the noodles to one side, then add a little more oil and the eggs into the empty space and scramble the eggs slightly.",
+      "Put the noodles on top of the eggs and let the eggs cook for about 30 seconds, then toss to mix the eggs into the noodles.",
+      "Turn off the heat then add the bean sprouts, garlic chives, roasted peanuts and the shrimp back in.",
+      "Toss everything, making sure all the vegetables are thoroughly mixed in.",
+      "Serve with extra peanuts, bean sprouts, chili flakes, and a wedge of lime!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "3½",
+        "section": "Pad Thai Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Pad Thai Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": "see note 1",
+        "amount": "4",
+        "section": "Pad Thai Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Pad Thai Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": null,
+        "notes": "medium sized, head-on if possible",
+        "amount": "12",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "C",
+        "notes": "you won't need as much if not making shrimp oil",
+        "amount": "⅓",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Pressed Tofu",
+        "unit": "g",
+        "notes": "cut into small pieces",
+        "amount": "85",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Glass Noodles",
+        "unit": "oz",
+        "notes": "see note 2, soaked in water for 7-10 minutes, drained and cut in half",
+        "amount": "2.8",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "oz",
+        "notes": "about 2.5 cups",
+        "amount": "4",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Chives",
+        "unit": "oz",
+        "notes": "7-10 stalks, cut into 2” pieces",
+        "amount": "2.5",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pad Thai Woon Sen",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ee81c6786d434ea18a0d7742922f7e1f1e4be2274d5dc2ec27e7d5aa42ca3fa",
+    "lineage_hash": "3a8f24bb45cbe5e1b7ee5a440dbbd83de8e8b28755208af7ecbed1a1a628ad25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/glass-noodle-pad-thai/",
+    "fetchedAt": "2026-08-01T22:04:47.643Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/glass-noodle-pad-thai/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Butter Chicken Slider",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add oil in non-stick pot, splutter all spices and add onion and ginger garlic paste. Saute until turn golden brown.",
+      "Now add boiled tomato puree, red chili and saute until it starts leaving the edges. Add garam masala, sugar and kasoorimethi powder, adjust salt and add fresh cream.",
+      "Add shredded tandoori chicken and mix well. Cook until it soaks all the juices.",
+      "Place iceberg lettuce, onion slice, tomato slice and spoonful of butter chicken on slider bun.",
+      "Make 6-8 sliders. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tandoori Chicken",
+        "unit": "C",
+        "notes": "shredded thinly",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "thin sliced into round",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb Iceberg Lettuce",
+        "unit": null,
+        "notes": "crisp",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slider Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "½",
+        "section": "Yogurt Coleslaw",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "¼",
+        "section": "Yogurt Coleslaw",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "Yogurt Coleslaw",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Tomato Puree",
+        "unit": "C",
+        "notes": "skinned",
+        "amount": "2",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Corn",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Kasoorimethi Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Butter Chicken Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c99b6d20807b00bf3e8565f6a37166bf0e7e95741b2fecda488d5b2b775a806a",
+    "lineage_hash": "95eb0b47290623e56fdedbef0cf810f07ccb3e7da1ba239404e2635c951747fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/butter-chicken-slider/",
+    "fetchedAt": "2026-08-02T14:22:07.994Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/butter-chicken-slider/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

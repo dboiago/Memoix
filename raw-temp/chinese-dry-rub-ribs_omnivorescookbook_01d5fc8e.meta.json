@@ -1,0 +1,64 @@
+{
+  "url": "https://omnivorescookbook.com/oven-baked-five-spice-ribs/",
+  "slug": "chinese-dry-rub-ribs_omnivorescookbook_01d5fc8e",
+  "title": "Chinese Dry Rub Ribs",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T19:17:37.631Z",
+  "ldName": "Chinese Dry Rub Ribs",
+  "ldTime": "PT855M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT130M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "1 rack (about 3 lbs / 1.4 kg) St Louis ribs (or baby back ribs)",
+    "1 tablespoon salt",
+    "1 tablespoon sugar",
+    "1 tablespoon cumin",
+    "1 tablespoon gochugaru ((or paprika for less spicy))",
+    "1 tablespoon ground black pepper ((or 1/2 tablespoon ground Sichuan peppercorns))",
+    "1/2 tablespoon garlic powder",
+    "1/2 teaspoon five spice powder"
+  ],
+  "ldInstructionsRaw": [
+    "(Optional) Remove the membrane from the back of the ribs by slicing the edge with a knife, then pull off the membrane sheet using your hand.",
+    "Combine the rub ingredients in a small bowl and mix well. Sprinkle evenly all over the ribs, front, back and sides. Gently pat and rub in the spice using your hands. Cover with plastic wrap and marinate overnight in the fridge.",
+    "Preheat the oven to 300°F (150°C). Line a baking sheet with foil or parchment paper for easy cleaning. Place a rack on top.",
+    "Place the marinated ribs on the rack. Cover with a large piece of foil that’s enough to cover the baking sheet. Fold the foil along the edges of the baking sheet to seal the ribs.",
+    "Bake covered for 2 hours.",
+    "Remove the baking sheet from the oven and carefully remove the foil. Turn on the boiler to 550°F (280°C). Broil for 8 to 10 minutes, or until the surface of the ribs are charred. You should stay close to the oven during the time and check on the ribs from time to time, to prevent it from burning.",
+    "Once done, remove the baking sheet and let it rest for 10 minutes. Carve the ribs and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "328 kcal",
+    "carbohydrateContent": "5.5 g",
+    "proteinContent": "31 g",
+    "fatContent": "20.1 g",
+    "saturatedFatContent": "7.6 g",
+    "cholesterolContent": "68 mg",
+    "sodiumContent": "2188 mg",
+    "fiberContent": "0.7 g",
+    "sugarContent": "3.3 g"
+  },
+  "htmlIngredientLines": [
+    "1 rack (about 3 lbs / 1.4 kg) St Louis ribs (or baby back ribs)",
+    "[Rub]",
+    "1 tablespoon salt",
+    "1 tablespoon sugar",
+    "1 tablespoon cumin",
+    "1 tablespoon gochugaru (or paprika for less spicy)",
+    "1 tablespoon ground black pepper (or 1/2 tablespoon ground Sichuan peppercorns)",
+    "1/2 tablespoon garlic powder",
+    "1/2 teaspoon five spice powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

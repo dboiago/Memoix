@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Bacon Sundaes",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the candied bacon and walnuts: Place the bacon in a cold skillet over medium heat. Cook until the fat renders and the bacon begins to brown and crisp, 6 to 8 minutes, stirring with a wooden spoon. Add the walnuts and continue cooking until the bacon and walnuts are golden brown, about 2 minutes. Do not let them burn. Drain the bacon mixture by placing it in a strainer over a heatproof bowl. Save the bacon fat for a future use, like frying potatoes.",
+      "Return the bacon and walnuts to the skillet and add the 1/2 cup of maple syrup and the vinegar. Cook the bacon mixture over medium heat until it is thick and syrupy, about 3 minutes, stirring with a wooden spoon. The mixture should have a pourable consistency. Set the skillet aside and keep warm. The candied bacon can be made earlier in the day; cover the skillet and set it aside. Rewarm the candied bacon over low heat when you are ready to serve the sundaes.",
+      "Make the sundaes: Place the cream and 2 tablespoons of maple syrup in a chilled metal bowl and, using a mixer or whisk, beat the cream until soft peaks form. Alternatively, pour the cream and maple syrup into a CO2 charger and shake well to mix, 7 or 8 times. Invert the charger and squeeze the handle to release the whipped cream. Refrigerate the maple whipped cream, covered, until serving.",
+      "To assemble the sundaes, scoop the ice cream into balls and place 1 scoop in each of 4 sundae glasses or bowls. Spoon the warm candied bacon and walnuts on top. Top with the maple whipped cream and a sprinkling of cinnamon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thick Slices Bacon (4 Ounces)",
+        "unit": null,
+        "notes": "cut crosswise into 1/4-inch slivers",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "coarsely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": "alt: rice vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5950b52a81d9f94f0f6c0b9bbfe3ae2eca062079627064ddcb860c86a313bc9d",
+    "lineage_hash": "9ff157d7208f10b9bcef5b14d1d91edafa8e32e49cc09d3369ec95aea0413093"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/candied-bacon-sundaes/",
+    "fetchedAt": "2026-08-03T06:18:42.797Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/candied-bacon-sundaes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

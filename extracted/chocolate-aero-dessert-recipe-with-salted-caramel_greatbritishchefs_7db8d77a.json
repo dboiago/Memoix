@@ -1,0 +1,282 @@
+{
+  "recipe": {
+    "name": "Chocolate Aero Dessert with Salted Caramel",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the yoghurt elements. For the sorbet, mix all the ingredients together and churn in an ice cream machine until frozen",
+      "For the smoked yoghurt, place the Greek yoghurt in a muslin cloth, wrap up and place in the cold-smoker. Smoke for 3 hours on a low temperature, then chill in the fridge",
+      "Heat the milk and double cream together over a medium heat until reduced by half. Add in the chilled smoked yoghurt and heat through. When it reaches 72°C, mix in the agar and allow to set",
+      "Blitz the set mixture in food processor until smooth, then season with the lemon juice to taste",
+      "Make the biscuit base by blending the digestives with the melted chocolate in a food processor until it resembles breadcrumbs",
+      "Press the biscuit crumbs down firmly into the base of a tin or mould with a removable base (approx. 20cm x 5cm)",
+      "For the mousse, make a sabayon by whisking the egg, water and sugar in a bowl over simmering water (bain marie) until thickened. Remove from the heat and continue to whisk (in a standing mixer) until room temperature",
+      "Melt the dark chocolate in another bain marie, then pour on to the sabayon mixture",
+      "In a separate bowl, lightly whip the cream and milk together, then whisk half of this into the chocolate mixture. Gently fold the remaining half of the cream in until fully combined",
+      "Pour this mixture into the tin or mould over the chocolate biscuit base, then chill in the fridge for at least an hour, or until ready to serve",
+      "To make the aero, melt the chocolate in a bain marie then stir in the vegetable oil. Place in a gas canister or espuma gun with 2 charges and siphon the foam into a plastic container (5cm deep)",
+      "Vacuum the container so that the air is pulled out of the chocolate, creating bubbles. Stop when the desired texture is achieved, then leave for the top to set",
+      "Make a decorative tuile by melting the Isomalt sugar and trimoline together to make a caramel, then add the chocolate and allow to cool slightly before pulling and stretching pieces into thin tuiles. Place on a flat surface or greaseproof paper to set completely",
+      "For the salted caramel, boil the sugar and water together in a pan to make   a caramel. Slowly add the cream and bring back to the boil. Add the salt and whisk in the butter until smooth",
+      "When ready to serve, remove the mousse from the fridge and carefully unmould. Cut into small cubes and add 3 to each plate. Cut the aero in small pieces and add a few to the plate along with the decorative tuiles",
+      "Dot some of the smoked yoghurt and salted caramel on to the plate, and add a quenelle of the frozen sorbet. Sprinkle over some freeze-dried yoghurt and mint cress to garnish, if liked"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Half a Lemon",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "155",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isomalt Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Yoghurt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7fd7c00e63548d5b1b49388bf5f5db80f125403b5f945dda98eb8bbd8f33f43d",
+    "lineage_hash": "065574010642861b8d75a92fe629f82a79e32041b0ada019bddc8e931777a7b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-aero-chocolate-mousse-salted-caramel",
+    "fetchedAt": "2026-08-03T14:41:01.120Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-aero-chocolate-mousse-salted-caramel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

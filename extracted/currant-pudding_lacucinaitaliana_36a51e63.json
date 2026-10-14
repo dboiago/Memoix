@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Currant Pudding",
+    "time": "4 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soften the gelatin in cold water. Husk (if needed) and wash the currants and cook them over low heat with 1/4 cup sugar, crushing them with a fork. Cook for 2-3 minutes after they reach the boiling point. When they begin to dissolve, strain them without crushing them to get the juice (coulis). Allow it to cool.",
+      "Heat the milk with 3/4 cup sugar; when it boils, remove from heat, temper the drained gelatin in it, then add the cream and the currant coulis. Mix thoroughly.",
+      "Pour this mixture into a mold (use a silicon one to remove the pudding more easily). Refrigerate for at least 4 hours, preferably overnight. Unmold, garnish as you like and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "oz",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scant C. of Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Leaves",
+        "unit": "oz",
+        "notes": null,
+        "amount": "0.7",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67cc14397ae76e136b01c72a6a8e1bd040d12e1ce296b4c6d36d3c23a689159d",
+    "lineage_hash": "e27e1df3f294933318382239cc399ca012d6732f10cdaccbf3976de411aa6284"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/currant-pudding",
+    "fetchedAt": "2026-08-03T05:22:54.413Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/currant-pudding",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

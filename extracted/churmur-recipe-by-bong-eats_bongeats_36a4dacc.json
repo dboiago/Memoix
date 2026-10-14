@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Churmur",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "339",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Soak the _chhola_ and _motor dal_ for about 12 hours. Wash them after that. Drain the _chhola_ and set it aside. Boil the _motor dal_ until it softens but remains whole (it should not disintegrate). Drain the _motor dal_ and leave it to cool.",
+      "Boil the potatoes till they are tender. Peel and dice into 1-cm cubes, and transfer them to a mixing bowl.",
+      "While the potatoes are boiling, add 75 g hot water to the tamarind and allow it to soak for 15 minutes. This will soften the tamarind and ensure easy extraction of the pulp. Work the tamarind between your fingers to separate the skin and seeds. Press to squeeze out all the juice and discard the seeds. You should be left with some smooth tamarind pulp.",
+      "At this point, also roughly crush the green chillies using a mortar and pestle, chop coriander leaves, and slice the lime.",
+      "Back to the mixing bowl with the diced potatoes: add soaked _chhola_, boiled _motor dal_, chopped coriander, crushed green chillies, lime juice, tamarind pulp, salt, rocksalt, chilli flakes and _bhaja masala_. Crush the _papri_s and add them too.",
+      "Mix until everything is evenly combined. Use a light hand so that you don’t mash the potatoes or grind the _papri_ to a fine powder—we want them to remain chunky. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Phuchka Papri",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chhola",
+        "unit": "g",
+        "notes": "whole Bengal gram",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Motor Dal",
+        "unit": "g",
+        "notes": "whole yellow peas",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocksalt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bhaja Masala",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9afb271e8b38e857cbf5379e65765a8abb1b050fc561cce1f378eae85e9b8d0",
+    "lineage_hash": "3ef7f5a42750e2e603ba47b1f90a3d46c179f4c3421a71d2f950f13e49ef2044"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/churmur",
+    "fetchedAt": "2026-08-01T19:02:57.381Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/churmur",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

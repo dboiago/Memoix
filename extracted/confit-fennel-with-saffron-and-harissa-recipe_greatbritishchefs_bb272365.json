@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Confit Fennel with Saffron and Harissa",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 180°C/gas mark 4. Place the butter, sugar, salt, water and saffron in a small saucepan and bring to a simmer",
+      "Place the fennel halves cut-side down in a baking dish big enough to hold them in a snug single layer. Pour over the simmering saffron mixture, then cover the tray in foil. Cook in the oven for 45 minutes, turning the fennel halfway through, until soft",
+      "Place a tablespoon of yoghurt and a tablespoon of harissa on each plate. Top with a fennel half, drizzling it with some of the cooking liquor. Garnish with dill fronds and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "370",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Harissa",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fronds of Fresh Dill",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dadfe641708b97bd905cd369bd00ae9ace072dd37299b34838944e2b3aba823d",
+    "lineage_hash": "cee6adf32644c03e26fc4ed51dbd623efe8972d8b893aea57dcee666f2994241"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-fennel-saffron-recipe",
+    "fetchedAt": "2026-08-03T05:04:42.264Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-fennel-saffron-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

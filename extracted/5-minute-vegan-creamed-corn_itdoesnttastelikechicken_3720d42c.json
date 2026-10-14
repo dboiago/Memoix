@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Vegan Creamed Corn",
+    "time": "5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "168",
+      "carbohydrateContent": "14",
+      "fatContent": "12",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "In a medium skillet or pot melt the vegan butter over medium heat. When melted add the garlic and cook for about 30 seconds, then whisk in the flour to make a paste and cook for another 30 seconds, whisking continually. Add the coconut milk, nutritional yeast, salt, and pepper and whisk to combine. Stir in the corn kernels and continue to cook for 2 - 4 minutes, until you reach desired consistency. If you prefer a thicker creamed corn cook a little longer, and if you prefer a thinner creamed corn then remove from the heat earlier. You can also add an extra splash of coconut milk or water to thin if needed. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "sub-gluten-free all-purpose flour if preferred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": "see notes",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": "optional for cheesy taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "C",
+        "notes": "fresh or frozen",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "246bbfbd36feb82148170c32517154ace2e7c91fbb79eabfdf0d51e25ddad01f",
+    "lineage_hash": "0091988fed1c5ea90f243f1d41e8584878400be7d45abbb1ce7f8f10c53d8ff9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamed-corn/",
+    "fetchedAt": "2026-08-02T04:41:45.130Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamed-corn/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

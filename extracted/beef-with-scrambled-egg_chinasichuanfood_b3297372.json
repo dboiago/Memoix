@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Beef with Scrambled Egg",
+    "time": "1 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "447",
+      "carbohydrateContent": "6",
+      "fatContent": "38",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Cut beef into slices and add salt, light soy sauce and cooking wine. Mix until the beef absorb all of the seasonings.Add starch and anther 2 teaspoon of water. Mix well and set aside for 15 minutes. Mix in 1 tablespoon of oil before stir frying.",
+      "Add around 2 tablespoon of cooking oil in wok, use medium fire and spread the beef slices in and cook until the color changed.",
+      "Pour the egg liquid in. Count for 2 seconds, move the egg and then another 2 seconds. Repeat until 8-10 seconds past. Transfer out immediately.",
+      "Sprinkle some chopped coriander stem and black pepper. Serve immediately!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Stem",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Egg whisking",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Egg whisking",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Shaoxing Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Egg whisking",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Egg whisking",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ff39a76791118640e4b356d660fa06d3cccfb5367af3f4757a5bec899425b96",
+    "lineage_hash": "1efe29a10220cb08d9860b80de12cf5a751d9d83533889cba685c8ffcb84521b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-with-scrambled-egg/",
+    "fetchedAt": "2026-08-02T06:15:09.489Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-with-scrambled-egg/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

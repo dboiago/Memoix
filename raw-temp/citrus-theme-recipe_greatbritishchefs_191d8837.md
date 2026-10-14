@@ -1,0 +1,7 @@
+This stunning dessert encapsulates everything we love about citrus fruit. Using the best possible [lemons](https://www.greatbritishchefs.com/ingredients/lemon-recipes) and [grapefruits](https://www.greatbritishchefs.com/ingredients/grapefruit-recipes) is key to this dish, so it's best prepared between February and September, when they are in season.
+
+_'While writing this recipe, I have a huge smile on my face as I remember a wonderful moment, in early March, driving up the Amalfi coast towards the Belmond Caruso Hotel in Ravello. The meandering, dramatic road was bordered with so many_ _lemon_ _trees, each laden with huge fruit of the palest lemon colour, and the whole scene bathed in the magical light of a southern Italian spring. It was a sublime vision – and hugely inspirational._
+
+_Whether you decide to make this dish using the gentle flavour and low acidity of Amalfi coast lemons, or the more intense flavour of Menton lemons from the Côte d’Azur, this dessert is a wonderful introduction to the Mediterranean spring. The dish is a feast of citrusy, bittersweet flavours, fresh at all times.'_
+
+Follow Raymond on [Instagram](https://www.instagram.com/raymondblanc/), [Twitter](https://twitter.com/raymond_blanc) and [Facebook](https://www.facebook.com/ChefRaymondBlanc/). Recipe © [Raymond Blanc](http://www.raymondblanc.com/).

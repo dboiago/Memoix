@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Almond Brittle",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the almonds by cutting them into three pieces with a knife.|In a pot, dissolve the sugar in 1 tablespoon of water, on medium heat, stirring.|Cook for about 4-5 minutes and, when the sugar has dissolved and begins to brown, add the almond pieces.|Stir them into the caramel and cook on low for 1-2 minutes.|Transfer to a non-stick mold, such as a star-shaped mold measuring 12 inches across.|Use a meat tenderizer to flatten the almonds into an even layer.|Trim the points of the star with a spoon to create a perfect star shape.|Let the brittle cool for 15-20 minutes, then unmold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almonds",
+        "unit": "oz",
+        "notes": "unblanched",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1285bcd49993961b243b6f93bc0775a2b44529e9b34b3a4b920c57e49dc814e",
+    "lineage_hash": "0696d2145183077851d5a0744ddeea4ca9d904d0d5c8ba4a9fac22394331b116"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-brittle",
+    "fetchedAt": "2026-08-02T19:17:17.042Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/almond-brittle",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

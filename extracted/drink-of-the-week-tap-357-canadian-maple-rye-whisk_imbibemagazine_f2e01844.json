@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Tap 357 Canadian Maple Rye Whisky",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": "Cocktail",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all ingredients well with ice, strain into a chilled cocktail glass and garnish.",
+      "Combine all ingredients, except sparkling wine, and shake with ice. Strain over fresh ice cubes in a rocks glass, top with sparkling wine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tap 357 Canadian Maple Rye Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tap 357 Canadian Maple Rye Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Torn Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "087635256d3fe941ed63031605c27809daa9bd7316e279fdbb744bffaf5f0b7c",
+    "lineage_hash": "80ccd2a084ff8340d43ffa47d9c63e53ed85c4aff70e3913307b50a9787498c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/drink-of-the-week-tap-357-canadian-maple-rye-whisky/",
+    "fetchedAt": "2026-08-02T13:58:21.479Z"
+  },
+  "rawSource": "https://imbibemagazine.com/drink-of-the-week-tap-357-canadian-maple-rye-whisky/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

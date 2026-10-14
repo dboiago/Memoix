@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Atte Ka Halwa (आटे का हलवा)",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in a pan, add wheat flour and cook on low flame for good 15-20 mins or till fat separates.",
+      "Then add water and cook till all the water is absorbed.",
+      "Add sugar and cook for few more minutes.",
+      "Lastly add almonds and pistachios and turn off the flame.",
+      "Serve hot or cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32a3bbf52f8c0e1d793d2a53e94d53fbfdc43d580176c7bcb2c557b10151eb37",
+    "lineage_hash": "dd0fae1cc6035e687948fe398599da24d3a75e8520f92abee479459c25240fe1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/atte-ka-halwa/",
+    "fetchedAt": "2026-08-02T18:29:24.934Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/atte-ka-halwa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

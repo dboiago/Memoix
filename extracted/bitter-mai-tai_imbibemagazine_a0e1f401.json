@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bitter Mai Tai",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients with ice in a shaker and shake to chill. Strain into a glass filled with crushed ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "621567333fafd38f8534a700fb488c782a09cab6de5976c6789d89ba59bb4abf",
+    "lineage_hash": "4980726fb1d08385dd6c42ede348719107666e5a6a03d89022c12c75524c8757"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bitter-mai-tai-recipe/",
+    "fetchedAt": "2026-08-03T21:05:51.527Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bitter-mai-tai-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

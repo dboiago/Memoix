@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Cuttlefish, Harissa, Preserved Daikon and Basil",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the daikon, cut it into 10 cm chunks and then wash",
+      "Weigh the daikon and then measure out 10% of its weight in shio koji",
+      "Cover the daikon evenly in shio koji and let it ferment in a vacuum bag or in a zip lock bag out of the fridge for 5–7 days",
+      "Once the daikon is fermented, slice it into thin rounds",
+      "On a barbecue or on your gas hob, burn the skin of the red pepper and red chillies all over",
+      "Once blackened, put them in a bowl or container with a lid and let them cool down. By trapping the steam you will lift the skin from the flesh making it easy to peel",
+      "Toast the cumin and black pepper and then grind them in a pestle and mortar",
+      "Peel the pepper and chilli and then blend them into a smooth paste",
+      "Season the pepper paste with olive oil, the toasted spices and sherry vinegar and then add salt to taste",
+      "Score the cuttlefish on the inside of the body. Open up the tentacles and cut them into individual pieces. Cut the wings in half and season everything with olive oil, salt and pepper",
+      "Over a very hot coal grill the three different cuts of cuttlefish, letting them char so that you have nice crunchy, smoky edges",
+      "Once cooked, transfer the cuttlefish to a chopping board. Thinly slice the body and add to a bowl. Add the sliced daikon and basil. Dress lightly with harissa and dish up"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cuttlefish",
+        "unit": "g",
+        "notes": "cleaned with body, tentacles and wings",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "sprigs",
+        "notes": "leaves picked",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shio Koji",
+        "unit": "g",
+        "notes": "or as needed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7cc5ae52a7894b9b500c516d02f05f725382b128467b4ed595adbc8ff0c28a30",
+    "lineage_hash": "c8cb7f44c566cf7eab7bbd4c612dabfe0a5aade5efe913ec80a45e5db43a9a8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cuttlefish-harissa-preserved-daikon-basil-recipe",
+    "fetchedAt": "2026-08-02T10:25:04.942Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cuttlefish-harissa-preserved-daikon-basil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

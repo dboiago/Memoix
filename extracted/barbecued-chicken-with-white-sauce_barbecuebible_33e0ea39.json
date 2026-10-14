@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Barbecued Chicken with White Sauce",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spatchcock (butterfly) the chicken: Place the bird, breast side down, on a cutting board. Using poultry or kitchen shears or a sharp knife, cut out and remove the backbone.",
+      "Open the bird like a book. Using a sharp paring knife, cut along and under both sides of the breastbone and cartilage attached to it. Discard the breastbone. Cut off the tips of the wings. Spread the bird out flat by gently pressing on it with the palm of your hand.",
+      "Make the rub: In a small bowl, combine the salt, white pepper, and onion and garlic powders. Mix to combine with your fingers. Season the chicken on both sides with the rub. Let marinate in the refrigerator while you make the sauce and light your grill.",
+      "Make the white barbecue sauce: Combine the mayonnaise, vinegar, and horseradish in a mixing bowl and whisk to mix. Add salt, pepper, and cayenne to taste: the sauce should be highly seasoned.",
+      "Set up your grill for indirect grilling and heat to 400 degrees. When ready to cook, brush or scrape your grill grate clean and oil it well.",
+      "Arrange the bird on the grill grate over the drip pan away from the heat, skin side up. Add the wood chunks or chips to the piles of coals. Cover the grill and smoke-roast the bird until nicely browned and the internal temperature of the thickest part of the thigh (but not touching the bone) reaches 165 degrees, 30 to 40 minutes.",
+      "Transfer the chicken to a platter and drizzle with the white barbecue sauce. Sprinkle with chives. Serve the remaining sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "3 1/2 to 4 pounds, preferably organic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2eba3da95f24ff892e1c82a519a834f8dcef020420778fce6cee415f96423c67",
+    "lineage_hash": "0ad9c7b0093dfc439347d35df4106a2c10afbb9c5306d13e1eaea40e38645335"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-chicken-with-white-sauce/",
+    "fetchedAt": "2026-08-03T09:57:54.220Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-chicken-with-white-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

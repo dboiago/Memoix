@@ -1,0 +1,64 @@
+{
+  "url": "https://mykoreankitchen.com/cucumber-kimchi-oi-kimchi/",
+  "slug": "cucumber-kimchi-oi-kimchi_mykoreankitchen_b1ad3d03",
+  "title": "Cucumber Kimchi (Oi Kimchi)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T23:33:12.226Z",
+  "ldName": "Cucumber Kimchi (Oi Kimchi)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "6",
+    "6 to 8"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side dishes",
+  "ldKeywords": "cucumber, cucumber kimchi, kimchi",
+  "ldIngredientsRaw": [
+    "3  Lebanese cucumbers ((450 g / 1 pound), other cucumber suitable for pickling is ok to use, rinsed)",
+    "1 Tbsp coarse sea salt",
+    "50 g carrots ((1.7 ounces), julienned (optional))",
+    "20 g garlic chives (or chives (0.7 ounces), chopped in same length as the cucumber (optional))",
+    "2 Tbsp gochugaru ((korean chili flakes))",
+    "1 Tbsp minced garlic",
+    "1 Tbsp grated red apple (or asian pear)",
+    "1 Tbsp honey (or sugar)",
+    "1/2 Tbsp saeujeot ((Korean salted shrimp), minced (if you don’t have this add more fish sauce below))",
+    "1/2 tsp Korean fish sauce",
+    "1/2 tsp minced ginger"
+  ],
+  "ldInstructionsRaw": [
+    "Cut off both ends of the cucumber. Divide the cucumber into 3 pieces then cross cut each piece length ways. You should end up with 4 to 5 cm (1.5 inch) length cucumber pieces. Put the cucumber into a large bowl then scatter the coarse sea salt around on top. Gently mix them so that the cucumber gets pickled evenly. Set it aside for 20 minutes.",
+    "Gently brush off the salt from the cucumber then transfer the cucumber into a clean bowl. Pour in the kimchi sauce then mix them gently. (If using) Add the carrots and garlic chives then mix with the rest again. Transfer into a glass container and cover.",
+    "Keep it at room temperature for about 12 to 18 hours then move it to the fridge. Serve once chilled."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "42 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "1249 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 3 Lebanese cucumbers (450 g / 1 pound), other cucumber suitable for pickling is ok to use, rinsed",
+    "▢ 1 Tbsp coarse sea salt",
+    "▢ 50 g carrots (1.7 ounces), julienned (optional)",
+    "▢ 20 g garlic chives or chives (0.7 ounces), chopped in same length as the cucumber (optional)",
+    "[KIMCHI SAUCE (MIX THESE WELL IN A BOWL)]",
+    "▢ 2 Tbsp gochugaru (korean chili flakes)",
+    "▢ 1 Tbsp minced garlic",
+    "▢ 1 Tbsp grated red apple or asian pear",
+    "▢ 1 Tbsp honey or sugar",
+    "▢ 1/2 Tbsp saeujeot (Korean salted shrimp), minced (if you don’t have this add more fish sauce below)",
+    "▢ 1/2 tsp Korean fish sauce",
+    "▢ 1/2 tsp minced ginger"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

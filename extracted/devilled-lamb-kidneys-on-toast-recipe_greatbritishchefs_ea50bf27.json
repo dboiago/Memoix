@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Devilled Lamb Kidneys on Toast",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the kidneys. Slice them in half and remove the skin and inner sinew",
+      "Mix together the flour and spices, then dredge the kidneys in the mixture to evenly coat. Tap them on the side of the bowl to remove any excess flour then place on a clean plate",
+      "Preheat a grill to high and place a large frying pan over a high heat, adding a dash of vegetable oil. Once smoking hot, add the kidneys cut-side down with a pinch of salt and cook for 1–2 minutes depending on size. Flip them over, cook for 30 seconds then add the butter",
+      "Use a spoon to baste the kidneys with the melted butter for about a minute, then add the chopped coriander and remove the pan from the heat",
+      "While the kidneys cook, grill your bread until nicely toasted",
+      "To serve, top the toast with the kidneys and finish with the buttery pan juices"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Kidneys",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "470aef407b5e98b5b040df0f80c6f5a78ed49fb60509ee1782dcb7a271985400",
+    "lineage_hash": "fd2def7d5f45e78836275c20966df7806bdd6333ff4bf82edfb4c34a89c8e07a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/devilled-lamb-kidneys-recipe",
+    "fetchedAt": "2026-08-02T21:17:41.402Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/devilled-lamb-kidneys-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

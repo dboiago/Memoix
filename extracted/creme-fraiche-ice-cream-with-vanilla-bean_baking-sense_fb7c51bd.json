@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Creme Fraiche Ice Cream with vanilla bean",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "317",
+      "carbohydrateContent": "33",
+      "fatContent": "19",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Combine 21 oz creme fraiche and 8 oz whole milk in a saucepan. Scrape the seeds out of the vanilla bean and add them to the cream along with the pod. Heat over medium high. As the mixture heats up it will thin out a bit. Heat just until scalding hot. Do not allow the milk come to a full boil.",
+      "While the milk mixture is heating, whisk together 6 egg yolks, 8 oz granulated sugar and ⅛ teaspoon salt. Whisk the scalding hot milk into the yolks. Return the mixture to the pan and reduce the heat to medium low. Cook the custard, stirring constantly, until it coats the back of a spoon or spatula.",
+      "Strain the mixture into a bowl, allow it to cool to room temperature. Cover with plastic wrap and refrigerate for at least 6-8 hours, until very cold. Run the custard in your ice cream maker according to the manufacturer's directions.",
+      "Pack into a container. Place plastic wrap directly on the surface of the ice cream and cover the container with a lid. Freeze 8 hours or overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Creme Fraiche",
+        "unit": "oz",
+        "notes": null,
+        "amount": "21",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 teaspoon vanilla extract",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6dab72a68340eeb0d33ca66d226837ccf274db9f836b99e8aca24ec2178bd5a",
+    "lineage_hash": "43cd3bf000bbb0a25ad3db5ed9f184d94e8a0c37f1227110583ad3cf51a478f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/05/04/creme-fraiche-ice-cream/",
+    "fetchedAt": "2026-08-01T20:26:14.050Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/05/04/creme-fraiche-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

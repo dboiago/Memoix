@@ -1,0 +1,43 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/2793/cuban-liberal",
+  "slug": "cuban-liberal-cocktail-recipe_diffordsguide_95e5047e",
+  "title": "Cuban Liberal Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T07:31:15.088Z",
+  "ldName": "Cuban Liberal",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif",
+    "Bittersweet (e.g. Negroni)",
+    "Classic/vintage"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Light gold rum 1-3yo",
+    "30 ml Rosso/sweet vermouth",
+    "2.5 ml Amer Picon",
+    "2 dash Orange bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of orange zest twist.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS orange zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "148 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

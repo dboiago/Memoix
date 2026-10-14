@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Chongqing Noodles (重庆小面)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "500",
+      "carbohydrateContent": "37.7",
+      "fatContent": "29.6",
+      "proteinContent": "23.1"
+    },
+    "directions": [
+      "Optional Pork Topping: Heat the oil over medium heat until hot. Add the ginger and doubanjiang. Stir and cook over medium heat until the oil is red, 1 minute. Add the pork. Stir and chop the pork into small pieces until the pork is browned. Add the wine and sugar and continue to fry for another minute. Transfer everything to a small bowl and set aside.",
+      "Bring a large pot of water to a full boil. Blanch the leafy greens of your choice (1 minute for softer greens, 3 minutes for firmer) and set aside. Boil the noodles according to package instructions. Transfer the noodles from the boiling water into a colander. Drain, quickly rinse with cold tap water to stop cooking, then drain thoroughly again. Reserve the noodles’ boiling water.",
+      "Mix the Chinese sesame paste with 1 tablespoon of warm water. Stir to mix until it forms a smooth paste.",
+      "Divide the soup base ingredients into two medium bowls: add 1 to 2 tablespoons chili oil, half of the sesame paste, 1 teaspoon soy sauce, 1 teaspoon sesame oil, 1/2 teaspoon Chinkiang vinegar, half of the grated garlic, 1/2 teaspoon grated ginger, a pinch of Sichuan peppercorn powder, and 1/2 teaspoon chicken bouillon powder (if using). Stir to mix the seasonings.",
+      "Divide the noodles into each bowl. Add 1/2 cup (up to 1 cup) noodle boiling water. Top the noodles with the blanched vegetables, a tablespoon of pickled vegetables of your choice, crushed roasted peanuts, green onions, and ground pork if using. Serve as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": "or soy sauce for a less spicy dish",
+        "amount": "½",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "225 g",
+        "amount": "4",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Ground Pork Topping (Optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sesame Paste",
+        "unit": "Tbsp",
+        "notes": "or natural peanut butter",
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil (chili Crisp and Oil)",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2-4",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": "or 1/2 teaspoon salt, or to taste",
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Alkaline Noodles",
+        "unit": "oz",
+        "notes": "200 g, or 300 g fresh alkaline noodles, dried",
+        "amount": "7",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Noodle Boiling Water (or Chicken Broth)",
+        "unit": "C",
+        "notes": "*Footnote 3",
+        "amount": "1",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Leafy Greens",
+        "unit": "heads",
+        "notes": "gai lan, yu choy, baby bok choy, etc",
+        "amount": "4",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Pickled Mustard Tube",
+        "unit": "Tbsp",
+        "notes": "zha cai",
+        "amount": "2",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Noodles & Toppings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b196729e180c9d8fdb30c0422e66354297d378cde9027aefddbc24f9708c9da2",
+    "lineage_hash": "9293e5cf8d01c79ca41a07246570e45c4df9ed3dbb24eb16ea9358174d6764d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chongqing-noodles/",
+    "fetchedAt": "2026-08-02T02:26:03.010Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chongqing-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Blasphemy Ribs",
+    "time": "27 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "754",
+      "carbohydrateContent": "28",
+      "fatContent": "47",
+      "proteinContent": "55"
+    },
+    "directions": [
+      "Prep. For the rub, combine all the ingredients in a bowl.",
+      "Trim. Remove the rib rack from its packaging and give it a good rinse. Trim off any excess fat and remove the membrane from the back. Cut the rack into individual pieces.",
+      "Brine. Place the ribs in a one gallon (3.8 L) zip-lock bag. Add the rub to the bag, seal, and work the rub into the ribs so they are well coated. Place the bag in the refrigerator for at least 6 hours (overnight is preferable) so the salt will have a chance to dry brine the ribs. Be sure to turn the bag every few hours to re-coat the ribs as they brine.",
+      "Fire up. Prepare a grill for indirect cooking by placing one half of a chimney full of pre-heated charcoal briquettes on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Or if preferred, start up and preheat your pellet grill or any other cooker designed for grilling. Adjust the grill to bring the temperature to 225°F (107.2°C) at the grilling grate surface. It’s essential to maintain this temperature as closely as possible since this is a timed cook.",
+      "Cook. Coat the bottom of a perforated grilling pan with some cooking spray. Place the individual ribs evenly on the pan, and place the pan in your smoker. Cook for 2½ hours. Timing is important: less time means your ribs will not be done, while too much time means they may dry out.",
+      "Glaze. At the 2 hour mark, spread a liberal coat of barbecue sauce on all sides of the ribs, and allow it to glaze on the ribs for the remaining ½ hour of cooking.",
+      "Serve. Remove and serve hot with your favorite sides."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turbinado",
+        "unit": "Tbsp",
+        "notes": "alt: brown sugar, “Sugar In The Raw” is a branded version of turbinado",
+        "amount": "6",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "Tbsp",
+        "notes": "table salt grind",
+        "amount": "1",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Rack Baby Back Ribs",
+        "unit": null,
+        "notes": "about 12-13 ribs a 3-4 pound (1.4-1.8 kg) rack",
+        "amount": "1",
+        "section": "Ribs and Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Baby Ray’s Hickory and Brown Sugar BBQ Sauce (or Your Favorite)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Ribs and Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef964e3d9de0a6eeb2209bcca9c47684b3818da0837f6cbb74c876b171a40d24",
+    "lineage_hash": "59898ebe5e9dac5499d5bdf32c4bdc449f0b743b0f29d3b1fae09a759b0be9db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/blasphemy-ribs-recipe/",
+    "fetchedAt": "2026-08-02T10:57:06.603Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/blasphemy-ribs-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

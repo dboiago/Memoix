@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Aloo Sabji with Wadi Masala",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan heat ghee and add wadi, fry it until golden brown in hot ghee.",
+      "Now remove and keep aside and let it cool down a little. Then put in a grinder jar and grind it into a fine powder. Keep aside for further use.",
+      "In a kadai heat the ghee again and add ginger, garlic, green or red chilli, onion and saute until translucent.",
+      "Now add turmeric powder, asafoetida and sautÃ© for half a minute then add potatoes, water mix and cook it until soft.",
+      "Now add the fried wadi powder and cook it on medium heat until thickened.",
+      "Then finish with coriander leaves and lemon juice. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Frying Wadi",
+        "isOptional": false
+      },
+      {
+        "name": "Wadi",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4-5",
+        "section": "For Frying Wadi",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green or Red Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "cut into big cubes",
+        "amount": "3-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Wadi Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "452b9b86c6e6c347058be76438a15c5984a148c96a2229b2bbc693342ea978a2",
+    "lineage_hash": "c0946dd69b11cdc1c7c99f17de955ec7c33ad099fe8ed282f4cc7861b66b25ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/tari-wale-aloo-with-wadi/",
+    "fetchedAt": "2026-08-02T09:55:40.316Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/tari-wale-aloo-with-wadi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

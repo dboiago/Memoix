@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Dum Aloo Kali Mirch",
+    "time": "30-35 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, once it’s hot, cinnamon stick, bay leaf, onions, ghee and saute it for a while.",
+      "Add ginger garlic paste and saute for a minute.",
+      "Add potatoes, salt to taste, tender coriander stems, black peppercorns and cook it until potatoes are half cooked.",
+      "Add curd, cover it with the lid and let it cook for 10-12 minutes until cooked well.",
+      "Finish it with sugar, prepared masala mixture and cook for 2-3 minutes on low flames.",
+      "Transfer it to a serving dish or bowl, garnish it with coriander sprig and crushed black peppercorns.",
+      "Serve hot with paratha or roti.",
+      "In a pan, add cumin seeds, fennel seeds, cloves, coriander seeds, black peppercorns, black cardamom, salt to taste and dry roast for 2-3 minutes until aromatic.",
+      "Add dry fenugreek leaves and roast it for a minute.",
+      "Transfer it to a mixer grinder jar and grind into fine powder.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared masala, refined flour slurry, water, fresh coriander leaves and mix it well.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "peeled & cut into half",
+        "amount": "6-7",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1½",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dum Aloo Kali Mirch",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour Slurry",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f97c5de6d0ba6b27351c66544f1577742735a03c33b9758f16d93bffbbd5582",
+    "lineage_hash": "e24fa1ae7fe9658fa16bbd6187688e0cc7d9e0ffff96346271c779dd1decf7a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dum-aloo-kali-mirch/",
+    "fetchedAt": "2026-08-02T17:19:12.096Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dum-aloo-kali-mirch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

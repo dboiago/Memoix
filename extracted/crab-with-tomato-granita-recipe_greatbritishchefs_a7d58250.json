@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Crab with Tomato Granita",
+    "time": "1 hr 45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the tomato consommé granita. Add the tomatoes, basil, coriander, fennel, fennel seeds, shallot and tomato purée to a blender and blitz until smooth",
+      "Scrape into a bowl and add the cold water, white wine vinegar, lemon zest, lemon juice and white wine. Mix well, then leave to stand for 1 hour at room temperature",
+      "Add the mixture to a muslin bag suspended over a jug and leave to hang overnight - in the morning all of the liquid should have dripped through. Taste for seasoning and place in a container in the freezer",
+      "Scrape the mixture with a fork every hour until you are left with granita-style ice crystals. Keep in the freezer until ready to serve",
+      "For the vinaigrette, add the white wine vinegar and Dijon mustard to a mixing bowl. Pour in the olive oil in a thin, steady stream, mixing with a whisk as you go. Once all of the olive oil is incorporated, season with salt and set aside",
+      "Dress the micro herbs, samphire and king crab with the dressing and divide into serving bowls. Add a scoop of the granita and some pea shoots before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "King Crab",
+        "unit": "g",
+        "notes": "picked white meat only",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "kg",
+        "notes": "deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "cold",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Coriander Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Red Amaranth Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Watercress Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Samphire",
+        "unit": null,
+        "notes": "blanched",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Basil",
+        "unit": null,
+        "notes": "washed and picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "facddc233de325d60b5ee68af43af0542544df4e046fa6afd3d47c03b9ccce36",
+    "lineage_hash": "a08996d37303133a74cc239fdc9e418cde9821017ba2e74ec210ee693abdf23c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-tomato-granita-recipe",
+    "fetchedAt": "2026-08-03T16:37:24.947Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-tomato-granita-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

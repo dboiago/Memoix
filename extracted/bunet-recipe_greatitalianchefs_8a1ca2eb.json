@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Bunet",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the caramel, place the sugar and water in a small saucepan set over a medium heat. Bring to a gentle boil and allow the caramel to darken and thicken. Remove from the heat and divide the caramel between 6 pudding moulds. Set aside",
+      "Next, place the eggs and sugar in a large bowl and whisk until the sugar has dissolved and the eggs are pale and airy. Add the milk, cocoa, rum and crumbled amaretti, then whisk until fully combined",
+      "Pour the mixture into the moulds, then place the moulds in a deep tray filled with water to create a bain-marie. Place in the oven and cook for 35 to 40 minutes, or until cooked through –– use a toothpick to test for doneness: it should come out clean from the centre of one of the puddings",
+      "Remove from the oven and allow to cool completely, then refrigerate for at least 2 hours – or better still, overnight – before serving. Serve chilled with a couple of extra amaretti biscuits as a decoration"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "sifted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Biscuits",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e29114ba04c28dddeb07942e5e7d9354687b619f2f1ddf722022d228ff878bbd",
+    "lineage_hash": "bdbd2667ba68275dbc11913d9a4c91a71dd4d92c2f9695ae3c6420f3ae706469"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/bunet-recipe",
+    "fetchedAt": "2026-08-01T19:14:28.404Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/bunet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

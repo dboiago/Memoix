@@ -1,0 +1,72 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-cabbage-potstickers/",
+  "slug": "chinese-cabbage-potstickers_chinasichuanfood_3269c187",
+  "title": "Chinese Cabbage Potstickers",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:20:37.206Z",
+  "ldName": "Chinese Cabbage Potstickers",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 Making around 60 potstickers"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple food",
+  "ldKeywords": "Potstickers",
+  "ldIngredientsRaw": [
+    "60  wrappers ( , or homemade dumpling wrappers)",
+    "500 g pork ( , slightly more than 1 pound, with lean and fat and finely minced; you can use ground pork too)",
+    "500 g Chinese cabbage or more if you love to have more vegetables",
+    "1 tablespoon salt for marinating the cabbage",
+    "1 tablespoon oil for frying the potstickers",
+    "Chopped green onion for garnishing",
+    "Toasted black sesame ( , for garnishing)",
+    "pinch of salt",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon oyster sauce",
+    "dash of pepper",
+    "1 tablespoon minced ginger",
+    "1 tablespoon minced green onion",
+    "1/2 tablespoon sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Finely mince the cabbage and mix with 1 tablespoon of salt in a large bowl. Set aside for 10-15 minutes. Then wash the cabbage twice to remove extra salt. Squeeze the water out slightly.",
+    "In another mixing bowl, mix ground pork with all the other seasonings. Continue stirring the meat filling in one direction for 1 or 2 minutes or until sticky. Add cabbage and combine well.",
+    "Assemble the potsticker"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "865 kcal",
+    "carbohydrateContent": "96 g",
+    "proteinContent": "38 g",
+    "fatContent": "35 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "103 mg",
+    "sodiumContent": "3554 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "60 wrappers  , or homemade dumpling wrappers",
+    "500 g pork  , slightly more than 1 pound, with lean and fat and finely minced; you can use ground pork too",
+    "500 g Chinese cabbage or more if you love to have more vegetables",
+    "1 tablespoon salt for marinating the cabbage",
+    "1 tablespoon oil for frying the potstickers",
+    "Chopped green onion for garnishing",
+    "Toasted black sesame  , for garnishing",
+    "[Seasonings]",
+    "pinch of salt",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon oyster sauce",
+    "dash of pepper",
+    "1 tablespoon minced ginger",
+    "1 tablespoon minced green onion",
+    "1/2 tablespoon sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chocolate Paan (Chocolate Meetha Paan)",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "107",
+      "carbohydrateContent": "19",
+      "fatContent": "3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Start by preparing the paan leaves. Fold it and then cut it from the bottom at an angle to remove the stalk (see picture).",
+      "Now place the paan on a flat surface. Add 1/2 teaspoon hazelnut spread on the leaf and then using your fingers, spread the hazelnut spread over the paan leaf.",
+      "Now add 1/4 teaspoon of green and 1/4 teaspoon of red tutti frutti on the paan.Top with 1/4 teaspoon each of desiccated coconut powder and mukhwas. Also add 3-4 chocolate chips.",
+      "Top with chopped cherries (from the 4 cherries that we have chopped).And finally with 1 teaspoon of gulkand. You can reduce this amount of gulkand to your taste. The filling is now done, it's time to fold the paan.",
+      "Take the right hand cut side of the paan and fold it over. Please see picture, you don't fold it straight down but rather at an angle.",
+      "Now, take the left side and fold it over the right hand fold.",
+      "Then take the third side and fold it over to make a triangle (see pictures). You now have a nice triangle.",
+      "To seal the paan, take a whole cherry and insert a toothpick inside it and poke it into the center of the paan. Make all paans similarly. Once all paans are done, it's time to melt the chocolate.",
+      "Melt the chocolate wafers using a double boiler method or microwave. I used a double boiler method where I took few inches of water in a pan and let it simmer. Place a glass bowl with chocolate wafers on top of the pan, making sure the bottom of the glass bowl doesn't touch the water.Let water simmer (no boiling) and the chocolate melt.",
+      "Once the chocolate is melted and smooth, dip one side of the pan into the melted chocolate and rotate to coat it from all sides. Do same with all the prepared paan.Place them for parchment paper for the chocolate to harden, you can sprinkle some desiccated coconut powder on top. Serve chocolate paan as a mouth freshener after a meal or enjoy as a fun snack/dessert anytime!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Paan Leaves",
+        "unit": "large",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Spread",
+        "unit": "tsp",
+        "notes": "like nutella",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "tsp",
+        "notes": "2 teaspoons green and 2 teaspoons red",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mukhwaas",
+        "unit": "tsp",
+        "notes": "or use candied fennel",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cherries",
+        "unit": null,
+        "notes": "7 whole and rest 4 chopped",
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gulkand",
+        "unit": "tsp",
+        "notes": "rose petal jam",
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Wafers",
+        "unit": "C",
+        "notes": "for melting",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0d2e52b02239c18d2aa938deb991392755cb233291fb28847ba190a5fc57c0b",
+    "lineage_hash": "2e65cbd31bc7bbf62d466ebec329ecfd512e536d94ed9af166a9f8841c28b11a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chocolate-paan/",
+    "fetchedAt": "2026-08-02T07:43:13.801Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chocolate-paan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

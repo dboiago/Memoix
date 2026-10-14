@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Drumstick Fish Curry",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take fish fillets and apply salt and turmeric and marinate well. Keep for 10 minutes.",
+      "Now, heat oil in the pan and cook the fish from both sides, 3 mins on each side. Remove the fish from the pan and keep aside for later use.",
+      "In the same pan, Add curry leaves, sliced onions and saute for 2 minutes.",
+      "Now, add in all the spices and mix well. Add drumstick, water and simmer for 12-15 minutes.",
+      "Add in coconut milk. Season with salt. Add tamarind paste, jaggery and mix well.",
+      "Transfer fish and cook for 2 minutes more. Turn off the flame."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pomfret",
+        "unit": null,
+        "notes": "any type of flatfish, darne",
+        "amount": "4-5",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Hand Full of Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Madras Onion",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No Drumstick",
+        "unit": null,
+        "notes": "cut into 1 inch pieces",
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to Taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Thick Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4905213688c25cae58138522fc2eb0045db906f21981efa2e6293711140f0266",
+    "lineage_hash": "218a7956f7c6f2cd9c5bcc4e325e11bf17ce8ba573b466cbd03bd9bb43425c5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/drumstick-fish-curry/",
+    "fetchedAt": "2026-08-02T06:30:37.322Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/drumstick-fish-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

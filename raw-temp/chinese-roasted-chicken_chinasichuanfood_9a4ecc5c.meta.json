@@ -1,0 +1,63 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-roasted-chicken/",
+  "slug": "chinese-roasted-chicken_chinasichuanfood_9a4ecc5c",
+  "title": "Chinese Roasted Chicken (烧鸡)",
+  "byline": "",
+  "fetchedAt": "2026-08-02T03:06:06.481Z",
+  "ldName": "Chinese Roasted Chicken (烧鸡)",
+  "ldTime": "PT2940M",
+  "ldPrepTime": "PT2880M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "chicken, Roasted",
+  "ldIngredientsRaw": [
+    "1  chicken ( , around 1 kg)",
+    "4 cloves garlic ( , sliced)",
+    "1  thumb ginger ( , sliced)",
+    "2  green onion ( , cut into smaller sections)",
+    "1 tbsp. Shaoxing wine",
+    "1/2 cup soy sauce",
+    "1 tbsp. sugar",
+    "1 tsp. salt",
+    "1/2 tsp. five spice powder"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the chicken and soak in clean water for 15 minutes. Then message with white vinegar, set aside for 10 minutes. Then rinse the chicken with paper (drying process is quite important).",
+    "Combine all the marinade ingredient in a small bowl.",
+    "Prepare a large bag, place the chicken in and then add all the marinade sauce. Rub the bag gently to make sure the chicken is evenly coated by the sauce. Keep in fridge at least overnight to 48 hours. Flip 2-3 times.",
+    "Take only the chicken out (discard the liquid and all the other spices). Truss the legs and place on a baking sheet (beast up) and then air dry until the skin becomes tightened and dry (usually take 1 to 4 hours based on the room condition).",
+    "Preheat the oven to 200 degree C (400 Degree F). Place the chicken on the low rack and roast for 30 minutes. Lower the temperature to 120 degree C (250 degree F) and bake for another 20 minutes (you can rotate the baking pan).",
+    "Cooled down for 15 minutes before shredding and enjoy. You can serve it with spicy sauce, soy sauce or plum sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "778 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "66 g",
+    "fatContent": "50 g",
+    "saturatedFatContent": "14 g",
+    "cholesterolContent": "250 mg",
+    "sodiumContent": "3031 mg",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 chicken  , around 1 kg",
+    "[Marinade]",
+    "4 cloves garlic  , sliced",
+    "1 thumb ginger  , sliced",
+    "2 green onion  , cut into smaller sections",
+    "1 tbsp. Shaoxing wine",
+    "1/2 cup soy sauce",
+    "1 tbsp. sugar",
+    "1 tsp. salt",
+    "1/2 tsp. five spice powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

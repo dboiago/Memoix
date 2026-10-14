@@ -1,0 +1,44 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/260/blue-hawaiian",
+  "slug": "blue-hawaiian-cocktail-recipe_diffordsguide_42fca37f",
+  "title": "Blue Hawaiian Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:59:38.211Z",
+  "ldName": "Blue Hawaiian",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Frozen (blended)",
+    "Fruity (e.g. Pornstar Martini)",
+    "Tiki/tropical"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Light white rum",
+    "40 ml Blue curaçao liqueur",
+    "30 ml Cream of coconut",
+    "90 ml Pineapple juice",
+    "7.5 ml Lime juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a HURRICANE GLASS.",
+    "Prepare garnish of pineapple wedge and Luxardo Maraschino Cherry.",
+    "BLEND ingredients with 6oz scoop of crushed ice.",
+    "Pour into glass.",
+    "Serve with straws."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "231 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

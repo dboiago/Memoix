@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Butter Tarts",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, sugar and salt together. Add the oil and blend in using a pastry cutter, electric beaters or a mixer fitted with the paddle attachment, until the flour looks evenly crumbly in texture.",
+      "Add the butter and cut in until rough and crumbly but small pieces of butter are still visible. Stir the water and vinegar (or lemon juice, if using) together and add all at once to the flour mixture, mixing just until the dough comes together. Shape the dough into 2 logs, wrap and chill until firm, at least an hour.",
+      "Preheat the oven to 400 °F (200 °C) and lightly grease a 12-cup muffin tin. Pull the chilled dough from the fridge 20 minutes before rolling.",
+      "Cut each of the logs of chilled pie dough into 6 pieces. Roll each piece out on a lightly floured work surface to about 1/4-inch (5 mm) thick and use a 5-inch (12 cm) round cookie cutter to cut each into a circle. Line each muffin cup with the pastry so that it comes about 1/2-inch (1 cm) higher than the muffin tin, and chill the lined tin while preparing the filling.",
+      "Whisk sugar, maple syrup and butter in a bowl by hand until combined. Whisk in eggs, then vinegar and vanilla. Sprinkle a few raisins, pecans or walnut pieces into each cup and then pour the filling into the shells and bake the tarts for 5 minutes, then reduce oven to 375 °F (190 °C) and continue baking until butter tart filling starts to dome, about 20 more minutes. Cool tarts in the tin, and chill the tarts in the tin before removing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "2 ½ Cups All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "12 g",
+        "amount": "1",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "5 g",
+        "amount": "1",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "45 mL",
+        "amount": "3",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "does not have to be ice cold, 225 g, cut into pieces",
+        "amount": "1",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Cool Water",
+        "unit": "C",
+        "notes": "60 mL",
+        "amount": "¼",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "alt: lemon juice, 10 mL",
+        "amount": "2",
+        "section": "Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "150 g, packed",
+        "amount": "¾",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "C",
+        "notes": "175 mL",
+        "amount": "¾",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, melted",
+        "amount": "½",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large, at room temperature",
+        "amount": "2",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "5 mL",
+        "amount": "1",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "5 mL",
+        "amount": "1",
+        "section": "Filling:",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "pecans or walnut pieces, 125 mL",
+        "amount": "½",
+        "section": "Filling:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "efc9ae55b43cce3b9174f14a09794399d7287298f71907c69a8bcfb607286bc8",
+    "lineage_hash": "26edc69c6ad6dc65904423c380a9ae50796b20dd6ca407590ad71760abb711ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/butter-tarts/",
+    "fetchedAt": "2026-08-01T18:01:09.323Z"
+  },
+  "rawSource": "https://annaolson.ca/project/butter-tarts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

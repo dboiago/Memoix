@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Chinese Coriander Salad",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "167",
+      "carbohydrateContent": "7",
+      "fatContent": "14",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Wash coriander cut into small sections.",
+      "Place coriander with shredded red onion in a salad bowl.",
+      "Add all the seasonings in and mix well. Wait for several minutes and top with some red oil for decoration before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "fresh, around 150g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Red Onion",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Red Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt If Needed",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6f7b455dabb4a33bb25855c0108d6e78b53d0b66d0e12cc5684e522abd032e3",
+    "lineage_hash": "08e79c594acb9706e6c3ad5757fcdaa20f01d7493175c1c53c0e094433b63b6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-coriander-salad/",
+    "fetchedAt": "2026-08-02T00:00:14.997Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-coriander-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

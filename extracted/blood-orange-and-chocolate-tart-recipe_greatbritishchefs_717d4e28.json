@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Blood Orange and Chocolate Tart",
+    "time": "4 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the pastry. Blitz the almonds and icing sugar in a food processor then sieve the mixture into the bowl of a stand mixer with the rest of the dry ingredients",
+      "Using the paddle attachment, combine on low speed with the cold butter until the mixture resembles fine breadcrumbs",
+      "Beat the eggs in a separate bowl, then add to the flour and butter mixture. Work for about 30 seconds until just combined. Avoid over-working the dough",
+      "Push the dough together to form a rough disc shape. Wrap in cling film and chill for a minimum of 1 hour, until it is firm and well rested",
+      "Lightly sprinkle a work surface with flour and roll the pastry out to an even circle, about the thickness of a pound coin. There will be some excess dough which can be trimmed after cooling. Roll the pastry back onto the rolling pin and onto the tart tin. Coerce the pastry into the tin, pressing it gently into the edges. Leave the pastry overhang as it is. Chill for another hour",
+      "Preheat the oven to 150°C/gas mark 2 (no fan)",
+      "Trim the excess pastry to leave about 1cm hanging over the edge, reserving the excess pastry for later. Use aluminium foil to line the tart case for blind-baking. Lani uses caster sugar as a weight for blind-baking, then reuses the lightly toasted sugar in the tart filling, but you can use baking beans or whatever you prefer. Bake the tart shell for 1 hour",
+      "Remove the pastry case from the oven and remove the foil and sugar (or baking beans). Use a microplane to shave the edges of the tart shell until it is flush with the tart ring and even all around",
+      "Using a stick blender, blend enough of the reserved raw pastry trimmings (about 35–40g) with the egg to form a liquid pastry. Brush it all over the tart case, filling any cracks and smoothing out the edges. Return to the oven for another 10 minutes, then remove and set aside to cool",
+      "To prepare the chocolate filling, melt the chocolate in a bain-marie. Meanwhile, heat the cream and milk almost to the boil in a saucepan. Pour it over the eggs, whisking continuously",
+      "Once the egg and cream mixture is incorporated, stir it into the melted chocolate until combined and smooth using a spatula",
+      "Place the prepared tart shell on the middle shelf of the oven and pour in the chocolate mixture. Turn off the oven and leave it to cook in the oven’s residual heat for 20–25 minutes, or until it is just set with a slight wobble in the centre",
+      "Allow the tart to cool completely before decorating",
+      "Peel the blood oranges and segment them, working over a bowl to collect any juice. Set the segments to one side and measure out 50ml of blood orange juice to make the jelly",
+      "To make the blood orange jelly (this will be used to glaze the finished tart), bring the water, glucose and sugar to the boil in a saucepan. Add the bloomed gelatine, return to the boil for a second then remove from the heat. Stir in the 50ml reserved blood orange juice, pass through a sieve and allow to cool",
+      "To serve, arrange the blood orange segments over the chocolate tart in circles, or in any pattern you like. Brush with the bloody orange jelly and allow to set before slicing"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and chilled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "bloomed in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b816fdcfdbf20969b2a08f67f73e9094adf38e1872f32f5698d4fc6341121200",
+    "lineage_hash": "d8233824b4964b3f42d9a97d134d2300ba4f6b6e88edc2020533d6fd4790c9c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-chocolate-tart-recipe",
+    "fetchedAt": "2026-08-03T08:16:16.547Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-chocolate-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

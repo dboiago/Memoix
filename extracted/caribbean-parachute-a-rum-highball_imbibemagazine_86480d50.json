@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Caribbean Parachute",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except tonic water to a shaker with no ice. Shake to combine, then add ice and shake well until chilled and foamy. Add chilled tonic water to an empty Collins glass, then strain the cocktail into the tonic until the top of the drink is half an inch below the rim. Wait for the foam to completely settle, then finish straining the remainder of the cocktail."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a36002c19d52350cbe19574999eee796f0974752e0908bcb01628344cd252985",
+    "lineage_hash": "6994dfe0e097a372271c9f200cd3a5d509f26f10949ef96db6f817143facf43c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caribbean-parachute-rum-highball/",
+    "fetchedAt": "2026-08-03T22:05:32.524Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caribbean-parachute-rum-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

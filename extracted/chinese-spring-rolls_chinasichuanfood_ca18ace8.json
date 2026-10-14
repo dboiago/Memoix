@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Chinese Spring Rolls",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "79",
+      "carbohydrateContent": "3",
+      "fatContent": "2",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Marinate pork with all the marinating sauce in a small bowl. Set aside for around 15 minutes.",
+      "Heat up around  2 tablespoons of cooking oil in wok, add shredded pork in and fry until there is no pink color any more. Transfer immediately to avoid overcook since we will deep fry later.",
+      "Finely shredded other vegetables. Heat up around 1/2 tablespoon oil in wok and fry all the other side ingredients until slightly soft. Sprinkle pinch of salt and mix well.",
+      "Prepare all the ingredients (fried pork and side ingredients) and your spring roll wrappers. Whisk the slurry in a small bowl.",
+      "Assemble the spring roll one by one as the picture showed.",
+      "Pre-heat the oil for deep-frying in a small pot or a wok. When the oil is ready, place a chopstick in and there will be lots of small bubbles around it. Or you can use leftover wrappers for testing. The content can float on surface immediately. The oil temperature should be around 160 degree C or 320 degree F.",
+      "Slowly slide the spring rolls in and deep fry in small batches. Deep fry until the spring rolls become lightly browned.",
+      "Heat the oil around2-3 minutes (oil temperature around 190~200 degree C or 390 degree F )and then place all of the spring rolls in and then continue frying for 10 seconds. Watch carefully until the they are almost browned.",
+      "And then drain on a paper towel before serving. You can serve along with some of your favorite sauces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spring Roll Wrappers",
+        "unit": null,
+        "notes": "easier version, traditional version",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "C",
+        "notes": "shredded, white part recommended",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry for sealing spring roll",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry for sealing spring roll",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52f3ccf9c7c9d62c13e71575445753ded3cc1096555b78efa3a58a219e42bb73",
+    "lineage_hash": "65d4612aedbff8d81149f2d0ff948c4d497b0a08ad47cac48133a4184b9fa610"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-spring-roll/",
+    "fetchedAt": "2026-08-01T23:02:54.008Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-spring-roll/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Curry Seafood Medley",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "248",
+      "carbohydrateContent": "14",
+      "fatContent": "22",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Clean: Pick through seafood medley;  remove any shells and discard. Rinse under cold water & drain.",
+      "Heat oil in a medium pot over medium heat.",
+      "Add onion and hot pepper and fry until golden brown.",
+      "Add curry and cook for 3 mins. Add green seasoning, minced garlic, ½ cup water and cook until grainy and fragrant, another 3-5 minutes.",
+      "Stir in eggplant, potatoes, tomato, thyme and cook for 10-15 mins or until tender.",
+      "Add mixed seafood, scallions, salt, cover, reduce heat to medium low and cook for an additional 15 mins until the sauce thickens, stirring every 5 mins. Taste and add salt if required.",
+      "Finish off with chopped scallions or bandhania also known as culantro or shado beni."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Seafood Medley",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomato Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggplant Peeled",
+        "unit": "lb",
+        "notes": "cubed, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Cubed",
+        "unit": "lb",
+        "notes": "min 1 potato",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Minced Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Curry Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "alt: bandhania",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ad76481019d8c681ce8b471c03eb62f5180c4727bd0bec7f7e83f9aebb393e3",
+    "lineage_hash": "7c30153f022241eb650bb8c04737c9c7931bba79b0ab9157cd94078c9251973a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2021/10/curry-seafood-medley-curry-mixed-seafood/",
+    "fetchedAt": "2026-09-25T20:31:50.392Z"
+  },
+  "rawSource": "https://cookingwithria.com/2021/10/curry-seafood-medley-curry-mixed-seafood/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

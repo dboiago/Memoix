@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Apple Cheddar Walnut Scones",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 400°F and line a baking tray with parchment paper.",
+      "Stir the flour, sugar, baking powder, celery salt and cinnamon to combine.",
+      "Cut in the chilled butter using a pastry cutter, 2 knives or your fingers until the mixture is crumbly but pieces of butter are still visible. Stir in the cheddar cheese to coat it with the flour mixture.",
+      "Using the coarse side of a box grater, grate the apple into the flour mixture and stir in. Stir in the milk until the dough begins to come together and then turn it out on a work surface.",
+      "Sprinkle the walnuts over top of the dough and work them in by flattening the dough out with your hands and then folding it in half, pressing the walnuts in at the same time (it takes about 4 or 5 folds to do this).",
+      "Shape the dough into a disc and flatten it with your hands until it is about 8 inches across. Cut the dough into 8 wedges and place them onto the prepared baking tray.",
+      "Brush the tops of the scones with milk and bake for about 16 minutes until they are a rich golden brown."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "cut into small pieces and chilled",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Cheddar Cheese",
+        "unit": "oz",
+        "notes": "about 1 cup, coarsely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith",
+        "unit": null,
+        "notes": "alt: other tart apple, peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Milk",
+        "unit": "C",
+        "notes": "plus extra for brushing",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Pieces",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79b3e89c1d0f9b097383beed2030cf40f160c4d3b4b0faf961ed2b9b5df76e5a",
+    "lineage_hash": "6c5d9cee15e6752e1261fa834b47907d0f44361be9f4a9361204b96cd9a9cdc6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/apple-cheddar-walnut-scones/",
+    "fetchedAt": "2026-08-01T17:26:08.684Z"
+  },
+  "rawSource": "https://annaolson.ca/project/apple-cheddar-walnut-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

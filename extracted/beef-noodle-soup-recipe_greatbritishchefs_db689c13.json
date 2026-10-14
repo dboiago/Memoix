@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Beef Noodle Soup",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the brisket and chicken bones in cold water, then put them in a large pot and cover with two litres of cold water",
+      "Bring to the boil, skim the scum that rises to the surface and reduce the heat to a steady simmer",
+      "Place the oil and red onions in a wok and cook over a medium heat, stirring often, for 10 minutes until golden brown",
+      "Drain the onions, discarding the oil, and spread them out on kitchen paper to absorb any excess oil",
+      "Now add to the stock the onions, along with the salt, the dark green ends of the spring onions (reserve the white parts for later), garlic, ginger, cinnamon, star anise and coriander seeds",
+      "Simmer for around two hours or until the brisket is very tender, at which point transfer the brisket to a bowl and allow to cool slightly",
+      "Strain the soup into a clean saucepan and discard the remaining ingredients",
+      "Flake the brisket back into the pot of broth, discarding any fatty pieces, then season the pho soup to your liking with the fish sauce and sugar",
+      "Put your rice noodles in a bowl of salted boiling water. Cover tight and leave for a few minutes until soft, being sure not to overcook them",
+      "Pour over the soup, slice the remaining white parts of the spring onions and sprinkle them over the soup. Finish with a squeeze of lime or lemon juice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ca56c9d4ded8926051ee683840597727ac1de10042b16d66f04607e2e1b72aa",
+    "lineage_hash": "1803112bd31b5e58973f0706c76fd88c5f529c7896fcee6a0120abe18d85fdc9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/vietnamese-pho-soup",
+    "fetchedAt": "2026-08-03T16:36:51.087Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/vietnamese-pho-soup",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

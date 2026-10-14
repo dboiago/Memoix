@@ -1,0 +1,48 @@
+{
+  "recipe": {
+    "name": "Coco Loco Smoked Crème Brulees",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the coconuts in half with a cleaver. The easiest way to do this is to tap the shell repeatedly with the back of the cleaver along an imaginary line going around the middle. After 10 to 20 taps, the shell will break neatly in two. (Alternatively, you can cut the coconuts in half with a band saw.) Work over a bowl with a strainer to collect the coconut water. Save it for making drinks.",
+      "Combine the cream, coconut milk, Coco Lopez, vanilla bean, and lemon zest in a heavy saucepan and gradually bring to a boil over medium heat. Remove the pan from the heat and let cool for 3 minutes.",
+      "Meanwhile, in a heatproof mixing bowl whisk together the 1/2 cup sugar and the egg yolks. Whisk in the cornstarch. Strain the milk into the yolk mixture in a thin stream and whisk to mix. Return this mixture to the saucepan and gradually bring to a gentle boil over moderate heat, whisking steadily. The mixture will thicken. Gently simmer for 1 to 2 minutes.",
+      "Remove the pan from the heat and let the custard cool to room temperature. Discard the vanilla bean and lemon zest. Spoon the custard mixture into the coconut shells and smooth the tops with the back of a spoon. Place the filled coconut shells in a roasting pan. Refrigerate the custards for at least 4 hours or even overnight.",
+      "Set up the grill or smoker for indirect grilling and preheat to medium. Bring 1 quart of water to a boil. When ready to cook, place the roasting pan in the center of the hot grate away from the heat. Add 1/2 inch of boiling water to the pan, taking care not to splash any on the custards. Grill the custards until just set, 25 to 35 minutes. (To test for doneness, tap one of the dishes. The mixture should wiggle, not ripple, indicating the custard is set.) Transfer the custards to a rack to cool to room temperature, then refrigerate until cold, about 4 hours. You can prepare the custards up to this stage the day before.",
+      "Sprinkle 2 teaspoons sugar in a thin layer over the filling in each coconut. Caramelize the sugar, using a blowtorch. If desired, serve the coco loco brulees on beds of crushed ice in shallow bowls."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe (hard, Brown-shelled) Coconuts",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f48ddd142e9deaa4f1429b6bab72cdf2fbb09294a3f800c808a51a8085755c5",
+    "lineage_hash": "1e1873f78e31afd3a80ccf30115f13bed1151cf6498d5598a187e6a2348879bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coco-loco-smoked-creme-brulees/",
+    "fetchedAt": "2026-08-03T04:38:59.649Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coco-loco-smoked-creme-brulees/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

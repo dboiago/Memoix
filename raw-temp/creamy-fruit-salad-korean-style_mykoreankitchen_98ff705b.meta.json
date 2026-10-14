@@ -1,0 +1,62 @@
+{
+  "url": "https://mykoreankitchen.com/creamy-fruit-salad/",
+  "slug": "creamy-fruit-salad-korean-style_mykoreankitchen_98ff705b",
+  "title": "Creamy Fruit Salad (Korean Style)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T21:00:16.611Z",
+  "ldName": "Creamy Fruit Salad (Korean Style)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Appetizer, Side dishes",
+  "ldKeywords": "creamy fruit salad, fruit salad, korean fruit salad",
+  "ldIngredientsRaw": [
+    "1  persimmon (, peeled, core &amp; stem removed, cubed)",
+    "1  mandarin orange (, peeled &amp; separated)",
+    "1  cucumber (, seeded &amp; cubed)",
+    "1  apple ((use red apple varieties), core removed, cubed)",
+    "1  raisins",
+    "1  roasted salted peanuts (or other nuts of your choice)",
+    "5 Tbsp mayonnaise (, regular)",
+    "1 - 1.5 tsp honey (, adjust per your preference)",
+    "1 tsp lemon juice",
+    "fine sea salt ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the dressing ingredients in a small bowl. Mix them well and set aside. Combine the main ingredients in a medium size mixing bowl. Pour over the salad dressing and gently toss to coat. Serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "118 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "1 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "5 mg",
+    "sodiumContent": "75 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 1 persimmon , peeled, core & stem removed, cubed",
+    "▢ 1 mandarin orange , peeled & separated",
+    "▢ 1 cucumber , seeded & cubed",
+    "▢ 1 apple (use red apple varieties), core removed, cubed",
+    "▢ 1 raisins",
+    "▢ 1 roasted salted peanuts or other nuts of your choice",
+    "[CREAMY FRUIT SALAD DRESSING]",
+    "▢ 5 Tbsp mayonnaise , regular",
+    "▢ 1 - 1.5 tsp honey , adjust per your preference",
+    "▢ 1 tsp lemon juice",
+    "▢ fine sea salt (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

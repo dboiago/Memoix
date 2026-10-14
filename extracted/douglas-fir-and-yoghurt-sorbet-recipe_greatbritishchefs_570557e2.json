@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Douglas Fir and Yoghurt Sorbet",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the sorbet, place the sugar, honey, water and Douglas fir in a pan and bring to a simmer. Remove from the heat, set aside to infuse for 2 hours then strain",
+      "Combine the syrup with the natural yoghurt, then pour into an ice cream maker and churn according to manufacturers instructions"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Douglas Fir",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d8d24d2d6cb8768abd9a7138c891fa7515f3a74ef554bcfe7dbfbf088622f33f",
+    "lineage_hash": "0c524e814c8425d144c48739d81d079d61a972e32a05db724a653e6bb13e9411"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/fir-yoghurt-sorbet-recipe",
+    "fetchedAt": "2026-08-03T20:50:59.478Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/fir-yoghurt-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

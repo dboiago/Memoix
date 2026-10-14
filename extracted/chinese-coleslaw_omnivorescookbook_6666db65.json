@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chinese Coleslaw",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "175",
+      "carbohydrateContent": "15.1",
+      "fatContent": "11.9",
+      "proteinContent": "4.8"
+    },
+    "directions": [
+      "Add the purple cabbage and carrot to a big bowl. Sprinkle with salt. Rub the salt evenly over the vegetables. Let sit while preparing the rest of the ingredients.",
+      "Whisk all the dressing ingredients together in a small bowl.",
+      "Pour the dressing into the big bowl and toss to mix well. Add the peanuts and cilantro and toss lightly again. You can serve it now or store it covered in the fridge until serving time, up to 2 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Purple Cabbage",
+        "unit": "C",
+        "notes": "about 1/4 head, or 4 cups coleslaw mix, sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts",
+        "unit": "C",
+        "notes": "coarsely chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or other neutral oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3708a69940af6bdfa8384ca67f9f31340cf88665869f1fb5f1d911dd1a93bb30",
+    "lineage_hash": "36a718c2a93321d5bfa8c422a49634e65b1f91c4ad78ab3fca086718267a0872"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-coleslaw/",
+    "fetchedAt": "2026-08-02T08:09:31.667Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-coleslaw/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

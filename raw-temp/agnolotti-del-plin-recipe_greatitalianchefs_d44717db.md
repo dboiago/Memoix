@@ -1,0 +1,5 @@
+Agnolotti (or ravioli) _del plin_ are a traditional type of stuffed fresh pasta from southern Piedmont. Famous for their tiny size (_plin_ means 'pinch' in the local dialect), _plin_ are quite laborious to make from scratch, which is why most families tend to either order them out at one of the many excellent _osterie_ serving them across the region, or to reserve the process for special occasions such as Christmas.
+
+What’s particularly interesting about _plin_ is that there isn’t an official or widely accepted recipe. The filling, for instance, can include anything from leftover meat to vegetables (particularly cabbage) and rice. The shape and size, on the other hand, are set, as _plin_ should never be larger than a thumbnail. The pasta, too, should be almost see-through, so as to not outshine the delicately flavoured filling.
+
+As for the sauce, _plin_ are often served in a clear gravy (often resulting from braising the meat for the filling), but it’s not uncommon to find them swimming in a simple butter sauce, too.

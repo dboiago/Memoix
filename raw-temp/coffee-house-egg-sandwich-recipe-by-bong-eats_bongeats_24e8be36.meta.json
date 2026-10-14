@@ -1,0 +1,31 @@
+{
+  "url": "https://www.bongeats.com/recipe/coffee-house-egg-sandwich",
+  "slug": "coffee-house-egg-sandwich-recipe-by-bong-eats_bongeats_24e8be36",
+  "title": "Coffee House Egg Sandwich recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:04:55.442Z",
+  "ldName": "Coffee House Egg Sandwich",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": "20 minutes",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "easy sandwich recipe, easy egg sandwich, coffee house sandwich, easy snack recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "2 eggs (boiled and peeled)",
+    "30 g butter (softened)",
+    "¼ tsp pepper (freshly crushed)",
+    "2 g salt",
+    "6 slices white bread"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

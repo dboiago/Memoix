@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Creole Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with ice and stir until chilled.",
+      "Strain into a chilled coupe.",
+      "Garnish with a large orange twist."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cask-strength Rye",
+        "unit": "oz",
+        "notes": "preferably Stellum",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "preferably Bèrto Ross da Travaj",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bigallet China-china",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alpine Amaro",
+        "unit": "oz",
+        "notes": "preferably Alpe Lys",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d66a49cdf26d6c22a8ba8518fdec9cf39b4d2b12913e4b81cc850ed0eaef81c",
+    "lineage_hash": "aff7b27872160bb69d307442afc436ffc5d9532f90e3b6fbe6d11c45f32aa374"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/creole-cocktail/",
+    "fetchedAt": "2026-08-03T04:47:34.131Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/creole-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

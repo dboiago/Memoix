@@ -1,0 +1,465 @@
+{
+  "recipe": {
+    "name": "Durslade Farm Lamb, Tomato Fondue and Black Olive Oil",
+    "time": "5 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the potatoes and rinse them thoroughly with cold water. Once washed, drain them well",
+      "Salt the potatoes, then set aside for 10 minutes",
+      "Once salted, squeeze any moisture out of the potatoes using muslin",
+      "Mix the drained, salted potatoes with the clarified butter",
+      "Vacuum pack the potatoes, and then roll out the rosti with a rolling pin until evenly flat",
+      "Steam at 100°C in a steam oven for 20 minutes",
+      "Once cooked, top the steamed rosti with a tray, and weigh down the tray with something heavy (like cans). Press in the fridge overnight",
+      "Dehydrate the black olives in a dehydrator at 70°C for 12 hours or until completely dry and crisp. Once dried, blend in a high powdered blender with the oil until completely smooth",
+      "Transfer to a bowl and infuse for 6 hours. Once infused, strain out the solids through muslin cloth, and then store in the fridge until needed",
+      "Blend all the ingredients for the basil oil in a Thermomix at 75°C for 10 minutes. Once blended the oil should be hot and ‘split’",
+      "Strain the oil through muslin, then store in the fridge until needed",
+      "Roast the lamb bones and trim in a large, ovenproof pan until they are well browned but not burnt. Remove any excess lamb fat",
+      "Transfer to the hob and place over medium heat. Add in the mirepoix and garlic and cook until browned, about 10 minutes",
+      "Add in the fennel seeds and tomato purée and cook out for a few minutes, then deglaze the pan with white wine and reduce by two thirds",
+      "Add in the stocks and bring to the boil. Add in the thyme, then simmer for 40 minutes",
+      "After 40 minutes, turn up the heat and reduce the sauce by a third. Make sure to skim the sauce regularly, removing all scum and impurities",
+      "Strain the sauce through a fine mesh strainer, then check the seasoning and finish with vinegar",
+      "Sweat the shallots and thyme in the olive oil until the shallots are translucent, about 5 minutes",
+      "Add the garlic and continue cooking for a further 2 minutes",
+      "Add and cook out the tomato purée for a few minutes, then deglaze with a splash of chardonnay vinegar",
+      "Add half of the diced tomatoes, and cook out until the juice is cooked off and the mix is beginning to look dry. Add the reseerved tomato juice from deseeding and continue to cook for a few more minutes",
+      "Add the remaining tomatoes and cook for another couple of minutes. Taste and check for seasoning and acidity",
+      "For the courgette and basil purée, deseed the courgettes and slice them thinly",
+      "Heat the olive oil in a pan and add in the courgettes and spinach. The aim is to cook the courgettes and spinach as quickly as possible to keep its natural colour and to avoid a stewed taste in the vegetables",
+      "Once just cooked, press any excess liquid out of the courgettes using a sieve (this is to avoid having a puree that’s too thin)",
+      "Blend the purée and pass through a chinoise and season to taste",
+      "Sweat the garlic and onion with the rosemary until softened, then remove the sprig of rosemary",
+      "Mix the garlic and onion with the remaining ingredients and weigh the total mixture. Add in 2% by weight of milk powder and 1.5% by weight of salt and mix again",
+      "Wrap tightly in caul fat and cling film",
+      "Poach for 7–8 minutes, then drain and sear with a blowtorch",
+      "Heat a few centimetres of oil in a high-sided, heavy-bottomed pan to 170°C",
+      "Cut out the rosti into 8-10 circles with a 4cm ring cutter. Flour lightly and deep fry at 170°C for 4 minutes or until crisp and golden",
+      "Remove any excess fat from the lamb and cut the racks into 8-10 2-bone racks per portion",
+      "Score the lamb racks to help the fat render, then season with salt and pepper",
+      "Sear the lamb in a hot pan to render some of the fat. Once golden, add in the garlic and the thyme as well as the butter and baste the lamb until cooked to your liking",
+      "Rest the lamb for 7 minutes, then carve and finish with flaky sea salt",
+      "To serve, fry the courgette cut-side down in a dash of oil until golden and tender",
+      "Slice at an angle and finish with flaky sea salt",
+      "Glaze the faggots with the warm lamb sauce, and serve each one on a round of rosti. Serve with the carved lamb, fried courgette, courgette purée and tomato fondue around the edge of the plate, some reduced lamb sauce in the centre, a drizzle of olive and basil oil, and a garnish of basil leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "kg",
+        "notes": "pitted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Bones",
+        "unit": "g",
+        "notes": "and trim from lamb racks",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirepoix",
+        "unit": "g",
+        "notes": "a mix of onion, celery, leek, carrot, fennel, diced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "blanched, peeled, deseeded and diced, tomato juice reserved",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Heart",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Liver",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sausage Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caul Fat",
+        "unit": null,
+        "notes": "for wrapping",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Rack",
+        "unit": null,
+        "notes": "French trimmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "diced, for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": "cut in half lengthwise",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "purple and green",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c0e261294e10cac28b10b2de45482da3c86b57c6b7967ec8948f87a500804c1",
+    "lineage_hash": "b63281af9e94a79cc00f5c266468edec7b9b2a0cd36a19d14c3a4a5b04d6f7ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/lamb-tomato-fondue-black-olive-oil-recipe",
+    "fetchedAt": "2026-08-02T00:08:40.388Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/lamb-tomato-fondue-black-olive-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

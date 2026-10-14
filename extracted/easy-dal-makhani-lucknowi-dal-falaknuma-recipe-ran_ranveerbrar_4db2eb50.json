@@ -1,0 +1,377 @@
+{
+  "recipe": {
+    "name": "Lucknowi Dal Falaknuma (फ़लकनुमा दाल)",
+    "time": "40-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker, add ghee, once it's hot, add dry kashmiri red chillies, soaked urad dal, moong dal, chana dal, degi red chilli powder, turmeric powder and cook for a minute.",
+      "Add ghee, water, spinach leaves, salt to taste, give it a good mix, cover it with the lid and let it cook for 3-4 whistles or until it's cooked.",
+      "Once dal gets cooked then keep it aside for further use.",
+      "In a pan or handi, add oil for frying. Once it's hot, add sliced onions and cook for 8-10 minutes until onion gets crispy texture and light brown in colour.",
+      "Transfer it into an absorbent sheet and leave it aside for further use.",
+      "In a handi, add remaining excess oil, once it's hot, add bay leaf, cinnamon stick, cloves, black peppercorns, cumin seeds and splutter well.",
+      "Add half portion of fried onions, fresh tomato puree, curd, ginger garlic paste, salt to taste and cook for 10-12 minutes until oil separates from the masala.",
+      "Add degi red chilli powder, turmeric powder, coriander powder, little water to allow further cooking.",
+      "Now, add cooked dal, water, tender coriander stems and let it simmer for a while.",
+      "Add water, salt to taste and give it a good mix.",
+      "Finish it with prepared tadka and give it a quick boil.",
+      "Transfer it into the serving bowl, garnish it with fried onions, chilli oil and coriander sprig.",
+      "Serve hot with roti or steam rice.",
+      "In a pan, add jaggery, once it melts, add ghee, soaked dry fenugreek leaves, degi red chilli powder and and cook for a minute.",
+      "Turn off the flames and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "roughly torn",
+        "amount": "3-4",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Urad Dal",
+        "unit": "C",
+        "notes": "soak for 4-5 hrs",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Moong Dal",
+        "unit": "C",
+        "notes": "soak for 4-5 hrs",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "soak for 1-2 hrs",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Spinach",
+        "unit": "small",
+        "notes": "washed & roughly chopped",
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Frying Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Frying Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Excess Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Portion Fried Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "puree",
+        "amount": "3-4",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Dal",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Falaknuma",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": "soaked",
+        "amount": "1-2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18c9d48d20f3a65947fa1ac4105d75125a3e8fcc6a2d033985594bcf7824753c",
+    "lineage_hash": "ff5526e3bb9dc34fd7c92ee27d64a0494bbe570ed3d0832e0ae0725122e2a9e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-makhani-lucknowi-dal-falaknuma/",
+    "fetchedAt": "2026-08-02T20:57:51.893Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-makhani-lucknowi-dal-falaknuma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

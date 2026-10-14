@@ -1,0 +1,34 @@
+**Recipe:** _Reprinted with permission from [Eat. Cook. LA.: Recipes from the City of Angels](https://www.amazon.com/EAT-COOK-L-Recipes-Angels/dp/0399580476/?tag=imbibmagaz-20) by Aleksandra Crapanzano._
+
+This blackberry mint [mojito](https://imbibemagazine.com/mojito-recipe/) ice cream brings all the mint freshness of the cocktail to the dessert table. Once the ice cream has finished, swirl ribbons of blackberry jam throughout and garnish with mint.
+
+## Ingredients
+
+-   1½ cups heavy cream
+-   1½ cups whole milk
+-   1 packed cup fresh mint leaves
+-   2 Tbsp. grated lime zest
+-   ⅓ cup granulated sugar
+-   ¼ cup turbinado sugar
+-   4 egg yolks
+-   1 Tbsp. coconut rum
+-   2 Tbsp. white rum
+
+## Preparation
+
+To make the ice cream base, combine the cream, milk, mint and lime zest in a medium saucepan and cook over low heat, whisking occasionally, until it just begins to simmer. Remove from the heat and let steep for 30 minutes. Pick out and discard the mint leaves. Stir in the sugars and return the mixture to a simmer over low heat, stirring to dissolve the sugars.
+
+In a separate bowl, whisk the egg yolks. Once the cream mixture is at a simmer, slowly pour about a third of it into the eggs, while whisking constantly. Then pour the combined mixture back into the saucepan and continue to whisk. Return the mixture to a simmer and continue to cook for about 4 minutes, or until it has thickened enough to coat the back of a spoon.
+
+Prepare an ice bath. Strain the custard through a fine-mesh sieve into a metal bowl set in the ice bath. Add the rums and whisk occasionally until thoroughly chilled. Churn in an ice cream machine according to the manufacturer’s instructions. Transfer the ice cream to a bowl and fold in all of the blackberry jam by hand to create ribbons of jam throughout. Freeze in airtight containers for at least 2 hours before serving.
+
+Blackberry Lime Jam  
+4 cups fresh blackberries  
+½ cup sugar  
+2½ Tbsp. corn syrup  
+¼ cup freshly squeezed lime juice  
+1½ Tbsp. pectin
+
+To make the jam, combine the berries, ¼ cup of the sugar, the corn syrup, and the lime juice in a medium pot and bring to a simmer over low heat, gently crush- ing the berries with a wooden spoon as you stir. Whisk the remaining ¼ cup sugar and pectin together in a bowl and, continuing to whisk, sprinkle into the simmering jam. Continue to cook the jam until it boils and activates the pectin. This will thicken the jam. Pour the jam into a container and lay plastic wrap over the surface to prevent a skin from forming. Refrigerate until chilled or up to several days. Makes 1 quart.
+
+Note: You will need pectin to make the blackberry jam. Pectin accelerates the process of thickening fruit into a jammy consistency. It’s easily found in most grocery shops. Alternatively, substitute a good store-bought blackberry jam.

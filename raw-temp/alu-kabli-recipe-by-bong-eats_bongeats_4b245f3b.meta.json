@@ -1,0 +1,41 @@
+{
+  "url": "https://www.bongeats.com/recipe/aloo-kabli",
+  "slug": "alu-kabli-recipe-by-bong-eats_bongeats_4b245f3b",
+  "title": "Alu Kabli recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T16:31:19.492Z",
+  "ldName": "Alu Kabli",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT5M",
+  "ldYield": "2 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "Snack",
+  "ldKeywords": "kolkata street food, easy Bengali snack, healthy Bengali snack, aloo chaat, chaat recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "150 g boiled potatoes",
+    "30 g boiled motor (whole yellow peas)",
+    "30 g sprouted chhola (bengal gram)",
+    "20 g onions (finely chopped)",
+    "3 g green chillies (finely chopped)",
+    "5 g coriander (finely chopped)",
+    "30 g cucumber (diced)",
+    "30 g tomato (diced)",
+    "10 g lime",
+    "10 g tamarind (soaked in 40g water)",
+    "1 tsp bhaja moshla",
+    "1 tsp chilli flakes",
+    "3 g beetnoon (black salt)",
+    "3 g salt‍",
+    "10 g jhuri bhaja (sev)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Coconut-Braised Pork Belly",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all of the pork along with the ingredients for the marinade in a bowl. Mix together well and leave in the fridge overnight to marinate",
+      "For this dish, you will only need 2 tsp of caramel sauce, but it's best to make big batches for use in other dishes. To make the caramel sauce, heat 500g sugar and 125 ml water in a saucepan over a medium heat. Stir slowly, until the sugar has completely dissolved. Reduce the heat to low and cook for 10 minutes, until the mixture starts to smoke and caramelise, then carefully pour in another 125ml water (be super careful at this point as adding the water will cause the hot sugar to splutter) and stir until fully combined. Continue to cook for a further 5 minutes, until the mixture starts to smoke once more and is a rich dark reddish black colour, then take off the heat and pour into a heatproof jar. Set aside to cool and rinse the pan while still hot to make it easy to clean. Keeps indefinitely at room temperature",
+      "Heat the oil in a large saucepan over a high heat until it reaches 190°C. An easy way to tell when the oil is ready is to place a wooden chopstick into it – when bubbles form on the surface of the oil it is ready",
+      "Add the pork along with its marinade and 2 tsp of the caramel sauce. Toss the pork continually for about 4 minutes, until the caramel sauce has fully and evenly coated all of the pork. It is crucial to keep stirring the pork as it only takes a couple of seconds for it to go from golden to burnt",
+      "Now add the coconut water and 300ml of water, and bring to the boil. Skim off any impurities and marinade ingredients that float to the surface. The sauce needs to be clear and not cloudy. Turn down the heat and simmer for 2 hours",
+      "Add the fish sauce, the whole peeled hard-boiled eggs and the chillies, and continue to simmer for a further hour",
+      "Remove the pan from the heat and serve with mustard cabbage pickle and a generous portion of rice. A bowl of fish sauce with some sliced red chillies in would also make a good accompaniment"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "cut into 5cm dice",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Leg",
+        "unit": "g",
+        "notes": "cut into 5cm dice",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard-boiled and peeled",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Shallots",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a8ffc992085eea6f704351d036b3987f8f4f0c09a5f03db52bc5406ba54e9d57",
+    "lineage_hash": "2600d0de4cd6591f7a02e4a2caa25ed9d33d8e54c4805c4f679648abe64f8382"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-braised-pork-recipe",
+    "fetchedAt": "2026-08-03T10:00:27.253Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-braised-pork-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

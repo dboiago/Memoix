@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Creamy Coconut Butter Bean Curry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "268",
+      "carbohydrateContent": "25",
+      "fatContent": "17",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Sauté the aromatics: In a large skillet or saucepan, heat the oil over medium heat. Add the onion, garlic, and ginger and sauté for about 5 minutes, stirring occasionally, until the onions soften and just begin to brown. Stir in the curry powder, cumin, and turmeric, and cook for about 60 seconds until the spices are fragrant.",
+      "Simmer the curry: Pour in the coconut milk and diced tomatoes (with their juices), then add the butter beans, agave, salt, and pepper. Stir to combine. Bring to a gentle simmer and cook uncovered for about 15 minutes, stirring occasionally, until the sauce thickens slightly and the flavors meld.",
+      "Add the greens and lime: Stir in the baby spinach or chopped kale and cook for another 2–3 minutes, until wilted. Remove from heat and squeeze in the lime juice.",
+      "Serve and enjoy: Spoon into bowls and optionally  garnish with fresh cilantro and lime wedges. Serve with naan, rice, quinoa, or baked sweet potatoes.Storage & Freezing: Store leftovers in an airtight container in the fridge for 3–5 days, or freeze for up to 2 months. Thaw overnight in the fridge, then reheat gently on the stove or in the microwave with a splash of water or broth to loosen the sauce if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable or coconut oil, or sub water/broth for oil-free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, minced or grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "can",
+        "notes": "14 oz / 400 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "can",
+        "notes": "14 oz / 400 g, or 1 ½ cups diced tomato, diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Beans",
+        "unit": "cans",
+        "notes": "14 oz / 400 g, or 2 ½ cups cooked beans, (also called lima beans) drained and rinsed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave",
+        "unit": "tsp",
+        "notes": "alt: sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls Baby Spinach",
+        "unit": "large",
+        "notes": "alt: chopped kale",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Optional for Serving: Naan",
+        "unit": null,
+        "notes": "rice, quinoa, or baked sweet potatoes, fresh cilantro, and lime wedges for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ff641e1b05da7cbd1c53b49b4c76463252ee6422582a8900516e68a418a8714",
+    "lineage_hash": "2d9b798cc5af7a8ffb5bb93384b17db34fb7576a3027ed12d78dcf13c0492ba8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-coconut-butter-bean-curry/",
+    "fetchedAt": "2026-08-02T08:01:10.472Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-coconut-butter-bean-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

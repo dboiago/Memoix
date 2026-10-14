@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Painkiller Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Raspberry"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with pebble or crushed ice, shake to chill, then pour the contents into a glass. Garnish.",
+      "Raspberry SyrupCombine raspberry juice with white sugar and shake to dissolve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a15e588891cf5615b0e4fc1109d934fd991c5c7ede92b88cfd78088808eee3b7",
+    "lineage_hash": "bc7ed015075803e1b5be306e0023cab662061f17af2ce75d657c43d662a055e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/raspberry-booze-free-painkiller/",
+    "fetchedAt": "2026-08-03T22:18:52.371Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/raspberry-booze-free-painkiller/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

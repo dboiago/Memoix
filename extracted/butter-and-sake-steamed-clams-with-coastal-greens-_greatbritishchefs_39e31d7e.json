@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Butter and Sake-Steamed Clams with Coastal Greens",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the dried kombu and cold water and leave to soak overnight",
+      "Wash the clams in water then lay in a single flat layer in a large dish. Dissolve the table salt in the water, then pour over the clams. Leave them sitting in the fridge or a cool dark place for 3 hours – this will help clean any sand or grit from the clams",
+      "Combine the kombu dashi with the soy sauce and mirin and bring to the boil, then set aside",
+      "Melt the butter over a medium-high heat in a saucepan with a lid. Remove the clams from the water and give them another quick wash under running water before adding to the melted butter. When the butter is foaming, add the sake, 60g of the kombu dashi and the roughly chopped coastal greens and place a lid on the pan. Cook for 2-3 minutes until the clams open, then serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Palourde Clams",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Herbs",
+        "unit": "g",
+        "notes": "such as sea aster, samphire, sea beets or sea purslane, separated from stalks and roughly chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3dc8381b01d7d5b6bd4addb471dccb8dd3f51ffd082b1f126a3b54fb538c636e",
+    "lineage_hash": "e4f2cc93e8420dba69de9ea385773d2a3fa0d1a33f7af92012966fad31512587"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butter-sake-steamed-clams-recipe",
+    "fetchedAt": "2026-08-03T04:33:35.355Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butter-sake-steamed-clams-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

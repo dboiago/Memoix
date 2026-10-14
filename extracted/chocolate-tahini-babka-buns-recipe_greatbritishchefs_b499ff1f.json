@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Chocolate Tahini Babka Buns",
+    "time": "1 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the dough, add the flour, sugar, salt and yeast to the bowl of an electric stand mixer with the dough hook attachment and mix briefly to combine. Add the milk and eggs and knead on medium-low speed for about 10 minutes, until the dough is smooth, elastic and pulling away from the sides of the bowl",
+      "With the mixer still running, add the butter, a little bit at a time. Once the butter has been worked into the dough, continue kneading for a further 10 minutes or so until the dough is once again pulling away from the sides of the bowl",
+      "Place the dough in a lightly greased bowl, cover with clingfilm and refrigerate overnight or for up to 2 days",
+      "The next day, lightly grease or line the base of the baking tin with a piece of parchment paper. Make the filling. Place the chocolate and butter in a heatproof bowl set over a pan of simmering water (ensuring the bottom of the bowl doesn’t touch the water underneath) until melted. Remove from the heat, stir in the brown sugar and tahini, then set aside",
+      "Remove the dough from the refrigerator and, working on a lightly floured surface, roll out into a large 50x50cm (20x20in) square. Spread the chocolate tahini mixture evenly over the dough. At this point, the tahini mixture will be loose and glossy, so if you attempt to roll the dough up now it will be very messy, therefore, allow the mixture to sit for a couple of minutes until it goes a little tackier and loses its shine (don’t leave this too long though, because the filling will eventually set, meaning it won’t stick to the dough when it’s rolled). Sprinkle over a little flaked sea salt and roll up the dough into a tight sausage",
+      "Cut the sausage into 12 equal-sized slices and place them, cut-side up, into the prepared baking tin. Cover with clingfilm and set aside to prove in a warm place for 45 minutes to 1 hour, or until the rolls are touching each other and feel puffy to the touch",
+      "Meanwhile, preheat the oven to 190°C/gas mark 5",
+      "Bake the buns for 30–35 minutes, or until golden brown. Meanwhile, make the syrup. Place the sugar and 60ml water in a small saucepan and cook over a low heat just until the sugar has dissolved. Remove from the heat and add the vanilla",
+      "Remove the buns from the oven and pour over the warm syrup. Scatter with sesame seeds and leave to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Bread Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature, diced, plus extra for greasing",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "ideally 65-70% cocoa solids, finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "89667f94c89ff812fc2ed06b2e59855a8d631a8ee75a4fd31814940bd3fc75dd",
+    "lineage_hash": "e400f19e477edb3264d7d9a6b37a0662de6116e7f47f7a041067a377893a64a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tahini-babka-buns-recipe",
+    "fetchedAt": "2026-08-03T03:00:24.731Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tahini-babka-buns-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

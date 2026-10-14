@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Crab Samosa",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Over a medium high heat, heat the oil in a frying pan until shimmering and add the mustard seeds and curry leaves. When the mustard seeds start to pop, add the onion and cook until soft, but not coloured. Add the garlic, chilli and ginger and cook for 1 minute while stirring. Add the garam masala and turmeric and continue to cook over a medium heat for 2 minutes, stirring as is cooks. Add the lemon juice and stir again",
+      "Allow the mixture to cool then mix into the crab meat and mashed potato. Season to taste",
+      "Unroll the pastry and remove a sheet, laying it flat on a chopping board. Leave the rest of the pastry under a damp tea towel to prevent it drying out. Brush the pastry with melted butter and horizontally fold one third towards the middle. Brush with butter again, and fold again, so you have one long strip with 3 layers of pastry",
+      "Place a heaped teaspoon of the filling on the bottom left corner of the pastry and fold over into a triangle. Keep folding over in a triangle shape until the pastry is used up, then brush all over with butter and place on a baking tray. Repeat with the remaining ingredients",
+      "Bake for 30 minutes, turning halfway through cooking, until golden brown and crisp. Serve with yoghurt to dip"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "cooked and roughly mashed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dressed Crab",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filo Pastry Sheets",
+        "unit": "pkg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3deb5c7e95d529451cc6be74cf4d86f3fabab8151494d1b919d6a2b18b9fa5f",
+    "lineage_hash": "05b3e6b161271ead6926af640def2f75c49b9371b56d6d239ad34d9e8ccd23c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/spiced-crab-samosa-recipe",
+    "fetchedAt": "2026-08-03T08:34:03.358Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/spiced-crab-samosa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

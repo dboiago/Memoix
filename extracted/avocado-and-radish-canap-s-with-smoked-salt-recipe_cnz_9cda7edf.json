@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Avocado and Radish Canapés with Smoked Salt",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the avocado and lemon juice in a small bowl, sprinkle with pepper, and mash roughly with a fork.",
+      "Spoon onto the bread, season with a pinch of smoked salt, and top with half a radish.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Avocado",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ficelle (slim Baguette)",
+        "unit": "slices",
+        "notes": "alt: baguette",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salt",
+        "unit": "pinch",
+        "notes": "substitute fleur de sel, kosher salt, or salt + smoked paprika",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Halved Pink Radishes",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d603096026cb8e9a50e8966d50ed3664c44ead7eaa5e383e3758b7279457d7b",
+    "lineage_hash": "3c0be39b532d9da9e1f9eec93b5b6f720dab262eb57f973fb079b2d7aad7bd97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/appetizers/avocado-and-radish-canapes-with-smoked-salt-recipe/",
+    "fetchedAt": "2026-09-30T18:29:40.436Z"
+  },
+  "rawSource": "https://cnz.to/recipes/appetizers/avocado-and-radish-canapes-with-smoked-salt-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

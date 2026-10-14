@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Damson Gin",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the ripe damsons and gently prick each one with a fork",
+      "Place the damsons into a clean 1l jar along with the sugar and gin. Close the lid and give it a good shake",
+      "Store in a cool dark place for 3 months. After 3 months, strain the damsons and taste the gin. If you'd like it a little sweeter, you can add more sugar at this stage",
+      "Transfer to a bottle  – the damson gin is now ready to drink, though really benefits from ageing. We would recommend making a few batches so you can drink one and keep one for the next year (which will taste even better)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": "ripe, washed",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6eb0c66389ebc172b740fd046e7d9c35ca64d04e5d308e264b0906fa48c66191",
+    "lineage_hash": "86acd1d00c80a34536b1a8eec906b3a60e2b81a698438c9d71ef590578c0f96a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/damson-gin-recipe",
+    "fetchedAt": "2026-08-03T06:23:00.100Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/damson-gin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

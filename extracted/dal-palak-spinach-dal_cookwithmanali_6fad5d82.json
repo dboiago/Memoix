@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Dal Palak (Spinach Dal)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "218",
+      "carbohydrateContent": "32",
+      "fatContent": "4",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "To the inner steel bowl of the Instant pot add the toor dal (pigeon pea lentil) and masoor dal (split red lentils) and 3 cups water.Add 1/2 teaspoon turmeric and 3/4 teaspoon salt. Give a stir. Close the lid and press the pressure cook or manual button. Cook on high pressure for 8 minutes with the pressure valve in the sealing position. Let the pressure release naturally. Stove-top pressure cooker: cook on high heat for 2 whistles, then lower the flame and cook for another 7 to 8 minutes or until the lentils are completely cooked. Let the pressure release naturally.",
+      "This step is optional, but if you want you can blend the dal a little at this point using a wooden spatula or immersion blender. This way you won't have any dal particles in your final spinach dal but as I mentioned, it's completely optional. Set this aside.",
+      "Heat oil in a pot over medium heat. Once hot add cumin seeds and let it sizzle for a few seconds. Then add 1/4 teaspoon hing and stir.",
+      "Add the chopped ginger, garlic and green chili. Cook for 1 to 2 minutes until the garlic and ginger start turning brown in color.",
+      "Then add in 3 to 4 cups of chopped spinach. Cook the spinach for 3 to 4 minutes stirring often. The leaves will wilt as the spinach cooks and volume of the spinach will reduce.",
+      "Add the boiled dal into the pot now. Give a good stir until everything is well combined. Now, let the dal come to a boil. I added additional 1/2 cup water at this point as the dal was too thick for my liking.",
+      "Let it simmer for 2 to 3 minutes, then squeeze in some lemon juice. You can also sprinkle some garam masala if you like at this point. I didn't add anything and kept it simple. Serve hot with rice or roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toor Dal/arhar Dal",
+        "unit": "C",
+        "notes": "also known as split pigeon peas lentil",
+        "amount": "½",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Masoor Dal",
+        "unit": "C",
+        "notes": "also known as split red lentil",
+        "amount": "½",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "+ ½ C",
+        "notes": "24 oz + 4 oz, divided",
+        "amount": "3",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "avocado oil",
+        "amount": "1",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": "asafoetida",
+        "amount": "¼",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped, to taste",
+        "amount": "1-2",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "3-4",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice of or add more to taste",
+        "amount": "½",
+        "section": "tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": null,
+        "notes": "to sprinkle, optional",
+        "amount": "0",
+        "section": "tempering",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "728ebdfbec58b951cc1985b5e93b87764521f3e73ca62db82d48462f8ce220e4",
+    "lineage_hash": "0a02f3e68b4c18b0a15b3047083334b7bb4d0645652d8e619d521b9aca20796a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/spinach-dal/",
+    "fetchedAt": "2026-08-02T03:26:15.278Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/spinach-dal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

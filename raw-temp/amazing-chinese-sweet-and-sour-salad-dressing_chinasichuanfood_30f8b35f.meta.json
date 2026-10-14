@@ -1,0 +1,69 @@
+{
+  "url": "https://www.chinasichuanfood.com/amazing-chinese-sweet-and-sour-salad-dressing/",
+  "slug": "amazing-chinese-sweet-and-sour-salad-dressing_chinasichuanfood_30f8b35f",
+  "title": "Amazing Chinese Sweet and Sour Salad Dressing",
+  "byline": "",
+  "fetchedAt": "2026-08-02T06:16:23.866Z",
+  "ldName": "Chinese Sweet and Sour Salad Dressing",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Northern",
+  "ldCategory": "Salad",
+  "ldKeywords": "Salad dressing",
+  "ldIngredientsRaw": [
+    "250 g raw salad vegetable mixing  ( , any type you prefer)",
+    "1/5  bell pepper ( , shredded)",
+    "2  small red radish  (, thinly sliced )",
+    "1/4 cup toasted peanuts",
+    "1.5 tbsp olive oil",
+    "1/2 tbsp. sesame oil",
+    "2 cloves garlic",
+    "1 tbsp. hot boiling water",
+    "2 tbsp. Chinese black vinegar",
+    "2 tbsp. sugar",
+    "1/2 tbsp. light soy sauce",
+    "1/8 tsp. salt or to taste  (, optional if you pursue a low salt content )"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the vegetable well and then drain completely. Shred the bell pepper and slice the radish.",
+    "In a pan, add around 2 tablespoons of vegetable cooking oil and place the peanuts in when the oil is cold. Use medium fire to heat until there are small bubbles around the peanuts. Continue heating with slowest fire until you hear lots of Papa Sound. Transfer the peanuts out immediately. Drain off extra oil and set aside.",
+    "In a small pot, add sugar, black vinegar, light soy sauce and salt in. Heat over slowest fire and gently stir the sauce. Make sure the sugar is dissolved. Always keep slow fire and remove the pot from fire if necessary. Don’t let the sauce boils.  Set aside and cool down completely.",
+    "Garlic water| add 1 tablespoon of hot water in two smashed garlic. Set aside and soak for 10 minutes.",
+    "Assemble| mix vegetable, shredded bell peppers, sliced red radishes and toasted peanuts in a large mixing bowl. Add olive oil and sesame oil, squeeze the garlic water and drizzle the sweet and sour sauce. Mix well and serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "274 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "5 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "267 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "250 g raw salad vegetable mixing   , any type you prefer",
+    "1/5 bell pepper  , shredded",
+    "2 small red radish  , thinly sliced",
+    "1/4 cup toasted peanuts",
+    "1.5 tbsp olive oil",
+    "1/2 tbsp. sesame oil",
+    "[Garlic water]",
+    "2 cloves garlic",
+    "1 tbsp. hot boiling water",
+    "[Sweet and sour sauce]",
+    "2 tbsp. Chinese black vinegar",
+    "2 tbsp. sugar",
+    "1/2 tbsp. light soy sauce",
+    "1/8 tsp. salt or to taste  , optional if you pursue a low salt content"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

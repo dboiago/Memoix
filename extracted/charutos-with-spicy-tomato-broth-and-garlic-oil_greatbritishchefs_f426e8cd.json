@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Charutos with Spicy Tomato Broth and Garlic Oil",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all the filling ingredients into a bowl, mix well and set aside",
+      "Fill your kettle to its max and boil. For the broth, whisk 200g of boiling water with the tomato purée and salt in a medium bowl. Set aside",
+      "To blanch the leaves, hold the bunch of chard by the stalk over a large pan. Pour the rest of the boiling water from the kettle all over the leaves, to soften them and make them easier to roll",
+      "Cut the stalks off the leaves. Chop 100g of the stalks as finely as possible and mix with the lamb filling. Use the rest of the stalks in another recipe",
+      "Clean your surface and lightly grease with olive oil. Lay the leaves flat, rib side up, taking care not to rip them. If the leaves are larger you’ll need just one per roll; if they’re smaller you may need to use two or three overlapping each other",
+      "Fill each leaf with about 50g of the lamb filling, then fold in the sides and roll them up tightly. You should make about 12 rolls. Place on a tray, seam-side down",
+      "Place a 28 cm-wide pan, for which you have a lid, on a high heat Add 1 tablespoon of olive oil and once hot, place the chard rolls in the pan, seam side down",
+      "Fry for 2½ minutes on each side, so both sides are nicely browned. Pour over the tomato broth and add the whole Scotch bonnet. Turn down the heat to low, cover with a lid and cook for 4 minutes",
+      "Meanwhile, put all the garlic oil ingredients into a small saucepan on a medium heat. Gently cook for 3 minutes, or until the garlic is soft, golden brown and fragrant (take care not to burn the garlic!)",
+      "Squeeze the Scotch bonnet into the sauce to release its flavour",
+      "Drizzle the rolls with some of the garlic oil, serving the rest on the side. Squeeze over plenty of fresh lime juice, and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rainbow Chard",
+        "unit": "g",
+        "notes": "or Swiss chard",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onion",
+        "unit": null,
+        "notes": "60g, peeled and finely grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated/crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": "about 50 twists",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": "or paste",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "very finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urfa Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f15c157b51454390bd37b0e5a8c44d1c513a27680e3d692e325fa01a89b98b7",
+    "lineage_hash": "6e2663ce7a455be4993bc7ed01212ebaad5a00ec816aad839f2f0e19d4ac3897"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charutos-spicy-tomato-broth-garlic-oil-recipe",
+    "fetchedAt": "2026-08-02T02:14:39.698Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charutos-spicy-tomato-broth-garlic-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

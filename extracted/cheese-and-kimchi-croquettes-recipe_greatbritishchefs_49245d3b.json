@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Cheese and Kimchi Croquettes",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making a thick bechamel. Melt the butter in a saucepan then stir in 50g of the flour. Stir for 1 minute to cook out the raw flour taste, then slowly whisk in the warm milk to create a thick sauce. Cook over a low heat for 5 minutes, stirring constantly",
+      "Stir in the cheeses and beat until melted. Add the kimchi and soy sauce, then taste for seasoning. Add more soy sauce if you think it needs it and a splash of rice vinegar for acidity",
+      "Lay out 2 sheets of cling film on top of each other on a work surface. Spoon half of the mixture into a sausage along the bottom edge, then tightly roll up and tie at each end so you have a compact, firm sausage shape between 2-3cm in diameter. Repeat with the other half on the mixture then place both sausages in the freezer for at least 4 hours",
+      "Once the mixture is completely firm, place the remaining 40g of flour, beaten egg and panko breadcrumbs in 3 separate wide bowls with an empty tray at the end for the finished croquettes. Remove the frozen croquette mixture from the freezer and use a serrated knife to slice it into 3cm barrels, removing the cling film as you do so. You need to breadcrumb the croquettes whilst still frozen to ensure they keep their shape, so work quickly and keep them in the fridge if needed",
+      "Stir the mixed sesame seeds and red pepper flakes into the breadcrumbs. Working in batches, dip each barrel in the flour, then egg, then breadcrumbs. Pat the breadcrumbs tightly around the croquette then dip it back in the egg and into the breadcrumbs again to ensure an extra crispy exterior and less chance of the mixture leaking out during frying",
+      "Heat a pan of oil (or a deep-fat fryer) to 180°C. Do not fill the pan more than halfway as the oil will bubble up quite a bit once frying. Working in batches, deep-fry the croquettes until crisp and brown all over (around 5-7 minutes). The oil will lower in temperature once the croquettes are added, so keep an eye on the heat. Drain the croquettes on kitchen paper when they’re golden all over",
+      "To make the mayonnaise, mix the mayonnaise, doenjang and red pepper flakes together. Transfer to a serving bowl and finish with an extra pinch of red pepper flakes over the top",
+      "Serve the croquettes hot with the mayonnaise on the side for dipping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "warm",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kimchi",
+        "unit": "g",
+        "notes": "any larger pieces roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "ideally a mixture of black and white",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "Tbsp",
+        "notes": "Korean red pepper flakes",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doenjang",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "tsp",
+        "notes": "(Korean red pepper flakes), plus extra for sprinkling",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "456d4ffef350a24660a9fc39b7548f17d11effcb567126d81d798571bf287089",
+    "lineage_hash": "422aa30094380f98bb83eaec154f5cf6945cb5f1fe1cafbf51c1d3cdc5c400d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-kimchi-croquettes-recipe",
+    "fetchedAt": "2026-08-02T21:13:20.534Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-kimchi-croquettes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

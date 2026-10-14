@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Chocolate Silk Torte with Peanut Butter Pretzel Crust",
+    "time": "25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-heat the oven to 350. Add pretzels into a good processor and process until crumbly. Add in the peanut butter and rice malt syrup and pulse until you can pinch the mixture with your fingers and it sticks together.",
+      "Transfer to a 8×8 round tart or cake pan and press down the mixture evenly, then place it into the oven for 10 minutes",
+      "In the meantime, melt down your chocolate in a double-boiler or in the microwave",
+      "Add the tofu, melted chocolate, instant coffee, coconut sugar and vanilla extract into a high speed blender and blend until smooth",
+      "Once the crust has come out, allow it to cool, then pour over the chocolate filling and allow it to chill for at least 1 hour (best overnight)!",
+      "Optional: Spread a layer of coconut whip cream over the top and sprinkle with crushed pretzels and shaved chocolate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pretzels",
+        "unit": "C",
+        "notes": "185g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "C",
+        "notes": "180g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Malt Syrup",
+        "unit": "C",
+        "notes": "60g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Package Tofu",
+        "unit": null,
+        "notes": "410g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bars of Chocolate",
+        "unit": null,
+        "notes": "273g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": "dissolved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "512a9292cd0c4b5cda634a7c9307bf8b173cdc42999e6444edd744e045cfe131",
+    "lineage_hash": "ccd0e0dd8e8b2122ff28b5d9eac4f2bd1902216379262d6b2c277c2a63e01c87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/chocolate-silk-torte-with-peanut-butter-pretzel-crust/",
+    "fetchedAt": "2026-09-25T19:22:12.173Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/chocolate-silk-torte-with-peanut-butter-pretzel-crust/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Chocolate & Cardamom Ganache",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the cardamom, trimoline and whipping cream to the boil. Take off the heat and infuse for 15 minutes. Pass through a fine sieve",
+      "Melt the chocolate and gradually emulsify it into the butter in 3 stages",
+      "Mix in the cardamom infusion. Spread out the ganache mixture on a tray and leave to set overnight",
+      "Shape the ganache into rough balls by hand. Once made, coat in cocoa powder and store in the fridge for 2 hours to set",
+      "Place the ganache balls in a small bowl and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f560373d1575b48458a26bbc99ef30c083321cea54f9f1369e3a0a7bf7f97be9",
+    "lineage_hash": "9b5131daed839dc95b8690bd7ea904d62b04836fc12eccb50bab6dcb7c5304ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cardamom-ganache-recipe",
+    "fetchedAt": "2026-08-03T17:25:40.517Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cardamom-ganache-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.baking-sense.com/2020/10/15/cranberry-orange-scones/",
+  "slug": "cranberry-orange-scones_baking-sense_fe091efc",
+  "title": "Cranberry Orange Scones",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:01:22.298Z",
+  "ldName": "Cranberry Orange Scones",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 scones"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Snack",
+  "ldKeywords": "buttermilk, cranberry, scones",
+  "ldIngredientsRaw": [
+    "12 ½ oz unbleached all purpose flour (2 ½ cups, see note)",
+    "1 tablespoon baking powder",
+    "4 oz granulated sugar (½ cup)",
+    "1 teaspoon ground cinnamon",
+    "½ teaspoon salt",
+    "1  large orange",
+    "3 oz unsalted butter (cold, cut into 1\" chunks)",
+    "7 oz buttermilk (¾ cup plus 2 tablespoons)",
+    "2 teaspoons vanilla extract",
+    "1  large egg",
+    "8 oz cranberries (fresh or frozen, 1 ½ cups)",
+    "Demerarra Sugar for sprinkling"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Line a ½ sheet pan with parchment paper.",
+    "In a large mixing bowl, whisk together 12 ½ oz&#32;unbleached all purpose flour, 1 tablespoon&#32;baking powder, 4 oz&#32;granulated sugar, 1 teaspoon&#32;ground cinnamon, ½ teaspoon&#32;salt, and finely grated zest from 1&#32;large orange. Toss in 3 oz&#32;unsalted butter chunks. Work the butter in with your fingers until the bits are the size of a pea.",
+    "Whisk together 7 oz&#32;buttermilk, 2 teaspoons&#32;vanilla extract and 1&#32;large egg. Add the buttermilk mixture to the dry ingredients all at once and mix until just barely combined. Some loose flour may remain at the bottom of the bowl. DON&#39;T OVER MIX.",
+    "Sprinkle 8 oz&#32;cranberries over the dough and finish mixing by hand until all the loose flour is absorbed and the cranberries are evenly distributed. Turn the dough out onto a lightly floured surface and knead a few times to bring the dough together.",
+    "Using well-floured hands, pat the dough a 8” round that is 1&quot; thick. Cut the round into 8 wedges. Transfer the scones to the prepared baking sheet.",
+    "Brush the top of the scones with buttermilk and sprinkle with Demerarra or granulated sugar.",
+    "Bake until golden brown, about 20-25 minutes. Serve warm or room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 scone",
+    "calories": "333 kcal",
+    "carbohydrateContent": "53 g",
+    "proteinContent": "6 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "0.4 g",
+    "cholesterolContent": "46 mg",
+    "sodiumContent": "341 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "17 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "12 ½ oz unbleached all purpose flour (2 ½ cups, see note)",
+    "1 tablespoon baking powder",
+    "4 oz granulated sugar (½ cup)",
+    "1 teaspoon ground cinnamon",
+    "½ teaspoon salt",
+    "1 large orange",
+    "3 oz unsalted butter (cold, cut into 1″ chunks)",
+    "7 oz buttermilk (¾ cup plus 2 tablespoons)",
+    "2 teaspoons vanilla extract",
+    "1 large egg",
+    "8 oz cranberries (fresh or frozen, 1 ½ cups)",
+    "Demerarra Sugar for sprinkling"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

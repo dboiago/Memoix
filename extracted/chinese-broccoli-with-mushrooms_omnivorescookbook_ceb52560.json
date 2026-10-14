@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Chinese Broccoli with Mushrooms",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "114",
+      "carbohydrateContent": "15",
+      "fatContent": "4",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Soak shiitake mushrooms in warm water until turning tender, 15 minutes or so. Squeeze off excess water. Cut off and discard the stem. Slice the mushroom cap.",
+      "Soak Chinese broccoli in cold tap water for 2 to 3 minutes, then rinse and drain thoroughly. Use a peeler or a paring knife to remove the tough skin from the stem, at least 2 inches from the bottom. If using a peeler, you might need to remove 2 to 3 hours to completely get rid of the tough skin. (*Footnote 2)",
+      "Mix all the sauce ingredients in a small bowl and set aside.",
+      "Bring a large pot of water to a boil and add 1 teaspoon salt. Add the Chinese broccoli",
+      "and cook until the stem just turns tender but still crisp, 2 to 3 minutes, depending on the size. Drain thoroughly and set aside in a colander to keep drying.",
+      "Heat oil in a wok or large skillet over medium high heat until shimmering. Add the garlic and ginger. Stir a few times to release fragrance.",
+      "Add the shiitake and white mushrooms. Stir and cook until golden, about 2 minutes.",
+      "Stir the sauce again to fully dissolve the cornstarch. Pour sauce into the skillet. Immediately stir until it thickens. Pour the sauce over the cooked Chinese broccoli. Serve hot as a side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Broccoli",
+        "unit": "lb",
+        "notes": "Gai Lan",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Mushrooms",
+        "unit": "lb",
+        "notes": "*footnote 1, sliced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb819195f72e4da68d238d051256a08e80f763b0dfdbca4452b1b372341cb5a2",
+    "lineage_hash": "da997b6a9eb196497db7884c066f469004597b1ae476a55b8172c0d269caa28b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-broccoli-with-mushrooms/",
+    "fetchedAt": "2026-08-02T11:16:02.402Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-broccoli-with-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "url": "https://www.simplytrinicooking.com/chocolate-coffee-coffee-with-cocoa/",
+  "slug": "chocolate-coffee-coffee-with-cocoa-simply-trini-co_simplytrinicooking_89d3c2d1",
+  "title": "Chocolate Coffee | Coffee with Cocoa | Simply Trini Cooking",
+  "byline": "Author Felix",
+  "fetchedAt": "2026-09-25T23:02:34.198Z",
+  "ldName": "Coffee with Cocoa",
+  "ldTime": "PT7M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "International",
+  "ldCategory": "Drink",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup water",
+    "1 tbsp cocoa (grated)",
+    "1 tbsp instant coffee",
+    "Sugar to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Boil the cocoa and water for 5 minutes.",
+    "Strain. Add the instant coffee, stir until the coffee dissolves. Add the sugar to taste. Serve hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup water",
+    "1 tbsp cocoa grated",
+    "1 tbsp instant coffee",
+    "Sugar to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

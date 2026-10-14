@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chimichurri-sauce-recipe",
+  "slug": "chimichurri-sauce-recipe_greatbritishchefs_077485af",
+  "title": "Chimichurri Sauce Recipe",
+  "byline": "by Valeria Necchio",
+  "fetchedAt": "2026-08-03T11:34:14.609Z",
+  "ldName": "Chimichurri sauce",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "50g of parsley, fresh, finely chopped",
+    "3 garlic cloves",
+    "1 tbsp of oregano, fresh, finely chopped",
+    "1 tbsp of sweet smoked paprika",
+    "1 tbsp of hot pepper sauce, optional",
+    "1 lemon, juiced",
+    "250ml of extra virgin olive oil",
+    "100ml of sherry vinegar, or red wine vinegar",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "To make the chimmichurri sauce, combine all of the ingredients (apart from the olive oil) in a bowl and mix thoroughly to combine",
+    "Vigorously stir in the olive oil to emulsify, then transfer to a jar or bowl to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

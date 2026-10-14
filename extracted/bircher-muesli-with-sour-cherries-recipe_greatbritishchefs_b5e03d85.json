@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Bircher Muesli with Sour Cherries",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the apple juice, oats, chia, cherries and raisins in a bowl and leave overnight to soak and rehydrate. Do not drain",
+      "The next day, toast the pistachios. Preheat an oven to 170ºC/gas mark 3. Toast the nuts on a baking tray for 10 minutes until golden. Remove, leave to cool and roughly chop 4 tablespoons of the nuts, leaving the rest whole",
+      "Mix the whole pistachios and all the remaining ingredients into the bowl with the oats and divide between 4 serving bowls, or chill until needed",
+      "Sprinkle the blueberries, pomegranate, reserved chopped pistachios and mint over the muesli and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherries",
+        "unit": "g",
+        "notes": "dried, halved",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "plus 4 tbsp",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "any variety is fine, coarsely grated, avoiding the core",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": "thick",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "Tbsp",
+        "notes": "halved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh, leaves picked",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "121b5ab4f324203f842dc89ebdc01e9bd29b6dee1149894eb8b6536b2580bc39",
+    "lineage_hash": "4312a9064eca03ae26c540ebed14f4c73f11eb830986072ce7b25350ccc7ab8d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bircher-muesli-recipe",
+    "fetchedAt": "2026-08-02T21:23:21.764Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bircher-muesli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

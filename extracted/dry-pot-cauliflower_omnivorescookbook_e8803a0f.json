@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Dry Pot Cauliflower (干锅菜花)",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "184",
+      "carbohydrateContent": "10.3",
+      "fatContent": "11.7",
+      "proteinContent": "10.6"
+    },
+    "directions": [
+      "Add the oil to the pan and heat over medium heat. Add the bacon. Cook, stirring occasionally, until the bacon turns golden. Transfer the bacon to a plate and leave the oil in the pan.",
+      "Add the dried chili peppers, green onion, garlic, and ginger. Stir a few times to release fragrance.",
+      "Add the cauliflower. Turn to medium-high heat. Stir and cook for 1 minute to coat the cauliflower evenly with oil.",
+      "Pour in the sauce. Keep stirring to mix everything together, 1 minute or so. Cook covered for another 1 to 2 minutes, until the cauliflower just starts to soften. Add the pepper and the cooked bacon back, stir to mix everything together and cook until the sauce is mostly absorbed, 1 minute or so. Carefully taste the cauliflower. Cook a bit longer and adjust seasoning by adding more salt, if needed.",
+      "Transfer everything to a big plate. Serve hot as a side or main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Cauliflower",
+        "unit": "head",
+        "notes": "1 lb / 450 g, cut into bite-size florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "cut to bite-size pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Dried Chili Peppers",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into 2” (5 cm) pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Red Asian Pepper (or Thai Bird Eye Chile, Jalapeno, or Anaheim Pepper)",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "Optional but highly recommended",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f143dda780165b19ae03f73602ff38cd4ed2d9d69f5f33edec3eb756e02ca497",
+    "lineage_hash": "10068f101adc07f9464b871a1cf8e4c35ba90371beff2fb2b42ee0a3dae8d117"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/dry-pot-cauliflower/",
+    "fetchedAt": "2026-08-01T20:52:14.422Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/dry-pot-cauliflower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Crispy Pork Belly (Siu Yuk)",
+    "time": "13 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "5268",
+      "carbohydrateContent": "15",
+      "fatContent": "531",
+      "proteinContent": "96"
+    },
+    "directions": [
+      "Place the pork belly in a large pot with clean water, add cooking wine, scallion, ginger and sichuan peppercorn. Continue cook for 3 minutes after boiling.",
+      "Transfer the pork out and pat dry the water. Then pork as many holes on the rind. Back and forth and repeat several times. This is the most important step.",
+      "After the hard pork process, apply a small pinch of salt on the rind.",
+      "Cut two shallow lines on the pork (only the lean part, not deep to touch the fat) and then sprinkle the dry rub evenly.",
+      "Wrap the pork belly with foil wrappers and place in fridge overnight.Uncovered please, we need the rind to be dry before roasting.",
+      "Pre-heat oven to 180 degree C. Brush a thin layer of vinegar and spread salt evenly to form a protecting layer. Roast for 50 minutes to 1 hour.",
+      "Remove the salt and place the pork belly on the middle rack. Remember to use a tray to catch the dropping oils. Use upper fire only at the temperature of 220 degree C, and roast until the rind is golden brown and well crackled.",
+      "Let the pork belly stay in the oven for 10 to 15 minutes until slightly cooled down. Transfer out and cut into small bites.",
+      "Cutting tips: when cutting the pork belly, place the skin side down. Cut the meat part firstly and then press the knife to break the crispy rinds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly with Beautiful Layers",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chunks of Ginger",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": null,
+        "notes": "optional",
+        "amount": "6-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Cover the Meat",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar for Brushing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Roasting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e560e4ee7e0702c5e68168db728bdbded388bd49c7a122c58ccd9ea8a4f11d7a",
+    "lineage_hash": "605b95fb0e35519c8387d881e37be6f3623aa8fa3f8d7d9f9f914336f1eafee5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/crispy-pork-belly-siu-yuk/",
+    "fetchedAt": "2026-08-01T20:19:03.883Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/crispy-pork-belly-siu-yuk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

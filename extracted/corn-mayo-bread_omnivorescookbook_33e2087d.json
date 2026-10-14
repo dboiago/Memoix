@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Corn Mayo Bread (玉米沙拉面包)",
+    "time": "2 hr 45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "247",
+      "carbohydrateContent": "40.5",
+      "fatContent": "7.2",
+      "proteinContent": "6.4"
+    },
+    "directions": [
+      "Activate the yeast",
+      "Mix the dry ingredients in a mixing bowl",
+      "Add the wet ingredients",
+      "Knead until a shaggy dough forms",
+      "Scrape the dough and mix again, until the dough is smooth",
+      "Rest the dough until doubled in size",
+      "Divide the dough into 12 pieces",
+      "Round up each piece of dough",
+      "Flatten the dough with your hands",
+      "Press a cup over the dough to make an indentation",
+      "Rest the dough until the size doubles, then brush with egg wash",
+      "Bake the dough for 10 minutes, then use the cup to make the indentation again",
+      "Add the corn mayo topping",
+      "Keep baking until the buns are golden and fully baked"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "1 cup + 1 tablespoon, heated to 110°F / 43°C",
+        "amount": "260",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "tsp",
+        "notes": "4 g",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "g",
+        "notes": "2 3/4 cups",
+        "amount": "400",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "1/3 cup",
+        "amount": "75",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "1 teaspoon",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "3 tablespoons, melted",
+        "amount": "40",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": "or milk",
+        "amount": "1",
+        "section": "Egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn",
+        "unit": "g",
+        "notes": "1 1/2 cup",
+        "amount": "240",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": "1/3 cup, use kewpie mayo if possible",
+        "amount": "90",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "00a4d588c4807f199ff79cf35ff73fa498fc196adb7c0f3a8a7b134aa2f9295d",
+    "lineage_hash": "0f77756fdb5ff045f68660f8503f20d3add0933e027d841666145c322a7bf518"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/corn-mayo-bread/",
+    "fetchedAt": "2026-08-02T03:00:57.521Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/corn-mayo-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

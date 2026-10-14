@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Apple Crumble Kulfi",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the kulfi, add the cream, milk and milk powder to a saucepan and place over a medium heat. Stir with a wooden spoon until the mixture starts to come to the boil. Reduce the heat and continue cooking and stirring, until the mixture has reduced by around half. You don’t want the mixture to catch too much so it’s important to keep stirring, but a little sticking is OK as it adds a caramelised flavour to the kulfi",
+      "Once reduced, stir in the cardamom powder and sugar, then pour the mixture into moulds of a container and place in the freezer to set overnight",
+      "For the crumble, preheat an oven to 170°C/gas mark 3. Mix the flour and butter together using your fingertips to create a breadcrumb-like texture. Stir in the oats, sugar and carom seeds, then tip the mixture out onto a baking sheet lined with baking paper and press flat. Bake for 20-25 minutes, until golden brown, shaking the tin every 5 minutes or so to ensure even cooking. Once cooked, remove from the oven, break up into small pieces with a fork and allow to cool",
+      "To make the apple caramel, place the apple juice and sugar in a small saucepan and bring to a simmer. Continue cooking until the mixture thickens and turns a dark golden brown, then remove from the heat and allow to cool",
+      "To serve, remove the kulfis from their moulds (or portion it out from your container). Place the kulfi on a bed of the crumble with a spoonful of the apple caramel alongside. Garnish with apple slices and apple blossom"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and at room temperature",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Blossom",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1006f04ac9cad0b001cbee1ad3e776f486ecdf4d5858bf2237e5d31d97baa040",
+    "lineage_hash": "ad40cfe80a58035c6530bd84d8014712234c068b0a2bcef3449a5f6e34b17e02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-crumble-kulfi-recipe",
+    "fetchedAt": "2026-08-03T03:06:47.870Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-crumble-kulfi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

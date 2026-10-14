@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Ackee and Avocado salad",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop and Combine 1/4 Lettuce, 1 tomato, 1/4  redpepper, 1/4 Green pepper, 1/2 cucumber 1 avacado in a bowl and mix together. Then place In fridge.",
+      "On a frying pan on high heat use 1 tbsp. Cocunut oil sortay 1/2 chopped onion, 3 cloves of garlic 1 chopped spring onion 1tsp scotch bonnet pepper for 3 mins",
+      "Then drain the tinned ackee and carefully pour into frying pan and let it sit.",
+      "Add 1 tsp sea salt, 1tsp black pepper, 1tsp thyme and carefully fold over the ackee and simmer for 5 mins.",
+      "Combine ackee with salad squeeze lemon juice and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ackee",
+        "unit": "can",
+        "notes": "540g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocunut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b109dc5e7369777650241ebe489fea0f0938f123f7803d166d77ed0beb767d4",
+    "lineage_hash": "99d3d5b9528e1108032bd80da29b51d30c42c2041fb5229608b4bc42fea9eae7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/snacks/ackee-avocado-salad/",
+    "fetchedAt": "2026-09-30T17:29:01.880Z"
+  },
+  "rawSource": "https://originalflava.com/snacks/ackee-avocado-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

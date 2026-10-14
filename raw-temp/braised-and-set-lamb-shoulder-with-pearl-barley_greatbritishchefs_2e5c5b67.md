@@ -1,0 +1,9 @@
+This dish, using succulent shoulder of lamb which has been braised slowly, over many hours, and then picked by hand (once cooled), then rolled and wrapped in cling film, left in a fridge overnight, and then unwrapped the next day and pan-fried to create a crispy outer coating, and then roasted for a further 10 minutes, in a hot oven to ensure even cooking, might not be the simplest approach. But if you want to wow your friends and family this coming Easter with an alternative take on that traditional Sunday roast, then it is well worth taking the time with this one.
+
+I use the wow word with confidence here because I have made this several times for my own friends and family now, and have witnessed first hand much licking of fingers and plates. So I know it is good and as such, I proudly call this one of my signature dishes.
+
+Except it's not really a signature dish because I discovered the technique in Jason Atherton's Gourmet Food for a Fiver. I also pinched his celeriac purée too. But I have put some of my own original flourishes to this dish. Namely the pearl barley and the port gravy, which both benefit from the intense lamb stock that results from the initial cooking.
+
+Did this all lean towards lamb overkill though? No, not at all. In my opinion, using this rich, tasty stock really broadened the overall savoury quality and countered any cloying sweetness that may have been apparent before. Especially in the port gravy, where I also snaffled in a glug of veal stock, the professional chef’s favourite.
+
+Full of heartwarming vitality, comfort and wonderful, healthy fibre, you might say that this is really something you should eat on a cold, winter's day and oversteps the mark season-wise. But I say nay, this can be dish with its feet firmly planted in verdant spring. Just replace the roots with new vegetables such as purple sprouting broccoli, watercress or asparagus, which will be in abundance soon.

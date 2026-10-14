@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Creme Brulee Shortbread",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "138",
+      "carbohydrateContent": "16",
+      "fatContent": "8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 325 °F. Line a ½ sheet pan with parchment paper or a silicone baking mat.",
+      "Cream 16 oz unsalted butter and 8 oz granulated sugar until light and fluffy. Add 20 oz all purpose flour and ¼ teaspoon salt all at once and mix just until combined.",
+      "Form the dough into rectangle shape and place onto the prepared sheet pan. Gently work the dough to the edges of the pan. Lay another sheet of parchment over the dough and gently rub over the surface to even out the thickness.",
+      "Remove the parchment and use a fork to prick the top of the dough all over. Bake until just beginning to brown and the center of the dough is set, about 20 minutes. Cool in the pan for 5 minutes.",
+      "Sprinkle the 4 oz granulated sugar in an even layer over the warm shortbread. You can shake the pan gently to even out the sugar if you have some thick spots.",
+      "Use a propane torch to caramelize the sugar. Sweep the torch across the surface of the sugar, moving constantly, until the entire surface is melted and golden brown. Any time you see a wisp of smoke move the torch to avoid burning the sugar. Allow to cool completely before cutting",
+      "Use the parchment paper to slide the shortbread out of the pan. To cut, use a long serrated knife. Run the knife under hot water (or dip in a pitcher of hot water), wipe the blade clean.",
+      "Use a gentle sawing motion to cut through the caramel without cracking then cut through the cookie base. Repeat warming and wiping the knife between each cut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "4 cups, see note",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/2 cup, for caramel topping",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ee6c95c8624f976a25eb1bb3277e3062b6198a7da187d75493f47c83896316a",
+    "lineage_hash": "334699b774d54027af2ef2bc4f6f57137666e7452fec50470fd70bccef9214e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/12/16/creme-brulee-shortbread/",
+    "fetchedAt": "2026-08-02T02:39:34.857Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/12/16/creme-brulee-shortbread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

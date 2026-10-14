@@ -1,0 +1,361 @@
+{
+  "recipe": {
+    "name": "Jeera Aloo Pahadi",
+    "time": "25-30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai, add oil, once it's hot, add dry fenugreek seeds, cumin seeds and let it splutter.",
+      "Add a pinch of asafoetida, tender coriander stems, boiled potatoes, salt to taste and saute it for a while.",
+      "Add degi red chili powder and toss it gently.",
+      "Finish it with some lemon juice, coriander leaves and toss it well.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and lemon wedge.",
+      "Serve hot with roti.",
+      "In a mortar pestle, add green chillies, ginger, garlic, tender coriander stems, salt to taste and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In a kadai, add oil, once it's hot, add small mustard seeds, cumin seeds and let it splutter.",
+      "Add boiled potatoes and shallow fry it on high flames for a minute until golden in color.",
+      "Add prepared thecha and mix it well.",
+      "Cover it with the lid and cook it for 3-4 minutes on low flames.",
+      "Finish it with some lemon juice and toss it gently.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and green chili.",
+      "Serve hot with roti or chapati.",
+      "In a kadai, add mustard oil, once it's hot, add dry red chillies, cumin seeds and let it splutter.",
+      "Add boiled potatoes, a pinch of asafoetida and saute it for a minute.",
+      "Add turmeric powder, degi red chili powder, coriander powder, salt to taste and toss it gently.",
+      "Finish it with coriander leaves and mix it well.",
+      "Transfer it to a serving dish, garnish it with fried kashmiri red chillies and coriander sprig.",
+      "Serve hot with roti or paratha.",
+      "In a pan, add mustard oil, once it's hot, add dry kashmiri red chillies and fry it well.",
+      "Transfer it to a tray and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Fenugreek Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Potatoes",
+        "unit": "medium",
+        "notes": "peeled & cubed",
+        "amount": "3",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Hing Jeera Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "3",
+        "section": "For Thecha",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": "For Thecha",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "5-6",
+        "section": "For Thecha",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2-3",
+        "section": "For Thecha",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Thecha",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "¼",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Potatoes",
+        "unit": "medium",
+        "notes": "peeled & diced",
+        "amount": "3-4",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Thecha",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Thecha Wale Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "slit",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "No. Boiled Potatoes",
+        "unit": null,
+        "notes": "peeled & diced",
+        "amount": "3-4",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1-2",
+        "section": "For Pahadi Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "No. Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "dry",
+        "amount": "4",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c34de6ad88f8d93b834babea419f47f2d686f5347ecef1177a5f8f4553cc97c2",
+    "lineage_hash": "4c8d61848d5389fbfcd58d9c734d213e267655073a5f87afb72d7cfe46a28a6e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/jeera-aloo/",
+    "fetchedAt": "2026-08-02T16:49:31.956Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/jeera-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

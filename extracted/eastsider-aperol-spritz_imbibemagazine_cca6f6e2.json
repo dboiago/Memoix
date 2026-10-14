@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Eastsider Aperol Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to the glass over ice. Garnish.\nPeach Tea-Infused AperolAdd about 1 tsp. or a teabag of peach black tea to 750ml Aperol in a large container. Let it sit for 30 minutes then strain through a chinois. If using teabags, remove."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sparkling Wine",
+        "unit": "oz",
+        "notes": "such as prosecco",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Tea-infused Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6249f7164f7b9a882c2f061ff3449528df0cf5095745629b80c66fbbbae34a78",
+    "lineage_hash": "8a20992a5ce2b05bed297f8bea73ac79497ba321f9a1c505b775d9d0721f3c13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/eastsider-aperol-spritz/",
+    "fetchedAt": "2026-08-04T01:05:22.662Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/eastsider-aperol-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

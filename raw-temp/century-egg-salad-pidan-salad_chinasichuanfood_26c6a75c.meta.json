@@ -1,0 +1,56 @@
+{
+  "url": "https://www.chinasichuanfood.com/century-egg-salad-pidan-salad/",
+  "slug": "century-egg-salad-pidan-salad_chinasichuanfood_26c6a75c",
+  "title": "Century Egg Salad (Pidan Salad)",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:02:30.454Z",
+  "ldName": "Century Egg Salad (Pidan Salad)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Salad",
+  "ldKeywords": "Century Egg, pidan",
+  "ldIngredientsRaw": [
+    "3  Century Eggs ( , peeled )",
+    "2  large green pepper ( , chopped)",
+    "2  garlic cloves ( , finely chopped)",
+    "1 tsp. salt ( , or more to taste)",
+    "1 tbsp. light soy sauce",
+    "2 tsp. sesame oil",
+    "1 tbsp. vegetable cooking oil"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the century eggs and then cut into wedges. Place them in serving plate.&nbsp;",
+    "Heat around 1 tablespoon of vegetable cooking oil in pan and fry chopped green peppers and garlic until soft and aromatic.&nbsp;",
+    "Transfer the fried chili peppers to serving plate. Add sesame oil, light soy sauce and salt. Mix before enjoying.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "289 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "14 g",
+    "fatContent": "22 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "884 mg",
+    "sodiumContent": "1565 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 Century Eggs  , peeled",
+    "2 large green pepper  , chopped",
+    "2 garlic cloves  , finely chopped",
+    "1 tsp. salt  , or more to taste",
+    "1 tbsp. light soy sauce",
+    "2 tsp. sesame oil",
+    "1 tbsp. vegetable cooking oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

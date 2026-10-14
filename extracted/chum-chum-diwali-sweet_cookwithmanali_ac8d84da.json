@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chum Chum",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "7",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil whole milk in a heavy bottom pan.",
+      "Once it comes to a boil, switch off the flame and add 1/4 cup of water to bring the temperature of the milk down a bit.",
+      "Wait for 5-10 minutes and then start adding lemon juice till milk curdles.",
+      "Using a strainer drain the water and collect the chena. Rinse it under tap water so that there’s no trace of lemon juice in it.",
+      "Leave it in the strainer for 10-15 minutes and then take the chena in your hand and squeeze out remaining water slowly.",
+      "Add cornflour and mash the chena for 7-8 minutes till it’s smooth.",
+      "Once it’s smooth, divide it into 7 equal parts.",
+      "Color the chena in any color of your choice and then give them an oval shape.",
+      "Boil 5 cups of water in a wide pan. Once the water comes to a boil, add sugar , rose essence (optional) and stir till sugar is completely dissolved.",
+      "Add the chum chum into the sugar syrup, lower the heat to medium and cover and cook for 10 minutes.",
+      "After 10 minutes open the pan, flip the chum chum and cover and cook again for 15 minutes on medium flame.",
+      "Switch off the flame and let the chum chum remain in the sugar syrup for 3-4 hours. They should cool down completely before you fill them.",
+      "After they have cooled down, take 1 chum chum and make a slit in the center. It should remain attachment from both sides. Repeat the same with all other pieces.",
+      "Take the stuffing and fill it in the the center.",
+      "Roll the chum chum in a bowl full of shredded coconut.",
+      "Garnish with some pistachios and serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Essence [optional]",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": null,
+        "notes": "shredded, for rolling the chum chum",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mawa",
+        "unit": "C",
+        "notes": "crumbled [whole dried milk]",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": "dried, anjeer, finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "powdered",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "427989011cf341b6c6e0edb5ea0564d2eafb4f10f09def5d84d46a98752b9a2f",
+    "lineage_hash": "d5dfd244b45a285fc4ac2106652a0f8e1607b17a24b24415b03e46c94cef0b17"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chum-chum-diwali-sweet/",
+    "fetchedAt": "2026-08-01T18:42:32.224Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chum-chum-diwali-sweet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

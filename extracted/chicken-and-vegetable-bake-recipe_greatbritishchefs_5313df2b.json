@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Chicken and Vegetable Bake",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the skin from the chicken breasts and place in a roasting dish. Pour over the chicken stock and roast in the oven for 30 minutes",
+      "Meanwhile, cook the broccoli and cauliflower in salted boiling water until only just cooked, for approximately 3-4 minutes. Strain and set aside",
+      "Remove the chicken from the oven and sprinkle over the par-cooked broccoli and cauliflower, sweet potato and red pepper",
+      "Drizzle the maple syrup over the vegetables and return to the oven. Roast for 20-30 minutes until the  vegetables are nice and golden. Remove from the oven and serve with seasonal greens or as preferred"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Florets",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "724dbbe7385a919e7c1269b013a6e4ad746dd18ce51cf68d901b9d9faf7d5510",
+    "lineage_hash": "9a67419006f2d2efd4992736c194e91430afd6bf05b7a5445025105f097c1cee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-vegetable-bake-recipe",
+    "fetchedAt": "2026-08-03T16:58:55.191Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-vegetable-bake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

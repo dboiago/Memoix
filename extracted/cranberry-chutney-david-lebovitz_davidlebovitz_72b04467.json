@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Cranberry Chutney",
+    "time": null,
+    "course": "sides",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients together in a large saucepan.",
+      "Cook over medium-high heat, stirring frequently, until the cranberries pop and begin to break down and release their juices, and the apple pieces are cooked through. Time will vary but it'll take about 10 minutes or so.",
+      "Remove from heat and when the chutney is cool enough, taste and add 1 (or 2) tablespoons additional vinegar, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "340g, if using frozen, no need to defrost before using, fresh or frozen",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": "C",
+        "notes": "125g, see headnote, diced, dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tart Apple",
+        "unit": null,
+        "notes": "peeled or unpeeled, cored, and finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly-packed (140g) Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange or Apple Juice",
+        "unit": "C",
+        "notes": "125ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": "90ml, plus more if desired",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Dried Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chile Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32e8262f517e540f0864a3519c6bcaa21b06cb482b3ea70c0f5cd9405aa721ec",
+    "lineage_hash": "297d43bc9760fd6fe29044b9870785709213b05f7cd449c6bde345d869f3511d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/thanksgiving-cranberry-chutney-recipe-sauce/",
+    "fetchedAt": "2026-08-02T22:03:39.852Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/thanksgiving-cranberry-chutney-recipe-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://omnivorescookbook.com/celery-and-peanut-salad/",
+  "slug": "chinese-celery-and-peanut-salad_omnivorescookbook_ff2ae1a2",
+  "title": "Chinese Celery and Peanut Salad",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T21:09:50.948Z",
+  "ldName": "Chinese Celery and Peanut Salad",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 cup raw skin-on peanuts ((*Footnote 1))",
+    "2  green onions (, cut into 2” (5 cm) long pieces)",
+    "2 slices ginger (, sliced)",
+    "1 clove garlic (, smashed)",
+    "1 teaspoon Sichuan peppercorns",
+    "2  bay leaves",
+    "1  whole star anise",
+    "1  cinnamon stick",
+    "1 teaspoon salt",
+    "1/4  carrot (, diced)",
+    "1/4 cup Chinese celery (, sliced)",
+    "1 teaspoon soy sauce",
+    "1/4 teaspoon sugar",
+    "1/2 teaspoon sesame oil ((or chili oil))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the peanuts into a medium-sized pot with 4 cups of water. Heat over medium heat until it comes to a boil. Add the rest of the braising ingredients. Simmer for 30 minutes. Once done, discard the braising spices. Drain and transfer the peanuts to a bowl and set aside to cool.",
+    "Bring a small pot of water to a boil. Add the carrot. Cook until just starting to turn tender, 1 minutes or so. Add the celery to the same pot of water. Boil for 30 seconds, or until just turning tender. Drain and run the veggies with cold tap water to stop the cooking. Transfer to the same bowl with the peanuts.",
+    "Add the soy sauce and sugar. Mix well. Drizzle with sesame oil and serve at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "144 kcal",
+    "carbohydrateContent": "4.5 g",
+    "proteinContent": "6.4 g",
+    "fatContent": "12.4 g",
+    "saturatedFatContent": "1.7 g",
+    "sodiumContent": "59 mg",
+    "fiberContent": "2.2 g",
+    "sugarContent": "1.3 g"
+  },
+  "htmlIngredientLines": [
+    "[Braising]",
+    "1 cup raw skin-on peanuts (*Footnote 1)",
+    "2 green onions , cut into 2” (5 cm) long pieces",
+    "2 slices ginger , sliced",
+    "1 clove garlic , smashed",
+    "1 teaspoon Sichuan peppercorns",
+    "2 bay leaves",
+    "1 whole star anise",
+    "1 cinnamon stick",
+    "1 teaspoon salt",
+    "[Salad]",
+    "1/4 carrot , diced",
+    "1/4 cup Chinese celery , sliced",
+    "1 teaspoon soy sauce",
+    "1/4 teaspoon sugar",
+    "1/2 teaspoon sesame oil (or chili oil)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,52 @@
+{
+  "url": "https://www.chinasichuanfood.com/pickled-cucumber-with-soy-sauce-and-vinegar/",
+  "slug": "chinese-pickled-cucumber-with-soy-sauce-and-vinega_chinasichuanfood_803148bb",
+  "title": "Chinese Pickled Cucumber with Soy Sauce and Vinegar",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:15:39.204Z",
+  "ldName": "Pickled Cucumber with Soy Sauce and Vinegar",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Cucumber",
+  "ldIngredientsRaw": [
+    "500 g fresh cucumbers ( , tenders one are highly recommended)",
+    "100 ml light soy sauce",
+    "50 ml Chinese black vinegar",
+    "70 ml clean water",
+    "4 slices of ginger",
+    "3 cloves garlic",
+    "sesame seeds and sesame oil for serving ( , optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Remove any tough skin from your cucumber. Clean and drain.",
+    "In a deep pot, add light soy sauce, Chinese black vinegar, water and ginger slices. Bring the content to boil and then blanch the cucumber for around 15 seconds.",
+    "Transfer the cucumber along with the liquid to a clean container (cleaned and no oil). Add peeled garlic and cover the lid and set aside for 2 days.",
+    "Cut the cucumber into slices and decorate with roasted sesame seeds.",
+    "If you prefer a more moist taste, mix the cucumber slices with drops of sesame oil."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "100 g",
+    "calories": "29 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "sodiumContent": "1120 mg",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "500 g fresh cucumbers  , tenders one are highly recommended",
+    "100 ml light soy sauce",
+    "50 ml Chinese black vinegar",
+    "70 ml clean water",
+    "4 slices of ginger",
+    "3 cloves garlic",
+    "sesame seeds and sesame oil for serving  , optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

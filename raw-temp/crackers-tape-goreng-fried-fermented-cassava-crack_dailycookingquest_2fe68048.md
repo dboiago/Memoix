@@ -1,0 +1,5 @@
+Fried crackers sandwich is a really classic Indonesian snack and has been around for the longest time, at least since the time of my grandparents. It is made with two square crackers sandwiching either sweet or savory filling, then coat with thick batter and deep fried until crispy and golden brown. This crackers sandwich is usually eaten as afternoon snack with tea or coffee. One of my favorite filling is using _tape_ (fermented cassava) to make **crackers tape goreng** which is what I will be sharing in the post, and the other is actually a savory one made with ground chicken and mashed potato. Once you get the basic idea of how to make this crackers sandwich, you can start experimenting with crazy filling. ♥
+
+![Crackers Tape Goreng - Fried Fermented Cassava Crackers](https://dailycookingquest.com/img/2014/05/crackers_tape_goreng2_hu8642568b3bba451778ba646c35be8891_126004_1200x1800_resize_q75_lanczos.jpg)
+
+Crackers Tape Goreng - Fried Fermented Cassava Crackers

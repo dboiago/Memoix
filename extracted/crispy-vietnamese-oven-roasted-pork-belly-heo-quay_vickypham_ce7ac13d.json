@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Crispy Vietnamese Oven-Roasted Pork Belly (Heo Quay)",
+    "time": "1 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Scrub pork belly (3 lbs) thoroughly clean with about one additional tablespoon of salt. Scrape skin clean with knife. Rinse then wipe down pork belly dry with paper towels.",
+      "Combine salt (1-1/2 teaspoons), sugar (1 teaspoon), Chinese five-spice powder (1/2 teaspoon), ground black pepper (1 teaspoon), and vinegar (1/4 cup) in a bowl and rub this mixture onto the pork belly, including the skin.",
+      "Add aromatics to baking tray. Transfer pork belly on top with skin facing up. Use the aromatics to prop up any low areas if needed so that the skin is leveled. If using foil, wrap foil around the edges tightly to cover the meat area to prevent burning (optional). Set aside for 15 minutes or overnight in the fridge uncovered for better results.",
+      "Preheat oven to 450°F. When ready to bake, wipe the skin completely dry with paper towels. Transfer pork belly in the middle position and roast for about 45  minutes.",
+      "Switch to broil on high (about 400°F) for about 15 minutes. Watch carefully to prevent scorching. If some areas of skin is burning, cover with small pieces of foil. If some area are not popping, move it around, rotate, prop up the low areas with more aromatics or small pieces of foil so it’s closer to the broiler.",
+      "Once the skin is evenly puffy, carefully remove from oven, transfer to a cutting board. Allow it to rest for 15 minutes before slicing into bite-sized pieces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "lb",
+        "notes": "skin-on",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "unpeeled, cut into thin coins",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "peeled, cut into thick wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42bc1c56a6cd1fc9a6317d7446610cea0db00492b0a3bb74250619ecd194a654",
+    "lineage_hash": "0bf4f6ee309845dce5ec0bf3285199c8f6a4dac7d1f0a075f6e1967a45e27e79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/crispy-oven-roasted-pork-belly-thit-heo-quay/",
+    "fetchedAt": "2026-08-02T01:14:18.083Z"
+  },
+  "rawSource": "https://vickypham.com/blog/crispy-oven-roasted-pork-belly-thit-heo-quay/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

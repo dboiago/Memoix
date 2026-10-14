@@ -1,0 +1,303 @@
+{
+  "recipe": {
+    "name": "Cured and Smoked Salmon",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by curing the salmon. Mix together the salt, sugars, lemon zest, spices and nori in a bowl. Lay a double layer of cling film on a work surface about 4 times wider than the salmon",
+      "Spread half of the cure mixture onto the middle of the cling film and place the salmon on top. Cover with the remaining cure and wrap the cling film tightly around the salmon to seal. Place on a tray and cure in the fridge for 4 days, turning the salmon every 24 hours",
+      "To make the oyster emulsion, place the sliced shallots in a small pan and cover with the wine. Place over a medium heat, bring to the boil then simmer until the wine has completely evaporated. Set aside to cool completely",
+      "Once cool, place the shallots and oysters in a blender and blitz until smooth. Gradually pour in the oil while continuing to blend, until the mixture emulsifies into a mayonnaise consistency",
+      "Once thickened, add the sorrel leaves and blitz briefly to combine. Decant into a bowl and stir through just enough of the reserved oyster juices to loosen to a spoonable consistency. Reserve in the fridge until ready to serve",
+      "To pickle the fennel, place all of the spices and seasonings in a pan with the apple juice and vinegar. Bring to the boil over a medium heat then leave to cool very slightly",
+      "While still hot, pour the pickling liquor over the sliced fennel in a bowl and leave to pickle for 30 minutes",
+      "Before serving, unwrap the salmon, rinse off the cure with cold water then pat dry on kitchen paper. Place the wood chips in a deep tray or wok and warm through over a medium heat on the hob until they start to smoke (make sure you do this in a very well-ventilated room)",
+      "Place the salmon on a vented tray and position over the smoking wood chips. Cover completely with cling film or foil and leave to gently smoke for 7 minutes. Remove from the smoke and cut the salmon into 4 portions",
+      "Place the butter in a pan and heat through gently until it starts to foam. Allow the butter to become lightly golden in colour with a nutty aroma then take off the heat to stop it burning. Allow to cool slightly",
+      "Transfer the butter to a wide pan and warm up to 46°C using a thermometer. Add the salmon pieces and cook very gently for 12 minutes, turning in the butter as they cook",
+      "Heat the vegetable oil in a deep-fryer or deep pan to 160°C. Fry the dried wakame for 90 seconds until crisp then drain any excess oil on kitchen paper",
+      "To serve, spoon some of the oyster emulsion over each serving dish. Drain the salmon from the butter and flake into large pieces before adding to each dish. Drain the fennel from the pickling liquid and add a few slices to each dish before garnishing with the fried wakame and fresh herbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon",
+        "unit": "g",
+        "notes": "skinless, pin-boned",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": "lightly crushed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": "lightly crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "g",
+        "notes": "lightly crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Nori Seaweed",
+        "unit": null,
+        "notes": "lightly crushed or crumbled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Chips",
+        "unit": "g",
+        "notes": "ideally apple wood, for smoking",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Oysters",
+        "unit": "g",
+        "notes": "shucked reserving the juices",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": "thickly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wakame",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "for frying",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fronds of Fresh Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "429442a38139ad25ec247aceb6ea1924e0cc2806b1cfddae58b98b388d5df1b0",
+    "lineage_hash": "ada9b831fe5f470805eb2dabae67d7784e6554b5c7c5624dcddc8fa08cb3e17b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-smoked-salmon-recipe",
+    "fetchedAt": "2026-08-03T12:16:29.030Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-smoked-salmon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

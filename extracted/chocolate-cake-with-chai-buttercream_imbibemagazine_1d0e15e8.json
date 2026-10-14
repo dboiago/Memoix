@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Chocolate Cake With Chai Buttercream",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (175°C).",
+      "Line two 9-inch cake pans with parchment paper and grease them with butter or oil to ensure the cake doesn’t stick.",
+      "To Make the CakeWhisk the cocoa powder, cornstarch, flour, baking soda, baking powder, and kosher salt in a medium bowl. Make sure to work through any lumps of cocoa powder.",
+      "Combine the buttermilk, sugar, olive oil, eggs, and egg yolks in a large bowl and whisk well until combined. Add the dry ingredients and mix well to combine. The batter will be very thick at this stage, but it’s much easier to mix in the dry ingredients and ensure no clumping this way. Mix in the warm water. It’s OK if there are a few small lumps.",
+      "Divide the batter between the prepared cake pans and tap them on the counter to release any excess air bubbles. Bake for 25 to 30 minutes, until a skewer inserted into the center comes out with a few moist crumbs. Remove the cakes from the oven and let them cool completely.\nButtercream FrostingTo make a chai concentrate, combine the heavy cream, kosher salt, vanilla, black tea, cinnamon, cardamom, and ginger in a small pot. Place over medium heat and cook, stirring continuously, until the mixture has thickened but is looser than pudding and bubbles are gurgling, 5 to 7 minutes. The mixture should be milky brown in color. Remove from the heat and let stand for 1 to 2 minutes.",
+      "Set a mesh strainer over a small bowl and pour the chai concentrate through the sieve. Use a spatula to help work the cream through the strainer—much of the ginger and black tea will be left behind. Discard it. Let the cream stand to cool completely.",
+      "Combine the softened butter (it’s super important that your butter is fully softened and at room temperature so your buttercream doesn’t break) and powdered sugar in the bowl of a stand mixer fitted with the whisk attachment. Mix together on Stir, or the lowest setting on your mixer, to combine the butter and sugar, then increase the speed to medium (setting 4 on most stand mixers). Whip the sugar and butter until lighter in color and thick, 5 to 6 minutes (don’t be alarmed if it doesn’t come together at first—just keep it going). I usually stop halfway through to scrape down the sides of the bowl to ensure all the butter is combined evenly. Add the reserved chai cream and continue to whip on medium speed, scraping down the sides of the bowl as needed, until light, fluffy, and completely combined, another 2 to 3 minutes.",
+      "Remove the whisk attachment and stir manually with a rubber spatula, pushing the frosting against the sides of the bowl to release any air pockets. You can also do this by switching to the paddle attachment and mixing on Stir for 2 minutes. Transfer to an airtight container until the cake has cooled completely.",
+      "Once the cakes are cooled, invert the cake pans over a large cutting board and peel off the parchment paper bottom. Level the cakes with a serrated knife if they’ve domed. Trim a piece of parchment into four 2- to 3-inch strips. Lay them to form a square with overlapping edges on top of a cake stand or serving plate. Transfer a cake layer to the stand or platter, laying it over the parchment strips. This is a trick to help keep the plate clean; after you frost the cake, simply shimmy off those parchment strips to reveal an untouched surface.",
+      "Transfer one-third of the frosting to the top of the cake layer and, using an offset spatula, spread to the edges in an even layer. Top with the next cake layer, ensuring the even, flat bottom of the cake layer is now the top of the layered cake. Spread the remaining frosting evenly over the top and sides. Sprinkle with flaky salt and serve.",
+      "Do-ahead: The cakes and frosting can be made up to 2 days ahead. Store the cakes wrapped in plastic wrap at room temperature. Store the frosting in an airtight container in the refrigerator. Bring to room temperature and stir vigorously until smooth and airy before frosting."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch-process Cocoa Powder",
+        "unit": "C",
+        "notes": "or unsweetened cocoa powder",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": "or warm coffee or black tea",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "or 1 Tbsp. lemon juice or white vinegar plus enough whole milk to measure 1 cup",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "or vegetable oil",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": "Diamond Crystal",
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "alt: neutral oil, for greasing the pan",
+        "amount": "0",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Sticks (1 1/2 Cups) Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Piece Ginger",
+        "unit": "inch",
+        "notes": "finely grated",
+        "amount": "3",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Black Tea",
+        "unit": "Tbsp",
+        "notes": "loose",
+        "amount": "2",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1½",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1½",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": "Diamond Crystal",
+        "amount": "¾",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "0",
+        "section": "Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a157af20e865e4dc5cb0076174be64a55a4ba7babfb788ba890184f9cb2dda1",
+    "lineage_hash": "fcadff96158696258aa80a9fbfb4daf295018f1fbdb3bc713e26ae2aae62eb41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-cake-with-chai-buttercream/",
+    "fetchedAt": "2026-08-04T00:42:34.273Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-cake-with-chai-buttercream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

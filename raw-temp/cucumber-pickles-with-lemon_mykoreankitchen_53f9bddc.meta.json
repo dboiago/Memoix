@@ -1,0 +1,59 @@
+{
+  "url": "https://mykoreankitchen.com/cucumber-pickles/",
+  "slug": "cucumber-pickles-with-lemon_mykoreankitchen_53f9bddc",
+  "title": "Cucumber Pickles with Lemon",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T23:19:25.781Z",
+  "ldName": "Cucumber Pickles with Lemon",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "15"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side dishes",
+  "ldKeywords": "cucumber pickles, pickled cucumber",
+  "ldIngredientsRaw": [
+    "1 kg cucumber ((2.2 pounds), I used Lebanese cucumber but you can use other cucumbers that are suitable for pickling.)",
+    "3 Tbsp coarse sea salt",
+    "1/2  lemon (, thinly sliced)",
+    "2 cups water",
+    "1 cup sugar",
+    "3/4 cup apple cider vinegar (or rice vinegar)",
+    "2 Tbsp fine sea salt",
+    "2 tsp pickling spice",
+    "10 g ginger ((0.35 ounces), thinly sliced)",
+    "5 g garlic ((0.17 ounces), thinly sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the cucumbers under running water. Scrub the cucumber skin thoroughly. Cut off both ends of the cucumber. Unless you’re using baby cucumbers, chop the cucumber into small thumb size pieces (about 4 cm / 1.5 inch length) then put them into a mixing bowl. Add the coarse sea salt and let it sit for 30 mins to drain some water out. During this time, turn the cucumber around a few times. After 30 mins, brush off residual salt from the cucumbers then put them into a clean sterile jar. Add the sliced lemon into the jar.",
+    "Combine the brine ingredients in a saucepan and boil over medium heat until the sugar dissolves (4 to 5 mins). Whisk occasionally.",
+    "Pour the pickle brine into the jar until the jar is full. Close the lid. Leave at room temperature for 3 hrs then move it to the fridge. Start eating from day 3. (You can start eating from day 1 but it becomes more flavorful from day 3.) The pickles can last for about 3 weeks in the fridge."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "63 kcal",
+    "carbohydrateContent": "15 g",
+    "sodiumContent": "2329 mg",
+    "sugarContent": "14 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 1 kg cucumber (2.2 pounds), I used Lebanese cucumber but you can use other cucumbers that are suitable for pickling.",
+    "▢ 3 Tbsp coarse sea salt",
+    "▢ 1/2 lemon , thinly sliced",
+    "[CUCUMBER PICKLE BRINE]",
+    "▢ 2 cups water",
+    "▢ 1 cup sugar",
+    "▢ 3/4 cup apple cider vinegar or rice vinegar",
+    "▢ 2 Tbsp fine sea salt",
+    "▢ 2 tsp pickling spice",
+    "▢ 10 g ginger (0.35 ounces), thinly sliced",
+    "▢ 5 g garlic (0.17 ounces), thinly sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

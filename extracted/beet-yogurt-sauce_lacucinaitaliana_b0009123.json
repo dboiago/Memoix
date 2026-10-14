@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Beet Yogurt Sauce",
+    "time": null,
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend everything together until smooth. If you prefer no dairy, use soy yogurt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beets",
+        "unit": "oz",
+        "notes": "boiled and peeled",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slice Sandwich Bread (to Baste with the Vinegar) 1/2 Spring Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f10e514d8556e220e6637a1f000cf9edde3540c1eb37881b59f4c9f671a5c84",
+    "lineage_hash": "bfefff6135b1fde83d4965a9fc3d9821d4cdd473858ee293f48841d95e80b478"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/beet-yogurt-sauce",
+    "fetchedAt": "2026-08-03T08:26:27.128Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/beet-yogurt-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

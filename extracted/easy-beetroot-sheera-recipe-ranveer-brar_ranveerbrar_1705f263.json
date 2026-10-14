@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Beetroot Sheera (चुकंदर शीरा)",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in a casserole, add the beetroot and roast for 5-6 minutes.",
+      "Add milk, stir well.",
+      "Cover and cook on simmer for 20-25 minutes.",
+      "Remove the lid & start stirring till it dries up.",
+      "Add sugar and mix well till it melts, keep stirring to avoid any lumps from forming.",
+      "Add salt and cardamom powder. Mix well.",
+      "Garnish with almonds and pistachios.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Beetroot",
+        "unit": null,
+        "notes": "grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bce75e7f6b6e5801dce83893d22ebd7fb4e1c1825627859b50478f9141494c5",
+    "lineage_hash": "141e1297a941df53b88b4a641f6c0893dbf7990cd3f7fbf5385f2efc74e75320"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/beetroot-sheera/",
+    "fetchedAt": "2026-08-02T04:45:04.433Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/beetroot-sheera/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,39 @@
+{
+  "url": "https://www.davidlebovitz.com/craquelin-recipe/",
+  "slug": "craquelin_davidlebovitz_d4fcc3c7",
+  "title": "Craquelin",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T21:21:43.695Z",
+  "ldName": "Craquelin",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "50",
+    "50 cream puffs"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "3 ounces (85g) unsalted butter (cubed, at room temperature)",
+    "1/2 cup (100g) packed light brown sugar",
+    "3/4 cup (100g) all-purpose flour",
+    "Pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "In a bowl, cream together the butter and sugar with a sturdy spatula or wooden spoon, then add the flour and salt, and continue to mix the dough until it’s smooth. (You can also use a stand mixer with the paddle attachment.)",
+    "Put the dough between two sheets of parchment paper and roll the dough until it’s about 13-inches (33cm) round. Slide the dough on a baking sheet and freeze the dough.",
+    "Make your cream puffs, and after they are piped onto a baking sheet, remove the dough from the freezer and let it stand a minute or so, until it’s defrosted just enough to cut. Using a round cookie cutter about the same diameter of the puffs, cut out circles of the dough and set them on top of the puffs. Bake the cream puffs as indicated by the recipe, until the tops are nicely browned."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 ounces (85g) unsalted butter, cubed, at room temperature",
+    "1/2 cup (100g) packed light brown sugar",
+    "3/4 cup (100g) all-purpose flour",
+    "Pinch of salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

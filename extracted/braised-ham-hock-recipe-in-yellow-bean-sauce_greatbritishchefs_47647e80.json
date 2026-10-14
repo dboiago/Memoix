@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Braised Ham Hock in Yellow Bean Sauce",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cut the red onion into roughly 2cm chunks and halve the leek lengthways. Wash the leek well under cold running water and cut into 3cm lengths",
+      "Mix all the braising sauce ingredients together in a small bowl",
+      "Rub the salt, white pepper and five-spice all over the ham hock and set aside on a roasting tray",
+      "Now build your wok clock: place the red onion at 12 o'clock, followed by the leeks, the black peppercorns, bay leaf, star anise and cinnamon stick, then the braising sauce, clockwise on the plate",
+      "Heat 1 tbsp of vegetable oil to a medium heat in a large sauce pan. Once hot, place the ham hock skin-side down in the pan and turn it until completely seared all over – about 5–8 minutes in total",
+      "Add the red onion around the edge of the ham and fry for a further minute or so, then add the leeks, peppercorns and bay leaf, giving them a quick stir for another minute or two",
+      "Turn the heat up to high, then pour the braising sauce into the pan and bring to a vigorous boil. Turn the ham hock every minute or so, coating all sides in the boiling sauce",
+      "The sauce will begin to reduce and thicken, starting to stick a little on the base of the pan. At this point, pour in the chicken stock and enough hot water to cover the ham hock completely, and return to the boil",
+      "Give it a stir to mix all the flavours together, then turn the heat down to medium-low and leave to cook for 1 1/2 hours",
+      "After about 1 hour of braising the meat, preheat the oven to 220°C/gas mark 8. Once the meat has had its 1 1/2 hours of braising, transfer the ham hock to a roasting tray",
+      "Heat 1 tablespoon of oil in a wok to a high heat. Scoop out all the red onions and leeks from the braising liquid, add them to the wok and fry for 30 seconds, then immediately add 4–5 ladles of braising liquid and bring to a vigorous boil",
+      "Add the cornflour paste, return to the boil and stir continuously for 1 minute more",
+      "Once the sauce has thickened slightly, pour it directly over the ham hock, then place the roasting tray in the oven for a further 20–30 minutes",
+      "This is a great dish for everyone to get stuck in, pulling pieces apart as they go"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ham Hock",
+        "unit": "kg",
+        "notes": "on the bone and with skin",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": "mixed with 3 tbsp water to make a paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bean Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e3d6da88cb38d1890e7d88b02a30eb19981ce00544ab55451ca3c02f0204af6",
+    "lineage_hash": "9d64fc148c2030f3e9a0719e5d3bd7bbfad9712d8ad5688a5b70d7899f43a0c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-ham-hock-recipe-yellow-bean-sauce",
+    "fetchedAt": "2026-08-03T10:26:48.791Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-ham-hock-recipe-yellow-bean-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Tipperary",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a mixing glass and fill with ice. Stir to chill. Strain into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "tsp",
+        "notes": "2:1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "148b3ebeb934e51d8f9e613fc009552c697840514aa7765546a7c0006f7e24eb",
+    "lineage_hash": "b3fc7e4535ebd23e4f3406405be85bfb1e98de2c9f801e18e9ee4e6e8296951f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dead-rabbit-tipperary-recipe/",
+    "fetchedAt": "2026-08-03T20:16:42.932Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dead-rabbit-tipperary-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

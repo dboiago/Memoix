@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "59",
+      "carbohydrateContent": "4.4",
+      "fatContent": "4.2",
+      "proteinContent": "1.2"
+    },
+    "directions": [
+      "Thoroughly wash the chrysanthemum greens with running water and let air dry. You can also use a few layers of kitchen paper towels to pat dry. One done, chop them into bite-size pieces and add to a large heat proof bowl.",
+      "Combine the sauce ingredients in a small bowl and set aside.",
+      "Heat the oil in a small pan over low heat and add the garlic, ginger, and chilis. Fry slowly until the garlic begins to brown lightly.",
+      "Pour in sauce and turn off the heat.",
+      "Stir the sauce into the oil briefly, then pour over the chrysanthemum leaves. Immediately toss everything with a pair of tongs to evenly mix the sauce. Set aside and let the leaves wilt for about 2 minutes.",
+      "Serve immediately as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chrysanthemum Greens",
+        "unit": "oz",
+        "notes": "220 g, yield about 6 oz / 170 g washed & trimmed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "” (2.5 G) Ginger",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Chilis",
+        "unit": null,
+        "notes": "or 3 thai chilis, deseeded & sliced, dried, chopped",
+        "amount": "6",
+        "section": "Cooking",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d516c2ca4a35f734e499e1de6090030dcbf1bdb166cf707958b7012a5c8c33e",
+    "lineage_hash": "3c1c58d26eb69e85a8bd848db9cab04e79c9f265f7b5371c134c79a5e8baa63f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chrysanthemum-salad/",
+    "fetchedAt": "2026-08-01T21:19:40.521Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chrysanthemum-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

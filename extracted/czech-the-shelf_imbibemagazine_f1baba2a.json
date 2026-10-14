@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Czech the Shelf",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CZ",
+    "glass": "Stemmed Tulip",
+    "garnish": [
+      "2 Drops Fernet Branca"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and dry shake (without ice). Add ice and shake for an additional 30 seconds. Strain into a glass and garnish.",
+      "Combine 2 Tbsp. freshly grated ginger root with 1/4 cup boiling water. Let infuse until cool and strain out ginger, squeezing to extract as much juice as possibly. Stir in 1 cup of honey and store in a cool place."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Curaçao",
+        "unit": "oz",
+        "notes": "Best uses Pierre Ferrand Dry Curaçao",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Liqueur",
+        "unit": "oz",
+        "notes": "Best uses King’s",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Becherovka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Fresh Egg",
+        "unit": null,
+        "notes": "pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Ginger Infused Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Ginger Root",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0a74f2bb4d60f1f08c0f33dcabb39941d0266e275cbda677626d95e2480f5ce1",
+    "lineage_hash": "69e681ba37bf8ee11a814a18cc335503b1d44cd2d2af488cd4c69ae66ddf7d48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/czech-the-shelf/",
+    "fetchedAt": "2026-08-03T15:12:42.409Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/czech-the-shelf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

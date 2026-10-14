@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Croquettes",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a heavy-based pan, fry the onion in the butter for 3-4 minutes without colouring. Add the flour and mix well",
+      "Add the milk and salt and continue to mix. Bring to the boil and heat until the sauce thickens. Remove from the heat, allow to cool slightly then slowly whisk in the beaten egg until incorporated",
+      "Divide the sauce between 2 large bowls. Add the ham, peas and mint into one, and the cheddar, sweetcorn and parsley into the other",
+      "Cover each bowl and store in the fridge until cold and set",
+      "Using floured hands, divide the mix and shape into barrel-shaped croquettes (2 inches long). Keep on a floured plate, ensuring the 2 types of croquette are kept separate if catering for vegetarians",
+      "Gently roll the barrels in the flour. Then dip into the beaten egg mix, followed by the breadcrumbs, until the croquettes are well coated",
+      "Set a deep fat fryer to 180°C (alternatively, fill a pan up to halfway with oil and heat until a sugar thermometer reads 180°C)",
+      "Fry the vegetarian croquettes in the oil for 2-3 minutes until golden brown and crispy, set aside. Fry the ham, pea and mint croquettes using the same method",
+      "Drain the croquettes on kitchen towel to absorb any excess oil. Serve with some redcurrant jelly"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrant Jelly",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "defrosted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "for frying",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8bd6ff0b35a45acb8ca79786d272d82d2d3e8d1345a1f5d33157984018245b39",
+    "lineage_hash": "7d2f711e0ea84883c36e562d82ae7427e3b5daae42e70917d6bb049d07d5499b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/croquettes-recipe",
+    "fetchedAt": "2026-08-03T19:26:19.441Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/croquettes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

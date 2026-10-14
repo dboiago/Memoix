@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Classic Southern Sweet Tea",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat. Pour the water in a 3 quart (2.8 L) or larger pot and boil.",
+      "Steep. Turn the heat off and add the teabags. Cover to steep the tea for 5-7 minutes. Steep it longer to make it stronger and more bitter. Squeezing the teabags makes it stronger and more bitter. Most folks will like it better if you don't steep it longer than 7 minutes and if you don't squeeze the tea bags.",
+      "Sweet. Add the sugar and stir until dissolved.",
+      "Chill. Refrigerate the tea. Some folks like to age it 12 hours or so, others like to serve it warm over ice. It can get skunky if you keep it more than a few days.",
+      "Serve. Serve over ice cubes with lemon wedges and/or mint leaves as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "gal",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Family Size Tea Bags",
+        "unit": null,
+        "notes": "alt: 8 regular tea bags",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "853b6628f6c0a76e885a56ae71d038258c6fad07a10091f3cb0e6f7071e5d836",
+    "lineage_hash": "8686f8a5f0e8f7dad62ff2f50d9db33d29163b38b52a7e64f0875b9a56ba0f31"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/drink-recipes/classic-southern-sweet-tea-recipe/",
+    "fetchedAt": "2026-08-02T02:15:05.415Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/drink-recipes/classic-southern-sweet-tea-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

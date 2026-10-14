@@ -1,0 +1,68 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-lamb-skewers/",
+  "slug": "air-fryer-lamb-skewers_omnivorescookbook_a762b237",
+  "title": "Air fryer Lamb Skewers (羊肉串儿)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:09:33.991Z",
+  "ldName": "Air fryer Lamb Skewers (羊肉串儿)",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings (12 to 14 skewers)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb (450 g) lamb leg ((or stew meat, or medallions) (*See footnote 1))",
+    "1/2  onion (, sliced)",
+    "20  6&quot; (15 cm) bamboo skewers",
+    "2 tablespoons peanut oil ((or vegetable oil))",
+    "2 tablespoons light soy sauce ((or soy sauce))",
+    "1 tablespoon Shaoxing wine ((or dry sherry) (Optional))",
+    "2 teaspoons cornstarch",
+    "2 teaspoons cumin powder (, and extra for cooking)",
+    "1/2 teaspoon chili flakes (, and extra for cooking)",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon ground Sichuan peppercorn ((or ground black pepper))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine oil, soy sauce, cornstarch, cumin powder, chili powder, and salt in a small bowl. Mix well.",
+    "Trim fat from the lamb meat if necessary. Cut the lean part into 1.5-cm (1&quot;) cubes. Cut fat into thin pieces half the size of the lean pieces.",
+    "Add the lamb and onion into a big bowl. Pour the marinade over the lamb. Mix well so the lamb is covered evenly with the marinade. Let marinate for 30 minutes at room temperature or overnight in the fridge.",
+    "Thread lamb cubes closely onto skewers, alternating between lean meat and fat pieces.",
+    "When ready to cook, preheat the air fryer to 400°F (200°C). Place skewers into the preheated air fryer and air fryer and cook for 8 to 10 minutes, until charred on the outside and tender on the inside. Halfway through, turn the lamb skewers and sprinkle a generous amount of cumin powder and chili powder on both sides. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "162 kcal",
+    "carbohydrateContent": "1.4 g",
+    "proteinContent": "24.4 g",
+    "fatContent": "5.9 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "74 mg",
+    "sodiumContent": "431 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "0.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb (450 g) lamb leg (or stew meat, or medallions) (*See footnote 1)",
+    "1/2 onion , sliced",
+    "20  6\" (15 cm) bamboo skewers",
+    "[Marinade]",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "2 tablespoons light soy sauce (or soy sauce)",
+    "1 tablespoon Shaoxing wine (or dry sherry) (Optional)",
+    "2 teaspoons cornstarch",
+    "2 teaspoons cumin powder , and extra for cooking",
+    "1/2 teaspoon chili flakes , and extra for cooking",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon ground Sichuan peppercorn (or ground black pepper)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

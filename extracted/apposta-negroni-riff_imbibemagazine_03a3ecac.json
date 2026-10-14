@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Apposta Negroni Riff",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Orange Peel Expressed",
+      "Thyme"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except the soda in a chilled mixing glass. Stir for 12 seconds. Strain into a chilled Collins glass filled with 4 ice cubes. Garnish with orange peel expressed and placed in drink. Add thyme and 2 narrow straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beefeater 24 Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punt E Mes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "San Pellegrini Pompelmo Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5513bc30f7a9b03ff4420b0ee20885eef50c7877d50aba3a3dea73c17ca47328",
+    "lineage_hash": "6efd8b7d3fc11d7c6128ab3ee2b11e14db44270fa887173339cd8d9f6e606e32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apposta/",
+    "fetchedAt": "2026-08-03T17:52:46.173Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apposta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

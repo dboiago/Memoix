@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Banana Parfait with Banana Mousse",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "463",
+      "carbohydrateContent": "39",
+      "fatContent": "31",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Make the caramelized bananas and let it cool completely, then store it in an airtight container in the fridge.",
+      "Make the crumble and let it cool completely, then store it in an airtight container at room temperature.",
+      "Make the banana mousse and keep it refrigerated in an airtight container.",
+      "Assemble the parfaits a couple of hours before serving, or right before if you want the crumble extra crunchy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Toasted Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Cookies",
+        "unit": "oz",
+        "notes": "alt: biscuits such as biscoito maizena, galletas Maria",
+        "amount": "4",
+        "section": "Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Bananas",
+        "unit": "C",
+        "notes": "from roughly 2-4 ripe bananas",
+        "amount": "1½",
+        "section": "Banana Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "C",
+        "notes": "cold",
+        "amount": "1",
+        "section": "Banana Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Banana Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Banana Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Caramelized Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c599944575398cdf3ebe19c00ebc3a08c3b8954207f5c291bda8c62eb513514",
+    "lineage_hash": "97822b2ffdc48d5416a5c63cf7df693685c6eeb1195348cbfa416c1525918ede"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/banana-parfait-with-banana-mousse/",
+    "fetchedAt": "2026-09-26T02:29:54.058Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/banana-parfait-with-banana-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

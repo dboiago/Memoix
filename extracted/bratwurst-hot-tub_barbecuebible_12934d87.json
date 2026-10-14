@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Bratwurst \"Hot Tub\"",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "_Smoke-roasting (indirect grilling) method:_ Set up your grill for indirect grilling and preheat to medium. Brush and oil the grill grate. Arrange the brats on the grate over the drip pay away from the heat. Toss the wood chips on the coals. Indirect grill the brats until crusty and golden brown on the outside and cooked through, 30 to 40 minutes. Use an instant-read meat thermometer to check for doneness — insert it in one end to the center of the brat — it should read 160 degrees F. There is no need to turn the brats — remember, you’re indirect grilling.",
+      "As the brats cook, skewer the onion slices on bamboo skewers. Melt the butter in the large foil pan. Lightly brush the onion slices with melted butter (you’ll need about 1 tablespoon) and season with salt and pepper. Direct grill the onions until golden brown on both sides, 3 to 4 minutes per side. (If working on a grill set up for indirect grilling, place the onions directly over one of the mounds of coals.) Add the onions to foil pan with the butter, removing and discarding the skewers.",
+      "Add the beer to foil and boil it for 3 minutes. Move it to a cooler part of the grill so it stops boiling. As the bratwurst are done, add them to the pan with the beer. Position the pan at the rear or side of your grill so that the beer and brats stay warm, but don’t quite boil. Boiling will overcook them. Thus nestled in their hot tub, the brats will stay warm and moist for up to an hour or two—enough time for you to cook them ahead of time, imbue them with the flavor of smoke and fire, and enjoy them during the game.",
+      "To serve the brats, slather the roll with mustard. You can butter and grill it if you like — most Wisconsinites wouldn’t bother. Add a brat, some grilled onion, and sauerkraut if desired. Take a bite and get ready for some of the best sausage on Planet Barbecue."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wisconsin Bratwurst",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Onion",
+        "unit": "large",
+        "notes": "peeled and cut crosswise into 1/2-inch slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beer (2 Bottles)",
+        "unit": "C",
+        "notes": "preferably Wisconsin beer",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5684ad69815b58719bc3b4a27940c171c996d52bc9e47fac0055d47c3b2f70a3",
+    "lineage_hash": "2b16cef872ff77c1c6232b978ccebde85047687f00cb333a15c01b7253214b87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bratwurst-hot-tub/",
+    "fetchedAt": "2026-08-03T06:51:03.912Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bratwurst-hot-tub/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

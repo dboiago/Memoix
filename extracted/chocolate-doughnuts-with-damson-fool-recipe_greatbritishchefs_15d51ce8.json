@@ -1,0 +1,218 @@
+{
+  "recipe": {
+    "name": "Chocolate Doughnuts With Damson Fool",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the damson purée, combine the fruit, sugar and apple juice in a heavy-based saucepan. Bring to the boil and simmer gently for 10-15 minutes",
+      "Blitz the cooked damsons in a blender then pass through a fine sieve. You will need 225g of purée for the fool – freeze any leftover for use in other recipes",
+      "To make the Italian meringue, whisk the egg whites in the bowl of an electric mixer until they form soft peaks. Meanwhile, boil the water, sugar and glucose together in a saucepan until the syrup reaches 118°C",
+      "Carefully pour the boiling syrup onto the egg whites and continue whisking until the meringue forms stiff, shiny peaks. Set aside 100g of the meringue to use in the fool and place the remaining into a piping bag",
+      "To make the damson fool, bring the apple juice to the boil in a small saucepan and reduce to 50ml, remove it from the heat and leave to cool",
+      "Whisk together the egg yolks and sugar until pale, adding the reduced apple juice slowly",
+      "Soak the gelatine leaves in cold water for 5 minutes to soften",
+      "Meanwhile, put the yolk mixture in a saucepan and heat gently until it is thick enough to coat the back of a spoon, or reaches a temperature of 81°C. Remove the pan from the heat",
+      "Squeeze the excess water from the gelatine, add it to the yolk mixture and stir to dissolve. Pass the mixture through a fine sieve into a large bowl",
+      "Fold in the damson purée, Italian meringue and whipped cream. Spoon into serving dishes and leave to set in the fridge",
+      "To make the chocolate doughnuts, warm the milk in a small pan and mix in the yeast, stirring to dissolve",
+      "Combine the flour, cocoa powder, sugar and a pinch of salt in the bowl of an electric mixer. Switch it to a low speed and, as it mixes, add small pieces of the butter until it is fully incorporated",
+      "Pour the beaten egg into the mix, then add the milk and yeast. Mix for about 10 minutes or until a  smooth dough forms",
+      "Take the bowl from the machine, cover with cling film and leave in a warm spot to prove for about 25 minutes, until the dough has doubled in size",
+      "Lightly flour a work surface and roll out the dough to a thickness of 1cm. Use a 4-5cm cookie cutter to cut the dough into rounds. Put them on a tray and leave to rest in the fridge for 20 minutes before cooking",
+      "Heat a deep-fryer of vegetable oil to 175°C. Deep-fry the doughnuts for 3 minutes in total, flipping them halfway through cooking. Drain and, while still hot, roll them in sugar to coat. Serve with the damson fool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped to soft peaks",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "58ecd62d4a306bd083332d6fdcae601662e8821b00d754e0f0b7efbd4b861226",
+    "lineage_hash": "ecd726fd7dcfb9213a733463005203a1e37cdf88d3154f47c2ee6d1950d1819c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-doughnuts-with-damson-fool",
+    "fetchedAt": "2026-08-03T18:04:40.241Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-doughnuts-with-damson-fool",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

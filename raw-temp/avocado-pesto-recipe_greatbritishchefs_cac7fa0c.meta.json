@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/avocado-pesto-recipe",
+  "slug": "avocado-pesto-recipe_greatbritishchefs_cac7fa0c",
+  "title": "Avocado Pesto Recipe",
+  "byline": "by Robert Thompson",
+  "fetchedAt": "2026-08-03T12:33:02.874Z",
+  "ldName": "Avocado pesto with fusilli",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "400g of fusilli pasta",
+    "1 avocado",
+    "1/2 lemon, juiced and zested",
+    "1 tsp garlic, crushed",
+    "20g of basil, plus a few sprigs to garnish",
+    "1 tbsp of virgin olive oil",
+    "100g of pecorino, grated",
+    "50g of walnuts, plus extra for garnish",
+    "salt",
+    "black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by cooking the pasta. Add the fusilli to a large pan of boiling, salted water and cook for about 8 minutes (or according to packet instructions)",
+    "Meanwhile, make the pesto. De-stone the avocado and scoop the flesh into a blender or pestle and mortar. Add the lemon juice (but not zest), garlic, basil, olive oil, pecorino and walnuts and blend or grind until smooth",
+    "When the pasta is ready, drain and stir in the avocado pesto. Season with salt and pepper to taste and garnish with the lemon zest and walnuts"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

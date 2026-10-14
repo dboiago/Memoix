@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Crostata with Blackberry Jam",
+    "time": "1 hr 12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make our recipe for this delightful blackberry jam crostata, start by mixing flour with butter, caster sugar, 1 whole egg, and 1 egg yolk.",
+      "Transfer the crostata dough to the fridge or let it rest in a cool, dark place for half an hour.",
+      "Roll out half the dough into a glass or ceramic baking dish lined with baking parchment.",
+      "Form the edges, pressing into the dough with the tines of a fork.",
+      "Distribute the jam over the tart dough and use the rest of the crostata dough to cover the surface, arranged in a grid pattern. Bake at 355°F (180°C) for about 40 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": "superfine",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Jam",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95710c5ae43aa498f54ab578fa38a14c5cac8a449c1e0577a239794f69e9ebd4",
+    "lineage_hash": "8853314a16204c63ced19af9e4319c7d32aea1a2d6539047ba680d37fbaf0e16"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/crostata-blackberry-jam",
+    "fetchedAt": "2026-08-03T09:03:29.956Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/crostata-blackberry-jam",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

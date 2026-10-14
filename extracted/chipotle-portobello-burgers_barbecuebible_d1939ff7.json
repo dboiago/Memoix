@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Chipotle Portobello Burgers",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender jar or food processor, combine the chipotle chiles, garlic, chopped onion, balsamic vinegar, vegetable oil, and salt and pepper to taste and blend until smooth.",
+      "Place the mushroom caps in a single layer in a nonreactive baking dish, gill-side up, and pour the marinade over them, working the marinade into the gills with the back of a spoon. Cover and let marinate, refrigerated, for 30 minutes to 1 hour.",
+      "Set up the grill for direct grilling using a two-zone fire; preheat one zone to high and the other zone to medium so you can move the mushrooms over if they start to burn.",
+      "When ready to cook, remove the mushrooms from the marinade, reserving the marinade. Brush the onion slices with melted butter. Place the portobellos (gill-side down), the onion slices, and the poblanos on the grill grate. Grill for about 3 minutes, then turn with tongs. Spoon some of the reserved marinade on the gill-side of the mushrooms and continue to grill until tender and sizzling. If the vegetables begin to brown too much before they become tender, move them over to the medium zone of the grill.",
+      "Lastly, brush melted butter over the cut sides of the ciabatta rolls and grill, cut sides down, for 1 to 2 minutes over the medium side of the grill, or until they are golden brown.",
+      "To serve, remove the skewers from the onion slices. Scrape the charred skin of the poblanos, remove the stem end, and cut into quarters. Remove seeds and/or veins. For each sandwich, place a mushroom on the bottom half of a bun; top with a slice of pepper Jack cheese, onion, poblano pepper, and several slices of avocado."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canned Chipotle Chiles with Adobo Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "about 1/2 cup, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt and Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e67f9f053324766c490639dc77f9cfc06a37be246b2aaf82c919a913ea71b5a5",
+    "lineage_hash": "26c6233036217a03b735eb46d0d408d5dbeba485ecd121683933a13e2ff2acf2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-portobello-burgers/",
+    "fetchedAt": "2026-08-03T09:22:05.127Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-portobello-burgers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

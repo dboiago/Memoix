@@ -1,0 +1,58 @@
+{
+  "url": "https://omnivorescookbook.com/bok-choy-soup/",
+  "slug": "bok-choy-soup_omnivorescookbook_50233669",
+  "title": "Bok Choy Soup",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T22:14:09.117Z",
+  "ldName": "Bok Choy Soup",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "8 heads baby bok choy (,  (300 g))",
+    "1 tablespoon sesame oil",
+    "1/4 cup zha cai ((Chinese pickled mustard plant stem) (*Footnote 1))",
+    "2 ” (5 cm) ginger (,  julienned )",
+    "1  green onion (, sliced)",
+    "4 cups chicken soup ( (or vegetable broth))",
+    "1/2 teaspoon  chicken bouillon ((or mushroom powder), or to taste )"
+  ],
+  "ldInstructionsRaw": [
+    "Trim off the tough ends of the baby bok choy. Separate the larger outer leaves, then halve the cores lengthwise. Soak the bok choy in a large bowl of cold water for 5 minutes. Gently rub the stems to remove any dirt trapped between the leaves. Rinse well and drain.",
+    "Heat the sesame oil in a medium pot over medium-low heat. Add the zha cai, ginger, and the white parts of the green onion. Cook, stirring occasionally, until fragrant and the ginger just begins to brown, 3 to 5 minutes.",
+    "Pour in the chicken stock and bring to a boil. Reduce the heat to a simmer and cook for 3 minutes to infuse the broth.",
+    "Add the bok choy and return the soup to a gentle simmer. Cook until the bok choy is tender but still crisp, 2 to 3 minutes.",
+    "Add the green parts of the green onion. Taste the soup and adjust the seasoning with more chicken bouillon or mushroom powder if needed. If you&#39;d like a brighter, tangier flavor, stir in a splash of the zha cai pickling liquid. Drizzle with a little more sesame oil, if desired. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "55 kcal",
+    "carbohydrateContent": "5.9 g",
+    "proteinContent": "1.1 g",
+    "fatContent": "3.4 g",
+    "saturatedFatContent": "0.5 g",
+    "sodiumContent": "561 mg",
+    "fiberContent": "0.9 g",
+    "sugarContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "8 heads baby bok choy ,  (300 g)",
+    "1 tablespoon sesame oil",
+    "1/4 cup zha cai (Chinese pickled mustard plant stem) (*Footnote 1)",
+    "2 ” (5 cm) ginger ,  julienned",
+    "1 green onion , sliced",
+    "4 cups chicken soup  (or vegetable broth)",
+    "1/2 teaspoon  chicken bouillon (or mushroom powder), or to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

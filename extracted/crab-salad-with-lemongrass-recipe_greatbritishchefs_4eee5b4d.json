@@ -1,0 +1,431 @@
+{
+  "recipe": {
+    "name": "Crab Salad with Lemongrass",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the crab. Steam the crab for 10 minutes, then remove the claws and legs and place in iced water to cool. Steam the body for a further 8 minutes, then add to the iced water to cool",
+      "Once cool, remove the meat from the body, legs, claws and head, keeping the brown and white meat separate. Pick through the meat, checking for any shell and cartilage. Weight out 150g of brown meat and 350g of white meat, and place into a bowl over ice. Add all of the remaining ingredients and mix well. Check for seasoning and keep on ice until required",
+      "For the coriander emulsion, blanch the herbs in a pan of salted boiling water, with 20g of salt per litre - the parsley will need approximately 30 seconds, while the remaining herbs will need 20 seconds",
+      "Remove the herbs and refresh in iced water until cool. Remove the herbs as soon as they are cool, so that their flavour is not diluted by sitting in the water for too long",
+      "Place all of the ingredients in a high-powered blender and blitz on a high speed until smooth and silky - this should only take 30 seconds or so. Do not blend for too long, or the ingredients will warm up and lose their colour. Check the seasoning and reserve in the fridge until required",
+      "For the lemon verbena dressing, warm the oil to 50°C and add the remaining ingredients, except for the lemon juice. Infuse for 30 minutes, then strain through a sieve and add the lemon juice. Check the seasoning and reserve in a dressing bottle until required",
+      "For the lemongrass jelly, reduce the wine to 125ml, remove from the heat and add the lemongrass, lime leaf and sugar. Leave to infuse for 10 minutes",
+      "Add the lime juice, zest and salt, and leave for a further 2 minutes. Strain the liquid through a sieve, squeezing all of the aromatics to extract as much flavour as possible",
+      "Place the liquid in a small pan with the agar agar and bring to the boil, until the agar agar is cooked out and combined. Pour into a suitable container and leave to set, reserving until required",
+      "To prepare the peanut salad, toast the pine nuts and peanuts in a pan until golden brown and set aside to cool. Crush the lemongrass with the mortar to release the oils, then finely chop and add to a bowl",
+      "Microplane the ginger, finely chop the herbs and add to the bowl with the lemongrass. Lightly crush the nuts with the mortar and add to the bowl with the remaining ingredients. Mix well, check the seasoning and store in a container in the fridge until required",
+      "To serve, place the coriander emulsion onto plates, followed by the crab salad. Spoon around the peanut salad and scoop out small pieces of the jelly from the container, adding them to the plate",
+      "Dress the salad leaves with the dressing and arrange onto the plates. Add 3 of each micro herb and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cornish Brown Crab",
+        "unit": null,
+        "notes": "1.5-2kg in weight to yield 500g of meat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "julienned",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": "g",
+        "notes": "grated with microplane",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ultratex",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xantana",
+        "unit": "g",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "1 grind",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "g",
+        "notes": "crushed and finely chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Leaf",
+        "unit": "g",
+        "notes": "fresh, finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅖",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": "blanched",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Vinegar",
+        "unit": "g",
+        "notes": "Mizkan",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nam Pla Fish Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frisée Lettuce",
+        "unit": null,
+        "notes": "picked and washed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Herbs",
+        "unit": null,
+        "notes": "coriander and red vein sorrel",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ecfb1a3a8a67ff979405f87cc8637b5e8f7f8096bc1591f501cfa503d2f8f557",
+    "lineage_hash": "f20e631b2245e3da7d9ea893270e6d0be2b86cae56e240b6ee68d9bad1413005"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-salad-lemongrass-recipe",
+    "fetchedAt": "2026-08-03T22:27:11.171Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-salad-lemongrass-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

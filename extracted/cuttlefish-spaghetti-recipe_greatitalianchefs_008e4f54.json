@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cuttlefish Spaghetti",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan of boiling water, cook the spaghetti for 4 minutes",
+      "Drizzle the trombolotto oil in a medium saucepan, add the fish stock and bring to the boil. Add the pasta and cook for another 3 minutes",
+      "Briefly sauté the cuttlefish in a frying pan, then add it to the spaghetti. Stir the ingredients well, then add some orange zest",
+      "To plate, use the cuttlefish ink to paint the plate, then place some spaghetti in the middle. Serve hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cuttlefish",
+        "unit": "g",
+        "notes": "cleaned and sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trombolotto Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cuttlefish Ink",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45ee9f8623bef7e65d460dbe0ec289cdea8174b5fab9415b8683e5b570fb039a",
+    "lineage_hash": "9ade581c88282b2282e48d8ddcbbb4806faaffff676a87fa652009e0efdda0ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cuttlefish-spaghetti-squid-ink-orange-recipe",
+    "fetchedAt": "2026-08-02T08:04:10.715Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cuttlefish-spaghetti-squid-ink-orange-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

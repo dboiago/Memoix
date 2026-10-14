@@ -1,0 +1,59 @@
+{
+  "url": "https://www.baking-sense.com/2022/07/28/blackberry-lemon-cake/",
+  "slug": "blackberry-lemon-cake_baking-sense_d9f64145",
+  "title": "Blackberry Lemon Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:40:07.889Z",
+  "ldName": "Blackberry Lemon Cake Recipe",
+  "ldTime": "PT210M",
+  "ldPrepTime": "PT120M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "blackberry, layer cake",
+  "ldIngredientsRaw": [
+    "1 recipe Lemon Chiffon Cake (baked in two 9&quot;x3&quot; pans)",
+    "18 oz blackberries (divided)",
+    "1 recipe Swiss Meringue Buttercream (or your favorite buttercream)",
+    "8 oz Lemon Syrup (flavored with limoncello)",
+    "13 1/2 oz Lemon Curd (1 1/2 cups, divided)"
+  ],
+  "ldInstructionsRaw": [
+    "Bake 1 recipe&#32;Lemon Chiffon Cake according to the recipe. Cool to room temperature. Trim the browned tops off each cake. Split each cake horizontally so that you have a total of 4 cake layers. Cover and set aside.",
+    "Remove 12 whole berries for decorating the cake. Slice half of the remaining berries into 2 pieces and place them in a bowl while you prepare the rest of the cake components. Puree the other half of the berries in a food processor. Strain the puree through a fine sieve to remove the seeds. You should have about 1 cup of puree.",
+    "Whisk the blackberry puree into 1 recipe&#32;Swiss Meringue Buttercream. Scoop 1 cup of the buttercream into a piping bag fitted with a star tip.",
+    "Place a cake layer on a cardboard cake circle or on a serving platter. Generously brush the cake with 1/4 of the lemon syrup. Spread 1/3 of the buttercream over the cake layer. Sprinkle 1/2 of the sliced blackberries over the layer and press them down into the buttercream.",
+    "Place the second layer on the cake and brush with lemon syrup. Use the buttercream in the bag to pipe a &quot;dam&quot; of buttercream around the edge of the layer. Spread 1 cup of the lemon curd within the buttercream dam and place the next layer on the cake.",
+    "Brush the cake with lemon syrup. Spread 1/2 of the remaining buttercream over the cake layer. Put the remaining sliced blackberries on the layer and push them into the buttercream. Place the final layer on the cake and brush it with lemon syrup.",
+    "Ice the cake with a thin crumb coat of blackberry buttercream. Chill to set the crumb coat then ice the cake with a final coating of buttercream.",
+    "Pipe 12 buttercream rosettes around the top of the cake. Spread the last 1/2 cup of lemon curd within the border of rosettes. Place a whole blackberry onto each rosette. Serve immediately or refrigerate until 1-2 hours before serving. Best served at room temperature so the buttercream is soft."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 g",
+    "calories": "335 kcal",
+    "carbohydrateContent": "73 g",
+    "proteinContent": "3 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "421 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "54 g",
+    "transFatContent": "0.2 g",
+    "unsaturatedFatContent": "0.5 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Lemon Chiffon Cake (baked in two 9\"x3\" pans)",
+    "18 oz blackberries (divided)",
+    "1 recipe Swiss Meringue Buttercream (or your favorite buttercream)",
+    "8 oz Lemon Syrup (flavored with limoncello)",
+    "13 1/2 oz Lemon Curd (1 1/2 cups, divided)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

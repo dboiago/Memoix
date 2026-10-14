@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Cream of Pumpkin Soup",
+    "time": "35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the pumpkin.",
+      "Note: You can also dice the pumpkin, but grated pumpkin will cook a bit faster.",
+      "Saute the onion and garlic in the oil over low heat. Add the pumpkin, carrots, big leaf thyme, fine leaf thyme, white pepper, parsley, paprika, water and pimento.",
+      "Increase the heat to medium. Add the green seasoning. Mix the ingredients. Allow to cook for about 5 minutes.",
+      "Add the chicken broth. Continue cooking until the carrots is tender enough. Add the chadon beni and allow it to simmer for another 2 minutes on a low heat.",
+      "Remove from the fire and leave to cool.",
+      "Place in a blender.",
+      "Note: You can use a hand mixer as well. The hand mixer allows you to enjoy this pumpkin soup hot..",
+      "Add the milk and blend until smooth. Serve garnished with finely chopped chive."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Grated",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Leaf Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Leaf Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chive for Garnish",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "191234614d5879a5e5c7000d40ed3663432be7dceb1adf655df01ee5fe9419d3",
+    "lineage_hash": "755839b1d7cb635a918d0a53a1fe9006ab38362fd8017e6410fed32df6e13bad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/cream-of-pumpkin-soup/",
+    "fetchedAt": "2026-09-25T22:33:42.148Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/cream-of-pumpkin-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

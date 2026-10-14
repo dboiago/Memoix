@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chocolate Tamales",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a large pan of water to the boil, then add the corn husks and instantly remove from the heat. Leave to soak for 20 minutes",
+      "Place the chocolate and butter in a heatproof bowl set over a pan of barely simmering water, ensuring the base of the bowl does not touch the water. Stir occasionally until completely melted and combined",
+      "Meanwhile, beat the brown sugar and eggs together in a stand mixer with a whisk attachment until thick and doubled in size (you’re looking for a similar consistency to a sabayon)",
+      "Whisk the melted chocolate mixture into the eggs, followed by the masa harina, flour and baking powder. Finally add the mezcal, then turn up the speed for a few seconds until completely combined",
+      "Roll the tamal mixture into 6 equal portions, roughly 50g each",
+      "Spread the soaked corn husks out on a work surface and place a portion of the tamal mixture in the centre of each one. Fold the husks over the filling to create a rectangular parcel, then use string to tie them up (you could also use thin ribbons cut from the corn husks.) Reserve in the fridge until ready to steam",
+      "When ready to cook, set up a large steamer basket over a pan of simmering water. Steam the tamales for 15 minutes. Serve with ice cream of your choice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cornhusks",
+        "unit": null,
+        "notes": "for wrapping the tamales",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "best quality",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Corn Masa Harina",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dfd73a00873cf0b07da2576495c7acb312bfcf6bd2ddaedca8ecdee2ecffdf89",
+    "lineage_hash": "6e493a41bdf8487f9cd4d7c8abcf45763dc9c00889297bd225e6478d72b87a76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tamales-recipe",
+    "fetchedAt": "2026-08-02T21:47:34.895Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tamales-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

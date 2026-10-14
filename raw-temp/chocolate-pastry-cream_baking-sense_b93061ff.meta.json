@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2022/04/28/chocolate-pastry-cream/",
+  "slug": "chocolate-pastry-cream_baking-sense_b93061ff",
+  "title": "Chocolate Pastry Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:55:25.471Z",
+  "ldName": "Chocolate Pastry Cream",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, custard",
+  "ldIngredientsRaw": [
+    "8 oz whole milk (1 cup)",
+    "3 oz granulated sugar (1/3 cup plus 1 tablespoon)",
+    "1/4 teaspoon table salt",
+    "1/2  vanilla bean (split)",
+    "1  egg",
+    "2  yolks",
+    "3/4 oz corn starch (2 tablespoons)",
+    "4 oz semi sweet chocolate (chopped)",
+    "1 oz unsalted butter (2 tablespoons)",
+    "2 teaspoons dark rum (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Place the milk, sugar and salt in a small sauce pan. Scrape the seeds from the vanilla bean and add the seeds and pod to the milk. Heat over medium high until scalding.",
+    "Meanwhile, in a large bowl use a hand whisk to combine the eggs, yolks and cornstarch until smooth.",
+    "Whisk the scalding milk into the egg mixture, then return the custard to the pan. Cook over low heat, stirring constantly, until the mixture thickens and just begins to boil.",
+    "Immediately strain the pastry cream back into a the bowl. Add the chocolate, butter and rum. Stir until the chocolate and butter are melted.",
+    "Cover with waxed paper or buttered parchment directly on the surface and cool to room temperature, chill several hours or overnight until completely cooled and set."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 each",
+    "calories": "132 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "4 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "64 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "11 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz whole milk (1 cup)",
+    "3 oz granulated sugar (1/3 cup plus 1 tablespoon)",
+    "1/4 teaspoon table salt",
+    "1/2 vanilla bean (split)",
+    "1 egg",
+    "2 yolks",
+    "3/4 oz corn starch (2 tablespoons)",
+    "4 oz semi sweet chocolate (chopped)",
+    "1 oz unsalted butter (2 tablespoons)",
+    "2 teaspoons dark rum (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

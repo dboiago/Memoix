@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Beef, Red Pepper, and Mushroom Skewers",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a mortar and pestle, crush the pepper, coriander, and cumin to a chunky powder. Add the cilantro roots, garlic, red pepper, and salt, and pound to a rough paste. Work in the oil and vinegar, mashing it all well together. Massage this mixture into the beef chunks and let it come to room temperature, covered. (Alternatively, you may prepare ahead to this point and chill until ready to proceed.)",
+      "Prepare a medium-hot bed of hardwood coals.",
+      "Thread meat and vegetables alternately on bamboo or metal skewers. Grill, turning to brown all sides.",
+      "Slip off skewers and toss with chopped cilantro before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Roots (about 1/2 Tablespoon)",
+        "unit": null,
+        "notes": "if available, minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "alt: 2 garlic scapes, minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flavorful Hot Red Pepper",
+        "unit": "tsp",
+        "notes": "like New Mexico chile or Aleppo pepper",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tri-tip Beef Roast (about 2 Pounds)",
+        "unit": null,
+        "notes": "cut into 1-inch chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "large",
+        "notes": "cut in 1-inch bits",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "oz",
+        "notes": "similar size as pepper and beef, halved or quartered",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves and Stems",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "360bdf47970961b1bf84d1253f9922728f56ec08032655802bc41ff52fe7eb98",
+    "lineage_hash": "7cdee7cb28e569e2567a71b0a1ddc476f24a5bc801e8fd46fbf9efe75da3243e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/beef-red-pepper-mushroom-skewers/",
+    "fetchedAt": "2026-08-03T03:19:49.056Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/beef-red-pepper-mushroom-skewers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

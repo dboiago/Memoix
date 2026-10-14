@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Coffee House Egg Sandwich",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Divide the softened butter into small cubes and transfer to a mixing bowl.",
+      "Using a whisk, cream the butter thoroughly until it changes color to a pale yellow. This will incorporate air into the butter, making the sandwiches light and fluffy.",
+      "Chop up the boiled eggs into fine pieces, and add them to the butter.",
+      "Add in the salt and pepper. The latter is the only flavouring used in this recipe. So make sure that the pepper is freshly ground.",
+      "Mix all the ingredients together till the butter and egg yolks combine to form a creamy spread.",
+      "Take 50 g of this filling spread it evenly between two slices of bread.",
+      "Trim the edges, cut diagonally into triangles, and the sandwiches are ready to eat!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "boiled and peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": "freshly crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7a59cb0373d79eef969daa6dfce074346d6374e254de6d119a9033f5c1b92f7",
+    "lineage_hash": "90fe0243f2f364a5c2ebad92f3e564342385f5f8d2a3fc8059519963712ec9b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/coffee-house-egg-sandwich",
+    "fetchedAt": "2026-08-01T19:04:55.442Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/coffee-house-egg-sandwich",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,221 @@
+{
+  "recipe": {
+    "name": "Chocolate Crémeux and Passion Fruit Sorbet",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blitz all ingredients for the passion fruit sorbet except the xanthan gum until smooth",
+      "Blend in the xanthan gum until the mixture thickens",
+      "Place the sorbet into pacojet jugs and freeze until solid, or, if using an ice cream maker, chill overnight",
+      "Churn before serving and place sorbet into a piping bag",
+      "Fill the silicone canelé moulds with water, and place toothpicks inside each mould. Freeze until solid",
+      "Once frozen, dip each canelé-shaped ice cube in melted white chocolate, so you have an even coat of chocolate all around the outside of each ice cube. Transfer each ice cube to an oven tray lined with baking paper. Let the water melt at room temperature, then remove the toothpick and pour off the water",
+      "Warm the top of a small knife over a flame, then poke a small hole at the bottom of each white chocolate shell",
+      "Fill the white chocolate shells with passion fruit sorbet through the hole. Keep them in the freezer until ready to serve",
+      "Add all ingredients for the chocolate crémeux to a Thermomix except for the cocoa butter and the panko. Cook the mixture until it reaches 83°C. Alternatively, blend the ingredients together and then cook in a pan, stirring constantly, until it reaches 83°C",
+      "Divide the mixture between the silicone dome moulds and freeze until solid",
+      "Once frozen, dip the domes in the red cocoa butter",
+      "Place the dipped chocolate domes on a baking paper-lined tray to defrost, then keep them in the fridge until ready to serve",
+      "For the crystallised chocolate crumb, chop the chocolate into small pieces, roughly 1 cm in size",
+      "Line an oven tray with a silicone baking mat",
+      "Melt the water and sugar together into a syrup. Cook the syrup until it reaches 135°C, then immediately add in the chocolate and stir everything quickly with a whisk. After about 10 seconds, the chocolate will transform into a crumb. Immediately, carefully pour the hot crumb onto the silicon mat, then allow it to cool completely",
+      "Once cool, stir in the flaky sea salt",
+      "To assemble this dish, first garnish each plate with some chocolate crumb. Place the white chocolate base of the mushroom on the plate",
+      "Gently press a few pieces of panko onto each red mushroom top, then place it onto the white chocolate base",
+      "Garnish the plate with flower petals, blackberries and slivers of radish and cucumber"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Passion Fruit Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cocoa Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": "fresh, slivers of radish and cucumber",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "dehydrated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b6928b22e037cfacd8df0b7e680844baa800baff903283261ff263097669449",
+    "lineage_hash": "4834c9fcf3869fdc1cb5ea783bde0f1f80a48f07dc7184437167596c3099299d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cremeux-passion-fruit-sorbet-recipe",
+    "fetchedAt": "2026-08-02T08:12:21.310Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cremeux-passion-fruit-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

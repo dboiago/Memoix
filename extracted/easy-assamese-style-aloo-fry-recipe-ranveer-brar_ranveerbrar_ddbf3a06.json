@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Assamese Style Aloo Fry (असमिया स्टाइल आलू फ्राई)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pan, add nigella seeds and sautÃ© for a minute.",
+      "Add broken dry red chilli, garlic and onion slices, sautÃ© for 2-3 minutes.",
+      "Now add the green chilles and potatoes and mix.",
+      "Season with salt and turmeric powder, mix well.",
+      "Cover it with a lid and let it cook for 12-15 minutes.",
+      "Remove and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": "broken",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Potatoes",
+        "unit": "g",
+        "notes": "cut into quarters",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9246675ac8264b64c9b551707e72119d1e228abac8bb10d0f66073b8c90b31d6",
+    "lineage_hash": "6bda1cdb9644505e32fe443a40f3f9bf8d4d620687e3c676f6f36f633c114352"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/assamese-style-aloo-fry/",
+    "fetchedAt": "2026-08-02T02:24:44.115Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/assamese-style-aloo-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

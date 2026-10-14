@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Devil in the Moonlight",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then double strain into a rocks glass filled with a large ice cube, and garnish.",
+      "Mango-Infused PiscoPeel and chop 1 large mango. Add the fruit to a sous vide bag or zip-seal plastic bag with one 750 ml bottle of pisco (Drastic Measures uses La Diablada). Seal and place in a water bath with an immersion circulator set at 120 degrees F for 4 hours. (Alternately, infuse in a sealed container at room temperature for 4 to 5 days until desired flavor is reached.) Strain and bottle for use within 1 month.",
+      "Cinnamon SyrupIn a saucepan, combine sugar, water, cinnamon stick pieces, and salt. Simmer over medium heat until the sugar has dissolved, then allow to cool. (If using an immersion circulator, place the sous vide bag in a 140 degrees F water bath for 2 hours.) Strain and bottle for use. Keeps refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango-infused Pisco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Floral-forward Gin",
+        "unit": "oz",
+        "notes": "Drastic Measures uses Citadelle",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano Bianco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "broken into pieces",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2bb3a7adc40f0ede1655e389224eba68fb7c179a3763990a8ac4d0e3698cf0a4",
+    "lineage_hash": "064db8f79f6785dd953bd0896b7d3f89e976a1dec56cd6661c1c4b98b140a0ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/devil-in-the-moonlight-tropical-pisco-cocktail/",
+    "fetchedAt": "2026-08-03T22:23:22.357Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/devil-in-the-moonlight-tropical-pisco-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

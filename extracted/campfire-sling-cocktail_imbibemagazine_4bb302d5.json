@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Campfire Sling Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in an Old Fashioned glass with a large piece of ice, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": "Water Grill uses 100-proof rye, such as Rittenhouse",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "168eac2dccf8366a4dfdc206f9a15e293fcb6e7db8d4f44054b2d29524dbfc68",
+    "lineage_hash": "dd239e59a383923c4062816a3fe2dac6779033408e812a4535b9ac4b4ead0cad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campfire-sling-cocktail/",
+    "fetchedAt": "2026-08-03T19:40:09.233Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campfire-sling-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

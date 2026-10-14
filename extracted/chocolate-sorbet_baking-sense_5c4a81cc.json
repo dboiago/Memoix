@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Chocolate Sorbet",
+    "time": "8 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "96",
+      "carbohydrateContent": "24",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a saucepan, combine 20 oz water, 8 oz granulated sugar and ⅛ teaspoon table salt. Whisk in 4 oz dutch process cocoa powder. Heat over medium and stir until the sugar is melted and there are no lumps of cocoa. Turn up the heat and allow the mixture to come to a full boil. Remove the pan from the heat. Stir in 2 teaspoons dark rum. Pour the mixture into a container with a lid.",
+      "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+      "Run in your ice cream machine according to the manufacturer's directions.",
+      "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "2 ½ cups",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c8b39a86226e2f2a0c7d61e5c05cc2c9224293a63f3d83e052f4ad71417180d1",
+    "lineage_hash": "b92fb0e706418bf6158bef05ff40e44ce86df864b2a6728c7e1d88d4bef24676"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/08/19/dark-chocolate-sorbet/",
+    "fetchedAt": "2026-08-02T02:58:19.879Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/08/19/dark-chocolate-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Chocolate Soufflé",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare all the ingredients.",
+      "Increase the height of the ramekin by attaching a strip of greaseproof paper, folded in half, all the way around.",
+      "Whisk the egg whites until stiff peaks form with a pinch of fine salt.",
+      "Dissolve the instant coffee in 2 tbsp of water or use strong espresso style coffee.",
+      "Place the melted chocolate in a mixing bowl.",
+      "Add the egg yolks...",
+      "...and the coffee.",
+      "Whisk well to combine.",
+      "If the cream is slightly grainy, it doesn't matter.",
+      "Add the whipped egg whites...",
+      "...and fold in gently using a maryse spatula.",
+      "Pour this preparation into the ramekin.",
+      "Store in the fridge for at least 2 hours.",
+      "Just before serving, gently remove the paper.",
+      "Dust the surface of the soufflé with bitter cocoa powder...",
+      "...and a little icing sugar. Keep in the fridge until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Couverture Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soluble Coffee",
+        "unit": "tsp",
+        "notes": "alt: 10cl of strong coffee",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6039e83236141c8ea54f2cb0f8b02ef6755f83b021a71da73f6f1996ad40dd5",
+    "lineage_hash": "971e8acc235d4d12f47171398dba918ceb90ef481f52a21873e7e2c56be23c93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-souffle.html",
+    "fetchedAt": "2026-08-02T14:56:29.145Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-souffle.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

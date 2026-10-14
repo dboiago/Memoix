@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Coconut Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tumbler",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to an ice-filled shaker, shake, and strain over ice in a tumbler.",
+      "Coconut Cream Add 6 oz. simple syrup and 12 oz. Coco Lopez cream of coconut to a blender. Blend on high for 1 minute. Store in the refrigerator.",
+      "Grapefruit Tincture Roughly slice 4 grapefruits into 1/8-inch wheels. Place into a clean, sealable vessel with 1 liter of vodka and infuse for one hour. Fine strain and then gently press the grapefruit wheels to extract all the juice. Store in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Tincture",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e13217ec964cce2f1ef106ef508668864c82ec9fd0af9ab447a77da2d8f4ead0",
+    "lineage_hash": "7b6b803b55a0e0cfdf4a42f77fd83028677e9f6766a2b80307d6e6a84adfa096"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-margarita-from-puesto/",
+    "fetchedAt": "2026-08-03T22:05:41.362Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-margarita-from-puesto/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

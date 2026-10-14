@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Crispy Breaded Tofu Steaks",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "503",
+      "carbohydrateContent": "30",
+      "fatContent": "31",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "Drain the tofu, and cut into your steak sized pieces. I like cutting it into two large steaks by slicing the block it in half lengthwise, but you could cut it into more pieces for smaller crispier tofu.",
+      "Once cut, lay the tofu pieces on a clean dishtowel, and then wrap them up in the towel. Put a cutting board on top, and balance something heavy, such as a few cans on top of that. This is how you press the tofu to help release excess water. Let the tofu press for 10 to 30 minutes, the longer you press it, the drier and more firm the steaks will be.",
+      "When you are ready to make your tofu steaks, mince the garlic cloves and add them to a large flat bowl that is big enough to fit one of your tofu steaks.",
+      "Add the remaining sauce ingredients to the garlic bowl: the tomato paste, dijon mustard, maple syrup, soy sauce, water, and pepper, and mix together.",
+      "In a separate dish that is also big enough to fit the tofu steak, add the breadcrumbs.",
+      "Dip the tofu steaks in the tomato paste mixture, and use a spoon or fork to help spread a thick layer of the sauce on the tofu. Now dip the sauced tofu steak into the breadcrumbs and use your hand to help pat the breadcrumbs onto the tofu. Repeat with remaining tofu pieces.",
+      "Heat the oil in a frying pan over medium heat. When hot, carefully fry the tofu pieces until they are golden brown on both sides, and heated through. About 3 to 6 minutes per side. The breading can be a little fragile and falls off easily, so I found the best technique was to use a large spatula (and not tongs) for flipping. Just be gentle when handling the tofu.",
+      "For presentation, cut the tofu on an angle and serve with a side of your favourite BBQ sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (350g) Extra-firm Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "C",
+        "notes": "gluten-free breadcrumbs if preferred, plus more if needed *see notes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "or enough to fry the tofu",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Side of Your Favourite BBQ Sauce for Dipping",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "796acdc57e92401b3c53750f7d552c1b0d9bb3a3e04a022b15e7589bbc210d89",
+    "lineage_hash": "5ba31799d16f59491855473e45724583631cace16af89bcb829f8a3478f9e05f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-breaded-tofu-steaks/",
+    "fetchedAt": "2026-08-01T22:28:51.094Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-breaded-tofu-steaks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

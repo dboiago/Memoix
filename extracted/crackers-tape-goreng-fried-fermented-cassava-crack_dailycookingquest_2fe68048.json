@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Crackers Tape Goreng (Fried Fermented Cassava Crackers)",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together mashed fermented cassava and cinnamon powder. Divide into 8 portions.",
+      "Sandwich 1 portion of the fermented cassava with 2 crackers. Repeat until you get 8 sandwiches. Set aside.",
+      "Combine all coating batter ingredients in a mixing bowl and mix well.",
+      "Coat each sandwich with the coating batter and deep fry in hot oil until crispy and golden brown. Drain on wire rack/paper towel.",
+      "Serve immediately with hot tea or hot coffee."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Square Crackers",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Cassava (indonesian: Tape)",
+        "unit": "g",
+        "notes": "mashed",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk kayu manis",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enough Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coating Batter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "g",
+        "notes": "Indonesian: tepung terigu",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": "Indonesian: tepung beras",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f9afe38ed9b2a23528def50173a423049ffc2d3f3d9a5258fcaf9c52c49321c",
+    "lineage_hash": "e571c0979bd600af18ef691776fdfc36a117fc0d26c9827327903622001274be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/crackers-tape-goreng-fried-fermented-cassava-crackers.html",
+    "fetchedAt": "2026-08-02T08:12:59.688Z"
+  },
+  "rawSource": "https://dailycookingquest.com/crackers-tape-goreng-fried-fermented-cassava-crackers.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

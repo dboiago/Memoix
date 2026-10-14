@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Crispy Shrimp and Lardo Tostadas",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and devein the shrimp. Cut the bread slice into 4 rectangular pieces (4” x 1 1/2”). Place one shrimp on each piece of bread and roll up everything in 2 slices of lardo. Repeat with the remaining shrimp to make 4 “tostadas.” Bake for 4-5 minutes at 425°F: the lardo will dissolve and be absorbed into the bread. Remove from the oven and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slices Lardo",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jumbo Shrimp",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Slice Sandwich Bread",
+        "unit": null,
+        "notes": "crust removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "967772f4d04966c962aedf249464dc41b8ae63f71b5921231c7879916d7c54f5",
+    "lineage_hash": "d4a629fabe1c654653c9b14f6ba2fa307bb6706bf76fa85181d2295a5905d050"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/crispy-shrimp-and-lardo-tostadas",
+    "fetchedAt": "2026-08-02T00:07:07.476Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/crispy-shrimp-and-lardo-tostadas",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

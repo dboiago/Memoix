@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chinasichuanfood.com/braised-tofu-with-chinese-mushroom/",
+  "slug": "braised-tofu-with-chinese-mushroom_chinasichuanfood_0455341a",
+  "title": "Braised Tofu with Chinese Mushroom",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:01:11.070Z",
+  "ldName": "Braised Tofu with Chinese Mushroom",
+  "ldTime": "PT18M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT8M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese cuisine",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Braised, mushroom, tofu",
+  "ldIngredientsRaw": [
+    "1  box of regular firm tofu",
+    "3-5  dried shiitake mushroom ( , re-hydrated)",
+    "2  garlic cloves ( , sliced)",
+    "1/2  thumb ginger ( , sliced)",
+    "2  scallions ( , cut into 1 inch pieces)",
+    "1/4 cup of oil",
+    "1 tbsp. light soy sauce",
+    "1 tsp. dark soy sauce",
+    "1 tsp. rock sugar",
+    "1/2 tbsp. sesame oil",
+    "1 tsp. black vinegar",
+    "1 tbsp. oyster sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Firstly cut tofu into triangle or square (around 1.5cm thick) and then fry until both sides become golden brown. And then transfer out.",
+    "Heat oil and fry garlic, scallion and ginger pieces over slow fire until aroma.",
+    "And then fry mushroom slices for 2-3 minutes, return fried tofu, add all the seasonings and simmer for 4-5 minutes. Add fresh sweet basil leaves in the last minute."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "417 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "11 g",
+    "fatContent": "36 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "759 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 box of regular firm tofu",
+    "3-5 dried shiitake mushroom  , re-hydrated",
+    "2 garlic cloves  , sliced",
+    "1/2 thumb ginger  , sliced",
+    "2 scallions  , cut into 1 inch pieces",
+    "1/4 cup of oil",
+    "[Seasonings]",
+    "1 tbsp. light soy sauce",
+    "1 tsp. dark soy sauce",
+    "1 tsp. rock sugar",
+    "1/2 tbsp. sesame oil",
+    "1 tsp. black vinegar",
+    "1 tbsp. oyster sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

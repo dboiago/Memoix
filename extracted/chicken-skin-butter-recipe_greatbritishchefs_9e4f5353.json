@@ -1,0 +1,65 @@
+{
+  "recipe": {
+    "name": "Chicken Skin Butter",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a small sharp knife, lay the skins skin-side down on a board and scrape off any excess fat and remaining meat. You should be left with just the thin skin",
+      "Lay the skins stretched out flat on a greaseproof lined baking sheet and sprinkle with a pinch of flaky sea salt",
+      "Lay a second sheet of greaseproof paper over the skins then weigh down with another tray. Place in the oven for 10–15 minutes until golden and crisp",
+      "Place one of the skins in a food processor and pulse until broken up. Add the butter and a pinch of salt and blend until incorporated",
+      "Using a plastic spatula, scrape all the fat from the baking tray into the blender and blend again until emulsified",
+      "To serve, crumble part of the remaining chicken skin over the butter",
+      "Store any leftover chicken skin in an airtight container in a cool dark place for up to 1 week. The butter will keep for 3 days in the fridge, or wrap it in cling film and freeze"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Skins",
+        "unit": null,
+        "notes": "from 2 large thighs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5e5a862b50b30624236a32b9ddec5c355c0092b8b34d0fc641affa78fffd553",
+    "lineage_hash": "e886b46520daa1cb5461c2995e6dc0166685eb5a633765dd01782ce7c8510452"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-skin-butter-recipe",
+    "fetchedAt": "2026-08-03T10:34:26.563Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-skin-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

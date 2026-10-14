@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Frozen Spicy Mango Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Chamoy",
+      "Tajín"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drip the inside rim of the glass with chamoy. Add all of the ingredients to a blender, add ice as needed, and blend for 30 seconds or until smooth. Pour into the prepared glass and sprinkle with tajín."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Mango Sorbet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca4ba6f6553e1dd5990cca9106874553003644501853251866671ae8057eaddb",
+    "lineage_hash": "6db8fa1e2476c3e57069934844884ffd4e3941b0f8232c54cf49c9c5ddd6612d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cult-classic-frozen-mango-cocktail/",
+    "fetchedAt": "2026-08-04T00:46:01.160Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cult-classic-frozen-mango-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

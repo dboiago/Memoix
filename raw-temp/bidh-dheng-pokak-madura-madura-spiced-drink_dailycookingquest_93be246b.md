@@ -1,0 +1,11 @@
+Each region in Indonesia has its own specialized drink, some are tea based, some are spice based, some has milk in them, and some even has raw eggs à la egg nog! Some of these are touted to have health benefits, especially ones categorized as _jamu_ (traditional herbal drink), but even if the claim is dubious, they are all unique and delicious on its own. It is pretty sad that our traditional drinks are slowly falling out of fashion and replaced by the ubiquitous tea and coffee houses, serving the exact same drink that one can find the world over. It is only in a more traditional shop that one can still find this kind of traditional drinks.
+
+![Bidh-Dheng Pokak Madura - Madura Spiced Drink](https://dailycookingquest.com/img/2014/06/bidh_dheng_pokak_madura_hu33954d08a289d400e4db64dacb73f6da_123296_1200x1800_resize_q75_lanczos.jpg)
+
+Bidh-Dheng Pokak Madura - Madura Spiced Drink
+
+In the spirit of not letting these drinks die a horrible death, I have tried to introduce them here, ranging from [_wedang jahe_](https://dailycookingquest.com/wedang-jahe.html), [_wedang teh susu_](https://dailycookingquest.com/wedang-teh-susu-jahe-ginger-milk-tea.html), [_wedang ronde_](https://dailycookingquest.com/wedang-ronde-glutinous-rice-balls-in-ginger-syrup.html), [_wedang jahe sereh_](https://dailycookingquest.com/wedang-jahe-sereh-ginger-lemongrass-tea.html), [_sari asam jawa_](https://dailycookingquest.com/sari-asam-jawa-tamarind-juice.html), [_kopi lethok_](https://dailycookingquest.com/kopi-lethok-coffee-and-coconut-milk.html), to [_bajigur_](https://dailycookingquest.com/bajigur-coffee-and-coconut-milk-with-toddy-palm-fruit.html). Now I give to you _bidh-dheng pokak_, a spice based drink from Madura. The most prominent spice in this drink is ginger, which will warm you up in colder weather. Other spices that made up this drink are: cinnamon, cloves, star anise, black pepper, lemongrass, and pandan leaves. If you have access to all the ingredients, do give this lovely drink a try. :)
+
+![Bidh-Dheng Pokak Madura - Madura Spiced Drink](https://dailycookingquest.com/img/2014/06/bidh_dheng_pokak_madura3_hue43c5c5099d92428023c924729f0f57b_109934_1200x1800_resize_q75_lanczos.jpg)
+
+Bidh-Dheng Pokak Madura - Madura Spiced Drink

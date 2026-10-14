@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Deconstructed Chocolate Brownie",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven at 180°C/gas mark 4. Grease and line a large baking tray (or two medium ones) with baking parchment",
+      "For the brownies, melt the dark chocolate with the butter in a large bowl placed over barely simmering water (bain marie)",
+      "In a separate bowl, whisk together the eggs and the sugar until light and foamy. Stir in the melted chocolate and butter along with the vanilla, then gently fold in the flour and pecans",
+      "Pour into the lined baking trays and bake for 13 minutes, increasing the temperature to 190°C/gas mark 5",
+      "The brownies should still be moist in the middle when removed from the oven; leave to cool in the tin",
+      "For the white chocolate cream, make a ganache by boiling the double cream, then stirring in the soaked gelatin and white chocolate, until the chocolate has melted and the mixture is smooth",
+      "Let cool to room temperature, before gently folding through the whipped cream",
+      "For the milk chocolate sauce, boil the cream and stir in the milk chocolate until melted and smooth. Allow to cool, then check for consistency; if too thick, add a little milk if required to loosen the sauce",
+      "To serve, cut the cooled brownie into squares and place two per plate. Pipe on some of the white chocolate cream and drizzle over some of the milk chocolate sauce. Garnish with mint leaves, raspberries and chocolate decorations as desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "900",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "540",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "900",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "720",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "540",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": "lightly whipped",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "softened in a bowl of water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Decorations",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "085967e1783df8e5aff5f87d28815db2fda5a644da53ee0a51bcc4de50d87e15",
+    "lineage_hash": "3f399c21a58790f32bf30b2b54ff31a6695ab6bb5e8d710ea2f83bb348934814"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/deconstructed-chocolate-brownie-recipe",
+    "fetchedAt": "2026-08-03T14:51:54.385Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/deconstructed-chocolate-brownie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

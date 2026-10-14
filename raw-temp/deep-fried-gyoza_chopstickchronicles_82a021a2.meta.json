@@ -1,0 +1,53 @@
+{
+  "url": "https://www.chopstickchronicles.com/avocado-shrimp-deep-fried-gyoza/",
+  "slug": "deep-fried-gyoza_chopstickchronicles_82a021a2",
+  "title": "Deep Fried Gyoza",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T20:20:49.500Z",
+  "ldName": "Avocado and Prawn filled deep fried gyoza 揚げ餃子",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetiser, Main Dish, Side Dish",
+  "ldKeywords": "#avocado and prawn filled deep fried gyoza, #deep fried gyoza",
+  "ldIngredientsRaw": [
+    "6  prawn",
+    "1/2  avocado",
+    "pinch  of salt and pepper",
+    "1/2 tbsp lemon juice",
+    "12  gyoza wrappers",
+    "vegetable oil for deep frying"
+  ],
+  "ldInstructionsRaw": [
+    "Avocado and Prawn filling",
+    "Wrap gyoza",
+    "Deep frying the gyoza"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "71 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "2 g",
+    "fatContent": "1 g",
+    "cholesterolContent": "9 mg",
+    "sodiumContent": "132 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Avocado and Prawn filling]",
+    "▢ 6 prawn",
+    "▢ 1/2 avocado",
+    "▢ pinch  of salt and pepper",
+    "▢ 1/2 tbsp lemon juice",
+    "[Gyoza wrappers]",
+    "▢ 12 gyoza wrappers",
+    "▢  vegetable oil for deep frying"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

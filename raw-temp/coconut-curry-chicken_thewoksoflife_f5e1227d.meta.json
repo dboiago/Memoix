@@ -1,0 +1,67 @@
+{
+  "url": "https://thewoksoflife.com/coconut-curry-chicken/",
+  "slug": "coconut-curry-chicken_thewoksoflife_f5e1227d",
+  "title": "Coconut Curry Chicken",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T02:15:34.920Z",
+  "ldName": "Coconut Curry Chicken",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Chicken",
+  "ldKeywords": "coconut curry chicken",
+  "ldIngredientsRaw": [
+    "2 tablespoons oil",
+    "3 tablespoons curry powder",
+    "1  large onion ((diced))",
+    "3 cloves garlic ((smashed))",
+    "14 ounces coconut milk ((400 ml))",
+    "2 cups water or chicken broth ((475 ml))",
+    "2  plum tomatoes ((diced))",
+    "2  medium potatoes ((peeled and cut into bite-sized chunks))",
+    "salt and pepper ((to taste))",
+    "1 teaspoon sugar",
+    "4  boneless skinless chicken thighs",
+    "salt and white pepper ((black pepper may be substituted))"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a large skillet or Dutch oven over low heat, and immediately add the curry powder. Let it cook in the oil for 1-2 minutes, making sure not to burn it. In the meantime, dice the onion and smash the garlic. Add them to the pot, turn the heat up to medium, and give everything a stir.",
+    "Stir in the coconut milk and water (or chicken broth). Bring to a boil. While you’re waiting for that, dice the tomatoes and prep the potatoes. Add them both to the pot and season with salt, then add the sugar. Cover the lid and simmer for 10-15 minutes, until the potatoes are cooked through.",
+    "Cut the chicken thighs into chunks and season with salt and pepper. Once the potatoes are cooked through, add the chicken to the pot and give everything a stir. Cover the lid and cook for 10 minutes. Adjust seasoning to taste, and serve with rice!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "328 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "19 g",
+    "fatContent": "22 g",
+    "saturatedFatContent": "14 g",
+    "cholesterolContent": "72 mg",
+    "sodiumContent": "672 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons oil",
+    "▢ 3 tablespoons curry powder",
+    "▢ 1 large onion (diced)",
+    "▢ 3 cloves garlic (smashed)",
+    "▢ 14 ounces coconut milk (400 ml)",
+    "▢ 2 cups water or chicken broth (475 ml)",
+    "▢ 2 plum tomatoes (diced)",
+    "▢ 2 medium potatoes (peeled and cut into bite-sized chunks)",
+    "▢ salt and pepper (to taste)",
+    "▢ 1 teaspoon sugar",
+    "▢ 4 boneless skinless chicken thighs",
+    "▢ salt and white pepper (black pepper may be substituted)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

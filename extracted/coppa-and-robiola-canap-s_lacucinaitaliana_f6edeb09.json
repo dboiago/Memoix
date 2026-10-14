@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Coppa and Robiola Canapés",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using different sized cookie cutters (ours are flower-shaped, measuring 3”, 2 1/2”, and 1”), cut out each piece of bread. Toast the bread in a pan with the butter for 30 seconds.",
+      "Place a slice of coppa, the robiola, and some crumbled pink peppercorn on the large and medium slices. Stack the slices and top with the smallest slice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coppa",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Robiola Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50f573546feea19404fdf8845fd50dad50d1fbfac4eb736158e3775fde4bcd4c",
+    "lineage_hash": "889cbbddf8136c8c2734958de87ecd4781aa57afd2b8bf7ecf1fad4bfc3d906a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/coppa-and-robiola-canapes",
+    "fetchedAt": "2026-08-03T05:35:10.697Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/coppa-and-robiola-canapes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

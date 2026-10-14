@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Bubbling Bacon Butter Beans",
+    "time": "1 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 300 degrees F.",
+      "Heat 2 tablespoons of the olive oil in a large saucepan over medium heat until it sizzles when a piece of bacon is added. Add the rest of the bacon, the shallots, crushed garlic, and sage and cook, stirring, until the shallots are just translucent, 2 to 4 minutes.",
+      "Add the chicken stock and bring to a boil, Add the beans, bring to a simmer, and simmer for 10 minutes.",
+      "Meanwhile, heat the remaining 1 tablespoon olive oil in a small skillet over high heat until very hot. Add the tomatoes and saute for 2 minutes, then add the grated garlic and oregano and cook until most of the moisture has evaporated and the tomatoes are crackling.",
+      "Stir the tomatoes into the bean mixture, along with the prosciutto fat. Season with salt and pepper and pour into a 2-quart casserole or baking dish.",
+      "Transfer to the oven and bake for 20 minutes, until the beans are velvety and creamy. If the beans start to look dry, add a splash of water.",
+      "Stir the parsley into the beans, adjust the acidity with white wine vinegar as necessary, and drizzle generously with olive oil. Serve, or keep warm in a low oven until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus additional for drizzling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick-sliced Bacon",
+        "unit": "slices",
+        "notes": "cut into 1/4-inch-wide strips",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed and peeled, plus 1 tablespoon grated garlic (use a Microplane) or garlic mashed to a paste",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "alt: canned low-sodium broth",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Butter Beans",
+        "unit": "C",
+        "notes": "alt: two 15-ounce jars or cans butter beans, drained, rinsed if canned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poni Diced Tomatoes (or Other Tetra Pak Tomatoes)",
+        "unit": "C",
+        "notes": "drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto Fat",
+        "unit": "C",
+        "notes": "or additional bacon, finely, diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea",
+        "unit": null,
+        "notes": "alt: kosher salt and freshly ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "finely, chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df74f000f344c4d0e5c2c613bca2164e66ec4cadfcd68f6c56e483409adb80da",
+    "lineage_hash": "0a4c0d55a9265c817a2ec02024470954ad1230154449571e0a23d3c4813c51e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bubbling-bacon-butter-beans/",
+    "fetchedAt": "2026-08-03T03:20:11.855Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bubbling-bacon-butter-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

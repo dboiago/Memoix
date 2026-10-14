@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Vegan Turkey Roast",
+    "time": "1 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "234",
+      "carbohydrateContent": "15",
+      "fatContent": "2",
+      "proteinContent": "39"
+    },
+    "directions": [
+      "For the crispy skin and to finish the roast:"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Package Firm Tofu",
+        "unit": null,
+        "notes": "14 oz/ 396 g, Ensure you use 14 oz/396 g of firm tofu. Tofu block sizes can vary, and other types, such as extra-firm or silken tofu, are not ideal and may affect the final result., drained",
+        "amount": "1",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "plus more if needed",
+        "amount": "2",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "White Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth Powder",
+        "unit": "tsp",
+        "notes": "vegetable instant stock mix powder, vegetable bouillon base, or 1 vegetable bouillon cube",
+        "amount": "2",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sage",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Vital Wheat Gluten",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "vegan turkey",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": "crispy skin",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "4",
+        "section": "crispy skin",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "alt: ½ teaspoon salt",
+        "amount": "1½",
+        "section": "crispy skin",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "crispy skin",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "crispy skin",
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Rice Paper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "crispy skin",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "452b9ebac7134ddb470fd45f5f5573ef54cab57ee5ce1cf3387e533376ae3805",
+    "lineage_hash": "0d1110122ba3bb9f79806ff20a91767ae97b07f4f1e9b81a7d374c7ea36f544d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/best-vegan-turkey-roast-perfect-for-thanksgiving/",
+    "fetchedAt": "2026-08-02T00:35:48.673Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/best-vegan-turkey-roast-perfect-for-thanksgiving/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

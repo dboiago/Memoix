@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Dandelion Salad (Mindeulle Muchim)",
+    "time": null,
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash dandelions well and drain. Remove the tough ends, and cut into small bite sizes. Place them in a large bowl.",
+      "In a small bowl, mix all the sauce ingredients until the sugar is dissolved. Pour over the dandelions, and toss well to mix right before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dandelion Leaves",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "alt: vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru Korean Red Chili Pepper Flakes/powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1228bb665ffd607f664ac78aa652947d7337b47ddfe07d35bad057873d91b8ce",
+    "lineage_hash": "d1908483f8cbd47ac69003f922bc088348e0fdf4bd694361aeb7f5d9e47cf23c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dandelion-salad/",
+    "fetchedAt": "2026-08-01T16:10:53.957Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dandelion-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

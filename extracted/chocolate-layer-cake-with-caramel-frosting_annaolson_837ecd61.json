@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chocolate Layer Cake with Caramel Frosting",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease three 8-inch (20 cm) round cake pans and dust them with flour, tapping out the excess. Line the bottom of each pan with parchment paper.",
+      "Using electric beaters or a mixer fit with the paddle attachment, beat the butter and brown sugar on medium high speed for 3 minutes, until the mixture is fluffy and scraping the sides of the bowl often. Add the eggs one at a time, beating well after each addition. Mix in the vanilla.",
+      "In a separate bowl, sift the flour, cocoa powder, baking powder, baking soda and salt. Add this alternately with the buttermilk, starting and ending with the flour mixture and mixing well after each addition. Scrape the batter into the prepared pans and spread it to level.",
+      "Bake the cakes for 25 to 30 minutes, until a tester inserted in the centre of the cake comes out clean. Allow the cakes to cool for 20 minutes in the pans, and then turn them out on a rack to cool completely.",
+      "For the frosting, heat ½ cup (115 g) of the butter, the brown sugar and the salt in a heavy bottomed saucepot over medium heat, stirring occasionally. Once this mixture comes to a full boil, boil it for 4 minutes, just stirring once or twice. Whisk in the cream and boil one minute more. Remove the pot from the heat and cool for 30 minutes, stirring once or twice.",
+      "Using electric beaters or in a stand mixer fit with the paddle attachment, beat the mixture (it should still feel warm) and add the icing sugar. Continue beating the frosting until it is a little above room temperature (don’t worry if the frosting seems to go a bit grainy – it will smooth out), then add the remaining 1/2 cup (110 g) of butter and the vanilla, beating until smooth and of a spreadable consistency, and still a little warm.",
+      "Place one cake layer onto a plate (having peeled away the parchment paper) and spread a generous dollop of caramel frosting to cover. Place the next cake layer on top, frost and repeat with the final cake layer. Frost the top and then the sides of the cake, swirling the frosting to create an appealing look. Let the cake set for 2 hours uncovered."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "¾",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "2",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2⅓",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Regular Cocoa Powder",
+        "unit": "C",
+        "notes": "not Dutch process",
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "1½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "2",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "2½",
+        "section": "Frosting:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2278d0901f59f7db49e5290bb997563ee4c14f0f43ae7d91e3bf99b1eef3f8cc",
+    "lineage_hash": "b82fe61702b2e6aaf7d30b41d127554f665c4ac7d5338d7d4f2e1664c1b32819"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-layer-cake-with-caramel-frosting/",
+    "fetchedAt": "2026-08-01T18:45:54.400Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-layer-cake-with-caramel-frosting/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

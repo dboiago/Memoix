@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bongeats.com/recipe/chhatur-porota",
+  "slug": "chhatu-r-porota-recipe-by-bong-eats_bongeats_3c18c73c",
+  "title": "Chhatu’r Porota recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:12:44.685Z",
+  "ldName": "Chhatu’r Porota",
+  "ldTime": "PT1H",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT40M",
+  "ldYield": "4 porotas",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "&quot;stuffed paratha recipe&quot;, &quot;sattu recipe&quot;, &quot;stuffed flatbread recipe&quot;, sattu ka paratha",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "75 g atta (Indian whole wheat flour)",
+    "75 g maida (all-purpose flour)",
+    "3 g salt",
+    "7 g sugar",
+    "8 g oil",
+    "90 g warm water",
+    "100 g chhatu (sattu/roasted gram flour)",
+    "70 g onions",
+    "8 g ginger",
+    "4 pcs green chillies",
+    "8 g coriander leaves",
+    "¼ tsp jowan (carom seeds)",
+    "2 tsp achaar",
+    "4 g salt",
+    "7 g sugar",
+    "5 tbsp water",
+    "oil for frying"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Baked Cherry Cheese Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 160Â°C.â¯ Brush a spring form cake pan with butter and line with baking paper.",
+      "For the base, mix the crushed biscuits with cinnamon and melted butter.â¯ Press the mixture evenly into the cake tin base.â¯ Refrigerate.",
+      "For the filling, beat together cream cheese, sugar and vanilla into a smooth mix. Add eggs, one at a time, beating the mixture in between each egg.â¯ Add lemon juice, lemon zest and sour cream and mix again.",
+      "Now fold in the flour.â¯Whisk at low speed till the mixture is smooth.â¯Add the cherries and give a light stir.",
+      "Remove biscuit base from refrigerator and pour the filling mixture evenly over it.",
+      "Bake for about 1 hour 10 minutes until just firm, the center of the cheesecake should be slightly shaky when you tap the cake pan sides.â¯Remove from oven and let cool to room temperature. Refrigerate for at least 4 hours or better overnight.",
+      "Remove 30 minutes before serving.â¯ Slice and place carefully on a serving plate.â¯Sprinkle icing sugar and top with cherries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Base",
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": null,
+        "notes": "crushed to fine crumbs",
+        "amount": "9-10",
+        "section": "Base",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "alt: Normal grain sugar",
+        "amount": "150",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "1",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheese cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "alt: frozen cherries, pitted",
+        "amount": "150",
+        "section": "Cheese cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31c42c4d98c78a127a4f023aad47154e8aea928fdebdb7d1e0b6af74afefcafa",
+    "lineage_hash": "ccb515e8597fa87e9f6dccde4d9bdc226c2b683926c00f534f7460191aac7638"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baked-cherry-cheese-cake/",
+    "fetchedAt": "2026-08-02T19:51:11.652Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baked-cherry-cheese-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

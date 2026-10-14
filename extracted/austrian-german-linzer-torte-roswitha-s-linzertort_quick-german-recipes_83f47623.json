@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Austrian \"German\" Linzer Torte",
+    "time": "9 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift 2 cups flour with salt, baking powder, soda, cinnamon, cloves, and cocoa. Mix well.",
+      "Reserve 1½ cups flour and set aside (for those who like different consistency in the dough).",
+      "Soften margarine and add sugar gradually, mixing well until smooth.",
+      "Beat in eggs with ground nuts.",
+      "Add rum, almond extract, whiskey, vanilla, and lemon juice, blending well together.",
+      "Add spiced dry ingredients alternately with milk.",
+      "On a wooden board, sprinkle lightly with flour and pour spiced mixture onto floured board. Add as much of the reserved flour in small amounts, kneading well, until dough is pliable to work with.",
+      "Set in clean bowl, cover, and refrigerate overnight.",
+      "Preheat oven to 350°F.",
+      "Roll ½ of dough into a rectangle (¼-inch thick) to fit a greased 13x8x2-inch pan and place in pan.",
+      "Spread evenly with jam.",
+      "Roll out remaining dough. Either cut into strips and create the traditional lattice top or use cookie cutters to cut shapes to put on top of jam.",
+      "Brush dough with egg yolk and bake for 40 to 45 minutes or until golden.",
+      "Cool and serve.",
+      "To store, wrap and keep in cool dry place or freeze."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nuts",
+        "unit": "lb",
+        "notes": "1 cup, preferably almond/hazelnut or walnut",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Imitation Rum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whiskey",
+        "unit": "Tbsp",
+        "notes": "alt: brandy",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Margarine",
+        "unit": "lb",
+        "notes": "1 cup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "well beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar Seedless Raspberry Jam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "275a5a77286b461071475f0c42550fcc9637226baa33c9d689e419cae465324c",
+    "lineage_hash": "69b7c8294d3111ddc246bee4afb9f3ddd220de346f6b0d78f553edcfc1017cf9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/linzertorte.html",
+    "fetchedAt": "2026-09-25T21:01:51.462Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/linzertorte.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

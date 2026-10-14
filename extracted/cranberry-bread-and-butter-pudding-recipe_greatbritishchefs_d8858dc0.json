@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Cranberry Bread and Butter Pudding",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the custard. Beat the eggs and sugar together in a bowl until pale and smooth. Add the milk and cream to a pan, heat until simmering then remove from the heat. Pour the hot milk over the eggs and sugar, mixing well as you do so",
+      "Grease an ovenproof dish with some butter. Remove the crusts from the sliced bread and butter all of the slices on one side. Cut the slices in half",
+      "Spread out a layer of the buttered bread to cover the bottom of the dish, slightly overlapping each slice. Sprinkle with a good pinch of mixed spice, some cranberries and some of the white chocolate",
+      "Pour over some of the custard to cover the first layer. Repeat this process to make more layers of both the bread and custard until used up, leaving a little custard for serving. Press down firmly, cover with cling film and leave to set in the fridge overnight to allow the bread to soak up the custard",
+      "For the satsuma and cranberry suzette, begin by segmenting the satsumas. Add the sugar to a non-stick pan and heat until a golden caramel forms. Remove from the heat and add the butter",
+      "Shake the pan to mix in the butter, add the orange juice and return to the heat. Bring to the boil and reduce until it reaches the consistency of a caramel sauce. Stir in the cranberries and satsuma segments and warm through",
+      "Remove the bread and butter pudding from the fridge and sprinkle over some Demerara sugar. Bake for 30-40 minutes, or until it feels firm when pressed lightly - do not overcook it",
+      "Remove from the oven and spoon over some warm satsuma and cranberry suzette. Serve with custard, perhaps flavoured with some cloves for an extra wintery flavour"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stale Bread",
+        "unit": "slices",
+        "notes": "white",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "semi-dried",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Buttons",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Satsumas",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "semi-dried",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e1c39d647446b8897ad1083ead9108edf4db73297a90c4a597390f9cc16b28f",
+    "lineage_hash": "bfee5f1e1715d2e46c98c91f226ecc4f8ffaf5ddf30e035e4c8e0b1c2a906e04"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranberry-bread-butter-pudding-recipe",
+    "fetchedAt": "2026-08-03T21:18:35.303Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranberry-bread-butter-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Champs Élysées Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Champagne",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker. Add ice and shake to chill. Fine strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "add917fa9ee8213608b2bbaed566a4c0b720cbde1591ca27d5ace4a94e25b7cb",
+    "lineage_hash": "57dacd12041fa427f4f7c04f5ac55c175014e0fe272b8b5c9cc6e88e719dd4d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/classic-champs-elysees-cocktail/",
+    "fetchedAt": "2026-08-03T23:49:12.768Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/classic-champs-elysees-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

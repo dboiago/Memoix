@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chinese Fa Gao (Fortune Cake)",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "440",
+      "carbohydrateContent": "103",
+      "fatContent": null,
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Melt brown sugar with hot water and set aside.",
+      "Combine flour with baking powder. Add the sugar water. Stir the batter in one direction for around 3-5 minutes. The longer; the better.",
+      "Pour batter to molds. I will recommend using a scoop and pour the batter directly to the center of the molds from higher places and let the batter flat by itself. Set aside.",
+      "Bring enough water to boil in a large wok or deep pot, set up the steamer and place the batter in when the water begins to boil. I would suggest add more water with the level just below the moulds.",
+      "Cove the lid and continue steam for around 20 to 25 minutes. The blossoming should occur around 10 minutes. So in the first 10 minutes, use high fire and you can choose to slow down your fire slightly or use high fire during the whole process (depending on how much water you added for steaming and do not burn your wok)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "004c8e9d794b25e9d5cc6284f643e120c8cb60d091cc3cc9b295533495fff2e2",
+    "lineage_hash": "fafcfb28ba58deabd0ff1816beafe8593be1c46153d4d720ff52f8ad520c0e10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-fa-gao-fortune-cake/",
+    "fetchedAt": "2026-08-01T23:18:29.739Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-fa-gao-fortune-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

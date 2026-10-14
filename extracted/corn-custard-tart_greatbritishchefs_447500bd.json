@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Corn Custard Tart",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the flour, sugar, and salt. Cut in butter until mixture resembles coarse crumbs. Stir in egg yolk and add ice water gradually until it forms a dough. Chill for 1 hour",
+      "Roll out the dough, and place into a 23 cm tart tin. Chill again for 30 minutes",
+      "Blind bake at 190°C for 20 minutes using baking beans or weights, then remove the weights and bake for another 5–10 minutes until golden. Let cool",
+      "In a blender, purée the corn kernels with the heavy cream until smooth. In a separate bowl, whisk together the eggs and sugar, then combine with the corn mixture until well blended",
+      "Pour the corn custard filling into the pre-baked tart shell",
+      "Bake the tart for about 30 minutes, or until the custard is set and the top is lightly golden",
+      "Allow the tart to cool before serving. It can be enjoyed at room temperature or chilled, based on your preference"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cold. cut into pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "502d4fdfbc9745c81167e66eeba270d701c9e7b77586a7594b4cd425d122e15d",
+    "lineage_hash": "4637ea11587137f5447d3c8c7d4898ee48a202f3450ca20a0060b370357d91a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/corn-custard-tart-recipe",
+    "fetchedAt": "2026-08-02T11:05:19.894Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/corn-custard-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

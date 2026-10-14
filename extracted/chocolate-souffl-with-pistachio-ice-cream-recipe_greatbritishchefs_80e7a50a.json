@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chocolate Soufflé with Pistachio Ice Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the ice cream. Place the milk, whipping cream and pistachio paste in a saucepan and bring to the boil",
+      "Add the egg yolk and sugar and gradually bring to 82°C, stirring as the mixture heats. Pass through a fine sieve, chill in a bowl over ice then churn in an ice cream machine once cool",
+      "Brush the soufflé moulds with softened butter then dust with sugar. Tap out any excess that collects in the bases of the moulds",
+      "Melt the chocolate over a bain marie until it reaches 40°C. Preheat the oven to 170°C/gas mark 3",
+      "Whisk the egg whites with the sugar in a standing mixer until stiff peaks form",
+      "Using a spatula, carefully fold the melted chocolate into the egg whites until fully incorporated, trying not to knock out the air as you do so",
+      "Spoon the mixture into the moulds, tap the mould gently on the worktop then use a palette knife to scrape off the tops to create a level surface. Bake in the oven for 10 minutes",
+      "Serve immediately with a scoop of the ice cream on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pistachio Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasteurised Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona Guanaja Dark Chocolate",
+        "unit": "g",
+        "notes": "70%, and 55g of Valrhona Guanaja dark chocolate, 80%",
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "265",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "171b3b11d3fd0a2ac57cacd1fd13908abfd109361b351dbcd9ac4fe56edd2c79",
+    "lineage_hash": "4d43cb59b3d46670494d06f2a2c17de52ada53120f33fa822f83fd824d36bb67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/le-souffle-recipe",
+    "fetchedAt": "2026-08-03T15:48:22.837Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/le-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

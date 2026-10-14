@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Bajra Yogurt Soup (बाजरा दही सूप)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For yogurt mixture combine water, yogurt, salt, turmeric and whisk well.",
+      "Now dry roast the bajra flour on low flame for 5minutes. Whisk in the roasted flour in the yogurt mixture and keep aside.",
+      "Heat oil in a sauce pan. Add cumin seeds and let them crackle.",
+      "Saute sliced onion for few seconds. Add all the vegetables and saute well for few minutes.",
+      "Add in the yogurt mixture and cook on slow flame for 10minutes.",
+      "Portion out the soup in the bowls and serve along with roasted papad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Yogurt Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Yogurt Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Yogurt Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Yogurt Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Millet Flour/bajra Atta",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Yogurt Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "¼",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Bell Peppers",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "¼",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Papad",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d08221e0a3c03f2bce29fcf4508e4286d098b3cf3c49194a3eadf541504818cf",
+    "lineage_hash": "567b5ab56f16dea44deff4e309132ed9d09191529ecf95a3d32524fdd16f682e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bajra-yogurt-soup/",
+    "fetchedAt": "2026-08-02T03:50:16.311Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bajra-yogurt-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

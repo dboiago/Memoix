@@ -1,0 +1,33 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-orange-sorbet-recipe",
+  "slug": "chocolate-orange-sorbet-recipe_greatbritishchefs_2200ca11",
+  "title": "Chocolate Orange Sorbet Recipe",
+  "byline": "by Cristina Bowerman",
+  "fetchedAt": "2026-08-03T18:51:33.682Z",
+  "ldName": "Chocolate orange sorbet",
+  "ldTime": "PT25M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of dark chocolate, chopped",
+    "150g of caster sugar",
+    "750ml of water",
+    "1 orange, zested"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 150ml of water and 150g of caster sugar in a saucepan and bring to the boil. Heat until the sugar dissolves",
+    "Remove from the heat and whisk in the chunks of chocolate until melted. Allow to cool slightly",
+    "Add the orange zest and remaining 600ml of water. Transfer to a blender and blitz until smooth",
+    "If using an ice cream maker, pour the mixture into the machine and churn until a sorbet consistency is reached. Freeze until ready to use",
+    "Alternatively, pour into a container, cover, and store in the freezer, breaking up with a fork every half an hour or so until set. Once set, place in a blender and blitz until smooth. Store in the freezer"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

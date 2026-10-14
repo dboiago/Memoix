@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cuttlefish, Fennel, and Orange Salad",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the tentacles from the cuttlefish and place them in a saucepan with a sprig of parsley, 2 Tbsp. oil, and 2 ladlefuls of water; cook over minimum heat with the lid on for 10-12 minutes. Add the cuttlefish bodies and cook for another 10 minutes. Turn off the heat and let the cuttlefish rest in their water.",
+      "Slice the fennel thinly and place in water. Grate the zest from the oranges, then remove the peel and white pith, and cut the flesh into slices.",
+      "Peel the apple and cut it into quarters. Cook in a saucepan with half a sliced shallot, a splash of wine, and a ladleful of water for 10 minutes; add wasabi to taste and three pieces of orange peel. Remove the orange peels and blend the rest to obtain a sauce.",
+      "Drain the cuttlefish and the fennel. Serve the cuttlefish with the orange and fennel slices, and spinach; dress with the sauce and top with grated orange zest."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cuttlefish",
+        "unit": "lb",
+        "notes": "cleaned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "oz",
+        "notes": "around 1/2 of a bulb",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Wasabi",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Dry White Wine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be37812eb134f9bf8502db750f07664c75fd90d2cd0b5d37b446e5aafce6196a",
+    "lineage_hash": "20d455283447f45b7d714a5de7ba1d5e447f69d02a8e8ffe99cc1fd89bceb3e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/cuttlefish-fennel-and-orange-salad",
+    "fetchedAt": "2026-08-02T10:36:35.846Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/cuttlefish-fennel-and-orange-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

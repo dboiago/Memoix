@@ -1,0 +1,59 @@
+{
+  "url": "https://www.cookwithmanali.com/besan-ladoo/",
+  "slug": "besan-ladoo_cookwithmanali_53f5ddca",
+  "title": "Besan Ladoo",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T06:31:08.550Z",
+  "ldName": "Besan Ladoo",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "8",
+    "8 ladoos"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Sweets",
+  "ldKeywords": "besan ladoo, diwali recipes",
+  "ldIngredientsRaw": [
+    "1/4 cup ghee (55 ml, not melted)",
+    "1 cup besan  (gram flour, 110 grams (you can use either coarse or fine variety of besan))",
+    "1/2 cup bura/boora  (75 grams, not to be confused with confectioner&#39;s/icing sugar OR pulse granulated white sugar and use that)",
+    "1/4  + 1/8 teaspoon cardamom powder",
+    "2 teaspoons chopped nuts like almonds, cashews (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "To a heavy bottom pan, add ghee and let it melt on medium heat. Once the ghee melts, add besan to the pan. Stir and set heat to low.",
+    "Mix the besan and the ghee together, at first it will form a clump. Do not panic and keep stirring, it will start to loosen up a bit around 7 to 8 minutes.",
+    "Then it will continue to become loose and light, keep stirring on low heat. Do not stop stirring else besan might burn. This definitely is a good hand workout",
+    "Keep stirring continuously on low heat. Besan will continue to loosen up and after around 15 minutes, it will turn into a smooth paste like consistency.",
+    "I roasted the besan for around 25 minutes on low heat until it had a nice golden-ish color. Your kitchen will also be filled with a aroma by then. You can also taste test the besan to check for doneness. This time may differ depending on several things like thickness of pan, intensity of heat etc.",
+    "Remove pan from heat and stir it after removing from the pan for around 5 minutes until it cooled down a bit. In total let the besan cool down for around 10 minutes, you don&#39;t want it super hot before adding sugar.",
+    "Then add bura. If you don&#39;t have bura, just pulse some granulated white sugar in a blender and use that. Also add cardamom powder and chopped nuts if using. Mix until everything is well combined.",
+    "Now, pinch a small portion from the dough and press between your palms. Then roll between your palm to form a round shape. Make all ladoos similarly. Store them in an airtight container."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "156 kcal",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "3 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "14 mg",
+    "sodiumContent": "10 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/4 cup ghee, 55 ml, not melted",
+    "▢ 1 cup besan , gram flour, 110 grams (you can use either coarse or fine variety of besan)",
+    "▢ 1/2 cup bura/boora , 75 grams, not to be confused with confectioner's/icing sugar OR pulse granulated white sugar and use that",
+    "▢ 1/4  + 1/8 teaspoon cardamom powder",
+    "▢ 2 teaspoons chopped nuts like almonds, cashews, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

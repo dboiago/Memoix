@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Buttermilk Pudding",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Split the vanilla pod and reserve the seeds. In a saucepan, bring 200ml of double cream, sugar and orange peel to the boil, adding the vanilla pod and seeds",
+      "Remove the cream mixture from the heat then add the lemon juice and softened gelatine. Whisk gently until dissolved, and strain into a clean bowl",
+      "In a separate mixing bowl, add the buttermilk then gradually whisk in the hot cream mixture",
+      "Whilst the buttermilk and cream is cooling, whip the remaining double cream. Once it has completely cooled, fold in the whipped cream to the buttermilk mixture",
+      "Pour the mix into 10 small crème caramel moulds or ramekins and refrigerate overnight",
+      "Remove the stems and leaves from the strawberries. Slice in half and set aside in a heatproof bowl",
+      "Juice the orange into a saucepan. Add the cardamom seeds, sugar and honey",
+      "Place the pan over a medium heat and bring to the boil. Remove from the heat and spoon the mixture over the strawberries. Allow to cool and infuse for 5 minutes",
+      "Remove the buttermilk puddings from the fridge and serve alongside the infused strawberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "4 strips of peel",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Strawberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dacbe8992a2804fcb5a62e149f470e12b20e69a2b78024e4ba0dc8f77a2bd223",
+    "lineage_hash": "1d7ef42b84d83a0a33292ba788f1613d9625197aa0c4cfca33790ccc65db8bfc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttermilk-pudding-recipe-cardamom-strawberries",
+    "fetchedAt": "2026-08-03T18:30:47.279Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttermilk-pudding-recipe-cardamom-strawberries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

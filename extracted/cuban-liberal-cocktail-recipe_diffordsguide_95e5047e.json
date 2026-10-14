@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cuban Liberal Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "148",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Gold Rum 1-3yo",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amer Picon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a1b221a77c761321d9ae1a9048b8f04805b8a960a9b43ec8dd70149f31ccade",
+    "lineage_hash": "e54e6d50b69075e889d4a97e112d4647c2364c35decf64f737cdbdcc7ef5b2c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2793/cuban-liberal",
+    "fetchedAt": "2026-08-03T07:31:15.088Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2793/cuban-liberal",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,342 @@
+{
+  "recipe": {
+    "name": "Aamras Poori Thali",
+    "time": "25-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, mango pulp, prepared sugar syrup and mix it well.",
+      "Transfer it to a mixer grinder jar and grind it into a smooth paste.",
+      "Pour it into a bowl, add dry ginger powder and give it a good mix.",
+      "Transfer it to a serving bowl, serve chilled with fried puri, idada, mango fajeto and dal ki sabji.",
+      "In a saucepan, add water, sugar and let it cook for 5-6 minutes until sugar is cooked well.",
+      "Keep it aside for further use.",
+      "In a bowl, add remaining mango pulp, water, curd, salt to taste, turmeric powder, gram flour and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a handi, add oil, once it’s hot, add bay leaf, cinnamon stick, cloves, curry leaves, button chillies, small mustard seeds, cumin seeds and let it splutter well.",
+      "Add prepared fajeto, jaggery and simmer it for 10-12 minutes on medium flames.",
+      "Finish it with ginger and mix it well.",
+      "Transfer it to a serving bowl and garnish it with coriander sprig.",
+      "Serve hot with fried puri, idada, dal ki sabji and aamras.",
+      "In a saucepot, add soaked yellow moong dal, water, salt to taste, turmeric powder and mix it well.",
+      "Let it simmer for a while until the dal is cooked well.",
+      "Strain the dal, transfer it to a bowl and keep it aside for further use.",
+      "In a pan, add oil, once it’s hot, add a pinch of asafoetida, degi red chili powder, coriander powder, cooked dal and saute it for 4-5 minutes.",
+      "Add fresh coriander leaves and give it a good mix.",
+      "Transfer it to a serving dish, garnish it with pomegranate pearls and coriander sprig.",
+      "Serve hot with fried puri, idada, mango fajeto and aamras."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango Pulp",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Aamras",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Sugar Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aamras",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Aamras",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Mango Pulp",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fajeto",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Button Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "¼",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Fajeto",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "peeled & grated",
+        "amount": "¼",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Moong Dal",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Yellow Moong Dal",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Dough",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Pearl",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b03fa52d76ce12a6c072295fb4abafba1ca2b70092800328194e7ffece556b9e",
+    "lineage_hash": "17d492a6f98a05e15a9ad41affd1e9484e6c8c86c46120f0a0e3077354c2be6f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aamras-poori/",
+    "fetchedAt": "2026-08-02T20:38:58.470Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aamras-poori/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

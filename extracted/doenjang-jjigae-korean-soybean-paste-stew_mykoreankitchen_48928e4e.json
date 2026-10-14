@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Doenjang Jjigae (Korean Soybean Paste Stew)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "154",
+      "carbohydrateContent": "16",
+      "fatContent": "4",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Combine the beef with rice wine and black peppers in a bowl. Mix them well. Preheat a medium sized pot briefly over medium high heat. Add the meat and stir. (You won’t need to add any oil as the meat should have some fat attached to it.) Cook until it browns. Add the potatoes and stir for about 2 mins.",
+      "Pour over the rice water and start boiling. Add doenjang (Korean soybean paste) and ssamjang (Korean spicy dipping sauce) into the water, using a sieve, so it is easier to dissolve. Add gochugaru (Korean chili flakes) and garlic. Stir around.",
+      "Once the water starts rolling boiling, add the zucchini and onions. Boil for 1 min. Add the mushrooms and tofu then boil for 1 min. Add green onions and chilies and boil a further 1 min. Remove from the heat.",
+      "Serve with steamed rice and other Korean side dishes. (i.e. the side dish above shows – Korean egg roll, seasoned seaweed, radish kimchi)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket",
+        "unit": "g",
+        "notes": "alt: any cuts that are suitable for soup and stew, (5.6 ounces), thinly sliced (ideally paper thin) and cut into bite size pieces",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "mirim",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Cracks Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Water",
+        "unit": "C",
+        "notes": "obtained by rinsing rice",
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doenjang",
+        "unit": "Tbsp",
+        "notes": "Korean soybean paste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ssamjang",
+        "unit": "Tbsp",
+        "notes": "Korean spicy dipping sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "tsp",
+        "notes": "Korean chili flakes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato (3.5 Ounces)",
+        "unit": "g",
+        "notes": "all rounder variety, thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini (3.1 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion (1.2 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enoki Mushrooms (3.5 Ounces)",
+        "unit": "g",
+        "notes": "stems removed and separated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms (1.5 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu (8.8 Ounces)",
+        "unit": "g",
+        "notes": "sliced into medium rectangle pieces",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions (0.7 Ounces)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies (optional)",
+        "unit": null,
+        "notes": "green and red, thinly sliced",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b73df010765b97404c5f405854eb362a784afebfe025f35c2461c1ae905027eb",
+    "lineage_hash": "4251cbbb634c60efe2e4af017ccf808557239c29c0905cdeafe79c62d88662da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/doenjang-jjigae/",
+    "fetchedAt": "2026-08-01T21:43:08.224Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/doenjang-jjigae/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

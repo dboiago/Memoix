@@ -1,0 +1,45 @@
+{
+  "url": "https://www.davidlebovitz.com/cinnamon-ice-cream-recipe/",
+  "slug": "cinnamon-ice-cream-recipe_davidlebovitz_52e5fc05",
+  "title": "Cinnamon Ice Cream recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T22:55:23.484Z",
+  "ldName": "Cinnamon Ice Cream",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup (250ml) whole milk",
+    "3/4 cup (150g) sugar",
+    "pinch of salt",
+    "10  cinnamon sticks (broken up (in a mortar &amp; pestle, or with a hammer in a ziptop bag))",
+    "2 cups (500ml) heavy cream",
+    "5  large egg yolks",
+    "ground cinnamon: optional"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the milk, sugar, salt, cinnamon sticks, and 1 cup (250ml) of the heavy cream together in a medium saucepan. Cover, remove from heat, and let steep 1 hour.",
+    "Rewarm the mixture and remove the cinnamon sticks with a slotted spoon.",
+    "Nest a medium-sized bowl in a larger bowl that’s partially filled with ice water, to create an ice bath. Set a mesh strainer over the medium bowl and pour the remaining cream into the medium bowl.",
+    "Whisk together the egg yolks in a small bowl and gradually add some of the warm cinnamon-infused milk to the yolks, whisking constantly. Scrape the warmed yolks back into the saucepan and cook over medium heat, stirring constantly and scraping the bottom with a heatproof spatula, until the custard thickens and coats the spatula.",
+    "Remove from heat and immediately pour the custard through the strainer into the cream. Stir the custard until cool, then chill thoroughly in the refrigerator, preferably overnight.",
+    "Taste the mixture before churning, and add a bit of ground cinnamon, if desired, then freeze the custard in your ice cream maker according to the manufacturer’s instructions."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup (250ml) whole milk",
+    "3/4 cup (150g) sugar",
+    "pinch of salt",
+    "10 cinnamon sticks, broken up (in a mortar & pestle, or with a hammer in a ziptop bag)",
+    "2 cups (500ml) heavy cream",
+    "5 large egg yolks",
+    "ground cinnamon: optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

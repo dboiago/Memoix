@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Suran Ke Vade (Yam vada)",
+    "time": "30-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot, add water for boiling, vinegar, yam, salt to taste chana dal and ginger boil on medium flame until the suran turns soft.",
+      "Strain the suran and transfer it into a large bowl and mash it with the help of a wooden spoon or masher.",
+      "In the same bowl, add coriander leaves and mix it well.",
+      "Add soaked semolina, lemon juice, castor sugar and mix it well.",
+      "In a small bowl, add fruit salt and oil and mix it well. Transfer this into a large bowl and mix it well.",
+      "Transfer the prepared tadka into the bowl and mix everything well.",
+      "Take a bowl of water. Apply some water on both your hands.",
+      "Take some batter in your hand and make a round shape with your thumb and make a hole in the center.",
+      "Heat oil in a kadai on medium flame.",
+      "Once the oil is hot, slide the vada into the hot oil.",
+      "Once the vada is slightly golden, turn over the other side. Fry the vada on medium flame so that it's cooked from inside.",
+      "Remove it on a kitchen tissue.",
+      "Fry them again so that it turns evenly crisp and golden in color.",
+      "Drain them on kitchen tissue to remove excess oil.",
+      "Garnish it with green chutney, hung curd, coriander sprig, degi red chilli powder and lemon wedge. Serve hot .",
+      "In a non-stick pan add oil once it's hot, add cumin seeds and let it splutter well.",
+      "Add a pinch of asafoetida, curry leaves saute it well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Yam",
+        "unit": "g",
+        "notes": "peeled, cut into half",
+        "amount": "600",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "¼",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "½",
+        "section": "For Boiling Suran",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3-4",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": "soaked in 1 cup curd",
+        "amount": "2",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "tsp",
+        "notes": "pissed",
+        "amount": "1",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Fruit Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Suran Ke Vade",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56eea0238d00a9c8f4e75cc408a9eea54b9c09893f403d861cb2892a81c1740b",
+    "lineage_hash": "f8f0c4cd73281be874a68d032c3f57917b32e30473e9968ccba198f1a92f5879"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-snack-recipe/",
+    "fetchedAt": "2026-08-02T07:34:23.095Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-snack-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

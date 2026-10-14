@@ -1,0 +1,57 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-pickled-peppers/",
+  "slug": "chinese-pickled-peppers-quick-pickled-pao-jiao_omnivorescookbook_594c2f73",
+  "title": "Chinese Pickled Peppers (Quick Pickled Pao Jiao)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T22:10:20.832Z",
+  "ldName": "Chinese Pickled Peppers (Quick Pickled Pao Jiao)",
+  "ldTime": "PT1447M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT2M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "8 to 10 jalapenos (, quartered and deseeded, or sliced and deseeded (*Footnote 1))",
+    "1 clove garlic (, lightly crushed)",
+    "3 slices ginger",
+    "2 teaspoons Baijiu ((or vodka))",
+    "1 teaspoon sugar",
+    "3/4 teaspoons salt",
+    "1/3 cup Chinese white rice vinegar ((or regular rice vinegar, or distilled vinegar))",
+    "1/4 cup water"
+  ],
+  "ldInstructionsRaw": [
+    "Place the jalapenos, garlic, and ginger in a heat proof 16-oz (473 ml) jar or a container, they should be well packed together. Sprinkle over the salt, sugar, and pour in baijiu.",
+    "Combine the water and rice vinegar in a small pot and bring to a boil. Pour over the jalapenos.",
+    "Cover the pickles and allow them to cool. Seal and refrigerate for 24 to 48 hours before serving. The pickles should be able to stay well for at least a month in the refrigerator. Always use a clean pair of chopsticks to serve them, to prevent contamination."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "4 kcal",
+    "carbohydrateContent": "0.5 g",
+    "proteinContent": "0.1 g",
+    "sodiumContent": "35 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "0.3 g"
+  },
+  "htmlIngredientLines": [
+    "8 to 10 jalapenos , quartered and deseeded, or sliced and deseeded (*Footnote 1)",
+    "1 clove garlic , lightly crushed",
+    "3 slices ginger",
+    "[Pickling brine (*Footnote 2)]",
+    "2 teaspoons Baijiu (or vodka)",
+    "1 teaspoon sugar",
+    "3/4 teaspoons salt",
+    "1/3 cup Chinese white rice vinegar (or regular rice vinegar, or distilled vinegar)",
+    "1/4 cup water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

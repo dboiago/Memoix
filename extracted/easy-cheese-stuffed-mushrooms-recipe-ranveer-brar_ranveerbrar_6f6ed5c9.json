@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cheese Stuffed Mushrooms",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl add sweet potatoes, cheese, coriander, green chili, aamchur powder, red chili powder and salt. Mix all the ingredients using a masher or with a fork.",
+      "Stuff the cleaned mushrooms with the stuffing. Thread 2 mushrooms on to a small skewer or a tooth pick",
+      "Make a thick batter using flour, water and salt; dip the mushrooms in the batter, then coat them in bread crumbs and deep fry in hot oil in a deep pan.",
+      "When done rest them on a paper towel and serve hot ."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Potatoes",
+        "unit": "C",
+        "notes": "boiled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aamchur Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "cleaned and stalk removed",
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59595400a0e1b472fe7ac8c66a23cc926f8cb03780d063878724907c5d486798",
+    "lineage_hash": "3530180519f8b6a3a9072b09eea7f87e397e0363682b140f6fd42e8723249094"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-stuffed-mushrooms/",
+    "fetchedAt": "2026-08-02T02:43:50.565Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-stuffed-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

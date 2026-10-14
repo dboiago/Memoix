@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Blackberry Parfait",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the sponge, place the butter, honey and apple in a pan and cook until soft. Whisk the egg whites to a peak, add the icing sugar and whisk again",
+      "Fold in the ground almonds and apples and transfer the mix to greased baking tin. Bake for 15 minutes, allow to cool and freeze",
+      "To make the parfait, boil the sugar and water to 120°C",
+      "Meanwhile whisk the egg yolks until they leave a trail in the bowl. Add the syrup to the whisked egg yolks and keep whisking until cold",
+      "Whip the cream, then fold the purée and whipped cream into the egg mixture. Place into small pipe moulds and freeze",
+      "For the honeycomb, place the syrup and sugar in a pan and bring to the boil",
+      "Simmer until golden brown, then add the bicarbonate of soda and mix. Pour onto greaseproof paper  and, when cool, break into small pieces",
+      "To poach the blackberries, bring the sugar and water together until they reach 110°C",
+      "Add the blackberries, mix gently then take off the heat and allow to cool",
+      "Mix the ingredients for the yogurt sauce together",
+      "Ideally serve on slate tiles. Drizzle some yoghurt sauce on the slate or plate, then cut the apple sponge into small cubes and place the cubes on top of the sauce",
+      "Place the poached blackberries in between the sponge cubes, and the pieces of honeycomb in between that. Remove the parfait from the moulds and lay in the centre of the slate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled, cored and sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1da115aadb5892717aeb4303a9e6764c51ad9f6324961a825190885ebfd3df0a",
+    "lineage_hash": "0e66ee359e9d5ad99ae55e3208ca56d30d15a1425639d7ae17f3aa82856a0093"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-parfait-honeycomb-apple-sponge",
+    "fetchedAt": "2026-08-03T16:08:25.801Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-parfait-honeycomb-apple-sponge",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

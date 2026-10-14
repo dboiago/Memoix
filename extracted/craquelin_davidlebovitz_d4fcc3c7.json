@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Craquelin",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "50",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, cream together the butter and sugar with a sturdy spatula or wooden spoon, then add the flour and salt, and continue to mix the dough until it’s smooth. (You can also use a stand mixer with the paddle attachment.)",
+      "Put the dough between two sheets of parchment paper and roll the dough until it’s about 13-inches (33cm) round. Slide the dough on a baking sheet and freeze the dough.",
+      "Make your cream puffs, and after they are piped onto a baking sheet, remove the dough from the freezer and let it stand a minute or so, until it’s defrosted just enough to cut. Using a round cookie cutter about the same diameter of the puffs, cut out circles of the dough and set them on top of the puffs. Bake the cream puffs as indicated by the recipe, until the tops are nicely browned."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "85g, cubed, at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f26313422404ae51be1bd44ea8341e0d50a18925d1480914b3dc70bc6e5574c",
+    "lineage_hash": "1c54f83d7e11bf584ff848c3608e4ede11b2ab0f1f59d9f189a4a66549df9819"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/craquelin-recipe/",
+    "fetchedAt": "2026-08-02T21:21:43.695Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/craquelin-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Bundt Cake with Chocolate Glaze",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. Preheat the oven to 325ºF (160ºC). Set the rack in the center of the oven. Generously, and thoroughly, butter a 10-inch (23cm) bundt pan. Or spray the interior with a butter and flour baking spray. (Such as Baker's Joy.)",
+      "2. Put the chopped chocolate and cocoa powder in a medium sized bowl. Bring the heavy cream and coffee almost to a boil, remove from heat, and pour over the chocolate and cocoa powder. Let sit for 30 seconds, then stir until the chocolate is melted and smooth. Stir in the vanilla.",
+      "3. In a separate medium sized bowl, whisk together the flour, baking powder, baking soda, and salt.",
+      "4. In the bowl of a stand mixer fitted with the paddle attachment, or by hand in a large bowl, beat the butter at medium-high speed until smooth and creamy. Add the sugar and continue to beat until light and creamy, about 3 minutes. Add the eggs one at a time, stopping the mixer between additions, to scrape down the sides, so the eggs are incorporated.",
+      "5. Remove the bowl from the mixer and use a spatula to stir in one-third of the flour mixture. Add half of the melted chocolate, then another third of the flour mixture. Finally add the rest of the melted chocolate then the last of the flour. While you're mixing to reach down to the bottom of the bowl with the spatula, as the dry ingredients tend to sink to the bottom.",
+      "6. Scrape the batter into the prepared bundt pan, smooth the top, and bake until a toothpick inserted into the center comes out almost clean, but with moist crumbs still attached, about 50 minutes. Don't overbake.",
+      "7. Cool the cake on a wire rack for 10 minutes, then turn the cake out onto the rack and cool completely.",
+      "8. Make the glaze by putting the chopped chocolate in a medium-size bowl. Heat the heavy cream in a small saucepan until almost boiling then pour over the chocolate. Let stand for 30 seconds then stir until the chocolate is smooth and melted. Stir in the vanilla extract.",
+      "9. Set the cake with the wire rack over a sheet of parchment paper. Use a spoon or ladle to cover the cake with the glaze. My glaze was pretty thick (as you can see from the photos in the post), but if yours is too runny, let it cool down a bit until it's thicker.\r\n\r\n(Any glaze that slides off can be saved to spoon over ice cream, according to Cenk. I stirred it back into the glaze, because there wasn't any cake crumbs in it.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 140g, chopped",
+        "amount": "5",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "C",
+        "notes": "50g, sifted if lumpy",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "125ml",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Strong Coffee",
+        "unit": "C",
+        "notes": "125ml",
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "2",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum free",
+        "amount": "1½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "200g, at room temperature",
+        "amount": "7",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "1¾",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "cake",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 140g, chopped",
+        "amount": "5",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "180ml",
+        "amount": "¾",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bcc50a191b7761ec86abd5b54a3634f1b2b9fe736d05242e21bc219a859bc5bd",
+    "lineage_hash": "2e6fa341314a85ac4189d7ba77153891c3372032021ff37aa24abc1f102c5ee1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/double-chocolate-bundt-cake-chocolate-glaze-recipe/",
+    "fetchedAt": "2026-08-03T03:48:56.005Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/double-chocolate-bundt-cake-chocolate-glaze-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

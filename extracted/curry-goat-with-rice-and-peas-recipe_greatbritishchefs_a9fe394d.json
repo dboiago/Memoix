@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Curry Goat with Rice and Peas",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the goat meat in a large bowl with the lemon juice, then pour in enough water to cover. Set aside while you prepare the base for the sauce",
+      "Heat a deep saucepan over a medium heat and add the oil. Stir in the curry powder, cumin and coriander, cooking for 1 minute, then add 100ml of water and mix to create a paste",
+      "Add the remaining 900ml of water along with the creamed coconut, garlic, bay leaves, onion, scotch bonnet, salt and sugar. Stir and continue cooking until the coconut dissolves into the liquid",
+      "Drain the goat meat and add to the pan, stirring and topping up with a little extra water if needed – the meat should be completely submerged. Bring to the boil, then reduce the heat to a simmer and leave to cook for 2 hours until the meat is meltingly tender, stirring occasionally",
+      "Meanwhile, make the rice and peas. If you’re using soaked dried kidney beans, then boil them for 40-50 minutes until tender, ensuring the pan doesn’t boil dry. If you’re using tinned, you can skip this step",
+      "Wash the rice in cold water to remove excess starch, then drain and set aside",
+      "Place the creamed coconut, thyme, bay leaves, salt and sugar in a pan along with the kidney beans. Add 500ml waiter and bring to a boil",
+      "Once boiling, add the washed, drained rice and quickly fold through to ensure all the ingredients are well combined. Add a little more water until the rice is just fully submerged, then turn the heat down to a low simmer, cover and cook for 25-30 minutes, or until all the liquid has been absorbed and the rice is tender",
+      "To serve, place a spoonful of the rice and the curry goat on each plate. Garnish with sliced red chilli and spring onion, then finish with lime wedges and coleslaw"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Goat Shoulder",
+        "unit": "kg",
+        "notes": "or leg, on the bone or boneless and cut into chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creamed Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": "or more if you like heat",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Kidney Beans",
+        "unit": "g",
+        "notes": "or 1 tin of kidney beans, drained, dried, soaked overnight",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creamed Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely sliced into matchsticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coleslaw",
+        "unit": null,
+        "notes": "either homemade or ready-made (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d8bbf17d677408a33e155f21cfe360dc5b374a24e869107b0b8dff09fe41da28",
+    "lineage_hash": "8629b9400a000fc43f22807c8ff5262b9ee734c2aac383da1b2815f89bfcccde"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curry-goat-rice-peas-recipe",
+    "fetchedAt": "2026-08-03T05:00:32.450Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curry-goat-rice-peas-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

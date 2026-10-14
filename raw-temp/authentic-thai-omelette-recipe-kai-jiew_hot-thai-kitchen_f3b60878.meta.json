@@ -1,0 +1,37 @@
+{
+  "url": "https://hot-thai-kitchen.com/thai-omelette/",
+  "slug": "authentic-thai-omelette-recipe-kai-jiew_hot-thai-kitchen_f3b60878",
+  "title": "Authentic Thai Omelette Recipe (Kai Jiew)",
+  "byline": "Pailin Chongchitnant",
+  "fetchedAt": "2026-08-01T18:09:22.780Z",
+  "ldName": "Basic Thai Omelette (kai jiew)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "1",
+    "1 seving"
+  ],
+  "ldCuisine": "Thai",
+  "ldCategory": "Main Course",
+  "ldKeywords": "gluten free, quick meals",
+  "ldIngredientsRaw": [
+    "2  large eggs",
+    "1 teaspoon fish sauce (or sub soy sauce if vegetarian)",
+    "Neutral oil (as needed depending on the method you choose)"
+  ],
+  "ldInstructionsRaw": [
+    "Beat the eggs and fish sauce well with a fork.",
+    "Method 1: Prettier, Crispier, but More Oil",
+    "Method 2: Not as pretty, But Quicker and Less Oil"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 2 large eggs",
+    "▢ 1 teaspoon fish sauce, or sub soy sauce if vegetarian",
+    "▢ Neutral oil, as needed depending on the method you choose"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TH",
+  "siteCourseHint": null
+}

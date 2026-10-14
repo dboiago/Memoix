@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Chirer Polao",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift out dust or any fine particles present in the chire. Wash thoroughly and soak in water to soften. The soaking time depends on your chire. We soaked ours for 15 minutes. Strain when the chire is soft, but not mushy.",
+      "Cut potatoes and carrots into 1-cm cubes. Cut cauliflower into 2-cm florets. Slice onions. Slit green chillies. Finely chop ginger. Smash garlic using a mortar and pestle. Roughly chop curry leaves.",
+      "Heat vegetable oil in a kadai. Temper with bay leaves, cardamom, cinnamon, cloves, and cumin seeds.",
+      "Add potatoes and fry for 2 minutes. Then add carrots, cauliflowers, and cashew nuts consecutively, frying each for 30 seconds before adding the next.",
+      "Add onions, ginger, green chillies and raisins, and fry for another 30 seconds. Add curry leaves and garlic.",
+      "Season with salt and sugar. Add turmeric powder.",
+      "Mix everything well and continue frying until the raw smell of the turmeric goes away. This should take around 3 minutes.",
+      "Now, add the soaked and drained chire. Gently fold it in so that the chire doesn't break.",
+      "Cover and steam on the lowest possible heat for 6 minutes.",
+      "Finish with a sprinkling of gorom moshla and ghee. Cover and rest for two minutes before digging in."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chire",
+        "unit": "g",
+        "notes": "beaten rice",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca962853629ce880abf0f45de41f6f82c546060ef8d7a2a091a063d89aaae8ad",
+    "lineage_hash": "d62e9f9cff17a46b611d6f0ea175cec319f942da8cb173dd6fc074c1a51d3539"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chirer-polao",
+    "fetchedAt": "2026-08-01T18:46:35.988Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chirer-polao",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

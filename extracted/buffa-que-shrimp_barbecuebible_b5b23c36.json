@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Buffa-Que Shrimp",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the shrimp under cold running water, then blot dry with paper towels.",
+      "Make the marinade: Whisk together the hot sauce, lemon juice, oil, Worcestershire sauce, garlic, salt, and pepper in a large nonreactive mixing bowl. Stir in the shrimp and let marinate in the refrigerator, covered, for 30 minutes. (Alternatively, put shrimp and marinade in a large resealable plastic bag.)",
+      "Make the finishing sauce: Just before grilling, melt the butter in a small saucepan over medium heat and stir in the hot sauce. Set aside.",
+      "Set up the grill for indirect grilling and preheat to medium-high. Brush and oil the grill grate.",
+      "When ready to cook, drain the shrimp and discard the marinade. Arrange the shrimp on the grate over the drip pan away from the heat. Toss the wood chips on the coals. Indirect grill the shrimp until cooked, 10 to 15 minutes. When done, the shrimp will be firm to the touch.",
+      "Transfer the shrimp to a serving bowl. Reheat the finishing sauce and pour it over the shrimp. Toss well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jumbo Shrimp (about 2 Pounds)",
+        "unit": null,
+        "notes": "shelled and deveined",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Louisiana-style Hot Sauce",
+        "unit": "C",
+        "notes": "such as Frank’s RedHot® or Crystal",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "009e464e26c0e1d1c3ffd32d71ae08f2c6b288a2b39fb561269ca8cef4c15b4e",
+    "lineage_hash": "6fe48b89f702e80362d955acbcaa2b2038cf172f1c0c33d66aac7dd634335b44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/buffa-que-shrimp/",
+    "fetchedAt": "2026-08-03T04:42:37.643Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/buffa-que-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

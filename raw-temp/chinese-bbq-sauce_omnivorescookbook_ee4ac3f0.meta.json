@@ -1,0 +1,61 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-bbq-sauce/",
+  "slug": "chinese-bbq-sauce_omnivorescookbook_ee4ac3f0",
+  "title": "Chinese BBQ Sauce (叉烧酱)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T16:23:22.601Z",
+  "ldName": "Chinese BBQ Sauce (叉烧酱)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "1",
+    "1 cup"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Condiment, Homemade Ingredient",
+  "ldKeywords": "pantry, sauce",
+  "ldIngredientsRaw": [
+    "1/3 cup brown sugar",
+    "1/4 cup hoisin sauce",
+    "1/4 cup oyster sauce",
+    "2 tablespoons molasses",
+    "2 tablespoons soy sauce",
+    "2 tablespoons Shaoxing wine ((or dry sherry))",
+    "2 cloves garlic (, grated)",
+    "2 teaspoons ginger (, grated)",
+    "1 teaspoon five spice powder",
+    "3/4 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Mix everything together in a small saucepan. Cook over medium heat and stir constantly to dissolve the sugar. Simmer until the sauce has thickened just enough to coat the back of a spoon, 10 minutes or so. Remove it from the stove and let cool for 10 minutes. Then transfer to a container or heat-proof mason jar. The sauce will thicken further once cooled. It’s ready to use now, or you can store it sealed in the fridge for up to 4 days.",
+    "The sauce is perfect with pork, chicken, beef, and seafood. You can serve it alongside cooked food. Or use it as a glaze to finish up grilled or baked meat. For example, you can use it to make Instant Pot Pork Ribs."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "66 kcal",
+    "carbohydrateContent": "14.3 g",
+    "proteinContent": "0.6 g",
+    "fatContent": "0.3 g",
+    "saturatedFatContent": "0.1 g",
+    "sodiumContent": "630 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "10.9 g"
+  },
+  "htmlIngredientLines": [
+    "1/3 cup brown sugar",
+    "1/4 cup hoisin sauce",
+    "1/4 cup oyster sauce",
+    "2 tablespoons molasses",
+    "2 tablespoons soy sauce",
+    "2 tablespoons Shaoxing wine (or dry sherry)",
+    "2 cloves garlic , grated",
+    "2 teaspoons ginger , grated",
+    "1 teaspoon five spice powder",
+    "3/4 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

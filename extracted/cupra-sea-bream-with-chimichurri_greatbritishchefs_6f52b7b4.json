@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Cupra (sea bream) with Chimichurri",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your grill to a high heat, or prepare your barbecue and clean and oil the barbecue grates. If using a barbecue it can be helpful to use a fish basket, which will both make the stuffed fish easier to flip and also help prevent anything falling through the grates.",
+      "Mix together all the ingredients for the chimichurri",
+      "Stuff the fish with the sliced lemon, thyme, garlic and salt. Pat the outside of the fish dry, and then rub the fish skin with olive oil and sprinkle with some more salt",
+      "Grill the fish either in the fish basket on the barbecue or directly or under the grill for about 6-7 minutes, then try and flip it onto the other side. If the skin releases easily, flip it over and cook for around 5 more minutes on the other side. If it doesn't, wait another minute then try again",
+      "Serve the grilled fish with the chimichurri on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "fresh, finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": "spine and guts removed, but not filleted, canoe cut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c70a559c448c6066b2cb9b438bd120eeeb6e6fdd9365cb7ce72be206b5825941",
+    "lineage_hash": "5ebd0dbd3c318874bf9a19562029168545642850c874197f4c4078d1f08da47d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cupra-recipe",
+    "fetchedAt": "2026-08-02T17:21:05.787Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cupra-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

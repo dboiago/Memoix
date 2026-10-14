@@ -1,0 +1,70 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-sesame-crusted-tofu/",
+  "slug": "crispy-sesame-crusted-tofu_itdoesnttastelikechicken_95af8915",
+  "title": "Crispy Sesame Crusted Tofu!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T22:21:22.399Z",
+  "ldName": "Crispy Sesame Crusted Tofu",
+  "ldTime": "PT100M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "16",
+    "16 crusted tofu triangles"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer, Main Course",
+  "ldKeywords": "baked, crispy, crusted, panko, seasme, tofu, vegan",
+  "ldIngredientsRaw": [
+    "1 block (350g) extra-firm tofu ((see step 1 for prep))",
+    "1/4 cup soy sauce ((gluten-free if preferred))",
+    "2 tablespoon rice vinegar",
+    "1 tablespoon brown sugar",
+    "2 teaspoons sesame oil ((omit for oil-free))",
+    "1/2 teaspoon garlic powder",
+    "1/2 cup all-purpose flour ((gluten-free if preffered))",
+    "1/2 cup warm water",
+    "2 tablespoons ground flax or ground chia",
+    "1/2 cup sesame seeds (white, black, or a mix)",
+    "1/2 cup panko or crushed corn flakes ((gluten-free if preferred))"
+  ],
+  "ldInstructionsRaw": [
+    "To prep the tofu: Prepare the tofu by draining it, and then pressing it for 30 minutes to 1 hour. I love using my Tofuture tofu press, but you can also follow these instructions for a DIY tofu pressing method. Pressing the tofu squeezes excess water out so that the tofu can suck up more of the marinade and become more flavourful. Once pressed, remove the tofu and pat dry, then cut into triangles (about 16).",
+    "Marinate: mix together all of the sesame marinade ingredients in a sealable bag or container, then add the tofu. Let the tofu marinate for a minimum of 30 minutes or as long as overnight in the fridge, flipping the tofu every now and then to ensure all sides get marinated.",
+    "OVEN: When ready to finish the tofu, preheat your oven to 400F (200C). Lightly grease or line a baking sheet with parchment paper.AIR FRYER: When ready to finish the tofu, preheat your oven to 370F (190C).",
+    "Crust the tofu: Grab three big bowls. In the first bowl, add the flour. In the second bowl, add the flax and water and pour in any leftover unabsorbed marinade, and mix together, the flax will thicken the mixture in 5 - 10 minutes. For the third bowl, mix the sesame seeds and panko.Add the tofu to the flour bowl and toss to coat. Next, coat one tofu triangle at a time in the flax mixture and then roll it in the sesame panko coating. Place the crusted tofu on the prepared baking sheet and repeat with the remaining tofu.",
+    "OVEN: Spread the tofu out on the baking sheet so that they aren&#39;t touching, this will ensure the tofu gets crispy all the way around. Bake 20 to 25 minutes, until golden and crusty.AIR FRYER: Place the tofu in a single layer in the air fryer. You may need to work in batches. Fry 16 - 20 minutes, until golden and crusty.Serve hot as a main with sides of choice, or serve as an appetizer with your favourite dipping sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 tofu triangle (recipe makes 16 tofu triangles)",
+    "calories": "75 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "4 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "232 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 block (350g) extra-firm tofu, (see step 1 for prep)",
+    "[sesame marinade]",
+    "▢ ¼ cup soy sauce, (gluten-free if preferred)",
+    "▢ 2 tablespoon rice vinegar",
+    "▢ 1 tablespoon brown sugar",
+    "▢ 2 teaspoons sesame oil, (omit for oil-free)",
+    "▢ ½ teaspoon garlic powder",
+    "[Bowl 1]",
+    "▢ ½ cup all-purpose flour, (gluten-free if preffered)",
+    "[Bowl 2]",
+    "▢ ½ cup warm water",
+    "▢ 2 tablespoons ground flax or ground chia",
+    "[Bowl 3]",
+    "▢ ½ cup sesame seeds (white, black, or a mix)",
+    "▢ ½ cup panko or crushed corn flakes, (gluten-free if preferred)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

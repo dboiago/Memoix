@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chinese Egg Drop Soup",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "52",
+      "carbohydrateContent": "6",
+      "fatContent": "3",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Combine the chicken broth, the white part of the green onion and ginger in a small pot. Cook over high heat until brought to a boil. Turn to low heat and let the soup reduce to a simmer.",
+      "Combine cornstarch, chicken bouillon, sea salt, white pepper, turmeric, and 2 tablespoons of water in a small bowl. Whisk until cornstarch is completely dissolved. Swirl into the soup and mix well with a spatula. Stir and cook until the soup thickens.",
+      "To add eggs, make sure the soup is simmering. (Footnote 4) Hold a fork (or two chopsticks slightly apart) across the top of a small bowl, drizzle the egg mixture in 3 batches into the soup, where no egg strands have formed. Let the eggs sit for at least 10 to 20 seconds to make sure they have cooked, then stir gently to break up the egg to the desired sized pieces. Then keep drizzling and breaking up the rest of the egg mixture. (Footnote 5)",
+      "Turn off the heat. Drizzle sesame oil and sprinkle with the green part of the green onion. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": "*Footnote 2, or 3/4 teaspoon salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Optional, for the yellow color",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "*Footnote 3, beaten",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b0fefe869b957226a3df42c13b0cf7304f1d0a8816693165747e2179c2109cb",
+    "lineage_hash": "3d73fdac41fc4b1960ce8fbfefd291a0f337722331d2628af841f1a823d7f731"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-egg-drop-soup/",
+    "fetchedAt": "2026-08-02T10:38:05.349Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-egg-drop-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

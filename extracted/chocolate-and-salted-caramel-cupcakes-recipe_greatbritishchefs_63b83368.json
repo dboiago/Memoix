@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Chocolate and Salted Caramel Cupcakes",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4 and line a 12-hole muffin tray with cupcake cases",
+      "To make the cakes, put the chocolate, milk and one-third of the sugar in a saucepan and stir over a gentle heat until the sugar has dissolved and the chocolate has melted. Leave to cool",
+      "Cream together the butter and sugar until pale and fluffy and gradually whisk in the beaten egg and vanilla essence until fully combined. Tip over the cooled chocolate milk and sift over the dry ingredients. Whisk it all together until combined and divide the mixture between the cake cases. Bake for 20 minutes, or until an inserted skewer comes out clean",
+      "In the meantime, make the salted caramel. Simply put all the ingredients in a saucepan over a gentle heat and stir until the sugar has dissolved and the butter has melted. Increase the heat and let the mixture come to a rolling boil. Reduce the temperature again and leave to simmer for a minute. Taste for saltiness (careful, it’s hot!) and add more if you like. Leave to cool",
+      "Once the cakes are out of the oven, stab them all over with a skewer and spread a spoonful of salted caramel on top. Leave the cakes to cool completely in their tin on top of a wire rack before turning out",
+      "To make the buttercream, put the butter in a large bowl and sift over half of the icing sugar. Whisk together to combine and sift over the remaining half of the icing sugar. Whisk again until fully combined before adding half of the cold salted caramel. Whisk until pale and fluffy and taste, adding more salted caramel if you want",
+      "Spoon the buttercream into a piping bag fitted with a star nozzle and pipe a swirl of buttercream on top of each cake. Flick over some more salted caramel and scatter over some chocolate coated popping candy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popping Candy",
+        "unit": null,
+        "notes": "chocolate-covered, to decorate (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "359ca3f86c89ec92b1468485f0ae83c91ad13ef681651d9f066529e22ee71044",
+    "lineage_hash": "2bd19d59f073c143a4a53afbdc48595bfc17216320391589c23a9ea8a325b184"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-salted-caramel-cupcake-recipe",
+    "fetchedAt": "2026-08-03T22:46:56.165Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-salted-caramel-cupcake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

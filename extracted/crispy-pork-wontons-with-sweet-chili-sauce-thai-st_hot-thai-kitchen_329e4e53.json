@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Crispy Pork Wontons with Sweet Chili Sauce",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a mortar and pestle, pound the garlic, peppercorns and cilantro roots/stems into a fine paste.",
+      "If your mortar is big enough to mix everything in, you can continue the recipe in the mortar, otherwise transfer the herb paste into a mixing bowl.",
+      "Add the ground pork, soy sauce, oyster sauce, cornstarch, sugar, and sesame oil (if using) and mix thoroughly using a gloved or clean hand.",
+      "Once mixed well, mix in the green onions.",
+      "Wrap the wontons by first placing only 1 teaspoon of the filling into the middle of the wonton wrapper. Dip your finger into water and wet two adjacent edges of the wrapper. Fold the wonton into a triangle, pressing out as much air as possible, and seal it along the watered edges. You can stop here and fry them as triangles, or to make them into a \"Chinese gold\" shape, wet the two outside tips of the triangle, and bring them towards the center and press them together to seal. (Tip: If instructions are unclear, refer to the step-by-step photos above or watch the video tutorial.)",
+      "Heat about 1.5-2 inches of frying oil in a wok or pot, and heat the oil to 325 °F (160°C).",
+      "Without crowding the pot, fry the wontons for about 30 seconds to 1 minute, flipping them as needed so all sides are evenly browned. They are done when the wrappers are golden and the bubbling has mostly subsided (a sign that the wrappers are crispy.) Keep the heat low, if your oil temp is too high the wonton wrappers will burn before the filling cooks. Fish them out with a wire skimmer and drain on a paper towel-lined plate. Repeat with the remaining wontons.",
+      "Let the wontons cool slightly before you eat. Meanwhile, mix up the dipping sauce by stirring the two sauces together. Start with 2 tablespoons of sriracha, and add more if you want it spicier. You can adjust the ratio of either sauces to taste.",
+      "Serve while still warm and crispy. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": "2.5 ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Root",
+        "unit": null,
+        "notes": "alt: 6-8 cilantro stems, chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "g",
+        "notes": "9 oz",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "10 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "5 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "5 ml, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "About 40 Wonton Wrappers (see Note)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frying Oil",
+        "unit": null,
+        "notes": "as needed.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Sweet Chili Sauce",
+        "unit": "Tbsp",
+        "notes": "45 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Hot Sauce",
+        "unit": "Tbsp",
+        "notes": "30-45 ml",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4cc6cb393e9c1d93ba9fa3ca38e37173e8f5a3e3354fdecf4479dc55b83f3cd4",
+    "lineage_hash": "e3ec9847f6b11d98f924a708b20593bb4113d9f2634d943e82dd146680c5e00f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/fried-wonton-recipe/",
+    "fetchedAt": "2026-08-02T04:10:45.010Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/fried-wonton-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

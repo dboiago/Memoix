@@ -1,0 +1,71 @@
+{
+  "url": "https://www.cookwithmanali.com/cornflakes-chivda/",
+  "slug": "cornflakes-chivda-recipe_cookwithmanali_3e3a3ab0",
+  "title": "Cornflakes Chivda Recipe",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T06:45:56.100Z",
+  "ldName": "Easy Cornflakes Chivda Recipe",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 cups"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Snack",
+  "ldKeywords": "cornflakes chivda, indian snack",
+  "ldIngredientsRaw": [
+    "2 tablespoons oil (30 ml, I used avocado oil)",
+    "½ cup cashews (whole raw cashews)",
+    "½ cup peanuts",
+    "2 tablespoons golden raisins",
+    "¼ cup chana dal (optional)",
+    "2  green chilies (sliced)",
+    "10-15  curry leaves",
+    "½ teaspoon Kashmiri red chili powder",
+    "¼ teaspoon turmeric",
+    "½ + ⅛ teaspoon salt (or add more to taste)",
+    "½ teaspoon chaat masala",
+    "2 teaspoons powdered sugar",
+    "3 cups cornflakes (around 100 grams, I used Kellogg&#39;s original cornflakes)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a large pan on medium heat. Once its hot, add whole cashews and fry until they are golden brown in color and then remove on a plate. Similarly fry the peanuts until golden brown and remove from pan.",
+    "Then add the raisins and fry until they plump up. Remove on a plate. Then add the chana dal (optional) and fry until light golden brown and remove on a plate.",
+    "Add the sliced chilies and curry leaves and cook for a minute until they crisp up. Then add the chili powder, turmeric, salt, chaat masala and powdered sugar and cook the spices for 15 to 30 seconds.",
+    "Then add the fried cashews, peanuts, raisins and chana dal back into the pan and stir. And finally add cornflakes (I used kellogg&#39;s original) and stir until the corn flakes are well coated with the spices, around 2 minutes. Mix everything well and your cornflakes chivda is ready. Cool completely and then store in an airtight container."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "366 kcal",
+    "carbohydrateContent": "34 g",
+    "proteinContent": "10 g",
+    "fatContent": "23 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.03 g",
+    "sodiumContent": "530 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "9 g",
+    "unsaturatedFatContent": "18 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons oil, 30 ml, I used avocado oil",
+    "▢ ½ cup cashews, whole raw cashews",
+    "▢ ½ cup peanuts",
+    "▢ 2 tablespoons golden raisins",
+    "▢ ¼ cup chana dal, optional",
+    "▢ 2 green chilies, sliced",
+    "▢ 10-15 curry leaves",
+    "▢ ½ teaspoon Kashmiri red chili powder, add 1/4 teaspoon more for extra heat (you can also replace it with regular chili powder to make it spicier)",
+    "▢ ¼ teaspoon turmeric",
+    "▢ ½ + ⅛ teaspoon salt, or add more to taste",
+    "▢ ½ teaspoon chaat masala",
+    "▢ 2 teaspoons powdered sugar",
+    "▢ 3 cups cornflakes, around 100 grams, I used Kellogg's original cornflakes"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

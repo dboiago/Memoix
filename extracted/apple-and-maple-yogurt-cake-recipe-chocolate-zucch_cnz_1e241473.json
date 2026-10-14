@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Apple and Maple Yogurt Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180° C (360° F) and line a 25-cm (10-inch) cake pan with parchment paper.",
+      "Set aside 1 rounded tablespoon of the maple sugar for topping.",
+      "In a medium mixing bowl, whisk together the yogurt, the remaining maple sugar, eggs, and oil. In another mixing bowl, combine the flour, baking powder, baking soda, and salt. Peel the apple, then core, quarter, and slice it thinly. Add the flour mixture to the yogurt mixture and whisk it in quickly, until just combined. Don't worry about lumps and do not overmix.",
+      "Pour the batter into the prepared pan, arrange the apple slices on top, starting from the outside, and sprinkle with the reserved maple sugar.",
+      "Put into the oven to bake for 35 to 40 minutes, until the top is golden and a cake tester inserted in the center comes out clean. If you feel the apple slices might be browning too quickly, cover with a piece of parchment paper.",
+      "Lift the cake cautiously out of the pan and transfer to a rack to cool. Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "unit": "ml",
+        "notes": "fromage blanc this time",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Sugar",
+        "unit": "g",
+        "notes": "see note, divided",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "I use grapeseed oil",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "I used a Charden, which is a cross between the Clochard and the Golden, as the name implies, of a variety that holds its shape when cooked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e65e8a9f5fcd12f3b2fe22159abf5c36b41c591cdd73f621577feb5b92cd0523",
+    "lineage_hash": "66416bdc88140d5803af318f98db50d1fcdf72837d0aa8ea4a6f83f2fbe1d309"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/apple-and-maple-yogurt-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:03:48.447Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/apple-and-maple-yogurt-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

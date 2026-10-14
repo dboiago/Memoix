@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Bailey’s® Chocolate Soufflés",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 400°F. Lightly butter 6 1 cup soufflé or other 1 cup baking dishes. Sprinkle the inside of the cups with sugar and tap out any excess. Place the dishes onto a baking tray.",
+      "Whisk the milk, ¼ cup of the sugar, the cornstarch and vanilla in a small dish and set aside. Melt the chocolate and butter in a small sauce pot over low heat, stirring constantly until melted. Stir in the milk mixture in 2 additions, whisking until evenly blended (the mixture will be a thick paste and may look a little grainy, but that is to be expected – it will smooth out after the whites are folded in). Stir in the Bailey’s® and keep the chocolate paste warm over low heat, stirring occasionally. Alternately, this mixture can be prepared in advance and chilled, then re-warmed over low heat when ready to bake the soufflés. When ready to move to step 4, transfer the warm chocolate to a large bowl.",
+      "Whip the egg whites and cream of tartar until they are foamy then slowly pour in the remaining 6 tbsp of sugar and continue to whip until the whites hold a medium peak when the beaters are lifted. Fold in a third of the whites into the warm chocolate and quickly but gently fold them in – they will deflate quite a bit, but this is expected. Fold in the remaining two thirds of the batter until incorporated then pour this into the prepared soufflé dishes. Bake the soufflés for 10 to 12 minutes until the tops take on a dull look, but the inside still looks shiny and soft where a crack may form.",
+      "The soufflés are tastiest served with Bailey’s® caramel sauce poured into the centre.",
+      "Pour the water and lemon juice into a small, heavy-bottomed sauce pot and then add the sugar. Bring the sugar to a boil over high heat, without stirring. Continue to boil the sugar, occasionally brushing the sides of the pot with water, until it turns a rich amber color. Remove the pot from the heat and slowly and carefully whisk in the cream (watch out for steam). Let the caramel sauce cool in the pot, then serve at room temperature, but store refrigerated.",
+      "Simply stir 3 tbsp of Bailey’s® into this caramel sauce recipe (sauce served at room temperature.) The caramel sauce will keep, refrigerated, until the best before date of the cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C + 6 Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bailey’s® Irish Cream Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5921b3e3515e9fac58a69fcf7ea0d0b1a6a49a06bd0400a930ff95d2a55e83c5",
+    "lineage_hash": "e67502322f629dc75815b6af3bd56da536fcd44e7d534b23eb83b1e249b111a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/baileys-chocolate-souffles/",
+    "fetchedAt": "2026-08-01T17:34:51.083Z"
+  },
+  "rawSource": "https://annaolson.ca/project/baileys-chocolate-souffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,172 @@
+### Metric
+
+### Imperial
+
+#### Orange mousse
+
+-   1 gelatine leaf
+-   1 [egg yolk](https://www.greatbritishchefs.com/collections/egg-recipes)
+-   25ml of milk, warmed
+-   100ml of [orange purée](https://www.greatbritishchefs.com/collections/orange-recipes)
+-   4 tbsp of Cointreau
+-   250ml of whipping cream, whipped to soft peaks
+-   25g of sugar
+
+-   Kulfi moulds
+-   30cm x 20cm x 5cm baking tin
+
+1
+
+For the caramelised nut ‘chikki’ heat the oven to 180°C/Gas mark 4. Spread the nuts on a tray and roast until lightly browned. Check them every minute. Crush or finely chop
+
+-   30g of [pistachio nut](https://www.greatbritishchefs.com/collections/pistachio-recipes)
+-   30g of [pine nuts](https://www.greatbritishchefs.com/collections/pine-nut-recipes)
+-   30g of broken cashew nuts
+
+2
+
+Melt the sugar in a heavy pan, raise the heat and cook, without stirring, until it turns into a golden caramel. Add the butter and immediately add the nuts
+
+-   120g of granulated sugar
+-   35g of [unsalted butter](https://www.greatbritishchefs.com/collections/butter-recipes)
+
+3
+
+Quickly stir the mixture, so the nuts are coated in the caramel, then pour into a baking tray lined with baking parchment. Spread evenly to form a layer about 5mm thick. Leave to cool and harden
+
+4
+
+For the silky chocolate délice heat the milk until almost boiling, pour onto the white chocolate and stir until melted
+
+-   50ml of full-fat milk
+-   100g of [white chocolate](https://www.greatbritishchefs.com/collections/white-chocolate-recipes), chopped
+
+5
+
+Melt the dark chocolate in a bowl set over simmering water. Melt the butter. Whisk the egg yolk and melted butter together in a large bowl. Pour in the melted dark chocolate and whisk well
+
+-   300g of [dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes), chopped
+-   30g of [unsalted butter](https://www.greatbritishchefs.com/collections/butter-recipes)
+-   1 [egg yolk](https://www.greatbritishchefs.com/collections/egg-recipes)
+
+6
+
+Whip the cream with the caster sugar. Gently fold the whipped cream into the chocolate mixture
+
+-   300ml of whipping cream
+-   1 tbsp of caster sugar
+
+7
+
+Put the nuts into a baking tray. Pour the mixture over the caramelised nuts and spoon the white chocolate and milk mixture unevenly over the top
+
+8
+
+It will spread into the dark chocolate mixture on its own. Leave in the fridge for about 3 hours, until set
+
+9
+
+For the orange mousse cover the gelatine leaf with cold water, leave for 5 minutes until soft and pliable
+
+-   1 gelatine leaf
+
+10
+
+Put the egg yolk, 25g sugar and the milk in a bowl set over a pan of simmering water, making sure the water does not touch the base of the bowl
+
+-   1 [egg yolk](https://www.greatbritishchefs.com/collections/egg-recipes)
+-   25g of sugar
+-   25ml of milk, warmed
+
+11
+
+Whisk until the mixture thickens to a custard-like consistency. Remove from the heat. Squeeze any excess water from the gelatine and stir it in. Add the orange purée and orange liqueur, if using
+
+-   100ml of [orange purée](https://www.greatbritishchefs.com/collections/orange-recipes)
+-   4 tbsp of Cointreau
+
+12
+
+Whisk everything together and pass through a fine sieve. Whip the cream and fold it in. Pour the mixture onto the chocolate delice, and chill for a couple of hours, until firm
+
+-   250ml of whipping cream, whipped to soft peaks
+
+13
+
+For the whisky truffle, put the cream into a heavy-based pan and bring to the boil. Cool. Melt the chocolate in a bowl set over simmering water
+
+-   400ml of whipping cream
+-   150g of [dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes), chopped
+
+14
+
+Stir it into the cream with and whisky. Cool and then chill
+
+-   45ml of [whisky](https://www.greatbritishchefs.com/collections/whisky-cocktail-recipes)
+
+15
+
+Divide into 25 and shape into balls. Roll them in the unsweetened cocoa powder
+
+-   100g of [cocoa powder](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+
+16
+
+For the cranberry kulfi bring the cranberries to a boil with 1 tbsp of the sugar and 70ml water
+
+-   240g of [cranberries](https://www.greatbritishchefs.com/collections/cranberry-recipes)
+-   12.5g of granulated sugar
+
+17
+
+Simmer for a couple of minutes until soft Remove from the heat and purée. Pass through a fine sieve and set aside
+
+18
+
+Pour the milk and double cream into a heavy-based pan, add the cardamom pods and bring to the boil
+
+-   2.5l full-fat milk
+-   1.2l double cream
+-   8 [black cardamom pods](https://www.greatbritishchefs.com/collections/cardamom-recipes)
+
+19
+
+Reduce the heat and simmer, stirring constantly to prevent sticking, until the mixture has reduced to a third of its original volume
+
+20
+
+Stir in the remaining sugar; discard the whole cardamom. Cool and then chill
+
+21
+
+Whip the cream. Fold the cranberry purée and whipped cream into the milk base. Pour into the kulfi moulds. Freeze until firm
+
+-   400ml of whipping cream
+
+22
+
+To plate carefully remove the set delice and mousse mix from the baking tray
+
+23
+
+Place on the edge of a plate, and balance a whisky truffle on top
+
+24
+
+Gently loosen the kulfi from the moulds, and turn out three onto a plate next to the delice. Serve immediately
+
+[](https://www.greatbritishchefs.com/chefs/vineet-bhatia)
+
+While Vineet Bhatia has borrowed from European traditions to plate up his food, the manner and matter of his dishes are unmistakably those of India, handled with immense sophistication and personal panache.
+
+## Subscribe to the
+
+## Great British Chefs Newsletter
+
+Join an ever-growing community of food lovers now by subscribing to our newsletter and get all the latest recipes, features and much more to your inbox
+
+Terms and conditions
+
+## Get in touch
+
+Please sign in or [register](https://www.greatbritishchefs.com/unlocked?source-component=GetInTouch) to send a comment to Great British Chefs.

@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Burnt Orange Sherry Cobbler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Goblet",
+    "garnish": [
+      "Grilled Orange Slice",
+      "Edible Flowers"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, plus a slice of the grilled orange hull, to a large goblet filled with crushed ice. Swizzle the mixture briefly, then top with more ice and garnish with another grilled orange slice and edible flowers.",
+      "Burnt Orange JuiceHalve an orange and place the cut-side down on a grill over low heat, grilling until the sugars have begun to caramelize and grill marks appear. Juice the orange and save the hulls."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burnt Orange Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Demerara Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93b0835ecc0c7c9aedcd71e4276efddfae1f752340d2bb2f4396cd96b64ca94a",
+    "lineage_hash": "cf84c4805490323e508cbb8182b00e48aba9fa2e91d5235d8ba4ac9f7a0d2fb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/burnt-orange-sherry-cobbler/",
+    "fetchedAt": "2026-08-03T22:29:50.374Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/burnt-orange-sherry-cobbler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

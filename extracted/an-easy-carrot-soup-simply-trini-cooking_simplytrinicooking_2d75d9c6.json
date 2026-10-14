@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Carrot Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a deep pot over medium heat. Add the chopped onion and garlic; cook stirring often until onion is translucent.",
+      "Add the curry powder, cook to a paste. Add carrots and potatoes, and cook for a few minutes to allow the carrots to sweat out some of their juices.",
+      "Next, pour the broth into the pot, and season with  salt and pepper. Bring to a boil; then reduce heat to low.",
+      "Simmer for 15 to 20 minutes, until carrots are tender. Remove and puree soup in small batches using a food processor or blender, or if you have an immersion blender, it can be done in the pot. Reheat soup if necessary, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tablepoon Coconut Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "quartered",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b13eb9c5cb7ffa3f8f6d35e490a54c210ea08356214138d64480f448cc4fdd7",
+    "lineage_hash": "e6124009c24eabe70be832f51568cbb8e0db36eacb6cf7af2e6f971952ab318a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/an-easy-carrot-soup/",
+    "fetchedAt": "2026-09-25T19:24:51.863Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/an-easy-carrot-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

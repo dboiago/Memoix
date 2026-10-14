@@ -1,0 +1,250 @@
+{
+  "recipe": {
+    "name": "Dal Tadka & Spicy Aloo",
+    "time": "30-40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai, add oil, once it’s hot, add mustard seeds, garlic cloves, curry leaves and let it splutter.",
+      "Add ginger, dry kashmiri red chillies and saute it for a minute.",
+      "Add onions, tender coriander stems, salt to taste and cook it for 4-5 minutes until the onions are golden in colour.",
+      "Add dry kashmiri red chillies, curry leaves and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a pan or kadai, add oil, once it’s hot, add potatoes and shallow fry until golden in colour.",
+      "Add degi red chili powder, turmeric powder and cook it for 4-5 minutes on medium flames.",
+      "Add salt to taste, prepare tadka and give it a good mix.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared dal tadka and steam rice.",
+      "In a handi, add prepared tadka, cooked dal, water to adjust the consistency and simmer it for 10-12 minutes on medium flames.",
+      "Finish it with sugar, curry leaves, ghee and give it a good mix.",
+      "Transfer it to a serving bowl and garnish it with coriander sprig.",
+      "Serve hot with prepared spicy aloo and steam rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "boiled & diced",
+        "amount": "4",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Spicy Aloo",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Toor Dal",
+        "unit": "C",
+        "notes": "cooked",
+        "amount": "2",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chana Dal",
+        "unit": "C",
+        "notes": "cooked",
+        "amount": "2",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly crushed",
+        "amount": "1",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For South Indian Style Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a0af3f587805de335d5ae7abea6ceb5336b641820a87b440a57d1e001f275dc",
+    "lineage_hash": "eedc8fccf9c33f8b5a1dbc0c3d9768a716d60e4f7759c2055bfc7da839c21e53"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-tadka-spicy-aloo/",
+    "fetchedAt": "2026-08-02T20:37:56.604Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-tadka-spicy-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

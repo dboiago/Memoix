@@ -1,0 +1,7 @@
+I have three flavours to get you started. Try the [Raspberry and rose éclairs](https://www.greatbritishchefs.com/recipes/raspberry-and-rose-eclair-recipe) for something pink and fruity, with a delicate touch of rose. Or the zingy [Gin, citrus and pink peppercorn éclairs](https://www.greatbritishchefs.com/recipes/gin-citrus-peppercorn-eclair-recipe) that couple the botanical notes of dry gin with red grapefruit, orange and lemon zests and floral pink peppercorns. For something even more decadent and luxurious, the [Salted caramel and lemon thyme éclairs](https://www.greatbritishchefs.com/recipes/salted-caramel-eclairs-recipe) showcase the rich, lightly bitter notes of caramelised sugar, balanced with flaky sea salt and flecks of bright lemon thyme.
+
+Or make up your own combinations! Choux pastry couldn’t really be more flexible when it comes to added flavours, and éclairs are the perfect vehicle for an array of pastry creams, icings and glazes. You are only limited by your imagination…[](https://www.greatbritishchefs.com/recipes/salted-caramel-eclairs-recipe)
+
+All the accompanying pastry cream recipes yield enough filling for around six éclairs, but I have made this choux pastry recipe a little more generous to allow for mishaps. Leftovers can be filled with all manner of tasty treats – even savoury. I popped a lovely bit of pecorino in my spare éclairs and they were delicious!
+
+Choux pastry shells can be made ahead and frozen – just be sure to wrap well. To defrost for use, re-crisp in a 150°C oven for about 10 minutes.

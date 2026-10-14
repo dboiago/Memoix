@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Achaari Paneer Tikka with Grilled Watermelon",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate paneer and capsicum with nimboo achaar masala and keep aside for 30 minutes. Arrange them onto skewers.",
+      "Heat oil in pan and grill it for 3 minutes each side on medium flame.",
+      "Remove and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into 1 inch cubes",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nimboo Achaar Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Skewers",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon",
+        "unit": null,
+        "notes": "seedless, peeled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta Cheese",
+        "unit": "C",
+        "notes": "crumbled",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2b35650582f2ac0b91c8c824ab36a0bacbc82eb66d2c2a4874437c01aa02fe9f",
+    "lineage_hash": "d2061e985a2417669a1607ded2e555f6635e21d22462e20b6d12c1e24bec9526"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/achaari-paneer-tikka-with-grilled-watermelon/",
+    "fetchedAt": "2026-08-02T15:00:44.557Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/achaari-paneer-tikka-with-grilled-watermelon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

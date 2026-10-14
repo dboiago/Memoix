@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Carne a la Tampiqueña",
+    "time": "33 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "941",
+      "carbohydrateContent": "15",
+      "fatContent": "71",
+      "proteinContent": "61"
+    },
+    "directions": [
+      "In a large frying pan over medium-low heat, melt the butter. When the butter foams, add the onions and cook, stirring occasionally, until translucent and starting to brown lightly, 12–14 minutes. Add the chile strips and cook, stirring, for 2–3 minutes to mix well. Remove from the heat and set aside.",
+      "Prepare a fire in a charcoal or gas grill for direct grilling over medium-high heat. Preheat the broiler.",
+      "Season the steak on both sides with salt and pepper and cut into 4 equal servings. Line a sheet pan with aluminum foil.",
+      "Place the steak on the grill, close the lid, and grill, turning once, for 2–3 minutes on each side for medium-rare to medium, or cook to your desired doneness. Transfer the steak to the foil-lined sheet pan and let rest for 2 minutes. If you want to serve the steak a la mexicana, transfer the steak to a cutting board, chop it, and then return it to the sheet pan.",
+      "Top the steak with the onion and chile mixture and sprinkle with the cheese. Place under the broiler and broil until the cheese melts and bubbles, 1–2 minutes. Serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anaheim",
+        "unit": null,
+        "notes": "alt: Hatch chiles, roasted, peeled, stemmed, and cut into 1-inch strips",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skirt Steak",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher or Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca",
+        "unit": "C",
+        "notes": "alt: asadero cheese, shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81a7949f3f08b41c50f2e0dc257c6c2d6e0e71d5d6520846b1c23ca2d71ec2ee",
+    "lineage_hash": "73828f6d0cfc3ef8fae6b0367764728194a84eb98f838ab6d56c53561241f394"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/tampiquena-steaks-and-grilled-avocado-video/",
+    "fetchedAt": "2026-08-02T01:25:59.094Z"
+  },
+  "rawSource": "https://muybuenoblog.com/tampiquena-steaks-and-grilled-avocado-video/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

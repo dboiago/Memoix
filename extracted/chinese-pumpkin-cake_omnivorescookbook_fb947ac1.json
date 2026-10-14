@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Chinese Pumpkin Cake (南瓜饼)",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "134",
+      "carbohydrateContent": "28.4",
+      "fatContent": "1.1",
+      "proteinContent": "2.5"
+    },
+    "directions": [
+      "Mix the pumpkin puree with the glutinous rice flour to make a dough",
+      "Divide the dough into small pieces and shape it into balls",
+      "Shape the red bean paste into small balls for the filling",
+      "To assemble, flatten the dough with your hands to form a disk",
+      "Place the red bean paste filling in the center",
+      "Wrap the dough around the filling to seal it",
+      "Round out the filled cake then gently flatten it",
+      "Dip both sides into bread crumbs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Puree (or 25 Oz (700 G) Pumpkin)",
+        "unit": "can",
+        "notes": "15 oz",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glutinous Rice Flour",
+        "unit": "C",
+        "notes": "250 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray (or Oil for Frying)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bean Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2374f509c66da3fc82f8e7d09e2e97d11225de753a5a661b98fe60de345359a",
+    "lineage_hash": "6948cd9e6f4b60e5336c78e171076133ee8cdfc1fb10dbc6799189248ee7ab96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-pumpkin-cake/",
+    "fetchedAt": "2026-08-01T20:32:12.366Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-pumpkin-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

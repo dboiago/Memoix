@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Biscuit Cake",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease the baking tin with oil and line it with butter paper.",
+      "Take a mixer jar and add in biscuits along with powdered sugar and blend it together to a fine powder, remove in a vessel.",
+      "Now gently pour in milk to get the mixture into a batter consistency.",
+      "Lastly add in fruit salt and give it a gentle mix.",
+      "It shouldnât be very thin but should be of pouring consistency.",
+      "Pour the prepared cake batter in the lined baking tin.",
+      "Heat a heavy bottom kadhai or pot on medium flame and cover the base with salt. Place a stand in it and place the cake tin on the stand. Cover with lid and cook for 50-60",
+      "Use a skewer or a knife to insert and check if the cake is properly cooked. If it comes out clean then itâs done and remove from the oven.",
+      "Let it cool down to room temperature and then remove from the tin.",
+      "The sponge is ready and can be eaten as it is or can also be topped with icing or glaze."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate Biscuit",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ca224a719dc4b877b12db583bee3b5aac0ec8703ce6fd9204dd39cda7aa1dba",
+    "lineage_hash": "15f943ebca39d3fb86e77478f7e54d35c5fc57c39d4c8f68948043ec29efb7f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/biscuit-cake/",
+    "fetchedAt": "2026-08-02T19:55:26.848Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/biscuit-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

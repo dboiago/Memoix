@@ -1,0 +1,59 @@
+{
+  "url": "https://www.baking-sense.com/2020/04/29/classic-blondies/",
+  "slug": "classic-blondies-with-a-crackly-crust_baking-sense_b1beb754",
+  "title": "Classic Blondies with a Crackly Crust",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T21:02:31.986Z",
+  "ldName": "Classic Blondies",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "16",
+    "16 blondies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bar cookies, easy",
+  "ldIngredientsRaw": [
+    "6 oz unsalted butter (melted)",
+    "12 oz brown sugar (1 ½ cups)",
+    "3  large eggs",
+    "1 tablespoon vanilla extract",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "½ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Butter a 9&quot; square baking pan and line with parchment paper. You can just butter the pan but the parchment makes it much easier to remove the blondies from the pan.",
+    "In a large bowl, combine 6 oz&#32;unsalted butter (melted) with 12 oz&#32;brown sugar. Add 3&#32;large eggs and 1 tablespoon&#32;vanilla extract. Mix to combine then stir vigorously for 30 seconds.",
+    "Add 7 ½ oz&#32;all purpose flour and ½ teaspoon&#32;table salt. Spread the batter into the pan.",
+    "Bake until the center springs back when lightly pressed, and a toothpick inserted in the center comes out with a few wet crumbs, about 25 minutes.",
+    "Cool to room temperature before removing from the pan and cutting into 16 squares."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 blondie",
+    "calories": "220 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "3 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "92 mg",
+    "sugarContent": "21 g",
+    "transFatContent": "0.4 g",
+    "fiberContent": "0.4 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "6 oz unsalted butter (melted)",
+    "12 oz brown sugar (1 ½ cups)",
+    "3 large eggs",
+    "1 tablespoon vanilla extract",
+    "7 ½ oz all purpose flour (1 ½ cups, see note)",
+    "½ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2018/10/19/chocolate-bourbon-pecan-pie/",
+  "slug": "chocolate-bourbon-pecan-pie_baking-sense_a28210bc",
+  "title": "Chocolate Bourbon Pecan Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:33:48.359Z",
+  "ldName": "Chocolate Bourbon Pecan Pie",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bourbon, pecans, southern",
+  "ldIngredientsRaw": [
+    "1/2 recipe Perfect Pie Crust (chilled and rested)",
+    "9 oz pecans (2 cups, chopped)",
+    "2 oz unsalted butter",
+    "2 ounces unsweetened baking chocolate (chopped)",
+    "6 oz brown sugar (¾ cup)",
+    "8 oz light corn syrup (⅔ cup)",
+    "1 teaspoon pure vanilla extract",
+    "2 oz bourbon (¼ cup)",
+    "¼ teaspoon salt",
+    "4  large eggs"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F.",
+    "Roll the pie dough to fit a 9&quot; pie plate, crimp the edges and refrigerate while the oven preheats.",
+    "Dock the bottom of the pie dough 6-8 times with a fork. Line the crust with foil and fill the foil with dried beans or pie weights. Bake the crust until the dough is almost set, about 20 minutes. Remove the foil and beans and continue baking until the dough is set and just beginning to brown, about 5 minutes. Remove the pan from the oven. Reduce the heat to 325 °F.",
+    "While the crust is baking, toast 9 oz&#32;pecans in a dry skillet until fragrant and just beginning to brown. Coarsely chop the nuts and pour them into the baked crust when it comes out of the oven.",
+    "Combine 2 oz&#32;unsalted butter and 2 ounces&#32;unsweetened baking chocolate in a large microwave safe bowl. Microwave in 30 second increments, stirring in between, until the chocolate is completely melted.",
+    "Add 6 oz&#32;brown sugar, 8 oz&#32;light corn syrup, 1 teaspoon&#32;pure vanilla extract, 2 oz&#32;bourbon and ¼ teaspoon&#32;salt. Mix until blended. Whisk in 4&#32;large eggs.",
+    "Pour the filling over the pecans and bake until the filling is set, about 20 minutes. The filling should softly jiggle as a mass when it&#39;s ready.",
+    "Serve slightly warm or at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "463 kcal",
+    "carbohydrateContent": "45 g",
+    "proteinContent": "6 g",
+    "fatContent": "30 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "78 mg",
+    "sodiumContent": "145 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "36 g",
+    "unsaturatedFatContent": "20 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 recipe Perfect Pie Crust (chilled and rested)",
+    "9 oz pecans (2 cups, chopped)",
+    "2 oz unsalted butter",
+    "2 ounces unsweetened baking chocolate (chopped)",
+    "6 oz brown sugar (¾ cup)",
+    "8 oz light corn syrup (⅔ cup)",
+    "1 teaspoon pure vanilla extract",
+    "2 oz bourbon (¼ cup)",
+    "¼ teaspoon salt",
+    "4 large eggs"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

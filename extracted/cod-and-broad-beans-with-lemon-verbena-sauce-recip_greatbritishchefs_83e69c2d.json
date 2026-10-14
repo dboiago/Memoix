@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Cod and Broad Beans with Lemon Verbena Sauce",
+    "time": "1 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The gooseberries in this dish are packed in salt for 2 weeks and then stored in cider vinegar, so these will need to be prepared well in advance. However, the dish can be served without these if preferred",
+      "Combine the cider vinegar, sugar and water in a bowl and add the rhubarb. Set aside to pickle",
+      "Brine the fish by dissolving the salt in the warm water. Allow to cool and then add the cod, ensuring it is completely submerged. Leave to brine in the fridge for 1 hour",
+      "Make the sauce by pouring the wine into a large saucepan. Bring to the boil and cook for 5 minutes to reduce, then add the butter, spinach and lemon verbena. Blend with a hand blender until very smooth then transfer to a bowl set over ice to cool",
+      "Place the broad beans into a bamboo steamer set over a pan of simmering water. Cook for 3–5 minutes, then refresh in iced water (leave the steamer over the water for the fish). Remove the beans from their pods and set aside",
+      "When ready to serve, remove the fish from the brine and pat dry, cutting it into 4 equal portions weighing 125g. Place in the steamer to cook for a few minutes until just cooked (it should still be slightly translucent). Meanwhile, gently reheat the verbena sauce",
+      "Divide the sauce between 4 bowls, then place the portions of fish on top. Add the broad beans alongside with the pickled gooseberries (if using), then finish with the pickled rhubarb"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "312",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "312",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Bean Pods",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Rhubarb",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c33c960d21fd5103fc21d14bd7aa118644f5fe3c02fcb5828e44fc22b1503de5",
+    "lineage_hash": "5fa47231407666e4664370f24969620df380dc1b57719d649e4dcae08e69a9e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-lemon-verbena-sauce-recipe",
+    "fetchedAt": "2026-08-03T07:00:16.370Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-lemon-verbena-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Blueberry Compote",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the blueberries to a small saucepan with the icing sugar and a good squeeze of lemon juice",
+      "Cook over a medium heat for 10 minutes, stirring occasionally until the blueberries start to collapse and release their juices. If you want a thicker compote, add more sugar. Taste the compote at the end and add a squeeze more lemon juice, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59e3cdcbcf0043ea87e7e05d1e45131625ec6c15edbaf931a45f5fa25a0dfdf5",
+    "lineage_hash": "ba67ca0da068d000a68d34e5b88c0cc00dc57843c1c9a10556df4fe0ee5b1736"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-compote-recipe",
+    "fetchedAt": "2026-08-03T08:11:10.474Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-compote-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Cauliflower Cheese Croquettes",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the potatoes on a baking tray, prick a few times with a fork then place in the oven for about 1 hour, or until fluffy and cooked through",
+      "When the potatoes are cool enough to handle, scoop out the insides and place in a large bowl",
+      "Place the cauliflower in a steamer basket set over water and steam for 7–10 minutes or until tender, then leave to cool. Mash the cauliflower lightly with a fork and add it to the potato mixture",
+      "Sprinkle in the fennel seeds, cumin seeds, chilli, salt and black pepper and mix well. Add the cubes of cheese and gently toss the mixture until evenly combined",
+      "Make even sized ‘sausages’ with the croquette mixture, then roll and coat them in plain flour, then the egg and finally coat the panko breadcrumbs. I made about 14 croquettes from this quantity of ingredients",
+      "Place the croquettes in the fridge to chill and set for 30–60 minutes. When you are ready to fry them, heat the oil in deep-fryer or large heavy-based saucepan",
+      "Deep fry the croquettes for 2–3 minutes or until golden, then transfer onto kitchen paper with a slotted spoon. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baking Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Florets",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "cut into cubes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "you may need extra",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77e6f6115067b5b75d0e2dfbab05c4608c9e81fbb748cb3a0de0cea011d8b0c4",
+    "lineage_hash": "7fab72c43c591ad4312efa226d746d11c8ce16486cc76f67139e9d35cc36d65c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-croquettes-recipe",
+    "fetchedAt": "2026-08-03T12:23:52.687Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-croquettes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

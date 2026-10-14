@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Classic Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients in a mixing glass with ice, strain into a chilled cocktail glass (or ice-filled double rocks glass) and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e9f1d6a202a99507adc5e1f6eb609141ae25a19b4fb972c10dcf5cda97b57cc",
+    "lineage_hash": "da32f8486ae7db27f1ec4ae7ce5ae22aa977e8cbead02219848165a5a26b752b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/negroni-recipe/",
+    "fetchedAt": "2026-08-04T00:55:06.582Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/negroni-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

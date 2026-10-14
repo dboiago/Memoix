@@ -1,0 +1,334 @@
+{
+  "recipe": {
+    "name": "Achari Chicken Curry",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, salt to taste, pickle oil and curd.",
+      "Marinate everything well and keep aside for 5 minutes.",
+      "In a mortar pestle, add green chilli, ginger, garlic cloves, salt to taste and make a smooth paste of it.",
+      "In a pan, add fennel seeds, cumin seeds, fenugreek seeds, mustard seeds, nigella seeds.",
+      "Add dry kashmiri red chilli, and dry roast on low flame until the spices turn aromatic.",
+      "Transfer it into a bowl, add dry mango powder and sugar.",
+      "Transfer it into a grinder jar and grind it coarsely. Keep it aside for further use.",
+      "In a pan, add mustard oil on moderate heat.",
+      "Take large green chillies, slit into the middle and stuffed achari masala.",
+      "Place the prepared chillies into the hot oil and fry till light golden brown in color.",
+      "Remove from the flame and keep it aside for further use.",
+      "In the same kadhai, add mustard oil, once the oil gets hot, add onions, ginger garlic green paste and cook on low flame.",
+      "Once the onions turn light brown in color, add marinated chicken into it.",
+      "And saute them well. Once chicken gets well roasted, add coriander powder and saute them well.",
+      "Once coriander powder is roasted well, add tomato puree, achari masala, degi red chilli powder, pickled oil, and mustard oil and mix everything well.",
+      "Add water, achari masala, prepared fried stuffed chillies, little water and mix well.",
+      "Cover it with a lid and cook on medium flame.",
+      "Add mango pickle and once again cover it with a lid and let it cook for a while.",
+      "Garnish with some achari masala and coriander sprig.",
+      "Serve hot with paratha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Pickle Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "⅓",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, sliced",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No Dry Kashmiri Red Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Frying Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "large",
+        "notes": "slit or picador chilli",
+        "amount": "3",
+        "section": "For Frying Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Achari Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Frying Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Frying Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Achari Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Pickle Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Achari Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Chillies",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Pickle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Achari Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fc1f807b70c7f5f505e8d90de4e9d9bf3367abd194ee5b1773b769d60622f0a",
+    "lineage_hash": "6584f6351404ad8a912d57a6994bac45db967ee7288e050e0b558a3744da2d7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/achari-chicken/",
+    "fetchedAt": "2026-08-02T14:20:38.673Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/achari-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

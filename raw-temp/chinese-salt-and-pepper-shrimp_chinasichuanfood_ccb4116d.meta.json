@@ -1,0 +1,65 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-salt-and-pepper-shrimp/",
+  "slug": "chinese-salt-and-pepper-shrimp_chinasichuanfood_ccb4116d",
+  "title": "Chinese Salt and Pepper Shrimp",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:55:24.619Z",
+  "ldName": "Chinese Salt and Pepper Shrimp",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course, Snack",
+  "ldKeywords": "pepper, shrimp",
+  "ldIngredientsRaw": [
+    "300 g shrimp ( ,deveined)",
+    "1/2 tsp. salt",
+    "1  thumb ginger ( ,cut into smaller sizes)",
+    "1/4 cup cornstarch",
+    "1 tsp. salt",
+    "1 tbsp. whole Sichuan peppercorn",
+    "oil for shallow frying",
+    "2  garlic cloves ( ,minced)",
+    "1  scallion white ( ,minced)",
+    "1/4  fresh green pepper ( ,minced (optional))",
+    "1/4  fresh red pepper ( ,minced (optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Devein the shrimp and marinate with salt and ginger. Set aside for 15 minutes.",
+    "During this process, let make the real deal \"salt and pepper\". Toast Sichuan peppercorn with salt over slow fire until aromatic (takes around 1 minute). Transfer the mixture out and then ground into powder.",
+    "Coat shrimp with starch. Shake off extra starch before frying.",
+    "Heat up oil in wok until you can see waves on the surface. Fry the shrimp for to 1 minute by two batches. Transfer shrimp out. High oil temperature is the key factor to a great flavor.",
+    "Pour the extra oil out and leave only around 1/2 tablespoon. Fry garlic, scallion and chopped fresh peppers until aromatic.",
+    "Return the shrimp and sprinkle 3/4 of the salt and pepper.",
+    "Transfer out and sprinkle the remaining on the surface or on small corner of the serving plate."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "236 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "31 g",
+    "fatContent": "2 g",
+    "cholesterolContent": "378 mg",
+    "sodiumContent": "2620 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g shrimp  ,deveined",
+    "1/2 tsp. salt",
+    "1 thumb ginger  ,cut into smaller sizes",
+    "1/4 cup cornstarch",
+    "1 tsp. salt",
+    "1 tbsp. whole Sichuan peppercorn",
+    "oil for shallow frying",
+    "2 garlic cloves  ,minced",
+    "1 scallion white  ,minced",
+    "1/4 fresh green pepper  ,minced (optional)",
+    "1/4 fresh red pepper  ,minced (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

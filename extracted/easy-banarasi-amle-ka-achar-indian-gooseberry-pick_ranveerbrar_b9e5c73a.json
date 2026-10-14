@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Banarasi Amle ka Achar (Indian Gooseberry Pickle from Benaras)",
+    "time": "10 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the Amlas well and air dry completely on a kitchen towel.",
+      "When dr, steam for 8-10 minutes. Cool completely.",
+      "If using small amlas, leave whole. If using large amlas, open up segments and remove the stones.",
+      "Meanwhile, prepare the pickle spice blend. Heat a pan on a low flame and dry roast the mustard, fenugreek and fennel seeds individually until they darken and get aromatic. Do not burn. Cool and transfer to a grinder. Blend to a fine powder and keep aside.",
+      "To make the pickle, heat the mustard oil in a pan. Once hot, add the mustard seeds and asafoetida and allow to splutter, do not burn. Take pan off the flame.",
+      "Add the steamed amlas. Stir fry for 1-2 minutes or until the amlas absorb the flavoured oil a little. Add the chilli and turmeric powders, salt pickle spice blend and mix well. The pickle can be eaten immediately but flavours develop over time. Will last upto a month in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For the Pickle Spice Blend",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Pickle Spice Blend",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Pickle Spice Blend",
+        "isOptional": false
+      },
+      {
+        "name": "Small Indian Gooseberry",
+        "unit": "C",
+        "notes": "or about 14 large ones",
+        "amount": "1",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Pickle",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "add as required",
+        "amount": "2",
+        "section": "For the Pickle",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1a20b7dee89f64e8f3664c1552efa5c22b6e635a1a493ee12596a3e7f10d091",
+    "lineage_hash": "f8bab78d9d15bcf316c54681af1c10045eb4a20944b409357294803d3103d602"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/banarasi-amle-ka-achar/",
+    "fetchedAt": "2026-08-02T10:05:59.812Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/banarasi-amle-ka-achar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Blended Aperol Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour in a blender and add 12 oz. of ice. Makes one 16 oz. serving.",
+      "Orange-infused Aperol: Add the grated zest of 4 large oranges to ½ liter of Aperol. Put in blender and process until very fine and emulsified. Let sit for 24 hours and strain."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sparkling Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange-infused Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b351a7e1f1cd96e4c039afb334e196242ed031c3beeb34964cc65b9401e134c0",
+    "lineage_hash": "87b3c2a1c314da6114ce328cb46c458fab52c9d9478a85403ec32cd5d16ea80b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blended-aperol-spritz/",
+    "fetchedAt": "2026-08-03T19:32:42.701Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blended-aperol-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

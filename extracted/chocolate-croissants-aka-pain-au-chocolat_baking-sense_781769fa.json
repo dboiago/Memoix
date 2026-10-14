@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Chocolate Croissants",
+    "time": "4 hr 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "312",
+      "carbohydrateContent": "31",
+      "fatContent": "20",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Prepare the croissant dough through step #9 in the recipe. After the dough is chilled for 2 hours proceed with rolling and forming the Chocolate Croissants.",
+      "Line 2 baking sheets with parchment paper or a silicone baking mat. Roll the chilled dough to a 24” long x 16” wide rectangle.",
+      "Working from left to right, measure and mark 4” increments along the top and bottom edge of the dough. Use a ruler to line up the top and bottom marks and use a pizza cutter to cut 6 strips of dough. Cut each strip into four, 4\" squares. You should now have a total of 24 four inch squares.",
+      "Place 4 chocolate batons in the middle of each each square. Fold the dough over the chocolate and pinch the bottom seam to close.",
+      "Set the croissants, seam side down, onto the prepared baking sheets, 3” apart. You should fit a dozen croissants per half sheet pan. Cover with plastic wrap and set in the refrigerator overnight. (see note)",
+      "In the morning. Take the croissants out of the refrigerator. Allow them to proof at room temperature for 1-2 hours. The exact time needed for proofing will vary depending the temperature of your kitchen. They should be at least 50% larger than they started and feel airy and puffy. Preheat the oven to 400°F. Brush the croissants with egg wash. Bake the croissants until golden brown, 15-20 minutes. Serve warm or room temperature. Sprinkle with a little powdered sugar, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Classic Croissant Dough or",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Sourdough Croissant Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Batons",
+        "unit": null,
+        "notes": "see note",
+        "amount": "96",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar for Decoration",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb1c72d8831b0f1fa41ee2690fd9d845bb38322df6ceedd819eaa5f500d16420",
+    "lineage_hash": "dd64202c0ea0ccd38d4ecebba8b227abe735aa548e956832b0c13f7b7adeb13c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/02/19/chocolate-croissants-pain-au-chocolat/",
+    "fetchedAt": "2026-08-02T02:59:50.233Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/02/19/chocolate-croissants-pain-au-chocolat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

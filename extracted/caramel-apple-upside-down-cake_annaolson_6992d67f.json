@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Caramel Apple Upside Down Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F. Grease a 9 inch cake pan and place it on a parchment-lined baking tray.",
+      "For the caramel apple layer, arrange the apples tightly together in the bottom of the prepared pan. Pour the water and lemon juice into a small sauce pot and add the sugar and butter. Bring this mixture to a boil without stirring and continue to boil, occasionally brushing the sides of the pot down with water, until it is a rich caramel color, four to six minutes. Remove the pot from the heat and pour the caramel over the apples, coating them as much as possible (but don’t worry if they are not completely coated). Set aside while preparing the cake.",
+      "Beat the butter, sugar and brown sugar together. Add the egg yolks, sour cream and vanilla and beat until blended.",
+      "In a separate bowl, sift the flour, baking powder, cinnamon and salt and stir this into the butter mixture.",
+      "In another bowl, whip the four egg whites until they hold a soft peak and fold them into the cake batter in two additions. Scrape the batter overtop of the apples and spread evenly.",
+      "Bake the cake for about 45 minutes, until a tester inserted in the centre of the cake comes out clean. Allow the cake to cool for 30 minutes. Run a knife around the inside edge of the cake pan and place a serving plate overtop the pan. Flip the cake over and lift the pan off, revealing the caramel apple top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "peeled, cored and each cut into 8 wedges",
+        "amount": "3",
+        "section": "Caramel Apple Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Caramel Apple Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Caramel Apple Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Caramel Apple Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Caramel Apple Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "¼",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated, at room temperature",
+        "amount": "4",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "#our",
+        "amount": "1¼",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53d76ffa334dd5cf05604cfb037e3c35a00638eefdfd64754f83b394bee216b8",
+    "lineage_hash": "5e32d46e4069aaef0293db683fc976c5701cc06471b307fd44da4a2efdb6813c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/caramel-apple-upside-down-cake/",
+    "fetchedAt": "2026-08-01T17:17:19.367Z"
+  },
+  "rawSource": "https://annaolson.ca/project/caramel-apple-upside-down-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

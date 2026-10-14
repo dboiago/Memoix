@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Japanese Iced Coffee",
+    "time": "3 to 3:30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grab your tools. You’ll need a coffee scale, grinder, Chemex, filter and kettle.",
+      "Rinse your Chemex filter with hot water, then discard the water. Fill the Chemex with 425 grams of ice, then position the filter on top.",
+      "Coarsely grind your coffee, weigh out 96 grams, then place the ground coffee in the Chemex filter.",
+      "In a kettle, heat 680 grams of water to just before the boiling point, then remove the kettle from the heat and let the water settle.",
+      "Pour enough water to just saturate the coffee bed. Let it expand for 30-45 seconds. Pouring slowly in concentric circles, continue adding water slowly in stages, submerging the ground coffee as you go. For this recipe, try to add all the water in 3 to 3:30 minutes. Once you’ve added all water, give it a quick stir and let it drain."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee",
+        "unit": "g",
+        "notes": "coarsely ground",
+        "amount": "96",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "g",
+        "notes": null,
+        "amount": "425",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "heated to just before boiling point",
+        "amount": "680",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "450457e893a57f825e2d7a5bdd110c45c809e712ced510ee7f68084b98d168d2",
+    "lineage_hash": "9f777c9db38074bf11e9e9b54e3ab223f8dac545a5228cb81c2dd4b1b548b783"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/japanese-iced-coffee/",
+    "fetchedAt": "2026-08-01T19:21:13.464Z"
+  },
+  "rawSource": "https://imbibemagazine.com/japanese-iced-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

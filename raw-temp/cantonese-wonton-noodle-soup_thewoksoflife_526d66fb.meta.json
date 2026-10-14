@@ -1,0 +1,71 @@
+{
+  "url": "https://thewoksoflife.com/cantonese-wonton-noodle-soup/",
+  "slug": "cantonese-wonton-noodle-soup_thewoksoflife_526d66fb",
+  "title": "Cantonese Wonton Noodle Soup",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T02:50:48.226Z",
+  "ldName": "Cantonese Wonton Noodle Soup",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soups and Stocks",
+  "ldKeywords": "wonton noodle soup",
+  "ldIngredientsRaw": [
+    "8 oz. ground pork ((225g))",
+    "3/4 teaspoon salt ((plus more to taste))",
+    "3/4 teaspoon sugar",
+    "1/2 teaspoon sesame oil",
+    "1/8 teaspoon white pepper",
+    "1 tablespoon shaoxing wine",
+    "2 teaspoons oil",
+    "1 tablespoon water",
+    "1/2 teaspoon cornstarch",
+    "6 oz. shrimp ((170g, chopped))",
+    "1/2 pack wonton wrappers ((the square-shaped egg wonton skins))",
+    "12 oz. wonton egg noodles ((340g, see photo above))",
+    "8 cups high quality, low sodium chicken broth ((1.9 liters))"
+  ],
+  "ldInstructionsRaw": [
+    "Start by making the filling. Add the pork, 3/4 teaspoon salt, sugar, sesame oil, white pepper, wine, oil, water, and cornstarch to a bowl and whip everything together by hand for 15 minutes, or in a food processor for 5 minutes. You want the pork to look like a paste. Mix in the chopped shrimp.",
+    "To make the wontons, take a wrapper, and add only about a teaspoon of filling. Use your finger to coat the edges with water (this helps the two sides seal together), and fold in half so you have a triangle shape. Bring together the two outer corners, and press to seal. Continue assembling until you've used up the filling (this recipe should make about 3 dozen wontons).",
+    "To assemble the dish, heat up the chicken broth in a medium pot. Adjust seasoning by adding salt, to taste.",
+    "Bring a large pot of water to a boil and boil the noodles just until al dente. Divide among 6 bowls. Add the wontons and boil for about 4-5 minutes until they float and the filling is cooked through. Divide wontons among the bowls, and cover with hot broth. Serve!",
+    "If you want your soup a little more flavorful, you can also add a couple drops of sesame oil, chopped scallion, and white pepper over the top!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "408 kcal",
+    "carbohydrateContent": "41 g",
+    "proteinContent": "25 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "118 mg",
+    "sodiumContent": "844 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 8 oz. ground pork (225g)",
+    "▢ 3/4 teaspoon salt (plus more to taste)",
+    "▢ 3/4 teaspoon sugar",
+    "▢ 1/2 teaspoon sesame oil",
+    "▢ 1/8 teaspoon white pepper",
+    "▢ 1 tablespoon shaoxing wine",
+    "▢ 2 teaspoons oil",
+    "▢ 1 tablespoon water",
+    "▢ 1/2 teaspoon cornstarch",
+    "▢ 6 oz. shrimp (170g, chopped)",
+    "▢ 1/2 pack wonton wrappers (the square-shaped egg wonton skins)",
+    "▢ 12 oz. wonton egg noodles (340g, see photo above)",
+    "▢ 8 cups high quality, low sodium chicken broth (1.9 liters)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

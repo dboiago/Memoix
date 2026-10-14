@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Crab Salad",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the vinaigrette, finely chop the lemongrass and place into a pot with the oil. Fry until the lemongrass starts to sizzle",
+      "Remove from the heat and allow to infuse for 30minutes - 1 hour before straining the oil into a bowl and discarding the lemongrass",
+      "For the avocado cream, blend the avocado flesh with the crème fraîche and half the lemon juice until smooth",
+      "Combine the infused oil with the remaining ingredients, whisk and season to taste with salt and pepper. Set aside",
+      "Season well and pour the remaining lemon juice on top. Chill until ready to serve",
+      "To make the salad, marinate the carrots and turnips in the lemongrass vinaigrette for 10 minutes",
+      "Meanwhile, bring a large pan of water to the boil. Add the crabs and cook for 6 minutes",
+      "Plunge into cold water for another 5 minutes before removing the flesh. Mix with crème fraîche, lemon juice, chilli and herbs. Season to taste with salt and pepper",
+      "Serve onto plates with the marinated vegetables, tomato quarters and pink grapefruit segments. Pour over the avocado cream and garnish with mint leaves, chervil and watercress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon Grass Stalk",
+        "unit": null,
+        "notes": "heart only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turnips",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crabs",
+        "unit": null,
+        "notes": "live",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": "segmented",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Watercress",
+        "unit": null,
+        "notes": "sprigs only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "348cb3364c570006674b577382cad477dcce3a3f824ac5c136a1e89e3e7da6e8",
+    "lineage_hash": "098f5354f402156d5c56b3ae185826e85855e8af0d03b8e9a9f714922a4fd56b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-salad-recipe",
+    "fetchedAt": "2026-08-03T21:47:52.530Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

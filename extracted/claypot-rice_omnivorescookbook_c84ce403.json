@@ -1,0 +1,226 @@
+{
+  "recipe": {
+    "name": "Claypot Rice",
+    "time": "2 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "360",
+      "carbohydrateContent": "24.2",
+      "fatContent": "17.4",
+      "proteinContent": "25.3"
+    },
+    "directions": [
+      "Roast the aromatics to release their fragrance.",
+      "Add the rest of the seasonings and boil the sauce until reduced.",
+      "Keep the aromatics in the sauce until it has cooled, then strain them out. You will get a slightly thickened sauce that’s super fragrant."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jasmine Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Soaking ahead of time",
+        "isOptional": false
+      },
+      {
+        "name": "Lap Cheong Sausages",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Soaking ahead of time",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Soaking ahead of time",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, cut into 3/4” (2 cm) pieces",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced into 1” pieces",
+        "amount": "3",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Soaking Liquid",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Seasoned soy sauce (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Gai Lan",
+        "unit": "stalks",
+        "notes": "Optional, trimmed and blanched",
+        "amount": "4",
+        "section": "Rice",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dca58deeae373320ef204c53f1d26e40b8e8af7748f0280c7a1d232e333f034b",
+    "lineage_hash": "32078469f2c125c800dc25976d8d18b1cc31338c01a669e4a0290629204b845b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/claypot-rice/",
+    "fetchedAt": "2026-08-02T06:58:45.288Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/claypot-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

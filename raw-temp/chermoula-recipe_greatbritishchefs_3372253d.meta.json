@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chermoula-recipe",
+  "slug": "chermoula-recipe_greatbritishchefs_3372253d",
+  "title": "Chermoula Recipe",
+  "byline": "by Marcello Tully",
+  "fetchedAt": "2026-08-03T09:00:48.343Z",
+  "ldName": "Chermoula",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "50g of coriander, roughly chopped",
+    "20g of parsley, leaves picked and roughly chopped",
+    "10g of garlic, (about 2 medium cloves)",
+    "35g of preserved lemon, halved and pips removed (about 1 medium lemon)",
+    "80ml of olive oil",
+    "1/2 tsp flaky sea salt",
+    "1/4 tsp paprika",
+    "1/4 tsp cumin powder",
+    "1 pinch of cayenne pepper",
+    "1 lemon wedge, juiced, to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Place all the ingredients apart from the lemon wedge into a blender and blitz to a coarse paste",
+    "Taste and season with fresh lemon juice if needed"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

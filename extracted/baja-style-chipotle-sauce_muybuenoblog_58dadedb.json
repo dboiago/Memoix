@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Baja Style Chipotle Sauce",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "59",
+      "carbohydrateContent": "2",
+      "fatContent": "6",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a food processor or blender, combine crema, chipotle in adobo and sauce, lemon zest and lemon juice, and salt until smooth; transfer to a small bowl.",
+      "If your sauce is too thick, you can add a little water to desired consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crema Mexicana",
+        "unit": "C",
+        "notes": "alt: sour cream",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Pepper in Adobo Sauce",
+        "unit": null,
+        "notes": "plus 1 tablespoon adobo sauce",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66ed72707df0827cd27b6a91919920f25596ae853e7a64587d77d5d47fd54eae",
+    "lineage_hash": "e7384764eb7a896d737bbba1a3363e6d65c54f5fcb60a295d29c55e55e5757bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/baja-style-chipotle-sauce/",
+    "fetchedAt": "2026-08-01T22:45:37.189Z"
+  },
+  "rawSource": "https://muybuenoblog.com/baja-style-chipotle-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

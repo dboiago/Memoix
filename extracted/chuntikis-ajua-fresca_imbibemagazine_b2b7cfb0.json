@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Chuntikis' Ajua' Fresca",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a bag or glass partially filled with ice. Serve with a fun straw.",
+      "Frutos Rojos Syrup Mix 8 oz. of granulated sugar with 1 cup of water and stir to dissolve sugar. Measure 8 oz. of red fruit (such as strawberries, raspberries, strawberry guava, or a combination), chop any large pieces of fruit if necessary, and add to the syrup. Cover the mixture and let it steep for several hours or overnight, then use a strainer to remove the solids, pressing with a rubber spatula to extract much of the juice. Keeps refrigerated for up to 1 week.",
+      "Hibiscus SyrupAdd 3/4 cup of dried hibiscus to 1 cup of room-temperature simple syrup (1:1). Let infuse for 1 to 2 hours, then strain out the solids. Keeps refrigerated for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Overproof Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Mineral Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon Liqueur",
+        "unit": "oz",
+        "notes": "such as Bols",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frutos Rojos Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "adf37fd8e851d5f969d32e88a68f380bc50a715070813c31ae9c671290b63e80",
+    "lineage_hash": "9e5cda1157489c4565cee345f75319539cc6e7176621f188e4233ff80bfbaf6a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chuntikis-ajua-fresca/",
+    "fetchedAt": "2026-08-03T21:37:34.970Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chuntikis-ajua-fresca/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Carrot Yeast Bread",
+    "time": "50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the carrots. Set aside.",
+      "Beat the eggs.",
+      "Melt the butter. Add the butter, vanilla and egg to the milk. Set aside.",
+      "In a deep bowl, sift the flour. Add the yeast, sugar and salt. Mix well.",
+      "Add the grated carrots to the flour and mix well.",
+      "Add the liquid to the dry ingredients. Adjust the liquid (milk) as necessary.",
+      "Mix well.",
+      "Dust with a little flour, knead until smooth and elastic (this might take about 10 minutes).",
+      "Leave to rest until it doubles in size. Punch down and then roll out.",
+      "Place in a prepared pan, cover with a towel and allow to rise for another 10 to 15 minutes.",
+      "Preheat the oven to 375 degrees F (190 degrees C).",
+      "Bake until golden brown, or for 20 to 25 minutes.",
+      "Remove from the pan and cool on a rack before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Envelop Yeast",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Melted",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Beaten",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil to Grease Bread Pan",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "finely, grated",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81aabdf47b742cbfde86b7f5d5462ed7638cd81da775fea3ca1faba06656de35",
+    "lineage_hash": "260cd0f09a8c7e18fb90177e389cbd3b976b1ec825f47aff299fde91b0eb7f66"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/carrot-yeast-bread/",
+    "fetchedAt": "2026-09-26T00:33:03.972Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/carrot-yeast-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

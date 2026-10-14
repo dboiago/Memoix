@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2019/10/24/yeasted-apple-cider-donuts/",
+  "slug": "apple-cider-donuts_baking-sense_2d651b7d",
+  "title": "Apple Cider Donuts",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:23:11.568Z",
+  "ldName": "Yeasted Apple Cider Donuts",
+  "ldTime": "PT800M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "12",
+    "12 donuts"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Dessert, Snack",
+  "ldKeywords": "autumn, donut, fried, yeast",
+  "ldIngredientsRaw": [
+    "32 oz apple cider (4 cups)",
+    "2 oz unsalted butter (cold)",
+    "4 oz warm water (½ cup)",
+    "2 ¼ tsp instant yeast",
+    "18 ¾ oz unbleached all-purpose flour (3 ¾ cups, see note)",
+    "1  large egg (room temp)",
+    "1 teaspoon cardamom",
+    "1 teaspoon cinnamon",
+    "1 teaspoon table salt",
+    "1 quart cooking oil",
+    "1 cup granulated sugar",
+    "2 tablespoons ground cinnamon",
+    "1/2  teaspoon cardamom"
+  ],
+  "ldInstructionsRaw": [
+    "Make the dough (day 1)",
+    "Make the Donuts (day 1 or 2)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 donut",
+    "calories": "394 kcal",
+    "carbohydrateContent": "61 g",
+    "proteinContent": "6 g",
+    "fatContent": "84 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "24 mg",
+    "sodiumContent": "205 mg",
+    "sugarContent": "24 g",
+    "transFatContent": "0.5 g",
+    "fiberContent": "3 g",
+    "unsaturatedFatContent": "74 g"
+  },
+  "htmlIngredientLines": [
+    "[Dough]",
+    "32 oz apple cider (4 cups)",
+    "2 oz unsalted butter (cold)",
+    "4 oz warm water (½ cup)",
+    "2 ¼ tsp instant yeast",
+    "18 ¾ oz unbleached all-purpose flour (3 ¾ cups, see note)",
+    "1 large egg (room temp)",
+    "1 teaspoon cardamom",
+    "1 teaspoon cinnamon",
+    "1 teaspoon table salt",
+    "1 quart cooking oil",
+    "[Coating Sugar]",
+    "1 cup granulated sugar",
+    "2 tablespoons ground cinnamon",
+    "1/2  teaspoon cardamom"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-eggplant-salad-recipe/",
+  "slug": "chinese-steamed-eggplant-recipe_chinasichuanfood_901baac5",
+  "title": "Chinese Steamed Eggplant Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:44:13.087Z",
+  "ldName": "Chinese Eggplant Salad Recipe",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Salad",
+  "ldKeywords": "Eggplant",
+  "ldIngredientsRaw": [
+    "2  small long eggplants (, or one large one)",
+    "1 tbsp. white vinegar (, for soaking optional )",
+    "fresh chili peppers ( 1 red and 1 green| cut into small circles)",
+    "1 tsp. minced ginger",
+    "3  garlic cloves ( , mashed)",
+    "1/2 tbsp. toasted sesame seeds",
+    "1 tsp. chili powder (, optional)",
+    "1 tsp. chopped scallion white",
+    "2 tbsp. vegetable cooking oil",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. sesame oil",
+    "2 tsp. black vinegar",
+    "1/4 tsp. salt or as needed",
+    "1 tbsp. boiled warm water",
+    "1/4 tsp. sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare and soak the eggplant",
+    "Make the sauce",
+    "Steam the eggplants",
+    "Serve"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "170 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "2 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "7 g",
+    "sodiumContent": "1373 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 small long eggplants , or one large one",
+    "1 tbsp. white vinegar , for soaking optional",
+    "[Sauce]",
+    "fresh chili peppers  1 red and 1 green| cut into small circles",
+    "1 tsp. minced ginger",
+    "3 garlic cloves  , mashed",
+    "1/2 tbsp. toasted sesame seeds",
+    "1 tsp. chili powder , optional",
+    "1 tsp. chopped scallion white",
+    "2 tbsp. vegetable cooking oil",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. sesame oil",
+    "2 tsp. black vinegar",
+    "1/4 tsp. salt or as needed",
+    "1 tbsp. boiled warm water",
+    "1/4 tsp. sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

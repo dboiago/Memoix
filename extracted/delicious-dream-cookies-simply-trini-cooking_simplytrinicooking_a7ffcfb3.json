@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Dream Cookies",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift together flour and baking powder. Set aside.",
+      "Beat butter, sugar, vanilla and coffee liqueur on medium speed, using a hand mixer, till light and fluffy. Scrape the sides of the bowl frequently.",
+      "Add dry ingredients to creamed mixture until blended and smooth.",
+      "Cover and chill in the refrigerator for 1 hour. Remove from fridge after the hour and begin the next step at once.",
+      "Preheat oven to 300 degrees F. Roll dough, into 1 inch balls. Place them 2 1/2 inches apart on an unbuttered baking sheet. Note: Do not grease the sheet.",
+      "Gently press an almond in the top of each ball.",
+      "Bake for 25 minutes or until golden brown. Cookies will be light and crisp. Cool on wire racks and store in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Softened",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps. Coffee Liqueur",
+        "unit": null,
+        "notes": "alt: amaretto",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bf0b99be1b364dd37d37067679e8cd6d10a032d040ddbdcb32fd53372300eb4",
+    "lineage_hash": "442b05fe4b3f9c57666b4ca8f1918088c31df3f6490a72f800f860a1d60bcba7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/dream-cookies/",
+    "fetchedAt": "2026-09-25T18:59:33.660Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/dream-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

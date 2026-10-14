@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Crispy Besan French Fries",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Tomato Wedges",
+      "Fresh Coriander Leaves"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl mix gram flour, degi red chilli powder, turmeric powder, salt, water, oil and mix everything properly and make a thick runny batter. Keep aside for at least 30 minutes.",
+      "After that pour this batter in a medium sized pan and place it on low heat.",
+      "Cook from both sides until light golden. Remove and keep aside to cool down.",
+      "Once cooled cut it in the strips like french fries.",
+      "Then deep fry in medium hot oil until golden brown and crispy.",
+      "Remove and serve with tempered ketchup and garnish with tomato wedges and coriander leaves.",
+      "In a pan heat oil and add mustard seeds, ginger, curry leaves, green chillies saute for a minute.",
+      "Switch off the flames and add little water mix properly then add tomato ketchup and bring everything together. Keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d086099a882de76d3a2f01b3720fdbd78cd0801af061e854c0eed15f758e6d2",
+    "lineage_hash": "ac01564ad78f7f623739246e875498310ab368c6714cb0ffe7db0c3fdf30cac9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/besan-ke-french-fries/",
+    "fetchedAt": "2026-08-01T20:26:07.571Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/besan-ke-french-fries/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

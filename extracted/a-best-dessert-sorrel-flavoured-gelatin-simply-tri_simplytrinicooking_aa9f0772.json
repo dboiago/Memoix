@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Sorrel Flavoured Gelatin",
+    "time": "17 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep pot, place the dried sorrel in water and allow it to boil for about 12 minutes. Strain the liquid. Set aside.",
+      "Place gelatin in a bowl and add the cold water. Allow it to soak (2 minutes). Place the gelatin in a sauce pan with the sorrel juice and sugar and bring to a boil until the sugar is dissolved. Remove from the fire and strain.",
+      "Place in a small bowl and refrigerate for 4 hours or until firm. Best served with evaporated milk"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatin Unflavoured",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Juice Unsweeten",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Sweeten Sorrel Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7aac6d57c0003771190b88cd3b0acb891a6a4bb816de7dac03141ace9b6a640c",
+    "lineage_hash": "6c4465d1481d43797c72c0890ab9bc54923394e001b1beb77296575659e6b953"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/sorrel-flavoured-gelatin/",
+    "fetchedAt": "2026-09-25T22:42:06.324Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/sorrel-flavoured-gelatin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chipotle Molasses Barbecue Sauce",
+    "time": "15 to 20 minutes",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a heavy saucepan and bring to a boil over medium heat.",
+      "Reduce the heat to medium-low and gently simmer the sauce, uncovered, until thick and richly flavored, 15 to 20 minutes.",
+      "Correct the seasoning, adding additional salt, pepper, sriracha, or sugar, as desired.",
+      "Let the sauce cool to room temperature for serving.",
+      "Store in clean jars away from heat or light.",
+      "Store in a covered container in the refrigerator for up to a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whiskey",
+        "unit": "C",
+        "notes": "alt: bourbon",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Chipotle Chiles",
+        "unit": null,
+        "notes": "minced, plus 1 to 2 teaspoons can juices",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Garlic",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a18cd7cbd92bc8de0134174f393bb9da506524217e8c3a3529c0353d0273db15",
+    "lineage_hash": "ac7faadd2d0d31cc24909492b70dd36563bf604ad6ce5d92e8c828e6dd28af53"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-molasses-barbecue-sauce-for-rib-wings/",
+    "fetchedAt": "2026-08-03T08:14:18.996Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-molasses-barbecue-sauce-for-rib-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

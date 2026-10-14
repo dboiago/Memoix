@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Chilli Flatbreads with Caramelised Onion and Tunworth",
+    "time": "1 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin 24 hours before cooking. Cut the butter into 6 pieces and leave out at room temperature. Place the milk and yeast in a bowl, stir and leave at room temperature to activate",
+      "Place the flour, salt and sugar into your food mixer bowl, then add the yeasted milk and mix with dough hook attached for 2–3 minutes until a combined. Pour in the eggs (part one) bit by bit until combined, then mix on speed 4 for 5 minutes– keep checking the temperature of the bowl is not getting too hot, it should be just warm to the touch",
+      "The dough will be ready when you can see the gluten window– do this by stretching the dough until it is thin enough to see light through without breaking. Once it is ready, place back in the mixer bowl, turn to speed 2 and add part 2 of the egg",
+      "Once the egg is incorporated, add the butter, piece by piece and then the chilli powder until incorporated into a smooth, shiny dough. Place the dough into a clingfilm lined container, stretching it into the corners so it is even. Cover with clingfilm then rest in the fridge for 24 hours",
+      "Remove the dough from the fridge, tip onto a floured surface then lightly dust with more flour. Flatten the dough then cut into strips, then 90g pieces. Shape into smooth balls, then roll out each one into a round flatbread around 14cm in diameter. Place onto a semolina lined tray, cover and leave to prove for 2 hours at room temperature (or if not cooking immediately, can be frozen at this stage)",
+      "Once proved, prod the top of each bread with your fingers a couple of times to achieve an even bake. Then place in the oven for 6–8 minutes ensuring the dough is cooked all the way through with a light colour",
+      "Remove and top with caramelised onions and the Tunworth cheese before placing under the grill for four to five minutes. Once the cheese has melted, take out and sprinkle the chives or freshly shaved truffle on top and serve up hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "27",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": "part 1",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "213",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": "part 2",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "133",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fine Semolina",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tunworth Cheese",
+        "unit": null,
+        "notes": "wheels, sliced",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "chopped, or fresh shaved truffle",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramelised Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce7580db54a7030f7ba6b833ef900cae90836f9fa63e21da20d090a2ae44c170",
+    "lineage_hash": "f69bafc57a17fa970cc5f73e7e94c4ad94ab327b30310235613e8d2a9099e72a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-onion-tunworth-flatbread-recipe",
+    "fetchedAt": "2026-08-02T19:11:24.869Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-onion-tunworth-flatbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

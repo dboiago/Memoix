@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Braised Pork Mince with Potato and Carrot",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by boiling the eggs for 6 minutes, then plunge into iced water to cool. Peel, then place in a bowl. Cover with the soy sauce and mirin and leave to cure whilst you make the braised pork",
+      "Place a high-sided frying pan over a medium–high heat and add the pork mince. Keep stirring until well-browned all over – you may have to pour out some of the fat which comes out of the meat so that the pork caramelises and doesn’t begin to stew",
+      "Once almost browned, add the minced shallot, garlic and five-spice and continue cooking until they have softened",
+      "Place the rock sugar into a jug and add the hot stock. Stir until dissolved, then add to the pan along with the light and dark soy sauces",
+      "Add the cubed potato and carrot, stir to combine then turn the heat to low. Place a lid on the pan and leave to braise for 15–20 minutes or until the potato and carrot is cooked through",
+      "Serve with rice, wilted mustard greens and the soy-cured eggs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "diced into 1cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced into 1cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticky Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Leaves",
+        "unit": null,
+        "notes": "or mustard greens",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b53e56411d30b463b8d94eff1c7990ddf0ae8c42f44baf5aec4fb0e33b468f16",
+    "lineage_hash": "1cd17f5f657b331bbefcc2003fe792ddb47494c037bcaa3a52f42ff8c46c7b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-minced-pork-potato-carrot",
+    "fetchedAt": "2026-08-03T23:58:06.406Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-minced-pork-potato-carrot",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

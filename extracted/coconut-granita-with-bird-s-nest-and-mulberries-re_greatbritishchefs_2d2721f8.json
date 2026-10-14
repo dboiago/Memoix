@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Coconut Granita with Bird's Nest and Mulberries",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the bird’s nest in cold water and leave in the fridge for 24 hours. Halfway through the soaking time, drain and refresh the water",
+      "Place the coconut water in a freezable container and season with a pinch of sugar. Freeze until solid",
+      "Once the bird’s nest has been soaking for 24 hours, drain and place in a pan with the goji berries. Cover with water and bring to a gentle simmer. Cover with a lid and cook for 50 minutes",
+      "Meanwhile, make the red wine liquor. Place all the ingredients in a small pan and bring to a simmer, then leave to reduce by a quarter. Leave to cool then store in the fridge",
+      "Once the bird’s nest and berries have finished simmering, drain both and submerge them in the apple juice, which will give them a boost of sweetness. Store in the fridge until needed",
+      "Place the halved blackberries and dried mulberries in two separate bowls and pour over the cooled red wine liquor. Set aside for 5 minutes",
+      "When ready to serve, cut the ball of coconut mochi ice cream into twelve equal segments and remove the frozen coconut water from the freezer. Use a fork to grate the block into a granita",
+      "Divide the yoghurt between the 2 serving plates and drain the berries from the red wine liquor. Place the mulberries and some of the blackberries on top of the yoghurt, along with the segments of mochi. Top with pieces of the bird’s nest and sprinkle over some lemon zest. Finish with a generous amount of granita (with the remaining blackberries studded throughout), before placing pieces of mint leaf on top. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bird's Nest",
+        "unit": "g",
+        "notes": "dried, red or white",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Mochi Ice Cream Ball",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Set Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": "halved",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Mulberries",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "torn",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc14bc62b8b5114d535acb5ae7faea7e2679202d9b9d8fa71abfa3fa75d2ecf9",
+    "lineage_hash": "c3e2ae0d27490802d7139e15f593493e8dd462676c0685fdf5b62d8ee9f72362"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-granita-bird-nest-recipe",
+    "fetchedAt": "2026-08-03T04:39:14.528Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-granita-bird-nest-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

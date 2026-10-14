@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Mayonnaise",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl add soya milk, vinegar, mustard sauce and mix it properly with a hand blender.",
+      "Now slowly keep on adding oil and continuously mixing it with a hand blender.",
+      "After all the oil has been incorporated properly and it's thickened then keep it aside for some time to rest.",
+      "After that remove in an airtight container and store in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soya Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ltr Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27a4feb2ea0e5a5dd4379e293479a082137d942ef9c329d6817fc0e761a8fac5",
+    "lineage_hash": "d5a3e8602ae213336f47d704bd1373b0eb6b22cd5988bfda7bcbd8e773dbe37b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/veg-mayonnaise/",
+    "fetchedAt": "2026-08-01T20:16:01.140Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/veg-mayonnaise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

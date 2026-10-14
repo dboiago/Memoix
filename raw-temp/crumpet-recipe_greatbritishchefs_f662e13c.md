@@ -1,0 +1,3 @@
+I never saw crumpets in France but ever since coming to England I have loved them. There is something fantastically comforting about a toasted crumpet, spread with butter that melts into the little holes, either for breakfast or in the afternoon.
+
+You will need metal crumpet rings and a wide, heavy-based frying pan, big enough to cook four or five at a time. The knack is to get the pan hot first with a good coating of oil – not so hot that you fry the crumpets, but hot enough to cook them all the way through slowly without burning the undersides. I usually manage to burn the first one! So cook one by itself first for a test run. You can always have the oven on at 200°C and then pop them in for a few minutes to finish off.

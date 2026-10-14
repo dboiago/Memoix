@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Bengali Vegetable Fried Rice",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "432",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Wash and boil the rice in a pot full of water until it is 90 per cent tender. Drain the water and spread the rice over a colander so that it doesn’t cook any further.",
+      "Dice the carrots in 1-cm cubes. Chop the beans on the bias (in 1-cm sections) for a nice trapezoid shape. Shell the peas. Slit the green chillies.",
+      "Freshly grind the peppercorns so that you have about ½ tsp pepper. Mix it with the garam masala powder, salt, and sugar. Combining the spices and seasoning before adding them to the rice will ensure even distribution.",
+      "Set a pan on medium heat and add vegetable oil and ghee to it. Once hot, temper the oil with the bay leaves, cinnamon, cardamom, cloves, and about five peppercorns.",
+      "Add the cashewnuts and fry them until they are lightly coloured. We don’t want them completely golden at this stage as they will fry throughout the cooking process.",
+      "Turn up the heat and add the carrots. Stir-fry them for 2 minutes before adding the beans. Fry the beans for 2 minutes and then add the peas and raisins. Keeping the heat high ensures that the veggies retain their vibrant colours and don’t lose crunch.",
+      "Turn off the heat and layer half the cooked rice over the vegetables. Sprinkle half the premixed seasoning. Top off with the remaining rice and seasoning. Also add the green chillies.",
+      "To mix the rice thoroughly while ensuring minimal breakage of the grains, use the fold and rotate motion as shown in the video. Do this until everything is well combined.",
+      "Cover the pan and set it over the lowest heat setting for about 20 minutes and steam until the rice has cooked completely. Check once or twice to see that the rice isn’t sticking to the bottom of the pan. Rest for at least 10 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "26",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ddda697e96f0a246b6b0ee4c0165d3b6d25bd58e55f28e293c30c843590eb688",
+    "lineage_hash": "92cf6a8a36f3838019f5480fa26496dba63a171b2a1947528cc2386f0b496d48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bengali-vegetable-fried-rice",
+    "fetchedAt": "2026-08-01T17:13:47.430Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bengali-vegetable-fried-rice",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

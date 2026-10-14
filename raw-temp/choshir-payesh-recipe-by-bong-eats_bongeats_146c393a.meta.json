@@ -1,0 +1,31 @@
+{
+  "url": "https://www.bongeats.com/recipe/choshi-pitha",
+  "slug": "choshir-payesh-recipe-by-bong-eats_bongeats_146c393a",
+  "title": "Choshir Payesh recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:56:55.560Z",
+  "ldName": "Choshir Payesh",
+  "ldTime": "PT2H",
+  "ldPrepTime": "PT90M",
+  "ldCookTime": "PT30M",
+  "ldYield": "6 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "chushi pitha, chushir payesh, choshi pitha, choshi pithe, choshir payesh",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "258"
+  },
+  "htmlIngredientLines": [
+    "100 g rice flour",
+    "150 ml how water",
+    "2 g salt",
+    "750 ml milk",
+    "150 g patali gur (date-palm jaggery in solid form)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

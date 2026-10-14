@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Chipotle Guacamole",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "246",
+      "carbohydrateContent": "14",
+      "fatContent": "22",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Mash the avocados: Scoop the avocados into a medium bowl and mash with a fork until chunky but creamy.",
+      "Season the guacamole: Add the lime juice and salt and gently stir to combine. Fold in the red onion, cilantro, and jalapeño. Taste and add more salt or lime juice if needed.",
+      "Serve: Serve right away with tortilla chips, tacos, burrito bowls, or your favorite Mexican-inspired dishes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Avocados",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "about 1 lime",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7d2078cca6282af70a20de5febf7cea20138f4edb585b531dfd7a7f4bb87b7b",
+    "lineage_hash": "a1e9ac38a4f9c06a42cca3126c2cc182d107c94175be3edbe102eca3da970df5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chipotle-guacamole-recipe/",
+    "fetchedAt": "2026-08-02T09:48:53.034Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chipotle-guacamole-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

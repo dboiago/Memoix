@@ -1,0 +1,250 @@
+{
+  "recipe": {
+    "name": "Duck Ragù",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pasta dough, put all the ingredients in a stand mixer with the dough hook attachment. Knead the dough for 10 minutes, then remove from the bowl and knead on the workbench into a bowl",
+      "Wrap the dough in cling film and put it in the fridge for 2 hours to rest",
+      "Place duck legs in a tray and season evenly with salt. Transfer to the oven and roast for 35 minutes",
+      "Once cooked, remove from the oven and set aside",
+      "Blitz the onion, carrot, celery, garlic and chilli until finely chopped but not a purée",
+      "Put a large ovenproof pan on the heat and add the vegetable oil. Once hot, add the vegetables and cook for 5-10 minutes, or until softened but not coloured",
+      "Add the tomato paste and cook for a further 5 minutes. Add the red wine and five spice, and cook until the wine reduces by half",
+      "Add the butter, tinned tomatoes and chicken stock. Tie the thyme and bay leaf together with string and add them to the sauce",
+      "Remove the skin from the roasted duck legs and keep it separate. Add the duck legs to the sauce and cook them for 2 hours, or until the duck is tender and falling off the bone",
+      "Once the ragù is finished, remove the duck legs from the sauce and place them on a tray. Discard the bay leaf and thyme",
+      "Turn the oven down to 110°C/gas mark 1/2",
+      "Check the consistency of the sauce - if it needs reducing, place the pan back on the heat until it has thickened. Flake the dug legs off the bone, making sure that no fat or small bones are mixed in with the meat",
+      "Add the duck back into the thickened sauce and mix well",
+      "Put the reserved duck skin on a tray and bake for 40 minutes",
+      "Once the skin has baked, make the duck crackling, melt the butter in a pan and add the panko. Toast evenly, stirring frequently, until lightly golden",
+      "Blitz the baked duck skin into crumbs in a blender, then add it to the toasted panko and mix well",
+      "Once the breadcrumb mixture is golden brown, transfer it to a large tray to cool down",
+      "Once cool, transfer to a container lined with a J cloth",
+      "Roll the pasta out in a pasta machine, starting from the thickest setting. Gradually work down the thicknesses until you reach either number 1 on the machine or until the pasta reaches 2mm in thickness",
+      "Cut the rolled out pasta with a fluted, square 10cm ravioli cutter",
+      "When ready to serve, warm the duck ragù in a pan",
+      "Bring a large pan of salted water to the boil. Add the fazzoletti (handkerchiefs) and cook for 1 minute 30 seconds, then remove with a slotted spoon",
+      "Add the pasta to the sauce and fold it though, then mix in the parsley",
+      "Divide the pasta between 4 plates, and garnish with the duck crackling crumb"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": "roughly 700g total",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "peeled and roughly chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and roughly chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Concentrated Tomato Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned San Marzano Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9e85e73a2c14c924281af2704d79be87835d1c0787e07f7450c72cd562d015e",
+    "lineage_hash": "0eb7f10f238e4c11eed4e168f12d1c1da773819eae4159906e13062330b137f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bancone-duck-ragu-recipe",
+    "fetchedAt": "2026-08-02T16:16:36.263Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bancone-duck-ragu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Cheese & Quince Paste Bonbons",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Cheese & Quince Paste Bonbons recipe, make sure you have organised all the necessary ingredients.",
+      "Remove the hard crust around the cheese and cut slices to a thickness of about 8 mm.",
+      "Slice the block of quince paste to a thickness of about 3-4 mm.",
+      "Place one slice of quince paste on top one slice of cheese. Make sure the edges join neatly.",
+      "Trim the edges if necessary, then cut small rectangles, roughly 2.5cm long and 1cm wide.",
+      "Repeat until you have no more cheese left. I made small rectangles to make sure they fit in the obulato sheets.",
+      "Wrapping the bonbons:  Place an obulato sheet on the kitchen worktop.",
+      "Place one rectangle in the centre of the sheet...",
+      "... and wrap gently...",
+      "... making sure the obulato film is in direct contact with the cheese and quince bonbon. The operation is very similar to gift wrapping!",
+      "Hold the bonbon with one hand...",
+      "... then roll the paper on each side...",
+      "... with the other hand.",
+      "Roll until tight.",
+      "The result is a perfect imitation of a classic bonbon.\n These bonbons with sheep's milk cheese and quince paste will make delicious savoury treats or appetizers. Although they look like plastic, obulato paper film sheets are edible and don't have any taste or smell."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sheep's Milk Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quince Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Obulato Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae67dfac9e1ad77c24ab478859c4f3846c2e1aadc0ce60fc4cad0dd455e3ada2",
+    "lineage_hash": "978573bc36518226f72a3a8e0f21461ff7a0354dfb8640d3644dfdc52986d16b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/cheese-quince-paste-bonbon.html",
+    "fetchedAt": "2026-08-02T01:13:02.722Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/cheese-quince-paste-bonbon.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

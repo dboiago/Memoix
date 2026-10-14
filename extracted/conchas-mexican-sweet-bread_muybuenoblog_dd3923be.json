@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Conchas",
+    "time": "2 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "391",
+      "carbohydrateContent": "58",
+      "fatContent": "15",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a large bowl stir together yeast and the warm water. Let stand for 10 minutes. Stir in evaporated milk, the 1/3 cup sugar, the melted butter, egg, and salt. Stir in 2 cups of the flour. Gradually stir in another 2 cups flour and the ½ teaspoon cinnamon to make a dough.",
+      "Turn the dough onto a lightly floured surface. Knead for 3 to 5 minutes or until smooth and elastic. Shape into a ball. Transfer dough to a large greased bowl; turn to coat surface of the dough. Cover and let rise in a warm place until double in size (1 to 1 ¼ hour).",
+      "Meanwhile, for topping, in a medium bowl beat the softened butter with an electric mixer on medium speed for 30 seconds. Add the 2/3 cup sugar, beating until well mixed. Stir in the 1 cup flour, the teaspoons cinnamon, and the vanilla.",
+      "Punch down the dough. Cover and let stand for 10 minutes. Divide dough into 12 portions. Shape each portion into a smooth ball. Place balls about 3 inches apart on baking sheets lined with parchment paper. Press down on balls slightly. Divide topping into 12 balls; pat each ball flat. Place one round of topping on each dough ball.",
+      "Using a sharp paring knife or concha cutter, cut grooves on a scallop shell. Cover rolls and let rise in a warm place until nearly double in size (about 45 minutes).",
+      "Meanwhile, preheat oven to 375 degrees F. Bake rolls for 18 to 20 minutes or until light golden brown. Remove from baking sheets. Cool on wire racks. Serve warm or cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packet Active Dry Yeast",
+        "unit": null,
+        "notes": "1/4 ounce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Evaporated Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a8fcd153aa289e846634de41a0f12a8ff1c759d81b4b52bb0ea69dbb36d958a",
+    "lineage_hash": "50989ff9e6d0f60385825be09cb3f547b97eaa3f215be8caea47f85bfe5cada5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/conchas-magimix-food-processor-giveaway/",
+    "fetchedAt": "2026-08-02T05:12:05.797Z"
+  },
+  "rawSource": "https://muybuenoblog.com/conchas-magimix-food-processor-giveaway/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

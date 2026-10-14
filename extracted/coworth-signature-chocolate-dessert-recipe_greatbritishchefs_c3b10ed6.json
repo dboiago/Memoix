@@ -1,0 +1,383 @@
+{
+  "recipe": {
+    "name": "Coworth Signature Chocolate Dessert",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the night before with the whipped Dulcey coffee ganache. Roast the coffee beans and crush. Heat 225g of the UHT cream to 60ºC, add the coffee and scraped vanilla pod and leave to infuse for 20 minutes. Pass through a fine sieve then add the glucose and trimoline and heat to 60ºC once more. Add the Dulcey chocolate and use a hand blender to blitz until melted and smooth. Blitz in the remaining UHT cream and pour into a frame or tray so the ganache is 2cm deep. Leave to set overnight",
+      "To make the feuilletine, melt the chocolate in a microwave or over a bain marie then stir in the feuilletine and salt and mix well. Roll out between 2 sheets of baking paper to 1.5mm thick and leave to set in the fridge",
+      "To make the signature ganache, place the cream and vanilla in a pan and bring to the boil. Strain over a bowl containing the two types of chocolate and stir to melt. Once at 35ºC use a hand blender to blitz in the melted butter. Push a frame into your set sheets of feuilletine, pour in the ganache to 2cm high and leave to set in the fridge",
+      "To make the cherry jelly, heat the cherry purée with lemon zest and vanilla and leave to infuse for 10 minutes. Squeeze out the water from the gelatine and stir into the warm purée until dissolved. Pass through a fine sieve then leave to cool to 28ºC. At this temperature, pour on top of the set signature ganache and place back in the fridge to set once more",
+      "To make the nougatine, warm the glucose, butter and milk in a pan, then add sugar and pectin and bring up to 110ºC. Fold in the flour then roll out as thin as possible (1–2mm) between 2 sheets of baking paper and place in the freezer until frozen solid. Preheat the oven to 165ºC/gas mark 3 and cook from frozen for 12–15 minutes. Cut into 10x2x2cm rectangles whilst still warm. Once cooled, store in an airtight container",
+      "To make the tonka bean ganache, place the cream in a pan, grate in the tonka beans and scrape in the vanilla seeds. Heat to 85ºC then take off the heat, cover with clingfilm and leave to infuse for 1 hour",
+      "After this time, pass through a fine sieve and leave to cool. In the meantime, whisk the egg whites and sugar in a bowl over a bain marie until it reaches 80ºC to create a Swiss meringue. Remove from the heat, add the bloomed and drained gelatine and continue whisking until cooled to room temperature. Once the infused cream has cooled, whip to soft peaks then fold into the meringue. Pour into a frame mould so that it is 2cm high and freeze",
+      "To make the chocolate glaze, bloom the gelatine in cold water. Heat the water, UHT cream and sugar and stir to dissolve. At 45ºC sift in the cocoa powder in three stages, then bring to the boil for 1 minute. Stir in the bloomed gelatine then pass through a fine sieve",
+      "To make the Dulcey chocolate dip, melt all the ingredients together",
+      "To make the signature chocolate dip, melt all the ingredients together",
+      "Now all the elements have been prepared, you can assemble them. Portion the tonka bean parfait, chocolate cherry ganache and the Dulcey coffee ganache into 10x2x2cm fingers. Insert a cocktail stick or two into the chocolate and cherry ganache. Heat the chocolate glaze to 32ºC and blitz with a hand blender until smooth. Dip each finger of the ganache in the glaze to completely coat, then place on a sheet of acetate to set, wiping off any excess glaze for a neat finish",
+      "Repeat the process with the Dulcey and coffee ganache dipped in the Dulcey dip, and the tonka bean parfait dipped in the signature chocolate dip, until all your fingers are completely glazed",
+      "To plate, cut the feuilletine into 10x2x2cm rectangles and place 1 on each plate with a finger of chocolate cherry ganache on top. Place a finger of the tonka bean parfait next to it. Cover the holes made by the cocktail sticks with little pieces of edible gold leaf, then place the final finger of Dulcey ganache on top. Cover with a sheet of nougatine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": "35%",
+        "amount": "805",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona Dulcey Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "g",
+        "notes": "Adam uses Blue Mountain coffee beans",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "Adam uses Coworth Park's bespoke Valrhona chocolate with 63% cocoa solids",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": "35%",
+        "amount": "315",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "Adam uses Valrhona Jivara 40% chocolate",
+        "amount": "64",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "Adam uses Coworth Park's bespoke Valrhona chocolate with 63% cocoa solids",
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "255",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "48",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": "35%",
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonka Beans",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "235",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": "35%",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona Dulcey Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "Adam uses Coworth Park's bespoke Valrhona chocolate with 63% cocoa solids",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ca7bda35fa915163c77ab5b904aed4dd452e5ba86460a405c4c5f1e9a894b74",
+    "lineage_hash": "f2df227397bdc7c1812aa82fa8c805c3c40640f51a7c19aaba2440dbd876ced3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coworth-signature-chocolate-dessert-recipe",
+    "fetchedAt": "2026-08-02T19:33:13.486Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coworth-signature-chocolate-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

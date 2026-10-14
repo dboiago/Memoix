@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Don the Beachcomber's Nui Nui Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker tin a small amount of crushed ice and shake. Pour all of the contents into a glass, top with more crushed ice, then garnish.",
+      "Cinnamon Syrup: Combine 8 cinnamon sticks with 4 cups of water and 4 cups of white sugar in a saucepan and bring to medium heat. Stir to dissolve the sugar, remove from heat and let cool. Store in quarts without removing cinnamon sticks.",
+      "Vanilla Syrup: Cut 1 vanilla bean in half, lengthwise, and use the dull side of the knife to remove the seeds. In a saucepan, combine the sliced vanilla with 6 cups of granulated sugar and 6 cups of water. Bring to medium-high heat and simmer until dissolved. Let sit at room temperature for at least 1 hour before fine straining."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "Newman uses Don Q Gold",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": "Newman uses Appleton Signature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Elizabeth's Allspice Dram",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9dfffa403cf7fea8eaa8511df5dc3bd6ee90e5f53d869a2952d8bd11906cab99",
+    "lineage_hash": "f5473439eb7af72a4982aa91b546d635e2634d9c5fbebab73c1f2d4158219440"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/don-the-beachcombers-nui-nui-cocktail/",
+    "fetchedAt": "2026-08-03T18:49:42.145Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/don-the-beachcombers-nui-nui-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Chicken Dum Biryani",
+    "time": "55 min - 1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, add chicken and marinate with all the ingredients.",
+      "Let the chicken marinade preferably overnight or for minimum 3 hours.",
+      "Let the rinsed rice rest for 20 minutes.",
+      "Heat water in pot, add ghee and salt.",
+      "Add in cloves, cinnamon and green cardamom. Add rice and let it come to a boil. Immediately lower the flame and cook on low flame for 80%.",
+      "In a heavy bottom pan, add ghee and marinated chicken. Cook for about 7-8 minutes.",
+      "In another pan, layer the biryani. Add rice, chicken and then top it off with rice. Add in the chicken gravy on top.",
+      "In the chickenâs pan, add water, milk, saffron water, ghee, mint leaves, barista, salt and coriander leaves. Add this jhol in the biryani.",
+      "Add some more saffron water, rose water and few drops of kewra water. Now keep it on dum for 15-20 minutes on low flame.",
+      "Serve hot with choice of raita."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Basmati Rice",
+        "unit": "kg",
+        "notes": "washed and rinsed",
+        "amount": "1",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": "For Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken with Bone",
+        "unit": "kg",
+        "notes": "cleaned and washed",
+        "amount": "1",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Barista/fried Onion",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Chilli Power",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "3-4",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Few Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Barista",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9e18526707ef4ea8e9418df8addc3d4181dbd8537d0cefd702e43e30a4182fee",
+    "lineage_hash": "9ca987eba83c81b2396e3d2bba41c966350f8a3c6d93ac6d3da0d85ef95e3ad2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-dum-biryani-recipe/",
+    "fetchedAt": "2026-08-02T14:07:44.322Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-dum-biryani-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

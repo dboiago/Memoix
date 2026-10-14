@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Almond Soulongtang / Korean Oxtail Soup",
+    "time": "3 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "MAKE ALMOND MILK: In a blender, soak Asian southern almonds and skinless toasted peanuts with 3 cups of hot water for 2 hours (or cold water for overnight). Blend on high for 2 min until smoothly pureed, then transfer into a pot and bring to a simmer over medium heat. Once it starts to simmer, turn the heat down to low. You will see a lot of foam starting to accumulate on top. Just ignore it and keep gently stirring. Cook the mixture for 5 min, then turn off the heat and let cool.",
+      "You can either wait for it to cool down naturally, or as I did, stir in a few ice cubes to cool it down fast. Once it’s cool enough to handle, strain it through a fine cheesecloth. The mixture will be thick and trickling down slowly. Bring the top of the cheesecloth together into a ball, and squeeze on the mixture to extract as much liquid as you can. You can make this a few days ahead and keep the milk in the fridge.",
+      "MAKE SOULONTANG: Place oxtails and sliced gingers in a large pot, and fill with enough water to cover, then bring to a boil and let cook for 30 seconds. Pour the dirty water into the sink, then clean each oxtails under water to remove any scums and impurities. Set aside. Cut the onion into quarters, then toast them directly over the burner until charred all around. Add the oxtails, charred onions and 8 cups of water into a large pot (or pressure cooker as I did). Bring to a boil then lower the heat down to medium-low, keeping it at a medium-boil for 3 hours. Keep adding water to bring the water back to its original amount. Or if using pressure cooker (recommended), cook the mixture for 1 hour according to manufacture’s instructions.",
+      "Strain the soup through a fine sieve, keeping only the oxtails and the liquid. Then season with 2 tsp of sea salt and black pepper, and bring back to a medium-boil. Skim off any fat and impurities, and cook for another 30 min. Now add the Asian almond milk. Once the mixture is coming back to a simmer, turn off the heat (skim off any foam if any). Serve with diced chives and white pepper, and more sea salt on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asian Southern Almond",
+        "unit": "C",
+        "notes": "115 grams, or see note",
+        "amount": "1",
+        "section": "ASIAN ALMOND MILK:",
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tbsp Skinless Toasted Peanuts",
+        "unit": null,
+        "notes": "35 grams",
+        "amount": "2",
+        "section": "ASIAN ALMOND MILK:",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "750 ml/grams",
+        "amount": "3",
+        "section": "ASIAN ALMOND MILK:",
+        "isOptional": false
+      },
+      {
+        "name": "Oxtails",
+        "unit": "lb",
+        "notes": "900 grams",
+        "amount": "2",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "2 litre",
+        "amount": "8",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "plus more to adjust",
+        "amount": "2",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "alt: scallion, finely diced, to serve",
+        "amount": "0",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": "ALMOND SOULONGTANG:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba95bee2a4d254d68a459b2ad34850970030f5effb8372e0f248b6d5eec2192d",
+    "lineage_hash": "3de47df85b3ed0aad7e91bd055bcd78b04aa539a945914c8077fe2e64152665a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2017/01/24/almond-soulongtang-korean-oxtail-soup/",
+    "fetchedAt": "2026-08-02T03:53:57.780Z"
+  },
+  "rawSource": "https://ladyandpups.com/2017/01/24/almond-soulongtang-korean-oxtail-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

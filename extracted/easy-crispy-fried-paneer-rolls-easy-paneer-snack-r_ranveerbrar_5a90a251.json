@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Crispy Fried Paneer Rolls (कुरकुरे पनीर फुलझड़ी पनीर बॉल्स)",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai heat oil and add cumin seeds, fennel seeds, let them crackle then add ginger, green chillies, onion and saute until translucent.",
+      "Now add dried coconut and saute for a minute then add degi red chilli powder, turmeric powder, asafoetida and saute until fragrant.",
+      "Then add salt, coriander leaves, mint leaves and mix everything properly and keep aside to cool down.",
+      "Once cooled, remove in a bowl and add paneer, bread crumbs and mix it properly until everything comes together. Meanwhile heat oil on medium heat in a kadai",
+      "Now take small portions of the mixture and make balls and keep aside.",
+      "Then coat these balls with refined flour, then in refined flour slurry and finally coat them with sev.",
+      "Deep fry them in medium hot oil until golden brown and crispy.",
+      "Serve hot on a bed of fried noodles, a pinch of degi red chilli powder and along with tempered ketchup.",
+      "In a small pan heat oil and add curry leaves, dry red chillies then add this to tomato ketchup and mix properly. Keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inch",
+        "unit": null,
+        "notes": "Chopped Ginger",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "Chopped Onion",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "grated Dried Coconut",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped Coriander Leaves",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped Mint Leaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gm",
+        "unit": null,
+        "notes": "grated Paneer",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour Slurry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Sev",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempered Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempered Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Tempered Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempered Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9765dad8459e8ae9980aae42de2ad9b23d3ba1e396e2c378b550a6cd5716d9a",
+    "lineage_hash": "ea4eaff13ee22bda85201e19a6650e1203015fb4d7af1f31b114500e6b1f49fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/paneer-phuljhadi/",
+    "fetchedAt": "2026-08-02T15:14:06.966Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/paneer-phuljhadi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

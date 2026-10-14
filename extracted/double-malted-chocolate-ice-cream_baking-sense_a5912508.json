@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Double Malted Chocolate Ice Cream",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "382",
+      "carbohydrateContent": "42",
+      "fatContent": "22",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a small saucepan, whisk together 12 oz whole milk, 12 oz heavy cream, 3 oz malted barley syrup, 3 oz malted milk powder1 oz cocoa powder. Heat the milk mixture over medium high heat until scalding hot but not boiling.",
+      "While the milk heats up, whisk together 5 egg yolks, 6 oz granulated sugar and 1 tbsp vanilla extract in a small bowl.",
+      "Once the milk mixture is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+      "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a boil. Remove from the heat and strain into a bowl. Cover the bowl and chill until very cold. At least 4-5 hours or over night.",
+      "Freeze according to the directions for your ice cream machine.",
+      "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malted Barley Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malted Milk Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c521737ba74e1655a39929037fb6c449d648e3c80b34aa0c49e6263e9d8c95a8",
+    "lineage_hash": "7ee0e9bc28ed98c9a095dc621cfa2aacffdfe567c33e4b579af5de3a50198d60"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/06/07/malted-chocolate-ice-cream/",
+    "fetchedAt": "2026-08-02T03:19:17.929Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/06/07/malted-chocolate-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

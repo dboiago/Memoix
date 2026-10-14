@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Chocolate-Dipped Hazelnut Marbles",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the hazelnuts, sugar, and salt in the bowl of a food processor, and pulse until finely ground. Transfer to a medium mixing bowl, and form a well in the center. In a small bowl, combine the honey with 1 tablespoon hot water, and stir to dissolve. Pour into the center of the hazelnut mixture, and stir with a fork to blend.",
+      "Knead the hazelnut paste for a minute or two, until it comes together and you are able to shape it into a ball. (It will be a little sticky, but it will dry as it chills.) Wrap in plastic and refrigerate for at least an hour, and up to a day.",
+      "Remove the hazelnut paste from the fridge. Scoop out rounded teaspoons, and shape them into small balls, about 2 cm (3/4 inch) in diameter, with the tips of your fingers. Line them up on a plate, and plant a toothpick vertically in the center of each. Cover loosely with plastic wrap, and place the plate in the fridge.",
+      "Line a baking sheet with parchment paper or a silicone baking mat. Melt the chocolate in a double boiler (i.e. a heatproof bowl set over a pan of simmering water), stirring from time to time.",
+      "Dip each of the marbles in turn in the chocolate, holding it by the toothpick and swirling it around gently to coat. Leave the very top uncoated, so the hazelnut paste shows. Lift from the chocolate, let the excess chocolate drip down for a few seconds, then set on the parchment paper, toothpick pointing skyward. Let rest somewhere cool (but not the refrigerator) for 2 hours, until the chocolate coating is dry. The marbles will keep for up to 4 days at room temperature in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "toasted and husked",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": "grease your measuring spoon with a little vegetable oil, or maple syrup or agave syrup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "high-quality bittersweet",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7dfac0d14f968e7bc3a15f07157cd4983664b4fd72a78ded1544db494bbed34",
+    "lineage_hash": "3d6bfcf0da9d3d34947ae28367526d7d1a4fcc151fb4f5e4d558bcf77a8d6035"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/chocolate-dipped-hazelnut-marbles-recipe/",
+    "fetchedAt": "2026-09-30T19:40:44.056Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/chocolate-dipped-hazelnut-marbles-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

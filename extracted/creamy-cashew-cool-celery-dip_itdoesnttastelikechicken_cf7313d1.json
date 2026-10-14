@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Creamy Cashew Cool Celery Dip",
+    "time": "5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "95",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Add everything to a blender, and blend until completely smooth and creamy, stopping to scrape down the sides as needed. This dip will get even thicker when stored in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "soaked or boiled if not using a high-powered blender, see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75903555d70b2f0177999b33354438ed18354f1b5276d931e8300d9cebf6cc22",
+    "lineage_hash": "77484379c852f9099a6c17f5a8052379378ba31d8fdc529154323e85a343b511"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-cashew-cool-celery-dip/",
+    "fetchedAt": "2026-08-01T20:56:03.645Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-cashew-cool-celery-dip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

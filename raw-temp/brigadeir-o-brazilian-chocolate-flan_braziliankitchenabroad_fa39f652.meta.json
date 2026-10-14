@@ -1,0 +1,66 @@
+{
+  "url": "https://braziliankitchenabroad.com/brigadeirao-brazilian-chocolate-flan/",
+  "slug": "brigadeir-o-brazilian-chocolate-flan_braziliankitchenabroad_fa39f652",
+  "title": "Brigadeirão - Brazilian Chocolate Flan",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-26T02:30:11.487Z",
+  "ldName": "Brigadeirão (Brazilian Chocolate Flan)",
+  "ldTime": "PT465M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT90M",
+  "ldYield": [
+    "10",
+    "10 Servings"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "brigadeiro, brigadeiro recipe, chocolate, flan, flan recipe",
+  "ldIngredientsRaw": [
+    "2 tablespoons of unsalted butter",
+    "3 tablespoons of sugar",
+    "200 grams of semi-sweet chocolate bar (50-56% cacao)  (*see notes )",
+    "470 milliliters of heavy cream (milk cream that has between 36-40% fat)",
+    "740 grams of sweetened condensed milk",
+    "4  eggs (medium to large)",
+    "Good quality chocolate sprinkles, for topping (about two cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 175°C (350°F) for a fan-assisted convection oven, or 200°C (400°F) for a conventional oven.",
+    "Butter the bundt pan using a paper towel, then sprinkle with sugar and shake to coat all sides. Place the prepared bundt pan inside a large roasting pan. Set aside.",
+    "Cut up the chocolate into smaller pieces and add them to a medium-sized microwave-safe bowl. Add a splash of the heavy cream (about 2 tablespoons) and microwave in 30-second increments, stirring until it&#39;s all melted and smooth.",
+    "Add the condensed milk, the remaining cream, and melted chocolate to the base of a blender and blend until fully smooth. Scrape the sides of the blender as needed to fully incorporate all the ingredients.",
+    "Add the eggs all at once and pulse just until incorporated (about three 10-second pulses or until everything is incorporated).",
+    "Pour the custard into the prepared bundt pan. If using a convection oven, add hot tap water to the larger pan until halfway up the sides of the bundt pan. If using a conventional oven, use boiling water instead. Cover the bundt pan with foil, poke 4 holes in the foil, and bake at the preheated-temperature for 15 minutes, then reduce to 150°C (300°F) for convection or 175°C (325°F) for conventional, and bake for a further 1 hour and 15 minutes. The flan will still jiggle a little at the center when done. It will firm up as it cools.**",
+    "Let the cooked flan rest in the hot water bath on the counter for another 1 hour. The residual heat will continue to cook the flan as it rests there.",
+    "After that hour, loosen the flan from the sides of the pan by running a paring knife around the inside and the outside rims. Then place plastic wrap over the flan and refrigerate in the pan for at least 6 hours, preferably overnight.",
+    "To cleanly unmold the flan, place the bundt pan into a hot water bath for about 30 seconds. You&#39;re looking for that hardened fat on the edges of the flan to turn transparent, which means it&#39;s melting and releasing the flan from the pan. Give the pan a gentle shake or wiggle. You&#39;ll feel the flan start to move. Place your serving plate over the pan and flip it with confidence. It should release easily.",
+    "Wipe off excess syrup with a paper towel if desired, then top generously with chocolate sprinkles. Slice, serve and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "573 kcal",
+    "carbohydrateContent": "56 g",
+    "proteinContent": "11 g",
+    "fatContent": "35 g",
+    "saturatedFatContent": "21 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "151 mg",
+    "sodiumContent": "134 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "53 g",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "2 tablespoons of unsalted butter",
+    "3 tablespoons of sugar",
+    "200 grams of semi-sweet chocolate bar (50-56% cacao)  *see notes",
+    "470 milliliters of heavy cream milk cream that has between 36-40% fat",
+    "740 grams of sweetened condensed milk",
+    "4 eggs medium to large",
+    "Good quality chocolate sprinkles, for topping about two cups"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

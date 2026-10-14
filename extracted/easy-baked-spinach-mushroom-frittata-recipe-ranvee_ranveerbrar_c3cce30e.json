@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Baked Spinach & Mushroom Frittata",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Oil deep round cake tin. Line base with baking parchment paper (butter paper).",
+      "Heat oil in non stick frying pan; cook garlic and leeks, stirring, until leeks soften. Add mushrooms; cook, stirring until mushroom are just tender. Add spinach leaves, stirring, cook for 1 minutes. Discard the excess liquid.",
+      "Whisk egg and egg whites, milk and cheese in the large bowl. Stir in vegetable mixture.",
+      "Pour egg mixture into prepared tin. Bake in moderately low oven about minutes or until just set. Place frittata under hot grill until browned. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "thinly sliced/ onion sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "g",
+        "notes": "/ mozzarella cheese",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42f8177505f7c932930ffcb20b3fcec818fd66b12d535c5bfbe60f4675c6907f",
+    "lineage_hash": "6771dee0af1fef1891924d503cb9317f1eab4de27722da64601f3a9ee83a59c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baked-spinach-mushroom-frittata/",
+    "fetchedAt": "2026-08-02T19:53:18.118Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baked-spinach-mushroom-frittata/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

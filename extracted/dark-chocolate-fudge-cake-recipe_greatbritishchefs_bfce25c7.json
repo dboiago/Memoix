@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Fudge Cake",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (160°C fan) and line two 20 cm deep cake tins with oiland baking paper",
+      "Put the water and coffee into a bowl and mix until the coffee has dissolved. Put the oil, eggs, buttermilk and both sugars into the bowl and whisk to combine",
+      "Add in the flour, cocoa and bicarb along with a big pinch of salt and fold in until you have a smooth batter. Spoon the batter between the tins evenly and bake for 30–35 minutes until a skewer inserted comes out clean",
+      "Leave to cool in the tin for 15 minutes and then remove from the tin and leave to cool on a rack until it cools completely",
+      "Meanwhile make the chocolate buttercream by beating the butter and icing sugar together with an electric whisk until pale and fluffy. Pour in the chocolate and vanilla and beat until you have a thick buttercream. If it’s too loose, simply chill for 10–15 minutes",
+      "Place the first sponge onto a plate or board, top with half of the buttercream and spread into an even layer. Top with the next sponge and then spread over and swirl the remaining icing on top. Finish by piling the strawberry halves on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "plus extra to grease",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2c86c8ba3af26d80549013b1a226d8b2c566c6ee8c2c36c57c135884793a1ad",
+    "lineage_hash": "e533c497b0a3eb3af835e8d5bf0bfa22c67059ab9dc43ba440b4a908360b9fe0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-chocolate-fudge-cake-recipe",
+    "fetchedAt": "2026-08-02T09:25:12.849Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-chocolate-fudge-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

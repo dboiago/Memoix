@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Stew with Potatoes (土豆炖牛肉)",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "188",
+      "carbohydrateContent": "23.7",
+      "fatContent": "7",
+      "proteinContent": "7.8"
+    },
+    "directions": [
+      "Cover the beef in cold water",
+      "Boil the beef and skim the impurities",
+      "Transfer the beef to an Instant Pot and add the liquid seasonings",
+      "Add the rest of the spices and cook over high pressure until tender and flavorful",
+      "Remove the spices",
+      "Add the potato and carrot and pressure cook again until tender"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Chuck Roast (2 to 3 Lbs / 1 to 1.3 Kg)",
+        "unit": null,
+        "notes": "or brisket, neck bone, shin bone, cut into 1.5” (3 cm) chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": "or soy sauce",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "halved crosswise",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Waxy Potatoes",
+        "unit": "medium",
+        "notes": "or 1 large russet potato, cut into 2” (5 cm) pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "cut into 2” (5 cm) pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94524147df0ac8199163dfb0e9b517ccd1ca2a1a46c443a43d178011f0bcbc6f",
+    "lineage_hash": "55ad62aeaf82c355be7a01a405c162972323d0e8f014102e69e7d008113f845a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-beef-stew/",
+    "fetchedAt": "2026-08-02T06:44:03.599Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-beef-stew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

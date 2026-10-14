@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Caramel Cookies",
+    "time": "2 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a copper saucepan, then add in 1 cup of granulated sugar a little at a time. In a separate saucepan, bring the cream to a boil. Remove the caramel from the heat and add in the cream, then slowly add in the room temperature butter; let this mixture cool.",
+      "Place the cooled mixture in a stand mixer; add in the flour, the cane sugar, 1 egg, and mix until you obtain a firm yet pliable dough. Mold the dough into cylinders 1 1/2 inches in diameter; wrap them in parchment paper and let them chill in the fridge for 1 hour.|Beat one egg. Remove the dough from the refrigerator and discard the parchment paper; brush the dough with the beaten egg, then roll the dough in cane sugar, pressing down so the granules adhere.",
+      "Cut the dough into slices a little less than 1/2-inch thick. Arrange the slices on a baking tray lined with parchment paper and bake at 340°F on the convection setting for about 20 minutes. Remove the cookies from the oven, let them cool, and serve. Place any leftover cookies in tin boxes and store them in a cool, dry place: they will keep for about 10 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs. of Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56c269fc29b8be55574bac18568cda343f99136391005b9a6a1485d7dde7e8ea",
+    "lineage_hash": "bfc922042dcf5073285cd34cb571fe8e8992c25976bcdfb587a309ffc1064c62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramel-cookies",
+    "fetchedAt": "2026-08-03T01:21:43.855Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/caramel-cookies",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

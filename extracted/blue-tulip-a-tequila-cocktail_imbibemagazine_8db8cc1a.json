@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Blue Tulip",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake vigorously. Dump the contents into the glass (or strain over crushed ice). Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Midori",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Curaçao",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca66b61fec4cba9624a7a539d96fd0e5f39cbd88bf237cfe96defab3c9d0ecde",
+    "lineage_hash": "d986c4897883a25a6d0b5413e84c16e7498e32586e9580a992bc2189942e3c64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-tulip-a-tequila-cocktail/",
+    "fetchedAt": "2026-08-04T01:08:01.518Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-tulip-a-tequila-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

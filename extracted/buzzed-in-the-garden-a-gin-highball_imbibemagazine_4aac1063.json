@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Buzzed in the Garden: A Gin Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Edible Flowers",
+      "Fresh Mint"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the tonic water, to a shaker with ice. Shake vigorously, then strain into an ice-filled glass. Top with a splash of tonic. Garnish.\nLavender SyrupIn a large pot, add 1 cup of water and bring to a boil. Gradually stir in 1 cup of sugar. Stir until most of it is dissolved. Remove from heat and add 1/2 cup of dried lavender and stir. (It’s important not to add the lavender when the water is boiling. You don’t want the syrup to have a burnt taste.) Strain with a fine strainer or cheese cloth into an airtight container. Allow to cool before sealing and storing in the refrigerator where it will keep for 2 weeks.\nEarl Grey SyrupSteep Earl Grey Tea to make 1 cup. Add 1/2 cup of sugar while still hot. Stir until dissolved. Allow to cool before sealing in a container and storing in the refrigerator where it will keep for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Top Tonic Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dbe0680db0013afc30a05ea6914b17c2b8031f2cedced2de67d59807d0c1b8ac",
+    "lineage_hash": "e945e624321856ea38ed81595a0160f8d89cf35f7dae40ef9b736169ffd9eec6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/buzzed-in-the-garden-gin-highball/",
+    "fetchedAt": "2026-08-04T01:51:15.185Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/buzzed-in-the-garden-gin-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

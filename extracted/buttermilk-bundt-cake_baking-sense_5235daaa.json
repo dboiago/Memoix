@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Buttermilk Bundt Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "307",
+      "carbohydrateContent": "49",
+      "fatContent": "11",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Butter and flour the Bundt pan. Be careful to coat the entire inside of the pan to avoid the cake sticking in the contours of the pan.",
+      "Whisk half the buttermilk with the eggs, yolks and vanilla.",
+      "Sift the dry ingredients into the mixing bowl. Add room temperature butter.",
+      "Mix the butter into the dry ingredients, then add the reserved buttermilk.",
+      "Whip on medium high for 2 minutes until the batter is aerated. Scrape the bowl and beater.",
+      "With the mixer running, add the egg mixture in 3 increments. Scrape the bowl between each addition.",
+      "Scrape the bowl well to make sure there are no lumps of unmixed batter.",
+      "Transfer the batter to the prepared pan.",
+      "Bake until a toothpick inserted into the center of the cake comes out clean. Cool 10-15 minutes in the pan before turning the cake out onto a cooling rack set over a clean sheet pan.",
+      "Whisk buttermilk and vanilla into the powdered sugar.",
+      "The glaze should be the texture of thin pancake batter.",
+      "Drizzle the glaze over the slightly warm cake.",
+      "You can leave the glaze with drip lines over the cake or you can scrape the glaze off the pan to fill in all the gaps to entirely glaze the cake. Let the glaze set then transfer the cake to a cake plate for serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "11¼",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ⅓ cups",
+        "amount": "11",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature, cut into 1″ chunks",
+        "amount": "6",
+        "section": "Buttermilk Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "8",
+        "section": "Buttermilk Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Buttermilk Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Buttermilk Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "647ffdb241f3985db83901b5b36993f2251f187a59490c0e627accebb8e183c1",
+    "lineage_hash": "0dc2b555358d56ed5119ff2ef6202c38bde60c3ff5916de3e1ebf8c9edc77d43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/07/13/buttermilk-bundt-cake-with-buttermilk-glaze/",
+    "fetchedAt": "2026-08-02T04:45:10.834Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/07/13/buttermilk-bundt-cake-with-buttermilk-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

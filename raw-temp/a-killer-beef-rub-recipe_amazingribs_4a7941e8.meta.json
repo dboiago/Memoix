@@ -1,0 +1,63 @@
+{
+  "url": "https://amazingribs.com/beef-rub-recipe/",
+  "slug": "a-killer-beef-rub-recipe_amazingribs_4a7941e8",
+  "title": "A Killer Beef Rub Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T07:14:30.616Z",
+  "ldName": "Beef Rub Recipe",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "48",
+    "48 1/4 teaspoon serving"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Rub, spice blend",
+  "ldKeywords": "baking soda, beef, coffee, duck, lamb",
+  "ldIngredientsRaw": [
+    "1 tablespoon dried rosemary leaves",
+    "3 tablespoons  medium-grind black pepper",
+    "1 tablespoon smoked mild paprika",
+    "2 teaspoons ground ancho chiles",
+    "1 teaspoon ground chipotle chiles",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon instant coffee",
+    "1 teaspoon dark brown sugar",
+    "1/2 teaspoon baking soda"
+  ],
+  "ldInstructionsRaw": [
+    "Buzz. Grind the rosemary into a coarse powder. (You can use a spice grinder or a mortar and pestle.)",
+    "Mix. In a bowl, stir together all the ingredients. Break up any lumps of brown sugar with your fingers. Store in a dark place.",
+    "To use. This rub does not contain salt. Dry brine (pre-salt) your meat at least 1 hour in advance. Then, pat the meat surface with wet hands or a wet paper towel to help the rub stick. Apply 1/2 teaspoon rub per 4 x 6-inch surface of meat. As for cooking, reverse sear for the best results."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "3 kcal",
+    "carbohydrateContent": "1 g",
+    "proteinContent": "0.1 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.01 g",
+    "sodiumContent": "14 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "0.1 g",
+    "unsaturatedFatContent": "0.04 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 tablespoon dried rosemary leaves",
+    "3 tablespoons  medium-grind black pepper",
+    "1 tablespoon smoked mild paprika",
+    "2 teaspoons ground ancho chiles",
+    "1 teaspoon ground chipotle chiles",
+    "1 teaspoon garlic powder",
+    "1 teaspoon onion powder",
+    "1 teaspoon instant coffee",
+    "1 teaspoon dark brown sugar",
+    "1/2 teaspoon baking soda"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

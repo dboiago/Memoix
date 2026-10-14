@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Basic Grilled Meatballs",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct grilling and preheat to medium-high.",
+      "Place the bread in a large mixing bowl and stir in the half and half. Let stand for 5 minutes. Meanwhile, heat 1 tablespoon olive oil in a skillet over medium heat until shimmering.",
+      "Add the bacon, onion, and garlic and cook until golden brown, 3 minutes, stirring with a slotted spoon. Using the slotted spoon, transfer the bacon mixture to the soaked bread, leaving the fat in the pan. Let this mixture cool completely.",
+      "Add the beef, pork, veal, salt, and pepper to the bread mixture. Add any of the other suggested flavorings. (I _really_ like adding cheese.) Knead the mixture together until just mixed, working with a light touch. Sure, you could stir with a wooden spoon, but your hands do a better job of mixing. To test the meatballs for seasoning, fry a test ball of the meat mixture in the skillet until browned on both sides and cooked through. Taste, then add flavorings as needed. (You can form the meatballs right away, but it will be easier if you chill the mixture for 30 minutes first.)",
+      "Make the meatballs: Lightly wet your hands with cold water. Pinch off 1-1/2 inch pieces of the mixture and roll them into balls between your palms. Arrange the meatballs in the wells of the meatball basket and lock the basket. (Alternatively, skewer the meatballs on flat bamboo or metal skewers.)",
+      "Grill the meatballs until browned and cooked to an internal temperature of 160 degrees F, 5 to 8 minutes per side, flipping the meatball grilling basket (or skewers) as needed to ensure even cooking.",
+      "Serve the meatballs by themselves (which is how I like them), or over spaghetti with your favorite red sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "C",
+        "notes": "country-style, ciabatta, or baguette, cubed",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half and Half",
+        "unit": "C",
+        "notes": "alt: heavy cream",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Smokehouse Bacon",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "about 3/4 cup, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Veal",
+        "unit": "lb",
+        "notes": "or more pork or beef",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "663e915502e781821587cbfe2ffbe898490967d0629da22738164ccb1b65851a",
+    "lineage_hash": "7bd9cb41739b00f4c011573a768fd4d22e92194498cad4b1b00e3ce317b26958"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/basic-grilled-meatballs-variations/",
+    "fetchedAt": "2026-08-03T02:37:38.547Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/basic-grilled-meatballs-variations/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

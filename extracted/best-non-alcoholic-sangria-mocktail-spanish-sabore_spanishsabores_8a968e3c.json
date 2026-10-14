@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Non-Alcoholic Sangria Mocktail",
+    "time": "1 hr 5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": "18.25",
+      "fatContent": "0.27",
+      "proteinContent": "0.82"
+    },
+    "directions": [
+      "Place all of the sliced fruit and berries in a large pitcher. Pour in the grape juice and still water and leave in the fridge for at least an hour. You can also leave it in the fridge overnight if you have the time!",
+      "When ready to serve, top up the pitcher with the sparkling water and serve immediately, poured over ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon Thinly Sliced",
+        "unit": null,
+        "notes": "peel on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Thinly Sliced",
+        "unit": null,
+        "notes": "peel on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cored",
+        "unit": null,
+        "notes": "thinly sliced, skin on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Assorted Fresh Berries",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water Chilled",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec58908861d9e190659d992104ae6fc3605444e8cb821c3c56c05ed9a023cbe7",
+    "lineage_hash": "498f8fee1f7c7f15e1742139fa0f18df0eaab214d72f8f92ce8d5ed61752af9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/non-alcoholic-sangria-recipe/",
+    "fetchedAt": "2026-08-02T10:27:35.587Z"
+  },
+  "rawSource": "https://spanishsabores.com/non-alcoholic-sangria-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

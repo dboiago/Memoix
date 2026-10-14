@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Bolo de Cenoura (Brazilian Carrot Cake)",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "491",
+      "carbohydrateContent": "83",
+      "fatContent": "16",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven and spray your bundt pan liberally with nonstick cooking spray. This is super important because you do not want your cake to stick!",
+      "Mix the dry ingredients. In a bowl, whisk together the flour, baking powder, and salt, and set aside.",
+      "Blend the carrots. Peel and cut the carrots into chunks and transfer them into the blender. Pulse to shred until there are not large pieces remaining, as shown below.",
+      "Add the sugar and blend until combined, scraping the sides with a rubber spatula. Then pour in the oil and blend until creamy.",
+      "Add the eggs. Break the eggs into a bowl. Add a splash of vanilla, and whisk to combine.",
+      "Pour the egg-vanilla mixture into the blender, and pulse just 2-3 times to combine. The texture will be pretty smooth, and there will be no large lumps remaining.",
+      "Combine the batter. Pour the carrot cream into the dry ingredients and fold with a spatula until just combined.",
+      "Bake. Pour the batter into the prepared bundt pan and bake in the preheated oven.",
+      "Let it cool. Let the cake cool in the pan for about 10 minutes, then turn it out onto a wire rack or serving plate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Peeled and Cut Into Chunks",
+        "unit": "large",
+        "notes": "you should have enough to fill a liquid 1-cup measurer all the way to the top",
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "can also use canola oil",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Chocolate Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Chocolate Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Chocolate Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "223d512790b0e331d26821d63f488abd936f093a0a02f97c2b1e5a2c7796c18f",
+    "lineage_hash": "5cd0461cf5b81af7e151c90b56c1878244b098c0febdba1d40b4862b1c25fef6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-carrot-cake/",
+    "fetchedAt": "2026-09-25T18:56:00.965Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-carrot-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

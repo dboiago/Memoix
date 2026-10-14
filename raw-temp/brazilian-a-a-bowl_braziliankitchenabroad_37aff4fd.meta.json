@@ -1,0 +1,54 @@
+{
+  "url": "https://braziliankitchenabroad.com/acai-bowl/",
+  "slug": "brazilian-a-a-bowl_braziliankitchenabroad_37aff4fd",
+  "title": "Brazilian Açaí Bowl",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T19:40:25.462Z",
+  "ldName": "Brazilian Açaí Bowl",
+  "ldTime": null,
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Breakfast, Snack",
+  "ldKeywords": "açaí bowl",
+  "ldIngredientsRaw": [
+    "2  packets of frozen Açaí Berry + Guaraná puree (I use Sambazon Original Blend)",
+    "1/4 cup water",
+    "2 Tbsp sugar",
+    "1  Banana",
+    "1/2 cup french vanilla granola"
+  ],
+  "ldInstructionsRaw": [
+    "In a cup, combine the sugar with the water, and mix until sugar is dissolved",
+    "Add the 2 frozen packets of&nbsp;açaí to a blender, then add the water/sugar mixture",
+    "Blend well, about a minute, then scoop the&nbsp;açaí into a bowl",
+    "Top it with sliced bananas, and granola"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "carbohydrateContent": "92 g",
+    "proteinContent": "8 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "25 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "51 g",
+    "calories": "483 kcal",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "2 packets of frozen Açaí Berry + Guaraná puree I use Sambazon Original Blend",
+    "1/4 cup water",
+    "2 Tbsp sugar",
+    "[Toppings]",
+    "1 Banana",
+    "1/2 cup french vanilla granola"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

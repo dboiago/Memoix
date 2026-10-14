@@ -1,0 +1,71 @@
+{
+  "url": "https://www.chinasichuanfood.com/boiled-shrimp/",
+  "slug": "chinese-boiled-shrimp_chinasichuanfood_dbee850e",
+  "title": "Chinese Boiled Shrimp",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:48:46.979Z",
+  "ldName": "Chinese blanched shrimp",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "300 g fresh shrimp",
+    "1.5 tbsp. light soy sauce",
+    "10  thin ginger shreds",
+    "10  thin scallion shreds",
+    "1/2 tsp. sesame oil (, optional)",
+    "1 tsp. sugar",
+    "1.5 tbsp. clean water",
+    "2  scallions",
+    "1 tsp. salt",
+    "1 tsp. Sichuan peppercorn",
+    "water",
+    "2 chunks of ginger (, smashed)"
+  ],
+  "ldInstructionsRaw": [
+    "How to devein shrimp with shells and heads. Firstly use a kitchen shear to trim off the legs and the sharp part at the top of the head to avoid hurt.opening the carapace of the head. Then wash carefully under running water. Washing is extremely important for Chinese poached shrimp, as the head parts spoil the flavor.",
+    "In a large pot of water, add scallion, ginger, salt and Sichuan peppercorn (my personal favorite but optional). Bring the water to a boiling.",
+    "Keep high fire and place the shrimp in. After adding the shrimp, the temperature drops immediately to the poaching range.  Wait for around 1 minute or until the water begins to boil again.  Transfer out as soon as possible.",
+    "Mix all the ingredients for dipping sauce together and make sure the sugar is well dissolved.  Serve with dipping sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "165 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "32 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "242 mg",
+    "sodiumContent": "1756 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g fresh shrimp",
+    "[Dipping Sauce]",
+    "1.5 tbsp. light soy sauce",
+    "10 thin ginger shreds",
+    "10 thin scallion shreds",
+    "1/2 tsp. sesame oil , optional",
+    "1 tsp. sugar",
+    "1.5 tbsp. clean water",
+    "[Boiling water]",
+    "2 scallions",
+    "1 tsp. salt",
+    "1 tsp. Sichuan peppercorn",
+    "water",
+    "2 chunks of ginger , smashed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Couscous Tfaya",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a large saucepan over a\r\nmedium heat. Add the onions, garlic, turmeric,\r\nginger, salt, pepper and saffron and cook for\r\n3 minutes, stirring occasionally",
+      "Add the chicken legs to the pan and cook for\r\n5 minutes, turning occasionally. Pour in the stock\r\nand bring to the boil over a high heat. Cover the\r\npan, reduce the heat to medium-low and leave\r\nto simmer gently for 45 minutes. Stir in the\r\nchickpeas, re-cover the pan and continue\r\nsimmering for a further 15 minutes or until the\r\nchicken is cooked through",
+      "While the chicken is cooking, prepare the tfaya sauce.\r\nHeat the olive oil in a separate large saucepan over\r\na medium-low heat. Add the onions, cover the pan\r\nand leave to cook for about 20 minutes until they\r\nare soft and translucent, stirring occasionally.\r\nMeanwhile, soak the raisins in hot water for\r\n10 minutes until softened, then drain and set aside",
+      "When the onions are soft, add the softened raisins,\r\nhoney, cinnamon and salt and cook, uncovered, for\r\nabout 10 minutes until the onions are lightly golden,\r\nstirring occasionally. Pour in the stock and bring to\r\nthe boil over a high heat, then reduce the heat to\r\nmedium-low and simmer for about 25 minutes\r\nuntil most of the liquid has evaporated and you\r\nhave a thick golden brown sauce. Taste and adjust\r\nthe seasoning, adding more salt if necessary",
+      "By the time your tfaya sauce is ready, the chicken\r\nshould be fully cooked and ready to be served.\r\nTaste the broth and adjust the seasoning, adding\r\nmore salt if necessary. To serve, place the warm\r\ncooked couscous on a large serving plate, top with\r\nthe chicken, broth and chickpeas and finally add\r\nthe tfaya sauce. Garnish with the toasted flaked\r\nalmonds if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "large",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chickpeas",
+        "unit": null,
+        "notes": "400g, rinsed and drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": "optional, toasted, to garnish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Couscous",
+        "unit": "g",
+        "notes": "cooked according to packet instructions then seasoned with a little salt and olive oil",
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88a84fbcb1008c695c48f591ea55c3ba874e0a8a68d380a6a75f401fdcbf85ab",
+    "lineage_hash": "f2d7b9eb8a5e01a8ec83b06df47e17c32cc50cf547ca9af4239045d79ba6c67d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/couscous-tfaya-recipe",
+    "fetchedAt": "2026-08-03T07:47:07.380Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/couscous-tfaya-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

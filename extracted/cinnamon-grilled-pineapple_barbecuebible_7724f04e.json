@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Cinnamon Grilled Pineapple",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the grill to high. Brush and oil the grill grate.",
+      "Cut the stem and rind off the pineapple and slice into 1/2 inch rounds. Core off each pineapple slice with a small donut hole-size cookie cutter or a small knife. Place the melted butter in one shallow bowl; mix the sugar and cinnamon in another bowl.",
+      "Dip each slice of pineapple first in melted butter, then in the cinnamon-sugar mixture, shaking off the excess. Grill the pineapple slices until browned and sizzling, 4 to 5 minutes per side, rotating 90 degrees for crosshatched grill marks. Transfer the pineapple to plates or a platter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Pineapple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d4e41f83eaaa4cd4cbd6f99d4866e9d143f1a324ba4fb8a4a6ad5db4a29dfc9",
+    "lineage_hash": "839036fbb3db0c28b09dfc8f2fea6de0816cf8ad8b19489509d9465cce558034"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cinnamon-grilled-pineapple/",
+    "fetchedAt": "2026-08-03T04:29:40.057Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cinnamon-grilled-pineapple/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

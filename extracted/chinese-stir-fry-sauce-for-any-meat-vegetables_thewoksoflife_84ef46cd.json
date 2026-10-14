@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Chinese Stir-Fry Sauce",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "22",
+      "carbohydrateContent": "2",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a jar with a tight lid (must hold 2 cups of liquid), combine all of the stir fry sauce ingredients together and shake well.",
+      "This sauce should keep for a few weeks in the refrigerator; all you need to do is measure and pour out what you need for your dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "or vegetable or mushroom stock; 350ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "or granulated sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": "can sub gluten-free soy sauce or tamari",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or vegetarian or gluten-free oyster sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "230e0a7addebc4b745b3c5b13095c9278ad2518d873085959282510d4b73bd27",
+    "lineage_hash": "d9c17e3b4976be358a504a1f9ee2e91d5205f7e0b1479b52659a026806d3309e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/stir-fry-sauce-recipe/",
+    "fetchedAt": "2026-08-02T12:34:11.053Z"
+  },
+  "rawSource": "https://thewoksoflife.com/stir-fry-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

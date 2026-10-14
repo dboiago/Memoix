@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Avocado Doughnuts (एवोकैडो डोनट्स)",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add avocado, almond powder, maple syrup, cinnamon powder into mixing bowl and mash well.",
+      "In pan add olive oil and toast doughnut until it turn crisp and golden in color.",
+      "Spread the avocado mixture onto doughnut and sprinkle red peppercorn on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Doughnuts",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppercorn",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51e65919d24795f0f5199a2134eea1ddc216624e27cbf50eb797e3b675aa7d37",
+    "lineage_hash": "4a716179b700ae75b01e96b4240ffa09a952cda95de67f284466f27f8a969ed7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/avocado-doughnuts/",
+    "fetchedAt": "2026-08-02T06:39:16.705Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/avocado-doughnuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

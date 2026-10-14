@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chinese Sweet and Sour Salad Dressing",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "274",
+      "carbohydrateContent": "34",
+      "fatContent": "15",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Clean the vegetable well and then drain completely. Shred the bell pepper and slice the radish.",
+      "In a pan, add around 2 tablespoons of vegetable cooking oil and place the peanuts in when the oil is cold. Use medium fire to heat until there are small bubbles around the peanuts. Continue heating with slowest fire until you hear lots of Papa Sound. Transfer the peanuts out immediately. Drain off extra oil and set aside.",
+      "In a small pot, add sugar, black vinegar, light soy sauce and salt in. Heat over slowest fire and gently stir the sauce. Make sure the sugar is dissolved. Always keep slow fire and remove the pot from fire if necessary. Don’t let the sauce boils.  Set aside and cool down completely.",
+      "Garlic water| add 1 tablespoon of hot water in two smashed garlic. Set aside and soak for 10 minutes.",
+      "Assemble| mix vegetable, shredded bell peppers, sliced red radishes and toasted peanuts in a large mixing bowl. Add olive oil and sesame oil, squeeze the garlic water and drizzle the sweet and sour sauce. Mix well and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Salad Vegetable Mixing",
+        "unit": "g",
+        "notes": "any type you prefer",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "⅕",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Radish",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": "Garlic water",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Boiling Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Garlic water",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste, optional if you pursue a low salt content",
+        "amount": "⅛",
+        "section": "Sweet and sour sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6810623b63448134ad517033f47f1c419f21fc6d98c4b9732b51752e65b916f",
+    "lineage_hash": "f2986408ed3c207dcc13f2505190fb171ce1c885c5b93056b45218bea9a204a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/amazing-chinese-sweet-and-sour-salad-dressing/",
+    "fetchedAt": "2026-08-02T06:16:23.866Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/amazing-chinese-sweet-and-sour-salad-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

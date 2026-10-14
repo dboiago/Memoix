@@ -1,0 +1,324 @@
+{
+  "recipe": {
+    "name": "Crispy Paneer Cutlet (Bonus Dip recipe)",
+    "time": "25-30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a parat, add paneer slices, sprinkle some salt to taste, degi red chili powder, cumin powder, coriander powder and marinate it well from both the sides.",
+      "In a pan, add oil, once it's hot, add marinated paneer and shallow fry it for a while until golden brown.",
+      "Transfer it to an absorbent sheet and keep it aside for further use.",
+      "In a pan, add oil, remaining oil, once it's hot, add onion and saute it for a minute until translucent.",
+      "Add ginger, green chilies and saute it for a minute.",
+      "Add carrot and cook it well for a while.",
+      "Add tender coriander stems, potatoes, coriander leaves and mix it well.",
+      "Add prepared masala fried paneer, bread slices, salt to taste, black pepper powder, give it a good mix and cook it for 2-3 minutes on medium flames.",
+      "Transfer it to a bowl and keep it aside to cool down at room temperature.",
+      "Take a lemon size ball and give it a desired shape.",
+      "Dip the prepared balls in cornstarch slurry and coat it well with bread crumbs.",
+      "Transfer it to a hot and shallow fry it until golden brown.",
+      "Transfer it to a serving dish, garnish it with coriander sprig and lemon wedges.",
+      "Serve hot with prepared tadka ketchup dip.",
+      "In a pan, once it's hot, add mustard oil and splutter it well.",
+      "Add curry leaves, green chillies, a pinch of chili flakes and cook it for a minute.",
+      "Add tomato ketchup, water and simmer it for 4-5 minutes until it thickens.",
+      "Transfer it to a serving bowl and serve with a prepared paneer cutlet."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "700",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "for shallow frying",
+        "amount": "2-3",
+        "section": "For Masala Fried Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": null,
+        "notes": "prepared, grated",
+        "amount": "0",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "grated",
+        "amount": "2-3",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & grated",
+        "amount": "1½",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "4",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "peeled & grated",
+        "amount": "1",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems with Roots",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & grated",
+        "amount": "5-6",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2-3",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bread Slices",
+        "unit": null,
+        "notes": "trim the edges & cubed",
+        "amount": "3-4",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cutlet Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Small Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2-3",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka Ketchup",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cornstarch Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cornstarch Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cornstarch Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "190aa6cc44b3c73410b25e46cd36a7a48bdc81ac87d0ed086903988fdcbbf324",
+    "lineage_hash": "381ceb23f1df5f040b3b15c1f666ef6ed53a39a0e0a2119ba604a45599119344"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cripsy-paneer-cutlet/",
+    "fetchedAt": "2026-08-02T18:43:39.160Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cripsy-paneer-cutlet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

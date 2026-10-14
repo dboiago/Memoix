@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Dal Makhani (दाल मखनी)",
+    "time": "8 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil sabuturad and rajma in three cups of water with salt and half the red chilli powder and half the ginger. Cook for three whistles in a pressure cooker or until the rajma is completely soft.",
+      "Heat butter and oil in a pan. Add cumin seeds. When they begin to change colour, add ginger, garlic and onion and sautÃ© till golden brown.",
+      "Add slit green chillies, tomatoes pureeand sautÃ© on high heat. Add the remaining red chilli powder and sautÃ© till the tomatoes are reduced to a pulp.",
+      "Add the cooked dal and rajma along with the cooking liquour. Add some water if the mixture is too thick. Add garam masala powder and adjust salt.",
+      "Simmer on low heat till the dals are totally soft and well blended.",
+      "Serve hot. Garnish with a swirl of cream and sprigs of fresh coriander."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Black Gram",
+        "unit": "C",
+        "notes": "sabut urad",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Kidney Beans (rajma)",
+        "unit": "Tbsp",
+        "notes": "Wash and soak urad dal & rajma overnight, drain",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pieces Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "blended to paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa7175145071e3e9c3d5d8ee13176fdb64e5e408b1e2322914165f5ad9639d93",
+    "lineage_hash": "622be0454a1b08ba61dbd2c5b0bc1e11f35c7ce0fcd6488da4eee86be35aab67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-makhani/",
+    "fetchedAt": "2026-08-02T07:02:35.511Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-makhani/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

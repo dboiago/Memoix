@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cream Puffs",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "118",
+      "carbohydrateContent": "6",
+      "fatContent": "4",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Make the Pate a Choux batter according to the recipe.",
+      "Use a cookie scoop or piping bag to form mounds of choux batter. You can adjust the size of the puffs according to your taste.",
+      "Dip your finger in water and use it to smooth the tops of the unbaked puffs.",
+      "Bake until well-puffed and golden brown. Turn off the oven.",
+      "Use the tip of a paring knife to make a small hole in the bottom of each puff.",
+      "Return the tray to the still warm oven for 30 minutes to dry the interior and crisp the puffs.",
+      "Whip the cream with the sugar.",
+      "Fold the whipped cream into the chilled pastry cream.",
+      "Fill a piping bag fitted with a pastry tip with the vanilla cream.",
+      "Use the hole you made on the bottom of each puff to fill them with the cream.",
+      "Alternately, you can slice the top off each puff. Pipe a swirl of cream into the puff. Then replace the top.",
+      "Sprinkle the puffs with powdered sugar and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Pate a Choux",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Pastry Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b16abe8f79ec095180cc14db062904987debdc0e0fed6c2b2b00af5c2c2931f0",
+    "lineage_hash": "53cef7a1fde553ed875847a334d363a1385140819560ecabdf9d2482b193fbe5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/01/16/cream-puffs/",
+    "fetchedAt": "2026-08-01T15:54:11.484Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/01/16/cream-puffs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

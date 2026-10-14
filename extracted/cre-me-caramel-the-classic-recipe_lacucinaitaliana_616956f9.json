@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Crème Caramel",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat 2/3 cup of sugar with 2 1/2 tablespoons of water. Cook over medium heat until it begins to turn golden. Pour it into a round 8-inch mold.",
+      "For the cream filling: Heat the milk, cream, and the vanilla bean pod opened lengthwise until everything almost comes to a boil. Combine the eggs and egg yolk with the rest of the sugar. Strain the milk and cream directly over the eggs; combine the mixture and strain again; pour it into the mold, on top of the caramel. Cook the crème caramel in a bain-marie at 285°F for about 1 hour. Remove it from the oven and let cool completely; heat the mold a bit in hot water, then turn it over onto a dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1293a3fb64c4060a2f49d3bbb33357b6fed1361f00debccf5eb292e3036552e",
+    "lineage_hash": "2b12564f80bfcb17552cc7389ba03d3da18082e58f515190bc4a131e1c278fa0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/creme-caramel-the-classic-recipe",
+    "fetchedAt": "2026-08-03T08:01:32.911Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/creme-caramel-the-classic-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

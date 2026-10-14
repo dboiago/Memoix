@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Asian Slaw With Sesame Soy Dressing",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "84",
+      "carbohydrateContent": "10",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Combine all ingredients and set aside.",
+      "Finely shred red cabbage, green cabbage, napa cabbage, and carrot.",
+      "Chop scallion finely and set aside.",
+      "Wash the shredded vegetables in a large mixing bowl under running water.",
+      "Drain the water with a colander.",
+      "Place the shredded vegetables in a salad spin and remove excess water as much as you can.",
+      "Toss the vegetables into a serving dish.",
+      "Scatter the edamame and garnish with watercress and fried noodle pieces.",
+      "Dress with the sesame and soy dressings to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame Soy Dressings",
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Edamame (frozen) *without Pods",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Watercress to Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Asian Slaw",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Noodle to Garnish",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Asian Slaw",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "86209f1f77b6a909a891c9801e52684e473616b6841d9d5c4f2b6c2381138c38",
+    "lineage_hash": "3dcf71af9a9ce77197f9b6f0c8548ffc204a02b3c3e06070b66c410b7c696903"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/asian-slaw/",
+    "fetchedAt": "2026-08-02T00:58:12.413Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/asian-slaw/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

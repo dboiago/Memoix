@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chicken Parmesan over Pasta",
+    "time": "18 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up breading procedure. 1 bowl of flour, 1 bowl of beaten eggs, 1 bowl of bread crumbs.",
+      "Keeping one hand dry and one hand wet, bread the chicken first in flour, than into the egg and then into the bread crumbs.",
+      "Pre-heat your Baking Steel Carbon Steel Pan with oil in it on medium until oil is 300-325 degrees.",
+      "Carefully place chicken into pan and get it a little shake to keep it from sticking on bottom. Flip after brown on one side (2-3 minutes). Cook for additional 2 minutes and turn off heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ea Boneless",
+        "unit": null,
+        "notes": "skinless chicken thighs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ea Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian Bread Crumbs",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Sauce",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Moisture Mozzarella",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angel Hair Pasta",
+        "unit": "oz",
+        "notes": "or any pasta really",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil (for Garnish)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ca1053f6853bf75f9b077d24c258bc5052b630c8d6c66bd2e5c4f4919cca139",
+    "lineage_hash": "7cb906bd7db71f1122567929b10fe5ace1016acb6092c7468098707d53c4bbd5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakingsteel.com/blogs/recipes/chicken-parmesan-pasta-recipe-the-only-recipe-you-need",
+    "fetchedAt": "2026-08-01T23:08:32.144Z"
+  },
+  "rawSource": "https://bakingsteel.com/blogs/recipes/chicken-parmesan-pasta-recipe-the-only-recipe-you-need",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

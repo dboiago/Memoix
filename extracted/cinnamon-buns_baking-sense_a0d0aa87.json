@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Cinnamon Buns",
+    "time": "13 hr 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "430",
+      "carbohydrateContent": "75",
+      "fatContent": "15",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a mixer bowl combine 6 oz warm water, 2 ¼ tsp instant dry yeast, 8 oz whole milk and 2 cups (10 oz) of the flour. Mix to form a thick batter. Cover the bowl and set aside to rise for at least 30 minutes.",
+      "Add 3 oz sugar, 2 oz unsalted butter (melted), 1 large egg and 1 teaspoon table salt then mix to combine. Change to the dough hook if using a stand mixer. With mixer on low add the remaining flour, 1/2 cup at a time. The dough should be soft and elastic. Knead for 5 minutes. The dough will clear the sides of the bowl and gather on the hook. If mixing by hand continue mixing and then kneading in the flour by hand. Dump the dough onto a lightly floured surface. Knead into a smooth ball.",
+      "Transfer the dough to a lightly oiled bowl, turning once to coat the dough. Cover the bowl and set it aside at room temperature until the dough doubles in volume, about 60 minutes.",
+      "Generously brush a 9” x 13” baking pan with some of the melted butter, reserve the rest. In a small bowl, combine8 oz brown sugar and 1 tablespoon ground cinnamon. Turn the dough onto a floured surface without kneading out the air. Roll the dough to a 18\" x 16\" (46cmx41cm) rectangle. Generously brush the surface of the dough with egg wash. You should use almost 1/2 the egg wash to get a good coating so the cinnamon sugar will stick. Sprinkle the cinnamon sugar over the egg washed dough. Use your hands to smooth out the cinnamon sugar to an even layer all the way to the edge of the dough.",
+      "Working from the long side, tightly roll the dough into a log, pinch the seam to seal. Straighten out the log so it's of even thickness and is 18\" long (see note 2).",
+      "Use a serrated knife to cut the log into twelve 1.5\" (3.5cm) wide buns. Place the buns in the prepared pan. Generously brush the tops of the buns with the melted butter. Cover the buns with plastic wrap and refrigerate overnight (see note 3).",
+      "In the morning take the pan out of the refrigerator. They should be puffy and almost filling the pan.  Leave the pan at room temperature while the oven preheats to 375 °F.",
+      "Bake the buns until they're until golden brown and set in the center, 25-30 minutes.",
+      "While the buns are baking, make the icing. Combine 2 oz unsalted butter and 3 oz confectioner's sugar in a mixing bowl and cream until well combined. Add the 2 oz cream cheese and whip until well aerated. Add 1/2 teaspoon vanilla extract and optional 1/2 teaspoon lemon juice. The lemon juice will spark the flavor of the icing but it's ok to go without. (See note 4 if you prefer glaze to cream cheese frosting.)",
+      "Remove the buns from the pan while they are still warm. Spread cream cheese icing generously over the buns as you serve them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": "1 packet",
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup, scalded and cooled",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unbleached All Purpose Flour",
+        "unit": "oz",
+        "notes": "4 ½ cups, see note 1",
+        "amount": "22½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "¼ cup, melted",
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "¼ cup, melted",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Frosting (See note for alternate glaze)",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "3",
+        "section": "Frosting (See note for alternate glaze)",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Frosting (See note for alternate glaze)",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Frosting (See note for alternate glaze)",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "Frosting (See note for alternate glaze)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e3cf029de998f8a11c22842cf2538722a665d3125a2cac447e465633ebd8d7e",
+    "lineage_hash": "91bef33f6e3c9f975d1f900f70fb771ea9e61bcce1919184510cee2afac92265"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/12/21/homemade-cinnamon-buns/",
+    "fetchedAt": "2026-08-02T03:59:54.424Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/12/21/homemade-cinnamon-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

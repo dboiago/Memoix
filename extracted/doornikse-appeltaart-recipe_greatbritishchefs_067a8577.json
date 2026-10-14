@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Doornikse Appeltaart",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a 27 cm top diameter x 23 cm base diameter x 3 cm depth pie tin, greased and floured",
+      "For the shortcrust pastry, combine the flour, sugar, salt and butter in a food processor fitted with the blade attachment. Pulse for 8 seconds or until the mixture resembles breadcrumbs. Add the egg yolk and water and pulse again until the dough forms a ball in the bowl. Remove from the bowl and knead briefly",
+      "Wrap the pastry in plastic wrap and let it rest in the refrigerator for 30 minutes",
+      "For the filling, slice the apples into rounds and then into thirds. You need 230g of chopped apple",
+      "Add the icing sugar to the melted butter and beat until smooth. Add the egg yolks and the egg and beat well, then stir in then cinnamon. Set the filling aside to rest while preheating the oven to 180°C/gas mark 4. Do not use the fan setting",
+      "Briefly knead the pastry until smooth, then pat it into a round disc and roll it out onto a floured work surface to a thickness of 3 mm. Lay the pastry in the pie plate or tin. Trim off excess pastry",
+      "Coat the apple slices in the rice flour and arrange in the pie plate or tin. Stir the filling well, then pour it over the apple slices and gently shake the tart so the filling can get all around the apples",
+      "Place the tart in the middle of the oven and turn down the heat to 160°C/gas mark 3. Bake for 40 minutes until the filling is set, then increase the oven temperature to 180°C/gas mark 4 and bake for an additional 10 minutes until the pastry is golden brown and the filling golden"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "cold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dessert Apples",
+        "unit": "g",
+        "notes": "cox, granny smith or other slightly tart varietes",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "plus 1 whole egg",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c85614ab8490ed440e4b2301a29a5e777f99805ba00decd1e30796ff6117902",
+    "lineage_hash": "c6b127124902570fc4d0d44e045339cb19074fcfad531c0815714316e3ef67f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/doornikse-appeltaart-recipe",
+    "fetchedAt": "2026-08-02T16:39:51.310Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/doornikse-appeltaart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,65 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-lemon-pepper-chickpeas/",
+  "slug": "creamy-lemon-pepper-chickpeas_itdoesnttastelikechicken_7442df94",
+  "title": "Creamy Lemon Pepper Chickpeas",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T23:43:06.368Z",
+  "ldName": "CREAMY LEMON PEPPER CHICKPEAS",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "chickpeas, lemon",
+  "ldIngredientsRaw": [
+    "1 tablespoon olive oil",
+    "1/2  yellow onion (chopped)",
+    "3 cloves garlic (minced or pressed)",
+    "1 tablespoon all-purpose flour, (gluten-free if preferred)",
+    "1 cup vegetable broth",
+    "1  lemon zest",
+    "2 tablespoons lemon juice",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1, 19oz can chickpeas (about 2 cups), drained and rinsed",
+    "1/4 cup full-fat coconut milk",
+    "small handful  cilantro or parsley (chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the olive oil in a skillet over medium-high heat. When hot add the onions and garlic and sauté until the onion turns translucent and begins to brown, about 5 minutes.",
+    "Sprinkle in the flour and stir and cook for an additional 30 seconds to heat up the flour.&nbsp;Now add the vegetable broth, lemon juice, lemon zest, salt, and pepper. Stir and scrape the bottom of the pan to remove on any stuck on bits. Stir in the chickpeas and bring to a simmer. Cook for another 5 to 10 minutes until the sauce has thickened.",
+    "Stir in the coconut milk. If you find your sauce a little too thick, you can add more broth to thin, and if you find your sauce a little too thin, just cook down a bit more. Garnish with cilantro or parsley and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "229 kcal",
+    "carbohydrateContent": "30.1 g",
+    "proteinContent": "8.5 g",
+    "fatContent": "9.5 g",
+    "saturatedFatContent": "3.5 g",
+    "sodiumContent": "516.4 mg",
+    "fiberContent": "7.7 g",
+    "sugarContent": "5.5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon olive oil",
+    "▢ ½ yellow onion, chopped",
+    "▢ 3 cloves garlic, minced or pressed",
+    "▢ 1 tablespoon all-purpose flour, (gluten-free if preferred)",
+    "▢ 1 cup vegetable broth",
+    "▢ 1 lemon zest",
+    "▢ 2 tablespoons lemon juice",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "▢ 1, 19oz can chickpeas (about 2 cups), drained and rinsed",
+    "▢ ¼ cup full-fat coconut milk",
+    "▢ small handful cilantro or parsley, chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

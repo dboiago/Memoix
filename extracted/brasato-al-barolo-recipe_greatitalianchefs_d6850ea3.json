@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Brasato al Barolo",
+    "time": "2 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a glug of olive oil in a heavy-bottomed casserole with a lid – it should be just big enough to hold the beef. Season the beef generously with salt and pepper then add to the pan and brown on all sides",
+      "Remove the beef from the casserole and set aside. Add the diced vegetables with the garlic into the same pan and cook until softened",
+      "Add the herbs and stir in the tomato puree. Cook for a couple of minutes, stirring to avoid it sticking. Return the beef to the pan",
+      "Pour the wine over the beef, bring up to a  boil then turn down to a simmer. Cover and simmer for 2 hours. Stir every now and then to check nothing is sticking to the bottom of the pan, and if the wine doesn't cover the beef, turn over every 30 minutes to prevent any part of it drying out",
+      "Remove the beef and set aside in a warm place. Using a hand blender, blitz the stew left in the casserole to create a glossy thick sauce",
+      "To cook the polenta, place a saucepan over a medium heat and add the vegetable stock. Once hot, add the polenta and cook for 4-5 minutes, whisking continuously to prevent lumps. Once thickened, stir in the butter and season with salt and pepper",
+      "Carve the beef against the grain and lay on the bed of polenta. Pour over the sauce and serve the rest of the sauce on the side. Serve with a glass of Barolo wine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Roasting Joint",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "dicd",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barolo Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef35cc18597608d2fdccc53289d0c601458123edf0825dbbeeec62ea7ba8d026",
+    "lineage_hash": "4d78ad552348776e5cde6921d850fd6a83fc7c6c65c7a9ff26c4735f50f03fff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/brasato-al-barolo-recipe",
+    "fetchedAt": "2026-08-01T19:20:31.297Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/brasato-al-barolo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

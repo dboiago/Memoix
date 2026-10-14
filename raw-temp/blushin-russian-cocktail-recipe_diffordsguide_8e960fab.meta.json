@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/279/blushin-russian",
+  "slug": "blushin-russian-cocktail-recipe_diffordsguide_8e960fab",
+  "title": "Blushin Russian Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:29:51.819Z",
+  "ldName": "Blushin' Russian",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Creamy (e.g. Dirty banana)"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Vodka",
+    "15 ml Amaretto liqueur",
+    "30 ml Coffee liqueur",
+    "30 ml Whipping cream"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a MARTINI GLASS.",
+    "Prepare coffee beans for garnish.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with 3 coffee beans floated in a petal formation in the centre of the cocktail's foamy head."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "276 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

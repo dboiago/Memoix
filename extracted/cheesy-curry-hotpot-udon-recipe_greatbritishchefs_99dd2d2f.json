@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Cheesy Curry Hotpot Udon",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the water and mushrooms in a medium-sized (about 22 cm diameter, 1.5 litre capacity) hotpot or casserole and leave to soak while you prepare the rest of the ingredients",
+      "When the mushrooms have rehydrated fully, squeeze them dry and discard their stems",
+      "Bring the water to a high simmer and add the Worcestershire sauce, chicken stock powder, dashi powder and curry roux",
+      "Use a whisk to dissolve the roux, then add the mushrooms, kale and leeks",
+      "Boil for about 4 minutes until the veg are tender, then add the udon",
+      "Let the liquid come back to the boil, then crack the egg into the centre of the soup and top with the cheese",
+      "Place a lid on the pan and cook for another 3–4 minutes so the egg sets and the cheese melts",
+      "Top with the tofu and serve immediately – ideally, this should still be bubbling when you tuck in"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried, 6-8g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock Granules",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Curry Roux",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Kale Leaves",
+        "unit": null,
+        "notes": "about 80g, destemmed and roughly torn or chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": "cut into 1cm-thick slices at an angle, or 4 spring onions",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portions of Fresh",
+        "unit": null,
+        "notes": "alt: frozen udon noodles",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "medium",
+        "notes": "or two if you're making two individual portions",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "or mild Cheddar, grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Deep-fried Tofu Puffs",
+        "unit": "g",
+        "notes": "optional, abura-age, cut into pieces about 2.5cm wide",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firm Tofu",
+        "unit": "g",
+        "notes": "cut into 1cm thick slices",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c8d618f95b78b37ce8705d640a08b70ec9f54fcd630b96979a2729271d7b78d",
+    "lineage_hash": "1c1410f56e4cd8b49cbf3c5926b79201e1d8b7db706c2f9d46356631c299684b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-curry-hotpot-udon-recipe",
+    "fetchedAt": "2026-08-02T17:32:52.194Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-curry-hotpot-udon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

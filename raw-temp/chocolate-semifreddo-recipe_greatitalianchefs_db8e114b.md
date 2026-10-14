@@ -1,0 +1,7 @@
+Coviglia is a traditional dessert from Naples that traces back to the 18th century. It is considered a semifreddo (which in Italian means 'half-cold' or ‘half-frozen') and texture-wise, it is between [ice cream](https://www.greatitalianchefs.com/collections/ice-cream-recipes) and mousse. It is silky, creamy and deliciously cold.
+
+Naples is very famous for its food: [pizza](https://www.greatitalianchefs.com/features/italian-pizza-guide) is obviously the best-known dish that originated from this beautiful city, and probably not many people know that the Neapolitan cuisine we know today has been deeply influenced by the Frenchmen and Spaniards that ruled the city for centuries. Coviglia is one such example, and the name itself comes from the Spanish word cubillo – small barrell – probably because of the shape of the container used to serve the dessert.
+
+Traditionally, coviglia comes in one single flavour. The most classic versions are chocolate and coffee, even though modern varieties include hazelnut and strawberry. They used to be sold in small aluminium containers, while now you can purchase them at any pastry shop or gelataria in small plastic glasses.
+
+Making ice cream at home can be tricky, but semifreddo is a completely different story. You do not need an ice cream machine to make coviglia, and you will be surprised by how easy it is to make this silky chocolate semifreddo at home.

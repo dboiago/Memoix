@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Blackberry Muffins",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease your muffin tin, or line with muffin cases",
+      "Sift the dry ingredients into one bowl and combine the wet ingredients in another bowl",
+      "Add the wet ingredients to the dry bowl and stir to combine. Don’t over work the mixture or you could end up with dense muffins",
+      "Half any of the larger blackberries, then fold them through the mixture",
+      "Divide the mixture between the 12 muffin cases and bake for 20 minutes or until a skewer comes out clean when inserted in the middle",
+      "Remove from the tray and let cool on a wire cooling rack"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60119c502caf85937d863beb6594d9189b1f5fad4e9d00ed818b718b4e9c9ba2",
+    "lineage_hash": "b50c1d6d1123a029b1538d72db8edfba681769fa91399962d96c629fbe9d84e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-muffins-recipe",
+    "fetchedAt": "2026-08-03T06:56:45.488Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-muffins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

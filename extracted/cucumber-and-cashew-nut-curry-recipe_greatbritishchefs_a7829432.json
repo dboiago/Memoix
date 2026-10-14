@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Cucumber and Cashew Nut Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cover the cashew nuts with cold water for 30 minutes, then drain",
+      "Dry-roast the cumin and coriander seeds in a pan until golden and aromatic, then grind to a powder. Mix together with the turmeric and chilli powder",
+      "Slice the cucumber lengthways and remove the seeds with a teaspoon. Discard the seeds. Cut the cucumber on the angle into 1.5cm slices",
+      "Place the cucumbers, cashews, coconut milk, ground spice mix, chillies and cinnamon in a saucepan. Simmer together for 10 minutes, until both the nuts and cucumber are just tender",
+      "Heat the sunflower oil in a separate pan and, once hot, add the onion, curry leaves, dill and fennel seeds. Fry over a medium heat for 5 minutes until the onions are golden",
+      "Pour over the cucumber and cashew curry and simmer together for a further 5 minutes. Season to taste with salt, then serve with plain boiled rice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long Cucumbers",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": "raw",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pc",
+        "notes": "2cm long, broken in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "fresh is best but use dried if they're difficult to find",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "lightly bashed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99333551e0367c1189a9440daf97b98be47690c80f16fbc171225503f21bedb4",
+    "lineage_hash": "81f1337f9ac428b0dc15c28899dd4d20e58e95b849913f6ea4aae5cd5c63072f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cucumber-cashew-curry-recipe",
+    "fetchedAt": "2026-08-03T07:32:19.659Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cucumber-cashew-curry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

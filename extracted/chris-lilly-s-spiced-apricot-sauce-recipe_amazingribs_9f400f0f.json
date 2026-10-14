@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Spiced Apricot Sauce",
+    "time": "25 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "57",
+      "carbohydrateContent": "15",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Prep. In a small saucepan, combine the glaze ingredients and mix well. Refrigerate until you need it. It will keep for weeks.",
+      "Serve. If using as a ham glaze, begin brushing the ham during the last hour of heating so that the sugars do not burn. Brush the ham once more just prior to serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricot",
+        "unit": "C",
+        "notes": "alt: peach preserves",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salad Grade Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon-style Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": "or smoked paprika",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chipotle",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rubbed Sage",
+        "unit": "tsp",
+        "notes": "sage powder",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e86b4754f83b6123a877d6dc56a4b375c46d0b35526db86b3ae9f279692463c1",
+    "lineage_hash": "a39df41d1b87c81f651b799bb7c4c62709d35a0c3469b0f4809c841d0feb7ded"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chris-lillys-spiced-apricot-sauce/",
+    "fetchedAt": "2026-08-02T09:22:13.182Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chris-lillys-spiced-apricot-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

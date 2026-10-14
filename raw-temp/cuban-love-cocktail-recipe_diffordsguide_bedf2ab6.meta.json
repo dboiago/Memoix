@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/4838/cuban-love",
+  "slug": "cuban-love-cocktail-recipe_diffordsguide_bedf2ab6",
+  "title": "Cuban Love Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T14:30:48.160Z",
+  "ldName": "Cuban Love",
+  "ldTime": "PT10M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Cuban Love"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Cacao spiced rum",
+    "60 ml Pineapple verdita",
+    "10 ml Pimento dram",
+    "15 ml Lemon juice",
+    "15 ml Brown sugar syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a HIGHBALL (MAX 10OZ/300ML) GLASS.",
+    "Prepare garnish of fresh or dehydrated pineapple spice and mint springs.",
+    "SHAKE all ingredients with ice.",
+    "STRAIN into ice-filled glass."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "302 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

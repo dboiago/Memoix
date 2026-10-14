@@ -1,0 +1,334 @@
+{
+  "recipe": {
+    "name": "Chicken Koliwada (Spicy Chicken Pakoda)",
+    "time": "30-35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, salt to taste, ginger garlic paste, lemon juice and mix it well.",
+      "Keep it aside to marinate for a while.",
+      "In a pan, add fenugreek seeds, coriander seeds, green cardamom, small mustard seeds, cloves, cumin seeds, black peppercorns, black cardamom, salt to taste and dry roast it for 2-3 minutes until aromatic.",
+      "Turn off the flames and add turmeric powder, degi red chili powder and coriander powder.",
+      "Transfer it to a mixer grinder jar and grind it into a fine powder.",
+      "Keep it aside for further use.",
+      "In a bowl, add marinated chicken, koliwada masala, whole eggs, rice flour, cornstarch, degi red chili powder, oil and give it a good mix. Keep it aside to marinate for a while.",
+      "In a kadai, add oil, once it's hot, drop the marinated chicken pieces and fry them until it's half cooked.",
+      "Transfer it to an absorbent sheet and keep it aside to rest.",
+      "Increase the flames to high, once it's hot, refry the chicken until crispy and golden in colour..",
+      "Transfer it to a serving dish, garnish it with onion rings, lemon wedge, green chili, coriander sprig and sprinkle some koliwada masala.",
+      "Serve hot with green chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "thigh & boneless",
+        "amount": "1",
+        "section": "For 1 st Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For 1 st Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For 1 st Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For 1 st Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "½",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Koliwada Masala",
+        "isOptional": false
+      },
+      {
+        "name": "St Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Koliwada Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "No. Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For 2nd Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpeas",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "½",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Koliwada Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chana Koliwada",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "with skin",
+        "amount": "10-12",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "rings",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Koliwada Masala",
+        "unit": "pinch",
+        "notes": "prepared",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac3faded587d8588e9eb5a725504d22dca0432771f163ba7d4e999dde9306f99",
+    "lineage_hash": "42c845dc38e7f8f77f0d1ef2704196e5c5b189980ca34851490aa00e1ceacdfd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-koliwada/",
+    "fetchedAt": "2026-08-02T19:01:56.770Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-koliwada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

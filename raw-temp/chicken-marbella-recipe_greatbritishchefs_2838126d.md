@@ -1,0 +1,3 @@
+This is my version of the iconic chicken dish from The Silver Palate Cookbook by Sheila Lukins and Julee Rosso. It’s a really easy dish to prepare, the chicken sits overnight in the juices from the olives and capers which brines it in the process, making it extra tasty and succulent. The next day, simply bake in the oven for 40 minutes and serve.
+
+While it’s true that you shouldn't mess with a classic too much, I have made a few small additions. Anchovy-stuffed olives bring an extra umami saltiness, and I switched the white wine for sherry because it’s delicious, and enhances that already wonderfully caramelised flavour of the dish.

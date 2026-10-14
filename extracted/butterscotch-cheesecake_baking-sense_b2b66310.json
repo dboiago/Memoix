@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Butterscotch Cheesecake",
+    "time": "6 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "397",
+      "carbohydrateContent": "34",
+      "fatContent": "26",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Toss the melted butter with the graham cracker crumbs and pecans.",
+      "Press the crumbs into the prepared pan and bake until golden and fragrant.",
+      "Mix the cream cheese and sugar until smooth.",
+      "Add the sour cream.",
+      "Add the eggs and butterscotch sauce.",
+      "Pour the cheesecake batter over the baked crust.",
+      "Set the pan into a larger pan and pour water to come half way up the pan.",
+      "Bake the cake, cool to room temperature, then refrigerate until very cold.",
+      "Top the chilled cake with butterscotch sauce and spiced pecans. Serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Butterscotch Sauce",
+        "unit": null,
+        "notes": "made with 2T bourbon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Candied Spice Pecans",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Pecan Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Spiced Pecans",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Pecan Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Pecan Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Pecan Graham Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "24",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "5",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cheesecake Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6f016ce41f49f044c71a9f5ac6bd063d7061342baaa4dc2c31fc79002898786",
+    "lineage_hash": "135ca60fa186c7ff6e1ae5bcd4efdb7b2ad70a5fa6e1146468c6384abd22b07c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/11/16/bourbon-butterscotch-cheesecake/",
+    "fetchedAt": "2026-08-02T08:06:13.051Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/11/16/bourbon-butterscotch-cheesecake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

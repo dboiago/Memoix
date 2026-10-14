@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Applesauce Oatmeal Muffins",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "355",
+      "carbohydrateContent": "47",
+      "fatContent": "16",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Combine the dry ingredients for the topping in a mixing bowl.",
+      "Add the butter and mix until it looks like lumpy wet sand.",
+      "If you squeeze some topping in your hand, it should form a large clump.",
+      "Whisk together the dry ingredients in a large mixing bowl.",
+      "Whisk together the wet ingredients in separate bowl.",
+      "Add the wet ingredients to the dry ingredients all at once and stir until the flour is incorporated.",
+      "Set the batter aside for at least 1 hour or refrigerate overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "½ cup, see note",
+        "amount": "2½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "1½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "at cool room temp",
+        "amount": "3",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "3",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Applesauce",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "9",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "3½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f207965c0e9253b29cfa706d52b5a6444b2a95dd080020dab3a567fdd734592",
+    "lineage_hash": "114e7f92193a25929275a36bc3e9e29d514256d87e1dc87f432e4dd5c813953f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2026/02/04/applesauce-oatmeal-muffins/",
+    "fetchedAt": "2026-08-02T06:38:07.344Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2026/02/04/applesauce-oatmeal-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

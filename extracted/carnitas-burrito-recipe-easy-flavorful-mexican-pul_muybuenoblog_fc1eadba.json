@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Carnitas Burrito",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "514",
+      "carbohydrateContent": "51",
+      "fatContent": "22",
+      "proteinContent": "28"
+    },
+    "directions": [
+      "Heat each tortilla on a griddle or comal until soft and pliable, about 30 seconds.",
+      "Spread about ⅓ cup of refried beans across the center of the tortilla, leaving space at the edges. Top with about ½ cup of hot carnitas, a sprinkle of cheese, a spoonful of salsa, and a dollop of guacamole.",
+      "Fold in the sides of the tortilla, then roll it up tightly from the bottom to seal.",
+      "Place seam-side down on a hot griddle to seal and crisp the burrito. Flip once golden, about 1–2 minutes per side.",
+      "Place burrito on parchment paper, then wrap in foil for a road-ready meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour Tortillas",
+        "unit": "large",
+        "notes": "warmed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refried Beans",
+        "unit": "C",
+        "notes": "homemade or store-bought",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Carnitas",
+        "unit": "C",
+        "notes": "Dutch oven, Coca-Cola, or condensed milk version",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "shredded, (cheddar, Oaxaca, or queso fresco) – optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salsa",
+        "unit": "C",
+        "notes": "your favorite!",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guacamole",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a84f1640e3bdbe415297a3b127ef4aafdd7ad6ba1a1dc03b20de10890511e108",
+    "lineage_hash": "ee6150119da4005f3aee2304a5f4184ccc3dddef494e3e2e851990373b499ab0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/carnitas-burrito/",
+    "fetchedAt": "2026-08-02T09:41:18.562Z"
+  },
+  "rawSource": "https://muybuenoblog.com/carnitas-burrito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

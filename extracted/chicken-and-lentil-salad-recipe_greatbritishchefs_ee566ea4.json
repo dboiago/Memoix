@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Chicken and Lentil Salad",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the chicken stock into a saucepan, place on the hob, and bring to the boil. Pop in the chicken, reduce the heat to a simmer and leave to gently poach for 10 minutes. Once fully poached, take out the chicken breasts and leave to drain in a warm place. Keep the stock",
+      "In a separate saucepan, heat 1 tbsp of rapeseed oil and add the vegetables with the bay leaf. Cook on a low heat, cover with the saucepan lid and leave them to sweat for 10 minutes",
+      "For the asparagus, trim the ends, cut each spear in half, and steam for 4 minutes",
+      "After the vegetables have been sweating for 10 minutes, rinse the lentils and place into the saucepan with the vegetables. Increase the heat and add enough chicken stock to cover the mixture. Once it starts boiling, reduce the heat and leave to simmer for 20 minutes until the lentils are cooked",
+      "To make the salsa verde, throw the chopped capers, garlic and parsley, mint, and basil leaves in a bowl. Add in the Dijon mustard, vinegar and 1 tbsp of oil. Season with lots of black pepper and mix together",
+      "If you would like to try the pôche grillé technique, place a griddle pan on a high heat and when it begins to smoke, quickly grill the cooked chicken for about a minute each side",
+      "To serve, spoon the lentils into the centre of each plate and then cut the chicken breast on the diagonal and place on top, with the asparagus to the side. Finish by drizzling a good amount of salsa verde all over"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": "skinless",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puy Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "finely chopped or blended",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "finely chopped or blended",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely chopped or blended",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5476338d8df2b68b754344bc3d117a7e72623ca68948b0111292e581ff4fc988",
+    "lineage_hash": "1387cddc7cab4db2bf6f01e7ebd7b998406f310829fd8f93b28027f9a23475c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-lentil-salad-recipe",
+    "fetchedAt": "2026-08-03T15:31:34.639Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-lentil-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

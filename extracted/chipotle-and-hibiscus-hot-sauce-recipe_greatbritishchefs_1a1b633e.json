@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Chipotle and Hibiscus Hot Sauce",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chipotles in a saucepan and add water until just covered (about 300ml). Cover and simmer for 30 minutes to soften",
+      "Add the onion, garlic, cumin, chillies and 200ml of their cooking water to a blender (add enough water to make up 200ml if you don’t have enough) and blend to a paste. Transfer the mixture into a saucepan",
+      "Add the vinegar, tomato purée, sugar and a large pinch of salt and simmer very gently on the lowest heat with a lid on for 10 minutes, stirring frequently",
+      "Meanwhile, steep the hibiscus flowers in 200ml of boiling water for 5 minutes",
+      "Strain out and discard the hibiscus flowers and add 150ml of the steeping liquid to the sauce. Taste and season with more salt if necessary. If you find the sauce too hot then simply add some more water – there’s enough flavour here that you don’t need to worry about diluting it (within reason). This sauce can be stored in the fridge for 2–3 weeks"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chipotle Chillies",
+        "unit": "g",
+        "notes": "dried, (around 10) stalks removed and seeds shaken out",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Flowers",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe9e64085ff259c3d2f459398a33d0ee5325f67f1657b4d065b1b7f19ba8f4a2",
+    "lineage_hash": "5fd824e76ea686e1a31b2c4d669bbe89a8291864d0c7b24bda950deb2851d0bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chipotle-and-hibiscus-hot-sauce-recipe",
+    "fetchedAt": "2026-08-03T08:03:10.105Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chipotle-and-hibiscus-hot-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

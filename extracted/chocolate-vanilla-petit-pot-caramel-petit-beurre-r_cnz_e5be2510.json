@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chocolate Vanilla Petit Pot, Caramel Petit Beurre Ribbon",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In your food processor, reduce the chocolate butter cookies to crumbs. If they don’t seem to adhere to themselves much, add a little butter until you get the desired consistency. Spoon the crumbs into the four glasses and press them into a packed layer.",
+      "Preheat your oven to 160°C (350°F). In a medium bowl, whisk together the sugar, vanilla and egg yolks, then add the whipping cream and milk, whisking until well blended. Pour the cream mixture into the glasses, set out the glasses in a gratin dish filled with hot water to half the height of the glasses. Put this in the oven to bake for 30 to 45 minutes, keeping an eye on them, until the cream is set. Leave on the counter to cool, then put them in the fridge for a couple of hours to set completely.",
+      "Dice the butter and set aside. Break the chocolate into small pieces in a medium bowl. Bring the whipping cream to a boil in a small saucepan. Watch it closely for heaven’s sake when will you finally learn that this boils over in no time at all if you’re not paying attention and doing four things at the same time. Pour the hot cream onto the chocolate, stirring with a fork until the chocolate is thoroughly melted. Add the butter and keep stirring until no lump remains. Beautiful. I know I’ve said this before, but ganache has to be my favorite thing to make. Even the word sounds luscious. Ganache. Luscious. So go ahead and spoon luscious ganache in an even layer onto each glass. Sprinkle pecan bits on top, and return the glasses to the fridge for at least an hour.",
+      "Break up the Petits Beurres into small neat pieces, trying not to lose too much in crumbs. Arrange the pieces in four lines on a silicon baking mat. Put the sugar in a small thick-bottomed saucepan, and cook, covered, over low heat. After about ten minutes, the sugar will start to melt. It’s a beautiful phenomenon to watch, the dry white center being slowly overcome by the brown and liquid sides. When it’s all nice and melted, drizzle the caramel slowly over the lines of Petits Beurres, trapping the pieces in and trying to make the overall shape pretty. Leave the caramel ribbons out to dry and harden, which should take about an hour.",
+      "Take the glasses out of the fridge about 30 minutes before serving. Put each glass on a small dessert plate, balancing a caramel ribbon next to it. I didn’t think of it at the time, but drizzling a little chocolate sauce around the plate would be a good idea."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate Butter Cookies",
+        "unit": null,
+        "notes": "the new Chocolate Roues d’Or by St-Michel",
+        "amount": "4",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "10",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cl Whipping Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cl Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Cl Whipping Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Pieces",
+        "unit": null,
+        "notes": "toasted and cut into smallish bits",
+        "amount": "12",
+        "section": "Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Ruban",
+        "isOptional": false
+      },
+      {
+        "name": "Petits Beurres",
+        "unit": null,
+        "notes": "the classic crispy cookies made by LU",
+        "amount": "4",
+        "section": "Ruban",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e285b2f0104af86b43fac065acf89f8df407ea1e14be85f23a70b36dbe63fe9",
+    "lineage_hash": "aa7313fc31eb17052942674017d2917a27ba93613ac34b482564bd7d240d0d17"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/desserts/chocolate-vanilla-petit-pot-caramel-petit-beurre-ribbon-recipe/",
+    "fetchedAt": "2026-09-30T18:37:42.873Z"
+  },
+  "rawSource": "https://cnz.to/recipes/desserts/chocolate-vanilla-petit-pot-caramel-petit-beurre-ribbon-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,347 @@
+{
+  "recipe": {
+    "name": "Chicken Liver Parfait and Shallot Waffle",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the orange syrup, as this can be made well in advance. Place the orange peel in a small saucepan and bring to the boil, then drain. Repeat this process a total of 4 times to remove the bitterness from the peel",
+      "Place the blanched orange peel in a pan with the orange juice, 55g of the sugar, water, xanthan and lemon juice, then heat gently until the sugar dissolves. Transfer to a blender and blitz whilst your drizzle in the oil – this should emulsify the mixture",
+      "Pour the remaining sugar into a saucepan and heat – without stirring – until a golden caramel forms. Weigh out 125g of the orange purée, then blitz this with the caramel. Transfer to a squeezy bottle and store in the fridge until needed",
+      "For the red wine shallots, place all the ingredients into a saucepan and simmer for 1 hour, or until the liquid has fully reduced into a sticky syrup. Remove the star anise, cinnamon stick and bay leaves, then leave to cool",
+      "While the shallots cook, prepare the waffle batter. Mix together the sparkling water, milk, salt, sugar and melted butter, then whisk in the eggs, followed by the flour. Once you have a smooth batter, cover and leave to rest in the fridge for at least 1 hour",
+      "To make the chicken liver parfait, preheat an oven to 75°C. Season the foie gras with salt and place in a blender with the livers, foie gras, spices, egg and a few teaspoons of the red wine shallots and blitz until smooth. Slowly add the warm cream and melted butter and finish with the Armagnac. Pass through a fine sieve into a shallow tray lined with cling film, then cook for 30 minutes in the oven",
+      "Once the parfait is cooked, taste for seasoning, transfer to a piping bag and chill",
+      "Pour the chilled waffle batter into a waffle iron and cook according to the manufacturer’s instructions – depending on the size of your iron, you will need to make around 2 waffles to serve 8 people as a starter, but you can serve larger amounts if desired",
+      "To serve, cut up the waffles and divide between serving plates. Drizzle the orange syrup liberally over the waffles, scatter with poppy seeds, then pipe dots of chicken liver parfait into the waffle’s squares. Add spoonfuls of red wine shallots, garnish with dill sprigs and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Livers",
+        "unit": "g",
+        "notes": "trimmed and cleaned",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "g",
+        "notes": "deveined",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted and left to cool slightly",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Armagnac",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "warm",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ruby Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": "g",
+        "notes": "white pith scraped off",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fronds of Fresh Dill",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9567dba69b94b436ec52e069b06547cedf68994328792d59fa0fff9748af5201",
+    "lineage_hash": "355149b06d8f1d580f3b2f3a1626de25ca94a98dfbb3d2caf797eef260f59cc0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-liver-shallot-waffle-recipe",
+    "fetchedAt": "2026-08-03T03:47:05.122Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-liver-shallot-waffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

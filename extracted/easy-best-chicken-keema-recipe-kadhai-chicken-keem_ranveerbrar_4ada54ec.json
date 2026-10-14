@@ -1,0 +1,262 @@
+{
+  "recipe": {
+    "name": "Kadhai Chicken Keema Pav",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, once it’s hot, add onions and saute it for a while until golden in colour.",
+      "Add prepared masala, chilli flakes, ginger, green chillies and cook it for a minute.",
+      "Add tomato puree and let it cook for another 5-6 minutes until oil separates from the masala.",
+      "Add green garlic, tender coriander stems, spinach, curd, fresh green peas and cook it for a while.",
+      "Add marinated chicken minced, give it a good mix, cover it with the lid and let it cook it for 10-12 minutes on medium flames or until cooked well.",
+      "Finish it with green chilli pickle, fresh coriander leaves and give it a good mix.",
+      "Transfer it to a serving dish, garnish it with green chilli, coriander sprig and lemon wedge.",
+      "Serve hot with ladi pav or khameer roti.",
+      "In a mortar pestle, add mace, black peppercorns, green cardamom, cloves, black cardamom, cinnamon stick, bay leaf and grind it to coarse powder.",
+      "Keep it aside for further use.",
+      "In a bowl, add chicken minced, coriander powder, turmeric powder, degi red chili powder, salt to taste and mix it well",
+      "Leave it aside to marinate for a while."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heaped Tbsp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "roughly sliced",
+        "amount": "3",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Masala",
+        "unit": "Tbsp",
+        "notes": "prepared",
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "3-4",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "puree",
+        "amount": "4",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Green Garlic",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken Minced",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Pickle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "fresh, finely chopped",
+        "amount": "½",
+        "section": "For Kadhai Keema",
+        "isOptional": false
+      },
+      {
+        "name": "No. Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dry Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "minced",
+        "amount": "1",
+        "section": "For Keema Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Keema Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Keema Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Keema Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Keema Marination",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef0502483ba4acc12f5f5db035fc0ea1596c8418f3e6b6ea28eb772f946552ab",
+    "lineage_hash": "731e99ae7c82e846694a39778e36b2b0f7c197315999a5bc1b44c81e7837554c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/kadhai-chicken-keema-pav/",
+    "fetchedAt": "2026-08-02T20:05:23.938Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/kadhai-chicken-keema-pav/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "BBQ Lionfish with Orange and Almond Slaw",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To Prepare the Orange Slaw: In a small bowl, combine the fennel and cabbage with garlic, slices from 1 orange, onion, almonds, ½ teaspoon salt, ¼ teaspoon black pepper, 2 Tablespoons olive oil, and freshly torn basil. Cover and refrigerate for a half hour.",
+      "To Cook the Lionfish: Heat charcoal BBQ grill and brush it with a Tablespoon of the oil. Season the lionfish with remaining salt, pepper, and crushed coriander seed. Place the fillets into direct heat and grill the first side for 2 minutes and then carefully turn them over and cook the second side for another 2 to 3 minutes until just cooked through.",
+      "To Serve: Spoon 2 to 3 Tablespoons of the orange slaw onto the plates. Place the BBQ lionfish on each mound. Garnish with remaining orange slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bulb of Fennel",
+        "unit": "large",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "small",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": "large",
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caribbean Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Fresh Basil",
+        "unit": null,
+        "notes": "torn",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seed",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lionfish Fillets",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb0b01674f949f51c808f507189e2abc30ff2a6a6d7418bea783cba5ed769298",
+    "lineage_hash": "2f47293b36420ef2e494c714dbcb87b6168109508b1b6cabebb68dd6abddf88d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bbq-lionfish-with-orange-and-almond-slaw/",
+    "fetchedAt": "2026-08-03T06:06:26.460Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bbq-lionfish-with-orange-and-almond-slaw/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Dutch East Cocoa",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Mug or Irish Coffee",
+    "garnish": [
+      "Fresh Whipped Cream",
+      "Cocoa Powder"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk together the cocoa mix and milk in a small saucepan over medium heat.",
+      "Continue whisking until steaming hot, but not boiling.",
+      "Carefully pour into a preheated mug or Irish coffee glass and stir in Drambuie and genever.",
+      "Garnish and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Mix",
+        "unit": "Tbsp",
+        "notes": "homemade",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drambuie",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Genever",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7882c30a6b0c0507380e999683683790329082649ffb33803d763db9dfee76c",
+    "lineage_hash": "7956e642f3168a3101bfbfd120cdfda7f228ee4cd58c9bacf9af29d3401e3764"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dutch-east-cocoa-recipe/",
+    "fetchedAt": "2026-08-03T14:50:12.431Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dutch-east-cocoa-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

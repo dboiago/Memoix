@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Cheese Oatcake",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a food processor, add all the ingredients and process until the mixture starts to come together as a ball of dough",
+      "Lay a large sheet of clingfilm flat on the worktop and scoop the dough out into the middle. Use the clingfilm to roll the dough into a rough sausage shape and seal tightly with the clingfilm. Place to rest in the fridge for 30 minutes",
+      "Preheat the oven to 180°C/gas mark 4. Grease a large baking tray with a little butter",
+      "The chilled dough should be fairly firm. Unwrap from the clingfilm and use a sharp knife to slice off rounds about 1cm thick (you should get 18–20 biscuits)",
+      "Place on the greased tray, spaced slightly apart so that they can spread when cooking. Bake in the preheated ovenfor 8–10 minutes",
+      "Allow to cool slightly on the tray as they will be fragile when hot, then carefully transfer to a wire rack to cool completely"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01a60c60061bf70e65a0f7a77bf37061e8bae3a612ebcced7fefb4d43e25ee99",
+    "lineage_hash": "e6733d0bc8c01b83c6d7b1b682452009f83398882ca78f73ab516c6a62c56d2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-oatcakes-recipe",
+    "fetchedAt": "2026-08-03T14:09:48.657Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-oatcakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

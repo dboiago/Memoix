@@ -1,0 +1,396 @@
+{
+  "recipe": {
+    "name": "Dhungar Dal Tadka & Mirch Pulao",
+    "time": "30-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker, add ghee, once it's hot, add dry kashmiri red chillies, toor dal, moong dal and saute it for a minute.",
+      "Add salt to taste, turmeric powder, water, ghee and mix it well.",
+      "Cover it with a lid and let it cook for 3-4 whistles.",
+      "Turn off the flames and keep it aside to depressurise the cooker.",
+      "Open the lid, mash the dal with the help of masher and keep it aside for further use.",
+      "In a mortar pestle, add ginger, garlic, degi red chili powder, a pinch of asafoetida and grind it into coarsely paste.",
+      "Keep it aside for further use.",
+      "In a kadai, add ghee, once it's hot, add cumin seeds, fennel seeds, clove and let it splutter well.",
+      "Add onions, tender coriander stems and saute it for a while until translucent.",
+      "Add prepared ginger garlic chutney and saute it for 3-4 minutes",
+      "Add cooked dal, water as required, salt to taste, sugar and give it a quick boil.",
+      "Take a steel bowl, place it into the kadai, add burnt coal, ghee and cover it with the lid.",
+      "Remove the steel bowl and give it a good mix to dal.",
+      "Finish it with prepared tadka and mix it well.",
+      "Transfer it into a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared mirch ka pulao.",
+      "Take a piece of coal, place it onto the gas burner and burn it for a while.",
+      "Transfer it to the steel bowl and keep it aside for further use.",
+      "In a pan, add mustard oil, oil, once it's smoky hot, add dry kashmiri red chillies and fry them until crispy texture and dark in color.",
+      "Turn off the flames, sprinkle some degi red chili powder and mix it well.",
+      "Keep it aside for further use.",
+      "In a wok or non-stick kadai, add ghee, oil, once it's hot, add a pinch of asafoetida, crushed coriander seeds, chili flakes and saute it for a minute.",
+      "Add onions, tender coriander stems, salt to taste and saute it for a while translucent.",
+      "Add fresh coriander leaves, fresh mint leaves, cooked rice and toss it well on a high flame.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared dal dhungar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Toor Dal",
+        "unit": "C",
+        "notes": "washed",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Moong Dal",
+        "unit": "C",
+        "notes": "washed",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "3",
+        "section": "For Ginger Garlic Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": "For Ginger Garlic Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Ginger Garlic Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Ginger Garlic Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "No. Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1½",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Dal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Dhungar",
+        "isOptional": false
+      },
+      {
+        "name": "Coal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Smoke",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Smoke",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Chili Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "optional, finely chopped",
+        "amount": "½",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mirch Ka Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3a1932785b1916574ca2ebc7f6fbc0b8c06d79490a9e8af41edc5f73b46c387",
+    "lineage_hash": "67aa2bd05e116abafed677a1bca4c00a132134c52786e0527cfaba7686c0ae6d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhungar-dal-tadka-mirch-pulao/",
+    "fetchedAt": "2026-08-02T17:41:38.430Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhungar-dal-tadka-mirch-pulao/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

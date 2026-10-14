@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Courgette Flowers with Goat’s Cheese",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the stamen from the inside of the flowers. Add the goat’s cheese, lemon zest, chilli flakes and parsley to a large bowl and mix well",
+      "Gently open each courgette flower and use a teaspoon to carefully stuff the flowers with the mixture. Seal the flowers by gently twisting the tops of the petals around the goats cheese. Make sure you seal them otherwise the mixture can leak out",
+      "Heat the oil in a small saucepan. (I use a small pan to save wasting oil and cook them in batches)",
+      "Whilst the oil is heating, toast the hazelnuts in a dry pan over a medium heat for a minute or so, until they smell toasted. Be careful not to burn them",
+      "Crack the egg into a bowl and briefly whisk, add the semolina and salt to another bowl",
+      "Dredge the courgette flowers by dipping them in the egg mixture and then covering in the semolina. You want them to be nicely covered, so they get nice and crispy",
+      "Gently place the coated courgettes, in batches into the hot oil and allow them to cook for 4 minutes, turning halfway through the cooking time if necessary, until golden and crispy",
+      "Use a slotted spoon to remove the courgette flowers from the pan and place them on a plate lined with kitchen paper to absorb the excess oil",
+      "Plate the courgette flowers with the toasted hazelnuts, a generous drizzle of honey and a little fresh parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Goat's Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "g",
+        "notes": "combined with 1 tsp of salt",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02a11918076bcc70daae2be02bd0f3464f4d8c3d211330634b113d444e4b12b5",
+    "lineage_hash": "ca9b2452ab37299897ad81601443d4b70a0d7f02556ee0c0a2c3e34c34533847"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-flowers-goats-cheese-honey-hazelnuts-recipe",
+    "fetchedAt": "2026-08-03T23:47:23.261Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-flowers-goats-cheese-honey-hazelnuts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

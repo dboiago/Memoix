@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Baked Hake with Wild Garlic Sauce",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the bones for the stock. Arrange the hake bones across a baking tray and roast in the oven for 20 minutes until golden brown",
+      "Meanwhile, prepare the wild garlic oil. Carefully rinse the wild garlic, then blanch for 35 seconds in a pan of heavily salted boiling water. Drain and plunge the leaves into iced water. Once cold, pat dry thoroughly",
+      "Chop the wild garlic roughly, add to a blender and pour in the rapeseed oil. Blitz briefly on a low speed, then increase in speed for 45 seconds until the oil is a bright, vibrant green colour",
+      "Pass through a fine sieve and strain again through a sheet of muslin or a coffee filter. Transfer to a suitable container and store in the fridge until required",
+      "Remove the bones from the oven and transfer to a saucepan. Cover with water and bring to the boil, then reduce the heat and leave to simmer for 20 minutes",
+      "To make the mayonnaise, whisk together the egg yolks, mustard and vinegar in a bowl until smooth. Weigh out 300ml of the wild garlic oil and add this to the boil in a steady stream, whisking continuously, until the mixture has emulsified to form a thick, green mayonnaise. Season to taste if required",
+      "For the parsley crumb, combine the parsley, lemon zest, garlic and breadcrumbs together in a food processor and blitz until combined",
+      "To finish the stock, pass the liquid through a fine sieve into a clean pan pass through a fine sieve into a clean pan and place over a medium heat. Simmer until reduced by half, then remove from the heat and set aside until required",
+      "For the wild garlic sauce measure out 200g of the wild garlic mayonnaise with 150ml of the fish stock and bring to the boil, whisking continuously until it thickens and forms a sauce. Remove from the heat and keep warm until required",
+      "Preheat a deep-fryer to 180°C and an oven to 180°C",
+      "Place the egg, flour and breadcrumbs in separate bowls and dredge the hake fillets first through the flour, then the egg wash and finally the breadcrumbs",
+      "Deep-fry the hake pieces for 1 minute, then remove and arrange across a baking tray. Bake in the oven for a further 2 minutes until golden, then remove and leave to rest for 5 minutes",
+      "Meanwhile, blanch the asparagus and leeks in salted boiling water for 2-3 minutes, then drain and refresh in iced water. Dry on kitchen paper and place under a hot grill along with the leeks until hot but not burnt",
+      "To serve, spoon the sauce into a bowl and arrange the asparagus and leek in the centre. Top with a piece of breaded hake and finish with a pinch of flaky sea salt and a drizzle of wild garlic oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hake",
+        "unit": null,
+        "notes": "each weighing 130g, bones removed and reserved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Asparagus",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "cut into 2cm slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4efba1c03f42eec44a3059f5214ff122c3a9de53a59ff2f5dc54391b989ead76",
+    "lineage_hash": "95040bcb88a78289a0ea25db280fd5884a330fc103a1dce44f163391d1851feb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/breaded-hake-asparagus-and-wild-garlic-sauce",
+    "fetchedAt": "2026-08-03T13:23:37.903Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/breaded-hake-asparagus-and-wild-garlic-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

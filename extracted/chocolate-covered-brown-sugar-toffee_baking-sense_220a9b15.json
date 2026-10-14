@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chocolate Covered Brown Sugar Toffee",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "36",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "99",
+      "carbohydrateContent": "8",
+      "fatContent": "7",
+      "proteinContent": "0.4"
+    },
+    "directions": [
+      "Line a half sheet pan with silicon baking mat or parchment paper.",
+      "Melt 8 oz unsalted butter in a heavy sauce pan. Using a wooden spoon, stir in the 8 oz light brown sugar, 1 teaspoon vanilla extract and ¼ teaspoon salt.",
+      "Cook over medium-high heat, stirring, until the mixture just begins to simmer. Reduce the heat to medium/low. Cook the mixture, stirring constantly, until it registers 290 °F on a thermometer. This will take about 15 minutes. Immediately pour the toffee into the prepared pan. Spread the toffee out if you want thinner pieces or don't spread it out for thicker pieces.",
+      "Wait 10 minutes then sprinkle 4 oz semi-sweet chocolate (chopped) over the toffee. Allow the chocolate to melt then spread evenly over the candy. If using, sprinkle the optional chopped nuts over the chocolate. Allow the toffee to set completely then breaks into chunks. To speed up cooling you can place the pan in the refrigerator.",
+      "Store the candy at room temperature in a covered container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "oz",
+        "notes": "chopped, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0be6ba81cbaf918b4be438877055420a86f51d619ff94c55f35106efa9adddaf",
+    "lineage_hash": "f2293cd9e2c04e329621406f263d7978942857deab2500e30b21612bc41ad74f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/10/17/brown-sugar-toffee/",
+    "fetchedAt": "2026-08-02T06:19:36.232Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/10/17/brown-sugar-toffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

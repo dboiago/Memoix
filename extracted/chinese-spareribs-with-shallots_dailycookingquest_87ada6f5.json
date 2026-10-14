@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Chinese Spareribs with Shallots",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, marinate spareribs with soy sauce and Shaoxing wine. Cover with a saran wrap, and refrigerate for at least 2 hours (overnight is okay too).",
+      "Heat oil in a frying pan, and sauté shallot until brown and fragrant.",
+      "Add the spare ribs, reserve the marinating sauce, and fry until both sides are golden brown.",
+      "Add the reserved marinating sauce, star anise, ginger, dark soy sauce, and water. Bring to a boil.",
+      "Reduce heat, cover with a lid, and simmer for 1 hour, or until the meat is fork tender. Stir every so often.",
+      "Add rock sugar. Adjust the taste by adding more rock sugar and/or salt to taste.",
+      "Turn the heat to high, then cook until the sauce thickens and glaze the spareribs.",
+      "Turn off heat, transfer to a serving plate, and garnish with the chopped shallots. Serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Spareribs",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": "or use regular soy sauce, preferably the reduced sodium version",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60f5c23fc98351b53a49c65811e34189898cedd928d00ae5a03fe7c239b8c7f5",
+    "lineage_hash": "c4812042ee26dcdf34a8e5d357ddf375aa7cfc0b0976e9bf74e59e28fdefc09f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chinese-spareribs-with-shallots.html",
+    "fetchedAt": "2026-08-02T07:04:44.156Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chinese-spareribs-with-shallots.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

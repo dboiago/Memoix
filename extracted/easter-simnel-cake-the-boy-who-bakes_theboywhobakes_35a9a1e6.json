@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Easter Simnel Cake",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before baking the cake prepare the dried fruit mixture. Add the sultanas, raisins, currants, mixed peel and glacé cherries into a large bowl and pour over the alcohol (or orange juice if you prefer). Zest the orange and add to the fruit. Stir everything together, cover and set aside until ready to bake.",
+      "Preheat the oven to 150C (130C Fan). Lightly grease a deep 20cm (8 inch) round cake tin and line the base and sides with a double layer of parchment paper.",
+      "In a large bowl beat together the butter, sugar and Lyle’s Golden Syrup, using an electric mixer fitted with the paddle attachment, on medium speed for about 5 minutes or until light and fluffy. Add the eggs, one at a time, beating until fully combined before adding another.",
+      "In a separate bowl whisk together the flour, almonds, spices and salt. Add this flour mixture to the bowl with the butter mixture and mix together until a smooth cake batter is formed. Add the soaked fruit mixture and mix briefly until evenly distributed. Set the cake batter aside for the moment.",
+      "Take a third of the marzipan and roll out, on a work surface dusted lightly with icing sugar, into an 18cm circle. Scrape half of the cake batter into the prepared tin and spread into an even layer. Gently place the marzipan on top of cake batter, setting it in the middle of the tin so that there is a thin layer of batter showing all around the marzipan. Scrape the remaining cake batter into the tin and spread into an even layer.",
+      "Bake in the preheated oven for about 2 & 1/2 - 2 & 3/4 hours or until a skewer inserted into the cake comes out clean. Check the cake after about 100-120 minutes and if the cake is browning too quickly carefully tent with foil to prevent it from browning further.",
+      "Once baked remove and set aside for at least 6 hours to cool fully.",
+      "To decorate the cake add a couple tbsp of the jam into a small saucepan with a splash of water and bring to a simmer. Brush the top of the cake with the jam. Using another third of the marzipan roll out as before into a 20cm circle and place on top of the cake. For a decorative flourish, crimp the edges the marzipan like you are making a pie.",
+      "Take the final third of the marzipan and divide into 11 equal sized pieces, rolling into balls. Brush the base of each ball with a little jam and use this to glue the balls around the edge of the cake.",
+      "You can serve the cake as is but sometimes a little blowtorch action is called for. Light the blowtorch and lightly burnish the marzipan. I like to do this to the balls only but you can do this to the whole layer of marzipan if you prefer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glacé Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": "or orange juice, brandy or whisky",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lyle’s Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marzipan",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": null,
+        "notes": "for decoration",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a63d06be0a640d2567f1322fe04d62d55a673f02d0c12ff3abc86426d6c23a87",
+    "lineage_hash": "f9c40fb5e7e773ccf12daf43e892dc85ae65140c9ab24d5c200a3bc32fe42cd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2021/4/2/easter-simnel-cake",
+    "fetchedAt": "2026-08-01T17:17:21.321Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2021/4/2/easter-simnel-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

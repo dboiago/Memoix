@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Barbadian Gin Punch Swizzle",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tall",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a tall glass filled with crushed ice, combine all ingredients and swizzle until the glass is frosted."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Genever",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": "2:1, rich",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b952e0c9d7f4801147dd4cb4842fc4edb148f8d5e92a1fa2a6c79ed17ab7c8b4",
+    "lineage_hash": "789c8015f1607f777b63623674a78ab4225a6d3abd725f059a6cdc8833f70039"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barbadian-gin-punch-swizzle-recipe/",
+    "fetchedAt": "2026-08-03T19:26:41.594Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barbadian-gin-punch-swizzle-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

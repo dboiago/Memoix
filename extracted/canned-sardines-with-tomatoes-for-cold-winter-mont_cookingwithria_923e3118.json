@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Canned Sardines with Tomatoes",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "312",
+      "carbohydrateContent": "5",
+      "fatContent": "21",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Open the sardine cans and drain the excess oil or water.",
+      "Heat the olive oil in a medium, heavy-bottomed pot over high heat.",
+      "Add the onion, tomatoes, garlic, and hot pepper. Cook for about 5 minutes, stirring occasionally, until the excess liquid evaporates and the mixture begins to brown and stick to the pan.",
+      "Add the drained sardines and parsley. Stir-fry on high heat, allowing the liquid to reduce further. Continue cooking until the mixture separates from the oil and starts to stick to the base of the pot.",
+      "Remove from heat, adjust the seasoning as desired, and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sardine in Olive Oil",
+        "unit": "cans",
+        "notes": "alt: water, drained",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Chopped",
+        "unit": "large",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84fc75249ce2a5483a7b312518adaaf5133d8fd7270bedc55a54d45570696276",
+    "lineage_hash": "70200f48d4cdf266a90ba100438bb6d9395c15ea30efccb04b3917bff5a213e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/01/canned-sardines-with-tomatoes-for-cold-winter-months/",
+    "fetchedAt": "2026-09-25T21:25:05.688Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/01/canned-sardines-with-tomatoes-for-cold-winter-months/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

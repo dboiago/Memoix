@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Duck Breast with Red Curry Rice",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, lightly dust the duck breasts with the Thai 7-Spice and leave to marinate for an hour in the fridge",
+      "Meanwhile, make the curry paste by simply placing all the ingredients (apart from the coriander leaves) in a blender. Blitz to a rough and ready paste. Place in a bowl or jar and cover (you may have some left over, so a jar might be preferable)",
+      "For the crispy shallots, pour the oil into a saucepan and place over a high heat. When the hot is oil (not smoking though) throw in the shallot rounds. They will bubble up immediately and the key here is to keep a close eye on proceedings. As they bubble, the water will evaporate and the bubbling will slowly begin to die down after about 8 minutes or so, when the shallots will begin to become golden and crisp. Don’t let them go too far, or they will burn. Scoop out with a slotted spoon and allow to drain and cool on kitchen paper. These can now be stored in an airtight container",
+      "Remove the duck breasts from the fridge and allow to come up to room temperature",
+      "Place the duck breasts skin-side down in a cold frying pan then place over a medium to high heat. This method helps to slowly render the fat out of the duck, crisping up the skin beautifully. After 5 minutes, flip the breasts and place in the oven to finish cooking – 10–12 minutes is good for medium, 15 minutes for well done. Once the duck breasts are ready, leave to rest in a warm spot for another 10 minutes",
+      "While the duck is cooking, prepare the rice by heating a wide saucepan or wok on the hob over a high heat. Add a generous splash of oil and then 4 tablespoons of the red curry paste. Or a bit more if you like things spicy. Less if you don’t. Stir briskly for a good couple of minutes, to cook the paste out",
+      "Add the rice and stir to toast for 1 minute. Add the coconut milk and 100ml of water and cover with a lid. Cook until the rice is tender and the liquid has been absorbed, then stir through the white parts of the spring onions. Remove from the heat and stir through the diced mango",
+      "To serve, slice the rested duck breasts evenly. Divide the rice between plates, place the duck breasts on top and garnish with the crispy shallots. Chop some of the reserved coriander leaves, sprinkle over and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai 7 Spice Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "peeled and chopped into fine rounds",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Red Chillies",
+        "unit": null,
+        "notes": "dried, or 5 fresh bird's eye red chillies",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Peel",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Sticks",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "thumb-sized, peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "small, leaves and stalks separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "white parts chopped into small rounds, green parts shredded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "large",
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7775a82add95fe63b33bacf678c20bb69db782d22eebf00a2aff67d515dd2c76",
+    "lineage_hash": "5fac642be31e34a0a920d560123a6268ed272f269d43aff1a58a4334c3edbdd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-red-curry-rice",
+    "fetchedAt": "2026-08-03T10:18:18.798Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-red-curry-rice",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Columbia Gold, A South Carolina Mustard BBQ Sauce",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "22",
+      "carbohydrateContent": "4",
+      "fatContent": "0.4",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Prep. Mix the wet ingredients together in a bowl.",
+      "If you are using a bouillon cube, crush it with a spoon in a bowl or mortar & pestle and add it to the bowl. Crush the rosemary leaves and celery seed in a mortar & pestle or in a blender or coffee grinder and add it to the bowl. Add the rest of the dry ingredients to the bowl and mix thoroughly.",
+      "Cook. Simmer for 10 minutes to pasteurize it.",
+      "Serve. Pour into a clean jar and use as you would any BBQ sauce. Store remaining sauce in the fridge. Leftovers will keep in the fridge for months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Prepared Yellow Mustard",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Tabasco Sauce",
+        "unit": "tsp",
+        "notes": "alt: you favorite hot sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Granules",
+        "unit": "tsp",
+        "notes": "alt: soup base",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Finely Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8f5df45ff6f6e79636c9de279552131e4342dfba1eab94c557b5da539686bbc",
+    "lineage_hash": "f075e81b22990af84ad0f2cec5da8bc0602b8134022f3fc4bedf7f904b7350df"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/south-carolina-mustard-bbq-sauce-recipe/",
+    "fetchedAt": "2026-08-02T08:34:53.957Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/south-carolina-mustard-bbq-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

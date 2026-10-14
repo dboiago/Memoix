@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Black Rock Chiller",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a bottle or flask and shake to combine. Serve neat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suze",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Branca Menta",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e5958eb8c99e953a70080bfdd33d346982e7f74baf779b0b1cbf871c63fc8ff",
+    "lineage_hash": "e051614e7c2765085181a15967c61267041c0d5a27d2c93012fcff1b70799b76"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-rock-chiller-a-batched-cocktail/",
+    "fetchedAt": "2026-08-03T19:48:24.852Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-rock-chiller-a-batched-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

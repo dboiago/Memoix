@@ -1,0 +1,65 @@
+{
+  "url": "https://www.cookwithmanali.com/date-kunafa-bites/",
+  "slug": "date-kunafa-bites_cookwithmanali_28bea54e",
+  "title": "Date Kunafa Bites",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T08:55:37.600Z",
+  "ldName": "Date Kunafa Bites",
+  "ldTime": "PT160M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "35",
+    "35 bites"
+  ],
+  "ldCuisine": "Dessert",
+  "ldCategory": "Dessert",
+  "ldKeywords": "kataifi, tahini",
+  "ldIngredientsRaw": [
+    "¾ cups pistachios (shelled,  110 grams )",
+    "1 teaspoon ghee",
+    "½ cup kataifi dough (  25 grams )",
+    "2 cups medjool dates (pitted,   380 grams )",
+    "1 &amp; ½ tablespoons tahini",
+    "¾ teaspoon cardamom powder",
+    "4 oz dark chocolate (optional, for dipping )",
+    "ground pistachio powder (optional, for rolling)"
+  ],
+  "ldInstructionsRaw": [
+    "To a small pan on medium heat, add ¾ cup (110 grams approx.) shelled pistachios. Stir constantly with a spatula and toast the nuts until they are fragrant and toasted. This will take around 5 to 7 minutes.",
+    "Remove them on a plate and then roughly chop them using a knife. They don&#39;t need to be chopped evenly since that will give these bites a nice texture. Set aside.",
+    "To the same pan, now add 1 teaspoon ghee on medium heat and then add ½ cup (25 grams) kataifi dough to it. Roast stirring constantly until the pastry is golden brown in color. Stir constantly for even browning. Set this aside.",
+    "To a food processor, add 2 cups (380 grams approx.) pitted dates along with 1 &amp; ½ tablespoons tahini and ¾ teaspoon cardamom powder. Pulse the dates until they are finely chopped.",
+    "To a bowl of pan, now add the chopped pistachios and the chopped dates mixture. Use your hands and bring the dates mix and the pistachios together into a dough. You can now make small bites from this mixture or use a mold to shape them.",
+    "If using a mold, fill each cavity with the dates pistachio mixture. And then top each bite with the toasted kataifi. Press it with your fingers so that it sticks nicely to the bites. Now, chill this in the fridge for 2 hours and then remove them from mold.",
+    "Your kunafa date bites are ready. Roll the sides into ground pistachio powder (optional). If you want, you can dip some (or all) into melted chocolate. Melt 4 oz of dark chocolate and dip each bite into it, top with more pistachios and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "63 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "1 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.001 g",
+    "cholesterolContent": "0.5 mg",
+    "sodiumContent": "1 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ¾ cups pistachios, shelled,  110 grams",
+    "▢ 1 teaspoon ghee",
+    "▢ ½ cup kataifi dough,   25 grams",
+    "▢ 2 cups medjool dates, pitted,   380 grams",
+    "▢ 1 & ½ tablespoons tahini",
+    "▢ ¾ teaspoon cardamom powder",
+    "▢ 4 oz dark chocolate, optional, for dipping",
+    "▢ ground pistachio powder, optional, for rolling"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

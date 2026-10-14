@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Braised Winter Melon",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "87",
+      "carbohydrateContent": "5",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Process the winter melon by scooping out the seeds in the center. Trim off the peel and the tough green underlayer. Wash off any white powder left behind by the peel, then cut the melon into 1” x 1.5” (3-4cm) chunks.",
+      "Heat the oil in wok with medium heat, lightly brown both sides of the winter melon pieces, about 3 minutes per side.",
+      "Next, add the garlic, ginger, and the white parts of the scallion. Cook them for about 1 minute, until fragrant. Then add the oyster sauce, dark soy sauce and white pepper. Mix everything well.",
+      "Add the water and star anise (if using). Cover and simmer for 10 to 12 minutes, or until the winter melon is fork tender. (If there is still too much liquid, turn up the heat and stir for a couple of minutes to reduce and thicken the sauce).",
+      "Taste and add salt if needed. Toss in the scallion greens, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Winter Melon",
+        "unit": "lb",
+        "notes": "seeds and skin removed",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped; white and green parts separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or vegetarian oyster sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c0be547aa9f5b71182cc82f3bfe9913462be9af8984beb24a85cf14de1888f3d",
+    "lineage_hash": "7ba838493eb6829d7e65ebfaa78cfbbf7245b09af2c61b82af9aeb997665dae0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/braised-winter-melon/",
+    "fetchedAt": "2026-08-02T17:19:38.382Z"
+  },
+  "rawSource": "https://thewoksoflife.com/braised-winter-melon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

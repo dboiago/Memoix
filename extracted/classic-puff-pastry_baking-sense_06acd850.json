@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Classic Puff Pastry",
+    "time": "5 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "36",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "136",
+      "carbohydrateContent": "10",
+      "fatContent": "10",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix together 8 oz cold water, 1 tablespoon white vinegar and 1 ½ teaspoons table salt. Stir to dissolve the salt. Place 16 oz all purpose flour into a large mixing bowl. Cut 2 oz of the butter into small cubes and use your fingers to work the butter into the flour. Pour the water over the flour and use a silicone spatula or wooden spoon to mix until most of the water is absorbed.",
+      "Still working in the bowl, gently squeeze the dough until it comes together. Knead just a few times to form the dough into a ball, wrap in plastic and refrigerate at least 30 minutes.",
+      "Draw an 8\" square in the center of a 12\"x16\" piece of parchment paper. Flip the paper over and line the remaining butter in the middle of the square.",
+      "Fold the parchment over the butter to form a packet. Use a rolling pin or other heavy object (I use the flat side of a meat tenderizer) to flatten the butter to fill the 8\"x 8\" square. You can lift the paper if it sticks. Trim and rearrange the edges of the butter as needed to make a neat square. Fold the butter into the parchment and place in the refrigerator.",
+      "Remove the dough from the refrigerator. Roll the dough to a 10\" square. Once you have a square, roll from each of the four sides to form a 3\" flap of the dough, leaving the center thicker than the flaps. You should end up with a square with a \"flap\" coming out from each side.",
+      "Unwrap the butter and place it in the middle of the square. Fold the flaps so they overlap and enclose the butter, tucking in the corners as necessary. You should now have an 8\" square of dough with the butter enclosed. Flip the dough over so the seam side is down.",
+      "Use the rolling pin to gently press on the square to flatten it. Roll the dough to a 8\" x 24\" rectangle. Take your time to roll gently and evenly so the butter stays in  the dough.",
+      "The long side of the rectangle should be facing you. Brush off the excess flour. Fold the right ⅓ of the dough towards the middle then fold the left ⅓ of dough over enclosing it like a letter. This is the first \"turn\".",
+      "Spin the dough so the closed edge is on the top side and the flap edge is facing you. Roll the dough again to an 8\"x24\" rectangle. Brush off the excess flour and again fold the dough like a letter. This is the second \"turn\". Use your fingers to make 2 indentations in the dough. This helps keep track of how many turns you have completed.",
+      "Wrap the dough and set it on a sheet pan. Refrigerate at least 60 minutes.",
+      "Remove the dough from the refrigerator and do another turn exactly like the first 2. Make 3 indentations in the dough, wrap and refrigerate at least 60 minutes.",
+      "Continue rolling, folding and refrigerating the dough until you've done 6 turns.",
+      "Split the dough into 2 equal portions. Wrap the dough and refrigerate at least 1-2 hours, preferably overnight, before using. The dough is now ready to be used in any recipe. Unused dough can be frozen for up to 3 months. Defrost before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold Water",
+        "unit": "oz",
+        "notes": "1 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 ¼ cups, see note",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "preferably European style butter",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a3f88f6964c3b9dda7dd81c14b536402c3863c1618882ca71e2f3a290b341f0",
+    "lineage_hash": "200c900821eda839659720d8277972ebf04098b5d0e44bbacab4c6b3719884ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/09/15/how-to-make-classic-puff-pastry/",
+    "fetchedAt": "2026-08-02T00:28:10.651Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/09/15/how-to-make-classic-puff-pastry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

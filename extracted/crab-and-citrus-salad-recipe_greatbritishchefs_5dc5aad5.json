@@ -1,0 +1,221 @@
+{
+  "recipe": {
+    "name": "Crab and Citrus Salad",
+    "time": "1 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pickled lemons, bring the water and sugar to the boil over a medium heat, stirring occasionally to dissolve the sugar",
+      "Remove the simple syrup from the heat, and stir in the white wine vinegar. Set aside to cool",
+      "Cut the top off the lemons and then, using a mandolin, slice into 2 mm thick round slices. Discard any pips as you go",
+      "Place the slices into a sterile Kilner jar and pour the cooled pickle over the lemons",
+      "Place into the fridge for 24 hours before using",
+      "For the citrus dressing, place all ingredients into a jar and shake to emulsify. Keep in the fridge until required",
+      "For the crab salad, carefully mix all ingredients in a bowl and place in the fridge for 2 hours before serving. This allows the salad to macerate and become more delicious",
+      "When ready to serve, place 100g of crab salad in an even layer in the centre of each plate",
+      "Cut the sides of the apple from around the core, then thinly slice the pieces using a sharp knife or mandolin",
+      "Mix the apple slices with the bitter leaves. Shake the citrus dressing to re-emulsify it, and then dress the apple and greens generously. Season with a little salt and freshly ground pepper",
+      "Place the leaves and apple over the crab salad, then drizzle a final spoonful of citrus dressing over the leaves and the crab to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amalfi Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Picked Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": "diced into 1/2cm pieces",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": "g",
+        "notes": "diced into 1/2cm pieces",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "g",
+        "notes": "finely, chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Lemon",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Bitter Leaves",
+        "unit": "g",
+        "notes": "such as castel franco, trevise, wild trevise, chicory",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bd45d2e026a8c7dffc6922e08730b0ce6a99adf5d2e3324e95d40d0969f78c7",
+    "lineage_hash": "87593eb7d5f4c1419b756dc9450293f9a77d7b803282367cbe6a90692ee182ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-citrus-salad-recipe",
+    "fetchedAt": "2026-08-02T04:01:25.984Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-citrus-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

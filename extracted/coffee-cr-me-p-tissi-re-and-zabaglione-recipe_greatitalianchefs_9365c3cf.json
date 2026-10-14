@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Coffee Crème Pâtissière and Zabaglione",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the coffee crème pâtissière. Combine the milk and vanilla seeds in a small pan and gently bring up to the boil. Once boiling, remove the milk from the heat and pass through a sieve into a clean pan",
+      "In a separate bowl, whisk the egg yolks and sugar together until light and creamy. Sift the flour into the bowl, gently folding the flour into the egg mixture from the bottom of the bowl up until thoroughly combined",
+      "Gradually pour the hot milk into the mixture, stirring well to combine, and pour the mixture back into the milk pan. Place over a low heat and allow to thicken gently for 5 minutes, stirring continuously.",
+      "Remove the pan from the heat and transfer to a bowl to cool, stirring occasionally to ensure no lumps form. Once cool, cover the surface of the crème pâtissière with cling film to prevent a skin from forming and transfer to the fridge until required",
+      "To make the stencils for the sponge cake shapes carefully cut out 4 rectangles measuring 7x11cm from a silicone mat for the cylinders. Cut 20 identical teaspoon shapes out from a separate silicone mat and place on top of another silicone mat to form a mould, doing the same with the cylinder stencil.",
+      "For the sponge base whisk together the eggs, icing sugar and plain flour until thoroughly combined. Carefully spoon the sponge mixture across the rectangular and spoon moulds and spread smooth with a palette knife. Bake in the oven for 6 minutes",
+      "Remove the spoon and rectangle shapes from the oven and leave the spoons to cool. While still hot, roll the rectangles around some rolling pins to form a cylinder shape and leave to cool",
+      "For the zabaglione, whisk together the egg yolks, espresso and sugar until combined. Warm the mixture over a bain-marie, whisking until it thickens to a cream-like consistency. Remove from the heat and allow to cool",
+      "For the coffee crème pâtissière, vigorously mix 100g of the crème pâtissière with the espresso and transfer to a piping bag. Gently remove the cylinders from their rolling pins and divide between serving plates, piping a generous serving of coffee crème pâtissière almost to the top of each one",
+      "To serve, spoon a little of the zabaglione into the top of each cylinder and smear a generous portion of the remaining zabaglione across each plate, garnishing with a coffee bean. Divide the cake spoons between plates and dust liberally with icing sugar, finishing with a generous sprinkle of ground coffee using a teaspoon as a stencil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75e98a8103c2d6b003f2c69e021bb0c67bf23a6d97df18979931e180888b82f8",
+    "lineage_hash": "ef726f9ea474010fc9840b22fa33e94a5aa5dcab74340d95d6cb0806fdfd0c75"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/coffee-cream-sabayon-recipe",
+    "fetchedAt": "2026-08-02T04:59:13.149Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/coffee-cream-sabayon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

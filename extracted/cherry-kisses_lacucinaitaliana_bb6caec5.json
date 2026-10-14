@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cherry Kisses",
+    "time": "3 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make cherry kisses, first whip the egg whites with a few drops of lemon juice; as soon as they become frothy, add the granulated sugar and continue whipping for 3-4 minutes until firm peaks form.",
+      "Now gently fold in the powdered sugar, one small spoonful at a time. Transfer the meringue to a piping bag with a 1/3” star nozzle and pipe approximately 60 dots onto 3 lined baking sheets. Bake at 200°F for approximately 3 hours.",
+      "Meanwhile, whip the cream. Blend the black cherry preserve in a blender, (you can substitute strawberry or raspberry if you prefer), and combine with the cream. Remove the meringues from the oven and allow to cool, then divide into pairs, sandwich together with a spot of cream between the halves, and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whipping Cream",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cherry Preserve",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3dd9c2c3f4c841139487a08404b14bce7fce022f51a331341e58fae7abefe290",
+    "lineage_hash": "7aac55a5ebbdd7517a74cff414148664c58298c2af580f6584fbc55d2fd82857"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cherry-kisses",
+    "fetchedAt": "2026-08-03T02:38:26.471Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cherry-kisses",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

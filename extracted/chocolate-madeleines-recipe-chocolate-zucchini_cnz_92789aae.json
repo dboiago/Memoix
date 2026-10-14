@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Madeleines",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the batter at least 2 hours ahead, or up to 2 days before.",
+      "In the bowl of a stand mixer or in a large bowl by hand, beat together the eggs and the sugar until frothy.",
+      "Stir in the milk and melted chocolate until combined.",
+      "In a separate bowl, combine the flour, cocoa, baking powder, baking soda, and salt.",
+      "Fold the flour mixture into the batter just until no trace of flour remains.",
+      "Stir in the melted butter until incorporated.",
+      "Cover and refrigerate for at least 2 hours, or overnight. The batter will be fairly stiff after refrigeration.",
+      "Preheat the oven to 230°C (450°F) and grease a madeleine tray (preferably tin) with butter.",
+      "Scoop the batter into the prepared madeleine tray, filling each mold to three quarters.",
+      "Insert into the oven and immediately lower the heat to 180°C (360°F). Bake for 12 to 14 minutes, until the madeleines are domed and set.",
+      "Remove from the oven and unmold immediately: holding the tray with both (oven-mittened) hands and facing away from you, bang the side of the tray on a cutting board or a sturdy counter; the madeleines will pop right out. (Don't be shy! It's a great destressor.)",
+      "Transfer to a rack to cool completely.",
+      "For subsequent batches, get the oven temperature back up to 230°C (450°F) before inserting the tray, then down to to 180°C (360°F) after inserting."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large organic",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "unrefined blond cane",
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "high-quality bittersweet, melted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "all-purpose",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "unsweetened, sifted if lumpy",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "unsalted, melted, hot, plus more for brushing",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f10ddc35c61a3dbb1f02d632eb341f1026c9f310b76498e03d7efc43f081510d",
+    "lineage_hash": "b728cdba19fec3665d973864d3c2350820e7c0c18fd6964cdcdc4f088c9ee8e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chocolate-madeleines-recipe/",
+    "fetchedAt": "2026-09-30T19:37:45.274Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chocolate-madeleines-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

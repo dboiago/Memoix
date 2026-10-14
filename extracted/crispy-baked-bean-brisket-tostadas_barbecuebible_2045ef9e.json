@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Crispy Baked Bean Brisket Tostadas",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for indirect grilling and preheat to medium-high (400°F). Brush and oil the grill grate.",
+      "Brush the tortillas on both sides with melted butter. Sprinkle on both sides with chopped scallion and place in the center of the grill away from the heat. Indirect grill the tortillas until lightly browned and crisp, 3 to 4 minutes per side. (Watch carefully so they don’t burn.)",
+      "Transfer the tortillas to a wire rack to cool. Spread the baked beans on top of each tortilla. Sprinkle with pepper Jack cheese and jalapenos (if using). Return the tostadas to the grill away from the heat and indirect grill until the brisket is hot and the cheese is melted, 8 minutes.",
+      "Place the tostadas on a platter. Squirt zigzags of sour cream over each and sprinkle with tomato, cilantro, and the remaining scallions. Yee ha!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": "8 inch",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: bacon fat, melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "finely, chopped, plus 1/4 cup to finish the tostadas",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c30f2fc86f4223b0edb87aca56bb47527ec123d60d907aa72726ccfc4c5ef370",
+    "lineage_hash": "9a162c7eeae37544986b9f48f0e292008f03291fea4ac14aba395052c19cfb21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/crispy-baked-bean-brisket-tostadas/",
+    "fetchedAt": "2026-08-03T05:59:55.261Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/crispy-baked-bean-brisket-tostadas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

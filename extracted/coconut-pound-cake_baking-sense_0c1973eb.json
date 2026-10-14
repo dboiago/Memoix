@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Coconut Pound Cake",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "425",
+      "carbohydrateContent": "54",
+      "fatContent": "22",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to at 350 °F. Butter and flour a 10\" tube pan or Bundt pan. Combine 3 large eggs, 4 large yolks, 1 teaspoon vanilla extract and half the coconut milk in a small bowl, whisk to combine and set aside.",
+      "Sift together 8 oz cake flour, ¼ teaspoon table salt1 teaspoon baking powder in a mixing bowl. Add 10 oz granulated sugar to the flour and mix at low speed for 30 seconds. Add 9 oz unsalted butter to the flour and mix until combined. Add the other ½ of the coconut milk and increase the speed to medium high. Mix for a full 2-3 minutes. The batter will lighten in color and texture. If your using a hand mixer add another minute or two to the mixing time.",
+      "Scrape the bowl and beater thoroughly. On low speed, add the egg mixture in 3 increments, scraping the bowl after each addition. Mix just until the eggs are incorporated.",
+      "Pour 3/4 of the batter into the prepared pan and smooth to an even layer. Sprinkle 4 oz sweetened coconut flakes over the batter, trying not let it touch the sides or middle of the pan. Dollop the remaining batter over the coconut and spread to cover the coconut.",
+      "Bake until a toothpick inserted in the middle comes out clean (about 35 minutes)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": "½ cup, divided",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ¾ cups, see note",
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "10",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "9",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum (divided (see Note))",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": "½ cup, divided",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "8",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6cb7b659c3194a47842f750dd7809d0bfd4ed0f34d40f5e17e0406e50c75cc15",
+    "lineage_hash": "139bd0ff691c7de3187832f5d0f4a824e9e6ce5a5d633a0d06dab73ddaac8fc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/04/18/coconut-pound-cake/",
+    "fetchedAt": "2026-08-01T22:58:44.655Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/04/18/coconut-pound-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

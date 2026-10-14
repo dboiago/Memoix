@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Deep Fried Fish and Shrimp Cutlets",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "With a food processor, pulse mackerel and shrimp into a paste.",
+      "Transfer the paste to a mixing bowl, then add egg, all purpose flour, scallions, garlic, salt, sugar, and pepper. Mix well.",
+      "Take about two to three tablespoon of the paste mixture and shape into a patty (or any shape that you like, really) and roll in bread crumbs. Repeat until all the mixture is used up.",
+      "Heat enough oil for deep frying, then deep fry the patties until golden brown. Drain on wire rack or paper towel. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spanish Mackerel Fillet",
+        "unit": null,
+        "notes": "Indonesian: ikan tenggiri",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp (indonesian: Udang)",
+        "unit": "g",
+        "notes": "peeled and deveined",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "Indonesian: telur ayam",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "g",
+        "notes": "Indonesian: tepung terigu",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic (indonesian: Bawang Putih)",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "Indonesian: garam",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "Indonesian: gula",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk lada putih",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs (indonesian: Tepung Roti/panir)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying (indonesian: Minyak Goreng)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f6294294d145b32f90677c2d74c4dc186d93a8984f8a7c3a80a1305df85af34",
+    "lineage_hash": "8cd7da23d0b9237fe346e7f98f4534b1f0555b4cbc0fd11eb03e93c54a81fadb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/deep-fried-fish-and-shrimp-cutlets.html",
+    "fetchedAt": "2026-08-02T08:40:58.752Z"
+  },
+  "rawSource": "https://dailycookingquest.com/deep-fried-fish-and-shrimp-cutlets.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

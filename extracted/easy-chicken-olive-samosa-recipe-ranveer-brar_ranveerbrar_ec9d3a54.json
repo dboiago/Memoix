@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Chicken & Olive Samosa (चिकन और ऑलिव समोसा)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the dough, place the flour, cumin seeds and a pinch of salt in a bowl. Mix oil and water, then add the mixture into the flour to make the soft dough. Knead for a few minutes until smooth. Return to the bowl, cover and set aside whilst you prepare the filling.",
+      "For the filling: Heat some olive oil and add cumin seeds. When it starts crackling, add ginger, green chillies, onion and stir for 30 seconds. Add olives, ground chicken and mix well. SautÃ© for 5 mins until hot. Add the rest of the ingredients (green peas, coriander leaves, lime and broken cashew nuts), stir for more 2 minutes and remove from the heat. Add salt to taste.",
+      "Divide the dough into 8 portions. Roll and add required quantity of the filling. Shape it like samosa triangle.",
+      "Deep-fry the samosas, a few at a time, in hot Bertolli Extra Light Olive oil until golden brown. Drain on kitchen paper and serve warm with chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "For the Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": "For the Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": null,
+        "notes": "pitted, sliced",
+        "amount": "8",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "G",
+        "unit": null,
+        "notes": "minced chicken",
+        "amount": "500",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Tsp",
+        "unit": null,
+        "notes": "peeled and grated ginger",
+        "amount": "1",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Deseeded and Chopped Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped fresh coriander",
+        "amount": "2",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cups",
+        "unit": null,
+        "notes": "boiled peas",
+        "amount": "½",
+        "section": "For the stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "chopped cashew nuts",
+        "amount": "¼",
+        "section": "For the stuffing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b71f844bd710d4d014bdade8993dedce8d881abba6c2847a97e1cd7a73d4ca9b",
+    "lineage_hash": "46bed3a284a3825db32d2874f0174d6e226807d9ea219721356fb230d811db2a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-olive-samosa-2/",
+    "fetchedAt": "2026-08-02T13:50:15.401Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-olive-samosa-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

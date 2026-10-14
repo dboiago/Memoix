@@ -1,0 +1,28 @@
+{
+  "url": "https://imbibemagazine.com/recipe/dark-and-stormy/",
+  "slug": "dark-and-stormy_imbibemagazine_c95a2f20",
+  "title": "Dark and Stormy",
+  "byline": "July 21, 2016",
+  "fetchedAt": "2026-08-03T22:05:50.093Z",
+  "ldName": "Dark and Stormy",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "[object Object]",
+    "[object Object]",
+    "[object Object]"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the ingredients together in the glass. Add ice and stir until chilled. Garnish."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

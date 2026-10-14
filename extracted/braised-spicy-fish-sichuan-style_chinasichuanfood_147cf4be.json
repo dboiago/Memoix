@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Braised Spicy Fish (Doubanjiang Fish)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "364",
+      "carbohydrateContent": "27",
+      "fatContent": "16",
+      "proteinContent": "35"
+    },
+    "directions": [
+      "Scale and wash the fish carefully. Marinade with 1 tablespoon of cooking wine and 2 teaspoons of salt. Do spread the salt evenly. Set aside for 10 minutes.",
+      "Prepare other ingredients one by one.",
+      "Add 1/2 tablespoon oil in pan and sauté the fish until both side are slightly golden brown. Then transfer the fish out.",
+      "Heat up the left 1/2 tablespoon oil in pan. Add ginger, garlic and scallions to stir-fry until aroma with middle fire. Add doubanjiang and dou-chi in to stir-fry until you can see red oil.",
+      "Return the fish back to the pan. Add 1 tablespoon of cooking wine and pepper shreds in. Cover the pan to cook for around 2 minutes and turn the fish over to continue cooking for 2 minutes.",
+      "Transfer the fish out and garnish some chopped spring onions on top. I also add some pepper shreds as a decoration."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water Fish",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dou-chi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Round Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Round Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb2bada8ac1703ffe32a01fc103ccbec3eb6c59a9d237a412e1450a8da8f618c",
+    "lineage_hash": "f3ac12e5f4c773db975a190bf2421b15649208f6167a80e163be69a6653cc739"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-spicy-fish-sichuan-style/",
+    "fetchedAt": "2026-08-01T19:10:51.462Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-spicy-fish-sichuan-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

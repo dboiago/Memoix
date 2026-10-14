@@ -1,0 +1,270 @@
+{
+  "recipe": {
+    "name": "Charred Asparagus, Pickled Egg Yolk and Pesto",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the brine for the egg yolks. Combine the water, salt, 25g of the caster sugar, rosemary, thyme, bay leaf and peppercorns in a pan and heat until the sugar dissolves. Regularly stir the mixture to ensure the sugar doesn’t catch on the bottom. Cover and set aside to cool",
+      "Make the pickling liquor at the same time. Place the white wine vinegar, remaining 200g of caster sugar and pickling spice in a separate pan and heat until the sugar dissolves, stirring regularly. Cover and allow to cool, then pass through a fine sieve into a container. Set aside",
+      "Preheat an oven to 200°C/gas mark 6. Place the hazelnuts on a baking tray and cook for 6 minutes, then set aside to cool. Wrap the garlic bulb and shallot in foil and cook for 30 minutes, then set aside to cool",
+      "While the nuts and garlic are roasting, separate the egg yolks and submerge them in the cooled brine. Cover and leave for 30 minutes",
+      "For the asparagus, bring a large pan of heavily salted water (it should smell like the sea) to the boil. Blanch 300g of the white asparagus and 300g of the green asparagus for 1 minute, then transfer to a bowl of iced water. After 10 minutes, drain and place on kitchen paper to dry",
+      "Place the cooled nuts in a blender and blitz until coarse. Cut the root end off the garlic bulb and shallot and, using the back of a knife, squeeze out the soft caramelised insides from their skins. Add this to the blender along with the chopped herbs, lemon juice, Parmesan and a healthy pinch of salt and black pepper",
+      "Start blitzing the pesto ingredients whilst slowly drizzling in the rapeseed oil, until you achieve a loose dressing-like consistency. Taste and add lemon juice, salt and pepper to balance the flavours, if required",
+      "Once the egg yolks have been in the brine for 30 minutes, use a slotted spoon to carefully lift them out and place them in the pickling liquor. For a runny yolk, pickle them for 30 minutes, or leave for longer for a harder texture",
+      "Finely slice the remaining white and green asparagus and place in a mixing bowl with the diced shallot. Season with a large pinch of salt",
+      "Place a large griddle or frying pan over a very high heat (or light a barbecue). Drizzle rapeseed oil over the blanched asparagus spears and place in the pan, cooking until lightly charred. Flip and continue cooking until charred all over",
+      "Meanwhile, dress the sliced asparagus mix with rapeseed oil and lemon juice and carefully lift the egg yolks out of the pickling liquor, placing on kitchen paper to dry",
+      "Divide the asparagus spears between 4 plates and top with an egg yolk. Spoon over the sliced asparagus then drizzle over the pesto. Season with pepper and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickling Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Asparagus Spears",
+        "unit": "g",
+        "notes": "woody end removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": "g",
+        "notes": "woody end removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lovage",
+        "unit": "g",
+        "notes": "fresh, chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e55616b2cc3cdfc128153a73987ebdfd9859b429de9381b2dc97a811a35cae88",
+    "lineage_hash": "0287a5c6880acc9ac9e5a1a9cb510bc86a98fae2f1d5fc9ec6735e5a29775b07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/white-green-asparagus-pesto-recipe",
+    "fetchedAt": "2026-08-03T07:02:38.974Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/white-green-asparagus-pesto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

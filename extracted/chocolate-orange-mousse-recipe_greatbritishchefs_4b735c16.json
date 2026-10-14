@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Mousse",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the gelatine in cold water. Mix the egg yolks and caster sugar together in a bowl",
+      "Bring 300ml of the double cream together with the milk and orange zest to the boil. Pour the mixture onto the egg yolks and sugar then return to the pan and cook over a low heat until the mix thickens a little",
+      "Remove from the heat. Finely chop the chocolate and stir in, along with the gelatine and cocoa. Place the pan over a bowl of ice to cool. Meanwhile, semi-whip the remaining 160ml of double cream",
+      "When the chocolate custard mix is at room temperature, fold in the cream until fully incorporated. Transfer to a bowl and chill in the fridge for 2 hours before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "460",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c75bc1315f8c5ed27548a3824e43e17790693cdeea45b26f0ce5067db987b98",
+    "lineage_hash": "9c6a0d76146e137dd8a7d74f8dfee2d4073e6f423782f4ef8976a407cb9ac87f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-orange-mousse-recipe",
+    "fetchedAt": "2026-08-03T22:25:42.344Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-orange-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

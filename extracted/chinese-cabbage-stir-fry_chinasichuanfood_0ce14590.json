@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Cabbage Stir Fry",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "189",
+      "carbohydrateContent": "29",
+      "fatContent": "7",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Hand tear the cabbage, and keep the tender green leaves only. Discard the hard white pate. Wash gently and drain completely. This is the key step to guarantee the success of the dish.",
+      "Heat the wok first, and pour in the oil. Add dried chili pepper, to fry over a slow fire until an aromatic, place in garlic and ginger too.",
+      "Add cabbage immediately. Quickly fry the cabbage, add salt, light soy sauce, and vinegar.",
+      "This process should be finished within 30 seconds.  You will have full of flavor, crunchy cabbage side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Cabbage",
+        "unit": null,
+        "notes": "hand shredded and remove the tough parts",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper Depending How Spicy You Want It to Be",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt or As Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dab9212b2f69f382c1b7c5d1019bea0d1453c2cb2436934629504e2ac73403ac",
+    "lineage_hash": "bceb294ded78cc8d3d02ae6f1ce672fe2dc25490ff218af93a7fbac209e474ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-style-cabbage-stir-fry/",
+    "fetchedAt": "2026-08-01T22:28:17.882Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-style-cabbage-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

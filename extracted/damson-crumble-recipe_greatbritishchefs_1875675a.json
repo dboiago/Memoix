@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Damson Crumble",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 180°C/gas mark 4",
+      "Place the damsons, apple, sugar and star anise in a pan and put on a low heat. Stir often to avoid the sugar catching on the bottom of the pan and burning",
+      "Once the damsons have collapsed and the sugar has dissolved, taste the mixture and add more sugar if you want to",
+      "Transfer the fruit to an ovenproof dish",
+      "As the fruit cools a little, make the crumble topping. Place the flour, sugar, ginger and chilled butter into a blender and blitz to a coarse crumble. Be careful not to over-blend as its nice to keep some larger lumps for texture",
+      "Pour the topping evenly over the fruit, then sprinkle over the chopped hazelnuts and a pinch of flaky sea salt",
+      "Place the dish on a tray (the mixture may bubble up and spill over the sides) and bake in the oven for 30 minutes or until golden brown on top. Serve as is, or with cream, custard or ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": "washed and destoned",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "peeled, cored and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "although you may want to add a little more if your damsons are particularly sour",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khorasan Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and cubed",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "122992ec9ca8256fe34fa91d7969175c55d2c00de25440c84d3bea3eda1a2e98",
+    "lineage_hash": "d94f28a6bbe6e0ef16fd52fb934f633a9fe1d95836289d6acb1bfc12ffd11910"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/damson-crumble-recipe",
+    "fetchedAt": "2026-08-03T06:24:24.982Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/damson-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

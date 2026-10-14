@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Blood Orange Almond Paste Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180ºC (160ºC Fan) and lightly grease a 9x4x4 pullman loaf pan and line with a piece of parchment that overhangs the long sides of the pan, securing in place with metal binder clips.",
+      "In a large bowl whisk together the flour, baking powder and salt.",
+      "Add the almond paste, in small chunks, to a large bowl along with the sugar and orange zest. Using the Wilfa Smooth Mix Hand Mixer mix together until the almond paste is broken down into a fine breadcrumb like mixture. If the almond paste remains in large chunks the final cake batter will have lumps.",
+      "Add the butter and continue to beat until light and fluffy, about 5 minutes.",
+      "Add the eggs, one at a time, beating until fully combined before adding another.",
+      "Add the vanilla and almond extract and mix briefly to distribute.",
+      "Add the flour mixture and mix briefly just until a smooth cake batter is formed.",
+      "Scrape the batter into the prepared loaf pan and spread into an even layer.",
+      "Bake in the preheated oven for about 70 minutes or until a skewer inserted into the middle of the cake comes out clean.",
+      "While the cake is baking make the simple syrup. Place the orange juice and sugar into a small saucepan and bring just to a simmer to dissolve the sugar.",
+      "Once the cake is baked, allow to cool in the pan for 15 minutes before carefully turning out onto a wire rack.",
+      "Brush the top and sides of the cake with the syrup and allow the cake to fully cool before glazing.",
+      "To make the glaze whisk together all the ingredients with just enough blood orange juice to make a thick but pourable glaze.",
+      "Pour the glaze over the top of the cake, teasing it over the sides of the cake so it drips down the sides."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Paste",
+        "unit": "g",
+        "notes": "see note",
+        "amount": "250",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "280",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "A Couple Drops Almond Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Almond Paste Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": "Blood Orange Juice",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Blood Orange Juice",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "A Couple Drops Almond Extract",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Blood Orange Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "185e7469e2f51b99dff8f3116913b77c9f111dca6ad235a9e120f9b1b2813f30",
+    "lineage_hash": "65031ecf9c7734736012d8531bb303f0dc39afed8df509b27e9a78c838f2b5c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2023/1/22/blood-orange-almond-paste-cake",
+    "fetchedAt": "2026-08-01T15:54:17.138Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2023/1/22/blood-orange-almond-paste-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

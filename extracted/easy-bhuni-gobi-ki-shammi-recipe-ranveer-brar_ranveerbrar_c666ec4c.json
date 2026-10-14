@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Bhuni Gobi Ki Shammi",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender, add the boiled split bengal gram and blend well.",
+      "Remove in a bowl and add the grated boiled potato, coriander powder, garam masala powder, salt and red chili powder and knead.",
+      "To make the filling, chop the roasted cauliflower into fine pieces and remove in a bowl.",
+      "Then add grated paneer, finely chopped ginger, finely chopped green chili, finely chopped coriander and salt and knead.",
+      "Make a pocket of the split Bengal gram mixture and add the filling in the center. Roll this into the shape of a kebab.",
+      "Heat oil in a pan and shallow fry the kebabs from both sides.",
+      "To make the salad, in a bowl add chopped cucumber, khus khus, hung curd, finely chopped coriander and salt and mix.",
+      "Place the salad on a plate and then keep the kebabs on top. Place some more of the salad.",
+      "Sprinkle red chili powder and garnish with a coriander sprig.",
+      "Bhuni Gobi ki Shami is ready to eat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Split Bengal Gram",
+        "unit": "C",
+        "notes": "boiled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "Tbsp",
+        "notes": "grated, boiled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cauliflower",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to roast",
+        "amount": "0",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Khus",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b470e9a837c50397109b08050640d444bf98bc755c2c00a42dacb0ff583d62a8",
+    "lineage_hash": "0e6a77ed053ecb6bd611aead7673bf0731d027ff42677cfc593cde28349f5c3d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhuni-gobi-ki-shammi/",
+    "fetchedAt": "2026-08-02T12:16:31.158Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhuni-gobi-ki-shammi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

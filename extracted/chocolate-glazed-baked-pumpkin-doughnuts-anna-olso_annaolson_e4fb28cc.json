@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Chocolate-Glazed Baked Pumpkin Doughnuts",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C) for regular-sized doughnuts or 325 °F (160 °C) for mini doughnuts. Lightly grease your doughnut tins.",
+      "For the doughnuts, whisk the pumpkin purée, granulated sugar, brown sugar, melted butter, sour cream, eggs and vanilla in a large mixing bowl until evenly combined.",
+      "In a separate bowl, sift the flour, baking powder, cinnamon, ginger, nutmeg and salt and add all at once to the pumpkin mixture. Whisk until the batter is evenly combined and there are no visible lumps.",
+      "Spoon the batter into a piping bag fitted with a large plain tip (or a medium plain tip if piping mini doughnuts) and pipe it into the prepared tins.",
+      "Bake for about 20 minutes for regular doughnuts (or 15 minutes for minis), until the doughnuts spring back when gently pressed. Turn them out onto a wire rack and allow them to cool completely.",
+      "For the glaze, place the chocolate, butter and corn syrup in a metal bowl and set it over a pot of barely simmering water, stirring gently with a spatula. When the glaze has melted, remove from the heat and use immediately.",
+      "Dip the tops of the doughnuts into the glaze, place glazed side up on a wire rack or a baking tray and let set for an hour before eating."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Purée",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "warm is OK, melted",
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Doughnuts",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "6",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "cut into pieces",
+        "amount": "6",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e954d9fcf6d8aa008bdd093bd6e1705112db40ec71b281847ec78eb7204feb1",
+    "lineage_hash": "1828ab6838068c9a9abf4b05d8dca0fc103110b65935b75011977652eb5e64c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-glazed-baked-pumpkin-doughnuts/",
+    "fetchedAt": "2026-08-01T18:56:13.288Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-glazed-baked-pumpkin-doughnuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

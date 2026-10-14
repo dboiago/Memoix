@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Baigan Bharta (बैंगन भरता)",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the brinjal and apply a tbsp. of oil all over the brinjal.",
+      "Roast the brinjal on open flame or in oven till all soft and skin has started to come easily. Remove and cover it for few minutes. Then peel off the skin and once run it through running water.",
+      "Mash the brinjal and make it resemble paste.",
+      "Now heat oil in a kadai. Saute onion till nice translucent. Add garlic ginger, green chili and saute till fragrant.",
+      "Add tomatoes and cook till soft. Add turmeric powder, red chili powder, salt and mix well.",
+      "Add green peas and coriander, mix and cook on slow flame for 10mins.",
+      "Serve hot with roti and rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bharta Baigan/ Brinjal",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "thin strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "boiled or frozen",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9fd88edd817ad2b8f4805815eaaa46de09368ad490e36179c5354c2ec459120",
+    "lineage_hash": "6596e6b353ec472029ffc3f066acdb55a04d970dc2b4217dd037808a238884a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baigan-bharta/",
+    "fetchedAt": "2026-08-02T02:21:44.278Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baigan-bharta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

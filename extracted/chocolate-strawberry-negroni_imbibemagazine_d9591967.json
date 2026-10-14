@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Chocolate Strawberry Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to mixing glass with 10-15 ice cubes, stir for 25 seconds, then strain over a large ice cube in a rocks glass. Express an orange peel over the drink and place in glass.",
+      "Strawberry-Campari: Hull 1 1/2 lbs. of strawberries and chop into small pieces. Combine with 1 liter of Campari in a non-reactive container, and let the mix sit for 24 hours. Strain through fine mesh and press to get all the liquid out of the spent fruit."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crème De Cacao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "755a53482db186b3fe4ae8d3f918b4a9cb5851fbebb790ce88c004cd83b698bc",
+    "lineage_hash": "3eca0044bb02e021ab59044b0a2b74554e1263ccec5583315b53c6e28f72058b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-strawberry-negroni/",
+    "fetchedAt": "2026-08-04T01:02:10.457Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-strawberry-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

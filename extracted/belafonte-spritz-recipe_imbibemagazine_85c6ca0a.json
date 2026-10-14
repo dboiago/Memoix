@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Belafonte Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in an ice-filled wine glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Prosecco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ce4082e3134e894cba4616ee73dd3080f0c28d68e02621fae8df55f37e7f76a",
+    "lineage_hash": "98711b0b6210600c9af62b79b67b9825d1c9e8cb2d729a7c47111639de53970b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/belafonte-spritz-recipe/",
+    "fetchedAt": "2026-08-03T23:51:46.244Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/belafonte-spritz-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

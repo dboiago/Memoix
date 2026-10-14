@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Duck Breast with Polenta Fries",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the polenta chips, place the polenta in a large non-stick saucepan with the milk, 1 1/2 tsp of olive oil, chopped garlic and a generous pinch of salt and pepper",
+      "Bring to the boil, while stirring, and allow to simmer for 5 minutes. Take 1 clean orange and zest into the polenta (reserve the flesh for the vinaigrette). Add a drop of Cointreau",
+      "Remove the pan from the heat and allow to cool. Meanwhile, combine 1 whole egg with 1 egg yolk and then stir into the polenta",
+      "Line a baking tray with greaseproof paper. Pour the polenta onto the tray up to 2 cm high and transfer to the fridge to cool and set - this should take 20-30 minutes",
+      "Once the polenta has set, cut into 6 x 1cm rectangles. Use a small tray of flour to roll and dust the polenta chips (you can use potato flour for a gluten free-alternative). Fry at 180˚C in a deep-fat fryer until golden brown and drain on absorbent paper",
+      "For the duck, generously season the breasts on both sides with salt and pepper. Place a large non-stick pan over a medium heat. Add the duck fat and allow to melt. Pan-fry the duck breasts, skin-side down, until the skin skin is crispy and golden",
+      "Turn the duck breasts over and sear for a further minute. Transfer to an oven set to 200˚C/gas mark 6 for 7 minutes. Remove from the oven and allow to rest for 4 minutes before serving",
+      "Meanwhile, squeeze the juice from both oranges and pour over the sugar cubes in a medium sized bowl along with one egg yolk and vinegar. Whisk until smooth, then gradually trickle in the rapeseed oil - as if you were making mayonnaise. Season to taste",
+      "To serve, slice the duck evenly and arrange next to the polenta chips on both plates. Pascal uses a hand blender to foam the vinaigrette, however you can just drizzle with the orange vinaigrette and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "full-fat",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Generous Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Generous Pinch Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5721569619c665f8dd43a84afeb1f28e5553d5e3b7ae335bc1ffdbd0a63c4ea",
+    "lineage_hash": "e02182ce99c204899770f4425b8ee3ebceba4a8c26a95b2a2423a43062caf1dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-polenta-fries-recipe",
+    "fetchedAt": "2026-08-03T21:19:54.695Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-polenta-fries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

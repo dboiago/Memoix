@@ -1,0 +1,66 @@
+{
+  "url": "https://www.baking-sense.com/2023/11/03/apple-pie-recipe/",
+  "slug": "apple-pie_baking-sense_ef3705e6",
+  "title": "Apple Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T05:02:55.897Z",
+  "ldName": "Apple Pie",
+  "ldTime": "PT120M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "apple, apple pie, autumn, thanksgiving",
+  "ldIngredientsRaw": [
+    "1 Recipe  Perfect Pie Crust",
+    "3 pounds apples (peeled, cored, sliced to ¼&quot; )",
+    "4 oz granulated sugar (½ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "⅛ teaspoon salt",
+    "1 tablespoon lemon juice",
+    "2 tablespoons cornstarch",
+    "1 teaspoon ground cinnamon",
+    "1  egg white"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 3 pounds&#32;apples with 4 oz&#32;granulated sugar, 2 oz&#32;brown sugar, ⅛ teaspoon&#32;salt and 1 tablespoon&#32;lemon juice. Set aside to macerate for at least 2 hours and as long as 3 hours.",
+    "Roll ½ the pie dough to fit into a 9 deep-dish pie plate. Roll the other ½ of the dough to a 12&quot; circle. Sprinkle the circle with flour, fold in half then fold again. Wrap the folded dough in plastic and set into the dough lined pie plate. Set the pie plate into the refrigerator while you make the filling.",
+    "Preheat the oven to 350 °F. If you have a baking steel or stone place that in the oven to preheat.",
+    "Drain the apples, save the juice. In a small bowl, combine ¼ cup of the juice with 2 tablespoons&#32;cornstarch. Heat the remaining juice on medium high until it begins to boil. Reduce the heat to low and whisk in the corn starch slurry. Return to a boil, whisking constantly, until the juices are thickened and become translucent. Immediately toss the thickened juice and 1 teaspoon&#32;ground cinnamon with the apple slices.",
+    "Remove the pie plate from the refrigerator and unfold the dough round for the top crust. Use the tip of a paring knife to cut an apple shaped hole in the center of the top crust. Also cut two leaves. Or you can just cut an &quot;x&quot; to create a steam vent.",
+    "Pour the apples into the pie plate. Brush the edges of the bottom crust with egg white. Lay the top crust over the filling. Pinch the two crusts together to seal. Trim and crimp the edges with a fork or your fingers.  Brush the top of the crust with egg white and sprinkle generously with granulated sugar. Place the pie onto a baking sheet.",
+    "Bake the pie on lowest rack of the oven. If you&#39;re using a baking steel/stone put the pan directly onto it. Bake until the crust is golden brown, the fruit in the middle of the pie is tender, and the juices in the middle are bubbling. About 1 hour.",
+    "Remove the pie from the oven and cool at least 3-4 hours before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "235 kcal",
+    "carbohydrateContent": "47 g",
+    "proteinContent": "2 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "115 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "31 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "1 Recipe  Perfect Pie Crust",
+    "3 pounds apples (peeled, cored, sliced to ¼\" )",
+    "4 oz granulated sugar (½ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "⅛ teaspoon salt",
+    "1 tablespoon lemon juice",
+    "2 tablespoons cornstarch",
+    "1 teaspoon ground cinnamon",
+    "1 egg white"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

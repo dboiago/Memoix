@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Blood Orange Carpaccio",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "This entire recipe is best made a day or 2 in advance, requiring you to simply plate up on the day you plan to serve",
+      "For the blood orange sorbet mix the blood orange segments, 140ml of the blood orange juice and Cointreau in a bowl, then set aside. In a small saucepan over a low heat, add the remaining blood orange juice and bring to the boil. Add the stevia (or sugar) and glucose, then bring back to the boil and simmer for 30 seconds. Remove from the heat and allow to cool",
+      "Pour the boiled orange juice into the bowl with the orange segments, then blitz the mixture with a stick blender to a fine purée. Taste and add a little more stevia (or caster sugar) if you think it lacks sweetness, then transfer to an ice cream machine and churn for 15 minutes or until set. Reserve in the freezer until needed",
+      "For the orange sherbet, mix the zest and sugar together in a small bowl, then leave at room temperature for an hour to dry out. Transfer to an airtight container until required",
+      "To make the carpaccio, place the blood orange segments in a bowl and cover with the Campari, stevia (or sugar) and 120ml of the blood orange juice. Set aside to macerate for 20 minutes",
+      "In a small saucepan over a low heat, warm the remaining juice. Drain the softened gelatine and add to the juice, stirring until dissolved. Pour this mixture over the marinated orange segments and stir to evenly disperse, then place in the fridge for 20-30 minutes until the mixture begins to set. Stir occasionally throughout this time",
+      "Line a terrine mould with cling film and pour the slightly set mixture into it. Using the mould to assist you, tightly roll and shape the mixture into a cylinder roughly 4cm in diameter, ensuring it is completely wrapped in cling film as tightly as possible. Transfer to the freezer to set overnight",
+      "The next day, unwrap the frozen cylinder and use a very sharp knife to cut it into 2-3mm slices – you will need 7 slices per portion. If the slices are not perfectly round, use a 4cm round cutter to neaten them. If doing this step in advance, place the slices on a tray lined with greaseproof paper in overlapping rosace shapes and store in the freezer. If plating straight away, create the rosace shapes on the plates (ensuring the plates are cold – it helps if they have been kept in the freezer beforehand)",
+      "To serve, arrange a rosace in the centre of each plate. Dip a spoon in hot water to create a neat quenelle of sorbet, which should go in the centre of each rosace. Finish with a sprinkling of the sherbet and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blood Oranges",
+        "unit": "g",
+        "notes": "(roughly 6-7 whole oranges), peeled and segmented",
+        "amount": "325",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stevia Extract",
+        "unit": "g",
+        "notes": "or 30g fructose sugar",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "ideally fish gelatine, softened in cold water",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": "g",
+        "notes": "(roughly 4 whole oranges), peeled and segmented",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stevia Extract",
+        "unit": "g",
+        "notes": "or 30g caster sugar",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange",
+        "unit": null,
+        "notes": "finely zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9084dd1e07d29c162c509b7407a64c416bdc0a92d628841efcc34277b4a4aaed",
+    "lineage_hash": "995395c7b6e9e8c688f10d5042fb4764af8341cfa1d6f146e472e78afd74ff5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blood-orange-carpaccio-recipe",
+    "fetchedAt": "2026-08-03T04:26:13.861Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blood-orange-carpaccio-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

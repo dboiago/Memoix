@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Mexican Drinking Chocolate",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the jars, including the lids, in hot, soapy water and dry thoroughly. Alternatively, run the jars through the regular cycle of your dishwasher; wash the lids by hand.",
+      "Place the chocolate in a large heatproof bowl. Set aside.",
+      "In a medium saucepan over low heat, bring the cream, vanilla beans (seeds and pods), cinnamon, and chipotle chile to a boil, stirring frequently. Remove from heat. Using a silicone spatula, press the vanilla pods against the side of the pan to remove any remaining seeds and cream. Discard the pods.",
+      "Immediately pour the cream mixture over the chocolate, stirring constantly until the chocolate is completely melted and smooth. Add the corn syrup and almond extract, stirring until incorporated.",
+      "Pour the ganache into the prepared jars, dividing it evenly and leaving 1/2 inch headspace. Wipe the rims clean and secure the lids. Label and refrigerate. Will keep refrigerated for up to two weeks.",
+      "To serve: Use a warmed spoon to measure 1/4 cup of the chocolate into a preheated mug. Stir in 4 oz. of hot or steamed milk and continue stirring until the chocolate is completely melted and smooth. Top with a dollop of whipped cream and sprinkle a little cocoa powder over the top. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "lb",
+        "notes": "61 to 66% cacao, finely chopped",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Beans",
+        "unit": null,
+        "notes": "soft, plump whole, split and scraped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32c9ff76e60e659590ab5a97992ec2dec2edc6e501987a908e44897a4f7330aa",
+    "lineage_hash": "d0c7051515151de805632641974d84e9ca976dbe274981b079c8e6b14104d16c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/christmas-countdown-10-days-to-go/",
+    "fetchedAt": "2026-08-02T22:32:58.659Z"
+  },
+  "rawSource": "https://imbibemagazine.com/christmas-countdown-10-days-to-go/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

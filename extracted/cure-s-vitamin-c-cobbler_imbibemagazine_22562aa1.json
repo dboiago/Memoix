@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Vitamin C Cobbler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [
+      "Pebbled or Crushed Ice"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker. Shake without ice. Pour into a wine glass and add pebbled or crushed ice. Garnish.",
+      "Orgeat: Combine 2 cups each of unsweetened almond milk, white sugar, and Demerara sugar in a large pot on low heat. Once dissolved, remove from heat. Toast 1 cup of raw almonds in the oven at 475 for 5 minutes. Add toasted almonds to the syrup and stir (the longer, the better.) Add 1/4 tsp. of rose water and 1 oz. of orange liqueur. Strain out the almonds and bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Manzanilla Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Laird's Bonded Apple Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": "homemade or store-bought",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reagan's Orange Bitters",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Almonds",
+        "unit": "C",
+        "notes": "toasted in oven at 475 for 5 minutes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d83fd32352a136b87e6d158b15a381669497dbcc795ff80f9d28b2493ac2912a",
+    "lineage_hash": "58e2cc57758bcf16ae6800776dcf38dbe08617c20afd21f17ffc1a0a3b81ec80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cures-vitamin-c-cobbler-recipe/",
+    "fetchedAt": "2026-08-03T21:43:34.414Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cures-vitamin-c-cobbler-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

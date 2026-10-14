@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Creme Egg Fudge",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line an 8” / 20cm square cake tin or gratin dish with foil (I like using parchment backed foil and lightly oil it)",
+      "Place the milk, cream, sugar and butter into a large pan and bring to a gentle simmer",
+      "Allow to cook until the mixture reaches the soft ball stage, or 115°C on a sugar thermometer (I have an electronic one with an alarm that beeps at the correct temperature)",
+      "Remove from the heat and allow to cool for a few minutes",
+      "Beat with an electric mixer on a slow speed (or by hand if you are feeling strong) for about 5 minutes, until the mixture starts to thicken and looks matt rather than glossy",
+      "Stir in the smashed Creme Eggs with a wooden spoon – aim to distribute them throughout the fudge so you have a marbled effect, rather than letting them melt completely",
+      "Pour the mixture into the prepared tin and scatter the crushed mini eggs over and gently press them into the fudge (if using them) to decorate. Allow to cool, then pop into the fridge for a few hours to firm up before cutting into bite sized pieces"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "white",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creme Eggs",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Eggs",
+        "unit": null,
+        "notes": "optional, lightly crushed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5912ba6573b346c411a9ae2df21807084cd250f7947ec25e63801a803f08676a",
+    "lineage_hash": "bfb441ab810a1bde6bdc2d7a74ce50bae8c024ab65e6f89759d5a88bfc1751e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/creme-egg-fudge-recipe",
+    "fetchedAt": "2026-08-03T22:37:20.349Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/creme-egg-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

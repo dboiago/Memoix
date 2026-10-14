@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Brown Butter and Toffee Chocolate Chip Cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the butter into a saucepan and set over medium heat and cook, stirring often, until the butter foams and then browns, about 5-8 minutes. Pour the butter into a large bowl and allow to cool slightly.",
+      "Meanwhile mix together the flour, baking soda and salt",
+      "Add the sugars into the bowl with the butter and whisk together for a few minutes to combine. Add the eggs and vanilla and mix until the mixture lightens and starts to thicken. Add the dry ingredients to the bowl and mix until just incorporated. Finally add the chocolate and the toffee bar pieces, mixing just to incorporate.",
+      "Set the dough aside for about 30 minutes to allow the flour to hydrate, the dough will be fairly loose to start with but as it sits it will thicken.",
+      "Preheat the oven to 375F (190C) and line a couple baking sheets with parchment paper. Using a 1 1/2 ounce ice cream scoop portion out cookies and place on the baking sheets, about 3 inches apart. Sprinkle with a little flaked sea salt.",
+      "Bake for about 9-11 minutes or until the edges are golden brown but the centres still a little soft. Allow to cool on the baking sheets for 10 minutes before transferring to a wire rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose/plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated/caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bars Toffee Bars",
+        "unit": null,
+        "notes": "chopped into 1/4 inch pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Wafers",
+        "unit": "C",
+        "notes": "72% cocoa",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85858c4d3755fc426b429454a9b92af473520835715de38037c1409fc6fd5c73",
+    "lineage_hash": "171d329b121f609efbf0c17d25e1e10332e997f3f40c88c201b0cd81cf82269d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/8/17/bon-appetit-brown-butter-and-toffee-chocolate-chip-cookies-cookie-chronicles",
+    "fetchedAt": "2026-08-01T19:53:49.997Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/8/17/bon-appetit-brown-butter-and-toffee-chocolate-chip-cookies-cookie-chronicles",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

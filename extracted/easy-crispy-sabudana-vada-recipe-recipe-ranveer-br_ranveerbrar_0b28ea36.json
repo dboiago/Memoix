@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Crispy Sabudana Vada",
+    "time": "45 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly wash sabudana then soak it in 3/4 cup water for 6-8 hours",
+      "In a bowl add the soaked tapioca, grated potatoes, chopped ginger, green chillies, curry leaves, crushed peanuts, cumin seeds, salt to taste, curd, coriander leaves, baking soda and mix everything properly and form a dough.",
+      "Now keep oil for heat in a kadhi and on the other side make small flat balls from the dough and make in hole in the centre of it.",
+      "Fry them in medium hot oil until golden brown from both sides.",
+      "Remove on absorbent paper to remove excess oil.",
+      "Serve hot with the sweet curd.",
+      "In a bowl add curd, sugar, salt, grated raw mango and mix it properly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tapioca",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "boiled, grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "optional, finely chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Peanut",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for Frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango",
+        "unit": "small",
+        "notes": "peeled, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a737560109c10b4eb297a1ce7dbb7ee97cc0c9fef6d8adc33652fa5fc6b2a57",
+    "lineage_hash": "19fde2ff5155d7ffdb84021b968d830b229054c96f990aec0e58a7d91a5d80e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/sabudana-vada/",
+    "fetchedAt": "2026-08-02T10:48:45.255Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/sabudana-vada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

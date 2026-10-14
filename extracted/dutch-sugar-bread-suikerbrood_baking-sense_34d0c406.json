@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Dutch Sugar Bread (Suikerbrood)",
+    "time": "3 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "153",
+      "carbohydrateContent": "27",
+      "fatContent": "3",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Pour 7 oz whole milk into a microwave safe container and microwave until scalding hot, but not boiling. Stir ½ teaspoon ground ginger into the milk and set it aside to cool to 100 °F.",
+      "In the bowl of a stand mixer with the paddle attachment or a large mixing bowl with a wooden spoon, combine the milk, 1 oz unsalted butter, 2 ¼ teaspoons dry yeast, ½ oz granulated sugar, 1 teaspoon salt, 1 large egg and 1½ cups (7½ oz) of the flour. Mix until it forms a thick batter.",
+      "If working on a stand mixer, switch to the dough hook. With the mixer running, add the remaining flour. The dough should gather on the hook and clear the sides of the bowl. If working by hand mix as much flour as you can with the spoon, then finish kneading in the rest of the flour by hand.",
+      "Turn the dough out onto a floured surface and knead to a smooth ball.",
+      "Place the dough into a lightly oiled bowl, turning once to coat the dough. Cover the bowl and set it aside to rise in a warm spot until doubled in size, about 1 - 1½ hours. At this point the dough can be refrigerated for up to 2 days or you can go ahead and shape and bake the loaf."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¾ cup plus 2 tablespoons",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Sugar (1 Cup (or Crushed Sugar Cubes))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eac86ab0c532435b1e8b7eba8bbb76d2abcc5270215ab3a54c59780676714cc9",
+    "lineage_hash": "fff2d2f9b37aa62a0bfe33cdf884c8061cfaecc206b6162cd65cdf38be342fef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/12/10/dutch-sugar-bread-suikerbrood/",
+    "fetchedAt": "2026-08-02T07:22:28.272Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/12/10/dutch-sugar-bread-suikerbrood/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

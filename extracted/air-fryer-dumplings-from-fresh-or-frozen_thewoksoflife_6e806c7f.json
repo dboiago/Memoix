@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Air Fryer Dumplings",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the dumplings in your air fryer basket. Space them apart so there’s about 1/4 to ½-inch (1 cm) of room or so between them.",
+      "Brush or spray the dumplings on all sides with a thin coat of oil. You can also just oil your hands and rub the oil all over the outside of the dumplings.",
+      "You can also use your favorite oil spray. We don’t have an oil spray, so we like to use a natural bristle pastry brush for this, as it allows for a much thinner coat than with silicone brushes.",
+      "Use your fingers to sprinkle the dumplings with ¼ cup water using a flicking motion. For any last bits that you can’t splash on, just pour into the base of the air fryer basket.",
+      "Air-fry at 400°F/200°C for 10-12 minutes if using fresh dumplings, or 12-14 minutes for frozen (depending on size and number of dumplings). For a smaller number of dumplings (e.g., for one person), air-fry them for the shorter end of the time range. Because the air fryer basket is not as full, they will cook faster. There’s no need to preheat the air fryer; just let it go."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Or Frozen Dumplings",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a3a238e23db3c94dab4298351929ad6d45c6278eaa8572b7f055cc27beb3f41",
+    "lineage_hash": "ca2addf5547dd3bd0cb3374dcd726f0e38ea359d46edee28463d97dd93c64074"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/air-fryer-dumplings-from-fresh-or-frozen/",
+    "fetchedAt": "2026-08-02T15:59:14.659Z"
+  },
+  "rawSource": "https://thewoksoflife.com/air-fryer-dumplings-from-fresh-or-frozen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Chocolate Cherry Brownies with Whipped White Chocolate Cherry Ganache",
+    "time": "1 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "219",
+      "carbohydrateContent": "24",
+      "fatContent": "13",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Drain 1 jar Italian Maraschino Cherries, reserving the syrup. Preheat the oven to 350 °F. Butter a 13”x9” inch baking pan and line the pan in one direction with parchment paper or foil.",
+      "Combine 9 ounces semi sweet chocolate and 8 oz unsalted butter in a microwave safe bowl. Microwave for 1 minute, stir to combine. Microwave for 30 second increments, stirring between increments, until all the chocolate is melted. Add 8 oz granulated sugar, 4 oz brown sugar, ½ teaspoon salt,1 teaspoon vanilla extract and 1 tablespoon cherry syrup to the chocolate, stir to combine.",
+      "Add 4 large eggs, stir until combined and then continue to stir vigorously for another 30 seconds. Add 5 oz all purpose flour, stir until combined. Fold in the cherries.",
+      "Spread the batter into the prepared pan. If needed, shift the cherries around so they are evenly spaced throughout the batter.",
+      "Bake until the brownies puff up a bit and a toothpick inserted in the center comes out with moist crumbs (20-25 minutes). Cool completely in the pan before icing.",
+      "While the brownies are baking, make the ganache frosting. Microwave 8 oz white chocolate and 1 oz unsalted butter in 30 second increments until the chocolate is completely melted. Microwave 2 oz heavy cream until scalding hot and stir into the melted chocolate. Stir in 2 oz cherry syrup and a drop of (optional) red food coloring.",
+      "Set the ganache aside at room temperature until the brownies are cooled and ready to frost.",
+      "Use the parchment paper or foil lining to lift the brownies out of the pan onto a cutting board.",
+      "Whip the cooled ganache until it is light and airy but still soft enough to spread. Immediately spread the ganache onto the brownies and allow to set completely before cutting. At this point the brownies can be chilled to speed up setting the frosting.",
+      "Cut into 24 large or 32 small squares. Lift each brownie off the parchment paper and transfer to a serving platter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jar Italian Maraschino Cherries",
+        "unit": null,
+        "notes": "see note",
+        "amount": "1",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "9",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "5",
+        "section": "Brownies",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": "Whipped White Chocolate-Cherry Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": "Whipped White Chocolate-Cherry Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Whipped White Chocolate-Cherry Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Syrup",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Whipped White Chocolate-Cherry Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Coloring (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Whipped White Chocolate-Cherry Ganache",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0580fa364528e0631bc8161c547d0497f6e4d8a26957c667f7f54e447d19c2d",
+    "lineage_hash": "73163b9e0798e2eac03d5f23140e547583159f760443bb19fca435af3444f395"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/02/05/chocolate-cherry-brownies/",
+    "fetchedAt": "2026-08-02T06:18:22.545Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/02/05/chocolate-cherry-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

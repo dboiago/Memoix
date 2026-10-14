@@ -1,0 +1,233 @@
+{
+  "recipe": {
+    "name": "Chole Recipe (Punjabi Chole Masala)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "248",
+      "carbohydrateContent": "43",
+      "fatContent": "5",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Soak 2 cups chickpeas overnight (or for a minimum of 8 hours) in enough water to cover them. In the morning you should have around 5 cups of chickpeas (they increase in size overnight as they soak). Drain the water in which the chickpeas were soaked. Then transfer the chickpeas to a stovetop pressure cooker and add the whole     spices- 2 bay leaves, 5-6 green cardamom pods, 1-inch cinnamon stick, and 4-5     black peppercorns. Also add 2 black tea bags (for color), 5 cups water and 1 teaspoon salt.",
+      "Close the cooker and cook at high heat for 1 to 2 whistles. Then lower the heat to medium and let the chickpeas cook for another 10 minutes or so. Then remove the cooker from heat and let the pressure release naturally. If using an Instant pot, cook on high pressure for 20 minutes and let the pressure release naturally.",
+      "Once the pressure comes off, remove the tea bags and bay leaves using a pair of tongs. The tea bags are used for color only and don't have an impact on the taste of chole. Set this aside.",
+      "Heat 1 & ½ tablespoons oil in a large kadai or pot on medium heat. Add 2 cloves and ¾ cup onions (grated) to the pot. Cook the onions until the raw smell goes away and they are light golden brown in color, this takes around 7 to 8 minutes.",
+      "Then add 2 teaspoons ginger garlic paste and cook until the raw smell goes away, around 2 minutes.",
+      "Now, add 2 & ½ cups tomato puree (from 4 medium tomatoes) and stir. Cover the pot and cook the tomatoes for around 15 minutes on medium-low heat, stir every 2 to 3 minutes in between. This step of cooking tomatoes is important.",
+      "Once the tomatoes are done, add the spices- 3 teaspoons chole masala powder, ½ teaspoon red chili powder, ½ teaspoon paprika powder, ¾ teaspoon cumin powder and ½ teaspoon salt. Stir and cook the spices for a minute or two.",
+      "Then add the boiled chickpeas, (along with the water in which they were boiled) to the pot and stir until the chickpeas are well combined with the masala. Add an extra ½ cup water here and then cover the pan and let the chole simmer on medium-low heat for 30 minutes. Simmering on how heat is what will give this chole so much flavor! Mash some of the chickpeas with the back of your spatula while they are simmering.The gravy will thicken after 30 minutes, so if you prefer more gravy in your chole, add more water than what is mentioned in the recipe.",
+      "Then for the final step, heat 1 tablespoon ghee in a small pan on medium heat. Once hot, add 1-inch ginger juliennes and fry until the juliennes are golden brown in color but do not burn them. Add the ginger juliennes to the chole, stir and switch off the heat.",
+      "Add ¼ teaspoon garam masala, ½ tablespoon kasuri methi and 2 tablespoons cilantro (chopped) and serve the chole hot with rice, bhatura, parathas and more!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "C",
+        "notes": "raw, to be soaked overnight",
+        "amount": "2",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Black Tea Bags",
+        "unit": null,
+        "notes": "for dark color of chole",
+        "amount": "2",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "1",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": "To pressure cook",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Tablespoons Oil",
+        "unit": null,
+        "notes": "use any oil of choice, I used avocado oil",
+        "amount": "1",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "C",
+        "notes": "grated, or very finely chopped",
+        "amount": "¾",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Cups Pureed Tomatoes",
+        "unit": null,
+        "notes": "from 4 medium tomatoes",
+        "amount": "2",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Chole Masala Powder",
+        "unit": "tsp",
+        "notes": "homemade (recipe above) or store-bought",
+        "amount": "3",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or to taste, use Kashmiri red chili powder for less heat",
+        "amount": "½",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "adjust to taste",
+        "amount": "½",
+        "section": "chole masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "cut into julienne",
+        "amount": "1",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "Tbsp",
+        "notes": "crushed, also known as dried fenugreek leaves",
+        "amount": "½",
+        "section": "To garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "To garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54e965667ae4eaaa4bc57700def65881adf50b8d8456bc27c2de78d6518b9dd2",
+    "lineage_hash": "f5064e0f00891e9c4fb2172a5d7c6fa774a7016fc15b32701176198ea5430db8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/punjabi-chole-chickpeas-curry/",
+    "fetchedAt": "2026-08-02T09:50:43.777Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/punjabi-chole-chickpeas-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

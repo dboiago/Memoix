@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chopstickchronicles.com/curry-udon/",
+  "slug": "curry-udon-recipe-chopstick-chronicles_chopstickchronicles_eee930f5",
+  "title": "Curry Udon Recipe - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T17:59:38.562Z",
+  "ldName": "Curry Udon カレーうどん",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": "curry udon",
+  "ldIngredientsRaw": [
+    "150 g thinly sliced beef",
+    "1/2  onion",
+    "1 tbsp olive oil",
+    "2 cups of water",
+    "1  packet of Udon soup",
+    "2  pieces of curry roux",
+    "1  chopped scallions (green shallot) (to garnish)",
+    "2  frozen udon noodles"
+  ],
+  "ldInstructionsRaw": [
+    "Slice the beef very thinly and chop the&nbsp;onions.",
+    "Heat 1 tbsp oil in an oven proof frying pan over medium heat.",
+    "Add the&nbsp;chopped onion and cook for a couple minutes.",
+    "Add the beef and cook until the meat colour change.&nbsp;",
+    "Add 2 cups of water and bring it to boil. Remove the scum as often and as necessary.",
+    "Open and empty the instant udon soup packet to the frying pan.",
+    "Add 2 pieces of curry roux.&nbsp;",
+    "When all the roux has dissolved and the soup has thickened, turn the heat off.",
+    "Meanwhile, in a separate pot, bring 2 litres of water to&nbsp;boil and add the&nbsp;udon noodle and&nbsp;cook it for one minute. *1",
+    "Turn the heat off and drain the cooking water.",
+    "Serve half of the udon noodle in a bowl and pour half of the curry soup.",
+    "Garnish with chopped green shallots."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "281 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "14 g",
+    "fatContent": "23 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "52 mg",
+    "sodiumContent": "62 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 150 g thinly sliced beef",
+    "▢ 1/2 onion",
+    "▢ 1 tbsp olive oil",
+    "▢ 2 cups of water",
+    "▢ 1 packet of Udon soup",
+    "▢ 2 pieces of curry roux",
+    "▢ 1 chopped scallions (green shallot) to garnish",
+    "▢ 2 frozen udon noodles"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

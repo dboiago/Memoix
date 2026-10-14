@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Cranberry Chocolate Focaccia Twists",
+    "time": "2 hr 50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the water, yeast, oil and semolina in a large mixing bowl and stir to blend. Add the flour one cup at a time, stirring well with a wooden spoon after each addition.",
+      "Once the dough becomes too difficult to mix by hand, turn the dough out onto a lightly floured work surface and continue to knead until all the flour has been worked in (you may not need the final 1/4 cup/35g of flour) and the dough develops a smooth and elastic consistency, about 10 minutes.",
+      "Place the dough in a large, oiled bowl, cover the bowl with plastic wrap and let it rise until doubled in size, about 90 minutes.",
+      "Turn the dough out onto a lightly floured work surface and roll it out into a rectangle 12-x-16-inches (30-x-40 cm). Sprinkle half of the rectangle with the chopped dried cherries and chocolate and fold the dough over the filling, pressing gently, then rolling out a little further.",
+      "Cut the dough into 12 rectangles. Use a paring knife to make an incision down the centre of each rectangle. Twist the dough through the incision to create a twist and place these, 2-inches (5 cm) apart on two parchment-lined baking trays.",
+      "Cover the twists with a tea towel and let rise for an hour.",
+      "Preheat the oven to 375°F (190°C). For the syrup, bring the corn syrup, water and vanilla just up to a simmer and brush each twist generously with it.",
+      "Stir the turbinado sugar with a little cinnamon and sprinkle this generously on top. Bake the twists for about 20 minutes, until they are an even golden brown.",
+      "Allow the twists to cool for at least 20 minutes before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "you may not need the final 1/4 cup/35g of flour",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": "chopped, dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b8969d873a6a888f2909a4493a9f0681f9a7af38f94157256f529938030c8f4",
+    "lineage_hash": "325ba19def951e42fbf5607dd86423d3e4433ae18eff25497dbf6057d52d677f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cranberry-chocolate-focaccia-twists/",
+    "fetchedAt": "2026-08-01T20:24:12.514Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cranberry-chocolate-focaccia-twists/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

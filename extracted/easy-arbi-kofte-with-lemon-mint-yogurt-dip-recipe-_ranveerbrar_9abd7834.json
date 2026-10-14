@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Arbi Kofte With Lemon Mint Yogurt Dip",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the arbi in pressure cooker till they are soft.",
+      "Remove when pressure goes off. Peel and mash them.",
+      "Combine mashed arbi, jeera, green chilies, ginger, sendha namak and black salt.",
+      "Add kuttu ka atta/ Rajgira atta and mix well.",
+      "Grease hands well. Form cylindrical shape out of the mixture.",
+      "Grill on pan from both sides.",
+      "For the dip, combine hung curd, lemon juice, mint leaves and salt. Mix well.",
+      "Serve hot arbi ke kofte with lemon mint dip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Colocassia Roots/arbi",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kuttu Ka Atta/rajgira Atta",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jeera/cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": null,
+        "notes": "to taste (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sendha Namak",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to shallow fry",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea7ea7b14773420f1dbb27202523b82bde82dccc9a37bd33bb72a048b0a1ae99",
+    "lineage_hash": "445632ed6b4bdf3e8fad4da45cadb409a0f4c3a2590aba8011831dc036a00684"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/arbi-kofte-with-lemon-mint-yogurt-dip/",
+    "fetchedAt": "2026-08-02T11:23:54.991Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/arbi-kofte-with-lemon-mint-yogurt-dip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2020/09/24/chunky-granola-recipe/",
+  "slug": "chunky-granola-recipe_baking-sense_6547e78e",
+  "title": "Chunky Granola Recipe",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T20:16:07.721Z",
+  "ldName": "Chunky Granola Recipe",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Snack",
+  "ldKeywords": "easy, granola, healthy",
+  "ldIngredientsRaw": [
+    "13 oz old-fashioned rolled oats (4 cups)",
+    "4 oz walnuts (1 cup, coarsely chopped)",
+    "2 oz flax seed meal (½ cup, or almond meal)",
+    "1 oz sunflower seeds (¼ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "1 teaspoon ground cinnamon",
+    "1 teaspoon ground ginger",
+    "½ teaspoon table salt",
+    "3 oz honey (¼ cup)",
+    "3 oz vegetable oil (⅓ cup)",
+    "1 tablespoon vanilla extract",
+    "1  egg white",
+    "9 oz dried cranberries (1 ½ cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 300 °F. Line a half sheet pan with parchment paper or a silicone baking mat.",
+    "In a large bowl, combine 13 oz&#32;old-fashioned rolled oats, 4 oz&#32;walnuts, 2 oz&#32;flax seed meal, 1 oz&#32;sunflower seeds, 2 oz&#32;brown sugar, 1 teaspoon&#32;ground cinnamon, 1 teaspoon&#32;ground ginger, and ½ teaspoon&#32;table salt. In a small bowl or measuring cup, combine3 oz&#32;honey, 3 oz&#32;vegetable oil and 1 tablespoon&#32;vanilla extract. Drizzle the liquid ingredients over the oat mixture and toss to combine.",
+    "Whisk 1&#32;egg white until frothy then fold it into the granola. Toss the mixture to evenly distribute the wet ingredients and break up any clumps. Pour the granola into the prepared pan. Moisten your hands with water and use them to press the granola firmly into an even layer.",
+    "Bake until the granola is dry and nicely browned around the edges, about 30 minutes.",
+    "Set the pan on a wire rack and cool to room temperature. Break the granola into large clumps and toss in the 9 oz&#32;dried cranberries. Keep in an airtight container for 1-2 weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 bar",
+    "calories": "195 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "4 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "52 mg",
+    "sugarContent": "13 g",
+    "transFatContent": "0.02 g",
+    "fiberContent": "3 g",
+    "unsaturatedFatContent": "8 g"
+  },
+  "htmlIngredientLines": [
+    "13 oz old-fashioned rolled oats (4 cups)",
+    "4 oz walnuts (1 cup, coarsely chopped)",
+    "2 oz flax seed meal (½ cup, or almond meal)",
+    "1 oz sunflower seeds (¼ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "1 teaspoon ground cinnamon",
+    "1 teaspoon ground ginger",
+    "½ teaspoon table salt",
+    "3 oz honey (¼ cup)",
+    "3 oz vegetable oil (⅓ cup)",
+    "1 tablespoon vanilla extract",
+    "1 egg white",
+    "9 oz dried cranberries (1 ½ cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

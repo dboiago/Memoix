@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate, Almond and Cherry Christmas Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add the almond flour, coconut flour, cherries, chocolate, salt, baking soda and the spices and mix well",
+      "In a separate bowl, mix together the coconut oil, rum, maple syrup, eggs and vanilla and add to the dry ingredients. Mix well",
+      "Grease two 5 inch spring form pans and divide the mixture between them. Bake for 40 minutes",
+      "Whilst the cake is cooking, make the icing by mixing together the yoghurt, maple syrup and vanilla",
+      "When the cakes are cooked and completely cooled, add some of the icing to the top of one and put the \r\nother cake on top and add the rest of the icing. Add some extra cherries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Meal",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flour",
+        "unit": "Tbsp",
+        "notes": "available from most health food shops",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "cut into small chunks",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": "dried, for decoration",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "382df7e99d1d163c60a5dd31216d0b4c260925c3ea59f6939cccc381ddc5a734",
+    "lineage_hash": "041270a0a9bf1f254ed0b60640f84ac4f87b80f8834320f22b5f6cb913bde9bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cherry-christmas-cake-recipe",
+    "fetchedAt": "2026-08-03T23:01:33.622Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cherry-christmas-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

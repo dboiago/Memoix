@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Baked Celeriac, Pear and Espresso Sauce",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 165°C fan. Scrub the celeriac well, then peel it, reserving the peelings",
+      "Put the peelings on a baking tray and roast for 10 minutes until golden, then remove from the oven and turn the heat up to 180°C",
+      "Tip them into a medium saucepan, add the pear cores, then cover with water and bring to a boil. Simmer for 15 minutes. Add the spent coffee and simmer for another 3 minutes, then strain through a fine sieve into a clean saucepan",
+      "Cut the peeled celeriac into 8 wedges. Heat a large ovenproof frying pan over medium-high heat. Add the vegetable oil and, when hot, season the wedges well and place them in the pan. Cook until golden on one side, then turn them over and add half the butter and four of the pear quarters, flesh-side down",
+      "Transfer the pan to the oven and roast everything for 10 minutes",
+      "To finish the sauce, bring the liquid to a simmer, then add the remaining butter, swirling constantly to emulsify. Taste and add more salt if needed",
+      "Finely slice the remaining four pear quarters, then plate the dish. Put two wedges of celeriac onto each plate, add the baked pear, drizzle with the sauce, and finish with the fresh pear"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": "quartered and cored, cores reserved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Used Coffee Grounds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "26e63263ea2e3be3382b6ba30e407784db3ddd7df767942abd9daef5e51c192d",
+    "lineage_hash": "45bd8e9186e2e0eac6393f225d6aeb8d4bc5794d3cb5badd48be6373fa85c863"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-celeriac-pear-and-espresso-sauce",
+    "fetchedAt": "2026-08-01T23:07:50.550Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-celeriac-pear-and-espresso-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

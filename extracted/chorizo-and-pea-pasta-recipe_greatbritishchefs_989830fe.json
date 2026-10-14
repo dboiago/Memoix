@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chorizo and Pea Pasta",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the peas in boiling salted water and blanch for three minutes. Drain the peas and set to one side, retaining the water from the pan",
+      "Bring a larger pan of salted water to the boil, add the garganelli pasta and cook for 8-10 minutes",
+      "Meanwhile, sweat the chorizo with the garlic and olive oils in a large pan for a couple of minutes. Take a tablespoon of water from the pea pan and add to the chorizo along with the cooked peas, cream and butter. Stir well to combine, then garnish with the chopped parsley and some freshly ground black pepper",
+      "Drain the pasta and add to the sauce along with a tablespoon of the pasta water and the Parmesan. Toss to coat the pasta in the sauce, then divide it evenly between two plates. Sprinkle over a little extra Parmesan and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garganelli Pasta",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "skinned and chopped",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated, plus extra to serve",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6d09549cf0a23af0a7a9d9d0edc557e4af374cbba3f815757c7627b8b58d959",
+    "lineage_hash": "f78d6c382af97087e05166ece6739c6c0abd2b0777f0645963107a1205b44ea5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/pea-and-chorizo-pasta-recipe",
+    "fetchedAt": "2026-08-03T14:52:40.304Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/pea-and-chorizo-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

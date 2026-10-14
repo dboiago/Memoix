@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Baked Parmesan And Pea Orzo",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C. Heat 4 tbsp of the olive oil in a frying pan over a medium heat. Add the onion with a pinch of salt and cook gently for 8-10 minutes until soft and translucent",
+      "Add the garlic and cook for 1 minute, then add the orzo and stir to coat in the oil. Cook for 2-3 minutes until lightly toasted",
+      "Pour in the white wine and reduce until almost fully evaporated, then transfer to a roasting or baking dish",
+      "Add the hot stock and stir well. Transfer to the oven and bake for 15-18 minutes until the orzo is just tender and still slightly loose, stirring halfway through",
+      "Remove from the oven and immediately stir through the peas, butter, Parmesan, lemon zest and juice. Stir vigorously to emulsify – the texture should become glossy and creamy",
+      "Return to the oven for 5-7 minutes to gently set the top while keeping the interior soft and spoonable",
+      "Meanwhile, mix the parsley with the remaining 2 tbsp of olive oil and a pinch of salt and set aside",
+      "To serve, scatter over the parsley, extra Parmesan, a drizzle of olive oil and a pinch of black pepper. Great served with asparagus, a radish salad, grilled courgette ribbons and a focaccia and anchovy dipping oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to serve",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orzo",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen, or fresh if in season",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated, plus extra to serve",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested, plus 2 tbsp juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "leaves picked and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4651e7342329e2255057728f7dc63c3d898fd34231109980bbe2dcc13dcfe56f",
+    "lineage_hash": "8e024b142b0d870b317e8dd4980b9331d3cb311dbffa14618e9613224fd7152f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-parmesan-pea-orzo-recipe",
+    "fetchedAt": "2026-08-01T19:44:18.083Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-parmesan-pea-orzo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

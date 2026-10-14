@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Crispy Papaya Fritters with Sweet Chilli Sauce",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the salt to the onions, mix well and leave for 30 minutes",
+      "Meanwhile, make the sweet chilli sauce. Heat the oil in a pan and then add the chillies. Cook, stirring, for 2 minutes then add the garlic and ginger and cook and stir for another 2 minutes",
+      "Add the white wine vinegar and the sugar, then bring to the boil",
+      "Mix the cornflour with the water and then add to the pot while the mixture is boiling. Stir in and then reduce the heat to low",
+      "Cook for 15–20 minutes or until thick",
+      "Add the remaining ingredients – except the water – to the salted onions and mix well",
+      "Gradually add the water whilst mixing to create a thick paste-like batter",
+      "Set the fryer to 160°C, or heat a few inches of oil to 160°C in a heavy-bottomed, high-sided pan",
+      "Fry for 5 minutes or until golden, flipping halfway through",
+      "Serve the freshly cooked fritters with the sweet chilli sauce. Scatter the coriander leaves over the plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Papaya",
+        "unit": "g",
+        "notes": "shredded",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprigs",
+        "notes": "fresh, finely chopped, plus extra for garnish",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67fc044ba7739f839b11c12cf1fc109fd4738ca6a185499c2e15639fbc2f7257",
+    "lineage_hash": "8336efd743a31a0fce6e5e050dcda4e9a56529bcbf75a9e1356b29fe973de35f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-papaya-fritters-homemade-sweet-chilli-sauce-recipe",
+    "fetchedAt": "2026-08-02T05:18:10.614Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-papaya-fritters-homemade-sweet-chilli-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

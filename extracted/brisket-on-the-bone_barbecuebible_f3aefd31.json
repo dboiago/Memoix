@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Brisket on the Bone",
+    "time": "8 to 10 hours",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place beef rib rack on a rimmed baking sheet. (You may cut rack lengthwise into individual bones first if you prefer.)",
+      "Place the salt, pepper, and hot red pepper flakes in a small bowl and mix well. Generously sprinkle the rub on the ribs on all sides, including the ends, rubbing it into the meat with your fingertips.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 225° to 250°F. If your smoker has a water pan, fill it with water or beer to a depth of 3 inches. If it doesn’t have a water pan, fill a disposable aluminum foil pan with water or beer to a depth of 3 inches and place it below the rack on which you’ll be smoking the ribs. (Note: You don’t need to do this on a ceramic cooker.) Add wood as specified by the manufacturer.",
+      "Place the ribs in the smoker fat side up (with at least 2 inches between ribs if separate). Smoke the ribs until darkly browned on the outside and very tender inside, 8 to 10 hours. If working on a smoker with the firebox at one end, rotate the ribs a couple times so they cook evenly. To test for doneness, insert a metal skewer in the center or the largest rib (through one end and parallel to the bone); it should pierce the meat easily. Another test for doneness is to insert an instant-read thermometer parallel to but not touching the bone; it should read 200°F. (Check the ribs to make sure all are done.) When done, the meat will have shrunk back from the ends of the bones by 1 to 2 inches.",
+      "Transfer the ribs to a large foil pan with the beef stock. Loosely cover the pan with aluminum foil and place it in an insulated cooler. Let the ribs rest for 1 hour before serving.",
+      "Just before serving, season with a light sprinkling of salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full Beef Plate Short Ribs",
+        "unit": null,
+        "notes": "rack is 6 to 7½ pounds",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher)",
+        "unit": "Tbsp",
+        "notes": "plus extra for serving",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Red Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beer (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "C",
+        "notes": "preferably homemade",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "834319425fd189d93532a94862a75d57b3fbba7d265a07a121808bd7bc071f01",
+    "lineage_hash": "ff285a38323eedb0b72d7aeaedb368d70eb0aa5b45b05887d732106f47c6a82e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brisket-on-the-bone/",
+    "fetchedAt": "2026-08-03T06:13:27.032Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brisket-on-the-bone/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

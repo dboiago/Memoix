@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Apple Upside Down Cake",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "296",
+      "carbohydrateContent": "45",
+      "fatContent": "12",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Combine the butter, rum, brown sugar, vanilla and cinnamon in a small saucepan.",
+      "Heat until the butter is melted and the mixture begins to boil.",
+      "Pour the caramel into the prepared baking pan.",
+      "Arrange the apples on top of the caramel.",
+      "Set the pan aside while you make the cake batter.",
+      "Spread the batter over the apples, being careful not move the apples too much.",
+      "Bake until the cake springs back then lightly pressed in the middle.",
+      "While the cake is still warm, run a small spatula or knife around the edges and flip the cake over onto the serving plate.",
+      "If any of the apples stick to the pan transfer them to the cake.",
+      "While the caramel is still warm, rearrange any apples that are out of place."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "1 ½ tablespoons",
+        "amount": "¾",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or ⅓ teaspoon vanilla extract",
+        "amount": "¼",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Caramel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "½ cup, room temperature",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "6¾",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7959331e4ccf00a13f6d753957ae592bf657412a2308ae03c5476cd2be6cc59",
+    "lineage_hash": "abcf0bae3c4b1ac37ca5a87b8d188b8476e9af7d30d66e757835bcc265c55958"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/10/21/apple-rum-upside-down-cake/",
+    "fetchedAt": "2026-08-02T04:47:49.641Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/10/21/apple-rum-upside-down-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

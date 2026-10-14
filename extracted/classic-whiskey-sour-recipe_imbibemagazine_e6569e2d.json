@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Whiskey Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all ingredients with ice, strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5679c5191b209565a10d078c4e13244f6dea3c6ea59db331020c00839a137bc7",
+    "lineage_hash": "eb3a9a509c85ee8acf0ac0c354366c80c425031e73a343692b3eb2654e5674c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-whiskey-sour/",
+    "fetchedAt": "2026-08-03T22:55:26.614Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-whiskey-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

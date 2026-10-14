@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2020/05/07/flourless-almond-cake/",
+  "slug": "brown-butter-flourless-almond-cake_baking-sense_6e1f5c67",
+  "title": "Brown Butter Flourless Almond Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T18:18:18.790Z",
+  "ldName": "Brown Butter Flourless Almond Cake",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "almond flour, flourless",
+  "ldIngredientsRaw": [
+    "7 oz granulated sugar (¾ cup plus 2 tablespoons)",
+    "4 oz unsalted butter",
+    "2 tablespoons dark rum",
+    "1 teaspoon vanilla extract",
+    "finely grated zest from 1 orange",
+    "6  large eggs",
+    "½ teaspoon cream of tarter",
+    "¼ teaspoon salt",
+    "6 oz almond flour (1 ½ cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Butter and flour a 9-inch spring-form cake pan, or butter the pan and line the bottom of the pan with a round of parchment paper.  Set aside 2 tablespoons of granulated sugar.",
+    "Melt 4 oz&#32;unsalted butter in a small saucepan, cook until the milk solids sink to the bottom of the pan and become brown. Drain the butter into a medium bowl, leaving the solids in the pan. Stir 2 tablespoons&#32;dark rum, 1 teaspoon&#32;vanilla extract and finely grated zest from 1 orange into the brown butter and set aside.",
+    "Put 6&#32;large eggs, 3/4 cup (6 oz) of sugar, ½ teaspoon&#32;cream of tarter and ¼ teaspoon&#32;salt in a mixer bowl. Set the bowl over a pan of simmering water (don&#39;t let the bowl touch the water) and whisk until the eggs are slightly warmer than body temperature.",
+    "Put the bowl onto the mixer and whisk until the eggs are tripled in volume and the color turns pale yellow. When the whisk is lifted it should leave a &quot;ribbon&quot; of eggs over the surface.",
+    "Sprinkle half of 6 oz&#32;almond flour over the egg mixture and use a balloon whisk to fold, repeat with the remaining almond flour. Whisk 1 cup of the batter into the browned butter to lighten the butter. Fold the brown butter mixture back into the batter just until combined. Pour the batter into the prepared pan. Sprinkle the reserved 2 tablespoons of sugar evenly across the top of the batter.",
+    "Bake until the batter is set and a toothpick inserted in the center comes out with a few wet crumbs, about 25 to 30 minutes. Cool 10 minutes before releasing the sides of the spring form pan. The cake will settle quite a bit as it cools, forming a ridge around the edges and a crackled top.",
+    "Serve slightly warm or at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "300 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "7 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "0.4 g",
+    "cholesterolContent": "123 mg",
+    "sodiumContent": "97 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "21 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "7 oz granulated sugar (¾ cup plus 2 tablespoons)",
+    "4 oz unsalted butter",
+    "2 tablespoons dark rum",
+    "1 teaspoon vanilla extract",
+    "finely grated zest from 1 orange",
+    "6 large eggs",
+    "½ teaspoon cream of tarter",
+    "¼ teaspoon salt",
+    "6 oz almond flour (1 ½ cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

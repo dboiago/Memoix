@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Beef Wonton",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "57",
+      "carbohydrateContent": "6",
+      "fatContent": "2",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Soak Sichuan peppercorn with boiling hot chicken stock and set aside for 10 minutes. Strain and remove the Sichuan peppercorns.",
+      "Add the ground beef in a large bowl with a smaller egg. Mix until the egg is well absorbed. Penetrate the chicken stock with beef by three batches. Each time after adding the stock, use a chopstick to stir it in one direction until all the liquid is absorbed. Continue stirring for couple of minutes after mixing all of the chicken stock until the beef becomes quite sticky and fluffy. Add ginger, scallion white, light soy sauce, salt, sugar, five spice powder and sesame oil. Combine well and keep stirring for couple of minutes. Set aside for 15 minutes to 30 minutes.",
+      "Assemble the wontons one by one.",
+      "To boil the wontons, bring a large pot of water to a boiling and then add wonton to cook 2-3 minutes until they floats on the surface. Then add several leafy vegetables, I use asparagus lettuce leaves this time.",
+      "Mix the serving seasonings in bowls and pour in the water for boiling wontons and transfer wontons."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wonton Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion White",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "boiling hot",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smaller Egg",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": "alt: to taste",
+        "amount": "1",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of White Pepper",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce for hot and sour wonton soup (2 servings)",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stock version",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stock version",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stock version",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Stock version",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "438086fdc134fb6d548be7d2b8c205d2ecef414a371684adb9c841bfbe20db42",
+    "lineage_hash": "4cda465ac69b92d723a0391c2fde15fae0cbdb156b2b9cefd1044a207e21d7f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-wonton/",
+    "fetchedAt": "2026-08-01T17:42:10.771Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-wonton/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

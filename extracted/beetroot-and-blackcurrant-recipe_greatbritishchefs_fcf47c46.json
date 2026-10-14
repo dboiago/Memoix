@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Beetroot and Blackcurrant",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dehydrate the berries overnight. Once completely crisp, use a blender or spice grinder to blitz into a powder. This can be stored for months in an airtight container",
+      "To make the oil, place the leaves in the thermomix with the oil and a pinch of salt. Blitz and heat to 82ºC, once it reaches this temperature, turn off the heat and continue blitzing at full speed for 2 minutes. If you don't have a thermomix, you can use a thermometer and a regular blender; blanche the leaves in boiling water for one minute, then drain, squeeze out as much liquid as possible and blend",
+      "Pour the oil into a bowl sat over ice to chill quickly and preserve the vibrant green colour. Then pour the oil into a muslin cloth-lined sieve set over a bowl and leave to drip through in the fridge overnight",
+      "Set up a barbecue and once the charcoals are white and glowing, place the beetroots directly onto the coals. Cook for around an hour, using tongs to turn occasionally to ensure the skins are evenly blackened and tender inside",
+      "Peel whilst still warm, then finely slice against the grain",
+      "Lay out the beetroot onto plates whilst still warm, and season with the oil and powdered dehydrated blackberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Handfuls of Blackcurrants",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Blackcurrant Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-pressed Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": null,
+        "notes": "a mixture of red, gold and chioggia",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fa495822ede52c15686f9b8ed7e41218f31a4001eb0f2a3bb6dea131addfb36",
+    "lineage_hash": "0ff4f9703ea4613c856c7fe02e4494ee488e199f9e035454f3d5af937634fe68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-and-blackcurrants-recipe",
+    "fetchedAt": "2026-08-02T20:26:33.321Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-and-blackcurrants-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

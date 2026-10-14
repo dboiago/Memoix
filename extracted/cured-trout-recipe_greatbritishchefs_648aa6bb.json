@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Cured Trout",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lay the trout, skin-side down, on a large piece of cling film. Sprinkle over the salt and sugar, followed by the coriander seeds, lime zest and coriander leaves",
+      "Wrap in cling film and place flesh-side down on a baking tray. Top with another tray, then place light weights on top to gently press the trout",
+      "Refrigerate for 8 hours depending on the thickness of the fish, turning often",
+      "Once cured, remove from the fridge and carefully rinse under cold water to remove the excess cure. Pat dry",
+      "Slice thinly and arrange on serving plates. Brush with olive oil and garnish with celery and coriander leaves, batons of apple, salt and pepper",
+      "Grate over a little more lime zest to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Side of Trout",
+        "unit": null,
+        "notes": "skin on, pinboned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Caster Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Celery Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "green",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "182fa700657f9f6b38542d6a08ae96cfc91bee579bd34777dd1b4973577d068c",
+    "lineage_hash": "146c49c72e85ed9f3e8dee190a9216fa68a580a7790783407ddaf62971fdbff3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-trout-recipe",
+    "fetchedAt": "2026-08-03T11:55:54.147Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-trout-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

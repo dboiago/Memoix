@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Biggest Asset",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Cucumber Ribbon",
+      "Mint Sprigs"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Insert a cucumber ribbon in the glass followed by crushed ice. Add 1/2 a cucumber (cut up in 6 small pieces) and 6 mint sprigs to the shaker and lightly muddle. Add all of the ingredients to the shaker with ice. Shake and double strain over the crushed ice in the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88ccbb5a34876e2dcdc98bd4ce223931bb3f691027bb820b33df1b96a177ebc7",
+    "lineage_hash": "7fa254f5c084b475625e443efeff000e5dd739d83b909788f3fff8cce72936ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/biggest-asset-pomegranate-cocktail/",
+    "fetchedAt": "2026-08-04T01:23:36.319Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/biggest-asset-pomegranate-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

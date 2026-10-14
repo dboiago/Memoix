@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Chancay French Toast",
+    "time": "17 mins",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [
+      "Mint Leaves"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Aguaymanto compote: Put aguaymantos in a small saucepan. Cover with sugar and ¼ cup water.",
+      "Cook until the fruits burst open and the liquid is syrupy. Turn off the heat and cool.",
+      "French toasts: Slice the rolls in half.",
+      "In a bowl whisk the eggs, add the milk, cinnamon and vanilla.",
+      "Dip the rolls in the egg mixture until they absorb part of the liquid, turning once.",
+      "Meanwhile heat one tablespoon butter (or oil) in a skillet. Fry the bread until lightly golden.",
+      "Serve two in each plate and spoon some aguaymanto compote over the toasts.",
+      "Garnish with mint leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aguaymantos",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Aguaymanto compote",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Aguaymanto compote",
+        "isOptional": false
+      },
+      {
+        "name": "Chancay Rolls",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "French toasts",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "French toasts",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Evaporated Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "French toasts",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "French toasts",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "French toasts",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "French toasts",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38e38855be19926dacfa5b9d7d187d97bd03f07a4a56f3dc8de2188bc673c2a5",
+    "lineage_hash": "414f5bef6bbc3097f1ce055e588bf6961a921ecb5149bf7dd1bd8e6714591d31"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/chancay-french-toast-welcome-2017/",
+    "fetchedAt": "2026-09-25T22:59:28.401Z"
+  },
+  "rawSource": "https://perudelights.com/chancay-french-toast-welcome-2017/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

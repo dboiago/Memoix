@@ -1,0 +1,60 @@
+{
+  "url": "https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/",
+  "slug": "authentic-spanish-hot-chocolate-recipe-spanish-sab_spanishsabores_9d86705b",
+  "title": "Authentic Spanish Hot Chocolate Recipe - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T09:02:47.944Z",
+  "ldName": "Authentic Spanish Hot Chocolate Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 Cups"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Sweet",
+  "ldKeywords": "chocolate caliente recipe, spanish hot chocolate",
+  "ldIngredientsRaw": [
+    "2 cups whole milk",
+    "6 ounces dark chocolate",
+    "2/3 teaspoon cornstarch",
+    "2 teaspoons white sugar (optional)",
+    "1/2 teaspoon cayenne pepper (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Coarsely chop the chocolate into half-squares.",
+    "Pour the milk into a medium saucepan and add the cornstarch. Whisk until the cornstarch is dissolved.",
+    "If you want a sweeter hot chocolate, add the sugar. I find that 2 teaspoons is enough to make it pleasantly sweet, but adjust to your liking. Whisk until dissolved.",
+    "Put the saucepan over medium heat until the milk starts to boil, stirring frequently. Remove it from the heat.",
+    "Add the chocolate to the saucepan and stir until completely melted. If the milk cools too soon, return it to the heat. Be careful not to keep over the heat too long, as the mixture will thin.",
+    "If you want to add a kick of spice to your hot chocolate, add the cayenne pepper and whisk to combine.",
+    "Taste for sweetness and spice and adjust if necessary.",
+    "Pour or ladle into cups straight away and serve immediately, ideally with churros."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cup",
+    "calories": "674.52 kcal",
+    "carbohydrateContent": "55.31 g",
+    "proteinContent": "14.69 g",
+    "fatContent": "44.17 g",
+    "saturatedFatContent": "25.38 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "31.83 mg",
+    "sodiumContent": "109.98 mg",
+    "fiberContent": "9.41 g",
+    "sugarContent": "36.18 g",
+    "unsaturatedFatContent": "13.94 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups whole milk",
+    "▢ 6 ounces dark chocolate",
+    "▢ ⅔ teaspoon cornstarch",
+    "▢ 2 teaspoons white sugar optional",
+    "▢ ½ teaspoon cayenne pepper optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

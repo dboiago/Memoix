@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Culatello Bundles",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel, dice and boil the carrots. Drain when cooked, cool and transfer to a bowl.",
+      "Boil the egg for exactly 10 minutes from when the water comes to a boil. Run under water to cool and peel. Finely dice the celery. Coarsely chop the olives with 1 Tbsp. capers.",
+      "Add the olives, capers, diced celery and mayonnaise to the carrots and mix. Press the hard-boiled egg through a sieve and add this to the mixture; mix everything together and season with a pinch of salt.",
+      "Line the inside of a small ladle with a slice of culatello or other fine cured ham; fill with a spoonful of the mixture and fold the ham over to close. Flip the onto a plate, so the seam of the bundle is on the bottom. Repeat with the remaining 11 slices of culatello, using up all the filling. Garnish the bundles and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Culatello",
+        "unit": "slices",
+        "notes": "alt: other cured ham",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "oz",
+        "notes": "pitted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt Packed Capers",
+        "unit": "Tbsp",
+        "notes": "rinsed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7ddda68a16098b171a6ced24385554e4998da63ca13bf8d509c8b5e4ec72fd8c",
+    "lineage_hash": "5e9388738bf20c9f38dff6ecfcac45a8235c50a4e3ddc7852c5b8ec3e458031a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/culatello-bundles",
+    "fetchedAt": "2026-08-03T02:50:13.573Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/culatello-bundles",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

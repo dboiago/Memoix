@@ -1,0 +1,280 @@
+{
+  "recipe": {
+    "name": "Aloo Masoor dal Sabji (No Onion/Garlic)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai, add oil, once it's hot, add cumin seeds and let it splutter.",
+      "Add ginger, green chilies and sautÃ© for a minute.",
+      "Add masoor and toss it well, add prepared paste and sautÃ© it for a while.",
+      "Add potatoes, degi red chili powder, ghee and mix it well.",
+      "Add water, close the lid and cook it for a while until potatoes are cooked.",
+      "Add prepared tempering and finish it with lemon juice.",
+      "Transfer it to a serving dish, garnish it with curd, ginger julienne, coriander sprig and lemon wedges.",
+      "Serve hot with roti.",
+      "In a pan, add oil, once it's hot, add coriander seeds, fennel seeds, cumin seeds, black peppercorns, green cardamom, cinnamon stick and toss it for a minute.",
+      "Transfer it to a bowl, add asafetida, coriander leaves, curd and salt to taste.",
+      "Transfer it to a mixer grinder jar and make a smooth paste.",
+      "Keep it aside for further use.",
+      "In a pan, add ghee, once it's hot, add raisins and toss it well.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "less spicy, chopped",
+        "amount": "2-3",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Masoor Dal",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "peeled, cut into dice",
+        "amount": "4-5",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tempering",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Masoor Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "⅓",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf9fab6b0e2a9fc4ba75d007667a9e4c9b3f47544c2cbbaa2c1c0644d4dd414f",
+    "lineage_hash": "286db65c76f7c2698b10b283339f16054114479427c70a8800ccb2a451174cd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-masoor-dal-sabji/",
+    "fetchedAt": "2026-08-02T12:57:25.922Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-masoor-dal-sabji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

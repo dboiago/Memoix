@@ -1,0 +1,53 @@
+{
+  "url": "https://www.simplytrinicooking.com/corn-bread/",
+  "slug": "a-wonderfully-baked-corn-bread-simply-trini-cookin_simplytrinicooking_8c761c82",
+  "title": "A Wonderfully Baked Corn Bread | Simply Trini Cooking",
+  "byline": "Author Felix (Simply Trini Cooking)",
+  "fetchedAt": "2026-09-25T23:14:01.610Z",
+  "ldName": "Corn Bread",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "1",
+    "1 loaf"
+  ],
+  "ldCuisine": "International",
+  "ldCategory": "Breads",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup flour",
+    "1 cup cornmeal (enriched)",
+    "1 cup evaporated milk",
+    "1/4 cup butter (unsalted)",
+    "1/4 cup sugar (granulated)",
+    "2  eggs",
+    "2-3 tsp. baking powder",
+    "1/2 tsp. ground cinnamon",
+    "1/2 tsp. nutmeg (grated)",
+    "1 tsp. vanilla extract",
+    "1/4 tsp. salt"
+  ],
+  "ldInstructionsRaw": [
+    "Sift flour, baking powder, and salt. Mix in the spices, sugar and cornmeal. Cut softened butter into pieces, and mix well.",
+    "Beat the eggs and add the milk and vanilla. Add the liquid to the dry ingredients and mix well. Beat until fluffy.",
+    "Pour in a greased dish and bake for about 20 minutes or until slightly brown."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup flour",
+    "1 cup cornmeal enriched",
+    "1 cup evaporated milk",
+    "1/4 cup butter unsalted",
+    "1/4 cup sugar granulated",
+    "2 eggs",
+    "2-3 tsp. baking powder",
+    "1/2 tsp. ground cinnamon",
+    "1/2 tsp. nutmeg grated",
+    "1 tsp. vanilla extract",
+    "1/4 tsp. salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

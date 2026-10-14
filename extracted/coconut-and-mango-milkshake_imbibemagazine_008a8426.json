@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Coconut and Mango Milkshake",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a blender and purée until smooth. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mangoes",
+        "unit": null,
+        "notes": "peeled and cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": "unsweetened",
+        "amount": "13.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "plain",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5efa8a09eb189c0ce232b75465d712147aa6fbd56c4dc1b15b6b816e9a9711c6",
+    "lineage_hash": "c61d13fc314b3de7e18c2492eece7798a8d73d1e8a49cd090c327629b65bce1e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-and-mango-milkshake/",
+    "fetchedAt": "2026-08-03T21:17:23.720Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-and-mango-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

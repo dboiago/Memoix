@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Caramelised Yoghurt Dessert with Berries",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the yoghurt in a vacuum bag and seal in a chamber sealer. Cook in the water bath for 12 hours, or until the yoghurt is thickened and a caramel-brown colour. Remove the bag and cool in a bowl of iced water",
+      "Line a sieve or colander with a muslin cloth and place over a bowl. Pour in the cooked yoghurt and allow to strain for up to an hour until it resembles a thick brown cottage cheese",
+      "Just before serving, whisk in just as much of the fresh natural yoghurt as needed to create a smooth texture with a light caramel colour. Divide between serving dishes",
+      "Lightly scorch the berries using a blowtorch (or under a hot grill) and serve immediately with the yoghurt and a sprig of mint cress to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Cress",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71626135c4ffa8d563820c63ca1c75b3963c55af830ab3f364f60ca9796c50cc",
+    "lineage_hash": "24e76cac239d206a7ea6d44268f45bdabf6d74fc776a01e0d8367a531c2b05d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-yoghurt-dessert-recipe-with-berries",
+    "fetchedAt": "2026-08-03T13:01:19.648Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-yoghurt-dessert-recipe-with-berries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

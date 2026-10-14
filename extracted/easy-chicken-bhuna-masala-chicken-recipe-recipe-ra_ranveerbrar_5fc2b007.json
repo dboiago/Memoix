@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Chicken Bhuna Masala (तीखा मसालेदार चिकन भुना मसाला)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, add chicken, salt to taste, ghee, degi red chilli powder, turmeric powder, coriander powder, ginger garlic paste, lemon juice and marinate well.",
+      "Keep aside for further use.",
+      "In a non-stick pan, add coriander seeds, black peppercorns, cloves, big cardamom, green cardamom, shahi jeera.",
+      "Dry roast on low flame until the spices turn aromatic.",
+      "Transfer it into a grinder jar and grind it into a fine powder. Keep it aside for further use.",
+      "Heat oil in a deep bottom pan, add ghee once it's hot, add bay leaf, black peppercorns, cloves, onions and saute on medium flame until it's light brown in color.",
+      "Add little water, seared chicken and cook on medium flame for 4-5minutes.",
+      "Add curd, prepared masala, coriander leaves and mix everything well.",
+      "Once the chicken is nicely cooked, serve hot with roti.",
+      "Garnished it with coriander sprig, tomato wedges, green chilli.",
+      "Heat oil in a deep bottom pan, add ghee once it's hot.",
+      "Add marinated chicken and seared it from all the sides properly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "curry cut",
+        "amount": "800",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Shahi Jeera",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Seared Chicken (bhuna)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Bhuna Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Seared Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Seared Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Seared Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "wedges",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b5394e5022c4cf9abaa934cf844e02e00d746e47197e61d6c2c6e572f1ecc8f",
+    "lineage_hash": "8bd45cd6f64c3ed7a876a97fd1783c6d8b21d872899e86dac1043815467b9a56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-bhuna-masala/",
+    "fetchedAt": "2026-08-02T14:32:48.002Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-bhuna-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

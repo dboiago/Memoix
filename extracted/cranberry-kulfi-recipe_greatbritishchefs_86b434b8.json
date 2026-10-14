@@ -1,0 +1,290 @@
+{
+  "recipe": {
+    "name": "Cranberry Kulfi",
+    "time": "4 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the caramelised nut ‘chikki’ heat the oven to 180°C/Gas mark 4. Spread the nuts on a tray and roast until lightly browned. Check them every minute. Crush or finely chop",
+      "Melt the sugar in a heavy pan, raise the heat and cook, without stirring, until it turns into a golden caramel. Add the butter and immediately add the nuts",
+      "Quickly stir the mixture, so the nuts are coated in the caramel, then pour into a baking tray lined with baking parchment. Spread evenly to form a layer about 5mm thick. Leave to cool and harden",
+      "For the silky chocolate délice heat the milk until almost boiling, pour onto the white chocolate and stir until melted",
+      "Melt the dark chocolate in a bowl set over simmering water. Melt the butter. Whisk the egg yolk and melted butter together in a large bowl. Pour in the melted dark chocolate and whisk well",
+      "Whip the cream with the caster sugar. Gently fold the whipped cream into the chocolate mixture",
+      "Put the nuts into a baking tray. Pour the mixture over the caramelised nuts and spoon the white chocolate and milk mixture unevenly over the top",
+      "It will spread into the dark chocolate mixture on its own. Leave in the fridge for about 3 hours, until set",
+      "For the orange mousse cover the gelatine leaf with cold water, leave for 5 minutes until soft and pliable",
+      "Put the egg yolk, 25g sugar and the milk in a bowl set over a pan of simmering water, making sure the water does not touch the base of the bowl",
+      "Whisk until the mixture thickens to a custard-like consistency. Remove from the heat. Squeeze any excess water from the gelatine and stir it in. Add the orange purée and orange liqueur, if using",
+      "Whisk everything together and pass through a fine sieve. Whip the cream and fold it in. Pour the mixture onto the chocolate delice, and chill for a couple of hours, until firm",
+      "For the whisky truffle, put the cream into a heavy-based pan and bring to the boil. Cool. Melt the chocolate in a bowl set over simmering water",
+      "Stir it into the cream with and whisky. Cool and then chill",
+      "Divide into 25 and shape into balls. Roll them in the unsweetened cocoa powder",
+      "For the cranberry kulfi bring the cranberries to a boil with 1 tbsp of the sugar and 70ml water",
+      "Simmer for a couple of minutes until soft Remove from the heat and purée. Pass through a fine sieve and set aside",
+      "Pour the milk and double cream into a heavy-based pan, add the cardamom pods and bring to the boil",
+      "Reduce the heat and simmer, stirring constantly to prevent sticking, until the mixture has reduced to a third of its original volume",
+      "Stir in the remaining sugar; discard the whole cardamom. Cool and then chill",
+      "Whip the cream. Fold the cranberry purée and whipped cream into the milk base. Pour into the kulfi moulds. Freeze until firm",
+      "To plate carefully remove the set delice and mousse mix from the baking tray",
+      "Place on the edge of a plate, and balance a whisky truffle on top",
+      "Gently loosen the kulfi from the moulds, and turn out three onto a plate next to the delice. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broken Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "warmed",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Purée",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped to soft peaks",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab9277527858a3bd295bd09fc07e58b649bd32b9072055b87597ac65a2b8791f",
+    "lineage_hash": "e3fde3e13ebdf36945b4985738f2bc45118b93d655e028c52316f97e8fa89912"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/whisky-truffle-recipe",
+    "fetchedAt": "2026-08-03T21:56:12.588Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/whisky-truffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

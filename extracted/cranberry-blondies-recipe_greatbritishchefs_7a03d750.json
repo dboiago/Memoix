@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Cranberry blondies",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roughly chop the chocolate and butter and add to a heatproof bowl",
+      "Line a baking tray with parchment paper. Preheat the oven to 200°C/gas mark 6",
+      "Slowly melt the chocolate and butter in the bowl over a pan of gently simmering water, making sure the mixture does not burn",
+      "Meanwhile, sift the flour and baking powder into a separate bowl and mix in the sugar",
+      "Remove the bowl of melted chocolate and butter from the pan. Stir well using a spatula, then pour into the bowl of dry ingredients. Continue stirring until the mix is smooth and shiny with no lumps",
+      "In a separate bowl, lightly whisk the eggs then add to the chocolate mixture along with the cranberries, mix well until combined",
+      "Pour the mixture into the lined tray and bake for 20-25 minutes. The edges will be set but the centre should still be slightly soft",
+      "Remove the blondie from the oven and allow to cool in the tray for an hour or so before cutting into 25 rectangles and serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1b182a6f69a68b68e31b5dae90b08b7a6c882ce8fa1d128fa178c35b25d1a17",
+    "lineage_hash": "6de2c8fbc78c9f55f6d01a929752037b3d27317d476a97c5946f5be44b3c5afa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranberry-blondies-recipe",
+    "fetchedAt": "2026-08-03T19:31:02.095Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranberry-blondies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Classic Shortbread Cookies",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "133",
+      "carbohydrateContent": "15",
+      "fatContent": "8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine 8 oz unsalted butter, 5 oz granulated sugar and 1/4 teaspoon table salt in a mixer bowl and mix on medium speed until softened and well-combined. You don't want to aerate, just mix the ingredients. Scrape the bowl and beater.",
+      "Add 10 oz all purpose flour and mix until combined. The dough will look crumbly at this point. Dump the dough onto a lightly floured surface and knead to bring it together. Form the dough into a  small square or disc.",
+      "To make shortbread \"fingers\": On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 8”x12” rectangle. Use the straight edge of a ruler or a bench scraper to square off the edges. Use a long knife to cut the dough into 1\" pieces along the 8\" side and 3\" pieces along the 12\" side. Don't separate the cookies after cutting. Poke each cookie with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+      "To make petticoat shortbread: On a sheet of parchment paper pat the dough to a small disc. Lightly flour the top of the dough and roll to a 12\" round. Use your fingers or a fork to crimp the edges of the round. Use a long knife to score the round into 12 or 16 wedges, do not slice all the way through the dough. Poke each wedge with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+      "Remove the pan from the refrigerator and sprinkle the dough generously with granulated sugar.",
+      "Bake the cookies until the dough is set all the way to the center, about 20 minutes. If you're oven bakes unevenly, rotate the tray halfway through baking. Allow to cool completely then use a long knife to cut along the scored lines to separate the cookies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup + 2 tablespoons",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42c277d1ee1dc597bab106b361f265fff4a9108687321cf1c0fdccfb7ec194b3",
+    "lineage_hash": "a23f4f021145f4e621e6308d3f14389cb2a41349794a11b6f910d0955fe53ffb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/10/20/shortbread-cookies/",
+    "fetchedAt": "2026-08-02T04:54:34.473Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/10/20/shortbread-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

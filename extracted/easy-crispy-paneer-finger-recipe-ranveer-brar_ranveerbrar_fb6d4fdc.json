@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Crispy Paneer Finger (क्रिस्पी पनीर फिंगर)",
+    "time": "18-20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add refined flour, corn flour, italian seasoning, degi red chilli powder, black pepper powder, garlic powder, salt to taste.",
+      "Add some water to make a batter just enough to coat the paneer pieces well.",
+      "Dip paneer fingers in batter and then roll in breadcrumbs.Repeat this until paneer fingers are double breaded.",
+      "Repeat this step for the rest of the paneer pieces.",
+      "When oil is hot enough ,deep fry paneer fingers until golden brown on both sides.Remove & drain on a paper towel.",
+      "Serve crispy & crunchy paneer fingers with tomato ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "928a65bfe0fd9b16fb0520187c76968ce768a771c692e3ae31d2685fdd74f1e6",
+    "lineage_hash": "ae0b9ae6e20cf79bedc68878f6bd8170eb4c5b52a1e6187c40e98cefa8897f54"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-paneer-finger/",
+    "fetchedAt": "2026-08-02T15:09:41.252Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-paneer-finger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

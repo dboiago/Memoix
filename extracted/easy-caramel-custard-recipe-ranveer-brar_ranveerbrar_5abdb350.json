@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Caramel Custard",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven to 175Â° Celsius.",
+      "Heat 1/2 cup sugar in heavy bottom pan medium over low heat until sugar is melted and golden brown. Divide sugar syrup among 4 moulds. Allow syrup to harden in cups about 10 minutes.",
+      "Mix eggs, sugar, vanilla essence and salt in medium bowl. Gradually stir in warm milk. Sprinkle with nutmeg and mix well.",
+      "Strain this mixture using a sieve. Fill the mould Â¾, with the mixture.",
+      "Place the filled mould in rectangular pan, on oven rack. Pour very hot water into pan till the moulds are half immersed in it.",
+      "Bake about 45 minutes or until knife inserted halfway between center and edge comes out clean.",
+      "Remove cups from water. Cool 30 minutes.",
+      "To de-mould, carefully loosen side of custard with knife or small spatula. Place a plate on top of mould and, holding tightly, turn dish and cup upside down.",
+      "Shake cup gently to loosen custard. Caramel syrup will run down sides of custard, forming a sauce.",
+      "Garnish with mint sprig and serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "slightly beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "very warm",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7402c9a18c61cd80ca68ea2efc6fe5543c64f3f9dad2e6b8584bc8a8ff3ca84",
+    "lineage_hash": "97f04d4b0585cee3266fe2e8b6d334e6a9060e07559619036f90586a510bd96f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/caramel-custard/",
+    "fetchedAt": "2026-08-02T10:52:51.884Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/caramel-custard/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

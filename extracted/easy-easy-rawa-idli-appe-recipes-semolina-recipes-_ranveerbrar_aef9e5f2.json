@@ -1,0 +1,306 @@
+{
+  "recipe": {
+    "name": "Rawa Idli & Appe",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add rawa, curd, water, salt and mix everything properly, keep aside for at least one hour.",
+      "Heat oil in a pan and add mustard oil, fennel seeds, curry leaves, green chillies, ginger and saute it for a minute and add it in the soaked rawa mixture and keep aside for further use.",
+      "In a bowl take 1 cup of the rawa mixture and add onion, coriander leaves, degi red chilli powder, and the mixture of baking soda and oil.",
+      "Mix everything properly and keep aside for 2-3 minutes.",
+      "On the other hand heat a panyaram mould and brush it with some ghee.",
+      "Now add 1 spoon-full of mixture in each section of the mould, cover and let it cook but not completely (the centre should be runny).",
+      "Remove the cover and flip it on to the other side using a satay stick or icecream stick, cook both sides until golden brown and crispy.",
+      "Remove and serve warm.",
+      "In a bowl add 1 cup of rawa mixture and add the mixture of baking soda and oil in it mix it properly.",
+      "Now grease the idli mould with ghee and add the mixture in but to not fill it completely.",
+      "Sprinkle some oats and boiled corn on it and put it in the hot steamer for 6-8 minutes.",
+      "Remove and serve warm.",
+      "In a pan heat oil and add chopped onions, broccoli, bell peppers, salt and saute for 2-3 minutes on high flames. Remove and keep aside",
+      "On a flat pan add a big spoon of rawa mixture and spread it evenly (not too thin, not too thick), and let it cook properly from one side.",
+      "Now flip it on to the other side and apply the tomato ketchup, then add the sauteed veggies, and the grated cheese, cover and cook on low heat until the cheese is melted.",
+      "Remove and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rawa",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Rawa Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Mustard Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10-12",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa Mixture",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Panyaram/ Appe",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "for brushing",
+        "amount": "1",
+        "section": "Other Ingredients for Panyaram",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa Mixture",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients for Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients for Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients for Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Sweet Corn",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients for Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "for greasing mould",
+        "amount": "1",
+        "section": "Other Ingredients for Rawa Idli",
+        "isOptional": false
+      },
+      {
+        "name": "Rawa Mixture",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Rawa Uttapam Pizza",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pizza Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Pizza Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "C",
+        "notes": "small florets",
+        "amount": "¼",
+        "section": "For Pizza Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Pizza Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Pizza Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup/sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients for Rawa Uttapam Pizza",
+        "isOptional": false
+      },
+      {
+        "name": "Sautéed Veggies",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients for Rawa Uttapam Pizza",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "Other Ingredients for Rawa Uttapam Pizza",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af1799ef057eb2283cd882194818e91c0ab633ac7ba1ba3847d0c9f2f0dcf516",
+    "lineage_hash": "b65c92a79e7471dd96b9f9bf9e9612a214c149ab58f635829afe741e1c4151e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/3-ka-tadka-rawa/",
+    "fetchedAt": "2026-08-01T21:02:25.267Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/3-ka-tadka-rawa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

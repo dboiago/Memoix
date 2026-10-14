@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Walnut Cookies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F) and line a baking sheet with a silicone baking mat or parchment paper.",
+      "In a medium mixing bowl, combine the flour, rolled millet, sugar, walnuts, chocolate, baking soda, and cinnamon.",
+      "Add the egg, oil, and yogurt, and stir them in until the dough comes together. It should be moist enough that you can shape cookies with it, but not so moist as to be gooey. Add a little yogurt or flour as needed to adjust the consistency.",
+      "Scoop out pieces of dough, about the size of a walnut, and shape into balls. Arrange on the prepared baking sheet, giving them a little room to expand. Flatten slightly with the back of a wet tablespoon, and sprinkle the tops with a little salt.",
+      "Bake for 15 minutes, until set. Transfer to a cooling rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Rice Flour",
+        "unit": "g",
+        "notes": "substitute wheat flour if preferred",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Millet",
+        "unit": "g",
+        "notes": "substitute other rolled grains, such as quinoa, spelt, or oats",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined Light Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": "g",
+        "notes": "chop them super finely if you're sharing with a young child, finely chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "substitute 2 tablespoons ground flax seed soaked in 2 tablespoons water to veganize",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "ml",
+        "notes": "substitute silken tofu or non-dairy milk to veganize",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flakes Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "965312747269659d024ef64790345f6a14f50381c9607878b1d8500a327a26c9",
+    "lineage_hash": "fd5574032cf74428bbff5fc11362e754773a8962087d8c50ed48f59342fa64e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chocolate-walnut-cookies-recipe/",
+    "fetchedAt": "2026-09-30T18:45:45.443Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chocolate-walnut-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

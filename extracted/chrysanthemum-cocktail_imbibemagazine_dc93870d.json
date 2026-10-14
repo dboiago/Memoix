@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients in a mixing glass with ice until chilled. Strain into a chilled glass and garnish.",
+      "Tip“I would also try this with blanc vermouth, as many of the recipes of this era like the Algonquin, El Presidente, and Blackthorn that call for dry vermouth taste better with blanc vermouth, in my opinion,” notes Meehan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec3b6b3395f0a60904129f2b7d73e5ad0edc9b60a69650a8ce1736390d9b8138",
+    "lineage_hash": "e9850b2388d378e41c5950f841907fb4149ee11a25e4855c6b1c9c165df51179"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chrysanthemum-cocktail/",
+    "fetchedAt": "2026-08-03T23:04:55.548Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chrysanthemum-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

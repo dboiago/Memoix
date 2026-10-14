@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Clam Stir Fry with Black Bean Sauce",
+    "time": "1 hr 12 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "207",
+      "carbohydrateContent": "7",
+      "fatContent": "16",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Add the clams into a pan or wok. Then add around 2 tablespoons of Shaoxing wine. Cover the lid the let it cook for 3 minutes until the shells are open."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clams",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into sections",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fee11b3e7d006cdf9f2a8a2f0a68300ded0d3304e5965ead4a427f5f9d313fbf",
+    "lineage_hash": "cb4a49a7739b42dab89a22be90b5bb128c1fad0b92593114991c74c77f10662b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/clam-stir-fry-with-black-bean-sauce/",
+    "fetchedAt": "2026-08-02T07:53:52.171Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/clam-stir-fry-with-black-bean-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

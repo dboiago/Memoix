@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "BLT Onigirazu",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "338",
+      "carbohydrateContent": "39",
+      "fatContent": "6",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "Cook the rice and the other ingredients and set aside",
+      "Toast the seaweed very lightly (be careful not to burn it) and place it on a sheet of cling wrap.",
+      "Evenly, and thinly spread half a bowl of cooked rice on top of the seaweed",
+      "Place the cooked egg on top of the rice.",
+      "Then place the cooked bacon on top.",
+      "Place the pieces of lettuce on top.",
+      "Place the rest of the rice on top of the other ingredients.",
+      "Fold two sides of the seaweed to the centre.",
+      "Fold the remaining two sides to close the sandwich",
+      "Leave it for while to make the seaweed sheets settle",
+      "Cut the rice sandwich in half and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Bowls Cooked Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets Nori Seaweed Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rindless Short Cut Bacon",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs Fried Into a Flat Sheet and Cut to Size",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16736911090f327a1f7ca8c56cb0be36393c229ae89b8085c79f0fa85c61b9ee",
+    "lineage_hash": "69420a2a221af28e7fc7a81b420c439c80f7c9657b78a3d13dcb594201d17162"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/blt-onigirazu/",
+    "fetchedAt": "2026-08-01T20:00:16.144Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/blt-onigirazu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

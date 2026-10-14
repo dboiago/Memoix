@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/2921/creole-gimlet",
+  "slug": "creole-gimlet-cocktail-recipe_diffordsguide_b1e06044",
+  "title": "Creole Gimlet Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T08:15:48.621Z",
+  "ldName": "Creole Gimlet",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Creole Gimlet"
+  ],
+  "ldIngredientsRaw": [
+    "75 ml Gin",
+    "15 ml Falernum liqueur",
+    "7.5 ml Lime cordial",
+    "1 dash Creole bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of lime zest twist.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Express lime zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "214 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

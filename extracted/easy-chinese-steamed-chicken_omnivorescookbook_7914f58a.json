@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chinese Steamed Chicken",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "195",
+      "carbohydrateContent": "3.3",
+      "fatContent": "12.3",
+      "proteinContent": "19.2"
+    },
+    "directions": [
+      "Add all the marinating ingredients in a large bowl. Mix thoroughly with your hands. Let marinate for a minimum of 30 minutes at room temperature, up to overnight in the fridge.",
+      "(Optional) If you will be using dried lily flowers and / or wood ear mushrooms, soak them while marinating the chicken. Once done, cut the mushrooms into small bite-size pieces. Dry both ingredients with paper towels (very important, otherwise it will dilute the sauce).",
+      "Prepare a plate that can fit into your steamer. Add the chicken onto the plate along with the marinating liquid, and arrange the soaked lily flowers and wood ear mushrooms with the chicken. Add the goji berries. Avoid overlapping the chicken if possible, because it will result in a longer cooking time and the chicken might not be cooked evenly.",
+      "Add 2” (5 cm) water to the steamer and place the plate of chicken onto the steamer rack. Cover and turn to medium-high heat. When the steam starts to come out of the steamer, set the timer for 8 minutes.",
+      "Once done, remove the cover and carefully check the chicken to make sure it’s fully cooked. Steam for a bit longer if needed. Turn off the heat. Carefully remove the plate from the steamer. Serve hot as an appetizer, or over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "about 12 oz / 350 g, *Footnote 1, cut to bite-size pieces",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil (vegetable Oil, or Sesame Oil)",
+        "unit": "tsp",
+        "notes": "*Footnote 2",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Lily Flowers",
+        "unit": "C",
+        "notes": "dried, soaked and drained",
+        "amount": "¼",
+        "section": "Topping options (*Footnote 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms",
+        "unit": "Tbsp",
+        "notes": "dried, soaked and drained",
+        "amount": "2",
+        "section": "Topping options (*Footnote 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Topping options (*Footnote 3)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": "Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94cb5c2b4533fbaab0b532dc714bf7d66c6e9b14d157adc415722a848c4d6a10",
+    "lineage_hash": "00975d52ce9f1e5234d7cbaac82fc246fd51048bd2dc3c4617393b040f97ea05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/steamed-chicken/",
+    "fetchedAt": "2026-08-02T10:22:44.564Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/steamed-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

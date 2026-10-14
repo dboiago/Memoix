@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Crispy Tofu",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "180",
+      "carbohydrateContent": "7",
+      "fatContent": "11",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Prep the tofu: If your tofu is very wet, gently press it with a clean towel to remove excess moisture. Cut into bite-sized cubes.",
+      "Season: Add the tofu to a bowl and toss with the soy sauce, oil, garlic powder, and black pepper. Sprinkle the cornstarch over the tofu and toss until evenly coated.",
+      "Choose your cooking method:Pan-Fried: Heat 1–2 tablespoons neutral oil in a large non-stick pan over medium-high heat. Add tofu in a single layer (don’t overcrowd). Cook for 8–12 minutes, flipping occasionally, until golden and crispy on all sides.Baked: Preheat oven to 425°F (220°C). Spread tofu on a parchment-lined baking sheet. Bake for 20–25 minutes, flipping halfway through, until crispy.Air Fryer: Preheat air fryer to 400°F (200°C). Lightly grease the basket if needed. Add tofu in a single layer. Air fry for 10–15 minutes, shaking halfway through."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (14-16 Oz) Extra-firm",
+        "unit": null,
+        "notes": "alt: firm tofu, cut into small cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil",
+        "unit": "Tbsp",
+        "notes": "such as canola or vegetable",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88b696bdb4e93606fa32218e8869d25a5336f6cce7983511a23ab572e9c4f1e0",
+    "lineage_hash": "f11848797e2a454cb803c94dba4f5a7c2757b53812bdca020bf95f24181f5b56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-tofu/",
+    "fetchedAt": "2026-08-02T10:08:45.934Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

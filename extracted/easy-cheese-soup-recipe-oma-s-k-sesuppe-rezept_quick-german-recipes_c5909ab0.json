@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Cheese Soup (Käsesuppe)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt 3 tablespoons butter over medium heat in frying pan. Add garlic.",
+      "Stir in flour.",
+      "Add chicken broth. Bring to boil, stirring continually. Simmer for 10 minutes, stirring occasionally.",
+      "Add cheese and cream. Season with salt, pepper, and nutmeg.",
+      "Simmer 10 minutes.",
+      "Meanwhile, brown onion slices in 1 tablespoon butter.",
+      "Serve soup, garnished with onion slices and chives."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "56 grams, divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "33 grams",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "960 milliliters",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gouda",
+        "unit": "lb",
+        "notes": "114 grams, grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "210 milliliters",
+        "amount": "⅞",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced, to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped, fresh, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6787785360c4737da7057b125c77b4c2c17f56d7ab2b481c1b966cad8569dcf7",
+    "lineage_hash": "77eadc5f87f5a341921369cd6b59c76545f0d921156b7804d62eca4e4bb233c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/easy-cheese-soup.html",
+    "fetchedAt": "2026-09-25T20:30:33.347Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/easy-cheese-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

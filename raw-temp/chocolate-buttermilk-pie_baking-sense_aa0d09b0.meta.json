@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2022/05/19/chocolate-buttermilk-pie/",
+  "slug": "chocolate-buttermilk-pie_baking-sense_aa0d09b0",
+  "title": "Chocolate Buttermilk Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T05:05:34.515Z",
+  "ldName": "Chocolate Buttermilk Pie Recipe",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "buttermilk, chocolate, pie",
+  "ldIngredientsRaw": [
+    "1/2 recipe Perfect Pie Crust",
+    "1 oz semi sweet chocolate (chopped)",
+    "1 oz unsalted butter",
+    "8 oz granulated sugar (1 cup)",
+    "1 1/2 oz cornstarch (1/4 cup)",
+    "1 oz dutch process cocoa powder (1/4 cup)",
+    "1/4 teaspoon table salt",
+    "2 each eggs (large)",
+    "2 each egg yolks (large)",
+    "2 teaspoons vanilla extract",
+    "16 oz buttermilk (2 cups, preferably full fat)"
+  ],
+  "ldInstructionsRaw": [
+    "Roll 1/2 recipe&#32;Perfect Pie Crust and line a 9&quot; pie plate. Save the dough trimmings. Chill the dough while you preheat the oven to 350°F.",
+    "Line the unbaked crust with foil and fill with beans, pie weights or granulated sugar. Bake on the bottom rack of the oven until the crust is light blond color and there&#39;s no raw dough on the bottom, about 20 minutes. When you remove the pie from the oven, place a sheet pan on the bottom rack to preheat.",
+    "Remove the foil with the pie weights. If any cracks or gaps have formed in the crust, use the dough trimming to fill in those gaps. This will prevent the custard from leaking out as the pie bakes.",
+    "In a small microwave proof bowl, melt 1 oz&#32;semi sweet chocolate with 1 oz&#32;unsalted butter. Set aside.",
+    "Whisk together 8 oz&#32;granulated sugar, 1 1/2 oz&#32;cornstarch, 1 oz&#32;dutch process cocoa powder and 1/4 teaspoon&#32;table salt. Add 2 each&#32;eggs and 2 each&#32;egg yolks and whisk until smooth. Whisk in 16 oz&#32;buttermilk and 2 teaspoons&#32;vanilla extract. Then whisk in the melted chocolate/butter.",
+    "Pour the custard into the crust. Bake on the preheated sheet pan until the custard is set, about 40 minutes.",
+    "Enjoy slightly warm, room temperature or chilled. Any leftovers should be refrigerated."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "8 g",
+    "calories": "280 kcal",
+    "carbohydrateContent": "46 g",
+    "proteinContent": "4 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "18 mg",
+    "sodiumContent": "186 mg",
+    "sugarContent": "33 g",
+    "transFatContent": "1 g",
+    "fiberContent": "2 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 recipe Perfect Pie Crust",
+    "1 oz semi sweet chocolate (chopped)",
+    "1 oz unsalted butter",
+    "8 oz granulated sugar (1 cup)",
+    "1 1/2 oz cornstarch (1/4 cup)",
+    "1 oz dutch process cocoa powder (1/4 cup)",
+    "1/4 teaspoon table salt",
+    "2 each eggs (large)",
+    "2 each egg yolks (large)",
+    "2 teaspoons vanilla extract",
+    "16 oz buttermilk (2 cups, preferably full fat)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Coconut Rice",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large wok, heat together the ghee and vegetable oil. Add the mustard seeds and once they begin to pop, add the dried red chillies and curry leaves. Stir until they become almost crisp",
+      "Add the urad dal, cashew nuts and asafoetida and continue stirring, making sure the dal and cashew nuts get nicely roasted and golden brown in colour, but do not burn – if they burn the whole dish will have a smoky flavour",
+      "Add the coconut and keep stirring on a medium heat until the wetness from the coconut disappears and it becomes fragrant and lightly toasted – it should turn reddish-brown in colour. This should take 7–8 minutes, you want the mix to be almost dry. Keep an eye on the coconut as it can burn quickly once toasted",
+      "Add the rice, breaking down the chunks carefully as you go. Once well-mixed, season with salt and remove from the heat",
+      "Transfer into a serving plate and serve hot with pickle and poppadoms"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "Tbsp",
+        "notes": "around 2 sprigs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": null,
+        "notes": "a generous sprinkle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "Tbsp",
+        "notes": "black lentils that are skinned and split",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7729a4256fdc88f70ccfac69113dbcd27fb2de373dd468703c9969ec9c58517d",
+    "lineage_hash": "e82089b2b456d45a0a255845803fffbee04491178896f0716e2df063c795e3af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-rice-recipe",
+    "fetchedAt": "2026-08-03T14:22:08.139Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-rice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

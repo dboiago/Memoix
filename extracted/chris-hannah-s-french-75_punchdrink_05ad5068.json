@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "French 75",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Tulip Champagne",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first three ingredients in a mixing tin and shake with ice.",
+      "Strain into a tulip Champagne glass.",
+      "Top with Champagne.",
+      "Garnish with a lemon peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1, sugar:water",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": "preferably Courvoisier VS",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brut Champagne",
+        "unit": "oz",
+        "notes": "preferably Moët & Chandon Impérial",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e1ce943b48abec0450e088d186935a0d4cf9806f4b5ddc91c93d404517bc743",
+    "lineage_hash": "6db26a15b399bcc7241c69ecd97623437ebd205da4abe3b37ef829165d7bc93a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/chris-hannahs-french-75/",
+    "fetchedAt": "2026-08-03T05:07:10.782Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/chris-hannahs-french-75/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

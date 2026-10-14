@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Aloo Tuk (आलू टुक)",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Parboil the potatoes in salted water and drain them and keep aside.",
+      "While the potatoes are hot press them in between your palms to flatten them.",
+      "Now heat oil in a frying pan and fry the potatoes till the skin becomes nice crispy and turns golden brown in colour.",
+      "Fry and remove on an absorbent paper to drain off the excess oil.",
+      "Now take a bowl and add in anardana powder, red chilli powder, chaat masala, salt and black pepper powder. Mix well.",
+      "Now add in the hot potatoes in the bowl and toss them well in the masalas.",
+      "Remove and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Potatoes",
+        "unit": "C",
+        "notes": "unpeeled, washed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anardana Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "717dbde2de2fbf148b62c0df643c4a315d800cebe71ff2baaf2791eb42d9f29a",
+    "lineage_hash": "7961deea48a70bab7b87648b47499db7089c929db818fce32075b681037f9782"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-tuk/",
+    "fetchedAt": "2026-08-02T05:53:23.824Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-tuk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

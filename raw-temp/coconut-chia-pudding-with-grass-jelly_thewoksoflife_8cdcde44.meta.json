@@ -1,0 +1,59 @@
+{
+  "url": "https://thewoksoflife.com/coconut-chia-pudding-grass-jelly/",
+  "slug": "coconut-chia-pudding-with-grass-jelly_thewoksoflife_8cdcde44",
+  "title": "Coconut Chia Pudding with Grass Jelly",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T18:39:31.683Z",
+  "ldName": "Coconut Chia Pudding with Grass Jelly",
+  "ldTime": "PT490M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Asian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "coconut chia pudding",
+  "ldIngredientsRaw": [
+    "13.5 ounces unsweetened full-fat coconut milk ((1 can))",
+    "3 tablespoons chia seeds",
+    "⅛ teaspoon ground cinnamon",
+    "½ teaspoon vanilla extract",
+    "1 pinch salt",
+    "2 tablespoons maple syrup ((or honey, to taste))",
+    "19 ounces grass jelly ((AKA herbal gelatin jelly; 1 can))",
+    "1 cup fresh fruit ((such as diced kiwi, cubed mango, and/or berries))"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium to large bowl, combine the coconut milk, chia seeds, ground cinnamon, vanilla extract, salt, and maple syrup. Mix well to make sure there are no clumps of chia seeds. Cover the bowl with an overturned plate and refrigerate overnight, or at least 8 hours. Also chill a can of grass jelly in the refrigerator at the same time (unless you’d rather have it at room temperature).",
+    "Right before serving, open the can of chilled grass jelly and dump the contents into a shallow bowl. Rinse the jelly until the water runs clear. Then, cut it into small cubes.",
+    "Spoon the chia pudding into bowls, and top with the cubed grass jelly and fruit. Add additional maple syrup or honey to taste if needed, and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1338 kcal",
+    "carbohydrateContent": "109 g",
+    "proteinContent": "16 g",
+    "fatContent": "102 g",
+    "saturatedFatContent": "82 g",
+    "transFatContent": "0.1 g",
+    "sodiumContent": "668 mg",
+    "fiberContent": "36 g",
+    "sugarContent": "64 g",
+    "unsaturatedFatContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 13.5 ounces unsweetened full-fat coconut milk (1 can)",
+    "▢ 3 tablespoons chia seeds",
+    "▢ ⅛ teaspoon ground cinnamon",
+    "▢ ½ teaspoon vanilla extract",
+    "▢ 1 pinch salt",
+    "▢ 2 tablespoons maple syrup (or honey, to taste)",
+    "▢ 19 ounces grass jelly (AKA herbal gelatin jelly; 1 can)",
+    "▢ 1 cup fresh fruit (such as diced kiwi, cubed mango, and/or berries)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2015/03/26/coconut-macaroon-easter-eggs/",
+  "slug": "coconut-macaroon-easter-eggs_baking-sense_d37d51c2",
+  "title": "Coconut Macaroon Easter Eggs",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T23:04:01.042Z",
+  "ldName": "Coconut Macaroon Recipe",
+  "ldTime": "PT80M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "24",
+    "24 cookies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "coconut, easter",
+  "ldIngredientsRaw": [
+    "3  egg whites",
+    "3 ounces granulated sugar (⅓ cup)",
+    "1/8 teaspoon table salt",
+    "1 teaspoon vanilla extract",
+    "14 ounces sweetened coconut flakes",
+    "3/4 cup passion fruit curd tinted with egg yellow coloring"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Line a 1/2 sheet pan with parchment paper or a silicone baking mat.",
+    "Whisk 3&#32;egg whites until soft peaks form, slowly add 3 ounces&#32;granulated sugar and whip to full peak. Add 1/8 teaspoon&#32;table salt and 1 teaspoon&#32;vanilla extract to the egg whites. Fold 14 ounces&#32;sweetened coconut flakes into the egg whites, making sure to break up any clumps.",
+    "Scoop the dough into egg size portions using a small cookie scoop or soup spoon. Gently form the cookie into an egg shape. Don't compact the dough too much. Moisten your hands with a little water if the dough is sticking.",
+    "Place the cookies on the prepared baking sheet. Bake for 10 minutes and then slide a second pan under the cookies to keep the bottoms from over-browning. Bake another 10 minutes until lightly golden brown and the cookies bounce back when you squeeze gently. Transfer the parchment with the cookies to a cooling rack.",
+    "Use a wooden skewer to poke a hole on one end of a cookie. Gently wiggle the skewer to open up a cavity in the cookie, being careful not to crack the cookie. Fill a pastry bag fitted with a small round tip (Bismark tip is the best) with 3/4 cup&#32;passion fruit curd tinted with egg yellow coloring. Fill each cookie."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 g",
+    "calories": "91 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "1 g",
+    "fatContent": "5 g",
+    "sodiumContent": "66 mg",
+    "sugarContent": "10 g",
+    "saturatedFatContent": "4 g",
+    "fiberContent": "2 g",
+    "unsaturatedFatContent": "0.24 g"
+  },
+  "htmlIngredientLines": [
+    "3 egg whites",
+    "3 ounces granulated sugar (⅓ cup)",
+    "1/8 teaspoon table salt",
+    "1 teaspoon vanilla extract",
+    "14 ounces sweetened coconut flakes",
+    "3/4 cup passion fruit curd tinted with egg yellow coloring"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

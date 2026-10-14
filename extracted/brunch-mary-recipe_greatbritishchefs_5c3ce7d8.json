@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Brunch Mary",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Slice"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the tomato juice and passata to a glass and mix to combine. Set aside",
+      "Add cubed ice to a glass, then pour over the horseradish vodka, lemon juice, Worcestershire sauce, celery salt, pepper distillate pepper sauce and tomato and passata mix",
+      "Stir to combine, garnish with a slice of lemon and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": "infused with fresh grated horseradish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drinks Factory Pepper Distilate",
+        "unit": "drops",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Sauce",
+        "unit": "drops",
+        "notes": "homemade",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "slice",
+        "notes": "for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66fc2d536137727cad57bb98e1a4661863e45c510f6838b5dcc2695c4cfcda43",
+    "lineage_hash": "52aff2a835ef3ebead8b4d85b37c3ba9d26df1195fbdf964e5ee992cee7610db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brunch-mary-recipe",
+    "fetchedAt": "2026-08-03T13:05:51.191Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brunch-mary-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

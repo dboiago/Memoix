@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Apparent Cocktail Variation",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, then strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": "Tongue-Cut Sparrow uses Tanqueray",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mattei Cap Corse Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4832c6193fcc876ac147bcfef1645713d5d67827a4af191730204ce182697f1",
+    "lineage_hash": "10401b2eed1196e4b8b421208e2cb108fdf7144820e71e2c08d45dbff8cfdec1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apparent-cocktail-variation/",
+    "fetchedAt": "2026-08-03T19:52:49.266Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apparent-cocktail-variation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

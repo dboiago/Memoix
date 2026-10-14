@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Crispy Sweetbreads with Beetroot Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the day before serving by making the beetroot soil. Mix together the beetroot juice and milk powder in a pank, place over a medium heat and bring up to 110°C",
+      "Spread the thickened mixture out over a silicone baking mat in an even layer and place in a dehydrator set to 65°C. Leave overnight to dry out completely",
+      "The next day, break up the dried sheet into pieces then roughly crush to make a crumble. Store in a container until ready to serve",
+      "The beetroot ice cream will also need to be made ahead to allow for freezing. Place the peeled beetroot in a pan and cover with cold water. Place over a medium heat, bring to the boil then simmer for 20 minutes",
+      "Drain the cooked beetroot then leave to cool slightly. While cooling, place the unpeeled garlic and chilli in a pan with the olive oil and sauté over a medium heat to infuse",
+      "When cool enough to handle, roughly chop the beetroot and add to the pan, discarding the garlic and chilli at this point. Cook for 10 minutes, stirring occasionally, then add the beetroot juice",
+      "Continue to cook for another 5–10 minutes or until the liquid has reduced to a syrup consistency. Transfer to a blender, blitz to form a smooth purée then season with a little salt to taste",
+      "Pour the purée into an ice cream machine and churn as per the manufacturer's instructions. Reserve in the freezer until ready to serve",
+      "About an hour before serving, bring a pan of salted water to the boil over a medium heat. Stir in the vinegar, add the sweetbreads and boil for 10 minutes. Drain and pat dry",
+      "When cool enough to handle, peel the membranes from the sweetbreads and seal in a vacuum bag using a bar sealer. Cook in the water bath for 15 minutes",
+      "Meanwhile, place the veal stock in a small pan over a medium heat. Reduce down for 5–10 minutes until it forms a thick glaze",
+      "Mix together the yoghurt, lemon juice and salt for the sauce and transfer to a piping bag",
+      "Remove the sweetbreads from the vacuum bag. Add the clarified butter to a frying pan and place over a medium–high heat. When foaming, add the sweetbreads and fry for a few minutes, turning over to brown on both sides",
+      "Remove the beetroot ice cream from the freezer and soften 2 spoonfuls in bowl, beating until almost melted. Spread the soft ice cream in a smear across each serving plate",
+      "Sprinkle with a little of the beetroot soil, add a spoonful of the reduced veal glaze and pipe on some of the yoghurt sauce. Divide the sweetbreads between the plates and garnish with a few shiso cress leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Veal Sweetbreads",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroots",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Cress Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4040be8a1e7039ea28ab75e40c41754195571899dec09037d2ded3d9bced15a3",
+    "lineage_hash": "04a5e743ccfb2f10c58f5aa21700a8af18de146d96a82038cb50f8e99a078924"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/crispy-sweetbreads-recipe-beetroot-ice-cream",
+    "fetchedAt": "2026-08-02T03:47:55.139Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/crispy-sweetbreads-recipe-beetroot-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

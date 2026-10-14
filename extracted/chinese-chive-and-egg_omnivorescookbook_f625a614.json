@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Chinese Chive and Egg (韭菜炒鸡蛋)",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "281",
+      "carbohydrateContent": "3.6",
+      "fatContent": "23.9",
+      "proteinContent": "14.6"
+    },
+    "directions": [
+      "Wash the Chinese chives thoroughly to remove any dirt. Then drain thoroughly. Cut and discard the tough ends, about 1” (2.5 cm). Cut the chives into 1/2” (1 cm) pieces.",
+      "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Add the chives. Cook and stir until the chives turn tender, 1 to 2 minutes. Transfer to a plate to cool slightly.",
+      "Beat the eggs in a large bowl with salt and white pepper. Add back the cooked chives. Mix well.",
+      "Heat the remaining oil in the same skillet over medium-high heat until hot. Pour in the egg and chive mixture. Scramble the eggs lightly. Cook until the eggs reach the desired texture - you can keep the eggs a bit tender and silky, or cook until the eggs are lightly browned on the outside for a crispy texture. Transfer to a plate and serve hot as a side or main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Chives",
+        "unit": "stalks",
+        "notes": "120 g",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db092a557e77f01c197409a63abba08b6795a47ba296bb23b62894d355c8771b",
+    "lineage_hash": "4085d36db660b5ceccaadaee959e2c772dfb1323865e4a08ec1d1ce9e83772c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-chive-and-egg/",
+    "fetchedAt": "2026-08-02T02:58:00.930Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-chive-and-egg/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Bran Muffins",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "215",
+      "carbohydrateContent": "40",
+      "fatContent": "6",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a muffin pan with paper liners or butter and flour the pan. (see note)",
+      "In a mixing bowl whisk together 7 ½ ounces whole wheat flour, 2 ounces wheat bran, 1 teaspoon baking powder, ½ teaspoon baking soda and ½ teaspoon table salt. Toss in 5 ounces raisins.",
+      "In a separate bowl whisk together 8 ounces whole milk, 6 ounces honey, 1 ¾ ounces vegetable oil and 2 large eggs. Grate 1 large apple with the large side of a grater and add the grated apple to the milk mixture.",
+      "Add the wet ingredients to the dry ingredients and mix just until combined. Scoop the batter into the muffin pan. Bake until the center of a muffin springs back when lightly pressed, about 15 minutes for standard size muffins."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Bran",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "1 cup, optional",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "large",
+        "notes": "1 cup, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0cfc5d2064489f26c9d4bde964bd348c1dd5b268a152ff89d777c645f68c2145",
+    "lineage_hash": "d86d4d67d326ce7d60207f3a992ccd176dd1b20dd53977e4a9318c615e949a9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/02/27/bran-muffins/",
+    "fetchedAt": "2026-08-02T04:17:52.830Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/02/27/bran-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

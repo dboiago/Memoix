@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Crayfish Cocktail",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put a large pan of water over a medium heat, add the salt and bring to the \t\t\tboil. Cook the crayfish in batches for 4 minutes per batch. Set aside to drain \t\t\tin a colander until cool enough to peel",
+      "Prepare the mayonnaise by putting the egg yolk and mustard in a bowl or food processor. Add a drop of oil and whisk to combine completely. Gradually add the rest of the oil a few drops at a time, whisking continuously and then in a slow trickle until the mayonnaise thickens. Whisk in the juice of 1 lemon and season to taste",
+      "Place 140ml of the mayonnaise in a bowl (the rest will keep, covered in the fridge for up to a week). Add the tomato ketchup and a few drops of Tabasco, Worcestershire sauce and brandy to taste. Add the chopped dill, stir to combine and check the seasoning",
+      "When ready to serve, place the sliced fennel, chicory leaves and baby gem quarters into a bowl, drizzle with a little extra virgin olive oil and a little of the remaining lemon juice",
+      "Arrange 3 leaves of chicory on each plate along with 3 wedges of lettuce. Drizzle over some cocktail sauce and add some of the sliced fennel and diced avocado. Divide the crayfish between the four plates, drizzle over a little more of the sauce and garnish with chives or chive flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Live Crayfish",
+        "unit": "kg",
+        "notes": "or 200g of cooked fresh crayfish tails",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": "finely sliced, reserving any fronds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuces",
+        "unit": null,
+        "notes": "each cut into 6 wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chicory",
+        "unit": null,
+        "notes": "trimmed and separated into leaves",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "peeled, stoned, diced and drizzled with a little lemon juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chive Flowers",
+        "unit": null,
+        "notes": "or chives, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "cut into wedges, to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "980b1bbef72bef60e821f22a319057080862b97a65751bfd78c7c6f4e32b0fbf",
+    "lineage_hash": "93531e6b555979df16a44faa0288cc7f561da1349bc29c8f76fd0a41ea1cca0e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crayfish-cocktail-recipe",
+    "fetchedAt": "2026-08-03T10:52:52.777Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crayfish-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

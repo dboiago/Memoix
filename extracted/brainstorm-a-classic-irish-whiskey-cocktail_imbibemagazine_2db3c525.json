@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Brainstorm",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass. Twist an orange peel over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f36b3cb40286ea6c7db77f8d128c1bec24c6a012584fa5c989fe5bfc07024c35",
+    "lineage_hash": "c1537bbaed731e4f214a282224356fa217dadfa76f0532201425cbdd05e3ae64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brainstorm-irish-whiskey-cocktail/",
+    "fetchedAt": "2026-08-04T00:35:03.951Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brainstorm-irish-whiskey-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "El Presidente Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients with ice to chill, strain into a chilled glass and Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curaçao",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90c8146195afdb0cd9c880b5b14217220e0346a8114e855aa5557ad417192d3d",
+    "lineage_hash": "d7ac0f46e3dc417268934c21a848919fcfba4dd77d04aaaa1cc505ad0a847471"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/el-presidente-cocktail/",
+    "fetchedAt": "2026-08-03T17:59:52.197Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/el-presidente-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

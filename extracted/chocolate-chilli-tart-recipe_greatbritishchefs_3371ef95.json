@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Chocolate & Chilli Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the pastry. Sift the flour and icing sugar into a mixing bowl, then stir in the ground almonds. Add the butter and rub together using your hands until the mixture resembles breadcrumbs",
+      "Add the egg and mix together, handling as little as possible, until just combined into a dough. Wrap in cling film and rest in the fridge for 1 hour",
+      "To begin the filling, heat the double cream and milk to the boil, then add the chilli flakes. Remove from the heat and leave to infuse for 1 hour",
+      "Preheat the oven to 190°C/gas mark 5 and lightly grease the tart tin. Roll out the pastry to a 3mm thickness and use to line the tin, pushing it gently into the edges. Line with greaseproof paper and add baking beads",
+      "Blind-bake until the pastry is lightly golden, which should take about 10–15 minutes. Remove the baking beans and return to the oven for another 10–15 minutes until the pastry is golden brown",
+      "After removing the pastry from the oven, use a pastry brush to glaze the pastry with the egg yolk and return to the oven for 1 minute before setting aside to cool. This will seal the case for the chocolate mixture",
+      "Reduce the oven temperature to 150°C/gas mark 2 and place the chocolate in a medium-sized mixing bowl. Pass the infused chilli cream through a sieve into a clean pan and bring to the boil",
+      "Once boiled, pour the hot cream over the chocolate and stir until the chocolate has fully melted. Gradually add the beaten eggs and mix well",
+      "Pour the mixture into the prepared pastry case and carefully transfer to the oven. Bake until just set for approximately 15–20 minutes then remove and allow to cool at room temperature",
+      "To serve, sprinkle the tart with lime zest, cut with a hot knife and plate with a generous dollop of crème fraîche"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus more for greasing",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "beaten for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dollops of Crème Fraîche",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1245b25a2203033c41465a4ce5b2a501662c204d659b2230d6ac38f568f9517",
+    "lineage_hash": "04e4bb4f9d333dfd00089e785da53d1d78ddddc426620021e5035e43457b0999"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe-chilli-creme-fraiche",
+    "fetchedAt": "2026-08-03T19:31:59.380Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe-chilli-creme-fraiche",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

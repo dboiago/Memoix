@@ -1,0 +1,42 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/2361/cuban-heal",
+  "slug": "cuban-heal-cocktail-recipe_diffordsguide_8beb184d",
+  "title": "Cuban Heal Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T05:06:56.791Z",
+  "ldName": "Cuban Heal",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Cuban Heal"
+  ],
+  "ldIngredientsRaw": [
+    "75 ml Light white rum",
+    "7.5 ml Cynar/carciofo amaro",
+    "7.5 ml Limoncello liqueur",
+    "7.5 ml Honey sugar syrup",
+    "2 dash Creole bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of lemon zest twist.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS lemon zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "196 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

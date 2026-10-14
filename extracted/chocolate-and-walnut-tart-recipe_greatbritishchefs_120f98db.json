@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Chocolate and Walnut Tart",
+    "time": "2 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the ice cream, put the crème fraîche and sugar in a curved-bottomed bowl and whisk together",
+      "Mix together the lemon juice and milk and whisk them into the crème fraîche",
+      "Using a traditional ice cream maker, churn the mixture immediately, and then put in the freezer until needed",
+      "To make the pastry, place the flour, sugar, ground almonds and butter in a large bowl. Use your fingertips to mix them together into a crumb consistency",
+      "Add 2 of the eggs and mix well, then cover and rest in the fridge for 30 minutes",
+      "Lightly dust a work surface with flour. Roll out the pastry until about 2mm thick and use it to line a 25cm loose-bottomed tart ring, letting any excess hang over the sides",
+      "Cover the pastry base with baking parchment and rice or baking beans. Bake blind for about 20 minutes or until the case is cooked through and lightly golden",
+      "Remove the rice or baking beans and the baking parchment",
+      "Mix the remaining egg and milk in a small bowl. Use a pastry brush to egg wash the tart, then return to the oven for a further 3 minutes. Remove from the oven and set aside",
+      "Reduce the oven temperature to 170°C/Gas mark 3. Heat the sugar, golden syrup and butter together in a pan until it begins to boil, then chop and add the dark chocolate, milk and eggs",
+      "Mix well before removing from the stove and passing the mixture through a sieve",
+      "Place the walnuts in the precooked tart case and pour over the chocolate mixture. Bake in the oven for 40 minutes. Leave to cool slightly before serving",
+      "Serve a slice of warm tart with a small mound of crumbled chocolate sablé biscuits alongside and top with a scoop of the crème fraîche ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sablé Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "986efedb2a1cb2fa5e84debe3cbbfc49b1bafd22c496e1784645f6c77e7fa0c1",
+    "lineage_hash": "05392ee87fd00ce3b8c7e69ca6262f47f199c48b78b2eb34d67ad10d233de70b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-walnut-tart-recipe",
+    "fetchedAt": "2026-08-03T20:52:15.540Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-walnut-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

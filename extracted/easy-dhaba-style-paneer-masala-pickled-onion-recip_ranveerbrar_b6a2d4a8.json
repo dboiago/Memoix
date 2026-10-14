@@ -1,0 +1,357 @@
+{
+  "recipe": {
+    "name": "Dhaba Style Paneer Masala & Pickled Onion",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add paneer, degi red chilli powder, turmeric powder, salt to taste and mix everything well.",
+      "Heat emami healthy and smart balanced oil in a kadai, onces its medium hot add paneer cubes and fry on medium flame until crisp.",
+      "Remove in an absorbent paper and keep it aside for future use.",
+      "In a motarpestel, add ginger, garlic cloves, green chilli, salt to taste and make a smooth paste out of it.",
+      "Once the oil is medium hot, add dry red chilli, cloves, black peppercorns, cumin seeds let it splutter.",
+      "Add onion and saute until translucent.",
+      "Add prepared ginger garlic paste and saute it well.",
+      "Add degi red chilli powder, turmeric powder, coriander powder and saute until the row smell goes away.",
+      "Add tomato puree and mix everything well.",
+      "Add salt to taste and cook for 5 minutes.",
+      "Now, add prepared paneer masala and fried paneer mix everything well.",
+      "Garnish it with coriander leaves and serve hot with sirka pyaz.",
+      "In a pan, add cumin seeds, coriander seeds, cloves, black peppercorns, black cardamom, green cardamom, cinnamon stick dry roast the spices.",
+      "Onces its cool down transfer it into a grinder and grind it into a fine powder,",
+      "Keep it aside for future use.",
+      "In a heavy bottom pan, add vinegar and give it a boil.",
+      "Add beetroot, bay leaf, salt to taste, sugar, shallots.",
+      "Add ginger and give it a boil.",
+      "Onces it's at room temperature, transfer it into a jar and use it later."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Size",
+        "unit": "medium",
+        "notes": "chopped Onion",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gms",
+        "unit": null,
+        "notes": "cubes Paneer",
+        "amount": "400",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Emami Smart Balance Oil",
+        "unit": "C",
+        "notes": "for frying",
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "broken",
+        "amount": "2",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Emami Smart Balance Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paneer Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Paneer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paneer Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Size",
+        "unit": "medium",
+        "notes": "small cube Beetroot",
+        "amount": "1",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "pelled",
+        "amount": "5-10",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "pelled",
+        "amount": "½",
+        "section": "For Sirka Pyaz",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22476865bfdd0d721c606adcd2336bbbe02ebdd43eca1aa17fe517cf51c4e7d2",
+    "lineage_hash": "7f47bc6d796fc4c4ade39d25957494c829c0548918bc4a675c3ec0c50864ca34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-paneer-masala-pickled-onion/",
+    "fetchedAt": "2026-08-02T16:00:40.011Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-paneer-masala-pickled-onion/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

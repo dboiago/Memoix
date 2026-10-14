@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Cash and Prizes",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients except tonic water in an ice-filled glass. Stir to chill, then top with tonic water. Twist the lemon peel over the drink to express the oils, and discard.",
+      "Note: Underberg bitters are sold in tiny 20ml bottles and are available at many grocery stores and specialty retailers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Rouge",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Underberg Bitters",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": null,
+        "notes": "chilled premium",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af340e48fe58634188a1fb3a782b654ca2c07f343ad4e8c4a2c7e06d0bff146f",
+    "lineage_hash": "90962cb247a868ef4edc37e2adefda5f4293f206967d66219b8b9461e9f5cdfb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cash-and-prizes-a-rye-highball/",
+    "fetchedAt": "2026-08-03T22:03:55.024Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cash-and-prizes-a-rye-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-almond-torte",
+  "slug": "chocolate-almond-torte_lacucinaitaliana_3f3a4751",
+  "title": "Chocolate Almond Torte",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-01T23:02:41.428Z",
+  "ldName": "Chocolate Almond Torte",
+  "ldTime": "PT90M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cioccolato,Torta Al Cioccolato,Torte,Torte",
+  "ldIngredientsRaw": [
+    "2/3LB. eggs",
+    "1/2LB. 50% dark chocolate",
+    "1/2LB. almond paste",
+    "3/4STICK butter, plus extra",
+    "1/4C. flour, plus extra",
+    "1 1/2TSP. baking powder",
+    "Powdered sugar"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2/3 LB. of eggs",
+    "1/2 LB. of 50% dark chocolate",
+    "1/2 LB. of almond paste",
+    "3/4 STICK of butter, plus extra",
+    "1/4 C. of flour, plus extra",
+    "1 1/2 TSP. of baking powder",
+    "Powdered sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

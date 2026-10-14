@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Coconut Macaroons",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "109",
+      "carbohydrateContent": "15",
+      "fatContent": "5",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a baking sheet with parchment paper.",
+      "Whisk 3 large egg whites until soft peaks form, slowly add 3 oz granulated sugar and whip to full peak. With the mixer running on low, add 1 teaspoon vanilla extract and ⅛ teaspoon table salt to the egg whites. Fold 14 oz sweetened coconut flakes into the egg whites, making sure to break up any clumps. Fold in 3 oz mini chocolate chips.",
+      "Scoop the dough into 1 ½\" balls using a small cookie scoop or spoon.",
+      "Bake for 10 minutes and then slide a second pan under the cookies to keep the bottoms from over-browning. Bake another 10 minutes until lightly golden brown and the cookies bounce back when you squeeze gently.",
+      "Transfer the parchment with the cookies to a cooling rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup plus 2 tablespoons",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Chips",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8711b941b301b3cf7edf5dc13dcc3b40ff48354d080d402f3598172cc804d53d",
+    "lineage_hash": "4242a10fdf4d797c4c42161637a7206e10a5fb5de44556d19243e07622cf8a81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/04/18/chocolate-chip-coconut-macaroons/",
+    "fetchedAt": "2026-08-01T23:00:28.071Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/04/18/chocolate-chip-coconut-macaroons/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Easy Chinese Meatballs",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, mix ground pork with around 1 tablespoon. Stir in one direction until the water is well absorbed by the ground pork.",
+      "Add chopped green onion, ginger, cornstarch and other seasonings. Keep stirring in one direction around 2 to 3 minutes until the mixture becomes very sticky. Reset for around 5 minutes. Then stir once again.",
+      "Take one portion out and shape to a ball. Pat several times between two hands.",
+      "Bring around half full water in a deep pot to a boiling, and then slide the meatballs in. Gently move them and use high fire to bring the water to a boiling again and straight after the boiling, slow the fire to medium fire so the balls will be not destroyed by over-strong fire.",
+      "In a small bowl, add all the seasoning and then scoop meatball stock and pour to the dipping sauce bowl to tune the seasonings.",
+      "Decorate with coriander and then serve with dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion Finely Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Can Be Replaced by One Large Egg White",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "alt: chicken stock for boiling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings for the pork mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Seasonings for the pork mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings for the pork mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings for the pork mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "Tbsp",
+        "notes": "alt: more as needed, finely, chopped",
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "alt: more as needed optional, finely, chopped",
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove Smashed",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Peppers Cut Into Small Circles",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Stock for Boiling the Meatballs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dip sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "212fcdbef087aad081ad2de2358657dab4e3e829c175736d440b6a9c47c9f129",
+    "lineage_hash": "9d3e1982ee373ba70b408a1bdf78038c07482165b14e673cc590adb1084ce53e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-chinese-meatballs/",
+    "fetchedAt": "2026-08-01T22:33:52.929Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-chinese-meatballs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

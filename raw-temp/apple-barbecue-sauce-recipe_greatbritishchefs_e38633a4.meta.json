@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/barbecue-sauce-recipe",
+  "slug": "apple-barbecue-sauce-recipe_greatbritishchefs_e38633a4",
+  "title": "Apple Barbecue Sauce Recipe",
+  "byline": "by Fabrizio Marino",
+  "fetchedAt": "2026-08-03T16:28:56.900Z",
+  "ldName": "Apple barbecue sauce",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 Braeburn apples, peeled and 2cm diced",
+    "2 large onions, finely diced",
+    "4 garlic cloves, finely chopped",
+    "1/2 tsp chilli flakes",
+    "100g of brown sugar, dark soft",
+    "4 tbsp of cider vinegar",
+    "100ml of soy sauce",
+    "300ml of tomato ketchup",
+    "150ml of chicken stock",
+    "50ml of extra virgin rapeseed oil"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the rapeseed oil in a thick bottomed saucepan and fry the onion and garlic until just softened with no colour",
+    "Add the apple and chilli and fry for a further minute. Stir in the sugar, soy sauce, chicken stock, vinegar and tomato ketchup",
+    "Simmer gently until the apples are softened. Transfer to a blender and blitz until smooth. Pass through a fine strainer. The sauce can be served warm or at room temperature and can be stored in the fridge for up to 4 days"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

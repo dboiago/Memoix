@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Deep Fried Ribs",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fire up. Prepare a grill for 2-zone indirect cooking. Add the oil to a heavy pot or cast-iron Dutch oven to a depth of approximately 2 inches. Put the pot on the hot side and bring the oil temp up to about 350°F/176.7°C. If it goes higher, dial down the gas or move the pot off of the flames onto the indirect side.",
+      "Prep. Cut the rack of ribs into individual rib bones.",
+      "Combine the flour and BBQ dry rub in a shallow bowl. In a separate bowl, combine the eggs and milk. In a third bowl, place the panko breadcrumbs.",
+      "Begin breading the individual ribs by first dipping each one in the seasoned flour. Shake off the excess flour then dip the rib into the egg and milk mixture. Finally, place the rib in the panko bowl, turning the ribs to ensure it is fully coated. Once breaded, place each rib on a baking rack or sheet pan until they are all coated.",
+      "Cook. With a spider, slotted spoon, or tongs, carefully slide 2-3 of the breaded ribs into the hot oil. Do not crowd the pot. Flip the ribs after 2-3 minutes and fry until the crust is golden brown, approximately 7-8 minutes total per batch. When they are done, lift the ribs out of the oil with tongs or a spider strainer. Place them on paper towels to drain.",
+      "Serve. Plate the deep fried ribs and serve with BBQ sauce for dipping."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack Pre-smoked Spare Ribs",
+        "unit": null,
+        "notes": "we use our Last Meal Ribs recipe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meathead's Memphis Dust",
+        "unit": "Tbsp",
+        "notes": "alternatively you can use our bottled commercial pork rub",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "BBQ Sauce Such As Meathead's Kansas City-style BBQ Sauce",
+        "unit": "C",
+        "notes": "alternatively you can use our bottled commercial KC BBQ sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fe9fd9e8ee545614eab607c4bb7e49804a541887688dbcac9d22827de967c92",
+    "lineage_hash": "0a3e89b22a27616372750ecd017140e3ab547f36d0f3805f914ee1ece463af7d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/deep-fried-ribs/",
+    "fetchedAt": "2026-08-01T19:25:02.055Z"
+  },
+  "rawSource": "https://amazingribs.com/deep-fried-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

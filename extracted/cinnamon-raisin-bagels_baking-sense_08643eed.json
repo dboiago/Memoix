@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Cinnamon Raisin Bagels",
+    "time": "13 hr 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "334",
+      "carbohydrateContent": "72",
+      "fatContent": "1",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Place 5 ounces raisins in a small bowl. Pour 16 ounces boiling water over the raisins and set the bowl aside until the raisins have plumped and the water is cooled to about 110F (slightly warmer than body temp). Drains the raisins and save the water. If the water is less than 16 ounces after draining the raisins add water to bring it back to 16 ounces.",
+      "In a bowl for a stand mixer or a large mixing bowl use the beater attachment to combine the water from the raisins with ¼ ounces instant yeast and 3 cups (15 oz) of the flour . Mix to form a thick batter. Switch to the dough hook.",
+      "Add 1 ½ ounces barley malt syrup, 1 tablespoon table salt and 2 teaspoons ground cinnamon. With the mixer running on low speed, add the remaining 2 cups (10 oz) flour and mix to combine. Increase the speed to medium high and knead 5 minutes. If working by hand, stir in as much of the flour as you can, then turn the dough out onto a lightly floured surface and knead in the remaining flour. Form the dough into a smooth ball.",
+      "Put the dough into a lightly oiled bowl, turning once to coat the dough. Cover the bowl and set aside to rise until doubled in size, about 1 hour.",
+      "Line a half sheet pan with parchment paper sprinkled with flour. Turn the dough out onto a lightly floured surface and pat to a rectangle. Sprinkle the plumped raisins over the dough then fold the dough to encase the raisins. Knead the raisins until evenly distributed. Divide the dough into 10 even pieces. Use a cupped hand to roll each piece of dough into a smooth, tight ball. If raisins pop out of the surface push them back into the dough.",
+      "To form a bagel, poke your finger all the way through the center of a ball to make a hole. Use two fingers to gently widen the hole. Continue gently stretching to form the bagel (see photos). The hole should be 1 - 1 ½\" wide.",
+      "Place the bagel on the prepared sheet pan and continue to form the remaining bagels. If any raisins pop out of the dough push them back in. Wrap the pan with plastic wrap then place the pan in the refrigerator overnight.",
+      "In the morning, take the pan out of the refrigerator. The bagels should be noticeably fuller. Leave the tray out until the bagels come to room temperature and finish rising, about 30 minutes to an hour. The time will vary based on the temperature in the room.",
+      "Meanwhile, preheat the oven to 450 °F. In a large pot combine 1 gallon of water with 2 ounces granulated sugar and 2 teaspoons baking soda and bring it to a boil. Reduce the heat to keep the water at a rolling simmer. Set a cooling rack over a clean sheet pan and place it next to the stove.",
+      "Gently lift a bagel off the sheet pan and lower it into the boiling water, bottom side down. Depending on the size of your pot, you can boil 3-4 bagels at a time. Boil the bagels for 30 seconds then flip them. Boil the other side for 30 seconds. Repeat the process again for a total of 2 minutes boiling time. Remove the boiled bagels from the water and set them on the cooling rack to drain.",
+      "Line two half-sheet pans with parchment paper or silicone baking mats. Place 5 of the boiled bagels on each sheet pan.",
+      "Brush the bagels with egg white and bake until golden brown, about 20 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "oz",
+        "notes": "2 ¼ teaspoons",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "5 cups, divided, see note",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barley Malt Syrup",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar (¼ Cup (for Boiling))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": "for boiling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "whisked lightly",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9490ac60e8d951809782fee0caa57a0a1a574126995bced485365f572b91d295",
+    "lineage_hash": "f3f9b2299e12dd72b83ea24518c5deb538aaa0fb7101f3a2d09da5e3e5dd273b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/01/30/cinnamon-raisin-bagels/",
+    "fetchedAt": "2026-08-02T07:17:35.242Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/01/30/cinnamon-raisin-bagels/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

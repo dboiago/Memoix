@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chinese Sweet and Sour Sauce",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat up vegetable oil in pan or wok; add garlic, green onions and ginger to stir-fry for around 2 minutes or until aroma with low fire.",
+      "Then pour the basic sauce to the wok, bring all the content to a boiling. And add water starch in. Keep on stirring in the process."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion White",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "1/2 cup of water",
+        "amount": "8",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt If Needed",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Basic sweet and sour sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Water starch",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Water starch",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e12d57316a95a2aa32d48d9c30df415ea6081670579c2a8e9dac8729d71d205c",
+    "lineage_hash": "71e8181c5bebf361d72198c0c681c6ad6d3d9d504f239a2a2d73b5a32f48a8fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-sweet-and-sour-sauce/",
+    "fetchedAt": "2026-08-01T19:18:44.682Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-sweet-and-sour-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-five-spice-roasted-chicken/",
+  "slug": "chinese-five-spice-roasted-chicken_chinasichuanfood_91b2ef29",
+  "title": "Chinese Five Spice Roasted Chicken",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:19:23.319Z",
+  "ldName": "Chinese Five Spice Roasted Chicken",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1  organic chicken (, 800g to 1000g)",
+    "1 tbsp. honey",
+    "1/4 tsp. salt",
+    "1 tbsp. light soy sauce",
+    "1 tsp. dark soy sauce",
+    "1 tsp. oyster sauce (, optional )",
+    "2  green onions (, cut into sections)",
+    "1 thumb ginger (, shredded )",
+    "1.5 tbsp. Chinese five spice powder"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the chicken from the breast and then flat the thicken. Add salt, light soy sauce, dark soy sauce oyster sauce, green onion, ginger and five spice powder.",
+    "Message the chicken and then wrap with plastic wrapper. Place in fridge and marinate overnight.",
+    "Remove the chicken from the fridge and rest in room temperature for 30 minutes. Heat oven to 180 degree C and then place the chicken to roast for 25 minutes. Mix the left sauce with 1 tablespoon of honey. Then brush the sauce over the chicken and then continue roast for another 10 minutes.",
+    "Cut into chunks and serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "573 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "48 g",
+    "fatContent": "39 g",
+    "saturatedFatContent": "11 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "188 mg",
+    "sodiumContent": "605 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 organic chicken , 800g to 1000g",
+    "1 tbsp. honey",
+    "[Marinating]",
+    "1/4 tsp. salt",
+    "1 tbsp. light soy sauce",
+    "1 tsp. dark soy sauce",
+    "1 tsp. oyster sauce , optional",
+    "2 green onions , cut into sections",
+    "1 thumb ginger , shredded",
+    "1.5 tbsp. Chinese five spice powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

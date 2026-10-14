@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Cherry Chocolate Torte",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C/gas mark 3. Grease and line the base of a 20cm loose-bottom tin",
+      "Melt the chocolate, butter and sugar in a saucepan and allow to cool slightly. Stir in the almonds, flour and egg yolks until evenly combined",
+      "Whisk the egg whites until stiff and gently fold them into the chocolate mixture until no visible egg white remains. Gently fold in half of the cherries, reserving some to sprinkle on top before baking",
+      "Pour the mixture into the tin, sprinkle over the remaining cherries and bake for 40–45 minutes until cooked through. Cool before removing from the tin",
+      "To make the Chantilly cream combine the cream, icing sugar and kirsch in the bowl of a stand mixer and whisk until it is smooth, light and fluffy",
+      "Serve the torte with a generous dollop of Chantilly cream and some fresh cherries on the side. The torte is best eaten within 24 hours as it becomes very moist due to the cherries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "pitted and halved",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70% cocoa",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b53338e442a8f6748157b937ba1edd502360a8ce36ad108f617d5f2de50bb8cb",
+    "lineage_hash": "3fc5074d9da69eac2112f2c13fcf194ad0f6c100a2f87ce3eb661b45785559c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-chocolate-torte-recipe",
+    "fetchedAt": "2026-08-03T09:43:31.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-chocolate-torte-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

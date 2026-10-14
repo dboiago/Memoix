@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Paneer Lababdar (Dhaba style Paneer)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, once it's hot, add onion, green chillies and cook for 2-3 minutes.",
+      "Add ginger garlic paste, tomato, curd, coriander powder, turmeric powder, degi red chilli powder, cumin powder and cook for another 4-5 minutes.",
+      "Add tomato puree, ginger and let it cook for a while until oil separates from the masala.",
+      "Add water, salt to taste, sugar, water and let it simmer for a while.",
+      "Add fresh cream, sauteed paneer & vegetables and allow to cook for another 4-5 minutes.",
+      "Transfer it into the serving dish and garnish it with fresh cream, crushed dry fenugreek leaves and coriander sprig.",
+      "Serve hot with roti or naan.",
+      "In a pan, add oil, once it's hot, add paneer and fry the paneer on all sides until light brown in colour.",
+      "Add onion, capsicum, tomatoes, degi red chilli powder, salt to taste, crushed dry fenugreek leaves, tender coriander stems and toss it on high flames for 2-3 minutes.",
+      "Turn off the flames and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "cut into cubes",
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "2-3",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¾",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "puree",
+        "amount": "2-3",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned",
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Fresh Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Paneer & Vegetables",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Paneer Lababdar",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into dices",
+        "amount": "800",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut into dices",
+        "amount": "1",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "large",
+        "notes": "cut into dices",
+        "amount": "1",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "cut into dices",
+        "amount": "2",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Sauteing Paneer & Vegetables",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6f54b68114661224e3c5e8e7541d2252e34ace89d3e780cc19cea7a20110a63",
+    "lineage_hash": "4aa4b9fa6ed728494d4f0f26ef9897a1bab2aea6703371fc982352581e67741b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/10-mins-%e0%a4%ae%e0%a5%87%e0%a4%82-paneer-lababdar/",
+    "fetchedAt": "2026-08-02T21:06:52.964Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/10-mins-%e0%a4%ae%e0%a5%87%e0%a4%82-paneer-lababdar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

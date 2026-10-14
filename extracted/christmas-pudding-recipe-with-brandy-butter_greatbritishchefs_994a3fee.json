@@ -1,0 +1,251 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding With Brandy Butter",
+    "time": "6 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the pudding mix, sift the flour into a bowl and combine with the breadcrumbs, suet, almonds, sugar and spices",
+      "Remove the stones from the dates, chop the flesh and combine with the remaining fruits. Add to the flour mixture and mix well",
+      "Whisk the eggs together and add to the pudding mixture with the rum, brandy, Guinness and golden syrup. Stir thoroughly to combine",
+      "Leave the mix in the fridge for 1 week to develop its flavour. During this time, taste the mixture occasionally - more spices or alcohol can be added if required",
+      "To cook the pudding, butter and flour a pudding basin, then fill it 3/4 of the way up the side with the mixture. Place a circle of parchment paper on top of the mixture, cover the basin with tin foil and seal tightly",
+      "Place in a steamer and steam the pudding for 4 hours. Once cooked, allow to cool and store tightly wrapped in the fridge or a cool place until required. To reheat the puddings, return to the steamer and steam for a further 2 hours",
+      "To prepare the brandy butter, add the butter to a large bowl and allow to soften. Once soft enough to beat, whisk the butter until light and creamy",
+      "Add the icing sugar and beat again until all of the sugar is mixed in, then whisk in the brandy, tasting to achieve the right balance of sweetness and alcohol. Store the butter in the fridge until required",
+      "Serve the reheated Christmas pudding with a good dollop of brandy butter or some cream. If desired, turn down the lights, splash some more brandy over the hot pudding and set it alight!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nibbed Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": "stones removed",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple",
+        "unit": null,
+        "notes": "peeled and grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guinness",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13a2ca289311a434e64bf82d5a4bc77b0d062531c2b0d656a6ff189f9048278b",
+    "lineage_hash": "8e100367eba444f87b6bf18ae5346f9e59c4479dd0c5b4b45653852773a3fbdf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-recipe-brandy-butter",
+    "fetchedAt": "2026-08-03T16:54:46.117Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-recipe-brandy-butter",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

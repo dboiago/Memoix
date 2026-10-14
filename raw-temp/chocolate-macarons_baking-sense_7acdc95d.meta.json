@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2021/11/18/chocolate-macarons/",
+  "slug": "chocolate-macarons_baking-sense_7acdc95d",
+  "title": "Chocolate Macarons",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:12:44.316Z",
+  "ldName": "Chocolate Macaron Recipe",
+  "ldTime": "PT133M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT13M",
+  "ldYield": [
+    "24",
+    "24 sandwich cookies"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, macaron",
+  "ldIngredientsRaw": [
+    "4 ½ oz almond Flour",
+    "1 ½ oz granulated sugar",
+    "5 ½ oz confectioner sugar",
+    "½ oz dutch process cocoa powder",
+    "⅛ teaspoon salt",
+    "3 each egg whites (aged, see note)",
+    "⅛ teaspoon cream of tartar",
+    "1 ½ oz confectioner sugar",
+    "1 teaspoon vanilla extract",
+    "8 oz milk chocolate ganache (1 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Use a biscuit cutter or glass to draw twenty-four 2&quot; circles on a 1/2 sheet of parchment paper. Line 2 baking sheets with parchment paper and put the paper with the circles underneath the parchment on one of the pans. This will be your piping guide.",
+    "Pulse 4 ½ oz&#32;almond Flour, 1 ½ oz&#32;granulated sugar, 5 ½ oz&#32;confectioner sugar, ½ oz&#32;dutch process cocoa powder, and ⅛ teaspoon&#32;salt in a food processor to combine. Move the mixture to a sieve and sift into a bowl and set aside.",
+    "Place 3 each&#32;egg whites and ⅛ teaspoon&#32;cream of tartar in a mixing bowl. Whip the whites to soft peak. With the mixer running add 1 ½ oz&#32;confectioner sugar and whip to full peak then whisk in 1 teaspoon&#32;vanilla extract.",
+    "With a spatula, gently fold the almond/cocoa mixture into the whites in two batches. Continue folding until it becomes soft and shiny, but not thin and runny. When you lift the spatula, the batter should leave a trail on the surface that slowly fades.",
+    "Scoop the batter into a pastry bag fitted with a round tip (or cut the tip of a disposable bag). Pipe the batter into discs that are 1/4&quot; from the edges of the circles you&#39;ve drawn. The cookies will continue to spread a little to fill in the circle. Set the pan aside to allow the cookies to dry for about 30 minutes. Meanwhile, preheat the oven to 300 °F.",
+    "Touch the top of a cookie to make sure it&#x27;s dry to the touch, it can be a bit tacky but shouldn&#x27;t stick to your finger. Bake for 7 minutes then turn and flip the trays. Bake for another 7-8 until the shells are dry and the centers are soft. Usually, if the shells are baked they&#x27;ll release easily from the parchment paper. Be careful handling the shells, it&#x27;s very easy to crack the surface.",
+    "Scoop 8 oz&#32;milk chocolate ganache into a clean pastry bag fitted with a small plain tip or cut the tip of a disposable bag.",
+    "Pair up the cooled shells by size. Flip over half the shells and pipe a dollop of ganache. Sandwich the cookies gently, handling the cookies by the edges and not the tops.",
+    "The finished cookies should be refrigerated in a covered container for 1 day before serving. The cookies can also be frozen for several weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 each",
+    "calories": "71 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "1 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "13 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "10 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "4 ½ oz almond Flour",
+    "1 ½ oz granulated sugar",
+    "5 ½ oz confectioner sugar",
+    "½ oz dutch process cocoa powder",
+    "⅛ teaspoon salt",
+    "3 each egg whites (aged, see note)",
+    "⅛ teaspoon cream of tartar",
+    "1 ½ oz confectioner sugar",
+    "1 teaspoon vanilla extract",
+    "[Filling]",
+    "8 oz milk chocolate ganache (1 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,268 @@
+{
+  "recipe": {
+    "name": "Amritsari Chole (अमृतसरी छोले)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add soaked chickpeas in a deep bottomed pan along with enough water to boil the chickpeas.",
+      "Make a potli of tea leaves, dry red chillies, cinnamon stick, cardamom and bay leaves in a muslin cloth",
+      "Add this potli to the pan of boiling chickpeas.",
+      "Once cooked, discard the potli.",
+      "Reserve the boiled chickpea along with its stock.",
+      "In a kadhai, heat ghee and mustard oil on high flame.",
+      "Add black cardamom, whole red chilli, bay leaves and allow to splutter.",
+      "Add cumin seeds and let splutter. Add the ginger garlic to a mortar pestle and crush coarsely.",
+      "Add onions and cook till they turn brown.",
+      "Add turmeric powder, coriander powder and red chilli powder, saute for 2-3 minutes.",
+      "Add salt and mix well. Add tomatoes and cook till they turn soft and mushy.",
+      "Add green chillies and saute for a minute.",
+      "Now add the cooked chickpeas and cook along with the masala for 5-6 minutes.",
+      "Mix in garam masala powder and pomegranate seeds, mix well.",
+      "Use the reserved stock to adjust consistency and stir. Add in more water if required.",
+      "Cook on medium high flame until the gravy thickens.",
+      "Once cooked turn off the flame.",
+      "Garnish with ginger julienne, coriander leaves and serve hot along with kulcha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "C",
+        "notes": "soaked overnight /काबुली चने",
+        "amount": "1",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Tea Leaves",
+        "unit": "Tbsp",
+        "notes": "/चाय पत्ती",
+        "amount": "1",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried, /खड़ी लाल मिर्च",
+        "amount": "2",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": "/ दाल चीनी",
+        "amount": "1",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": "/मोटी इलायची",
+        "amount": "1",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "/तेज़ पत्ता",
+        "amount": "2",
+        "section": "For Choley",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "/ घी",
+        "amount": "3",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": "/ सरसो का तेल",
+        "amount": "2",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": "/ मोटी इलायची",
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Red Chilli",
+        "unit": null,
+        "notes": "/ खड़ी लाल मिर्च",
+        "amount": "2",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "/ तेज पत्ता",
+        "amount": "2",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "/ ज़ीरा",
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "crushed / अदरक",
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed / लहसुन",
+        "amount": "4-5",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped / प्याज़",
+        "amount": "2",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "3",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "Tbsp",
+        "notes": "coarsely ground / खुदी बेरी के बीज",
+        "amount": "1",
+        "section": "For Choley Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Julienne",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6887e60b44419b67a510e3f20eca93776b878f88163bf8767ac2313add3de51",
+    "lineage_hash": "9445b1bfa7af76727387d31c10e40046adcc33007b1bf2ff6015eb63b09c300d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/amritsari-choley/",
+    "fetchedAt": "2026-08-01T20:34:25.410Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/amritsari-choley/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Whisky Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Cucumber Ribbon"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spiral the cucumber ribbon around the glass. Add ice and all of the ingredients to the glass. Stir gently to combine. Garnish.",
+      "Cucumber SyrupIn a bowl, combine 1 cup of cane sugar and 4 1/2 oz. of English cucumber, very thinly sliced. Stir occasionally and let sit at room temperature until a syrup is formed. Pour through a fine-mess strainer into an airtight container. Will keep in the refrigerator for up to 2 weeks.",
+      "Cucumber RibbonCut the cucumber in half length-wise. Using a vegetable peeler, peel a thin slice of cucumber from top to bottom."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Japanese Whisky",
+        "unit": "oz",
+        "notes": "Joyce uses Suntory Toki",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumber",
+        "unit": "oz",
+        "notes": "very thinly sliced",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9bbbd558ae01cba80599f508b7fd6756cba1bf49b566dba3109318f4f6ea9ae2",
+    "lineage_hash": "e8fddcca43f97bd57f246f59fb69196b85709777d7ffee992c74a3428dafd3ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dusk-on-the-delta-whisky-highball/",
+    "fetchedAt": "2026-08-03T22:35:04.179Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dusk-on-the-delta-whisky-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

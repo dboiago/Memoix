@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2020/06/19/classic-black-forest-cake/",
+  "slug": "classic-black-forest-cake_baking-sense_fd792753",
+  "title": "Classic Black Forest Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T16:10:10.056Z",
+  "ldName": "Classic Black Forest Cake",
+  "ldTime": "PT150M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "german",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "cherry, chocolate, layer cake",
+  "ldIngredientsRaw": [
+    "24 oz fresh or frozen pitted sour cherries and their juice (see note)",
+    "4 oz Kirschwasser (½ cup)",
+    "1 ¼ oz corn starch (¼ cup)",
+    "8 oz granulated sugar (1 cup)",
+    "1 recipe  Chocolate Genoise (baked in two 8&quot;x3&quot; pans)",
+    "4 oz granulated sugar (½ cup)",
+    "2 tablespoons kirschwasser",
+    "16 oz heavy cream (2 cups)",
+    "1 oz confectioner's sugar (¼ cup)",
+    "1 ½ teaspoons vanilla extract",
+    "chocolate shavings (or mini chips for decoration)"
+  ],
+  "ldInstructionsRaw": [
+    "Prep the cherries",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "236 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "1 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "32 mg",
+    "sodiumContent": "9 mg",
+    "sugarContent": "28 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "3.5 g"
+  },
+  "htmlIngredientLines": [
+    "[Cherry Filling]",
+    "24 oz fresh or frozen pitted sour cherries and their juice (see note)",
+    "4 oz Kirschwasser (½ cup)",
+    "1 ¼ oz corn starch (¼ cup)",
+    "8 oz granulated sugar (1 cup)",
+    "[Assembly]",
+    "1 recipe  Chocolate Genoise (baked in two 8\"x3\" pans)",
+    "4 oz granulated sugar (½ cup)",
+    "2 tablespoons kirschwasser",
+    "16 oz heavy cream (2 cups)",
+    "1 oz confectioner’s sugar (¼ cup)",
+    "1 ½ teaspoons vanilla extract",
+    "chocolate shavings (or mini chips for decoration)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

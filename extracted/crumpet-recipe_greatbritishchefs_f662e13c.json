@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Crumpet",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the flour in a large bowl. Break up the yeast on top and rub into the flour using the flats of your hands – as if you were washing your hand",
+      "Add the milk and honey and mix together to form a thick batter",
+      "Cover with a baking cloth or large freezer bag and allow to rest for at least 30 minutes until the batter bubbles up",
+      "Warm the water, salt and vinegar in a small pan then remove from the heat, stir into the batter and mix gently. Leave to rest, covered as before, for a further 20–30 minutes",
+      "Cook the crumpets in batches. Grease the rings and coat the base of the pan well with vegetable oil. Put the rings into the pan and place over a low–medium heat – you want the oil in the pan to be hot, but not sizzling",
+      "Use a ladle to fill each ring to just below the rim; cook for 10–12 minutes until the crumpets are light golden underneath but still quite white on top",
+      "Leave to cool and then toast them before eating with butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for greasing the rings and the pan",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c22824a68dfc308973dfc24ae7062356a493e8098440b417ddf1602da3fec681",
+    "lineage_hash": "7d2dca4a83c020202c0852ed612eff38c77c3f8895e1474494a4d126a18b9dca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crumpet-recipe",
+    "fetchedAt": "2026-08-03T08:07:50.232Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crumpet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

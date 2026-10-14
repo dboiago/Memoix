@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Alaska Cocktail",
+    "time": "15 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the gin, Chartreuse, and orange bitters to a cocktail mixing glass. Fill two-thirds full with ice and stir briskly until well-chilled, about 15 seconds.",
+      "Strain into a chilled coupe glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": "preferably Old Tom gin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f405e83a67d3af7bb8fe5e77b433e56ea73946e5ecb4c84ec77691e4260f0d8",
+    "lineage_hash": "3868e634856901ed9ca4d3da3bbc85b30fbdfc4c4599d1aa0e3af8c9fed11954"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/the-alaska-cocktail-gin-chartreuse-drinking-french-recipe/",
+    "fetchedAt": "2026-08-02T20:16:20.678Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/the-alaska-cocktail-gin-chartreuse-drinking-french-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Amaro Spritz: Bollicine",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine both kinds of amari and bitters in a mixing glass with ice. Stir to chill, then strain into a wine glass over fresh ice. Top with sparkling wine"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosecco",
+        "unit": "oz",
+        "notes": "or other sparkling wine",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a03d0745c403008174ecec7bf63d429ecf9ea5005833eed58277fa84762a1a1",
+    "lineage_hash": "75058084c251177ba05db102b0528223dee8f7b17353c5982d1d2d78f2d7d87d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bollicine/",
+    "fetchedAt": "2026-08-03T18:18:03.461Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bollicine/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

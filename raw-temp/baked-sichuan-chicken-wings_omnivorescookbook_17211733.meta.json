@@ -1,0 +1,60 @@
+{
+  "url": "https://omnivorescookbook.com/szechuan-style-baked-chicken-wings-with-mushroom/",
+  "slug": "baked-sichuan-chicken-wings_omnivorescookbook_17211733",
+  "title": "Baked Sichuan Chicken Wings",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T18:53:42.824Z",
+  "ldName": "Baked Sichuan Chicken Wings",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "2 lbs (900 g) chicken wings",
+    "1 1/2 teaspoons salt",
+    "1 1/2 teaspoons freshly ground Sichuan peppercorns",
+    "1 teaspoon cumin powder",
+    "1 teaspoon chili flakes",
+    "1 teaspoon brown sugar",
+    "1 teaspoon garlic powder"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the spice mix ingredients in a small bowl and stir to mix well.",
+    "Pat dry chicken wings with a few layers of kitchen paper towel to remove any moisture on the surface. Place the chicken wings into a big bowl and pour the spice mix over them. Rub the spice mix into the wings thoroughly using your hands. Marinate for 15 minutes at room temperature, or up to overnight, covered with plastic wrap in the fridge.",
+    "Preheat the oven to 450°F (230°C). Line a tray with foil and a wire rack. (*Footnote 1)",
+    "Arrange the wings on the wire rack with at least a finger’s width in between, to properly let the steam off so the chicken will get crispy. Bake for 20 to 25 minutes, flipping once after 10 minutes. Cook until browned and crisp on the surface, and the juices run clear if using a paring knife to slice the thickest part of the drumstick.",
+    "Let cool slightly and serve hot as an appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "223 kcal",
+    "carbohydrateContent": "1.5 g",
+    "proteinContent": "33 g",
+    "fatContent": "8.5 g",
+    "saturatedFatContent": "2.3 g",
+    "cholesterolContent": "101 mg",
+    "sodiumContent": "390 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "0.9 g"
+  },
+  "htmlIngredientLines": [
+    "2 lbs (900 g) chicken wings",
+    "[Spice Mix]",
+    "1 1/2 teaspoons salt",
+    "1 1/2 teaspoons freshly ground Sichuan peppercorns",
+    "1 teaspoon cumin powder",
+    "1 teaspoon chili flakes",
+    "1 teaspoon brown sugar",
+    "1 teaspoon garlic powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

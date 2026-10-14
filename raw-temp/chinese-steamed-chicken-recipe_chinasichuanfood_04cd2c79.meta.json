@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-steamed-chicken-recipe/",
+  "slug": "chinese-steamed-chicken-recipe_chinasichuanfood_04cd2c79",
+  "title": "Chinese Steamed Chicken Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:32:31.352Z",
+  "ldName": "Chinese Steamed Chicken Recipe",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "chicken, steamed",
+  "ldIngredientsRaw": [
+    "Half of a whole chicken ( , around 1 and 1/2 pound)",
+    "1 tbsp. ginger shreds",
+    "1 tbsp. green onion shreds ( , white part)",
+    "1 tbsp. light soy sauce",
+    "1 tsp. Chinese cooking wine",
+    "1/2 tsp. salt",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. light soy sauce",
+    "4 tbsp. water",
+    "1  garlic clove",
+    "1 tbsp. chopped green onions",
+    "1 tbsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the chicken and then spread the marinating sauce evenly on both sides.",
+    "Lay ginger shreds and green onion shreds over to marinate at least 30 minutes. Then place in your steamer. I am using the steamer of my electric rice cooker. If you are using a steamer with wok or pot, steam with high fire around 20 minutes until soft (or you can easily insert a chop sticker in). Transfer out and cut into chunks of your favorite size. Decorate with green onions.",
+    "Dipping sauce"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "445 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "32 g",
+    "fatContent": "32 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "122 mg",
+    "sodiumContent": "1624 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "Half of a whole chicken  , around 1 and 1/2 pound",
+    "1 tbsp. ginger shreds",
+    "1 tbsp. green onion shreds  , white part",
+    "[Marinating sauce]",
+    "1 tbsp. light soy sauce",
+    "1 tsp. Chinese cooking wine",
+    "1/2 tsp. salt",
+    "[Dip sauce]",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. light soy sauce",
+    "4 tbsp. water",
+    "1 garlic clove",
+    "1 tbsp. chopped green onions",
+    "1 tbsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

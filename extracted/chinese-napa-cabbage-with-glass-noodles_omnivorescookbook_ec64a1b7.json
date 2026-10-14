@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Chinese Napa Cabbage with Glass Noodles",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "183",
+      "carbohydrateContent": "31.2",
+      "fatContent": "5.5",
+      "proteinContent": "3.5"
+    },
+    "directions": [
+      "Add the potato noodles into a big bowl and add hot water to cover. Let sit for 10 minutes, or until the noodles turn al dente. Drain the hot water, rinse the noodles with running tap water, drain again, and set aside.",
+      "To chop the napa cabbage, halve the head of napa cabbage, then cut it into quarters. Tilt your knife to split the quarters in half again. Then cut the napa cabbage into bite-size pieces (see the step-by-step photos in the blog post).",
+      "Mix the sauce ingredients together in a small bowl.",
+      "Heat the peanut oil in a large nonstick skillet over medium-high heat. Add the Sichuan peppercorns. Cook and stir until the Sichuan peppercorns turn dark, but are not burned. Remove the Sichuan peppercorns and discard them.",
+      "Add the green onions and ginger. Stir for 30 seconds to release the fragrance.",
+      "Add the napa cabbage. Let it cook, stirring occasionally, until it’s withered but not soft, 5 minutes or so.",
+      "Turn to medium heat. Pour the sauce over the skillet and stir to mix well.",
+      "Add the soaked noodles. Stir again. Cover the skillet and let it cook until the napa cabbage turns soft, 2 to 3 minutes.",
+      "Uncover the pan. Toss everything again. If there’s too much residual liquid, you can turn to medium-high heat again and cook for another 1 to 2 minutes, to thicken the sauce.",
+      "Transfer everything to a plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato Noodles",
+        "unit": "oz",
+        "notes": "100 g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": "lb",
+        "notes": "700 g, about 6 cups chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "or Chee Hou Sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1½",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c959fc645c3779712b59911fd40cfb4fdb0012d9884e750dbaf825834904a728",
+    "lineage_hash": "987805bbf7ec846c4fcb5135b8f1e47af9735d947b47169f295cd8b42665959e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-napa-cabbage-with-glass-noodles/",
+    "fetchedAt": "2026-08-01T22:36:35.001Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-napa-cabbage-with-glass-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

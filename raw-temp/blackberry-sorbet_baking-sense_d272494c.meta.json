@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2020/07/14/homemade-blackberry-sorbet/",
+  "slug": "blackberry-sorbet_baking-sense_d272494c",
+  "title": "Blackberry Sorbet",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:25:57.254Z",
+  "ldName": "Blackberry Sorbet",
+  "ldTime": "PT530M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "frozen dessert, fruit",
+  "ldIngredientsRaw": [
+    "16 oz blackberries (3 cups)",
+    "4 oz water (½ cup)",
+    "4 oz granulated sugar (½ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "If using frozen berries, they should be defrosted. Puree 16 oz&#32;blackberries with 4 oz&#32;water.",
+    "Strain the puree through a fine sieve to remove the seeds. You should have about 2 ¼ cups of puree.",
+    "Add 4 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt and stir until the sugar is melted. Taste the puree and add up to another ¼ cup of sugar if needed.",
+    "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+    "Run in your ice cream machine according to the manufacturer&#x27;s directions. (See Note)",
+    "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "53 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.01 g",
+    "sodiumContent": "25 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "11 g",
+    "unsaturatedFatContent": "0.12 g"
+  },
+  "htmlIngredientLines": [
+    "16 oz blackberries (3 cups)",
+    "4 oz water (½ cup)",
+    "4 oz granulated sugar (½ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

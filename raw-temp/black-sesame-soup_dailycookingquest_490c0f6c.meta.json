@@ -1,0 +1,43 @@
+{
+  "url": "https://dailycookingquest.com/black-sesame-soup.html",
+  "slug": "black-sesame-soup_dailycookingquest_490c0f6c",
+  "title": "黑芝麻糊 - Black Sesame Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:03:56.730Z",
+  "ldName": "黑芝麻糊 - Black Sesame Soup",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H5M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": [
+    "Chinese black sesame soup tong sui",
+    "Nuts and Seeds",
+    "Rice"
+  ],
+  "ldIngredientsRaw": [
+    "150 gram black sesame seeds, toasted",
+    "125 gram glutinous rice flour, toasted",
+    "100 gram rock sugar, or to taste (Note 1)",
+    "6 cups water"
+  ],
+  "ldInstructionsRaw": [
+    "Toast black sesame seeds: Place black sesame seeds in a frying pan over medium heat. Stir with a wooden spoon as needed and increase the stirring frequency near the end. You will know that the sesame seeds are ready when they start to pop. Immediately transfer the seeds to a cool plate/bowl. Properly toasted black sesame seeds have a fresh nutty fragrance, and they shatter easily when you press with your fingers.",
+    "Grind black sesame seeds: Wait until the sesame seeds are at least warm to touch. Transfer them into a food processor and pulverize into a fine powder.",
+    "Toast glutinous rice flour: Place glutinous rice flour in a frying pan over medium heat. Stir with a wooden spoon as needed and increase the stirring frequency near the end. Toast until the flour is lightly toasted with a light brown color.",
+    "Cook the soup: Boil the 6 cups of water in a pot. Stir in black sesame seeds powder, toasted glutinous rice flour, and rock sugar. Reduce the heat to a simmer. Use a whisk to stir until all the sugar melts and the soup is thick and smooth. For an even smoother soup, you can use an immersion blender or a regular blender to further puree the soup."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "150 gram black sesame seeds, toasted",
+    "125 gram glutinous rice flour, toasted",
+    "100 gram rock sugar, or to taste (Note 1)",
+    "6 cups water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

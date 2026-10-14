@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Branca Menta Mojito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Bouquet of Fresh Mint"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except the soda and shake with ice to chill. Strain into a Collins glass over fresh ice. Top with soda and garnish with a bouquet of fresh mint.\nBrown Sugar and Mint SyrupCombine 1 cup of brown sugar and 1 cup of water in a small saucepan over medium heat and stir until the sugar dissolves. Steep 8-10 mint leaves for 10 minutes in the syrup. Strain out the leaves, cool and bottle the syrup. Refrigerate for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Branca Menta",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Mint Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fever Tree Sparkling Lemon Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20291118aa8d455115d974b6ba3e3a6a39f967e04e107ac547fc03743c3a0a3d",
+    "lineage_hash": "662e597e7b88d76b3c8152526c64a73bfe43d03655ec4840dc7f5829a479f767"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/branca-menta-mojito/",
+    "fetchedAt": "2026-08-04T00:51:38.520Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/branca-menta-mojito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

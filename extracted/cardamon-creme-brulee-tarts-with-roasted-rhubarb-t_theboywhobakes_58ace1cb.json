@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Cardamon Creme Brulee Tarts with Roasted Rhubarb",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Scrape the seeds from the vanilla pod and place into a bowl along with the cardamon, egg yolks and sugar, whisking together.",
+      "Place the cream into a pan and bring to a simmer. Pour the cream onto the egg mixture and whisk to combine.",
+      "Place the bowl over a pan of gently simmering water and stir constantly with a whisk (don't whisk vigorously, just stir gently, regularly scraping the bottom of the bowl) for about 10-15 minutes or until the custard has thickened the mixture should be the texture of a thick pouring custard.",
+      "Remove the bowl from the pan and press a sheet of clingfilm onto the surface of the custard and refrigerate overnight.",
+      "Place the flour, sugar and salt into the bowl of a food processor and pulse to combine. Add the butter and pulse until the mixture resembles fine breadcrumbs.",
+      "Add the egg yolk to the processor and pulse to combine. Squeeze some of the mixture together and if it holds its shape it is ready but if it crumbles apart pulse in a little water, a teaspoon at time until the dough holds together (normally it takes about 1-2 tbsp to bring the pastry together).",
+      "Tip the dough out onto the work surface and bring together with your hands, forming into a short, fat sausage shape. Wrap the dough in clingfilm and refrigerate for at least an hour before using.",
+      "Preheat the oven to 180C (160C fan) and line a baking tray with parchment paper.",
+      "To form the tart shells remove the pastry from the fridge and cut into six discs. Roll each disc of pastry between parchment paper until about 2-3mm thick.",
+      "Gently drape the pastry into a 10cm loose bottomed fluted tartlet tin, pressing into the corners. Trim off the excess and place onto the baking tray. Repeat with the remaining pastry and refrigerate for an hour or until firm.",
+      "Line the tart shells with a piece of crumpled parchment paper and fill with baking beans or rice and bake in the preheated oven for 25 minutes. Remove the parchment and the baking beans and bake the tarts for a further 5-10 minutes or until golden brown. Set aside to cool.",
+      "Once the pastry has cooled remove the creme brûlée filling from the fridge and divide between the tart shells.",
+      "Top the tarts with a even layer of caster sugar and using a kitchen blowtorch caramelise the sugar.",
+      "Place the tarts into the fridge for about an hour before serving (any longer and the crisp layer of sugar will start to melt). Preheat the oven to 190C (180C fan).",
+      "Whilst the tarts are chilling roast the rhubarb as in this recipe [here](http://www.theboywhobakes.co.uk/recipes/2017/2/21/rhubarb-week-roasted-rhubarb).",
+      "To serve top each tart with a few pieces of the rhubarb, with a little of the syrup, and a sprinkling of pistachios."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buckwheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": "Buckwheat Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Buckwheat Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Buckwheat Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and chilled",
+        "amount": "125",
+        "section": "Buckwheat Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Buckwheat Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "or 1 tsp vanilla bean paste",
+        "amount": "½",
+        "section": "Cardamom Creme Brûlée",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cardamom Creme Brûlée",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Cardamom Creme Brûlée",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "Cardamom Creme Brûlée",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for brûlée topping",
+        "amount": "45",
+        "section": "Cardamom Creme Brûlée",
+        "isOptional": false
+      },
+      {
+        "name": "Batch Roasted Rhubarb",
+        "unit": null,
+        "notes": "([recipe here](http://www.theboywhobakes.co.uk/recipes/2017/2/21/rhubarb-week-roasted-rhubarb))",
+        "amount": "1",
+        "section": "Roasted Rhubarb",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": "Roasted Rhubarb",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6294c963d4673633c78fbd7908b083d0f91dd530e65ae34915821fa2964ed256",
+    "lineage_hash": "84eed1d7e28c1d33a37239c94fa5037af995046f169e15eb9816cbdb474e89d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/2/24/cardamon-creme-brulee-tarts-with-roasted-rhubarb",
+    "fetchedAt": "2026-08-01T21:18:10.139Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/2/24/cardamon-creme-brulee-tarts-with-roasted-rhubarb",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

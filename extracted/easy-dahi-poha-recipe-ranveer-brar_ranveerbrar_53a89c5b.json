@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Dahi Poha",
+    "time": "20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash poha under running water, and let it soak the water and become soft.",
+      "Now in a bowl, whisk in curd and jaggery powder/sugar.",
+      "Add cardamom powder to it.",
+      "Add the soaked poha and mix well.",
+      "Refrigerate it, let it get cooled for a while.",
+      "While serving garnish with pomegranate seeds and sprinle jaggery powder on top. Serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Poha",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery Powder/sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38e32106c48ab639beffd246d0ff87a2ad36d82f627e846a5df63c85a55c0a2e",
+    "lineage_hash": "8642495007674a14f2e2368f5a5ce41438c78fffa08cc245e2243fcb9748896e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-poha/",
+    "fetchedAt": "2026-08-02T08:56:18.563Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-poha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

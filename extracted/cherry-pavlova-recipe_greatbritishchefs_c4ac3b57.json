@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Cherry Pavlova",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the egg whites until stiff, then add the sugar 1 tablespoon at a time until it has all been incorporated, whisking for a few seconds between each addition. Whisk in the vinegar, vanilla extract and salt. It should be glossy and stiff",
+      "Draw a circle on a sheet of greaseproof paper approx. 27cm in diameter (although it doesn’t matter too much!) and place on a baking tray. Dollop the meringue onto the paper in one heap, then gently spread out, making a crater in the middle (which you will later fill with cream)",
+      "Bake for 1 hour, then turn off the oven and leave the meringue inside to cool completely",
+      "Make the cherry syrup while the meringue is in the oven. Gently dissolve the sugar in the water in a saucepan over a low heat. Remove the stalks from the cherries, add them to the pan then simmer for around 10 minutes, until syrupy. Pass through a sieve and stir in the pomegranate molasses. Leave to cool",
+      "To make the pistachio brittle, gently dissolve the sugar in the water in a saucepan. When it has dissolved, turn up the heat and boil the mixture until it turns golden, which could take up to 10 minutes. Alternatively, use a sugar thermometer to take the mixture to 146–155°C",
+      "Pour the mixture onto a greaseproof-lined baking sheet and quickly sprinkle the pistachios on top, pressing down with the back of a spoon. Leave to cool, then break into shards",
+      "Once the meringue has cooled, top with the whipped cream and streak with cherry syrup (there will be leftover syrup which you can serve at the table). Top with fresh cherries and the pistachio brittle"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Pistachios",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e02b2f7de6321db607fdeb6aeac662acb7c3c076a13a4758e274fbfbbc02ba9",
+    "lineage_hash": "aff3e4509c508749c0bd1596d86db35827c10b38c7bbdf5077c6e1df345f9fe3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cherry-pavlova-recipe",
+    "fetchedAt": "2026-08-03T09:44:05.679Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cherry-pavlova-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,225 @@
+{
+  "recipe": {
+    "name": "Crispy Rice Paper Dumplings Skirt",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the Filling: Cook your dumpling filling. I’ve provided a recipe below but you can use any dumpling filling.",
+      "Prepare the Rice Paper: Fill a large bowl with cold water. Dip a rice paper sheet in the water for a few seconds until it becomes soft and pliable.",
+      "Wrap the Dumplings: Place a small amount of filling in the center of the rice paper. Fold the sides of the rice paper over the filling, then roll it up tightly to form a dumpling (refer to photos). Repeat with one more piece of rice paper to double wrap.",
+      "Prepare the Skirt Mixture: In a small bowl, mix the water, flour and potato starch together.",
+      "Cook the Dumplings: Heat a non-stick skillet over medium-high heat and add oil to coat the pan. Cook until golden brown and crispy and then flip. Cook for 30 seconds or until lightly golden.",
+      "Create the Skirt: Pour the slurry or around the dumplings, ensuring not to pour on top of the dumplings and cook until liquid has evaporated and bottoms are golden brown (about 5 minutes). Once the lace is golden brown, shake the pan. The dumplings should slide easily. If there is no movement, drizzle a little oil around the whole pan and gently shake the pan. It should loosen the lace and dumplings.",
+      "Serve: Place a serving wire rack (optional) and plate over the dumplings and carefully flip the pan. Be careful as some hot oil may drip down (use oven mitts or gloves if you see a lot of oil to be safe). Enjoy with your favourite dipping sauce!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dumpling Filling",
+        "unit": "C",
+        "notes": "recipe below or use this tofu dumpling filling for vegan/vegetarian",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Papers",
+        "unit": null,
+        "notes": "small, 16 cm",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "tsp",
+        "notes": "3 g, or more flour",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "60 g, finely minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "alt: bokchoy, 80 g, finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "25 g, grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms (40 G)",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Meat",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "alt: 1/2 tsp black pepper",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Crisp",
+        "unit": "Tbsp",
+        "notes": "alt: chili oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb75e8908f8692df6f04a1741be293ad5a36fce377c1e944cd743f0ab694682e",
+    "lineage_hash": "13c8dcfb8dc3b32f7554a679cb3945dbb64bf1763f40d51239cca5e698f363cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/crispy-rice-paper-dumplings-skirt/",
+    "fetchedAt": "2026-09-26T00:52:04.984Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/crispy-rice-paper-dumplings-skirt/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

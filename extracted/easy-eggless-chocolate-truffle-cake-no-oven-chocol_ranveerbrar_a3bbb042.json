@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Chocolate Truffle Cake (बेकरी जैसा चॉकलेट ट्रफल केक)",
+    "time": "50-55 minutes",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot, add water in it and place the milkmaid tin into it.",
+      "Let it boil for at least 2 hours on medium flame.",
+      "Once it’s done remove the tin and rest for at least 20-25 minutes.",
+      "Once the milkmaid tin settles down to a room temperature, then transfer the milkmaid into the bowl for further use.",
+      "In a bowl, add refined flour, baking soda, baking powder, cocoa powder and mix well.",
+      "Now, add oil, vanilla essence and mix it well and make sure before adding curd, the oil is mixed properly and make a soft batter.",
+      "Add beaten curd and mix well with the help of the cut and fold method.",
+      "Now, add milkmaid and mix everything properly.",
+      "Grease the cake tin with butter and flour and pour the prepared batter into a cake tin.",
+      "Now, transfer it into a kadai for baking and bake it for 35-40 minutes on low to medium flame.",
+      "In a shallow pan, add fresh cream and let it cook for 1-2 minutes, add prepared caramelized milkmaid and mix it well on medium flame.",
+      "Remove the pan from the flame and add chocolate and mix everything properly.",
+      "Once chocolates are tempered properly, keep it aside for further use.",
+      "Demold the sponge and slice into 3 equal parts.",
+      "Now, apply caramelized milkmaid, prepared chocolate truffle and spread equally on the bottom and middle layer with the help of palette knife.",
+      "Now, cover it with the top layer.",
+      "Pour the truffle on the cake and spread equally from all sides.",
+      "Now, transfer the prepared cake into the fridge to settle down.",
+      "Remove the cake from the fridge and pour the hot truffle into it.",
+      "Make sure all sides are coat nicely,",
+      "Garnish with toffee whipped cream, golden leafs, chocolate shavings and sprinkle some cocoa powder."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Chocolate Sponge",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": "For Chocolate Truffle",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅜",
+        "section": "For Chocolate Truffle",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "2½",
+        "section": "For Chocolate Truffle",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "soft",
+        "amount": "¼",
+        "section": "For Chocolate Truffle",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Shavings",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coco Powder",
+        "unit": "C",
+        "notes": "dusting",
+        "amount": "¼",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "313dd0fb6e203876f4e9c050ccfdc9f13a03cb6768d8612577a6319d419b5cf3",
+    "lineage_hash": "6a83a04930180a87304d85f4f4090780817a27ff9f196498544a2baf7607c423"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-chocolate-truffle-cake/",
+    "fetchedAt": "2026-08-02T20:03:54.203Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-chocolate-truffle-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

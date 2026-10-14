@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crispy Baked Tofu",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Drain the tofu, wrap it in a paper towel, then place it on a plate. Put another plate on top of the tofu and place a heavy can of beans or tomatoes on top of it. Let stand 30 minutes.",
+      "Unwrap the tofu, wipe it dry, and cut it into 1-inch (3cm) cubes.",
+      "In a large, zip-top freezer bag, mix the sesame oil, soy sauce, rice wine, rice vinegar, garlic, ginger, water, Sriracha, and salt, if using. (See Note at end of recipe.) Add the tofu and toss the cubes in the marinade. Lay the bag on a plate and refrigerate for a minimum of 2 hours, or up to 8 hours, turning the bag a few times while marinating.",
+      "(You can marinate the tofu in a glass, ceramic, or stainless steel bowl instead, covering it for storage.)",
+      "Preheat the oven to 350ºF (180ºC.)",
+      "Line a baking sheet with parchment paper. Drain the tofu (the marinade can be reserved, refrigerated, and used for a dipping sauce or dressing for another dish), then put the tofu cubes in a large bowl. Using a mesh sieve or strainer, sift the corn starch over the tofu pieces, working in batches as you sprinkle them with the corn starch.",
+      "Transfer the tofu cubes to the prepared baking sheet and bake, turning the cubes several times during baking, until they are crisp and browned, about 45 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Firm Tofu",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "alt: tamari",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "alt: sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": "alt: cider vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "peeled, minced, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "tsp",
+        "notes": "alt: another favorite Asian chili sauce or paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "alt: kosher salt, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "978c9ca7c6c0d45d00784c5ad731a93db5a7fe21b53b1a1f30dc180f1c1850f1",
+    "lineage_hash": "1ed892d5a470dd8c90c47b8c0f339f776d783f35d845c07e42c4ba0fefa5d294"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/crisp-baked-tofu-recipe/",
+    "fetchedAt": "2026-08-03T03:20:44.658Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/crisp-baked-tofu-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/moms-best-braised-chicken-with-mushrooms/",
+  "slug": "chinese-braised-chicken-with-mushroom_omnivorescookbook_2d96c4e2",
+  "title": "Chinese Braised Chicken with Mushroom (小鸡炖蘑菇)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:40:33.634Z",
+  "ldName": "Chinese Braised Chicken with Mushroom (小鸡炖蘑菇)",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "10 medium (total 35 g) dried shiitake mushrooms",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "2 to 3 lbs (1 to 1.4 kg) bone-in chicken (, chopped to large bite size pieces (*Footnote 1))",
+    "4  green onions (, white part uncut, green part thinly sliced for garnish)",
+    "1 thumb ginger (, sliced)",
+    "1  whole star anise",
+    "2 tablespoons Shaoxing wine",
+    "2 tablespoons light soy sauce",
+    "1 tablespoon dark soy sauce",
+    "1 teaspoon rock sugar ((or regular sugar))",
+    "3/4 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Place dried shiitake mushrooms in a medium-sized bowl and add warm water to cover. Rehydrate mushrooms until soft, 20 minutes or so. Set aside. Reserve the soaking water once done.",
+    "Heat the oil in a large wok or dutch oven over medium-high heat until hot. Add the chicken pieces without overlapping. Cook until both sides are browned, 2 to 3 minutes per side. You might need to cook in batches. Transfer the chicken to a large plate once browned.",
+    "Your pan should still have some oil left. If not, add 1 tablespoon of oil. Add the star anise green onion (white part) and ginger. Stir and cook over medium heat until the edges of the aromatics are lightly charred, 1 to 2 minutes.",
+    "Add back the browned chicken. Add 1 cup of the mushroom soaking water. Then add cold water until it can mostly cover the chicken, 5 cups or so. Add the Shaoxing wine, light and dark soy sauce, rock sugar, and salt. Cook over medium-high heat until brought to a boil. Skim and discard any brown foam from the top.",
+    "Add the rehydrated shiitake mushrooms. Then cover the pan and turn to medium heat. Keep the liquid at a low boil until the chicken turns tender, 30 minutes or so. Check the chicken after 15 minutes, scooping the chicken from the bottom to prevent it from sticking.",
+    "Taste a small piece of chicken and some sauce, adding salt if necessary. If you want to serve the chicken by itself, the chicken should taste slightly under seasoned now, because the saltiness will increase once the sauce is reduced. If you want to serve the chicken over steamed rice, add a bit of salt until it tastes just right. In this case, I added 1/4 teaspoon of salt to get a slightly salty dish in the end.",
+    "Once the chicken turns tender, turn to high heat and boil uncovered. (*Footnote 2) Use a spatula to scoop the chicken from the bottom constantly, until the sauce is thick enough to thinly coat the chicken, 5 to 10 minutes. Pay a lot of attention during this step, since the sauce reduces very fast towards the end and might burn the bottom. The sauce will thicken up a bit more once cooled.",
+    "Once done, sprinkle with the reserved green onion to garnish. Transfer chicken to a large bowl. Serve hot as a main dish or over rice.",
+    "Store the leftover chicken in an airtight container in the fridge for up to 1 week or in the freezer for up to 2 months."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "406 kcal",
+    "carbohydrateContent": "26.4 g",
+    "proteinContent": "57 g",
+    "fatContent": "8.3 g",
+    "saturatedFatContent": "2.1 g",
+    "cholesterolContent": "144 mg",
+    "sodiumContent": "1152 mg",
+    "fiberContent": "3.5 g",
+    "sugarContent": "8.1 g"
+  },
+  "htmlIngredientLines": [
+    "10 medium (total 35 g) dried shiitake mushrooms",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "2 to 3 lbs (1 to 1.4 kg) bone-in chicken , chopped to large bite size pieces (*Footnote 1)",
+    "4 green onions , white part uncut, green part thinly sliced for garnish",
+    "1 thumb ginger , sliced",
+    "1 whole star anise",
+    "2 tablespoons Shaoxing wine",
+    "2 tablespoons light soy sauce",
+    "1 tablespoon dark soy sauce",
+    "1 teaspoon rock sugar (or regular sugar)",
+    "3/4 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

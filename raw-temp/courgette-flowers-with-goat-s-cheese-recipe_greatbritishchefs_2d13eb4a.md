@@ -1,0 +1,7 @@
+I honestly wish I could say the idea of stuffing courgette flowers was mine, but alas it was not.
+
+As if the creamy filling, crunchy coating wasn’t exciting enough, they are so damn pretty on the plate. You can completely forget that they are deep fried and look at them as something wholly more virtuous. Just serve them with a few flecks of parsley for colour, topped with toasted hazelnuts and honey drizzle and you’ve got yourself one hell of a starter.
+
+I first stumbled across the goats cheese and honey and hazelnut combo last summer at a charming agriturismo in Lake Como. The genius chef had the brilliant idea of serving us fresh farm-made goats cheese served with a toasted hazelnut powder and local honey for dipping. Nothing complicated, just a plate of cheese and a few bowls, purely about the flavours. For the last year it has been a trio of ingredients I have longed to play around with. So since I am in Italy, at the end of the gulf of poets, on holiday with my dad and brother and doing little other then reading and faffing, I thought now would be the time… The courgette flowers are out in abundance and I have my two guinea pig/ critics at the ready.
+
+You ask if they were good?! Not a crumb was left on the plate. Success I’d say!

@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Citrus Madeleines",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whip the eggs with the sugar, citrus zest and vanilla with electric beaters or in a stand mixer fitted with the whip attachment on high speed until the eggs are thick and pale and hold a ribbon when the beaters are lifted, about 3 minutes.",
+      "Sift the flour and baking powder together and add this to the eggs while beating on medium-low speed, mixing until blended. In a separate bowl, whisk the butter, milk and oil together. Spoon about a cup of the batter into the butter and whisk it in. Add this all back to the base batter and fold until blended. Cover and chill the batter for 2 hours, to set the butter.",
+      "Preheat the oven to 375 °F (190 °C). Lightly grease and flour 2 madeleine pans, tapping out any excess flour.",
+      "Stir the chilled madeleine batter gently to deflate it slightly (this is key to help getting the little bump that a well-made madeleine has) and with an ice cream scoop or a piping bag fitted with a plain tip, fill the madeleine molds (they will fill ¾ full). Bake the madeleines for 10 minutes, then bang the pans down (again, for the bump) before returning to the oven for another 5-7 minutes, until the madeleines are golden brown at the edges. Remove the madeleines from the pan immediately and enjoy warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "180 g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "Tbsp",
+        "notes": "alt: lemon zest, finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "5 mL",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "150 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "melted (still warm), 115 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "60 mL",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "15 mL",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8cc5396927dc98db29bc65f45abde4446ac2db2aa3fb95bc2b8660720201474",
+    "lineage_hash": "613a5c6c04d2bc1d9b9e58cdcb9038a9acb505f235923152953226fa72e323f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/citrus-madeleines/",
+    "fetchedAt": "2026-08-01T19:06:15.253Z"
+  },
+  "rawSource": "https://annaolson.ca/project/citrus-madeleines/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

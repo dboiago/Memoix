@@ -1,0 +1,115 @@
+[![A Sign Of Wealth - my main for Great British Menu 2017](https://s3-eu-west-1.amazonaws.com/tscmediumimages/2017/05/25/35701/1495700930.9834592695c2f01e7.jpg)](https://s3-eu-west-1.amazonaws.com/tscimages/2017/05/25/35701/1495700930.9834592695c2f01e7.jpg)
+
+[![Danny Parker](https://s3-eu-west-1.amazonaws.com/tscsmallimages/2016/05/18/13/11/39/9c3617a7-dc66-4d9b-aa39-2be02464f135/file)](https://www.thestaffcanteen.com/users/Danny-Parker/5db6b94e342b00004c00b2fa)
+
+## A Sign Of Wealth - my main for Great British Menu 2017
+
+A Sign Of Wealth - my main for Great British Menu 2017
+
+## Ingredients
+
+-   2 x Ten Bone suckling pork rack, bone in, french trimmed
+-   Thyme
+-   Garlic
+-   For the BBQ Pulled pork:
+-   Shoulders from 2 Suckling pigs
+-   1TBSP x Red Chilli Flakes
+-   1 TBSP x Ground cinnamon
+-   5g X Ground Nutmeg
+-   1 x Cardomom Pod
+-   1TBSP x Fennel Seeds
+-   100g x Smoked Paprika
+-   150 x Maldon Salt
+-   150g x Dar Brown Soft Sugar
+-   10g x Black Pepper corn
+-   For the Sauce:
+-   600g x Tomato Ketchup
+-   300g Coke
+-   300g x Chicken Stock
+-   180g x Cider Vinegar
+-   2TSP x salt
+-   3/4 TSP x Black Pepper
+-   3TSP x Paprika
+-   3TSP x Mustard Powder
+-   2/4TSP x Ground Cumin
+-   3TBSP x Worcestershire Sauce
+-   1TSP x Chilli Powder
+-   3TBSP x Dark Brown Soft Sugar
+-   3/4TSP x Garlic Powder
+-   Chicken Bisto
+-   For the Pineapple:
+-   1 x Pineapple
+-   1.5KG x Salt
+-   500g x Egg White
+-   24 x Cloves
+-   3 x Star Anise
+-   1TBSP x Chinese 5 spice
+-   For the Onions:
+-   500g x White Balsamic
+-   250g x Silver Skin onions
+-   Burn onions
+-   20 x Baby Roscoff Onions
+-   Thyme
+-   Garlic
+-   For the Onion Puree:
+-   8 x Large brown onions
+-   thyme
+-   Garlic
+-   For the Pineapple Gel:
+-   1KG x Pineapple Boiron
+-   200g x Caster Sugar
+-   200g x Cider Vinegar
+-   200g x Water
+-   4 x Spring onions
+-   For the Jus:
+-   250g x Pork Belly Dice
+-   2 x Sliced banana Shallot
+-   100g x Button Mushroom
+-   2TBSP x White Peppercorns
+-   1TBSP x Tomato Paste
+-   1/2 Head x Garlic
+-   Thyme
+-   Bay Leaf
+-   Coriander seeds
+-   Sherry Vinegar
+-   500g x Cider
+-   250g x Malt Barley Syrup
+-   2.5 Litre x Chicken Stock Dark
+-   2 x Half Pigs Trotters
+-   100g x Butter
+
+## Method
+
+For the Suckling Pork loin:  
+Wrap the bones in tin foil. Place in a sous vide bag with thyme and garlic. Cook at 54\*C for 35 minutes. Remove from the bag and slowly render in a pan on the stove for prix 10-15 minutes, season well. Leave to rest before carving.  
+For the BBQ Pulled pork (must be started the day before):  
+Make the rub the day before and rub into the  
+pork. Leave for minimum 5 hours. Cook at 250\*C for 20 minutes. Lower the heat to 89\*C and cook overnight.  
+For the BBQ Sauce:  
+Add all ingredients to the pan except the bisto, simmer and reduce until thickened, add in Bisto to finish.  
+For the Salt baked pineapple:  
+Stud the pineapple with cloves. Crush the star anise. Mix together the salt and egg white by hand. Add in the crushed star anise and 5 spice powder. Coat the pineapple and place in the oven at 230\*C for 25 minutes. Leave to cool and crack open the salt. Discard the cloves and cut into portions. Blowtorch on one side.  
+For the pickled silver skin onions:  
+Cut the silver skin onions in half. Boil the balsamic and pour over the onions. Leave to cool.  
+For the burnt brown onions:  
+Cut the onions in half leaving the skin on. Place face down in a pan with a little oil, thyme and garlic, season generously. Cover with tin foil. Leave on the side of the stove until blacked and cooked and set aside.  
+For the Caramalised onion puree:  
+Slice the onions very thinly. Season well and start cooking over a moderate heat with a splash of oil and some thyme. Keep cooking until well cooked and caramelised. Blend and pass. Correct Seasoning.  
+For the Sauce:  
+Slice the shallot and mushroom. Colour off the pork belly in a pan with some oil. Add the shallots, garlic, mushroom and cook some more. Add in the butter to colour all well. Cook out the tomato paste. Deglaze with sherry vinegar. Deglaze again with cider. Reduce by half. Add in the rest of the ingredients and bring down to a shiny jus. Finish the sauce to order with gherkins and capers.  
+For the Pineapple Gel:  
+Boil and set as for Agar Jelly and blend. Keep in a squeezable bottle.  
+For the Spring Onion:  
+Melt the butter in a sauté pan. Add a little water and cook and glaze. Season with salt and lemon juice. Remove from the pan and finish with chives
+
+Built by Chefs. Powered by You.
+
+For 18 years, The Staff Canteen has been the meeting place for chefs and hospitality professionals—your stories, your skills, your space.
+
+Every recipe, every video, every news update exists because this community makes it possible.
+
+We’ll never hide content behind a paywall, but we need your help to keep it free.
+
+If The Staff Canteen has inspired you, informed you, or simply made you smile, chip in £3—less than a coffee—to keep this space thriving.
+
+**Together, we keep the industry connected. Together, we move forward.**

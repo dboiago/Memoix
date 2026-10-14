@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Chinese BBQ Ribs",
+    "time": "2 hr 25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "365",
+      "carbohydrateContent": "13.4",
+      "fatContent": "20.3",
+      "proteinContent": "30.5"
+    },
+    "directions": [
+      "(Optional) Remove the membrane from the back of the ribs by loosening one end with a knife, and then tearing it away.",
+      "Prepare a large piece of foil (at least 2” / 5 cm bigger than the ribs on all sides) to layer over a baking sheet. Place the ribs back side up onto the foil.",
+      "Combine the dry rub ingredients in a small bowl and mix well. Sprinkle evenly over the back of the ribs and rub in. Flip the ribs and sprinkle on the top side, rub in the spice again. Set aside to marinate briefly while preheating the oven to 275°F (135°C).",
+      "Combine the sauce ingredients in a medium-sized bowl. Mix well.",
+      "Once the oven is heated, brush a thin layer of sauce all over the ribs.",
+      "Place another piece of foil over the top. Crimp the bottom foil over the top foil and fold a few times to create a sealed parcel.",
+      "Place the ribs in the oven and bake for 2 to 3 hours depending on their size (*Footnote 2). Once done, you can use a thermometer or a fork to poke through the foil to test the doneness. The meat should feel very tender or read at least 160°F/71°C.",
+      "While cooking, prepare a baking tray lined with foil (or parchment paper) and a rack on top.",
+      "Remove the ribs from the oven and turn the heat up to 450°F (230°C).",
+      "Carefully open the parcel and move the ribs to the prepared baking tray. You might need to use 2 spatulas to help with this step because the ribs are extremely tender and might fall apart.",
+      "Generously brush the top and back of the ribs with the sauce, leaving a few tablespoons for after cooking.",
+      "Return the ribs to the oven and bake until beginning to char, 10 to 15 minutes. Check on the ribs every 5 minutes to prevent them from burning.",
+      "Remove the ribs from the oven and brush with a thin layer of sauce. Let cool for 10 minutes then slice the ribs and serve hot with the remaining sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack Pork Ribs (2.5 to 4 Lbs)",
+        "unit": null,
+        "notes": "the one I used was about 3 lbs / 1.4 kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru (or Chile Powder)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "1½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "1",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "5 Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Coloring",
+        "unit": "drops",
+        "notes": "optional",
+        "amount": "6-10",
+        "section": "BBQ Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8f54c433245938a8fc65373cfc0bb85253d648e6abace984a0293c0a3ac7e7e",
+    "lineage_hash": "9583a585de75810ab3de0b012b621c5517d8a40fba32033adf40bcae512b9333"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-bbq-ribs/",
+    "fetchedAt": "2026-08-02T07:15:00.203Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-bbq-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

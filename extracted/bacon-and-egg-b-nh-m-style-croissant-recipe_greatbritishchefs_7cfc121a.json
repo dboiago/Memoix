@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Bacon and Egg Bánh Mì-Style Croissant",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat up the rice vinegar and sugar in a saucepan to about 80–85°C (176–185°F), stirring until all the sugar has dissolved. Take off the heat and leave to cool completely",
+      "Put the carrots and daikon into a clean, sterilised jar (run it through the dishwasher, with no detergent) and pour over the cooled vinegar. It can be eaten after 3 hours but is better if left overnight",
+      "Store in an airtight jar for up to 2 weeks in the fridge",
+      "Peel the shallots and chop as finely as you can",
+      "Heat the oil in a wok on the lowest setting for around 5–7 minutes. An easy way to tell when the oil is ready is by placing a wooden chopstick into the oil and waiting until bubbles start to form around it on the surface of the oil",
+      "Carefully add half the shallots to the hot oil and deep-fry for 10–12 minutes until golden brown. Remove with a mesh strainer onto sheets of paper towel, making sure they are in a single layer so they stay crisp, and repeat with the remaining shallots. Leave overnight to dry",
+      "Put the crispy shallots into an airtight jar once completely dry and store for up to 6 months at room temperature",
+      "Add 1 teaspoon of the oil to a small frying pan and bring to a high heat. Fry the bacon until crisp, then remove and keep warm",
+      "Add the remaining oil, then fry the eggs, sunny side up. Remove and keep warm",
+      "Toast the croissants, cut in half and open out on your plate. Spread the pâté on one half and the mayonnaise on the other. Top with the bacon, carrot and daikon pickle and fried eggs",
+      "Stuff in the coriander, mint, spring onion and chilli, then drizzle over the soy sauce. Sprinkle over the crispy fried shallots and black pepper, and your delicious breakfast is ready"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "cut into thin matchsticks",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Shallots",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Croissants",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Pork Pâté",
+        "unit": "tsp",
+        "notes": "or chicken pâté",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot and Daikon Pickle",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprigs",
+        "notes": "coriander",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Shallot",
+        "unit": "tsp",
+        "notes": "store-bought or see above",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "082030162053d04a2c8b85e5819704139031deb97abef3fde429d65d249e3215",
+    "lineage_hash": "9dd3e98cca8d4b9d49fc630a3955b001e604514720e645886a575190da3489cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacon-and-egg-banh-mi-style-croissant-recipe",
+    "fetchedAt": "2026-08-02T12:44:55.017Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacon-and-egg-banh-mi-style-croissant-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

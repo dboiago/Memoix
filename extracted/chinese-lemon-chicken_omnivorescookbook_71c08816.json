@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chinese Lemon Chicken",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "312",
+      "carbohydrateContent": "28.4",
+      "fatContent": "10.7",
+      "proteinContent": "23.1"
+    },
+    "directions": [
+      "Combine the sauce ingredients in the bowl and mix well.",
+      "Combine chicken, oil, and salt in a big bowl. Mix well and let marinate for 15 minutes.",
+      "When you’re ready to cook, add the beaten egg to the chicken. Stir to mix well. Add cornstarch. Stir to coat chicken, until it forms an uneven coating with a little dry cornstarch left unattached.",
+      "Heat oil in a large skillet until hot, just starting to smoke. Add chicken all at once and spread into a single layer in the skillet. Separate chicken pieces with a pair of tongs or chopsticks.",
+      "Cook without touching the chicken for 2 to 3 minutes, or until the bottom turns golden. Flip to brown the other side, 2 to 3 minutes. Transfer chicken to a big plate and remove the pan from the stove. Let cool for 2 to 3 minutes (very important, so the chicken crisps up further).",
+      "Place the pan back on the stove and turn to medium heat. You should still have 1 to 2 tablespoons of oil in the pan. If there’s too much oil, pour out or use paper towels to remove the excess oil. Add green onion and ginger. Cook and stir a few times until it releases fragrance.",
+      "Stir the sauce again to dissolve the cornstarch completely. Pour into the pan. Stir and cook until it thickens.",
+      "Add back the chicken. Stir to coat chicken with sauce. Transfer to a plate and serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "juice from 1 big lemon",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine (or Dry Sherry)",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest Zest From 1 Lemon",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Large Boneless Skinless Chicken Breast",
+        "unit": "oz",
+        "notes": "or 2 chicken thighs, cut to 1” (2.5-cm) pieces",
+        "amount": "14",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "white part for cooking and green part for garnishing, sliced",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "338fd58350509082eff30dbff1600922ecc7d1e01d45518f915068f430ec2b10",
+    "lineage_hash": "d4e45f760db0b88fba95edca97c8213e80fb5b65d5d72b07aacde5becbd91eae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-lemon-chicken/",
+    "fetchedAt": "2026-08-02T10:05:54.155Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-lemon-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

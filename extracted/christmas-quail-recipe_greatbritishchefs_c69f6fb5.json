@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Christmas Quail",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the stuffing, cut 6 slices of pancetta into small pieces. In a pan, heat 3 tablespoons of oil. Add the pancetta and fry to a light colour. Add the garlic, mushrooms, onions, lemon zest and thyme",
+      "Cook well, stirring occasionally, then add the rice. Mix well and add the 200ml of chicken stock and 50g of butter. Cover with a lid or a foil. Lower the heat and gently simmer for 15 minutes",
+      "Take off the heat and leave to rest for 2-3 minutes. Pour the rice onto a tray and cool down quickly",
+      "Clean the pan then heat the remaining butter. When it foams, cook the cleaned livers for 2 minutes only, then tip onto a chopping board and chop quite finely. Add to the cooling rice",
+      "When the rice is at room temperature, fill the quails with the stuffing and close each opening with 2 cocktail sticks. Wrap 2 slices of pancetta around each bird",
+      "Place the birds on a roasting tin and pour 6 tablespoons of olive oil over the top. Cook for 10 minutes then add the white wine to the tin and leave to cook for another 15 minutes",
+      "Remove from the heat and place on a plate. Cover with foil and keep warm",
+      "Add the 300ml of stock to the roasting tray with the cranberries and the grapes. Simmer gently until the jus is a light consistency",
+      "To plate, place the quails on a large serving plate. Spoon the juices and fruit over\r\n and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jumbo Quails",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Grapes",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Grain Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Livers",
+        "unit": "g",
+        "notes": "cleaned",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c1d836da33553bc1936c87742fded6a040add650c4e759c88cdb9ab6133bcca",
+    "lineage_hash": "2b1e5560185161e42858713626ee3914b33ba64a3b5b6a5e956090cd568544e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-quail-recipe",
+    "fetchedAt": "2026-08-03T17:07:56.870Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-quail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

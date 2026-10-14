@@ -1,0 +1,62 @@
+{
+  "url": "https://www.koreanbapsang.com/all-purpose-korean-marinade/",
+  "slug": "all-purpose-korean-marinade_koreanbapsang_ff0d9fe5",
+  "title": "All-purpose Korean Marinade",
+  "byline": "Hyosun",
+  "fetchedAt": "2026-08-01T18:12:39.680Z",
+  "ldName": "All-purpose Korean Marinade",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "40"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "6 cups of water",
+    "4 cups soy sauce",
+    "2 cups sugar",
+    "1 cup corn syrup (or Korean Oligodang) (or use 2/3 cup honey or 1 more cup sugar)",
+    "1  large onion, roughly cut into small pieces",
+    "1  large apple, roughly cut into small pieces",
+    "2  scallions, cut into shorter pieces",
+    "12 to 14  plump garlic cloves, roughly cracked oped (use a side of the knife)",
+    "2 inch long ginger (about 1 inch diameter), thinly sliced",
+    "3 or 4  dried shiitake mushrooms",
+    "1 teaspoon peppercorns",
+    "5 inch square dashima 다시마 (dried kelp)",
+    "1 cup rice wine (or mirin)  (Dry white wine is also good.)",
+    "1  lemon, thinly sliced"
+  ],
+  "ldInstructionsRaw": [
+    "Add all the ingredients (except the dashima, rice wine, and lemon) to a large pot with 6 cups of water. Bring it to a boil over high heat, uncovered, and then reduce the heat to achieve a medium boil (between medium high and medium on my stove). Boil for 30 minutes.",
+    "Add the dashima and continue to boil for 10 more minutes.",
+    "Remove all the solids with a strainer.",
+    "Add the rice wine and lemon slices, and let it cool. Store in a jar(s) in the fridge.",
+    "Galbi (beef short ribs) or bulgogi",
+    "Spicy pork"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "[Yields about 10 cups]",
+    "▢ 6 cups of water",
+    "▢ 4 cups soy sauce",
+    "▢ 2 cups sugar",
+    "▢ 1 cup corn syrup (or Korean Oligodang) or use 2/3 cup honey or 1 more cup sugar",
+    "▢ 1 large onion, roughly cut into small pieces",
+    "▢ 1 large apple, roughly cut into small pieces",
+    "▢ 2 scallions, cut into shorter pieces",
+    "▢ 12 to 14 plump garlic cloves, roughly cracked oped (use a side of the knife)",
+    "▢ 2 inch long ginger (about 1 inch diameter), thinly sliced",
+    "▢ 3 or 4 dried shiitake mushrooms",
+    "▢ 1 teaspoon peppercorns",
+    "▢ 5 inch square dashima 다시마 (dried kelp)",
+    "▢ 1 cup rice wine (or mirin)  Dry white wine is also good.",
+    "▢ 1 lemon, thinly sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Coffee Grog",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Heat-proof",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar, batter, spices and citrus peels in a preheated, heat-proof glass, then add the coffee, stirring until the batter dissolves. Place the rums in a fireproof ladle, carefully ignite with a match, and pour the flaming rum into the glass (pyrophobes may want to skip this step and just stir in the unlit rum). Garnish.",
+      "Don’s Coffee Grog Batter: Combine 1 oz. of softened sweet unsalted butter and 1 ounce of honey with a teaspoon of your favorite vanilla syrup, ½ a teaspoon of allspice dram and 1 teaspoon of your favorite cinnamon syrup. Makes 18 servings."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Don’s Coffee Grog Batter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": "pinch",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Orange Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strip Grapefruit Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Coffee",
+        "unit": "oz",
+        "notes": "Kona is traditional",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Rum",
+        "unit": "oz",
+        "notes": "151-proof",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9e99b8a77628788e11ec42d2d7815ae775897d65a47baeb3d6fced4cd8a258b8",
+    "lineage_hash": "8c999a7b2506cc8b2daad2c11ef879fd489643880c33db3f24d6df33e8797160"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coffee-grog/",
+    "fetchedAt": "2026-08-03T18:41:49.027Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coffee-grog/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,45 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/36755/amalfi-spritz",
+  "slug": "amalfi-spritz-cocktail-recipe_diffordsguide_5dce5b3e",
+  "title": "Amalfi Spritz Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T22:32:25.006Z",
+  "ldName": "Amalfi Spritz",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Anytime",
+    "Aperitivo/aperitif",
+    "Elevenses/afternoon",
+    "Summer"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Limoncello liqueur",
+    "7.5 ml Red bitter liqueur",
+    "7.5 ml Lemon juice",
+    "2 dash Orange bitters",
+    "90 ml Prosecco"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a WINE GLASS.",
+    "Prepare garnish of 2 lemon slice wheels.",
+    "POUR ingredients into chilled glass.",
+    "FILL glass with ice.",
+    "Garnish with lemon slices."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "100 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

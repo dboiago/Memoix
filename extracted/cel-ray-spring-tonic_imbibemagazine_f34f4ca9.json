@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cel-Ray Spring Tonic",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine celery leaves, cucumber, and lime wedge and muddle. Add remaining ingredients, except ginger ale, and shake with ice. Strain into an ice-filled Collins glass, top with ginger ale and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheels Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Ale",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ede9cb92c18336d783cea8fb62b1e42977595342730ad5b1bcd4076775287fee",
+    "lineage_hash": "425b5f9687787816f93afb58ed8b63983d0025081ed69784c2b9c76011ffa094"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cel-ray-spring-tonic-recipe/",
+    "fetchedAt": "2026-08-03T20:06:12.214Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cel-ray-spring-tonic-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

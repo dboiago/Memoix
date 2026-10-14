@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Besan Ladoo (बेसन के लड्डू)",
+    "time": "15-25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in a deep non-stick pan, add the besan, roast well on a medium flame until it lets out a nice aroma - approximately ten minutes. Remove from flame and set aside to cool.",
+      "Add the sugar, coarsely powdered almonds, cardamom powder and mix well while rubbing the mixture in between your palms till it resembles a crumbly texture.",
+      "Take a small portion of the mixture and shape it into a round laddoo. Repeat to make more ladoos.",
+      "Garnish with almond slivers and store in an air-tight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Coarsely Powdered Almonds",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Slivers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70770c4e114029823dbea5ea379bdd646d17139e5e36d56de44d0d07990818a8",
+    "lineage_hash": "c82e293820544ee2cdbe13af0b43c0ef6c2208873c58985987ac484a4bd9436e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/besan-ladoo/",
+    "fetchedAt": "2026-08-02T11:05:03.931Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/besan-ladoo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

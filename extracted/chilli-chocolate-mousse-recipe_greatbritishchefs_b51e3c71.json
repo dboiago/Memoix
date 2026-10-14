@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Chilli Chocolate Mousse",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "200",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Place the chocolate pieces into a bowl and sit the bowl over some simmering water – melt it gently until smooth, mixing all the time",
+      "Blend the milk with the cocoa powder and chilli powder until it is a smooth paste and add to the melted chocolate. Mix well",
+      "Beat the egg yolks and add them to the chocolate mixture. Set the bowl over some simmering hot water and cook gently for about 5-7 minutes, stirring all the time until the mixture has thickened. Check the chilli heat level and add some more chilli powder if desired",
+      "Whisk the egg whites until they are stiff, then add the sugar and whisk until the eggs and sugar are glossy. Gently fold them into the chocolate mixture with a metal spoon",
+      "Divide the mixture between 4 bowls or ramekins and scatter the chocolate chips over the top, as well as a small sprinkling of chilli powder. Chill until set and ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into smaller pieces",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": "plus extra for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "yolks and whites separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chocolate Chips",
+        "unit": null,
+        "notes": "for decoration",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05f963bf44b86612eb008680144b729d0a3e002728cf725c67507b1084259f08",
+    "lineage_hash": "8ee02e4a009466661d8390eb86fec3135cbe33f373f85a03656809198e08e46e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/mexican-chocolate-mousse-recipe",
+    "fetchedAt": "2026-08-03T23:07:23.826Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/mexican-chocolate-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

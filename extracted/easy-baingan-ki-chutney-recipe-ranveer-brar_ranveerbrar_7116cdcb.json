@@ -1,0 +1,252 @@
+{
+  "recipe": {
+    "name": "Baingan Ki Chutney",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly soak the chopped egg plate in salt, water and keep aside for further use.",
+      "Then heat oil in a pan and add chana dal, mustard seeds, urad dal, dry red chillies, curry leaves and saute for a few seconds.",
+      "Now add onion, garlic, ginger and saute for a minute then add the chopped eggplant and cover it and cook for 10 minutes on medium heat.",
+      "Remove the lid and stir everything once then add degi red chilli powder, turmeric powder, asafoetida and saute for 2 minutes or until fragrant.",
+      "Now add tamarind pulp, jaggery, peanuts saute for a minute then cover and let cook for 3-4 minutes.",
+      "Remove off the flames and grind it into a fine paste.",
+      "Remove in a bowl and add salt, sesame seed oil and mix everything properly.",
+      "Serve in a serving bowl and garnish with sesame seed oil, degi red chilli powder, coriander leaves.",
+      "In a bowl add curd prepared half Baingan mixture, salt and mix everything together.",
+      "Serve in a bowl and garnish with coriander leaves, sesame seed oil, degi red chilli powder."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Big Eggplant",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "6-8",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dahi And Baingan Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Baingan Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Dahi And Baingan Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dahi And Baingan Ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "935b5bdbd501d6d3c8139ea15c83d8ef5ca6b24553e88d577b75ae48aac52a6b",
+    "lineage_hash": "859e98edae41457358c5ad2f6f3c00d84582467855017f138a7e9f08491167b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baingan-ki-chutney/",
+    "fetchedAt": "2026-08-02T06:09:48.963Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baingan-ki-chutney/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

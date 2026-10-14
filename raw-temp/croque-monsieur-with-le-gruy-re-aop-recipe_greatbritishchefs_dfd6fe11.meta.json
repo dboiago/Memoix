@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/croque-monsieur-recipe",
+  "slug": "croque-monsieur-with-le-gruy-re-aop-recipe_greatbritishchefs_dfd6fe11",
+  "title": "Croque Monsieur with Le Gruyère AOP Recipe",
+  "byline": "by Helen Graves",
+  "fetchedAt": "2026-08-03T06:02:50.789Z",
+  "ldName": "Croque monsieur with Le Gruyère AOP",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "8 slices of white bread",
+    "200g of Gruyère, ideally Le Gruyère AOP Reserve, sliced",
+    "4 slices of ham",
+    "20g of flour",
+    "20g of butter",
+    "150ml of milk",
+    "1 tsp Dijon mustard",
+    "nutmeg",
+    "salt",
+    "60g of mayonnaise",
+    "1 tsp Dijon mustard"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by making a thick béchamel sauce. Melt the butter in a saucepan and stir in the flour. Cook and stir for a minute or so to cook out the floury taste, then stir in the milk bit by bit, ensuring any lumps are whisked out before adding more milk",
+    "Once all the milk has been added and you have a smooth, thick sauce, stir in the Dijon mustard then taste and add nutmeg and salt until you're happy with the flavour. Remove from the heat and set aside",
+    "Make the Dijon mayonnaise by stirring the mustard and mayonnaise together. Set aside",
+    "Now it is time to assemble the sandwiches. Begin with a layer of Dijon mayonnaise, followed by a slice of ham and then slices of Gruyère cheese. Close the sandwich and spread the top of the lid with some béchamel sauce",
+    "Place the sandwiches on a tray and under the grill for a few minutes until the béchamel has started to colour and the cheese is nice and melted",
+    "Serve immediately with an extra dab of Dijon mayonnaise on the side"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

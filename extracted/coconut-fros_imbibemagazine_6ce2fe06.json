@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Coconut Frosé",
+    "time": "4 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all of the ingredients together in a large bowl. Pour into a shallow pan and freeze for several hours. Break up the pieces and give it a spin in a blender. You can pop it back in the freezer for another hour to thicken or serve right away. Add fresh strawberries or lemon slices to garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottles Dry Rosé",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Grapefruit Rosé",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b01857487e09500c4a4992781682fb64cc58fedad4cf053c019da7d5ee31c960",
+    "lineage_hash": "b1b4a0a27250bcbccf18da2abf6bcad92c8af6920ee1dcf092b600184497ff3e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-frose/",
+    "fetchedAt": "2026-08-03T19:33:11.205Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-frose/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

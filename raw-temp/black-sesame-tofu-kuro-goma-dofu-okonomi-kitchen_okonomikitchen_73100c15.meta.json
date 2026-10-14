@@ -1,0 +1,52 @@
+{
+  "url": "https://www.okonomikitchen.com/black-sesame-tofu-kuro-goma-dofu/",
+  "slug": "black-sesame-tofu-kuro-goma-dofu-okonomi-kitchen_okonomikitchen_73100c15",
+  "title": "Black Sesame Tofu (Kuro Goma Dofu) 黒ごま豆腐 - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-25T22:06:00.429Z",
+  "ldName": "Black Sesame Tofu",
+  "ldTime": "PT6M",
+  "ldPrepTime": "PT1M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "gluten free",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "gomadofu, black sesame tofu, soy free tofu, sesame tofu",
+  "ldIngredientsRaw": [
+    "200 ml water",
+    "1/2 tsp kombu dashi (3g)",
+    "2 tbsp black sesame paste (30g)",
+    "2 tbsp potato starch (25g)",
+    "2 tbsp raw cane sugar (26g)",
+    "2 tbsp miso paste (34g)",
+    "1 tbsp mirin (15g)",
+    "1 tbsp sake (14g)"
+  ],
+  "ldInstructionsRaw": [
+    "Goma Tofu",
+    "Miso Sauce",
+    "Serve"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "calories": "129 calories",
+    "sugarContent": "0.25g",
+    "sodiumContent": "78mg",
+    "fatContent": "8.3g",
+    "saturatedFatContent": "1.4g",
+    "unsaturatedFatContent": "0.3g",
+    "transFatContent": "0",
+    "carbohydrateContent": "13.4g",
+    "fiberContent": "3g",
+    "proteinContent": "2.8g",
+    "cholesterolContent": "0",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

@@ -1,0 +1,53 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-sweet-and-sour-sauce/",
+  "slug": "chinese-sweet-and-sour-sauce_chinasichuanfood_3df97521",
+  "title": "Chinese Sweet and Sour Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:18:44.682Z",
+  "ldName": "Chinese Sweet and Sour Sauce",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": null,
+  "ldCuisine": "Chinese",
+  "ldCategory": "sauce",
+  "ldKeywords": "sweet and sour",
+  "ldIngredientsRaw": [
+    "2  middle size garlic cloves ( , minced)",
+    "1 tsp. minced ginger",
+    "1 tsp. green onion white",
+    "2 tbsp. vegetable oil",
+    "4 tbsp. ketchup",
+    "8 tbsp. water ( , 1/2 cup of water)",
+    "1/2 tbsp. rice vinegar",
+    "1 tbsp. sugar",
+    "1 tbsp. light soy sauce",
+    "a small pinch of salt if needed",
+    "1 tbsp cornstarch",
+    "3 tbsp water"
+  ],
+  "ldInstructionsRaw": [
+    "Heat up vegetable oil in pan or wok; add garlic, green onions and ginger to stir-fry for around 2 minutes or until aroma with low fire.",
+    "Then pour the basic sauce to the wok, bring all the content to a boiling. And add water starch in. Keep on stirring in the process."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 middle size garlic cloves  , minced",
+    "1 tsp. minced ginger",
+    "1 tsp. green onion white",
+    "2 tbsp. vegetable oil",
+    "[Basic sweet and sour sauce]",
+    "4 tbsp. ketchup",
+    "8 tbsp. water  , 1/2 cup of water",
+    "1/2 tbsp. rice vinegar",
+    "1 tbsp. sugar",
+    "1 tbsp. light soy sauce",
+    "a small pinch of salt if needed",
+    "[Water starch]",
+    "1 tbsp cornstarch",
+    "3 tbsp water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

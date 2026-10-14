@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Crispy Pan-Fried Red Tilapia Fish (Cá Diêu Hồng Chiên Giòn)",
+    "time": "12 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ground ginger, bouillon powder, sea salt, ground pepper, garlic powder, and onion powder in a small bowl. Set aside.",
+      "Clean the fish by rinsing with water inside and out. Towel dry. With a sharp knife, cut deep diagonal slits on both sides. Rub generously the seasoning mixture into the flesh and slights of the fish then coat the fish with cornstarch. Dust off excess.",
+      "Add vegetable oil to a large pan or wok (about 1 1/2″ high) and heat on medium-high. To test the temperature of the oil, drop a pinch of cornstarch into the oil. If it starts to sizzle, it’s ready to go. Carefully lower the fish, head first, into the oil. Pan fry for 5 minutes per side then transfer to a wire rack or a plate lined with paper towels. Serve immediately for best results."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Red Tilapia Fish",
+        "unit": "lb",
+        "notes": "1 large fish or two small ones; can substitute with other white flesh fish",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom",
+        "unit": "tsp",
+        "notes": "alt: chicken bouillon powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black",
+        "unit": "tsp",
+        "notes": "alt: white pepper",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fee96ad73b739b3b2e39b513caf98bf4847fb6871b1a7d03c1e8d07e81d586ea",
+    "lineage_hash": "18e9acb7e6692eaa142e4c249030db3c58165c3de15e465f354ff328750fab0e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/simple-fried-fish/",
+    "fetchedAt": "2026-08-01T18:55:54.694Z"
+  },
+  "rawSource": "https://vickypham.com/blog/simple-fried-fish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

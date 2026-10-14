@@ -1,0 +1,34 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-tiramisu",
+  "slug": "coconut-tiramisu_lacucinaitaliana_761cb907",
+  "title": "Coconut Tiramisu",
+  "byline": "by  Editorial staff   April 16, 2020",
+  "fetchedAt": "2026-08-02T22:27:31.794Z",
+  "ldName": "Coconut Tiramisu",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cocco,Dolce,Dolci,Dolci Al Cucchiaio,Tiramisu",
+  "ldIngredientsRaw": [
+    "null 1 prepackaged tiramisù kit (sponge cake, instant coffee, instant custard powder, and cocoa powder)",
+    "1C. mascarpone cheese",
+    "2 eggs",
+    "4 tbsp. shredded coconut",
+    "null Powdered sugar"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 prepackaged tiramisù kit (sponge cake, instant coffee, instant custard powder, and cocoa powder)",
+    "1 C. of mascarpone cheese",
+    "2  of eggs",
+    "4  of tbsp. shredded coconut",
+    "Powdered sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

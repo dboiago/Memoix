@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Apple and Star Fruit Juice",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put all ingredients in a blender and process until smooth.",
+      "Strain into serving glasses to get a clear juice and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fuji Apple",
+        "unit": null,
+        "notes": "peeled and cored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Fruits",
+        "unit": null,
+        "notes": "peeled and seeded",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pontianak/medan Oranges",
+        "unit": null,
+        "notes": "about 200 ml, juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "768eea67334379aae981e71d631f2df6ed29f548cc35495e1c0914fd9c38d821",
+    "lineage_hash": "0939b8e4d2b7da159e2f4cb48d93aa1e40c41ef976bcbd70a75ab270ba28ecf8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/apple-and-star-fruit-juice.html",
+    "fetchedAt": "2026-08-02T11:44:06.549Z"
+  },
+  "rawSource": "https://dailycookingquest.com/apple-and-star-fruit-juice.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

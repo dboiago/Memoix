@@ -1,0 +1,69 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-zucchini-pancakes/",
+  "slug": "chinese-zucchini-pancakes_omnivorescookbook_4c48d96c",
+  "title": "Chinese Zucchini Pancakes (糊塌子)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:42:49.337Z",
+  "ldName": "Chinese Zucchini Pancakes (糊塌子)",
+  "ldTime": "PT48M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT18M",
+  "ldYield": [
+    "6",
+    "6 pancakes (2 to 3 servings)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Breakfast, Brunch",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1  zucchini ((about 300 g / 10 oz))",
+    "1  green onion (, sliced)",
+    "1/2 teaspoon salt",
+    "2  eggs",
+    "1 teaspoon sesame oil",
+    "1/2 cup (75 g) all-purpose flour ((or more, if needed))",
+    "Oil spray",
+    "1 tablespoon Chinkiang vinegar",
+    "2 teaspoons light soy sauce ((or soy sauce))",
+    "1 teaspoon sesame oil ((or chili oil to taste))",
+    "1/4 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Use a coarse grater to grate the zucchini into thin strands into a large bowl. Add the green onion and the salt. Use your hand to mix well. Let sit for 15 minutes, until water seeps out of the zucchini. Reserve the liquid.",
+    "Add the eggs and mix well.",
+    "Sift the flour into the bowl. Mix until the flour is fully incorporated without any lumps. Do not over mix. The batter should be quite thin but not runny, and easy to flatten into a thin pancake using a spatula when added to the pan. You might need to add 1 to 2 tablespoons of water to the batter if it’s too thick. And if you’re using a very large zucchini, you might need to add extra flour to the batter to thicken it.",
+    "Mix all the ingredients for the dipping sauce together in a small bowl.",
+    "Spray a thin layer of oil in a small nonstick skillet over medium heat until hot. Add about 1/4 cup of the batter and spread it out with a spatula so it’s round and flat. Cook until the bottom turns golden brown, 2 minutes or so. Turn to the other side and cook for another 1 to 2 minutes, until the inside is just cooked. Transfer the pancake onto a plate. Repeat the process until all the batter is used.",
+    "Serve the pancakes hot along with the dipping sauce. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "97 kcal",
+    "carbohydrateContent": "9.9 g",
+    "proteinContent": "3.8 g",
+    "fatContent": "4.9 g",
+    "saturatedFatContent": "1.1 g",
+    "cholesterolContent": "62 mg",
+    "sodiumContent": "223 mg",
+    "fiberContent": "0.9 g",
+    "sugarContent": "1.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 zucchini (about 300 g / 10 oz)",
+    "1 green onion , sliced",
+    "1/2 teaspoon salt",
+    "2 eggs",
+    "1 teaspoon sesame oil",
+    "1/2 cup (75 g) all-purpose flour (or more, if needed)",
+    "Oil spray",
+    "[Dipping sauce]",
+    "1 tablespoon Chinkiang vinegar",
+    "2 teaspoons light soy sauce (or soy sauce)",
+    "1 teaspoon sesame oil (or chili oil to taste)",
+    "1/4 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

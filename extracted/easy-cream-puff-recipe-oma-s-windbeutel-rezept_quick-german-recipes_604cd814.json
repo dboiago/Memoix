@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cream Puff (Windbeutel)",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 400°F.",
+      "In a medium-sized pot, bring water, butter, and salt to boil, until butter is melted.",
+      "Remove from heat and add flour all at once, stirring until smooth and mixture comes away from the sides of the pan.",
+      "Return to heat and cook for 1 minute, stirring constantly.",
+      "Cool slightly (just a few minutes).",
+      "Using either a wooden spoon or a mixer, beat in eggs one at a time, mixing well after each one.",
+      "Drop by tablespoons onto a parchment-lined baking sheet, leaving space between puffs.",
+      "Bake 20 to 30 minutes or until golden and crisp. Do NOT open oven door during first half of baking or puffs will collapse.",
+      "Immediately upon removing from oven, cut a small slit in side of puff to release steam.",
+      "Prepare the filling by whipping the cream, sugar, and Whip It according to the package instructions.",
+      "Once cooled, either split puffs with a sharp knife and fill them with whipped cream or use a pastry bag to pipe the cream into the center of the puff through the side slit."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "240 milliliters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "114 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "130 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6feb9a1d49ad5b91eecd6d9d35d87583ee22a16d76625fab289cc8ff5f3b9cff",
+    "lineage_hash": "d21a73c77776f8d580c20f938bbfbb7dbf3654b8c8db3f730841095dfe6d07c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/cream-puff-recipe.html",
+    "fetchedAt": "2026-09-25T20:04:50.460Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/cream-puff-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

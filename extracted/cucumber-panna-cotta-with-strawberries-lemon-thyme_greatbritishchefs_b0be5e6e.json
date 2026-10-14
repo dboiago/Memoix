@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Cucumber Panna Cotta with Strawberries, Lemon Thyme and Honeycomb",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the strawberry dust. Place the strawberry slices on to a tray lined with greaseproof paper and place in the oven to dehydrate. This should take about 4 hours, or you could leave them overnight",
+      "Once dried out, finely chop the strawberries or blitz in a spice grinder to create a rough powder. Store in an air-tight container until ready to serve",
+      "To make the panna cotta, place the cream, milk and sugar in a pan and place over a low heat. Stir until the sugar has dissolved then add the diced cucumber. Bring to just under the boil then take off the heat and leave to cool and infuse for 30 minutes",
+      "Pour the cooled  mixture into a blender and blitz until smooth. Pour the mixture back into the pan through a fine sieve, pushing the cucumber pulp gently down with a spoon to extract all the flavour",
+      "Cut the gelatine into strips and soak in ice cold water for 5 minutes. Place the pan of cream back on the hob and gently reheat. Squeeze out all the excess water from the gelatine and stir into the pan. Continue mixing until completely dissolved",
+      "Leave the mixture to cool slightly then pour into dariole moulds or small pudding tins. Cover the tops with cling film and chill for at least 4 hours",
+      "To make your strawberry jelly, place the fruit in a pan, along with a splash of water and place on a medium-low heat. The strawberries will begin to slowly collapse and form a compote. This should take about 10–15 minutes",
+      "Meanwhile make the honeycomb, grease a baking tin with butter and mix the sugar and golden syrup together in a pan. Place over a low heat and stir until all the grains of sugar have dissolved. Turn up the heat, stirring all the while – the mix should quickly turn amber in colour",
+      "Stir in the bicarbonate of soda, then pour the foaming mixture into the lined baking tin – be careful as the sugar will be very hot. Leave to bubble and set for an hour or so, until it hardens and sets firm",
+      "Remove the strawberries from the heat and pour through a fine sieve into a bowl, pushing the pulp so all the juice strains through – you should end up with roughly 200ml of liquid. Cut the gelatine into strips and soak in ice cold water for 5 minutes",
+      "Place the juice back into the pan, gently heat and add the gelatine, having squeezed out any excess water. Now, there is a bit of a DIY route to setting the jelly – take a plastic ice cream tub (or similar) and pour in the strawberry mixture to create a layer of jelly approximately 1cm deep",
+      "Leave it to set in the fridge, along with the panna cotta. When fully set and firm, cut out circles with a pastry cutter, about the same size as the panna cotta moulds. Reserve in the fridge until ready to serve",
+      "To plate up, take the panna cotta moulds out of the fridge and gently warm up the sides. Experience has taught me that plunging moulds into a bowl of boiling water will turn your creamy-jelly into liquid in seconds. So, if you have a cook’s blowtorch to hand, use that",
+      "Turn the moulds upside down on to your plates, they should delicately plop out. Next, take your strawberry jelly discs and cut into the circle to create a crescent so that it fits snugly around the panna cotta",
+      "Smash up the honeycomb and scatter little chunks over the plate. Dress the fresh strawberries in a bowl with a little sugar and place on top of the honeycomb",
+      "Finish by scattering a line of strawberry dust in a straight line across the plate, along with some of the lemon thyme leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled, deseeded and cut into dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "topped and cut into dice",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "quartered",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "149733ba9eb9441f673587c96b54194feca92f1a2fc29a8b8b6ed00c5637417a",
+    "lineage_hash": "a73dacb00378433013b6b880a982320872461f4793a40e7d10faa5bd079196e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cucumber-panna-cotta-strawberries-recipe",
+    "fetchedAt": "2026-08-03T13:13:49.193Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cucumber-panna-cotta-strawberries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

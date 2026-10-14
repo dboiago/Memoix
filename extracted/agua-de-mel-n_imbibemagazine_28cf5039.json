@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Agua de Melón",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Goblet",
+    "garnish": [
+      "Mint Leaf"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sugar and water in a blender. Blend and taste for sweetness. Add the chopped cantaloupe and mint, then blend and strain into a pitcher. To serve, pour into an ice-filled goblet and garnish with a mint leaf."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cantaloupe",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4cc6cf9dcdb127bfd5e36b72305503e5a0f5e85928a12610aeb544e5c0ebe506",
+    "lineage_hash": "26e8873efa5d706fadf2c43b3c9bd1e686b29c29ba21d25959ac19fc25acfe4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/agua-de-melon/",
+    "fetchedAt": "2026-08-03T20:52:52.356Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/agua-de-melon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

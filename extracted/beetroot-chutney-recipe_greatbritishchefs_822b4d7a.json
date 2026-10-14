@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Beetroot Chutney",
+    "time": "2 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the beetroot into 1cm chunks. Place the diced beetroot in a saucepan with the dill, apple, onion, sugar and vinegar. Bring to the boil",
+      "Once boiling, turn down the heat and simmer slowly until the beetroot is tender, the liquid is reduced and sticky and the mix has a thick, jam-like consistency",
+      "Divide between sterilised jars, store in a cool, dark place and leave the chutney for a week or so to allow the flavours to develop and mature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Beetroot",
+        "unit": "g",
+        "notes": "raw, peeled",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple",
+        "unit": null,
+        "notes": "large, peeled, cored and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1701210d96e336044503b78f4308f00b75b12cd92b951c69c8bfc6b06f382cf",
+    "lineage_hash": "d4d67fdc93ce694ada58ef1313225384b3877e343a26566946be154eef36b750"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-chutney-recipe",
+    "fetchedAt": "2026-08-03T19:53:12.272Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-chutney-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

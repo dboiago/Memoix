@@ -1,0 +1,33 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-cumin-fudge-recipe",
+  "slug": "chocolate-cumin-fudge-recipe_greatbritishchefs_66cefa39",
+  "title": "Chocolate & Cumin Fudge Recipe",
+  "byline": "by Asma Khan",
+  "fetchedAt": "2026-08-03T18:53:13.687Z",
+  "ldName": "Chocolate and cumin fudge",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Petit four",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of 55% dark chocolate, chopped",
+    "550g of double cream",
+    "500g of caster sugar",
+    "75g of liquid glucose",
+    "1 tsp cumin seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the double cream, caster sugar and glucose in a pan. Place over a low-medium heat and allow to slowly come to the boil, whisking continuously",
+    "Bring to 118°C and remove from the heat, add the chocolate and cumin and whisk well by hand for 2 minutes",
+    "Cling film the bottom and sides of a 1inch deep tray. Pour in the fudge mixture and leave to set for at least 1 hour",
+    "Once set, slice into small cubes and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

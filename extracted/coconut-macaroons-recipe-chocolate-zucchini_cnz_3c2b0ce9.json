@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "French Coconut Macaroons",
+    "time": "12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F) and line a baking sheet with parchment paper.",
+      "Combine the coconut, sugar, and salt in a medium bowl. Add the egg whites and mix them in with a fork.",
+      "Scoop out rounded tablespoonfuls of this mixture and shape them into pyramids with the tips of your fingers; if you find this too tedious, rolling simple balls is fine.",
+      "Place on the prepared baking sheet and bake for 12 minutes, or until golden at the edges. Let set on the baking sheet for 2 minutes, and transfer to a rack to cool completely.",
+      "The rochers will keep for a few days, stored at room temperature in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "I use unrefined cane sugar",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fat Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b19655c7f90653ee1bccefe9f77a467eaccb612e1cefe654c659def995a2dce",
+    "lineage_hash": "de1db89500cbaddcdf9a2cac09bde12eb23653084a871bdea856797e4fdd9c7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/coconut-macaroons-recipe/",
+    "fetchedAt": "2026-09-30T19:20:17.538Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/coconut-macaroons-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,293 @@
+{
+  "recipe": {
+    "name": "Aubergine and Chocolate Cake",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before serving, prepare the smoked aubergine purée. Poke a few holes in the skin of the aubergine using the tip of a sharp knife. Place the aubergine over an open flame or barbecue and char until the skin is blackened and soft, then remove from the heat and place in a bowl. Cover the bowl with cling film and leave the aubergine to sweat as it cools",
+      "Once cool, remove the skin from the aubergine and squeeze out as much excess water from the flesh as possible. Place in a sieve or piece of muslin and leave to drain for 3 hours",
+      "Combine the candied citron, icing sugar and mint in a pestle and mortar and grind to form a paste. Weigh out 200g of the strained aubergine flesh and place in a bowl along with the paste. Stir until fully combined and refrigerate overnight until required",
+      "To prepare the smoked aubergine for the chocolate cake, arrange the halves on a baking tray and cook for 30–45 minutes, or until the skin is charred and the flesh is very soft",
+      "Meanwhile, prepare the chilli jam. Place all the ingredients in a large pan over a medium heat. Bring to the boil and cover the pan with a circle of baking paper. Turn the heat down as low as possible and cook gently for 1 hour",
+      "Remove the cooked aubergine from the oven and place in a bowl, covering tightly with cling film. Once cool enough to handle, use a spoon to scoop out the flesh from the skins into a sieve. Discard the skins and leave the flesh to drain over a bowl or sink for 2–3 hours to remove any excess liquid",
+      "Once the jam has cooked remove the baking paper from the pan and allow to cook for a further 10–15 minutes to achieve a jam-like consistency – the mixture will continue to firm up as it cools, so ensure that it doesn't overcook at this stage",
+      "Leave the jam to cool in the pan then transfer to a sterilised jar or sealed container and reserve in the fridge until ready to use – the jam will keep for up to 2 weeks",
+      "Preheat the oven to 175˚C/gas mark 4 and line a tray with baking paper",
+      "Meanwhile, prepare the chocolate crumble. Combine the dry ingredients together in a food processor and pulse until combined. Add the diced butter and pulse again until the mixture resembles rustic breadcrumbs. Pour evenly across the lined tray and bake in the oven for 12–15 minutes until crunchy, storing in an airtight container until required once cool",
+      "Once the excess liquid has drained from the aubergine flesh transfer it from the sieve into a bowl or tray and finely chop. Stir through the chopped mint leaves and set aside until required",
+      "Preheat the oven to 160°C/gas mark 4. Grease and line a 23cm cake tin with butter and baking paper",
+      "Place the butter and chocolate in a bowl set over a pan of barely simmering water, ensuring the bowl doesn't touch the water. Allow to melt gently, stirring the butter and chocolate together until fully combined. Remove the bowl from the pan and set aside to cool slightly",
+      "Meanwhile, whisk together the eggs and sugar in a large bowl for 10 minutes, or until pale and fluffy. Gently fold the melted chocolate mixture into the eggs, followed by the cocoa and ground hazelnuts",
+      "Mix a little of the chocolate mixture with the aubergine and mint to loosen the texture slightly, then fold this through the rest of the chocolate mixture until fully combined",
+      "Pour into the prepared cake tin and bake for 60–90 minutes, or until a skewer inserted into the middle of the cakes comes out almost clean – the cake should be cooked through but still be slightly moist. Leave to cool in the tin for 10 minutes then turn out on to a wire rack to cool completely",
+      "For the cocoa tuiles, place the fondant sugar in a small pan and warm over a gentle heat until it softens. Sift in the cocoa powder and mix in thoroughly until smooth and combined",
+      "While still warm, spread the mixture out on a silicone baking mat or large sheet of baking paper. Place another mat or layer of baking paper on top and roll out with a rolling pin to create a very thin layer. Allow to cool until firm and brittle, then snap into different shaped shards",
+      "To serve, dust the cake liberally with cocoa powder and slice into even portions. Spoon a little smoked aubergine purée onto each slice and sprinkle over chunky pieces of chocolate crumble, topping with shards of cocoa tuile. Serve with a spoonful of chilli jam on the side and a sprinkling of borage flowers to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergine",
+        "unit": "kg",
+        "notes": "halved lengthways",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sicilian Aubergine",
+        "unit": null,
+        "notes": "weighing 400g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Citron",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "kg",
+        "notes": "deseeded and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "deseeded and finely chopped",
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chillies",
+        "unit": "g",
+        "notes": "deseeded and finely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": "finely ground",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fondant Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Borage Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b0106bae4bb0a9aa3c7fcc231485c681b463562b5a7d9aef6f51108aed14629",
+    "lineage_hash": "3b52faf2df07f9ae10a4e1d8142b5156a4c681306782855b7f023c89b3e90819"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-chocolate-cake-recipe",
+    "fetchedAt": "2026-08-03T13:17:10.915Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-chocolate-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

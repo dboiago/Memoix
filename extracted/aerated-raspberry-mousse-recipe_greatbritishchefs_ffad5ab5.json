@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Aerated Raspberry Mousse",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the raspberry mousse. Combine the sugar and purée in a pan and gently warm to dissolve the sugar. Remove from the heat and place 75g of the purée in a separate pan with the gelatine (squeeze the leaves to remove excess liquid before adding). Mix until dissolved and set aside. Pour the remaining purée into a shallow tray or container and place in the freezer",
+      "Once the frozen mixture has reached a slushy texture, remove from the freezer. Warm the gelatine and raspberry mixture until it reaches 40°C, then transfer to a mixing bowl with the whisk attachment and mix at high speed. Slowly drip the slushy mixture down the side of the bowl while the whisk is running. Once fully incorporated, allow to mix for a further minute, then pour into a shallow tray so the mixture is 2cm thick. Freeze until ready to serve",
+      "For the sorbet, bring the water, sugar and glucose to the boil, then remove from the heat and allow to cool. Reserve 25ml of the liquid, and place the rest into a blender with the herbs. Blitz at high speed until you are left with a smooth green liquid. Pour the mixture through a fine sieve into a bowl, pushing the pulp with the back of a ladle",
+      "Warm the reserved liquid, add the gelatine and stir until dissolved. Combine with the herb liquid, then churn in an ice cream machine according to the manufacturer’s instructions",
+      "For the cocoa soil, place the flour and almonds into a blender and blend together into a coarse powder. Transfer to a mixing bowl with a paddle attachment, add the sugar and mix well. Slowly add the butter and mix until it resembles fine breadcrumbs. Pour out onto a baking sheet and loosely bring together before rolling to a 1mm thickness. Freeze",
+      "Preheat the oven to 170°C/gas mark 3. Place the frozen soil into the oven and cook for 10 minutes until light golden. Remove, allow to cool, mix in the cocoa powder and reserve in an airtight container",
+      "For the cacao nibs, place the sugar and glucose into a heavy-based saucepan and heat to 160°C. Remove from the heat and mix in the cacao nibs and butter. Pour out onto a silicone sheet, cover with greaseproof paper and use a rolling pin to roll the mixture out as thinly as possible. Allow to cool, then break into shards and reserve in an airtight container",
+      "Make the raspberry purée by blitzing the raspberries and caster sugar in a blender until smooth. Thicken with the Sosa Gel Cream then pass through a sieve to remove the seeds. Reserve in a squeeze bottle",
+      "Now you have all the elements of the dessert and are ready to plate. Remove the frozen mousse mixture from the freezer and cut out 4 circles 7cm in diameter. After 5 minutes they will have defrosted and become soft and airy in texture",
+      "Place a raspberry mousse in the centre of each plate. Take a spoonful of cocoa soil and scatter over the mousse, then arrange 5 raspberries around and intersperse with 5 dots of purée. Place a quenelle of herb sorbet on top of the mousse, then finish with 3 pieces of cocoa nib and scatter with the apple marigold leaves and sweet cicely flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel",
+        "unit": "g",
+        "notes": "ideally lamb's sorrel, washed",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "washed and picked",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena",
+        "unit": "g",
+        "notes": "washed and picked",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Balm",
+        "unit": "g",
+        "notes": "washed and picked",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spruce Tips",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "48",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Blanched Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "good quality",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sosa Gel Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Marigold",
+        "unit": null,
+        "notes": "leaves only",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Cicely",
+        "unit": null,
+        "notes": "flowers only",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7bf78301ace1b9346e5e049625ca80c9fe22454d17945904f4fb1e56bbb68d8",
+    "lineage_hash": "d68611ab4797d2424fe47a8c710ac067e00f65d2e1e1f8b97c8c50111213ba10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aerated-raspberry-mousse-recipe",
+    "fetchedAt": "2026-08-03T07:05:12.240Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aerated-raspberry-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

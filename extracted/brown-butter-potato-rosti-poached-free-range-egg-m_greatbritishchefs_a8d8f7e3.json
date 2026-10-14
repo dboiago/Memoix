@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Brown Butter Potato Rosti, Poached Free Range Egg, Mushroom Ketchup",
+    "time": "1 hr 45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the mushroom ketchup, add the vegetable oil to a pan and warm on a medium heat",
+      "Add the onion and sweat them off over a medium heat",
+      "Add the spices to the onions and cook out for a minute",
+      "Once onions are cooked add all remaining mushroom ketchup ingredients and cook until all the juices are reduced and the mushrooms are cooked through",
+      "Blend the mixture until smooth, then check seasoning and set aside for plating with the rosti and poached egg",
+      "For the rosti, brown the butter in a medium-sized pan, cooking until it starts to turn a nice light golden-brown",
+      "Remove the butter from the heat and add the picked thyme leaves. Put the pan to one side allowing the butter to cool and infuse",
+      "Using a cheese cloth or something similar, squeeze as much excess water out of the grated potato as you can",
+      "Now place the potato in a bowl and fold through 230g of the thyme-infused brown butter",
+      "Take a medium-sized non-stick frying that is oven-safe and place on the stove",
+      "Add the sunflower oil and bring up to a medium heat and add the grated potato and butter mix",
+      "Use a spatula to neatly press the potato into the bottom of the pan, pushing right to the edges",
+      "Turn down the heat and cook for a few minutes until it starts to brown",
+      "Once a few minutes have passed, and the rosti has started to colour, place the whole pan in the preheated oven",
+      "Cook the rosti for around 20 minutes, checking on it every 10 minutes so that it does not overcook or colour",
+      "Turn over the rosti and finish the cooking on the second side, again checking after every 10 minutes to make sure that it’s not browning or cooking too quickly",
+      "After 30–45 minutes of total cooking the rosti should be done. Remove from the oven and set aside for portioning and serving with the mushroom ketchup and poached eggs",
+      "To make the poached eggs, take a nice tall pan and fill it high with water and a splash of vinegar",
+      "Bring the water to just below boiling point",
+      "Crack the eggs into individual little dishes; this makes it easier to place them in to the hot water, and helps to avoid pieces of unwanted broken shell",
+      "Using a whisk, make a vortex in the hot water. Once the water is at a steady pace you can start the eggs one by one",
+      "Remove the egg from the hot water, drain off any excess water then serve with the portioned rosti and the mushroom ketchup, garnishing with picked chervil leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipping Potatoes",
+        "unit": "kg",
+        "notes": "peeled and coarsely grated",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5379201aa052c1fc4a0be0805f105ecc9569fecafa03436c815b4d0ce0cbc1d0",
+    "lineage_hash": "8e9d404faa959a69241e1fc4b93181ad69bdcf346a0cb6eeb0146cfc05dec4d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-butter-potato-rosti-poached-egg-recipe",
+    "fetchedAt": "2026-08-02T13:55:44.471Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-butter-potato-rosti-poached-egg-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

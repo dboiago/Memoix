@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Easter Egg Crunch",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chocolate eggs in the fridge for a few hours to harden",
+      "In a large bowl, mix the oil, maple syrup, honey and vanilla together",
+      "Tip in the rest of the granola ingredients and mix well",
+      "Pour onto a large baking sheet and spread out evenly. Toast in the oven for 25-30 minutes. Stir once and toast for 5-10 minutes more",
+      "Unwrap the eggs and carefully split in half using a blunt knife. Reserve any of the little bits that break off to use for decoration later",
+      "Mix half the raspberries through the yoghurt and place a small dollop in the centre of each plate",
+      "Balance each chocolate egg cup (half an egg) on each dollop and fill with the remaining yoghurt",
+      "Add a few large tablespoons of granola to each egg. Top with the reserved raspberries, broken chunks of chocolate egg and some honey"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Easter Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Vanilla Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "611a5717ee636193e392f1a2a37433f308d4cd3c38bd47b64b905e567a991e96",
+    "lineage_hash": "8cb8077eb5dc487050290422d74f88f3762376080b23f6ddec7e8d919b2d9834"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-egg-crunch-recipe",
+    "fetchedAt": "2026-08-03T19:40:31.310Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-egg-crunch-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Creole Gimlet",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lime Zest Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "214",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lime zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Express lime zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Cordial",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creole Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "002967f4679683824a903ecf0e4b17eb47bbe176939f0c35f24d7347c47b8c00",
+    "lineage_hash": "2de7a8ba938b48f0882f35349cf54b5a3ff76bdfb09e9f3646f2ca1b8173551c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2921/creole-gimlet",
+    "fetchedAt": "2026-08-03T08:15:48.621Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2921/creole-gimlet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

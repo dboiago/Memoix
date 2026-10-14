@@ -1,0 +1,58 @@
+{
+  "url": "https://thewoksoflife.com/chinese-cucumber-salad/",
+  "slug": "chinese-cucumber-salad_thewoksoflife_abf746c2",
+  "title": "Chinese Cucumber Salad",
+  "byline": "Kaitlin",
+  "fetchedAt": "2026-08-01T22:58:22.042Z",
+  "ldName": "Chinese Cucumber Salad",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "cucumber salad",
+  "ldIngredientsRaw": [
+    "6 cloves garlic ((minced very finely, almost like a paste))",
+    "3 tablespoons oil",
+    "2  English cucumbers",
+    "1 1/2 teaspoons salt or salt to taste",
+    "1 teaspoon sugar",
+    "1/8 teaspoon MSG ((optional))",
+    "1/4 teaspoon sesame oil",
+    "1 tablespoon rice vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "First prepare the garlic. When you’ve minced all of the garlic, set aside the equivalent of 1 clove.",
+    "Mix the oil and the rest of the garlic together, and set over medium-heat in a saucepan. Cook lightly for 2-3 minutes. Some foam will appear as the water in the garlic escapes. Do not let the garlic brown! This process takes about 2 minutes. Remove from the heat and let cool.",
+    "Chop the cucumbers into quarters lengthwise and then into ½-inch chunks. Transfer to a bowl. Add the garlic oil, salt, sugar, pinch of MSG if using, sesame oil, and rice vinegar. Finally, add the reserved minced raw garlic. Stir thoroughly to coat everything.",
+    "For the best results, let sit for at least 20 minutes in the refrigerator to let the flavors meld."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "86 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "1 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "778 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 cloves garlic (minced very finely, almost like a paste)",
+    "▢ 3 tablespoons oil",
+    "▢ 2 English cucumbers (or 8-10 Persian cucumbers; if you can't find seedless cucumbers like these, just de-seed regular cucumbers)",
+    "▢ 1 1/2 teaspoons salt or salt to taste",
+    "▢ 1 teaspoon sugar",
+    "▢ 1/8 teaspoon MSG (optional)",
+    "▢ 1/4 teaspoon sesame oil",
+    "▢ 1 tablespoon rice vinegar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

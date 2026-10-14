@@ -1,0 +1,50 @@
+{
+  "recipe": {
+    "name": "Cherry-Smoked Duck with Chipotle-Cherry Barbecue Sauce",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the duck inside and out under cold running water and blot dry with paper towels. Pull out and discard any excess lumps of fat from the cavities. Trim off the neck skin, leaving a 1-1/2 inch flap; fold and pin it to the back of the duck with a toothpick or small skewer. Fold the wingtips back and under the duck. Prick the duck skin all over with a needle or a fork with sharp tines, piercing the skin, but not the meat under it (this helps release the fat).",
+      "Time permitting, place the duck on a wire rack in the refrigerator and let air dry for 24 hours. Or blow-dry with a hair dryer set on the lowest temperature. This will give you crispier skin.",
+      "Make the rub: Combine the sugar, salt, pepper, cinnamon, and cumin in a small bowl and stir to mix. Season the front (neck) and main cavities of the duck with half of the rub. Place the cinnamon stick and shallot in the cavity.",
+      "Brush the outside of the duck all over with 1 tablespoon of olive oil. Sprinkle the outside of the duck all over with the remaining rub, rubbing it into the skin. I don’t bother trussing the duck. Though it won’t look as professional, it will get more exposure to the smoke if the cavity is left open.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 250ºF. Add the wood as specified by the manufacturer.",
+      "Place the duck on the grate with a drip pan underneath it. Smoke the duck until it reaches an internal temperature of 145ºF on an instant-read thermometer inserted into the thickest part of the thigh, but not touching bone, 2 to 2 1/2 hours.",
+      "Increase the smoker temperature to 350ºF (if possible with your smoker). Brush the duck all over with fat from the drip pan or more olive oil. Continue smoking until the skin is dark and crisp and the duck is cooked through, another 1 to 1 1/2 hours. (The Chinese eat their duck well done.) There are two ways to test for doneness. Wiggle one of the drumsticks: the leg should move freely. Or check the internal temperature of the thigh meat with an instant-read thermometer; it should register 175ºF. (Make sure the probe doesn’t touch bone, or you’ll get a false reading.)",
+      "Transfer the duck to a cutting board and let rest for 5 minutes, then carve and serve with the Chipotle-Cherry Barbecue Sauce on the side, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck (5 to 6 Pounds)",
+        "unit": null,
+        "notes": "thawed if frozen, giblets removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19510688a9d69cb628ae8c9b6125b179554beb8fc74ba85831d864769dedb04c",
+    "lineage_hash": "bfb2ca4bd7b80ee13397411abf145e2d3f9c7d8bd589a9ed5f1e9d73113c0d84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cherry-smoked-duck-with-chipotle-cherry-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T06:13:46.930Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cherry-smoked-duck-with-chipotle-cherry-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

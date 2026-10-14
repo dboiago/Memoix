@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Chocolate Freakshake",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt 50g of the chocolate in a bowl over a pan of simmering water, remove from the heat and whisk in 100ml of the double cream to make a smooth, glossy ganache. Transfer to a squeezy bottle or piping bag",
+      "Whip the remaining double cream and transfer to a piping bag fitted with a star nozzle",
+      "Blend the chocolate ice cream with the milk",
+      "Using a blowtorch, toast the marshmallow until golden",
+      "Line the inside and outside of a glass with lines of the chocolate ganache. Pour in the milkshake then add a large scoop of ice cream",
+      "Pipe the whipped cream around the top of the glass",
+      "Thread the marshmallow and chocolate brownie onto a wooden skewer and rest on top of the cream",
+      "Add the chocolate wafers, drizzle over some more chocolate ganache and grate over some dark chocolate",
+      "Finish with a couple of straws and serve straight away"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate Ice Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brownie Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marshmallow",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Wafers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fdf1015001ea412c407df1a2faed5828462a4217ffda6d7b7ed281959cd7dc3a",
+    "lineage_hash": "80bf541403fd9ceeaba9d21bef0e3e6e73781d57f26dff099e2d98cdea4b1018"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-freakshake-recipe",
+    "fetchedAt": "2026-08-03T12:21:08.943Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-freakshake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

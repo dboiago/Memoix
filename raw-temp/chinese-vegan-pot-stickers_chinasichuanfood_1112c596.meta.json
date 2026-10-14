@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-vegan-potstickers/",
+  "slug": "chinese-vegan-pot-stickers_chinasichuanfood_1112c596",
+  "title": "Chinese Vegan Pot Stickers",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:07:03.112Z",
+  "ldName": "Chinese Vegan Pot Stickers",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "50",
+    "50 making around 50 mini potstickers"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Breakfast, staple food",
+  "ldKeywords": "Potstickers",
+  "ldIngredientsRaw": [
+    "1  package of wrappers ( , around 50)",
+    "1  middle size eggplants ( , peeled and cut into small cubes)",
+    "1  garlic clove ( , mashed)",
+    "1/2 cup chopped coriander",
+    "1/2 cup chopped green onion",
+    "1/2 cup chopped shitake mushrooms",
+    "1  small bunch of mung bean noodles ( , soak in warm water for around 15 minutes and then cut into small sections)",
+    "1 tablespoon vegetable cooking oil",
+    "1 teaspoon salt or more to taste",
+    "1 tablespoon light soy sauce",
+    "1 teaspoon Chinese five spice powder",
+    "1 tablespoon warm water"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the eggplants, cut into small cubes and then soak the cubes in salted water for around 10 minutes. Transfer out and drain. This will help to reduce the oil absorbed by the eggplants in stir-fry process.",
+    "In a sauce pan, heat up around 1/2 tablespoon of vegetable cooking oil and then stir fry eggplants with mashed garlic until soft. Transfer out.",
+    "In a large bowl, mix stir-fried eggplants, mung bean sections, coriander, green onion and shitake mushroom with salt, light soy sauce and Chinese five spice powder.",
+    "Assemble the potstickers one by one.",
+    "Brush some oil on a pan; lay the potstickers and sauté with medium fire until golden brown. In order to make sure the potstickers are cooked toughly, I would suggest pouring around 1 tablespoon warm water after sauté the bottom side to golden brown. The theory is to steam other parts of the potstickers with vapour. Turn the potstickers over from time to time.",
+    "Transfer out when the water added are evaporated and potstickers become crispy again.",
+    "Serve immediately or with chili sauce you prefer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "34 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "124 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 package of wrappers  , around 50",
+    "1 middle size eggplants  , peeled and cut into small cubes",
+    "1 garlic clove  , mashed",
+    "1/2 cup chopped coriander",
+    "1/2 cup chopped green onion",
+    "1/2 cup chopped shitake mushrooms",
+    "1 small bunch of mung bean noodles  , soak in warm water for around 15 minutes and then cut into small sections",
+    "1 tablespoon vegetable cooking oil",
+    "1 teaspoon salt or more to taste",
+    "1 tablespoon light soy sauce",
+    "1 teaspoon Chinese five spice powder",
+    "1 tablespoon warm water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

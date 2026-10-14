@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Chilli Roast Cauliflower",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200ºC fan or 220ºC conventional",
+      "Cut the cauliflower into 6 equal wedges – make sure you keep a little of the stalk on each piece to keep the wedges together. Rinse under cold water and pat dry",
+      "Mix together the açi and tatli biber chilli pastes with olive oil and a little salt. Rub the mix all over the cauliflower wedges (you might want to wear a pair of gloves whilst you do this), then place onto a baking tray lined with parchment paper. Roast the cauliflower wedges for 10-13 minutes – the cauliflower should be cooked but still have a good bite to it",
+      "To make the sumac dressing, combine all the ingredients in a blender and blend until smooth. Set aside for later",
+      "Take the cauliflower wedges out of the oven and place them into a hot, dry non-stick frying pan. Dry fry each side of the cauliflower wedges for a minute or so to get a slight charring on the surface",
+      "Place a cauliflower wedge onto a large plate and top with parsley, red onion and pistachios. Drizzle with plenty of the sumac dressing and an extra sprinkling of sumac"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "large",
+        "notes": "leave some of the green leaves on if they're nice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "AçI Biber Salçası/turkish Hot Pepper Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tatli Biber Chilli Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flat-leaf Parsley Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "sliced as finely as possible",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "963d06a9ddeb2b7ce2f419b7745da28e8cf2f19a651be65ac2270f94b18b2bea",
+    "lineage_hash": "fc604cceaaeff6105547123d9c1343560e7fdf76b4e149f2cf5d92b48cf8a331"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-roast-cauliflower-recipe",
+    "fetchedAt": "2026-08-03T06:41:25.459Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-roast-cauliflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

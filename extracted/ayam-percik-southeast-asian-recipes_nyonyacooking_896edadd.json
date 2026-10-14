@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Ayam Percik",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "849",
+      "carbohydrateContent": "48",
+      "fatContent": "58",
+      "proteinContent": "40"
+    },
+    "directions": [
+      "In a large bowl, combine grated ginger, salt and turmeric powder. Rub the mixture onto the chicken thighs. Once done, set them aside to marinate.",
+      "Steam the marinated chicken thighs for 15  minutes and set them aside.",
+      "In a blender, add shallots, garlic cloves, shrimp paste and lemongrass. Blend until it becomes a smooth paste.",
+      "In a pan (oil it if it is not non-stick), cook chilli paste over medium to low heat for 1 to 2 minutes. Then, add the blended aromatics and cook over low heat for 15 minutes. Stir continuously before adding the coconut milk.",
+      "Add bruised lemongrass to the pan. Subsequently, add salt, sugar and tamarind paste. Continue stirring for another 15 minutes over low heat. The sauce should thicken once ready.",
+      "Place steamed chicken thighs into the gravy. Simmer for 5 minutes. Transfer the chicken onto a lined baking tray. Meanwhile, continue simmering the sauce for another 5 minutes before turning the heat off.",
+      "Bake the chicken thigh for 30 minutes at 200 degrees Celsius or until they are browned. Once ready, spoon some of the remaining sauce onto the cooked chicken. Serve with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": null,
+        "notes": "s",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "cm",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "s",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "s",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp Paste",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": null,
+        "notes": "white parts only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Paste",
+        "unit": "Tbsp",
+        "notes": "cili boh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalk",
+        "unit": null,
+        "notes": "s",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84c9170477d383210d50bab06f948ae2614a0ddc44395a485837e91aad62267b",
+    "lineage_hash": "e714ae5a7491c1952fe97e08e7c54ca3660529ca0d39287f9ea09497a8638913"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH",
+    "fetchedAt": "2026-08-01T16:24:31.464Z"
+  },
+  "rawSource": "https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

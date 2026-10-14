@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Cold-Brew Cider",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice and strain into a chilled glass with no ice. Topped with an orange peel.",
+      "Spiced Citrus Syrup:\n1½ cups orange juice\n2½ cups water\n2 cups brown sugar\n3 grams whole clove\n3 cinnamon sticks\n2 grams nutmeg\n5 grams cinnamon\nHalf of an orange, juiced & sliced",
+      "Boil ingredients together for 10 minutes and strain. Store syrup in the refrigerator when not in use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spiced Citrus Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Clove",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced & sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14f7b4810af5706741cd26e78622a69d743a1fe0647864d0e8f6248b8615376c",
+    "lineage_hash": "51195e0f776a0adf6aae4b29037e258418d21262648b8e0940022e83d4806c7c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-brew-cider/",
+    "fetchedAt": "2026-08-03T17:58:42.030Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-brew-cider/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

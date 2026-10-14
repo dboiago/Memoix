@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Cuban Cocktail No.3",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "162",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS lemon zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Gold Rum 1-3yo",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": "brandy",
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ffa8adf76629b03e00f3113cf53fc8b216ed5852dd02b6fccc16c270a5b4b9f2",
+    "lineage_hash": "2fd02a8667d05852e103a633513b95f98984659853c034e05031e5963aefff8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/606/cuban-cocktail-no3",
+    "fetchedAt": "2026-08-02T07:52:17.383Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/606/cuban-cocktail-no3",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

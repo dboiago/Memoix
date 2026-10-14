@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chinese Steamed Fish",
+    "time": "22 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "591",
+      "carbohydrateContent": "4",
+      "fatContent": "29",
+      "proteinContent": "73"
+    },
+    "directions": [
+      "Cut half of the scallion and ginger into small sections.",
+      "For decoration: shred scallion with a fork and then soak them in cold water.",
+      "Clean the fish completely and peel off any black skins in the stomach of the fish. Drain completely.",
+      "Watch the body shape if your fish. If it gets a thick back, cut a line and separate the back into two parts. Or if it gets thick stomach, cut 2 lines on the thickest meat, so the meat can be cooked in a shorter time and be kept as tender as possible. (Optional for fresh water fish only), spread a very thin layer of salt on the surface and stomach of the fish. Place scallion and ginger inside of the fish.",
+      "Place two scoops on the plates, or two sections of chopsticks and then place the fish in.",
+      "Bring enough water to a boiling in a large pot and place the fish in after the water boils. Start the count the time, steam 5 minutes and stand for 1 to 2 minutes.",
+      "Transfer the fish to a clean plate, discard the scallion and ginger and place the newly cut scallions. Heat around 2 tablespoons of cooking oil until almost smoky and pour the oil evenly on the scallion shreds.",
+      "Heat the seasoned soy sauce until warm and pour evenly on the plate. If your soy sauce is cold, pour them on the two sides of the fish, not over the fish.",
+      "Serve hot and should be finished within 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fish",
+        "unit": null,
+        "notes": "fresh, 500g to 700g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chunk of Ginger",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seasoned Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shred Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "optional for fresh water fish only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24f5546a03b6a8fcc2393d01485204057acac79d58d6670f9a11bbf3c2ce6c4f",
+    "lineage_hash": "786e6f8b0ef73c19ed3953ef311e36d14a1bd10981f8a8c87e42755b350f148b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-steamed-fish/",
+    "fetchedAt": "2026-08-01T19:44:40.684Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-steamed-fish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

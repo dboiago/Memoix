@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Anna's Revenge",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake and then strain into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Espadin Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strega",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52706b7271df7910fa85b8ec5189fca9f6cd5cac9077b1333eb4b9e1691cc2a0",
+    "lineage_hash": "d3ad138e51dc54bffc88440b15f500fd8675b822f7edd13a9fea90a6c96a0d42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/annas-revenge-a-mezcal-cocktail/",
+    "fetchedAt": "2026-08-04T01:08:20.886Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/annas-revenge-a-mezcal-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

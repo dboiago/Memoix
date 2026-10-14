@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Easy Egg Fried Rice (蛋炒饭)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "296",
+      "carbohydrateContent": "38.4",
+      "fatContent": "11.5",
+      "proteinContent": "9.1"
+    },
+    "directions": [
+      "Add oil to a large skillet and heat over medium-high heat until smoking. Pour in the beaten eggs. Wait until the bottom of the eggs is set. Lightly scramble the eggs until mostly set but some parts are still runny.",
+      "Add the rice on top of the runny egg. Use your spatula to chop the rice to separate it into small pieces, so some of the rice is coated with egg. Keep stirring and chopping the rice until the rice is well separated.",
+      "Sprinkle with salt and add the green onion. Keep cooking and stir occasionally, until the rice turns slightly golden and crispy, 2 to 3 minutes. Taste the rice. Adjust seasoning by adding more salt (or a touch of chicken bouillon or MSG), if needed. You can leave the rice in the pan for a couple more minutes after turning off the stove, so the rice gets even crispier.",
+      "(Optional) If you used a neutral oil like vegetable oil, add toasted sesame oil after turning off the heat. Stir to mix again.",
+      "Transfer everything to a plate and serve hot as a side dish or a light main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked White Rice",
+        "unit": "C",
+        "notes": "day-old rice works best",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste, and a pinch of chicken bouillon if preferred",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1385d02c300165f3803074f39d192c43ba781679823b69102ca2325d7f8fae7c",
+    "lineage_hash": "f725180c96753133c251631b0ab9dfcc4bb74ae059c29f581bb2e186e40e3129"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/egg-fried-rice/",
+    "fetchedAt": "2026-08-02T10:35:03.127Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/egg-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

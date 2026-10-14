@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chinese Egg Cake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "129",
+      "carbohydrateContent": "18",
+      "fatContent": "5",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 325°F/160°C with a baking rack positioned in the middle of the oven. Brush the cups of a standard 12-cup muffin pan lightly with neutral oil.",
+      "In a large bowl, sift the cake flour, and set aside.",
+      "Make sure the bowl of your stand mixer (or a large mixing bowl) is completely dry. Add the eggs, sugar, and honey. With the whisk attachment, turn your stand mixer (or hand-mixer with beater attachments) on medium speed for 2½-3 minutes until you almost have soft peaks. When you let the mixture run off the beater, it should fall in round ribbons. Be careful not to over-whip.",
+      "Using a rubber spatula, fold in the sifted cake flour. Then fold in the oil until well-incorporated. The batter should pour in flat ribbons at this stage.",
+      "Using a small ladle or ice cream scoop, fill the oiled muffin cups to about 90% full. Top each with a small pinch of sesame seeds or other chopped nuts of your choice. Immediately bake for 11-12 minutes until the cakes are lightly golden brown. Cool completely before enjoying."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as vegetable, canola, or avocado oil; plus more for brushing",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs (at Room Temperature; 4 Large Eggs Should Weigh About 190g Without the Shell))",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds (or Finely Chopped Nuts of Your Choice, Optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f624aa0534811eefd226bdb66414e799866624d822c99fcc83a28b6ff16c713",
+    "lineage_hash": "25ab9a93b4d2807bc971580405a87bf8dd7dcd317419cdb79380b5d6623cdce7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-egg-cake/",
+    "fetchedAt": "2026-08-02T15:58:38.642Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-egg-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

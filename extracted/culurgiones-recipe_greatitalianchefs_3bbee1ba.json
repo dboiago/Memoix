@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Culurgiones",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the potatoes in a large pan and cover with cold water. Bring to the boil and cook until the potatoes feel tender all the way through when pierced with a fork. Drain, peel, place in a bowl and mash with a fork or a masher while still hot",
+      "While the potatoes are cooking, put the garlic in the oil and leave it to infuse. Next, discard the garlic and add the infused oil to the mashed potatoes. Add the grated pecorino, mint and a generous dash of salt and stir to combine. Wrap with cling film and place in the fridge to cool for at least 1 hour",
+      "Make a dough by combining the flour, semolina and the salt with water and oil. Knead until you have an elastic, smooth ball. Wrap it in cling film and allow it to rest for 30 minutes",
+      "While the dough and filling are resting, prepare the sauce. Place the oil and the garlic in a medium saucepan set over a medium heat. Add the passata and 60ml water, cover and allow the sauce to cook for 30 minutes, stirring often. Taste and season",
+      "Remove the filling from the fridge. Unwrap the dough and roll it out over a well-floured working surface to about 1mm thickness. (You can use a pasta machine, too.) Cut out 8cm rounds of dough. Place a knob of filling at the centre of each round, then pinch and fold the base to seal it on one side. Keep pinching and folding the extremities to seal the top of the dumpling, working as you would a braid, first on one side and then on the other, until you’ve reached the other side. Place the finished culurgiones on a floured tray while you work",
+      "Bring a large pan of salted water to a rolling boil. Working in batches, cook the culurgiones in batches for 4 minutes, or for 2 minutes from when the come back afloat. Drain them with a slotted spoon and ease them on warmed-up plates over a bed of tomato sauce. Serve right away with roughly torn basil leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Floury Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino Sardo",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4244315731b03e912354173a3e53bc1631c66b7e3fd9b2051b0c2297405ac83f",
+    "lineage_hash": "e4ad4d0ae8162cd2d049b0c656533f6fe34f2f085e0ebc7a4018007055eb01ee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/culurgiones-recipe",
+    "fetchedAt": "2026-08-01T21:38:03.646Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/culurgiones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

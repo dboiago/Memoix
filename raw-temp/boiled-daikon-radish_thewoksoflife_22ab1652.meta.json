@@ -1,0 +1,59 @@
+{
+  "url": "https://thewoksoflife.com/boiled-daikon-radish/",
+  "slug": "boiled-daikon-radish_thewoksoflife_22ab1652",
+  "title": "Boiled Daikon Radish",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T08:13:07.161Z",
+  "ldName": "Boiled Daikon Radish: A Light, Healthy Side Dish",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Vegetables",
+  "ldKeywords": "boiled daikon",
+  "ldIngredientsRaw": [
+    "1 pound daikon radish",
+    "1 slice ginger",
+    "1 cup water or stock",
+    "1 tablespoon oyster sauce",
+    "½ teaspoon salt ((or to taste))",
+    "¼ teaspoon sugar",
+    "¼ teaspoon ground white pepper",
+    "1  scallion ((chopped))",
+    "1/4 teaspoon sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the daikon into half-inch thick, bite-sized pieces. In a pot, add 1 slice ginger, 1 cup water or stock (235ml), 1 tablespoon oyster sauce (16 g), ½ teaspoon salt (2 g), ¼ teaspoon sugar (1 g), ¼ teaspoon ground white pepper (a large pinch), and stir to combine. Add the daikon.",
+    "Cover and bring everything to a boil, then reduce the heat to medium. Cook for 20 minutes until the daikon is fork tender, stirring occasionally.",
+    "Right before serving, add in the chopped scallion, and a few drops of sesame oil (optional). Mix well and serve!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "28 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "441 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 pound daikon radish",
+    "▢ 1 slice ginger",
+    "▢ 1 cup water or stock",
+    "▢ 1 tablespoon oyster sauce or vegetarian oyster sauce",
+    "▢ ½ teaspoon salt (or to taste)",
+    "▢ ¼ teaspoon sugar",
+    "▢ ¼ teaspoon ground white pepper",
+    "▢ 1 scallion (chopped)",
+    "▢ 1/4 teaspoon sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

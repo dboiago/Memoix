@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cookie Butter",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend the cookies until they become a fine powder.",
+      "Combine with the chopped white chocolate. Heat the milk with the honey and the cane sugar.",
+      "Once it begins to boil, pour it over the chocolate and cookies and combine well, then add in the oil.",
+      "Let the cream set before distributing it into jars."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Speculoos Cookies",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5f105045433d54dcafdc65685aef73c5154ca569b1e2a00ad0b326585620de5",
+    "lineage_hash": "1987c98342d1985722ec61a360ca203d9ea46a0d130df1b59d1ce59edcb2803e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cookie-butter",
+    "fetchedAt": "2026-08-03T08:10:33.599Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cookie-butter",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

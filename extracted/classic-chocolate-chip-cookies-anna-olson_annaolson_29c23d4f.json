@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Classic Chocolate Chip Cookies",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cream the butter with the brown sugar and granulated sugar together well by hand. Beat in the egg and the vanilla.",
+      "In a separate bowl, sift the flour with the cornstarch, baking soda and salt. Add this to the butter mixture and stir until blended. Stir in the chocolate chips and pecans (if using).",
+      "Using a small ice cream scoop or a tablespoon, scoop spoonfuls of dough (about 2 Tbsp/30 mL), shape them into a ball and place onto a parchment lined baking tray or a plate. Chill the scooped cookies for at least an hour, or once chilled, the cookies can be frozen for baking later.",
+      "Preheat the oven to 325 °F (160 °C). Arrange the chilled scooped cookies onto parchment-lined baking trays, leaving 3 inches (7.5 cm) between the cookies. Bake for 15-17 minutes, until browned around the edges. Cool the cookies on the baking tray."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lightly Toasted",
+        "unit": "C",
+        "notes": "coarsely chopped pecans, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b43afff265ad8a2c07c98c95283381e7eb28d5757fad2fdbdea45a746634f0aa",
+    "lineage_hash": "2a58d8eba195d22268c8d7d907ae1e06cbca6544ff349e4d3a1198be20528ab6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-chocolate-chip-cookies/",
+    "fetchedAt": "2026-08-02T00:05:05.462Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-chocolate-chip-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

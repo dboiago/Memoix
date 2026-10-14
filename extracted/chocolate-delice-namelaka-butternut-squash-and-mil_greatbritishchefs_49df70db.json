@@ -1,0 +1,508 @@
+{
+  "recipe": {
+    "name": "Chocolate Delice, Namelaka, Butternut Squash and Milk Sorbet",
+    "time": "4 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the squash panna cotta, bring the milk, cream, spices and orange peel to the boil and then remove from the heat and leave to infuse for 15 minutes",
+      "Whisk the egg yolks and sugar together in a bowl",
+      "Bring the spiced milk mixture back to a simmer, then slowly pour over the sugar and egg yolk mixture",
+      "Return the panna cotta mixture to the pan and heat to 83°C, then pass through a fine mesh sieve",
+      "Whisk in the maple syrup, gelatine and butternut purée, then set aside to cool",
+      "Place the panna cotta moulds onto a plastic tray and pour the panna cotta mix into them",
+      "Freeze in the blast chiller for 3 hours or in a freezer for 24 hours",
+      "For the banana bread, cream the butter and sugar together, then incorporate the eggs one by one",
+      "Sift the flour and baking powder into the bowl",
+      "Dissolve the bicarbonate of soda in the water and add to the mix",
+      "Place in a lined gastronorm covered with tin foil",
+      "Bake at 160°C fan speed 3 for 70 minutes",
+      "Check with a cake tester that there is no liquid batter left, then set aside",
+      "For the mousse, make a simple stock syrup by bringing the sugar and water to the boil, and then boiling hard for 30 seconds. Remove from the heat and let cool slightly",
+      "Whip the egg yolks in a stand mixer until doubled in volume",
+      "Add the gelatine to the stock syrup, and whisk until dissolved",
+      "Slowly pour the gelatine and syrup mixture into the eggs, and then whisk until cool",
+      "Fold the egg mixture into the melted chocolate",
+      "Fold the chocolate mixture in increments into the whipped cream",
+      "Pipe the mousse into the moulds then top each mousse with a thin slice of banana bread, cut to the shape of the mould",
+      "Leave to set in the freezer or blast chiller overnight",
+      "For the milk sorbet, bring all of the ingredients except the gelatine to the boil",
+      "Pass through a fine chinoise, then chill overnight",
+      "Churn in an ice cream maker once ready to serve",
+      "Once the panna cotta has fully frozen, bring all the ingredients for the orange glaze to the boil in a small saucepan while whisking. Let cool to 15°C",
+      "Dip the panna cotta into the glaze 2–3 times, using a cocktail stick to hold it",
+      "For the dark chocolate glaze, bring the water, cream and sugar to the boil",
+      "Add the cocoa powder and gelatine and whisk until smooth",
+      "Pour the cream mixture gradually onto the dark chocolate and blend with a stick blender until smooth",
+      "Remove the mousses from their moulds, using the banana bread to help you",
+      "Set the mousse banana bread side down onto a wire rack over a tray",
+      "Pour the glaze over the mousse, then tap the rack so any excess glaze falls off",
+      "Use a small step palate knife to lift them up and onto a greaseproof sheet, then store in the fridge until needed",
+      "Heat the water and sugar for the chocolate crumb to 121°C",
+      "Pour over the chocolate and mix with a wooden spoon until a crumb is formed. Cool on a tray",
+      "For the namelaka, bake the white chocolate for 5 minutes, and then stir. Repeat until the chocolate is lightly caramelised, about 25–30 minutes, then set aside",
+      "Bring the milk and glucose to the boil, and then remove from the heat and add the gelatine and the caramelised chocolate",
+      "Set aside to cool slightly, then add the cream and blend in with a hand blender. Chill in the fridge. It will seem very liquid at first, but once it sets in the fridge it will have a beautiful, buttery texture",
+      "For the toasted hazelnuts, bring the sugar and water to the boil to 117°CAdd the nuts and stir continuously until the water has evaporated, then remove it from the heat. Keep stirring until nuts are sticky and candied and it will look like they’re coated in granulated sugar",
+      "Return to a medium heat and stir until  the sugar has melted and then caramelised",
+      "Season the hazelnuts which a pinch of salt, and then carefully separate into individual pieces",
+      "To serve, place a spoon of milk sorbet on top of the chocolate crumb. Add a dab of namelaka to the plate, and top with a hazelnut. Put the orange-glazed panna cotta besides the nut, then the chocolate delice. Garnish the delice with gold leaf"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "bloomed in warm water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Banana",
+        "unit": "g",
+        "notes": null,
+        "amount": "675",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "195",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "bloomed in warm water",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": "whipped to very soft peaks",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "62",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": "strained",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kappa-carrageenan",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": "sugar",
+        "amount": "420",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "bloomed in cold water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "133",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "g",
+        "notes": "cooled",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6814aa57668d7820b502b67af964911364e71f9147b7bef117c387453df253a",
+    "lineage_hash": "aceb58e4310dcc32dc5080356ec52af768d2a33facdc083982d322ac4d9dd1c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-delice-namelaka-butternut-squash-milk-sorbet-recipe",
+    "fetchedAt": "2026-08-02T10:36:30.640Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-delice-namelaka-butternut-squash-milk-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Bento Box - Shigureni Bento (Beef and Burdock)",
+    "time": "10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "While the rice is still hot or warm, place it in the largest compartment of the bento box, allowing for the Shigureni to be placed on top. Let it cool.",
+      "Boil water in a pot, add a couple of pinches of salt. Blanch asparagus spears for a minute or so. Drain and rinse under running water to cool them down quickly, then cut them to about 4-5cm long pieces (note 6).",
+      "Place the Shigureni on the rice so that the rice is completely covered. If there is sauce left in the container of the Shigureni, pour the sauce over it.",
+      "Put Simmered Pumpkin pieces in one of the empty compartments. If your bento box does not have compartments, you may want to use a paper cupcake liner to put it in. Since the pumpkin does not come with sauce, having a partition is not so critical.",
+      "In the other empty compartment, place tomato wedges and asparagus.",
+      "Put the Senmai-zuke Daikon in a foil or paper cup and place the cup next to the asparagus."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": "note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quantity of Braised Beef and Burdock with Ginger (shigureni) Recipe (note 2)",
+        "unit": null,
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simmered Pumpkin",
+        "unit": "pcs",
+        "notes": "note 3",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Senmai-zuke Daikon",
+        "unit": "slices",
+        "notes": "note 4",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spears Asparagus",
+        "unit": null,
+        "notes": "end trimmed (note 5)",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Wedges",
+        "unit": null,
+        "notes": "or mini tomatoes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bento Box of Your Choice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd3c13e5e8c64a77bd70c522c9ff07234983a244d2fc15734976d3ec2f7a1bd1",
+    "lineage_hash": "849dcb56798b1fcfccb2e4d5a2cd1321da64b60f7b259397985115a0c3d07c8d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/bento-box-shigureni-bento/",
+    "fetchedAt": "2026-08-01T18:41:25.443Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/bento-box-shigureni-bento/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

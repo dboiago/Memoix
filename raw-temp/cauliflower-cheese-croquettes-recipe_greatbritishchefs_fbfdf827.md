@@ -1,0 +1,9 @@
+My weekly menu these days is based on the following principles; is it something that we can all eat, does it deliver on the ‘rainbow factor’, does it taste good, is it quick to make and can we cook it together? The last point is important because there are repeated demonstrations of my little boy’s best manners when he wants to get involved with the cooking, ‘mumma please may I help you, it will be educational for me’.
+
+Today the answer was, ‘yes of course’ and oh my, these croquettes smelt incredible; pillows of lightly sweet potato and mellow cauliflower with a subtle aniseed flavour from the [fennel](https://www.greatbritishchefs.com/ingredients/fennel-recipes) seeds and most importantly, the creamy and oozy [cheese](https://www.greatbritishchefs.com/ingredients/cheese-recipes). I generally love anything with a crunch and there is certainly lots of pleasure to be had as the crisp shell gives way to a steaming molten cheese filling.
+
+I know this sounds a little bizarre but I also got that feeling when eating chips on a cool walk home with my dad when I was a child, or in Brighton with my husband (before kiddo was born)…sitting in the car and listening to the radio and watching the waves. Except these croquettes have that ‘special’ factor.
+
+A bold but not overpowering cheddar works really well with the delicately sweet and moist flavours of [cauliflower](https://www.greatbritishchefs.com/ingredients/cauliflower-recipes) and potato. Its creamy, oozy and yet gentle enough to balance out the dish.
+
+Make sure to bake the potatoes and steam the cauliflower and avoid the temptation to boil them; boiling them will leave them wet and overly moist. You can spice the croquettes up more if you like and I have used panko breadcrumbs to give it a deeper crunch, but you don’t have to, the croquettes still taste great with standard breadcrumbs. I served them with harissa, but they’re also good with red pepper ketchup!

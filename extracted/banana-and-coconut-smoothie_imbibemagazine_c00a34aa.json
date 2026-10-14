@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Banana and Coconut Smoothie",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate in a double boiler or the microwave, and toast the coconut in a dry frying pan just till golden brown. Dip the rims of two chilled glasses into the melted chocolate, then press into the coconut. Return glasses to fridge. In a blender, add the bananas, yogurt, milk and maple syrup and whir until frothy. A few drops of yellow food coloring can be added if desired, or extra maple syrup for a sweeter smoothie. Pour into prepared glasses."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "ripe, peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "chilled",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "oz",
+        "notes": "regular or dark",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "Tbsp",
+        "notes": "shredded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "686ab65ae36f237b9c122a7bbbc10b2be635b170e7c88d6eadedd6b29d295682",
+    "lineage_hash": "d0190ccfb509b79dc8989a1fd7c5802bf6e388423487b88d7a2df2e572eedfbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/banana-and-coconut-smoothie/",
+    "fetchedAt": "2026-08-03T23:22:05.502Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/banana-and-coconut-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

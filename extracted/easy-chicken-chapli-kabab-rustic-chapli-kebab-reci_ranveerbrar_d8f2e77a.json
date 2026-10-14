@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Chicken Chapli Kabab",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken mince, tender coriander stems, onions, tomato, green chillies, ginger, fresh coriander leaves, whole egg, salt to taste, boiled eggs, salt to taste, gram flour and give it a good mix.",
+      "Wet the hands with water, take a portion of prepared mixture, place the tomato slice on one side and give it the desired shape.",
+      "In a pan, add oil, once it's hot, place prepared kebabs and cook it 4-5 minutes until golden in colour on both the sides.",
+      "Transfer it to a serving platter, garnish it with coriander sprig and pomegranate pearls.",
+      "Serve hot with prepared onion salad and green chutney.",
+      "In a bowl, add onion, roasted cumin, salt to taste, lemon juice, degi red chili powder and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a bowl, add onion, green chillies, fresh coriander leaves, fresh mint leaves, tamarind pulp, salt to taste, degi red chili powder, ginger and mix it well.",
+      "Transfer it to a mixer grinder jar and grind it into a smooth paste.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Mince",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tender Coriander Stems",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "seedless & finely chopped",
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & finely chopped",
+        "amount": "3",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Whole Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Boiled Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kebab Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Onion Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Onion Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Onion Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Onion Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "4",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "1",
+        "section": "For Green Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for shallow frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Pearls",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48a455e7bc52d31f979098041bbfa9a789793d4a940231a712b34e5fc7e9f6b4",
+    "lineage_hash": "82bdb373504114bd16bc5487f41ef88c7dd48e1d7878208bab2423771e730ca9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-chapli-kabab/",
+    "fetchedAt": "2026-08-02T19:06:56.914Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-chapli-kabab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

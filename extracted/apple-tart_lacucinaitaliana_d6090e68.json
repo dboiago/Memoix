@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Apple Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make a soft apple tart, use an electric mixer to whip the butter and the sugar together.",
+      "Continue to mix, adding the eggs one at a time and the grated zest of 1 lemon, then the flour.",
+      "Peel, core, and slice the apples.",
+      "Transfer the dough to a buttered and floured tart pan, top with the apples.",
+      "Bake at 350°F for about 30 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "plus extra for the pan",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "plus extra for the pan",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Apples",
+        "unit": null,
+        "notes": "like the Pink Apple of the Sibillini mountains",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c93ca8c3d541e2bf68b815697ae23eafd94838a54bebe171f0df01a614fac31",
+    "lineage_hash": "9a773bb701e3dea1c872628dd821f6f9e1492d350f5deddffbbbd5f59776994f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-tart",
+    "fetchedAt": "2026-08-02T14:26:18.314Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apple-tart",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

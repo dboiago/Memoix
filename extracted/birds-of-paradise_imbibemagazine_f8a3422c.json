@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Birds of Paradise",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Pebble",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle strawberry, cucumber, and syrup together in the shaker. Add rest of ingredients and ice to the shaker. Shake and double strain over pebble ice in a glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1, rich",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry",
+        "unit": null,
+        "notes": "fresh whole",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "slices",
+        "notes": "hot house",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Bitters",
+        "unit": "dash",
+        "notes": "Le-Lim uses Fee Brothers",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e8d3fde6d945becbae3a5faec864e3dd08f077d32949aa4aea8d2f904e50c20",
+    "lineage_hash": "a9229a39b8f3666894f0893ee38595fd3e601fb8d0551217ab4574c5010dc48b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/birds-of-paradise/",
+    "fetchedAt": "2026-08-03T20:26:45.000Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/birds-of-paradise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Clam with Glass Noodles",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "206",
+      "carbohydrateContent": "13",
+      "fatContent": "15",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Soak the freshly bought clam with a very small pinch of salt and oil, so they can spit sands.",
+      "Then heat a large pot of water to a boiling, add ginger and then cook the clams until opened. Don’t over cook in this step. This helps to remove the odd taste.",
+      "In the claypot, place golden needle mushroom in bottom. Then pre-soaked glass noodles in middle and blanched clam on top.",
+      "In a small pan, add 3 tablespoons of vegetable cooking oil and fry garlic, ginger, scallion and chili peppers until aromatic. Add oyster sauce, light soy sauce, salt, sugar and black pepper. Mix well.",
+      "Add 1 cup of water along with the edges . Spread the garlic sauce on the surface of the claypot and cook fro 10 mins.",
+      "Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clam",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Needle Mushrooms",
+        "unit": "g",
+        "notes": "remove the ends",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Glass Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d47f1f77000a5fd11a87ac7dd90d097ac74895972b20220a822ae8f73423b95e",
+    "lineage_hash": "0ceaa8d5d16a291653508e442a5a4931612323da7dcfe08343c1ea907d30a467"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/clam-with-glass-noodles/",
+    "fetchedAt": "2026-08-02T07:15:37.670Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/clam-with-glass-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Asian Instant Pot Chicken and Rice",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": "46",
+      "fatContent": "10.9",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "Place the jasmine rice in a big bowl and add a few cups of water. Gently rub the rice with your fingers a few times, then drain the water. Repeat 2 times, drain the rice and set aside.",
+      "Sprinkle salt and ground black pepper on the chicken. Let marinate while preparing other ingredients.",
+      "Add peanut oil to Instant Pot and press “Saute”. Preheat for 5 minutes or until it shows “Hot” on your Instant Pot Screen. If using a pressure cooker, heat oil over medium heat on a stove until hot. Add the onion. Cook and stir for 3 minutes. Add the garlic, ginger, and cumin powder. Cook for 30 seconds to release the fragrance.",
+      "Turn off “Saute” function. Add chicken broth. Use a wooden spatula to release any brown bits that are stuck on the bottom. It’s important to do this step before adding the rice, so the hot pan won’t scorch the rice.",
+      "Add the carrot and pepper. Spread the rice in the pot as evenly as possible. Top with the chicken thighs without overlapping. Drizzle soy sauce in the pot without stirring.",
+      "Close the lid and seal the valve. Set to “Manual” for 10 minutes. For pressure cooker, cook sealed over medium heat until pressure is added, turn to medium-low heat immediately. Cook under pressure for 10 minutes.",
+      "Once done, let the pressure release naturally for 8 minutes, then use fast release. Shred the chicken with two forks.",
+      "Drizzle with sesame oil and add the sesame seeds and green onions, if using. Mix everything well and serve hot as a main. (*Footnote 2)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uncooked Jasmine Rice",
+        "unit": "C",
+        "notes": "240 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs (about 1 Lb / 450 G)",
+        "unit": null,
+        "notes": "*Footnote 1, boneless, skinless, or 2 chicken breasts",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or olive oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "or 1/4 teaspoon ginger powder, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Chopped",
+        "unit": null,
+        "notes": "yields 2/3 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper Chopped",
+        "unit": null,
+        "notes": "yields 1 cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil and Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion for Garnish",
+        "unit": "Tbsp",
+        "notes": "Optional, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33aaf5c5a977230bb34251d874b2af91075149b5d9684abbe56cacb708acad7f",
+    "lineage_hash": "05970f93360c78da7df745970125cfe82fa98bde8a73d1e96253ba02cceb03db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/asian-instant-pot-chicken-rice/",
+    "fetchedAt": "2026-08-01T23:36:31.276Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/asian-instant-pot-chicken-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

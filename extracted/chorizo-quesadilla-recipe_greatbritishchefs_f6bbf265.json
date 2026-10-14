@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chorizo Quesadilla",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk together all of the ingredients for the sauce in a bowl until smooth and combined. Set aside while you make the quesadillas",
+      "Slice the chorizo into long strips and cook in a frying pan until charred and cooked through – don't add any oil while cooking the chorizo as they will release plenty of fat. Cook in batches if you can't fit them all at once. Drain the chorizo on kitchen paper and set aside",
+      "Drain off some of the oil from the pan, return it to the hob and add the spring onions. Sauté for a couple of minutes until just soft and add the spinach",
+      "Cook, stirring continuously, until all of the spinach has wilted and the water has evaporated. Season with salt, pepper and chilli flakes and give it one final mix. You can make this a day or two ahead and refrigerate until ready to use",
+      "To assemble, heat a tortilla in a pan.\r\nSmear the spicy sauce onto it, top with the spinach mix and arrange the grilled chorizo over the top. Sprinkle generously with the grated Gruyère cheese, drizzle over some more hot sauce if required and top with a second tortilla",
+      "On a medium heat, cook the quesadilla until the cheese has melted and the mixture has warmed through, around 3–4 minutes. Slice into wedges, grate more cheese on top while still warm or drizzle over some more hot sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": "plain",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "Classic, grated",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "washed and drained",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": "or more for a less spicy finish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "tsp",
+        "notes": "or sour cream",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70a8050bb1bd39bdfb6d0a7fbf34f70d8760ea78bcb55862c18f98efa736f8e3",
+    "lineage_hash": "bad1186139ec4421fca3c483e30ce9397fe0b1bf69cf9f7b4ecb4d62551fb735"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-gruyere-quesadilla-recipe",
+    "fetchedAt": "2026-08-03T14:15:42.214Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-gruyere-quesadilla-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

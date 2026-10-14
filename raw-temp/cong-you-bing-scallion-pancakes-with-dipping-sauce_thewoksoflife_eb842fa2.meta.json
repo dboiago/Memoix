@@ -1,0 +1,70 @@
+{
+  "url": "https://thewoksoflife.com/scallion-pancakes-with-garlic-soy-dipping-sauce/",
+  "slug": "cong-you-bing-scallion-pancakes-with-dipping-sauce_thewoksoflife_eb842fa2",
+  "title": "Cong You Bing Scallion Pancakes with Dipping Sauce",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T04:02:18.250Z",
+  "ldName": "Cong You Bing Scallion Pancakes with Dipping Sauce",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizers and Snacks",
+  "ldKeywords": "scallion pancakes",
+  "ldIngredientsRaw": [
+    "1 ½ cups all-purpose flour",
+    "½ cup hot water",
+    "2  scallions ((thinly sliced))",
+    "Salt",
+    "Vegetable oil",
+    "1 tablespoon toasted sesame seeds",
+    "1 tablespoon soy sauce",
+    "1 teaspoon Chinese black vinegar",
+    "1 tablespoon water",
+    "1/8 teaspoon sugar",
+    "1 clove garlic ((finely minced))",
+    "1 tablespoon scallion ((chopped))"
+  ],
+  "ldInstructionsRaw": [
+    "In a mixing bowl, add the flour and hot water and stir until it forms a dough.",
+    "On a floured surface, knead the dough for five minutes until smooth. Place back in the bowl, cover with plastic wrap or a clean towel, and allow it to rest for 30 minutes. While the dough is resting, you can slice your scallions and assemble the dipping sauce.",
+    "After those thirty minutes are up, cut your dough into three equal pieces. Take a rolling pin and roll each piece into a seven-inch circle. Each time you roll, pick up the dough and turn it a quarter-turn to the left (or the right...we’re not picky). This gives you a perfect circle every time, and prevents the dough from sticking to the board.",
+    "Brush each circle with some oil, and sprinkle with salt and scallions. Roll the dough into a cigar shape. Then coil that around itself like a snail. Then roll that out into a pancake about six inches in diameter (you don’t want it to be too thin).",
+    "Sprinkle with sesame seeds and press them lightly into the dough. Repeat this process with the other two pieces of dough.",
+    "Heat a nonstick pan or cast iron skillet with about a tablespoon of oil. Fry each pancake, about 3 minutes per side, until golden brown. Cut into wedges and serve with your dipping sauce."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "249 kcal",
+    "carbohydrateContent": "37 g",
+    "proteinContent": "6 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "6 g",
+    "sodiumContent": "546 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[PANCAKES]",
+    "▢ 1 ½ cups all-purpose flour",
+    "▢ ½ cup hot water",
+    "▢ 2 scallions (thinly sliced)",
+    "▢ Salt",
+    "▢ Vegetable oil",
+    "▢ 1 tablespoon toasted sesame seeds",
+    "[SAUCE]",
+    "▢ 1 tablespoon soy sauce",
+    "▢ 1 teaspoon Chinese black vinegar",
+    "▢ 1 tablespoon water",
+    "▢ 1/8 teaspoon sugar",
+    "▢ 1 clove garlic (finely minced)",
+    "▢ 1 tablespoon scallion (chopped)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

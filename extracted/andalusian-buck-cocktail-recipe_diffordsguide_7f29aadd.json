@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Andalusian Buck",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": "Collins",
+    "garnish": [
+      "Skewered Lime Slice Wheel"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "151",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Open shaker and slowly pour ginger beer over other ingredients in shaker, then strain into ice-filled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amontillado Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbc79c36ffa9feef4f9f89fa23df2cdd3af9a746d553788d630dd071c1078926",
+    "lineage_hash": "33d142314005b4369aeb4c82b5d6f6b3c5c27bffc5b63cd75498c7558b02bae5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/19256/andalusian-buck",
+    "fetchedAt": "2026-08-03T18:51:29.215Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/19256/andalusian-buck",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

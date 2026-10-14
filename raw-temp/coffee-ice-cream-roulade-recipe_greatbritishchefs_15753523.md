@@ -1,0 +1,5 @@
+I was asked to come up with a recipe using, or complementing, Häagen-Dazs' new coffee ice cream. That's a tall order, since their ice creams are already pretty tasty in their own right.
+
+I like pairing flavours and playing with textures. In this recipe, I married the simple light [almond](https://www.greatbritishchefs.com/ingredients/almond-recipes) sponge scented with [vanilla](https://www.greatbritishchefs.com/ingredients/vanilla-recipes), with the cool, soft and prominent coffee flavour of the ice cream. The roulade recipe was inspired by TV cook Anna Olsen, who has a great recipe for a lemon sponge roulade.
+
+Once roasted, coffee has a slightly 'nutty' flavour anda deep complexity to it. One of the most famous pairings is coffee and [walnut](https://www.greatbritishchefs.com/ingredients/walnut-recipes), like a classic coffee cake. Almonds are another classic match with coffee. The idea to add vanilla to the recipe comes from the classic Italian affogato; vanilla ice cream topped with espresso – a coffee dessert served along with your favourite coffee. Enjoy!

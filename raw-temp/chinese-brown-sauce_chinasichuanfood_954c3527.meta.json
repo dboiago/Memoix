@@ -1,0 +1,50 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-brown-sauce/",
+  "slug": "chinese-brown-sauce_chinasichuanfood_954c3527",
+  "title": "Chinese Brown Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-02T09:44:04.513Z",
+  "ldName": "Chinese Brown Sauce",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 tbsp. light soy sauce",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. vegetable cooking oil",
+    "2 cloves garlic (minced)",
+    "1/4 tsp. sugar",
+    "1/4 tsp. white pepper",
+    "1/2 tbsp. sesame oil",
+    "1 cup water",
+    "2 tbsp. cornstarch"
+  ],
+  "ldInstructionsRaw": [
+    "Mix cornstarch with water first and make sure there is no pump inside.",
+    "Add oil and fry minced garlic in a small pot over a slow fire for about 10 seconds until slightly browned.",
+    "Add the seasonings, and let it combine for a while.",
+    "Stir the starch water and then pour it in. Let it simmer for about 1 minute or until the sauce slightly thickens. I found that it would be much thicker once it cooled down.",
+    "Mix in sesame oil.  If you want to keep it for later, store in air-tight glass jars.",
+    "Over blanched broccoli"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tbsp. light soy sauce",
+    "1 tbsp. oyster sauce",
+    "1 tbsp. vegetable cooking oil",
+    "2 cloves garlic minced",
+    "1/4 tsp. sugar",
+    "1/4 tsp. white pepper",
+    "1/2 tbsp. sesame oil",
+    "[water starch]",
+    "1 cup water",
+    "2 tbsp. cornstarch"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Crab and Celeriac",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, make the curry oil, as this will need 24 hours to properly infuse. Toast the curry powder in a hot, dry pan for 1-2 minutes. Remove pan from the heat, add the oil and infuse for 24 hours",
+      "When ready to cook, bring a large pan of salted water to the boil. Add the crab, cook for 10 minutes, then drain and cover with ice. Once cool, separate the white and brown crab meat, allowing 40g white meat and 1 tbsp of brown meat per person",
+      "To make the celeriac purée, peel the celeriac with a knife and cut into small pieces. Heat a saucepan, add the butter and celeriac and season with salt and curry powder. Cook with a lid on until celeriac is completely soft, add the milk and cream and return to the boil. Blitz in a blender until smooth",
+      "For the diced celeriac, cut the remaining celeriac into ½ cm cubes. Heat a frying pan, add 100ml of the curry oil and fry the celeriac until tender",
+      "Combine the breadcrumbs, Parmesan and parsley in a small bowl and set aside",
+      "Add 240g of white white crab meat and 6 tbsp of the brown crab meat to a bowl. Stir in 6 tbsp of celeriac purée, 6 tbsp of celeriac dice, the lemon juice and parsley. Transfer the mixture to a baking tray, scatter over the Parmesan breadcrumbs and bake in the oven for 4 minutes",
+      "Meanwhile, thinly shave the fennel bulbs using a mandoline and sprinkle over some salt, lime juice, dill and a dash of curry oil. Mix to combine and set aside",
+      "Remove the crab from the oven and divide between serving bowls. Dress with a mound of the fennel salad and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crab",
+        "unit": null,
+        "notes": "weighing approximately 3kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulbs",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1fb82ab702296873da08730631b4c2343e843d53e23b562fbe5fdf8a45b7bb9c",
+    "lineage_hash": "49fdfb2b98f98748af7030b8342302d783c666d5017eadabfae1c610dbfc4c02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-and-celeriac-recipe",
+    "fetchedAt": "2026-08-03T19:50:40.936Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-and-celeriac-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

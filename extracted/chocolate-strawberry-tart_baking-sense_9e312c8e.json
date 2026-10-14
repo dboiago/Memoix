@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Chocolate Strawberry Tart",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "231",
+      "carbohydrateContent": "17",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Roll the chocolate short dough to fit into a 12\" tart pan with a removable bottom. Prick the bottom of the pan with a fork several times and refrigerate. While the tart dough is chilling, preheat the oven to 350 °F.",
+      "Bake the tart shell until it's set all the way to the center, about 15 minutes. Because of the dark color it's hard to see if it's browning. You need to press the center of the crust to make sure it's set. Cool the tart crust completely.",
+      "Make the chocolate pastry cream according to the recipe. While it's still warm pour it into the prepared tart shell. Cover with buttered parchment or wax paper and refrigerate until the pastry cream is well-chilled and set.",
+      "Slice the strawberries to 1/4\" thick. You can set aside the rounded end pieces for another use. Starting from the outside edge of the tart, overlap the strawberry slices with the points facing out. Continue making concentric circles working towards the center of the tart. The strawberries will form a pretty flower pattern.",
+      "Warm the strawberry jelly in a microwave proof container until it's pourable. If needed, strain the jelly to remove any chunks of fruit. Brush the warm jelly over the strawberries, allowing excess to drip between the berries. The jelly will help hold the berries in place.",
+      "Chill until serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Chocolate Tart Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Chocolate Pastry Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberres",
+        "unit": "oz",
+        "notes": "hulled",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Jelly",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f889019e132070dab3d2b5e3c60ec56039d1df7db649bf5bbc84e6b9fbb2c552",
+    "lineage_hash": "d98b15f49af361795b6105d49827c043a0e4238d330361c031174876b1e4d869"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/05/12/chocolate-strawberry-tart/",
+    "fetchedAt": "2026-08-02T06:15:57.894Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/05/12/chocolate-strawberry-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Authentic Chinese Steamed Fish",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "109",
+      "carbohydrateContent": "4.1",
+      "fatContent": "4.7",
+      "proteinContent": "12.4"
+    },
+    "directions": [
+      "Before cooking, check if the fish is fully scaled by running your fingers from the tail of the fish to the head. Use kitchen shears to descale if needed. Wash the fish thoroughly with cold tap water and drain. Dry the fish with paper towels. Score the fish 3 to 4 times, 1” (2.5 cm) apart.",
+      "Place a quarter of the green onions on a plate large enough to hold the entire fish. The green onions will hold the fish so it won’t stick to the plate when cooked.",
+      "Stuff ginger slices and a quarter of the green onions (white part) into the cavity of the fish. Stuff the ginger slices into the scored parts. Pour the Shaoxing wine over the fish. Season very lightly with salt. Cover the fish with another quarter of the green onions. Let marinate for 10 minutes at room temperature while preparing the other ingredients, or in the fridge for half a day, until you’re ready to cook.",
+      "In a large, deep skillet (or steamer or wok), add 1” (2.5 cm) of water and place a steaming track in the middle (Footnote 2). Place the plate of fish over the rack. Cover and bring water to a boil over high heat. When the steam starts to come out, cook, covered, over high heat for 5 to 8 minutes (*Footnote 3), until you can easily pull the flesh from the bone with a fork. Turn off the heat immediately.",
+      "Carefully transfer the plate of the fish onto the kitchen counter. Use a pair of chopsticks to remove and discard the ginger and green onion from the top of the fish.",
+      "Spread the remaining julienned ginger strips and green onions on top of the fish and set aside. Make sure the seasoned soy sauce is ready beside the fish.",
+      "In a small skillet or saucepan, heat oil over medium-high heat. When the oil is warm, break chili peppers into 3 to 4 pieces and add them, with the ground Sichuan peppercorns, into the oil. Stir with a spatula until fragrant and the peppers are sizzling, about 30 seconds. Drizzle the hot oil over the fish. You should hear the sizzling of the oil when it touches the fish. Immediately pour the seasoned soy sauce onto the fish.",
+      "Serve immediately. The fish won’t hold sauce very well, so make sure you dip the fish meat into the sauce from the plate as you eat. (see footnote 4)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Head-on Sea Bass (or Tilapia, Flounder, or Other White Fish, Scaled, Gutted; or White Fish Filet)",
+        "unit": "small",
+        "notes": "about 1.1 lb / 500 g, *Footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pcs",
+        "notes": "thumb-sized, 1 thumb sliced, 1/2 thumb julienned",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced into 2.5” (6 cm) long pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "Optional but highly recommended",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seasoned Soy Sauce for Seafood",
+        "unit": "Tbsp",
+        "notes": "or 2 tablespoons regular soy sauce + 1 teaspoon sugar + 1/2 teaspoon chicken bouillon, gently heated in the microwave for easy mixing",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8446718be54e71716466dc16345cb337d3580ad4c2feda197511fd7d025674e1",
+    "lineage_hash": "b3ecf46e043300801f1a55ac491380f446c4a1ebccae7a8bcbfbb6cf715951c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/authentic-chinese-steamed-fish/",
+    "fetchedAt": "2026-08-02T08:59:34.629Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/authentic-chinese-steamed-fish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

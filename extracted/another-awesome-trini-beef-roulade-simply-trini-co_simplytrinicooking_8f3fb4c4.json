@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Trini Beef Roulade",
+    "time": "4 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the beef thinly then season and marinate at least 3 hours. Grate the cheese and set aside",
+      "Place the beef on plastic wrap, fold and cover with the plastic wrap and pound the beef flat .",
+      "Add the cheese then the poi leaves. Fold and tightly roll. Wrap tightly with the plastic and refrigerate for 1 hour. Note: Because the beef is more manageable we can skip adding the tooth picks.",
+      "Add the paprika, parsley, thyme, oregano to the flour. Mix. Roll the beef in the flour dip in the egg and milk mixture then roll in the breadcrumbs.",
+      "Preheat the oven for 10 minutes at about 180 degrees Celsius ( 356 degrees F ). Place the beef roulades on a greased baking tray and bake for about 30 minutes.",
+      "Allow to cool. Cut into 1\" thick rolls. Place cutlets on a serving plate and serve. Note: The cutlets may be served with any of your favorite sauces to add extra flavour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Seasoned and Marinated",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese Grated",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Fat Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Paprika Parsley",
+        "unit": "tsp",
+        "notes": "thyme, oregano",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves Poi",
+        "unit": null,
+        "notes": null,
+        "amount": "20-25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "043ae519b3453a0dc0463b263a62cbea6f26cbc780cce64c10f22392de38bf7b",
+    "lineage_hash": "4b887b5d843f616960e1bf3902ab2df099655f9877c70ebc9871aa4b26c1f4bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/trini-beef-roulade/",
+    "fetchedAt": "2026-09-25T23:52:57.189Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/trini-beef-roulade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

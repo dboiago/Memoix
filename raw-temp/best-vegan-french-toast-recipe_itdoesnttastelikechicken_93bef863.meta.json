@@ -1,0 +1,63 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/vegan-french-toast/",
+  "slug": "best-vegan-french-toast-recipe_itdoesnttastelikechicken_93bef863",
+  "title": "Best Vegan French Toast Recipe!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T06:17:58.338Z",
+  "ldName": "The Best Vegan French Toast (Easy and Custardy)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "french toast, how to make vegan french toast, vegan french toast",
+  "ldIngredientsRaw": [
+    "1 cup plant-based milk ((soy or oat work especially well))",
+    "2 tablespoons cornstarch",
+    "2 tablespoons all-purpose flour",
+    "1 tablespoon maple syrup",
+    "1 teaspoon vanilla",
+    "1/2 teaspoon ground cinnamon ((optional))",
+    "Pinch of salt",
+    "vegan butter or neutral oil (for frying)",
+    "4 - 6 slices sturdy bread ((thick slices of slightly stale bread are best))"
+  ],
+  "ldInstructionsRaw": [
+    "Make the batter: In a shallow bowl, whisk together the plant-based milk, cornstarch, flour, maple syrup, vanilla, cinnamon (if using), and salt until completely smooth and no lumps remain.",
+    "Preheat the pan: Heat a non-stick pan over medium heat. Add 1 tablespoon vegan butter or oil and let it get hot before adding the bread. A properly preheated pan prevents sticking.",
+    "Dip the bread: Quickly dip each slice into the batter, coating both sides. Do not soak! Just a quick dip is key to avoid soggy French toast.",
+    "Cook: Place the coated bread in the hot skillet and cook for 2 to 3 minutes per side, until golden brown and lightly crisp. Work in batches if needed, adding more vegan butter or oil to the pan as needed.",
+    "Serve: Enjoy warm with maple syrup, fresh fruit, powdered sugar, vegan butter, or your favorite toppings."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "149 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "5 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "0.3 g",
+    "sodiumContent": "163 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving",
+    "transFatContent": "0.01 g",
+    "unsaturatedFatContent": "1.4 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup plant-based milk, (soy or oat work especially well)",
+    "▢ 2 tablespoons cornstarch",
+    "▢ 2 tablespoons all-purpose flour",
+    "▢ 1 tablespoon maple syrup",
+    "▢ 1 teaspoon vanilla",
+    "▢ ½ teaspoon ground cinnamon, (optional)",
+    "▢ Pinch of salt",
+    "▢ vegan butter or neutral oil, for frying",
+    "▢ 4 - 6 slices sturdy bread, (thick slices of slightly stale bread are best)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

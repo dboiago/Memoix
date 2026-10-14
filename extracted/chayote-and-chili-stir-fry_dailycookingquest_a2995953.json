@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chayote and Chili Stir Fry",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat 2 tablespoon oil in a pan, stir fry galangal, bay leaf, chili, tomato, shallot, and garlic until fragrant, about 2-3 minutes.",
+      "Add the chayote and stir fry for another 2 minutes.",
+      "Add water, salt, and sugar. Bring to a boil, then reduce heat, cover and simmer until the liquid is reduced and thicken, about 10 minutes, or until chayote is tender yet still crispy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chayote (indonesian: Labu Siam)",
+        "unit": null,
+        "notes": "peeled, remove the pit, and cut into sticks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal (indonesian: Lengkuas)",
+        "unit": "inch",
+        "notes": "peeled and bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "Indonesian: daun salam",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "quarter and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45a6db7704082497c3aef3e7e6b5ed944e786ac53d14512c8a6817c16a629948",
+    "lineage_hash": "51cba6bae73156f71bf661e84417458f5ba3bec97977e62f7fc3240cd884d135"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chayote-and-chili-stir-fry.html",
+    "fetchedAt": "2026-08-02T12:08:16.869Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chayote-and-chili-stir-fry.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

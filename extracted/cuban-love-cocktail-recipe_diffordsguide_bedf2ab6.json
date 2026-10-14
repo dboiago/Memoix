@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cuban Love",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": "Highball",
+    "garnish": [
+      "Fresh or Dehydrated Pineapple Spice",
+      "Mint Springs"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "302",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a HIGHBALL (MAX 10OZ/300ML) GLASS.",
+      "Prepare garnish of fresh or dehydrated pineapple spice and mint springs.",
+      "SHAKE all ingredients with ice.",
+      "STRAIN into ice-filled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cacao Spiced Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Verdita",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Dram",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6f6046da7bd765362e4badf9857c6a7f5b1ea4da8bd733c29b4299394b445a0",
+    "lineage_hash": "fae57e82dccb8c6db727e024b4c0a9791642fa883ec41a6a393644ef459c8b07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4838/cuban-love",
+    "fetchedAt": "2026-08-03T14:30:48.160Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4838/cuban-love",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

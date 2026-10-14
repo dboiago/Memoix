@@ -1,0 +1,221 @@
+{
+  "recipe": {
+    "name": "Dhaba style Baingan ka Bharta (spicy Brinjal Bharta)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take an eggplant, give it deep cuts, place garlic into the cuts and apply mustard oil.",
+      "Place it on the cooking rack and roast the eggplants well until it's tender.",
+      "Transfer it to a tray or a parat and peel the skin gently.",
+      "Chop it well and keep it aside for further use.",
+      "In kadai, add mustard oil, oil, once it's hot, add cumin seeds and let it splutter.",
+      "Add garlic, onions, salt to taste, turmeric powder, degi red chili powder, coriander powder and saute it for a while.",
+      "Add green chillies, coriander stems, tomato, coriander powder, degi red chili powder and cook it for 2-3 minutes on medium flames.",
+      "Add roasted eggplant and cook it for a while.",
+      "Finish it with some coriander leaves and mix it well.",
+      "Transfer it to a serving dish, garnish it with tomato, green chili and coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Eggplant",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Roasting Eggplant",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Roasting Eggplant",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": "to brush",
+        "amount": "2-3",
+        "section": "For Roasting Eggplant",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "4",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2-3",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Eggplants",
+        "unit": null,
+        "notes": "peeled & chopped",
+        "amount": "0",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Baingan Bharta",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "slit",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f34e81f8eea561ebf8ba4513ac3eddad82b355ce38752c664554fc4a8539a57",
+    "lineage_hash": "a75f45a3e1ec3fcd7bcc9e9617f49722f5f2782ff6caf676443616c80dd49603"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-baingan-ka-bharta/",
+    "fetchedAt": "2026-08-02T16:35:00.518Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-baingan-ka-bharta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

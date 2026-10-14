@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Chicken Cordon Bleu Skewers",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. For the chicken and marinade, place the chicken breasts between two sheets of plastic wrap or in a resealable plastic bag. Pound the chicken breasts with a mallet until they reach a uniform 1/4-inch (6.4 mm) of thickness. Trim off any loose or odd shaped pieces: a uniform rectangular shape for rolling works best.",
+      "Combine the remaining marinade ingredients in a resealable bag. Pour out and reserve 1 cup (236.6 ml) marinade for later use. Add the chicken to the marinade in the bag, and marinate in the refrigerator for at least 4 hours or overnight if preferred.",
+      "Remove the breasts from the marinade and pat dry. Discard the marinade. Place each breast on a flat surface, and top with one piece of ham and two pieces of cheese. If necessary, cut the ham and cheese to fit the size of the chicken breast, or slightly smaller.",
+      "Roll each stuffed breast into a tight pinwheel. Each should be about 3” (7.6 cm) long. Hold them in place with two toothpicks inserted at about the 1” (2.5 cm) and 2” (5.1 cm) marks. Then cut the pinwheels in half between the toothpicks at about the 1 1/2” (3.8 cm) mark. You should be left with a total of 12 pinwheels, each about  1 1/2” (3.8 cm) wide and held by a toothpick.",
+      "For the dredge, begin by finely chopping the parsley and mincing the garlic. Combine the breadcrumbs, Parmesan, parsley and garlic in a flat dish. Dip each pinwheel in the reserved marinade until coated all around, then dredge in the breadcrumb mixture until fully breaded, patting it in to assure adherence.",
+      "Skewer the pinwheels on long metal or a bamboo skewers, pushing through at roughly the same spot as the toothpick. Remove the toothpicks as you go or leave them in place if the pinwheels begin to unwind. It helps to use two skewers side by side for each pinwheel to help prevent spinning. With some space between each pinwheel, you should be able to fit 3 pinwheels per skewer.",
+      "Refrigerate the skewers for about 1 hour to allow the breading to set while you fire up your grill.",
+      "Fire up. Prepare a grill for direct cooking by placing one chimney full of pre-heated charcoal briquettes on the grill’s charcoal grate to create a direct cooking zone. Adjust the grill vents bring the temperature to 300-325°F (148.9-162.8°C) at the grilling grate surface. If a gas grill is preferred, fire it up to the medium high temperature setting.",
+      "Cook. Coat the pinwheels all over with cooking spray, then place them directly over the heat on the grill. Cook until they are golden brown and have an internal temperature of 165°F (73.9°C), turning often to achieve even browning.",
+      "Serve. Remove the pinwheels from the skewers and serve hot. Warmed marinara sauce makes a good accompaniment."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts (approximately 3-4 Ounces (85-113.4 G) Per Breast)",
+        "unit": null,
+        "notes": "skinless, boneless",
+        "amount": "6",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Zest From 1 Lemon",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Regular",
+        "unit": "C",
+        "notes": "alt: Panko breadcrumbs",
+        "amount": "1",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Reserved Marinade",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Serrano Ham",
+        "unit": null,
+        "notes": "alt: prosciutto",
+        "amount": "6",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Manchego",
+        "unit": null,
+        "notes": "alt: Swiss cheese",
+        "amount": "10",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Dredge and Fill",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d6be31dd2e269f9041b06f9cf6961c00654ea73368ea1e8ae5579746e24e8c1",
+    "lineage_hash": "3a1dcc65d58ccf6a01b916aafb5700740c1ec3f7b7b95e89c4a3854ac5cc5535"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/chicken-recipes/chicken-spiedini-cordon-bleu-takes-skewers-another-level/",
+    "fetchedAt": "2026-08-02T10:55:13.862Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/chicken-recipes/chicken-spiedini-cordon-bleu-takes-skewers-another-level/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

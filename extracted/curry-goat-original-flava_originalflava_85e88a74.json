@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Curry Goat",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the goat meat to a large bowl. Season with salt, black pepper, garlic powder, curry powder, ginger, crushed pimento, green seasoning, and all-purpose seasoning. Massage everything into the meat thoroughly. Cover and marinate in the fridge for at least 4 hours, ideally overnight.",
+      "Heat the oil in a large heavy-bottom pot over high heat. Add the seasoned goat meat and brown for 5–7 minutes, stirring occasionally. Cover and allow the goat to cook in its own juices for 10 minutes.",
+      "Sprinkle in the chicken granules, pour in the water, and stir well to combine. Add the sliced onion, spring onions, thyme sprigs, and the whole scotch bonnet. Mix, cover, and reduce to a medium heat.",
+      "Let the curry goat simmer gently for 1 hour, stirring occasionally, until the meat begins to soften and the gravy thickens.",
+      "Add the potatoes and carrots, stir through, and cook for a further 20–30 minutes, until the vegetables are tender and the goat is rich and soft.",
+      "Serve hot with white rice, rice & peas, or hard food. Best enjoyed surrounded by family."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Goat Meat",
+        "unit": "kg",
+        "notes": "leg & shoulder, cut into chunks",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caribbean Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento (allspice) Seeds",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled & cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled & cubed",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Granules",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "left whole",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b7667e9eadddd85406c7d6ee1ca68df5e7b4866351f35445f65546e62c019af",
+    "lineage_hash": "72c010bcffe991293d3655d5d0a226c583eeaeb39e76a8e70408a98353e2a36d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/family/christmas-curry-goat/",
+    "fetchedAt": "2026-09-30T17:44:28.448Z"
+  },
+  "rawSource": "https://originalflava.com/family/christmas-curry-goat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Coffee-Crusted Pork Tenderloins with Redeye Barbecue Sauce",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a tenderloin on your work surface. Remove the silver skin (the thin, translucent, sinew-like covering on the outside) by using a knife to trim it away from the meat. About 3 inches from the end of the “tail” (the skinny end), make a crosswise cut, slicing about halfway through the meat. This will enable you to fold the “tail” back over the rest of the roast, giving the tenderloin a roughly cylindrical shape which will help it cook more evenly. Tie the “tail” in place with butcher’s string. Repeat with the remaining tenderloin(s). Place the tenderloins in a baking dish.",
+      "Place the coffee, salt, brown sugar, paprika, pepper, garlic and onion powders, cumin, coriander, and cocoa in a small bowl and stir to mix. Sprinkle this rub all over the tenderloins, patting it onto the meat with your fingertips. Drizzle the oil over the pork and rub it on well. Let the pork marinate in the refrigerator, covered, for at least 4 hours or as long as overnight.",
+      "Set up the grill for direct grilling and preheat to medium-high. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium-high. If using a charcoal grill, preheat it to medium-high, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, brush and oil the grill grate. Place the pork tenderloins on the hot grate and grill until cooked through, 3 to 4 minutes per side (12 to 16 minutes in all). To test for doneness, insert an instant-read meat thermometer into the meat: The internal temperature should be about 145-150 degrees F.",
+      "Transfer the grilled pork to a cutting board and let rest for about 3 minutes. Remove and discard the strings, then slice the tenderloins crosswise on a diagonal and serve at once with the Redeye Barbecue Sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Tenderloin",
+        "unit": "lb",
+        "notes": "2 to 3 tenderloins",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "Tbsp",
+        "notes": "kosher or sea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redeye Barbecue Sauce (see Step 5)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98da7b64205f84d66961140c03ce997b5ee11197b38dd96abda1b1cc8e0e0bf5",
+    "lineage_hash": "53b1cfd709167767210cc057aba9a66c717c6fe03e90442455ce48f885490ce9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coffee-crusted-pork-tenderloins/",
+    "fetchedAt": "2026-08-03T10:11:19.850Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coffee-crusted-pork-tenderloins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

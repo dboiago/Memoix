@@ -1,0 +1,62 @@
+{
+  "url": "https://omnivorescookbook.com/black-rice-with-coconut-milk-and-fruits/",
+  "slug": "black-rice-pudding-with-coconut-milk_omnivorescookbook_9e22f74e",
+  "title": "Black Rice Pudding with Coconut Milk",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:48:04.496Z",
+  "ldName": "Black Rice Pudding with Coconut Milk",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "1 cup (7 ounces / 200 g) black rice",
+    "2 cups water",
+    "3 tablespoons sugar",
+    "1/8 teaspoon salt",
+    "2 cans (18 oz / 540 ml) coconut milk",
+    "4 tablespoons sugar ((or syrup))",
+    "20  ice cubes ((about 1 1/2 cup))",
+    "4  mangos (, cubed (*Footnote 2))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse and drain the black rice. If you prefer a stickier texture, add water to cover the rice and soak for 1 hour at room temperature, or overnight in the fridge. Drain well.",
+    "Add the rice to a small saucepan with 2 cups of water. Cook over medium heat until it boils. Reduce to medium-low heat. Cover the pot. Cook covered for 35 minutes. Do not uncover the lid during cooking. Once done, turn off the heat and let the rice rest, covered, for 10 minutes.",
+    "Sprinkle the sugar and salt onto the rice while it is still hot. Fluff the rice and mix until the sugar has mixed in and dissolved. Taste the rice. You can add more sugar, if needed, and mix again. Set aside to cool.",
+    "Combine coconut milk, ice cubes and sugar in a food processor or blender. Mix until the ice is chopped into small pieces but not melted completely.",
+    "Add about 1/2 cup rice and 1/2 cup coconut milk into small serving bowls. Divide the mango evenly among the bowls. Serve immediately. (*Footnote 3)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "324 kcal",
+    "carbohydrateContent": "36.7 g",
+    "proteinContent": "3.5 g",
+    "fatContent": "20.8 g",
+    "saturatedFatContent": "18.1 g",
+    "sodiumContent": "115 mg",
+    "fiberContent": "3.5 g",
+    "sugarContent": "28.1 g"
+  },
+  "htmlIngredientLines": [
+    "[Rice]",
+    "1 cup (7 ounces / 200 g) black rice",
+    "2 cups water",
+    "3 tablespoons sugar",
+    "1/8 teaspoon salt",
+    "[Dessert bowl]",
+    "2 cans (18 oz / 540 ml) coconut milk",
+    "4 tablespoons sugar (or syrup)",
+    "20 ice cubes (about 1 1/2 cup)",
+    "4 mangos , cubed (*Footnote 2)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

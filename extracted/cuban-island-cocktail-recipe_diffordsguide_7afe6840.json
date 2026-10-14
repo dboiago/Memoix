@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cuban Island",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "170",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light White Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3524fc50d6fe0d607b7659ad3effb08c592dfb67b8d739651156d9f36e510fa3",
+    "lineage_hash": "ef14bc966c6538158dec3a482cb68ef15cdec255ef5488a88d6c1aafef91eca4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/607/cuban-island",
+    "fetchedAt": "2026-08-02T07:53:29.697Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/607/cuban-island",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

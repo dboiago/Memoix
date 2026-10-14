@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Brioche Cake",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir the milk (or chocolate milk, if using), yeast and 1 Tbsp (12 g) of sugar and let sit 5 minutes. Add the eggs and stir to blend. Sift in the flour, the remaining sugar, cocoa powder and salt and mix (by hand or with a mixer fitted with the paddle attachment) until evenly combined. Add the butter and melted chocolate and mix until blended, then switch to a dough hook (or beat more vigorously by hand) and knead until the dough is soft and smooth, about 5 minutes. Place the dough (it will be very soft) in a lightly oiled bowl, cover, and let sit at room temperature for an hour before chilling for 8 to 24 hours.",
+      "For the hazelnut filling, pulse the hazelnuts with the brown sugar in a food processor until finely ground. Add the egg and vanilla and pulse to combine, then add the chocolate chips (if using) and pulse lightly.",
+      "On a floured work surface, turn out the dough and roll out to a large rectangle about ½-inch (13 mm) thick. Spread the hazelnut filling over the entire surface of the dough and then roll it up from the longer side. Cut the roll into rounds about 1-inch thick (just like making sticky buns). Lay half of the slices overlapping each other in a greased 8-cup (2 L) kugelhopf tin or bundt pan, overlapping the pieces, and then arrange the remaining slices over the first layer, overlapping. Cover the tin with a tea towel and let the brioche rise for 90 minutes.",
+      "Preheat the oven to 350 ºF (180 ºC). Bake the brioche for about 40 minutes, until a tester inserted in the centre of it comes out clean. Allow the cake to cool for 20 minutes, then turn out on a cooling rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "105 ºF/40 ºC, 2% milk or chocolate milk, at just above body temperature",
+        "amount": "½",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp + ½ C",
+        "notes": "112 g",
+        "amount": "1",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "450 g",
+        "amount": "3",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": "40 g",
+        "amount": "⅓",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "115 g, at room temperature",
+        "amount": "½",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "90 g, melted",
+        "amount": "3",
+        "section": "Chocolate Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "135 g, toasted and peeled",
+        "amount": "1",
+        "section": "Hazelnut Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "100 g, packed",
+        "amount": "½",
+        "section": "Hazelnut Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Hazelnut Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Hazelnut Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Chips",
+        "unit": "C",
+        "notes": "45 g, optional",
+        "amount": "¼",
+        "section": "Hazelnut Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f3a1fc89638c7d860a9a00398760e9b3502f1ec31622ae3bbedc3b30a444470",
+    "lineage_hash": "495097c2cfe737235ef6d454f0b8dea5c7276acf0704c3f0abe7ec171f2c3994"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-hazelnut-brioche-cake/",
+    "fetchedAt": "2026-08-01T18:41:49.626Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-hazelnut-brioche-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

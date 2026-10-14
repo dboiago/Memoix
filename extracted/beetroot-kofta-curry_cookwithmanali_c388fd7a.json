@@ -1,0 +1,318 @@
+{
+  "recipe": {
+    "name": "Beetroot Kofta Curry",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "313",
+      "carbohydrateContent": "35",
+      "fatContent": "18",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Make the beetroot kofta first. Preheat oven to 400 F degrees. Wash and pat dry the beetroots, wrap them in aluminium foil and place on the baking tray. Roast the beets in a 400 F degrees pre heated oven for 30 minutes or until softened. I didn’t want the beets too soft for these koftas plus the beets I used were medium sized so 30 minutes was perfect for me. If you are using larger beets, you might need to roast them for 40 minutes or so. Once roasted, take the pan out of the oven, let them cool down a bit and then remove the beets from aluminium foil and peel the skin using a peeler.",
+      "Now run the peeled and roasted beets into a food processor till finely grated. Set aside.",
+      "Add a teaspoon of oil to a pan on medium heat and then add freshly minced ginger-garlic and green chili paste. Please use fresh paste! Sauce for a minutes and then add the spring onion greens. Cook for 30 seconds.",
+      "Add the grated beets and mix well.",
+      "Now add the boiled & mashed potatoes, shredded carrots and salt. Mix till everything is well combined.",
+      "Add garam masala, cumin powder, lemon juice, chopped cashews and raisins.",
+      "Finally add cornstarch. I recommend starting with 1 tablespoon of cornstarch and add more only if needed to bind the koftas.",
+      "Shape the mixture into 8 equals koftas. I made them oval, you may make them round.",
+      "Heat 2 tablespoons of oil in a pan on medium heat. Once the oil is hot, add the koftas to the pan carefully. Cook for 2 minutes from one side and then flip and cook till the other side gets golden brown spots. Remove the koftas from pan and drain on a kitchen towel. Set aside.",
+      "To prepare the curry cut 4-5 large tomatoes into quarters and add to the pan. Add ginger, garlic, green chili, green cardamom and peppercorn. Add around 2.5 cups water and let it all simmer for 20-25 minutes.",
+      "After 20-25 minutes, tomatoes would really soften. Switch off the heat, remove the skin of the green cardamom and using an immersion blender, blend the curry till smooth. You may also your regular blender here.",
+      "Now put the pan back on heat again. Add salt, coriander powder, kashmiri red chili powder and garam masala. Let it simmer on medium heat for 5 minutes.",
+      "Add butter, coconut milk and cream. Let the curry simmer for further 5 minutes.",
+      "Add honey, crushed kasuri methi and mix and let the curry simmer till it becomes slightly thick.",
+      "Sprinkle cardamom powder and garam masala powder on top and let is simmer for 2 more minutes. Remove curry from heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2.5-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "or use regular milk",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic-green Chili Paste",
+        "unit": "tsp",
+        "notes": "freshly minced",
+        "amount": "2-3",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "grated, from 2 medium carrots",
+        "amount": "¼",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Beets",
+        "unit": "C",
+        "notes": "grated, from 2 medium beets",
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & mashed",
+        "amount": "2",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions Greens",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "add more as required",
+        "amount": "1",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "to shallow fry the koftas",
+        "amount": "2",
+        "section": "Kofta",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "to sprinkle",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "to sprinkle",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "to sprinkle",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f065d259c40f4e05f4eef2195ebaafc6caa301239658d89c2a8ffbaf177245d",
+    "lineage_hash": "bc2a829fd543c15ea8b878e6ba9bed41b90d3e275941b27b5a3a12ac965bb883"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/beetroot-kofta-curry/",
+    "fetchedAt": "2026-08-02T03:03:12.347Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/beetroot-kofta-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

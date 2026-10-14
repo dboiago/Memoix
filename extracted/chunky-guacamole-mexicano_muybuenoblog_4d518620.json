@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chunky Guacamole Mexicano",
+    "time": "5 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "223",
+      "carbohydrateContent": "13",
+      "fatContent": "20",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Cut the avocado in half. Twist to remove the pit. Scoop out the pulp. Place in a medium-size bowl and mash the avocado with a fork so that the mixture is a bit chunky.",
+      "Add the tomato, onion, garlic, and salt. Sprinkle the lime juice over all the ingredients and give everything a good stir, but don't overdo it.",
+      "Serve with tortilla chips, blue corn tortilla chips, whole-wheat pita chips, or fresh veggies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocados",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "optional, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70c251a36efc1c0f7bbea8d8f370556732afcd39b33b9727bfeba33280555da8",
+    "lineage_hash": "1c419596577afb89a624773393179d9532f314f9a58f4e83c5e4cc08ab0aa60c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/super-bowl-o-mole/",
+    "fetchedAt": "2026-08-02T10:31:32.043Z"
+  },
+  "rawSource": "https://muybuenoblog.com/super-bowl-o-mole/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Asparagus, Poached Egg and Seaweed Hollandaise",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To cook the eggs, heat a water bath to 63°C. Add the eggs and cook for 45 minutes, then chill immediately in iced water. (If you're poaching your eggs in the regular way, you can cook them later on before serving)",
+      "To cook the potatoes, put them in a pan with the kombu, garlic and rosemary. Cover with cold water, season generously with salt, then bring to the boil. Lower the heat to a gentle simmer until cooked through, then leave to cool in the liquid",
+      "Bring another pan of heavily salted water to the boil. Snap the woody ends off the asparagus and then peel the ends of each stalk. Blanch in the boiling water for 2 minutes, then refresh immediately in iced water. Drain and set aside",
+      "To make the seaweed butter, lightly toast the nori and wakame, then put in a blender with the kombu and blitz into a powder. Set aside a pinch for the hollandaise and a little more for dusting over the dish before serving, then combine the rest with the softened butter and set aside",
+      "To make the seaweed oil, put the dried seaweed and oil in a blender. Blitz for about.3 minutes until the oil is steaming. Add the herbs, blend for another 30 seconds, then pour through a fine sieve into a bowl set over ice. You can strain the oil again through muslin if you like for an extra clear finish",
+      "To make the hollandaise, put the yolks and vinegar reduction in a heatproof bowl over a pan of gently simmering water. Whisk constantly until the mixture turns pale and increases in volume slightly",
+      "Continuing to whisk, start gradually trickling in the warm butter. Once it’s all combined and emulsified, season to taste with salt and a squeeze of lemon juice. Finish with the reserved pinch of seaweed powder, then keep warm",
+      "Mix the mustard, vinegar and olive oil together with a pinch of salt to create a simple vinaigrette. Set aside",
+      "You’ve now got all the elements ready to plate the dish. To reheat the various elements, bring a small pan of water to a gentle simmer, then fill a second with a splash of the reserved potato cooking liquor and a knob of the seaweed butter – you’ll use this to reheat and glaze various elements",
+      "Gently crack the  eggs into the gently simmering water and cook for 2 minutes. Meanwhile, cut the potatoes into thick coins and gently reheat them in the seaweed butter mixture",
+      "Remove the potatoes and put them on the base of each serving plate. In the same pan of seaweed butter, warm through the asparagus, then add the sea vegetables and wild garlic at the last minute just to glaze. Add a squeeze of lemon, then arrange them in a ring around the potatoes",
+      "Carefully place a poached egg in the centre of each dish on top of the potatoes, then cover the egg with the seaweed hollandaise. Drizzle over a little seaweed oil, then toss the mixed herbs in a little of the vinaigrette and arrange them around. Finish with a dusting of seaweed powder and flaky salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Vegetables",
+        "unit": null,
+        "notes": "such as sea purslane and salty fingers, washed and picked, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic Leaves",
+        "unit": null,
+        "notes": "picked, washed and roughly chopped or torn, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herb Leaves",
+        "unit": null,
+        "notes": "such as chervil, parsley, tarragon and/or dill, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Fir Potatoes",
+        "unit": null,
+        "notes": "washed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Dried Kombu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "lightly crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "g",
+        "notes": "dried, ideally a mix of nori, wakame and kombu",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "g",
+        "notes": "dried, ideally equal parts nori, wakame and kombu",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herbs",
+        "unit": "g",
+        "notes": "ideally a mix of chervil, parsley, tarragon and dill",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": "melted and warm",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": "reduced to 1 tbsp",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f3ced42f8c74e17d5f644f9b1b3e8fa80ebbbf5e6c8b96ce8f727c69fe1890dc",
+    "lineage_hash": "e06ffbf631f57542f693d04698cc9ecf69d08e1b7328a0796c1d6a6549e3c159"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-egg-seaweed-hollandaise-recipe",
+    "fetchedAt": "2026-08-01T20:39:00.231Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-egg-seaweed-hollandaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

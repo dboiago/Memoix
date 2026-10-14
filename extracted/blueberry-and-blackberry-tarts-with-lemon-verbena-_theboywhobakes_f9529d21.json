@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Blueberry and Blackberry Tarts with Lemon Verbena",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, almonds and icing sugar into the bowl of a food processor and pulse to combine.",
+      "Scrape the beans from the vanilla pod and add to the food processor along with the butter (if using vanilla paste add this instead).",
+      "Process until the mixture resembles coarse breadcrumbs then add the egg yolk and two tsp of ice cold water, pulse briefly until the mixture just starts to come together as a dough.",
+      "Tip the mixture out onto the work surface and use your hands to bring together into a uniform dough, avoid overworking the dough and this will make the pastry tough and lead to it shrinking when it bakes.",
+      "Form the dough into thick short sausage and wrap in clingfilm, refrigerating for a few hours before baking.",
+      "To make the pastry cream place the milk, verbena leaves and half of the sugar into a saucepan and bring to the boil, remove from the heat and allow to infuse for about 20 minutes.",
+      "Place the pan back on the heat and bring back to the boil.",
+      "Meanwhile place the eggs, yolks, cornflour and the remaining sugar into a large bowl and whisk together until smooth.",
+      "When the milk is at a boil pour through a fine sieve onto the egg mixture and whisk together to combine.",
+      "Pour the custard mixture back into the saucepan and cook over medium high heat, whisking constantly until the mixture is very thick.",
+      "Immediately scrape the custard into a clean bowl and cover with a piece of clingfilm, pressing onto the surface of the custard to prevent a skin from forming, placing the bowl into the fridge until fully chilled.",
+      "Remove the chilled pastry from the fridge and cut into 6 slices.",
+      "Roll each slice on a slightly floured work surface until about 3mm thick.",
+      "Use the discs of pastry to line six 8cm wide tart tins (I use Matfer tart rings for a more professional look), trimming off the excess.",
+      "Use the trimmings to repeat, using the pastry to line two further tart tins.",
+      "Place the tarts shells onto a parchment lined baking tray and refrigerate for at least an hour or until firm.",
+      "When ready to bake and assemble preheat the oven to 180C (160C fan) and line each tart shell with a crumpled sheet of parchment paper, filling with baking beans or rice.",
+      "Bake the tarts in the preheated oven for about 15 minutes before removing the parchment and beans and baking for a further 5-8 or so minutes or until the pastry is golden brown.",
+      "Allow to cool before filling.",
+      "To finish remove the chilled pastry cream from the fridge and beat to loosen.",
+      "Very lightly whisk the cream until it is thickened but not yet holding soft peaks and in three additions, fold into the pastry cream.",
+      "To assemble fill each tart shell with the lightened pastry cream (also known as crème légère or crème diplomat ) and top with a mix of blackberries and blueberries, decorating with the borage flowers if using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 tsp vanilla bean paste",
+        "amount": "½",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced and chilled",
+        "amount": "125",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "tsp",
+        "notes": "approx.",
+        "amount": "2",
+        "section": "Sweet Pastry",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Verbena Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Borage Flowers",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5cb3e364efd87c9a6bc47415ad53c241a23962f373cf055ddd9efc9b57c7abef",
+    "lineage_hash": "344319336c03680db1ad951b2426921a1769016f5db2b25829cb9c3f68408404"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2015/8/6/blueberry-and-blackberry-tarts-with-lemon-verbena",
+    "fetchedAt": "2026-08-01T21:49:26.611Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2015/8/6/blueberry-and-blackberry-tarts-with-lemon-verbena",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

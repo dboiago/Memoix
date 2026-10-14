@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Cima Summer Special",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake vigorously, fine strain into a tajin-rimmed rocks glass over ice. Garnish.",
+      "Fire TinctureAdd all of the ingredients to a bowl and let the mixture sit at room temperature for 4-6 hours. Afterward, fine strain to remove particulates and add to a bitters dasher bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Verde",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fire Tincture",
+        "unit": "dashes",
+        "notes": "or use Scrappy's Firewater Habanero Tincture",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tajin Salt",
+        "unit": null,
+        "notes": "rim",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fire Tincture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Everclear",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Achiote Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chile Peppers",
+        "unit": "small",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "diced, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3da8230b0147f9e193b02759b4015d8f911d591f0dcedb7980aacbadef34874e",
+    "lineage_hash": "276bae255908d2b73bf9757518603acb9ca340d4c50e44539ee9e1a777f011f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cima-summer-special-tropical-cocktail/",
+    "fetchedAt": "2026-08-04T00:45:14.684Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cima-summer-special-tropical-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

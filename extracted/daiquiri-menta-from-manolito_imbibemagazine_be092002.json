@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Daiquiri Menta",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except the rum to a blender. Blend on low speed, gradually adding the rum. Pour the finished drink into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Créme De Menthe",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Fresh Mint",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "oz",
+        "notes": "crushed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f8053cef5f86214ea23e717ba029397b780f51f32311120f5b18d4c3ef8e559",
+    "lineage_hash": "a227d16d5f5e4c25ca7433d03304a626f352a0f1054a594ddfc2734dcc851912"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/daiquiri-menta-manolito/",
+    "fetchedAt": "2026-08-04T00:56:05.809Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/daiquiri-menta-manolito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

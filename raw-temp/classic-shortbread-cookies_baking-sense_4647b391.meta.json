@@ -1,0 +1,56 @@
+{
+  "url": "https://www.baking-sense.com/2022/10/20/shortbread-cookies/",
+  "slug": "classic-shortbread-cookies_baking-sense_4647b391",
+  "title": "Classic Shortbread Cookies!",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:54:34.473Z",
+  "ldName": "Shortbread Cookie Recipe",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "24",
+    "24 cookies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "bar cookie, shortbread",
+  "ldIngredientsRaw": [
+    "8 oz unsalted butter (room temp)",
+    "5 oz granulated sugar (½ cup + 2 tablespoons)",
+    "1/4 teaspoon table salt",
+    "10 oz all purpose flour (2 cups, see note)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 8 oz&#32;unsalted butter, 5 oz&#32;granulated sugar and 1/4 teaspoon&#32;table salt in a mixer bowl and mix on medium speed until softened and well-combined. You don&#39;t want to aerate, just mix the ingredients. Scrape the bowl and beater.",
+    "Add 10 oz&#32;all purpose flour and mix until combined. The dough will look crumbly at this point. Dump the dough onto a lightly floured surface and knead to bring it together. Form the dough into a  small square or disc.",
+    "To make shortbread &quot;fingers&quot;: On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 8”x12” rectangle. Use the straight edge of a ruler or a bench scraper to square off the edges. Use a long knife to cut the dough into 1&quot; pieces along the 8&quot; side and 3&quot; pieces along the 12&quot; side. Don&#39;t separate the cookies after cutting. Poke each cookie with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+    "To make petticoat shortbread: On a sheet of parchment paper pat the dough to a small disc. Lightly flour the top of the dough and roll to a 12&quot; round. Use your fingers or a fork to crimp the edges of the round. Use a long knife to score the round into 12 or 16 wedges, do not slice all the way through the dough. Poke each wedge with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+    "Remove the pan from the refrigerator and sprinkle the dough generously with granulated sugar.",
+    "Bake the cookies until the dough is set all the way to the center, about 20 minutes. If you&#39;re oven bakes unevenly, rotate the tray halfway through baking. Allow to cool completely then use a long knife to cut along the scored lines to separate the cookies."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "133 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "1 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "5 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "20 mg",
+    "sodiumContent": "26 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "2.3 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz unsalted butter (room temp)",
+    "5 oz granulated sugar (½ cup + 2 tablespoons)",
+    "1/4 teaspoon table salt",
+    "10 oz all purpose flour (2 cups, see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-honey-soy-chicken-wings/",
+  "slug": "chinese-honey-soy-chicken-wings_omnivorescookbook_5a7fcb6b",
+  "title": "Chinese Honey Soy Chicken Wings (蜂蜜鸡翅)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T09:54:31.282Z",
+  "ldName": "Chinese Honey Soy Chicken Wings",
+  "ldTime": "PT160M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 to 6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "homestyle, party food",
+  "ldIngredientsRaw": [
+    "2 lbs chicken wings",
+    "1/4 cup light soy sauce",
+    "1 tablespoon Shaoxing wine",
+    "1/2 teaspoon dark soy sauce",
+    "2  scallions (, sliced)",
+    "1 tablespoon grated ginger",
+    "4 cloves garlic (, grated)",
+    "1 tablespoon light brown sugar",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon ground black pepper",
+    "4 tablespoons honey",
+    "1 teaspoons toasted sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the marinade ingredients in a small bowl. Mix until the sugar is dissolved. Transfer to a large ziplock bag. Add the chicken wings. Massage a few times to mix well. Squeeze as much air out as you can and seal the bag. Let marinate for a minimum of 2 hours (*Footnote 1), up to overnight in the fridge. Flip the bag in between, for even marinating.",
+    "Preheat the oven to 400ºF (200ºC). Line a baking sheet with parchment paper or aluminum foil for easy cleanup.",
+    "Drain the marinated chicken wings and place them on the lined baking sheet, skin side down. Bake for 15 minutes. Take the wings out. Brush both sides with the honey (*Footnote 2), this time placing them skin side up. Bake for another 10 minutes.",
+    "Brush the top with more glaze, sprinkle with sesame seeds. Bake for another 5 minutes, until the wings are cooked through and the surface turns golden brown and sticky. If the wings have not turned golden, bake for another 5 to 10 minutes.",
+    "Let cool for 5 minutes. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "6 g",
+    "calories": "364 kcal",
+    "carbohydrateContent": "23 g",
+    "proteinContent": "23 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "94 mg",
+    "sodiumContent": "616 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "21 g",
+    "transFatContent": "0.2 g",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "2 lbs chicken wings",
+    "[Marinade]",
+    "1/4 cup light soy sauce",
+    "1 tablespoon Shaoxing wine",
+    "1/2 teaspoon dark soy sauce",
+    "2 scallions , sliced",
+    "1 tablespoon grated ginger",
+    "4 cloves garlic , grated",
+    "1 tablespoon light brown sugar",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon ground black pepper",
+    "[Glaze & garnish]",
+    "4 tablespoons honey",
+    "1 teaspoons toasted sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Apple Strudel",
+    "time": "1 hr 40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "272",
+      "carbohydrateContent": "48",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Pour hot water over the raisins.",
+      "Combine sliced apples with sugar, cinnamon, salt and raisins.",
+      "Set the apples aside while you layer the phyllo sheets.",
+      "Lay a 14″x18″ sheet of phyllo dough on a clean kitchen towel. (If working with smaller sheets see instructions in the tips section below.)",
+      "Brush the dough lightly with melted butter.",
+      "Sprinkle with a teaspoon of sugar.",
+      "Add another sheet of dough. Continue layering dough with butter and sugar until all the sheets are used.",
+      "Sprinkle the breadcrumbs along the bottom 1/3 of the dough, leaving 2″ border on either end and along the bottom.",
+      "Arrange the apples over the bread crumbs. Drizzle any juice that accumulated in the bowl over the apples.",
+      "Fold in the two ends.",
+      "Continue to roll the strudel like a burrito. Tuck in the sides and the filling as you roll.",
+      "Turn the strudel seam side up.",
+      "Use the towel to transfer the strudel to the prepared baking tray.",
+      "Roll the strudel off the towel so it is seam side down. Tuck in the sides if they come loose.",
+      "Liberally brush the strudel with more butter. At this point you can wrap the strudel and refrigerate overnight or freeze for up to a month.",
+      "Bake the strudel until golden brown and the apples are tender (use a tooth pick inserted in the center to check the apples)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "3",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Phyllo Dough",
+        "unit": "oz",
+        "notes": "about 9  14\"x18\" sheets, defrosted",
+        "amount": "8",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Bread Crumbs",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "1½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar for Finishing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d618d8b75630691f6613e7ce885418c2029e4554eeb0f0db326669ca89ba7fb5",
+    "lineage_hash": "c94bbf8eed77e4f22e98049aeb25d29ba13a62d4da9f2457ce101c29e3c87772"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/10/11/apple-strudel/",
+    "fetchedAt": "2026-08-01T21:57:10.936Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/10/11/apple-strudel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

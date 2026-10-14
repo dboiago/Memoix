@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Confit Potatoes",
+    "time": "3 hr 20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 120°C/gas mark ½ and line a 1.7l terrine mould with baking paper",
+      "Use a mandoline to slice the potatoes as thinly as possible, then toss the slices with the duck fat and tablespoon of salt in a large bowl",
+      "Layer the potatoes in the mould, one slice at a time, until you’ve built up multiple tiers. Once you’ve used up all the potatoes, cover the top with baking parchment and cook for about 3 hours until the potatoes are completely tender",
+      "Place a small baking tray or plate on top of the baking paper covering the potatoes, along with a few heavy weights (tins work well) and leave to cool, then refrigerate overnight to compress",
+      "The next day, remove the weights and tray and cut the potatoes into 3x3cm pieces",
+      "To make the mustard dressing, mix the mustard, lemon juice and vinegar in a large bowl, then whisk in the vegetable oil until emulsified. Store in squeezy bottles in the fridge until you’re ready to serve. This will make more dressing than you need for these potatoes, but it will keep for a few days and can be served with all sorts of other dishes",
+      "Preheat a deep pan of oil or deep-fat fryer to 190°C",
+      "Fry the sliced pieces of potato in the oil for around 4 minutes until croissant-gold (you may need to work in batches). Sprinkle over some Maldon salt, drizzle with the mustard dressing and eat immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "kg",
+        "notes": "peeled and washed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "Tbsp",
+        "notes": "plus extra for sprinkling",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "425",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01616a18f9c80f044ee94b4364d481f9010207b8f0cbd13f2df5bfd349fe2c19",
+    "lineage_hash": "2a27867f2e2bba0e022325c25065c46c3900c27ca64960e8c3b3a714f9e68a29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-potatoes-recipe",
+    "fetchedAt": "2026-08-03T05:39:50.248Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-potatoes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

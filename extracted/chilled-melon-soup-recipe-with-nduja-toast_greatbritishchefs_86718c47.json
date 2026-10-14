@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chilled Melon Soup with 'Nduja Toast",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the oregano oil, ideally the day before. Set a few of the oregano leaves aside for garnishing the soup and toasts, then blitz all the ingredients together in a blender. If you have time, allow the mixture to infuse overnight, or leave it to infuse for as long as you can on the day. Strain the oil through a muslin cloth set over a bowl to get a clear oregano oil. This will make more than you need for this recipe but it will keep in the fridge for several weeks",
+      "To make the soup, remove any seeds or peel from the melon, then place in a blender with the rest of the ingredients. Blitz until smooth, then pass through a fine sieve and chill in the fridge until ready to serve",
+      "For the toasts, place a griddle pan over a high heat. Drizzle the bread slices with the olive oil and toast the bread on both sides until crisp and lightly charred. Whilst the bread is still, hot, spread the ‘nduja over them and garnish with a few oregano leaves",
+      "To serve, divide the soup between 4 bowls and finish with a drizzle of the oregano oil and a few oregano leaves. Serve alongside the ‘nduja toasts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cantaloupe Melon",
+        "unit": "g",
+        "notes": "or honeymoon melon, very ripe",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "'nduja",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "g",
+        "notes": "leaves picked",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "efcc755f1f53b6330c6820b991d96a25eea831acd5ffef3d9fd8de0ad9efda3d",
+    "lineage_hash": "176b47189c2d6e1225295a76e429f244ba80197ace24176e377cef4baa4c7a20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/melon-soup-nduja-toast-recipe",
+    "fetchedAt": "2026-08-03T04:12:12.141Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/melon-soup-nduja-toast-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

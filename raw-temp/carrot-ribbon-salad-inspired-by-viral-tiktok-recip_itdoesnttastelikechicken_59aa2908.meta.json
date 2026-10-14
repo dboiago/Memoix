@@ -1,0 +1,68 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/carrot-ribbon-salad/",
+  "slug": "carrot-ribbon-salad-inspired-by-viral-tiktok-recip_itdoesnttastelikechicken_59aa2908",
+  "title": "Carrot Ribbon Salad - Inspired By Viral TikTok Recipe!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T09:33:28.873Z",
+  "ldName": "Carrot Ribbon Salad with Sesame Dressing",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese, Thai",
+  "ldCategory": "Salad",
+  "ldKeywords": "carrot ribbon salad",
+  "ldIngredientsRaw": [
+    "4 large carrots (peeled into ribbons (use a vegetable peeler))",
+    "¼ small red onion (very thinly sliced)",
+    "½ cup fresh cilantro (roughly chopped)",
+    "1/4 cup roasted salted peanuts (roughly chopped, plus more for topping)",
+    "2 teaspoons sesame seeds",
+    "2 tablespoon soy sauce ((gluten-free if preferred))",
+    "2 tablespoons rice vinegar",
+    "1 tablespoon toasted sesame oil",
+    "1 teaspoon maple syrup or agave",
+    "1 teaspoon fresh ginger (minced or grated, optional but recommended)",
+    "1 clove garlic (grated or minced)",
+    "Pinch crushed red pepper flakes (optional, for heat)"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the salad: Use a vegetable peeler to shave the carrots into long, thin ribbons. Add them to a large bowl along with the red onion, cilantro, peanuts, sesame seeds, and any optional ingredients you&#39;re using.",
+    "Make the dressing: In a small bowl or jar, whisk together the soy sauce, rice vinegar, sesame oil, maple syrup, ginger, garlic, and red pepper flakes.",
+    "Toss and serve: Pour the dressing over the salad and toss well to coat. Let it sit for 5–10 minutes to allow the flavors to meld and the carrots to soften slightly. Toss again before serving and finish with an extra sprinkle of peanuts and sesame seeds."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving (recipe makes 4 servings)",
+    "calories": "135 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "5 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "594 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "7 g"
+  },
+  "htmlIngredientLines": [
+    "[salad]",
+    "▢ 4 large carrots, peeled into ribbons (use a vegetable peeler)",
+    "▢ ¼ small red onion, very thinly sliced",
+    "▢ ½ cup fresh cilantro, roughly chopped",
+    "▢ ¼ cup roasted salted peanuts, roughly chopped, plus more for topping",
+    "▢ 2 teaspoons sesame seeds",
+    "[dressing]",
+    "▢ 2 tablespoon soy sauce, (gluten-free if preferred)",
+    "▢ 2 tablespoons rice vinegar",
+    "▢ 1 tablespoon toasted sesame oil",
+    "▢ 1 teaspoon maple syrup or agave",
+    "▢ 1 teaspoon fresh ginger, minced or grated, optional but recommended",
+    "▢ 1 clove garlic, grated or minced",
+    "▢ Pinch crushed red pepper flakes, optional, for heat"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

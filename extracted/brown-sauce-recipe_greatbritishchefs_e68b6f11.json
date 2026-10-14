@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Brown Sauce",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the tomatoes. Using the tip of a sharp knife, score a cross in the base of each tomato. Blanch carefully in boiling water, immediately plunging into ice water to cool (this process should loosen the skins of the tomatoes). Peel and deseed the tomatoes, then chop the flesh into chunks and set to one side",
+      "Place a large pan over a medium heat and add a small dash of oil. Sweat the onions without allowing them to colour, then add the spices and seasonings, chopped tomatoes, fruit, water, treacle and Worcestershire sauce to the pan",
+      "Stir well to combine, then leave to reduce gently over a light simmer. Add the vinegar, continuing to reduce until the mixture thickens to form a sauce-like consistency",
+      "Fish out and discard the cloves, star anise and bay leaf, then pour the sauce into a blender and blitz until smooth, adjusting the seasoning to taste. Pass through a fine sieve into a clean jar and set aside to cool. Serve immediately once cool, or store in an airtight container in the fridge for up to a week"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Apples",
+        "unit": "g",
+        "notes": "peeled, cored and finely chopped",
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c1d9c2c30e51e05cade1e3e1734b5efcb8d28c1fd8a66bab73a811b170cdad9",
+    "lineage_hash": "96042afe65a74e883b688ecb6a2b4e55653192591c54b126d7223c2ca7b9030f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-sauce-recipe",
+    "fetchedAt": "2026-08-03T12:26:59.509Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

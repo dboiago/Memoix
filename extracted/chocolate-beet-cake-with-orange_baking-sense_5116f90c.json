@@ -1,0 +1,222 @@
+{
+  "recipe": {
+    "name": "Chocolate Beet Cake with Orange",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "555",
+      "carbohydrateContent": "60",
+      "fatContent": "34",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Adding a hint of orange makes this cake extra special. There are many, many, Chocolate Beet Bundt Cake recipes out there, but not many that up the flavor with fresh orange.",
+      "This recipe has lots of beet puree for extra moisture and flavor.",
+      "Roast the beets instead of boiling them. Roasting the beets is a hands-off process and it concentrates the flavor. You can roast the beets several days ahead and refrigerate them until you’re ready to make the batter.",
+      "To roast the beets, wash the beets and trim the roots and stem. Wrap the beets in foil and roast at 350°F for about 1 hour or until tender. Allow the beets to cool in the foil. Use a paring knife to peel the skin from the cooled beets.",
+      "This batter can easily be mixed by hand if you don’t have a mixer. Use a hand whisk to emulsify the eggs/oil/sugar.",
+      "The glaze can be made ahead and re-warmed before glazing the cake.",
+      "Glaze the cake with a luscious chocolate orange ganache for a decadent finish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Beets (roasted and Peeled (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "finely grated zest and juice",
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "2 ¼ cups",
+        "amount": "18",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cup plus 2 tablespoons, see note",
+        "amount": "5",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cut into 1″ chunks",
+        "amount": "4",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "finely grated zest",
+        "amount": "1",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "4",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chocolate Orange Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "40828896619881d968e501bbe0ba780dcbf47597e4455797ad47bc42a0381840",
+    "lineage_hash": "e87c30337975bae3a134ff9aae3e6750b0286ace35240708395c07ac372eb2ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/09/25/chocolate-orange-beet-cake/",
+    "fetchedAt": "2026-08-02T05:49:39.748Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/09/25/chocolate-orange-beet-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

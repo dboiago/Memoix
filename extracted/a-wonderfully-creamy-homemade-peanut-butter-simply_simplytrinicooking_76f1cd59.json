@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Homemade Peanut Butter",
+    "time": "35 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, soak the nuts in salted water for 20 minutes before you place them on a prepared roasting sheet. Then, bake the nuts for 10 minutes at 350 degrees F, remove and then cool before you proceed to the next step. Remove the skin once cool.",
+      "Next, place the peanuts in the processor and start pulsing the nut on low-medium. You will first notice the peanuts get a crumbly texture, and then to a sticky mass that looks like a ball.  This will not last for long, once you quickly scrape the sides with a spatula.  Allow the processor to continue and a desired thick creamy paste will form.  Add a tablespoon or two of coconut oil, depending on the amount of creaminess you want and if you want it to spread the butter easily on bread.",
+      "For a sweet tasting peanut butter, you can add the honey or jam to the mixture. Allow it to blend well.",
+      "For additional flavour, add the optional ingredients according to your taste. Once you arrive at your desired smoothness, stop the processor and bottle the peanut butter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanuts",
+        "unit": "C",
+        "notes": "raw shelled or in red skin",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey/jam",
+        "unit": "Tbsp",
+        "notes": "preferably a sugar-free jam",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps. Peanut Oil",
+        "unit": null,
+        "notes": "alt: coconut oil",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps. Cocoa Powder",
+        "unit": null,
+        "notes": "alt: melted chocolate chips  optional",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "743e788cb416ec3b6dc4fc64f643b8a808c717deb43522c126ae1ba10b5974ad",
+    "lineage_hash": "04a2b04aee87a723f89b4b7260298c4b43ce34f26d2558039c790a3058a65c37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/homemade-peanut-butter/",
+    "fetchedAt": "2026-09-25T21:16:43.984Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/homemade-peanut-butter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

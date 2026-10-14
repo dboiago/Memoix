@@ -1,0 +1,68 @@
+{
+  "url": "https://www.baking-sense.com/2018/02/14/chocolate-genoise/",
+  "slug": "chocolate-genoise_baking-sense_dc46fd26",
+  "title": "Chocolate Genoise",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:38:07.485Z",
+  "ldName": "Chocolate Genoise, Chocolate Sponge Cake",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "sponge",
+  "ldIngredientsRaw": [
+    "4 ounces unsalted butter (8 tablespoons)",
+    "2 teaspoons vanilla extract",
+    "2 ounces Dutch process cocoa powder (½ cup)",
+    "4 ounces boiling water (½ cup)",
+    "8  large eggs",
+    "8 ounces granulated sugar (1 cup)",
+    "5 ounces cake flour (1 cup plus 2 tablespoons, see note)",
+    "1 ½ cups simple syrup (a double batch flavored with liquor or extract of your choice.)",
+    "Filling & icing of your choice"
+  ],
+  "ldInstructionsRaw": [
+    "Line the bottom of two 8&quot;x3&quot; cake pans with a parchment round, or butter and flour the bottom of the pan only. Preheat the oven to 350 °F (don&#39;t use the convection setting).",
+    "Melt 4 ounces&#32;unsalted butter in a small saucepan, cook until the milk solids sink to the bottom of the pan and become brown. Drain the browned butter into a small bowl, leaving the milk solids in the pan. Stir 2 teaspoons&#32;vanilla extract into the browned butter and set aside. Discard the milk solids in the pan.",
+    "Place 2 ounces&#32;Dutch process cocoa powder into a small heat proof bowl. Pour 4 ounces&#32;boiling water over the cocoa and whisk until smooth. Set aside to cool.",
+    "Put 8&#32;large eggs &amp; 8 ounces&#32;granulated sugar in a mixer bowl. Set the bowl over a pan of simmering water (don&#39;t let the bowl touch the water) and whisk until the eggs are lukewarm. Put the bowl onto the mixer and whisk until the eggs are tripled in volume.",
+    "Sift half the flour over the egg mixture and use a balloon whisk to fold, repeat with the remaining flour. Pour the cocoa into the browned butter and whisk until smooth. Whisk 2 cups of the egg batter into the cocoa/butter mixture and whisk to combine. Use the whisk to fold the cocoa/butter mixture into the batter just until combined. Divide the batter evenly between the pans.",
+    "Bake until the cake springs back when pressed in the center, about 30 minutes. Cool in the pan for 10 minutes before turning out onto a cooling rack. Cool completely before filling and frosting.",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "12 slice",
+    "calories": "351 kcal",
+    "carbohydrateContent": "61 g",
+    "proteinContent": "6 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "129 mg",
+    "sodiumContent": "69 mg",
+    "sugarContent": "50 g",
+    "transFatContent": "0.3 g",
+    "fiberContent": "2 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "4 ounces unsalted butter (8 tablespoons)",
+    "2 teaspoons vanilla extract",
+    "2 ounces Dutch process cocoa powder (½ cup)",
+    "4 ounces boiling water (½ cup)",
+    "8 large eggs",
+    "8 ounces granulated sugar (1 cup)",
+    "5 ounces cake flour (1 cup plus 2 tablespoons, see note)",
+    "[Assembly]",
+    "1 ½ cups simple syrup (a double batch flavored with liquor or extract of your choice.)",
+    "Filling & icing of your choice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

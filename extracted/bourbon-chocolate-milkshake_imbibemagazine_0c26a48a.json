@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Bourbon Chocolate Milkshake",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a blender and blend until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5734da62f8a88447471e19f094c68f3d9ec2170656e6d17424bbfd1efb9f9051",
+    "lineage_hash": "223ace0227f516f9210eec978cf470ea77032e13aac485a8d8defd74ebfe338d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-chocolate-milkshake/",
+    "fetchedAt": "2026-08-03T20:11:02.285Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-chocolate-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

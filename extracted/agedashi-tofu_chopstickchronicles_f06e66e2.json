@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Agedashi Tofu",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "83",
+      "carbohydrateContent": "20",
+      "fatContent": null,
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Remove the excess water out of the tofu by wrapping it in a paper towel and leaving it for about 20 minutes with a weight over the tofu.",
+      "Cut the tofu 1.2inch x 1.6inch x 0.8inch (3cm x 4 cm x 2cm) *3",
+      "Heat oil in a deep frying pan to 170°C.",
+      "When the oil is ready, place the katakuriko onto a flat tray and dip each tofu into the katakuriko and dust off excess with a brush. *4",
+      "Deep-fry 4 pieces of the tofu at a time for a few minutes.",
+      "Take deep fried tofu pieces out of the oil and leave it on a paper towel to drain the excess oil.",
+      "Make the sauce by putting all the ingredients into a sauce pan.",
+      "Over a medium heat, bring the all broth ingredients to boil, then turn the heat off and set aside.",
+      "Place the fried tofu into a serving bowl and top with the toppings then pour the sauce over the top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Firm Tofu",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katakuriko Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil to Deep-fry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce/Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce/Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce/Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce/Broth",
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Grated",
+        "unit": "cm",
+        "notes": "alt: ¼ cup",
+        "amount": "5",
+        "section": "Garnishing *2",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Garnishing *2",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Garnishing *2",
+        "isOptional": false
+      },
+      {
+        "name": "Shichimi Togarashi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Garnishing *2",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds to Sprinkle",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Garnishing *2",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c94edcf2390d0a42d312c254c48b2a3d65b28411e778cc0d727adb0f6cb3f8d4",
+    "lineage_hash": "ec734a8d55e01f532adebb3f126e95a5640d7149555c19a0a06dbdd3f05c6253"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/agedashi-tofu/",
+    "fetchedAt": "2026-08-01T23:09:42.512Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/agedashi-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

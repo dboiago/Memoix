@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Black Pepper Steak (黑椒牛柳)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "371",
+      "carbohydrateContent": "14.8",
+      "fatContent": "17.7",
+      "proteinContent": "37.4"
+    },
+    "directions": [
+      "To cut flank steak, divide the steak lengthwise into two equal pieces along the grain. Then slice each piece against the grain into 1/8” (3-mm) thick pieces. If the flank steak you use is quite thin, you can tilt your knife to a 45 degree angle so the slices are wider.",
+      "Combine steak, soy sauce, Shaoxing wine, baking soda, and cornstarch in a medium-sized bowl. Gently mix by hand until the beef is coated with a thin layer of the mixture. Marinate for 15 minutes while preparing the rest of the ingredients.",
+      "Combine all the sauce ingredients in a small bowl. Mix well and set aside.",
+      "Heat 1 tablespoon of oil in a 12” skillet (or a wok) over medium-high heat. When oil is shimmering, add the steak. Immediately spread the beef into a single layer using a pair of tongs or chopsticks. Sear without moving until the bottom is browned, 1 to 2 minutes. Flip the beef and cook until just cooked through, another minute or so. Turn to the lowest heat and transfer the beef to a plate, set aside.",
+      "Add the remaining tablespoon of oil into the same skillet and reduce to medium heat. Add the ginger and garlic. Give it a quick stir until fragrant. Add the onion and peppers. Stir and cook for 1 minute.",
+      "Stir the sauce mixture until the cornstarch is dissolved completely, and pour it into the skillet. Stir with a spatula immediately and cook until the sauce thickens enough to coat the back of a spoon, a few seconds. Add back the cooked beef. Quickly stir a few times to coat everything with the sauce. Turn off heat and immediately transfer everything to a big plate. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "skip this if you use salted Shaoxing wine",
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "*Footnote 2, sliced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers (i Used Green and Red, Sliced)",
+        "unit": null,
+        "notes": "*Footnote 2",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c8ff853130d012c967ad19f46391f8aa9bdf2a71bbec84d2d3b8a12ab1a20b9",
+    "lineage_hash": "2d9dbd4cc654055651a75dfdb286478bd871a9b8711156edb9de12fbf515b9a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/black-pepper-steak/",
+    "fetchedAt": "2026-08-02T08:02:33.867Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/black-pepper-steak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

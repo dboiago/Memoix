@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Condensed Milk Pound Cake",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 175 Celcius (350 Fahrenheit). Grease and flour an 8.5\"x4.5\" loaf pan, set aside.",
+      "Sift together cake flour, baking powder, and salt in a mixing bowl. Set aside.",
+      "In another mixing bowl, cream together butter and sugar with medium speed until white and fluffy. Add in sweetened condensed milk and vanilla, beat until well mixed. Add eggs, one at a time, and beat until well mixed. Sift in the flour mixture and beat with the lowest speed (or use a spatula) just until you no longer see flour streaks.",
+      "Pour the batter into prepared pan, bake for 35-40 minutes, or until a cake tester comes out clean.",
+      "Cool the cake in the pan for 10 minutes, then carefully remove from pan and cool on a wire rack to room temperature. Cut into slices and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": "1 cup, Note 1",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "4.5 oz/9 tablespoon, room temperature",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "934d4ec05dd18bf33db6f4dfdc0ca7f9982aa082922598367dcfea0d4e7d473a",
+    "lineage_hash": "f5ded085c7c12d898d03a7837f9ad09d320d9c4a56f25f55f637f002b72b9e39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/condensed-milk-pound-cake.html",
+    "fetchedAt": "2026-08-01T21:00:01.819Z"
+  },
+  "rawSource": "https://dailycookingquest.com/condensed-milk-pound-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

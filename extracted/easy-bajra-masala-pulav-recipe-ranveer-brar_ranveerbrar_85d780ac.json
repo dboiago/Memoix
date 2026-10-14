@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Bajra Masala Pulav",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pressure cooker. Add in cumin seeds and let them crackle.",
+      "Later add in bajra and sautÃ© it for a couple of minutes.",
+      "Now pour in water. Also add in turmeric powder and salt. Give it a nice stir.",
+      "Let this cook for 4-5 whistles.",
+      "Heat ghee in a pan. Add in cumin seeds and let them crackle.",
+      "Now add in green chillies, ginger and garlic and sautÃ© for a minutes time.",
+      "Add in onion and cook for 2-3 minutes until it turns slight translucent.",
+      "Now add it carrot and green beans and mix well. Cook for few minutes and then add in green peas.",
+      "Toss everything well.",
+      "Add in turmeric powder, red chilli powder, garam masala and salt. Mix everything well.",
+      "Once all the vegetables have cooked turn off the flame.",
+      "Add this tadka to bajra and mix well.",
+      "Cook for more 2-3 minutes and turn off the flame.",
+      "Garnish with coriander leaves and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bajra",
+        "unit": "C",
+        "notes": "washed and soaked overnight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee/ Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "cut into dices",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "C",
+        "notes": "cut into roundels",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "chopped for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b21ebeafc115f54bfc5f28c0d2d1d38af64ceac6340f38103e0fe6181927126c",
+    "lineage_hash": "e6f8e38e4de39ac36d45ce3f11509f925f775b1aeebdf5cadb09f94bee24308e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bajra-masala-pulav/",
+    "fetchedAt": "2026-08-02T08:35:27.230Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bajra-masala-pulav/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

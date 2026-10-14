@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Diamant Sablé Cookies",
+    "time": "1 hr 13 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "68",
+      "carbohydrateContent": "7",
+      "fatContent": "4",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cream 8 oz unsalted butter with 4 oz confectioner sugar until it becomes very smooth and lighter in color, about 1-2 minutes. Add 2 large egg yolks and 2 teaspoons vanilla extract and mix until combined. Turn off the mixer and add 10 oz all purpose flour. Mix on low speed until almost all the flour is incorporated.",
+      "Turn the dough out onto a lightly floured surface and knead together. Split the dough in ½ and roll each piece into a 12\" long log. Use a ruler or another flat tool to square off the sides of the logs. Transfer the logs to a parchment or silicone baking mat lined half sheet pan. Wrap the logs in plastic and chill about 20 minutes to firm up the dough. (see note)",
+      "Pour the crystal sugar in a 12\" long line in the middle of a piece of parchment paper or a silpat. Brush one of the dough logs lightly on the top and sides with egg white. Set the log, egg white side down, onto the crystal sugar. Brush the last side of the log with egg white. Roll the log in the sugar and press gently to adhere a coating of sugar on all 4 sides. Repeat with the other log. Return the sugar coated logs to the parchment lined pan. Chill another 20 minutes.",
+      "Preheat the oven to 350 °F. If you have a second sheet pan line it with parchment paper or a silicone baking mat.",
+      "Remove the logs from the refrigerator. Use a serrated knife to cut the logs into ½\" slices. Place 24 slices onto each sheet pan. If you only have one sheet pan work with 1 log at a time.",
+      "Bake until the bottoms of the cookies are golden brown and the dough is set in the middle, 10-13 minutes. The tops of the cookies should still be quite pale.",
+      "Cool 10 minutes on the sheet pan then transfer the cookies to a cooling rack to cool completely. Store in a covered container at room temperature for several days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystal Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33f255382e857525ec326e9a281182a44a8faa04021f349bf93c5c6173bd3989",
+    "lineage_hash": "5198b8c6a194402f8230d443d5ee2d8d0cada3dd2cc37f7b606dc0c1c218c1ce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/09/26/sable-cookies/",
+    "fetchedAt": "2026-08-02T02:32:23.702Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/09/26/sable-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Dal Bhari Puri (Dal Puri)",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "236",
+      "carbohydrateContent": "33",
+      "fatContent": "8",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Rinse 1 cup chana dal twice and then soak it in enough water for 1 hour. Do this step first.",
+      "To make the dough- take a large paraat/plate and add 2 cups atta (260 grams) to it along with ⅛ teaspoon ajwain, ½ teaspoon salt, and 1 tablespoon oil. Mix everything with your hands. Now, start adding water little by little to bring the dough together and then knead using your knuckles and wrist into a smooth yet firm dough. I used around ¾ cup water for this, but it may vary depending on the flour type. Cover the dough with a bowl and let it rest 30 minutes.",
+      "After the chana dal has soaked, now drain the water using a strainer. Transfer the dal to a pressure cooker, add 2 cups water, 1 teaspoon salt, ½ teaspoon turmeric, and ¼ teaspoon chili powder. Stir with a spoon and then close the lid of the pressure cooker. Cook on medium-high heat for 3 whistles, then lower the heat and cook 2 more minutes. Turn off the heat and wait for the pressure to come down.",
+      "Then drain the dal using a strainer to get rid of any excess moisture. Transfer the dal to a bowl and mash it slightly using a potato masher.",
+      "Now, put a pan on medium heat and add 1 & ½ tablespoons oil to it. Once the oil is hot, add ¾ teaspoon cumin seeds and let them sizzle, then add ¼ teaspoon hing, 1 teaspoon minced ginger and garlic each, 1 green chili, and 1 broken dried red chili. Cook for a few seconds until the garlic and ginger start changing color.",
+      "Then add the cooked and mashed dal, mix well using a spatula, cook for the dal with the tempering for 3 to 4 minutes on low heat. Then add 2-3 tablespoons cilantro (chopped) and mix. The filling is ready."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "190 grams , soaked for an hour",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "15 ml , I used avocado oil",
+        "amount": "1",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to knead the dough, around ¾ cup",
+        "amount": "0",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "for pressure cooking the dal",
+        "amount": "2",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Tablespoon Oil",
+        "unit": null,
+        "notes": "22 ml , I used avocado oil",
+        "amount": "1",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "chopped, adjust to taste",
+        "amount": "1-2",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili",
+        "unit": null,
+        "notes": "dried, broken",
+        "amount": "1",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "Dal Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to fry the puris, I used avocado oil",
+        "amount": "0",
+        "section": "Dal Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0dc47e9c47e38244946db4b1fafdace7dec719f12cc2512676957f7299e84e40",
+    "lineage_hash": "f3ecda9525199a4db15680fc680abe4d2b7ebd173b244d172edbb9bb0d5a721d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dal-bhari-puri/",
+    "fetchedAt": "2026-08-02T09:42:57.466Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dal-bhari-puri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

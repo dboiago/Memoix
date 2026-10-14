@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cajun Moon",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "177",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "RIM glass with Tajín seasoning (moisten outside edge with lime or orange juice and drip into Tajín).",
+      "Prepare garnish of lime wedge.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with lime wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": "brandy",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aged Rum",
+        "unit": "ml",
+        "notes": "6-10yr",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey and Water Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creole Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Hot Pepper Sauce",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c1c7d571fe2fb4768423c53ea5f546ede1246cc95e4f8cf3ade620bd833b2a5",
+    "lineage_hash": "cc0a95184859ceb5b1e5c91a5b4d52fef10b985cf049cd10d2b7ab4b4c48537c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/5410/cajun-moon",
+    "fetchedAt": "2026-08-03T15:20:28.880Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/5410/cajun-moon",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

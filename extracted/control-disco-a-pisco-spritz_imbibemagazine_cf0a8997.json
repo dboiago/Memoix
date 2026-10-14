@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Control Disco",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 3 ingredients to a glass, then fill with ice and top with sparkling wine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pisco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8c9eebf08607fed242e6e73b35010b76826251d84b76c4d4e775bacc3a797c1",
+    "lineage_hash": "d08e4f650bd569b0b9093292c7f0d0bcfbddbbb9bd948affdc891461e8ab2d68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/control-disco-pisco-spritz/",
+    "fetchedAt": "2026-08-04T00:56:39.390Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/control-disco-pisco-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Cacao Nib Miso",
+    "time": "15 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, blend the nibs, koji grains and salt together with the water. Cacao nibs are very hard don't worry about getting it to a smooth paste – this coarse miso is meant to have a bit of texture to it",
+      "Transfer to a container and drop the container on the work surface a few times to get rid of any air bubbles – you need the carbon dioxide to escape otherwise it will not ferment correctly",
+      "Cover the container with muslin cloth (secured with string or elastic) and leave in a warm place – the warmer it is, the quicker the fermentation process will be. 25°C takes around 5 days, so it's best to make this in summer if you don’t have a dehydrator",
+      "Taste after 5 days. If you are happy with the flavour, store in the fridge to halt the fermentation process. If you are in no hurry, you can carry on fermenting for a deeper flavour"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Koji Rice",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69e1d41ea2a4a7b2f4de449c14048db10f4b6e9c2282aaadac3b7a5587393a25",
+    "lineage_hash": "14af982f7651b0f2b667aae659945c3feaee47209638013e0b72365943290fe6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacao-miso-recipe",
+    "fetchedAt": "2026-08-03T11:01:58.169Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacao-miso-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

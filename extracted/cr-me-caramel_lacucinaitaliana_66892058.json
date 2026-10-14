@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Crème caramel",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a saucepan, bring to a boil 2 cups milk with 3/4 cup cream and 1/4 cup sugar, the lemon zest and vanilla.",
+      "Drizzle in 4 whole eggs and 2 egg yolks beaten together with 1/4 cup sugar, mix together and allow to cool. Melt a scant 1/2 cup sugar with 2 tablespoons water until it begins to turn darker; pour it into 8 ramekins, then pour in the cooled cream mixture.",
+      "Place the ramekins in a cake pan and fill it with hot water to half the height of the ramekins. Bake at 250°F for 45 minutes, then turn off the oven and leave it in the oven for another 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31cf195955992edc3d8f685af4e2be3b3eeabd418f37c6c65cd5eba5547872f1",
+    "lineage_hash": "0d4350121daac8e3e6ce65cea143cea626cffd0a91393c568150caf2cd3e39b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/creme-caramel",
+    "fetchedAt": "2026-08-03T05:56:44.924Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/creme-caramel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

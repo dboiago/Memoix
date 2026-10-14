@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Creole Seasoning",
+    "time": null,
+    "course": "rubs",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a small bowl and whisk to mix.",
+      "Store in a covered jar away from heat and light. The mix will keep for 6 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "kosher or sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sage Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98e1d69375be92f9aff4637b4646ecc829ffce560b6957ed79d96a6d182c6906",
+    "lineage_hash": "bd5dc3262dc11a172c9c1058c74116810a0ce1a48e215d8b86db33edf02896a0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/creole-seasoning/",
+    "fetchedAt": "2026-08-03T02:52:45.792Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/creole-seasoning/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

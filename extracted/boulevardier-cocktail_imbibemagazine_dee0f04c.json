@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Boulevardier Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients well with ice in a mixing glass, then strain into a chilled coupe or over ice into a rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b924e15bfcb71bc052072b3acb52314403cea53c6db52d2c82b92b92801ef645",
+    "lineage_hash": "f948f0eafd574075d0361335a8308faad56bbb09a1f3254b8c1dfb287172ce29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-boulevardier-cocktail-recipe/",
+    "fetchedAt": "2026-08-04T02:03:08.154Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-boulevardier-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

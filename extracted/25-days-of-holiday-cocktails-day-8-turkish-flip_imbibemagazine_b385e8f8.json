@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Turkish Flip",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": "Coupe",
+    "garnish": [
+      "Star Anise",
+      "Fresh Nutmeg"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to a shaker tin and dry shake for 20-30 seconds.",
+      "Add ice and shake to chill.",
+      "Fine-strain into a chilled coupe.",
+      "Top with star anise and freshly grated nutmeg."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turkish Spiced Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": "fresh, pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc56d648835af4f1d41f24d8c147e942b3c53c30969d87a82196d9b9ac84f72d",
+    "lineage_hash": "f2a09a1f44ba19cd3e85254833b7a2fa4359843b55fac892328903bee0d7a472"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/25-days-of-holiday-cocktails-day-8-turkish-flip/",
+    "fetchedAt": "2026-08-03T04:06:49.408Z"
+  },
+  "rawSource": "https://imbibemagazine.com/25-days-of-holiday-cocktails-day-8-turkish-flip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

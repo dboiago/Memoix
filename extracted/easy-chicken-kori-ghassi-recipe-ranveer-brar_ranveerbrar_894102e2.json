@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Chicken Kori Ghassi (चिकन कोरी घासी)",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in kadhai and add cumin seeds and peppercorns. Saute onions and ginger garlic paste until turns golden brown in color.",
+      "Now add chicken and add turmeric, salt and saute for 3-4 minutes.",
+      "Add red chili powder, coriander powder and coconut milk. Cover and allow it to cook.",
+      "Add little water if required.",
+      "When chicken is cooked remove and serve immediately with roti or steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds/ Methi Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Broke Dry Red Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil/ Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "curry cuts",
+        "amount": "500",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "handful",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Gravy",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1359750705c447b05ce938d991457632151368e269ce8c20c0dedc7e49c5c806",
+    "lineage_hash": "40b5f5468fdb7bf446b1de5c7777f5c902cd1df5851c4616f7b9c853dd5528ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-kori-ghassi/",
+    "fetchedAt": "2026-08-02T13:47:16.873Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-kori-ghassi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Creamy Marry Me Pasta",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "487",
+      "carbohydrateContent": "80",
+      "fatContent": "12",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Soften the cashews (optional): If you have a high-powered blender, you can skip this step. Otherwise, add the cashews to a small pot, cover with water, and bring to a boil. Boil for 10 minutes until very tender. Drain and rinse well before using. Alternatively, soak cashews in cool water overnight. Softening the cashews first helps them blend into a smooth, creamy sauce.",
+      "Make the cashew cream: Add the cashews and ½ cup fresh water to a blender. Blend until completely smooth and creamy, scraping down the sides as needed. Set aside.",
+      "Cook the pasta: Bring a large pot of water to a boil and cook the pasta according to the package directions. Reserve some cooking water, then drain and set aside.",
+      "Make the sauce: In a large pan, heat olive oil over medium heat. Add garlic and sun-dried tomatoes. Sauté for about 60 seconds until the garlic is fragrant. Reduce the heat and stir in the blended cashew cream (or vegan heavy cream), 1 cup fresh water, tomato paste, basil, and season generously with salt and pepper. Stir until heated through and gently bubbling, 1-2 minutes. If it gets too thick add a splash extra water to loosen. Remove from heat.",
+      "Combine and serve: Add cooked pasta to the sauce and toss well to coat. Add a splash of reserved pasta water if needed to loosen the sauce. Season with salt and pepper to taste. Serve hot with your desired garnishes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pasta",
+        "unit": "oz",
+        "notes": "gluten-free if preferred, any shape",
+        "amount": "12",
+        "section": "pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "softened if needed, see step 1",
+        "amount": "½",
+        "section": "cashew cream (or use 1 cup vegan heavy cream)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "cashew cream (or use 1 cup vegan heavy cream)",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "sub water or broth for oil-free",
+        "amount": "1",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "5",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": "C",
+        "notes": "drained if packed in oil, sliced",
+        "amount": "½",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "C",
+        "notes": "plus more for garnish, fresh, chopped",
+        "amount": "½",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Optional for Garnish: Extra Fresh Basil",
+        "unit": null,
+        "notes": "parsley, crushed red pepper flakes, a squeeze of lemon, or vegan parmesan",
+        "amount": "0",
+        "section": "sun-dried tomato sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d0759f9202c8400504e548959a6661b9bbac953dfcd5ef75d6ec7535d4aff74",
+    "lineage_hash": "21bb5eab35841b0e19b40b98ef352ea46e37217b06a0967fa0d2da39710eb499"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/marry-me-pasta/",
+    "fetchedAt": "2026-08-02T09:49:58.943Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/marry-me-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

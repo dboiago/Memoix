@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Beijing hot pot dipping sauce",
+    "time": "8 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the sesame paste into a big bowl. Add the water, one tablespoon at a time, and use a spatula or a spoon to blend the water in until it forms a smooth paste. Add more water and repeat, until it forms a smooth sauce that is slightly runny.",
+      "Add the red fermented bean curd. Break it apart while mixing it into the sauce, until fully incorporated.",
+      "Add the rest of the ingredients and mix, until everything is fully dissolved into the sauce. Taste it and adjust it according to your taste. If you do not use the leek flower sauce, the sauce will be milder. You can add a bit more soy sauce, sesame oil, and garlic to boost the flavor."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Sesame Paste (or Unsweetened Natural Peanut Butter, or Tahini)",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water (or Warm Hot Pot Broth)",
+        "unit": "C",
+        "notes": "*Footnote 2",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Red Fermented Bean Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Fermented Leek Flower Sauce (optional)",
+        "unit": "tsp",
+        "notes": "*Footnote 3",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "2 cloves, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "Optional, minced (or to taste)",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "531a7470825f09e29cd484ff626bf776abb1a11a1bf004f47660d28694dcebfa",
+    "lineage_hash": "cca169a1ad61d4f3d5bd8dae0487db718bd669461fa3d064ac6f6b03ecdbdac5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beijing-hot-pot-dipping-sauce/",
+    "fetchedAt": "2026-08-01T16:45:54.862Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beijing-hot-pot-dipping-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Sacher Torte",
+    "time": "3 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "470",
+      "carbohydrateContent": "52",
+      "fatContent": "29",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Make the cake batter base. Fold some of the batter into the melted chocolate to lighten it, then fold that back into the batter.",
+      "In three batches, fold the whipped whites into the chocolate cake batter.",
+      "Pour the batter into the prepared pan and bake until the center of the cake springs back when lightly pressed. Allow the cake to cool completely.",
+      "Slice the crust off the top of the cake then “torte” the cake into 2 even layers.",
+      "Spread apricot preserves over the bottom layer of the cake. Top with the other layer.",
+      "Strain the preserves to remove the large chunks of fruit.",
+      "Ice the cake with the strained apricot preserves and let the cake air dry for at least 1 hour.",
+      "Pour the chocolate glaze over the cake and let the glaze set before decorating."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 cup, room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup, divided in half",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated, room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c68b88d351849735e85b82cdda6a8ce9c5f6e1efb1baeac3401827ba10b75875",
+    "lineage_hash": "8f30ab257e6c0f536b62924f1be3285d8e078c7ac4c78d3b03f4c38ee2624ceb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/12/07/sacher-torte/",
+    "fetchedAt": "2026-08-02T03:39:25.975Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/12/07/sacher-torte/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

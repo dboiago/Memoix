@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Bhaja Moshla",
+    "time": "15 min",
+    "course": "rubs",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "0",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Measure out the whole spices in the given proportion. You may lightly crush them with a pestle or rolling pin before roasting, if you like.",
+      "Heat a pan on medium-low flame and add the whole spices to the pan.",
+      "Dry-roast them evenly on all sides, stirring continuously, for about 8 minutes. Don't rush this step—the spices need to be roasted all the way inside.",
+      "Add the toasted spices to a grinder and blitz them till you have a fine powder. You can also use a mortar and pestle to grind by hand.",
+      "Store the _bhaja masala_ powder in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": "jeera",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": "mouri",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "dhone",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Cardamom",
+        "unit": null,
+        "notes": "elach",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d1bbfe9cd524a625554e4bb16eff471787985b0b6a6a426ae4743444aa83e351",
+    "lineage_hash": "c3b72166d11de868f2bd3060c3e5d97851135518b344a27af203e8ed4d0ac9d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bhaja-masala",
+    "fetchedAt": "2026-08-01T17:18:02.857Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bhaja-masala",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Upma",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in kadhai and heat. Add rava and saute for 2-3 minutes on low flame. Stir continuously while stirring so that every grain of rava should coat with a ghee evenly. Remove from the flame and keep aside for later use.",
+      "For Upma, heat oil in a same kadhai and splutter mustard seeds, followed by chana dal, gota urad and cashew nuts. Saute until they turn light brown.",
+      "Now add ginger and cook for a minute until ginger releases its raw smell.",
+      "Add onion, green chilli and curry leaves and saute until onion turn translucence.",
+      "Add in water, salt, sugar and allow it to boil. When it starts boiling allow it it to boil for a 2 minute. In this way all the flavors will infuse in water.",
+      "Now at this stage add in prepared rava. Stir continuously while cooking to avoid any lumps.",
+      "When almost all the water is absorbs reduce the flame (make sure it must have porridgey consistency) and cover with the lid for 1 minute.",
+      "Remove the lid and sprinkle lime juice, coriander leaves and ghee. Mix well.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Sautéing Rava",
+        "isOptional": false
+      },
+      {
+        "name": "Bombay Rava",
+        "unit": "C",
+        "notes": "165 gms",
+        "amount": "1",
+        "section": "For Sautéing Rava",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "any refined oil",
+        "amount": "3",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Gota Urad",
+        "unit": "Tbsp",
+        "notes": "whole polished urad",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "Tbsp",
+        "notes": "bengal gram",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "No Cashew Nuts",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "8",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "medium",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "No Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Wedge Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh with it’s tender stems, chopped",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ddeb8705f1014265e600f93c217fbdfce143c5b73da9e55d2aae411e92a6393",
+    "lineage_hash": "cdeb573e0ea0bdf866a7f9660427b8ff48d3afeb8e478ff7dbf563e09475f215"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/upma/",
+    "fetchedAt": "2026-08-02T18:18:39.582Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/upma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

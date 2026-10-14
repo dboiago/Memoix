@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Baked Amritsari Fish Fingers",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 220 degrees C.",
+      "Rinse the fish and pat dry. Apply 1 tsp red chili powder, ginger garlic paste, lime juice and marinate for 30 mins.",
+      "In a shallow bowl, make gram flour batter. Add salt and 1 tsp red chili powder.",
+      "Grease a cookie sheet.",
+      "Dip fish in gram flour mixture and then into crumbs, making sure to coat both sides.",
+      "Place fish on baking sheet and spray with oil.",
+      "Bake for 12 to 15 minutes.",
+      "Serve immediately with mint chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "King Fish Fillets",
+        "unit": "g",
+        "notes": "cut into fingers",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cereal",
+        "unit": "C",
+        "notes": "finely ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "175e1f65f993f48368c8c86da6bff66179dd7fd8997bc8553014446a93fda454",
+    "lineage_hash": "341e609779daf15a5fecd533a68841abbef10b8b2a42e65b55b3831165b323e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baked-amritsari-fish-fingers/",
+    "fetchedAt": "2026-08-02T08:22:34.979Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baked-amritsari-fish-fingers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cock-a-leekie-soup-recipe",
+  "slug": "cock-a-leekie-soup-recipe_greatbritishchefs_c571af2e",
+  "title": "Cock a leekie soup recipe",
+  "byline": "by Paul Welburn",
+  "fetchedAt": "2026-08-04T00:04:17.906Z",
+  "ldName": "Cock a leekie soup",
+  "ldTime": "PT2H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "3 chicken legs, or 6 drumsticks",
+    "1l water",
+    "1 onion, chopped",
+    "2 leeks, sliced",
+    "2 carrots, chopped",
+    "12 prunes, chopped",
+    "2 sprigs of thyme",
+    "1 bay leaf",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 200˚c",
+    "Roast the chicken pieces for around 30 minutes then place in a heavy bottomed pot along with any juices which have come out. Pour water over the chicken until it is covered. Bring to the boil and then simmer for 1 hour to give a stock",
+    "Add in the vegetables, prunes, herbs, a good grinding of pepper and half a teaspoon of salt. Cook until the vegetables are tender, around 20 minutes. Remove the chicken, take the meat from the bones and stir back into soup",
+    "Discard the bones and the herbs, check for seasoning and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

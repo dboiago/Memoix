@@ -1,0 +1,60 @@
+{
+  "url": "https://www.baking-sense.com/2024/03/20/ciabatta-bread-recipe/",
+  "slug": "ciabatta-bread-recipe_baking-sense_266ddb54",
+  "title": "Ciabatta Bread Recipe",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T00:34:41.427Z",
+  "ldName": "Ciabatta Bread",
+  "ldTime": "PT525M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "brunch, dinner, Lunch, Snack",
+  "ldKeywords": "bread",
+  "ldIngredientsRaw": [
+    "2 oz warm water",
+    "¼ teaspoon dry yeast",
+    "3 ¾ oz unbleached bread flour",
+    "7 oz warm water",
+    "2 teaspoons dry yeast",
+    "Biga from day 1",
+    "6 ¼ oz unbleached bread flour",
+    "1 teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Biga",
+    "Dough"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "88 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "3 g",
+    "fatContent": "0.3 g",
+    "saturatedFatContent": "0.04 g",
+    "sodiumContent": "196 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "0.1 g",
+    "unsaturatedFatContent": "0.15 g"
+  },
+  "htmlIngredientLines": [
+    "[Biga]",
+    "2 oz warm water",
+    "¼ teaspoon dry yeast",
+    "3 ¾ oz unbleached bread flour",
+    "[Dough]",
+    "7 oz warm water",
+    "2 teaspoons dry yeast",
+    "Biga from day 1",
+    "6 ¼ oz unbleached bread flour",
+    "1 teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

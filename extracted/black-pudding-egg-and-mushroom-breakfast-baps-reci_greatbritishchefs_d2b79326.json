@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Black Pudding, Egg and Mushroom Breakfast Baps",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the mayo, combine the mayonnaise and the ground chipotle chilli powder",
+      "Toast the buns in a pan until golden brown and crisp",
+      "Mix together the melted butter and dill, then brush on the toasted buns, reserving some for drizzling",
+      "Rub the mushrooms with some oil and then fry in the pan until tender and browned",
+      "Fry the rounds of black pudding until crisp and cooked through, then fry the eggs",
+      "Spread the mayonnaise on the buns, then top with the mushroom, black pudding and fried eggs. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chipotle Chilli",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burger Buns",
+        "unit": null,
+        "notes": "halved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dill",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portobello Mushrooms",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rounds of Black Pudding",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a86157851bf06f7f40866034855bea7a0e2b5d38f98d09589f0b7ef628ae52c2",
+    "lineage_hash": "467a12d469afd221f5a04a75487eb1d84af659dc015e7abc4a1b8c49fa20a508"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pudding-egg-mushroom-breakfast-baps-recipe",
+    "fetchedAt": "2026-08-02T03:36:51.533Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pudding-egg-mushroom-breakfast-baps-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

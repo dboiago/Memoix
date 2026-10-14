@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Drunken Crab",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean the crab thoroughly by scrubbing it with a brush under cold running water. Remove and dry the top shell and set it aside. Remove and discard the gills and clean any dirt and hair from this area. Cut the crab in half and then in quarters.",
+      "In a large pot over medium heat, combine the broth, ginger, garlic, fish sauce, oyster sauce, sugar, and salt and bring the mixture to a boil. Add the crab pieces, cover the pot, and cook for 3 minutes until the shells turn red. Stir in the wine, beer and black pepper. Cover the pot again and reduce the heat to medium-low. Simmer for 2 minutes, then remove and discard the ginger and add the scallions to the pot.",
+      "Remove the crab pieces from the pot and reassemble them on a deep serving  dish. Place the top shell back on top and pour the wine sauce over the crab. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Dungeness Crab",
+        "unit": null,
+        "notes": "about 2 1/2 lbs.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "alt: fish broth, divided",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "oz",
+        "notes": "peeled and sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "C",
+        "notes": "Gray Riesling or Trousseau Gris preferred",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pale Lager Beer",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "cut into 1 1/2-inch pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e51c7ce2783d514c89de362f36123a96f95060153ca56afe508ff548fd3bc59",
+    "lineage_hash": "776d06fefa385211b323ba7a084987e2d1dac1a9408382d1d44e6af1464e893a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/drunken-crab/",
+    "fetchedAt": "2026-08-03T22:59:11.957Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/drunken-crab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

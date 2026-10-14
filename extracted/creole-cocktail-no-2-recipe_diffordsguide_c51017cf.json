@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Creole Cocktail No. 2",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey 50% ABV",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "China-china Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro",
+        "unit": "ml",
+        "notes": "e.g. Averna",
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d2d71c3e669edef120cc79f7d008a366557471af9f5c5869c65115360eaccaaf",
+    "lineage_hash": "5cd1da1b80625c1a592a77b26a3e2bd65e7f8964fabf68e9b5253b1831b83d79"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/24943/creole-cocktail-no-2",
+    "fetchedAt": "2026-08-03T20:14:13.431Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/24943/creole-cocktail-no-2",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,311 @@
+{
+  "recipe": {
+    "name": "Beef Wellington",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a frying pan over a high heat and add a small dash of vegetable oil. Once hot, generously season the beef with salt and evenly sear the entire beef fillet until browned. Remove from the pan and leave to cool",
+      "To make the pancake mix, combine 1 egg, the flour and milk together in a mixing bowl. Whisk thoroughly until smooth",
+      "Place a non-stick frying pan over a medium heat and add enough vegetable oil to just coat the base of the pan. Add approximately 60ml of the pancake mix to the pan and spread and cook to form a crepe-like finish. Repeat until all the pancake mix has been used up. This recipe will allow for extra as well",
+      "Place a saucepan over a medium heat and add the butter. Once hot and melted, sweat off the mushrooms, shallots and garlic, until all the moisture has been released from the mushrooms and the pan is almost dry",
+      "Add the white wine, then reduce until almost dry. Remove from the heat, add the chopped chives and transfer into a blender. Blitz until smooth, season to taste with salt and set aside",
+      "Once the beef fillet is completely cool, spread each pancake evenly with mustard and the mushroom mix. Lay the pancakes down to form one rectangular base. Wrap the pancakes around the beef",
+      "Lay out the puff pastry with the longest side parallel to the edge of the work surface. Place the beef fillet at the edge and roll over into the pasty to encase the entire beef fillet. Seal the edge by gently pressing together - making sure the seal is used as the base of the Wellington, by having it face down on a baking tray",
+      "Beat the remaining egg in a small bowl and, using a pastry brush, brush the pastry with the egg wash. Set aside in the fridge while you prepare the other elements",
+      "For the rosemary jus, place a medium saucepan over a high heat, add the red wine vinegar and reduce until almost dry. Then add the red wine and reduce until almost dry again. This will concentrate the flavour of the base of the jus",
+      "Repeat the process with the port, followed by the Madeira. Lastly add the beef stock and rosemary, bring to a simmer and reduce to the desired consistency. This will usually be by 1/4 to 1/2 until you have a thin gravy-like consistency",
+      "Pass the jus through a fine strainer, season to taste and set aside. The jus can be prepared ahead of time and frozen up to a week in advance",
+      "For the fondants, cut the top and bottom off each potato so they stand flat in the pan. Heat the butter in a wide, high-sided saucepan and evenly place the potatoes, flat-side down, into the pan. Continue to cook on a medium heat until golden brown and then turn to achieve the same colour on the opposite side",
+      "Add enough water to just cover the potatoes. Add the rosemary and a generous pinch of salt and bring to a gentle simmer",
+      "Increase the heat and cook the potatoes to reduce the liquid until there is no water left and the bases of the potatoes are browned. When ready, remove from the heat and set aside to keep warm",
+      "For the parsley root purée, peel and trim the roots, cut into small chunks and place into a small saucepan. Cover with the cream and milk and place over a medium heat. Bring to a gentle simmer and allow to cook until soft and tender, around 20-30 minutes",
+      "Strain off (but reserve) the cream mixture. Add the parsley root to a blender with a little of the cream mixture and blitz on a slow speed. Once the mixture is smooth, increase the speed - adding a little more off the cream mixture to form a thick purée",
+      "Pass through a fine strainer, season with salt and set aside",
+      "Preheat the oven to 190˚C/gas mark 5. Remove the beef fillet from the fridge and allow to stand for 15 minutes. Place into the oven for 15-20 minutes for a medium rare finish (internal temperature of 65˚C). Remove and allow to rest for 5 more minutes",
+      "Meanwhile, prepare a large pot of salted boiling water. Remove and discard any large stems from the kale and tear up the leaves into large pieces. Cook for 2 minutes",
+      "While the kale is cooking, place a pan over a medium heat and fry the butter until it foams. Once the kale has been in the water for 2 minutes, remove, strain thoroughly and add to the foaming butter. Season to taste with salt and set aside to keep warm",
+      "Reheat the potatoes, jus and purée. Slice the Wellington into portions, smear a spoonful of purée on the plate followed by the kale. Place the beef on the plate and finish with a generous saucing of the rosemary jus. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Root",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3eab2b4ace1c3cd36f8dd9222ba3704dd4ffe8f7659da5ba8fe67c10e5e8186d",
+    "lineage_hash": "933c206070bcbda7311d6b254d97a2a5ca1d65d849f8614f210b46e800cc9bf7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-wellington-recipe",
+    "fetchedAt": "2026-08-03T17:54:24.734Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-wellington-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

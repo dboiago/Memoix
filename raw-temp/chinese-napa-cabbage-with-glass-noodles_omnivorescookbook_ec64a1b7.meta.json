@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-napa-cabbage-with-glass-noodles/",
+  "slug": "chinese-napa-cabbage-with-glass-noodles_omnivorescookbook_ec64a1b7",
+  "title": "Chinese Napa Cabbage with Glass Noodles",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T22:36:35.001Z",
+  "ldName": "Chinese Napa Cabbage with Glass Noodles",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "4 oz. (100 g) potato noodles",
+    "1 1/2 lbs (700 g) napa cabbage ( (about 6 cups chopped))",
+    "2 tablespoons soy sauce",
+    "1/2 tablespoon dark soy sauce",
+    "1 tablespoon oyster sauce ((or Chee Hou Sauce))",
+    "1 teaspoon sugar",
+    "1 1/2 tablespoons peanut oil ((or vegetable oil))",
+    "2 teaspoons Sichuan peppercorns",
+    "2  green onions (, chopped)",
+    "1 tablespoon ginger (, minced)"
+  ],
+  "ldInstructionsRaw": [
+    "Add the potato noodles into a big bowl and add hot water to cover. Let sit for 10 minutes, or until the noodles turn al dente. Drain the hot water, rinse the noodles with running tap water, drain again, and set aside.",
+    "To chop the napa cabbage, halve the head of napa cabbage, then cut it into quarters. Tilt your knife to split the quarters in half again. Then cut the napa cabbage into bite-size pieces (see the step-by-step photos in the blog post).",
+    "Mix the sauce ingredients together in a small bowl.",
+    "Heat the peanut oil in a large nonstick skillet over medium-high heat. Add the Sichuan peppercorns. Cook and stir until the Sichuan peppercorns turn dark, but are not burned. Remove the Sichuan peppercorns and discard them.",
+    "Add the green onions and ginger. Stir for 30 seconds to release the fragrance.",
+    "Add the napa cabbage. Let it cook, stirring occasionally, until it’s withered but not soft, 5 minutes or so.",
+    "Turn to medium heat. Pour the sauce over the skillet and stir to mix well.",
+    "Add the soaked noodles. Stir again. Cover the skillet and let it cook until the napa cabbage turns soft, 2 to 3 minutes.",
+    "Uncover the pan. Toss everything again. If there’s too much residual liquid, you can turn to medium-high heat again and cook for another 1 to 2 minutes, to thicken the sauce.",
+    "Transfer everything to a plate and serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "183 kcal",
+    "carbohydrateContent": "31.2 g",
+    "proteinContent": "3.5 g",
+    "fatContent": "5.5 g",
+    "saturatedFatContent": "0.9 g",
+    "sodiumContent": "703 mg",
+    "fiberContent": "2.2 g",
+    "sugarContent": "3.4 g"
+  },
+  "htmlIngredientLines": [
+    "4 oz. (100 g) potato noodles",
+    "1 1/2 lbs (700 g) napa cabbage  (about 6 cups chopped)",
+    "[Sauce]",
+    "2 tablespoons soy sauce",
+    "1/2 tablespoon dark soy sauce",
+    "1 tablespoon oyster sauce (or Chee Hou Sauce)",
+    "1 teaspoon sugar",
+    "[Stir-fry]",
+    "1 1/2 tablespoons peanut oil (or vegetable oil)",
+    "2 teaspoons Sichuan peppercorns",
+    "2 green onions , chopped",
+    "1 tablespoon ginger , minced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

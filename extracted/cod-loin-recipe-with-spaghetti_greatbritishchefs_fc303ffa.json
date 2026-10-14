@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Cod Loin with Spaghetti",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the wild garlic pesto. Place the basil, wild garlic and pine nuts in a pestle, grind to a course paste then gradually grind in the rest of the ingredients until you reach a pesto consistency",
+      "To make the pangrattato, add all of the ingredients to food processor and blitz until broken down into fine breadcrumbs",
+      "Place a pan over a medium heat, add the butter and once foaming, add the breadcrumb mixture. Roast until the breadcrumbs are golden brown and have a nice crunch. Place on a tray and set\r\naside",
+      "Place a large pan of heavily salted water over a high heat and bring to the boil",
+      "When ready to cook, lightly season the cod loin and place on a buttered baking tray. Bake for 10–12 minutes, then remove from the oven and allow to rest in a warm place",
+      "Cook the pasta according to packet instructions. Meanwhile, add the vegetable oil to a heavy-based pan and fry the pancetta until crispy and brown. Add the butter for an extra crisp finish, then deglaze with the stock. Allow to reduce slightly then add 300g of the wild garlic pesto, the pine nuts, lemon juice and crème fraîche",
+      "Add the fresh herbs to the sauce. Drain the spaghetti, tip into the sauce and stir until everything is well-coated",
+      "To serve, divide the spaghetti between plates and top with the baked cod. Add an even layer of pangrattato to the cod, then garnish with some chopped wild garlic and a few wild garlic flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Loin",
+        "unit": "g",
+        "notes": "cut into 4 equal portions",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "or smoked streaky bacon",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": "good quality, or vegetable stock",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "preferably microplaned, finely grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f6ce812f31d07d0f1565273ac22ae309d86bd22ce218bed0728d6f26ef2faea",
+    "lineage_hash": "293e3c05892360b93bbf91f72a64470c6325e2fe748f681cf738bf04dad0a313"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-loin-with-spaghetti-recipe",
+    "fetchedAt": "2026-08-03T11:15:37.858Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-loin-with-spaghetti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

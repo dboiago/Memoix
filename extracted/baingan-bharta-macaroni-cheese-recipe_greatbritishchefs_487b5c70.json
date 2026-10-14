@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Baingan Bharta Macaroni Cheese",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the aubergines. Coat the aubergines in the oil, then score the skin a few times with a sharp knife. Transfer to a baking tray and place in the oven for 45 minutes, or until the skin has shrivelled and the pulp is soft",
+      "Once the aubergines are cool enough to handle, skin them and scoop out the pulp. Mash the pulp with a fork and set aside",
+      "Heat the vegetable oil in a large frying pan, then add the ground turmeric, cumin seeds and chillies. When the seeds start to sizzle, add the onions and garlic and sauté for 1 minute",
+      "Add the tomatoes, salt, ground cumin, coriander and garam masala. Cook for 5–7 minutes on a medium heat until the tomatoes are pulpy and softened",
+      "Stir in the aubergine pulp and cook for a further 5 minutes, then remove the pan from the heat and set aside",
+      "In a large saucepan bring plenty of water up to the boil and add the macaroni. Cook the pasta for 10 minutes, or as per packet instructions",
+      "To make the cheese sauce, melt the butter in a non-stick pan over a low heat, then quickly mix in the plain flour to form a paste, stirring all the time with a whisk",
+      "Add the milk and whisk gently to ensure no lumps form. Stir in the cheese and allow the sauce to thicken before removing the pan from the heat",
+      "In a large oven-proof dish, combine the curried aubergine pulp and macaroni and mix well, ensuring the curry is evenly distributed throughout the macaroni. Pour in the cheese sauce, mix well again and top with a handful of grated cheese and finally the breadcrumbs",
+      "Place the dish under the grill until the cheese is melted and the breadcrumbs are golden. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to roast the aubergines",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "skinned and chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macaroni Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "plus 1 extra handful for the topping",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16c401eb07dafe8890c3ddf9353a583af5953f77ee44669ccc4497a746c7b5c5",
+    "lineage_hash": "b310f70a6f2257185ae01e906b2fbdf372983936cc3ac367b910bbc3993fd765"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baingan-bharta-recipe-macaroni-cheese",
+    "fetchedAt": "2026-08-03T12:31:54.387Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baingan-bharta-recipe-macaroni-cheese",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

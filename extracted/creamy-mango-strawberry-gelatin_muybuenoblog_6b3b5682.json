@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Creamy Mango Strawberry Gelatin",
+    "time": "1 hr 36 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "34",
+      "fatContent": "1",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Spray large (8- to 10-cup) Bundt pan or gelatin mold lightly with nonstick cooking spray; set aside.",
+      "SPRINKLE gelatin over water in small saucepan. Heat for 1 minute or until gelatin is dissolved. Place mango nectar, sweetened condensed milk and gelatin mixture in blender; cover. Blend until smooth. Pour into prepared Bundt pan. Refrigerate for 20 minutes.",
+      "COMBINE hot water and strawberry gelatin mix in large bowl; stir until gelatin is completely dissolved.",
+      "Sprinkle unflavored gelatin over strawberry gelatin mixture; whisk immediately until dissolved.",
+      "Add evaporated milk; whisk until combined. Stir in cold water, strawberries, and mango.",
+      "Pour gelatin mixture gently into Bundt pan over mango gelatin. Refrigerate for 15 minutes. Remove from refrigerator and use the flat edge of a knife to pull aside the mango gelatin and let the cherry gelatin drip down. This will create a slightly marbled effect.",
+      "Refrigerate for at least 50 minutes more or until the gelatin is fully set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nonstick Cooking Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Envelopes",
+        "unit": null,
+        "notes": "7 grams each unflavored gelatin",
+        "amount": "2",
+        "section": "Mango Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Mango Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Nectar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Mango Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé LA Lechera Fat Free Sweetened Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Mango Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Package Strawberry-flavored Gelatin",
+        "unit": null,
+        "notes": "6 ounces",
+        "amount": "1",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Envelopes Unflavored Gelatin",
+        "unit": null,
+        "notes": "7 grams each",
+        "amount": "2",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé® Carnation® Evaporated Fat Free Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "Strawberry Gelatin",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6df0f5a15ca5f76bdd9fbf792b9b797c9add2bff47aa1a9a8e7c7e283d1e058",
+    "lineage_hash": "138f490fa74fe446c408b43429facc0d6df99a2a6a97e30973472ac2916617c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/creamy-mango-strawberry-gelatin/",
+    "fetchedAt": "2026-08-01T18:13:37.815Z"
+  },
+  "rawSource": "https://muybuenoblog.com/creamy-mango-strawberry-gelatin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

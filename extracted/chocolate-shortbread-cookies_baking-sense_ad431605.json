@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Chocolate Shortbread Cookies",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": "18",
+      "fatContent": "10",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Combine 8 oz unsalted butter, 5 oz granulated sugar and 1/4 teaspoon table salt in a mixer bowl and mix on medium speed until softened and well-combined. You don't want to aerate the dough, just mix the ingredients. Scrape the bowl and beater.",
+      "Add 2 oz dutch process cocoa powder and mix to combine. Add 7 ½ oz all purpose flour and mix until combined. The dough will look crumbly at this point. Dump the dough onto a lightly floured surface and knead to bring it together. Form the dough into a  small square.",
+      "On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 8”x12” rectangle. Use the straight edge of a ruler or a bench scraper to square off the edges. Use a long knife to cut the dough into 1”x 3” pieces. Don't separate the cookies after cutting.  Poke each cookie with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. Meanwhile, preheat the oven to 350 °F.",
+      "Remove the pan from the refrigerator and sprinkle the dough generously with granulated sugar.",
+      "Bake the cookies until the dough is set all the way to the center, about 25 minutes. If you're oven bakes unevenly, rotate the tray halfway through baking. Allow the cookies to cool completely then use a long knife to cut along the scored lines to separate the cookies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 cup, at cool room temp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "plus more for topping",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "292bb24e9908b121b947d6fc33b4a4caebaffe399e2be67972374b7c0c0575c8",
+    "lineage_hash": "18517bd3d922f9bf3725ce202e24914d7be0916aeaed2fc0c61a8c69d57491f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/10/14/chocolate-shortbread-cookies/",
+    "fetchedAt": "2026-08-02T02:54:00.071Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/10/14/chocolate-shortbread-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,232 @@
+{
+  "recipe": {
+    "name": "Chilli Chicken Pineapple",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add chicken, salt, degi red chilli powder, maida, corn-starch, egg whites and mix everything properly.",
+      "Now fry this in medium hot oil until golden brown and crispy. Remove on absorbent paper and keep aside for further use.",
+      "In a pan add oil, ginger, garlic, green chillies, star anise and saute for a minute.",
+      "Now add onion, red bell pepper, green bell pepper saute for 1-2 minutes and add thick soya sauce, brown sugar, pineapple, chilli sauce, mix everything properly add some water, corn-starch slurry mix and bring it to a boil.",
+      "Now add vinegar, fried chicken and toss it properly cook for a minute.",
+      "Switch off the flames, serve it in a plate and garnish with coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "C",
+        "notes": "cut in cubes",
+        "amount": "1",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Maida",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Corn-starch",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": "for frying",
+        "amount": "¼",
+        "section": "For Frying Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "big diced",
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "small",
+        "notes": "big diced",
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Green Capsicum",
+        "unit": "small",
+        "notes": "big diced",
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Thick Soya Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "C",
+        "notes": "cubed",
+        "amount": "½",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch Slurry",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce or Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Corn-Starch Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch",
+        "unit": "tsp",
+        "notes": "alt: Arrowroot",
+        "amount": "1",
+        "section": "For Corn-Starch Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed176a4a7149c4d843e6d9b094ffc7a36a9ee0c3564fea547ccce457503c45e1",
+    "lineage_hash": "314dd7130df9f43c0e0ea9537c5fef6ba162872a8dcab70226737c62b820a44b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chilli-chicken-pineapple/",
+    "fetchedAt": "2026-08-02T15:48:05.186Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chilli-chicken-pineapple/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://thewoksoflife.com/purpose-chinese-bun-dough-man-tou/",
+  "slug": "all-purpose-chinese-steamed-bun-dough-man-tou_thewoksoflife_e90e5d97",
+  "title": "All-Purpose Chinese Steamed Bun Dough (Man Tou)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T04:20:09.369Z",
+  "ldName": "All-Purpose Chinese Steamed Bun Dough (Man Tou)",
+  "ldTime": "PT170M",
+  "ldPrepTime": "PT150M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Bread and Pizza",
+  "ldKeywords": "mantou",
+  "ldIngredientsRaw": [
+    "4 cups all purpose flour",
+    "2 teaspoons instant yeast",
+    "2 teaspoons baking powder",
+    "2 teaspoons sugar",
+    "1 1/4 cup lukewarm water"
+  ],
+  "ldInstructionsRaw": [
+    "Mix all the dry ingredients together in a large bowl. Add the water, and knead until it forms a smooth dough. Cover the dough with a cloth and let it rise for about 2 hours. Roll the dough ball into a log (the size depends on how large or small you want your man tou), and cut it into however many equal pieces you'd like.",
+    "Arrange them in a steamer lined with cheese cloth, about 2 inches apart. Cover the steamer and let the buns rise for another 15 minutes. Turn on the heat to medium high and steam the buns for 20 minutes. Serve! To re-heat, just steam them again for about 5 minutes. Don't be tempted to use the microwave, because they'll dry out!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "194 kcal",
+    "carbohydrateContent": "40 g",
+    "proteinContent": "6 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "5 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 cups all purpose flour",
+    "▢ 2 teaspoons instant yeast",
+    "▢ 2 teaspoons baking powder",
+    "▢ 2 teaspoons sugar",
+    "▢ 1 1/4 cup lukewarm water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

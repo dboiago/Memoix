@@ -1,0 +1,67 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/pork-ribs-recipes/blasphemy-ribs-recipe/",
+  "slug": "blasphemy-ribs-are-controversial-but-taste-amazing_amazingribs_cc56cb19",
+  "title": "Blasphemy Ribs Are Controversial But Taste Amazing",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T10:57:06.603Z",
+  "ldName": "Blasphemy Ribs Recipe",
+  "ldTime": "PT1620M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT150M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dinner, Main Course",
+  "ldKeywords": "ribs",
+  "ldIngredientsRaw": [
+    "6 tablespoons turbinado or brown sugar ((\"Sugar In The Raw\" is a branded version of turbinado))",
+    "2 tablespoons paprika",
+    "1 tablespoon sea salt ((table salt grind))",
+    "1 tablespoon garlic powder",
+    "1 ½ teaspoons ground black pepper",
+    "1 ½ teaspoons granulated onion powder",
+    "½ teaspoon ground ginger",
+    "1 rack baby back ribs, about 12-13 ribs (a 3-4 pound (1.4-1.8 kg) rack)",
+    "Sweet Baby Ray’s Hickory and Brown Sugar BBQ Sauce ((or your favorite))"
+  ],
+  "ldInstructionsRaw": [
+    "Prep. For the rub, combine all the ingredients in a bowl.",
+    "Trim. Remove the rib rack from its packaging and give it a good rinse. Trim off any excess fat and remove the membrane from the back. Cut the rack into individual pieces.",
+    "Brine. Place the ribs in a one gallon (3.8 L) zip-lock bag. Add the rub to the bag, seal, and work the rub into the ribs so they are well coated. Place the bag in the refrigerator for at least 6 hours (overnight is preferable) so the salt will have a chance to dry brine the ribs. Be sure to turn the bag every few hours to re-coat the ribs as they brine.",
+    "Fire up. Prepare a grill for indirect cooking by placing one half of a chimney full of pre-heated charcoal briquettes on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Or if preferred, start up and preheat your pellet grill or any other cooker designed for grilling. Adjust the grill to bring the temperature to 225°F (107.2°C) at the grilling grate surface. It’s essential to maintain this temperature as closely as possible since this is a timed cook.",
+    "Cook. Coat the bottom of a perforated grilling pan with some cooking spray. Place the individual ribs evenly on the pan, and place the pan in your smoker. Cook for 2½ hours. Timing is important: less time means your ribs will not be done, while too much time means they may dry out.",
+    "Glaze. At the 2 hour mark, spread a liberal coat of barbecue sauce on all sides of the ribs, and allow it to glaze on the ribs for the remaining ½ hour of cooking.",
+    "Serve. Remove and serve hot with your favorite sides."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "754 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "55 g",
+    "fatContent": "47 g",
+    "saturatedFatContent": "17 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "197 mg",
+    "sodiumContent": "2578 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "24 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Rub]",
+    "6 tablespoons turbinado or brown sugar (“Sugar In The Raw” is a branded version of turbinado)",
+    "2 tablespoons paprika",
+    "1 tablespoon sea salt (table salt grind)",
+    "1 tablespoon garlic powder",
+    "1 ½ teaspoons ground black pepper",
+    "1 ½ teaspoons granulated onion powder",
+    "½ teaspoon ground ginger",
+    "[Ribs and Glaze]",
+    "1 rack baby back ribs, about 12-13 ribs a 3-4 pound (1.4-1.8 kg) rack",
+    "Sweet Baby Ray’s Hickory and Brown Sugar BBQ Sauce (or your favorite)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

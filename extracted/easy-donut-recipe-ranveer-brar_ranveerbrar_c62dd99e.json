@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Donut",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, firstly activate yeast by adding milk and sugar.",
+      "Now add all-purpose flour, baking powder, butter and salt.",
+      "Combine and knead to smooth dough adding water as required.",
+      "Grease, cover and rest for 1-2 hours.",
+      "Punch the dough and roll slightly thick using rolling pin.",
+      "Now with the help of donut cutter, cut round.",
+      "Allow to rest in warm place for 2 hours.",
+      "Deep fry in medium hot oil to golden brown.",
+      "Dip the doughnuts in melted chocolate and serve chocolate donuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "warm, दूध",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "चीनी",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "मैदा",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature, मक्खन",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "नमक",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or as required, पानी",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to Grease & deep fry, तेल",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "C",
+        "notes": "melted, चॉकलेट",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon & Castor Sugar Mixture",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "190a5ef28aac48058ad3bff3ac3d3c0978985fe781f44ba6395cfc2acb08eef3",
+    "lineage_hash": "367420abe9a076e64073c2d1df7d12f9382fe30afb0a01bef1eb107d0dd5f596"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/donut/",
+    "fetchedAt": "2026-08-02T05:23:22.885Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/donut/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

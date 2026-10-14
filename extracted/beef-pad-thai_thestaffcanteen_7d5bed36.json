@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Beef Pad Thai",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "- Thinly slice the beef and marinade in the soy sauce, oil and Beef Glace for 10-15 mins",
+      "- Thinly slice the chilli, spring onions and sweet pepper",
+      "- Blanch the noodles for about 3 mins then strain",
+      "- In a wok, fry the noodles with the black garlic, a drop of soy sauce and the Master Stock",
+      "- Decorate the plate with the chicory leaves and the blanched broccoli",
+      "- Pile the noodles in to the center",
+      "- Fry the marinaded beef in a hot pan",
+      "- Add the thinly sliced vegetables, seasame seeds and chopped coriander",
+      "- Spoon onto the top of the noodles"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Good Quality Steak Rib Eye",
+        "unit": "g",
+        "notes": "alt: sirloin",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Essential Cuisine Beef Glace",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Thinly Sliced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Essential Cuisine Master Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicory Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Stem Broccoli",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd96d6d8d13ac53b5286055161e75238c090a56e783dc97b291a094281bb1aa6",
+    "lineage_hash": "135e935e86d7849f5bb717742f3511e24637c42f4a1abfa8a36c61818b7cbc8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Beef-Pad-Thai",
+    "fetchedAt": "2026-08-03T08:18:36.285Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Beef-Pad-Thai",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

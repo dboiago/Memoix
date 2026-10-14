@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/chicken-and-vegetables-soup.html",
+  "slug": "chicken-and-vegetables-soup_dailycookingquest_3b40865b",
+  "title": "Chicken and Vegetables Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:51:13.682Z",
+  "ldName": "Chicken and Vegetables Soup",
+  "ldTime": "PT1H45M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT1H15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon cooking oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and cut into cubes",
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "500 gram cabbage, cored and roughly chopped",
+    "4 tomatoes, quartered",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 liter water",
+    "2 scallion, finely chopped",
+    "2 celery leaves (Indonesian: daun seledri), finely chopped"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a soup pot and fry the onion until fragrant.",
+    "Add carrots and chicken and cook until chicken are no longer pink.",
+    "Add cabbage and tomatoes, mix well.",
+    "Add salt, sugar, and water and bring to a boil. Reduce heat and let simmer for 1 hour or until chicken is tender and fully cooked.",
+    "Add the scallion and celery leaves, stir and turn off the heat immediately. Serve warm in individual soup bowls."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon cooking oil",
+    "1 onion, chopped",
+    "2 carrots, peeled and cut into cubes",
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "500 gram cabbage, cored and roughly chopped",
+    "4 tomatoes, quartered",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 liter water",
+    "2 scallion, finely chopped",
+    "2 celery leaves (Indonesian: daun seledri), finely chopped"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

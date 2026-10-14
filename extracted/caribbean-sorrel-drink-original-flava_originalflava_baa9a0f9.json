@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Caribbean Sorrel Drink",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash 2 cups of sorrel and place in a large pot",
+      "Pour 8-10 cups of water over the sorrel and add 3oz grated ginger, 5 pimento seeds",
+      "Add 4 clove, 1 tsp cinnamon stir well and bring to a boil ; stir and place in fridge overnight to chill. (Orange peel optional)",
+      "Strain the sorrel into a bowl, make sure you push down on the sorrel to get the maximum juice out.",
+      "Add 2 cups of sugar, 1 tsp lime and rum and stir well until sugar has dissolved.",
+      "Serve with ice. (For maximum taste let it sit in fridge for a few days)",
+      "Enjoy over ice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sorrel",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "oz",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rum",
+        "unit": null,
+        "notes": "to your discretion",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fa886ed3f14d5c8ecad9737d1849074c53333949d1e703b462e1d2c5296edb4",
+    "lineage_hash": "6ee144d84b8db86e6efe15e0735c8273d11826170d1623e71658745f0c5ed8b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/drinks/jamaican-sorrel-drink/",
+    "fetchedAt": "2026-09-30T17:28:24.984Z"
+  },
+  "rawSource": "https://originalflava.com/drinks/jamaican-sorrel-drink/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

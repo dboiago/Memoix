@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Cauliflower Stir-Fried with Tomatoes",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "126",
+      "carbohydrateContent": "13",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Cut the cauliflowers into small pieces and then cook in boiling water for around 2 minutes. Transfer out and drain.",
+      "Cut tomatoes into small cubes and the garlic sprout into small sections (separate the white part and green part). Chop the garlic and spring onions too.",
+      "Heat up around 1 tablespoon cooking oil in wok, chopped garlic, spring onions to stir fry until you can smell the aroma. Add ketchup in; Mix well.",
+      "Place cooked cauliflowers with tomato cubes and the white parts of garlic sprout in wok. Stir-fry for around 1 minute. Add green part of garlic sprout, salt in. Do a quick stir-fry to mix all the ingredients well.",
+      "Transfer out and garnish some chopped spring onions on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Middle Size Cauliflower",
+        "unit": null,
+        "notes": "or half of a large one",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Sprout",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd77d157f0e6309dde62825c5420306933d04f83a887e60f8e69b911060bdf34",
+    "lineage_hash": "94bb5937ebf32706c81874448febee7af103ff5c35cafa53d3ba6bc79fb1930d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-cauliflower-stir-fired-with-tomatoes/",
+    "fetchedAt": "2026-08-01T19:36:40.459Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-cauliflower-stir-fired-with-tomatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

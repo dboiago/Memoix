@@ -1,0 +1,65 @@
+{
+  "url": "https://www.baking-sense.com/2020/04/08/fudgy-brownies/",
+  "slug": "classic-fudgy-brownies_baking-sense_82310a51",
+  "title": "Classic Fudgy Brownies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:58:56.051Z",
+  "ldName": "Fudgy Brownies",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "16",
+    "16 brownies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "chocolate, easy",
+  "ldIngredientsRaw": [
+    "5 ounces semi-sweet chocolate (chopped)",
+    "4 oz unsalted butter (cut into 1\" chunks)",
+    "4 oz granulated sugar (½ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "¼ teaspoon table salt",
+    "2 teaspoons vanilla extract",
+    "2  large eggs",
+    "2 ½ oz all purpose flour (½ cup, see note)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Butter a 9&quot; square baking pan and line the pan in one direction with parchment paper.",
+    "Combine 5 ounces&#32;semi-sweet chocolate and 4 oz&#32;unsalted butter in a microwave safe bowl. Microwave for 1 minute, stir to combine. Microwave in 30 second increments (stirring between) until all the chocolate is melted.",
+    "Add 4 oz&#32;granulated sugar, 2 oz&#32;brown sugar, ¼ teaspoon&#32;table salt and 2 teaspoons&#32;vanilla extract, stir to combine. Add 2&#32;large eggs, stir until combined then stir vigorously for 30 seconds.",
+    "Add 2 ½ oz&#32;all purpose flour, stir just until combined. Spread the batter evenly into the prepared pan.",
+    "Bake until the brownies puff up a bit and a toothpick inserted in the center comes out with a few moist crumbs (20-25 minutes).",
+    "Cool in the pan to room temperature then refrigerate until the brownies are firm.",
+    "Use the parchment paper to lift the brownies out of the pan onto a cutting board. Cut into 12 large or 16 small brownies."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 brownie",
+    "calories": "168 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "2 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "36 mg",
+    "sodiumContent": "47 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "3.4 g"
+  },
+  "htmlIngredientLines": [
+    "5 ounces semi-sweet chocolate (chopped)",
+    "4 oz unsalted butter (cut into 1″ chunks)",
+    "4 oz granulated sugar (½ cup)",
+    "2 oz brown sugar (¼ cup)",
+    "¼ teaspoon table salt",
+    "2 teaspoons vanilla extract",
+    "2 large eggs",
+    "2 ½ oz all purpose flour (½ cup, see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

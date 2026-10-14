@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Black Lodge: A Coffee Boulevardier",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice, stir to chill, then strain into a rocks glass over ice. Flame an orange peel over the top and use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72c60253fa7d587e7d4ec59921a4c72a54a2f39a88206bc629d3160d8067a3f3",
+    "lineage_hash": "ab976dd9eca450ad5a574c8773a4cd0535f3b27489382d1f75f6eb2573922b4b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-lodge-a-coffee-boulevardier/",
+    "fetchedAt": "2026-08-04T00:10:57.435Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-lodge-a-coffee-boulevardier/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

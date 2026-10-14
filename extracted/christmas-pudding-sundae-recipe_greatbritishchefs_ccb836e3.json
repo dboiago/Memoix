@@ -1,0 +1,244 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding Sundae",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the rum-soaked raisins. Bring all of the ingredients to the boil in a saucepan then remove and allow to steep for at least 24 hours",
+      "For the figgy cake, boil the prunes, vanilla and water in a saucepan then add the bicarbonate of soda and allow to cool",
+      "Cream the butter and sugar in a mixing bowl and add the eggs one at a time. Mix in the flour until smooth then fold in the prunes",
+      "Transfer the mix to a muffin tin, bake in the oven for 20 minutes then remove and allow to cool before breaking them up to serve",
+      "To make the Christmas pudding ice cream, bring the milk, cream, milk powder and sugar to the boil in a saucepan",
+      "Place the egg yolks in a mixing bowl and whisk in the hot cream mixture. Return to the pan, stir until slightly thickened then allow to cool",
+      "Blitz the Christmas pudding with the ice cream base in a blender then churn in an ice cream machine. Place in a sealed container and leave in the freezer until needed",
+      "For the brandy foam, bring the milk, cream and brandy to the boil. Whisk together the eggs and sugar in a mixing bowl then gradually whisk in the hot milk until combined",
+      "Transfer to a siphon gun, add 1 N2O charger and keep refrigerated until needed",
+      "To assemble, layer the components in glasses with some segmented orange. Top with some zest and some more rum-soaked raisins and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "golden or regular",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": null,
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Christmas Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested and segmented",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59a3bf0f38a7cb2bea9162da436a03b8884b42c34a2feb1401710dfd0b4bb363",
+    "lineage_hash": "2707660a63acc93268fe642c8fb1613b2d8ad13f61374fc46c3ef1df9db977fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-sundae-recipe",
+    "fetchedAt": "2026-08-03T13:44:14.121Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-sundae-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

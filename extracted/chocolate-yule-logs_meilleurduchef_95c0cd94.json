@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chocolate Yule Logs",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate & Crème Brûlée Yule Log recipe, make sure you have organised all the necessary ingredients.",
+      "For the chocolate biscuit: Whisk the whole eggs and stand mixer over a bain-marie.",
+      "When the preparation is hot, continue beating in the stand mixer.",
+      "Add the sifted...",
+      "... followed by the cocoa powder, sifted as well...",
+      "... and combine with a rubber spatula."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cl Whipping Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cl Grand-marnier",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cl Cane Sugar Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cl Grand-marnier",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a933120f71357d81c1b1ede9ef425a7089d6e10255834be52a0f45a3c843202",
+    "lineage_hash": "6206082b9e3bac4f94f5209e9d608834d9945e754f483518cd9253b44c7aa7a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log/chocolate-yule-log-recipes.html",
+    "fetchedAt": "2026-08-01T16:46:48.970Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log/chocolate-yule-log-recipes.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

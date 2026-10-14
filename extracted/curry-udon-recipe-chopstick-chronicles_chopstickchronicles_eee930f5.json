@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Curry Udon",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "281",
+      "carbohydrateContent": "3",
+      "fatContent": "23",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Slice the beef very thinly and chop the onions.",
+      "Heat 1 tbsp oil in an oven proof frying pan over medium heat.",
+      "Add the chopped onion and cook for a couple minutes.",
+      "Add the beef and cook until the meat colour change.",
+      "Add 2 cups of water and bring it to boil. Remove the scum as often and as necessary.",
+      "Open and empty the instant udon soup packet to the frying pan.",
+      "When all the roux has dissolved and the soup has thickened, turn the heat off.",
+      "Meanwhile, in a separate pot, bring 2 litres of water to boil and add the udon noodle and cook it for one minute. *1",
+      "Turn the heat off and drain the cooking water.",
+      "Serve half of the udon noodle in a bowl and pour half of the curry soup.",
+      "Garnish with chopped green shallots."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thinly Sliced Beef",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet of Udon Soup",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Roux",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (green Shallot) to Garnish",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Udon Noodles",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf744aaca5c386248a2c6aa075a2abc7cd4fc74ae56ad887cb88cb6b5c43ecbe",
+    "lineage_hash": "53ff3207fd51aab5aa40dfa4f15c9124aa2f7bcf5c342c6582ae040e6f02eb1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/curry-udon/",
+    "fetchedAt": "2026-08-01T17:59:38.562Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/curry-udon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

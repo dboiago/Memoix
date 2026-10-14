@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Dominican Spiced Cider",
+    "time": "3 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "DO",
+    "glass": "Mug",
+    "garnish": [
+      "Star Anise"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a pitcher, stirring well to combine.",
+      "Adjust the ratios as preferred—if you like it less boozy, up the apple cider measurement; if you want the rum to be stronger, add it in a 1:1 ratio with the wine.",
+      "If you want a stronger woody, herbal quality, have at it with any combination of bark, roots, herbs—there’s flexibility with these measurements, so experiment and see what works.",
+      "Allow the concoction to sit for at least 3 hours for the flavors to marinate.",
+      "The longer it sits, the more flavorful it gets.",
+      "Before serving, strain the liquid to remove the floating herbs, roots and spices.",
+      "Serve cold, at room temperature or warm—it tastes delicious all three ways."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amber Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Star Anise",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Cut Chamomile Herb and Flower",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valerian Root",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d6e5e0a8ea962fd5fcf13064756f408413f6879c63379445e94cb13c1f88bea",
+    "lineage_hash": "68de29bc6a489971373dbc13fb1a05c3798ad8defeb97217fa8c7dd3adae937d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dominican-spiced-cider-recipe/",
+    "fetchedAt": "2026-08-03T22:47:58.811Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dominican-spiced-cider-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

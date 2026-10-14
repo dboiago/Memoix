@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Alpha 60",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill and strain into a coupe.",
+      "Sugar Snap Pea and White Pepper SyrupBlanche the snap peas and parsley for 30 seconds and chill them in an ice bath (best done separately). Add all of the ingredients, except the sugar, to a blender in proportionate amounts. Run on low for 20 seconds, then switch to high for 20 seconds. Fine strain twice through a large fine-mesh strainer, leaving the solids from the first filtering in to catch smaller particles of pepper. Add the sugar, then agitate until dissolved. Will keep in the refrigerator for 3 to 4 days. Store in freezer for extended periods."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rhum Agricole",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Pea and White Pepper Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87a97c662105ddeefa7c6fc71fd035f4bfe59a0dc1560d1f8028282cde373198",
+    "lineage_hash": "cc9acfd812360aa6eb2aca0aa10043aa13938a4620f36bce3539a5309850cbec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alpha-60-rhum-agricole-cocktail/",
+    "fetchedAt": "2026-08-03T22:15:34.856Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alpha-60-rhum-agricole-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

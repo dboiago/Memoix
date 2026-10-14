@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chicken Hash with Cardoons Cooked in Milk",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the skin from the chicken legs, using a knife to remove the membrane that joins the skin to the meat. Cut into the leg along the bone. Then, holding the end of the leg in one hand, run the tip of the knife under the meat on both sides of the bone, as close to it as possible, then scrape the meat, moving it downwards. When the bone is completely exposed, remove it and remove any cartilage and bits of fat.",
+      "Cut this meat from the legs into small pieces to make a hash. Scrub the potatoes and cut them into 1/2 inch cubes; put them in a bowl with water so they don’t discolor. Also clean the cardoon stalks with a potato peeler, putting them into water with lemon juice as you go so they don’t discolor (the cardoon is similar to the artichoke in being rich in iron, so it easily oxidizes in contact with air); cut them into 1/2 inch cubes.",
+      "Thoroughly clean and rinse the leek, cut it in half lengthwise, then cut it into thin slices. In a deep saucepan, combine a drizzle of oil, 2 bay leaves, 1 unpeeled garlic clove and the cubed potatoes; fry for 1 minute, then add the leek and cardoon and sauté for another 2 minutes. Remove the garlic from the vegetables, cover them with the milk, add a small pinch of salt and a dash of pepper and cook over low heat for 10 minutes. Add the chicken hash and continue cooking for 30 minutes. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Cardoon Stems",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unpeeled Clove Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch Coarse Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "abb9096e39728ee090886c17d634921009583a13ed5a2e4b07fdd3db550474e0",
+    "lineage_hash": "10a51a7079f56879e2c85f99a5e1c2c61d2a66e9b565b634cb44f074380079ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-hash-with-cardoons-cooked-in-milk",
+    "fetchedAt": "2026-08-02T14:20:59.328Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-hash-with-cardoons-cooked-in-milk",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

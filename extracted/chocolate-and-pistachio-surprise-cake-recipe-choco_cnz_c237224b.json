@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Chocolate and Pistachio Surprise Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat your oven to 180°C (360°F). Grease a 25-cm (10-inch) cake pan, preferably nonstick with a removable bottom.",
+      "Prepare the chocolate batter. In a food processor, mix together half of the sugar and half of the butter until fluffy. Add in two of the eggs, one at a time, mixing between each. Add in half of the yogurts and all the vanilla extract, mix again.",
+      "In a medium bowl, combine half of the flour with half of the baking powder, half of the baking soda and all of the cocoa mixture.",
+      "Add the flour mixture into the food processor and mix again until just combined. Pour the batter into the cake pan, and reserve in the refrigerator.",
+      "Rinse the bowl of the food processor, and prepare the pistachio batter: mix together the rest of the sugar, the rest of the butter and the pistachio paste. Add in the two last eggs, one at a time, mixing between each. Add in the rest of the yogurts and mix again.",
+      "In a medium bowl, combine the rest of the flour with the rest of the baking powder and baking soda, and all of the chopped pistachios. Add into the food processor and mix again until just combined.",
+      "Take the cake pan out of the fridge, and sprinkle the chocolate chips evenly over the surface of the chocolate batter. Gently pour the pistachio batter on top, and smooth out the surface with a spatula.",
+      "Put into the oven to bake for about an hour or until a cake tester comes out clean.",
+      "Let rest for five minutes on the counter, then remove cake from the pan, and transfer to a rack to cool completely.",
+      "Prepare the ganache. Melt the dark chocolate with the whipping cream in a double boiler (or in a bowl set over a saucepan of simmering water), stirring with a spoon regularly until completely melted and velvety. Let the ganache rest until it has thickened a bit, about 30 minutes, and frost the cake using a small spoon.",
+      "You can either wait until the ganache has cooled and set before serving, or frost the cake just before you serve it, but the cake itself needs to have cooled down completely, it tastes better that way."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "alt: sour cream, 3 x 125 ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Paste",
+        "unit": "Tbsp",
+        "notes": "alt: pistachio butter",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Pistachios",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "1/2 cup",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "942bbb425eed16140e74bdbf65b2fd6640ce249d354eed6295d1aa65adb05175",
+    "lineage_hash": "ad0c911c4c910570ea699298ec2cd87d9caa61ef471e70ac06fe5fe4a9d56cb8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-and-pistachio-surprise-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:35:13.068Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-and-pistachio-surprise-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

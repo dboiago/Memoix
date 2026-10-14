@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Chinese Tofu Salad",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "145",
+      "carbohydrateContent": "14",
+      "fatContent": "7",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Wash the vegetables and dry off any excess water. Julienne the vegetables, and toss everything in a large mixing bowl, along with the tofu.",
+      "In a small bowl, combine the olive oil, minced garlic, sugar, white pepper, light soy sauce, black vinegar, sesame oil, and toasted sesame seeds. Mix everything together until the sugar is completely dissolved.",
+      "Add the sauce mixture to the vegetables and tofu, and top with chopped cilantro. Toss and serve either cold or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Bell Pepper",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Tofu",
+        "unit": "oz",
+        "notes": "tofu \"noodles\", shredded",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78331f1a854b93fa8e2561b663781fa42b98aa15987318d1f5d1a3e4b48a276f",
+    "lineage_hash": "18738106897ab90f1cdcdf8888290876b6d5dc78acef872cd6b036b98c749434"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-tofu-salad/",
+    "fetchedAt": "2026-08-01T21:31:24.143Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-tofu-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

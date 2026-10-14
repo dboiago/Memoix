@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Coffee, Peanut and Banana Ice Cream Float",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Glass",
+    "garnish": [
+      "Grated Chocolate"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place two glasses or serving bowls into the freezer",
+      "Gently melt the chocolate for the glasses in a bain marie, and scatter the hazelnuts across a plate in an even layer",
+      "Remove a glass from the freezer and use a spoon to swirl the chocolate around the inside of the glass to make a pattern. Dip the rim into the melted chocolate then into the nuts. Transfer to the freezer and repeat with the second glass",
+      "Add the frozen bananas to the blender with the ice cubes, peanut butter and coffee and blend until smooth",
+      "Scoop the ice cream into glasses, then pour the coffee mixture over the top. Garnish with grated chocolate to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caffè Lattes",
+        "unit": null,
+        "notes": "325ml each",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "for melting, plus extra for shaving over the top",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "toasted and chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "peeled, sliced and then frozen",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "Tbsp",
+        "notes": "smooth",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": null,
+        "notes": "6-8 scoops",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d9a55934cdd15d49299ac53e5f4770481e12890d86af20b0c0926cfcfe0b7ec",
+    "lineage_hash": "7841a87c47d4b2ba4f07390bc059b7dd22217e2d017e31ef8f0421e6eba34cf6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-peanut-banana-ice-cream-float-recipe",
+    "fetchedAt": "2026-08-02T13:33:25.350Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-peanut-banana-ice-cream-float-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

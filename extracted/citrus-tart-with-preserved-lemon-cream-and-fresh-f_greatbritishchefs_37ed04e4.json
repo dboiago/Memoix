@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Citrus Tart With Preserved Lemon Cream and Fresh Fruit",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the shortcrust pastry. Beat together the butter, sugar and preserved lemon rind in the bowl of a stand mixer with the paddle attachment fitted until light and slightly aerated",
+      "Whisk together the eggs and vanilla extract, then gradually add them to the butter mix while beating on low",
+      "Take the bowl off the stand mixer, then sieve in the flour and salt a bit at a time. Use a Maryse to bring the dough together, then knead until well combined",
+      "Wrap the dough in cling film then chill in the fridge for 20 minutes",
+      "Meanwhile, whisk together the whipping cream, sugar, preserved lemon brine and preserved lemon rind in the bowl of a stand mixer with the whisk attachment fitted, then transfer into a piping bag fitted with a star nozzle. Store in the fridge until needed",
+      "Remove the shortcrust pastry from the fridge and use a rolling pin to roll it out until it is slightly flattened",
+      "Place the dough between two sheets of baking paper and roll out until around 2–3mm thick, then place the dough back into the fridge to chill",
+      "Take a 12 inch tart ring, and lightly grease it with the 10g butter. Place the ring into the fridge to chill for 15 minutes",
+      "After 15 minutes, remove the tart ring and the dough from the fridge. Line the tart ring with the dough, making sure to lift and tuck the edges as you go. Press the dough firmly into the edges of the ring, then use the back of a knife to skim off the excess dough from the top. Use a fork to dock the base of the dough, then chill the dough for another 15 minutes in the fridge",
+      "When ready to bake, line the pastry with baking paper, and pour some baking beans into the base of the tart. Bake the tart for 15 minutes with the beans, then remove the beans and bake for another 15 minutes until golden and cooked through",
+      "Prepare the citrus curd by blooming the gelatin in cold water for 10 minutes. Add all the citrus juices to a pan over a low heat. In a separate bowl, whisk together the sugar and eggs until smooth. Add the egg mix to the juice and whisk together over a medium heat until it begins to thicken",
+      "Squeeze out the excess water of the bloomed gelatin, then add it to the curd mix. Whisk in the butter bit by bit, then strain the curd through a fine sieve into a jug",
+      "Pour the curd into the cooled tart case, then chill in the fridge",
+      "Decorate the tart by piping over some preserved lemon cream, and garnishing with lime slices, mint, raspberries and blueberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened, plus 10g butter for greasing tart ring",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": null,
+        "notes": "rind finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "430",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon Brine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": null,
+        "notes": "rind finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Platinum Grade Gelatine Leaves",
+        "unit": null,
+        "notes": "about 12 grams",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "around 100ml, juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "about 100ml, juiced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "about 100ml, juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "sliced into thin rounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": null,
+        "notes": "sliced in half",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "025eab1fdd76972519eb20d4abf79d95055009b9da8226fb07ae61bf9feeb14a",
+    "lineage_hash": "355f72fa69ced773343dce20b6be2016dbe37807b88a2e362b557a04cc1fd84f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/citrus-tart-preserved-lemon-cream-fresh-fruit",
+    "fetchedAt": "2026-08-02T12:08:39.765Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/citrus-tart-preserved-lemon-cream-fresh-fruit",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

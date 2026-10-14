@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-peanut-fudge",
+  "slug": "chocolate-peanut-fudge_lacucinaitaliana_19b3b221",
+  "title": "Chocolate Peanut Fudge",
+  "byline": "by  Editorial staff   March 12, 2020",
+  "fetchedAt": "2026-08-02T10:57:54.906Z",
+  "ldName": "Chocolate Peanut Fudge",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Natale,Natale 2016",
+  "ldIngredientsRaw": [
+    "7OZ. milk chocolate",
+    "1/3LB. dark chocolate, plus extra",
+    "1/2C. fresh milk",
+    "1/3C. peanut butter",
+    "1/3C. condensed milk",
+    "1/2C. salted peanuts",
+    "2/3STICK butter"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "7 OZ. of milk chocolate",
+    "1/3 LB. of dark chocolate, plus extra",
+    "1/2 C. of fresh milk",
+    "1/3 C. of peanut butter",
+    "1/3 C. of condensed milk",
+    "1/2 C. of salted peanuts",
+    "2/3 STICK of butter"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

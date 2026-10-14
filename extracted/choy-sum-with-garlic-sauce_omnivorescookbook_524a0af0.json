@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Choy Sum with Garlic Sauce",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "95",
+      "carbohydrateContent": "8.5",
+      "fatContent": "6.8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Soak the choy sum for a few minutes then wash with running tap water to remove any dirt. Discard any leaves that are withered or yellow. Drain thoroughly.",
+      "Heat a big pot of water over medium-high heat until boiling. You can add a teaspoon of oil and a pinch of salt so the choy sum will have a brighter green color (Optional). Add the choy sum, stem side down, so the thicker part cooks longer. Cook the stem for 30 seconds to 1 minute, then submerge the leafy part into the hot water. Cook until the choy sum turns just tender, 1 to 2 minutes, or you can cook it until it reaches your desired texture. Drain the boiling water and rinse the choy sum under running tap water again to stop the cooking. Drain it thoroughly and pat dry with paper towels. Transfer it to a serving plate.",
+      "Mix the sauce ingredients together in a small bowl.",
+      "Heat the oil in a small saucepan over medium heat until hot. Add the garlic. Stir a few times to release the fragrance, 30 seconds or so.",
+      "Pour in the sauce. Cook and stir until the sauce slightly thickens, 30 seconds to 1 minute. Immediately pour the sauce over the plated choy sum. Serve as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Choy Sum",
+        "unit": "lb",
+        "notes": "225 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Cook",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "coarsely chopped",
+        "amount": "2",
+        "section": "Cook",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6ed7d3385ea05ac4d54f83901d9cf92d2b2fd46cfcdc5c5292123925736c3ef",
+    "lineage_hash": "a7a0270320c4cfe7cbb4b98c8c8089fb8c1f8b20406f73ad4c7b94aaec082b7c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/choy-sum-with-garlic-sauce/",
+    "fetchedAt": "2026-08-02T02:52:14.750Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/choy-sum-with-garlic-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

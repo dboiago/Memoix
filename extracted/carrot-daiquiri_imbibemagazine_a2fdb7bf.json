@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Carrot Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a blender with crushed ice and blend until creamy. Pour into a glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "(2:1), or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "330dedd3187c5e7ce6b48ffab1ea9dcbd5f266906a852968a011421460242a00",
+    "lineage_hash": "9c42fa237c6664dcd24b7b35449621664948e674f645f1eb05099f97d9ed31d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-daiquiri/",
+    "fetchedAt": "2026-08-03T22:00:06.850Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

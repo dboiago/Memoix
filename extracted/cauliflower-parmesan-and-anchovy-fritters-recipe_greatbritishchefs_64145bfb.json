@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Cauliflower, Parmesan and Anchovy Fritters",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the cauliflower florets and leaves in boiling salted water for 5 minutes or until tender. Drain well, refresh under cold water and then drain again",
+      "To make the batter, mix the flours together in a bowl with the Parmesan, anchovies, lemon zest and cayenne pepper. Make a well in the centre and add the egg. Mix with a wooden spoon, gradually adding the fizzy water and drawing the flour into the centre, until you have a smooth, thick batter. Season well. Add the cauliflower florets and leaves and stir to coat",
+      "Heat the oil in a deep-fat fryer or deep pan to 180°C (a cube of bread dropped in will brown in about 30 seconds). Drop heaped tablespoons of the battered cauliflower into the hot oil and fry for 2 minutes or until crisp and golden brown. Lift out with a spider or slotted spoon to a plate lined with kitchen paper to drain while you continue frying",
+      "Sprinkle sea salt liberally over the fried cauliflower and serve with home-made alioli"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "large",
+        "notes": "cut into florets and leaves thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groundnut Oil",
+        "unit": "L",
+        "notes": "for deep-frying",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Anchovies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": "chilled",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78878db78a432ad1d092e7bd443f58e8690500549507671cf30a92cecd31b6cd",
+    "lineage_hash": "b256db8f8440de8dafe149667d10f5b1d4dd6b572be949697503c2fa4adc490c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-parmesan-anchovy-fritters-recipe",
+    "fetchedAt": "2026-08-02T21:50:08.192Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-parmesan-anchovy-fritters-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

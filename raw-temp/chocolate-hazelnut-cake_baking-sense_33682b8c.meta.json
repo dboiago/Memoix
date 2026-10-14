@@ -1,0 +1,64 @@
+{
+  "url": "https://www.baking-sense.com/2024/11/26/chocolate-hazelnut-cake/",
+  "slug": "chocolate-hazelnut-cake_baking-sense_33682b8c",
+  "title": "Chocolate Hazelnut Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:45:20.129Z",
+  "ldName": "Chocolate Hazelnut Cake",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "chocolate, gluten free, hazelnut",
+  "ldIngredientsRaw": [
+    "4 oz unsalted butter",
+    "6 oz semi-sweet chocolate (chopped)",
+    "6 oz hazelnut flour (1 ½ cups, separated)",
+    "6 oz granulated sugar (¾ cup, separated)",
+    "2 teaspoon vanilla extract",
+    "6  large eggs",
+    "¼ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F.  Generously butter a 9&quot;x3&quot; spring-form pan. Set aside 1 oz (¼ cup) of the hazelnut flour.  Use half of the set-aside hazelnut flour to dust the buttered pan.",
+    "Melt 4 oz&#32;unsalted butter in a small saucepan. Cook until the milk solids sink to the bottom of the pan and become brown. Drain the butter into a microwave safe  bowl, leaving the solids in the pan.",
+    "Add the chopped 6 oz&#32;semi-sweet chocolate into the bowl with the browned butter. Microwave for 30 seconds and then stir. Continue microwaving and stirring in 30 second increments until all the chocolate is melted.",
+    "Stir the remaining 5 oz of hazelnut flour and 2 oz (¼ cup) of the granulated sugar into the chocolate mixture. Add 2 teaspoon&#32;vanilla extract.",
+    "In a large mixing bowl, whisk 6&#32;large eggs, ¼ teaspoon&#32;table salt and remaining 4 oz (½ cup) sugar on medium-high speed until tripled in volume and the color turns pale yellow. Fold ⅓ of the eggs into the chocolate then fold the chocolate into the remaining eggs. Mix until no streaks of eggs are visible.",
+    "Pour the batter into the prepared pan. Sprinkle the rest of the set-aside hazelnut flour evenly across the top of the batter.",
+    "Bake until the batter is set and a toothpick inserted in the center comes out with a few wet crumbs, about 30-35 minutes.",
+    "Cool 10 minutes before unmolding. Serve the cake slightly warm or room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "328 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "6 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "9 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "103 mg",
+    "sodiumContent": "82 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "20 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "4 oz unsalted butter",
+    "6 oz semi-sweet chocolate (chopped)",
+    "6 oz hazelnut flour (1 ½ cups, separated)",
+    "6 oz granulated sugar (¾ cup, separated)",
+    "2 teaspoon vanilla extract",
+    "6 large eggs",
+    "¼ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

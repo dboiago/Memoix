@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Blue Ricardo",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 5 ingredients and shake with crushed ice. Strain into an ice-filled glass, top with blue curaçao, stir and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Curaçao",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "03857647bdd0e7bd89101e8f476f23c298e7e8894b0962e60240b62efd48bad4",
+    "lineage_hash": "c87cf1ef6680cce1ef4c8c29a064a5728b21f406fabab8db0cb415bf661bad7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-ricardo/",
+    "fetchedAt": "2026-08-03T22:08:11.558Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-ricardo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

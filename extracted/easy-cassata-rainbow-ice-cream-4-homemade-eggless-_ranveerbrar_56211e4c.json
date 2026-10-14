@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Cassata/Rainbow Ice Cream",
+    "time": "15-20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add hung curd, milkmaid and mix it properly.",
+      "Once curd, milkmaid gets mixed properly, add fresh cream and mix it well with the help of cut and fold method.",
+      "Once again, add fresh cream and use the same cut and fold method to mix.",
+      "Make four equal parts of the prepared vanilla ice cream mixture and transfer into each bowl.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared vanilla ice cream, saffron water and mix everything properly.",
+      "And keep it aside for further use.",
+      "In a bowl, add prepared vanilla ice cream, boiled beetroot paste, tutti frutti and mix everything properly.",
+      "And keep it aside for further use.",
+      "In a bowl, add prepared vanilla ice cream, pistachio paste, tutti frutti and mix everything properly.",
+      "And keep it aside for further use.",
+      "In a tray, crumb any biscuits, add chopped almonds, pistachios and mix it well.",
+      "Keep it aside for further use.",
+      "In an ice cream mold or small steel bowls, first put the beetroot ice cream mixture in the base of the mold.",
+      "Now, pour the second layer of saffron ice cream mixture. Third, pistachio ice cream mixture.",
+      "Top it with vanilla ice cream mixture and level it properly with the help of a rubber spatula.",
+      "Freeze overnight or until set.",
+      "Once ice cream sets properly, remove it from the deep freezer and rinse the mold with water.",
+      "Demold the ice cream, and coat it well with biscuit crumbs on both sides.",
+      "Cut the block into four parts and serve it on a serving plate.",
+      "Garnish with milkmaid, whipped cream, candid cherry and mint sprig.",
+      "Serve cold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hung Curd",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Vanilla Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Nestlé Milkmaid",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "For Vanilla Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "900",
+        "section": "For Vanilla Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Vanilla Ice Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "For Kesar Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kesar Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Kesar Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Vanilla Ice Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "For Beetroot Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Beetroot Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Beetroot Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Beetroot Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Vanilla Ice Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "For Pista Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio",
+        "unit": "Tbsp",
+        "notes": "blanched, paste",
+        "amount": "4",
+        "section": "For Pista Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Pista Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Any Biscuit",
+        "unit": null,
+        "notes": "crumb",
+        "amount": "2-4",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4-5",
+        "section": "For Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78cdec83e0bac3caeecdd37080b6faa0b943ca6a8713f3b794099b667759c478",
+    "lineage_hash": "a9f7a7b8cb2a67f4097b8df17493712a6f91a3486eca8e29978858c5458c7ac7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cassata-rainbow-ice-cream/",
+    "fetchedAt": "2026-08-02T15:38:27.649Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cassata-rainbow-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

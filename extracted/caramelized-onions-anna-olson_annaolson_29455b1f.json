@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Caramelized Onions",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a sauté pan over medium heat and add the butter (or oil). Add the onions, thyme and a little salt and pepper and stir to coat the onions. Cook, stirring often with a wooden spoon, until the onions begin to caramelize, about 15 minutes. About halfway through cooking, when brown bits start sticking to the bottom of the pan, add a splash of the Sherry (or wine) and use the wooden spoon to loosen them. Continue to cook the onions, adding splashes of Sherry (or wine) to lift the browned bits, until they are a rich brown, an additional 20 to 25 minutes.",
+      "Remove the pan from the heat and let the onions cool. Chill until needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: extra virgin olive oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "medium, sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "chopped fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "C",
+        "notes": "alt: dry white wine, dry",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07d34f74a23591680f352ed38a78b44c4c36b4107918d2d35fdc387e0bd4a5fd",
+    "lineage_hash": "1a7134d2aa626b2a9e36ac445aac99384a6c27d0efcb6a3e21d860f8965f5273"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/caramelized-onions/",
+    "fetchedAt": "2026-08-01T20:08:06.143Z"
+  },
+  "rawSource": "https://annaolson.ca/project/caramelized-onions/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

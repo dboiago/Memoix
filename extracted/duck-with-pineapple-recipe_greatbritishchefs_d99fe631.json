@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Duck with Pineapple",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180˚C/gas mark 4. To prepare the duck breast, trim away any sinew and excess fat from around the breast - make sure to leave all skin intact",
+      "Heat a large non stick frying over a medium heat. Season the skin of the breast with sea salt and place in the dry pan skin-side down. As the fat begins to render from under the skin, remove this from the pan using a spoon",
+      "Once the skin is golden brown, turn the breast over and seal the flesh side for one minute. Remove any more excess fat from the pan and turn the duck back over. Transfer to the oven for 4 minutes",
+      "Remove the duck from the oven, take it out of the pan and leave to rest of a cooling rack. While the breast is still warm slice into strips lengthways and set aside",
+      "For the pineapple, remove the skin and cut into quarters, lengthways. Remove the core by placing the fruit with the core touching the chopping board and running the tip of the knife slightly above core all the way through to end",
+      "Place the sugar into a pan over a medium to high heat. The sugar will melt and turn into a light caramel. Remove from the heat and add 1/3 of the pineapple juice, stir to incorporate",
+      "Pour in the remaining juice and stir to combine. Add the coriander, pink peppercorns and star anise and allow to infuse for 20 minutes. Pass through a fine strainer and chill",
+      "Place the pineapple into a vacuum bag with the chilled juice and seal tightly. Cook in a waterbath for 40 minutes at 66˚C and then chill in an ice bath",
+      "Place a char-grill on a very high heat. Slice the pineapple into 1/2cm thick pieces. Coat the pineapple in a very small amount of vegetable oil and a pinch of salt. Grill on one side until dark golden in colour, remove from the grill and allow to rest",
+      "Use 100g of the coconut and place into a dry pan on a medium heat. Toss in the pan until dark brown and toasted, some of this should be slightly burnt for flavour contrast",
+      "Mix the toasted, burnt coconut with the remaining coconut, cocoa powder and icing sugar and mix to combine, place aside until required",
+      "Preheat the oven to 175˚C/gas mark 3 1/2. Mix cashew nuts, honey, soy sauce and salt. Place onto a baking tray and bake for 10 minutes, remove and mix with the miso. Allow to cool on the tray and then roughly break up into smaller pieces",
+      "Combine all the ingredients, except the coconut, in a bowl and add a small dash of the pineapple cooking liquid. Toss to coat and divide across 2 plates. Garnish with a little watercress and the burnt coconut"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "fresh, small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Watercress",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c8ac21df6129993ea1f7bcfc9469e59134bd2cd400e2369a54ff32ccd1b8b1d",
+    "lineage_hash": "645c0b135f267c6357099a1e4da6dba98f576144e21ed2f440e96054abfc9378"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-pineapple-recipe",
+    "fetchedAt": "2026-08-03T21:10:43.709Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-pineapple-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

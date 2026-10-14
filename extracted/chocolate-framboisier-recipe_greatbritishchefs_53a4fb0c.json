@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Chocolate Framboisier",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First start with the chocolate sponge cake. Preheat the oven to 200°C/gas mark 6 and line 2 baking sheets with greaseproof paper that are at least 30cm x 25cm in size",
+      "Whisk the egg whites in the bowl of a stand mixer until they hold a soft peak. Add the caster sugar and whisk until firm and glossy",
+      "Add the egg yolks and whisk until smooth, for about 5 seconds",
+      "Sift the flour with the cocoa powder and gradually and gently fold into the egg mixture until combined",
+      "Spoon the cake batter into a piping bag fitted with a 1cm nozzle and pipe neat rows onto each of the prepared baking sheets",
+      "Bake each sheet for 10–12 minutes until just firm to the touch and it springs back when touched. Leave the cake in the trays to cool",
+      "To make the syrup, mix the raspberry purée, water, lemon juice and sugar together in a pan and stir with a wooden spoon. Bring the mixture to a boil until the sugar has dissolved, place in a bowl and allow to cool",
+      "Next make the chocolate mousse. Mix the sugar with the water in a small saucepan with a heavy base. Bring to the boil and cook until it registers 118°C on a thermometer",
+      "In the bowl of a stand mixer, mix the egg yolks and the whole egg at a low speed. When the sugar syrup is ready, increase the speed of the mixer to medium and carefully pour in the sugar syrup and whisk until the mixture cools to room temperature, for around 5–8 minutes",
+      "Place the chocolate in a bowl set over a saucepan and melt until it reaches 45°C, then remove from the heat",
+      "Mix the melted chocolate into the egg mixture and stir until it is fully combined. Make sure the chocolate isn’t too warm as it will deflate the egg mixture",
+      "Whip the cream to stiff peaks and beat a third of it into the chocolate mixture to lighten it. Fold in the rest of the cream and mix until all of the cream is incorporated and the colour is even",
+      "For the glaze, combine the seedless raspberry jam and the raspberry purée in a saucepan and cook over a medium heat. Stir until thickened then put to one side and leave to cool",
+      "To assemble the framboisier, take a 20cm x 20cm x 5cm square cake ring and cut out 2 squares of chocolate cake from both of the sponges",
+      "Place a square of chocolate cake in the bottom of the ring on a board and spread it with the raspberry syrup",
+      "Spread an even layer of the mousse on top of the cake and smooth with an offset spatula. Place the second piece of chocolate sponge cake on top and spread with some raspberry syrup",
+      "Take the remaining mousse and smooth it with an offset spatula so that it is level – you won’t need all of the mousse, so you will have some left over which can be used in other desserts",
+      "Place the cake in the freezer until the mousse sets, for at least 2 hours. When the cake is frozen, remove the cake ring by warming it with a chef’s blowtorch or sliding a palette knife around the edge and warming it with your hands. Slide it off and place the cake on a cake rack over a tray",
+      "Pour the raspberry glaze in the middle of the cake and smooth it with a palate knife. Some of the glaze will drip over the edges. Place it in the fridge to set and allow the excess compote to drip off",
+      "After about 15 minutes, the glaze should have stopped dripping. Place the cake on a board and trim each edge so you have clean layers, then cut the cake into 8 even pieces, wiping the knife in between each cut",
+      "Decorate the top of the cakes with half a raspberry and some gold leaf",
+      "Store in an airtight container in the fridge and allow to warm to room temperature for around 10 minutes before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": "from approximately 8 eggs",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "from approximately 6 eggs",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "at least 50% cocoa, chopped",
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Jam",
+        "unit": "g",
+        "notes": "seedless",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2217b9a7548037ea91dd926a07dfff40b3b0b0c4afc305c91511ef2dbb9d9b0",
+    "lineage_hash": "79df1183ab58e3e81e24e6787995fd7671aa60eed62b60a5142c98c04673d846"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-framboisier-recipe",
+    "fetchedAt": "2026-08-03T12:18:28.463Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-framboisier-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

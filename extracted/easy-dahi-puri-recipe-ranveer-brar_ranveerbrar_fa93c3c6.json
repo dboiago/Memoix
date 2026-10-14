@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Dahi Puri",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Arrange rava puris on a plate. Stuff each puri with potato mash.",
+      "Put a spoonful of curd in each puri along with tomato and onion.",
+      "Pour some khajur imli chutney for tangy taste.",
+      "Top it off with sev, chaat masala, some more curd and chopped coriander.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rava Puris",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "boiled & mashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "whisked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khajur Imli Chutney",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sev",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a0724ca017940173a38f5ee3cb3b05d25ae22b967d02602796bd459e01aca7a1",
+    "lineage_hash": "479773354ac237b28ccffc0ba2b598513eb142ca3e4d8306ce2188edbaea2c92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-puri/",
+    "fetchedAt": "2026-08-02T08:45:53.129Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-puri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

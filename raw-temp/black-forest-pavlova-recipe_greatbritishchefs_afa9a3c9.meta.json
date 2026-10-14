@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/black-forest-pavlova-recipe",
+  "slug": "black-forest-pavlova-recipe_greatbritishchefs_afa9a3c9",
+  "title": "Black Forest Pavlova Recipe",
+  "byline": "by GBC Kitchen",
+  "fetchedAt": "2026-08-03T15:18:49.331Z",
+  "ldName": "Black Forest Pavlova",
+  "ldTime": "PT1H40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "4 large egg whites",
+    "1 pinch of salt",
+    "225g of caster sugar",
+    "2 tbsp of cocoa powder",
+    "1 tsp red wine vinegar",
+    "50g of dark chocolate, grated (you can simply blitz it in the food processor if you’re feeling lazy)",
+    "300ml of double cream, or whipping cream",
+    "2 tbsp of kirsch, optional",
+    "450g of cherries, stoned (you can macerate them in more kirsch with a tablespoon of sugar if you like)",
+    "25g of dark chocolate, grated"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 150°C/Gas Mark 2 and line a large baking sheet with baking parchment",
+    "Whisk the egg whites and salt together until stiff, then gradually add the sugar, whisking well between each addition. You should have a thick, glossy meringue. Whisk in the cocoa and vinegar and fold the chopped chocolate in with a large metal spoon",
+    "Dollop the meringue into a round on the lined baking sheet, making it slightly higher on the outer edges. Pop it in the oven to bake for 1 hour to 1 hour, 15 minutes, or until the meringue is crisp on the outside but marshmallowy on the inside. Turn the oven off and leave the meringue to cool completely inside, with the oven door shut. It’s easiest to make it in the evening and leave it to cool overnight",
+    "Once you are ready to serve, Whip the cream until stiff but not dry and add the kirsch and whisk in again. Pile the cream on top of the meringue and spread it out a little. Scatter over the stoned cherries and top with the grated chocolate"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

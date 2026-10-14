@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chinese Red Braised Lamb",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "246",
+      "carbohydrateContent": "6",
+      "fatContent": "10.2",
+      "proteinContent": "31.1"
+    },
+    "directions": [
+      "Heat the oil in a large wok (or dutch oven) until hot. Add the lamb pieces without overlapping. You might need to cook in two batches. Brown the lamb until the bottom turns golden brown. Flip to brown the other side. Once both sides are browned, transfer the lamb to a large plate and set aside.",
+      "Your pan should still have some oil. If not, add 1/2 tablespoon of oil. Add the green onion, ginger, chili pepper and Sichuan peppercorn. Stir a few times to release the fragrance.",
+      "Pour 6 cups of water into the pan, or until most of the lamb pieces are covered (*Footnote 1). Scrape the bottom to release any brown bits. Add the Shaoxing wine. Cook over medium-high heat until boiling. Add back the lamb. Keep boiling the lamb while using a skimmer to skim and discard the foam from the surface until the broth is clear, 10 to 15 minutes.",
+      "Cover the pan and turn to medium or medium-low heat, so the broth is boiling rapidly (less intensely than a full boil, but much more than simmering). Cook for 30 minutes.",
+      "Uncover the pan. Add the light soy sauce, dark soy sauce, rock sugar and salt. Cover the pan and keep cooking for 30 to 40 minutes or so, until the lamb turns tender. You can use a paring knife to poke through the lamb to test. The fatty pieces should be pierced through without resistance, but the lean pieces should be tender-ish but might need a bit more cooking. (*Footnote 2)",
+      "Uncover the pan and turn to medium-high or high heat for a full boil, to reduce and thicken the sauce. Boil for 20 minutes or so, scoop the meat from the bottom occasionally at the beginning and constantly at the end to prevent it from sticking, until the sauce has thickened enough to thinly coat the lamb. You can lower the heat from time to time, to check on the sauce without overcooking. The sauce will thicken more once it cools down slightly, so be careful not to reduce it too much.",
+      "Once done, turn off the heat and transfer everything to a large plate. Serve as a main dish over steamed rice with vegetables sides, or by itself."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Stew Meat (or Lamb Leg)",
+        "unit": "lb",
+        "notes": "900 g, cubed into large bite-size pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced to 2” (5 cm) pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": "or 1 teaspoon white sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "Skip if not serving with rice",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72bfb80364d1039a3320c99a580df5294c325f1325b62bc7e0ae6f14a48ff795",
+    "lineage_hash": "1e2b8298e602338a53f0428bc7463f11555d83350d0fbcdb732b31aaeccdcaec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/red-braised-lamb/",
+    "fetchedAt": "2026-08-02T02:39:17.510Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/red-braised-lamb/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

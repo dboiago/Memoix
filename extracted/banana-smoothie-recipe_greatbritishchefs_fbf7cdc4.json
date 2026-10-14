@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Banana Smoothie",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and chop the banana. Add to a blender with the spices and a dash of lemon juice",
+      "Add the milk, frozen yoghurt and honey and blend until smooth",
+      "Divide into glasses, sprinkle over a pinch of ground nutmeg and serve with a straw"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Frozen Yoghurt",
+        "unit": "ml",
+        "notes": "or ice cream",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": "plus extra for dusting",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5610e55d1627d908c853ea9c4ee2b3853b3f77e6b1c0c1ad76d2841b8fb70e5",
+    "lineage_hash": "9183249f25adcbc93a954ba80c9b74231a236091682d7d7091163762518bf1c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banana-smoothie-recipe",
+    "fetchedAt": "2026-08-03T17:11:49.618Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banana-smoothie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

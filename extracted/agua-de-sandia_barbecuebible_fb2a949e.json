@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Agua de Sandia",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In batches, puree the watermelon in a blender, adding a little cold water if necessary.",
+      "Pour the watermelon puree into a pitcher, add the lime juice and sugar, and stir. Taste and adjust the sweet-and-sour balance.",
+      "Thin with more cold water if you wish, and refrigerate until chilled or keep on ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red or Yellow Watermelon",
+        "unit": "C",
+        "notes": "cubed, seeded",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 3 Limes",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "171a7e7b8acc14dbae5007ec440a4d4a956f87420630d07a9c7ad34200792b8c",
+    "lineage_hash": "0b29a86a19f65e3070844e1cf12fc4458d2fdd05eb939797a154620ecb0b59fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/agua-de-sandia/",
+    "fetchedAt": "2026-08-03T03:22:35.628Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/agua-de-sandia/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

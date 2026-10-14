@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Butterflied Leg of Lamb",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the marinade. Combine the garlic, baharat, turmeric, ginger, lemon, coriander and salt in a bowl to form a wet rub. Score the skin side of the lamb in opposite directions, each incision around 12cm apart, and spread the marinade all over the meat, ensuring to press well into the scored skin",
+      "Wrap the lamb tightly in cling film and leave to marinate in the fridge for 12-24 hours, remembering to remove from the fridge 1 hour before cooking",
+      "Place the lamb onto a barbecue, large griddle pan, or plancha to sear on a very high heat until dark golden all over. If the leg is too large to fit into the pan, cut it into smaller pieces first",
+      "Once the lamb is nicely coloured, transfer to a roasting tray and roast in the oven for a further 40 - 60 minutes, depending on how pink you like your lamb",
+      "While the lamb is roasting, prepare the sweet potatoes. Wash well and cut into wedges, leaving the skin on. Combine in a bowl with the turmeric, mustard seeds, garlic, salt and enough olive oil to coat. Spread the wedges out on a baking tray and place in the oven with the lamb for the last 25 -30 minutes of cooking",
+      "Remove the lamb from the oven and allow to rest for 10-15 minutes. Turn off the oven, but leave the sweet potatoes in there to keep warm until serving",
+      "While the lamb is resting, make the black sesame sauce. Whisk together the black sesame paste, lemon juice and water to form a thin paste, and season to taste. If the sauce is too thick, use a little more water to thin it out",
+      "Serve the leg of lamb whole and carve at the table with the sweet potatoes, black sesame sauce and chopped coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baharat Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and half juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leg of Lamb",
+        "unit": null,
+        "notes": "butterflied",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato",
+        "unit": "kg",
+        "notes": "scrubbed and cut into wedges",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9bf92a01d02362da33202ed16e31d5910c64553b86b904799e1a5141ba14c82b",
+    "lineage_hash": "9d0ff2421ad15d345fa7d852f3b201cacc1389de5227cef68f7de7be7da39835"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butterflied-leg-of-lamb-recipe",
+    "fetchedAt": "2026-08-03T21:07:36.528Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butterflied-leg-of-lamb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Absinthe Rickey",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build the drink in a Collins glass over crushed ice. Stir to combine, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "oz",
+        "notes": "Kubler Swiss absinthe is recommended",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Créme De Menthe",
+        "unit": "oz",
+        "notes": "such as Tempus Fugit menthe glaciale",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f343debf6c013766603a3b66248e0b85fd5e2863296c7b2c3af3be77a6ee6d7",
+    "lineage_hash": "9088affbe4f38bfa8e833bb13d998e14f2fbbd99dab8fc2ef919521062cc24fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/absinthe-rickey/",
+    "fetchedAt": "2026-08-03T19:34:47.639Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/absinthe-rickey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

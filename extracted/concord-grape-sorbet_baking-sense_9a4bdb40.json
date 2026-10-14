@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Concord Grape Sorbet",
+    "time": "8 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "84",
+      "carbohydrateContent": "22",
+      "fatContent": "0.1",
+      "proteinContent": "0.4"
+    },
+    "directions": [
+      "Puree 32 oz Concord Grapes in a food processor.",
+      "Strain the puree through a fine sieve or fruit strainer to remove the seeds. You should have about 3-3½ cups of puree after straining. If you get less puree than noted, adjust the sugar to be between 25-30% of the weight of the puree. (see note)",
+      "Add 6 oz granulated sugar, 1 tablespoon light corn syrup and ⅛ teaspoon table salt. Stir until the sugar is melted. Taste the puree and adjust the sugar if needed.",
+      "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+      "Run in your ice cream machine according to the manufacturer's directions. (See Note)",
+      "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Concord Grapes",
+        "unit": "oz",
+        "notes": "weigh after stemming",
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "Adjust to taste",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fae8c550a3dbebffcfc5bfa94979ecb58df88e275dfac0172e4e8c955a993fb",
+    "lineage_hash": "4c2ef989eb030d99049020031451ce4f52325fec69b0a55b1bc4ca840bc03b0c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/09/28/concord-grape-sorbet/",
+    "fetchedAt": "2026-08-02T00:03:11.900Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/09/28/concord-grape-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

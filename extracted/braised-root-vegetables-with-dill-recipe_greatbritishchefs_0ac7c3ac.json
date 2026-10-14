@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Braised Root Vegetables with Dill",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the onion and dice with the celery. In a wide, heavy-based pot gently warm the oil. Add in the onion and celery with a pinch of salt and cook until completely softened but uncoloured",
+      "Peel all the vegetables, taking care to ruthlessly remove any thicker peel from the larger roots as it will toughen through cooking and diminish the final result",
+      "Cut each vegetable into similar sized pieces, each piece being large (approximately 2.5cm), with no shape the same as any of its compatriots. The vegetables should resemble a horde of uncut Medieval gemstones. Wash the vegetables well",
+      "To the cooking pot, first add the carrots and allow to gently cook covered for 5 minutes. Add the celeriac and cook gently for a further 5 minutes. Once the pot is lightly simmering add the remaining vegetables. Ad a pinch of salt and stir carefully but thoroughly",
+      "Add a little cup of water to aid the cooking, then place a lid on top and leave to cook for 20 minutes, on a gentle heat. Give the pan a light shake every now and again",
+      "The vegetables should cook in about half an hour, but should they require longer, by all means allow them that luxury. Taste and make sure they are tender and cooked through",
+      "Once done, the vegetables can sit happily for a while. When ready to eat, warm the vegetables – they need not be piping hot – then gently mix in the chopped dill and lemon juice, and any other seasoning you feel may be required"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Swede",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turnips",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "medium",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnip",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dill",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0da754f01b4be1e8b2f8edb1158b4c356985c9f289df8b936c0531d67e27717e",
+    "lineage_hash": "3a3940443c57c758834cf30a2962df9044321b93677ba96ef4d4ac35223b51a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-root-vegetables-recipe",
+    "fetchedAt": "2026-08-03T08:41:23.715Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-root-vegetables-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

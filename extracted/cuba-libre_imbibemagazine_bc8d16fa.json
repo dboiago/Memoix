@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Cuba Libre",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Lime Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rum and lime juice to an ice-filled glass and stir to chill. Top with chilled cola, then stir once more to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Cola",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5effd6eb245f7ce6433cf1934d9b1a2ef970e2bfe99d94f1471c369167bb400e",
+    "lineage_hash": "d0ad7e98bce566028913f8033e264d3330f3d0418fffd4b72afcef9ea4477dd9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-cuba-libre/",
+    "fetchedAt": "2026-08-03T19:15:07.999Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-cuba-libre/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

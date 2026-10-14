@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Baked Stuffed Apples",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Core the apples completely through. Use a knife to score around the equator of the apple, piercing the skin",
+      "Using your hands, mix together the butter, brown sugar, raisins and ground almonds in a bowl",
+      "Fill each apple to halfway with the almond mixture, then add a couple of blackberries to the centre as well",
+      "Bake the stuffed apples in the oven until soft, approximately 20-30 minutes. Serve warm with remaining blackberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": "washed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "acf131c5c704a9484767b679f31df9295878fef9d586504705e525bde0ac14e0",
+    "lineage_hash": "f09640f353ca9e1dda37825bfbab02975143c00441ebb86f2d103767811218c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-stuffed-apples-recipe",
+    "fetchedAt": "2026-08-03T18:40:42.633Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-stuffed-apples-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

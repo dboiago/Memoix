@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Cacao Nib Biscotti",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C/gas mark 3.5. Grease a baking tray",
+      "Whisk the egg and sugar until it’s light and frothy. This takes about 5 minutes using a stand mixer or handheld whisk. It should leave a ribbon like trail",
+      "Add the dry ingredients and combine well to form a sticky ball of dough. Flour your hands and then shape the dough into a log about 30cm long. Place the log onto the baking tray, flatten the top slightly and bake in the oven for 20 minutes",
+      "Remove from the oven and slice the log into 1cm wide pieces. Place each piece back on the baking tray and bake again for about 10 minutes",
+      "Leave the pieces to cool completely. You can eat them immediately or store in an airtight tin for about a week"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Seeds",
+        "unit": "tsp",
+        "notes": "ground, of 3/4 tsp cardamom powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried, optional",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68f7a3195de1e4b19abbf6491418aa8231d93ca6e3a187bcb408db25fb0929f3",
+    "lineage_hash": "0c205c8206d956b388f251e34056fbd0ebd2e30d39d193ac6a7ab058e0c504db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacao-nib-biscotti-recipe",
+    "fetchedAt": "2026-08-03T12:03:50.083Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacao-nib-biscotti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

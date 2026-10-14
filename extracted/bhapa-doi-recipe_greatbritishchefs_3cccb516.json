@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Bhapa Doi",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 100°C/ gas mark 1/4.  Mix the bhapa doi ingredients together and pour into an ovenproof container. Place the container in a larger tray filled with hot water to create a bain-marie. Steam in the oven for 25 minutes until just set (although it will set firmer as it cools, so don't worry if it's still very wobbly). Leave to cool, then cover and refrigerate for 4–6 hours to set",
+      "To make the lime jelly, place the water, sugar, citric acid and lime zest into a pan and bring to the boil then take off the heat",
+      "Squeeze the gelatine leaves to drain off the water, then stir into the warm sugar syrup. Stir in the lime juice then pass through s fine sieve into a container. Cover and place in the fridge to set",
+      "To serve, add 3 neat quenelles of the bhapa doi to each plate and lean 3 wedges of mango against them. Dice the jelly into 1cm cubes and add 3 cubes to each plate. Garnish with mint leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Essence",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water for 5-10 minutes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "Alphonso if in season, sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "small",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "755c1299f7855bfec4d49cf174e5ddb4733e0960717f7375755b0e10b073d292",
+    "lineage_hash": "d84b97b94de05fd4b50bfe6ff156d931f02610a9393df373a5f5c8435367a675"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bhapa-doi-recipe",
+    "fetchedAt": "2026-08-02T22:56:00.101Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bhapa-doi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

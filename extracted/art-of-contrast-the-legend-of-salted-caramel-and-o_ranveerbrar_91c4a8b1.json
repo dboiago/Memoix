@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Salted Caramel Sauce",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the sugar over medium to high-heat in the bottom of a heavy saucepan.",
+      "Continue cooking the sugar until it reaches a deep amber color.",
+      "Carefully add the butter. Whisk until butter is melted.",
+      "Remove the pan from the heat and slowly pour in the heavy cream. Whisk until cream is incorporated and caramel is smooth.",
+      "Whisk in the fleur de sel or Maldon sea salt flakes. Your salted Caramel Sauce is ready!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Unsalted Butter",
+        "unit": null,
+        "notes": "room temperature, cut into pieces",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "preferable fleur de sel or sea salt flakes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c55ebaa9230388b1c247c49cd32d0062cad55558f6294eb0b96385059291af4c",
+    "lineage_hash": "84b72ac3ff0ed9f0278142a675308f32e3a705037ba63606d49627da0fb087d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/art-of-contrast-legend-of-salted/",
+    "fetchedAt": "2026-08-01T18:20:27.381Z"
+  },
+  "rawSource": "https://ranveerbrar.com/art-of-contrast-legend-of-salted/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

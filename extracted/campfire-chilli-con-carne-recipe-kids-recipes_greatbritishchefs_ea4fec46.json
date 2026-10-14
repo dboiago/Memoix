@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Campfire Chilli Con Carne",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dried chilli flakes in a little hot water for 2 minutes, then drain",
+      "Place a pan over a high heat and add olive oil. Once hot, add the diced beef and sear until nicely coloured. Set aside",
+      "Clean the pan, place over a medium heat and add a tablespoon of oil. Once hot, add the onions and garlic and cook until just beginning to brown",
+      "Add the meat back to the pan along with the sugar, chilli powder, paprika, cumin and oregano. Stir to combine",
+      "Add the coffee and the soaked chilli flakes to the pan, making sure the meat is covered",
+      "Cover and cook on the lowest heat possible. Simmer until the meat starts to fall apart, approximately 60-90 minutes",
+      "Meanwhile, add the rice to a small pot, cover in cold water. Rinse by moving the rice around with your hands. Pour off the white milky water and repeat twice more",
+      "Drain the excess water, leave to stand for 20 minutes. Add the 450ml of water and place the pot over a high heat. Bring to the boil, cover with a lid and turn down to the lowest heat possible",
+      "Cook for 12 minutes, or until the rice is just cooked. Remove from the heat and allow to stand, covered, for 2 minutes before serving",
+      "Remove the lid and add the beans, allow to cook until thickened and rich in flavour. Add a pinch of salt and pepper",
+      "Divide the chilli across 4 warmed bowls along with the rice. Garnish with the sour cream, chopped coriander, fresh chilli and diced tomato. Serve immediately with wedges of lime"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": "mild",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "ml",
+        "notes": "can use decaffeinated",
+        "amount": "960",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Kidney Beans in Chilli Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "395",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half-fat Sour Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad64c3a4811cc68dffeba4d6dae60a92bc4c64ae269fc6c67678ff74c91327fe",
+    "lineage_hash": "f70d980e581175ac80c5c0563911cc93d8907b3925fd3aba6e80d8007157f6c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/campfire-chilli-con-carne-recipe",
+    "fetchedAt": "2026-08-03T18:57:33.309Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/campfire-chilli-con-carne-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

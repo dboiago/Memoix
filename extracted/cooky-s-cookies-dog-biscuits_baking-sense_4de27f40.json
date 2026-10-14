@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Dog Biscuits",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "70",
+      "carbohydrateContent": "10",
+      "fatContent": "2",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat oven to 350 °F.  Line a half sheet pan with parchment paper.",
+      "In a mixer bowl combine 5 oz unsweetened apple sauce and 3 oz peanut butter. Add 1 large egg and mix to combine. Add ½ teaspoon table salt, 1 teaspoon baking powder, 3 oz old fashioned rolled oats and 7 ½ oz whole wheat flour.",
+      "Turn the dough onto a lightly floured surface. Knead to form a smooth dough. Roll the dough to ¼\" thick. Using cookie cutters, cut out desired shapes and place onto the prepared baking sheet.",
+      "Bake until crisp and lightly golden brown - about 15-20 minutes.",
+      "Let cool completely if your dog will let you wait that long."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Apple Sauce",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6e49328317a2aba2456c4a2b76d44493609e0e1b5f6116de8df1e571103d967",
+    "lineage_hash": "b0ab66f57878d51f2438783aec4a8366e1f80051218e41477fa82b74a860079c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/03/29/cookys-cookies-dog-biscuits/",
+    "fetchedAt": "2026-08-01T16:43:44.762Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/03/29/cookys-cookies-dog-biscuits/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

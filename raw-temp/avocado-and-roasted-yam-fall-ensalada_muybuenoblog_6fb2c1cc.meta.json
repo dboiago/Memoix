@@ -1,0 +1,66 @@
+{
+  "url": "https://muybuenoblog.com/avocado-and-roasted-yam-fall-ensalada/",
+  "slug": "avocado-and-roasted-yam-fall-ensalada_muybuenoblog_6fb2c1cc",
+  "title": "Avocado and Roasted Yam Fall Ensalada",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T06:47:43.128Z",
+  "ldName": "Avocado and Roasted Yam Fall Ensalada",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT17M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Main Course, Side Dish",
+  "ldKeywords": "autumnal salad recipe, salad with avocado, yam salad",
+  "ldIngredientsRaw": [
+    "¼ cup pepitas (hulled pumpkin seeds, toasted)",
+    "1 cup corn (canned (drained) or 1 ear of corn, shucked and cut from the cob)",
+    "2 tablespoons olive oil (divided)",
+    "1  large yam (peeled and diced into 1/2-inch cubes)",
+    "¼ cup red onion (finely chopped)",
+    "2 tablespoons cilantro (chopped)",
+    "1  serrano chile (stemmed, and finely chopped)",
+    "1  red or green apple (diced)",
+    "1  avocado from Mexico (ripe, halved, pitted and diced (save the avocado skins to use as serve ware))",
+    "1  lime (juiced)",
+    "Salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "In a dry skillet toast the pepitas for about 5 minutes or until they start to pop. Set aside to cool off and reserve.",
+    "Over high heat, heat skillet, add 1 tablespoon olive oil and roast the corn for about 5 minutes. Set aside to cool.",
+    "Using the same pan add 1 tablespoon olive oil allow to heat well. Add yams and roast, turning as needed to roast evenly. Set aside.",
+    "Chop onions, cilantro, and serrano chile.",
+    "Dice apple and avocado.",
+    "In a large mixing bowl combine all ingredients with lime juice. Toss gently. Add salt and pepper to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1435 kcal",
+    "sugarContent": "33 g",
+    "sodiumContent": "61 mg",
+    "fatContent": "69 g",
+    "saturatedFatContent": "10 g",
+    "carbohydrateContent": "205 g",
+    "fiberContent": "42 g",
+    "proteinContent": "22 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ¼ cup pepitas, hulled pumpkin seeds, toasted",
+    "▢ 1 cup corn, canned (drained) or 1 ear of corn, shucked and cut from the cob",
+    "▢ 2 tablespoons olive oil, divided",
+    "▢ 1 large yam, peeled and diced into 1/2-inch cubes",
+    "▢ ¼ cup red onion, finely chopped",
+    "▢ 2 tablespoons cilantro, chopped",
+    "▢ 1 serrano chile, stemmed, and finely chopped",
+    "▢ 1 red or green apple, diced",
+    "▢ 1 avocado from Mexico, ripe, halved, pitted and diced (save the avocado skins to use as serve ware)",
+    "▢ 1 lime, juiced",
+    "▢ Salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

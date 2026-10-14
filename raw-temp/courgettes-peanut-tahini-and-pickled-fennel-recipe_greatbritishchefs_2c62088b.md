@@ -1,0 +1,3 @@
+"Cooking the [fennel](https://www.greatbritishchefs.com/collections/fennel-recipes "Fennel") in a dry pan before adding the lime is a cool technique, as it both cooks and pickles the fennel at the same time. I like to use the Mexican Gran Luchito brand of jalapeños that chars the chillies before pickling, but any kind works nicely here. Both the [tahini](https://www.greatbritishchefs.com/collections/tahini-recipes "Tahini") and fennel can be made ahead; just make sure they’re not fridge cold when you serve."
+
+_This recipe is taken from Centrepiece: Bold, vibrant recipes to put_ [_vegetables_](https://www.greatbritishchefs.com/collections/vegetable-recipes "Vegetable") _in the spotlight by Helen Graham (£28, Octopus Publishing Group). Photography by Yuki Sugiura._

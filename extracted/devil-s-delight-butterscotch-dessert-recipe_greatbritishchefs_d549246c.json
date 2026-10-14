@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Devil's delight butterscotch Dessert",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium saucepan, brown 30g of the butter. Once golden and toasty smelling, stir in the sugar and salt. Remove from the heat and whisk in 150ml of the cream",
+      "In a medium bowl, whisk the cornflour with 50ml of the milk. Whisk in the brown butter mixture followed by the remaining milk. Return everything to the saucepan and bring to a simmer over a medium heat. Cook for 3 minutes, stirring constantly, until thickened",
+      "Remove the pan from the heat then stir in the remaining butter, vanilla seeds and 1 tbsp whisky until smooth. Press cling film onto the top to prevent a skin forming and allow to cool completely at room temperature",
+      "Whip the remaining cream, adding 1 tbsp whisky at the start if you’d prefer a slightly boozier pud, then fold two thirds into the cooled pudding",
+      "Divide between four glasses or bowls and chill, along with the remaining cream, for a minimum of 2 hours. Remove the puddings from the fridge, top with an extra dollop of whipped cream and sprinkle of cocoa nibs, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Muscavado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Cacao Nibs",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6dfd453b44a6882bbb23410840f3c25600f73f66b2459c5b0aeccb961197dba2",
+    "lineage_hash": "5c3e1ae1bc099205b4252f14c4ed9e07e8500907638370d0db4564af88a6424b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butterscotch-devils-delight",
+    "fetchedAt": "2026-08-03T14:15:19.276Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butterscotch-devils-delight",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

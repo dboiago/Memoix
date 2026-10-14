@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Air Fryer Sweet and Sour Chicken",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "306",
+      "carbohydrateContent": "23.5",
+      "fatContent": "10.3",
+      "proteinContent": "27.6"
+    },
+    "directions": [
+      "Combine chicken pieces, vegetable oil, and salt in a big bowl. Mix well and let marinate for 10 minutes. When ready to cook, add cornstarch to the chicken. Stir to coat the chicken, until it forms an uneven coating with a little dry cornstarch left unattached.",
+      "Place the chicken pieces into your air fryer basket (or tray), without overlapping. Cook in batches if needed. Spray oil onto the chicken until there’s no dry cornstarch on the surface. Cook in the air fryer at 450°F (230°C) for 8 minutes, until the chicken turns pale yellow. Flip the chicken (or shake the air fryer basket) and cook for another 5 to 6 minutes, until turning golden. Once done, transfer all the chicken pieces to a big plate to cool off slightly.",
+      "Meanwhile, mix all the sauce ingredients together in a small bowl.",
+      "When the chicken is cooked, prepare the sauce: Heat oil in a large skillet until hot. Add garlic and ginger. Cook and stir a few times until it releases its fragrance.",
+      "Add the bell pepper and white onion. Stir and cook for 30 seconds.",
+      "Stir the sauce again to dissolve the cornstarch completely. Pour into the pan. Stir and cook until it thickens. Add back the chicken pieces. Stir to coat chicken evenly with sauce. Transfer everything to a plate immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "*Footnote 1, boneless, skinless, cut to 1\" (2-cm) pieces",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Cooking",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "I used a mix of colors in this recipe, chopped",
+        "amount": "1",
+        "section": "Cooking",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca1c3ad36404e961f0ad910cb365b7d906b0feffeb2a1d939572a2eee08520c0",
+    "lineage_hash": "62c55be7a952c0af43e12e31c0dd6243dad8a2501c5932821539cf6240080b36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-sweet-and-sour-chicken/",
+    "fetchedAt": "2026-08-02T04:43:25.114Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-sweet-and-sour-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Chestnut Mousse with Currant Sauce",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the currants with the sugar over low heat for 5 minutes after they come to a boil. Optionally, you can filter the puree through a sieve. Let cool. Place the chestnut puree in a bowl and mix to soften. Whip the cream, stopping before it thickens too much (otherwise it will separate). Combine the chestnut puree with 1/4 cup of the whipped cream and distribute half into 4 glasses. Using a spatula, gently fold the remaining cream into the remaining chestnut puree; transfer the mousse into a piping bag with an open star tip and pipe into the glasses. Top with the currant sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chestnut Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "acc7d47250a7c2e50049b12f4946b356bab70633828b576d1a278e6c522fce8a",
+    "lineage_hash": "6b9386a7bf08a69170fcd98a6140734f5694ebb8e9c71e9e7d3baf7d52366f16"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chestnut-mousse-with-currant-sauce",
+    "fetchedAt": "2026-08-03T07:55:54.216Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chestnut-mousse-with-currant-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

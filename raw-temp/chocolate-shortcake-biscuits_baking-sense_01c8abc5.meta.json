@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2020/05/20/chocolate-shortcakes-with-chocolate-chips/",
+  "slug": "chocolate-shortcake-biscuits_baking-sense_01c8abc5",
+  "title": "Chocolate Shortcake Biscuits",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:36:50.410Z",
+  "ldName": "Chocolate Shortcake Biscuit Recipe",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 biscuits"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, easy",
+  "ldIngredientsRaw": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "6 ¾ oz cake flour (1 ½ cups)",
+    "2 oz cocoa powder (½ cup)",
+    "1 teaspoon table salt",
+    "2 tablespoons baking powder",
+    "2 oz granulated sugar (¼ cup (see note))",
+    "6 oz mini chocolate chips (1 cup)",
+    "8 oz unsalted butter (cold, cut into ¼&quot; slices)",
+    "2  large eggs",
+    "12 oz buttermilk (1 ½ cups)",
+    "Extra buttermilk and sugar for topping"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Line a 1/2 sheet pan with parchment paper or a silicone baking mat.",
+    "Whisk together 10 oz&#32;all purpose flour, 6 ¾ oz&#32;cake flour, 2 oz&#32;cocoa powder, 1 teaspoon&#32;table salt, 2 tablespoons&#32;baking powder, and 2 oz&#32;granulated sugar. Toss 6 oz&#32;mini chocolate chips into the flour and use a whisk to distribute the chips.",
+    "Toss 8 oz&#32;unsalted butter slices into the flour. Use your fingers to work the butter into the flour until the pieces are no larger than a pea.",
+    "Whisk 2&#32;large eggs into 12 oz&#32;buttermilk and pour them into flour mixture. Toss the mixture with a spoon or spatula until it begins to form a dough. Turn the dough out onto a well floured surface and lightly knead about 5-10 times to bring the dough together. This is a very wet dough so keep your hands well floured and use a light touch while kneading. You don&#39;t wan&#39;t to knock all the air out of the dough.",
+    "Use your hands to pat dough to ¾&quot; thick. Cut rounds with a 3&quot; biscuit cutter. Gently knead together the scraps to cut remaining biscuits. Place the rounds on the sheet pan. Brush with buttermilk and sprinkle with granulated sugar. Bake until well puffed and set, 12 to 14 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 biscuit",
+    "calories": "408 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "8 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "13 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "73 mg",
+    "sodiumContent": "460 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "15 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "6 ¾ oz cake flour (1 ½ cups)",
+    "2 oz cocoa powder (½ cup)",
+    "1 teaspoon table salt",
+    "2 tablespoons baking powder",
+    "2 oz granulated sugar (¼ cup (see note))",
+    "6 oz mini chocolate chips (1 cup)",
+    "8 oz unsalted butter (cold, cut into ¼\" slices)",
+    "2 large eggs",
+    "12 oz buttermilk (1 ½ cups)",
+    "Extra buttermilk and sugar for topping"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

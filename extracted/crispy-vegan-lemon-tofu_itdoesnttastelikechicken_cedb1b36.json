@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Crispy Vegan Lemon Tofu",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "104",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Marinate the tofu: In a large resealable bag or medium dish, mix together all of the marinade ingredients. Add in the slices of tofu and toss lightly to coat. Seal or cover and put in the fridge to marinate for a minimum of 30 minutes, but you can let marinate in the fridge for up to 3 days.",
+      "Panko coat the tofu: Take three small bowls. Add the flour to one. Pour off the leftover lemon marinade into the second, leaving the tofu behind. Mix together the panko, nutritional yeast, dried parsley, and garlic powder in the third.",
+      "Take a slice of the marinated tofu and toss it into the flour to coat, then dip the tofu into the leftover marinate, and finally coat in the panko mixture. Repeat with all the tofu slices. You can bake or fry the tofu depending on your preference.",
+      "To bake the tofu: Preheat your oven to 400F (200C). Line a baking sheet with parchment paper. Lay the panko coated tofu in a single layer and bake for 18 to 23 minutes until lightly golden.",
+      "To fry the tofu: heat a large skillet over medium-high heat with enough oil to coat the bottom of the pan. When hot, carefully fry the tofu pieces until they are golden brown on both sides, and heated through. About 3 to 6 minutes per side. The panko coating can be a little fragile and falls off easily, so I found the best technique was to use a large spatula (and not tongs) for flipping. Just be gentle when handling the tofu.",
+      "To air fry the tofu: Preheat your airy fryer to 370F (190C). Lay the panko-coated tofu in a single layer, working in batches if needed, and fry for 14 to 19 minutes until lightly golden."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "2",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Agave",
+        "unit": "tsp",
+        "notes": "alt: maple syrup",
+        "amount": "2",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Block (350g) Extra-firm",
+        "unit": null,
+        "notes": "alt: firm tofu, see notes, drained, pressed, and sliced into 8 pieces",
+        "amount": "1",
+        "section": "lemon marinated tofu",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Panko Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "panko coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13ef5dd925df7563bdc3fbcb47306132ae8800bbc7a103c0448c92dae0ad4487",
+    "lineage_hash": "0fe5675347e6cda15bf82700ecbd2dbc9f09d91b2a367860767eb6eac9fa1674"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-vegan-lemon-tofu/",
+    "fetchedAt": "2026-08-02T00:12:50.907Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-vegan-lemon-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

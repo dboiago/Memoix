@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Aloe Water with Lime Detox",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take aloe vera pulp and lemon juice in a mixer jar and blend well.",
+      "Pour into a glass and add honey and mix.",
+      "Top up with water and ice cubes.",
+      "Mix and serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tbsps Aloe Vera",
+        "unit": null,
+        "notes": "washed, cubed and pulped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glass Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a93a8a1709e491a8b298f97a546cdf5f15f8a7b9f397b9ebfc21ab87365e558a",
+    "lineage_hash": "132bc2f84b6bae0440598cafd1f4c7c3a3dea821e9a9adb185845b77683ed8be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloe-water-with-lime-detox-2/",
+    "fetchedAt": "2026-08-02T10:53:49.020Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloe-water-with-lime-detox-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

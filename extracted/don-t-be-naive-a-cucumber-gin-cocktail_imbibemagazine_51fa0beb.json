@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Cucumber Gin Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to the shaker with ice. Shake to chill and double strain it into the glass. Add 4 drops of sesame oil on top of the drink.",
+      "Cucumber-Infused Dry GinAdd 2 chopped English cucumbers and 750ml of dry gin to a blender and blend for approximately 2 minutes or until the mixture is well combined. Afterward strain the mixture through a fine-mesh sieve into a bottle to remove any solid pieces. Will keep in the refrigerator for 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "drops",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fcff1a06d55dd8f4d2d4aab8569edb31c5f8d6f51127e01d9520123a5b1e4ab8",
+    "lineage_hash": "7b796d1072a81e3d99cd86daee621c3d1080d81ebbc0ff892108d637ab6344f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dont-be-naive-cucumber-gin-cocktail/",
+    "fetchedAt": "2026-08-03T23:13:17.802Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dont-be-naive-cucumber-gin-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

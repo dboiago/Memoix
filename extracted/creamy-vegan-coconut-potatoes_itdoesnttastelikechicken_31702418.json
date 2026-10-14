@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Coconut Potatoes",
+    "time": "1 hr 10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "111",
+      "carbohydrateContent": "24",
+      "fatContent": null,
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat your oven to 400F (220C).",
+      "In a 1.5qt casserole dish (or larger), whisk together the coconut milk, flour, garlic, thyme, salt, pepper, and nutmeg. Add the potatoes and give it a stir to coat. Cover with foil and bake for 50 to 65 minutes until the potatoes are fork tender. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Can Full-fat Coconut Milk",
+        "unit": "ml",
+        "notes": "1 ¾ cups",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "gluten-free all-purpose flour if preferred",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Baby Potatoes",
+        "unit": "lb",
+        "notes": "about 5 cups",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8829f5b2f145768868b7eb1296d5d1f60aeee490a9dba200a4a7b4f20cf136a6",
+    "lineage_hash": "a7f89b566d19d9301f8bf5981cf9e8f0fdf09f8be0cfcdfd7e765e94802134ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-vegan-coconut-potatoes/",
+    "fetchedAt": "2026-08-01T19:45:12.348Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-vegan-coconut-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

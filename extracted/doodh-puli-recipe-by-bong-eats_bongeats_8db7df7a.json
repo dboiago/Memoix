@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Doodh Puli",
+    "time": "1 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "134",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "To make the filling, mix together grated coconut and date palm jaggery in a pan. Set it on medium heat and cook for about 10 minutes until nutty. Set aside.",
+      "For the filling, peel and boil the sweet potato. When tender, drain from the water and mash until lump free.",
+      "For our choux pastry–like dough, set your pan on low heat. Add water and season it with salt.",
+      "Once the water comes to a boil, add in the rice flour all at once.",
+      "Roughly mix it, and cover the pan with a lid for 5 mins.",
+      "After that, uncover the pan and mix until the dough comes together. Add in the mashed sweet potato.",
+      "Remove from the heat on to your workbench. Using wet palms knead the dough until smooth. Divide into 16 portions of about 15 g each.",
+      "Fill each dumpling and shape it as shown in this video. Ensure that the dough (before and after filling) is kept covered with a damp cloth at all times.",
+      "For the sauce, set milk to boil. Once it reduces slightly (say, after about 10–15 mins of simmering), drop in the dumplings and cook them for 10 mins (cooked puli will float to the top).",
+      "Turn off the heat and allow the sauce to cool for about 5 mins before adding in the date palm jaggery. Cover and allow it to melt in the residual heat. This is a safeguard against milk splitting, since date palm jaggery tends to have impurities which can curdle hot milk.",
+      "Eat these fresh, preferably on the same day. On a cold winter's day it can be left outside (it will harden in the fridge), and reheated gently on low powder in the microwave."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut",
+        "unit": "g",
+        "notes": "freshly grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khejurer Patali",
+        "unit": "g",
+        "notes": "date-palm jaggery, in solid form",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khejurer Patali",
+        "unit": "g",
+        "notes": "date-palm jaggery, in solid form",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a756368195e79a60e3b7e947e43c758992fe7ee4076a1dfcd849d303dfac53cd",
+    "lineage_hash": "5779fc601de45a3db7d385111e9b9bbabd4fd575e1de73e3309f5036e1e833cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/doodh-puli",
+    "fetchedAt": "2026-08-01T19:22:47.391Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/doodh-puli",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

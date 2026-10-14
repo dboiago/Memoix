@@ -1,0 +1,53 @@
+{
+  "url": "https://dailycookingquest.com/crustless-spinach-quiche.html",
+  "slug": "crustless-spinach-quiche_dailycookingquest_51ef8949",
+  "title": "Crustless Spinach Quiche",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:50:42.541Z",
+  "ldName": "Crustless Spinach Quiche",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": [
+    "Beef",
+    "Egg",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon oil",
+    "1/2 onion, diced (~ 1 cup)",
+    "1 red bell pepper, diced (~ 1 cup)",
+    "1 cup diced sausage (or ham)",
+    "300 gram fresh baby spinach (~ 10 ounce), washed and drained",
+    "5 eggs, lightly beaten",
+    "300 gram shredded Monterey Jack cheese (~ 3 cup)",
+    "1/4 teaspoon ground pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a large skillet/wok over medium high heat. Sauté onion and red bell pepper until onion is translucent. Add sausage/ham and cook for 1 minute.",
+    "Add spinach, cover the skillet/wok, and cook for 2 minutes. Remove the lid, and the spinach should be fully wilted at this time, cook a bit longer if not.",
+    "Transfer the cooked ingredient to a mixing bowl and chill in the fridge to cool.",
+    "Preheat oven to 180 Celsius (350 Fahrenheit). Once the oven reaches the desired temperature, grease a 9\" pie plate or quiche dish.",
+    "In a mixing bowl, combine lightly beaten egg, shredded cheese, and ground pepper. Add the cooked vegetables and sausage/ham to the egg mixture and fold really well. Pour this into pie plate/quiche dish.",
+    "Bake in preheated oven for about 45 minutes, or until a knife inserted in the center comes out clean."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon oil",
+    "1/2 onion, diced (~ 1 cup)",
+    "1 red bell pepper, diced (~ 1 cup)",
+    "1 cup diced sausage (or ham)",
+    "300 gram fresh baby spinach (~ 10 ounce), washed and drained",
+    "5 eggs, lightly beaten",
+    "300 gram shredded Monterey Jack cheese (~ 3 cup)",
+    "1/4 teaspoon ground pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

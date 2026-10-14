@@ -1,0 +1,61 @@
+{
+  "url": "https://thewoksoflife.com/cantonese-pork-soup-carrot-chinese-yam/",
+  "slug": "cantonese-pork-soup-with-carrots-chinese-yam_thewoksoflife_7fcb88f1",
+  "title": "Cantonese Pork Soup with Carrots & Chinese Yam",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T14:02:14.195Z",
+  "ldName": "Cantonese Pork Soup with Carrots &amp; Chinese Yam",
+  "ldTime": "PT330M",
+  "ldPrepTime": "PT120M",
+  "ldCookTime": "PT210M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "cantonese pork soup",
+  "ldIngredientsRaw": [
+    "4  dried shiitake mushrooms ((large))",
+    "600 grams lean pork shoulder/butt ((1 large piece))",
+    "500 grams large carrots ((cut into large chunks))",
+    "15 grams dried red dates ((also known as dried jujubes, pitted and halved))",
+    "15 grams dried goji berries",
+    "1 large chunk ginger ((smashed))",
+    "3.3 L water",
+    "500 grams Chinese yams ((peeled and cut into large chunks))",
+    "salt ((to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the shiitake mushrooms of any dust or dirt, and pre-soak for at least 2-3 hours in warm water. Do not discard the mushroom soaking water.",
+    "Place the pork in a thick-bottomed soup pot filled with enough water to just cover the pork. Bring to a boil, then immediately remove from the heat. Drain, rinse the pork under running water, and clean the stock pot. This step ensures a very clean broth.",
+    "Transfer the pork back to the clean pot. Add the soaked Shiitake mushrooms, carrots, red dates, goji berries, ginger, and 14 cups of water, along with the mushroom water. Cover and turn the heat to high. Bring to a boil, then reduce the heat to simmer. Simmer for two hours. During this time, the heat should be high enough to gently move the soup, but not so high that there are visible bubbles.",
+    "After 2 hours, add the chunks of Chinese yam. Bring to a boil using medium heat, then immediately reduce the heat, cover, and simmer for 1 more hour until Chinese yam is fork-tender. Serve the soup with salt at the table so everyone can add salt to taste. Don’t forget to shred the pork also, and serve it with some light soy sauce for dipping."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "266 kcal",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "25 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "60 mg",
+    "sodiumContent": "153 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 dried shiitake mushrooms (large)",
+    "▢ 600 grams lean pork shoulder/butt (1 large piece)",
+    "▢ 500 grams large carrots (cut into large chunks)",
+    "▢ 15 grams dried red dates (also known as dried jujubes, pitted and halved)",
+    "▢ 15 grams dried goji berries",
+    "▢ 1 large chunk ginger (smashed)",
+    "▢ 3.3 L water",
+    "▢ 500 grams Chinese yams (peeled and cut into large chunks)",
+    "▢ salt (to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

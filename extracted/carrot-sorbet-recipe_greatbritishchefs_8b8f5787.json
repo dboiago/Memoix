@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Carrot Sorbet",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the sugar and water in a pan, bring to the boil to make a sugar syrup and take off the heat",
+      "Place the gelatine leaves in water to soften and then squeeze off the excess liquid",
+      "Add the softened gelatine into the syrup and then add the rest of the ingredients",
+      "Churn and freeze until set. Serve between courses as a palate cleanser or as a light dessert"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "325",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Buckthorn Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2264920f4a2b545edb2a123d40ef99a078bea4535cac3acd2e082209b7fb9814",
+    "lineage_hash": "1f7a7085eb956bfc2d675628f11fd5e5279072d1e85089c031f36906bcef2dd5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-sorbet",
+    "fetchedAt": "2026-08-03T17:09:29.629Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

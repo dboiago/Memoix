@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Chocolate Emulsion",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, melt the chocolate. Place in the microwave for 1 minute on a medium heat. Stir the chocolate, then return to the microwave for 30 seconds at a time until the chocolate has melted completely",
+      "Add the milk and cream to a pan and bring to a boil. In a heatproof bowl, whisk the egg, then slowly pour the boiled cream onto the egg, whisking continuously",
+      "Whisk the egg and cream mix into the melted chocolate in three separate batches, until emulsified and smooth",
+      "Pour into an espuma gun and add 1 gas charge. Turn upside down, shake and keep warm until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f0eb1e5462eaf950f1304ca584f428520e41aa2dcc0c42e97bd6489ef63d5b23",
+    "lineage_hash": "2a530218479c2abf730fcd913ba860144722a516630f693b4c562f3ced06da6f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-emulsion-recipe",
+    "fetchedAt": "2026-08-03T19:55:29.224Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-emulsion-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

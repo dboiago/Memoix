@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Beef Chow Fun (干炒牛河)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "706",
+      "carbohydrateContent": "100",
+      "fatContent": "27.2",
+      "proteinContent": "13.6"
+    },
+    "directions": [
+      "Slice beef against the grain into 1/8” (3mm) thick and 2” (5 cm) long pieces, and transfer the pieces to a small bowl. Add the light soy sauce, Shaoxing wine. Use your hand to gently mix the beef until the sauce is fully absorbed. Add the cornstarch and mix again until evenly distributed. Let marinate for 15 minutes while preparing the rest of the ingredients.",
+      "Combine all the sauce ingredients. Mix well and set aside.",
+      "If using dried noodles: Cook (or soak) the rice noodles according to the instructions minus 1 minute, until cooked through, but still a bit chewy inside. Rinse rice noodles with cold water and drain. To avoid sticky rice noodles during stir fry, add 1 teaspoon sesame oil to the drained noodles. Gently toss noodles by hand to separate and evenly coat them with a thin layer of oil.",
+      "If using fresh noodles: slice the rice noodle sheet into noodles, then separate the noodles with your hands. Do not soak the noodles in water.",
+      "Heat 1 tablespoon of oil in a large nonstick skillet over high heat until hot. Spread the beef slices in the skillet in a single layer. Cook until the bottom side of the beef turns golden brown, 1 to 2 minutes. Flip the beef and cook the other side until browned, but the inside is still a bit pink, 30 seconds to 1 minute. Transfer beef to a plate immediately.",
+      "In the same skillet, add the remaining 2 tablespoons of oil and turn to medium heat. Add the ginger, garlic, white onion, and the white part of the green onion. Stir and cook until the aromatics turn light golden on the edges, 1 minute or so.",
+      "Toss the cooked noodles again to separate gently, and add them into the skillet. Use a pair of tongs to toss the noodles with the rest of the ingredients to coat well with the oil.",
+      "Add the beef back into the skillet. Pour in the mixed sauce. Immediately use a pair of tongs or chopsticks to toss and mix everything.",
+      "Add the bean sprouts. Keep tossing gently (to avoid breaking apart the noodles) until the bean sprouts just start to soften, 1 to 2 minutes. Then add the green onion. Toss a few more times, until the sauce is absorbed by the noodles, and the veggies are softened but still crunchy. Turn off heat and transfer everything to serving plates immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Flank Steak",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Noodles",
+        "unit": "oz",
+        "notes": "or 12 oz / 360 g fresh thick rice noodles, dried",
+        "amount": "7",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Cups Bean Sprouts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced to 2” (5 cm) pieces, white halved, white and green separated",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9308c2358658b2aae1e76cc7d86297c42693c519688bdf2fc701b7f929e62dfc",
+    "lineage_hash": "11ec603e3721199a8545a413c1d1609bc3ade11c58c2bce86901be68bffc36ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-chow-fun/",
+    "fetchedAt": "2026-08-02T09:08:26.261Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-chow-fun/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

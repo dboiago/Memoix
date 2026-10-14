@@ -1,0 +1,57 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-broccoli-with-garlic/",
+  "slug": "chinese-broccoli-with-garlic_chinasichuanfood_e31a9f7b",
+  "title": "Chinese Broccoli with Garlic",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:56:28.435Z",
+  "ldName": "Chinese broccoli with garlic",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Cantonese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Chinese broccoli, garlic",
+  "ldIngredientsRaw": [
+    "250 g Chinese broccoli  (, trimmed and cut into small sections)",
+    "1 tsp. oil",
+    "1/2 tsp. salt",
+    "3  cloves garlic ( ,roughly chopped)",
+    "2 tbsp. vegetable cooking oil",
+    "1 tsp. oyster sauce",
+    "1/2 tbsp. Chinese cooking wine",
+    "1/2 tbsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Trim Chinese broccoli, remove the hard skins and cut into sections with angle. Separate the leaves too.",
+    "Bring a large pot of water to a boiling and then add salt and vegetable cooking oil. Add the stem firstly (cook for 20 seconds) and then add the leaves to cook for 10 seconds. Transfer out and drain.",
+    "Add oil in already heated wok and fry the garlic until slightly seared. Place Chinese broccoli back, add cooking wine and sesame oil. Mix well quickly and serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "244 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "5 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "13 g",
+    "sodiumContent": "583 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "250 g Chinese broccoli  , trimmed and cut into small sections",
+    "1 tsp. oil",
+    "1/2 tsp. salt",
+    "3  cloves garlic  ,roughly chopped",
+    "2 tbsp. vegetable cooking oil",
+    "1 tsp. oyster sauce",
+    "1/2 tbsp. Chinese cooking wine",
+    "1/2 tbsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

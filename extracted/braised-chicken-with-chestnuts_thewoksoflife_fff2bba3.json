@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Braised Chicken with Chestnuts (栗子焖鸡)",
+    "time": "2 hr 35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "477",
+      "carbohydrateContent": "56",
+      "fatContent": "11",
+      "proteinContent": "36"
+    },
+    "directions": [
+      "To a large bowl, add the chicken pieces, 1 tablespoon of Shaoxing wine, salt, white pepper, and 2 teaspoons light soy sauce. Mix well. Lastly, mix in 2 teaspoons of oil to lock in the moisture and prevent sticking when browning. Refrigerate while you prepare the other ingredients.",
+      "To rehydrate your Shiitake mushrooms, soak them in 2 cups of hot water for 2 hours or in 2 cups of cold water overnight.",
+      "When you’re ready to cook, heat a wok or a Dutch oven over medium heat. Add a tablespoon of neutral oil, and cook the chestnuts for 2 minutes, or until they start to blister lightly. Remove and set aside.",
+      "At this point, if the wok surface looks sandy or starchy from cooking the chestnuts, wash the wok with a scouring pad and hot water to prevent burnt bits. If not, proceed.",
+      "Pre-heat the wok over high heat until it starts to smoke lightly. Add the remaining 2 tablespoons of neutral oil, and swirl to coat the cooking surface. Reduce the heat to medium, and cook the garlic, ginger, the white parts of the scallions, and the star anise for about 1 minute, or until the the scallions are lightly browned. Add the chicken pieces, spreading them in a single layer so each piece is in contact with the wok. Increase the heat to high and lightly brown on both sides.",
+      "Add the remaining tablespoon of Shaoxing wine, and toss the chicken using your wok spatula to scrape from the bottom and prevent the chicken from sticking. Reduce the heat to medium high.",
+      "Add the mushrooms, the remaining 1 tablespoon of light soy sauce, dark soy sauce, oyster sauce, and the mushroom soaking water. Take care to leave behind any sediment that has settled to the bottom of the bowl you used to soak the mushrooms! Mix everything well, cover, and simmer for 10 minutes.",
+      "Remove the lid, and add the chestnuts. Give everything a good stir, cover, and simmer for 10-15 minutes. Some of the chestnuts may fall apart as they soften, but that is okay.",
+      "Finally, add the green parts of the scallions. Stir until the sauce thickens and lightly coats the chicken and the chestnuts. (If there is too much sauce left after 20 minutes, you can make a cornstarch slurry to thicken the sauce as needed.) Serve with steamed jasmine rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "about 6 chicken thighs, cut into 1½-inch/4cm pieces, boneless, skinless",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "plus 1 tablespoon, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "plus 3 tablespoons, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "soaked and rehydrated, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Chestnuts",
+        "unit": "lb",
+        "notes": "use the full pound if you absolutely love chestnuts, otherwise ½-pound/225g is just fine",
+        "amount": "½-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into 2-inch/5cm lengths, white and green parts separated",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pods",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "reserved from rehydrating the dried mushrooms",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ffebbd9b42245eeb2a3537f9442f28c5e5f588e0d4bc43f581b743f9b5bd21e",
+    "lineage_hash": "3516223a101b389f47ec77ed1f1d66183cb31fdb100b3170470f8a5a94a8a408"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-chicken-chestnuts/",
+    "fetchedAt": "2026-08-02T18:52:46.764Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-chicken-chestnuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

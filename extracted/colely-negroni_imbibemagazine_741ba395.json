@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Colely Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Peel Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients together with ice to dilute and chill. Strain into a coupe. Twist an orange peel over the top of the drink and discard.",
+      "Coffee-infused Campari: Add 1 Tbsp. of whole coffee beans to 250 ml. Campari in a jar. Steep for 3 hours, shaking occasionally. Strain through a coffee filter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee-infused Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "Cocchi Torino",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fernet-branca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Amoroso Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e70ed16c5e801f3262721349584b5d79d97af0f9f0d448be46b63966b37b0822",
+    "lineage_hash": "c67bd8a8d0e4d7efcdb4fc6252aa4640a0c4f8cef34e5afff93722da2ccf71b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/colely-negroni/",
+    "fetchedAt": "2026-08-03T17:47:38.409Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/colely-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

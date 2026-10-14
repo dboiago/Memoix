@@ -1,0 +1,7 @@
+I've started a new job recently and am almost always up against the clock at mealtimes. I have about half an hour to get dinner on the table before my girls start to get grumpy and tired and then all is lost because they won't eat properly, if at all. Dinner is easy. We have lots of speedy suppers that can be whizzed up in no time.
+
+And then, once the hunger pangs have gone and everyone has a little time to relax and take it easy, I set about making something sweet. It is lovely to have a cup of tea and a nice treat after a stressful day. I find baking quite relaxing so while the girls are tidying away the dinner things, I’ll make [dessert](https://www.greatbritishchefs.com/collections/dessert-recipes).
+
+Here's a great recipe for shortbread cups that takes no time at all and you can fill them with all sorts of different deliciousness! The shortbread will keep in an airtight container for a week or so.
+
+Fill them with [jam](https://www.greatbritishchefs.com/collections/jam-recipes) and top with whipped cream and [honey](https://www.greatbritishchefs.com/ingredients/honey-recipes). Fill them with lemon curd and top with some Italian meringue. Dollop some yoghurt into the well and then top with a fresh strawberry. Drizzle in some honey, cover with crème fraiche and sprinkle over some hundreds and thousands... the options are endless!

@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Coffee and Cocoa Smoked Duck Breast",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fire up. Prepare a smoker or a grill for 2-zone indirect cooking. Adjust the smoker or grill to bring the temperature to about 225°F (107.2°C) in the indirect zone and place 2 to 3 chunks of your favorite smoking wood on the fire.",
+      "Prep. combine the coffee, cocoa powder, brown sugar, salt, and ancho chile powder in a small bowl and blend well.",
+      "Using a sharp paring knife, make 3-4 vertical and horizontal cuts through the fat side of the duck to make a crosshatch pattern, being careful not to cut into the meat. Season both sides of the duck breasts liberally with the coffee and cocoa dry rub.",
+      "Cook. Place a small saucepan on the hot side of the grill and add the cherries, balsamic vinegar, and orange juice to the saucepan.  Allow the mixture to simmer for approximately 10 minutes until reduced by 2/3.  Remove and set aside.",
+      "Set a cast iron skillet on the hot side of the grill and place the duck breasts on the cool side of the grill.  Cover the grill and allow the duck breasts to smoke until they reach an internal temperature of 115 degrees, approximately 20 minutes.",
+      "Once the duck reaches 115°F move them to the cast iron skillet fat side down.  Allow the duck to cook until most of the fat has rendered and is crisp, approximately 3-4 minutes.  Turn the duck and cook for another 2-3 minutes until it reaches an internal temperature of 130°F for medium-rare.",
+      "Remove the duck from the skillet and set on a cutting board skin side up. Remove the skillet from the grill and set the saucepan with the balsamic-cherry reduction back on the grill to warm as the duck rests.",
+      "Serve. Once the duck has rested for 5 minutes, slice it and serve along with the balsamic-cherry reduction."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Coffee",
+        "unit": "Tbsp",
+        "notes": "finely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Domino Pourable Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breast",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tart Cherries",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27b7d6c983c7c6272af7641ba631dc447c7177acfa069b63a49d3c917c2c7950",
+    "lineage_hash": "a33209aa30fab6ba3336a6555bd56db00527323cd71f47ce8cc3e005abdbfeab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/grilled-coffee-and-cocoa-duck-breast-with-balsamic-cherry-sauce/",
+    "fetchedAt": "2026-08-02T10:33:29.863Z"
+  },
+  "rawSource": "https://amazingribs.com/grilled-coffee-and-cocoa-duck-breast-with-balsamic-cherry-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

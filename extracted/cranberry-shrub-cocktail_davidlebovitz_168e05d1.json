@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Cranberry Shrub Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Cocktail",
+    "garnish": [
+      "Leftover Cranberries Skewed on a Toothpick",
+      "Strip of Orange Zest"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium saucepan, heat the water, cranberries, sugar and allspice until the mixture starts to boil. Reduce the heat and cook at a very gentle simmer until the cranberries are completely soft, about 8 minutes.",
+      "Remove from heat and pass the cranberries through a mesh strainer, letting the liquid drain into a bowl. Press down on the cranberries to extract as much juice as possible from them without pressing too hard, as you don’t want to get any solids into the shrub. (You may want to reserve a few nice cranberries if you’d like to use them as a garnish before pressing them down.)",
+      "Add the vinegar to the cranberry syrup and transfer the shrub into a bottle or jar, cover, and refrigerate until ready to use. The shrub mixture can be kept for several months in the refrigerator.",
+      "To make a Cranberry Shrub Cocktail, fill a cocktail shaker halfway full of ice. Add 3/4 ounces of shrub and 2 ounces of bourbon, along with 1 teaspoon maple syrup and three drops of a favorite cocktail bitters. Shake until well-chilled, then pour in a cold glass. Garnish with leftover cranberries skewed on a toothpick or a strip of orange zest. An option to jazz it up would be to add 1/2 ounce of orange-based liqueur, such as Grand Marnier or Cointreau, to the cocktail mix in the shaker."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Cranberries",
+        "unit": "C",
+        "notes": "235g, fresh",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Berries",
+        "unit": null,
+        "notes": "crushed, or another spice",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ad3750871b69065931bb66712427913c9712c2d3da57a7088957a4e56639cc0",
+    "lineage_hash": "e21a8b1d62621b99a648ec20b9c960d20d77ecdbfec41b12a97c839a62ea8010"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cranberry-shrub-and-cranberry-shrub-cocktail-recipe/",
+    "fetchedAt": "2026-08-02T18:13:49.372Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cranberry-shrub-and-cranberry-shrub-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

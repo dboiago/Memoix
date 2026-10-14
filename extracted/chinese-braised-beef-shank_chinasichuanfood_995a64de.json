@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Beef Shank",
+    "time": "1 hr 55 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinating the beef: in the previously two days before making this dish, cut the long log into 3 sections and spread salt on the surface and then massage. Set aside for 2 or 1 day (at least overnight) with a weight on top.",
+      "Clean the beef shank: before cooking your beef shank, rinse under running water to clean and then place them in a large pot with enough cold water to cover. Bring to a boiling and continue cooking for 1-2 minutes. Transfer out and clean with warm water.",
+      "Soak all the spices with around 1/2 cup of boiling hot water for around 10 minutes. Drain and wrap all of them in a clean glaze bag and seal with cotton lines.",
+      "Add beef shank in a cast iron pot; add leek onion, spring onion, shallots and sugar. Pour in soy sauce and enough beef stock to cover.",
+      "Bring to boil and then simmer for at least 60 minutes to 90 minutes. Then remove from heat and soak overnight.",
+      "Slice it thinly and serve directly or with dips (note1)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shank",
+        "unit": null,
+        "notes": "around 1500g, bone removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Chinese Cinnamon",
+        "unit": "small",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Cardamomum Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Tsaoko",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers Optional",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f710d4fd7bc2203065cba3af086a0a29a8d7a718fc919a90b4f8b09d159c2828",
+    "lineage_hash": "aabf696918a4a44e53ac654d2375efa0c337a3bdff548e11cac72f269804e8fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-braised-beef-shank/",
+    "fetchedAt": "2026-08-02T02:40:04.075Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-braised-beef-shank/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

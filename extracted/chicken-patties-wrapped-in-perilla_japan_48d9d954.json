@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chicken Patties Wrapped in Perilla",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wrap tofu in a clean cloth or 2-3 layers of paper towel and squeeze water out until most of it is removed.",
+      "Add tofu and all other Chicken Patties ingredients in a bowl, except corn flour, and mix well, ensuring that miso is distributed evenly and there are no large pieces of tofu.",
+      "Sprinkle corn flour widely (so that it doesn't become a big lump) and mix well.",
+      "Level the surface of the chicken mixture and draw lines to divide the mixture into 8 equal portions.",
+      "Oil (not in Ingredients) your palms and roll each portion into a ball, then flatten it to make a flat oval patty of about 1.5cm (⅝”) thickness.",
+      "Wrap the patty with a shiso leaf so that equal portions of the leaf cover both sides of the patty. The leaf will not cover the entire patty but this is intentional. (See the last photo in the post).",
+      "Repeat step 5 and 6 to make 8 patties.",
+      "Heat oil in a fry pan or skillet over medium low heat.",
+      "Place the patties in the pan with the upper half of the leaf face down. Cook for about 2-3 minutes until light golden brown. Then turn over the patties.",
+      "Turn down the heat to low, cover with a lid and cook for 2-3 minutes until the bottom of the patties is golden brown.",
+      "Turn the heat off and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiso Leaves",
+        "unit": null,
+        "notes": "note 1",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Silken Tofu",
+        "unit": "g",
+        "notes": "3.5 oz",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Mince",
+        "unit": "g",
+        "notes": "8.8 oz",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Leaves Finely Chopped",
+        "unit": null,
+        "notes": "optional, note 2",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso",
+        "unit": "tsp",
+        "notes": "note 3",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "note 4",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "Tbsp",
+        "notes": "corn starch",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d11277083f1c18b967a16c64bbfe00da37faaa783826fb00e35dfbb794dc294a",
+    "lineage_hash": "1be62f4a3ad65c7a5e2604eb0598c98684271165f44e0b4a9ab88caf5948eca6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/chicken-patties-wrapped-in-perilla/",
+    "fetchedAt": "2026-08-01T21:35:20.562Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/chicken-patties-wrapped-in-perilla/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

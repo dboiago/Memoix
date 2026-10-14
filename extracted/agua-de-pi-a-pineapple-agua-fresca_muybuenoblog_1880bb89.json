@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Agua de Piña (Pineapple Agua Fresca)",
+    "time": "8 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "65",
+      "carbohydrateContent": "17",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine sugar and water in a small saucepan. Heat over medium-heat just long enough for the sugar to melt. Remove from the heat and allow to cool down before using.",
+      "Place pineapple cubes into a blender and blend. Add 2 cups of water to get blender going. You will have to do this in two batches. Run through a sieve to remove pulp and discard. Put juice into a pitcher and add the remaining water.",
+      "Add 1 cup of simple syrup or as much as you like depending on the sweetness of your pineapple and to your liking.",
+      "Serve over ice.",
+      "Leftovers will keep in the fridge for up to three days.",
+      "If fresh pineapple isn’t available, or you don’t want to go to the trouble of peeling and cubing it, frozen pineapple is a wonderful alternative. Just be sure to allow the fruit to mostly defrost before blending, or you’ll end up with more of a pineapple smoothie than an agua fresca!",
+      "For more agua recipes, check out my agua de sandia (watermelon), horchata (rice water), jamaica (hibiscus tea), limón (lime), pepino (cucumber)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Simple Syrup",
+        "unit": null,
+        "notes": "1 cup of granulated sugar and 2 cups of water",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Pineapples",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5653f86e694517e0a2b7b269cb33c2d3fdc6648373b0955b3bb9e0894ba9daf",
+    "lineage_hash": "9e471bda2a58e7fc9d220d6c222def33b45079c15cee6f564ed94e2c981f4881"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/agua-de-pina-pineapple-cooler/",
+    "fetchedAt": "2026-08-02T05:39:08.102Z"
+  },
+  "rawSource": "https://muybuenoblog.com/agua-de-pina-pineapple-cooler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

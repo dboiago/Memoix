@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Cured Trout, Nasturtium Flowers And Golden Raspberries",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the raspberry vinegar, first sterilise a clip-top preserving bottle or jar",
+      "Place the raspberries in the bottle and cover them in the vinegar. Seal the jar and keep it in a cool, dark place for at least 1 week, but ideally 2-3 weeks",
+      "Once infused, strain it into a sterilised, airtight container or bottle, reserving some in a clean atomiser spray bottle",
+      "Start preparing the trout 2 days before you want to serve. First, make the cure. Grind 100g of the salt with the dried verbena berries until super fine. Fold through the rest of the salt and the sugar. This will make more than you need but you can keep any unused cure in the cupboard for a later date",
+      "Roll the fish in enough of the cure to coat it well, then shake off any excess. Wrap very tightly in cling film and chill in the fridge overnight",
+      "The next day, wipe off any excess cure or liquid from the trout. Sit the fish on a wire rack set over a baking sheet or tray. Chill in the fridge uncovered overnight to dry",
+      "The next day, you can cold-smoke the fish if you like. Sit the fish skin-side down on ice packs and smoke for up to 30 minutes. It will keep in the fridge for a week, well wrapped",
+      "To make a flavourful nasturtium flower paste, blend the nasturtium flowers with the grapeseed oil in a blender for a few minutes, until fully broken down. Season with the salt (this weight of salt is 1.5% of the weight of the blended flowers and oil). This will make more than you need – leftover paste can be kept in the fridge for 2 weeks under oil and used in salads, on boiled potatoes and served alongside cold, roasted meats",
+      "To serve, slice the trout into slices the width of your little finger and cut into bite-size pieces. Brush the slices with the flower paste, crack a little pepper over the top and then spritz with the raspberry vinegar. Top each slice with a raspberry and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Trout Fillet",
+        "unit": null,
+        "notes": "you could also use line-caught mackerel, bonito, salmon, sea bass or bream, ideally wild, skin-on and pin-boned, around 150-225g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raspberries",
+        "unit": null,
+        "notes": "currants, gooseberries or little slices of plum that are zingy and not too sweet, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": "or other light-coloured (non-aged) vinegar like cider",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verbena Berries",
+        "unit": "g",
+        "notes": "dried, or any type of peppercorn, coriander seed, star anise or fennel seed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Flower",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "204c3b67952af9264e3cde732236037e848d25294510098a0f2d9ede758fe3cd",
+    "lineage_hash": "7f286a13f4922fd7b7a48e87808ac1440c2f6261a95c32c6558ef0e70d7a03f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-trout-nasturtium-flowers-raspberries-recipe",
+    "fetchedAt": "2026-08-01T17:52:43.082Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-trout-nasturtium-flowers-raspberries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

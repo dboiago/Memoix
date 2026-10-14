@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Cafe Martini: A Tequila Espresso Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice. Shake and strain into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": "Saint Theo's uses Casa Del Sol",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Espresso",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b97ea045e3795bf5e3b14bc63d4ac196738d021dadf85edb9d437efc5a29d071",
+    "lineage_hash": "3e905a485e0033a5e9566291604c1739da83f0e02ca5144639330cefa3d606c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cafe-martini-a-tequila-espresso-martini/",
+    "fetchedAt": "2026-08-03T22:43:41.764Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cafe-martini-a-tequila-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

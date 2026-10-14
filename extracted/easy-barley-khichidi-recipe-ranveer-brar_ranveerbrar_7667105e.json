@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Barley Khichidi (जौ खिचड़ी)",
+    "time": "20-25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a pressure cooker and add the cumin seeds when the seeds crackle, add the asafetida, ginger garlic paste, turmeric powder and sautÃ© on a medium flame.",
+      "Add the green chilllies and sautÃ© on a medium flame for a few more seconds.",
+      "Add the barley, yellow moong dal, tur dal, salt and 4 cups of water, mix well and pressure cook for 2 whistles.",
+      "Allow the pressure cooker to cool down then open the lid.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Barley",
+        "unit": "C",
+        "notes": "washed, rinsed, soaked overnight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Moong Dal",
+        "unit": "C",
+        "notes": "split yellow gram, washed, rinsed, soaked",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tur Dal",
+        "unit": "C",
+        "notes": "pigeon peas split, washed, rinsed, soaked",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "jeera",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": "hing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "haldi",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16a052f5c5105d34e41e1be42292130a7289c0a07786a8b596dff09013888425",
+    "lineage_hash": "e81506d53100658d3ee39c0690104d7991f82147a22f47c374bfe7392d91573f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/barley-khichidi/",
+    "fetchedAt": "2026-08-02T12:22:48.777Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/barley-khichidi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

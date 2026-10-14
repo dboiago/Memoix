@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chocolate Babka",
+    "time": "1 hr 50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the babka dough, measure the flour, sugar and salt into the bowl of a stand mixer fitted with the hook attachment, then stir in the salt. Add the yeast and then add the warm milk and egg. Mix at low speed until the dough is half blended, then add the butter and cream cheese a few pieces at a time. Increase the speed by one level and mix until the dough looks smooth, about 5 minutes. Transfer the dough to an ungreased bowl and cover the top of the bowl. Let the dough sit on the counter until it doubles, about 90 minutes.",
+      "For the filling, stir the butter, sugar and cinnamon together and set aside.",
+      "Lightly grease a 9 × 5-inch (2 L) loaf pan and line it with a piece of parchment paper, letting the ends hang over the long sides of the pan.",
+      "On a lightly floured surface, roll out the dough to a rectangle about 12 × 18 inches (30 × 45 cm). Spread the sugar-cinnamon butter over the surface of the dough (it will be a thin layer, and don’t worry if there are a few gaps) and sprinkle the chocolate over the top. Starting from a short side, quite tightly roll up the dough into a cylinder.",
+      "Use a chef’s knife to cut the dough in half down the length of the cylinder. Separate the two lengths of dough and set them side by side with the cut sides turned away from each other. Twist the two pieces around each other (4), alternately crossing them over and under each other, to create a helix. The dough will stretch as you twist. Cut the helix in half and then twist the two helixes together",
+      "Drop this twisted dough into your pan (it may not look pretty or precise at this point) and cover the top of the \"loaf\" loosely with plastic wrap. Let the dough sit on the counter for about 45 minutes, until it no longer springs back when you press a finger into it.",
+      "Preheat the oven to 375°F (190°C). Uncover the loaf and bake it for 30 minutes, then reduce the temperature to 350°F (180°C) and bake for another 30 to 40 minutes, until the loaf is a deep brown on top and, if you gently peek between a few layers in the centre, you can see that the babka is no longer doughy.",
+      "Cool the babka in its pan on a cooling rack for 20 minutes, then carefully turn it out of the pan onto the rack to cool completely before slicing. The babka will keep, well wrapped, on the counter for up to 3 days (although it is best enjoyed within 24 hours of baking; it makes good toast or French toast after that)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "46°C, 1% or 2%, heated to about 115°F",
+        "amount": "¾",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "1",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature, cut in pieces",
+        "amount": "½",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature, cut in pieces",
+        "amount": "4",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92bd36cdcdb7cfb41bc4f8497312e496a3c75bbb6fd19fd5f1218c57793f7284",
+    "lineage_hash": "d6dca67c883bec1589c203a4233f2a58778c6d084004b38f43ebccc57260b20d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-babka/",
+    "fetchedAt": "2026-08-01T18:27:04.146Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-babka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

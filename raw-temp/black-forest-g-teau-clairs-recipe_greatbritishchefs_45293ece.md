@@ -1,0 +1,130 @@
+1.  ![Black forest gâteau éclairs](https://media-cdn2.greatbritishchefs.com/media/fkilhwqi/black-forest-eclairs.whqc_768x512q90.jpg)
+    
+
+Item 1 of 1
+
+-   12
+    
+-   1 hour 30 minutes
+    
+
+These éclairs are inspired by the classic 1970s dessert, black forest gâteau, and are filled with a kirsch-infused cream and topped with [dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-recipes "Chocolate") and sliced fresh [cherries](https://www.greatbritishchefs.com/collections/cherry-recipes "Cherry"). Why not have a go at making this delicate treat at home for a special occasion? It’s easier than you think with a little know-how. Make sure to read [our guide to making chocolate éclairs](https://www.greatbritishchefs.com/how-to-cook/how-to-make-chocolate-eclairs "How to make chocolate éclairs") before you begin.
+
+First published in 2023
+
+### Metric
+
+### Imperial
+
+-   Stand mixer
+-   Piping bag with star nozzle
+
+1
+
+Preheat the oven to 200ºC/180°C fan/gas mark 6 and line two large baking trays with greaseproof paper. Draw 12 roughly 10cm long lines on the paper to use as guidelines
+
+2
+
+For the choux pastry, combine the water, butter and salt in a saucepan. Gently melt the butter over a low heat without bringing the mixture to the boil (you want the butter to be just melted, and avoid evaporating too much of the water)
+
+-   360g of water
+-   150g of [unsalted butter](https://www.greatbritishchefs.com/collections/butter-recipes), diced
+-   [salt](https://www.greatbritishchefs.com/collections/salt-recipes), a big pinch
+
+3
+
+Once the butter has melted, bring the mixture up to the boil and tip all the flour into the pan in one go. Remove the pastry from the heat
+
+-   225g of plain flour
+
+4
+
+Use a wooden spoon to beat the mixture as fast as you can, bringing it all together into a dough that pulls away from the sides of the pan
+
+5
+
+Once the dough starts to pull away, return the choux pastry to the heat and continue cooking and stirring the dough (no need to beat it as frantically at this stage) until an instant read thermometer reads 74°C. A little above this temp is fine as well. If you don’t have a thermometer, continue cooking the dough until the base of the saucepan is covered in a fine film of pastry
+
+6
+
+Remove the dough from the pan and transfer it to the bowl of a stand mixer with a paddle attachment (or another bowl if using a wooden spoon) to cool a little. It helps to spread the dough out at this stage to cool it faster
+
+8
+
+Mix the dough on low speed, and gradually beat the eggs into the dough, ensuring each addition is fully incorporated before adding the next. It’s unlikely that you will need all of the egg. Keep adding egg until you have a mixture that reluctantly drops from the paddle, leaving a V shape. Another way to test if the dough is ready is by scooping some up onto a spoon then counting slowly to 6 - it should have dropped by the time you reach 6 (slow) seconds
+
+9
+
+Dab a few dots of the mixture in each corner of the baking trays to stick the greaseproof paper to the surface of the baking trays
+
+10
+
+Fit a piping bag with a star nozzle that’s around 1.25cm wide (with a lot of teeth, if possible). Fill the piping bag with the choux pastry
+
+11
+
+Place the filled piping bag onto a flat surface and carefully flatten the pastry mixture inside, taking care not to squeeze it out of the bag. Using a pastry scraper or other thin, flat object, gently push the choux pastry down into the bag to remove air bubbles and collect all the dough in one place. Twist the bag at the top and pipe a little of the mixture to remove any air bubbles near the tip
+
+12
+
+Carefully pipe the pastry over the guidelines on the baking paper at a 45 degree angle, if possible. Try to achieve a very slight ‘dog bone’ shape with the pastry, as this will ensure they are more evenly shaped once baked. It’s also important to try to pipe fairly slowly, otherwise the éclairs will be too skinny
+
+13
+
+Sprinkle a few drops of water around the éclairs (not touching the pastry) and transfer to the oven to bake for 25 minutes. After 25 minutes, swap the trays around for a further 5 minutes, or until the pastry is deep golden brown and crisp – they should sound hollow when tapped
+
+14
+
+Prick the underside of the éclair shells with a cocktail stick and transfer onto a wire rack to cool completely
+
+15
+
+To make the cherry cream, whisk the cream, kirsch and caster sugar together until soft peaks form, then refrigerate until needed (no more than 2 hours)
+
+-   350g of whipping cream
+-   1 tbsp of kirsch
+-   2 tbsp of caster sugar
+
+16
+
+Once ready to pipe, transfer the cherry cream to a piping bag and twist the end to seal. Holding the piping bag tightly, swing the piping bag around in a circular motion, to remove any air bubbles in the cream
+
+17
+
+Make two holes in both ends of the bottom of the choux pastry cases. Snip off the end of the bag and pipe the cream into the éclairs until they are full
+
+18
+
+To make the chocolate topping, melt the dark chocolate in a bain-marie and then allow to cool slightly
+
+-   100g of [dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes)
+
+19
+
+Dip the pastry cases into the melted chocolate and allow to set for a few minutes before topping with the cherry slices
+
+-   12 [cherries](https://www.greatbritishchefs.com/collections/cherry-recipes), pitted and thinly sliced
+
+[](https://www.greatbritishchefs.com/contributors/the-kitchen-with-great-british-chefs)
+
+GBC Kitchen is where you'll find accessible, inspiring recipes with a twist, from our in-house team of recipe developers. Perfect for mid-week meals or special occasions alike, GBC Kitchen recipes will help you become a more confident cook, and impress those around you in the meantime!
+
+## Subscribe to the
+
+## Great British Chefs Newsletter
+
+Join an ever-growing community of food lovers now by subscribing to our newsletter and get all the latest recipes, features and much more to your inbox
+
+Terms and conditions
+
+## Get in touch
+
+Please sign in or [register](https://www.greatbritishchefs.com/unlocked?source-component=GetInTouch) to send a comment to Great British Chefs.
+
+## You may also like
+
+![Member only lock](https://www.greatbritishchefs.com/static-content/shared-images/padlock-locked.svg)
+
+[](https://www.greatbritishchefs.com/chefs/elliot-hashtroudi)
+
+Load more

@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Coffee Ice Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the egg yolks and sugar to a bowl and whisk until pale and smooth. Meanwhile, bring the cream, milk and coffee to the boil then remove from the heat",
+      "Gradually whisk the hot milk and cream mix into the eggs and sugar until well combined, then tip into a pan and heat to 80°C or until the mixture coats the back of a spoon",
+      "Pass the mixture through a fine sieve into a bowl and set aside to chill. Once cold, churn in an ice cream maker and store in the freezer until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shots of Ground Coffee",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "850",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0b5f587e462605f0d44af71c25caf37035d8f051eb49b88c865bfff86a828d6",
+    "lineage_hash": "9274a57f729ef61f80977c6002a37db3d529f2c80a7f6363b41271836d9f87c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T22:30:50.138Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

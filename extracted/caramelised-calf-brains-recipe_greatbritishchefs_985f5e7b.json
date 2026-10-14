@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Caramelised Calf Brains",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the brains in cold water for 24 hours before use",
+      "When ready to cook, start by making the pommes purée. Add the potatoes to a large pan, cover with cold water and season generously with sea salt. Place over a high heat, bring to the boil, then allow to gently simmer until the potatoes are tender",
+      "Tip into a colander and drain well before returning to the empty pan. Place over a low heat for 30 seconds or so to evaporate any excess liquid",
+      "Transfer the potatoes to a fine sieve (or potato ricer) and push them through into a clean pan. Whisk in the butter, followed by the cream and milk - if the purée splits at any point, simply pour in an extra 100ml of milk and whisk until it reforms. Transfer to a pan and cover with a cartouche until ready to re-heat",
+      "To prepare the brains, drain well and use a small knife to cut away any tubes remaining near the base of the brains. Add the court bouillon to a pan, bring to the simmer, then lower in the brains. Bring back to a simmer and poach for 10 minutes",
+      "Meanwhile, remove the skins and pith from the lemons and cut in half. Remove the pips, segment each half then chop the segments into small pieces. Set aside in the fridge and retain any excess juice for later use",
+      "Remove the pan containing the brains from the heat and allow them to cool in the bouillon. Drain the brains from the liquid and gently remove the membranes that cover each lobe",
+      "Dry using kitchen paper and carefully dust all over with the seasoned flour. Place a heavy-based pan over a high heat, add the oil and heat until smoking-hot. Add the lobes to the pan, rounded-side down. At the same time, place the pommes purée in a medium flame to re-heat",
+      "Fry for 2-3 minutes until nicely golden-brown, then take the pan off the heat and drain away the oil. Place the pan back over the heat and add the butter - after 1-2 minutes it will turn a nut-brown colour",
+      "When the butter reaches this stage, turn the lobes over and use a spoon to continuously baste the butter over the brains for 5 minutes. Transfer the brains to serving bowls and add a few drops of the reserved lemon juice to the pan - at this point the butter will foam up",
+      "Pass the butter through a fine strainer into a small pan. Stir in the drained capers, chopped lemon segments and parsley, then taste the sauce to see if it needs seasoning. Once the correct flavour has been achieved, spoon over the brains and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calf Brains",
+        "unit": null,
+        "notes": "2 lobes separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Court Bouillon",
+        "unit": "L",
+        "notes": "or light vegetable stock",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "seasoned with salt and pepper",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Capers",
+        "unit": "g",
+        "notes": "drained",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Désirée Potatoes",
+        "unit": "g",
+        "notes": "or similar floury potatoes, peeled and cut into large pieces",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fcfcf71646474c900b7aa169c0b44b53f5c287147480f652cac9d622d986f341",
+    "lineage_hash": "08fbd2268d16e508979ae9070af425378337b5ed279d38daa3360002257bafed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/veal-brains-recipe",
+    "fetchedAt": "2026-08-03T16:00:59.182Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/veal-brains-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

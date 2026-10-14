@@ -1,0 +1,67 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-pickled-cabbage/",
+  "slug": "chinese-pickled-cabbage-a-quick-pickle-recipe_omnivorescookbook_5b4f9592",
+  "title": "Chinese Pickled Cabbage (A Quick Pickle Recipe)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:07:19.560Z",
+  "ldName": "Chinese Pickled Cabbage (A Quick Pickle Recipe)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "cold dish, restaurant-style",
+  "ldIngredientsRaw": [
+    "1 1/2 cups rice vinegar",
+    "1/2 cup water",
+    "3/4 cup sugar",
+    "1 teaspoon salt",
+    "3 cloves garlic (, smashed)",
+    "4  red chili peppers (more if desired (Optional))",
+    "1 teaspoon Sichuan peppercorns ((Optional))",
+    "1 lbs (450 g) cabbage ((about half of a small head of cabbage))",
+    "1  large carrot (, peeled)",
+    "2 tablespoons salt"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the rice vinegar, water, sugar, salt, and chili peppers in a small saucepan. Heat over medium heat until it reaches a simmer. Cook, stirring occasionally, for 5 minutes, until the sugar is dissolved. Use a clean spoon to taste the pickling liquid to see if it has the desired spice level. You can simmer it for a bit longer if you want the liquid to taste spicier. Once done, set aside and allow to cool.",
+    "Meanwhile, prepare the veggies. Cut out the cabbage core and discard it. Tear the leaves into bite-size pieces. Cut the carrot into 1/4” (1/2 cm) thick half-moon shaped slices.",
+    "Combine the cabbage, carrots, and 2 tablespoons of salt in a big bowl. Toss it with your hands so the veggies are coated with salt. Let sit at room temperature for 30 minutes, up to 1 hour (no more than an hour).",
+    "Drain and discard the salted water released by the veggies. Rinse the veggies with tap water twice. Drain thoroughly, and squeeze out the excess water from the veggies. Transfer them into a large container (or a jar).",
+    "Add the crushed garlic and Sichuan peppercorns (if using) into the same container.",
+    "Add the cooled pickling liquid. Press the veggies so they are submerged in the liquid. It is fine if a small fraction of the veggies are poking out from the liquid (because the veggies will shrink over time and become submerged). Seal the container and allow to pickle for 3 days in the fridge.",
+    "The pickles will start to taste good after 1 day, but the sourness will come through at day 3. Make sure to use clean chopsticks (or flatware) to pick out the pickles every time you serve them. They will stay good in the fridge for 2 to 3 weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "32 kcal",
+    "carbohydrateContent": "7.6 g",
+    "proteinContent": "0.9 g",
+    "fatContent": "0.1 g",
+    "sodiumContent": "91 mg",
+    "fiberContent": "1.7 g",
+    "sugarContent": "5.3 g"
+  },
+  "htmlIngredientLines": [
+    "[Pickling mix]",
+    "1 1/2 cups rice vinegar",
+    "1/2 cup water",
+    "3/4 cup sugar",
+    "1 teaspoon salt",
+    "3 cloves garlic , smashed",
+    "4 red chili peppers more if desired (Optional)",
+    "1 teaspoon Sichuan peppercorns (Optional)",
+    "[Prep]",
+    "1 lbs (450 g) cabbage (about half of a small head of cabbage)",
+    "1 large carrot , peeled",
+    "2 tablespoons salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

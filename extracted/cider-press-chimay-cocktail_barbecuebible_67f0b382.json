@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cider Press (Chimayó Cocktail)",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Apple Wedge"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Core the apple and cut it into 8 wedges. Put the apple wedges in a small nonreactive bowl and toss with 1 tablespoon of the lime juice.",
+      "Just before serving, combine the cider, tequila, crème de cassis, and the remaining 5 tablespoons of lime juice in a pitcher with the 2 cups of ice. Stir well until all the ingredients are mixed. Pour the Chimayó Cocktail into ice-filled highball glasses. Press an apple wedge onto the rim of each glass for garnish and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "unit": "large",
+        "notes": "rinsed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila",
+        "unit": "C",
+        "notes": "6 ounces",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "Tbsp",
+        "notes": "3 ounces",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": "C",
+        "notes": "plus more for serving",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b546fe9c6dda8da7cfe1a335884bc404df28906ce59254f14f58d1a6d0084ce",
+    "lineage_hash": "537665220b8db2d4759cd7a5fcee07f6f6eaad7e254a6da141a9415576c56d66"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cider-press-chimayo-cocktail/",
+    "fetchedAt": "2026-08-03T04:11:29.222Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cider-press-chimayo-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

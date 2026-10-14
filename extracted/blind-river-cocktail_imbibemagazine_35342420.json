@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Blind River Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together in a mixing glass with ice to chill. Strain into a rocks glass over one large cube and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Genever",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98969251afffbf78351984f686391218e61ea890b2dc2d18b56ad86e9ec12f50",
+    "lineage_hash": "ba16db7372c8df938320b294502d506be613480eea80a2adc3faafb8b827a2e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blind-river-cocktail/",
+    "fetchedAt": "2026-08-04T02:06:17.032Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blind-river-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

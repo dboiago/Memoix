@@ -1,0 +1,257 @@
+{
+  "recipe": {
+    "name": "Egg Pollichathu (Kerala style Egg wrap)",
+    "time": "35-40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, once it's hot, add small mustard seeds, cumin seeds, curry leaves and let it splutter well.",
+      "Add onion and saute it for 2-4 minutes on medium flame until translucent. Add ginger garlic paste and saute it well for a while.",
+      "Add turmeric powder, degi red chilli powder, tomatoes, green chillies and saute it on medium flame.",
+      "Add water, salt to taste and let it cook for 4-5 minutes.",
+      "Finish it with coriander leaves and keep it aside for further use..",
+      "In a bowl, add eggs, salt to taste, oil and whisk it well.",
+      "In a pan, add oil, once it's hot, pour the mixture and make a thin omelet.",
+      "Transfer it to a plate and keep it aside for further use.",
+      "Place the prepared omelette, add prepared masala, grated cheese and boiled egg.",
+      "Add prepared masala and seal it from all the sides.",
+      "Run the banana leaf on fire for 2-3 seconds to make it soft and moldable.",
+      "Take a big piece of wilted banana leaf, add a tablespoon of the prepared masala in the center.",
+      "Place the omelette on it, place the sliced tomatoes, green chillies, add a pinch of degi red chilli powder and salt to taste.",
+      "Fold the banana leaf to make a small pocket.",
+      "In a pan, add oil, once it's hot, place the prepared pocket and cook it for 5 minutes on a low flame from both the sides."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Small Mustard Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Curry Leaves",
+        "unit": null,
+        "notes": "optional",
+        "amount": "2",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "3",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "4-5",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Onion Tomato Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "No. Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Boiled Egg",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & diagonally sliced",
+        "amount": "2-3",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb559faf930973f0990042afcab93eb89afb994cf8708ff1dbae37d50cd1acc7",
+    "lineage_hash": "4b47a18fbee6fa6334aed2fa4276d735ed937e6c105f3f6ff080712066ff46b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-pollichathu/",
+    "fetchedAt": "2026-08-02T19:30:20.541Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-pollichathu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

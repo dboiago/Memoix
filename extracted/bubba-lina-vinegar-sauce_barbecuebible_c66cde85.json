@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Bubba-Lina Vinegar Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a nonreactive saucepan and bring to a boil over medium heat. Simmer for 3 minutes. Let cool and correct the seasoning, adding salt, cayenne, or corn syrup; the sauce should be very piquant. (The corn syrup should take the edge off the vinegar, not really make the sauce sweet.)",
+      "Use right away or transfer to jars, cover, cool to room temperature, and refrigerate. The sauce will keep for several months. Shake well before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Corn Syrup",
+        "unit": "C",
+        "notes": "or more to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea)",
+        "unit": "tsp",
+        "notes": "or more to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "or hot pepper flakes, or more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a56d2697fdfb4eb0a968722fc73ed386ef630f70f05e7f2c2b506d92185ce52",
+    "lineage_hash": "7f1499d62ef48ca252d97719de21c6927bef5379ed4054094399c511167ae84d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bubba-lina-vinegar-sauce/",
+    "fetchedAt": "2026-08-03T02:49:25.439Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bubba-lina-vinegar-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

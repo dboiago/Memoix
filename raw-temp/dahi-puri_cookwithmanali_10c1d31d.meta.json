@@ -1,0 +1,67 @@
+{
+  "url": "https://www.cookwithmanali.com/dahi-puri/",
+  "slug": "dahi-puri_cookwithmanali_10c1d31d",
+  "title": "Dahi Puri",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T07:18:00.145Z",
+  "ldName": "Easy Dahi Puri Recipe",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Appetizer, Snack",
+  "ldKeywords": "dahi puri, dahi puri recipe",
+  "ldIngredientsRaw": [
+    "1 &amp; 1/2 cups plain yogurt (mixed with 4 tablespoon water and 2 teaspoons sugar (I used whole milk full fat yogurt))",
+    "1/2 cup boiled &amp; cubed potato (cut into small cubes)",
+    "1/3 cup onion (chopped)",
+    "1/4 cup cilantro chutney (or more as needed)",
+    "1/4 cup tamarind chutney (or more as needed)",
+    "15-20  golgappe/panipuri (store bought or homemade)",
+    "cumin powder, black salt (to sprinkle, as needed)",
+    "chaat masala, red chili powder (to sprinkle, as needed)",
+    "1 tablespoon nylon sev (thin sev)",
+    "1 tablespoon chopped cilantro"
+  ],
+  "ldInstructionsRaw": [
+    "Arrange the golgappas on a serving plate. Carefully break each golgappa in the center using your fingers. This is to make space for all the filling.",
+    "Add the boiled potato cubes to each of the golgappa. Make sure to chop the potato into small pieces. Then add the chopped onion.",
+    "Sprinkle cumin powder, black salt, chaat masala, and red chili powder over the top of each golgappa.",
+    "Then fill each golgappa with cilantro chutney, followed by tamarind chutney. You can add around 1/2 to 1 teaspoon of each, this depends on the size of golgappas you are using.",
+    "Then fill each golgappa with the prepared yogurt. Add lot of yogurt, since this is dahi puri, yogurt has to be the star ingredient.",
+    "Sprinkle cumin powder, black salt (kala namak), chaat masala, and red chili powder again on top of the yogurt.",
+    "Top with nylon sev and then with chopped cilantro. Serve dahi puri immediately else it will get soggy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "161 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "4 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "12 mg",
+    "sodiumContent": "271 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 & 1/2 cups plain yogurt, mixed with 4 tablespoon water and 2 teaspoons sugar (I used whole milk full fat yogurt)",
+    "▢ 1/2 cup boiled & cubed potato, cut into small cubes",
+    "▢ 1/3 cup onion, chopped",
+    "▢ 1/4 cup cilantro chutney, or more as needed",
+    "▢ 1/4 cup tamarind chutney, or more as needed",
+    "▢ 15-20 golgappe/panipuri, store bought or homemade",
+    "▢ cumin powder, black salt, to sprinkle, as needed",
+    "▢ chaat masala, red chili powder, to sprinkle, as needed",
+    "▢ 1 tablespoon nylon sev, thin sev",
+    "▢ 1 tablespoon chopped cilantro"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

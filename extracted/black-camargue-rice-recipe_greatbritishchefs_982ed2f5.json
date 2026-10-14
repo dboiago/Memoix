@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Black Camargue Rice",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt a knob of butter and some olive oil in a heavy-based, ovenproof pan (with a tight fitting lid)",
+      "Sauté the onion in a dash of oil. Once translucent, add the rice, garlic, thyme, bay, and chilli and season with salt. Stir for a few minutes until everything is well-coated in the oil",
+      "Add the wine and cook until the liquid has reduced by half. Add 800ml of water, bring to the boil and cover the pan with the lid. Bake in the oven for 40 minutes, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Camargue Black Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4328511a535c1e0d504c5cd62e2c637348d32da3f14d6a3b8e1d0160bf632a68",
+    "lineage_hash": "94294bb7891d62694fa321f26e1a078f635b7a8cc75e26842c336def2df9fb34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/camargue-black-rice-recipe",
+    "fetchedAt": "2026-08-03T11:28:12.373Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/camargue-black-rice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

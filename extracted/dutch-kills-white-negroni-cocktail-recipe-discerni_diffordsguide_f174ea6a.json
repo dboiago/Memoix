@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Dutch Kills White Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Rocks",
+    "garnish": [
+      "Dusting of Freshly Grated Nutmeg"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "A dusting of freshly grated nutmeg completes this satisfying old-school cocktail"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hayman's London Dry Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suze Gentian Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Martini Bianco Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd346b018e51b100ff48e9322ad86007be4075c1e0919afe1d1e5efab136b4ee",
+    "lineage_hash": "a55659d810597d3913b0d117fca38c6a44e9a3c25ed277a4e2871ae20961441c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/20674/dutch-kills-white-negroni",
+    "fetchedAt": "2026-08-04T05:58:25.741Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/20674/dutch-kills-white-negroni",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

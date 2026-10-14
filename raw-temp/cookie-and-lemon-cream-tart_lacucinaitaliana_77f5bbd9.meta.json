@@ -1,0 +1,41 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/main-course/cookie-and-lemon-cream-tart",
+  "slug": "cookie-and-lemon-cream-tart_lacucinaitaliana_77f5bbd9",
+  "title": "Cookie and Lemon Cream Tart",
+  "byline": "by  Editorial staff   October 20, 2021",
+  "fetchedAt": "2026-08-03T05:57:23.540Z",
+  "ldName": "Cookie and Lemon Cream Tart",
+  "ldTime": "PT105M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "main course",
+  "ldKeywords": "Biscotti,Limone,Limoni,Torte",
+  "ldIngredientsRaw": [
+    "2/3CUP sugar",
+    "2 1/2OZ. dry cookies",
+    "1/8CUP all-purpose flour",
+    "3 lemons",
+    "3 large eggs",
+    "powdered sugar"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Preheat the oven to 350° F.&nbsp;</p>",
+    "<p>Cut the lemons in half. Slice a few thin rounds to use as a final garnish, then juice them. Mix the eggs with the sugar and flour; add 1/2 cup lemon juice, a little at a time. Thicken the mixture on the stove, stirring constantly for 10-12 minutes. If you prefer a less bitter tart, reduce the lemon juice by 1 or 2 Tbsp.</p>",
+    "<p>Coat a rectangular pan (10\"x4\", 1 1/2\" height) with parchment paper. Layer the pan with 3/4 of the cookies, then crumble the remaining ones and use them to fill in the spaces between one cookie and another.</p>",
+    "<p>Pour the lemon cream over the cookies and bake for around 15 minutes. Remove the tart from the pan using the parchment paper as an aid, and let cool in the fridge for one hour. Garnish with the lemon slices and dust with powdered sugar before serving.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2/3 CUP of sugar",
+    "2 1/2 OZ. of dry cookies",
+    "1/8 CUP of all-purpose flour",
+    "3  of lemons",
+    "3  of large eggs",
+    "powdered sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

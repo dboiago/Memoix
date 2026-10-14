@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Cheese Soufflés With Apple & Walnut Salad",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the milk into a saucepan and warm gently over a low heat to take the chill off it. Sift the flour into the milk and mix well",
+      "Cook on a moderate heat until you can no longer taste the flour in the mixture and there are no lumps. Remove from the heat and beat in the butter",
+      "Beat the egg yolks into the mixture, then add the cheddar and chopped chives. Season with salt and pepper",
+      "Grease the 4 moulds/ramekins with softened butter and coat the insides with the grated Parmesan",
+      "Whisk the egg whites in a bowl until you have firm peaks. Carefully fold the egg whites into the cheese sauce, taking care not to deflate them by overworking or being too heavy handed",
+      "Spoon the mixture into the moulds and cook in a steamer for 12 minutes. When cooked, remove from the steamer and leave to stand for 10 minutes or until they are cool enough to handle",
+      "Remove the soufflés from the moulds. At this stage, you can either put them in the fridge until needed or cook straight away.",
+      "To cook, preheat the oven to 200˚C/Gas mark 6. Put the soufflés on a baking tray lined with greaseproof paper and bake for 6–8 minutes",
+      "To serve, arrange the apple on 4 small plates with the walnuts, rocket and pomegranate seeds scattered over. Remove the soufflés from the oven and place straight onto the salad. Drizzle with walnut oil and serve straight away"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parmesan",
+        "unit": "Tbsp",
+        "notes": "or vegetarian hard cheese, grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Apples",
+        "unit": null,
+        "notes": "cored and cut into eight",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Walnuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21850c9a4ecefdeab10d22f966d2ebf709a4d4331d877e3d83f8a89df3589248",
+    "lineage_hash": "edc50745c41db8da5c5c65f345d0fb4052c924b5de00cefe0d5933a7a0e99d14"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-souffles-recipe-apple-walnut-salad",
+    "fetchedAt": "2026-08-03T15:39:57.251Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-souffles-recipe-apple-walnut-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

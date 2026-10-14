@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Coquito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Sherry Wine",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to immersion blender and blend until smooth and well-combined. Add to airtight bottle and store in refrigerator. When ready to serve, pour 2 oz. of Coquito into a sherry wine glass or coupe glass. Garnish.\nSpiced SyrupPlace 2 cups of water, 3 cinnamon sticks, 2 star anise, 1 1/2 tsp. of whole allspice, 1 tsp. of whole spiced cloves in a saucepan. Bring to a boil and cook for 2 minutes. Remove from heat, let sit for 1 hour (minimum), then strain. In a new sauce pot, combine the spiced tea with 2 cups of granulated sugar over low heat. Once dissolved and fully combined, let sit off heat until cool before use. Yields: 2 cups"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Puerto Rican Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Rum",
+        "unit": "C",
+        "notes": "Bolo uses Planteray",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "can",
+        "notes": "12 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "can",
+        "notes": "14 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "cans",
+        "notes": "13.5 oz. each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coco Lopez Coconut Cream",
+        "unit": "can",
+        "notes": "15 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "12b57bb97db10447c45cb3f105df478b8493df24b62000ae346217ead2a4d097",
+    "lineage_hash": "2827750e5986052aa4b325c12c60a73aacab619e604aff3f47a60438924630dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coquito-recipfrom-bolo/",
+    "fetchedAt": "2026-08-04T01:31:53.237Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coquito-recipfrom-bolo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

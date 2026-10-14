@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Chocolate Ice Cream Dessert",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the cremeux, bring the milk and cream to the boil in a medium pan.\r\nMeanwhile, in a bowl mix together the egg yolks and sugar",
+      "Pour half of the hot milk mix over the yolks and sugar, mix well and return everything to the pan. Cook to 82°C, stirring all the time with a spatula",
+      "Break up the dark chocolate into pieces and place in another bowl. Pour the milk and egg mix over the chocolate and mix until fully melted and incorporated.  Set aside in the fridge for 3 hours to chill",
+      "To make the ice cream, place everything in a pan except the stabiliser and bring to 85°C. Whisk in the stabiliser and bring to the boil. Simmer for 10 minutes then chill. Churn in an ice cream machine and reserve in the freezer until needed",
+      "To make the chocolate sauce place all the ingredients in a pan and bring to the boil. Simmer for 30 minutes and reserve",
+      "For the decorative chocolate disc, temper the chocolate and spread onto acetate sheets. Just before the chocolate has dried, make indents with an 8cm pastry cutter. Leave to set then peel off the discs",
+      "To plate, whisk the cremeux to soften and spoon a layer into the bottom of serving glasses or bowls. Spoon a layer of whipped cream on top and crumble over a couple of the Oreo cookies (reserving 3 for garnish)",
+      "Pour over the chocolate sauce and place a tempered chocolate circle over the top. Finish with a scoop of ice cream and a piece of the remaining cookies (cut in quarters)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "285",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": "whipped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Biscuits",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a4958ba28502573dd3132206f08c47cc610c916110dfcb4fcce44ba8de6704b8",
+    "lineage_hash": "1f6c5b88d1d0b58b8789883e340bc7146ea7cd102303b2b0ded480c8aae1956c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/le-tendance-recipe",
+    "fetchedAt": "2026-08-03T15:49:41.697Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/le-tendance-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Christmas Ham",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Christmas Ham, take the leg of ham out of its packgaging. Make sure you get a ham with a good layer of fat on the surface. Choose a fully-cooked leg of ham.",
+      "Peel the skin off by gently pushing your fingers under the skin, trying to leave the fat unbroken.",
+      "Repeat the operation over the whole surface...",
+      "... as shown in the photo. The skin will come off easily. Make sure the fat remains intact.",
+      "This is what the result should look like at this stage.",
+      "Using a sharp knife, score the fat into a grid pattern. Make sure you don't touch the ham in this operation.",
+      "Start with parallel lines...",
+      "... with a space of 2cm.",
+      "Repeat over the whole surface of the ham.",
+      "Rotate the ham and start cutting parallel lines...",
+      "... to create a grid pattern.",
+      "The result should be as shown in the photo. The scored lines are not visible at this stage but they will become obvious while cooking.",
+      "Place the ham in a roasting tray.",
+      "We're going to cook the ham with Guinness first.",
+      "Pour the stout over the ham. You might need 2 cans to have enough moisture to cook the ham for 2 hours.",
+      "Reserve 4 to 5 tablespoons for the glaze.",
+      "Place the ham in a fan-assisted oven preheated to 140°C and cook for 2 hours, basting with the beer regularly.",
+      "For the glaze:  If you don't have ground cardamom in your pantry, place black cardamom pods in a food processor...",
+      "... and mix until you get a fine powder.",
+      "Pass the ground cardamom through a fine sieve to remove any chunks.",
+      "Collect the ground cardamom on a sheet of greaseproof paper. Black cardamom has a smokier flavour than green cardamom.",
+      "In a separate bowl...",
+      "... place the ground ginger.",
+      "Get 2 teaspoons of ground black cardamom...",
+      "... and add to the bowl.",
+      "Get the mustard powder...",
+      "... and add 2 teaspoons to the bowl.",
+      "Get the ground cinnamon...",
+      "... and add 1 teaspoon to the bowl.",
+      "Combine the dry ingredients carefully with a teaspoon.",
+      "Add the spice mix to the sugar...",
+      "... and combine with a whisk until homogeneous.",
+      "Add the stout slowly while whisking...",
+      "... until you get a thick paste consistency that will coat the surface of the ham without dripping.",
+      "The glaze is ready. Set aside.",
+      "Baste the ham regularly with the beer at the bottom of the tray. As shown in the photo, the scored fat is retracting and opening during cooking.",
+      "Baste the ham again. Repeat as often as needed if you find the moisture is evaporating quickly.",
+      "Continue cooking, while basting regularly.",
+      "When cooked, take the ham out of the oven and spread the glaze paste over the surface of the ham. Apply the paste with a brush, making sure it gets into the grooves cut in the fat. Increase the oven temperature to 200°C (gas 6) and return the ham to the oven.",
+      "Cook for 25 to 30 minutes, until the surface caramelizes. For a bigger ham, this operation can take up to 45 minutes.",
+      "When cooked, the ham fat is caramelized and crispy.",
+      "Take the ham out of the oven.",
+      "The Christmas ham is ready. Take the ham out of the roasting tray and serve the ham on a chopping board, ready to slice with a ham knife. The juice at the bottom of the tray can be skimmed and served on the side. Bon appétit!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Leg of Ham",
+        "unit": "kg",
+        "notes": "with fat and skin",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cans of Guinness Draught Stout 50cl",
+        "unit": "large",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guinness Draught Stout",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f953e568e18300bc19e123a26d6f049960f67e2d73e1c2ba349cda60e62cd489",
+    "lineage_hash": "48340c5580d9c5e25fed9a8020c07a38a3fed4958032975740835d866fe6a967"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-ham.html",
+    "fetchedAt": "2026-08-02T11:05:23.702Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-ham.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

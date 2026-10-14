@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Curry Goat",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly wash your meat with Lemon, Vinegar and water.",
+      "Then season with salt, pepper, 4tbsp. curry powder, pimento and paprika mix then marinate overnight or at least 2hrs.",
+      "Use a large Dutch pot and add 4 tbsp. of vegetable oil and turn on high heat, then add garlic, onions and spring onions then sauté until soft.",
+      "Add 2 tbsp. of curry powder and burn curry for a few minutes then add ginger.",
+      "Then add a little coconut milk or water and mix until you make a thick curry paste.",
+      "Add goat meat to your pot and cook until brown.",
+      "Then add 2 cups of water and and some more curry powder, Fresh Thyme, Scotch bonnet and cook for 1.5 hours stirring every 15 minutes until goat meat is tender and falling off the bone",
+      "Then add potatoes and carrots and cook for further 15 minutes until soft."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Goat Mutton",
+        "unit": "lb",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "Sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Potatoes",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "Diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "Crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": "Fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1de1f2f850533ebd82642efecd7cc2d92e5603737c40cafd60177a85a420312e",
+    "lineage_hash": "15f0ee2fa90d7cbd38b3201914e93d41f5a2e1c56e826780c3031497370b2d59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/uncategorized/curry-goat/",
+    "fetchedAt": "2026-09-30T17:02:40.019Z"
+  },
+  "rawSource": "https://originalflava.com/uncategorized/curry-goat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

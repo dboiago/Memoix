@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Chocoflan",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC.) Spray a bundt cake pan with a 10 cup/2,5l capacity with nonstick spray or lightly butter it, making sure if using butter you get in all the creases. (You can also use a 9-inch/23cm cake pan with 2 1/2-inch/6cm sides, but not a springform pan, which can leak.)",
+      "Dribble the dulce de leche in and around the bottom and up the sides of the cake pan. Place the mold or cake pan in a larger roasting pan, which you’ll use as a double boiler for baking. Some dulce de leches are very thick and some aren't.  As it sits it may sink to the bottom, which is fine. Don't worry about it.",
+      "To make the cake layer, sift together the flour, cocoa powder, baking soda, baking powder, and salt in a large bowl. Mix in the sugar.",
+      "In a small bowl, whisk together the buttermilk, vegetable oil, 2 eggs, and vanilla.",
+      "Use a spatula to stir the wet ingredients into the dry ingredients, mixing just until combined. Give the pan with the dulce de leche in it a swirl if it's very liquid, then scrape the batter in the mold over the dulce de leche. (Okay if the dulce de leche has sunk back down to the bottom. It'll end up fine.)",
+      "Make the flan layer by blending together, with an immersion or standard blender, the evaporated and condensed milk, cream cheese, 4 eggs, vanilla, and salt, until smooth.",
+      "Pour the flan mixture over the back of a large spoon or spatula over the cake layer, using the spoon to diffuse the custard as you pour so it doesn't disrupt the cake batter too much*.",
+      "Spray a sheet of foil with nonstick spray. Cover the mold or cake pan loosely with the foil, fill the roasting pan with very hot water so it reaches halfway up the side of the mold, and bake until the center of the cake layer feels done, about 1 hour and 15 minutes, or until a toothpick inserted into the center comes out relatively clean.",
+      "Remove the cake from the water bath and set it on a wire rack to cool for about an hour. As it's cooling, run a utensil (use a silicone one if so you don't ruin the finish of your cake pan, depending on what it's made of) around the rim of the cake to loosen it from the pan. Refrigerate the Chocoflan until well-chilled, which will take several hours or overnight.",
+      "To remove the cake from the pan, place a large dinner or serving plate over the top of the cake, with the \"public\" side of the plate (as Julia Child once said) facing down over the cake pan. Grasping both the cake pan and plate, flip them both over. You may need to jiggle and shake the flan a little under you feel it slide out of the mold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dulce De Leche",
+        "unit": "C",
+        "notes": "160g",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "½",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "180ml",
+        "amount": "¾",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral-tasting Vegetable Oil",
+        "unit": "C",
+        "notes": "60ml",
+        "amount": "¼",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "cake layer",
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "can",
+        "notes": "12 ounces, 340g",
+        "amount": "1",
+        "section": "flan layer",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "can",
+        "notes": "14 ounces, 395g",
+        "amount": "1",
+        "section": "flan layer",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "115g",
+        "amount": "4",
+        "section": "flan layer",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "flan layer",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "tsp",
+        "notes": "alt: extract",
+        "amount": "2",
+        "section": "flan layer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "flan layer",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7cc77c68d159e4c4bb07bfea537be7be855b2f04da415a5d6cfe70a06373a8b0",
+    "lineage_hash": "4571e705571e4b39263cec45a96ddda118f2cb73a1871401ef21f90568629592"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-dulce-de-leche-cajeta-chocoflanflan/",
+    "fetchedAt": "2026-08-02T21:58:07.301Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-dulce-de-leche-cajeta-chocoflanflan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

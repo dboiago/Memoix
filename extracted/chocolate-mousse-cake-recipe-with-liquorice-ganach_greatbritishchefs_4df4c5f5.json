@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse Cake with Liquorice Ganache",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare your cake tin by greasing it with butter, dusting with flour and lining with baking parchment. As the tin will be submerged in a roasting tray filled with water (known as a bain-marie), it is important that you are confident that it will not leak during cooking. You can test this by placing it in a tray filled with water with a weight at the bottom of the tin. If the tin leaks, or you’d rather be safe than sorry, encase the outside of the tin in kitchen foil before using",
+      "To make the mousse cake, combine the chocolate and butter in a heatproof glass bowl and set over a pan of simmering water, ensuring that the base of the bowl does not touch the water. Stir the mixture occasionally until everything has melted together and is smooth, then remove from the heat and allow to cool slightly",
+      "Whisk together the eggs and sugar using a stand mixer with a whisk attachment or an electric hand whisk on a medium speed for approximately 10 minutes, or until pale and pillowy",
+      "When the chocolate mixture is at room temperature, fold one-third into the egg mixture, followed by the other two-thirds. Preheat the oven to 180°C/gas mark 4",
+      "Sift in the cocoa powder with a pinch of salt and pour in the espresso, folding carefully to combine, and transfer to the prepared cake tin. Place in a bain-marie on the middle shelf of the oven and bake for 35 minutes. Once the cake is ready, immediately remove from the bain-marie and leave to cool on a wire rack. Once cool, remove the cake from the tin and set aside until ready to slice",
+      "To make the liquorice ganache, combine the milk, cream, glucose, liquorice, cocoa and salt in a pan. Place over a medium-high heat, bring to the boil, then immediately remove from the heat",
+      "Place the chocolate in a heatproof glass bowl and set over a pan of simmering water, ensuring that the base of the bowl does not touch the water. Stir occasionally until the chocolate has melted then remove from the heat and allow to cool slightly. Meanwhile, submerge the gelatine in a bowl of cold water",
+      "Squeeze out any excess liquid from the gelatine and to the milk mixture, stirring until dissolved. Slowly and carefully whisk the milk into the melted chocolate until emulsified, then transfer to a bowl and place in the fridge to chill",
+      "When ready to serve, whisk the cream to soft peaks and fold in the icing sugar. Slice the cake into neat portions",
+      "To plate, place a spoonful of the ganache in the centre of each plate and lay a slice of cake on top. Add a spoonful of the cream, dust with cocoa and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "ideally 250g of chocolate with 64% cocoa solids and 250g of chocolate with 72% cocoa solids",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Espresso Shot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": null,
+        "notes": "for dusting the cake tin",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "ideally 72% cocoa solids",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "Tbsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "781dce1f6d8b1711d88737ad3f39f67399f6896107c50c3c34e7c8a20eb2ccf8",
+    "lineage_hash": "38d93f1e977162ade3d3e857074c900d962960f206cf88733956f6f6a2b3b2ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-liquorice-mousse-cake-recipe",
+    "fetchedAt": "2026-08-03T07:09:58.337Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-liquorice-mousse-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

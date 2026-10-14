@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Curried Carrot Ginger Soup (करी गाजर अदरक का सूप)",
+    "time": "25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat butter/oil in a sauce pan. Add onion and sautÃ© for a bit. Add ginger and garlic and sautÃ© for 2 more minutes.",
+      "Add carrots, tomatoes and lemon zest, sautÃ© for a minute. Add stock/water and bring to a boil. Reduce heat, cover partially and let simmer till carrots are tender. Remove and cool slightly.",
+      "PurÃ©e the mixture in blender. Return soup to the pan. Stir in lemon juice. Season with salt and pepper.",
+      "Return the pan to the flame and let simmer, adjust consistency if you need a thinner soup by adding more stock. Cook for about 5-7 minutes.",
+      "Remove and ladle soup into bowls. Top it with sour cream and garnish with fresh coriander."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsps Garlic",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled & chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "seeded, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsps Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock/water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Lemon Juice",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Sour Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "870f917edee1af629931b52835e15d41be89112d1fe26b0bb5d8250a8f2628fa",
+    "lineage_hash": "93d96ddff796f2709e9a2c42ae815a35d237a32937419e4b8d0388615a5d074c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/curried-carrot-ginger-soup/",
+    "fetchedAt": "2026-08-02T15:37:05.962Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/curried-carrot-ginger-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

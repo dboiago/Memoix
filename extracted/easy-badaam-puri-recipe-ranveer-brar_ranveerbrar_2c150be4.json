@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Badaam Puri (Almond Puri)",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180 degree Celsius.",
+      "Grind the dried almonds to fine powder in a mixer.",
+      "In a bowl add flour, almond powder, sugar, cardamom and saffron. Mix the dry ingredients well.",
+      "Combine and knead them into a dough using milk.",
+      "Divide the dough into small equal sized balls and make small puris using a rolling pin.",
+      "Fold the puri into half and then another half forming a triangular shape. Roll it out evenly, securing the edges.",
+      "Place them on a greased baking tray.",
+      "Bake the puris in the oven for 10-12 minutes. Remove and transfer to serving tray.",
+      "Drizzle little honey on it, sprinkle chopped nuts and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "blanched, peeled and dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "powdered",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Chopped Nuts",
+        "unit": null,
+        "notes": "Almonds, Cashew nuts",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f25d31eacea96f237c348c4729d9f8a5f4f8611831f28d9dbf3230dd23ae51dc",
+    "lineage_hash": "03ca3ab52f9493cf24b64d67107a14e7cf0d7919a7aa6c0f402eed1fd576034a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/badaam-puri/",
+    "fetchedAt": "2026-08-02T18:31:57.504Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/badaam-puri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

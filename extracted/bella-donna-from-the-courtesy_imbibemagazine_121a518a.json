@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Bella Donna",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse a glass with Ancho Reyes Verde, discarding the excess, then fill with ice. Shake all of the remaining ingredients with ice, then double strain into the prepared glass and add the garnish.",
+      "Bell Pepper-Infused AperolCombine 340 grams of freshly cut orange bell pepper with 1 liter of Aperol. Infuse for 6 hours, then strain and bottle. Use within 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper–infused Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "oz",
+        "notes": "1:1 fresh pineapple juice to sugar",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Verde",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82826b11b280395b6aa5b32fc7b3ef7e345ed954b754c8992bf89cdad7e5487a",
+    "lineage_hash": "07732899d075ca686a63460f42488b33a0d948492c0972f9a1492b81ebf6d4ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bella-donna-from-the-courtesy/",
+    "fetchedAt": "2026-08-03T22:28:38.443Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bella-donna-from-the-courtesy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

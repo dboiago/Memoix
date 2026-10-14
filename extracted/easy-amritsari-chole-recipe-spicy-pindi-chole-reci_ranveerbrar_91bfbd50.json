@@ -1,0 +1,405 @@
+{
+  "recipe": {
+    "name": "Amritsari Chole",
+    "time": "40-50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a Pressure cooker, add chole, ginger, garlic cloves, bouquet garni, salt to taste, water double the quantity of chole.",
+      "Cook it for 3-4 whistles and keep it aside for further use.",
+      "In a muslin cloth, add cinnamon stick, bay leaf, dry red chillies, black cardamom, cloves, black peppercorn, tea leaves and make a potli of it.",
+      "Keep it aside for further use.",
+      "In a mortar pestle, add ginger, garlic, green chillies, salt to taste and make a coarse paste.",
+      "Keep it aside for further use.",
+      "In a pan, add coriander seeds, cumin seeds, black cardamom, black peppercorn, salt to taste, dry red chillies and dry roast everything well.",
+      "Add asafoetida, degi red chili powder, dry mango powder, carom seeds and roast it for a minute.",
+      "Transfer it in a grinder jar and grind it into a fine powder.",
+      "Keep it aside for further use.",
+      "In a cast iron kadai or a handi, add oil, once it’s hot, add cumin seeds, ginger garlic paste, onion, and saute until golden brown in color.",
+      "Add chole masala and cook for a minute then add tomato puree and cook for a while or until it gets dark brown in color.",
+      "Add cooked chole with chole water and simmer it for 5-7 minutes.",
+      "Add some more chole masala, ghee and mash the ¼ quantity of chole.",
+      "To finish the chole add fresh coriander leaves and mix well.",
+      "Transfer it in a serving dish and garnish it with prepared tempering and a coriander sprig.",
+      "Serve hot with puri.",
+      "In a pan, add oil, green chillies, ginger, degi red chili powder and saute for a minute.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "g",
+        "notes": "overnight, soaked",
+        "amount": "500",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "1",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Pressure Cook Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Tea Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Bouquet Garni",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly sliced",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "2-3",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "15-20",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Kashmiri Red Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chole Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "4-5",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Chole Masala",
+        "unit": "Tbsp",
+        "notes": "prepared",
+        "amount": "2",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Size Fresh Tomato Puree",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Chole Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Pressure Cook Chole",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Chole Masala",
+        "unit": "Tbsp",
+        "notes": "prepared",
+        "amount": "1",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Amritsari Chole",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "Julienned, peeled",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Tadka",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2bace05ce5520f4ebc6ba82012f1eb441937ae594050bfd2618fa57555dce74",
+    "lineage_hash": "bfac116e1ed5504edcfa679d267b78f0dcac92d76ffae4aa72030b7592609038"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/amritsari-chole-recipe/",
+    "fetchedAt": "2026-08-02T11:06:13.235Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/amritsari-chole-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

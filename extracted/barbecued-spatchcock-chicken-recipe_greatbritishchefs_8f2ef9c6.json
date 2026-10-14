@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Barbecued Spatchcock Chicken",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by submerging the chicken in brine - you can make the brine by making a 95% water and 5% salt solution. Leave the chicken in brine for at least 3 hours",
+      "Remove the chicken from the brine, season with freshly ground black pepper and rub with olive oil",
+      "Place on the barbecue for 2 1/2 minutes. Turn over and colour the other side for 2 1/2 minutes",
+      "Move the chicken up to a higher shelf and close the lid of the barbecue. Reduce the temperature of the barbecue and cook for a further 20 minutes - this will only work if you have an electric barbecue, if not, transfer to the grill and cook on a low heat for a similar amount of time. To check that its cooked, stick a thermometer in the chicken thigh - 63-65°C will indicate that the chicken is done",
+      "Toss all the ingredients together in a bowl and add salt, pepper, olive oil and lemon juice. Leave to souse for 3 or 4 minutes.",
+      "To serve, remove the chicken from the barbecue or grill, slice and serve with the coleslaw"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spatchcock Spring Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "g",
+        "notes": "shredded",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": "freshly ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04b5c8da3723cd875d891373e9fc85d4c5d0ec4f1726c974f200d4a7cb01e8d1",
+    "lineage_hash": "8c707227bed71c7444329eaeebe23a5e843a0df424e4aa295af3ae2a7cf68dfd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-spatchcock-chicken-recipe",
+    "fetchedAt": "2026-08-03T16:13:51.420Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-spatchcock-chicken-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

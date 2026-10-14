@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Peanut Sprouts Stir-Fry",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse peanut sprouts with water a few times. Then, remove the skin and trim off the sprout end. You may cut each sprout into two parts if the stem is too long. Set aside.",
+      "Prepare the aromatics. Thinly slice ginger and garlic. Then, with a pair of scissors, cut the dried chili into bite-sized pieces. I removed the seeds to reduce the heat.",
+      "Heat a wok or non-stick pan with oil over medium-high heat. Stir fry ginger and garlic until aromatic, about a minute or so, then add dried chili. Toss a few times and add tofu strips.",
+      "Add peanut sprouts, and stir fry for a minute or so to lightly char the sprouts. Peanut sprouts take a little longer to cook compared to mung bean and soybean due to the size.",
+      "Season with soy sauce and vinegar. You may use salt, if preferred.",
+      "Add water and let it simmer until the sprouts are crisp* to your likings. Add more water if you prefer a softer texture. Taste test and adjust the seasoning accordingly with more soy sauce or vinegar.",
+      "Fold in the scallions, toss and drizzle in sesame oil before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Sprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thinly Sliced Ginger",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Seeds Removed",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu (about ½ Cup) Used Smoked Tofu",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Roughly Chopped",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil Used Extra Virgin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar Used Chinkiang",
+        "unit": "Tbsp",
+        "notes": "plus more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Plus More If Needed",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste If No Soy Sauce Is Used",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil for Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ae068e57ce855f941ad22529906bdfd093a647e394724d8f4af30c5dee1d657",
+    "lineage_hash": "bb21e12029bb13a22caded11bc5de43fea15c165e004151af34e9755a1993eaf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/peanut-sprouts-stir-fry/",
+    "fetchedAt": "2026-08-01T21:38:54.466Z"
+  },
+  "rawSource": "https://woonheng.com/peanut-sprouts-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

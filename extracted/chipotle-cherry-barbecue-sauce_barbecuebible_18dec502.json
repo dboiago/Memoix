@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chipotle-Cherry Barbecue Sauce",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pit the cherries if they haven’t been pitted already: you’ll need 1 1/2 cups.",
+      "Start the sauce: Place the sugar and water in a small saucepan. Cover and bring to a boil. Uncover the pan and cook the sugar until darkly caramelized, 5 minutes, swirling the pan. Do not stir. Remove the pan from the heat and add the vinegar: the mixture will sputter and hiss like Mt. Vesuvius. Return the pan to the heat and simmer, whisking, until the caramel dissolves.",
+      "Add the port wine, lemon zest, and lemon juice and bring to a boil over high heat. Stir in the stock, cinnamon, and chipotle. Reduce the heat and simmer until richly flavored, 5 minutes. Add the cherries and cook until soft but not mushy, 3 minutes for fresh, 1 minute for frozen. Remove and discard the cinnamon stick.",
+      "Dissolve the cornstarch in the kirsch to make a paste. Whisk this mixture into the sauce and boil for 1 minute. The sauce will thicken slightly. Whisk in the butter and salt and pepper to taste: the sauce should be highly seasoned. If you like a sweeter sauce, add a little more sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Or Frozen Cherries",
+        "unit": "lb",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "or as needed, plus more if needed to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "The Grated Zest and Juice of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Duck Stock",
+        "unit": "C",
+        "notes": "alt: chicken stock",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Chipotle Chile",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kirsch",
+        "unit": "Tbsp",
+        "notes": "alt: brandy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c2eb7682636d635e2abc86991ccf46324c9c1e7d6e3a6634e336b152cccab63e",
+    "lineage_hash": "243720a2a430d91873b84cc1d4819f1ebc6e35fb41cc4772d5964c966b23efe7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-cherry-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T04:29:19.976Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-cherry-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

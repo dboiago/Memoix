@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Brand New Key (Tarragon Tequila Cocktail)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Cucumber Slices"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to the shaker with ice. Shake and fine strain into a chilled glass. Garnish.\nTarragon-Infused Reposado TequilaAdd 3 sprigs of tarragon to a 750ml bottle of reposado tequila and allow to sit for 24 hours. Strain it. Note: Taste before straining; it can go another 12-24 hours if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tarragon-infused Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "3:1 honey to water",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82eb312a7ba879eb8ef3b550878c8ab58144f303a3151538e9eeff42b19be0af",
+    "lineage_hash": "6b3a4e510ff2dc983fb68e2f368c44a0c20a0840d6eca8483b6b8e0b277a156d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brand-new-key-tarragon-tequila-cocktail/",
+    "fetchedAt": "2026-08-04T01:55:10.254Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brand-new-key-tarragon-tequila-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

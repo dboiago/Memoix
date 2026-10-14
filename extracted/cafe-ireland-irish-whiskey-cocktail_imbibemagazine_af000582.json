@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Irish Whiskey Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients with ice and stir very briefly, only for 5 seconds or so. Strain into the glass and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": "Stoa uses Powers",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "such as Dolin",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": "Stoa uses St. George Spirits NOLA Coffee Liqueur",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a83b899f0d835844bfdf8ffcc7e0a1657d842a147fe45778752193b771f23b6d",
+    "lineage_hash": "53837480f4987a9857135718f362c4654de9d07305a10eb41e7f42cbafb056de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cafe-ireland-irish-whiskey-cocktail/",
+    "fetchedAt": "2026-08-03T22:47:41.476Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cafe-ireland-irish-whiskey-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

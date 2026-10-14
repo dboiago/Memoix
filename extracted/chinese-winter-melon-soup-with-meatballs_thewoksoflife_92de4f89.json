@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Chinese Winter Melon Soup with Meatballs",
+    "time": "1 hr 15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "259",
+      "carbohydrateContent": "16",
+      "fatContent": "15",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Put all the meatball ingredients into a large bowl.",
+      "Whip in one direction for at least 10 minutes by hand using a pair of chopsticks. Use a vigorous circular motion, until the ground meat mixture becomes thick and pasty, with a little resistance as you whip. This is really best done by hand, but for a similar effect, you could also use the paddle attachment of your electric mixer on low speed for 6-7 minutes.",
+      "Now, form the meatballs. Brush both of your palms with oil to prevent sticking, take a large spoonful of the meat mixture, and roll it into a ball using both palms. The meatballs should be the size of a golf ball. Arrange them on a lightly oiled plate with space between them. Refrigerate while you prepare the rest of the soup.",
+      "Soak the glass noodles in cold water for 15 minutes. Drain and cut the noodles in half lengthwise. Set aside.",
+      "Trim the winter melon, cutting away the outer ⅛-inch of dark green skin.",
+      "Rinse and chop into ¼-inch thick chunks.",
+      "Place a soup pot over medium heat and add 1 tablespoon oil. Cook the white parts of the scallions for about a minute.",
+      "Then add 4 cups chicken stock, 2 cups water, and the winter melon.",
+      "Turn up the heat and bring to a boil.",
+      "When the soup is boiling, carefully lower the meatballs into the soup using an oiled spoon. I did it with my hands, but a spoon is safer and easier.",
+      "Add in ½ teaspoon ground white pepper and ½ teaspoon sesame oil. Bring to a boil again. Add the glass noodles, stir, and salt to taste.",
+      "Boil for another 3-4 minutes, garnish with cilantro and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": "or dark meat chicken, 450g",
+        "amount": "1",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "meatballs",
+        "isOptional": false
+      },
+      {
+        "name": "Package Glass Noodles",
+        "unit": null,
+        "notes": "mung bean vermicelli, about 50g",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Winter Melon",
+        "unit": "lb",
+        "notes": "450g",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "white parts only, chopped; set aside or freeze the greens for a stir-fry!",
+        "amount": "2",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "or pork/chicken stock; about 1L",
+        "amount": "4",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "475 ml",
+        "amount": "2",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Large Handful of Cilantro (chopped)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "rest of the soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f9e923a82b68606a4939e6ee2049589efece0cf2157d1e16041d22db1bccb21",
+    "lineage_hash": "db67df4a66daa955e16ca07a255b579bc0700d2e4943fa1d2c0be65639900a0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-winter-melon-soup-meatballs/",
+    "fetchedAt": "2026-08-02T17:54:46.488Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-winter-melon-soup-meatballs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Cured Mackerel with Fermented Gooseberries",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the gooseberries, remove any stalks and place in a sterile sealable container. Pour in the whey, ensuring the berries are completely submerged, and seal the container. Store at room temperature for at least 7 days",
+      "On the day of serving, fillet the mackerel (you can ask your fishmonger to do this for you, if preferred), season with salt and sugar and set aside to cure for 1 hour",
+      "Meanwhile, make the elderflower dressing. Blend the citrus juices with the chilli and cucumber until smooth and pass through a fine sieve",
+      "Season with elderflower cordial to taste – it’s best to use around 25ml to start, then add more if needed. Add the xanthan gum and blend again until hydrated to thicken the mixture",
+      "Drain a handful of the fermented gooseberries from the whey and pat dry. Cut into slices and set aside",
+      "Peel away the fine skin of each mackerel fillet and remove any pin bones. Trim the fillets to neaten. To serve, slice the mackerel into thin slices (1cm maximum) at a 45 degree angle. Arrange on plates, dress with the elderflower dressing and garnish with fermented gooseberries and nasturtium leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mackerel",
+        "unit": "large",
+        "notes": "as fresh as possible",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt Whey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Red Chilli",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": null,
+        "notes": "25–50ml",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef163bca55d31f98494b58a386b67595ce25e7dc3d4f11d194f468a616cff486",
+    "lineage_hash": "3cb13f8fcbff4b01282b5637b7cdf1892d16bf86083874a01626f9f98be8d3b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-mackerel-fermented-gooseberry-recipe",
+    "fetchedAt": "2026-08-03T09:56:06.609Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-mackerel-fermented-gooseberry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

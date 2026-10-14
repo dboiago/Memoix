@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Coffee Cocktail: Me Quiero Casar",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Nutmeg"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to an ice-filled shaker. Shake and strain into a Collins glass filled with crushed ice and sprinkle with nutmeg.",
+      "Rum-Fortified Sweetened Condensed MilkCombine 4 oz. of sweetened condensed milk with 2 oz. of rum, then stir to blend. Chill until ready to use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum-fortified Sweetened Condensed Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b0de6224167281cd07bcdb3b999a8f019acb6fcfb05502ec1b9f88d09b60c66",
+    "lineage_hash": "6a1730622b1dec65f60e8ff584c62d58ad743b5386d35f5ed242407c7c789091"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/me-quiero-casar-coffee-cocktail/",
+    "fetchedAt": "2026-08-03T23:32:55.507Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/me-quiero-casar-coffee-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

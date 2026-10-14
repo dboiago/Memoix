@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Crispy Salt and Pepper Boneless Pork (Thịt Heo Rang Muối Tiêu)",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rub with a teaspoon salt and rinse with water to remove any odor and drain dry (optional). Trim off any excess fat then slice into bite-sized thin pieces. Place the pork in a bowl. Add baking soda, water, salt, chicken bouillon powder, ground black pepper, ground white pepper, garlic powder, onion powder, and cooking wine. Hold off on the egg and cornstarch for now. Marinate at least 30 minutes or overnight for better flavor.",
+      "Fill a wide wok or skillet (at least 10-inches wide) with 2 inches of oil and heat to 375°F. While waiting for the oil to come to temperature, add egg and cornstarch to the pork mixture. Mix until the egg is broken and the pork pieces are well coated with a thick slurry. Quickly and carefully drop the pork pieces one by one into the hot oil. Deep fry in two batches to prevent overcrowding and dropping the temperature. Deep fry for about 3-5 minutes or until golden brown. Transfer the fried pork to a wire rack or a plate lined with paper towels to absorb excess oil. Repeat with the second batch.",
+      "Remove the oil from the wok, leaving about 2 tablespoons (a thin layer). Add minced garlic, shallots, and jalapeños/bell peppers. Sauté until fragrant (about 20 seconds on really high heat to get the wok hei flavor). Add the fried pork back into the wok. Toss quickly until the pork is evenly coated with the garlic and jalapeños/bell peppers. No need to cook further.",
+      "Transfer the fried pork and all the aromatics to a serving plate and enjoy immediately for the best crunch."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Shoulder",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Cooking Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "Tbsp",
+        "notes": "cut into thin wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Multicolor Jalapeños (spicy)",
+        "unit": "C",
+        "notes": "alt: bell/sweet peppers, non-spicy, diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d7d3583bb0347fc2224e07e184aa1d6ab1413002fa11ac80765879bde8c59db",
+    "lineage_hash": "55b1c52a0a7d8ca16706b102d27030580b241b9d78e69a0474388149da0dba3f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/salt-pepper-crispy-boneless-pork/",
+    "fetchedAt": "2026-08-01T22:36:43.475Z"
+  },
+  "rawSource": "https://vickypham.com/blog/salt-pepper-crispy-boneless-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

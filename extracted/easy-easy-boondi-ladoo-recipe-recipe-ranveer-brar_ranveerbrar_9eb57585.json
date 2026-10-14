@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Boondi Ladoo",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare boondi, add gram flour and yellow food color to a bowl, mix well.",
+      "Add some water and prepare a thick lump-free batter.",
+      "Using a perforated spoon drop in small rounds of batter into the hot ghee, deep-fry till they turn golden.",
+      "Remove and transfer to the prepared sugar syrup.",
+      "Add an equal amount of sugar and water in a deep-bottomed heavy pan.",
+      "Allow the sugar to melt completely, add in crushed green cardamom pods, black peppercorns and saffron.",
+      "Allow to cook until it begins to thicken to a 1 string consistency.",
+      "Add lemon juice to clean any dirt in the sugar, if the scum comes up then remove it using a perforated spoon.",
+      "Remove from flame and set aside to cool to room temperature.",
+      "Remove the soaked boondi from the sugar syrup into a thali.",
+      "Mash the boondi a little with your palms, add some castor sugar, mix well.",
+      "Start shaping into ladoos.",
+      "Once prepared, garnish with silver varq and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": "sieved",
+        "amount": "2",
+        "section": "For Boondi Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Food Color Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Boondi Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": "For Boondi Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2-3",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Silver Varq",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea6ed810ed75ba605739946c8dda7bbbc382045d4a4058fcb0a9fe177329cc76",
+    "lineage_hash": "a95097dd2ef85a4a23aa77bb087907f4125c8bcdad29412fa6d46410dc1febc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/easy-boondi-ladoo-recipe/",
+    "fetchedAt": "2026-08-02T12:02:01.083Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/easy-boondi-ladoo-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Chinese Fish En Papillote",
+    "time": "22 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "334",
+      "carbohydrateContent": "19.5",
+      "fatContent": "15.7",
+      "proteinContent": "31.4"
+    },
+    "directions": [
+      "Preheat the oven to 400°F (200°C).",
+      "In a small saucepan, heat the sesame oil over low heat until it becomes fragrant, about 1 minute. Add the ginger to the pan. Cook and stir for another minute.",
+      "Add the Shaoxing wine, soy sauce, and sugar. Raise the heat to medium-low and let the mixture simmer for 1 to 2 minutes. Remove the pan from the heat and set aside.",
+      "Cut a piece of parchment paper that is approximately 12x15” (30x38 cm) and fold the longer side in half. Cut the folded paper into a wide half-heart shape. Unfold the paper and now it should look like a heart shape.",
+      "You will need to arrange all the ingredients on one side of the heart, leaving enough space on the edges to seal the paper - place the Chinese broccoli in the center of one half of the heart, slightly closer to the fold crease and the rounded top. Drizzle half of the sauce and ginger over the Chinese broccoli.",
+      "Lay the fish on top of the Chinese broccoli. Drizzle the remaining sauce and ginger over the fish. Place the sprigs of cilantro on both sides of the fish.",
+      "Fold the other half of the heart over the fish side. Starting at the top of the heart where it is rounded into a point, begin folding 1” (2.5 cm) sections towards the center of the package, pressing down well with each fold to seal it.",
+      "Once the package is completely sealed, place it onto a baking tray. Bake for 12 minutes.",
+      "Remove the baking tray from the oven and let it rest until the parcel cools off a bit, 1 to 2 minutes.",
+      "Move the parcel to a large serving plate. Cut open the center of the parcel with a clean pair of scissors or a sharp knife. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": null,
+        "notes": "6 oz / 170 g, or sea bass, or other type of white fish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Heads of Chinese Broccoli",
+        "unit": "stalks",
+        "notes": "alt: baby bok choy, or yu choy, cut into about 8” (20 cm) pieces",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "” (2.5 Cm) Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e63ccce103fcf60a2efbef6d03550369df3ec14a46462a1e21434f87e825a05d",
+    "lineage_hash": "1e6c56dceb93807f5293b480f361953d3536edcd90ab69dbd0b39fa1ef7c3c81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-fish-en-papillote/",
+    "fetchedAt": "2026-08-01T18:20:13.094Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-fish-en-papillote/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Coffee Meringue With Cream",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the coffee meringue, preheat the oven to 140ºC/Gas mark 1. Line a large baking sheet with baking parchment. Place the egg whites in a large, clean bowl. Sift the icing sugar and the instant coffee into the egg whites",
+      "Beat with an electric hand whisk until soft peaks form. Add the caster sugar a little at a time while continuing to whisk until the mixture is thick and glossy and stands in peaks",
+      "Spread the mixture into a circle on the lined baking tray (alternatively you can make four smaller merinuges) and smooth the top with a palette knife",
+      "Transfer the tray to the oven and bake for 45-60 minutes until the surface is crisp, then turn off the oven and leave to cool with the door ajar for at least 30 minutes. Remove from the oven and peel off the paper",
+      "For the passion fruit cream, gently fold the passion fruit into the whisked cream. Stir in the icing sugar",
+      "To assemble the meringue, cover the coffee meringue base (or bases) with the passion fruit cream and top with the summer berries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free-range Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruits",
+        "unit": null,
+        "notes": "seeds and pulp sieved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "whisked to soft peaks",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Summer Berries",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82c95f2f29c0385def9e43a8d54d0378daca4f9d8e8081d48dd2873a9469e388",
+    "lineage_hash": "1e3fdcbf5c3933a01b76b6c04227510798cce24e9c8bab75b4522b65dd28328b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-meringue-recipe-passion-fruit-cream",
+    "fetchedAt": "2026-08-03T16:43:21.438Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-meringue-recipe-passion-fruit-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Double Apple Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to the glass, add a large ice cube, and stir until well-chilled, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calvados",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reduced Cider Syrup",
+        "unit": "oz",
+        "notes": "The Green Zone uses Wood’s Boiled Cider, but you can make your own by reducing 1 quart of fresh-pressed apple cider down to ½ cup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arak",
+        "unit": "oz",
+        "notes": "The Green Zone uses Arak Ramallah Golden Arak",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8127fb27f2fe00c7002ff7d18a380c7fd8fc19353df5666c511901ded9dfcba2",
+    "lineage_hash": "b18655c184dc6658b48faeb28e3ebb2923f56b05e437d3769417ff1e7408f551"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/double-apple-cocktail/",
+    "fetchedAt": "2026-08-03T18:43:00.608Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/double-apple-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

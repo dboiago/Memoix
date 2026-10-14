@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Crema Mexicana (Mexican-Style Sour Cream)",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "126",
+      "carbohydrateContent": "2",
+      "fatContent": "13",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine the creams and salt in a bowl and whisk until smooth.",
+      "Add fresh lime juice to taste and combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e1e3fea9b1a6c3ea6be7a06aa274ee95176ca705fd2caeeb7c6cc9923f0ab41",
+    "lineage_hash": "a0c2f4b2b238b0e6cda35e1f8a348b971a6697bc3af739de08caa819a3707c46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/crema-mexicana/",
+    "fetchedAt": "2026-08-02T06:03:19.532Z"
+  },
+  "rawSource": "https://muybuenoblog.com/crema-mexicana/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

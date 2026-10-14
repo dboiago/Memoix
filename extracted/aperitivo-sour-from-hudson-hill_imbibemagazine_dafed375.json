@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Aperitivo Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker without ice and shake vigorously. Add ice to  and shake again. Strain into a chilled coupe."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cappelletti Aperitivo",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Cane Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized if you like, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regan's Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "58cb5e3522e585f1beac6e3e968ae64acc69d077eca2b1a62326138b213fcd19",
+    "lineage_hash": "62b9c3feca532b921970f12d781b44c1da27a7d0982f3eb91871d56f7ea2ff7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitivo-sour-from-hudson-hill/",
+    "fetchedAt": "2026-08-03T20:29:24.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitivo-sour-from-hudson-hill/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

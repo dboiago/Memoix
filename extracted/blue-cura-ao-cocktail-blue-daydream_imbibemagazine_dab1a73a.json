@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Blue Curaçao Cocktail: Blue Daydream",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice to chill, and strain into a snifter filled with fresh ice. Garnish.",
+      "Orange Oleo Saccharum: Using a vegetable peeler or sharp paring knife, remove the zest from 3 medium-sized oranges, then muddle the zest into three cups of sugar. Leave the mixture in a sealed container overnight, making sure the orange zest is submerged in the sugar. Add 1 cup of boiling water to the mix, and stir to fully dissolve sugar. Strain the orange zest from the syrup and discard the solids; keep refrigerated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spiced Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Oleo Saccharum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b92f05f5acd8bafe8528ea82238b3bc5e9dbc8112b0d50dccb64dc49fe967d9",
+    "lineage_hash": "62e599235c2de97fc8e389621dda490b037bc36e928fca3a3ee274bc569b2386"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blue-daydream/",
+    "fetchedAt": "2026-08-03T20:21:55.608Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blue-daydream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

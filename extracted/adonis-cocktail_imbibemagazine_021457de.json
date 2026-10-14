@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Adonis Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients with ice in a mixing glass and strain into a chilled glass. Pinch an orange peel to express the citrus oils over the top of the drink. Discard the orange peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fino",
+        "unit": "oz",
+        "notes": "alt: manzanilla sherry",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8c23c38226aee405a42784f5bcc9c1568b88ea2b703102913f76df9ae141ab6",
+    "lineage_hash": "6425b7bc5172d0cbfa32c260d12ca10010015474070fbd620bffe0487d5844c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/adonis-recipe/",
+    "fetchedAt": "2026-08-03T18:00:09.195Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/adonis-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,337 @@
+{
+  "recipe": {
+    "name": "Citrus Theme",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "There are many elements to this complex dessert, so read through the recipe before starting. You can make the lemongrass jelly and sorbet in advance and keep them in the freezer, while the lemon cream discs, sauces and lemon laces can be reserved in the fridge. Making these elements in advance will make the dish much easier to assemble on the day you plan to serve it",
+      "For the sorbet, place a medium saucepan over a high heat. Add the water, bring to a simmer, then whisk in the sugar, glucose and milk powder. Remove from the heat, add the basil leaves and leave to infuse for 30 minutes. Pass through a sieve into the bowl of your ice cream machine, whisk in the lemon juice, then churn until just set. Reserve in the freezer until ready to serve",
+      "For the lemongrass jelly, add the sugar and water to a small saucepan and gently warm over a low heat until the sugar dissolves. Add the lemongrass and bring to a bare simmer, then cook for 3 minutes. Remove from the heat and leave to infuse for 30 minutes. Strain and reheat until slightly warm, whisk in the gelatine leaves until dissolved, then add the lemon juice. Place in the fridge to set overnight",
+      "The next day, place the set jelly into the bowl of a stand mixer with a whisk attached. Whisk on a medium speed for 30 minutes until light and fluffy – this emulsifies the jelly and traps air in it, which will change its texture completely. Pour the whipped jelly into a 16x16cm container which has a rim that is at least 2cm high (you can create a 16x16x2cm frame and sit it on a larger baking tray lined with baking paper if required). Place in the freezer to set overnight",
+      "Once set, use a warm knife to dice the jelly into 2cm cubes, then reserve on a tray in the freezer until needed. They will need to be removed from the freezer 5 minutes before serving to soften",
+      "For the lemon cream discs, whisk the eggs, sugar, lemon juice and zest together in a large bowl, then set aside. Bring the whipping and double cream to the boil in a medium saucepan, then whisk the hot mixture into the eggs. Pour the mixture back into the saucepan and bring to a gentle simmer, stirring constantly, until it reaches 82°C and thickens. Blitz with a stick blender for 20 seconds to homogenise and lighten the cream, then pour the mixture into 10 straight-sided silicone cylinder moulds, 6cm in diameter and 3cm high. Freeze for 4 hours until firm",
+      "Once firm, melt the cocoa butter in a saucepan until it reaches 45°C. Push a cocktail stick into the centre of each firm disc, then completely immerse them in the melted cocoa butter to provide a sweet balance to the acidity of the lemon. Once dipped, lay the discs on their flat edge on a tray lined with greaseproof paper, then leave to defrost for at least 1 hour. After this time, reserve in the fridge until ready to serve",
+      "For the confit lemon laces, use a large knife to cut 10cm-long thick laces of zest from the lemons. Place them in a large saucepan with 1 litre of water, then bring to the boil and cook for 4-5 minutes. Drain and repeat this process once more, to remove the bitterness and make the laces tender",
+      "Place 100ml of water, the lemon juice and sugar in a small saucepan, then bring to the boil. Add the lemon laces and simmer for 10 minutes, then leave to cool completely in the syrup. Once cool, drain and reserve in the fridge",
+      "For the sable shortbread, sieve the flour, potato starch and icing sugar into the bowl of a stand mixer with a paddle attachment, then add the butter, lemon zest and salt. Mix at a low speed for a few minutes until fully incorporated, then roll the dough out until 3mm thick between 2 sheets of baking paper. Leave to set in the fridge for 2 hours",
+      "While the pastry rests, make the sauces. For the pink grapefruit sauce, warm half the grapefruit juice and whisk in the softened gelatine until dissolved. Add the remaining grapefruit juice, then transfer to a small bowl set over an ice bath to set and cool. Reserve in a squeezy bottle in the fridge until needed",
+      "For the lemon butterscotch sauce, bring the whipping cream to the boil in a medium saucepan. Meanwhile, in a separate pan, heat the sugar, water and glucose until a light blond caramel forms. Gradually and carefully add the hot lemon juice and zest to the caramel, followed by the hot cream. Stir well, bring back to the boil for 1 minute, then transfer to a heatproof bowl set over ice and leave to cool completely. Reserve in a squeezy bottle in the fridge until needed",
+      "Once the pastry has been resting for 2 hours, preheat an oven to 170°C/gas mark 3. Cut out 10 circles using a 7-8cm round cutter, then place on a silicone mat and bake for 8-10 minutes until light golden",
+      "You now have all the elements ready to plate this dessert. On each plate, pipe a spiral of butterscotch sauce, starting in the centre and coming halfway out of the middle of the plate. Place a sablé biscuit in the centre, then the defrosted lemon cream disc on top. Arrange 4 cubes of lemongrass jelly and 3 segments of pink grapefruit on top of the disc, topped with the grapefruit sauce",
+      "Spoon a small quenelle of lemon basil sorbet on one side of the disc, then sprinkle the lemon and lime zest sugar over the jelly cubes. Finally, arrange a lemon zest lace over the top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": "approx. 3 medium eggs",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and finely zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": "for dipping",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": "hot",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "finely zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass (1)",
+        "unit": "g",
+        "notes": "crushed and finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "softened in cold water and then drained",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "ideally organic and Italian or from Menton in France when in season, washed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "8.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "113",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": "from Florida when in season, juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "softened in cold water and drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "optional, infused with lemon and lime zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": "peeled, segmented and each segment cut into 3 pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7506032961b91101fe5a20603495b850af1a52459dffaf0260f13c2defeae0b",
+    "lineage_hash": "20589d1ac03ddb22cd94be393e35088c69d65c0603fba3cb3d022c4f32e89b1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/citrus-theme-recipe",
+    "fetchedAt": "2026-08-03T04:23:36.509Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/citrus-theme-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

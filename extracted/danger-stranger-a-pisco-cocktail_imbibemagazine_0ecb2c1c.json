@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Danger Stranger",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker, then dry shake for 1 minute. Add ice and shake for 30 more seconds. Double strain into a coupe.",
+      "Orange Cream Syrup: Combine 45 oz. of Sunkist with 45 oz. of sugar and 2 oz. of vanilla extract in a saucepan over medium-high heat. Bring to almost boil, stir regularly, let simmer on low heat for 10-15 minutes. Take off heat and let cool. Store in the refrigerator for up to a month.",
+      "Note: If you don’t have aquafaba, an egg white will work just fine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pisco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Cream Soda Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquafaba",
+        "unit": "oz",
+        "notes": "or 1 egg white",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30a1a0d372b764dbbbe6b3c780b3fb61f990d51b6d6e35a26d55d52bed7592d5",
+    "lineage_hash": "8e2dca745062ce3f85b6a6a597faa8ed269b5c2effdadd04f643d4310736bb01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/danger-stranger-a-pisco-cocktail/",
+    "fetchedAt": "2026-08-03T19:22:05.323Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/danger-stranger-a-pisco-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

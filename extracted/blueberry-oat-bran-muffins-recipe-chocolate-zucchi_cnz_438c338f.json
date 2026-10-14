@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Blueberry Oat Bran Muffins",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F) and line a 12-muffin tray with paper liners.",
+      "In a large mixing bowl, whisk together the bran, flour, baking powder, baking soda, salt, and sugar, until no lump remains. Add the blueberries and toss gently to combine.",
+      "In another bowl, whisk together the yogurt, oil, vanilla, and eggs. Pour this mixture into the dry ingredients, and fold it in gently with a spatula until no trace of flour remains. The mixture will be lumpy, but resist overmixing.",
+      "Pour the batter into the prepared muffin tray, filling each muffin mold by about three quarters (to minimize the mess, you can use a spring action ice cream scoop, as recommended to me after my twitter plea). Bake for 12 to 16 minutes, until set and golden. Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oat Bran",
+        "unit": "g",
+        "notes": "preferably organic; wheat bran may be substituted",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "4 1/4 ounces, about 1 cup",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "1/2 cup",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": "no need to thaw them if frozen",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "ml",
+        "notes": "buttermilk can be substituted",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "ml",
+        "notes": "I use extra-virgin sunflower oil",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "feeebefa1beaa9ace2261a9ddd8f194b84cdd0223ddb2479e53ba6295475d637",
+    "lineage_hash": "a6fb83593c3cb24e60fbcca659198d93e6c6fec437400952fe4640cb9d3acb33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/blueberry-oat-bran-muffins-recipe/",
+    "fetchedAt": "2026-09-30T18:47:59.836Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/blueberry-oat-bran-muffins-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

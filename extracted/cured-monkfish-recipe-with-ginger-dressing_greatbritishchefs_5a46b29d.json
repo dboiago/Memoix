@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Cured Monkfish with Ginger Dressing",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the day before by straining the yoghurt. Add the yoghurt to a muslin bag and hang in the fridge for around 24 hours with a container below to collect any liquid that drips through",
+      "The next day, you should be left with a thick, pipe-able consistency. Place in a piping bag and keep in the fridge until ready to serve",
+      "To prepare the monkfish, mix together all the cure ingredients and use to completely cover the monkfish fillets. Place in the fridge for 4–6 hours to cure, turning occasionally to make sure the fish cured",
+      "When ready, rinse off the cure, pat dry and wrap the fillets tightly in cling film. Place in the freezer until just frozen, then remove the cling film and slice into 2mm slices using a very sharp knife. Place the slices in the fridge until completely thawed",
+      "To make the dressing, whisk together the ginger juice, vinegar and rapeseed oil. Stir through the spring onion and dill",
+      "To serve, arrange the cured monkfish on plates and evenly drizzle over the dressing. Pipe rounds of the strained yoghurt on top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Monkfish",
+        "unit": null,
+        "notes": "or buy approximately 800g monkfish fillet, weighing 3–4kg, filleted and skinned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agrodolce Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "Tbsp",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "Tbsp",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bd292cdfd4873096d65e00cab40c49639b986a0b70546783558e7503ca791fe",
+    "lineage_hash": "5247fa35df75e16a90ed32da240448c2121cd9de4d6c2af7cc812af02ad88938"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-monkfish-recipe-ginger-dressing",
+    "fetchedAt": "2026-08-03T10:39:14.086Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-monkfish-recipe-ginger-dressing",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

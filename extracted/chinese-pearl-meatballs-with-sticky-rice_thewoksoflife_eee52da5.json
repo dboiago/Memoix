@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chinese Pearl Meatballs with Sticky Rice (珍珠丸子)",
+    "time": "8 hr 25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "188",
+      "carbohydrateContent": "13",
+      "fatContent": "10",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "To start, soak the bamboo leaves by submerging them under water with the weight of a large plate. (You can do this the night before.)",
+      "Now, soak the glutinous rice in a bowl covered with at least an inch of water above the rice for about 2 hours. While the rice is soaking, prepare the meat filling.",
+      "Weigh about 13 ounces of lean pork and 3 ounces of pork fat. You can use the techniques from our post on How to Grind Meat without a Meat Grinder in Minutes, and hand-chop the pork very finely. It’s also fine to use store-bought ground pork, but make sure it’s 80% lean. In a large bowl, add the ground pork, water chestnuts, ginger, the scallions, water, Shaoxing wine, cornstarch, white pepper, sesame oil, sea salt, and sugar.",
+      "Stir to combine everything well, whipping in just one direction for at least 5 minutes until the filling becomes fluffy and sticky. Cover and marinate in the refrigerator for 30 minutes. While the meat is marinating, prepare the steamer. Wash and trim the bamboo leaves, and use them to line the steamer.",
+      "After 2 hours of soaking, drain the glutinous rice, and do your best to shake off any excess water.",
+      "Remove the meat filling from the fridge after the 30 minutes has elapsed. Now it’s time to make the pearls! Take about a tablespoon of meat filling, form a ball and roll it in the glutinous rice so that the whole surface is coated. Roll it between your palms lightly to ensure all the glutinous rice adheres to the meatball. Position the meatballs on the bamboo leaf with about ½ an inch of space in between each meatball.",
+      "To cook, start with cold water with the steamer covered. Steam over high heat for 20 minutes. After steaming, turn off the heat, and let the meatballs sit with the cover on for 3 additional minutes before removing the lid and serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bamboo Leaves",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glutinous Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hand-chopped Ground Pork with 20% Fat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Chestnuts",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "Tbsp",
+        "notes": "just the white parts, minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ec2d4b01fa64d58ca28ed40e5e61cf48544420d905676b7e4422a8310b3e0ec",
+    "lineage_hash": "2083afdd8b35926a8c756e181baef09cd97a77999ca3326b7dc4080e6ee32866"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/pearl-meatballs-sticky-rice/",
+    "fetchedAt": "2026-08-01T20:19:52.030Z"
+  },
+  "rawSource": "https://thewoksoflife.com/pearl-meatballs-sticky-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,61 @@
+{
+  "url": "https://muybuenoblog.com/chipotle-tequila-shrimp/",
+  "slug": "chipotle-tequila-shrimp_muybuenoblog_981837c7",
+  "title": "Chipotle-Tequila Shrimp",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T20:52:10.792Z",
+  "ldName": "Chipotle-Tequila Shrimp",
+  "ldTime": "PT32M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "6",
+    "6 to 8"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Main Course",
+  "ldKeywords": "Mexican shrimp marinade, shrimp skewers, tequila lime shrimp",
+  "ldIngredientsRaw": [
+    "2 tablespoons unsalted butter (melted)",
+    "2 tablespoons reposado tequila",
+    "1 tablespoon fresh lime juice",
+    "2  chipotle chile peppers in adobo sauce (finely chopped)",
+    "¼ teaspoon salt",
+    "1/8 teaspoon pepper",
+    "Handful cilantro (chopped)",
+    "2 pounds extra-large shrimp (shelled and deveined, tails left on)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat a grill or griddle pan.",
+    "In a bowl, mix the melted butter, tequila, lime juice, and minced chile.",
+    "Thread the shrimp onto skewers and rub the marinade all over the shrimp. Season the shrimp with salt and pepper and sprinkle with cilantro. Let stand for 15 minutes.",
+    "Oil the grate. Grill the shrimp over moderate heat, until just cooked through, 7 minutes.",
+    "Serve with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "200 kcal",
+    "sugarContent": "1 g",
+    "sodiumContent": "1336 mg",
+    "fatContent": "6 g",
+    "saturatedFatContent": "3 g",
+    "carbohydrateContent": "1 g",
+    "fiberContent": "1 g",
+    "proteinContent": "31 g",
+    "cholesterolContent": "391 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons unsalted butter, melted",
+    "▢ 2 tablespoons reposado tequila",
+    "▢ 1 tablespoon fresh lime juice",
+    "▢ 2 chipotle chile peppers in adobo sauce, finely chopped",
+    "▢ ¼ teaspoon salt",
+    "▢ 1/8 teaspoon pepper",
+    "▢ Handful cilantro, chopped",
+    "▢ 2 pounds extra-large shrimp, shelled and deveined, tails left on"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

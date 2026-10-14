@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dutch Courage Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Collins",
+    "garnish": [
+      "Lemon Slice"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "152",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare lemon slice wheel for garnish.",
+      "SHAKE all ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "Garnish with lemon slice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Advocaat Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0298f54a50dbd40bd6139105d3258ce342f4479e2ad026ab736db516fce0b6e4",
+    "lineage_hash": "e0e64f2c7de9097e5403f38fbaed41a0ebb64694ecdc57dca884592bde9be3bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/682/dutch-courage",
+    "fetchedAt": "2026-08-02T09:28:30.045Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/682/dutch-courage",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

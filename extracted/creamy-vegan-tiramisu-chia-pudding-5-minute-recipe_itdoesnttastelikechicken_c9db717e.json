@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Tiramisu Chia Pudding",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "234",
+      "carbohydrateContent": "32",
+      "fatContent": "9",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Mix the chia and water: In a small bowl, combine the chia seeds and hot water. Stir well and let sit for 2 minutes. It will look watery at first, but after 30 seconds it will begin to thicken, and within 2 minutes it will be quite thick. Stir again before adding the milk to make sure it has thickened properly (it should look clumpy). If it isn’t clumpy yet, wait another minute before continuing.",
+      "Add the flavorings and milk: Stir in the agave, vanilla, espresso powder, cocoa powder, and salt. Mix well. Then add the plant-based milk and stir again breaking up any clumps. Let rest another 2 to 3 minutes. The pudding will go from thin to thick as the chia absorbs the liquid.Note: if doubling the recipe, it might take longer to set. You can optionally warm the plant-based milk before adding it, which will help it set quicker.",
+      "Layer and serve: Stir a final time to ensure it is mixed, then divide the pudding between 2 small jars or glasses. Top each with 2 tablespoons of vegan yogurt or whipped cream and spread into an even layer. Dust with cocoa powder, then add shaved chocolate or crushed cookie if desired. Enjoy immediately or store covered in the fridge for up to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": "not boiling",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave",
+        "unit": "Tbsp",
+        "notes": "alt: maple syrup, or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Vanilla Yogurt",
+        "unit": "C",
+        "notes": "alt: vegan whipped cream",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": "for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaved Dark Chocolate",
+        "unit": null,
+        "notes": "alt: crushed vegan vanilla cookie like a graham cracker or vanilla wafer, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8d558305eb168f363b1e327ede5f1d857d569d7d5be2b8769416b7527cb3000",
+    "lineage_hash": "b944c9a54b20f45031aa994a9671e4523e7ee923cbae62d934829f5c94c2dbae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/tiramisu-chia-pudding/",
+    "fetchedAt": "2026-08-02T09:16:52.043Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/tiramisu-chia-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

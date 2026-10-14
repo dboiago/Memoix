@@ -1,0 +1,73 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-vegan-lemon-asparagus-pasta/",
+  "slug": "creamy-lemon-asparagus-pasta-15-minutes_itdoesnttastelikechicken_a1b8646b",
+  "title": "Creamy Lemon Asparagus Pasta (15 Minutes!)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T08:15:20.880Z",
+  "ldName": "Creamy Lemon Asparagus Pasta (15 Minutes!)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 - 6"
+  ],
+  "ldCuisine": "American, Italian",
+  "ldCategory": "Main Course, Pasta",
+  "ldKeywords": "asparagus, asparagus pasta, dairy free, Italian, lemon, pasta, vegan",
+  "ldIngredientsRaw": [
+    "14 oz pasta of choice ((spaghetti, linguine, penne, or fusilli))",
+    "1 bunch asparagus (trimmed and cut into 2-inch pieces)",
+    "2 tablespoons olive oil",
+    "3 cloves garlic (minced or pressed)",
+    "2 tablespoons all-purpose flour",
+    "1 ½ cups unsweetened plant-based milk ((such as soy or oat))",
+    "2 teaspoons Dijon mustard",
+    "2 tablespoons nutritional yeast",
+    "½ teaspoon salt (or to taste)",
+    "¼ teaspoon black pepper (or to taste)",
+    "1  lemon (zested)",
+    "1 ½ tablespoons lemon juice",
+    "Optional garnishes: chopped parsley or basil, vegan parmesan, extra lemon zest, chili flakes, cracked black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Cook the pasta + asparagus: Bring a large pot of water to a boil. Cook the pasta according to package directions. In the last 3 minutes of cooking, add the asparagus to the pot. Reserve ½ cup of pasta water, then drain.",
+    "Sauté the garlic: While the pasta cooks, heat the olive oil in a large skillet or saucepan over medium heat. Add the garlic and cook for 30 seconds, just until fragrant.",
+    "Make a roux: Sprinkle in the flour and whisk constantly for 30–60 seconds.",
+    "Make it creamy: Slowly whisk in the plant-based milk. Keep whisking until smooth, then simmer for 2–3 minutes, until the sauce thickens slightly.",
+    "Season the sauce: Whisk in the Dijon mustard, nutritional yeast, salt, and pepper.",
+    "Add the lemon last: Remove from heat, then stir in the lemon zest and lemon juice.",
+    "Toss it all together: Add the drained pasta and asparagus to the skillet with the sauce and toss well. Add a splash of reserved pasta water as needed until the sauce is silky and coats everything beautifully. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "351 kcal",
+    "servingSize": "1  serving (recipe makes 6 servings)",
+    "carbohydrateContent": "58 g",
+    "proteinContent": "14 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "248 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 14 oz pasta of choice, (spaghetti, linguine, penne, or fusilli)",
+    "▢ 1 bunch asparagus, trimmed and cut into 2-inch pieces",
+    "▢ 2 tablespoons olive oil",
+    "▢ 3 cloves garlic, minced or pressed",
+    "▢ 2 tablespoons all-purpose flour",
+    "▢ 1 ½ cups unsweetened plant-based milk, (such as soy or oat)",
+    "▢ 2 teaspoons Dijon mustard",
+    "▢ 2 tablespoons nutritional yeast",
+    "▢ ½ teaspoon salt, or to taste",
+    "▢ ¼ teaspoon black pepper, or to taste",
+    "▢ 1 lemon, zested",
+    "▢ 1 ½ tablespoons lemon juice",
+    "▢ Optional garnishes: chopped parsley or basil, vegan parmesan, extra lemon zest, chili flakes, cracked black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

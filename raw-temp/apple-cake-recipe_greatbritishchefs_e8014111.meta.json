@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/apple-cake-recipe",
+  "slug": "apple-cake-recipe_greatbritishchefs_e8014111",
+  "title": "Apple Cake Recipe",
+  "byline": "by Russell Brown",
+  "fetchedAt": "2026-08-03T23:51:39.157Z",
+  "ldName": "Apple cake",
+  "ldTime": "PT1H10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "550g of apple, peeled and cored",
+    "2 eggs",
+    "150ml of sunflower oil",
+    "100ml of yoghurt, low fat",
+    "150g of plain flour, white",
+    "125g of wheat flour",
+    "150g of caster sugar",
+    "1 tsp cinnamon",
+    "1 tsp bicarbonate of soda",
+    "1/2 tsp salt",
+    "1 tsp vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Peel and chop the apples into small pieces (the smaller the easier the cake will be to cut)",
+    "In a large mixing bowl beat the sunflower oil and sugar together until smooth, and then add the beaten eggs and yoghurt",
+    "In a small bowl mix all of the remaining dry ingredients, add gradually to the wet mixture and finally fold in the apples",
+    "Pour the batter into a greased 8 inch cake tin and cook for 30-40 minutes or until you can stick a knife through the centre that comes out clean",
+    "Let the cake cool, cut into slices and enjoy!"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

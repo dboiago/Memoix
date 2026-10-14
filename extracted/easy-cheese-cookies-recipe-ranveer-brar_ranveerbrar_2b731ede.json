@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cheese Cookies",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "26",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-heat the oven at 200Â° C.",
+      "In a large bowl add butter and cheese, and cream together until smooth.",
+      "Add flour and red chili in another bowl and mix well.",
+      "Add the flour mix to the creamed butter and cheese. Mix well forming a dough.",
+      "Divide the dough into two equal portions, form a log of each.",
+      "Wrap the prepared logs in a parchment paper or cling wrap and refrigerate for 30 minutes.",
+      "Slice the logs into 1/2 inch thick slices and place on a lined baking tray.",
+      "Bake it for 15 minutes at 160Â° Celsius",
+      "Allow to cool on a wire rack.",
+      "Store in an air tight container or serve as a snack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a81feef5e5555704e6d72aa640f22ee819de9109c7d30e610303800a84464cc",
+    "lineage_hash": "e7dca12740779789c72dab926b899cd7d2aea16bee6977fcfbf9f5aaced58f49"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-cookies/",
+    "fetchedAt": "2026-08-02T08:44:43.751Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

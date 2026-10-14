@@ -1,0 +1,218 @@
+{
+  "recipe": {
+    "name": "Cowboy Beans with Fried Eggs",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Submerge the dried chillies in the hot brewed coffee",
+      "Toast the cumin and coriander seeds in a dry pan over a medium heat for a minute or so until they start to smell aromatic then grind to a powder",
+      "Heat a couple of tablespoons of oil, then add the pancetta and cook until the fat has rendered. Remove the cooked pancetta from the pan. Add in the onions and cook until soft, scraping up all the bits from the bottom of the pan. Add the peppers and cook until softened",
+      "Remove the chillies from the coffee and slice them, discarding their stalks and seeds. Add them to the pan along with the Scotch bonnet, garlic, dried chillies, cumin, coriander, Worcestershire sauce and coffee",
+      "Return the meat to the pan together with the stock, tinned tomatoes, cinnamon stick and bay leaves and mix",
+      "Bring to a boil then reduce to a simmer. Cook for 30 minutes, or until everything is thick and rich. Check the seasoning and add salt and pepper as necessary",
+      "After this time, remove the lid and add the beans. Cook for a further 30 minutes then remove from the heat before adding the vinegar and chocolate",
+      "While the chilli is resting, fry the eggs until crisp on the bottom and serve on top of the chilli with the jalapeños, sour cream and tortilla chips"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ancho Chillies",
+        "unit": null,
+        "notes": "or other mild Mexican smoky chilli",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "or smoked bacon lardons",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": "left whole but pierced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "cloves peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": "good quality",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Plum Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Black Beans",
+        "unit": "kg",
+        "notes": "drained weight",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeños",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tortilla Chips",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f34c8d54148949e712ce2067bbd3b1627793c301a80f24cceb1ed6845136ad61",
+    "lineage_hash": "ce38cbfda6931d6d9a4976e6fa24a2f97002e04fd249ed4f62e04ff39f3c223d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cowboy-beans-fried-eggs-recipe",
+    "fetchedAt": "2026-08-02T09:19:33.722Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cowboy-beans-fried-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

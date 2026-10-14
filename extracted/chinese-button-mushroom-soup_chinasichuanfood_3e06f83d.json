@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chinese Button Mushroom Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "60",
+      "carbohydrateContent": "2",
+      "fatContent": "5",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Clean the mushrooms and remove the ends. Add some vegetable cooking oil and fry the mushrooms surface down so the bottom shape can help to hold the juice. Use slowest fire during the process to avoid burnt bottom.",
+      "Break the mushrooms into smaller pieces with a scoop. Place in 3 slices of ginger and 4-5 green onion sections. Fry until aromatic.",
+      "Add around 800ml to 1 L water. Bring to boil, season with salt, light soy sauce and white pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "ends removed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Sections",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62e6a719f1597a598fa7a44585751f72c5fd376f5a7b580e217d746a5c1f73c3",
+    "lineage_hash": "b9065cd4dac1903d8fc71da1b3efa5c0a930017b458d63a676b4734c8a014cfd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-button-mushroom-soup/",
+    "fetchedAt": "2026-08-02T07:08:21.708Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-button-mushroom-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

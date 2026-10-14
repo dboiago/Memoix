@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Babka",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients for the babka  to a blender (except the eggs and black sesame paste) and blitz to combine",
+      "Once well-mixed, add the eggs slowly until fully combined",
+      "Remove about half the batter and add the black sesame paste to the blender. Blitz the batter and sesame paste until well-combined",
+      "Pour the white and black batters into a single jug at the same time (from opposite sides) so that each coloured batter occupies each half of the jug from top to bottom",
+      "Pour the batter into a greased loaf tin, swirling the batter as it comes out, to create a marbled effect",
+      "Bake for about 35–40 minutes, or until a knife comes out clean when inserted into the centre of the cake. Leave to cool before cutting",
+      "While the cakes are cooking, make the fig leaf dressing. Blend the oil and fig leaves at high speed in a blender for a minute or so until very well-chopped",
+      "Transfer to a pan. Stir and heat the mixture to about 80–90°C for a few minutes then leave it to cool to room temperature",
+      "Strain through a fine sieve, squeezing any excess oil out of the pulp, and discard the pulp. Whisk the honey and oil together until fully combined",
+      "Serve with the sweet fig leaf dressing, a scattering of poppy seeds and some Valençay cheese (or another high quality goat's cheese). Decorate with cinnamon bark"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marzipan",
+        "unit": "g",
+        "notes": "white",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "g",
+        "notes": "this can be made by roasting black sesame seeds and blending with a little vegetable oil",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fig Leaves",
+        "unit": "g",
+        "notes": "washed and ripped up",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": "or other neutral vegetable oil",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valençay Cheese",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "layers of bark separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9a42260d399d2f98b21373c2f69401f7b2011e1f8987be83e69b92ad92efe09",
+    "lineage_hash": "d69af295e5b87ced1bd9ba5ded0b9bcda141b78d9615f68bc76fe408f83d8b88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/babka-recipe-valencay-cheese",
+    "fetchedAt": "2026-08-03T10:39:28.876Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/babka-recipe-valencay-cheese",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

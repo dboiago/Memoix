@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Dutch Sour",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "SHAKE all ingredients with ice and strain back into shaker",
+      "DRY SHAKE (without ice) and strain into ice-filled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "ml",
+        "notes": "pasteurised",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07b448cf9adcf701ee5d9ed48fe59946565592f88b77ee33ec8251e1747b584f",
+    "lineage_hash": "deda832902fdc67bc7d3ac3d6921a452dc3b211edd6946cd673934c374d12ee9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4194/dutch-sour",
+    "fetchedAt": "2026-08-03T12:48:39.535Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4194/dutch-sour",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

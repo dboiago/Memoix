@@ -1,0 +1,42 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cupra-recipe",
+  "slug": "cupra-sea-bream-with-chimichurri_greatbritishchefs_6f52b7b4",
+  "title": "Cupra (sea bream) with Chimichurri",
+  "byline": "by George Farrugia",
+  "fetchedAt": "2026-08-02T17:21:05.787Z",
+  "ldName": "Cupra (sea bream) with chimichurri",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Main",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "20g of fresh parsley, finely chopped",
+    "30g of dill, finely chopped",
+    "30g of white balsamic vinegar",
+    "30g of extra virgin olive oil",
+    "30g of red onion, finely chopped",
+    "2g of Maldon salt",
+    "10g of red chillies, finely chopped",
+    "1 sea bream, canoe cut (spine and guts removed, but not filleted)",
+    "1/2 lemon, thinly sliced",
+    "1 sprig of lemon thyme",
+    "1 garlic clove, roughly chopped",
+    "1g of Maldon salt",
+    "olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat your grill to a high heat, or prepare your barbecue and clean and oil the barbecue grates. If using a barbecue it can be helpful to use a fish basket, which will both make the stuffed fish easier to flip and also help prevent anything falling through the grates.",
+    "Mix together all the ingredients for the chimichurri",
+    "Stuff the fish with the sliced lemon, thyme, garlic and salt. Pat the outside of the fish dry, and then rub the fish skin with olive oil and sprinkle with some more salt",
+    "Grill the fish either in the fish basket on the barbecue or directly or under the grill for about 6-7 minutes, then try and flip it onto the other side. If the skin releases easily, flip it over and cook for around 5 more minutes on the other side. If it doesn't, wait another minute then try again",
+    "Serve the grilled fish with the chimichurri on top"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

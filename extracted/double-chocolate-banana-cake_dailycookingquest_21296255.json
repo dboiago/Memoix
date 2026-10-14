@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Banana Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 175 Celsius (350 Fahrenheit). Grease a 9\"x5\" loaf pan, set aside.",
+      "In a mixing bowl, stir together mashed banana, melted butter, brown sugar, egg, and vanilla extract.",
+      "Sift all purpose flour, cocoa powder, baking soda, and salt into the mixing bowl. Stir until the wet ingredients and the dry ingredients is just combined.",
+      "Add dark chocolate chunks, stir to distribute evenly, then pour into prepared loaf pan.",
+      "Bake for about 1 hour, or until a cake tester comes out clean.",
+      "Let the cake rest in the pan for 15 minutes, then run a knife along the pan edges to loosen the cake, invert it onto a wire rack to cool completely. Serve warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Banana",
+        "unit": null,
+        "notes": "slightly more than 1 cup mashed banana, mashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick (8 Tablespoon) Unsalted Butter",
+        "unit": null,
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "skip if using salted butter",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chop into chunks",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fbd49819a493313ace7ab3a72dc79138c3ac5abd94871f1cf5b4b853bd622344",
+    "lineage_hash": "c2613ec20bf65d0cd9b2a519c166e6fd1b514e0fef4195986a7ad2dee95889f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/double-chocolate-banana-cake.html",
+    "fetchedAt": "2026-08-02T03:58:09.512Z"
+  },
+  "rawSource": "https://dailycookingquest.com/double-chocolate-banana-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

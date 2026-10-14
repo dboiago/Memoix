@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Chocolate & Cumin Fudge",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the double cream, caster sugar and glucose in a pan. Place over a low-medium heat and allow to slowly come to the boil, whisking continuously",
+      "Bring to 118°C and remove from the heat, add the chocolate and cumin and whisk well by hand for 2 minutes",
+      "Cling film the bottom and sides of a 1inch deep tray. Pour in the fudge mixture and leave to set for at least 1 hour",
+      "Once set, slice into small cubes and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "55% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e48d2dc1aa1438f6f20d3ef7e8e124dc664fc4f217c7786543a0713d52bc8df",
+    "lineage_hash": "dccb4925910fc29627faec13a77fa88c16cbc20659284dead9bc8368ab1b7876"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cumin-fudge-recipe",
+    "fetchedAt": "2026-08-03T18:53:13.687Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cumin-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

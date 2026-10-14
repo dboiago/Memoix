@@ -1,0 +1,60 @@
+{
+  "url": "https://omnivorescookbook.com/coconut-mochi/",
+  "slug": "coconut-mochi-lo-mai-chi_omnivorescookbook_2f308499",
+  "title": "Coconut Mochi (糯米滋, Lo Mai Chi)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:42:09.856Z",
+  "ldName": "Coconut Mochi (糯米滋, Lo Mai Chi)",
+  "ldTime": "PT95M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "10",
+    "10 mochi"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "mid-autumn festival",
+  "ldIngredientsRaw": [
+    "120 g (1 cup + 2 tablespoons) glutinous rice flour",
+    "3 tablespoons (30 g) cornstarch",
+    "50 g (1/4 cup) white sugar",
+    "1 cup coconut milk ((or other plant milk))",
+    "28 g (2 tablespoons) coconut oil ((or butter))",
+    "200 g (3/4 cup) red bean paste",
+    "1/2 cup coconut (, shredded)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the glutinous flour, cornstarch, and sugar in a big bowl. Drizzle the coconut milk while stirring to mix until the batter becomes smooth. Run the batter through a sieve and press down on any bits that are not fully dissolved. Repeat two more times until there’s no clumps left.",
+    "Prepare a steamer by adding 2” (5 cm) water to the steamer pot and bring the water to a boil. Place the bowl of batter onto the steamer rack. Cover and steam over medium-high heat for 25 minutes. (*Footnote 1) Test the dough by inserting a chopstick into the center. The chopstick should come out clean.",
+    "Meanwhile, prepare the filling by dividing the red bean paste into 10 pieces, about 1 tablespoon (20 g) per piece. Shape the red bean paste with your hands into a ball. Place all the red bean paste balls onto a plate and cover with plastic wrap. Store in the fridge until ready to use.",
+    "Once the batter is steamed, remove from the steamer. Let the dough cool off for 10 minutes. Add the coconut oil (or butter). Use a spatula to mix in the oil. If you find the oil hard to mix in, let the dough cool off a bit more and work it with your hands when the dough has cooled enough to handle. Gently fold the dough until the oil is fully incorporated. (*Footnote 2)",
+    "When the dough is cool enough to handle, line your working surface with plastic wrap and wear a pair of plastic (or vinyl) gloves. Transfer the dough onto the working surface. Fold the dough a few more times, then shape it into a ball. Wrap the dough with plastic wrap and let cool in the fridge for 20 minutes, until it has cooled down more.",
+    "When the dough has cooled (warm dough is OK), put on your gloves again. Divide the dough into 10 even pieces (*Footnote 3), about 45 g per piece. Shape each piece of dough into a round disk with your hands, about 3.5” (9 cm) in diameter. Add the red bean paste ball in the center. Seal the dough by wrapping the disk towards the top center. Pinch well to seal the filling. Roll the wrapped mochi a few times into a round shape, then roll the mochi in the bowl with shredded coconut to coat well. Transfer the mochi to a cupcake liner. Repeat with the rest of the mochi.",
+    "Enjoy the mochi at room temperature. You can also store them in the fridge for 3 to 4 days, or freeze them for up to 3 months. Once refrigerated, you should heat the mochi gently in the microwave so the texture will soften."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "193 kcal",
+    "carbohydrateContent": "15.9 g",
+    "proteinContent": "10.9 g",
+    "fatContent": "10.1 g",
+    "saturatedFatContent": "8.7 g",
+    "sodiumContent": "8 mg",
+    "fiberContent": "0.9 g",
+    "sugarContent": "6.1 g"
+  },
+  "htmlIngredientLines": [
+    "120 g (1 cup + 2 tablespoons) glutinous rice flour",
+    "3 tablespoons (30 g) cornstarch",
+    "50 g (1/4 cup) white sugar",
+    "1 cup coconut milk (or other plant milk)",
+    "28 g (2 tablespoons) coconut oil (or butter)",
+    "200 g (3/4 cup) red bean paste",
+    "1/2 cup coconut , shredded"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

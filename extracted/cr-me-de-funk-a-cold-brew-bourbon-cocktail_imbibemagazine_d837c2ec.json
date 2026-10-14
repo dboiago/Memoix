@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Créme de Funk",
+    "time": "24 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker filled 3/4 full with ice and shake. Strain and dry shake. Double strain into a glass filled 3/4 full with ice. Garnish.",
+      "Cold-Brew BourbonSplit the bourbon in half (375 ml.). You will use half to brew and half after to cut the heaviness of the coffee. Add 4 oz. of coffee to the bottom of the Toddy. Slowly pour half of the coffee grounds to the Toddy in a circular motion to keep the grounds level. Add 125 ml. of bourbon slowly in a circular motion over the top of the grounds. Let sit for 5 minutes. Add the second half of the coffee grounds over the top of the existing coffee/bourbon in a circular motion. Add 125 ml. of the bourbon.",
+      "Cover with plastic wrap or Toddy cover and place in the refrigerator for 12-18 hours. Pull the plug on the Toddy and strain into a glass container. Measure the cold-brew bourbon and add an equal amount of bourbon reserved to “dilute” the cold-brew bourbon. Keep in an airtight container. Will keep for 2-3 weeks.",
+      "Cold-Brew Bourbon (without Toddy)Prepare the mixture in one 32 oz. jar (or two 16 oz. jars). Add 100 ml. of bourbon to the bottom of the jar and pour a 1/2 lb. of coffee grounds to the jar in a circular motion. Then, add the remaining bourbon (275 ml.) in a circular motion over the coffee grounds. Cover the mixture and let it sit for 18 hours. Next, place 3-4 lightly moistened coffee filters into a mesh strainer, stir the coffee grounds, and slowly pour the mixture into the strainer. Check for coffee grounds and strain again if needed. Measure by volume and add whiskey to dilute."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Px Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "pasteurized if you like or vegan alternative",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ethiopian Yirgacheffe Coffee",
+        "unit": "lb",
+        "notes": "ground for French press",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4780e4f6777c36bcb39765d656c8f6ad2eebc7572c8b689e2e2cb28491e6d215",
+    "lineage_hash": "62aa025ebca7b2d96ab5dbf8c0810005651729d21c7529f84287557f96aa1241"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/creme-de-funk-a-cold-brew-bourbon-cocktail/",
+    "fetchedAt": "2026-08-04T00:07:58.531Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/creme-de-funk-a-cold-brew-bourbon-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

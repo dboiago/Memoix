@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Burrata in Pastry with Tomato Sauce",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the dehydrated olives the day before cooking. Place the water and sugar in a pan and bring to the boil. Add the olives and boil for a further 10 minutes – this will reduce their bitterness. Drain well and leave to dry",
+      "Place the olives in a baking tray lined with greaseproof paper and bake in the oven for 4 hours. Allow to cool before blitzing in a blender until coarsely ground",
+      "To make the unripe tomato sauce, add the oil to a saucepan and cook the tomatoes, carrot and onions over medium heat for 15 minutes",
+      "Season with salt, add the basil leaves and leave to stand for 15 minutes before blending to obtain a smooth, creamy consistency. Pass through a fine sieve and set aside",
+      "For the basil sauce, wash and blanch the basil leaves in 1 litre of boiling water for 3 minutes, then soak them in a bowl with 7 litres of water and 10 ice cubes. Allow to cool then drain",
+      "Blend the basil leaves, 5 ice cubes, the extra virgin olive oil and a pinch of salt with a hand-blender. You should obtain a liquid sauce. Pour into a jug and set aside",
+      "For the kataifi-wrapped burrata cheese, drain the burrata and dry well on paper towels",
+      "Lay out the kataifi pastry on a work surface and cut it into four squares of approximately 15x15 cm. Place some burrata on each square and roll it in the pastry to make balls",
+      "Line a baking tray with greaseproof paper and place the burrata balls on top. Add the extra virgin olive oil and bake at the top of the preheated oven for 6 minutes",
+      "To serve, pour some of the unripe tomato sauce into each bowl and place a burrata ball on top. Sprinkle some dehydrated olives around on top",
+      "Spoon the basil sauce in a circle over the burrata balls and place three slices of Capocollo ham on the sides of each plate. Place a basil leaf on top of burrata and finish with some strips of sun-dried tomato"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Burrata",
+        "unit": "g",
+        "notes": "x4",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pastry",
+        "unit": "g",
+        "notes": "Kataifi",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "unripe cherry",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capocollo Di Martina Franca",
+        "unit": "slices",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "brushed with olive oil",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dfb1a4a77699b77ac8e81caa5730b5f48d29ac4bd391af3cbaee8afa0868a0b0",
+    "lineage_hash": "d83547dc03d1f5dfaa24c0a20ad87c6cb576447f5965af89dad26e382f8a1be1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/burrata-kataifi-pastry-recipe",
+    "fetchedAt": "2026-08-02T07:38:19.529Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/burrata-kataifi-pastry-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

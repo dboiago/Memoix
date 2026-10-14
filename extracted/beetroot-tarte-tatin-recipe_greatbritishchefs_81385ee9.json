@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Beetroot Tarte Tatin",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the beetroot in salted boiling water until soft (around 30–40 minutes). Peel whilst still warm as the skins come off easier than when cooled. Slice the beetroot into 7mm-thick discs",
+      "Preheat an oven to 220°C/gas mark 7",
+      "Place a frying pan over a medium-high heat and add the butter. Once melted, add the garlic cloves, rosemary and beetroot slices with some salt and pepper and toss to combine",
+      "Once the beetroots are coated with the butter, add the pinch of sugar and stir into the butter to form a light syrupy texture",
+      "Remove from the heat and keep the beetroot slices and butter sauce separate. Drizzle the sauce into an ovenproof frying pan then arrange the beetroot in a spiral pattern (discard the garlic cloves)",
+      "Cut the pastry to the size of the pan and prick all over with a fork to prevent it puffing up too much. Lay it over the beetroot slices, tucking it round the edges . Place in the oven to cook for 15 minutes",
+      "Turn down the heat to 180°C/gas mark 4 and cook for 10–15 more minutes",
+      "Once nicely browned and crisp, remove from the oven and flip out onto a plate. Don't wait long to do this otherwise the caramel will stick it to the pan",
+      "Enjoy hot or at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "g",
+        "notes": "roughly the same size",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "or vegan spread",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "bashed with skin on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": "use vegan puff pastry if keeping this dish vegan, rolled out to 3mm thick",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d80302063b25dfa6ef9566c60302d03184d23a8a6b5bceef164ee100b035cfe",
+    "lineage_hash": "2f9558797c94a174c99a434570cea3a34b073df05c747223a4d09b7edf761101"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-tart-tatine-recipe",
+    "fetchedAt": "2026-08-03T06:07:04.978Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-tart-tatine-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

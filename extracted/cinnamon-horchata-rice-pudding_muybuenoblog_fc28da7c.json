@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Cinnamon Horchata Rice Pudding",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "166",
+      "carbohydrateContent": "35",
+      "fatContent": "2",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a large saucepan, combine rice, sugar, almond milk, rice milk, vanilla extract, cinnamon sticks, and cloves.",
+      "Bring to a boil and then lower heat to low heat and simmer the rice until it is very soft and achieves a thick, pudding-like consistency, about 35 minutes. Cover and let rest for 10 minutes.",
+      "Remove the cinnamon sticks and cloves.",
+      "This rice pudding can be served warm or chilled and sprinkled with ground cinnamon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long-grain Rice",
+        "unit": "C",
+        "notes": "or Arborio Rice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla-flavored Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon to Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0fa026e7065d89645056e9bb2d57a60e42d650955c361c0fb6f76af2f63ebddb",
+    "lineage_hash": "0dc443877e3cdf9e67b41fe16deda291a9fbdff26a1a2e1490e4ec703c7376b8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cinnamon-horchata-rice-pudding/",
+    "fetchedAt": "2026-08-01T19:45:25.233Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cinnamon-horchata-rice-pudding/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

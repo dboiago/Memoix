@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Classic Sidecar",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice and strain into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97f9e8c63291c486de587e1842b7501e0ede004222b3bce7ab6aadb6d7d64e22",
+    "lineage_hash": "833847101969a3d82d4ceb740dfb71890e95d56a5a164345008e66deb1b33fca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/sidecar-recipe/",
+    "fetchedAt": "2026-08-03T23:43:45.479Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/sidecar-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

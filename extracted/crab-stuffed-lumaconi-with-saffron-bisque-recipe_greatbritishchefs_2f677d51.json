@@ -1,0 +1,337 @@
+{
+  "recipe": {
+    "name": "Crab-Stuffed Lumaconi with Saffron Bisque",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the crabs. Boil in a large pot of salted boiling water for around 15 minutes",
+      "Once the crabs have turned bright red and float in the water, you know they are cooked. Remove them from the pot, lay them on their back and twist off the legs and claws",
+      "Next, holding firmly onto the shell, push the body section out with your thumbs",
+      "Remove the feathery gills (also known as ‘dead man’s fingers’) and discard them, then scoop out the brown meat from the shell",
+      "Next, cut the main body in half, and using a lobster pick remove the white meat. Crack open the legs and use a pick to remove the white meat before twisting apart the claw sections and breaking them using the end of a heavy knife or a cleaver. Remove the white meat, and setting it aside",
+      "Pick through the brown and white meat, making sure there isn't any shell in the meat, then mix the crab meat in a large bowl with the remaining crab stuffing ingredients apart from the pasta and olive oil. Season with salt and pepper then set the stuffing aside",
+      "Next, prepare the crab stock. Heat the olive oil in a large pot over a medium heat then add in the reserved crab shells. After around 30 seconds, add in the onion, celery and carrot and cook until soft, about 10 minutes. Add in the garlic and cook for a minute or so until fragrant",
+      "Add in 2 litres of water, making sure to completely cover all of the shells. Season with salt and pepper then leave to simmer for 20 minutes, skimming off any impurities from the top of the stock as you go",
+      "While the stock is simmering, cook the lumaconi in boiling salted water as per the packet instructions until just al dente",
+      "Strain the pasta, then mix it with a drizzle of olive oil to stop it sticking together",
+      "Use a teaspoon to stuff each of the pasta shapes with the crab filling. Set them aside on a plate or baking sheet while you prepare the parsley crumb",
+      "Warm the olive oil in a frying pan over a medium heat, then add the breadcrumbs, sesame seeds and parsley. Cook, stirring frequently, until golden brown and crisp",
+      "Season with salt and pepper then set aside until serving",
+      "Next, strain the crab stock through a fine mesh strainer and set aside",
+      "For the bisque, heat the olive oil over medium heat in a large pot. Add the onions and celery and cook down for 10–15 minutes until soft, then add in the garlic and cook until fragrant, about 1 minute",
+      "Add in the tomato paste and cook out for a minute or so while mixing it in with the veg",
+      "Next, add in the white wine and thyme and simmer until reduced by half. Once reduced, add in the crab stock along with the saffron and lemon juice",
+      "Bring to a simmer then cook for around 10 minutes before puréeing until smooth with a stick blender",
+      "Strain the bisque through a fine mesh sieve into another saucepan, then season with salt and pepper",
+      "Add the cornflour slurry into the bisque. Let it simmer and thicken until it coats the back of a spoon, then taste and season with salt and pepper as needed",
+      "Spoon some of the bisque into an ovenproof dish so that it is about 5 cm deep in the dish. Arrange the crab-stuffed pasta shells in the dish, then drizzle with olive oil",
+      "Roast in the oven for 10 minutes or until browned and crisp on top",
+      "Remove from the oven and sprinkle with the parsley crumb, chilli oil, fresh parsley and lemon zest along with some more black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Live Brown Crabs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boursin",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Chives",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garofalo Lumaconi Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled but left whole",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": "mixed with 2 tablespoons water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78e9925a225cc3b67f0702120d85e0cf39bc60a300b64cc0467e5f15e5343177",
+    "lineage_hash": "d185e3d7d45fecaeaecfe994c4790c7f9bd0838543db489264a561e442cf6b04"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-stuffed-lumaconi-saffron-bisque-recipe",
+    "fetchedAt": "2026-08-02T04:46:43.364Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-stuffed-lumaconi-saffron-bisque-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

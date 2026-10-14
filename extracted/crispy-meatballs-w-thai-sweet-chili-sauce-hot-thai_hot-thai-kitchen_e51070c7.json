@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Crispy Meatballs w/ Thai Sweet Chili Sauce",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "100",
+      "carbohydrateContent": "5",
+      "fatContent": "6",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Soak glass noodles in room temp water until pliable - about 7-10 minutes, though this may take longer if the brand's noodles are thicker.",
+      "Meanwhile, pound the garlic, peppercorns and cilantro stems into a fine paste in a mortar and pestle.",
+      "Put the ground pork in a mixing bowl and add the herb paste. Add the soy sauce, oyster sauce, sugar, egg and cornstarch. Knead with your hands for a few minutes until thoroughly mixed and the mixture becomes thicker than when it started. Once ready, the mixture will seem soft but should be able to hold its shape; if not, you can add a bit more cornstarch.",
+      "Drain the glass noodles and place them on a towel to absorb excess water. Use scissors to cut the glass noodles into 2-inch pieces.",
+      "Add the glass noodles and chopped green onions into the mixture and mix just until the noodles are well distributed.",
+      "Form the meatballs into roughly 1.5 inch balls; tucking in any long pieces of noodles that protrude out. If you see any green onions sitting on the surface you can push them inside so they will not burn or fall off during frying - though this is not a big deal if you don’t have the patience! If you want, you can dip your hands in water and the meatballs will not stick to your hands and will be smoother, but I prefer them to stick to you a bit as they get a more interesting rough surface.",
+      "Heat about 1.5 inch of frying oil in a pot or wok to about 325°F. Add the meat balls one at a time; you can even crowd them a bit here as they will not get oil-soaked even if the temperature drops a lot. Let them fry for about 20 seconds to firm up and gently stir to make sure they’re not sticking.  Fry them for about 5-6 minutes, stirring occasionally, until the internal temp is 160°F (71°C) - or you can cut one open to check doneness. Remove from the oil and drain on a rack or paper towel.",
+      "Allow them to cool for about 5 minutes before serving. They’re great on their own, but better with sweet chili sauce and a side of fresh cucumber."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Glass Noodles",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Stems",
+        "unit": null,
+        "notes": "or 3 cilantro roots, chopped",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": "see note 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "see note 2, large or medium",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "see note 3",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frying Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Sweet Chili Sauce",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": null,
+        "notes": "for serving (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16a18a56381f7a64d010b3198faecd5e85d968a6ab3c0c08edf11d0e8d516047",
+    "lineage_hash": "9e82f0812be221d3d844a76a493fbbcb8765a23cbe2cb6ed91f86b803c9ef930"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/noodle-meatballs/",
+    "fetchedAt": "2026-08-02T05:09:28.522Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/noodle-meatballs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

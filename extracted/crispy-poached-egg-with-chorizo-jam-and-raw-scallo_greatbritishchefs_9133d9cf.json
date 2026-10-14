@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Crispy Poached Egg with Chorizo Jam and Raw Scallops",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the chorizo oil, it needs to infuse for 24 hours so bear this in mind when prepping for the dish. Sauté the chorizo until well coloured and then cover with the oil. Take off the heat and once cooled, refrigerate. Leave to infuse for 24 hours then strain",
+      "To make the chorizo jam, blend the yolk in a food processor on a low speed. Heat the glucose and salt to 86°C and slowly add to the yolks. Increase speed to medium and blend for two minutes",
+      "Slowly add the chorizo oil and blend until mixture has thickened. Cool over ice and reserve",
+      "Next poach the eggs. Bring a large deep pan of unsalted water to boil, add the vinegar, turn down to a simmer and then stir to create a gentle whirlpool. Gently crack four of the eggs one by one as close to the surface as possible. Poach until the eggs are firm enough to lift out into iced water (but still with runny yolks)",
+      "Gently heat a pan of vegetable oil to 180°C ready to cook the eggs",
+      "Carefully drain the eggs and pat dry before dusting in seasoned flour, shake off any excess and then roll in the remaining egg which has been lightly beaten. Coat in the breadcrumbs",
+      "Dice the scallops and dress with a little lemon juice and chorizo oil",
+      "Deep fry the eggs until crisp and golden, be careful you don't overcook them as you still want a runny centre",
+      "Spoon the dressed scallops into 4 bowls and top with the diced chorizo and chorizo jam. Carefully slice a v-shaped section out of the eggs and place in the centre of the bowls. Garnish with sprigs of dill"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil (1)",
+        "unit": "g",
+        "notes": "or another neutral oil",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "43",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallops",
+        "unit": "large",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "diced to 5mm",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e74f6e5350fd131cbb9662ae4d09fa7b79e224f74a03fa798a162839b641a068",
+    "lineage_hash": "8d3415d5dc934fa859fb15d6cb38bcdb7690a748185280095c089e2cfa47ef3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-poached-egg-chorizo-scallop-recipe",
+    "fetchedAt": "2026-08-03T06:45:26.730Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-poached-egg-chorizo-scallop-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

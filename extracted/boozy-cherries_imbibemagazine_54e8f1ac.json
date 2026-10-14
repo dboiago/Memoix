@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Boozy Cherries",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sterilize a 1 1/2-quart (1.5-L) jar per the manufacturer’s instructions. Rinse the cherries in cold water, dry thoroughly, and remove any debris. Using a clean, sterile needle, begin to prick each cherry on all sides 5 or 6 times, adding them to the jar once they’re pricked. Add the eau-de-vie or vodka until it covers and submerges the cherries. Place in a cold, dark pantry or refrigerator and let sit for at least 6 months, or up to a year. Once opened, keep refrigerated and consume within a month.\nNOTEUse pristine fruit that’s not blemished or overripe. Leave the stems on each cherry, to make them easier to extract later."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Cherries",
+        "unit": "lb",
+        "notes": "if using vodka, such as Napoleon (if using eau-de-vie), or red cherries",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Eau-de-vie",
+        "unit": null,
+        "notes": "750-ml, such as eau-de-vie de marc de raisin de Bourgogne or grappa",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Vodka",
+        "unit": null,
+        "notes": "750-ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45ddf7883de32d39ad0b47514e3fbc2eb06ec168e2a22d1b513c767cf6438526",
+    "lineage_hash": "33e35a30b4a4af36f60724850f3e16c0a2821f84aaa25b7c32b2913029edf5a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-cherries/",
+    "fetchedAt": "2026-08-04T00:40:15.352Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-cherries/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

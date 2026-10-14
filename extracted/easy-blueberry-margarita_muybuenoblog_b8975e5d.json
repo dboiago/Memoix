@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Easy Blueberry Margarita",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Cocktail",
+    "garnish": [
+      "Fresh Blueberries"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "312",
+      "carbohydrateContent": "33",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Rub the rim of two glasses with a lime wedge. Swirl the rims through a small pile of kosher or sea salt and lime zest. Add ice cubes to the glasses.",
+      "In a cocktail shaker muddle the blueberries and lime juice until the blueberries are pulverized. Add the tequila, agave nectar, orange liqueur, and a handful of ice to the shaker.",
+      "Shake vigorously for 15 seconds, and then strain into the prepared glasses.",
+      "Garnish with fresh blueberries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila",
+        "unit": "oz",
+        "notes": "blanco or reposado",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt and Lime Zest for Rimming the Glass",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f1aa3dc0f9bc0f656736ad05b2475e62d4201bc483aa5ecaaff4eb29d20867a",
+    "lineage_hash": "3064e1f2857e1e965f2c42d5207343c1af7b4e657805ef5b3c0c77e1655c2271"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/blueberry-margarita/",
+    "fetchedAt": "2026-08-02T00:13:01.525Z"
+  },
+  "rawSource": "https://muybuenoblog.com/blueberry-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cranberry-orange-sauce",
+  "slug": "cranberry-sauce-recipe_greatbritishchefs_5fe1da1b",
+  "title": "Cranberry Sauce Recipe",
+  "byline": "by Galton Blackiston",
+  "fetchedAt": "2026-08-03T03:28:06.696Z",
+  "ldName": "Cranberry sauce",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 large orange, zested and juiced",
+    "300g of cranberries, fresh or frozen",
+    "2 tbsp of redcurrant jelly",
+    "1 tbsp of red wine vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "Place all of the ingredients into a saucepan, pop the lid on top and then place over a high heat",
+    "Allow the sauce to come to the boil. Once boiling, give the pan a good shake, then remove it from the heat and allow the sauce to cool completely with the lid on. Store in the fridge until needed"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

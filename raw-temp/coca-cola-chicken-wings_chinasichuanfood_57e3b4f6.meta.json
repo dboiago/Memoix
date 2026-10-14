@@ -1,0 +1,60 @@
+{
+  "url": "https://www.chinasichuanfood.com/coca-cola-chicken-wings/",
+  "slug": "coca-cola-chicken-wings_chinasichuanfood_57e3b4f6",
+  "title": "Coca Cola Chicken Wings",
+  "byline": "",
+  "fetchedAt": "2026-08-01T15:36:42.031Z",
+  "ldName": "Coca Cola Chicken Wings",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Chicken Wings, Cola",
+  "ldIngredientsRaw": [
+    "500 g chicken wings ( ,around 12 to 14 middle wings)",
+    "600 ml coca cola",
+    "1  large piece of ginger",
+    "4  scallions ( ,divided)",
+    "1/2 tbsp. cooking oil",
+    "a small pinch of salt",
+    "1 tbsp. light soy sauce ( ,optional for a mild spicy version)",
+    "1 tsp.  oyster sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Make some cuts on the back of the chicken wings, making the flavors better absorbing.",
+    "Add the chicken wings to cold water and cookign wine.   Cook for about 1 minute after boiling. This is optional, but it helps to remove the odd taste further.",
+    "Add about 1/2 tablespoon of cooking oil to a pan and fry the chicken wings until slightly browned. This step is a must. Browned and crispy surface brings lots of flavors.",
+    "Add coca cola in with allions and several slices of ginger. Then season with a very small pinch of salt, light soy sauce and oyster sauce.",
+    "Add the cola to the chicken wings. Simmer for 10 minutes, then turn up the fire and cook for another 10 minutes. During this process, pick up ginger and scallion and remove the floats on the surface.",
+    "Cook until all the sauce is coated on the chicken wings. Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 g",
+    "calories": "454 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "25 g",
+    "fatContent": "25 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "103 mg",
+    "sodiumContent": "115 mg",
+    "sugarContent": "27 g"
+  },
+  "htmlIngredientLines": [
+    "500 g chicken wings  ,around 12 to 14 middle wings",
+    "600 ml coca cola",
+    "1 large piece of ginger",
+    "4 scallions  ,divided",
+    "1/2 tbsp. cooking oil",
+    "a small pinch of salt",
+    "1 tbsp. light soy sauce  ,optional for a mild spicy version",
+    "1 tsp.  oyster sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

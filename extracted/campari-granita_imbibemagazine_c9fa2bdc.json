@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Campari Granita",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and stir.",
+      "Pour into an 8-inch square metal pan and freeze.",
+      "Stir the mixture with a spoon every hour or so to break it up into larger ice crystals.",
+      "If you forget to stir the mixture and it freezes solid, don’t panic.",
+      "To return the granita to its granular texture, break it into chunks and pulse briefly in a food processor.",
+      "To serve, spoon the granita into chilled glasses."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": "fresh, strained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32c1344681f78554e4cb8291d2d853da1054c84a69735b4b18480622f28339a5",
+    "lineage_hash": "c59180664b4e6d52b6611266a3e2fa97bcbaf0db159e840998564dfdcd5b46d2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campari-granita/",
+    "fetchedAt": "2026-08-03T19:30:25.448Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campari-granita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

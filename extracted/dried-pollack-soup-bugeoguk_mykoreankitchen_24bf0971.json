@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Dried Pollack Soup (Bugeoguk)",
+    "time": "40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Submerge the dried pollack strips in a bowl of water a few times and rinse them gently. Strain the water away. It won't take long for the dried pollack strips to reconstitute. Scan the hydrated pollack one strip at a time and checking for any fiddly bones that may be stuck on the pollack. Pull the bones out and remove as you find them. This can be a bit of a tedious process, but it is necessary for your fine dining pleasure. The pollack will feel like a wet sponge. Cut the pollack with scissors in 4cm (1.6 inch) lengths.",
+      "In a well heated, heavy based pot, add the sesame oil, pollack and minced garlic and sauté for 2 to 3 minutes over medium high heat. Add the radish and sauté for 3 to 5 minutes over medium high heat.",
+      "Add 1 cup of soup stock and boil for 3 to 5 minutes over medium high heat, covered.",
+      "Open the lid, add the rest of the soup stock (4 cups) and season the soup with Korean soup soy sauce and salt. Reduce the heat to medium low and simmer for an additional 10 minutes, covered.",
+      "Add the tofu and soybean sprouts. Boil over medium high heat until it reaches a rolling boil, which should take approximately 3-5 minutes. Next, add the egg and stir it into the mixture. Finally, garnish with green onions and red chilies.",
+      "Serve the soup with a bowl of rice, kimchi and other Korean side dishes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pollack",
+        "unit": "g",
+        "notes": "1.8 ounces, dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Radish",
+        "unit": "g",
+        "notes": "alt: daikon radish (3.5 ounces), peeled & thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Soup Stock",
+        "unit": "C",
+        "notes": "dried anchovy and kelp stock",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Soup Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or Kikkoman regular soy sauce, but this will make the soup look darker.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu (5.3 Ounces)",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soybean Sprouts",
+        "unit": "g",
+        "notes": "3.5 ounces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions (0.4 Ounce)",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": null,
+        "notes": "to taste (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilies (green or Red)",
+        "unit": null,
+        "notes": "(optional), thinly sliced & seeds removed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a0f5506d39997f2509fd9b5b1bf2e8d1eece9d8b3ccc4423a66fbce8f04c0f3",
+    "lineage_hash": "c86ec9bb07617c2e80191264c6aba4da4e7fe0d1874e40b435176f17f8d8325e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/dried-pollack-soup/",
+    "fetchedAt": "2026-08-02T01:09:00.262Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/dried-pollack-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

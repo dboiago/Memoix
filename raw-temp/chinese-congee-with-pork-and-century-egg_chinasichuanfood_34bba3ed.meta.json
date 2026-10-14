@@ -1,0 +1,68 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-congee-with-pork-and-century-egg/",
+  "slug": "chinese-congee-with-pork-and-century-egg_chinasichuanfood_34bba3ed",
+  "title": "Chinese Congee with Pork and Century Egg",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:06:28.870Z",
+  "ldName": "Chinese Congee with Pork and Century Egg",
+  "ldTime": "PT115M",
+  "ldPrepTime": "PT75M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "4",
+    "4 Making around 4 serving"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "dim sum, staple food",
+  "ldKeywords": "Congee",
+  "ldIngredientsRaw": [
+    "1/2 cup white rice ( , I am using jasmine white rice)",
+    "2.5 L water or stock",
+    "1  spring onion ( , finely chopped)",
+    "chopped coriander",
+    "pinch of salt",
+    "1/2 teaspoon salt",
+    "1 teaspoon cooking oil",
+    "1  century egg ( , shelled and diced)",
+    "1 cup minced pork",
+    "1/2 tablespoon cornstarch",
+    "1 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the rice; soak with clean water for at least 1 hour. Transfer out and drain.",
+    "Marinate rice with salt and oil. Rest for around 15 minutes. And then marinate minced pork with cornstarch and pinch of salt.",
+    "In a pot, bring water or stock to a boil and then add rice. After 10 minutes, turn down the fire to simmer for around 40 minutes or until the rice is almost broken. Stir several times to prevent rice stick to the bottom.",
+    "Place pork and century egg in. Continue simmer for around 5 to 8 minutes over medium fire.",
+    "Sprinkle salt and mix well.",
+    "Transfer to serving bowl, top with spring onion, coriander plus preserved Sichuan mustard (optional) before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "245 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "11 g",
+    "fatContent": "13 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "40 mg",
+    "sodiumContent": "1421 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1/2 cup white rice  , I am using jasmine white rice",
+    "2.5 L water or stock",
+    "1 spring onion  , finely chopped",
+    "chopped coriander",
+    "pinch of salt",
+    "[Marinades for rice]",
+    "1/2 teaspoon salt",
+    "1 teaspoon cooking oil",
+    "[Side ingredients]",
+    "1 century egg  , shelled and diced",
+    "1 cup minced pork",
+    "1/2 tablespoon cornstarch",
+    "1 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

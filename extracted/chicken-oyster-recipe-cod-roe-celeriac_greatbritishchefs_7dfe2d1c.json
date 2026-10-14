@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chicken Oyster Recipe, Cod Roe & Celeriac",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the hay baked celeriac purée and dice, wrap the hay crusts fully around both celeriacs and bake in the oven at 220˚C/Gas mark 8 for 35 minutes",
+      "Reduce the heat after this time to 160˚C/Gas mark 4 and continue cooking one of the celeriacs for 1 hour and the second for 45 minutes or until core temperature reaches 85°C",
+      "Remove both from the oven and allow to cool before cracking. Place the first celeriac (cooked for the hour) in a blender and blend until smooth, then season if required. Cut the flesh from the second celeraic into ½ cm dice",
+      "To serve, dot the cod roe puree around the plate along with the celeriac purée. Scatter the diced celeriac on the dots. The chicken oysters are then placed on top",
+      "To prepare the chicken oysters, heat a frying pan, and when hot add the oil. Seal the chicken oysters in the oil until golden. When they are golden, remove from the heat and drain",
+      "For the cod roe purée, pass the cod roe through a fine sieve, then place into a suitable sized bowl. Whisk in the grapeseed oil until incorporated (as it gets thicker, add a little warm water so as to stop it splitting)",
+      "Add the lemon juice. Taste and adjust if required. Put into a piping bag",
+      "For the crispy chicken skin, preheat the oven to 180˚C/Gas mark 6. Turn the chicken skins up the other way and scrape the excess fat off the skin. On a suitable sized baking tray, lay a sheet of silicon paper onto it",
+      "Add the skin and season lightly. Place another sheet of silicon paper on top along with another tray",
+      "Place into the oven and cook until golden brown and crisp. Allow to cool",
+      "To make the egg yolk dressing, poach the egg for 35 minutes at 65˚C in a water bath then cool in iced water",
+      "Remove the egg yolk from the egg white, then pass through a sieve into a suitable sized bowl. Stir in the oil to make a dressing",
+      "The dish is then finished with shards of the chicken skin. The egg yolk dressing is then drizzled around the plate. Finish with rocket flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Oysters",
+        "unit": null,
+        "notes": null,
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickens",
+        "unit": null,
+        "notes": "just the skin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Cod Roe",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "each weighing 250g, peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hay Crust",
+        "unit": "slices",
+        "notes": "rolled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Rocket Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab8f4f88717a9e8c61e26697c345c41f96689ac4d2207307ba7ffc02cbeaa3b8",
+    "lineage_hash": "5f71d12315424e85706faa2ef3fc3b13b31c5c4a5fa5231fc30373c68a2f34c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-oyster-recipe-cod-roe-celeriac",
+    "fetchedAt": "2026-08-03T17:30:09.082Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-oyster-recipe-cod-roe-celeriac",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

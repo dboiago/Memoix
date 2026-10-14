@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Cinnamon Toast Cookies (Sourdough Cookies with Vanilla and Cinnamon)",
+    "time": "4 hr 16 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the butter and sugar to a large bowl or the bowl of a stand mixer, and use an electric mixer on medium speed or the stand mixer fitted with the paddle attachment to cream the mixture until light and fluffy, about 3 minutes, scraping down the bowl halfway. Scrape down the bowl, then beat in sourdough discard and vanilla extract on medium low speed until combined. Scrape down the bowl again, then on low speed beat in the flour and salt until combined.",
+      "Scoop out half the dough (about 335 grams) onto a piece of plastic wrap, waxed paper, or parchment paper. Using the wrap or paper to help you, roll the dough into a log about 1 ½ inches wide. Repeat with the other half of the dough. Note: If it’s especially warm in your kitchen or if you’re using a soft European-style butter, the dough can be harder to roll into a log. If you have time to spare, divide it in half, then pop the dough into the fridge for about 15 minutes to firm it up just enough to make it stiffer.",
+      "Chill the logs for at least 4 hours, but you can leave them for up to 24 hours (if you’re not making them within 24 hours, place the logs in a freezer-safe bag or container and freeze for up to 3 months, then defrost in the fridge before baking. To freeze sliced cookies, see the FAQ).",
+      "When ready to bake, preheat the oven to 350ºF with racks in the upper and lower third. Line two sheet pans with parchment paper.",
+      "Pour the Demerara sugar, cinnamon, and flaky salt into a shallow dish or another sheet pan and use your fingers to combine, slightly breaking up the salt.",
+      "Unwrap one cookie log. Brush it lightly with the beaten egg white, then roll in the sugar mixture, pressing firmly so it adheres to the dough. Slice into ¼-inch-thick rounds. Lay cookies out on the parchment about 1 inch apart from each other. Repeat with remaining dough, keeping any cookies that don’t fit on the sheet pans in the fridge.",
+      "Bake until puffed and lightly golden brown, 14 to 16 minutes, swapping the tray racks halfway through baking. Let cool completely, then store in an airtight container for up to one week (or freeze for up to 3 months)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "1 cup, 2 sticks, at room temperature",
+        "amount": "226",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": "3/4 cup",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Starter Discard",
+        "unit": "g",
+        "notes": "5 tablespoons, unfed, 100% hydration",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "g",
+        "notes": "alt: extract, 1 tablespoon",
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "2 cups",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "g",
+        "notes": "1 teaspoon Diamond Crystal or ½ teaspoon Morton",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": "1 large, lightly beaten",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": "¼ cup, for rolling",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": "1 tablespoon, for rolling",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": "for rolling",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7c392289b8fc88e0952bf85a1ea3841cb5c0c3505c128b702964c3b15843a42",
+    "lineage_hash": "5b571453d54dbbef304692a51cd5a19ed30f2d52781b1e05315f66a4d11971fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/cinnamon-toast-cookies-sourdough-cookies-with-vanilla-and-cinnamon/",
+    "fetchedAt": "2026-08-01T16:53:16.112Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/cinnamon-toast-cookies-sourdough-cookies-with-vanilla-and-cinnamon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

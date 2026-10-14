@@ -1,0 +1,58 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/snacks-and-munchies-recipes/colorful-pickled-eggs-recipe/",
+  "slug": "colorful-pickled-eggs-recipe_amazingribs_3e4dcd65",
+  "title": "Colorful Pickled Eggs Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-01T20:19:17.433Z",
+  "ldName": "Pickled Eggs Recipe",
+  "ldTime": "PT2880M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT2880M",
+  "ldYield": [
+    "6",
+    "6 pickled eggs"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Appetizer, Sauces and Condiments, Side Dish, Snack",
+  "ldKeywords": "brining, eggs, hard boiled eggs, pickled eggs, pickling",
+  "ldIngredientsRaw": [
+    "16 ounce can or jar of plain beets",
+    "1 cup distilled white vinegar",
+    "¾ cup sugar",
+    "2 tablespoons Morton Coarse Kosher Salt",
+    "1 tablespoon pickling spices",
+    "1  medium onion",
+    "6  hard cooked eggs"
+  ],
+  "ldInstructionsRaw": [
+    "Prep. Pour liquid from the beets into a large bowl or jar that won't stain, glass is perfect.",
+    "Add the vinegar, sugar, and salt. Stir until the sugar and salt dissolve almost completely. Thinly slice the onion, separate it into rings then add it to the bowl or jar. Add the beets, eggs, and pickling spices too.",
+    "Chill. Cover and chill for 2 hours or longer before serving. That&#039;s long enough for the beet juice to color the eggs, and penetrate a bit. If you keep them for a day or longer the beet color will penetrate farther until the entire egg turns royal purple.",
+    "Serve. Enjoy them how you like (they make very colorful deviled eggs). They must be kept in the fridge."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "208 kcal",
+    "carbohydrateContent": "33 g",
+    "proteinContent": "7 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "187 mg",
+    "sodiumContent": "443 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "30 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "16 ounce can or jar of plain beets",
+    "1 cup distilled white vinegar",
+    "¾ cup sugar",
+    "2 tablespoons Morton Coarse Kosher Salt",
+    "1 tablespoon pickling spices",
+    "1 medium onion",
+    "6 hard cooked eggs"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

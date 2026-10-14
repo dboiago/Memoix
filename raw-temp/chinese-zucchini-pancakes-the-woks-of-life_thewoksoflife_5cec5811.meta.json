@@ -1,0 +1,64 @@
+{
+  "url": "https://thewoksoflife.com/chinese-zucchini-pancakes/",
+  "slug": "chinese-zucchini-pancakes-the-woks-of-life_thewoksoflife_5cec5811",
+  "title": "Chinese Zucchini Pancakes - The Woks of Life",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T18:03:48.552Z",
+  "ldName": "Chinese Zucchini Pancakes",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "zucchini pancakes",
+  "ldIngredientsRaw": [
+    "1  zucchini ((about 250 grams))",
+    "¾ teaspoon salt",
+    "2  eggs",
+    "2  scallions ((finely chopped))",
+    "¼ teaspoon white pepper",
+    "1 teaspoon sesame oil",
+    "½ teaspoon sugar",
+    "½ cup all purpose flour ((more or less))",
+    "Vegetable oil",
+    "Sesame seeds for sprinkling"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the zucchini clean and dry it with a kitchen towel.",
+    "Grate the zucchini using the coarse grate side of a box grater. In a large bowl, mix the grated zucchini with ¾ teaspoon of salt. Let sit for 15 minutes, and you’ll see visible zucchini juice at the bottom of the bowl, which we will keep. Now mix in 2 eggs, 2 chopped scallions, ¼ teaspoon ground white pepper, 1 teaspoon sesame oil, ½ teaspoon sugar, and about ½ cup all-purpose flour.",
+    "If you feel like you need more flour (this could depend on the size of the eggs, for example), add it 1 tablespoon at a time. The final batter should look like similar to regular ol’ breakfast pancake batter.",
+    "Now heat a flat-bottomed pan over medium heat, lightly brush the bottom with some oil, and pour some batter into the pan (make the pancakes whatever size you like). Sprinkle sesame seeds over the top and cook each side until lightly golden brown, about 3 minutes on each side. Repeat until you’ve used all the batter.",
+    "You can serve with a simple soy dipping sauce, chili oil, or whatever other condiments you like!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "212 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "5 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "82 mg",
+    "sodiumContent": "473 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 zucchini (about 250 grams)",
+    "▢ ¾ teaspoon salt",
+    "▢ 2 eggs",
+    "▢ 2 scallions (finely chopped)",
+    "▢ ¼ teaspoon white pepper",
+    "▢ 1 teaspoon sesame oil",
+    "▢ ½ teaspoon sugar",
+    "▢ ½ cup all purpose flour (more or less)",
+    "▢ Vegetable oil",
+    "▢ Sesame seeds for sprinkling (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

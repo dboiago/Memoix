@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Crab and Le Gruyère AOP Tart",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pastry, place all the ingredients in a large mixing bowl (apart from the egg) and mix together using your fingers until the mixture resembles fine breadcrumbs",
+      "Add the egg and milk mixture then bring the pastry together into a dough, being careful not to overwork it. Lightly roll the pastry into a disc, then wrap in cling film and place in the fridge to rest for 1 hour",
+      "Once the pastry has rested, dust a work surface with flour and roll the pastry out thinly (around 2mm thick). Carefully lower the pastry into the tart tin, ensuring there are no holes and there is plenty of overhang (but reserve a little pastry to fill any holes that appear during blind-baking). Return to the fridge to rest for 1 hour",
+      "Preheat an oven to 170°C/gas mark 3. Place a sheet of greaseproof paper on top of the rested pastry case and fill with baking beans (you could also use dry rice). Blind-bake the pastry case for 25 minutes",
+      "Remove the tart case from the oven, then lift out the baking beans and paper. Use the reserved raw pastry to fill in any holes or gaps in the pastry case, then return to the oven for 5 minutes. Set aside to cool while you make the filling, and turn the oven down to 140°C/gas mark 1",
+      "For the filling, whisk together the eggs, egg yolks and double cream. Season with salt, pepper and nutmeg, then stir in the chopped herbs, crab meat and Gruyère. Carefully pour the mixture into the tart case, then bake for 50 minutes, until it is lightly set with a slight wobble",
+      "To serve, carefully remove the overhanging pastry from the tart, then leave to cool slightly. Serve warm or cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten with 3 tbsp of milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "425",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herbs",
+        "unit": "g",
+        "notes": "such as parsley, chives and tarragon, finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ccd4c48bfacb8f3aa1b33a6f2e6a865dbe899591583bc571686a58327c68bc2",
+    "lineage_hash": "4dd480d56f4491669f3aefb94ae0153ab905290c785266b015c11e8e5bde00d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-gruyere-tart-recipe",
+    "fetchedAt": "2026-08-03T03:54:59.206Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-gruyere-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

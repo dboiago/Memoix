@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Delightfully Crunchy Parmesan Waffles",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the grated Parmigiano Reggiano DOP (or parmesan if you can’t find any of the real stuff) with the crumbled bread.",
+      "Place 1 tablespoon of the mixture in a waffle maker, adding some poppy seeds on top. Cook for 2 minutes. Then, before the wafers cool, place each one onto a curved surface to bend them and give them a little bit of shape.",
+      "Alternatively, spread 2 or 3 tablespoons of the mixture at a time on a microwave-safe plate lined with baking parchment and cook at full power for 1 minute and 15 seconds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parmigiano Cheese",
+        "unit": "oz",
+        "notes": "grated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "oz",
+        "notes": "sliced, crumbled into pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c69ef4720bf694a7cce7a577a1dcad6cce3bda3670100cc6fc9a9669b2db0df1",
+    "lineage_hash": "e49b1efc298ef41fe8eeff61424ea8e61c01f49faa6500c91622436e3f6e0275"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/delightfully-crunchy-parmesan-waffles",
+    "fetchedAt": "2026-08-03T08:50:31.817Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/delightfully-crunchy-parmesan-waffles",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

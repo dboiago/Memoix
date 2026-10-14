@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2021/02/19/chocolate-croissants-pain-au-chocolat/",
+  "slug": "chocolate-croissants-aka-pain-au-chocolat_baking-sense_781769fa",
+  "title": "Chocolate Croissants, aka Pain au Chocolat",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:59:50.233Z",
+  "ldName": "Chocolate Croissant Recipe",
+  "ldTime": "PT265M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "24",
+    "24 croissants"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Breakfast, brunch, Snack",
+  "ldKeywords": "chocolate, pastry",
+  "ldIngredientsRaw": [
+    "1  Recipe Classic Croissant Dough OR",
+    "1  Recipe Sourdough Croissant Dough",
+    "96  Chocolate Batons (see note)",
+    "1  Egg  (for egg wash)",
+    "Powdered sugar for decoration"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the croissant dough through step #9 in the recipe. After the dough is chilled for 2 hours proceed with rolling and forming the Chocolate Croissants.",
+    "Line 2 baking sheets with parchment paper or a silicone baking mat. Roll the chilled dough to a 24” long x 16” wide rectangle.",
+    "Working from left to right, measure and mark 4” increments along the top and bottom edge of the dough. Use a ruler to line up the top and bottom marks and use a pizza cutter to cut 6 strips of dough. Cut each strip into four, 4&quot; squares. You should now have a total of 24 four inch squares.",
+    "Place 4 chocolate batons in the middle of each each square. Fold the dough over the chocolate and pinch the bottom seam to close.",
+    "Set the croissants, seam side down, onto the prepared baking sheets, 3” apart. You should fit a dozen croissants per half sheet pan. Cover with plastic wrap and set in the refrigerator overnight. (see note)",
+    "In the morning. Take the croissants out of the refrigerator. Allow them to proof at room temperature for 1-2 hours. The exact time needed for proofing will vary depending the temperature of your kitchen. They should be at least 50% larger than they started and feel airy and puffy. Preheat the oven to 400°F. Brush the croissants with egg wash. Bake the croissants until golden brown, 15-20 minutes. Serve warm or room temperature. Sprinkle with a little powdered sugar, if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "312 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "7 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "12 g",
+    "cholesterolContent": "40 mg",
+    "sodiumContent": "231 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "7 g",
+    "unsaturatedFatContent": "7 g"
+  },
+  "htmlIngredientLines": [
+    "1 Recipe Classic Croissant Dough OR",
+    "1 Recipe Sourdough Croissant Dough",
+    "96 Chocolate Batons (see note)",
+    "1 Egg  (for egg wash)",
+    "Powdered sugar for decoration"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

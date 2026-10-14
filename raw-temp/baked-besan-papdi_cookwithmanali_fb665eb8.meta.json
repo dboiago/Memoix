@@ -1,0 +1,68 @@
+{
+  "url": "https://www.cookwithmanali.com/baked-besan-papdi/",
+  "slug": "baked-besan-papdi_cookwithmanali_fb665eb8",
+  "title": "Baked Besan Papdi",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T22:43:03.791Z",
+  "ldName": "Baked Besan Papdi",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "25",
+    "25 papdi"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Snack",
+  "ldKeywords": "besan papdi",
+  "ldIngredientsRaw": [
+    "1 cup besan (120 grams, gram flour)",
+    "1/4 teaspoon ajwain (carom seeds )",
+    "1/4 teaspoon cumin seeds",
+    "1/4 teaspoon turmeric powder",
+    "1/8 teaspoon hing (asafoetida, optional)",
+    "1/8 teaspoon red chili powder",
+    "1/4  teaspoon salt (or to taste)",
+    "1/2 teaspoon baking powder",
+    "2 tablespoons oil (30 ml, I used avocado oil)",
+    "2 tablespoons water (30 ml)"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat oven to 400 F degrees. Line a large baking sheet with parchment paper and set aside.",
+    "To a large bowl add besan, ajwain, cumin seeds, turmeric powder, hing, red chili powder and salt. Also add the baking powder.",
+    "Add the oil and mix with your hands. Rub flour between your palms to incorporate the oil well into the flour. Mix until it resembles crumbs.",
+    "Start adding water, little by little to bring the dough together. Mix until it all comes together and forms a dough.",
+    "Place the dough between two sheets of parchment paper. Using a roller, roll the dough between the two sheets.",
+    "Roll the dough into 1/8 inch thick. Then cut into squares (or any shape you like). I used a cookie cutter and cut squares of 1.5 x 1.5 inch.",
+    "Transfer the papdi/crackers onto a baking sheet lined with parchment paper. You can even pierce them with fork so that they don&#x27;t rise during baking.",
+    "Bake at 400 F degrees for 12 to 13 minutes until golden brown and crisp. I would suggest keeping an eye on them from 10 minutes mark, they can burn pretty quickly.",
+    "Let them cool down to room temperature and then store in an airtight container for 2 to 3 weeks.Serve besan papdi as a snack with chai!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "29 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "27 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup besan, 120 grams, gram flour",
+    "▢ 1/4 teaspoon ajwain, carom seeds",
+    "▢ 1/4 teaspoon cumin seeds",
+    "▢ 1/4 teaspoon turmeric powder",
+    "▢ 1/8 teaspoon hing, asafoetida, optional",
+    "▢ 1/8 teaspoon red chili powder",
+    "▢ 1/4  teaspoon salt, or to taste",
+    "▢ 1/2 teaspoon baking powder",
+    "▢ 2 tablespoons oil, 30 ml, I used avocado oil",
+    "▢ 2 tablespoons water, 30 ml"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

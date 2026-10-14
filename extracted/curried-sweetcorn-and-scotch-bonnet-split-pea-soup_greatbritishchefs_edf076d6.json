@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Curried Sweetcorn and Scotch Bonnet Split Pea Soup",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a couple of tablespoons of oil in a pan and add the onion and red pepper. Let them sweat over a medium heat until soft",
+      "Add the garlic and cook for 1 more minute, taking care not to let it burn",
+      "Make a cut down the length of the chilli, but keep it intact. Add it to the pan with the split peas, thyme and stock – simmer for 30 minutes",
+      "Prepare the corn by shaving the kernels from the cobs, running your knife down the sides, top to bottom",
+      "Add the corn and potato, and simmer gently for 10–15 minutes. Season with salt and pepper. Add the coconut milk and reheat over a low heat",
+      "Remove the chilli and thyme and blend half the soup. Return to the pan and reheat if necessary. Adjust the seasoning and serve topped with the hard-boiled eggs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "grated to paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Split Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "or vegetable stock",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "halved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f02c2dee6e909f610958e279b30e9279a3c7bf52f23a238e8efa71b95259ad3f",
+    "lineage_hash": "a82f14aee6620c0b11463f18789c6f97aa71493030c9501de984295b39e71043"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-sweetcorn-scotch-bonnet-split-pea-soup-recipe",
+    "fetchedAt": "2026-08-02T03:45:03.274Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-sweetcorn-scotch-bonnet-split-pea-soup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

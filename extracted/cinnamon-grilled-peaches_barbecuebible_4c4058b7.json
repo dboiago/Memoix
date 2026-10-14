@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Cinnamon Grilled Peaches",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the peaches and blot them dry with paper towels. Cut each peach in half along the crease, running your knife in a circular motion around the peach and cutting to the pit. Twist the halves in opposite directions to separate them. Using a spoon, pry out and discard the pit. Cut each peach half in half. Using a pointed chopstick or metal skewer, make a starter hole in the center of each peach quarter, working from the pit side to the skin side. Skewer 2 peach quarters on each cinnamon stick, placing a mint leaf between the 2 quarters.",
+      "Combine the butter, brown sugar, rum, cinnamon, and salt in a saucepan and bring to a boil over high heat. Let the glaze boil until thick and syrupy, about 5 minutes.",
+      "Set up your grill for direct grilling and preheat to high.",
+      "When ready to cook, brush and oil the grill grate. Place the skewered peaches on the hot grate and grill until nicely browned, 3 to 4 minutes per side, basting with the rum and butter glaze. Spoon any remaining glaze over the grilled peaches and serve at once. Peach or vanilla ice cream makes a great accompaniment."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Freestone Peaches",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Buttter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach",
+        "unit": null,
+        "notes": "alt: vanilla ice cream (optional), for serving",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98f777d15046e19acf39c18ff3e7bf761b50cc1def64b34289102c70c3bbe27e",
+    "lineage_hash": "577060c571e9d5acd9064fb9c8ca4b026557352baf16c9bcd4263a7b1e1352ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cinnamon-grilled-peaches/",
+    "fetchedAt": "2026-08-03T09:27:16.411Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cinnamon-grilled-peaches/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

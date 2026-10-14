@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Chinese Baked Buns (烤包子, Kao Bao Zi)",
+    "time": "2 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "260",
+      "carbohydrateContent": "24.4",
+      "fatContent": "12",
+      "proteinContent": "12.6"
+    },
+    "directions": [
+      "Mix the flour with eggs and oil. Then slowly add warm water while mixing, until the water is fully incorporated. When adding water, make sure to mix it very slowly and onto the dried flour directly, to help with even mixing. Once all the ingredients are mixed, it should form soft dough flakes that are a little tacky but do not stick to your hands. There should be no / little dry flour left in the bowl. You might need to add more flour or water depending on the dough flake texture.",
+      "1st kneading: Then knead the dough for 5 to 10 minutes. The dough should be quite easy to work with and not stick much. After the first kneading, the dough is somewhat smooth but not super smooth. This is totally OK. It will become smoother after the second kneading.",
+      "2nd kneading: After 15 minutes of resting, knead the dough a second time. This time you literally only knead the dough a few times and it will become very smooth. The first resting helps the dough hydrate evenly, so it’s very easy to knead the second time. After the 2nd kneading, let the dough rest for another 30 minutes to relax the gluten. So the dough becomes easy to work with when shaping the buns.",
+      "After resting the 2nd time, divide the dough into 10 even pieces by slicing the dough in half, then divide each half into 5 pieces. I usually like to weigh the dough (mine was 48 to 50 g per dough) to make sure they are similar in size. But you can skip the measuring as well, since it doesn’t affect the baking much. Make sure to always cover the dough you’re not working on, to prevent it from drying out.",
+      "Roll each dough piece into an oval shaped sheet. It should be thicker in the center and thin on the edges, so the folded buns will have a more even thickness.",
+      "Add about 4 tablespoons of filling into the center. I like to pack in as much filling as I can, to make the buns very rich and flavorful. Since we’re using freshly made dough, it’s quite elastic and can be stretched a bit during folding, which allows you to stuff in more filling.",
+      "Fold the long edges first. They should barely overlap. Pinch the edges together to seal.",
+      "Then fold the two short sides to the center. Again, make sure to pinch the edges to seal well. The bottom of the buns will always be thicker than the top, due to the multiple layers. That is why you want to roll the wrapper a little thin on the edges, so the bottom of the bun is not too thick.",
+      "Brush the buns with egg wash. Here I like to brush a generous amount of wash so the buns come out with a beautiful color.",
+      "Sprinkle sesame seeds onto the buns. Then bake them in the oven for 25 minutes.",
+      "Once baked, the buns should be golden brown and slightly inflated. Some juice from the filling will leak out, which is totally normal. Since we use a few layers of dough on the bottom, it protects the buns from falling apart. The thicker part of the dough also soaks up the lamb juice, making it extra delicious."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "2 1/2 cups, plus extra for dusting",
+        "amount": "300",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Leg Meat",
+        "unit": "lb",
+        "notes": "or ground lamb",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "reserve the egg white",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": "or water",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "725fd22a44c973f577c0de4087dd4b8b08b94d60de7288736a29f8a758afe222",
+    "lineage_hash": "74c7cf37189ae41b039dad72810e18f9588681ed80255eb6b367789568b8b38e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/kao-bao-zi/",
+    "fetchedAt": "2026-08-02T07:56:44.782Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/kao-bao-zi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

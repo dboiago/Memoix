@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cheese Scones",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, salt and baking powder into the bowl of an electric mixer (if using). In a separate bowl, whisk together the milk, four eggs and mustard. Using a paddle attachment on a low setting (or by hand), mix together the dry ingredients",
+      "Slowly add the butter in three stages. Once a crumb is formed, start adding the milk and egg mixture. Once a dough forms, add both cheeses. Continue mixing on a low setting for 1 minute to combine, then place the dough in a clean bowl. Cover with cling film and allow to rest for 30 minutes in the fridge",
+      "Cut the dough in half. On a lightly floured surface, roll the dough to a 4cm thickness. Place on a lightly floured tray and rest for another 30 minutes. Using a 4cm fluted edge ring cutter, cut out the scones",
+      "Place them on a baking tray a lightly beat the remaining egg. Glaze the scones with the beaten egg using a pastry brush. Bake for 12 minutes. Allow to rest for 5 minutes and serve",
+      "These scones are best eaten slightly warm, split and topped with a generous knob of salted butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soft Flour",
+        "unit": "g",
+        "notes": "white",
+        "amount": "475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced, at room temperature",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated, or vegetarian hard cheese",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for glazing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lincolnshire Poacher Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5afd84bf9a812de13f8c41b6449a6ec4813cb13f90eb614f34d2ca6e3e8d3352",
+    "lineage_hash": "c38253999cf0d63844e90b6bc2958d4f0bd405bed135dd6492be03f599f4ba07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-scones-recipe",
+    "fetchedAt": "2026-08-03T18:04:11.262Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-scones-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

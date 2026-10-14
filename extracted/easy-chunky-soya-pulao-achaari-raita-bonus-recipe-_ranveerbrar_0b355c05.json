@@ -1,0 +1,304 @@
+{
+  "recipe": {
+    "name": "Chunky Soya Pulao",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add oil, ghee, once it’s hot, add onions and saute it until golden in colour.",
+      "Add bay leaf, cinnamon stick, green chillies, tender coriander stems and saute it for a",
+      "Add ginger garlic paste, curd, turmeric powder, degi red chili powder, coriander powder, salt to taste and let it cook for until oil separates from the gravy.",
+      "Add soya chunks, carrots and saute it for 7-8 minutes until it’s cooked well.",
+      "Add fresh green peas, water, salt to taste, tomatoes and give it a quick boil.",
+      "Add soaked sella basmati rice, water, ghee, salt to taste, a pinch of sugar and give it a gentle mix.",
+      "Cover it with a lid and let it cook for 12-15 minutes on low to medium flames.",
+      "Finish it with crushed dry fenugreek leaves and fresh coriander leaves.",
+      "Transfer it to a serving dish, garnish it with fried onions, mint sprig and coriander sprig.",
+      "Serve hot with prepared raita.",
+      "In a pan, add cumin seeds, salt to taste, white sesame seeds and roast it for a minute.",
+      "Transfer it to a bowl and keep it aside to cool down at room temperature.",
+      "Add curd, pickle, cheese and give it a good mix.",
+      "Transfer it to a serving bowl and serve with prepared soya pulao."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "4",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander with Stem",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Chunks",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "peeled & roughly diced",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "cut into diced",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Sella Basmati Rice",
+        "unit": "g",
+        "notes": "soaked for 30 minutes",
+        "amount": "700",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, roughly chopped",
+        "amount": "2",
+        "section": "For Soya Pulao",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp White Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1¼",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Pickle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Raita",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9639ed6aa126f81cc4788dd9144a2473e4ccffc844956c7cb9c62478dc6e16d0",
+    "lineage_hash": "24ff83403052656329e663f7ead4850240277603e04b988da97650a325fdabef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chunky-soya-pulao/",
+    "fetchedAt": "2026-08-02T20:27:52.954Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chunky-soya-pulao/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

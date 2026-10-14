@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-brined-turkey/",
+  "slug": "chinese-brined-turkey-extra-juicy-and-crispy-on-al_omnivorescookbook_591a83a6",
+  "title": "Chinese Brined Turkey (Extra Juicy and Crispy on All Sides)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T18:02:48.840Z",
+  "ldName": "Chinese Brined Turkey (Extra Juicy and Crispy on All Sides)",
+  "ldTime": "PT3060M",
+  "ldPrepTime": "PT2880M",
+  "ldCookTime": "PT180M",
+  "ldYield": [
+    "10",
+    "10 to 12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "thanksgiving",
+  "ldIngredientsRaw": [
+    "1  young turkey (, 14 to 16 pound / 6 to 7 kg)",
+    "6 cloves garlic (, sliced)",
+    "2 inches (5 cm) ginger (, sliced)",
+    "2  white onions (, quartered)",
+    "3 to 4  citrus fruits ((I used lemon, grapefruit and orange) *(Footnote 1))",
+    "2 to 3 tablespoons olive oil",
+    "2 cups soy sauce",
+    "1 cup oyster sauce",
+    "1 cup Japanese sake ((or Shaoxing wine, or dry sherry))",
+    "1/2 cup sugar",
+    "2 teaspoons salt",
+    "2 teaspoons coarsely ground black pepper",
+    "1 teaspoon five spice powder ((or make your own))"
+  ],
+  "ldInstructionsRaw": [
+    "Marinate",
+    "Prep for cooking",
+    "Cook",
+    "How to make ahead and serve later"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "341 kcal",
+    "carbohydrateContent": "3.9 g",
+    "proteinContent": "35.3 g",
+    "fatContent": "19.1 g",
+    "saturatedFatContent": "4.9 g",
+    "cholesterolContent": "108 mg",
+    "sodiumContent": "520 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "2.3 g"
+  },
+  "htmlIngredientLines": [
+    "1 young turkey , 14 to 16 pound / 6 to 7 kg",
+    "6 cloves garlic , sliced",
+    "2 inches (5 cm) ginger , sliced",
+    "2 white onions , quartered",
+    "3 to 4 citrus fruits (I used lemon, grapefruit and orange) *(Footnote 1)",
+    "2 to 3 tablespoons olive oil",
+    "[Marinade]",
+    "2 cups soy sauce",
+    "1 cup oyster sauce",
+    "1 cup Japanese sake (or Shaoxing wine, or dry sherry)",
+    "1/2 cup sugar",
+    "2 teaspoons salt",
+    "2 teaspoons coarsely ground black pepper",
+    "1 teaspoon five spice powder (or make your own)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

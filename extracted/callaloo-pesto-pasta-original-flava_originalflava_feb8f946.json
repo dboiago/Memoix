@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Callaloo pesto pasta",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook your dried spaghetti in boiling salted water for recommended time.",
+      "In a separate pan ‘ add walnuts and caramelised onions, garlic & mustard seeds’",
+      "In a blender add spinach, Callaloo, scotch bonnet, ginger, fresh thyme, avocado, walnuts, garlic and mustard seeds, basil leaves, lime juice, olive oil, and a likkle pasta water then blend until smooth.",
+      "Halve some cherry tomatoes, and cook down for a few minutes. Then add pesto mixture then stir and combine then all all purpose and salt and pepper to taste. Add the drained spaghetti to the pan the. Toss and mix in that delicious callaloo pesto sauce!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Callaloo",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "cm",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Parmesan Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "781c1bc8c557f536f923be3c12c5445e1aedb4a2d6b753ce5bed4d543df81c02",
+    "lineage_hash": "b5890f4aa0b8d1a0c7da3e0d880f7f890db6cf5c06a574cd5dd2ce07b863dc8b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/callaloo-pesto-pasta/",
+    "fetchedAt": "2026-09-30T17:40:22.860Z"
+  },
+  "rawSource": "https://originalflava.com/meals/callaloo-pesto-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

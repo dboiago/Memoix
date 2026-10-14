@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Classic Almond Petit Fours",
+    "time": "1 hr 27 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "36",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "96",
+      "carbohydrateContent": "16",
+      "fatContent": "6",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a half sheet pan with parchment paper or butter and flour the pan.",
+      "Cream 6 oz almond paste until softened and smooth. With the mixer running, add 6 oz unsalted butter and mix on low until there are no lumps of almond paste. Add 6 oz confectioner's sugar and increase the speed to medium. Cream until light and aerated. Scrape down the bowl and paddle.",
+      "Add 6 eggs in three batches, scraping the bowl and mixer between each addition. Add ½ teaspoon table salt, 1 teaspoon vanilla extract and 1 teaspoon lemon extract and mix to combine. Add 4 ½ oz cake flour all at once and mix just until incorporated.",
+      "Spread the batter onto the prepared sheet pan. Try to get the batter as even and flat as possible. The flatter the cake bakes the better the finished petit fours will look.",
+      "Bake until the cake is lightly browned and springs back when the center is pressed, about 15 minutes. Cool the cake completely in the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "whisked in a small bowl",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "4½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "C",
+        "notes": "warmed and strained",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "2x Recipe Simple Fondant Icing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "616252927d19d6663dba773e82ea6d145612f4db2f194d0b9357971e66d83932",
+    "lineage_hash": "87432f5657b5d54aed9088d5aee06ebe77765f1b67ec10cee51ffab85daaa696"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/10/26/almond-petit-fours/",
+    "fetchedAt": "2026-08-01T22:42:27.836Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/10/26/almond-petit-fours/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

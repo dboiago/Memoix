@@ -1,0 +1,60 @@
+{
+  "url": "https://cookingwithria.com/2025/01/canned-sardines-with-tomatoes-for-cold-winter-months/",
+  "slug": "canned-sardines-with-tomatoes-for-cold-winter-mont_cookingwithria_923e3118",
+  "title": "Canned Sardines with Tomatoes for Cold Winter Months",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T21:25:05.688Z",
+  "ldName": "Canned Sardines With Tomatoes",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Caribbean, Trinidadian",
+  "ldCategory": "Breakfast, dinner, lunch",
+  "ldKeywords": "canned sardine, canned sardine with tomatoes, how to make make canned sardines",
+  "ldIngredientsRaw": [
+    "3 cans sardine (in olive oil or water, drained)",
+    "3 tablespoons extra virgin olive oil",
+    "4  plum tomatoes (chopped)",
+    "1/2  large onion (chopped)",
+    "4 cloves garlic (minced)",
+    "1/2 cup chopped parsley",
+    "Hot pepper (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Open the sardine cans and drain the excess oil or water.",
+    "Heat the olive oil in a medium, heavy-bottomed pot over high heat.",
+    "Add the onion, tomatoes, garlic, and hot pepper. Cook for about 5 minutes, stirring occasionally, until the excess liquid evaporates and the mixture begins to brown and stick to the pan.",
+    "Add the drained sardines and parsley. Stir-fry on high heat, allowing the liquid to reduce further. Continue cooking until the mixture separates from the oil and starts to stick to the base of the pot.",
+    "Remove from heat, adjust the seasoning as desired, and serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "312 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "24 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "133 mg",
+    "sodiumContent": "296 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "17 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 cans sardine in olive oil or water, drained",
+    "3 tablespoons extra virgin olive oil",
+    "4 plum tomatoes chopped",
+    "1/2 large onion chopped",
+    "4 cloves garlic minced",
+    "1/2 cup chopped parsley",
+    "Hot pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

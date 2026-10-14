@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Choco Lava Cake",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add chilled water, oil, lemon juice, powdered sugar, vanilla essence and mix everything properly.",
+      "Set it aside for further use.",
+      "In another bowl add salt, cocoa powder, maida, baking soda and mix everything properly.",
+      "Set it aside for further use.",
+      "Take any desired mould and apply butter to it and keep it in the freezer to set the butter.",
+      "Now remove it and dust some maida on each side of the mould properly and again set it in the freezer until further use.",
+      "Now add the dry ingredients to wet ingredients and combine them properly but do not over mix it.",
+      "Once it’s mixed remove the mould from the freezer and add 2-3 spoons of batter, then add a small cube of dark chocolate and again add 1-2 spoons of butter. Repeat this in all other moulds.",
+      "Keep the filled moulds in the freezer for a minute.",
+      "Now remove and place in a hot steamer and steam it for 4-5 minutes not more than that.",
+      "After that remove the cake from the mould gently and serve warm.",
+      "Use the same batter, just in a microwave safe mug add dark chocolate chunks in the bottom and then pour the batter on it and do not overfill it.",
+      "Put in the microwave on full power for 90 sec to 2 minutes max.",
+      "Remove and enjoy it warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chilled Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Cocoa Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Maida",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dusting Mould",
+        "isOptional": false
+      },
+      {
+        "name": "Maida",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dusting Mould",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9e0923fdb1287b969b44592cb49d038bf787a9a4d657bcf4b98030e29ff5e6b",
+    "lineage_hash": "d885ea1118cd127450510f7042bd137437cfe3790818df01e3d36c41debacb01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/choco-lava-cake/",
+    "fetchedAt": "2026-08-02T19:44:09.394Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/choco-lava-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "url": "https://muybuenoblog.com/cherry-empanadas/",
+  "slug": "cherry-empanadas-cherry-hand-pies_muybuenoblog_54dfd272",
+  "title": "Cherry Empanadas (Cherry Hand Pies)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T07:27:05.586Z",
+  "ldName": "Cherry Empanadas (Cherry Hand Pies)",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "24"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Desserts",
+  "ldKeywords": "empanadas with cherries recipe, how to make cherry hand pies, Mexican cherry empanadas",
+  "ldIngredientsRaw": [
+    "2 (21-ounce cans)  cherry pie filling",
+    "3 cups all-purpose flour",
+    "2 teaspoons baking powder",
+    "1/2 teaspoon salt",
+    "2 tablespoons granulated sugar",
+    "1 teaspoon ground cinnamon",
+    "3/4 cup shortening",
+    "2  eggs",
+    "1/2 cup buttermilk",
+    "Evaporated milk",
+    "Raw sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Cherry Filling",
+    "Empanada Dough",
+    "Assemble and bake empanadas"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "24 g",
+    "calories": "126 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "14 mg",
+    "sodiumContent": "60 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "[Cherry Filling]",
+    "▢ 2 (21-ounce cans)  cherry pie filling",
+    "[Empanada dough]",
+    "▢ 3 cups all-purpose flour",
+    "▢ 2 teaspoons baking powder",
+    "▢ 1/2 teaspoon salt",
+    "▢ 2 tablespoons granulated sugar",
+    "▢ 1 teaspoon ground cinnamon",
+    "▢ 3/4 cup shortening",
+    "▢ 2 eggs",
+    "▢ 1/2 cup buttermilk",
+    "[Glaze]",
+    "▢ Evaporated milk",
+    "▢ Raw sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

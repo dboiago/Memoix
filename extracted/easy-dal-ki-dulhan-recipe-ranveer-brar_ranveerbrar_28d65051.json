@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Dal Ki Dulhan",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a saucepot, add ghee, cumin seeds, tovar dal, moong dal, split masoor dal mix well. Add water, salt to taste, turmeric powder, red chilli powder mix well and let it cook.",
+      "In a mixing bowl, add Whole wheat flour, ragi flour, salt to taste and water need the dough well and keep it aside.",
+      "Divide the dough into small balls and roll each into small pooris.",
+      "Alternatively,make the rounds by rolling the dough into a big circle and cutting out small rounds using a small bowl or glass.",
+      "To shape the dumpling, lift opposite sides and bring together at the centre, then lift the other two ends and bring it to the centre, giving it a flower-like shape.",
+      "The hollow shape of the flowers allows the dal to enter the dumpling and become delightfully chewy.",
+      "After the dal is cooked, Gently lower the dumplings in.",
+      "Simmer the dal for another 10-12 minutes on medium flame, until the dumplings are cooked through.",
+      "In a pan, add Ghee, degi mirch, asafoetida, kashmiri red chilli saute well. Add the tadka to the dal.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tovar Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moong Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Split Masoor Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dulhan Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ragi/ Nachni Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dulhan Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dulhan Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as Required",
+        "amount": "0",
+        "section": "For Dulhan Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Mirch/ Kashmiri Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f27a84a1eecdcba6eb4ac34201a01e60750f965aa5d12a060dcea6e7a11a919",
+    "lineage_hash": "29fb0af58180b88ed1cc1b7c33c4dd2243c8fed65ac35030cbb81ffd8899796d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-ki-dulhan/",
+    "fetchedAt": "2026-08-02T11:35:19.566Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-ki-dulhan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

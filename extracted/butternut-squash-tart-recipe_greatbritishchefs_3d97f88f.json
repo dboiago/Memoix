@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Tart",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the bread, add the flour to a large bowl with the sugar, salt and yeast. Using your hands, mix to incorporate the ingredients and warm up the flour a little",
+      "Make a well in the flour and gradually add the water and a dash of olive oil, mixing as you go. Turn out onto a work surface and knead until a smooth dough forms",
+      "Line a large bowl with cling film and place the dough in the bowl. Cover with cling film and leave in a warm place to rise until doubled in size, for up to 2 hours",
+      "Preheat the oven to 240°C/gas mark 9 (or as high as it will go)",
+      "Turn the risen dough onto a floured work surface and knock back, kneading the dough for 5 minutes or so until all of the air has been kneaded out",
+      "Roll the dough out into a 1cm thick circle - this may take some time",
+      "Crumble small pieces of the cheese all around the outside of the dough, then fold in the edges so that you have a crust with the cheese inside",
+      "Transfer to a large ovenproof frying pan (or a baking sheet) and arrange the butternut squash and pear on the base",
+      "Dust with flour, drizzle with a little olive oil and scatter the thyme over the tart",
+      "Leave the pan near the oven for 20 minutes. The warmth from the oven preheating will provide enough heat to let the dough prove a little more",
+      "Bake in the oven for 35 minutes until cooked through completely - the base should lift easily away from the middle of the pan",
+      "Allow to cool slightly then drizzle the rocket with olive oil and scatter over the top of the tart. Slice and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "cold",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorgonzola",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5f7338b4d6201cb95791f4a91553fd1c87aec3fa55d7410a4e107d0cf8bb1645",
+    "lineage_hash": "4718e1e8b84659a406874f1901ebc276d36a3e52f210b7f5386faabfd6fdcb64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-tart-recipe",
+    "fetchedAt": "2026-08-03T18:37:11.550Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Chinese Corn Soup with Chicken (鸡蛋玉米羹)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "244",
+      "carbohydrateContent": "13.6",
+      "fatContent": "10.9",
+      "proteinContent": "22.7"
+    },
+    "directions": [
+      "Combine the ground chicken, 1/2 teaspoon salt, Shaoxing wine and 1 teaspoon of the cornstarch in a small bowl. Mix well and let marinate while preparing the other ingredients.",
+      "Heat the oil in a big pot until warm. Add ground chicken. Let cook as you chop the chicken into smaller pieces. Keep cooking until the chicken is almost cooked through and the surface is lightly browned.",
+      "Add chicken stock and ginger. Turn to high heat. Cook until brought to a boil. Skim and discard the foam from the top of the soup. Then add the corn and the remaining 1/2 teaspoon salt. Turn to medium-low heat.",
+      "While boiling the soup, combine the remaining cornstarch, turmeric powder, and pepper white pepper with 2 tablespoons of water in a small bowl. Stir to dissolve the cornstarch completely. Swirl the cornstarch starch slurry into the soup. Stir until the soup thickens. Turn to medium-low heat so the soup comes to a low simmer.",
+      "Put a spatula (or a fork) against one end of the bowl with the egg in it. Slowly drizzle the egg into the soup in a swirling motion. Let the egg sit for 15 seconds, then stir the soup again to mix everything together. Taste the soup with a small spoon. If the soup is not as thick as you’d like, mix a bit more cornstarch slurry and add it into the soup. Add more salt to adjust seasoning if necessary.",
+      "Drizzle with sesame oil and add green onion. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Chicken",
+        "unit": "lb",
+        "notes": "or ground turkey",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste, divided",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slice Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned or Frozen Corn",
+        "unit": "C",
+        "notes": "*see footnote 1, drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "for color, optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "and extra for garnish, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8fdee11d7532135f9b594e9a1f3f75989fa8888dc13e8b3ddf75e054e7c22ae",
+    "lineage_hash": "08e29a4253610aab2d28b45c6d6e2aa45ff33afde560ab3a00ee4b76013a6179"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-corn-soup/",
+    "fetchedAt": "2026-08-02T09:28:15.952Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-corn-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

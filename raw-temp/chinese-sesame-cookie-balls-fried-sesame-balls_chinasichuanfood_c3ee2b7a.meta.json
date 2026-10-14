@@ -1,0 +1,58 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-laughing-balls-fried-sesame-balls/",
+  "slug": "chinese-sesame-cookie-balls-fried-sesame-balls_chinasichuanfood_c3ee2b7a",
+  "title": "Chinese Sesame Cookie Balls (Fried Sesame Balls)",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:55:53.786Z",
+  "ldName": "Chinese Laughing Balls",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "40",
+    "40 Making 40 bite size sesame balls"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Snack",
+  "ldKeywords": "egg",
+  "ldIngredientsRaw": [
+    "300 g cake flour ( , about 2.5 cups)",
+    "1.5 tsp. baking powder",
+    "a tiny pinch of salt",
+    "150 g caster sugar ( , scant 3/4 cup)",
+    "50 ml water ( , warm water)",
+    "2 tbsp. vegetable oil",
+    "1  egg",
+    "1 cup white sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Shift flour, baking powder, salt and set aside. Then dissolve sugar in warm water and whisk egg.",
+    "Then mix all the dry ingredients with sugar water, egg and oil. Knead into a soft dough. Then divide into 40 small portions and round each one into a small ball.",
+    "Strain some water on surface and roll into sesame balls.",
+    "Heat up oil to 160 degree C and dip the sesame balls in. Deep-fry for 4-5 minutes with medium to slow fire. Stir the balls at intervals so they can be evenly fried."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "71 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "1 g",
+    "fatContent": "2 g",
+    "cholesterolContent": "4 mg",
+    "sodiumContent": "2 mg",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g cake flour  , about 2.5 cups",
+    "1.5 tsp. baking powder",
+    "a tiny pinch of salt",
+    "150 g caster sugar  , scant 3/4 cup",
+    "50 ml water  , warm water",
+    "2 tbsp. vegetable oil",
+    "1 egg",
+    "1 cup white sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

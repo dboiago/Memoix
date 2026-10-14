@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Cucumber Shots",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "93",
+      "carbohydrateContent": "7",
+      "fatContent": "0.2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Peel cucumbers and cut the ends, then cut each cucumber in half.",
+      "Using a small melon baller, scoop out the seeds and some pulp of the cucumber. Be careful not to scoop the base or liquid will drip out.",
+      "Rim cucumbers with Tajín.",
+      "In a blender add cucumber, lime juice, water and agave nectar and blend until smooth.",
+      "Strain the liquid into a cocktail shaker or mason jar and discard the pulp.",
+      "Add tequila, ice, and shake.Strain into cucumber cups.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tajin",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and seeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila Blanco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d0f6b625a7ebfd1ad86bbacd1796617cb89e63b0fc52151c689f8c7925d7350",
+    "lineage_hash": "cc5df6ced36756b5db67f208b46b4942829006f6c5cc042a72694341f908704d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cucumber-shots/",
+    "fetchedAt": "2026-08-02T02:33:31.279Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cucumber-shots/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

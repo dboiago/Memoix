@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Courgette Flower With Goats Cheese",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the courgette flower filling filling, mix the goat's cheese, double cream and rosemary, season with salt and pepper. Place into a piping bag with a small nozzle. Set aside while you prepare the flowers",
+      "Remove the stamen/pistils from the flowers. Pipe the goat's cheese mix into the flowers. Set aside in the fridge",
+      "Cut the courgette into quarters and remove the white flesh in the centre. Blanch the green of the courgette in salted boiling water for 3 minutes or until tender",
+      "Strain and place directly into ice water. Pour off the ice water and mix the green courgette skin with the olive oil, orgeat syrup, a pinch of salt and a pinch of Espelette pepper and blend until smooth",
+      "Season the violet jelly with salt and Espelette pepper and add enough water to have a runny consistency. Keep warm",
+      "Season the flowers with olive oil and salt. Steam for 4 minutes, remove from the steamer and glaze the flowers in the jelly",
+      "To serve, spoon the courgette and orgeat purée onto plates and place the courgette flowers on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Cheese",
+        "unit": "g",
+        "notes": "mature",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh, finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "small",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Violet Jelly",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef64d65fd41cac8091ce8198a7d0756b4e61a8ab2ee2c1ae59e2cfdc03da791a",
+    "lineage_hash": "3c65297cd49a4a8a2c12c5edbfbcc4c0948d687e370cfbc82280d057a5dbe2d7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-flowers-recipe-goats-cheese-violet-jelly",
+    "fetchedAt": "2026-08-02T22:15:05.770Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-flowers-recipe-goats-cheese-violet-jelly",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

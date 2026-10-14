@@ -1,0 +1,63 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-deviled-eggs/",
+  "slug": "chinese-deviled-eggs_omnivorescookbook_40e5e3ed",
+  "title": "Chinese Deviled Eggs",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T21:54:52.484Z",
+  "ldName": "Chinese Deviled Eggs",
+  "ldTime": "PT17M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "6",
+    "6 (12 deviled eggs)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "holiday cooking",
+  "ldIngredientsRaw": [
+    "6 extra large Pete and Gerry’s Organic Eggs ((Footnote 1))",
+    "5 tablespoons mayonnaise ((or to taste))",
+    "1 heaping teaspoon wasabi or Chinese hot mustard ((or to taste))",
+    "1/4 teaspoon rice vinegar",
+    "2 tablespoons zha cai (Chinese pickled mustard greens, diced (Optional) (Footnote 2))",
+    "1  green onion (, thinly sliced)",
+    "Chinese chili flakes ((or your favorite chili sauce))"
+  ],
+  "ldInstructionsRaw": [
+    "To boil the eggs, fill a pot with enough water to cover the eggs. Bring the water to a boil, then slowly lower the eggs using a ladle. Boil for 12 minutes, stirring the water in a circular motion with a spoon for the first minute (to keep the egg yolk in the center). Once the eggs are done, run them under cold tap water to stop cooking.",
+    "Once the eggs are cooled, peel them and slice them in half lengthwise.",
+    "Gently pop out the cooked yolks into a big bowl using a small spoon. Mash them with the backside of a spoon. Make sure to mash them as finely as you can, so the finished filling will be smooth.",
+    "Add the mayonnaise, wasabi or mustard, and rice vinegar to the bowl. Mix with a spatula (or an immersion blender) just until it forms a smooth paste. You can adjust the taste by adding more mayo, wasabi, or vinegar.",
+    "Add the zha cai pickles, if using. Mix again to distribute throughout the yolk mixture.",
+    "Transfer the yolk mixture to a piping bag with a large star tip, or a small ziplock bag with a corner cut off.",
+    "Pipe the yolks into the halved egg white cups.",
+    "Garnish the eggs with chili flakes (or hot sauce) and green onions. Serve as an appetizer.",
+    "These eggs can be made ahead of time and stored in the fridge in a sealed container for up to 2 days. For the best result, you should serve them the same day you cooked them."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "112 kcal",
+    "carbohydrateContent": "3.6 g",
+    "proteinContent": "5.7 g",
+    "fatContent": "8.5 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "167 mg",
+    "sodiumContent": "149 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "1.2 g"
+  },
+  "htmlIngredientLines": [
+    "6 extra large Pete and Gerry’s Organic Eggs (Footnote 1)",
+    "5 tablespoons mayonnaise (or to taste)",
+    "1 heaping teaspoon wasabi or Chinese hot mustard (or to taste)",
+    "1/4 teaspoon rice vinegar",
+    "2 tablespoons zha cai Chinese pickled mustard greens, diced (Optional) (Footnote 2)",
+    "1 green onion , thinly sliced",
+    "Chinese chili flakes (or your favorite chili sauce)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

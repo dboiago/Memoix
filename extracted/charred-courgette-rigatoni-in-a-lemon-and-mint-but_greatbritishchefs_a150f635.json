@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Charred Courgette Rigatoni In A Lemon And Mint Butter Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the lemon and mint butter, whisk together all the ingredients in a bowl with a pinch of salt until combined",
+      "Place the courgettes in a bowl with the olive oil, garlic, lemon juice and a pinch of salt. Toss to combine and set aside",
+      "Set up a barbecue for direct grilling. Grill the courgettes until you’ve achieved bar marks all over – about 2-3 minutes each side – then remove and chop into bite-sized pieces. Set aside",
+      "Bring a large saucepan of salted water to the boil and cook the rigatoni until al dente. Drain and reserve a cup of pasta water",
+      "Meanwhile, fry the capers in the olive oil in a frying pan over a medium heat until they open slightly and become crispy. Remove with a slotted spoon onto kitchen paper to drain the excess oil",
+      "Toss the hot pasta together with the butter and a splash of reserved pasta water (you can add less butter if you like, but include at least 100g of it). Stir until the butter emulsifies into a sauce, and then fold through the charred courgettes",
+      "Divide the pasta between bowls and finish with the fried capers, Parmesan, mint leaves, a pinch of black pepper and a drizzle of olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rigatoni Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "drained",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "finely grated, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "zested, and 1 juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "picked and leaves finely chopped, plus extra small leaves, to serve",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Courgettes",
+        "unit": "large",
+        "notes": "sliced 1cm thick",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a4e93288542316e55e9cdf4758572242494c758549332218d15299550403f10d",
+    "lineage_hash": "a3aac88f1478d58cc7b12ce0901fef3af72cbf1ba032cb86488e115ee1d090bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charred-courgette-rigatoni-lemon-mint-butter-sauce",
+    "fetchedAt": "2026-08-01T15:56:52.786Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charred-courgette-rigatoni-lemon-mint-butter-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

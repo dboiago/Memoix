@@ -1,0 +1,290 @@
+{
+  "recipe": {
+    "name": "Aloo Do Pyaza",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot or handi, add oil, once it's hot, add cumin seeds, black cardamom, cloves, green cardamom and let it splutter.",
+      "Add onions and sautÃ© it for 2-3 minutes or until translucent on high flame.",
+      "Add ginger garlic paste and sautÃ© for a minute.",
+      "Add degi red chili powder, coriander powder, turmeric powder and mix it well.",
+      "Add tomato, salt to taste, water, cover it with a lid and cook it for 4-5 minutes on moderate heat.",
+      "Transfer it to the mixer grinder jar and grind it into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a kadai, add oil, once it's hot, add potato and fry until golden in color.",
+      "Transfer it in a bowl or tray and keep it aside for further use.",
+      "In a shallow pan, add butter, once itâs melted, add dry fenugreek leaves, fried potatoes and toss it well.",
+      "Add degi red chili powder, prepared gravy and sautÃ© it well.",
+      "Add onion and toss it for a few seconds on high flame, add capsicum, tomato and give it a good mix.",
+      "Add coriander leaves with stem, spring onion and prepared gravy.",
+      "Finish it with salt to taste, sugar and mix it well.",
+      "Transfer it to a serving dish and garnish it with spring onion, coriander sprig.",
+      "Serve hot with roti or paratha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut into dice",
+        "amount": "3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled & cubed",
+        "amount": "6-7",
+        "section": "For Frying Potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Frying Potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "2",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Gravy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "medium",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves with Stem",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "¼",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Gravy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": "For Aloo Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Few Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d8634ce70f3c7c150f008d32612b5e5d9315b48c9f026c6f0c012982f0e0f4ca",
+    "lineage_hash": "89bae5186e6d7017c28bfe7cc3116d29acd78680647334ed5f674358874fc676"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-do-pyaza/",
+    "fetchedAt": "2026-08-02T13:03:33.405Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-do-pyaza/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

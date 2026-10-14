@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Bee Sting",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently muddle the fresh jalapeño wheel, add remaining ingredients and shake with ice. Strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Wheel",
+        "unit": null,
+        "notes": "fresh, seeds optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a33cd62ff0385262b9ecbf1a427ed51c9694b4e61683176a211fa67d95e327e",
+    "lineage_hash": "a6db5a45994ebe454d9db4b0b1eecb6aa1d2d700531a4a196f5a2a0341d5b7cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bee-sting-recipe/",
+    "fetchedAt": "2026-08-04T00:50:10.397Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bee-sting-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

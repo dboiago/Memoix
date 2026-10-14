@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Chocolate Cinnamon Gujiya",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "246",
+      "carbohydrateContent": "34",
+      "fatContent": "10",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "In a bowl take 2 cups of all purpose flour, also known as maida.",
+      "Add 4.5 tablespoons of ghee and rub it with your fingers till it’s all mixed with the flour.",
+      "Now add cold water, little by little to form a stiff dough. It’s totally fine if your dough doesn’t look smooth, it will be okay after the resting period. Cover the dough with a damp cloth and let it rest for 30 minutes.",
+      "While the dough is resting, make the filling. In a pan, heat 1 teaspoon of ghee. Add crumbled khoya/mawa to it and sauté for a minute or two.",
+      "Add coconut powder and cook till fragrant, around 2-3 minutes. Remove pan from heat.",
+      "Add chopped nuts and mix. I added nuts which were already roasted, if you are using raw nuts you would need to roast them in ghee before adding them to the mixture.",
+      "Now wait for 2-3 minutes and while the mixture is still little warm (but not extremely warm) add tutti frutti, nutmeg powder, chocolate chips and sugar and mix.",
+      "Since the mixture is still warm, the chocolate chips will melt a little and this is exactly what we want. Set aside.",
+      "After 30 minutes the dough would have rested and ready to be used. Take a small dough ball and roll it into a circle of around 4 inch.",
+      "Transfer the rolled dough on top of the gujiya mold. Apply flour-water paste on the edges of the mold [paste prepared by mixing 1 tablespoon flour with 2 tablespoons water]. Now place 2-3 teaspoons of the prepared filling inside. Do not overfill else the filling will come out in the oil.",
+      "Press the cold tightly to seal the gujiya.",
+      "Remove the excess dough and add it to the main dough ball again.",
+      "Keep rolling, filling and sealing the gujiya till all dough is finished. Keep the prepared chocolate gujiya covered with a cloth all the time.",
+      "Heat oil in a kadhai/wok on medium heat. Check if the oil is ready by dropping a small piece of dough in it. If the dough comes up gradually then the oil is ready. If it comes up immediately your oil is too hot and you never fry gujiya in super hot oil. Keep the heat at medium and medium-low always while frying the gujiya. Fry the gujiya in batches till they turn light golden brown from both the sides.",
+      "Fry all the gujiyas and drain on a kitchen towel. Let them cool down. Meanwhile in a bowl mix together 1/4 cup sugar with 1 tablespoon cinnamon powder and set aside.",
+      "In another pan, heat water and sugar together. Let it come to a boil and then let it boil for 3-4 minutes. We aren’t looking for any string consistency here, just let the syrup becomes little sticky.",
+      "Switch off the heat and drop the gujiyas into the warm syrup, just 1 minute on each side is enough.",
+      "Remove the gujiya from syrup and then roll them into the cinnamon sugar mixture.",
+      "Melt some chocolate chips with little coconut oil in a microwave. Drizzle on top on the gujiya and decorate with chandi ka vark. Your chocolate cinnamon gujiya is now ready to eat!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "also known as clarified butter",
+        "amount": "4.5",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as needed to form a stiff dough.",
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Khoya/mawa",
+        "unit": "C",
+        "notes": "crumbled, also known as milk solids",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": "also know as clarified butter",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Nuts",
+        "unit": "Tbsp",
+        "notes": "chopped, a mix of cashews, pistachios and almonds",
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cinnamon Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cinnamon Sugar",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "water-flour paste",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "water-flour paste",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b33f158b052fac91709c0977b8bc97f5938df105e1c743b2dca31a56e0129f3a",
+    "lineage_hash": "d93e09d9b6d70bc5cc1de7e72271c72618298efb3ce426966c1dded36b3ef090"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chocolate-cinnamon-gujiya/",
+    "fetchedAt": "2026-08-01T17:18:04.763Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chocolate-cinnamon-gujiya/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

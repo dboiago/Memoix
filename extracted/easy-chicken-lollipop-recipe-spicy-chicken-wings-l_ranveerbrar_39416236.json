@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Chicken Lollipop",
+    "time": "1-14 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly take 10-12 chicken wings and trim the bones and pull the meat towards down so thatâs you get a pocket.",
+      "In a mixing bowl add Bread crumbs, Red chilli paste, ed cheese and mix well.",
+      "Fill the chicken wings pocket with the stuffing in it.",
+      "In a mixing bowl add Egg, ginger garlic paste, white pepper powder and mix it well and marinate the stuffed chicken and keep it aside for 20- 25 minutes.",
+      "To the same remaining marinade mixture, add corn starch, refined flour, red chilli powder, garam masala, salt and oil mix it well and make a batter out of it.",
+      "To prepare a seasoning flour, In an another mixing bowl add Refined flour, white pepper, cornstarch and salt to taste and mix well.",
+      "Now roll the stuffed chicken into the seasoned flour first, coat evenly and then into the batter.",
+      "Take a deep kadai for frying. Once the oil is heated on medium flame, fry the chicken lollipops until it gets golden brown in colour.",
+      "Serve hot with chilli sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": "Maida",
+        "amount": "3-4",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Batter for Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": "Maida",
+        "amount": "½",
+        "section": "For Season Flour Coating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Season Flour Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Season Flour Coating",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Season Flour Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e1af02f00eaaae10e08808ebdaa58c9b47af36128e7dd3a3358b1559e2015bd",
+    "lineage_hash": "99ae08e9c01de6d718917d248ead71339547204c5bb20372a4eb73e37eae30b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-lollipop/",
+    "fetchedAt": "2026-08-02T14:45:38.874Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-lollipop/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

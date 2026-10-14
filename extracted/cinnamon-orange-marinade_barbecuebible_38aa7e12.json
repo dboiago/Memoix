@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Cinnamon-Orange Marinade",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a vegetable peeler, remove 1 strip of orange zest, 1 strip of lime zest, and 1 strip of lemon zest and set aside. Juice the oranges, limes, and lemon. Combined you should have 1-1/4 to 1-1/2 cups of juice.",
+      "Place the juices and zests, the wine, cinnamon, garlic, ginger, and pepper in a heavy nonreactive saucepan and bring to a boil over high heat. Reduce the heat to medium and simmer, uncovered, until the mixture is reduced to 1 cup, about 10 minutes.",
+      "Remove the pan from the heat and cool to room temperature. Stir in the onion, paprika, sugar, salt, red pepper flakes, nutmeg, and oil. Use within a few hours of making."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "3 inches each",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and flattened with the side of a cleaver",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "each ¼ inch thick, fresh, peeled and crushed with the side of a cleaver",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-size Onion",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet or Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher)",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb424b902551c23aa8436203730e7e5fcf5524ada8dc49290846f5ff7fd2179e",
+    "lineage_hash": "71863e5eb541b29cc74139e7082b6ae245ce951f2fc483e01b8c255ba85b137f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cinnamon-orange-marinade/",
+    "fetchedAt": "2026-08-03T07:52:36.160Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cinnamon-orange-marinade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

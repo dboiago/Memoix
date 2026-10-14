@@ -1,0 +1,291 @@
+{
+  "recipe": {
+    "name": "Bhopali Mutton Biryani",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, whisk the yogurt to semi thin consistency.",
+      "Add Cucumber, onion, salt and cumin powder, mix well.",
+      "Store in refrigerator till further use.",
+      "In a pan, add oil and onions. Cook till brown in colour.",
+      "In a grinder, add bay leaves, green cardamoms, black cardamoms, cloves, nutmeg, black peppercorns and maze, grind into a fine powder.",
+      "Keep aside for further use.",
+      "Add saffron strands to warm milk and keep aside for further use.",
+      "In a heavy bottom pan, add oil and ginger garlic paste, cook till raw smell goes off.",
+      "In another pan, add 5-6 cups water, bay leaf, black peppercorns, cloves and salt.",
+      "Once the water starts to boil, add rice and cook till 85-90% cooked.",
+      "Drain the water and spread the rice in a big plate.",
+      "Now in a daig/heavy bottom casserole, layer the biryani.",
+      "First layer is rice, then mutton, then mint leaves, then brown onions. Repeat the layer till done.",
+      "Once done, add kewra water and saffron milk.",
+      "Cover it with a heavy lid and give it a dum for 10-15 minutes.",
+      "Garnish it with mint leaves, coriander leaves and barista.",
+      "Serve hot with raita."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "small dices",
+        "amount": "1",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": "roasted",
+        "amount": "1",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Mutton on Bone",
+        "unit": "g",
+        "notes": "cleaned and washed",
+        "amount": "750",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamoms",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamoms",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Maze",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Long Grain Basmati Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Few Saffron Strands",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "warm",
+        "amount": "1",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Few Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Few Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Biryani",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onions/barista",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Biryani",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ae0d8d97dac43a8a27eb64178aaa55e99b4176bd04dee2f30c540746492fed7",
+    "lineage_hash": "f301185ddbe5e19e35768786fe34aeee58a3af19ea66b097590b38937812604d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhopali-mutton-biryani/",
+    "fetchedAt": "2026-08-02T13:24:31.240Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhopali-mutton-biryani/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

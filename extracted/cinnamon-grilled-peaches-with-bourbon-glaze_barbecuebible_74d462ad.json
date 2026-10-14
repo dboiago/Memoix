@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Cinnamon-Grilled Peaches with Bourbon Glaze",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut each peach in half along the crease, running your knife in a",
+      "Using a bamboo skewer, poke a starter hole through the middle of",
+      "Make the B3 glaze: Combine the bourbon, brown sugar, butter, and",
+      "Set up the grill for direct grilling and heat to high. Brush and",
+      "Arrange the peaches on the hot grate and grill until nicely",
+      "Spoon the ice cream into martini glasses. Place 2 peach skewers in"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Freestone Peaches",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Fresh Mint Leaves",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a59e09aebe99d5bb571b6a1f2126562766e290d6fca81932f11ff53869f692c2",
+    "lineage_hash": "02a74ace3760414142480c1773a36d8e63f5b1915d4d24422d50c5350aabf55d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2026/07/21/grilled-peaches-bourbon-glaze/",
+    "fetchedAt": "2026-08-02T22:48:03.951Z"
+  },
+  "rawSource": "https://barbecuebible.com/2026/07/21/grilled-peaches-bourbon-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

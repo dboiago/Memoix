@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Almonds and Bell Peppers",
+    "time": "1 hr 40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim the peppers eliminating the stalks, filaments and seeds; cut them into strips. Soak the raisins in warm water. Slice the almonds. Blanch the tomatoes for 30 seconds, then peel, remove the seeds and chop coarsely.|Heat the oil in a large shallow saucepan, add the peppers and let them soften for about 10 minutes, stirring occasionally; then add 2 tablespoons of vinegar, a tablespoon of sugar, a pinch of salt, the soaked and drained raisins, the almonds and the tomatoes.|Cover, lower the heat and cook for another 8-10 minutes. Eat hot or enjoy them at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bell Peppers",
+        "unit": null,
+        "notes": "stalks, filaments and seeds trimmed, cut into strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": null,
+        "notes": "soaked in warm water, drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "blanched for 30 seconds, peeled, seeds removed, coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a927991881b0fce5372d256869182dd2f16c73cda7a007f9432fc9f0e476b62",
+    "lineage_hash": "dd887f16a2652fc0fe4109f31991a9e63a57f519836b9dba94a0fe52028e7505"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/almonds-and-bell-peppers",
+    "fetchedAt": "2026-08-02T03:03:04.834Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/sides-and-vegetables/almonds-and-bell-peppers",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

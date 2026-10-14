@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Coco Pandan Syrup",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a sauce pot and bring to a boil. Keep cooking until the liquid has thickened slightly. You can control how thick or thin you want your syrup to be.",
+      "Turn off heat, and strain into clean jar(s). Let it cool to room temperature, then store in the fridge and consumed within 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Water",
+        "unit": "ml",
+        "notes": "Indonesian: air kelapa muda",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf Pulp (or 5 Pandan Leaves)",
+        "unit": "Tbsp",
+        "notes": "*",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "586c8e74ca822c2b44806d9af66b9e4bf27c52431eccf1312f5747d09dd983f6",
+    "lineage_hash": "82eac2a0b0c59529a6fc70c868a11489190e87b790d9d0b96b5aa23fd49d4273"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/coco-pandan-syrup.html",
+    "fetchedAt": "2026-08-02T08:31:40.423Z"
+  },
+  "rawSource": "https://dailycookingquest.com/coco-pandan-syrup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

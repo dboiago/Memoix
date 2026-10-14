@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Custard With Alchermes and Candied Fruit",
+    "time": "2 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the candied fruit coarsely. Soak the gelatin sheets in cold water.",
+      "In a small pot, bring the milk to a boil together with the vanilla bean pod opened lengthwise. Turn off the heat, let cool and remove the vanilla bean pod.",
+      "In a bowl, beat the egg yolks together with the sugar and a pinch of salt; then stir in the flour, and the Alchermes. Continue to mix until the ingredients are thoroughly combined (around 1 minute).",
+      "Pour the egg yolk mixture into the pot with the milk and place it back over minimum heat. Whisk until you obtain a pink custard. Remove from the heat and stir in the drained gelatin sheets until they completely dissolve. Stir in the chopped candied fruit. Distribute the mixture into 4 custard molds (square, 2.5” x 2.5”) or into 4 disposable aluminum molds, filling them 3/4 of the way.",
+      "Place in the refrigerator to set for around 2 hours. Whip the cream without adding sugar. Remove the set custards from the molds. Serve with dollops of whipped cream and extra mixed candied fruit to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Candied Fruit",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alchermes Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gelatin",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5500194f8796d8d7e0e387cb36a4040eebc5f902b722b594342a5aa5f112704e",
+    "lineage_hash": "2c3eb3939c40a654c17373cd681491d414fe08952b0870976ae415e4eca24406"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/custard-with-alchermes-and-candied-fruit",
+    "fetchedAt": "2026-08-02T20:10:42.529Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/custard-with-alchermes-and-candied-fruit",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

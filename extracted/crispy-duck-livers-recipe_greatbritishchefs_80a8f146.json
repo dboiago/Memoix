@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Crispy Duck Livers",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a frying pan over a high heat, add enough oil to the pan to coat the base. Season the liver with salt and pepper. As soon as the pan begins to smoke, sear the duck liver until dark golden brown. Reduce the heat and turn the livers over",
+      "Add a small knob of butter and a generous dash of soy sauce. Baste the livers in butter and soy from the pan and remove from the heat. Allow the livers to rest for 2 minutes",
+      "Slice the tomatoes into ½ cm thick slices, season with salt and set aside",
+      "For the soy dressing, combine the oil, soy and mirin in a small bowl and stir to combine. Place 5 slices of tomato in a tight circle in the centre in the plate. Scatter some of the celery and celery leaves over the top and spoon over the dressing",
+      "Roll the livers in the sesame seeds to coat, then, slice on an angle. They should still be slightly pink in the centre",
+      "Add the sliced livers and a small sprinkle of the pine nuts to the plates. Drizzle a little more dressing around the plate and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Liver",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Tomatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "heart and inner leaves only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "Tbsp",
+        "notes": "lightly toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": "or rice wine vinegar",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd13a611e1619300a7211b3ecc4aa9f321aad124aa3903885e1b64b0a0610067",
+    "lineage_hash": "a1278aa31bb20bf22bb638ba7fb8d7c3938324c7325027e880aafc7f5c7e546b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-duck-livers-recipe",
+    "fetchedAt": "2026-08-02T22:32:24.546Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-duck-livers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

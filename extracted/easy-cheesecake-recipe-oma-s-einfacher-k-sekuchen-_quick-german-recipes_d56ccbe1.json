@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Easy Cheesecake (Oma's einfacher Käsekuchen)",
+    "time": "5 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using mixer, beat together all pastry ingredients.",
+      "Form dough into a ball and wrap in plastic wrap. Place in fridge to chill.",
+      "Preheat oven to 350°F.",
+      "Grease 10-inch springform pan.",
+      "Roll out chilled dough (on a lightly floured surface) and place in bottom and up sides of pan.",
+      "Prick dough in several places with a fork.",
+      "Place all the filling ingredients in either a blender or food processor (fitted with a metal chopping blade) and pulse about 10 times. Scrape down sides. Process a further 30 seconds until creamy.",
+      "Pour into pastry shell. Smooth top.",
+      "Bake at 350°F for about 1 hour and 10 minutes or until a wooden toothpick, inserted about 2 inches from edge, comes out clean.",
+      "To minimize the top of the cake from 'cracking', let the cake cool in the oven with the door slightly opened.",
+      "When cooled, remove side of springform pan. For best flavor, place cake in fridge for several hours before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "260 grams",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(114 Grams) Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "67 grams",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "1.5 grams",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "5 milliliters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87c0e7a18fb5aa358b6c6834316f8c9b8a9f1e3c3233504eee6c17e96d5ddba8",
+    "lineage_hash": "03c118b93681bb6dc36a0e87341fc879a1c8d3c9f0fd309113760d40202e85b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/easy-cheesecake-recipe.html",
+    "fetchedAt": "2026-09-25T20:59:35.466Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/easy-cheesecake-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

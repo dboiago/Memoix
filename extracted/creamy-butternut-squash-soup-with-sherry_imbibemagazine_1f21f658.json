@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Creamy Butternut Squash Soup with Sherry",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a 6- to 8-quart pot over medium-low heat. Add the leeks and cook, stirring with a wooden spoon, until softened, about 5 minutes (if they start to brown, add a few tablespoons of water). Add the squash, 1 teaspoon salt, a few grinds of pepper, and the nutmeg and cook, stirring frequently, for 5 minutes more. Add the sherry and cook until it is mostly reduced, a minute or two, then add enough stock to cover the squash (if you need more liquid, add a little water).",
+      "Simmer, partially covered, until the squash is tender, about 20 minutes. Turn off the heat and let the soup cool for at least 20 minutes. If you plan to freeze the soup, blend it and freeze it without adding the milk and cream. This way, you’ll avoid a possibly grainy texture when you defrost it. Otherwise, working in batches, blend the soup with the milk until creamy, adding some water if it seems too thick. Stir in the cream, taste, and adjust the seasonings.",
+      "Store in the fridge for up to a week or in the freezer for up to 3 months. If you’ve frozen the soup, defrost it in the fridge the night before you plan to eat it. The day of: Reheat the soup in a pot over medium-low heat, just until it simmers. Stir in the milk and cream if you haven’t yet and return to a simmer. Taste and adjust the seasoning. Stir in another splash of sherry and add a dollop of crème fraîche to each bowl.",
+      "TipIf you don’t have sherry on hand, you can skip it or substitute brandy, Madeira, or Cognac. For a vegan version, use vegetable oil instead of butter and leave out the milk, cream, and crème fraîche. It will still be rich and delicious. I find that butternut squash makes a better soup than pumpkin (although cheese pumpkin behaves similarly to butternut squash), which can be watery and insipid."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "white and green parts, cleaned and chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "lb",
+        "notes": "peeled, seeded, and cut into 1-inch cubes",
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": "and freshly ground pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "freshly grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sherry",
+        "unit": "Tbsp",
+        "notes": "plus more for finishing",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "C",
+        "notes": "alt: vegetable stock",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39e64d2bc20151c115fa90140c532dc767304f4f3b1cb008a82adbe92d4d9a10",
+    "lineage_hash": "3c81816cb43b4929b14ddc9fc3ca449c43de944799d42517df78fc7feb976daa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/creamy-butternut-squash-soup-with-sherry/",
+    "fetchedAt": "2026-08-04T00:13:21.745Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/creamy-butternut-squash-soup-with-sherry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

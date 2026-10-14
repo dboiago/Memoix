@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Chicken and Broccoli Noodle Stir Fry",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "729",
+      "carbohydrateContent": "104",
+      "fatContent": "14",
+      "proteinContent": "54"
+    },
+    "directions": [
+      "Marinate the chopped chicken in the sauce (while the other ingredients are getting prepared) and set aside. Heat a pan/skillet on medium-high heat and once heated add some cooking oil and spread it thinly. Add the chicken (and any remaining marinade) and cook until 60% of the meat is cooked (about 5 mins). Stir occasionally.",
+      "Boil the udon noodles per the manufacturer’s instructions. Drain the water. Set aside. (Ideally, step 1 and step 2 should start at the same time so that you use the fresh, warm and not sticky noodles.)",
+      "Add the broccoli and the red bell peppers into the skillet and stir. Cook until the chicken is nearly (98%) cooked. Add the boiled udon noodles and stir occasionally. Once the chicken is fully cooked, garnish with the sesame seeds then serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Udon Noodles (2 Packs Total)",
+        "unit": "g",
+        "notes": "or your choice of noodles",
+        "amount": "440",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh Fillets",
+        "unit": "g",
+        "notes": "chopped into small pieces, skinless",
+        "amount": "300",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli (280g / 9.8 Ounces)",
+        "unit": null,
+        "notes": "florets separated and cut into even sized pieces",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper (45g / 1.6 Ounces)",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Some Cooking Oil (i Use Rice Bran Oil)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27e23ef1125e4bccf0414ba52b5166ef1f2a20a921dc4d8c915d3e5dc81cf585",
+    "lineage_hash": "4418f0d1c947f3f451a64d57a4fc31345d0f763ddc3392506836aab88b234c0b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/easy-chicken-and-broccoli-noodle-stir-fry/",
+    "fetchedAt": "2026-08-01T22:21:44.635Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/easy-chicken-and-broccoli-noodle-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

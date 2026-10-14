@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Brazilian Berry Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add other ingredients, SHAKE with ice and fine strain into glass filled with crushed ice",
+      "Serve with straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackcurrants",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauvignon Blanc Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "57fd7293057b2dc7cd8548c5fd0c9d1f83b1bb92514f008011178d92e908d57c",
+    "lineage_hash": "dc8e412db64bfea40d8f7fb8724e02727f21ec01a55786535d6b5388f52efa2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/318/brazilian-berry",
+    "fetchedAt": "2026-08-02T01:34:31.361Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/318/brazilian-berry",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

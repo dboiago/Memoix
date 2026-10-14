@@ -1,0 +1,264 @@
+{
+  "recipe": {
+    "name": "Cod Tempura Uramaki",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the sushi rice. Place the rice in a medium pan with a tightly fitting lid and rinse thoroughly with cold water 5 or 6 times. After the final rinse, refill the pan with water and leave the rice to soak for 20 minutes",
+      "Carefully drain the soaked rice and pour over the measured water. Bring up to the boil, then cover the pan with the lid and reduce the heat to very low. Leave the rice to steam and simmer gently for 20 minutes",
+      "Meanwhile, prepare the teriyaki sauce. Mix together the soy sauce, sake, mirin and corn starch in a separate pan and place over a medium heat. Bring up to the boil, allow to simmer for a few minutes to thicken, then remove from the heat and set aside until required",
+      "When the rice has nearly finished cooking, prepare the sushi vinegar. Combine the vinegar, salt and sugar in a large bowl and place in a microwave for 10 seconds. Once warmed through, stir well to combine",
+      "Remove the rice pan from the heat and transfer the cooked rice to a mixing bowl with the sushi vinegar. Mix together to combine, then set aside and leave to cool to room temperature",
+      "Meanwhile, prepare the cod tempura. Pour the oil into a wide, deep pan and heat to 170℃. While the oil is heating up, slice the cod into even pieces (approximately 10cm in length) and dust the fish lightly with flour",
+      "Whisk together the water, egg, flour and salt in a large bowl to form a fluffy batter. Dip the fish pieces in the tempura batter and carefully add to the oil. Fry for 2 minutes, then remove from the pan and leave to drain on kitchen paper",
+      "For the maki filling, deseed the cucumber and slice into thin strips (roughly 5cm long and 8mm in width). Slice the shiso leaves in half and set aside until required",
+      "For the chilli miso sauce, mix together the gochujang, miso paste and lemon juice in a small dish until thoroughly combined. Adjust the ingredients to taste, then set aside until ready to serve",
+      "To make the wasabi paste, mix together the wasabi powder and water and set aside",
+      "To assemble the maki, line a bamboo mat with cling film and place a nori sheet on top. Measure out 100g of sushi rice and spread it evenly over the nori, then flip the sheet over to leave the rice touching the cling film",
+      "Arrange a couple of cucumber strips, shiso leaves and 3 or 4 pieces of cod tempura on the far side of the nori sheet. Using the bamboo mat, firmly roll the sheet over to form a tube, pushing any escaping filling back into the roll as you go",
+      "Squeeze the rolled up mat gently to seal, then remove the mat and cling film to leave a long sushi roll. Repeat the process with the remaining ingredients. Thinly slice off a strip of courgette (or 2 strips, depending on the length of the vegetable) and season well with salt and pepper. Lay the strips along the top of the maki",
+      "Slice the maki into 6 even pieces and place a piece of radish in the centre of each one, dotting the radish slices with a dash of chilli miso sauce. Swipe a little teriyaki sauce across a serving platter, arrange the maki across the top, and serve immediately with a little wasabi on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting the cod",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sushi Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Nori Seaweed",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radish",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f1df469f46f1ea19109c137a2f92cfab51321d7eb1cb93d127049632cf16e7c",
+    "lineage_hash": "010d01f413dfd2fea8872f1f5c843bd880657db0ceff19df879edf56395c2ff5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-uramaki-recipe",
+    "fetchedAt": "2026-08-03T12:13:23.750Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-uramaki-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

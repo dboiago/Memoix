@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Bacon-Wrapped Albacore Filet Mignons with Peppercorn Cream Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the Peppercorn Cream Sauce: In a heavy saucepan over medium heat, melt the butter. Stir in the shallots and sauté until soft. Add the black pepper and Cognac. If desired, carefully flambé the warm Cognac with a long match. Otherwise, continue with the sauce. Add the white wine and bring to a boil; reduce by half. Stir in the cream and mustard and let the sauce simmer until it coats the back of a spoon. Add salt to taste. Stir in the chopped fresh tarragon and squeeze in a few drops of fresh lime juice. Keep warm until ready to serve.",
+      "Working on a rimmed baking sheet or baking dish, season the tuna loins well on all sides with salt and pepper. Drizzle with olive oil.",
+      "For each loin, cut 4 lengths of butcher’s string, each about 12 inches long, and lay them parallel to each other (about 1-1/2 to 2 inches apart) on a clean work surface. Place a strip of bacon in the center, perpendicular to the strings. Lay a tuna loin on the bacon. Lay 2 more strips of bacon on top of the tuna (3 if it’s a large loin), bring the strings snugly over the loin, and tie so that the bacon is held firmly in place. Repeat with the other loin.",
+      "Set up your grill for direct grilling and preheat to medium-high (400 degrees). If using a plancha or griddle, preheat it at the same time. Brush and oil the grill grate and/or plancha.",
+      "Arrange the tuna loins on the plancha or grill grate and grill until the bacon and tuna are seared, 2 to 3 minutes. Turn with tongs to sear the remaining sides. The interior of the tuna should retain its rosy color; do not overcook. Transfer the tuna loins to a cutting board. Reheat the Peppercorn Cream Sauce, if necessary. Remove the strings from the tuna, then slice the loins into 1-inch-thick medallions and arrange on a platter. Spoon the sauce around the bottom of the medallions, garnish with fresh tarragon sprigs, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "large",
+        "notes": "peeled and finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy (whipping) Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (sea or Kosher)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped, plus extra sprigs for garnish",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c463fbeae1c59266bc739937043e577e402966969bc6ce81fd3b63907ff24ad",
+    "lineage_hash": "50bd1a37f864564e6e1b40863e4a84cf039e0e7ff37e7514a6f4bb2315f9b319"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-wrapped-albacore-filet-peppercorn-cream-sauce/",
+    "fetchedAt": "2026-08-03T06:43:51.443Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-wrapped-albacore-filet-peppercorn-cream-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

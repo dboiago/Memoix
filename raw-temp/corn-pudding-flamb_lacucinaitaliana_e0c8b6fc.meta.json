@@ -1,0 +1,41 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/corn-pudding-flambe",
+  "slug": "corn-pudding-flamb_lacucinaitaliana_e0c8b6fc",
+  "title": "Corn Pudding Flambé",
+  "byline": "by  Editorial staff   July 24, 2019",
+  "fetchedAt": "2026-08-03T05:04:25.290Z",
+  "ldName": "Corn Pudding Flambé",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Crema,Creme,Dessert,Dolce",
+  "ldIngredientsRaw": [
+    "1C. milk",
+    "9OZ. canned corn",
+    "1 egg",
+    "Sugar",
+    "Flour"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Rinse the corn and drain it. Heat the corn in a saucepan with the milk; bring to a boil and cook for 7-8 minutes.</p>",
+    "<p>Puree it in a blender as finely as possible. For a smoother, silkier pudding, run it through a sieve.</p>",
+    "<p>In a separate bowl, break the egg and mix it with 1/4 cup sugar and 2 tablespoons flour.</p>",
+    "<p>Pour the puree over the beaten egg and heat it in a pan. Cook, stirring, for 2-3 minutes and remove from heat.</p>",
+    "<p>Pour the pudding into a cold bowl to stop the cooking, then transfer it into 4 small cups and let it cool completely.</p>",
+    "<p>Cover the surface with 1 teaspoon sugar and ignite it, or run it briefly under the broiler on maximum temperature.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 C. of milk",
+    "9 OZ. of canned corn",
+    "1  of egg",
+    "Sugar",
+    "Flour"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

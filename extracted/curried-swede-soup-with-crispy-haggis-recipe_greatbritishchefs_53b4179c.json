@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Curried Swede Soup with Crispy Haggis",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large pan over a medium heat with a dash of oil (or a knob of butter). Once hot, add the onion and garlic and cook for 5 minutes until soft and translucent",
+      "Tip in the swede, potato and curry powder and cook for a further minute, stirring to coat everything in the curry powder",
+      "Add the stock, bring the boil then turn down to a gentle simmer for 30 minutes. Ensure you keep the heat low as you don't want to reduce the liquid too much",
+      "As the soup simmers away, make the crispy haggis. Place a small pan over a medium heat with the butter. Once melted, add the haggis and break it up a bit with the back of a spoon. Cover the pan with a lid as the haggis will pop and spit. Cook for a few minutes until the popping stops and you're left with little pieces of crispy haggis. Strain from the butter and leave to one side",
+      "After half an hour, the swede should be soft. Use a hand blender to blitz into a smooth soup. Add a touch more stock or water if it looks too thick",
+      "Taste and season the soup with cider vinegar, salt and pepper",
+      "Divide the soup between bowls and garnish with a drizzle of double cream, the crispy haggis, chopped chives and a final twist of black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": "or 1 knob of butter",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swede",
+        "unit": "g",
+        "notes": "peeled and diced into 1cm cubes",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "peeled and diced into 1cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock",
+        "unit": "g",
+        "notes": "vegetable or chicken",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Haggis",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "260a083bf53ff911d3ad4678fa19632bfb1d70f4dd7bf246d1d9c6217b9f3bed",
+    "lineage_hash": "974d80576bbd506c822f0316bd17272825a6d4661c604966f3510c653b939bb5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/swede-soup-with-haggis-recipe",
+    "fetchedAt": "2026-08-02T20:00:06.886Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/swede-soup-with-haggis-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

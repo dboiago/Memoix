@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chocolate Genoise",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "351",
+      "carbohydrateContent": "61",
+      "fatContent": "11",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Line the bottom of two 8\"x3\" cake pans with a parchment round, or butter and flour the bottom of the pan only. Preheat the oven to 350 °F (don't use the convection setting).",
+      "Melt 4 ounces unsalted butter in a small saucepan, cook until the milk solids sink to the bottom of the pan and become brown. Drain the browned butter into a small bowl, leaving the milk solids in the pan. Stir 2 teaspoons vanilla extract into the browned butter and set aside. Discard the milk solids in the pan.",
+      "Place 2 ounces Dutch process cocoa powder into a small heat proof bowl. Pour 4 ounces boiling water over the cocoa and whisk until smooth. Set aside to cool.",
+      "Put 8 large eggs & 8 ounces granulated sugar in a mixer bowl. Set the bowl over a pan of simmering water (don't let the bowl touch the water) and whisk until the eggs are lukewarm. Put the bowl onto the mixer and whisk until the eggs are tripled in volume.",
+      "Sift half the flour over the egg mixture and use a balloon whisk to fold, repeat with the remaining flour. Pour the cocoa into the browned butter and whisk until smooth. Whisk 2 cups of the egg batter into the cocoa/butter mixture and whisk to combine. Use the whisk to fold the cocoa/butter mixture into the batter just until combined. Divide the batter evenly between the pans.",
+      "Bake until the cake springs back when pressed in the center, about 30 minutes. Cool in the pan for 10 minutes before turning out onto a cooling rack. Cool completely before filling and frosting."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "8 tablespoons",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cup plus 2 tablespoons, see note",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "C",
+        "notes": "a double batch flavored with liquor or extract of your choice.",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filling & Icing of Your Choice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf9c574fb06155a96f0eba08341b7a14d6004ef9a913bc8232c96817d2f4d1f7",
+    "lineage_hash": "77a1369c66266f867e292cf09035e6a87dad6353c7a0d1da7bdd92b0a627e780"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/02/14/chocolate-genoise/",
+    "fetchedAt": "2026-08-02T03:38:07.485Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/02/14/chocolate-genoise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

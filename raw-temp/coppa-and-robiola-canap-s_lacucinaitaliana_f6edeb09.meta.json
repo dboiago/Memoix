@@ -1,0 +1,37 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/coppa-and-robiola-canapes",
+  "slug": "coppa-and-robiola-canap-s_lacucinaitaliana_f6edeb09",
+  "title": "Coppa and Robiola Canapés",
+  "byline": "by  Editorial staff   July 19, 2021",
+  "fetchedAt": "2026-08-03T05:35:10.697Z",
+  "ldName": "Coppa and Robiola Canapés",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Antipasti,Antipasto",
+  "ldIngredientsRaw": [
+    "3 slices white bread",
+    "2 slices coppa",
+    "1OZ. robiola cheese",
+    "2 pink peppercorns, crushed",
+    "unsalted butter"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Using different sized cookie cutters (ours are flower-shaped, measuring 3”, 2 1/2”, and 1”), cut out each piece of bread. Toast the bread in a pan with the butter for 30 seconds.&nbsp;</p>",
+    "<p>Place a slice of coppa, the robiola, and some crumbled pink peppercorn on the large and medium slices. Stack the slices and top with the smallest slice.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 slices white bread",
+    "2 slices coppa",
+    "1 OZ. of robiola cheese",
+    "2 pink peppercorns, crushed",
+    "unsalted butter"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

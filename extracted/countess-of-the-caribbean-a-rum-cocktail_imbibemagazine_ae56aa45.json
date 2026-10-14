@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Countess of the Caribbean",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, then strain into a glass over a large ice cube."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Cuban-style Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fbd24f161143820eb430b7ac8cae6088c20417015cc1451cd18d044e6da1340",
+    "lineage_hash": "73c0dd5067dea2be3bc2deec76e9b1b5bc7f035778158f6598f0cfb50e49e131"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/countess-of-the-caribbean-verne-buenos-aires/",
+    "fetchedAt": "2026-08-03T18:55:33.352Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/countess-of-the-caribbean-verne-buenos-aires/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

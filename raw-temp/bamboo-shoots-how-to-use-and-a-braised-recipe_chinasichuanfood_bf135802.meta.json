@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chinasichuanfood.com/braised-bamboo-shoots/",
+  "slug": "bamboo-shoots-how-to-use-and-a-braised-recipe_chinasichuanfood_bf135802",
+  "title": "Bamboo Shoots, how to use and a braised recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:48:50.383Z",
+  "ldName": "Braised Bamboo Shoots",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT1260M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "250 g bamboo shoot (, pre-treated with boiling and soaking or you can use packaged ones. )",
+    "2 tbsp. soy sauce (1.5  tbsp. light soy sauce + 0.5 tbsp. dark soy sauce)",
+    "2 tbsp. rock sugar",
+    "1 tsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "How to prepare fresh bamboo shoot for cookingCut the bamboo shoot into smaller pieces.Bring a large pot of water to a boiling and then place the bamboo shoots in.Cook for 4-5 minutes (or 7-8 minutes for larger pieces). Transfer out and then soak in clean water for at least 10 hours. Change the water twice during this soaking process. This helps to remove the bitter taste (possibly contained in fresh bamboo shoots ) of the fresh bamboo shoots.",
+    "Heat oil over fire with high fire and then place bamboo shoot in, fry for 1 minute until slightly softened.",
+    "Add soy sauce and sugar. Cover the lid and slow down the fire and simmer for another 4 minutes. Uncover and continue cooking for a while until the sauce are almost attached to the bamboo shoots."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "112 kcal",
+    "carbohydrateContent": "20 g",
+    "proteinContent": "4 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "835 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "17 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "250 g bamboo shoot , pre-treated with boiling and soaking or you can use packaged ones.",
+    "2 tbsp. soy sauce (1.5  tbsp. light soy sauce + 0.5 tbsp. dark soy sauce)",
+    "2 tbsp. rock sugar",
+    "1 tsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,289 @@
+{
+  "recipe": {
+    "name": "Chicken Pie",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the bechamel, bring the milk to the boil in a saucepan then add the onion, spices, mustard and salt. Cover and leave to infuse for 20 minutes, then pass through a sieve",
+      "Heat the butter in a large saucepan, stir in the flour and mix until smooth",
+      "Add the hot infused milk a little at a time and whisk to combine until smooth. Once all the milk has been added, bring to the boil, whisking continuously, then remove from the heat",
+      "Season the chicken with salt and roll it in the garlic oil, then place on a roasting tray and cook for 40 minutes, skin-side up, until the skin is crispy and the meat is tender",
+      "Leave the chicken to rest for 20 minutes. Discard the bone and sinew and flake the meat, reserving any juices. You don’t need the skin here, but you can use it for an extra decoration of chicken crackling, if you like. Or just eat it!",
+      "Sweat the carrots in the butter in a medium pan for 5 minutes, lid on, then add the leek and celery, season lightly with salt, cover and cook for another 5 minutes. Add the mushrooms and garlic, then cover and cook for a final 5 minutes",
+      "Add the sweetcorn, peas, thyme and tarragon, then remove from the heat and mix in the chicken and bechamel with the lemon zest. Check the seasoning and leave to cool",
+      "Once everything has cooled and you're ready to assemble. Preheat the oven to 190ºC/gas mark 5",
+      "Mix the egg yolk and milk or cream in a small bowl to make an egg wash",
+      "From the first sheet of pastry, cut out a circle using the top of an ovenproof frying pan as a guide. This is the lid",
+      "Cut a circle of greaseproof paper large enough to cover the base of the same ovenproof frying pan and come all the way up the sides. Use this as a guide to cut out a circle of pastry of the same size. This is the base. Place the circle of pastry in the pan, pushing it flat against the sides",
+      "Fill with the cooled chicken pie mix, making sure it doesn’t cover the top of the pastry rim. Top with the pastry lid, pinching the edges of both pastry circles together to crimp and join. (With some of the pastry trim, you may cut out some leaf shapes or make a simple lattice to garnish the pie)",
+      "Brush with egg wash and leave for 10 minutes, then brush again with egg wash and place in the oven",
+      "Cook for 20 minutes, then reduce the oven temperature to 170ºC and cook for another 20 minutes",
+      "To decorate, scatter over the vegetables, herbs and flowers, if using, and return the pie to the oven for a final 5 minutes for the decorations to crisp up, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "corn-fed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and quartered, then sliced across into 1cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "quartered, then sliced across into 1cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "peeled, halved, then sliced across into 1cm pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn Kernels",
+        "unit": "g",
+        "notes": "drained weight from a tin",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "frozen, defrosted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mace",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "or cream",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Puff Pastry",
+        "unit": null,
+        "notes": "defrosted if frozen",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "cut into slim petals",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pansies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "390ded8f170882637879c91de9322ef07be06430dd4143db16e8c42740a5f3ef",
+    "lineage_hash": "3ac43192aae0fdf1c59d0dd8b9c1fa7aeb46237c2ca40191431506f8320d2ff7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ultimate-chicken-pie-recipe",
+    "fetchedAt": "2026-08-02T21:22:22.416Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ultimate-chicken-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,45 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/culatello-bundles",
+  "slug": "culatello-bundles_lacucinaitaliana_1113cc5d",
+  "title": "Culatello Bundles",
+  "byline": "by  Editorial staff   November 9, 2021",
+  "fetchedAt": "2026-08-03T02:50:13.573Z",
+  "ldName": "Culatello Bundles",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Antipasti,Antipasto,Culatello",
+  "ldIngredientsRaw": [
+    "7OZ. carrots",
+    "12 slices culatello or other cured ham",
+    "4 1/2OZ. mayonnaise",
+    "4OZ. green olives, pitted",
+    "2OZ. celery",
+    "1TBSP. salt packed capers, rinsed",
+    "1 large egg",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Peel, dice and boil the carrots. Drain when cooked, cool and transfer to a bowl.&nbsp;</p>",
+    "<p>Boil the egg for exactly 10 minutes from when the water comes to a boil. Run under water to cool and peel. Finely dice the celery. Coarsely chop the olives with 1 Tbsp. capers.</p>",
+    "<p>Add the olives, capers, diced celery and mayonnaise to the carrots and mix. Press the hard-boiled egg through a sieve and add this to the mixture; mix everything together and season with a pinch of salt.</p>",
+    "<p>Line the inside of a small ladle with a slice of <em>culatello</em> or other fine cured ham; fill with a spoonful of the mixture and fold the ham over to close. Flip the onto a plate, so the seam of the bundle is on the bottom. Repeat with the remaining 11 slices of culatello, using up all the filling. Garnish the bundles and serve.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "7 OZ. of carrots",
+    "12 slices culatello or other cured ham",
+    "4 1/2 OZ. of mayonnaise",
+    "4 OZ. of green olives, pitted",
+    "2 OZ. of celery",
+    "1 TBSP. of salt packed capers, rinsed",
+    "1 large egg",
+    "salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

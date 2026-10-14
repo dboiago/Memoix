@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Creamy Tomatillo Avocado Salsa",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "267",
+      "carbohydrateContent": "18",
+      "fatContent": "23",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat oven to broil. Roast the tomatillos, serrano peppers, jalapeño peppers, and garlic on a foil-lined baking sheet until blackened all over, about 5 minutes. Flip them over and roast the other sides for an additional 4 to 5 minutes. Watch carefully to prevent the tomatillos from burning.",
+      "Place roasted peppers in a plastic bag, close the bag and allow the peppers to steam until the skins loosen, about 10 minutes.",
+      "While the peppers are cooling off, peel off skin from garlic and discard. After the peppers have steamed, peel skin off and discard.",
+      "Place in a blender the cooled tomatillos, roasted and peeled peppers, roasted garlic, avocados, cilantro, add water slowly and blend until desired consistency. Season with salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatillos",
+        "unit": null,
+        "notes": "husks removed, rinsed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serrano Peppers",
+        "unit": null,
+        "notes": "stemmed – or up to 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": null,
+        "notes": "stemmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unpeeled Clove Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": "large",
+        "notes": "pitted and peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Cilantro",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "436153adb1cea6a07dccf62ccddf0187ca42029442fde9e1ad9e4d74694037f5",
+    "lineage_hash": "e9a85ff5e670fb316d491b0226d51b7d99eff10b7a90e15f7ef27d1ec998f400"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/avocado-and-tomatillo-salsa/",
+    "fetchedAt": "2026-08-01T20:50:14.058Z"
+  },
+  "rawSource": "https://muybuenoblog.com/avocado-and-tomatillo-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

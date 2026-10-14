@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Classic Macaroni Cheese",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put a pan of salted water on to boil as you make the sauce",
+      "Heat the milk in a separate saucepan, but don’t let it boil",
+      "Melt the butter in a separate saucepan and, when foaming, add the flour, whisking. Cook this mixture out for a couple of minutes, whisking constantly",
+      "Add the milk a couple of ladlefuls at a time, whisking each addition gently into the sauce before adding the next",
+      "Once all the milk has been added, allow the sauce to cook for a couple of minutes, stirring regularly. This is important in order to cook out any remaining flour. Taste the sauce to ensure no floury taste remains; if it does, cook, stirring, for a couple of minutes longer",
+      "Remove the sauce from the heat and add the grated Red Leicester, Gruyère and mozzarella",
+      "Stir to melt the cheeses, then add the white pepper and stir in the cream and mustard. Taste and add salt if necessary",
+      "Add the pasta to the water and cook for 6 minutes, then use a slotted spoon to transfer it to the sauce, mixing well",
+      "Transfer the mac n cheese to an oven dish and sprinkle with the breadcrumbs, then the cheeses. They won’t cover the dish completely, but will melt together as they cook",
+      "Place under the grill until browned and bubbling – around 10 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Macaroni Pasta",
+        "unit": "g",
+        "notes": "or other small pasta shapes",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Leicester Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "abd7d2bb250ff104f9c0bb15c687a2f588baa73305a9becb6bf954354588710e",
+    "lineage_hash": "48a978768dd17dbd181568a58ffad035662be754317dc0145fa53d6b329c95c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-macaroni-cheese-recipe",
+    "fetchedAt": "2026-08-02T14:51:56.013Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-macaroni-cheese-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

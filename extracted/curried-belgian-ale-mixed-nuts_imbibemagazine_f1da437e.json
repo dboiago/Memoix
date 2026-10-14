@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Curried Belgian Ale Mixed Nuts",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 250 degrees F.",
+      "In a saucepan over medium-high heat, melt the butter with the brown sugar and beer.",
+      "Boil until slightly thickened, about 6 minutes.",
+      "Turn off the heat and add the garlic powder, salt, curry powder, cayenne, and chili powder; stir to combine.",
+      "Add the nuts; toss to coat.",
+      "Add the nuts to a baking sheet lined with a silicone mat or parchment paper.",
+      "Bake for 15 minutes.",
+      "Stir the nuts, then bake for an additional 15 minutes.",
+      "Allow to cool completely, break apart, then transfer to an airtight container to store."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Belgian Ale",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Nuts",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "29d7a77aab77b5da403c055d56c54b405a0250086b6d2136279e1cc91960dd62",
+    "lineage_hash": "ff025753278ce77fdbd4e3f8ebce092cb93c2699c3c3f3cdcd2b28884619a465"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/curried-belgian-ale-mixed-nuts/",
+    "fetchedAt": "2026-08-03T16:44:54.175Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/curried-belgian-ale-mixed-nuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Classic Beef Casserole with Celeriac Mash",
+    "time": "3 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a large casserole over a high heat with a little oil and separately fry all the vegetables until coloured all over. Set aside on a plate while browning the meat",
+      "Pat the beef dry with kitchen paper and dust with the plain flour. Return the casserole to the heat and fry the beef until browned all over",
+      "Stir in the tomato purée and cook for a few more minutes before adding the stock. Bring to the boil, then return the cooked vegetables to the casserole",
+      "Mix in the garlic and add the thyme sprigs and cover with a lid. Transfer to the preheated oven for 2 hours, or until the meat is soft and tender",
+      "Half an hour before serving, make the celeriac mash. Peel the celeriac and chop into chunks. Place in a saucepan and cover completely with water. Add 1 tsp of salt and cook for 25–30 minutes, or until the celeriac is completely soft when pierced with a knife",
+      "Drain well and mash the celeriac with the butter. Season to taste and serve with the casserole"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braising Beef",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus extra for seasoning",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1b1ad6e938128f9f27068a3697ddede50a287056872c9e7fb658eaadd7cac21",
+    "lineage_hash": "7e3ccfabd7c06c58ba55d0420d41da0af02b9d88b91c986f625263f559b33fa1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-casserole-celeriac-mash-recipe",
+    "fetchedAt": "2026-08-03T13:15:38.272Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-casserole-celeriac-mash-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

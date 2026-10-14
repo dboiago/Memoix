@@ -1,0 +1,64 @@
+{
+  "url": "https://www.cookwithmanali.com/curried-tofu-peanut-with-roasted-garlic-rice/",
+  "slug": "curried-tofu-peanut-with-roasted-garlic-rice_cookwithmanali_32b30249",
+  "title": "Curried Tofu & Peanut with Roasted Garlic Rice",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T16:33:34.434Z",
+  "ldName": "Curried Tofu &amp; Peanut with Roasted Garlic Rice",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "World",
+  "ldCategory": "Main Course",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "6 oz Uncle Ben&#039;s Roasted Garlic Rice",
+    "8 oz extra firm tofu (cut into cubes)",
+    "1-2 tablespoons roasted peanuts",
+    "1.5 teaspoon canola oil",
+    "1 teaspoon curry powder",
+    "1/4 teaspoon salt (or to taste)",
+    "1/4 teaspoon black pepper or to taste",
+    "1  sprig green onion (finely chopped)",
+    "1 teaspoon lime juice",
+    "chopped cilantro (to garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Cook Uncle Ben's Roasted Garlic Rice according to instructions on the package. Set aside.",
+    "Press tofu by placing some heavy object on top for 20-30 minutes to get rid of all water. Once all the water has been drained, cut it into cubes.",
+    "Heat 1.5 teaspoon canola oil in a pan on medium heat.",
+    "Once hot, add tofu, curry powder, black pepper and salt. Mix till tofu cubes are well coated with the spices. Cook the tofu cubes, 2-3 minutes on each side or till they turn golden brown in color. Remove from pan and set aside.",
+    "To assemble the dish, add the prepared rice and tofu to the bowl. Add roasted peanuts, chopped spring onion and squeeze in some fresh lime juice.",
+    "Garnish with cilantro (optional) and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "454 kcal",
+    "carbohydrateContent": "77 g",
+    "proteinContent": "16 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "390 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 oz Uncle Ben's Roasted Garlic Rice",
+    "▢ 8 oz extra firm tofu, cut into cubes",
+    "▢ 1-2 tablespoons roasted peanuts",
+    "▢ 1.5 teaspoon canola oil",
+    "▢ 1 teaspoon curry powder",
+    "▢ 1/4 teaspoon salt, or to taste",
+    "▢ 1/4 teaspoon black pepper or to taste",
+    "▢ 1 sprig green onion, finely chopped",
+    "▢ 1 teaspoon lime juice",
+    "▢ chopped cilantro, to garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

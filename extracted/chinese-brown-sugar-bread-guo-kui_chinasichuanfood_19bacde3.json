@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chinese Brown Sugar Bread (Guo Kui)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "104",
+      "carbohydrateContent": "21",
+      "fatContent": null,
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Mix brown sugar with flour and salt in a small bowl. Set aside.",
+      "In a stand mixer, add flour, salt, instant yeast and water, then mix at low speed for 8-9 minutes until the dough is soft and smooth.",
+      "Cover with a wet cloth or plastic wrap to rest for around 30 minutes to 45 minutes depending on your temperature until the dough is ⅓ bigger than the previous one. (The surface is completely smooth but there is no Honeycomb texture inside).",
+      "Knead the dough again to pinch the air out. Then roll the dough into a uniform long log around 4cm in diameter. Cut the long log into 14 equal portions.",
+      "Wrap the powdered filling in.",
+      "Brush a thin layer of oil in a casting iron pan，place the bread in one by one, cover the lid and then fry each side for 6-8 minutes over slow fired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "more for dusting",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Brushing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tiny Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48904e4e37011098109d20e7f2f2ec992b1e1e0e0e64f1e338ecc90c3b4089d9",
+    "lineage_hash": "71152d3536601d49e1f909a2801da9b38253e4f6ed2f552b5f7e3df7c77e7506"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-brown-sugar-bread-guo-kui/",
+    "fetchedAt": "2026-08-02T03:29:41.163Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-brown-sugar-bread-guo-kui/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

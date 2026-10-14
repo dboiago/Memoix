@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chocolate Pistachio Cantucci",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C) and line a baking tray with parchment paper.",
+      "With electric beaters or a stand mixer fitted with the whip attachment, whip the eggs, yolk, sugar and vanilla on high speed until it holds a ribbon when the beaters are lifted, about 3 minutes.",
+      "Sift the flour, cocoa powder, baking soda and salt and fold this into the whipped eggs until fully incorporated (the mixture will deflate a little, and seem like a cake batter in consistency). Stir in the pistachios and chocolate chunks (or chips) and spoon this onto the prepared baking tray and spread into the rough shape of a single log – the batter will be soft, so don’t worry if the shape isn’t too precise. Bake this for about 35 minutes, until a tester inserted into the centre of the cantucci log comes out clean – because of the melted chocolate chunks within, you may have to test in a few places. Allow this to cool for about 20 minutes and reduce the oven temperature to 300 °F (150 °C).",
+      "Remove the cantucci log to a cutting board and use a serrated knife to slice across the width into cookies that are ½-inch thick. Arrange these on the lined baking trays (you’ll need 2 trays for this step) and bake for 12 minutes. Remove the trays from the oven and flip the cantucci over, returning to the oven to bake another 12 minutes. Cool the cantucci on the tray. If you find that after cooling, the cantucci aren’t crunchy all the way through, you can return them to the oven to bake a few more minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "250 g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "10 mL",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "300 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": "60 g, Dutch process or regular",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": "7 mL",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "2 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Unsalted Pistachios",
+        "unit": "C",
+        "notes": "170 g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chunks",
+        "unit": "C",
+        "notes": "alt: chips, 150 g, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04fda00f5644ba5e8de38f0f3783df4a7c580f74cc6f3f644007983f907fb617",
+    "lineage_hash": "29c13cfb53ccc3497fd49062cf7957310163d9a6837151d93de6c5485370d006"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-pistachio-cantucci/",
+    "fetchedAt": "2026-08-01T18:52:09.674Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-pistachio-cantucci/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

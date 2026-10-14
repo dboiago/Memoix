@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Cauliflower and Gruyère Tartlet",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the pastry 4 hours in advance so it has time to rest. Place the flour, lard, butter, icing sugar and salt into a food processor and pulse until it resembles breadcrumbs",
+      "Pour in the egg and milk and pulse again until a dough forms. Tip out onto the surface and bring together into a ball, but don't over work the dough. Wrap in cling film and leave to rest in the fridge for 2 hours",
+      "Once the pastry has rested, roll it out until 2mm thick and, using a 9-10cm round cutter, cut out 6 circles. Line the tarts then leave in the fridge to rest for a further 2 hours",
+      "Preheat an oven to 165°C/gas mark 3. Line the rested pastry cases with greaseproof paper and fill with baking beans or dry rice. Blind-bake for 15 minutes, then remove the paper and baking beans and leave to cool",
+      "While the pastry cooks and cools, prepare the filling. Cut 18 small florets from the cauliflower and place in a pan with 100g of the butter. Place a lid on and leave gently steam and caramelise for 30 minutes",
+      "Finely dice the rest of the cauliflower and place in a pan with the remaining 100g of butter. Sweat until soft, then add the double cream and bring to the boil",
+      "Transfer the cream mixture to a blender and blitz to a smooth purée. Taste and season with salt, then pass through a fine sieve and keep warm",
+      "To make the Gruyère sabayon, set up a heatproof bowl over a pan of simmering water. Add the egg yolks and whisk continuously, ensuring they remain at a low temperature and do not scramble",
+      "Once thickened and warm, add the cheese bit by bit until emulsified into the yolks. Then add the milk and a pinch of cayenne and salt to taste",
+      "Once the sabayon has completely warmed through, transfer to an Isi cream whipper and charge with 2 canisters. Keep the whipper in a bowl of warm water to keep warm",
+      "To cook the cauliflower fungus, melt the butter in a frying pan and gently cook the fungus with a pinch of salt",
+      "To assemble, spoon the purée into the tartlet cases and arrange the cauliflower florets and mushrooms in a circle around the edge of each tartlet. Finish with the sabayon in the centre and decorate with the cresses and flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten with 3 tbsp of milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower Fungus",
+        "unit": "g",
+        "notes": "cleaned",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Salted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": null,
+        "notes": "micro cress and edible flowers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d969b3da536e29cbb87e5ef1f0f0311edd957840db763ed6843e1468e4d10d0",
+    "lineage_hash": "e5745d6a07a56571163b336d1146b32b8fcff9d5dc432f182367a90b09c1d583"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-gruyere-tartlet-recipe",
+    "fetchedAt": "2026-08-03T03:23:40.590Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-gruyere-tartlet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

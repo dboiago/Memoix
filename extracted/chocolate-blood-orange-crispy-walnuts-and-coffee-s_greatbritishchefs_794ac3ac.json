@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Chocolate, Blood Orange, Crispy Walnuts and Coffee Sabayon",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the milk and cream together in a saucepan and warm over a medium low heat",
+      "Just before the milk mixture comes to the boil, pour it over the yolks and whisk to combine",
+      "Return the mixture to the pan and cook out, whisking all the time, until the mixture reaches 84°C",
+      "Pour the mixture over the chocolate and whisk everything together until the chocolate has melted. Once cooled, whisk in the brandy and sea salt. Allow to chill overnight",
+      "To make the coffee sabayon, combine the yolks, sugar, coffee, blood orange zest and honey in a heatproof bowl",
+      "Whisk everything over a saucepan of boiling water until the mixture becomes thick, then slowly add the melted butter, whisking all the time. Once emulsified, add the juice of the orange and transfer the mixture to an iSi Whip. Charge twice and keep warm",
+      "Spread the walnuts out on a baking sheet and toast in the oven for 20 minutes, until lightly browned",
+      "Spoon a generous amount of set chocolate in the middle of 6 bowls. Using the back of a hot spoon, make a well in the centre of each",
+      "Divide the orange segments between the wells in the chocolate and top with the walnuts  of the chocolate with the walnuts. Shake the coffee siphon and cover the chocolate with sabayon. Dust with ground coffee and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Espresso Shot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "segmented",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db90013e74c04f42f21a5af00e5f0a89e86188fed4af8253623c6d466fc75a50",
+    "lineage_hash": "9cba2dcc302329a0a93515612945196d9fb2e04166968002cbbb6581713bdc6e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-blood-orange-crispy-walnuts-coffee-sabayon-recipe",
+    "fetchedAt": "2026-08-02T18:07:55.011Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-blood-orange-crispy-walnuts-coffee-sabayon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

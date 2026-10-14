@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chorizo al Vino Tinto (Chorizo in Red Wine)",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "603",
+      "carbohydrateContent": "2.33",
+      "fatContent": "46.55",
+      "proteinContent": "27.65"
+    },
+    "directions": [
+      "Heat the olive oil in a large skillet over medium-high heat. Add the chorizo and fry for 2 minutes on each side.",
+      "Add the wine, garlic, and bay leaves and bring to the boil. Swirl to dissolve any sediment from the chorizo, and reduce the heat. Simmer for 15-20 minutes, or until the wine has reduced to a thick sauce.",
+      "Garnish with fresh chopped parsley and serve the chorizo and sauce immediately in small bowls with the sliced bread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Good Quality Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Chorizo Cut in ½-inch Slices",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley for Garnish",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loaf Sliced Crusty Bread for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02e0ba749859e75eeea750ec591e37bf76e6df21c1636a28fd40612536da8462",
+    "lineage_hash": "153f9a39b0a633549e99ac4fa29f1fa993ca18241e942971ed063e15cbd56cbd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/chorizo-al-vino-tinto-recipe/",
+    "fetchedAt": "2026-08-02T10:40:08.885Z"
+  },
+  "rawSource": "https://spanishsabores.com/chorizo-al-vino-tinto-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

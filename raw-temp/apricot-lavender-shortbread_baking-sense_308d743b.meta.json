@@ -1,0 +1,66 @@
+{
+  "url": "https://www.baking-sense.com/2017/06/28/apricot-lavender-shortbread/",
+  "slug": "apricot-lavender-shortbread_baking-sense_308d743b",
+  "title": "Apricot Lavender Shortbread",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:52:12.852Z",
+  "ldName": "Apricot Lavender Shortbread",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "12",
+    "12 pieces"
+  ],
+  "ldCuisine": "British",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "tea time",
+  "ldIngredientsRaw": [
+    "2 tablespoons granulated sugar",
+    "½ teaspoon lavender blossoms",
+    "8 oz unsalted butter (room temperature)",
+    "4 oz granulated sugar (½ cup)",
+    "¼ teaspoon table salt",
+    "2 teaspoons lavender blossoms (adjust to taste)",
+    "10 oz all purpose flour (2 cups, see note)",
+    "½ cup Apricot Lavender preserves (see note 1)",
+    "1  large egg (for egg wash)"
+  ],
+  "ldInstructionsRaw": [
+    "Lavender sugar",
+    "Make the Dough",
+    "Assemble the shortbread"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "295 kcal",
+    "carbohydrateContent": "36 g",
+    "proteinContent": "3 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "10 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "60 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "16 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "[Lavender sugar]",
+    "2 tablespoons granulated sugar",
+    "½ teaspoon lavender blossoms",
+    "[Dough]",
+    "8 oz unsalted butter (room temperature)",
+    "4 oz granulated sugar (½ cup)",
+    "¼ teaspoon table salt",
+    "2 teaspoons lavender blossoms (adjust to taste)",
+    "10 oz all purpose flour (2 cups, see note)",
+    "[Assembly]",
+    "½ cup Apricot Lavender preserves (see note 1)",
+    "1 large egg (for egg wash)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

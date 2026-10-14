@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Chocolate Éclairs",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200ºC/180°C fan/gas mark 6 and line two large baking trays with greaseproof paper. Draw 12 roughly 10cm long lines on the paper to use as guidelines",
+      "For the choux pastry, combine the water, butter and salt in a saucepan. Gently melt the butter over a low heat without bringing the mixture to the boil (you want the butter to be just melted, and avoid evaporating too much of the water)",
+      "Once the butter has melted, bring the mixture up to the boil and tip all the flour into the pan in one go. Remove the pastry from the heat",
+      "Use a wooden spoon to beat the mixture as fast as you can, bringing it all together into a dough that pulls away from the sides of the pan",
+      "Once the dough starts to pull away, return the choux pastry to the heat and continue cooking and stirring the dough (no need to beat it as frantically at this stage) until an instant read thermometer reads 74°C. A little above this temp is fine as well. If you don’t have a thermometer, continue cooking the dough until the base of the saucepan is covered in a fine film of pastry",
+      "Remove the dough from the pan and transfer it to the bowl of a stand mixer with a paddle attachment (or another bowl if using a wooden spoon) to cool a little. It helps to spread the dough out at this stage to cool it faster",
+      "Once the dough reaches 63°C or cooler, it’s time to add the eggs. Lightly beat the eggs together in a jug",
+      "Mix the dough on low speed, and gradually beat the eggs into the dough, ensuring each addition is fully incorporated before adding the next. It’s unlikely that you will need all of the egg. Keep adding egg until you have a mixture that reluctantly drops from the paddle, leaving a V shape. Another way to test if the dough is ready is by scooping some up onto a spoon then counting slowly to 6 - it should have dropped by the time you reach 6 (slow) seconds",
+      "Dab a few dots of the mixture in each corner of the baking trays to stick the greaseproof paper to the surface of the baking trays",
+      "Fit a piping bag with a star nozzle that’s around 1.25cm wide (with a lot of teeth, if possible). Fill the piping bag with the choux pastry",
+      "Place the filled piping bag onto a flat surface and carefully flatten the pastry mixture inside, taking care not to squeeze it out of the bag. Using a pastry scraper or other thin, flat object, gently push the choux pastry down into the bag to remove air bubbles and collect all the dough in one place. Twist the bag at the top and pipe a little of the mixture to remove any air bubbles near the tip",
+      "Carefully pipe the pastry over the guidelines on the baking paper at a 45 degree angle, if possible. Try to achieve a very slight ‘dog bone’ shape with the pastry, as this will ensure they are more evenly shaped once baked. It’s also important to try to pipe fairly slowly, otherwise the éclairs will be too skinny",
+      "Sprinkle a few drops of water around the éclairs (not touching the pastry) and transfer to the oven to bake for 25 minutes. After 25 minutes, swap the trays around for a further 5 minutes, or until the pastry is deep golden brown and crisp – they should sound hollow when tapped",
+      "Prick the underside of the éclair shells with a cocktail stick and transfer onto a wire rack to cool completely",
+      "To make the crème pâtissière, combine the milk and vanilla in a saucepan and bring to the boil, then immediately remove from the heat",
+      "Mix together the sugar, egg yolks and two flours until well blended",
+      "Pour a third of the warmed milk over the egg mixture and whisk vigorously until smooth",
+      "Transfer the milk and egg mixture to the saucepan with the remaining warmed milk and place over medium heat",
+      "Whisk constantly until the mixture has thickened, taking care not to burn it on the bottom",
+      "Set aside with cling film covering the surface until cool enough to fill the éclairs",
+      "To make the chocolate glaze, heat the double cream to boiling point, then pour it over the chopped chocolate and whisk until the chocolate has melted. Allow to sit for a few minutes, then whisk in the butter until smooth and glossy",
+      "To assemble the éclairs, make two holes in the underside of the pastry cases. Use a small piping nozzle to pipe the crème pâtissière into the éclairs - they will feel heavy when full",
+      "To glaze, dip the tops of the éclairs into the chocolate glaze, then set aside until set"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "a big pinch",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "23dc591c518b6af45caf67b81e18103ba3e823d3d61a8edb68269f8bcc87b558",
+    "lineage_hash": "86bfdf8d3053a081cfbfe8a9283946364a2d70000a9b6f667d33df3d6c168485"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-eclairs-recipe",
+    "fetchedAt": "2026-08-02T16:31:55.366Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-eclairs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

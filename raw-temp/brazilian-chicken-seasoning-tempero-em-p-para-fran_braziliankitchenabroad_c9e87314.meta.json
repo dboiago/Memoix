@@ -1,0 +1,62 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-chicken-seasoning-tempero-em-po-para-frango/",
+  "slug": "brazilian-chicken-seasoning-tempero-em-p-para-fran_braziliankitchenabroad_c9e87314",
+  "title": "Brazilian Chicken Seasoning (Tempero Em Pó Para Frango)",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T20:18:06.803Z",
+  "ldName": "Brazilian Chicken Seasoning (Tempero Em Pó Para Frango)",
+  "ldTime": null,
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 Tablespoons"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Seasoning",
+  "ldIngredientsRaw": [
+    "2 Tablespoons onion powder",
+    "1 Tablespoon garlic powder",
+    "2 Tablespoons dried chives",
+    "1/2 Tablespoon dried parsley",
+    "1/2 Tablespoon ground paprika",
+    "1 teaspoon ground achiote pepper (colorau) (optional)",
+    "1 teaspoon ground turmeric",
+    "1/2 teaspoon  ground cayenne pepper",
+    "1 whole large bay leaf (about 2 inches long) (or 2 small (1 inch) ones )"
+  ],
+  "ldInstructionsRaw": [
+    "Add all the ingredients to a spice grinder and grind to a powder.",
+    "Place the seasoning in a jar and cover with a lid.",
+    "Store in a dry place for months, and use as needed.",
+    "Seasoning Instructions:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 tablespoon",
+    "calories": "17 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "4 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "2 Tablespoons onion powder",
+    "1 Tablespoon garlic powder",
+    "2 Tablespoons dried chives",
+    "1/2 Tablespoon dried parsley",
+    "1/2 Tablespoon ground paprika",
+    "1 teaspoon ground achiote pepper (colorau) optional",
+    "1 teaspoon ground turmeric",
+    "1/2 teaspoon  ground cayenne pepper",
+    "1 whole large bay leaf (about 2 inches long) or 2 small (1 inch) ones"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

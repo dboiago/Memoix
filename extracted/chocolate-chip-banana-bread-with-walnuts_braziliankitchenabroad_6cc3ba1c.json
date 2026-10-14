@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Banana Bread with Walnuts",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "490",
+      "carbohydrateContent": "58",
+      "fatContent": "27",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Preheat oven to 350F. Line a loaf pan with parchment paper or spray with nonstick baking spray, set aside.",
+      "In a medium bowl, mash the bananas together using a fork. Set aside.",
+      "In a large bowl, cream the butter and sugar together with a hand mixer until light and fluffy. (This will take a few minutes.)",
+      "Crack in the eggs. Measure in the vanilla extract. Beat until combined.",
+      "Add the mashed bananas and beat to combine.",
+      "Next, measure in the all-purpose flour, baking soda and salt.",
+      "Pour in the milk, and stir gently to combine.",
+      "Add in most of the walnuts and chocolate chips, and stir to combine.",
+      "Pour the batter into the prepared loaf pan. Sprinkle with the remaining walnuts and chocolate chips on top of the batter. You can also sprinkle on some coarse salt on top, too.",
+      "Bake for 55 minutes, or until golden brown and cooked through! Test the doneness with a butter knife or skewer inserted into the center of the bread. If it comes out clean, the bread is done.",
+      "Let the bread cool slightly before slicing, and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stick of Unsalted Butter",
+        "unit": null,
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Very Ripe Bananas",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "alt: yogurt",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnut",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fe025b196feff8d8f6a6ca12423e2b4f61a367ba1da8c224c82a744c5b567dc",
+    "lineage_hash": "cb696c14c98f46d7b2f3b4e3c5437ac02fa0a3b1caaef65426cbee46b2ac0d4e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/banana-bread/",
+    "fetchedAt": "2026-09-25T19:19:06.015Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/banana-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

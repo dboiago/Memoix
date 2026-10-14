@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Andhra Style Chilli Chicken (Spicy Chicken Curry)",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add chicken, salt, onion, green chillies, oil, turmeric powder, ginger-garlic paste and mix everything properly, keep aside for half an hour.",
+      "In a grinder jar add coriander leaves, green chillies, salt, oil and grind it into a fine paste. Keep aside for further use.",
+      "In a heated kadai add the marinated chicken, cover and cook on medium heat until 20-25 minutes or 85%.",
+      "Now remove the lid and stir it once properly then add the paste and continue cooking until fully cooked.",
+      "Once cooked, finish it with lemon juice and garnish with coriander leaves. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "curry cut",
+        "amount": "750",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "3",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4-5",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3-4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8199c7c1c245092e1cf1270169023281e103041ab44cb6516a1b6efd567c17a",
+    "lineage_hash": "a7ce8e53f2a9741c2ac926542cde3ab8127101d80ba26b8f862743812a512c20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/andhra-style-chilli-chicken/",
+    "fetchedAt": "2026-08-02T14:03:50.591Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/andhra-style-chilli-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

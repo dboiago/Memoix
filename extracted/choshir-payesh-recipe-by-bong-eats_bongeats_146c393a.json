@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Choshir Payesh",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "258",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Set water on the boil with salt. Once boiling, add the rice flour.",
+      "Mix roughly, and cover the pan to allow it to cook on low heat for 5 minutes, undisturbed.",
+      "After 5 minutes, mix the dough again, on low heat, until it is cooked (about a minute).",
+      "Transfer to a worktable or mixing bowl and knead well until smooth. Reserve it under a damp cloth, or in a storage container to prevent it from drying out.",
+      "We can now start making the 'choshi', the tiny spindle-shaped dumplings.",
+      "Take a small portion of the dough and roll it into a thin 5-mm snake.",
+      "Starting at one end, pinch about a 5-mm portion of the snake. Using the 'thenar' part of the palm (the base of the thumb) tear away the pinched portion, at the same time shaping the free end into a spindle. Then shape the second side.",
+      "Repeat until the entire dough is used up.",
+      "Bring milk to a boil. Reduce it on low heat for about 10 minutes.",
+      "Add the choshi and cook until the milk has thickened and the choshi are cooked.",
+      "Turn off the heat before adding crumbled patali gur (date-palm jaggery).",
+      "Mix well. Serve warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "How Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Patali Gur",
+        "unit": "g",
+        "notes": "date-palm jaggery in solid form",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccf7e20a6d8b9d37eef7756ca86253a5a4b44951453d03d679d9749f9e2d275c",
+    "lineage_hash": "b01265dc0ca09ce2cf64349071edaa57d5737cf927669bde970a9fece2f875c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/choshi-pitha",
+    "fetchedAt": "2026-08-01T18:56:55.560Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/choshi-pitha",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Dal Makhani (Easy Recipe)",
+    "time": "5 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and soak urad dal, overnight.",
+      "In a heavy bottom pot add dal and garlic water and let it cook for at least for 1.5 hours on a low flame.",
+      "Once dal is cooked add butter into it.",
+      "Heat ghee in a pan, add ginger garlic paste, degi red chilli powder, fresh tomato puree. SautÃ© till the tomato puree is well cooked.",
+      "Add the tempering to cooked dal and mash it.",
+      "Add butter and salt to it and cook until well combined.",
+      "Heat ghee in a pan, add kasuri methi, degi red chilli powder and water.",
+      "Add the tempering to the dal, add butter and give it a boil.",
+      "Serve hot in a serving bowl and garnish with cream and butter cubes and serve with hot roti or jeera rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Lentil (sabut Urad Dal)",
+        "unit": "g",
+        "notes": "soaked",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For 2nd tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For 2nd tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For 2nd tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For 2nd tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For 2nd tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Butter Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "822959b9eeba33565f1b076385d9f8aca31fe13074d07ac52213ae59345369d0",
+    "lineage_hash": "945c826163e81a7fa3070adc55c8d521b62ce4453abcd07dd9db1d3c8fadfc81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-makhani-2/",
+    "fetchedAt": "2026-08-02T00:14:58.723Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-makhani-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

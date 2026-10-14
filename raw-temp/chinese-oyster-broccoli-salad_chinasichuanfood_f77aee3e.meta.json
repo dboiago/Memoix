@@ -1,0 +1,56 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-oyster-broccoli-salad/",
+  "slug": "chinese-oyster-broccoli-salad_chinasichuanfood_f77aee3e",
+  "title": "Chinese Oyster Broccoli Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:40:44.057Z",
+  "ldName": "Chinese Oyster Broccoli Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "Broccoli, Oyster",
+  "ldIngredientsRaw": [
+    "1  middle size broccoli",
+    "3  drops of cooking oil",
+    "1 teaspoon salt",
+    "2 tablespoons oyster sauce",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon water",
+    "1 teaspoon sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the broccoli into small pieces.",
+    "Bring some water to a boiling in a pot. Add 3 drops of cooking oil and salt in the water. Blend the broccoli around 1 minute. Transfer out and drain.",
+    "Prepare a pan, add oyster sauce, light soy sauce, water and sugar together. Bring them to a boiling.",
+    "Mix the sauce with broccoli."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "109 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "4 g",
+    "fatContent": "6 g",
+    "sodiumContent": "2190 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 middle size broccoli",
+    "3 drops of cooking oil",
+    "1 teaspoon salt",
+    "[Sauce]",
+    "2 tablespoons oyster sauce",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon water",
+    "1 teaspoon sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

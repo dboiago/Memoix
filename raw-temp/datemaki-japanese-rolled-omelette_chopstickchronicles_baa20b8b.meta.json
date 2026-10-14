@@ -1,0 +1,60 @@
+{
+  "url": "https://www.chopstickchronicles.com/datemaki/",
+  "slug": "datemaki-japanese-rolled-omelette_chopstickchronicles_baa20b8b",
+  "title": "Datemaki Japanese rolled omelette",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T00:25:23.478Z",
+  "ldName": "Japanese rolled omelette 伊達巻き",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "1",
+    "1 rolled omelette"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Appetizer, Breakfast, Side Dish",
+  "ldKeywords": "datemaki",
+  "ldIngredientsRaw": [
+    "6  large eggs",
+    "2  Hanpen fish cake (* 1 )",
+    "2 tbsp sugar",
+    "1 tbsp honey",
+    "1 tbsp mirin (*2)",
+    "1 tbsp Dashi (*)",
+    "1 tsp sake (*2)",
+    "1 tsp usukuchi soy sauce (*2)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat your oven to 350°F (180°C) and line a baking tray with a parchment sheet. *3",
+    "Mixing with a Blender",
+    "Mixing with a Whisk manually",
+    "Baking *4"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "732 kcal",
+    "carbohydrateContent": "78 g",
+    "proteinContent": "45 g",
+    "fatContent": "25 g",
+    "cholesterolContent": "993 mg",
+    "sodiumContent": "1768 mg",
+    "sugarContent": "54 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 6 large eggs",
+    "▢ 2  Hanpen fish cake * 1",
+    "▢ 2 tbsp sugar",
+    "▢ 1 tbsp honey",
+    "▢ 1 tbsp mirin *2",
+    "▢ 1 tbsp Dashi *",
+    "▢ 1 tsp sake *2",
+    "▢ 1 tsp usukuchi soy sauce *2"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

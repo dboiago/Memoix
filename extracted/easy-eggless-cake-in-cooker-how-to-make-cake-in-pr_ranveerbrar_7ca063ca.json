@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Cake in Cooker",
+    "time": "1 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add 1 cup of salt in a pressure cooker and place a wire stand in the bottom. Close the lid, remove the whistle and let it heat in medium-high flame.",
+      "In a large mixing bowl, add butter, oil and whip for a minute until it mix well.",
+      "Now add condensed milk and whip it onces now add powdered sugar and start whipping until thick and slightly fluffy.",
+      "Then add curd, vanilla essence and mix well.",
+      "Now in the mixture add semolina, sieve refined flour and mix everything well and incorporate air. Now in another small bowl, add oil, baking soda, baking powder and mix well. Transfer this into the mixture and mix well.",
+      "Add milk and whisk to ensure there are no lumps. The batter should be of cotting consistency.",
+      "Stick the parchment paper to the cake tin using a little bit of butter and then pour all of the batter inside the cake tin."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rock Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For soaking cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For soaking cake",
+        "isOptional": false
+      },
+      {
+        "name": "Toffee Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For soaking cake",
+        "isOptional": false
+      },
+      {
+        "name": "Toffee Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "0",
+        "section": "For Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Few Fresh Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnishing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09f8ccc3b8c31a642523697fb0a20334cb96b5d30ed6428674c0b4ba56673e90",
+    "lineage_hash": "efded32aa8cb8ca2a6498ec4ae1fe282eff292916c5f2fb409dc318563583770"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-cake-in-cooker/",
+    "fetchedAt": "2026-08-02T19:46:25.126Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-cake-in-cooker/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,248 @@
+{
+  "recipe": {
+    "name": "Crispy Pork Belly",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roughly chop the onions, celery and carrots and place in a deep baking tray. Arrange the pork belly on top and add 570ml of water to the tray",
+      "Cover with a layer of baking parchment and tightly wrap the top of the tray with tin foil. Cook in the oven for 8 hours until the pork is soft",
+      "Remove from the oven and discard the foil and parchment lid. Drain the excess juice into a jug and store in the fridge",
+      "Using a pair of latex gloves, peel the skin off the hot pork belly and discard. Line a 30cm x 20cm x 7cm tray with cling film. Carefully slice a layer of meat from the pork belly, leaving enough fat on the belly to keep the meat moist, and press it into the bottom of the tray",
+      "Place a layer of sliced black pudding onto the pork and repeat the process again. Cover the pork and black pudding with cling film, press with a sturdy weight and refrigerate overnight",
+      "The next day, remove the chilled pork and cut into 8 equally-sized portions, coat with the breadcrumbs. Keep in the fridge until required",
+      "For the celeriac remoulade, peel and slice the celeriac on a mandolin. With a sharp knife, cut the slices into julienne",
+      "In a heavy-bottomed pan on a low-medium heat, lightly cook the shallots in a little butter then add the chopped garlic and thyme. Remove the pork juice from the fridge and remove the fat from the top - you will be left with a clear pork jelly underneath",
+      "Add the jelly to the shallots along with the cream. Cook until reduced by half then add the celeriac and cook, stirring occasionally, until tender. Remove from the heat and stir in the wholegrain mustard",
+      "For the celeriac purée, simply place in the stock and bring to a gentle boil. Cook for 10-15 minutes until soft and tender, strain and blend with the cream and lemon juice until silky smooth. Press through a fine strainer and season to taste",
+      "For the apple purée, peel, core and chop the apples. Place in a pan along with the sugar and a little water, cook slowly until the apples are soft but not coloured",
+      "Remove the excess liquid from the pan and blend the rest until smooth - the trick is to get a vibrant green purée",
+      "When ready to serve, melt the butter in a sauté pan and cook the baby spinach until just wilted",
+      "Pan-fry the pork in a little oil until golden brown on all sides. Warm the celeriac remoulade and place a generous spoonful in the centre of the plate, followed by the wilted spinach. Place the pork belly on top with some warm apple purée, and serve the celeriac purée on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": null,
+        "notes": "skin and ribs left on",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding Sausage",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "pinch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "medium dice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e65c58b871a2fcd5385ba388ad0c4d643a70ad3ee8a1a3b38240ac061a08874d",
+    "lineage_hash": "aeac36a6833aa8771bedc1d6bb9b619464a4f829f6e46f65b3435c850402cc20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-pork-belly-recipe",
+    "fetchedAt": "2026-08-03T22:19:41.427Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-pork-belly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

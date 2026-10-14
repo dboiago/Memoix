@@ -1,0 +1,60 @@
+{
+  "url": "https://www.baking-sense.com/2021/03/25/classic-french-buttercream/",
+  "slug": "classic-french-buttercream_baking-sense_e682d8f0",
+  "title": "Classic French Buttercream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T20:30:34.101Z",
+  "ldName": "French Buttercream Recipe",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "desserts",
+  "ldCategory": "Fillings &amp; Frostings",
+  "ldKeywords": "buttercream, frosting, icing, meringue buttercream",
+  "ldIngredientsRaw": [
+    "2 oz water (¼ cup)",
+    "8 oz granulated sugar (1 cup, divided)",
+    "6  large egg yolks (room temperature)",
+    "⅛ teaspoon salt",
+    "1 pound unsalted butter (room temperature, cut into 16 pieces)",
+    "1 tablespoon vanilla extract",
+    "Other flavorings to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Combine2 oz&#32;water with 6 oz, (3/4 cup) granulated sugar in a small saucepan. Cook the sugar syrup on medium high heat, stirring until the sugar is melted. Once the syrup begins to boil do not stir the syrup. Allow it to cook to 235 °F(soft ball stage).",
+    "While the syrup is boiling, whip 6&#32;large egg yolks on medium with the remaining 1/4 cup of sugar and ⅛ teaspoon&#32;salt. Increase the speed to medium high and whip until the yolks are aerated and pale yellow.",
+    "As soon as the syrup is at the correct temperature, remove the pan from the heat. With the mixer running on medium low, pour the hot syrup in a steady stream between the edge of the bowl and the whisk. Increase the speed to medium high and continue whisking until the yolks are cooled to about 80 °F.",
+    "When the yolks have cooled, with the mixer running on medium, add 1 pound&#32;unsalted butter one piece at a time. Add 1 tablespoon&#32;vanilla extract and increase the speed to medium high and whip until the buttercream comes together.",
+    "Store at room temperature for 4 hours, refrigerate up to 2 days or freeze for up to 3 months. Bring the buttercream back to room temperature and rewhip before using."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "282 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "1 g",
+    "fatContent": "25 g",
+    "saturatedFatContent": "15 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "134 mg",
+    "sodiumContent": "25 mg",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "8 g"
+  },
+  "htmlIngredientLines": [
+    "2 oz water (¼ cup)",
+    "8 oz granulated sugar (1 cup, divided)",
+    "6 large egg yolks (room temperature)",
+    "⅛ teaspoon salt",
+    "1 pound unsalted butter (room temperature, cut into 16 pieces)",
+    "1 tablespoon vanilla extract",
+    "Other flavorings to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

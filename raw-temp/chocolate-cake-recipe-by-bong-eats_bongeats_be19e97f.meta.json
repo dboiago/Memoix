@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bongeats.com/recipe/chocolate-cake",
+  "slug": "chocolate-cake-recipe-by-bong-eats_bongeats_be19e97f",
+  "title": "Chocolate Cake recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:52:51.370Z",
+  "ldName": "Chocolate Cake",
+  "ldTime": "PT2H",
+  "ldPrepTime": "PT1H",
+  "ldCookTime": "PT40M",
+  "ldYield": "12 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "dessert",
+  "ldKeywords": "chocolate ganache cake, soft chocolate cake",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "‍225 g all-purpose flour (maida)",
+    "75 g cocoa powder (we’re using dutch-processed; you can use any)",
+    "10 g baking powder",
+    "20 g instant coffee",
+    "10 g baking soda",
+    "3 g salt",
+    "300 g sugar",
+    "3 eggs",
+    "10 g vanilla extract",
+    "180 g melted butter (salted; if using unsalted, increase salt to 7 g)",
+    "50 g yoghurt (skip if using regular cocoa powder; replace with milk)",
+    "150 g milk",
+    "150 g boiling hot water",
+    "‍300 g dark chocolate (70% cocoa solids)",
+    "350 g heavy cream (at least 30% milk fat)",
+    "¼ tsp salt",
+    "¼ tsp vanilla"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

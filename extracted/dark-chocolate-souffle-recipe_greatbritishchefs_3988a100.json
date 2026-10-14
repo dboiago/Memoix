@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Souffle",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the ice cream, whisk the egg yolks and sugar until creamy and pale. Heat the milk and cream in a pan, add the vanilla extract and vanilla pod and bring to the boil",
+      "Pour the milk mix into the egg and sugar mix, whisking well",
+      "Pour the combined mix back into the pan and cook until the custard just coats the back of the spoon. Remove the vanilla pod and pour into a container and cool in the fridge",
+      "Break up the Christmas pudding and stir into the cold ice cream base. Place in the freezer",
+      "Every hour, until the mixture freezes,  turn the mix over with a spoon so that the Christmas pudding does not settle on the bottom. Freeze until needed",
+      "To make the soufflé base, put the eggs and sugar in a bowl and whisk until creamy and pale",
+      "Heat the milk in a saucepan until it just boils. Pour the milk over the eggs and mix well",
+      "Sieve the cornflour and cocoa powder into the milk and eggs and then return the mixture to the saucepan",
+      "Cook, stirring, until thickened. Pour into a clean bowl and cool",
+      "To prepare the ramekins, brush 6 moulds with the soft butter making sure they’re evenly covered",
+      "Mix the caster sugar and cinnamon powder together and pour into the ramekins",
+      "Roll each one around until the insides are evenly covered and then tip out the excess sugar mix",
+      "It’s important that you take your time at this stage otherwise your soufflé might not rise evenly",
+      "To make the soufflé, heat a fan assisted oven to 180°C/Gas mark 6. Whisk the egg whites to form soft peaks",
+      "Add the sugar and keep whisking until firm peaks are achieved",
+      "Put the cooled soufflé base into a clean steel bowl. Add one or two spoonfuls of the egg white and whisk in well to loosen the mixture",
+      "Carefully fold in the rest of the egg whites using a stainless steel spoon. Sprinkle over the chocolate chips and carefully mix",
+      "Spoon the mixture into the ramekins and level off with a palette knife. Using your thumb, run around the edge of the ramekin to form a moat - this helps with the rising of the soufflé",
+      "Place on a baking tray and cook for 7 minutes",
+      "Finally, dust with cocoa powder and serve immediately with a good spoonful of Christmas pudding ice cream and some redcurrants"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Christmas Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrants",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd55994a3b81c05e5f4743af3471ca465fbc8aeeb8f03cd1089b24420516d036",
+    "lineage_hash": "77903d782e510d38bd0f08aa0f68db062e2c2258fb0ad30e96ed1b396053101b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-chocolate-souffle-recipe",
+    "fetchedAt": "2026-08-02T22:12:28.530Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-chocolate-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

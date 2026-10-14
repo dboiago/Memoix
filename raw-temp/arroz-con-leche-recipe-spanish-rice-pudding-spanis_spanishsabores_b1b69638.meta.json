@@ -1,0 +1,60 @@
+{
+  "url": "https://spanishsabores.com/antonias-arroz-con-leche-recipe/",
+  "slug": "arroz-con-leche-recipe-spanish-rice-pudding-spanis_spanishsabores_b1b69638",
+  "title": "Arroz con Leche Recipe (Spanish Rice Pudding) - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T08:32:51.174Z",
+  "ldName": "Spanish Arroz con Leche Recipe",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Dessert",
+  "ldKeywords": "Arroz con Leche, rice pudding recipe, spanish rice pudding",
+  "ldIngredientsRaw": [
+    "1 cup short grain rice (arroz Bomba or arborio)",
+    "1-2 wide slices lemon rind",
+    "1  cinnamon stick",
+    "1 teaspoon ground cinnamon",
+    "1 pinch salt",
+    "4 ¼ cups whole milk (or full-fat coconut milk)",
+    "sugar (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the rice under cold water, and then put it in a saucepan.  Pour in enough milk to barely cover the rice, then place over medium heat.",
+    "Add the cinnamon stick and lemon rind , and stir continuously until all of the milk is absorbed.",
+    "Add the rest of the milk about ½ cup (120 ml) at a time, stirring between each addition until all the milk is absorbed.",
+    "Once all the milk is added, taste to see if the rice is cooked to your liking.  Some like it al dente, while others like it almost mushy.",
+    "When the rice is cooked, remove the rice from the heat, and add a pinch of salt and the ground cinnamon. Add the sugar a few tablespoons at a time until it is sweet enough for you.",
+    "Serve warm or cold with a garnish of cinnamon on each dish.  Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 dish",
+    "calories": "329.48 kcal",
+    "carbohydrateContent": "51.38 g",
+    "proteinContent": "11.25 g",
+    "fatContent": "8.45 g",
+    "saturatedFatContent": "4.75 g",
+    "cholesterolContent": "25 mg",
+    "sodiumContent": "119.74 mg",
+    "fiberContent": "1.49 g",
+    "sugarContent": "13.82 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup short grain rice arroz Bomba or arborio",
+    "▢ 1-2 wide slices lemon rind",
+    "▢ 1 cinnamon stick",
+    "▢ 1 teaspoon ground cinnamon",
+    "▢ 1 pinch salt",
+    "▢ 4 ¼ cups whole milk or full-fat coconut milk",
+    "▢ sugar to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

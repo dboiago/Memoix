@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Aloo Tikki Roestis",
+    "time": "25-30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the raw potatoes in a bowl. Then add oil, finely chopped coriander, finely chopped onion, finely chopped green chili, finely chopped ginger, salt and cumin seeds and mix.",
+      "Heat oil in a pan. Add the potato mixture and cook from both sides.",
+      "Add the chopped broccoli and grated cheese in the middle and roll the roestis. Roast again on both sides.",
+      "Once cooked, place the roestis on a plate and garnish with a fried green chili, sev, chopped cherry tomato and green chutney.",
+      "Aloo Tikki Roestis is ready to eat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Nos Raw Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil to Roast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Fried Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Required Sev",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Chopped Cherry Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chutney",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec88c0c3480a3ca296a3bd6d3325cb242b3eabe9566fb65a79244a95086591a7",
+    "lineage_hash": "a5905d3a69fd4c25ac108433805c5667a6c9b7025dd0cd7b0e869cad1870f756"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-tikki-roestis/",
+    "fetchedAt": "2026-08-02T08:50:38.943Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-tikki-roestis/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

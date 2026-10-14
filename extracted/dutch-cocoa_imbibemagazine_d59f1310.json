@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Dutch Cocoa",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [
+      "Chartreuse Whipped Cream",
+      "Chocolate Curls"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mug and stir to combine. Garnish liberally with Chartreuse whipped cream and top with chocolate curls, if desired.",
+      "Chartreuse Whipped Cream\n¼ cup heavy whipping cream\n½ oz. green Chartreuse\n1 tsp. granulated sugar\nWhisk ingredients together in a small bowl until soft peaks form. Refrigerate for up to 1 week. Makes about a ½ cup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hot Chocolate",
+        "unit": "oz",
+        "notes": "freshly made",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Genever",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "410591d10b31f8a77fca0dca20d1ce55224c49253eb3d78adac1a95363d3dbaf",
+    "lineage_hash": "d0e52b1ec302760039d9848521088e748ecf1048d1fba20ff973e9a1a7e6d3f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dutch-cocoa/",
+    "fetchedAt": "2026-08-03T20:11:19.283Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dutch-cocoa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

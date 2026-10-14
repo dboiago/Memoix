@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Curry Sauce",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a pan over a medium heat and melt the butter. Add the shallots and garlic, cook until soft then add the spices and sliced chilli. Cook for 8 minutes",
+      "Add the carrots to the pan and stir to coat in the spices. Add the water, bring to the boil and simmer until the carrots are very soft. If all of the liquid evaporates, add a splash more water",
+      "Once the carrots are cooked, add the coconut milk and blend in a liquidiser. Serve warm with chips"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": "medium",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1360ef152ea842b8751652958ae7a5f425156c2d1b731a64c86ce975a9bdbdc",
+    "lineage_hash": "41dbfe7732c61561810924b4c2a990cf149471a3b3a1cf439348d71f94350dcb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curry-sauce-recipe",
+    "fetchedAt": "2026-08-03T15:54:29.367Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curry-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

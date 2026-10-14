@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chocolate Fondant",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the crème anglaise. Whisk the egg yolks with the sugar and vanilla seeds until pale. Pour the milk and cream into a pan, add the vanilla pod and place on a low heat for 5 minutes to infuse",
+      "Remove the vanilla pod and add the milk and cream mixture to the egg yolks and sugar. Whisk well, then return to a pan over a low heat. Cook until the mixture reaches a temperature of 85°C or coats the back of a spoon. Allow to cool and set aside to serve with the chocolate fondants",
+      "Butter 6 ramekins and sprinkle the insides with the sugar. Preheat the oven to 200C°/Gas mark 6. Melt the butter and chocolate in a bowl set over a pan of simmering water. Whisk the eggs and the 150g of sugar together for a minute or two in a bowl, then add the flour and the melted chocolate mixture",
+      "Pour into the prepared ramekins and bake in the oven for 8-10 minutes - the centres should still be runny. Leave the chocolate fondants to rest for a minute or so before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds scraped out",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6923c1b4b5234340308be660720e1b03b8e66e154dbefe3fab54b796938c855d",
+    "lineage_hash": "09068835affeecde90ada9f801ddd1bde2cdd65935904717cf264e70ee43fdcf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe",
+    "fetchedAt": "2026-08-03T15:25:51.300Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

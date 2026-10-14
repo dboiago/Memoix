@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Dak Galbi (Korean Spicy Chicken Stir Fry)",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "552",
+      "carbohydrateContent": "41",
+      "fatContent": "28",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Combine all the marinade ingredients in a bowl and mix them well. Pour the sauce over the chopped chicken and marinate for at least 30 mins. (Though I strongly recommend marinating it for at least 4 hrs, and if you can afford more time, for overnight for better flavored chicken. However if you are really short of time, 30 mins is OK.)",
+      "Preheat a large skillet on medium high heat and once heated add some cooking oil. Put all the vegetables and rice cakes into the skillet and add the meat on top. Cook them on medium high heat for 3-4 mins. Then reduce the heat to medium to medium low and cook further until all is cooked (about 10 - 15 mins). During cooking, stir often to avoid food sticking onto the pan. You can cover with a lid to speed up the cooking process.",
+      "Serve with rice and other Korean side dishes (optional)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh Fillets (1.1 Pounds)",
+        "unit": "g",
+        "notes": "you can use a whole chicken or chicken breast, cut into bite size pieces",
+        "amount": "500",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato (180g / 6.3 Ounces)",
+        "unit": null,
+        "notes": "like English chips, cut into long thick sticks",
+        "amount": "½",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (60g / 2.1 Ounces)",
+        "unit": null,
+        "notes": "diagonally sliced",
+        "amount": "½",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage (320g / 0.7 Pounds)",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "¼",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Korean Perilla (35g / 1.2 Ounces)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "10",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Rice Cakes (175g / 6.1 Ounces)",
+        "unit": "pcs",
+        "notes": "separated, if you use pre-packaged rice cakes, separate them first then soak in warm water for 10 minutes before you use them",
+        "amount": "18",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Some Cooking Oil (2 to 3 Tbsp) - I Used Rice Bran Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang Korean Chili Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru Korean Chili Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion (35g / 1.2 Ounces)",
+        "unit": null,
+        "notes": "grated or minced",
+        "amount": "½",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Few Sprinkles Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Marinade Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b725887c4a06e222751b7a3fee0e010ce85c82f53622b63522320aad7bab306b",
+    "lineage_hash": "8642b3a04fb70f4c326d354bf66e091995ad627d6f57b1341966e8239c7779d2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/dak-galbi/",
+    "fetchedAt": "2026-08-01T22:49:23.053Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/dak-galbi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

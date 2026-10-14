@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Duck Breast With Passion Fruit Sauce",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the passion fruit sauce by cutting the fruit in half, remove the pulp and seeds and flesh from inside and place in a small saucepan",
+      "Next, add the whisky and star anis and bring to the boil.  The whisky may flambé, allow the alcohol to burn off and remove the pan from the heat until the flame burns out",
+      "Add the maple syrup and black treacle and bring back to the boil.  Remove from the heat to allow the ingredients to infuse. Reheat the sauce when ready to serve",
+      "Wash and place the new potatoes into a suitable sized pan, cover with cold water and bring to the boil. Cook for about 10-15 minutes of until tender. Strain and leave to cool slightly",
+      "While the potatoes are cooling, place the duck breast on a chopping board, skin side up and using a sharp knife, score the skin in a diagonal direction. Then turn the duck breast around and score in the opposite direction",
+      "Season the duck breast with a salt and black pepper. Heat an oven proof frying pan on a high heat. Once the pan is very hot place the duck breast, skin side down, into the dry pan. Reduce the heat so that it gently fries and cook for 5 minutes until golden brown",
+      "Preheat the oven to 190˚C/gas mark 5. Transfer the frying pan into the oven and cook the breast for 3 minutes on one side, then turn the duck breast over and cook for another 3 minutes",
+      "Remove from the oven and transfer the breast onto a board or plate and allow to rest in a warm place for a good 5 minutes",
+      "While the duck is resting, heat a large frying pan on a medium heat and add a large knob of butter. As soon as the butter begins to foam, add the potatoes, slightly crushing each one in your hand before adding into the pan",
+      "Toss the potatoes in the warm butter and season with salt to taste. Remove the pan from the heat and  add in the chives just before serving alongside the carved duck breast and hot passion fruit sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Passion Fruit",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Treacle",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob Butter",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14aeedd0de35be2e5a62b61a82c2285838c49eaf643976d82a5de6dee80351bd",
+    "lineage_hash": "0d4657748ee266b53a43f79e090cec1cdc1b228c7525d9d89907509af7a688ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/gressingham-duck-breast-recipe-passion-fruit-sauce",
+    "fetchedAt": "2026-08-03T19:24:37.279Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/gressingham-duck-breast-recipe-passion-fruit-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Cucumber and Egg Stir Fry",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "184",
+      "carbohydrateContent": "6.6",
+      "fatContent": "15.2",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Place lily flowers and wood ear mushrooms into two separate medium-sized bowls, and add warm water to cover. Let rehydrate until turning tender, 20 to 30 minutes. Gently rinse off any dirt on the surface and drain. Snip off the tough ends from the lily flowers, if needed. Halve them if too long. Cut the wood ear mushrooms into bite-size pieces. Gently pat dry with paper towels.",
+      "Heat 1 tablespoon of oil over medium-high heat in a large skillet or wok until hot. Add egg and scramble it. Let the eggs cook until some of the surface has turned golden brown. Transfer to a plate.",
+      "Add the remaining 2 tablespoons of oil and the garlic and scallion whites. Stir a few times until fragrant.",
+      "Add lily flowers, wood ear mushrooms and carrot. Cook and stir for 2 to 3 minutes, until the carrot starts to turn tender.",
+      "Add cucumber. Swirl in soy sauce and sugar. Sprinkle with chicken bouillon. Immediately stir to mix well.",
+      "Return cooked egg to the skillet and stir to mix well. Taste the dish and sprinkle with extra salt if needed. Continue stirring until all the ingredients are mixed well.",
+      "Turn off heat. Swirl in the sesame oil and stir to mix well. Serve hot over steamed rice as a main dish or as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Handful Dried Lily Flowers",
+        "unit": null,
+        "notes": "*Optional, Footnote 1, yields 1 and 1/2 cups after rehydration",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms",
+        "unit": "pcs",
+        "notes": "*Optional, Footnote 1, dried, yields 1 cup after rehydration",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil (or Vegetable Oil)",
+        "unit": "Tbsp",
+        "notes": "*See footnote 2",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Eggs",
+        "unit": null,
+        "notes": "beaten with 1/4 teaspoon salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced, white and light green parts separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "*See footnote 3, sliced into diamond shape",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese",
+        "unit": null,
+        "notes": "alt: English cucumber, *See footnote 3, sliced into diamonds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "036ec98be4785f5ccdc6b1aa073808ff4b887245916ed6cabc9683b24aa56500",
+    "lineage_hash": "29109eb66c5db4153a2dd198bf0e1f3834843d010d595082cd825f5253853935"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cucumber-and-egg-stir-fry/",
+    "fetchedAt": "2026-08-02T07:48:34.823Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cucumber-and-egg-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

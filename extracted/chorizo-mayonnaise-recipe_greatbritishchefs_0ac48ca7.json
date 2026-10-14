@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Chorizo Mayonnaise",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the oil into a saucepan and add the chorizo. Gradually bring it up to a sizzle and cook until the chorizo is crisp and the oil has turned red. Remove the chorizo with a slotted spoon and set aside. Leave the oil to cool",
+      "Whisk together the egg yolk, mustard and lemon juice in a bowl. Once the oil has cooled, very slowly drizzle it into the yolk mixture whilst whisking constantly. If the bowl is moving around too much while you do this, sit it on a few damp tea towels to hold it in place",
+      "Once the mayonnaise begins to thicken and emulsify, you can start adding the oil a little quicker. Season to taste with plenty of salt and pepper, then chop up the reserved fried chorizo and sprinkle it on top (with some extra chilli flakes if you like)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "sliced into rounds",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a392244b139153f5fa0f9ddd2e1d3383f57e726e021f7fd8a0eac62b22c5fe12",
+    "lineage_hash": "7c85d65b6f7b6e885a9d716af74603771a11ded4c1f8ba6371d3bbfaa9bfdd64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-mayonnaise-recipe",
+    "fetchedAt": "2026-08-01T23:38:50.904Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-mayonnaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

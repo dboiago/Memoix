@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Bacon-Wrapped Festive Stuffed Pork Loin",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the stuffing. Melt the butter in a large frying pan. Add the onion and gently sauté on a low-medium heat until translucent, 3-4 minutes",
+      "Next add the apple and pears and continue to sauté for 5 minutes until they start to soften a little",
+      "Add the remaining ingredients and continue to cook on a low heat until all the ingredients are well incorporated, stirring gently so the mix doesn’t turn mushy, 10-12 minutes in total. Remove from the heat and set aside to cool completely",
+      "Next prepare the bacon weave. On a piece of baking parchment, lay 8 rashers vertically and one by one, weave another 12 rashers horizontally. Weave the rashers by lifting alternate vertical rashers and laying a rasher horizontally, then repeat in the opposite order with the next rasher. Repeat with all 12 rashers. Refrigerate until required",
+      "Butterfly the pork loin and gently beat with a mallet until flattened",
+      "Season the butterflied side well and evenly, with the sea salt",
+      "Add the stuffing mixture to the middle of the loin. Close up the pork and place in the centre of the bacon weave. Wrap the bacon around the pork loin, using the parchment paper that you made the weave on, a little like rolling sushi. Tuck in any loose bacon pieces. To make sure the loin holds together with the bacon, wrap rightly in cling film and refrigerate for 2 hours or ideally overnight",
+      "Preheat your kettle BBQ to 120°C and set it up for cooking indirectly, meaning the coals are banked on one side. Add soaked wood chips or wood chunks, if you’d like, at this stage",
+      "Place your bacon weaved pork loin on the indirect side of your BBQ (with no coals underneath) and cook until the internal temperature of the pork reads 60°C, around 1.5hrs",
+      "Melt the butter and maple syrup in a small pan and glaze the pork every 10 minutes until the internal temperature reaches 65°C. Remove from the heat and allow to rest for ten minutes before carving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Loin",
+        "unit": "kg",
+        "notes": "any fat and silverskin trimmed off",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rashers of Dry Cured Streaky Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Maple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": "peeled, cored and finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seasonal Pear",
+        "unit": null,
+        "notes": "peeled, cored and finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried, diced",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "fresh, leaves finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4946aa795855dfb54dfabaa07717de329de5c7561b78bb511c0672cf60e762a",
+    "lineage_hash": "6e865db58c67031797eeaafb00bfaed3ca18dbfcca6f10032548ab24fac231cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bacon-wrapped-festive-stuffed-pork-loin-recipe",
+    "fetchedAt": "2026-08-02T07:40:34.026Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bacon-wrapped-festive-stuffed-pork-loin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

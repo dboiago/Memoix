@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Crispy Salt & Pepper Beef (Thịt Bò Chiên Muối Tiêu)",
+    "time": "19 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Thinly slice the beef into bite-sized pieces against the grain. In a large bowl, marinate beef strips with salt (1/2 teaspoon), ground black pepper (1/4 teaspoon), Chinese five-spice powder, and baking soda for at least 10 minutes.",
+      "In a separate bowl, beat egg whites and corn starch until there are no longer clumps. Add egg white mixture to the marinated beef. Gently toss until evenly coated.",
+      "in two batches at 375°F for about 2 minutes per batch, or until golden brown and crispy. To prevent the pieces from sticking together, carefully add the beef strips to the hot oil one at a time. Transfer the fried beef to a wire rack or a paper towel-lined plate to drain any excess oil.",
+      "Add cooked beef to a large mixing bowl and toss evenly with remaining salt (1/4 teaspoon) and pepper (1/4 teaspoon). Serve immediately for best results."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "lb",
+        "notes": "sirloin, flank steak, or more economical cuts like round roast or chuck",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": "can sub with 1 whole egg with 1 tablespoon water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf25bcbacbe83f6061119eee8ca505259e8326cd129b48a8ae37b52c02c97f36",
+    "lineage_hash": "efe8bbd85873cbfb4a187ea436cce1563c529e630bed433fc5fd3a762111c641"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/crispy-salt-pepper-beef/",
+    "fetchedAt": "2026-08-02T06:03:29.394Z"
+  },
+  "rawSource": "https://vickypham.com/blog/crispy-salt-pepper-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

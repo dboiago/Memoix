@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the acetate into eight rectangular strips measuring 5cm x 10cm. Melt the dark chocolate in a pan and once melted smooth onto the acetate strips to a depth of roughly 1.5mm",
+      "Whilst the chocolate is still wet shape four of the rectangular strips into individual cylinder cases and then curl the remaining four strips into open bottomed cone shapes",
+      "Press the wet chocolate together so the shapes hold. Place onto a tray and refrigerate",
+      "To make the chocolate mousse, bring the milk to the boil in a pan set to a medium heat. Add the 10ml of Grand Marnier and return to the boil",
+      "Meanwhile, whisk the egg yolk in a bowl until pale and fluffy. Remove the milk and Grand Marnier from the heat and carefully pour in the whisked egg yolk, stirring to prevent the egg scrambling",
+      "Melt the milk chocolate in a bain marie, then add the milk, Grand Marnier and yolk mixture to the chocolate and stir in. Whip the cream until soft and blend into the mixture also",
+      "Pour the mousse into a piping bag. Remove the chocolate cases from the fridge and pipe the mousse into the chocolate cases until 95% full. Let the cases sit for 6 hours in the fridge for the mousse to settle",
+      "For the caramel mousse, melt the sugar to 165°C, to create a dry caramel. Remove from the heat and stir in the double cream (not whipped)",
+      "Add a quarter of a gelatine leaf and allow to cool to room temperature. Finish by adding the semi-whipped double cream and placing the mixture into a piping bag. Pipe the mixture into the chocolate cones and leave to set",
+      "For the chocolate glaze, in a pan, bring the water, sugar, cream and cocoa powder to the boil, turn down and allow to simmer for five minutes",
+      "Break the dark chocolate into pieces and pour into the hot cocoa mixture. Stir until the chocolate has completely melted",
+      "Once the glaze is completely cooled, pour it onto the top of each mousse casing (not the cones). Smooth the glaze over the top with a palette knife. Serve a chocolate mousse case along with a caramel mousse cone, ensuring to remove the acetate from each just before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "semi whipped",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ddd64fdce989fca1e0a52ab2db7b8f52de3d5cb1656b969c301425aebb2929e3",
+    "lineage_hash": "70dfe818fb95e682a258487e7ab0993de72c80e7c055f79a4ddbcc753c9a5c59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe",
+    "fetchedAt": "2026-08-03T15:43:01.323Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

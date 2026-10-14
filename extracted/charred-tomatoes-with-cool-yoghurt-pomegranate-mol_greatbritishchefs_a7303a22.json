@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Charred Tomatoes with Cool Yoghurt, Pomegranate Molasses and Herbs",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a barbecue for direct cooking over medium heat (to cook this recipe indoors, preheat a cast-iron griddle pan over a high heat for at least 5 minutes and use it to char the tomatoes. You could also cook them under the grill – just make sure they get nice and black in places)",
+      "Combine the dressing ingredients with a pinch of salt in a clean lidded jar or bowl and shake or whisk to combine. Set aside",
+      "Combine the crushed garlic, yoghurt and a pinch of salt in a bowl and mix well. Set aside",
+      "Grill the tomatoes over direct heat for about 5 minutes until charred and soft",
+      "To serve, spread the garlic yoghurt on a plate. Remove the grilled tomatoes from the vine and combine with the herbs in a bowl. Add two-thirds of the dressing and mix gently",
+      "Top the yoghurt with the tomato mixture and pour the remaining dressing on top. Add another drizzle of olive oil, a scattering of pomegranate seeds and some more salt, if you like"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Za'atar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for drizzling",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes on the Vine",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Mint Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Basil Leaves",
+        "unit": null,
+        "notes": "torn",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pomegranate Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c2f7d3a134ec6b85f2a49a2814342b76d7a952ea8030b48c125f357c87af0ff",
+    "lineage_hash": "ea00cf94c80d8d3331065cc4ff065c3c3b55a80ad76f27bc84da5ad44e74c217"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charred-tomatoes-cool-yoghurt-pomegranate-molasses-herbs-recipe",
+    "fetchedAt": "2026-08-02T18:33:18.832Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charred-tomatoes-cool-yoghurt-pomegranate-molasses-herbs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

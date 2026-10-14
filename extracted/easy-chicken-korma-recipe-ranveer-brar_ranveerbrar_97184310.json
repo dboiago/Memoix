@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Chicken Korma (चिकन कोरमा)",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make incision on tomatoes and drop them in boiling water for a minute or two.",
+      "Remove them with the help of a perforated spoon in a bowl with cold water in it. Peel the tomatoes and de seed them.",
+      "Once the tomatoes have cooled down, grind them to a fine paste and keep aside.",
+      "Heat oil in a pan, add cardamom, cloves, bay leaf and peppercorn. SautÃ© till fragrant.",
+      "Add onion and cook till translucent. Add salt and ginger garlic paste, sautÃ© for a few seconds.",
+      "Add cashew nuts, turmeric powder, red chili powder, coriander powder and sautÃ© for few more seconds.",
+      "Switch off the flame and let it cool down. Mix prepared tomato puree with onion mixture and blend everything to a fine sauce.",
+      "Return this prepared gravy to the pan and turn the flame to medium high.",
+      "Add chicken, kasuri methi and garam masala powder, mix everything well.",
+      "Cover and cook till chicken is tender and fully done."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gms",
+        "unit": null,
+        "notes": "cut in 1 inch cubes chicken",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsps Garam Masala Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3f497fc0330574829de1e5af327cadc6616a3962ee84c93e7310761bb590553",
+    "lineage_hash": "9564830d9a7a8b3a3c96c79bd128ecd84cbca02be049e4a08f56c93c398f6241"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-korma/",
+    "fetchedAt": "2026-08-02T14:09:13.251Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-korma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

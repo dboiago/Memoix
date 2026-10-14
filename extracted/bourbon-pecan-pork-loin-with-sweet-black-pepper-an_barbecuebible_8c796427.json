@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Bourbon Pecan Pork Loin with Sweet Black Pepper Anytime Sauce",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small nonstick skillet over medium-low heat, toast the pecans until fragrant and lightly browned, 4 minutes, stirring frequently. Transfer to a bowl. Add the raisins to the hot pan. Add the bourbon, but do not return to the flame. Let the raisins steep for 15 minutes.",
+      "In the meantime, butterfly the pork loin: Using a very sharp knife, cut the roast almost in half lengthwise through one side, stopping about 1/2 inch from the opposite side. Open the roast up as you would a book.",
+      "Drain the raisins, reserving the bourbon. Spread the inside of the pork loin with Stubb’s Sweet Black Pepper Anytime Sauce. Sprinkle the brown sugar over it, followed by pecans and raisins. Drizzle the reserved bourbon on top. Carefully fold the roast back together (like closing a book). Tie the roast shut and into a compact cylinder with four 12-inch pieces of butcher’s string—tied crosswise to the roast at 2-inch intervals. (Note: for even more flavor, place 4 strips bacon on the roast lengthwise under the string.)",
+      "Set up the grill for indirect grilling and preheat to medium-high (350 degrees). If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then reduce the heat to medium. If using a charcoal grill, place a large drip pan in the center, preheat the grill to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, place the pork roast on the hot grate, over the drip pan and away from the heat and cover the grill. Cook the roast until cooked through, about 1 hour. To test for doneness, insert an instant-read meat thermometer into the side of the roast. The internal temperature should be 155 degrees F. Start basting the roast with Stubb’s Sweet Black Pepper Anytime Sauce after 40 minutes, and baste once or twice before the roast is cooked.",
+      "Transfer the cooked roast to a cutting board and let it rest for 5 minutes, then remove and discard the strings. Slice the roast crosswise with a serrated or an electric knife. Serve additional sauce on the side if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "coarsely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Center-cut Piece of Pork Loin",
+        "unit": null,
+        "notes": "about 3 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stubb’s Sweet Black Pepper Anytime Sauce",
+        "unit": "C",
+        "notes": "plus 1/4 cup for glazing and serving",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c96c8a59a07e3f7dd54cb72d9076cf7deb3435c10e4587344934c1a863defa2a",
+    "lineage_hash": "1027f433281a1e4483fd6140b6ca2ddf9708f4608683465df3cba888095f1d11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bourbon-pecan-pork-loin-sweet-pepper-sauce/",
+    "fetchedAt": "2026-08-03T03:54:40.362Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bourbon-pecan-pork-loin-sweet-pepper-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

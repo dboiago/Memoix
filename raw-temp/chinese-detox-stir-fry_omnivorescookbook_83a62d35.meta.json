@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-detox-stir-fry/",
+  "slug": "chinese-detox-stir-fry_omnivorescookbook_83a62d35",
+  "title": "Chinese Detox Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:32:03.106Z",
+  "ldName": "Chinese Detox Stir Fry",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 3 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "32 g (about 2/3 cup) dried lily flowers",
+    "10 g (about 1/4 cup) wood ear mushrooms",
+    "1/2 bundle mung bean noodles  ((or rice vermicelli), yields about a cup after soaking)",
+    "2 teaspoons light soy sauce",
+    "2 teaspoons vegetarian oyster sauce ((or regular oyster sauce))",
+    "2 teaspoons Shaoxing wine",
+    "1/4 teaspoon sugar",
+    "1 teaspoon sesame oil",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "1/2 thumb ginger (, julienned)",
+    "1 (60 g) small carrot (, julienned (yield 1/2 cup once sliced))",
+    "3 (140 g) celery stalks (, cut into 2” (5 cm) long 1/4” (6 mm) thick sticks (yields about 1 1/2 cups after cutting))",
+    "1 cup (40 g) deep fried tofu puffs (, halved (Footnote 1))"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the dried ingredients",
+    "Mix the sauce",
+    "To cook the stir fry"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "207 kcal",
+    "carbohydrateContent": "27.6 g",
+    "proteinContent": "3.2 g",
+    "fatContent": "10.2 g",
+    "saturatedFatContent": "1.7 g",
+    "sodiumContent": "450 mg",
+    "fiberContent": "2.6 g",
+    "sugarContent": "16.2 g"
+  },
+  "htmlIngredientLines": [
+    "[Soaking]",
+    "32 g (about 2/3 cup) dried lily flowers",
+    "10 g (about 1/4 cup) wood ear mushrooms",
+    "1/2 bundle mung bean noodles  (or rice vermicelli), yields about a cup after soaking",
+    "[Sauce]",
+    "2 teaspoons light soy sauce",
+    "2 teaspoons vegetarian oyster sauce (or regular oyster sauce)",
+    "2 teaspoons Shaoxing wine",
+    "1/4 teaspoon sugar",
+    "1 teaspoon sesame oil",
+    "[Stir fry]",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "1/2 thumb ginger , julienned",
+    "1 (60 g) small carrot , julienned (yield 1/2 cup once sliced)",
+    "3 (140 g) celery stalks , cut into 2” (5 cm) long 1/4” (6 mm) thick sticks (yields about 1 1/2 cups after cutting)",
+    "1 cup (40 g) deep fried tofu puffs , halved (Footnote 1)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

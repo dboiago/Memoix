@@ -1,0 +1,43 @@
+{
+  "url": "https://dailycookingquest.com/ang-kak-and-ginger-chicken-soup.html",
+  "slug": "ang-kak-and-ginger-chicken-soup_dailycookingquest_7997fe39",
+  "title": "Ang Kak and Ginger Chicken Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T12:01:08.202Z",
+  "ldName": "Ang Kak and Ginger Chicken Soup",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4 pieces",
+    "2 tablespoon ang kak",
+    "4 inches ginger, peeled and bruised",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 liter water"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a soup pot and bring to a boil over a medium heat.",
+    "Reduce the heat to medium-low and simmer for 1 hour. Divide into four soup bowls and serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4 pieces",
+    "2 tablespoon ang kak",
+    "4 inches ginger, peeled and bruised",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 liter water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

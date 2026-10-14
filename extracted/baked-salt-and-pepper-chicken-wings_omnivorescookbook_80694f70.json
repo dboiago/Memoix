@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Baked Salt and Pepper Chicken Wings",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "258",
+      "carbohydrateContent": "6.1",
+      "fatContent": "17.1",
+      "proteinContent": "19.6"
+    },
+    "directions": [
+      "Marinate the Chicken: Preheat the oven to 400°F (200°C). Add the chicken to a large bowl and add the soy sauce, Shaoxing wine, salt and sugar. Toss to coat well. Marinate for 20 minutes while preparing the other ingredients.",
+      "Mix the spices: Add the white pepper, garlic powder, sugar, salt and five spice powder into a small bowl. Mix well.",
+      "Bake the Chicken: After marinating, toss the chicken with the cornstarch and baking powder very thoroughly for even coating. Spread the chicken wings onto an oven tray lined with a rack. Bake the chicken wings for 35 minutes, or until golden brown and cooked through.",
+      "Cooking the Vegetables: Once the chicken wings are cooked, place the tray on the kitchen counter to cool off slightly. Add the vegetable oil into a wok or large skillet and heat over medium-high heat until hot. Add the shallot, chilis, scallion whites, and garlic. Stir and cook until softened, 1 minute or so. Add the baked wings, scallion greens and sprinkle the spice mix over.",
+      "Serve: Toss everything together until evenly coated. Serve hot as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "cut in half and sliced into 1/4” (6 mm) thick slices",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Fresno Chilis",
+        "unit": null,
+        "notes": "or jalapenos, sliced",
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db49f880ce2dee8aaf4a55eb8d061263bb7134e66f3a7b1dc3c38e3c6cceb1a6",
+    "lineage_hash": "b3ad6a6fd1b83a1c27edd145f3848a6df937127e46f1f24ceed87658b6e37725"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/baked-salt-and-pepper-chicken-wings/",
+    "fetchedAt": "2026-08-02T09:18:09.756Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/baked-salt-and-pepper-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

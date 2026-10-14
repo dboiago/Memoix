@@ -1,0 +1,229 @@
+{
+  "recipe": {
+    "name": "Chocolate, Burnt Orange and Popping Candy",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The mousses need time to freeze, so preparing them the day before is a good idea. Bring the milk and half of the cream to the boil. While it's coming to the boil, whisk the egg yolks and sugar until pale. Once boiling, pour a little over the egg and sugar mix and whisk well to temper. Pour this tempered egg mixture into the pan and cook over a gentle heat, stirring continuously, until it reaches 85ºC. Meanwhile, soak the gelatine leaves in warm water to soften them",
+      "Once the mixture hits 85°C, add the cocoa powder, chocolate and whisk until smooth. Whisk in the softened gelatine leaves (giving them a squeeze before you do so to remove excess water), then leave to cool. Whip the remaining cream to soft peaks and fold together with the chocolate custard mix",
+      "Once fully mixed, transfer to a piping bag and pipe into silicone moulds, scraping off any excess using a palette knife to create a smooth base. Tom uses a specific mould called Silikomart SF163, but any silicone mould that holds approx. 85ml will work too. You'll need 12 'rocks' of mousse in total. Place in the freezer overnight or until completely frozen. Once frozen, pop out of the moulds and keep in the freezer",
+      "To make the chocolate crumble, preheat an oven to 180ºC/gas mark 4. Place all the ingredients apart from the popping candy, milk powder and dried orange into a food mixer bowl and mix on a medium speed with a beater attachment until combined. It should have a sandy, crumbly texture. Once combined, transfer to a tray and bake for 10 minutes",
+      "After this time, the mix should have started melting and colouring slightly. Using a spatula, mix the crumble and break up any large pieces. Return to the oven and repeat this process until fully cooked and crunchy. Once cooked, remove from the fridge and leave to cool. Once cool, mix with the milk powder, dried orange and popping candy. You want the freeze-dried mandarin (or orange) to be in roughly the same-sized pieces as the chocolate crumble. Store in an airtight container",
+      "To make the burnt orange purée, preheat a barbecue until hot or preheat the oven to 180ºC/gas mark 4. Wrap the oranges in foil individually, and place either in the hot embers of the barbecue or the oven. Cook until burnt on the outside and soft in the middle (around 30 minutes). Once cooked, place the oranges (including their peel) in a food processor with the sugar, then blend until smooth (you may need to work in batches). Pass through a sieve and transfer to a squeezy bottle. Reserve in the fridge",
+      "To make the mandarin tuile, pour the isomalt into a heavy-bottomed pan. Place over a medium heat and bring to 119ºC. Once at this temperature, pour onto an oven tray lined with silicone or baking paper and leave to cool completely. When cool and set, smash into small pieces and transfer to a food processor, ensuring the bowl is completely dry. Add the freeze-dried mandarin and blend into a fine powder",
+      "Preheat the oven to 180ºC/gas mark 4. Line a tray lined with baking paper then dust the orange powder over the top using a fine sieve. You want an even layer that's around the same thickness as the greaseproof paper. Place in the preheated oven and cook until melted, usually around 5–6 minutes. Once melted, remove from the oven and leave to cool",
+      "Now to finish the mousses. Make the chocolate dip by melting the chocolate and cocoa butter in a bain-marie or the microwave. Whisk together to emulsify, then add enough food colouring (if using) to turn it a thick jet black",
+      "Using a temperature probe, ensure the chocolate dip is sitting between 50℃ and 60ºC. Remove the rocks of chocolate mousse from the freezer and push a wooden cocktail stick into each one. Dip the frozen mousse individually into the chocolate dip. Remove and place onto a metal tray, lifting the mousse off the cocktail stick with a fork. Once dipped, place in the fridge to set",
+      "To serve, scatter a large spoonful of the chocolate and orange crumb on the bottom of a dessert plate. Pipe 6 dots of burnt orange purée on top. Place 3 of your dipped chocolate mousses around the plate and finish by decorating with shards of the mandarin tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Black Food Colouring",
+        "unit": null,
+        "notes": "(optional) – ensure it is fat- and heat-stable if using",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popping Candy",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Mandarin",
+        "unit": "Tbsp",
+        "notes": "or orange, broken into rough pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Isomalt Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Mandarin",
+        "unit": "g",
+        "notes": "or orange",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a28bf52da3c5370d9279b69a9bbcd12b4834f2ed4aede734431568085defc50",
+    "lineage_hash": "bab5fea98da7fcaa47611ecbf86382e2682526573eb3fe48a246af92d22fefc5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-burnt-orange-popping-candy-recipe",
+    "fetchedAt": "2026-08-02T20:03:06.851Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-burnt-orange-popping-candy-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

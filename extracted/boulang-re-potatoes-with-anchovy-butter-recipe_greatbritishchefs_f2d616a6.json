@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Boulangère Potatoes with Anchovy Butter",
+    "time": "1 hr 40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put a wide frying pan over a medium heat. Add the olive oil and butter, then the onions and a pinch of salt. Cook, stirring regularly, for 20 minutes until soft and starting to caramelise",
+      "While the onions cook, preheat the oven to 170°C and fill a large bowl with cold water. Peel the potatoes, then use a mandoline to slice them into 2-3mm thick discs. Keep the sliced potatoes in the water to prevent them browning. Once they’re all sliced, drain and pat the potato slices dry",
+      "Lightly butter a baking dish (around 20x30cm) and arrange a layer of potato slices over the base, with each disc overlapping slightly. Season with salt and pepper, then spoon over a thin layer of the onions. Repeat this process until all the onions and potatoes are used up, finishing with a neat layer of potatoes on top",
+      "Carefully pour the hot vegetable stock into the dish, aiming around the edges so as to not disturb the layers. The stock should come around halfway up the dish. Cover the dish loosely with foil then bake in the oven for 45 minutes",
+      "Remove the foil and return the dish to the oven for a final 30 minutes to crisp up the top",
+      "Meanwhile, make the anchovy butter. Blitz the butter, anchovies and anchovy oil together in a food processor",
+      "Remove the dish from the oven and leave to cool for 10 minutes. Spread or dot the anchovy butter all over the surface so it melts, before scattering over the crispy shallots, layering over the anchovy fillets and scattering with chopped parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra to grease",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nanna Tate Potatoes",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "leaves picked",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispy Shallots",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "finely, chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": "plus 1 tsp of their oil",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a55c8433e206ee83d441232c6fc6de4b6e3c77ce3c709e3cab4ca5136014d02",
+    "lineage_hash": "207eba7d8947d955d9ab9444e4bc9d45dcfd905639a16fa632e4a12e9f7d8101"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/boulangere-potatoes-recipe",
+    "fetchedAt": "2026-08-01T21:41:50.184Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/boulangere-potatoes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

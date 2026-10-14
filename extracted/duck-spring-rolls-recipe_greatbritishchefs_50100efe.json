@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Duck Spring Rolls",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the barbecue sauce. Heat the olive oil in a wok and add peppers, sesame seeds, shallots, cayenne and chilli. Cover and sweat over a medium heat for 5 minutes",
+      "Next, add the honey, red wine vinegar, balsamic and chicken stock and bring to the boil. Gently simmer until reduced by half and remove from heat. Strain through a fine sieve into a clean pan or jug and keep warm",
+      "Start the filling by cleaning and drying the wok. Place on a medium to high heat and add the duck.  When the fat starts to render, remove the duck from the wok with a slotted spoon and wipe the wok clean",
+      "Heat the sesame oil in the wok and add the peppers, carrot, chilli, grated ginger and soy sauce. Stir fry for 2-3 minutes",
+      "Next, add the garlic, mangetout, bean sprouts, sesame seeds, citrus zest and juice and return the duck to the pan. Heat until the duck is cooked through. Mix well and transfer into a bowl, then wipe the wok clean",
+      "Heat the deep fryer or large pot of oil to 180˚C",
+      "Lightly brush the spring roll wrappers with the beaten egg. Spoon the stir-fried mixture into the centre of each one and roll up, tucking in the ends before you make the final layer",
+      "Deep-fry the spring rolls until golden brown, remove with a slotted spoon and drain on kitchen roll. Slice in half and serve immediately with the barbecue sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppers",
+        "unit": "g",
+        "notes": "mixed, de-seeded and finely sliced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "tsp",
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mangetout",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beansprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppers",
+        "unit": "g",
+        "notes": "de-seeded and finely diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "small dice",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Roll Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "382c581438480997c20558f5e56f907a80665f58905126fdaceaf3146431b261",
+    "lineage_hash": "da6953ec1bbccd0eab4aeb8898221fa6e8842cdc36334677894ad62526fbfef3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-spring-rolls-recipe",
+    "fetchedAt": "2026-08-03T22:13:08.315Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-spring-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,314 @@
+{
+  "recipe": {
+    "name": "Bhindi Butter Masala",
+    "time": "25-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai, add oil, butter, once it's hot, add prepared ginger garlic paste and saute it for a minute.",
+      "Add onions, bay leaf and saute it until golden in color.",
+      "Add turmeric powder, degi red chili powder, coriander powder and cook it for a minute.",
+      "Add curd and mix it well, add tomato puree, salt to taste and saute it well until cooked well.",
+      "Add butter, tender coriander stems and cook it well.",
+      "Add water, fresh cream and cook for 3-4 minutes until thickens.",
+      "Add sauteed bhindi, coriander leaves, and cook it well.",
+      "Finish it with butter, dry fenugreek leaves and mix it well.",
+      "Transfer it to a serving dish, garnish it with coriander sprig, butter and ginger juliennes.",
+      "Serve hot with roti.",
+      "In a pan, add mustard oil, once it's smoky hot, add cumin seeds and let it splutter.",
+      "Add onion, bhindi, salt to taste, turmeric powder, degi red chili powder and cook it for 5-6 minutes until golden in color on low flames.",
+      "Add tomato and mix it well.",
+      "Keep it aside for further use.",
+      "In a mortar pestle, add green chilies, garlic cloves, ginger and grind it coarsely.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "2-3",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2-3",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "2-3",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "fresh, optional",
+        "amount": "¼",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Lady Finger",
+        "unit": null,
+        "notes": "sauteed",
+        "amount": "0",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "2",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Bhindi Butter Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Lady Finger",
+        "unit": "kg",
+        "notes": "trim the head & tale",
+        "amount": "1",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "2-3",
+        "section": "For Sauteing Bhindi",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken",
+        "amount": "2-3",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e5acb6a6f0b8b6670863b8167e4e04d27f89c27a340112b354bbd5640401761",
+    "lineage_hash": "87066f5633025114e63845bc8467f85a3dceea09b92894a629316f5114db0b5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhindi-butter-masala/",
+    "fetchedAt": "2026-08-02T17:25:20.791Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhindi-butter-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Deconstructed Strawberry Cheesecake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the cheesecake, whisk together the cream cheese, milk and double cream until smooth. Set aside",
+      "Whisk the eggs and sugar together until smooth. Allow to settle, skimming off the foamy mixture that floats to the top",
+      "Combine the whisked eggs and sugar with the cream cheese mixture. Pass through a sieve and set aside",
+      "Pour into a 28cm x 13cm x 7cm container and cook in a bain marie for 1 hour until just set and firm on top. Remove and allow to cool before refrigerating",
+      "Preheat the oven to 180°C/gas mark 4. Heat the honey in a pan until boiling then whisk in the butter",
+      "Brush the bread liberally with the honey butter and place the slices onto a non-stick baking tray",
+      "Bake in the oven for 4-5 minutes until caramelised. Remove from the tray and set aside to cool. It should turn crispy when completely cool",
+      "Hull and quarter the four reserved strawberries and set aside in the fridge. Hull and roughly chop the rest of the strawberries and set aside in a bowl",
+      "Melt the sugar in a pan until soft-ball (112°C). Add the chopped strawberries and cook until stewed and soft",
+      "Sprinkle in the pectin and stir until dissolved, then transfer the mixture to a liquidizer and blitz until smooth. Transfer to a squeezy bottle and set aside",
+      "Swipe a spoonful of cheesecake onto the caramelised bread. Pipe 3 dots of strawberry purée on top of the cheesecake and finish with the strawberry quarters"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Punnet of Strawberries",
+        "unit": null,
+        "notes": "4 reserved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": "very thin",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbdb53d63b2fdcfcbede857e9df36ebd7168c13c5b56af3439c8bbd93ad4b487",
+    "lineage_hash": "05961e74797b61a8cc30b03fe789438eac7e9059a11e180bf0fc86ee96cbab5d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/deconstructed-cheesecake-recipe",
+    "fetchedAt": "2026-08-03T20:56:39.844Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/deconstructed-cheesecake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

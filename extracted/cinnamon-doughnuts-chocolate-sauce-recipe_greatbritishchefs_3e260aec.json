@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Cinnamon Doughnuts Chocolate Sauce",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the doughnuts, mix the flour, butter, sugar and zest together",
+      "Mix the yeast and milk together and add to the flour along with the egg and mix",
+      "Place the mixture in the fridge for 2 hours. When ready, remove from the fridge, roll out to ½ cm thick and cut into thin strips",
+      "Heat a deep fat fryer and deep fry the doughnut strips in the hot oil. When golden brown, remove from the oil and roll in the sugar and cinnamon mix",
+      "Place the cubes of chocolate and butter in a large bowl. Boil the milk and cream in a saucepan and then pour over the chocolate and butter, stirring until all of the chocolate has melted",
+      "Pour into a serving cup with the cinnamon doughnut strips on the side and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into cubes",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "947b50a4021390b030f0cf222819222cab64e8f67170beb47e57fb36ad8bf351",
+    "lineage_hash": "12d0169f56dbaa37a2e974743741019074cb45f19cbc658c9238b38eeabe2931"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cinnamon-doughnuts-chocolate-sauce",
+    "fetchedAt": "2026-08-03T21:38:13.788Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cinnamon-doughnuts-chocolate-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

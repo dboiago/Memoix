@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Apple Tart with Lavender and Brown Butter",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the crust. Blitz the hazelnuts, icing sugar, salt and flour in a food processor until the hazelnuts are finely ground. Add the cold butter and pulse until the mixture starts to turn into a crumbly mass",
+      "Press the crumbs into the tart tin, pressing the dough evenly into the tart sides and bottom. Prick the bottom of the crust all over with a fork and place in the freezer for 15 minutes",
+      "Place the tart tin on a baking sheet and bake the until the crust is pale golden for approximately 12–15 minutes. Rotate after 8 minutes for even browning",
+      "Now make the brown butter – switch off your mobile and don't answer the door! In a medium to large heavy-bottomed saucepan add the butter and vanilla, cooking at medium heat, swirling at times. Be careful as the butter splashes a bit when it melts and cooks in the pan. Keep an eye on it! The butter will foam up and become caramel coloured and smell nutty",
+      "Remove the pan from the heat and pass through a metal sieve into a heatproof bowl – no plastic ones, they will melt! Set aside to cool down for 10 minutes",
+      "To prepare the apples, mix the sliced apples with 2 tablespoons of the sugar and lemon juice in a large bowl. Reserve",
+      "In a food processor, pulse together the lavender flowers, sugar, the flour and salt to combine. Incorporate the eggs and process until well-combined. With the motor running, slowly pour in the brown butter, including the brown flecks and vanilla seeds",
+      "Pat-dry the apple slices and place onto the part-baked tart shell in an even layer. Carefully pour the filling over the apples, filling the shell to the brim. Bake the tart until the filling is puffed and browned, for approximately 30–40 minutes",
+      "Remove the tart from the oven and let it cool slightly before unmoulding it. Sprinkle with icing sugar, decorate with lavender and serve warm or at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "very cold, cut into small chunks",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "sliced, skin-on",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "preferably organic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Flowers to Taste",
+        "unit": null,
+        "notes": "(I used about 1 tsp only)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b25448673c1d52c20e87025b43f80494345748b22c6c102f8e3cb3404a08ae3",
+    "lineage_hash": "070b5f20969f121a5ccd11f9bf80daf07dc11bebf4271509b2db9c123a2642e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-brown-butter-tart-recipe",
+    "fetchedAt": "2026-08-03T14:04:15.905Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-brown-butter-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

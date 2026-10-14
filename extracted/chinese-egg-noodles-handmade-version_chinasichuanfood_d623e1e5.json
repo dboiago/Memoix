@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Chinese Egg Noodles",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "44",
+      "fatContent": "2",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "In a bowl, mix salt with flour and then stir in egg and water slowly. Keep stirring until all the liquid is almost absorbed.",
+      "Grasp everything with hand and knead to smooth dough. It is ok to have some dry flour in the bottom at the beginning, as we need to control the water content to make sure our noodles are chewy enough.",
+      "When the dough is well kneaded, cover with plastic wrapper and rest for 30 minutes, so the gluten is well relaxed and you can further pat the noodle dough.",
+      "Use a rolling pin to pat, press and flat the dough for several minutes (5-6) and then shape the dough to a ball, cover with plastic wrapper and rest for another 30 minutes.",
+      "Cut the dough in half; roll one half into a larger and thin wrapper (I show the degree in the video).",
+      "Fold the wrapper up (three or flour layers) and then cut into thin and even strips with a very sharp knife. When cutting the noodles, hold the knife vertically and push the newly cut strip with the knife to make sure it is completed with the dough wrapper. Dust with flour and loose the strips and if necessary, you can slightly stretch the strips slightly. Shake off extra flour when finished.",
+      "Repeat to finish the other half. Cook immediately or cover with plastic wrapper and freeze for later recipes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Sized Egg",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50-60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": "alt: cornstarch for dusting and coating",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30680e926a68beb6b18c7d4ed79032d8d47b6103953eae95e54e7e5aa2f5cf6b",
+    "lineage_hash": "4cb710cfe5be304518d5ca91e6754661caf6d980c249546c1eefe93c6c91192a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-egg-noodles-handmade-version/",
+    "fetchedAt": "2026-08-02T00:40:13.288Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-egg-noodles-handmade-version/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

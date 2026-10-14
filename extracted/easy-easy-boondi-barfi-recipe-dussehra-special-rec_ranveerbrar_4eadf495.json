@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Boondi Barfi",
+    "time": "25-40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add gram flour, a pinch of salt, ghee and mix it well.",
+      "Add saffron water and water to this and make into a smooth batter like the dosa batter consistency without any lumps.",
+      "Leave it for 10 minutes.",
+      "Heat oil or ghee in a kadai, once it's medium hot.",
+      "Using a perforated spoon, drop in small rounds of batter into the hot oil or ghee, deep-fry till they turn golden.",
+      "Or you can just dip the finger into the batter and drop the batter into the oil.",
+      "Deep fry the boondis until golden in color and crisp.",
+      "Drain the excess oil in a tissue. Repeat this process for the rest of the batter.",
+      "Now, add the fried boondis into the sugar syrup and lightly fold so that the boondi absorb the sugar syrup well.",
+      "Add almonds, cashew nuts, pistachios, a few saffron strands, mawa and mix it well.",
+      "Now transfer the mixture in a grease pan and spread evenly, spread dry over the top and press with the palm to set.",
+      "Rest to set on room temperature or refrigerator for 20 minutes.",
+      "Cut into pieces, garnish with pistachios, saffron strands, silver varq, rose petals and serve.",
+      "In a sauce pot, add milk and sugar. Cook on medium flame.",
+      "Until the sugar gets dissolved, stirring in between.",
+      "Once sugar gets dissolved, add rose water, cardamom powder and mix well.",
+      "Keep it aside."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "As Needed Oil",
+        "unit": null,
+        "notes": "alt: ghee",
+        "amount": "0",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Saffron Strands",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Mawa",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59f5f3d6729891e165836016fed52dd62beafec7148cf19b8f37dd39a0c6894a",
+    "lineage_hash": "be5a866ed6535da65d5c6c1b81cdb65effe6ad6f2b614c0c94267949ed0ec8b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/easy-boondi-barfi/",
+    "fetchedAt": "2026-08-02T07:33:12.007Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/easy-boondi-barfi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

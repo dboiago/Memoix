@@ -1,0 +1,240 @@
+{
+  "recipe": {
+    "name": "Dal Tadka",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "282",
+      "carbohydrateContent": "37",
+      "fatContent": "9",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "To a stove-top pressure cooker add 1 cup toor dal along with ½ teaspoon turmeric, 1 teaspoon salt and 3 cups water. Pressure cook for 4 whistles on high heat then lower the heat and let it cook for 3 to 4 minutes. Let the pressure be released naturally. If using an Instant Pot, cook on high pressure for 8 minutes and let the pressure release naturally. If cooking on stove-top, add dal and water to the pot and cook for around 30 minutes uncovered until dal is very tender. Refer to the notes in the blog post. Set the cooked dal aside.",
+      "Meanwhile, crush 4 large garlic cloves, 1-inch ginger and 1 green chili using a mortar pestle and set it aside.",
+      "In a heavy bottom pan, heat 1& ½ tablespoons ghee on medium heat. Once hot, add 1 teaspoon cumin seeds, 1 tablespoon coriander seeds (crushed) and 2 cloves. Sauté for a few seconds until fragrant.",
+      "Then add 1 medium onion (chopped), cook for around 3 to 4 minutes until they are soft and start to change color. Add the crushed garlic-ginger-green chili. Cook for 1 to 2 minutes until raw smell goes away.Add 2 medium tomatoes (chopped) along with remaining ½ teaspoon salt and mix. Cover and cook for 7 to 8 minutes until the tomatoes are very soft and cooked.",
+      "Then add ½ teaspoon coriander powder, ¼ teaspoon garam masala, ¼ teaspoon Kashmiri red chili powder, ⅛ teaspoon red chili powder (refer note 1), 2 tablespoons cilantro (chopped) and 1 teaspoon kasuri methi. Stir the spices with the masala for 30 seconds.",
+      "Add the boiled dal to the masala now and mix. I also added ½ cup water here as dal looked very thick to me. Let the dal simmer for 3 to 4 minutes.",
+      "For the tadka, heat 1 tablespoon ghee in a small pan. Once the ghee is hot, add 2 garlic cloves (chopped), ¼ teaspoon hing (refer note 2) and 2 dried red chilies. Cook for one minute until the garlic starts changing color. Then add ¼ teaspoon Kashmiri red chili powder and  remove the pan from heat. Pour the tadka over dal and mix.",
+      "This last step is optional but recommended.For the dhungar method - place a steel bowl on top of a trivet placed inside the pot of dal (refer to step by step pictures in the post). Then heat a piece of charcoal over direct heat until it’s red hot using a pair of tongs. Using the same pair of tongs, transfer that hot charcoal to the steel bowl on top of the trivet. Pour melted ghee (around 1 tablespoon) on top of charcoal.You will see fumes coming out of charcoal. Immediately close the pan with the lid. Let it remain like this for 5 to 10 minutes. After 5 to 10 minutes, remove lid and remove the bowl from dal. The longer you keep the lid closed, the smokier the dal will be, so don't do it more than 10 minutes.",
+      "Garnish dal with cilantro andserve hot with jeera rice or rotis."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "unit": "C",
+        "notes": "200 grams , also known as arhar dal/split pigeon peas lentil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Teaspoon Salt",
+        "unit": null,
+        "notes": "divided, adjust to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Cups Water",
+        "unit": null,
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "& ½ Tablespoon Ghee",
+        "unit": null,
+        "notes": "22 ml , also known as clarified butter or use oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "crushed in mortar pestle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": "whole",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "150 grams , chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": "or adjust to taste",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": "crushed, dried fenugreek leaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": "also known as asafoetida",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebe7c08fd6663ea47df4a2092ec60f110314733d087590509037f9b98d5ce468",
+    "lineage_hash": "90f48532417570888506bec7cbba5cabb71be91d2641aa9d9ea92eb72a11e212"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dal-tadka/",
+    "fetchedAt": "2026-08-02T09:40:48.427Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dal-tadka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

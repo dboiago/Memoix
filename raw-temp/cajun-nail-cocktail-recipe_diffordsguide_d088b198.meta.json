@@ -1,0 +1,46 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/2787/cajun-nail",
+  "slug": "cajun-nail-cocktail-recipe_diffordsguide_d088b198",
+  "title": "Cajun Nail Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T07:29:34.969Z",
+  "ldName": "Cajun Nail",
+  "ldTime": "PT04M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Herbal",
+    "Nightcap/sipping",
+    "Short and stirred"
+  ],
+  "ldIngredientsRaw": [
+    "10 ml Absinthe",
+    "30 ml Tennessee whiskey",
+    "30 ml Honey herbal liqueur",
+    "2 dash Creole bitters",
+    "2 dash Aromatic bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of lemon zest twist.",
+    "POUR absinthe into ice-filled glass, TOP with water and set aside.",
+    "Separately, STIR whiskey, liqueur and bitters with ice.",
+    "DISCARD contents of glass (absinthe, water and ice).",
+    "STRAIN stirred cocktail into absinthe-coated glass (no ice in glass).",
+    "EXPRESS lemon zest twist over the cocktail and discard."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "199 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

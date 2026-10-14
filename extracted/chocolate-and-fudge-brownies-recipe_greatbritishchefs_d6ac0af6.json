@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Chocolate and Fudge Brownies",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin the brownies by preheating the oven to 150°C/gas mark 2",
+      "In a bain marie, melt the butter, chocolate and sugar over simmering water",
+      "Meanwhile, in a separate bowl, whisk the eggs until light and foamy",
+      "When the chocolate mixture is melted, carefully fold it into the eggs",
+      "Sieve the flour and fold it into the chocolate mix. Add in the chopped fudge and the sea salt",
+      "Pour the batter into a greaseproof paper-lined baking tray and bake for 20 minutes, or until the brownies are cooked so that they are set but still slightly soft in the middle",
+      "Remove from the oven and cool. Once cool, cut into desired shapes and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fudge",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1d0a5cbebea7c7e2d080e9e36b2eb9604bf7c10d8ca209b98f7ca72fcfa041c",
+    "lineage_hash": "a77998c28f63c0e6ded1396065bddc6694ed844767bfcb932498008dcdf182d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-sea-salt-brownie-recipe",
+    "fetchedAt": "2026-08-03T15:13:16.307Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-sea-salt-brownie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

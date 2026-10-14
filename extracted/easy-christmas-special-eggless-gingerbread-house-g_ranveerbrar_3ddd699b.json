@@ -1,0 +1,305 @@
+{
+  "recipe": {
+    "name": "Eggless Gingerbread House (Gingerbread)",
+    "time": "35 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat jaggery in a pot on low flame. Add brown sugar and mix until the sugar is dissolved.",
+      "Add butter, stir till melted and sauce is creamy. Turn off the flame.",
+      "Add gingerbread spice in the warm sauce and mix well to release its flavor. Rest for 2-3 minutes.",
+      "Add refined flour, baking powder, baking soda to the sauce and mix nicely till it forms a soft and sticky dough.",
+      "Add condensed milk and vanilla essence, incorporate it in the dough properly.",
+      "Dust your hands with refined flour and smooth out the dough. Wrap the dough in plastic wrap and rest it for 30 minutes in a cool place (do not refrigerate) so it will harden.",
+      "Sprinkle flour over dough and rolling pin. Roll dough to a 1/4-inch thickness.",
+      "Use additional flour to avoid sticking.",
+      "Rub a little flour over the surface of the dough. Place the moulds on the dough, as many as moulds as will fit on the dough. Use a small sharp knife to cut out the moulds from the dough, wiping the knife surface clean frequently.",
+      "Cut out the following patterns for the gingerbread house template, Two rectangles, 3 by 5 inches, to make the front and back of the house. Two rectangles, 4 by 6 inches for the roof.",
+      "Line a baking tray with butter paper and preheat the oven at 170*c.",
+      "Cut out cookies with desired cutter and space cookies 1 Â½ -inches apart.",
+      "Bake the cookies in batches.",
+      "Bake in a pre- heated oven at 160*c for 10-15 minutes.",
+      "Remove cookie sheet from oven and allow the cookies to stand until the cookies are firm enough to move to a wire rack.",
+      "Glue the two roof pieces to the pitched roofline of the house. Then, similarly, glue the sides and roof of the entryway together with icing. Attach the entryway to the front of the house.",
+      "Using the icing, stick sweets around the door and on the front of the house.",
+      "Dust the roof with icing sugar for a snowy effect.",
+      "In a bowl, add water, icing sugar, lemon juice and mix well on a double boiler.",
+      "Until the icing is smooth and thick enough.",
+      "In a heavy bottom sauce pan, add caster sugar, water on medium flame.",
+      "Allow the mixture to dissolve without stirring, until it has reduced slightly and becomes golden amber in color.",
+      "Switch off the flame and keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": "alt: Molasses",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gingerbread Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Ginger Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Button Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Caramel Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Caramel Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Powder Color",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Red Powder Color",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Colorful Chocolate Candies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Colorful Sprinklers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f4bb03d0cccd9bb3c64eaecba9fb4f96d71bde547a2e35e29eb1f2d668c9071",
+    "lineage_hash": "47840d11eacc0959caa9fe221b40806a2e59837bdcefb33a01a4539486784214"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-gingerbread-house/",
+    "fetchedAt": "2026-08-02T20:01:54.388Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-gingerbread-house/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

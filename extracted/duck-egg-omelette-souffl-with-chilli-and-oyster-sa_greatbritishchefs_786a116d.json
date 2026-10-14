@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Duck Egg Omelette Soufflé with Chilli and Oyster Sauce Jam",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the jam, put the shallots, garlic, chillies and lemongrass in a small food processor and pulse until finely chopped",
+      "Heat the oil in a small saucepan over a low heat. Add the chopped aromatics and slowly cook for 15 minutes until lightly caramelised",
+      "Stir in the oyster sauce, soy sauce and palm sugar, then let the jam bubble gently for 2-3 minutes until thickened slightly",
+      "Add the lime juice and continue cooking for another 5-10 minutes over a very low heat until glossy and jam-like",
+      "Meanwhile, make the omelette. Whisk the egg yolks and salt together in a bowl, then beat the egg whites in another until foamy. Add the sugar to the whites and continue beating until stiff peaks form",
+      "Gently fold the whites into the yolks, trying to keep them light and airy",
+      "Heat the oil in a non-stick pan over a low heat. Gently pour the omelette mixture into the pan and spread evenly, again trying not to knock the air out. Cover and cook for 3-4 minutes until the bottom is golden",
+      "Gently fold the omelette in half and tilt the pan around to seal the edges",
+      "Transfer to a serving plate and spoon over plenty of the jam (any leftover will keep in the fridge for up to 2 weeks). Serve with fresh coriander on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalks",
+        "unit": null,
+        "notes": "bottom halves only, sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2b1fcbbe0bd079c590706dda59361bb5148491f392dc89ab98b32844f062909e",
+    "lineage_hash": "a1dd9206b6b4cd9f3c48a2432f73fd8adaab937e972aaf61f2226e01378cd67c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-egg-omelette-souffle-recipe",
+    "fetchedAt": "2026-08-02T00:23:37.038Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-egg-omelette-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

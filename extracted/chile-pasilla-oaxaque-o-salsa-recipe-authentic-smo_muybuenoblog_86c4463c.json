@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Chile Pasilla Oaxaqueño Salsa",
+    "time": "35 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "24",
+      "carbohydrateContent": "5",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Roast tomatillos on a flat grill for 10 to 15 minutes or until soft.",
+      "Next roast chiles until soft and cover with hot water in a bowl to soften.",
+      "Blend chiles, garlic, and salt until smooth then add tomatillos and pulse blender two to three times to maintain a thick consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chiles Pasillas",
+        "unit": null,
+        "notes": "preferably Oaxaqueños, stemmed and seeded",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatillo",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9813ae0e719a112d5d49b29245f9341d57355451c9a1e6e0d1d16ce48593c06",
+    "lineage_hash": "3c78baede3ccbf27b959bde0c4657c48c7de24523c907c5490a4b1973440e9fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chile-pasilla-oaxaqueno-salsa/",
+    "fetchedAt": "2026-08-02T11:27:15.641Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chile-pasilla-oaxaqueno-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

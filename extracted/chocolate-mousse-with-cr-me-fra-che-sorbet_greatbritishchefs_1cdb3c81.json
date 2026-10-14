@@ -1,0 +1,316 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse with Crème Fraîche Sorbet",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the crème fraîche sorbet. Add the sugar, glucose and water to a pan and place over a medium heat. Once the mixture has come up to the boil and the sugar dissolved into the liquid, remove from the heat and set aside to cool",
+      "Once cool, whisk the crème fraîche, lemon juice and stabiliser into the syrup, then churn in an ice cream maker according the manufacturers' instructions and freeze until ready to serve",
+      "To make the chocolate mousse, place the egg yolks and whole egg in a large bowl and whisk together until thick and creamy. In a small pan placed over a low heat, stir together the sugar and water until the sugar has dissolved completely",
+      "Bring the sugar syrup up to 104°C, then remove from the heat and slowly trickle the hot liquid into the beaten eggs, whisking continuously until the mixture has cooled completely (the base of the bowl should feel cool to the touch)",
+      "Gently fold in the melted chocolate until combined. In a separate bowl, gently whip the double cream to soft peaks and fold it carefully into the chocolate mixture. Cover the mousse (or transfer to a suitable container) and chill in the fridge until ready to serve",
+      "To make the squash purée, peel and deseed the squash and chop the flesh into small pieces. Place in a vacuum bag with the vanilla and sugar syrup, then seal and cook in the water bath for 55 minutes",
+      "Meanwhile, prepare the chocolate soil by gently melting the chocolates together in a bowl set over a bowl of barely simmering water, ensuring the bowl does not touch the surface of the water",
+      "Once melted and smooth, gently stir in the other ingredients until fully combined. Transfer to the fridge and chill for 30 minutes, or until the mixture is just firm to the touch",
+      "For the chocolate tuile, place all the ingredients in a food processor and mix until smooth and combined. Transfer the mixture to the fridge and allow to chill for 30 minutes",
+      "To make the squash spheres, slice the squash in half and remove the seeds. Use a melon baller to scoop out spheres from the flesh, placing these in a vacuum bag with the vanilla and sugar syrup",
+      "Seal the vacuum bag, then add to the water bath with the squash purée and cook for the final 8 minutes. After this time, remove both bags from the water bath, set the bag for the purée to one side and chill the bag of squash spheres in a bowl of iced water to cool",
+      "Discarding the vanilla pod, transfer the contents of the purée bag to a blender and blitz to form a smooth purée. Season to taste with a little salt, then transfer to a piping bag and reserve until ready to serve",
+      "Remove the chocolate soil mixture from the fridge and spread out on a silicone mat to an even thickness of roughly 5mm. Bake for 15–20 minutes until firm and crisp, then set aside to cool",
+      "Reduce the oven temperature to 170°C/gas mark 3½",
+      "Spread the chilled chocolate tuille mixture out in a very thin, even layer across another silicone mat and bake for 6–8 minutes until just set. Allow to cool slightly, then stamp out round discs using a 5cm pastry cutter. Reserve until ready to serve",
+      "Once the soil sheet has cooled, break into rough pieces and place in a food processor. Blitz briefly to form an even crumble, then transfer to an airtight container and set aside until ready to serve",
+      "Mix together the toasted pumpkin seeds with a little pumpkin seed oil. Drain the squash spheres from the cooking liquid ready to plate",
+      "To serve, add a spoonful of the crumble to each serving plate and top with a scoop of chocolate mousse. Divide the squash spheres between plates and pipe a few mounds of the squash purée alongside them, topping with a quenelle of the crème fraîche sorbet. Drizzle the oil and seeds over the top and garnish with a chocolate tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorbet Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potimarron Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "187",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "94",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potimarron Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c83c693210012930638e8a18b1fa6fe4f45f6a03dd5f29c08328f1af6d77c611",
+    "lineage_hash": "823cf61a9f3392f29e008fe870985eaf04b9416a554c621a03b00cd8a0e6c737"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe-vanilla-squash",
+    "fetchedAt": "2026-08-03T13:04:02.159Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe-vanilla-squash",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

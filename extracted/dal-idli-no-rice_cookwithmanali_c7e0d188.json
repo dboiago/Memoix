@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dal Idli",
+    "time": "13 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "103",
+      "carbohydrateContent": "17",
+      "fatContent": "1",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Start by soaking the two dals- moong dal dhuli and urad gota along with 1/2 teaspoon methi seeds for 5-6 hours in enough water (around 3 cups). After it has been soaked for 5 to 6 hours, drain the water using a strainer.",
+      "Now, transfer the soaked dal to a blender and add around 1 cup water. Blend to a smooth paste. You can use any blender you have, I use my Blendtec and run it on the soup mode for 30-40 seconds or on smoothie mode for 60 seconds.",
+      "Transfer the blended dal to the steel pot of your Instant Pot. Add salt (especially if living in a colder place, skip if you live in a warm place) and then using your hands mix the batter nicely for 1-2 minutes. The mixing by hand also helps in fermentation.",
+      "The batter should have a nice pouring consistency. I added additional 3-4 tablespoons of water here to reach this consistency. Remember a thick batter will not ferment.",
+      "Cover the Instant Pot with a glass lid (not using the regular lid here in case batter over-ferments and then locks the lid) and press the yogurt button. I set it for 13 hours on yogurt mode \"normal setting\". The fermentation time will depend on where you live.If you don't have an IP, simply put the batter into the oven with lights on overnight.",
+      "After 13 hours, my batter was fermented as it was quite frothy and had bubbles on top. If your batter hasn't fermented even after say 12-13 hours and it looks very thick, my advise would be to add some water make it nice pouring consistency and set it to ferment for additional 2 hours, it should ferment.To check if the batter has fermented, you can always drop some batter into a bowl of water- if the batter floats, it means it's aerated and fermented and you are good to make idlis.",
+      "You can either steam in a regular steamer for 10-12 minutes or use the IP.To steam in the Instant Pot- add 1.5 cups water to the steel pot of your Instant Pot and press saute while you fill the idli molds. Grease the idli molds with little oil and then fill then with the batter. The water in IP must be little simmering now. Press cancel button and place the idli stand inside the pot. Close the lid and press the steam button and select time to 13 minutes with the pressure valve in venting position. You will have to use an external timer of 13 minutes since the IP doesn't count when the valve is in venting position. Once 13 minutes are up, unplug the IP and let the pressure valve drop down on it's own. Then remove the idli stand from the pot and let it sit for 5-10 minutes and then remove the idlis from the mold. Serve warm with sambar!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Urad Dal",
+        "unit": "C",
+        "notes": "whole deshusked black gram, 100 grams,  I use urad dal gota",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moong Dal Dhuli",
+        "unit": "C",
+        "notes": "210 grams, split & dehusked mung beans",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": "methi",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "sendha namak, regular or rock salt",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7847be04d37f92970d23d81d7c3388dc1578597c7bc332642137dd5f888d06f5",
+    "lineage_hash": "b8641bea7aac1bc203d0894b5404816a3e445abc582403c4c0ac464b3049157f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dal-idli-no-rice/",
+    "fetchedAt": "2026-08-02T00:59:56.886Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dal-idli-no-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

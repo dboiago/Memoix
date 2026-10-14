@@ -1,0 +1,3 @@
+Despite its cultivation all over the world, the chilli pepper plant is native to Mexico, where people use the fruits to enhance bright, fresh salsas and deep, smoky sauces. The chipotle – a smoked red jalapeno – is an essential chilli in Mexican cuisine which is commonly preserved in a rich sauce and called chipotle en adobo. These chillies can then be added to recipes as needed along with their sauce to add a touch of spice and smoke, or as the basis for a hot sauce as per the recipe below.
+
+Chipotle chillies are hot, so remove the seeds unless you enjoy your sauces very spicy. This recipe makes 600ml of hot sauce.

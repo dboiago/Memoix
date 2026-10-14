@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "African Chicken (Macanese One-Pan Chicken Curry)",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "389",
+      "carbohydrateContent": "18.8",
+      "fatContent": "21.1",
+      "proteinContent": "34"
+    },
+    "directions": [
+      "Preheat the oven to 350°F (180°C).",
+      "Combine the 1/2 tablespoon curry powder, 1/2 tablespoon paprika, and 1 teaspoon salt in a small bowl. For thigh pieces, rub the spice mixture over the chicken meat, leaving the skin. Generously sprinkle salt over chicken skin. Sprinkle the spices evenly over the leg pieces. Let marinate while preparing the other ingredients.",
+      "Heat 1 tablespoon oil in a 12” oven-safe skillet (*Footnote 2) over medium-high heat until it shimmers. Add chicken, skin side down. Cook over medium heat until the skin turns golden crispy, 3 to 4 minutes. Then flip to cook the spiced side until just toasted, 1 minute or so. For the leg pieces, cook, rotating occasionally, until all sides are toasted but not burned, about 1 minute per side. Turn off the heat. Transfer chicken to a plate.",
+      "Add the remaining of the 1 tablespoon of olive oil into the same pan and turn to medium heat. Add the onion. Cook until softened, 2 to 3 minutes. Add ginger and garlic. Stir fry for 30 seconds, to release the aroma.",
+      "Add paprika and curry powder. Stir until the ingredients are well coated with spices, 20 to 30 seconds.",
+      "Add chicken stock, coconut milk, peanut butter, oyster sauce, bay leaves and potato. Stir with a spatula to dissolve the peanut butter until it’s well blended with the sauce. Bring to a boil and simmer for 5 minutes (*Footnote 2). Add the pepper and top with the chicken without overlapping the pieces, skin side up. Transfer to the oven. Bake until the chicken is cooked through and the skin crispy, about 45 minutes. Garnish with parsley. Serve hot by itself or over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs And/or Legs",
+        "unit": "lb",
+        "notes": "*Footnote 1, bone-in, skin-on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madras Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "and extra for sprinkle",
+        "amount": "1",
+        "section": "Spice mix",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": "Optional, for spiciness",
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Madras Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "can",
+        "notes": null,
+        "amount": "½",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Natural Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potato",
+        "unit": null,
+        "notes": "peeled and chopped into 1” pieces",
+        "amount": "1",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers",
+        "unit": null,
+        "notes": "roll cut into 1” (2.5 cm) pieces",
+        "amount": "2",
+        "section": "Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley for Garnish",
+        "unit": null,
+        "notes": "chopped (Optional)",
+        "amount": "0",
+        "section": "Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "298a18664fa7f0f0cb10aab457d13fda928a930fd3a39fd7435e6434062ee56c",
+    "lineage_hash": "703a0d1779c825fbcb0b9f2fa01cafedf6fe0184e40b6ce4e26c134c6cc618af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/african-chicken/",
+    "fetchedAt": "2026-08-02T07:08:58.333Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/african-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

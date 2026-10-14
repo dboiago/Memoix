@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Zucchini Bread",
+    "time": "1 hr 10 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "256",
+      "carbohydrateContent": "44",
+      "fatContent": "8",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter a 9x5 loaf pan and line with parchment paper in one direction.",
+      "Use the large holes of a box grater or the large grating disc of a food processor to shred 16 oz zucchini. Spread the zucchini in an even layer on a paper towel and cover with another paper towel. Press to absorb the liquid. Let the zucchini sit while you mix the batter.",
+      "Toss 6 oz mini chocolate chips with 2 teaspoons of water to moisten. Sprinkle a teaspoon of all purpose flour over the chips and toss, set aside.",
+      "Combine 7 ½ oz all-purpose flour, 2 oz cocoa powder, 1 teaspoon ground cinnamon, ½ teaspoon ground ginger, ¼ teaspoon ground nutmeg, ½ teaspoon salt, and 1 ½ teaspoons baking powder in a mixing bowl and whisk to combine. Add 8 oz brown sugar to the dry mixture and toss to incorporate.",
+      "In another bowl, whisk together1 ¾ oz vegetable oil and 3 large eggs. Stir the zucchini and finely grated zest of 1 orange into the wet ingredients.",
+      "Add the wet ingredients to the dry ingredients all at once and stir just until combined. Fold in the chocolate chips.",
+      "Pour the batter into the prepared loaf pan. Bake until a toothpick comes out with a few moist crumbs, 45-50 minutes.",
+      "While the bread bakes, combine 2 oz orange juice and 2 oz granulated sugar in a small saucepan. Cook over medium heat until the sugar dissolves. Set aside to cool.",
+      "As soon as the bread comes out of the oven, pour the orange glaze over the loaf. Cool the loaf in the pan for 30 minutes and then turn out onto a cooking rack to cool completely.",
+      "Wrap and store at room temperature until serving. The bread will keep for several days at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "oz",
+        "notes": "about 2-3 medium",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Chips",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "packed, 1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef8579730af2b355b77fd1b8bf4d7eecabf97b71931e59754effc8b3a385b564",
+    "lineage_hash": "40f4113e832dd66093c3c4fa6fdfa6a83d93e658d0a510a864daaa3101a607ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/06/26/chocolate-orange-zucchini-bread/",
+    "fetchedAt": "2026-08-02T05:45:48.600Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/06/26/chocolate-orange-zucchini-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cornflakes Chivda",
+    "time": "22 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "366",
+      "carbohydrateContent": "34",
+      "fatContent": "23",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Heat oil in a large pan on medium heat. Once its hot, add whole cashews and fry until they are golden brown in color and then remove on a plate. Similarly fry the peanuts until golden brown and remove from pan.",
+      "Then add the raisins and fry until they plump up. Remove on a plate. Then add the chana dal (optional) and fry until light golden brown and remove on a plate.",
+      "Add the sliced chilies and curry leaves and cook for a minute until they crisp up. Then add the chili powder, turmeric, salt, chaat masala and powdered sugar and cook the spices for 15 to 30 seconds.",
+      "Then add the fried cashews, peanuts, raisins and chana dal back into the pan and stir. And finally add cornflakes (I used kellogg's original) and stir until the corn flakes are well coated with the spices, around 2 minutes. Mix everything well and your cornflakes chivda is ready. Cool completely and then store in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "30 ml, I used avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": "C",
+        "notes": "whole raw cashews",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": "you can also replace it with regular chili powder to make it spicier, add 1/4 teaspoon more for extra heat",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "+ ⅛ tsp",
+        "notes": "or add more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "C",
+        "notes": "around 100 grams, I used Kellogg's original cornflakes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1cba62cefe85c5474b33901c792f83cb31c7044308154813fd6ec96e0c03d37",
+    "lineage_hash": "20d995a438f04bb07691e485129e5227b17516e1f003d394da8f5d33d3c308d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/cornflakes-chivda/",
+    "fetchedAt": "2026-08-02T06:45:56.100Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/cornflakes-chivda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

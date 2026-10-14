@@ -1,0 +1,345 @@
+{
+  "recipe": {
+    "name": "Crusted Cod with Mussels, Coriander and Cauliflower",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The crust, pickled raisins and herb oil can be made many days in advance, while the sauce can be made the day before if needed – so while there are several elements to this dish, with a little forward planning it is easy to put together",
+      "Begin by making the crust. Lightly toast the curry powder, cumin and coriander in an oven set at 160°C/gas mark 3 for a few minutes to bring out the flavour, then transfer to a blender or food processor. Add the remaining ingredients apart from the cheese and butter, blitz into a paste, then add the cheese and butter and blitz again until the mixture comes together",
+      "Place a sheet of baking paper on a work surface and place the crust mixture on top. Place another sheet of baking paper on top of the mixture, then roll the crust out until it is 0.5cm thick. Transfer to the freezer to set solid",
+      "For the pickled raisins, pour all the ingredients (apart from the raisins) into a pan and bring to the boil. Place the raisins in a heatproof container, then pour the hot pickle liquor over the top of them. Seal and set aside",
+      "For the herb oil, place all the ingredients in a blender and blitz for around 5 minutes, or until the chlorophyll begins to split and turns the oil bright green (the friction of the blades will heat up the oil to help this happen). Line a sieve with muslin cloth or a j-cloth and set it over a bowl, then pour the oil into the cloth. Leave to strain in the fridge overnight",
+      "To make the sauce, roughly chop the cauliflower then blitz it in a food processor until it resembles breadcrumbs. Place a large pan over a medium heat and add a dash of oil. Once hot, tip in the blitzed cauliflower and cook, stirring frequently, until golden (around 10-15 minutes). Towards the end of the cooking time, add the curry powder",
+      "While the cauliflower cooks, peel, core and finely slice the apple. Once the cauliflower has turned golden, add the apple, milk and 50g of your pickled raisins. Bring to a gentle simmer and cook for 5 minutes, then pour in the cream. Remove from the heat, blitz until completely smooth, then season to taste with salt. Cool and store in the fridge to be reheated later",
+      "To cook the mussels, place a large saucepan with a tight-fitting lid over a high heat. Add the mussels immediately followed by the garlic, wine, curry powder and coriander stalks, then immediately place the lid on top. Cook for a minute or 2, shaking the pan occasionally, until all the shells have opened (discard any that don’t). Strain the cooking liquor into a bowl, then pick the meat from the mussels. Reserve the picked mussels in the cooking liquor and place in the fridge to gently reheat later",
+      "To brine the cod, bring the salt, sugar and water to the boil, then leave to cool completely. Submerge the cod fillets in the brine for 15 minutes, then wash the fish well in running water and pat dry",
+      "Now all the elements are ready, you can begin plating. Preheat an oven to 180°C",
+      "Place the cod fillets on a baking tray lined with baking paper, drizzling them with a little oil and seasoning them with salt. Place the fish in the oven for 5-7 minutes to cook through",
+      "Meanwhile, gently reheat the curry sauce, loosening it with a little of the reserved mussel cooking liquor. Place the picked mussels in the sauce to gently warm through",
+      "If you have one, use a metal ring to neatly arrange a mixture of pickled raisins, toasted almonds, coriander leaves, lime segments and the diced apple in the bottom of each bowl",
+      "Once the cod is cooked, cut the sheet of crust into squares the same size as the cod fillets and place them on top. Preheat a grill to high and give the fish a final blast until the crust has defrosted and crisped up",
+      "Pour the sauce around the garnish in each bowl, ensuring everyone gets the same number of mussels. Drizzle with the green herb oil, then place a piece of cod in the centre"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillets",
+        "unit": null,
+        "notes": "skinned and weighing approx. 120g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": "kg",
+        "notes": "cleaned and debearded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Almonds",
+        "unit": null,
+        "notes": "toasted and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "segmented and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ad8ae6e9ccd3272b297f44162f2921c09806778db4739229b6b473ae762e9a8",
+    "lineage_hash": "93240529f1a3e671a81cb41b6a4ddb150f248e4a6c2cd1c1d4b24bf6d797d210"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crusted-cod-mussels-cauliflower-recipe",
+    "fetchedAt": "2026-08-02T19:27:20.318Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crusted-cod-mussels-cauliflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

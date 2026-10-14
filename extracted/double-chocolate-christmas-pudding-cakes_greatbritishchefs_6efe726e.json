@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Double chocolate Christmas pudding cakes",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spray the cake pans with cake release spray and line the base with a small circle of greaseproof paper",
+      "I find that using a food mixer is the easiest way to make the cake batter as the amounts are quite large. Place all of the cake ingredients in a food mixer and mix on low for 2-3 minutes before beating on medium to high for a further 3 to 4 minutes, until the batter is light and smooth. You can also beat the batter with a hand mixer too",
+      "Spoon the mixture into four small hemisphere cake pans and one large cake pan and place them in the oven. Bake the small cakes for between 20 and 30 minutes, or until well-risen and a skewer comes out clean when inserted in the middle of the cakes. The large cake will take a bit longer. Check the cake is cooked the same way as the individual cakes",
+      "Remove the cakes from the oven and allow to cool for 2 minutes, before turning them out of the pans and allowing them to cool completely on a wire rack",
+      "Meanwhile, make the buttercream filling by beating the butter, icing sugar and melted chocolate together until smooth. Allow to cool and thicken slightly",
+      "Make the ganache just before decorating by melting the chocolate in a pan over a larger pan of hot but not boiling water, until melted and smooth. Beat in the cream and mix well. Allow to cool slightly before using – it must not get too cold or it will set before you use it",
+      "Place the large cake on a plate and spoon or drizzle the ganache over the top before adding a sprig of holly with berries",
+      "Sandwich the small cakes together with the buttercream to make small round cakes, and then spoon or drizzle the ganache over the top before decorating with a sprig of holly with berries",
+      "For a large round cake, bake the mixture in two large cake pans and sandwich together as with the smaller individual cakes before, decorating the same way as above"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f31fdef7d515be3675dd31f86dbf56681b86dba5438ac39a09f09137a525a51a",
+    "lineage_hash": "b209867920f87fcfe1ee910af88dab264fb35e6c7b8439cffc58f4b5aeca41ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/double-chocolate-christmas-pudding-cake-recipe",
+    "fetchedAt": "2026-08-03T23:39:50.585Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/double-chocolate-christmas-pudding-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

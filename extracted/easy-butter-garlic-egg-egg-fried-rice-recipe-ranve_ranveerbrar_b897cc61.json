@@ -1,0 +1,360 @@
+{
+  "recipe": {
+    "name": "Butter Garlic Egg & Egg Fried Rice",
+    "time": "25-30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take whole eggs, break the eggs in a bowl.",
+      "Add salt to taste, oil and whisk it well.",
+      "Keep it aside for further use.",
+      "In a pan, add water as required.",
+      "Take a small steel bowl, grease it with oil and pour a ladleful of prepared egg mixture.",
+      "Sprinkle some spring onion, green chilli, cover it with a lid and let it cook for 7-8 minutes until cooked well.",
+      "Demold the egg mixture and keep it aside for further use.",
+      "Take a bowl or any container, add garlic, water, oil and grind it with the hand blender until smooth.",
+      "Add oil gradually and grind it into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a pan, add oil, butter, once it's hot, add garlic, salt to taste, a pinch of sugar and cook it for a while until golden in colour.",
+      "Keep it aside for further use.",
+      "In a wok, add butter, once it melts, add pineapple and cook it for a minute.",
+      "Add prepared sauteed garlic, remaining butter, salt to taste, cooked egg trimmings, cooked rice and toss it on high flames for 2-3 minutes.",
+      "Finish it with tender coriander stems, spring onion, prepared garlic sauce, crushed black peppercorns and give it a good mix.",
+      "Transfer it to a serving bowl and garnish it with coriander sprig.",
+      "Serve hot with prepared butter garlic eggs.",
+      "In a pan, add remaining sauteed garlic, water and give it a quick stir.",
+      "Add cooked eggs, crushed black peppercorns, salt to taste, fresh cream and cook it for a minute on high flames.",
+      "Finish it with tender coriander stems, fresh coriander leaves, prepared garlic sauce and give it a good mix.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared butter garlic egg fried rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Egg Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Steaming Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Steaming Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garlic Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Garlic",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "3",
+        "section": "For Sauteing Garlic",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "7-8",
+        "section": "For Sauteing Garlic",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauteing Garlic",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Garlic",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "No. Pineapple",
+        "unit": null,
+        "notes": "peeled & cut into diced",
+        "amount": "½",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Sauteed Garlic",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Eggs Trimmings",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Garlic Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Butter Garlic Egg Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Sauteed Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Eggs",
+        "unit": null,
+        "notes": "cut into diced",
+        "amount": "0",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Garlic Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": "For Butter Garlic Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "524912aaaa0da68a09e73380fa39044fc995a45f0aceb0b4296890f1bcfe46b8",
+    "lineage_hash": "9ad7beb8ac3104e89b6201175df6eaf9544ef30cc368211068f7effbbf5aca45"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/butter-garlic-egg-fried-rice/",
+    "fetchedAt": "2026-08-02T19:07:29.301Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/butter-garlic-egg-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

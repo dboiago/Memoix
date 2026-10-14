@@ -1,0 +1,61 @@
+{
+  "url": "https://muybuenoblog.com/crispy-cheese-carne-asada-tacos/",
+  "slug": "crispy-cheese-carne-asada-tacos_muybuenoblog_b5db58db",
+  "title": "Crispy Cheese Carne Asada Tacos",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T10:52:42.655Z",
+  "ldName": "Crispy Cheese Carne Asada Tacos",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "8",
+    "8 tacos"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "beef, Entrees, Main Course, tacos",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 1/2 pounds beef taco meat (finely diced (or cubed carne asada))",
+    "1 teaspoon salt",
+    "1/4 teaspoon ground black pepper",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon onion powder",
+    "1 to 1½ cups  shredded Oaxaca cheese ((or Monterey Jack or mozzarella))",
+    "8  corn tortillas"
+  ],
+  "ldInstructionsRaw": [
+    "Sprinkle diced beef with salt, pepper, garlic powder, and onion powder. Stir until the meat is evenly coated with the seasonings.",
+    "Heat a large skillet over medium-high heat. Add the seasoned beef and cook for about 10 minutes, turning occasionally, until browned and cooked through.",
+    "Heat a comal or nonstick skillet over medium heat. Sprinkle about ¼ cup of shredded Oaxaca cheese directly onto the surface in the shape of a tortilla. Let the cheese melt and cook until golden and crispy around the edges.",
+    "Place a tortilla on top of the melted cheese. Once the cheese adheres to the tortilla, gently flip it so the tortilla side is down and the cheese crisps up beautifully on the outside.",
+    "Fill each cheesy tortilla with the cooked beef and your favorite toppings like guacamole, salsa, cilantro, and onions.",
+    "Serve warm with grilled cebollitas, Chile de Árbol Salsa, and an ice-cold chelada for a truly irresistible meal."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "192 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "22 g",
+    "fatContent": "6 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "56 mg",
+    "sodiumContent": "391 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "0.2 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 1/2 pounds beef taco meat, finely diced (or cubed carne asada)",
+    "▢ 1 teaspoon salt",
+    "▢ 1/4 teaspoon ground black pepper",
+    "▢ 1/2 teaspoon garlic powder",
+    "▢ 1/4 teaspoon onion powder",
+    "▢ 1 to 1½ cups shredded Oaxaca cheese, (or Monterey Jack or mozzarella)",
+    "▢ 8 corn tortillas"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

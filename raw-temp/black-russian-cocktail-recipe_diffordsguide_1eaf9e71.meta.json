@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/236/black-russian",
+  "slug": "black-russian-cocktail-recipe_diffordsguide_1eaf9e71",
+  "title": "Black Russian Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:18:01.891Z",
+  "ldName": "Black Russian",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "After dinner/digestif",
+    "Classic/vintage",
+    "Hall of Fame and must know/try"
+  ],
+  "ldIngredientsRaw": [
+    "60 ml Vodka",
+    "22.5 ml Coffee liqueur"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of skewered lemon slice wheel and Luxardo Maraschino Cherry sail. (Skewer through either side of lemon with cherry skewered in the centre.)",
+    "STIR all ingredients with ice.",
+    "STRAIN into ice-filled glass.",
+    "Garnish with skewered lemon slice wheel and maraschino cherry (sail)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "204 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

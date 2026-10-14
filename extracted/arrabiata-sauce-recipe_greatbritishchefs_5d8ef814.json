@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Arrabiata Sauce",
+    "time": "2 hr 45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large pan over a medium heat and add olive oil. Once hot, sweat the onions and chilli until soft",
+      "Stir in the cayenne pepper, smoked paprika and seasoning, then add the balsamic vinegar and sugar. Mix well and leave to reduce until the vinegar thickens",
+      "Add the tinned tomatoes, thyme, Tabasco, garlic and bay leaf, then stir well. Allow the sauce to simmer for at least 2 hours over a low heat until nice and thick. Check the seasoning throughout the cooking process",
+      "Store any leftover sauce in the fridge for several days after cooking, or store in sealable jars - if the jars are sterilised and sealed properly, the sauce will last for several months stored in a cool, dark place"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "kg",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccafa4b1d77a8c61d466261ad314c536d6aa038ba7a1d643ed98b9bc98002159",
+    "lineage_hash": "8fa3dff6a1e497b40cb2048a4e8174788d78e3bf33062b473b96d63af6042898"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/arrabiata-sauce-recipe",
+    "fetchedAt": "2026-08-03T19:03:19.783Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/arrabiata-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

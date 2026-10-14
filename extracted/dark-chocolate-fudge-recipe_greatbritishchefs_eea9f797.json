@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Fudge",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin this recipe by greasing a baking tray and lining with parchment or silicone paper",
+      "Place the cream, sugar and glucose into a heavy-based saucepan. Bring to a soft boil until the mixture reaches 120°C on a food thermometer, trying not to stir or shake the pan",
+      "Add the butter and return to a soft boil until the temperature reaches 120°C again",
+      "Remove from the heat and stir in the chocolate until it is completely dissolved",
+      "Pour the chocolate fudge mix into the baking tray and allow to set for 30 minutes. Cut the fudge into cubes and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate Buttons",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus more for greasing",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "132b4c3a32cdded7bbd70c7c75a0df0a5df789ea8c88af842fc72b541672c33d",
+    "lineage_hash": "3e335cd7de403e5f2252051725fe7d16042b7458a121d8ed86255cf3dd8f2043"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-recipe",
+    "fetchedAt": "2026-08-03T18:35:50.567Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

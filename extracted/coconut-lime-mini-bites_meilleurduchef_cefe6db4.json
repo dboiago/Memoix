@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Coconut & Lime Mini Bites",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Coconut and Lime Mini Bites recipe, organise the necessary ingredients for the coconut rich shortcrust pastry.",
+      "Place the flour, castor sugar, desiccated coconut, salt and butter in the stand mixer recipient...",
+      "... and knead with the flat beater until the consistency is crumbly.",
+      "Add the eggs...",
+      "... and continue kneading...",
+      "... until homogeneous.",
+      "Transfer the dough on a sheet of greaseproof paper.",
+      "Cover the dough with another sheet of greaseproof paper...",
+      "... and roll out the pastry to a thickness of 2-3mm with a rolling pin. Reserve in the freezer.",
+      "For the coconut mousse:  Organise all the necessary ingredients.",
+      "Soften the gelatine sheets in cold water.",
+      "In the stand mixer bowl, beat the whipping cream until you obtain a whipped cream...",
+      "... and reserve in the fridge.",
+      "Strain the gelatine sheets...",
+      "... and add them to 1/3 of the coconut milk (heated beforehand).",
+      "Combine gently with a whisk until the gelatine is completely dissolved.",
+      "Pour the egg whites in the stand mixer recipient and beat at medium speed.",
+      "Add half of the sugar.",
+      "Add the rest of the sugar and beat until stiff.",
+      "Zest the limes with the Microplane Classic grater.",
+      "When the coconut preparation has cooled down, add the lime zest. Transfer into a mixing bowl. Set aside.",
+      "Add the 2/3 of the coconut milk. Set aside.",
+      "When the meringue is stiff...",
+      "... add it to the coconut preparation.",
+      "... and combine well until homogeneous. Add the whipped cream.",
+      "Using a funnel dispenser, pipe the preparation in the cavities of a Silikomart micro savarin mould. You can use any mould shape of your choice.",
+      "Place the mould in the freezer to set. Up to this stage, this recipe can be in advance and frozen.",
+      "Remove the coconut rich shortcrust pastry from the freezer and cut small discs with a pastry cutter with the same dimensions as the mould cavities. I used an Exoglass pastry cutter Ø 3cm.",
+      "Arrange the coconut biscuit discs on a Silpat baking mat placed on top of a Silichef XL perforated baking sheet.",
+      "Bake in a fan-assisted oven at 170°C (gas 3) for 8 minutes.",
+      "When cooked, remove from the oven and leave to cool.",
+      "Remove the frozen mini savarin shapes from the freezer and release from the mould using a wooden pick.",
+      "Using a pastry brush, coat the savarin shapes with clear mirror glaze (reheated in the microwave beforehand)...",
+      "... and dip them in desiccated coconut.",
+      "Pick each coconut mousse savarin on top of a biscuit disc. Decorate with a small piece of lime zest. Leave to defrost slowly in the fridge.",
+      "Arrange the mini bites on a serving platter. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": "beaten",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Sheets",
+        "unit": null,
+        "notes": "7 g",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": "35% fat content",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Mirror Glaze",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ba77af69c6a43291640949b83358df9cb6a986aa99e56eb79dbcd17d1f75ed4",
+    "lineage_hash": "b010097d5e77da01eb479a4749e084c11b175ac6f6ceafa1733e0fee1a273d05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/coconut-lime-mini-bites.html",
+    "fetchedAt": "2026-08-02T11:55:51.809Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/coconut-lime-mini-bites.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

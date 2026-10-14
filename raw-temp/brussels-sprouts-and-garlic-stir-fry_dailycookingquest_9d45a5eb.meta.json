@@ -1,0 +1,45 @@
+{
+  "url": "https://dailycookingquest.com/brussels-sprouts-and-garlic-stir-fry.html",
+  "slug": "brussels-sprouts-and-garlic-stir-fry_dailycookingquest_9d45a5eb",
+  "title": "Brussels Sprouts and Garlic Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:05:09.310Z",
+  "ldName": "Brussels Sprouts and Garlic Stir Fry",
+  "ldTime": "PT0H15M",
+  "ldPrepTime": "PT0H5M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Side Dish, Vegetarian",
+  "ldKeywords": [
+    "Stir-frying vegetables in a cast-iron skillet",
+    "15-minutes Brussels sprouts side dish",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon olive oil/butter",
+    "2 cloves garlic, whole but slightly bruised",
+    "2 cups brussels sprouts (about 20), cut into halves",
+    "salt, to taste",
+    "pepper, to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Heat olive oil/butter in a frying pan/cast iron skillet on medium heat. Sauté garlic until fragrant, about 2 minutes.",
+    "Add brussels sprouts, cut side down. Cover the pan/skillet and cook for 2 minutes.",
+    "Remove the cover, flip the sprouts so the cut side is up. The cut side should be brown and crispy by now. Reduce heat to medium low. Cover the pan/skillet again and cook for 3 minutes.",
+    "Turn off the heat. Season with salt and pepper, toss to mix well. Transfer to a serving plate and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon olive oil/butter",
+    "2 cloves garlic, whole but slightly bruised",
+    "2 cups brussels sprouts (about 20), cut into halves",
+    "salt, to taste",
+    "pepper, to taste"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

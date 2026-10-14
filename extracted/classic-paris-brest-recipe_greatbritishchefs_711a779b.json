@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Paris-Brest",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the choux pastry. Bring the milk, water, sugar and butter to the boil then incorporate the flour and salt",
+      "Using a rubber spatula, work the paste over a medium heat until it is quite dry and coming away from the edges of the pan. Transfer the paste to a stand mixer and whisk until cool",
+      "Once the paste has cooled down, add the eggs one by one whilst continuously whisking. Pass the paste through a drum sieve and scoop into piping bags",
+      "Using a stencil, trace a 10cm diameter circle onto a tray lined with baking parchment. Pipe 2 rings of choux pastry into the circle and bake for 6 minutes. Turn the oven down to 150°C/gas mark 2 and bake for a further 6 minutes then remove from the oven. Leave to cool on a rack",
+      "For the praline cream, split the vanilla pod and scrape the seeds into the milk with the praline paste. Heat the milk to scalding point",
+      "Whisk the egg yolk with the sugar, flour and cornflour and incorporate the hot praline milk. Return the mixture to the heat and cook whilst continuously whisking until the mixture has thickened and the flour has been cooked out",
+      "Pass through a sieve and cover the surface with a sheet of cling film so that it does not form a skin. Allow to cool",
+      "Once cool, place the praline cream in a stand mixer and whisk until the mixture is smooth and unctuous. Gently fold in the whipped cream using a spatula and place the mixture in a piping bag",
+      "To make a croquant, make a dry caramel from the sugar in large pan with a wide bottom and incorporate the toasted almonds",
+      "Mix well, spread thinly onto a silpat mat and leave to cool. Using a rolling pin, smash the brittle into small pieces and set aside",
+      "Place a little praline paste into a small piping bag",
+      "To finish, cut the choux pastry in half horizontally. Pipe a little praline paste on the top half of the pastry and sprinkle over the croquant. Dust liberally with icinig sugar and season with a pinch of flaky sea salt",
+      "Pipe the praline cream onto the bottom half of choux pastry and place the top half on top of the cream like a sandwich. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Praline Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "lightly whipped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92526f2a9c60b1d486d959d724d559c9f16009b4524350a8f39310661c943e84",
+    "lineage_hash": "1a2a77007f12388268d7608251031065fc535c15f07b82da273a39e28db88975"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-paris-brest-recipe",
+    "fetchedAt": "2026-08-03T12:02:45.061Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-paris-brest-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

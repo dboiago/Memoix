@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Braised Winter Melon with Ground Chicken",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "142",
+      "carbohydrateContent": "16.3",
+      "fatContent": "6.2",
+      "proteinContent": "6.6"
+    },
+    "directions": [
+      "Combine ground chicken, Shaoxing wine, salt and cornstarch in a medium bowl. Marinate for 10 minutes while preparing other ingredients.",
+      "Deseed the winter melon using a paring knife to slice off the soft part that’s attached to the seeds. Divide the winter melon into 2 to 3 large pieces so it’s easier to work with. Slice off the skin about 1/4” (1/2 cm), until you no longer see green color on the winter melon flesh. Then slice it into 1/2” (1 cm) thick slices. (See the step-by-step pictures in my blog post on how to cut winter melon.)",
+      "Heat oil in a wok or large skillet over medium-high heat until it shimmers. Add ginger and scallion whites. Stir to release fragrance, 30 seconds or so. Add the ground chicken. Cook, breaking into smaller pieces, until the surface turns golden, 2 to 3 minutes.",
+      "Add the winter melon. Stir and cook to coat well with oil, 1 minute or so.",
+      "Pour in Shaoxing wine to deglaze. Then add the chicken stock, light soy sauce and sugar. Stir to mix well. Bring to a boil, then simmer over medium heat until the winter melon turns tender, 8 minutes or so. (*Footnote 2)",
+      "Add the cornstarch and 1 tablespoon water in a small bowl, stir to dissolve completely. Pour into the wok. Turn to medium heat. Cook and stir until the broth thickens. Garnish with sesame oil and scallion greens. Transfer to a serving plate. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Chicken",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Winter Melon",
+        "unit": "lb",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts divided",
+        "amount": "2",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Braising",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Braising",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "095745d0f3aefbf15de7a8bef63925aacf5109e203e7ac7943f38063874f9665",
+    "lineage_hash": "cef1fe1e68f5570bab886ce7f8ec0c36ab854f5c40c7df32e2c79980c9c28973"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/braised-winter-melon-with-ground-chicken/",
+    "fetchedAt": "2026-08-02T09:52:17.906Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/braised-winter-melon-with-ground-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

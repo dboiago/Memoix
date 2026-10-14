@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Pineapple Pie",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Mint Leaves"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add butter to a heated frying pan. When butter has melted, place pineapple rings onto pan and sprinkle granulated sugar on top. Cook over medium heat until caramelized on both sides. Set aside to cool.",
+      "Cut out a 20cm circle out of sheet of puff pastry and lay on top of a baking sheet lined with parchment paper. Pierce the surface with a fork. Cut out long strips with the other sheet of puff pastry and set aside for later.",
+      "Put cottage cheese in the center of the puff pastry and flatten with the back of a spoon. Arrange pineapple rings on top.",
+      "Arrange pastry strips on top in a criss cross fashion. Fold the edges of the bottom pastry over. Brush on the egg wash.",
+      "Bake for 30 minutes at 200 degrees C or until pastry is golden brown. Serve with ice cream or cream if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "8 rings",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cottage Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee1aca34be36b6abe52bdd12fc576fe25409e03c4e046a4f196eca9462e60003",
+    "lineage_hash": "8e328755367dcdad8a9ebd93ae933192d698d992e17d2e2b52ba4b21d4433ddb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/easy-pineapple-pie-2/",
+    "fetchedAt": "2026-08-02T01:21:21.692Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/easy-pineapple-pie-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

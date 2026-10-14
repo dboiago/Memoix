@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Barbecue Sous Vide Chicken Thighs",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the chicken thighs, run the tip of a sharp paring knife along the thigh bone. To release the bone, carefully run the blade around and under the bone, ensuring you remove all of the cartilage",
+      "Place in a vacuum bag with the thyme, oil, salt and lemon zest and seal with a bar sealer. Cook for 35 minutes in the water bath",
+      "While the chicken is cooking, barbecue the sweetcorn on a hot, dry barbecue or under a grill until very lightly blackened. Remove from the heat and place in a bowl. Cover with cling film and leave to steam for 10-15 minutes",
+      "Using a sharp knife, remove the corn kernels from the cob (being careful not to cut too close to the cob) and set aside in a bowl. Cook the chorizo in a pan until the oils leach out, then add the garlic and corn",
+      "Add the red wine vinegar and paprika and reduce until dry. Finally, remove from the heat and stir in the coriander and mint",
+      "At this point the chicken should be cooked. Take out of the water bath, cut open the bag and remove the chicken, making sure to retain the juices in the bag",
+      "To finish the chicken, cook on a hot barbecue or under a grill to achieve a dark golden colour on both sides, approximately 2-3 minutes. Serve on top of the chorizo and sweetcorn salsa with a drizzle of the cooking juices"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": "g",
+        "notes": "bones removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Thyme",
+        "unit": null,
+        "notes": "1 bunch",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetcorn",
+        "unit": "g",
+        "notes": "on cob, husk removed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Sausage",
+        "unit": "g",
+        "notes": "broken or chopped in small pieces",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "465a87476d43d6719cd958f4b28a5cd45111b51cedc561004038fb81f987286e",
+    "lineage_hash": "40003282448f9bfbac6f8e8bcfe9594a957d5d81ebddc61b6d67341f31411f87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecue-chicken-thighs-recipe",
+    "fetchedAt": "2026-08-03T16:17:05.835Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecue-chicken-thighs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

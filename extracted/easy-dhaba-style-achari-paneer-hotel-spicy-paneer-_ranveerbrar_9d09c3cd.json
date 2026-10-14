@@ -1,0 +1,263 @@
+{
+  "recipe": {
+    "name": "Dhaba style Achari Paneer",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi, add mustard oil, once it's smoky hot, add bay leaf, dry red chili, nigella seeds, fennel seeds, small mustard seeds, cumin seeds, fenugreek seeds and let it splutter well.",
+      "Add onions, ginger, a pinch of asafoetida and cook it for a while until translucent.",
+      "Add turmeric powder, degi red chili powder, coriander powder, curd and saute it for 2-3 minutes.",
+      "Add fresh tomato puree, salt to taste and let it cook for a while until cooked well.",
+      "Add water, mango pickle and simmer it for 4-5 minutes.",
+      "Add water to adjust the consistency, sugar, sauteed paneer & green chili and give it a quick boil.",
+      "Finish it with fresh coriander leaves and mix it well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti or paratha.",
+      "In a mixer grinder jar, add cashew nuts, tomatoes and grind it into a smooth paste.",
+      "Transfer it to a pourer or bowl and keep it aside for further use.",
+      "In a pan, add mustard oil, once it's smoky hot, add green chillies, paneer, degi red chili powder and gently toss it for a minute.",
+      "Cook the paneer for 4-5 minutes on medium flames and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Small Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Turmeric Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2-3",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1⅓",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Mango Pickle",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "large diced",
+        "amount": "800",
+        "section": "For Sauteing Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chilli",
+        "unit": null,
+        "notes": "less spicy & slit",
+        "amount": "4",
+        "section": "For Sauteing Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nut",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Tomato Puree",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "cut into half",
+        "amount": "4",
+        "section": "For Tomato Puree",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b337c104c497173372301f17a3be575f7c4f4fb78c594e3febf2f30462a176af",
+    "lineage_hash": "43e9a1586bb19e8eb1419ecb3161f8e52b8a32f90b2d1745768a5b2e177d12e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/achari-paneer/",
+    "fetchedAt": "2026-08-02T17:55:26.551Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/achari-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

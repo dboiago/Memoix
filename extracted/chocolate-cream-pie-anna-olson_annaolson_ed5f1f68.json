@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chocolate Cream Pie",
+    "time": "4 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C) and grease a 9-inch (23 cm) pie pan.",
+      "Stir the cookie crumbs with the brown sugar and cinnamon and then stir in the melted butter until evenly combined. Press into the bottom and all the way up the sides of the pan. Bake for 10 minutes (no change will be noticeable). Cool on a wire rack before filling.",
+      "For the chocolate cream, whisk the sugar, cornstarch and salt in a medium saucepan. Whisk in the milk followed by the egg yolks and place the pot over just-higher-than-medium heat, whisking until it reaches a full simmer and becomes thick and glossy, about 6 minutes. Pour in the chocolate and butter and stir until melted. Stir in the vanilla. Transfer this mixture to a bowl and place a piece of plastic wrap directly on the surface of the filling to prevent a skin from forming. Cool the chocolate cream for about 90 minutes, until almost room temperature.",
+      "Spoon the filling into the pie or tart shell and spread to level it. Chill for at least 4 hours to set.",
+      "For the topping, whip the cream to a soft peak using electric beaters or a stand mixer fitted with the whip attachment, then whip in the icing sugar, skim milk powder and vanilla. Spread or pipe this topping over the chocolate cream and chill, uncovered, until ready to serve. The pie will keep after slicing, loosely covered, in the fridge for up to 2 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "45 g",
+        "amount": "6",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "500 mL",
+        "amount": "2",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Couverture/baking Chocolate",
+        "unit": "oz",
+        "notes": "240 g, chopped",
+        "amount": "8",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "60 g, cut in pieces",
+        "amount": "¼",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chocolate Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Baked Crumb Crust",
+        "unit": null,
+        "notes": "recipe follows, cooled",
+        "amount": "1",
+        "section": "Assembly and Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": "250 mL",
+        "amount": "1",
+        "section": "Assembly and Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": "16 g, sifted",
+        "amount": "2",
+        "section": "Assembly and Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Skim Milk Powder",
+        "unit": "Tbsp",
+        "notes": "5 g",
+        "amount": "1",
+        "section": "Assembly and Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Assembly and Topping",
+        "isOptional": false
+      },
+      {
+        "name": "2 ¾ Cups Chocolate Cookie Crumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "390",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g, packed",
+        "amount": "2",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "1.5 g",
+        "amount": "½",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, melted",
+        "amount": "½",
+        "section": "Crust",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56b6bc0565e6adea4e0689b73b2fe7300c65f01b7f436c86065052171fca80f5",
+    "lineage_hash": "c2cda130cdff9fe674e1599efffdb7b4fc5ab88fae32380df85cbf2d53211d5c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-cream-pie/",
+    "fetchedAt": "2026-08-01T18:31:16.091Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-cream-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

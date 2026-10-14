@@ -1,0 +1,63 @@
+{
+  "url": "https://spanishsabores.com/cherry-gazpacho-recipe/",
+  "slug": "cherry-gazpacho-recipe-the-perfect-summer-soup-spa_spanishsabores_5a2004ad",
+  "title": "Cherry Gazpacho Recipe - The Perfect Summer Soup! - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T06:24:18.621Z",
+  "ldName": "Cherry Gazpacho",
+  "ldTime": "PT265M",
+  "ldPrepTime": "PT240M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "easy gazpacho, fruit gazpacho, summer gazpacho",
+  "ldIngredientsRaw": [
+    "1  kilo ripe plum tomatoes.",
+    "250 grams sweet cherries (pitted.)",
+    "1  small green pepper (stemmed and chopped, seeds removed.)",
+    "1  cucumber (peeled and chopped.)",
+    "1/2  small red onion (roughly chopped.)",
+    "1  garlic clove (finely sliced.)",
+    "1/4 cup sherry vinegar.",
+    "1/2 cup extra virgin olive oil.",
+    "1/2 cup basil leaves.",
+    "1/2 cup pistachios (chopped.)"
+  ],
+  "ldInstructionsRaw": [
+    "Scald the tomatoes to remove the skin. Cut a small cross at the bottom of each tomato and place in boiling water for 30 seconds, and then place in a large bowl of ice water. The skin should peel off easily.",
+    "In a large mixing bowl, place the peeled tomatoes, cherries, green pepper, cucumber, onion, and garlic. Add the sherry vinegar and olive oil, as well as a generous pinch of salt, and toss together. Leave to stand at room temperature for at least an hour.",
+    "Using a blender, puree the mixture until smooth an even. Depending on the size of your blender, this might need to be done in batches. Cover and refrigerate for at least three hours, or leave in the fridge overnight.",
+    "Serve chilled, garnished with the basil leaves and chopped pistachios, as well as a drizzle of extra virgin olive oil."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "289.7 kcal",
+    "carbohydrateContent": "19.08 g",
+    "proteinContent": "4.65 g",
+    "fatContent": "23.21 g",
+    "saturatedFatContent": "3.14 g",
+    "sodiumContent": "11.72 mg",
+    "fiberContent": "4.77 g",
+    "sugarContent": "12.08 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 kilo ripe plum tomatoes.",
+    "▢ 250 grams sweet cherries pitted.",
+    "▢ 1 small green pepper stemmed and chopped, seeds removed.",
+    "▢ 1 cucumber peeled and chopped.",
+    "▢ ½ small red onion roughly chopped.",
+    "▢ 1 garlic clove finely sliced.",
+    "▢ ¼ cup sherry vinegar.",
+    "▢ ½ cup extra virgin olive oil.",
+    "▢ ½ cup basil leaves.",
+    "▢ ½ cup pistachios chopped."
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

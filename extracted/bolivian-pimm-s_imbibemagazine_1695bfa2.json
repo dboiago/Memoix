@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Bolivian Pimm's",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Dehydrated Lemon Slice"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake briefly. Strain into a glass over pebble ice. Top with Peychaud’s bitters and garnish with a dehydrated lemon slice if available."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Singani 63",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cantaloupe Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Queen Orange-chamomile Bitters",
+        "unit": "dashes",
+        "notes": "or orange bitters",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e48aa3ee7d156a9b5cd310ac07ccef575c05f4174d3b324495607261b340b7e0",
+    "lineage_hash": "08cc05314e6fbbe5c8ab085794a71ce813b0dc9f0057e74e0530aadde7374cdc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bolivian-pimms-cup/",
+    "fetchedAt": "2026-08-04T01:08:48.540Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bolivian-pimms-cup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

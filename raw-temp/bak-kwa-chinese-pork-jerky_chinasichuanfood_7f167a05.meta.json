@@ -1,0 +1,62 @@
+{
+  "url": "https://www.chinasichuanfood.com/bak-kwa-chinese-pork-jerky/",
+  "slug": "bak-kwa-chinese-pork-jerky_chinasichuanfood_7f167a05",
+  "title": "Bak Kwa (Chinese Pork Jerky)",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:10:49.074Z",
+  "ldName": "Baw Kwa (Chinese pork jerk)",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "400 g pork ( with 5% to 10% fat)",
+    "1/4 tsp. salt",
+    "1 tbsp. fish sauce",
+    "1 tbsp. light soy sauce",
+    "1/2 tsp. Chinese five spice powder",
+    "1/4 tsp. ground white pepper",
+    "2 tbsp. sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the pork| Cut the pork into large pieces and then place in a food blender. Add all of the marinating ingredients. Pause and blend for 20 seconds until the pork is finely minced and becomes sticky. If the pork is not sticky enough, stir the content in one directly for a while and it will become quite sticky. Cover with lid and set in fridge for at least 4 hours or overnight.",
+    "Pre-heat oven to 170 degree C.",
+    "Shaping Then place one silver paper around the ovenware and then lay the minced pork on. Cover with plastic wrap (to avoid sticky) and then roll the minced pork into a thin meat piece. (Tips about how to make the pork sheet large and thin: roll with plastic wrapper covered so the pork won’t attach to the rolling pin. Remove the extra pork on the edges and then place in the center of the sheet, repeat the process of rolling to make it as even as possibly.)",
+    "Baking  Place in the middle rack of the oven and heat for 15 minutes. Then there will be water and oil mixture in the bottom of the pan. Take it out and pour the liquid.",
+    "Brush honey on surface. Heat for another 10 minutes.",
+    "Transfer out and turn over the pork piece. This should be quite easy at this stage because the pork jerk is almost done and hardened. Brush honey on the other side and garnish some toasted sesame seeds if using. Continue heating for another 5 to 8 minutes until the pork jerk is well colored.",
+    "Cool down slightly and cut into small pieces. This pork jerky can be kept in air-tight container and fridge for 3 days."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "298 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "18 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "72 mg",
+    "sodiumContent": "672 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "8 g",
+    "unsaturatedFatContent": "12 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "400 g pork  with 5% to 10% fat",
+    "[Marinating seasoings]",
+    "1/4 tsp. salt",
+    "1 tbsp. fish sauce",
+    "1 tbsp. light soy sauce",
+    "1/2 tsp. Chinese five spice powder",
+    "1/4 tsp. ground white pepper",
+    "2 tbsp. sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

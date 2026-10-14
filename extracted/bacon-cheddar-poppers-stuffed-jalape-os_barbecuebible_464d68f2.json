@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Bacon-Cheddar Poppers (Stuffed Jalapeños)",
+    "time": "20 to 25 minutes",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the top off each jalapeño, reserving the tops, and using a pepper corer or a small paring knife, carefully remove the seed core from each pepper. Arrange upright in the chile roasting rack. (If you do not own a chile roasting rack, slice each jalapeño in half lengthwise through the stem and scrape out the seed core using a paring knife or a teaspoon.)",
+      "In a small mixing bowl, combine the herbed cream cheese and the cheddar cheese. Stir in the bacon. Fill each pepper with the mixture using a small spoon or fork. Replace the tops.",
+      "Set up your grill for indirect grilling and preheat to medium. Put the rack with the chile peppers on the grill grate away from the heat, or brush and oil the grill grate, then lay the chile pepper halves directly on the grill grate away from the heat. Toss the wood chips (if using) on the coals. Roast until the filling is bubbling and the chiles are tender, 20 to 25 minutes. Let cool for 5 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Medium-size Jalapeño Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herbed Cream Cheese",
+        "unit": "oz",
+        "notes": "alt: goat cheese, at room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "cooked and crumbled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2873f2543314800513f6ec886c701b5398831fa4b9c15a55eefd59c9e7af39a7",
+    "lineage_hash": "230cc2ac921ed10b500c59c70d788f172159b9f1d8f5c1b08178b352cae1e082"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-cheddar-poppers-stuffed-jalapenos/",
+    "fetchedAt": "2026-08-03T03:58:48.110Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-cheddar-poppers-stuffed-jalapenos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

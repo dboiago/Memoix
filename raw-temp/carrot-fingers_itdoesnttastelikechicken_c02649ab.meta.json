@@ -1,0 +1,62 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/carrot-fingers/",
+  "slug": "carrot-fingers_itdoesnttastelikechicken_c02649ab",
+  "title": "Carrot Fingers",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T00:07:52.742Z",
+  "ldName": "Carrot Fingers",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Main Course, Snack",
+  "ldKeywords": "carrot fingers, easy vegan dinner recipes kid friendly, vegan chicken fingers, vegan fish fingers, vegan kid-friendly recipe",
+  "ldIngredientsRaw": [
+    "4 - 6  medium carrots, (peeled and cut into fingers *see instructions)",
+    "1/2 cup all-purpose flour (or all-purpose gluten-free flour blend)",
+    "3/4 cup warm water",
+    "2 tablespoons ground chia or ground flax",
+    "1 tablespoons maple syrup or agave",
+    "4 cups corn flakes cereal",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon onion powder",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "OVEN: Preheat your oven to 375F (190C). Line a baking sheet with parchment paper.AIR FRYER: Preheat your air fryer to 350F (180C).",
+    "Grab three medium bowls. Bowl 1: add the flour. Bowl 2: mix together the water, chia, and maple syrup. Bowl 3: add the corn flakes, garlic powder, onion powder, and salt to a food processor. Pulse several times until broken down, but there is still some texture. Pour the corn flake mixture into the last bowl.",
+    "Peel the carrots and cut them into finger sized pieces so that all of the carrot sticks are roughly the same size. Take a handful of carrot sticks at a time and drop them in the flour and toss to coat. Next drop them in the chia mixture and toss to coat. Finally, toss them in the corn flake mixture. Lay them on the parchment paper lined baking sheet so that they aren't touching. Repeat with all of the carrots until you have used up all of your ingredients.",
+    "OVEN: Bake 25 - 30 minutes, until golden brown and crusty, and the carrots are cooked. You can test doneness by piercing a carrot with a knife to see if it&#39;s tender all the way through. Serve the carrot fingers with whatever sauce you desire.AIR FRYER: Air fry 20 - 24 minutes, stopping to gently turn the carrot fries halfway through, until golden brown and crusty, and the carrots are cooked. You can test doneness by piercing a carrot with a knife to see if it&#39;s tender all the way through.Serve the carrot fingers with whatever sauce you desire such as ketchup, Vegan Blue Cheese Dip, Cashew Caesar Dressing."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "232 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "5 g",
+    "fatContent": "2 g",
+    "sodiumContent": "551 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "9 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 - 6 medium carrots,, peeled and cut into fingers *see instructions",
+    "[Bowl 1]",
+    "▢ ½ cup all-purpose flour, or all-purpose gluten-free flour blend",
+    "[Bowl 2]",
+    "▢ ¾ cup warm water",
+    "▢ 2 tablespoons ground chia or ground flax",
+    "▢ 1 tablespoons maple syrup or agave",
+    "[Bowl 3]",
+    "▢ 4 cups corn flakes cereal",
+    "▢ ½ teaspoon garlic powder",
+    "▢ ½ teaspoon onion powder",
+    "▢ ½ teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

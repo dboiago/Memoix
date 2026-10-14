@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Chocolate Brioche des Rois",
+    "time": "3 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate Brioche des Rois recipe, make sure you have organised all the necessary ingredients.",
+      "In a bowl, dilute the yeast in warm milk.",
+      "Combine the flour, salt and sugar in a large bowl.",
+      "Shape the mixture into fountain and pour the diluted yeast in the centre...",
+      "... the whole eggs...",
+      "... the orange blossom water...",
+      "... and the rum.",
+      "Knead with an electric whisk or stand mixer, gradually adding the flour. Then whisk at high speed until the dough comes away from the bowl.",
+      "Add the soft butter, cut into cubes...",
+      "... and continue kneading for a few minutes.",
+      "Scrape the dough that is stuck on the sides of the bowl.",
+      "Cover the bowl with a tea towel and leave to prove at a temperature of at least 20°C for about 1.5 hours.",
+      "When the dough has doubled in volume...",
+      "... add the lemon zest...",
+      "... and the chocolate chips.",
+      "Combine well.",
+      "On a baking sheet, shape the dough into a ball. Shape a hole in the centre of the ball, then stretch the dough to create a ring. Don't forget to bury a trinket from the underside of the dough.",
+      "Let the dough rise for about 1 hour, until doubled in volume.",
+      "Glaze the surface of the cake with a beaten egg yolk.",
+      "Bake for 35 minutes...",
+      "... until the cake is a nice golden brown.",
+      "Let cool, then apply clear glaze on the surface...",
+      "... and sprinkle dark chocolate Crispearls...",
+      "... all around the cake.\nBon appétit!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs + 1 Yolk",
+        "unit": null,
+        "notes": "for the glaze",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Blossom Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Glaze",
+        "unit": "g",
+        "notes": "alt: apricot jam",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Crispearls",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6f422c6ced647a4400475887161c4a8e376a5ebf0e96365df385c450bc09572",
+    "lineage_hash": "f9f1129eaa410b4ae9af4e70509e6ba03058a72e97680afa829b8c4447988c46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/brioche-des-rois-chocolate-king-cake.html",
+    "fetchedAt": "2026-08-02T10:26:08.129Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/brioche-des-rois-chocolate-king-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

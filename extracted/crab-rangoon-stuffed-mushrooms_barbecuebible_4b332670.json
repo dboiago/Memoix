@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crab Rangoon Stuffed Mushrooms",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine crab meat, softened cream cheese, soy sauce, green onions, lemon zest, and toasted panko. Mix until well blended.",
+      "Chill the filling in the fridge while you prepare the mushrooms and grill.",
+      "Gently clean mushrooms and remove stems. Set aside.",
+      "Slice wonton wrappers into strips or leave whole.",
+      "Fry in hot oil until golden and crispy. Drain on paper towels and set aside to cool. These will be crushed and used as a crunchy topping.",
+      "Prepare your grill for indirect grilling at medium-high heat (about 375–400°F).",
+      "Place 1–2 wood chunks in the smoker box if using.",
+      "Spoon the chilled crab Rangoon mixture into each mushroom cap.",
+      "Place the mushrooms on the Oscarware perforated grill topper. (Tip: Add the food to the topper before placing it on the grill to prevent sticking.)",
+      "Use the grill topper to transfer the mushrooms to the grill.",
+      "Grill indirectly (cool side of the grill) with the lid closed for 20 minutes.",
+      "Move the mushrooms over direct heat for the last 5 minutes to finish with a slight char.",
+      "Remove the grill topper from the grill (it doubles as a serving tray).",
+      "Top each mushroom with crushed wonton wrappers, more sliced green onion, and a drizzle of Thai chili sauce.",
+      "Serve warm as an appetizer or side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lump Crab Meat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "softened",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "plus more for garnish, thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Panko Breadcrumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portobello Mushrooms",
+        "unit": "small",
+        "notes": "stems removed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wonton Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Sauce",
+        "unit": null,
+        "notes": "for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Chunks for Smoke (e.g., Cherry or Oak)",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f020514a6fc03cb0034216b7866a864ed49f7eca764342bcc09ee16b6bdb54ea",
+    "lineage_hash": "d37c02819cbf32bb1909a9cf4bf73c253a8d1abf75dd7a9cc68945e50db01a62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/crab-rangoon-stuffed-mushrooms/",
+    "fetchedAt": "2026-08-03T10:02:12.891Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/crab-rangoon-stuffed-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

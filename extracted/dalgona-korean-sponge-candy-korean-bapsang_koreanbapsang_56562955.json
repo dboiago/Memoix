@@ -1,0 +1,58 @@
+{
+  "recipe": {
+    "name": "Dalgona (Korean Sponge Candy)",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gather all the ingredients and tools before starting.",
+      "Add 1.5 tablespoons of sugar to the ladle. Hold the ladle over low to medium low heat. When the sugar starts to melt around the edges, stir with a chopstick.",
+      "Continue to stir constantly, controlling the heat. If it starts to smoke, raise the ladle a few inches above the heat, and lower it closer once it cools off a little. Repeat as necessary until the sugar completely melts without any lumps, but let it cool off a little before adding the baking soda.",
+      "Holding the ladle away from the heat, stir in the baking soda.",
+      "Stir quickly and vigorously (20 to 25 times) until the baking soda is completely dissolved and the frothy mixture turns light caramel-color. While stirring, you can bring the ladle closer to the heat for a short second or two to keep it warm, but don’t let it puff up too long. It will burn at the bottom",
+      "Pour the mixture onto a non-stick baking sheet, skillet, or parchment paper, scraping with a rubber spatula. Place the tip of the optional lollipop stick into the mixture.",
+      "Let it cool for 15 to 20 seconds. Then, lightly tap it to see if it doesn't stick, and then press it all the way (for 4 to 5 seconds) to the desired thickness. This helps prevent the dalgona from sticking to the press.",
+      "Immediately, stamp it with a cookie cutter, firmly but not all the way through. Promptly remove the cutter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "white or brown",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": "about 2 to 3 small pinches",
+        "amount": "1/16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "23cc2a54e8d44736f6ede1000507eb4d7da056c10cd60ac8f02ea3bdf9e20f1b",
+    "lineage_hash": "174fba4414ac09bd48b2ef843102fcb7435ca68d1701d66bdf77a3f2668edd36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dalgona-spongy-candy/",
+    "fetchedAt": "2026-08-01T22:11:14.824Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dalgona-spongy-candy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

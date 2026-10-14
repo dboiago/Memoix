@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Classic Sbrisolona (Crumble Cake)",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Learn how to make the classic sbrisolona recipe, a typical dessert of Mantua that has been prepared by farmers in the area as far back as the sixteenth centuryFor the classicsbrisolona recipe, process 1/3 cup of almonds along with the hazelnuts and sugar, but not too finely.|Mix the cornmeal on a work surface along with a pinch of salt, then add the chopped butter and sugar-nut mixture.|Mix the ingredients with your fingertips without ever fully pressing the dough, which should be very crumbly.|Add the Italian 00 flour to the dough and continue to work it with your fingertips until the mixture is even more crumbly and dry - almost sandy.|Add the wine, a little at a time.|Continue to mix it, adding a touch of wine and each time working the dough to keep that dry and crumbly,",
+      "yet wet, consistency.|Lined a baking sheet with parchment paper and place two greased and floured ring cake molds (ø 7 in.), or 2 classic cake pans lined with parchment paper, on top. Spread the crumbly dough inside the rings or cake pans,",
+      "letting it fall from your hands and forming a layer just over half an inch thick.|Decorate the cake with the rest of the almonds, whole or sliced, then sprinkle with a spoonful of sugar.|Bake at 350 °F for 30 minutes, until the surface is golden. Remove from the oven, let cool, then remove them from the pans and serve, breaking it with your hands."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornmeal",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3330a2f64bdd492a21b6528f6c48086b98b19a469301060069f760671c8fd3a4",
+    "lineage_hash": "4dfc920dadbe7a432957ae83d922154614652c3ff6af18944be32cbc4c2544f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/classic-sbrisolona-crumble-cake",
+    "fetchedAt": "2026-08-02T19:18:20.330Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/classic-sbrisolona-crumble-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

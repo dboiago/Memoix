@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Dutch Orange Cup",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Collins",
+    "garnish": [
+      "Lemon and Orange Slice Wheels",
+      "Strawberry Slices",
+      "Mint Sprigs",
+      "Borage Flowers"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "237",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of lemon and orange slice wheels, strawberry slices and mint sprigs (and borage flowers when in season).",
+      "POUR all ingredients into chilled glass half filled with ice.",
+      "Add an orange slice and a couple of mint leaves from the garnish, then FILL to the brim with more ice.",
+      "Garnish with fruit and mint sprigs (and borage)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Ale",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7866dd5cfdc6a9bc88771a5f5f5bfa83fcf8215784ab56d09c0c1964b4141c3",
+    "lineage_hash": "22135492f69435dba20f832b38dca4d100d58483019735ae37afb52a0a6e3a5a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4373/dutch-orange-cup",
+    "fetchedAt": "2026-08-03T13:26:38.415Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4373/dutch-orange-cup",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

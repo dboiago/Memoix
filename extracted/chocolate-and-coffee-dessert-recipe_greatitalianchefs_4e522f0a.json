@@ -1,0 +1,332 @@
+{
+  "recipe": {
+    "name": "Chocolate and Coffee Dessert",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the white chocolate cream, add 100g of the cream to a pan, bring to 40°C and add the coffee beans. Leave to rest at 4°C for 24 hours",
+      "Pass the cream through a sieve into a pan and bring to 40°C. Meanwhile, whisk the egg and sugar together in a bowl",
+      "Melt the chocolate over a bain marie to 40°C, then add to the coffee-infused cream. Half whip the remaining cream to soft peaks",
+      "Dissolve the gelatine over a bain marie, then add the chocolate emulsion, whisked egg yolk and the semi-whipped cream (in this order).\r\nStir until combined then refrigerate before using",
+      "To make the white 'popcorn' with coffee, add the milk, cream and sugar to a pan and bring to 45°C. Add the coffee beans, cover with cling film and leave to rest at 4°C for 24 hours",
+      "After this time, pass through a sieve and pour into a siphon charged with 2 N20 cartridges. Place in the fridge to chill overnight",
+      "To make the 'prints', melt the chocolate in a bain marie to 35°C. Add the remaining ingredients and temper to 26°C",
+      "Pour into the moulds and leave to crystallise at 16°C for 6 hours",
+      "For the dark chocolate and coffee cream, bring the coffee and cream to the boil in a pan. In a separate bowl, mix together the egg yolk, sugar, corn flour and coffee powder",
+      "Pour the egg yolk mixture into the the coffee cream and bring to the boil, stirring constantly. Add to a food processor with the milk chocolate, dark chocolate and butter and blend until you obtain a smooth and consistent cream. Leave to rest for 12 hours at 4°C before using",
+      "For the buckwheat crumble, add the butter, brown sugar and salt to a stand mixer fitted with a dough hook. Mix on a medium speed until well combined and creamy in texture",
+      "Combine all of the different flours, cocoa powder and coffee and add to the creamed butter and sugar. Mix on a low speed until just combined, but do not over-mix. The mix should resemble large breadcrumbs",
+      "Spread onto a baking tray and bake in the oven for 20 minutes. Remove, allow to cool then pulse lightly in a food mixer to achieve a medium to small crumble. Store in an airtight container until required",
+      "For the caramelised hazelnuts, add the sugar and water to a pan and bring to 121°C",
+      "Add the hazelnuts – the sugar will crystallise, becoming opaque and granular. Melt again until caramelised and place on a tray lined with parchment paper to set",
+      "Just before serving, prepare the 'popcorn'. Siphon the white popcorn mixture into a bowl and pour over 2L of liquid nitrogen and mix to form light frozen granita like pieces",
+      "Start plating by piping on the dark chocolate cream in a spiral shape, followed by a spoonful of the buckwheat crumble. De-mould the footprints and arrange 4 over each plate",
+      "Lastly, add a large spoonful of the white popcorn, some caramelised hazelnuts and piped dots of the white coffee cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "45% fat",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "g",
+        "notes": "finely blended",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": "soaked in cold water",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "40% fat",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Paste",
+        "unit": "g",
+        "notes": "100%",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "g",
+        "notes": "finely blended",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "35% fat",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Powder",
+        "unit": "g",
+        "notes": "finely blended",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "38%",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70%",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "weak",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Buckwheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "bitter",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "g",
+        "notes": "finely blended",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b80f203aa7033a8e65df554111ab35478e30091fa9fa41d568f1dadc0c82fc4d",
+    "lineage_hash": "c4e9531d8ffabedccc2b861b114e6818a9b56a7348acfb387a0ae613c38f0ee9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chocolate-and-coffee-dessert-recipe",
+    "fetchedAt": "2026-08-02T02:31:08.534Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chocolate-and-coffee-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

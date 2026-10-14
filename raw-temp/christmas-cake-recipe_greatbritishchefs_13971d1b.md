@@ -1,0 +1,9 @@
+With only just under six weeks to go until the Big Day, that’s Christmas Day, now is the time to make your Christmas Cake! I make mine anytime between the end of October and Mid November, in an attempt to get it ‘fed’ with [brandy](https://www.greatbritishchefs.com/ingredients/brandy-recipes) in time, which results in a moist, rich and fruity [cake](https://www.greatbritishchefs.com/collections/cake-recipes) that all my family (and friends) love.
+
+This cake is unashamedly simple, insofar as it us a very traditional cake that has been made by my mum and her mum before her, for decades – it’s got all the ingredients you need for a luxurious cake such as mixed dried fruit, eggs, butter, mixed peel, plump [cherries](https://www.greatbritishchefs.com/ingredients/cherry-recipes), ground [almonds](https://www.greatbritishchefs.com/ingredients/almond-recipes) and a slosh of brandy, and is a fruity cake with a light texture, rather than a close, almost rubbery texture that some rich fruit cakes can have.
+
+You need to start the cake the night before you intend to bake it, as the dried fruit needs to be plumped up with a soaking of brandy, which is essential, of course! The next task is to make a baking paper liner for your cake tin, which not only acts as a paper cover for the cake after it is baked, but also protects it from becoming over-brown and burnt as it bakes for nearly 4 hours.[](https://www.greatbritishchefs.com/ingredients/almond-recipes)
+
+If you follow my easy step-by-step instructions below, you will be rewarded with a delicious, fruity and moist cake that will be the star of the Christmas tea time table! Please pop back in 3 to 4 weeks, when I will then be showing you how to make marzipan and Royal icing, and how to decorate your cake in suitable festive attire!
+
+_For this recipe you will need baking paper and a loose-bottomed 23cm round cake tin or a 20.5cm square cake tin._

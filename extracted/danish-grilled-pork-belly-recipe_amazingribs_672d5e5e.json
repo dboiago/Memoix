@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Danish Grilled Pork Belly",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. For the pork and potatoes, stash your piece of pork belly in the freezer for about 15 minutes. This will help firm it up and make it easier to slice the raw belly. Slice the firm belly into pieces about 1/2” (13mm) thick and season with a sprinkle of salt on one side.",
+      "Scrub the potatoes.",
+      "Fire up. Pre-heat your grill for two zone cooking by placing a chimney full of pre-heated charcoal briquets on one side of the grill’s charcoal grate in order to create direct and indirect cooking zones. Adjust the grill vents to bring the temperature to about 350°F (167°C) on the indirect side. On a gas grill, adjust the temperature knobs so that one half of the grill is off and the other half is heated enough to maintain a temperature of approximately 350°F (167°C) on the indirect side.",
+      "Cook. Add the potatoes to a shallow metal pan or disposable pan and place below the grates on the indirect side. Alternatively, if your grill has a top rack place the pan of potatoes on the grill grate under the top rack.",
+      "Lay the slices of bacon and pork belly on the grate above the pan. You can also place the bacon and pork belly upright in a slotted rack if you have one (as shown in the photo). While the meat cooks, the fat will drip on to the potatoes below, basting and flavoring them with fat and salt. Close the lid on the grill and let everything cook slowly until the meat is crisp on the edges and the potatoes are tender, 30 to 45 minutes. If the meat is crisp long before the potatoes are tender, remove the meat to avoid over cooking, and continue to cook the potatoes until tender.",
+      "For the sauce, melt the butter in a small saucepan over low heat and then stir in the flour to form what’s called a roux. Stir the mixture over low heat until it is light tan-brown in color, 2 to 3 minutes.",
+      "Whisk in the cream (or milk) and continue to whisk over low heat to remove any lumps.",
+      "Raise the heat to medium, cooking and stirring until the sauce simmers and thickens, 4 to 5 minutes. Stir in the lemon juice and parsley, adding salt and pepper to your taste.",
+      "Serve. Plate the potatoes with some slices of crisp bacon and pork belly, and ladle on a bit of the cream sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Cut Bacon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fingerling",
+        "unit": "lb",
+        "notes": "alt: new potatoes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "alt: milk",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90d3296c793d291888be2d998d3fa3ac0ff747798126214ceeabff62e01b448d",
+    "lineage_hash": "6af07de3d65abc022de66e33b171e04a4e1c8f13b104c65e23550af8a825c4e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-recipes/enjoy-pork-belly-two-ways/",
+    "fetchedAt": "2026-08-02T11:11:40.740Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-recipes/enjoy-pork-belly-two-ways/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

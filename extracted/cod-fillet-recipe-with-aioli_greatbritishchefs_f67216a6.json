@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Cod Fillet With Aioli",
+    "time": "1 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the aioli sauce, bake the potato in the oven until cooked through",
+      "Meanwhile, start on the stock. Fill a large saucepan up with the 1.5 litres of mineral water and place the vegetable trimmings (fennel tops, carrot peel, celery peel) into the pan",
+      "Rinse the fish trimmings and bones under cold water and add to the pan with the herbs, black peppercorns, salt, halved onion, leek and 1 1/2 of the garlic heads, sliced open. Cover the pan and simmer on a very low heat",
+      "After 20 minutes, strain the stock into a clean pan and cook each vegetable one by one in the stock until tender. Set aside the vegetables once cooked, leaving the stock to simmer",
+      "To prepare the cod, slice the cod into four chunks. Sprinkle a tray with coarse salt and lay the fish on top, sprinkle with more salt to cover the fish. Place in the fridge for half an hour",
+      "Remove the potato from the oven and scoop out the flesh. Place the 1/2 a head of garlic in a pestle and mash with a mortar. Add the flesh of the potato, 2 tablespoons of the stock and the egg yolk. Continue to crush the mix with the mortar until smooth",
+      "Once smooth, start to incorporate the olive oil incrementally, like you would do for a mayonnaise. Season to taste and set aside",
+      "Rinse the salt from the cod and poach in the stock on a very gentle simmer. Add all of the vegetables into the broth to warm through after 5 minutes of cooking",
+      "Arrange the cod and vegetables between plates with hard boiled egg halves, drizzle with the aioli sauce and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": null,
+        "notes": "weighing 600g, with trimmings and bones kept",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Potato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mineral Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "sliced into 8 wedges with tops removed for stock",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and sliced into thick chunks, peel set aside for stock",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": "ends trimmed",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "head",
+        "notes": "cut into large florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "sliced into thick chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "peeled and sliced into thick chunks, peel set aside for stock",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "heads",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard boiled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34260a70a33b568c7a7d7828b5ba54934aee6fea899e00fd612bcb94e6585e34",
+    "lineage_hash": "4c97eb1015a0ce0075ac826d13f6180ac827d0996d18c5a1f38db6d8b36a1664"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-fillet-recipe-aioli",
+    "fetchedAt": "2026-08-03T22:19:23.888Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-fillet-recipe-aioli",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

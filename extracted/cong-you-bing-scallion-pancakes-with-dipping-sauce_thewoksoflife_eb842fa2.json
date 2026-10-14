@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Cong You Bing Scallion Pancakes",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "249",
+      "carbohydrateContent": "37",
+      "fatContent": "8",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "In a mixing bowl, add the flour and hot water and stir until it forms a dough.",
+      "On a floured surface, knead the dough for five minutes until smooth. Place back in the bowl, cover with plastic wrap or a clean towel, and allow it to rest for 30 minutes. While the dough is resting, you can slice your scallions and assemble the dipping sauce.",
+      "After those thirty minutes are up, cut your dough into three equal pieces. Take a rolling pin and roll each piece into a seven-inch circle. Each time you roll, pick up the dough and turn it a quarter-turn to the left (or the right...we’re not picky). This gives you a perfect circle every time, and prevents the dough from sticking to the board.",
+      "Brush each circle with some oil, and sprinkle with salt and scallions. Roll the dough into a cigar shape. Then coil that around itself like a snail. Then roll that out into a pancake about six inches in diameter (you don’t want it to be too thin).",
+      "Sprinkle with sesame seeds and press them lightly into the dough. Repeat this process with the other two pieces of dough.",
+      "Heat a nonstick pan or cast iron skillet with about a tablespoon of oil. Fry each pancake, about 3 minutes per side, until golden brown. Cut into wedges and serve with your dipping sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "PANCAKES",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely minced",
+        "amount": "1",
+        "section": "SAUCE",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "SAUCE",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c42818ee01003e6503d4f01c47f7714de54e3eba29534f994066de118b227469",
+    "lineage_hash": "5f3ec8b9794d8315fb57c33ee5f951967920c64146b3b857cd7b41aa0774a30e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/scallion-pancakes-with-garlic-soy-dipping-sauce/",
+    "fetchedAt": "2026-08-02T04:02:18.250Z"
+  },
+  "rawSource": "https://thewoksoflife.com/scallion-pancakes-with-garlic-soy-dipping-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

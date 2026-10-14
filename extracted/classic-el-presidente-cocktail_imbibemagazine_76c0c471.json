@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "El Presidente",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Thinly Cut Orange Peel",
+      "Cherry"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients well with cracked ice and strain into a chilled glass. Twist a swatch of thinly cut orange peel over the top and drop in or discard. Garnish, if desired, with a cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rich White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dolin Vermouth Blanc",
+        "unit": "oz",
+        "notes": "Martini & Rossi or Cinzano Bianco are fine substitutes",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Orange Curaçao",
+        "unit": null,
+        "notes": "or Grand Marnier",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Real Grenadine",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": null,
+        "notes": "thinly cut",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "510ea4c04da0fb45b25ee9701e9d5756d9e00de66a08e17c5138deee21b3e2d1",
+    "lineage_hash": "c44e39ec85a60929ace0836896a2fc4f007f6e797a3652d514b135024d681de7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/el-presidente/",
+    "fetchedAt": "2026-08-03T19:51:43.932Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/el-presidente/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

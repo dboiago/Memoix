@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chinese Mushroom Chicken Stir Fry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "408",
+      "carbohydrateContent": "13.7",
+      "fatContent": "13.4",
+      "proteinContent": "56.6"
+    },
+    "directions": [
+      "Combine chicken and all the marinade ingredients in a big bowl. Stir to mix well. Let marinate for 15 minutes while preparing the other ingredients.",
+      "Combine all the sauce ingredients in a medium-sized bowl. Stir to mix well.",
+      "Heat oil in a large skillet over medium-high heat until hot. Spread the chicken in the skillet in a single layer. Sear until the bottom turns golden without moving it, 1 minute or so. Stir and flip to cook the other side, until it turns golden, another minute or so. Transfer the cooked chicken pieces to a big plate and set aside.",
+      "Pour in the remaining 1 tablespoon oil and add the garlic, ginger, and the white part of the green onion. Stir a few times to release fragrance.",
+      "Add the bamboo shoots. Stir and cook for 1 minute.",
+      "Add the mushrooms. Cook and stir until the mushrooms are cooked through and the liquid has evaporated. Drizzle with a bit more oil if the pan looks dry.",
+      "Stir the sauce again to thoroughly dissolve the cornstarch and pour it into the pan. Stir a few times until the sauce thickens.",
+      "Add the chicken back into the skillet. Stir to coat everything well with the sauce. Add the green part of the green onion for garnish. Transfer everything to a big plate. Serve hot over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast (or Thighs)",
+        "unit": "oz",
+        "notes": "about 1 chicken breast or 2 thighs, boneless, skinless, sliced to 1/4” (5mm) thickness",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2-3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "lb",
+        "notes": "white or baby portabella",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Shoots",
+        "unit": "C",
+        "notes": "sliced, drained",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5c00a27added457626f6927b5e4a67b553080c45b0e8292fbeb46dde753e998",
+    "lineage_hash": "4f84302f14a4055f78bb21dca3ae27519b46eb65c5a94ceb3336a108454ca64d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-mushroom-chicken/",
+    "fetchedAt": "2026-08-02T05:02:39.089Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-mushroom-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

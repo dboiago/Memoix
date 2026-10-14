@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Black Mountain Coffee: A Cold-Brew Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build the ingredients in a snifter. Add crushed ice and stir briefly to mix and chill. Insert a sturdy straw (preferably metal) into the glass. Vigorously shake a bottle of salted-cinnamon cream for 5 seconds to whip it, then slowly float 1 oz. on top of the cocktail until it reaches a 1/4-inch from the top. Add more crushed ice on top. Garnish.",
+      "Salted-Cinnamon Cream\nAdd all of the ingredients to a small bowl or container. Add the ground cinnamon slowly between whisking in each ingredient. Whisk together thoroughly for 30 seconds. Pour into a 375ml bottle so that there is empty space in the bottle to be able to properly whip the cream when shaking it. Keep refrigerated between uses.",
+      "Himalayan Salt Tincture\nMix 1 part extra-fine-grain Himalayan salt into 5 parts water and 5 parts vodka."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": "Roosevelt Room uses Tullamore D.E.W.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Liqueur",
+        "unit": "oz",
+        "notes": "Roosevelt Room uses Nux Alpina",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Giffard Banane Du Bresil",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted-cinnamon Cream",
+        "unit": "oz",
+        "notes": "float",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Himalayan Salt Tincture",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0124d0de8f8df376aaccc5936e89a37a73e2aefda079e57d911c50d98d9bed7c",
+    "lineage_hash": "9e9c80a553f44f22d63f740808150031c85264c6e62f4248e141590d5ab28794"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-mountain-coffee-cold-brew-cocktail/",
+    "fetchedAt": "2026-08-03T21:15:00.973Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-mountain-coffee-cold-brew-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

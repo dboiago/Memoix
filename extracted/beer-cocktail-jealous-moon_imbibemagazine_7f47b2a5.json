@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Jealous Moon",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [],
+    "subcategory": "Beer",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the beer in a shaker and shake with ice to chill. Strain into a snifter filled with large ice cubes. Top with beer; garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro Cia Ciaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fernet-branca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pale Ale",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f56c9269fcc9b821870ef54da76f813250dce3652edc99aa17b304504db55bdc",
+    "lineage_hash": "15477cbc39d7d6f7c4e2beda66ff214449ec44c2c42751393c505445175d1542"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-cocktail-jealous-moon/",
+    "fetchedAt": "2026-08-03T20:09:43.544Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-cocktail-jealous-moon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

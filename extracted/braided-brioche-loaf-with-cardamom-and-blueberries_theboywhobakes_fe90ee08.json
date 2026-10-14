@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Braided Brioche Loaf with Cardamom and Blueberries",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, sugar, salt and yeast into the bowl of your Wilfa ProBaker. Mix together briefly just to distribute.",
+      "Pour in the milk and eggs and, on medium speed with the dough hook attached, mix together until a shaggy dough is formed.",
+      "Knead the dough on medium speed for about 10 minutes or until the dough is smooth, elastic and no longer sticking to the bottom or sides of the bowl.",
+      "With the mixer still running add the butter and knead until it has disappeared into the dough.",
+      "Continue kneading until the dough is smooth, silky and once again no longer sticking to the sides and bottom of the bowl.",
+      "To test that the dough has finished kneading, stretch a little of the dough and if you can stretch it, without it tearing, so that its paper thin and you can almost see through it, then it is ready.",
+      "Scrape the dough out of the bowl and shape into a ball. Place the dough into a rectangular Tupperware container that has been lightly greased and is at least double the size of the dough, to allow for the rising of the dough. Seal the container and refrigerate overnight.",
+      "The following day make the frangipane by beating the butter and sugar together until light and fluffy.",
+      "Add the egg and beat to combine.",
+      "Bash the cardamom pods in a pestle and mortar, discarding the pod and grinding the seeds into a powder.",
+      "Add the cardamom, vanilla and flour to the bowl and beat until a smooth almond cream is formed. Scrape into a piping bag and set aside.",
+      "For the blueberry filling mix together the fresh blueberries and the jam and set aside.",
+      "Remove the dough from the fridge and tip out onto a lightly floured worksurface. Use your hands to deflate, trying to keep the dough in a neat rectangle, and then roll out the dough into a rectangle that is about 30x45cm.",
+      "Transfer the dough to a large sheet of parchment paper the same size as your large baking tray.",
+      "Use a knife to score the dough, dividing it into three equal 10cm wide rectangles, along the long length of the dough.",
+      "Use your knife to cut out the corners of the rectangle (these pieces should be 6x10cm). You should now be left with a large strip of dough with two slightly smaller strips attached along the sides.",
+      "Using your knife cut the two shorter lengths of dough into horizontal strips, keeping them attached to the central column.",
+      "Spread the blueberry filling across the central strip of dough, leaving the two ends clear.",
+      "Snip the end off the piping bag and pipe the frangipane evenly over the blueberry filling.",
+      "Fold the two ends of the brioche over the filling and then braid the strips, alternating left and right over the filling to create a simple braided effect.",
+      "Because the braiding is done at a slight angle the last two stands of dough can be tucked under the loaf to finish the braiding in a neat fashion.",
+      "Cover the loaf and set it aside until it has risen and is puffy.",
+      "Oil or flour a finger and give the dough a firm and assertive poke, if the dough springs back quickly and fully it is telling you it needs more time, if it springs back slowly and not all the way its telling you it is ready for the oven.",
+      "When the brioche is almost done rising preheat the oven to 180ºC (160ºC Fan).",
+      "Brush the loaf with a beaten egg and sprinkle liberally with flaked almonds and pearl sugar.",
+      "Bake in the preheated oven for 30-35 minutes or until the brioche is a rich golden brown.",
+      "Remove the baking tray from the oven and allow the brioche to cool fully before cutting into it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strong White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Fast Action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature, diced",
+        "amount": "100",
+        "section": "Brioche",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature, diced",
+        "amount": "50",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Frangipane",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Blueberry Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry Jam",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "Blueberry Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7fd38da8e2af79153e3e5684ebf2262e0a1a94f4f87219886d824784e096d81f",
+    "lineage_hash": "09f9e67382f94d47621574364772de71b8744ef74fb14423319ed5c1f440fc0b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/11/10/braided-brioche-loaf-with-cardamom-and-blueberries",
+    "fetchedAt": "2026-08-01T16:10:15.891Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/11/10/braided-brioche-loaf-with-cardamom-and-blueberries",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Butter Garlic Crab",
+    "time": "10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a heavy-based saucepan over a medium heat and add a few tablespoons of water. Add the butter and stir until it melts and forms an emulsion",
+      "Add the garlic, green chillies and black pepper and cook for a few seconds before adding the white and brown crab meat. Cover and cook for 5 minutes, until the crab has absorbed most of the liquid and the consistency is creamy and smooth",
+      "Remove the pan from the heat, finish with the lime juice and coriander and season to taste with salt. Spoon into a bowl and serve with the papads or bread, dusted with the nori powder (if using)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": null,
+        "notes": "or papads, for dipping",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nori Sheet",
+        "unit": null,
+        "notes": "optional, blitzed to a powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67455ec97be7d04904cfb28b6d9da8c107f192770721b86abc3be1fe149a693f",
+    "lineage_hash": "46a12404d695df5009518ea58af12817181dcdfa849728242630663a6b0bd66f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butter-garlic-crab-recipe",
+    "fetchedAt": "2026-08-03T02:46:22.259Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butter-garlic-crab-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

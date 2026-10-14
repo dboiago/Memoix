@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Custard Tart with Poached Rhubarb",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 150°C/gas mark 2. Pour the cream, milk and vanilla extract into a saucepan, then split the vanilla pod lengthways and scrape out the seeds into the pan. Throw the pod in too. Place over a low heat and gently bring to the boil",
+      "Meanwhile, pour the egg yolks and sugar into a mixing bowl and whisk until pale and frothy. Once the cream has come to the boil, remove it from the heat and very slowly pour it into the egg yolks, whisking constantly",
+      "Brush the tart case all over with beaten egg, then place it on a baking tray and onto the middle shelf of the oven. With the oven door still open, pour the filling mixture through a fine sieve directly into the tart case until it is full to the brim. Bake for 35-45 minutes, until set but with a slight wobble in the middle",
+      "While the tart bakes, place the rhubarb in a baking dish and sprinkle with the sugar and around 120ml of water. Add to the oven and cook for 10-12 minutes, or until tender, then remove and set aside to cool",
+      "Leave the tart to cool completely, then slice and serve with the rhubarb on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pre-baked Tart Case",
+        "unit": null,
+        "notes": "12 inches in diameter",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ea1256ae5fc83270c8d760b89c2b4f86954226cc6f3af5328b29dd1d441924e",
+    "lineage_hash": "922b718e1e30520c689b43773b4809a195c1a9ca9ee24ca9192e522c68eb891b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/custard-tart-rhubarb-recipe",
+    "fetchedAt": "2026-08-02T22:50:12.072Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/custard-tart-rhubarb-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

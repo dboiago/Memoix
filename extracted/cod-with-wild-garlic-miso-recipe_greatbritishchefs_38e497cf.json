@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Cod with Wild Garlic Miso",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the cod fillet in a dish or baking tray and sprinkle over the rock salt to cover. Leave to salt for 7 minutes",
+      "Meanwhile, place the miso, wild garlic leaves and water in a blender and blitz together until smooth. Gradually add the oil while continuing to blend and allow the mixture to emulsify (as if making a mayonnaise). When fully combined, season to taste with a little lemon juice and salt",
+      "After 7 minutes rinse the salt from the cod under cold water and pat the fish dry with kitchen paper. Cut into 4 equal portions and set aside",
+      "If using a barbecue, preheat to high. Alternatively, a hot griddle pan can be used",
+      "To cook the cod, place the butter in a pan and cook over a high heat to create a brown butter (beurre noisette). As soon as the butter starts to foam and is lightly golden with a nutty aroma, remove from the heat and cool quickly to stop it from burning",
+      "Pour the butter into a wide pan (large enough to fit all 4 pieces of cod) and warm through gently to 60°C. Add the cod and gently poach for 5 minutes on each side, being careful to keep the temperature low",
+      "While poaching, barbecue or griddle the asparagus spears for 2 minutes until tender, turning regularly. Thinly slice the cooked spears into 2mm thick rounds and season with a little lemon juice, salt and some of the butter from cooking the cod",
+      "To serve, spoon a generous amount of the wild garlic miso into each serving dish. Drain the cod from the butter and pull apart into large flakes. Dress these with a little more salt, lemon juice and butter and add to the dishes",
+      "Scatter over the asparagus slices and garnish with the reserved wild garlic flowers and a grating of bottarga"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": "g",
+        "notes": "skinned",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "g",
+        "notes": "brown rice miso if available",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": "leaves picked and washed, reserve the flowers for garnish",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottarga",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d3cfe94c4aa7b188ae6de3ba7cef7750538415c01176491cda9356d00e9bfe5",
+    "lineage_hash": "a7c91ef7d706169071c269b34acf49306dda59b1d2136c42e2502c4b1886db04"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-wild-garlic-miso-recipe",
+    "fetchedAt": "2026-08-03T12:13:37.281Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-wild-garlic-miso-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

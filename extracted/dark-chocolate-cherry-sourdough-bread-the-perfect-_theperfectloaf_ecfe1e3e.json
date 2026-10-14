@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate-Cherry Sourdough Bread",
+    "time": "25 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(9:00 p.m.)In a small bowl or jar, mix the Levain ingredients. Cover the jar and keep it at a warm temperature for 12 hours.",
+      "(8:00 a.m.)Add the oil to a medium saucepan over medium heat and heat until very warm. Add the cocoa powder and whisk continuously until the powder thickens. Remove from the heat and let cool.",
+      "(8:30 a.m)In a mixing bowl, add the 516g white flour, 120g high-protein white flour, 78g whole wheat flour, and 474g water 1 and mix until no dry bits remain. Cover the bowl and let rest for 30-minutes.",
+      "(9:00 a.m.)Add the sugar, salt, and levain, to the top of your dough already in the mixing bowl, and use a splash of water 2 (reserved water) to moisten. Mix thoroughly and if the dough feels like it can handle it, add the remainder of the water. Next, knead the dough for a few minutes either with the slap and fold technique or do folds in the bowl. For this dough, I did this for about 5 minutes until the dough begins to smooth out and become elastic. Pour the bloomed cocoa onto the dough and mix through by pinching and folding. When mixed, transfer the dough to a container for bulk fermentation and cover.",
+      "(9:30 a.m. to 1:30 p.m.)This dough will need 3 sets of stretches and folds during bulk fermentation where the first set starts after 30 minutes into bulk fermentation and the subsequent sets are at 30-minute intervals. During the first set of stretches and folds, add the mixed together chocolate and cherries as you perform each stretch and fold. After the third set of stretches and folds, let the dough rest, covered, for the remainder of bulk fermentation.",
+      "(1:30 p.m.)Lightly flour your work surface and scrape out your dough. Using your bench knife, divide the dough in half. Lightly shape each half into a round shape. Let the dough rest for 35 minutes, uncovered.",
+      "(2:05 p.m.)Shape the dough into a round (boule), then place the dough in proofing baskets, seam side up.",
+      "(2:15 p.m. to 9:00 a.m. the next day)Cover proofing baskets with reusable plastic and seal shut. Then, place both baskets into the refrigerator and proof overnight.",
+      "(The next day, bake at 9:00 a.m.)Preheat your oven with a baking surface or combo cooker/Dutch oven inside to 450°F (230°C). I recommend baking this dough on a piece of parchment as the chocolate may melt out slightly. When the oven is preheated, remove your dough from the fridge, score it, and transfer it to the preheated baking surface or combo cooker. Bake for 20 minutes with steam. After this time, vent the steam in the oven or remove the lid (you can keep it in the oven or remove it) and continue to bake for 30 minutes longer. When done, the internal temperature should be around 204°F (95°C). Let the loaves cool for 2 hours on a wire rack before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Flour",
+        "unit": "g",
+        "notes": "about 11.5% protein",
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "84",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": "100% hydration",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": "about 11.5% protein",
+        "amount": "516",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-protein Flour",
+        "unit": "g",
+        "notes": "about 12.7% protein",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "78",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chunks",
+        "unit": "g",
+        "notes": "or chips",
+        "amount": "159",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "159",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine Sugar",
+        "unit": "g",
+        "notes": "caster sugar",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 1",
+        "unit": "g",
+        "notes": null,
+        "amount": "474",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 2",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92a4cc01925596f5fca4d34a477304985f2d91694fb8f46a80805587764656f8",
+    "lineage_hash": "25380e5f5fc03b5f71b924525f1b664897526662f4280ad3e0f2196081cba3b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/dark-chocolate-cherry-sourdough-bread/",
+    "fetchedAt": "2026-08-01T19:22:14.340Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/dark-chocolate-cherry-sourdough-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

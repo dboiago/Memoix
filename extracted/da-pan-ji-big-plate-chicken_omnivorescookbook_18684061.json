@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Da Pan Ji (Big Plate Chicken)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "595",
+      "carbohydrateContent": "65",
+      "fatContent": "19.1",
+      "proteinContent": "40"
+    },
+    "directions": [
+      "Prepare the noodle dough if you’re planning to use homemade noodles.",
+      "Mix Shaoxing wine, light and dark soy sauce, and sugar in a small bowl.",
+      "Add the ginger, garlic, onion, dried chili pepper, star anise, bay leaves, Sichuan peppercorns, and cinnamon to a small plate.",
+      "Boil the noodles according to instructions. Once done, drain and rinse with cold water to stop cooking. Then drain again.",
+      "Heat oil in a wok until shimmering. Add the chicken. Cook, stirring occasionally, until the surface turns light golden.",
+      "Add the plate of the spices to the wok. Stir and cook for 30 seconds to release fragrance. Add doubanjiang and cook until all the spices are coated. Add the Shaoxing wine mixture. Stir immediately to deglaze the wok.",
+      "Pour in water and add potato. Cook over medium-high heat until bringing to a simmer. Cover and simmer over medium heat for 5 minutes (*Footnote 2).",
+      "Add bell pepper. Keep simmering for another 5 minutes until the vegetables turn tender. Stir in the scallion and cook for another minute.",
+      "If the broth is still too thin, turn to high heat to reduce the sauce. Stir constantly to prevent burning. Once done, transfer everything to a big bowl. Remove as much dried spices as you can and discard them.",
+      "Serve the chicken, vegetables and sauce over boiled noodles. Garnish with cilantro if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Batch Wide Homemade Pulled-noodles",
+        "unit": null,
+        "notes": "or 8 oz / 225 g dried noodles",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced into 1” pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "sliced into 1/2” pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, diced to 1” (2.5 cm) pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potato",
+        "unit": null,
+        "notes": "*Footnote 1, roll cut into 1/2” pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "cut into 1 1/2” pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro for Garnish (optional)",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fc59f6a04bbe9b496b6e6f0b67d66b1e99cc8c8c69aed468568d1bfde089df4",
+    "lineage_hash": "620aa09b92ea27a2203402d04a10a0e508d5028fa14b923a29bed29e6ba74990"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/da-pan-ji/",
+    "fetchedAt": "2026-08-02T08:19:08.162Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/da-pan-ji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

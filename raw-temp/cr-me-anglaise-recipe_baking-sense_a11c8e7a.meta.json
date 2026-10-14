@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2017/12/14/creme-anglaise/",
+  "slug": "cr-me-anglaise-recipe_baking-sense_a11c8e7a",
+  "title": "Crème Anglaise Recipe",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T16:48:24.229Z",
+  "ldName": "Crème Anglaise Recipe",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "custard, sauce",
+  "ldIngredientsRaw": [
+    "½  vanilla bean ( or 1 teaspoon vanilla extract)",
+    "8 oz whole milk (1 cup)",
+    "8 oz heavy cream (1 cup)",
+    "6  large egg yolks",
+    "3 oz granulated sugar (⅓ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Split ½&#32;vanilla bean and scrape out the seeds. Combine 8 oz&#32;whole milk, 8 oz&#32;heavy cream the vanilla beans and the pod in a pan over medium high heat. Cook  until scalding hot. Do not let it come to a full boil.",
+    "While the milk heats up, whisk together 6&#32;large egg yolks and 3 oz&#32;granulated sugar. Whisk the hot milk into the bowl of egg yolks, then return the mix to the pan.",
+    "Cook the sauce over low heat, stirring constantly, until the mixture thickens enough to coat the back of a spoon (see photo). Remove from the heat immediately and strain.",
+    "Refrigerate until serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "132 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "3 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "121 mg",
+    "sodiumContent": "17 mg",
+    "sugarContent": "9 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "½ vanilla bean ( or 1 teaspoon vanilla extract)",
+    "8 oz whole milk (1 cup)",
+    "8 oz heavy cream (1 cup)",
+    "6 large egg yolks",
+    "3 oz granulated sugar (⅓ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

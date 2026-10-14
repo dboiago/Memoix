@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Chocolate Buckwheat Pound Cake",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (175°C) and line a loaf pan with parchment paper (my pan is 10 by 3 1/2 inches, or 26 x 9 cm; a standard 9-by-5-inch loaf pan can be used).",
+      "In a medium bowl, whisk together the eggs, sugar, and coconut butter until slightly frothy.",
+      "In another medium bowl, combine the flour, baking powder, salt, and chocolate.",
+      "Fold the dry ingredients into the wet ingredients using a spatula, until no trace of flour remains.",
+      "Pour into the pan, sprinkle the top with sugar, and bake for 25 to 30 minutes, until the cake is golden brown and a knife inserted in the center comes out clean (melted chocolate is normal; it's uncooked batter you don't want to see).",
+      "Lift carefully from the pan and cool on a rack.",
+      "Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "raw cane, plus extra for sprinkling",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Butter",
+        "unit": "oz",
+        "notes": "heated and stirred to a smooth consistency, or unsalted butter, melted and cooled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": "gluten-free-certified as needed",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "gluten-free-certified as needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "oz",
+        "notes": "good-quality, or chopped dark chocolate",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c1e915365d0552c09fd22ca608066a843834c7020a185a90c935747db94aec7",
+    "lineage_hash": "5e3ed95f30e745bedb420a3de1fcb012d71647d186f3d4c515175428d4cc8184"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-buckwheat-pound-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:53:10.002Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-buckwheat-pound-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

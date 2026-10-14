@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Chocolate Fudge Icing",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chocolate in a bowl set over a pan of gently simmering water, making sure the bowl does not touch the water. Allow the chocolate to melt fully then leave to cool slightly",
+      "In a large bowl, whisk together the butter and icing sugar with an electric or hand whisk, until light and fluffy",
+      "Fold through the chocolate and transfer to a piping bag. Alternatively, place in a sealed container in the fridge and keep for up to a week before using",
+      "Use to ice cupcakes or as a filling or topping for one large cake"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05aa857d386fbc3594123cee780a5bf98e8ff04894a6432d296e8dd889db68ff",
+    "lineage_hash": "bbfc94ec0ee954d9d125f0e63456e87c79790453119355b6c1262ef446fcc7cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-icing-recipe",
+    "fetchedAt": "2026-08-03T13:27:46.702Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-icing-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

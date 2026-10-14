@@ -1,0 +1,64 @@
+{
+  "url": "https://www.cookwithmanali.com/coconut-rose-cookies/",
+  "slug": "coconut-rose-cookies_cookwithmanali_71e02fd2",
+  "title": "Coconut Rose Cookies",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T05:19:50.538Z",
+  "ldName": "Coconut Rose Cookies",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "16",
+    "16 cookies"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Cookies",
+  "ldKeywords": "coconut rose cookies",
+  "ldIngredientsRaw": [
+    "1 cup all purpose flour (130 grams)",
+    "1 cup desiccated coconut powder (82 grams)",
+    "1/2 teaspoon baking powder",
+    "1/2 teaspoon cardamom powder",
+    "pinch salt",
+    "1/2 cup ghee (100 grams, in semi-solid state (not melted))",
+    "3/4 cup powdered sugar (90 grams)",
+    "3 tablespoons rose water (45 ml)",
+    "crushed dried rose petals (to garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat oven to 375 F degrees and line a baking sheet with parchment paper.In a large bowl, whisk together flour, desiccated coconut powder, baking powder, cardamom powder and salt. Set aside.",
+    "Now, add ghee and powdered sugar to your stand mixer or use your hand mixer. Using the paddle attachment of the stand mixer, beat the ghee and sugar until well combined.",
+    "Then add in the prepared dry flour mixture and mix.",
+    "Add rose water and mix.",
+    "The dough will come together if using a stand mixer. If using a hand mixer, you might have to use your hands to bring the dough together. Cover the dough with a cling sheet and refrigerate 20 minutes.",
+    "Take a small portion of the dough (around 25 grams) and roll it between your palms, then press lightly (just a bit don&#039;t flatten it). Make all cookies similarly and arrange on a baking sheet. You will get around 16-17 cookies. Top all cookies with crushed dried rose petal. Bake at 375 F degrees for around 15 minutes or until the the bottom of the cookies starts becoming light golden brown in color. Let the cookies cool completely and then store in an airtight container at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "135 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "1 g",
+    "fatContent": "9 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "14 mg",
+    "sodiumContent": "2 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup all purpose flour, 130 grams",
+    "▢ 1 cup desiccated coconut powder, 82 grams",
+    "▢ 1/2 teaspoon baking powder",
+    "▢ 1/2 teaspoon cardamom powder",
+    "▢ pinch salt",
+    "▢ 1/2 cup ghee, 100 grams, in semi-solid state (not melted)",
+    "▢ 3/4 cup powdered sugar, 90 grams",
+    "▢ 3 tablespoons rose water, 45 ml",
+    "▢ crushed dried rose petals, to garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

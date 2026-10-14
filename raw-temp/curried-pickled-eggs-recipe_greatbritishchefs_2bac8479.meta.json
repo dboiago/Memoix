@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/curried-pickled-eggs-recipe",
+  "slug": "curried-pickled-eggs-recipe_greatbritishchefs_2bac8479",
+  "title": "Curried Pickled Eggs Recipe",
+  "byline": "by Masaki Sugisaki",
+  "fetchedAt": "2026-08-03T11:01:17.956Z",
+  "ldName": "Curried pickled eggs",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Preserve",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "9 medium free-range eggs",
+    "300ml of distilled vinegar",
+    "150ml of water",
+    "80g of sugar",
+    "2 tbsp of mild curry powder",
+    "1/2 tsp salt",
+    "turmeric, one 7cm piece, peeled",
+    "3 slices of lemon peel",
+    "1 tbsp of mustard seeds",
+    "1/2 tsp chilli flakes",
+    "2 bay leaves"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a pan of water to the boil and carefully add the eggs. Boil for 6 minutes then plunge into ice water. This will give a slightly runny yolk – if you'd prefer hard boiled, boil for 10 minutes",
+    "Place the rest of the ingredients in a pan and bring to a simmer, stirring until the sugar and salt have dissolved. Remove from the heat and allow to cool",
+    "When the eggs have finished cooking, place in iced water to cool quickly. Once cool, peel the eggs",
+    "Place the eggs into a sterilised jar and pour over the pickling liquor. Place a circle of greaseproof paper on top of the liquid to ensure the eggs are fully submerged in the liquid",
+    "The eggs will be slightly pickled after 12 hours, but after about 3–5 days they will be at their prime. They will keep for months if fully submerged in the brine"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

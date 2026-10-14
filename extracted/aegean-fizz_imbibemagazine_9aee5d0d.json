@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Aegean Fizz",
+    "time": "40 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GR",
+    "glass": "Collins",
+    "garnish": [
+      "Blood Orange Twist",
+      "Cinnamon Stick"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dry shake (meaning, shake without ice) the Metaxa with the blood orange juice and egg white for 20 seconds.",
+      "Then add ice and the cinnamon bark syrup to the shaker and shake vigorously for 20 seconds.",
+      "Strain into a glass and top with club soda.",
+      "Add the twist by squeezing the peel side down atop the drink and rubbing around the rim.",
+      "Lay the cinnamon stick across the top of the glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Metaxa 7-star Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Bark Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar in the Raw",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3b97bf29b280e36388d6ada856456a08fc1e17c1574298f45c1046d0532665f",
+    "lineage_hash": "19a629b166e0601b57cbcd7b621f47a14cb9375143cccc5cc4c4dd2dd885d828"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aegean-fizz/",
+    "fetchedAt": "2026-08-03T16:13:53.662Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aegean-fizz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://muybuenoblog.com/tampiquena-steaks-and-grilled-avocado-video/",
+  "slug": "carne-a-la-tampique-a-mexican-steak_muybuenoblog_eb60d622",
+  "title": "Carne a la Tampiqueña (Mexican Steak)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T01:25:59.094Z",
+  "ldName": "Tampiqueña Steaks",
+  "ldTime": "PT33M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT23M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Mexican, Tex-Mex",
+  "ldCategory": "Main Course",
+  "ldKeywords": "how to grill avocado, how to make Tampiqueña Steak, Tampiqueña Steak",
+  "ldIngredientsRaw": [
+    "3 tablespoons butter",
+    "2  white onions (sliced)",
+    "4  Anaheim or Hatch chiles (roasted, peeled, stemmed, and cut into 1-inch strips)",
+    "1 pound skirt steak",
+    "Kosher or sea salt (to taste)",
+    "Freshly ground black pepper (to taste)",
+    "1 cup shredded Oaxaca or asadero cheese"
+  ],
+  "ldInstructionsRaw": [
+    "In a large frying pan over medium-low heat, melt the butter. When the butter foams, add the onions and cook, stirring occasionally, until translucent and starting to brown lightly, 12–14 minutes. Add the chile strips and cook, stirring, for 2–3 minutes to mix well. Remove from the heat and set aside.",
+    "Prepare a fire in a charcoal or gas grill for direct grilling over medium-high heat. Preheat the broiler.",
+    "Season the steak on both sides with salt and pepper and cut into 4 equal servings. Line a sheet pan with aluminum foil.",
+    "Place the steak on the grill, close the lid, and grill, turning once, for 2–3 minutes on each side for medium-rare to medium, or cook to your desired doneness. Transfer the steak to the foil-lined sheet pan and let rest for 2 minutes. If you want to serve the steak a la mexicana, transfer the steak to a cutting board, chop it, and then return it to the sheet pan.",
+    "Top the steak with the onion and chile mixture and sprinkle with the cheese. Place under the broiler and broil until the cheese melts and bubbles, 1–2 minutes. Serve at once."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "941 kcal",
+    "sugarContent": "3 g",
+    "sodiumContent": "839 mg",
+    "fatContent": "71 g",
+    "saturatedFatContent": "29 g",
+    "carbohydrateContent": "15 g",
+    "fiberContent": "9 g",
+    "proteinContent": "61 g",
+    "cholesterolContent": "202 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 tablespoons butter",
+    "▢ 2 white onions, sliced",
+    "▢ 4 Anaheim or Hatch chiles, roasted, peeled, stemmed, and cut into 1-inch strips",
+    "▢ 1 pound skirt steak",
+    "▢ Kosher or sea salt, to taste",
+    "▢ Freshly ground black pepper, to taste",
+    "▢ 1 cup shredded Oaxaca or asadero cheese"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

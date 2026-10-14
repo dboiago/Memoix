@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Chinese Cosmopolitan",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": "Martini",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "172",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS flamed orange zest twist over cocktail, then use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Krupnik Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c46a2d95090c47765a10b6cab069a55a57be15466f9d5c760c35bd4a4be4a85",
+    "lineage_hash": "70329f416baf166d3f9fba0beaa72bb29ad0d9e83fe1f11b2c81ba7aa20b2d11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/421/chinese-cosmopolitan",
+    "fetchedAt": "2026-08-02T03:59:58.823Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/421/chinese-cosmopolitan",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

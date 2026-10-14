@@ -1,0 +1,69 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-eggplant/",
+  "slug": "air-fryer-chinese-eggplant_omnivorescookbook_e8a935ae",
+  "title": "Air Fryer Chinese Eggplant",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T05:29:57.399Z",
+  "ldName": "Air Fryer Chinese Eggplant",
+  "ldTime": "PT17M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb Chinese eggplant (or regular eggplant) (, cut into irregular bite-size pieces )",
+    "2 tablespoons peanut oil ((or vegetable oil))",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 tablespoon Chinkiang vinegar ((or rice vinegar))",
+    "2 teaspoons soy sauce",
+    "1 teaspoon sugar",
+    "2 cloves garlic (, minced)",
+    "2  green onion (, sliced)",
+    "1  Thai chili pepper (, sliced, for garnish (Optional))",
+    "Toasted sesame seeds (, for garnish (Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "If using regular (non-Asian) eggplant, place eggplant pieces in a large bowl and add water to cover. Add 1 teaspoon salt, mix well. Place a pot lid on top to keep the eggplant under the water for 15 minutes. Drain and pat dry.",
+    "Preheat the air fryer to 400°F (200°C) for 5 minutes.",
+    "Add the eggplant into a big bowl with peanut oil. Sprinkle with salt and pepper. Toss to mix well.",
+    "Combine the vinegar, soy sauce and sugar in a small bowl and stir to mix well.",
+    "Line the air fryer tray with parchment paper for easy cleaning (optional). Spread the eggplant onto the air fryer basket without overlapping. Cook in batches if needed.",
+    "Air fry at 400F (200°C) for 5 to 6 minutes, or until the eggplant just starts to turn tender and char on the edges.",
+    "Take out the air fryer tray and place all the cooked eggplant onto the tray. Pour the sauce mixture over it. Add the garlic, green onion and chili pepper (if using). Toss to mix well.",
+    "Return the tray to air fry again for another 2 minutes, until the eggplant turns soft. Garnish with chili pepper, if using. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "100 kcal",
+    "carbohydrateContent": "8.9 g",
+    "proteinContent": "1.5 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1.1 g",
+    "sodiumContent": "300 mg",
+    "fiberContent": "4.3 g",
+    "sugarContent": "4.6 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb Chinese eggplant (or regular eggplant) , cut into irregular bite-size pieces",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 tablespoon Chinkiang vinegar (or rice vinegar)",
+    "2 teaspoons soy sauce",
+    "1 teaspoon sugar",
+    "2 cloves garlic , minced",
+    "2 green onion , sliced",
+    "1 Thai chili pepper , sliced, for garnish (Optional)",
+    "Toasted sesame seeds , for garnish (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Chicken Chettinad (चिकन चेट्टीनाड)",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate chicken with chili powder, turmeric and lime juice. Keep aside for 3-4 hours into refregerator.",
+      "Meanwhile prepare masala, for that in non stick pan saute all the ingredients until turns light brown in color. Grind them into the blender using little water if require to form thick consisatncy.",
+      "Heat oil into anothet deep sauce pan or kadhai and saute onion until turn light golden in color. Add ginger garlic paste for 2 minutes ot until aroma comes out. Add tomato chopped followed by marinated chicken. Saute for 3-4 minutes.",
+      "Now add prepared spice masala and add 1 cup water and cover the lid. Adjust salt.",
+      "When chicken is cooked remove and serve with cooked rice or roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "curry cuts",
+        "amount": "500",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3-4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Gravy",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e324f6c335162e1bf4226472cd43bdddb50e19b965ca1737c768f4181d2d667",
+    "lineage_hash": "3ce22f21a3c46379e9a09d446ebdb70594abade3b796e0b5fbc3fef157cc2cc9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-chettinad/",
+    "fetchedAt": "2026-08-02T14:15:55.272Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-chettinad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Curry Chicken with Potatoes",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "319",
+      "carbohydrateContent": "5",
+      "fatContent": "26",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Prepare Chicken: Cut up chicken into 2 inch pieces if required. Wash chicken with lemon, removing skin if you wish, excess fat and rub off slime. Drain well in a colander.",
+      "Season chicken with 4 tbs green seasoning, 1 tbs minced garlic, 1/2 of the sliced onion and hot pepper, tomato, thyme, salt and black pepper. Allow it to marinate for several hours or overnight, optional.",
+      "Make Curry Paste: In a small bowl, add 6 tablespoons curry powders and cumin along with 1/2 cup of water, 2 tbs green seasoning and 1 tbs minced garlic. Mix well and set aside.",
+      "In a heavy bottomed pot or dutch oven over medium heat, heat oil, add the reserved pieces of onions and pepper and cook until golden brown. Add curry mixture and cook until grainy and curry separates from the oil, stirring constantly and scraping bottom of pot to prevent it from sticking and burning, 3-5 minutes.",
+      "Add seasoned chicken and potatoes to pot.  Mix well to combine.",
+      "Cover pot and cook on medium heat until meat has released its juices and evaporates about 30-40 minutes, gently stirring every 10 minutes or so in a basting motion (pouring the pan juices over the chicken).",
+      "If water has evaporated during this time, add hot water to make sauce, about 1-2 cups.  Bring to a boil, lower heat to medium, cover pot and cook until sauce has thickened about 5-10 minutes. Taste for salt and add more if required.  Garnish with chopped cilantro or culantro(bandhania). Serve hot with roti or rice and a salad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken--legs Thighs",
+        "unit": "lb",
+        "notes": "alt: a whole chicken cut up into 2 inch pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": "alt: minced culantro",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Minced Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Sliced and Divided",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "alt: habanero pepper- sliced",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomato Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Chopped",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Himalayan Salt",
+        "unit": null,
+        "notes": "alt: more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder ‘trinidad’",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Roasted",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck and Goat Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f68e06c08648c433702f301e1c45542dc99c53aeacabe96a30f39c736191149d",
+    "lineage_hash": "45e1ab40bd362b8d36b90308bad01ef3663a945a5ac217da4d4287fdda4d26ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2021/12/curry-chicken-with-potatoes/",
+    "fetchedAt": "2026-09-25T19:24:49.704Z"
+  },
+  "rawSource": "https://cookingwithria.com/2021/12/curry-chicken-with-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

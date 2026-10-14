@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Manhattan Riff",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir the first 4 ingredients with ice until chilled. Rinse a chilled coupe with absinthe, discarding the excess, then strain the cocktail into the prepared glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "Goodkind uses Woodford Reserve",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carpano Antica Formula Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pedro Ximenez Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Averna",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d50da7c9cdde7791ae8f6272249c6b9e502e6b2cdb77bf9b7fb411c1ba45514",
+    "lineage_hash": "5d3063bbacb96894a8425a45b7cc6752e13e2cbf762bbf7f56ee9629bed00e37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/call-it-a-night-manhattan-riff/",
+    "fetchedAt": "2026-08-03T19:42:00.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/call-it-a-night-manhattan-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

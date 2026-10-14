@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Buttermilk and Tonka Bean Panna Cotta",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the panna cotta, begin by putting the gelatine into some iced water, to soften",
+      "Combine the cream and buttermilk in a pan and slowly bring to the boil, then add the caster sugar, tonka bean and softened gelatine and mix well until the gelatine is dissolved",
+      "Remove from the heat, cover and set aside to infuse for a minimum of an hour",
+      "Pass the mixture through a fine sieve into a jug, then divide between bowls and place into the fridge to set for a minimum of 4 hours - preferably overnight",
+      "Combine the strawberries, sugar, lemon juice and grated tonka bean in a bowl and mix well, then cover and set aside",
+      "Bring a pan of water to a boil then turn off. Place the bowl of strawberries on top, and allow them to soften and steam for 5-10 minutes - the strawberries will soften slightly and release some of their juices",
+      "Remove the strawberries from the heat, allow to cool, then refrigerate until completely cold",
+      "To make the shortbread, place all ingredients in a Thermomix and blend until it comes together like a dough",
+      "Line a small tray with non-stick baking paper, then transfer the shortbread mix onto it and smooth it out evenly with the back of a spoon. Score the shortbread into portions using a knife, and prick the top with a fork",
+      "Bake the shortbread for 30-45 minutes or until evenly golden, then remove from the oven and dust with caster sugar. Allow to cool before cutting into portions",
+      "To assemble the dish, arrange the macerated strawberries on top of the panna cotta. Break the shortbread into pieces and arrange those on top too, then finish with a few micro basil leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonka Bean",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "washed and quartered",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonka Bean",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for sprinkling",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Micro Basil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f462cee34617cc7bc68975fe4a3bee6b1b680a6e5a129b271af7e7ddf7550d4f",
+    "lineage_hash": "153f2576a26b3713737c4a001868dfb35afc73b913ee27a7ee6ab39e2f25eea8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttermilk-tonka-bean-panna-cotta-recipe",
+    "fetchedAt": "2026-08-02T18:18:52.482Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttermilk-tonka-bean-panna-cotta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Canned Spicy Sardines",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mince about 1/4 of a Cruschi bell pepper, 1 chili pepper, 2 mint leaves and a little fennel; mix with 1/2 cup of extra-virgin olive oil. In a jam jar, set 30 sardine fillets and cover them with the oil, leaving a little space at the top. Vacuum seal the jar and boil it submerged in water for 30 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sardine Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc. of Cruschi (crunchy) Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91f2c9997d3580b561407f50720bf5b761c193e258c00a4136949679d16ef60c",
+    "lineage_hash": "bc8acfc4f1c8430bf24ec0de6ee65b92b3c69d30e9c9a9bcc6944b2aa45fa306"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/canned-spicy-sardines",
+    "fetchedAt": "2026-08-02T17:06:10.546Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/canned-spicy-sardines",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

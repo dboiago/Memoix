@@ -1,0 +1,65 @@
+{
+  "url": "https://spanishsabores.com/authentic-easy-romesco-sauce-recipe-salsa-romesco/",
+  "slug": "authentic-romesco-sauce-recipe_spanishsabores_a7ea7c6b",
+  "title": "Authentic Romesco Sauce Recipe",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:25:36.475Z",
+  "ldName": "Romesco Sauce (Salsa Romesco)",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Sauce",
+  "ldKeywords": "authentic romesco sauce, easy romesco sauce, Salsa Romesco",
+  "ldIngredientsRaw": [
+    "3  dried ñora peppers (or any small, sweet, and small smokey dried peppers)",
+    "2 slices hearty white bread",
+    "5  ripe plum tomatoes",
+    "1 head garlic",
+    "25  raw blanched hazelnuts",
+    "25  raw blanched almonds (preferably Marcona almonds)",
+    "2 tablespoons sherry or red wine vinegar",
+    "1 cup extra virgin olive oil",
+    "ground cayenne pepper  (to taste (optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Hydrate the ñoras the day prior by soaking them in water, then remove the stem and seeds. Alternatively, boil the peppers for 15 minutes; it isn&#39;t quite the same, but it works!",
+    "Dry the bread out a few hours in advance if possible, then toast until golden brown. Let cool, remove the crusts, and cut into smaller cubes.",
+    "Cut a few small slits in the plum tomatoes and drizzle them with olive oil. Roast them and the garlic at 400°F (200°C) for about 35 minutes.",
+    "Roast the nuts on a baking sheet until golden, about 5 minutes, moving them around every couple of minutes. Watch them closely!",
+    "Let everything cool down, then blend all the ingredients together in a blender until uniform, but not puréed. Add more vinegar, salt, and cayenne to taste.",
+    "Enjoy the sauce with roasted vegetables, or on a sandwich."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "252.07 kcal",
+    "carbohydrateContent": "5.77 g",
+    "proteinContent": "2.01 g",
+    "fatContent": "25.3 g",
+    "saturatedFatContent": "3.29 g",
+    "transFatContent": "0.001 g",
+    "sodiumContent": "27.2 mg",
+    "fiberContent": "1.2 g",
+    "sugarContent": "1.45 g",
+    "unsaturatedFatContent": "21.24 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 dried ñora peppers or any small, sweet, and small smokey dried peppers",
+    "▢ 2 slices hearty white bread",
+    "▢ 5 ripe plum tomatoes",
+    "▢ 1 head garlic",
+    "▢ 25 raw blanched hazelnuts",
+    "▢ 25 raw blanched almonds preferably Marcona almonds",
+    "▢ 2 tablespoons sherry or red wine vinegar",
+    "▢ 1 cup extra virgin olive oil",
+    "▢ ground cayenne pepper  to taste (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

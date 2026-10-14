@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Blueberry Coffee Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "380",
+      "carbohydrateContent": "56",
+      "fatContent": "16",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Add the dry ingredients for the crumb topping in a mixing bowl.",
+      "Mix to combine the ingredients.",
+      "Toss in the butter.",
+      "Mix until the topping looks like wet sand. If you grab a handful it should hold together in a large clump.",
+      "Sift the dry ingredients for the cake batter into a mixing bowl.",
+      "Add the butter and half of the buttermilk and mix to aerate the batter.",
+      "Add the eggs and mix until smooth.",
+      "Fold about 2/3 of the berries into the batter.",
+      "Spread the batter into a buttered and floured 9″ square pan. (You can use a 9″ round pan). Line the pan with parchment if you want to remove the cake from the pan before serving.",
+      "Sprinkle more berries over the batter. Break the topping into large clumps over the batter.",
+      "Layer in the rest of the berries and crumb topping.",
+      "Bake until a toothpick inserted into the center of the cake comes out clean."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 1/2 cups, see note",
+        "amount": "6¾",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "2/3 cup",
+        "amount": "6",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Crumb Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1/2 cup, divided",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "6¾",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "3/4 cup",
+        "amount": "6",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "10",
+        "section": "Cake Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e688bae2c79d2407a74aa1644aa1cd95cb1a7beadd7e2cd566ab66d58e7ec04",
+    "lineage_hash": "a7c6707d0955ea3985f26ccec35a1ed1e7a3e961bf850855474ba48f938d0dda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/07/16/blueberry-crumb-cake/",
+    "fetchedAt": "2026-08-02T08:28:26.836Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/07/16/blueberry-crumb-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

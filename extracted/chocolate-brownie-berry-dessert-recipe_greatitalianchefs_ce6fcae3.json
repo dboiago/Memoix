@@ -1,0 +1,299 @@
+{
+  "recipe": {
+    "name": "Chocolate Brownie Berry Dessert",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the lavender marshmallow as the syrup will need to rest overnight. Bring the water and sugar to the boil in a saucepan and bring to the boil",
+      "Once the sugar has dissolved, remove from the heat and add the lavender. Allow to infuse for 30 minutes, then pass through a sieve. Soak the gelatine in cold water",
+      "Add the mashed raspberries to the pan and bring the mixture to the boil. Squeeze any excess liquid from the gelatine and stir into the raspberry mixture until fully dissolved. Allow to cool before placing in the fridge overnight",
+      "The next day, transfer the mixture to a blender and blitz until foamy. Pour into a baking tray lined with cling film and place in the freezer to set",
+      "To make the radish sorbet, thoroughly combine all of the ingredients and churn in an ice cream maker until set. Store in the freezer until needed",
+      "Preheat the oven to 165°C/gas mark 3. Line a baking tray with greaseproof paper",
+      "Now make the chocolate brownie. In a standing food mixer fitted with a whisk attachment, whisk together the egg yolk, egg white and 45g of the sugar until foamy. In a separate bowl, mix together the flour, baking powder, cocoa and remaining 45g of sugar",
+      "Melt the chocolate and butter in a microwave and stir into the flour mixture. Stir in the water, followed by the whisked eggs and sugar",
+      "Pour into the prepared baking tray and bake in the oven for 15 minutes. Remove from the oven and allow to cool in the tray",
+      "Increase the temperature of the oven to 180°C/gas mark 4",
+      "For the chocolate crumble, add the sugar, flour, cocoa and butter to a food processor and blitz until it reaches a coarse breadcrumb texture",
+      "Spread out onto a baking tray and bake in the oven for 10 minutes. Remove from the oven, stir around a little and bake again for 10 minutes until crisp",
+      "Allow the crumble to cool completely before placing in a clean food processor and blitzing again to a finer crumb",
+      "For the yoghurt sauce, whisk the butter and icing sugar in a standing mixer fitted with a whisk attachment for 5 minutes. Add the cream cheese a little at a time until smooth, then whisk in the yoghurt. Transfer to a piping bag",
+      "To serve, remove the 'marshmallow' from the freezer and cut into equal-sized cubes. Cut the brownie into cubes of the same size",
+      "Place metal rings onto each plate and add some crumble to each ring, patting down slightly to firm up. Add cubes of brownie on top, pipe the yoghurt sauce between the brownie cubes and top with the cubes of 'marshmallow'",
+      "Remove the rings and dot the berries, edible flowers and cress on top. Add a rocher or 2 of radish sorbet and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lavender Flowers",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": "g",
+        "notes": "juiced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorbet Stabiliser",
+        "unit": "g",
+        "notes": "'Superneutro' milk stabiliser",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "Guanaja 70%",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": "strawberry-flavoured",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrants",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a6c49371ee7dd471fe61a18d19823aaa5b34d9cadb2870e4ed4f576f4ef29e0",
+    "lineage_hash": "f8608b8fd961c1041166d34a567eec56c2891a9167ba26dc9ae4ad0bb6d8a3c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chocolate-brownie-berry-dessert-recipe",
+    "fetchedAt": "2026-08-02T03:39:43.098Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chocolate-brownie-berry-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

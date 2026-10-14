@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Cold Noodle Bowl with Sriracha Peanut Crumble",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "490",
+      "carbohydrateContent": "65",
+      "fatContent": "21",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "For the noodles: cook the noodles according to package directions. This time I used a wider noodle, but the first time I used a vermicelli rice noodle which I also loved. Once cooked, drain and rinse the noodles well with cold water. Prep all of the veggies.",
+      "For the Sriracha Peanut Crumble: Add all of the peanut crumble ingredients to a food processor and pulse until the peanuts are broken down to a crumble. If you don't have a food processor, you could finely chop the peanuts with a knife and then add them to a bowl along with the seasonings to mix.",
+      "For the hoisin lime dressing: add all of the ingredients to a small bowl and stir to combine.",
+      "To assemble the cold bowls: in a large bowl add the cold rice noodles. If they are a bit stuck together, give them a final rinse right before adding them to the bowl so they are slippery and easy to toss. Along with the noodles add in all of the vegetables, half of the peanut crumble, and half of the sauce. Toss well to combine.",
+      "Taste, and if needed add more sauce. I like to use just half the sauce on the noodles and then serve the remaining sauce on the side so it can be added as desired according to personal preference. Divide the noodles among four bowls and add the rest of the peanut crumble to top each bowl."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Noodles",
+        "unit": "g",
+        "notes": "vermicelli or a wider noodle, both work well",
+        "amount": "200",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "sliced into rounds",
+        "amount": "1",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "peeled and grated",
+        "amount": "2",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Snap Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Handful Cilantro",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "cold noodle bowl",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Salted Peanuts",
+        "unit": "C",
+        "notes": "you could alternatively substitute roasted salted cashews",
+        "amount": "1",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "Tbsp",
+        "notes": "substitute water for a non-spicy version",
+        "amount": "1",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sriracha peanut crumble",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "hoisin lime dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "hoisin lime dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1½",
+        "section": "hoisin lime dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely minced",
+        "amount": "2",
+        "section": "hoisin lime dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "hoisin lime dressing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43d6fcde76fed7d9107aa11e1b49480c98b45418a516443b83393696976f17e8",
+    "lineage_hash": "04b74e946b65bb99a1e8015736ed9f6def0fad5ef32c2a27d6d3f88e28c83a36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/cold-noodle-bowl-with-sriracha-peanut-crumble/",
+    "fetchedAt": "2026-08-01T16:09:28.005Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/cold-noodle-bowl-with-sriracha-peanut-crumble/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

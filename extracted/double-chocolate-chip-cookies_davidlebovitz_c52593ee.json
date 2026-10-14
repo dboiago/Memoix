@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Chip Cookies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC) and line two baking sheets with parchment paper or silicone baking mats.",
+      "In a small bowl, sift the flour, cocoa powder and baking soda together.",
+      "In a clean, dry bowl set over a pan of simmering water (or in a microwave), melt half of the chocolate (2½ oz, 70g), then let cool to room temperature. Mix the other half of the chocolate chunks a bowl with the cocoa nibs.",
+      "Beat the butter with a standing electric mixer, or by hand, just until smooth. Beat in the sugar, salt and vanilla or chocolate extract.",
+      "By hand, stir in the melted chocolate, then the flour & cocoa mixture. Then finally the chocolate chunks and nibs.",
+      "Scoop the dough into 1-inch (3cm) rounds and place evenly-spaced apart on the prepared baking sheets. Flatten the tops slightly (the edges may crack a bit, which is normal) and sprinkle each cookie with flaky sea salt, if desired, then bake for 9 to 10 minutes, rotating the baking sheets midway during baking, until the cookies take on a slightly dry sheen on the top but feel soft when you touch them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Dutch-process Cocoa Powder",
+        "unit": "C",
+        "notes": "25g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 140g, chopped in chip-sized chunks",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cocoa Nibs",
+        "unit": "C",
+        "notes": "30g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "plus 1 tablespoon (125g) unsalted butter,  at room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(packed) Light Brown Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: salt",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": null,
+        "notes": "optional, or another flaky sea salt, such as Maldon",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e775a84fe7b732ec1d8142e4c0d868626f1771ba93a876511276456d3c2c93a8",
+    "lineage_hash": "79826499b362f2bbef5f0fe22e8042cab4206819f079268de942df6b05dbe4e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/clotildes-very/",
+    "fetchedAt": "2026-08-02T22:35:22.203Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/clotildes-very/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

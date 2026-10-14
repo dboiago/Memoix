@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chocolate Chipotle Ribs",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chipotles and their juice, onion, garlic, 1 ⁄4 cup of cilantro, chocolate, lemon zest, brown sugar, chile powder, salt, and lemon pepper in a food processor and puree, adding enough oil to obtain a thick paste.",
+      "Prepare the ribs: Place a rack of ribs meat side down on a baking sheet. Remove the thin, papery membrane from the back of the rack by inserting a slender implement, such as a butter knife or the tip of a meat thermometer, under it. The best place to start is on one of the middle bones. Using a dishcloth, paper towel, or pliers to gain a secure grip, peel off the membrane. Repeat with the remaining rack.",
+      "Using a rubber spatula, spread the chipotle paste on both sides of the racks. Cover the ribs with plastic wrap and let marinate in the refrigerator for at least 4 hours or as long as overnight. The longer the ribs marinate, the richer the flavor will be.",
+      "Set up the grill for indirect grilling and preheat to medium (325° to 350°F). Place a large drip pan in the center of the grill under the grate.",
+      "When ready to cook, brush and oil the grill grate. Place the ribs bone side down in the center of the grate over the drip pan and away from the heat. (If your grill has limited space, stand the racks of ribs upright in a rib rack.) If cooking on a charcoal grill and using wood chips, toss half of them on each mound of coals. Cover the grill and cook the ribs until well browned, cooked through, and tender enough to pull apart with your fingers, 1 1/4 to 1 1/2 hours. When the ribs are done, the meat will have shrunk back from the ends of the bones by about 1/4 inch. If using a charcoal grill, replenish the coals as needed.",
+      "Transfer the ribs to a large platter or cutting board. Let the ribs rest for a few minutes, then cut the racks in half or into individual ribs. Sprinkle the ribs with the remaining cilantro. Serve at once with lime wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canned Chipotle Peppers",
+        "unit": null,
+        "notes": "with 1 tablespoon of their juice",
+        "amount": "3-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-size Onion",
+        "unit": null,
+        "notes": "1/2 cup, coarsely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "coarsely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh, plus 1/4 cup chopped cilantro for garnish",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate",
+        "unit": "oz",
+        "notes": "coarsely grated or cut into pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips (each 1/2 by 1 1/2 Inches) Fresh Lemon Zest",
+        "unit": null,
+        "notes": "coarsely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Chile Powder",
+        "unit": "Tbsp",
+        "notes": "such as ancho chile powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Racks Baby Back Pork Ribs",
+        "unit": null,
+        "notes": "4 to 5 pounds total",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c726c202c8eea8ad30a5be527b1e34150df7fd4bc6456ceb03c777c51a3ee745",
+    "lineage_hash": "b0ce18a3386a358cf2ecfc909c3c63cbc98ef35a97cc8738b902c166656e6be7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cousin-daves-chocolate-chipotle-ribs/",
+    "fetchedAt": "2026-08-03T09:58:11.123Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cousin-daves-chocolate-chipotle-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

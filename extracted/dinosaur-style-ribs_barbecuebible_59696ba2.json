@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Dinosaur-Style Ribs",
+    "time": "4 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the mop sauce: Throw everything together in a saucepan and bring to a boil. Cool, pour into a plastic container, cover and refrigerate for later use. Makes 1-3/4 cups.",
+      "Make the rub: Dump all the ingredients into a bowl and rub them together with your hands. Store in a plastic or glass container until ready to use. Makes 2-3/4 cups total.",
+      "Prepare the grill: Pull off the grill rack and fire up the grill; then prepare the smoking packets by putting 3 cups of hickory wood chips in a bowl and covering them with water. Soak for at least half an hour. Drain well and divide between 2 squares of aluminum foil. Form into 2 individual packets, poking holes in one side. Set aside.",
+      "Make the ribs: Rub the ribs all over with the rub, making sure you are getting it into every surface. (You can even do this step well in advance). Use just enough to coat the ribs evenly.",
+      "Test the ribs: Test the ribs for doneness once they’ve been cooking for 3-1/2 to 4 hours. You’ll know they are done if you can gently tear the meat between the bones, or poke your finger through the meat, or if they’ve reached an internal temperature of 180 degrees, or if they bend nicely when you grab them in the middle with a pair of tongs. Once you’ve determined that they’re done, get out the sauce and apply another coat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Racks of Pork Spareribs",
+        "unit": null,
+        "notes": "2 ½ to 3 pounds, St. Louie cut",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Red Rub",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mop Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5059327ce761826f68cb570e55f76dfc0c3bdd81e329c2f54f33f16874c05b24",
+    "lineage_hash": "7e618f83eae9fcd17bf1d8ef08506f3fa1a93f9908c99990051e560730ec5fab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/dinosaur-style-ribs/",
+    "fetchedAt": "2026-08-03T02:53:11.443Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/dinosaur-style-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

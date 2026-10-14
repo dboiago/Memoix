@@ -1,0 +1,54 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-chicken-stock/",
+  "slug": "chinese-chicken-stock_omnivorescookbook_cb642455",
+  "title": "Chinese Chicken Stock",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:39:11.044Z",
+  "ldName": "Chinese Chicken Stock",
+  "ldTime": "PT400M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT210M",
+  "ldYield": [
+    "8",
+    "8 cups"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "1 lb Chicken Feet ((Footnote 1))",
+    "3 lbs Chicken bone-in pieces ((*Footnote 2))",
+    "2 oz prosciutto ((or other cured ham) (optional))",
+    "6  green onions",
+    "1 ” ginger (, large sliced)",
+    "10 cups cold tap water"
+  ],
+  "ldInstructionsRaw": [
+    "Use a pair of poultry shears to clip off the nails from the chicken feet. Add the chicken feet into a big pot and add enough cold water to cover. Heat over medium-high heat until brought to a boil. Boil for 10 minutes. Then drain and discard the boiling water. Wash the chicken with running tap water thoroughly, then transfer to a large pot or dutch oven (5 1/2 qt or bigger).",
+    "In the same pot, add the chicken pieces, prosciutto if using, green onion and ginger. Pour in the water.",
+    "Heat over medium-high heat until boiling. Boil for 10 to 15 minutes while using a colander to remove the brown foam from the top, until the broth is clear. Turn to medium-low heat and cover. Simmer for 2.5 to 3 hours.",
+    "Remove the chicken pieces and all the aromatics. If using the stock immediately, use a strainer to remove the chicken fat from the top. Alternatively, you can store the stock in the fridge. Once the soup is chilled, you can easily remove the chicken fat that’s coagulated on top.",
+    "Now you can enjoy the stock by itself, use it in cooking, or store it for later use. Store it in the fridge for 3 to 4 days, or in the freezer for up to 3 months. (*Footnote 4)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "80 kcal",
+    "proteinContent": "14.5 g",
+    "fatContent": "2.1 g",
+    "saturatedFatContent": "0.6 g",
+    "cholesterolContent": "40 mg",
+    "sodiumContent": "34 mg"
+  },
+  "htmlIngredientLines": [
+    "1 lb Chicken Feet (Footnote 1)",
+    "3 lbs Chicken bone-in pieces (*Footnote 2)",
+    "2 oz prosciutto (or other cured ham) (optional)",
+    "6 green onions",
+    "1 ” ginger , large sliced",
+    "10 cups cold tap water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Black Pepper Tofu",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": "12.9",
+      "fatContent": "12.6",
+      "proteinContent": "11.1"
+    },
+    "directions": [
+      "Mix the sauce ingredients together in a small bowl and set aside.",
+      "Heat the oil in a large skillet over medium-high heat until hot. Add the tofu and spread it out without overlapping. Let cook without touching until the bottom turns golden brown. Flip the tofu. Cook, stirring occasionally, until most sides turn golden. Transfer the tofu to a big plate.",
+      "Turn the heat to medium-low. Drain most of the oil from the pan by wiping the pan with a few layers of paper towel held in a pair of tongs. Leave about 1 tablespoon of oil in the pan.",
+      "Add the garlic and ginger. Stir a few times until it releases the fragrance.",
+      "Turn to medium-high heat again. Add the onion, pepper, and celery. Cook and stir for another minute, or until the vegetables just start to soften.",
+      "Stir the sauce again to dissolve the cornstarch completely and pour it into the pan. Stir immediately and cook until the sauce has thickened.",
+      "Add the cooked tofu back into the pan and toss to coat evenly.",
+      "Transfer everything to a serving plate. Serve hot over steamed rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Bouillon",
+        "unit": "tsp",
+        "notes": "or 1 teaspoon mushroom powder",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or vegetables stock",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Block (14 Oz/396 G) Extra-firm Tofu",
+        "unit": null,
+        "notes": "cut to 1/2” (1 cm) squares and pat dry",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "cut to 1/2” (1 cm) squares",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "cut to 1/2” (1 cm) squares",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c3e365754e8111bd66b5ce6dbe506fc4f591f21c65b9aae3ceaef8a05a6801af",
+    "lineage_hash": "da479f2eccdb44513fecd14cefbf5a4d8f8cf548e7025ab5c8eeab14948f0b97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/black-pepper-tofu/",
+    "fetchedAt": "2026-08-02T10:06:57.918Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/black-pepper-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

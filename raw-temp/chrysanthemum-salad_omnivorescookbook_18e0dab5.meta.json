@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/chrysanthemum-salad/",
+  "slug": "chrysanthemum-salad_omnivorescookbook_18e0dab5",
+  "title": "Chrysanthemum Salad",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T21:19:40.521Z",
+  "ldName": "Chrysanthemum Salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Asian",
+  "ldCategory": "Salad",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "8 oz (220 g) chrysanthemum greens ((yield about 6 oz / 170 g washed &amp; trimmed))",
+    "1 tablespoon Chinkiang vinegar",
+    "2 teaspoons soy sauce",
+    "1 1/2 teaspoons sugar",
+    "1/4 teaspoon salt",
+    "1/2 teaspoon sesame oil",
+    "1 tablespoon peanut oil",
+    "2 cloves garlic (, chopped)",
+    "1 ” (2.5 g) ginger (, shredded)",
+    "6  dried chilis (, chopped (or 3 thai chilis, deseeded &amp; sliced))"
+  ],
+  "ldInstructionsRaw": [
+    "Thoroughly wash the chrysanthemum greens with running water and let air dry. You can also use a few layers of kitchen paper towels to pat dry. One done, chop them into bite-size pieces and add to a large heat proof bowl.",
+    "Combine the sauce ingredients in a small bowl and set aside.",
+    "Heat the oil in a small pan over low heat and add the garlic, ginger, and chilis. Fry slowly until the garlic begins to brown lightly.",
+    "Pour in sauce and turn off the heat.",
+    "Stir the sauce into the oil briefly, then pour over the chrysanthemum leaves. Immediately toss everything with a pair of tongs to evenly mix the sauce. Set aside and let the leaves wilt for about 2 minutes.",
+    "Serve immediately as an appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "59 kcal",
+    "carbohydrateContent": "4.4 g",
+    "proteinContent": "1.2 g",
+    "fatContent": "4.2 g",
+    "saturatedFatContent": "0.7 g",
+    "sodiumContent": "334 mg",
+    "fiberContent": "0.8 g",
+    "sugarContent": "2.3 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz (220 g) chrysanthemum greens (yield about 6 oz / 170 g washed & trimmed)",
+    "[Sauce]",
+    "1 tablespoon Chinkiang vinegar",
+    "2 teaspoons soy sauce",
+    "1 1/2 teaspoons sugar",
+    "1/4 teaspoon salt",
+    "1/2 teaspoon sesame oil",
+    "[Cooking]",
+    "1 tablespoon peanut oil",
+    "2 cloves garlic , chopped",
+    "1 ” (2.5 g) ginger , shredded",
+    "6 dried chilis , chopped (or 3 thai chilis, deseeded & sliced)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

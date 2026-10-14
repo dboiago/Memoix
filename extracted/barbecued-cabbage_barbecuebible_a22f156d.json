@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Barbecued Cabbage",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt 1 tablespoon of the butter in a skillet over medium heat. Add the bacon and onion and cook until just beginning to brown, 3 to 5 minutes. Drain the bacon and onion in a strainer over a bowl and reserve the drippings. Crumple a piece of aluminum foil and shape it into a ring about 3 inches in diameter.",
+      "Cut the core out of the cabbage and discard. Cut the remaining butter into dice. Stir the barbecue sauce into the bacon and onion mixture. Prop the cabbage upright on the aluminum foil ring, cavity facing up.",
+      "Place the bacon and onion mixture in the cavity and top with as many pieces of butter as will fit. Using a basting brush, paint the outside of the cabbage with bacon drippings (save any remaining bacon fat for basting pork chops or making baked beans). Season the cabbage lightly with salt and generously with pepper.",
+      "Set up the grill for indirect grilling and preheat to medium. If using a gas grill, place all the wood chips in the smoker box or in a smoker pouch and pre- heat on high until you see smoke, then reduce the heat to medium.",
+      "When ready to cook, place the cab- bage on its aluminum foil ring in the center of the hot grate away from the heat. If using a charcoal grill, toss all the wood chips on the coals. Cover the grill.",
+      "Grill the cabbage until very tender (when done it will be easy to pierce with a skewer), 1 to 1-1/2 hours. If using a charcoal grill, you’ll need to add 12 fresh coals per side after 1 hour if the cabbage is not done. To serve, peel off any dried-out or charred outside leaves and discard. Cut the cabbage into wedges and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon (1/4 Pound; Preferably Artisanal)",
+        "unit": "slices",
+        "notes": "cut crosswise into 1/4-inch slivers",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-size Green Cabbage",
+        "unit": null,
+        "notes": "about 2 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19557d9e9e6e171d36b8d16ed8ca846c873289f262c993d8a0136135d7425ec8",
+    "lineage_hash": "187efffe425953ded304185d09fa53edce9cd4505b097295541b86adaa0a24e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/barbecued-cabbage/",
+    "fetchedAt": "2026-08-03T05:43:54.813Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/barbecued-cabbage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

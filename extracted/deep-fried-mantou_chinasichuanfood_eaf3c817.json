@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Deep Fried Mantou",
+    "time": "12 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "398",
+      "carbohydrateContent": "20",
+      "fatContent": "25",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Divide your buns into two groups: one for steaming and the other for deep-frying.",
+      "Steam one group until hot.",
+      "In a pot, heat up enough oil for around 7 minutes over medium until medium hot; add the buns in to fry until golden brown. During the process, the buns will keep floating on the surface. Press them down to soak them in the oil for evenly deep-frying.",
+      "Transfer out and filter the extra oil.",
+      "How to serve: Pour the condensed milk in a small bowl and place the dipping bowl in the center of your serving plate and then lay the steamed buns and fried buns one by one.",
+      "Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Steamed Buns",
+        "unit": null,
+        "notes": "depending on the size of your serving plate.",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "or more as needed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": "for serving",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3941800c80b8be39f2770532c0e99f418597dcd80f7ad998b7973e4fb9e19d2",
+    "lineage_hash": "ec805fd2b4770236e5da8b0581b47db599116938a994ecfa1f76c1914d0a9bae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/fried-mantou-with-condensed-milk/",
+    "fetchedAt": "2026-08-01T22:22:43.951Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/fried-mantou-with-condensed-milk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

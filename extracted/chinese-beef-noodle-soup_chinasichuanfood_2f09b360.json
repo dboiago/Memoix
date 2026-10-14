@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Noodle Soup",
+    "time": "1 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "739",
+      "carbohydrateContent": "90",
+      "fatContent": "16",
+      "proteinContent": "57"
+    },
+    "directions": [
+      "Cut beef into larger chunks and then place in a large pot with enough cold water. Throw one spring onion and several ginger slices, bring to a boil and then pick the beef chunks out (so there will be no floating dirt on the meat and we can skip rinsing process.) Drain.",
+      "Heat up around 2 tablespoons of oil in a deep stewing pot and fry doubanjiang for half minute over slow fire, then place garlic, ginger, leek onion and red onion in, fry until aromatic.",
+      "Return cooked beef and stir for several minutes until the beef is slightly browned, place tomato wedges and add warm stock to cover all the content. Bring to boil and then slow down the fire and simmer for around 1 hour.",
+      "Pick the beef out and strain the liquid to remove cooked vegetables and spices, add salt to taste (the soup can be slightly salty compare with common soups)and simmer for another 15-20 minutes.",
+      "During this period, cook noodles according to package instructions. You can either serve wide noodles or thin noodles. Transfer noodles to serving bowl, pour in soup base and top with beef. Garnish chopped green onion and decorate with coriander."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shank",
+        "unit": "g",
+        "notes": "alt: sirloin",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Bone Stock",
+        "unit": "L",
+        "notes": "alt: pork stock",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion and Coriander",
+        "unit": null,
+        "notes": "chopped, for garnishing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Coriander",
+        "unit": null,
+        "notes": "for decorating",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noodles",
+        "unit": null,
+        "notes": "for 3-4 servings",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bark Chinese Cinnamon",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a8a92dbaf7389146b4a5271c0506d58937085a07737b5e75895876b2cb127e8e",
+    "lineage_hash": "25839d3fcca0dafae12bff027ad9d46499225c186fdb9b86778ccf4532ed96cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-beef-noodle-soup/",
+    "fetchedAt": "2026-08-02T02:32:52.976Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-beef-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Big Bad Beef Ribs",
+    "time": "10 to 12 hours",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim any papery membrane off the ribs and place on a sheet pan.",
+      "Season the ribs generously on all sides with the salt, peppercorns, and hot red pepper flakes.",
+      "You can smoke the ribs right away, but if you have the time, you’ll get a deeper, richer flavor if you cure the ribs, covered, overnight in the refrigerator.",
+      "Set up your smoker according to the manufacturer’s instructions and preheat to 225 degrees. If your smoker has a water pan, fill it with 2 inches of water or beer. If not, place a foil pan with 2 inches of water or beer below where you’ll be cooking the ribs. Add wood as specified by the manufacturer.",
+      "Place the ribs in the smoker meat and fat side up with at least 2 inches between each rib. Smoke the ribs until darkly browned on the outside, and very tender inside, about 10 to 12 hours. To test for doneness, insert a metal skewer—it should pierce the meat easily. Another test for doneness is an instant-read meat thermometer—insert it parallel to but not touching the bone: the meat should be 195 degrees. Finally, when cooked, the meat will have shrunk back 1/2 to 1 inch from the end of the bones.",
+      "Transfer the ribs to a large foil pan with 1 cup of beef stock at the bottom. Loosely cover the pan with foil and place in an insulated cooler (or in an oven preheated to 140 degrees) and let the ribs rest, loosely covered with foil, for 1 hour before serving.",
+      "Just before serving, season each rib with a few crystals of sea salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full Plate Short Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c10c70b972fe2a8388af65e70db745a05992d64abc12c2182281b5424f387a6",
+    "lineage_hash": "b8aaf9b17555de77b0d3a45787858e3370571c7131be9bc96ce0d530b7676d1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/big-bad-beef-ribs/",
+    "fetchedAt": "2026-08-03T05:57:45.999Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/big-bad-beef-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

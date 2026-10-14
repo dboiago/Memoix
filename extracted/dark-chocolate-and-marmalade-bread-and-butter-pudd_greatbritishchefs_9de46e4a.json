@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate and Marmalade Bread and Butter Pudding",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150°C/gas mark 2. Grease 3 small (or 1 medium) heat proof ramekins really well with butter",
+      "Butter one side of each of the pieces of bread. Tear the bread into medium chunks and spread one layer, butter side up across the bottom of each dish",
+      "Sprinkle evenly with half the chocolate chips and little blobs of marmalade. Layer with more bread, followed with the rest of the chocolate and some more marmalade. Layer the rest of the bread over the top. You’ll need roughly one and a half slices of bread per portion",
+      "Separate the egg yolks into the bottom of a medium jug. In a small saucepan add the caster sugar, milk and the half vanilla pod. Split the vanilla pod down the middle with a sharp knife and scrape out the seeds. Add the seeds and the pod to the milk and sugar mixture",
+      "Gently warm over a medium to high heat, whisking occasionally to dissolve the sugar. Once the milk is just boiling, remove from the heat and fish out the vanilla pod, and discard. Slowly pour the hot milk into the egg yolks, whisking vigorously",
+      "Divide the custard mixture between the three dishes, stopping just as you reach the top layer of bread; this will insure a crunchy topping. Sprinkle each portion with demerara sugar, and bake in the oven for 30 minutes, or until the custard is set and the pudding has puffed up. Brown the top under a hot grill for a few minutes",
+      "Alternatively, if you cook on an AGA, bake the puddings on the bottom of the roasting oven for 20 minutes, and finish on the rack at the top of the roasting oven"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marmalade",
+        "unit": "g",
+        "notes": "thick cut",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "large",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81f361a23a0d505f975eabd7fc0874c511672f0a1f27ddc368d5f22b2fcd9247",
+    "lineage_hash": "adafd0dbe661a4e6b4f8234e08c28de7b985176452e04329474e69726102c7fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-marmalade-bread-butter-pudding-recipe",
+    "fetchedAt": "2026-08-03T22:45:49.128Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-marmalade-bread-butter-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

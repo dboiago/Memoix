@@ -1,0 +1,30 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/apple-sorbet-recipe",
+  "slug": "apple-sorbet-recipe_greatbritishchefs_6032e12d",
+  "title": "Apple Sorbet Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-03T17:41:31.929Z",
+  "ldName": "Granny Smith apple sorbet",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "5 Granny Smith apples",
+    "570ml of sugar syrup",
+    "2 lemons, juiced"
+  ],
+  "ldInstructionsRaw": [
+    "Peel and core the apples, then chop the flesh. Place in a suitable container and freeze until the apples are hard and frozen",
+    "Place the chopped frozen apples in a blender with the sugar syrup and lemon juice. Blitz until smooth, then pass through a fine sieve",
+    "Churn the mix in an ice cream maker, then keep frozen until ready to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

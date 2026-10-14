@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Cranberry Sauce with Red Wine and Figs",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a non-reactive saucepan, heat the red wine and diced figs together until the wine is hot. Cover, remove from heat, and let stand 30 minutes, to soften the figs.",
+      "Drain the figs then add the wine back to the saucepan along with the cranberries, candied orange, sugar, and allspice or cinnamon and cook, covered, over medium heat until the cranberries have burst and are softened, about 10 minutes.",
+      "Remove from heat and stir the figs and the vinegar into the cranberries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fruity Red Wine",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "C",
+        "notes": "170g, diced, dried, hard stems removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Cranberries",
+        "unit": "oz",
+        "notes": "340g, fresh",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange",
+        "unit": "C",
+        "notes": "100g, diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Allspice",
+        "unit": "tsp",
+        "notes": "alt: cinnamon",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "tsp",
+        "notes": "alt: red wine vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93a73f3fcc42ea7cf3f5dbb1a34c9361d30ae45f86d9c2422803aa2d8781a8dc",
+    "lineage_hash": "8a9a21e533ccf709ecb544c1c4aabb72e272109298f5fce081916834e69175dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cranberry-sauce-recipe-with-red-wine-and-figs/",
+    "fetchedAt": "2026-08-03T02:50:51.949Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cranberry-sauce-recipe-with-red-wine-and-figs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

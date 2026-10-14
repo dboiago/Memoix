@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Chinese Style Pork Spare Ribs",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ribs in a suitable saucepan",
+      "Add the Essential Cuisine Master Stock Base, the Essential Cuisine Pork Glace, water, ginger, garlic and star anise",
+      "Bring to the boil and gently simmer until the pork meat feels tender on the rib, stirring occasionally",
+      "Remove the ribs from the cooking broth, cover and allow to cool. Ribs can be cooled in the broth before removing, if you have time?",
+      "Add the orange juice, tomato and sugar",
+      "On a high heat, rapidly reduce the broth by three quarters",
+      "Stir in the yellow bean sauce, soy, rice wine and honey",
+      "Bring back to the simmer and adjust the consistency by reducing further to a sticky marinade",
+      "Allow to cool to room temperature, pour the marinade over the tender ribs and mix well, chill overnight",
+      "Remove the ribs from the marinade, grill on a barbecue, basting occasionally with the marinade, or leave in the marinade and cook in the oven at 180˚c, turning halfway for 20 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese-style",
+        "unit": null,
+        "notes": "separated pork ribs",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Essential Cuisine Master Stock Base",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Essential Cuisine Pork Glace",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to cover the ribs",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "cm",
+        "notes": "fresh, finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Tomatoes",
+        "unit": null,
+        "notes": "skinned, seeded and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bean Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine (shaohsing)",
+        "unit": "ml",
+        "notes": "alt: dry sherry",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Runny Honey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": "season to taste, if required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6017898e2f4b07107f5f33e479fbbae0b4a2a404c7b2598394b87376d495392d",
+    "lineage_hash": "5ada74902a14621bac2dbb9e3bf0550381ee248a6310efa618d324ac3dbe52fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Chinese-Style-Pork-Spare-Ribs",
+    "fetchedAt": "2026-08-03T13:20:40.587Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Chinese-Style-Pork-Spare-Ribs",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

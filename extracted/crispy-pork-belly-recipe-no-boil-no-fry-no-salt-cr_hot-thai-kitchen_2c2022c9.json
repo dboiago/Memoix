@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Crispy Pork Belly (หมูกรอบ)",
+    "time": "25 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a meat tenderizer, poke as many holes as you can in the pork skin, being careful not to go too deep and puncture the meat. (You can also use metal skewers but it's not ideal.)",
+      "Wash your hands so you don't get any spices onto the skin. Turn the pork skin side up. Sprinkle about ¼ teaspoon of salt thoroughly over the skin. Let sit for about 20 mins until you see lots of water drawn up out of the skin. Dab it dry with paper towel and brush off any remaining grains of salt. Place pork into a container and refrigerate, UNCOVERED, for at least 18 hours and up to 24 hours to dry out the skin.",
+      "Place the pork on a rack and roast on the middle shelf at 350°F (180°C) for 50-60 mins, or until internal temp reaches a minimum of 145°F. 50 minutes will get you beautifully juicy, slightly pink pork (safe and delicious), if you prefer the pork well done and a little dryer, roast for 60 minutes. _Tip: You can take the pork to this stage up to 4 hours in ahead of serving, let it sit at room temp, and broil the skin about 40 minutes before serving._",
+      "If there's any fat pooling on the pork skin, dab it dry with paper towel, then put the pork under the preheated broiler (on high) about 10 inches away from the element. Broil for 10-20 minutes or until the skin is puffed and bubbly all over. KEEP AN EYE ON IT! There may be hot spots that require you to turn the pork around half way through. Or if the pork is getting too browned on one side you can tent it with foil.",
+      "Slice into bite-sized pieces (easiest to cut it with the skin facing sideways) and serve with the dipping sauce if you wish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Piece of Pork Belly",
+        "unit": "g",
+        "notes": "16 oz, see note, centre cut",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "5-spice Powder",
+        "unit": "tsp",
+        "notes": "I have a recipe for this one the website, or you can buy",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt for the Meat",
+        "unit": "tsp",
+        "notes": "plus another 1/4 tsp for the skin",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": "4 ml, finely, chopped, light brown sugar, or granulated sugar",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chili Flakes",
+        "unit": "tsp",
+        "notes": "alt: any spicy chili powder, 2.5 ml, add more or less to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Rice Powder",
+        "unit": "tsp",
+        "notes": "10 ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Chopped Green Onion",
+        "unit": null,
+        "notes": "optional, cilantro or mint",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "247c2c155e6cee021cb8e8543abf4d7da1674fe39554d6f3f76582c056110806",
+    "lineage_hash": "8ac1751324830f9bbe2d37680ac60fab61aa74cf25e70371135f1fcca43cf6ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/crispy-pork-belly/",
+    "fetchedAt": "2026-08-02T04:24:16.930Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/crispy-pork-belly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

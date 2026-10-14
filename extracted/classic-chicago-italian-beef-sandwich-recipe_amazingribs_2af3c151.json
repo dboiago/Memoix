@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Chicago Italian Beef Sandwich",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "324",
+      "carbohydrateContent": "25",
+      "fatContent": "9",
+      "proteinContent": "33"
+    },
+    "directions": [
+      "Prep. If you wish, you can stab the surface of the meat every inch or so and stick slivers of fresh garlic into the meat as does my brother-in-law. If you do this, leave the garlic out of the rub. Otherwise, mix the rub in a bowl. Coat the meat lightly with water to help the rub stick, sprinkle it generously on the meat, and massage it in. There will be some left over. Do not discard it, we will use it in the juice.",
+      "Fire up. If you are cooking indoors, put a rack just below the center of the oven and preheat to 225°F (107°C). If you are cooking outdoors use a 2-zone setup or a smoker and get it the oven or the indirect side up to about 225°F (107°C).",
+      "Cook. Pour the water into a 9 x 13\" (22 x 33cm) baking pan and heat it to a boil. Dissolve the bouillon in the water. It may look thin, but it will cook down and concentrate during the roasting. Pour the remaining rub into the pan. Place a rack on top of the pan and place them both on the indirect side of the grill or in the oven indoors. Place the roast on top of the rack above the juice. Roast at 225°F (107°C) until interior temperature is about 130-140°F (54-60°C) for medium rare, about 3 hours (exact time will depend on the cut of meat, its thickness, and how well calibrated your cooker is). This may seem long, but you are cooking over water and that slows things down. Don't worry if there are people who won't eat medium-rare meat. The meat will cook further in step 5, and you can just leave theirs in the juice until it turns to leather if that's what they want.",
+      "While the meat is roasting (mmmmm, smells sooooo good), cut the bell peppers in half and remove the stems and seeds. Rinse, and cut into 1/4\" (6.3 mm) strips. Cook the peppers in a frying pan over a medium high heat with enough olive oil to coat the bottom, about 2 tablespoons. When they are getting limp and the skins begin to brown, about 15 minutes, they are done. Set aside at room temp.",
+      "Prep again. Remove the roast and the juice pan. Take the meat off the rack and remove the rack. Pour off the juice, put the meat back in the pan, and place it in the coldest part of the refrigerator. Let it cool for a few hours, long enough for the meat to firm up. This will make slicing easier. Chill the juice, too, in a separate container. Slice the meat against the grain as thin as humanly possible, preferably with a meat slicer. My wife remembers that her family would cook the roast and take it to the butcher to slice on his machine. That's a good strategy if you don't have a meat slicer but it may be against your local health codes. If you don't have a slicer, use a thin blade and draw it along the meat. If you try to cut down or saw through the crust you will be cutting it too thick.",
+      "Next, taste the juice. If you want you can thin it with more water, or make it richer by cooking it down on top of the stove. In Chicago beef stands it is rich, but not too concentrated. Then turn the heat to a gentle simmer. Soak the meat in the juice for about 1 minute at a low simmer. That's all. That warms the meat and makes it very wet. You can't leave the meat in the juice for more than 10 minutes or else it starts to curl up, squeezes out its natural moisture, and toughens. If you go to a beef stand and the meat is really curly, they have committed a mortal sin. At Mr. Beef, for example, I watched them take a handful of cooked beef and dump it into the juice every time they took out enough for a sandwich. This also enriches the juice with meat protein and seasoning from the crust.",
+      "Serve. Slice the rolls lengthwise but leave them hinged on one side. Or slice a loaf of Italian bread the same way, then cut it widthwise into 10 portions. To assemble the sandwich, start by spooning some juice directly onto the bread. Get it wet. Then lay on the beef generously. Spoon on more juice (don't burn your hand). Top it with bell pepper and, if you wish, giardiniera. If you want it \"wet\", dip the whole shootin' match in juice. Be sure to have plenty of napkins on hand. You can also try one of the following variations of the classic:Da Combo. Most Italian beef joints offer a \"combo,\" which also has a grilled Italian sausage nestled in with the beef (shown being made at Al's in a photo at right). These are thick, uncured, coarsely ground pork sausages in natural casings, flavored with fennel, paprika, black pepper, red or green bell peppers, onions, garlic, parsley, and crushed red chili peppers for some heat. Italian sausages are made in your choice of hot, medium, or mild (sometimes called sweet).Da Cheef. Cover it with shredded mozzarella and/or provolone, broil for a few minutes, and you have a \"cheesy beef\" or \"cheef\". Not many stands offer this mutant strain.Wit Gravy. An even rarer and more heretical variant, topped with marinara.Da Soaker. Just dip the bread in the juice and you have the classic laborer's lunch, a soaker, a.k.a. \"sugo pane\", or gravy bread. Sugo pane is also commonly made with marinara sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Sirloin",
+        "unit": "lb",
+        "notes": "alt: round roast, boneless",
+        "amount": "3",
+        "section": "The Beef",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "The Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "The Juice",
+        "isOptional": false
+      },
+      {
+        "name": "Cubes Beef Bouillon",
+        "unit": null,
+        "notes": "yes, bouillon, see the explanation below",
+        "amount": "4",
+        "section": "The Juice",
+        "isOptional": false
+      },
+      {
+        "name": "Soft",
+        "unit": null,
+        "notes": "Gonnella, Turano, and D’Amato are the bakers of choice in Chicago, fluffy, high gluten rolls or a big Italian bread loaf",
+        "amount": "10",
+        "section": "The Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "The Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Spicy Hot Giardiniera",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "The Sandwich",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a818b0365609f20e2d43dbc7809a045345fc8bd4e58df522e5a485c34e8a71a",
+    "lineage_hash": "6d92d116ed4b0d6254a3b040a59329cd9869f6e91cb0119c6fba31dfbf874bcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/chicago-italian-beef-sandwich-recipe/",
+    "fetchedAt": "2026-08-02T08:19:49.327Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/chicago-italian-beef-sandwich-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

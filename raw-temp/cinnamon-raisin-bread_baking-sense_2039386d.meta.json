@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2022/09/15/swirled-cinnamon-raisin-bread/",
+  "slug": "cinnamon-raisin-bread_baking-sense_2039386d",
+  "title": "Cinnamon Raisin Bread",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:53:58.109Z",
+  "ldName": "Cinnamon Raisin Bread Recipe",
+  "ldTime": "PT185M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "16",
+    "16 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breads",
+  "ldKeywords": "cinnamon, raisin",
+  "ldIngredientsRaw": [
+    "12 oz whole milk (1 ½ cups)",
+    "1 oz unsalted butter",
+    "4 oz granulated sugar",
+    "2 ¼ teaspoons instant dry yeast (1 packet)",
+    "15 oz all purpose flour (3 cups, see note)",
+    "4 teaspoons ground cinnamon",
+    "1 ½ teaspoons table salt",
+    "5 oz raisins (1 cup)",
+    "1  egg for egg wash"
+  ],
+  "ldInstructionsRaw": [
+    "Warm 12 oz&#32;whole milk in the microwave to about 110°F. Stir 1 oz&#32;unsalted butter into the warm milk to melt.",
+    "In the bowl of a stand mixer or a large mixing bowl, combine the milk, 1 oz&#32;granulated sugar, the yeast and 10 oz&#32;all purpose flour. Mix to form a loose batter. Cover the bowl and set the sponge aside for 30-60 minutes.",
+    "Uncover the bowl with the sponge. Add 1 teaspoons&#32;ground cinnamon and 1 ½ teaspoons&#32;table salt. Stir to combine. Use the dough hook if working on a stand mixer.",
+    "With the mixer running, slowly add the remaining 5 oz&#32;all purpose flour until the dough gathers on the hook and clears the sides of the bowl. If mixing by hand, stir in as much flour as you can then turn the dough out onto a floured surface and knead in the remaining flour. Knead for about 5 minutes to develop the gluten in the dough.",
+    "Remove the dough from the bowl onto a lightly floured surface. The dough should be soft and slightly sticky. Knead 5 oz&#32;raisins into the dough then form it into a smooth ball. If the dough is very sticky sprinkle a little more flour as you knead.",
+    "Place the dough in an oiled bowl, turning once to coat the dough. Cover with plastic wrap and set aside in a warm spot to rise for about 1-1.5 hours hours, until doubled in size. (At this point the dough can be refrigerated overnight and continue with shaping the loaf in the morning.)",
+    "Generously butter a 9&quot;x 5&quot; loaf pan. Combine 3 oz&#32;granulated sugar and 3 teaspoons&#32;ground cinnamon in a small bowl.",
+    "Turn the dough out onto a floured surface and roll it into a 8&quot;x16&quot; rectangle. Brush the dough with egg wash then sprinkle with the cinnamon sugar. Roll the dough from the short side to form a log. Pinch the seam to form a tight seal.",
+    "Set the dough into the pan, seam side down. Cover with plastic wrap. Set in a warm place and rise until the dough fills the pan and comes about 1&quot; over the top, about 1 hour (may take a little longer if the dough had been refrigerated).",
+    "Preheat the oven to 350°F. Brush the loaf with egg wash. Bake about 40 minutes until golden brown and the interior temp is 200°F.",
+    "If any raisins on the surface look burnt you can pluck them off the loaf. Cool in the pan about 10 minutes before turning out onto a cooling rack. Finish cooling to room temperature before slicing,"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "178 kcal",
+    "carbohydrateContent": "36 g",
+    "proteinContent": "4 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "6 mg",
+    "sodiumContent": "230 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "8 g",
+    "unsaturatedFatContent": "1.2 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz whole milk (1 ½ cups)",
+    "1 oz unsalted butter",
+    "4 oz granulated sugar",
+    "2 ¼ teaspoons instant dry yeast (1 packet)",
+    "15 oz all purpose flour (3 cups, see note)",
+    "4 teaspoons ground cinnamon",
+    "1 ½ teaspoons table salt",
+    "5 oz raisins (1 cup)",
+    "1 egg for egg wash"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "name": "Cornell Chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Spatchcock the chickens: If there is a package of giblets, remove it from the cavity of the chicken. Rinse the chicken inside and out under cold water and blot it dry with paper towels. Place the bird, breast side down, on a cutting board. Using poultry or kitchen shears or a sharp knife, cut through the flesh and bone along both sides of the backbone so that you can completely remove the backbone.",
+      "Open the bird like a book by gently pulling the halves apart. Using a sharp paring knife, cut along and under both sides of the breastbone and cartilage attached to it. Discard the breastbone. Cut off the tips of the wings. Spread the bird out flat. Repeat with the other chicken.",
+      "Using the tip of the knife, make a slit in the loose skin between the lower end of the breast and the leg, on each side, approximately 1/2-inch long. Stick the end of each drumstick through the slit on that side. This step is optional, but it makes the bird look cool.",
+      "Prepare the basting mixture. Place the egg in a food processor and process to mix. Work in the oil in a thin stream, followed by the vinegar, salt, poultry seasoning, and pepper. Alternatively, the ingredients can be placed in a bowl and mixed with a whisk. Set the basting mixture aside.  (See NOTE below.)",
+      "Set up your grill for direct grilling and preheat to medium. Brush and oil the grill grate.",
+      "Arrange the chickens on the grill grate bone side down. Immediately start basting the chicken halves with the basting mixture. Baste generously and often—once every 3 to 5 minutes. (Stir the basting mixture as you use it.) Continue grilling until the chicken halves turn a rich golden brown and the meat is cooked through, 15 to 20 minutes per side. (To test for doneness, lift the leg and make sure there are no remaining traces of red at the hip joint. Alternatively, insert a meat thermometer into the thickest part of the thigh—it should read 170 degrees.)",
+      "Serve the chicken at once with the following barbecue sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Roaster Chickens (each 3-1/2 to 4 Pounds)",
+        "unit": null,
+        "notes": "preferably organic",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b70b0abf4115476d8dcdcaf12f1004579eef92f9ebfe68a19534e5a276bdad7",
+    "lineage_hash": "6d42461ebe1f5c50ff2149854696720651a68af73e8b8b8e5d00ebf18fe43f05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cornell-chicken/",
+    "fetchedAt": "2026-08-03T06:27:07.225Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cornell-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Baja-Style Seafood Cocktail",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the diced cucumber in a colander and sprinkle with salt. Stir to ensure each piece is well-coated, then leave for ten minutes. Wash with cold water and set aside",
+      "While the cucumber is curing, bring a large pan of water to the boil and add the prawns. Cook for about 45 seconds, then drain and transfer to in an ice bath. Once cool enough to handle, peel and cut the meat into 1cm pieces",
+      "Combine the cucumber, lemongrass, tomatoes, prawns, octopus, red onion and jalapeno in a large bowl, then stir in the chipotle and tabasco. Pour in the lime and orange juices and season with a big pinch of salt and pepper",
+      "Combine the fish sauce, lime juice and sriracha to make a cocktail sauce, then stir this through the other ingredients",
+      "Add the avocado and coriander and mix again, being careful to not bruise the avocado. Taste the mixture for seasoning and add more salt, pepper, chilli or lime juice to taste",
+      "Garnish with a lime wedge and the fennel fronds (if using). Serve with nacho chips, tostadas or crackers to spoon the mixture onto"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large Prawns",
+        "unit": "g",
+        "notes": "in their shells",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Octopus",
+        "unit": "g",
+        "notes": "cooked and sliced into 1cm pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "seeds removed and diced",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalk",
+        "unit": null,
+        "notes": "outer leaves removed and minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "large, seeds removed and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "deseeded and diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chilli",
+        "unit": "Tbsp",
+        "notes": "in adobo sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "peeled, pitted and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": "to garnish (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d044ffe18f2b8202fe0173220e1c1b10f00412615fea5a4611ae00a4040af92",
+    "lineage_hash": "90aed4cb172ca1405b3ae269fc7afc559390d25dfbd4ece644df7df1a551cd09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baja-seafood-cocktail-recipe",
+    "fetchedAt": "2026-08-03T07:27:43.291Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baja-seafood-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

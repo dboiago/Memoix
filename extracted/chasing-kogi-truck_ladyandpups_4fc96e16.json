@@ -1,0 +1,320 @@
+{
+  "recipe": {
+    "name": "Korean BBQ Tacos",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the short ribs into bite-size pieces but in VERY IRREGULAR shapes, meaning pieces bigger or smaller than the others with pointy edges and deep scores.",
+      "Place in a large zip-lock bag and set aside.",
+      "Combine all the rest of the ingredients in marinate in a blender, EXCEPT FOR the siracha sauce. Blend until very smooth.",
+      "Pour everything into the zip-lock bag and rub thoroughly to make sure every pieces of beef is in contact with the marinate.",
+      "Leave it in the fridge to marinate for at least overnight.",
+      "Before cooking the meat, prepare the salad and steam the tortilla.",
+      "Cut the romaine lettuce in thin slices. Shave the baby radishes and shallots through a fine shaver (a truffle shaver is very handy for this job).",
+      "Cut the tomato in half and use your fingers to squeeze out the liquid and seeds, then dice finely.",
+      "Combine all of the above with chili flakes and toasted sesame in a big bowl.",
+      "Grate the garlic (microplane grater works well here) and combine it with lime zest, vinegar, sesame oil and a pinch of sea salt.",
+      "Set aside. ONLY add the vinaigrette to the greens RIGHT BEFORE serving.",
+      "Put tortillas on a plate and cover with foil. Steam in a steamer for 3 min to heat up. Turn off the heat and keep them warm in the steamer.",
+      "Heat up a NON-STICK, flat and shallow pan over high heat. The reason why it’s important that it’s non-stick is because we want the caramelization on the meat to STAY ON the meat, NOT sticking to the bottom of the pan which is great for pan sauce but… that’s not today.",
+      "Add 1 tbsp of oil and start pan-frying the meats, try NOT to include too much liquid from the marinate otherwise it would be hard to brown.",
+      "Cook the meat in 2~3 batches and do not over-crowd the pan. Each pieces of meat should have at least 1/2\" (2cm) of space between each other.",
+      "Don’t move them too much because we want a good amount of browning on each pieces.",
+      "Cook until each and every piece of beef is nicely browned with dark caramelization on the tips.",
+      "Move them out of the pan with a slotted spoon and repeat with the 2nd batch.",
+      "Once all the meat is nicely browned and cooked, put all of it in a large bowl. Use a scissor to roughly cut them up, then add 1 1/2 tbsp of siracha sauce and toss to combine.",
+      "Add the vinaigrette to the greens and toss evenly.",
+      "Lay 1 tortilla (or 2 as how the Kogi truck does it) on a plate, then top it with the short ribs and lots of salad.",
+      "Squeeze a bit of lime over the top and serve. You could add the garlic chili sauce for more heat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Ribs",
+        "unit": "g",
+        "notes": null,
+        "amount": "580",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "about the size of 1 tbsp",
+        "amount": "1",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Medium-size Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pear",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Kiwi",
+        "unit": null,
+        "notes": "or a small tangerine",
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Paste",
+        "unit": "Tbsp",
+        "notes": "gochujang",
+        "amount": "2½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or substitute with dark brown sugar if unavailable",
+        "amount": "1",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "Tbsp",
+        "notes": "alt: rice wine",
+        "amount": "1",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Beef Short Ribs and Marinate",
+        "isOptional": false
+      },
+      {
+        "name": "Siracha Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "To finish",
+        "isOptional": false
+      },
+      {
+        "name": "Romaine Lettuce",
+        "unit": "head",
+        "notes": null,
+        "amount": "1",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Radishes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sushi Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Salad and Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Flour Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": "To finish",
+        "isOptional": false
+      },
+      {
+        "name": "Sambal Oelek",
+        "unit": null,
+        "notes": "Asian garlic chili sauce",
+        "amount": "1",
+        "section": "To finish",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "for squeezing",
+        "amount": "1",
+        "section": "To finish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "037490b9c81c1a3d7fedb133b369ac9223c287964532548993b26ca16c55e200",
+    "lineage_hash": "e4d3b33086e0907e2814849e37c32a4ffc9cbbfb0687f6727b0c5dd4314d45b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2012/11/21/chasing-kogi-truck-eng/",
+    "fetchedAt": "2026-08-01T21:27:20.310Z"
+  },
+  "rawSource": "https://ladyandpups.com/2012/11/21/chasing-kogi-truck-eng/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

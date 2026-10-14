@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Damson Ketchup",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "500",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by halving and removing the stones from the damsons",
+      "Pour the olive oil into a large saucepan and add the onions, star anise, cinnamon, cloves and bay leaf. Season with a pinch of salt and cook until the onions are soft and translucent",
+      "Add the damsons with the cooked beetroot, vinegar, sugar and water and simmer for 10–15 minutes or until the damsons have broken down and released their juices",
+      "Transfer the contents of the pan (discarding the whole spices and bay leaf, unless you want a very spiced flavour) to a blender and blitz for a few minutes until you're left with a smooth purple ketchup",
+      "Taste and season with salt. Damsons can vary in their sourness so you may want to adjust sugar levels or add a splash more water until you are happy with the taste",
+      "Leave to cool then store in the fridge for up to 2 weeks"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "approx. 1 medium beetroot",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": "washed and any insects removed",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a997ec5c9481024db4953e95e48cd91388bcc4d78e360441e674ced6f19cfa93",
+    "lineage_hash": "4a0550d90a500029f6e824343c7e46d86a4419db226c48c6737c8d1743cc2eb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/damson-ketchup-recipe",
+    "fetchedAt": "2026-08-03T06:22:40.252Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/damson-ketchup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

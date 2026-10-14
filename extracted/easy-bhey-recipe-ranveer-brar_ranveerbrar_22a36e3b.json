@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Bhey कमल ककड़ी सब्ज़ी",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil water in a pot and add a little salt to it.",
+      "When the water comes to a boil add the sliced lotus stems to the water and let it cook for a minute or two â do not overcook.",
+      "Drain and put the lotus stems in cold water to stop the cooking and set aside.",
+      "Heat 4-5 tbsp. oil in a wok.",
+      "Add chopped garlic & ginger and sautÃ© for a minute.",
+      "Add sliced onions and sautÃ© till onions turn translucent.",
+      "Add coriander powder, turmeric powder, chili powder and salt.",
+      "Cook for a minute and then add 4 tbsp. of chickpea flour.",
+      "SautÃ© well for a minute or two.",
+      "Add sliced lotus stems and mix it well with the onion mixture.",
+      "Cover and cook for 15- 20 minutes till the lotus stems are just cooked.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lotus Stems",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced thin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7fd6e4cd3519384f6fa0964e69c32519d801344a1609c825509ad37b096092b9",
+    "lineage_hash": "18c50f03005b97fc30c226d4a53e00afc25bdc29b1b03e592e0a11ef3d00ccf3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhey/",
+    "fetchedAt": "2026-08-02T02:36:38.172Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

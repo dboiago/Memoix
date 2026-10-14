@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Cookies",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare all the ingredients.",
+      "In a mixing bowl, cream the softened butter with the granulated sugar and brown sugar.",
+      "Add the egg, vanilla extract (or vanilla sugar), and salt. Mix well.",
+      "Add the chocolate chips and baking powder.",
+      "Add the flour...",
+      "...and mix thoroughly with a spatula until a homogeneous dough is obtained.",
+      "Place this dough on a sheet of parchment paper. Shape it into a log.",
+      "Wrap the log in the parchment paper and tighten it with a spatula to form a regular log. Let it rest in the fridge for 2 hours.",
+      "Remove the parchment paper.",
+      "Using a knife, cut the dough log into 1/2 cm thick slices.",
+      "Place these slices on a greased baking sheet. Be sure to space them out to prevent sticking.",
+      "Bake in a preheated oven (180/200°C).",
+      "Bake until the desired colour is achieved. The more golden the cookies, the drier they will be.",
+      "After baking, let them rest for two minutes before removing them from the baking sheet with a flat spatula. Let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or 10 g of vanilla sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "147",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "50% Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d508f64ffabeeb154d8de97f3a99d47188caa5c5d3c65975059f30e30b1e7c2",
+    "lineage_hash": "55cb0fb6e9a6488cc8d29c220911924425188a2fa6809cadcc185ea1fdfcb6e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-chip-cookie.html",
+    "fetchedAt": "2026-08-02T06:14:56.848Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-chip-cookie.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chicken Do Pyaza",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take the chicken pieces in a bowl, add ginger garlic paste and salt to it. Mix well and keep it aside.",
+      "Heat ghee in a kadhai and add onions into it. Fry until it's golden brown in colour.",
+      "Add ginger garlic paste to it and mix. Cook until aromatic.",
+      "Pour the tomato puree and cook well. Let it release the oil.",
+      "In a bowl add yogurt, turmeric powder and red chilli powder. Mix well.",
+      "Once the tomato puree is well cooked, pour the yoghurt mixture and stir well.",
+      "Add salt and let the yogurt cook on medium low flame.",
+      "Drop in the marinated chicken pieces and mix. Cover with lid and cook.",
+      "Once the chicken gets half cooked, add garam masala powder, drop in the onion petals, green chillies and mix again. Cover with a lid, cook further until the chicken becomes nice tender and juicy.",
+      "Remove the lid and sprinkle kasuri methi on top. Mix it.",
+      "Cook for more 5 minutes and turn off the flame.",
+      "Garnish with fresh coriander leaves and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "curry cut, washed and cleaned",
+        "amount": "750",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Petals",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": "For Gravy",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6ca5e175c9da8ab799d89ec8e3bff82aec66df36f3afebd1f4f029c8e5f56e2",
+    "lineage_hash": "7c538de5ba1334e2ee9ad99e754e797d6ce2f970a718f579f6e6ccb0a854951b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-do-pyaza/",
+    "fetchedAt": "2026-08-02T13:39:17.799Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-do-pyaza/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

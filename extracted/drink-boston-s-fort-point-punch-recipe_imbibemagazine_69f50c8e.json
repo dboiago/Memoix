@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Boston's Fort Point Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In your favorite punch bowl, add the lemon peels and muddle with the sugar. Allow to stand until the oils extract from the peels into the sugar. Pour in everything except the Champagne. Stir to dissolve the sugar; then remove the lemon peels. Add large ice cubes and stir until partially diluted. To serve, top the punch with Champagne and garnish with lemon wheels and spices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Dram",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Champagne",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peel Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43924beaceb3bfd8fb60620e39afb4854807e5924ca00dbc1fadc99b85d46ff6",
+    "lineage_hash": "12b5da22a6269d71449e69db5f482ff8f84f5cd67598e05115e66a567af04db3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/drink-bostons-fort-point-punch-recipe/",
+    "fetchedAt": "2026-08-04T01:22:17.895Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/drink-bostons-fort-point-punch-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

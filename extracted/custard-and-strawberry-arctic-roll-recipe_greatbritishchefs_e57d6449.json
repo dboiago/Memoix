@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Custard and Strawberry Arctic Roll",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the ice cream. Bring the milk and cream to the boil in a saucepan. Once boiling, add the strawberries and remove from the heat, then leave to infuse for 1 hour",
+      "Whisk the eggs and sugar until pale. Bring the milk and strawberry mixture to the boil again, then pass through a fine sieve and pour slowly onto the eggs, whisking continuously. Transfer to the same pan and bring to 80˚C while stirring continuously",
+      "Allow to cool completely, then churn in an ice cream maker. Once ready, transfer to a large piping bag and freeze until required",
+      "To make the sponge sheets for the Arctic roll, whisk the eggs and sugar until pale and fluffy, then very gently fold in the flour and butter. Pour onto a flat baking tray lined with parchment paper and spread out to a thickness of 4mm, then bake in the oven for 8 minutes",
+      "To prepare the egg custard, start by making the pastry. Rub the butter, flour and sugar together in a mixing bowl to form a fine breadcrumb-like consistency. Mix in the egg and bring together gently to form a dough. Wrap in cling film and rest in the fridge for 45-60 minutes",
+      "Roll the pastry out and use it to line a rectangular tart tin (36 x 13 x 2.5cm). Blind bake with baking beans for 6-8 minutes, then brush with egg wash to seal and return to the oven for a further 2 minutes",
+      "To make the egg custard filling, mix the yolks and sugar together in a bowl. Meanwhile, boil the cream and gradually whisk into the yolk and sugar mix until combined. Pour into the tart case and bake for 1 1/2-2 hours until just cooked - it should have a slight wobble",
+      "For the strawberry gel, combine the strawberries with the water and sugar in a saucepan and place over a medium heat. Cook very gently to break down the strawberries until soft but not mushy",
+      "Transfer to a blender and blitz until smooth. Pass through a fine strainer to remove the seeds and return to a clean pan with the agar. While whisking, heat gently to dissolve the agar, then remove from the heat and store in a suitable flat container",
+      "Allow to cool to room temperature, then refrigerate until set. Once set, transfer back to the blender and blitz into a gel. Store in a squeezy bottle until required",
+      "To assemble the arctic roll, soften the ice cream slightly by leaving out for a few minutes. Place the sponge sheet onto a sheet of cling film and use a palette knife to spread a thin layer of the strawberry gel over the entire surface of the sponge. Pipe ice cream along one edge, roll the sponge around the ice cream and freeze",
+      "Before serving, mix the diced strawberries with the lime juice and set aside. Use a microplane to grate the nutmeg over the tart, then cut the tart into even portions and place onto plates",
+      "Cut a similar sized piece of the Arctic roll and arrange alongside the tart, using a small line of the strawberry gel to 'glue' it to the plate. Finish with small dots of the strawberry gel and diced fresh strawberries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted and kept warm",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "plus extra to egg wash",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "625",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "hulled weight",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2737997a320a764b345fb2bd6dab295c7d62f530e63e29bb81a73e0ca2476858",
+    "lineage_hash": "95b16fa4909865e08da30678fd5acebfd748b04583922bd7ef6e7fe0c74d5ce5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/arctic-roll-recipe",
+    "fetchedAt": "2026-08-03T15:27:37.452Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/arctic-roll-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

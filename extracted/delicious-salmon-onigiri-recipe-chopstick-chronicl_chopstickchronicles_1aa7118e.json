@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Salmon Onigiri",
+    "time": "10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "228",
+      "carbohydrateContent": "45",
+      "fatContent": "2",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Prepare the salmon: Salt the salmon the day before. Grill, bake, or pan-fry the salted salmon until cooked through. Alternatively, you can use leftover cooked salted salmon. Flake or break the cooked salmon to bite size and set aside.",
+      "Prepare the rice: Cook the Japanese short grain rice (sushi rice) according to the package instructions.  I usually use my rice cooker but if you don’t have a rice cooker, see this post to cook rice without a rice cooker. Once cooked, let it cool slightly before handling.",
+      "Shape the Onigiri: here are various ways to shape the onigiri either with a mold or by hand.",
+      "By hand with plastic wrap – Layer a rice bowl with plastic wrap. Place 1/2 cup of cooked rice. Make a small well in the middle of the rice. Place a piece of salmon in the center. Top with another 1/2 cup of rice to cover the salmon piece. Lift up the plastic wrap and wrap around the rice ball to shape.",
+      "By hand without plastic wrap – Wet your hands with water to prevent the rice from sticking. Place 1/2 cup of cooked rice. Make a small well in the middle of the rice. Place a piece of salmon in the center. Top with another 1/2 cup of rice to cover the salmon piece. Shape the rice round or triangle by squishing gently with your hands.",
+      "Using an onigiri mold – submerge the onigiri mold in a small bowl of water to wet the mold to avoid rice sticking to the mold.",
+      "Repeat this process until all the rice and salmon are used. Read more about shaping onigiri here.",
+      "Wrap the onigiri: Take a sheet of nori and cut it into strips or rectangles. Wrap each onigiri with a nori strip.  \\*You can buy nori sheets that are ready cut for rice balls in Japanese grocery stores/Asian stores. If it’s not available, cut the sushi nori sheets to size. I usually cut sushi nori sheets to 1/3 of the size.",
+      "Serve and enjoy: Your salmon onigiri is now ready! Serve them as a snack, bento box addition, or part of a larger Japanese meal. They can be enjoyed warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Shiosake",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nori Sheet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e782da6960c778e75bc4439add0df221769443ccb0a0c3b00c5dc4dda7138d2d",
+    "lineage_hash": "54ae1d2c89300db62e683613c829eba8f9c208969662764b54eae863a2e2a10d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/sake-onigiri/",
+    "fetchedAt": "2026-08-01T21:16:38.405Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/sake-onigiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

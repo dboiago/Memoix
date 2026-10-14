@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Celtuce Salad with Scallion Oil",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "91",
+      "carbohydrateContent": "4",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Peel the celtuce, removing all of the tough light green outer skin. Julienne the celtuce and transfer to a large bowl. Sprinkle with ½ teaspoon salt, and marinate for 10 minutes. (Not much longer, as this might draw too much liquid from the celtuce.)",
+      "In the meantime, cook the oil in a small saucepan over medium heat until it’s just smoking. Add the scallions and cook for a minute to infuse the oil. Turn it off, and let it cool.",
+      "Pour off the excess liquid from the celtuce and discard the liquid. Add the scallion oil, along with the sugar, sesame oil, apple cider vinegar, and additional salt to taste (if needed). Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celtuce",
+        "unit": "lb",
+        "notes": "about 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste if needed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "any neutral oil",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c31445f8a88524e5a958549d91fe013ced9782f31c27c2ae35e4877e1a109f4c",
+    "lineage_hash": "18ad32efe490180f4809c9001ce361eb1ce08941841cdc23ed91af6b58ee1695"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/celtuce-salad-scallion-oil/",
+    "fetchedAt": "2026-08-02T10:18:46.722Z"
+  },
+  "rawSource": "https://thewoksoflife.com/celtuce-salad-scallion-oil/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

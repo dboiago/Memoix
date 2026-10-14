@@ -1,0 +1,63 @@
+{
+  "url": "https://amazingribs.com/big-poppas-rib-snacks-recipe/",
+  "slug": "big-poppa-s-rib-snacks-an-appetizer-you-ll-crave_amazingribs_3a4fafee",
+  "title": "Big Poppa's Rib Snacks: An Appetizer You'll Crave",
+  "byline": "Clint Cantwell",
+  "fetchedAt": "2026-08-01T19:11:04.106Z",
+  "ldName": "Big Poppa's Rib Snacks Recipe",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT120M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "American, Southern",
+  "ldCategory": "Appetizer, Main Course, Snack",
+  "ldKeywords": "pork appetizer, pork ribs",
+  "ldIngredientsRaw": [
+    "3 pounds pork short ribs, cut crosswise into 1 1/2-inch-wide riblets (membrane removed)",
+    "3 tablespoons Big Poppa’s Sweet Money Seasoning",
+    "3 tablespoons Big Poppa’s Sweet Money Hot Seasoning",
+    "8 tablespoons unsalted butter (cut in small pieces)",
+    "3 tablespoons honey",
+    "3 tablespoons light brown sugar",
+    "1/4 cup Granny’s BBQ Sauce (plus some for finishing)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat your smoker to 275°F.",
+    "Season the pork riblets all over with the Big Poppa’s Sweet Money Seasoning and the Big Poppy&#39;s Sweet Money Hot Seasoning, ensuring an even coating on all sides.",
+    "Place the seasoned riblets in the preheated smoker and smoke them until they are about 80% cooked (they should have an internal temperature of about 170ºF), about 1 to 1 1/2 hours.",
+    "Remove the partially cooked ribs from the smoker to a cutting board. Carefully cut them between the bones into rib nuggets. Place the nuggets in a foil pan.",
+    "Scatter the butter pieces over the ribs, scatter on the brown sugar, and then drizzle on the honey and Granny’s BBQ Sauce evenly over the top. Finish with a dusting of Big Poppa’s Sweet Money Seasoning for an extra burst of flavor.",
+    "Gently mix all the ingredients together in the foil pan to ensure the nuggets are evenly coated. Cover tightly with foil.",
+    "Place the covered pan back in the smoker and cook until the nuggets are nice and tender (the internal temperature should be about 208°F), about 1 hour. (You could do this final cooking in a regular oven if you like, since the meat won&#39;t pick up any more smoke in the covered pan.)",
+    "Once the nuggets are fully cooked and tender, remove them from the smoker. Transfer the nuggets to a platter, building them into a mound and brushing with additional Granny’s BBQ Sauce and a dusting of Big Poppa’s Sweet Money Hot Seasoning."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "694 kcal",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "26 g",
+    "fatContent": "53 g",
+    "saturatedFatContent": "22 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "167 mg",
+    "sodiumContent": "259 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "19 g",
+    "unsaturatedFatContent": "25 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3 pounds pork short ribs, cut crosswise into 1 1/2-inch-wide riblets membrane removed",
+    "3 tablespoons Big Poppa’s Sweet Money Seasoning plus some for finishing",
+    "3 tablespoons Big Poppa’s Sweet Money Hot Seasoning plus some for finishing",
+    "8 tablespoons unsalted butter cut in small pieces",
+    "3 tablespoons honey",
+    "3 tablespoons light brown sugar",
+    "1/4 cup Granny’s BBQ Sauce plus some for finishing"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

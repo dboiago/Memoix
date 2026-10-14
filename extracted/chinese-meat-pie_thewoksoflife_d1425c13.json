@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chinese Meat Pie (千层肉饼)",
+    "time": "1 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "498",
+      "carbohydrateContent": "51",
+      "fatContent": "24",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Add the flour to a large mixing bowl, and level it off so it’s flat. Slowly add ½ cup boiling water to half the flour on one side of the bowl, mixing it in with a pair of chopsticks or a stiff rubber spatula. On the other side of the bowl, mix the other half of the flour with ½ cup of room temperature water.",
+      "Knead the two mixtures together by hand for a few minutes, until you have one rough dough ball. If the dough is still stiff, add 1-2 tablespoons of warm water and knead until the dough reaches the desired texture. If dough is sticking to your hands, simply scrape them clean with a rubber spatula, then flour your hands to knead any pieces back into the dough. Cover with an overturned plate and rest at room temperature for 1 hour while you make the filling.",
+      "In a separate bowl, mix the ground pork with light soy sauce, dark soy sauce, Shaoxing wine, sugar, salt, and five spice powder, if using. Next, stir in the oil until well-combined. Lastly, mix in the chopped scallions. Set aside.",
+      "Transfer your rested dough to a clean, lightly floured surface. Knead a few times to smooth it out, and cut the dough in half. Cover one half and set aside. Roll the other half into a long sheet, about 8x24 inches (20x61cm).",
+      "Spread half the filling evenly over the dough, keeping a ½-inch (1cm) border of dough around it. Gently pick up one end of the dough and fold it onto itself by about 4 inches, repeating until you’ve folded the meat pie closed. Pinch the seam and ends closed so the meat pie is completely sealed.",
+      "Over medium heat, brush a nonstick pan oil. Place the meat pie in the pan seam-side down. Use a spatula to gently press the top of the pie to make it a little thinner. Cover, and cook for 8 minutes. Flip and cook the other side for another 8 minutes, until the pie is golden brown and slightly puffed in the center. Flip the meat pie again and cook each side for another 2 minutes to crisp them up and ensure the filling is cooked through.",
+      "Transfer the meat pie to a cutting board, and cut into halves or thirds to serve. Repeat with the remaining dough and filling to make a second meat pie."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Room Temperature Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "plus more for cooking",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "white and green parts, finely, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c0ac4b10cdba41d4b1f382b88d6a0249f9a6885aca1ffb18ab09d3d949ffaf0",
+    "lineage_hash": "cec5dcb06225fa3756d88afb3aafb1c4a5a7425950a1a4a782e04f06739ea821"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-meat-pie/",
+    "fetchedAt": "2026-08-02T18:47:13.979Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-meat-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

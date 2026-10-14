@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Dough Balls",
+    "time": "1 hr 20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the dough, add the yeast, flour, salt and a dash of olive oil to a mixer with dough hook attachment and mix until thoroughly combined - this process can also be done by hand",
+      "While the mixer is running, slowly pour in the warm water. Let the mixer work the dough for 5 minutes until smooth and elastic",
+      "Turn onto a lightly oiled work surface and knead by hand for 5 minutes",
+      "Wipe the inside of a large bowl with olive oil. Place the dough into the bowl and cover with cling film. Leave to prove at room temperature while you make the garlic butter",
+      "Place the garlic cloves in a small ovenproof pan. Pour in the oil, then cover the pan with tin foil. Cook in the oven for 30 minutes",
+      "Meanwhile, mix the softened butter with the parsley",
+      "Once the garlic is roasted, remove from the oil and transfer to a blender. Blitz into a smooth paste",
+      "Combine the garlic paste with the butter and parsley mixture in a bowl, mixing well. Season to taste and store in the fridge until required",
+      "Preheat the oven to the highest possible temperature",
+      "Divide and roll the dough into small balls - approximately 15g each - and place 5cm apart on a baking tray lined with parchment paper",
+      "Leave to prove at room temperature. Once the dough has doubled in size, bake in the oven for approximately 7–8 minutes",
+      "Once golden brown on top, transfer the dough balls to a large bowl. Reduce the oven temperature to 180˚C/gas mark 4",
+      "Add 2 tablespoons of garlic butter to the bowl and toss to melt the butter and coat the dough balls",
+      "Transfer the balls to a baking tray and bake for a further 4-5 minutes until the butter is bubbling",
+      "Remove and toss with the fresh parsley and 1/2 tsp of sea salt",
+      "Slice each piece of prosciutto in half lengthways and wrap around each ball. Serve the dough balls warm"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "235",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto",
+        "unit": "slices",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80ed2dd68def6bbaaab2196aaa099fe57519e03c64080464e1cd56b6492c4124",
+    "lineage_hash": "5ed9bcfd77163e5c8afb9db4a06a9b6fb4df6b557343d7c318ca4e6db05ac25a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dough-balls-prosciutto-recipe",
+    "fetchedAt": "2026-08-03T18:46:10.013Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dough-balls-prosciutto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

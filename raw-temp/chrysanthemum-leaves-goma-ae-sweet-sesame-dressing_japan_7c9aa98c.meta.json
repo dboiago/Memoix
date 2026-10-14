@@ -1,0 +1,45 @@
+{
+  "url": "https://japan.recipetineats.com/chrysanthemum-leaves-goma-ae-sweet-sesame-dressing/",
+  "slug": "chrysanthemum-leaves-goma-ae-sweet-sesame-dressing_japan_7c9aa98c",
+  "title": "Chrysanthemum Leaves Goma-ae (Sweet Sesame Dressing)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T15:53:51.620Z",
+  "ldName": "Chrysanthemum Leaves Goma-ae (Sweet Sesame Dressing)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 as a side"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Side",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "300 g (10.6oz) chrysanthemum leaves ((note 1))",
+    "A pinch of salt",
+    "Roasted white sesame seeds for decoration ((optional))",
+    "3 tbsp roasted white sesame seeds",
+    "1 tbsp sugar",
+    "1 tbsp soy sauce",
+    "1 tsp mirin"
+  ],
+  "ldInstructionsRaw": [
+    "Boiling Chrysanthemum Leaves",
+    "Goma-ae"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "300\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tg (10.6oz)\n\t\t\t\t\t\t\t\t\t\tchrysanthemum leaves\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "A pinch of salt",
+    "Roasted white sesame seeds for decoration\n\t\t\t\t\t\t\t\t\t\t(optional)",
+    "[Goma-ae Dressing]",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\troasted white sesame seeds",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsugar",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tmirin"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

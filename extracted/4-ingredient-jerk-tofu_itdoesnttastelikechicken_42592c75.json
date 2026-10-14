@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "4 Ingredient Jerk Tofu",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "119",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Preheat oven to 325F (170C). Lightly grease a baking sheet or line it with parchment paper.",
+      "Toss the pressed tofu with the marinade to coat. Spread on the baking sheet. Bake for 45 minutes to an hour, tossing every now and then. 45 minutes will get you soft-chewy tofu, but for extra-chewy (how I like it), keep it in there for the full hour. Some of the tofu pieces might puff up, this is a sign of good things happening in the oven.",
+      "Once baked, brush on a little more of the marinade, or alternatively, serve it on the side as dipping sauce. Sprinkle with chopped cilantro and a squeeze of lime. Perfect served with beans & rice and coleslaw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (350g) Extra-firm Tofu",
+        "unit": null,
+        "notes": "pressed for 15-30 minutes, and cut into 1\" cubes.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jerk Marinade",
+        "unit": "C",
+        "notes": "plus more for dipping",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Lime",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "049ea6290874d8b5247db2e3767637de1968c191a437b641458f677175406902",
+    "lineage_hash": "75c129db21dca10774494b6e0a72351076bce63cd348a3b3479efd79bd83271e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/4-ingredient-jerk-tofu/",
+    "fetchedAt": "2026-08-01T22:26:57.742Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/4-ingredient-jerk-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

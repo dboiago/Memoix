@@ -1,0 +1,72 @@
+{
+  "url": "https://cookingwithria.com/2021/10/curry-seafood-medley-curry-mixed-seafood/",
+  "slug": "curry-seafood-medley-curry-mixed-seafood_cookingwithria_36b0f1f6",
+  "title": "Curry Seafood Medley | Curry Mixed Seafood",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T20:31:50.392Z",
+  "ldName": "Curry Seafood Medley",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Caribbean, Trinidadian",
+  "ldCategory": "Breakfast, dinner, lunch",
+  "ldKeywords": "curry chaitaigne, curry mixed seafood, curry seafood, curry seafood medley",
+  "ldIngredientsRaw": [
+    "1.5 lbs seafood medley",
+    "1  plum tomato (chopped)",
+    "6 tbs oil",
+    "1 lb eggplant (peeled, cubed, optional)",
+    "1 lb potato (cubed, min 1 potato)",
+    "½  onion (sliced)",
+    "Hot pepper",
+    "3 tbs green seasoning",
+    "2 tbs minced garlic",
+    "3 tbs curry powder",
+    "4  thyme sprigs",
+    "3  scallions  (or bandhania)",
+    "Salt (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Clean: Pick through seafood medley;  remove any shells and discard. Rinse under cold water &amp; drain.",
+    "Heat oil in a medium pot over medium heat.",
+    "Add onion and hot pepper and fry until golden brown.",
+    "Add curry and cook for 3 mins. Add green seasoning, minced garlic, ½ cup water and cook until grainy and fragrant, another 3-5 minutes.",
+    "Stir in eggplant, potatoes, tomato, thyme and cook for 10-15 mins or until tender.",
+    "Add mixed seafood, scallions, salt, cover, reduce heat to medium low and cook for an additional 15 mins until the sauce thickens, stirring every 5 mins. Taste and add salt if required.",
+    "Finish off with chopped scallions or bandhania also known as culantro or shado beni."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "248 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "3 g",
+    "fatContent": "22 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "1 g",
+    "sodiumContent": "9 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1.5 lbs seafood medley",
+    "1 plum tomato chopped",
+    "6 tbs oil",
+    "1 lb eggplant peeled, cubed, optional",
+    "1 lb potato cubed, min 1 potato",
+    "½ onion sliced",
+    "Hot pepper",
+    "3 tbs green seasoning",
+    "2 tbs minced garlic",
+    "3 tbs curry powder",
+    "4 thyme sprigs",
+    "3 scallions  or bandhania",
+    "Salt to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

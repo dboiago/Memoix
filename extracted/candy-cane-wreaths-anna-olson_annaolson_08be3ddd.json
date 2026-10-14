@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Candy Cane Wreaths",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°F (93°C). Line two baking trays with silicone baking mats or parchment paper.",
+      "Boil the sugar. Measure the water into a medium saucepan, followed by the sugar and corn syrup. Bring to a full boil over high heat without stirring, and continue to boil until the sugar reaches 300°F (149°C) on a candy thermometer. Remove the pan from the heat and stir in the peppermint extract.",
+      "Colour half of the sugar. Pour half of the melted sugar onto one baking tray. Add red food colouring to the remaining sugar in the pot, stir and pour onto the second baking tray. Let the sugar cool enough that you can handle it with your bare hands (it will pull away from the mat or parchment without sticking). If it sets too much, pop the trays in the oven to soften up the sugar.",
+      "Stretch the cooked sugar. Start with the clear sugar, pulling and stretching it until it turns an opaque white colour, about 3 minutes. When it becomes too tough to pull, twist it into a log about an inch (2.5 cm) across, return to the tray and keep warm in the oven so it stays pliable. Repeat this pulling, stretching and shaping with the red sugar. Both pieces of candy will fit on one tray, but keep the second tray handy for your shaped candy canes.",
+      "Shape the candy canes. You will want to work with the sugar in batches, keeping the rest warm as you work. Use a pair of scissors to snip a 2-inch (5 cm) piece of each coloured sugar log. The candy will be warm but not hot and should be pliable. Shape both pieces to roughly the same length and width, stack one piece on top of the other and stretch into a rope. Roll the rope on the counter or a baking tray (see note) to create a shiny, smooth surface, then twist it to create the candy cane stripe. You can make the rope as thick or thin as you wish. For typical 4-inch (10 cm) candy canes, cut the rope into 6-inch (15 cm) pieces and curl one side over. For a candy cane wreath, pinch the ends together creating a circle shape. Set on the baking tray to cool. Repeat until all of the sugar has been used. Store the candy canes between sheets of parchment paper in an airtight container until ready to serve or package for gifting."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "400 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Corn Syrup",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppermint Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring Gel",
+        "unit": null,
+        "notes": "paste or powder",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "345024990181d1f3506e6324228dd1b915aa051a678f14f9100bff6a7d4e16c5",
+    "lineage_hash": "13226bd1942004536155f7ce56205181fe90b12ad39d8630deaabfbf233e2b8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/candy-cane-wreaths/",
+    "fetchedAt": "2026-08-01T23:45:28.390Z"
+  },
+  "rawSource": "https://annaolson.ca/project/candy-cane-wreaths/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

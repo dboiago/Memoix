@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Crispy Tang Yuan",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "9",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "68",
+      "carbohydrateContent": "6",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Prepare a large bowl of cold water, and bring a separate small pot of water to a boil. Once boiling, use a spoon to slowly stir the water in a circular direction while adding in the tang yuan. This keeps the water moving, and prevents the tang yuan from sticking to the bottom of the pot.",
+      "Boil until the tang yuan float to the surface, then use a slotted spoon to immediately transfer them to the bowl of cold water to cool down. (Don’t walk away from the tang yuan while they’re cooking. Over-boiling will cause them to become too starchy, making the rest of the recipe more difficult.)",
+      "In a large bowl, combine the sweetened coconut flakes, sugar, panko, salt, coconut oil, and vanilla extract. Mix well.",
+      "Take each tang yuan and coat it in the coconut mixture, and then in the beaten egg. Then coat it in the dry mixture one more time. Roll the coated tang yuan between your palms or inside of a small deep bowl to smooth the outer surface. Repeat with the rest of tangyuan.",
+      "Line your air fryer trayer with parchment paper, and arrange the tangyuan in the tray with at least ½ inch (1.25cm) of space between each one. Set the air fryer to air-fry at 350°F/175°C for 6 minutes. After 3 minutes have elapsed, open the tray, flip all the tang yuan over, and then push the tray back in. Air fry for the remaining 3 minutes, until all sides of the tang yuan are crispy and golden. (Be careful not to overcook them, or it will cause the tangyuan to burst. If using smaller tang yuan, air-fry for 2 minutes on each side, or 4 minutes total.)",
+      "Allow them to cool for a couple minutes before enjoying them while still warm! Careful! They’re very hot when they first come out of the air fryer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tang Yuan",
+        "unit": "large",
+        "notes": "frozen",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "C",
+        "notes": "if your coconut flakes are not sweetened, double the amount of sugar in the recipe",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": "or neutral oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea19523125f2ef88619b9f7da57641edcd434bd6a04845c40fca97a51455db30",
+    "lineage_hash": "e1e57379427de593a8343810d9c442474d969932dcedad648b27eee39378dfaf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/crispy-tang-yuan-air-fryer/",
+    "fetchedAt": "2026-08-02T13:40:45.021Z"
+  },
+  "rawSource": "https://thewoksoflife.com/crispy-tang-yuan-air-fryer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

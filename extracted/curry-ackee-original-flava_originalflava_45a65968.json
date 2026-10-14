@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Curry Ackee",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "You’ll need a frying pan with some coconut oil on a medium heat. Add your onions, garlic, and ginger then cook down for a few minutes until sizzling.",
+      "Add curry powder and burn it down for 1 minute add chopped tomatoes , then coconut milk stir well cook down for 3/4 minutes then add some scotch bonnet (optional)",
+      "Add drained Ackee and Season di ting with some black pepper then Sweeten it up with some maple syrup and splash of water (125ml) if you like. Carefully stir then garnish with fresh Callaloo."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ackee",
+        "unit": "g",
+        "notes": null,
+        "amount": "540",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "ml",
+        "notes": "chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Callaloo",
+        "unit": "handful",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85db8c1177803711c1ed7ede8e55fb296b8c0f7ef53233a9cc5d7679f7e1bf6b",
+    "lineage_hash": "aa00bb85d2784a6829066579c3761c43aa8db5ff45a92dc6202dde029e4a49c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/vegan/curry-ackee/",
+    "fetchedAt": "2026-09-30T17:37:28.109Z"
+  },
+  "rawSource": "https://originalflava.com/vegan/curry-ackee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

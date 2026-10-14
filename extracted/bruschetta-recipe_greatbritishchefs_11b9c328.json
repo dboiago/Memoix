@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Bruschetta",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the tomatoes, garlic, thyme, sugar and a pinch of sea salt into a small saucepan over a moderate heat and then leave to gently simmer",
+      "Meanwhile, heat a large griddle pan until hot. Oil each side of the slices of bread and sprinkle with sea salt. Grill each slice until well coloured, then set aside",
+      "Add vinegar and salt to a pot of water and bring to a gentle simmer. Break the eggs into cups or ramekins, whisk the water then gently pour the eggs in, ensuring the water is still swirling",
+      "Once the whites are set, remove with a slotted spoon and place the poached eggs onto paper towels",
+      "Sprinkle the tomato mix with sea salt and pepper. Mix the chopped basil into the mix and then spoon onto the 4 toasts. Top each with a poached egg and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "large, diced",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1bb0605ec5cd598a7486426f1517616b3164cc2c7038d9ee5bb4c04325e33d29",
+    "lineage_hash": "5ee440fa3b4bd24071f0baa76828dcc7f7191f5faee0df2ba3f25a7afd87c590"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bruschetta-recipe",
+    "fetchedAt": "2026-08-03T20:18:32.622Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bruschetta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

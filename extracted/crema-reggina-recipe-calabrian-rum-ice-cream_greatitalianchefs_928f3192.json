@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Crema Reggina",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small bowl, whisk the egg yolks with 2 tablespoons of the sugar until you have a smooth, creamy mixture. Add the cornflour, rum and vanilla and stir to combine",
+      "Combine the cream, milk and remaining sugar in a saucepan. Place over a gentle heat and bring to a simmer. At this point, stir in the egg mixture. Cook for a couple of minutes over a gentle heat, stirring continuously until slightly thickened. Remove from the heat and add the a teaspoon of the natural food dye, or just enough to make the mixture pink. Allow the mix to cool down to room temperature, then refrigerate for about 1 hour",
+      "Once the ice cream base has cooled down, pour it in a pre-chilled ice cream maker. Churn according to the manufacturer’s instructions. Once the ice cream is thick but not completely frozen, add the chocolate and candied fruit. Churn it for a couple more minutes, until just combined",
+      "Transfer the ice cream to a container and freeze it for about 1 hour, or until solidified yet still creamy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": "sifted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring",
+        "unit": "tsp",
+        "notes": "use a natural food colouring, or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Candied Fruit",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "663066b9c1cad02199ef5bb36ec2d464173f9af82d5a45949faabde63c57c68a",
+    "lineage_hash": "604b6263149dc9948cfc0aa1de0e1ff36f0609fb3b8cf61a73be181b812cb194"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/crema-reggina-recipe",
+    "fetchedAt": "2026-08-01T17:31:01.511Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/crema-reggina-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

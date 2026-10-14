@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Bulgur Wheat Pilaf with Zucchini, Tomatoes and Onions – Kabakli As",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil in a heavy pan and stir in the zucchini and the onions. Cook until the onions softened.",
+      "Add the bulgur wheat, tossing it thoroughly.",
+      "Stir in the chopped tomatoes and pour in the hot water.",
+      "Season with salt and pepper to taste and stir to combine thoroughly.",
+      "Bring to boil for a minute, then reduce the heat, cover and simmer for about 10-15 minutes, until all the liquid has been completely absorbed.",
+      "Turn off the heat, cover the pan with a clean dish towel and press the lid on top. Leave to steam for about 10 minutes.",
+      "Stir in the dried mint and red pepper flakes then mix with a large spoon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flesh of Zucchini",
+        "unit": null,
+        "notes": "courgettes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Bulgur Wheat",
+        "unit": null,
+        "notes": "rinsed and drained",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Chopped Tomatoes",
+        "unit": null,
+        "notes": "1 can of",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "2 tablespoon",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "ml",
+        "notes": "dried, 1 teaspoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "ml",
+        "notes": "1 teaspoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd9bfe836e0b67beb6494366ad094f02662d1765a5593da71fd1e1132c78b620",
+    "lineage_hash": "ae5bfeef67b1e5030d3e3bc9d9f8375bbf46e122bbcf4099b0327378cbc614fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2011/03/bulgur-wheat-pilaf-with-zucchini-tomatoes-and-onions-kabakli-as/",
+    "fetchedAt": "2026-09-25T19:27:46.597Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2011/03/bulgur-wheat-pilaf-with-zucchini-tomatoes-and-onions-kabakli-as/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

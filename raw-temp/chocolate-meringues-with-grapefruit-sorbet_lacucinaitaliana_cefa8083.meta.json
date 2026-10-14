@@ -1,0 +1,34 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-meringues-with-grapefruit-sorbet",
+  "slug": "chocolate-meringues-with-grapefruit-sorbet_lacucinaitaliana_cefa8083",
+  "title": "Chocolate Meringues with Grapefruit Sorbet",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-02T21:22:54.147Z",
+  "ldName": "Chocolate Meringues with Grapefruit Sorbet",
+  "ldTime": "PT300M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cacao,Meringue,Pompelmo",
+  "ldIngredientsRaw": [
+    "1 2/3C. granulated sugar",
+    "1 1/4C. grapefruit juice",
+    "1/2C. egg whites",
+    "2/3C. powdered sugar",
+    "1/2C. unsweetened cocoa powder"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 2/3 C. of granulated sugar",
+    "1 1/4 C. of grapefruit juice",
+    "1/2 C. of egg whites",
+    "2/3 C. of powdered sugar",
+    "1/2 C. of unsweetened cocoa powder"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

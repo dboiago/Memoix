@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Christmopolitan Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using an atomizer, coat the inside of a chilled coupe with one spray of absinthe (alternately, rinse the glass with a few dashes of absinthe, discarding the excess). Shake the other ingredients with ice to chill and double strain into the prepared glass. Garnish.\nSpiced Cranberry SauceUsing a paring knife or vegetable peeler, remove the zest from the orange and set aside; juice the orange and reserve 2 oz. of juice. In a medium saucepan over medium-high heat, toast the dry spices until aromatic, add the reserved orange zest and orange juice, and all remaining ingredients except the rosemary, and bring to a boil, stirring to combine. Once the mixture is boiling, reduce the heat and simmer for 20 minutes. Remove from heat and stir in the rosemary, then let the mixture cool to room temperature. Use a fine strainer to strain off the solids, then bottle and refrigerate the sauce for use. Keep refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Cranberry Sauce",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": null,
+        "notes": "for rinse",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Cranberry Sauce",
+        "unit": "C",
+        "notes": "100 percent cranberry juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jellied Cranberry Sauce",
+        "unit": "can",
+        "notes": "7 oz.",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh-grated Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "or 1 tsp. dried rosemary, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee452c9b6d420596bb91d5c12978582efaaa3ce94679522fb08da616b6d3b7f2",
+    "lineage_hash": "22f898bf8e8b5e0893854c29743e24fd705ab9cc95710275107ce9741839b12e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/christmopolitan-cocktail/",
+    "fetchedAt": "2026-08-04T01:26:52.677Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/christmopolitan-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Dutch Mule Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "177",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of mint sprigs and lime wedge.",
+      "SHAKE first 4 ingredients with ice.",
+      "STRAIN into ice-filled glass whilst also pouring ginger beer.",
+      "Garnish with mint sprigs bouquet and lime wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7172381ee7c36e31ef3ea027c015f81094b42bc1c7bf4b3daa49d5e388a55de5",
+    "lineage_hash": "124b6c06456aabe1b47ee66eca66374b020d146707f254abaac0e050281c7a96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4666/dutch-mule",
+    "fetchedAt": "2026-08-03T13:58:57.388Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4666/dutch-mule",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

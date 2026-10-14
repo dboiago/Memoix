@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Pudding",
+    "time": "1 hr 55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the syrup, place 200g of the caster sugar and 200ml water in a saucepan and bring to the boil",
+      "Slice 1 orange and add the slices to the stock syrup",
+      "Add the star anise and cook over a low heat for 20 minutes until the syrup is glossy and translucent. Allow to cool in the pan",
+      "Lay the orange slices from the syrup on greaseproof paper and dry out in the oven for 3 hours. Then, break into small chips",
+      "For the orange sponge, preheat the oven to 180°C/gas mark 4",
+      "In a pan, boil the remaining 2 oranges whole for 30 minutes - this will take the bitterness out of the skin",
+      "Cut the oranges in half, remove the pips and place in a blender with the remaining 125g of caster sugar, ground almonds, 3 eggs and baking powder. Blend until smooth",
+      "Line a 22cm spring form cake tin and tightly seal the outside with foil. This will help to keep the chocolate layer from leaking",
+      "Pour the mixture into the tin and cook in the oven for 12–14 minutes, or until golden brown. Remove from the oven and allow to cool",
+      "For the topping, use an electric hand-held whisk to whisk together 1 whole egg and 2 egg yolks in a large bowl, until doubled in volume",
+      "Bring the granulated sugar and 4 tsp of water to the boil. Continue to boil until a sugar thermometer reaches 121˚C. Then, remove the pan from the heat",
+      "Add the sugar mixture to the eggs, whisking continuously",
+      "Melt the dark chocolate in a bowl over hot water (or in a microwave), and pour into the egg mixture",
+      "Whisk the cream until half-whipped and then fold into the chocolate mix",
+      "Pour over the orange sponge and leave to set in the fridge for 2 hours",
+      "Once set, top with the orange chips and shavings of dark chocolate. Slice and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "gluten free if necessary",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "plus a few shavings to decorate",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ca8aff393f7645fa7e12bd622ec318a52f4d746b3060a7a60b8e4c2ff3611e5",
+    "lineage_hash": "107ef7e72797c6682460eb9dcde4dcfff48f11f1dfe8b7ec78721a9cc114ec77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-orange-pudding-recipe",
+    "fetchedAt": "2026-08-03T18:32:29.698Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-orange-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Chili Mango Paletas",
+    "time": "6 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "87",
+      "carbohydrateContent": "21.48",
+      "fatContent": "0.67",
+      "proteinContent": "0.98"
+    },
+    "directions": [
+      "In a blender add sliced mango, mango nectar, and sugar or honey. Blend until smooth. Add chili powder to mixture and stir, do not blend.",
+      "Spoon diced mango into 6 popsicle molds.",
+      "Pour 2 ounces of mixture into each mold.",
+      "Insert a popsicle stick into each mold and freeze until pops are solid, about 6 hours or overnight. To release ice pops from molds, run the bottom of the molds briefly under cold water.",
+      "Sprinkle chile powder to popsicles and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "peeled, seeded, and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Mango Nectar",
+        "unit": null,
+        "notes": "11.3-ounce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "or honey",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "peeled, seeded, and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "Tbsp",
+        "notes": "recommend Tajin Fruit and Snack Seasoning",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f159a4ecad7eb3f1eaba7aa177d3977be1a4bc5c699b0090a3eb107dc35d903",
+    "lineage_hash": "bfdd237cea5974f1f731723f65a13d52f61bdb598339fd6f826e6b7b8be1eff4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/mango-chili-paletas/",
+    "fetchedAt": "2026-08-02T08:43:20.116Z"
+  },
+  "rawSource": "https://muybuenoblog.com/mango-chili-paletas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

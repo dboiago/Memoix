@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Crispy and Chewy New Wave Sourdough Bagels",
+    "time": "16 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the levain ingredients in a clean, tall jar (this levain rises quite high). Stir until the sugar is dissolved and the starter is fully incorporated. Cover and leave at 74–76°F (23–24°C) to ripen overnight, about 12 to 14 hours. The levain is ready when it’s risen significantly, super bubbly on top, and smells sweet.",
+      "Mix (Day Two, 9:00 a.m.)With a mechanical mixer: Add the flour, levain, barley malt syrup, diastatic malt powder, salt, and Water 1 to the bowl. Mix at low speed for 1 to 2 minutes until combined into a shaggy mass. Increase to medium speed (120–130 RPMs) and mix for 5 minutes. Rest 5 minutes. Resume at medium speed, slowly adding Water 2 over 5 minutes. Mix until smooth, strong, and pulling cleanly from the bowl. Target a final dough temperature of 76–78°F (24–26°C).",
+      "At 74–76°F (23–24°C), let the dough rest undisturbed for the full 3 hours. This dough was mixed heavily and is quite stiff, so no stretches and folds are needed.",
+      "Sprinkle medium cornmeal on two half sheet pans (cornmeal won’t absorb water from the dough, making removal easier; use white flour if you don’t have cornmeal). Scrape the dough onto your work surface and divide into twelve 130g pieces. Shape in two phases: Ball the dough: Fold the sides of each piece into the middle, roll it down, then push against the surface with the side of your hand to smooth the top. Flip and pinch the seam closed. You want a perfectly round, smooth, closed-seam ball. Poke and make the ring: Starting with the first piece you balled, gently pat to flatten slightly. Press your index finger through the center to create a hole. Pick up the dough and gently stretch it with both hands, rotating to form a ring with a center hole about 2 to 2.5 inches in diameter (the hole shrinks during proofing and baking). Place on the prepared sheet pans, six per pan, with an inch or two between them.",
+      "Cover the sheet pans with lids and refrigerate. This step is flexible—a few hours earlier or later the next morning, or even into the afternoon, the dough is forgiving.",
+      "Proof (Day Three, 9:00 a.m., 2 hours)Remove the trays from the refrigerator and proof at warm room temperature for 2 hours. About halfway through, place a baking steel on the middle rack and preheat to 500°F (260°C) convection (525°F/270°C without convection). Give the oven at least 1 hour to preheat.",
+      "Add 1 gallon of water and 1 teaspoon of baking soda to a large, wide pot and bring to a rolling boil. Stir in 5 tablespoons of barley malt syrup until dissolved. Working in batches of 2 to 3, gently lower bagels into the boiling water smooth side down. They should float; if one sinks and doesn’t come back up, it may be underproofed. Boil 20 to 25 seconds per side, flipping with a slotted spoon or spider. Lift out, let excess water drip off, and place on a wire rack. Dip tops in toppings while still wet, if desired. Transfer topping-side up to a parchment-lined sheet pan or peel.",
+      "Transfer one pan of 6 bagels to the preheated steel. Bake for 10 minutes, then rotate the pan and reduce the temperature to 450°F (230°C) for 5 more minutes. The bagels are done when the crust is deep golden brown. Don’t pull them too early—a pale bagel is an underbaked bagel. Cool on a wire rack for at least 15 to 20 minutes before slicing. Repeat with the second batch."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Medium-protein White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "81",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Superfine (caster) Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": "100% hydration",
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-protein White Flour",
+        "unit": "g",
+        "notes": "12–14% protein",
+        "amount": "406",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium-protein White Flour",
+        "unit": "g",
+        "notes": "or all purpose flour",
+        "amount": "271",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barley Malt Syrup",
+        "unit": "g",
+        "notes": "or honey",
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Diastatic Malt Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 1",
+        "unit": "g",
+        "notes": null,
+        "amount": "460",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 2",
+        "unit": "g",
+        "notes": null,
+        "amount": "72",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Levain",
+        "unit": "g",
+        "notes": "from above",
+        "amount": "226",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "gal",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barley Malt Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": "poppy seeds, everything seasoning, flaky salt, or plain",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5ce9b34645272631c6f30e775a57f2168fc56539f5b638c5eaa8ac31faacfce",
+    "lineage_hash": "a8010de9da9ad2e87a6594189555b5c910fbbb9a86d65b24090ebdd5f4369548"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/crispy-and-chewy-new-wave-sourdough-bagels/",
+    "fetchedAt": "2026-08-01T15:52:03.780Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/crispy-and-chewy-new-wave-sourdough-bagels/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

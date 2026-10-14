@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Doom Bar Daquiri",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Goblet or Martini",
+    "garnish": [
+      "Slice of Lime"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all the ingredients apart from the lime into a shaker with ice, then shake hard for 10-12 seconds",
+      "Strain the cocktail into a goblet or martini glass, then garnish with a slice of lime"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rum",
+        "unit": "ml",
+        "notes": "or golden rum",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sharps Doom Bar Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheel of Lime",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06ba0cc8381645d7063ea3fc6e78b5252f7ebe1481963a5bca66e6f5b345f606",
+    "lineage_hash": "dd9c5fdbba9420ad087055dd9c21e1b1a5e83deb4ea62d12335e2a0510126f2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/doom-bar-daquiri-recipe",
+    "fetchedAt": "2026-08-02T20:27:05.513Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/doom-bar-daquiri-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

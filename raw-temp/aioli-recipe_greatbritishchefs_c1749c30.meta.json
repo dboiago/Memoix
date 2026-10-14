@@ -1,0 +1,33 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/aioli-recipe",
+  "slug": "aioli-recipe_greatbritishchefs_c1749c30",
+  "title": "Aioli Recipe",
+  "byline": "by Charlie Hibbert",
+  "fetchedAt": "2026-08-03T20:35:32.465Z",
+  "ldName": "Aioli",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 slices of stale bread",
+    "1 lemon",
+    "2 garlic cloves",
+    "200ml of olive oil",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the bread in water. Zest and juice the lemon",
+    "Squeeze the water from the bread and place into a food processor with the garlic, a pinch of salt and the lemon zest and juice",
+    "Blend while gradually adding the oil. Adjust the seasoning to taste. Set aside the aioli in the fridge before serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Chocolate Christmas Pudding",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you wish to make the pudding, place the brandy, Port, dried fruits and spices in a large bowl and leave to soak overnight",
+      "The next day, add the sugar and butter to a large mixing bowl and cream together. Add 1 egg at a time, mixing well after each addition. Slowly stir in the flour, cocoa powder and chocolate",
+      "Once the dry ingredients are nicely incorporated, stir in the Guinness, orange juice and zest and the soaked fruits",
+      "Grease the pudding basin and sprinkle with flour to coat. Pour the cake mix into the basin and lay a greased circle of parchment on top. Place a foil lid over the top of the basin, securing it tightly with a large elastic band or some string",
+      "Place the pudding in a steamer and set over simmering water. Cover the pan and steam for 3 hours, making sure you keep the water in the steamer topped up",
+      "Once the pudding is cooked, remove from the steamer and leave to cool overnight in the basin, keeping the parchment and foil lid in place",
+      "The following day, wrap the pudding in a clean tea-towel. Store the pudding in a cool, dark place, feeding it once a week by carefully removing the foil and parchment and drizzling the brandy over the pudding",
+      "Return the lid and re-wrap in the tea towel once the brandy has soaked in to the pudding",
+      "To serve the pudding, simply steam for 90 minutes to heat through and serve with brandy butter, cream or ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into chunks",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "broken into chunks",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": "plus extra for feeding the pudding",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guinness",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5cbe4f250d02110a574f63a71e57fb33940809ce86296a1a78cfcdced169bcdc",
+    "lineage_hash": "5c814c2bee30728bdb84353541ff6519261b5a4cf17d39b25a92e078faa9d696"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-christmas-pudding-recipe",
+    "fetchedAt": "2026-08-03T18:55:26.418Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-christmas-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

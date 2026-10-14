@@ -1,0 +1,5 @@
+I absolutely love cinnamon buns, with their beautifully soft texture, gooey sweet and sticky cinnamon filling and cream cheese frosting, reminiscent of my time living in [America](https://www.greatbritishchefs.com/collections/american-recipes). As it's National Cherry Day on July 16th I have decided to adapt my cinnamon bun recipe and fill the buns with a classic pairing of fresh juicy cherries and flaked almonds instead.
+
+These buns have been baked spaced well apart, to allow them to expand widthways into a large flat bun with a crispy finish. They could instead by baked in a large baking tin, closer together, which results in a softer, deeper bun.
+
+These are perfect to enjoy as part of an [afternoon tea](https://www.greatbritishchefs.com/collections/afternoon-tea-recipes) or to pack into a Summer picnic.

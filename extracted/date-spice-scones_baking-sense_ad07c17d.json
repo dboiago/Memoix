@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Date & Spice Scones",
+    "time": "35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "362",
+      "carbohydrateContent": "58",
+      "fatContent": "13",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line a baking sheet with parchment paper or a silicone baking mat.",
+      "Sift together 10 oz all purpose flour, 1 tablespoon baking powder, ½ teaspoon salt, ½ teaspoon ground cinnamon, ¼ teaspoon ground ginger, ¼ teaspoon ground cloves, ¼ teaspoon ground nutmeg, ¼ teaspoon ground cardamom6 oz granulated sugar in a mixing bowl. Use your fingers to work in 4 oz unsalted butter chunks until the bits are the size of a pea. Toss 1 oz raisins and 2 oz dried chopped dates into the mixture.",
+      "Add 8 oz whole milk all at once and mix just until the flour is moistened. The dough will be quite moist so keep your hands well floured. Dump the dough directly onto the prepared sheet pan. Using well-floured hands, pat the dough into an 8\" round. Lightly score the round into 8 wedges.",
+      "Brush with egg wash and sprinkle with Demararra or granulated sugar. Bake until golden brown and a toothpick inserted in the center comes out clean (see note).",
+      "Allow the scones to cool for 5 minutes then use a serrated knife to cut into wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "oz",
+        "notes": "⅓ cup, dried, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Egg Wash",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demararra Sugar for Top",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09b694a16a9612407e3390884cf9be82c4a0355bb7bcedd8c6a39fb772f42eba",
+    "lineage_hash": "73a82afa5456b20f3f85be5049eb1a12e3d209aaff10932db86979dd05b24688"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/10/28/date-spice-scones/",
+    "fetchedAt": "2026-08-02T07:38:03.116Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/10/28/date-spice-scones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

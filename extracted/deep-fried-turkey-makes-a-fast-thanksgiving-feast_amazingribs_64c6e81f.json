@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Deep Fried Turkey",
+    "time": "2 hours",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "623",
+      "carbohydrateContent": null,
+      "fatContent": "31",
+      "proteinContent": "84"
+    },
+    "directions": [
+      "Safety first. The bird must be fully thawed. Never stuff the bird and remember to remove the giblets and neck from the front and center cavities. Drain all liquid from the cavity. Trim off excess flaps of skin, the tail, and the wing tips. They will burn. Make sure there is an open channel through the body cavity to the neck cavity so you can see daylight on the other side. You need to do this to prevent an air bubble and so you can drain the bird when you are done. Remove the plastic popup thermometer and the plastic truss that holds the legs together.",
+      "Measure displacement. Salt the bird, 1 teaspoon Morton coarse kosher salt per pound of meat. You can use a rub, but much of it tends to wash off and burn, and that means you will get only one use out of the oil. We do not recommend it. If you wish you can inject the bird, but that’s adding water and it tends to leak out the holes creating steam. We do not recommend it. Now lower it into the pot and fill it with room temperature oil until the bird is submerged at least 1\" below the surface of the oil and the oil is at least 4\" below the lip of the pot. Remove the bird and place it in a baking pan. Insert a probe rated for 350°F or above into the deepest part of the thigh. Don't worry about coating the bird with oil at this time. Meat is about 75% water and oil cannot penetrate it.",
+      "Cook. Preheat the oil to 350°F. Do not take the oil beyond 350°F even if you are in a hurry. The temperature will drop quickly when the bird takes a bath in it and then it will slowly build back up. Turn off the flame and slowly lower the bird in. Then you can turn the flame back on. Pull up a lawn chair and a good book., Never leave the fryer unattended. Do not put a lid on during cooking. Steam can condense on the lid and water can drip back into the oil and rapidly vaporize and blow off the lid.",
+      "Is it done yet? Allow 3 to 5 minutes per pound. Turn off the flame and slowly lift the bird out and spot check the internal temperature. Dark meat is best at about 170 to 180°F and white meat at 160°F so you can remove the bird when the breasts hit 155°F in the center. When the bird is done, turn off the flame and slowly lift the bird out and let it drain into the pot. Place it in a baking pan. Let it cool about 10 minutes before carving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Turkey",
+        "unit": "lb",
+        "notes": "or up to 18 pounds",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": "1 teaspoon per pound of turkey",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "qt",
+        "notes": "alt: other high smoke point oil such as refined canola oil, corn oil, or sunflower oil",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93d8e543a8d8809bd5e972807b8539f54f29a80e0c91fe5c4c1463ea062f480d",
+    "lineage_hash": "ada5b3319446fe736298ab6655f1736d486b1078588a7db298b5e2f8e2189f91"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/deep-fried-turkey/",
+    "fetchedAt": "2026-08-02T10:43:07.346Z"
+  },
+  "rawSource": "https://amazingribs.com/deep-fried-turkey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

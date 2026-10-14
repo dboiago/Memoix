@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Chongqing Mala Chicken (Laziji)",
+    "time": "37 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "499",
+      "carbohydrateContent": "38",
+      "fatContent": "29",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "Cut the dried chili peppers, discard the seeds and then soak the peppers in water for 15 minutes. We are doing this so we can fry the peppers later and prevent burn the peppers.",
+      "Remove the bone of the chicken thighs and then cut into small cubes. In a large bowl, marinade the chicken cubes with all the marinating sauce. Mix well and set aside for around 10 minutes.",
+      "Heat up oil in wok or pan for deep-frying. Heat until really hot (you can see bubbles when you put a chopstick in). Add the chicken cubes in and fry until golden brown. Transfer out. I recommend using a pan and fry the chicken by batches. On one side, it uses less oil and on the other side, the chicken is widely touched with the bottom of the pan, which can speed up the process greatly. After add the chicken cubes, let it stay for a short time (possible about 40 seconds to 1 minute) until one side is browed and then slightly stir the chicken and fry the other side.",
+      "Get a clean wok and add only 1/2 tablespoon of oil and then fry the peppers for 1-2 minutes over slowest fire until most of them becomes dark red. Add Sichuan peppercorn in and continue frying for another 1 minute over slowest fire.",
+      "Push the spices to one side and add 1/2 tablespoon of oil in wok and fry ginger, scallion white and garlic until aromatic.",
+      "Return the chicken cubes, add roasted white sesame seeds, sugar, salt and scallion green sections. Mix well and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cook Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "white part and green part separated andcut into small sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65f964891b29bcb3b9fc4b34c25a5e6ace848f81851789419262d27883cfc0e0",
+    "lineage_hash": "16a1df844fa297bb610948e2b4adf8fd1d5dfbeacadd227297b42ccd36ceacad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/mala-chicken/",
+    "fetchedAt": "2026-08-01T15:37:24.391Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/mala-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

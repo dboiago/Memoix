@@ -1,0 +1,243 @@
+{
+  "recipe": {
+    "name": "Devilled Egg Mayo Wrap",
+    "time": "1 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the tortilla dough first. Mix flour, salt and baking powder in a large bowl. Stir in the melted butter and warm water gradually to form a soft dough",
+      "Knead for 5–6 minutes until smooth. Cover and rest for 20 minutes",
+      "Prepare the devilled egg mayo. Boil the 6 eggs for 9 minutes, then plunge into iced water. Peel and separate yolks from whites",
+      "Mash the yolks in a bowl and dice the whites finely",
+      "To make the mayo base, in a separate bowl or blender, whisk together raw egg yolk, mustard and vinegar",
+      "Slowly drizzle in the oil, drop by drop at first, then increasing to a steady stream, while whisking or blending constantly to emulsify",
+      "Once thick, stir in lemon juice, smoked paprika, English mustard and cayenne. Fold in mashed yolks and chopped egg whites. Season to taste",
+      "Make the mustard seed slaw. Toss cabbage, carrot and red onion with vinegar and a pinch of salt. Set aside for 10 minutes to lightly pickle",
+      "Meanwhile, toast mustard seeds in a dry pan until they begin to pop. Add oil and heat for a few seconds",
+      "Pour the hot mustard seed oil over the slaw. Toss well and drain off any excess liquid with a sieve",
+      "Cook the tortillas. Divide dough into four balls. Roll each one out thinly into 22 cm rounds",
+      "Heat a dry pan or griddle over medium-high heat. Cook each tortilla for 30-60 seconds per side, until lightly browned and puffed in places. Keep warm wrapped in a clean cloth",
+      "Lay a warm tortilla flat and spoon a generous amount of devilled egg mayo down the centre",
+      "Top with a handful of the mustard seed slaw and a tangle of fresh watercress",
+      "Fold in the left and right sides over the filling. With thumbs under the bottom edge, pull it over the filling tightly. Roll forward firmly to form a sealed, burrito-style wrap",
+      "Wrap in paper and foil. Cut a square of greaseproof paper slightly larger than the tortilla. Place the wrap seam-side down in the centre. Fold in the sides of the paper, then roll it up snugly like a Christmas cracker",
+      "Do the same with a sheet of foil over the paper, folding in the edges and rolling firmly to seal. This keeps it warm, portable, and beautifully neat- perfect for service or picnics"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": "320-360ml",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "ml",
+        "notes": "e.g. sunflower or rapeseed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": "larger stems picked away",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d1e784d169bc544ab76cc24c51a5aef0ce3bc53603332c61036658e26d23b7ce",
+    "lineage_hash": "d5fdd7ec48c932ebec5b6e9d017d88eed87f6feb9977e3469fe3c38009475e6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/devilled-egg-mayo-wrap-recipe",
+    "fetchedAt": "2026-08-02T02:44:08.216Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/devilled-egg-mayo-wrap-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

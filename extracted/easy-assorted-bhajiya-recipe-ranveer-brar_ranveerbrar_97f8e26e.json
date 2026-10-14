@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Assorted Bhajiya (भजिया)",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In mixing bowl add all the ingredients except water and mix well.",
+      "Now add in water slowly and keep mixing; make sure youâll get thick consistency.",
+      "Now dip vegetables in batches and deep fry them in hot oil until they turn crisp.",
+      "Remove on absorbent paper and serve hot immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": "florets, blanched",
+        "amount": "200",
+        "section": "Vegetables for Bhajiyas",
+        "isOptional": false
+      },
+      {
+        "name": "Big Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Vegetables for Bhajiyas",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Vegetables for Bhajiyas",
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves/palak",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": "Vegetables for Bhajiyas",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Eggplants",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "8-10",
+        "section": "Vegetables for Bhajiyas",
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour/besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder/dhania Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seed Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds/ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "handful",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required (to make thick batter)",
+        "amount": "0",
+        "section": "Bhajiya Batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32f29e08fd1037a515d2df175d065b5a56b282709a461d9279ca1e9f84400fb0",
+    "lineage_hash": "33633047f70ba819602c6d6007925837a0bdb8395d968fabca93b15870bcaedf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/assorted-bhajiya/",
+    "fetchedAt": "2026-08-02T08:57:25.565Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/assorted-bhajiya/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

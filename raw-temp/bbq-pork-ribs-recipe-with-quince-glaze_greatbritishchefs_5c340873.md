@@ -1,0 +1,5 @@
+These have been on the menu at Ember Yard since we opened, and will probably never come off.  We use Ibérico [pork](https://www.greatbritishchefs.com/ingredients/pork-recipes) and if you can source this online or at a specialist butcher, then I highly recommend it. Membrillo ([quince](https://www.greatbritishchefs.com/features/ingredient-focus-quince) cheese, paste or jelly) is a classic Spanish condiment to accompany cheese. It is made by cooking quinces, long and slow, to a purée, then set with natural pectin from the fruit. It’s available at Spanish food suppliers or good supermarkets. Melting it down to a thick syrup and adding vinegar for acidity makes a brilliant rib glaze, and it’s easy too!
+
+To give the ribs the perfect smoky flavour you'll also need a lump of oak or beech hardwood for the barbecue.
+
+_Recipes extracted from_ [Grill Smoke BBQ](https://www.amazon.co.uk/Grill-Smoke-BBQ-Ben-Tish/dp/184949715X/ref=sr_1_1?ie=UTF8&qid=1467296305&sr=8-1&keywords=grill+smoke+bbq) _by Ben Tish (Quadrille £25) Photography: Kris Kirkham_

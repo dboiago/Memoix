@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Chipotle Cumin Roasted Almonds",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (360°F).",
+      "Place the almonds on a rimmed baking sheet. Drizzle with the olive oil and add the salt, chipotle, and cumin. Stir until evenly coated. Taste one almond and adjust the seasoning. Spread the almonds out in a single layer and insert the baking sheet into the oven.",
+      "Bake for 15 to 20 minutes, keeping an eye on them and stirring halfway through, until the almonds are nicely browned and fragrant.",
+      "Let cool completely before serving or dividing among three gift bags. The almonds will keep for a few weeks in an airtight bag or container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "unblanched, preferably organic",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle",
+        "unit": "tsp",
+        "notes": "ground, depending on how hot you want them; substitute smoked paprika or other mild, ground chili",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70eec5e280cd106edf2d0ff98166c2445ed4a08238e67ef30645d7a820554dbb",
+    "lineage_hash": "fb10502c74b2622b83498fd0a8c2fb1b4720b4856918236405c2b81482caedf3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/appetizers/chipotle-cumin-roasted-almonds-recipe/",
+    "fetchedAt": "2026-09-30T18:45:43.753Z"
+  },
+  "rawSource": "https://cnz.to/recipes/appetizers/chipotle-cumin-roasted-almonds-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,252 @@
+{
+  "recipe": {
+    "name": "Duck Confit Tortellini",
+    "time": "3 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin the duck confit, sprinkle the duck leg with all the aromatics along with a generous coating of sea salt and marinade for 12 hours in the fridge",
+      "Preheat the oven to 170°C/gas mark 3 ½",
+      "Wash and dry the duck leg and place in a small roasting pan and cover with the melted duck fat. Place in the oven and cook for 1½ hours or until it is meltingly tender, then leave to cool in the fat",
+      "For the soya jelly, put the the soy sauce and chicken stock into a pan and bring to the boil, then remove from the heat. Soak the gelatine leaf in cold water to soften for 10 minutes, then squeeze to drain and add to the still warm liquid. Pour into a shallow tray and set aside to set. Once set, dice into even cubes",
+      "To make the pasta, whisk the egg yolks, add a pinch of salt and then the flour and knead till you get a firm, non-sticky dough. If it is too wet, just add more flour. Wrap in cling film and set aside in the fridge for 30 minutes",
+      "For the butternut velouté, in a large saucepan, melt the butter, add the vegetables and season well with salt and pepper. Cook for 2 minutes then add the wine and simmer until it has completely reduced",
+      "Add the chicken stock and boil for about 15 minutes, then add the cream and liquidise to a purée. Strain through a fine sieve, taste and adjust the seasoning as required. Keep warm until ready to serve",
+      "To make the filling, strip the meat from the duck legs and shred finely. Add some of the hoisin sauce and chopped spring onion and roll into balls",
+      "Roll out the pasta dough using a pasta machine, working down to the thinnest setting. Using an 8cm cutter, cut out 4 circles then fill each with the duck mixture, folding and curling into a tortellini shape. Blanch in boiling water and keep warm",
+      "To serve, place a cube of soya jelly and a tortellini into a serving bowl and pour over the velouté (for extra wow factor, pour over the velouté at the table in front of your guests). Garnish with pumpkin seeds and coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Leg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": "peeled, deseeded and diced into 1cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "white part only, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Button Mushrooms",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "washed and finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "455adee1bccb6523e5a504b5cff540622c77a1f262d4d43bdd2f271858d6d9bd",
+    "lineage_hash": "2663117c2f0277c1ec90ee295bd6df401e9543a6df663a5363f781904d785efb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-confit-recipe-tortellini-butternut-squash",
+    "fetchedAt": "2026-08-03T20:24:22.062Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-confit-recipe-tortellini-butternut-squash",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

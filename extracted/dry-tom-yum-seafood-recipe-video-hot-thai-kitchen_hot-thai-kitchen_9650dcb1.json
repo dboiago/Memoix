@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Dry Tom Yum Seafood",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-cook the seafood first by sauteing or searing in the wok with a little oil just until done, then remove from wok and set aside. Tips: Cook each type of seafood separately. If using scallops, cook only until medium doneness rather than well-done for best texture. If using squid, cook them last as they can release a lot of water when cooked, And be careful not to overcook squid; they should take no more than 1 minute.",
+      "In the same wok you cooked the seafood, add a little extra oil, then add lemongrass, galangal, lime leaves, chilies and shallots. Saute over medium heat for about 1 minute.",
+      "Deglaze with a splash of water, then add fish sauce and palm sugar or chili paste. Stir briefly to dissolve the sugar.",
+      "Turn heat to high, then add mushrooms and toss briefly.",
+      "Add the cooked seafood back in the pan along with tomatoes and toss just to mix then turn off the heat.",
+      "Add lime juice and cilantro, and stir to mix.",
+      "Serve with jasmine rice, enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mixed Seafood of Your Choice",
+        "unit": "g",
+        "notes": "I use shrimp, scallops, and squid, see note",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "bottom half only, very thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Galangal",
+        "unit": null,
+        "notes": "finely julienned",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "torn into chunks",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Head Shallot",
+        "unit": "large",
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "remove seeds for less heat, finely chopped",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "alt: stock",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "alt: 1 Tbsp Thai chili paste, see note, finely, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji",
+        "unit": "g",
+        "notes": "oyster or straw mushrooms",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomato Halves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful Chopped Cilantro",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Check Out This Video for How to Clean and Prep a Whole Squid",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Using Thai Chili Paste Will Make a Dish That Has a More Robust Flavour",
+        "unit": null,
+        "notes": "while using palm sugar will give you a lighter, more refreshing dish. Either is delicious. I prefer to use palm sugar because I want the subtle, sweet flavours of the scallops to come through. But if you're looking to replicate the flavour or tom yum goong soup that usually has chili paste, then I would add it.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "824d2be05b7ff8d24ab9cc43d54ad6f3bddf7ef2c9c5effa181ca1179c677d3e",
+    "lineage_hash": "c4a10cf0979aeeb9e83d941a3138936d12e3c42e35865f8717c3b598a2cfeb22"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/dry-tom-yum-seafood/",
+    "fetchedAt": "2026-08-01T15:51:37.359Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/dry-tom-yum-seafood/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Coconut Chocolate Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F). Line a 24-centimeter (9-inch) round cake pan with parchment paper or use a springform or silicon pan. (Alternatively, you can bake the cake in a loaf pan, in muffin tins, or in ramekins.)",
+      "Spread the coconut on a rimmed baking sheet and toast in the oven for 7 minutes, stirring halfway through, until golden and fragrant. Remove from the oven (leave the heat on) and let cool.",
+      "Heat the chocolate and cream in a small saucepan over low heat, stirring from time to time, until melted and smooth. Transfer to a large mixing-bowl and let cool for three minutes.",
+      "Crack the eggs one by one, separating the egg whites from the yolks: set the egg whites aside in a medium mixing-bowl or in the bowl of a food processor with a whisk attachment, and add the yolks to the chocolate mixture, stirring well with a wooden spoon after each addition.",
+      "Add the coconut to the chocolate mixture, and stir to combine. The batter will be thick.",
+      "Using a handheld electric whisk, a manual whisk and strong forearms, or the whisk attachment of your trusty food processor, start beating the egg whites with the salt — slowly at first, then at medium speed. When the egg whites get frothy, up the speed, add the sugar little by little, and keep whisking until the mixture is shiny and smooth. Lift the whisk from the bowl: if the eggs form an elegant swan-neck shape that doesn’t collapse, you’re all done.",
+      "Fold the egg whites into the chocolate mixture in three additions, working gently with a soft spatula to lift the chocolate mixture up and over the egg whites in a circular motion.",
+      "Pour the batter into the prepared pan and bake for 35 minutes, until the top is dry and the blade of a knife inserted in the center comes out clean. (Bake for 5 to 10 more minutes if you’re using a loaf pan, and for 10 to 15 minutes less if you’re using muffin tins or ramekins. Either way, keep a close eye on the baking and use the blade test to be sure.) Transfer to a rack to cool completely and unmold carefully — the cake will be quite fragile."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Dried Grated Coconut",
+        "unit": "g",
+        "notes": "2 cup",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "g",
+        "notes": "6 ounces, the best quality you can afford, chopped",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Whipping Cream",
+        "unit": "ml",
+        "notes": "crème fleurette légère, 1/2 cup",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "1/2 cup plus 2 tablespoons",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "118638f72d585f8f86a3894e5fb4ee169a8c7173a388a5de9954bdd7053a6b8b",
+    "lineage_hash": "c0a13160354cc8b850ba7e936ac996aa59be0d954a8dfce410c7d7c8fed7b29f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/coconut-chocolate-cake-2-recipe/",
+    "fetchedAt": "2026-09-30T18:30:21.095Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/coconut-chocolate-cake-2-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://www.chopstickchronicles.com/ponzu-sauce/",
+  "slug": "authentic-ponzu-sauce-recipe-chopstick-chronicles_chopstickchronicles_e922abb3",
+  "title": "Authentic Ponzu Sauce Recipe - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T01:06:25.930Z",
+  "ldName": "Ponzu Sauce ポン酢",
+  "ldTime": "PT725M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "condiments",
+  "ldKeywords": "#ponzu, #ponzusauce",
+  "ldIngredientsRaw": [
+    "½ cup soy sauce (*1)",
+    "¼ cup mirin",
+    "2 inch kombu kelp strip",
+    "0.2 oz bonito flakes (*2)",
+    "½ cup citrus juice (*3 )"
+  ],
+  "ldInstructionsRaw": [
+    "Pour soy sauce and mirin into a small saucepan over high heat.",
+    "Bring it to a boil and then turn the heat off in order to evaporate the alcohol content of the mirin.",
+    "Add kombu strip and bonito flakes to the saucepan while the mixture of soy sauce and mirin is still hot.",
+    "When it has cooled down, add a citrus juice of your choice.",
+    "Place it in refrigerate overnight.",
+    "Strain the ponzu sauce with a fine mesh strainer and pour it into a sterilized jar."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "175 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "16 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.01 g",
+    "cholesterolContent": "4 mg",
+    "sodiumContent": "6946 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "16 g",
+    "unsaturatedFatContent": "0.12 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ½ cup soy sauce *1",
+    "▢ ¼ cup mirin",
+    "▢ 2 inch kombu kelp strip",
+    "▢ 0.2 oz bonito flakes *2",
+    "▢ ½ cup citrus juice *3"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

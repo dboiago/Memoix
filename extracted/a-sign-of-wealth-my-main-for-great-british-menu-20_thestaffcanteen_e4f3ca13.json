@@ -1,0 +1,515 @@
+{
+  "recipe": {
+    "name": "A Sign Of Wealth",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wrap the bones in tin foil. Place in a sous vide bag with thyme and garlic. Cook at 54\\*C for 35 minutes. Remove from the bag and slowly render in a pan on the stove for prix 10-15 minutes, season well. Leave to rest before carving.",
+      "Make the rub the day before and rub into the",
+      "pork. Leave for minimum 5 hours. Cook at 250\\C for 20 minutes. Lower the heat to 89\\C and cook overnight.",
+      "Add all ingredients to the pan except the bisto, simmer and reduce until thickened, add in Bisto to finish.",
+      "Stud the pineapple with cloves. Crush the star anise. Mix together the salt and egg white by hand. Add in the crushed star anise and 5 spice powder. Coat the pineapple and place in the oven at 230\\*C for 25 minutes. Leave to cool and crack open the salt. Discard the cloves and cut into portions. Blowtorch on one side.",
+      "Cut the silver skin onions in half. Boil the balsamic and pour over the onions. Leave to cool.",
+      "Cut the onions in half leaving the skin on. Place face down in a pan with a little oil, thyme and garlic, season generously. Cover with tin foil. Leave on the side of the stove until blacked and cooked and set aside.",
+      "Slice the onions very thinly. Season well and start cooking over a moderate heat with a splash of oil and some thyme. Keep cooking until well cooked and caramelised. Blend and pass. Correct Seasoning.",
+      "Slice the shallot and mushroom. Colour off the pork belly in a pan with some oil. Add the shallots, garlic, mushroom and cook some more. Add in the butter to colour all well. Cook out the tomato paste. Deglaze with sherry vinegar. Deglaze again with cider. Reduce by half. Add in the rest of the ingredients and bring down to a shiny jus. Finish the sauce to order with gherkins and capers.",
+      "Boil and set as for Agar Jelly and blend. Keep in a squeezable bottle.",
+      "Melt the butter in a sauté pan. Add a little water and cook and glaze. Season with salt and lemon juice. Remove from the pan and finish with chives",
+      "Built by Chefs. Powered by You.",
+      "For 18 years, The Staff Canteen has been the meeting place for chefs and hospitality professionals—your stories, your skills, your space.",
+      "Every recipe, every video, every news update exists because this community makes it possible.",
+      "We’ll never hide content behind a paywall, but we need your help to keep it free.",
+      "If The Staff Canteen has inspired you, informed you, or simply made you smile, chip in £3—less than a coffee—to keep this space thriving.",
+      "Together, we keep the industry connected. Together, we move forward."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "X Ten Bone Suckling Pork Rack",
+        "unit": null,
+        "notes": "bone in, french trimmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shoulders From 2 Suckling Pigs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Red Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Ground Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Cardomom Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Maldon Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "150",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Dar Brown Soft Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Black Pepper Corn",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": "BBQ Pulled pork",
+        "isOptional": false
+      },
+      {
+        "name": "X Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Coke",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Chicken Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Mustard Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2/4",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Dark Brown Soft Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bisto",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "X Pineapple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X Salt",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X Chinese 5 Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pineapple",
+        "isOptional": false
+      },
+      {
+        "name": "X White Balsamic",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Onions",
+        "isOptional": false
+      },
+      {
+        "name": "X Silver Skin Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Burn Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Onions",
+        "isOptional": false
+      },
+      {
+        "name": "X Baby Roscoff Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": "Onions",
+        "isOptional": false
+      },
+      {
+        "name": "X Large Brown Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": "Onion Puree",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Onion Puree",
+        "isOptional": false
+      },
+      {
+        "name": "X Pineapple Boiron",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "Pineapple Gel",
+        "isOptional": false
+      },
+      {
+        "name": "X Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Pineapple Gel",
+        "isOptional": false
+      },
+      {
+        "name": "X Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Pineapple Gel",
+        "isOptional": false
+      },
+      {
+        "name": "X Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Pineapple Gel",
+        "isOptional": false
+      },
+      {
+        "name": "X Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Pineapple Gel",
+        "isOptional": false
+      },
+      {
+        "name": "X Pork Belly Dice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Sliced Banana Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Button Mushroom",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X White Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "½",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Cider",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Malt Barley Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Chicken Stock Dark",
+        "unit": "L",
+        "notes": null,
+        "amount": "2.5",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Half Pigs Trotters",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Jus",
+        "isOptional": false
+      },
+      {
+        "name": "X Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Jus",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56a28c5557d771da2b3f6a737b57b85fa3c6493c5546e0c2405bf6dfa5447973",
+    "lineage_hash": "6885bfd4943074b18cc84fb47cb422171899a92e180f754594bd0253b2f7e489"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/A-Sign-Of-Wealth---my-main-for-Great-British-Menu-2017",
+    "fetchedAt": "2026-08-03T10:42:41.347Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/A-Sign-Of-Wealth---my-main-for-Great-British-Menu-2017",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

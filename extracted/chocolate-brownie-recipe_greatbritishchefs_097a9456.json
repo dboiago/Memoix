@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chocolate Brownie",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter and the plain chocolate, separately",
+      "Whisk together the sugar and eggs. Add the melted butter and plain chocolate and stir well to combine",
+      "Add the sieved flour and cocoa, white chocolate buttons and chopped nuts and pour on to a greased and lined Swiss roll tin. Bake for 20–30 minutes",
+      "Once cooked, allow to cool slightly, then cut into small squares and dust with icing sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Buttons",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c6b4f23b8bce3c0e5426065b5d78fe35c170d4db2a81646d4507f6f3c6e3875",
+    "lineage_hash": "6ae52ebad6d78a89a6e002a75364d744425a08d2ed2c3fc20180161d8cb07fb9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-brownie-recipe",
+    "fetchedAt": "2026-08-03T15:38:37.915Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-brownie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

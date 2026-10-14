@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Bee's Knees Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Cocktail",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. Add the gin, lemon juice, honey syrup, and liqueur to a cocktail shaker. Fill two-thirds with ice and shake vigorously until well-chilled, about 15 seconds.",
+      "2. Strain into a chilled cocktail glass and garnish with lemon twist."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": "preferably Pink Pepper gin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Squeezed Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "see headnote",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Covert",
+        "unit": "oz",
+        "notes": "see headnote, amaretto, or another liqueur",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Twist",
+        "unit": null,
+        "notes": "garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17d096db3427fb278e9c38d64b9bfedc00da9148589dd2ebe0a57bb0e52bc8a1",
+    "lineage_hash": "5e2cfcb1d0a546ed14a6d44977307ae8c1420df03f6236c0963f3a212ff67c43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/bees-knees-cocktail-gin-audemus-spirits-lemon-juice-recipe/",
+    "fetchedAt": "2026-08-02T17:58:28.661Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/bees-knees-cocktail-gin-audemus-spirits-lemon-juice-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

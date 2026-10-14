@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Chocolate Whipped Cream",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "232",
+      "carbohydrateContent": "13",
+      "fatContent": "19",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a microwave safe bowl heat 6 ounces semi sweet chocolate in 30 second increments, stirring in between, until completely melted. Set the chocolate aside to cool. You want the chocolate to be barely room temperature. Not very hot but not beginning to set either.",
+      "Whip 16 ounces heavy cream with 1 tablespoon dark rum and 2 ounces confectioner sugar to soft peak. Whisk 1 cup of the cream into the chocolate until it's completely combined. With the mixer running on low, add the chocolate cream back into the bowl. Increase the speed to high and whisk until the cream is at full peak.",
+      "If you're using the cream in a cake or other dessert, pipe or spread the cream as soon as it's mixed. It will firm up as it chills.",
+      "Refrigerate until serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd1ec55c21071558622c8a8e482abcf354b7646e4f01a068a052756dddd4f302",
+    "lineage_hash": "ca2d7ef18c174b13a053baa50848ca145443fc32d3e26703971a70896ebb6aea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/02/13/chocolate-whipped-cream/",
+    "fetchedAt": "2026-08-02T03:44:51.990Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/02/13/chocolate-whipped-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Drunken Watermelon",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut 3 holes, each about 1-inch in diameter and 2 inches deep, in the top of the watermelon and pour in as much rum as you can. Set it aside to macerate for 1 hour.",
+      "Cut into slices and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Watermelon",
+        "unit": "large",
+        "notes": "about 4 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle of Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "769e1019fbf59b12f73124e57c59b8bf4becfbcf9ee37e5a6c0a53523c1d1c0e",
+    "lineage_hash": "93d442fcadeed339d03060a59b34ff19fe1c053ec4d5ffa108a017f7250102c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/drunken-watermelon/",
+    "fetchedAt": "2026-08-03T03:24:38.772Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/drunken-watermelon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

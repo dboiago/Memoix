@@ -1,0 +1,39 @@
+{
+  "url": "https://www.bongeats.com/recipe/churmur",
+  "slug": "churmur-recipe-by-bong-eats_bongeats_36a4dacc",
+  "title": "Churmur recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:02:57.381Z",
+  "ldName": "Churmur",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": "2 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "kolkata street food, chaat, easy snack recipe, fuchka churmur",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "339"
+  },
+  "htmlIngredientLines": [
+    "200 g potatoes",
+    "60 g phuchka papri",
+    "5 g chhola (whole Bengal gram)",
+    "50 g motor dal (whole yellow peas)",
+    "10 g coriander leaves",
+    "7 g green chillies",
+    "15 g tamarind",
+    "2 tsp lime juice",
+    "5 g salt",
+    "5 g rocksalt",
+    "3 g bhaja masala",
+    "1 tsp chilli flakes",
+    "75 g hot water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

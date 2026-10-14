@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chocolate Macarons",
+    "time": "2 hr 13 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": "12",
+      "fatContent": "3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Use a biscuit cutter or glass to draw twenty-four 2\" circles on a 1/2 sheet of parchment paper. Line 2 baking sheets with parchment paper and put the paper with the circles underneath the parchment on one of the pans. This will be your piping guide.",
+      "Pulse 4 ½ oz almond Flour, 1 ½ oz granulated sugar, 5 ½ oz confectioner sugar, ½ oz dutch process cocoa powder, and ⅛ teaspoon salt in a food processor to combine. Move the mixture to a sieve and sift into a bowl and set aside.",
+      "Place 3 each egg whites and ⅛ teaspoon cream of tartar in a mixing bowl. Whip the whites to soft peak. With the mixer running add 1 ½ oz confectioner sugar and whip to full peak then whisk in 1 teaspoon vanilla extract.",
+      "With a spatula, gently fold the almond/cocoa mixture into the whites in two batches. Continue folding until it becomes soft and shiny, but not thin and runny. When you lift the spatula, the batter should leave a trail on the surface that slowly fades.",
+      "Scoop the batter into a pastry bag fitted with a round tip (or cut the tip of a disposable bag). Pipe the batter into discs that are 1/4\" from the edges of the circles you've drawn. The cookies will continue to spread a little to fill in the circle. Set the pan aside to allow the cookies to dry for about 30 minutes. Meanwhile, preheat the oven to 300 °F.",
+      "Touch the top of a cookie to make sure it's dry to the touch, it can be a bit tacky but shouldn't stick to your finger. Bake for 7 minutes then turn and flip the trays. Bake for another 7-8 until the shells are dry and the centers are soft. Usually, if the shells are baked they'll release easily from the parchment paper. Be careful handling the shells, it's very easy to crack the surface.",
+      "Scoop 8 oz milk chocolate ganache into a clean pastry bag fitted with a small plain tip or cut the tip of a disposable bag.",
+      "Pair up the cooled shells by size. Flip over half the shells and pipe a dollop of ganache. Sandwich the cookies gently, handling the cookies by the edges and not the tops.",
+      "The finished cookies should be refrigerated in a covered container for 1 day before serving. The cookies can also be frozen for several weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Flour",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Egg Whites",
+        "unit": null,
+        "notes": "aged, see note",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Ganache",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79910679ebfaaa9a4dacbb0937b23472196ea3b1982835f8a536f0d2ef16c585",
+    "lineage_hash": "88c1725258e917e480877217bea48b46a83ad72280ce17122b3a1af47217acf4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/11/18/chocolate-macarons/",
+    "fetchedAt": "2026-08-02T03:12:44.316Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/11/18/chocolate-macarons/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

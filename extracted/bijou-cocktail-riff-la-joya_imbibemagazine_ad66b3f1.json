@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Bijou Cocktail Riff: La Joya",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass, add ice, and stir. Strain into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Px Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittermens Hopped Grapefruit Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "181de49f5371e1accd50339caef14386de77afd6f4fe53c8e342979015c0385c",
+    "lineage_hash": "22a954e8f1bb4922d8bf9b705f6b158ef5f0bf8ea80a4e4bfb67a3a616138e5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bijou-cocktail-riff-la-joya/",
+    "fetchedAt": "2026-08-03T20:04:14.954Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bijou-cocktail-riff-la-joya/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

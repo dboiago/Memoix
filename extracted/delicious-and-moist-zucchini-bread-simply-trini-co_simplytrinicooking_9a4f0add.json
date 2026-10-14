@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Zucchini Bread",
+    "time": "1 hr 35 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add to the grated Zucchini: the nutmeg, salt, baking soda and baking powder, mixed essence, sugar, eggs, almond essence, and oil. Then add the flour and mix to a smooth consistency. Pour into a baking pan 24 X 14 X 6.5 cm",
+      "Pre-heat oven at 350 degrees F for 5 minutes. Bake at 250 degrees F for 30 minutes then at 300 degrees F for 45 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini Grated",
+        "unit": "medium",
+        "notes": "will yield about 4 cups",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Essence",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Essence",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ce1af185a57f42b750c2488cfc79fe853750677b8ea7e4558d5880ca51f2412",
+    "lineage_hash": "75da98bf7ff0bca9fc35370fc9096e77a4e43b5960ebf27e0d297abdad94fc1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/zucchini-bread/",
+    "fetchedAt": "2026-09-25T23:27:18.349Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/zucchini-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

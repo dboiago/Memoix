@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Concord Grape Jam with Vanilla",
+    "time": "55 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "96",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "57",
+      "carbohydrateContent": "15",
+      "fatContent": "0.1",
+      "proteinContent": "0.1"
+    },
+    "directions": [
+      "Put a small plate or bowl in the freezer to chill while you prepare the jam. You'll use this to test if the jam is gelled.",
+      "Separate the skins from the pulp from 7 cups fresh concord grapes, reserving both. In a food processor or blender, pulse the grape skins with 4 oz water until you have a chunky puree.",
+      "In a large pan, cook the pulp ¼ vanilla bean over medium heat until soft, about 10-15 minutes, stirring frequently. Remover the vanilla bean pod and run the grape pulp through a food mill or strainer to remove the seeds",
+      "Scrape the the seeds from vanilla bean and add them to the pulp. Combine the strained pulp with the skins and 2 ½ lbs granulated sugar in a large saucepan. Bring the mixture to a boil and cook about 15-20 minutes until it begins to thicken.",
+      "To check if the jam is ready, take the plate from the freezer and put a small dollop of jam onto the cold plate. Let it cool then push on the jam. If it wrinkles it's ready. If it's still runny cook it a few more minutes.",
+      "Pour the hot jam into sterilized canning jars. Use a wet paper towel to wipe the rims of the jars to make sure they're clean. Any bits of fruit can prevent the lids from sealing properly. Cover and process the jars in a boiling water bath for 15 minutes (see note).",
+      "Remove from the water and allow to cool at room temperature. You should hear the lids \"pop\" to let you know the jars are sealed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Concord Grapes",
+        "unit": "C",
+        "notes": "measure after plucking from the stems, fresh",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "lb",
+        "notes": "5 cups",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67b749ff612d89b0ab1373102109c666950dcaae4fed56eb2274a87dc9ee5b60",
+    "lineage_hash": "86cf71aeb00e5695f0656b6d9a5aec8e70d43df0fcb4b441b0952777da6fb9c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/09/19/concord-grape-jam/",
+    "fetchedAt": "2026-08-01T20:24:06.151Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/09/19/concord-grape-jam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

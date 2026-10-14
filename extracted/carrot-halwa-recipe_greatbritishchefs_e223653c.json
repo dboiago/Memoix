@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Carrot Halwa",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the grated carrot and milk in a heavy-bottomed pan, place over a high heat and bring to the boil",
+      "Once boiling, turn the heat down to medium and simmer, stirring regularly, until most of the liquid has evaporated. This will take about 30 minutes",
+      "Add the sugar, cardamom seeds and raisins (or sultanas) and continue cooking, stirring so the mixture doesn’t catch. Finally add the ghee and cook until the colour is deep orange and unctuous",
+      "Leave the halwa to cool slightly before serving with a scoop of vanilla ice cream and chopped pistachio nuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": "husks removed and seeds crushed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Raisins",
+        "unit": null,
+        "notes": "or sultanas",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pistachio Nuts",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c13041022b1fa81b55d3f4379503b314c0e6b539410dea5b5598814ab6bf828",
+    "lineage_hash": "307078de3e899cb4d0abf84f7b85a25481cce877dc8e23a28766f39f3d5bbf1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-halwa-recipe",
+    "fetchedAt": "2026-08-02T20:54:22.542Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-halwa-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

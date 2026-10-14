@@ -1,0 +1,291 @@
+{
+  "recipe": {
+    "name": "Chocolate Moelleux with Caramel Foam and Cardamom Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you plan to serve the dish, make the ice cream. Add the milk to a saucepan and gently warm (do not allow to boil). Add the cardamom pods, then blitz with a stick blender to break them up. Remove from the heat and set aside for 10 minutes to infuse, then strain through a fine sieve into a clean pan",
+      "Add the milk powder and UHT cream to the infused milk and bring to 40°C. Add the rest of the ingredients, stir well and bring to the boil. Once boiling, remove from the heat, discard the vanilla pod and blitz with the stick blender until smooth. Place in the fridge to mature overnight",
+      "The next day, blitz the ice cream mixture with a stick blender to ensure it is well combined, then transfer to an ice cream maker and churn according to the manufacturer’s instructions. Freeze until ready to serve",
+      "To make the honeycomb, place the honey, glucose, sugar and water into a saucepan over a medium heat and cook until the sugar melts and a golden caramel begins to form. Remove from the heat, stir in the bicarbonate of soda, then pour the mixture onto a silpat mat or baking tray lined with baking paper and leave to cool. Once cool, break into shards and reserve in an airtight container (ideally with a sachet of silica gel to ensure it stays completely dry)",
+      "To make the caramel foam, add the cream, milk, glucose and vanilla pod to a saucepan and gently warm. Meanwhile, place the sugar in a separate pan and cook over a high heat until it melts and turns into a golden caramel",
+      "Carefully pour the milk mixture over the caramel (take care – it will splutter), stirring to combine. Use a stick blender to mix in the gelatine, salt and egg yolks, then strain through a fine sieve into a siphon gun. Immediately charge with 2 gas canisters, then chill in the fridge",
+      "To make the moelleux, preheat an oven to 180°C/gas mark 4. Place the chocolate and butter in a heatproof bowl set over a pan of simmering water and melt until it reaches a temperature of 45–50°C. Meanwhile, place the eggs and sugar in the bowl of a stand mixer and whisk until it forms ribbons",
+      "Fold the egg mixture into the chocolate mixture, followed by the flour. Divide the batter into 10 dome moulds, then cook for 15–20 minutes until a skewer inserted into the centre comes out clean. Leave to cool in the moulds",
+      "To serve, remove the moelleux from their moulds and divide between 10 bowls. Give the siphon gun a good shake and use it to fill the bowl with caramel foam, then add a rocher of the cardamom ice cream on top. Finish with shards of honeycomb and a little gold leaf, if using"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "505",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inverted Sugar Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atomised Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser Stab 2000",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": "g",
+        "notes": null,
+        "amount": "27",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "ideally Valrhona Manjari 64% chocolate",
+        "amount": "72",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "68",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "113",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "113",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T45 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "385",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "167",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "167",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Gelatine",
+        "unit": "g",
+        "notes": "mixed with around 20ml of water",
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "015228a7bdbe929226b7ec8908e6b2f28910e9f254752a2295871cad1d8b0bb8",
+    "lineage_hash": "e71afdcc2bbac58d9d40e9c0ba5dd2a9d8bdd02096b7710f65061efa3055a5dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-moelleux-caramel-cardamom-recipe",
+    "fetchedAt": "2026-08-03T05:54:05.014Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-moelleux-caramel-cardamom-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

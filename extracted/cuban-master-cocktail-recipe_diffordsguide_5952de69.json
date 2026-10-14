@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Cuban Master Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "208",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of pineapple wedge skewered with a Luxardo Maraschino Cherry.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with pineapple wedge on rim skewered with maraschino cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light White Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": "brandy",
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09bdc06399efd077eb92692faeb69fecddecb330ae07901910af566696e1cfeb",
+    "lineage_hash": "bc27d117bd60c7344d51cfe67dbc5cb8d1649fd1c05b6328191c500d761880a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/496/cuban-master",
+    "fetchedAt": "2026-08-02T05:39:27.922Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/496/cuban-master",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

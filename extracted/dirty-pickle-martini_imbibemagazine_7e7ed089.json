@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Dirty Pickle Martini",
+    "time": null,
+    "course": "pickles",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker with ice and shake until chilled. Strain into a chilled coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spicy Pickle Juice",
+        "unit": "oz",
+        "notes": "Di Tota uses McClures Spicy Pickle brine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "827f76bc852b1002b16769a9ffeae80e0b59e61ddfdd498d8b0ca20c40c2b14b",
+    "lineage_hash": "b52babe6b63039e2462723f362b897d7900b953ddaf3b2ea74e07264d514bc36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dirty-pickle-martini-recipe/",
+    "fetchedAt": "2026-08-03T22:56:01.134Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dirty-pickle-martini-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

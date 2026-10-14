@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Chinese Mu Shu Pork Burger",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the burger/sausage ingredients thoroughly in a large bowl. Form into 4 patties about ¾ inch (1.9 cm) thick or stuff into casings. Wash your hands thoroughly after handling the raw meat and egg mixture.",
+      "To make burgers: Prepare a grill in a 2-zone setup  and clean the grates well. Clean grates is important because these burgers are not as firm as regular hamburgers and they will stick to dirty grates.",
+      "Slice the bell pepper in half, discard the seeds and stem, and wash. Place the two halves skin down over the hot part of the grill and close the lid. Cook until the skin blackens and blisters, about 5 minutes. Remove the pepper, put it in a bowl, and cover it with a plate so the steam will loosen the skin. Peel the skin and cut the roasted meat into thin strips.",
+      "Brush oil on the burgers so they will not stick. Place the patties on the grates on the indirect side. Cook the burgers with the cover on until they hit about 145°F (62.8°C), then move to the direct side and leave the lid up while you sear. Gently flip the burgers every 2 minutes being careful not to allow them to break apart. Remove when internal temperature of the burger is 160°F (71.1°C). If the coals flare up or the meat begins to char, move the burgers to the indirect zone.",
+      "While the burgers are cooking, toast the cut side of the buns over the middle between the direct and indirect zone, watching them carefully so they do not burn. Remove them and spread the chopped Romaine on the bottom halves of the buns, and the red pepper strips on top of the lettuce.",
+      "When the burgers are done, set them on the lettuce and peppers, spread 1 teaspoon of hoisin sauce on top, sprinkle them with sesame seeds and scallions. Put the top of the bun next to the colorful burger and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork Muscle",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¾",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork Fat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Unseasoned Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped fine",
+        "amount": "¼",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "peeled and shredded with a peeler or box grater",
+        "amount": "¼",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, peeled and grated on the small holes of a box grater",
+        "amount": "3",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": "more if you like things hot, crushed",
+        "amount": "1",
+        "section": "burger",
+        "isOptional": false
+      },
+      {
+        "name": "Good Quality Buns",
+        "unit": null,
+        "notes": "brioche would be nice, kaiser will work fine",
+        "amount": "6",
+        "section": "Mouth",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Red Bell Pepper",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Mouth",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Mouth",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mouth",
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Romaine Lettuce",
+        "unit": null,
+        "notes": "or another crunchy lettuce, chopped",
+        "amount": "4",
+        "section": "Mouth",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "chopped on a bias",
+        "amount": "¼",
+        "section": "Mouth",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "102b3ff2fd5238618bcbd12d561940cf35319cb4eb3826f470b8ecbe40703233",
+    "lineage_hash": "f171ab2fb1f188e34293c5155ccd6b9f4cb08e02c88b015e4fea63d4ea459f58"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-recipes/chinese-mu-shu-pork-burger-recipe/",
+    "fetchedAt": "2026-08-02T06:12:51.051Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-recipes/chinese-mu-shu-pork-burger-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

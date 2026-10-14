@@ -1,0 +1,228 @@
+{
+  "recipe": {
+    "name": "Lone Star Beef Ribs with Bare Bones Barbecue Sauce",
+    "time": "2 hr",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the Lone Star rib rub: Place the salt, chile powder, cracked pepper, garlic powder, oregano, cayenne, and cumin in a small bowl and mix with your fingers. Set aside 1 tablespoon of the rub for the Bare-Bones Barbecue Sauce.",
+      "Make the mop sauce: Place the beer, vinegar, coffee, and 1 1/2 tablespoons of the Lone Star rib rub in a nonreactive bowl and whisk to mix. Set the mop sauce and remaining rub aside separately.",
+      "Prepare the ribs: Place a rack of ribs meat side down on a baking sheet. Remove the thin, papery membrane from the back of the rack by inserting a slender implement, such as a butter knife or the tip of a meat thermometer, under it. The best place to start is on one of the middle bones. Using a dishcloth, paper towel, or pliers to gain a secure grip, peel off the membrane. Repeat with the remaining rack.",
+      "Generously sprinkle the ribs on both sides with the remaining rub, using about 1 tablespoon per side and rubbing it onto the meat. (Any leftover rub will keep for several weeks in a sealed jar away from heat and light.) Cover the ribs with plastic wrap and refrigerate them while you set up the grill under the grate.",
+      "Set up a charcoal grill for indirect grilling and preheat to medium (325 to 350 degrees F). Place a large drip pan in the center of the grill.",
+      "When ready to cook, brush and oil the grill grate. Place the ribs bone side down in the center of the grate over the drip pan and away from the heat. Toss half of the wood chips on each mound of coals. Cover the grill and cook the ribs for 45 minutes.",
+      "Mop the ribs on both sides with some of the mop sauce. Re-cover the grill and continue cooking the ribs until they are well browned, cooked through, and tender enough to pull apart with your fingers, 45 minutes to 1 1/4 hours longer, 1 1/2 to 2 hours in all. When the ribs are done, the meat will have shrunk back from the ends of the bones by about 1/4 inch. Mop the ribs once or twice more and replenish the coals as needed.",
+      "Transfer the ribs to a large platter or cutting board and let rest for a few minutes. If possible, save the drippings from the ribs for the Bare-Bones Barbecue Sauce (see Note). Cut the racks in half, if you are serving 4, or into 1- or 2-rib pieces. Serve at once with the barbecue sauce on the side.",
+      "Heat the oil in a heavy nonreactive saucepan over medium heat. Add the onion, garlic, and jalapeno and cook until lightly browned, about 3 minutes, stirring with a wooden spoon. Add the beer, increase the heat to high, and boil until reduced by about half.",
+      "Add the beef stock, ketchup, steak sauce, Worcestershire sauce, and Lone Star rib rub, reduce the heat to medium-high, and slowly bring the sauce to a boil. Add 1 to 2 tablespoons of water or beef stock, enough to thin the sauce to a pourable consistency, and let simmer until the flavors meld, 3 to 5 minutes. If you’ve saved the rib drippings from the drip pan to make a richer sauce, add 1 to 2 tablespoons of them along with the beef stock."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coarse Salt",
+        "unit": "Tbsp",
+        "notes": "kosher or sea",
+        "amount": "3",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Chile Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Lone Star rib rub",
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Lone Star Beer",
+        "unit": null,
+        "notes": "alt: other lager-style beer",
+        "amount": "1",
+        "section": "For the mop sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Distilled White Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For the mop sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brewed Coffee",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For the mop sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Racks Beef Long Ribs",
+        "unit": null,
+        "notes": "5 to 6 pounds total",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Chips",
+        "unit": "C",
+        "notes": "alt: chunks, preferably oak, soaked for 1 hour in water to cover, then drained",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Mop",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno Pepper",
+        "unit": null,
+        "notes": "for a hotter sauce, leave the seeds in, fresh, seeded and minced",
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lone Star Beer",
+        "unit": "C",
+        "notes": "alt: other lager-style beer",
+        "amount": "½",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Steak Sauce",
+        "unit": "Tbsp",
+        "notes": "such as A.1.",
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Lone Star Rib Rub",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Bare Bones Barbecue Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "893de9b1513d7e4e969c359b93aa6af9a5d795a4e62de4d3d841703e5e86c8ef",
+    "lineage_hash": "7979431c7135f8009f848fba4d5d110fb202b2658d765441e321bde5c771667e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2012/06/21/a-4th-of-july-menu-part-ii-lone-star-beef-ribs-with-bare-bones-barbecue-sauce/",
+    "fetchedAt": "2026-08-01T18:04:14.787Z"
+  },
+  "rawSource": "https://barbecuebible.com/2012/06/21/a-4th-of-july-menu-part-ii-lone-star-beef-ribs-with-bare-bones-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

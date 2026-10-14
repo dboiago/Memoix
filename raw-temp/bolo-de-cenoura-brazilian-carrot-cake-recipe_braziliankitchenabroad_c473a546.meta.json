@@ -1,0 +1,72 @@
+{
+  "url": "https://braziliankitchenabroad.com/brazilian-carrot-cake/",
+  "slug": "bolo-de-cenoura-brazilian-carrot-cake-recipe_braziliankitchenabroad_c473a546",
+  "title": "Bolo de Cenoura - Brazilian Carrot Cake Recipe",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T18:56:00.965Z",
+  "ldName": "Brazilian Carrot Cake with Chocolate Sauce",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "8",
+    "8 slices"
+  ],
+  "ldCuisine": "Brazilian",
+  "ldCategory": "Breakfast, Dessert, Snack",
+  "ldKeywords": "cake, carrot, easter, spring",
+  "ldIngredientsRaw": [
+    "2 cups all-purpose flour",
+    "2 teaspoon baking powder",
+    "1 pinch kosher salt",
+    "2  large carrots (peeled and cut into chunks (you should have enough to fill a liquid 1-cup measurer all the way to the top))",
+    "1 ¾ cups granulated sugar",
+    "1/2 cup vegetable oil ((can also use canola oil))",
+    "3  large eggs",
+    "2 teaspoon vanilla extract",
+    "3 tablespoon whole milk",
+    "1/2 cup granulated sugar",
+    "2 tablespoons cocoa powder",
+    "1 tablespoon butter",
+    "1 pinch kosher salt"
+  ],
+  "ldInstructionsRaw": [
+    "For the Cake:",
+    "For the Chocolate Sauce:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "carbohydrateContent": "83 g",
+    "proteinContent": "6 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "62 mg",
+    "sodiumContent": "155 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "58 g",
+    "calories": "491 kcal",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "[Cake]",
+    "2 cups all-purpose flour",
+    "2 teaspoon baking powder",
+    "1 pinch kosher salt",
+    "2  large carrots peeled and cut into chunks (you should have enough to fill a liquid 1-cup measurer all the way to the top)",
+    "1 ¾ cups granulated sugar",
+    "1/2 cup vegetable oil (can also use canola oil)",
+    "3 large eggs",
+    "2 teaspoon vanilla extract",
+    "[Chocolate Sauce]",
+    "3 tablespoon whole milk",
+    "1/2 cup granulated sugar",
+    "2 tablespoons cocoa powder",
+    "1 tablespoon butter",
+    "1 pinch kosher salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Dark As Night",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Snifter",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients with ice to chill, then strain into a snifter over a large piece of ice. twist an orange peel over the drink, then discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinato",
+        "unit": "oz",
+        "notes": "Casey uses Mancino Chinato, or substitute a Barolo Chinato",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nocino",
+        "unit": "oz",
+        "notes": "Casey uses Nux Alpina",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "tsp",
+        "notes": "1:1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8bcc849b08371054d1ebd103a047ed6d2493573f964300c0324cb2c10bc1cad5",
+    "lineage_hash": "254c7a73a9fdac6c42fb87b841a0d103e93cf8b8a42fa28cc777fac16d3be43e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dewberry-hotel-dark-as-night/",
+    "fetchedAt": "2026-08-03T21:21:00.467Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dewberry-hotel-dark-as-night/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

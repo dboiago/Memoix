@@ -1,0 +1,37 @@
+-    4 cups wood chunks or chips (about 8 ounces (226 g)) 
+    
+
+Burnt Ends
+
+-   6 pound brisket point USDA [Choice grade or higher](https://amazingribs.com/tested-recipes/beef-and-bison-recipes/beef-grades-and-labels/)
+-   3 teaspoons [Morton Coarse Kosher Salt](https://amazingribs.com/more-technique-and-science/more-ingredients-glossaries/science-of-salt/) (approximately ½ teaspoon per pound)
+-   ¼ cup  [](https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/big-bad-beef-rub-recipe/)[Big Bad Beef Rub](https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/big-bad-beef-rub-recipe/) (alternatively, you can use [our bottled commercial beef rub](https://amazingribs.com/flavor/#red). To do so, be sure to skip the salt as the bottled rub already contains salt.)
+-   ¼ cup [Kansas City style](https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/kc-classic-bbq-sauce-recipe/) [barbecue sauce](https://amazingribs.com/)
+-   ¼ tablespoon brown sugar
+
+1.  **Prep.** Trim any excess fat off of the brisket point. Refrigerate the trimmings to use when finishing the burnt ends.
+    
+2.  Salt the meat about 12 to 24 hours in advance so it can work its way in, 2 to 4 hours minimum. After salting, sprinkle the [Big Bad Beef Rub](https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/big-bad-beef-rub-recipe/) liberally on all areas of the meat and rub it in, setting aside any remaining rub to use once the meat has been smoked cubed. [Keep the meat chilled until just before you cook it.](https://amazingribs.com/technique-and-science/myths/let-meat-come-to-room-temp/) Chilled meat attracts more smoke. I strongly recommend you use a [remote digital thermometer](https://amazingribs.com/) and insert the probe with the tip centered in the thickest part of the meat furthest from the heat.
+    
+3.  **Fire up.** Pre-heat your smoker, or if you are using a grill, set it up for [indirect cooking](https://amazingribs.com/more-technique-and-science/grill-and-smoker-setup-and-firing/2-zone-setup/). Click here to see how to set up a [gas grill](https://amazingribs.com/more-technique-and-science/grill-and-smoker-setup-and-firing/best-setups-for-gas-grills/), here to set up a [charcoal grill](https://amazingribs.com/more-technique-and-science/grill-and-smoker-setup-and-firing/charcoal-grill-setup/), or here to set up a bullet smoker like the [Weber Smokey Mountain](https://amazingribs.com/weber-smokey-mountain-accessories/). Get the cooker temp stabilized at about 235°F (113°C). We want to cook at about 225°F (107°C), but the temp will drop a bit once you open the lid and load in the cold meat.
+    
+4.  **Cook.** Put the meat on the cooker. On a smoker with a water pan, put the meat right above the water. Place the oven temp probe on the grate next to the meat. Add about 2 cups (4 ounces (113 g)) of [wood](https://amazingribs.com/more-technique-and-science/grill-and-smoker-setup-and-firing/science-of-wood-and-smoke/) right after the meat goes on. When the smoke stops, add 4 ounces more during the first 2 hours, which usually means adding some every 30 minutes or so. Keep an eye on the water in the pan. Don't let it dry out. After 3 hours, turn the meat over if the color is different from top to bottom. Otherwise, leave the meat alone. No need to mop, baste, or spritz. It just lowers the temp of the meat and softens the bark. 
+    
+5.  When the meat's internal temperature reaches 155°F (68.3°C) and has taken on a nice dark hue, take the meat off of the smoker or grill and wrap it _tightly_ in a double layer of heavy-duty foil. Add the beef broth, crimp the foil tight, and put the wrapped meat back on the smoker or grill over indirect heat. This step, called the [Texas Crutch](https://amazingribs.com/more-technique-and-science/more-cooking-science/texas-crutch/), slightly [braises](https://amazingribs.com/more-technique-and-science/grill-and-smoker-setup-and-firing/thermodynamics-of-cooking/#braising) and steams the meat, but most importantly, it prevents the surface evaporation that cools down the meat and causes the stall (read more about the stall [here](https://amazingribs.com/more-technique-and-science/more-cooking-science/understanding-and-beating-barbecue-stall/)).
+    
+6.  **Prep again**. When the meat temp hits 195°F (95°C), carefully remove it from the foil, reserving the liquid to use later. Cut the point into cubes about 1-inch on all sides. Set aside any pieces that are too fatty or just eat them. Dust them with rub and a little sugar to accelerate browning and bark formation. Tumble them onto a grill topper on a hot grill over direct heat for a few minutes to caramelize the sugars and brown the cut edges.
+    
+7.  **Cook again**. In a frying pan, render the beef fat that you trimmed from the brisket point. Or better still, use bacon fat or duck fat. You can do this over hot coals. Move the cubes to the pan and gently fry them until they are crunchy on the outside, turning them a few times. Drain the fat and add about 1/4 cup of your favorite BBQ sauce and 1/4 cup of the drippings from the foil used for the Texas Crutch. Put the pan back on the grill and stir every 5 minutes or so. Let the cubes absorb most of the liquid and start to sizzle, but don't let them burn.
+    
+8.  **Serve**. When they're done, serve them before they go soft. You can just present them in a pile on a plate, or on a bun. I like to make a [banh mi](https://amazingribs.com/tested-recipes/pork-recipes/smoked-pork-belly-burnt-ends-banh-mi/) type sandwich with quick pickled onions on a garlic bread baguette sandwich.
+    
+
+_**About the brisket.** I cannot stress this enough: When shopping for brisket, go for the highest grade you can find, and handpick the slab with the most fat striation visible. Pay no attention to the fat cap. You will trim most of that away. But marbling is important. Go for USDA Choice, USDA Prime, or Certified Angus Beef. If it is not labeled, chances are it is USDA Select. Avoid it. Brisket is the classic example of “garbage in, garbage out.” Please don’t write to me and say you can’t figure out why your brisket was tough if you did not buy USDA Choice or better._ 
+
+_**About the salt.** Remember, kosher salt is half the concentration of table salt so if you use table salt, use half as much. [Click here](https://amazingribs.com/more-technique-and-science/more-ingredients-glossaries/science-of-salt/) to read more about salt and how it works._
+
+_**_About_ **_the Big Bad Beef Rub._**** _If you’d rather not make this rub from scratch you can buy it instead. We have created a bottled rub that is very similar and [you can purchase it here](https://amazingribs.com/flavor/#red). Keep in mind that our bottled rubs have salt in them. When using the bottled rub with this recipe, you do not need to add the salt that is called for in the recipe. Just use the rub instead and add it when the salt is called for.__
+
+_**About the barbecue sauce**_. _For the sauce, you can use our recipe for Kansas City-style BBQ sauce [here](https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/kc-classic-bbq-sauce-recipe/), our [commercial KC BBQ sauce](https://amazingribs.com/flavor/), or your favorite bottled sauce._
+
+[Let us know](#comment) how it was!

@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chunky Cherry Chocolate Cookies",
+    "time": "3 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "248",
+      "carbohydrateContent": "30",
+      "fatContent": "13",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line 2 half sheet pans with parchment paper or  silicone baking mats.",
+      "In a bowl, whisk together 10 ounces all-purpose flour, 1 ounce dutch process cocoa powder, ½ teaspoon baking soda, ½ teaspoon table salt and set aside.",
+      "In a mixer bowl, beat 8 ounces unsalted butter with 12 ounces granulated sugar and for 2-3 minutes until light and aerated. Add 2 large eggs, 1 teaspoon vanilla extract and ½ teaspoon almond extract. Turn off the mixer and scrape the bowl. With the mixer running on low, slowly add the dry ingredients. Mix until the flour is partially incorporated. Add 6 ounces chocolate chunks and 4 ounces salted almonds. Remove the bowl from the mixer and fold in 8 ounces Bing cherries.",
+      "Using a 2 oz (1/4 cup) scoop, portion the dough into balls. Place the cookie balls onto the sheet pan, spacing them 3\" apart if you will bake the same day, or closer together to freeze. (see note) You can bake the cookies immediately, but for best results I recommend chilling the cookie balls for at least 1 hour or up to 24 hours before baking. You can also chill the dough in the bowl and portion right before baking.",
+      "Bake until the edges of the cookies are set and the tops are lightly puffed and still soft, about 10 minutes. If the dough is cold add 2-4 minutes to the baking time.  Cool for 5 minutes on the sheet pan then you can slide the parchment paper off the pan and onto a cooling rack. Cool until the cookies are firm enough to handle without breaking apart."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chunks",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Almonds",
+        "unit": "oz",
+        "notes": "1 cup, coarsely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bing Cherries",
+        "unit": "oz",
+        "notes": "coarsely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46976a361cfd59ef7cea184b7832b6854bb5ba00fabe85580f8df93266fb909d",
+    "lineage_hash": "cc279843336a4721ec69e71364e8149cc00c1fd2748ead35bc7a7af852284254"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/08/14/cherry-chocolate-cookies/",
+    "fetchedAt": "2026-08-02T06:14:42.512Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/08/14/cherry-chocolate-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

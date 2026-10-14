@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chocolate-Blackberry Coffee Float",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the chilled coffee into a glass and add the ice cream. Spoon on the blackberry purée, then top with whipped cream and nuts. Makes 1 serving (or 2 if you feel like sharing!).",
+      "For the whipped cream, whip a cup of heavy cream with a teaspoon of vanilla extract and a tablespoon of sugar until the cream forms a velvety, cloud-like texture."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoops Dark Chocolate Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "Tbsp",
+        "notes": "puréed, make sure the berries are nice and sweet",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh-whipped Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea4e3d0fb4f234b6c204a880db1507d61a8989cf5d2749b214cce1cdcc03dceb",
+    "lineage_hash": "d4938d5b51c7167bdd16d298d316163fc249a9effa574b7d33220a7399d7d725"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-blackberry-coffee-float-recipe/",
+    "fetchedAt": "2026-08-03T20:39:11.882Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-blackberry-coffee-float-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

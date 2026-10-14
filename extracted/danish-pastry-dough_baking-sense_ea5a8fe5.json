@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Danish Pastry Dough",
+    "time": "4 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "282",
+      "carbohydrateContent": "30",
+      "fatContent": "16",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Mix 3 oz water with 2 ¼ teaspoons instant dry yeast. Add 3 oz whole milk and 1 egg to the water/yeast mixture and mix to combine. Set the wet ingredients aside.",
+      "Place 12 ½ oz all purpose flour, 3 oz sugar, ½ teaspoon table salt and ½ teaspoon ground cardamom in the bowl of a stand mixer or a large mixing bowl. Mix for 30 seconds to combine the ingredients. Toss in 8 oz unsalted butter cubes and run the mixer on low briefly to distribute the butter. You don’t want to break the butter down at this point. If working by hand, toss in the butter cubes and mix them through the flour.",
+      "With the mixer running on low, add the liquid all at once and mix just until it is absorbed. If working by hand stir the liquid in until it’s mostly absorbed. Turn the rough mass out onto the work surface and gather the dough into a large ball. Wrap the ball in plastic and refrigerate for 1-2 hours. The dough will rise slightly while refrigerated.",
+      "On a lightly floured surface, use your hands to pat the dough into a rough rectangle, then roll the dough to a 12” x 16” rectangle. Lightly brush the surface of the dough with cold water. Fold the dough into thirds, like a letter. Lightly brush the surface of the dough with cold water. Roll the dough up from the short side. You’ll now have a short log.",
+      "Press on the log to flatten and roll into a 12” x 16” rectangle. Lightly brush the surface of the dough with cold water. Fold the dough into thirds, like a letter, brush again with water and then fold in half to make a square.",
+      "Wrap the dough and place it in the refrigerator for at least 2 hours or up to 2 days. If at any time during the folding the dough becomes tough or the butter begins to melt, wrap the dough and let it rest in the refrigerator for 30 minutes before proceeding.",
+      "The dough is ready to use in any recipe or can be frozen to be used at a later date. When ready to use the dough in a recipe, do not unfold before rolling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "⅓ cup, warmed to 105 °F",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "⅓ cup, scalded and cooled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 ½ cups, see note",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold, cut into ½\" cubes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee9398c713f56dc0446794bcbefa53e410b700c10c65a0fd429e527e1e91fb34",
+    "lineage_hash": "60f0e0e8577d483545be132f09c88c3ea2c28f5e16c7d1a75807aedcfbf95cff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/10/06/danish-pastry-dough/",
+    "fetchedAt": "2026-08-01T20:08:00.364Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/10/06/danish-pastry-dough/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

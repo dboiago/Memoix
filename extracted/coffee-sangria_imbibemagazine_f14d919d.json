@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Coffee Sangria",
+    "time": "16 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by brewing about a gallon of cold-brew coffee. Combine the coffee and water in the Toddy (or whichever brew method suits you) and let sit for 10-12 hours. Strain the coffee through the filter and decant into a jug. Set aside.",
+      "When the coffee is strained and ready, zest the orange into the batch, then add all the fruit into the finished coffee and give it a stir. Let it sit for about 4-6 hours, then strain the coffee and discard the fruit. Taste, then add simple syrup to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Coffee",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "gal",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Orange",
+        "unit": null,
+        "notes": "peeled and cut into segments",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Strawberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Red Grapes",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": null,
+        "notes": "(1:1), to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "25091f9b00c74fe6fbc797eec69d1389126298704cb6458fb44fc8f6e8fe0ade",
+    "lineage_hash": "a440c432b0d47476453b552103bf7f49df13ffa074297c2d623b1e138770927f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coffee-sangria/",
+    "fetchedAt": "2026-08-03T22:56:41.947Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coffee-sangria/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

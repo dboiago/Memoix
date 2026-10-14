@@ -1,0 +1,337 @@
+{
+  "recipe": {
+    "name": "Deconstructed Hot Toddy",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First of all, mix the tartaric acid with an equal amount of cold water and leave overnight",
+      "For the lemon confit, grate some of the zest off the lemons with a fine grater, and cut off the skin leaving a small amount of lemon flesh attached",
+      "Cut the skin into thin strips, then blanch and refresh in clean water four times. Check that the strips are tender and no longer bitter",
+      "Bring the water and lemon juice to a boil, add the strips of lemon and one spoonful of sugar and place over a very low heat",
+      "Add one more spoonful of sugar every 10 minutes until all is added. Keep cooking until the lemon is tender",
+      "When tender, leave to cool. Pulse the confit in a food processor until coarsely chopped",
+      "To make the lemon pate de fruit, bring the lemon juice, water and lemon confit to the boil. Pass through a chinois and return the liquid to a clean pan",
+      "Mix 5g of sugar with the pectin. Bring the lemon mixture back to the boil and add the pectin mix. Mix 105g of sugar and the glucose powder together",
+      "Re-boil the lemon mix and whisk in the sugar and glucose powder",
+      "Boil until the mixture reaches 107˚C. Remove from the heat, whisk in the tartaric acid and pour into a 19 x 7 x 0.7 cm tray lined with cling film. Leave to set and cool",
+      "Cut the pate de fruit into 0.7cm dice and coat in caster sugar",
+      "To make the ginger ice cream, put a tray lined with baking parchment into the freezer. Mix the yolks, xylitol and trimoline together",
+      "Put the milk and cream in a suitable sized pan and bring to the boil. Pour onto the egg mix whilst continuously whisking",
+      "Return to a clean pan and cook to 76˚C. Cool in a bowl set over another bowl full of ice",
+      "Whisk in the ginger gel. Pour into an ice cream machine and churn until frozen. The mix needs to be frozen enough for you to pipe it",
+      "Once frozen, place the mixture in a piping bag with a 1.5cm diameter nozzle and pipe long tubes onto the frozen lined tray. Freeze until hard",
+      "Cut into 2.5cm length pieces when completely frozen",
+      "To make the ginger tuile, dissolve the sugar with a little water in a suitable sized pan and add the glucose syrup. Cook to 150˚C",
+      "Mix in the butter and the flaked almonds. Pour onto a metal tray lined with greaseproof paper and leave to cool and set hard",
+      "Heat the oven to 180°C/Gas mark 4. Break up the almond mix and put it in a blender. Blitz into a powder. Weigh out 50g of the powder and add the ground ginger",
+      "Sprinkle onto a baking tray in an even layer and place in the oven to melt, checking  every 5 minutes",
+      "When re-melted, take the mix out of the oven, cover with greaseproof paper and roll over with a rolling pin to spread it out. Cool and break into shards. Store in an airtight container",
+      "To make the lemon and honey cake, line a baking tin measuring 8 x 18 x 7.5 cm. Heat the oven to 175˚C fan/Gas mark 3-4",
+      "Combine the eggs, honey and sugar and mix well. Add the oil slowly and continue to whisk until combined. Next add the zest and then gently fold in the flower, baking powder and baking soda",
+      "Pour into the prepared tin and cook for about 25 – 30 minutes or until a skewer comes out clean. Turn onto a wire rack and leave to cool",
+      "To make the whisky gel, warm the water and dissolve the sugar, then leave to cool. Mix in the whisky and whisk in the Ultratex",
+      "Leave for 5 minutes and re-whisk. Put into a piping bag and seal",
+      "Slice the cake and break 4 slices into crumbs, then lightly toast these under a grill. Sprinkle some crushed ginger tuile over the centre of a round plate",
+      "Pipe 10 – 11 beads of whisky gel within the area of the plate covered in tuile. Put 7-9 pieces of pate de fruit randomly on the plate",
+      "Arrange the ice cream on and around the garnish, staying within the centre of the plate. Place 6-7 shards of the tuile standing up against the ice cream and garnish",
+      "Sprinkle the toasted sponge over the top. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tartaric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xylitol",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Gel",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Manuka Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whisky",
+        "unit": "ml",
+        "notes": "preferably 15-year old Dalwinnie",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ultratex",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c7ebb57e2764f857a6027601a1b6606b422b49be1a418c6b80bf79244a2d188",
+    "lineage_hash": "bf888119d53ffbf27b974f737cb612fc09173c5e68217d55cfa92d91f8df72c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/deconstructed-hot-toddy-recipe",
+    "fetchedAt": "2026-08-03T17:38:55.588Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/deconstructed-hot-toddy-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

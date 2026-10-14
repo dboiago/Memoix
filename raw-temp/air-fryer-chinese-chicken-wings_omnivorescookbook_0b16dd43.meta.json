@@ -1,0 +1,69 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-chinese-chicken-wings/",
+  "slug": "air-fryer-chinese-chicken-wings_omnivorescookbook_0b16dd43",
+  "title": "Air Fryer Chinese Chicken Wings",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T05:05:18.922Z",
+  "ldName": "Air Fryer Chinese Chicken Wings",
+  "ldTime": "PT1469M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT24M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 lb chicken wings",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "1 tablespoon Shaoxing wine ((or dry sherry))",
+    "1 tablespoon light soy sauce ((or soy sauce))",
+    "1 teaspoon ground ginger",
+    "1 1/4 teaspoons salt",
+    "1 teaspoon sugar",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon white pepper powder",
+    "2 tablespoons cornstarch",
+    "2 tablespoons all-purpose flour",
+    "Oil spray"
+  ],
+  "ldInstructionsRaw": [
+    "Add the chicken wings, peanut oil, Shaoxing wine, soy sauce, ground ginger, sugar, salt, garlic powder, and white pepper powder into a large bowl or a large ziplock bag. Mix everything well and massage the chicken (or the bag if using) until the seasonings are evenly coated. Marinate in the fridge overnight (highly recommended), or for a minimum of 2 hours at room temperature.",
+    "Right before cooking, preheat the air fryer to 350°F (176°C).",
+    "Drain the chicken thoroughly and discard the marinating liquid. Pat the chicken dry with paper towels. Add the cornstarch and all-purpose flour to a small bowl and stir to mix. Add to the bowl with chicken. Mix to coat the chicken well. It should form a dry-ish coating on the chicken with some dry flour on the surface.",
+    "Place the chicken wings in the air fryer basket in a single layer, skin side down (*Footnote 1). (Cook in batches if they don't fit.) Spray with oil so there’s no dry flour left.",
+    "Air fry the chicken wings for 12 to 15 minutes (Footnote 2), or until the chicken turns golden crispy. Flip once in between."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "260 kcal",
+    "carbohydrateContent": "10.3 g",
+    "proteinContent": "33.6 g",
+    "fatContent": "8.5 g",
+    "saturatedFatContent": "2.3 g",
+    "cholesterolContent": "101 mg",
+    "sodiumContent": "356 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "2.2 g"
+  },
+  "htmlIngredientLines": [
+    "2 lb chicken wings",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "1 tablespoon Shaoxing wine (or dry sherry)",
+    "1 tablespoon light soy sauce (or soy sauce)",
+    "1 teaspoon ground ginger",
+    "1 1/4 teaspoons salt",
+    "1 teaspoon sugar",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon white pepper powder",
+    "2 tablespoons cornstarch",
+    "2 tablespoons all-purpose flour",
+    "Oil spray"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

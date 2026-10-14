@@ -1,0 +1,51 @@
+{
+  "url": "https://omnivorescookbook.com/jujube-tea/",
+  "slug": "chinese-jujube-tea_omnivorescookbook_1108d8e9",
+  "title": "Chinese Jujube Tea (红枣茶)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:22:47.831Z",
+  "ldName": "Chinese Jujube Tea (红枣茶)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Drink",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "60 g (6 big) jujubes",
+    "5 g (1 tablespoon) goji berries",
+    "1 thumb  ginger (, sliced)",
+    "1 tablespoon brown sugar ((or to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Place the jujubes in a large bowl and water to cover. Soak for 10 minutes. Then gently rub the jujube surface to remove any dust. Drain and discard the water. Halve the jujubes using a paring knife, then remove the cores.",
+    "Rinse the goji berries with water. Gently rub to remove any dirt from the surface.",
+    "Add the jujubes, goji berries and ginger to a small pot. Add 4 cups of water. Cook over medium-high heat until boiling. Turn to medium-low heat and simmer for 10 minutes.",
+    "Once done, strain the tea using a small strainer. Press the jujubes to release as much liquid as possible.",
+    "Add the brown sugar and stir to mix well. Taste the tea and add more sugar if needed. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "22 kcal",
+    "carbohydrateContent": "5.2 g",
+    "proteinContent": "0.4 g",
+    "fatContent": "0.1 g",
+    "sodiumContent": "5 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "2.8 g"
+  },
+  "htmlIngredientLines": [
+    "60 g (6 big) jujubes",
+    "5 g (1 tablespoon) goji berries",
+    "1 thumb  ginger , sliced",
+    "1 tablespoon brown sugar (or to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

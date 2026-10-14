@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Avocado Ice Cream with Sesame Cones",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the avocado ice cream, start by adding the juice and zest of both the lime and lemon to a pan, along with the sugar and vanilla pod. Gently simmer until the sugar is dissolved but don’t allow the syrup to reduce. Remove the pan from the heat, extract the vanilla pod and allow to cool",
+      "Peel and de-stone the avocados, then add the flesh to a blender along with the cooled citrus syrup, salt and milk. Blend until smooth then taste – add more sugar, salt or citrus juice if needed. Pass the mixture through a fine sieve into an ice cream machine, then churn according to the manufacturer’s instructions. Reserve in the freezer until needed",
+      "To make the sesame cones, combine the flour, salt, orange juice, and both sugars in a stand mixer with a paddle attachment and mix until smooth. With the motor still running, slowly incorporate the butter a little at a time. Leave to cool in the fridge for 2 hours",
+      "Once the sesame cone mixture is cooled, spread small rectangles of the mixture onto a non-stick baking tray lined with baking paper. Sprinkle with sesame seeds, then bake in the oven for 10 minutes, or until golden. Leave for a few minutes until cool enough to handle, then carefully shape each piece into a cone shape and set aside. You may need to do this in batches, depending on how big your baking tray is",
+      "To serve, spoon or pipe the avocado ice cream into the sesame cones. Sprinkle with togarashi to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Togarashi",
+        "unit": null,
+        "notes": "for sprinkling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Sesame Seeds",
+        "unit": null,
+        "notes": "ideally a mixture of white and black",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5489deac8eca9d03517c50bb554fa667f1177f72ef8d7225a1455237535b2d0",
+    "lineage_hash": "a4ec967fa99ad274f93f654271b1753f8bc6769af5121cb43a2b8015f252aa8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-ice-cream-sesame-cone-recipe",
+    "fetchedAt": "2026-08-02T22:51:57.820Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-ice-cream-sesame-cone-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

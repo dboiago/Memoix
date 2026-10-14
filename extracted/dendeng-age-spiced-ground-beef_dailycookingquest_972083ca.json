@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Dendeng Age",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a wok/frying pan on medium-high heat, sauté spice paste and salam leaves until fragrant. About 5 minutes.",
+      "Add ground beef, cook until no longer pink.",
+      "Season with sweet soy sauce, palm sugar, salt, and tamarind juice. Mix well.",
+      "Pour in the coconut milk and water. Mix well. Bring to a boil. Reduce heat to a simmer and cook until all the sauce has been absorbed by the meat. Stir occasionally to prevent the meat from sticking to the wok/pan.",
+      "Add kaffir lime leaves slivers and toss to mix. Turn off the heat and transfer to a serving plate. Set aside to cool.",
+      "Dendeng age is usually served warm or at room temperature. It is best if you can let this age for 2-3 days to let the flavor develops. Simply store the cooled dendeng in an airtight container in the fridge, and reheat the amount you wish to eat as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salam Leaves (indonesian: Indonesian Bay Leaves)",
+        "unit": null,
+        "notes": "omit if you don't have these",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": "450 gram, or thinly sliced beef",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar (indonesian: Gula Jawa)",
+        "unit": "Tbsp",
+        "notes": "or dark brown sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Juice (from 1/2 Tablespoon Tamarind + 1 1/2 Tablespoon Hot Water)",
+        "unit": null,
+        "notes": "mix, massage, and strained",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves (indonesian: Daun Jeruk)",
+        "unit": null,
+        "notes": "remove the ribs and cut into thin slivers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "g",
+        "notes": "Indonesian: bawang merah",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal (indonesian: Lengkuas)",
+        "unit": "inch",
+        "notes": "bruised",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": "Indonesian: bubuk ketumbar",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk jinten",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "289dae3a2d1725ac2ae9388f20acf2409a7d7e967101744340d89c36af5555b9",
+    "lineage_hash": "35ed9d6ee43e146a334b6bf6446eab6a4964e9452cc025ed475af867e8e95211"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/dendeng-age-spiced-ground-beef.html",
+    "fetchedAt": "2026-08-01T22:45:28.457Z"
+  },
+  "rawSource": "https://dailycookingquest.com/dendeng-age-spiced-ground-beef.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

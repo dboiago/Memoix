@@ -1,0 +1,44 @@
+{
+  "url": "https://japan.recipetineats.com/deep-fried-rice-crackers-age-okaki/",
+  "slug": "deep-fried-rice-crackers-age-okaki_japan_6b3e9eb0",
+  "title": "Deep-fried Rice Crackers (Age Okaki)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T20:19:55.663Z",
+  "ldName": "Deep-fried Rice Crackers (Age Okaki)",
+  "ldTime": "PT4345M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Japanese snacks, senbei, Snack",
+  "ldKeywords": "omochi, Rice Cakes, sticky rice recipe",
+  "ldIngredientsRaw": [
+    "3  rectangle rice cakes ((50g / 1.8oz each, note 1))",
+    "Oil for deep-frying",
+    "2-3 pinches of salt ((note 2))",
+    "1 tsp aonori ((note 3))"
+  ],
+  "ldInstructionsRaw": [
+    "Slice each rice cake into about 5mm thick pieces (note 4).",
+    "Put the rice cake slices on a rack, without overlapping.",
+    "Place the rack on a table/bench to dry for about 3⅜ days (note 5). They should show fractures. They sometimes even crack a bit.",
+    "Heat oil to 160°C / 320°F. The depth of the oil should be about 2cm.",
+    "Add the rice cake pieces to the oil (note 6) and fry for about 10 minutes until the rice cake explodes in the centre (sometimes a couple of times) and the surface becomes light golden brown. The fried rice cake should be almost double in size. occasionally turn the rice cracker pieces while frying.",
+    "Transfer to the tray lined with kitchen paper to drain excess oil.",
+    "Sprinkle salt (and aonori if using) over while hot.",
+    "Serve when cooled down."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\trectangle rice cakes\n\t\t\t\t\t\t\t\t\t\t(50g / 1.8oz each, note 1)",
+    "Oil for deep-frying",
+    "[Flavouring]",
+    "2-3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpinches\n\t\t\t\t\t\t\t\t\t\tof salt\n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\taonori\n\t\t\t\t\t\t\t\t\t\t(note 3)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

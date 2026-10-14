@@ -1,0 +1,331 @@
+{
+  "recipe": {
+    "name": "Breaded Dover Sole with Velouté",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place one small and one large Dover sole fillet together, ensuring they are top and tail (the narrow end of one fillet is against the thicker part of the other fillet)",
+      "Place in a large vacuum bag and seal in a chamber sealer. Repeat this process with the remaining fillets, seal in a separate vacuum bag and cook in the water bath for 30 minutes",
+      "Once cooked, place the vacuum bags in iced water and chill until the fillets have set together",
+      "To make the scallop velouté, sweat the vegetables and dill in a heavy-based pan with a drizzle of olive oil",
+      "Heat the Pernod in a flambé pan and use a long-stemmed lighter to ignite the alcohol fumes. Cook until the flames have disappeared. If using a gas burner, make sure you remove the pan from the hob before flambéing",
+      "Add the flambéed Pernod to the vegetables along with the white wine and simmer until the liquid has reduced by half",
+      "Add the fish stock and scallop skirts to the saucepan, bring to the boil and reduce the liquid by three quarters. Pour in the cream, simmer for a further 5 minutes then season with pepper and remove from the heat",
+      "To make the parsley oil, add the olive oil and parsley to a blender and blitz to a purée. Place the mixture in a cheesecloth, hang over a bowl and allow the liquid to drip until all the oil has been strained through",
+      "For the mashed potato, place the potatoes in a saucepan, cover with cold water and season with salt. Bring to a boil and simmer until soft but not overcooked, the potatoes should still hold their shape",
+      "Drain the potatoes and leave to steam for about 10 minutes so that any excess water evaporates. Pass them through a mouli or potato ricer and fold in the butter and milk. Season to taste and place in a piping bag",
+      "Slice the baby leeks in half and heat in a hot pan until slightly charred. Finish with a sprinkle of salt and a drizzle of olive oil",
+      "In a medium saucepan, sweat the fennel over a medium heat until just cooked. Add the shallots and sea vegetables and keep warm",
+      "Stir the mussels and shrimp into the velouté and warm gently for 5 minutes, or until the mussels have opened and the shrimp are cooked. Discard the mussel shells",
+      "Coat the sole fillets in seasoned flour then gently shake off any excess flour. Dip the fillets into the egg wash and then the Panko breadcrumbs, ensuring the fish is coated evenly",
+      "Carefully deep-fry until golden and crisp on both sides. Drain the fillets on kitchen paper and set aside until ready to serve",
+      "To serve, pipe the mash into bowls, forming round mounds. Add the velouté and mussels to one side of the piped mash",
+      "Place the crispy Dover sole over the mash, followed by the charred leeks and fennel cress. Finish with a drizzle of parsley oil and a sprinkle of chopped chives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dover Sole Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Fennel",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pernod",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallop Skirts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Shrimp",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "ml",
+        "notes": "picked and blanched",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled and cut into quarters",
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Purslane",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Samphire",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salty Finger Leaf",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Cress",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f97c422b423b58e6f2433c7c46e512084a115bee75c653f646c9afe5d68c8c77",
+    "lineage_hash": "b14b37f175fcdccff6f13a5bee0beffd922cb97232501c2fdf6dd593a37955da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/breaded-dover-sole-veloute-recipe",
+    "fetchedAt": "2026-08-03T13:50:31.162Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/breaded-dover-sole-veloute-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

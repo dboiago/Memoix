@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Dried Seaweed and Rib Soup",
+    "time": "40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "How to prepare ribs |Heat a pot of water until boiling and then place ribs in. Add scallion in. Cook for 2-3 minutes and transfer the ribs out.",
+      "Pre-hydrate the dried seaweed and then cut into small pieces. Then smash the ginger.",
+      "Add water, ginger, dried seaweed and ribs in high pressure cooker. Use soup procedure.  Add salt and the cover the lid and let it stay for another about 5 – 10 minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Ribs",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed Hydrated",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger Smashed",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "alt: coriander for garnishing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e850fcc0ff837d2882d27e76ed34f48da9c4a306322eaaa4f475ee8d37bec464",
+    "lineage_hash": "728141341c8ffec3b0e621fabc193f077aafc0038b172d1c2d6407f9d476cb55"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/dried-seaweed-and-rib-soup/",
+    "fetchedAt": "2026-08-02T05:26:36.019Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/dried-seaweed-and-rib-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

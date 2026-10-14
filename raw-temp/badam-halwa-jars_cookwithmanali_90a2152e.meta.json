@@ -1,0 +1,62 @@
+{
+  "url": "https://www.cookwithmanali.com/badam-halwa-jars/",
+  "slug": "badam-halwa-jars_cookwithmanali_90a2152e",
+  "title": "Badam Halwa Jars",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T02:23:48.485Z",
+  "ldName": "Badam Halwa Jars",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "badam halwa jars, diwali dessert, fusion indian dessert",
+  "ldIngredientsRaw": [
+    "1 cup badam halwa (homemade)",
+    "175-200 grams mawa (khoya (dried solids))",
+    "2 tablespoons sugar",
+    "1/2 teaspoon cardamom powder",
+    "1/3 cup chopped nuts (I used a mix of almonds, cashews &amp; pistachios)",
+    "1 cup heavy cream",
+    "1 teaspoon rose water",
+    "1 tablespoon powdered sugar (icing sugar/confectioners sugar)"
+  ],
+  "ldInstructionsRaw": [
+    "Before you start, you have to make sure the badam halwa is already cooked and ready. Refer to the badam halwa recipe on the blog.",
+    "To a pan on medium heat, add mawa and start sautéing it. It will become liquid-y at first. Cook for around 4 to 5 minutes, stirring often.",
+    "Then add sugar and reduce heat to low. It will melt again once you add sugar. Cook for around 2 minutes after adding sugar.Add 1/2 teaspoon cardamom powder and 1/3 cup chopped nuts (I used a food processor to finely chop the nuts).  Stir for a minute and remove pan from heat.",
+    "To make the last part of the jar, to the steel bowl of your stand mixer fitted with wire whisk attachment (or use your hand mixer), beat the heavy cream with powdered sugar and rose water until it forms peaks. Don&#39;t over-beat else cream will separate.",
+    "To make the jars (I have used 4 oz jars here), first place the halwa at the bottom. I used a piping bag and tip to make a swirl shape. Then top with the mawa and nuts mixture.Finally pipe the whipped cream on top. Garnish with nuts and edible gold leaves and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "369 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "7 g",
+    "fatContent": "26 g",
+    "saturatedFatContent": "14 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "60 mg",
+    "sodiumContent": "94 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "11 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup badam halwa, homemade",
+    "▢ 175-200 grams mawa, khoya (dried solids)",
+    "▢ 2 tablespoons sugar",
+    "▢ 1/2 teaspoon cardamom powder",
+    "▢ 1/3 cup chopped nuts, I used a mix of almonds, cashews & pistachios",
+    "▢ 1 cup heavy cream",
+    "▢ 1 teaspoon rose water",
+    "▢ 1 tablespoon powdered sugar, icing sugar/confectioners sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/421/chinese-cosmopolitan",
+  "slug": "chinese-cosmopolitan-cocktail-recipe_diffordsguide_1a3134c6",
+  "title": "Chinese Cosmopolitan Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-02T03:59:58.823Z",
+  "ldName": "Chinese Cosmopolitan",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Chinese Cosmopolitan"
+  ],
+  "ldIngredientsRaw": [
+    "60 ml Krupnik liqueur",
+    "22.5 ml Lychee liqueur",
+    "15 ml Lime juice",
+    "30 ml Cranberry juice"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a MARTINI GLASS.",
+    "Prepare garnish of orange zest twist.",
+    "SHAKE all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS flamed orange zest twist over cocktail, then use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "172 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

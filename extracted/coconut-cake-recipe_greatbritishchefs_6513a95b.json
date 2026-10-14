@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Coconut Cake",
+    "time": "1 hr 30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the angel food cake, sift the flour and 150g of the sugar together into a mixing bowl and set aside",
+      "Whisk the egg whites in a food mixer with the cream of tartar and salt until stiff peaks form",
+      "Add the flour and sugar mixture, remaining sugar and vanilla extract and beat on low until well-mixed. You should have a thick batter that is glossy and white",
+      "Pour or spoon the batter into the cake tins and bake for 30–35 minutes until the cakes spring away from the sides of the tins and are a pale golden brown",
+      "Gently run a butter knife around the edges of the cake tins to loosen the cakes, then invert them onto a wire cooking rack. Allow to cool before cutting horizontally through the middle of each cake to make 4 sponge layers",
+      "To make the coconut cream, beat the cold coconut cream with the whipping cream until stiff peaks form and you have a nice thick mixture",
+      "Sandwich the 4 layers together with the coconut cream, then swirl the remaining coconut cream all over the top and sides of the layered cake. Scatter the coconut flakes or shredded coconut all over the outside the cake and cut into slices to serve. Refrigerate any leftover cake for up to 48 hours"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "divided into 2 bowls",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "make sure there is absolutely no egg yolk in the whites, at room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "ml",
+        "notes": "left overnight in the fridge before using",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "g",
+        "notes": "shredded, or coconut flakes",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c508fec969455b1967481df3b50c323fe58928f126979fb5a01367acb3304ef1",
+    "lineage_hash": "de0903ef238b2e4ea3b52e8cedb4e907e053d0054fb67aca4d6e5417f6cc79dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-cake-recipe",
+    "fetchedAt": "2026-08-03T13:15:11.017Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

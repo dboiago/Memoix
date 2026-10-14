@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Chocolate Swiss Roll Cake",
+    "time": "1 hr 12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "314",
+      "carbohydrateContent": "27",
+      "fatContent": "23",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line a half sheet pan with parchment paper.",
+      "Combine the oil, egg yolks, water and vanilla in a mixer bowl. Mix on medium speed until well combined.",
+      "Sift the flour and cocoa with ½ cup of the sugar, the baking powder and salt. With the mixer on low, add the dry ingredients to yolk mixture. Whip on high speed for 1 minute, then set aside",
+      "Whip the egg whites on medium speed to soft peak. Gradually add the remaining 1/4 cup sugar, increase the speed to medium high and whip to full peak. Fold the whites into the yolk mixture in three increments. Fold just until there are no streaks of white.",
+      "Pour the batter into the pan and smooth until level. Don't overwork the batter while spreading or you'll deflate the air bubbles in the batter. Bake until the middle of the cake springs back with lightly pressed, about 12 minutes. Cover the pan with a kitchen towel and cool the cake completely in the pan.",
+      "To make the filling, combine the confectioner's sugar and cornstarch in a small saucepan, whisk to combine. Slowly whisk in ½ cup of the cream. Heat the mixture over medium low, whisking constantly, until it begins to boil and thickens to a pudding-like texture. Immediately remove from the heat and transfer to a small bowl. Add the vanilla and cool to room temperature.",
+      "Whip the remaining cream to soft peak. With the mixer running on low speed, add the pudding. Increase the mixer to high speed and whip the cream to full peak. Use immediately to fill the cake.",
+      "Run a small knife around the edges and flip the cake out of the pan onto the towel. Peel the parchment off the back of the cake. Use the towel and the parchment to flip the cake back over onto the parchment paper.",
+      "Remove the towel and spread the cream over the cake. Use the parchment paper to lift the long side of the cake then roll the cake tightly. Wrap the parchment paper around the cake and let it overlap at the bottom. Place the sheet pan at the seam of the paper. Push the pan against the cake while you pull on the overlap to tighten the parchment around the cake. Refrigerate for 1 hour to set the cream and chill the cake.",
+      "Remove the cake from the refrigerator and remove the parchment. Set the cake on a baking rack over a clean sheet pan.",
+      "Microwave the the chocolate with the butter in 30 second increments until both are melted. Add the corn syrup to the chocolate/butter mixture. Pour the warm glaze over the chilled cake, using a small spatula to fill in any gaps. Allow the glaze to set before moving to a serving platter. Trim both ends of the cake for a clean finish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "3",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "3¾",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup, see note",
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup, divided",
+        "amount": "6",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Cream Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cream Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Cream Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1½",
+        "section": "Chocolate Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7a6307c248d101ea965dd93864bc5fa6af754c239ff86349c0f06a4dd09e498",
+    "lineage_hash": "57e471228db9b3da98ec38e397c4cfc89e4252091dc776f0fd6ba0daad8d3082"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/11/16/chocolate-swiss-roll-cake/",
+    "fetchedAt": "2026-08-02T02:48:15.578Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/11/16/chocolate-swiss-roll-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

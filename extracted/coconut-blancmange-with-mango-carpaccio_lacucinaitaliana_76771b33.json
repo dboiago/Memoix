@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Coconut Blancmange with Mango Carpaccio",
+    "time": "2 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the gelatin in cold water. Bring the milk to a boil with the coconut flour, then turn off the heat and let it sit for ten minutes. In another saucepan over very low heat, melt half the sugar with a tablespoon of water to obtain a syrup: bring it to a boil then turn off the heat.",
+      "Slightly beat the egg whites with an electric hand mixer, then drizzle in the boiling syrup and continue beating until you achieve a meringue consistency. Blend the milk and coconut flour to obtain a cream, pass it through a fine sieve, and place it back over the heat and melt in the drained gelatin. Turn off the heat after 1 minute and let it cool.",
+      "Transfer the beaten egg whites into a bowl and gently incorporate the coconut cream, the fresh whipped cream, and the rest of the sugar until you obtain a light and airy mousse, otherwise known as a blancmange. Let it set in the refrigerator for a few hours at least. Trim and peel the mango, slice it finely, and serve it with the blancmange."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "whipped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gelatin",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9656e605511de60364fcc7ef96075b7268610004a22ffa07af427e81ce6a59e2",
+    "lineage_hash": "74af7d1193eafe837e8b0dcd066f71ddae57632b109be76b47ae5fe612fab646"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-blancmange-with-mango-carpaccio",
+    "fetchedAt": "2026-08-02T17:30:18.009Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-blancmange-with-mango-carpaccio",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

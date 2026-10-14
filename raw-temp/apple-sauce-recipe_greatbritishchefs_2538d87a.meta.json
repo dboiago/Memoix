@@ -1,0 +1,33 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/apple-sauce-recipe",
+  "slug": "apple-sauce-recipe_greatbritishchefs_2538d87a",
+  "title": "Apple Sauce Recipe",
+  "byline": "by Matthew Tomkinson",
+  "fetchedAt": "2026-08-03T07:37:38.586Z",
+  "ldName": "Apple sauce",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "5 Bramley apples",
+    "50g of butter",
+    "75g of Demerara sugar",
+    "1 dash of water",
+    "1 lemon, juiced to taste",
+    "2 pinches of cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "To begin, peel, core and dice the apples",
+    "Melt the butter in a pan over a low-medium heat. Add the apples, sugar and water and cook gently until soft and puréed",
+    "Stir in the cinnamon and lemon juice, then transfer to a jar. Allow to cool a little before serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

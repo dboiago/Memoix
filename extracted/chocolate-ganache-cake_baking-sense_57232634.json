@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Chocolate Ganache Cake",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "511",
+      "carbohydrateContent": "51",
+      "fatContent": "33",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Pour the boiling water over the cocoa powder.",
+      "Whisk the cocoa until smooth and set aside to cool.",
+      "Sift together the flour, salt and baking powder.",
+      "Combine the milk, oil, vanilla and sugar in a mixing bowl.",
+      "Add the eggs and mix to emulsify the ingredients.",
+      "Add the flour and the cocoa mixture to the bowl.",
+      "Mix until the batter is smooth. The batter will be quite wet.",
+      "Divide the batter between two 8″x3″ pans.",
+      "Bake until a toothpick inserted in the center of the cake come out clean. Cool in the pan for at least 10 minutes before turning out onto a cooling rack. Cool the layers completely before assembling the cake.",
+      "Pour scalding hot cream over the chopped chocolate.",
+      "Do not stir for several minutes to allow the chocolate to start melting.",
+      "Stir the ganache to combine.",
+      "Cover the ganache and keep it at room temperature until set.",
+      "The ganache should be set but still soft.",
+      "Trim the top of the cakes to level and split each cake in 2 for a total of 4 layers.",
+      "Whip the ganache until it is aerated and lightens in color. This will just take 1-2 minutes.",
+      "Use the whipped ganache immediately to fill and ice the cake layers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "9",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "16",
+        "section": "Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 ½ cups",
+        "amount": "20",
+        "section": "Ganache",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61bcd3e2f3819723e4a5517bba95dbbf7d67d8845a99ca2a7882e838ea1b52b6",
+    "lineage_hash": "993ecdbd370de5c17ef49ed2c43304e84ffce15e3ae879ed6f4d1c5e134ed5cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/02/15/chocolate-ganache-cake/",
+    "fetchedAt": "2026-08-02T02:46:46.698Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/02/15/chocolate-ganache-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

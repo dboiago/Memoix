@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Baba au Rhum",
+    "time": "2 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "509",
+      "carbohydrateContent": "89",
+      "fatContent": "15",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Combine the milk with the yeast and sugar in the bowl of a stand mixer with the paddle attached. Or use a large mixing bowl with use a hand mixer or wooden spoon.",
+      "With the mixer running on low, add the eggs. Then add the flour and salt and mix until the flour is incorporated.",
+      "With the mixer running, toss in the softened butter, a tablespoon at a time. Mix until the butter is incorporated. The texture will be a very thick batter or very loose dough. It will not come together like a bread dough. Cover the bowl and set it aside to rise until doubled in size, about 1 hour. Meanwhile, soak the raisins in the rum and generously butter 12 baba or popover molds. (If you're using a non-stick pan you don't need to butter.)",
+      "When the dough is ready, drain the raisins and reserve the rum. Stir the raisins into the dough until they are evenly distributed. Divide the dough evenly among the prepared molds, filling each no more than 1/2 way. Cover the tray and set it aside until the dough fills the molds, about 30-45 minutes. Preheat the oven to 375°F.",
+      "Slide the trays into the oven and bake until the babas are well browned, about 20 minutes. Start checking the babas at 15 minutes. The total baking time will vary based on the type of pan used. Remove the tray from the oven. Turn the babas out of the pans onto a wire rack.",
+      "While the babas bake and cool, make the rum syrup. Combine the water with the sugar in a medium sauce pan. Scrape the seeds from the vanilla bean and stir them into the syrup. Toss in the vanilla pod. Bring the mixture up to a boil then turn off the heat. Add enough new rum to the reserved rum to bring it back up to a 1/2 cup. Add the rum to the syrup.",
+      "Place as many babas as will fit into the pot of syrup. Leave them in the syrup for 10 minutes, flipping them around after 5 minutes to soak the other side. Lift the babas out of the syrup and set them onto a wire rack set over a clean sheet pan to drain. Continue with the remaining babas. Reserve any left over syrup for plating.",
+      "Warm the apricot preserves and strain to remove the chunks of fruit. Brush the tops and sides of each baba with the preserves. Let the babas cool completely before plating and serving.",
+      "To serve. Whip the cream with the confectioner's sugar and vanilla. Place a baba on it's side on a dessert plate. Split it lengthwise and open it like a book. Drizzle the middle of the baba with left over syrup to taste. Pipe or scoop a generous dollop of whipped cream into the center."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1/2 cup, scalded and cooled to 110 °F",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": "1 packet",
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 tablespoons",
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "5",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 cups, see note",
+        "amount": "15",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "softened to room temperature",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "alt: currants",
+        "amount": "½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "½",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Preserves",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "12",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5056a0269041792cb146d06de4961f7ad411aa71a32ab1971908ab6dd2d31176",
+    "lineage_hash": "7719cd88ad8b1494de3807604c5ba1d8ea424c559fe3e5c4db1323f54234ede6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/12/20/baba-au-rhum/",
+    "fetchedAt": "2026-08-01T15:58:46.602Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/12/20/baba-au-rhum/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

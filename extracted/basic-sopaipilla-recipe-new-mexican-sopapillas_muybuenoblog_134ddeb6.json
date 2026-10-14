@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Basic Sopaipilla (New Mexican Sopapillas)",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "77",
+      "carbohydrateContent": "12",
+      "fatContent": "3",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a large bowl, sift together flour, baking powder, and salt. Cut in shortening until mixture resembles coarse crumbs. Gradually stir in water just until dough pulls together.",
+      "Divide dough into 5 pieces. Roll out each piece of dough on lightly floured board into an 8-inch diameter circle. Cut each circle into 4 wedges.",
+      "Heat oil in a deep frying pan. Add a few of the tortilla wedges at a time. The wedges will puff up. Turn once so they will puff evenly on both sides; then turn back to brown on both sides.",
+      "Drain on paper towels. While warm, coat each sopaipilla with cinnamon-sugar mixture. Serve with honey."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shortening",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil for Frying",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "480ebda3e01423ca489964757060093b36fedeb3d89cf2e487d426be87e75967",
+    "lineage_hash": "4b5321f568fd1fdd89e8cd347f49e993f53272186fa933936419f4307e32cd7c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/sopaipillas/",
+    "fetchedAt": "2026-08-02T03:54:07.745Z"
+  },
+  "rawSource": "https://muybuenoblog.com/sopaipillas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

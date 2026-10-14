@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Dark and Stormy Kettle Corn",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "PopcornPreheat your oven to 275° F. Line a baking sheet with parchment paper and set aside. To prepare the popcorn, heat the oil, three corn kernels, and 1 teaspoon of salt in a large, covered pot over medium-high heat. When the kernels pop, remove from the heat and add the remaining kernels. Cover immediately and count to 30. (This method first heats the oil to the right temperature, then waiting 30 seconds brings all of the other kernels to a near-popping temperature so that when they are put back on the heat, they all pop at about the same time.)",
+      "Crack the lid just a tiny bit to allow steam to escape and return the pot to the heat. As the corn pops, shake the pot every 20 seconds or so to ensure all the kernels make their way to the bottom and nothing burns. When the popping slows to several seconds between pops, dump the popcorn into a large bowl. Set aside and wipe out any stuck-on bits of popcorn from the pot with a paper towel, so they don’t burn during the sauce-making process.",
+      "Dark & Stormy SauceTo prepare the sauce, pour the ginger beer, rum, and lime juice into the pot. Lower the heat to medium and place back on the burner, bring to a light boil, and simmer until the mixture reduces by two-thirds. Pour into a bowl and set aside. Add the butter and brown sugar to the pan. Lower the heat to medium-low and cook, stirring often, for about 5 minutes, or until thickened, amber in color, and a little bit sticky. Remove from the heat, mix in the reduced alcohol mixture, and add the baking soda, stirring vigorously and working quickly to prevent it from cooling.",
+      "Pour over the popcorn and mix with a spatula to ensure even coating. (Note: to prevent popcorn from disintegrating, make sure the liquid has reduced enough, and pour slowly, tossing frequently to coat the popcorn evenly).",
+      "Spread coated popcorn over the prepared baking sheet as a single layer, sprinkle with the remaining teaspoon of salt and place in the hot oven. Bake for 40 to 45 minutes to dry the corn. Remove from the oven, let cool, and then break into clusters. Sprinkle with the lime zest and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Popcorn",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High-smoke Point Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popping Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79e75eebacf9e661b00ed499ffc49781e217154042a8e061832eb6873cbe123d",
+    "lineage_hash": "76b55125917f000150544d830aca77f84849885d545a087fa93aea23ae8e15ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dark-and-stormy-kettle-corn/",
+    "fetchedAt": "2026-08-04T01:42:18.701Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dark-and-stormy-kettle-corn/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

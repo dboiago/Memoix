@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Brown Bread Soft Serve",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dice the sourdough and lightly toast on both sides under the grill. Leave to cool",
+      "Add the milk to a pan with the malt extract. Bring the mixture to 60ºC then add the cream and heat to 80ºC. Prepare a hand blender and start to pour in the dextrose, sugar, yeast, salt and sourdough (do not add the stab 2000) while continually blending to prevent any lumps forming",
+      "Bring the mixture back to 80ºC and then add in the stab 2000 with the hand blender on low and submerged in the liquid blend for 2-3 minutes until all incorporated. Pass through a chinois into a metal tray and place straight into the freezer. Set a 5-minute timer and continue to whisk every 5 minutes until the mixture has cooled to 4ºC",
+      "Make sure the mix is cold, pass through a chinois into large plastic containers and store in the fridge for 5 days until required. Make sure the soft serve has rested for at least half a day before putting into the soft serve machine",
+      "For the caramel, place all the ingredients in a large pan over a low heat and continuously stir with a spatula. When all the ingredients have melted together, turn the heat up and reduce, scraping down the sides of the pan and stirring continuously, until it is a deep brown colour",
+      "It is ready when it can hold its shape when a line is drawn on kitchen paper. When the caramel has reached the right consistency, pour into a container and leave to cool to room temperature. Remove any froth with a wet spoon. Then transfer to a squeezy bottle and store in the fridge",
+      "For the crumb, preheat the oven to 155ºC/gas mark 2. Place the flour, salt, sugar and cocoa powder into a food mixer with paddle attached. Slowly add the melted butter on a low speed. Once all mixed in, transfer the crumbly mix to a large metal tray and place into the oven. Mix every 10 minutes, then after 20 minutes add the cocoa nibs and cook for another 20–30 minutes. Once cooled, stir in the feuilletine and Maldon salt and mix well. Store in an airtight container",
+      "To make the jerusalem artichoke crisps, heat a small pan of oil to 170ºC. Once hot enough, deep fry the artichoke skin peelings until crisp and golden. Drain on kitchen paper and store in an airtight container once cooled",
+      "Serve in a shallow bowl, with the crumb at the bottom, then a perfect whip of the soft serve and drizzle over the caramel sauce. Finish with a sprinkling of the artichoke crisps"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "2080",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "88",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough",
+        "unit": "g",
+        "notes": null,
+        "amount": "12.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser Stab 2000",
+        "unit": "g",
+        "notes": null,
+        "amount": "19",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reduced Whey",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "34",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Jerusalem Artichoke",
+        "unit": null,
+        "notes": "peelings only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b4078f4f97d4acdde34084c6e728ca6227be51240933848f0a9e44cd7d032f5",
+    "lineage_hash": "1570b326ba67c8ec324c28b59d151eda1ef4012304e781667b457c62f35671f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-bread-soft-serve-ice-cream-recipe",
+    "fetchedAt": "2026-08-02T19:08:43.485Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-bread-soft-serve-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

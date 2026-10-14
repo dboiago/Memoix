@@ -1,0 +1,400 @@
+{
+  "recipe": {
+    "name": "Achari Gosht (Spicy Tawa Gosht/ Mutton Curry)",
+    "time": "50-55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker, add mustard oil, once it’s smoky hot, add bay leaf, black cardamom, mutton and saute for a minute.",
+      "Add nigella seeds, fennel seeds, cumin seeds, small mustard seeds and give it a good mix.",
+      "Add onions, salt to taste and let it cook for 7-8 minutes or until onion gets light brown in colour.",
+      "Add prepared curd mixture and cook for another 4-5 minutes until oil separates from the masala.",
+      "Add water to adjust the consistency, give it a good mix, cover it with the lid and allow to cook for 7-8 whistles or until it’s tender.",
+      "Once mutton gets cooked then keep it aside to depressurize the cooker.",
+      "In a tray, add degi red chilli powder, turmeric powder, black cardamom, green cardamom, black peppercorns, coriander seeds, coriander powder.",
+      "Add cumin seeds, fennel seeds, fenugreek seeds, small mustard seeds, dry mango powder, nigella seeds and give it a good mix.",
+      "Transfer it into the mixer grinder jar and grind it into the smooth fine powder.",
+      "Keep it aside for further use.",
+      "In a bowl, add curd, prepared achari masala, ginger garlic paste and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a tawa, add ghee, once it’s hot, add onion, green chillies, tender coriander stems and cook for 2-3 minutes until onion gets translucents in texture.",
+      "Add tomato puree, ginger and cook for another 4-5 minutes or until it’s cooked.",
+      "Add prepared achari masala, onion and cook for a while.",
+      "Add water, cook mutton and let it cook for 7-8 minutes.",
+      "Now, add bhavnagri chillies, tomatoes, prepared achari masala, cover it with cooking foil or lid and let it cook for a while.",
+      "Open the lid and finish it with fresh coriander leaves and give it a good mix.",
+      "Transfer it into the serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Mutton with Bones",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Small Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "roughly sliced",
+        "amount": "3-4",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Cooking Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Small Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Achari Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Achari Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & finely chopped",
+        "amount": "2",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "puree",
+        "amount": "3-4",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned",
+        "amount": "1",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Achari Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "roughly diced",
+        "amount": "1",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Mutton",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bhavnagri Chillies",
+        "unit": null,
+        "notes": "cut into halves",
+        "amount": "10-12",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "cut into quarters",
+        "amount": "2",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Achari Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2-3",
+        "section": "For Tawa Achari Mutton",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09927fade56d00d8acec87b069cc6a800abadd6ab199010e4ca7335a074e452b",
+    "lineage_hash": "1122b0f167ec351a19975aec1a53297b0ca006723b301da604e5a5be43095f49"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/achari-gosht-%f0%9f%94%a5/",
+    "fetchedAt": "2026-08-02T20:41:10.484Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/achari-gosht-%f0%9f%94%a5/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

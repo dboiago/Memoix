@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Apple Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker tin with ice and shake to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Liqueur",
+        "unit": "oz",
+        "notes": "Henley uses Don Ciccio & Figli",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olorosso Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": ": 1 Brown Sugar Syrup",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3639849cfa902671a247674baeaeba33d79f8a0f3817fb5c53b31830f3768e0",
+    "lineage_hash": "af00f11c55da0bdbb404d237c5318e4ef08dd5b26a040d0f2ad0bfacb95cee78"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/weekends-prize-apple-cocktail/",
+    "fetchedAt": "2026-08-03T21:12:32.786Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/weekends-prize-apple-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

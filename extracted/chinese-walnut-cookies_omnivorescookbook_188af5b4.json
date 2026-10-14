@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Chinese Walnut Cookies (核桃酥)",
+    "time": "3 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "22",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "14.1",
+      "fatContent": "11.6",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Mix the dry ingredients",
+      "Cream the butter",
+      "Mix the creamed butter with the dry ingredients",
+      "Shape the cookie dough into long logs and refrigerate to harden",
+      "Brush the egg with egg wash (optional)",
+      "Roll the log with raw sugar (optional)",
+      "Cut the log into cookie sized pieces",
+      "Garnish the cookies and bake",
+      "Like I show in the step-by-step pictures above, this method creates cookies with sugar on the edges and a matte surface on top.",
+      "Cookies with bright egg wash on top",
+      "Cookies with raw sugar on top",
+      "Cookies with a whole piece of walnut on top",
+      "Cookies with crushed walnut pieces mixed with sugar on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Roasted Unsalted Walnuts",
+        "unit": "g",
+        "notes": "1 1/2 cups, *Footnote 1",
+        "amount": "150",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "2 cups",
+        "amount": "280",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "g",
+        "notes": "2 tablespoons",
+        "amount": "15",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "or 1 teaspoon kosher salt",
+        "amount": "½",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "1 1/2 sticks, room temperature",
+        "amount": "175",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "1/2 cup",
+        "amount": "90",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cookie",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash (Option 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash (Option 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Egg wash (Option 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Splash of Heavy Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Egg wash (Option 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts and /",
+        "unit": null,
+        "notes": "alt: raw sugar for garnish, chopped",
+        "amount": "0",
+        "section": "Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a924fd3df681cfa55e389854c682a7a85c003bf35a0a8089306a0e3f02b85f2c",
+    "lineage_hash": "5984d61f2b52521965d94514479376802fc622525c856ff0389cf7e4723f558e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-walnut-cookies/",
+    "fetchedAt": "2026-08-02T02:14:09.340Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-walnut-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

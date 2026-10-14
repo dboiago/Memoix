@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Avocado and Smoked Salmon Sushi",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the rice in large bowl. Cover with cold water and wash the rice, swishing it with your hands until the water is cloudy. Drain the water and repeat until the water is almost clear – probably about 4–5 changes of water",
+      "Once the water is almost clear, drain and add 285ml water to the pan. Sprinkle in a little salt, put the lid on and bring to the boil. Once the water is boiling, turn the heat down to the lowest level and cook for 10 minutes, then remove from the heat and leave to stand. Leave the lid on for another 10 minutes before removing the lid",
+      "While the rice cooks, stir together the rice wine vinegar and caster sugar until the sugar dissolves. Fluff the cooked rice and turn out into a large bowl. Cool for a moment before stirring through the sushi vinegar",
+      "Start with your bamboo mat. Lay a square of cling film on top of the mat and place a sheet of nori on top of the cling film. With dampened fingers press roughly 1/4 of the rice over two thirds of the nori leaving about 2cm strip uncovered. Turn over so the nori sheet is rice-side down",
+      "Spread a little mascarpone in a line at the base of the nori at the end that isn't covered in rice on the other side. Top with a line of avocado, cucumber and coriander",
+      "Dampen the nori that isn’t covered in rice and roll over the filling, then roll further to form a tube, pressing together well using the bamboo mat",
+      "Sit the sushi roll on your counter and spread the surface with a little mascarpone (to ensure the smoked salmon will attach). Lay over the salmon and gently flatten to the side of the sticky rice with your hands",
+      "Cut into roughly 2cm rounds using a very sharp knife. Sprinkle with nigella seeds and serve, alongside a little soy and wasabi"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sushi Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Nori Seaweed",
+        "unit": null,
+        "notes": "square",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "sliced into thin strips",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "small and ripe, thinly sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salmon",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e6fed4d6bc9a07f004857836fcbc01e36bcf2a3743449a47128a54542a8f42d",
+    "lineage_hash": "f2fb3b20c78e637da536547151d633c4c613246c2b514f7d98d60bc5139e7b03"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-salmon-sushi-recipe",
+    "fetchedAt": "2026-08-03T13:25:00.442Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-salmon-sushi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

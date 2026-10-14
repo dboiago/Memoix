@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Classic Vanilla Bean Crème Brûlée",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F (160°C) and place six 5 oz (150 mL) flat crème brûlée dishes or ramekins in a large pan where the sides of the pan are higher than the ramekins.",
+      "Heat the cream in a medium saucepan over medium-low heat with the scraped seeds of the vanilla bean pod (and the pod, too, if you wish). If using vanilla bean paste, whisk it into the cream and heat. Heat the cream for about 5 minutes, watching so that it doesn’t boil over.",
+      "Whisk the egg yolks and sugar together in a small bowl. Whisk in the hot cream slowly, whisking constantly (but not overly vigorously) until all has been added. Strain through a fine-mesh sieve into a clean bowl and then ladle or pour into the ramekins.",
+      "Prepare the hot water bath and bake. Pour boiling water carefully around the brûlée dishes in the pan, so that the water comes just past halfway up the dishes. Carefully place the pan in the oven. Bake the custards for about 20 minutes for flat dishes and about 30 minutes for regular ramekins, until they are set around the edges but still jiggle a little when gently moved. Transfer the pan to a cooling rack and let the custards cool in the water bath for 10 minutes. Remove them using a tea towel or oven mitt to cool completely on the rack.",
+      "Chill the custards for at least 3 hours before serving.",
+      "Caramelize the tops with sugar. Sprinkle each custard with a thin layer of sugar. Carefully ignite a kitchen butane torch and caramelize the sugar by moving the torch back and forth over the custard, about an inch or two away from the top. Sprinkle another thin layer of sugar over the first layer and torch it, repeating another two times or until the caramel layer is to your liking. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "or 1 Tbsp (15 mL) vanilla bean paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "plus extra for the brûlée topping",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "119d7ce23b55bd34ebf4b619acf919aaa7fe0e8d15bcb27694e907d1f0203435",
+    "lineage_hash": "bf9df610179f7a899f4134e40e265a0f920a488f2cadcb6dda3719b9d4330e9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-vanilla-bean-creme-brulee/",
+    "fetchedAt": "2026-08-01T19:49:56.546Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-vanilla-bean-creme-brulee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

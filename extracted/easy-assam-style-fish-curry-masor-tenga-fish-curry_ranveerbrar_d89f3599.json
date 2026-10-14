@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Assam style Fish curry (Masor Tenga Fish Curry)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl or tray, add fish, salt to taste, turmeric powder and coat it well.",
+      "Keep it aside to marinate for 5-10 minutes.",
+      "In a pan, add mustard oil, once it's hot, add marinated fish and fry it for 2-3 minutes.",
+      "Flip it and cook it well, transfer it to a plate or tray and keep it aside for further use.",
+      "Add potatoes in the same pan and fry until golden in color or half cooked.",
+      "Transfer it to a plate or tray and keep it aside for further use.",
+      "In a kadai or handi, add mustard oil, once it's hot, add dry fenugreek seeds, small mustard seeds, onion seeds, dry red chillies and let it splutter well.",
+      "Add green chillies, tomatoes, salt to taste and cook it for 5-6 minutes until mushy.",
+      "Add turmeric powder, degi red chili powder, fried potatoes and cook for a while until cooked well.",
+      "Add water and get a quick boil.",
+      "Add coriander leaves, fried fish and cook for 5-6 minutes on low flame.",
+      "Finish it with some lemon juice and mix it gently.",
+      "Transfer it into the serving bowl or dish and garnish it with coriander sprig.",
+      "Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carp Fish (rohu)",
+        "unit": "kg",
+        "notes": "cut into darne",
+        "amount": "1",
+        "section": "For Fish Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Fish Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fish Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Shallow Frying Fish & Potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Fish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Shallow Frying Fish & Potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "No. Potatoes",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "3-4",
+        "section": "For Shallow Frying Fish & Potatoes",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": "dry",
+        "amount": "¼",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "¼",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Red Chili",
+        "unit": null,
+        "notes": "dry",
+        "amount": "2",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & slit into middle",
+        "amount": "2-3",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Tomatoes",
+        "unit": null,
+        "notes": "cut into diced",
+        "amount": "4-5",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Fish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Assamese Style Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cadba9e56548c02987d7911700426686ea24534edd9ce6a3b8ca6962cfc59760",
+    "lineage_hash": "69cb989e982342b5c9e84781ac9227ad6bc246b05976a6bfb8ffb2844a7e8d2c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/assam-fish-curry/",
+    "fetchedAt": "2026-08-02T16:57:46.653Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/assam-fish-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

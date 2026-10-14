@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Cheese Chila Open Sandwich",
+    "time": "35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In mixing bowl combine besan, turmeric, ajwain, salt, ginger and mix.",
+      "Add water and whisk till a smooth batter is formed. Batter should be flowy and without lumps.",
+      "Now pour a ladleful of batter onto a hot tawa and spread gently. Pour a tsp of oil over chilla.",
+      "Allow to cook on medium flame. Place two slices of bread on the chilla side by side and now flip the chilla. Cook for 2 more mins and cut in half separating the 2 bread slices.",
+      "Flip again and keep the bread side up and apply some green chutney.",
+      "Spread the vegetables and grate some cheese. Cover with lid and let the cheese melt.",
+      "Repeat till all the batter is used up.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Flour/besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder/haldi",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds/ Ajwain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger/adrak",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves/dhania",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or as required",
+        "amount": "½",
+        "section": "For Chila Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chutney",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "small, finely chopped",
+        "amount": "1",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves/dhania",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "small, finely chopped",
+        "amount": "1",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": null,
+        "notes": "small, chopped",
+        "amount": "1",
+        "section": "For Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Sandwich",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "632e93f3fa0e5e066ea7ee5fe48a11c55e4185a2307cc3ba391507ff18e24982",
+    "lineage_hash": "99aa0144bacddd98b215beea2e257720c4d17cc5d073a9033ac327a0870e5215"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-chila-open-sandwich/",
+    "fetchedAt": "2026-08-02T00:59:18.587Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-chila-open-sandwich/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

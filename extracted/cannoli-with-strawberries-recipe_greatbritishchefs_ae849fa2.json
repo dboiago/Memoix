@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Cannoli with Strawberries",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the cannoli dough. Place the water, 100g of the sugar and vanilla extract in a small pan and bring to the boil to create a syrup. Set aside to cool",
+      "Place the flour, lard and remaining 20g of sugar into a food processor or mixer and blitz until the mixture resembles fine breadcrumbs. Add the egg and marsala and blitz briefly, then add the cooled syrup and blitz until the dough comes together. Form the dough into a ball with your hands, then wrap in cling film and place in the fridge to rest for at least a few hours",
+      "While the dough is resting, prepare the filling. Mix the ricotta, crème fraiche and icing sugar in a bowl and transfer to a piping bag. Set aside until ready to serve",
+      "Place the chopped strawberries into a large bowl and toss with the fructose. Leave to macerate at room temperature",
+      "Once the dough has rested, unwrap and roll into a fairly thin sheet (roughly 0.5cm). Use a 9–10cm pastry cutter to cut out 6 discs, then wrap each of these around a cannoli mould (you can also use pieces of metal pipe or the handle of a metal whisk – just make sure whatever you’re using is made of metal as it has to withstand the heat of a deep-fat fryer). Seal the overlapping edge of each cannoli with some beaten egg",
+      "Heat a deep pan of oil or a deep-fat fryer to 180°C. Carefully lower the cannoli, in their moulds, into the oil and cook for a few minutes until crisp and golden. Set aside on kitchen paper to drain and cool. If you don’t have 6 suitable moulds, you will need to do this in batches",
+      "Once cool enough to handle, gently remove the cannoli from their moulds. The cooked cannoli will keep in an airtight container for a few days",
+      "When ready to serve, strain the macerated strawberries through a fine sieve, reserving both the liquid and the fruit. Divide the chopped strawberries between 6 bowls",
+      "Pipe the ricotta mixture into each of the cannoli, then dust the top with a little extra icing sugar. Cover each end of the cannoli in chopped pistachios, then place on top of the strawberries. Pour the reserved strawberry juice around the cannoli, then finish with grated white chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "plus a little more beaten egg to seal the cannoli",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marsala Wine",
+        "unit": "ml",
+        "notes": "or other sweet wine",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "g",
+        "notes": "whipped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": "plus extra for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fructose Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef649f5f39e2c434830366b2a6efa4bf1b4c084aa3ca7d9375b39cad9df48693",
+    "lineage_hash": "090a3d0832dd4839d2231e3f733027c515d2a68d26c1cd4ca2c3b7dfd37795ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/strawberry-cannoli-recipe",
+    "fetchedAt": "2026-08-03T06:31:52.916Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/strawberry-cannoli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

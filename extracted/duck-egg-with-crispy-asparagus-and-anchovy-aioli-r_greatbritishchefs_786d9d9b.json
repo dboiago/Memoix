@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Duck Egg with Crispy Asparagus and Anchovy Aioli",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin my making the aioli. Place the egg yolks, mustard, garlic and anchovies in a food processor and blend for 1 minute until the yolks are thick and pale",
+      "With the motor still running, slowly drizzle the oil into the yolks and watch it emulsify. If the mixture begins to split, add a dash of cold water to bring it back together again. Fold in the lemon zest, then season with salt and lemon juice to taste",
+      "Preheat an oven to 180°C/gas mark 4 and bring a pan of salted water to the boil. Blanch the asparagus for 2 minutes then plunge into iced water to stop the cooking",
+      "Lay out the filo pastry and brush with melted butter. Pat the asparagus dry then place a spear at the bottom of each square and roll up tightly. Place on a baking tray whilst you roll up the rest of the asparagus. Bake for 6-8 minutes or until crisp",
+      "Bring a pan of water to the boil then carefully place the eggs in and boil for 6 minutes (or 7 minutes if they are fridge cold)",
+      "Place the cooked eggs into egg cups and carefully remove the tops with a teaspoon. Dollop some anchovy aioli on top and serve with the crispy asparagus to dip in"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Eggs",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced and zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Filo Pastry",
+        "unit": null,
+        "notes": "cut into squares measuring the length of your asparagus",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c338978cc2ab266a95c4a6551b558e37db2264857a9865f5e02c7972db7c7eb2",
+    "lineage_hash": "f93dd430b948a9d53960206da4fe7ccd58d8f50e0ad08125b7f9277706413d5a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-egg-anchovy-asparagus-recipe",
+    "fetchedAt": "2026-08-02T22:04:48.768Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-egg-anchovy-asparagus-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

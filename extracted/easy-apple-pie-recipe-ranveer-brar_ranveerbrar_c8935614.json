@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "APPLE PIE",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. In a medium bowl, whisk together the flour, sugar, and salt. Using your fingers (you can use a food or), rub the butter into the dry ingredients until it gets a crumbly texture. Sprinkle 2-3 tablespoons of cold water over the mixture.",
+      "2. Lightly knead the dough until it is crumbly but holds together when squeezed with fingers (if necessary add little bit of more cold water). To help ensure a flaky crust, do not over-keand or over-.",
+      "3. Transfer half of dough onto a piece of plastic wrap. Roll out into a disk Â¾ inch thick and wrap tightly in plastic. Refrigerate until firm, at least 1 hour. Remove and roll the dough further and line it onto a pie dish. Do not trim at this point. Roll the other half of the dough for the cover in the same manner and chill again.",
+      "4. Now in a large bowl mix together apples, sugar, cinnamon, nutmeg and flour.",
+      "5. Remove the dough lined pie dish from the fridge and fill with apple mixture, gently packing apples and adding little extra filling in the center. Gently drizzle a little butter.",
+      "6. Lightly brush rim of pie base with water. Take the second rolled dough sheet and carefully lay it over apples and press along moistened rim to seal. Using a paring knife, trim the excess dough.",
+      "7. Using your thumb and index finger, gently press dough against knuckle of other hand; continue around pie. If using a fluted pie dish, press against the curves to give it a shape. With a floured paring knife, cut 5 to 6 slits in the top layer of pie. Do not cut from edge to edge.",
+      "8. Place pie plate on a baking sheet. Bake in a pre-heated oven at 190 degrees C for 50 to 60 minutes or until crust is golden and the filling starts to bubble. Cool completely, at least 6 hours, before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour/ Maida",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Dough (pie crust)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough (pie crust)",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dough (pie crust)",
+        "isOptional": false
+      },
+      {
+        "name": "Or 8 Tbsps Cold Butter",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": "For Dough (pie crust)",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Cold Water",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dough (pie crust)",
+        "isOptional": false
+      },
+      {
+        "name": "Nos",
+        "unit": null,
+        "notes": "alt: approx. 600gms apples, washed, cored and cut into ¼\" slices",
+        "amount": "4-5",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "plus more for sprinkling on the pie",
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Generous Pinch Ground Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04790cb95055a576806085982c731eb94ee53fdbd4ea4cfedb5a5b74e5d4b1ef",
+    "lineage_hash": "d2a61b4772c99185bf008c815f57fbc9c7c20712ab0c9fc1a8347962bc532b0d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/apple-pie/",
+    "fetchedAt": "2026-08-02T00:46:06.065Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/apple-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

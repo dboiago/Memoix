@@ -1,0 +1,70 @@
+{
+  "url": "https://muybuenoblog.com/easy-chicken-enchiladas/",
+  "slug": "chicken-enchilada-recipe_muybuenoblog_50513dbb",
+  "title": "Chicken Enchilada Recipe",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T08:59:30.875Z",
+  "ldName": "Chicken Enchilada Recipe",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Entrees",
+  "ldKeywords": "chicken",
+  "ldIngredientsRaw": [
+    "8 ounces dried New Mexico or California red chile pods",
+    "6 cups water (divided)",
+    "6 tablespoons all-purpose flour ((or gluten-free alternative))",
+    "4  garlic cloves",
+    "1 tablespoon salt",
+    "1 tablespoon olive oil ((for cooking the sauce))",
+    "1 1/2  cups cooked shredded chicken or turkey",
+    "1 cup canola oil ((for frying tortillas))",
+    "12-18  corn tortillas",
+    "2 cups shredded cheese ((Oaxaca, asadero, Monterey Jack, or muenster))",
+    "1/2  white onion (finely diced)",
+    "chopped cilantro (for garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Make the Red Chile Sauce",
+    "For the Enchiladas"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1003 kcal",
+    "carbohydrateContent": "47 g",
+    "proteinContent": "31 g",
+    "fatContent": "78 g",
+    "saturatedFatContent": "13 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "84 mg",
+    "sodiumContent": "2189 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "62 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Homemade Red Chile Sauce]",
+    "▢ 8 ounces dried New Mexico or California red chile pods",
+    "▢ 6 cups water, divided",
+    "▢ 6 tablespoons all-purpose flour, (or gluten-free alternative)",
+    "▢ 4 garlic cloves",
+    "▢ 1 tablespoon salt",
+    "[Enchiladas]",
+    "▢ 1 tablespoon olive oil, (for cooking the sauce)",
+    "▢ 1 1/2  cups cooked shredded chicken or turkey",
+    "▢ 1 cup canola oil, (for frying tortillas)",
+    "▢ 12-18 corn tortillas",
+    "▢ 2 cups shredded cheese, (Oaxaca, asadero, Monterey Jack, or muenster)",
+    "▢ 1/2 white onion, finely diced",
+    "▢ chopped cilantro, for garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

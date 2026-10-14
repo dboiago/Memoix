@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Bread Spices (Brotgewürz)",
+    "time": null,
+    "course": "breads",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put everything together into a coffee & spice grinder or just use a pestle and mortar to crack and crush the seeds.",
+      "The finer you crush or grind the spices, the subtler the taste.  You can use all of the spices whole if you like."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1374401bd795b6118a863dd4cae1fad100545fe453fd7883a693738562fec26c",
+    "lineage_hash": "b2e95820e064d227d51c3dda6564b5f6b447ccb6f608b7063c43d087bb755eb7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2012/10/bread-spice-brotgewuerz-austrian-dark-breads/",
+    "fetchedAt": "2026-08-01T16:28:28.385Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2012/10/bread-spice-brotgewuerz-austrian-dark-breads/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

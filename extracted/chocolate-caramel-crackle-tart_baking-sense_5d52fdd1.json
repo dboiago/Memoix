@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chocolate Caramel Crackle Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "456",
+      "carbohydrateContent": "63",
+      "fatContent": "22",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375°F.",
+      "Roll 1/2 of the short dough to a 12\" circle about 1/4\" thick. Use the rim of a 10\" tart pan as a cutter to cut a circle of dough that will be the top crust of the tart. Place the cut circle on a parchment lined pan and prick several times with a fork. Roll the other 1/2 of the short dough to 1/4\" thick and 12\" round. Line the 10\" fluted tart pan with the dough. Push the dough into the fluted edges. Cut away excess dough and prick the bottom of the dough several times with a fork",
+      "Bake both crusts until golden brown, about 15 minutes. Remove the crusts from the oven and set aside while you make the caramel. Reduce the temperature to 325°F.",
+      "Place 16 oz granulated sugar and 2 teaspoons lemon juice into a heavy saucepan over medium heat. When the outside edges of the sugar begin to melt use a wooden spoon the stir the melted sugar toward the center. Continue stirring the sugar until it's completely melted.",
+      "Watch carefully. When sugar becomes amber brown and you just see a whiff of smoke turn off the heat",
+      "Carefully pour 4 oz heavy cream into the caramelized sugar. The sugar will bubble up and spit and then settle a bit. Stir until the cream mixes into the caramel. Add 5 oz unsalted butter and ¼ teaspoon table salt and mix to incorporate",
+      "Pour 4 ½ oz Rice Krispies into the baked bottom crust. Drizzle the warm caramel evenly over the cereal. Use a small offset spatula or knife to gently mix the cereal into the caramel, leaving no dry spots. Place the top crust over the caramel filled tart and gently press onto the caramel, careful not to crack it.",
+      "Bake the assembled tart for 5 minutes to slightly melt the caramel and glue the layers together. Cool about 15 minutes until the tart is still warm but not hot. Spread the ganache evenly over the surface of the tart.",
+      "Sprinkle a few Rice Krispies over the ganache for decoration. Cool completely before cutting. Use a slightly damp knife to cut the portions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "2x Recipe Short Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Krispies",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Dark Chocolate Ganache",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62eaf3bc25021bcf30a8f48c2e632f0fd84f39e11254381d57388bdff73546b7",
+    "lineage_hash": "e25f0193d9efcc3737bbd43d3dda4892634538bebf2f142fb93f55bedc97e9fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/05/14/chocolate-caramel-crackle-tart/",
+    "fetchedAt": "2026-08-02T03:58:33.602Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/05/14/chocolate-caramel-crackle-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

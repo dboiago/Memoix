@@ -1,0 +1,226 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse Recipe, Prunes & Tea Ice Cream",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the poached prunes and purée, put all the ingredients in a pan, bring to the boil and then simmer for 20 minutes",
+      "Allow to cool, then remove the stones from the prunes. Place ½ the prunes in a container with the orange zest, cinnamon and tea bags and cover with enough syrup to submerge the prunes",
+      "Liquidise the rest of the prunes and syrup and pass through a sieve",
+      "Boil the water and sugar to 120°C, then pour over the whisked yolks and keep whisking until cold",
+      "Melt the chocolate and butter in a heatproof bowl over a pan of barely simmering water",
+      "Fold into the yolks then fold in the whipped cream. Put into a piping bag and chill",
+      "For the chocolate and prune cake, preheat the oven to 150°C/Gas mark 2",
+      "Beat the butter and sugar until pale and creamy. Then add the eggs and fold in the ground almonds, cocoa and 100g of the prune purée",
+      "Put onto a baking tray and bake for approx 45 minutes or until springy to the touch",
+      "Allow to cool and slice into rectangles around 1cm thick",
+      "For the Earl Grey tea ice cream, bring the milk to the boil with the tea bags",
+      "Mix the yolks and sugar and add the milk. Put in the pan and cook on a low heat until it thickens",
+      "Allow to cool and pass through a sieve. Put into an ice cream machine and churn, then put into the freezer until needed",
+      "To serve, place dots of the purée on the right hand side of the plate and the cake on the left hand side",
+      "Cut a prune in ½ and place on the cake, then pipe chocolate mousse in between the prune",
+      "Put another piece of chocolate cake on top and sprinkle with dried orange powder, then finish with a scoop of the ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes D’agen",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "380",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Powder for Dusting",
+        "unit": null,
+        "notes": "dried",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d08d59cfe9f719cf69f22cae7c9ca7fbaee44d5f2eaa548ab820586e48b99e93",
+    "lineage_hash": "e6bae894feb4d77ab26f1f77a6666ac8fb0578d70b30e99d1569e8b22bebd0b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe-agen-prunes",
+    "fetchedAt": "2026-08-03T15:30:15.180Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-recipe-agen-prunes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

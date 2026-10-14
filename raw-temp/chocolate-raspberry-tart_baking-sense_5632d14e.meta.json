@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2023/07/20/chocolate-raspberry-tart/",
+  "slug": "chocolate-raspberry-tart_baking-sense_5632d14e",
+  "title": "Chocolate Raspberry Tart",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:43:33.692Z",
+  "ldName": "Chocolate Raspberry Tart Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, raspberry, tart",
+  "ldIngredientsRaw": [
+    "1 recipe Chocolate Tart Dough",
+    "8 oz semi-sweet chocolate (chopped fine)",
+    "8 oz whole milk (1 cup)",
+    "8 oz  heavy cream (1 cup)",
+    "3 oz granulated sugar (⅓ cup)",
+    "5  large egg yolks",
+    "2 teaspoons vanilla extract",
+    "24 oz fresh raspberries"
+  ],
+  "ldInstructionsRaw": [
+    "Roll the chocolate short dough to fit into a 10&quot; or 12&quot; tart pan with a removable bottom. Prick the bottom of the pan with a fork several times and refrigerate. While the tart dough is chilling, preheat the oven to 350 °F.",
+    "Bake the tart shell until it&#39;s set all the way to the center, about 10 minutes. Because of the dark color it&#39;s hard to see if it&#39;s browning. You need to press the center of the crust to make sure it&#39;s set. Cool the tart crust completely.",
+    "Chop 8 oz&#32;semi-sweet chocolate and place it in a heat proof bowl.",
+    "In a medium size pan, scald 8 oz&#32;whole milk and 8 oz&#32;heavy cream over medium high heat.",
+    "While the milk heats up, whisk together 5&#32;large egg yolks, 3 oz&#32;granulated sugar and 2 teaspoons&#32;vanilla extract .",
+    "Whisk the scalding hot milk into the eggs, then return the mix to the heat. Cook the mixture over low heat, stirring constantly, until the mixture thickens enough to coat the back of a spoon. Remove from the heat. Immediately strain the custard over the chopped chocolate and let it sit for 2-3 minutes. Gently stir until it comes together and all the bits of chocolate are melted.",
+    "Pour the cremeux into the tart shell. Refrigerate the tart until the filling is cooled and is set enough that the raspberries don&#39;t sink into the filling, about 20 minutes.",
+    "Starting from the outside edge of the tart, arrange the raspberries in concentric circles working towards the center of the tart.",
+    "Chill until serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "268 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "4 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "10 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "106 mg",
+    "sodiumContent": "19 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "18 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Chocolate Tart Dough",
+    "[Chocolate Crémeux]",
+    "8 oz semi-sweet chocolate (chopped fine)",
+    "8 oz whole milk (1 cup)",
+    "8 oz  heavy cream (1 cup)",
+    "3 oz granulated sugar (⅓ cup)",
+    "5 large egg yolks",
+    "2 teaspoons vanilla extract",
+    "[Assembly]",
+    "24 oz fresh raspberries"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

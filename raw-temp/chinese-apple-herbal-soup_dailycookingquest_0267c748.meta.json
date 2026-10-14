@@ -1,0 +1,57 @@
+{
+  "url": "https://dailycookingquest.com/chinese-apple-herbal-soup.html",
+  "slug": "chinese-apple-herbal-soup_dailycookingquest_0267c748",
+  "title": "Chinese Apple Herbal Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:01:04.618Z",
+  "ldName": "Chinese Apple Herbal Soup",
+  "ldTime": "PT2H15M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT2H0M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Chicken",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "2 liter (8 cups) water",
+    "1 small chicken (Indonesian: ayam kampung), skinless is better, cut into 4-8 pieces",
+    "15 gram solomon seal rhizome (Chinese: yu zhu)",
+    "10 gram Chinese yam (Chinese: huai shan)",
+    "10 gram dried longan (Chinese: gui yuan)",
+    "10 gram American ginseng",
+    "4 red dates/jujube (Chinese: hong zao)",
+    "5 figs (*)",
+    "2 Fuji apples, peeled, cored, and quartered",
+    "5 gram goji berries/wolfberries (Chinese: gou gi zi)",
+    "1 teaspoon salt, or to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Place water, chicken, solomon seal rhizome, Chinese yam, dried longan, American ginseng, red dates, and figs in a pot. Cover, bring to a boil, lower heat, then simmer for 1 hour.",
+    "Add apples, and simmer for another 45 minutes.",
+    "Add goji berries, and simmer for another 15 minutes.",
+    "Add salt, adjust to suit your taste.",
+    "Turn off the heat, transfer to serving bowls, and serve hot or warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 liter (8 cups) water",
+    "1 small chicken (Indonesian: ayam kampung), skinless is better, cut into 4-8 pieces",
+    "15 gram solomon seal rhizome (Chinese: yu zhu)",
+    "10 gram Chinese yam (Chinese: huai shan)",
+    "10 gram dried longan (Chinese: gui yuan)",
+    "10 gram American ginseng",
+    "4 red dates/jujube (Chinese: hong zao)",
+    "5 figs (*)",
+    "2 Fuji apples, peeled, cored, and quartered",
+    "5 gram goji berries/wolfberries (Chinese: gou gi zi)",
+    "1 teaspoon salt, or to taste"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Chicken Tandoori",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "648",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Marinate the chicken with salt and lime juice. Set aside for an hour.",
+      "Meanwhile hang your yoghurt, make the tandoori moshla, ginger paste, and garlic paste, and prepare the besan roux.",
+      "For the besan roux, heat 20 g mustard oil and temper it with black cradmom and jowan. Then add the besan and roast until oil separates and it smells nutty. We need only 20 g of this besan roux for this recipe.",
+      "Back to the chicken: if any water has come out of the chicken, discard it so that it is as dry as possible.",
+      "Now marinate it with the tandoori moshla, besan roux, ginger paste, garlic paste, hung yoghurt, salt, black salt and mustard oil.",
+      "_Dhungar_: If you are planning to barbeque the kababs, skip this step. If you are cooking them in the oven, you could perform a _dhungar_, which is a method that infuses a smoky flavour to the kababs in the absence of a tandoor/barbeque. To do this, burn a piece of charcoal over direct flame for about 10 minutes. Set a small metal bowl (or a DIY bowl fashioned from aluminium foil) in the middle of the marinated chicken pieces. When the charcoal is hot and ashy, use tongs to place it inside the little metal bowl, and pour the ghee on it. You will see thick white smoke emerge from the charcoal. Immediately cover the bowl with a heavy plate or aluminium foil to trap that smoke in. Wait for 5 minutes to allow the smokiness flavour to infuse the chicken, then discard the charcoal.",
+      "Set the chicken in the fridge to marinate overnight (24 hours is best!)",
+      "Preheat your oven to 250°C or the highest temperature it will go. Grease the oven grill.",
+      "Skewer the kababs and place them in the hot oven.",
+      "Cook for about 6 minutes per side (in case of wings), or about 10–12 minutes per side (in case of chicken quarters). The cooking time will vary based on the size of your chicken and temperature of your oven.",
+      "When done, remove from the oven and brush on melted butter. Sprinkle some chaat moshla. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "wings or chicken quarters",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shahi Gorom Moshla",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jowan",
+        "unit": "tsp",
+        "notes": "carom seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "g",
+        "notes": "chickpea-flour",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tandoori Moshla",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hung Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan Roux",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charcoal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc41ece7e8955720b25bb7dc56f73c52d245e8533d4f110bcd47eb1861d4e233",
+    "lineage_hash": "4eb5ee156cab4e864cb70a3bdaf35b6bf98ad6c9f91158a137ef85e3d93ebdc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chicken-tandoori",
+    "fetchedAt": "2026-08-01T18:29:54.146Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chicken-tandoori",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

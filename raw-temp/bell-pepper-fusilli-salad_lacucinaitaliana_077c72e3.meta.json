@@ -1,0 +1,50 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/pasta/bell-pepper-fusilli",
+  "slug": "bell-pepper-fusilli-salad_lacucinaitaliana_077c72e3",
+  "title": "Bell Pepper Fusilli Salad",
+  "byline": "by  Editorial staff   July 23, 2021",
+  "fetchedAt": "2026-08-03T04:07:06.102Z",
+  "ldName": "Bell Pepper Fusilli Salad",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "pasta",
+  "ldKeywords": "Fusilli,Pasta,Cold Pasta,Bell Peppers,Tonno",
+  "ldIngredientsRaw": [
+    "9 OZ.  fusilli pasta",
+    "7OZ.  oil-packed tuna, drained",
+    "1 yellow bell pepper",
+    "2 hardboiled eggs",
+    "1/3 CUP  extra-virgin olive oil",
+    "mustard",
+    "lemon",
+    "Worcestershire sauce",
+    "paprika",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Cut a section of the yellow bell pepper. Clean and remove the seeds and inner membranes, and dice into cubes. Place the diced pepper in a mixing bowl large enough to hold the pasta. Crumble in the tuna using a fork, add a pinch of salt, and set aside.</p>",
+    "<p>Cook the fusilli in boiling salted water and drain once al dente.&nbsp;</p>",
+    "<p>Peel the eggs and cut them carefully into wedges.</p>",
+    "<p>For the dressing: In a small bowl, mix 2 Tbsp. mustard with the strained juice of half a lemon, the olive oil, a few splashes of Worcestershire sauce, and a pinch of salt and paprika.</p>",
+    "<p>Pour the fusilli into the large mixing bowl, adding a drizzle of olive oil so the pasta does not stick, and stir. Once cold, top the pasta with the dressing, garnish with the eggs, and serve.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "9  OZ. of  fusilli pasta",
+    "7 OZ. of  oil-packed tuna, drained",
+    "1 yellow bell pepper",
+    "2 hardboiled eggs",
+    "1/3  CUP of  extra-virgin olive oil",
+    "mustard",
+    "lemon",
+    "Worcestershire sauce",
+    "paprika",
+    "salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

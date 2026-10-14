@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Bitter Melon and Egg Stir-Fry in Black Bean Sauce",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the bitter melon in half lengthwise. Use a spoon to scoop out the fibrous center and the seeds. Then, cut into thin 1 cm slices.",
+      "Rub bitter melon with 2-3 tablespoons of salt and rest for 15 minutes. Rinse bitter melon under running water to remove all the salt.",
+      "Lightly beat eggs and the 1/2 teaspoon of salt together in a bowl. Set aside.",
+      "Heat a wok with medium-high heat. Once the wok is hot, add 2 tablespoons of oil and swirl to coat the wok.",
+      "Add minced garlic, dried red chilies, and fermented black beans. Fry for 30 seconds or until fragrant.",
+      "Add bitter melon and season with soy sauce and oyster sauce. Cook for 2 minutes.",
+      "Pour eggs over the bitter melon. Once the eggs start to set, stir with a spatula until completely set.",
+      "Turn off the heat and transfer the dish to a serving plate. Serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bitter Melon",
+        "unit": null,
+        "notes": "about 200 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried, thinly sliced",
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": "Note 1, rinse with cold water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49509b9d8eb3eb6acffb0ed62673c661e4e6c02ab5a2104ceaef245d2699b8f4",
+    "lineage_hash": "bb376972e309808c82d2b57647b189a385a81e08c405b41f619a972878f6b7ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bitter-melon-and-egg-stir-fry-in-black-bean-sauce.html",
+    "fetchedAt": "2026-08-01T17:40:44.102Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bitter-melon-and-egg-stir-fry-in-black-bean-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

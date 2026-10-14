@@ -1,0 +1,34 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/delightfully-crunchy-parmesan-waffles",
+  "slug": "delightfully-crunchy-parmesan-waffles_lacucinaitaliana_a7454e8f",
+  "title": "Delightfully Crunchy Parmesan Waffles",
+  "byline": "by  Editorial staff   September 1, 2020",
+  "fetchedAt": "2026-08-03T08:50:31.817Z",
+  "ldName": "Delightfully Crunchy Parmesan Waffles",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4OZ. grated Parmigiano cheese",
+    "2OZ. sliced bread, crumbled into pieces",
+    "poppy seeds"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Mix the grated Parmigiano Reggiano DOP (or parmesan if you can’t find any of the real stuff) with the crumbled bread.</p>",
+    "<p>Place 1 tablespoon of the mixture in a waffle maker, adding some poppy seeds on top. Cook for 2 minutes. Then, before the wafers cool, place each one onto a curved surface to bend them and give them a little bit of shape.</p>",
+    "<p>Alternatively, spread 2 or 3 tablespoons of the mixture at a time on a microwave-safe plate lined with baking parchment and cook at full power for 1 minute and 15 seconds.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4 OZ. of grated Parmigiano cheese",
+    "2 OZ. of sliced bread, crumbled into pieces",
+    "poppy seeds"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

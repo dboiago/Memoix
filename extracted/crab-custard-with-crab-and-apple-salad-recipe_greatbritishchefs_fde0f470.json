@@ -1,0 +1,268 @@
+{
+  "recipe": {
+    "name": "Crab Custard with Crab and Apple Salad",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the jelly, as this can be done in advance. Gently warm the fish stock in a pan and soak the gelatine leaves in cold water for 5-10 minutes. Drain the leaves by squeezing them, then whisk into the warm stock until dissolved. Pour the stock into a shallow tray and place in the fridge to set for at least 4 hours",
+      "The bisque can also be made in advance. Place a very wide frying pan or flameproof roasting tray over a medium heat and add 40ml of the olive oil. Add the crab carcasses and cook, stirring regularly, until deeply coloured all over (about 10-15 minutes).",
+      "Meanwhile, in a separate large stockpot, add the remaining olive oil and sweat off the carrots, onions, fennel and garlic until soft with no colour (around 10 minutes). Add the spices, bay leaf and thyme and cook for a further 5 minutes",
+      "Add the tomato paste, fresh tomatoes and water to the vegetables, then cook for a further 10 minutes. Meanwhile, use the cognac to deglaze the pan with the carcasses in, scraping the bottom to release any stuck bits",
+      "Add the carcasses to the stockpot (along with any remaining liquids) and top up with water so the level of liquid sits just below the carcasses. Bring to a simmer and cook for 20 minutes, then season and strain through a colander set over a large bowl. Leave to drain well, then strain the liquid through a fine sieve into another clean pan or bowl",
+      "At this point, the bisque is ready to use. You need to measure out 140g to use in this recipe, but the rest can be kept in the freezer for later use. Place the 140g of bisque in a pan and bring to a simmer, then leave to reduce by around half – perhaps more – until a very dark, thick paste forms (it will continue solidifying as it cools). Leave to cool",
+      "To make the crab custard, preheat an oven to 100°C/gas mark ½ and place a pan of water on the bottom shelf. Pour the milk, cream and egg yolks into a jug and whisk together, then add the reduced cooled crab bisque and whisk again until combined. Pour the custard into 6 serving ramekins (or empty crab shells, if you happen to have them!) – you’re aiming for around 100g of custard per portion. Place the ramekins into the oven and cook for 14-15 minutes, or until just set. Once cooked, place in the fridge until needed",
+      "The final element to prepare is the salad, so ensure the custards and jelly are ready before continuing. Fry the brioche croutons in a little lemon oil until crisp, then drain on kitchen paper",
+      "Place the crab meat and chives in a bowl, then cut the apple into a fine dice, slightly larger than the croutons. Mix the apple into the salad, then drizzle with a little more lemon oil",
+      "To serve, roughly chop the set jelly into cubes, then arrange these on top of each custard. Top with a spoonful of the crab and apple salad, sprinkle over some croutons, then garnish with sorrel leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crab Shell",
+        "unit": "kg",
+        "notes": "or carcasses, chopped or broken into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": "Andrew makes one from scratch using mackerel and smoked haddock, best quality",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "from approx 3-4 eggs",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche",
+        "unit": "g",
+        "notes": "very finely diced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "infused with lemon, for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d4d937603558f583dc1fb3136d0019242fbb89ffc045e66be23310916bba9ff",
+    "lineage_hash": "9a8dcc76882212e46905f3843ea8dbaf25e22ad21c5427fb2319ecbb237a5b52"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-custard-apple-salad-recipe",
+    "fetchedAt": "2026-08-03T02:51:51.177Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-custard-apple-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

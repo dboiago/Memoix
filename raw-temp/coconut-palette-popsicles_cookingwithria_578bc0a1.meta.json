@@ -1,0 +1,56 @@
+{
+  "url": "https://cookingwithria.com/2012/09/coconut-palette-popsicles/",
+  "slug": "coconut-palette-popsicles_cookingwithria_578bc0a1",
+  "title": "Coconut Palette (Popsicles)",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T21:06:09.527Z",
+  "ldName": "Trinidad Coconut Palette (likka sticks)",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Caribbean, Trinidad, Trinidadian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "coconut popsicles, likka sticks, palette, popsicles, trini palette",
+  "ldIngredientsRaw": [
+    "2 cups fresh coconut milk",
+    "3 cups whole milk",
+    "3/4 cup sugar (or to taste (I used raw brown sugar)**)",
+    "1  cinnamon stick",
+    "dash vanilla  (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Make fresh coconut milk using my instructions here.",
+    "Pour the strained coconut milk in a large saucepan, then stir in the milk, sugar, (vanilla, if using) and cinnamon, and bring to a simmer over medium heat.",
+    "Lower the heat and simmer, stirring occasionally, for 15 minutes. Keep in mind that the sweetness will diminish as the mixture cools off, taste and add more sugar if you like.",
+    "Let cool to room temperature, then strain through a fine-mesh sieve.",
+    "If using conventional molds, pour the mixture into the molds, snap on the lid, and freeze until solid, about 5 hours.  If using glasses or other unconventional molds, freeze until the pops are beginning to set (1 1/2 to 2 hours), then insert the sticks and freeze until solid, 4 to 5 hours."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "266 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "4 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "14 g",
+    "cholesterolContent": "11 mg",
+    "sodiumContent": "44 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "25 g",
+    "unsaturatedFatContent": "1.3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 cups fresh coconut milk",
+    "3 cups whole milk",
+    "3/4 cup sugar or to taste (I used raw brown sugar)**",
+    "1 cinnamon stick",
+    "dash vanilla  optional",
+    "[**Sugar may be substituted with condensed milk, but I used sugar because it contains less calories which means I can enjoy this treat with a little less guilt.]"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

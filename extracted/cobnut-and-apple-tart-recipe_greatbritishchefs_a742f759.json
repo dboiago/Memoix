@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cobnut and Apple Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To roast the cobnuts, remove the shells, arrange on a tray and place them in the oven for 45 minutes. Let them cool before chopping. When you take them out of the oven they need to harden first. You will get the best results in flavour if you chop the nuts instead of using a pestle and mortar",
+      "Line a 25cm round shallow tart tin with baking paper",
+      "Combine your butter with the sugar and whisk until creamy",
+      "Beat in the eggs one at a time",
+      "Add the flour and combine to create a dough",
+      "Now fold in the chopped cobnuts and a teaspoon of brandy, cider or apple juice",
+      "Spoon the mixture into the prepared tin, gently spreading the batter into all the corners",
+      "Neatly arrange the apple slices over the dough and sprinkle one teaspoon of sugar over the apples",
+      "Put the tart in to the oven and bake for 60 min, or until the apples are lovely and golden",
+      "Set the aside to cool slightly in the tin",
+      "Keep in an airtight container, that way the tart will keep for 5 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnuts",
+        "unit": "g",
+        "notes": "shells removed, roasted and finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cox's Apples",
+        "unit": null,
+        "notes": "sliced into discs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "tsp",
+        "notes": "or apple juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb0458dc410f87708d3d4397c2d19bbeb11397382f325cd25bae61a344c01ad6",
+    "lineage_hash": "1ad9ce6591670d5997fadf26d794762b1eff080fdcaa5527f5dc18ff7d372dcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cobnut-apple-tart",
+    "fetchedAt": "2026-08-04T00:08:05.388Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cobnut-apple-tart",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

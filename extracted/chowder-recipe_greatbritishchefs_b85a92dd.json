@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Chowder",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the skin of the fish and with tweezers, prise out the bones",
+      "Pour the milk into a heavy-based saucepan. Add the fish, bring to the boil and then turn down the heat and simmer gently for 3 minutes",
+      "After 3 minutes, remove the fish from the milk and set aside",
+      "Place a pan over a low-medium heat and add oil. Once hot, add the onions, leeks and potatoes and sweat for 4-5 minutes. Then, add the milk, fish stock, and ground nutmeg and simmer for 20-25 minutes",
+      "Whisk in the instant potato and ensure there are no lumps. Dilute the cornflour with water and then add to the pan, mixing well",
+      "Add the double cream and flake in the haddock",
+      "Before serving, season with salt and pepper - be careful not to add too much salt as the fish will add a level of salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Haddock",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "460",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": "ground",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "265",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock Cube",
+        "unit": null,
+        "notes": "dissolved in 500ml of water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Mash Potato",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "745d11c180d0394207802e4bf6531b1aa282705e37bc134b1706ff016dabd76a",
+    "lineage_hash": "93863579726d503177f2a86cd48064a852bc50afefd63f7bb6acc7cbfc7d127d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chowder-recipe",
+    "fetchedAt": "2026-08-03T22:25:33.023Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chowder-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Bread Pakoda",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pan, add mustard seeds, curry leaves, ginger garlic paste, green chillies and sauté till fragrant.",
+      "Add onion and sauté till translucent.",
+      "Now add turmeric, asafoetida and salt.",
+      "Add the mashed boiled potatoes to this and mix well. Keep the mixture aside. For the Pakoda, make a thick batter out of besan salt and water.",
+      "Heat oil in a pan.",
+      "Take bread slice, spread potato mixture, cover with another bread slice and seal its edges.",
+      "Dip the sandwich into besan batter.",
+      "Deep fry in oil for two minutes on both the sides until golden brown.",
+      "Take it out on kitchen towel to drain off excess oil.",
+      "Cut it in equal halves. Serve along with mint and tamarind chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Potatoes",
+        "unit": "medium",
+        "notes": "boiled and mashed",
+        "amount": "3",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "6",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79f8f04ae470f1e7c84e1ac05a64dd738ac5c1ff302128cac0e2674a01d7016e",
+    "lineage_hash": "c33529cf5a991d8074849300c3527e1bd0c28946ad76efd3201847f8422a12aa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bread-pakoda/",
+    "fetchedAt": "2026-08-02T16:07:51.871Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bread-pakoda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

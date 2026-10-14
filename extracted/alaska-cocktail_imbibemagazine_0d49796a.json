@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Alaska Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in an ice-filled mixing glass and stir until chilled. Strain into a chilled coupe, and if using, express a lemon twist over the drink, then use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5789c57fda2999851fc0ca024d5cb79df0ca61e205557dd24caef9044c7b68ab",
+    "lineage_hash": "e92f6c40b8e1c71d9a2c5d23a9ae4696f085f3d29a60ffb9180bccdba4c78022"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/classic-alaska-cocktail/",
+    "fetchedAt": "2026-08-03T19:44:29.417Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/classic-alaska-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

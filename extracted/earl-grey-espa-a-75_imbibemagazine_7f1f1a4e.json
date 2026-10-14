@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Earl Grey España 75",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to shaker tin and shake. Strain into a chilled coupe glass; then top with Cava.",
+      "Earl Grey Syrup: Combine 2 cups of sugar with 2 cups of water and 3 bags of Earl Grey tea. Add hot water (200 degrees F) and steep for 5 minutes. Remove tea bags before use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cava",
+        "unit": "oz",
+        "notes": "to top",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "feb2688fc277b32c591deac3f210248c9343c35692a1acd3ca94c3c9eb3aa6b2",
+    "lineage_hash": "c50ab979da64496c66590a2d523fc6372b4cf21c83cf956b2f1bceaafd3d08ee"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/earl-grey-espana-75/",
+    "fetchedAt": "2026-08-03T18:48:35.333Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/earl-grey-espana-75/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

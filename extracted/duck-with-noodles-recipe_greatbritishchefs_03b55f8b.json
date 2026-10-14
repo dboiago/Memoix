@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Duck with Noodles",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To marinate the duck, slice each breast into 5 or 6 pieces. Mix together the honey and soy until well combined, add the duck, cover and refrigerate for 50 minutes",
+      "To prepare the greens, finely slice the mangetout, green beans, leek and spring onions. Chiffonade the spinach and add to the other greens",
+      "Heat the oil in a deep fat fryer to 160˚C. Break up the noodles with your hands and drop into the oil - be careful when dealing with hot oil. Fry until golden brown and crisp, remove from the oil and allow to drain on absorbent kitchen towel",
+      "Place a wok or large frying pan over a high heat. Add a small drizzle of vegetable oil to coat the base of the pan and heat until the pan begins to smoke. Add the duck and cook for 2-3 minutes until the duck is lightly browned. Be careful not to over cook as it will become tough",
+      "Remove the duck from the pan to rest. Place the pan back on the heat. Repeat the same method with the vegetable oil and add all the prepared vegetables and garlic and sauté for 45 seconds to a minute. Add the soy sauce and cook for a further minute",
+      "Place a bed of greens in the centre of each plate and top with the duck and crispy noodles. Serve hot with a drizzle of the pan juices and some fresh chilli and steamed rice on the side, if you prefer"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "white only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mangetout",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93e4ba92a7b86f54bc1a963c8ec226e8050a1a71f2df4db24d29914f55856537",
+    "lineage_hash": "93bdba12dcab0d9a0f24b26fea8afda117afdc148934263be4d76b63d760954b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-with-noodles-recipe",
+    "fetchedAt": "2026-08-03T17:46:51.884Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-with-noodles-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

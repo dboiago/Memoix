@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Dessert Macaroni and Cheese",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "292",
+      "carbohydrateContent": "39",
+      "fatContent": "13",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Heat a large pot of salted water for the pasta and cook 8 oz elbow macaroni to al dente while making the batter for the custard. Drain the pasta and set it aside.",
+      "To make a roux, combine2 oz unsalted butter and 1 ¼ oz all purpose flour in a small saucepan. Cook over medium heat, whisking constantly, until it begins to simmer and thickens to a pale beige paste. Slowly whisk 16 oz whole milk into the roux. Continue to whisk until the sauce has no lumps and is the consistency of thick cream. Scrape the seeds from 1 vanilla bean into the warm sauce with ⅛ teaspoon table salt. Set aside to cool until it's just barely warm or room temperature (see note).",
+      "Preheat the oven to 350 °F. Lightly butter a 2 quart casserole dish.",
+      "On low speed, cream8 oz cream cheese and 4 oz granulated sugar in a large mixing bowl until it's smooth. Scrape the bowl so there are no lumps of cream cheese. Add 2 large eggs, one at a time, scraping the bowl after each egg to avoid lumps. Add the cooled white sauce to the cream cheese mixture to form a  batter.",
+      "Add the cooked pasta and2 cups blueberries to the batter then pour the batter into the casserole dish. Combine 1 oz panko breadcrumbs and 2 oz granulated sugar and sprinkle the topping over the custard.",
+      "Bake until golden brown, slightly puffed, and the custard is set in the center.",
+      "Just like savory macaroni and cheese, this is best still warm from the oven. Leftovers can be refrigerated and re-warmed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Elbow Macaroni",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1¼",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split or 1 teaspoon vanilla extract",
+        "amount": "1",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "fresh or frozen",
+        "amount": "2",
+        "section": "Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a89ffd5920dff7562dfadb4d9a907d8732851168ed6726ffa79080f033ad45d",
+    "lineage_hash": "8faa8abc362583d70d018ca9981fa47d4ef004714e14cce423e529695684f639"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/02/05/dessert-macaroni-cheese/",
+    "fetchedAt": "2026-08-01T16:21:31.036Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/02/05/dessert-macaroni-cheese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

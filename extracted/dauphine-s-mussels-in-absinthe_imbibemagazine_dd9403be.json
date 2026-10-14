@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Dauphine’s Mussels in Absinthe",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Discard any mussels with cracked shells or that are opened. In a large pot, heat the oil over medium-high. Add the mussels and thyme sprigs to the pot and pour the wine over the top. Cover the pot and cook 3 to 5 minutes, shaking the pot (with the lid on) once or twice during cooking. After 3 minutes, check the mussels. Most should be open by now—if not, re-cover and cook for an additional 1 to 2 minutes. Discard any mussels that still haven’t opened by this time and shell the remainder. Place the mussel meat in a bowl and store in the refrigerator. Save 1/4 cup (60 ml) of the mussel cooking broth. Discard the shells.",
+      "In a large bowl, combine all the marinade ingredients, stirring to mix. Add the mussels, cover, and refrigerate for at least 4 hours and up to overnight.",
+      "To serve, remove the mussels from the refrigerator to take a bit of the chill off. Serve with crème fraiche and fried saltines.",
+      "Note: To fry saltines, heat some neutral oil in a high-sided sauté pan to 350°F (175°C). Fry the saltines (working in batches as necessary so as not to crowd the pan) until golden, 2 to 3 minutes. Drain on paper towels before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mussels",
+        "unit": "lb",
+        "notes": "scrubbed and debearded",
+        "amount": "5",
+        "section": "For the poached mussels",
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the poached mussels",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": "For the poached mussels",
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the poached mussels",
+        "isOptional": false
+      },
+      {
+        "name": "Mussel Broth",
+        "unit": "C",
+        "notes": "reserved",
+        "amount": "¼",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Herbsaint",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "thinly shaved",
+        "amount": "1",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs Thyme",
+        "unit": "large",
+        "notes": "leaves stripped from the stems and lightly chopped",
+        "amount": "2",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "thinly shaved",
+        "amount": "2",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": "For the absinthe marinade",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "55309b612e5e46e253f7a05687ea3c405f18dcf7f3eb0a80e2da21f273543bdb",
+    "lineage_hash": "d845820e6fe6ff8801f2f11d47e50d6be393593b04d387b5873fab2497eaa4f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dauphines-mussels-in-absinthe/",
+    "fetchedAt": "2026-08-03T21:22:19.505Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dauphines-mussels-in-absinthe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

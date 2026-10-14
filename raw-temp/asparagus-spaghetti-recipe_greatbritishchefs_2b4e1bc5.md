@@ -1,0 +1,5 @@
+Everything about this pasta dish shouts ‘[spring](https://www.greatbritishchefs.com/collections/spring-recipes)’, from the many shades of green to the seasonal array of ingredients, which counts [peas](https://www.greatbritishchefs.com/ingredients/pea-recipes), asparagus and goat’s cheese.
+
+Flavours are delicate and fresh, in line with the season. However, they are enhanced by the mild pepperiness of the rocket pesto, which acts as a backbone for the ensemble – it gives it personality – but also as the binding element that brings it all together.
+
+If you’re in a hurry, you can swap the rocket pesto for the more common basil [pesto](https://www.greatbritishchefs.com/ingredients/pesto-recipes). As for the vegetables, if you’d like to change things up, rest assured that broad beans, fine beans and snow peas will work just as well as the garden peas.

@@ -1,0 +1,48 @@
+{
+  "url": "https://japan.recipetineats.com/bento-box-yakitori-bento/",
+  "slug": "bento-box-yakitori-bento_japan_8e1d319d",
+  "title": "Bento Box – Yakitori Bento",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T18:59:47.668Z",
+  "ldName": "Bento Box – Yakitori Bento",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main",
+  "ldKeywords": "bento, bento box, yakitori",
+  "ldIngredientsRaw": [
+    "1 cup Shimeji Gohan ((note 1))",
+    "4 skewers Yakitori ((note 2))",
+    "1  Pickled Chrysanthemum Turnip ((note 3))",
+    "2-3 tbsp Gomoku-mame (Simmered Soybeans with Vegetables)",
+    "3  broccoli florets (, blanched)",
+    "2  mini tomatoes",
+    "A bento box of your choice ((I used a double decker bento box))",
+    "1  okazu cup (note 4)"
+  ],
+  "ldInstructionsRaw": [
+    "While the Shimeji Gohan is still hot or warm, place it in one section of the bento box and let it cool.",
+    "Put Gomoku-mame in a okazu cup and place in the corner of the rice compartment.",
+    "Place the turnip next to the Gomoku-mame. If you don’t have a partition between the rice and the turnip, place the turnip in an okazu cup so that the rice does not get vinegary.",
+    "Place tomatoes and broccoli florets in one side of the other bento box.",
+    "Place yakitori skewers next to the vegetables."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcup\n\t\t\t\t\t\t\t\t\t\tShimeji Gohan\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "4\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tskewers\n\t\t\t\t\t\t\t\t\t\tYakitori\n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPickled Chrysanthemum Turnip\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "2-3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tGomoku-mame (Simmered Soybeans with Vegetables)",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tbroccoli florets\n\t\t\t\t\t\t\t\t\t\t, blanched",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tmini tomatoes",
+    "A bento box of your choice\n\t\t\t\t\t\t\t\t\t\t(I used a double decker bento box)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tokazu cup (note 4)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

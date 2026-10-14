@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Autumn Fruit Pavlova",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the meringue, preheat the oven to 100°C/gas mark ¼",
+      "Place the egg whites in a bowl and start to whisk. Add the salt and whisk to soft peaks",
+      "Whisk in the vinegar and slowly sift in the cornflour",
+      "Add the caster sugar slowly, continuing to whisk until the meringue thickens. Split and scrape the seeds out of the vanilla pod, add the vanilla seeds and whisk to stiff peaks",
+      "Spoon the meringue into 6 mounds on a baking sheet lined with parchment paper and shape into circles. Bake for about 2 ½ hours until dry and crisp",
+      "Remove from the oven and cool on a wire rack",
+      "To prepare the cream, scrape the vanilla seeds from the pod and add to a bowl with the cream and sugar. Whip the cream until it forms soft peaks",
+      "To make the blackberry purée, add the berries to a blender and blitz until smooth. Taste the purée and add the icing sugar if it's a little too tart",
+      "Quarter the figs and cut the plums into sixths. Roast in the oven with a drizzle of honey for 5–10 minutes, until golden and just starting to soften",
+      "To assemble the pavlovas, lightly bash the tops of the the meringues and add a generous dollop of cream to each one. Drizzle with some of the blackberry purée and top with the plums, figs and the remaining fresh blackberries. Finish with a dusting of icing sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled Malt Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plums",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "to dust",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b05e042081648a30a6c32964fc0f871f7700915c8efa2b80c7c047319051dacc",
+    "lineage_hash": "db59d895c249acd53c34bc7abab076f94b62ebe7a6006a63b8350fb5f3d4b0ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/autumn-fruit-pavlova-recipe",
+    "fetchedAt": "2026-08-03T11:22:47.762Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/autumn-fruit-pavlova-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

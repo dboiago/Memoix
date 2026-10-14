@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chocolate Chile BBQ Sauce",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "44",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "396",
+      "carbohydrateContent": "95",
+      "fatContent": "1",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Mix the sugar and water in a pan and simmer until the sugar dissolves. Add the rest of the ingredients and simmer on low for 30 minutes.",
+      "Paint it on your meat after it is fully cooked. One layer is all that is needed. If you wish, put the sauced meat over high heat to caramelize the sugars a bit, but watch it carefully so it doesn't burn. Then, for a festive touch, grate some orange zest on top. Serve it with a big red wine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chile Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0cbc2d2aa81dfcc24e1896e450d086f4b188a66631d03c953a0b0ba265a745b4",
+    "lineage_hash": "4d4e5e0eb847c39594e46956487f1984b197c17b690ca65df486aff4574b7476"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chocolate-chile-bbq-sauce-recipe-yes-you-read-right/",
+    "fetchedAt": "2026-08-02T04:42:56.490Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chocolate-chile-bbq-sauce-recipe-yes-you-read-right/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

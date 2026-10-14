@@ -1,0 +1,220 @@
+{
+  "recipe": {
+    "name": "Conchiglie Frutti Di Mare",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by poaching the fish. Combine the smoked haddock, milk, onion and rosemary in a wide pan and place over a medium heat. Poach gently for 3–5 minutes, or until the fish is just cooked",
+      "Remove the fish with a slotted spoon and set aside. Repeat with the salmon cubes, poaching in the hot milk until just cooked, and again with the cod. Set the fish aside, then strain the milk into a jug and reserve",
+      "When cool enough to handle, peel off the skin from the haddock and flake into large chunks, reserving with the salmon and cod",
+      "Place a frying pan over a high heat and add a dash of oil. Once hot, add the scallops and briefly sear on each side until just golden and set aside. Repeat with the monkfish pieces and reserve until required",
+      "For the sauce, melt the butter in a large pan over a medium heat. Stir in the flour and cook for a few minutes to make a roux. Whisk in the reserved poaching milk, stirring continuously until the mixture thickens into a smooth sauce",
+      "Add the whipping cream and continue to stir until fully combined. Remove the pan from the heat and mix in the chopped eggs, capers, parsley and lemon juice. Season with salt and pepper to taste",
+      "Bring a large pan of lightly salted water to the boil over a medium heat. Add the pasta and cook for 10–12 minutes, or until just cooked through. Drain and return to the pan",
+      "Gently fold the reserved poached haddock, salmon and cod through the pasta, followed by the scallops, monkfish and the prawns",
+      "Pour in the sauce and mix gently until evenly combined. Transfer the mixture to a large ovenproof dish and scatter over the grated cheese",
+      "Cook in the oven for 20–25 minutes, or until the top is lightly golden, bubbling and everything is heated through. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Undyed Smoked Haddock",
+        "unit": "g",
+        "notes": "skin left on",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salmon Fillet",
+        "unit": "g",
+        "notes": "skinned and cubed",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cod Fillet",
+        "unit": "g",
+        "notes": "skinned and cubed",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallops",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Monkfish Tail",
+        "unit": null,
+        "notes": "membrane removed and cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prawns",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "hard boiled and roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Capers",
+        "unit": "Tbsp",
+        "notes": "drained and rinsed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Conchiglie Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mature Cheddar",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "799f445249506ae994d987df548246c0c24b0d2bab282a1f299051a4d1b1aaf2",
+    "lineage_hash": "b2b79e83da4b7f0921587ae06986d5cc3079a8cbe298e7a66a6d85cc7fc45db9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/mixed-seafood-pasta-recipe",
+    "fetchedAt": "2026-08-03T12:46:29.113Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/mixed-seafood-pasta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

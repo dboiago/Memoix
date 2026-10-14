@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Chicken-Fried Chicken",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, add the coriander, chillies, salt, garlic and peanut oil to a blender and blitz until combined. Rub the mixture all over the chicken legs and place in the fridge for 2 hours to lightly cure. After this time, wash off the mixture and dry thoroughly",
+      "To confit the chicken legs, place the legs in a deep pan (or two smaller pans) that are big enough to comfortably hold them. Add the legs and enough of the liquid chicken or duck fat to cover (saving the rest for deep-frying later)",
+      "Cover with foil and cook in the oven for 3 1/2 hours",
+      "Meanwhile, prepare the pickled cucumbers. Make the amazu by warming the rice vinegar, sugar and salt together in a pan to dissolve the sugar and salt – do not boil. Remove form the heat and allow to cool before using",
+      "Chop the cucumber and submerge in the amazu. Submerge in the pickle for at least 2 hours, or preferably overnight",
+      "To make the peanut soy, simply combine all the ingredients in a bowl and set aside until ready to serve",
+      "When the chicken legs are cooked, remove from the oven and allow to cool in the fat. At this stage, they can be stored submerged in the fat for 4–5 days before using. If this is the case, simply remove the legs from the fat and allow to come up to room temperature for approximately 30 minutes before frying",
+      "Preheat a deep pan or deep-fryer of chicken or duck fat to 160°C",
+      "Just before serving, deep-fry the confit chicken legs until the skin is nice and golden, for approximately 5 minutes",
+      "Drain on kitchen paper and serve with the pickled cucumbers and plenty of peanut soy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "thigh and drumstick attached, skin on and bone in",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Coriander",
+        "unit": null,
+        "notes": "small",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "Scott uses a large, medium-strength chilli",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Fat",
+        "unit": "L",
+        "notes": "or duck fat if you can't find it",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Peanut",
+        "unit": "g",
+        "notes": "roasted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kecap Manis",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chillies",
+        "unit": null,
+        "notes": "dried, 1 or 2 depending on taste, finely chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e046b8be78fd3ccd290c9752f3080c159a436824cf42637c19a531ee791a90b7",
+    "lineage_hash": "bfdd184d228dcaa3084686274af7e2a110b32db4b368c3c16e45f52e04d30eba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-fried-chicken-recipe-peanut-soy",
+    "fetchedAt": "2026-08-03T10:31:25.383Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-fried-chicken-recipe-peanut-soy",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

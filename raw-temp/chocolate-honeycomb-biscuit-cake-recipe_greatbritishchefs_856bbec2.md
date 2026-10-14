@@ -1,0 +1,5 @@
+My big brother Max has always loved cooking. When we were both very young, he was given a book called _Keep Out of the Kitchen Mum_ and together we spent hours recreating recipes from its pages without any adult interference.
+
+One of the recipes was for [chocolate](https://www.greatbritishchefs.com/collections/chocolate-recipes) refrigerator cake: a simple, no-bake cake made from chocolate, biscuits and butter. As children, we'd triple the recipe to fill a giant rabbit-shaped birthday cake mould and serve it on a 'field' of wobbly green [jelly](https://www.greatbritishchefs.com/collections/jelly-recipes). For everyday eating, this loaf-shaped cake is a little more practical.
+
+This recipe is from Kate's new book [Homemade Memories: Childhood Treats with a Twist](https://www.greatbritishchefs.com/features/kate-doran-homemade-memories-book-review) published by Orion, 2015.

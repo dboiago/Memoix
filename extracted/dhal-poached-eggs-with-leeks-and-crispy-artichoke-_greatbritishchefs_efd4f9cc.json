@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Dhal Poached Eggs with Leeks and Crispy Artichoke Heart",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sauté the onion and garlic in the olive oil until soft",
+      "Add the spices and lentils, then stir in the coconut milk and stock. Simmer for 20 minutes until thick",
+      "In a separate pan, sauté the leeks and artichoke hearts in olive oil until golden and crispy",
+      "Bring a pan of water to a gentle simmer, add vinegar, and swirl the water. Crack in the eggs and poach for 3 minutes. Remove with a slotted spoon",
+      "Spoon the dhal into bowls, top with leeks, artichokes and a poached egg. Garnish with fresh parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Artichoke Hearts",
+        "unit": "g",
+        "notes": "jarred or canned, drained and halved",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b1bd3cc27347d30d3e778aff1f93dea146fbb6bd59c9100d4cd0d825611e601",
+    "lineage_hash": "51658e9f4ed16118286e50b6792d779368c5bbe615afe0aa08bdac3b1d7b6553"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dhal-poached-eggs-leeks-crispy-artichoke-heart-recipe",
+    "fetchedAt": "2026-08-02T05:47:16.179Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dhal-poached-eggs-leeks-crispy-artichoke-heart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

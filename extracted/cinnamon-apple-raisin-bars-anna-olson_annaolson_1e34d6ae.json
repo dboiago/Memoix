@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cinnamon Apple Raisin Bars",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Lightly grease a 9-inch (23 cm) square pan and line it with parchment paper so that the paper comes up the sides of the pan.",
+      "Whisk the milk and flaxseed together in a bowl and let sit for 5 minutes. Whisk in the apple butter, maple syrup and oil until smooth, then whisk in the grated apple. Stir in the oats, cinnamon and baking powder until combined. Stir in the raisins.",
+      "Spread the batter into the prepared pan and bake for about 45 minutes, until firm when gently pressed. Cool the pan on a cooling rack completely.",
+      "To serve, lift out the parchment paper and portion the square into bars. The bars will keep in an airtight container in the fridge or well wrapped in a lunch bag at room temperature for up to 1 week. They can also be wrapped in plastic and frozen after slicing. A frozen bar packed into a lunch bag will thaw gradually throughout the morning."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "1% or 2%",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Flaxseed",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Butter",
+        "unit": "Tbsp",
+        "notes": "pure",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "pure",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "large, peeled and coarsely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "certified gluten-free, if needed",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "certified gluten-free, if needed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f10b20a47c3b23c7aa06c161843d9647dc09e1f333f5debb53d2d9f8c460125c",
+    "lineage_hash": "abfe1763831d455ebfda8d40da037ca35318a4c2c28e67992d104c70dd329e74"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cinnamon-apple-raisin-bars/",
+    "fetchedAt": "2026-08-01T19:00:14.953Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cinnamon-apple-raisin-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

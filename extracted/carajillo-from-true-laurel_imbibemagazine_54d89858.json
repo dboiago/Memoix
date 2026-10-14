@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Carajillo From True Laurel",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, shake, and strain into the glass.",
+      "Cold-Brew Coffee Concentrate4:1 water to coffee ratio. Combine ground coffee of your choice with water, then rest in the fridge for 12-24 hours."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a28e73290807092d1d297edcc5639fcc80c2cba4aa1cca9d8e442d8b53f7da89",
+    "lineage_hash": "2368982002982ac9f8fded09b6f4187bda0de1d90cd9dd6ffdfdce62743f7b4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carajillo-from-true-laurel/",
+    "fetchedAt": "2026-08-03T22:45:42.339Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carajillo-from-true-laurel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Beignets with Rum Mousse",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Over a double boiler, melt the chocolate, then let it cool to 83°F.",
+      "Then, combine the melted chocolate with the whipped cream and 1 spoonful of rum to form a soft mousse.",
+      "Use the cream as a filling for the beignets. Fill the beignets just before serving for a perfect result. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beignets",
+        "unit": "small",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42d7568afea5437a2d99dd34cc5569e1e6ccfbd3a896abde4988be551f9a2e63",
+    "lineage_hash": "8888cfe2ea10bb52eb9857134763ba88d80c5204e83039871c04cf679ffd4ad5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/beignets-with-rum-mousse",
+    "fetchedAt": "2026-08-03T05:30:51.882Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/beignets-with-rum-mousse",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

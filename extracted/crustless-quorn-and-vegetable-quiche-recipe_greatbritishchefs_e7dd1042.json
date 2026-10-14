@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Crustless Quorn and Vegetable Quiche",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "After grating the courgette, pat dry in a clean towel to remove the excess moisture",
+      "In a bowl, beat the eggs and add the milk, salt and pepper",
+      "Continue beating and add the Quorn mince, carrots, courgette, pepper, cheese and thyme",
+      "Mix well and pour the mixture into a buttered ovenproof dish. Place the sliced red onions on top",
+      "Lightly sprinkle with cheese and thyme and place in the oven for about 25 minutes. Remove from oven, rest for 5 minutes and serve with salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "fresh, large and organic",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "118",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quorn Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard Cheese",
+        "unit": "g",
+        "notes": "preferably vegetarian, grated",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "about 2 medium carrots, grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "about 2 medium courgettes, grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "pepper to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c3b1ff18f0e96e8e82ae02acd9c162a16e6a06b174f51e9e9442d909d50f8bb",
+    "lineage_hash": "8d7a5985301f6ecaea789a96aa367e8d05ff1eadc30f9b015ed0891a953d063e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crustless-quorn-vegetable-quiche-recipe-veg",
+    "fetchedAt": "2026-08-03T15:23:06.786Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crustless-quorn-vegetable-quiche-recipe-veg",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chinese Spicy Chicken Noodle Soup",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "513",
+      "carbohydrateContent": "74.9",
+      "fatContent": "10.4",
+      "proteinContent": "31.4"
+    },
+    "directions": [
+      "Add shiitake mushroom into a medium-sized bowl and add warm water to cover. Rehydrate until turning tender throughout, 15 to 20 minutes. Once done, squeeze water out of the mushrooms, remove the tough stems and discard them. Slice the mushroom caps into thin pieces.",
+      "Separate the chicken legs at the joint, pat dry, and sprinkle evenly with salt.",
+      "Heat oil in a medium-sized pan over medium-high heat until shimmering. Carefully add the chicken pieces without overlapping, skin side down. Cook without touching until the bottom side is browned, 4 to 5 minutes. Flip to cook the other side for another 2 minutes. Transfer the chicken to a plate.",
+      "There should still be enough oil in the pot. If not, add 1 tablespoon of oil. Turn to medium-low heat. Add the rehydrated shiitake mushrooms, ginger, scallion whites, and star anise. Cook and stir for 1 to 2 minutes until the aromatics turn light golden. Add the doubanjiang. Keep stirring until the doubanjiang evenly coats the aromatics.",
+      "Pour in the chicken broth to deglaze the pan. Add the cooked chicken, Shaoxing wine, soy sauce, and sugar. Cook over medium-high heat until brought to a boil. Add the carrots and daikon. Skim the foam from the top of the broth. Simmer, covered, for 20 minutes, until the chicken has turned tender.",
+      "While cooking the chicken, boil the noodles in another large pot according to the package instructions. Drain noodles thoroughly and set aside.",
+      "When the chicken is finished cooking, add the baby bok choy and cover again. Let simmer for 1 to 2 minutes, until the bok choy has turned tender. Turn off the heat.",
+      "To assemble the noodles, divide chicken braising liquid among the individual bowls. Portion the noodles into each bowl, top with chicken and baby bok choy. Garnish with scallion greens and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "or 4 bone-in skin-on thighs, bone-in, skin-on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "*Footnote 1, roll cut into 1/2” pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "” Daikon Radish",
+        "unit": null,
+        "notes": "roll cut into 1/2” pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Noodles",
+        "unit": "oz",
+        "notes": "*Footnote 2, dried",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy Heads",
+        "unit": null,
+        "notes": "*Footnote 3, halved lengthwise",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "886f8c85134adc5f0624129cc910e34c44bad3e7acdffd5e7ccaab2ee5edac1a",
+    "lineage_hash": "00f9297d8ff0d999c3f11e9e65359c25fc4d80167138ad735c7081a0eba14172"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/spicy-chicken-noodle-soup/",
+    "fetchedAt": "2026-08-02T07:47:25.909Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/spicy-chicken-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

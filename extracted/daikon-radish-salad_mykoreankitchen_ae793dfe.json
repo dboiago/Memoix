@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Daikon Radish Salad (Musaengchae)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "18",
+      "carbohydrateContent": "4",
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Julienne the radish with your knife or using a mandolin slicer. Ideal size would be 6 cm to 7 cm (about 2.5 inch) long match stick style.",
+      "Put the radish into a mixing bowl then add the sauce. Mix them well with your hands. Garnish with the green onion.",
+      "Transfer the seasoned radish into a glass container and rest it for 30 mins in the fridge then serve. Or you can eat it straight away. Any unused portion can be refrigerated for 5 to 7 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Daikon Radish / White Radish",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "750",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion (optional)",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes (gochugaru)",
+        "unit": "Tbsp",
+        "notes": "alt: more to taste",
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88eb3f055defbe54e8779e3aa0c7c297bb1961a4b9b3e77a7c743f5f478cfc1f",
+    "lineage_hash": "2460e49ccb03b9c8b59dbea2e07672fbb9ffadb34226caf4c7f68bf8ae86e55c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/daikon-radish-salad/",
+    "fetchedAt": "2026-08-01T16:45:58.539Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/daikon-radish-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

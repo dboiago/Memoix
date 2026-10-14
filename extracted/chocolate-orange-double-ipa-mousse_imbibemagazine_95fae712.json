@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Double IPA Mousse",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate in a bowl over a saucepan of boiling water. Stir in the salt, half of the sugar, the orange zest (reserving some for decoration), and 4 tablespoons of fresh orange juice (plus the stem ginger syrup, if using). Remove from the heat. Add the egg yolks, mixing them into the hot chocolate mixture, followed by the beer. In a separate bowl, whisk the egg whites until they form stiff peaks. Halfway through whisking the egg whites, add the remaining sugar. When firm, gently fold the egg-white mixture into the chocolate. Pour the mousse into separate serving bowls, sprinkle the reserved orange zest on top, and place in the refrigerator for a few hours (or overnight)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semisweet Dark Chocolate",
+        "unit": "oz",
+        "notes": "minimum 70% cocoa solids",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Super-fine (caster) Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "large",
+        "notes": "reserving some for decoration",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double IPA",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69c7a1e73d274632a032125d4ab7909f436fc6e091a602e46f3c3e0b35b2d521",
+    "lineage_hash": "8ddaca82b95544f7cc19250c170182e12166e223f3c237f5a2d6201192bce0ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-orange-double-ipa-mousse/",
+    "fetchedAt": "2026-08-04T00:02:16.549Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-orange-double-ipa-mousse/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

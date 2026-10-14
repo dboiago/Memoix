@@ -1,0 +1,52 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/main-course/anchovy-pie",
+  "slug": "anchovy-pie_lacucinaitaliana_5153ff3a",
+  "title": "Anchovy Pie",
+  "byline": "by  Editorial staff   December 1, 2023",
+  "fetchedAt": "2026-08-02T13:36:35.660Z",
+  "ldName": "Anchovy Pie",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "main course",
+  "ldKeywords": "Torte Salate",
+  "ldIngredientsRaw": [
+    "1 3/4 all purpose flour",
+    "1STICK butter, softened",
+    "4OZ. firm ricotta cheese",
+    "2OZ. red radicchio",
+    "2TBSP. milk",
+    "2TBSP. cream",
+    "2TBSP. mustard",
+    "1OZ. baby spinach",
+    "12 anchovies",
+    "3 egg yolks",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Place the flour in a bowl with the softened butter and a pinch of salt and knead it with your hands. Add 1/4 cup water and continue kneading to obtain a smooth and elastic shortcrust dough. Cover with plastic wrap and place in the refrigerator for at least 2 hours to help it become more elastic and easier to roll out.</p>",
+    "<p>Clean the anchovies: remove the heads, slice them open like a book and remove the guts and scales, including the tail.&nbsp;</p>",
+    "<p>Preheat the oven to 325°F.</p>",
+    "<p>Mix the egg yolks, cream, milk and mustard for a sauce.</p>",
+    "<p>Clean and coarsely chop the radicchio. Spoon the ricotta into the pan in large dollops, then add the radicchio, anchovies and spinach and sprinkle with the sauce. Bake in a convection oven for 45 minutes. Remove from the oven and serve hot.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 3/4  of all purpose flour",
+    "1 STICK of butter, softened",
+    "4 OZ. of firm ricotta cheese",
+    "2 OZ. of red radicchio",
+    "2 TBSP. of milk",
+    "2 TBSP. of cream",
+    "2 TBSP. of mustard",
+    "1 OZ. of baby spinach",
+    "12  of anchovies",
+    "3  of egg yolks",
+    "salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

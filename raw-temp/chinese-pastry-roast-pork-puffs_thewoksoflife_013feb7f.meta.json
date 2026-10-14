@@ -1,0 +1,69 @@
+{
+  "url": "https://thewoksoflife.com/chinese-roast-pork-puffs/",
+  "slug": "chinese-pastry-roast-pork-puffs_thewoksoflife_013feb7f",
+  "title": "Chinese Pastry Roast Pork Puffs",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T03:02:24.838Z",
+  "ldName": "Chinese Pastry Roast Pork Puffs",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizers and Snacks",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 tablespoon oil",
+    "1/4 cup shallots",
+    "1 tablespoon sugar",
+    "2 teaspoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "2 teaspoons sesame oil",
+    "1 1/2 teaspoons dark soy sauce",
+    "1/3 cup chicken stock",
+    "1 1/2 tablespoons flour",
+    "1 cup Chinese roast pork",
+    "1  sheet store-bought puff pastry",
+    "egg wash ((1 egg, beaten with a tablespoon of water))",
+    "1 tablespoon sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a wok over medium heat and stir-fry the onion until translucent. Add the sugar, soy sauce, oyster sauce, sesame oil, and dark soy sauce and cook until it starts to bubble up. Add the chicken stock and flour. Reduce the heat to medium low and cook, stirring, for a couple minutes until thickened. Remove from the heat and stir in the pork. Set aside to cool completely.",
+    "Preheat the oven to 400 degrees F (200 degrees C). On a lightly floured surface, roll out the puff pastry to smooth out the seams. Once rolled, the puff pastry square should be 30% larger than where you started. Cut into equal squares (whatever size you prefer). Ours were about the size of a large ravioli.",
+    "Put about 1 1/2 teaspoons of filling onto a pastry square and brush the edges with egg wash. Cover with another pastry square and use a fork to crimp it closed. Make sure they&#x27;re tightly sealed. Repeat until all the filling and/or pastry has been used.",
+    "Brush the tops of the pastries with egg wash and sprinkle with sesame seeds. Bake for 18-20 minutes, or until puffed and golden brown. Serve warm!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "169 kcal",
+    "carbohydrateContent": "11 g",
+    "proteinContent": "5 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "10 mg",
+    "sodiumContent": "200 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon oil",
+    "▢ 1/4 cup shallots (or onion, finely chopped)",
+    "▢ 1 tablespoon sugar",
+    "▢ 2 teaspoons soy sauce",
+    "▢ 1 tablespoon oyster sauce",
+    "▢ 2 teaspoons sesame oil",
+    "▢ 1 1/2 teaspoons dark soy sauce",
+    "▢ 1/3 cup chicken stock",
+    "▢ 1 1/2 tablespoons flour",
+    "▢ 1 cup Chinese roast pork (char siu, finely chopped – you can buy this from your Chinese grocery store's hot bar, or make your own with our char siu recipe)",
+    "▢ 1 sheet store-bought puff pastry (or homemade rough puff pastry, thawed)",
+    "▢ egg wash (1 egg, beaten with a tablespoon of water)",
+    "▢ 1 tablespoon sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

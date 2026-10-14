@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Barbacoa Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a cocktail shaker, combine all of the ingredients and gently muddle them together. Add ice and shake well until chilled. Pour into the glass, and top up with fresh ice. Garnish with a piece of high-quality beef jerky."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puréed Chipotle Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wedges Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slice Red Fresno Chile",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce0d65f01ee1e5606ef98cfe93e5c1e43c866bb1b7b0e749e213f5d899b2ce97",
+    "lineage_hash": "01e88417f0b5c9390e6c90d40be2c04978754986c43e215c2b15134e3e774f8c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barbacoa-cocktail/",
+    "fetchedAt": "2026-08-04T02:00:15.690Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barbacoa-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Coffee Grog From Three Dots and a Dash",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Coffee Beans"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with a large cube of ice and shake hard. Strain into a chilled glass. Garnish.\n\n\n\nNote: Shaking with a 2×2 ice cube allows for less dilution, and the large size helps to froth the cocktail, allowing for a thick head. After straining into the coupe, allow the cocktail to rest until a sturdy head has formed before placing the coffee beans as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "151-proof Demerara Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": "strong",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7005d0eb767d6faad6faf202a143f4bfd076a91c4421a5584f2e79fe03d754c",
+    "lineage_hash": "20c8808ab51612a52edee6ceb074f3da0d50ad0d1bdbf8152ee99ae616fd25bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coffee-grog-three-dots-and-a-dash/",
+    "fetchedAt": "2026-08-03T23:01:26.327Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coffee-grog-three-dots-and-a-dash/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

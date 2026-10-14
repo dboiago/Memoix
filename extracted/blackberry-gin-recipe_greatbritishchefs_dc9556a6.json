@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Blackberry Gin",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "500",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the berries and place in a sterilised jar",
+      "Add the sugar and gin, close the jar and give it a shake",
+      "Store in a cool dark place for 1 week, giving the jar a shake every other day to make sure the sugar has dissolved",
+      "Strain the gin through a muslin cloth and bottle. Best consumed within 1 month"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9e5385bac578db9e371a9775d81b6b77803595d20aa42bb2f735cdc8ef5584a8",
+    "lineage_hash": "c96ce3f79a42a79001128f79aafbd120d4159223d1a5a417c9b63aa19bb0efcc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-gin-recipe",
+    "fetchedAt": "2026-08-03T07:17:08.982Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-gin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

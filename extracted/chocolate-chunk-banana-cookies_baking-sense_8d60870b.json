@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chocolate Chunk banana cookies",
+    "time": "3 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "309",
+      "carbohydrateContent": "34",
+      "fatContent": "19",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Line a half sheet pan with parchment paper or silicone baking mat.",
+      "In a small bowl, whisk together 7½ oz all-purpose flour, ½ teaspoon baking soda, ½ teaspoon table salt and set aside.",
+      "Pulse 2 oz freeze dried banana chips in a food processor or blender until you have a powder. Some chunky bits are fine. In a mixer bowl, combine the banana powder with 8 oz unsalted butter, 6 oz granulated sugar and 6 oz brown sugar. Cream the mixture for 2-3 minutes until light and aerated. Add 2 large eggs and 1½ teaspoon vanilla extract. Turn off the mixer and scrape the bowl. With the mixer running on low, slowly add the dry ingredients. Mix until the flour is partially incorporated. Add 6 oz chocolate chunks and 4 oz walnuts and mix until all the flour is incorporated.",
+      "Using a 2 oz (1/4 cup) scoop, portion the dough into balls and line them up on the prepared sheet pan. For best results I recommend chilling the cookie balls for at least 2 hours or up to 24 hours before baking. You can chill the dough in the bowl and portion right before baking. (see note)",
+      "When you're ready to bake, preheat the oven to 375 °F. Line the cookie balls on a sheet pan with at least 3\" between. If the balls were frozen let them defrost at room temperature while you preheat the oven. Bake until the edges of the cookies are set and the tops are lightly puffed and still soft, 8-10 minutes.  Cool for 5 minutes on the sheet pan then you can slide the parchment paper off the pan and onto a cooling rack. Cool until the cookies are firm enough to handle without breaking apart."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "1½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze Dried Banana Chips",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chunks",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup, coarsely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f954552ea6a5f196633f0857a2f6b3c0d842787878806805348b437aa7a2500",
+    "lineage_hash": "ff63098ff4e83ea64160520c46b81dc2b4db129a81442d743d90705ba3651d9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/11/05/banana-chocolate-chunk-cookies/",
+    "fetchedAt": "2026-08-02T01:11:04.092Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/11/05/banana-chocolate-chunk-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

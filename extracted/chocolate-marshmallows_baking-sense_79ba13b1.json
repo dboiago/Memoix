@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chocolate Marshmallows",
+    "time": "10 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "73",
+      "carbohydrateContent": "18",
+      "fatContent": "0.2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Oil a 13\"x 9\" pan. Line the pan with parchment paper, lengthwise hanging over the sides. Then oil the parchment paper.",
+      "In a large mixing bowl, sprinkle ¾ oz unflavored gelatin powder over 4 oz water (cool), whisking just to combine, set aside.",
+      "Combine 2 cups (16 oz) of the granulated sugar with 1 oz cocoa powder, 8 oz light corn syrup, 6 oz water (hot)  2 teaspoons vanilla extract and ¼ teaspoon table salt.  Heat the mixture until the sugar is melted. Turn the heat to medium high and bring the mixture to a boil. Once the mixture is boiling do not stir. Cook the syrup to 240 °F.",
+      "Immediately pour the syrup over the bloomed gelatin stir to melt the gelatin. Whip the mixture on high speed until it's doubled in volume. Set it aside.",
+      "Whip 2 each egg whites to medium peak. With the mixer running, slowly add the last 1/2 cup (4 oz) of sugar. Turn the mixer to medium high and whip to full peak. Add the gelatin mixture to the egg whites and whisk to combine. Pour the mixture into the prepared pan. If large bubbles rise to the surface rap the pan on the countertop a few times to pop the bubbles. Leave to set overnight, uncovered.",
+      "In a small bowl whisk together 4 oz confectioner sugar and ½ oz cocoa powder. Sift a layer of the cocoa-sugar over the marshmallows. Use the parchment to lift the marshmallows out of the pan. Cut the slab in half using a sharp knife coated with vegetable oil. You should now have two 6½\"x 9\" rectangles.",
+      "Transfer one of the rectangles to a cutting board that is generously dusted with cocoa-sugar. Cut that rectangle 6x4 to get 24 squares. Toss the marshmallows in the bowl of cocoa- sugar to coat and transfer to a baking sheet dusted with confectioner's sugar. Allow the marshmallows to dry for several hours.",
+      "If you would like to dip the marshmallows into chocolate, brush away excess sugar from the dried marshmallows before dipping.",
+      "Store in an air-tight container at room temperature for up to a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unflavored Gelatin Powder",
+        "unit": "oz",
+        "notes": "2 T + 1 t",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup, cool",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 ½ cups, divided",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "¾ cup, hot",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Egg Whites",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "2 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "optional",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93cd904661d1040b70b5e226746f6359b066c6b2d42b3148a207fdbf3220daa1",
+    "lineage_hash": "6e0206762711a820dbb6ea68fc8f0c987265e0a4531880873678ad5fe9476217"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/12/01/chocolate-marshmallows/",
+    "fetchedAt": "2026-08-02T02:42:30.451Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/12/01/chocolate-marshmallows/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

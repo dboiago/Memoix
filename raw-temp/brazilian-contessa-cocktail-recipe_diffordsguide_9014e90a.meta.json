@@ -1,0 +1,42 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/33254/brazilian-contessa",
+  "slug": "brazilian-contessa-cocktail-recipe_diffordsguide_9014e90a",
+  "title": "Brazilian Contessa Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T22:04:35.278Z",
+  "ldName": "Brazilian Contessa",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Aperitivo/aperitif",
+    "Herbal"
+  ],
+  "ldIngredientsRaw": [
+    "30 ml Cachaça (unaged)",
+    "30 ml Orange-red aperitivo",
+    "30 ml Dry vermouth",
+    "1 dash Orange bitters"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill an OLD-FASHIONED GLASS.",
+    "Prepare garnish of orange slice wheel.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+    "Garnish with orange slice wheel."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "172 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Absolute Chocolate Tartlets",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix 170 g of flour with 85 g of sugar in a food processor. Add 85 g of butter (cut into small cubes) from the fridge and blend well. Add 2 tablespoons of milk and blend again to obtain coarse sand.",
+      "Dump the mixture into a 28 cm pie dish and press/pack the dough with your fingers to line the dish.",
+      "Scale down the recipe to use 120 g of flour, 60 g of sugar, and 60 g of butter. Replace a heaping tablespoon of flour with unsweetened cocoa powder.",
+      "Line 3 tartlets with the dough, place circles of parchment paper and ceramic baking weights on them, and bake at 200°C (400°F) for 10 minutes.",
+      "Cool the tartlets on a rack.",
+      "Melt 40 g of Valrhona baking chocolate in the microwave and brush it onto the tartlet shells. Place them in the fridge to cool.",
+      "Melt 50 g of sugar in a non-stick saucepan until completely caramelized. Add 1 teaspoon of unsweetened cocoa and mix thoroughly.",
+      "Pour the caramel onto a silicon baking sheet and draw shapes quickly while it's still hot and liquid.",
+      "Heat 100 ml of crème fleurette until the first teeny bubble appears. Pour it over 150 g of broken chocolate pieces and mix thoroughly with a fork.",
+      "Add 2 egg yolks and 40 g of butter, ensuring no lumps remain. Mix to create a thick chocolate cream.",
+      "Pour the ganache into the tartlet shells. Add one caramel shape to each tartlet.",
+      "Place the tartlets in the fridge for the ganache to set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tablespoon Unsweetened Cocoa Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona Baking Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fleurette",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "broken into small pieces",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "720c4889ac66d40b566d6bdd2c240706f4cf5356125bcdfe37518a0358c12b17",
+    "lineage_hash": "a576483882e648629ddf0ae34b5d3e5068ccf3d5739f874830516e5e1bdffdda"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/absolute-chocolate-tartlets-recipe/",
+    "fetchedAt": "2026-09-30T18:38:31.305Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/absolute-chocolate-tartlets-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

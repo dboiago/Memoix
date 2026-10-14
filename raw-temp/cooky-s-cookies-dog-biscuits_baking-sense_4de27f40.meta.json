@@ -1,0 +1,61 @@
+{
+  "url": "https://www.baking-sense.com/2017/03/29/cookys-cookies-dog-biscuits/",
+  "slug": "cooky-s-cookies-dog-biscuits_baking-sense_4de27f40",
+  "title": "Cooky's Cookies - Dog Biscuits",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T16:43:44.762Z",
+  "ldName": "Cooky’s Cookies – Dog Biscuits",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "24",
+    "24 biscuits"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": "dog friendly, treats",
+  "ldIngredientsRaw": [
+    "5 oz unsweetened apple sauce (½ cup)",
+    "3 oz peanut butter (⅓ cup)",
+    "1  large egg",
+    "½ teaspoon table salt",
+    "1 teaspoon baking powder",
+    "3 oz old fashioned rolled oats (1 cup)",
+    "7 ½ oz whole wheat flour (1 ½ cups, see note)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 350 °F.  Line a half sheet pan with parchment paper.",
+    "In a mixer bowl combine 5 oz&#32;unsweetened apple sauce and 3 oz&#32;peanut butter. Add 1&#32;large egg and mix to combine. Add ½ teaspoon&#32;table salt, 1 teaspoon&#32;baking powder, 3 oz&#32;old fashioned rolled oats and 7 ½ oz&#32;whole wheat flour.",
+    "Turn the dough onto a lightly floured surface. Knead to form a smooth dough. Roll the dough to ¼&quot; thick. Using cookie cutters, cut out desired shapes and place onto the prepared baking sheet.",
+    "Bake until crisp and lightly golden brown - about 15-20 minutes.",
+    "Let cool completely if your dog will let you wait that long."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 biscuit",
+    "calories": "70 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "3 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "0.5 g",
+    "transFatContent": "0.001 g",
+    "cholesterolContent": "7 mg",
+    "sodiumContent": "84 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "2 g"
+  },
+  "htmlIngredientLines": [
+    "5 oz unsweetened apple sauce (½ cup)",
+    "3 oz peanut butter (⅓ cup)",
+    "1 large egg",
+    "½ teaspoon table salt",
+    "1 teaspoon baking powder",
+    "3 oz old fashioned rolled oats (1 cup)",
+    "7 ½ oz whole wheat flour (1 ½ cups, see note)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

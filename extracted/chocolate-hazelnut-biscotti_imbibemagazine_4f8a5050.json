@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Biscotti",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Adjust oven rack to middle position and heat oven to 325 degrees F. Using ruler and pencil, draw two 8 by 3-inch rectangles, spaced 4 inches apart, on a piece of parchment paper. Grease baking sheet and place parchment on it, marked side down.",
+      "Pulse 1 cup hazelnuts in food processor until coarsely chopped, 8 to 10 pulses; transfer to bowl and set aside. Process remaining 1/4 cup hazelnuts in now-empty processor until finely ground, about 45 seconds. Add flour, cocoa, baking powder, espresso powder, and salt and process until combined, about 15 seconds. Transfer flour mixture to second bowl.",
+      "Process 2 eggs in again-empty processor until lightened in color and almost doubled in volume, about 3 minutes. With processor running, slowly add sugar until thoroughly combined, about 15 seconds. Add melted butter and vanilla and process until combined, about 10 seconds. Transfer egg mixture to bowl. Sprinkle half of flour mixture over egg mixture and, using spatula, gently fold until just combined. Add remaining flour mixture and chopped hazelnuts and gently fold until just combined.",
+      "Divide dough in half. Using your floured hands, form each half into 8-by-3-inch rectangle, using lines on parchment as guide. Spray each loaf lightly with oil spray. Using rubber spatula lightly coated with oil spray, smooth tops and sides of rectangles. Gently brush tops of rectangles with egg white wash. Bake until loaves are set and beginning to crack on top, 25 to 30 minutes, rotating sheet halfway through baking.",
+      "Let loaves cool on baking sheet for 30 minutes. Transfer loaves to cutting board. Using serrated knife, slice each loaf on slight bias into 1/2-inch-thick slices. Lay slices  cut side down, about 1/4-inch apart on wire rack set in rimmed baking sheet. Bake until crisp on both sides, about 35 minutes, flipping slices halfway through baking. Let biscotti cool completely on wire rack, about 1 hour, before serving. (Biscotti can be stored in airtight container at room temperature for up to 1 month.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": "toasted and skinned, divided",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "plus 1 large white beaten with pinch salt, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted and cooled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ec16dbe13c6b02c289d71cf0058b192c44778977bcc04c157e4f6424cf0b451",
+    "lineage_hash": "672cea8b87d03ec8c9690d01172d8a926875c4be87aef245e1452f47e19e40f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-hazelnut-biscotti/",
+    "fetchedAt": "2026-08-04T01:28:23.135Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-hazelnut-biscotti/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

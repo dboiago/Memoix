@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Cheung Fun with Shrimp",
+    "time": "1 hr 50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "365",
+      "carbohydrateContent": "62.4",
+      "fatContent": "5.3",
+      "proteinContent": "15.9"
+    },
+    "directions": [
+      "To make the batter: Combine the rice flour, wheat starch and salt in a large bowl. Mix with a whisk. Pour in the water. Mix until the flour is fully incorporated. Let the flour hydrate while preparing the rest of the ingredients.",
+      "To make the filling: Slice the shrimp across the center lengthwise in half, then slice across vertically into 2/3” (1.5 cm) pieces. (*Footnote 1) Transfer the shrimp into a medium bowl, add the scallion greens, cornstarch, water, salt, sugar, sesame oil and white pepper. Mix well and set aside to marinate.",
+      "To make the sauce: Heat the oil over medium heat in a small pot until hot. Add the scallions. Let cook until the surface turns lightly golden, 1 to 2 minutes. Then add the garlic. Cook for another minute, until the garlic turns golden brown. Add the water, light and dark soy sauce, sugar, oyster and shiitake mushrooms. Stir to mix. Keep cooking until the sauce is boiling and the sugar has melted. Remove the pot from the stove. Leave with the aromatics in the pot to infuse the flavor, until the sauce has fully cooled. Strain the sauce into a small bowl."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "lb",
+        "notes": "peeled and deveined",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "greens only, sliced",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "white part only, sliced into 2” (5-cm) pieces",
+        "amount": "2",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Paper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasoned Soy Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Large Wok (or Large Deep Skillet with Cover)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Stainless Steel Tray",
+        "unit": null,
+        "notes": "that can fit into your wok or skillet",
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Steaming Rack",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Bench Scraper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Brush",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0aebe13f0d57e6294e5572272bc8930d56e76c8f4b7a6a2fb02304796477be3f",
+    "lineage_hash": "ba893e96830997b8beeff232fa999008ce0e2bcba762f3ad16a08b534c933084"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cheung-fun-with-shrimp/",
+    "fetchedAt": "2026-08-02T06:37:57.349Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cheung-fun-with-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

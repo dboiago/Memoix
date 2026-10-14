@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Drunken Spinalis",
+    "time": "4 hr 3 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine the bourbon, soy sauce, sesame oil, sugar, garlic, and ginger.  Whisk until the sugar is dissolved.",
+      "Using a sharp knife, make a crosshatch pattern of shallow cuts on the top of the steak (about 1/4-inch apart) to prevent it from curling on the grill. Place the steak in a roasting pan just large enough to hold it.  Pour the marinade over it, turning the steak once or twice.  Marinate the steak for 4 hours in the refrigerator, turning once more.   Drain the meat and pat dry before grilling.",
+      "Set up your grill for direct grilling and heat to high.   (If using a gas grill, place the wood chips in the smoker box or a smoker pouch and run the grill on high until you see smoke.)  On a charcoal grill toss the wood chips on the coals.",
+      "Brush and oil the grill grate.   Grill the steak until cooked to taste, about 3 minutes per side for medium-rare.   Generously season the steak with salt and pepper as it cooks.",
+      "Transfer the cooked steak to a cutting board.   Impale the slice of butter on the end of a fork and rub it over the top of the steak.   Let the steak rest for 2 to 3 minutes, then carve it crosswise into broad, very thin slices, holding the knife at a 45-degree angle to the top of the meat.    Serve at once, spooning any juices over the meat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian (dark) Sesame Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "And Minced Fresh Ginger",
+        "unit": "Tbsp",
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef0319763f208dacf5622dfd074e8403f0fe3efbca122ed5f3c84029888c1979",
+    "lineage_hash": "5dbe957dcb42691cdafdd6c9acf201f465a8d74803f303877917f46872293faa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/drunken-spinalis/",
+    "fetchedAt": "2026-08-03T06:58:19.450Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/drunken-spinalis/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

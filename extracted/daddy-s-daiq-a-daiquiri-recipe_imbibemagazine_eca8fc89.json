@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then strain into a chilled glass, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blended White Rum",
+        "unit": "oz",
+        "notes": "Long Legs uses Kuleana Huihui",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Overproof Rhum Agricole Blanc",
+        "unit": "oz",
+        "notes": "Long Legs uses Neisson",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gum Syrup",
+        "unit": "oz",
+        "notes": "a sugar syrup emulsified with gum arabic; substitute rich simple syrup (2:1) if unavailable",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5633f63b24478e2404574b0748f1dce9287c841c7816686f05cb2bd3bb0bc48f",
+    "lineage_hash": "df4b6712945b0eb379f53e2604f4000a6dae7d6f1be4e47c263750caf5a0414e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/daddys-daiq-a-daiquiri-recipe/",
+    "fetchedAt": "2026-08-03T22:47:50.219Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/daddys-daiq-a-daiquiri-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

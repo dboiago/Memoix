@@ -1,0 +1,250 @@
+{
+  "recipe": {
+    "name": "Deep-Fried Calf Brain with Lemon Kimchi",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the kimchi, start by making a brine with the salt and water",
+      "Peel the lemons and discard the peel. Squeeze out the juice (reserving for later) and cut the lemons into quarters. Place the lemons in the brine and leave overnight",
+      "The next day, peel and thinly slice the ginger, deseed and chop the chilli, chop the garlic, peel and halve the shallot and chop the herbs. Place all of the ingredients in a jar along with the drained brined lemons, seal and store at 20°C–30°C degrees for 40 days",
+      "The day before you wish to serve the dish, place the brain in a bowl. Cover with milk, add some ice and leave to soak overnight",
+      "The day of serving, prepare the fried cream. Heat the milk in one saucepan until hot but not boiling and add the semolina flour and sugar to another pan",
+      "Add the hot milk, lemon zest and seeds from the vanilla pod to the semolina and cook over a low heat for 15 minutes, stirring constantly until smooth",
+      "Pour the mixture into a shallow container and smooth out the top. Allow to cool then transfer to the fridge for a couple of hours where it should solidify as it cools. Alternatively, place in the freezer for half an hour to firm up",
+      "To prepare the courgette flowers, remove the stalks and cut them in half lengthways. Warm a little clarified butter and brush some onto a silicone baking mat",
+      "Place the flowers on top, taking care not to overlap the petals, and brush with more butter. Cover with a sheet of greaseproof paper and place a weight on top",
+      "Bake the flowers for 8 minutes then carefully remove the petals",
+      "Once the semolina cream is firm enough to keep its shape, slice into small oblongs and roll each in egg, then in breadcrumbs to coat",
+      "Preheat the sunflower oil in a deep-fryer to 180°C",
+      "Rinse the brains to remove any remaining blood and dry well. Divide into 10g pieces and dust in flour",
+      "Fry the brains and semolina until golden brown (for about 3 minutes) then drain on kitchen paper and season",
+      "Blanch the samphire in boiling water until tender then drain",
+      "To serve, place four small mounds of kimchi on each plate with two pieces of fried brain and two pieces of fried cream. Decorate with the courgette flower petals and pieces of samphire"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calf Brains",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "peeled and finely sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "hot, deseeded and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Samphire",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "119aff98476c198924e86a5ad51ff0fe5f07eae988b3646fddf2b638852d958a",
+    "lineage_hash": "7e85a1ab721b52221034fc266efe4d9bcb61a644e179f36f00fd4473e99ec809"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/deep-fried-brain-recipe-lemon-kimchi",
+    "fetchedAt": "2026-08-02T01:20:08.922Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/deep-fried-brain-recipe-lemon-kimchi",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

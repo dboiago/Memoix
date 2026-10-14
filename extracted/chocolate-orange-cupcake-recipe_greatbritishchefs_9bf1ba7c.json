@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Cupcake",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the candied orange zest. Peel the oranges with a peeler into long strips. Trim the pith to a thickness of 1mm – any thicker than this and it will be too bitter – and cut the strips into a julienne of 2mm",
+      "Bring a pan of water to the boil and blanch the orange strips for 3 minutes. Drain and repeat",
+      "Bring 200ml of water to the boil with 200g of the sugar and add the orange strips. Cook until the strips become translucent and the water becomes a thick syrup",
+      "Drain well (the syrup can be reserved and used as a flavouring in cocktails) and toss through the rest of the caster sugar. Leave for around 15 minutes before dusting off any excess sugar and scattering over a tray lined with baking paper",
+      "Leave to air-dry for at least 24 hours, until the peel is crisp. Store in an airtight container until needed",
+      "To make the orange caramel, add the sugar to a pan and caramelise until golden brown. Add the orange juice, reduce to a syrupy consistency then whisk in the butter in 2 additions. Leave to cool and transfer to a squeezy bottle",
+      "To make the cupcakes, beat the sugar and butter together in a mixer",
+      "Melt the chocolate in a heatproof bowl set over a pan of simmering water and leave to cool before adding to the butter and sugar",
+      "Whisk the eggs and add gradually to the mixture until fully incorporated before mixing in the sour cream",
+      "Sieve together the flour, cocoa powder and baking powder and mix in the salt. Add the dry ingredients to the wet mixture in 2 additions",
+      "Add the milk a little at a time until the mixture drops from a spoon",
+      "Divide the mixture between a muffin tin lined with 16 cupcake cases and bake for about 18 minutes, until a metal skewer inserted into the centre of a cake comes out clean",
+      "Remove the cupcakes from the tin and leave to cool on a wire rack",
+      "Meanwhile, make the frosting. Bring the milk and orange essence to the boil in a pan. Place the chocolate in a heatproof bowl and once the milk is boiling, pour over the chocolate and mix together until glossy. Leave to cool",
+      "Place the butter in a stand mixer and beat for 1 minute before adding the icing sugar and cocoa powder in 2 batches. Fold through the melted chocolate mixture",
+      "Transfer to a piping bag with a star nozzle",
+      "To finish the cupcakes, inject about 1 tsp of orange caramel into the middle of each cupcake, top with the frosting and decorate with the crystallised orange zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oranges",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": "large",
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ba7d68ad4d97b3036a5323eb55faf71a2b77f1d003290fc07ee82bb372c0e57",
+    "lineage_hash": "1b24a7cf50bd80a612fe47e9f48d9dfd604b032da8a1c92e5a44cc176e968ee0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-orange-cupcakes-recipe",
+    "fetchedAt": "2026-08-03T12:04:43.016Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-orange-cupcakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

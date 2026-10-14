@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Chinese Pickled Cucumbers (酱黄瓜)",
+    "time": "1 hr 5 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "58",
+      "carbohydrateContent": "13",
+      "fatContent": "1",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Rinse off the cucumbers and wipe them dry. Trim off both ends, and cut each cucumber into 4 equal sections. Cut each section into 6 equal-sized strips. Transfer to a bowl and add ½ teaspoon sugar and 1 teaspoon salt. Toss, cover, and refrigerate for 1 hour.",
+      "At the same time, make the sauce by combining 2 ½ teaspoons sugar, ½ teaspoon salt, 1 tablespoon black vinegar, 2 tablespoons light soy sauce, ¼ teaspoon dark soy sauce, 2 bay leaves, 4 cloves of garlic, and the chili peppers. Stir and make sure the sugar and salt are completed dissolved.",
+      "Once the cucumber has marinated for 1 hour in the fridge, dump out the liquid from the bowl they were sitting in. You should be able to get rid of at least ¼ cup of liquid. Now add the prepared sauce, and mix everything well. Cover and marinate in the refrigerator overnight. The cucumbers should be ready to serve the next morning with a hot bowl of congee!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English/hothouse Cucumbers",
+        "unit": null,
+        "notes": "best to use seedless cucumber for this",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "de-seeded, optional, dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "031921625efbfc173d974958dda41146be44609c5086f512286b1ccaceecad80",
+    "lineage_hash": "193aaa93310aed4894d9f51d4896b0b6064ae7ad6cc09a35da3432517d38bbed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-pickled-cucumbers/",
+    "fetchedAt": "2026-08-01T21:43:02.534Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-pickled-cucumbers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

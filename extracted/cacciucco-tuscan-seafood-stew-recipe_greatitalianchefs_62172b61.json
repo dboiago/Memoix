@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Cacciucco (Tuscan Seafood Stew)",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set a large pan over a medium heat and add 2 tbsp of olive oil with the chilli flakes and fennel. Add the onion, garlic and celery with a pinch of salt and continue to cook until soft but without colour",
+      "Remove the vegetables from the pan and turn up the heat. Add the remaining tbsp of oil with the octopus and squid. Cook until the seafood releases some liquid and it evaporates",
+      "Add the vegetables back to the pan along with the red wine and sprigs of sage, then simmer until reduced by half. Add the passata and 600ml of fish stock and simmer for 1 hour, stirring occasionally, until the octopus is tender",
+      "Add the rest of the fish stock to loosen the stew along with the pieces of fish. Do not stir too much as it will break up the fish. Add in the langoustines, place the lid on and simmer for 5 minutes",
+      "Remove the lid and place the mussels and clams into the stew. Cover with a lid and cook for a further 3–4 minutes or until the shells have opened. Discard any which haven't opened",
+      "Serve over toasted bread rubbed with the garlic cloves, and garnish with freshly chopped parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Octopus",
+        "unit": "small",
+        "notes": "cleaned and sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid",
+        "unit": null,
+        "notes": "small, cleaned and sliced into rings",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clams",
+        "unit": "g",
+        "notes": "cleaned",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mussels",
+        "unit": "g",
+        "notes": "cleaned",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Langoustines",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Monkfish Tail",
+        "unit": "g",
+        "notes": "cut into 6 pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gurnard",
+        "unit": "g",
+        "notes": "cut into 6 pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Snapper Fillet",
+        "unit": "g",
+        "notes": "cut into 6 pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": "toasted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe208a4f0afdee43545023323b78b936b595d1152e43fd18ac786c971cd65654",
+    "lineage_hash": "99986cd5e1fedefe25744d3505d3c16448ae10d58ecef0fdf8b1e89a7309d3e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cacciucco-recipe-tuscan-seafood-stew",
+    "fetchedAt": "2026-08-01T17:46:14.795Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cacciucco-recipe-tuscan-seafood-stew",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

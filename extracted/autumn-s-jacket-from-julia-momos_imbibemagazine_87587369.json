@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Autumn's Jacket",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Rosemary"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker tin, combine the shochu, creme de cassis, Cynar, Benedictine, simple syrup, and lemon juice with ice. Shake to chill, then strain into a rocks glass over ice. Float a burning match around the tip of the rosemary sprig, to warm and awaken the herb, but not burn it. This provides woodsy aromatics without the char. Garnish with the rosemary."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Barley Shochu",
+        "unit": "oz",
+        "notes": "Kintaro Honkaku suggested",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "267d741516284a84880d06b556c3370135237684153e43cb542ff80d869c9cd2",
+    "lineage_hash": "e5e5925a6faebe1c782f5ac144871c67b8c611cc110a042b9c6dff322d05cbcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumns-jacket-from-julia-momose/",
+    "fetchedAt": "2026-08-04T00:14:15.284Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumns-jacket-from-julia-momose/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

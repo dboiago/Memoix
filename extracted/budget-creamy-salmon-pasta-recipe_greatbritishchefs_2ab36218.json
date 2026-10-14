@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Budget Creamy Salmon Pasta",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, bring a pot of water to the boil in a medium saucepan, and add the pasta. Reduce to a simmer and allow to cook for 8-10 minutes",
+      "Meanwhile, peel and finely slice the onion, and very finely chop the chilli and parsley. Add to a frying pan with the lemon juice and oil, and cook on a medium heat to soften the onion",
+      "When the pasta is cooked, remove from the heat and drain. Quickly stir the yoghurt and fish paste into the onions to warm through",
+      "Tip the pasta into the pan, coat with the sauce, and serve. Garnish with extra parsley and lemon juice if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fish Paste",
+        "unit": "g",
+        "notes": "32p",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta",
+        "unit": "g",
+        "notes": "39p/500g, 11p",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "11p each, 6p",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": "45p/500g, 9p",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": "small",
+        "notes": "home grown",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "home grown",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "60p/250ml, 4p",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "605cbbe2f4800bd60d804e921685be84f62e818b25d9be2abd436fc9a857fc3b",
+    "lineage_hash": "02d5fc576f82a4b3ccf96acf7fde06c3c19281a7b52828a6ae9dc9cb338a7573"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/budget-creamy-salmon-pasta-chilli-lemon-recipe",
+    "fetchedAt": "2026-08-03T23:52:24.125Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/budget-creamy-salmon-pasta-chilli-lemon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

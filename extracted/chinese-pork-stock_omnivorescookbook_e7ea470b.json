@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Chinese Pork Stock",
+    "time": "4 hr 5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "61",
+      "carbohydrateContent": null,
+      "fatContent": "1.5",
+      "proteinContent": "11.1"
+    },
+    "directions": [
+      "Wash pork bones carefully with tap water.",
+      "Add bones, Shaoxing wine, and ginger into a large pot (or dutch oven). Add water until the pot is 4/5 full. Cover and bring to a boil. Stir the bones a few times during cooking to keep them from sticking to the bottom. Skim the foam from the surface until the soup turns clear, about 5 minutes.",
+      "(Optional) Turn off heat. Use a pair of chopsticks (or tongs) to transfer the bones to a plate. Place a strainer over a large bowl. Strain the broth and discard bones and other fragments. Rinse the pot to get rid of any extra foam. Transfer the broth and bone backs to the pot. (*see footnote 2)",
+      "Bring the broth to a boil again. Cover and cook over low heat (medium heat if using an electric stove) for 3.5 to 4 hours. The broth should continue boiling throughout the cooking. You don’t need to add water during the cooking, but remember to check the broth every 20 to 30 minutes. If the water runs too low and no longer covers the bones, add boiling water, 2 cups at a time. Don’t add any water during the final hour of cooking.",
+      "At the end of cooking, the broth should be reduced to about 1/3 (or less) of the original volume. Transfer the pork stock to a bowl to cool off.",
+      "(Optional) If the bones have any meat attached, you can separate the meat from the bones and eat it with a dipping sauce. To making the dipping sauce, combine 1 tablespoon light soy sauce with 1 teaspoon sugar. The meat will still be tender and moist and should be consumed as soon as possible. Or, you can store the meat and use it to cook fried rice later on.",
+      "(Optional) Leave the bones in the pot and cook another batch of stock. Add water until the pot is 1/2 full. Bring the water to a boil. Cover and cook for another 2 hours to get more stock. The broth should get quite concentrated again, but won’t be as thick as the first time. You can use this broth to cook soup directly, without adding water. To store, transfer the second batch of broth to a bowl to cool off. Discard ginger and pork bones.",
+      "You can use the stock to make soup and noodle broth and add it to stews and stir-fry dishes to enhance the flavor. If you use it to cook soup, don’t forget to add water to the stock to adjust it to taste. I used my first batch to cook four meals for two people, using the stock to cook exclusively soup.",
+      "Wait until the stock cools off completely. You can store it in an airtight container in the fridge for up to 2 weeks, or in the freezer for up to 2 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Leg Bones",
+        "unit": null,
+        "notes": "1 kilogram / 2 pounds, *see footnote 1, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "58018d01d9a7bce5a6cb7cc1811f67185a0e237e27db3972b78434229a9883dd",
+    "lineage_hash": "d89190a62eca102cc074cb05ced6f78ddfa4b6c47361a053718c80ca9130ba13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-pork-stock/",
+    "fetchedAt": "2026-08-01T20:01:18.289Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-pork-stock/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

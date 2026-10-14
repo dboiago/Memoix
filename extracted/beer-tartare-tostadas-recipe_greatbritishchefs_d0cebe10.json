@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Beer Tartare Tostadas",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, cure the egg yolks. Whisk together the soy sauce, sake and sugar and add to a bowl. Separate the yolks from the whites and add to the marinade, ensuring they are completely covered",
+      "Place in the fridge for 8 hours before serving to cure (the level of curing will depend on how long you leave the yolks – a longer cure will result in more solid yolks)",
+      "To make the tartare, mix together all of the ingredients (except the tortillas) in a bowl and check the seasoning",
+      "To serve, spoon the tartare onto tostadas, leaving a little well in the centre for the egg yolks. Carefully spoon the yolks into the centre of each tostada and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": "trimmed of sinew and fat and cut into 5mm cubes",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Chilli",
+        "unit": null,
+        "notes": "fresh, deseeded and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": "or use pre-made tostadas, deep-fried until crisp",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebd4500f06d56561e131bde1a997b0925d74ddfbc610ec0b3d6048c696c21e13",
+    "lineage_hash": "4b8893858dab19c6d975b68f1af9f3739d75e356f41e9619f2f0e29f710952c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-tartare-tostadas-recipe",
+    "fetchedAt": "2026-08-03T10:47:32.680Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-tartare-tostadas-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

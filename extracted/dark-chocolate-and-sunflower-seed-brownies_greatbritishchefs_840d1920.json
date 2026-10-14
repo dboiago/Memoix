@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate and Sunflower Seed Brownies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the pumpkin seeds on a baking tray for 5 minutes at 200˚C/gas mark 6, set aside to cool",
+      "Place 70g of the dark chocolate and the butter and melt together using a bain marie",
+      "Mix the egg and vanilla seeds together then add the granulated sugar. Add this mix to the melted butter and chocolate",
+      "Sift in the flour and salt and fold through gently until just combined. Add the remaining 70g of chocolate pieces and mix well. Pour into a 20cm square baking tray and top with the toasted pumpkin seeds",
+      "Reduce the oven down to 175˚C/gas mark 3 and bake the brownies for 25 minutes. Gently shake the tray and if the brownie still wobbles slightly in the middle, place back in the oven until just set",
+      "Remove from the oven and allow to cool completely before turning out and cutting into squares"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped into small pieces",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "255",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "36e2bedd51190667740e146530e81d438408dfe8ca291fe2ef42cd4332197e98",
+    "lineage_hash": "1156e92ed1025eec1ffbc9fd11dd5070b4112f147eab50e826bf3514201ac6df"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-chocolate-brownies-recipe",
+    "fetchedAt": "2026-08-03T20:38:40.667Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-chocolate-brownies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

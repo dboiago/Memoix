@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chinese Fried Chicken Wings",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "591",
+      "carbohydrateContent": "37",
+      "fatContent": "31",
+      "proteinContent": "39"
+    },
+    "directions": [
+      "Marinating Chicken Wings| Cut some cuts on both sides of chicken wings so the flavors can find patch to go inside quickly. Then add ginger and scallion. Grasp for around 1 or 2 minutes. This can help to remove the odd taste from chicken wings. Then add salt, ground pepper, light soy sauce, garlic powder and chili powder in.  Mix well, covered and marinate overnight or at least 3 hours.",
+      "Prepare the coating| Mix in 1 cup of cake flour or all purpose flour with cornstarch. Add a small pinch of salt, baking powder and garlic powder. Mix well.",
+      "Assemble|Re-mix the chicken wings for 1 minute until the sauce and juice is almost absorbed once again. Prepare clean water in a bowl. Dip the marinated chicken wings in mixed flour, use your hand to press the flour on the chicken wings. Repeat for 3-4 times.",
+      "Transfer to clean water, let it stay for 5 seconds.Take out and dip into the flour again. Use the hand to press the flour to make sure it is well attached to chicken wings.",
+      "Remove extra flour and create the crumbs| Transfer the chicken wings to a strainer and shift for a while to remove extra flour on surface. This also helps to create the little crumbs, which further contributes to the crispness. This is extremely important tip.",
+      "Deep-frying|Heat oil until 180 degree C and then fry for 4 to 5 minutes. Fry a small batch time because adding too many chicken wings at one time will cause the drop of the temperature immediately. Keep the fire to middle during the process. And check the surface at the last stage. Once it becomes golden brown, transfer out immediately.",
+      "Serve| It can be served with ketchup for children or other chili sauces."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into sections",
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "cut into shreds",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77309bd40b7167ec594b2daa0038d0014e49ad11c46654f318adecd2eca9de9e",
+    "lineage_hash": "ff25f68317dee67d55b7f263b36cb22ef04342f1f09a42d2a94e360f86fc13f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/fried-crispy-chicken-wings/",
+    "fetchedAt": "2026-08-02T07:36:05.824Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/fried-crispy-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

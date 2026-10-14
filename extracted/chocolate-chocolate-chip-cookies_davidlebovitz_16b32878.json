@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chocolate Chocolate-Chip Cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "50",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate and butter in a large bowl set over a pan of barely simmering water. Stir occasionally, until the chocolate is smooth. Remove from heat and set aside.",
+      "In a small bowl, whisk together the flour, baking powder and salt.",
+      "In a stand mixer fitted with the whip, beat the eggs, sugar, and vanilla on high speed until a well-defined ribbon is formed, about 5 minutes. On low speed, mix in the melted chocolate. Remove the bowl from the mixer and fold in the dry ingredients, then the chocolate chips and nuts using a spatula. (If the dough isn't stiff enough to scoop, cover and chill for about an hour.)",
+      "Preheat the oven to 350ºF (180ºC). Line two baking sheets with parchment paper or silicone baking mats.",
+      "Using a spring-loaded ice cream or cookie scoop (or two soup spoons), scoop up mounds of dough and place them evenly spaced apart on the baking sheet, leaving about 2-inches (5cm) of space between them. (The scoop I use is a #40, about 1 1/2-inches/4cm across. If using two spoons, they should be in mounds about the size of generously rounded tablespoons.)",
+      "Bake the cookies, rotating the baking sheets midway during baking, until they feel just slightly firm in the center and begin to lose their shine in the crevices, about 10 to 12 minutes. Remove the cookies from the oven and let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet",
+        "unit": "lb",
+        "notes": "alt: semisweet chocolate, 450g, coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "60g, salted or unsalted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "70g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "C",
+        "notes": "alt: semisweet chocolate, 320g, chopped, or chocolate chips",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "140g, pecans or almonds, toasted and coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b848f25984132135618786cfd1a628d5a8c4a0f0593252b129348b5510574c1",
+    "lineage_hash": "c6dae4fd8f1fcbef32470b598914f89ca4cef7037b946e19369f92de9a254ca8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-chocolate-chip-cookies-recipe/",
+    "fetchedAt": "2026-08-02T22:24:11.142Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-chocolate-chip-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

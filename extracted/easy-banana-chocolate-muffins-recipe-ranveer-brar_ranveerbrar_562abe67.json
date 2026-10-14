@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Banana Chocolate Muffins (केले का चॉकलेट मफिन्स)",
+    "time": "20-30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 180 degrees for 10 mins",
+      "In a large bowl, add bananas with the help of a fork or spoon and mash it properly.",
+      "Add eggs and whisk it well. Add milk, vanilla essence, melted butter and mix it well.",
+      "Add refined flour, cocoa powder, baking powder, caster sugar, and lightly fold the wet ingredients into dry ingredients until combined well.",
+      "Add dark chocolate and combine the batter thick and chunky. Do not over mix the batter.",
+      "Pour it in a muffin mould and Bake for about 15 â 20 minutes at 180 .",
+      "Place on a wire rack to cool for 5 minutes before removing muffins from the tin.",
+      "Dust icing sugar on top of it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "Melted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5949d19141d5f95da9429cda2c5223ed513506721944894be991d4dbd0840152",
+    "lineage_hash": "e71390d71447b259e2896665c8a036cec325783e123053978c856d0ca0a8877e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/banana-chocolate-muffins/",
+    "fetchedAt": "2026-08-02T12:47:41.606Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/banana-chocolate-muffins/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

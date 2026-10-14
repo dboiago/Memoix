@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Classic Mojito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the mint and simple syrup in a mixing glass. Squeeze in juice from both lime halves, add the rum and ice and stir to chill. Pour everything into a glass, top with soda water and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e96b469d84a8dec26fe726dee48a422ea0cbcbbb14abb82e905210e234a8507",
+    "lineage_hash": "01c89f2878cc9a121b56018ac9ed0965eb1aabfe356b7b65f55d4f06bc52c507"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/mojito-recipe/",
+    "fetchedAt": "2026-08-03T19:15:38.404Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/mojito-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

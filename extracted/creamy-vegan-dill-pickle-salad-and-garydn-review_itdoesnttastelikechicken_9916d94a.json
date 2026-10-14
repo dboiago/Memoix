@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Dill Pickle Salad",
+    "time": "25 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "244",
+      "carbohydrateContent": "40",
+      "fatContent": "4",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "If you have a high-powdered blender you can skip straight to step 2. If you have a regular blender, you may want to soften the cashews first to ensure they blend smoothly. To do this add the cashews to a small pot and cover with water. Bring to a boil and cook for about 10 minutes until the cashews are very tender. Drain and rinse with cold water before using.",
+      "Add the cashews, ¾ cup water, nutritional yeast, pickle, pickle brine, dill, onion powder, garlic powder, salt, and pepper to your blender. Blend until completely smooth, stopping to scrape the sides as needed. Store in an air-tight container in the fridge for up to a week. The dressing gets thicker as it cools, great for dipping! If needed you can always add more water to thin as desired.",
+      "To a large salad bowl or platter add the lettuce, beans, tomatoes, cucumber, onion, and pickle. I like to arrange mine in sections for a pretty display, but feel free to pile all the ingredients on top if you prefer. Dress with the creamy vegan dill pickle salad dressng to taste, and garnish with red pepper flakes if desired. Serve fresh."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "see step 1 for prep",
+        "amount": "1",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dill Pickle",
+        "unit": "large",
+        "notes": "or 2 baby dills",
+        "amount": "1",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dill Pickle Juice",
+        "unit": "Tbsp",
+        "notes": "the liquid in the pickle jar",
+        "amount": "2",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "tsp",
+        "notes": "or ½ teaspoon dried dill, fresh",
+        "amount": "2",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Creamy Dill Pickle Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Lettuce Greens",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "White Bean (lima Beans, Chickpeas, or White Kidney Beans)",
+        "unit": "can",
+        "notes": "19oz, drained and rinsed",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry",
+        "unit": "C",
+        "notes": "alt: grape tomatoes, sliced in half",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "A Red Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "¼",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Dill Pickle (or 2 Baby Dills)",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes for Garnish",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6a3a3de2203c59bf8ca917611826b9f542298bf446e84163c0ec145bc09922d",
+    "lineage_hash": "d143489e2dffb566539497f731fca5ab3ff9ec2e9f4fb618e8b4de06080124c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-creamy-dill-pickle-salad-gardyn-review/",
+    "fetchedAt": "2026-08-02T03:45:41.281Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-creamy-dill-pickle-salad-gardyn-review/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

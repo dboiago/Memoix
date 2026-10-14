@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Baked Yoghurt with Poached Rhubarb",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150°C/gas mark 2, and preheat a water bath to 65°C",
+      "Begin by making the baked yoghurt. Mix the condensed milk, cream, yoghurt and vanilla together and pass through a fine chinois",
+      "Arrange 10 ovenproof pots or ramekins inside a deep tray and fill each pot with approximately 70g of yoghurt mixture. Pour enough warm water into the tray to form a bain-marie reaching a quarter of the way up the pots, then cover the tray with foil and bake in the oven for 15 minutes until set",
+      "Meanwhile, prepare the poached rhubarb. In a small pan, gently heat the water and sugar together to form a syrup. Measure out 40ml and set aside, discarding any leftovers",
+      "Trim the ends from the rhubarb and slice the stalks into small chunks. Place the rhubarb in a vacuum bag, keeping the chunks flat to retain their shape, and add the orange juice, zest and reserved poaching syrup. Seal the bag and cook in a water bath for 10 minutes",
+      "For the orange confit, remove the skin from the orange and slice the peel into fine julienne. Blanch the peel in a pan of boiling water, immediately plunging into cold water to cool. Repeat this process 2 more times, refreshing the water each time",
+      "In a small pan, combine the sugar and water and heat gently to form a syrup. Separate the orange flesh into segments and add these to the pan with the peel strips, poaching lightly in the syrup until transluscent",
+      "Remove the baked yoghurt from the oven, discarding the foil. Allow the pots to cool a little before transferring to the fridge until ready to serve",
+      "Once cooked, remove the rhubarb from the water bath and leave to cool, chilling in ice water to cool quickly if desired. Remove the cooled rhubarb from the bag, reserving the poaching liquor for garnish",
+      "For the citrus Chantilly, whisk together the cream, sugar and orange to form soft peaks. Transfer to a piping bag and set aside, refrigerating until ready to serve",
+      "To serve, pour over a little of the rhubarb poaching liquor into each yoghurt pot and pipe dots of citrus Chantilly over the top. Divide the orange segments and rhubarb chunks between each pot, scattering over the julienne peel and a few sprigs of mint to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "290",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65acf7a22582aac7eba155e45bc5411a136d58699a6734407e3a1b9a519bcfa9",
+    "lineage_hash": "e5b7ffbbc274a769025dea23b4d33e11001bff43d1e48b31af92d25785977071"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-yoghurt-recipe",
+    "fetchedAt": "2026-08-03T12:43:06.282Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-yoghurt-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

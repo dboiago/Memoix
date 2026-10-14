@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Dulce de Leche Cheesecake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Spray a 9-inch (23cm) springform pan with nonstick spray, or butter it. Set the pan on a foil-lined baking sheet. (That will help you move the pan around easily, and catch any drips if your pan isn’t well-sealed.)",
+      "In a medium bowl, mix the graham cracker crumbs, 1 1/2 tablespoons sugar, melted butter and cinnamon, until the crumbs are evenly moistened. Press the buttered crumbs in the bottom of the springform pan and about one-third of the way up the sides. (Dampening your hands a bit will help the crumbs not stick to them. You can also use the bottom of a sturdy glass to press the crumbs in evenly.)",
+      "Bake the crust until it’s light brown, 10 to 12 minutes. Remove from oven.",
+      "In the bowl of a stand mixer fitted with the paddle attachment (or by hand, or in a food processor), beat the cream cheese and sugar until smooth. Add the eggs one at a time, stopping the mixer between each addition to scrape down the sides of the bowl. Mix in the 1 cup of dulce de leche, vanilla, and salt. Scrape the batter into the prepared pan and bake for about 55 minutes, until the cheesecake appears to be just set in the center. If you jiggle the pan, the outer part of the cake should not move but a small circle in the middle, about the side of a bracelet, should still quiver.",
+      "Remove the cheesecake from the oven. Set on a cooling rack. Run a knife around the outside of the cake to loosen it from the pan, then let the cheesecake cool completely.",
+      "When the cake has cooled to room temperature, warm the dulce de leche and cream or milk is a small saucepan over very low heat, stirring until smooth. Remove the outside of the springform pan from around the cake. Spread the dulce de leche topping over the cheesecake, pushing it right to the edge of the cake. Just before serving, sprinkle the cake with flaky sea salt, just enough so that everyone gets a flake or two in each bite."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "C",
+        "notes": "185g, from about 10 to 12 graham crackers",
+        "amount": "1½",
+        "section": "crust",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "85g, salted or unsalted,  melted",
+        "amount": "6",
+        "section": "crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "lb",
+        "notes": "910g",
+        "amount": "2",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Dulce De Leche",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "1",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Generousof Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Dulce De Leche",
+        "unit": "C",
+        "notes": "195g",
+        "amount": "⅔",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": "alt: whole milk",
+        "amount": "2",
+        "section": "glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": "such as fleur de sel or Maldon",
+        "amount": "0",
+        "section": "glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d1bc1aeb26c3c8d2c65e98d958e2131a7482dab3092b225334852e9ad9b4efe",
+    "lineage_hash": "b3a7b07e7f6e526af51be073d821e3d1a57b90b122d75212b23e302d7673ccb8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/dulce-de-leche-cheesecake-recipe/",
+    "fetchedAt": "2026-08-02T20:51:33.143Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/dulce-de-leche-cheesecake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

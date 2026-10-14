@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Baked Oats",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "412",
+      "carbohydrateContent": "77",
+      "fatContent": "9",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Preheat your oven to 350℉ (180℃).",
+      "Add the banana, oats, plant-based milk, maple syrup, baking soda, cinnamon, and vanilla extract to a blender and blend until completely smooth. (Makes about 1 cup of batter)",
+      "Pour into a 10oz/ 284g ramekin (or similar sized oven-proof baking dish). Sprinkle the chocolate chips on top. Bake for about 25 minutes until a toothpick inserted into the center comes out clean.",
+      "Allow to cool for 5 -10 minutes, add desired toppings if using and enjoy warm. These vegan baked oats are best enjoyed fresh. If you want to prep ahead you can prepare the uncooked batter and store it in the fridge in an air-tight container overnight, then bake fresh in the morning. Note that the batter may turn a darker brown due to the banana."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Banana",
+        "unit": "small",
+        "notes": "3oz/ 85g when peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "C",
+        "notes": "gluten-free if preferred, old fashioned, 1-minute oats, or instant",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or sweetener of choice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Chocolate Chips",
+        "unit": "Tbsp",
+        "notes": "add more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Optional Toppings: Peanut Butter",
+        "unit": null,
+        "notes": "maple syrup, chopped nuts, sprinkle of cinnamon, coconut flakes, fresh berries, banana slices, or ice cream!",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "feca672ee108e4c826a211f4959a935fff1f5fc88e68fb2ed9ab4c88385acd32",
+    "lineage_hash": "f3f249a7fa23ebb017d5da3bafc338ac843c1f458a18fef68828283ba2bf79cb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-baked-oatmeal/",
+    "fetchedAt": "2026-08-02T02:36:12.760Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-baked-oatmeal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

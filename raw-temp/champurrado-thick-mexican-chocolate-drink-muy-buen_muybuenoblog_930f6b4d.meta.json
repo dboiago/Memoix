@@ -1,0 +1,56 @@
+{
+  "url": "https://muybuenoblog.com/champurrado-mexican-hot-chocolate/",
+  "slug": "champurrado-thick-mexican-chocolate-drink-muy-buen_muybuenoblog_930f6b4d",
+  "title": "Champurrado (Thick Mexican Chocolate Drink) - Muy Bueno - Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T05:46:49.780Z",
+  "ldName": "Champurrado Recipe",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6",
+    "6 (4-ounce) servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Breakfast, Drinks",
+  "ldKeywords": "champurrado, chocolate atole, Mexican chocolate drink",
+  "ldIngredientsRaw": [
+    "3 cups of water",
+    "2  cinnamon sticks",
+    "1  anise star",
+    "¼ cup masa harina",
+    "2 cups milk",
+    "1  disk Mexican chocolate",
+    "3 ounces piloncillo"
+  ],
+  "ldInstructionsRaw": [
+    "In a large saucepan boil water with the two cinnamon sticks and anise star. Remove from the heat, cover and let the cinnamon sticks and anise star steep for about 1 hour. Remove the cinnamon sticks and anise star, return to low heat and slowly add the masa harina to the warm water, whisking until combined. Add milk, chocolate, and piloncillo.",
+    "Heat over medium heat just until boiling; reduce heat. Simmer, uncovered, about 10 minutes or until chocolate is completely melted and sugar is dissolved, whisking occasionally. Serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "133 kcal",
+    "sugarContent": "17 g",
+    "sodiumContent": "42 mg",
+    "fatContent": "4 g",
+    "saturatedFatContent": "2 g",
+    "carbohydrateContent": "22 g",
+    "fiberContent": "1 g",
+    "proteinContent": "3 g",
+    "cholesterolContent": "8 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 cups of water",
+    "▢ 2 cinnamon sticks",
+    "▢ 1 anise star",
+    "▢ ¼ cup masa harina",
+    "▢ 2 cups milk",
+    "▢ 1 disk Mexican chocolate, (Abuelita or Ibarra)",
+    "▢ 3 ounces piloncillo, chopped or 1/2 cup packed brown sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

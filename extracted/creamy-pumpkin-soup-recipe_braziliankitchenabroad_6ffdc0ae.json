@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Creamy Pumpkin Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "With your instant pot on sauté function, heat 2 tbsp of olive oil.",
+      "Add the onion and cook it until the onion is transparent, approx 3 mins.",
+      "Add the garlic and saute until golden, about 2 minutes.",
+      "Add the ginger, the cayenne, and the nutmeg and stir.",
+      "Turn off the instant pot, and add the sweet potatoes and stir.",
+      "Then, add the pumpkins, and stir.",
+      "Add the liquid and then the cinnamon, the cloves and the star anis (try to keep the whole spices on top so they are easier to scoop out before blending - alternatively, you can just make a little pouch with a cheese cloth with the spices inside, then just remove the little pouch all at once).",
+      "Close the instant pot, and set to 25 minutes on manual.",
+      "After 25 minutes, release the pressure manually, and carefully open the pot when you are able.",
+      "Remove the spices and discard them.",
+      "Using an immersion blender, blend the soup until smooth.",
+      "Season with salt and pepper.",
+      "Serve and garnish with coconut milk, olive oil, pumpkin seeds and dried cranberries of top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Peeled and Cut Into Cubes",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato",
+        "unit": "medium",
+        "notes": "peeled and cut into cubes about 3 cups",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil Plus More for Drizzling and Garnish",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Onion Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "or a tbsp of Brazilian Sofrito",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Fresh Ginger Peeled and Smashed",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "alt: about a tsp ground",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": "alt: about 1/4 tsp ground",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Generous Pinch of Nutmeg About 1/8 of a Tsp",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": "alt: more if you like it hot",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "water, or vegetable stock",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pumpkin Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aede7de1f6df641c56c17ad9e74b7b8d536661194b9c6c44c141f77b16e6ab05",
+    "lineage_hash": "e65e5eb50793b20d0a094dd67b1a92f5dfaf01802c67ae24001d4890c84cc123"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/pumpkin-soup/",
+    "fetchedAt": "2026-09-25T19:12:14.830Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/pumpkin-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Curry Beef and Aloo (Trinidad-Style)",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "548",
+      "carbohydrateContent": "12",
+      "fatContent": "41",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Rinse beef with lime or lemon juice, vinegar, and several changes of water. Drain well.",
+      "Season beef with green seasoning, salt, and black pepper. Marinate for a few minutes or overnight in the fridge.",
+      "In a heavy-bottomed pot, heat oil. Add onion and hot pepper and sauté until golden.",
+      "Stir in curry powder, extra green seasoning, and ½ cup water. Cook until the curry becomes fragrant and the oil separates.",
+      "Add seasoned beef and thyme. Stir well to coat.",
+      "When the sizzling stops, reduce heat to medium-low. Cover and let the beef cook in its own juices for about 30 minutes.",
+      "Once the beef is almost tender and liquid has evaporated, add the potatoes. Cook until it begins sticking slightly to the pot.",
+      "Add 1–2 cups of water and simmer for another 15–20 minutes until beef is fork-tender and potatoes are soft. Add more water if needed for tenderness.",
+      "Taste and adjust salt. Finish with chopped culantro and ground cumin. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cut Into Small Cubes",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning Extra",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Culantro Optional",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebd2100680befb6d1cfd852db599a3f1b958cea1951f7db88fddfd4ef4d41a8a",
+    "lineage_hash": "d0a33312ee1116c353d4062d5d3ba892be0f4eff144f1392593b58aaaeda0e82"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/08/curry-beef-and-aloo/",
+    "fetchedAt": "2026-09-25T23:29:04.254Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/08/curry-beef-and-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

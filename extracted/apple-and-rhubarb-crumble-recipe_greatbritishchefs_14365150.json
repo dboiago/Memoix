@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Apple and Rhubarb Crumble",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the crumble topping, rub together the sugar, ground almonds, flour and nutmeg in a large mixing bowl, ensuring any lumps of sugar are broken up",
+      "Gradually rub in the butter until the mix resembles breadcrumbs, then stir through the flaked almonds and hazelnuts",
+      "To make the filling, add the apples, cinnamon and half of the sugar to a wide pan and cook on a low-medium heat, stirring often",
+      "When the sugar has dissolved and the apples have lightly softened and caramelised, add the rhubarb and remaining sugar. Cook for a further 2 minutes, or until the rhubarb softens slightly. Spread the mix onto a tray to speed up the cooling",
+      "Divide the filling between individual heatproof serving dishes and scatter over the crumble mix to cover. Place in the oven for 10-15 minutes, until the top of the crumble has turned a nice golden-brown colour and the filling is bubbling up nicely",
+      "Meanwhile, make the custard. Add the cream, milk and vanilla pod to a large pan and bring to the boil",
+      "Whisk the egg yolks and sugar together in a heatproof mixing bowl until pale and smooth. Add the hot cream to the egg mixture, whisking to combine, then return to the pan and bring to 82°C, stirring continuously until smooth and thickened",
+      "Pass the custard through a sieve into a serving jug, and serve alongside the hot crumble"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "nibbed",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apple",
+        "unit": "g",
+        "notes": "peeled, cored and diced",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a657d837583569fea96cc28165ae7539697a9abfec58828c4d49e0eb43f703d",
+    "lineage_hash": "7de6124d6e50d2674cb2ede76074c2f547a7441cea9436e99a6e276c02f8e3dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-rhubarb-crumble-recipe",
+    "fetchedAt": "2026-08-03T16:26:53.521Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-rhubarb-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

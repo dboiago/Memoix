@@ -1,0 +1,64 @@
+{
+  "url": "https://www.cookwithmanali.com/cilantro-yogurt-chutney/",
+  "slug": "cilantro-chutney_cookwithmanali_47b3290b",
+  "title": "Cilantro Chutney",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T06:10:17.622Z",
+  "ldName": "Cilantro Chutney",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cup"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Sides",
+  "ldKeywords": "cilantro chutney",
+  "ldIngredientsRaw": [
+    "2 small bunches cilantro (50-60 grams each, hard stems removed)",
+    "1  green chili (or to taste)",
+    "1/2 inch ginger",
+    "1/4 teaspoon roasted cumin powder",
+    "1/8 teaspoon chaat masala (optional)",
+    "pinch  black pepper",
+    "1/2 teaspoon salt (or to taste)",
+    "2 teaspoons lemon juice",
+    "1/2  teaspoon sugar",
+    "1/4 cup yogurt (plain milk yogurt or plain almond milk yogurt )"
+  ],
+  "ldInstructionsRaw": [
+    "Remove all the hard stems/stalks from the cilantro, the tender ones are okay to have and then wash the cilantro.",
+    "To a blender add the cilantro leaves, green chili, ginger, cumin powder, chaat masala, black pepper and salt. Also add in lemon juice and sugar.Add yogurt to the blender. I have used vegan yogurt here in this recipe (plain almond milk yogurt). You can also use plain milk yogurt.",
+    "Blend it all together to a smooth consistency. If your chutney has a runny consistency, you may add a teaspoon of sev or peanuts to the chutney to make it thicker. Add 1 teaspoon at a time and then go from there.",
+    "Keep this cilantro chutney refrigerated and use it as needed. You can also freeze the chutney."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "65 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "2 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "7 mg",
+    "sodiumContent": "180 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 small bunches cilantro, 50-60 grams each, hard stems removed",
+    "▢ 1 green chili, or to taste",
+    "▢ 1/2 inch ginger",
+    "▢ 1/4 teaspoon roasted cumin powder",
+    "▢ 1/8 teaspoon chaat masala, optional",
+    "▢ pinch black pepper",
+    "▢ 1/2 teaspoon salt, or to taste",
+    "▢ 2 teaspoons lemon juice",
+    "▢ 1/2  teaspoon sugar",
+    "▢ 1/4 cup yogurt, plain milk yogurt or plain almond milk yogurt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

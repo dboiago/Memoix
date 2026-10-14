@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Cheddar Shortbread Tart",
+    "time": "1 hr 55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the crust, use a food processor to pulse the flour, sugar and pepper to combine, then add the butter and pulse in until no large pieces of butter are visible. Add the grated Cheddar and blend until the dough comes together in a ball.",
+      "Immediately turn the dough out onto a lightly floured work surface and roll out into a circle just under ½ inch (13 mm) thick. Line a lightly floured 9-inch (23 cm) removable-bottom fluted tart pan and press in, trimming the edges. Chill this until firm, about 2 hours.",
+      "Preheat the oven to 350 ºF (180 ºC). Dock the shortbread with a fork and bake until golden brown, about 30 minutes. Cool the shell before filling. Leave the oven at 350 ºF (180 ºC).",
+      "For the filling, melt the butter in a sauté pan over medium heat and add the onions and thyme. Sauté the onions until they are caramelized, about 20 minutes. Add the balsamic vinegar and stir until the liquid has evaporated. Season lightly and remove the pan from the heat.",
+      "In a mixing bowl, beat the cream cheese by hand to soften. Add the egg yolk and beat in and then beat in the whole egg. Stir in the Cheddar cheese and parsley and then stir in the caramelized onions. Scrape this into the cooled crust and bake for 35-40 minutes until the outside edge of the cheesecake just begins to soufflé a touch. Allow the cheesecake to sit for 10 minutes before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": "Cheddar Shortbread Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheddar Shortbread Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cheddar Shortbread Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cold, cut into pieces",
+        "amount": "½",
+        "section": "Cheddar Shortbread Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "oz",
+        "notes": "grated old or extra old",
+        "amount": "8",
+        "section": "Cheddar Shortbread Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "medium, sliced",
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "chopped fresh",
+        "amount": "2",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Pkg Cream Cheese",
+        "unit": null,
+        "notes": "250 g, softened",
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "oz",
+        "notes": "grated old or extra old",
+        "amount": "6",
+        "section": "Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Italian Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Cheese Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5b86d69546619b741f2bab337ca968e5e1f0e63c0082fb9c2b9226ff0ae05d9",
+    "lineage_hash": "5109d2f88bfa38f2215e278e07fd68e48b00a01625b9bed2137711ee12d351dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cheddar-shortbread-tart/",
+    "fetchedAt": "2026-08-01T18:20:39.949Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cheddar-shortbread-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

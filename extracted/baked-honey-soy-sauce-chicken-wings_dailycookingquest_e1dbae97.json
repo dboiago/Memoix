@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Baked Honey Soy Sauce Chicken Wings",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sprinkle chicken wings with salt and pepper, then transfer to a ziplock plastic.",
+      "Add honey, soy sauce, and sake into the ziplock plastic. Close the ziplock, and gently shake so the chicken wings are all coated with the sauce. Let the chicken marinate for 2 hours, or overnight in the fridge.",
+      "Remove the marinated wings from the fridge and return to room temperature prior to baking (I usually do this 1 hour before baking time).",
+      "Preheat oven to 425 Fahrenheit (218 Celcius). Line a baking tray with aluminum foil.",
+      "Transfer the chicken wings to the lined tray, and pour all the marinating sauce over the chicken wings. Bake for 30 minutes until cooked through and the surface is slightly charred. Baste the chicken wings with the sauce while baking for a couple of times. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": null,
+        "notes": "if you are out of sake, you can also use Chinese rice wine, or dry sherry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b484797349b18f747b7c669bfb1b5f6abed72e96f6044eb5fda8529f4290c7f2",
+    "lineage_hash": "760f6633c548230ecb93ff62ac8f8cd4edb306a5f9a12bbb2ed2b05df8f0eeef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/baked-honey-soy-sauce-chicken-wings.html",
+    "fetchedAt": "2026-08-02T05:59:28.562Z"
+  },
+  "rawSource": "https://dailycookingquest.com/baked-honey-soy-sauce-chicken-wings.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Duraznos al Grill con Requeson (Grilled Peaches with Ricotta Cheese)",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "296",
+      "carbohydrateContent": "51",
+      "fatContent": "8",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Oil the grill grate and set flame to med-high. When the grill is nice and hot, grill each half peach for 3 to 5 minutes per side.",
+      "Place peaches on a plate with cut side facing up.",
+      "Place a dollop of approximately 2 tablespoons of fresh ricotta cheese or requesón in the center of each peach half and drizzle with honey.",
+      "Sprinkle with slivered almonds. Garnish with a sprig of mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Peaches",
+        "unit": null,
+        "notes": "peeled, halved with pits removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta Cheese",
+        "unit": "C",
+        "notes": "alt: requesón, fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Slivers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "854d869f50711bb9c93d0a849480afd650e568560034858d2fcbeeecba414981",
+    "lineage_hash": "bc0e54699fd54161e5613b5b79901504de0572e3f35cd4010590817aa544e322"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/duraznos-al-grill-con-requeson-grilled-peaches-with-ricotta-cheese/",
+    "fetchedAt": "2026-08-01T19:43:26.081Z"
+  },
+  "rawSource": "https://muybuenoblog.com/duraznos-al-grill-con-requeson-grilled-peaches-with-ricotta-cheese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

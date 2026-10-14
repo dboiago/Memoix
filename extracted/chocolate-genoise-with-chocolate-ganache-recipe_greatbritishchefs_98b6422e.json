@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Chocolate Genoise with Chocolate Ganache",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start with the dark chocolate ganache as this will need time to set. Place the cream, butter and honey in a pan over a medium heat, stir together and heat to 75°C",
+      "Gently whisk in the melted chocolate until emulsified then remove from the heat. Continue to whisk gently until the mixture has cooled to about 35°C. Transfer to a bowl or container, cover and place in the fridge to set for a few hours",
+      "Meanwhile, make the genoise. Place a bowl over a pan of barely simmering water (making sure that the bowl doesn't touch the water) and add the butter and bitter chocolate to the bowl. Allow to gently melt together, stirring occasionally",
+      "Preheat the oven to 160°C/gas mark 3. Line a 20x30cm baking tin with baking or silicone paper",
+      "Using a stand mixer or electric whisk, beat the eggs with the sugar and golden syrup to create thick sabayon – this will take about 12 minutes. In a separate bowl, sift together the cocoa powder and flour, then sift again to aerate",
+      "Fold the sifted cocoa flour gently through the sabayon. When half-mixed, add the melted butter and chocolate and continue folding gently until just combined",
+      "Pour the mixture into the lined tin and bake for 10–12 minutes until well risen and firm to the touch. Invert the cake on to a cooling rack and carefully remove the lining paper. Cover the warm cake with a clean cloth or tea towel and leave to cool",
+      "To make the syrup, combine the water, cocoa and sugar in a small pan. Scrape the seeds from the vanilla pod into the pan then place over a medium heat. Bring to the boil and simmer until it becomes syrupy. Strain through a fine sieve and allow to cool",
+      "For the caramelised pears, melt the butter in a frying pan over a high heat and add the pear pieces. Sprinkle over the sugar and toss to coat the pears evenly in the butter and sugar. Cook until the pears are well caramelised and golden",
+      "Stir in the cider then continue to cook until the liquid has reduced to a sticky caramel (the pan should be quite dry). Transfer the pear pieces to a plate and allow to cool slightly before serving",
+      "Remove the ganache from the fridge and allow to soften slightly. Trim the edges of the sponge and slice a thin layer away from the top and bottom to reveal the airy sponge. Cut into 24 equal pieces",
+      "Drizzle a little syrup in a line across each serving plate and top with 3 sponge pieces. Add 2 quenelles of the ganache and 4 pieces of pear to each, then finish with an extra drizzle of the syrup over the sponges to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mineral Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Williams Pears",
+        "unit": null,
+        "notes": "peeled, quartered and cored – each quarter cut into 2",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "ml",
+        "notes": "or apple juice",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aacc8ccdd962d9fc8f2e1014cd6a96bb45c226dd6f70b606b590b09a1b8e0169",
+    "lineage_hash": "7e7cf5f491d5fcd5634cc8e0e97c17a33c9bc600339443e5c632ebb49d793284"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-genoise-dark-chocolate-ganache-recipe",
+    "fetchedAt": "2026-08-03T13:25:52.184Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-genoise-dark-chocolate-ganache-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

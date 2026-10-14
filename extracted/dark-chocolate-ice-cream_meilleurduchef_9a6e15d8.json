@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Dark Chocolate Ice Cream recipe, make sure you have organised all the necessary ingredients.",
+      "In a mixing bowl, place 4 grams of ice cream stabilizer...",
+      "... and combine with 40 grams of sugar (10 times its volume).",
+      "Combine with a whisk.",
+      "In a deep saucepan, pour the milk...",
+      "... the milk powder...",
+      "... and the butter.",
+      "Place the pan on very low heat.",
+      "Mix with a Bamix hand blender at high speed...",
+      "... and bring the temperature up to 30°C.",
+      "Add the remaining castor sugar...",
+      "... invert sugar...",
+      "... and the egg yolks.",
+      "Continue heating gently...",
+      "... until the preparation reaches 45°C.",
+      "Add the chocolate...",
+      "... and bring the temperature up to 50°C.",
+      "Add the sugar and stabilizer mix...",
+      "... and bring the preparation to 85°C for 2 minutes, making sure not exceed this temperature. The use of a laser thermometer is recommended for this operation.",
+      "Mix constantly during two minutes to prevent the temperature from increasing further (from the heat stored in the pan). After two minutes, the preparation should be down to 83°C.",
+      "Transfer the preparation into a cold bowl and pass through a fine sieve.",
+      "Combine well with the mixer...",
+      "... for the preparation to cool down.",
+      "Cooling process:  Place a cold bowl into a larger container filled with water and ice and transfer the preparation. It needs to cool down to 4°C quickly at this stage. Combine regularly with the mixer...",
+      "... and check the temperature...",
+      "... until it gets down to 4°C.",
+      "Maturing process:  Pour the preparation into a deep recipient with pouring spout.",
+      "Cover with cling film and refrigerate for 24 hours. At this stage, store the ice cream maker bowl and paddle in the freezer.",
+      "The next day, mix with the hand blender...",
+      "... to get rid of air bubbles.",
+      "Fill the ice cream maker bowl with the chocolate preparation up to 2/3.",
+      "Place the bowl in the machine.",
+      "Churning process:  Churn for 45 minutes.",
+      "According to the type of ice cream maker you're using, this could take less or more time.",
+      "Freezing:  When churning is over, remove the ice cream immediately with a spatula.",
+      "Prefer the use of an ice cream machine with removable bowl to facilitate this operation.",
+      "Serving:  Even though it's just out of the freezer, the consistency of this ice cream is very smooth and easy to scoop.",
+      "Dip an ice cream scoop in a bowl filled with hot water.",
+      "Shape the chocolate ice cream into a scoop. This should be really easy thanks to a perfect texture.",
+      "Serve into an ice cream bowl and enjoy immediately!\n Note:  This ice cream should be served between -14 and -16°C.\n Storage:  The ice cream will keep for one year in a freezer at -18°C."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Saint Domingue Dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "639",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": "0% fat",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "70 + 40",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Invert Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stab 2000 Ice Cream Stabilizer",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98f49f8fe58ca246bd8b206ce5dcedcc2fa8f14b828dc3b9a04ce1229b677877",
+    "lineage_hash": "510616bc671e449bbee99541a5ae69d9e64e69fc49c709458af206ae693a4c7c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/dark-chocolate-ice-cream.html",
+    "fetchedAt": "2026-08-02T10:42:54.747Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/dark-chocolate-ice-cream.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

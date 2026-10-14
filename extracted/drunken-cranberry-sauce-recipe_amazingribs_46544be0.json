@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Drunken Cranberry Sauce",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "212",
+      "carbohydrateContent": "53",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cook. In a saucepan stir together the port, balsamic vinegar, cranberries, shallot or onion, and thyme. Simmer until most of the liquid has evaporated, about 1 hour. Don't dry it out. This process cooks out most of the alcohol, but there may still be a little left, but nowhere near enough to get anyone tipsy.",
+      "Serve. Just before serving, stir in the butter, salt and pepper to taste, and the orange zest. Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottle Inexpensive American Port",
+        "unit": null,
+        "notes": "750 ml bottle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inexpensive Balsamic Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "Tbsp",
+        "notes": "alt: onion, minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Thyme Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Medium Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ee93835b5135fd03da1153e16316e9eb25962e1ad90f990678daaf6d042e0fa",
+    "lineage_hash": "4ee3a3fb956d314105144269beb4d4d842ac592e3f01b810777ee66f0a11805f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/other-fun-food-recipes/drunken-cranberry-sauce-recipe/",
+    "fetchedAt": "2026-08-02T03:14:44.329Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/other-fun-food-recipes/drunken-cranberry-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

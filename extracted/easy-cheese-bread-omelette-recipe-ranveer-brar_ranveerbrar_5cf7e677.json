@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Cheese Bread Omelette (पनीर ब्रेड आमलेट)",
+    "time": "20-25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, Break eggs, add onion, green chilli, black pepper powder, turmeric powder, coriander powder, salt to taste.",
+      "Whisk everything with a fork for a few seconds. Set aside.",
+      "In a pan, heat oil and butter.",
+      "Add in the omelette mixture to the pan. Swirl the pan so the omelette mixture evenly spreads and covers the width of the pan.",
+      "Add two bread slices on top of the omelette.",
+      "Immediately flip the bread. A little bit of the egg mixture would stick to the bread.",
+      "Cook for 30 seconds on a medium flame. Now, flip the omelette along with the bread slices. Fold the omelette on the bread from all the sides.",
+      "Now place cheese slices on any one bread slice and then place the other bread slice on it to make a sandwich.",
+      "Cook the sides and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83ae9ad7ad62c29b7608ea8f2b7bb667c6de457a6e8f32795a6deccad51b91aa",
+    "lineage_hash": "46ccab15bb7c5e94c08c32190f0f88fbf7b73bea40e72e4066d77298f52ed48c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-bread-omelette/",
+    "fetchedAt": "2026-08-02T06:19:32.078Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-bread-omelette/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

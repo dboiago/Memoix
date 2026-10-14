@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Daegu Tang (Mild Cod Fish Stew)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean the fish and clams (or shrimp).",
+      "Clean the vegetables. Cut the radish into thin bite sizes. Roughly slice the scallions and chili pepper. Cut the tofu into 1/2-inch thick bite size pieces.",
+      "Add 4 cups of water (or anchovy broth) to a medium size pot along with the radish and dasima (dried kelp). Bring it to a boil over high heat. Cook until the radish turns soft, about 5 minutes. Remove the dried kelp. Season with salt and pepper to taste.",
+      "Drop in the fish, clams and tofu. Add the garlic. When it comes to a boil again, reduce the heat to medium high. Cook until the clams are open and the fish is almost cooked through, 4 to 5 minutes. (Do not overcook. The fish will continue to cook in the boiling hot broth while being served and eaten.) Adjust the seasoning if needed.",
+      "Add the enoki mushrooms, if using, scallions, and chili pepper. Continue to boil for a minute, and add the watercress or crown daisy leaves. Turn the heat off. Serve piping hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fish (daegu, 대구) Preferably Steak Cuts",
+        "unit": "lb",
+        "notes": "but fillets are okay too",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Neck Clams",
+        "unit": null,
+        "notes": "alt: shrimp",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Radish",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dasima (dried Kelp, Kombu)",
+        "unit": "pc",
+        "notes": "about 3-inch square",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tofu",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or 2 Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red or Green Chili Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enoki Mushrooms Optional",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Handful of Watercress",
+        "unit": null,
+        "notes": "crown daisy leaves (ssukgat) or minari.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper (a Little Bit of Saeujeot (salted Shrimp or Fish Sauce Is Great As an Additional Seasoning.)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "986276695b0547821f46c37b650eb184eccd4109ab015ec36fe29672de25a11a",
+    "lineage_hash": "f3f91ea0fcb44e6066659095127b8e828fe1decbfccb0c8df9d87dfdec6010dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/daegu-tangjiri-mild-cod-fish-stew/",
+    "fetchedAt": "2026-08-01T23:14:55.362Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/daegu-tangjiri-mild-cod-fish-stew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

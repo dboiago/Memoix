@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Black Manhattan",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Cocktail Cherry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir well with ice, strain into a chilled cocktail glass, and garnish with a cocktail cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Averna",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regans’ Orange Bitters No. 6",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "57bad78e43cde656a7a100323649c9a13ad929fbf107d365ce39a0a039377401",
+    "lineage_hash": "ceeb9c6e87cb46e3a068e01eeeb70dd3b58632f608b5e1100b88ba6460c6d325"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-manhattan-recipe/",
+    "fetchedAt": "2026-08-03T18:04:02.563Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-manhattan-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

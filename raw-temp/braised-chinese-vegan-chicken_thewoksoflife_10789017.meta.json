@@ -1,0 +1,60 @@
+{
+  "url": "https://thewoksoflife.com/vegan-chicken-braised-chinese/",
+  "slug": "braised-chinese-vegan-chicken_thewoksoflife_10789017",
+  "title": "Braised Chinese Vegan Chicken",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T19:59:16.386Z",
+  "ldName": "Braised Chinese Vegan Chicken",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Vegan",
+  "ldKeywords": "chinese vegan chicken",
+  "ldIngredientsRaw": [
+    "3 tablespoons vegetable oil ((plus 1 tablespoon, divided))",
+    "500 g vegan chicken ((sliced 1/4-inch thick))",
+    "12 g rock sugar ((or 1 tablespoon granulated sugar))",
+    "3 slices ginger",
+    "3  scallions ((chopped with the white and green parts separated))",
+    "1 tablespoon Shaoxing wine",
+    "2 ½ tablespoons light soy sauce",
+    "½ tablespoon dark soy sauce",
+    "1 ½ cups water"
+  ],
+  "ldInstructionsRaw": [
+    "Place a wok over high heat until it starts to smoke slightly. Add 3 tablespoons of oil to coat the wok. Add the sliced vegan chicken, and arrange it in a single layer. If you have a smaller wok, you can do this step in two batches, adding more oil if needed (this is also a good time to use your non-stick pan if you have one, which will require less oil). Turn the heat down to medium. Lightly brown both sides of the vegan chicken. Remove from the wok and set aside.",
+    "Add 1 tablespoon of oil to the wok along with the sugar, using low heat to slowly melt the sugar until it completely dissolves. Next, add in the ginger and white parts of the scallion and cook for a minute. Add in Shaoxing wine, light soy sauce, dark soy sauce, and the water. Bring the mixture to a boil, cover the lid, and simmer over low heat for 5-8 minutes. You don’t want too much of the liquid to cook off, so check it every so often.",
+    "Now add the pan-fried vegan chicken slices to the sauce. Gently mix together, cover, and simmer for 5 minutes. Uncover, add the green parts of the scallions, stir gently, and serve.",
+    "This dish is tasty when hot, at room temperature, or cold right out of the refrigerator! I made this recipe a couple of times to test it, and I almost ate a whole plate by myself. I hope you fall in love with it too!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "399 kcal",
+    "carbohydrateContent": "9 g",
+    "proteinContent": "32 g",
+    "fatContent": "27 g",
+    "saturatedFatContent": "11 g",
+    "sodiumContent": "954 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 tablespoons vegetable oil (plus 1 tablespoon, divided)",
+    "▢ 500 g vegan chicken (sliced 1/4-inch thick)",
+    "▢ 12 g rock sugar (or 1 tablespoon granulated sugar)",
+    "▢ 3 slices ginger",
+    "▢ 3 scallions (chopped with the white and green parts separated)",
+    "▢ 1 tablespoon Shaoxing wine",
+    "▢ 2 ½ tablespoons light soy sauce",
+    "▢ ½ tablespoon dark soy sauce",
+    "▢ 1 ½ cups water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

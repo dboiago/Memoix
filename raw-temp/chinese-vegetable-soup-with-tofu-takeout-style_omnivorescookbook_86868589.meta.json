@@ -1,0 +1,70 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-vegetable-soup/",
+  "slug": "chinese-vegetable-soup-with-tofu-takeout-style_omnivorescookbook_86868589",
+  "title": "Chinese Vegetable Soup with Tofu - Takeout Style",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:17:00.689Z",
+  "ldName": "Chinese Vegetable Soup with Tofu - Takeout Style",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "takeout",
+  "ldIngredientsRaw": [
+    "1 teaspoon peanut oil ((or vegetable oil))",
+    "4  green onions (, cut into 2” (5 cm) piece)",
+    "1 ” (5 cm) ginger (, sliced)",
+    "4 cups water",
+    "1 tablespoon mushroom powder",
+    "3/4 teaspoon salt ((or to taste))",
+    "1/2 teaspoon sugar",
+    "1/8 teaspoon white pepper",
+    "1/2  block soft tofu (, diced)",
+    "2  stalks celery (, sliced on the bias)",
+    "1 cup (4 oz. / 125 g) mushrooms (, sliced)",
+    "1  medium carrot (, sliced)",
+    "1/2  head broccoli (, cut into medium florets)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a medium-sized pot over medium heat until hot. Add the green onions and ginger. Cook and stir until fragrant and beginning to brown, about 2 minutes.",
+    "Pour in the water and bring to a low boil. Boil for 5 minutes. Remove and discard the green onion and ginger.",
+    "Add the mushroom powder, salt, sugar, and white pepper. Stir to mix well.",
+    "Add the tofu, celery, and mushrooms. Once bringing back to a boil, cook for 3 minutes. Add the carrots and broccoli and boil for another 2 minutes. Taste the broth and adjust the seasoning to taste by adding more salt or mushroom powder if needed.",
+    "Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "54 kcal",
+    "carbohydrateContent": "6.1 g",
+    "proteinContent": "3.4 g",
+    "fatContent": "2.4 g",
+    "saturatedFatContent": "0.4 g",
+    "sodiumContent": "472 mg",
+    "fiberContent": "1.5 g",
+    "sugarContent": "2.4 g"
+  },
+  "htmlIngredientLines": [
+    "1 teaspoon peanut oil (or vegetable oil)",
+    "4 green onions , cut into 2” (5 cm) piece",
+    "1 ” (5 cm) ginger , sliced",
+    "4 cups water",
+    "1 tablespoon mushroom powder",
+    "3/4 teaspoon salt (or to taste)",
+    "1/2 teaspoon sugar",
+    "1/8 teaspoon white pepper",
+    "1/2 block soft tofu , diced",
+    "2 stalks celery , sliced on the bias",
+    "1 cup (4 oz. / 125 g) mushrooms , sliced",
+    "1 medium carrot , sliced",
+    "1/2 head broccoli , cut into medium florets"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

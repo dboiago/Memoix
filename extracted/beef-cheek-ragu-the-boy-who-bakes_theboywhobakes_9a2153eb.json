@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Beef Cheek Ragu",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Get out your biggest pan, this makes a lot!",
+      "Pat the beef cheeks dry with some kitchen paper and season well with salt.",
+      "Heat 3 tbsp of the oil in a large saucepan (a big cast iron casserole is perfect for this) over medium/high heat and brown the beef cheeks until deep brown all over. Don’t skimp on this step as the browning really helps to give the sauce a deep meaty flavour. Remove the cheeks and set aside on a plate for the moment.",
+      "Reduce the heat to low and add the remaining oil to the pan, tipping in the onion, carrots and celery, sweating down for 10-15 minutes or until soft.",
+      "Add the garlic, rosemary, thyme and bay leaves and cook for a couple minutes.",
+      "Add the tomato puree and cook for a minute or two.",
+      "Pour in the glass of red wine and cook until reduced by two thirds.",
+      "At this point simply add the beef cheeks back into the pan along with the beef stock and the tomatoes. Bring the pan to a boil then reduce the heat to a gentle simmer and cook for 3-4 hours, stirring very occasionally until the meat is super tender and falling apart.",
+      "Using a couple forks to shred the meat, it should take almost no effort and and simply fall apart.",
+      "Depending on the consistency of the sauce continue to cook a little longer until thick and reduced.",
+      "To serve coat some pappardelle in a little of the sauce and finish with a sprinkling of fresh parsley and parmesan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheeks",
+        "unit": "large",
+        "notes": "about 1.2kg, trimmed of any excess fat or gristle",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks Celery",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "X400g Tin Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d17a3247300437257c4395e61f3900d288bf0fce452101d29d17120f4a58f7cf",
+    "lineage_hash": "f23f52505bee0be602454ad1be90202405565110c959c3fb6fd9dfd1fb5c4043"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2017/3/17/beef-cheek-ragu",
+    "fetchedAt": "2026-08-01T21:16:10.046Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2017/3/17/beef-cheek-ragu",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

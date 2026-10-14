@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Curry Chicken Noodles",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the chicken in a bowl. Add the curry powder, all-purpose seasoning, ginger, garlic, Scotch bonnet, salt and black pepper. Mix well until all the chicken is coated.",
+      "Heat the oil in a large frying pan or wok over a medium-high heat. Add the chicken and cook for 5–7 minutes, turning regularly, until browned on the outside.",
+      "Add the sliced onion, red pepper and spring onions. Stir everything together and cook for another 3 minutes, until the vegetables begin to soften.",
+      "Pour in the chicken stock and mix well. Reduce the heat and leave it to simmer gently for around 5 minutes, until the chicken is cooked through and the sauce starts to thicken.",
+      "While the chicken is cooking, prepare the noodles following the instructions on the packet. Drain them well once cooked.",
+      "Add the noodles to the curry chicken pan. Toss everything together until the noodles are fully coated in the curry sauce.",
+      "Divide between four bowls and finish with fresh coriander"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "g",
+        "notes": "boneless, cut into pieces",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Noodles / Rice Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "fresh, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "becaac7f08e85121b94c369443c6c8fba3d2d0c74a36c755117af5b7c0c9ff01",
+    "lineage_hash": "4e5e904c339b7aac00b30d63ee40fb978aa475395f1f70154d50adf12b4046e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/curry-chicken-noodles/",
+    "fetchedAt": "2026-09-30T17:46:54.752Z"
+  },
+  "rawSource": "https://originalflava.com/meals/curry-chicken-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

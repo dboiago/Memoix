@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Blueberry Gin",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "500",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the berries and place in a sterilsed jar",
+      "Use a masher or the end of a rolling pin to lightly crush the blueberries – just enough to split the skins a little",
+      "Add the sugar and gin, close the jar and give it a good shake",
+      "Leave to steep for 2–3 days, giving the jar a shake each day",
+      "Strain the berries through a muslin cloth and bottle the gin. Best enjoyed within 1 month"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3556b06829c8a375be87f64339b6f8ad03aaf47de23ca709f98bec90f36c572",
+    "lineage_hash": "569b08a16be27d10aa5ff88a9640d102ee5595ba6dfd937c2071b01afd4007c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-gin-recipe",
+    "fetchedAt": "2026-08-03T07:17:50.098Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-gin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

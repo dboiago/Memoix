@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Barbecued Baby Corn with Sour Cream, Bacon and Chives",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the leek oils, roughly chop the leek greens and burn the white part thoroughly with a blowtorch or over the hob",
+      "Put the burnt leek in a Thermomix (or a blender if you don’t have one). Pour in half the oil, then blitz at 70°C for 7 minutes (if you’re using a regular blender, after blending for 7 minutes transfer to a pan and bring to 70°C)",
+      "Strain the oil through a chinois or fine sieve into a bowl set over ice. Keep in the fridge until needed",
+      "Make the green leek oil using the same method. You’ll only need 20ml of each oil for this recipe, but keep any leftovers in the fridge for up to 2 days or in the freezer for up to a month",
+      "Put the water and salt into a large saucepan and bring to the boil",
+      "Strip any tougher outer layers of the corn’s husk away to reveal the greener, fresher leaves that tightly sit around the corn cobs within (reserve the husks you peel away). Make an incision down the length of each piece of corn, just deep enough to get your fingers inside. Carefully remove the corn cob and all the silk surrounding it, then clean the corn and leaves of any remaining silk. Reserve the green jackets you cut open too",
+      "Put the corn cobs in the boiling water and blanch for 45 seconds (or a little longer if they’re on the larger side)",
+      "Drain and return each piece of corn to their green jackets, then wrap them tightly in the tougher husks using string so they’re completely covered. Set aside until ready to serve",
+      "Cook the bacon lardons in a frying pan until the fat renders out and they turn crisp and deep brown",
+      "Put the wrapped corn over charcoal or a live fire for 3 minutes, turning occasionally and allow the leafy jackets to catch and burn on the outside to create some smoke. The indirect heat will steam the corn within and reheat it",
+      "To serve, untie the tougher leaves around the corn and put them on a plate, still in their greener jackets (don’t worry if they’re a little singed)",
+      "Drizzle with the sour cream (use a squeeze bottle if you have one), then drizzle both the leek oils on top to create a black and green camouflage effect. Sprinkle over the crispy lardons and chives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Corn",
+        "unit": null,
+        "notes": "still in their husks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Lardons",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "finely, chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "50g green parts and 50g white parts",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "390626b0ecbd4fb3de5d9c6daff7337aac8846dbaa8b94f3308e6a6f06c85db0",
+    "lineage_hash": "2ba2a9180cf9b9f6f039c34e367659b589b28e4c97f328ce9073d50c771c4e86"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baby-corn-sour-cream-bacon-chives-recipe",
+    "fetchedAt": "2026-08-01T22:57:10.421Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baby-corn-sour-cream-bacon-chives-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

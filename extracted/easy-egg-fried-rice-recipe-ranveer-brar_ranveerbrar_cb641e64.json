@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Easy Egg Fried Rice",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat vegetable oil in a pan, add ginger, garlic and green chillies. SautÃ© till fragrant.",
+      "Add beaten egg, allow to cook for about a minute and scramble.",
+      "Add the cooked rice and toss well.",
+      "Add soy sauce and vinegar, toss well.",
+      "Add salt, white pepper powder, sugar, mix everything well and allow to cook for 3-4 minutes.",
+      "Add spring onion bulbs, spring onion greens, toss and cook for 2 minutes.",
+      "Garnish with chopped spring onions and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "cooked",
+        "amount": "2",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste White Pepper Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Bulbs",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Greens",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Fried Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a0e211482ca0ea47a2965d21e7cbea855b7a9b2d479e9e7cf11383a47caf5c0",
+    "lineage_hash": "8595d2f7c714fe80e5ae8d016c26e0cd2fe136b274fc6209dd4fce163cc80924"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-fried-rice-3/",
+    "fetchedAt": "2026-08-02T14:49:26.580Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-fried-rice-3/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

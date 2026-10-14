@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Chocolate-Filled Churros",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate-Filled Churros recipe, organise all the necessary ingredients for the churro dough.",
+      "For the churro dough:  Pour the water in a saucepan.",
+      "Add the salt. Make sure you add 5 grams (a pinch won't be enough).",
+      "Bring the water to a boil.",
+      "In the meantime, place the flour in the stand mixer recipient. Use the flat beater.",
+      "When the water starts boiling...",
+      "... pour over the flour while mixing at low speed.",
+      "Add the orange blossom water...",
+      "... and mix until homogeneous, without lumps.",
+      "Stop the beater when homogeneous.",
+      "Fill the churro dough press with the dough. Fit the machine with the plastic attachment for stuffed churros.",
+      "Place the top part back on...",
+      "... and screw tight.",
+      "Arrange paper towels at the bottom of a food tray.",
+      "Heat the oil at 190°C in a deep fryer. Start pushing the dough with the press...",
+      "... and cut the churros to the desired length with a knife. For stuffed churros, I recommend making them quite short. The central hole in long churros will tend to re-seal itself easily while frying.",
+      "Fry until gold...",
+      "... then flip with a skimmer and continue frying until golden on all sides, then transfer over the paper towel.",
+      "Repeat the operation with the rest of the batter.",
+      "Fry the churros until golden, then transfer over the paper towel.",
+      "When the churros are cooked, use the probe of a thermometer to recreate the central holes.",
+      "The churros are ready.",
+      "For the chocolate cream:  Organise all the necessary ingredients.",
+      "Place the whole milk and half of the castor sugar in a saucepan and bring to a boil.",
+      "Place the egg yolk in a mixing bowl.",
+      "Add the other half of the sugar and blanch the preparation with a whisk.",
+      "Add the crème pâtissière powder or corn starch...",
+      "... and combine carefully with a whisk.",
+      "When the milk starts boiling...",
+      "... and pour half over the blanched preparation.",
+      "Combine carefully with the whisk.",
+      "Transfer the preparation in the saucepan, over the rest of the simmering milk. Pour into a thin stream while whisking.",
+      "The cream should thicken instantly. Cook for a further 1 or 2 minutes until the consistency becomes slightly more liquid.",
+      "When the cream is cooked, add the butter and incorporate with the whisk.",
+      "Add the dark chocolate pistoles...",
+      "... and combine until homogeneous.",
+      "Transfer the cream into a food tray...",
+      "... cover the surface of the cream with cling film...",
+      "... and leave to cool at room temperature or in the fridge.",
+      "Transfer the cold cream into a mixing bowl and whisk vigorously until smooth. Transfer the chocolate cream into a piping bag fitted with a filling nozzle.",
+      "Fill the churros with the chocolate cream...",
+      "... and pierce the churros on both sides. Repeat the operation for all churros.",
+      "Pour 100 grams of castor sugar in a small bowl and add one teaspoon cocoa powder...",
+      "... and combine.",
+      "Roll the churros in the chocolate sugar to coat the surface...",
+      "... to finish the roll. The churros are now ready. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Volume of Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Volume of Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "5cl Orange Blossom Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "25cl Whole Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Pâtissière Powder",
+        "unit": "g",
+        "notes": "alt: cornstarch",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ocoa Dark Chocolate Couverture 70%",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plein Arôme Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e068a48ce06fc435ba29710c2df1ab54d7219c74a08f6e6ed10b28e56cc4aa0d",
+    "lineage_hash": "aae75b04b75d41b2b923d914071dee66a2c3edfb16752c95b98ed3b04751a259"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-filled-churros.html",
+    "fetchedAt": "2026-08-02T05:37:07.873Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-filled-churros.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

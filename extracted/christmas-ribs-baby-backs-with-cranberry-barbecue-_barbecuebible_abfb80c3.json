@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Christmas Ribs (Baby Backs with Cranberry Barbecue Sauce)",
+    "time": "4 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the papery skin on the back of each rack of ribs by pulling it off in a sheet with your fingers (using a corner of a dish towel to secure your grip), or ask your butcher to do it. Sprinkle the ribs on both sides with the rub, rubbing it in with your fingers.",
+      "Set up a smoker following the manufacturer’s instructions, and preheat to 250°F. Add the wood as specified by the manufacturer.",
+      "Place the ribs, rounded side up, in the smoker. Smoke until cooked, 4 to 5 hours. After 1 hour, spray the ribs with apple juice, and spray again every hour. The last half hour, brush the ribs with half the barbecue sauce. (Omit this step if you opt for Step 4.) When the ribs are ready, the meat will have shrunk back from the ends of the bones by about ½ inch. The meat will be so tender, you can pull the ribs apart with your fingers.",
+      "This is optional: Set up a grill for direct grilling and preheat to high. Brush and oil the grill grate. Brush the smoked ribs with half the barbecue sauce and direct grill for 2 to 4 minutes per side to sear the sauce into the meat.",
+      "Serve the ribs on a platter, with the remaining sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Racks Baby Back Ribs",
+        "unit": null,
+        "notes": "8 to 10 pounds",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basic Barbecue Rub",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "C",
+        "notes": "alt: cider, in a spray bottle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Barbecue Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c0ef658b866b1a73276f91f09445fae8f5ece8c4476e9ef9068e70258a8da718",
+    "lineage_hash": "b51976017475f281fe6a1b8a5851f3eb99bcf9d300b32bbde54ce4ef4e49cfc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/christmas-ribs-baby-backs-with-cranberry-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T08:49:52.804Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/christmas-ribs-baby-backs-with-cranberry-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

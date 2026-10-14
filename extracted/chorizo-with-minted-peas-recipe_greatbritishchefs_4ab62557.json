@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Chorizo with Minted Peas",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, pod the peas and blanch them for 30 seconds in salted boiling water. Drain, transfer to a bowl of iced water and drain once cool. Store in the fridge in a container lined with kitchen paper until ready to use",
+      "Bring a large pan of water to the boil. Cut small, shallow crosses in the base of each tomato and add to the water, blanching for 30 seconds or so. Transfer to a bowl of iced water to chill quickly",
+      "Once cold, peel the skins away from the tomatoes and cut in half. Remove and discard the seeds and core and dice the flesh. Weigh out 200g of the tomato concasse and save any extra for other dishes",
+      "Add a dash of oil to a large saucepan and place over a medium heat. Once hot, add the jamón, shallot and garlic and cook together until the ingredients reach a deep golden brown colour – this will enhance the flavour of the final dish",
+      "Add the tomato concasse, cook out for a few minutes and add the stock. Bring to the boil",
+      "Meanwhile, add the chorizo pieces to a hot, dry pan and fry on all sides until cooked through and crisp on the ends",
+      "When the stock is boiling, add the reserved peas and leave to reduce until thickened to a loose sauce consistency. Sprinkle in the mint",
+      "To serve, divide the sauce and peas between bowls and add three pieces of chorizo per plate. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooking Chorizos",
+        "unit": null,
+        "notes": "each cut into three even pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas in the Pod",
+        "unit": "kg",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamón Serrano",
+        "unit": "g",
+        "notes": "very finely diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "very finely diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c9d52d10d8daef3649801dee669b9a62065e3e920f602a2bf716eae194969e9",
+    "lineage_hash": "6d9c31de4a0514dfc2c4759e70128a08fbb0d130750319c5534099b10324543c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/fried-chorizo-minted-peas-recipe",
+    "fetchedAt": "2026-08-03T09:44:39.079Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/fried-chorizo-minted-peas-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

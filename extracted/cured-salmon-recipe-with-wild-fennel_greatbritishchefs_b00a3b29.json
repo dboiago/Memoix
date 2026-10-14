@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cured Salmon With Wild Fennel",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the lemon and orange into quarters and discard the pips. Blend both to a pulp in a blender or food processor",
+      "Combine the lemon and orange pulp with the rock salt, sugar, coriander seeds, 20g of the chopped fennel and the pepper",
+      "Cover the fish completely with the marinade and place in a dish. Cover with clingfilm and refrigerate for approximately 36 hours, turning occasionally. The fish should be firm to the touch when fully cured",
+      "When fully cured, wash off the marinade, pat dry.  Finally press the remaining fennel into the salmon",
+      "Slice thinly and serve with a dollop of crème fraîche and a bagel on the side for each person"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "unwaxed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "unwaxed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Fennel",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "coarsely",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Msc Certified Pacific Salmon",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Bagels",
+        "unit": null,
+        "notes": "sliced crosswise",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38e47d6eb23fff6b665f077f02ab48e46828a71e526a0b1023e040cbdf9635d8",
+    "lineage_hash": "8354ae50dac3d29c1600347e7374a76dcdc3dbf02c4cb83b304ea6c10258fdaa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/home-cured-salmon-recipe-fennel",
+    "fetchedAt": "2026-08-03T22:31:39.641Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/home-cured-salmon-recipe-fennel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-red-pepper-cashew-dip/",
+  "slug": "creamy-red-pepper-cashew-dip-it-doesn-t-taste-like_itdoesnttastelikechicken_2d36b63e",
+  "title": "Creamy Red Pepper Cashew Dip - it doesn't taste like chicken",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T21:25:19.947Z",
+  "ldName": "Creamy Red Pepper Cashew Dip",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Appetizer, Snack",
+  "ldKeywords": "dip, snack, vegan",
+  "ldIngredientsRaw": [
+    "1 1/2 cups raw cashews, (soaked or boiled (see nots))",
+    "1/2 - 1 cup plant-based milk (such as soy or almond)",
+    "1/2 of a red pepper",
+    "2 tablespoons nutritional yeast",
+    "1 clove garlic, (minced)",
+    "1 tablespoon lemon juice",
+    "1 teaspoon chili powder",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Add the raw cashews, 1/2 cup non-dairy milk, the red pepper, nutritional yeast, garlic, lemon juice, chili powder, and salt to a blender. Combine until smooth,&nbsp;stopping to scrape the sides as needed, and adding up to 1/2 cup more non-dairy milk as needed to reach desired consistency.&nbsp;&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "209 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "8 g",
+    "fatContent": "15 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "223 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 ½ cups raw cashews,, soaked or boiled (see nots)",
+    "▢ ½ - 1 cup plant-based milk, such as soy or almond",
+    "▢ ½ of a red pepper",
+    "▢ 2 tablespoons nutritional yeast",
+    "▢ 1 clove garlic,, minced",
+    "▢ 1 tablespoon lemon juice",
+    "▢ 1 teaspoon chili powder",
+    "▢ ½ teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

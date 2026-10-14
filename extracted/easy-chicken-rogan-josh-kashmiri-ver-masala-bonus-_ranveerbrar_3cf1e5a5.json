@@ -1,0 +1,273 @@
+{
+  "recipe": {
+    "name": "Chicken Rogan Josh (Kashmiri Ver Masala bonus recipe)",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a tray or a bowl, add garlic, onion, cinnamon stick, black cardamom, green cardamom and cloves.",
+      "Transfer it to a mixer grinder jar and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In a bowl, add prepared paste, coriander powder, degi red chili powder, fennel seeds powder, dry ginger powder, salt to taste, mustard oil and give a good mix.",
+      "Transfer it to an airtight container for further use.",
+      "In a bowl, add chicken legs, degi red chili powder, salt to taste, caraway seeds, curd, mustard oil and mix it well.",
+      "Keep it aside to marinate for a while.",
+      "In a handi, add butter, once it's melted, add prepared masala, mustard oil and saute it for a minute until aromatic.",
+      "Add marinated chicken and saute it well for 2-3 minutes.",
+      "Add tender coriander stems, curd, butter and mix it well.",
+      "Cover it with a lid and cook it for 10-12 minutes until cooked well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seed Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For Ver Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Leg",
+        "unit": "kg",
+        "notes": "drumsticks & thighs",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "2",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ver Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "1⅓",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Chicken Rogan Josh",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Mustard Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7cdebe068284c0476d08e7e80158a8d2461dde726f5a33bdf8cb017468f84ba",
+    "lineage_hash": "62cffcbf398d44206368ad52f08fb757aa4a40a9e0f7d8a76016c83591370ddc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-rogan-josh/",
+    "fetchedAt": "2026-08-02T17:06:57.904Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-rogan-josh/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

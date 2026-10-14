@@ -1,0 +1,41 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cookie-butter",
+  "slug": "cookie-butter_lacucinaitaliana_f6e2e8d8",
+  "title": "Cookie Butter",
+  "byline": "by  Editorial staff   March 6, 2020",
+  "fetchedAt": "2026-08-03T08:10:33.599Z",
+  "ldName": "Cookie Butter",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Biscotti,Biscotti Di Natale,Biscottini,Crema,Creme,Cremoso,Natale",
+  "ldIngredientsRaw": [
+    "1/3LB. speculoos cookies",
+    "1/3C. milk",
+    "3OZ. white chocolate",
+    "2 1/2TBSP. honey",
+    "3 1/2TBSP. sunflower seed oil",
+    "1 1/2TBSP. raw cane sugar"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Blend the cookies until they become a fine powder.&nbsp;</p>",
+    "<p>Combine with the chopped white chocolate. Heat the milk with the honey and the cane sugar.&nbsp;</p>",
+    "<p>Once it begins to boil, pour it over the chocolate and cookies and combine well, then add in the oil. </p>",
+    "<p>Let the cream set before distributing it into jars. </p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1/3 LB. of speculoos cookies",
+    "1/3 C. of milk",
+    "3 OZ. of white chocolate",
+    "2 1/2 TBSP. of honey",
+    "3 1/2 TBSP. of sunflower seed oil",
+    "1 1/2 TBSP. of raw cane sugar"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

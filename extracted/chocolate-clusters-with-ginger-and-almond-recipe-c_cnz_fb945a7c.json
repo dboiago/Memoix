@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Chocolate Clusters with Ginger and Almond",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "35",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have ready about 35 mini paper cups (2.5 cm or 1 inch across the base is a good size), or a silicone baking mat, or a sheet of parchment paper.",
+      "Chop the chocolate finely and melt it in a double-boiler (i.e. place the chocolate in a heatproof mixing bowl over a pan of simmering water, not allowing the bowl to touch the water), stirring regularly to ensure even melting. If you have a candy thermometer, the chocolate temperature to shoot for is 31-32°C (88-90°F) (see note); if you don't have one, don't worry about it.",
+      "While the chocolate is melting, chop the almonds and ginger roughly.",
+      "When the chocolate is melted, remove the bowl from the heat and place it on the counter. Add the almonds, ginger, puffed rice, and salt, and stir gently with a spatula to combine thoroughly.",
+      "Using two teaspoons, scoop the mixture into the prepared paper cups, or just plop little mounds onto the silicone mat or parchment paper. (Alternatively, you can spread the mixture in an even layer and then break it into shards once set.) If you like a little salty jolt, sprinkle a touch more salt on top; be light-handed, though.",
+      "Let rest somewhere cool (but not in the fridge) until completely set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "good-quality, preferably couverture-grade",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "whole unblanched, toasted",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puffed Rice",
+        "unit": "g",
+        "notes": "or other puffed grain",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "plus a little more for sprinkling",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b3dc8bf3bb5027491684f308dc99e34b0f78cee800fe709151059c7c41b20f7",
+    "lineage_hash": "16bab175aedd4052831d9668cd9ee901174175b3798fe714810a0e207ef27a12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/ginger-and-almond-chocolate-clusters-recipe/",
+    "fetchedAt": "2026-09-30T20:02:19.530Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/ginger-and-almond-chocolate-clusters-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

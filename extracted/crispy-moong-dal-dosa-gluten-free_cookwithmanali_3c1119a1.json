@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Crispy Moong Dal Dosa",
+    "time": "1 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "270",
+      "carbohydrateContent": "26",
+      "fatContent": "12",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Rinse and soak moong dal in around 3 to 4 cups of water for 2 to 3 hours. If you can't wait for that long, soak in warm water for 30 minutes.",
+      "Once soaked for 3 hours, drain the dal using a colander and rinse it well.",
+      "Transfer the dal to a blender along with cumin seeds, ginger, green chilies, salt and rice flour. Add water and blend to a smooth paste. I added around 1/2 cup water here.",
+      "Transfer batter to a bowl. You can add some water here if you want to adjust the consistency. The batter should be pouring consistency (like a regular dosa batter), don't make it thin. Heat a iron tawa/pan on medium-high (you may use a non-stick pan but iron pan works best for dosa).",
+      "To check if pan is hot enough, sprinkle some water on the pan, the water should sizzle away and evaporate immediately. Cut an onion, insert a fork in it and then dip the onion in some oil. Use than onion to rub the pan with oil (this makes the iron tawa non-sicky). Then start making the dosa.",
+      "Take a ladle full of batter and pour it in the center of the pan. Start spreading the batter by moving your ladle in circular motion in one direction. Start from the inside and move your ladle out in a circular motion (move the ladle in clockwise direction). Keep moving the ladle in circular motion and spreading the batter until the batter is well spread. Try to spread it as thin as possible.",
+      "Drizzle oil all around the dosa and also few drops in the center. Let the dosa cook for few minutes until the bottom starts appearing golden brown.",
+      "If you are adding a filling to the dosa (like paneer or potato), you can add it at this point. I like to serve it on the side most times. Once the bottom starts appearing brown, scrape the sides using a spatula and release the dosa from the pan.",
+      "Fold the dosa and remove from the pan. Make all dosa similarly. I got 6 dosas from this batter, each measuring around 6-inches in diameter. You can serve this as with a tomato chutney or peanut chutney or fill with paneer filling to make it more wholesome!",
+      "Heat oil in a pan on medium heat. Once hot, add mustard seeds and let them pop. Then add the sliced onion, ginger, curry leaves and green chili.",
+      "Sauté for 2 to 3 minutes until the onions soften. Then add the paneer (I cut it into very small cubes), along with turmeric, salt. Give a good stir and cook 1 to 2 minutes.",
+      "Add 1/4 cup water and at this point if you want you can mash some of the paneer pieces using a potato masher. Cook 1 more minute, add in chopped cilantro and the filling is ready. Stuff the dosa with this filling if you like!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Moong Dal Dhuli",
+        "unit": "C",
+        "notes": "yellow moong dal (split petite yellow lentils), 205 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "to taste",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to blend, around 1/2 cup (4 oz)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste, around 1/4 to 1/2 teaspoon",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "469d24ab413cff0b09f31c46732d89655828f4a4af9b5eae2c9f0ee45f8be4ba",
+    "lineage_hash": "27a502df3eef36f69ab90f51c288329fa0f44d2de4d33c2583d3dab7719a236e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/moong-dal-dosa/",
+    "fetchedAt": "2026-08-02T02:16:21.006Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/moong-dal-dosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

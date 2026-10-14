@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Brownie Crinkle Cookies",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Temperature and timing is very important with this recipe so before you start get all the ingredients weighed out, two baking trays lined with parchment paper and the oven preheated to 180C (160C fan) 350F.",
+      "Place the butter and chocolate into a heatproof bowl and set over a pan and gently simmering water. Allow to melt, stirring occasionally until fully melted. Remove the bowl from the heat and set aside for the moment.",
+      "In the bowl of a stand mixer fitted with the whisk attachment, or using an electric hand mixer, whisk together the eggs and sugars for exactly 5 minutes. Once the eggs have been mixing for exactly 5 minutes pour in the chocolate mixture and mix for a minute or so to combine.",
+      "Meanwhile mix together the dry ingredients, sieving the cocoa powder if it has lots of lumps. Add the dry ingredients and mix very briefly just until combined. Use your spatula to give one last mix, scraping the bottom of the bowl to make sure everything is evenly combined.",
+      "Use a ice cream scoop to form the cookies. The batter will be a little on the wet side, so invert the cookie scoop just above the baking tray to avoid spills. Make sure to leave plenty of space between each cookie as they will spread. Sprinkle each cookie with a little flaked sea salt before placing into the oven and baking for 12 minutes.",
+      "The cookies will come out of the oven with that wonderful crinkled look and slightly domed. They will collapse a little as they cool but this helps form that perfect fudgy centre. The cookies will be very soft so allow them to cool on the baking trays for at least 20-30 minutes before removing from the tray to cool completley.   These cookies will keep for 4-5 days but will be best within the first 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate (around 65-70% Cocoa Solids)",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "dutch processed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus flaked sea salt for sprinkling",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01ba1ced6426973dcd1c01021eabd3f18e3116c80c552386922623a212a88dea",
+    "lineage_hash": "860702b22e81816e1c6f80eb8047a51e585c04b71f3fa4be80c3f1af3f2f0708"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/3/29/j9cnerut0as1ec0fcdiawsc4usi7ss",
+    "fetchedAt": "2026-08-01T20:30:39.616Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/3/29/j9cnerut0as1ec0fcdiawsc4usi7ss",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

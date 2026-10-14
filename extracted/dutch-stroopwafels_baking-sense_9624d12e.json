@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Dutch Stroopwafels",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "346",
+      "carbohydrateContent": "53",
+      "fatContent": "15",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Combine 7 oz Dutch Stroop, 4 oz brown sugar, 3 oz unsalted butter, 1 teaspoon ground cinnamonand ⅛ teaspoon table salt in a small saucepan. Cook over medium heat until the sugar and butter are melted and the mix just comes to a boil. Transfer the filling to a bowl and set aside to cool.",
+      "Combine 2 oz whole milk and 2 ¼ teaspoons dry yeast in the bowl of a stand mixer or in a large mixing bowl. Use the beater and mix until the yeast is dissolved. Add 2 large eggs, 6 oz unsalted butter (melted) and 5 oz granulated sugar.",
+      "With the mixer running on low, add ½ teaspoon ground cinnamon and ¼ teaspoon table salt. Add 15 oz all purpose flour and mix until most of the flour is incorporated. Turn the dough out into a lightly floured surface and knead into a ball. The dough is quite soft.",
+      "Divide the dough into 18 pieces, each piece should weigh about 50g. Roll each piece to a ball and line them up on a sheet pan. Cover with plastic wrap and set the dough aside for 1 hour.",
+      "Preheat the waffle iron. Take a ball of dough and flatten it to a disc. Place it on the waffle iron and close the iron.",
+      "Bake until golden brown, about 2-3 minutes. Use a fork to lift the waffle off the iron. Immediately use a knife with a thin sharp blade to split and open up the waffle. Generously spread the inside of the waffle with stroop (about a tablespoon) and sandwich the two halves together. Continue with the remaining dough."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dutch Stroop (⅔ Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": "Stroop filling",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Stroop filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": "Stroop filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stroop filling",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Stroop filling",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¼ cup, warm",
+        "amount": "2",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": "7 g or 1 packet",
+        "amount": "2¼",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "2",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "6",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅔ cup",
+        "amount": "5",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Waffle Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 cups, see note",
+        "amount": "15",
+        "section": "Waffle Dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d22d792d607fdb25fbc35522cada04e92e924346701f1a778f2bc21b46b940e9",
+    "lineage_hash": "102d0305458e8770b605af82523ec03bef9365a9fe1af4c3c9fdcb9e39be80e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/02/28/dutch-stroopwafel-recipe-with-video/",
+    "fetchedAt": "2026-08-02T07:20:08.064Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/02/28/dutch-stroopwafel-recipe-with-video/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

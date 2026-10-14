@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cameron's Kick",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice to chill, strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blended Scotch Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0714fa1e985e547a785a654ca52e8b386f189aed4f96da9ccb2cd0dcc7721951",
+    "lineage_hash": "c75110476aaf63b00ae2eb5aa767e850dd78dcc4382a48618fe974425bc89709"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/camerons-kick-cocktail/",
+    "fetchedAt": "2026-08-03T19:03:40.707Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/camerons-kick-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

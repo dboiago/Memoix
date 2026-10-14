@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Coconut Tapioca Dessert with Sweet Rice Balls",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "465",
+      "carbohydrateContent": "54",
+      "fatContent": "25",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Add the coconut milk, milk, sweetened condensed milk, and vanilla extract to a small pot. Stir and bring to a boil—watch it closely so the liquid doesn’t boil over. Once it boils, immediately take it off the heat. Let the mixture cool slightly, and put it in the refrigerator to chill. This step can be done ahead of time!",
+      "Time to make the mini sticky rice balls. Mix the sweet rice flour with ¼ cup of water in a bowl using your hands. Then add ½ teaspoon water at a time until the dough turns into a play-doh-like consistency—not too wet but pliable. If the dough falls apart as you roll it in between your palms, it’s too dry, but if the dough gets wetter as you roll it in between your palms, it’s too wet. Next, take a small piece—about 3 grams if you have a scale—and roll it into a small ball. Place it on a piece of parchment or clear plastic wrap. Repeat until you’ve used all the dough. Cover with plastic wrap and put the sweet rice balls in the refrigerator while you prepare the rest of the dessert.",
+      "In a pot, bring 4 cups of water to a boil. Add the mini pearl tapioca (don’t add it before the water is at a full boil!). Stir and bring it to boil again. Turn off the heat, cover it with a lid, and set your timer for 18 minutes. After 18 minutes have elapsed, the pearl tapioca should turn completely transparent, which means they’re fully cooked. Strain the pearls, rinse them with cold water to prevent them from sticking, and set aside.",
+      "In the same pot, bring another 4 cups of water to a boil, and add the sweet rice balls. Stir and let them cook for a few minutes over high heat. When they float to the top, they’re done. Strain and rinse them with cold water to prevent sticking.",
+      "Divide the prepared coconut milk soup into 4 bowls, then divide and add in the cooked sweet rice balls and pearl tapioca. Top with your fresh fruit of choice and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": "380g",
+        "amount": "13.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": "or up to 1/2 cup, depending on the level of sweetness you like; 60-120 ml",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Rice Flour",
+        "unit": "C",
+        "notes": "140 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Pearl Tapioca",
+        "unit": "C",
+        "notes": "90 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": "sliced, or fresh fruit of your choice, fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "C",
+        "notes": "or fresh fruit of your choice, fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "244daf41f3d6bc49f9de2a5d2792a2dac612eb764d582c4733bb958608379432",
+    "lineage_hash": "3f1933bcb1e82904a71bc72388dafa34941170801742fa47a834e19fc5a1b990"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/coconut-tapioca-dessert/",
+    "fetchedAt": "2026-08-01T22:34:40.261Z"
+  },
+  "rawSource": "https://thewoksoflife.com/coconut-tapioca-dessert/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Daisy Marie",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rimmed",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake and strain into a rimmed glass. Garnish.",
+      "Habanero TinctureCombine all of the ingredients in a bottle and let sit for 24 hours. If more time is needed, let the mixture sit until the desired spice level is achieved. Will keep indefinitely.",
+      "Smoked Lemon and Orange Peel SaltAdd the diced orange peel and lemon peel into a spice grinder and grind until pieces are sub 1 millimeter, preferably smaller but not powdered. Add salt to the grinder and pulse once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Tincture",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Everclear",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": "Habanero Tincture",
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": "100 proof",
+        "amount": "5",
+        "section": "Habanero Tincture",
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Pepper",
+        "unit": null,
+        "notes": "quartered and partially deveined, remove all seeds and about half of the veins",
+        "amount": "1",
+        "section": "Habanero Tincture",
+        "isOptional": false
+      },
+      {
+        "name": "Green Apple Peel",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Habanero Tincture",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": "Smoked Lemon and Orange Peel Salt",
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Smoked Salt",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": "Smoked Lemon and Orange Peel Salt",
+        "isOptional": false
+      },
+      {
+        "name": "Dehydrated Lemon Peel",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Smoked Lemon and Orange Peel Salt",
+        "isOptional": false
+      },
+      {
+        "name": "Dehydrated Orange Peel",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "Smoked Lemon and Orange Peel Salt",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b91d34cdf4000389eaf86b089ec31b8ea599e781ab07bca540cf871d6357ac65",
+    "lineage_hash": "ce424256ceaf75902e5fc946b5375cd715f088de0b70a141f4fd575dd5e05e1f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/daisy-marie-from-tango-room/",
+    "fetchedAt": "2026-08-03T22:16:53.864Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/daisy-marie-from-tango-room/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Braised Squid with Skrei Cod Loin",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before serving, place the dried cannellini beans in a bowl, cover with water and soak overnight",
+      "To prepare the cannellini beans, heat 2 tablespoons of olive oil in a small saucepan and add the shallot, garlic and the sprigs of rosemary and thyme. Fry over a low heat for 5 minutes",
+      "Drain the beans and add to the pan along with the chicken stock. Bring to the boil, turn the heat down and simmer very gently for about an hour until the beans are soft but still intact. The stock should have almost evaporated by the time the beans are cooked. Remove the onion and herbs, drain any remaining liquid and set aside",
+      "For the braised squid, heat 2 tablespoons of olive oil in a medium saucepan and add the shallots. Fry  over a low heat for 8 minutes. Add the squid rings and tentacles, garlic, cherry tomatoes, smoked paprika and tomato purée and cook for 3 minutes",
+      "Add the white wine and reduce by half before adding the beans. Stir and keep on a very low heat while you cook the fish",
+      "To prepare the Skrei, heat a non-stick frying pan and add the olive oil. Season the Skrei fillets with salt and pepper and add to the pan, skin-side down. Cook on a low heat for 5 minutes, turn the fillets and add the butter to the pan. Cook the fish for a further 4 minutes, basting with the butter from time to time",
+      "When ready to serve, stir the chopped parsley and 30g of unsalted butter through the squid and beans. Season with salt and pepper",
+      "Divide the beans and squid between plates or bowls and top with the Skrei fillets. Add a squeeze of lemon and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Skrei Loin Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cannellini Beans",
+        "unit": "g",
+        "notes": "or tinned if short on time, dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid",
+        "unit": "g",
+        "notes": "including tentacles (optional) cleaned and sliced into rings",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e5a0514ff4a565c27237339328ad7fb6e640ebf05fd98c56409066f5454b2187",
+    "lineage_hash": "c741c6e089101fe2d76786ef1a27e88de1418aef87a245b566716eabe58642dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-squid-skrei-cod-loin-recipe",
+    "fetchedAt": "2026-08-03T13:23:51.324Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-squid-skrei-cod-loin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

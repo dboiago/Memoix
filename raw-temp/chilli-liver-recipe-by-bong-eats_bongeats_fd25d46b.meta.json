@@ -1,0 +1,36 @@
+{
+  "url": "https://www.bongeats.com/recipe/chilli-liver",
+  "slug": "chilli-liver-recipe-by-bong-eats_bongeats_fd25d46b",
+  "title": "Chilli Liver recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:34:02.337Z",
+  "ldName": "Chilli Liver",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": "3",
+  "ldCuisine": "Indian",
+  "ldCategory": "snack",
+  "ldKeywords": "chilli liver, easy liver recipe, mete recipe, chinese mete recipe, quick liver recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "298"
+  },
+  "htmlIngredientLines": [
+    "360 g chicken liver (sliced)",
+    "150 g onions (sliced)",
+    "12 g garlic (chopped)",
+    "20 g green chillies (chopped lengthwise)",
+    "80 g tomato (sliced)",
+    "40 g vegetable oil",
+    "5 g salt",
+    "4 g dark soy sauce",
+    "¼ tsp pepper",
+    "spring onions (for garnish)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

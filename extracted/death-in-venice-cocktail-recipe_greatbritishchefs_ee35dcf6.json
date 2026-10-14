@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Death in Venice",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Champagne Flute",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the Campari and grapefruit bitters to a Champagne flute. Top up with Prosecco, stir lightly to combine and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Bitters",
+        "unit": "drops",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosecco",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "effa4668d032b2a1aa013a5102037520564df5048265fd826eee962d8602a526",
+    "lineage_hash": "7151e4c70c69c3bc5e53085252014b493c352c39d1105762e2a22be1e9d5efef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/death-venice-cocktail-recipe",
+    "fetchedAt": "2026-08-03T11:46:56.167Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/death-venice-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

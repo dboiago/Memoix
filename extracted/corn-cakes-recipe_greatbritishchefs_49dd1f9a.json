@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Corn Cakes",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease the 6 or 12 moulds (depending on if you want larger or smaller corn cakes) very well with butter and line with squares of baking parchment, cut large enough so that the sides rise a couple of centimetres above the muffin tray",
+      "Place all the ingredients for the salad, apart from the beetroot and apple, in a medium bowl. Mix well and set aside until ready to serve",
+      "Place each cob perpendicular on your chopping board and use a large sharp knife to shave off the kernels – you should have about 500g",
+      "Discard the cob and transfer the kernels to a food processor, along with the shallots and garlic. Pulse for 3–4 seconds, until the mixture is roughly processed but has not turned to a wet purée",
+      "Add the fennel seeds, cumin, celery seeds, tarragon, baking powder, butter and egg yolks, along with 1 1/2 teaspoons of salt and a very good grind of black pepper",
+      "Blitz a few more times, to combine – some of the corn kernels will still be whole – then transfer to a medium bowl. Fold the flour in by hand and set aside",
+      "Place the egg whites in a separate medium bowl and whisk to form firm peaks. Fold a third of the whites gently into the corn mixture – you don’t want to overwork it – and then, once it has incorporated, continue with the next third and then the next",
+      "Once fully incorporated, divide the mixture between the moulds and then insert a chunk of feta into each. Push it halfway down the corn mixture – the cakes will puff up around the cheese when they cook",
+      "Bake for 25–40 minutes, depending on the size of your moulds, until the cakes have risen and are golden and fluffy – the mixture will still be a bit wet at this point. Remove from the oven and set aside for 10 minutes before lifting them out of the tray",
+      "Add the beetroot and apple to the salad dressing\r\njust before serving and mix together gently. Serve\r\nthe warm cakes with the salad alongside, sprinkled\r\nwith the remaining fennel seeds and the basil leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "husks removed, or 500g frozen corn kernels, de-frosted",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "100g, finely diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "lightly toasted and coarsely crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": "lightly toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Tarragon Leaves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted, plus 20g extra for greasing the moulds",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "yolks and whites separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "depending on size of muffin tray, broken into 6 or 12 chunks",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "tsp",
+        "notes": "Valdespino or another good-quality sherry vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "roasted and coarsely crushed, plus 1/2 tsp extra, to garnish",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Beetroots",
+        "unit": null,
+        "notes": "200g, peeled and julienned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": "peeled, cored and julienned (140g), kept covered with water with some lemon juice, to prevent discoloration, if prepared in advance",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Basil",
+        "unit": "g",
+        "notes": "or small regular basil leaves",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88957248277a228d4dc1ec01251e6573fe69e5fa4987f8edbcb19cadb8e05358",
+    "lineage_hash": "f6506d6fcb5b0bfeb28c155291c3aa092c4b3a7df10fa133d85b33d93187ba8a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/corn-cakes-recipe",
+    "fetchedAt": "2026-08-03T14:05:12.988Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/corn-cakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

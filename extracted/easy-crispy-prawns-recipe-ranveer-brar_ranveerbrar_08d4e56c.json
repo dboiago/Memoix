@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Crispy Prawns",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add tamarind pulp to a bowl, add turmeric powder, coriander powder, red chilli powder, cumin powder, salt and black salt. Mix well.",
+      "Break in one egg, mix well till everything is combined.",
+      "Add the prawns to this mixture, cover and set aside to marinate for 20 minutes.",
+      "Spread the semolina in a plate, coat the marinated prawns from all sides.",
+      "Heat oil in a kadhai, dee-fry till golden brown. Drain on absorbent paper and set aside till in use.",
+      "Meanwhile prepare the tempering, heat oil in a pan, add mustard seeds, curry leaves and tomatoes, salt, mix well.",
+      "Add lemon juice and take off the flame",
+      "Heat oil in a pan, add red chilli, curry leaves, chilli powder turmeric powder and mix coconut paste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Prawns",
+        "unit": "medium",
+        "notes": "clean, shelled, tail intact",
+        "amount": "10",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Prawns",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¾",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Paste",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b6759ec9e62f3b747512dbd9e74b7e8f341da5d3e01d9e1c07e279cd723357e",
+    "lineage_hash": "f63be3121965ca6428d313cd05ad70ff4759bb472126b90ca4c0d734ecec859d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-prawns/",
+    "fetchedAt": "2026-08-02T09:00:49.720Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-prawns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

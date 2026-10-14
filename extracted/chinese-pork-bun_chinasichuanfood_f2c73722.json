@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Chinese Pork Bun",
+    "time": "3 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "161",
+      "carbohydrateContent": "14",
+      "fatContent": "8",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Add yeast to water (cold water in summer and warm water in winter). Wait for around 10 minutes until the yeast is well activated.",
+      "Stir the yeast water with flour. Grasp everything together and knead until the dough becomes smooth and elastic.",
+      "Brush some oil on a large bowl and transfer the dough for the proofing (cover with plastic wrapper or a wet clean gauze). Wait for 2-3 hours until the dough is doubled in size. Do not over proof in hot days; you will need to watch out the dough.",
+      "In a large bowl, marinate the ground pork with all the seasonings. Set aside for at least 15 minutes. You can prepare this in previous day and keep the pork in refrigerator overnight.",
+      "Heat up 2 tablespoons of cooking oil in wok and fry ground pork until aroma and separated. And then add smashed garlic, carrot and celery. Give a small pinch of salt and continue fry for 1-2 minutes until the celery and carrot are slightly soft. Transfer out and cool down.",
+      "Line your steamer and prepare for the assembling process.",
+      "When the dough is doubled in size, transfer to a slightly floured board and pinch the air out. Please knead forcefully for a smooth surface. Cut the dough into halves. Take one half out and cover the rest half with wet gauze so it will not dry out.",
+      "Continue kneading the half dough for several minutes until there is no air inside any more (no small holes in the transection). Shape the dough into a long log and cut into 8 equal portions.",
+      "Take one portion out, press down slightly and then roll to a around wrappers around 10 cm in diameter. Make the edges thinner than the center. Place on portion of the filling on the round wrapper and then seal completely. Repeat to finish all the buns.",
+      "Repeat the two above steps to finish the other half bun.",
+      "Set up the steamer and let the buns reset for around 10 to 15 minutes with lid covered (This is for summer, for winter solution see note 1)",
+      "Steam on high heat for around 15 minute to 20 minutes. Turn off the fire, wait for 5 minutes before uncovering and enjoying."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "1/2 cup more for dusting",
+        "amount": "2",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": "dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "finely, chopped, optional",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "finely, chopped",
+        "amount": "½",
+        "section": "Marinating seasonings",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ce889811fc0abb2227ec9103a25a4adf19e1580f82d3daa846b8be5bd871290",
+    "lineage_hash": "ce8097c8cf9ffaaaac95b01d2566d58f51645ae0d844bf9b74aba61a947a1ac8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-pork-bun/",
+    "fetchedAt": "2026-08-01T23:45:57.913Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-pork-bun/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

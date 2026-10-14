@@ -1,0 +1,40 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/coconut-ice-cream-toffee-sauce",
+  "slug": "coconut-ice-cream-with-toffee-sauce_lacucinaitaliana_b4444c9f",
+  "title": "Coconut Ice Cream with Toffee Sauce",
+  "byline": "by  Editorial staff   September 2, 2020",
+  "fetchedAt": "2026-08-03T08:51:11.104Z",
+  "ldName": "Coconut Ice Cream with Toffee Sauce",
+  "ldTime": "PT4M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2CUPS coconut milk",
+    "6OZ. fresh cream",
+    "5OZ. sugar",
+    "3/4OZ. acacia honey",
+    "2OZ. freshly grated coconut",
+    "5 egg yolks"
+  ],
+  "ldInstructionsRaw": [
+    "<p>To make coconut ice cream with toffee sauce, first boil the coconut milk with 4 oz cream and melt the honey. Work 4 oz sugar with the egg yolks, diluting them with the coconut milk and heating the cream until it reaches about 180°F. (Fun fact: In Italian, we call this <em>cottura alla rosa</em>, which translates to ‘rose cooking’ in English – so called because blowing on the spoon forms little “petal” shapes.) Let the cream cool, then put it in the ice-cream maker. Set for the time indicated on the machine instructions. (It should take about 1 hour.)</p>",
+    "<p>In the meantime, put a plate in the freezer to cool. Shape the ice cream – as soon as it is ready – between 2 wet spoons and form 6 large dumpling shapes. Put a wooden stick in the center of each one and transfer to the cold plate. Let them cool in the freezer for about 3 hours.</p>",
+    "<p>When you’re ready to serve the ice cream, make the toffee sauce: Pour 2 ½ oz of sugar and a tablespoon of water into a small saucepan. Turn the heat on low and let the sugar caramelize – cooking until the sauce becomes a dark amber color. Still cooking over low heat, add 3 oz of cream, stirring well. Sprinkle the ice cream with grated coconut and serve with the toffee sauce.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 CUPS of coconut milk",
+    "6 OZ. of fresh cream",
+    "5 OZ. of sugar",
+    "3/4 OZ. of acacia honey",
+    "2 OZ. of freshly grated coconut",
+    "5  of egg yolks"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

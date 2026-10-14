@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Barbecued Lamb Breast",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "These ribs are best slow cooked on a barbecue but of course can still be slow cooked in an oven at 160°C/gas mark 3 for 2.5–3 hours. If cooking on a barbecue, set up a kettle barbecue for indirect cooking",
+      "Blend all the rub ingredients together and rub all over the lamb",
+      "Place the lamb belly, skin-side down, on the opposite side of grill to the coals  and pop the lid on. Set the air flow to 1/4 open at the base and leave a small crack (2mm) in the vent holes on the lid",
+      "Cook for 3 hours, the heat will initially be around 200°C but will drop through the cooking and settle at about 120°C for the bulk of the cooking. You should turn the belly every 45 minutes",
+      "To make the dipping sauce, add the sugar and finely chopped herbs to the vinegar and give it a good stir until the sugar has dissolved",
+      "Add the mayo and whisk until it's incorporated. Add the Worcestershire sauce and give it a final whisk",
+      "Once the ribs are cooked, remove from the barbecue, allow to cool a little and chop them roughly. Pour over about 1/2 of the sauce, if you like, retaining the other half for dipping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Breast",
+        "unit": null,
+        "notes": "weighing approximately 1.3kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "crushed in a pestle and mortar into flakes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "leaves picked and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "Tbsp",
+        "notes": "leaves picked and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a294cc2675e58dc8c67ab542a1c0a5746a7560f89bc1ea5dce921c0a1747e54a",
+    "lineage_hash": "f602dd8ea2b5225c940d90c737844146e426fa2a46f2b28dd4fa7f2c982e7e8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-lamb-breast-recipe-alabama-sauce",
+    "fetchedAt": "2026-08-03T10:42:45.377Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-lamb-breast-recipe-alabama-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

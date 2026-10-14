@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Apricot and Coffee Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 4 ingredients to the ice-filled glass and stir to combine. Top with tonic water, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blended Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Islay Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic",
+        "unit": "oz",
+        "notes": "to top",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d5de019a8426b634c41df0be64b4ba93937b916e5c749a9d4ca97e6b11b37d14",
+    "lineage_hash": "ca7551e0f9814a809f91c370966f2dd0ff78ef4e2ff95add0c6b431df6adb87c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apricot-and-coffee-highball/",
+    "fetchedAt": "2026-08-04T01:52:44.705Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apricot-and-coffee-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

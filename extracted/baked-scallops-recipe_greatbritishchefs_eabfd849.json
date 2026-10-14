@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Baked Scallops",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the salt crust, mix the flour and salt together in a large bowl and measure out 180ml egg white. Add the egg whites to the bowl and mix well",
+      "Add the water, a little at a time, stirring until the mix forms a thick paste. Cover the salt crust in cling film and rest in the fridge for 1 hour before use",
+      "For each scallop, slide a long thin-bladed knife along the inside of the flat part of the shell. The shell should now pull away",
+      "Carefully lift the scallops out of the shell using a spoon. You will then need to scrape it against the shell to free it. Reserve both shells",
+      "Remove the skirt and set aside. Cut away the orange roe and discard",
+      "Rinse the white scallop meat in a little cold water and pat dry on a piece of kitchen towel",
+      "Cut away and discard the black sac that is attached to the scallop skirt. Place the skirts into a bowl and leave them to rinse under a tap of running cold water for 15 minutes to remove any sand",
+      "Boil the shells in water for 30 minutes to sterilize and then scrub them clean",
+      "Melt the butter in a small saucepan, add the shallot and garlic and gently cook, without colouring, for a couple of minutes",
+      "Add the Noilly Prat and boil until reduced to a glaze, then add the fish stock and boil until reduced by two thirds",
+      "Add the cream and boil for a minute, then pass the sauce through a fine sieve, squeezing through all the sauce with the back of a spoon. Set aside to cool",
+      "Cook the broad beans for a couple of minutes in salted boiling water, drain and set aside",
+      "Sauté the morels and garlic in melted butter in a sauté pan over a medium heat until tender, then season with a little salt",
+      "Lay the round, cupped scallop shells on the worktop and cut each of the scallops in half so you have two discs. Place two pieces in the centre of each shell",
+      "Season the scallops with a little salt and place some of the morels and broad beans on top of each scallop, along with 2 tarragon leaves. Finish with 2-3 spoonfuls of the sauce",
+      "Divide the salt crust into six balls and roll each one out to approximately 30cm",
+      "Lay the flat shell on top of the prepared round scallop. Crimp the salt crust pastry around the shell to form an airtight seal",
+      "Bake in the oven for 6 minutes (8 if they have come straight from the fridge)",
+      "Open the shells with a sharp knife and serve at the table"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orkney Scallops",
+        "unit": null,
+        "notes": "hand-dived, in the shell",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noilly Prat Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morels",
+        "unit": "g",
+        "notes": "washed and halved",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "small",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "cold",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fec120d8fa97f66539bf567c76bf6a76046134074da14afc2e2f3e92927ed44e",
+    "lineage_hash": "0601b664afc1fefa136277f8cee3f0a6f26542aaa631f758fa5c26a57ecadd15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-scallops-recipe",
+    "fetchedAt": "2026-08-03T21:57:33.265Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-scallops-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

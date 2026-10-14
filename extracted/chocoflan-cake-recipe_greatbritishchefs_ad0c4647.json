@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Chocoflan Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 175°C/gas mark 4 and place a rack in the middle of the oven",
+      "Coat a 12-cup bundt pan generously with melted butter and pour in 1/4 cup Dulce de Leche. If it's too thick to pour then spread it around with a spoon, or warm it slightly in the microwave and pour into the pan. The latter method is highly recommended",
+      "Place the bundt pan in a large roasting pan (which is going to act as the water bath while baking)",
+      "Get the cake batter going by beating together the butter and sugar on medium speed till light and fluffy. An electric beater makes this much easier. Add the egg and continue beating till well combined. In a separate bowl, whisk together the flour, baking powder, baking soda and cocoa powder",
+      "Beat in 1/3rd of the flour mix into the egg mix followed by 1/2 of the buttermilk. Repeat till all the ingredients are used up, ending with flour mix. Make sure the batter is smooth and there are no lumps of flour visible. Pour this batter into the bundt pan and spread evenly",
+      "For the flan, whisk together all the ingredients (under the flan section) either in a blender or using a whisk till well combined. Make sure the cream cheese is fully incorporated into the mix and there are no lumps visible",
+      "Pour this mix slowly on top of the cake batter. It may appear to mix a bit, but that’s absolutely fine, they will separate while baking",
+      "Cover the bundt pan with foil and pour hot water into the roasting pan, about 1 inch high and carefully place into the oven. Bake for about 1 to 1 1/4 hours or until a tooth pick inserted into the cake comes out clean",
+      "Remove the cake from the water bath and keep aside to cool completely on a wire rack after which you can transfer it to the refrigerator and leave to set for at least 4 hours or overnight",
+      "When ready to serve, carefully turn the bundt pan onto a rimmed plate and jiggle it slightly to release the cake. It could be a bit challenging, but if you have greased it well enough, it would come out with a determined jiggle",
+      "Drizzle some warm Dulce de Leche on top and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "142",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "191",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "174",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "295",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": "sweetened",
+        "amount": "395",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dulce De Leche",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d252dc8004423bbea96f3b62fb08329d3d70a244299f2fcb5e272ce50c3141aa",
+    "lineage_hash": "7c3945080accc7275d034b73f61821ceccda61b972c2600fc98a397bb2ba26c5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocoflan-bundt-cake-recipe",
+    "fetchedAt": "2026-08-03T23:48:37.409Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocoflan-bundt-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

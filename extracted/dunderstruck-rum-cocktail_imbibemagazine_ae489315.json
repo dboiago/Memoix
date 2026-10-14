@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Dunderstruck Rum Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice. Strain into a rocks glass with one large cube. Garnish.",
+      "Strawberry Syrup: Cut up 1 quart of fresh strawberries and combine them with 1 quart of sugar. Lightly crush the strawberries to express them into the sugar. Let the mixture sit for 24 hours then combine with 1 quart of hot water. Stir the mixture until it has dissolved, then strain it into a container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "drops",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd4c1aa5020c3d2f7d63a47f2031e150a77de33f5b0a9ca3884981de20cea9cb",
+    "lineage_hash": "6fe73e969190cd696885f55549e32b447405b7cfc0c5307c9361b62e25f8fec0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dunderstruck-rum-cocktail/",
+    "fetchedAt": "2026-08-03T22:17:24.709Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dunderstruck-rum-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

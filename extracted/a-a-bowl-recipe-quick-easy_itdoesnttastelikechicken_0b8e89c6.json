@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Açaí Bowl",
+    "time": "5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "374",
+      "carbohydrateContent": "53",
+      "fatContent": "17",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Blend the base: Break up the frozen açaí packet and banana into chunks to help them blend more easily. Add the açaí, banana, frozen berries, ¼ cup plant-based milk, nut butter (if using), and maple syrup or agave (if using) to a blender or food processor. Blend until smooth and thick, using a tamper or pausing to scrape down the sides as needed. Add more milk, 1 tablespoon at a time, only as needed, the goal is a thick, spoonable texture.",
+      "Assemble: Scoop the smoothie mixture into a bowl, add your favorite toppings, and serve right away."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Packet (3.5 Oz / 100g) Frozen Açaí Purée",
+        "unit": null,
+        "notes": "see notes for substitutions",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Frozen Berries",
+        "unit": "C",
+        "notes": "or use a single berry like strawberry, raspberry, blueberry, or cherry",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "¼-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nut",
+        "unit": "Tbsp",
+        "notes": "alt: seed butter, optional, for richness, try cashew, almond, or sunflower",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": "alt: agave, optional, to taste",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toppings of Choice: Such As Sliced Banana",
+        "unit": null,
+        "notes": "fresh berries, granola, nut or seed butter, coconut flakes, chia seeds, hemp hearts, cacao nibs, dried berries, or a drizzle of maple syrup",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd3c3de762593bf731a83353ada6f9feeebec574aafb67ebfd1aa56df69e9bf9",
+    "lineage_hash": "a898aa2b70b081963ea54b5f2a23ad0de587ccf9518e92190f692aa213088368"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/acai-bowl-recipe-quick-easy/",
+    "fetchedAt": "2026-08-02T07:48:22.655Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/acai-bowl-recipe-quick-easy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

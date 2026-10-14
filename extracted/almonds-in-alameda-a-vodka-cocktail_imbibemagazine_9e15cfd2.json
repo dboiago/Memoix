@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Almonds in Alameda",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Dehydrated Lemon Wheel",
+      "Peychaud’s Bitters"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to an ice-filled cocktail shaker, then shake and double strain into a rocks glass over a large ice cube. Garnish with a dehydrated lemon wheel and Peychaud’s bitters."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d144efbd466cf69100c2c7e501fdabc5e7a1b73c55a7ff4c4323e2f729469db",
+    "lineage_hash": "3013a5733c37d27df4ce68ebb35819201a2e7e417a902116e44739a2b01f3e2f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/almonds-in-alameda-from-tribune-oakland/",
+    "fetchedAt": "2026-08-03T22:09:34.290Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/almonds-in-alameda-from-tribune-oakland/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

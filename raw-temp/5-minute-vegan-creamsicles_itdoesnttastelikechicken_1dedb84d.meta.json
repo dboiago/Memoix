@@ -1,0 +1,49 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamsicles/",
+  "slug": "5-minute-vegan-creamsicles_itdoesnttastelikechicken_1dedb84d",
+  "title": "5 Minute Vegan Creamsicles",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T05:35:12.643Z",
+  "ldName": "4 Ingredient Vegan Creamsicles",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "5",
+    "5 Popsicles"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "dessert, vegan",
+  "ldIngredientsRaw": [
+    "1 cup full-fat coconut milk",
+    "1 cup orange juice",
+    "3 tablespoons agave",
+    "1/2 teaspoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Toss all the ingredients in a blender and blend for a few seconds to combine. Alternatively, you could just whisk the ingredients together in a bowl, but I like the blender because it makes it easy to the pour mixture straight into the popsicle molds.",
+    "Pour the mixture into the popsicle molds and insert the popsicle sticker. Freeze for about 4 hours or until ready to serve. Run warm water over the mold to help release a popsicle when you are ready to enjoy your frosty treat."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "152 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "1 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "9 g",
+    "sodiumContent": "7 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup full-fat coconut milk",
+    "▢ 1 cup orange juice",
+    "▢ 3 tablespoons agave",
+    "▢ ½ teaspoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

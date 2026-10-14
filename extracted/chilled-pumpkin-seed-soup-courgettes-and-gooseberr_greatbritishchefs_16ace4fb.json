@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Chilled Pumpkin Seed Soup, Courgettes And Gooseberries",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the ajo blanco soup, preheat the oven to 180°C. Lightly toast the pumpkin seeds for around 10 minutes – you want them to remain green. Set aside 25g of the seeds to garnish",
+      "In a blender, briefly grind the remaining 450g toasted seeds with the garlic until it becomes fine crumbs (stop before it becomes pumpkin seed butter). Scrape down the sides of the blender to loosen the seeds, then add about 50ml of the chilled water and blend again until the seeds form a paste just fluid enough for it to turn in on itself",
+      "Squeeze the bread of any excess water and add to the blender. Blend until smooth",
+      "Add the oil and miso, if using, and blend, gradually pouring in the remaining iced water with the motor running until you end up with a smooth paste the consistency of double cream. Season with the sherry vinegar and salt, to taste. You’re looking for a nice balance between pumpkin seeds, garlic and vinegar. Chill for at least an hour",
+      "Light a barbecue or preheat a griddle pan. Barbecue, grill or sauté the whole courgettes until soft, then cut into generous mouthfuls. As the courgettes cool, season them well with salt, lemon or a few drops of vinegar and dress with olive oil. Set aside at room temperature",
+      "To serve, arrange the fresh curd cheese, courgettes, berries and most of the herbs in serving bowls and scatter over the reserved pumpkin seeds. Arrange the raw courgette slices on top, to cover, then top with the remaining herbs and flowers",
+      "Check the seasoning of the soup just before serving – the garlic will become more assertive as it sits, and it will taste different when it is fully chilled. Adjust as needed",
+      "Stir a little pumpkin seed oil into the soup, and pour into the bowls, at the table"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "or 3 if small, 1 finely sliced on a mandoline",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to drizzle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd Cheese",
+        "unit": "g",
+        "notes": "(Pam uses crowdie, goats’ curd or ricotta), broken into pieces",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gooseberries",
+        "unit": null,
+        "notes": "or 25 whitecurrants, or other sharp berries, cut into halves or quarters",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herbs",
+        "unit": null,
+        "notes": "ideally aromatic soft summer varieties like tagetes (marigold leaf), fennel, basil and mint, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "such as chive, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": "Pam uses seeds from Frinton Farms",
+        "amount": "475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": "g",
+        "notes": "made from 250g ice and 250g water",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread",
+        "unit": "g",
+        "notes": "stale, crusts removed and soaked in water for 2 hours",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": "ml",
+        "notes": "plus extra to finish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Miso",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": "plus extra as needed",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": "or to taste",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a0dd36c73e92aa4f129b594cf3f6318d104fae89e55fd94dd64b7a0f2730fdf",
+    "lineage_hash": "2766114f4de7e4e7998cf1fb709e00d1e5ca122d406903d002328a49c07d9d77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilled-pumpkin-seed-soup-courgettes-recipe",
+    "fetchedAt": "2026-08-01T19:54:05.840Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilled-pumpkin-seed-soup-courgettes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

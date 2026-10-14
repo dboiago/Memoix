@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Crispy Roasted Chickpeas",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "133",
+      "carbohydrateContent": "17",
+      "fatContent": "5",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat: Preheat oven to 375°F (190°C) or air fryer to 350°F (180°C).",
+      "Dry roast the chickpeas: Spread the chickpeas in a single layer on a baking sheet or air fryer basket. It’s okay if they’re still a bit wet. Cook until the chickpeas look dry and slightly firm on the outside:• Oven: about 25–30 minutes• Air fryer: about 18–20 minutesShake the pan or basket once or twice during cooking.VERY IMPORTANT: Shaking helps release the chickpeas so they can dry out on all sides. You’ll know they’re ready when they’ve shrunk slightly (some may have burst open), roll around easily, and look a bit darker and dry on the outside. They should also sound slightly “noisy” when shaken on the baking sheet. If they still feel soft or quiet, give them a few more minutes.",
+      "Season: Transfer the hot chickpeas to a bowl. Add the oil and salt (and any additional seasonings, if using). Toss well to coat evenly.",
+      "Roast again until crispy: Return the chickpeas to the baking sheet or air fryer and cook until golden and crispy, shaking occasionally:• Oven: 10–15 minutes• Air fryer: 8–12 minutes",
+      "Cool slightly & enjoy: Let cool completely on the baking sheet (they crisp up even more as they cool), then enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickpeas",
+        "unit": "can",
+        "notes": "15 oz/ 425 g, (or 1 ½ cups cooked chickpeas) drained and rinsed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "such as olive or vegetable",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": "or paprika",
+        "amount": "½",
+        "section": "Chili Thyme",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "or garlic powder, dried",
+        "amount": "½",
+        "section": "Chili Thyme",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Garlic paprika",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Garlic paprika",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d5378ec7e939a026c21a9b8f3dac201986cb00f86dd315521f3cc5e29d5cfe8",
+    "lineage_hash": "28805c3445d22eab57248b0189ae0ad25130bf6910ac0b251ed9d3dcfab9ab33"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crunchy-roasted-chickpeas/",
+    "fetchedAt": "2026-08-02T08:18:56.282Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crunchy-roasted-chickpeas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

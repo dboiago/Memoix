@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Butter Caramel Sauce",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the water and lemon juice in a medium saucepan and then add the sugar (do not stir). Bring to a full boil on high heat and continue to boil, without stirring, until the sugar becomes amber, about 4 minutes from when it begins to boil. As the sugar cooks, occasionally brush the sides of the saucepan with water to keep the saucepan clean (this prevents the sugar from crystallizing).",
+      "Remove the saucepan from the heat. Carefully whisk in the cream, and then whisk in the butter until melted.",
+      "Whisk in the vanilla and salt and set aside to cool for at least an hour. Serve warm (it can be reheated, if needed). To store, cool to room temperature before chilling in an airtight container or jar (see note below). If gifting, pack the fluid caramel into little jars, then let set in the fridge before labelling with a \"serve by\" date along with heating instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cut in pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2a6e4749172d07114fedec160d29d273e4d19c2cfa0cf23a9836d545148d2cb",
+    "lineage_hash": "84904bc25e39eeabde2440ba15b13291a58b04264820c3a248f730a926bdbdd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/butter-caramel-sauce/",
+    "fetchedAt": "2026-08-01T18:09:46.077Z"
+  },
+  "rawSource": "https://annaolson.ca/project/butter-caramel-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

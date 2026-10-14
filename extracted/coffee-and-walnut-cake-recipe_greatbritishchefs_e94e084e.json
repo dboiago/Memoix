@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Coffee and Walnut Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 180°C/gas mark 4. Grease and line 2 x 8 inch (20cm) sandwich tins with baking paper",
+      "Cream the butter and sugar together until light and fluffy – I use a hand-held whisk for this",
+      "Add the beaten eggs, a little at a time, with a tablespoon of flour to stop it curdling, and beat well between each addition of egg and flour",
+      "Add any remaining flour along with the coffee and walnuts and mix well",
+      "Divide the cake mixture between the two sandwich tins and bake for 20–25 minutes, or until well risen and a dark golden brown. Remove from the oven and allow to cool for 2 minutes before turning the cakes out onto a wire rack",
+      "Whilst the cakes are cooling, make the coffee buttercream. Beat the butter together with the icing sugar until pale and fluffy, then add the coffee and chopped walnuts. Mix well again and allow to firm up in the fridge for 15–20 minutes",
+      "When the cakes are completely cold, sandwich them together with half of the coffee buttercream. Spread the rest of the buttercream over the top of the cake and decorate with the walnut halves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "large and beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "Tbsp",
+        "notes": "mixed with 1 tbsp of boiling water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "Tbsp",
+        "notes": "mixed with 1 tbsp of boiling water into a paste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c47c9f6f83e5b3a4a253c2ed66c514dd8c9980a5e7b1d9c64b13d898c8c940b",
+    "lineage_hash": "c269a88494fd7d2d6414217af1b122deedbda71090afd6cda675c0bd0d5474c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-walnut-cake-recipe",
+    "fetchedAt": "2026-08-03T15:14:36.176Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-walnut-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

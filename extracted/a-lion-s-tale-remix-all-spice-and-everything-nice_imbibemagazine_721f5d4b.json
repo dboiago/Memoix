@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Lion's Tail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients into a shaker and shake for at least 15 seconds. Strain over fresh ice in a rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Elizabeth's Allspice Dram",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77c0c3ca281feb4f0d6d2a72ab45ce4b9455dbf0a798c938193be27b7c62e070",
+    "lineage_hash": "458bb379fec24aae0a1beafda3a4bbdaabfb9d165f9bb21f5407c95f6320fd99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/lions-tail-remix-all-spice-and-everything-nice/",
+    "fetchedAt": "2026-08-03T17:56:59.118Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/lions-tail-remix-all-spice-and-everything-nice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

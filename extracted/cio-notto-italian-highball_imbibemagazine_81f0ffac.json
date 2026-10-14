@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "Cio-Notto: Italian Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chill both of the ingredients before serving. Add both to a glass filled with ice cubes, then stir gently to combine. Twist a piece of lemon peel over the drink, then use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro Ciociaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lurisia Chinotto Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "834a1ca496dde9362b05857b6a55f18b544ad95c7e1850b849f0ef3acca163fd",
+    "lineage_hash": "fda6c2830703267b60d2424defb7a43dd8352eb7828247ca9e4944a064620e5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cio-notto-italian-highball/",
+    "fetchedAt": "2026-08-03T20:47:39.859Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cio-notto-italian-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

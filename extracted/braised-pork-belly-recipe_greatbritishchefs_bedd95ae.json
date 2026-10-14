@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Braised Pork Belly",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sprinkle half the salt in the bottom of a tray and add the belly, skin-side down. Add the rest of the salt on top and rub in well. Cover with clingfilm and place in the fridge for 12 hours",
+      "Heat the oven to 80°C. Wash, dry and then wrap in cling film and then tin foil. Roast for 12 hours. Keep the juices for the Port jus; you will need two pints",
+      "Remove from the oven, place another tray on top of the belly and weight down. Leave in the fridge for 24 hours. Remove the tin foil and the cling film and cut into portions",
+      "Brown the belly on all sides in a frying pan. Then place in a warm oven at 150°C/Gas mark 2 until ready to serve",
+      "Place the apples in a saucepan with a pinch salt, sugar and chicken stock and bring to a simmer. When soft, liquidise and push through a sieve. Season, adding a knob of butter. Set aside",
+      "Heat the oven to 160°C/Gas mark 2 or 3. Wrap the garlic cloves in a large sheet of tin foil, douse with the rapeseed oil and season",
+      "Wrap into a parcel and slowly roast for 1 ½ hours. Take out and peel the cloves. Put into a blender with the cream, butter and balsamic.  Blitz to a fine purée, sieve if desired and keep until needed",
+      "Reduce the stock by two thirds. Keep tasting; you want a full flavoured jus. Pass through a chinoise into another pan. Reduce the white port until syrupy, then add the port to the jus",
+      "To plate warm all the components separately and serve with the belly pork"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "290",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78cb19ef41cff963b8e8c8d29a31b1d87fe4edbdeaa65f1ccd9421ab9e8b6c54",
+    "lineage_hash": "96d31b197775b7148f0c3b8e0cf550087c715e7861a3c5108df27d2920c0a8a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-pork-belly-recipe",
+    "fetchedAt": "2026-08-03T21:15:21.054Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-pork-belly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Autumn Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Orange Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice and stir to chill. Strain into a glass over one large ice cube. Garnish.",
+      "Pumpkin Seed-Washed ScotchAdd 1/2 Tbsp. of toasted pumpkin seed butter and 3/4 oz. toasted pumpkin seed oil to a saucepan on low heat and stir continuously until butter is melted. Add the mixture to 750ml of scotch whisky with 1 cinnamon stick in a sealable container, shake vigorously, and then place in the freezer. Remove solids and fine strain through a coffee filter. Will keep for up to a couple of months in the refrigerator.",
+      "Note“Refrigerating it can help prevent the fats from going rancid and preserve the flavor of the whiskey,” says Hedges. “If any changes in color, smell, or taste are detected, it’s best to err on the side of caution and get rid of it.”"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin Seed-washed Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f7f86f671795ab5546a126b46397d4dbb3eef362090a1a862649cb012bf82b9",
+    "lineage_hash": "8b5552abc71e793414687457de699cf9d1ae92121bee8fd814b629c8751d12b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumn-old-fashioned/",
+    "fetchedAt": "2026-08-04T00:15:54.155Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumn-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

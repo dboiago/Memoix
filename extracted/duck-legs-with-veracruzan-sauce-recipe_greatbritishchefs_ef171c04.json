@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Duck Legs with Veracruzan Sauce",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, generously season the duck legs with salt and pepper and leave for 10–15 minutes to come to room temperature",
+      "Heat the oil in a large, heavy-based casserole and add the legs, skin-side down. Keep the heat on medium-high and brown the legs, rendering the fat for about 15 minutes, decanting as much fat as possible halfway through and adjusting the heat so that the skin crisps and browns but does not burn. Once they are a lovely golden colour, transfer them to a plate. You should have about 4 tbsp duck fat in the pan",
+      "Add the onion, reduce the heat to medium and sweat gently for 5 minutes before adding the carrots, fennel and garlic. Season generously and allow the vegetables to soften in the fat for about 10 minutes, stirring occasionally",
+      "Now add the herbs, spices, tomatoes, sherry and stock and cook for about 5 minutes, breaking up the tomatoes with a wooden spoon and bringing everything up to a gentle simmer",
+      "Return the duck legs, along with any juices, back to the casserole and add a lid, slightly askew to allow some gentle evaporation of the sauce",
+      "Stew very gently over a low heat, so that the sauce is barely bubbling, for about 1 1/2 hours or until the duck meat is tender and falls away from the bone",
+      "About 10 minutes before the end of cooking, stir in the jalapeños, capers and olives. Check and adjust the seasoning and serve with brown basmati rice and some sautéed greens"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spanish Onion",
+        "unit": null,
+        "notes": "large, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "large, finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "3–4 (preferably fresh)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Oregano Leaves",
+        "unit": null,
+        "notes": "or thyme",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Plum Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "ml",
+        "notes": "Manzanilla",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapeños",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "g",
+        "notes": "good-quality, pitted and roughly chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3524dd4af17184b0099050d58e5da72ea36dd4d7f9b10050104c30dca059eb0e",
+    "lineage_hash": "8a1f1dae2b7a65af6ffeb3fdcbcd2cc12b57a40fd1d961346c520c221710d203"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-legs-with-veracruz-sauce-recipe",
+    "fetchedAt": "2026-08-03T11:26:23.522Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-legs-with-veracruz-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

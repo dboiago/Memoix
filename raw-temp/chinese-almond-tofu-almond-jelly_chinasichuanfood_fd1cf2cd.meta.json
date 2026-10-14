@@ -1,0 +1,62 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-almond-tofualmond-jelly/",
+  "slug": "chinese-almond-tofu-almond-jelly_chinasichuanfood_fd1cf2cd",
+  "title": "Chinese Almond Tofu (Almond Jelly)",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:27:02.245Z",
+  "ldName": "Chinese Almond Tofu",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Dessert, dim sum",
+  "ldKeywords": "Almond, tofu",
+  "ldIngredientsRaw": [
+    "1/2 cup sweet apricot Kernel (, pre-soaked in the previous day in fridge)",
+    "2 cups water ( for apricot seed milk )",
+    "2 cups milk",
+    "6-7 g agar agar (, I use strips this time, note 1)",
+    "1 cup water (, for cooking the agar )",
+    "1/4 cup crystal sugar ( , can create a very faint sweetness, or more if needed (adjust based on how the dessert is served))",
+    "1 tbsp.  osmanthus syrup",
+    "1 cup hot water"
+  ],
+  "ldInstructionsRaw": [
+    "Apricot Kernel milk | Soak the sweet apricot kernel with clean water overnight. Remember to place in fridge.  Transfer the soaked apricot kernel into blender, then followed with 2 cups of water. Blend well. Drain to get the milk. Don&#039;t discard the pulp, sun dry it and use in cookies.",
+    "Agar Soaking|  Soak agar agar strips in cold water for 1 hour.",
+    "Cooking Agar|  In a small pot, add 1 cup of water and soaked agar, heating to boiling until the agar strips are almost dissolved! This may take more than 10 minutes, be patient.",
+    "Combine Mixture |  Add sugar and apricot kernel milk, simmer for another 8-10  minutes. Turn off fire and pour in milk. Combine well.",
+    "Straining | Strain the mixture once again. The agar is quite hard to dissolve completely, make sure they are removed.  You can use pudding container, bowl or a large container. Set aside for cooling. The dessert can be firmed under room temperature when the temperature of the liquid drops to 40 degree C. Then either served directly or chilled before serving.",
+    "Serving| 1. Add canned fruits or fresh fruits  2. Pour 1 cup of hot water to 1 tablespoon of osmanthus syrup. Set aside to cool. 3. Shifting matcha powder"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "146 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "5 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "2 g",
+    "cholesterolContent": "8 mg",
+    "sodiumContent": "46 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "13 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1/2 cup sweet apricot Kernel , pre-soaked in the previous day in fridge",
+    "2 cups water  for apricot seed milk",
+    "2 cups milk",
+    "6-7 g agar agar , I use strips this time, note 1",
+    "1 cup water , for cooking the agar",
+    "1/4 cup crystal sugar  , can create a very faint sweetness, or more if needed (adjust based on how the dessert is served)",
+    "[Serving with sweet-scented osmanthus]",
+    "1 tbsp.  osmanthus syrup",
+    "1 cup hot water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

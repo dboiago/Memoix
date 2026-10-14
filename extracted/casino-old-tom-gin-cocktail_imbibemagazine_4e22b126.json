@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Casino Old Tom Gin Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in an ice-filled rocks glass, stir to combine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Old Tom Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regan's Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b403ad078dd420535ba73f280ea3ef3ca4eec71ae6dc4e5468c1a9eee8a6b0a",
+    "lineage_hash": "29143d37fbaf3c918db722073eb0df6808800f1bf59d5477e18c38c1656da3b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/casino-old-tom-gin-cocktail/",
+    "fetchedAt": "2026-08-03T19:18:05.866Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/casino-old-tom-gin-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

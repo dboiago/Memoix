@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Bouquet Of Candied Bacon Roses",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "372",
+      "carbohydrateContent": "15",
+      "fatContent": "30",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Fire up. You can cook the bacon roses on a smoker or grill. I usually grill them. Set up the grill for 2-zone cooking with the indirect side at about 300°F (162.8°C) to help crisp the bacon. If you wish, add wood to the direct side to create smoke. Use a lot of smoke.",
+      "Prep the bacon. Lay the bacon slices on a parchment covered sheet pan and brush the top side of the slices with agave syrup. Sprinkle the brown sugar over the slices and use the pastry brush to create an even coating of agave syrup and brown sugar over the slices.",
+      "Flip the slices over. Starting at one end of each, begin rolling each slice in to a tight spiral. When you get to the end, insert one toothpick through the side each spiral/rose to keep the outer end of the slice in place.",
+      "Cook. Place the bacon spirals/roses on the indirect side of the grill or smoker as far from the heat as possible. Cover the grill and allow the bacon to cook until firm and nicely browned, approximately 30 minutes. Remove the bacon spirals from the grill and set aside.",
+      "Assemble. Remove the flowers from the flower bouquet, leaving only the stems and leaves. Set the bouquet in a vase and impale one bacon spiral/rose on the end of each stem. If the bacon slides down the stem a bit, use the wire on the stem to secure the bacon on the stem. You can also use green florist tape to tape the bottom of the bacon to the stem.",
+      "Serve. Present the candied bacon bouquet to your special someone and watch them smile!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thick-cut Bacon",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "888fe6fa740b14cf1277662c896ff90baaf2804f7b43526242c850273d38ba02",
+    "lineage_hash": "b56c9e7e5c38830ca0d65b39d268cad636968e0a39c3a1e9fdc05d7c61e3efd0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/candied-bacon-roses/",
+    "fetchedAt": "2026-08-02T03:00:25.972Z"
+  },
+  "rawSource": "https://amazingribs.com/candied-bacon-roses/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

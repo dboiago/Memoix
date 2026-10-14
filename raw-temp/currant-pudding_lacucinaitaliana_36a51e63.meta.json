@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/currant-pudding",
+  "slug": "currant-pudding_lacucinaitaliana_36a51e63",
+  "title": "Currant Pudding",
+  "byline": "by  Editorial staff   November 8, 2020",
+  "fetchedAt": "2026-08-03T05:22:54.413Z",
+  "ldName": "Currant Pudding",
+  "ldTime": "PT270M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Dessert,Dolce,Dolcetti,Dolci,Ribes",
+  "ldIngredientsRaw": [
+    "2 2/3C. milk",
+    "17OZ. currants",
+    "1 scantC. cream",
+    "1C. sugar",
+    "0.7OZ. gelatin leaves"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Soften the gelatin in cold water. Husk (if needed) and wash the currants and cook them over low heat with 1/4 cup sugar, crushing them with a fork. Cook for 2-3 minutes after they reach the boiling point. When they begin to dissolve, strain them without crushing them to get the juice (coulis). Allow it to cool.</p>",
+    "<p>Heat the milk with 3/4 cup sugar; when it boils, remove from heat, temper the drained gelatin in it, then add the cream and the currant coulis. Mix thoroughly.&nbsp;</p>",
+    "<p>Pour this mixture into a mold (use a silicon one to remove the pudding more easily). Refrigerate for at least 4 hours, preferably overnight. Unmold, garnish as you like and serve.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 2/3 C. of milk",
+    "17 OZ. of currants",
+    "1 scant C. of cream",
+    "1 C. of sugar",
+    "0.7 OZ. of gelatin leaves"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

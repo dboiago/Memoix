@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Cheese, Pear and Kale Pithivier",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by poaching the pears. Heat the vinegar, water and spices together until they come to the boil. Peel the pears and place in the poaching liquor, weighing them down with a plate to keep them submerged. Simmer until the pears are just cooked – this should take about 15-20 minutes but will depend on the ripeness of the pears. Remove from the heat and leave to cool in the liquor. Refrigerate until needed",
+      "To make the pithivier, begin by rolling out the pastry to a 4mm thickness. Cut out four 10cm wide discs and four 15cm discs. Place on a tray and cover to stop them drying out. Place in the fridge",
+      "Over a medium heat, warm the butter until foaming, add the shallots and gently cook until they are soft and translucent, but do not have any colour. Add 100ml of water and the kale and wilt over a high heat until tender. Drain and place on a tray to cool. Once cool enough to handle, squeeze the excess water out of the kale",
+      "To assemble, take the four 10cm discs of puff pastry and place on a baking tray. Put a pile of the kale on each disc, leaving a 1cm border around the edges. Remove the pears from the poaching liquid, cut in half lengthways and cut out the cores. Slice the pears and place on top of the kale. Top the pears with sliced Lancashire cheese then top with the four 15cm discs. Gently mould over the filling and seal onto the bottom disc, leaving you with a nice dome shape. Brush the pithiviers with the egg yolk and reserve in the fridge for at least 1 hour",
+      "Remove from the fridge and cut a 1cm hole in the top of each pithivier, to allow the steam to escape whilst cooking. Take a paring knife and score the outside of the pastry, making sure you don't go all the way through. Bake for 20–30 minutes until golden brown",
+      "In a pan set over a high heat, reduce the pear cooking liquor to a thick syrup",
+      "When the pithiviers are golden-brown, remove and serve immediately, garnished with the reduced pear cooking liquor spooned around the outside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pcs",
+        "notes": "fresh, 1/4 inch thick",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lancashire Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale",
+        "unit": "g",
+        "notes": "trimmed and chopped",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "74ddbe16ed24a043cb595795e76ca99899e763f920871be0af2ed9f3e78eb6cd",
+    "lineage_hash": "32db6bfd553dcc858f45bb12d762168d32f037f2b4b3494e73c0bc3cc9d72d40"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheese-pear-kale-pithivier-recipe",
+    "fetchedAt": "2026-08-03T09:03:27.235Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheese-pear-kale-pithivier-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

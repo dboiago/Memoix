@@ -1,0 +1,375 @@
+{
+  "recipe": {
+    "name": "Cod with Textures of Broccoli and Gnocchi",
+    "time": "2 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The confit lemon can be made well in advance, so prepare this first (you could also use plain lemon zest if preferred to make things easier). Place the lemons in a pan of cold water and bring to the boil, then drain. Repeat this process 4 more times to remove the bitterness",
+      "Place the water, salt, sugar, coriander seeds and cloves in a pan and bring to the boil. Add the lemons and simmer for 11 minutes. Drain, reserving the liquid, then rub the lemons in turmeric. Place in a plastic container, pour the liquid back over the lemons, then allow to cool. Store in the fridge until needed, ensuring the lemons are fully submerged",
+      "Cover the cod loin with rock salt and set aside to lightly cure for 10 minutes, then wash off the salt and roll tightly in cling film to create a cylinder. Set aside in the fridge",
+      "Cut the stems from the broccoli and put the florets to 1 side. Finely shave half of the broccoli stems with a mandoline or vegetable peeler and place in iced water to curl up. Dice the remaining stems into small cubes, then place in a bowl. Mix together all the ingredients for the pickling liquid, then pour this over the diced broccoli. Set aside to pickle",
+      "Take 250g of the reserved broccoli florets and place in a food processor. Pulse until they form a couscous consistency, then place in a large pan with 500ml water, the olive oil, butter, salt and sugar. Bring to the boil, then strain (reserving the liquid). Place the cooked broccoli into a blender with the spinach and blitz until smooth, adding a little of the reserved cooking liquid to achieve a purée consistency. Transfer to a piping bag and set aside in the fridge",
+      "For the smoked oyster mayonnaise, place the oysters (and their juices) along with the egg, mustard and vinegars in a small blender or food processor. Blitz for a few minutes until smooth, then drizzle in the smoked oil until emulsified. Season with a pinch of salt and a squeeze of lemon juice. At this point you can divide the mayonnaise in 2 and add a little squid ink to 1 batch, but this is entirely optional. Transfer the mayonnaise to a piping bag (or bags) and set aside in the fridge",
+      "Cook the corn in boiling salted water until soft, then use a knife to remove the kernels in strips. In the same water, blanch the Tenderstem broccoli for a minute or 2, then separate the florets and stems. Chop the stems into small pieces, then set aside",
+      "To make the gnocchi, blitz half of the flour with the parsley to create a pale green parsley flour. Mix the mashed potato with the egg, olive oil, Parmesan and salt, then divide this mixture into 2 piles. Add the parsley flour to 1 pile, and the remaining flour plus a little squid ink to the second. (This is optional – you can simply create the green parsley gnocchi)",
+      "Once the mixtures have been kneaded into a dough, roll into thin logs and cut into small gnocchi. Blanch in salted boiling water for a minute or 2 until they float to the surface, then refresh in iced water. Drain and toss in a little olive oil and set aside",
+      "Cut the cod into 8 portions, leaving the cling film wrapped around each piece. Season lightly with salt and add to a pan with a dash of oil. Cook on 1 side until golden, then slide the cling film off. Add a few knobs of butter and begin basting the cod until golden on both sides. Finish with a squeeze of lemon and set aside to rest",
+      "To finish cooking the gnocchi, add a knob of butter to a pan and add a little of the pickling liquid from the broccoli. Add the cooked gnocchi, shallots and mixed herbs, along with some of the pickled broccoli stems and the reserved Tenderstem broccoli. Finely chop a little of the confit lemon and add this to the pan too, then stir and cook until warmed through",
+      "Briefly blowtorch the sweetcorn kernels until charred and ensure you have all the elements for the dish ready",
+      "To serve, place a portion of cod in the base of each serving dish. Top with the gnocchi fricassee and the corn, then add dots of broccoli purée and oyster mayonnaise around. Garnish with some of the shaved broccoli and edible herbs and flowers, then add a little more of the pickling liquor"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Loin",
+        "unit": null,
+        "notes": "big enough to cut 8 small portions from, skinned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tenderstem Broccoli",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for frying",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oysters",
+        "unit": null,
+        "notes": "shucked and juices reserved",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink Sachet",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mashed Potatoes",
+        "unit": "g",
+        "notes": "as dry as possible",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curly Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink Sachet",
+        "unit": null,
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mixed Herbs",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "tops and bottoms sliced off",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "108",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Herbs",
+        "unit": null,
+        "notes": "and flowers, such as popcorn shoots, nasturtium leaves and cornflowers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "948190e6f1cb5565e42674e8d2afb280aa0f8434087724b94e467aaa3d22ce11",
+    "lineage_hash": "ea7120ef4fa99becc4cb4959225c7d93be98755f3eb24f04a2f7f75f189c88bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-broccoli-gnocchi-recipe",
+    "fetchedAt": "2026-08-03T03:46:18.139Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-broccoli-gnocchi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

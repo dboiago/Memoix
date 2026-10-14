@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Ciambotta di Verdure",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add 1 tbsp. of olive oil to a large sauté pan. Place over a medium heat, add the peppers and cook until nicely softened and coloured. Season with salt and pepper, then transfer to a large mixing bowl. Set aside",
+      "Add another tbsp. of oil to the pan and cook the courgette using the same method. Once ready, repeat with the aubergine and red onion, again cooking in separate batches",
+      "Approximately one quarter down the side of the loaf, cut the top off in a circular shape. Pull out almost all of the soft centre of the bread to create a vessel for the filling",
+      "Mix your reserved cooked vegetables well, then stir the eggs into the hot vegetables so they scramble and cook. Mix in the fresh herbs, dried oregano and pecorino. Season to taste then transfer the filling to the hollowed-out loaf",
+      "Drizzle some olive oil over the top, replace the ‘lid’ of the loaf and set aside at room temperature overnight to allow the loaf to firm up. During this time, flip the loaf over 3-4 times to allow the juices to evenly soak into all parts of the loaf"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Pepper",
+        "unit": "g",
+        "notes": "cut into 1.5cm cubes",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "cut into 1.5cm cubes",
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergine",
+        "unit": "g",
+        "notes": "cut into 1.5cm cubes",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "cut into 1.5cm cubes",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Loaf",
+        "unit": null,
+        "notes": "weighing 2.5kg, or 2 x 1.25kg loaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "pinch",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to drizzle",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4be92253f22c1cf6780f87099aa4063e547cb9f88c0ab291bfed4ed65965f5fe",
+    "lineage_hash": "52b3b34804884ca7dda44d29fe2de74e358c32e50a8500d679001f2e6867974f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ciambotta-di-verdure-recipe",
+    "fetchedAt": "2026-08-03T15:35:23.139Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ciambotta-di-verdure-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

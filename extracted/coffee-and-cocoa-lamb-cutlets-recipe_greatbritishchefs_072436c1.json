@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Coffee And Cocoa Lamb Cutlets",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pickled shallots, place the shallot rings in a heatproof bowl. Combine the vinegar, water, sugar, salt, peppercorns and coriander seeds in a small saucepan. Bring to a simmer then remove from the heat and pour over the sliced shallots. Set aside for 30 minutes at room temperature then chill in the fridge until needed",
+      "For the flatbreads, combine the flour, baking powder and salt in a large mixing bowl. Add the yoghurt and mix to form a soft dough, adding the water slowly until you have a soft dough. Lightly knead for 1-2 minutes until smooth then cover and rest",
+      "For the mint yoghurt, combine all the ingredients. Season to taste with salt then set aside in the fridge to let the flavours infuse",
+      "For the coffee and cocoa lamb cutlets, first make the spice rub. Combine the coffee, cocoa powder, paprika, cumin, black peppercorns and sea salt in a spice grinder or mortar and pestle and grind until fine",
+      "Pat dry the lamb cutlets, then rub with the olive oil and coat all over with the rub. Set aside",
+      "To cook the flatbreads, divide the dough into 4 even-sized pieces and roll into rounds 0.5cm thick. Heat up a cast-iron pan over a medium-high heat then cook the flatbreads one at a time for 1-2 minutes on each side until puffed up and golden. Brush with olive oil, slice into pieces and keep warm, wrapped in a clean cloth",
+      "Meanwhile, to grill the lamb, heat up a griddle or frying pan until very hot",
+      "Grill the cutlets for 2-3 minutes on each side, so they form a dark aromatic crust – you may need to work in batches. Remove and leave to rest for 5 minutes",
+      "While the lamb rests, remove some shallot rings from their pickling liquid, to garnish, saving the rest in the fridge for other dishes",
+      "To serve, spread the mint yoghurt across plates with the back of a spoon. Divide up the flatbreads, arrange 3 lamb cutlets onto each place to give some height and scatter over the pickled shallot rings. Drizzle over a little olive oil and serve with the mint leaves and a dusting of sumac, smoked paprika, salt and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced into rings",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "or a little more as needed, to bring the dough together",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "for brushing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "Tbsp",
+        "notes": "or ground coffee",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": "plus extra to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lamb Cutlets",
+        "unit": null,
+        "notes": "French-trimmed, at room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bac4712c91873b7dfa0ced45b38be5687d091311eee06047207053996bcbbcf",
+    "lineage_hash": "199af141eb44a183197fa265f0ea1fa2eb341f3c3d5fc1c863a96c3494b9658a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-cocoa-lamb-cutlets-recipe",
+    "fetchedAt": "2026-08-01T21:14:29.931Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-cocoa-lamb-cutlets-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

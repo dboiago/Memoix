@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Avocado Smoothie",
+    "time": "20 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients with ice cubes in a blender and blend to a smooth mix."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "ripe, halved and pitted",
+        "amount": "1",
+        "section": "Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "chill before use",
+        "amount": "1",
+        "section": "Option 2 (Lactose-free)",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Option 2 (Lactose-free)",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Milk / Almond Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Option 2 (Lactose-free)",
+        "isOptional": false
+      },
+      {
+        "name": "Little Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Option 2 (Lactose-free)",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Option 2 (Lactose-free)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c341855efee7c37cc45f2e57e53d8be5074fc771bfee81927d749311cdb6b9f2",
+    "lineage_hash": "0b885478617b87cbe9e712b10372ea22d9160c57a57912c12bce92d3aaead8f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/avocado-smoothie/",
+    "fetchedAt": "2026-08-02T00:47:44.206Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/avocado-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

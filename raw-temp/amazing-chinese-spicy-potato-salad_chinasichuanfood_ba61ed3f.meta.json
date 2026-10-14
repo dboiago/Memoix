@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-spicy-potato-salad/",
+  "slug": "amazing-chinese-spicy-potato-salad_chinasichuanfood_ba61ed3f",
+  "title": "Amazing Chinese Spicy Potato Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:05:59.410Z",
+  "ldName": "Amazing Spicy Potato Salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "Main Course",
+  "ldKeywords": "potatoes",
+  "ldIngredientsRaw": [
+    "3-4  small potatoes ( ,tiny sliced)",
+    "3  garlic cloves ( ,finely chopped)",
+    "2  scallions ( ,chopped)",
+    "2 tbsp. Chinese chili oil",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. vinegar",
+    "1 tbsp. toasted sesame oil",
+    "1/2 tsp. sugar",
+    "2 tbsp. cumin powder",
+    "pinch of salt",
+    "4-5  coriander"
+  ],
+  "ldInstructionsRaw": [
+    "Thinly slice the potatoes and then soak in clean water for couple of minutes to remove the extra starch.",
+    "Bring water to a boil and then cook the potato slices for 2-3 minutes. Transfer out and soak in cold water. Drain and set aside.",
+    "Prepare another small pan, add 1 tablespoon of cooking oil and fry garlic and scallions until aromatic. Place light soy sauce, cumin powder, chili oil, salt, sugar, vinegar, sesame oil and sesame seeds in. Mix well",
+    "Mix the sauce with the potato slices with a small bunch of coriander. Serve directly."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "274 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "7 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "1449 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "3-4 small potatoes  ,tiny sliced",
+    "3 garlic cloves  ,finely chopped",
+    "2 scallions  ,chopped",
+    "2 tbsp. Chinese chili oil",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. vinegar",
+    "1 tbsp. toasted sesame oil",
+    "1/2 tsp. sugar",
+    "2 tbsp. cumin powder",
+    "pinch of salt",
+    "4-5 coriander"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

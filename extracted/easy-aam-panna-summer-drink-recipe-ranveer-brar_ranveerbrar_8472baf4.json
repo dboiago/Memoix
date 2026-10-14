@@ -1,0 +1,314 @@
+{
+  "recipe": {
+    "name": "Aam Panna (Summer Drink)",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai, add raw mango, water, salt to taste, jaggery, jinger, green chilli.",
+      "Cover it with a lid and cook on medium flame until mango is cooked well.",
+      "Cool completely, and peel the skin of mango.",
+      "Also, scrape the pulp of mango making sure the skin has separated.",
+      "Transfer the mango pulp into a bowl, further transfer it into a grinder jar and grind it into a smooth paste and keep aside for future use.",
+      "In a pan, add cumin seeds, fennel seeds, green cardamom pods, black peppercorns and black salt dry roast them well.",
+      "Once it's cool down, transfer it into a grinder jar and grind it into a fine powder.",
+      "In a tall glass take a spoonful of aam panna and add lime juice, a few ice cubes.",
+      "Add a spoonful of prepared masala mix well. pour in mango juice and ice-cold water mix well.",
+      "Finally, enjoy aam panna garnished with sliced raw mango.",
+      "In a kadai, add pineapple, water, salt to taste, sugar, jinger, green chilli.",
+      "Cover it with a lid and cook on medium flame until pineapple turns soft and cooked well.",
+      "Now remove from the flame and let it cool.",
+      "Transfer the pineapple into a grinder jar, add saffron strands and grind it into a smooth puree and keep aside for future use.",
+      "In a tall glass take a spoonful of pineapple panna and add lime juice, a few ice cubes.",
+      "Add a spoonful of prepared masala mix well. pour in ice-cold water and mix well.",
+      "Finally, enjoy pineapple panna.",
+      "In a kadai, add guava, water, salt to taste, sugar, dry red chillies.",
+      "Cover it with a lid and cook on medium flame until guavas turn soft and cooked well.",
+      "Now remove from the flame and let it cool.",
+      "Transfer the guavas into a grinder jar, add degi red chilli powder and grind it into a smooth puree and keep aside for future use.",
+      "In a tall glass take a spoonful of guava panna and add lime juice, a few ice cubes.",
+      "Add a spoonful of prepared masala mix well. pour in guava juice and ice-cold water mix well.",
+      "Finally, enjoy guava panna garnished with a slice of guava."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Size Raw Mango",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, slice",
+        "amount": "1",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aam Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango",
+        "unit": null,
+        "notes": "sliced for garnish",
+        "amount": "0",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Pineapple",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to Taste",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, slice",
+        "amount": "½",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pineapple Panna",
+        "isOptional": false
+      },
+      {
+        "name": "Guava",
+        "unit": null,
+        "notes": "cut",
+        "amount": "4",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to Taste",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Guava panna",
+        "isOptional": false
+      },
+      {
+        "name": "Guava Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Serving",
+        "isOptional": false
+      },
+      {
+        "name": "Guava",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": "For Serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "172195e6af1b9d95257a96416f9dd99a92b155d2c718959f9b2947b0beb4fe62",
+    "lineage_hash": "718d68514733ce8d729d0d2327455a0547d9017b5ce08754804a2c406406bb39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aam-panna-2/",
+    "fetchedAt": "2026-08-02T20:53:04.919Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aam-panna-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

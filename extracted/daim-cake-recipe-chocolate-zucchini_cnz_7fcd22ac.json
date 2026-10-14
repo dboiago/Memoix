@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Daim Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F) and grease a 25-cm (10-inch) cake pan (I use one with a removable bottom).",
+      "In a medium mixing bowl, sift together the flour, baking powder, baking soda, salt, nutmeg and almond flour. In a smaller bowl, toss the chopped Daims with a tablespoon of the flour mixture.",
+      "Cream the butter in the food processor for 3 minutes. Add in the granulated sugar and process for 2 minutes. Add in the brown sugar and mix for another minute. Add in the eggs, one at a time, mixing well between each addition. Add in the vanilla extract and mix again.",
+      "Add the flour mixture in three additions, alternating with the yogurt in two additions, beginning and ending with the flour mixture. Avoid overmixing the batter. Stir in the chopped Daims, and pour the batter into the cake pan, leveling the surface with a spatula.",
+      "Put into the oven to bake for 55 minutes to 1 hour, until the top of the cake is brown and a knife inserted in the center comes out clean.",
+      "Let rest for 5 minutes on a rack, unmold and return to the rack to cool completely. Dust the top with confectioner's sugar if desired (and not if it's meant to be a birthday cake!)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "freshly grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": "a.k.a. almond meal or ground almonds",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daims",
+        "unit": "g",
+        "notes": "unwrapped and roughly chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4134dc38cee6e228f51cb2226e16300da89a8209d697b25410e076781c098e7",
+    "lineage_hash": "d827cc2b8f205a92f3f590f09911da4ccfd49a22485376afc367cf4f863d9f36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/daim-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:02:22.448Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/daim-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

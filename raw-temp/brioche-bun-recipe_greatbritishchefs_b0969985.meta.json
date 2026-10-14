@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/mini-brioche-recipe",
+  "slug": "brioche-bun-recipe_greatbritishchefs_b0969985",
+  "title": "Brioche Bun Recipe",
+  "byline": "by Kevin Mangeolles",
+  "fetchedAt": "2026-08-03T14:58:56.779Z",
+  "ldName": "Spiced brioche buns",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "500g of plain flour",
+    "50g of sugar",
+    "1/2 tsp cinnamon",
+    "1/2 tsp ground nutmeg",
+    "2 tsp salt",
+    "6 eggs",
+    "25g of fresh yeast, or 12g dried yeast",
+    "250g of butter, diced",
+    "1 tbsp of sunflower oil"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C/gas mark 4",
+    "Combine the flour, sugar, cinnamon, nutmeg and salt in a large mixing bowl - you can double the sugar for a sweeter result",
+    "Make a well in the middle and mix in the eggs with your hands for 5 minutes",
+    "Add the yeast and continue to mix for another 5 minutes to form a smooth dough",
+    "Switch to a wooden spoon and gradually add the cubes of butter, keep mixing until all of the butter is incorporated and the dough is shiny and elastic",
+    "Rub a little oil into each mould of a muffin tray, or line each with a square of parchment paper. Place 40g of dough into each mould and leave in a warm place for 25 minutes to prove and double in size",
+    "Bake in the oven for 8 minutes, until golden brown and puffy, returning to the oven for an extra 3-4 minutes if not ready",
+    "Serve warm with butter and jam, or with ham and cheese"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Coronation Chicken and Butternut Pie with Mango Jelly",
+    "time": "5 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C and line an oven tray with tin foil",
+      "Dress the squash with the veg oil and roast for 20 minutes on the lined tray",
+      "Remove and allow to cool to room temperature",
+      "To make the dough, rub the diced butter with the flour until almost reaches a breadcrumb-like texture (tiny nuggets of butter is fine)",
+      "Dissolve the salt in the water then mix the beaten egg into the water as well",
+      "Fold the liquid into the flour/butter mix, kneading together just until no remaining flour is visible and the dough comes together",
+      "Flatten the dough, wrap it in cling film and chill for at least an hour",
+      "Put the chicken thighs into a food processor with the coriander and salt and pulse until almost smooth",
+      "Transfer the chicken to a bowl and mix with the spices and roasted squash",
+      "Fold in the diced chicken breast, sultanas and chilli",
+      "Line a large pudding basin or round bowl with cling film and stuff with the chicken mix. Chill for 1 hour in the fridge to firm up",
+      "Cut the dough in half. Roll out a small disc about an inch wider than the lip of the pudding basin and about ½ cm thick. Then, roll out a second disc twice the size of the first. Chill both for 30 minutes",
+      "Place the smaller disk on a sheet of greaseproof paper. Turn out the pie filling onto the centre of the smaller disc",
+      "Brush the exposed pastry around the edge of the filling with a little of the egg wash",
+      "Place the large sheet of pastry over the filling. Smooth the pastry all down the sides of the filling, making sure there are no air bubbles and it’s completely smooth",
+      "Egg wash all over the sides of the pastry",
+      "Crimp the edges up towards the filling, then egg wash them again",
+      "Brush with a second egg wash and then score a design on top with a sharp pairing knife",
+      "Cut a hole in the top of the pie, for steam to escape and so you can add the jelly. Put a pie vent in the hole",
+      "Bake for 1 hour, turning halfway through in the oven, or until the internal temperature in the middle reads 63°C on a temperature probe",
+      "Allow to cool to room temp then chill overnight",
+      "The following day, soak the gelatine in cold water for 2 minutes then squeeze off excess water",
+      "Bring half the mango juice to a simmer. Dissolve the the gelatine into the juice, then allow to cool slightly",
+      "Whisk the gelatine mixture into the remaining mango juice",
+      "Pour the mango jelly into the cooled pie until full, using a squeezy bottle if you have one, then chill for 1 more hour before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "diced into 3 cm pieces",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, stalks and leaves finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skinless, cut into a 3 cm dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "deseeded and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "beaten with 1 tablespoon water, for glazing",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea5b2ed5ef9f8b9fb02348dc2bdfab775ddaefb21c5d94dcb156585729e639e1",
+    "lineage_hash": "c68e5fba0b363639e6338c2537462c06c17de966215b7bfacf41f369f1b616bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coronation-chicken-butternut-pie-mango-recipe",
+    "fetchedAt": "2026-08-02T06:01:16.956Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coronation-chicken-butternut-pie-mango-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

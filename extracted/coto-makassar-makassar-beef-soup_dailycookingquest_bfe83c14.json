@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Coto Makassar - Makassar Beef Soup",
+    "time": "2 hours",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a soup pot, heat cooking oil and fry the garlic, lemon grass, galangal, coriander, cumin, salt, and ground pepper until fragrant, about 3-5 minutes.",
+      "Add beef shank, tripe, and water and bring to a boil. Reduce heat and simmer for 30 minutes.",
+      "Remove the beef and tripe and cut into bite size pieces. Return to the pot and bring to another boil. Simmer for 1 hour until tender.",
+      "Heat the cooking oil in a frying pan and fry the red chilies, Thai chilies, shallots, and garlic until fragrant, about 3 minutes. Remove from the pan.",
+      "Combine fried chilies, shallots, garlic, and tauco in a food processor and grind to a smooth paste to make the sambal tauco.",
+      "Divide coto in 4 to 6 servings bowls. Top each bowl with chopped scallions and celery leaves and serve with a side of sambal tauco and lime wedges."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coto (beef Soup)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Grass",
+        "unit": null,
+        "notes": "chopped and bruised",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal (indonesian: Lengkuas)",
+        "unit": "inch",
+        "notes": "fresh, peeled and bruised",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk ketumbar",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk jinten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Shank",
+        "unit": "g",
+        "notes": "Indonesian: daging sengkel",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tripe",
+        "unit": "g",
+        "notes": "Indonesian: babat",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sambal Tauco (chili Sauce)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe rawit",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "Indonesian: bawang merah",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "Indonesian: bawang putih",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Soy Bean",
+        "unit": "Tbsp",
+        "notes": "Indonesian: tauco",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (indonesian: Daun Bawang)",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Leaves (indonesian: Daun Seledri)",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68f8afc37b70898ea5657a6facde2ad6302190abacc3df5f427994ae3bc3c170",
+    "lineage_hash": "c1b662c2c8fdf07524e2b274f9f4bf0aafb27332299f3f346190be61d9ebd2c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/coto-makassar-makassar-beef-soup.html",
+    "fetchedAt": "2026-08-02T11:29:49.702Z"
+  },
+  "rawSource": "https://dailycookingquest.com/coto-makassar-makassar-beef-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

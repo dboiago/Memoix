@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Devilled Whitebait",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the tartare sauce. Place the mayonnaise in a bowl and fold in all of the remaining ingredients until thoroughly combined. Store in the fridge in an airtight container until ready to serve",
+      "Ensure the squid is cleaned properly and score the skin in a criss-cross shape. Cut into bite-size triangular pieces (3cm width) and discard the tentacles – they can get a bit tough when frying but you can reserve them for another dish",
+      "For the devilled dusting mixture, mix all of the dry ingredients together in a bowl. Once well mixed, coat the squid and whole whitebait in the devilled mixture, dusting off any excess to create a thin and even coating",
+      "In a deep fat-fryer, heat the rapeseed or vegetable oil until it reaches 180°C. Gently add the coated fish to the oil (do not overcrowd) and cook until golden brown for 1-2 minutes. Make sure you don't overcook the squid or it wll become tough and chewy",
+      "Once golden, remove the fish from the pan and drain on some kitchen roll. Squeeze over some lemon juice and sprinkle salt over the fish to taste. Serve warm and crispy in a basket with a side of tartare sauce and some fresh lemon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whitebait",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid",
+        "unit": "g",
+        "notes": "fresh and cleaned",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "L",
+        "notes": "or vegetable oil, for deep-frying",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Smoked Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornichons",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0ec7aa0a9364bef752f73aa0805632a3e4d2f0c27dd59d1bdc9404a1bcdd58fd",
+    "lineage_hash": "fe1e14d9c7a520325fc419d2d5779c4b5c4e356051d1d90336bc3090914d8e27"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/devilled-whitebait-recipe",
+    "fetchedAt": "2026-08-03T22:06:11.611Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/devilled-whitebait-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-beef-curry/",
+  "slug": "chinese-beef-curry_chinasichuanfood_13172efd",
+  "title": "Chinese Beef Curry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:50:17.317Z",
+  "ldName": "Chinese beef curry",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Beef, curry, potatoes",
+  "ldIngredientsRaw": [
+    "1 kg  slow cook beef cuts ( , cut into 3 cm small cubs)",
+    "1   carrot (, diced )",
+    "1 large    potatoes  (, diced )",
+    "1/2  white onion ( , cut into small pieces )",
+    "2 tbsp. vegetable cooking oil ( , divided )",
+    "100 g golden curry paste ( , one box )",
+    "1 cup warm water",
+    "100ml   coconut milk",
+    "water as needed",
+    "Steamed rice for serving"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the pot until really hot, spread cooking oil in and sauté the beef for 2-3 minutes until slightly browned.  Then add 1 cup warm water and cook the beef for 20 minutes, with lid covered.",
+    "In another pan, add another tablespoon of cooking oil and fry the sweet onion until slightly browned. Optional but recommended.&nbsp;",
+    "Place potato, carrot and fried onion, golden curry paste and coconut milk until all of the ingredients almost covered.  Cook for another 15 to 20 minutes until the vegetables are soft. Open the lid and heat until the sauce is well thickened.",
+    "Serve with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "400 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "37 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "105 mg",
+    "sodiumContent": "669 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 kg slow cook beef cuts, cut into 3 cm cubes",
+    "1 carrot, cut into small cubes",
+    "1 large potato, cut into small cubes",
+    "2 tbsp. vegetable cooking oil",
+    "1 cup warm water",
+    "100g golden beef curry",
+    "100 ml coconut milk",
+    "1 kg  slow cook beef cuts  , cut into 3 cm small cubs",
+    "1  carrot , diced",
+    "1 large    potatoes  , diced",
+    "1/2 white onion  , cut into small pieces",
+    "2 tbsp. vegetable cooking oil  , divided",
+    "100 g golden curry paste  , one box",
+    "1 cup warm water",
+    "100ml  coconut milk",
+    "water as needed",
+    "Steamed rice for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

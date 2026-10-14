@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bar Americano Espresso Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake vigorously for 10 to 15 seconds. Strain into a chilled glass. Garnish.\nDiluted Cold-Brew ConcentrateMix cold-brew concentrate (or equivalent) with water at a 60:40 ratio.\nSalted Demerara SyrupAdd 2 1/2 cups of cold water, 4 cups of demerara sugar, and 2 3/4 Tbsp. of Maldon sea salt to a pot. Stir at medium/high temperature until mixed and reach 140F. Remove from the heat, let cool, store in the fridge. Will keep in a sealed container in the refrigerator for 30 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Concentrate",
+        "unit": "oz",
+        "notes": "diluted",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": "Bar Americano uses Borghetti Espresso",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Px Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01125a4c5a2af5d6d7546e41ca357464a0ca0541657009512a535e09a9499cac",
+    "lineage_hash": "aaef73dc895b5834263a97e9fa418ed42ff47dcf7825da2ce24a139124fcded1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-americano-espresso-martini/",
+    "fetchedAt": "2026-08-04T00:16:25.495Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-americano-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

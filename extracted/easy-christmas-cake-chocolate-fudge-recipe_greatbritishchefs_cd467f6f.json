@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Easy Christmas Cake Chocolate Fudge",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Break the chocolate into small pieces and place them into a non-stick saucepan along with the condensed milk and butter. Heat very gently until the chocolate and butter has melted and the mixture is smooth and glossy",
+      "Beat the icing sugar into the chocolate mixture and then add the crumbled cake and nut, beat well until everything is amalgamated",
+      "Pour or spoon the fudge into an 18cm square tin or container that has been lined with greaseproof paper and smooth over the top of the mixture with a knife or spoon",
+      "Set aside in a cool place or the fridge for an hour to set, before cutting into squares. Keeps for 2 weeks in a cool place, such as a covered tin or container"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "dark or milk",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "397",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Christmas Cake",
+        "unit": "g",
+        "notes": "leftover, crumbled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Whole Nuts",
+        "unit": "g",
+        "notes": "broken into small pieces",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2453863596f79d6a4b1b10372127d8ec1279bf3e54c573cfaff8e1743385872b",
+    "lineage_hash": "229cf3628d837a3371eb72d3ded8b2c623369ac2136ab5335ef2e7b9bbf33cb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easy-christmas-cake-chocolate-fudge-recipe",
+    "fetchedAt": "2026-08-03T11:47:22.469Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easy-christmas-cake-chocolate-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

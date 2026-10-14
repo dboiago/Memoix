@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chocolate & Vanilla Marble Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C/gas mark 3. Line a 30cm loaf tin with baking paper",
+      "Whisk together the butter, sugar and vanilla essence until pale and fluffy",
+      "Whisk in the eggs a little at a time until fully incorporated",
+      "Gently fold in the flour in 2 stages, then place ⅓ of the mix into a separate bowl and fold in the cocoa powder",
+      "The mix should gently fall from a spoon when lifted – if it is a little thick let it down with the milk",
+      "Pour ¼ of the vanilla batter into the lined tin and spread out evenly. Pour ½ of the chocolate mixture on top in a swirling motion then cover with the remaining vanilla mixture",
+      "Finish with the rest of the chocolate mixture then use a metal skewer to swirl the chocolate through the vanilla to create the marbled effect",
+      "Bake for 45–50 minutes, until a metal skewer inserted into the middle of the cake comes out clean. Leave to cool on a wire rack before slicing and serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "lightly whisked",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e3c5b95cd8a333547965944fd913d28e901e1b1f4a8457ed9f83f0f226d185d",
+    "lineage_hash": "6e7ebac8b09ce368c13d16fafc31668acaa9e2b52f1243764c60ed36290388de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/marble-cake-recipe",
+    "fetchedAt": "2026-08-03T12:24:18.599Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/marble-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

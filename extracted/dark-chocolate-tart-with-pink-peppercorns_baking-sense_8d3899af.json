@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Tart with Pink Peppercorns",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "239",
+      "carbohydrateContent": "19",
+      "fatContent": "17",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Roll the chocolate short dough to fit into a 10\" or 12\" tart pan with a removable bottom. Prick the bottom of the pan with a fork several times and refrigerate. While the tart dough is chilling, preheat the oven to 350 °F.",
+      "Bake the tart shell until it's set all the way to the center, about 10 minutes. Because of the dark color it's hard to see if it's browning. You need to press the center of the crust to make sure it's set. Cool the tart crust completely.",
+      "Chop 8 oz semi-sweet chocolate and place it in a heat proof bowl.",
+      "In a medium size pan, scald 8 oz whole milk and 8 oz heavy cream over medium high heat. Turn off the heat, add ¼ cup pink peppercorns. Cover the pan and set it aside for 30 minutes to steep. Reheat the milk to scalding hot.",
+      "While the milk reheats, whisk together 5 large egg yolks, 3 oz granulated sugar and 2 teaspoons vanilla extract .",
+      "Whisk the scalding hot milk into the eggs, then return the mix to the heat. Cook the mixture over low heat, stirring constantly, until the mixture thickens enough to coat the back of a spoon. Remove from the heat. Immediately strain the custard over the chopped chocolate, pressing on the pepper in the strainer to release all the custard. Let it sit for 2-3 minutes. Gently stir until it comes together and all the bits of chocolate are melted.",
+      "Pour the cremeux into the tart shell. Refrigerate the tart until the filling is set, at least 1 hour.",
+      "Add 1 tablespoon pink peppercorns to 12 oz heavy cream. Add 2 oz confectioner sugar and whip.",
+      "Dollop the cream onto the center of the tart. Use the back of a large spoon to spread the cream to within a ½\" of the sides of the tart so you can see the filling around the edges. Sprinkle the cream with a few pink peppercorns and a few chocolate shavings or mini chocolate chips.",
+      "Chill until serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Chocolate Tart Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped fine",
+        "amount": "8",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "C",
+        "notes": "cracked",
+        "amount": "¼",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Chocolate Crémeux",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1½ cups",
+        "amount": "12",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "Tbsp",
+        "notes": "cracked",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Shavings (or Mini Chips, for Garnish)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "acb2ceb3021eb8b6e67b7d6f1a40faf22973b7415e4ffab2ace8a1fd35d1f17c",
+    "lineage_hash": "8eeb40e3e24383c1501dc119d5d592d51f957b83be96e44c805525351e2ae8b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/10/30/chocolate-pink-peppercorn-tart/",
+    "fetchedAt": "2026-08-02T06:13:31.095Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/10/30/chocolate-pink-peppercorn-tart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

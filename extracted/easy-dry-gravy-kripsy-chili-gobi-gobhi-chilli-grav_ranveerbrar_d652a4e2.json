@@ -1,0 +1,382 @@
+{
+  "recipe": {
+    "name": "Dry & Gravy Kripsy Chili (Gobi Chilli)",
+    "time": "35-40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Spring Onion",
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add refined flour, cornstarch, salt to taste, sugar, vinegar, water, oil and give it a good mix.",
+      "Add cauliflower florets into the batter and coat well.",
+      "Add cauliflower into hot oil and fry them until light golden in colour and crispy in texture.",
+      "Transfer it into the absorbent sheet and keep it aside for further use.",
+      "In a bowl, add tomato sauce, red chilli sauce, green chilli sauce, vinegar, soy sauce, mix everything well and keep aside.",
+      "In a wok, add oil, once it's smoky hot, add dry red chillies, tender coriander stems, ginger and saute for a minute.",
+      "Add onion, ginger garlic paste, mixed bell peppers and toss it everything for 2-3 minutes on high flames.",
+      "Now, add prepared sauce, water, soy sauce, chilli oil and give it a quick boil.",
+      "Add cornstarch slurry, chilli oil, fried cauliflower and cook it on high flames for another 2-3 minutes.",
+      "Transfer it into the serving bowl and garnish it with spring onion and coriander sprig.",
+      "Serve hot.",
+      "In a wok, add oil, once it's smoky hot, add dry red chillies, tender coriander stems, ginger and saute for a minute.",
+      "Add onion, spring onion bulbs, mixed bell peppers and toss it everything for 2-3 minutes on high flames.",
+      "Now, add prepared sauce, fried cauliflower and toss it for another 2-3 minutes on high flames.",
+      "Finish it with chilli oil, black pepper powder, salt to taste and saute for a minute.",
+      "Transfer it into the serving bowl and garnish it with spring onion and coriander sprig.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "large",
+        "notes": "florets",
+        "amount": "1",
+        "section": "For Gobhi chilli",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "roughly cut",
+        "amount": "2",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Bell Peppers",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Gobhi Chilli Gravy",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "roughly cut",
+        "amount": "2",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "peeled & finely chopped",
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion Bulbs",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "¼",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Bell Peppers",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Prepared Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Gobhi Chilli Dry",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "376d0fda9f64e2cce01df3097058009b32a98bca03fda289a0d7e86b2694750c",
+    "lineage_hash": "ac1d435ec43a129c00dcb5d348d461b6efac0ffaea5c0a9dccbf92ba7e7ceda2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dry-gravy-chilli-gobi/",
+    "fetchedAt": "2026-08-02T20:22:20.504Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dry-gravy-chilli-gobi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chicken Liver Terrine With Dukkah",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the dukkah, place the roasted hazelnuts into a tea towel and rub them with your fingers to loosen and remove as much of the skin as possible",
+      "Place a pan over a high heat and add the sesame seeds to the dry pan. Shake the sesame seeds around in the pan until lightly toasted. Remove from the pan and allow to cool. Repeat this process with the coriander and cumin seeds",
+      "Use a food processor to blend the hazelnuts, seeds, salt and pepper into a dry crumb mixture. Be careful not to blend too much as this will release the oils and turn it into an oily paste",
+      "To cook the baby leeks, bring a pot of salted water to the boil. Wash the baby leeks, remove any rough outer layers and trim to the length of the terrine mould. Drop into the boiling water for 3 minutes, strain and refresh in ice cold water for 5 minutes. Remove from the water and place on absorbent kitchen towel until required",
+      "For the livers, place a large pan over a high heat. Add enough ghee to generously coat the base of the pan.  When the pan begins to smoke, add the chicken livers (you may need to do this in batches) and sear on both sides until golden brown in colour",
+      "Season with salt and pepper. After 2 minutes, remove the livers and place onto a wire rack to cool. Be careful not to over cook the livers or you will end up with a dry terrine",
+      "Line a terrine mould with 4 layers of cling film and then line with the slices of prosciutto, each piece slightly overlapping",
+      "Place half the chicken livers at the bottom of the terrine mould, sprinkle with a tbsp of the dukkah and a pinch of chopped fresh thyme. Pour over 2 tbsp of the ghee and season",
+      "Place 5 leeks down the centre of the terrine, each one on top of the other, flatten and press into the livers. Cover with the remaining livers, then sprinkle with more dukkah and the remaining thyme. Pour over 100ml of ghee and fold over the cling film to seal",
+      "Use a suitable template to fit into the terrine mould, sitting directly on top of the livers - cardboard or polystyrene will suffice. Weigh down with 4kg placed on top of the mould and refrigerate for 6 hours or overnight",
+      "For the dressing, combine the extra virgin olive oil, white wine vinegar and a drop of honey in a bowl",
+      "To serve, remove the terrine from the fridge and remove the weight. Remove the terrine from the mould by releasing the cling film at the top and agitating slightly to loosen. Cut the terrine into 2cm slices with a hot knife, being sure to remove all the cling film from each slice. Brush each slice of the terrine with the dressing and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Livers",
+        "unit": "kg",
+        "notes": "cleaned of sinew",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "pinches",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "ml",
+        "notes": "melted",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra for finishing",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d4e5a05a74ab665b2c7bd85be620fbf3f0352da22daf029af2727d5c2c6cc6c",
+    "lineage_hash": "8ee116cfed8598f11d4735e0fa570af7cc5f3a9e4431e8d7bd85abc247001233"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-liver-terrine-recipe-dukkah",
+    "fetchedAt": "2026-08-03T19:05:04.969Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-liver-terrine-recipe-dukkah",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

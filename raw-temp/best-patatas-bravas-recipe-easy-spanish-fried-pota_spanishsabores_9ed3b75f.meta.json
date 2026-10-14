@@ -1,0 +1,53 @@
+{
+  "url": "https://spanishsabores.com/patatas-bravas-recipe-spanish-fried-potatoes-with-spicy-sauce/",
+  "slug": "best-patatas-bravas-recipe-easy-spanish-fried-pota_spanishsabores_9ed3b75f",
+  "title": "Best Patatas Bravas Recipe - Easy Spanish Fried Potatoes with Spicy Sauce",
+  "byline": "Melissa Haun",
+  "fetchedAt": "2026-08-02T08:24:44.614Z",
+  "ldName": "Patatas Bravas Recipe",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Appetizer, Tapa",
+  "ldKeywords": "bravas patatas, patatas bravas, potatoes bravas",
+  "ldIngredientsRaw": [
+    "4  medium potatoes",
+    "1-2 cups olive oil (for frying)",
+    "salt (to taste)",
+    "1/2 cup homemade bravas sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the potatoes, then rinse and dry them thoroughly to help them crisp up.  Cut into bite-sized chunks.",
+    "Heat the olive oil 350°F (176°C) in a large skillet over medium heat. Add the potatoes and turn the heat to the lowest setting, then cook for a couple of minutes.",
+    "Remove the potatoes from the oil with a skimmer, and let them cool in the fridge for a few minutes.",
+    "Turn the heat up to high and reheat the oil to 350°F (176°C), then add the potatoes back into the pan. Fry until crispy and golden.",
+    "Use a skimmer to transfer the potatoes to a paper towel-lined plate to cool, and sprinkle with salt to taste.",
+    "Drizzle the bravas sauce over the potatoes, then serve immediately. Serve with toothpicks if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "202.3 kcal",
+    "carbohydrateContent": "38.86 g",
+    "proteinContent": "4.71 g",
+    "fatContent": "3.75 g",
+    "saturatedFatContent": "0.54 g",
+    "sodiumContent": "246 mg",
+    "fiberContent": "5.14 g",
+    "sugarContent": "2.96 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 medium potatoes",
+    "▢ 1-2 cups olive oil for frying",
+    "▢ salt to taste",
+    "▢ ½ cup homemade bravas sauce"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

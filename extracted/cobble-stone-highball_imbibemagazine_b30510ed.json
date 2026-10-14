@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cobble Stone Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the 2 cucumber slices in a shaker.",
+      "Add the remaining ingredients, except the Champagne, then shake with ice.",
+      "Strain into a glass over fresh ice, top with Champagne, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne (or Other Sparkling Wine)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f54089341dc9e8147fd89280cb4124ae22ffc0671a7fb1422582badc61c103af",
+    "lineage_hash": "809e489b733b01ff5bf16fc81408294f1d94e832d1a875d3a8cb56fe387c4b37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cobble-stone-highball/",
+    "fetchedAt": "2026-08-03T20:49:08.211Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cobble-stone-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

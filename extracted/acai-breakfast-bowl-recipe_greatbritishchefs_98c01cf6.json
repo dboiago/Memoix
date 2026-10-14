@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Acai Breakfast Bowl",
+    "time": "5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the banana in half lengthways and place half in a blender along with the frozen acai berry purée and honey. Blitz until smooth, adding a little orange juice to adjust the consistency as desired",
+      "Pour the acai mixture into a bowl and slice the remaining banana on top. Sprinkle with the granola and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Acai Berry Purée",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": "optional, to thin the berry purée",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granola",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81beaa20dd20c485d4796abceb4602ec942f9e88edcf484df9ba20d05dabd929",
+    "lineage_hash": "f4a3cfcd58b9e8ee69d2b7a555ba52dada2d9dc90f1f753f4ff370014445ea92"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/acai-breakfast-bowl-recipe",
+    "fetchedAt": "2026-08-03T12:54:44.825Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/acai-breakfast-bowl-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

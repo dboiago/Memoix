@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Autumn Aperitif: Lucano #2",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Chinotto Soda"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the amaro, syrup, gin and lime juice together in a shaker with ice and shake until chilled. Strain into a glass over crushed ice. Top with Chinotto soda and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lucano Amaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinotto",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "641501fec5e8c29ea77c4baa2e38ccba1ae8e552dd021161f8428b2f0a648986",
+    "lineage_hash": "93ccff543463e3c7a30a575242e39c5d98f5688b03f8b57b74a1407dec64100c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/autumn-aperitif-lucano-2/",
+    "fetchedAt": "2026-08-03T18:09:25.145Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/autumn-aperitif-lucano-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

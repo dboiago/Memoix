@@ -1,0 +1,302 @@
+{
+  "recipe": {
+    "name": "Apple and Elderflower Fool",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the sorrel granita. Blitz the stock syrup and sorrel in a blender until smooth, then pass through a fine sieve into a shallow container. Taste the mixture and add a little salt and fresh lime juice to taste, then place in the freezer until set. Once frozen scrape with a fork to create a crumbly texture, then return the granita to the freezer until ready to serve",
+      "Peel the apples and use a melon baller to make balls of apple. Place in a vacuum bag with the apple juice, sugar and citric acid and seal. Cook for 15 minutes in the water bath, then leave to cool in the fridge",
+      "For the apple purée, thinly slice the apples and place into a large vacuum bag with the sugar and lemon juice and seal. Cook for 35–40 minutes, until the apples are completely soft, then remove from the bag and blitz in a blender until smooth. Chill the purée in a bowl over ice until cooled completely, refrigerating until required",
+      "For the elderflower mousse, whip the cream to soft peaks and reserve in the fridge. Meanwhile, place the sugar, eggs and 50g of the elderflower cordial over a bain marie and whisk until it thickens and forms a sabayon",
+      "Whisk in the soaked gelatine and the remaining cordial, then leave to cool to room temperature. Once cooled, carefully fold through the whipped cream and transfer to a siphon. Charge with 2 gas canisters and keep cool until ready to serve",
+      "Meanwhile, make the anglaise for the apple foam. Combine the milk, cream and vanilla together in a pan and bring to the boil. In a separate bowl, whisk together the eggs and sugar until fully combined",
+      "Pour half of the hot cream over the eggs and whisk continuously to combine. Pour all of the egg mixture back into the pan, stir well, and continue to cook until the mixture coats the back of a spoon. Pass through a fine sieve and weigh out 600g",
+      "Mix the gelatine into the warm anglaise and stir until dissolved, then leave to cool completely. Fold through 450g of the apple purée and the whipped cream, then add the citric acid and transfer to a siphon with 2 gas charges",
+      "To make the crumble, rub together the flour and butter and mix in the sugar. Transfer to a tray and bake for 15 minutes until golden brown. Leave to cool then crush to a crumble",
+      "Blitz the honeycomb to a fine powder in a food processor, then sieve a fine layer onto a metal tray lined with a silpat mat. Place into the oven for 2 minutes until the sugar has melted, then sprinkle over the crumble and return to the oven for a further 4 minutes. Leave to cool then break into pieces",
+      "To make the syrup, reduce the apple juice with the cordial to a light syrup",
+      "To serve, spoon some of the purée and 2 apple balls into the bottom of a glass. Pipe in a little elderflower mousse and top with more purée and apple balls. Spoon over the apple foam and some spoonfuls of the granita, then drizzle over a little of the apple syrup and garnish with pieces of honeycomb biscuit, julienne apple strips and micro cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sorrel",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "core removed, skin on",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "425",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honeycomb",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "320",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c83d396cc4ec259ae0dcf45a202ec7cb96b5fddfb297cbf856c696af9eb4feb",
+    "lineage_hash": "ccbc0390d32a78cd0c98b55aa46936913217680c2bffe8ec6148da65909987a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-elderflower-sorrel-recipe",
+    "fetchedAt": "2026-08-03T14:04:27.484Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-elderflower-sorrel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

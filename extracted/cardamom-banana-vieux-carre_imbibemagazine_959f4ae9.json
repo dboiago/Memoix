@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Cardamom + Banana Vieux Carre",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients together in a mixing glass with ice. Strain into a rocks glass over a single large ice cube. Twist a lemon peel over the top of the drink to release the citrus oils, then use as a garnish.",
+      "Cardamom Syrup: Combine 16 oz. of water with 16 oz. of sugar and 1 Tbsp. of powdered green cardamom in a saucepan. Bring to a boil and reduce to a simmer. Let simmer for 10 minutes before removing from heat. Strain and let cool. Store in the refrigerator for 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Giffard Banana Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Bitters",
+        "unit": "drops",
+        "notes": "Auger uses Scrappy's",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Green Cardamom",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b999ff60472433ea81cc8a5cc7d20b268fb9fe1ed3c28fbdb2dff648fb395128",
+    "lineage_hash": "595beec071a44f40c0a2f1173df2219fd57ee0bbd352634ae32cc86c47524679"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cardamom-banana-vieux-carre/",
+    "fetchedAt": "2026-08-03T18:13:05.185Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cardamom-banana-vieux-carre/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

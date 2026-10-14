@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Dama’s Pan American Clipper",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing tin and shake with ice.",
+      "Strain into a chilled coupe or cocktail glass.",
+      "Garnish with lime wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calvados",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5834c109403f6d118bd1e1d674565a627acb5c5156614421929154e255408070",
+    "lineage_hash": "bc2371093d9a9300b2ef0c7b389a66ad16472573ee3c0469a9a2e4eb5b5abe01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/damas-pan-american-clipper/",
+    "fetchedAt": "2026-08-02T19:21:02.877Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/damas-pan-american-clipper/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

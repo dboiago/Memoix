@@ -1,0 +1,219 @@
+{
+  "recipe": {
+    "name": "Bande ki Sabji (Yam gravy)",
+    "time": "25-30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a non-stick kadai, add mustard oil, oil, once it's hot, add foot long yam and fry them until golden in color.",
+      "Transfer it to an absorbent paper and keep it aside for further use.",
+      "In the same kadai, add remaining mustard oil, once it's hot, add dry red chillies, fennel seeds, cumin seeds, nigella seeds, ginger and let it splutter well.",
+      "Add onions, curry leaves, salt to taste and saute it for a while until translucent.",
+      "Add coriander powder, cumin powder, turmeric powder, degi red chili powder, curd and cook it for 4-5 minutes.",
+      "Add fresh tomato puree and cook it well.",
+      "Add tender coriander stems, fried foot long yam, water to adjust the consistency and simmer it for 10-12 minutes on medium flames until cooked well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti or steam rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Foot Long Yam",
+        "unit": "g",
+        "notes": "peeled & cut into batons",
+        "amount": "800",
+        "section": "For Frying Yam",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying Yam",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Frying Yam",
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Mustard Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¾",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems with Roots",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Foot Long Yam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Bande Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51ffb2510e7b128104d8ac241ab3dd4341995cecbf25247d2cacffcd8450a51a",
+    "lineage_hash": "d63d698ac044135a55f4db985c37e96a89baf62e37d4a5797e713201833e7c0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bande-ki-sabji/",
+    "fetchedAt": "2026-08-02T17:56:18.164Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bande-ki-sabji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

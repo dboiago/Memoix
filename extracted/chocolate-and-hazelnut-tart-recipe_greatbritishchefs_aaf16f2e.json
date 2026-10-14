@@ -1,0 +1,289 @@
+{
+  "recipe": {
+    "name": "Chocolate and Hazelnut Tart",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the chocolate cremoso, gently heat the cream until just under boiling point while you whisk together the sugar and egg yolks until well combined. Put the finely chopped chocolate in a large separate mixing bowl",
+      "Temper the egg mixture with the hot cream until all the cream is incorporated then return the mixture to the heat and cook until it reaches 83°C, whisking continuously to prevent scrambling. Once at 83°C, strain the custard through a fine sieve over the chocolate and whisk until fully melted. Season lightly with salt and allow the mixture to set in the fridge",
+      "For the pastry, preheat the oven to 170 °C. Beat the butter in a stand mixer until whipped, then slowly add the sugar and salt until light and fluffy. Add the egg yolks and vanilla extract and beat until smooth. Remove the bowl from the machine",
+      "Combine the flour and cocoa powder in a separate bowl. Using your hands, mix the dry ingredients with the wet ingredients thoroughly until fully incorporated. Lightly knead the dough, then shape into a log and rest in the fridge for at least 30 minutes",
+      "Once rested, roll the dough 0.5cm thick and use it to line either 8 small individual tart cases or 1 large case. Line the tins with the pastry and bake for 10-15 minutes, or until dry and sandy to the touch. Leave to cool completely",
+      "For the whey caramel, in a medium wide-based pan, bring the whey to the boil and reduce by half",
+      "Add the sugar and butter and continue to cook the caramel until it reaches 112-113°C. Strain through a fine sieve into a large bowl",
+      "Allow the caramel to cool, whisking regularly to prevent it from splitting. Once cooled, check the seasoning before decanting into a piping bag. Set aside in the fridge until needed",
+      "For the hazelnut crumb, bring the sugar, butter, liquid glucose and 1 tablespoon of water to the boil over a medium heat",
+      "Add the hazelnuts and cook until the mixture becomes a light caramel. Remove from the heat and immediately stir in the salt and bicarbonate of soda. Pour onto a heatproof surface lined with baking paper and allow to cool completely. Once cold, roughly chop and set aside",
+      "For the 100s and 1000s, first make a hazelnut praline. Bring the sugar, butter, glucose and water to a boil over a medium heat. Add the hazelnuts and cook until the mixture turns a light caramel",
+      "Remove from the heat and stir in the salt and bicarbonate of soda, then pour onto baking paper on a heatproof surface and allow to cool completely",
+      "Once cold, finely chop the praline and weigh out 150g (keep the rest for another dish). Add the rest of the ingredients for the 100s and 1000s and store in an airtight container until needed",
+      "Remove the whey caramel and chocolate cremoso from the fridge 20-30 minutes before you want to serve, to come up to temperature – the cremoso can set quite firm",
+      "To serve, place the individual tart cases onto plates, securing with a dot of whey caramel. Pipe whey caramel into the base of each tart case and smooth the top with a palette knife. Pipe or spoon the chocolate cremoso into the tart cases. Liberally sprinkle over the 100s & 1000s and hazelnut crumb and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "approx. 5 yolks",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "57",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "64",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "154",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Popping Candy",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8896bbb798d2a2976efe4fc70c2eea722cd1c92a5cfd6ef1296452310661c085",
+    "lineage_hash": "6ae8e96574107c725ed54f1246ada6690391d996adb2cfb5b50ff077f4db22ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-tart-100s-1000s-recipe",
+    "fetchedAt": "2026-08-01T20:12:24.876Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-tart-100s-1000s-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

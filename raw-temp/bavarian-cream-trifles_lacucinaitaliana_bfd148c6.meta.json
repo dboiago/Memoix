@@ -1,0 +1,49 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/bavarian-cream-trifles",
+  "slug": "bavarian-cream-trifles_lacucinaitaliana_bfd148c6",
+  "title": "Bavarian Cream Trifles",
+  "byline": "by  Editorial staff   May 18, 2020",
+  "fetchedAt": "2026-08-03T05:32:11.899Z",
+  "ldName": "Bavarian Cream Trifles",
+  "ldTime": "PT60M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "8",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Bavarian Cream,Dolci Al Cucchiaio",
+  "ldIngredientsRaw": [
+    "2 1/2C. cream",
+    "1 1/4C. milk",
+    "5OZ. dark chocolate",
+    "1/3C. sugar",
+    "1/4OZ. isinglass (or gelatin leaves)",
+    "3 egg yolks",
+    "8 ladyfingers",
+    "1 orange",
+    "Amaretto cookies",
+    "Grand Marnier"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Soak the isinglass in cold water. Heat the milk without allowing it to boil. In a bowl, mix the egg yolks with the sugar and 8 crumbled amaretto cookies. Drizzle the warm milk over this, then heat the mixture over the lowest possible heat, heating it to 175°F (it must not boil), then add the softened isinglass and let it cool until it begins to thicken, then fold in 1 3/4 cups whipped cream.&nbsp;</p>",
+    "<p>Meanwhile, chop the chocolate and place it in a small saucepan with 2/3 cup cold water, 4 tablespoons Grand Marnier and the grated rind of 1 orange and simmer this mixture until creamy.</p>",
+    "<p>Place a ladyfinger in the bottom of each cup, then spread the chocolate mixture over them and let them cool to room temperature. Pour the Bavarian cream over each one.</p>",
+    "<p>Put the trifles in the refrigerator and, at serving time, garnish them with dollops of the remaining whipped cream and some amaretto cookies.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 1/2 C. of cream",
+    "1 1/4 C. of milk",
+    "5 OZ. of dark chocolate",
+    "1/3 C. of sugar",
+    "1/4 OZ. of isinglass (or gelatin leaves)",
+    "3 egg yolks",
+    "8 ladyfingers",
+    "1 orange",
+    "Amaretto cookies",
+    "Grand Marnier"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

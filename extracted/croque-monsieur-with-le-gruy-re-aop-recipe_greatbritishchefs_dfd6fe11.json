@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Croque Monsieur with Le Gruyère AOP",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making a thick béchamel sauce. Melt the butter in a saucepan and stir in the flour. Cook and stir for a minute or so to cook out the floury taste, then stir in the milk bit by bit, ensuring any lumps are whisked out before adding more milk",
+      "Once all the milk has been added and you have a smooth, thick sauce, stir in the Dijon mustard then taste and add nutmeg and salt until you're happy with the flavour. Remove from the heat and set aside",
+      "Make the Dijon mayonnaise by stirring the mustard and mayonnaise together. Set aside",
+      "Now it is time to assemble the sandwiches. Begin with a layer of Dijon mayonnaise, followed by a slice of ham and then slices of Gruyère cheese. Close the sandwich and spread the top of the lid with some béchamel sauce",
+      "Place the sandwiches on a tray and under the grill for a few minutes until the béchamel has started to colour and the cheese is nice and melted",
+      "Serve immediately with an extra dab of Dijon mayonnaise on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gruyère",
+        "unit": "g",
+        "notes": "ideally Le Gruyère AOP Reserve, sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc68325b0852d27e1d165ed1789e6b8df0be6e42becca5993ed9fab8b0ed5e26",
+    "lineage_hash": "c3faf26d4aa55bb2b21f0851f88b6d6c35ffb9928312109e1ca62006e103a55e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/croque-monsieur-recipe",
+    "fetchedAt": "2026-08-03T06:02:50.789Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/croque-monsieur-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

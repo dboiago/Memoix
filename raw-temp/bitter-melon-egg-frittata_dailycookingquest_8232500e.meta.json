@@ -1,0 +1,64 @@
+{
+  "url": "https://dailycookingquest.com/bitter-melon-egg-frittata.html",
+  "slug": "bitter-melon-egg-frittata_dailycookingquest_8232500e",
+  "title": "Bitter Melon Egg Frittata",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:55:38.821Z",
+  "ldName": "Bitter Melon Egg Frittata",
+  "ldTime": "PT0H35M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H20M",
+  "ldYield": [
+    "4-8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "quick",
+    "easy",
+    "authentic",
+    "asian",
+    "Egg",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram bitter melon, halved, seeded, cut into 1/2-inch slices",
+    "1 teaspoon salt",
+    "4 egg, lightly beaten",
+    "1/2 cup dashi/chicken stock",
+    "2 teaspoon fish sauce",
+    "1/2 tablespoon sugar",
+    "1/4 teaspoon ground pepper",
+    "2 tablespoon oil",
+    "2 cloves garlic, minced",
+    "1 slice fried fish cake, cut into small pieces (1/4\"x1\") (*)",
+    "1 scallions, thinly sliced",
+    "nanami togarashi, to sprinkle (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Massage bitter melon slices with the 1 teaspoon salt, set aside for 15 minutes. Rinse under cold running water, and drain thoroughly. Set aside.",
+    "Whisk together egg, dashi/stock, fish sauce, sugar, and ground pepper. Set aside.",
+    "In a frying pan, heat oil over medium high heat. Sauté garlic until fragrant, then add fried fish cake slices and stir for 1 minute.",
+    "Add bitter melon, sauté for 7-8 minutes.",
+    "Spread the items in the frying pan into one even layer, gently pour the egg mixture into the pan. Turn the heat to medium low, cover the pan, and cook for 6-7 minutes, or until the egg is fully set.",
+    "Turn the heat off. Cut the frittata into 4-8 pieces, garnish with scallion and nanami togarashi. Serve immediately with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram bitter melon, halved, seeded, cut into 1/2-inch slices",
+    "1 teaspoon salt",
+    "4 egg, lightly beaten",
+    "1/2 cup dashi/chicken stock",
+    "2 teaspoon fish sauce",
+    "1/2 tablespoon sugar",
+    "1/4 teaspoon ground pepper",
+    "2 tablespoon oil",
+    "2 cloves garlic, minced",
+    "1 slice fried fish cake, cut into small pieces (1/4\"x1\") (*)",
+    "1 scallions, thinly sliced",
+    "nanami togarashi, to sprinkle (optional)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

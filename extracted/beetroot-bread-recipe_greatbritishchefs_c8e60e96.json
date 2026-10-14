@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Beetroot Bread",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4",
+      "Wrap each beetroot in tin foil with a garlic clove, a sprig of rosemary, some olive oil, salt and pepper. Roast for 1 hour until tender, then remove from the oven and allow to cool",
+      "Remove the outer skins of the beetroot and discard the herbs. Roughly chop the flesh, add to the food processor and blitz - try to keep some of the beetroot in chunks, as they will add a visual appeal once the loaf is cut",
+      "Warm the milk and water gently, stir in the yeast and allow it to activate - once active it will become foamy and rise to the top of the liquid",
+      "Mix together the flour, salt and sugar and add the yeast mix. Add the beetroot, knead for 3-4 minutes, then place the dough in a bowl. Cover with a tea towel and leave to rest for 20 minutes",
+      "Knead once more for 3-4 minutes. Grease a loaf tin with olive oil and place the loaf in the tin. Leave to rest again for 20-30 minutes",
+      "Preheat the oven to 170°C/gas mark 3.5",
+      "Bake the loaf for 30 minutes until cooked through. Remove the loaf from the oven and turn out of the tin while still hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "large",
+        "notes": "raw, or 2 small ones",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried, active",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e26c83178ad304a46a9d4ec2777267b47b5646fb8346c4879d7380d424dce57",
+    "lineage_hash": "3bd562e66bf4d9a848a42467fd6441dddbf9a94faafe1175d1786aea4415148f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-bread-recipe",
+    "fetchedAt": "2026-08-03T19:00:04.091Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

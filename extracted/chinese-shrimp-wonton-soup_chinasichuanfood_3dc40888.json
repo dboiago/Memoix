@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Chinese Shrimp Wonton Soup",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "321",
+      "carbohydrateContent": "27",
+      "fatContent": "14",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "In a large bowl, mix minced pork and shrimp with green onions, grated ginger, coriander, light soy sauce, egg white, sesame oil and salt. Stir in one direction until the filling becomes sticky and you get a paste texture.",
+      "Scoop around 1 teaspoon filling, place in the center of the wrapper. Assemble the wonton one by one.",
+      "In serving bowls, add all the seasonings in the bottle and set aside.",
+      "Boil some water in pot; add wonton in to cook for around 3-4 minutes depending on the size of your wonton. Blend green vegetables too.",
+      "Scoop around 1 cup of boiling water from the pot to the serving bowls to tune the seasoning and then transfer all the wonton and green vegetables to bowls. Pour extra water to soak the wonton.",
+      "Serve immediately with green onion and coriander garnished."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wonton Wrapper",
+        "unit": null,
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Several Green Vegetables",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "drops",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "pcs",
+        "notes": "dried, nori",
+        "amount": "1",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion and Coriander for Garnishing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Soup Base for each severing",
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "200",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "100",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Coriander",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0173ffba6ceb90991d112df5648f855ed1571a91f7fd3d002bd652bfc2b3b86",
+    "lineage_hash": "6b570548280357f94cbe057434692761fa616047ce02b9efc33d87125d10572a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-shrimp-wonton-soup/",
+    "fetchedAt": "2026-08-01T21:03:17.467Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-shrimp-wonton-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

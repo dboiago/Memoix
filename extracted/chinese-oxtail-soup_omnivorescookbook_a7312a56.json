@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Chinese Oxtail Soup",
+    "time": "1 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add oxtail and water (or beef stock) in a big pot. Cook over medium-high heat and bring to a boil. Turn to medium-low heat. Simmer for 20 to 30 minutes. Skim any brown foam from the top of liquid.",
+      "Transfer oxtail to a high pressure cooker or Instant Pot using a pair of tongs. Transfer all the broth into the same pot. Cover and lock the lid. Turn on high pressure and set timer to 35 minutes. Once cooked, let it release pressure naturally.",
+      "The oxtail might leave a brown residue on the inside of the big pot you used to boil it. Wash the pot thoroughly before using in the following steps.",
+      "Remove the oxtail from the pot and transfer onto a large plate. Transfer the broth into an oil separator to remove extra fat. Alternatively you can let the broth sit for 10 minutes and skim the fat from the top with a ladle.",
+      "(Optional) To serve the oxtail without bones, let the oxtail cool until it’s possible to handle. Remove the meat from the bones and break the meat into bite size chunks with your fingers.",
+      "While waiting the oxtail to cool, heat the big pot (from step 1) with olive oil over medium heat. Add onion and carrot. Sprinkle with a pinch of salt. Cook and stir until the onion softens, 10 to 15 minutes.",
+      "Transfer the beef broth and beef meat back to the big pot. Add ginger, potatoes, cabbage, canned tomato, tomato paste, bay leaves, sugar, salt and black pepper. Simmer for another 30 to 40 minutes (*Footnote 2), until the potato and cabbage become tender. Adjust seasoning by adding more salt, if necessary.",
+      "Transfer the soup into serving bowls, garnish with heavy cream or Greek yogurt and serve warm as a main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oxtail",
+        "unit": "kg",
+        "notes": "4 to 5 lbs, separated at joints",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock (or Water)",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Onion",
+        "unit": null,
+        "notes": "coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yukon Gold Potatoes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "oz",
+        "notes": "800 g, diced",
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "head",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream Sour Cream",
+        "unit": null,
+        "notes": "or plain Greek yogurt for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d0cc1395918fee46fa48545c853c608f3ba395e45ae8457bec7a77cdb5ac691",
+    "lineage_hash": "12540683414cef40d98cb2dc4f4f5184b0956167c2027a4d9de7227c6ab4bbb3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/oxtail-soup/",
+    "fetchedAt": "2026-08-01T17:12:37.353Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/oxtail-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

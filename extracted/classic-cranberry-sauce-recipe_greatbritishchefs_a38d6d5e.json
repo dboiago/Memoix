@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Classic Cranberry Sauce",
+    "time": "35 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the cranberry sauce by combining the orange juice, zest and spices in a heavy based saucepan. Bring to a simmer and reduce by half. Add the cranberries and cook on a low heat to slowly stew the fruit without burning",
+      "As soon as the cranberry mixture resembles a loose jam like consistency, add the sugar and bring back to the boil. Reduce the heat to a simmer and cook for a further 10 minutes, then remove from the heat",
+      "When warm, taste for sweetness, adding sugar to taste. Remember that you want to achieve a balance between sweet and sour. Freeze if storing for more than 3 days or refrigerate before serving",
+      "Serve either with Christmas dinner or the following day with cold cuts of meat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c759215b20c95f022efad69643aadf5e5179b56b553bf4b7cf59e8277bb0d2d6",
+    "lineage_hash": "4d59448b2cfdebdb40dbd401c1f0cda4bce21da87fcf0126571753adc2b846b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranberry-sauce-recipe",
+    "fetchedAt": "2026-08-03T21:58:05.580Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranberry-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

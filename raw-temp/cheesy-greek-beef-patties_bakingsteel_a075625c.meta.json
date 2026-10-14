@@ -1,0 +1,55 @@
+{
+  "url": "https://bakingsteel.com/blogs/recipes/cheesy-greek-beef-patties",
+  "slug": "cheesy-greek-beef-patties_bakingsteel_a075625c",
+  "title": "CHEESY GREEK BEEF PATTIES",
+  "byline": "",
+  "fetchedAt": "2026-08-01T23:13:43.443Z",
+  "ldName": "CHEESY GREEK BEEF PATTIES",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": [],
+  "ldIngredientsRaw": [
+    "1lb ground beef",
+    "1 shallot, grated",
+    "1 egg",
+    "4 tbsp breadcrumbs",
+    "1 tsp dry mint",
+    "1 tsp dry oregano",
+    "2 tsp fresh parsley",
+    "1 tsp olive oil",
+    "½ tsp salt",
+    "¼ tsp cracked pepper",
+    "Small wedge of Graviera cheese, cut into ½ inch cubes, or your favorite melting cheese."
+  ],
+  "ldInstructionsRaw": [
+    "Mix all the ingredients in a bowl, except for the cheese. Gently combine everything together, without over mixing.",
+    "Using an ice-cream scoop to measure each patty, take the portioned mix and, holding it in your palm flatten it slightly and put a cube of cheese in the middle. Enclose the cheese with the beef mix and squeeze it gently into your hands to shape it into a slightly flat ball, making sure it is sealed up nicely.",
+    "Heat the Baking Steel Griddle over flame or on your grill.",
+    "Cook each patty for around 3-4 minutes each side. If you are using the steel on your grill, close the hood while cooking, to ensure the cheese inside melts. If you are using the steel over a fire, you can cover the patties on the griddle with a stainless steel bowl between flipping them."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "",
+    "": ""
+  },
+  "htmlIngredientLines": [
+    "1lb ground beef",
+    "1 shallot, grated",
+    "1 egg",
+    "4 tbsp breadcrumbs",
+    "1 tsp dry mint",
+    "1 tsp dry oregano",
+    "2 tsp fresh parsley",
+    "1 tsp olive oil",
+    "½ tsp salt",
+    "¼ tsp cracked pepper",
+    "Small wedge of Graviera cheese, cut into ½ inch cubes, or your favorite melting cheese."
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Pizza"
+}

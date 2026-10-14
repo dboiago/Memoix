@@ -1,0 +1,68 @@
+{
+  "url": "https://omnivorescookbook.com/hardcore-chinese-braised-pork-feet/",
+  "slug": "chinese-braised-pork-trotters_omnivorescookbook_8d43e670",
+  "title": "Chinese Braised Pork Trotters (红烧猪蹄)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T04:40:39.712Z",
+  "ldName": "Chinese Braised Pork Trotters (红烧猪蹄)",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6",
+    "6 to 8 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "3 to 4 lb pork trotters (, cut into large cubes (*Footnote 1))",
+    "2  thumbs ginger (, thickly sliced and divided)",
+    "4 tablespoons Shaoxing wine ((or dry sherry))",
+    "3 tablespoons light soy sauce",
+    "2 tablespoons dark soy sauce",
+    "4  green onions (, cut into 4” pieces (or 2 Chinese scallions))",
+    "5  dried Chinese chili peppers",
+    "2  star anise",
+    "4  cloves",
+    "1 heaping tablespoon  rock sugar ((or regular sugar))",
+    "2 teaspoons salt"
+  ],
+  "ldInstructionsRaw": [
+    "Place the pork trotters and half of the ginger slices in a large pot and add cold tap water to cover. Bring the water to a boil. Stir occasionally to prevent the bottom from sticking. Continue boiling while skimming off the brown foam from the top until the broth is mostly clear, 10 to 15 minutes. Transfer the pork to an Instant Pot (or pressure cooker). If the boiling broth is clear and doesn't have a strong smell, transfer 5 cups of broth to the pot with the trotters, or until the broth almost covers everything. If the broth looks very cloudy and smells strong, discard the broth and add 5 cups of cold tap water. (*Footnote 2)",
+    "Set the pressure to high and timer to 15 minutes for fall-off-the-bone tender pork (or 12 minutes for tender pork with some texture). Press start. (*Footnote 3)",
+    "Once the Instant Pot is done cooking, release pressure naturally for at least 15 minutes. Then switch the valve to fast release. Transfer pork and the broth back to the large pot.",
+    "Add the rest of the ingredients into the same pot and turn to medium-high heat. After bringing the broth to a boil, reduce to medium-low heat and simmer for 40 minutes or so, until the pork has absorbed a lot of flavor. Stir pork occasionally to avoid burning on the bottom.",
+    "Transfer the pork to a large bowl. Use a ladle to remove and discard the solid spices and aromatics from the broth. Turn to medium-high heat to boil the broth until it reduces to half of the volume and gets thicker, 15 minutes or so. Keep an eye on the broth so it doesn’t reduce too much. The broth will continue to thicken when it cools down a bit, so you don’t need to reduce it too much.",
+    "Add the trotters back to the pot and mix everything together. Serve hot as a main dish. You can store the leftovers in the fridge for 3 to 4 days, or in the freezer for up to 3 to 4 months."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "417 kcal",
+    "carbohydrateContent": "5.6 g",
+    "proteinContent": "37.8 g",
+    "fatContent": "27.3 g",
+    "saturatedFatContent": "7.4 g",
+    "cholesterolContent": "182 mg",
+    "sodiumContent": "640 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "3.6 g"
+  },
+  "htmlIngredientLines": [
+    "3 to 4 lb pork trotters , cut into large cubes (*Footnote 1)",
+    "2 thumbs ginger , thickly sliced and divided",
+    "4 tablespoons Shaoxing wine (or dry sherry)",
+    "3 tablespoons light soy sauce",
+    "2 tablespoons dark soy sauce",
+    "4 green onions , cut into 4” pieces (or 2 Chinese scallions)",
+    "5 dried Chinese chili peppers",
+    "2 star anise",
+    "4 cloves",
+    "1 heaping tablespoon  rock sugar (or regular sugar)",
+    "2 teaspoons salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

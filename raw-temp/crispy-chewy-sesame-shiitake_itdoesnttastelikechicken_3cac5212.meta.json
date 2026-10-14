@@ -1,0 +1,66 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-chewy-sesame-shiitake/",
+  "slug": "crispy-chewy-sesame-shiitake_itdoesnttastelikechicken_3cac5212",
+  "title": "Crispy & Chewy Sesame Shiitake",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T18:43:12.800Z",
+  "ldName": "Crispy &amp; Chewy Sesame Shiitake",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 Servings as a main, 4 as a side"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "mushroom, shiitake",
+  "ldIngredientsRaw": [
+    "2 cups dried shiitakes ((12-16 mushrooms))",
+    "Boiling water ((to soak the mushrooms))",
+    "1/4 cup cornstarch",
+    "2 tablespoons light oil ((such as canola or peanut), plus more if needed)",
+    "1/4 cup soy sauce",
+    "2 tablespoons brown sugar",
+    "2 tablespoons rice vinegar",
+    "2 cloves garlic (, minced)",
+    "1 inch piece of ginger (, minced)",
+    "2 teaspoons sriracha or other hot sauce ((optional))",
+    "1 teaspoon sesame oil",
+    "1 teaspoon cornstarch",
+    "2  green onion (, thinly sliced)",
+    "2 teaspoons sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Cover the mushrooms in boiling water, and put something on top to keep them submerged. Soak for around 40 minutes until tender. Drain the mushrooms. If you wish you can save the liquid to use as a mushroom broth. Now squeeze out the excess water from the mushrooms. Don’t mush them to death, but just lightly squeeze them and shake off the water so they are on the drier side. Slice them into nice thick slices, about 1/2 inch. Toss them in the cornstarch so they are evenly coated and shake off the excess.",
+    "Heat oil in a skillet over medium-high heat. Make sure the oil is nice and hot before adding in the mushrooms so that they fry, and not just soak up the oil. Fry the mushrooms until they are lightly golden on all sides, and no white cornstarch remains.",
+    "In the meantime make the sauce by adding all of the ingredients to a small sauce pan. Cook the sauce for about 2 minutes until it begins to thicken. Add in the fried shiitakes and toss to coat. Serve immediately over rice or in anyway that you desire, and garnish with green onions and sesame seeds."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "190 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[shiitake]",
+    "▢ 2 cups dried shiitakes, (12-16 mushrooms)",
+    "▢ Boiling water, (to soak the mushrooms)",
+    "▢ ¼ cup cornstarch",
+    "▢ 2 tablespoons light oil, (such as canola or peanut), plus more if needed",
+    "[sesame sauce]",
+    "▢ ¼ cup soy sauce",
+    "▢ 2 tablespoons brown sugar",
+    "▢ 2 tablespoons rice vinegar",
+    "▢ 2 cloves garlic, , minced",
+    "▢ 1 inch piece of ginger, , minced",
+    "▢ 2 teaspoons sriracha or other hot sauce, (optional)",
+    "▢ 1 teaspoon sesame oil",
+    "▢ 1 teaspoon cornstarch",
+    "[garnish]",
+    "▢ 2 green onion, , thinly sliced",
+    "▢ 2 teaspoons sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chinese Shrimp Congee",
+    "time": "1 hr 20 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "215",
+      "carbohydrateContent": "41",
+      "fatContent": "1",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "In a small bowl, marinate shrimp with 2-3 ginger shreds, cooking wine and ground pepper.",
+      "Soak the rice for around 30 minutes and then wash and drain. In a small bowl, marinade the rice with pinch of salt and cooking oil for 10 minutes.",
+      "In a large pot, bring enough water to boil and then add rice. Use lowest fire to simmer for around 40 minutes until the rice is broken and get a thick soup base.",
+      "Add ginger and minced greens and continue cooking for 1 minute.",
+      "Add shrimp in; Turn off immediately the fire until the shrimp becomes red.",
+      "Garnish with green onion and serve hot with small side dishes like cucumber salad, pickles or fried shallot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small-sized Shrimps",
+        "unit": null,
+        "notes": "alt: more if you wanted, divined and unshelled, I keep the tail",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greens",
+        "unit": "C",
+        "notes": "minced, Bok Choy, Yu Choy etc",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "minced for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9357740e62c5c6d676b6b3199538f9eb4f72eadce4a36824182c99bd6282dbf6",
+    "lineage_hash": "e9f777497c8780f7ad9431944493015c68bee5af0cbee1aaabf567909ee8943e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-shrimp-congee/",
+    "fetchedAt": "2026-08-01T23:22:01.262Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-shrimp-congee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Crusted Salmon",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, grind the liquorice and salt together until a fine powder forms. Toss this together with the macadamias and water and lightly toast in a pan over a medium heat. Cool the mix, coarsely grind in a food processor, then add the black garlic and mix thoroughly",
+      "For the tomatillo salsa, mix all of the ingredients together, season and set aside until ready to serve",
+      "Place a large pan over medium heat. Rub the salmon skin in oil and place into the hot pan, skin-side down. Cook for 3 minutes, or until the salmon fillets are cooked to halfway through",
+      "Remove the salmon from the pan and place onto a baking tray lined with baking paper, skin-side up. Firmly press the macadamia crust onto the skin and place on the bottom shelf of the oven to cook for 5-6 minutes",
+      "Remove the salmon from the oven and place onto plates. Decorate the plates with the tomatillo salsa and watercress. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillets",
+        "unit": null,
+        "notes": "each weighing 160g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Juice Sticks",
+        "unit": null,
+        "notes": "around 1/6 of 1 stick",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatillos",
+        "unit": "g",
+        "notes": "washed and finely diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "g",
+        "notes": "flesh only, diced",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Watercress",
+        "unit": null,
+        "notes": "picked and washed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c24983dcd48d2af10dcc928cb9d14d4c143696fdd0d96239ed046270e4941228",
+    "lineage_hash": "8729b05523c3e2013cbe0712a1f2c12c0632c150933306a1122134bf742aa3b2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crusted-salmon-recipe",
+    "fetchedAt": "2026-08-03T16:58:23.044Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crusted-salmon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

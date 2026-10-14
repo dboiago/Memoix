@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Coniglio alla Stimpirata",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the rabbit in a large bowl and cover it with vinegar. Leave to soak for about 10 minutes, then drain, rinse and pat dry",
+      "Heat the oil in a large, high-edged skillet. Add the rabbit and brown on both sides over a medium-high heat. Remove from the skillet and set aside",
+      "Next, add the garlic, chilli, bay leaf, carrots, onion, celery and potato to the skillet. Stir-fry over a medium heat until softened. Add the peppers and a splash of water. Reduce the heat, cover and cook for about 15 minutes, stirring often, until all the vegetables have become tender. Add more water as needed",
+      "Add the rabbit back to the skillet. Add the olives and capers and another splash of water. Cover once again and cook for 15 extra minutes, or until the rabbit is cooked through and any excess liquid has evaporated from the pan. Season to taste",
+      "Finally, increase the heat to medium-high. Combine 60ml white wine vinegar with the sugar and pour this over the rabbit. Allow the vinegar to evaporate. Turn off the heat and garnish with fresh mint leaves",
+      "Let the dish rest for about 6 hours, so the flavours can mingle and “get acquainted”. Reheat slightly just before serving. In the summer, it can be served at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rabbit",
+        "unit": "kg",
+        "notes": "cut into 6 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "trimmed and sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "topped, seeded and cut into strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Pepper",
+        "unit": null,
+        "notes": "topped, seeed and cut into strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "68cfc55cdad48502f1a265de30469ebe8cdb31cc4cc1c5273aadb7723d6bcb7d",
+    "lineage_hash": "a85f1417a950a1c8b0e3bf03e70d0499432784547457af9f04e4daf860075266"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/coniglio-alla-stimpirata-recipe",
+    "fetchedAt": "2026-08-01T21:01:03.075Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/coniglio-alla-stimpirata-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

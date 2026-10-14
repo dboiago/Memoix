@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Chicken Mole",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "25",
+      "fatContent": "10",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "In a large pot, heat water, salt, onion, chicken, and bay leaf. Once it starts to boil, lower the heat and simmer for about 20 minutes. Transfer chicken to plate to cool off, and then shred. Discard bay leaf. Reserve broth and onion.",
+      "Heat oil in large skillet over medium heat. Add onion, garlic, bolillo, chiles, tomatillos, tomato, and sesame seeds and sauté for 10 minutes, until soft.",
+      "Pour half the broth and boiled onion into a blender and add half the sautéed ingredients. Add peanut butter, chocolate pieces, cocoa powder, mole paste, and salt and blend until very smooth. Transfer the sauce to a large skillet.",
+      "Pour the other half of the broth and sautéed ingredients into blender. Puree and add to the mixture in the large skillet. Bring to a boil, reduce heat, and simmer for 10 minutes.",
+      "Add 2 cups of the shredded chicken and stir until chicken is covered with the sauce.",
+      "Lower heat and simmer for 10 minutes, stirring continuously to keep it from sticking to skillet. Plate some mole on a serving plate and toss a handful of sesame seeds on top for garnish.",
+      "Make ahead. Make the sauce ahead of time. It tastes even better the next day.",
+      "Save time. Use 2 cups of shredded store-bought rotisserie chicken and low-sodium chicken broth.",
+      "Like spicy mole? This mole sauce is mild, if you want to add some heat to the sauce, add 2 additional dried chile peppers.",
+      "Like sweet mole? If you like sweet mole, add more chocolate.",
+      "Gluten free? Replace bolillo with two corn tortillas.",
+      "Leftover mole paste. Leftover Dona Maria paste should keep for about six months in the refrigerator once opened, or up to a year in the freezer.",
+      "Chicken mole leftovers. Leftovers can be refrigerated for five days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4½",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1-2",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bolillo",
+        "unit": null,
+        "notes": "substitute small French roll, cut into1-inch pieces",
+        "amount": "1",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chiles",
+        "unit": null,
+        "notes": "dried, rinsed, stemmed, seeded, and diced",
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "California Red Chile Pods",
+        "unit": null,
+        "notes": "rinsed, stemmed, seeded, diced",
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatillos",
+        "unit": "small",
+        "notes": "husks removed, rinsed, and chopped",
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": "plus more for garnish",
+        "amount": "1",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Smooth Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Chocolate",
+        "unit": "oz",
+        "notes": "coarsely chopped",
+        "amount": "1.5",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dona Maria Mole Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Mole Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mole Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21b2696ef95ce6a6eb81e83d9a16eb95c2d057026d8ae9778fb904fd13237298",
+    "lineage_hash": "2276504008c6fd853e56e0644ed7fd6869dba45486bebc0fbb5666c4e5941185"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chicken-mole/",
+    "fetchedAt": "2026-08-02T03:50:02.211Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chicken-mole/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

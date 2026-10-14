@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/yoghurt-cake-recipe",
+  "slug": "citrus-yoghurt-cake-recipe_greatbritishchefs_6b6d04d0",
+  "title": "Citrus Yoghurt Cake Recipe",
+  "byline": "by Andrew Gravett",
+  "fetchedAt": "2026-08-04T00:03:25.051Z",
+  "ldName": "Citrus yoghurt cake",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "3 eggs",
+    "380g of caster sugar",
+    "245g of yoghurt, full-fat",
+    "400g of flour",
+    "1 lemon, zested",
+    "1 orange, zested",
+    "160g of extra virgin olive oil",
+    "15g of baking powder",
+    "1 pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 160°C/gas mark 3",
+    "Whisk the eggs with the sugar until pale. Add the extra virgin olive oil and yoghurt and stir to mix",
+    "Sift in the flour, the baking powder and the grated peel of one orange and one lemon",
+    "Butter and dust with flour a 24 cm round cake tin, scrape the batter into the tin and bake for about 30 minutes until golden and dry inside. Use a toothpick to test if it is dry inside",
+    "Remove from the oven, let it cool down for a few minutes and remove from the cake tin. Let it cool down completely on a wire rack, then dust with sugar. It will keep fresh for several days if stored perfectly wrapped in a kitchen towel"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

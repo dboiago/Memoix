@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Brownies",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven up to 180°C/Gas mark 4. Line a deep-sided baking tray with greaseproof paper",
+      "Melt the dark chocolate and butter in bowl over a bain-marie. Stir constantly until they have melted completely; take the bowl off the bain-marie and leave to cool slightly",
+      "Whisk the eggs and sugar in an electric mixer until doubled in size. Once the egg mixture is aerated, fold in the melted butter and chocolate mix",
+      "Be careful not to knock the air out of the mix. Add the rest if the ingredients and put into your baking tray and place in the oven",
+      "It should take approximately 30 minutes for the brownies to cook; check by pushing a cocktail stick into the tray. The stick should come out slightly wet",
+      "Once done, pull out of the oven and cool down on a wire rack. Leave in the fridge overnight to set",
+      "Take the brownie out of the tray and remove all the greaseproof paper. Have the flattest side down on the chopping board. Begin to square up the sides and then cut into rectangles in 2cm wide strips",
+      "Cut each strip cut into cubes and dust the cubes in icing sugar. Arrange the brownie onto small plates and serve with coffee"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Cocoa Powder",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "roasted and lightly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "39% Milk Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e2880829715ab026c96eea319e5ad48483267d4ea7b5149627f8f7b7e24d35ce",
+    "lineage_hash": "c6e7d0a96ef167e8b1db302bcb42a8e132592d7e970a57e13eeda98b20afa37c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brownies-recipe",
+    "fetchedAt": "2026-08-03T16:11:44.460Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brownies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

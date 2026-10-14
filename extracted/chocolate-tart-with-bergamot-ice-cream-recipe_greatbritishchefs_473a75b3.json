@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Chocolate Tart with Bergamot Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the ice cream by heating the milk and cream in a saucepan. Meanwhile, whisk the yolks and sugar together until thick and pale",
+      "Slowly whisk the warm cream mixture into the eggs and sugar. Stir in the bergamot jam and return the mixture to the pan. Slowly cook until the custard is thick enough to coat the back of a spoon",
+      "Transfer to a metal bowl set over an ice bath to cool rapidly, then churn in an ice cream maker",
+      "To make the pastry, cream the butter and sugar together, then whisk in the egg. Gradually add the flour and salt, then as soon as a dough forms, shape into a ball and wrap in cling film. Chill in the fridge for at least 30 minutes",
+      "To make the filling, bring the milk and cream to the boil in a saucepan then remove from the heat. Melt the dark chocolate in a microwave or over a bain-marie",
+      "Whisk the yolk and sugar until thick and pale, then whisk in the milk and cream mixture. Fold in the melted chocolate and transfer to a piping bag",
+      "Roll out the pastry and use it to line 4 individual tart cases. Blind bake at for 10 minutes, then remove from the oven and set aside",
+      "Rinse the kumquats, cut them in half and remove the seeds. Lay them on a tray, sprinkle with the sugar and bake in a preheated oven for approximately 10 minutes. Once cooled, chop them up roughly",
+      "To construct the tart, cover the base of the tart case with the chopped kumquat, top up with the ganache, and allow to set for 30 minutes",
+      "Serve with a quenelle of ice cream and slices of fresh kumquat"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bergamot Marmalade",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kumquats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kumquat",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7f773626a8b98baa45dd1a6432162810a92bd632cde21b11531ecafa9889802",
+    "lineage_hash": "6fc3687ad8a27c36e26728878cbc56b3b58f76970fdf3eea9ca865f896e58eca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tart-bergamot-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T11:27:04.744Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tart-bergamot-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

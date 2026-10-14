@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Cast Iron Beer Cheese",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set your grill for indirect heat and adjust vents to hold between 300–325°F. Add a few small chunks of apple or cherrywood over the coals for light smoke. Place a cast iron skillet over direct heat, add beef tallow, and sauté onion and jalapeños until softened. Stir in garlic and cook 3–5 minutes, until golden and fragrant.",
+      "Move the skillet to indirect heat. Add whipped cream cheese, Dijon, and Worcestershire, stirring until smooth. Gradually fold in fontina, white cheddar, pepper jack, and parmesan. Close the lid and stir occasionally until fully melted and silky.",
+      "Uncover, pour in the beer, and whisk until bubbling and fully combined. Remove from heat, season to taste, and garnish with chives. Serve warm, family-style, with toasted pretzels, grilled bread, or crostini."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tbsps. Beef Tallow",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeños",
+        "unit": null,
+        "notes": "minced, depending on heat preference",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream Cheese",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fontina",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cheddar",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper Jack",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager",
+        "unit": "C",
+        "notes": "alt: pilsner beer, room temp",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt and Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "alt: green onion, chopped, garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pretzels",
+        "unit": null,
+        "notes": "grilled bread, or crostini, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a996d13c5989a987f62c52964332e11eec8b3bff927d797f3807c78fa9ade03f",
+    "lineage_hash": "ead1b0320b53b2c0447ae21811007bf3e70984fa6532ca9642d28fd1081caf5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cast-iron-beer-cheese/",
+    "fetchedAt": "2026-08-03T10:07:15.975Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cast-iron-beer-cheese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

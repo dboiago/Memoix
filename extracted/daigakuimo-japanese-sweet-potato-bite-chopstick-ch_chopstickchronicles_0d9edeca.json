@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Daigakuimo (Japanese Sweet Potato Bite)",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "197",
+      "carbohydrateContent": "32",
+      "fatContent": "7",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Wash the sweet potato and chop it into bite-sized pieces, leaving the skin on. Then soak it in water for 30 minutes.",
+      "Drain out the water and remove the excess water with a paper towel.",
+      "Cook the sweet potato in a frying pan on low-medium heat and coat it with the rice malt syrup and olive oil.",
+      "Cook the sweet potato for approximately 15 minutes, occasionally turning the potatoes as it cooks, until the sweet potatoes are soft and have become covered with a sticky coating.",
+      "Serve it on a plate and sprinkle with the black sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Japanese Purple Sweet Potato",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Malt Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84ed4f78a267168809add4298788b09ab2e4b688dbc39494c3bac665031df9ab",
+    "lineage_hash": "9089304cb054d4ca6fefcaf2e31cf901f4a454aa325ccc916689b60368c12399"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/daigakuimo/",
+    "fetchedAt": "2026-08-01T21:01:10.433Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/daigakuimo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

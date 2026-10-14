@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Zucchini Stir Fry",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "53",
+      "carbohydrateContent": "4.9",
+      "fatContent": "3.6",
+      "proteinContent": "315"
+    },
+    "directions": [
+      "Remove the tough ends from the zucchini. Halve it lengthwise, then cut into 1/4” (4 mm) thick half-moon slices.",
+      "(Optional but highly recommended) Transfer the zucchini to a large bowl and add 1 teaspoon salt. Mix well and set aside for 10 minutes. Once done, drain and discard the water from the bowl. Rinse the zucchini with cold tap water to remove the salt. Drain again and gently squeeze excess water from the zucchini. (*Footnote 2)",
+      "Add oil to a medium-sized skillet and heat over medium-high heat until hot. Add the dried chili pepper, ginger and garlic. Stir a few times to release fragrance.",
+      "Add the ground Sichuan peppercorns and the zucchini. Cook and stir for 1 minute. Swirl in the soy sauce. Cook until the zucchini has softened, but is still a bit crisp, 1 to 2 minutes. Turn down the heat and try a piece of zucchini. Sprinkle a bit more salt if needed. Transfer everything to a big plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce (or to Taste)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "62f2af673fbccd3207f621936d5d2e6b6ff957ac1b08ce0b4a511678ceca4eb6",
+    "lineage_hash": "37a49c3c3fe48396b2885d789beb41c808d027381d6e162c5d4311838abb6ef7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/zucchini-stir-fry/",
+    "fetchedAt": "2026-08-02T05:27:12.522Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/zucchini-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

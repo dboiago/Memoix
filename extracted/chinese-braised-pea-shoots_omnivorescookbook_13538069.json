@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Pea Shoots (上汤碗豆尖)",
+    "time": "55 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "156",
+      "carbohydrateContent": "14.4",
+      "fatContent": "6.7",
+      "proteinContent": "12.1"
+    },
+    "directions": [
+      "Add the dried scallop and dried shrimp into cold water and soak for 30 minutes. Then drain the soaking water. If short on time, you can also soak them in warm water for 10 minutes.",
+      "Add the pea shoots into a big colander and cover with cold tap water. Soak for 5 minutes, rub gently with your hands, then drain. Check the ends of the pea shoot by feeling the cut side of the stem with your fingers with a snapping motion. If the ends are tough to snap, move up the stem until you can easily snap them off. Discard the fibrous tough stem ends. (*Footnote 2)",
+      "Heat oil in a wok or a 4qt dutch oven over medium heat until shimmering. Add the garlic. Cook until the surface turns light golden.",
+      "Add the ginger, rehydrated scallops, and rehydrated shrimp. Cook and stir for 30 seconds to release fragrance. Add the mushrooms. Cook over high heat until lightly browned.",
+      "Pour in the chicken stock along the edge of the hot wok, to let it evaporate as much as you can. Cook over high heat until bringing to a boil. Let boil for 2 minutes, to infuse flavor and slightly reduce the broth.",
+      "Add the century egg and the pea shoots. Cook covered for 2 minutes, until the pea shoots are wilted. Uncover, then stir to submerge the pea shoots in the broth. Cover to braise until the pea shoots are tender, or cooked to your preferred texture, 1 to 2 more minutes. Immediately transfer everything to a deep plate, so the pea shoots won’t overcook in the residual heat. Serve as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scallops",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Snow Pea Shoots",
+        "unit": "lb",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "gently smashed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Shimeji Mushrooms",
+        "unit": "pkg",
+        "notes": "3.5 oz",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Century Egg",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b6ea79c7a0885b340806c4722a6ea48e3df047b280da0ee2157d581afc9e959",
+    "lineage_hash": "65fa43e8cceccfc06672b9a684185c0ab85b4c8989f7b2a182b3e465c98f2008"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-braised-pea-shoots/",
+    "fetchedAt": "2026-08-02T08:08:21.768Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-braised-pea-shoots/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

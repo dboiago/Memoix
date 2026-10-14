@@ -1,0 +1,265 @@
+{
+  "recipe": {
+    "name": "Country Fried Ribs",
+    "time": "5 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pat the ribs dry with a paper towel. Remove the membrane from the bone side of the ribs by sliding a butter knife under the first rib until the membrane lifts. Using a paper towel, pull the membrane off completely. USA ribs tend to be cut ‘St Louis’ style, into a long, even rectangle with very little – if any – fat that needs trimming, but remove any excess if you have it",
+      "Apply the American mustard all over the front and back of the ribs then dust generously all over in your favourite barbecue rub and set aside",
+      "Preheat your kettle barbecue to 120°C/250°F for indirect cooking. This means that the coals are all banked to one side of the grill and the ribs are on the opposite side. Add wood chips or wood chunks if you’d like at this stage – cherry wood works really well with pork",
+      "Add the ribs and cook until the internal temperature of the meat reaches 80°C/176°F at the thickest part, about 2 hours to 2 hours 30 minutes",
+      "Once at temperature, wrap the ribs in foil. This makes them extra tender and speeds up the cooking process. Lay out two large sheets of foil on top of each other – we use a double layer to make sure the bones don’t poke holes in the foil. Dot the cubes of butter over the foil, then sprinkle over the brown sugar and barbecue sauce",
+      "Place the ribs, bone side up, on top of the foil. Fold up the sides of the foil, leaving a small opening. Pour the apple juice into the opening and then seal the foil into a tight parcel",
+      "After this time, carefully remove the ribs from their foil packet. Return to the smoker, bone side down, for another hour or they have reached 93°C/200°F",
+      "Allow to completely cool for at least an hour before turning them into ‘country fried ribs’",
+      "While your ribs are cooling, combine all the ingredients for the fry sauce, cover and set in the fridge",
+      "Cut your cooked and cooled ribs between the bones to make individual ribs. Set aside",
+      "Have three bowls or plates set up in front of you. Add panko breadcrumbs to the first one. Whisk together the eggs with the buttermilk in the second one. In the final one whisk together all the ingredients for the seasoned flour mix. Have a wire rack ready to put the coated ribs on",
+      "Coat the rib in the seasoned flour, then the buttermilk egg wash, back into the seasoned flour, again into the egg wash and finally into the panko. Set aside on your prepared wire rack and repeat with the rest of the ribs. Make sure the flour completely coats the rib each time",
+      "When you’ve coated all your ribs, set up a wide, deep saucepan and add the oil. Heat the oil to 175°C/347°F",
+      "Using tongs, lower the ribs into the hot oil. Be careful not to overload the pan; we’d suggest cooking the ribs in two to three batches. When the ribs have turned golden brown, around 4–5 minutes, remove from the oil and drain on a wire rack. Serve with a few bowls of ‘Country Fry Sauce’ for dipping and enjoy!",
+      "NOTE: If using an oven, cook at 140°C/280°F and make sure you cook the ribs on a wire rack with a roasting tray underneath. Cook to temperature and tenderness, not time, as the oven cooks hotter and faster"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack of Pork Spare Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "American Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Spice Rub",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cut into cubes",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barbecue Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Dill Pickle",
+        "unit": "Tbsp",
+        "notes": "finely chopped, plus 2 tbsp sweet dill pickle liquor",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "L",
+        "notes": "for shallow frying",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "675071a53cfcdd054692d2cec238457122585b15adb4e360d0ed80f983ef5a8b",
+    "lineage_hash": "5b94c33c659c4a6f8604b2ae2b52782a439e29d73a22c9a0d0536c20e5111b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/country-fried-ribs-recipe",
+    "fetchedAt": "2026-08-02T09:05:29.415Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/country-fried-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

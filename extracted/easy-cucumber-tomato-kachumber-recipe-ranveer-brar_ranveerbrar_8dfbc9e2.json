@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Cucumber & Tomato Kachumber (खीरा और टमाटर कचुम्बर)",
+    "time": "35 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients in a large mixing bowl.",
+      "Adjust the seasoning and serve chilled or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sized Tomato",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sized Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and cut into dices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05c0a22372dd54c0db2b57107a83d53a814f7dd362b828dbad41a4d084be4e10",
+    "lineage_hash": "70ae17a41c0ed1224bba0c66ffe32f9b08cab3a7f9992663eb73c4f4fb311801"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cucumber-tomato-kachumber/",
+    "fetchedAt": "2026-08-02T03:19:13.524Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cucumber-tomato-kachumber/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

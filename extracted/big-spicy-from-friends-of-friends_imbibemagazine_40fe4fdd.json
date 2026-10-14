@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Big & Spicy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rye, Jamaican rum, aperitivo, and passion fruit liqueur to a mixing glass with the jalapeño slices and let infuse for 20 minutes. Strain out the jalapeño and add the infused liquid to a shaker with the juices, oleo saccharum, and a small handful of crushed ice. Whip shake and pour into the glass. Top with crushed ice. Garnish.\nMango and Gochujang Oleo SaccharumAdd 1 cup of mango chunks to a sealable container. Top the fruit with 1 cup of refined sugar and 1 oz. of gochujang. Do not mix. Let it sit. Immersion blend after it sits at room temperature for 24 to 36 hours until fully incorporated. Strain through chinois. Will keep for 14 days in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperitivo",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango and Gochujang Oleo Saccharum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7913b0c151b709c1a5fc2c58708995aac5e5282d676ae32c3c255d9f57311b36",
+    "lineage_hash": "424b93c19a7ec66b103c847e1b29b2f051c98d9ceba71ad9b2ba25613d694604"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/big-spicy-from-friends-of-friends-bar/",
+    "fetchedAt": "2026-08-04T01:37:58.923Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/big-spicy-from-friends-of-friends-bar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Cochon Bloody Mary",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Pickled Okra",
+      "Celery Stalk"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the vodka in a pitcher and stir to combine. The mixture can be made ahead of time and kept in a sealed pitcher for up to 1 week. To serve: Fill a glass with ice. Add about 2 ounces vodka. Fill with Bloody Mary mix. Stir, garnish with pickled okra and a stalk of celery, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottle V8 Juice",
+        "unit": null,
+        "notes": "46-ounce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Grainy Mustard",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Granulated Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Pork Jus",
+        "unit": null,
+        "notes": "alt: beef stock",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Fresh Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Fresh Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Hot Sauce",
+        "unit": null,
+        "notes": "preferably Crystal brand",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Green Hot Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Red Wine Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Olive Juice",
+        "unit": null,
+        "notes": "the brine from a jar of olives",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbps Okra Juice",
+        "unit": null,
+        "notes": "the brine from a jar of pickled okra",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": null,
+        "notes": "of choice",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eccc299462a36ae7cfab9940fc95c3a2acb48e3d2deeeb6c59fd4ae6a6e319a6",
+    "lineage_hash": "63a51ec10f26a29f7aa0c3b68a6e59810ee496efb3a48b1e61648a42a7b18ea8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cochon-bloody-mary-recipe/",
+    "fetchedAt": "2026-08-03T20:22:27.938Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cochon-bloody-mary-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

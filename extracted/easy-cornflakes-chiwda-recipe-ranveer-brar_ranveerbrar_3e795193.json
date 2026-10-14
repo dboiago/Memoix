@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Cornflakes Chiwda (कॉर्नफ्लेक्स चिवड़ा)",
+    "time": "20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pan. Add in mustard seeds and let them splutter.",
+      "Now add in green chillies, fennel seeds and curry leaves. Saute for a minute.",
+      "Then add in peanuts and sautÃ© for 2-3 minutes or until they turn golden brown in colour.",
+      "Now add in raisins, roasted chana dal. Give it a nice mix.",
+      "Add in turmeric powder and red chilli powder. Give it a nice mix and let the powdered masalas cook for a minute.",
+      "Now add in the cornflakes and give it a nice toss.",
+      "Now add chaat masala, sugar and salt. Give it a nice toss.",
+      "Turn off the flame and let it cool down to room temperature.",
+      "Store in airtight jars."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cornflakes",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chana Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ee2b20b61d5779d7f0c6a43f3878039fa8de640e9b2f765d41fdb6c3e2a785e",
+    "lineage_hash": "4464512e218f71823bfe7bbf8c8a3cf5dbb6787443e39a33c881ed52b4c86d86"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cornflakes-chiwda/",
+    "fetchedAt": "2026-08-02T12:54:24.144Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cornflakes-chiwda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

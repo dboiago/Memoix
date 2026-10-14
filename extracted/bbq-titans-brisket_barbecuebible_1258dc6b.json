@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "BBQ Titans’ Brisket",
+    "time": "12 hr",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim the brisket, leaving a fat cap on top at least 1/2 inch thick. Place the brisket on a rimmed baking sheet. Very generously season on all sides with the coffee rub.",
+      "Set up a smoker following the manufacturer’s instructions and preheat to 250°F. Add the wood as specified by the manufacturer.",
+      "Place the brisket fat side up in your smoker. Cook until the outside is darkly browned and the internal temperature is about 170°F, 10 to 12 hours, replenishing the charcoal and wood as needed. Start spraying the brisket with vinegar after 1 hour and spray with vinegar every hour for the first 5 hours.",
+      "Tightly wrap the brisket in unlined butcher paper. Return it to the smoker. Continue cooking until the internal temperature is 200°F and the meat is tender enough to pierce with a gloved finger or wooden spoon handle, an additional 2 hours. (You’ll need to unwrap the brisket to check it. If it needs additional cooking, rewrap it.)",
+      "Transfer the wrapped brisket to an insulated cooler. Let rest for 2 hours. Unwrap the brisket and transfer it to a cutting board, reserving any juices that accumulate in the butcher paper.",
+      "To serve, trim off any large lumps of fat and slice the brisket across the grain as thick or thin as you desire. Spoon the brisket juices over the slices. Serve Aaron Franklin’s Espresso Barbecue Sauce on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Packer Brisket (with Both Flat and Point)",
+        "unit": null,
+        "notes": "12 to 14 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fette Sau’s Coffee Rub",
+        "unit": "C",
+        "notes": "see recipe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Distilled White Vinegar in a Food-safe Spray Bottle",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aaron Franklin’s Espresso Barbecue Sauce (recipe Below)",
+        "unit": "C",
+        "notes": "for serving",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "949d225b05f605757124dcf0f18dcced63ea4e0b9aaf4085a6f4047b46eaa4a2",
+    "lineage_hash": "a7961926c8dc839bf16e4943af8acc3438496d3575300d379ec91b08f9dba31d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bbq-titans-brisket/",
+    "fetchedAt": "2026-08-03T07:26:07.518Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bbq-titans-brisket/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

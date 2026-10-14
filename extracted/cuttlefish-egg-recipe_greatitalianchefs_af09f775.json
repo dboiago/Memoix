@@ -1,0 +1,254 @@
+{
+  "recipe": {
+    "name": "Cuttlefish Egg",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the 2 whole cuttlefish for the eggs. Thoroughly clean them and separate the heads and tentacles from the main body. Reserve the ink sacks and livers for the ink sauce but discard the rest of the innards and entrails, including the beak and bony centre",
+      "Remove the skin from the bodies and rinse well, setting aside until required. Cut the tentacles away from the head just below the eyes and discard the rest of the head, then chop the tentacles as finely as possible or pulse briefly in a food processor",
+      "Place the chopped tentacles in a large bowl with the minced beef, mortadella, grated cheese and chopped parsley. Remove the crust from the bread and weigh out 100g of the soft inside, pulsing in a food processor to form breadcrumbs. Add the breadcrumbs to the bowl and stir well to combine, seasoning with a little salt and pepper",
+      "Place a pan over a medium heat and add a drizzle of olive oil. Add the chopped onion and garlic to the pan and sweat down until softened. Stir in the passata, basil leaves and cuttlefish mixture, stirring well until thoroughly combined",
+      "Allow the mixture to thicken and cook through before removing from the heat and leaving to cool slightly. Transfer the mixture to a piping bag, first blitzing briefly in a food processor if the consistency appears too chunky or coarse",
+      "Take the eggs and carefully make a 3cm hole in the bottom of each one, allowing the raw egg to pour out into a bowl. Reserve the egg yolks for the ink sauce and discard the whites, then clean out the shells as thoroughly as possible taking care to keeping the shape intact",
+      "Pulse the reserved cuttlefish bodies until coarsely blended to form a sticky white paste. Using your finger, carefully coat the inside of each egg shell with a layer of cuttlefish paste. Pipe the meat filling into each egg until nearly full and seal over the hole with another layer of paste, then cook in the water bath for 20 minutes",
+      "To make the ink sauce, add the olive oil to a large pan and gently sauté the chopped onion, garlic, chilli and parsley until softened. Stir in the chopped cuttlefish tentacles along with the reserved livers and ink from the whole cuttlefish",
+      "Place the sun-dried tomatoes in a food processor or blender with the water and blitz to make a smooth paste. Add to the pan and simmer for a further 10 minutes. Pass the sauce through a muslin cloth into a clean pan and place over a low heat, then stir in the reserved egg yolks and continue to heat through until the sauce thickens",
+      "Remove the cooked eggs from the water bath and carefully peel off the shells, reserving any large pieces to use as a garnish if desired",
+      "Place the ricotta in a bowl and stir in 100ml of water until loosened to a sauce-like consistency. Transfer to a piping bag with a small nozzle",
+      "To serve, spoon some of the ink sauce on to each serving plate and pipe lines of ricotta sauce over the top. Place a cuttlefish egg in the centre of the sauce and garnish with few chopped chives and a drizzle of olive oil. Finish the dish with piece of reserved egg shell, if desired"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Cuttlefish",
+        "unit": null,
+        "notes": "300g each",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mortadella",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ragusano Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprig",
+        "notes": "leaves finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loaf of White Bread",
+        "unit": null,
+        "notes": "preferably a small rustic Sicilian bread",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "sprig",
+        "notes": "leaves finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cuttlefish",
+        "unit": "g",
+        "notes": "chopped tentacles only",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "deseeded and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f9deb224d618fff729f6be7b28987464f51b722618d2bb551e25caf407ad5e6",
+    "lineage_hash": "70948d84bd06edd1c025e33ba39e8000ef945f7232dbdb23d4999c4f130751a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cuttlefish-egg-recipe",
+    "fetchedAt": "2026-08-02T06:01:22.563Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cuttlefish-egg-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

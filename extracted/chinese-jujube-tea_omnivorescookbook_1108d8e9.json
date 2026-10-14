@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chinese Jujube Tea (红枣茶)",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tea",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "22",
+      "carbohydrateContent": "5.2",
+      "fatContent": "0.1",
+      "proteinContent": "0.4"
+    },
+    "directions": [
+      "Place the jujubes in a large bowl and water to cover. Soak for 10 minutes. Then gently rub the jujube surface to remove any dust. Drain and discard the water. Halve the jujubes using a paring knife, then remove the cores.",
+      "Rinse the goji berries with water. Gently rub to remove any dirt from the surface.",
+      "Add the jujubes, goji berries and ginger to a small pot. Add 4 cups of water. Cook over medium-high heat until boiling. Turn to medium-low heat and simmer for 10 minutes.",
+      "Once done, strain the tea using a small strainer. Press the jujubes to release as much liquid as possible.",
+      "Add the brown sugar and stir to mix well. Taste the tea and add more sugar if needed. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jujubes",
+        "unit": "g",
+        "notes": "6 big",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "g",
+        "notes": "1 tablespoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1062bac80ac8e3d2d1e8ce97f12914d071442b30dae20b3b32f45ba7aa27eaf0",
+    "lineage_hash": "db334d482fb6e83459b7ca94c6c0c7ce840bc78eba5812fcce4b5b235cf9afbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/jujube-tea/",
+    "fetchedAt": "2026-08-02T01:22:47.831Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/jujube-tea/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

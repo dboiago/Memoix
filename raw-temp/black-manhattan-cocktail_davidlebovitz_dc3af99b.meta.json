@@ -1,0 +1,38 @@
+{
+  "url": "https://www.davidlebovitz.com/black-manhattan-cocktail-recipe/",
+  "slug": "black-manhattan-cocktail_davidlebovitz_dc3af99b",
+  "title": "Black Manhattan Cocktail",
+  "byline": "David",
+  "fetchedAt": "2026-08-03T02:46:38.072Z",
+  "ldName": "Black Manhattan",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 ounces  bourbon",
+    "1 ounce amaro  ((see headnote))",
+    "2 dashes orange bitters",
+    "1  maraschino cherry"
+  ],
+  "ldInstructionsRaw": [
+    "Put the bourbon, amaro, and bitters in a cocktail mixing glass or small pitcher. Add ice and stir briskly until well-chilled, at least 20 seconds.",
+    "Strain into a chilled cocktail glass and add a maraschino cherry."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 ounces  bourbon",
+    "1 ounce amaro , (see headnote)",
+    "2 dashes orange bitters",
+    "1 maraschino cherry"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

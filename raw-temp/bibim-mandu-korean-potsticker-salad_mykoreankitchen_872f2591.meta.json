@@ -1,0 +1,72 @@
+{
+  "url": "https://mykoreankitchen.com/bibim-mandu-korean-potsticker-salad/",
+  "slug": "bibim-mandu-korean-potsticker-salad_mykoreankitchen_872f2591",
+  "title": "Bibim Mandu (Korean Potsticker Salad)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-02T02:36:30.985Z",
+  "ldName": "Bibim Mandu (Korean Potsticker Salad)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3",
+    "3 to 4"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "bibim mandu, dumpling salad, potsticker salad",
+  "ldIngredientsRaw": [
+    "14 pieces frozen dumplings ((180 to 500g /  6 to 17 ounces))",
+    "4  lettuce leaves ((40 g / 1.4 ounces), thinly sliced)",
+    "35 g cabbage ((1.2 ounces), thinly sliced)",
+    "1/2  Lebanese cucumber ((65 g / 2.3 ounces), julienned)",
+    "1/4  carrot ((25 g / 0.9 ounces), peeled, julienned)",
+    "Some  cooking oil (, I used rice bran oil)",
+    "1/4 cup water",
+    "1.5 Tbsp Korean chili paste ((gochujang))",
+    "1 Tbsp rice vinegar",
+    "1 Tbsp soy sauce (, I used the kikkoman brand.)",
+    "1 Tbsp honey",
+    "1 Tbsp raw sugar",
+    "1 Tbsp sesame oil",
+    "1 Tbsp toasted sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Wash and clean all the vegetables, and prepare them according to the instructions in the ingredients list. Once they&#39;re ready, set them aside.",
+    "Make the dressing by combining all the ingredients in a bowl and mixing them well.",
+    "Heat the pan over medium heat and add some oil, spreading it evenly. Place the dumplings in the pan and cook for about 5 minutes until they&#39;re thoroughly cooked and golden brown. Here&#39;s a tip for quick and even cooking: start by browning one side for about 1 minute. Then, add 1/4 cup of water, cover, and lower the heat. Once the water evaporates, remove the lid, add a bit more oil, and increase the heat to medium. Cook until all sides are golden and crisp. Set them aside to cool slightly—I find they taste better in the salad when a bit cooled down.",
+    "In a large mixing bowl, toss together your vegetables, dumplings, and dressing until everything is well combined. Remember, it&#39;s best to do this step just before you&#39;re ready to eat. That way, your vegetables and dumplings stay nice and crunchy.Alternatively, you can mix only the vegetables in the dressing, then serve them in the center of the plate, with pan-fried dumplings arranged around the edge. This method allows you to enjoy even crispier dumplings. For a tidier presentation, serve the dressed vegetables in a shallow bowl to prevent the dressing from spilling over."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "137 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "2 g",
+    "fatContent": "6 g",
+    "sodiumContent": "377 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "12 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 14 pieces frozen dumplings (180 to 500g /  6 to 17 ounces)",
+    "▢ 4 lettuce leaves (40 g / 1.4 ounces), thinly sliced",
+    "▢ 35 g cabbage (1.2 ounces), thinly sliced",
+    "▢ 1/2 Lebanese cucumber (65 g / 2.3 ounces), julienned",
+    "▢ 1/4 carrot (25 g / 0.9 ounces), peeled, julienned",
+    "▢ Some cooking oil , I used rice bran oil",
+    "▢ 1/4 cup water",
+    "[SPICY, TANGY AND SWEET DRESSING]",
+    "▢ 1.5 Tbsp Korean chili paste (gochujang)",
+    "▢ 1 Tbsp rice vinegar",
+    "▢ 1 Tbsp soy sauce , I used the kikkoman brand.",
+    "▢ 1 Tbsp honey",
+    "▢ 1 Tbsp raw sugar",
+    "▢ 1 Tbsp sesame oil",
+    "▢ 1 Tbsp toasted sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

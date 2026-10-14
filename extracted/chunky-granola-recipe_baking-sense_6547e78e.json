@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Chunky Granola",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "195",
+      "carbohydrateContent": "26",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 300 °F. Line a half sheet pan with parchment paper or a silicone baking mat.",
+      "In a large bowl, combine 13 oz old-fashioned rolled oats, 4 oz walnuts, 2 oz flax seed meal, 1 oz sunflower seeds, 2 oz brown sugar, 1 teaspoon ground cinnamon, 1 teaspoon ground ginger, and ½ teaspoon table salt. In a small bowl or measuring cup, combine3 oz honey, 3 oz vegetable oil and 1 tablespoon vanilla extract. Drizzle the liquid ingredients over the oat mixture and toss to combine.",
+      "Whisk 1 egg white until frothy then fold it into the granola. Toss the mixture to evenly distribute the wet ingredients and break up any clumps. Pour the granola into the prepared pan. Moisten your hands with water and use them to press the granola firmly into an even layer.",
+      "Bake until the granola is dry and nicely browned around the edges, about 30 minutes.",
+      "Set the pan on a wire rack and cool to room temperature. Break the granola into large clumps and toss in the 9 oz dried cranberries. Keep in an airtight container for 1-2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "4 cups",
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "oz",
+        "notes": "1 cup, coarsely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flax Seed Meal",
+        "unit": "oz",
+        "notes": "½ cup, or almond meal",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "1 ½ cups, dried",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcf294d87618cdc872cd3955b5358be64a7d46da12bbb03c50a167d5241ccc98",
+    "lineage_hash": "8ab218821518e24b460fde4f5f6f7882e5df18e541925aae2ef03d9f6099ad9d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/09/24/chunky-granola-recipe/",
+    "fetchedAt": "2026-08-01T20:16:07.721Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/09/24/chunky-granola-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

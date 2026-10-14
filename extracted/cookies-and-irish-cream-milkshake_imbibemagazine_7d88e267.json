@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Cookies and Irish Cream Milkshake",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Victoria",
+    "garnish": [
+      "Chocolate Sandwich Cookies"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the glasses in the freezer to chill for a few minutes. Add all ingredients (except for the 2 garnish cookies) in a blender and pulse until smooth and thick. Divide the milkshake between the chilled glasses and edge each glass with a cookie."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Cream Liqueur",
+        "unit": "oz",
+        "notes": "such as Baileys",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sandwich Cookies",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sandwich Cookies",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60b67e2d020f58daa0efb62083a880f8e4debebd24a4b41b16036f5570820fc8",
+    "lineage_hash": "69754b0f6537f6e28c7c4258b73f6cc0308f98fe14be88e92a73f3eeeb56710c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cookies-and-irish-cream-milkshake/",
+    "fetchedAt": "2026-08-03T23:15:10.787Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cookies-and-irish-cream-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

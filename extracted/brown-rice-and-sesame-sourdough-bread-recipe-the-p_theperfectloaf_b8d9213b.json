@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Brown rice and sesame sourdough bread",
+    "time": "24 hr 50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "(9:00 a.m.)In a small bowl or jar, mix the Levain ingredients. Cover the jar and keep it at a warm temperature for 5 hours.",
+      "(9:10 a.m.)In a small jar, mix the sesame soaker ingredients.",
+      "(1:00 p.m)In a mixing bowl, add the autolyse ingredients until no dry bits remain. Cover the bowl and let rest for 1-hour.",
+      "(2:00 p.m.)Add the about half the water 2, salt, and levain to the top of the dough that was just in autolyse. With wet hands, mix thoroughly. Next, knead the dough for a few minutes until elastic and slightly smooth. If it feels like the dough can handle it, add the remaining water 2. Mix by pinching and folding until the ingredients are thoroughly incorporated and the dough is cohesive. Transfer the dough back to the bowl or to a container for bulk fermentation and cover.",
+      "(2:30 p.m. to 5:30 p.m.)This dough needs 3 sets of stretches and folds during bulk fermentation. After the first 30 minutes, spread about one-quarter of the inclusions over the top of the dough. Grab the side of the dough farthest from you, and stretch it over to the other side. Next, spread another one-quarter of the inclusions to the new top. Rotate the bowl 180 degrees and perform another stretch and fold. Next, spread on another one-quarter of the inclusions, rotate the bowl 90 degrees, and do another stretch and fold. Finally, spread on the last inclusions, turn the bowl 180 degrees, and do one last stretch and fold. The dough should be neatly folded up in the bowl. Perform 2 more sets of stretches and folds at 30-minute intervals. Then let the dough rest, covered, for the remainder of bulk fermentation.",
+      "(5:30 p.m.)Use water and a wet hand or lightly flour your work surface (whichever you prefer) and scrape out your dough. Using your bench knife, divide the dough in half. Lightly shape each half into a round shape. Let the dough rest for 35 minutes, uncovered.",
+      "(6:05 p.m.)Lightly flour the top of your preshaped rounds and using floured hands, shape the dough into an oval (batard) or round (boule) shape, then place the dough in proofing baskets, seam side up.",
+      "(6:30 p.m. to 9:00 a.m. the next day)Cover proofing baskets with reusable plastic and seal. Then, place both baskets into the refrigerator and proof overnight.",
+      "(The next day, 9:00 a.m.)Preheat your oven with a baking surface or combo cooker/Dutch oven inside to 450°F (230°C). When the oven is preheated, remove your dough from the fridge, score it, and transfer it to the preheated baking surface or combo cooker. Bake for 20 minutes with steam. After this time, vent the steam in the oven or remove the lid (you can keep it in the oven or remove it) and continue to bake for 30 minutes longer. When done, the internal temperature should be around 204°F (95°C). Let the loaves cool for 1 to 2 hours on a wire rack before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Type-85 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Sourdough Starter",
+        "unit": "g",
+        "notes": "100% hydration",
+        "amount": "27",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black or White Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "68",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "74",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Type-85 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "790",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 1",
+        "unit": "g",
+        "notes": null,
+        "amount": "504",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water 2",
+        "unit": "g",
+        "notes": null,
+        "amount": "42",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Rice",
+        "unit": "g",
+        "notes": "cooked",
+        "amount": "169",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Levain",
+        "unit": "g",
+        "notes": null,
+        "amount": "137",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9402ac52a3c92285b008dca9ff3de93540e714b8a3a009d17d41902c826c99c",
+    "lineage_hash": "65744ca00dc7bf3e198e455e33c0f821126f4b9be704b4dfdf7d83a793ae1fa4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theperfectloaf.com/brown-rice-and-sesame-sourdough-bread-recipe/",
+    "fetchedAt": "2026-08-01T17:21:41.217Z"
+  },
+  "rawSource": "https://www.theperfectloaf.com/brown-rice-and-sesame-sourdough-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

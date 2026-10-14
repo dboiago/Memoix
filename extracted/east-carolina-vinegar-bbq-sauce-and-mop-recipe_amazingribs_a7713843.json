@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "East Carolina Vinegar BBQ Sauce and Mop Recipe",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all the ingredients into a jar and shake. Let it sit for at least 12 hours to allow the flavors to meld. To use it as both a mop and finishing sauce, pour a few ounces into a cup and paint it on the meat with a basting brush once every hour or so while it is cooking. If you use it as a mop, the sauce in the cup can get contaminated with uncooked meat juices on the brush. That's why you don't want to dip the brush in the whole bottle. Discard contaminated mop and serve untouched sauce at the table."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Distilled Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "you pick: white, light brown, or dark brown",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "finely",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e535eff947e7596957825ce88399c40050d786ae3224cdc36ef2821efa01f4cb",
+    "lineage_hash": "5acbcaf5b6083e356286a24ecdd2a6868b54b1922909f80b6c16a0e0cae64214"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/east-carolina-vinegar-bbq-sauce-and-mop-recipe/",
+    "fetchedAt": "2026-08-02T08:53:34.694Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/east-carolina-vinegar-bbq-sauce-and-mop-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

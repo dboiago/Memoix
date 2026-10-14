@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Ambal (Kashmiri Pumpkin Curry)",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In non stick cooking pan add mustard oil and splutter cumin seeds, methi seeds, red chilies.",
+      "Add pumpkin and saute for 2 minutes. Add turmeric, chili powder, salt and Â½ cup water. Cover and allow it to cook on low flame until turn soft.",
+      "Now add pomegranate powder and cook for futher 3-4 minutes.",
+      "Remove and serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "Tbsp",
+        "notes": "methi seeds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilies",
+        "unit": null,
+        "notes": "broken",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "peeled, cut into cubes",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Powder",
+        "unit": "tsp",
+        "notes": "soaked in 1 tbsp water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b0273c96fc4c31af3912c875d7eac3372807b97977d309eab2dc04b871e5327",
+    "lineage_hash": "acb16271100c80bf88cbcab1452303577627d7a3b23e53d9b4f3719ba4698456"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/ambal-kashmiri-pumpkin-curry/",
+    "fetchedAt": "2026-08-02T02:26:14.909Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/ambal-kashmiri-pumpkin-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

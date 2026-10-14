@@ -1,0 +1,342 @@
+{
+  "recipe": {
+    "name": "Chocolate Crêpe Cake",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160ºC/gas mark 3. Line a baking tray with baking parchment",
+      "For the meringue, whisk the egg whites in a clean bowl with a third of the sugar. Continue whisking while adding the next third of the sugar, and when doubled in size, add the third part and continue to mix slowly until firm",
+      "Place in a piping bag and pipe small blobs of the mixture onto the baking paper for mini meringues. Place in the preheated oven then reduce the temperature to 110°C/gas mark ¼ and bake for 2 hours",
+      "Once cooked and crisp, remove from the oven and allow to cool until needed",
+      "Preheat the oven to 180ºC/gas mark 4 and line a deep baking tray with baking parchment",
+      "For the chocolate cake, whisk the eggs and sugar together in the bowl until light and fluffy, then slowly add the melted butter. Sieve in the flour, cocoa and baking powder and continue to mix until combined",
+      "Spread out on the baking tray to form a layer and bake for 25 minutes. Allow to cool then place in the freezer for 1 hour before putting the semi-frozen cake into a food processor and blitzing quickly to form rough crumbs. Set aside until needed",
+      "The crêpes are made by mixing together the milk, butter, egg yolks, 40g of the sugar and flour for 3–4 minutes. Stir in the orange zest and allow the mixture to rest. Meanwhile, whisk the egg whites with the remaining 25g of sugar in a clean bowl to make a meringue, then gently fold this into the batter",
+      "Preheat the oven to 180°C/gas mark 4 and line a baking tray with baking parchment",
+      "Spread a 1cm layer of the batter over the baking tray and bake for 10 minutes until just firm, then allow to cool",
+      "For the chocolate mousse, bring 100g of the cream and the sugar to the boil in a small pan. When the sugar has dissolved, remove from the heat and stir in the chocolate until completely melted",
+      "Whip 90g of the remaining cream to soft peaks and dissolve the gelatine in the remaining 10g of cream. Gently fold the whipped cream and gelatine mixture into the chocolate to form a mousse and chill until needed",
+      "For the berry purée, bring the berries to the boil in a pan over a medium heat then add the sugar and cook for 10 minutes. Remove from the heat and blitz in a blender, then pass through a sieve to form a smooth purée, similar to a jam consistency. Allow to cool",
+      "Repeat with the passion fruit and sugar to make a purée",
+      "Mix together the almond milk and water in a jug",
+      "To make the crêpe cake, carefully peel the baking parchment off the cooked crêpe and cut lengthways to make two long rectangles. Use a pastry brush to brush almond milk over one half, then spread with a layer of the berry purée. Place in the freezer to chill for 10 minutes or so",
+      "Spread (or pipe) a 2–3cm layer of the chocolate mousse over the purée and top with the other crêpe half, again brushing with the almond milk. Place in the freezer to chill for 2 hours, or until hard enough to be cut",
+      "Meanwhile, make a chocolate sauce by gently melting the chocolate with the water over a bain marie. Set aside and keep warm",
+      "To serve, spread a smear of the chocolate sauce over each serving plate, then sprinkle with the chocolate cake crumbs. Remove the crêpe cake from the freezer, dust the top with cocoa powder and cut into triangles",
+      "Place 2 triangles on each plate, then finish decorating with the mini meringues, a few dots of the berry and passion fruit purées, a wedge of passion fruit, a physalis and a few fresh mint leaves. Scatter over some roughly chopped candied almonds if liked"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange's Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruits",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Physalis",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fd3363dd145a097510d3eac486d21f938d12ce75a3c7064d1f75277b202906f",
+    "lineage_hash": "4c4c4e0342a96acc561f23833cadb296417a0a9372a812d89706fc89389366c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/crepe-cake-with-bitter-chocolate-mousse-recipe",
+    "fetchedAt": "2026-08-02T08:34:38.406Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/crepe-cake-with-bitter-chocolate-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

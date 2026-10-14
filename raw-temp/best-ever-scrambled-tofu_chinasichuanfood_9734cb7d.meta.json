@@ -1,0 +1,62 @@
+{
+  "url": "https://www.chinasichuanfood.com/best-ever-scrambled-tofu/",
+  "slug": "best-ever-scrambled-tofu_chinasichuanfood_9734cb7d",
+  "title": "Best Ever Scrambled Tofu",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:48:15.923Z",
+  "ldName": "Best Ever Scrambled Tofu",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "Scrambled, tofu",
+  "ldIngredientsRaw": [
+    "1  box of silken tofu",
+    "2 tbsp. cooking oil",
+    "1 tbsp. doubanjiang",
+    "1 tbsp. light soy sauce",
+    "1/4 tsp. sugar",
+    "1/2 tbsp. minced garlic",
+    "1/2 tbsp. minced ginger",
+    "1 tbsp. chopped scallion",
+    "1 tbsp. cornstarch",
+    "2 tbsp. water"
+  ],
+  "ldInstructionsRaw": [
+    "Smash the tofu in a large bowl. Combine cornstarch with water.",
+    "Heat 2 tablespoon of cooking oil (or you can use 1 tablespoon) and fry doubanjiang over slow fire for a while until the oil turns red.",
+    "Add garlic and ginger, fry until aromatic.",
+    "Place tofu in, add sugar and light soy sauce. Let the tofu simmer for 4-5 minutes over slow fire.",
+    "Gently stir the starch water to avoid the starch settling to the bottom. Pour in the starch water in the tofu and make a quick stir to combine everything. Then place half of the scallions in. Combine well. Transfer out and sprinkle the remaining scallion as decoration."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "185 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "1 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "416 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 box of silken tofu",
+    "2 tbsp. cooking oil",
+    "1 tbsp. doubanjiang",
+    "1 tbsp. light soy sauce",
+    "1/4 tsp. sugar",
+    "1/2 tbsp. minced garlic",
+    "1/2 tbsp. minced ginger",
+    "1 tbsp. chopped scallion",
+    "1 tbsp. cornstarch",
+    "2 tbsp. water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

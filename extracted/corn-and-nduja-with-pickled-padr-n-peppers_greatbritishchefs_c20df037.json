@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Corn and 'Nduja with Pickled Padrón peppers",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the pickled padron peppers. Bring all the ingredients (except the peppers) to the boil and allow to roughly boil for 5 minutes, then reduce to a simmer for 10 minutes",
+      "Place the peppers (washed) in a sterilised jar. Tip over the pickling liquid, seal and set aside for at least 2 hours",
+      "Light your barbecue and burn the corn until starting to blacken. Remove from the heat, then slice off the kernels",
+      "Over a high heat cook down the 'nduja in a pan, then add the corn kernels and half the juice of a lime. Mix with a wooden spoon to incorporate the mess",
+      "Place a dollop of crème fraîche in the middle of each plate and cover with the corn and 'nduja. Make a little well in the centre and add an egg yolk and a generous pinch of salt",
+      "Cover in pickled peppers and serve with a lime wedge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweetcorn",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "'nduja",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Padrón Peppers",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bfa024ad8805a582b4f540088b0e2784d42322b4e2ae1fee26fee1d0c30a36c4",
+    "lineage_hash": "c2a6ed41f6fca9c5ba404a24dd253ed3e0b155a358db8c858504ff7cf03da5b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/corn-nduja-recipe-pickled-padron-peppers",
+    "fetchedAt": "2026-08-03T10:53:07.763Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/corn-nduja-recipe-pickled-padron-peppers",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

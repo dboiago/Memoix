@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cheesy Greek Beef Patties",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients in a bowl, except for the cheese. Gently combine everything together, without over mixing.",
+      "Using an ice-cream scoop to measure each patty, take the portioned mix and, holding it in your palm flatten it slightly and put a cube of cheese in the middle. Enclose the cheese with the beef mix and squeeze it gently into your hands to shape it into a slightly flat ball, making sure it is sealed up nicely.",
+      "Heat the Baking Steel Griddle over flame or on your grill.",
+      "Cook each patty for around 3-4 minutes each side. If you are using the steel on your grill, close the hood while cooking, to ensure the cheese inside melts. If you are using the steel over a fire, you can cover the patties on the griddle with a stainless steel bowl between flipping them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mint",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Wedge of Graviera Cheese",
+        "unit": null,
+        "notes": "cut into ½ inch cubes, or your favorite melting cheese.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8dad64a39a78092a3717bc05fecb3fe75d7bf23e7ce78378da5f0f8af228823c",
+    "lineage_hash": "1c4bc9001511e1337b3c4036227ccc5fbc9813fa0e34e051e05f78bdbdec8172"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://bakingsteel.com/blogs/recipes/cheesy-greek-beef-patties",
+    "fetchedAt": "2026-08-01T23:13:43.443Z"
+  },
+  "rawSource": "https://bakingsteel.com/blogs/recipes/cheesy-greek-beef-patties",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

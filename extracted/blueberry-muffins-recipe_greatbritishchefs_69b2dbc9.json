@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Blueberry Muffins",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190°C/gas mark 5. Line a 12 hole muffin tin with paper cases",
+      "Mix together the flour, sugars, baking powder and salt",
+      "Mix together the eggs, butter and milk and stir into the dry ingredients",
+      "Fold through the blueberries then divide the mixture between the cases and sprinkle with demerara sugar. Bake for 18–20 minutes until risen and golden brown",
+      "Leave to cool slightly on a wire rack before tucking in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "570f1a1c5c6ecef66ae5041a9c5b33e404641662e82a4f26f07124c9077a1030",
+    "lineage_hash": "20056a0289a58ef673426c78dff4862fd04053c3cc81e856c575c59e2f2acaf4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blueberry-muffins-recipe",
+    "fetchedAt": "2026-08-03T12:12:30.366Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blueberry-muffins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

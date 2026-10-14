@@ -1,0 +1,73 @@
+{
+  "url": "https://thewoksoflife.com/pickled-long-bean-noodle-soup/",
+  "slug": "chinese-pickled-long-bean-noodle-soup_thewoksoflife_ffa97a98",
+  "title": "Chinese Pickled Long Bean Noodle Soup",
+  "byline": "Kaitlin",
+  "fetchedAt": "2026-08-01T20:30:11.587Z",
+  "ldName": "Pickled Long Beans with Pork Noodle Soup",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Noodles",
+  "ldKeywords": "pickled long beans",
+  "ldIngredientsRaw": [
+    "8 ounces ground pork ((225g))",
+    "3 tablespoons oil ((divided))",
+    "2 teaspoons cornstarch",
+    "1 teaspoon soy sauce",
+    "1 teaspoon Shaoxing wine",
+    "2 teaspoons minced ginger",
+    "5 cloves garlic ((chopped))",
+    "1  small green bell pepper ((diced))",
+    "1  small red bell pepper ((diced))",
+    "3 to 10  bird’s eye chilies ((thinly sliced, depending on your desired heat level))",
+    "1 package Chinese pickled long beans ((chopped into ¼” pieces))",
+    "1 teaspoon sugar",
+    "1/8 teaspoon white pepper",
+    "Choice of noodles to serve",
+    "8 cups Chicken broth ((about 2 cups per serving))"
+  ],
+  "ldInstructionsRaw": [
+    "First, marinate the ground pork. Mix it with 1 tablespoon of the oil, 2 teaspoons cornstarch, 1 teaspoon soy sauce, and 1 teaspoon Shaoxing wine. Set aside while you gather your other ingredients.",
+    "Heat the remaining 2 tablespoons of oil in a wok or cast-iron skillet over high heat. Add the pork and stir-fry until cooked through and lightly crisped. Add the ginger and allow to infuse the oil for another minute. Next, add the garlic and cook until the garlic is lightly browned.",
+    "Add the diced green and red bell peppers and cook until they are slightly softened. Add the chilies, long beans, sugar, and white pepper, and cook for a few minutes to heat the long beans through. If you want an extra kick, add the chilies early on along with the ginger to really infuse the oil.",
+    "To prepare the noodle soup, place the noodles and soup in a bowl, and top with a few spoonfuls of the pickled long bean stir-fry. Add salt and/or chili oil to taste."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "633 kcal",
+    "carbohydrateContent": "69 g",
+    "proteinContent": "33 g",
+    "fatContent": "28 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "41 mg",
+    "sodiumContent": "894 mg",
+    "fiberContent": "8 g",
+    "sugarContent": "14 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 8 ounces ground pork (225g)",
+    "▢ 3 tablespoons oil (divided)",
+    "▢ 2 teaspoons cornstarch",
+    "▢ 1 teaspoon soy sauce",
+    "▢ 1 teaspoon Shaoxing wine",
+    "▢ 2 teaspoons minced ginger",
+    "▢ 5 cloves garlic (chopped)",
+    "▢ 1 small green bell pepper (diced)",
+    "▢ 1 small red bell pepper (diced)",
+    "▢ 3 to 10 bird’s eye chilies (thinly sliced, depending on your desired heat level)",
+    "▢ 1 package Chinese pickled long beans (chopped into ¼” pieces)",
+    "▢ 1 teaspoon sugar",
+    "▢ 1/8 teaspoon white pepper",
+    "▢ Choice of noodles to serve",
+    "▢ 8 cups Chicken broth (about 2 cups per serving)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

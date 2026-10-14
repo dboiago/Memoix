@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Chocolate Buckwheat Cake",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC.) Butter an 8-inch (20cm) cake pan and line the bottom with a round of parchment paper.",
+      "In a large, heatproof bowl set over a pan of simmering water, melt the chocolate and butter until smooth, then remove from the heat and let cool slightly.",
+      "In a medium bowl, whisk together the egg yolks, half of the sugar, yogurt, vanilla, and salt, the whisk them into the melted chocolate. Stir in the almond or hazelnut flour, and the buckwheat flour.",
+      "In the bowl of a stand mixer, or by hand, whip the egg whites until they form soft peaks. Gradually whip in the other half of the sugar until the whites are in firm peaks. Fold one-third of the whipped egg whites into the chocolate mixture to lighten it, then fold in the remaining chocolate mixture just until it’s completely combined.",
+      "Scrape the batter into the pan, level the top, then bake for 25 to 30 minutes; the cake will feel relatively set, but the center of the cake should still be soft. Let cool for 10 minutes, then remove from the cake pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 170g, chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115g, cubed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined",
+        "unit": "C",
+        "notes": "alt: granulated sugar, 100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Whole-milk Yogurt",
+        "unit": "C",
+        "notes": "80ml",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond",
+        "unit": "C",
+        "notes": "alt: hazelnut flour, 75g, see Note below",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": "35g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa6075b45509dcf260f877934529dd325230ecec3839e79c6b9919f477dbb0aa",
+    "lineage_hash": "5b88cce261ad5f5847d63f21d89c50e45e41160efa5239fb151d830a3fd610ec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/buckwheat-chocolate-cake-recipe/",
+    "fetchedAt": "2026-08-02T22:44:18.618Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/buckwheat-chocolate-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

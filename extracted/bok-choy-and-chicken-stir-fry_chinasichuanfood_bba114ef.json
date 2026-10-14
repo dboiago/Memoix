@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Bok Choy and Chicken Stir Fry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "220",
+      "carbohydrateContent": "10",
+      "fatContent": "12",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Thinly slice the chicken. Add salt, white pepper, light soy sauce, oyster sauce, cornstarch, and water. Mix well.",
+      "Lastly, coat with vegetable cooking oil.  Set aside for 15 minutes.",
+      "Keep the oil and fry the garlic and Thai chili pepper until aromatic, if you prefer a spicy version.",
+      "Add bok choy, quickly fry for a while. Then add light soy sauce, a very small pinch of salt and oyster sauce.",
+      "Then return cooked chicken. Drizzle some sesame oil at last. Mix well and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt Optional You Can Skip This for a Less Salted Dish",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Marinating Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bok Choy",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "7",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Pepper Cut Into Small Circles",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Main Ingredients and for Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf0f398914ea166e6ef55e4cd2c76544bd80380d61837912ea479d013cab58b8",
+    "lineage_hash": "9f7f259b79b94204cab6e0c9e27c9f91a92ae6decde1e760101102394c506d13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/bok-choy-and-chicken-stir-fry/",
+    "fetchedAt": "2026-08-02T09:35:17.399Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/bok-choy-and-chicken-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

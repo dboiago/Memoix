@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Chocolate and Peanut Ganache Tartelette",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roll out the shortcrust pastry to ½ cm thick and carefully line four 10cm tartelette cases. Cover the pastry with a layer of baking parchment and fill with baking beans or dried rice",
+      "Bake blind for 10–15 minutes, until the pastry is lightly golden, then carefully remove the baking beans and paper and return the cases to the oven",
+      "Bake for another 5 minutes, or until the pastry is a rich, gold colour and fully cooked",
+      "Set aside the cases to cool on a wire rack, then carefully unmould from the tartelette tins",
+      "To make the ganache filling, melt together the two chocolates over a bain marie, stirring occasionally until smooth, then remove from the heat",
+      "Meanwhile, add the peanut butter and double cream to a pan and bring to the boil, stirring until smooth, then pour into the melted chocolate",
+      "Mix well to combine the peanut cream and chocolate mixture, then pour into the pastry cases. Set aside for the ganache to set slightly",
+      "For the praline topping, add the sugar to a small pan and place over a medium heat until it reaches a light caramel (without stirring), then add the peanuts and toss to combine in the caramel. Pour out onto a baking tray lined with baking parchment and leave to cool and set",
+      "Transfer the cooled praline to a food processor and blitz to a crumb (or chop very finely by hand)",
+      "To serve, sprinkle the tops of the tartelettes with the praline crumbs and serve with a scoop of vanilla, or peanut, ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shortcrust Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": "unsalted lightly roasted",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ed34e72bd9d06a3a97155090305b4f70813f60fa05a782d709abcc6b20b5cf7",
+    "lineage_hash": "1827135120cd2e04c15a28c3ae329403388f02e3980c32a1c5e35dd26b3bd2f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-and-peanut-ganache-tartelette-recipe",
+    "fetchedAt": "2026-08-03T14:28:10.915Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-and-peanut-ganache-tartelette-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

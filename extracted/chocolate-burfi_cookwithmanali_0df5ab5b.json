@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chocolate Burfi",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan on medium heat, add butter and 1/4 cup milk. Let the butter melt and mix with the milk.",
+      "Add milk powder to the pan.",
+      "Mix till it’s well combined. Cook for a minute or so.",
+      "Add powdered sugar and mix. Also add 2 more tablespoons of milk at this point and the kewra essence and cardamom powder. The mixture will turn thin.",
+      "Cook the mixture for 6-7 minutes of low-medium flame, stirring continuously till it becomes thick and mixture leaves sides of the pan.",
+      "Remove pan from stove top and pour the mixture on a parchment paper.",
+      "Using a spoon, (which should be dipped in ghee so that mixture doesn’t stick to it) flatten the mixture into a square shape. You can do this on a plate too, which should be well greased with ghee/butter.",
+      "Let this layer set and in the meanwhile make the chocolate layer.",
+      "In the same pan on medium heat, add butter and let it melt. Add 1/4 cup milk and combine it well with the butter.",
+      "Add milk powder, cocoa powder and mix till well combined. Now add powdered sugar and 2 more tablespoons of milk. The mixture will turn thin.",
+      "Cook on medium heat for 6-7 minutes or till the chocolate mixture turns thick and leaves the sides of the pan.",
+      "Pour the chocolate mixture on top of the milk burfi mixture.",
+      "Using back of a spoon (again spoon should be dipped in ghee) spread the mixture till it over the milk burfi mixture entirely.",
+      "Let the mixture set at room temperature for 1 hour and then put it in the refrigerator for another 1 hour. This is to just quicken the process, you can let is set at room temperature too.",
+      "Once the chocolate burfi has set, trim the edges so that we get a perfect square. Cut into 16 pieces.",
+      "Keep the chocolate burfi refrigerated and consume with in 3-5 days!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C + 2 Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Essence",
+        "unit": "drops",
+        "notes": null,
+        "amount": "2",
+        "section": "Milk Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.25",
+        "section": "Chocolate Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Chocolate Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Chocolate Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C + 2 Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chocolate Burfi Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Burfi Layer",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e57b728261da6d44cf790b2646d1269ac6c757cb76d6ebdfc51bd6b7e21d91d",
+    "lineage_hash": "0246cdc7498db5d9e8406a43a45a6a91b7e0c5faafbbba535528a6b128c60d6f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/chocolate-burfi/",
+    "fetchedAt": "2026-08-01T17:31:19.983Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/chocolate-burfi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

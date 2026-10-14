@@ -1,0 +1,278 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate and Hazelnut Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the ice cream. Place the milk, half of the cream (keep the rest chilled in the fridge), the sugar and the salt in a saucepan. Scrape the seeds from the vanilla pod into the pan, and throw the pod in too. Heat until just below boiling point, then leave to infuse for 1 hour",
+      "Place the egg yolks in a large bowl or jug and whisk well. Pour the cream mixture from the pan into the bowl, whisking constantly. Pour everything back into the saucepan and put back on the heat",
+      "Heat gently, stirring constantly, until the mixture thickens to a loose custard consistency – it should be thick enough to coat the back of a spoon. Stir constantly and keep the heat low, or you risk getting a pan full of scrambled egg! It will take a while, but be patient",
+      "When the mixture has thickened, strain through a sieve into a large jug (you can wash the vanilla pod, dry it and add to a jar of sugar to make vanilla sugar), add the rest of the cream, whisk well and leave to cool to room temperature (to speed this up, put the jug in a bowl of ice-cold water and ice cubes). Chill in the fridge for at least 6 hours",
+      "To make the raspberry coulis, put the raspberries, sugar, lemon juice and peppercorns in a small bowl, stir well and leave for 1 hour to macerate",
+      "After this time, push the mixture through a sieve into a bowl using the back of a spoon, until you’re left with a sieve full of seeds and a bowl full of raspberry coulis. Chill in the fridge until needed (discard the seeds in the sieve)",
+      "When ready to churn the ice cream, have your meringue, coulis and cream mixture ready, as well as a 1l ice cream tub. Break the meringue into chunks and scatter about a quarter of the pieces over the bottom of the tub. Drizzle with a quarter of the coulis",
+      "Churn the ice cream mixture in an ice cream machine until set, then spoon a third of it over the meringue and coulis. Add another layer of meringue and coulis on top of the ice cream, place more ice cream over the top, and continue layering until you’ve used up all of the ingredients – work quickly so that the ice cream doesn’t become too soft",
+      "Put the lid on and freeze for at least 4 hours before eating to firm up. Remove from the freezer around 10–15 minutes before you want to serve the ice cream, to make it easier to scoop",
+      "To make the pastry for the tart, sift the flour and icing sugar into a food processor and add the hazelnuts and salt. Blitz the hazelnuts with the flour to fine crumbs. Add the butter and pulse briefly until the mixture resembles fine breadcrumbs – don’t overmix",
+      "Add the egg yolk and pulse again, then add the water 1 tsp at a time until the dough just comes together when pressed with your fingers. Shape the dough into a flat disc, wrap in cling film and chill for 30 minutes in the fridge",
+      "Roll the dough out on a floured work surface to a thickness of around 0.5 cm. Use to line a loose-bottomed tart tin, pressing the pastry into the corners using a small ball of excess pastry",
+      "Trim the pastry case to 1cm above the edge of the tin (to allow for shrinkage during baking). Chill the case in the fridge for 30 minutes",
+      "Prick the bottom of the pastry case with a fork, then line with greaseproof paper and baking beans. Bake in the oven for 25 minutes, then remove the paper and beans, return the case to the oven and reduce the heat to 150°C/gas mark 2. Bake for a further 10 minutes",
+      "Remove and trim the top of the pastry case in line with the tart tin, discarding the excess. Turn the oven back to 160°C/gas mark 3",
+      "Meanwhile, make the filling. Place the milk and cream in a saucepan and bring to just below boiling point. Stir in the chocolate and leave to melt, then stir to combine",
+      "In a large jug, whisk together the eggs, sugar, salt and vanilla. Gradually add the molten chocolate mixture, whisking constantly",
+      "Pour this mixture into the baked pastry case and put it into the oven (it helps to put it on an oven rack and lift the whole rack back into the oven, to keep it stable)",
+      "Bake for 25–30 minutes, until the filling has only a slight wobble (it shouldn’t be completely firm, but it shouldn’t still look like liquid in the centre either). Scatter over the freeze-dried raspberry pieces and leave to cool on a wire rack before removing from the tin",
+      "To serve, dust the tart with a little icing sugar around the edges. Cut into slices using a heated knife (either use a blowtorch or dip in boiling water and dry quickly with a tea towel). Put a slice on each plate, garnish with a few raspberries and scoop a ball of the raspberry ice cream and place it alongside the tart"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "blanched",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold, diced",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": null,
+        "notes": "1–2 tbsp",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "preferably vanilla but normal will do",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freeze-dried Raspberries",
+        "unit": "Tbsp",
+        "notes": "broken into pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "or Jersey cream",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meringue Nests",
+        "unit": "g",
+        "notes": "homemade of shop-bought",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e0d8a086dc4cb8c048153e86ce4b38c08d84bdace7de043e6dafb7ec80acec4",
+    "lineage_hash": "bd9bfb55a68eeeb4381c4749f74881a6c51cda076e3b28177f196b5e5edc56d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-tart-recipe",
+    "fetchedAt": "2026-08-03T14:38:05.644Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

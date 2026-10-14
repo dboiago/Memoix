@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Bulgur Wheat Pilaf with Vegetables (Sebzeli Bulgur Pilavi)",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the bulgur under cold running water, drain and set a side.",
+      "Sauté the chopped onions in olive oil and butter until soft. Add the green bell pepper and chopped tomatoes, cook for another minute.",
+      "Add the stock (or water) and bring to boil.",
+      "Add the bulgur, salt and ground pepper and stir once. Cover and cook over a low heat until the bulgur has absorbed all the stock and stem holes are visible on the surface. It is important not to stir the pilaf during this time.",
+      "Remove the pan from the heat. Cover the pan with a cloth or absorbent kitchen paper and the lid over the top. The bulgur will continue cooking in the steam and the cloth will absorb any excess moisture. Leave to stand covered, for at least 15 minutes before serving.",
+      "Fluff up the pilaf with a fork and serve hot, garnished with a sprinkling of chopped parsley if you would like."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Bulgur Wheat",
+        "unit": null,
+        "notes": "rinsed and drained",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable",
+        "unit": "ml",
+        "notes": "alt: chicken stock or water",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "adjust to your taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "chopped, for garnish - optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef965520a2996c7fc78c8b3e152c8350bf9712f73503beee6f0843c509d010d6",
+    "lineage_hash": "b0dbdbc6cc4e94ed1d55270059d5f37aee58f3aa30ab6ad55d70e8dd89069545"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2010/05/bulgur-wheat-pilaf-with-vegetables-sebzeli-bulgur-pilavi/",
+    "fetchedAt": "2026-09-25T20:25:52.693Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2010/05/bulgur-wheat-pilaf-with-vegetables-sebzeli-bulgur-pilavi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

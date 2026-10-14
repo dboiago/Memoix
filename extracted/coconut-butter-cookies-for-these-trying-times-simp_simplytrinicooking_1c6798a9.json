@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Coconut Butter Cookies",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift the flour, baking soda, cinnamon, baking powder and salt together. Mix in the fresh blended coconut \"powder\". Set aside.",
+      "Cream butter and sugar. Beating constantly.",
+      "Beat until creamy.",
+      "Then add beaten egg, milk and vanilla essence or coconut essence.",
+      "Fold in the flour mixture gradually. Add the optional ingredients. The mixture should be soft.",
+      "Drop tablespoonfuls on a baking dish, leaving a ½ inch space between each.",
+      "Note: You can also use a cookie cutter to help place in a dish. Place the cookie cutter on the sheet, fill it with the batter, flatten and remove the cookie cutter.",
+      "When done place in a preheated oven, 400 degrees F. Bake for about 20 minutes until golden brown. Remove and cool before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "hand grated and finely blended",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": "alt: coconut essence",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Glaze",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "664550a088d794ec541591be6b80d97a5e84cc5c3157f8f3e5d9fe6c73e6bd77",
+    "lineage_hash": "417f8d5c00cdd930c197bb98f6c35a2f36bdc1f18c7bc157b0a2cf3c496c967d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/coconut-butter-cookies/",
+    "fetchedAt": "2026-09-26T02:04:42.254Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/coconut-butter-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

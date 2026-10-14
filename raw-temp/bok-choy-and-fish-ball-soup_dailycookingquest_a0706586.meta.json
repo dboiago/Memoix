@@ -1,0 +1,53 @@
+{
+  "url": "https://dailycookingquest.com/bok-choy-and-fish-ball-soup.html",
+  "slug": "bok-choy-and-fish-ball-soup_dailycookingquest_a0706586",
+  "title": "Bok Choy and Fish Ball Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:26:23.167Z",
+  "ldName": "Bok Choy and Fish Ball Soup",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Seafood",
+    "Tofu",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "6 cup chicken stock",
+    "450 gram (1 lb) bok choy, separate stalks from leaves",
+    "450 gram (1 lb) carrots, peeled and thinly sliced",
+    "225 gram (1/2 lb) tomatoes, cut into wedges",
+    "450 gram (1 lb) fish balls",
+    "450 gram (1 lb) silken tofu, cubed",
+    "3 cloves garlic, minced",
+    "3 tablespoon oil",
+    "2 scallions, thinly sliced"
+  ],
+  "ldInstructionsRaw": [
+    "Boil chicken stock in a soup pot. Add carrots, tomatoes, and bok choy stalks into the pot and bring to a boil. Reduce the heat and simmer for 10 minutes.",
+    "Meanwhile, fry garlic and oil in a frying pan until golden brown. Transfer both fried garlic and its oil to a bowl and set aside to cool. Alternatively, combine garlic and oil in a microwave-proof bowl. Microwave for 2-3 minutes until the garlic turns golden brown.",
+    "Once bok choy stalks turn translucent, add fish balls and bok choy leaves into the soup pot. Return to a boil and cook for another 3-5 minutes.",
+    "Add tofu, scallions, fried garlic, and garlic oil to the soup pot. Remove from heat and serve the soup immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "6 cup chicken stock",
+    "450 gram (1 lb) bok choy, separate stalks from leaves",
+    "450 gram (1 lb) carrots, peeled and thinly sliced",
+    "225 gram (1/2 lb) tomatoes, cut into wedges",
+    "450 gram (1 lb) fish balls",
+    "450 gram (1 lb) silken tofu, cubed",
+    "3 cloves garlic, minced",
+    "3 tablespoon oil",
+    "2 scallions, thinly sliced"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

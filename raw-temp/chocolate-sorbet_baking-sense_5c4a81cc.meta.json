@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2021/08/19/dark-chocolate-sorbet/",
+  "slug": "chocolate-sorbet_baking-sense_5c4a81cc",
+  "title": "Chocolate Sorbet",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:58:19.879Z",
+  "ldName": "Dark Chocolate Sorbet",
+  "ldTime": "PT520M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "frozen dessert, sorbet",
+  "ldIngredientsRaw": [
+    "20 oz water (2 ½ cups)",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "4 oz dutch process cocoa powder (1 cup)",
+    "2 teaspoons dark rum"
+  ],
+  "ldInstructionsRaw": [
+    "In a saucepan, combine 20 oz&#32;water, 8 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt. Whisk in 4 oz&#32;dutch process cocoa powder. Heat over medium and stir until the sugar is melted and there are no lumps of cocoa. Turn up the heat and allow the mixture to come to a full boil. Remove the pan from the heat. Stir in 2 teaspoons&#32;dark rum. Pour the mixture into a container with a lid.",
+    "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+    "Run in your ice cream machine according to the manufacturer's directions.",
+    "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "96 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "2 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "29 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "19 g",
+    "unsaturatedFatContent": "0.44 g"
+  },
+  "htmlIngredientLines": [
+    "20 oz water (2 ½ cups)",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "4 oz dutch process cocoa powder (1 cup)",
+    "2 teaspoons dark rum"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

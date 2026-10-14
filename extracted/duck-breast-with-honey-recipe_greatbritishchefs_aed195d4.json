@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Duck Breast with Honey",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180˚C/gas mark 4. Wrap the beetroot in foil and bake until soft in the middle, approximately 30 minutes",
+      "Peel the beetroots, then cut into an even circular shape, trimming the edges with a knife. Place the trimmings in a blender and blend into a smooth purée",
+      "Place the purée in a muslin cloth and then into a strainer with a small plate to provide weight and push through the juice",
+      "After 15 minutes, transfer the strained juice to a small saucepan and place on the hob. Bring to a simmer and reduce for 2-3 minutes. Add the chicken stock reduction, honey and tarragon vinegar. Season to taste and set aside for later",
+      "For the duck, place a large non-stick frying pan over a medium heat. Season the breasts generously with salt and place in the pan, skin-side down",
+      "Cook for 4-5 minutes. Once the skin is dark and golden in colour, add a dash of honey and caraway seeds and turn the breasts over in the pan. Reduce the heat and continue cooking for 3-4 minutes until a medium rare finish is achieved",
+      "The juices in the pan should have thickened from the honey and fat of the breast. Roll the breast in the pan juices to evenly glaze. Remove from the heat and allow the duck breasts to rest for 4 minutes",
+      "For the salad, cut the beetroots into quarters and place them in a mixing bowl with the onions, garlic and parsley. Dress with the balsamic, olive oil, walnut oil and seasoning. Segment the grapefruit, but keep separate",
+      "Arrange the salad onto plates. Slice the duck up and arrange over the salad with grapefruit segments inbetween. Spoon the sauce from the pan over the plates and garnish with some baby salad leaves. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dollop of Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Beetroot",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "reduced to 75ml",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "leaves only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db5b8f324eb2038e75c522d85f5bb90a1d9131716fa6f00210a743e16bd32bd0",
+    "lineage_hash": "36a5fb85103df847d0a85af4fff7c7490005ec9f93e22eba1d3b7889e3473b9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-honey-grapefruit-recipe",
+    "fetchedAt": "2026-08-03T17:06:40.036Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-honey-grapefruit-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

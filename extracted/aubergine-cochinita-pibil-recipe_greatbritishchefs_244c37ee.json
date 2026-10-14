@@ -1,0 +1,282 @@
+{
+  "recipe": {
+    "name": "Aubergine 'Cochinita Pibil'",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, dry-roast the tomatoes, onion, garlic cloves and chillies in a hot dry pan, one element at a time, until blackened. Set aside to cool",
+      "For the x ni pek, drain the onions and place in a bowl. Pour the orange, grapefruit and lime juices over and add the chilli. Leave the onions to ‘cook’ in the citric acid, for about an hour. They’re ready when they turn a vivid pink colour",
+      "Pierce the aubergines all over, place in a roasting tray cook in the oven until they have wilted and cooked through, for around 20–30 minutes. You can also cook the aubergines over charcoal, if the weather is on your side",
+      "Meanwhile, make the marinade. Add the oil or lard to a frying pan and place over a medium heat. Once hot, add the cumin seeds, oregano, cinnamon, allspice, peppercorns and achiote. Toast for 2–3 minutes until aromatic, breaking down the achiote paste with a spatula as you cook",
+      "Tip the contents of the pan into a Vitamix container and add the garlic cloves, the bitter orange juice, white vinegar and salt. Place the lid on and blend at a high speed until the hard spices are broken down and the mixture is smooth",
+      "Remove the aubergines from the oven and cut in half lengthways. Scoop the flesh out of each half, keeping the skins intact, and place the flesh in a bowl. Season the flesh with a few tablespoons of the marinade, mix to combine, then return the flesh to the hollowed-out skins. Return to the oven for around 10 minutes",
+      "To finish the salsa, peel the blackened garlic cloves and place in a Vitamix container with the onions, tomatoes and chillies. Add the water, salt, vinegar and oil and blend until you have a chunky salsa",
+      "Serve the aubergines with the x ni pek, salsa, sour cream and herbs. If desired, serve with tortillas and lime wedges on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "very finely sliced and soaked in ice cold water for 10 minutes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "Tbsp",
+        "notes": "freshly queezed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Chilli",
+        "unit": null,
+        "notes": "fresh, deseeded, deveined and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Chillies",
+        "unit": null,
+        "notes": "fresh, or scotch bonnets, stems and seeds removed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "skin on",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "or chicken stock",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": "or sherry vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lard",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Achiote Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Oregano",
+        "unit": "tsp",
+        "notes": "or regular oregano",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "3cm in length",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Seville Orange Juice",
+        "unit": "ml",
+        "notes": "or 40ml each lime, orange, and grapefruit juice",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": "crème fraîche or queso fresco",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca27cf05a2ed17a08d4ca0cf54e35c37fb5773f19087d42400d8bf2cda618007",
+    "lineage_hash": "7cc73ae63b983665021bee58cc43cec2581e03760a1785d8f7fd52742492027d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-cochinita-pibil-recipe",
+    "fetchedAt": "2026-08-03T09:18:34.005Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-cochinita-pibil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Corpse Reviver No. Blue",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice to chill, then fine strain into a chilled coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": "or Cocchi Americano",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blue Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c3c3596e2b1daa604f95a341be12dabadee94b73f1c9f74e0a1ef1da0b794e81",
+    "lineage_hash": "0ccb95e1fa1edbd03561a287a4988e8dac9aa31b579433cc9f48c05102492783"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/corpse-reviver-no-blue/",
+    "fetchedAt": "2026-08-03T22:37:40.939Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/corpse-reviver-no-blue/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

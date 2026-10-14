@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Apple \"Steaks\"",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the glaze. Place the cider, honey, lemon juice, and butter in a heavy saucepan and boil until thick, syrupy, and reduced by about 1/3—6 to 10 minutes. Set the glaze aside.",
+      "Set up your grill for direct grilling and preheat to high.",
+      "Cut the apples crosswise into 1/2 inch thick round slices. Don’t worry about the seeds—they add a rustic charm to the preparation.",
+      "Brush and oil the grill grate. Arrange the apple slices on the grate and grill until nicely browned and semi-soft, 3 to 5 minutes per side, rotating each slice 90 degrees after 1-1/2 minutes to lay on a handsome crosshatch of grill marks. Baste the apple slices with the cider glaze on both sides as they grill.",
+      "Transfer the apple slices to a platter or plates. Drizzle any remaining glaze over them and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a255f55134e812ca04c68b87b1a9cbad4f0174fdb0aa782bc439d010476a5879",
+    "lineage_hash": "02439f7a7fe21c73c150593c1b3d57c17e6fcf06846002cf6659de5c07204a51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/apple-steaks/",
+    "fetchedAt": "2026-08-03T02:44:22.435Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/apple-steaks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

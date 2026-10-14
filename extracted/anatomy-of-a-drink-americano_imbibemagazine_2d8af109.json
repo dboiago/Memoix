@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Americano",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the Campari and vermouth to a glass filled with ice. Slowly top with the club soda, then gently stir one full revolution to combine. Garnish.",
+      "TipFor the sweet vermouth, Bar Pisellino uses a blend of equal parts Dolin Rouge and Punt e Mes. Feel free to use your preferred vermouth or experiment with your own mixture to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Club Soda",
+        "unit": "oz",
+        "notes": "Bar Pisellino uses Fever-Tree",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b9725a10ab7a8c510280209b47f5bdf251ae7a32bf83adafd66119307338250",
+    "lineage_hash": "e7b23b034f19b0abe47834f6735a2ac84d11423c12593b707b88e72982f81061"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-americano/",
+    "fetchedAt": "2026-08-04T00:55:44.635Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/anatomy-of-a-drink-americano/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,417 @@
+{
+  "recipe": {
+    "name": "Duck with Quince, Endive and Candied Orange",
+    "time": "4 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Kerth steams the duck crowns for 3 minutes before chilling, rubbing with the five-spice and leaving them to dry out in the fridge for 5 days, but at home you can shorten this process by rubbing the crowns with five-spice then leaving them uncovered in the fridge for 8 hours",
+      "At the same time, combine the rock salt, sugar, garlic, thyme and rosemary and rub this all over the reserved duck legs. Leave to cure in the fridge for 8 hours",
+      "The next day, carve the breasts off the duck crowns and set aside in the fridge to cook later. Reserve the duck carcasses for the sauce",
+      "Rinse the legs with cold water and pat dry, then place into a small saucepan and cover with duck fat. Gently cook the legs for 3-4 hours until the meat is soft – try not to let the fat exceed 80°C",
+      "While the legs confit, make the sauce. Place a large saucepan over a medium heat and cook the carcasses until golden all over. Drain off any excess fat, then add the carrot, leek, garlic and shallots. Cook for around 5 minutes, then add the thyme, five-spice and white wine. Simmer until reduced by three-quarters. Once reduced, add the chicken stock and simmer for 2 hours",
+      "While the sauce simmers away, make the quince purée. Place the bay leaves, juniper berries and star anise in a muslin bag, then add this to a saucepan with the quince, red wine, port, sugar, red cabbage and cinnamon. Bring to a simmer and reduce by half",
+      "Discard the bag of spices and transfer the contents of the pan to a blender. Add the lemon juice and oil, then blitz until smooth. Set aside in the fridge",
+      "Cut the endives in half and trim them if needed. Place in vacuum bags with the vinegar, oil and thyme, then compress. Set aside at room temperature",
+      "To make the candied orange, peel the oranges and scrape any white pith off the peelings. Cut the orange peel into julienned strips, then place in a small saucepan of cold water. Bring to the boil, strain, then return to the pan with fresh cold water and bring to the boil once again. Repeat this process until you have blanched the peel a total of 6 times – this removes the bitterness of the orange peel",
+      "Add the sugar, water, glucose and blanched orange peel to a pan and place over a medium heat. Cook until the syrup reaches 112°C, then remove from the heat, stir in the lemon juice and leave the peel to cool in the syrup",
+      "By this point, the sauce should have been simmering for 2 hours. Strain the liquid into a clean saucepan and add the cider, honey and elderflower cordial. Bring to a simmer and reduce by half, or until you have a nice sauce consistency. Balance the flavour with the sherry vinegar, check for seasoning and keep warm until ready to serve",
+      "Once the legs have cooked, allow them to cool down in the duck fat. Mix all the ingredients for the barbecue sauce together, then once the legs are cool enough to handle, pick the meat from the bones and mix with the barbecue sauce (you will not need all the sauce – just enough to bind the meat together). Set aside until ready to serve",
+      "To cook the duck breasts, place them skin-side down in a cold frying pan. Place over a medium heat and cook for around 4 minutes, until the fat renders and the skin crisps up. Turn the breasts over and cook for another 3 minutes, or slightly more if you don’t like pink duck, then season and leave to rest for 5 minutes",
+      "While the duck rests, blanch the kale leaves in salted boiling water for 30 seconds and briefly warm the vacuum-packed endive by placing it – still in the bag – in boiling or hot water for a few seconds (the endive doesn’t need to be hot, just warmed through). Gently reheat the duck leg meat and quince purée, and ensure you have all the other elements you need to plate the dish to hand",
+      "To serve, slice the duck breasts lengthways and place a half on the left-hand side of each plate. Add 2 spoonfuls of duck leg meat into the centre of the plate, then place a kale leaf over the top. Drain the warmed endive from the vacuum bag and place a half on top of each kale leaf, then drape over some strips of candied orange peel. Place a spoonful of quince purée to the right of the plate, then finish the dish with the honey and cider sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ducks",
+        "unit": null,
+        "notes": "legs removed and reserved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": "for confiting",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Jus",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Cordial",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quinces",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "ml",
+        "notes": "1",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "ideally infused with orange",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Endive",
+        "unit": null,
+        "notes": "small or baby",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kale Leaves",
+        "unit": null,
+        "notes": "small",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a85a34ad7b46265a84739c0567761e82dbb5bb182fcf2d95b1efda8fda83e815",
+    "lineage_hash": "95cc09a2bc8d19727cd99ebf82e04aaa656f3cb13f61ecc7ef73d395d5632162"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-quince-endive-recipe",
+    "fetchedAt": "2026-08-03T03:48:16.829Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-quince-endive-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

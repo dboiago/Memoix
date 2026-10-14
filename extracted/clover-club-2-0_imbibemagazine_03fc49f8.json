@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Clover Club 2.0",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 4 ingredients with ice, then remove the ice and add the egg white to the shaker. Shake again for 30 seconds. Fine strain into a chilled glass, then garnish.",
+      "Strawberry-Rhubarb SyrupIn a medium saucepan, combine 1 cup of chopped rhubarb stalks, 1 cup of sliced strawberries, 3 Tbsp. of granulated sugar, and 1/2 cup of water. Bring to a simmer over medium-low heat, then reduce heat to low and cook for 10 minutes. Remove from the heat, mash the fruit slightly, then let cool. Strain the syrup through a fine-mesh strainer, but do not press the fruit. Add a dash of vanilla extract and sea salt if desired, and transfer to an airtight container and refrigerate\nfor up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry-rhubarb Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": "fresh, pasteurized if you like",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb Stalks",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": "if desired",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "dash",
+        "notes": "if desired",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f92752838d03716730e6ee763b26d623807c1a567d0ba655fb83ba71db32743",
+    "lineage_hash": "62c9c946edc415f931470e6a724020e7cca1adcf7ccade2c5d46d842c5d888a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/clover-club-2-0/",
+    "fetchedAt": "2026-08-03T23:07:48.196Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/clover-club-2-0/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

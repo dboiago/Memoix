@@ -1,0 +1,31 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/black-pecorino-cheese-wafers",
+  "slug": "black-pecorino-cheese-wafers_lacucinaitaliana_b62f1654",
+  "title": "Black Pecorino Cheese Wafers",
+  "byline": "by  Editorial staff   June 10, 2021",
+  "fetchedAt": "2026-08-03T03:28:57.538Z",
+  "ldName": "Black Pecorino Cheese Wafers",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Antipasti,Antipasto,Formaggi,Formaggio,Pecorino",
+  "ldIngredientsRaw": [
+    "4OZ. Pecorino cheese, grated",
+    "1/4CUP black rice flour"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Mix the Pecorino cheese with the black rice flour; place a spoonful of this mixture in a nonstick pan to form a disc.</p>",
+    "<p>Cook over low heat for one minute, turn it with a spatula and finish cooking until you obtain a crispy wafer. Repeat to make around a dozen wafers.&nbsp;</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4 OZ. of Pecorino cheese, grated",
+    "1/4 CUP of black rice flour"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

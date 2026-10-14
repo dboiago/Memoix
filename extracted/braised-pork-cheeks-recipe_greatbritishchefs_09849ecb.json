@@ -1,0 +1,322 @@
+{
+  "recipe": {
+    "name": "Braised Pork Cheeks",
+    "time": "7 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pork cheeks, sweat off the onion, celery, carrots and garlic in a large saucepan over a low-medium heat. Cook until soft but not coloured",
+      "Add the sherry vinegar, white wine and Worcestershire sauce. Bring to a gentle boil and then simmer for 30 minutes",
+      "Add the bay leaf, 10g caraway seeds and a pinch of salt and simmer for a further 10 minutes",
+      "Pass the liquor through a fine strainer and set aside to cool",
+      "Trim any sinew and fat away from the pork cheeks and place into a large vac pack bag. Add the cooled liquor, seal and marinate for 24 hours",
+      "Once marinated, seal in a vac pack and cook in a water bath at 80˚C for 6 hours",
+      "For the baby leeks, pour the 50ml white wine, 100ml white wine vinegar and 50g sugar in a pot, bring to the boil. Remove from the heat and allow to cool",
+      "Trim the roots and dark green tips off the leeks. Bring the white wine mixture back to the boil for a second time and pour over the baby leeks, leave to cool in the liquor",
+      "For the sultana ragu, place the finely diced onion, garlic and butter in a pot over a low-medium heat. Sweat until soft but not coloured",
+      "Add the sultanas, sherry vinegar, Worcestershire sauce and water.  Bring to the boil and leave to simmer for 1/2 hour",
+      "For the creamy mash potato,  add the potatoes to a saucepan, cover with water and add a pinch of salt. Bring to the boil, reduce to a simmer and cool for 12-16 minutes or until cooked through. Drain and allow to steam for 2 minutes",
+      "Mash the potatoes thoroughly or pass through a ricer or mouli until smooth. Fold through the butter and milk and season to taste. Add to a saucepan, cover and keep warm",
+      "For the caraway seed jus, add oil to a hot pan. Once the hoil is hot, add the onion, carrot, celery and garlic and leave to sweat",
+      "Add red wine vinegar and reduce until almost dry. Repeat this process with the red wine before adding the beef stock and caraway seeds. Reduce down to 200ml and then pass through a fine strainer. Season to taste with salt and set aside",
+      "Warm the pork cheeks in the reserved cooking liquor until very hot",
+      "Place 2 quenelles of mash onto each plate. Add a portion of the sultana ragu 3 pork cheeks - 2 on the mash and 1 on the sultana ragu. Finish with the baby leek and a drizzle of the caraway jus. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Cheeks",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Leeks",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80d1881a711c4b4026281604e0d53e2a5151ce1bf28d054b39c119fb6b45fe63",
+    "lineage_hash": "8e2c54f1a873ca91b12f3053f504086555bef86119ed135ac3ca481399e34b9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-pork-cheeks-recipe",
+    "fetchedAt": "2026-08-03T16:11:32.519Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-pork-cheeks-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,51 @@
+{
+  "url": "https://www.davidlebovitz.com/chocolate-ice-cream-recipe/",
+  "slug": "chocolate-ice-cream-david-lebovitz_davidlebovitz_c2581676",
+  "title": "Chocolate Ice Cream - David Lebovitz",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T21:46:54.753Z",
+  "ldName": "Chocolate Ice Cream",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup (250ml) whole milk",
+    "4 teaspoons corn starch",
+    "1 cup (250ml) heavy cream",
+    "1 cup (250ml) evaporated milk (unsweetened condensed milk)",
+    "2/3 cup (130g) sugar",
+    "2 tablespoons (60g) light corn syrup",
+    "1/3 cup (35g) unsweetened cocoa powder (natural or Dutch-process)",
+    "3 ounces (85g) bittersweet or semisweet chocolate (chopped)",
+    "1/4 teaspoon sea salt",
+    "1/2 teaspoon vanilla extract (or 1 teaspoon chocolate extract)"
+  ],
+  "ldInstructionsRaw": [
+    "Making a slurry by mixing a few tablespoons of the milk with the corn starch in a small bowl, until smooth.",
+    "In a 4-quart (4l) saucepan, heat the rest of the milk, cream, evaporated milk, sugar, and corn syrup. When the mixture comes to a moderate boil, whisk in the cocoa powder, then let it cook at a modest boil for 4 minutes.",
+    "After four minutes, whisk in the corn starch slurry then continue to cook for one minute, stirring constantly with a spatula, until slightly thickened.",
+    "Remove from heat and add the chopped chocolate and salt, stirring until the chocolate is completely melted and the mixture is smooth. Stir in the vanilla or chocolate extract.",
+    "Transfer the ice cream mixture into a zip-top plastic bag then submerge the bag into a bowl filled with ice, and let sit until cool, about 30 minutes. (If necessary, add more ice during the cooling period.)",
+    "Remove the bag from the ice bath and wipe off any excess water. Pour the mixture into the canister of an ice cream maker, then freeze according to the manufacturer’s instructions."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup (250ml) whole milk",
+    "4 teaspoons corn starch",
+    "1 cup (250ml) heavy cream",
+    "1 cup (250ml) evaporated milk, unsweetened condensed milk",
+    "2/3 cup (130g) sugar",
+    "2 tablespoons (60g) light corn syrup",
+    "1/3 cup (35g) unsweetened cocoa powder, natural or Dutch-process",
+    "3 ounces (85g) bittersweet or semisweet chocolate, chopped",
+    "1/4 teaspoon sea salt",
+    "1/2 teaspoon vanilla extract, or 1 teaspoon chocolate extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

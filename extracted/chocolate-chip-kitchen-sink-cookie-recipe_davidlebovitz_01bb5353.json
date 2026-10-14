@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Kitchen Sink Cookie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small bowl, whisk together the flour, cinnamon, baking soda, and salt. Set aside.",
+      "In the bowl of a stand mixer fitted with the paddle attachment (or in a large bowl with a wooden spoon or spatula) beat the butter and dark brown and granulated sugars together at medium speed until well-combined, about 30 seconds. Scrape down the sides of the bowl beat in the egg and the vanilla extract just until combined.",
+      "With the mixer on low speed, gradually add the flour mixture until it's completely incorporated. Add the remaining ingredients; the oats, peanuts, coconut, chopped chocolate, and dried cherries or cranberries and mix until the dough comes together.",
+      "Form the dough into balls about 1 3/4-2-inches (5cm) round with your hands and set them on a dinner plate. Cover, and chill them in the refrigerator.",
+      "Preheat the oven to 350ºF (180ºC) and line two baking sheets with parchment paper or silicone baking mats. Place balls of dough evenly spaced apart on the baking sheets, leaving a few inches between them. Bake the cookies for 9 to 10 minutes, rotating the baking sheets midway during baking, so they bake evenly. When they are very light golden brown (see headnote for more doneness clues) remove the cookies from the oven and use a spatula to flatten down the cookies until they're 1/2-inch (1.5cm) high. Let cookies cool on baking sheets."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "110g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "115-170g, Please read headnote regarding which amount of butter to use!, at room temperature",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": "95g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old-fashioned Rolled Oats",
+        "unit": "C",
+        "notes": "125g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied",
+        "unit": "C",
+        "notes": "alt: roasted peanuts, 80g, very coarsely chopped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Flaked Coconut",
+        "unit": "C",
+        "notes": "60g, I used unsweetened but either would work, dried",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "C",
+        "notes": "alt: semisweet chocolate, 100g, coarsely, chopped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cherries",
+        "unit": "C",
+        "notes": "alt: cranberries, 90g, dried, coarsely chipped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9699395fc84266aae29260b982888681369f4a142e4fc4901a61fea342cb5dda",
+    "lineage_hash": "286d6dd08241c6b5ea69717648712af7e992f0023e8969a57021ee5a84119a20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-chip-kitchen-sink-cookies-oatmeal-coconut-recipe/",
+    "fetchedAt": "2026-08-02T20:35:29.931Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-chip-kitchen-sink-cookies-oatmeal-coconut-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

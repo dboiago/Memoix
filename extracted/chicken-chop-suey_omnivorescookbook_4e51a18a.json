@@ -1,0 +1,223 @@
+{
+  "recipe": {
+    "name": "Chicken Chop Suey",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "285",
+      "carbohydrateContent": "13.1",
+      "fatContent": "14.2",
+      "proteinContent": "25.9"
+    },
+    "directions": [
+      "In a bowl, combine the sliced chicken, Shaoxing wine, salt, and cornstarch. Mix by hand until everything is evenly coated. Marinate while you prepare the rest of the ingredients.",
+      "Combine all the sauce ingredients and stir until the sugar and cornstarch are fully dissolved. Set aside.",
+      "In a large non-stick or carbon steel pan heat 1 tablespoon of oil over medium-high heat until hot. Add the chicken to the pan in a single layer and separate the pieces with chopsticks or a spatula. Cook the chicken on one side until it begins to brown, about 1 minute. Flip and cook on the other side for another 30 seconds, until cooked all the way through. Transfer the chicken to a plate and set aside.",
+      "Add the remaining 1 tablespoon of oil and the onion to the pan. Stir and cook for 30 seconds, until the onion just begins to brown. Add the garlic and stir fry for a few more seconds to release the aroma.",
+      "Add the celery, carrot, baby corn, and bamboo shoots. Stir fry for another 30 seconds to cook off excess moisture.",
+      "Add the broccoli rabe (or whatever greens you’re using). Cook until the greens are just wilted.",
+      "Stir the sauce again to redistribute the cornstarch and pour it into the pan. Add the chicken back into the pan and toss to combine everything. Cook until the sauce is thickened. Transfer everything to a serving plate.",
+      "Serve hot over steamed rice or boiled noodles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": "lb",
+        "notes": "alt: breast, or breast, thinly sliced against the grain",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "or water",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "tsp",
+        "notes": "or rice vinegar",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy (optional)",
+        "unit": "tsp",
+        "notes": "for color",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": "yield 1/3 cup, sliced on the bias",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "yields 1/3 cup, sliced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Rabe",
+        "unit": "stalks",
+        "notes": "*Footnote 1, or other green veggies, stems sliced on the bias and tops/leaves sliced into thick strips (yield 2 loosely packed cups)",
+        "amount": "5",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Corn",
+        "unit": "C",
+        "notes": "one 5-oz can, sliced",
+        "amount": "⅓",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bamboo Shoots",
+        "unit": "C",
+        "notes": "one 5-oz can, sliced",
+        "amount": "⅓",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb0662ecdd609eba81fe88669b8c2c14bc1366a522eda72fee18ea44120ae0cd",
+    "lineage_hash": "9523934ce1bc9652d1afa84ed5c7b00d8386376b2ccef6a1157d6a251dbdd636"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-chop-suey/",
+    "fetchedAt": "2026-08-02T09:04:00.321Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-chop-suey/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

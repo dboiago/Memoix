@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cranberry Raisin Pie",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pie dough, mix the flour, sugar, and salt in the bowl of a stand mixer fitted with the paddle attachment. (The dough can also be made by hand, in a bowl, with a pastry blended or using your hands.) Add the chilled butter and mix the dough until the butter is broken up into small pieces, about the size of peas.",
+      "Add 6 tablespoons (90ml) of ice water and mix until the dough begins to come together. If necessary, add 1 to 2 more tablespoons of water, if the dough needs it to come together. Turn the dough out on a work surface and give it a few turns with your hands. Divide the dough into two portions, one slightly larger than the other, shape them into disks, wrap them in plastic wrap, and refrigerate for at least 1 hour. (The dough can be made up to two days in advance and refrigerated, or frozen for up to two months.)",
+      "When you’re ready to assemble and bake the pie, preheat the oven to 400ºF (200ºC).",
+      "Make the filling by draining the raisins and squeezing them to get the excess liquid out. In a large bowl, mix them with the cranberries, sugar, flour, orange liqueur, and zest.",
+      "Remove the dough from the refrigerator and let it come to slightly cooler than room temperature. Unwrap the smaller disk of dough, rap the edges on the countertop (as explained in the post), the roll it between two pieces of parchment paper until it’s a 12-inch (30cm) round. Fold the dough in half, then fold it again. Place it in a pie dish with the point in the center, and unfold it to line the bottom of the dish.",
+      "Transfer the cranberry filling into the bottom of the pie shell.",
+      "Roll the second disk of dough into a 14-inch (35cm) round between two sheets of parchment paper. Brush the edges of the dough in the pie dish with water, then transfer the sheet of pie dough, to cover the fruit in the pie. Tuck the edges of the top piece of dough under the rim of the bottom round of dough in the pie dish. Crimp the edges.",
+      "Make the egg wash by mixing the egg yolk with the milk and brush it over the top of the pie. Cut 6 vent holes in the top, place the pie on a foil or parchment lined baking sheet (to catch any drips), and bake the pie in the oven until the top is browned and the juices from the filling are thick and bubbly, about an hour. You can stick a knife in the center to check to make sure the cranberries are cooked, although you want to make sure the juices are thick. If the top of the pie browns too quickly, before the filling is cooked, drape a sheet of foil over the top to prevent it from getting too dark.",
+      "Serve with ice cream."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "2½",
+        "section": "pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "225g/8 ounces, cubed and chilled",
+        "amount": "1",
+        "section": "pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Water",
+        "unit": "Tbsp",
+        "notes": "90-125ml",
+        "amount": "6-8",
+        "section": "pie dough",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "270g, dark or light, soaked for 2 hours in water",
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen Cranberries",
+        "unit": "C",
+        "notes": "440g, fresh, thawed",
+        "amount": "4",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "C",
+        "notes": "60ml, such as Grand Marnier, Cointreau, or Triple Sec, 60ml",
+        "amount": "¼",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of One Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "egg wash",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "egg wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "762af4cb053b53331b5ab29a48d0c77acde65d5fe919ec086fa3d48438c902ab",
+    "lineage_hash": "7387d4e544f4f32221868c4cd1c11e2ce8b7e2349223e36d36f5c4302126884a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cranberry-raisin-pie-recipe/",
+    "fetchedAt": "2026-08-03T02:35:43.825Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cranberry-raisin-pie-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

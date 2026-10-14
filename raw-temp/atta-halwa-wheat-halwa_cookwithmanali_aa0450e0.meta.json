@@ -1,0 +1,57 @@
+{
+  "url": "https://www.cookwithmanali.com/atta-halwa/",
+  "slug": "atta-halwa-wheat-halwa_cookwithmanali_aa0450e0",
+  "title": "Atta Halwa (Wheat Halwa)",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T00:36:54.225Z",
+  "ldName": "Atta Halwa",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "aate ka halwa, atta halwa, atte ka halwa",
+  "ldIngredientsRaw": [
+    "1/3 cup ghee  (clarified butter, 75 grams (not melted))",
+    "1/2 cup atta (whole wheat flour, 75-80 grams)",
+    "1 cup water (8 oz)",
+    "1/2 cup granulated white sugar (100 grams)",
+    "pinch green cardamom powder (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Melt ghee in a pan on medium heat. Once the ghee melts, add atta to it and mix to combine well with the ghee.",
+    "Meanwhile heat 1 cup water in a pan on another stove. You want to the water to be boiling hot when you add it to the ghee-atta mix. So keep it ready to go.",
+    "Continue to stir the atta and cook until it turns brown in color and gives a nice aroma, take around 6 to 7 minutes on medium heat.Be careful to not burn the atta here.",
+    "Add the hot water now. Be careful as you add it since the halwa will bubble like crazy.",
+    "Stir continuously for a minute or two as you add the water and the water gets absorbed by the flour.",
+    "Add in the sugar and mix. The halwa consistency will become liquid-y again after adding sugar. Continue to cook for 2-3 more minutes on medium heat after adding the sugar.",
+    "Add cardamom powder and mix (optional). Stir to mix in the cardamom powder and remove pan from heat.",
+    "Serve atta halwa immediately. It tastes best when warm! You may garnish with some nuts."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "558 kcal",
+    "carbohydrateContent": "72 g",
+    "proteinContent": "4 g",
+    "fatContent": "31 g",
+    "saturatedFatContent": "19 g",
+    "cholesterolContent": "77 mg",
+    "sodiumContent": "8 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "50 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/3 cup ghee , clarified butter, 75 grams (not melted)",
+    "▢ 1/2 cup atta, whole wheat flour, 75-80 grams",
+    "▢ 1 cup water, 8 oz",
+    "▢ 1/2 cup granulated white sugar, 100 grams",
+    "▢ pinch green cardamom powder, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

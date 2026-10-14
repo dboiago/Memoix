@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Cider-Brined Pork Chops",
+    "time": "1 hr 4 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the Lemon Ginger Cider Brine. Bring the water and salt to a boil in a large saucepan. Remove the pan from the heat and stir in the cider, lemon zest, ginger, and pepper. Let cool to room temperature.",
+      "Arrange the chops in a large baking dish or place them in a large resealable plastic bag. Pour the brine over them. If using a plastic bag, lay it in a baking dish to catch any leaks. Brine the pork in the refrigerator for 6 hours, turning several times so they brine uniformly. Drain the chops well, discarding the brine. Blot dry with paper towels.",
+      "Set up your grill for indirect grilling and preheat to medium-low (225 degrees). Add wood chunks or chips to the fire. Smoke the pork chops to an internal temperature of 120 degrees. This will take about 1 hour.",
+      "Transfer the chops to a platter. Set up your grill for direct grilling and preheat to high. Brush and oil the grill grate.",
+      "Brush the pork chops on both sides with melted butter. Direct grill until cooked to taste, about 4 minutes per side for medium (150°F on an instant-read thermometer). Give each chop a quarter turn after 2 minutes to lay on a crosshatch of grill marks. After you turn the chops, baste with any remaining butter.",
+      "Two minutes before they’re done , brush the chops with the Booze + Fruit Glaze on both sides, if using. Brush once more before serving and serve any extra glaze on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "sea or kosher",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Apple Cider",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Lemon Zest",
+        "unit": null,
+        "notes": "remove it with a vegetable peeler",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger (2 Inches)",
+        "unit": "pc",
+        "notes": "fresh, cut crosswise into 1/4-inch-thick slices and lightly crushed with the side of a cleaver",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "plus extra for seasoning",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "960cd239a401a9d1c467ee78b96f6b10d8ce218150206a0386d23a46eedf21bd",
+    "lineage_hash": "6b9bddd3a60e191c3bdd70b4193317bd58e9ff142a715663c88749e93860bfd8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cider-brined-pork-chops/",
+    "fetchedAt": "2026-08-03T06:26:27.627Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cider-brined-pork-chops/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chinese Five Spice Roasted Chicken",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "573",
+      "carbohydrateContent": "7",
+      "fatContent": "39",
+      "proteinContent": "48"
+    },
+    "directions": [
+      "Cut the chicken from the breast and then flat the thicken. Add salt, light soy sauce, dark soy sauce oyster sauce, green onion, ginger and five spice powder.",
+      "Message the chicken and then wrap with plastic wrapper. Place in fridge and marinate overnight.",
+      "Remove the chicken from the fridge and rest in room temperature for 30 minutes. Heat oven to 180 degree C and then place the chicken to roast for 25 minutes. Mix the left sauce with 1 tablespoon of honey. Then brush the sauce over the chicken and then continue roast for another 10 minutes.",
+      "Cut into chunks and serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "organic, 800g to 1000g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f61ea179b483fa6c08e8d7a97f7251239230a2ccfd9e4a736d158a1f1af32f0",
+    "lineage_hash": "fa281aba6a80138eb2d91c1362c6cee63314f5a2e082eda6c5ee106bd5b712f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-five-spice-roasted-chicken/",
+    "fetchedAt": "2026-08-02T07:19:23.319Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-five-spice-roasted-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

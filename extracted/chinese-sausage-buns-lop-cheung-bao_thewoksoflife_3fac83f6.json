@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chinese Sausage Buns (Lop Cheung Bao)",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "324",
+      "carbohydrateContent": "22",
+      "fatContent": "20",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "In a small bowl, whisk together the water, yeast and sugar until the yeast dissolves. Let the mixture sit until the yeast “blooms” and foams (about 15 minutes). Stir in 1 tablespoon oil and set aside.",
+      "Whisk together the flour, cornstarch, salt, and baking soda in a medium-sized bowl, and stir in the yeast mixture using a spatula. After the dry and wet ingredients are incorporated, knead the dough with your hands (or in your mixer) until the dough becomes smooth and soft. If the dough looks sticky, add a bit more flour 1 tablespoon at a time, and continue kneading until the dough is smooth and soft. The dough should be soft, but not sticky.",
+      "Coat the dough with 1 teaspoon of oil and cover with plastic wrap. Let the dough proof at room temperature until it has doubled in size (about 1 hour).",
+      "While the dough is proofing, prepare your steaming device/setup of choice. (Check our Chinese cooking tools page for steamer setup options using a steamer rack in a wok or a multi-level metal steamer, both of which we use regularly in our kitchen.) Place the lop cheung (Chinese sausages) on a heatproof plate and steam for 10 minutes. Let cool.",
+      "For this recipe, we called for a whole lop cheung in each bun, but if you feel this is too much, just split them lengthwise after they’ve steamed and cooled and use half a chinese sausage for each bun!",
+      "After the dough is finished proofing, punch the dough down and knead it for a few minutes to get rid of all the air bubbles. Portion the dough into 10 equal balls and shape each ball into a long strip, measuring 10 inches long. Wrap each length of dough around one lop cheung so the dough overlaps. Tuck in the loose ends. This is the same method used in our recipe for Chinese Hot Dog Buns.",
+      "Place each bun on one of your prepared rectangles of parchment paper, and place the buns into your steamer. Cover with a damp kitchen towel to keep the dough from drying out, and let rest for 20 minutes.",
+      "Place the buns in the steamer with 1½ inches of cold water, and turn the heat on high. Once you can see steam coming out, turn the heat down to medium, and let the buns steam for another 10 minutes until they have expanded in size.",
+      "Remove the steamer from the stove. Let the buns rest inside the steamer for 5 minutes--do not remove the cover. This is an important step, because if you remove the cover too early, the buns will collapse and lose their fluffy shape!",
+      "After those five minutes have elapsed, transfer the buns to a plate and serve warm!",
+      "These Chinese sausage buns freeze and reheat really nicely. Make sure you steam the buns and let them cool completely before freezing. Reheat by placing the frozen buns into a steamer, and steaming for about 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": "plus 1 teaspoon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "you can use bleached flour if you like",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Sausages",
+        "unit": null,
+        "notes": "lop cheung",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9a89b13a3cd9ca16313da70e1673a9b8ea6c09c01a7ed3301e022627eed7496",
+    "lineage_hash": "77d29e685fd465df49e584da3accbbf3c588465a8a4eb874fb42a48c2c374049"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-sausage-buns/",
+    "fetchedAt": "2026-08-02T13:10:19.634Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-sausage-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,392 @@
+{
+  "recipe": {
+    "name": "Butter Chicken Dhaba style",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, green chili, ginger garlic paste, salt to taste, lemon juice and mix it well.",
+      "Keep it aside for marinating at least 15-20 minutes.",
+      "In a bowl, add marinated chicken and squeeze out the moisture of the chicken.",
+      "Add degi red chili powder, turmeric powder, coriander powder, curd and mix it well.",
+      "Keep it aside for further use.",
+      "In a pan, add green cardamom, cumin seeds, coriander seeds, black peppercorns, salt to taste and dry roast them very well.",
+      "In the same pan, add dry fenugreek leaves and roast well, transfer it into a mixer grinder jar and grind it into smooth fine powder.",
+      "Keep it aside for further use.",
+      "In a handi, add ghee & oil, once its hot then add onions saute it for 3-4 minutes on slow to medium flame.",
+      "Once onions get translucent, add ginger garlic paste and saute it well.",
+      "Add coriander powder and saute well, add degi red chili powder, curd and cook well.",
+      "Add tomato puree and cook it for 4-5 minutes on medium flame.",
+      "Once tomato and masala get cooked properly then add water, curd and mix it well.",
+      "Add salt to taste and mix it well, add water, roasted chicken and cook it for 10-12 minutes on medium flame.",
+      "Once chicken gets cooked well then add prepared masala, honey and mix it well.",
+      "Switch off the flame and add butter and get dhungar for smokiness to the gravy.",
+      "Serve on a serving plate and garnish it with some sprinkle prepared masala, curd, coriander sprig and butter.",
+      "Serve hot with roti.",
+      "Take coal and place it on a gas range that gets burned.",
+      "Burn coal into a steel bowl, add cloves and butter and keep it aside for further use.",
+      "In a grilled pan, heat oil, place marinated chicken and roast on both sides.",
+      "Once chicken gets half cooked then remove on a plate and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken",
+        "unit": "small",
+        "notes": "thigh & drumstick",
+        "amount": "1",
+        "section": "For First Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "1",
+        "section": "For First Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For First Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For First Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For First Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Second Marination",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Cream",
+        "unit": "Tbsp",
+        "notes": "for finishing",
+        "amount": "1½",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed, for finishing",
+        "amount": "2",
+        "section": "For Butter Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Smoking",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "tsp",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b2af03768ad21d825caea6540f838bc587e27822087a9e20259906f2dcb8a5b",
+    "lineage_hash": "74f4f7d30c1fd31235739373ba1eeb4d21704610029a154f1632e6677d17d947"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/butter-chicken-dhaba-style/",
+    "fetchedAt": "2026-08-02T15:30:39.682Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/butter-chicken-dhaba-style/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

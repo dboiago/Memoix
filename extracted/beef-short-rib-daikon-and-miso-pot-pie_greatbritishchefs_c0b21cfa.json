@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Beef Short Rib, Daikon and Miso Pot Pie",
+    "time": "3 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cover the beef ribs with water and bring to the boil, skimming off the scum. Once the ribs have boiled for a couple of minutes, drain and add back to the pan",
+      "Add the ginger, clove, soy, miso, sugar, beef stock, daikon, carrot and onion and bring to the boil. Reduce to a simmer, cover and simmer for 3 hours, or until the beef ribs are very tender",
+      "Once the filling has finished cooking, remove the beef short ribs, vegetables and ginger slices, discarding the ginger slices",
+      "Reduce the liquid over a high heat until reduced by one third",
+      "Combine the cornflour with 1 tbsp of water to make a slurry, and add it to the pie filling bit by bit until you are happy with the consistency",
+      "Remove the bones from the beef short ribs. Transfer the meat and the rest of the filling to a 12-15cm pie dish (don’t worry too much about the size unless it differs drastically)",
+      "Roll out the pastry on a lightly floured surface, cutting it into a lid that’s slightly larger than your dish. Roll the pastry gently around a rolling pin, starting at one edge, using it to pick up the pastry and place it on top of the pie dish. Use your fingers to crimp the edge to seal it, or press it onto the side of the dish",
+      "Brush the pastry all over with egg wash and transfer the pie to the oven to finish cooking for 40 minutes, or until the pastry is evenly golden"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Rib",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": "chopped into thick chunks",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "cut into thick chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "cut into large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet of Puff Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44a04179c5a71c121417249cdfd20e0ef81287f2027b5f5056f5257cc3cf2b40",
+    "lineage_hash": "f9f9c2149d28741a4fa91f58307b70be10a3696b115e98b2b71c8859963805db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-short-rib-daikon-miso-pot-pie-recipe",
+    "fetchedAt": "2026-08-02T17:55:59.813Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-short-rib-daikon-miso-pot-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

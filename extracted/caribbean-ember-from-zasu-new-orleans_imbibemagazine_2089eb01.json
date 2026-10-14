@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Caribbean Ember",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the ingredients, except the ginger beer, with ice in a shaker. Shake and strain over fresh ice in a glass. Top with ginger beer. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Maple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fa750a985cc6e1704706972020aa65d34717d02f38e1224970a6a6eb234b437",
+    "lineage_hash": "6686156a3568d1c202977cf7e5b734a65ea2716b4d3171c1c7c12abc09b96968"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caribbean-ember-from-zasu-new-orleans/",
+    "fetchedAt": "2026-08-04T00:47:00.597Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caribbean-ember-from-zasu-new-orleans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

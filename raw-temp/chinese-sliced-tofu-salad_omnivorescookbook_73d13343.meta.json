@@ -1,0 +1,64 @@
+{
+  "url": "https://omnivorescookbook.com/sliced-tofu-salad/",
+  "slug": "chinese-sliced-tofu-salad_omnivorescookbook_73d13343",
+  "title": "Chinese Sliced Tofu Salad (凉拌豆腐丝)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T19:29:26.302Z",
+  "ldName": "Chinese Sliced Tofu Salad (凉拌豆腐丝)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4 cups sliced tofu",
+    "4 teaspoons sesame oil",
+    "2 cloves garlic (, minced)",
+    "1  carrot (, shredded)",
+    "1  cucumber (, slices (or pepper, or celery))",
+    "2 tablespoons rice vinegar",
+    "2 teaspoons soy sauce ((or tamari for gluten-free option))",
+    "1/2 teaspoon salt ((or to taste))",
+    "1/2 teaspoon sugar",
+    "2 tablespoons homemade chili oil ((Optional))",
+    "3 tablespoons chopped cilantro for garnish ((Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a small pot of water to a boil. Add the sliced tofu and stir for a few seconds. Rinse the sliced tofu with tap water, drain thoroughly, and set aside to cool.",
+    "Add sesame oil and garlic into a small bowl. Heat in microwave for 30 seconds, or cook until the oil just starts to bubble and the garlic turns tender.(*Footnote 1)",
+    "Right before serving, add sliced tofu, carrot and bell peppers into a big bowl. Add the sesame oil and garlic, green onion, rice vinegar, salt, and chili oil (if using). Toss to mix well.",
+    "Garnish with cilantro and serve as an appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving of the 4 servings",
+    "calories": "108 kcal",
+    "sugarContent": "2.6 g",
+    "sodiumContent": "452 mg",
+    "fatContent": "6 g",
+    "carbohydrateContent": "6.9 g",
+    "fiberContent": "0.8 g",
+    "proteinContent": "5.4 g"
+  },
+  "htmlIngredientLines": [
+    "4 cups sliced tofu",
+    "4 teaspoons sesame oil",
+    "2 cloves garlic , minced",
+    "1 carrot , shredded",
+    "1 cucumber , slices (or pepper, or celery)",
+    "2 tablespoons rice vinegar",
+    "2 teaspoons soy sauce (or tamari for gluten-free option)",
+    "1/2 teaspoon salt (or to taste)",
+    "1/2 teaspoon sugar",
+    "2 tablespoons homemade chili oil (Optional)",
+    "3 tablespoons chopped cilantro for garnish (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

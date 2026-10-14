@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Coffee Butter Cookies alá Jenny Bakery",
+    "time": "1 hr 10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "MY",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "84",
+      "carbohydrateContent": "9",
+      "fatContent": "5",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a mixing bowl, combine softened butter, salt and sifted icing sugar. Using a mixer, beat until the butter turns pale yellow.",
+      "Combine instant coffee granules and water in another bowl. Mix until it turns into a paste.",
+      "Combine the coffee paste with the butter mixture. Continue mixing until it combines evenly.",
+      "Sift cocoa powder, corn starch and all flour into the coffee butter mixture. Mix using a spatula. Do not over-knead dough by mixing vigorously. Stop once dough is combined evenly.",
+      "Fill one piping bag with the cookie dough. To prevent the piping bag from bursting, place it into another piping bag with the desired piping nozzle.",
+      "Pipe dough onto a tray lined with baking paper. This yields approximately 24 pcs. Refrigerate the piped dough for at least 30 mins to better maintain its shape during baking.",
+      "Bake at 150 degrees Celsius in a preheated oven for 35 minutes. Rotate the tray midway through to ensure even baking. Cool to room temperature before storing in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "powdered",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Granules",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b05164243417ceaaa60c045d0d7de3b53f9c0973d62c0492deea02ca63e4b06",
+    "lineage_hash": "9c7e4187ed5d699560858cf6076eec1abc6f685bb54ab850f4aa65e4640eae4e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.nyonyacooking.com/recipes/coffee-butter-cookies-ala-jenny-bakery~3YvO8L4oGF",
+    "fetchedAt": "2026-08-01T16:31:16.632Z"
+  },
+  "rawSource": "https://www.nyonyacooking.com/recipes/coffee-butter-cookies-ala-jenny-bakery~3YvO8L4oGF",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

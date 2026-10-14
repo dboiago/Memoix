@@ -1,0 +1,55 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-sauteed-green-peppers-tiger-skin-pepper/",
+  "slug": "chinese-saut-ed-green-peppers-tiger-skin-pepper_chinasichuanfood_e995a932",
+  "title": "Chinese Sautéed Green Peppers-Tiger Skin Pepper",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:34:36.253Z",
+  "ldName": "Chinese Sautéed Green Peppers-Tiger Skin Pepper",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "pepper",
+  "ldIngredientsRaw": [
+    "10  shishito peppers",
+    "2  garlic cloves (, minced)",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. cooking oil",
+    "1/2 tsp. sugar",
+    "1/4 tsp. salt ( , optional )"
+  ],
+  "ldInstructionsRaw": [
+    "Cap the green peppers and remove the seeds. If you like spicy taste a lot, you can keep the seeds inside. Mince garlic",
+    "Heat up around 1 tablespoon cooking oil in wok and then add the green peppers in to sauté until the skins become slightly crinkly. Turn the peppers from time and time to water the cooking process. If you are using a non-stick wok, place the green peppers directly.",
+    "Move the green peppers to the edges of the wok and add around cooking oil in, fry garlic until aromatic. Add light soy sauce, vinegar and sugar.&nbsp; Simmer for a while until the sauce is slightly thickened. Add a very small pinch of salt if necessary (this actually depending on how salty your soy sauce is)",
+    "Serve hot with steam rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "122 kcal",
+    "carbohydrateContent": "12 g",
+    "proteinContent": "1 g",
+    "fatContent": "7 g",
+    "sodiumContent": "1703 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "10 shishito peppers",
+    "2 garlic cloves , minced",
+    "2 tbsp. light soy sauce",
+    "1 tbsp. black vinegar",
+    "1 tbsp. cooking oil",
+    "1/2 tsp. sugar",
+    "1/4 tsp. salt  , optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Beef Carpaccio",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the beef fillet in the freezer until it is half-frozen",
+      "After this time, remove from the freezer and cut into very thin slices using a very sharp knife. Place each slice between 2 pieces of greaseproof paper and gently beat with a rolling pin or mallet to thin out the slices even more. Store the in the fridge until ready to serve",
+      "Make a vinaigrette by mixing together the extra virgin olive oil, lemon juice, pink peppercorns and salt to taste",
+      "Arrange the thinly sliced carpaccio on a plate and drizzle half the vinaigrette over it. Refrigerate for 15 minutes",
+      "When ready to serve, dress the rocket with the remaining vinaigrette and top the carpaccio with it",
+      "Decorate with the chopped sun-dried tomatoes and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": "washed and dried",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d9070f434fa4da56c9c15d77ce07c3dab64dffc855fb3e53886a7fdaf3a2933",
+    "lineage_hash": "28a2c99da6a8eb070973a19ef2ef6da18ffed23c39c984666d87c6e5f71b28bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/beef-carpaccio-recipe",
+    "fetchedAt": "2026-08-01T21:32:12.867Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/beef-carpaccio-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

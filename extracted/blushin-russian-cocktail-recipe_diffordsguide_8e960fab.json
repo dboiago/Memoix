@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Blushin Russian Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "RU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "276",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare coffee beans for garnish.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with 3 coffee beans floated in a petal formation in the centre of the cocktail's foamy head."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb6c3c704491ae1cda3c93ed399ae698e8344941beddffcf26e8d58a1ee94289",
+    "lineage_hash": "871f5cc48284a6c0674c83f210a25c73ff1a56846e489125fb13781394b9f253"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/279/blushin-russian",
+    "fetchedAt": "2026-08-02T00:29:51.819Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/279/blushin-russian",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

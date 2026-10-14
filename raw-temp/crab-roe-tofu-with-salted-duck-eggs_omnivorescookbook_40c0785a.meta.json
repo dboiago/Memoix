@@ -1,0 +1,63 @@
+{
+  "url": "https://omnivorescookbook.com/crab-roe-tofu/",
+  "slug": "crab-roe-tofu-with-salted-duck-eggs_omnivorescookbook_40c0785a",
+  "title": "Crab Roe Tofu with Salted Duck Eggs (蟹黄豆腐)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:06:31.295Z",
+  "ldName": "Crab Roe Tofu with Salted Duck Eggs (蟹黄豆腐)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "4  cooked salted duck egg yolks (, smashed)",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "1 tablespoon minced ginger",
+    "1/2 cup imitation crab legs (, sliced (optional))",
+    "1 cup chicken broth",
+    "1  pack soft tofu (, sliced to 1/2” (1 cm) squares)",
+    "1/4 cup green peas (, thawed if using frozen)",
+    "1/4 teaspoon salt ((or to taste))",
+    "2 teaspoons cornstarch"
+  ],
+  "ldInstructionsRaw": [
+    "(Optional) If using uncooked duck egg yolks, bake them first. Heat oven to 300 F (150 C). Line a baking tray with parchment paper. Place the salted duck yolks onto the tray and bake for 10 minutes. Once done, smash the yolks into small pieces.",
+    "Heat oil in a medium skillet over medium-high heat until hot. Turn to medium heat. Add the ginger and mashed egg yolks. Stir and cook until bubbling.",
+    "Add the crab sticks. Stir and cook for 1 minute.",
+    "Pour in the chicken broth, add the tofu, and green peas. Braise over medium-low heat for 2 to 3 minutes. Add the salt. Taste the broth and adjust seasoning by adding more salt if needed.",
+    "Meanwhile, mix the cornstarch with 2 tablespoons of water in a small bowl until fully dissolved. Pour into the pan. Stir immediately until the sauce thickens. Transfer to a deep plate and serve hot as a main."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "164 kcal",
+    "carbohydrateContent": "5.9 g",
+    "proteinContent": "10.2 g",
+    "fatContent": "11.6 g",
+    "saturatedFatContent": "2.8 g",
+    "cholesterolContent": "210 mg",
+    "sodiumContent": "498 mg",
+    "fiberContent": "0.8 g",
+    "sugarContent": "1.4 g"
+  },
+  "htmlIngredientLines": [
+    "4 cooked salted duck egg yolks , smashed",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "1 tablespoon minced ginger",
+    "1/2 cup imitation crab legs , sliced (optional)",
+    "1 cup chicken broth",
+    "1 pack soft tofu , sliced to 1/2” (1 cm) squares",
+    "1/4 cup green peas , thawed if using frozen",
+    "1/4 teaspoon salt (or to taste)",
+    "2 teaspoons cornstarch"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Crab Roe Tofu with Salted Duck Eggs",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "164",
+      "carbohydrateContent": "5.9",
+      "fatContent": "11.6",
+      "proteinContent": "10.2"
+    },
+    "directions": [
+      "(Optional) If using uncooked duck egg yolks, bake them first. Heat oven to 300 F (150 C). Line a baking tray with parchment paper. Place the salted duck yolks onto the tray and bake for 10 minutes. Once done, smash the yolks into small pieces.",
+      "Heat oil in a medium skillet over medium-high heat until hot. Turn to medium heat. Add the ginger and mashed egg yolks. Stir and cook until bubbling.",
+      "Add the crab sticks. Stir and cook for 1 minute.",
+      "Pour in the chicken broth, add the tofu, and green peas. Braise over medium-low heat for 2 to 3 minutes. Add the salt. Taste the broth and adjust seasoning by adding more salt if needed.",
+      "Meanwhile, mix the cornstarch with 2 tablespoons of water in a small bowl until fully dissolved. Pour into the pan. Stir immediately until the sauce thickens. Transfer to a deep plate and serve hot as a main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Salted Duck Egg Yolks",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Imitation Crab Legs",
+        "unit": "C",
+        "notes": "optional, sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Tofu",
+        "unit": "pkg",
+        "notes": "sliced to 1/2” (1 cm) squares",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "thawed if using frozen",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d42fb988d2b47d329feb27d4d9644109e5ee2ed2b7603d7150c15426c7b22bae",
+    "lineage_hash": "09f1e5894adc6237a6c243fe1f8b85835787428374af300edc53ec4bf560c2fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/crab-roe-tofu/",
+    "fetchedAt": "2026-08-02T02:06:31.295Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/crab-roe-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

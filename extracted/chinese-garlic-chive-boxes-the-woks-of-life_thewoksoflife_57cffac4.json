@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chinese Garlic Chive Boxes",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "262",
+      "carbohydrateContent": "24",
+      "fatContent": "13",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Beat 5 eggs in a large bowl with 1 tablespoon Shaoxing wine, ½ teaspoon salt and 1 teaspoon sesame oil. Set aside.",
+      "Place your wok over high heat. When it just begins to smoke, add 3 tablespoons vegetable oil to coat the surface of the wok. Add the eggs, and quickly scramble them in a circular motion for 15-20 seconds. Once the eggs begin to solidify, turn off the heat. Use the residual heat in the wok to finish cooking the eggs, using your spatula to break any large chunks into smaller pieces. Remove the eggs from the wok and cool.",
+      "Heat another 2 tablespoons of vegetable oil in your wok over medium heat, and add the dried shrimp. Cook until they turn slightly golden brown. Turn off the heat, and allow to cool.",
+      "Wash the garlic chives clean, and pat them dry with a clean kitchen towel. Finely chop the chives into ¼ inch pieces. In a large bowl, add the chives, cooked dried shrimp, cooked eggs, another ½ teaspoon salt (less if you use more dried shrimp, as they’re very salty), 1/2 teaspoon sugar, ½ teaspoon white pepper, and 2 teaspoons sesame oil. Mix everything thoroughly together. Taste and re-season if necessary.",
+      "To fold the “boxes”, take 2 spring roll wrappers (in a double layer, one on top of the other). Place a heaping ¼ cup filling in the middle, and fold the box like a package. Close the boxes with a little dab of cornstarch slurry, and place on a plate or try with the seam side down. Repeat until all your chive boxes are assembled.",
+      "To cook them, heat up a frying pan over medium heat, and brush the pan generously with oil. Cook the chive boxes for 2-3 minutes on each side, with the frying pan covered. Then remove the lid and crisp up each side for another minute until the outside is golden brown and crisp to the touch. Remember to cook the chive boxes in batches and increase the cooking time if you include ground meat or shrimp in your filling.",
+      "Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Shrimp",
+        "unit": "C",
+        "notes": "dried",
+        "amount": "⅓-½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Garlic Chives",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Roll Wrappers",
+        "unit": "pkg",
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": "dissolved in 1 tablespoon water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34273fc220ead335ca72637032ab6fce0420dc600337c4fdf4c725364829b606",
+    "lineage_hash": "a32453e58b91d726b00f1be21a730242fa415a7c167808ac5cf299b795dd6996"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-garlic-chive-boxes/",
+    "fetchedAt": "2026-08-01T19:41:33.555Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-garlic-chive-boxes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

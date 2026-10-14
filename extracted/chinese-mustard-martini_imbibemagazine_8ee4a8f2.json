@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Chinese Mustard Martini",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir to chill and strain into a chilled glass.\nMustard BrineAdd 1/4 cup of Dolin dry vermouth, 2/3 Tbsp. of white wine vinegar, 1/2 Tbsp. of kosher salt, 1 1/3 oz. of mustard powder, and 1/2 cup of filtered water to a nonreactive container. Stir with a whisk until fully incorporated. Seal and store in the refrigerator where it will keep for 4 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Brine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lustau Blanco Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a7946066de0b43200dadc0cfbe92ed497361344e6a9b7859da55c71009d89b7",
+    "lineage_hash": "8368d82f68acfc6e866ca7cf707976e192450a51447f6e8c95c02494d752efcb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chinese-mustard-martini/",
+    "fetchedAt": "2026-08-04T00:52:46.939Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chinese-mustard-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Creamy Lemon Curd",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the sugar, lemon juice, lemon zest, sour cream, eggs and egg yolks together in a large metal bowl. Place the bowl over a pot filled with 1 inch (2.5 cm) of water gently simmering over medium heat. Whisk constantly (but not vigorously) until the mixture thickens (when the froth on top of the liquid dissipates, you know you are getting close), about 5 minutes. Strain the curd into a bowl and let it sit, uncovered, to cool to room temperature (stirring occasionally accelerates this).",
+      "Transfer the cooled curd to a blender or food processor. Add the butter all at once and then blend until smooth (it will be fluid).",
+      "Pour the filling into the cooled crust and chill, uncovered, for at least 3 hours."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "divided, fresh, 175 mL",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "Tbsp",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Sour Cream",
+        "unit": "Tbsp",
+        "notes": "30 mL",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "285 g, room temperature, cut in pieces",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e16b7d485494027d8598baa78b0221889c6bd37802b3c14628a882e1cf16a8cb",
+    "lineage_hash": "bf2098923aee67ae7ae53f891a0407a98ce4049e9b3c1398ad2613460c398665"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/creamy-lemon-curd/",
+    "fetchedAt": "2026-08-01T19:29:56.670Z"
+  },
+  "rawSource": "https://annaolson.ca/project/creamy-lemon-curd/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chinese Spinach Salad with Peanuts",
+    "time": "15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "73",
+      "carbohydrateContent": "5",
+      "fatContent": "4.8",
+      "proteinContent": "4.1"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil. Add spinach and cook over medium heat until cooked through, about 1 minute. Drain, quickly rise with cold tap water, then drain again. Squeeze extra water out of the spinach with both hands. Chop spinach into pieces about 3” (8 cm) in length and transfer a serving bowl.",
+      "Combine black vinegar, light soy sauce, sugar, salt, and ginger in a small bowl, mix well.",
+      "Right before serving, top the spinach with peanuts and drizzle with the vinegar sauce. Serve immediately as a cold appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spinach",
+        "unit": "lb",
+        "notes": "225 g, tough ends removed and rinsed thoroughly",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scant Cup Salted Roasted Peanuts",
+        "unit": null,
+        "notes": "coarsely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2018f5bd09d2adf0811e4df6d5d11874424f4eb478a4cb010281a366864e75b9",
+    "lineage_hash": "81e94f5d1f6fb1dbc45a2d1d27bfabb121294725b086dff18c315f1a312bdc99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-spinach-and-peanut-salad/",
+    "fetchedAt": "2026-08-02T01:35:42.707Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-spinach-and-peanut-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

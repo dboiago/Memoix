@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Crème Caramel (Low-Carb Japanese Custard Pudding)",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "96",
+      "carbohydrateContent": "3.7",
+      "fatContent": "6.3",
+      "proteinContent": "8.4"
+    },
+    "directions": [
+      "In a large bowl, whisk together the eggs, half the monk fruit sugar, and vanilla extract until well combined but not frothy. Be careful not to overmix as this can result in air bubbles on top of the finished crème caramels.",
+      "Heat milk mixture of whole milk and the other half of the monk fruit sugar in a pan over medium-low heat. Turn the heat off before the milk mixture boils.",
+      "Pour the milk mixture into the egg mixture bowl to whisk together, again be careful not to overmix.",
+      "Pore and strain (using a fine mesh sieve) the custard mixture into another bowl.",
+      "Divide the custard mixture into molds using a ladle, ensuring an even distribution. Leave a small gap at the top to allow room for expansion during cook time.",
+      "Place those molds into boiling water of a large shallow pan or frying pan over low heat. It works like the water bath method when using an oven but instead we use a shallow pan (I found it is easier using a frying pan). Turn the heat off and leave it for 15 min with the lid on.",
+      "Wrap the pan lid in a kitchen towel (to avoid any condensation dripping) and place over the pan to cook for 3-5 minutes.",
+      "Turn the heat off and leave it for 15 min with the lid on.",
+      "Let it cool down.",
+      "In a small saucepan, pour water in and sprinkle gelatine powder and leave for 5 minutes.",
+      "When the gelatine melts, turn the heat off and add monk fruit sugar and instant coffee.",
+      "Stir gently until all the sugar and coffee has dissolved."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "custard",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": "custard",
+        "isOptional": false
+      },
+      {
+        "name": "Monk Fruit Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "custard",
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Monk Fruit Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "caramel",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "045b84f00c32c07c85281dc4b4495a76fb9b6ac5a2b2d2815f422a578e0e7a21",
+    "lineage_hash": "cdab14bb53bed220ad333fa07a47ff4d5b7ae8416b814d72e5e67c56cc55f303"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/creme-caramel/",
+    "fetchedAt": "2026-08-02T02:08:48.152Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/creme-caramel/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

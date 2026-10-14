@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Eggless Masala Omlette",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In mixing bowl add besan, onion, tomato, fresh chili, coriander leaves, spices and salt.",
+      "Mix well and add sufficient amount of water to form thick but pouring consistency batter.",
+      "Heat oil in pan and add small amount of batter and spread it like dosa. Cover and allow it cook. Flip it and cook 2 minutes each sides.",
+      "Remove cut into pieces and serve with chutney or sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Besan/gram Flour/chickpea Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili/ Red Chili",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil/ Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7674ebb7c898a01a0053b0a3ace19c14736dc591bff5057e65d54fbb187d3187",
+    "lineage_hash": "9d75cd2e8908d1b6a043d4d1ea4332ddce2f6b4a9030bfa308e591ef01e1167a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-masala-omlette-2/",
+    "fetchedAt": "2026-08-02T03:14:05.905Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-masala-omlette-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

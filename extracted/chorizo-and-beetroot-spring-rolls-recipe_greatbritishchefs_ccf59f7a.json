@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Chorizo and Beetroot Spring Rolls",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the spring roll mix. Add the rapeseed oil to a pan and place over a medium heat. Once hot, add the sliced onion and slowly cook down for 8 minutes until softened and slightly caramelised. Transfer the onions to a large bowl and leave to cool, then return the pan to the heat",
+      "Add the chopped chorizo to the pan and cook for 3–4 minutes until it has released its oil and is starting to colour. Transfer to the same bowl as the onions along with the orange oil left in the pan",
+      "Add the grated beetroot and parsley to the bowl and stir to combine. Taste and season with salt, pepper and sherry vinegar. Leave in the fridge to cool right down before assembling the spring rolls",
+      "As the mix chills, make the raspberry ketchup. Place all the ingredients in a blender and blitz until very smooth. Pass through a fine sieve to remove the seeds then season to taste with salt. Refrigerate until needed",
+      "To make the black garlic emulsion, place the egg yolks, mustard, vinegar and black garlic paste into a blender and blitz for 1 minute until the mixture is thick and doubled in volume – if the blades of the blender don’t reach the liquid, you can whisk the mixture by hand. Once thickened, with the motor running on low (or whilst continuously whisking) drizzle the oil in a slow, steady stream. Keep an eye on the consistency; if it looks like it is splitting add a splash of water. Taste and season and whisk through the food colouring if using. Transfer to a piping bag and refrigerate until needed",
+      "Now you can assemble the spring rolls. Trim two of the corners off each sheet of spring roll pastry to create a tapered top edge. Work with one sheet at a time and keep the others covered with a towel to prevent them from drying out",
+      "Spoon roughly 70g of the filling mixture onto each sheet, using a spoon or your fingers to create a thin, horizontal roll leaving a 2cm gap either side. Brush the beaten egg over the rest of the pastry sheet then fold both sides over to the filling and press down. Bring up the bottom edge and wrap tightly round the filling, pushing down to remove any air bubbles. Roll up the rest of the pastry and seal tightly ensuring you have no holes or cracks",
+      "Repeat the process for the remaining spring rolls. These can be stored in the fridge on parchment paper until ready to fry if making in advance",
+      "Preheat a deep-fat fryer or pan of oil to 180°C. Working in batches of 3 or 4 rolls at a time, fry for 3–4 minutes until golden and crisp. Remember the oil's temperature will drop a little with the rolls in it, so leave it to come back up to temperature again before frying the next batch",
+      "Drain on kitchen paper then plate up whilst still hot. Serve with the raspberry ketchup and black garlic emulsion in separate dishes on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "(picante), skinned and diced",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Beetroot",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Roll Sheets",
+        "unit": null,
+        "notes": "250mm x 250mm",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": "beaten for egg wash",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic",
+        "unit": "g",
+        "notes": "crushed to a smooth paste",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Black Food Colouring",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70a74463eaf435669c1b80aeb166ccccaaa57687ebfbbb42a08646a58279be3b",
+    "lineage_hash": "b67b4b08df0046b8e6d3c2cd644e9529e34a9582614fc9bb867301298391b77b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-beetroot-spring-rolls-recipe",
+    "fetchedAt": "2026-08-02T21:57:11.768Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-beetroot-spring-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Beetroot Dip",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the almonds in a baking tray, drizzle over 1 tbs olive oil and a generous pinch of salt. Shake to coat. Put the tray in the oven and cook for 8-10 minutes, or until they are toasted",
+      "Boil/ Roast the beetroot with rosemary, individually wrapped in foil or in a large pan, until tender",
+      "Remove the outside skin from the beetroot, slice in half and blitz the beetroot with the remaining ingredients until it reaches your desired texture"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "g",
+        "notes": "boiled or roasted with rosemary",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Selection of Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and half zest",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clementine",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9e55468422f3bcaaf587d5f911b0bb2ba6e22443dca1d1295f9426ca3c0b5fd",
+    "lineage_hash": "eddc39a963fcc84f78046ef8991eaa300fa4568dd8cd7064f471fdc4ef751a9a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-roasted-almond-dip-recipe",
+    "fetchedAt": "2026-08-03T23:43:04.969Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-roasted-almond-dip-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

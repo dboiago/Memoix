@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Coffee Tonic",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the cold-brew coffee, grapefruit juice, tonic syrup and ginger juice in a shaker. Shake until well chilled. Strain into a glass over a single large ice cube. Add a splash of soda water."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Syrup",
+        "unit": "oz",
+        "notes": "Sweet Afton uses Haber's",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8dc821afafaa98ec6e5a0d417501f24d4b29e3fd1a8a81ce1218acee30788f8d",
+    "lineage_hash": "820a4e0079aa453a7a2ac26686ea420700b53ba8539b183e09fa75301e298716"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-high-road-coffee-tonic/",
+    "fetchedAt": "2026-08-03T19:35:16.181Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-high-road-coffee-tonic/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://muybuenoblog.com/super-bowl-o-mole/",
+  "slug": "chunky-guacamole-mexicano_muybuenoblog_4d518620",
+  "title": "Chunky Guacamole Mexicano",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T10:31:32.043Z",
+  "ldName": "Classic Chunky Guacamole Mexicano",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Side Dish",
+  "ldKeywords": "easy guacamole recipe, guacamole, Mexican guacamole recipe",
+  "ldIngredientsRaw": [
+    "4  large avocados",
+    "1 clove garlic (minced)",
+    "1/4 cup white onion (minced)",
+    "1  jalapeño (minced (optional))",
+    "1  tomato (chopped)",
+    "1 teaspoon salt",
+    "1 to 2 tablespoon fresh lime juice"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the avocado in half. Twist to remove the pit. Scoop out the pulp. Place in a medium-size bowl and mash the avocado with a fork so that the mixture is a bit chunky.",
+    "Add the tomato, onion, garlic, and salt. Sprinkle the lime juice over all the ingredients and give everything a good stir, but don&#x27;t overdo it.",
+    "Serve with tortilla chips, blue corn tortilla chips, whole-wheat pita chips, or fresh veggies."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "223 kcal",
+    "sugarContent": "2 g",
+    "sodiumContent": "398 mg",
+    "fatContent": "20 g",
+    "saturatedFatContent": "3 g",
+    "carbohydrateContent": "13 g",
+    "fiberContent": "9 g",
+    "proteinContent": "3 g",
+    "unsaturatedFatContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 large avocados",
+    "▢ 1 clove garlic, minced",
+    "▢ 1/4 cup white onion, minced",
+    "▢ 1 jalapeño, minced (optional)",
+    "▢ 1 tomato, chopped",
+    "▢ 1 teaspoon salt",
+    "▢ 1 to 2 tablespoon fresh lime juice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

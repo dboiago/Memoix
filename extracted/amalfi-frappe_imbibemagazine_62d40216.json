@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Amalfi Frappe",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a glass, then add shaved ice and stir briefly to incorporate. Top with more shaved ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Limoncello",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strega",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0eb2a5964114da5d64fb0f39752833ab0217316f67a73b1ed764442e602dd04f",
+    "lineage_hash": "b8acc3510e63d882cf4cf62c947404a7e2a32a690eab90a0ddb287eb10ce9a38"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amalfi-frappe/",
+    "fetchedAt": "2026-08-03T22:52:31.386Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amalfi-frappe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

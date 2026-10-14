@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Death Valley: An Absinthe Highball",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Lime Wedge"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Open a bottle of Topo Chico. Take a big sip or pour out around 1 1/2 oz of the bottle. Pour the absinthe and lime juice into the bottle. Insert a long straw and a lime wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Absinthe",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Topo Chico",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba1b5b26a054ffba7bb6238c49d7010010452fc5a96fea2372a21c372b72bc85",
+    "lineage_hash": "e4646e9ee4049bca2d7cd55e6354b16a640d6a858294befc0aa23f5d29434163"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/death-valley-absinthe-highball/",
+    "fetchedAt": "2026-08-03T20:52:37.397Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/death-valley-absinthe-highball/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

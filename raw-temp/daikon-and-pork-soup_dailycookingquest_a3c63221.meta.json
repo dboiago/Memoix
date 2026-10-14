@@ -1,0 +1,46 @@
+{
+  "url": "https://dailycookingquest.com/daikon-and-pork-soup.html",
+  "slug": "daikon-and-pork-soup_dailycookingquest_a3c63221",
+  "title": "Daikon and Pork Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T10:18:41.096Z",
+  "ldName": "Daikon and Pork Soup",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Pork",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "500 gram daikon (Indonesian: lobak), peeled and cut into bite size pieces",
+    "400 gram pork (ribs or loin), cut into bite size pieces",
+    "15 gram salted dried cuttlefish (Indonesian: sotong kering asin)",
+    "1 1/2 teaspoon salt",
+    "1 teaspoon sugar",
+    "6 cups water",
+    "2 scallions, thinly sliced"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 hour or until both the daikon and pork are tender and fully cooked.",
+    "Turn off heat, serve hot and garnish with sliced scallions."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "500 gram daikon (Indonesian: lobak), peeled and cut into bite size pieces",
+    "400 gram pork (ribs or loin), cut into bite size pieces",
+    "15 gram salted dried cuttlefish (Indonesian: sotong kering asin)",
+    "1 1/2 teaspoon salt",
+    "1 teaspoon sugar",
+    "6 cups water",
+    "2 scallions, thinly sliced"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

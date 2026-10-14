@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Crispy \"Sichuan\" Potato Cakes and Eggs",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "466",
+      "carbohydrateContent": "25",
+      "fatContent": "36",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Using a food processor with a coarse grating disc or a regular box grater, grate the potatoes. Place the grated potato in the middle of a clean dish towel, wrap it up, and squeeze out as much liquid from the shredded potatoes as you can.",
+      "Transfer to a bowl, and toss with red pepper flakes, salt, pepper, scallions, garlic, ginger, soy sauce, rice vinegar, and 1 egg until thoroughly combined.",
+      "In a 12-inch skillet, heat the vegetable oil over medium heat. Add the sichuan peppercorns and allow them to toast in the oil for 10 minutes or so, until fragrant.",
+      "Use a slotted spoon to scoop out the peppercorns and discard. Turn up the heat to medium high. Divide the potatoes into four portions, and add to the pan, making 4 “pancakes.”",
+      "Use a spatula to press each into an even circle, and cook until the bottom is golden brown (5-8 minutes), shaking the pan frequently so the potatoes don’t stick and adding more oil as needed. Flip, and cook until the other side is golden brown.",
+      "Meanwhile cook the eggs sunny side up. Serve the eggs on top of the hashbrowns."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Russet Potato",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "plus 1 for the potato mixture",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": "plus more as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "03cdf5f2ccfe2df352e5414ae266f12f5c78d50f4738d69e4280a059cceaed3f",
+    "lineage_hash": "03a9969f9a70e11c84a9368cce4db18923788932f67d5fff5e3899ca4334831a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/sichuan-potato-cakes-eggs/",
+    "fetchedAt": "2026-08-01T22:14:07.319Z"
+  },
+  "rawSource": "https://thewoksoflife.com/sichuan-potato-cakes-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

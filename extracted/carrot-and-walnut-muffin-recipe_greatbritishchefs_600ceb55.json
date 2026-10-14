@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Carrot and Walnut Muffin",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the eggs and sugar to a large bowl and whisk until pale and fluffy. Gradually, mix in the oil",
+      "Sieve the flour, baking powder, salt and cinnamon into a bowl to combine, then carefully fold into the egg mix. Once combined, stir through the apple, walnuts and carrot",
+      "Line a muffin tin with paper muffin cases and spoon in the batter three-quarters up the side of the casings. Place in the oven for 20-30 minutes until cooked through and golden, then remove and leave to cool completely before frosting",
+      "To make the icing, add the vanilla essence, cream cheese and butter to a bowl and beat for 3 minutes. Add the icing sugar and cinnamon as you go, mixing until light and fluffy",
+      "Once the muffins are cool and the icing is nice and silky, transfer the icing to a piping bag fitted with a star-shaped nozzle. Pipe a swirl onto the top of each muffin and garnish with the extra chopped walnuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "chopped, plus extra for garnish",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened at room temperature",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b82617079811c21606f74c1002b0905eb81e373e84a5b9812283f602fc325a0b",
+    "lineage_hash": "50b2af615b4f244f9575589b0ce19d1af253b42195bc88c4b2f5beed6ff3e1d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-walnut-muffin-recipe",
+    "fetchedAt": "2026-08-03T16:00:14.098Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-walnut-muffin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

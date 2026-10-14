@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Aperol Rosé Sangria",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [
+      "Extra Fruit"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the rosé, Aperol, and syrup into the large pitcher. Add the berries and citrus slices and stir to combine. Refrigerate for at least 2 hours. Pour into wine glasses filled with ice. Top each glass with a splash of club soda. Garnish with extra fruit."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rosé Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": "hulled and chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bafa490c1cca2dbb5260798046306782bfffc24690e7e799920273aa64b9240f",
+    "lineage_hash": "5682b0e9a35deb7d6ed0074040c146d6dcb19ac9ccd89454340cefa385979eb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperol-rose-sangria/",
+    "fetchedAt": "2026-08-04T02:03:24.592Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperol-rose-sangria/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://thewoksoflife.com/chinese-pickled-cucumbers/",
+  "slug": "chinese-pickled-cucumbers-the-woks-of-life_thewoksoflife_d9c173b7",
+  "title": "Chinese Pickled Cucumbers (酱黄瓜) - The Woks of Life",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T21:43:02.534Z",
+  "ldName": "Chinese Pickled Cucumbers (酱黄瓜)",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Vegetables",
+  "ldKeywords": "pickled cucumbers",
+  "ldIngredientsRaw": [
+    "3  English/hothouse cucumbers ((best to use seedless cucumber for this))",
+    "3 teaspoons sugar ((divided))",
+    "1½ teaspoons salt ((divided))",
+    "1 tablespoon Chinese black vinegar",
+    "2 tablespoons light soy sauce",
+    "¼ teaspoon dark soy sauce",
+    "2  bay leaves",
+    "4 cloves garlic ((smashed))",
+    "3  dried chili peppers ((de-seeded, optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse off the cucumbers and wipe them dry. Trim off both ends, and cut each cucumber into 4 equal sections. Cut each section into 6 equal-sized strips. Transfer to a bowl and add ½ teaspoon sugar and 1 teaspoon salt. Toss, cover, and refrigerate for 1 hour.",
+    "At the same time, make the sauce by combining 2 ½ teaspoons sugar, ½ teaspoon salt, 1 tablespoon black vinegar, 2 tablespoons light soy sauce, ¼ teaspoon dark soy sauce, 2 bay leaves, 4 cloves of garlic, and the chili peppers. Stir and make sure the sugar and salt are completed dissolved.",
+    "Once the cucumber has marinated for 1 hour in the fridge, dump out the liquid from the bowl they were sitting in. You should be able to get rid of at least ¼ cup of liquid. Now add the prepared sauce, and mix everything well. Cover and marinate in the refrigerator overnight. The cucumbers should be ready to serve the next morning with a hot bowl of congee!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "58 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "3 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "1401 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 English/hothouse cucumbers (best to use seedless cucumber for this)",
+    "▢ 3 teaspoons sugar (divided)",
+    "▢ 1½ teaspoons salt (divided)",
+    "▢ 1 tablespoon Chinese black vinegar",
+    "▢ 2 tablespoons light soy sauce",
+    "▢ ¼ teaspoon dark soy sauce",
+    "▢ 2 bay leaves",
+    "▢ 4 cloves garlic (smashed)",
+    "▢ 3 dried chili peppers (de-seeded, optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

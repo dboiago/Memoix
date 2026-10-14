@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Chinese 5 Spice Powder",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Break cinnamon and star anise. And then put the two ingredients in your grinder to ground them to powder.",
+      "Mix with other ingredients and continue grind until all the ingredients are well grounded.",
+      "Filter large particles out; and keep the filtered ground powder mixture in airtighter container until use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": "alt: cinnamon powder",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5424e00cd52550291d60f99ee2864fcd2db9a689479f741df78dba02dfecf3da",
+    "lineage_hash": "34393639aac67b1f2e4238e9435f3cd024e57d67798c4a8e80b58e462014bf73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/five-spice-powder/",
+    "fetchedAt": "2026-08-01T15:36:45.490Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/five-spice-powder/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

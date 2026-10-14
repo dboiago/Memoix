@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Balado Udang (Shrimps in Spicy Chili Sauce)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, marinate shrimps and lime together for 15 minutes. Wash in cold water, drain, and set aside.",
+      "Heat oil in a wok, fry potatoes and stink beans until the potatoes are half way cooked, about 3 minutes.",
+      "Add spice paste into the wok, and bring to a boil.",
+      "Season with salt and sugar, adjust the amount to suit your taste. Since the acidity and sweetness of tomatoes may varies, the amount of salt and sugar you need may be slightly different.",
+      "Once the sauce starts to thicken and the potatoes are fully cooked, add shrimps into the wok. Stir and cook until the shrimps turn pink, about 30 seconds to 1 minute.",
+      "Turn off heat, transfer to a serving plate and garnish with scallion. Serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shrimps",
+        "unit": "g",
+        "notes": "shelled and deveined",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "peeled and cut into 1 inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stink Beans (indonesian: Pete)",
+        "unit": "g",
+        "notes": "halve each",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cayenne Chilies",
+        "unit": null,
+        "notes": "Indonesian: cabe merah keriting",
+        "amount": "5-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Shallots (indonesian: Bawang Merah)",
+        "unit": null,
+        "notes": "about 75 gram",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garnish (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3fe9533d55e13366360a5acbaf821b88ef6c23572e0eff3db95191659824fd33",
+    "lineage_hash": "eaacf4b849175141313dab3ee2765af6180f48523e5a72cb7118fa37bbb06937"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/balado-udang-shrimps-in-spicy-chili-sauce.html",
+    "fetchedAt": "2026-08-02T06:12:00.769Z"
+  },
+  "rawSource": "https://dailycookingquest.com/balado-udang-shrimps-in-spicy-chili-sauce.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

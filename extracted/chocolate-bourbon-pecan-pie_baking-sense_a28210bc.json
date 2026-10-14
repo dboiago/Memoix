@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Bourbon Pecan Pie",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "463",
+      "carbohydrateContent": "45",
+      "fatContent": "30",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F.",
+      "Roll the pie dough to fit a 9\" pie plate, crimp the edges and refrigerate while the oven preheats.",
+      "Dock the bottom of the pie dough 6-8 times with a fork. Line the crust with foil and fill the foil with dried beans or pie weights. Bake the crust until the dough is almost set, about 20 minutes. Remove the foil and beans and continue baking until the dough is set and just beginning to brown, about 5 minutes. Remove the pan from the oven. Reduce the heat to 325 °F.",
+      "While the crust is baking, toast 9 oz pecans in a dry skillet until fragrant and just beginning to brown. Coarsely chop the nuts and pour them into the baked crust when it comes out of the oven.",
+      "Combine 2 oz unsalted butter and 2 ounces unsweetened baking chocolate in a large microwave safe bowl. Microwave in 30 second increments, stirring in between, until the chocolate is completely melted.",
+      "Add 6 oz brown sugar, 8 oz light corn syrup, 1 teaspoon pure vanilla extract, 2 oz bourbon and ¼ teaspoon salt. Mix until blended. Whisk in 4 large eggs.",
+      "Pour the filling over the pecans and bake until the filling is set, about 20 minutes. The filling should softly jiggle as a mass when it's ready.",
+      "Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": "chilled and rested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "oz",
+        "notes": "2 cups, chopped",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Baking Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup",
+        "unit": "oz",
+        "notes": "⅔ cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e921363034aa5047a5e44c50db4ef8aae7f13f7364eb5cfac09e332320b0c64",
+    "lineage_hash": "7895ed37018a4239e299049cf31b59b7865866e34fb99b04270e7e466c1c66f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/10/19/chocolate-bourbon-pecan-pie/",
+    "fetchedAt": "2026-08-02T03:33:48.359Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/10/19/chocolate-bourbon-pecan-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

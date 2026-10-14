@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Bengali Kolar Bora (बंगाली कोलार बोरा)",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the ripe bananas and mash them in a bowl.",
+      "Then, add in the sugar powder and mix well with a spatula.",
+      "Next, add in the rice four, refined flour, milk powder, cinnamon powder and baking powder and mix well again.",
+      "Make lemon-sized balls of the dough and keep aside.",
+      "Heat oil in a kadhai and gentlydrop in the balls for frying..",
+      "Fry on medium-to-low heat till the Boras have begun to change their colour to dark brown. Transfer onto a kitchen towel to drain out any excess oil.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Refined Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Milk Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "66ecc1e20e5cd030fa7b07ef22208d920c7370060c102a66fa7cfe2d644d8b59",
+    "lineage_hash": "825f7a7937728a29a3034b90454ca22c573e1014d5421a098661b75b7f3e7e10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bengali-kolar-bora/",
+    "fetchedAt": "2026-08-02T08:54:05.108Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bengali-kolar-bora/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Clover Club",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker and shake without ice for 10 seconds. Add ice and shake vigorously for at least 10 seconds. Strain into a chilled glass.",
+      "Raspberry Syrup:\n1 part raspberries\n1 part water\n2 parts sugar",
+      "Muddle the raspberries and mix thoroughly with the sugar. Let sit for 20-30 minutes until the mix becomes thick and syrupy. Add the water and stir until all of the sugar is dissolved. Strain through chinois. Note: Never boil this syrup on the stove. The raspberries will cook and their flavor will change entirely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": "Reiner uses Plymouth",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "Reiner uses Dolin",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": "pasteurized if you like",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Part Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Part Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parts Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8aed34deab1d804be60ff5e575d6e710874d11a831ab3f955a7ef9c5d9b203e9",
+    "lineage_hash": "4665165867daba9aaf7439b74ba888da1a150039f062591002cff93ef876a2f8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/clover-club/",
+    "fetchedAt": "2026-08-04T02:08:40.113Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/clover-club/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

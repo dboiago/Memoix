@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Irish Coffee",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IE",
+    "glass": "Mug",
+    "garnish": [
+      "Whipped Cream"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mug.",
+      "Garnish and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "oz",
+        "notes": "hot",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce788553adfcfee8eeb2ccc05fe0a8c8334edf2535981dbc7ad2c0e3dfc83d43",
+    "lineage_hash": "0f3f24916c522221c3be2a30871fcbe8a6435ab25a9810364609069225104353"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/25-days-of-christmas-cocktails-day-17-irish-coffee/",
+    "fetchedAt": "2026-08-02T10:37:50.500Z"
+  },
+  "rawSource": "https://imbibemagazine.com/25-days-of-christmas-cocktails-day-17-irish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

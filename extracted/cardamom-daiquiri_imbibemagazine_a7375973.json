@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cardamom Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice and strain into a glass filled with crushed ice, then garnish.",
+      "Vanilla Syrup: Cut up 1 vanilla pod and add to a small saucepan along with 1 lb. of white sugar and 2 cups of water. Bring the mixture to a simmer for several minutes, stirring to dissolve the sugar, then transfer to a bowl or container and let cool, uncovered. Once the syrup has cooled, cover the bowl or container and let stand for 24 hours. Strain the syrup, and keep refrigerated for up to 2 weeks.",
+      "Cardamom Tincture: Using a spice grinder, coarsely grind 1⁄2 ounce of whole green cardamom pods (take care not to grind the spice too fine). Add the ground spice to a quart-size jar along with 2 cups of vodka (preferably 100 proof). Let steep for 48 hours, then strain before use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhum Agricole Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Tincture",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2b7574441d3793b5b6bf49506417e7daff264179d82ddc94bc26a0ddbc8d9ad4",
+    "lineage_hash": "ccdabbdddb384be2161762fd0af56e46ac57254ee7ac091fc6b45a560b0096b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cardamom-daiquiri/",
+    "fetchedAt": "2026-08-03T19:28:40.682Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cardamom-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Classic Blondies with a Crackly Crust",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "220",
+      "carbohydrateContent": "31",
+      "fatContent": "10",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Butter a 9\" square baking pan and line with parchment paper. You can just butter the pan but the parchment makes it much easier to remove the blondies from the pan.",
+      "In a large bowl, combine 6 oz unsalted butter (melted) with 12 oz brown sugar. Add 3 large eggs and 1 tablespoon vanilla extract. Mix to combine then stir vigorously for 30 seconds.",
+      "Add 7 ½ oz all purpose flour and ½ teaspoon table salt. Spread the batter into the pan.",
+      "Bake until the center springs back when lightly pressed, and a toothpick inserted in the center comes out with a few wet crumbs, about 25 minutes.",
+      "Cool to room temperature before removing from the pan and cutting into 16 squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5b31c6f51bb0b2b9eeb6fcf293e6754a769e7c4d37e5780c18764996d64f4ae",
+    "lineage_hash": "a3216ae245b8ee65493196ef1fe9ff1b0f877328891b0602a4e3b9be05727618"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/04/29/classic-blondies/",
+    "fetchedAt": "2026-08-01T21:02:31.986Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/04/29/classic-blondies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

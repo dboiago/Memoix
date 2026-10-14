@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Backlash & Tonic",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a glass with a large ice cube and briefly stir to combine, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tonic Water",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fino Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "024635938794d72095c1cb0a5cd999973088529da87c90b9fb71164e048f5d66",
+    "lineage_hash": "cfc0c56d1d124ba336ceb0db0d79e9d1bbf7fe6e3eef4c3ca061816687580b7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/backlash-tonic-aperitivo-cocktail/",
+    "fetchedAt": "2026-08-04T01:35:44.664Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/backlash-tonic-aperitivo-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

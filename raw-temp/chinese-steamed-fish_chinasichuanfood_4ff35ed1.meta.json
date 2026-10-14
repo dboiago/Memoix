@@ -1,0 +1,66 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-steamed-fish/",
+  "slug": "chinese-steamed-fish_chinasichuanfood_4ff35ed1",
+  "title": "Chinese Steamed Fish",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:44:40.684Z",
+  "ldName": "Chinese Steamed Fish",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "fish, steamed",
+  "ldIngredientsRaw": [
+    "One fresh fish ( ,500g to 700g)",
+    "6-7  scallion",
+    "1  small chunk of ginger",
+    "2 tbsp. vegetable cooking oil",
+    "3 tbsp. seasoned soy sauce",
+    "5-6  shred red pepper",
+    "2  scallion",
+    "2  coriander",
+    "pinch of salt ( ,optional for fresh water fish only)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut half of the scallion and ginger into small sections.",
+    "For decoration: shred scallion with a fork and then soak them in cold water.",
+    "Clean the fish completely and peel off any black skins in the stomach of the fish. Drain completely.",
+    "Watch the body shape if your fish. If it gets a thick back, cut a line and separate the back into two parts. Or if it gets thick stomach, cut 2 lines on the thickest meat, so the meat can be cooked in a shorter time and be kept as tender as possible. (Optional for fresh water fish only), spread a very thin layer of salt on the surface and stomach of the fish. Place scallion and ginger inside of the fish.",
+    "Place two scoops on the plates, or two sections of chopsticks and then place the fish in.",
+    "Bring enough water to a boiling in a large pot and place the fish in after the water boils. Start the count the time, steam 5 minutes and stand for 1 to 2 minutes.",
+    "Transfer the fish to a clean plate, discard the scallion and ginger and place the newly cut scallions. Heat around 2 tablespoons of cooking oil until almost smoky and pour the oil evenly on the scallion shreds.",
+    "Heat the seasoned soy sauce until warm and pour evenly on the plate. If your soy sauce is cold, pour them on the two sides of the fish, not over the fish.",
+    "Serve hot and should be finished within 10 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "591 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "73 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "15 g",
+    "cholesterolContent": "206 mg",
+    "sodiumContent": "1455 mg",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "One fresh fish  ,500g to 700g",
+    "6-7 scallion",
+    "1 small chunk of ginger",
+    "2 tbsp. vegetable cooking oil",
+    "3 tbsp. seasoned soy sauce",
+    "[Decoration]",
+    "5-6 shred red pepper",
+    "2 scallion",
+    "2 coriander",
+    "pinch of salt  ,optional for fresh water fish only"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

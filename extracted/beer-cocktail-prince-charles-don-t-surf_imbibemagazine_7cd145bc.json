@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Prince Charles Don't Surf",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients except beer, and shake with ice. Strain into an ice-filled glass, top with beer and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blonde Ale",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90bfd007c509f5a9af7c96593f0e69ab1f551f2ea247b3931a9404450f4665de",
+    "lineage_hash": "f8d00f352fc5eabd1c715c0121b7c7fdcd3a0e19f0c5a8e448704c0eed6c3fcf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-cocktail-prince-charles-dont-surf/",
+    "fetchedAt": "2026-08-03T23:11:13.932Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-cocktail-prince-charles-dont-surf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

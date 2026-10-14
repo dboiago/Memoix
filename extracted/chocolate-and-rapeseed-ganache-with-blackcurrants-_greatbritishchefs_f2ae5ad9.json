@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chocolate and Rapeseed Ganache with Blackcurrants",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the shortbread at least 2 hours before you need to bake it. Add the butter to a food processor and blend until creamy (or use a wooden spoon and mixing bowl). Add the sugar, salt, vanilla extract and mix until fully incorporated. Fold in the flour and crushed rapeseeds until a smooth dough forms",
+      "Roll the dough into a 6cm-wide cylinder and wrap in parchment paper – twist the ends to keep it sealed (like a sweet wrapper). Place in the fridge for at least 2 hours",
+      "Make the vanilla oil by combining the vanilla seeds and rapeseed oil in a small bowl (save the pod to make vanilla sugar or flavour other dishes). Set aside",
+      "Make the compote by placing all the ingredients in a small pan and place over a medium heat. Once the currants start to release their juices, taste and balance the flavour with more honey or salt (if needed). Set aside to cool",
+      "For the ganache, melt the chocolate in a heatproof bowl set over a pan of simmering water. Fold in the cream, then stir in the oil and honey. Place in the fridge to set",
+      "Preheat an oven to 180°C/gas mark 4. Remove the ganache from the fridge to come up to room temperature, and unwrap the dough and slice into 1cm-thick circles. Place on a tray lined with greaseproof paper. Bake for 10 minutes until golden, then set aside to cool",
+      "To serve, place a shortbread on the base of each plate. Use a hot dessertspoon to quenelle the ganache and place on top of the biscuit. Finish with a dollop of blackcurrant compote, then drizzle the vanilla oil around the base"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrants",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds scraped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09f0b1214fcb98850ab00257f97ca0d59f2a40a01dff7d7936313b88f45809a9",
+    "lineage_hash": "a62b97196677c134a2997a9de4fe6e5ed5454eab738e33a9f0dcad303606359b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-rapeseed-blackcurrant-recipe",
+    "fetchedAt": "2026-08-03T07:02:19.298Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-rapeseed-blackcurrant-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

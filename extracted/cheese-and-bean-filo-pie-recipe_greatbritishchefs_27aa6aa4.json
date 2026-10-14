@@ -1,0 +1,206 @@
+{
+  "recipe": {
+    "name": "Cheese and Bean Filo Pie",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the baked beans, place a heavy-based saucepan over a medium heat and add oil. Once hot, add the onion and cook gently for 5 minutes until soft",
+      "Add the garlic and cook for a further 2 minutes. Then, add the carrots and celery. Cook for a further 10-15 minutes until the vegetables are tender",
+      "Add the sugar, vinegar and chopped tomatoes and stir through. Drain the beans, add to the pan and pour in 100ml of water. Simmer until the sauce reduces slightly, approximately 5-10 minutes",
+      "Season with a pinch of salt and pepper and remove from the heat. Allow to cool and store in an airtight container in the fridge until ready to use",
+      "To assemble the pies, brush 1 sheet of filo pastry with butter and lay another on top. Brush the second layer and place a third layer on top - you should be left with 1 triple-layered sheet",
+      "Cut the layered sheet into 4 evenly-sized rectangles and set aside",
+      "Repeat steps 5 and 6 to make 4 more rectangles - so 8 in total. Set aside while you prepare the cheese filling",
+      "For the cheese filling, add the cottage cheese to a large bowl and crumble in the feta. Beat the eggs and pour into the bowl, stirring to combine",
+      "Mix in the dill and chopped onion. Season with a pinch of salt and pepper and set aside",
+      "Line each individual pie dish with a prepared filo pastry rectangle - so the excess pastry hangs over the edge of the dish. Add 5 tablespoons of baked beans to each dish, then spoon in the cheese mixture until almost full",
+      "Fold in the overhanging pastry edges to seal and brush the tops with a little more melted butter. Gently score the top of each pie in a criss-cross pattern, ensuring not to pierce all the way through the pastry",
+      "Bake the pies for 20-25 minutes until the tops are golden and the filling is hot. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Haricot Beans",
+        "unit": "g",
+        "notes": "tinned",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filo Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cottage Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be18ae5a6ca912f40c64b3644144d1eb73bb51466b30eb5ecebdc0f62c378de9",
+    "lineage_hash": "23792455195a6986dfd0ea35c132e6d29376c85b5094eb242e77d3eba313744d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-bean-filo-pie-recipe",
+    "fetchedAt": "2026-08-03T20:05:16.258Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-bean-filo-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

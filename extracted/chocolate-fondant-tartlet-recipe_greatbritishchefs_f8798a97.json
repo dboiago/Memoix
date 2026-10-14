@@ -1,0 +1,239 @@
+{
+  "recipe": {
+    "name": "Chocolate Fondant Tartlet",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the sweet chocolate pastry. Cream together the butter and icing sugar, then add the eggs. Once incorporated, add the ground almonds and cocoa powder",
+      "Pass the flour through a sieve and add it to the mixture, along with the salt. Mix to combine, without over-working the dough. Shape into a flat disc, wrap in cling film and rest in the fridge for 6 hours",
+      "After this time, remove the cling film and roll out to a 2mm thickness. Cut into 8cm discs and gently press the pastry rounds into the tart cases. Return to the fridge for 1 hour before using",
+      "Cook the pastry cases for 10 minutes, then remove and allow to cool",
+      "To make the praline, roast the hazelnuts and cacao nibs in the oven until nicely toasted. Heat the sugar and water in a heavy-based pan until you have a golden caramel, then add the hazelnuts, cacao nibs and salt",
+      "Transfer the mixture to a silicone baking mat and allow to cool completely",
+      "Once cold, break into pieces and add to a high-power blender. Blitz until the mixture has the consistency of peanut butter. Transfer to a piping bag and chill in the fridge until ready to assemble the tarts",
+      "To make the chocolate fondant tart filling, place the chocolate in a heatproof bowl over a pan of gently simmering water, making sure the bowl does not touch the surface of the water. Stir until it melts and reaches a temperature of 45°C. Stir in the butter and keep at 40°C",
+      "Add the eggs and sugar to a bowl and whisk until foamy. Sieve the flour, cocoa powder and bicarbonate of soda into a separate bowl",
+      "Stir the chocolate and butter mixture into the eggs until smooth, then incorporate the flour and cocoa mixture",
+      "To assemble the tarts, half-fill the cases with the fondant mixture, then pipe rounds of the praline into the centre of each tart. Cover the praline with the remaining fondant mixture so that it comes just a little way from the top of the tart cases. Chill in the fridge until ready to bake",
+      "To make the crumble topping, simply mix together all of the ingredients in a bowl",
+      "Bake the fondant tarts in the oven for 5 minutes. Remove from the oven, carefully transfer to serving plates and sprinkle some of the crumble on top. Add a quenelle of crème fraîche and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T45 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "560",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "Shay uses Tropilia 70% dark chocolate",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nibbed Almonds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "Shay uses Iranian pistachios, chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": "Chantilly cream or mascarpone",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83ec8eeb96fb336de1328c52093efbdaf455129f6c8add77182ee6a3180d3565",
+    "lineage_hash": "b5d821185b1af6e94cac107b7e1de951a8c173e0f17d6621ff06ef119c68841b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-tartlet-recipe",
+    "fetchedAt": "2026-08-03T10:41:30.023Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-fondant-tartlet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

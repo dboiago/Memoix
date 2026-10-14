@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Chocolate Butter Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "403",
+      "carbohydrateContent": "52",
+      "fatContent": "21",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F regular. Line two 8\"x3\" round cake pans with a circle of parchment paper round or butter and flour the bottoms of the pans only, not the sides.",
+      "Combine 6 large egg yolks, ½ cup of the sour cream and 1 tablespoon vanilla extract in a small bowl, whisk to combine",
+      "Set aside ¼ cup of the sugar. Into a mixer bowl put the remaining sugar, sift in 6 ¾ oz cake flour, 2 oz Dutch process cocoa powder, ¾ teaspoon baking powder, ¼ teaspoon baking soda and ¾ teaspoon salt. Mix on low speed to distribute the leavening. Add 9 oz unsalted butter to the flour mixture. Mix on low until the butter is incorporated and the batter looks like a paste. Add the other ½ of the sour cream to the flour and butter mixture. Increase the speed to medium and mix about 3 minutes until the batter lightens in texture.",
+      "Scrape the sides and bottom of the bowl. With the mixer on low, add ½ the egg yolk mixture, mix to incorporate. Scrape the sides and bottom of the bowl. Add the rest of the egg yolk mixture. Scrape the bowl and mix until incorporated. Set the batter aside.",
+      "Whip 3 large egg whites on medium high until they form soft peaks. Turn the mixer to medium low and slowly add the reserved ¼ cup of sugar. Turn the mixer to medium high and whip the whites to full peak. Fold the whites into the batter in 2 parts, folding just until there are no streaks of egg whites.",
+      "Divide the batter between the 2 pans and spread to level. Bake about 25-30 minutes until the center of the cake springs back when lightly pressed or a toothpick inserted into the middle of the cake comes out clean, about 30  minutes.",
+      "Cool 10 minutes in the pan and then turn out onto a cooling rack. When fully cooled, wrap in plastic and refrigerate at least 3 hours or over night before assembling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "room temperature, divided in 1/2",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, cup separated",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "6¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Italian Meringue Buttercream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Simple Syrup",
+        "unit": null,
+        "notes": "flavor with 2 T rum",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cff9e51baadfcbd33151ee396b286f6a9c59ee73816b33405bdf1b164cfe7f85",
+    "lineage_hash": "2939016374ff544a2924bda7b27866eb9a1bfc75d8c56f211686ec769e572e61"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/02/06/chocolate-butter-cake/",
+    "fetchedAt": "2026-08-02T03:36:40.038Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/02/06/chocolate-butter-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2018/02/22/old-fashioned-chocolate-cake/",
+  "slug": "chocolate-buttermilk-cake_baking-sense_19e48202",
+  "title": "Chocolate Buttermilk Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:36:38.310Z",
+  "ldName": "Chocolate Buttermilk Cake Recipe",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "buttermilk",
+  "ldIngredientsRaw": [
+    "2 ounces Dutch process cocoa powder (½ cup)",
+    "½ teaspoon baking soda",
+    "4 ounces boiling water (½ cup)",
+    "9 ounces cake flour (2 cups, see note)",
+    "1 teaspoon baking powder",
+    "½ teaspoon table salt",
+    "8 ounces vegetable oil (1 cup)",
+    "4  large eggs",
+    "8 ounces buttermilk (1 cup)",
+    "1 tablespoon vanilla extract",
+    "16 ounces granulated sugar (2 cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Line the bottom of two 8&quot; round cake pans with parchment paper, or butter and flour the bottom of the pans (don&#39;t butter/flour the sides).",
+    "Combine 2 ounces&#32;Dutch process cocoa powder and ½ teaspoon&#32;baking soda in a small heat-proof bowl. Whisk 4 ounces&#32;boiling water into the cocoa, it will foam up a bit from the baking soda. Set aside to cool while preparing the other ingredients.",
+    "Sift 9 ounces&#32;cake flour with 1 teaspoon&#32;baking powder and ½ teaspoon&#32;table salt, set aside.",
+    "Combine 8 ounces&#32;vegetable oil, 4&#32;large eggs, 8 ounces&#32;buttermilk,1 tablespoon&#32;vanilla extract and 16 ounces&#32;granulated sugar in a mixer bowl. Mix on medium speed to combine the ingredients, continue mixing for 2-3 minutes to emulsify the ingredients.",
+    "With the mixer running on low, add the flour and then add the cocoa mixture. Mix until completely incorporated.",
+    "Divide the batter evenly between the two pans. Bake until the top springs back when lightly pressed or a toothpick inserted in the middle of the cake comes out clean, about 30 minutes.",
+    "Cool in the pan for 20 minutes before turning out onto a cooling rack. Cool completely before filling and icing."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "12 g",
+    "calories": "327 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "4 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "42 mg",
+    "sodiumContent": "166 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "29 g",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "2 ounces Dutch process cocoa powder (½ cup)",
+    "½ teaspoon baking soda",
+    "4 ounces boiling water (½ cup)",
+    "9 ounces cake flour (2 cups, see note)",
+    "1 teaspoon baking powder",
+    "½ teaspoon table salt",
+    "8 ounces vegetable oil (1 cup)",
+    "4 large eggs",
+    "8 ounces buttermilk (1 cup)",
+    "1 tablespoon vanilla extract",
+    "16 ounces granulated sugar (2 cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

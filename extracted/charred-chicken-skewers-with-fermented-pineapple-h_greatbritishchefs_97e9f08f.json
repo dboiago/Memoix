@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Charred Chicken Skewers With Fermented Pineapple Hot Sauce",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the fermented pineapple at least 5 days before you want to make the dish",
+      "Place all the ingredients for the skewers in a large bowl with a pinch of sea salt and black pepper. Mix well and set aside to marinate for at least 20 minutes (or up to 4 hours in the fridge)",
+      "Strain the fermented pineapple and aromats through a sieve, reserving the brine",
+      "Reserve a few pineapple cubes for garnish, then transfer the remaining pineapple and aromats into a blender with 2 tablespoons of the brine. Blend until completely smooth and glossy, adjusting with honey and a little more brine, if needed. Set aside some in a small bowl for serving, then pour the rest in a bowl to use for glazing the chicken as it cooks",
+      "For the gremolata, place the herbs, olive oil and a pinch of salt in a small blender or food processor and blitz until smooth. Set aside",
+      "Thread the chicken onto skewers, packing them tightly and evenly",
+      "Preheat a griddle pan on a high heat (or light a charcoal barbecue for direct grilling, if you have it)",
+      "Cook the skewers for 12-15 minutes, until charred and cooked through, turning regularly – in the final few minutes, brush with the hot sauce, turning and brushing as they finish cooking",
+      "Place the skewers onto a platter, spoon over a little extra fermented pineapple hot sauce and spoon over the gremolata. Finish with the reserved fermented pineapple, the spring onion and a pinch of chilli flakes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": "g",
+        "notes": "boneless, skinless, cut into large bite-sized pieces",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Pineapple",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely sliced, to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": "to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef16a70e59bb9b2b48be3ac286f424176b7d37388c6bcf709d99125f4044dbe9",
+    "lineage_hash": "5d43028d6b6203995ce893dbe06914bef30d135f287aacefa2fd924f3896d643"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/charred-chicken-skewers-fermented-pineapple-hot-sauce-recipe",
+    "fetchedAt": "2026-08-01T19:08:34.750Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/charred-chicken-skewers-fermented-pineapple-hot-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

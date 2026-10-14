@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "24 Carrot Gold Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the liquid ingredients in a punch bowl with one giant ice cube or several large cubes. Serve in glasses with ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottle Gin",
+        "unit": null,
+        "notes": "Cardinal Spirits Standard Dry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "19",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "oz",
+        "notes": "more or less to taste",
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "900d34f46e4b189e78f4a2b8ec38f9bf80538f4d167d37d2865a1332c6b7a217",
+    "lineage_hash": "a62848f162e6343991d26ec3e490a6ae23f540a165c3939b06f201f8d8e3c121"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/24-carrot-gold-punch-recipe/",
+    "fetchedAt": "2026-08-03T23:08:49.631Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/24-carrot-gold-punch-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

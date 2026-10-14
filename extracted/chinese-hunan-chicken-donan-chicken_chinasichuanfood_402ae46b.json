@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Hunan Chicken (Donan Chicken)",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "305",
+      "carbohydrateContent": "13",
+      "fatContent": "20",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Wash the hen in running water and then rinse in boiling water for around 2 minutes.",
+      "Transfer the chicken out and then get some fresh and clean water in a pot (just cover the chicken); bring all the content to a boiling and continue cooking for 8 minutes (the chicken should be 80% cooked).",
+      "Transfer the chicken out, cool down and cut into small chunks. Cut fresh peppers into small pieces. Mix the cornstarch with water to make the water starch.",
+      "Heat up cooking oil in wok; add dried red pepper sections, Sichuan peppercorns whole seeds to stir-fry for around 1 minute. And then add garlic, ginger and white part of spring onion to stir-fry until aroma.",
+      "Add chicken chunks and pepper pieces in. Pour in cooking wine, vinegar, sugar and soy sauce. Mix well.",
+      "Add around 1 cup of chicken stock in wok and simmer the chicken for around 3 minutes.",
+      "Pour the water starch and several drops of sesame oil in. Mix well and garnish some chopped spring onion and roasted sesame seed before serving.",
+      "Serve hot please!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "A Chicken",
+        "unit": null,
+        "notes": "around 300 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Green Peppers",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Red Peppers",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "white part sliced and green part chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper",
+        "unit": null,
+        "notes": "dried, cut into small sections or more as needed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "If vegetables are added, reduce the amount please, optional or as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt or As Needed",
+        "unit": "tsp",
+        "notes": "adjust according to your taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Several Drops of Sesame Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Some Roasted Sesame Seeds",
+        "unit": null,
+        "notes": "for decoration",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9dd942dc0eac5461d19d8eb1fa854d731296842f9862fd2d8efcbfc8420f2a95",
+    "lineage_hash": "34817b94ab10637557708df6bef40eb1644a17ce75aeae100b3da707ef27748f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-hunan-chicken-donan-chicken/",
+    "fetchedAt": "2026-08-01T20:14:54.348Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-hunan-chicken-donan-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

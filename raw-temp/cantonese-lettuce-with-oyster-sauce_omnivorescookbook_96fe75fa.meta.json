@@ -1,0 +1,56 @@
+{
+  "url": "https://omnivorescookbook.com/lettuce-with-oyster-sauce/",
+  "slug": "cantonese-lettuce-with-oyster-sauce_omnivorescookbook_96fe75fa",
+  "title": "Cantonese Lettuce with Oyster Sauce (蚝油生菜)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T20:42:15.385Z",
+  "ldName": "Cantonese Lettuce with Oyster Sauce (蚝油生菜)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "3 heads (340 g / 12 oz) romaine lettuce ((*Footnote 1))",
+    "2 tablespoons vegetarian oyster sauce ((or regular oyster sauce))",
+    "2 teaspoons soy sauce",
+    "1 teaspoon sugar",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "5 cloves garlic (, minced)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the tough ends off the lettuce and halve the lettuce lengthwise. Rinse with cold tap water then drain thoroughly. Prepare a large bowl of water with ice for a water bath.",
+    "Bring a medium pot of water to a boil. Add a few drops of vegetable oil and a pinch of salt (*Footnote 2). Add the lettuce leaves and turn off the heat. Stir for about 10 seconds, until the lettuce just starts to soften. Immediately drain and transfer the lettuce to the water bath to stop cooking. Then drain thoroughly again, remove excess water with paper towels, then transfer to a large plate.",
+    "Mix the oyster sauce, soy sauce and sugar in a small bowl. Add 1 tablespoon of water and mix well.",
+    "Add oil to a small frying pan and heat over medium heat until hot. Add the garlic. Stir and cook for a few seconds to release the fragrance. Pour in the mixed sauce and turn to medium low heat. Simmer and stir for 1 minute, until the sauce is thick and bubbly. If the sauce becomes too dry, add a splash of water and mix well. (*Footnote 3)",
+    "Once the sauce is cooked, pour over the plated lettuce. Serve immediately as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "53 kcal",
+    "carbohydrateContent": "5.2 g",
+    "proteinContent": "0.8 g",
+    "fatContent": "3.6 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "209 mg",
+    "fiberContent": "0.7 g",
+    "sugarContent": "1.9 g"
+  },
+  "htmlIngredientLines": [
+    "3 heads (340 g / 12 oz) romaine lettuce (*Footnote 1)",
+    "2 tablespoons vegetarian oyster sauce (or regular oyster sauce)",
+    "2 teaspoons soy sauce",
+    "1 teaspoon sugar",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "5 cloves garlic , minced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

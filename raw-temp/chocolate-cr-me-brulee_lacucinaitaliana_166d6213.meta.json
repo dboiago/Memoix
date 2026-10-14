@@ -1,0 +1,38 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-creme-brulee",
+  "slug": "chocolate-cr-me-brulee_lacucinaitaliana_166d6213",
+  "title": "Chocolate Crème Brulee",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-02T19:00:22.778Z",
+  "ldName": "Chocolate Crème Brulee",
+  "ldTime": "PT130M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Cioccolato",
+  "ldIngredientsRaw": [
+    "2/3C. cream",
+    "1/2C. milk",
+    "1/4LB. dark chocolate",
+    "1/3C. white cane sugar",
+    "5 egg yolks",
+    "1 vanilla bean pod",
+    "Salt"
+  ],
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2/3 C. of cream",
+    "1/2 C. of milk",
+    "1/4 LB. of dark chocolate",
+    "1/3 C. of white cane sugar",
+    "5  of egg yolks",
+    "1 vanilla bean pod",
+    "Salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

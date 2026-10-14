@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cold-Brew Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake to chill. Strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Concentrate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72925600e2c0540256faeb3f499c9d577149a87e5b44117dab465623ae163601",
+    "lineage_hash": "a6b29a81eb851d2f6a6334bb64dbceab845bb2449808e87c7960f965439c2175"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-brew-martini/",
+    "fetchedAt": "2026-08-03T19:35:46.993Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-brew-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chilled Kiwi & Tomato Soup with Popcorn",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender add Kiwi pieces, tomato juice, bell pepper pieces, cucumber pieces, cumin powder, salt, lemon juice and blend it well.",
+      "Sieve the mixture and remove in a bowl.",
+      "Garnish the soup with olive oil, chopped plum and chopped mint leaves.",
+      "Apply salt and crushed black pepper on kiwi piece and garnish with this.",
+      "Decorate with lemon wedge and popcorn."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kiwi",
+        "unit": "C",
+        "notes": "cubes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Peppers",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Chopped Plum",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Pieces",
+        "unit": null,
+        "notes": "chopped, as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crushed Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e53424b90bc5fc934ccc1db99b621cb84f119c61c89fed821a45240e7ebdb428",
+    "lineage_hash": "ed2c956e5b9a2c70a4a495d5f45df06a30f22a1c94c134282442017a04fcab47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chilled-kiwi-tomato-soup-with-popcorn-2/",
+    "fetchedAt": "2026-08-02T06:46:41.216Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chilled-kiwi-tomato-soup-with-popcorn-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

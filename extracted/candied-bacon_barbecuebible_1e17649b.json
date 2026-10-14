@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Candied Bacon",
+    "time": "15 min to 25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for indirect grilling and preheat to medium (350 degrees).",
+      "Spread a rimmed baking sheet with foil (this facilitates cleanup). Lightly oil a wire rack using a paper towel and place it over the baking sheet.",
+      "Brush each bacon slice on both sides with maple syrup.",
+      "Spread out the brown sugar in a baking dish. Dip each slice of syrup-coated bacon in the sugar, pressing it into the sugar. Invert to coat the other side. Arrange the bacon slices on the wire rack, leaving 1/4 inch between each.",
+      "Indirect grill the bacon until browned and crisp and the sugar is caramelized, 15 to 25 minutes, depending on the thickness of the bacon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pure Maple Syrup",
+        "unit": "C",
+        "notes": "slightly warmed",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick (1/8 to 1/4 Inch) Slices Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2378496fa49c58a6faeb42d05afcec2291640199771fb709aefd6370fb32e674",
+    "lineage_hash": "acadc42b0ce9484527a476dce77a6b334556efdb5319ecae7c8aa05ab6ddda37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/maple-candied-bacon/",
+    "fetchedAt": "2026-08-03T06:24:29.727Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/maple-candied-bacon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

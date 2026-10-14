@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/chinese-chicken-herbal-soup.html",
+  "slug": "chinese-chicken-herbal-soup_dailycookingquest_f8e6974e",
+  "title": "Chinese Chicken Herbal Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:44:01.558Z",
+  "ldName": "Chinese Chicken Herbal Soup",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Chinese traditional herbal soup",
+    "A guide to Chinese dried herbs",
+    "authentic Chinese herbal soup",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 small free-range chicken or Cornish hen, whole or cut into 4-8 pieces",
+    "8 (~ 15 gram) dried red dates/jujube fruit (Chinese: hong zao)",
+    "2 tablespoon (~10 gram) goji berries (Chinese: gou qi)",
+    "3 slices (~ 5 gram) angelica root (Chinese: dang gui)",
+    "1 slice (~ 5 gram) astragalus root (Chinese: huang qi)",
+    "10 pieces (~ 15 gram) codonopsis root (Chinese: dang shen)",
+    "8 slices (~ 10 gram) Sichuan lovage rhizome (Chinese: chuan xiong)",
+    "1/2 tablespoon (~ 5 gram) American (yellow) ginseng",
+    "1/4 tablespoon (~ 3 gram) Korean (red/panax) ginseng",
+    "2 teaspoon salt",
+    "1 liter water"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse and drain all the dried herbs to remove dust and dirt.",
+    "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 hour or until chicken is tender and fully cooked. Remove from heat and serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 small free-range chicken or Cornish hen, whole or cut into 4-8 pieces",
+    "8 (~ 15 gram) dried red dates/jujube fruit (Chinese: hong zao)",
+    "2 tablespoon (~10 gram) goji berries (Chinese: gou qi)",
+    "3 slices (~ 5 gram) angelica root (Chinese: dang gui)",
+    "1 slice (~ 5 gram) astragalus root (Chinese: huang qi)",
+    "10 pieces (~ 15 gram) codonopsis root (Chinese: dang shen)",
+    "8 slices (~ 10 gram) Sichuan lovage rhizome (Chinese: chuan xiong)",
+    "1/2 tablespoon (~ 5 gram) American (yellow) ginseng",
+    "1/4 tablespoon (~ 3 gram) Korean (red/panax) ginseng",
+    "2 teaspoon salt",
+    "1 liter water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Chicken Lollypops",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the mixing bowl add chicken wings, ginger garlic paste, garlic powder, salt, pepper, corn flour and red chili powder; mix well. Marinate for 2-3 hours.",
+      "Heat oil in kadhai and deep fry marinated wings until golden brown and crisp.",
+      "Remove and serve hot with szechuan sauce.",
+      "For sauce heat oil in sauce pan and saute ginger, garlic and celery until turn light brown in color.",
+      "Add kashmiri red chili paste and saute for 3-4 minutes. Adjust seasoning.",
+      "Now add tomato ketchup and saute until it starts leaving oil from the edges.",
+      "when sauce is ready then keep aside."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "12-14",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to deep fry",
+        "amount": "0",
+        "section": "For chicken wings",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Szechuan Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8596162ecc10df3464e078476e19580a51c550eef59ab567a16e065b8ae7ec4a",
+    "lineage_hash": "23ba0e0556c31a0911223d6a50cd71d3c8698470e872df066d4436e3762016ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-lollypops/",
+    "fetchedAt": "2026-08-02T14:18:13.690Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-lollypops/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dragon's Breath Cocktail",
+    "time": "20 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Brandiesnifter",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Load the smoker with sawdust and fire it up following the manufacturer’s instructions.",
+      "Hold a brandy snifter upside down. Insert the smoker tube into the glass and fill it with smoke until you can’t see through the glass. Tightly cover the glass with a coaster to hold in the smoke and turn it upright.",
+      "Place the ice cubes in a shaker. Add the bourbon, St-Germain, Cointreau, and simple syrup and stir rapidly for about 20 seconds.",
+      "Uncover the snifter and immediately strain the cocktail into it. Serve at once, with the smoke still spilling from the glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": "1 cup; for even more flavor, use smoked ice cubes",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "4 tablespoons, use your favorite",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St-germain",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "tsp",
+        "notes": "or other orange-flavored liqueur",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "tsp",
+        "notes": "alt: smoked simple syrup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2fd1d01853a9d61bd2ff4c0262b139373d3bb233d5f519eb4e248cc05a1cf1f4",
+    "lineage_hash": "a72178b385ebb1a97e8bbb944030438bb6c4c7eabae23f610d644264143a7270"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/dragons-breath-cocktail/",
+    "fetchedAt": "2026-08-03T07:18:23.178Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/dragons-breath-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

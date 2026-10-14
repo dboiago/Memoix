@@ -1,0 +1,72 @@
+{
+  "url": "https://thewoksoflife.com/chinese-meat-pie/",
+  "slug": "chinese-meat-pie_thewoksoflife_d1425c13",
+  "title": "Chinese Meat Pie, 千层肉饼",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T18:47:13.979Z",
+  "ldName": "Chinese Meat Pie",
+  "ldTime": "PT110M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "chinese meat pie",
+  "ldIngredientsRaw": [
+    "3 cups all-purpose flour",
+    "½ cup boiling water",
+    "½ cup room temperature water",
+    "1 pound ground pork",
+    "1 tablespoon light soy sauce",
+    "1 tablespoon dark soy sauce",
+    "1 tablespoon Shaoxing wine",
+    "1 teaspoon sugar",
+    "¼ teaspoon salt",
+    "1 pinch five spice powder ((optional))",
+    "3 tablespoons neutral oil ((plus more for cooking))",
+    "2 cups finely chopped scallions ((white and green parts))"
+  ],
+  "ldInstructionsRaw": [
+    "Add the flour to a large mixing bowl, and level it off so it’s flat. Slowly add ½ cup boiling water to half the flour on one side of the bowl, mixing it in with a pair of chopsticks or a stiff rubber spatula. On the other side of the bowl, mix the other half of the flour with ½ cup of room temperature water.",
+    "Knead the two mixtures together by hand for a few minutes, until you have one rough dough ball. If the dough is still stiff, add 1-2 tablespoons of warm water and knead until the dough reaches the desired texture. If dough is sticking to your hands, simply scrape them clean with a rubber spatula, then flour your hands to knead any pieces back into the dough. Cover with an overturned plate and rest at room temperature for 1 hour while you make the filling.",
+    "In a separate bowl, mix the ground pork with light soy sauce, dark soy sauce, Shaoxing wine, sugar, salt, and five spice powder, if using. Next, stir in the oil until well-combined. Lastly, mix in the chopped scallions. Set aside.",
+    "Transfer your rested dough to a clean, lightly floured surface. Knead a few times to smooth it out, and cut the dough in half. Cover one half and set aside. Roll the other half into a long sheet, about 8x24 inches (20x61cm).",
+    "Spread half the filling evenly over the dough, keeping a ½-inch (1cm) border of dough around it. Gently pick up one end of the dough and fold it onto itself by about 4 inches, repeating until you’ve folded the meat pie closed. Pinch the seam and ends closed so the meat pie is completely sealed.",
+    "Over medium heat, brush a nonstick pan oil. Place the meat pie in the pan seam-side down. Use a spatula to gently press the top of the pie to make it a little thinner. Cover, and cook for 8 minutes. Flip and cook the other side for another 8 minutes, until the pie is golden brown and slightly puffed in the center. Flip the meat pie again and cook each side for another 2 minutes to crisp them up and ensure the filling is cooked through.",
+    "Transfer the meat pie to a cutting board, and cut into halves or thirds to serve. Repeat with the remaining dough and filling to make a second meat pie."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "498 kcal",
+    "carbohydrateContent": "51 g",
+    "proteinContent": "21 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "483 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "16 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 cups all-purpose flour",
+    "▢ ½ cup boiling water",
+    "▢ ½ cup room temperature water",
+    "▢ 1 pound ground pork",
+    "▢ 1 tablespoon light soy sauce",
+    "▢ 1 tablespoon dark soy sauce",
+    "▢ 1 tablespoon Shaoxing wine",
+    "▢ 1 teaspoon sugar",
+    "▢ ¼ teaspoon salt",
+    "▢ 1 pinch five spice powder (optional)",
+    "▢ 3 tablespoons neutral oil (plus more for cooking)",
+    "▢ 2 cups finely chopped scallions (white and green parts)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

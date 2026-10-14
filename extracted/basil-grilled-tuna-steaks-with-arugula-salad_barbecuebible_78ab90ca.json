@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Basil-Grilled Tuna Steaks with Arugula Salad",
+    "time": "1 hr 30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim any skin or dark or bloody spots off the tuna. Rinse the tuna under cold running water and blot dry with paper towels. Arrange the steaks in a nonreactive baking dish.",
+      "Combine the basil, garlic, lemon zest, lemon juice, vinegar, oil, salt, and pepper in a food processor or blender and puree until smooth. Pour this mixture over the tuna and let marinate in the refrigerator, covered, for 30 minutes to 2 hours, turning the tuna steaks several times.",
+      "Set up the grill for direct grilling and preheat to high. If using a gas grill, place the wood chips, if desired, in the smoker box or in a smoker pouch and preheat until you see smoke. When ready to cook, brush and oil the grill grate. If using a charcoal grill, toss the wood chips, if desired, on the coals. Drain the tuna steaks and arrange on the grill. Grill until cooked to taste, 2 to 3 minutes per side for rare, 4 to 6 minutes per side for medium, rotating the steaks 45 degrees after 2 minutes to create grill marks. The steaks should be nicely browned on the outside. Test for doneness using the poke test: A rare steak will be soft, a medium-rare steak will be gently yielding, and a medium steak will be firm. Transfer the steaks to plates or a platter and let rest for 3 minutes, then serve with the salad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tuna Steaks",
+        "unit": null,
+        "notes": "3/4 inch to 1 inch thick; 6 to 8 ounces each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "fresh, washed and stemmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "cut in half",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lemon (3 to 4 Tablespoons)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arugula and Yellow Tomato Salad",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5033a32876a2ccc4cf213bff5bbc515a5b43c1f027ee9abee8edf97374cc222a",
+    "lineage_hash": "486bd084479fe060302338ed5c1ac0a5162b898fb94dff425004ee8d2f277a5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/basil-grilled-tuna-steaks-arugula-salad/",
+    "fetchedAt": "2026-08-03T04:48:02.441Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/basil-grilled-tuna-steaks-arugula-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

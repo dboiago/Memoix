@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Cod and Potato Stew",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "627",
+      "carbohydrateContent": "39.73",
+      "fatContent": "16.77",
+      "proteinContent": "76.49"
+    },
+    "directions": [
+      "Heat the olive oil in a heavy pan and when hot but not smoking, add the diced onion and leek and sauté over a medium heat for about 5 minutes.",
+      "Add the rosemary and the chopped desalinated salt cod and sauté for another 5 minutes.",
+      "Add the potato wedges and cover with 1/2 cup shrimp stock and two cups of water (or enough water to cover the potatoes and cod).",
+      "Bring to a slow boil and then lower to a simmer. Cook until the potatoes are tender, about 20 minutes.",
+      "Adjust seasoning with salt and pepper and serve piping hot. Watch out for small bones when eating. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Diced",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt Cod Desalinated and Chopped",
+        "unit": "lb",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Potatoes Peeled and Cut in Wedges",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Shrimp Stock",
+        "unit": "C",
+        "notes": "alt: store bought",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Possibly More If Needed",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6b621480d074507b84cf625c2423b8102b294d3201b4f070b7b699f36ac2f0a",
+    "lineage_hash": "206a936d26123b004e98786a5e56f2c2d299428e8abc87b2813a5250427c316a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/cod-and-potato-stew/",
+    "fetchedAt": "2026-08-02T11:40:34.516Z"
+  },
+  "rawSource": "https://spanishsabores.com/cod-and-potato-stew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

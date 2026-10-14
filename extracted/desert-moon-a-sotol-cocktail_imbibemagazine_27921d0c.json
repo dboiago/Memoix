@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Desert Moon",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tajin",
+    "garnish": [
+      "Lime Wheel"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the glass with the Tajin rim, fill with ice, and set aside. Shake all of the ingredients with ice and strain into the prepared glass. Garnish with the lime wheel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sotol",
+        "unit": "oz",
+        "notes": "Ginger's uses Los Magos",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20af7ebc4233f802981f984aa7261e81f365995069f910b162711fbe28bb88d4",
+    "lineage_hash": "f4b007ea8687eb48d6a7edfe94e4f1fbb32764d5dc93d12c00bcd29c7c8b2fe3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/desert-moon-a-sotol-cocktail/",
+    "fetchedAt": "2026-08-04T00:04:25.370Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/desert-moon-a-sotol-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

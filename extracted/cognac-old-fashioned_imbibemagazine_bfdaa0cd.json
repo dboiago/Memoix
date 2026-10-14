@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Cognac Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Citrus Peels"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a rocks glass by coating with a small amount of absinthe. Combine the remaining ingredients in a mixing glass and briefly stir to chill without adding much dilution. Strain over a large ice cube in the prepped glass, then twist the citrus peels over the drink and use as a garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": "Lay uses Dudognon 5-Year Selection",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud’s Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "724b4363e455a620e686bd06391f7c2c226a169c25e1b210bd6247731e81eaf7",
+    "lineage_hash": "caa3ab843543a5bb7bcb197802b9ee34450da113ed8bd910958bdef1cdf646c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cognac-old-fashioned/",
+    "fetchedAt": "2026-08-03T20:15:34.135Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cognac-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

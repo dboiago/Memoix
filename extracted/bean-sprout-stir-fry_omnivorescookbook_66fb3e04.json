@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Bean Sprout Stir Fry",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "114",
+      "carbohydrateContent": "7.2",
+      "fatContent": "8.5",
+      "proteinContent": "5.3"
+    },
+    "directions": [
+      "Clean the bean sprouts of their stringy roots and any residual beans. Rinse with cold water thoroughly and squeeze out any excess water, then set them aside to let them dry. If the bean sprouts are still very wet at the time you’re about to cook, gently pat them dry with paper towels.",
+      "Combine all the sauce ingredients in a bowl and set it aside.",
+      "Heat the oil over medium-high heat until hot. Add the garlic. Fry until the garlic begins to brown.",
+      "Add the green onions. Stir a few times to release the fragrance.",
+      "Add the bean sprouts and bring the heat up to high. Cook, tossing occasionally, for 1 minute.",
+      "Add the sauce and continue to cook until the bean sprouts are cooked through but still crunchy, another 2-3 minutes. Taste the bean sprouts and adjust taste by sprinkle more salt, if needed.",
+      "Transfer everything to a big plate. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bean Sprouts",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cde0663b2fcfc99e5e97b8e057c861591b374326d09697cb23132bf135c07e20",
+    "lineage_hash": "b8360c04954df30fe160b9c1836b8161b2c9ad42592769bfacf6ca35eb252295"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bean-sprout-stir-fry/",
+    "fetchedAt": "2026-08-02T07:41:24.973Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bean-sprout-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Curried Squash Tartlet with Apple and Chicory Salad",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the pastry. Sift the flour and salt into a large mixing bowl, then add the butter. Rub the butter into the flour with your fingertips until you have pea-sized crumbs. Alternatively you can do this in a food processor – just add the flour, salt and butter into the food processor and blitz until you create a breadcrumb-like texture",
+      "Add the two egg yolks and water to the mixing bowl (or food processor) and mix quickly to incorporate all the liquid into the pastry. Add a little more water if the dough is still a bit dry",
+      "Gently bring the pastry dough together, then divide into four equal-sized balls. Flatten the balls into discs, wrap in cling film and rest in the fridge for 20 minutes",
+      "Dress the chopped butternut squash with olive oil and a pinch of salt then and roast in the oven until soft (around 20 minutes)",
+      "Remove the pastry discs from the fridge and roll them out on a floured work surface into circles around 3mm thick (the thickness of a pound coin)",
+      "Dust 4 6cm tart cases with flour, then carefully lay the rolled-out pastry discs into the tart cases (the easiest way is to roll each one up on a rolling pin, then gently roll them into the cases). Press the pastry into the corners of each tart case, ensuring the pastry is tightly packed against the sides. Trim off any overhang and put the lined tart cases back in the fridge to chill",
+      "Whilst the tart cases are resting, remove the squash from the oven and add to a blender/food processor (keep the oven on). Sweat the onion and garlic in a frying pan with a little oil until soft and translucent, then add the curry powder and cook for a minute or two. Add the onion and garlic mixture to the squash, along with the egg yolks and water and blend until you have a smooth purée. Pass the purée through a fine sieve, then add the créme fraiche. Check for seasoning and reserve the filling for later",
+      "Take the tart cases out of the fridge and line the insides with baking paper, then fill with baking beans or dry rice. Bake the tart cases in the oven for 15–20 minutes until the pastry is golden all over and cooked through. Remove from the oven, remove the baking beans and baking paper and rest for a few minutes. Turn the oven down to 160ºC/gas mark 3",
+      "Pour the squash filling into the tart cases and bake in the oven for 12 minutes, until the filling has set. Remove the tarts from the oven and allow them to cool a little bit whilst you make the salad",
+      "For the salad, cut the lemon in half and squeeze one half into a bowl of cold water. Slice the apples and chicory and keep them in lemon water – this will crisp them up and stop the apple from discolouring. Squeeze the other half of the lemon into another bowl, and whisk with the olive oil to make a simple dressing. Add a small pinch of salt, dry off the apple and chicory and toss together with the dressing",
+      "Serve a squash tart on each plate with some of the salad and finish each tart with a fried sage leaf"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cut into small dice and chilled",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "g",
+        "notes": "or other seasonal squash, peeled and chopped into 3cm chunks",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraiche",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chicory",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Sage Leaves",
+        "unit": null,
+        "notes": "fried in butter until crispy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e4ba54efc0417832f6c79dfe16fce23a6ccc08aa95e4465e82d1d90cccbecd24",
+    "lineage_hash": "05894739ffda8a21aedc0d74b739d642bd542b5b51dc5d71088adf71bc8075c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-squash-tartlet-recipe",
+    "fetchedAt": "2026-08-03T06:07:44.199Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-squash-tartlet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

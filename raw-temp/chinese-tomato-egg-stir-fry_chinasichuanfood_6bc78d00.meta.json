@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-tomato-and-egg-stir-fry/",
+  "slug": "chinese-tomato-egg-stir-fry_chinasichuanfood_6bc78d00",
+  "title": "Chinese Tomato Egg Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T02:05:49.172Z",
+  "ldName": "Chinese Tomato Egg Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese cuisine",
+  "ldCategory": "Main Course",
+  "ldKeywords": "egg, stir fry, tomato",
+  "ldIngredientsRaw": [
+    "2  eggs",
+    "2  middle size tomatoes ( , cut into small wedges)",
+    "small pinch of salt and pepper ( , for egg liquid)",
+    "3 tbsp.  oil",
+    "1/8 tsp. sugar",
+    "1/4 tsp. salt ( , or to taste)",
+    "1 tbsp. light soy sauce",
+    "1  scallion ( , cut into inch pieces)"
+  ],
+  "ldInstructionsRaw": [
+    "In a small bowl, crack and add a small pinch of salt and pepper. Whisk until there is a small layer of fine bubbles and the mixture becomes slightly white.",
+    "Cut tomato in halves and remove the core and then further cut into small wedges.",
+    "Heat up oil in wok until really hot, stir egg mixture in. Wait for seconds until the egg liquid firms. Turn off the fire immediately and then break the egg into small pieces. Transfer the egg out and leave the oil in.",
+    "Add tomato wedges in, fry until juicy. Return egg pieces, add salt, sugar and light soy sauce. allion. Do a quick stir fry to combine everything well. Serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "354 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "8 g",
+    "fatContent": "33 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "223 mg",
+    "sodiumContent": "1537 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 eggs",
+    "2 middle size tomatoes  , cut into small wedges",
+    "small pinch of salt and pepper  , for egg liquid",
+    "3 tbsp.  oil",
+    "1/8 tsp. sugar",
+    "1/4 tsp. salt  , or to taste",
+    "1 tbsp. light soy sauce",
+    "1 scallion  , cut into inch pieces"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

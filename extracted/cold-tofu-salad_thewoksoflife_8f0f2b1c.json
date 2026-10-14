@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Cold Tofu Salad",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by blanching your cut carrot and green pepper in some simmering water for one minute. Remove the veggies from the pot and place them into a bowl of ice water to preserve color and crunch.",
+      "In a serving bowl, add the raw tofu noodles with your veggies. Toss in the sesame oil, salt, and white pepper. Mix it together well and garnish with toasted black or white sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Package Tofu “noodles”",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "sliced into thin matchsticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Hot Green Pepper",
+        "unit": null,
+        "notes": "sliced into long, thin strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d6b10038f02ad8b631670d956ca723a5b72a1ff127ace7fa0dd4128d75bd6b4",
+    "lineage_hash": "92f2520911dc7743a3c4218eeee2ecf7ea5416e4814426fba7fb1d7ccf275002"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/cold-tofu-salad/",
+    "fetchedAt": "2026-08-02T05:02:37.263Z"
+  },
+  "rawSource": "https://thewoksoflife.com/cold-tofu-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

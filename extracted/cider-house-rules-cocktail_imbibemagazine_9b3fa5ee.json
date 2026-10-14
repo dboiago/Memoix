@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Cider House Rules Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Fennel Frond"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, muddle the fennel fronds. Add the apple cider, honey syrup, lime juice, tequila, and ice and shake vigorously. Rim the glass with cinnamon sugar and fill with ice, then strain into the glass. Garnish.",
+      "Cinnamon SugarCombine 3 Tbsp. of ground cinnamon with 1 Tbsp. of orange zest and 1/4 cup of coconut sugar in a food processor and mix until powdery. Combine the mixture with another 1/4 cup of coconut sugar and store in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Several Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb0a7e21ec0e10116618804c613790f477df63e933086064c536ad21c58ed9bd",
+    "lineage_hash": "3d325d8472a1e09899110894fc6905fb2d387cb1e0ce55a983faf95a518abdd8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cider-house-rules-cocktail/",
+    "fetchedAt": "2026-08-04T01:09:16.713Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cider-house-rules-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

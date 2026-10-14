@@ -1,0 +1,53 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-vegan-coconut-potatoes/",
+  "slug": "creamy-vegan-coconut-potatoes_itdoesnttastelikechicken_31702418",
+  "title": "Creamy Vegan Coconut Potatoes",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T19:45:12.348Z",
+  "ldName": "Creamy Vegan Coconut Potatoes",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT65M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "coconut, creamy, easy, potatoes, scalloped",
+  "ldIngredientsRaw": [
+    "400ml can full-fat coconut milk ( (1 3/4 cups))",
+    "1/4 cup all-purpose flour ((gluten-free all-purpose flour if preferred))",
+    "4 cloves garlic, (minced)",
+    "1 tablespoon fresh thyme leaves",
+    "3/4 teaspoon salt",
+    "1/8 teaspoon black pepper",
+    "1/8 teaspoon nutmeg",
+    "1.5 lbs yellow baby potatoes ((about 5 cups))"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat your oven to 400F (220C).",
+    "In a 1.5qt casserole dish (or larger), whisk together the coconut milk, flour, garlic, thyme, salt, pepper, and nutmeg. Add the potatoes and give it a stir to coat. Cover with foil and bake for 50 to 65 minutes until the potatoes are fork tender. Serve hot.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "111 kcal",
+    "carbohydrateContent": "24 g",
+    "proteinContent": "3 g",
+    "sodiumContent": "298 mg",
+    "fiberContent": "2 g",
+    "servingSize": "1 serving (recipe makes 6 servings)"
+  },
+  "htmlIngredientLines": [
+    "▢ 400ml can full-fat coconut milk,  (1 ¾ cups)",
+    "▢ ¼ cup all-purpose flour, (gluten-free all-purpose flour if preferred)",
+    "▢ 4 cloves garlic,, minced",
+    "▢ 1 tablespoon fresh thyme leaves",
+    "▢ ¾ teaspoon salt",
+    "▢ ⅛ teaspoon black pepper",
+    "▢ ⅛ teaspoon nutmeg",
+    "▢ 1.5 lbs yellow baby potatoes, (about 5 cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

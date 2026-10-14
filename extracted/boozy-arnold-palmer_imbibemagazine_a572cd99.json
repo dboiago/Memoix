@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Boozy Arnold Palmer",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients together in a shaker with ice, then strain over crushed ice. Garnish.\nHibiscus Syrup: Add 12½ grams of dried hibiscus leaves to 2 cups of 1:1 simple syrup. Heat on medium-high for 20 minutes. Remove from heat and cool in ice bath. Strain, and store in fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Black Tea",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97a1378d7e4dd5e79ef5713efab769a6d9a920a19b5a81c91bbc7f3e8b241d13",
+    "lineage_hash": "159e47f2d2a037c8f34cb5dd7c6c5a2e732ad91f0b9a06562e714c24e4e63256"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-arnold-palmer/",
+    "fetchedAt": "2026-08-04T01:53:18.169Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-arnold-palmer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

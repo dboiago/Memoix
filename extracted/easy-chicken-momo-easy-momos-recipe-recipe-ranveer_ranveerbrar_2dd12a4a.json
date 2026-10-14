@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Chicken Momos (चिकन मोमो)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Knead the dough using whole wheat flour, refined flour, sugar, vinegar and salt. Dough has to be semi soft. Keep aside to rest for 30 minutes.",
+      "Meanwhile, to make the filling in a mixing bowl, add all the ingredients and mix well.",
+      "Once the dough has finished resting, lightly flour the work surface and roll out the dough into medium size thin disk. Stuff the filling into it, give it a desired shape and keep aside.",
+      "Steam the momos for 15 minutes in the steamer.",
+      "Remove and serve immediately with momo chutney.",
+      "For momo chutney, heat oil in pan, add tomatoes, Kashmiri red chillies, salt and water. Allow it to cook for 5-6 minutes.",
+      "Meanwhile, in another pan dry roast peanuts and coriander seeds for 2-3 minutes.",
+      "Into a blender add tomatoes along with its remaining water, prepared peanut mixture, garlic cloves and blend it into a smooth paste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "Momos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Minced",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Chicken Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "4-5",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "Momos Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "sabut",
+        "amount": "1",
+        "section": "Momos Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34492386b1e18a5a024cf976d5a7c780c3cf36541423164d20febff7e5d7a2fb",
+    "lineage_hash": "e3ce992e5f19710325c08ad1cc600e7b27db3a1d5f31beb388e7a31d5b595030"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-momo/",
+    "fetchedAt": "2026-08-02T13:38:31.895Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-momo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

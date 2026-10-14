@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Doogh: A Salty Mint Yogurt Soda",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the yogurt in a large bowl. Add the dried mint, rubbing it between your palms to release the flavor. Add the salt and pepper, and whisk in the seltzer until the mixture is frothy. If the dried mint leaves are large, put the doogh in a blender and blend for 1 minute to break them down a bit. Salt to taste. Fill glasses halfway with ice, pour in the doogh, and garnish with fresh mint."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seltzer",
+        "unit": "C",
+        "notes": "chilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "08f6a9e46c9d64131222bc41c38f3dfdb6d18d4bc781324bf32b8b963cec1f1f",
+    "lineage_hash": "f0ffc3f25c5c1018e0086e449ca28e61dc28b98bf0401227c86de89e195a32c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/doogh-yogurt-soda/",
+    "fetchedAt": "2026-08-04T00:23:41.151Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/doogh-yogurt-soda/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

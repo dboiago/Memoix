@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Baked Alaska Cake Roll",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "14",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "362",
+      "carbohydrateContent": "27",
+      "fatContent": "6",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "The chocolate cake should be completely cooled before you assemble the roll.",
+      "If you’re using homemade ice cream make the base the day before then churn the ice cream while the cake is cooling.",
+      "Scoop the ice cream straight from the machine onto the cooled cake, roll it and put it directly in the freezer.",
+      "If you’re using store bought ice cream or ice cream that is already frozen leave it at room temperature to soften before assembling the cake roll.",
+      "If you have a stand mixer you can use the paddle attachment on low speed to soften the ice cream.",
+      "The cake will probably ooze a bit as it’s rolled and while it’s starting to freeze.",
+      "After an hour in the freezer take the cake roll out and use your hands to quickly fix up the shape before wrapping it tightly in plastic wrap to freeze overnight.",
+      "Don’t worry if the roll doesn’t look perfect coming out of the freezer, all that meringue will hide any imperfections.",
+      "The Baked Alaska is best served it as soon as the meringue is toasted, but the leftovers can be refrozen for you to enjoy later.",
+      "I froze the leftovers after the initial taste testing. The meringue was a little worse for the wear after being re-frozen, but it still tasted good enough to eat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Homemade Strawberry Ice Cream",
+        "unit": null,
+        "notes": "or your favorite ice cream",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup",
+        "amount": "6",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "¾ cup, see note",
+        "amount": "3",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "melted",
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Meringue",
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Meringue",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Meringue",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d404497080c42b7163ed968589dd38ac6ee07b3ddf681925b2ab15b092c55d9d",
+    "lineage_hash": "6ae9a4c19b4bbfb220a8c2239b8f8bf83fa897d2099580efe8c8aace0bbca7c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/07/26/baked-alaska-cake-roll/",
+    "fetchedAt": "2026-08-01T19:29:50.158Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/07/26/baked-alaska-cake-roll/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

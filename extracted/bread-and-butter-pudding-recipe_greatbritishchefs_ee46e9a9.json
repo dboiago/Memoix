@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Bread And Butter Pudding",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Starting making your bread and butter pudding by removing the crusts and then buttering the bread",
+      "Place one layer of bread on the base of the tray and cover with a layer of sultanas",
+      "Place the rest of the bread on top of the sultanas",
+      "Mix the double cream, milk and sugar together in a pan.  Split the vanilla pod and scrape out the seeds into the mixture and bring to the boil. Place the eggs in a separate bowl and whisk the hot liquid into them",
+      "Pour the egg mixture over the bread and place the dish in a bain-marie and put in a moderate oven (180°C/ Gas Mark 4) for about half an hour until cooked.",
+      "Dust the bread and butter pudding with icing sugar and glaze until golden",
+      "Spread the bread and butter pudding thickly with apricot jam and serve with clotted cream and a compote of dried apricots"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clotted Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ad5fd0cc43f15e2fefa94ec68748f90c28e0ce15e9d07db3ebbc0d1c368ea7aa",
+    "lineage_hash": "da5d1706067d7144ebc8216510364b64a5e170f4c6c79ea159ac3f344d91cc35"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bread-and-butter-pudding-recipe",
+    "fetchedAt": "2026-08-03T20:13:26.599Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bread-and-butter-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

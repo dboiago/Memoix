@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Cream of Celery Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large soup pot, heat the oil and add onion. Cook until translucent, about 3 minutes. Add the leek and celery. Continue cooking about 5 minutes. Do not let veggies brown.",
+      "Add potatoes and chicken broth.",
+      "Bring to boil. Reduce heat to a simmer, cover, and simmer for about 20 to 25 minutes or until the veggies are tender.",
+      "Add cream and cream cheese. Stir until cheese has melted.",
+      "Use immersion blender to puree soup.",
+      "Season with nutmeg, salt, and pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "30 milliliters",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "cleaned well and sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery (about 8 Ribs) with Leaves",
+        "unit": "lb",
+        "notes": "16 ounces, finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "lb",
+        "notes": "16 ounces, cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "720 milliliters",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "240 milliliters, 5%, 10%, or 18%",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Philadelphia Whipped Cream Cheese with Chives",
+        "unit": "C",
+        "notes": "56 grams, or herbs",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": "salt, and pepper to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c829ff2ff5b1679537cab7750e4038b00786d78b77f3be9fb0b7f0dc29352fac",
+    "lineage_hash": "12a5f97deb44564119bf7615a880b7caf953e34bc2ced6ea7e91c367f4d44f24"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/cream-of-celery-soup-recipe.html",
+    "fetchedAt": "2026-09-25T21:12:42.180Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/cream-of-celery-soup-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

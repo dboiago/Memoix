@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Constantine's Cosmo",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake vigorously. Double strain into a coupe, then garnish.",
+      "Raspberry-Lychee PuréeAdd 2 parts fresh raspberries, 1 part lychee, and 1 part granulated sugar to a blender. Blend until smooth. Will keep in the refrigerator for about a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": "Little Rascal uses Haku",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry-lychee Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21ba1eb37077af4a815f359a45261f6c861a001e512eb10d43de36169a9c9cd9",
+    "lineage_hash": "0c8f07eb21b52f930c9cbbe3e93dc2b69da8623c8d8c5dbd5a21642f0abf78f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/constantines-cosmo-riff/",
+    "fetchedAt": "2026-08-03T22:14:40.996Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/constantines-cosmo-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

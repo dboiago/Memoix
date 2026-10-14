@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Charred Pineapple Juice",
+    "time": "6 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for direct medium-high heat. Slice a fresh, ripe pineapple into 1/2” slices. Dust thoroughly with ground cinnamon on one side. When the grill is hot, oil your grate and add the pineapple, cinnamon side down. Dust the top side with additional cinnamon. Grill approximately three minutes per side, checking frequently to avoid burning. When finished, remove from the grill and let cool. Trim the exterior rind and the core, reserving the prettiest parts for your garnishes.",
+      "In an electrical blender, blend for 60 seconds until puréed and smooth. Strain the pineapple through a mesh strainer into a bowl or large measuring cup – using a large spoon to stir, press, and scrape to push liquid through and leave behind any solids. Transfer the thick juice to an airtight jar and keep refrigerated. Will last about three days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pineapple Slices",
+        "unit": null,
+        "notes": "fresh, ½” thick",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2cf0092f1aa73c0338622fc5490c65adfa08e69b28eb42ab735f919c9161f432",
+    "lineage_hash": "2e007202f97eec0181e364f7397832d5d746f957ff54c83344fb95fd819a0f0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/charred-pineapple-juice/",
+    "fetchedAt": "2026-08-03T06:57:51.003Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/charred-pineapple-juice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

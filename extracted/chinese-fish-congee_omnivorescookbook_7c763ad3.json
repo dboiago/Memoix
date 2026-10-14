@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Chinese Fish Congee (生滚鱼片粥)",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "197",
+      "carbohydrateContent": "23.6",
+      "fatContent": "3.2",
+      "proteinContent": "17.4"
+    },
+    "directions": [
+      "Marinate the fish",
+      "Add the rice, broth and ginger to an Instant Pot. Cook for 15 minutes.",
+      "Turn on the saute function and cook the fish",
+      "Finish up with green onion and sesame oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Fish (sea Bass, Tilapia Etc)",
+        "unit": "oz",
+        "notes": "225 g, thinly sliced",
+        "amount": "8",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Uncooked Short Grain White Rice",
+        "unit": "C",
+        "notes": "120 ml, or medium grain",
+        "amount": "½",
+        "section": "Congee",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "*Footnote 1",
+        "amount": "4",
+        "section": "Congee",
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Congee",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": "Congee",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "Congee",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Congee",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2649517293e99723709475853ff0565564288a208aaecf37ac3826bfdbd983eb",
+    "lineage_hash": "b982a43da656a05db690345ab4330a515b35e59da2617f156f5860947f662da1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-fish-congee/",
+    "fetchedAt": "2026-08-02T02:00:22.244Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-fish-congee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

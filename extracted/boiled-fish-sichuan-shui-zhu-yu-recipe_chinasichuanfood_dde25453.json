@@ -1,0 +1,222 @@
+{
+  "recipe": {
+    "name": "Boiled Fish (Shui Zhu Yu)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "604",
+      "carbohydrateContent": "20",
+      "fatContent": "34",
+      "proteinContent": "56"
+    },
+    "directions": [
+      "Prepare fish |Cut the fillet into thin slices and then marinate with all marinating sauce. Set aside for 30 minutes or even longer.  Then add cornstarch and mix well before making the dish.",
+      "Fry the pepper and Sichuan peppercorn|Heat 12 to 20 dried chili peppers with slow fire for half minute and then add 1 tablespoon of Sichuan peppercorn in wok until slightly aromatic. Move out, cool down and then roughly chop.",
+      "Add oil in wok and fry the doubanjiang over slow fire until the oil turns red. Then place garlic, ginger and scallion in and fry until aromatic. Then add dou-chi, Sichuan peppercorn and toasted chili pepper (half). Continue cooking for half minutes.",
+      "Load the wok with around 4 cups of water. Let the base simmer for 10 minutes over slow fire.",
+      "During this period, take another pot and blanch bean sprouts for 1 minutes and then place in the bottom of serving bowl to support fish slices. Then place the fish slices in and cook for 3 minutes. Transfer the fish slices to serving bowl.",
+      "Add soup base to serving bowl, recommend using a filter to remove the doubanjiang flakes.",
+      "Add the remaining chili pepper flakes, Sichuan peppercorn, chopped garlic and chopped scallion on top. Pour around 2 tablespoons of hot oil on top.  Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fish Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "2",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Fo the Fried Sichuan Peppercorn",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Dou-chi",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Fried the Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "Soup Base",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Chili Peppers and Sichuan Peppercorn",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a660d8be4798f41bf8cb38c5c7a74e5ba551b991488d51c98e283dd5061da02",
+    "lineage_hash": "b5a9b8d31bd9a495c7a79cd23c6e8a957bdd80f770b7ac61e56d88df6f3e5ebb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/boiled-fish-sichuan/",
+    "fetchedAt": "2026-08-01T15:37:16.094Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/boiled-fish-sichuan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

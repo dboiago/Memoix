@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Bhindi Dahiwali",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "in a kadai add 2 tsp of oil and fry onions, ginger and garlic.",
+      "fry till they turn slightly golden in colour. allow to cool completely.",
+      "add required water and blend to smooth paste. keep aside.",
+      "in the same kadai, add a tsp of oil and fry chopped bhindis.",
+      "fry till bhindi cook from all sides and changes colour to dark green.",
+      "remove and keep aside.",
+      "in the same kadai, add a tsp of oil along with mustard seeds, jeera, methi and hing.",
+      "once they splutter add curry leaves.",
+      "now add prepared onion puree and saute for a minute.",
+      "add spices like chilli powder, turmeric, coriander powder and salt to taste. fry the masala on low flame.",
+      "add some water.",
+      "then add 1 cup curd and stir on low flame.",
+      "immediately add fried bhindi and give a good stir.",
+      "remember to switch off the flame. close the lid and allow to cook for 5 minute.",
+      "garnish with few coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "For onion paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For onion paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": "For onion paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For onion paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "or as required to blend smooth",
+        "amount": "2",
+        "section": "For onion paste",
+        "isOptional": false
+      },
+      {
+        "name": "Bhindi",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10",
+        "section": "For fry bhindi / okra",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For fry bhindi / okra",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Chilli Powder",
+        "unit": "tsp",
+        "notes": "adjust according to your spice level",
+        "amount": "1-2",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "whisked",
+        "amount": "1",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or as required to adjust consistency",
+        "amount": "¼",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "handful",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Bhindi Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "36211674b09a0440c764b2b2bef69ffcfe49531b474c281d34aad018e0ae7a80",
+    "lineage_hash": "e602ad57a4d91d1bebf21e28f6ba78582e0a1eac3ac7906788fd64113602e059"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bhindi-dahiwali/",
+    "fetchedAt": "2026-08-02T06:44:09.371Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bhindi-dahiwali/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

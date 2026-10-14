@@ -1,0 +1,361 @@
+{
+  "recipe": {
+    "name": "Chur Chur Paratha with Matar",
+    "time": "35 min - 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl or parat, add refined flour, salt to taste, water as required, oil and knead it into semisoft dough.",
+      "Cover it with a damp cloth and leave it aside to rest for at least 30 minutes.",
+      "Take a large sized ball of dough, roll and flatten it.",
+      "Roll it into a thin sheet, grease it with oil or prepared garlic flavoured oil.",
+      "Fold it in pleats with the help of fingers. stretch and roll the pleated dough.",
+      "Rest the roll dough for 10 minutes.",
+      "Take the rolled ball, place it into the coating mixture and coat it evenly.",
+      "Roll the coated dough ball into a thin sheet and thoroughly apply the prepared garlic flavoured oil on the paratha.",
+      "Heat a tawa, add prepared garlic flavoured oil, place the rolled paratha and cook it on both sides until golden in color.",
+      "Grease with ghee and crush the naan to form layers.",
+      "In a pressure cooker, add mustard oil, once it's smoky hot, add cumin seeds, garlic cloves, dry kashmiri red chillies, soaked white peas and mix it well.",
+      "Add asafoetida, turmeric powder, degi red chili powder, coriander powder, water and give it a good mix.",
+      "Cover it with a lid and cook it for 3-4 whistles until cooked well.",
+      "Add salt to taste and give it a quick boil.",
+      "Finish it with prepared tadka, dry mango powder and give it a good mix.",
+      "Transfer it to a serving dish, garnish it with onion, lemon, green chillies, fresh coriander leaves, ginger and green & red chillies.",
+      "Serve hot with prepared laccha paratha and curd.",
+      "In a pan, add ghee, once it's hot, add cumin seeds, asafoetida, degi red chili powder and cook it for a minute.",
+      "Turn off the flames and keep it aside for further use.",
+      "In a pan, add garlic, ghee, oil and cook it for 5-6 minutes on low flames until garlic turns golden in colour.",
+      "Turn off the flames and keep it aside for further use.",
+      "In a tray, add semolina, poppy seeds, degi red chili powder, salt to taste and give it a good mix.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4-5",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "White Peas",
+        "unit": "C",
+        "notes": "soaked overnight",
+        "amount": "2",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Cooking Matara",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3-4",
+        "section": "For Garlic Flavoured Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Garlic Flavoured Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Garlic Flavoured Oil",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "for coating dough",
+        "amount": "1-2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Flavoured Oil",
+        "unit": "Tbsp",
+        "notes": "prepared",
+        "amount": "1-2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Lemon",
+        "unit": null,
+        "notes": "cut into quarters",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & finely chopped",
+        "amount": "4",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green & Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1dc0c59fcc8ab1b5d6fb60badb401104b758d12627a05e40cdecdab019276007",
+    "lineage_hash": "aeaddd5219f9067ef3a6e308fc8aadd6d2b8f9470720fcf4e4b5b5ad4ecfaf41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chur-chur-paratha-with-matar/",
+    "fetchedAt": "2026-08-02T19:27:07.392Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chur-chur-paratha-with-matar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

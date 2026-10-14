@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Aguadito de Pollo",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the chicken with salt and pepper. Heat the vegetable oil in a saucepan over medium heat, add the chicken pieces, and sear them. Transfer the chicken pieces to a plate and keep warm. In the same saucepan sauté onion and garlic until golden.",
+      "Process cilantro leaves and fresh aji amarillo with ¼ cup water in a blender until smooth; add to the onion mixture, along with the chicken stock, beer, if using, chicken, bell pepper, corn, and carrots. Bring to a boil, turn the heat to low, cover with a lid, and simmer for 30 minutes. If you are using chicken breasts, it´s better to add them along with the rice so they don´t overcook. Add rice and potatoes. If you have big green peas, add them now. If they are small add them five minutes before turning off the heat.",
+      "Put the lid on and simmer until the potatoes are tender and the rice is cooked. If the soup is too thick, add more stock. Taste for seasoning, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "or breasts",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aji Amarillo",
+        "unit": null,
+        "notes": "chopped, or 3 tablespoons paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Leaves",
+        "unit": "C",
+        "notes": "discard the stems",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Beer",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "cut in slices",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Potatoes",
+        "unit": "medium",
+        "notes": "peeled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98f0ae95b07d83d16d9d760e37ea718ec49d35e837a9a5aba45fa7f02d286f8f",
+    "lineage_hash": "b7d7630b376ddaed034eebd60d4fd1013733e99ec14e8f234de14559cb29b3d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/aguadito-de-pollo-chicken-and-cilantro-soup-to-warm-your-body/",
+    "fetchedAt": "2026-09-25T22:13:07.983Z"
+  },
+  "rawSource": "https://perudelights.com/aguadito-de-pollo-chicken-and-cilantro-soup-to-warm-your-body/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

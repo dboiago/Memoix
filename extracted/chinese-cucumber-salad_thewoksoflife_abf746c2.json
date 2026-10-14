@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Cucumber Salad",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "86",
+      "carbohydrateContent": "5",
+      "fatContent": "7",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "First prepare the garlic. When you’ve minced all of the garlic, set aside the equivalent of 1 clove.",
+      "Mix the oil and the rest of the garlic together, and set over medium-heat in a saucepan. Cook lightly for 2-3 minutes. Some foam will appear as the water in the garlic escapes. Do not let the garlic brown! This process takes about 2 minutes. Remove from the heat and let cool.",
+      "Chop the cucumbers into quarters lengthwise and then into ½-inch chunks. Transfer to a bowl. Add the garlic oil, salt, sugar, pinch of MSG if using, sesame oil, and rice vinegar. Finally, add the reserved minced raw garlic. Stir thoroughly to coat everything.",
+      "For the best results, let sit for at least 20 minutes in the refrigerator to let the flavors meld."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced very finely, almost like a paste",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Cucumbers",
+        "unit": null,
+        "notes": "or 8-10 Persian cucumbers; if you can't find seedless cucumbers like these, just de-seed regular cucumbers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: salt to taste",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "481ecdffe5f251dbe8f970f273f34bb79f32b74b4ae981011bfe633517dd55d1",
+    "lineage_hash": "9f918fb43b3ce5066d7fb4f6ff8e6fa4bb10aee29e5c9d7634ce754880e247e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-cucumber-salad/",
+    "fetchedAt": "2026-08-01T22:58:22.042Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

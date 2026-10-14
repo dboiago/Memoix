@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Cinnamon Doughnuts",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the blackberry jam as this will need time to cool and set. Place the blackberries, 300g of the sugar and the lemon juice in a pan and place over a medium heat",
+      "Cook for around 20 minutes until the temperature reaches 105°C, stirring occasionally to stop the jam sticking to the pan",
+      "Mix together the remaining 100g of sugar with the pectin and stir into the jam. Bring back up to 105°C then test the jam to see if it is ready – dollop a spoonful onto a cold plate and place in the fridge briefly. If it forms a skin it is ready, if not continue to cook for a few minutes more and test again",
+      "When ready, leave to cool before transfering the jam to a jar. Reserve in the fridge until needed, or store in sterilised jars if keeping for a longer period of time",
+      "To make the dough, first warm through the milk gently in a small pan, then mix together with the warm water. Crumble in the fresh yeast and whisk to combine",
+      "Place the flour, sugar and salt in the bowl of a food mixer fitted with a dough hook. While mixing on a slow speed, pour in the milk mixture then increase the speed and add the egg yolks, followed by the soft butter",
+      "Cover the dough and leave to prove for an hour until doubled in size",
+      "After this time, briefly knead the dough on a lightly floured surface and divide into 20 equal portions. Shape each piece by hand, rolling and folding the dough in on itself, to create a smooth ball. Place on trays lined with greaseproof paper, spaced well apart to allow room for expansion. Leave to prove for another 30 minutes",
+      "Meanwhile, mix together the ingredients for the spiced sugar in a large bowl and set aside",
+      "Preheat a deep fryer, or a deep pan of oil, to 160°C",
+      "Fry the doughnuts in batches until golden brown all over, for about 5 minutes in total, turning regularly to ensure they cook evenly. Scoop out with a slotted spoon and drain any excess oil on kitchen paper while they cool",
+      "Place the blackberry jam in a piping bag. Make a small hole with a sharp knife in the side of each doughnut, then insert the piping bag into the holes and fill with jam",
+      "Roll the filled doughnuts in the spiced sugar to coat completely before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "preferably organic, plus extra for dusting",
+        "amount": "420",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "preferably organic",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "warm",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "large and preferably organic, beaten together",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened and preferably organic",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": "preferably organic",
+        "amount": "625",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "12.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a1f4e0534d3bd99554b21c55d30824fe343e330344e2d29d2cca96cfab40e9e",
+    "lineage_hash": "db179f60d96730c3c36cfba73d552a7cf2e43201ca5fe765263934a59ec3aeac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cinnamon-doughnuts-recipe",
+    "fetchedAt": "2026-08-03T11:51:13.094Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cinnamon-doughnuts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

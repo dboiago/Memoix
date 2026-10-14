@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in an ice-filled mixing glass and stir to chill. Add more ice if needed, then twist an orange peel over the drink and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Luxardo Bitter Bianco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "276c691862f3dd45278adadccecd8cd7d0e837d2bfc8914e7d52b08aad0251e8",
+    "lineage_hash": "8fa511017c9305f9a0aa6cb9c45127568861b65729dca9f53bbcd8133b95bc4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-cocktail-smoother-than-a-horse-on-skates/",
+    "fetchedAt": "2026-08-03T17:57:51.037Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-cocktail-smoother-than-a-horse-on-skates/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

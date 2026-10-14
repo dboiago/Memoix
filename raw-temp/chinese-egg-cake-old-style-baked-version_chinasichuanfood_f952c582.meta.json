@@ -1,0 +1,53 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-egg-cake/",
+  "slug": "chinese-egg-cake-old-style-baked-version_chinasichuanfood_f952c582",
+  "title": "Chinese Egg Cake - Old Style Baked Version",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:37:35.774Z",
+  "ldName": "Chinese Egg Cake",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "24",
+    "24 Making 24 mini egg cakes"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "cake, egg",
+  "ldIngredientsRaw": [
+    "4  middle size eggs ( ,room temperature eggs)",
+    "120 g cake flour ( ,1 US cup (sifted flour))",
+    "80 g castor sugar ( ,around 6 tablespoons+2 teaspoon)",
+    "1 tbsp. oil ( ,neutral oil without strong flavor)",
+    "warm water if in super cold days  ( ,for speeding up the whipping process, not required in summer days.)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180°C around 350°F.",
+    "Prepare a larger container and add half full warm water, then place your mixing bowl on the warm water. Add eggs and castor sugar. Whip at medium speed until light and fluffy. And then use low speed to remove some large bubbles. This step is the key of success and may take 12- 15 minutes until the mixture reach the ribbon stage.",
+    "Shift flour in. Then use a spatula to combine well. And lastly add oil and well combined too.",
+    "Prepare a mini 12 paper lined muffin tin mold and pour the batter in.",
+    "Bake at the middle rack for 15 minutes until the surface is well colored."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "45 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "cholesterolContent": "27 mg",
+    "sodiumContent": "10 mg",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "4 middle size eggs  ,room temperature eggs",
+    "120 g cake flour  ,1 US cup (sifted flour)",
+    "80 g castor sugar  ,around 6 tablespoons+2 teaspoon",
+    "1 tbsp. oil  ,neutral oil without strong flavor",
+    "warm water if in super cold days   ,for speeding up the whipping process, not required in summer days."
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

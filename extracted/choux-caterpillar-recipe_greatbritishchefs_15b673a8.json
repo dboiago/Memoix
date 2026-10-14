@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Choux Caterpillar",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 190°C/gas mark 5. Line 2 baking sheets with parchment paper",
+      "In a heavy-bottomed saucepan, bring the milk, water, butter, sugar, salt and paprika to the boil",
+      "Once boiling, add all the flour and reduce to a medium heat, stir the mixture vigorously with a wooden spoon - the dough should come together very quickly",
+      "Keep stirring vigorously for 2-3 minutes longer to dry out the dough. After this time it should be very soft and smooth",
+      "Transfer the dough to a large bowl. Add the eggs one by one, beating after each egg has been added to mix into the dough",
+      "The dough will separate but do not worry; by the time you have beaten in the third egg it should have come back together and will be thick and shiny",
+      "Fit a large piping bag with a 2cm nozzle. Fill with the choux pastry and pipe the dough onto the baking trays to around the size of a 10p coin, leaving a 4cm gap between each",
+      "Bake for 7 minutes or until the balls are lightly golden. Turn the oven off, but leave the pastry in the oven for a further 8 minutes. The balls should be puffed up and golden brown. Remove and allow to cool",
+      "Preheat the oven to 200˚C/gas mark 6. Lay the mushrooms out on an oven tray, top side down",
+      "Drizzle with olive oil, sprinkle with the thyme, and season with salt and pepper. Roast in the oven for 20-25 minutes, or until golden and sizzling. Remove and allow to cool",
+      "For the avocado purée, de-stone the avocado and scoop the flesh into a blender, adding the lemon juice, yoghurt, salt and pepper",
+      "Blend until smooth, then place into a piping bag and store in the fridge until required",
+      "To assemble the caterpillars, use a small-serrated knife to cut the top off the cooked dough balls. Pipe the avocado purée into each ball and set aside",
+      "On each plate, lay out 5 mushrooms in a row and top with the avocado filled balls. Place half a cherry tomato on each ball",
+      "Use the yellow pepper strips to make antennas and the coriander sprigs for the eyes. Repeat until all caterpillars are made then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cut into 8 pieces",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "small",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "stalks removed",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fat Free Natural Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "halved",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Pepper",
+        "unit": null,
+        "notes": "small, cut into strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprigs",
+        "notes": "fresh, small",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1562ba91c3bc393ed77ceeb2fa8ed356997f78f5d327ff66d6e17ddd24eb64a7",
+    "lineage_hash": "e26fae492239c29dcf0473509a9fdce9b44e0617a3f9bae754781425a36d52b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/choux-caterpillar-recipe",
+    "fetchedAt": "2026-08-03T19:35:54.066Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/choux-caterpillar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

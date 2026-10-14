@@ -1,0 +1,39 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/drink-recipes/classic-southern-sweet-tea-recipe/",
+  "slug": "classic-southern-sweet-tea-recipe_amazingribs_144932cb",
+  "title": "Classic Southern Sweet Tea Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T02:15:05.415Z",
+  "ldName": "Southern Sweet Tea Recipe",
+  "ldTime": null,
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 gallon"
+  ],
+  "ldCuisine": "American, Southern",
+  "ldCategory": "Beverage",
+  "ldKeywords": "ice tea, iced tea, southern sweet tea, sweet tea, tea",
+  "ldIngredientsRaw": [
+    "1/2 gallon water",
+    "4  family size tea bags or 8 regular tea bags",
+    "1 cup granulated sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Heat. Pour the water in a 3 quart (2.8 L) or larger pot and boil.",
+    "Steep. Turn the heat off and add the teabags. Cover to steep the tea for 5-7 minutes. Steep it longer to make it stronger and more bitter. Squeezing the teabags makes it stronger and more bitter. Most folks will like it better if you don't steep it longer than 7 minutes and if you don't squeeze the tea bags.",
+    "Sweet. Add the sugar and stir until dissolved.",
+    "Chill. Refrigerate the tea. Some folks like to age it 12 hours or so, others like to serve it warm over ice. It can get skunky if you keep it more than a few days.",
+    "Serve. Serve over ice cubes with lemon wedges and/or mint leaves as garnish."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1/2 gallon water",
+    "4 family size tea bags or 8 regular tea bags",
+    "1 cup granulated sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

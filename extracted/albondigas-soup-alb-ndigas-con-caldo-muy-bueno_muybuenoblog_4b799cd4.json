@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Albondigas Soup (Albóndigas con Caldo)",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "354",
+      "carbohydrateContent": "30",
+      "fatContent": "18",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "In a large mixing bowl combine ground beef with garlic powder, salt, crushed peppercorns, 2 tablespoons of onions, masa harina, and 1/8 cup of rice. Mix all ingredients together and roll out about 30-40 1-inch meatballs.",
+      "Arrange three tomatoes on a baking sheet. Place your oven rack as close to the broiler as possible. Broil the tomatoes for about 20 minutes until softened, turning over after 10 minutes. If the skin has blackened remove it.",
+      "In a blender or food processor, puree the tomatoes until smooth. Set aside.",
+      "In a large pot boil water, chicken broth, and minced garlic. Lower heat to medium and carefully add meatballs to the liquid. Cook meatballs for about 10-15 minutes or until the meatballs float to the surface and lower heat to simmer.",
+      "In a medium skillet sauté the remaining onions and diced roma tomatoes in olive oil.",
+      "To the pot of broth add the sautéed onions, tomatoes, fresh tomato sauce, remaining rice, potatoes, carrots, celery, coriander, cilantro, and safflower.",
+      "Cook over medium heat for an additional 30 minutes. Ladle soup with about 5 albondigas per bowl. Garnish with cilantro sprigs, lime wedges, and serve with warn corn tortillas. If you would like your soup spicy add a spoonful of your favorite homemade salsa."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Masa Harina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "C",
+        "notes": "diced and divided",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long-grain Rice",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roma Tomatoes",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "roasted and blended",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Russet Potatoes",
+        "unit": "small",
+        "notes": "peeled and cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalks",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Coriander",
+        "unit": "tsp",
+        "notes": "crushed or ground",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Azafran",
+        "unit": "tsp",
+        "notes": "saffron",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a710b5374d5023085e78defe58c4d155ba784b2ba96c96a71ea7f3f6876a6033",
+    "lineage_hash": "cd832e29083a00f15eeea6017fe39ba839271cb079a280a43c090d5ef049cb39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/albondigas-the-ultimate-comfort-soup/",
+    "fetchedAt": "2026-08-02T03:48:41.266Z"
+  },
+  "rawSource": "https://muybuenoblog.com/albondigas-the-ultimate-comfort-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

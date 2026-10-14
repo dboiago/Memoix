@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Datemaki Japanese rolled omelette",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "732",
+      "carbohydrateContent": "78",
+      "fatContent": "25",
+      "proteinContent": "45"
+    },
+    "directions": [
+      "Cut the hanpen into little cubes and add it to the mixer.",
+      "Put all the ingredients into a blender or a food processor.",
+      "Mix all the ingredients together for about 30 seconds to 1 minute.",
+      "Leave the mixture to settle until the bubbles go down.",
+      "Pour the mixture into the baking tray.",
+      "Squish the hanpen over the package.",
+      "Empty the package of the hanpen into a large mixing bowl.",
+      "Add one egg at a time and whisk well each time adding the eggs.",
+      "Add all seasonings and mix well with the whisk.",
+      "Pour the mixture into the prepared baking tray.",
+      "Bake in the preheated oven for 20 minutes.",
+      "Remove the baking paper and score the omelette from the edge about 0.4\"-0.6\"(1-1.5cm) apart in order to roll it nicely without breaking.",
+      "Roll it into a cylinder shape with the rolling mat and secure it with a rubber band on each end to hold the shape.",
+      "Look from the side and place the egg roll closed side down, or leave it standing vertically. Let it cool slightly then wrap it with cling wrap and refrigerate the rolled omelette overnight, then remove from the sushi mat and slice into 0.8inch (2cm) thick and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hanpen Fish Cake",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Usukuchi Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f6b3d76e47dec042c2e79d221309119e2596d2213be0878b155dfffde4710d0",
+    "lineage_hash": "0dff252f4becfec0fd27f123d638428224276587fb2df1fd222c9fa4106f1998"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/datemaki/",
+    "fetchedAt": "2026-08-02T00:25:23.478Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/datemaki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Dark Toblerone® Yule Log",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Dark Toblerone® Yule Log recipe, organise the necessary ingredients for the dark chocolate mousse.",
+      "Beat the whipping cream with the stand mixer until you obtain a whipped cream.",
+      "Crack the whole eggs in a mixing bowl.",
+      "Beat with a whisk.",
+      "Add the icing sugar.",
+      "Blanch with a whisk.",
+      "Cut the dark chocolate Toblerone® into chunks and melt in the microwave by periods of 30 seconds to make sure the it does not burn. The temperature should not exceed 50 or 60°C.",
+      "Combine the melted Toblerone® with a rubber spatula.",
+      "Add the blanched eggs and sugar.",
+      "Combine well with a whisk...",
+      "... until homogeneous.",
+      "Add 1/4 of the whipped cream...",
+      "... and combine with a whisk.",
+      "Pour the chocolate preparation over the remaining whipped cream...",
+      "... and fold gently with a rubber spatula.",
+      "Finish by whisking the preparation 2 or 3 times to obtain a homogeneous consistency.",
+      "Pour the preparation in a piping bag. The use of a nozzle is not necessary.",
+      "Cut the tip of the piping bag with scissors.",
+      "Fill the bottom of the triangle mould with a thick lace of chocolate mousse.",
+      "With a small palette knife, create a volcano shape, so that the cream goes all the way up the rim. This will get rid of air bubbles.",
+      "Fill the cavity with chocolate mousse...",
+      "... and even the surface. Cover with cling film and store in the freezer overnight.",
+      "For the chocolate icing:  Organise all the necessary ingredients.",
+      "Melt the dark chocolate couverture in the microwave, in periods of 30 seconds.",
+      "Add the grape seed oil (or any other flavourless oil).",
+      "Mix using a rubber spatula. Add the chopped caramelised hazelnuts.",
+      "Remove the cake from the freezer. It should be completely frozen. Apply a thin layer of icing over the surface of the frozen cavity. Return to the freezer.",
+      "When thoroughly frozen, release the log gently from the silicone mould...",
+      "... and transfer onto a cooling rack.",
+      "Place the rack on top of a deep tray.",
+      "Pour the icing in one stroke over the log, from one end to the other. The icing should have a temperature that doesn't exceed 30/35°C.",
+      "When coming into contact with the frozen log, the icing will set within a few seconds.",
+      "Drizzle milk chocolate Crispearls over the log.",
+      "They will stick to the icing.",
+      "Gently detach the log from the rack with a cranked metallic spatula and let defrost slowly in the fridge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate Toblerone®",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "40cl Whipping Cream (35% Fat)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inaya™dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Seed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramelised Hazelnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate Crispearls",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ceb3e353a7b14789badacfd53c20e743de24d56901bcdf246d266314d1f6e1f1",
+    "lineage_hash": "7ea509f720b107979f8f617ef52c9faf82ad0e6004dde5b27fa7f78048a5de7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log-dark-chocolate-toblerone.html",
+    "fetchedAt": "2026-08-02T03:38:22.025Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-yule-log-dark-chocolate-toblerone.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chicken Seekh Kabab",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add minced chicken, garlic, ginger,Â  onion, chaat masala, garam masala, white pepper powder, fresh coriander leaves, and salt to taste and mix everything well.",
+      "Heat a tawa and drizzle some ghee on it. Wet your hands, take a little chicken mixture and spread it around a satay stick. Shape it properly and place the seekh kababs on the tawa.",
+      "Cook, turning from time to time, so that they cook evenly all around. Baste with ghee at regular intervals. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "36a485c8ba9eaafcc9cfbc84ec9cb6044f167a610eb6dc4a5881f4f6518269bd",
+    "lineage_hash": "034b2fe41ce318c76c3c6c0b726d99a9ca5654381385e3bdc266277bab0370b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-seekh-kabab/",
+    "fetchedAt": "2026-08-02T14:27:28.682Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-seekh-kabab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

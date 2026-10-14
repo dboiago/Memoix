@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Caramelized White Chocolate Cookies",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Caramelized White Chocolate Cookies recipe, organise all the necessary ingredients.",
+      "Chop the white chocolate pistoles with a knife.",
+      "Place the castor sugar in the stand mixer recipient.",
+      "Add the soft brown sugar...",
+      "... and the soft butter.",
+      "Mix the ingredients at low speed, using the flat beater.",
+      "Add the vanilla extract while whisking...",
+      "... the egg at room temperature...",
+      "... and the salt.",
+      "When homogeneous, add the chopped Zephyr caramel chocolate.",
+      "Add the flour and baking powder. Continue whisking...",
+      "... until homogeneous.",
+      "Place the cookie dough on a sheet of greaseproof paper...",
+      "... and roll into a sausage shape.",
+      "Use a scraper to create a regular roll...",
+      "... and flatten both ends of the roll.",
+      "Refrigerate the cookie dough roll for up to 48 hours. You can also store the dough in the freezer.",
+      "Take the dough out of the fridge and remove the greaseproof paper.",
+      "Cut the roll into slices to a width of about 1 cm.",
+      "The whole roll should make about twenty cookies.",
+      "Arrange the cookies in a staggered pattern on a baking sheet greased with oil spray, then wipe dry with paper towel.",
+      "Arrange a couple of Zephyr caramel pistoles over each cookie (optional).",
+      "Bake in a fan-assisted oven at 180°C (gas 4) for 12 to 15 minutes.",
+      "When cooked, remove from the oven and leave to cool at room temperature, then detach carefully with a spatula. These delicious cookies will keep for several days in an airtight container. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": "cassonade",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or a little vanilla flavouring",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zéphyr Caramel-flavoured White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21cbaf58b0570535bccccef2d32209b2ce4446d576a825bf521bf0ed965c1fab",
+    "lineage_hash": "f7802aa0e7bf7abf48e0d9f440413abc28e7eee0ace5d55b6adc32b59a1d1dd7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/caramel-white-chocolate-cookies.html",
+    "fetchedAt": "2026-08-02T06:18:36.840Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/caramel-white-chocolate-cookies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

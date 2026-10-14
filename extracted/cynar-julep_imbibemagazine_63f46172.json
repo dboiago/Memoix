@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Cynar Julep",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Julep",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a julep cup and muddle lightly, allowing the mint to steep. Fill the cup halfway with crushed ice, swizzle lightly, top with crushed ice, then garnish.",
+      "Raspberry SyrupMash the raspberries in a saucepan, add the sugar and water, then bring to a bare simmer but do not boil. After simmering for a few minutes, let the syrup sit and cool. Once it’s at room temperature, add one bunch of basil and muddle gently into the syrup. Let it steep for 10 minutes, or to taste, then strain in a bottle and refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "pt",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "granulated",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2991df94c7f70083581faf7df6b3ae66945c9e5bdb4b808e465f5f5d98eb3e73",
+    "lineage_hash": "5e76fa08b47e9c162d2f105d1e94e68bf41d3781b148f9abf87dfd67dea2b478"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cynar-julep/",
+    "fetchedAt": "2026-08-03T20:31:22.477Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cynar-julep/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

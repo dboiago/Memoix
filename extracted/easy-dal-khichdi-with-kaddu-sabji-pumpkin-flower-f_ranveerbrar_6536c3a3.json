@@ -1,0 +1,407 @@
+{
+  "recipe": {
+    "name": "Dal Khichdi with Kaddu Sabji",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add yellow moong dal, short grain rice and rinse it well.",
+      "Add water as required and keep it aside for 20-25 minutes.",
+      "In a handi, add mustard oil, once it's smoky hot, add dry red chillies, cumin seeds, onion seeds, fennel seeds, dry fenugreek seeds and let it splutter well.",
+      "Add pumpkin, salt to taste and cook it for a while until half cooked.",
+      "Add degi red chili powder, a pinch of asafoetida, turmeric powder, water and mix it well.",
+      "Add ginger, jaggery, tamarind paste and give it a good mix..",
+      "Cover it with a lid and let it cook for 20-25 minutes on medium flames.",
+      "Finish it with a little water, green chillies and mix it gently.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with prepared dal khichdi, pumpkin fritters and roasted papad.",
+      "In a handi, add ghee, once it's hot, add cumin seeds, soaked dal rice and saute it for a minute.",
+      "Add water, turmeric powder, a pinch of asafoetida, a pinch of degi red chili powder, water, salt to taste, ghee and give it a good.",
+      "Cover it with the lid and let it cook for 15-20 minutes on medium flames until cooked well.",
+      "Finish it with salt to taste, ghee and give it a gentle mix.",
+      "Transfer it to a serving dish, garnish it with ghee, roasted papad and green chillies.",
+      "Serve hot with prepared pumpkin sabji.",
+      "In a bowl, add gram flour, ginger garlic paste, turmeric powder, rice flour, water and make a smooth batter.",
+      "Keep it aside for further use.",
+      "Take the pumpkin flowers, dip into the batter and drop in hot oil.",
+      "Fry them for 4-5 minutes until it's golden brown and crispy",
+      "Transfer it to a tray or absorbent paper and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yellow Moong Dal",
+        "unit": "C",
+        "notes": "washed",
+        "amount": "2",
+        "section": "For Soaking Dal Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Short Grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Soaking Dal Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Soaking Dal Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "8-9",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "small",
+        "notes": "cut into large pieces",
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped, crushed",
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "¼",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & roughly torn",
+        "amount": "1",
+        "section": "For Pumpkin Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Dal Chawal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal Khichdi",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Pumpkin Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Papad",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Other ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Papad",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e38a1b4bac16ee1c56373c0bf45a3fda5f6d479d6c9ff7fa3920c5ab80fe9d7f",
+    "lineage_hash": "a89151e42038c92ee462a0fc87595e49e2bc9e597243d30e954d646a743aefd1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dal-khichdi-with-kaddu-sabji/",
+    "fetchedAt": "2026-08-02T17:43:59.937Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dal-khichdi-with-kaddu-sabji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

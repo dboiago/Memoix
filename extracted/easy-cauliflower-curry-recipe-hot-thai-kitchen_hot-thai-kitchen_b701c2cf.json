@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cauliflower Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large skillet, add just enough oil to coat the bottom. Turn the heat on to medium high, and before the oil gets too hot, add cauliflower and sprinkle on some fish sauce or salt, toss briefly to mix. Arrange the cauliflower so that the flat side is touching the pan. Let sear for a few minutes until browned. You can just sear them on one side if you wanna be quick, or you can flip the florets and sear them on another side as well. We're not looking for them to be fully cooked at this point, the goal is to develop browning and flavour; we will finish cooking them in the wok.",
+      "In a wok, add half of the coconut milk and bring to a boil over medium high heat. Stir in curry paste and paprika (if using) then reduce the coconut milk until thick and the coconut oil starts separating from the paste and the paste is sizzling. Add palm sugar and stir to mostly dissolve it. Add the remaining coconut milk and stir to mix.",
+      "Add onions, stir briefly to break up the layers, then add the cauliflower and keep tossing until the florets are done to your liking. Timing will depend on how cooked the cauliflower is from searing, and how soft/firm you like them. If the sauce dries up before the cauliflower cooks, add a splash of water to buy it some more time.",
+      "Once cauliflower is done, add tomatoes and toss for 30 seconds to heat through. Turn off the heat, then taste add more fish sauce or soy sauce as needed. Toss in cilantro to finish. Plate and top with some fried shallots if you wish, and serve with jasmine rice! Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower Florets. Don't Cut Them Too Big",
+        "unit": "g",
+        "notes": "and cut them so that there is a flat side which will allow for nice browning.",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce. to Make This Vegan You Can Substitute Soy Sauce",
+        "unit": "tsp",
+        "notes": "alt: a pinch of salt",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "see this post for how to choose good coconut milk.",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Curry Paste",
+        "unit": "Tbsp",
+        "notes": "store bought is fine. I use Mae Ploy brand for this recipe, but if you want to make it from scratch, here's my yellow curry paste recipe.",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": "this is completely optional. I only add it to brighten the colour up a bit.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "or light brown sugar",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro for Garnish",
+        "unit": null,
+        "notes": "chopped, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Shallots",
+        "unit": null,
+        "notes": "this is an optional garnish for some extra crunchy yumminess. You can buy fried shallots from Asian grocery stores, but I recommend refreshing them in a 300°F oven for 5 minutes to make them crispier. If you want to make it from scratch, here is my DIY fried shallots recipe.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0de46c6d800b8250e413c77592726d15646de69970819132b58cc0ab3a67b9d",
+    "lineage_hash": "21f1e889922379e75ad26b512503988c5bc463212e6808a9a7a2ec466b527728"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/cauliflower-curry-stir-fry/",
+    "fetchedAt": "2026-08-01T18:43:35.311Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/cauliflower-curry-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

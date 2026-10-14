@@ -1,0 +1,41 @@
+{
+  "url": "https://dailycookingquest.com/carrot-tomato-and-starfruit-juice.html",
+  "slug": "carrot-tomato-and-starfruit-juice_dailycookingquest_285fe254",
+  "title": "Carrot, Tomato, and Starfruit Juice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:27:11.667Z",
+  "ldName": "Carrot, Tomato, and Starfruit Juice",
+  "ldTime": "PT0H10M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "100 gram carrot, peeled",
+    "2 tomatoes (about 200 gram)",
+    "1 starfruit (about 150 gram), peeled",
+    "2 tablespoon sugar (optional)",
+    "200 ml cold drinking water"
+  ],
+  "ldInstructionsRaw": [
+    "Put everything in a blender and process until smooth.",
+    "Strain into serving glasses and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "100 gram carrot, peeled",
+    "2 tomatoes (about 200 gram)",
+    "1 starfruit (about 150 gram), peeled",
+    "2 tablespoon sugar (optional)",
+    "200 ml cold drinking water"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

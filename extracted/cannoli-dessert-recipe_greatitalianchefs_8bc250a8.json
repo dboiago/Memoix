@@ -1,0 +1,222 @@
+{
+  "recipe": {
+    "name": "Cannoli Dessert",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the lemon marmalade. Boil the lemons for about 90 minutes or until the skins are very soft",
+      "Plunge the lemons into ice water then finely chop. Return to a pan with 500ml water and the sugar. Bring to the boil and allow the liquid to reduce for half an hour",
+      "Remove the seeds from the marmalade and store in sterilised jars",
+      "To make the poached pears, grind the spices using a pestle and mortar or a spice grinder",
+      "Make a thick syrup with the wine, sugar, 1 tsp of the ground spices and 250ml water by heating in a pan until the sugar has dissolved",
+      "Place the pear quarters in a vacuum bag, add the syrup and seal. Place in a steam oven up to 70% and steam at 70°C for about 20 minutes. If you don't have a vac pac machine you can simmer the pears in the syrup for 8–10 minutes or until soft but not mushy",
+      "To make the cardamom cream, bring the sugar and 150ml of water to 110°C to make a sugar syrup. Soak the gelatine in cold water. Once soft, squeeze out all the excess liquid",
+      "Whisk the egg yolks with the ground cardamom and add the syrup little by little. Add the gelatine and whisk until the mixture becomes cold",
+      "Whip the cream until its just about to form stiff peaks. Fold into the egg mixture with the mascapone, transfer to a piping bag and refrigerate for at least an hour",
+      "For the cannoli, mix all the ingredients in a food processor until you obtain a smooth and consistent mixture. Spread onto a silicone baking mat and bake for 20 minutes",
+      "Remove from the oven and working quickly, cut into 8cm sheets and roll into cylinders around cannoli moulds. Allow to cool",
+      "To plate, pipe a lime of lemon marmalade on each plate. Place a slice of warm pear in the middle, fill the cannoli with the cardamom cream and place one on top of each pear. Garnish with mint leaves, edible flowers and a light dusting of icing sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pears",
+        "unit": null,
+        "notes": "peeled, cored and quartered lengthways",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": "Cannonau",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "small",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c5be782d75b065cb1edcf2ad8094e90fa22d39f5ae135ce84cefb6bd819a600a",
+    "lineage_hash": "03eb470244e7334f90fbbc3b2b8cc646e6377b624c5865786539f9d43f7fa05a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cannoli-dessert-recipe",
+    "fetchedAt": "2026-08-02T00:56:22.312Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cannoli-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

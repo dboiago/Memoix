@@ -1,0 +1,47 @@
+{
+  "url": "https://japan.recipetineats.com/bento-box-shigureni-bento/",
+  "slug": "bento-box-shigureni-bento-beef-and-burdock_japan_32b2cac9",
+  "title": "Bento Box - Shigureni Bento (Beef and Burdock)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T18:41:25.443Z",
+  "ldName": "Bento Box - Shigureni Bento (Beef and Burdock)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main",
+  "ldKeywords": "beef mince, bento, bento box, Burdock, Shigureni",
+  "ldIngredientsRaw": [
+    "1 cup cooked rice ((note 1))",
+    "⅓ quantity of  Braised Beef and Burdock with Ginger (Shigureni) (recipe (note 2))",
+    "2 pieces Simmered Pumpkin ((note 3))",
+    "5 slices Senmai-zuke Daikon ((note 4))",
+    "2  spears asparagus (, end trimmed (note 5))",
+    "2  tomato wedges ((or mini tomatoes))",
+    "A bento box of your choice"
+  ],
+  "ldInstructionsRaw": [
+    "While the rice is still hot or warm, place it in the largest compartment of the bento box, allowing for the Shigureni to be placed on top. Let it cool.",
+    "Boil water in a pot, add a couple of pinches of salt. Blanch asparagus spears for a minute or so. Drain and rinse under running water to cool them down quickly, then cut them to about 4-5cm long pieces (note 6).",
+    "Place the Shigureni on the rice so that the rice is completely covered. If there is sauce left in the container of the Shigureni, pour the sauce over it.",
+    "Put Simmered Pumpkin pieces in one of the empty compartments. If your bento box does not have compartments, you may want to use a paper cupcake liner to put it in. Since the pumpkin does not come with sauce, having a partition is not so critical.",
+    "In the other empty compartment, place tomato wedges and asparagus.",
+    "Put the Senmai-zuke Daikon in a foil or paper cup and place the cup next to the asparagus."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcup\n\t\t\t\t\t\t\t\t\t\tcooked rice\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "⅓ quantity of\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBraised Beef and Burdock with Ginger (Shigureni)\n\t\t\t\t\t\t\t\t\t\trecipe (note 2)",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpieces\n\t\t\t\t\t\t\t\t\t\tSimmered Pumpkin\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "5\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tslices\n\t\t\t\t\t\t\t\t\t\tSenmai-zuke Daikon\n\t\t\t\t\t\t\t\t\t\t(note 4)",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tspears asparagus\n\t\t\t\t\t\t\t\t\t\t, end trimmed (note 5)",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttomato wedges\n\t\t\t\t\t\t\t\t\t\t(or mini tomatoes)",
+    "A bento box of your choice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

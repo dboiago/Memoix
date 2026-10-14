@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Broken Corazon Club",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the rhum, pineapple, lime, maraschino and grenadine in a shaker with ice. Shake until chilled. Strain into a Collins glass with fresh ice. Float the Fernet on top and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Overproof Rhum Agricole Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fernet",
+        "unit": "oz",
+        "notes": "High Noon uses Fernet Vallet",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9d7313d1732bb5bc6fa27a1682c757d27fa0afe85113ea44bf1171d736cd7a7",
+    "lineage_hash": "643ba425abba247eda0f5b59ca5643e55dbb39290f5c0509349c72263b57cca2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/broken-corazon-club/",
+    "fetchedAt": "2026-08-03T19:18:34.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/broken-corazon-club/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

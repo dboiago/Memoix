@@ -1,0 +1,56 @@
+{
+  "recipe": {
+    "name": "Dry Brining Steak",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sprinkle plain old salt the meat a few hours before cooking.",
+      "Refrigerate for one to two hours.",
+      "Do not rinse off excess salt. It will all be sucked into the meat.",
+      "Leave the meat uncovered on a rack in a pan.",
+      "Put it on a wire rack in a pan in the fridge so air will surround the meat.",
+      "After as little as an hour or two, you're ready to cook."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": "per pound of trimmed meat",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": "per pound of meat",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "174f2bc0c2522432151bcae82e654dab8842e54acef75662e2ec2b8d06afa38c",
+    "lineage_hash": "42ddeaca635eeda6d9137e3ed593ef85a8f553781fc92a07f4722a3310edcfd0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/salting-brining-curing-and-injecting/dry-brining/",
+    "fetchedAt": "2026-08-02T08:45:20.163Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/salting-brining-curing-and-injecting/dry-brining/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

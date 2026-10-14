@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Vegan Creamsicles",
+    "time": "5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "152",
+      "carbohydrateContent": "16",
+      "fatContent": "10",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Toss all the ingredients in a blender and blend for a few seconds to combine. Alternatively, you could just whisk the ingredients together in a bowl, but I like the blender because it makes it easy to the pour mixture straight into the popsicle molds.",
+      "Pour the mixture into the popsicle molds and insert the popsicle sticker. Freeze for about 4 hours or until ready to serve. Run warm water over the mold to help release a popsicle when you are ready to enjoy your frosty treat."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c860d4a6cd3a76b2f651267b5ec88cad5062bba19ea631d4f9374828c237ad49",
+    "lineage_hash": "c2f56e283ec695d142a66f121ad83be9c8cf752943d8c70d682e601410911f25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamsicles/",
+    "fetchedAt": "2026-08-02T05:35:12.643Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/5-minute-vegan-creamsicles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

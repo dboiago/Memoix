@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Sorbet Cups",
+    "time": "4 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Dark Chocolate Sorbet Cups recipe, organise the necessary ingredients for the sorbet.",
+      "For the syrup:  Pour the water in a saucepan.",
+      "In a separate recipient, combine the castor sugar and the ice cream stabilizer.",
+      "Pour the mix in the water...",
+      "... and stir until fully dissolved.",
+      "Add the invert sugar.",
+      "Combine with a whisk...",
+      "... and heat the preparation up to 90°C. This temperature is essential for the stabilising agents to come into effect. The syrup should become cloudy and smoother. I recommend using a laser thermometer.",
+      "For the sorbet:  Place the dark chocolate in the blender recipient, together with the cocoa mass...",
+      "... then pour the hot syrup at 90°C.",
+      "Let the chocolate melt without stirring for a few seconds...",
+      "... and process finely for about 1 minute.",
+      "You can also use a hand blender for this operation.",
+      "Transfer the preparation into a bowl.",
+      "Cover with cling film, in direct contact with the surface of the preparation. Leave to cool for about 4 hours, or until the temperature is down to 20°C.",
+      "This operation is essential (called 'ageing'). Do not refrigerate the preparation.",
+      "Pour the preparation into the ice cream maker and churn for 30 to 40 minutes until the desired consistency is reached.",
+      "Remove the recipient from the ice cream maker...",
+      "... then transfer the sorbet into a recipient.",
+      "Add the caramelised almonds, which have been chopped beforehand.",
+      "Make sure to proceed quickly, to prevent the sorbet from melting. Reserve in the freezer.",
+      "For the cream filling:  Beat the whipping cream until you obtain a whipped cream...",
+      "... then add to the Cara Crakine, which has been softened beforehand using a rubber spatula.",
+      "Scoop the caramel cream into a piping bag fitted with a plain nozzle (15mm diameter).",
+      "Pipe some caramel filling at the bottom of each chocolate cup...",
+      "... and freeze for about 20 to 30 minutes.",
+      "Scoop the chocolate sorbet into a piping bag fitted with a fluted nozzle (17mm diameter).",
+      "Fill the cups with chocolate sorbet, piping it into a large swirl. Do this operation as quickly as you can.",
+      "Break the chocolate straws in half and insert a couple into each cup.",
+      "Finish with a few whole caramelised almonds on the surface.\nDon't hesitate to customise this dessert following your inspiration.",
+      "Reserve in the freezer until ready to serve...",
+      "... or arrange on a tiered cake display and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Invert Sugar",
+        "unit": "g",
+        "notes": "alt: trimoline, staboline",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tanzanie Dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Caraque Cocoa Mass",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabilizer",
+        "unit": "g",
+        "notes": "Stab 2000",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramelized Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cara Crakine Caramel Filling",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipped Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Cups",
+        "unit": null,
+        "notes": null,
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Straws (white/dark and All Dark)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c91753bc1d3490919f3e4d3c4f181fdd770987759ca3b5467fafa958b54f2ce",
+    "lineage_hash": "49060d9406be113694cb50ee8a0ca74f17e6fc83127db4de0cf9ac855e4e4e57"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-sorbet-cups.html",
+    "fetchedAt": "2026-08-02T14:54:12.131Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-sorbet-cups.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

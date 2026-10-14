@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chinese Congee with Pork and Century Egg",
+    "time": "1 hr 55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "245",
+      "carbohydrateContent": "19",
+      "fatContent": "13",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Wash the rice; soak with clean water for at least 1 hour. Transfer out and drain.",
+      "Marinate rice with salt and oil. Rest for around 15 minutes. And then marinate minced pork with cornstarch and pinch of salt.",
+      "In a pot, bring water or stock to a boil and then add rice. After 10 minutes, turn down the fire to simmer for around 40 minutes or until the rice is almost broken. Stir several times to prevent rice stick to the bottom.",
+      "Place pork and century egg in. Continue simmer for around 5 to 8 minutes over medium fire.",
+      "Sprinkle salt and mix well.",
+      "Transfer to serving bowl, top with spring onion, coriander plus preserved Sichuan mustard (optional) before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rice",
+        "unit": "C",
+        "notes": "I am using jasmine white rice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "alt: stock",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinades for rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinades for rice",
+        "isOptional": false
+      },
+      {
+        "name": "Century Egg",
+        "unit": null,
+        "notes": "shelled and diced",
+        "amount": "1",
+        "section": "Side ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Side ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Side ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Side ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81bcaf0393b5e51adb46a13487daa14569c3e78ea5ca31cf8259070ede414013",
+    "lineage_hash": "023251a195ea2995bdc8e24cd81264873d50d481e2e9be461ab46bd3b240caea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-congee-with-pork-and-century-egg/",
+    "fetchedAt": "2026-08-01T23:06:28.870Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-congee-with-pork-and-century-egg/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

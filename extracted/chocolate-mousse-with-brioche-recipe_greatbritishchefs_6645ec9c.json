@@ -1,0 +1,289 @@
+{
+  "recipe": {
+    "name": "Chocolate mousse with brioche",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the brioche, put the eggs, yeast, sugar, flour and water into the bowl of a mixer and mix until a dough forms. Add the butter and mix for 6 minutes on a high speed",
+      "Drain and chop the stem ginger, then add to the bowl along with the salt, cinnamon, cranberries, figs and sultanas. Mix for 2 more minutes",
+      "Transfer the dough to a floured bowl. Cover with a damp cloth and leave in a warm place to prove for 30 minutes",
+      "Whilst the dough is proving, make the sorbet. Bring the milk, glucose and sugar to the boil. Whisk well until the sugar is dissolved, then remove from the heat and cool. Strain the yogurt then whisk in to the mix",
+      "Churn in an ice-cream maker until frozen then tip into a freezer box. Freeze until needed",
+      "To make the mousse, soak the gelatine in cold water. Mix the egg yolks and caster sugar together in a bowl",
+      "Bring 300ml of the double cream together with the milk and orange zest to a boil. Pour the mixture onto the egg yolks and sugar then return to the pan and cook over a low heat until the mix thickens a little",
+      "Remove from the heat. Finely chop the chocolate and stir in, along with the gelatine and cocoa. Place the pan over a bowl of ice to cool. Meanwhile, semi-whip the remaining 160ml double cream",
+      "When the chocolate custard mix is at room temperature, fold in the cream until fully incorporated. Transfer to a bowl and chill for 2 hours before serving",
+      "When the brioche dough has proved, knead it to knock it back. It will be ready when a dent made into the dough doesn’t pop out. Shape into a cylinder, then transfer to a loaf tin, cover with the damp cloth and leave until doubled in size",
+      "Heat the oven to 240°C/Gas mark 9. Remove the cloth and flour the top of the brioche. Cook for 15 minutes until golden brown and the underneath sounds hollow when tapped. Cool on a wire rack. When cool, cut into 1.5cm deep slices",
+      "To make the cocoa syrup, simmer all ingredients together for 2 minutes. Strain and cool",
+      "Cut the fresh figs into quarters, dust with icing sugar and lightly caramelise the sugar under a blow torch",
+      "Swirl the cocoa syrup across each plate, and place one piece of brioche on top. Quenelle a scoop each of the mousse and sorbet, and place either side of the brioche",
+      "Lastly, arrange two slices of the caramelised figs between the quenelles and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "460",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "warm",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stem Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "dried, chopped",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a66fa8d6fd0d19102457b59eb882e059e36b5ed950ac9ca3c8b1dc393c5847f",
+    "lineage_hash": "28725557fc21de6b18d380e9ad6420bc472bb1c98dce2200af94513340f8a7eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-with-brioche-recipe",
+    "fetchedAt": "2026-08-03T21:17:30.398Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-with-brioche-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

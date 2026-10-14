@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Crème Brûlée Eggnog",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a small baking tray with parchment paper and set aside.",
+      "Stir together 1/3 cup (70 g) of the granulated sugar, the water and the lemon juice in a small saucepan. Bring to a full boil over high heat, without stirring, and boil until the sugar turns a light amber, about 90 seconds. Remove from the heat.",
+      "Immediately pour the sugar onto the prepared tray, swirling the tray to get the sugar into as thin a layer as possible before it sets. Let the sugar mixture cool on a wire rack until set, about 30 minutes.",
+      "Break the sugar into pieces. Crush them in a resealable bag with a rolling pin or pulse them in a food processor until coarsely ground. Set aside.",
+      "In a small saucepan, bring the milk and the nutmeg to just below a simmer over medium heat. Whisk the egg yolks and the remaining sugar together in a small bowl.",
+      "Add a ladleful of the hot milk to the egg mixture and whisk well. Whisking continuously, slowly add up to half of the hot milk to temper the egg mixture.",
+      "Return the tempered egg mixture to the saucepan of milk and reduce the heat to medium-low. Stir with a wooden spoon until the custard is well combined and coats the back of the spoon, about 3 minutes.",
+      "Strain the custard through a fine-mesh sieve into a clean bowl and let it cool to room temperature. Cover and chill completely.",
+      "When ready to serve, whisk the rum, brandy and/or whiskey into the chilled eggnog custard. Whip the cream with electric beaters or a stand mixer fitted with the whip attachment at high speed until it holds a soft peak when the beaters are lifted. Whisk the whipped cream into the eggnog.",
+      "To serve, lightly whisk the reserved egg white with a fork and place it in a small dish. Place the crushed caramelized sugar in a second small saucer. Dip the rim of each glass into the egg white and then into the caramelized sugar. Carefully ladle the chilled eggnog into each glass (so that you don’t disturb the sparkling rim) and top with a sprinkle of the remaining caramelized sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "2%",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "reserve 1 egg white for rimming the glass",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "brandy, whiskey or a combination",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cabd44994e3576f94ac220f4f503c52d283e93ca4232945cfadd29b1c492c17f",
+    "lineage_hash": "43a30c7468965b0a48e30207c03336931b0f5572b19c3dc4d85175811a9cb6d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/creme-brulee-eggnog/",
+    "fetchedAt": "2026-08-01T20:30:37.827Z"
+  },
+  "rawSource": "https://annaolson.ca/project/creme-brulee-eggnog/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

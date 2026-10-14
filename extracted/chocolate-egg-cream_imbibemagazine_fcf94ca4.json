@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Chocolate Egg Cream",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tall",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the syrup and milk (it’s essential that the milk is very cold) to a tall glass. Add seltzer until the level is one inch below the top of the glass. Stir in a back-and-forth motion (not a circular swirl) to combine. Let the mixture settle for a moment, then top with additional seltzer, producing a thick, white head of foam. Serve with a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fox’s U-bet Chocolate Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seltzer",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3555f1eb9d4c7f5990366f673a67eed96ec842dbfc58598185ddfb39fdc1d78",
+    "lineage_hash": "fbaeddba7778550440503c6957f95f92a2330d13f7ff7b3b46dde1332f6219c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-egg-cream/",
+    "fetchedAt": "2026-08-03T22:54:42.212Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-egg-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

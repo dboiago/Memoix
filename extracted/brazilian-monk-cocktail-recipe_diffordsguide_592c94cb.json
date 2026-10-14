@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Brazilian Monk",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Hurricane",
+    "garnish": [
+      "Crumbled Cadbury's Flake Bar"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "BLEND ingredients with 12oz scoop of crushed ice",
+      "Pour into glass and serve with straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnut Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Crème De Cacao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67b58ece713575cebff433d1a49a8b94fb23097f7eb97f1d5565315763b82859",
+    "lineage_hash": "c9073031edd3f688b04aa3e93f04c28597a963d278cce3cbee4a144406e6c3e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/320/brazilian-monk",
+    "fetchedAt": "2026-08-02T01:37:39.902Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/320/brazilian-monk",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/2-ingredient-vegan-chicken-washed-flour-seitan/",
+  "slug": "2-ingredient-vegan-chicken_itdoesnttastelikechicken_caa94ce4",
+  "title": "2 Ingredient Vegan Chicken!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T03:48:29.588Z",
+  "ldName": "2 Ingredient Vegan Chicken!",
+  "ldTime": "PT220M",
+  "ldPrepTime": "PT40M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4",
+    "4 (makes about 2 cups shredded vegan chicken)"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "10 ingredients or less, oil-free, seitan, vegan, vegan chicken, washed flour seitan",
+  "ldIngredientsRaw": [
+    "4 cups all-purpose flour",
+    "1 3/4 cups water",
+    "6 cups  vegetable broth",
+    "2 tablespoons soy sauce",
+    "2 teaspoons onion powder",
+    "1 teaspoon garlic powder"
+  ],
+  "ldInstructionsRaw": [
+    "Make the dough ball (10 minutes active work)",
+    "Soak the dough (1 - 2 hours hands-off)",
+    "Wash the dough (15 - 20 minutes active work)",
+    "Braid and knot the dough (5 minutes active work)",
+    "Simmer the dough (1 hour hands-off)",
+    "Cool the dough (1 hour - overnight hands-off)",
+    "Shred the vegan chicken (5 minutes active work)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving (about 1/2 cup) Recipe makes 4 servings",
+    "calories": "222 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "45 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "17 mg",
+    "fiberContent": "1 g"
+  },
+  "htmlIngredientLines": [
+    "[vegan chicken]",
+    "▢ 4 cups all-purpose flour",
+    "▢ 1 ¾ cups water",
+    "[vegetable broth simmer (feel free to season as you prefer)]",
+    "▢ 6 cups  vegetable broth",
+    "▢ 2 tablespoons soy sauce",
+    "▢ 2 teaspoons onion powder",
+    "▢ 1 teaspoon garlic powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2018/10/26/almond-petit-fours/",
+  "slug": "classic-almond-petit-fours-with-video_baking-sense_e90fbce7",
+  "title": "Classic Almond Petit Fours - With Video",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T22:42:27.836Z",
+  "ldName": "Almond Petit Fours",
+  "ldTime": "PT87M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "36",
+    "36 cakes"
+  ],
+  "ldCuisine": "American, French",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "fancy, tea time",
+  "ldIngredientsRaw": [
+    "6 oz almond paste",
+    "6 oz unsalted butter (room temperature)",
+    "6 oz confectioner's sugar (1 ½ cups)",
+    "6  eggs (whisked in a small bowl)",
+    "½ teaspoon table salt",
+    "1 teaspoon vanilla extract",
+    "1 teaspoon lemon extract",
+    "4 ½ oz cake flour (1 cup, see note)",
+    "2 cups apricot preserves (warmed and strained)",
+    "2x recipe Simple Fondant Icing"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Line a half sheet pan with parchment paper or butter and flour the pan.",
+    "Cream 6 oz&#32;almond paste until softened and smooth. With the mixer running, add 6 oz&#32;unsalted butter and mix on low until there are no lumps of almond paste. Add 6 oz&#32;confectioner's sugar and increase the speed to medium. Cream until light and aerated. Scrape down the bowl and paddle.",
+    "Add 6&#32;eggs in three batches, scraping the bowl and mixer between each addition. Add ½ teaspoon&#32;table salt, 1 teaspoon&#32;vanilla extract and 1 teaspoon&#32;lemon extract and mix to combine. Add 4 ½ oz&#32;cake flour all at once and mix just until incorporated.",
+    "Spread the batter onto the prepared sheet pan. Try to get the batter as even and flat as possible. The flatter the cake bakes the better the finished petit fours will look.",
+    "Bake until the cake is lightly browned and springs back when the center is pressed, about 15 minutes. Cool the cake completely in the pan.",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 piece",
+    "calories": "96 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "2 g",
+    "fatContent": "6 g",
+    "cholesterolContent": "37 mg",
+    "sodiumContent": "44 mg",
+    "sugarContent": "6 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.2 g",
+    "fiberContent": "1 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "[Batter]",
+    "6 oz almond paste",
+    "6 oz unsalted butter (room temperature)",
+    "6 oz confectioner’s sugar (1 ½ cups)",
+    "6 eggs (whisked in a small bowl)",
+    "½ teaspoon table salt",
+    "1 teaspoon vanilla extract",
+    "1 teaspoon lemon extract",
+    "4 ½ oz cake flour (1 cup, see note)",
+    "[Assembly]",
+    "2 cups apricot preserves (warmed and strained)",
+    "2x recipe Simple Fondant Icing"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

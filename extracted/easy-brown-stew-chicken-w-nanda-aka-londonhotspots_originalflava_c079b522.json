@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Brown Stew Chicken w/ Nanda",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, season chicken thighs with 1tbsp all purpose seasoning, 1tbsp garlic, 1tsp salt and black pepper, add bell peppers, thyme and scotch bonnet and browning and mix it all together. Cover and marinate overnight in the fridge or at least for 30 minutes.",
+      "In a large pan, add olive oil to a medium-high heat. Add chicken pieces only from the bowl, and brown it for 5 minutes on both sides. Mixt together 250ml water and stock cube/granules and pour into the pan and base the chicken.",
+      "Let it simmer on a medium high heat for 20 minutes. Add in the bell pepper/onion mix and spread out evenly in the pan, add a little more water if necessary. cover and simmer for further 15 minutes until the chicken is cooked.",
+      "In a medium sized pot, add kidney beans, all purpose seasoning, salt, black pepper, thyme, pimento seeds, spring onion and coconut milk. Mix together and bring to a boil, Wash your rice and add to pot and mix together. Add a scotch bonnet pepper. Bring to a low heat, cover with the lid and cook for 25 minutes til fluffy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red or Green Bell Peppers",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "diced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Browning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water & Stock Cube",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin Kidney Beans",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "550be0d033093e1408153109b1548f889ae7fb84d7228228d2665573a1a6f8ba",
+    "lineage_hash": "42bbe488569b6a2327961b7968f21b3d3c796d473bce90f49c224e130d7ce351"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/easy-brown-stew-chicken-nanda-aka-london-hot-spots/",
+    "fetchedAt": "2026-09-25T22:00:31.902Z"
+  },
+  "rawSource": "https://originalflava.com/meals/easy-brown-stew-chicken-nanda-aka-london-hot-spots/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Christmas Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, 1/4 cup of granulated sugar, and the crumbled yeast; begin to combine with the room temperature eggs and milk, then add in 1 teaspoon of salt; once the mixture begins to turn smooth, incorporate the softened butter a little at a time. Work the mixture for 4-5 minutes, then add it to a tapered cake pan (7-inch top and 6-inch base) thoroughly greased with butter. Tap the pan on a work surface to pack down the mixture; let it rise for 1 hour and 30 minutes at room temperature until it doubles in size. Bake at 350°F for 40 minutes; remove from the oven, let rest at 10 minutes, then remove the cake from the pan and let cool on a grate.",
+      "FOR THE CREAM: Mix the cream, mascarpone, and powdered sugar; beat with an electric hand mixer until creamy.",
+      "FOR THE MERINGUE: Beat the egg whites; once they start to become foamy, add 3/4 cup of granulated sugar in spoonfuls as you continue to beat. Once you've added all the sugar, beat for 1-2 more minutes until it forms stiff peaks.",
+      "TO SERVE: Cut the cake into 4 discs. Distribute the currants and raspberries onto the 3 largest discs and cover with plenty of cream. Put the cake together by stacking the discs. Remove any excess cream that escapes out of the sides, then use a spatula to cover the cake with the meringue; broil the meringue in a few places using a blowtorch. Garnish as desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian 0 Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brewer's Yeast",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fbae67d65bbc55b704b060422c94f384397b3d7e78f9e5fd42670be238bcdcd7",
+    "lineage_hash": "669c388f08761c3f349a3b02bcc74d80f20db17cccf33b65ad3f282aeb47147d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/christmas-cake",
+    "fetchedAt": "2026-08-03T08:20:26.470Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/christmas-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

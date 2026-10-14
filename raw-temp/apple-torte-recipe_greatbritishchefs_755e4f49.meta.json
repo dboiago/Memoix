@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/apple-torte-recipe",
+  "slug": "apple-torte-recipe_greatbritishchefs_755e4f49",
+  "title": "Apple Torte Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-02T22:28:21.340Z",
+  "ldName": "Mum's apple torte",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "2 Granny Smith apples, peeled, cored and sliced",
+    "1 egg",
+    "170g of sugar",
+    "1/2 tsp almond extract",
+    "55g of plain flour",
+    "1 tsp baking powder",
+    "1 pinch of salt",
+    "butter, for greasing",
+    "250ml of whipping cream, whipped to soft peaks"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 160°C/ gas mark 3",
+    "In a large bowl, lightly whisk the egg and then whisk in the sugar and almond extract. Stir in the apple slices and sift in the flour, baking powder and salt. Stir until well combined",
+    "Very generously grease an 18cm ring mould with the butter and carefully spoon in the batter, trying not to get any mixture on the edges to allow for spreading during the cooking process. Do not fill the tin more than two-thirds full",
+    "Bake in the oven for 25 minutes, or until the cake is golden and a skewer inserted into the middle comes out clean",
+    "Remove from the oven and leave to cool in the tin for 15 minutes before turning out onto a plate. Serve warm with plenty of whipped cream, though it is delicious served cold too"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

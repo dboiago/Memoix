@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Dosa Waffles",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "221",
+      "carbohydrateContent": "4",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "You must have prepared idli-dosa batter before you start with this recipe (please refer to the detailed post on the batter) . I typically use a day or two old batter to make these waffles. Transfer 2 cups of batter to a bowl. Now add little water to thin it out, you would need around 1 to 2 tablespoons water here but it should depend on how thick or thin your batter is to begin with. I added 2 tablespoons water here and mixed well.",
+      "Add chopped onion, green chilies, cilantro, carrots, black pepper and salt (add if your batter doesn't have salt, mine did so I did not add salt here).Using a spatula mix it all together until well combined.",
+      "Take your waffle maker and pre-heat it. Then spray it with a oil spray. Then add the prepared batter into the waffle maker. I have this round waffle maker with 4 cavities. I added around 3/4 cup batter to the waffle maker.And used a spatula to spread the batter a little so that all cavities are filled with batter.",
+      "Close the lid and cook the waffle according to instructions on your waffle maker. Mine cooks in around 5 minutes. Once done the waffles will be golden brown in color with crisp edges.",
+      "Carefully remove the dosa waffles on a plate and serve with coconut chutney or cilantro chutney!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Idli-dosa Batter",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "as needed to thin out the batter",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "medium",
+        "notes": "grated",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": "to taste (if your batter doesn't have salt)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60abe7f693f67544994d2c4d6645ce1dd0f5f8b7d624d5c1a5b44b97cb3de586",
+    "lineage_hash": "77c914af47e2c0ede11f41efdb688aea29bc958496590d95d9293d395d01d5ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dosa-waffles/",
+    "fetchedAt": "2026-08-02T01:36:29.117Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dosa-waffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

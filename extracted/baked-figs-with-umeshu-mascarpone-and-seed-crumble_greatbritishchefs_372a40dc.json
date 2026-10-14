@@ -1,0 +1,225 @@
+{
+  "recipe": {
+    "name": "Baked Figs with Umeshu, Mascarpone and Seed Crumble",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the figgy drizzle. Bring the chunks of figs, water, maple syrup, pomegranate molasses and a pinch of salt to the boil over a medium heat, then turn the heat down and simmer for 20 minutes",
+      "Meanwhile, mix together all of the ingredients for the crumble on a baking tray",
+      "Roast the crumble for 15–20 minutes, tossing the seeds every now and then, until golden and toasted",
+      "Once the figs have softened, use a potato masher or fork to mash them down",
+      "Taste the figs and adjust the seasoning to taste. Keep the figs warm until ready to serve",
+      "For the baked figs, first place them cut side down onto a baking dish",
+      "Bring the umeshu, sugar, vanilla bean paste and water to a simmer, whisking to dissolve the sugar",
+      "Pour over the figs then cover the tray tightly with tin foil",
+      "Bake in the oven for 15 minutes covered, then remove the tin foil and bake for another 10 minutes, or until jammy and cooked through",
+      "Meanwhile, beat together the cream and sugar until stiff peaks form",
+      "In a separate bowl, whisk together the mascarpone and vanilla until smooth",
+      "Fold together the whipped cream and the mascarpone, then set aside",
+      "To serve, dollop the cream into a serving platter and spread out with the back of a spoon",
+      "Scatter over the baked figs, and spoon the figgy drizzle around the platter",
+      "Sprinkle over the crumble, then serve with the crackers for scooping"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "cut into chunks with the stems removed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "or honey",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flax Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": "sliced in half",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Umeshu",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": "or 1 vanilla pod",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Biscuits for Cheese",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b515c1eab139a9bcd25315a0b3a653a87dd796dfbc2a43f87e57fe2ded74ca00",
+    "lineage_hash": "5da1932b6b6c0b70672ef3cc830ef02e9ec1e20fdf3a5bfb77ef14fd252870e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-figs-umeshu-mascarpone-seed-crumble-recipe",
+    "fetchedAt": "2026-08-02T10:01:00.361Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-figs-umeshu-mascarpone-seed-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

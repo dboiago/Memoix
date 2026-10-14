@@ -1,0 +1,63 @@
+{
+  "url": "https://mykoreankitchen.com/chicken-bulgogi-korean-bbq-chicken/",
+  "slug": "chicken-bulgogi-korean-bbq-chicken_mykoreankitchen_0ed9142f",
+  "title": "Chicken Bulgogi (Korean BBQ Chicken)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T21:58:52.155Z",
+  "ldName": "Chicken Bulgogi",
+  "ldTime": "PT260M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main",
+  "ldKeywords": "chicken bulgogi, dak bulgogi, korean bbq chicken",
+  "ldIngredientsRaw": [
+    "450 g chicken thigh ((1 pound), (I used boneless skinless thigh, but you can use other chicken cuts of your choice.))",
+    "3 Tbsp soy sauce (, regular)",
+    "1.5 Tbsp brown sugar",
+    "1 Tbsp rice wine",
+    "1/4 cup Sprite ((alternatively , 7 Up or other carbonated lemon-lime soda could be used.))",
+    "1/2 Tbsp minced garlic",
+    "1 tsp minced ginger",
+    "1 tsp sesame oil",
+    "ground black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the chicken into bite size pieces. (If grilling, prepare it according to your grill type and your preference.)",
+    "Combine all the marinade ingredients in a bowl and mix them well. Pour it over the meat. Cover and marinate it for at least 4 hours or overnight in the fridge to deepen the flavor. You can certainly marinate it for a lot shorter time, but the chicken will be less flavorful.",
+    "Cook the chicken over a well heated skillet. (If grilling, cook the chicken following your grill manual.) Do not add the leftover marinade. (I use a slotted spoon to minimize the marinade transfer.)  Sizzle both sides of chicken over medium high heat then reduce the heat to medium until the chicken is fully cooked.In the mean time, boil over the leftover marinade in a separate sauce pan for 2-3 mins over medium high heat, stirring occasionally. Sieve through any excess fat and undesirable pieces from the sauce. Set the sauce aside.",
+    "Serve. Glaze the sauce over the chicken."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "294 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "20 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "110 mg",
+    "sodiumContent": "844 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 450 g chicken thigh (1 pound), (I used boneless skinless thigh, but you can use other chicken cuts of your choice.)",
+    "[CHICKEN BULGOGI MARINADE]",
+    "▢ 3 Tbsp soy sauce , regular",
+    "▢ 1.5 Tbsp brown sugar",
+    "▢ 1 Tbsp rice wine",
+    "▢ 1/4 cup Sprite (alternatively , 7 Up or other carbonated lemon-lime soda could be used.)",
+    "▢ 1/2 Tbsp minced garlic",
+    "▢ 1 tsp minced ginger",
+    "▢ 1 tsp sesame oil",
+    "▢ ground black pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

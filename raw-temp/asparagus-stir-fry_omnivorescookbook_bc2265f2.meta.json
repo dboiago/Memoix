@@ -1,0 +1,57 @@
+{
+  "url": "https://omnivorescookbook.com/asparagus-stir-fry/",
+  "slug": "asparagus-stir-fry_omnivorescookbook_bc2265f2",
+  "title": "Asparagus Stir Fry",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T06:23:11.212Z",
+  "ldName": "Asparagus Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 tablespoon olive oil",
+    "1/2 ” ginger (, julienned)",
+    "2 cloves garlic (, sliced)",
+    "1 lb asparagus (, tough ends removed, slice on a bias into 1/2” thick pieces)",
+    "1/2 teaspoon salt ((or to taste))",
+    "Freshly ground black pepper",
+    "1 to 2  lemon wedges"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a large skillet over medium-high heat until hot.",
+    "Add the ginger and garlic. Stir and cook to release fragrance, 30 seconds.",
+    "Add the asparagus. Cook and stir until starting to turn tender, 2 to 3 minutes.",
+    "Sprinkle with salt and add ground black pepper, stir to mix well. Turn to medium-low heat and taste the asparagus. Adjust seasoning if needed. Turn off the heat. Squeeze in the lemon juice and stir again to mix well. Transfer everything to a plate. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "64 kcal",
+    "carbohydrateContent": "6.7 g",
+    "proteinContent": "3.2 g",
+    "fatContent": "3.8 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "294 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "2.6 g"
+  },
+  "htmlIngredientLines": [
+    "1 tablespoon olive oil",
+    "1/2 ” ginger , julienned",
+    "2 cloves garlic , sliced",
+    "1 lb asparagus , tough ends removed, slice on a bias into 1/2” thick pieces",
+    "1/2 teaspoon salt (or to taste)",
+    "Freshly ground black pepper",
+    "1 to 2 lemon wedges"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

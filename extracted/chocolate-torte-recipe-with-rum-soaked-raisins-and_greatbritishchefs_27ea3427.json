@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Chocolate Torte with Rum-Soaked Raisins and Clotted Cream",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter for the base and combine with the crushed amaretti biscuits. Grease the tin all over with butter and press the biscuits into the bottom to make a firm base. Chill in the fridge whilst you prepare the rest of the torte",
+      "To make the rum-soaked raisins, combine the water and sugar in a pan and bring to the boil to make a simple sugar syrup. Remove from the heat and pour the rum into the sugar syrup, followed by the raisins. Leave the raisins to soak in the rum until ready to serve",
+      "Put the chocolate, liquid glucose and rum in a heatproof bowl and sit over a saucepan with water, about 5cm deep. Bring the water to a gentle simmer and melt the chocolate until the mixture is smooth and glossy. Take the mixture off the heat and leave to cool for 5 minutes until it's warm to the touch",
+      "In a separate bowl, beat the cream until semi-whipped. Fold half the cream into the chocolate mixture, then fold that mixture into the rest of the cream. When the mixture is smooth and well-combined, spoon into the prepared tin. Tap the tin gently to even the mixture out, cover with clingfilm and chill overnight",
+      "Just before serving, run a palette knife around the edge of the torte to loosen, then give it a good shake and turn it out onto a serving platter. Don't be nervous – it's very well behaved! Dust the surface with some cocoa powder if you like, and serve with the raisins and a quenelle of clotted cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "room temperature",
+        "amount": "570",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Biscuits",
+        "unit": "g",
+        "notes": "finely crushed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "plus extra for greasing the tin",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clotted Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3eca91dd404ac999b0d057ac10aaee4930477723bf2844b4723443af2177c83d",
+    "lineage_hash": "fbcde1afba626429a9878fddde852e7a665f81a405a7c3f128d697ba68ac7d83"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tart-rum-raisin-recipe",
+    "fetchedAt": "2026-08-03T04:47:48.361Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tart-rum-raisin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

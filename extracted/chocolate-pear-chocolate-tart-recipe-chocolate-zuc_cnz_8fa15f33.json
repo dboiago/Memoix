@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chocolate Pear Chocolate Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start out by making the chocolate crust. This is a twist on my mom’s no-fail “pâte sablée”, a gift of a recipe for which my gratitude shall shine eternally. In a food processor, mix the flour, the cocoa powder and the sugar. Add the butter, cut up in small pieces. Mix until you get coarse sand. Add a splash of milk and mix again. Pour the sandy dough into a pie pan (ideally non-stick with a removable bottom, otherwise butter the pan first), and use the heels of your hands and your fingers to spread and press the dough until it lines the whole pan.",
+      "Preheat the oven to 220°C (430°F). Cut out a circle of parchment paper to the size of your pie pan, put it on top of the dough, and spread baking marbles or dry beans over it. This is to prevent the crust from rising. Put the dough in the oven to bake for about 20 minutes, until it’s cooked. It is a little hard to tell as you have baking marbles all over it, so you’re just going to have to trust your guarding angel. Let cool, then remove the marbles and the parchment paper. It should look like this.",
+      "Prepare the pears: peel them, cut them into quarters and core them. Put them in a large saucepan, cover with water, sprinkle the sugar and bring to a slow boil. Cook for ten minutes, until the pears look translucent. Drain thoroughly.",
+      "Then comes my very favorite step, making the ganache filling. In a medium bowl, break up the chocolate in very small pieces. Set the egg yolks aside in a separate bowl, and dice up the butter. In a small saucepan, heat up the whipping cream until small bubbles start to form. Remove from heat. Add in the pieces of chocolate and stir with a fork until melted. Add in the yolks, and stir again thoroughly. Add the butter, mixing it in with the fork until no lumps remain. Marvel at the luscious chocolate cream you have created.",
+      "Assemble the tart: pour the ganache on the pie crust, and arrange the pear pieces on top. Carefully put the tart in the refrigerator for the ganache to firm up, a couple of hours should suffice. Take the tart out fifteen minutes before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "A Splash Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Pears",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "For the pears",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "For the pears",
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fleurette",
+        "unit": "ml",
+        "notes": "whipping cream",
+        "amount": "100",
+        "section": "For the ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "For the ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For the ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "For the ganache",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6382ef5ee253b6486a93c3ec128da31d7816652a370ef375a74334b4ccd3e4e3",
+    "lineage_hash": "93a78d7db929d8df4fcbbe410b6d4e3091ac439483882e8fcfe664ddae2fe0c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-pear-chocolate-tart-recipe/",
+    "fetchedAt": "2026-09-30T18:37:53.007Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-pear-chocolate-tart-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

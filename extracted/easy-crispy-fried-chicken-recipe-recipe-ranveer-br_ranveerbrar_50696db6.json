@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Crispy Fried Chicken",
+    "time": "1 hr 29 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, add whole pieces, buttermilk, salt and hot sauce.",
+      "Mix well and keep for 4-6 hours in the refrigerator.",
+      "In a mixing bowl, add refined flour, paprika powder, garlic powder, onion powder, salt and white pepper. Mix well.",
+      "Add chicken pieces and coat well.",
+      "Shake off the excess flour.",
+      "Remove them on a wire rack/cooling rack to avoid from sticking.",
+      "Keep aside for further use.",
+      "In a mixing bowl, add eggs, paprika powder, garlic powder, onion powder, white pepper powder and salt.",
+      "Add coated chicken and mix well.",
+      "Keep aside for further use.",
+      "In a paper bag or a lid box, add chicken and shake well for the coating.",
+      "Once done shake off the excess flour and keep on a wire rack.",
+      "Heat oil for deep frying.",
+      "Add chicken pieces and fry till half done.",
+      "Drain them on a kitchen paper towel.",
+      "Double fry them until golden brown and crisp.",
+      "Drain on a kitchen paper towel to remove excess oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "whole chicken with skin, cut into 8 pieces",
+        "amount": "1",
+        "section": "For Brining",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Brining",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Brining",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Brining",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Refine Flour coating",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Egg Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Final Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Final Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": "Final Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99e0a06d39f9d8344515af8a82460414364da6559717a61d94d8f883bbc7326f",
+    "lineage_hash": "81c625b77584416d47f5cbad962a827c1f41e53992ceca8ad53e9d810dc1734d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/fried-chicken/",
+    "fetchedAt": "2026-08-02T14:46:24.297Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/fried-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

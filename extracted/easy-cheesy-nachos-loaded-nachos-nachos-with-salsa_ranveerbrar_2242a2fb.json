@@ -1,0 +1,319 @@
+{
+  "recipe": {
+    "name": "Cheesy Nachos (Loaded Nachos Nachos with Salsa)",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add maize flour, refined flour, whole wheat flour, salt, ginger-garlic water, vinegar, water and knead a semi soft dough, keep aside for 10-15 minutes.",
+      "Now take a medium portion of the dough and roll it thin using a rolling pin.",
+      "The half cook it on a hot flat pan from both sides and then cut in strips and then in triangle shape.",
+      "Heat oil for deep frying and then fry these triangles in medium hot oil until golden brown and crispy.",
+      "Remove on an absorbent paper, then add the Nacho spice and mix it properly, then keep aside for further use.",
+      "In a bowl add chopped green or red chillies salt, vinegar mix it and keep aside for further use.",
+      "In a bowl add chopped tomatoes, onion, tomato ketchup, green chillies, coriander leaves, salt, lemon juice, corn kernels, pickled chillies and mix everything properly and keep aside for further use.",
+      "In a pan add cumin seeds, coriander seeds, salt and dry roast them until fragrant.",
+      "Switch off the flames and add degi red chilli powder, dried mango powder, dried oregano and mix everything up.",
+      "Now add this in a grinder jar and grind it into a proper powder. Keep aside for further use.",
+      "In a pan add butter, turmeric powder and saute for half a minute then add milk, cheese, and mix well until the cheese is melted.",
+      "Now add the corn-starch slurry and mix it properly and cook until semi thick, then add the chilli oil mix once again and strain it properly with a strainer. Keep aside for further use.",
+      "Place the nachos in the serving plate and add pico de gallo, some grated cheese, mayonnaise, nacho spice and the cheese sauce with it. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maize Flour",
+        "unit": "C",
+        "notes": "roasted",
+        "amount": "½",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Nachos Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Pickled Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Green or Red Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "3-4",
+        "section": "For Pickled Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pickled Chillies",
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "chopped tomatoes",
+        "amount": "2",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "1",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tomato Ketchup",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped coriander leaves",
+        "amount": "2",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "boiled corn kernels",
+        "amount": "¼",
+        "section": "For Pico de Gallo / Fresh Salsa",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Cumin Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Leaves",
+        "unit": null,
+        "notes": "seeds",
+        "amount": "1",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried, sieved",
+        "amount": "1",
+        "section": "For Cajun Spice or Nacho Spice",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch Slurry",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1½",
+        "section": "For Cheese Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Nacho Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17e64d1f5ad913de2e15c3efa19694aef5e92bf26b21147d2aaf3eb742b5a73f",
+    "lineage_hash": "7b36bb3443c749b4c858327bf164be350f255c52967b65f29626052bd4f5ec2c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheesy-nachos/",
+    "fetchedAt": "2026-08-01T23:45:18.362Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheesy-nachos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

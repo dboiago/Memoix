@@ -1,0 +1,365 @@
+{
+  "recipe": {
+    "name": "Duck Ravioli Recipe, Langoustines & Veal Jus",
+    "time": "14 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the confit duck legs, place the legs onto a tray and sprinkle with the salt. Leave to cure for 4 hours. Remove from the salt and wash under cold water, then place into a thick-bottomed saucepan and cover with the confit oil along with the garlic and thyme",
+      "Place in the oven at 95˚C for 5 hours. Remove from the oven and leave to cool in the fat before removing",
+      "For the veal jus, preheat the oven to 180°C/gas mark 4",
+      "Place the bones into a high-sided roasting tray and place into the oven until golden brown, around 20 minutes. Remove the bones from the tray and place into a large stock pan",
+      "Peel and chop the vegetables and add them along with the bay leaf to the roasting tray. Place the pan containing the vegetables onto the heat and stir around until they start to turn brown, then add the tomato purée and the wine. Stir this together well and then add to the bones",
+      "Top the stock pan up until the water just covers the bones and gently bring the stock up to the boil, skimming with a ladle all the time to remove any impurities that float to the top. Gently simmer the stock for 8 hours, skimming all the time",
+      "Pass the stock through a fine sieve and pour the liquid back into a clean saucepan. Reduce slowly until the liquid is a gravy consistency. Reserve in the fridge (it will keep for 4 to 5 days) or freezer until needed",
+      "Place the veal jus into a saucepan and slowly bring up to the boil, then remove from the heat and add a few splashes of sherry vinegar. Check the seasoning with salt and cover with clingfilm until needed",
+      "To make the langoustine bisque, place the shells, vegetables and thyme in a roasting pan and cook for 30–40 minutes or until the shells are pink and fragrant and the vegetables tender",
+      "Transfer to a saucepan and add the tomato purée, brandy and stock. Place the pan over a medium heat and reduce to a sauce-like consistency. Keep warm until ready to serve",
+      "For the langoustines, remove the shells from the langoustines and remove the intestine pipe by twisting the very tip of the tail and pulling gently",
+      "For the ravioli, first remove the meat from 1 confit duck leg. Make sure that there are no bones, sinew or lumps of fat left in the meat. Shred the duck leg quite finely between your fingers and add a few drops of veal jus so that the duck binds together. Season with a little salt and add a few drops of sherry vinegar",
+      "Place 8 sheets of the wonton wrappers on to a lightly floured surface and brush each one with the egg yolk. Spoon even amounts of the duck mix into the centre of each sheet",
+      "Place another wonton sheet on top of the duck and gently press the two layers together, making sure not to leave any air pockets in the ravioli. Trim the ravioli into a round shape using a pastry cutter and place to one side",
+      "For the nantoise bubbles, boil the langoustine jus in a saucepan then add the cream, lemon juice and water and bring back up to the boil. Add the salt to taste",
+      "Place a pan of salted water on the heat and bring to a rolling boil, then add the ravioli and cook for 3 minutes",
+      "Sauté the langoustine tails in a sauté pan with a little vegetable oil for around 1 minute on each side, remove the pan from the heat and finish with the butter, lemon juice and salt. Add the spinach and allow it to wilt, then pour the langoustines on to a plate",
+      "Remove the spinach and place in the centre of four warm serving dishes, remove the ravioli from the water, drain on a piece of cloth and then sit on top of the spinach",
+      "Place a sautéed langoustine on top of the ravioli and then spoon a small amount of the veal jus around the ravioli. Reheat the nantoise and buzz with a hand blender until foamy. Garnish with a few pieces of shaved Brazil nuts and the foam. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet Wonton Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Langoustine Tails",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Bones",
+        "unit": "kg",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Langoustine Jus",
+        "unit": "ml",
+        "notes": null,
+        "amount": "475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Langoustine Shells",
+        "unit": null,
+        "notes": "and heads",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Spinach",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Brazil Nuts",
+        "unit": null,
+        "notes": "shaved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bce6223502694faad710b9a9818fdc8111375c56c2a9313fb581e2d9471eaa80",
+    "lineage_hash": "f21c02bde9199d7b17da8c8ba27974d8eae58321c16084a007d8f1c232051cfa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-ravioli-recipe-seared-langoustine-tails",
+    "fetchedAt": "2026-08-03T19:46:09.753Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-ravioli-recipe-seared-langoustine-tails",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

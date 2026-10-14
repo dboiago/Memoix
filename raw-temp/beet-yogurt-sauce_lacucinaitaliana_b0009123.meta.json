@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/beet-yogurt-sauce",
+  "slug": "beet-yogurt-sauce_lacucinaitaliana_b0009123",
+  "title": "Beet Yogurt Sauce",
+  "byline": "by  Editorial staff   March 12, 2020",
+  "fetchedAt": "2026-08-03T08:26:27.128Z",
+  "ldName": "Beet Yogurt Sauce",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Barbabietola,Barbabietole,Salsa,Salse,Yogurt",
+  "ldIngredientsRaw": [
+    "14OZ. beets, boiled and peeled",
+    "1/3C. Greek yogurt",
+    "3 1/2TBSP. extravirgin olive oil",
+    "1OZ. anchovies",
+    "1 1/2TBSP. pickled capers",
+    "1 1/2TBSP. vinegar",
+    "1 slice sandwich bread (to baste with the vinegar) 1/2 spring onion",
+    "Salt"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Blend everything together until smooth. If you prefer no dairy, use soy yogurt.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "14 OZ. of beets, boiled and peeled",
+    "1/3 C. of Greek yogurt",
+    "3 1/2 TBSP. of extravirgin olive oil",
+    "1 OZ. of anchovies",
+    "1 1/2 TBSP. of pickled capers",
+    "1 1/2 TBSP. of vinegar",
+    "1  of slice sandwich bread (to baste with the vinegar) 1/2 spring onion",
+    "Salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

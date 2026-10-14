@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients and shake. Strain into an ice-filled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt Water",
+        "unit": "drops",
+        "notes": "1:1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2f11b5bffec4a5eea264335b211b5e856bcab7422b45e66cece9bb105e99d6a",
+    "lineage_hash": "ecda36606621fbee73ba43efd43f6e305fe54bb6b333e3946f1dcb7e5d3138d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/culiniaria-recipe/",
+    "fetchedAt": "2026-08-03T18:55:05.987Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/culiniaria-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

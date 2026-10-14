@@ -1,0 +1,397 @@
+{
+  "recipe": {
+    "name": "Crispy Kurkure Momos (bonus Cheese Dip recipe)",
+    "time": "35-40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a parat or a bowl, add refined flour, wheat flour, salt to taste, vinegar, water as required and knead well.",
+      "Make a semi soft dough, apply some oil and knead it again.",
+      "Cover it with a muslin cloth, rest it for 10-15 minutes.",
+      "keep it aside for further use.",
+      "In a bowl, add cabbage, green chillies, ginger, carrots, fresh coriander leaves, freshly grated black peppercorns, salt to taste, white pepper powder and mix everything well.",
+      "Squeeze out the water of the mixture and transfer it to another bowl.",
+      "Add paneer, salt to taste, black pepper powder, schezwan chutney, mayonnaise and mix well.",
+      "Add fresh coriander leaves and keep it aside for further use.",
+      "In a bowl, add cornflour, refined flour, degi red chili powder, garam masala, water, salt to taste, vinegar, mix it well and make a smooth batter.",
+      "Keep it aside for further use .",
+      "Take the dough and make small lemon size balls, roll it in a thin small round shape.",
+      "Stuff a small spoonful amount of filling and fold it in a desired shape.",
+      "In a bowl, add cornflakes, poha and make a coarse mixture. Add degi red chili powder, salt to taste and mix well.",
+      "Dip the momo balls in the cornflour slurry, then coat it in crushed cornflakes and poha mixture. Keep it aside to rest for 4-5 minutes on a plate.",
+      "Heat oil in a kadai, once the oil is hot enough, add momos and fry until light golden color appears.",
+      "Transfer it on an absorbent paper and keep it aside for further use.",
+      "Transfer it on a serving dish, top it up with the dip, sprinkle some degi red chili powder, lemon wedges and serve hot with dip.",
+      "In a bowl, add green chilies, fresh coriander leaves, onion, mayonnaise, processed cheese, oil and mix well.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "after kneading",
+        "amount": "½",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2-3",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6-7",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Schezwan Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": "Other Ingredient",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "C",
+        "notes": "crushed, for coating",
+        "amount": "1",
+        "section": "Other Ingredient",
+        "isOptional": false
+      },
+      {
+        "name": "Poha",
+        "unit": "Tbsp",
+        "notes": "powder",
+        "amount": "2-3",
+        "section": "Other Ingredient",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredient",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredient",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Processed Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "3",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "82f322af4ba688344abca6ef5c8b3ed98c632cbc061176d2c14afd1254ba3064",
+    "lineage_hash": "c78dead137d6157ce7264d472b222423a5c9f8beb5e7e11fa4632c6f49930f39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-kurkure-momos/",
+    "fetchedAt": "2026-08-02T12:07:38.647Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-kurkure-momos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

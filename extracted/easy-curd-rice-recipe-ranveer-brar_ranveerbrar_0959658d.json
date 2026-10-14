@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Curd Rice (दही चावल)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl add the cooked rice, whisked curd and 2 tbsp of fresh cream and mix well until well combined.",
+      "Heat oil for tempering in a tadka pan and add rest of the ingredients for the tadka. Let them splutter and sautÃ© for few more seconds on a medium flame.",
+      "Pour the tadka over the curd rice and add salt (reserve some tadka for garnish). Mix well.",
+      "Serve the curd rice at room temperature garnished with the reserved tadka."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiled Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beaten/whisked Curd",
+        "unit": "g",
+        "notes": "dahi",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Channa Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Red Chili Dry",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing /asafeotida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Methi /fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8df9f12276fef66fe01446bf6148cf06c5ec87a016b8c9839aabf16f6185a712",
+    "lineage_hash": "be951145173501447040b55a31def6f8ca37850e5625ca2b5b421c295025762f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/curd-rice/",
+    "fetchedAt": "2026-08-02T07:55:42.416Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/curd-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

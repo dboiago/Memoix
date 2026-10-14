@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Austrian Easter Bread Wreath",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium bowl, combine the melted butter, caster sugar, egg yolk, salt, vanilla sugar, crushed cardamom seeds and lemon zest and mix until it reaches an even consistency",
+      "Add the flour, yeast and milk to the butter-sugar mixture and form a smooth dough; knead for approximately 10 minutes",
+      "Cover the dough with the bowl and leave to rest in a warm place for 1 hour",
+      "Combine the ground or finely chopped nuts with the brown sugar",
+      "Divide the dough into two equal parts",
+      "Knead the nuts-and-sugar mix into one of the dough parts",
+      "Lightly flour your work surface if the dough is prone to stick",
+      "Use your hands and form each dough part into a long sausage form, 40 cm in length",
+      "Form a rope with the two dough rolls by winding the rolls around each other",
+      "Then bring the ends together to form a wreath, sealing the ends together to avoid them coming apart during the baking process",
+      "Place the wreath on a baking tray lined with baking paper and cover with a clean kitchen towel for 30 minutes to 1 hour to prove",
+      "Preheat the oven to 180°C",
+      "Bake for 30 minutes",
+      "Warm up the honey in a small pot and add the rum",
+      "Brush the baked wreath with the mixture and sprinkle the roughly chopped pistachios on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "lukewarm",
+        "amount": "130",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "4",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "40",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": "seeds taken out and crushed with pestle and mortar",
+        "amount": "2",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "ground or finely chopped",
+        "amount": "1",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "Tbsp",
+        "notes": "ground or finely chopped",
+        "amount": "2",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the dough",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c849547c9ce7efad11970f78bd6d64de9285b223b4c460c35bdba4cd80d4b53",
+    "lineage_hash": "d6145608dc2c521408683a7c7489e5c4e9fa561c3833551da3f7e947a0c3327c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2014/03/fragrant-easter-bread-recipe-pistachios-nuts/",
+    "fetchedAt": "2026-08-01T17:52:29.522Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2014/03/fragrant-easter-bread-recipe-pistachios-nuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

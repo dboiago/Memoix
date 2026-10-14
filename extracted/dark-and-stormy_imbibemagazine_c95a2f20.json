@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Dark and Stormy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the ingredients together in the glass. Add ice and stir until chilled. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Bermuda Rum",
+        "unit": "oz",
+        "notes": "Gosling's",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8378e9d2014ed7781bbdc8dff23941f4e3c591de745733c1813956a84cf4face",
+    "lineage_hash": "82fcefa3a473b1559444b418c4f8f49d923cd22edbbd6a019bb2c78e20ee5b27"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dark-and-stormy/",
+    "fetchedAt": "2026-08-03T22:05:50.093Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dark-and-stormy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

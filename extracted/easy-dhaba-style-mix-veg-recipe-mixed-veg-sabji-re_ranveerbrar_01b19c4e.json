@@ -1,0 +1,279 @@
+{
+  "recipe": {
+    "name": "Dhaba style Mix Veg",
+    "time": "35 min - 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add garlic, ginger, green chili and salt to taste.",
+      "Crush into a smooth paste and keep it aside for further use.",
+      "In a shallow kadai or handi, add oil once it's hot, add cumin seeds and let it splutter well.",
+      "Add ginger garlic paste and saute it well.",
+      "Add onion and stir it for 10-12 seconds on high flame, later add ghee and saute it for a while.",
+      "Once the onions are golden brown, add coriander powder, turmeric powder and saute it for a minute.",
+      "Now, add kashmiri red chili powder, tomatoes and saute it well.",
+      "Once the masala is cooked, add water and cook it for 5 minutes.",
+      "Now, add carrots and saute, once the carrots are cooked, add green peas, mushroom, french beans, cauliflower, water and mix well, cover it with the lid and let it cook for a while.",
+      "Add paneer, dried fenugreek leaves, butter and mix it well.",
+      "Once the vegetables are cooked properly. Transfer it to a serving dish.",
+      "Garnish with the grated paneer, dried fenugreek leaves and coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, slice",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "2-3",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Size Carrot",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom",
+        "unit": "C",
+        "notes": "cut into quarter",
+        "amount": "⅓",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "C",
+        "notes": "florets",
+        "amount": "½",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "10-15",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "Tbsp",
+        "notes": "cut into small cube",
+        "amount": "2-3",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Dhaba Style Mix Veg",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "pinch",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a86588bd8107a0920b9b7f2f6f345cbeea9825978b6512ab43f513aeaa42ea0b",
+    "lineage_hash": "49ff86f67d57222caeb57cec6cbce6b26c781a4760a4ba577ae6857a3bf390c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-mix-veg-recipe/",
+    "fetchedAt": "2026-08-02T11:07:14.157Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-mix-veg-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

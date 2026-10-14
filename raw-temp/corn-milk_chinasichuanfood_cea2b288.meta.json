@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chinasichuanfood.com/corn-milk/",
+  "slug": "corn-milk_chinasichuanfood_cea2b288",
+  "title": "Corn Milk",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:23:37.611Z",
+  "ldName": "Corn Milk",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3",
+    "3 cups"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Drinks",
+  "ldKeywords": "Corn",
+  "ldIngredientsRaw": [
+    "2  sweet corns",
+    "2 cups water",
+    "1/2 cup milk",
+    "1 tbsp. rock sugar ( ,optional if you prefer a healthier version)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the corns off the cob. And place it in a blender. Add water and milk and blend until smooth.",
+    "Strain the liquid if you want a smooth version. Transfer the strained liquid into a small pot, add sugar and simmer to a boiling. The drink becomes thick itself since the corn fluids contains starch.",
+    "Serve warm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "52 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "cholesterolContent": "4 mg",
+    "sodiumContent": "25 mg",
+    "sugarContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 sweet corns",
+    "2 cups water",
+    "1/2 cup milk",
+    "1 tbsp. rock sugar  ,optional if you prefer a healthier version"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

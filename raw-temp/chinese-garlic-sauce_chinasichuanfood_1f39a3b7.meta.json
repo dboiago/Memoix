@@ -1,0 +1,64 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-garlic-sauce/",
+  "slug": "chinese-garlic-sauce_chinasichuanfood_1f39a3b7",
+  "title": "Chinese Garlic Sauce",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:01:50.311Z",
+  "ldName": "Chinese garlic sauce",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4  whole garlic  (, peeled)",
+    "1/8  red onion (, shredded)",
+    "2  green onion (, cut into sections)",
+    "2  star anise",
+    "1  bay leaf",
+    "3/4  cup (vegetable cooking oil)",
+    "1 tbsp. oyster sauce sauce (, or light soy sauce for vegan version)",
+    "1/2 tbsp. sesame oil",
+    "pinch of salt",
+    "1/2 tsp. sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Place peeled garlic in a blender and blend with pause for 3-4 times until the garlic are in minced sizes.",
+    "Prepare red onion, green onion, star anise, bay leaf.",
+    "Place the aromatics in oil and heat over medium fire until they are weird and slightly browned. Remove all of the content and leave oil only.",
+    "Place garlic in. Heat over medium fire until the garlic becomes slightly browned too. Stir it continuously to avoid sticky bottom.",
+    "Then add 1 tablespoon of oyster sauce, a small pinch of salt, sugar and sesame oil in. Mix well. Transfer to container after cooled."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "15 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "1 mg",
+    "sodiumContent": "11 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "4 whole garlic  , peeled",
+    "1/8 red onion , shredded",
+    "2 green onion , cut into sections",
+    "2 star anise",
+    "1 bay leaf",
+    "3/4 cup vegetable cooking oil",
+    "1 tbsp. oyster sauce sauce , or light soy sauce for vegan version",
+    "1/2 tbsp. sesame oil",
+    "pinch of salt",
+    "1/2 tsp. sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

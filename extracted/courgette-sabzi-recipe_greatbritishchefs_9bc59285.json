@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Courgette Sabzi",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep pan or wok, heat the oil over a medium-high heat. Add the dried red chillies and nigella seeds to the pan. Immediately add the diced courgette to the pan and stir",
+      "Add the ground turmeric and salt to the pan and then cook, stirring over a high heat for 2–3 minutes. It is important no to overcook the courgettes: they should still be crunchy and have a little 'bite' to them. The best way to check is to taste a piece: the courgette should be cooked all the way through, but not even close to becoming soft and woolly. Take the pan off the heat while the courgettes are still glossy and firm as they will continue to cook due to the residual heat from the pan",
+      "Before serving, taste to check the seasoning and adjust as necessary"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried, broken in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nigella Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "cut into 1cm cubes",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "65aebdd7f9feffb36c8bc711343391f65d347ab1b6745bcd0383b7b882e31a71",
+    "lineage_hash": "5f41e57816112f31a9d631bbcf41380ab9f732cfe7b9b05f036ea6cfabe69e12"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-sabzi-recipe",
+    "fetchedAt": "2026-08-03T08:29:02.938Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-sabzi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

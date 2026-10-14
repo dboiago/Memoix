@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/corn-mayo-bread/",
+  "slug": "corn-mayo-bread_omnivorescookbook_33e2087d",
+  "title": "Corn Mayo Bread (玉米沙拉面包)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T03:00:57.521Z",
+  "ldName": "Corn Mayo Bread (玉米沙拉面包)",
+  "ldTime": "PT165M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 buns"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Bakery",
+  "ldKeywords": "Chinese bakery style",
+  "ldIngredientsRaw": [
+    "260 ml (1 cup + 1 tablespoon) milk (, heated to 110°F / 43°C)",
+    "1 teaspoon (4 g) active dry yeast",
+    "400 g (2 3/4 cups) bread flour",
+    "75 g (1/3 cup) sugar",
+    "4 g (1 teaspoon) salt",
+    "40 g (3 tablespoons) butter (, melted)",
+    "1 large  egg",
+    "1 large egg",
+    "1 tablespoon heavy cream ((or milk))",
+    "240 g (1 1/2 cup) sweet corn",
+    "90 g (1/3 cup) mayonnaise ((use kewpie mayo if possible))"
+  ],
+  "ldInstructionsRaw": [
+    "To make the dough",
+    "Roll out the dough & 2nd rise",
+    "To make the topping",
+    "Prepare the egg wash",
+    "Bake the buns",
+    "Store and reheat"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "247 kcal",
+    "carbohydrateContent": "40.5 g",
+    "proteinContent": "6.4 g",
+    "fatContent": "7.2 g",
+    "saturatedFatContent": "2.7 g",
+    "cholesterolContent": "42 mg",
+    "sodiumContent": "227 mg",
+    "fiberContent": "1.8 g",
+    "sugarContent": "8.8 g"
+  },
+  "htmlIngredientLines": [
+    "[Dough]",
+    "260 ml (1 cup + 1 tablespoon) milk , heated to 110°F / 43°C",
+    "1 teaspoon (4 g) active dry yeast",
+    "400 g (2 3/4 cups) bread flour",
+    "75 g (1/3 cup) sugar",
+    "4 g (1 teaspoon) salt",
+    "40 g (3 tablespoons) butter , melted",
+    "1 large  egg",
+    "[Egg wash]",
+    "1 large egg",
+    "1 tablespoon heavy cream (or milk)",
+    "[Filling]",
+    "240 g (1 1/2 cup) sweet corn",
+    "90 g (1/3 cup) mayonnaise (use kewpie mayo if possible)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

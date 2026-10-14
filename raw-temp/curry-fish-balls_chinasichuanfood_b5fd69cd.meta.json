@@ -1,0 +1,54 @@
+{
+  "url": "https://www.chinasichuanfood.com/curry-fish-balls/",
+  "slug": "curry-fish-balls_chinasichuanfood_b5fd69cd",
+  "title": "Curry Fish Balls",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:11:24.709Z",
+  "ldName": "Curry Fish Balls",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Fish Ball",
+  "ldIngredientsRaw": [
+    "1 cup minced red onion or shallots",
+    "1 tbsp. vegetable cooking oil",
+    "25  fish balls (home made) ( , or store bought)",
+    "1  box of Thai golden curry paste ( ,100g)",
+    "1 cup milk or coconut milk",
+    "1 cup water or stock"
+  ],
+  "ldInstructionsRaw": [
+    "Heat up around 1 tablespoon of cooking oil and fry red onion or shallots until slightly softened.",
+    "Add the curry paste in, heat over slow fire until dissolved. Pour in stock and milk, slightly slide the fish balls in. Simmer for 10 minutes over slow fire after boiling.",
+    "Turn off the fire and slightly thicken the sauce. Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "519 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "34 g",
+    "fatContent": "37 g",
+    "saturatedFatContent": "29 g",
+    "cholesterolContent": "75 mg",
+    "sodiumContent": "103 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 cup minced red onion or shallots",
+    "1 tbsp. vegetable cooking oil",
+    "25 fish balls (home made)  , or store bought",
+    "1 box of Thai golden curry paste  ,100g",
+    "1 cup milk or coconut milk",
+    "1 cup water or stock"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

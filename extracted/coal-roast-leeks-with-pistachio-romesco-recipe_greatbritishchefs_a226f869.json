@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Coal Roast Leeks with Pistachio Romesco",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Light a barbecue for direct cooking and allow the flames to die down so that you have hot embers",
+      "To make the coal roast leeks, cut the green tops off and reserve them for the leek oil. Wash the leeks thoroughly and dry them well. Lay the leeks on hot coals and allow the outside to blacken evenly, while the insides steam in their own juices. Check the leeks occasionally, pressing gently to see if they feel soft. As soon as they do, remove from the coals",
+      "To make the leek oil, wash the leek tops well, slice them thinly and place in a Thermomix. Cover with the oil, and set the Thermomix to 70°C for 7 minutes at speed 10. Pour into a bowl over an ice bath, and refrigerate overnight. This will make more leek oil than needed, but any extra oil can be frozen and reserved for another time",
+      "The next day, pass the leek oil through a sieve and season with salt",
+      "Light the barbecue for direct cooking and wait for the flames to die down",
+      "To make the pistachio romesco, roast the 150g pistachios (plus an extra handful to garnish) and almonds slowly in a heatproof pan until evenly coloured, moving around regularly to ensure they don’t burn. Set aside and allow to cool",
+      "Over the fire, char the peppers evenly until the skin blackens and blisters, then transfer to a bowl and cover with a lid - this allows them to steam and soften, and loosens the skin",
+      "Deseed and remove the skin from the peppers, then place them in the Thermomix with the toasted nuts (reserving a handful of pistachios to garnish), garlic, and a splash of the leek oil. Blend until you have a fine purée, scraping down the sides of the bowl to ensure everything is well combined",
+      "Continue to blend on a lower setting adding the remaining leek oil. If the mix is a little thick, add a splash of iced water to soften the texture. Season with salt and jalapeño vinegar",
+      "To make the tofu whip, blend all ingredients in the Thermomix until smooth and creamy. Store in a squeezy bottle until needed",
+      "Using a piping bag or large spoon, spread the romesco into the centre of four bowls",
+      "Cut the room temperature leeks into barrels (roughly 3 inches in length) and place on top of the romesco, season and dress with leek oil",
+      "Top with a spoonful of tofu whip, extra chopped roasted pistachios, and the chopped chives. Finish with a pinch of hibiscus salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leeks",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Tops",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Pistachios",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Vinegar to Season",
+        "unit": null,
+        "notes": "(or green Tabasco)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Silken Tofu",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Shelled Pistachios",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e9cfac62e71e24fe88b30142d335b11394509acf60a816255596b9437c378c2",
+    "lineage_hash": "b0d69345bede2f2fd67f65e3e1fca2099888a33c3786bc51818d208702e658f2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coal-roast-leeks-pistachio-romesco-recipe",
+    "fetchedAt": "2026-08-02T18:26:16.650Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coal-roast-leeks-pistachio-romesco-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

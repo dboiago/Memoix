@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Stout Gingerbread",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Spray a 9 x 5-inch (23 x 13cm) loaf pan with nonstick spray, or butter, then line the bottom with a rectangle of parchment paper. Spray or butter the parchment paper. (You can also bake it in a bundt pan. See headnote.)",
+      "Heat the molasses and stout in a medium-to-large saucepan until it comes to a boil. Turn off the heat and stir in the baking soda. Set aside to let the foam subside and allow the mixture to cool",
+      "In a small bowl, whisk together the flour, ground ginger, baking powder, cinnamon, cloves, nutmeg, and cardamom.",
+      "In a large bowl, whisk the eggs with the granulated and brown sugar until there are no lumps, then whisk in the oil.",
+      "Whisk in the cooled molasses mixture into the eggs, then gradually whisk in the dry ingredients, stirring only in one direction. (To prevent lumps.) Stir in the fresh ginger.",
+      "Scrape the batter in the prepared pan, filling it three-quarter's full. (See headnote.) Bake until a toothpick inserted in the center comes out relatively clean, 50 minutes to 1 hour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stout",
+        "unit": "C",
+        "notes": "250ml, such as Guinness",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Molasses",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum free",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": "90g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral-flavored Vegetable",
+        "unit": "C",
+        "notes": "alt: grapeseed oil, 180ml",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "peeled, grated, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "23363c02eda3da3a2029ff36c7ee90a4f1c5728e81f8ac86735d89e1c6c853cf",
+    "lineage_hash": "e8a12dda4a7d71aeacb1041770fc630ec944ff37728645d3efff64ade11281a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/claudia-flemings-stout-gingerbread-ginger-cake-recipe-the-last-course/",
+    "fetchedAt": "2026-08-02T22:37:08.546Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/claudia-flemings-stout-gingerbread-ginger-cake-recipe-the-last-course/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

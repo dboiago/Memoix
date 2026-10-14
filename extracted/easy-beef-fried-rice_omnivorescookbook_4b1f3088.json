@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Easy Beef Fried Rice",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "426",
+      "carbohydrateContent": "61.7",
+      "fatContent": "13.4",
+      "proteinContent": "13.6"
+    },
+    "directions": [
+      "Heat 1/2 tablespoon of oil in a large nonstick (or carbon steel pan) over medium-high heat until hot. Add the beaten eggs. Let cook until the bottom is set, then gently scramble until just cooked. Transfer to a plate.",
+      "Add 1/2 tablespoon of oil and the ground beef. Spread the beef across the pan with your spatula to form a thin layer. Let the bottom cook until browned, 2 to 3 minutes. Sprinkle with a pinch of salt, plus half of the cumin powder and chili flakes. Drizzle with 1 tablespoon of soy sauce. Flip the beef and chop it into smaller pieces with your spatula. Cook until the beef is browned.",
+      "Add the green onion. Stir a few times to release the fragrance.",
+      "Add the rice and pour 1 tablespoon of oil over the rice. Toss a few times to coat with the oil. Pour the remaining 1 tablespoon of soy sauce over the rice. Sprinkle the rest of the cumin powder and chili flakes. Stir and cook until evenly mixed, 2 to 3 minutes.",
+      "Move the rice to one side of the pan. Add the remaining 1/2 tablespoon of the oil to the other side, along with the frozen veggies and bell pepper. Stir and cook for a minute to quickly saute the vegetables. Then mix everything together.",
+      "Add back the cooked eggs. Stir everything together while cutting the eggs into smaller pieces. Transfer everything to a plate and serve hot as a main or side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "lb",
+        "notes": "225 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten with a pinch of salt",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Jasmine Rice (or Other Medium Grain Rice)",
+        "unit": "C",
+        "notes": "chilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veggies",
+        "unit": "C",
+        "notes": "carrot, corn, and/or peas, frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green",
+        "unit": null,
+        "notes": "I used a mix of both, diced (or red bell pepper)",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edd0a1eceb96f53273e71dadc8666a3303a849d9037ee4378047b6734c59dde8",
+    "lineage_hash": "8311029943bbbfd43e8a4fe50e9a2a2606bf98c7fe9e8c15655f54a0c9596ae9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/mongolian-beef-fried-rice/",
+    "fetchedAt": "2026-08-02T02:45:03.037Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/mongolian-beef-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

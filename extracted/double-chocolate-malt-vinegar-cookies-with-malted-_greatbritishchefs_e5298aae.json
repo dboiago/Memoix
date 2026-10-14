@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Malt Vinegar Cookies with Malted Vanilla Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the ice cream. Use an electric whisk to beat together the egg yolks, sugar and malted milk powder until pale",
+      "Heat the milk and cream together until just steaming",
+      "Slowly pour the hot milk into the yolks, whisking constantly, then return the mixture to the pan",
+      "Cook the custard on a very low heat until it thickens and reaches about 75°C",
+      "Stir in the vanilla and malt vinegar, then transfer the custard to a lidded container",
+      "The next day, churn the custard in an ice cream machine, then freeze until firm, about 3 hours",
+      "For the cookies, melt the dark chocolate and butter together, then allow to cool slightly",
+      "Beat the eggs, sugar and vanilla until light and fluffy with an electric whisk. Whisk in the melted chocolate, then add the malt vinegar",
+      "Sift in the cocoa, flour, baking powder and salt. Fold through, then stir in the chocolate chips. Chill the dough for 1 hour",
+      "Scoop the dough onto two lined trays – you should get around 10 cookies – with plenty of space between them. Bake for 10–12 minutes until cracked but still soft in the centre. Cool slightly before serving",
+      "Serve the warm cookies with generous scoops of malted vinegar ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malted Milk Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb7907626c2f357afeb5c889ca41f53968e363071fa5a8945557e51793de9747",
+    "lineage_hash": "712ea0b670bd788fbfba54bb471d4d46e55425c4134b15964a9a4ea3cf3ac126"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/double-chocolate-malt-vinegar-cookies-malted-vanilla-ice-cream-recipe",
+    "fetchedAt": "2026-08-02T02:49:53.631Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/double-chocolate-malt-vinegar-cookies-malted-vanilla-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

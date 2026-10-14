@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cauliflower Cheese",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by gently heating the milk in a pan or microwave with the bay leaf",
+      "Place a saucepan over a medium heat with the flour and butter inside. Use a spatula to stir the ingredients into a paste (a roux) and cook for a minute to cook out the raw flour taste",
+      "Whisk in the warmed milk (discarding the bay leaf) bit by bit until you have a thick, smooth sauce",
+      "Beat in the mixed grated cheeses, reserving a big handful for the topping. Once fully melted into the sauce, add in the mustard and nutmeg with a dash of vinegar to taste. Season with salt and pepper and taste to check you're happy with the seasoning",
+      "Cut the cauliflower into florets and finely slice the stalks. Add it to the pan of sauce and stir to combine. Pour out into an ovenproof dish and sprinkle over the breadcrumbs and remaining cheese. Bake for 45 minutes or until the cauliflower is soft when a knife is inserted and the topping is golden and crisp"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "smoked cheddar and parmesan, grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb426b6e50533f852ba0780c8276b7a0ff7bdb2716c12aa8b4dbad282c159b1b",
+    "lineage_hash": "465858f0c4708c4d80f34b2810bcd73dd9c448a9aa2c4fe58d27d378e339322a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-recipe",
+    "fetchedAt": "2026-08-02T21:25:33.294Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-cheese-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

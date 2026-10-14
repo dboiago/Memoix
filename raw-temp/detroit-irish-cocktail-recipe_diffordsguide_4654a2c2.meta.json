@@ -1,0 +1,41 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/5766/detroit-irish-cocktail",
+  "slug": "detroit-irish-cocktail-recipe_diffordsguide_4654a2c2",
+  "title": "Detroit Irish Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T15:30:19.691Z",
+  "ldName": "Detroit Irish Cocktail",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Detroit Irish Cocktail"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Bourbon whiskey",
+    "30 ml Tuaca liqueur",
+    "15 ml Grand Marnier",
+    "7.5 ml Vanilla sugar syrup"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a MARTINI GLASS.",
+    "Prepare garnish of mint leaf (or shamrock).",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with mint leaf (or shamrock)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "256 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

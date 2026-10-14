@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Ananda Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the pineapple in a shaker tin. Add the bourbon, amaro, pineapple, lemon juice, bitters and syrup. Add ice and shake to chill. Strain into a chilled cocktail glass and float with sparkling wine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Nonino",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chunks Pineapple",
+        "unit": null,
+        "notes": "to muddle",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Wine",
+        "unit": "oz",
+        "notes": "to float",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "910c284587fc756b9a83028ddb7951d18b011ea95cc4c41d20f1cc1aac0466bd",
+    "lineage_hash": "4a642338b6f042ca8bb5f5b1b99efa028f99b5f6ed02a73fbadd3448a6c5fc74"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ananda-spritz/",
+    "fetchedAt": "2026-08-03T21:01:10.666Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ananda-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

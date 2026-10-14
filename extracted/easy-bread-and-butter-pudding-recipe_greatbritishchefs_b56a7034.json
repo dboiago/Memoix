@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Bread and Butter Pudding",
+    "time": "5 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the sorbet, firstly bring 150ml of water and 150g of caster sugar to a boil to make a syrup. Once syrupy, set aside",
+      "Next, bring all the ingredients including the syrup to a boil, then leave to cool",
+      "Place the mixture in an ice cream maker and freeze",
+      "Whilst the sorbet is freezing, start the bread and butter pudding by buttering the bread, then slicing it into triangles",
+      "Butter an oven proof dish and sprinkle in a layer of sultanas",
+      "Arrange 1 layer of bread triangles in the dish then sprinkle again with sultanas. Repeat this process 2 more times or until you reach the rim of the oven dish",
+      "To make the custard, bring the cream, milk and vanilla to a boil. In a separate bowl, whisk the egg yolks and 175g of sugar",
+      "Pour the cream mix over the yolks and sugar, whisking it in. Pour this mix into a bain-marie and cook until thick",
+      "Allow to cool slightly and pour the mixture over the bread and sultanas. Leave this to soak for at least 4 hours, topping it up with more custard if needed",
+      "Heat the oven to 115°C/Gas mark ¼. Put the pudding dish into a roasting tin and pour some warm water around the sides",
+      "Bake for 15 – 20 minutes until the edges are browned and the centre still has a slight wobble",
+      "Allow to cool down a little then sprinkle with castor sugar and caramelize with a blow torch until golden all over",
+      "Slice the pudding, and position in the centre of a bowl with a generous amount of custard. Serve with a separate bowl of the chocolate sorbet"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": "with crust removed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter for Greasing",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for glazing",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61376d34e4e58412741dca15178faa46f76ee8a055c0fd3fc8314b4d450e5f89",
+    "lineage_hash": "971bb6e2ca58590e9abd88a3467e5a14bd4e434fc3142b8b79504361c6e3c028"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bread-butter-pudding-recipe",
+    "fetchedAt": "2026-08-03T20:45:56.688Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bread-butter-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

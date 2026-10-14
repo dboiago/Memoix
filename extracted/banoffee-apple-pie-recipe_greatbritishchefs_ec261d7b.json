@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Banoffee Apple Pie",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the pastry by adding all the ingredients into the bowl of a stand mixer. Cut through the butter and cream cheese with a knife to separate it",
+      "Using the flat beater, mix on low speed until it all starts to come together (this takes around 2 minutes). Turn the machine off and squeeze the dough together",
+      "Flatten out and wrap in clingfilm and place in the fridge whilst the filling is prepared. Peel, core and slice the apples & place in a bowl",
+      "Mix together the sugar, cinnamon, nutmeg and flour and sprinkle over the apple slices and stir to coat completely. Remove the pastry from the fridge and slice in half. Keep one half covered whilst rolling out the other",
+      "Roll out the pastry on a floured surface until it’s large enough to cover the base and sides of your deep pie dish. Lay the pastry over the pie, overhanging the sides of the dish",
+      "Fill with half of the apple slices, followed by the banana slices and then the caramel sauce. Top with the remaining apple slices",
+      "Roll out the pastry lid. Dampen the edges of the pastry with water and lay the pastry lid on, pressing the sides together. Trim the excess pastry (using scissors simplifies this) and crimp the edges",
+      "Cut some slits in the top of the pastry to allow steam to escape. Brush the top with beaten egg and sprinkle over the sugar",
+      "Bake in the oven for 45-60 minutes, until the pastry is browned and the filling is bubbling. Serve with ice cream or cream and extra caramel sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": "full fat",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "882d3dcc7ffe987d8fa896a8a07801e7899dd3f8b12460313d0d1a5352e24dd2",
+    "lineage_hash": "5f2b2fc015a85fc0135a2849b80011946911160635ab356dfb08a7fc76a51f2e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banoffee-apple-pie-recipe",
+    "fetchedAt": "2026-08-03T22:52:12.120Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banoffee-apple-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

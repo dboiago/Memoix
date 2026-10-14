@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Concord Grape Pie",
+    "time": "1 hr 55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "295",
+      "carbohydrateContent": "62",
+      "fatContent": "5",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Roll half the dough to line a 9\" deep dish pie pan. Roll the other half of the dough to a 12\" circle. Sprinkle a little flour over the circle and fold it in half. Sprinkle with flour again and fold in half again. Wrap the folded dough and set it into the lined pie pan. Refrigerate the pie dough while you make the concord grape filling. The dough can be rolled up to a day ahead.",
+      "Separate the grape skins from the pulp, reserving both. In a food processor or blender, pulse the grape skins with 4 oz water until you have a chunky puree. Transfer the skins to a small bowl and stir in 1 ½ oz cornstarch. Set it aside while you prepare the pulp.",
+      "In a large saucepan over medium heat cook the pulp with 10 oz granulated sugar,   ½ vanilla bean and ¼ teaspoon table salt until soft, about 10-15 minutes, stirring frequently. Run the grape pulp through a food mill or strainer to remove the seeds, pressing on the solids to get as much pulp as possible through the strainer.",
+      "Return the strained pulp to the saucepan. Scrape the the seeds from vanilla bean and add them to the pulp.",
+      "Bring the mixture to a full boil. Stir in the grape skin/cornstarch and cook until it returns to a full boil and begins to thicken. Transfer the pie filling to a large bowl and cool completely before assembling the pie. Refrigerate the pie filling until ready to use, up to 1 day ahead of baking.",
+      "Preheat the oven to 350°F350 °F. Remove the pie plate from the refrigerator and remove the top crust from the pan. Pour the grape filling into the pie plate. Unfold the dough round for the top crust. Use a small round cutter to cut a holes in the middle of the crust in the shape of a cluster of grapes. Use the tip of a small knife to cut a \"stem\" at the top of the cluster.",
+      "Brush the edges of the bottom crust with egg white. Lay the top crust over the filling with the cluster design centered on the pie. Pinch the two crusts together to seal. Trim the excess dough and crimp the edges for an attractive crust. Brush the top of the pie with egg white and sprinkle with granulated sugar.",
+      "Bake until golden brown and the fruit in the middle of the pie is bubbling, about 55 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Concord Grapes",
+        "unit": "lb",
+        "notes": "weight after stemming",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean",
+        "unit": null,
+        "notes": "split",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7c0ae39693baf95cbb31ee858dfce28e8a0eb627ead10dc0f3e4e928fe9624f",
+    "lineage_hash": "d0948779a079dc7f34a019f138fea84a9134b4ba3aec2dcb2e5fd1227002cb13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/08/29/concord-grape-pie/",
+    "fetchedAt": "2026-08-01T17:08:39.055Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/08/29/concord-grape-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

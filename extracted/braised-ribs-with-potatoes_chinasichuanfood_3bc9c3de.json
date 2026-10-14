@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Braised Ribs with Potatoes",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1507",
+      "carbohydrateContent": "13",
+      "fatContent": "128",
+      "proteinContent": "66"
+    },
+    "directions": [
+      "Place the ribs in a deep pot with enough water to cover. Add scallion in. Bring to a boiling and then cook for 1-2 minutes. Transfer out and clean with warm water. Drain and set aside.",
+      "Prepare a clay pot or stew pot, add around 2 tablespoons of oil and fry doubanjiang over slow fire until the oil turns slightly red. This is a very important step to remove the raw taste from doubanjiang.",
+      "Add ginger, garlic and fermented black beans.",
+      "Add the ribs in and let them stay for a while until slightly browned. Add light soy sauce, cooking wine, sugar, star anise and scallion and fry for another 1-2 minutes.",
+      "Pour enough warm water and add small potatoes in. Cover the lid and simmer for 20 minutes until the potatoes are well softened. Uncover and continue cooking for 10 minutes until the sauce is reduced to 1/3 again.",
+      "Cook noodles according to the instructions. Add around 1/2 cup of water for cooking the noodles and a small pinch of salt and pepper in each serving bowl. Transfer the noodles in.",
+      "Scoop braised ribs along with the juice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ribs",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Douchi",
+        "unit": "Tbsp",
+        "notes": "fermented black beans",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": "Shaoxing wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Serving Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa767aa55c8fc27470039c0164f31cc6c285e8f5660e6604b22bab37054a76a6",
+    "lineage_hash": "01809b873ec662fc94a52a5ed15f8ff6d0c7d0b3742158215ef782523f9f2d95"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-ribs-with-potatoes/",
+    "fetchedAt": "2026-08-02T04:24:54.284Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-ribs-with-potatoes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Chocolate Olive Oil Cake",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "223",
+      "carbohydrateContent": "30.4",
+      "fatContent": "10.3",
+      "proteinContent": "4.88"
+    },
+    "directions": [
+      "Preheat the oven to 350°F (175°C). Prepare an 8-inch round cake pan by greasing the bottom with butter, and then placing a round cut out of parchment paper on the bottom. Grease the parchment and the sides of the pan, then sprinkle with flour. Tap out any excess flour and put aside for when the batter is ready.",
+      "Combine all of the dry ingredients (flour, almond flour, sugar, cocoa powder, baking soda, baking powder, and salt) in a bowl and whisk until blended.",
+      "Combine the wet ingredients (egg, egg yolk, Greek yogurt, olive oil, vanilla, and hot coffee) in another bowl and whisk well.",
+      "Add the wet ingredients to the bowl of dry ingredients, and mix well (using an electric mixer if possible). Mix on medium for a couple of minutes, scraping down the sides if necessary.",
+      "Pour the chocolate olive oil cake batter into the prepared pan and place in the oven on the center rack for 25-35 minutes. Check at 25 minutes and remove once a toothpick inserted in the center of the cake comes out clean. In my oven, the perfect bake time is exactly 32 minutes!",
+      "Cool for about 15 minutes in the pan, then remove onto a wire cooling rack. Dust with powdered sugar and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Processed Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full Fat Greek Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Black Coffee",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar (optional) for Garnish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91ff9dd7fc69d7656ac91b2ec80782ef9218b2edd14a266a24ba2e4aa0983652",
+    "lineage_hash": "7f57f342085ea0e556d1896b6f0425b9f1179f02579031398b266e9fe1dc9fcb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/chocolate-olive-oil-cake/",
+    "fetchedAt": "2026-08-02T10:04:43.995Z"
+  },
+  "rawSource": "https://spanishsabores.com/chocolate-olive-oil-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

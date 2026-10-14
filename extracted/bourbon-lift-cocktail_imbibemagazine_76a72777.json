@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bourbon Lift Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients, except the soda water, and shake with ice. Strain into a glass and stir the drink (paddle back and forth) while adding the soda to achieve a good froth. After it sits for 20 seconds or so add an ounce more soda water to lift the head above the glass. Serve with straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": "Adkins uses Small Hand Foods",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": "Adkins uses Q",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce6772f6defaff06a9a640b3cf0b2d549179eb00f7b58cf64043b9d5de1e99ae",
+    "lineage_hash": "6d61c0f0f8f275219f275b728fce7b58cf4d11584c0985e508fa75946e17acba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-lift-cocktail/",
+    "fetchedAt": "2026-08-03T17:56:42.165Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-lift-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

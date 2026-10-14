@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Chips ‘Divorciados’",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C. Spread out the chips in a single layer on a large baking tray. Cook according to the packet instructions, leaving them in for an extra couple of minutes to make sure they are deep golden and crisp – the salsas will soften the chips slightly",
+      "Meanwhile, place the tomatoes, onion, garlic and chilli on a baking tray. Drizzle with olive oil and toss to coat, then roast for 20 minutes until softened and lightly charred at the edges. Allow to cool slightly",
+      "Place all of the charred vegetables into a blender, discarding the garlic skin. Add the smoked paprika, red wine vinegar, caster sugar and salt and blend until smooth but retaining some texture. If you prefer a looser salsa, add 1-2 tbsp of warm water – the consistency should be thick",
+      "Clean the blender. Blend the avocado flesh, green chilli, coriander, parsley, garlic, lime juice, olive oil, and salt until smooth, adding 1-2 tbsp cold water (1 tablespoon at a time) to achieve a spoonable consistency that is thick enough to sit on the chips without running. If making ahead of time, place in a container with cling film directly on to the surface to prevent oxidation",
+      "For the pico de gallo, combine all the ingredients and a pinch of salt in a bowl. Allow to sit for 10 minutes, then drain off any excess liquid before serving (to avoid the chips going soggy)",
+      "Toss half of the chips in the red salsa and the other half in the green salsa. Transfer to a serving bowl or platter, keeping each colour separate (or divorciados). Sprinkle over the feta, some pico de gallo and chopped parsley, then serve with lime wedges and avocado"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Weston Thick Cut Pub Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped, to serve",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "sliced, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vine Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "thickly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "skin on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "ideally fresh arbol if you can get it, halved and deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "approx. 180g flesh, large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": "small",
+        "notes": "ideally jalapeño, deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "or up to 3, depending on taste, finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "very finely diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47fa2027981d7f10c2a5da5af4bccee3af16d45e1b57e9bff6963ab3e235c9a1",
+    "lineage_hash": "3e32f02bfdbc5920dd69a9178e4b34bc9483aa157071408d56aca77174609348"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chips-divorciados-recipe",
+    "fetchedAt": "2026-08-01T20:22:31.772Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chips-divorciados-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

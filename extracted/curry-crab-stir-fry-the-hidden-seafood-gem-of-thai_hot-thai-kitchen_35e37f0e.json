@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Curry Crab Stir Fry",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "256",
+      "carbohydrateContent": "8",
+      "fatContent": "16",
+      "proteinContent": "20"
+    },
+    "directions": [
+      "For the custard: Whisk the chili paste and the chili oil together to loosen the paste. Add about a tablespoon of the evaporated milk and whisk to make sure there are no lumps of chili paste remaining. Add the rest of the evaporated milk, the eggs, oyster sauce, fish sauce and white pepper. Whisk until well combined.",
+      "Have all your ingredients and serving plate ready to go and within arm's reach, as the cooking goes very fast!",
+      "Place a nonstick skillet or well-seasoned wok on medium heat, then add the oil, onions, and garlic and saute for a minute or so just until the onion doesn't taste raw but is still crunchy.",
+      "Keeping the heat on medium, add the curry powder and stir for just 5 seconds to infuse into the oil. Do not use high heat or the curry powder will burn instantly.",
+      "Add the crab and toss for just 10-15 seconds to heat up the crab. Be gentle, try not to break up the crab too much.",
+      "Add the custard and using a rubber spatula stir without stopping until the mixture is thick and creamy, but still looks slightly undercooked. Off the heat, stir in the celery and immediately transfer onto a serving plate.",
+      "Garnish with red pepper juliennes, more celery leaves and extra crab meat",
+      "Serve with jasmine rice and prik nam pla, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thai Chili Paste (nam Prik Pao)",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Paste Oil (the Red Oil That Floats on Top of the Chili Paste Jar)",
+        "unit": "Tbsp",
+        "notes": "or another chili oil",
+        "amount": "1",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "C",
+        "notes": "or coconut milk",
+        "amount": "¼",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "The Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "preferably sweet onion, 1-inch dice",
+        "amount": "¼",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Crab Meat",
+        "unit": "oz",
+        "notes": "fresh, set aside a couple of teaspoons for garnish",
+        "amount": "7",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Handful Celery Leaves and Thinly Sliced Stalk",
+        "unit": "small",
+        "notes": "or chopped Chinese celery, plus extra for garnish",
+        "amount": "1",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Pieces of Julienned Red Chilies",
+        "unit": null,
+        "notes": "alt: bell pepper, optional  garnish",
+        "amount": "0",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": "The Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Prik Nam Pla",
+        "unit": null,
+        "notes": "optional condiment",
+        "amount": "0",
+        "section": "The Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd55904db097ac9d2fb078db738791bfc8de3456e774b67ce5050e8672e38d0c",
+    "lineage_hash": "932758a68201c0c4a827fa6b044e73250b941435f4e712281bc2e8da4b45bb9b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/curry-crab/",
+    "fetchedAt": "2026-08-01T22:44:00.203Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/curry-crab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

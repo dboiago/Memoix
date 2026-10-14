@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Beef and Flat Bean Stir Fry",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "321",
+      "carbohydrateContent": "18.2",
+      "fatContent": "13.3",
+      "proteinContent": "32.5"
+    },
+    "directions": [
+      "Slice the beef against the grain into 0.5 cm (1/4 inch) thick slices or 1-cm (1/2 inch) sticks. Transfer to a small bowl. Add soy sauce and salt (*Footnote 1). Gently mix well by hand until all the slices are coated. Add the peanut oil and cornstarch. Mix again to combine evenly. Marinate for 15 minutes while preparing the other ingredients.",
+      "Combine all the ingredients for the sauce in a medium-sized bowl. Mix well.",
+      "Bring a medium pot of water to a boil. Add the flat beans and boil for 5 minutes, or until the beans turn tender. Drain and run the beans with tap water for a few seconds, to stop cooking. Then drain again thoroughly and set aside.",
+      "Heat oil a large skillet or a wok until hot. Swirl to coat the bottom. Spread the steak in a single layer. Allow to cook without touching for 30 seconds, or until the bottom side is browned. Flip to cook the other side for a few seconds. Stir and cook until the surface is lightly charred and the inside is still a bit pink. Transfer to a plate.",
+      "The pan should still have some oil left. If not, add 2 teaspoons of oil. Add the garlic and ginger. Stir a few times to release the flavor and fragrance.",
+      "Add the flat beans to the pan. Stir and cook for 1 minute. Add the beef back to the pan.",
+      "Stir the sauce again to dissolve the cornstarch completely and pour it into the skillet. Cook and stir until the sauce thickens. Transfer everything to a plate immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "g",
+        "notes": "10 oz, *see footnote 1, boneless, skirt steak, or other cut",
+        "amount": "300",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "tsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Meat and Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "Tbsp",
+        "notes": "or beef broth",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "*footnote 2",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Flat Beans",
+        "unit": "g",
+        "notes": "10 oz, cut to 1” (1.5 cm) pieces",
+        "amount": "300",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "351c5016a7995b470e9f7750a310dd8c01423b915f4288b840546cf855c04587",
+    "lineage_hash": "acb03ed488caf2d7f826623b0c13bc7911873c0b12172eaa63fd48dbc9625b66"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-and-flat-bean-stir-fry/",
+    "fetchedAt": "2026-08-02T02:12:40.910Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-and-flat-bean-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

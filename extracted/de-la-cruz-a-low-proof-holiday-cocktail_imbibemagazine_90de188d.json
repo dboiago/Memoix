@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "De La Cruz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Single Large Ice Cube"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a glass over a single large ice cube. Add the garnish.",
+      "Graham Cracker–Infused SherryIn a jar, combine 400 ml of amontillado sherry with 100 ml of cream sherry (Monarch Bar uses Lustau for both), and add 1 whole cinnamon graham cracker. Let infuse for 30 minutes, then strain through cheesecloth or a coffee filter. Keeps refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bianco Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Graham Cracker–infused Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4872319fadb8419900065a0af960952064498f5e51262fc5674269c4a6c24e37",
+    "lineage_hash": "abbf3ce3e0ab635e4d559b46672f56a85b6fdf88e5ec2ee116c3ec58b050cb02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/de-la-cruz-low-proof-holiday-cocktail/",
+    "fetchedAt": "2026-08-03T22:42:53.070Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/de-la-cruz-low-proof-holiday-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

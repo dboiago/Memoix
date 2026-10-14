@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cookie and Lemon Cream Tart",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the lemons in half. Slice a few thin rounds to use as a final garnish, then juice them. Mix the eggs with the sugar and flour; add 1/2 cup lemon juice, a little at a time. Thicken the mixture on the stove, stirring constantly for 10-12 minutes. If you prefer a less bitter tart, reduce the lemon juice by 1 or 2 Tbsp.",
+      "Coat a rectangular pan (10\"x4\", 1 1/2\" height) with parchment paper. Layer the pan with 3/4 of the cookies, then crumble the remaining ones and use them to fill in the spaces between one cookie and another.",
+      "Pour the lemon cream over the cookies and bake for around 15 minutes. Remove the tart from the pan using the parchment paper as an aid, and let cool in the fridge for one hour. Garnish with the lemon slices and dust with powdered sugar before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Cookies",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1762448ce086e2dc93a25e84ef7ec25118daa879be08ff1f092ec86fe071cbdc",
+    "lineage_hash": "aa47925292daeaa03408e3f5d7c8f07384b6fadbe85e016a2c53dc9aa95f83a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/cookie-and-lemon-cream-tart",
+    "fetchedAt": "2026-08-03T05:57:23.540Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/cookie-and-lemon-cream-tart",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

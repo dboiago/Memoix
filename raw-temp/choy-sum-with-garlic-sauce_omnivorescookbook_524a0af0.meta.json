@@ -1,0 +1,58 @@
+{
+  "url": "https://omnivorescookbook.com/choy-sum-with-garlic-sauce/",
+  "slug": "choy-sum-with-garlic-sauce_omnivorescookbook_524a0af0",
+  "title": "Choy Sum with Garlic Sauce",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:52:14.750Z",
+  "ldName": "Choy Sum with Garlic Sauce (白灼菜心)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "dim sum",
+  "ldIngredientsRaw": [
+    "1/2 lb (225 g) choy sum",
+    "2 teaspoons oyster sauce",
+    "1 teaspoon light soy sauce",
+    "1/8 teaspoon sugar",
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "2 cloves garlic (, coarsely chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the choy sum for a few minutes then wash with running tap water to remove any dirt. Discard any leaves that are withered or yellow. Drain thoroughly.",
+    "Heat a big pot of water over medium-high heat until boiling. You can add a teaspoon of oil and a pinch of salt so the choy sum will have a brighter green color (Optional). Add the choy sum, stem side down, so the thicker part cooks longer. Cook the stem for 30 seconds to 1 minute, then submerge the leafy part into the hot water. Cook until the choy sum turns just tender, 1 to 2 minutes, or you can cook it until it reaches your desired texture. Drain the boiling water and rinse the choy sum under running tap water again to stop the cooking. Drain it thoroughly and pat dry with paper towels. Transfer it to a serving plate.",
+    "Mix the sauce ingredients together in a small bowl.",
+    "Heat the oil in a small saucepan over medium heat until hot. Add the garlic. Stir a few times to release the fragrance, 30 seconds or so.",
+    "Pour in the sauce. Cook and stir until the sauce slightly thickens, 30 seconds to 1 minute. Immediately pour the sauce over the plated choy sum. Serve as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "95 kcal",
+    "carbohydrateContent": "8.5 g",
+    "proteinContent": "1 g",
+    "fatContent": "6.8 g",
+    "saturatedFatContent": "1.1 g",
+    "sodiumContent": "189 mg",
+    "fiberContent": "0.1 g",
+    "sugarContent": "6.3 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 lb (225 g) choy sum",
+    "[Sauce]",
+    "2 teaspoons oyster sauce",
+    "1 teaspoon light soy sauce",
+    "1/8 teaspoon sugar",
+    "[Cook]",
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "2 cloves garlic , coarsely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

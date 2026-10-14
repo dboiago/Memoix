@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Aubergine Parmigiana",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the aubergine lengthways into 1.5cm thick slices and soak them in salty water for 30 minutes.\r\nPat dry then fry the aubergine slices in vegetable oil until golden.\r\nPlace them in a colander to drain any excess oil",
+      "In the meantime, prepare the tomato sauce. Sauté the garlic with the extra virgin olive oil for 1 minute, taking care not to burn it or the sauce will taste bitter. Add the passata and basil leaves and season with salt to taste. Cover and cook for 10–15 minutes on low, then set aside",
+      "To assemble the parmigiana, put a scoop of tomato sauce at the bottom of an ovenproof dish. Top with a layer of fried aubergine, tomato sauce, grated Parmesan, and sliced mozzarella. Then repeat the layers until you run out of aubergine. Finish the top layer with the tomato sauce and grated Parmesan",
+      "Bake for 20–25 minutes or until golden brown. Serve warm"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "to fry the aubergine",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7af93f86573c33264c37ae79f5acfaf75aa080b4bf65427c6d690f5da3a4d9d",
+    "lineage_hash": "e7c7d3b0275901b8e9fb8c3c648bfe080b6bf75d7907a90b0de79b582efc6992"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/aubergine-parmigiana",
+    "fetchedAt": "2026-08-02T00:35:02.821Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/aubergine-parmigiana",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

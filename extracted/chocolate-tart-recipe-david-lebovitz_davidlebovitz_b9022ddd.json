@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chocolate Tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat oven to 350ºF (180ºC.)",
+      "Spread the sugar in an even layer in the bottom of a large, heavy-duty saucepan or Dutch oven. Cook the sugar over moderate heat until the edges liquefy and being to caramelize. Use a heatproof utensil to gently drag the liquefied sugar toward the center of the pan, encouraging the sugar to melt evenly.",
+      "Once the sugar is melted, it was caramelize rather quickly. When it starts to smoke, but before it burns, turn off the heat and stir in the coffee. (The mixture will bubble and seize a bit. Be sure to avert your face and you may wish to wear oven mitts.)",
+      "If the caramel has seized up in places, stir it gently over low heat until smooth. Then add the butter and salt, and stir until melted, then stir in both chocolates until smooth*.",
+      "Mix in the eggs, then the flour. Stir in the rum or vanilla extract.",
+      "Pour the mixture into the pre-baked tart shell, then bake for 15 to 20 minutes, just until the filling starts to rise and crack at the edges but the center is still jiggly. Do not overbake.",
+      "Remove from oven and let cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "250g",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Coffee",
+        "unit": "Tbsp",
+        "notes": "90ml",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "115g, cubed, at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 115g, chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Chocolate",
+        "unit": "oz",
+        "notes": "55g, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "35g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": "alt: 1 teaspoon vanilla extract",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cm One 9-",
+        "unit": null,
+        "notes": "alt: 10-inch  prebaked tart shell, 23– 25 cm, such as French tart dough",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a90c42d374f0255b803117930fe5e7e484f39c983998769a57d3ad13c732793c",
+    "lineage_hash": "525c5e2c7d8c3a22d36a9d1e3c6651860ae24722161af6e51a2b28e380eaf8a0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-tart-recipe/",
+    "fetchedAt": "2026-08-02T19:19:42.537Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-tart-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

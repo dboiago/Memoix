@@ -1,0 +1,46 @@
+{
+  "url": "https://www.nyonyacooking.com/recipes/coffee-butter-cookies-ala-jenny-bakery~3YvO8L4oGF",
+  "slug": "coffee-butter-cookies-al-jenny-bakery-southeast-as_nyonyacooking_5e470786",
+  "title": "Coffee Butter Cookies alá Jenny Bakery - Southeast Asian Recipes",
+  "byline": "Karin",
+  "fetchedAt": "2026-08-01T16:31:16.632Z",
+  "ldName": "Coffee Butter Cookies alá Jenny Bakery",
+  "ldTime": "PT01H10M",
+  "ldPrepTime": "PT00H30M",
+  "ldCookTime": "PT00H40M",
+  "ldYield": 24,
+  "ldCuisine": "Malaysian",
+  "ldCategory": "Snack, Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "150 g unsalted butter",
+    "2 g salt",
+    "50 g sugar (powdered)",
+    "5 g coffee granules",
+    "2 g water",
+    "2 g cocoa powder",
+    "50 g corn starch",
+    "150 g all-purpose flour"
+  ],
+  "ldInstructionsRaw": [
+    "In a mixing bowl, combine softened butter, salt and sifted icing sugar. Using a mixer, beat until the butter turns pale yellow.",
+    "Combine instant coffee granules and water in another bowl. Mix until it turns into a paste.",
+    "Combine the coffee paste with the butter mixture. Continue mixing until it combines evenly.",
+    "Sift cocoa powder, corn starch and all flour into the coffee butter mixture. Mix using a spatula. Do not over-knead dough by mixing vigorously. Stop once dough is combined evenly.",
+    "Fill one piping bag with the cookie dough. To prevent the piping bag from bursting, place it into another piping bag with the desired piping nozzle.",
+    "Pipe dough onto a tray lined with baking paper. This yields approximately 24 pcs. Refrigerate the piped dough for at least 30 mins to better maintain its shape during baking.",
+    "Bake at 150 degrees Celsius in a preheated oven for 35 minutes. Rotate the tray midway through to ensure even baking. Cool to room temperature before storing in an airtight container."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 Servings",
+    "calories": "84 kcal",
+    "proteinContent": "1 g",
+    "fatContent": "5 g",
+    "carbohydrateContent": "9 g"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "MY",
+  "siteCourseHint": null
+}

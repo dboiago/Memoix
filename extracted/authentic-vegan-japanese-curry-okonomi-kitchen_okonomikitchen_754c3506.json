@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Authentic Vegan Japanese Curry",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "513",
+      "carbohydrateContent": "86.5",
+      "fatContent": "11.7",
+      "proteinContent": "14.8"
+    },
+    "directions": [
+      "Add the vegetables: Cook the onions for about a minute. Add the garlic and ginger and cook for another minute. Add mushrooms, carrots and potatoes and continue to cook for another 5 minutes.",
+      "Simmer: Add the water, veggie stock powder and grated apple. Bring it up to a boil and then reduce heat to medium-low, letting it simmer for 15 minutes or until potatoes are fork tender.",
+      "Add the roux: Turn heat to low. Chop up the curry cube (see photo above) to make it easier to dissolve it into the curry. Dissolve the curry roux in using a ladle and chopsticks. Then stir in your choice of seasonings and condiments.",
+      "Finish it off: Let it simmer for about 5 minutes to let the curry thicken."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "300 g, sliced into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Package Mushrooms",
+        "unit": null,
+        "notes": "150 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "150 g, cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "250 g",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Curls",
+        "unit": "C",
+        "notes": "60 g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "100 g, grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": "alt: water, 625 ml",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Box (120 G) Curry Roux Cubes",
+        "unit": null,
+        "notes": "or about 240-270g homemade curry cubes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramelized Onions",
+        "unit": "C",
+        "notes": "100 g, see recipe below",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Worcester",
+        "unit": "Tbsp",
+        "notes": "alt: Tonkatsu sauce, 15ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": "15ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "15ml // tamari for gluten free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar of Choice",
+        "unit": "Tbsp",
+        "notes": "14g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": "3g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": "3g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "300 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "15 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese White Rice",
+        "unit": "C",
+        "notes": "cooked",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fukushinzuke (pickled Soy Sauce Vegetables)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e488d4cc2c822819eefb547aef5e45ccd9e0da0e3181383b59a0e2142c4940ff",
+    "lineage_hash": "37b40b95e695cf77fb5428d0c79752370c2e49307d2d0fe769a059435fa7a7b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/vegan-japanese-curry/",
+    "fetchedAt": "2026-09-25T23:59:01.360Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/vegan-japanese-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

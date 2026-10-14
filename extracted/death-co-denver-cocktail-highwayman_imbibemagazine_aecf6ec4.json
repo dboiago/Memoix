@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Highwayman",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing glass with ice and stir to chill. Strain into an Old Fashioned glass over a single ice cube. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Liqueur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9ef54600863e0696c4990a8e9c8b0563332c5992ca15cd7c2033d3b43f10be8b",
+    "lineage_hash": "9ebfcabea51c1a8152cdbf09be69dd75729b784021829bce49d8429fe13e1773"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/death-and-co-denver-cocktail-highwayman/",
+    "fetchedAt": "2026-08-03T22:54:00.885Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/death-and-co-denver-cocktail-highwayman/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

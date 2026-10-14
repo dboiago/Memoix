@@ -1,0 +1,243 @@
+{
+  "recipe": {
+    "name": "Beignets with Orange Sauce",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the beignets, place the water, butter, sugar, strips of orange peel and pinch of salt in a pan and place over a medium heat. Stir together as the butter melts and bring to the boil",
+      "Take the pan off the heat and let it stand for a couple of minutes. Stirring continuously, sift in the flour and mix until well combined, then place the pan back over a medium heat and allow the mixture to thicken",
+      "Pour the mixture into a clean bowl and leave to cool a little, then stir through the whole egg followed by the yolks and mix until smooth. Cover the bowl and leave to stand for at least 2 hours",
+      "Meanwhile, make the custard. Pour the milk into a pan and scrape in the vanilla seeds from the halved pod. Place the pan over a low heat and stir together, then bring the mixture up to the boil. Once boiling, remove from the heat immediately",
+      "In a bowl, whisk the egg yolks with the sugar then sift in the flour and fold gently until just combined. Pour in the hot vanilla milk and mix well. Transfer the mixture back to the pan and place over a low heat. Keep stirring and bring to the boil",
+      "Remove the pan from the heat, pass through a fine sieve and cool the custard quickly in a bowl placed over iced water. Cover the custard with cling film, ensuring the cling film is touching the custard to prevent a skin from forming. Reserve in the fridge until required",
+      "For the orange sauce, place the milk, orange zest and half of the sugar in a pan and bring to the boil over a medium heat. In a bowl, mix the remaining sugar with the egg yolks, flour and orange liqueur",
+      "Stir the hot milk into the contents of the bowl a little at a time. Transfer this back to the pan, place over a low heat and stir constantly until the sauce thickens, ensuring the mixture does not boil",
+      "Remove from the heat, pass through a fine sieve into a clean bowl and cool quickly over iced water. Cover with cling film, again allowing the cling film to touch the surface of the sauce to prevent a skin forming. Place in the fridge until ready to serve",
+      "For the candied orange peel, peel the orange removing only the orange skin – not the white pith – and set aside the orange segments for serving. Cut the skin into thin strips, place in a pan and cover with water. Bring to the boil over a medium heat and drain, then cover with water and boil again to reduce the bitterness of the skin",
+      "Drain the strips and return to the empty pan with the sugar and 2 tablespoons of water. Heat gently without stirring until a light caramel forms. Remove the pan from the heat and add another 2 tablespoons of water, stir well and spread the candied strips out across a tray to cool",
+      "After the beignet mixture has rested, remove the orange peel and pass the rest of the mixture through a fine sieve to ensure it is completely smooth",
+      "To cook the beignets, pour a 2cm layer of oil into a deep frying pan and bring up to 170°C. Scoop 24 small gnocchi-sized balls from the dough and carefully drop them into the hot oil in batches of 6, being careful not to crowd the pan",
+      "Fry for a few minutes, turning in the hot oil until golden all over. Drain any excess oil on kitchen paper and repeat with all 24 beignets",
+      "Remove the custard from the fridge and transfer to a piping bag. Make a small hole in the cooked beignets and pipe the custard in to fill the centre of each one",
+      "Preheat a grill to high. Place the filled beignets on a baking tray, sprinkle with a generous layer of icing sugar and grill under the hot grill until caramelised",
+      "Meanwhile, gently warm the orange sauce in a small pan until it reaches room temperature. Divide the sauce between serving dishes and arrange the beignets on top. Peel the skin from the orange segments and scatter this over the beignets, garnishing with the candied peel and a few sprigs of fresh mint"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Peel",
+        "unit": null,
+        "notes": "from 1/2 an orange",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": null,
+        "notes": "from 1/2 an orange",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "fresh, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18d8b17a873c4ab925d4aee2097a6e26629b8553acaeb7480362c5060684db93",
+    "lineage_hash": "28da7464d62fcfc6418429bff453ab23171a56ce0c8fe9b9954c7e1a4693be7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/orange-sauce-beignets-recipe",
+    "fetchedAt": "2026-08-02T05:14:04.336Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/orange-sauce-beignets-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

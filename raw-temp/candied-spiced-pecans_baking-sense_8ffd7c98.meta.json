@@ -1,0 +1,72 @@
+{
+  "url": "https://www.baking-sense.com/2017/09/28/candied-spiced-pecans/",
+  "slug": "candied-spiced-pecans_baking-sense_8ffd7c98",
+  "title": "Candied Spiced Pecans",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:11:31.816Z",
+  "ldName": "Candied Spiced Pecans",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": "savory",
+  "ldIngredientsRaw": [
+    "1  large egg white",
+    "10 oz Pecan Halves (see note)",
+    "2 oz granulated sugar (¼ cup)",
+    "¼ teaspoon cloves",
+    "¼ teaspoon nutmeg",
+    "¼ teaspoon ginger",
+    "2 teaspoons cinnamon",
+    "1 ½ teaspoons table salt",
+    "2 tablespoons dark rum (optional)",
+    "1 oz unsalted butter",
+    "1 oz brown sugar (2 tablespoons)",
+    "1 tablespoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Line a half sheet pan with parchment paper or a silicone baking mat.",
+    "In a large bowl, whisk 1&#32;large egg white until frothy. Add 10 oz&#32;Pecan Halves and toss to coat the nuts with the egg white. Spread the pecans on the prepared baking pan. Bake until the pecans are crisp and the egg white is dry (about 7-8 minutes). Set the pan with the nuts aside.",
+    "While the nuts are baking, use the same large bowl from the nuts and combine 2 oz&#32;granulated sugar, ¼ teaspoon&#32;cloves, ¼ teaspoon&#32;nutmeg, ¼ teaspoon&#32;ginger, 2 teaspoons&#32;cinnamon  and 1 ½ teaspoons&#32;table salt.",
+    "In a large saucepan combine 2 tablespoons&#32;dark rum, 1 oz&#32;unsalted butter, 1 oz&#32;brown sugar and 1 tablespoon&#32;vanilla extract and cook until bubbling and the sugar is melted. Add the nuts to the pan and toss until the pecans are coated with the syrup.",
+    "Toss the warm nuts into the bowl with the sugar/spice mix to coat.",
+    "Return the nuts to the sheet pan and bake until golden and crispy, about 7-8 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "164 kcal",
+    "carbohydrateContent": "8 g",
+    "proteinContent": "2 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "4 mg",
+    "sodiumContent": "222 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "6 g",
+    "unsaturatedFatContent": "12 g"
+  },
+  "htmlIngredientLines": [
+    "1 large egg white",
+    "10 oz Pecan Halves (see note)",
+    "2 oz granulated sugar (¼ cup)",
+    "¼ teaspoon cloves",
+    "¼ teaspoon nutmeg",
+    "¼ teaspoon ginger",
+    "2 teaspoons cinnamon",
+    "1 ½ teaspoons table salt",
+    "2 tablespoons dark rum (optional)",
+    "1 oz unsalted butter",
+    "1 oz brown sugar (2 tablespoons)",
+    "1 tablespoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

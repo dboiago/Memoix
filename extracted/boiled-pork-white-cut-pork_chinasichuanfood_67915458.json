@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Boiled Pork - White Cut Pork",
+    "time": "1 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean the pork butt firstly and then soak in clean water for around 30 minutes. This helps to remove any raw taste.",
+      "Then prepare a large pot with clean water, add large daikon chunks, scallion, smashed ginger as well as the pork.",
+      "Cover the lid and bring it to a boil, remove any floats after boiling.",
+      "Slow down the fire and simmer for 50 minutes.",
+      "Take the pork out, cut into slices and then serve with dipping sauces.",
+      "Break the daikon, add a small pinch of salt to the soup and garnish some chopped green onion. You get a lovely match of white cute pork and a delicious daikon soup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Butt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": "alt: winter melon",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Smashed",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd8da5622ed9aa48aec45b1626698393976e26efe1cb1bdc973b50f3d8d1ad4c",
+    "lineage_hash": "01b2cbef9c118ed9935fa9eb640fb6582185221c8adb9ab827051c8411a98fbb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/boiled-pork-white-cut-pork/",
+    "fetchedAt": "2026-08-02T10:16:24.103Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/boiled-pork-white-cut-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

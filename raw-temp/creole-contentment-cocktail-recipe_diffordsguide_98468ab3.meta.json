@@ -1,0 +1,42 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/3131/creole-contentment",
+  "slug": "creole-contentment-cocktail-recipe_diffordsguide_98468ab3",
+  "title": "Creole Contentment Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T09:22:30.699Z",
+  "ldName": "Creole Contentment",
+  "ldTime": "PT02M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "Creole Contentment"
+  ],
+  "ldIngredientsRaw": [
+    "45 ml Cognac (brandy)",
+    "30 ml Sercial (dry) Madeira wine",
+    "7.5 ml Maraschino liqueur",
+    "1 dash Orange bitters",
+    "15 ml Chilled water"
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of Luxardo Maraschino Cherry.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "Garnish with maraschino cherry."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "161 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

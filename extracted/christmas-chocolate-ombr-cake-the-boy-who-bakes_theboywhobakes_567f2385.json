@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Christmas Chocolate Ombré Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Follow the instructions [here on the Stork website](http://bakewithstork.co/HzQuc6) making the cake layers and the vanilla frosting.",
+      "To make the ombré colours, take the vanilla frosting and divide into two portions, 3/4 into one bowl and 1/4 into another. Add the cocoa powder and the boiling water to the smaller portion and beat to combine.",
+      "Split this chocolate frosting in half and add a large spoonful of the vanilla frosting to one half, beating to combine. You need to add just enough vanilla frosting to the chocolate to make two varying shades of chocolate.",
+      "To decorate the cake, place the darkest cake layer onto a serving plate and top with a small amount of the vanilla buttercream, spreading flat. Top with the second, lighter chocolate cake layer and again top with a layer of buttercream.",
+      "To finish place the final cake layer on top and spread the remaining vanilla buttercream across the top and sides of the cake, not worrying too much about making it perfectly smooth.",
+      "Take the two chocolate frostings and spread small amounts across the sides of the cake. Use a spatula or bench scraper to gently smooth this into the vanilla frosting, leaving a nice watercolour effect.",
+      "Carefully press the gold leaf to the sides of the cake (I find this is best done with a small soft paintbrush).",
+      "Place 100g dark chocolate into a heatproof bowl and set over a pan of simmering water and stir until about 3/4 of the chocolate is melted. Remove from the heat and stir until the remaining chocolate has melted.",
+      "Place the chocolate into a piping bag and snip off the end. Cover a baking tray in baking parchment and pipe the chocolate onto the parchment into rough Christmas trees of varying heights (these actually look better when a little rustic, so don't worry about perfection).",
+      "Pop the baking tray into the fridge for about 15 minutes or until you can carefully peel the trees from the parchment. When ready to serve carefully press the trees onto the sides of the cake."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vanilla Frosting",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2673199177503cfb8d2fff530d0380706ef7e7e1ec36449b9a5457da3ab16bf1",
+    "lineage_hash": "a76810f34a2ddd0cedf50a107c79863d47d0db180a91d3276be0e57ae8d89cc6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/blog/2016/12/11/christmas-chocolate-ombr-cake",
+    "fetchedAt": "2026-08-01T22:18:20.351Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/blog/2016/12/11/christmas-chocolate-ombr-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Coconutty Butter Beans with Ras El Hanout Flatbreads",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the beans in plenty of salted water overnight, or for at least 8 hours",
+      "Drain and rinse the beans. Place in a pot, cover with fresh salted water, and bring to a boil. Simmer for 1 hour 15 minutes or until tender, then drain",
+      "Meanwhile, make the flatbreads. Whisk together the flour, salt and ras el hanout",
+      "Add the olive oil, then gradually add the warm water, kneading into a dough. Cover, and rest for 15 minutes",
+      "Divide the dough into 4 balls, then roll each one out on a lightly floured surface into 1 cm-thick flatbreads",
+      "Heat a heavy-bottomed frying pan over a medium-high heat. Cook the flatbreads in a dry pan for 2 minutes per side, or until lightly puffed, browned and cooked through",
+      "Wrap in a clean tea towel and set aside until needed",
+      "Heat the coconut oil in a pan and sauté the onion until soft, about 10 minutes",
+      "Add the garlic, ginger and spices, cooking for 1 minute. Stir in the coconut milk and stock, then add cooked beans. Simmer for 30 minutes, then season with salt and pepper to taste",
+      "Squeeze the lime juice into the beans, and stir to combine. Spoon the beans onto the flatbreads and serve warm topped with fresh coriander and extra lime wedges on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter Beans",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 1 Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ras El Hanout",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd1c4136f3d99cfd3394b67e7466df7fdefb27302a82ffd0c50ff940e35a3155",
+    "lineage_hash": "fd7bfe50a1587cac76952bf90b96b0d3ae72f2687fa5c2e8cee90ee85f3dafe2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-butter-beans-ras-el-hanout-flatbreads-recipe",
+    "fetchedAt": "2026-08-02T05:23:38.478Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-butter-beans-ras-el-hanout-flatbreads-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

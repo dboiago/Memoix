@@ -1,0 +1,7 @@
+Robert Burns, though known the world o’er as Scotland’s national poet was born into a poor farming family in Ayrshire rather than the Georgian gentry. Using his wit and intelligence he found himself at many a wealthy table eating the finest of foods. However, as his poetry suggests he preferred and identified with the ‘homely’ fare of the peasant, referring to it in rhyme and song and even elevating the humble haggis, a thrifty peasant pudding to legendary status simply by writing an ode. Many would say more tongue in cheek than reverentially.
+
+Therefore with that in mind it is appropriate that at a Burns supper we would traditionally sit down to a meal with Cock-a-leekie soup to start, followed by the famous pudding, washed down with (though never poured over) a tipple of Burns spirit of choice.
+
+Like with so many traditional Scottish dishes there are countless recipes for Cock-a-leekie. Some would make with a whole chicken, however for me it is a perfect thrifty cooks dish for either a leftover chicken carcass that still has a bit of meat attached, or a few legs salvaged from the more expensive breast meat.
+
+Whichever you choose, a high bone to flesh ratio gives a great rich stock to this warming soup. Definitely hamely fare with the traditional prunes giving a sweetness and rich colour.

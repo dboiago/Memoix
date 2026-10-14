@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse Layer Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat the butter and sugar together until pale and fluffy, then one-by-one, beat in the eggs until smoothly incorporated",
+      "In another bowl, mix together the flour, cocoa powder and baking powder. Tip this into the butter and egg mixture and fold in gently until smooth. Stir through the milk, then divide the batter equally between the two cake tins",
+      "Transfer the tins to the oven and bake for 20–25 minutes until the tops are firm, and a skewer inserted into the middle of the cakes comes out clean. Allow the cakes to cool for 5 minutes in the tins before turning out onto a wire rack to cool down completely",
+      "Once cool, carefully slice the cakes in half horizontally and place the least good-looking layer on a cake plate or stand",
+      "For the mousse, place the chopped chocolate and lime zest in a heatproof bowl set over a pan of boiling water, making sure that the bottom of the bowl doesn’t touch the water",
+      "Place on a low heat and stir constantly until the chocolate is melted. Take the bowl off the heat and allow the chocolate to cool down for a few minutes. Meanwhile, whisk the double cream with an electric whisk until it forms soft peaks",
+      "Beat the two egg yolks into the chocolate – don’t panic if it looks like it has seized into an unmanageable lump – once you start incorporating the cream, it’ll settle down",
+      "Take two large tablespoons of the whipped cream and beat them thoroughly into the chocolate and egg mixture to lighten it, before gently folding through the rest of the whipped cream",
+      "Working as quickly as you can, spread a thick layer of mousse onto the first layer of cooled cake, making sure not to spread the mousse quite to the sides. Place another layer of cake on top, and press down gently, then repeat until you’ve got four layers of cake and four layers of mousse, with one as the topping",
+      "If not eating immediately, refrigerate the cake until needed, and eat within two days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "195",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70% cocoa solids minimum",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4dc97f68a723f52d0842c32cefea05aeb613907d9a43a70f3d5cd602d982e8cd",
+    "lineage_hash": "fafd0e0e6a8eb0e23da818432242128fd156e30564702e7ab987a00c9250e57a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-chocolate-layer-cake-recipe",
+    "fetchedAt": "2026-08-03T14:19:48.320Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-chocolate-layer-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "British Heirloom Tomato Salmorejo with Coconut",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the apple cider vinegar, sugar, and salt to a boil. Remove from the heat and transfer to a heat proof container",
+      "Add the coconut and then refrigerate for 5 hours",
+      "Meanwhile, blend all the salmorejo ingredients and blitz until smooth",
+      "Blanch the lovage in boiling water then refresh it in cold water. Squeeze out any excess water",
+      "Blitz the lovage with vegetable oil until the mixture is heated and acquires a bright green colour",
+      "Pass the oil through muslin cloth, discarding the solids, and refrigerate until ready to serve",
+      "Serve the salmorejo in a bowl, top with a few dots of lovage oil, and then garnish with the chopped tomatoes and radishes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Chunks",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heirloom Tomato",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "g",
+        "notes": "chopped into chunks",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lovage Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heirloom Tomato",
+        "unit": null,
+        "notes": "chopped into small chunks",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon Radish",
+        "unit": null,
+        "notes": "sliced into thin triangles",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "730d7141492fb9946faeb16f7b2793f6d2afc6fc22a73360f426411c910e0872",
+    "lineage_hash": "ba5721e300952367d6ea24ba76eb328632284e769b29c0c58828ef4402f5c1cf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/british-heirloom-tomato-salmorejo-coconut-recipe",
+    "fetchedAt": "2026-08-02T08:09:55.774Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/british-heirloom-tomato-salmorejo-coconut-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

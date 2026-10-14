@@ -1,0 +1,58 @@
+{
+  "url": "https://mykoreankitchen.com/air-fryer-chickpeas/",
+  "slug": "air-fryer-korean-bbq-chickpeas_mykoreankitchen_32ea751a",
+  "title": "Air Fryer Korean BBQ Chickpeas",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T22:00:48.253Z",
+  "ldName": "Air Fryer Korean BBQ Chickpeas",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Korean Fusion",
+  "ldCategory": "Appetizer, Snacks",
+  "ldKeywords": "air fryer chickpeas, bbq chickpeas, crispy chickpeas, oven roasted chickpeas",
+  "ldIngredientsRaw": [
+    "1  canned chickpeas ((400g / 15 ounces), rinsed &amp; well-drained)",
+    "2 tsp olive oil",
+    "2 tsp brown sugar",
+    "1 tsp soy sauce",
+    "1 tsp Korean chili flakes ((gochugaru) or cayenne pepper powder (1/4 tsp to 1/2 tsp))",
+    "1/4 tsp fine sea salt",
+    "1/4 tsp ginger powder",
+    "1/4 tsp garlic powder",
+    "1/4 tsp onion powder"
+  ],
+  "ldInstructionsRaw": [
+    "AIR FRYER METHOD (FASTER!)",
+    "OVEN ROASTING METHOD"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "154 kcal",
+    "carbohydrateContent": "21 g",
+    "proteinContent": "7 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "688 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 canned chickpeas (400g / 15 ounces), rinsed & well-drained",
+    "▢ 2 tsp olive oil",
+    "▢ 2 tsp brown sugar",
+    "▢ 1 tsp soy sauce",
+    "▢ 1 tsp Korean chili flakes (gochugaru) or cayenne pepper powder (1/4 tsp to 1/2 tsp)",
+    "▢ 1/4 tsp fine sea salt",
+    "▢ 1/4 tsp ginger powder",
+    "▢ 1/4 tsp garlic powder",
+    "▢ 1/4 tsp onion powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

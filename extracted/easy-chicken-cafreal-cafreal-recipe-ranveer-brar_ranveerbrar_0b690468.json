@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Chicken Cafreal",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Score the chicken (use a sharp knife to make to make parallel and shallow cuts through the chicken)",
+      "In a grinding jar, add coriander leaves with stem, ginger, garlic, green chillies, cumin seeds, black peppercorns, cinnamon stick, vinegar, and fennel seeds, grind it to a smooth semi thick paste.",
+      "Once the paste is ready add salt, turmeric and lime juice.",
+      "Marinate the chicken with the masala and keep for 1 hour.",
+      "Heat oil in a heavy bottom pan.",
+      "Add the marinated chicken (donât overcrowd the pan) and cook it for 7-8 minutes each side or until cooked through.",
+      "Garnish with onion and lime wedge.",
+      "Serve hot with Poey/pav."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Leaves with Stem",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar/goan Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken on Bone",
+        "unit": "g",
+        "notes": "curry cut",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4cc44f777b35fc0b1895b8a8fdf5f234bcb869eace393c9beffbaec508b70929",
+    "lineage_hash": "75bc81be792f49eee747dcb792d4aa84578471a6523de2816b91d5cb1d2ad23f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-cafreal/",
+    "fetchedAt": "2026-08-02T15:50:13.745Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-cafreal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

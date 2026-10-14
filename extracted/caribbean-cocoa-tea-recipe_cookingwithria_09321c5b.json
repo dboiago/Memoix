@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Caribbean Cocoa Tea",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "163",
+      "carbohydrateContent": "28",
+      "fatContent": "5",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Prepare the Cocoa Mixture: If using cocoa sticks, grate them finely or grind them using an electric grinder. In a small bowl, mix the cocoa powder or grated cocoa stick with 1/2 cup of water to form a smooth paste. Set aside.",
+      "Boil Water and Spices: In a medium saucepan, combine the remaining 1 1/2 cups of water, milk, cinnamon stick, bay leaves, cloves, cardamom pods, and freshly grated nutmeg. Bring to a gentle boil over medium heat, allowing the spices to infuse for about 5-7 minutes.",
+      "Add Cocoa, Vanilla, and Sugar: Gradually whisk the cocoa paste into the simmering spiced liquid until fully incorporated. Stir in the granulated sugar, adjusting the amount to your desired sweetness.",
+      "Simmer and Blend: Reduce the heat to low and let the Cocoa Tea simmer for 5 more minutes, stirring occasionally. For a smoother texture, use an immersion blender or strain the mixture to remove the spices.",
+      "Serve Hot: Ladle the Cocoa Tea into mugs or enamel cups. If desired, sweeten further with condensed milk."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water Divided",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Stick",
+        "unit": null,
+        "notes": "alt: 4 tablespoons unsweetened cocoa powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Freshly Grated",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar Adjust to Taste",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk for Serving (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef8ad0553be45ffd0f90638c78f3ed5bf07de48149f9a45b3634651be7d205d1",
+    "lineage_hash": "51cde749eac3e0711a9ffa9d2a6e6bc2667aa019e210a043a18173c1ef445400"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2025/10/cocoa-tea-recipe/",
+    "fetchedAt": "2026-09-25T22:27:12.510Z"
+  },
+  "rawSource": "https://cookingwithria.com/2025/10/cocoa-tea-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

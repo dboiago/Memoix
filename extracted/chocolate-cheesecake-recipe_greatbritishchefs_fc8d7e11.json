@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Chocolate Cheesecake",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the cheesecake crust, grind the biscuits in a food processor. Melt the butter, then add the biscuits and stir until combined. Transfer the mixture to a 20cm spring-clip cake tin and press down to form a crust",
+      "To make the cheesecake filling, melt the chocolate in a heatproof bowl over a bain marie. Meanwhile, melt the gelatine in a tablespoon of hot water",
+      "In a clean food processor bowl, blend the cream cheese, sugar and egg yolks together until smooth. In a large bowl, whip the cream to a soft peak and, in a separate bowl, whip the egg whites to a soft peak",
+      "Add the melted chocolate and gelatine to the cream cheese mixture and blend well, then pour into a large clean bowl. Gently fold in the cream followed by the egg whites. When thoroughly mixed, pour the filling into the prepared crust and leave the cheesecake to set overnight in the refrigerator",
+      "To make the chocolate cream, put the milk in a saucepan. Split the vanilla pod lengthways, add to the milk and heat gently to scalding point. In a heatproof bowl, whisk together the egg yolks, 75g of caster sugar and flour. Pour the hot milk over the egg mixture, mixing well, then return the lot to the saucepan and cook gently, stirring all the time until thickened. Pour this pastry cream through a sieve, remove the vanilla pod and chill",
+      "Cream the butter and remaining 100g of sugar together until light and fluffy. Add the whole eggs one by one, beating to incorporate, then add the almonds and cocoa powder and beat again. Stir in the rum and pastry cream. Chop the chocolate into tiny pieces and stir it into the mixture, then chill",
+      "To make the pithiviers, roll out the pastry. Cut out eight 10cm squares and eight 15cm squares. Place the smaller squares on a floured surface and, using an ice cream scoop, place a ball of chilled chocolate cream in the centre. Beat the egg until smooth then lightly brush the edges of the pastry around the filling. Put the large squares on top, press down and around firmly. Use a 10cm round pastry to trim the pastry parcels into rounds. Press the edges together with a fork to seal, then chill",
+      "Preheat the oven to 200°C/Gas mark 6 and line a baking tray with non-stick parchment. Brush the pastries with the remaining beaten egg and place on the paper. Bake for 15-18 minutes or until the pastry is golden, puffed, shiny and crisp. Remove from the oven and dust with icing sugar",
+      "To serve, remove the cheesecake from the refrigerator and sprinkle with grated chocolate. Cut into slices and place one on each serving plate. Add the chocolate pithiviers, a scoop of chocolate ice cream and some crème fraîche and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sachet of Gelatine",
+        "unit": null,
+        "notes": "weighing 5g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "601f7ca02029698b72493d862e6b0d867b0cf345bf1a7478c3b8c8557a0b1721",
+    "lineage_hash": "e76dde0b511341bad2709380bb48ed1a682783a5891a15b0428afd8c86169421"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cheesecake-recipe",
+    "fetchedAt": "2026-08-03T17:40:37.361Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cheesecake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-eggplants-with-minced-pork/",
+  "slug": "chinese-eggplants-with-minced-pork_chinasichuanfood_567522c2",
+  "title": "Chinese Eggplants with Minced Pork",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:13:18.660Z",
+  "ldName": "Chinese Eggplants with Minced Pork",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Eggplant, pork",
+  "ldIngredientsRaw": [
+    "2  long Asian eggplants",
+    "1 tbsp. salt",
+    "1/4 cup minced pork",
+    "1 tsp. minced ginger",
+    "1/2 tbsp. Chinese cooking wine",
+    "3 tbsp. cooking oil ( ,divided)",
+    "2  garlic cloves ( ,sliced)",
+    "1  thumb ginger ( ,sliced)",
+    "2  green onions ( ,white half and green half divided)",
+    "1/2 tbsp. doubanjiang ( ,skip this if you prefer a mild taste or double for a hotter version)",
+    "1 tbsp. light soy sauce",
+    "1/8 tsp. salt",
+    "1/8 tsp. sugar",
+    "1/2 tsp. sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the ends of Asian eggplants and then cut into small cubes (for the best flavor, try to cut each cubes with some skin). Transfer them into a large pot filled with water, add 1 tbsp. salt and soak for 10 minutes. Add a weight if necessary to make sure the eggplants is well soaked. Set aside to drain completely.",
+    "Heat 3 tablespoons of oil in wok and fry the eggplants for 6-9 minutes until the eggplants become soft and withered. Transfer eggplants out and leave the oil in.",
+    "Add minced pork to stir-fry until aromatic and slightly golden brown. Add shaoxing wine along the edges.  Transfer to the edges of the wok and place the doubanjiang in to fry for another 1 minute. Slow down the fire.",
+    "Add garlic, ginger and scallion onion until aroma.",
+    "Return the eggplants along with fried minced pork, soy sauce, sugar, salt and sesame oil. Mix well.",
+    "Garnish chopped green onion (green parts) and serve with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "354 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "7 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "20 mg",
+    "sodiumContent": "434 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "7 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 long Asian eggplants",
+    "1 tbsp. salt",
+    "1/4 cup minced pork",
+    "1 tsp. minced ginger",
+    "1/2 tbsp. Chinese cooking wine",
+    "3 tbsp. cooking oil  ,divided",
+    "2 garlic cloves  ,sliced",
+    "1 thumb ginger  ,sliced",
+    "2 green onions  ,white half and green half divided",
+    "1/2 tbsp. doubanjiang  ,skip this if you prefer a mild taste or double for a hotter version",
+    "1 tbsp. light soy sauce",
+    "1/8 tsp. salt",
+    "1/8 tsp. sugar",
+    "1/2 tsp. sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

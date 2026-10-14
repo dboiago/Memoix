@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Dang Gui and Shiitake Chicken",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a cooking pot, heat the cooking oil and stir fry the chicken pieces for about 3 minutes.",
+      "Add the shiitake mushroom, wolfberry fruit, angelica root, jujube fruit, Shaoxing wine, soy sauce, and salt. Stir fry for another 2 minutes.",
+      "Add the water and bring to a boil. Reduce the heat and simmer for 30 minutes.",
+      "Drizzle cornstarch mixture to the pot and cook for another 2-3 minutes until the liquid has thickened. Remove from heat and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken",
+        "unit": null,
+        "notes": "cut into 4-8 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "dried, rehydrate overnight, cut into bite size pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Wolfberry Fruit",
+        "unit": "Tbsp",
+        "notes": "Chinese: gou gi zi",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Angelica Root",
+        "unit": "slices",
+        "notes": "Chinese: dang gui root",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jujube Fruit",
+        "unit": null,
+        "notes": "Chinese: hong zao, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water From Re-hydrating the Shiitake Mushroom",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "Chinese: Shao Xing Hua Tiao Jiu",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": "mixed with 1 tablespoon water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22cbce1c2edba18e113989c1ff3c093e4f07796ae5eb2d7ef0eee1e88aa22fe2",
+    "lineage_hash": "8e89d3a1c240452a0620fe19b5b73a793438d97fd9a03871bf75d424ce1ad306"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/dang-gui-and-shiitake-chicken.html",
+    "fetchedAt": "2026-08-02T12:09:05.755Z"
+  },
+  "rawSource": "https://dailycookingquest.com/dang-gui-and-shiitake-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

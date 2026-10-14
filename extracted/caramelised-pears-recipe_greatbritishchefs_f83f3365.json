@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Caramelised Pears",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the Gorgonzola ice cream. Combine the milk and cream in a medium pan, bring to the boil then remove from the heat",
+      "Whisk the egg yolks and sugar in a mixing bowl until pale and fluffy. Slowly pour the cream and milk mixture onto the sugar and eggs, whisk to combine then return to the pan",
+      "Place the pan over a medium heat and bring the custard to 80°C, stirring continuously. Remove from the heat. Whilst still hot, add a pinch of salt and the Gorgonzola. Using a hand blender, blitz until smooth",
+      "Pass through a fine strainer and set aside to cool before churning in an ice cream maker. Once the ice cream is ready, store in the freezer while you prepare the rest of the dish",
+      "Slice a small layer from the base of 4 of the pears. Use a Parisian spoon or melon baller to scoop out the core",
+      "Place the 4 pears in a pan with the water, sugar, lemon juice and strips and zest, bay leaves, rosemary and thyme",
+      "Cover with a cartouche, bring to a gentle simmer and poach until tender, approximately 15-20 minutes. Remove from the heat and set aside",
+      "Meanwhile, prepare the sourdough crisps. Slice 2 pieces of sourdough very finely with a knife or slicer, spray with vegetable oil and curl into different shapes",
+      "Place in the oven for 15-20 minutes until crisp but not coloured. Remove and allow to cool",
+      "Blend one of the poached pears with a small amount of poaching liquor until a thick purée is formed. Pass through a fine strainer and set aside",
+      "Cut 2 of the poached pears in half lengthways and remove any fibrous core that still remains. Cut the fourth poached pear into 2cm chunks. Roll both the pear chunks and pear halves in Demerara sugar until lightly coated, shaking off any extra",
+      "Place onto a tray and lightly caramelise the sugar-coated surfaces of the pear pieces using a blowtorch",
+      "Take the final raw pear, peel and cut into batons approximately 5cm in length, toss in a small amount of lemon juice and set aside",
+      "To serve, spread a small teaspoon of pear purée in the centre of each plate, followed by batons of raw pear and a quenelle of the Gorgonzola ice cream",
+      "Garnish each plate with caramelised pear chunks, 2-3 pieces of watercress, sourdough crisps and half a caramelised pear. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Williams Pears",
+        "unit": null,
+        "notes": "large, ripe and peeled",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "2 strips of zest and juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorgonzola Piccante",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Watercress",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79ef1bdd99ae0f8750261ce9de962e4f2eb6fe8e097c96bfa78a973754a696af",
+    "lineage_hash": "775a8ef0380af622b123eba293d213a92d15c7e30f476447c0839ca16b420ae9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/caramelised-pear-recipe",
+    "fetchedAt": "2026-08-03T16:01:47.830Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/caramelised-pear-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

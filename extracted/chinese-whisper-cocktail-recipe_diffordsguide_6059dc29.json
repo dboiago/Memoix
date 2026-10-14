@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Chinese Whisper",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": "Martini",
+    "garnish": [
+      "Lemon Zest Twist"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "MUDDLE ginger in base of shaker.",
+      "Add other ingredients and SHAKE with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS lemon zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "slice",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citrus Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe2d404d7f90166b87fccdbf2ad5ac73a12860fa103d180ae6ec700847d27d20",
+    "lineage_hash": "2075dcbbd8d4f8d5183bd1a84d5ff1c6b3310485afa4c92e61ad9d5083f25667"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/423/chinese-whisper",
+    "fetchedAt": "2026-08-02T04:01:18.805Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/423/chinese-whisper",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

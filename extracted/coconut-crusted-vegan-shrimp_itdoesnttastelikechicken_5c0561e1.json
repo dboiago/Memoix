@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Coconut Crusted Vegan Shrimp",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "497",
+      "carbohydrateContent": "43",
+      "fatContent": "31",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "In bowl 1: whisk together the flour, salt, and pepper.",
+      "Next, bowl 2: mix the warm water with the chia or flax (this will thicken in about 10 minutes).",
+      "Lastly, bowl 3: mix together the coconut and panko."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cocktail Sauce (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Cocktail Sauce (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cocktail Sauce (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": null,
+        "notes": "to taste (optional)",
+        "amount": "0",
+        "section": "Cocktail Sauce (optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "White Miso Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Soy Curls",
+        "unit": "oz",
+        "notes": "1 cup, *see notes",
+        "amount": "2",
+        "section": "soy curls",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": "plus more if needed",
+        "amount": "½",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chia",
+        "unit": "tsp",
+        "notes": "alt: ground flax",
+        "amount": "4",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetend Shredded Coconut",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Panko Bread Crumbs",
+        "unit": "C",
+        "notes": "gluten-free if preferred",
+        "amount": "¾",
+        "section": "coconut panko coating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Oil for Frying",
+        "unit": null,
+        "notes": "(such as vegetable or canola)",
+        "amount": "0",
+        "section": "coconut panko coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3971fca5a75d9ee4e0e99d0cd19cfb4a754e2dc3720ccfa1b0a27eefbbf0d5b5",
+    "lineage_hash": "3fc28936f79af073f6cb82adb5c806059c81f6b2d47a1fe21ee19942417cfe56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/coconut-crusted-vegan-shrimp/",
+    "fetchedAt": "2026-08-01T23:58:55.258Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/coconut-crusted-vegan-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

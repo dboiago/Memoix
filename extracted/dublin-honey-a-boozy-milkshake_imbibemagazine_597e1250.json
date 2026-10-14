@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Dublin Honey",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tall",
+    "garnish": [],
+    "subcategory": "Beer",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by pouring 2 oz. of Guinness in the bottom of a tall glass.",
+      "Add 2 small scoops of the ice cream, pour 1 oz. of chocolate syrup over the top, then stir to combine.",
+      "Finish with 3 additional oz. of Guinness and top with 1/2 oz. of tawny port."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Guinness Stout",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Caramelized-honey Ice Cream",
+        "unit": null,
+        "notes": "or sub in vanilla and drizzle with honey",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tawny Port",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78665efaba97f2f74a55fc3b38142ec01856bd4696c7da7c317461ce33632dcc",
+    "lineage_hash": "d852bb4129cd3b79a84c7a2b12442a94c98b4273c4513e868b958aa2c07e0eb2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dublin-honey-boozy-milkshake/",
+    "fetchedAt": "2026-08-03T19:28:24.034Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dublin-honey-boozy-milkshake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

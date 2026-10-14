@@ -1,0 +1,64 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-vegan-lemon-tofu/",
+  "slug": "crispy-vegan-lemon-tofu_itdoesnttastelikechicken_cedb1b36",
+  "title": "Crispy Vegan Lemon Tofu",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T00:12:50.907Z",
+  "ldName": "Crispy Vegan Lemon Tofu",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 tofu slices"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "tofu",
+  "ldIngredientsRaw": [
+    "2  lemons, (zested and juiced)",
+    "1/4 cup water",
+    "3 cloves garlic, (minced)",
+    "2 teaspoons agave or maple syrup",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 block (350g) extra-firm or firm tofu, (drained, pressed, and sliced into 8 pieces (see notes))",
+    "1/3 cup flour",
+    "1/2 cup panko crumbs",
+    "2 tablespoons nutritional yeast",
+    "1/2 teaspoon dried parsley",
+    "1/4 teaspoon garlic powder"
+  ],
+  "ldInstructionsRaw": [
+    "Marinate the tofu: In a large resealable bag or medium dish, mix together all of the marinade ingredients. Add in the slices of tofu and toss lightly to coat. Seal or cover and put in the fridge to marinate for a minimum of 30 minutes, but you can let marinate in the fridge for up to 3 days.",
+    "Panko coat the tofu:&nbsp;Take three small bowls. Add the flour to one. Pour off the leftover lemon marinade into the second, leaving the tofu behind. Mix together the panko, nutritional yeast, dried parsley, and garlic powder in the third.",
+    "Take a slice of the marinated tofu and toss it into the flour to coat, then dip the tofu into the leftover marinate, and finally coat in the panko mixture. Repeat with all the tofu slices. You can bake or fry the tofu depending on your preference.",
+    "To bake the tofu:&nbsp;Preheat your oven to 400F (200C). Line a baking sheet with parchment paper. Lay the panko coated tofu in a single layer and bake for 18 to 23 minutes&nbsp;until lightly golden.",
+    "To fry the tofu: heat a large skillet over medium-high heat with enough oil to coat the bottom of the pan.&nbsp;When hot, carefully fry the tofu pieces until they are golden brown on both sides, and heated through. About 3 to 6 minutes per side. The panko coating can be a little fragile and falls off easily, so I found the best technique was to use a large spatula (and not tongs) for flipping. Just be gentle when handling the tofu.",
+    "To air fry the tofu: Preheat your airy fryer to 370F (190C). Lay the panko-coated tofu in a single layer, working in batches if needed, and fry for 14 to 19 minutes until lightly golden."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "104 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[lemon marinated tofu]",
+    "▢ 2 lemons,, zested and juiced",
+    "▢ ¼ cup water",
+    "▢ 3 cloves garlic,, minced",
+    "▢ 2 teaspoons agave or maple syrup",
+    "▢ ¼ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "▢ 1 block (350g) extra-firm or firm tofu,, drained, pressed, and sliced into 8 pieces (see notes)",
+    "[panko coating]",
+    "▢ ⅓ cup flour",
+    "▢ ½ cup panko crumbs",
+    "▢ 2 tablespoons nutritional yeast",
+    "▢ ½ teaspoon dried parsley",
+    "▢ ¼ teaspoon garlic powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chinese Steamed Ribs with Fermented Black Bean",
+    "time": "30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "879",
+      "carbohydrateContent": "14",
+      "fatContent": "72",
+      "proteinContent": "44"
+    },
+    "directions": [
+      "Wash the ribs and then soak in clean water for half hour. Replace the water with clean water once again.  Then drain completely.",
+      "Add white pepper, sugar, ginger, fermented black beans, oyster sauce, light soy sauce and cooking wine. Combine well, covered and set aside for at least 3 hours or overnight.",
+      "Add 1 tablespoon of cornstarch and mix well. Then place in garlic and fermented black beans. Pour around 2 tablespoons of hot oil on surface.",
+      "Steam the ribs for 30 minutes after the water boils. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ribs",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Other",
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other",
+        "isOptional": false
+      },
+      {
+        "name": "Beech Mushooms",
+        "unit": null,
+        "notes": "root removed",
+        "amount": "0",
+        "section": "Other",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c40da9d74ca5a8bc9aec70b00bb49e042d384de3eb4730c71fad9e1064e670cc",
+    "lineage_hash": "3e4518dfb755c24f82cddbb249d0ef7da0268cd5ee3bf62ec8091d211f2a086f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-steamed-ribs-with-black-bean/",
+    "fetchedAt": "2026-08-02T01:50:27.744Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-steamed-ribs-with-black-bean/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

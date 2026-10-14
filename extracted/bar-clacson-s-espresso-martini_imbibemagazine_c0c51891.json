@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bar Clacson's Espresso Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice. Shake with a large ice cube to briefly to chill. Strain into a chilled coupe glass and garnish.\nEspresso SyrupCombine equal parts fresh espresso and white sugar by weight. Stir until the sugar is dissolved. Allow to cool before use and store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquavit",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Fernet",
+        "unit": null,
+        "notes": "Clacson uses Leopold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9463ae234c01c3c3ed9aa727695708f130a7b70edd8d623cdf62e2afe1375993",
+    "lineage_hash": "a10859f05e7847891dfa43738d96f3bb16b6f198f8e7c13c1fadebe16cfbb39f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bar-clacsons-espresso-martini/",
+    "fetchedAt": "2026-08-04T02:02:03.250Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bar-clacsons-espresso-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

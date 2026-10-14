@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Cornish Rarebit",
+    "time": "15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the cheddar and place in a saucepan with the beer over a medium heat. Cook, stirring occasionally, until the cheese melts and the mixture starts to bubble",
+      "Stir in the flour, breadcrumbs, and mustard and continue cooking until the mixture comes cleanly away from the sides of the pan and forms a ball. Remove from the heat and leave to cool",
+      "Once cool, beat in the egg yolks until you have a smooth mixture, then the rarebit is ready to use. Spread across some slices of bread and pop under the grill until bubbling. Cut into soldiers and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loaf of Bread",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87053f38cc2fcc9fa4ff96b44727de773c695d8ad1bd082036cbcc2989f84dea",
+    "lineage_hash": "6cdfbc35d914631d543adb8f687472730bad609f3f982d4c21fffca26037edfd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cornish-rarebit-recipe-cheddar",
+    "fetchedAt": "2026-08-03T15:27:48.689Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cornish-rarebit-recipe-cheddar",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

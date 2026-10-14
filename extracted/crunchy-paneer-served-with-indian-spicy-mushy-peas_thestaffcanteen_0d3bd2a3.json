@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Crunchy paneer served with Indian spicy mushy peas, courgette raita",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For raita: Heat 1 teaspoon oil in the wok. Add cumin seeds fry until brown",
+      "Toss the courgette ribbons until softened add salt to taste",
+      "Add to the yoghurt and set aside",
+      "For the peas: heat 2 tablespoon oil on setting no 10 in a wok and add the peas with all the spices. Toss for 4-5 minutes. Using the back of your spoon and a splash of water mash the peas. Set aside in a bowl",
+      "For the paneer: Combine flour, cornflour and ½ tsp of salt, add enough Blue Nun Rivaner Riesling wine to make a batter. Cut paneer into small square pieces. Dip them in the paste and fry till golden brown",
+      "Combine the paneer and peas in the wok. Serve with courgette raita on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold Pressed Rapeseed Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Courgette Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Courgette Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Courgette Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": "in ribbons",
+        "amount": "1",
+        "section": "Courgette Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Courgette Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "Savera Paneer, cut into cubes",
+        "amount": "200",
+        "section": "Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tspn Corn Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tspn Plain Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Blue Nun Rivaner Riesling",
+        "unit": "Tbsp",
+        "notes": "to make batter",
+        "amount": "2",
+        "section": "Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "250",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Powder",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "to help frying",
+        "amount": "0",
+        "section": "Spicy Peas",
+        "isOptional": false
+      },
+      {
+        "name": "Tbnsp Cold Pressed Rapeseed Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "2",
+        "section": "Spicy Peas",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "472d5676bb32a88ed69430cb75922d304daee9a8583aad880ba016ec271ca6ca",
+    "lineage_hash": "cfb0692c2870f74c0172cd8cad68f5be33e86f6852cde03c7aab41547818ae62"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/crunchy-paneer-served-with-indian-spicy-mushy-peas-courgette-raita-v",
+    "fetchedAt": "2026-08-03T06:02:05.777Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/crunchy-paneer-served-with-indian-spicy-mushy-peas-courgette-raita-v",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

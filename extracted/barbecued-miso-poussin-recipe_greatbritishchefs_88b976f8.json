@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Barbecued Miso Poussin",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the den miso for the marinade. Prepare a bain marie by filling a pan of water and sitting a heatproof bowl snugly over the top (ensuring the bottom of the bowl doesn’t touch the water). Whisk together the miso, sugar, mirin and sake and pour into the bowl. Cook over a high heat for about 20 minutes, stirring continuously. Remove and chill",
+      "Make the marinade by mixing 100ml of the den miso and the chillies together. Use a sharp knife to cut each poussin clean in half and make a couple of score marks, one in the fat part of the drumsticks and one in the thighs. Marinate in the miso-chilli marinade for at least 6 hours and up to 12 hours",
+      "To make the dip, whisk together all the ingredients, except the oil. Slowly whisk in the oil until emulsified. This will keep in the fridge for a month",
+      "To make the salad, thinly slice the daikon on a Japanese mandoline and layer the slices in piles of 5 or 6. Using a knife, shred very thinly. Do the same with the carrot and cucumber and mix together. Add the mint and coriander leaves and drizzle with the yuzu, soy sauce and extra virgin olive oil",
+      "Set up your barbecue and get the charcoal very hot. Once the flames start to die down a little and the embers begin to glow, put your poussins on the grill. If you’re concerned about the poussins not being cooked through enough and burning, take off the barbecue and finish cooking in a hot oven, about 180°C/gas mark 4 for 8–10 minutes. To check the birds are done, insert a thin metal skewer or the sharp end of small knife into the thickest part of the thigh, pause for a couple of seconds, then hold the skewer to your lip; if its scorching hot they're done",
+      "Once cooked, serve with the daikon salad and the dip on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Poussin",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Miso Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco Green",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Purée",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "with a bit of stem left on",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faab8cb15717162bdea371c1a3681806b40620a4391297764a9171634974a8ea",
+    "lineage_hash": "5356781ab01341e7c63f5ad499e94ed948786caf6851c5480a4616e4d4e351e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/babecued-miso-poussin-recipe",
+    "fetchedAt": "2026-08-03T11:24:09.270Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/babecued-miso-poussin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

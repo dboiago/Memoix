@@ -1,0 +1,49 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/classic-vegan-protein-smoothie/",
+  "slug": "classic-vegan-protein-smoothie_itdoesnttastelikechicken_54324b57",
+  "title": "Classic Vegan Protein Smoothie!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T05:10:35.310Z",
+  "ldName": "Classic Vegan Protein Smoothie (with or without protein powder)",
+  "ldTime": "PT3M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, Snack",
+  "ldKeywords": "smoothie",
+  "ldIngredientsRaw": [
+    "1 serving vegan protein ((see notes))",
+    "1 - 1 1/2 cups cup plant-based milk ((see notes))",
+    "1 heaping cup frozen fruit ((see notes))",
+    "1 - 2  boosters (optional) ((see notes))"
+  ],
+  "ldInstructionsRaw": [
+    "Choose 1 - 2 vegan protein options (see notes). Then choose your plant-based milk option. Some kinds of plant-based milk have a lot of extra protein so it&#39;s a great way to add even more protein to your smoothie if desired (see notes for a guide).",
+    "To a blender, add your protein option, 1 cup of plant-based milk, your frozen fruit of choice, and any optional boosters you like. Blend until smooth and creamy. If the smoothie is too thick, add up to 1/2 cup more plant-based milk until you reach your desired consistency."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  example smoothie made with 1 scoop pea protein, 1 cup mixed berries, and 1 cup soy milk. Nutrition will vary depending on what ingredients you use.",
+    "calories": "294 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "29 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "420 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "19 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 serving vegan protein, (see notes)",
+    "▢ 1 - 1 ½ cups cup plant-based milk, (see notes)",
+    "▢ 1 heaping cup frozen fruit, (see notes)",
+    "▢ 1 - 2 boosters (optional), (see notes)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

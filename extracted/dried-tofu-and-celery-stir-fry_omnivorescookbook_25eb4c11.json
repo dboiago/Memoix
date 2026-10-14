@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Dried Tofu and Celery Stir Fry (西芹炒香干)",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "142",
+      "carbohydrateContent": "9.7",
+      "fatContent": "5.8",
+      "proteinContent": "13.3"
+    },
+    "directions": [
+      "Add the pork and the rest of the marinating ingredients into a small bowl. Mix very well with your hands until evenly coated.",
+      "Combine the sauce ingredients in a small bowl and stir to mix well.",
+      "Heat 1 tablespoon of oil in a large skillet or wok until hot. Add the ground pork and spread it out with a spatula. Let cook for 1 minute without moving, or until the bottom is lightly charred. Flip to cook the other side and chop the pork into smaller pieces, until the pork is just cooked through.",
+      "Your pan should still have quite some oil in it. If not, add 1 tablespoon of oil, plus the ginger and garlic. Stir a few times to release fragrance.",
+      "Add the celery. Stir and cook until it just starts to get tender, 2 to 3 minutes or so.",
+      "Add the smoked tofu and sprinkle with the salt. Stir and cook for another 2 minutes, or until the celery has turned tender.",
+      "If you reserved the celery leaves, add them to the pan (Optional).",
+      "Pour in the sauce and stir to mix everything together, 1 to 2 minutes. Turn to low heat and carefully try out the tofu and celery. Adjust seasoning by sprinkling a bit more salt, if needed. Transfer everything to a big plate. Serve as a side or main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "100 g",
+        "amount": "4",
+        "section": "Marinating (optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating (optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating (optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating (optional but highly recommended)",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "Tbsp",
+        "notes": "or water",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalks",
+        "notes": "you can serve the celery leaves as well, sliced to 1/3” (6 cm) thick 2” (10 cm) long strips",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Tofu",
+        "unit": "C",
+        "notes": "*Footnote, dried, sliced (or tofu cutlet, sliced into 1/3” (6 cm) thick 2” (10 cm) long strips)",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "80077491a3b04d57c7dd885485195365f9ea675ecd7da4515afa6465b82e334a",
+    "lineage_hash": "32fa89d423682447d0e659e560af6520b336354389ae7fecef13cef0a01baabc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/dried-tofu-and-celery-stir-fry/",
+    "fetchedAt": "2026-08-02T02:32:06.313Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/dried-tofu-and-celery-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

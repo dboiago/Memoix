@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Brazilian Lemonade",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "118",
+      "carbohydrateContent": "24",
+      "fatContent": "3",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "slice 4 of the limes in 8 parts each and add them to a blender",
+      "add the condensed milk and the water to the blender along with the limes and blend for no more than 15 seconds (the more you blend, the bitterer the limeade will turn out)",
+      "using a fine mesh strainer, strain the juice from the blender into a pitcher filled with ice",
+      "slice the remaining lime in half, and sqeeze into the pitcher for an extra punch of lime flavor",
+      "Stir and serve right away!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccbeeb5423b706e21685679a690a24daccb43528f14d463c3fbd25634829bc16",
+    "lineage_hash": "858366f68fd73b320d17b10b567e7183b795e33888b3770d1885161f52cdc2f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-lemonade/",
+    "fetchedAt": "2026-09-25T19:48:18.815Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-lemonade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

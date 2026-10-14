@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Yu Choy Stir Fry (清炒油菜)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "39",
+      "carbohydrateContent": "1.6",
+      "fatContent": "3.4",
+      "proteinContent": "0.7"
+    },
+    "directions": [
+      "Remove the tough ends of the yu choy. Slice the stem into small bite-size pieces, and cut the leaves into large bite-size pieces. Separate the stems and leaves.",
+      "Heat oil in a large skillet (or wok) over high heat until hot. Add the garlic. Stir a few times to release fragrance.",
+      "Add the yu choy stems. Stir and cook for 30 seconds. Add the leaves. Stir a few times to coat with oil. Sprinkle the salt evenly. Keep stirring until the leaves are just withered and the stems turn tender. Turn to low heat and taste the yu choy carefully. Adjust seasoning by adding more salt, if needed. Transfer everything to a plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yu Choy",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "coarsely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6bcb693af4515d8b9ca1c933aadf457b5d484dae6f04b17445ba91054858199b",
+    "lineage_hash": "c83a8e5c33368e682d944bd3026e5d316e447c158a99faae5c21e8888bbab4e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/yu-choy-stir-fry/",
+    "fetchedAt": "2026-08-02T02:33:34.955Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/yu-choy-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

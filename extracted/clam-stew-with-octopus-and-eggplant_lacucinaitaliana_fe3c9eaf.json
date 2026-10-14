@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Clam Stew With Octopus and Eggplant",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the clams and let them purge for 3 hours, changing the water several times.",
+      "Meanwhile, place the octopus in a saucepan with a bay leaf, an unpeeled garlic clove, and a bunch of parsley; cover with cold water and bring to a boil. Cook for 10 minutes. Remove from the heat and let the octopus cool in its cooking water. Remove any excess fibers and cut into slices. Sauté in a pan with 1-2 Tbsp. butter and a sprig of rosemary for 1-2 minutes. Set aside.",
+      "Cut the shallots into wedges and quarter the cherry tomatoes. Heat 1/4 cup oil in a pan; add the shallot, an unpeeled garlic clove, the cherry tomatoes, oregano, and a handful of chopped parsley. Add the clams and a ladleful of water; cover and let the clams open. Season with salt and remove from the heat.",
+      "Chop a large bunch of parsley. Cut 2 slices of eggplant around 1 1/2\" thick; from each slice, cut out two - 3\" x 1 1/2\"- rectangles. Brush with oil on all sides and then with soy sauce and coat in the chopped parsley. Place 2 eggplant rectangles at a time in a cold pan: turn the heat to low. When the eggplant starts to sizzle, continue to cook over low heat for 2 minutes on each side, flipping over onto clean areas of the pan. Cut the eggplant into slices and serve with the clam stew and octopus."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clams",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Octopus",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggplant",
+        "unit": null,
+        "notes": "Japanese or slender",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "unpeeled clove",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "bunch",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": null,
+        "notes": "sprig",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1bc6bd321890503c7f048d38b29c77aeb42cd90f2b15b3f22a0d87491ae46a2b",
+    "lineage_hash": "2038fb92adfb4c8e06a56fd434d7554c24c44b6279024efde8a2f3c94482bed1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/clam-stew-with-octopus-and-eggplant",
+    "fetchedAt": "2026-08-01T22:39:12.390Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/clam-stew-with-octopus-and-eggplant",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://thewoksoflife.com/braised-spring-bamboo-shoots/",
+  "slug": "braised-spring-bamboo-shoots_thewoksoflife_05109e70",
+  "title": "Braised Spring Bamboo Shoots (油焖笋)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T08:35:19.643Z",
+  "ldName": "Braised Spring Bamboo Shoots - Yóu Mèn Sun 油焖笋",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Vegetarian",
+  "ldKeywords": "bamboo shoots",
+  "ldIngredientsRaw": [
+    "1 pound bamboo shoots ((450g, fresh or frozen, tough outer layers removed))",
+    "neutral oil ((such as vegetable or canola))",
+    "2  thin slices ginger",
+    "2 teaspoons sugar or rock sugar ((rock sugar is preferred, if you have it on hand))",
+    "2 teaspoons Shaoxing wine",
+    "1½ tablespoons light soy sauce",
+    "½ teaspoon dark soy sauce",
+    "1 cup water"
+  ],
+  "ldInstructionsRaw": [
+    "Before we begin, a note: if you’re using fresh winter bamboo shoots, it’s a good idea to blanch the bamboo first...once they are cut. You will also need to increase the simmering time when using winter bamboo.",
+    "Heat 3 tablespoons of oil in a wok over medium heat. Add the ginger and cook for about 30 seconds. Turn down the heat, and add the rock sugar, allowing it to dissolve completely in the oil. Now add the bamboo and turn up the heat; stir and mix everything well. Cook for a few minutes––until the edges of the bamboo start to brown slightly.",
+    "Now add the Shaoxing wine, light soy sauce, dark soy sauce, and water. Stir to combine. Cover and simmer for about 10 minutes over medium heat. After 10 minutes, uncover the pan, turn up the heat to reduce the liquid, and add a couple of drops of oil before plating. It sounds hokey, but this will give the dish an attractive sheen!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "66 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "287 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 pound bamboo shoots (450g, fresh or frozen, tough outer layers removed)",
+    "▢ neutral oil (such as vegetable or canola)",
+    "▢ 2 thin slices ginger",
+    "▢ 2 teaspoons sugar or rock sugar (rock sugar is preferred, if you have it on hand)",
+    "▢ 2 teaspoons Shaoxing wine",
+    "▢ 1½ tablespoons light soy sauce",
+    "▢ ½ teaspoon dark soy sauce",
+    "▢ 1 cup water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

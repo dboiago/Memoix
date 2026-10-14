@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "3-Ingredient Dulce de Leche Ice Cream",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Open the can of dulce de leche. Scoop out 4 tablespoons into a bowl and set aside to use to make swirls later.",
+      "Whip the cream until stiff peaks form. (This will take some time, depending on how quickly you're whipping the cream.) You want to work with cold cream and cold bowl to ensure maximum creaminess.",
+      "Add in the rest of the can of dulce de leche. Whip until all is combined and frothy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dulce De Leche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48bcdfb6689916a253a347a5831f5cdb009f916ad33de511715b25674cfc0e83",
+    "lineage_hash": "f6d4b810d2c4fb4432fcbc79281a448f5106e6325de6385cd26cfc5720502969"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/3-ingredient-dulce-de-leche-ice-cream-effortless-sweet-indulgence/",
+    "fetchedAt": "2026-09-25T22:54:17.415Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/3-ingredient-dulce-de-leche-ice-cream-effortless-sweet-indulgence/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

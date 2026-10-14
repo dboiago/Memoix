@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Calientito (Warm Pear Cider)",
+    "time": "18 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "241",
+      "carbohydrateContent": "36",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine pear nectar, cinnamon sticks, cloves, and anise stars in a medium saucepan. Bring to a boil, then reduce heat and simmer for 10-15 minutes.",
+      "Add tequila and stir to incorporate.",
+      "Cut off the pear top and with a sharp knife carefully outline a rim on your pear cup.",
+      "With a melon baller or a spoon, hollow out the pear making sure to leave about 1/4 inch at the bottom and around the edges, creating a cup.",
+      "Pour warm nectar into pear cups and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pear Nectar",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Anise Stars",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila Gold",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pears",
+        "unit": null,
+        "notes": "optional",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93bcc91ab1b52667eb814706a3a6f5039a84f3b1a525a474e78efbae162a841a",
+    "lineage_hash": "9ce822f50fdcee23149d35dec3877bf4697aad1caa24f48c73ff062eeaf9af10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/calientito-warm-pear-cider/",
+    "fetchedAt": "2026-08-01T23:48:35.217Z"
+  },
+  "rawSource": "https://muybuenoblog.com/calientito-warm-pear-cider/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

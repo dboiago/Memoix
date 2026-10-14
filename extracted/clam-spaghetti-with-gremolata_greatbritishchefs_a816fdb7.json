@@ -1,0 +1,262 @@
+{
+  "recipe": {
+    "name": "Clam Spaghetti with Gremolata",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before serving, make the herb oil and the pickled lemons. Blanch the herbs in boiling water for 30 seconds then plunge into iced water to preserve their bright green colour",
+      "Drain and squeeze out as much excess water as possible, then transfer to a blender and blitz with the oil until smooth",
+      "Strain through a sieve lined with a muslin cloth set over a container and leave to strain overnight in the fridge",
+      "For the pickled lemons, slice the lemons on a mandoline. Dissolve the sugar in the vinegar in a pan over a medium heat, then add 165ml of water",
+      "Transfer to a vacuum bag or container with the lemons and leave to pickle for at least 24 hours. If pickling in a container, make sure the lemons are fully submerged in the liquid by placing some greaseproof paper over the top",
+      "The next day, make the gremolata. Blend the herbs with with 125ml of the herb oil and 25g of the drained pickled lemons. Blitz until smooth then season with salt",
+      "To cook the clams, heat a large, heavy-based pan until smoking then add oil, clams, shallots and herbs",
+      "Add the wine and immediately cover with a lid. Allow the clams to steam for 5 minutes or until opened and cooked",
+      "Drain immediately and chill, reserving the liquid in the pan. Pass the liquid through a fine sieve lined with muslin cloth to remove any remaining grit. \r\nOnce the clams have cooled, remove half of them from the shells and discard those shells",
+      "Cook the spaghetti in salted boiling water until al dente according to packet instructions, then strain and dress with olive oil, salt and pepper",
+      "Next prepare the clam foam. Add 150ml of the strained clam stock, the cream and lemon juice to the boil in a pan. Using a hand blender, blitz and froth the sauce to create a light, salty clam foam",
+      "To serve, sweat the chilli and shallot in a large frying pan. Once soft, add the pasta and clams and toss with the gremolata. Adjust the consistency with leftover clam stock if you need to. Garnish with the frothed up clam foam and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clams",
+        "unit": "kg",
+        "notes": "washed well in running cold water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Stalks",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "picked",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Lemon",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spaghetti",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83ef1fcfd09f5ee66131ccff2ffd62b97ec5025740a55db12986429b30893448",
+    "lineage_hash": "0a8647aece2a17097ab7eebcfaf97ca9d4fa4514276e30f63c4bfab38c39f489"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/clam-spaghetti-recipe-gremolata-clam-foam",
+    "fetchedAt": "2026-08-03T10:39:44.265Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/clam-spaghetti-recipe-gremolata-clam-foam",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

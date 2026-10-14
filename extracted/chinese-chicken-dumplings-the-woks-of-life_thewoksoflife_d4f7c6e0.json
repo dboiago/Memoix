@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Dumplings",
+    "time": "1 hr 40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "325",
+      "carbohydrateContent": "44",
+      "fatContent": "8",
+      "proteinContent": "18"
+    },
+    "directions": [
+      "Slice the cabbage leaves lengthwise into thin strips, then finely chop crosswise. Place in a large bowl and stir in the salt so all the cabbage is coated. Set aside for 30 minutes (no more!) to allow the salt to draw the water out of the cabbage.",
+      "To a large bowl, add the ground chicken, finely chopped mushrooms (if using), Shaoxing wine, neutral oil, light soy sauce, ginger, sugar, sesame oil, and white pepper. Add the chicken stock, and stir vigorously with a pair of chopsticks or a wooden spoon for 10 to 15 minutes, until it forms a cohesive paste. (Alternatively, stir with a rubber spatula until the chicken absorbs most of the liquid, then mix in the bowl of a stand mixer fitted with the paddle attachment on low speed for 7 minutes.)",
+      "Squeeze the napa cabbage dry, then add to the filling mixture. Stir for another 2 to 3 minutes to incorporate the cabbage into the filling.",
+      "Assemble the dumplings. If using storebought wrappers, wet the outer edges of a wrapper with water, and add about a tablespoon of filling in the middle. Pleat the wrapper closed, making sure it’s well-sealed, and using a tiny dab of water to secure the pleats if necessary. (See our post on How to Fold Dumplings 4 Ways for more detail.) If using homemade wrappers, no water is necessary. Place on a parchment lined baking sheet so the dumplings are not touching. Repeat until you’ve assembled all the dumplings.",
+      "Once assembled, cook or freeze immediately.",
+      "To boil: Boil a large pot of water, add the dumplings, stirring constantly, and let the water come back up to a boil. Simmer for 6-8 minutes (shorter for fresh dumplings, longer for frozen).",
+      "To pan-fry: Heat a couple tablespoons of oil in a non-stick pan over medium-high heat. Place the dumplings in the pan and fry until the bottoms are a light golden brown. Pour a thin layer of water into the pan, cover, and reduce the heat to medium-low. Cook until the water has evaporated. Uncover, increase the heat to medium-high, and fry for a few more minutes, until the bottoms of the dumplings are crispy.",
+      "To steam: Place dumplings in a steamer basket lined with damp cheesecloth, perforated parchment paper, or thin cabbage leaves. Steam over simmering water at medium-high heat for 8-10 minutes (shorter for fresh dumplings, longer for frozen).",
+      "To freeze: Wrap the baking sheet(s) tightly with plastic wrap or clean grocery bags, and transfer to the freezer. Freeze overnight, then transfer the dumplings to freezer bags for longer term freezer storage."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Napa Cabbage",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Dark Meat Chicken",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "reconstituted and finely chopped; optional, dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packages Dumpling Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35622ccfcd431c3d881ba4293d128068f0938cbd95f7d47d26ab16e16375ad21",
+    "lineage_hash": "0fb5bb5578497b09abe3594b4732f11b5285079f1061fedd23a27e61a148498e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-chicken-dumplings/",
+    "fetchedAt": "2026-08-02T17:01:28.562Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-chicken-dumplings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

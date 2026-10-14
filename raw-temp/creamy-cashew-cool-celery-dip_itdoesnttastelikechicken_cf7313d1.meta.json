@@ -1,0 +1,47 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-cashew-cool-celery-dip/",
+  "slug": "creamy-cashew-cool-celery-dip_itdoesnttastelikechicken_cf7313d1",
+  "title": "Creamy Cashew Cool Celery Dip",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T20:56:03.645Z",
+  "ldName": "Creamy Cashew Cool Celery Dip",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 sup"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Snack",
+  "ldKeywords": "snack",
+  "ldIngredientsRaw": [
+    "1 cup raw cashews, ((soaked or boiled if not using a high-powered blender, see notes))",
+    "3/4 cup water",
+    "1 tablespoon apple cider vinegar",
+    "1 teaspoon celery salt",
+    "1/2 teaspoon dried chives",
+    "1/2 teaspoon dill",
+    "1/4 teaspoon garlic powder"
+  ],
+  "ldInstructionsRaw": [
+    "Add everything to a blender, and blend until completely smooth and creamy, stopping to scrape down the sides as needed. This dip will get even thicker when stored in the fridge."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "95 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup raw cashews,, (soaked or boiled if not using a high-powered blender, see notes)",
+    "▢ ¾ cup water",
+    "▢ 1 tablespoon apple cider vinegar",
+    "▢ 1 teaspoon celery salt",
+    "▢ ½ teaspoon dried chives",
+    "▢ ½ teaspoon dill",
+    "▢ ¼ teaspoon garlic powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cole Slaw",
+    "time": "15 min",
+    "course": "vegn",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the cabbage and peel the carrots. Finely shred the cabbage and carrots.",
+      "Mix the cabbage with the rest of the ingredients. Serve with your favourite rice dish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cabbage Finely Shredded",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Finely Shredded",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise Low Calorie",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32e9372473213ce71be26970374535c18169a8f9bb2a6dce2b5a939d5d9816ef",
+    "lineage_hash": "3f9c6209d3ea51d94230bd25cc7996fe619e85025b7601250e0a7ef00e80b701"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/cole-slaw/",
+    "fetchedAt": "2026-09-26T01:14:22.710Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/cole-slaw/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

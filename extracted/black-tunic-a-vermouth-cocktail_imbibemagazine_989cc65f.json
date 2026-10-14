@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Black Tunic",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a glass and fill with ice, then stir briefly to combine. (Alternately, gently heat the ingredients in a small pan and serve warm in a coffee mug.) While using a lit match or lighter, squeeze a lemon twist so the oils spray into the flame and across the drink’s surface, then use the twist as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "preferably an Italian Vermouth di Torino",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca7ecab5d263721753da3f27ee76c722c8cae9d208d7660ee01701ffa3906262",
+    "lineage_hash": "f892a3f20ab237d9b64f751185f02b30dd09f227434feeb1387a14a2403c9bd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-tunic-a-vermouth-cocktail/",
+    "fetchedAt": "2026-08-03T23:06:07.531Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-tunic-a-vermouth-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

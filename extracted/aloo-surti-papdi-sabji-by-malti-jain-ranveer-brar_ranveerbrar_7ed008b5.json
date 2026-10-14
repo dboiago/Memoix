@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Aloo Surti papdi Sabji",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "170",
+      "carbohydrateContent": "20",
+      "fatContent": "9",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Firstly rinse 150 grams flat beans (valor papdi) very well. Then string each flat bean and pull the pods apart. You have to open the pods to see if there are worms or mould in them. Discard the beans if they have a mould or worms in them.",
+      "Chop or break each pod in two.",
+      "This way string, open and break each flat beans. You will need 2 cups chopped valor papdi. Keep aside.",
+      "In a mortar pestle take 3 to 4 medium garlic cloves, ½ inch ginger and 1 green chili (chopped).",
+      "Crush to a paste. Keep aside.",
+      "Heat 2 tablespoons oil in a pan. You can use peanut oil or sunflower oil. Add ¼ teaspoon carom seeds (ajwain) and let them splutter.",
+      "Then add the ginger+garlic+green chili paste.",
+      "Sauté for a few seconds till raw aroma of ginger and garlic goes away.",
+      "Now add 2 medium potatoes (chopped) and 1 pinch asafoetida (hing).",
+      "Mix and sauté potatoes for a minute.",
+      "Then add valor papdi.",
+      "Next add ¼ teaspoon turmeric powder, ¼ teaspoon red chili powder, ½ teaspoon cumin powder and ½ teaspoon coriander powder.",
+      "Mix well.",
+      "Then add ½ cup water and mix again. Simmer on medium low flame till the water comes to a boil.",
+      "Then add 3 tablespoons fresh grated coconut, 2 teaspoons white sesame seeds and 2 tablespoons chopped coriander leaves.",
+      "Season with 1 teaspoon salt or add as required. Also add 1 to 2 teaspoons sugar or add as per taste.",
+      "Mix very well.",
+      "Cover the pan and simmer veggies on a low to medium-low flame.",
+      "In between check the veggies and stir them.",
+      "If water dries up and potatoes are not cooked, then add more 2 to 3 tablespoons water or as required. Cover pan and simmer till the potatoes are tender and cooked.",
+      "Once the potatoes are cooked and tender, if there is any water left, then cook without lid till all the water evaporates.",
+      "Once the shaak is done, add 1 teaspoon lemon juice.",
+      "Stir and check taste. Add some more lemon juice if required.",
+      "Lastly add 1 to 2 tablespoons chopped coriander leaves and mix."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": "ajwain",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": "hing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Surti Papdi",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped, for garnish",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e78bc44cdc4d2e785cb64c322a8f605284b29cba3b08080ee8602ade506f0ed",
+    "lineage_hash": "48c3e3a849ef2b761abeb3cd16a62d0009754129ac7a81a94ca296bbe7f3525f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/user-recipes/aloo-surti-papdi-sabji-by-malti-jain/",
+    "fetchedAt": "2026-08-02T21:35:22.883Z"
+  },
+  "rawSource": "https://ranveerbrar.com/user-recipes/aloo-surti-papdi-sabji-by-malti-jain/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,330 @@
+{
+  "recipe": {
+    "name": "Chicken Lazeez (Spicy Chicken Curry)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a non-stick kadai or wok, add oil, once it's hot, add black peppercorns, cloves, green cardamom, mace and let it splutter well.",
+      "Add onions, dry kashmiri red chili and saute it for a while until translucent.",
+      "Add ginger garlic paste and cook it for a minute.",
+      "Add degi red chili powder, coriander powder, turmeric powder, curd and cook it for a while.",
+      "Add salt to taste, fresh tomato puree and cook it for 10-12 minutes on medium flames.",
+      "Add ghee, sauteed chicken and give it a good mix.",
+      "Add water to adjust the consistency, tender coriander stems and simmer it for 3-4 minutes until thickens.",
+      "Finish it with salt to taste, sugar, sauteed vegetables and cook it for 2-3 minutes.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti or naan.",
+      "In a bowl, add chicken, salt to taste, ginger garlic paste, degi red chili powder, coriander powder, dry fenugreek leaves, oil, mustard oil and give it a good mix.",
+      "Keep it aside to marinate for 10-12 minutes.",
+      "In a pan, add oil, once it's hot, add marinated chicken and cook for 2-3 minutes on both sides until half cooked.",
+      "Transfer it to a bowl and keep it aside for further use.",
+      "In a pan, add oil, once it's hot, add onion, tomato, capsicum, salt to taste and toss it on high flames for 2-3 minutes.",
+      "Transfer it to a tray or bowl and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "No. Kashmiri Red Chili",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Turmeric Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Vegetables",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Lazeez",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "thighs & drumsticks",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Fenugreek Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "cut into diced",
+        "amount": "1",
+        "section": "For Sauteing Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "cut into diced",
+        "amount": "1",
+        "section": "For Sauteing Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": null,
+        "notes": "cut into diced",
+        "amount": "1",
+        "section": "For Sauteing Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauteing Vegetables",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5d762958ed49c70d81452768e5fd309da6f1efedc594efadb301520871fb8d1e",
+    "lineage_hash": "973051c5d5127a1c0aeeaf99e218bc189c5547e18b4227dc957d5139e7aaa2bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-lazeez/",
+    "fetchedAt": "2026-08-02T17:54:52.027Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-lazeez/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

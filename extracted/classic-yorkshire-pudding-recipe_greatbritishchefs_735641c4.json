@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Yorkshire Pudding",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift the flour into a mixing bowl and use a wooden spoon to make a well in the centre. Break the egg into the well and mix with the flour",
+      "Add the milk, water, salt and pepper, whisk until you have a smooth batter and set aside",
+      "Add the vegetable oil or dripping to a 28 x 18cm roasting tray. Place into the oven until the fat gets smoking hot, for around 10 minutes",
+      "Carefully remove the tray from the oven, pour in the batter and return to the oven until crispy and puffed up around the edges - this should take approximately 30 - 40 minutes. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "or beef dripping",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "673f09830c523180323c9a42904127082d844c22521d553e954da6c9c2b84d68",
+    "lineage_hash": "68cf6840f3f453d0f863f2536f67cd1852c2953ecf97be0e7816ce97e896f637"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-yorkshire-pudding-recipe",
+    "fetchedAt": "2026-08-03T19:59:46.676Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-yorkshire-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

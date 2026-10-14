@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Coconut Agar Agar Jelly (วุ้นกะทิ)",
+    "time": "1 hr 30 min",
+    "course": "modernist",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Coconut Milk Layer: Add coconut water to a small pot, then sprinkle on agar agar powder and stir to mix. Add coconut milk, sugar, salt, and pandan leaf. Bring to a boil, stirring frequently. Once it comes to a full boil, the agar powder should be completely dissolved, but you can double check by spooning some liquid into a metal spoon, then pour it off, and if there are no tiny grains still stuck to the spoon, then you’re good to go. If you want to add coconut meat to this layer, you can add it at this point and bring the mixture to a boil one more time.",
+      "Lower the heat to the lowest setting and keep the pot covered while you make the other layer. Make sure it’s just barely simmering and not boiling away! If you have a strong gas stove you might have a hard time getting the heat to stay very low, in that case you can keep it off heat and covered, and reheat it to boiling right before you use it.",
+      "Coconut Water Layer: In another small pot, add coconut water and agar agar powder and stir to break up the powder. Add sugar and pandan leaf, then bring to a boil, stirring frequently. Once it boils, check to see that there aren’t any tiny little grains of agar powder still floating around. Keep the mixture hot and covered just like the coconut milk layer.",
+      "Assembly: You can divide up the layers however you wish, but in the video I had 3 layers of white (⅔ cup each) and 2 layers of clear (1 cup each). Pour the first layer into your dish, spoon off any bubbles, then refrigerate just until the top has set (about 5 minutes if you’re using the same measurements as me). You can test this by gently tapping the layer with your finger, and if it’s no longer liquid and doesn’t stick to your finger, it’s ready to go.",
+      "Making sure the second layer is steaming hot, pour it over the back of a spoon, letting it drip gently onto the edges of the first layer. If you pour too quickly or too aggressively, it’ll break the first layer. Refrigerate again just until the top is set (about 7 minutes if you’re using my measurements).",
+      "Repeat with the remaining agar mixture, making sure that you keep both mixtures hot and covered while you wait for it to set. If for whatever reason it has gone cold, you can simply reheat it when you are ready to pour.",
+      "Once you’re finished, let the jelly refrigerate for at least 4 hours so it is nice and cold when you serve it. Enjoy!",
+      "Join us on Patreon for bonus content and rewards!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "you can adjust this amount depending on the sweetness of the coconut water and your taste",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Powder",
+        "unit": "tsp",
+        "notes": "See note",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf",
+        "unit": "inches",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "If You're Using Coconut Water Straight From the Whole Coconut",
+        "unit": null,
+        "notes": "optional, and the coconut meat is soft and tender, you can chop up some the meat and add it to this layer for some extra texture.",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "you can adjust this amount depending on the sweetness of the coconut water and your taste",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaf",
+        "unit": "inches",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6871a78f6a9a0269c20543f9452c86b0eeb59571a985c94a545b0bd16844b2cd",
+    "lineage_hash": "be0a582bd049bdc97687276299a4da4e3237bb7afc69941969906b272675431a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/coconut-agar-agar-jelly/",
+    "fetchedAt": "2026-08-01T17:28:06.232Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/coconut-agar-agar-jelly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

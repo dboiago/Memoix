@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chocolate and Peanut Butter Cups",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a 12-hole muffin tin with paper or silicone cupcake cases",
+      "In a small bowl, beat the peanut butter, honey, icing sugar, vanilla extract and salt to combine. Stir in the cocoa nibs (if using)",
+      "Roll the mixture into 12 equal-sized balls (about 12g each), flatten a little to a diameter slightly smaller than your muffin cases and freeze on a tray lined with baking parchment for 10–15 minutes while you prepare the chocolate",
+      "Melt the chocolates in a heat-proof bowl suspended over a saucepan of barely simmering water (make sure that the bowl doesn’t touch the water), or in the microwave, melting in short bursts and stirring well between each one to prevent catching or burning, then remove from the heat and set aside to cool slightly",
+      "Spoon 1 teaspoon of melted chocolate into the bottom of each cupcake case, swirling each one gently to ensure the chocolate reaches the edges",
+      "Remove the peanut butter discs from the freezer and carefully place one in each cupcake case, on top of the chocolate",
+      "Divide the remaining chocolate between the cases (about 2 teaspoons in each), then tap the tin so that the chocolate settles in an even layer. Sprinkle with cocoa nibs, if using, then leave to cool and harden at room temperature",
+      "The cups will keep in an airtight container in the fridge for a couple of weeks. Chocolate peanut butter cups made with tempered chocolate can be kept out of the fridge"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": "smooth",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "Tbsp",
+        "notes": "plus extra for sprinkling",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93a74c7a6aa3c9e8cce8559b3a5432c866765cd1cb102c14cbf823bd41c2de5b",
+    "lineage_hash": "1b0c8cc897ee272d70d8b9f54fa3d5dc214f512bd635fe81a3d6d7ce3d1e4b7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-peanut-butter-cups",
+    "fetchedAt": "2026-08-03T14:12:51.537Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-peanut-butter-cups",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

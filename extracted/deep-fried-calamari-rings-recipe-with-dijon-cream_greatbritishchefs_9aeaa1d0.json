@@ -1,0 +1,227 @@
+{
+  "recipe": {
+    "name": "Deep-Fried Calamari Rings With Dijon Cream",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the squid tubes into 3mm-thick rings, cut the tentacles into manageable pieces and season with salt",
+      "Dip the pieces in the flour, shaking off the excess, then dip in the egg, shaking off the excess. Coat in the breadcrumbs, place on a clean, dry tray and set aside",
+      "For the Dijon cream, put the sliced shallots and garlic in a pan. Add the wine and reduce by three-quarters, then add the cream and reduce by half. Strain into a clean pan, whisk in the mustards then season to taste",
+      "To make the vinaigrette, whisk the vinegar, olive oil and mustard together, then add Worcestershire sauce and salt to taste",
+      "Plunge the tomatoes in boiling water for a few seconds, then into ice-cold water, then peel them. Put them in a bowl, add the vinaigrette and season with sea salt. Set aside for 10-20 minutes",
+      "Wash the baby gem leaves, dry thoroughly and set aside",
+      "To serve, heat a pan of vegetable oil or a table-top fryer to 200˚C/Gas mark 6. Cook the squid till golden then season with salt and lemon juice",
+      "Heat the Dijon cream in a small pan. Put the squid in a large bowl, add some of the cream and toss until the squid is lightly coated. Don’t add too much or it will become soggy. Toss in the red onion and parsley",
+      "Break up the lettuce into two-inch thick pieces and toss with vinaigrette. Arrange the leaves and tomatoes on the plates, and top with the crispy squid"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Squid Tubes and Tentacles",
+        "unit": "g",
+        "notes": "cleaned and dried",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs (1)",
+        "unit": "g",
+        "notes": "ground in a blender",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pommery Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": "heads",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11092c2683f82d93aa665eb67bc7c50f136ed948d35e1b0e7d24afb105c4dedc",
+    "lineage_hash": "4c45a22ef8ff9fefd8640cf24af71d22a5f243988963ef7ca0dbc46f4d9dbcb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/calamari-recipe-dijon-cream",
+    "fetchedAt": "2026-08-03T16:43:10.454Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/calamari-recipe-dijon-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

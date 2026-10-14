@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Beef Flatladen",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the meat into pieces, about 2 to 3 inches square and about ¾ inch thick.",
+      "Heat 2 tablespoons butter in a large skillet. Brown meat well on all sides in batches without crowding. Add extra butter if needed.",
+      "Once meat is browned, add bacon and onion and brown briefly.",
+      "Slowly add some hot water and gently stir to loosen browned bits at the bottom of the pan.",
+      "Return meat to skillet along with any juices. Add pickle slices and enough water to almost cover the meat. Bring to a simmer and cover.",
+      "Simmer for 1 to 2 hours, depending on the cut of beef, until tender. Remove bacon before serving.",
+      "To thicken the gravy, combine 2 to 3 tablespoons cornstarch in a little cold water. Stir into the cooking liquid until slightly thickened.",
+      "Season the gravy to taste with salt and freshly ground pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(908 Grams) Beef Bottom Round",
+        "unit": "lb",
+        "notes": "chuck,\nor cut of your choice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lean Bacon",
+        "unit": "slices",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "(28 Grams) Butter",
+        "unit": "Tbsp",
+        "notes": "plus more if needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "cut into\nchunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Dill Pickles",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "16-24 grams",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e205ed0bedd8bb5a10611ae1ea85f5ac93978c2d19aea881c3e3ab7b7ebd9e09",
+    "lineage_hash": "61ff133a498508fb4228f279fe1d424301f9dc7e5826cc9b5a57634830994e3c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/beef-flatladen.html",
+    "fetchedAt": "2026-09-25T19:34:14.166Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/beef-flatladen.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Chongqing Hot and Sour Glass Noodle Soup (Suan La Fen)",
+    "time": "35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "You can use store-bought roasted soybeans or peanuts, but if using dried soybeans like I did, soak them for at least 3 hours and drain thoroughly. Over low heat, add a few tablespoons of vegetable oil, and wok-fry the soaked soybeans for at least 15 minutes, until fragrant and nutty. Remove from the wok and set aside to cool completely (leave any remaining oil in the wok behind to cook the rest of the dish). If wok-frying peanuts, follow these instructions for traditional Wok Roasted Peanuts.",
+      "Bring a pot of water to a boil, and cook the noodles according to package instructions. Some brands may require you to soak the noodles overnight, but you can simply boil them until relatively tender (they’ll still be chewy). Once cooked, drain and rinse in cold running water. Set aside.",
+      "Heat your stock in a separate pot. Keep it at a low simmer. If you don’t have stock, you can use hot boiling water.",
+      "To the bottom of your noodle bowl, add the ginger, garlic, sesame seeds, and pepper flakes. Heat 3 tablespoons oil until it’s shimmering and smoking lightly, and pour over the ingredients in the soup bowl. They’ll sizzle and become fragrant!",
+      "Stir the sizzling ingredients, and add the vinegar, soy sauces, sugar, Sichuan peppercorn powder, white pepper, sesame oil, and chili oil.",
+      "Pour the hot stock into the bowl, and mix well. Add the cooked noodles, and top with the pickled mustard stems, scallions, cilantro, and roasted soybeans/peanuts. Taste for seasoning and adjust if needed. Serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Roasted Soybeans",
+        "unit": "Tbsp",
+        "notes": "or roasted peanuts",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potato Noodles",
+        "unit": "g",
+        "notes": "100g = 3.5 oz., dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Low Sodium Stock",
+        "unit": "C",
+        "notes": "chicken, pork, or vegetable stock",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slice",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Chili Flakes",
+        "unit": "tsp",
+        "notes": "or to taste; can substitute regular pepper flakes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "Tbsp",
+        "notes": "or to taste; you can use our homemade chili oil, or any Lao Gan Ma chili sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Mustard Stems",
+        "unit": "C",
+        "notes": "za cai; or any pickled vegetable you have on hand",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped; or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69d3759bfccb0d2137dfaddf8279667a62758b47ac4affe8fec1e0f019ffcd2a",
+    "lineage_hash": "95ecb887d9635644a2ee485f0d8c0cc43df201642f4de17b2bcf75e1ddf9a8b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/suan-la-fen-hot-sour-sweet-potato-glass-noodle-soup/",
+    "fetchedAt": "2026-08-02T07:39:00.292Z"
+  },
+  "rawSource": "https://thewoksoflife.com/suan-la-fen-hot-sour-sweet-potato-glass-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

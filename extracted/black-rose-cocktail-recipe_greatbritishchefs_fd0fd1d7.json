@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Black Rose Cocktail",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Goblet",
+    "garnish": [
+      "Rosemary Sprig"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the blackberry syrup, heat the blackberries, sugar and measured water in a saucepan until boiling. Reduce the heat and simmer for 20 minutes",
+      "Remove from the heat, add the lemon zest and thyme and leave to steep for 20 minutes. Strain and pour into a sterilised glass bottle. This will keep in the sealed bottle in a cool, dark place for up to 2 weeks",
+      "To make the cocktail, put the gin, 2 tbsp syrup and lime wheel into a cocktail shaker. Shake well and muddle.",
+      "Add ice cubes and shake, then strain into a chilled goblet over ice. Top up with the tonic water and garnish with a rosemary sprig"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Premium Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Indian Tonic Water",
+        "unit": null,
+        "notes": "to top up",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fcc67a875948f04d81ae1d57015dc54ebf0dd702a52bc8357eea427c0304e5b",
+    "lineage_hash": "8d75a4f7026f441cfe0f132b22b770215efe8edffab5740bee5519c3c5075c24"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-rose-cocktail-recipe",
+    "fetchedAt": "2026-08-03T10:41:14.522Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-rose-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

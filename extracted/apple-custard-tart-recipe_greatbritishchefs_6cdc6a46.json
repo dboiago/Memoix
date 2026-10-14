@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Apple Custard Tart",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a saucepan over a medium heat",
+      "Reserve 1 tbsp of the butter and stir the crushed biscuits into the remainder in the pan, mixing well. Divide the biscuits between 4 loose bottomed mini tart tins and press down into the base and sides",
+      "Add the milk to a saucepan with the seeds of the vanilla pod. Bring gently to the boil. In the meantime, whisk together the egg yolks, 40g caster sugar and cornflour in a bowl",
+      "Once the milk has come to the boil, whisk it into the egg mixture. Add it all back into the pan and bring gently to the boil",
+      "Pour the custard onto the biscuit bases and set aside to cool whilst preparing the apple",
+      "Lay slices of apple onto the custard and brush with the remaining melted butter. Sprinkle generously with the caster sugar",
+      "Bake the tarts for 20 minutes and serve warm or cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus 1 tbsp extra for sprinkling",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "red, cored and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "440b9ed4ae092152a8b30f662d6d8909e118f81203e8b863d1432c323426b58e",
+    "lineage_hash": "934ce0391e37f3480c819c9d66d0ae1f91ea104e3a465cdbd4e43244a4a00f68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-custard-tarts-recipe",
+    "fetchedAt": "2026-08-03T23:08:09.290Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-custard-tarts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

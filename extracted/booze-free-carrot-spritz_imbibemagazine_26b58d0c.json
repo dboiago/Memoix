@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Booze-Free Carrot Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients except the ginger beer to a shaker and shake hard for 5 seconds with ice. Pour the ginger beer into the shaker, then strain the contents into a glass over fresh ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrot Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "oz",
+        "notes": "Mlynarczyk uses Fever-Tree",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e527da5c73799abfa818b1b7cc2430f13c5ecda7dafd39be5d2d054a5ea58b0e",
+    "lineage_hash": "eac2fd45d71f738f2378fcaf5560222964dbdfae35ff02657abd9d4d621e88a1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/booze-free-carrot-spritz/",
+    "fetchedAt": "2026-08-03T20:02:46.155Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/booze-free-carrot-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

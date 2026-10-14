@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Classic French Buttercream",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "282",
+      "carbohydrateContent": "14",
+      "fatContent": "25",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine2 oz water with 6 oz, (3/4 cup) granulated sugar in a small saucepan. Cook the sugar syrup on medium high heat, stirring until the sugar is melted. Once the syrup begins to boil do not stir the syrup. Allow it to cook to 235 °F(soft ball stage).",
+      "While the syrup is boiling, whip 6 large egg yolks on medium with the remaining 1/4 cup of sugar and ⅛ teaspoon salt. Increase the speed to medium high and whip until the yolks are aerated and pale yellow.",
+      "As soon as the syrup is at the correct temperature, remove the pan from the heat. With the mixer running on medium low, pour the hot syrup in a steady stream between the edge of the bowl and the whisk. Increase the speed to medium high and continue whisking until the yolks are cooled to about 80 °F.",
+      "When the yolks have cooled, with the mixer running on medium, add 1 pound unsalted butter one piece at a time. Add 1 tablespoon vanilla extract and increase the speed to medium high and whip until the buttercream comes together.",
+      "Store at room temperature for 4 hours, refrigerate up to 2 days or freeze for up to 3 months. Bring the buttercream back to room temperature and rewhip before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup, divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "lb",
+        "notes": "room temperature, cut into 16 pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Other Flavorings to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87a567dadef1b8d502943d5601b8a4f597437ab9cbc4b1b8f5db57cbad3b9b4c",
+    "lineage_hash": "6b4e8da38bfb44cee74bbea80c6e2dfba8a36c4c7236424fb4e5b4634d11af32"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/03/25/classic-french-buttercream/",
+    "fetchedAt": "2026-08-01T20:30:34.101Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/03/25/classic-french-buttercream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

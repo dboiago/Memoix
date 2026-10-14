@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Comté Pommes Duchesse",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the potatoes in salted boiling water until soft, about 20 minutes. Drain and leave to dry out a little in the colander for a few minutes – be aware than the potatoes still need to be warm for the next step, however",
+      "Preheat the oven to 190°C/gas mark 5 and line a baking tray with greaseproof paper",
+      "Use a potato ricer or masher to mash the potatoes into a smooth mash then beat in 2 of the egg yolks, the butter and grated Comté. Season with grated nutmeg and salt to taste",
+      "Transfer the mixture to a piping bag fitted with a star nozzle. Pipe stars of the mixture onto the tray, around 3cm in diameter. You may need more than one tray, or to work in batches",
+      "Brush the pommes duchesse with the egg wash and bake for 20 minutes or until golden. Serve hot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Comté Cheese",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "beaten with a pinch of salt for glazing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13a66d071ddfee0f65a0ae6ab8363f4d8ac3da889f5abdb5e493f2b7f9635508",
+    "lineage_hash": "3d632ac48f25bce73417105143384317b89a1f205a9385e578525ffd8a56be97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/comte-pommes-duchesse-recipe",
+    "fetchedAt": "2026-08-03T04:29:35.353Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/comte-pommes-duchesse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

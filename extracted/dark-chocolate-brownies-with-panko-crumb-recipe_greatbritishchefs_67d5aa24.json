@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Brownies with Panko Crumb",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven 180°C/gas mark 4. Grease a 23cm square baking pan with butter and line with baking parchment",
+      "In a heatproof bowl suspended over a pan of simmering water, melt the chocolate and butter, then set aside to cool slightly. In a medium bowl, whisk together the sugars and eggs until pale and thick, for around 3–4 minutes",
+      "Whisk in the cooled chocolate mixture then fold in the flour, cocoa and baking powder",
+      "In a small bowl, combine the Panko breadcrumbs and sea salt",
+      "Scrape half of the brownie batter into the prepared pan then sprinkle over one third of the breadcrumb mixture. Scrape over the remaining batter until covered and level with a spatula",
+      "Mix the remaining breadcrumbs with the olive oil until well coated, then sprinkle over the top of your brownie batter",
+      "Bake for 20–25 minutes, or until the top is set and slightly crackly and a skewer inserted in the middle comes out with some gooey batter still stuck to it",
+      "Allow to cool completely in the tin before cutting into squares and serving. These brownies will keep in an airtight container for 3–4 days"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "minimum 70% cocoa solids",
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "medium",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "white",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2538cf3bd15c6c834f75c5aa40155d58e34f7d20ae70dd8d2e95b2aef95fecb",
+    "lineage_hash": "0eb22a4a586a0f0d1b72d31fdd975697aadbbd62601e796479c7515edb1f7b48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-chocolate-brownies-recipe-panko-crunch",
+    "fetchedAt": "2026-08-03T12:12:03.540Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-chocolate-brownies-recipe-panko-crunch",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

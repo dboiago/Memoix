@@ -1,0 +1,365 @@
+{
+  "recipe": {
+    "name": "Chicken Curry",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add ginger, green chillies, cumin seeds and grind it into coarse paste.",
+      "Keep it aside for further use.",
+      "In a handi, add mustard oil, once it's hot, add black cardamom, bay leaf, prepared ginger green chilli paste and saute it for a minute.",
+      "Add onions and cook it for a while until golden in colour.",
+      "Add curd mixture and let it cook for 7-8 minutes on medium flames.",
+      "Add a little water, marinated chicken, cover it with the lid and cook it for a while.",
+      "Add water, salt to taste and simmer it for 5-6 minutes until it thickens.",
+      "Turn off the flames and finish it with coriander leaves.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti, steam rice and prepared raita.",
+      "In a bowl, add curd, turmeric powder, degi red chili powder, coriander powder, ginger garlic paste and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a bowl, add chicken, crushed black peppercorns, lemon juice, salt to taste, turmeric powder and mix it well.",
+      "Keep it aside to marinate for a while.",
+      "In a bowl, add curd, cucumber, tomato, onions, salt to taste, lemon juice, roasted cumin powder, coriander leaves, degi red chili powder and mix it well.",
+      "Transfer it to a serving bowl and garnish it with coriander sprig.",
+      "In a saucepan, add water, tea leaves, sugar, ginger and boil it for 4-5 minutes.",
+      "Add milk and simmer it for 5-6 minutes.",
+      "Transfer it to a serving cup and Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "2",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "4-5",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Ginger Green Chili Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Green Chili Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "4",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "thighs & drumsticks",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "medium",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1⅓",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "1",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Raita",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chai",
+        "isOptional": false
+      },
+      {
+        "name": "Tea Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chai",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Chai",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & crushed",
+        "amount": "½",
+        "section": "For Chai",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chai",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f17fc6ccbbe7c399631216b4545373059e087d920176fe7dab9845d96e48514a",
+    "lineage_hash": "7718cc68e590e7dd6b6f433dc13f41e2afd1320f87aa7112c377b3682d6960c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-curry-pkd/",
+    "fetchedAt": "2026-08-02T18:02:46.393Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-curry-pkd/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

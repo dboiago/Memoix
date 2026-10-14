@@ -1,0 +1,299 @@
+{
+  "recipe": {
+    "name": "Bachelors spl Chicken Curry",
+    "time": "25-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a chopper, add tomatoes, salt to taste, curd, coriander stems and grind it coarsely.",
+      "Transfer it to a bowl and keep it aside for further use.",
+      "In a bowl, add chicken, salt to taste, degi red chili powder, turmeric powder, curd, oil and mix it well.",
+      "Keep it aside to marinate for 10-15 minutes.",
+      "In a mortar pestle, add ginger, garlic, green chillies, salt to taste and grind it coarsely.",
+      "Keep it aside for further use.",
+      "In a handi or saucepot, add oil, ghee, once it's hot, add cinnamon stick, cloves, green cardamom and let it splutter.",
+      "Add prepared ginger garlic paste, onions and sautÃ© it well until golden in color on medium flame.",
+      "Add degi red chili powder, turmeric powder, coriander powder and sautÃ© it for 2-3 minutes.",
+      "Add prepared tomato paste, salt to taste, sugar and cook well for a while.",
+      "Add marinated chicken and sautÃ© it for a minute.",
+      "Add water, cover it with the lid and cook it for 20-25 minutes until cooked well.",
+      "Finish it with some coriander leaves and mix it well.",
+      "Transfer it to a serving bowl or dish and garnish it with coriander sprig.",
+      "Serve hot with roti or rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "4",
+        "section": "For Tomato Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tomato Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2-3",
+        "section": "For Tomato Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Tomato Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "drumstick & thigh with bones",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten, optional",
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "½",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly torn",
+        "amount": "2",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tomato Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "982fefecbba6847f208f605bc645025006d061fc553daa43a9f76408be4728e3",
+    "lineage_hash": "8aa8da8b34b9b9189a64dd056951cc223971da09cda901d4a46d09cfc16a5f78"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bachelors-spl-chicken-curry/",
+    "fetchedAt": "2026-08-02T16:35:33.472Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bachelors-spl-chicken-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

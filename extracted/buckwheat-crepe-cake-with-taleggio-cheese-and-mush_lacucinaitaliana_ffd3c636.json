@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Buckwheat Crepe Cake with Taleggio Cheese and Mushrooms",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the 00 flour an the buckwheat flour; beat the egg and incorporate the flours, gradually adding in the milk. Mix until you obtain a liquid batter, then add a pinch of salt and continue to mix. Melt the butter in a small pot and add it to the batter.",
+      "Grease a pan (5 1/2-inch diameter) with a bit of butter and prepare one crepe at a time: add in a ladleful of the batter and cook for 1 minute per side; you should obtain 10 crepes. Trim the savoy cabbage and cut it into strips; clean the mushrooms and cut them into large chunks; cook the savoy cabbage and mushrooms separately with the cloves of garlic and a drizzle of oil for 10 minutes; just before they are finished cooking, remove the garlic cloves.",
+      "Remove the rind from the Taleggio cheese, then place the cheese in a pastry bag. Form two cakes, using 5 crepes for each: pipe a ring of Taleggio cheese along the circumference of one crepe, then add a smaller ring in the center; fill the spaces between the cheese, one with the savoy cabbage and the other with the mushrooms; cover with another crepe and repeat the process 4 times, finishing off the cake with a crepe on top. Do the same for the second cake, then bake at 350°F for 5 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Taleggio Cheese",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Mushrooms",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savoy Cabbage",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italian 00 Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "plus extra",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edba92f9f5b6993c596573bf42840097c801015b13ecccf67c1a7ecdade6674c",
+    "lineage_hash": "a019217a0f8f77739fba2551cd3bc729860c04710f0e21fb6b4d5d4b8ae13c63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/buckwheat-crepe-cake-with-taleggio-cheese-and-mushrooms",
+    "fetchedAt": "2026-08-02T21:13:23.401Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/buckwheat-crepe-cake-with-taleggio-cheese-and-mushrooms",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

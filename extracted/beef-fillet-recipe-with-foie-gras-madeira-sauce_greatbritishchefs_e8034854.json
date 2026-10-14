@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Beef Fillet With Foie Gras, Madeira Sauce",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the parsley purée separate the stalks from the leaves. Bring the water to the boil and cook the stalks for 3 minutes",
+      "Add the leaves and cook for a further 3 minutes. Refresh in ice water. Strain, retaining all the water in a separate saucepan. Press well with a ladle to extract as much water as possible",
+      "Weigh 80g of parsley, add the oil and salt and blitz for 2 minutes in a blender. Pass through a very fine sieve",
+      "For the Madeira sauce combine the vinegar, port and Madeira, bring to a boil and cook until reduced by half. Add the chicken stock",
+      "Bring to the boil again and reduce to the consistency of a sauce. Add the thyme and cook for 5 minutes",
+      "Finish with the Madeira to taste. Pass through a fine sieve. Keep warm",
+      "For the beef remove the meat from the fridge 1 hour before cooking it",
+      "Heat a frying pan and cook the beef fillets on a high heat in 1 tablespoon of oil, colouring them evenly all over. Add a knob of butter and continue to cook until nicely caramelised. This will take about 5 minutes.",
+      "Season the beef with salt and pepper and remove from the frying pan.  Rest on a plate with all the cooking juices",
+      "To plate, sauté the mushrooms in 50g of butter until just cooked",
+      "Sweat the spinach in the remaining butter, drain well pressing between cloths to soak up the excess water",
+      "Pan fry the foie gras in a dry, super hot pan. When coloured on both sides sprinkle over the xeres vinegar. Season with salt and rest on their sides in the cooking pan",
+      "Place a small mound of the spinach in the centre of each plate, spoon the mushrooms around. Place the beef fillet on top followed by the foie gras. Top with a quenelle of warmed parsley purée. Sprinkle watercress around and spoon over the sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillets",
+        "unit": null,
+        "notes": "each weighing 160g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "195",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "Tbsp",
+        "notes": "to finish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress Shoots",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c285a7b677f01bc3b2d81a567e15fa20de688f9c659cae944f41074bedb95d6",
+    "lineage_hash": "0ab3b89f3f3bbfb23e0201358a4e31bfa1d2aaf7d4a6421183d29754487bf90b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-foie-gras-madeira-sauce-parsley",
+    "fetchedAt": "2026-08-03T17:57:25.949Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-fillet-recipe-foie-gras-madeira-sauce-parsley",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

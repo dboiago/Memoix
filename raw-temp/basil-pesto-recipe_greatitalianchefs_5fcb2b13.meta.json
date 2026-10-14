@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatitalianchefs.com/recipes/basil-pesto-recipe",
+  "slug": "basil-pesto-recipe_greatitalianchefs_5fcb2b13",
+  "title": "Basil Pesto Recipe",
+  "byline": "by Accursio Craparo",
+  "fetchedAt": "2026-08-02T01:59:27.633Z",
+  "ldName": "Basil pesto",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "200g of basil leaves",
+    "30g of ice",
+    "50g of pine nuts",
+    "1/4 garlic clove",
+    "3g of salt",
+    "150g of extra virgin olive oil",
+    "50g of Parmesan, grated",
+    "30g of pecorino, grated"
+  ],
+  "ldInstructionsRaw": [
+    "Blanch the basil in salted boiling water, then refresh in iced water. Squeeze excess water and blitz in a blender with the ice",
+    "Add the pine nuts, garlic, salt and extra virgin olive oil and blend",
+    "Finally, stir through the cheeses and use. Alternatively, store in an airtight container in the fridge for up to 3 days"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

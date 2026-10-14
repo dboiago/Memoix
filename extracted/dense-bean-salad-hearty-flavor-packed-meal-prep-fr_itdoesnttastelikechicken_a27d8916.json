@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Dense Bean Salad",
+    "time": "30 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "224",
+      "carbohydrateContent": "32",
+      "fatContent": "7",
+      "proteinContent": "10"
+    },
+    "directions": [
+      "Build the base: Add the chickpeas, black beans, artichokes, sun-dried tomatoes, bell pepper, shallot, cherry tomatoes, parsley, and basil to a large bowl.",
+      "Make the dressing: In a small bowl, whisk together the sun-dried tomato oil, artichoke brine, olive oil, vinegar, Dijon mustard, garlic, Italian seasoning, salt, and pepper until well combined.",
+      "Toss & rest: Pour the dressing over the salad and toss until evenly coated. Let the salad rest for at least 15–20 minutes before serving so the flavors can meld."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(or 1½ Cups) Chickpeas",
+        "unit": "can",
+        "notes": "15 oz / 398 ml, drained and rinsed",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "(or 1½ Cups) Black Beans",
+        "unit": "can",
+        "notes": "15 oz / 398 ml, drained and rinsed",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Artichoke Hearts",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Oil-packed Sun-dried Tomatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "medium",
+        "notes": "or ¼ red onion, finely chopped",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": "halved",
+        "amount": "1",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "fresh, finely chopped",
+        "amount": "¼",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "C",
+        "notes": "fresh, finely chopped",
+        "amount": "¼",
+        "section": "Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomato Oil",
+        "unit": "Tbsp",
+        "notes": "from the jar",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Artichoke Brine",
+        "unit": "Tbsp",
+        "notes": "from the jar",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Italian Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "Dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Optional Add-ins: Vegan Feta",
+        "unit": null,
+        "notes": "alt: vegan bocconcini, Kalamata olives, or crushed red pepper flakes",
+        "amount": "0",
+        "section": "Dressing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f03d34fd1615b8618b1e1dd478b3258084497ade7b3986a3fab2835582a83a6c",
+    "lineage_hash": "42d57ba1a67278a7aabd0065608e7e9a9d00db7f23a33e39923c1d7a7f08d8d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/dense-bean-salad/",
+    "fetchedAt": "2026-08-02T08:22:17.988Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/dense-bean-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

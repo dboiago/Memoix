@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Cardamom Caffè-Latte Ice Cream",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make cardamom caffè-latte ice cream, first drop the cardamom berries into the hot coffee to infuse for 30 minutes. Add the milk and cream and heat everything up again.",
+      "Then add sugar, honey, condensed milk and carob flour and mix well with a whisk. Continue to heat, stirring until the cream reaches 185°F.",
+      "Filter and cool the mixture quickly, pouring it into a bowl with a very cold bain-marie. Blend the cream again using an immersion mixer, then pour the mixture into an ice cream maker and start the machine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carob Flour",
+        "unit": "oz",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b9ed2efdd6ef99e85fc97beeb2966174f1e24fed2f8bfd7ae0ca1bc4f0e4fe3",
+    "lineage_hash": "d5aa26072e4b2c5f2207a35c01dbc65b46e41d2cc5e3271015fb5b8229b74cc5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cardamom-caffe-latte-ice-cream",
+    "fetchedAt": "2026-08-03T09:13:13.455Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/cardamom-caffe-latte-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

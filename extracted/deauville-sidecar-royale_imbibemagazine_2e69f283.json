@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Deauville Sidecar Royale",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare a coupe by rimming the edge with vanilla sugar. Combine the ingredients in a shaker with ice and shake well. Double strain into the sugar-rimmed coupe.",
+      "Vanilla SugarCombine 1 cup of fine white sugar with 1/2 a scraped vanilla bean in a sealed jar. Allow to sit for several days until the sugar take on a vanilla aroma and flavor."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Calvados",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rim Vanilla Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6258796db2490550590269cae6b9517e3a65360d0c26d470e261861048936ed",
+    "lineage_hash": "a6ca5fc05c658f3a771f136b626207603a0b6e2210dd3ef2ac6c4f1fa2ce61ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/deauville-sidecar-royale/",
+    "fetchedAt": "2026-08-03T21:56:05.678Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/deauville-sidecar-royale/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

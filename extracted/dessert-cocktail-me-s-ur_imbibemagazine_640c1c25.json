@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "âme sœur",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Flower"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the first 5 ingredients to an ice-filled shaker and shake until chilled. Fine strain into a glass then top with heavy vanilla cream and, if using, garnish with a flower.",
+      "Heavy Vanilla Cream: In a cocktail shaker, add 1 cup of heavy whipping cream, 1 oz. of vanilla bean paste, ½ cup of simple syrup (1:1) and shake vigorously until thick. Keep refrigerated for up to 5 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Dell’etna",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Vanilla Cream",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "C",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "86041f66757570a290269829694df565b559c54f7b82ef147c8c3a8bb0c5242a",
+    "lineage_hash": "6ac3f5a14af9b8e494696ab745b8b55c9b984aab70111b91ce9a4b10cb484268"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ame-soeur/",
+    "fetchedAt": "2026-08-03T21:15:14.221Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ame-soeur/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Chinese Salted Duck",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "523",
+      "carbohydrateContent": "2",
+      "fatContent": "50",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Clean the duck under running water and remove any giblets and hair. Then pat dry with kitchen paper. Then poke some hole on the surface of the duck so the flavors can go insider easier.",
+      "In a pan, add 4 tablespoons of salt, 1 tablespoon of Sichuan peppercorn and 2 star anises. Stir fry over slow fire until aromatic and the salt becomes slightly browned. Set aside to cool down.",
+      "Rub the salt on every part of the duck. Then cover with plastic wrap, place in fridge and set aside for 1 day.",
+      "Add enough water in a large pot (the water level should cover the duck), add ginger, scallion and ShaoXing wine. Heat to bring the content to a boiling. Place the duck in, the water temperature drops in time. Then slow the fire to keep the broth slightly simmering but not boiling.  Don’t cover the lid and cook for 10 minutes.",
+      "Cover the lid now, turn off the fire and soak the duck for another 20 minutes. Then start the fire and continue heating until the water boils. Turn off fire and let it soak for another 20 minutes in the broth.",
+      "Transfer the duck to cutting board. Cut into pieces and server directly or with any dipping sauce you prefer. But the duck itself is good enough."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": null,
+        "notes": "around 3000g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger Smashed",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5e35434b5e7023c5575eb38aaeae5107560291da839090e53079d9955588569",
+    "lineage_hash": "a5bc1f64668d7b730109b902bd879efa5dc6de395a0f2df85871028df7e4a418"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-salted-duck/",
+    "fetchedAt": "2026-08-02T07:25:20.681Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-salted-duck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

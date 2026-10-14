@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Date Butter",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "65",
+      "carbohydrateContent": "7.3",
+      "fatContent": "4.3",
+      "proteinContent": "0.28"
+    },
+    "directions": [
+      "Add butter to a food processor and blend until smooth.",
+      "Add the dates and blend until smooth and well combined.",
+      "Taste and add more salt to your liking.",
+      "Transfer to air tight container. Keep refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Stick (113 G) Salted Butter",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "C",
+        "notes": "200-220 g, room temperature",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Himalayan Salt or Flaky Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6f3f48b25d15f46dbca7a36d157429c5059e849c678570e86c42855d4614c0b",
+    "lineage_hash": "bc9c67c44955db1b02d8fe9a52b743efbbac71294bf08760bd177e2d26826038"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/date-butter/",
+    "fetchedAt": "2026-09-26T01:37:46.117Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/date-butter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

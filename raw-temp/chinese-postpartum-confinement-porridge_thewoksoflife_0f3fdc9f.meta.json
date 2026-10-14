@@ -1,0 +1,64 @@
+{
+  "url": "https://thewoksoflife.com/chinese-postpartum-confinement-porridge/",
+  "slug": "chinese-postpartum-confinement-porridge_thewoksoflife_0f3fdc9f",
+  "title": "Chinese Postpartum Confinement Porridge (月子粥)",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T15:04:28.284Z",
+  "ldName": "Chinese Postpartum Confinement Porridge",
+  "ldTime": "PT210M",
+  "ldPrepTime": "PT75M",
+  "ldCookTime": "PT135M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert abd Sweet Stuff",
+  "ldKeywords": "confinement porridge",
+  "ldIngredientsRaw": [
+    "1/4 cup millet ((小米))",
+    "1/4 cup black rice ((and/or black glutinous rice - 黑米/黑糯米))",
+    "1/4 cup raw skin-on peanuts ((红衣花生))",
+    "1/4 cup red (adzuki) beans ((红豆))",
+    "6-8 cups water ((use less if you prefer a thick porridge, and more if you prefer a thin porridge) )",
+    "12  Chinese red dates (AKA jujubes) ((红枣))",
+    "8  dried longan fruits ((optional))",
+    "2 slices ginger",
+    "2 tablespoons dried goji berries ((枸杞))",
+    "Chinese brown/black sugar ((红糖 - to taste, optional; we added 2 tablespoons))"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the millet, black rice/black glutinous rice, peanuts, and red beans clean to wash away any dirt or dust. Transfer everything to a thick-bottomed soup pot along with 6-8 cups of water. Soak for 1-2 hours, or overnight.",
+    "After soaking, cut the red dates open and remove the pit in the middle. You can use your fingers, or cut around the pit with a paring knife. Add the dates, dried longan fruit (if using), and ginger.",
+    "Bring the porridge to a boil, then cover and reduce the heat to low. Simmer for 1 hour. If the soup boils over, slightly angle the lid to release excess steam. Adjust the heat to ensure that the porridge is at a low and slow simmer. Avoid the temptation to stir the porridge, as the grains will stick to the bottom of the pot the more you stir it.",
+    "After one hour, turn off the heat, and leave the porridge on the stove for 1 hour, letting it continue cooking in residual heat.",
+    "Add the goji berries and the Chinese brown sugar (if using). Bring to a boil, and cook until the porridge reaches the ideal thickness, which should take about 10-15 minutes. Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "86 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "3 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "0.4 g",
+    "sodiumContent": "11 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "0.1 g",
+    "unsaturatedFatContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/4 cup millet (小米)",
+    "▢ 1/4 cup black rice (and/or black glutinous rice – 黑米/黑糯米)",
+    "▢ 1/4 cup raw skin-on peanuts (红衣花生)",
+    "▢ 1/4 cup red (adzuki) beans (红豆)",
+    "▢ 6-8 cups water (use less if you prefer a thick porridge, and more if you prefer a thin porridge)",
+    "▢ 12 Chinese red dates (AKA jujubes) (红枣)",
+    "▢ 8 dried longan fruits (optional)",
+    "▢ 2 slices ginger",
+    "▢ 2 tablespoons dried goji berries (枸杞)",
+    "▢ Chinese brown/black sugar (红糖 – to taste, optional; we added 2 tablespoons)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

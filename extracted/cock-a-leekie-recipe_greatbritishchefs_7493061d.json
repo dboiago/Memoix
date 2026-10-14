@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Cock a Leekie",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200˚C/gas mark 6. Rinse the chicken bones in cold water for about 5 minutes",
+      "Place the bones and the rest of the stock ingredients into a large pot and cover with water. Bring to the boil and leave simmer for 1 hour - skim off any impurities as it cooks",
+      "Pass the stock through a fine strainer into another pot. Bring back to the boil and season taste. Keep warm while you complete the rest of the dish",
+      "Season the chicken breasts with salt and pepper. Quickly sear the chicken in a hot pan with oil until golden on both sides. Transfer to an oven and cook until 75°C, approximately 8 minutes",
+      "Wash the rice thoroughly in cold water, drain and leave to stand for 20 min. Add to a small saucepan, cover in twice its volume of water and bring to the boil. Reduce to a low heat and cover. Cook gently for approximately 12 minutes then remove from the heat and set aside",
+      "Bring a pan of salted water to the boil. Blanch the leek, carrots and shallots in the water until render, approximately 3-4 minutes",
+      "Arrange the rice in a ring in the centre of each bowl. Place the vegetables around the plate and top\r\nwith the chicken. Drizzle over the chicken stock, sprinkle with the chopped chervil and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "cut into thin strips",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "cut into thin strips",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "cut into thin strips",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f55c71e9a94d80bf6371d6845a28d794448be32ac43293dc0e3d1e896f2134aa",
+    "lineage_hash": "d75e27c8f6dd2cbf7230a075ae03cedcbe2f7aeb9d3ab0cd6cb3000bb33ace5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cock-a-leekie-recipe",
+    "fetchedAt": "2026-08-03T17:51:07.756Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cock-a-leekie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

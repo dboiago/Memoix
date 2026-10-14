@@ -1,0 +1,255 @@
+{
+  "recipe": {
+    "name": "Dhaba Chicken Curry",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken, salt to taste, ginger garlic paste, degi red chilli powder, mustard oil and marinate well.",
+      "Keep it aside for further use.",
+      "In a handi, add mustard oil, once it's smoky hot, add green cardamom, black peppercorns, cloves and splutter well.",
+      "Add onions and cook for 5-6 minutes or until it's light golden in colour.",
+      "Add tomatoes, tomato puree and cook for a while.",
+      "Add ginger garlic paste, ghee and cook for another 4-5 minutes.",
+      "Now, add degi red chilli powder, coriander powder, turmeric powder, salt to taste and cook for a minute.",
+      "Add marinated chicken, hot water, give it a good mix, cover it with lid and let it simmer for 12-15 minutes or until chicken gets tender.",
+      "Finish it with green chillies, ginger, fresh coriander leaves, black pepper powder, garam masala and give it a quick boil.",
+      "Transfer it into the serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti and steam rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "thigh & drumstick",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "roughly sliced",
+        "amount": "2",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "puree",
+        "amount": "4",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "5",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & julienned",
+        "amount": "½",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "fresh, chopped",
+        "amount": "¼",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dhaba Style Chicken Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a637bd9bbf8312e8036b7bfaf0150b86231da9f074dcf68bc357485f3cf65b67",
+    "lineage_hash": "5aba9903946ffff93f132f1e2311a90968cd6f7bb148b67626bc2ef70fdf78a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-chicken/",
+    "fetchedAt": "2026-08-02T20:40:06.445Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

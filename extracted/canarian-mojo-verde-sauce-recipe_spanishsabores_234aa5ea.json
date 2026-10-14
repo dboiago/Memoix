@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Canarian Mojo Verde Sauce",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "333",
+      "carbohydrateContent": "3.07",
+      "fatContent": "36.14",
+      "proteinContent": "0.69"
+    },
+    "directions": [
+      "Remove the stems from the cilantro and parsley and roughly chop the leaves",
+      "Roughly chop the garlic and mash it to a paste in a mortar and pestle",
+      "Add the cilantro, parsley, mashed garlic, chopped pepper, sea salt and cumin to a blender or food processor and pulse a couple of times.",
+      "Slowly drizzle in the olive oil while blending slowly (you don't want to over process the sauce, the truly traditional way would be to do it all in a mortar and pestle).",
+      "Add the vinegar to taste, and then adjust for salt and cumin."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cilantro Stems Removed",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Stems Removed",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peppers Either Bell Peppers",
+        "unit": "small",
+        "notes": "alt: spicy ones",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Quality Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "Tbsp",
+        "notes": "alt: red wine vinegar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84e955ecf870e3d06b5c7265fe81fc4055b29535edb533d960892648a314262a",
+    "lineage_hash": "d0ac9e9e10da9daa6fe89e9d580eda0405e0064582cffebbc75c942d8f1fefc8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/canarian-mojo-verde-sauce-recipe/",
+    "fetchedAt": "2026-08-02T10:33:46.336Z"
+  },
+  "rawSource": "https://spanishsabores.com/canarian-mojo-verde-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

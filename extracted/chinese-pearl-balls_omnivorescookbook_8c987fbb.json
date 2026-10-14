@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Chinese Pearl Balls (珍珠丸子)",
+    "time": "1 hr 5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "315",
+      "carbohydrateContent": "14.7",
+      "fatContent": "8",
+      "proteinContent": "38.7"
+    },
+    "directions": [
+      "Add glutinous rice and dried shrimp into separate bowls. Add cold water to cover. Let soak for at least 4 hours. (*Footnote 2)",
+      "Drain glutinous rice and dried shrimp. Place the glutinous rice onto a medium plate with rim or a large bowl. Finely mince the rehydrated dried shrimp.",
+      "Combine pork, eggs, dried shrimp, light soy sauce, Shaoxing wine, ginger, green onion, sugar, salt, white pepper, and nutmeg in a large bowl. Stir in one direction, in a circular motion until it’s sticky. Add cornstarch and panko breadcrumbs. Stir to mix well. Pour in the sesame oil. Stir again to combine.",
+      "Line your steamer with parchment paper with holes cut in it, or a few layers of wet cheesecloth.",
+      "Scoop out about 2 tablespoons of meat paste (you can use a cookie scoop), shape it into a ball, and roll it in the glutinous rice, until the surface is completely coated with rice. Gently press with your hand so that the rice sticks to it. Place meatballs onto the lined steamer. Make the rest of the meatballs using the same method, spaced 1” (2.5 cm) apart.",
+      "Add 2” (5 cm) water to a steamer and bring it to a boil.",
+      "Steam the meatballs for 15 minutes, or until cooked through (Footnote 3). Serve as a main dish with or without rice (Footnote 4)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Glutinous Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Dried Shrimp",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "efaa7bcef0bac071369c0babd2a118f978a30c4b426e74acde241fc9525738ec",
+    "lineage_hash": "7e8aba666e15a8e921cb647da1059a2ed0e1ad535d6040a4d5afaea9618e07e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/pearl-balls/",
+    "fetchedAt": "2026-08-02T07:52:03.148Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/pearl-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

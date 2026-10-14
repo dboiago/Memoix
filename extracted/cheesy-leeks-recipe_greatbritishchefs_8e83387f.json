@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Cheesy Leeks",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 180°C/gas mark 4. Trim the tops and bottoms off the leeks and slice them into thin rounds",
+      "Melt 50g of the butter in a saucepan, then add the flour and stir over a low heat for a few minutes until well combined. Add a third of the milk and stir until smooth, then repeat with the remaining two-thirds of the milk and continue to cook for 5 minutes until thickened",
+      "Add a pinch of salt, the Worcestershire sauce, the mustard and 100g of the cheddar. Taste it to check your happy with the seasoning, then keep warm",
+      "In a separate frying pan over a low heat, sweat the leeks in the remaining butter until softened and fully cooked (around 10 minutes)",
+      "Transfer the leeks and the sauce into an oven dish, stirring to combine. Sprinkle with the breadcrumbs followed by the remaining 50g of cheese. Bake for 30 minutes until golden brown on top and piping hot in the middle. Sprinkle with chives just before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leeks",
+        "unit": "large",
+        "notes": "washed and outer layer removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": "ideally Davidstow, grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "pinch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornish Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf3a9aa23bcc0e909b17e53412e52b923e16c6804a05986542d5281e12cccd8d",
+    "lineage_hash": "2c6eadaf8859b2729aa8802ee766d1af35ab2a4bec78122bc65543a54fcddb5b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cheesy-leeks-recipe",
+    "fetchedAt": "2026-08-02T20:03:37.325Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cheesy-leeks-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

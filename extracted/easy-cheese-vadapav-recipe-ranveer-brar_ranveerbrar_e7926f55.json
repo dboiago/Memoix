@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Cheese Vadapav (चीज़ी वड़ा पाव)",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the boiled potatoes and cut into small cubes.",
+      "Heat 2 tbsp oil in a pan; add Mustard seeds and Cumin seeds. Let it crackle.",
+      "Add asafoetida, curry leaves, crushed ginger, garlic, chopped green chilies one after another and sautÃ©.",
+      "Add sliced onion and sautÃ© till translucent. Add turmeric powder and salt, mix well.",
+      "Add potatoes to pan and sautÃ©. Add a little water and let it cook for 5 minutes or till all the water evaporates.",
+      "Add chopped coriander and mix well. Remove the mixture from pan and allow it to cool completely.",
+      "In another bowl mix gram flour, salt, red chili powder, turmeric powder, Carom seeds and water and make thick batter.",
+      "Divide potato mixture into 12 equal portions. Take 1 portion and flatten it on palm, place cheese cube in center, cover it with potato mixture.",
+      "Dip each vada in batter and fry till golden. Drain on absorbent paper.",
+      "Slice each pav into half and spread some dry garlic chutney inside.",
+      "Place one vada in each pav and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "boiled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "extra for deep frying",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger & Garlic",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": "ajwain",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Garlic Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pav / Dinner Rolls",
+        "unit": null,
+        "notes": "as accompaniment",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Green Chilies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01d5a21843d941f18d3f7171a9cb58598d17f6b16af574ec49aed4086f725061",
+    "lineage_hash": "49188144e2b09ba187d13af96960f7f10ec8d4d4ae945a84e1852d2a3770498c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-vadapav/",
+    "fetchedAt": "2026-08-02T11:43:22.618Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-vadapav/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

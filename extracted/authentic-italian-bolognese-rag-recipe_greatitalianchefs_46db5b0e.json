@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Ragù alla Bolognese",
+    "time": "4 hr",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large thick-bottomed saucepan over a medium heat. Add the minced pork belly to the pot and cook until all the liquid from the meat has evaporated, then add the minced beef and cook until golden, stirring frequently. Transfer the meat to a bowl and set aside",
+      "Add the butter to the saucepan and place over a medium heat. Add the onion, carrot and celery and cook until the onions are very soft and translucent. Finally, add the tomato paste and sauté for 5 minutes more, stirring occasionally",
+      "Return the meat to the saucepan, turn up the heat and pour in the red wine. Cook over a high heat for 2 minutes, then cover the pan and turn the heat down to low",
+      "Leave the ragù alla Bolognese to simmer very gently for at least 3 hours. The meat must not be excessively dry. Pour in the whole milk and cook for a further 40 minutes just before serving",
+      "Ragù alla Bolognese is very tasty when just cooked, but is even better the next day. Reheat the sauce over a very low heat with a little bit of milk and use it to season pasta or simply eat it with slices of toasted bread"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Mince",
+        "unit": "g",
+        "notes": "15% fat",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "g",
+        "notes": "triple concentrated",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b86ffeaf9a8860710f67127eb4fe021837a119fafe3bfffe85cd43d9c6953253",
+    "lineage_hash": "4b2e50649aedd668a4b10b1cb5950368c449c3ba13f886f2ee0185259c30c6cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/bolognese-ragu-recipe",
+    "fetchedAt": "2026-08-02T02:16:10.588Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/bolognese-ragu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

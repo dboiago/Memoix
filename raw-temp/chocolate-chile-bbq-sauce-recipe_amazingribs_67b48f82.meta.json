@@ -1,0 +1,60 @@
+{
+  "url": "https://amazingribs.com/tested-recipes/barbecue-sauce-recipes/chocolate-chile-bbq-sauce-recipe-yes-you-read-right/",
+  "slug": "chocolate-chile-bbq-sauce-recipe_amazingribs_67b48f82",
+  "title": "Chocolate Chile BBQ Sauce Recipe",
+  "byline": "Meathead",
+  "fetchedAt": "2026-08-02T04:42:56.490Z",
+  "ldName": "Chocolate Chile Barbecue Sauce Recipe",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "44"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Sauces and Condiments",
+  "ldKeywords": "barbecue, barbecue sauce, bbq sauce, chile, chipotle, chocolate, grill",
+  "ldIngredientsRaw": [
+    "¾ cup granulated sugar",
+    "½ cup water",
+    "¾ cup rice vinegar",
+    "½ cup tomato paste",
+    "¼ cup orange juice",
+    "2 tablespoons unsweetened cocoa powder",
+    "1 tablespoons Worcestershire sauce",
+    "½ teaspoon vanilla extract",
+    "½ teaspoon Morton Coarse Kosher Salt",
+    "⅛ teaspoon chipotle chile powder"
+  ],
+  "ldInstructionsRaw": [
+    "Mix the sugar and water in a pan and simmer until the sugar dissolves. Add the rest of the ingredients and simmer on low for 30 minutes.",
+    "Paint it on your meat after it is fully cooked. One layer is all that is needed. If you wish, put the sauced meat over high heat to caramelize the sugars a bit, but watch it carefully so it doesn&#039;t burn. Then, for a festive touch, grate some orange zest on top. Serve it with a big red wine."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 tablespoons",
+    "calories": "396 kcal",
+    "carbohydrateContent": "95 g",
+    "proteinContent": "4 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "1191 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "87 g"
+  },
+  "htmlIngredientLines": [
+    "¾ cup granulated sugar",
+    "½ cup water",
+    "¾ cup rice vinegar",
+    "½ cup tomato paste",
+    "¼ cup orange juice",
+    "2 tablespoons unsweetened cocoa powder",
+    "1 tablespoons Worcestershire sauce",
+    "½ teaspoon vanilla extract",
+    "½ teaspoon Morton Coarse Kosher Salt",
+    "⅛ teaspoon chipotle chile powder"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "US",
+  "siteCourseHint": "Smoking"
+}

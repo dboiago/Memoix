@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/croissant-recipe",
+  "slug": "croissant-recipe_greatbritishchefs_6bc7dd7a",
+  "title": "Croissant Recipe",
+  "byline": "by Daniel Fletcher",
+  "fetchedAt": "2026-08-03T22:43:30.595Z",
+  "ldName": "Croissants",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Breakfast",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "125ml of milk",
+    "125ml of water",
+    "7g of fast-action dried yeast",
+    "500g of strong white flour, plus extra for dusting",
+    "40g of caster sugar",
+    "10g of salt",
+    "250g of unsalted butter"
+  ],
+  "ldInstructionsRaw": [
+    "Place the milk and water in a saucepan and warm gently. You do not want the liquid to be hot, just 30 to 35°C. Dissolve the yeast in the warm liquid",
+    "Sift the flour into a large bowl and add the sugar to one side of the bowl and the salt to the other. Form a well in the middle of the flour and pour the yeast, milk and water into the centre",
+    "Bring the dry ingredients into the wet from the edges, mixing everything together until it forms a dough. Tip the dough onto a lightly floured surface and work the dough until elastic and pliable",
+    "Put the dough into a lightly floured bowl, cover with cling film and place in the fridge to rest for at least 2 hours, or preferably overnight",
+    "Roll the dough on a lightly floured work surface into a rough rectangle. Bash the cold butter (while still in its wrapper) with a rolling pin until slightly flattened, unwrap it and place it in the middle of the rectangle. Fold the dough over the butter and seal all the edges with your fingers",
+    "Roll out the dough to a rectangle about 16 x 8 inches. Position the dough so that one of the narrow ends is facing you. Brush off the excess flour and fold the dough into three. Fold the top section, the one furthest away from you, first and then fold the bottom section up to meet it, just like folding a business letter",
+    "Seal the edges together with your fingers. Dust the work surface with more flour and turn the dough 90 degrees so that the folds are running vertically in front of you",
+    "Repeat this rolling and folding twice more, so that you have rolled and folded the dough 3 times in total. Place the dough to rest in the fridge for at least half an hour",
+    "On a lightly floured work surface, roll the dough out until it is about 0.5cm thick. Cut the rolled dough into isosceles triangles approximately 20x10cm",
+    "With the narrow point of the triangle facing away from you, roll up the base towards it and place on a baking tray lined with baking parchment. Repeat with the remaining triangles of dough. Leave the croissants to rise for 1 hour",
+    "Preheat the oven to 200°C (180°C fan)/ gas mark 6",
+    "Place the croissants on a baking tray and bake for 20–25 minutes. Serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

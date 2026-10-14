@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Crispy Egg Pakoda fingers",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add eggs, salt, black pepper powder, chopped green chillies, ginger, coriander leaves, oil and mix everything properly.",
+      "Now grease a mould with oil and pour the egg mixture in it then place it in the steamer and steam it for 8-10 minutes or until the mixture is cooked completely.",
+      "Remove and let it cool down a bit, then demould it and cut it into finger shape and let it cool down completely.",
+      "Meanwhile in a bowl add gram flour, ginger-garlic paste, salt, asafoetida, degi red chilli powder, turmeric powder, carom seeds, egg, curd and mix everything together.",
+      "Now take the cooled egg fingers and coat them in gram flour then insert a wooden skewer in it.",
+      "Then dip in the batter and deep fry them in medium hot oil until golden brown and crispy from all sides.",
+      "Remove in an absorbent paper and serve them with salad and garnish with coriander leaves and lemon wedges.",
+      "In a bowl add red bell pepper, green bell pepper, yellow bell pepper, coriander leaves, lemon juice, salt, salad oil and mix everything properly and keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "2-3",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "for greasing",
+        "amount": "1",
+        "section": "For Egg Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Few Coriander Leaves",
+        "unit": null,
+        "notes": "roughly torn",
+        "amount": "0",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "medium",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salad Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ad44350eabc9bd5f1c322df8b2bfbbc2a7d1f6fa17901072e69ef42dd0d824d",
+    "lineage_hash": "38d9f929db420a93272b99f6fda158ea22bb38829fcf246b1f5f7618ef9e0609"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-pakoda-fingers/",
+    "fetchedAt": "2026-08-02T18:51:06.819Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-pakoda-fingers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

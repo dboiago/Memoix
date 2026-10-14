@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Crispy Stuffed Lotus Root with Pork",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "385",
+      "carbohydrateContent": "30",
+      "fatContent": "23",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Put all of the meat filling ingredients in a mixing bowl. Stir in one direction for about 5-10 minutes until the meat mixture becomes a very sticky paste. Set it aside.",
+      "Peel, wash, and cut the lotus roots into 1/8-inch slices. Rinse the lotus root slices in cold water to wash away excess starch and so they don’t turn black (again, they’re similar to potatoes). Drain. It’s best to spin them in a salad spinner to get rid of all the excess water.",
+      "Take one slice, and spread on a thin layer of meat filling. Top it with another slice of lotus root to create a sandwich. Gently press the two slices together so the meat filling fills the holes of the lotus root on both sides This step will “lock” the two slices together. Repeat until you’ve used all of the slices. You should be able to make about 15-18 pieces.",
+      "Add both flours, salt and the five-spice powder to a mixing bowl. Slowly add the water, stirring constantly. Stir thoroughly until any lumps have dissolved. Then stir in the beer. This batter is pretty light. You can thicken it by adding a bit more flour if you like a heavier batter. Also, stir the batter between dipping each lotus root piece, as sweet rice flour tends to settle quickly.",
+      "Now it’s time to prepare the oil for frying. I like to use a small, deep pot because it requires less oil and its depth helps contain the oil, avoiding splatters and burns.",
+      "Fill the pot about 1.5” deep with oil, and heat it to 275 degrees. Once the oil reaches 275 degrees, coat the lotus in the batter and slowly lower into the oil. Fry a few pieces at a time, frying each side for about 6 – 7 minutes. Take them out and set them aside on a plate lined with a paper towel. Repeat until all the lotus sandwiches are fried. Now turn up the heat to bring the oil up to 325 degrees. Re-fry each piece for 3 minutes to really get the color and crunchiness that we are looking for."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lotus Roots",
+        "unit": "lb",
+        "notes": "680g, fresh",
+        "amount": "1½",
+        "section": "You’ll need",
+        "isOptional": false
+      },
+      {
+        "name": "Oil (for Frying)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "You’ll need",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": "340g; can substitute ground chicken",
+        "amount": "¾",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "very finely chopped",
+        "amount": "1",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "finely minced",
+        "amount": "2",
+        "section": "meat filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "30g",
+        "amount": "¼",
+        "section": "batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Rice Flour",
+        "unit": "C",
+        "notes": "30g; can substitute cornstarch",
+        "amount": "¼",
+        "section": "batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "batter",
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "80 ml",
+        "amount": "⅓",
+        "section": "batter",
+        "isOptional": false
+      },
+      {
+        "name": "Beer",
+        "unit": "C",
+        "notes": "of your choice",
+        "amount": "¼",
+        "section": "batter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aaf21bb0dfa9f2d6f9a062681af850efcba6f79d2358019d2050199195a43820",
+    "lineage_hash": "2b78aa6365c152c59c9b543157f51fb33f6fdfea49116ba0400094fd6f5386c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/stuffed-lotus-root-pork/",
+    "fetchedAt": "2026-08-02T00:32:42.355Z"
+  },
+  "rawSource": "https://thewoksoflife.com/stuffed-lotus-root-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

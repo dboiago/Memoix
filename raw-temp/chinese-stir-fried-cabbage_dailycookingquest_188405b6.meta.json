@@ -1,0 +1,53 @@
+{
+  "url": "https://dailycookingquest.com/stir-fry-cabbage.html",
+  "slug": "chinese-stir-fried-cabbage_dailycookingquest_188405b6",
+  "title": "Chinese Stir-Fried Cabbage",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:25:42.034Z",
+  "ldName": "Chinese Stir-Fried Cabbage",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish, Vegetarian",
+  "ldKeywords": [
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "1 head (~ 1 kilogram / 2.2 lb) cabbage",
+    "2 tablespoon oil",
+    "3 cloves garlic, minced",
+    "1/2 inch ginger, minced",
+    "2 scallions, thinly sliced white parts and cut green parts into 1 inch sections",
+    "5 dried chilies",
+    "1/2 teaspoon Sichuan peppercorns",
+    "1/2 teaspoon salt",
+    "1/2 tablespoon Chinese black vinegar",
+    "1 tablespoon light soy sauce"
+  ],
+  "ldInstructionsRaw": [
+    "Gently tear cabbage with hands, remove the tough ribs. Washed and drained.",
+    "Heat oil in a wok/frying pan over medium heat. Sauté garlic, ginger, and white parts of scallions until fragrant, about 2-3 minutes.",
+    "Add dried chilies and Sichuan peppercorns, fry for another 30 seconds.",
+    "Turn the heat to high, then add cabbage, along with salt, black vinegar, and light soy sauce. Stir fry for 1-2 minutes until the cabbage starts to wilt. Turn off heat. Add the green parts of scallions, mix well. Transfer to a serving plate and serve hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 head (~ 1 kilogram / 2.2 lb) cabbage",
+    "2 tablespoon oil",
+    "3 cloves garlic, minced",
+    "1/2 inch ginger, minced",
+    "2 scallions, thinly sliced white parts and cut green parts into 1 inch sections",
+    "5 dried chilies",
+    "1/2 teaspoon Sichuan peppercorns",
+    "1/2 teaspoon salt",
+    "1/2 tablespoon Chinese black vinegar",
+    "1 tablespoon light soy sauce"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

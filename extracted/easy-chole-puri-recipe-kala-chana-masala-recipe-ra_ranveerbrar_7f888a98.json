@@ -1,0 +1,371 @@
+{
+  "recipe": {
+    "name": "Chole Puri",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, add ghee once it's hot, add green cardamom, black peppercorns, cumin seeds and let it splutter well.",
+      "Add onion and saute until light pink in color.",
+      "Add salt to taste, coriander powder, degi red chilli powder, asafoetida and turmeric powder saute it well.",
+      "Add coriander leaves, little water and cook for 2-4 minutes.",
+      "Add tomato and mix everything well. Cook until the tomatoes are softened.",
+      "Once the ghee is separated from the masala. let the masala come to room temperature.",
+      "Transfer the masala into the grinder jar and grind it into a smooth paste. Keep it aside for further use.",
+      "In a large pot, add ghee once it's hot, add green chillies, ginger, garlic and saute it well.",
+      "Add black chana and saute it for a minute. Add sugar, salt to taste and saute it well.",
+      "Cover it with the lid and cook for 5 minutes.",
+      "Add fresh fenugreek leaves, degi red chilli powder, a pinch of asafoetida, black pepper powder and saute it well.",
+      "Add prepared masala and saute on medium flame.",
+      "Add water and mix it well. Cover it with the lid and cook on medium flame.",
+      "Mash a few chana as this helps in thickening the gravy.",
+      "Once it's done switch off the flame and garnish with coriander sprig, pomegranate pearl.",
+      "Serve hot with puri and salad.",
+      "In a parat, add whole wheat flour, salt to taste, ghee, water as required and knead a smooth tight dough.",
+      "Apply ghee and cover it with a damp cloth and keep it aside for further use.",
+      "Pinch a small lemon size ball and roll it into a round shape to slightly thick thickness.",
+      "Heat oil in a kadai, once the oil is medium hot fry the puri",
+      "Press until the puri puffs up and splash oil to puff up fully.",
+      "Flip over and fry until it turns golden brown.",
+      "Remove on an absorbent paper.",
+      "In a bowl, add onion, tomato, green chillies, lemon juice, salt to taste and mix well.",
+      "Keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "slice",
+        "amount": "5",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": "For Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Chana",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Few Fresh Tender Fenugreek Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "As Required Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "slice",
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "less spicy, chopped",
+        "amount": "2",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "As Required Pomegranate Pearl",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "584026e9483a71016d11cea3066bcc0956b85bc6f0d153aa98a6fe39fb2059cd",
+    "lineage_hash": "e7363dcdee307a10c9d0085ad01ed1034adab58e8b3cd4ad3e97f7b5c74c8c9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chana-puri/",
+    "fetchedAt": "2026-08-02T18:32:28.571Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chana-puri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

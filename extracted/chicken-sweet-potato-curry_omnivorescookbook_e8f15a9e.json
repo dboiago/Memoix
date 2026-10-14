@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Chicken Sweet Potato Curry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "558",
+      "carbohydrateContent": "50.7",
+      "fatContent": "30.4",
+      "proteinContent": "24.8"
+    },
+    "directions": [
+      "Heat the olive oil in a 9” dutch oven or a large skillet over medium-high heat until hot. Add the chicken pieces without overlapping. Cook for 1 minute without disturbing, or until the bottom turns golden brown. Flip to brown the other side.",
+      "Add the butter, onion, ginger and garlic. Cook over medium heat until the onion turns light golden, 2 to 3 minutes. Add the curry powder, cumin powder, black pepper, paprika, and turmeric powder. Cook and stir over medium-low heat for 30 seconds, until the curry powder is evenly coated.",
+      "Add the chicken broth, sweet potato, garbanzo beans, and salt. Bring to a boil then reduce to medium-low heat. Simmer for 10 minutes, or until the sweet potatoes turn tender.",
+      "Pour in the coconut milk and cook over medium heat until the sauce just starts to simmer. Turn off heat and garnish with cilantro, if using. Serve hot over steamed rice or by itself as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "*Footnote 1, boneless, skinless, cut to bite-size pieces",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": "Optional, *Footnote 2",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Potatoes (2 Small or 1 Big)",
+        "unit": "lb",
+        "notes": "cut into pieces that's about 1/2\" (1 cm) thick and 1” (2.5 cm) long",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garbanzo Beans (aka Chickpeas) (15 Oz / 425 G Can)",
+        "unit": "can",
+        "notes": "drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Unsweetened Coconut Milk (13.5 Oz / 400 ML Can)",
+        "unit": "can",
+        "notes": "*Footnote 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fdb356dc5d2b15d14035b9c595bef40d27d685f79503a8d37e24360a86a01b01",
+    "lineage_hash": "c4b15230f54ce92c3c0548febaca53c6c2a96b079c53716a80ad55ed69db6929"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-sweet-potato-curry/",
+    "fetchedAt": "2026-08-02T07:45:01.639Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-sweet-potato-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

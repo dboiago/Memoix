@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Duck and waffle",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Season the duck legs generously with salt and pepper, then place them in a large pot along with the crushed garlic, thyme and rosemary",
+      "Cover the duck legs with the duck fat, making sure they are completely submerged, then cover the pot with a lid. Cook the duck legs on low heat for around 3 hours or until the meat falls off the bone",
+      "Simmer all the hot honey ingredients together gently for a few minutes then set aside to cool",
+      "For the waffles, place the egg yolk in a large bowl, then add the flour and a generous pinch of salt",
+      "Add the sugar, then whisk in the milk followed by the melted butter and mustard",
+      "Whisk the egg white to soft peaks, then fold through the batter",
+      "Heat a waffle maker according to manufacturer’s instructions and brush or spray with a little oil",
+      "Ladle in just enough batter to cover the surface, then close and cook according to manufacturer’s instructions",
+      "Remove the duck legs from the fat, and place them onto a parchment-lined oven tray. Place into the oven and cook for 10 minutes or until the skin is crisp",
+      "Fry two eggs until cooked to your liking in hot oil",
+      "Serve the waffles topped with a crispy confit duck leg, a fried egg and plenty of thyme-infused honey"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "L",
+        "notes": "or enough to fully submerge the legs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": "to season",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg",
+        "unit": null,
+        "notes": "separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22c1d92310b0a366e29c5c41f47122c32b3c2c72f67d66656b65b96502f9fb29",
+    "lineage_hash": "e32e42f70a9f1674ae4bda6838898aca31ffb7e1e485123830cc4dc2d458d77b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-waffle-recipe",
+    "fetchedAt": "2026-08-02T00:43:10.242Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-waffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

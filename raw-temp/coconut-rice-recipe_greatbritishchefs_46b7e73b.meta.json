@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/coconut-rice-recipe",
+  "slug": "coconut-rice-recipe_greatbritishchefs_46b7e73b",
+  "title": "Coconut Rice Recipe",
+  "byline": "by Asma Khan",
+  "fetchedAt": "2026-08-03T14:22:08.139Z",
+  "ldName": "Coconut rice",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "375g of basmati rice, cooked",
+    "1/2 tsp ghee",
+    "1 tbsp of vegetable oil",
+    "1/2 tsp mustard seeds",
+    "3 dried red chillies",
+    "2 tbsp of curry leaves, (around 2 sprigs)",
+    "2 tbsp of cashew nuts",
+    "asafoetida, a generous sprinkle",
+    "2 tbsp of urad dal, (black lentils that are skinned and split)",
+    "95g of freshly grated coconut",
+    "salt to taste"
+  ],
+  "ldInstructionsRaw": [
+    "In a large wok, heat together the ghee and vegetable oil. Add the mustard seeds and once they begin to pop, add the dried red chillies and curry leaves. Stir until they become almost crisp",
+    "Add the urad dal, cashew nuts and asafoetida and continue stirring, making sure the dal and cashew nuts get nicely roasted and golden brown in colour, but do not burn – if they burn the whole dish will have a smoky flavour",
+    "Add the coconut and keep stirring on a medium heat until the wetness from the coconut disappears and it becomes fragrant and lightly toasted – it should turn reddish-brown in colour. This should take 7–8 minutes, you want the mix to be almost dry. Keep an eye on the coconut as it can burn quickly once toasted",
+    "Add the rice, breaking down the chunks carefully as you go. Once well-mixed, season with salt and remove from the heat",
+    "Transfer into a serving plate and serve hot with pickle and poppadoms"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

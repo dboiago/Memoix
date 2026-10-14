@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Creme egg pancake stack",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the whipped cream, whisk the double cream with the caster sugar until thick and set aside",
+      "Heat a non-stick frying pan over a medium heat. In a jug, whisk together the egg and milk. Sieve the flour into a large bowl and pour in the egg mixture. Mix until well combined",
+      "Dollop 1 tbsp of batter into the hot pan for each pancake and spread out into a circle with the back of a spoon - they will take 2-3 minutes to start to bubble. Using a palette knife, check that they are golden underneath, then flip over for a few seconds to finish cooking",
+      "Repeat until all of your batter is used up - you should be left with 12 pancakes",
+      "To make the sauce, cut the Creme Egg into quarters and heat in a pan with the double cream until smooth and melted",
+      "To stack your pancakes, spread a thick layer of double cream between each pancake and drizzle with the sauce. Top with some halved Creme Eggs and served"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creme Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creme Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f35b8544022fddeeedbb8cdc7383e87f47a1e12b2f16b98782d5c37fabcbba60",
+    "lineage_hash": "1cd497bb6a933cf86578519d0c774fb211f653143d69ec45bba818769404e456"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/creme-egg-pancake-stack-recipe",
+    "fetchedAt": "2026-08-03T23:32:02.652Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/creme-egg-pancake-stack-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Candied Hazelnuts",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the hazelnuts in a dry pan, moving them around often and ensuring that they do not get dark. Place the sugar in a saucepan with 3 1/2 tablespoons of water and melt it until it reaches 250°F. Add in the hazelnuts, remove from the heat, and mix until the sugar completely coats the hazelnuts and turns white.",
+      "Place the saucepan back over the heat and melt the sugar again, cooking until it caramelizes. Spread the hazelnuts out on a baking tray lined with parchment paper and let cool. Place them in little bags or in paper cones."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "oz",
+        "notes": "blanched",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ccdf5b902242b3ba8adf1a77ac051d85736e52ecd915faa4a5c223e2ddc941c1",
+    "lineage_hash": "954da878bac4458fe65947553d8e79ebd2ca3241017fa61396dd363c3dbd41eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/candied-hazelnuts",
+    "fetchedAt": "2026-08-03T08:09:53.806Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/candied-hazelnuts",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

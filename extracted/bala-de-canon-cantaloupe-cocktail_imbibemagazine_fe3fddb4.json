@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Bala de Canon Cantaloupe Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Chia-seed and Cantaloupe"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice and strain into a rocks glass filled with fresh ice. Garnish.",
+      "Cantaloupe PuréeSkin a ripe cantaloupe and cut the fruit into chunks, reserving the seeds and pulp. Purée in a blender (with the seeds, which add flavorful complexity) until smooth; press through a fine strainer to remove solids. Refrigerate and use within 2 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cantaloupe Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "37c6649b51ee0b3085b0c647e42fe26a034d735d468e754e7c41ffd460451e48",
+    "lineage_hash": "ae008dc570258a9868c190e1d9280f31735be43eb7cdc269d8cc3b04d80249e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bala-de-canon-cocktail/",
+    "fetchedAt": "2026-08-03T22:20:21.886Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bala-de-canon-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

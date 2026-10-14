@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Baby Bison Vodka Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients together with ice. Strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": "Sweet Liberty uses Zu bison grass vodka",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab6dbe7f4c5643987354828f1ad956227c311b902e124eb92a5811c8109ec7f8",
+    "lineage_hash": "1391940030db9100bbb3425eb87855bd89daed3afc52fe6ebbf02275c68a82ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/baby-bison-vodka-cocktail/",
+    "fetchedAt": "2026-08-03T21:09:11.679Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/baby-bison-vodka-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

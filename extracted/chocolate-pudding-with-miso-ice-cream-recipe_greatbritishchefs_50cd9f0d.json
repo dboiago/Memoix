@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Chocolate Pudding with Miso Ice Cream",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the ice cream. Place the milk, cream, salt, miso paste and sugar in a pan and bring to a gentle simmer whilst continuously stirring. Then whisk in the ice cream stabiliser",
+      "Use a food mixer or electric whisk to whisk your egg yolks and caster sugar on a high speed until you have creamy ribbons. With the mixer running on a low speed, gently stream your milk and cream mix into the yolk mix until all nicely incorporated. Pour into a big bowl and cool over a bowl of ice, constantly stirring until the mixture is completely cold. Transfer the mixture to a Pacojet container or ice cream machine and churn according to the manufacturer's instructions. Reserve in the freezer",
+      "To make the chocolate pudding mix, place the butter and chocolate in a bain marie and melt, then leave to cool a little. Meanwhile, whisk your eggs and sugar in a mixer on a high speed until light, fluffy and doubled in size",
+      "Gently fold the chocolate into the egg mixture, then add in the salt and flour, half a teaspoon at a time, until completely incorporated. Transfer to a piping bag and tie at the top. Reserve in the fridge",
+      "To make the feuilletine, preheat an oven to 200ºC/gas mark 6. Mix the sugar, flour and egg whites until well combined, then stir in the melted butter. Spread the mixture in a thin layer over a silpat mat or tray lined with baking paper, then bake for 5–7 minutes until golden brown. Leave to cool then crush up into little shards",
+      "To make the cookie crumb, turn the oven down to 150ºC/gas mark 2. Mix the caster sugar, ground almonds, flour and cocoa powder together in a bowl then pour in the melted butter and stir until well incorporated. Transfer to a large baking tray and bake for 40 minutes, stirring every 10 minutes to get a nice even crumb texture. Leave to cool and store in an airtight container",
+      "Now you have all the elements ready for the dessert, you can assemble. Preheat the oven to 120ºC/gas mark 1/2. Pipe the chocolate mixture 40% of the way up of 8 ovenproof bowls, ramekins or darioles. Bake for 14 minutes",
+      "Once baked, sprinkle each pudding with some toasted cacao nibs then leave to cool for 5 minutes. Add a layer of the crushed feuilletine, then add a scoop of the miso ice cream. Smooth the ice cream right to the edge of the bowls so you have a flat top. Cover with the cookie crumb and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Miso",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cream Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "155",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "tsp",
+        "notes": "gently toasted in a pan",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bb1bd2c080aa55a9f337388a9b2a3c07c25efef35c228ca7c836bc2939e6d22",
+    "lineage_hash": "b58761c0aaaf0887e13422eea5bafa7317e0796d9c7e7be3b4d3b9e91133fb6e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-miso-recipe",
+    "fetchedAt": "2026-08-02T19:26:48.581Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-miso-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Meethe Chawal",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Mint Sprig",
+      "Fried Nuts"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small kadai or handi, add ghee, once it's hot, add sella basmati rice and saute it for a minute.",
+      "Add apricots, water, saffron water, sugar, cloves, green cardamom, water and mix well.",
+      "Cover it with a lid and let it cook for 12-15 minutes on low flames or until cooked well.",
+      "Finish it with fried nuts, remaining sugar, little water and give it a good mix.",
+      "Transfer it to a serving bowl or dish, garnish it with mint sprig and fried nuts.",
+      "Serve hot.",
+      "In a pan, add ghee, once its hot, add pistachios, almonds, dry coconut, cashew nuts and fry them until golden in colour.",
+      "Add fennel seeds, crushed black peppercorns and give it a good mix.",
+      "Turn off the flames and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Sella Basmati Rice",
+        "unit": "C",
+        "notes": "soaked for 20 minutes",
+        "amount": "2½",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Apricots",
+        "unit": null,
+        "notes": "optional, roughly chopped",
+        "amount": "7-8",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Meethe Chawal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "No. Pistachios",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "No. Almonds",
+        "unit": null,
+        "notes": "cut into halves",
+        "amount": "10-12",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Coconut",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "¼",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "¼",
+        "section": "For Frying Nuts",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8b29d02478cab4257e3ec816b6c9bf2924371de6c81f3276845774274de0629f",
+    "lineage_hash": "009a2b26a6e2b3b360bb4be054a85444792dc4e9708ed01b39eb7d379719ba1a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/meethe-chawal-2/",
+    "fetchedAt": "2026-08-02T19:05:17.936Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/meethe-chawal-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

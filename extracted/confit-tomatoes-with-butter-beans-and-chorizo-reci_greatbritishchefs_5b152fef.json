@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Confit Tomatoes with Butter Beans and Chorizo",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the oil, saffron and bay in a small saucepan. Bring to a gentle simmer and lower in the tomatoes.  Turn the heat straight off and leave the tomatoes to cook gently in the oil for at least 20 minutes (they will stay safely in the oil for 48 hours if needed)",
+      "Meanwhile, finely slice the shallots and garlic and sweat down in a couple of tablespoons of light cooking oil",
+      "Cut the chorizo into chunks.  Add to the shallots and sauté for a couple of minutes",
+      "Drain the tinned beans and add to the shallots and chorizo.  Very carefully lift out the tomatoes from the oil and add them to the beans and chorizo",
+      "Remove the bay leaf from the oil, then pour the tomato-flavoured oil into a jug and leave to cool. You will need around 125ml of the oil for the aioli",
+      "To make the aioli, place the egg yolk in a bowl with a pinch of salt and the lemon juice.  Using a hand or an electric whisk, mix in the lemon juice and then very slowly start adding the oil. Whisk the mixture constantly, allowing the oil to become emulsified",
+      "Stir in the garlic, then taste and adjust the seasoning if necessary",
+      "Spoon the beans and tomato into bowls and tear the basil over the top.  Serve with the aioli on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": "ideally cold-pressed",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piccolo Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Sausage",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Butter Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eed7052aea34fb2f7198837cde92d958e0449dc879f52cb7897f4972b7a5ea89",
+    "lineage_hash": "242aca739a62caf0083a962253bbd3ea1c6530390888be0e652ba9f95e6050c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-tomatoes-butter-beans-chorizo-recipe",
+    "fetchedAt": "2026-08-03T05:57:41.164Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-tomatoes-butter-beans-chorizo-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

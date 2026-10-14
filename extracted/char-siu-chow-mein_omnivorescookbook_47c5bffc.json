@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Char Siu Chow Mein",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "457",
+      "carbohydrateContent": "62.3",
+      "fatContent": "13.1",
+      "proteinContent": "26.3"
+    },
+    "directions": [
+      "Boil the noodles according to the package instructions minus 1 minute, until al dente. Rinse with tap water to stop cooking, drain, and set aside. (*Footnote 2)",
+      "Whisk all the sauce ingredients together in a medium-sized bowl.",
+      "Heat 1 tablespoon of vegetable oil over high heat in a 12” pan (or a wok). Once hot, add the sliced shiitake mushrooms, carrot, and green onion whites, and saute for 2 minutes, until the vegetables are soft.",
+      "Next, add the sliced napa cabbage and saute for another 1 to 2 minutes, until the cabbage starts to soften. Sprinkle with 1/2 teaspoon salt and toss to mix. Turn to low heat and transfer all the vegetables to a large plate.",
+      "Add the char siu strips and turn to medium heat. Cook until the edges are lightly browned, then transfer it to the plate with the vegetables.",
+      "Add the remaining 2 tablespoons of vegetable oil and the noodles. Toss the noodles to coat evenly with oil. Pour in the sauce and toss again to coat. Add the bean sprouts and toss again, 1 minute or so.",
+      "Add back the vegetables and char siu, and the scallion greens. Toss to mix again. Taste the noodles and vegetables. Adjust seasoning by sprinkling a little more salt if needed. If the vegetables are still too tough, cover the pan and steam for another 1 to 2 minutes, until the vegetables are cooked to your preferred texture. Transfer to serving plates and serve as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lo Mein Noodles",
+        "unit": "oz",
+        "notes": "or 8 oz / 225 g dried lo mein noodles, fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Char Siu",
+        "unit": "oz",
+        "notes": "*Footnote 1, sliced into thin strips",
+        "amount": "8",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "2 oz, cut into thin strips",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried, rehydrated and sliced thinly",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "cut into 1 inch lengths, whites and greens separated",
+        "amount": "4",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Napa Cabbage",
+        "unit": null,
+        "notes": "1/2 lb, yield 4 cups sliced, slice white part 1/2” thick and greens 1” thick",
+        "amount": "¼",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bean Sprouts",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02720983b4f09c86c228f9dae82e9141e0adaf1c6e0881abef670d7de230a282",
+    "lineage_hash": "df2e81636891e1ea55e668187472a0f5dc98b57cc1a3ce03b3b97835bb21f245"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/pork-lo-mein/",
+    "fetchedAt": "2026-08-02T08:43:23.762Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/pork-lo-mein/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

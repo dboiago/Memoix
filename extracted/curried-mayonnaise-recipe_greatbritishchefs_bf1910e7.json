@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Curried Mayonnaise",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk together the egg yolk, mustard, lemon juice and ground spices",
+      "Very slowly drizzle the oil into the yolk mixture whilst whisking constantly. If the bowl is moving around too much while you do this, sit it on a few damp tea towels to hold it in place",
+      "Once the mayonnaise begins to thicken and emulsify, you can start adding the oil a little quicker. Season to taste with plenty of salt and pepper, then sprinkle with chilli flakes and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b8b7f453746c30af7c4fd0c5e7a1b42330f8ac34be907da26211f519abfe176",
+    "lineage_hash": "9463125957682669f2fdc23cdc84f2410ba8620b1845a6d71683670e123e78cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-mayonnaise-recipe",
+    "fetchedAt": "2026-08-01T23:35:22.154Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-mayonnaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

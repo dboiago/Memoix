@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Chives Pancake",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a 10-inch (or an 8-inch) frying pan over medium-high heat.",
+      "In a mixing bowl, combine lightly beaten egg with water, oyster sauce, fish sauce, salt, and pepper. Mix well and then toss in the chopped chives and stir to combine.",
+      "Reduce the heat to a medium, add 2 tablespoons of oil, then swirl to coat the frying pan.",
+      "Pour the egg mixture. Once the bottom is browned and set, flip and cook the other side until set.",
+      "Remove the pancake from the pan, cut into wedges and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "chop into 1 cm lengths",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4eb3e738a0fd4ed91102a1c09cdefacc721468f7d2c49d2baa02b28824988d9d",
+    "lineage_hash": "95ef15b8724c069ef042538d058129bb1e14b23a5c23774bdc6b48dc4f6b929d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chives-pancake.html",
+    "fetchedAt": "2026-08-01T22:00:34.686Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chives-pancake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

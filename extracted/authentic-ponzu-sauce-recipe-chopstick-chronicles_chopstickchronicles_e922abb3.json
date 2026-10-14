@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Ponzu Sauce",
+    "time": "12 hr 5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "175",
+      "carbohydrateContent": "31",
+      "fatContent": "0.1",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Pour soy sauce and mirin into a small saucepan over high heat.",
+      "Bring it to a boil and then turn the heat off in order to evaporate the alcohol content of the mirin.",
+      "Add kombu strip and bonito flakes to the saucepan while the mixture of soy sauce and mirin is still hot.",
+      "When it has cooled down, add a citrus juice of your choice.",
+      "Place it in refrigerate overnight.",
+      "Strain the ponzu sauce with a fine mesh strainer and pour it into a sterilized jar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu Kelp Strip",
+        "unit": "inch",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅕",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citrus Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b5e8d1b0d74010c558b54ca06cc3fd979dbcdadfe33baade01ed22876d52c72",
+    "lineage_hash": "289f21e2589df867896a50dd739de06a7c94bd49591c18add94eaa7043c18a60"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/ponzu-sauce/",
+    "fetchedAt": "2026-08-02T01:06:25.930Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/ponzu-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

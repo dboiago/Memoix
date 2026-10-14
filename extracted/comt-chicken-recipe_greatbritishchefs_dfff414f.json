@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Comté Chicken",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add 1 tablespoon of oil to a pan and add the chicken thighs skin-side down. Leave on a medium-high heat for about 5 minutes to allow the chicken to caramelise and gain a nice dark golden colour, then use tongs to remove the chicken from the pan and set aside",
+      "Add the remaining oil to the pan and turn down the heat. Add the onion and garlic with a pinch of salt and sweat down until soft",
+      "Once soft, turn up the heat and add the white wine. Use a wooden spoon to scrape the bottom of the pan, releasing the tasty brown bits which will add flavour to the sauce",
+      "Add the chicken back into the pan and allow the wine to reduce by two-thirds. Add the chicken stock and leave to simmer and reduce by two-thirds",
+      "Add the cream and reduce once more into a nice thick sauce. By this point the chicken should have had been cooking for around 20 minutes. Use tongs to remove the chicken from the pan whilst you finish the sauce",
+      "Stir in the Comté and continue cooking over a medium heat until the cheese has melted, giving the sauce a wonderful velvety texture. Stir through the chopped parsley then taste and season with salt, pepper and a dash of vinegar",
+      "Serve either in the pan with the chicken returned into the sauce, or plate up the chicken and pour the sauce over the top. Serve with plenty of crusty bread to mop up the sauce",
+      "Serve with crusty bread, mashed potatoes or a simple green salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "boneless, with skin or without depending on preference",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Comté Cheese",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "leaves chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a208cdfe3358b8cfa8a3ec499ad855139116bce79feb70459068261b53605415",
+    "lineage_hash": "8b3ec20c6a24c440fc6ed7aad5a0a6a47a9680344d3f4f93e5346b257a12b5b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/comte-chicken-recipe",
+    "fetchedAt": "2026-08-03T04:29:15.128Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/comte-chicken-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

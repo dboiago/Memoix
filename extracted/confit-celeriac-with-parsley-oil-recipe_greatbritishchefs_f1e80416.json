@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Confit Celeriac with Parsley Oil",
+    "time": "2 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the parsley oil, blend the parsley, vegetable oil and a pinch of salt until smooth",
+      "Transfer to a pan and warm gently for 1 minute, then strain through a fine sieve. Set the oil aside",
+      "Place the celeriac wedges into a deep pan. Add the oil, thyme and crushed garlic, and make sure the wedges are fully submerged. Cook over the lowest heat, keeping the oil below a simmer (90-100°C), for around 1 hour 15 minutes or until the celeriac is tender",
+      "Remove the wedges from the oil and place on a baking tray. Roast for 12-15 minutes until the edges are crisp and caramelised. Season with smoked salt",
+      "Transfer the hot wedges to a platter and finish with a generous drizzle of parsley oil and chopped parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Celeriac",
+        "unit": "large",
+        "notes": "peeled and cut into thick wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "or enough to cover",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "lightly crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Parsley",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85690e7792107023f2700973a35ced705ccf968049c2b2bb97e0812721e027e5",
+    "lineage_hash": "e278dc84346382ba26c3581f06bc92983319168fff4178b924104aff856f407d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-celeriac-parsley-oil-recipe",
+    "fetchedAt": "2026-08-01T23:42:13.698Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-celeriac-parsley-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

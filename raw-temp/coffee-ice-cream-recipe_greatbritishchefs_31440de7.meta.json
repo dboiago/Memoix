@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/coffee-ice-cream-recipe",
+  "slug": "coffee-ice-cream-recipe_greatbritishchefs_31440de7",
+  "title": "Coffee Ice Cream Recipe",
+  "byline": "by Norbert Niederkofler",
+  "fetchedAt": "2026-08-03T22:30:50.138Z",
+  "ldName": "Coffee ice cream",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "8 shots of ground coffee",
+    "18 egg yolks",
+    "340g of sugar",
+    "850ml of milk",
+    "850ml of cream"
+  ],
+  "ldInstructionsRaw": [
+    "Add the egg yolks and sugar to a bowl and whisk until pale and smooth. Meanwhile, bring the cream, milk and coffee to the boil then remove from the heat",
+    "Gradually whisk the hot milk and cream mix into the eggs and sugar until well combined, then tip into a pan and heat to 80°C or until the mixture coats the back of a spoon",
+    "Pass the mixture through a fine sieve into a bowl and set aside to chill. Once cold, churn in an ice cream maker and store in the freezer until ready to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

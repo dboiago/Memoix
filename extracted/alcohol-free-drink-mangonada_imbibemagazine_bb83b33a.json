@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Alcohol-Free Drink: Mangonada",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Orange Slices",
+      "Generous Dash of Tajin"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients, except the Jarritos, in a shaker full of ice, then shake until well-chilled. Strain into a glass filled with crushed ice. Top with the soda. Garnish with the orange slices and generous dash of Tajin over the top.",
+      "Chile-Agave Syrup: In a medium saucepan, add 1 cup of water, 2 dried ancho chiles, and 2 chipotle peppers. Let steep for 20 minutes at a simmer. Remove chiles, add 2 cups of agave syrup, and let cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango Purée",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chile-agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jarritos Orange Soda",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20d6de34bfe1cda03f37259b24683845075b384d6420a3b8bf2864ead6508f46",
+    "lineage_hash": "a290a08b431764c1236fdd3ab558a63386f7e303773b050e67993c791bb3f1a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alcohol-free-drink-mangonada/",
+    "fetchedAt": "2026-08-03T19:36:34.799Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alcohol-free-drink-mangonada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Callaloo II",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut up the dasheen bush and wash. Place in a large pot.",
+      "Add the pumpkin and seasonings. Then add the ochro, coconut milk powder, roucou, and hot pepper. Add the water and put to boil.",
+      "Boil until the ingredients are tender. Add salt to taste. Stir occasionally to avoid burning. Leave to cool.",
+      "When cooled, blend until smooth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bundle Dasheen Bush",
+        "unit": "large",
+        "notes": "Remove the tips before cutting up",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "pkgs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chive",
+        "unit": "sprigs",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ochroes",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper",
+        "unit": null,
+        "notes": "brown colour, use only a piece of the very hot congo pepper",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "about",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roucou",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "690236354358a96718153af310cc8b17caef9c9814ba39a5369f4b695cc794f4",
+    "lineage_hash": "faf784fd98d3c33a8f623332a21e041d3b54bf3fdad0429f48759a95b90e813d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/callaloo-ii/",
+    "fetchedAt": "2026-09-26T01:24:07.786Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/callaloo-ii/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

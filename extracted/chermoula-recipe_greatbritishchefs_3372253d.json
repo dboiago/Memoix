@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Chermoula",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all the ingredients apart from the lemon wedge into a blender and blitz to a coarse paste",
+      "Taste and season with fresh lemon juice if needed"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "leaves picked and roughly chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "about 2 medium cloves",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": "g",
+        "notes": "about 1 medium lemon, halved and pips removed",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": "juiced, to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ffb681fce41ec9a728fbf164e8e7e1dd394de0f32a29e393734c9ebfd7e93b3",
+    "lineage_hash": "631f74591ef18bf65f7b14490b9e4fe8a85fa23969c4799d13bde3cbcf78aa4c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chermoula-recipe",
+    "fetchedAt": "2026-08-03T09:00:48.343Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chermoula-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

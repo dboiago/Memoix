@@ -1,0 +1,50 @@
+{
+  "url": "https://www.baking-sense.com/2023/01/16/cream-puffs/",
+  "slug": "cream-puffs_baking-sense_ba7e8fac",
+  "title": "Cream Puffs",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T15:54:11.484Z",
+  "ldName": "Cream Puff Recipe",
+  "ldTime": "PT105M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "choux pastry",
+  "ldIngredientsRaw": [
+    "1 recipe pate a choux",
+    "1 recipe pastry cream",
+    "8 ounces heavy cream (1 cup)",
+    "1 ounce confectioner&#39;s sugar (¼ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Bake the Cream Puffs",
+    "Make the filling &amp; Assemble"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 each",
+    "calories": "118 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "1 g",
+    "fatContent": "4 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "23 mg",
+    "sodiumContent": "22 mg",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "1.2 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe pate a choux",
+    "1 recipe pastry cream",
+    "8 ounces heavy cream (1 cup)",
+    "1 ounce confectioner's sugar (¼ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

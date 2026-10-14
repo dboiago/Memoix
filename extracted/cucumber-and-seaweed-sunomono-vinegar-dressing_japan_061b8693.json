@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Cucumber and Seaweed Sunomono (Vinegar Dressing)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak dried wakame in a bowl filled with water for about 10-15 minutes until rehydrated. Drain water well and move to a mixing bowl. If the wakame is not cut into bite size pieces, you need to cut them into about 2cm / 1 inch length.",
+      "Sprinkle salt over the cucumber and massage in to soften the cucumber. Squeeze to remove excess water well. Add to the bowl and mix with wakame.",
+      "Combine vinegar marinade ingredients and mix well.",
+      "When ready to serve, add vinegar dressing to ingredients and mix well. Serve immediately (Note 3)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thinly Sliced Cucumber",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cut Wakame Seaweed",
+        "unit": "Tbsp",
+        "notes": "Note 1, dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "Tbsp",
+        "notes": "Note 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1e70fdd616750b60d470615f35f466f11a5ea9546379fbef588af9af664fd31",
+    "lineage_hash": "238d4cc5a14874ae0d99efcc529d0b1dc0953ec5d5b5323d64821333374555c8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/cucumber-and-seaweed-sunomono-vinegar-dressing/",
+    "fetchedAt": "2026-08-01T18:11:38.304Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/cucumber-and-seaweed-sunomono-vinegar-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

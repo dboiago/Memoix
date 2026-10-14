@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2015/05/11/dark-chocolate-ganache/",
+  "slug": "chocolate-ganache_baking-sense_367de0f4",
+  "title": "Chocolate Ganache",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:55:48.872Z",
+  "ldName": "Chocolate Ganache",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT3M",
+  "ldYield": [
+    "24",
+    "24 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate",
+  "ldIngredientsRaw": [
+    "8 oz semi sweet chocolate",
+    "8 oz heavy cream (1 cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "1 ½ oz light corn syrup (2 tablespoons, optional (see note))"
+  ],
+  "ldInstructionsRaw": [
+    "Chop the chocolate into small pieces, none larger than 1/2&quot; or chop roughly and finish chopping in a food processor. Place the butter in a large, heatproof bowl with the chopped chocolate.",
+    "Pour the cream into a microwave safe bowl or measuring cup and heat until scalding. You want to get the cream as hot as you can without it boiling over. The time will depend on your microwave. Mine takes about 2-3 minutes for a cup of cream",
+    "Pour the cream all at once over the chocolate. Do not stir for 2-3 minutes to allow the chocolate to begin melting",
+    "Gently stir, trying not to incorporate any air, until all the chocolate bits are melted. Stir in the corn syrup if using."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "96 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "1 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "5 g",
+    "transFatContent": "0.03 g",
+    "cholesterolContent": "13 mg",
+    "sodiumContent": "5 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "2.3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "8 oz semi sweet chocolate",
+    "8 oz heavy cream (1 cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "1 ½ oz light corn syrup (2 tablespoons, optional (see note))"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

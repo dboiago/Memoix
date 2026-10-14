@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Avocado Pistachio Loaf",
+    "time": "55 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre heat oven and line a 7.5 x 3 inch loaf tin.",
+      "Add pistachios to a blender with the melted coconut oil and blend on high until smooth and creamy. If using pistachio butter, simply just add it to the blender with the melted coconut oil.",
+      "Add the avocado, soy milk, lemon juice, vanilla and condensed coconut milk to the blender, and blend on high until smooth.",
+      "Transfer mixture to a mixing bowl and whisk in lemon zest.",
+      "In a separate bowl, whisk together the cassava flour, coconut flour, tapioca starch, baking powder, baking soda and cardamom, and then add it to the bowl with the wet ingredients. Mix until well combined and a thick batter forms.",
+      "Transfer to the prepared loaf pan and flatten the top with the back of your spatula. Bake for 40-50 minutes.",
+      "In the meantime, mix together the melted condensed coconut milk and lemon juice.",
+      "Once the loaf comes out of the oven, pour the condensed coconut milk lemon mixture on top and let it seep in for a minute. Remove from the loaf tin and let it cool completely on a wire rack before serving. Enjoy!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "alt: pistachio butter",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "ml",
+        "notes": "melted",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Avocado",
+        "unit": "g",
+        "notes": null,
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Coconut Milk",
+        "unit": "ml",
+        "notes": "alt: maple syrup, I usually do half half",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassava Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b417101ab967c3b54d0d24af5d5ce29a6e484ad31f1dff2efa042b7f101a2e1",
+    "lineage_hash": "b4dcf8c9660630a2adb7cb9ad0c1a4d4b3a21eba3cd77f57371b33147aaa7853"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/avocado-pistachio-loaf/",
+    "fetchedAt": "2026-09-25T23:49:44.323Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/avocado-pistachio-loaf/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

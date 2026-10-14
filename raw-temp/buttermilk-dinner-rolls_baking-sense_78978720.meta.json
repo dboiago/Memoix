@@ -1,0 +1,67 @@
+{
+  "url": "https://www.baking-sense.com/2015/12/04/buttermilk-dinner-rolls/",
+  "slug": "buttermilk-dinner-rolls_baking-sense_78978720",
+  "title": "Buttermilk Dinner Rolls",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T04:10:57.914Z",
+  "ldName": "Buttermilk Dinner Rolls",
+  "ldTime": "PT160M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "24",
+    "24 rolls"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "brunch, dinner, Lunch, Side Dish, Snack",
+  "ldKeywords": "christmas, easter, holiday, thanksgiving",
+  "ldIngredientsRaw": [
+    "16 oz buttermilk (2 cups, room temperature)",
+    "2 ¼ teaspoons dry yeast",
+    "½ oz granulated sugar (1 tablespoon)",
+    "1 ½ teaspoons table salt",
+    "1  large egg (room temperature)",
+    "22 ½ oz bread flour (4 ½ cups, see note)",
+    "2 oz butter (softened)",
+    "2 oz butter (melted for brushing)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 16 oz&#32;buttermilk, 2 ¼ teaspoons&#32;dry yeast, ½ oz&#32;granulated sugar, 1 ½ teaspoons&#32;table salt and 1&#32;large egg in a mixing bowl. Mix on low speed to combine the ingredients. Add ½ of bread flour and mix to combine. Switch to the dough hook if mixing on a stand mixer.",
+    "Add the remaining bread flour until the dough gathers on the hook and begins to pull away from the sides of the bowl. Knead on medium for 3 minutes then reduce the speed to low. If mixing by hand stir in as much flour as you can with a wooden spoon, then knead the remaining flour in by hand.",
+    "With the mixer running on low, toss in 2 oz&#32;butter (softened) a tablespoon at a time. If working by hand, knead in the butter.",
+    "Mix on medium for 3 minutes, if the dough is still very sticky add a little flour. The dough will stick to the bottom of the bowl but should gather on the hook. Dump the dough onto a floured surface and knead to form a smooth ball. The dough should be soft and smooth.",
+    "Place the dough in an oiled bowl, turning once to coat the surface, cover with plastic wrap. At this point the dough can be refrigerated for up to 2 days or you can proceed with rising. Set the bowl in a warm place until the dough us doubled in size, about 1½ - 2 hours.",
+    "Turn the dough out onto a lightly floured surface and roll the dough to form a long log shape. Using a sharp knife or bench scraper cut the dough into 24 even pieces.",
+    "Roll each piece of dough under your cupped hand to form a smooth ball. Place the rolls onto a parchment lined baking sheet and brush the tops with melted butter (see note). Set aside in a warm spot to rise until nearly doubled in size and the dough springs back slowly when poked (about 1 hour).",
+    "Preheat the oven to 375 °F. Bake the rolls until they are golden brown and feel light when picked up. About 10-15 minutes.",
+    "As soon as the roll come out of the oven brush the tops with the melted butter. Enjoy warm or at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 roll",
+    "calories": "137 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "4 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "199 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "19 mg",
+    "unsaturatedFatContent": "1.4 g"
+  },
+  "htmlIngredientLines": [
+    "16 oz buttermilk (2 cups, room temperature)",
+    "2 ¼ teaspoons dry yeast",
+    "½ oz granulated sugar (1 tablespoon)",
+    "1 ½ teaspoons table salt",
+    "1 large egg (room temperature)",
+    "22 ½ oz bread flour (4 ½ cups, see note)",
+    "2 oz butter (softened)",
+    "2 oz butter (melted for brushing)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Chicken Corn Soup",
+    "time": "25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "182",
+      "carbohydrateContent": "24",
+      "fatContent": "4",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Marinate the chicken with the water, 1 teaspoon cornstarch, and the oyster sauce. Mix until the liquid is absorbed into the chicken. Set aside.",
+      "Finely mince ½ cup of the corn kernels and set aside. Add the chicken stock, minced and whole corn kernels, and turmeric powder to a pot and bring to a low boil. Reduce the heat, cover, and simmer for 10 minutes.",
+      "Next, add the sesame oil, salt, and white pepper. Turn up the heat slightly. Add the chicken to the soup, and use a spoon to break up any clumps of chicken while stirring for 1 minute.",
+      "Make the thickening agent for the soup by combining the cornstarch and chicken stock into slurry. Use a spoon or a whisk to stir the soup while slowly pouring in the cornstarch slurry. The soup will begin to thicken further as the cornstarch cooks. Keep stirring for another 30 seconds. If the soup is too thick, add more stock, and if it’s too thin, add more cornstarch slurry until the soup is at your preferred consistency.",
+      "Next, use a large spoon or ladle to gently stir the soup in one direction, while slowly pouring the beaten egg whites into the soup. Stirring slowly in a large slow circular motion will yield large “ribbons” of egg and stirring faster will result in a finer “egg flower.” Use your own discretion on how you personally like the texture of the egg!",
+      "Stir in half of the scallions, and use the rest as a garnish for serving. If you’re looking for a bit more flavor, you can also sprinkle some chopped cilantro and fresh ground black pepper over each bowl."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": "oz",
+        "notes": "or thighs; cut into very small cubes/finely chopped, boneless, skinless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn Kernels",
+        "unit": "C",
+        "notes": "fresh or frozen",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": "lightly beaten; you can also include the yolks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "af4b49776b34705ad16157ed55c9d10615733d797a32406340b3aaab9f49f839",
+    "lineage_hash": "1e1411cbe1bc213a68635970e69050eb76e558b0044cc751eb4fa8a4bc781304"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chicken-corn-egg-drop-soup/",
+    "fetchedAt": "2026-08-02T13:53:12.582Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chicken-corn-egg-drop-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

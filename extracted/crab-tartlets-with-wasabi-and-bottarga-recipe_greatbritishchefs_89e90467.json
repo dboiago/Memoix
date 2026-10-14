@@ -1,0 +1,224 @@
+{
+  "recipe": {
+    "name": "Crab Tartlets with Wasabi and Bottarga",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the pastry. Place the butter and icing sugar in a bowl and beat until light and fluffy. Beat in the egg together with the squid ink and keep mixing until fully combined, then add the flours, salt and baking powder",
+      "Mix just until the dough comes together and there is no more visible flour – be careful not to overmix. Wrap the dough in cling film and chill in the fridge overnight or for at least 2 hours",
+      "When ready to roll, remove the dough from the fridge and leave to soften a little. Roll the dough out in between 2 sheets of greaseproof paper then cut into the shapes needed for 2 tart cases. Delicately place inside your chosen tart moulds, then bake for 12 minutes. Any leftover pastry can be wrapped and kept in the freezer for other dishes",
+      "To make the wasabi condiment, boil the eggs in simmering water for 6 minutes. Quickly chill in cold water, then peel and place the eggs in a bender with the mustard, wasabi and vinegar. Blend into a paste, then with the blender running at a low speed, slowly drizzle the oil in to form an emulsion. If it begins to split, add a splash of cold water to bring it back together. Taste, season with salt and transfer to a piping bag",
+      "Place the crab meat in a bowl and season with the extra virgin olive oil, lemon juice, salt and pepper",
+      "To assemble the tartlets, add a layer of the wasabi condiment, followed by the seasoned crab meat. Then evenly place the sturgeon bottarga, preserved lemon and micro herbs on top"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Preserved Lemon",
+        "unit": "tsp",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottarga",
+        "unit": "slices",
+        "notes": "ideally sturgeon bottarga",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Micro Herbs",
+        "unit": null,
+        "notes": "Emily uses wood sorrel, sweet cicely, red vein sorrel and cornflowers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wasabi",
+        "unit": "g",
+        "notes": "fresh, freshly grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a4a925c0d1835a37752d2562a47f46d273da686f06ff2b6152bbc9f7eb29530",
+    "lineage_hash": "5233ba510e2caa732bbed87e5d654320a79f2ad3050eee2221a6d33f635d8a1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-tartlets-with-wasabi-recipe",
+    "fetchedAt": "2026-08-02T21:33:36.793Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-tartlets-with-wasabi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

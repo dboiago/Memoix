@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/amadeus-cocktail-recipe",
+  "slug": "amadeus-cocktail-recipe_greatbritishchefs_9518dfb7",
+  "title": "Amadeus Cocktail Recipe",
+  "byline": "by Andy McLeish",
+  "fetchedAt": "2026-08-03T19:39:50.261Z",
+  "ldName": "Amadeus",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "500ml of sherry",
+    "100g of cep mushrooms, dried, blitzed into a powder",
+    "4 dashes of bitters, 'Amadeus' - made of green tea, truffle and cep",
+    "Champagne, Jaques Picard"
+  ],
+  "ldInstructionsRaw": [
+    "To infuse the sherry, add the powdered cep to the sherry and allow to infuse overnight - you can vary the quantity of porcini powder and infusing time to achieve a stronger or less potent result",
+    "The next day, strain the sherry to remove any excess powdered cep and return to a clean bottle",
+    "To assemble the cocktail, add 15ml of the infused sherry to a champagne flute. Add the bitters, top up with champagne and stir to combine. Serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

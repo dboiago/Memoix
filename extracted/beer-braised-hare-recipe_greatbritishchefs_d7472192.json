@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Beer-braised Hare",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat a water bath to 85°C",
+      "To begin, prepare the braised hare haunches. Sweat down the onion in a dash of oil in a small pan until softened. Leave to cool then add to a vacuum bag with the hare thighs, beer, juniper, garlic and thyme. Seal in a chamber sealer and cook in the water bath for 5 hours",
+      "Remove the thighs from the bag and strain the juices into a pan. Add the stock, reduce to a sauce consistency and stir in the chocolate. Pick the meat from the bone in large pieces and add to the sauce. Keep warm",
+      "Preheat the oven to 150°C/gas mark 2",
+      "To make the thyme pastry, mix the flour and butter until you reach a fine sandy texture, then add the water, thyme leaves and egg yolk. Mix until you have a smooth dough",
+      "Roll the dough out until 1/2cm in thickness and cut out four 10cm circles. Place in the freezer for 20 minutes to firm up. Transfer to the oven and cook for 15 minutes",
+      "For the creamed celeriac, grate the celeriac and transfer to a pan with the melted butter. Cook until softened, add the cream and reduce until you have a thick creamy consistency. Add the mustard and season with salt",
+      "Preheat the water bath to 60°C",
+      "Trim any sinew from the saddles and place into a vacuum bag with a sprig of thyme, salt and a dash of oil. Seal and cook in the water bath for 15 minutes",
+      "Roughly chop the cabbage and blanch the leaves in boiling salted water for 1 minute before refreshing in iced water. To serve, heat a saucepan over a medium heat with a knob of butter and warm the cabbage through",
+      "Remove the hare loin from the bag and drain on kitchen paper. Heat a frying pan over a high heat and sear the hare loin until caramelised. Leave to rest for a few minutes then carve lengthways to serve",
+      "To plate, place a pastry circle on the plate and spoon some creamed celeriac on top. Cover with the loin and arrange some buttered cabbage and the braised haunch around the outside of the tart. Finish with a little grated bitter chocolate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hare Loins",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hare Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": "or hare stock",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "leaves picked",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pointed Cabbage",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f461cb00a057eeb15ccdc129e831597a3aefd544e97a0316615fd3708b24004f",
+    "lineage_hash": "2697ad330b745b038df0738e9183710aef543f5851aee33f0cf7a675726969fb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-braised-hare-recipe",
+    "fetchedAt": "2026-08-03T14:13:03.260Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-braised-hare-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

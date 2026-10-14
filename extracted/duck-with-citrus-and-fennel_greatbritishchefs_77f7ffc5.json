@@ -1,0 +1,378 @@
+{
+  "recipe": {
+    "name": "Duck with Citrus and Fennel",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the duck sauce, heat a dash of oil in a large pan and add the duck trimmings. Cook until nice and caramelised, then add the shallots, garlic and herbs and cook for a further 10 minutes on a medium-low heat until caramelised. Deglaze the pan with the wine and port and reduce until thick and syrupy, then add the stocks and simmer for 2–3 hours until you have a nice glossy sauce. Set aside to reheat before serving or keep warm",
+      "To make the kumquat preserve, remove the stems from the kumquats and cut into quarters. Remove the seeds and set the fruit aside, placing the kumquat seeds into a muslin pouch or spice bag. Place the sugar and vinegar into a pan and bring to 135ºC; you’ll be left with a caramel. Add in the kumquats and cook for a couple of minutes, then add the ginger, garlic, coriander seeds and the muslin pouch of kumquat seeds, bring to the boil then turn down to a simmer until the sauce has thickened and the kumquats are tender. Set aside",
+      "To make the fennel, place the herbs and spices in a tied muslin cloth or spice bag and place in a pan with the rest of the ingredients (apart from the fennel). Bring to the boil, then turn down and simmer for 10 minutes. Add the fennel wedges and simmer until tender. Leave to cool and keep stored in the liquor",
+      "To make the salad dressing, blend the garlic, vinegar and mustard together until smooth, then slowly drizzle the oil in with the motor running to emulsify. Season with lemon juice, salt and pepper to taste",
+      "To cook the duck, score the skin and season with salt and pepper. You can either use a charcoal grill or an ovenproof frying pan. If barbecuing, grill the breasts skin-side down over hot charcoal, allowing the fat to render whilst cooking until the skin turns golden and crisp (this should take around 6 minutes). Once crisp and golden, flip over and cook for 4-5 more minutes",
+      "If not cooking on a barbecue, preheat the oven to 180ºC/gas mark 4. Place the breasts skin-side down in a large cold non-stick frying pan over a medium-high heat. As the fat is released, tilt the pan towards you and use a spoon to remove the liquid. Cook the duck breasts for approximately 6–8 minutes or until the skin is completely crisp and fat rendered. Then turn over and finish cooking in the oven for 4–5 minutes. Leave to rest for 5 minutes before carving",
+      "As the duck rests, assemble the salad. Toss the salad and mint leaves together with the cooked and drained fennel wedges, orange segments and some salad dressing. Finish with toasted almonds flakes and chopped chives. Gently reheat the duck sauce",
+      "Serve the carved duck breast with sauce spooned over and some of the kumquat preserve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Trimmings",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kumquats",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, julienned",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Fennel",
+        "unit": null,
+        "notes": "cut into quarters or sixths if large",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Treviso Tardivo Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Radicchio",
+        "unit": null,
+        "notes": "pink",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Castelfranco",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange",
+        "unit": null,
+        "notes": "segmented",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flaked Almonds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Chives",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84b5e647ecd02ed706abd8a48df4c474488b64bbc757fd51fa1e47ee36a1fbc7",
+    "lineage_hash": "1dde957c83c662c83afad45866af74d15d915b7d2f0b2f97339cf03617f259e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-citrus-fennel-recipe",
+    "fetchedAt": "2026-08-02T19:29:28.751Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-citrus-fennel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

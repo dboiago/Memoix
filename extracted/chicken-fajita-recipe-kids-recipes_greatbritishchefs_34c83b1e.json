@@ -1,0 +1,160 @@
+{
+  "recipe": {
+    "name": "Chicken Fajita",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large resealable bag, mix together the lime juice, garlic, hot sauce, oil and chilli powder",
+      "Season with salt and pepper. Reserve 1 tbsp of this marinade for the sour cream",
+      "Add the diced pepper, onion and slices of chicken to the marinade",
+      "Place the bag in a large bowl (in case the marinade leaks) and leave to marinate in the fridge for 1 1/2 hours",
+      "Mix the reserved marinade with the sour cream in a bowl. Cover and place in the fridge until ready to use",
+      "If using wooden skewers, soak in water for 30 minutes before using",
+      "Remove the meat and vegetables from the fridge and allow to come up to room temperature",
+      "Meanwhile, add the rice to a small pot, cover in cold water. Rinse by moving the rice around with your hands. Pour off the white milky water and repeat twice more",
+      "Drain the excess water, leave to stand for 20 minutes. Add the 300ml of water and place the pot over a high heat. Bring to the boil, cover with a lid and turn down to the lowest heat possible",
+      "Cook for 12 minutes, or until the rice is just cooked. Remove from the heat and allow to stand, covered, for 2 minutes before serving",
+      "Pierce the chicken and vegetables onto the skewers. Each skewer should hold 4 pieces each of the pepper and onion, and 3 pieces of the chicken - alternate as you thread them onto skewers",
+      "Cook the skewers under the grill or on a barbecue until the meat is nicely charred, approximately 3-4 minutes on each side",
+      "Lay the tortillas onto plates. Remove the meat and vegetables from the skewers and use to fill the wraps along with some rice",
+      "Garnish the fajitas with the flavoured sour cream and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skinless, thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peppers",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "large dice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": "to serve",
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tortilla Wraps",
+        "unit": null,
+        "notes": "corn or wheat based",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "ml",
+        "notes": "or other hot sauce",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "g",
+        "notes": "adjust according to preference",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e003933194425dbd50da35f99ba23dc667cba89ece232e4baff50b05a746745",
+    "lineage_hash": "5a5fda645c6f821314088724625faa62a8a028ba5073c89bdfa7cb3203442d20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-fajita-recipe",
+    "fetchedAt": "2026-08-03T20:34:18.731Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-fajita-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

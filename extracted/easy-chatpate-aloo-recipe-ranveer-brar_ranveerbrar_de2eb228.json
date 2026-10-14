@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Chatpate Aloo",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For spice powder heat pan medium flame and dry all the ingredients till nice fragrant. Turn off the flame and let it cool down. Grind them into coarse powder.",
+      "Now heat oil in pan on medium flame. add asafoetida, onion seeds, ginger, garlic and saute till fragrant.",
+      "Now add baby potatoes and toss on high flame for few minutes.",
+      "Lower the flame and add red chili powder, anardana powder, chaat masala powder, salt and 2 tsp of the prepared masala.",
+      "Add Â¼ cup water and toss so that each potato is well coated with masala. Turn off the flame.",
+      "Top it off with fresh coriander and white sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilies",
+        "unit": null,
+        "notes": "broken",
+        "amount": "5",
+        "section": "For Spice Powder",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Potatoes",
+        "unit": null,
+        "notes": "boiled & peeled",
+        "amount": "15-20",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Anardana Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bff18f9919a9764fa40e5dd95170cbee37fffe105166c23858b979b2bbe4fc8c",
+    "lineage_hash": "c380b6f8f71e2fdbe4555dfff12d0dbaa3874d26170c9ba8e0b046e383fa709c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chatpate-aloo/",
+    "fetchedAt": "2026-08-02T08:43:29.388Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chatpate-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

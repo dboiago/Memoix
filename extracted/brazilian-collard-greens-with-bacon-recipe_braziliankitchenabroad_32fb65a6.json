@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Brazilian Collard Greens with Bacon",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "107",
+      "carbohydrateContent": "8",
+      "fatContent": "8",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Heat the olive oil in a medium skillet over medium to high heat",
+      "Add the bacon and cook until browned, about 3-4 mins",
+      "Add the onions and cook until transparent, about 2 mins",
+      "Add the garlic and cook until fragrant, about a minute",
+      "Turn ff the heat and add the collard greens and toss gently until the greens wilt, about 1 minute"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Collard Greens Stems Removed and Thinly Sliced",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Strips of Smoked Bacon Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Colves of Garlic Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2edf3016ea57bd987e00b144684fe107022b966e619af62e25d30b444064ef1f",
+    "lineage_hash": "8dda0b1d754545fc58077fbe3db251ed9bfa900e479da98b0d91515d20f1097e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-style-collard-greens/",
+    "fetchedAt": "2026-09-25T18:50:35.781Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-style-collard-greens/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

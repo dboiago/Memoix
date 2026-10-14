@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Amalfi Mule Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": "Collins",
+    "garnish": [
+      "Basil Sprig Bouquet"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Select and pre-chill a COPPER MUG OR COLLINS GLASS.",
+      "Prepare garnish of basil leaf.",
+      "MUDDLE strawberry and basil in base of shaker.",
+      "ADD limoncello and lemon juice.",
+      "SHAKE with ice.",
+      "FINE STRAIN into ice-filled glass/mug.",
+      "TOP with ginger beer.",
+      "Garnish with basil sprig bouquet."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": "fresh, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limoncello Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "efff865568d5231fcb7ae55b81fdca42f15d3920a05d01c97aae4e54fdbb873f",
+    "lineage_hash": "13b17f6a44e74b74e6ce6dd7fedf1afa10164b64b74b2cabae5395e3f17810a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/39532/amalfi-mule",
+    "fetchedAt": "2026-08-03T23:19:50.804Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/39532/amalfi-mule",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

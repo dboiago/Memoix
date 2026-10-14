@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chinese Zucchini Pancakes (糊塌子)",
+    "time": "48 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "97",
+      "carbohydrateContent": "9.9",
+      "fatContent": "4.9",
+      "proteinContent": "3.8"
+    },
+    "directions": [
+      "Use a coarse grater to grate the zucchini into thin strands into a large bowl. Add the green onion and the salt. Use your hand to mix well. Let sit for 15 minutes, until water seeps out of the zucchini. Reserve the liquid.",
+      "Add the eggs and mix well.",
+      "Sift the flour into the bowl. Mix until the flour is fully incorporated without any lumps. Do not over mix. The batter should be quite thin but not runny, and easy to flatten into a thin pancake using a spatula when added to the pan. You might need to add 1 to 2 tablespoons of water to the batter if it’s too thick. And if you’re using a very large zucchini, you might need to add extra flour to the batter to thicken it.",
+      "Mix all the ingredients for the dipping sauce together in a small bowl.",
+      "Spray a thin layer of oil in a small nonstick skillet over medium heat until hot. Add about 1/4 cup of the batter and spread it out with a spatula so it’s round and flat. Cook until the bottom turns golden brown, 2 minutes or so. Turn to the other side and cook for another 1 to 2 minutes, until the inside is just cooked. Transfer the pancake onto a plate. Repeat the process until all the batter is used.",
+      "Serve the pancakes hot along with the dipping sauce. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": null,
+        "notes": "about 300 g / 10 oz",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "75 g, or more, if needed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinkiang Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": "or soy sauce",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": "or chili oil to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76d4ea9c58d60064b6906efa0baa663160c6006a29ce0e33a10485b5e6425cb3",
+    "lineage_hash": "f0c2a445f46d52f4325591b784e7ccea45f56cc715ae8d96a34c9e400ce111ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-zucchini-pancakes/",
+    "fetchedAt": "2026-08-02T06:42:49.337Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-zucchini-pancakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

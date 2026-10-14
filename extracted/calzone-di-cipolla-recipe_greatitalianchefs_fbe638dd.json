@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Calzone di Cipolla",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the dough, either by by hand or using a stand mixer with a hook attachment. Stir the yeast into the water until completely dissolved. Place the flour in a large bowl (or in the bowl of your mixer). Add the water with the yeast in small increments, stirring all the while (or processing at a low speed). Next, pour in the wine and the oil and incorporate. Finally, add the salt",
+      "Knead the dough for 10 minutes, or until stretchy and smooth. Shape it into a ball, place it into a clean bowl, wrap in cling film and leave it to rise for 2 hours in a warm, dry place",
+      "Meanwhile, prepare the filling. Cover the bottom of a large skillet with olive oil and place it over a medium heat. When hot but not smoking, add the anchovies and stir to melt them into the oil. Next, add the sliced onions",
+      "Fry gently for 20 minutes, stirring often, until very soft and lightly golden. Season to taste, then add the olives, the drained and squeezed raisins and the grated cheese. Stir one more time to combine, then remove from the heat and set aside",
+      "Preheat the oven to 220°C/gas mark 8. Grease a 28cm tart tin and set aside",
+      "Dust a work surface with flour and divide the dough into two equal portions. Roll them out into two thin rounds using a rolling pin, then use one to line the tin, leaving some dough hanging over the edges",
+      "Top with the onion stuffing. Cover with the second round of dough, then fold and pinch the edges together to close the calzone. Drizzle the surface with olive oil",
+      "Bake for 30 minutes, or until golden and puffy all over. Remove from the heat and let it cool ever so slightly before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus more as needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": "oil-packed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "g",
+        "notes": "peeled and thinly sliced",
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": null,
+        "notes": "pitted, or black",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "soaked",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grana Padano",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7de49f8e1fedefb3718b2829983d20fd09c1fc98965e1034d7c17889223f34ec",
+    "lineage_hash": "290452d8894940f2fa34715fcca391af7330b90593ea0da80d991a20c3a05296"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/calzone-di-cipolla-recipe",
+    "fetchedAt": "2026-08-01T20:39:05.301Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/calzone-di-cipolla-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

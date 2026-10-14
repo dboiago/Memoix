@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2023/09/28/concord-grape-sorbet/",
+  "slug": "concord-grape-sorbet_baking-sense_9a4bdb40",
+  "title": "Concord Grape Sorbet",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T00:03:11.900Z",
+  "ldName": "Concord Grape Sorbet Recipe",
+  "ldTime": "PT530M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "frozen dessert, fruit",
+  "ldIngredientsRaw": [
+    "32 oz Concord Grapes (weigh after stemming)",
+    "6 oz granulated sugar (Adjust to taste)",
+    "1 tablespoon light corn syrup",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Puree 32 oz&#32;Concord Grapes in a food processor.",
+    "Strain the puree through a fine sieve or fruit strainer to remove the seeds. You should have about 3-3½ cups of puree after straining. If you get less puree than noted, adjust the sugar to be between 25-30% of the weight of the puree. (see note)",
+    "Add 6 oz&#32;granulated sugar, 1 tablespoon&#32;light corn syrup and ⅛ teaspoon&#32;table salt. Stir until the sugar is melted. Taste the puree and adjust the sugar if needed.",
+    "Refrigerate until the mix is very cold, at least 3-4 hours or overnight.",
+    "Run in your ice cream machine according to the manufacturer&#x27;s directions. (See Note)",
+    "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "84 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "0.4 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.03 g",
+    "sodiumContent": "20 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "20 g",
+    "unsaturatedFatContent": "0.034 g"
+  },
+  "htmlIngredientLines": [
+    "32 oz Concord Grapes (weigh after stemming)",
+    "6 oz granulated sugar (Adjust to taste)",
+    "1 tablespoon light corn syrup",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

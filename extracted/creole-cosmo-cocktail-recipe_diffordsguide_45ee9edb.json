@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Creole Cosmo",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lime zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Express lime zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Créole Shrubb Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agricole Rhum",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bf5daf54c07d55cc7e171599b7c3e7c1095169e49a5a803988c9dede78d774b9",
+    "lineage_hash": "400c0b2dba0fb7c73c9cde9d469672be26b30acb4ddb5490e86c45ad98d78d81"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/598/creole-cosmo",
+    "fetchedAt": "2026-08-02T07:42:52.879Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/598/creole-cosmo",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Coffee-Cocoa Rub",
+    "time": null,
+    "course": "rubs",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a small mixing bowl and break up any lumps with your fingers or a whisk.",
+      "Store in a tightly covered container away from heat or light. Store for up to 6 months. Use on lamb, pork, or beef."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "kosher or sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d94b9b2a3754047aadb538a02ec52bcfda7231f31c296808d55e6e356b52ddd",
+    "lineage_hash": "c92271413d9ec50e9c377057131d3c720145e0c27092ce4b92ea66d09f28ece0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coffee-cocoa-rub/",
+    "fetchedAt": "2026-08-03T09:14:55.347Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coffee-cocoa-rub/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

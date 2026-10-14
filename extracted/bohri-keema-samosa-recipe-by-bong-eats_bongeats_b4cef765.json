@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Bohri Keema Samosa",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dice onions. Finely chop ginger, garlic and coriander leaves. Slit green chillies and then chop finely. Also, chop spring onions.",
+      "Stack the mint leaves together. Roll tightly and then chop into fine threads.",
+      "Heat vegetable oil in a kadai. Add diced onions and then salt. Sauté onions until translucent (5 minutes).",
+      "Add garlic and ginger. Sauté for a minute. Add cumin powder, coriander powder, and gorom moshla. Mix well.",
+      "Now, add keema. Break all the lumps on low heat. High heat at this stage will cause keema to clump together. Sauté on medium heat until keema is cooked (15 minutes).",
+      "Add green chillies, spring onions, coriander leaves, and mint leaves. Don't cook much longer after adding the greens.",
+      "Cool the filling uncovered to let steam escape, or else samosas will turn out soggy.",
+      "Make a dough of atta, salt, and hot water. Dip your knuckles in water and continue kneading. Once done, divide into 8 portion, each weighing 40 g.",
+      "Roll the divided portions in between your palms, shaping them into neat rounds.",
+      "Flatten into 5 cm discs. Apply oil to each disc and dust with flour. Stack in pairs, with oiled and dusted sides facing each other.",
+      "Roll out each pair. Try to keep the two discs together. Make sure to roll the edges thin. The rolled flatbread should be of 26 cm diameter. It will shrink a little when cooked.",
+      "Heat a tawa. Cook evenly on medium–high heat. The first side will take around 45 seconds to cook. Once done, flip the other side and cook.",
+      "Once done, set aside. Now, carefully peel the two layers apart while still hot. The oil and flour applied between the layers will help them separate.",
+      "Keep the wrappers covered to prevent from drying. Repeat the process of cooking and separating the wrappers.",
+      "Following our measurement would give you 8 thin rotis ready to be turned into samosa wrappers.",
+      "Stack the wrappers and fold along the middle. Trim 1 cm from the two ends of the folded wrappers. Then, divide them in three equal parts, each being ~7 cm wide. Keep the strips covered.",
+      "To seal the samosas, make a slurry of atta and water.",
+      "The samosas should be triangular in shape. So, first, take one corner of the strip and fold it over, forming a cone. Apply slurry on one side of the triangle and on the edge of the strip. Now, fold over and you will have a pocket.",
+      "Fill the pocket with ~20 g of keema mixture. Pack it in. Apply glue to the shorter flap and fold it in. Now, wrap the bigger flap around the cone, sealing the last end with the slurry. Samosas made with the roti's side strips will have one less fold. For visual representation, watch the video.",
+      "Now, heat vegetable oil in a kadai. Gently lower the samosas in hot oil (180°C). Fry on medium-low heat until they turn golden-brown in colour. Set aside.",
+      "Serve with a dash of lime juice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mutton Keema",
+        "unit": "g",
+        "notes": "minced goat meat",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "145-150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6682cc8240292a4a2971ef2d7fafff33922a03b2e98171adc56f4637f57f18f",
+    "lineage_hash": "7d516d0649b35d36bfc7f7c49a220d44a0a6487b69f9ce2ee23858ce2b7bb596"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/bohri-keema-samosa",
+    "fetchedAt": "2026-08-01T17:33:24.319Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/bohri-keema-samosa",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Butter Sweet Symphony (Rum Old Fashioned)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir to chill and strain into the glass over large cube.\nBrown Butter Fat Wash RumBrown 7 oz. of unsalted butter until golden and nutty. Keep stirring over medium heat. You should see brown specks building on the bottom eventually after 5-7 minutes. Result should be a brown butter.",
+      "Pour the hot butter into the rum blend (24 oz. aged rum and 2 oz. of overproof rum) and stir or shake gently to emulsify.",
+      "Steep 4 hours at room temperature. Stir or shake it once mid-infusion (2 hours in) to keep the fat distributed evenly. Freeze 12-16 hours until fat cap solidifies. Break cap and strain twice— once through a fine mesh, once through a coffee filter. That double strain is what prevents oiliness."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Butter Fat Washed Aged Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Overproof Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creme De Banane",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saline Solution",
+        "unit": "dashes",
+        "notes": "1:4 salt to water, or a tiny pinch of salt",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2493f21d54d13850ffa7b292064fa59b3519fb1a0543b63ff1db1d4f21f1f3ba",
+    "lineage_hash": "2eebddba6402a1c0355f8a6883db5f7e8511e500e95e2550be8bb2e90801d343"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/butter-sweet-symphony-rum-old-fashioned/",
+    "fetchedAt": "2026-08-04T01:34:33.160Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/butter-sweet-symphony-rum-old-fashioned/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-vegan-potato-soup/",
+  "slug": "creamy-vegan-potato-soup_itdoesnttastelikechicken_f28868a4",
+  "title": "Creamy Vegan Potato Soup",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T23:22:36.950Z",
+  "ldName": "Creamy Vegan Potato Soup (Loaded Baked Potato Style)",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Soup",
+  "ldKeywords": "potato, soup",
+  "ldIngredientsRaw": [
+    "2 tablespoons vegan butter (or olive oil)",
+    "1  yellow onion (chopped)",
+    "4 cloves garlic (minced or pressed)",
+    "¼ cup all-purpose flour",
+    "3 lbs Yukon Gold potatoes (peeled and chopped into 1-inch cubes (about 6 medium potatoes))",
+    "4 - 5 cups vegetable broth",
+    "1 cup full-fat canned coconut milk (or vegan heavy cream)",
+    "2 tablespoons nutritional yeast ((optional for cheesy taste))",
+    "1 teaspoon salt (plus more to taste)",
+    "½ teaspoon black pepper",
+    "½ teaspoon dried thyme leaves",
+    "Toppings of choice: vegan bacon bits, shredded vegan cheese, vegan sour cream, chopped green onions or chives, croutons, crispy onions, smoked paprika, hot sauce, fresh parsley"
+  ],
+  "ldInstructionsRaw": [
+    "Sauté the onion: In a large soup pot or Dutch oven over medium heat, melt the vegan butter. Add the onion and garlic and cook for 5 minutes until softened.",
+    "Add the flour: Sprinkle in the flour and stir well to coat. Cook for 60 seconds, stirring often, to toast the flour.",
+    "Simmer the soup: Add the potatoes, 4 cups vegetable broth, coconut milk, nutritional yeast (if using), salt, pepper, and thyme. Stir well and bring to a gentle simmer.Cook uncovered for about 10 to 15 minutes, until the potatoes are fork tender.",
+    "Blend for creaminess: Use an immersion blender to partially blend the soup, leaving plenty of potato chunks. Alternatively, carefully transfer about half of the soup to a blender and blend until smooth, then return it to the pot. Or, if you prefer a completely smooth potato soup (no chunks), blend the entire soup until smooth.If the soup is thicker than you like, stir in more broth as needed.",
+    "Serve: Taste and adjust seasoning as needed. Ladle into bowls and pile on your favorite toppings."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "329 kcal",
+    "carbohydrateContent": "50 g",
+    "proteinContent": "7 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "8 g",
+    "sodiumContent": "1065 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "4 g",
+    "servingSize": "1  serving without toppings (recipe makes 6 servings)",
+    "transFatContent": "1 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons vegan butter, or olive oil",
+    "▢ 1 yellow onion, chopped",
+    "▢ 4 cloves garlic, minced or pressed",
+    "▢ ¼ cup all-purpose flour",
+    "▢ 3 lbs Yukon Gold potatoes, peeled and chopped into 1-inch cubes (about 6 medium potatoes)",
+    "▢ 4 - 5 cups vegetable broth",
+    "▢ 1 cup full-fat canned coconut milk, or vegan heavy cream",
+    "▢ 2 tablespoons nutritional yeast, (optional for cheesy taste)",
+    "▢ 1 teaspoon salt, plus more to taste",
+    "▢ ½ teaspoon black pepper",
+    "▢ ½ teaspoon dried thyme leaves",
+    "▢ Toppings of choice: vegan bacon bits, shredded vegan cheese, vegan sour cream, chopped green onions or chives, croutons, crispy onions, smoked paprika, hot sauce, fresh parsley"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

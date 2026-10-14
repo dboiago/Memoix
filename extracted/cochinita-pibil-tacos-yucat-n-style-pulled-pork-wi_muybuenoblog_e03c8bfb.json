@@ -1,0 +1,203 @@
+{
+  "recipe": {
+    "name": "Cochinita Pibil Tacos",
+    "time": "11 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "278",
+      "carbohydrateContent": "17.91",
+      "fatContent": "10.67",
+      "proteinContent": "29.02"
+    },
+    "directions": [
+      "In a mortar and pestle, crush the oregano, cloves, cinnamon stick, peppercorns, cumin, and salt until finely ground.",
+      "In a blender, combine the achiote paste, garlic, orange juice, lime juice, half of the red onion, and ground spices. Blend until smooth.",
+      "Place the pork in a large glass container. Pour the marinade over the meat and massage to coat. Top with sliced remaining onion half and bay leaves. Cover and marinate at room temperature for 30 minutes or refrigerate overnight.",
+      "Preheat oven to 325°F. Transfer pork and marinade to a Dutch oven. Cover and bake for about 3 hours, or until the pork is very tender and shreds easily with a fork.",
+      "Place onion slices in a heatproof bowl. Cover with boiling water and let sit for 1 minute. Drain, then return onions to the bowl. Add habaneros, citrus juices, and salt. Toss to combine and let sit until ready to serve.",
+      "Shred the pork using two forks. Serve in warm corn tortillas topped with pickled onions.",
+      "No achiote paste? Substitute with about 4 tablespoons of paprika mixed with a splash of vinegar, garlic powder, oregano, and cumin.",
+      "Marinate pork overnight for even deeper flavor.",
+      "This recipe works great in a slow cooker — cook on LOW for 6–8 hours.",
+      "Store leftover pork in the fridge for up to 4 days, or freeze for up to 3 months.",
+      "Pickled onions keep well in the fridge for up to 1 week.",
+      "Hosting a party? Set up a simple taco bar with tortillas and pickled onions and let guests serve themselves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Course Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Achiote Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "6",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": "large",
+        "notes": "juiced",
+        "amount": "3",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "1/2 for blender and remainder sliced, divided",
+        "amount": "½",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Shoulder Roast",
+        "unit": "lb",
+        "notes": "bone-in, cut into large 4-inch pieces",
+        "amount": "4",
+        "section": "Cochinita Pibil",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": "large",
+        "notes": "sliced 1/8 inch thick rings",
+        "amount": "2",
+        "section": "Spicy Pickled Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Habaneros",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": "Spicy Pickled Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "fresh, about 3 limes",
+        "amount": "½",
+        "section": "Spicy Pickled Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": "fresh, about 2 oranges",
+        "amount": "⅔",
+        "section": "Spicy Pickled Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Spicy Pickled Onions",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": "warmed, for serving",
+        "amount": "0",
+        "section": "To Serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "168823a24691d5ed41588706de4b8a81e2deafcda78ea516e4091f16864c08fc",
+    "lineage_hash": "15baf52e770e9b0958aeda77d2141761805c1d94fd1604a5d403d9778c67f6c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cochinita-pibil-tacos/",
+    "fetchedAt": "2026-08-02T09:24:49.851Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cochinita-pibil-tacos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

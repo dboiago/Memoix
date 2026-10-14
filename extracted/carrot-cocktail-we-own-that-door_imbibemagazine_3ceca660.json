@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Carrot Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the vodka, carrot juice, lime juice and ginger liqueur in a mixing glass with ice. Stir until chilled. Rinse a rocks glass with absinthe, then discard remaining spirit. Place one large ice cube in the glass, then strain contents of mixing glass into the glass. Garnish.",
+      "Turmeric-Cinnamon VodkaCombine 10 oz. of vodka with 1 cinnamon stick and 1 Tbsp. of ground turmeric in a jar or bottle. Let sit for 3 days in a cool environment. Strain the ingredients out of the jar before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turmeric-cinnamon Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Fresh Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ba6c84b54e70206ad0db70094d4c10055879f7231557cd44cfecbe66b146b36",
+    "lineage_hash": "6e4ec71a94859e8954a0df270040631f386c1c5f66102905f72fe014a27bead5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/carrot-cocktail-we-own-that-door/",
+    "fetchedAt": "2026-08-03T20:19:03.800Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/carrot-cocktail-we-own-that-door/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

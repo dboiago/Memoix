@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cucumber Mojitos",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Collins",
+    "garnish": [
+      "Lime Wedges",
+      "Mint Sprig"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "141",
+      "carbohydrateContent": "4",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Puree cucumber in a food processor with the fresh lime juice. Pour into a glass filled with ice.",
+      "Gently muddle lime wedges, mint, and Truvia Original Sweetener in the muddler.",
+      "Add the muddled ingredients to the glass with rum and club soda."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truvia Original Sweetener",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and pureed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Club Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c4072ae7f450cc666626107bad07303cfb5a838e73484d975c1d6703e4c35d83",
+    "lineage_hash": "a854b560351ba48b8ec555f3b5a4f24497a34eee2935da521b85c3dac8af4920"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cucumber-mojito/",
+    "fetchedAt": "2026-08-02T00:19:39.813Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cucumber-mojito/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Chocolate and pistachio tarts",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, make the crust. Blitz the pistachios in a food processor until you’re left with tiny crumbs. Pulse in the rest of the ingredients until you have a smooth, slightly sticky dough. Wrap in cling film and rest in the fridge for an hour",
+      "Oil two individual tart tins. Divide the dough in half, roll one piece between two sheets of cling film, then remove the underside piece of cling film and carefully place it over the top of one of the tins",
+      "Gently press the dough into the tart case and pinch off any overhang before removing the top layer of cling film. Using the cling film helps the dough to stay together and it means you won’t have to use extra flour/cocoa to stop it sticking to your worktop",
+      "Repeat with the other tin, prick the tarts bases and pop them in the freezer for 15 minutes",
+      "Pop the tart shells in the oven for 10–12 minutes. Cool completely on a wire rack before gently turning them out of their cases",
+      "For the pistachio salted caramel, place the sugar, syrup, salt and vanilla in a small saucepan and stir over a gentle flame until the sugar has completely dissolved. Increase the heat and when the mixture starts to boil, add the cream",
+      "Reduce the heat and stir for about a minute before taking the pan off the heat and whisking through the pistachio paste. Leave it to cool slightly before pouring a layer of caramel in the base of each tart. Leave to cool completely",
+      "For the chocolate filling, chop the chocolate and place it in a heatproof bowl with the butter. Stir the cream and sugar together in a saucepan over a gentle heat until the sugar has completely dissolved",
+      "Increase the heat and once the cream begins to scald, pouring it over the chocolate and butter. Leave for a minute before mixing together until the chocolate and butter has melted and the mixture is smooth and glossy",
+      "Stir in the vanilla and whisk in the egg yolk. Pour the mixture over the cool pistachio caramel and leave to set completely before decorating with chopped pistachios and raspberries, or however you wish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "plus extra for decorating is desired, shelled and unsalted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae3c3445dda86df463f44be633391c977fae2b0cadedf9f3f59312fd8386283f",
+    "lineage_hash": "102d4f43f2704c914816d896af1d2cddaabfd8d99cef37692afded71ae0eca29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-pistachio-tart-recipe",
+    "fetchedAt": "2026-08-04T00:02:23.600Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-pistachio-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

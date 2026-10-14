@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Boozy Shakerato",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "After-dinner",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the simple syrup, espresso and your choice of either limoncello, sambuca, or amaretto in shaker and fill with ice. Shake vigorously to create a fully aerated, fluffy drink. Strain into an after-dinner glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limoncello",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sambuca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ec2f3e57d00bf9ec1ab97f86da9a76f564ae30e85f7a1135531b43cd63f20b45",
+    "lineage_hash": "ba889c306b3ef57a688ff9e456d42bb1ac28c44af3c7ba8991b5f4544bc41e85"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boozy-shakerato/",
+    "fetchedAt": "2026-08-04T00:14:47.803Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boozy-shakerato/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2015/10/23/buttermilk-ice-cream/",
+  "slug": "buttermilk-ice-cream_baking-sense_59720bf9",
+  "title": "Buttermilk Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:53:42.762Z",
+  "ldName": "Buttermilk Ice Cream Recipe",
+  "ldTime": "PT500M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "buttermilk, frozen dessert, ice cream",
+  "ldIngredientsRaw": [
+    "12 oz buttermilk (1 ½ cups)",
+    "16 oz heavy cream (2 cups)",
+    "1  vanilla bean (split)",
+    "5  large egg yolks",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 12 oz&#32;buttermilk and 16 oz&#32;heavy cream in a saucepan. Scrape the seeds out of the vanilla bean and add them and the pod to the cream. Heat over medium high just until scalding hot. Do not allow the cream mixture to come to a full boil or the buttermilk may curdle.",
+    "While the milk mixture is heating, whisk together 5&#32;large egg yolks, 6 oz&#32;granulated sugar, and ⅛ teaspoon&#32;table salt.",
+    "Whisk the scalding hot milk into the yolks. Return the mixture to the pan and reduce the heat to medium low. Cook the custard, stirring constantly, until it coats the back of a spoon or spatula.",
+    "Strain the mixture into a bowl, cover with plastic wrap and refrigerate until very cold, at least 5-6 hours.",
+    "Run the custard in your ice-cream machine according to the manufacturer&#39;s directions. Pack into a container. Place plastic wrap directly on the surface of the ice cream and cover the container with a lid. Freeze 8 hours or overnight."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "225 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "3 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "127 mg",
+    "sodiumContent": "68 mg",
+    "sugarContent": "17 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz buttermilk (1 ½ cups)",
+    "16 oz heavy cream (2 cups)",
+    "1 vanilla bean (split)",
+    "5 large egg yolks",
+    "6 oz granulated sugar (¾ cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

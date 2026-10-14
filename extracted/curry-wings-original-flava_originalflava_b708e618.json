@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Curry Wings",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the chicken wings to a bowl and season with salt, black pepper, garlic powder, and 2 tablespoons of curry powder. Add the onion, garlic, scotch bonnet, thyme, ginger, potato, and carrot. Mix everything together so the wings are fully coated in flavour.",
+      "Heat the coconut oil in a large frying pan or saucepan over medium heat. Add ½ teaspoon of curry powder to the oil and let it cook for about 30 seconds to \"burn\" the curry — this deepens the flavour.",
+      "Add everything from the bowl into the pan. Brown the wings for 4–5 minutes, turning occasionally so they develop colour.",
+      "Pour in 500ml water and stir in the chicken granules. Mix well to create a rich curry gravy. Bring to a gentle boil, then reduce the heat.",
+      "Cover and cook on medium heat for 20 minutes, stirring occasionally, until the wings are tender and the potatoes are soft. If needed, add an extra sprinkle of curry powder for colour and depth.",
+      "Garnish with fresh parsley and serve hot with rice, rice and peas, or flatbread."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": "plus ½ tsp extra if needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small",
+        "unit": null,
+        "notes": "diced onion",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "finely, chopped, optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "peeled and cubed potato",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "peeled and cubed carrot",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Granules",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "handful",
+        "notes": "fresh, chopped, to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdca54a8d1263400ea6f23fef278d82087018ddb43741a57394c45d6eb19af25",
+    "lineage_hash": "6c9b4ca55b094aee62be1ac677f9909d669292d1c8094192a6df23f14c3c565e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/under-30-minutes/curry-wings/",
+    "fetchedAt": "2026-09-30T17:45:04.580Z"
+  },
+  "rawSource": "https://originalflava.com/under-30-minutes/curry-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

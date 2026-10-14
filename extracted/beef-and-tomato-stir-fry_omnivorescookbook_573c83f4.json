@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Beef and Tomato Stir Fry (番茄炒牛肉)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "265",
+      "carbohydrateContent": "10.9",
+      "fatContent": "12.3",
+      "proteinContent": "27.6"
+    },
+    "directions": [
+      "Slice the beef against the grain into 1/4” (0.5 cm) thick slices. Transfer to a small bowl. Add the Shaoxing wine, soy sauce and cornstarch. Gently mix well by hand until all the slices are coated with a thin layer of sauce. Marinate for 10 to 15 minutes while preparing the other ingredients.",
+      "Combine all the ingredients for the sauce in a medium-sized bowl. Mix well.",
+      "Mix the cornstarch with water in a small bowl to make a slurry.",
+      "Pour in 1 tablespoon of oil and swirl to coat the bottom. Heat over medium-high heat until hot. Spread the beef in a single layer. Allow to cook without touching for 30 seconds, or until the bottom side is browned. Flip to cook the other side for a few seconds. Stir and cook until the surface is lightly charred and the inside is still pink. Transfer to a plate.",
+      "Pour in the remaining 1 tablespoon of oil and add the green onion white part. Stir a few times to release the flavor and fragrance.",
+      "Add the tomato. Cook and stir until the tomato starts to break down and has turned tender.",
+      "Add back the cooked beef and pour in the sauce. Stir a few times to mix everything together.",
+      "Stir the cornstarch slurry again so it dissolves completely. Pour half of it into the pan and stir to thicken the sauce. Observe the sauce and add the rest of the slurry if it’s not thick enough. Turn to lowest heat and taste the dish. Sprinkle with a bit more salt to adjust seasoning if needed. Add the green onion green part and give it a final stir.",
+      "Transfer everything to a plate immediately. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Flank Steak",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced, white and green parts separated",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "about 1 lb / 450 g tomato, cut to bite-size pieces",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e9801a3632ba21da235602e6b14e5ecf724a16a34343a24ad4d81c880cea6b3",
+    "lineage_hash": "f9d150ed668801932fa8a7439e51ac03a33c96bbac47fad04de5c892940602ce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-and-tomato-stir-fry/",
+    "fetchedAt": "2026-08-02T06:36:44.261Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-and-tomato-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

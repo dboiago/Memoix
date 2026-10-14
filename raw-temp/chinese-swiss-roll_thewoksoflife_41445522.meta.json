@@ -1,0 +1,66 @@
+{
+  "url": "https://thewoksoflife.com/chinese-swiss-roll/",
+  "slug": "chinese-swiss-roll_thewoksoflife_41445522",
+  "title": "Chinese Swiss Roll",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T02:04:59.775Z",
+  "ldName": "Chinese Swiss Roll",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "desserts",
+  "ldKeywords": "swiss roll",
+  "ldIngredientsRaw": [
+    "1/2 cup cake flour",
+    "1 tablespoon cornstarch",
+    "¼ teaspoon baking powder",
+    "3  eggs ((separated))",
+    "5 tablespoons sugar ((divided, plus 1 teaspoon))",
+    "2 ½ tablespoons vegetable oil ((or canola oil))",
+    "2 tablespoons milk",
+    "1/3 cup cold heavy cream",
+    "2 tablespoons powdered sugar ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 degrees. Sift together the cake flour, cornstarch, and baking powder. Sift them twice. Sounds kind of fussy, but it’s a necessary step to making this cake light and airy.",
+    "In a large bowl, whisk together the 3 egg yolks and 2 ½ tablespoons sugar. Whisk in the oil and the milk until it’s light yellow and fully emulsified. Thoroughly fold in the sifted dry ingredients until there are no lumps. Set aside.",
+    "Using an electric mixer with the whisk attachment, whip the egg whites until you get soft peaks. Add another 2 ½ tablespoons of sugar to the egg whites and whip until you get stiff peaks.",
+    "Taking 1/3 of the egg white mixture at a time, fold it into the egg yolk mixture create a light and airy batter. Make sure everything is thoroughly combined. Line your baking pan with parchment paper. You can cut the four corners of the paper and overlap it to create smooth corners.",
+    "Pour the mixture in the pan and smooth it out so it’s completely even. It’s crucial that the batter be evenly distributed in the pan. Knock the bottom of the pan on a tabletop a few times (you can cover the table’s surface with a kitchen towel to make sure you don’t break anything) to get rid of any large air bubbles.",
+    "Place the pan onto a rimmed baking sheet and pour a cup of water into the baking sheet, so your pan is sitting in a shallow water bath. Place your whole apparatus on the middle rack of your oven and bake for 15 minutes.",
+    "Remove from the oven and let it just cool enough to handle . Flip the pan out onto another piece of parchment paper. Carefully peel off the parchment paper that the cake baked with.",
+    "In a mixer, whip the cream along with a teaspoon of sugar until you get stiff peaks. When the cake is still warm enough to be pliable but not warm enough to melt your cream, spread the whipped cream evenly onto the cake.",
+    "To roll the cake up, taking out a rolling pin and place it underneath the parchment paper your cake is sitting on. Slowly roll the parchment paper onto the rolling pin one side as you roll up the cake on the other. Essentially, you’re using the rolling pin to push the cake forward as you roll. At the same time, you’re using the pin to roll up the loose parchment paper. Once rolled, dust with powdered sugar if you like, slice, and serve. It goes great with fruit!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "167 kcal",
+    "carbohydrateContent": "17 g",
+    "proteinContent": "3 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "75 mg",
+    "sodiumContent": "29 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "10 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/2 cup cake flour",
+    "▢ 1 tablespoon cornstarch",
+    "▢ ¼ teaspoon baking powder",
+    "▢ 3 eggs (separated)",
+    "▢ 5 tablespoons sugar (divided, plus 1 teaspoon)",
+    "▢ 2 ½ tablespoons vegetable oil (or canola oil)",
+    "▢ 2 tablespoons milk",
+    "▢ 1/3 cup cold heavy cream",
+    "▢ 2 tablespoons powdered sugar (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

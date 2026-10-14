@@ -1,0 +1,59 @@
+{
+  "url": "https://www.cookwithmanali.com/aloo-methi/",
+  "slug": "aloo-methi_cookwithmanali_2aeb2390",
+  "title": "Aloo Methi",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T21:22:40.758Z",
+  "ldName": "Aloo Methi",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "aloo methi",
+  "ldIngredientsRaw": [
+    "2 tablespoons oil (use oil of choice, I used mustard oil )",
+    "1/2 teaspoon cumin seeds",
+    "3-4 large garlic cloves (sliced)",
+    "3-4 medium potatoes (chopped, around 400 grams)",
+    "1  green chili (chopped)",
+    "3 cups packed methi (fenugreek) leaves (75 grams, chopped, may double this quantity of methi for stronger methi flavor)",
+    "1/4 teaspoon turmeric powder",
+    "1/2 teaspoon salt (or to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat 2 tablespoons of oil in a pan on medium heat. If using mustard oil, heat it well until its really hot and then lower the heat before adding the cumin seeds.&nbsp;",
+    "Add cumin seeds, let them sizzle for few seconds and then add the garlic. Saute for few seconds until the garlic starts to change color.",
+    "Then add the chopped potato and green chili. Stir. You may also add chopped onion at this point.",
+    "Fry the potatoes in oil for 5 to 6 minutes until slightly golden brown. Toss them once or twice in between.",
+    "Add the chopped methi leaves, turmeric and salt and stir.&nbsp;",
+    "Cook for 6 to 7 minutes (keep stirring in between) until the leaves are cooked, the moisture dries out and the potatoes are done. I have not added any water here but you may sprinkle some water and cover the pan with a lid to cook the potatoes faster.",
+    "Serve aloo methi with roti or any bread of choice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "223 kcal",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "6 g",
+    "fatContent": "9 g",
+    "sodiumContent": "483 mg",
+    "fiberContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons oil, use oil of choice, I used mustard oil",
+    "▢ 1/2 teaspoon cumin seeds",
+    "▢ 3-4 large garlic cloves, sliced",
+    "▢ 3-4 medium potatoes, chopped, around 400 grams",
+    "▢ 1 green chili, chopped",
+    "▢ 3 cups packed methi (fenugreek) leaves, 75 grams, chopped, may double this quantity of methi for stronger methi flavor",
+    "▢ 1/4 teaspoon turmeric powder",
+    "▢ 1/2 teaspoon salt, or to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Coconut Pineapple Steaks Flambéed with Dark Rum",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the grill to screaming hot",
+      "Place the sugar in a shallow bowl and stir in the cinnamon with a fork. Arrange the pineapple slices on a large plate. Brush the tops with coconut milk. Invert the slices and brush with coconut milk again.",
+      "Soon the ice cream into bowl and keep cold in the freezer.",
+      "Brush and oil the grill grate. Dip each pineapple slice in the cinnamon sugar on both sides (use tongs or a fork), shaking off the excess. Arrange the pineapple slices on the grill grate. Grill until caramelized (dark brown) on both side, about 5 minutes per side. (Give each slice a quarter turn half way through to lay on a crosshatch of grill marks.)",
+      "Transfer the grilled pineapple to the bowls with the ice cream.",
+      "Heat the rum in a small saucepan until warm, almost hot, but do not let boil. Touch a match to the rum and pour it over the pineapple. Serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Pineapple",
+        "unit": null,
+        "notes": "peeled, cored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "pt",
+        "notes": "alt: rum raisin ice cream",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum for Flambee",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe4c1825d4ef0a98d07ffd5b71a4cdc16da0b3f6baa4bf9ffc770ff4f0533ca5",
+    "lineage_hash": "3040ebefd37a1937772d0b784d5c40928ad22aece3011cbd94fc5080ebcbeb51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coconut-pineapple-steaks-flambeed-with-dark-rum/",
+    "fetchedAt": "2026-08-03T02:51:55.959Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coconut-pineapple-steaks-flambeed-with-dark-rum/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

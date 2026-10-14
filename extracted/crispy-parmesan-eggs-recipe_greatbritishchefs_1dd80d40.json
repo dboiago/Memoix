@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Crispy Parmesan Eggs",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the mayonnaise, combine the egg, garlic, water, mustard and lemon juice in an immersion blender cup, or other tall cup",
+      "Add the vegetable and olive oils. Let them settle for 30 seconds or so, then blend with an immersion blender. As the mayonnaise forms, move the cup around to make sure all the ingredients are properly emulsified",
+      "Season with salt, then stir in the chilli flakes and chives. Cover and set aside",
+      "For the Parmesan eggs, bring a pan of salted water to the boil, then gently add four of the eggs. Cook them for 5 minutes, then transfer to a bowl of iced water",
+      "Peel the eggs carefully, then set them aside",
+      "Next prepare the breading. Beat together the remaining two eggs and then set them aside",
+      "Spread the flour out on a plate and season with salt",
+      "Combine the panko, turmeric, smoked paprika and Parmesan and mix to combine",
+      "Roll each soft-boiled egg in the flour, then the beaten egg, then the crumbs. Repeat this process so that the eggs have a double coating",
+      "Transfer the eggs to a wire rack placed over a tray, and chill in the fridge for 30 minutes (or longer if needed) to allow the coating to firm up",
+      "When nearly ready to cook, preheat a deep fryer to 180°C, or bring a few centimetres of oil to 180°C in a wide, high-sided pan",
+      "Fry the eggs one at a time for 1 minute, or until the breadcrumbs are until golden brown",
+      "Place the eggs in egg cups and serve with the mayo and soldiers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": null,
+        "notes": "toasted and sliced into soldiers",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "grated to a paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "tsp",
+        "notes": "or other mild chilli flakes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "545db63220bc900437e24401e6692e5aeda488816d95fc24ca0d1d7876c93f6d",
+    "lineage_hash": "63ab11dc3ff49a294e1a52c4600c363664d9ba53d60fac399b495963830b52a0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-parmesan-eggs-recipe",
+    "fetchedAt": "2026-08-02T09:31:51.774Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-parmesan-eggs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Chocolate & Zucchini Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C (350°F). Grease a 25-cm (10-inch) round springform pan or a 22-cm (8 1/2-inch) square pan.",
+      "In a medium mixing bowl, whisk together the flour, cocoa powder, baking soda, baking powder, and salt.",
+      "In the bowl of a mixer (or by hand in a large mixing bowl), beat the sugar and butter until fluffy.",
+      "Add the vanilla, coffee, and eggs, mixing well between each addition.",
+      "In a large mixing bowl, combine the zucchini, chocolate chips, and about a third of the flour mixture, making sure the zucchini strands are well coated and not clumping too much.",
+      "Add the rest of the flour mixture into the egg batter. Mix until just combined; the batter will be thick.",
+      "Fold the zucchini mixture into the batter, and blend with a spatula without overmixing.",
+      "Pour into the prepared cake pan, and level the surface.",
+      "Bake for 40 to 50 minutes, until a knife inserted in the center comes out clean. Transfer to a rack to cool for 10 minutes, run a knife around the pan to loosen, and unclasp the sides of the pan.",
+      "Serve slightly warm or at room temperature. Sprinkle with confectioner's sugar or a chocolate glaze if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "unsalted, at room temperature, or 1/2 cup olive oil, plus a pat butter or teaspoon oil for the pan",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "all-purpose",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "unsweetened",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "fine sea salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "fine",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "unrefined blond cane",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "pure",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "Tbsp",
+        "notes": "optional, strong cooled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zucchini",
+        "unit": "g",
+        "notes": "unpeeled grated, from about 1 1/2 medium zucchini",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "good-quality bittersweet, roughly chopped",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner's Sugar",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c480ade3de7c37bb880bcec35ad4880992c66eb97bf7af275076deb1d7a6ace4",
+    "lineage_hash": "82d605c26242ec199b81a0d116b90472ee8d8ed2073e49f64572bfb3a095dcb4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-zucchini-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:18:35.420Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-zucchini-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

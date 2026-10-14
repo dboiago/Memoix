@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Coconut Chiffon Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F (160°C) and have ready a 10-inch (25 cm) ungreased angel food cake pan.",
+      "Whip the egg whites using electric beaters or a stand mixer fitted with the whip attachment on high speed until they are foamy. Slowly pour in ½ cup (100 g) sugar while whipping, until a medium peak is reached. Set aside.",
+      "Mix the dry ingredients and liquids. In a separate bowl (or you can use the same bowl of the stand mixer), sift the flour, baking powder and salt. Add the reserved egg yolks, remaining ¾ cup (150 g) sugar, coconut milk, oil, lime juice, vanilla extract and coconut extract, if using. Whip at medium-high speed until the batter is well blended and smooth.",
+      "Fold a third of the whites into the batter, folding until only a few streaks are visible. Add the remaining two-thirds and fold quickly but gently until combined. Pour the batter into the angel food cake pan and spread to level, if necessary.",
+      "Bake the cake for about 50 minutes, until the cake springs back when gently pressed. Invert the cake on a rack to cool, unless the cake has risen to the top of the pan or above it. In that case, set three or four ramekins on the rack and place the edges of the inverted cake pan on the ramekins so the top of your cake doesn’t rest directly on the cooling rack.",
+      "Remove the cake from the pan. Run a palette knife along the inside edge of the outer ring of the cake (the centre ring will loosen itself, or you can help it along by dropping a bamboo skewer down the sides of the inner ring, but do not try to loosen with a palette knife). Give the bottom of the pan a not-so-gentle tap to pop the cake out onto the counter. Transfer to a serving plate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake & Pastry Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Extract",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c9c6a2d59f0b92489f6d57c0c4bb80f75f1ee05fe1d435347086e4ccfef43eb9",
+    "lineage_hash": "4c31d80154f465be3bdde9f02cfc87357bcded1abc128426247d06baaf3f77ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/coconut-chiffon-cake/",
+    "fetchedAt": "2026-08-02T00:57:53.106Z"
+  },
+  "rawSource": "https://annaolson.ca/project/coconut-chiffon-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

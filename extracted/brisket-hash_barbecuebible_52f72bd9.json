@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Brisket Hash",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the butter or oil in a 10-inch cast-iron skillet over medium-high heat on your grill’s side burner or on the grill grate. Add the onion, bell pepper, and jalapenos and cook until browned, 3 minutes, stirring with a wooden spoon.",
+      "Stir in the pastrami and potatoes and continue cooking until the potatoes are browned, 3 to 5 minutes more.",
+      "Stir in the Worcestershire sauce and hot sauce and cook for 1 minute. Correct the seasoning, adding salt and pepper to taste: the hash should be highly seasoned. Serve the hash right in the skillet.",
+      "Meanwhile, in a second skillet, melt the butter or heat the olive oil over medium-high heat. When sizzling, crack in the eggs. Fry until cooked to taste, 2 minutes per side for yolks that are still a little runny (that’s how I like them), turning with a spatula. Slide the fried eggs on top of the hash. Sprinkle with chopped parsley and dig in."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: extra virgin olive oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "3/4 cup, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": null,
+        "notes": "seeded and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeños",
+        "unit": null,
+        "notes": "for spicier has, leave the seeds in, seeded and diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Brisket",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Potatoes",
+        "unit": "C",
+        "notes": "alt: other root vegetables, coarsely or finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Louisiana-style Hot Sauce",
+        "unit": "Tbsp",
+        "notes": "such as Pete’s RedHot, or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ae4111de9e11723d751f4de15ab9fc9ef4e366963ed6d5ca9ea650002da08f2",
+    "lineage_hash": "b7a4871160331d4df7118a38ace9d6a5d8e9ee3cacea5b980a6b2248fb6e0cc7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brisket-hash/",
+    "fetchedAt": "2026-08-03T09:44:23.804Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brisket-hash/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Chocolate Coffee | Coffee with Cocoa",
+    "time": "7 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Boil the cocoa and water for 5 minutes.",
+      "Strain. Add the instant coffee, stir until the coffee dissolves. Add the sugar to taste. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Grated",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "117b974aab963531c8edc5f11574f5916f30e767ee2a0febfbfe2bca50feb6da",
+    "lineage_hash": "1c22846881e8bc3111bd14bac45a92f5d682a671695473f4666cb2723621e409"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/chocolate-coffee-coffee-with-cocoa/",
+    "fetchedAt": "2026-09-25T23:02:34.198Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/chocolate-coffee-coffee-with-cocoa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Chocolate Dumpling",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, make the dumpling dough. Combine the glutinous rice powder with the cold water and mix well. Add the shortening and combine thoroughly",
+      "Add the remaining ingredients and mix well until smooth and incorporated - if the dough feels dry, add a little water. Wrap well in cling film and store in the fridge until needed. Allow to come up to room temperature before using",
+      "To make the sesame cremeux, add the cream and milk to the pan and bring to the boil. Meanwhile, whisk the eggs and sugar together in a bowl until pale and smooth. Add the chocolate pieces to a heatproof bowl and set aside",
+      "Once the milk and cream is boiling, pour a splash of the hot milk over the eggs, whisking continuously until smooth",
+      "Add this mixture back to the pan with the hot milk and cream and cook, stirring continuously, until it reaches 85°C. As soon as the custard reaches this temperature, pour over the chocolate in 3 stages, gradually stirring to emulsify the chocolate",
+      "Add the sesame paste to finish the cremeux and blitz with a hand blender until smooth. Allow to cool to 30°C, then transfer to a piping bag fitted with a fine nozzle. Pipe the cremeux into the truffle shells and place in the fridge to set",
+      "To assemble the dumplings, divide the dumpling dough into 10g portions, leaving you with 18 dough balls in total. Press each portion of dumpling dough into the palm of your hand to make a 4cm circle and place a chocolate truffle in the middle, with the hole facing down towards your palm",
+      "Coax the dumpling dough up and around the sides of the truffle, then roll the dumpling in your palm until the chocolate is completely covered, trying to keep an even layer all the way around. For best results, allow the dumplings to rest in the fridge before cooking",
+      "To make the yuzu and ginger infusion, add the ginger to the pan with enough water to cover. Bring to the boil, boil for 10 seconds, then strain away the water and return the ginger to the pan. Add the 200g of water to the pan and bring to a gentle simmer",
+      "Simmer gently for 30 minutes, then remove from the heat and pass through a fine sieve, discarding the ginger. Allow the liquid to cool to room temperature, then add the yuzu and stock syrup. Strain through a muslin cloth and adjust the sugar and yuzu content if needed",
+      "To cook the dumplings, bring a pan of water to the boil, place a few dumplings in the pan and agitate gently so they don’t stick to the bottom. Keep the water boiling and cook the dumplings for 3-4 minutes - when cooked, they should be completely soft",
+      "To plate, add 3 dumplings to each bowl and top each with a small piece of lime, a yellow viola petal and a baby basil leaf. Add the room temperature yuzu and ginger infusion to a teapot and pour over the dumplings at the table"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Glutinous Rice Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "62",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Shortening",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Starch Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "72%, chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "40%, chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Truffle Shells",
+        "unit": null,
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, peeled and chopped",
+        "amount": "19",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "g",
+        "notes": "segmented",
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Viola Flowers",
+        "unit": null,
+        "notes": "yellow, 18 petals",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Cress",
+        "unit": null,
+        "notes": "or basil cress",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59c323db5d1004a1e266d36df46c9856160fa02340cfc432841efd19950e5462",
+    "lineage_hash": "e4d6479a0737c2bd236dd41bfb8cf81df9a82253f5cffe9b1654f93750a1b04c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-dumpling-recipe",
+    "fetchedAt": "2026-08-03T21:51:49.155Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-dumpling-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Coconut Goad Varan (Coconut Sweet Dal)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the dal and put in pressure cooker. Pour 2 cups of water and cook for 7-8 whistles.",
+      "Put fresh coconut in mixer and blend well. Make a fine paste, add water while blending.",
+      "When the pressure goes off open the cooker and with ladle blend the dal to make batter type consistency.",
+      "Heat ghee in a pan. Add mustard seeds and cumin seeds. When splutter add curry leaves and green chilies.",
+      "Add tomatoes and cook well.",
+      "Add the dal to the pan and mix well.",
+      "Add water as required, turmeric, coconut paste, gud/jaggery and salt. Simmer the dal for 5-10mins.",
+      "Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toor Dal/arhar Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "fresh, grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds/rai",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds/jeera",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gud/jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c82896e7e22c2d451561f7b7c49cc4b777e4159ee80d8a955e3d04c660380784",
+    "lineage_hash": "8cee8923713ac53285e2cde794ea6879c00b8a7cb2a7e6d6c015f598b7981d24"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/coconut-goad-varan-coconut-sweet-dal/",
+    "fetchedAt": "2026-08-02T08:28:22.636Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/coconut-goad-varan-coconut-sweet-dal/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

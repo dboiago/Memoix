@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Crispy Turmeric Red Mullet",
+    "time": "1 hr 20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pestle and mortar, pound the garlic, turmeric and salt into a coarse paste",
+      "Massage the paste all over the fish and leave to marinate for an hour in the fridge. You may wish to use gloves for this so as to not stain your hands",
+      "After an hour scrape the garlic and turmeric marinade from the fish, reserving it",
+      "Heat a deep fryer to 160C if you have one. If you don't, pour the vegetable oil into a tall saucepan to a depth of 10cm (4 inch) and heat the oil to 160C (use a temperature probe to check the oil temperature). Add the garlic and turmeric paste to the hot oil and stir constantly to avoid clumping. Cook the paste until light golden and crispy, around 3 minutes, then transfer to absorbent paper using a slotted spoon or strainer. Lightly season with fine salt",
+      "Heat the same oil to 180ºC (using a temperature probe to check the oil temperature if you don't have a deep fat fryer). Deep-fry the fish until golden brown and crispy, around 8 minutes. You may need to do this in batches so as not to overcrowd the saucepan. Remove the fish and drain on absorbent paper. Lightly season with fine salt",
+      "Transfer the fried fish to a serving plate and top with the crispy turmeric and garlic"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "g",
+        "notes": "fresh, chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": "plus extra to season",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Red Mullet",
+        "unit": "g",
+        "notes": "gutted and cleaned",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5eb6340a5a6572d55db3d3be78502e6a0dab862c0ac08ad5a42337d5de441f0c",
+    "lineage_hash": "4e054ed0f777b44e6e727469985b1f77f9395e8a9b1c442b5573c11c8d37dd2c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-turmeric-red-mullet-recipe",
+    "fetchedAt": "2026-08-02T18:52:32.268Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-turmeric-red-mullet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

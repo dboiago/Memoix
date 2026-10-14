@@ -1,0 +1,48 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/banana-milk-2-ingredients/",
+  "slug": "banana-milk-2-ingredients-vegan-dairy-free_itdoesnttastelikechicken_89ca8869",
+  "title": "Banana Milk - 2 Ingredients, Vegan/Dairy-Free!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T17:51:33.647Z",
+  "ldName": "Banana Milk - 2 Ingredients",
+  "ldTime": "PT2M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "American, Canadian",
+  "ldCategory": "Drinks",
+  "ldKeywords": "banana, dairy free, milk",
+  "ldIngredientsRaw": [
+    "1  banana ((the riper it is the sweeter the milk will be))",
+    "1 cup water",
+    "1/2 teaspoon vanilla extract",
+    "1/4 teaspoon ground cinnamon",
+    "1/8 teaspoon nutmeg"
+  ],
+  "ldInstructionsRaw": [
+    "Add the banana and water to a blender. If using, also add in any of the optional add-ins. Blend until smooth and creamy. Feel free to add more or less water for a thinner or thicker consistency.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "105 kcal",
+    "carbohydrateContent": "26 g",
+    "proteinContent": "1 g",
+    "sodiumContent": "13 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "14 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 banana, (the riper it is the sweeter the milk will be)",
+    "▢ 1 cup water",
+    "[Optional add-ins]",
+    "▢ ½ teaspoon vanilla extract",
+    "▢ ¼ teaspoon ground cinnamon",
+    "▢ ⅛ teaspoon nutmeg"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

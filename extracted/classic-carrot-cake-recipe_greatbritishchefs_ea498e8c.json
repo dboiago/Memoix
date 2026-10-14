@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Carrot Cake",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grease and line the sides and bases of 2 x 18cm non-stick, loose-bottomed cake tins, measuring 7cm deep",
+      "Place the rapeseed oil and the caster sugar in a large bowl and whisk to combine. Whisk in the egg yolk and milk, then fold in the grated carrots and chopped walnuts",
+      "Sift the flour, baking powder, ground ginger and cinnamon into the bowl and fold into the mixture",
+      "In a clean separate bowl, whisk the egg whites until stiff. Fold a couple of spoonfuls into the mixture to loosen it before gently folding in the rest of the egg whites",
+      "Divide the mixture between the 2 tins. Weigh them to make sure you have approximately the same amount of mixture in each and smooth the surface",
+      "Bake for 35–40 minutes or until a skewer inserted in the middle of the cakes comes out clean. Remove from the oven and place the cakes in their tins on a wire rack to cool",
+      "Make the icing by whisking the butter in a mixer, or with an electric whisk, until very pale and fluffy. Add the icing sugar and vanilla extract and whisk for a couple of minutes, then add the cream cheese and whisk briefly until smooth",
+      "Place the whole walnuts in a dry pan and lightly toast for a couple of minutes over a medium heat. Cool and finely chop",
+      "Remove the cakes from the tin and the baking paper. Using a serrated knife, level the top of each cake if necessary and slice each cake carefully and evenly in half",
+      "Place the base of one cake on a cake stand, or plate. Spread on a couple of spoonfuls of icing using a palette knife and smooth it over before placing the next cake layer on top. Continue with the rest of the layers",
+      "Spread the rest of the icing evenly over the sides and top of the cake. Using your fingers gently press the chopped toasted walnuts onto the sides of the cake. Leave to set in the fridge",
+      "Remove from the fridge 30 minutes before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": "plus a little extra for greasing the tin",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and finely grated",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "525",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "to decorate",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "368e3f416a058f012bcf9a936de8a885a6674148088ede5da1740584f88e921c",
+    "lineage_hash": "e8f3fd2d7443919b6b209f12dc8d9bec40f7c3a1f29edb0292a7887dcf5d30b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/classic-carrot-cake-recipe",
+    "fetchedAt": "2026-08-03T13:22:31.294Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/classic-carrot-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

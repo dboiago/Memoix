@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Artichokes with Hazelnut Butter",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the artichokes in the sink and slice off the stems, turn upside down and tap the bottom to encourage the leaves to splay out and then snip the tips off with some scissors or a sharp knife. Place in a steamer and steam for 40 minutes or until a skewer passes easily through",
+      "Meanwhile, lightly toast the hazelnuts in a pan and then rough chop. Add the butter to melt through the nuts, stirring for a minute or two. Place in a blender or pestle and mortar and whizz to a rough paste",
+      "Serve your artichoke whole on a plate with a side of hazelnut butter in a ramekin on the side. Pick the leaves off and dip away to your hearts content but don’t choke on the choke"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Globe Artichokes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "blanched",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e845aee62eb5db809a8091661529b9eb5b01ddd65b35d8f6209e18db89eab44",
+    "lineage_hash": "c1f90f3c20a2b6597c789a3d548ef557939358f1f65da86db4b1449da78e677f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/artichokes-hazelnut-butter-recipe",
+    "fetchedAt": "2026-08-03T23:52:38.539Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/artichokes-hazelnut-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

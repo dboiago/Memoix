@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Crispy Masala Dosa",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "152",
+      "carbohydrateContent": "29",
+      "fatContent": "2",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "To a large bowl add sona masoori rice, idli rice, urad dal gota, chana dal, toor dal and methi seeds.",
+      "Soak poha in 1/2 cup water 20 to 30 minutes before grinding the batter.",
+      "Drain water from the rice, dals & poha and transfer everything to a high speed blender.",
+      "Add around 1 & 1/4 cups (10 oz/300 ml) + 1-2 tablespoons (15-30 ml) cold water or as needed to grind the batter to a smooth paste (total water around 315-330 ml).",
+      "Now, transfer the batter to the steel bowl of your Instant Pot.",
+      "Add 1 teaspoon of rock salt (sendha namak) to the batter. Do not use regular iodine salt here. If you live in a warm place, you may skip the salt at this point.",
+      "The consistency of the batter should be free flowing, but it shouldn’t be runny and it shouldn't be thick either, a thick batter won't ferment.",
+      "Now, you need to place the batter in a warm place to ferment. If you live in a warm place, just leave the batter to ferment over the counter.",
+      "To use the Instant Pot to ferment the batter, place the batter into the steel container on the Instant Pot.",
+      "After 14 hours, my batter was well fermented. It had increased in volume and was frothy on top.",
+      "Boil the potatoes and then peel the skin and mash them. You can boil the potatoes using an Instant Pot (high pressure 10 minutes) or 8-9 whistles on a stove-top pressure cooker.",
+      "Heat 1 tablespoon oil in a pan on medium heat. Once hot, add mustard seeds and let them pop.",
+      "Add the chana dal (I usually soak it in water for 10 minutes, drain water and then use in the recipe), cashews and chopped ginger.",
+      "Then add the sliced onion, chopped green chilies and curry leaves. Cook the onions for around 2 minutes until soften.",
+      "Add the boiled and mashed potatoes along with turmeric and salt. Mix to combine everything.",
+      "Turn off heat, add some chopped cilantro and remove pan from heat.",
+      "Heat a cast iron skillet on medium-high heat. I have used a 14-inch cast iron pan here (it is what works best for crisp dosa but you may use a non-stick pan). To check if pan is hot enough, sprinkle some water on the pan, the water should sizzle away and evaporate immediately.",
+      "Then start making the dosa. Take a ladle full of batter and pour it in the center of the pan.",
+      "Start from the inside and move your ladle out in a circular motion (move the ladle in clockwise direction).",
+      "Drizzle oil or ghee all around the dosa and also in the center. Let the dosa cook for few minutes until the bottom starts appearing golden brown. You only need to cook one side of the dosa.",
+      "Add the prepared potato masala (few tablespoons of it) on one side if you wish to fold it or in the center if you want to roll the dosa.",
+      "Then scrape the sides of the dosa to release it from the pan. Fold over one side of the dosa onto the side with the potato masala. If you put the masala in the center, then roll the dosa like you would roll a paper.",
+      "Press with a spatula and then remove dosa from the pan. Make all dosas in the same way. You will make around 12 to 15 dosa from the batter, more or less depending on how big or small you make them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sona Masoori Rice",
+        "unit": "C",
+        "notes": "or any raw or regular rice, 150 grams",
+        "amount": "¾",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Idli Rice",
+        "unit": "C",
+        "notes": "parboiled rice, 160 grams",
+        "amount": "¾",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal Gota",
+        "unit": "C",
+        "notes": "split urad dal, 100 grams, dehusked whole urad dal or you can use urad dal dhuli",
+        "amount": "½",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "Tbsp",
+        "notes": "18 grams",
+        "amount": "1",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Toor Dal",
+        "unit": "Tbsp",
+        "notes": "18 grams",
+        "amount": "1",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Methi Seeds",
+        "unit": "tsp",
+        "notes": "fenugreek seeds",
+        "amount": "½",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Poha",
+        "unit": "Tbsp",
+        "notes": "flattened rice, 18 grams, soaked 20 to 30 minutes before grinding",
+        "amount": "3",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "tsp",
+        "notes": "non-iodide",
+        "amount": "1",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": null,
+        "notes": "alt: oil, to cook the dosa",
+        "amount": "0",
+        "section": "Dosa Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "425 grams, boiled and mashed",
+        "amount": "4",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "15 ml",
+        "amount": "1",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": "asafoetida",
+        "amount": "¼",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "tsp",
+        "notes": "soaked for 10 minutes in water",
+        "amount": "1",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cashews",
+        "unit": null,
+        "notes": "broken",
+        "amount": "5-6",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "chopped, adjust to taste",
+        "amount": "1-2",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-15",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Potato Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": "Potato Masala",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7adaf3f459dc59b161c81a7bd6cc37d7704e450392fa2c7d0a5131fce243cf2b",
+    "lineage_hash": "856ff82e80bafcd22ba90f129ee2d8356a4ebfd86ef56dea8b81b2f0098916af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/crispy-masala-dosa/",
+    "fetchedAt": "2026-08-02T05:57:40.394Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/crispy-masala-dosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

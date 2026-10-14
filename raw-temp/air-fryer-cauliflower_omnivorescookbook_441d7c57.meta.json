@@ -1,0 +1,61 @@
+{
+  "url": "https://omnivorescookbook.com/air-fryer-cauliflower/",
+  "slug": "air-fryer-cauliflower_omnivorescookbook_441d7c57",
+  "title": "Air Fryer Cauliflower",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:09:44.787Z",
+  "ldName": "Air Fryer Cauliflower",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 small head cauliflower (, cut into bite-size florets)",
+    "2 tablespoons olive oil",
+    "1 teaspoon Chinese chili flakes ((or paprika for a non-spicy dish))",
+    "1/2 teaspoon cumin powder",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon ground Sichuan peppercorn ((or black pepper))",
+    "1/2 teaspoon soy sauce",
+    "1  green onion (, sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the air fryer to 400°F (200°C) for 10 minutes.",
+    "Add the cauliflower into a big bowl. Drizzle with olive oil. Add the Chinese chili flakes, cumin powder, garlic, salt, and ground Sichuan peppercorns. Toss to coat well.",
+    "Roast the cauliflower in the air fryer at 400°F (200°C) for 8 to 9 minutes, until just al dente and the edges are charred.",
+    "Transfer the air fryer tray to the kitchen counter. Add the green onion and drizzle with soy sauce. Toss with a spatula. Air fry for another 2 minutes or so, until the cauliflower turns tender and the edges are browned. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "91 kcal",
+    "carbohydrateContent": "7.3 g",
+    "proteinContent": "1.7 g",
+    "fatContent": "7.3 g",
+    "saturatedFatContent": "1.1 g",
+    "sodiumContent": "199 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "1.2 g"
+  },
+  "htmlIngredientLines": [
+    "1 small head cauliflower , cut into bite-size florets",
+    "2 tablespoons olive oil",
+    "1 teaspoon Chinese chili flakes (or paprika for a non-spicy dish)",
+    "1/2 teaspoon cumin powder",
+    "1/2 teaspoon garlic powder",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon ground Sichuan peppercorn (or black pepper)",
+    "1/2 teaspoon soy sauce",
+    "1 green onion , sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

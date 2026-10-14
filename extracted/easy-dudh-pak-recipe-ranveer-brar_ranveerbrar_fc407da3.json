@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Dudh Pak (दूध पाक)",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a heavy bottom pan, keep the milk for boiling.",
+      "Soak the rice in water for 10- 15 mins and then grind it and make a smooth paste.",
+      "Let the milk reduce. Stir occasionally so it doesnât stick to the bottom.",
+      "Once 1/4th part of the milk has reduced, add the rice paste and mix well.",
+      "Cook for 10 mins, it will start getting thick.",
+      "Now add sugar, condensed milk and ground cardamom. Mix well and keep stirring.",
+      "Let it cook for more 15 mins. Keep stirring.",
+      "The pak has to be thick enough, should not be of pouring consistency.",
+      "Once reached to that desired consistency, remove from the flame and let it cool.",
+      "Refrigerate it for an hour.",
+      "Heat ghee in pan, add the sliced almonds and roast them till they turn light brown and keep aside.",
+      "Sprinkle sliced pistachios and roasted almonds on the dudh pak while serving.",
+      "Serve chilled for better taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "Tbsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6d9c4468d58b194adc73effbb8e685f2c2a95aacdc34cf7b781b0b4bfc3627d",
+    "lineage_hash": "956f25fc991650ac4ce4f3be4fac016ccb80cac4d8bfeecb103feafde7c9d52a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dudh-pak/",
+    "fetchedAt": "2026-08-02T08:40:04.103Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dudh-pak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

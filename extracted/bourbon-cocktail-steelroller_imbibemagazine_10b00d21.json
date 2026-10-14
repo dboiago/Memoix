@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail: SteelRoller",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients together in a mixing glass with ice.",
+      "Strain into a rocks glass over a single large ice cube.",
+      "Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buffalo Trace Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Montenegro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Regan's Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13929d4967545c788b2f86a67ddd18bacda41dec150e07d52529344616f40003",
+    "lineage_hash": "40794381090d030cd0d69fcaf4e6e38f9a3e1f76dafbbcff6a38dd51c1b8ce82"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/steelroller/",
+    "fetchedAt": "2026-08-03T17:58:59.085Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/steelroller/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

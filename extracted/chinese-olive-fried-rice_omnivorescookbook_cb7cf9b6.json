@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chinese Olive Fried Rice (橄榄菜炒饭)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add bacon to a large nonstick pan and turn to medium heat or medium high heat (*see footnote 3). Stir and cook until golden and the fat is rendered.",
+      "(Optional) If the bacon you use is too fatty, you might get a lot of rendered fat. Remove some of the fat by dipping a paper towel into the pan with a pair of tongs. I personally like to leave a bit of bacon fat in the pan, which will make the rice extra flavorful.",
+      "Add garlic. Stir a few times until fragrant.",
+      "Add olive vegetables. Cook and stir until you can hear a vibrant sizzling. It might only take a few seconds if the pan is properly heated. Olive vegetables contain oil, so your pan should be greased and ready for the rest of the cooking. If you removed too much bacon fat earlier, you might want to add a small spoon of oil here, so the rice won’t dry out.",
+      "Add rice. Cook and chop the rice with a spatula until separated into grains and heated through. Swirl in soy sauce and stir to mix well. You should again hear vibrant sizzling, throughout the cooking, without burning the ingredients. Adjust heat accordingly and remove the pan from the stove if it’s getting too hot.",
+      "Move everything to one side of the pan. Add cucumber. Cook and stir for a few seconds to heat them.",
+      "Mix cucumber with the other ingredients, and move everything to one side of the pan.",
+      "Add vegetable oil and beaten egg to the other side of the pan. Wait until the bottom sets. Stir everything together. Carefully taste the rice. The cucumber should be cooked through and the rice slightly crisped. Add green onion, stir to mix well.",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bacon",
+        "unit": "slices",
+        "notes": "*see footnote 1, chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tablespoons Chinese Olive Vegetables",
+        "unit": null,
+        "notes": "*see footnote 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Steamed Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "or light soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "small",
+        "notes": "generates about 1 cup, cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f6e0df54e763e45dfe00c0c66d3dfe8a655d9611c04c884fa228755027e98d2",
+    "lineage_hash": "99d8f3da3d7b7c86dc477efd913738f2130340f3d4857f408c5a714f15ad00d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-olive-fried-rice/",
+    "fetchedAt": "2026-08-01T20:13:35.655Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-olive-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

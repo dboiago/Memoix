@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Di San Xian (Chinese Sautéed Potato Eggplants and Green Peppers)",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "187",
+      "carbohydrateContent": "31",
+      "fatContent": "5",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Soak the eggplants in slightly salted water for 15 minutes. Drain completely and then coat evenly with a thin layer of cornstarch.",
+      "In a small bowl, mix all of the stir-frying sauce together.",
+      "If you cut potatoes in chunks, then cook the chunks in boiling water for around 4-5 minutes. Transfer out and drain.",
+      "Heat oil in wok (recommend adding more oil to fasten the process, do not worry, we will remove extra oil later) to form a 3 cm oil layer.",
+      "Place potatoes in and fry until the surface becomes slightly crispy. Then place the eggplant in and gently fry during the process until well cooked. Fry green pepper for 10 seconds.",
+      "Pour extra oil out and leave around 1/2 tablespoon of cooking oil in. Fry green onion and garlic until aromatic. Place the stir fry sauce in. Wait for a while until boiling. Place potato, green pepper and eggplants in. Fry until each piece is well coated.",
+      "Serve hot with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long Eggplants",
+        "unit": null,
+        "notes": "cut into 2cm chunks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch for Coating",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "cut into thick slices or chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Pepper",
+        "unit": null,
+        "notes": "cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "white part only, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8930c1c572936c6dba09e01dbc79b1c30839b7d3e429f04bc95b9d034990f657",
+    "lineage_hash": "dcc5dff4ced3e1a60e64a9d71ef3c39086ca0aab30eb4a6228441e4aac7fb3d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/di-san-xian-chinese-sauteed-potato-eggplants-and-green-peppers/",
+    "fetchedAt": "2026-08-01T23:42:34.951Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/di-san-xian-chinese-sauteed-potato-eggplants-and-green-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

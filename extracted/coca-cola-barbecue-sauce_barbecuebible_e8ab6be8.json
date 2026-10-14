@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Coca-Cola Barbecue Sauce",
+    "time": "8 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a heavy, non-reactive saucepan and gradually bring to a boil over medium heat. Reduce the heat slightly to obtain a gentle simmer. Simmer the sauce until reduced by a quarter, 6 to 8 minutes.",
+      "Use right away or transfer to a large jar, cover, cool to room temperature, and refrigerate. The sauce will keep for several months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coca Cola",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A-1 Steak Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67f10cfd86d1ecbed297c9efa9ecfd7ceb04cb0ac8dd94b69d5cc79dd5571753",
+    "lineage_hash": "a7aeb332b1f9694bd7599a7e895115bcedab6789c3cb1bab42f478fbcd1a3f96"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coca-cola-barbecue-sauce/",
+    "fetchedAt": "2026-08-02T22:48:57.005Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coca-cola-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

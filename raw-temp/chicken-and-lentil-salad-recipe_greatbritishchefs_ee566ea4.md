@@ -1,0 +1,5 @@
+Much ‘[healthy](https://www.greatbritishchefs.com/collections/healthy-recipes)’ eating is often presumed devoid of flavour and doesn’t leave me feeling the least bit sated. For me moderation is the key word with diet and I think trying to avoid excessive eating is a good start, so I have been keeping an eye on portion sizes, trimming off extra fat from meat, and cooking more fish.
+
+Balance is another key point with the inclusion of more fruit, vegetables and small but mighty pulses. Coming back to the all-important taste factor, I’ve also stopped reaching out so much for the salt pig and tried to think about other routes to seasoning food by using herbs and low saturated oils such as rapeseed, which is also naturally high in Omega 3.
+
+For this dish you can simply shred the skinless [chicken breasts](https://www.greatbritishchefs.com/ingredients/chicken-breast-recipes) once they’re poached but I like to pop them on a scorching hot griddle for extra smoke and charcoal lines. It’s a technique known as pôche grillé if you want to get all cheffy!

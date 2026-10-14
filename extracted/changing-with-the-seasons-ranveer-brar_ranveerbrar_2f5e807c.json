@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Murmura Laddoo",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Dry roast the murmuras in a pan till crisp.",
+      "In a pan, add jaggery and water, mix till dissolved. Let simmer and cook until it reaches a 2 string consistency.",
+      "Add cardamom powder into melted jaggery and mix well.",
+      "Now add almonds, pistachios and murmuras into it and mix well.",
+      "Turn off the flame. Allow it to cool for 1 minute but not more than that.",
+      "Wet your hands, take a handful of the mixture and shape into a laddoo. Repeat with the rest of the mixture.",
+      "Make laddoos of desired size and allow them to cool down, they will harden.",
+      "Store the prepared laddoos in air tight containers."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Murmura/rice Puffs",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Water",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "Optional, chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio",
+        "unit": "C",
+        "notes": "Optional, chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3c5d7134534947784bae66283ccd1c11b4a9ed47eee16f19f7b1e850a431e69d",
+    "lineage_hash": "08d657c73ea6408762a540227af45f52879fb502663443b3c04b2d65ff918a1b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/changing-with-seasons/",
+    "fetchedAt": "2026-08-01T16:28:09.614Z"
+  },
+  "rawSource": "https://ranveerbrar.com/changing-with-seasons/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://www.chinasichuanfood.com/sesame-cold-noodles/",
+  "slug": "cold-sesame-noodles_chinasichuanfood_aa1e2d8d",
+  "title": "Cold Sesame Noodles",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:50:39.093Z",
+  "ldName": "Cold Sesame Noodles",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": "Sichuan",
+  "ldCategory": "staple",
+  "ldKeywords": "noodles, Sesame",
+  "ldIngredientsRaw": [
+    "500 g fresh noodles (for 3 servings)",
+    "3 tbsp. sesame paste",
+    "5 tbsp. cold water",
+    "1 tbsp. light soy sauce",
+    "1 tsp. sugar",
+    "1 tsp. salt",
+    "1/2 tbsp. black vinegar",
+    "1 tbsp. sesame oil",
+    "1 tbsp. light soy sauce",
+    "4 tbsp. sesame paste texture",
+    "freshly ground Sichuan peppercorn",
+    "1 tbsp chopped Zha-cai or you can use crushed peanuts ( ,for the crispy taste)",
+    "1/2 tbsp Homemade Chili oil for drizzling"
+  ],
+  "ldInstructionsRaw": [
+    "Tune the sesame paste texture: slightly add light soy sauce, sesame oil, salt and cold water in sesame paste. Stir to combine well. The sesame paste should be running but not thin.",
+    "Cook the noodles",
+    "Assemble the noodles by each serving (we can make 3 this time)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "987 kcal",
+    "carbohydrateContent": "115 g",
+    "proteinContent": "24 g",
+    "fatContent": "49 g",
+    "saturatedFatContent": "15 g",
+    "sodiumContent": "4592 mg",
+    "fiberContent": "5 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "500 g fresh noodles for 3 servings",
+    "[Sesame sauce]",
+    "3 tbsp. sesame paste",
+    "5 tbsp. cold water",
+    "1 tbsp. light soy sauce",
+    "1 tsp. sugar",
+    "1 tsp. salt",
+    "1/2 tbsp. black vinegar",
+    "1 tbsp. sesame oil",
+    "[each serving]",
+    "1 tbsp. light soy sauce",
+    "4 tbsp. sesame paste texture",
+    "freshly ground Sichuan peppercorn",
+    "1 tbsp chopped Zha-cai or you can use crushed peanuts  ,for the crispy taste",
+    "1/2 tbsp Homemade Chili oil for drizzling"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

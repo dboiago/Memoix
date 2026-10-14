@@ -1,0 +1,61 @@
+{
+  "url": "https://dailycookingquest.com/dim-sum-chicken-and-shrimp-shu-mai.html",
+  "slug": "dim-sum-chicken-and-shrimp-shu-mai_dailycookingquest_e1cc09c0",
+  "title": "Dim Sum Chicken and Shrimp Shu Mai",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:54:34.529Z",
+  "ldName": "Dim Sum Chicken and Shrimp Shu Mai",
+  "ldTime": "PT2H15M",
+  "ldPrepTime": "PT2H0M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "8",
+    "20 shu mai"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Chicken",
+    "Seafood"
+  ],
+  "ldIngredientsRaw": [
+    "20 wonton skins",
+    "250 gram minced chicken",
+    "150 gram shelled shrimps, roughly chopped",
+    "75 gram jicama (or water chestnut), finely chopped",
+    "3 dried shiitake mushroom, rehydrate in hot water for 1 hour, finely chopped",
+    "1 tablespoon Chinese cooking wine, e.g. Shao Xing Hua Tiao Jiu",
+    "2 tablespoon corn starch",
+    "1 egg white",
+    "1 tablespoon soy sauce",
+    "1 tablespoon sesame oil",
+    "1 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 teaspoon ground pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Combine all filling ingredients, mix well, set aside in the fridge for at least 1 hour.",
+    "To fill the skins, put 1 tablespoon of filling in the center of each skin, gather all the corners to form a tiny pouch, fold the overhanging wrapper edges down, leaving the filling exposed. Press the wrapper firmly around the filling, then pat the bottom lightly to make it flat.",
+    "Prepare a steamer and line with either a parchment paper or some cabbage leaves to prevent the shu mai from sticking to the steamer basket. Steam for about 15 minutes, or until the meat is fully cooked. Serve immediately with some soy sauce and chili sauce."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "20 wonton skins",
+    "Filling",
+    "250 gram minced chicken",
+    "150 gram shelled shrimps, roughly chopped",
+    "75 gram jicama (or water chestnut), finely chopped",
+    "3 dried shiitake mushroom, rehydrate in hot water for 1 hour, finely chopped",
+    "1 tablespoon Chinese cooking wine, e.g. Shao Xing Hua Tiao Jiu",
+    "2 tablespoon corn starch",
+    "1 egg white",
+    "1 tablespoon soy sauce",
+    "1 tablespoon sesame oil",
+    "1 teaspoon salt",
+    "1 teaspoon sugar",
+    "1 teaspoon ground pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

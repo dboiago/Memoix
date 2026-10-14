@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Dover Sole & Tarragon Stuffing, Potato Dumplings",
+    "time": "1 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C/Gas mark 6. Score around the middle of the potatoes, then bake them in their skins for about 1 hour or until soft. Halfway through, rub the whole garlic with a little oil, then roast with the potatoes for 25-30 minutes until soft. Put aside to cool",
+      "To make the dumplings, bring a large pan of water to the boil, reduce to a simmer and season with oil and salt",
+      "Sieve the cooled potato flesh and peeled garlic through a ricer or drum sieve. Separate the egg and fold together the sieved potato, garlic, Parmesan and egg yolk, being careful not to overwork",
+      "Fold in the flour, lemon oil, chopped capers and chopped parsley. Season and place onto a flat surface",
+      "Divide the dough up into small balls and submerge in the simmering water until the dumplings come to the surface",
+      "Immediately blanch in ice cold water and when cold, transfer to a tea towel to dry",
+      "To fry the dumplings, heat a non-stick pan and add a little oil. Fry until the dumplings are golden brown, which should take about 2 minutes each side",
+      "To make the stuffing, blend the bread in a food processor with the salt, tarragon, olive oil and zest of the 1/2 lemon",
+      "Clean and prepare the whole sole. Using a long, sharp knife, make an incision down the backbone of each fish. Slide your knife between the fillets and the bone, leaving at least 1cm uncut at either end. Fold back the top flaps. Cut along the outside edge of the backbone with scissors",
+      "Loosen the underside of the bone with your knife. Snip the loose bone near the head and tail and remove it completely, leaving each fish with a 'pocket'. Make sure the cavity is clean and dry and pack the stuffing in to all of the available space. Watch our how to video if you need more help",
+      "Preheat a grill. Season the skin of the fish and place under the grill for about 5 minutes each side, until the skin crisps up and the flesh comes away from the bone",
+      "Serve immediately, pouring over the juices from the tray, alongside the dumplings"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread",
+        "unit": "slices",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dover Sole",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90655395060d203781fbf7a794269200944c7d33676d025624fb6781c7ba9788",
+    "lineage_hash": "e5f99c37a75cc5d9b7bfe5d7a0d0a28aa143fba6fade7f7b0cb1e057358b59ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/sole-recipe-tarragon-lemon-stuffing-potato-dumplings",
+    "fetchedAt": "2026-08-03T21:27:38.269Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/sole-recipe-tarragon-lemon-stuffing-potato-dumplings",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

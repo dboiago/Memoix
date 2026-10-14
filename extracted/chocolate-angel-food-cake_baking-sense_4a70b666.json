@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Chocolate Angel Food Cake",
+    "time": "2 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "167",
+      "carbohydrateContent": "37",
+      "fatContent": "1",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Have an angel food pan, or tube pan, ungreased, ready for the batter.",
+      "Into a medium bowl sift 4 oz cake flour, half the sugar and ¼ teaspoon salt. Whisk the ingredients together to distribute the salt and sugar evenly. Set aside. In a small bowl whisk together 1 oz dutch process cocoa powder, 2 oz hot water and 2 teaspoons vanilla extract until smooth. Set Aside",
+      "In a large mixer bowl or in the bowl of a stand mixer, whisk 12 large egg whites on medium speed until frothy. Add 1 teaspoon cream of tartar and continue whipping until soft peaks form. With the mixer running, gradually add the remaining 3/4 cup of sugar. Increase the speed to medium-high and continue whipping until stiff peaks are formed. The total whipping time will be about 8-10 minutes.",
+      "Use a hand whisk to fold in the cocoa mixture until it's about 3/4 the way incorporated.",
+      "Sift 1/3 of the flour mixture over the meringue and fold in the flour until it's almost incorporated. Sift and fold in the remaining flour mixture in two batches. Fold just until all the flour is incorporated. You can switch from a hand whisk to spatula to finish folding.",
+      "Scoop the batter into the tube pan and spread to even layer. Bake until the cake is springs back when pressed or a toothpick inserted in the center comes out clean, about 35 minutes.",
+      "Remove the pan from the oven and immediately invert the pan over a cooling rack. Leave the pan inverted until the cake is completely cool.",
+      "Run a small spatula or paring knife around the sides of the cake to loosen and release the cake from the pan.",
+      "The cake will keep, well-wrapped, at room temperature for several days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "¾ cup plus 2 tbsp, see note",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, divided",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21ce9d821a7938f114632827297ee357c2eed4896fd62c8488f6876ec5deae75",
+    "lineage_hash": "a42a83549fabee61d0b2635b29f20a79da7f754c2dbe4fa5f35ebeee15be4dde"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/05/30/chocolate-angel-food-cake/",
+    "fetchedAt": "2026-08-02T03:30:57.397Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/05/30/chocolate-angel-food-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

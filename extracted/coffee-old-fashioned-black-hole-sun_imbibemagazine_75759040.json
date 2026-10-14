@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Coffee Old Fashioned",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Lemon Wheel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build all ingredients in mixing glass. Stir with ice until chilled. Strain into old fashioned glass and garnish with lemon wheel floating in cocktail."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Bitters",
+        "unit": "dash",
+        "notes": "liberal",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c08fd6831aa7af93df3e2c4266ee1b92d1334983865682bf933327b8e30840c",
+    "lineage_hash": "dbb4ff16727d7f04cdbb45eb15d3d6b0acacaf6a729e19153dd331ba6cbabd77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-hole-sun-cocktail/",
+    "fetchedAt": "2026-08-03T17:58:10.356Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-hole-sun-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Ching Po Leung Cantonese Herb Pork Bone Soup",
+    "time": "5 hr",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the pork bones in cold water for an hour. Rinse thoroughly and drain. The soaking process helps to get rid of any impurities or blood, to keep the soup clear.",
+      "In a large stock pot, add the pork bones, and fill with enough cold water to fully submerge the pork bones. Turn up the heat and bring to a boil. Next, turn off the heat, dump everything into a colander, and rinse the pork bones clean. Wash the soup pot as well. This process will help to get rid of any remaining impurities in the pork bones to ensure a clear soup.",
+      "Now put the pork bones back in the pot, and add the ginger, all of the dried ingredients, and three quarts of cold water. Bring everything to a boil, and then immediately turn the heat down to simmer. Let the soup simmer for 3 to 4 hours.",
+      "Before serving, skim off any fat from the surface of the soup. Salt to taste, and serve hot, along with some soy sauce on the table for dipping your pork into."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Bones",
+        "unit": "lb",
+        "notes": "try to find bones with more meat on them",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "cut ⅛-inch thick, fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Yam",
+        "unit": "g",
+        "notes": "huai shan, 淮山 or shan yao, 山药, dried",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Pearl Barley",
+        "unit": "g",
+        "notes": "da mai, 大麦 or yi mi, 薏米 or yi ren, 薏仁",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lotus Seeds",
+        "unit": "g",
+        "notes": "lian zi, 莲子, dried",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fox Nut Barley",
+        "unit": "g",
+        "notes": "qian shi, 芡实",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "g",
+        "notes": "gou ji, 枸杞, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polygonatum Odoratum",
+        "unit": "g",
+        "notes": "not sure if there’s a better English translation for this; yu zhu, 玉竹",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Longan",
+        "unit": "g",
+        "notes": "gui yuan rou, 桂圆肉, dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Dates",
+        "unit": null,
+        "notes": "mi zao, 蜜枣, dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Dried Seafood",
+        "unit": "large",
+        "notes": "such as dried squid, dried abalone, and/or dried scallop, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "qt",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "28e6bae5a75e22d78e5d55d350ac19903924d2585f6c353916eb6e06dfa6af4e",
+    "lineage_hash": "8fcf99da09f31729058657f4cc74e2996764cfc5c9a8544e68b5f4649063c0d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/ching-po-leung-soup/",
+    "fetchedAt": "2026-08-01T22:27:12.067Z"
+  },
+  "rawSource": "https://thewoksoflife.com/ching-po-leung-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

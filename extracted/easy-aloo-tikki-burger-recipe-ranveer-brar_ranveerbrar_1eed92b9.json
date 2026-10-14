@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Aloo Tikki Burger",
+    "time": "55 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel the potatoes and grate the potatoes with big holed side of the grater.",
+      "Heat oil in a pan. Add green peas and saute for a minute.",
+      "Add grated potatoes, poha and season with salt and mix well.",
+      "Add all the powdered spices and mix well. Mash everything and turn off the flame.",
+      "Let the mixture cool a bit. Divide the mixture and make patties according to the size of the bun.",
+      "Cover with foil or cling film and freeze for an hour.",
+      "For batter combine refined flour, corn flour, salt and mix. Add sufficient water and make a thick batter.",
+      "Take the patties out of the freezer. Dip them batter and coat with bread crumbs.",
+      "Repeat with all the patties.",
+      "Now heat oil for frying (can deep fry or shallow fry). Fry the patties on medium flame till nice golden brown in colour.",
+      "Now for assembling, cut through the burger buns horizontally.",
+      "On one half of the bun, apply mayonnaise. Place some onion and tomato.",
+      "Now place the patty and close with other half of the bun."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sized Potatoes",
+        "unit": "medium",
+        "notes": "boiled & chilled for 2hrs",
+        "amount": "3",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Poha",
+        "unit": "C",
+        "notes": "washed & drained",
+        "amount": "¾",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "cooked",
+        "amount": "¼",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Nos. Burger Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Onion",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Tomato",
+        "unit": "small",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Assembling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "227f211a3668cd7e9f5491b8a0f81101843a085c64a35467d76e986b9ca0b755",
+    "lineage_hash": "e9392ffb7e3090f97aa7568c0de18a941ff5477ed2d27e9fd51ecbc7e594a8d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-tikki-burger/",
+    "fetchedAt": "2026-08-02T06:58:52.292Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-tikki-burger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

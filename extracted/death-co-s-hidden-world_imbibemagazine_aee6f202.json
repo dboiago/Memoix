@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Hidden World",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to an ice-filled shaker, then shake until combined. Strain the cocktail over one large ice cube in a double Old Fashioned glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": "D&C uses Del Maguey Santo Domingo Albarradas",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquavit",
+        "unit": "oz",
+        "notes": "D&C uses Krogstad",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Puree",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saline Solution",
+        "unit": "dash",
+        "notes": "1:5",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90d621b5553bdc51e0641de3f5410748b64cb228ede824f400b9b54b654afd91",
+    "lineage_hash": "c70392a6f3f6ab3f5e8d434911ef9567ad74fcd814d9fee99e8be90dc75d4862"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/death-and-co-hidden-world-cocktail/",
+    "fetchedAt": "2026-08-03T20:06:26.747Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/death-and-co-hidden-world-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

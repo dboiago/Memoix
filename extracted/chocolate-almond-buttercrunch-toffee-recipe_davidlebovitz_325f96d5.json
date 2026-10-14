@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Chocolate Almond Buttercrunch Toffee",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Form half the nuts into a rectangle about 8″ x 10″ (20 x 25 cm) on an ungreased baking sheet.",
+      "In a medium, heavy-duty saucepan fitted with a candy thermometer, heat the water, butter, salt, and white and brown sugars. Cook, stirring gently if necessary, until the thermometer reads 300ºF (150ºC) degrees. Have the vanilla and baking soda handy.",
+      "Immediately remove from heat and stir in the baking soda and vanilla.",
+      "Quickly pour the mixture over the nuts on the baking sheet. Using a small offset spatula, or similar utensil, spread the warm mixture over the nuts. (If you want to sprinkle some cocoa nibs or some flaky sea salt over the buttercrunch mixture, do it at this point.)",
+      "Strew the chocolate chips or pieces over the top and let stand 2 minutes, then spread the chocolate in an even layer.",
+      "Sprinkle the remaining nuts over the chocolate and gently press them in with your hands.",
+      "Cool completely and break into pieces to serve. Store in an airtight container, for up to ten days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toasted Almonds",
+        "unit": "C",
+        "notes": "alt: hazelnuts, 8 ounces, 225 g, chopped between 'fine' and 'coarse'",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted",
+        "unit": "C",
+        "notes": "alt: unsalted butter, cut into pieces",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "45g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 140g, chopped, or 1 cup chocolate chips",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Optional",
+        "unit": null,
+        "notes": "Roasted cocoa nibs and fleur de sel or flaky sea salt",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "510d3ac0047100360c02280a6d92ba1bfe0b0d3e68d8cdb327ea1ba9de12713f",
+    "lineage_hash": "908a8646ea99302a37cdb8a32193fa4ec1d7bd25e8ebfecced77de0c66bcfc9c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolatealmond/",
+    "fetchedAt": "2026-08-02T21:19:33.520Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolatealmond/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

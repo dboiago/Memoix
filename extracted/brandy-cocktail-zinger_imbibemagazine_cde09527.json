@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Zinger",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the brandy, lemon juice, and ginger syrup in a shaker, then strain into an Old Fashioned glass over a large ice cube.",
+      "Ginger SyrupBlend 1 oz. of fresh ginger juice with 1/2 oz. of white cane sugar in a blender until sugar is dissolved. Once dissolved, add a squeeze of fresh honey and blend again."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6f270d4de2cc8ad4d167485f61e94763baf17f6aabb22f317d8bd66e806051e1",
+    "lineage_hash": "502794929901dccefc7561056197739847fa86ff7a1ed91a09ec66eb0df0c4d9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brandy-cocktail-zinger/",
+    "fetchedAt": "2026-08-03T23:40:13.561Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brandy-cocktail-zinger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

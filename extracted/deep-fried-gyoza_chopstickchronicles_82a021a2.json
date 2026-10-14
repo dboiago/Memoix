@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Deep Fried Gyoza",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": "11",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Clean, peel, and devein the prawns.",
+      "Boil water in a small saucepan and cook prawns for a few minutes or until it curls up and changes colour.",
+      "Drain the cooking water and cool the prawns down.",
+      "Chop the prawns and set aside.",
+      "Cut the avocado in half, score the avocado meat and scoop out with a spoon.",
+      "Place the prawn and avocado in a medium bowl and mush them together.",
+      "Season with a pinch of salt and pepper and lemon juice.",
+      "Place a gyoza wrapper on a chopping board or cooking surface and place about 1 tbsp of avocado and prawn filling on the centre of the wrapper.",
+      "Wet the half of the gyoza wrapper edge with a little bit of water on your finger tip.",
+      "Fold the wrapper in half and seal the edge with a fork.",
+      "Pour enough vegetable oil in a deep-frying pan (if you have) or in a fry pan.",
+      "Heat the oil to about 180  celsius degree (356 F).",
+      "Deep fry the wrapped gyoza a few at a time.",
+      "When the gyoza is golden brown, drain the excess oil off and place it on a wire rack lined with a paper towel.",
+      "Serve with cut lemon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Prawn",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Avocado and Prawn filling",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Avocado and Prawn filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Avocado and Prawn filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Avocado and Prawn filling",
+        "isOptional": false
+      },
+      {
+        "name": "Gyoza Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": "Gyoza wrappers",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Gyoza wrappers",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72e16f4e51112ea8aad4f99a06d902950652daef7943adbd5e2dad447f6951c3",
+    "lineage_hash": "24bd2aaad33799351d2b53ac1ebe30057e904554502be5a98c519cd9fb145711"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/avocado-shrimp-deep-fried-gyoza/",
+    "fetchedAt": "2026-08-01T20:20:49.500Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/avocado-shrimp-deep-fried-gyoza/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

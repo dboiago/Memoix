@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Après Ski, An Old Fashioned Variation",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, strain into a rocks glass over a single large ice cube, then garnish.",
+      "Pecan-Infused Bourbon: In a small skillet over medium heat, toast 150 grams of pecans until lightly golden, about 5 minutes. Combine the nuts with one 750 ml. bottle of bourbon (McLuen uses Buffalo Trace) in a sealable, non- reactive container, such as a glass jar. Store in a dark, cool place for 1 week, then strain through a fine mesh strainer or cheesecloth. If any particles remain, strain again through a coffee filter. The infused bourbon will keep at room temperature for 1 month. To make the infusion by sous vide, set the temperature on the immersion circulator to 145 degrees F. Combine the toasted pecans and bourbon in a sealable, heatproof bag and place in the water bath for 2 hours. Transfer the bag to an ice bath and cool to room temperature, then strain and bottle for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pecan-infused Bourbon",
+        "unit": "oz",
+        "notes": "McLuen uses Buffalo Trace",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Nonino",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blended Scotch Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Demerara Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83028d366f9da8d4a0c9901a350beebd287174ab66597dd8bd4dea81af4bb371",
+    "lineage_hash": "c9b3b3ba569c4ac300aa2da49cbe3d9c3515ec2cad70e8d8d7f5835ce85288c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apres-ski-an-old-fashioned-variation/",
+    "fetchedAt": "2026-08-04T00:08:55.331Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apres-ski-an-old-fashioned-variation/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

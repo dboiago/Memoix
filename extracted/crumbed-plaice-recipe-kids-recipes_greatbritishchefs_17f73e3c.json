@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Crumbed Plaice",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan, cover the potatoes in cold water, add a little salt and then bring to the boil. Cover and cook until the potatoes are soft, drain in a colander",
+      "Mash the potatoes until smooth, using a sieve or potato masher",
+      "In a separate pan, heat the milk and butter together. Once the butter has melted, add the parsley leaves",
+      "Transfer the milk, butter and parsley into a blender and blitz for a couple of minutes. Add to the mash and mix through until the mash is a vibrant green colour",
+      "Cover with cling film and keep in a warm place until ready to reheat and serve",
+      "Prepare 3 separate bowls for crumbing. Place the seasoned flour into the first bowl, the egg wash into the next, add the breadcrumbs to the third",
+      "Dip a plaice fillet into the flour, pat off the excess. Dip into the egg wash and then finally into the breadcrumbs until evenly coated. Place the crumbed fish on a tray and repeat the process for each fillet",
+      "Place a frying pan over a medium heat. Add the oil, followed by a knob of butter. Fry the fillets until lightly coloured on both sides, seasoning as you go.  Do not overcrowd the frying pan",
+      "Remove and place onto a metal tray, lightly season again and cook in the preheated oven for 4-5 minutes. Serve immediately with the reheated green mash"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plaice Fillets",
+        "unit": null,
+        "notes": "skinned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "seasoned",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fine",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01a600842fe23af5bf2fa3d016fe22010d8ff64d7740ccaf81123953ecd1921c",
+    "lineage_hash": "8a4dd9d0ac0a3c124761ec9a9b3970be500d17329f11c92338c9260ce430c72c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crumbed-plaice-recipe-green-mash",
+    "fetchedAt": "2026-08-03T19:50:12.196Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crumbed-plaice-recipe-green-mash",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

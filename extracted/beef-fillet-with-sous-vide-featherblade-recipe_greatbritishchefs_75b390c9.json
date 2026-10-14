@@ -1,0 +1,303 @@
+{
+  "recipe": {
+    "name": "Beef Fillet With Sous Vide Featherblade",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Marinate the featherblade in the red wine, port, vegetables, bay leaves and peppercorns for 5 days",
+      "After 5 days take out the featherblade and dry. Season with salt and pepper and quickly brown all over in a frying pan with a dash of oil",
+      "Drain the marinade through a sieve and pour the liquid into a saucepan. Add the vinegar and bring to the boil. Place the featherblade with some of the marinade into a vac pack and place into a water bath for 60 hours at 60°C",
+      "Boil the rest of the marinade until reduced by half then add the veal stock and reduce by a third",
+      "To make the bone marrow dumplings, melt the bone marrow in a pan, then cool. Whisk in the egg yolks and parsley. Season with salt, pepper and nutmeg then add the breadcrumbs",
+      "Bring the chicken stock up to the boil, then reduce to a simmer. Roll the bone marrow mixture into balls and poach in the chicken stock for 5 minutes",
+      "For the watercress purée, bring a saucepan of salted water up to a boil, then add the watercress and cover the pan with a lid. When the watercress is cooked, drain it well, then refresh under cold water.",
+      "Blend the watercress in a food processor with two tablespoons of water. Scrape a spatula down the insides of the food processor then blend again until the mixture forms a smooth purée. Season, to taste, with salt and freshly ground black pepper",
+      "To make the red wine jus, heat a saucepan over a low heat. Squash the garlic cloves and drop them into the pan along with the wine and the rosemary. Allow to simmer over a medium heat until the liquid has reduced by half",
+      "Give it a swirl around the pan every 10 minutes to combine. Once reduced, pour in the chicken stock along with the reduced marinating liquor. Reduce by half again. Strain through a fine sieve",
+      "Heat a frying pan and add a little oil. Season the tournedos and seal in the hot oil then add the 150g of butter and fry until cooked to your liking",
+      "Gently blanch the onions and carrots in boiling salted water until tender, then transfer to a pan of foaming hot butter. Toss for a few minutes and set aside until needed",
+      "To plate, spoon a generous helping of watercress purée onto the plate, and position the meat on top. Stack the carrots on top of one piece of meat, and position the onions and dumplings to the side. Spoon over a generous helping of the jus and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Feather Blade of Beef",
+        "unit": null,
+        "notes": "weighing 600g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tournedos of Aberdeen Angus Beef",
+        "unit": null,
+        "notes": "each weighing 90g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bone Marrow",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Baby Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3890c36b3ce1b62d79a898e708a88ca43f824b915cf0884d8d0935d0369f518",
+    "lineage_hash": "c4dcdd3d83bfcdfc1cad1fa0e5142d9224736e05135a8d4a651e90ae552c23a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/scottish-beef-fillet-recipe-slow-cooked-shoulder",
+    "fetchedAt": "2026-08-03T20:12:11.740Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/scottish-beef-fillet-recipe-slow-cooked-shoulder",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

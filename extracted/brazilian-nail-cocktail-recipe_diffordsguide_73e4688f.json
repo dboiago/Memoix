@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Brazilian Nail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Lime Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "205",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of lime zest twist.",
+      "STIR all ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "Express lime zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Herbal Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5f3d199a54a2d68211c388fe765e4562b5d65826e5bfa99f190582eed5789c8",
+    "lineage_hash": "7cecc4b0bbfdb41376f4e4a5a22d88b0cae9570f34f50debf7881b99c901b665"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2783/brazilian-nail",
+    "fetchedAt": "2026-08-03T07:28:16.006Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2783/brazilian-nail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

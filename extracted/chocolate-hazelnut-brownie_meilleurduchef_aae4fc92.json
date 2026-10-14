@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chocolate & Hazelnut Brownie",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate and Hazelnut Brownie recipe, organise the necessary ingredients.",
+      "Crush the hazelnuts with a knife.",
+      "Place the dark chocolate in a bowl and heat over a bain-marie, while stirring with a rubber spatula...",
+      "... until the chocolate has completely melted.",
+      "Add the butter cut into cubes...",
+      "... and combine carefully with the rubber spatula...",
+      "... until the butter is incorporated...",
+      "... and the preparation is smooth and homogeneous.",
+      "Place the egg yolks and 10 grams of sugar into the stand mixer recipient. Blanch with the whisk.",
+      "Pour the egg whites and 10 grams of sugar in a separate recipient.",
+      "Beat the egg whites until stiff. The meringue is ready.",
+      "Pour the melted chocolate and butter over the blanched egg yolks...",
+      "... and combine carefully with a rubber spatula until incorporated.",
+      "Add the meringue to the chocolate preparation...",
+      "... and combine gently with a rubber spatula...",
+      "... until homogeneous.",
+      "Sift the flour over the preparation...",
+      "... and combine again.",
+      "The result should look like this.",
+      "Place a square cake frame 16 x 16cm over a Silpat baking mat. Pour the brownie preparation in the frame...",
+      "... and spread with a small cranked spatula to create a regular thickness.",
+      "Sprinkle the chopped hazelnuts over the surface.",
+      "Bake in a fan-assisted oven at 160°C (gas 3) between 20 and 25 minutes.",
+      "When the brownie is cooked, remove from the oven...",
+      "... and leave to cool at room temperature.",
+      "Release the brownie from the frame and cut into squares.",
+      "The brownie is now ready to serve. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Inaya™dark Chocolate Couverture",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "10 + 10",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a80118f63c1113af70e31fff8806981c79ecac02562d6f90e5edb4bcde02c25e",
+    "lineage_hash": "2fae4e452ff39cac7ce8191d57304425c631177a213ba854585e85fc585b761d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-hazelnut-brownie.html",
+    "fetchedAt": "2026-08-02T01:53:15.760Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-hazelnut-brownie.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

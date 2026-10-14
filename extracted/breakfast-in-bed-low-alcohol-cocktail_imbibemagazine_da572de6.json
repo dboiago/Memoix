@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Breakfast in Bed Low-Alcohol Cocktail",
+    "time": null,
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Double Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to a shaker with ice and shake well. Strain into a double rocks glass filled with crushed ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carpano Antica Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brancamenta",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Orange Marmalade",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7d4293901c6198b8b8bb2bfc566c7af8c9bcf2a63abf27078a29cc918f55520",
+    "lineage_hash": "37a1d6809664536ffadc27061541758aaca107b224b82d0d0b5c053df4a576fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-in-bed-low-alcohol-cocktail/",
+    "fetchedAt": "2026-08-03T20:20:41.166Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-in-bed-low-alcohol-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

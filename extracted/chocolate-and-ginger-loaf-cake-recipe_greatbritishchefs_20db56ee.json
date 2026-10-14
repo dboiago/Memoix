@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Chocolate and Ginger Loaf Cake",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cardamom, ginger, raisins, sugar and zest to a large bowl and pour in the hot Assam tea. Cover the bowl with a cloth and leave overnight to soak",
+      "When ready to start baking, preheat the oven to 160°C/gas mark 3. Line the loaf tin with baking parchment and set aside",
+      "Add the egg to the mix, stir to combine then gradually mix in the flour until smooth and incorporated. Stir in the chocolate chunks then pour the mixture into the lined loaf tin. Bake in the oven for an hour and a half, until a metal skewer inserted into the cake comes out clean",
+      "Remove from the oven and leave the cake to cool in the tin. When cool, carefully remove from the tin and wrap in parchment paper, followed by a clean tea towel. Leave the bundle for 24 hours before unwrapping and eating - this will allow the cake to develop a deeper, more rounded flavour",
+      "Slice the loaf and serve with butter and a cup of hot chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crystallised Stem Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Assam Tea",
+        "unit": "ml",
+        "notes": "strong",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped into generous chunks",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d8eec86467511c897eef00ef5be18844c73a605e0d83ef3902eea70f0775706",
+    "lineage_hash": "7008e49b7d17cb0201ecb325f1c5a8e1e2e4842e0bdf9a1aa7f27ac8cc9567d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-ginger-loaf-cake-recipe",
+    "fetchedAt": "2026-08-03T18:47:49.486Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-ginger-loaf-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

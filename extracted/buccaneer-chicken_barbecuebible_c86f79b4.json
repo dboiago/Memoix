@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Buccaneer Chicken",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Generously season the chickens on both sides with salt and pepper.",
+      "Make the marinade: Place the garlic, chives, chiles, onions, thyme, and allspice in a large bowl and stir to mix. Arrange half this mixture over the bottom of a baking dish just large enough to hold the chicken. Arrange the birds on top and top with the remaining garlic-chive-onion mixture. Pour the lime juice, rum, and vegetable oil over the chicken. (Alternatively, marinate the birds in a large resealable plastic bag.) Marinate, covered, in the refrigerator for 8 to 12 hours, turning the birds a couple times so they marinate evenly.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 275 degrees F. If using a charcoal-fired smoker, place 1 sugar cane section on the coals. Arrange the remaining sugar cane sticks on the grate in parallel rows (3 rows). You’ll smoke the chicken on top of them.",
+      "Remove the chickens from the marinade and drain well. Arrange them on the sugar cane sticks on your smoker. Strain the marinade into a saucepan and boil for 3 minutes.",
+      "Smoke-roast the hens until bronzed with smoke on the outside and cooked through (to an internal temperature of 165 to 170 degrees F). This will take about 2 hours. Start basting the hens with the boiled marinade after 30 minutes; continue basting every 10 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chickens",
+        "unit": null,
+        "notes": "alt: 4 Cornish game hens, spatchcocked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "Tbsp",
+        "notes": "kosher or sea",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked",
+        "unit": "Tbsp",
+        "notes": "alt: freshly ground black peppercorns",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ce2e9876873363b75f6f9ea41d3dc6d0473285d00dfdae5259dc9d28653c2ed",
+    "lineage_hash": "89f7ea953c6d9aaa17aab30bcba2c8a9d6cf0a8e3bc0d37a6b699ba43df9b2f5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/buccaneer-chicken/",
+    "fetchedAt": "2026-08-03T07:24:17.707Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/buccaneer-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

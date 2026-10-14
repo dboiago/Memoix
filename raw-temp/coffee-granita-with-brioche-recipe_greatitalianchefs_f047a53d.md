@@ -1,0 +1,5 @@
+A Sicilian institution, particularly when temperatures begin to rise, granita is a special sort of slush made with just water sugar and, often, fruit. An exception is granita al caffé, which consists of nothing more than frozen coffee and sugar.
+
+Often consumed for breakfast alongside a warm brioche (or brioscia) col tuppo (the traditional bun with a knot at the top), granita al caffé is at home in the town of Messina. There, it’s often served topped with fresh whipped cream, a combination that locals refer to as “mezza con panna”.
+
+Below are the recipes to reproduce this quintessentially Sicilian breakfast at home. The process to make the buns is a bit lengthy, but it’s definitely worth the hassle. As for the granita, just remember to scrape it with a fork every so often. Other than that, it’s rather hassle-free.

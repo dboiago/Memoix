@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Pork and Cabbage Potstickers",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "401",
+      "carbohydrateContent": "46",
+      "fatContent": "17",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Put the napa cabbage, ground pork and leeks/scallions into a food processor and pulse until very finely chopped. Transfer to a mixing bowl. Reserve about a tablespoon of egg for folding the pot stickers, and add the rest to the bowl. Add the sesame oil, soy sauce, salt, sugar, and white pepper. Stir until very well combined.",
+      "Take about 2-3 teaspoons of filling and place in the middle of each dumpling skin. Fold in half and use the egg to seal the top. Leave the sides open.",
+      "Add 2 tablespoons of oil to a non-stick or cast iron pan over medium heat. Place the dumplings in the pan. Once they begin to sizzle, add a quarter cup of water to the pan and cover immediately. Allow the dumplings to cook until the water has evaporated, about 3 minutes. Keep an eye on the pan to make sure nothing is burning, and add a little more water to the pan if necessary. Next, remove the cover and let them cook uncovered until all the water has evaporated to also let the bottoms get crispy (another 1 to 2 minutes). It's an essential step or these will really become potstickers and stick to the pan!",
+      "Use a spatula and flip the potstickers upside down onto a plate. Serve with our favorite easy-to-make dumpling sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Napa Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "225g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": "C",
+        "notes": "alt: scallions",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Round Egg Dumpling Skins",
+        "unit": "pkg",
+        "notes": "look for the ones that are yellow, rather than white",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b380ac8e199b1b13089162b88ec0f60dafa36be93eb071eb71f8954eb201496",
+    "lineage_hash": "ff039aebbd5d4b408784b71d5381c1d0a20b3513dec40bb5e0fc084d58ec57c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/easiest-pork-and-cabbage-potstickers-ever/",
+    "fetchedAt": "2026-08-02T18:18:34.052Z"
+  },
+  "rawSource": "https://thewoksoflife.com/easiest-pork-and-cabbage-potstickers-ever/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

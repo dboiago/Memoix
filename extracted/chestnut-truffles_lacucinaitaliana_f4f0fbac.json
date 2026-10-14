@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Chestnut Truffles",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop the chocolate, then melt it in a double boiler. Puree the chestnuts and mix them with the melted chocolate in a bowl; cover the bowl with plastic wrap and put it in the refrigerator for about 20 minutes. Use your hands to form balls about half an ounce each: you will get about 30 small truffles.",
+      "Roll the truffles in unsweetened cocoa powder and serve. You can also store them in the refrigerator for a few days after having put them in small paper cups and sealing them in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiled Chestnuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ef7241bccd9296243ecbeec298d6e4bf8b130a6f03db47e73b99d165a9589c3",
+    "lineage_hash": "0e19066d7ce42b2d6792d5fc7c4a813bf3139f4ef056df63609b43e82e59a986"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chestnut-truffles",
+    "fetchedAt": "2026-08-02T20:33:42.076Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chestnut-truffles",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

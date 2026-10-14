@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Courgette Bhaji",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and coarsely grate 4 of the courgettes, reserving the peelings. Toss the grated courgette flesh with the salt and set aside",
+      "Add the rapeseed oil and butter to a frying pan over a high heat, then add the courgette peelings. Sauté, covered, until the peelings are tender (about 5 minutes). Transfer to a blender and blitz until smooth, then season and set aside",
+      "Preheat an oven to 180°C/gas mark 4. Slice the remaining whole courgette into thick rounds, season, then place in a single layer on a baking tray. Brush with chilli oil, then roast until soft and just beginning to char",
+      "Meanwhile, squeeze the grated courgette mixture to remove as much liquid as possible, then mix with the gram flour, garlic powder, onion powder, cumin and sparkling water to create a batter. Pour the sunflower oil into a large saucepan and heat to 175°C",
+      "Working in batches, use a tablespoon to scoop a spoonful of the courgette mixture into the hot oil and fry for a minute or so each side until golden brown. Drain on kitchen paper as you go",
+      "To serve, mix the mint leaves into the thick yoghurt. Place a spoonful of the courgette purée in the base of a bowl. Top with a slice of roasted courgette, then add a small spoonful of yoghurt. Place a bhaji (or several) above it. Dress with another drizzle of chilli oil, then garnish with nasturtium flowers and leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "medium",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": "plus extra for seasoning",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "L",
+        "notes": "for deep-frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Oil",
+        "unit": null,
+        "notes": "for brushing and drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nasturtium Leaves",
+        "unit": null,
+        "notes": "and flowers, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9b58f0c89f539fdebfc21a9ff6c9aff18e97e43628277f9d6cae3ee2bac013b",
+    "lineage_hash": "f9df1565a23c27c3af05eb85ef37ff1181afb0537b94a8c54a7ecf0b8b4f8161"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-bhaji-recipe",
+    "fetchedAt": "2026-08-03T04:27:14.489Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-bhaji-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

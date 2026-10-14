@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Buckwheat and Banana Gluten Free Pancake",
+    "time": "30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together the buckwheat flour, ground cinnamon and baking powder",
+      "Add the egg, milk and passion fruit to make a batter and then add the chopped banana pieces to the batter",
+      "Add a couple of teaspoons of oil to a non-stick pan and once the oil is hot, place a couple of tablespoons of batter onto the pan and cook them for 3-4 minutes on each side until they are lightly golden",
+      "Serve the pancakes with more passion fruit and a little maple syrup, if you wish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buckwheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "gluten free if necessary",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "very ripe, chopped into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruits",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3efad56fb6d9839bf58deba7c7d31ba27b08260606c6d90d9af27c794b08186",
+    "lineage_hash": "2a21802789c6bbd6c740c3795a6dea9920ce00c96b06fac33eb14c4a3b4512dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buckwheat-banana-passion-fruit-pancake-recipe",
+    "fetchedAt": "2026-08-03T22:55:41.668Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buckwheat-banana-passion-fruit-pancake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Cold Smoked Salmon",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Run your fingers over the flesh side of the salmon fillets, feeling for the sharp ends of pin bones. Pull out any you find with fish tweezers or needle nose pliers.",
+      "Make the cure: Combine the salt and brown sugar in a mixing bowl and mix with your fingers.",
+      "Cover the dish with plastic wrap and cure the fish in the coolest part of your refrigerator for 24 to 48 hours.",
+      "Gently rinse the cure off the salmon under cold running water. Place the salmon in a large bowl with cold water to cover by 3 inches. Soak for 30 minutes, then drain well in a colander.",
+      "Blot the salmon dry on both sides with paper towels. Arrange it skin side down on a wire rack over a sheet pan. Let the salmon dry, uncovered, in the refrigerator until it feels tacky, about 4 hours.",
+      "Set up your smoker for cold smoking following the manufacturer’s instructions. Ideally, you’ll be using a smoke generator, like the Smoke Daddy or Smoke Chief, to generate the smoke.",
+      "If you’re smoking the salmon on a warm day (temperature above 70 degrees), arrange the fish on a wire rack over a roasting pan filled with ice. (The fish should be at least 1 inch above the ice.)",
+      "Cold smoke the salmon until the exterior is bronzed with smoke and the salmon feels semi-firm and leathery, 12 hours or more. How will you know it’s ready? Cut a slice from next to the skin at the fat end.",
+      "Wrap the salmon in uncoated butcher paper and let it rest in the refrigerator for at least 4 hours before serving or as long as overnight.",
+      "To serve, using a long, slender and very sharp knife held sharply on the diagonal to the fish, cut the salmon into paper-thin slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salmon Fillet",
+        "unit": "lb",
+        "notes": "preferably from the head end, fresh",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "C",
+        "notes": "alt: kosher salt",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ea130a3b5332b5d69afd21be577a4c7a8005235b771328178fa743cd326371e",
+    "lineage_hash": "aa0b2d9e98a781c90e78a1704194a26622bdfe80020189fe5574a46384e89bfc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cold-smoked-salmon/",
+    "fetchedAt": "2026-08-03T07:09:41.551Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cold-smoked-salmon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

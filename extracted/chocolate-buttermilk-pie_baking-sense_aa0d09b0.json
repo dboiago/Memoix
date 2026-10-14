@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chocolate Buttermilk Pie",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "280",
+      "carbohydrateContent": "46",
+      "fatContent": "10",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Roll 1/2 recipe Perfect Pie Crust and line a 9\" pie plate. Save the dough trimmings. Chill the dough while you preheat the oven to 350°F.",
+      "Line the unbaked crust with foil and fill with beans, pie weights or granulated sugar. Bake on the bottom rack of the oven until the crust is light blond color and there's no raw dough on the bottom, about 20 minutes. When you remove the pie from the oven, place a sheet pan on the bottom rack to preheat.",
+      "Remove the foil with the pie weights. If any cracks or gaps have formed in the crust, use the dough trimming to fill in those gaps. This will prevent the custard from leaking out as the pie bakes.",
+      "In a small microwave proof bowl, melt 1 oz semi sweet chocolate with 1 oz unsalted butter. Set aside.",
+      "Whisk together 8 oz granulated sugar, 1 1/2 oz cornstarch, 1 oz dutch process cocoa powder and 1/4 teaspoon table salt. Add 2 each eggs and 2 each egg yolks and whisk until smooth. Whisk in 16 oz buttermilk and 2 teaspoons vanilla extract. Then whisk in the melted chocolate/butter.",
+      "Pour the custard into the crust. Bake on the preheated sheet pan until the custard is set, about 40 minutes.",
+      "Enjoy slightly warm, room temperature or chilled. Any leftovers should be refrigerated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Eggs",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Egg Yolks",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "2 cups, preferably full fat",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f67509cd53fe3f49bc36352235346bc4c3c538b437dca3f572d53517ea721bb0",
+    "lineage_hash": "764beb54422a403fcfff25c06987631bc08e9484004f718ef71567a3f0b4e667"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/05/19/chocolate-buttermilk-pie/",
+    "fetchedAt": "2026-08-02T05:05:34.515Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/05/19/chocolate-buttermilk-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

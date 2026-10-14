@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Bourbon Chicken",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "409",
+      "carbohydrateContent": "32.4",
+      "fatContent": "16.1",
+      "proteinContent": "34"
+    },
+    "directions": [
+      "Combine chicken, soy sauce, and cornstarch in a medium-sized bowl. Gently mix by hand until the chicken is coated with a thin layer of the mixture. Marinate for 10 to 15 minutes.",
+      "Combine all the sauce ingredients in a small bowl. Mix well and set aside.",
+      "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Add the chicken. Immediately spread the chicken into a single layer using a spatula, with as little overlap as possible. Sear for 30 seconds or so, until the bottom is lightly browned. Flip the chicken. Cook for 15 to 20 seconds. Stir occasionally, until both sides are browned but still a bit pink inside. Transfer the chicken to a plate and set aside.",
+      "Add the remaining 1 tablespoon of oil to the skillet. Add the onion, ginger and garlic. Cook and stir until the onion starts to soften, 1 to 2 minutes.",
+      "Stir the sauce mixture until the cornstarch is dissolved completely, and pour it into the skillet. Stir with a spatula immediately and cook until the sauce thickens enough to coat the back of a spoon, a few seconds. Add back the cooked chicken and the scallion greens. Quickly stir a few times to coat everything with the sauce. Pour in the Bourbon whisky and mix again. Turn off heat and remove the skillet from the stove. Immediately transfer everything to a big plate so the ingredients won’t keep cooking in the hot skillet. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh",
+        "unit": "lb",
+        "notes": "or breast, boneless, skinless, cut to 1” (2 cm) pieces",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "for garnish, sliced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d93e1acaf00d66576be787e48cd519dfed8ca1a278bcc67985df3967f79e0b5",
+    "lineage_hash": "34135b4aa305a5b252e6712a3f9826421997bb0b4e45777e37183525af370cc3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bourbon-chicken/",
+    "fetchedAt": "2026-08-02T09:49:05.483Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bourbon-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

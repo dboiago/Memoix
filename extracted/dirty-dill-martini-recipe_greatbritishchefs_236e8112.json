@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Dirty Dill Martini",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Martini",
+    "garnish": [
+      "Dill Pickle and Olives on a Toothpick or Small Skewer"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before, mix the gin and fennel seeds together and seal. Leave at room temperature overnight to infuse, then strain through a fine sieve. You’ll only need 120ml for these two drinks, but the gin will keep indefinitely",
+      "Add the 120ml gin, vermouth, pickle brine and bitters to a cocktail shaker filled with ice. Stir or shake for 30 seconds until ice-cold, then strain into a martini glass",
+      "Prepare the garnish by putting the dill pickle and olives on a toothpick or small skewer, then run a blowtorch over them until they blister and char",
+      "Finish your martini with the skewer and a light drizzle of olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Dill Pickle",
+        "unit": null,
+        "notes": "plus 30ml of its brine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to drizzle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c285747a2bae3f1b68086f3740d05c12cf0d67ed7b575a23b2c3fbc1b547d42",
+    "lineage_hash": "c93e162d1493d5b429ccd1c505e5d57ccedd7f50c57a3afda9ddbed28248a337"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dirty-martini-recipe",
+    "fetchedAt": "2026-08-01T22:35:23.672Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dirty-martini-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Cinnamon Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk, sugar, salt, cinnamon sticks, and 1 cup (250ml) of the heavy cream together in a medium saucepan. Cover, remove from heat, and let steep 1 hour.",
+      "Rewarm the mixture and remove the cinnamon sticks with a slotted spoon.",
+      "Nest a medium-sized bowl in a larger bowl that’s partially filled with ice water, to create an ice bath. Set a mesh strainer over the medium bowl and pour the remaining cream into the medium bowl.",
+      "Whisk together the egg yolks in a small bowl and gradually add some of the warm cinnamon-infused milk to the yolks, whisking constantly. Scrape the warmed yolks back into the saucepan and cook over medium heat, stirring constantly and scraping the bottom with a heatproof spatula, until the custard thickens and coats the spatula.",
+      "Remove from heat and immediately pour the custard through the strainer into the cream. Stir the custard until cool, then chill thoroughly in the refrigerator, preferably overnight.",
+      "Taste the mixture before churning, and add a bit of ground cinnamon, if desired, then freeze the custard in your ice cream maker according to the manufacturer’s instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": "in a mortar & pestle, or with a hammer in a ziptop bag, broken up",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon: Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0954a9cc446987e7207c7369e1d1fa1035c4cdb648b5cd4c487df45548af445c",
+    "lineage_hash": "f5e37463f40338387268bbc29a1eee8d6c915124c796e8a38ea795812184c73b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cinnamon-ice-cream-recipe/",
+    "fetchedAt": "2026-08-02T22:55:23.484Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cinnamon-ice-cream-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

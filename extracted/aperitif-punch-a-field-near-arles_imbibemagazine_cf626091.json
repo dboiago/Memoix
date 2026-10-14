@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Aperitif Punch: A Field Near Arles",
+    "time": "45 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Garnish"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a press pot, layer the grapefruit and cucumber slices with the herbs in an alternating fashion. Add all liquid ingredients except club soda, and place the plunger on top. Let steep 4-5 minutes; press plunger, and serve in ice-filled glasses, topping each serving with an equal amount of chilled soda water, to taste. Garnish.\nPre-Infused Navy-Strength GinCombine 1 750 ml. bottle of Navy-strength gin (Bolton uses Hayman’s Royal Dock) with the zest of two lemons, the zest of one grapefruit, 1/2 of a sliced cucumber, 3 rosemary sprigs, 5 thyme sprigs and 2 Tbsp. dried lavender. Let infuse for 5 hours, then strain through a fine-mesh strainer and bottle for use. Keep refrigerated; use within 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Aperitivo Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pre-infused Navy-strength Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "slices",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprig Rosemary",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Thyme",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "097a2e13bd9d3590a8f7cb7e639380763597ae991babd97f32f26c9ce33ec761",
+    "lineage_hash": "bdb70e8dec72fc1b1b709bae827330b3e3efd8864bd496372f9e6e5b1a1a5f02"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/aperitif-punch-a-field-near-arles/",
+    "fetchedAt": "2026-08-04T00:10:38.634Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/aperitif-punch-a-field-near-arles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

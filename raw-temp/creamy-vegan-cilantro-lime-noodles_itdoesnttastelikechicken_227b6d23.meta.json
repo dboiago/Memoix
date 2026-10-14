@@ -1,0 +1,49 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-vegan-cilantro-lime-noodles/",
+  "slug": "creamy-vegan-cilantro-lime-noodles_itdoesnttastelikechicken_227b6d23",
+  "title": "Creamy Vegan Cilantro Lime Noodles",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T23:50:02.539Z",
+  "ldName": "Creamy Vegan Cilantro Lime Noodles",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Canadian, Italian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Italian, noodles",
+  "ldIngredientsRaw": [
+    "1 cup raw cashews, (soaked or boiled if not using a high-speed blender, see notes)",
+    "1 small handful cilantro ((about 1/2 cup packed_)",
+    "3/4 cup water",
+    "2 cloves garlic",
+    "1  lime (zested and juiced)",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "2 packages Tofu Shirataki Spaghetti Shaped Noodles ((or sub thin rice noodles))"
+  ],
+  "ldInstructionsRaw": [
+    "This recipe is so quick and easy! Ready? Add the cashews, cilantro, water, garlic, lime zest, lime juice, salt, and pepper to a blender and combine until smooth and creamy.",
+    "Cook the Tofu Shiritaki noodles according to directions, drain then return to the pot. Add the cilantro lime sauce to the noodles, and toss to combine. Heat for another 1-2 minutes until the sauce has thickened and everything is heated through. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "194 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup raw cashews,, soaked or boiled if not using a high-speed blender, see notes",
+    "▢ 1 small handful cilantro, (about ½ cup packed_",
+    "▢ ¾ cup water",
+    "▢ 2 cloves garlic",
+    "▢ 1 lime, zested and juiced",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "▢ 2 packages Tofu Shirataki Spaghetti Shaped Noodles, (or sub thin rice noodles)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

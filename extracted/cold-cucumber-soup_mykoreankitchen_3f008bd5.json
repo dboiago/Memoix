@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Cold Cucumber Soup (Oi Naengguk)",
+    "time": "15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "30",
+      "carbohydrateContent": "5",
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Soak the dried seaweed in some cold water until hydrated (5 to 10 mins). Drain and squeeze out the water from the seaweed. Set it aside. If your dried seaweed is not already cut into bite sized pieces, cut them now with scissors. I always buy pre-cut dried seaweed for convenience.",
+      "Combine the seaweed and the seasoning sauce in a mixing bowl. Mix them well.",
+      "Add the cucumber and water into the bowl. Stir well. Garnish with sesame seeds and red chili (optional). Serve cold. (Some people like adding ice blocks, but I don’t like adding them as it dilutes the soup and you will have to re-balance the taste later. If you use chilled water, you won’t need to balance the taste.) It can be stored in the fridge for a few days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumber (180g / 6.3 Ounces )",
+        "unit": null,
+        "notes": "Lebanese cucumber or English cucumber works well., chilled and julienned",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "g",
+        "notes": "0.17 ounces, dried",
+        "amount": "5",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "filtered & chilled",
+        "amount": "3",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt to Taste (optional, I Didn't Use It.)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili (optional)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": "MAIN",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": "or white vinegar",
+        "amount": "1.333",
+        "section": "SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "raw",
+        "amount": "1",
+        "section": "SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "regular",
+        "amount": "½",
+        "section": "SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0bdbd446d3e8c0ce8ddc4bad10c7752bd3f7b52d24f8f9b0080e569fdddd4032",
+    "lineage_hash": "e165834d15baab851a147ba26e0aa1d16590a765da727caef64c1e6578a1798e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/cold-cucumber-soup/",
+    "fetchedAt": "2026-08-01T16:12:11.567Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/cold-cucumber-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

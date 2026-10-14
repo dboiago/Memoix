@@ -1,0 +1,57 @@
+{
+  "url": "https://muybuenoblog.com/frozen-margarita/",
+  "slug": "classic-frozen-margarita-recipe_muybuenoblog_f304fb6a",
+  "title": "Classic Frozen Margarita Recipe",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T10:26:39.328Z",
+  "ldName": "Classic Frozen Margarita Recipe",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 drinks"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "margarita, tequila",
+  "ldIngredientsRaw": [
+    "4 ounces tequila (blanco or reposado)",
+    "2  limes (peeled)",
+    "2 ounces Cointreau",
+    "1 ounce agave syrup",
+    "1  lime (cut into wedges or slices)",
+    "kosher salt",
+    "3 cups ice"
+  ],
+  "ldInstructionsRaw": [
+    "Rub a wedge of lime around the rim of the glass and the dip the outside of the rim of the glass in kosher salt.",
+    "Put the peeled limes into the blender and pour in tequila, Cointreau, and agave syrup.",
+    "Top with 3 cups of ice cubes and blend until smooth and slushy. Add more agave to taste and blend again.",
+    "Pour into the salt-rimmed glass and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 g",
+    "calories": "292 kcal",
+    "carbohydrateContent": "31 g",
+    "proteinContent": "1 g",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "23 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "20 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 4 ounces tequila, blanco or reposado",
+    "▢ 2 limes, peeled",
+    "▢ 2 ounces Cointreau",
+    "▢ 1 ounce agave syrup",
+    "▢ 1 lime, cut into wedges or slices",
+    "▢ kosher salt",
+    "▢ 3 cups ice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

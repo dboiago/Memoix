@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Cashew Shrimp (腰果虾仁)",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "303",
+      "carbohydrateContent": "16.3",
+      "fatContent": "16.6",
+      "proteinContent": "23.8"
+    },
+    "directions": [
+      "Combine shrimp, Shaoxing wine, salt, and cornstarch in a medium-sized bowl. Mix well so the shrimp are evenly coated with a thin slurry.",
+      "Mix all the sauce ingredients together in a small bowl.",
+      "Add 1 tablespoon of oil in a large skillet and heat over medium-high heat until shimmering. Spread the shrimp with minimal overlap. Let cook until the bottom side is light golden, 1 minute or so. Turn to the other side and cook until light golden. Stir a few times until all surfaces turn white. Transfer to a big plate.",
+      "Pour in the remaining 1 tablespoon oil, garlic, ginger, and green onion. Stir a few times to release the fragrance.",
+      "Add the celery. Stir and cook for 1 minute. Add the pepper and cook for another minute.",
+      "Add back the cooked shrimp. Stir the sauce again to dissolve the cornstarch completely. Pour into the pan. Quickly stir a few times until the sauce thickens.",
+      "Add the cashews, quickly give it a stir and immediately transfer everything to a plate. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shrimp",
+        "unit": "lb",
+        "notes": "peeled and deveined",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Cashews",
+        "unit": "C",
+        "notes": "*Footnote 1, roasted",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": "diced on the bias into 1/2” pieces",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e45b311eb1013095f62b7d01d9f8598376c20b3d7de4154acb0195cba692cf2",
+    "lineage_hash": "42394a1c2185911cf30d4ae7a7eac9ccf2e1faec087add3cd62c1d7a50ab570e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/cashew-shrimp/",
+    "fetchedAt": "2026-08-02T07:22:17.791Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/cashew-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

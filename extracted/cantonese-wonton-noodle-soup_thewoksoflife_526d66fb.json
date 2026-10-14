@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Cantonese Wonton Noodle Soup",
+    "time": "1 hr 15 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "408",
+      "carbohydrateContent": "41",
+      "fatContent": "14",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Start by making the filling. Add the pork, 3/4 teaspoon salt, sugar, sesame oil, white pepper, wine, oil, water, and cornstarch to a bowl and whip everything together by hand for 15 minutes, or in a food processor for 5 minutes. You want the pork to look like a paste. Mix in the chopped shrimp.",
+      "To make the wontons, take a wrapper, and add only about a teaspoon of filling. Use your finger to coat the edges with water (this helps the two sides seal together), and fold in half so you have a triangle shape. Bring together the two outer corners, and press to seal. Continue assembling until you've used up the filling (this recipe should make about 3 dozen wontons).",
+      "To assemble the dish, heat up the chicken broth in a medium pot. Adjust seasoning by adding salt, to taste.",
+      "Bring a large pot of water to a boil and boil the noodles just until al dente. Divide among 6 bowls. Add the wontons and boil for about 4-5 minutes until they float and the filling is cooked through. Divide wontons among the bowls, and cover with hot broth. Serve!",
+      "If you want your soup a little more flavorful, you can also add a couple drops of sesame oil, chopped scallion, and white pepper over the top!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "225g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimp",
+        "unit": "oz",
+        "notes": "170g, chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wonton Wrappers",
+        "unit": "pkg",
+        "notes": "the square-shaped egg wonton skins",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wonton Egg Noodles",
+        "unit": "oz",
+        "notes": "340g, see photo above",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "High Quality",
+        "unit": "C",
+        "notes": "1.9 liters, low sodium chicken broth",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "052f3deb13b2d6cbbb9c6eaf00ee4f8ed5279069ed8093e5e39ffe17f952bb88",
+    "lineage_hash": "13d754c8521db9811e1015e27ce305a494c2889ab9d6cdf24ec4086a86678ecb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/cantonese-wonton-noodle-soup/",
+    "fetchedAt": "2026-08-02T02:50:48.226Z"
+  },
+  "rawSource": "https://thewoksoflife.com/cantonese-wonton-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

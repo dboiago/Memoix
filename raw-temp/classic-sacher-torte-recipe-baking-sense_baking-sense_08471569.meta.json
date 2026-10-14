@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2017/12/07/sacher-torte/",
+  "slug": "classic-sacher-torte-recipe-baking-sense_baking-sense_08471569",
+  "title": "Classic Sacher Torte Recipe - Baking Sense®",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:39:25.975Z",
+  "ldName": "Classic Sacher Torte Recipe",
+  "ldTime": "PT225M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "Austrian",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, sacher",
+  "ldIngredientsRaw": [
+    "4 ½ ounces cake flour (1 cup, see note)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon table salt",
+    "8 ounces unsalted butter (1 cup, room temperature)",
+    "8 ounces granulated sugar (1 cup, divided in half)",
+    "8  large eggs (separated, room temperature)",
+    "2 teaspoons vanilla",
+    "6 ounces semi sweet chocolate (melted)",
+    "18 ounces apricot preserves (1 ½ cups)",
+    "2 ounces dark rum (¼ cup)",
+    "8 ounces semi sweet chocolate (chopped)",
+    "4 ounces unsalted butter (½ cup)",
+    "1 ½ ounces corn syrup (2 tablespoons)"
+  ],
+  "ldInstructionsRaw": [
+    "Cake",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "470 kcal",
+    "carbohydrateContent": "52 g",
+    "proteinContent": "6 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "17 g",
+    "cholesterolContent": "129 mg",
+    "sodiumContent": "88 mg",
+    "sugarContent": "38 g",
+    "transFatContent": "1 g",
+    "fiberContent": "3 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "4 ½ ounces cake flour (1 cup, see note)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon table salt",
+    "8 ounces unsalted butter (1 cup, room temperature)",
+    "8 ounces granulated sugar (1 cup, divided in half)",
+    "8 large eggs (separated, room temperature)",
+    "2 teaspoons vanilla",
+    "6 ounces semi sweet chocolate (melted)",
+    "[Assembly]",
+    "18 ounces apricot preserves (1 ½ cups)",
+    "2 ounces dark rum (¼ cup)",
+    "8 ounces semi sweet chocolate (chopped)",
+    "4 ounces unsalted butter (½ cup)",
+    "1 ½ ounces corn syrup (2 tablespoons)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

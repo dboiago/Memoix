@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Breakfast Bramble",
+    "time": null,
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice. Shake and strain into a glass with fresh crushed ice and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Mûre",
+        "unit": "oz",
+        "notes": "blackberry liqueur",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stone Fruit Jam",
+        "unit": "Tbsp",
+        "notes": "Conway uses apricot rosemary jam from The Jam Lab",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Greek Yogurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c847f3e83598f4967b67c14c1ba1e3def4f328d5f9e7a0b7f0ae4c4fe2dcbb57",
+    "lineage_hash": "3da5195e632dd257895940a50d3d4b5f4b8926d1b6ed5a32684e0679381d9e80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-bramble/",
+    "fetchedAt": "2026-08-03T23:58:30.587Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-bramble/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

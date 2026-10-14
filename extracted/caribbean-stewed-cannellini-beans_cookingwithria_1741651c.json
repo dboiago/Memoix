@@ -1,0 +1,208 @@
+{
+  "recipe": {
+    "name": "Caribbean Stewed Cannellini Beans",
+    "time": null,
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "291",
+      "carbohydrateContent": "44",
+      "fatContent": "8",
+      "proteinContent": "14"
+    },
+    "directions": [
+      "Soak the cannellini beans overnight in plenty of water. Drain and rinse.",
+      "Place the beans into an Instant Pot or pressure cooker with about 8 cups of water. Cook on the Beans setting or High Pressure for 35 minutes until tender but still holding their shape. (If cooking on the stovetop, simmer in about 10 cups of water until tender.)",
+      "Heat the olive oil in a large sauté pan or Dutch oven over medium heat. Add 1 tablespoon brown sugar and allow it to bubble, froth, expand, and darken.",
+      "Add the onion, garlic, carrot, celery, tomatoes, scallions, optional bell pepper, hot pepper, green seasoning, optional pumpkin, thyme leaves, and ketchup. Stir well and cook for about 5 minutes.",
+      "Add about 4 spoonfuls of the reserved bean cooking liquid and continue cooking for about 10 minutes, stirring occasionally, until the vegetables soften and the flavors develop.",
+      "Add the cooked beans together with the remaining cooking liquid. Season with the Himalayan pink salt and black pepper and stir well.",
+      "Bring to a gentle simmer over medium-low heat and cook for 15 to 20 minutes, stirring occasionally, until the sauce thickens naturally.",
+      "Taste and adjust the seasoning. If desired, stir in the optional 2 teaspoons brown sugar to balance the flavors.",
+      "Garnish with freshly chopped parsley or cilantro and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cannellini Beans Dried Beans",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water for Soaking and Cooking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Finely Chopped",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Small",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalk Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper Small",
+        "unit": null,
+        "notes": "optional, finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Optional",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Himalayan Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Optional",
+        "unit": "tsp",
+        "notes": "to balance the flavors",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "alt: cilantro for garnish, fresh, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02006bae40ee056a48611e2983e5c32fb155681f716ce8e172509ff6335e5214",
+    "lineage_hash": "828b0cdc340dc83fa2dce65e8e11ba1d7cb6eeac8ba8fb00db89bbf2a9657c9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2026/06/trinidad-stewed-cannellini-beans/",
+    "fetchedAt": "2026-09-25T23:14:32.229Z"
+  },
+  "rawSource": "https://cookingwithria.com/2026/06/trinidad-stewed-cannellini-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

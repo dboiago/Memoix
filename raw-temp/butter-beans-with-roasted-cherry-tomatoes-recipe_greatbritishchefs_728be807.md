@@ -1,0 +1,3 @@
+This simple dish from Ottolenghi Comfort is all about the beans, so source the biggest, butteriest ones you can find. While [butter beans](https://www.greatbritishchefs.com/collections/butter-bean-recipes "Butter bean") and tomatoes is a classic combination, this recipe has an unusual twist – crispy roasted [tomato](https://www.greatbritishchefs.com/collections/tomato-recipes "Tomato") skins, dried in the oven until crunchy and savoury.  This dish is delicious on its own, or as part of a spread.
+
+Extracted from Ottolenghi COMFORT by Yotam Ottolenghi, Helen Goh, Verena Lochmuller and Tara Wigley (Ebury Press, £30). All photography by Jonathan Lovekin.

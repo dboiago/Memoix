@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Easy Chewy Vegan Molasses Cookies",
+    "time": "28 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "173",
+      "carbohydrateContent": "27",
+      "fatContent": "6",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat your oven to 350F (180F) and line two large baking sheets with parchment paper.",
+      "In a large bowl, use a mixer to beat the vegan butter and brown sugar together until fluffy. Add the molasses and vanilla extract and mix in. Then add the flour, pumpkin pie spice, baking soda, ground ginger, and salt and mix until a cookie dough forms.",
+      "Pour the white sugar into a small bowl. Take about 2 tablespoons of the cookie dough and roll into a ball, then slightly flatten the ball. Take the flattened cookie dough ball and roll it in the white sugar then place on the prepared baking sheet. Repeat with the remaining dough to make about 18 cookies. (The cookies don't spread a ton, so by flattening them slightly it will prevent them from being too thick).",
+      "Bake for 10 - 15 minutes until the cookies are cracked and the bottoms are browned. Remove from the oven and let cool on the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegan Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Molasses",
+        "unit": "C",
+        "notes": "not blackstrap",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Pie Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": "for rolling",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e0a69654f992c32eb7dbcbb2de640ac3a8402a0587825295a708e01a907864b",
+    "lineage_hash": "04ef8404c01df127457db06914e7cf9c97c219f2c6389374480954286aa88d41"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-chewy-vegan-molasses-cookies/",
+    "fetchedAt": "2026-08-02T04:33:26.397Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-chewy-vegan-molasses-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

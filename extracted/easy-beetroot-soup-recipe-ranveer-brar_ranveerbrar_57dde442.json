@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Beetroot Soup (चुकंदर का सूप)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the beetroot, bottle gourd, onion, tomato, ginger and potato with two cups of water in a pan.",
+      "Bring to a boil and then simmer till all the vegetables are soft.",
+      "Cool and blend in a blender. Strain through a sieve.",
+      "Add sugar, salt and black pepper.",
+      "Serve hot or chilled garnished with the cream and coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beet Root",
+        "unit": "C",
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Gourd (ghiya)",
+        "unit": "C",
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "C",
+        "notes": "peeled and chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "for garnishing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b69a676193c6ca4df1bdafecc5d2ade77fddf3fab45414f9e2df13b8040db25",
+    "lineage_hash": "4ca466f0e2de60f4121868891d0a1b46bc0dfe51bf4cf9417b46d55a609e70d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/beetroot-soup/",
+    "fetchedAt": "2026-08-02T15:37:47.617Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/beetroot-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

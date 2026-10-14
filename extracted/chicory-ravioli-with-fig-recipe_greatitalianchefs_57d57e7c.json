@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Chicory Ravioli with Fig",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The preserved lemon needs to be prepared 3 weeks before serving. Place the whole lemon in a jar (large enough to fit the lemon comfortably), then add the salt and sugar. Top up with enough water to fill the jar, seal and store for 3 weeks",
+      "The leek dressing can be made on the day of serving. Process the leek in a juicer and set the juice aside to rest for a few hours",
+      "To make the fig purée, place the dried figs, vinegar, sugar and herbs in a small pan and pour over just enough water to cover. Cover the pan with a lid and place over a low heat. Simmer gently for 45 minutes, or until the figs are completely tender",
+      "Meanwhile, make the pasta dough by combining both types of flour with the water in a large bowl. Once the mixture starts to come together, transfer to a work surface and knead for 5 minutes until smooth",
+      "Place the dough in the fridge to chill while making the filling. Bring a pan of water to the boil, then blanch the chicory leaves very briefly to soften. Drain and finely chop, transferring to a large bowl",
+      "Repeat with the whole garlic clove, blanching briefly in boiling water to soften. Discard the skin, then crush the garlic and combine with the chicory",
+      "Add the ricotta to the bowl and mix well until the filling is evenly combined. Season to taste with salt and pepper and set aside",
+      "By this time, the fig mixture should be soft and tender. Pass through a sieve to create a smooth purée and reserve for serving",
+      "Roll out the dough with a pasta machine to create a thin sheet. Lay the sheet flat on the work surface and stamp out 8cm discs using a pastry cutter, aiming for 8 discs per serving (32 in total)",
+      "Place a small spoonful of the chicory filling into the centre of each disc, then push up and pinch together the edges to seal the filling in the middle. If necessary, wet the edges a little with water to seal",
+      "Before cooking the pasta, finish preparing the other elements for serving. Drain the cured lemon from the jar and dice the skin into 1cm cubes",
+      "For the greens, blanch the Swiss chard and pak choi in boiling water for a few seconds. Drain and pat dry with kitchen paper, then mix with the fresh herbs and set aside",
+      "The leek juice should have separated into a thicker layer with a watery liquid on top. Skim off the top liquid, leaving the thicker bottom layer. Whisk in the xanthan gum to thicken further and set aside",
+      "Bring a large pan of salted water to the boil and cook the ravioli for 3 minutes until just tender, then drain",
+      "Add a dash of oil to a frying pan and place over a medium heat. Add the almost-cooked ravioli and fry gently in the oil until lightly golden. Season with a little salt before serving",
+      "To serve, add a few lemon cubes to each dish and 2 small spoonfuls of the fig purée. Serve 8 ravioli per person, toping with a handful of the mixed greens. Spoon over a few drops of the leek dressing to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buckwheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicory Leaves",
+        "unit": "g",
+        "notes": "wild if possible",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herb Leaves",
+        "unit": "Tbsp",
+        "notes": "such as sweet wormwood, tarragon, mint, and chamomile",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Swiss Chard",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pak Choi",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Watercress",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dandelion Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chamomile",
+        "unit": null,
+        "notes": "leaves only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d4d727a312af0e8230d2b6f2fd022ced9d226d15ffd3e7d1fa4bd574c5b0af54",
+    "lineage_hash": "268b9d473c29c7b14fe5c01aa962ecb4e9edfec0711e4d8d9940ba4bcb02fce8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chicory-ravioli-recipe",
+    "fetchedAt": "2026-08-02T02:54:16.583Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chicory-ravioli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

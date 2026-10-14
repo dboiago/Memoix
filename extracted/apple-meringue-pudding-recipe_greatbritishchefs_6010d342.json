@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Apple Meringue Pudding",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel, core and slice the apples, then add to a bowl and sprinkle with caster sugar, mixing to coat lightly",
+      "Arrange the sliced apples in the ramekins (you don't need to grease the ramekins)",
+      "Beat the condensed milk with the yolks, beating well to a smooth mixture. Pour the mixture over the apples 3/4 up the sides of the ramekins",
+      "Bake in the oven for approximately 30 minutes. Meanwhile, prepare the meringue",
+      "Beat the egg whites in a clean bowl of a food mixer and beat for 5 minutes until they are nicely fluffy and stiff peaks have formed. Now slowly add the 3 tablespoons of sugar and mix until incorporated and thickened",
+      "Remove the ramekins from the oven and reduce the oven temperature to 150°C/gas mark 2. Pipe the meringues on top of the ramekins and return to the oven for a further 20 minutes. Remove from the oven and serve hot or cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": "large",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": null,
+        "notes": "1 can",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "yolks and whites separated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": "plus extra for sprinkling over the apples",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7388d981d01d152b534582bf22e7afda9d340fd6b8cdb46ecd7ea22420a3c57",
+    "lineage_hash": "3ab698df23129cec871bdbd5cd61a123d05ed2e93366d6be8988a9aaeb7155c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-meringue-pudding-recipe",
+    "fetchedAt": "2026-08-04T00:03:42.324Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-meringue-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/curry-sauce-recipe",
+  "slug": "curry-sauce-recipe_greatbritishchefs_2e2d5d9b",
+  "title": "Curry Sauce Recipe",
+  "byline": "by Dominic Chapman",
+  "fetchedAt": "2026-08-03T15:54:29.367Z",
+  "ldName": "The Pony and Trap curry sauce",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Sauce",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of carrots, peeled and sliced",
+    "1 banana shallot, diced",
+    "1 garlic clove, chopped",
+    "2 tsp curry powder, medium",
+    "1 tsp garam masala",
+    "1/2 small red chilli, sliced",
+    "200ml of water",
+    "200ml of coconut milk",
+    "25g of butter"
+  ],
+  "ldInstructionsRaw": [
+    "Place a pan over a medium heat and melt the butter. Add the shallots and garlic, cook until soft then add the spices and sliced chilli. Cook for 8 minutes",
+    "Add the carrots to the pan and stir to coat in the spices. Add the water, bring to the boil and simmer until the carrots are very soft. If all of the liquid evaporates, add a splash more water",
+    "Once the carrots are cooked, add the coconut milk and blend in a liquidiser. Serve warm with chips"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

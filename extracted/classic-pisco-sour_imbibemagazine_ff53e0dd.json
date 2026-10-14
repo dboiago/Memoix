@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Classic Pisco Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, combine the pisco, simple syrup, lemon juice and egg white and shake vigorously with ice. Strain into a glass and dash with bitters."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pisco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup (1:1)",
+        "unit": "oz",
+        "notes": "alt: sugar, or 2 tsp. sugar",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "fresh, pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d7dfc7403c4a5292cd3116bdd2679058596bfcd0779ea4be5b4d005442474fe",
+    "lineage_hash": "eae89ab999d363d6a98e20482bfe7857bed3d5c60fe2353852a1b14663fb9724"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-pisco-sour/",
+    "fetchedAt": "2026-08-03T23:09:16.387Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-pisco-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

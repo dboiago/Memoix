@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Crispy Chewy Vegan Crackers",
+    "time": "1 hr 3 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "32",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Preheat the oven to 350 F (180C), and lightly grease a loaf pan.",
+      "In a large bowl, mix together the dry ingredients. Now add in the wet ingredients and mix until just combined. Pour the batter into the prepared loaf pan and bake 35 minutes. The loaf will feel like a dense bread. Let cool completely.",
+      "Once cooled, use a serrated knife to slice the loaf as thinly as possible into cracker slices. The thinner the cracker, the crispier. I got about 30 crackers. Spread the crackers on a baking pan in a single layer, and bake at 350F (180C) for an additional 15 - 18 minutes until they are lightly brown all over. They will get crisp as they cool. Store in an airtight bag or container at room temperature for up to two weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": "C",
+        "notes": "cranberries, raisins, chopped figs, chopped dates, chopped apricots, dried",
+        "amount": "½",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Nuts",
+        "unit": "C",
+        "notes": "pecans, walnuts, hazelnuts, cashews, almonds, finely, chopped",
+        "amount": "¼",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Seeds",
+        "unit": "Tbsp",
+        "notes": "sesame, poppy, chia, flax, pumpkin",
+        "amount": "2",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "Tbsp",
+        "notes": "alt: thyme, Optional, chopped, fresh",
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dry Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or almond",
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b1602f13673e5f2daa5b07015e50d65b54e52fb4f2312520883a1f003acc3498",
+    "lineage_hash": "b7355b1e8c57ebf248089e1cb39c3829919aa7444eed1d2b7735fb84fb90ea63"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-chewy-vegan-crackers/",
+    "fetchedAt": "2026-08-01T20:37:57.997Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-chewy-vegan-crackers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

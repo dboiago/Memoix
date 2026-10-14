@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "A More Perfect Union",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with ice. Stir until well chilled. Strain into a coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab512f5bba8b02e96f06eeb05780e9e0abc873b352c67f7caf402962bbdf2b99",
+    "lineage_hash": "ee3627a349fc773c2eac4c75f8082ba44ed8bc55ac795d0fe726f15d047d1dbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-more-perfect-union-recipe/",
+    "fetchedAt": "2026-08-04T02:08:09.193Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-more-perfect-union-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

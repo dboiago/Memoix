@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Chicken Tom Kha Soup (Tom Kha Gai)",
+    "time": "40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "332",
+      "carbohydrateContent": "8",
+      "fatContent": "23",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Bring chicken stock to a boil, then add the salt and chicken thigh. Simmer gently for 15 minutes or until chicken is fork tender.",
+      "Add the coconut milk, lemongrass, galangal, makrut lime leaves, chilies,  mushrooms, about half of the fish sauce, and sugar. Simmer for 5 minutes to infuse.",
+      "Taste and add more fish sauce as needed. Turn off the heat and add about 2 Tbsp of the lime juice, then taste and add more as needed. Top with green onions and/or cilantro.",
+      "Serve with jasmine rice as part of a larger Thai meal, or enjoy on its own. See this video about how to eat a Thai meal for how Thai people serve soup! (Note: the herbs are for infusion only and are not meant to be eaten. Either remove them before serving or inform your guests.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "unsalted, preferably homemade",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "see note 1",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thigh",
+        "unit": "lb",
+        "notes": "see note 2, boneless skinless, cut 1-inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalk",
+        "notes": "bottom half only, smashed and cut in 2-inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Galangal",
+        "unit": null,
+        "notes": "see note 3",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": "twisted to bruise and torn into big chunks",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "to taste, smashed until broken or cut into large pieces",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": "finely, chopped, or granulated sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "unit": "oz",
+        "notes": "torn into bite-size pieces",
+        "amount": "5.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion And/or Cilantro",
+        "unit": null,
+        "notes": "chopped, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": null,
+        "notes": "for serving, optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a5014e7eed305ff9ca98f565687d4fa50aa4c85912b754def607e8c1a3884246",
+    "lineage_hash": "7ee7ad8e17ecdf78eb8df8fb91f62da676a3fc405c8f282514aa8c689d0c6deb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/tom-ka-gai/",
+    "fetchedAt": "2026-08-02T02:55:12.781Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/tom-ka-gai/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

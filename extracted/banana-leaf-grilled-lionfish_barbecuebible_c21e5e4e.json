@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Banana Leaf Grilled Lionfish",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To Prepare the Spice Paste: In a blender, combine the leaves of the cilantro, parsley, and mint along with the ginger, chile, salt, allspice, cumin, cinnamon, and vinegar. Pulse together until a smooth paste forms. With the blender running on low speed, drizzle in the oil until incorporated. Pour mixture into a small bowl and allow flavors to mellow together for at least 30 minutes.",
+      "To Prepare the Lionfish: On a large clean work area, arrange the banana leaves. Using a pastry brush, paint the center of each leaf with spice paste. Place the lionfish in the center and brush the fish liberally with the spice paste. Proceed to fold each leaf bundle like a small package and secure with a bamboo toothpick.",
+      "To Grill the Fish: Preheat the grill to medium heat. A wood fire grill will add the most flavor, but a gas grill will do the job. Grill the banana leaf wrapped lionfish for about 4 to 5 minutes on each side. At the same time, grill the hearts of palm, brushing each with the remaining spice paste.",
+      "To Serve: Carefully unwrap the banana leaf bundles while leaving in the leaf to serve on a colorful platter along with grilled hearts of palm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cilantro",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat Leaf Parsley",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb-sized Piece of Freshly Peeled Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Fresno Chile",
+        "unit": "small",
+        "notes": "seeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pieces of Fresh",
+        "unit": "large",
+        "notes": "alt: frozen banana leaves, approximately 10 inches square",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lionfish Fillets",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hearts of Palm",
+        "unit": "pcs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": "large",
+        "notes": "cut in wedges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0aa9211c9178fb88abd21ef802df286848204a0302e05d1efff8e9f2894edf2c",
+    "lineage_hash": "30ba0e498548ab8075a5bfab886736b92102788bd99273ca0b8bdad6993075ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/banana-leaf-grilled-lionfish/",
+    "fetchedAt": "2026-08-03T06:05:48.429Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/banana-leaf-grilled-lionfish/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

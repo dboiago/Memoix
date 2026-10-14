@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Classic Champagne Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Champagne Flute",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a sugar cube in a chilled glass and top with the bitters. Fill with chilled Champagne."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Champagne",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "86bebc99887c83fa0f6b2a7a563069344ec73be241020cfe1fd1f8f2647fa235",
+    "lineage_hash": "cc0f998a3b8ad929624e2c8c50b00ecf5da44b9e978b41ab03a188f7c0408570"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-champagne-cocktail/",
+    "fetchedAt": "2026-08-03T18:30:53.396Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-champagne-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

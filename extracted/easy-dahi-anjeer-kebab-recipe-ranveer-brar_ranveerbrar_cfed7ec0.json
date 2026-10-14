@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Dahi Anjeer Kebab (दही अंजीर कबाब)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together hung curd, grated tofu, soy flour, salt and crushed black pepper in a bowl.",
+      "To prepare the filling, in a separate bowl, mix chopped figs, chopped chili, chopped ginger, chopped onions and chopped coriander.",
+      "Heat oil in a pan on medium. Place the hung curd mixture in your hand, stuff the filling in it and carefully seal. Gently transfer to the pan and shallow fry on both sides till golden brown. Remove excess oil and transfer to the serving plate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Tofu",
+        "unit": null,
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crushed Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "As Required Tomato Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "C",
+        "notes": "fresh, chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsps Coriander",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c2f0ee530590d962fc1c5c9020279dd59013d91761381632e7f61fa09f45ab1",
+    "lineage_hash": "1f9fe8b29fe298a6e6dab757a62f7a643c32e77c096c1b6d0bae9eb1c57cc74c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-anjeer-kebab/",
+    "fetchedAt": "2026-08-02T15:21:11.386Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-anjeer-kebab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

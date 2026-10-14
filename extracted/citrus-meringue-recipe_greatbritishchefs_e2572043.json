@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Citrus Meringue",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the egg whites in a large, spotlessly clean bowl – any fat in the bowl will stop the whites from expanding to their full volume",
+      "Add the caster sugar then sieve in the icing sugar and cream of tartar. Grate in the citrus zests",
+      "Using a handheld electric whisk, or the whisk attachment on a stand mixer, whisk everything together for 5 minutes, or until the meringue holds in stiff peaks when the whisk is lifted out of the mixture",
+      "Spread the meringue out in a thin layer on a silicone baking mat or a baking tray lined with baking paper. Alternatively, transfer to a piping bag and pipe shapes as desired",
+      "Bake in the oven for 1 hour and 15 minutes or until the meringue is crisp on top but not colouring (thicker shapes may take slightly longer)",
+      "Allow to cool completely on the tray then peel off the shapes or snap the sheet into shards to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb70616d7f80a3f5aef251ea0da942730ca7683fa123c7fe27adcffd050cfb22",
+    "lineage_hash": "f8e6a16f4abd8e1b43e079e2b1d6702eaced4701d93bbe935b7714455b7c3dba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/citrus-meringue-recipe",
+    "fetchedAt": "2026-08-03T13:01:47.020Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/citrus-meringue-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

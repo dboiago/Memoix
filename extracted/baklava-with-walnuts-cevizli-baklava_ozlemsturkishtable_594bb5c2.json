@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Baklava with Walnuts (Cevizli Baklava)",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the syrup first. Put the sugar into a heavy pan, pour in water and bring to the boil, stirring all the time. When the sugar is dissolved, lower the heat and stir in the lemon juice, then simmer for about 15 minutes, until the syrup thickens. Leave to cool in the pan.",
+      "Melt the butter in a small pan and then brush a little over the bottom and sides of the baking pan.",
+      "To thaw frozen filo sheets, it is best to place it in the fridge the night before and bring it to room temperature 2 hours before using. If in the fridge, take out the filo pastry sheets 20 minutes prior using, to bring to the room temperature.",
+      "Place two sheets of filo pastry in the bottom of the greased pan and brush it with melted butter (trim from the edges to fit, if needed). Continue until you have used 12 filo sheets, brushing every two sheets with butter. Ease the sheets into the corners and trim the edges if they flop over the rim of the pan.",
+      "Spread the walnuts over the 12th buttered sheet and sprinkle with the cinnamon, and then continue as before with the remaining filo sheets. Brush the top one as well, then, using a sharp knife cut diagonal parallel lines right through all the layers to the bottom to form small diamond shapes.",
+      "Bake the baklava into the oven for about 45 minutes or until the top is golden – if it is still pale, increase the temperature for a few minutes at the end.",
+      "When the baklava is ready, remove it from the oven and slowly pour the cooled syrup over the piping hot pastry. Return to the oven for 2-3 minutes to soak up the syrup, then take it out and leave to cool.",
+      "Once the baklava is cool, lift the diamond shaped pieces out of the pan and arrange them in a serving dish. Serve baklava pieces with ground pistachios over them, always at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Filo Pastry Sheets",
+        "unit": null,
+        "notes": "total 24 sheets",
+        "amount": "440",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Walnuts",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": "For the syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "420",
+        "section": "For the syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "large",
+        "notes": null,
+        "amount": "½",
+        "section": "For the syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": null,
+        "notes": "to sprinkle over the baklavas",
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72a11cacc1c4fca0ea57ee37ade4c55ff0c62b94a3c8f9d494ef07fc955effe9",
+    "lineage_hash": "b926b081732b50f77daa6d686346a4bdda9d36036aa54528e24c0dff7bf80d21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2010/06/baklava-with-pistachios-and-walnuts-fistikli-ve-cevizli-baklava/",
+    "fetchedAt": "2026-09-25T20:13:22.451Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2010/06/baklava-with-pistachios-and-walnuts-fistikli-ve-cevizli-baklava/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

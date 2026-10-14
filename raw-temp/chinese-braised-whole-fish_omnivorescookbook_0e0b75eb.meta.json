@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-braised-whole-fish/",
+  "slug": "chinese-braised-whole-fish_omnivorescookbook_0e0b75eb",
+  "title": "Chinese Braised Whole Fish (红烧鱼)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T09:06:18.175Z",
+  "ldName": "Chinese Braised Whole Fish (红烧鱼)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "main dish",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 (1 to 1.5 lbs) whole branzino (, or other white fish (*Footnote 1))",
+    "1 tablespoon cornstarch",
+    "3 tablespoons vegetable oil",
+    "3  scallions (, whites cut into 2” pieces, some greens reserved and thinly sliced for garnish)",
+    "1 thumb ginger (, sliced)",
+    "1 cup water",
+    "2 tablespoons Shaoxing wine",
+    "2 tablespoons light soy sauce",
+    "1 teaspoon dark soy sauce",
+    "2 teaspoons sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Score the fish with 1” space in between cuts. Thoroughly pat the fish dry with paper towels. Coat the fish with a thin layer of cornstarch. Shake off the excess cornstarch.",
+    "Prepare a piece of aluminum foil that can fit in your wok and fully cover the fish.",
+    "Heat the oil in a wok over medium-high heat until smoking. Swirl the wok to coat the bottom with oil, so the fish will be fully in contact with the oil once added. Very carefully lower the fish into the wok. Let cook without touching for 2 minutes. Use a spatula to carefully release the fish and flip it. Brown the other side for 2 minutes. Transfer the fish to a plate and set aside.",
+    "Your wok should still have some oil left. Add or reduce the oil if needed, so there’s about 1 to 2 tablespoons of it left. (*Footnote 2) Add scallion whites and ginger. Stir and cook for 20 seconds to release fragrance.",
+    "Add water, Shaoxing wine, light soy sauce, dark soy sauce and sugar. Bring to a boil and add back the fish. Place the aluminum foil on top so it loosely covers the whole fish. Braise over medium heat for 3 minutes (*Footnote 3), making sure the liquid is boiling the whole time, but not so much that it reaches a rolling boil. Remove the foil, carefully flip the fish, then replace the foil. Braise for another 3 minutes. Remove the foil. You can test the texture by gently pulling off a piece of meat and it should come off the bone easily. Transfer the fish to a serving plate.",
+    "Remove and discard the scallion and ginger pieces. The sauce should be reduced and slightly thickened. If it still looks very watery, turn the heat to high to reduce the sauce for 1 to 2 minutes. Cook and stir until the sauce thickens enough to thinly coat the back of a spoon, then pour it onto the fish. Garnish with scallion greens. Serve hot as a main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "224 kcal",
+    "carbohydrateContent": "13.8 g",
+    "proteinContent": "22 g",
+    "fatContent": "9.3 g",
+    "saturatedFatContent": "1.8 g",
+    "cholesterolContent": "45 mg",
+    "sodiumContent": "884 mg",
+    "fiberContent": "0.7 g",
+    "sugarContent": "8.9 g"
+  },
+  "htmlIngredientLines": [
+    "1 (1 to 1.5 lbs) whole branzino , or other white fish (*Footnote 1)",
+    "1 tablespoon cornstarch",
+    "3 tablespoons vegetable oil",
+    "3 scallions , whites cut into 2” pieces, some greens reserved and thinly sliced for garnish",
+    "1 thumb ginger , sliced",
+    "1 cup water",
+    "2 tablespoons Shaoxing wine",
+    "2 tablespoons light soy sauce",
+    "1 teaspoon dark soy sauce",
+    "2 teaspoons sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

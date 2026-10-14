@@ -1,0 +1,63 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/creamy-dill-walnut-sauce-vegan/",
+  "slug": "creamy-dill-walnut-sauce-vegan_itdoesnttastelikechicken_7729ad96",
+  "title": "Creamy Dill Walnut Sauce (vegan)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T01:47:50.546Z",
+  "ldName": "Creamy Dill Walnut Sauce (Vegan)",
+  "ldTime": "PT5M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "8",
+    "8 (makes about 1 cup)"
+  ],
+  "ldCuisine": "American, Mediterranean, Middle Eastern",
+  "ldCategory": "sauce",
+  "ldKeywords": "dill, sauce, walnuts",
+  "ldIngredientsRaw": [
+    "1 cup fresh dill (loosely packed (about 1 small bunch), roughly chopped, stems removed)",
+    "1/2 cup walnuts (toasted (for best flavor))",
+    "1/4 cup olive oil ((sub with veggie broth or aquafaba for oil-free))",
+    "2 tablespoons lemon juice",
+    "2 tablespoons nutritional yeast ((optional, for a subtle cheesy taste))",
+    "1 small clove garlic (minced or pressed)",
+    "1 teaspoon agave or maple syurp",
+    "1/4 teaspoon salt (or to taste)",
+    "1/4 teaspoon black pepper (or to taste)",
+    "2 - 3 tbsp water (or more as needed for consistency)"
+  ],
+  "ldInstructionsRaw": [
+    "Blend the Ingredients: In a blender or food processor, combine all the ingredients except for the water. Blend until the mixture is combined. Add water, one tablespoon at a time, until the sauce reaches your desired consistency. I like a chunkier texture but you can also blend it a bit longer for a smoother sauce.",
+    "Serve: Serve this sauce over roasted veggies, toss it with pasta, dollop it on grain bowls, drizzle it over tofu dishes, or use it as a dip with tortilla chips. This sauce is so tasty, you’ll want to use it everywhere!",
+    "Store and Freeze: Store leftovers in an airtight container in the fridge for up to 5 days. For longer storage, freeze the sauce in small portions (like in an ice cube tray) and thaw as needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving (about 2 tablespoons)",
+    "calories": "122 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "77 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "10 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup fresh dill, loosely packed (about 1 small bunch), roughly chopped, stems removed",
+    "▢ ½ cup walnuts, toasted (for best flavor)",
+    "▢ ¼ cup olive oil, (sub with veggie broth or aquafaba for oil-free)",
+    "▢ 2 tablespoons lemon juice",
+    "▢ 2 tablespoons nutritional yeast, (optional, for a subtle cheesy taste)",
+    "▢ 1 small clove garlic, minced or pressed",
+    "▢ 1 teaspoon agave or maple syurp",
+    "▢ ¼ teaspoon salt, or to taste",
+    "▢ ¼ teaspoon black pepper, or to taste",
+    "▢ 2 - 3 tablespoon water, or more as needed for consistency"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

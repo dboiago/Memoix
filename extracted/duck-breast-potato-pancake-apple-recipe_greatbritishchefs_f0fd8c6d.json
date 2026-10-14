@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Duck Breast, Potato Pancake, Apple",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin this roast duck recipe by preheating the oven to 220°C/gas mark 7. Bone out the ducks and trim the breasts, reserving the fat and legs. Chop the bones, place in a roasting tin and roast until golden brown",
+      "Meanwhile, peel the apples and cut into small dice, reserving the peel, core and trimmings. Melt the butter in a saucepan and cook the diced apple for a few minutes. Add the calvados then set aside",
+      "Remove the roasted bones from the oven. Drain any fat from the tray into a large saucepan. Slice the shallots and chop the carrot and celery and add them to the pan. Cook until lightly browned, then drain off the fat. Add the bones and pour in the cider and apple juice. Bring to the boil, add the thyme, bay leaves and apple trimmings and boil for 5 minutes. Add the chicken and veal stocks plus just enough cold water to cover the solids. Bring to a gentle simmer, skim thoroughly then leave to simmer for 1 hour",
+      "Drain the contents of the pan though a fine sieve into a clean saucepan and reduce to a slightly thick sauce. Add the cooked apple and pan juices and set aside",
+      "To make the potato pancakes, peel and quarter the potatoes then cook them in a pan of boiling salted water until tender. Drain, then while still hot put them though a blender to purée and set aside to cool. Do not over blend to avoid the texture becoming gluey",
+      "Once the potatoes are completely cool, put them in a mixing bowl with the milk, cream and flour. Beat in the whole eggs one at a time",
+      "In a large clean bowl, whisk the egg whites until stiff peaks form then fold them into the batter",
+      "Preheat the oven to 220°C/gas mark 7. Season the duck breasts. Place two breasts into a large frying pan skin-side down and cook until golden. Turn over and continue cooking for 1 minute, then transfer the duck to an oven tray. Drain off the fat from the frying pan and repeat with the other breasts",
+      "Roast the breasts for 10 minutes then leave to rest in a warm place for a further 10 minutes while you cook the pancakes and spinach",
+      "To cook the pancakes, heat a blini pan with some sunflower oil until hot, then tip out the oil. Put a ladle of pancake mixture in the pan, leave on the heat for a few seconds, and then place in the oven (or under the grill) until the pancake is firm to the touch and lightly browned. Keep warm while you repeat with the remaining batter",
+      "Just before serving, cook the spinach. Have ready a bowl with a sieve over it. Melt the butter in a large saucepan, add the spinach and stir over a moderate heat until the leaves have wilted. Season to taste then drain in the sieve",
+      "To serve, put two pancakes on each warmed serving plate and top with a spoonful of spinach. Carve the duck breasts and arrange them on top. Spoon over the sauce (reheated if necessary) and serve at once"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ducks",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalks",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Cider",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c25ae0d7ec1db8cb6e89ec341d8e5fbcdedd0e01b85707b11752734b363948f",
+    "lineage_hash": "aba6bcf352d8020974a3d9c52571a940b90b3188bd95183dd72faac0ffe82c4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-recipe-potato-pancakes",
+    "fetchedAt": "2026-08-03T19:24:23.410Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-recipe-potato-pancakes",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chocolate Frozen Yogurt",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate in a double boiler, or in a heatproof bowl set over a saucepan of simmering water, stirring frequently to ensure even melting.",
+      "In the meantime, place the cream in a medium mixing-bowl (preferably one with a pouring spout; it will make your life easier). In a separate bowl, whisk together the sugar, cocoa powder, and salt until no lump remains.",
+      "When the chocolate is melted, whisk it into the cream. Whisk the sugar mixture into the chocolate cream. Add the vanilla and yogurt, and whisk until well blended.",
+      "Cover and refrigerate for an hour, until chilled. Whisk again, and freeze in an ice cream maker according to the manufacturer's instructions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cane Sugar",
+        "unit": "g",
+        "notes": "preferably finely ground",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "unsweetened",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "natural",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yogurt",
+        "unit": "g",
+        "notes": "plain",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1825f9087aaa8b8bc3688f92818e3ddcb877c5035a1068fec5cc883114323df",
+    "lineage_hash": "28c030ad628c6feff5c5e7f2f063b2fbc8f0658c1bb0d8abbd101385d94ae243"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/ice-cream-sorbets/chocolate-frozen-yogurt-recipe/",
+    "fetchedAt": "2026-09-30T18:53:20.285Z"
+  },
+  "rawSource": "https://cnz.to/recipes/ice-cream-sorbets/chocolate-frozen-yogurt-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

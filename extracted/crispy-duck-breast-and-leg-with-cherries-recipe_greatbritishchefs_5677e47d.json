@@ -1,0 +1,349 @@
+{
+  "recipe": {
+    "name": "Crispy Duck Breast and Leg with Cherries",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using a sharp knife, joint the duck to remove the legs and breasts. Reserve the bones for the sauce",
+      "Blend together the salt, orange zest, thyme and peppercorns and rub this spice mix into the duck legs. Leave the legs to salt for 4 hours, then rub off the excess cure with a paper towel and transfer the legs to a container and cover with duck fat. Confit at 85°C for 8 hours",
+      "After this time, pick the meat from the legs and mix this with the chicken stock, raspberry vinegar, shallots and the 100ml of the duck fat. Spread the mixture out on a baking tray, and press a second tray on top to achieve a flat layer 1cm thick. Weight the top tray or wrap both in cling film and chill until firm",
+      "For the cherries, bring the sugar, water, vanilla pods and seeds to the boil and reduce to a syrup consistency. Add the cherries and leave to cool, then place in the fridge to macerate for 2 hours",
+      "For the duck breasts, place the brine ingredients in a large pan and warm through until the salt has dissolved, then leave to cool. When cool, brine the duck breasts for 20 minutes then rinse off and pat dry with kitchen towel. Leave to dry out, uncovered in the fridge for 2 hours",
+      "To make the sauce, chop the bones from the duck into small pieces and roast in a large saucepan in the fat until golden brown. Strain to remove the bones and return half of the fat back to the pan, with the shallots, garlic, thyme and bay. Heat this until caramelised, then add the bones back to the pan and deglaze with the wine",
+      "Add the stock and leave to simmer for 1 hour. Strain the stock through a fine sieve and chill. Once chilled, you should be able to remove any fat from the surface of the sauce, then place in pan over a medium heat and reduce down to a sauce consistency. Leave to infuse with an additional sprig of thyme and any cherry stones (optional)",
+      "For the cherry gel, place all the ingredients into a small pan and bring to the boil. Whisk well then pour onto a tray to set. Once set, transfer the gel to a blender and blitz until smooth. Pass through a fine sieve and store in a squeezy bottle or a piping bag until ready to serve",
+      "Before serving, you will need to cook the duck breasts and fry the leg croquettes. Seal the duck breasts in vacuum bags and cook at 60°C for 1 hour. Remove from the bag and pat dry again. Place skin side down in a frying pan over a gentle heat, cook until the fat has rendered down and the skin is crisp and golden. Finally put the duck breasts under a hot grill, skin side up to crisp up. Season with sea salt and serve",
+      "When ready to serve, deep-fry the leg meat. Dice the chilled mix into 1cm cubes and coat in flour, then egg, and finally the breadcrumbs. Deep-fry at 180°C for 2-3 minutes until golden brown and crispy",
+      "To plate, slice the duck breasts into 4 and place 2 down one side of each plate. Arrange 3 leg croquettes and 3 cherries on the other side of the plate and sprinkle over the almonds. Dot with the cherry gel, spoon over a little of the duck sauce, and garnish with pea shoots"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": null,
+        "notes": "preferably Gressingham",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": "reduced to 20ml",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "seeds scraped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": null,
+        "notes": "pitted",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "fresh, shelled",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "890d76f6dae80832e82a67d92606ae4fb31cea37271606f8101d871c7f8d162b",
+    "lineage_hash": "cdf09b53d932d95762cdcd74d246bdb1232fc8f04ce2130e805068081d772061"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-with-cherries-recipe",
+    "fetchedAt": "2026-08-03T15:08:10.161Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-with-cherries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

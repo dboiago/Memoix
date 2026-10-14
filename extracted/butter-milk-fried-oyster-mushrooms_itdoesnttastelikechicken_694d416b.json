@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Butter Milk Fried Oyster Mushrooms",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "244",
+      "carbohydrateContent": "42",
+      "fatContent": "5",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Oven method: Preheat your oven to 425°F (220°C). Line a large baking sheet with parchment paper or lightly grease it.Air-fryer method: Preheat your air fryer to 370°F (188°C).",
+      "In a large bowl, mix the plant-based milk and lemon juice (this will result in vegan buttermilk). Add the oyster mushrooms and toss to evenly coat. Marinate in the buttermilk for 15 minutes, tossing halfway through. (The buttermilk may separate—this is totally OK. You can just whisk it back together if needed.)",
+      "In another large bowl, whisk together the flour, salt, paprika, pepper, garlic powder, and onion powder. Take a mushroom from the buttermilk mixture and toss it in the flour mixture. Shake off the excess flour, then dunk it back into the buttermilk mixture, and then again in the flour mixture. Set aside on the prepared baking sheet in a single layer or on a plate if using the air fryer. repeat with the remaining mushrooms, giving each a double coating.",
+      "Oven method: spray the mushrooms generously with cooking spray on all sides. Bake for 10 minutes, flip, spray the tops with more oil (making sure to coat any powdery spots), and continue to cook for another 8–15 minutes, until golden brown and crispy.Air-fryer method: Grease the bottom of the air-fryer basket. Lay the coated mushrooms in the basket in a single layer—do not overcrowd (you may need to work in batches). spray the tops generously with cooking spray. Air-fry for 5 minutes, flip, spray with more oil (making sure to coat any powdery spots), and continue cooking for another 5–10 minutes, until golden brown and crispy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as oat or soy",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "unit": "oz",
+        "notes": "cleaned and pulled apart into large chunks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "gluten-free all-purpose flour blend if preferred",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Spray",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "476b2e37e5adeac1481aae047a93011a15813cee0b4c3cc141d2fffcfed9b105",
+    "lineage_hash": "5e1085b428bb6383829985be4a57fffc75db6b92893a472f6762a45493399670"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/buttermilk-fried-oyster-mushrooms-vegan-fried-chicken/",
+    "fetchedAt": "2026-08-02T02:34:44.504Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/buttermilk-fried-oyster-mushrooms-vegan-fried-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

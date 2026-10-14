@@ -1,0 +1,50 @@
+{
+  "url": "https://www.chinasichuanfood.com/fried-mantou-with-condensed-milk/",
+  "slug": "deep-fried-mantou_chinasichuanfood_eaf3c817",
+  "title": "Deep Fried Mantou",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:22:43.951Z",
+  "ldName": "Deep- Fried Mantou",
+  "ldTime": "PT12M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT7M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "staple",
+  "ldKeywords": "Fried, mantou",
+  "ldIngredientsRaw": [
+    "8  steamed buns ( , depending on the size of your serving plate.)",
+    "4 cup vegetable oil ( , or more as needed)",
+    "1/2 cup condensed milk ( , for serving)"
+  ],
+  "ldInstructionsRaw": [
+    "Divide your buns into two groups: one for steaming and the other for deep-frying.",
+    "Steam one group until hot.",
+    "In a pot, heat up enough oil for around 7 minutes over medium until medium hot; add the buns in to fry until golden brown. During the process, the buns will keep floating on the surface. Press them down to soak them in the oil for evenly deep-frying.",
+    "Transfer out and filter the extra oil.",
+    "How to serve: Pour the condensed milk in a small bowl and place the dipping bowl in the center of your serving plate and then lay the steamed buns and fried buns one by one.",
+    "Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "398 kcal",
+    "carbohydrateContent": "20 g",
+    "proteinContent": "3 g",
+    "fatContent": "25 g",
+    "saturatedFatContent": "19 g",
+    "cholesterolContent": "13 mg",
+    "sodiumContent": "48 mg",
+    "sugarContent": "20 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "8 steamed buns  , depending on the size of your serving plate.",
+    "4 cup vegetable oil  , or more as needed",
+    "1/2 cup condensed milk  , for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

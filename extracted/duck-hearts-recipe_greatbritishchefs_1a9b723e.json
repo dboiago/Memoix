@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Duck Hearts",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove the sinew and tubes from the duck hearts and set aside in the fridge until needed",
+      "Reduce the wine down to a syrup, add the reduced chicken stock, lime juice and coriander. Remove fro  the heat and allow to infuse for 5 mintues",
+      "Pass through a fine strainer. Set aside as this will be the sauce used to glaze the hearts in step 7",
+      "In a separate pan, combine the vinegar, water, sugar and thyme and bring to the boil. Once boiling, remove from the heat and pour over the blueberries in a bowl. Leave to cool",
+      "Slice the fennel on a mandolin lengthways and season with sea salt and lemon juice",
+      "In a deep pan (or using a deep-fat fryer), heat the oil to 210°C and fry the wild rice until puffed up. Drain straight away and season with sea salt",
+      "Heat the oil and butter in a pan until it begins to foam, sauté the duck hearts for 1-2 minutes, or cook to a rare - medium-rare finish - overcooked duck hearts will be chewy. Drain the duck hearts and glaze in the sauce from step 3",
+      "Spoon some of the blueberries onto each plate. Add the duck hearts followed by the slices of fennel. Sprinkle the wild rice and some fresh herbs over each plate and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Hearts",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": "reduced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "sprigs",
+        "notes": "fresh, roughly chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7dffd654d4547e42704d649e76a0bbcab6ebf988ec30d446af8a82e36b1eb473",
+    "lineage_hash": "1511f8021cef725938943eb993774d7e9ae91c67225de7a7d29398e1f66bcf6d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-hearts-recipe",
+    "fetchedAt": "2026-08-03T16:08:14.713Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-hearts-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

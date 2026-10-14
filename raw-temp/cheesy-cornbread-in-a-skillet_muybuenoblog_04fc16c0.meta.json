@@ -1,0 +1,66 @@
+{
+  "url": "https://muybuenoblog.com/cheesy-cornbread-skillet/",
+  "slug": "cheesy-cornbread-in-a-skillet_muybuenoblog_04fc16c0",
+  "title": "Cheesy Cornbread In A Skillet",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T00:14:43.083Z",
+  "ldName": "Cheesy Cornbread Skillet",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "Mexican, Tex-Mex",
+  "ldCategory": "Breads, Side Dish",
+  "ldKeywords": "buttermilk cornbread, cornbread with cheese, skillet cornbread recipe",
+  "ldIngredientsRaw": [
+    "1 cup yellow corn meal",
+    "1 cup all-purpose flour",
+    "1 tablespoon baking powder",
+    "1/2 teaspoon salt",
+    "1/2 cup buttermilk",
+    "½ cup evaporated lowfat 2% milk",
+    "2  eggs (lightly beaten)",
+    "3 tablespoons vegetable oil",
+    "1 cup shredded Oaxaca cheese",
+    "1 cup whole kernel corn (drained)",
+    "2  mini sweet peppers (chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat to 375 F.",
+    "Lightly grease a 10-inch oven-safe skillet.",
+    "Combine cornmeal, flour, baking powder, and salt in a large bowl. Combine milk, eggs, and oil in a medium bowl. Add to cornmeal mixture; stir just until combined. Stir in cheese, corn, and peppers. Pour batter into prepared skillet.",
+    "Bake for 20 minutes on the bottom rack and an additional 5 minutes on the top rack or until wooden pick inserted in center comes out clean. Cool in pan. Serve warm with butter and a drizzle of honey."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "240 kcal",
+    "sugarContent": "2 g",
+    "sodiumContent": "244 mg",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "carbohydrateContent": "32 g",
+    "fiberContent": "2 g",
+    "proteinContent": "7 g",
+    "cholesterolContent": "46 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup yellow corn meal",
+    "▢ 1 cup all-purpose flour",
+    "▢ 1 tablespoon baking powder",
+    "▢ 1/2 teaspoon salt",
+    "▢ 1/2 cup buttermilk",
+    "▢ ½ cup evaporated lowfat 2% milk",
+    "▢ 2 eggs, lightly beaten",
+    "▢ 3 tablespoons vegetable oil",
+    "▢ 1 cup shredded Oaxaca cheese",
+    "▢ 1 cup whole kernel corn, drained",
+    "▢ 2 mini sweet peppers, chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Brazilian Black Bean Puree (Tutu à Mineira)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "283",
+      "carbohydrateContent": "31",
+      "fatContent": "15",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Add your leftover beans to a food processor and pulse until smooth, and set aside.",
+      "In a medium pan over medium heat, drizzle about a tablespoon of olive oil.",
+      "Add in the diced bacon and fry until crispy.",
+      "When the bacon is crispy, scoop it out of the pan using a slotted spoon and place it into a plate lined with paper towels and set it aside.",
+      "Add the diced onions to the pan with the bacon fat and sauté until translucent.",
+      "Next add the minced garlic and sauté until fragrant and lightly golden.",
+      "Add the beans to the pan and stir to combine.",
+      "When the beans start to simmer, slowly sprinkle the Brazilian cassava flour and stir over low heat until it thickens into a soft puree consistency.",
+      "Serve drizzled with olive oil and the crispy bacon. You can also add a splash of your favorite vinegary hot sauce!",
+      "Additional serving suggestions for the ultimate Brazilian Tutu de Feijão experience:"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leftover Beans",
+        "unit": "C",
+        "notes": "cooked and seasoned (heaping cup) make sure there is at least ½ cup of liquid",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Slice of Bacon",
+        "unit": null,
+        "notes": "diced approximately ¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil Plus More for Serving",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brazilian Cassava Flour",
+        "unit": "Tbsp",
+        "notes": "farinha de mandioca",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9a9512745efa4c1cbee2487bf7246edfa3313226a665d1ebab7c8eb1720b4c3",
+    "lineage_hash": "9d281f577a59b812e0e72e104da63589f442af91ed471b0ee499886a9f1f7a25"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-black-bean-puree-tutu-a-mineira/",
+    "fetchedAt": "2026-09-25T20:45:53.745Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-black-bean-puree-tutu-a-mineira/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

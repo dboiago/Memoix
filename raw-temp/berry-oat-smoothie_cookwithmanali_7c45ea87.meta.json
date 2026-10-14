@@ -1,0 +1,57 @@
+{
+  "url": "https://www.cookwithmanali.com/berry-oat-smoothie/",
+  "slug": "berry-oat-smoothie_cookwithmanali_7c45ea87",
+  "title": "Berry Oat Smoothie",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T16:51:41.615Z",
+  "ldName": "Berry Oat Smoothie",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "World",
+  "ldCategory": "Beverage",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1.25 cups frozen berries (I used a mix of strawberries, raspberries and blueberries)",
+    "1.5 cups milk",
+    "1/2 cup rolled oats",
+    "1  frozen banana",
+    "2-3 teaspoons maple syrup",
+    "1/4 cup water",
+    "1/2 teaspoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Pulse oats in a food processor.",
+    "Transfer the pulse oats along with all other ingredients to a blender.",
+    "Blend till everything is well combined and smooth.",
+    "Pour the Berry Oat Smoothie into glasses and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "312 kcal",
+    "carbohydrateContent": "52 g",
+    "proteinContent": "9 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "18 mg",
+    "sodiumContent": "83 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "29 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.25 cups frozen berries, I used a mix of strawberries, raspberries and blueberries",
+    "▢ 1.5 cups milk",
+    "▢ 1/2 cup rolled oats",
+    "▢ 1 frozen banana",
+    "▢ 2-3 teaspoons maple syrup",
+    "▢ 1/4 cup water",
+    "▢ 1/2 teaspoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

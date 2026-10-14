@@ -1,0 +1,58 @@
+{
+  "url": "https://muybuenoblog.com/bltta-tortas/",
+  "slug": "bltta-tortas_muybuenoblog_269121b9",
+  "title": "BLTTA Tortas",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T20:17:49.549Z",
+  "ldName": "BLTTA Tortas",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Main Course",
+  "ldKeywords": "BLT sandwich, BLT subs, Mexican sub",
+  "ldIngredientsRaw": [
+    "2  bolillos",
+    "1  avocado (peeled, pitted and coarsely mashed)",
+    "2 tablespoons mayonnaise",
+    "kosher salt (to taste)",
+    "4 slices Applegate Natural Oven Roasted Turkey Breast",
+    "4 slices  cooked Applegate Organics Sunday Bacon Brand",
+    "lettuce",
+    "1   tomato (thinly sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Cut bolillos in half lengthwise.",
+    "In a small bowl, combine the avocado and mayonnaise and mix well. Season with salt.",
+    "To assemble tortas, spread avocado mayonnaise on torta. Add bacon, lettuce, tomato, and turkey."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "474 kcal",
+    "sugarContent": "7 g",
+    "sodiumContent": "646 mg",
+    "fatContent": "29 g",
+    "saturatedFatContent": "4 g",
+    "carbohydrateContent": "44 g",
+    "fiberContent": "9 g",
+    "proteinContent": "13 g",
+    "cholesterolContent": "20 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 bolillos",
+    "▢ 1 avocado, peeled, pitted and coarsely mashed",
+    "▢ 2 tablespoons mayonnaise",
+    "▢ kosher salt, to taste",
+    "▢ 4 slices Applegate Natural Oven Roasted Turkey Breast",
+    "▢ 4 slices  cooked Applegate Organics Sunday Bacon Brand",
+    "▢ lettuce",
+    "▢ 1  tomato, thinly sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

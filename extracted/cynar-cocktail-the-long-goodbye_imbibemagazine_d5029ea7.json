@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cynar Cocktail: The Long Goodbye",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the soda water to a Collins glass. Shake the remaining ingredients with ice. Double-strain into a Collins glass. Top with ice, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Simple Syrup",
+        "unit": "oz",
+        "notes": "2:1",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "15718e7d6e318c50b0e7d809c4d4e55a458c79888bc33a57e822e44d9310a02a",
+    "lineage_hash": "66a7c3516010a4020dbf8b46e663dcc7b4524891820d7f52e2b72b6ba30b095c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cynar-cocktail-the-long-goodbye/",
+    "fetchedAt": "2026-08-03T18:05:05.329Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cynar-cocktail-the-long-goodbye/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

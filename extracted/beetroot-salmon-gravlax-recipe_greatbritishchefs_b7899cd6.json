@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Beetroot Salmon Gravlax",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the salmon, check the fish to ensure there are no pin bones or stray scales. Place skin-side down into a narrow dish or, alternatively, a large re-sealable bag",
+      "Combine the beetroot juice, liquorice, soy and cardamom in a bowl to make the curing mixture. Completely cover the salmon in the cure and marinate for 36 hours, turning the salmon over after 24 hours",
+      "After curing, remove the salmon from the liquid, lightly rinse under cold water for 3-4 minutes and pat dry. At this stage, the fish should be firmer in texture and stained red from the beetroot and soy. Leave uncovered and return to the fridge to dry cure for a further 8 hours",
+      "To make the coleslaw, finely slice the kohlrabi, beetroot, fennel, jicama and apple into strips using a mandoline or Julienne peeler and combine in a bowl. Add the lemon juice, chopped dill and a pinch of salt. Toss to coat and set aside until required",
+      "For the dressing, add the crème fraîche, lemon juice, water and yuzu to a bowl and mix well until combined. Season to taste",
+      "Using a sharp fish knife, cut the cured salmon into thin slices using a long, smooth slicing action in the direction away from the tail",
+      "Break the crispbreads into smaller, portion-sized pieces and top with some coleslaw. Drape the salmon slices over the top, drizzle over some dressing and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Side of Salmon",
+        "unit": null,
+        "notes": "skin on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquorice Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "ground",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kohlrabi",
+        "unit": null,
+        "notes": "medium in size",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Beetroot",
+        "unit": null,
+        "notes": "medium in size",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "medium in size",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jicama",
+        "unit": null,
+        "notes": "medium in size",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apple",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispbread",
+        "unit": "large",
+        "notes": "preferably Peter’s Yard 242mm",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4a29ed35fd043a33979916423ba438597d65c6da6313116efd1159f32ce1710",
+    "lineage_hash": "4ef8d843cbda282bbb741317aa9a32c740eef8cb931e1aae5b8855e8ff82803a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beetroot-salmon-gravlax-recipe",
+    "fetchedAt": "2026-08-03T16:15:47.177Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beetroot-salmon-gravlax-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

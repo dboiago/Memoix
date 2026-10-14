@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chartreuse Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, add ice, then shake until chilled. Strain into a glass and garnish.",
+      "Sage Syrup: Combine 8 oz. of water and 8 oz. of white sugar in a small saucepan over medium-high heat, stirring occasionally until the sugar is dissolved. Add 4 oz. of fresh sage leaves to the syrup and allow them to steep, keeping the burner on medium until the water begins to change color and the leaves start to wilt. Stir, then turn the heat to low and allow the syrup to cool. Strain, bottle, and store for use in the refrigerator for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0839faaa68703ca25b8d9c97272baa29d6d145a00b6c085dfce80464236db0c8",
+    "lineage_hash": "0ed9a581921abfca0c61bcfc49257b503e9c090ee1b4e886e955d7c808b65def"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chartreuse-daiquiri/",
+    "fetchedAt": "2026-08-03T18:10:15.315Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chartreuse-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

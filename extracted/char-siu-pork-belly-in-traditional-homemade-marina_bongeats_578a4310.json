@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Char Siu Pork Belly in Traditional Homemade Marinade (No Colour)",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "581",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Scrub the pork belly clean using some flour as abrasive. Wash and rinse multiple times until the water runs clear. Pat dry completely.",
+      "Remove the skin, and divide the pork in 5-cm-thick strips or sections.",
+      "Prick the meat to allow the marinade to seep in.",
+      "Mix all the ingredients of the marinade together. Massage it into the meat.",
+      "Transfer to an airtight container, and let it marinate for at least 24 hours in the fridge. If you intend to cook this at a later date, store it in the freezer. It'll keep for months!",
+      "When you are ready to cook, take the meat out of the freezer and let it defrost completely.",
+      "Lay it out on a foil-lined baking tray, and cook in a 180°C oven for 40 mins.",
+      "While the pork is cooking in the oven, prepare the basting liquid and the glaze.",
+      "_For the basting liquid_: Transfer any leftover marinade to a small bowl. Microwave it for 1 minute. Set aside.",
+      "_For the glaze_: In a saucepan, add the rock sugar, water and oil, and cook until the sugar dissolves and turns slightly brown. Squeeze in some lime juice to check crystallisation. Remove in a small bowl and set aside. It will become thick and sticky as it cools.",
+      "Once the pork is out of the oven, baste it and place it back in the oven at 150°C for 15 mins.",
+      "After that, take the tray out once again, brush on the glaze, and put it back in the oven one last time at 200°C for just 2 mins until the top is glassy.",
+      "Allow it to cool slightly before slicing. Serve with fresh greens like lettuce, cucumber or blanched bok choy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "kg",
+        "notes": "divided in 5-cm sections",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Char Siu Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Rice Yeast",
+        "unit": "tsp",
+        "notes": "powdered",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4432b712a7380bd52e01ca94f30231d42f18af4dac8bec0e0cae534206ea90de",
+    "lineage_hash": "d356f4170ab5f0ef642a3a50e8151b33bf598e9fcc8387ae3c91cf144f9b5ae6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/char-siu-pork-belly",
+    "fetchedAt": "2026-08-01T17:59:45.694Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/char-siu-pork-belly",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

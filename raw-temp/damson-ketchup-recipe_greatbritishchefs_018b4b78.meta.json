@@ -1,0 +1,42 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/damson-ketchup-recipe",
+  "slug": "damson-ketchup-recipe_greatbritishchefs_018b4b78",
+  "title": "Damson Ketchup Recipe",
+  "byline": "by GBC Kitchen",
+  "fetchedAt": "2026-08-03T06:22:40.252Z",
+  "ldName": "Damson ketchup",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "80g of cooked beetroot, (approx. 1 medium beetroot)",
+    "1 tbsp of olive oil",
+    "1 red onion, diced",
+    "1 star anise",
+    "2 cloves",
+    "1/2 cinnamon stick",
+    "1 bay leaf",
+    "350g of damsons, washed and any insects removed",
+    "80g of sugar",
+    "30ml of red wine vinegar",
+    "50ml of water",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by halving and removing the stones from the damsons",
+    "Pour the olive oil into a large saucepan and add the onions, star anise, cinnamon, cloves and bay leaf. Season with a pinch of salt and cook until the onions are soft and translucent",
+    "Add the damsons with the cooked beetroot, vinegar, sugar and water and simmer for 10–15 minutes or until the damsons have broken down and released their juices",
+    "Transfer the contents of the pan (discarding the whole spices and bay leaf, unless you want a very spiced flavour) to a blender and blitz for a few minutes until you're left with a smooth purple ketchup",
+    "Taste and season with salt. Damsons can vary in their sourness so you may want to adjust sugar levels or add a splash more water until you are happy with the taste",
+    "Leave to cool then store in the fridge for up to 2 weeks"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

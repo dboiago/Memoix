@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Sauteed Potato (Cumin Chili Home Fries)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "147",
+      "carbohydrateContent": "19.4",
+      "fatContent": "7.1",
+      "proteinContent": "2.4"
+    },
+    "directions": [
+      "Add potatoes to a medium pot and water to cover potatoes. Bring to a boil, and continue to boil until the potatoes just turn soft, about 5 minutes.",
+      "Once done, rinse the potatoes with cold tap water to stop cooking. Drain potatoes thoroughly and let them dry a bit. This helps crisp up the potatoes.",
+      "Mix the chili flakes, cumin powder, and ground Sichuan peppercorn powder in a small bowl.",
+      "Heat oil in a large non-stick skillet and heat over medium-high heat until hot. Add the potato and sprinkle with the salt. Stir a few times to coat well with oil then spread out into a single layer without overlapping. Cook, stirring occasionally, until the surfaces turn golden crispy, about 8 minutes or so. Add the garlic, green onion, and sprinkle with the spice mix. Pour in a bit of oil if the potatoes look dry. Cook and stir until everything is mixed well together. Serve hot as a side or as breakfast with sunnyside eggs."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes (about 2 Small Russet Potatoes)",
+        "unit": "lb",
+        "notes": "450 g, *Footnote 1, cut into 1” (1.5 cm) pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Flakes",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bf58b381ec648f173a79dd874c800d54629a9437975708d5820fc1dfb6aa01f",
+    "lineage_hash": "7628ab598f1b16608ab1c17694d21b9418b3d6c8a589437cff5f60dc278247d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/sauteed-potato/",
+    "fetchedAt": "2026-08-02T01:52:42.231Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/sauteed-potato/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

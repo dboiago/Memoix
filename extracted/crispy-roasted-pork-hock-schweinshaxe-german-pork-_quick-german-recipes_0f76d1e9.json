@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Crispy Roasted Pork Hock (Schweinshaxe)",
+    "time": "2 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the vegetables, salt, peppercorns, and pork knuckles in a large pot.",
+      "Add hot water to cover and bring to a boil over high heat. Reduce the heat to a simmer and cook until the meat is just tender, about 2-3 hours. Do not overcook.",
+      "Remove the knuckles with a large slotted spoon. Strain the rest, keeping both the vegetables and cooking liquid.",
+      "Preheat the oven to 425°F (218°C).",
+      "Make sure the knuckles are well drained and place them in a standing position in a large roasting pan along with the drained cooked vegetables and a small amount of the cooking liquid—just enough to cover the meat part and not the fat layer. Score the thick layer of skin and fat with a sharp knife.",
+      "Bake for 30 minutes in the preheated oven, adding more cooking liquid if it evaporates in order to keep the meat tender. The internal temperature should be at least 165°F (74°C).",
+      "If the fat layer isn’t brown and crispy, turn on the broiler and continue browning. Keep watch that it doesn’t burn. This could take 5-10 minutes.",
+      "Serve the knuckles with potatoes and sauerkraut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "well cleaned\nand diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Rib",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "6 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": "3 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meaty Pork Knuckles (see Tips)",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a32480d0231aaba797e3a0d4ad810898c28397244b9aef7a43d8ab71305aebc7",
+    "lineage_hash": "a2cb9cf96e0a89a754c070e7ea24618dee8c2a349ac7eaf917a28764ea15862d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/pork-hocks-recipe.html",
+    "fetchedAt": "2026-09-25T19:57:38.172Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/pork-hocks-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

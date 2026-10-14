@@ -1,0 +1,245 @@
+{
+  "recipe": {
+    "name": "Dhaba Style Dal Fry",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat ghee in a pressure cooker, add tuvar dal and moong dal to the pressure cooker and roast for 2-3 minutes.",
+      "Add in ginger, salt, turmeric powder, red chilli powder, salt and green chilli. Mix well.",
+      "Add water, cover and allow to cook for 3 whistles.",
+      "Meanwhile, heat ghee in a pan, add cumin seeds, ginger and garlic, saute till fragrant.",
+      "Add onions and saute till translucent. Add chilli powder, turmeric powder and salt, mix well. Cook for 2-3 minutes, till the rawness of the spices is gone.",
+      "Add the boiled dal to this tempering and allow to cook for simmer for 3-4 minutes",
+      "Meanwhile, prepare the second tempering.",
+      "Heat ghee in a pan, add some water. Add garlic cloves, whole dry kashmiri red chillies, asafoetida, kashmiri red chilli powder and mix well.",
+      "Cook till it splutters.",
+      "Pour the prepared dal into a serving dish, garnish with coriander leaves.",
+      "Pour the prepared tempering and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Tuvar Dal",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "½",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Moong Dal",
+        "unit": "Tbsp",
+        "notes": "soaked",
+        "amount": "3",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3-4",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Dry Kashmiri Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For 2nd Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf980544e15d5127a349d9f710f19826a310d6c6a47c70d25ff3411f8282588d",
+    "lineage_hash": "e1db3b726018c42c0230af76144cc69ec87b9a2d0dd49c4632af6406f13381ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-style-dal-fry/",
+    "fetchedAt": "2026-08-02T00:03:05.720Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-style-dal-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

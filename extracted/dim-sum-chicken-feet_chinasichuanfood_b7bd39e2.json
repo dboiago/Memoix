@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Dim Sum Chicken Feet",
+    "time": "1 hr 25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "284",
+      "carbohydrateContent": "4",
+      "fatContent": "19",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "Cut the claws off and any dirty parts on the chicken feet. You can choose to keep them as whole pieces or cut them into smaller ones.",
+      "Add water in a wok, place scallion, ginger and cooking wine. Cook the chicken feet for around 2 minutes after the water boils.",
+      "Transfer out, wash carefully. Then dry completely. This is a very important step to avoid the oil splattering out during the cooking process. If time is enough, I will recommend you place the chicken feet for air frying to make sure there is no water on the surface.",
+      "Heat oil in a wok and add the chicken feet into deep fry until it turns dark golden brown. It is extremely important to make sure the water content is removed by the deep-frying process so the tiger skin can be achieved. It may take around 12 to 18 minutes.",
+      "If you don't want deep-fry, you can choose to air fryer the chicken feet. Spread some oil on the drained chicken feet. Put into an air fryer preheated at 375°F. Leave to fry for about 10 to 12 minutes until the skin is completely dried.",
+      "Transfer the chicken feet into iced water. And soak for around 1 hour.",
+      "Place the soaked chicken feet in boiling water, and continue cooking for 8 to 12 minutes based on how soft you want them to be.",
+      "Add dou-chi, garlic, ginger, and chili paste if using a small amount of oil. Fry over a small fire until aromatic. Add in dark soy sauce and light soy sauce.",
+      "Pour in starch water. Let it simmer for a while.",
+      "Return the chicken feet. Coat well, and serve hot. You can make larger batches and then re-steam them for the next serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Feet",
+        "unit": "g",
+        "notes": "12 to 15 ones",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water for Soaking the Chicken Feet",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Pepper",
+        "unit": null,
+        "notes": "optional, fresh, finely chopped",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": "optionally",
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water for Braising",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Starch water",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Starch water",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "592816b8a9ca724974cb298992b42246acde4daf1426c65000e0609e07ce4fe4",
+    "lineage_hash": "9648c0492e4ba9c9ca3466bb6be19c2c3e5a3cf5289f3ea61a80942344ab116e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/dim-sum-chicken-feet/",
+    "fetchedAt": "2026-08-01T22:46:38.483Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/dim-sum-chicken-feet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

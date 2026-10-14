@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Creamy Potato Soup with Mushroom & Pine Nuts",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "DK",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large pot, add potatoes and cover with cold water. Add garlic and cumin and bring to a boil heat, then simmer for about 20 minutes until potatoes are fork tender. Reserve the liquid.",
+      "Place a sauté pan over medium-high heat. Add oil into the pan and tilt to evenly coat the bottom. (Let the pan come to temperature - this will allow for even browning). When the oil begins to shimmer, arrange the mushrooms in a single layer and cook, undisturbed, until bottom sides are evenly browned, about 3 minutes. Flip the pieces and repeat on the other side.",
+      "Once the mushrooms are evenly browned, add the pine nuts and 25g of butter and let melt. Once the butter has melted, add the smoked mushroom garum to evenly coat the mushrooms. Set aside in a small bowl.",
+      "With a ladle, add the boiled potatoes and 0.5L of the reserved liquid into a blender. Add the remaining butter, olive oil, milk, and half of the cream. Begin blending on a low setting, then gradually adjust to blend on high to form a smooth nappe. This process will occur quite quickly. Use the back of a wooden spoon to test the consistency – the mixture should stick to the back of the spoon. If it’s too thick, gradually add the remaining half of the cream.",
+      "In a small bowl, ladle in soup and garnish with mushroom and pine nuts, top with black pepper, chopped tarragon, and a generous drizzle of olive oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": "toasted & ground",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "divided",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "alt: veg/chicken stock",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": "divided",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "thickly sliced about 1 cm",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "30-40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom Garum",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": null,
+        "notes": "diced to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly cracked to taste",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b72b8c6bba0b8ad1f268a24126cc2b24c5f249f8f327d792e7781743b094bf4f",
+    "lineage_hash": "8e66f729fae7623dd7e806f5f1b60a74134352380e842c374336f4edd0bfd033"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://nomaprojects.com/blogs/recipes/creamy-potato-soup-with-mushroom-pine-nuts",
+    "fetchedAt": "2026-08-01T18:36:54.029Z"
+  },
+  "rawSource": "https://nomaprojects.com/blogs/recipes/creamy-potato-soup-with-mushroom-pine-nuts",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

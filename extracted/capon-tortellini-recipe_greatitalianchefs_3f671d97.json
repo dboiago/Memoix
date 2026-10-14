@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Capon Tortellini",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the pasta dough. Knead the ingredients together until the dough is smooth and elastic. After about 5 minutes, the dough should bounce back if you push it with your thumb. Allow to rest for 30 minutes in the fridge",
+      "Blanch the capon in a pan of salted boiling water for 2 minutes, then transfer to a large pan of cold water. Bring to a gentle simmer and cook for 2 1/2 hours",
+      "Place the onions in a hot dry pan and char until dark on one side. Add them to the pan with the capon, along with the carrots, celery and parsley. Cook for a further 30 minutes",
+      "After 3 hours in total, lift the capon from the stock and insert a skewer into the thigh, if the juices run clear it is cooked. Return to the pan and allow to cool in the stock",
+      "Once cooled, pick all the meat from the bones. From an average bird you'll get around 1kg of meat. Measure out 150ml of the stock for the filling – you can use the rest of the stock for soups or sauces",
+      "Transfer 1kg of the meat and 150ml stock to a stand mixer fitted with a flat beater. Blend with the remaining filling ingredients until mixed thoroughly, then transfer to piping bags until ready to use",
+      "To make the sauce, peel and finely chop the Jerusalem artichokes. Place in a pan with 130ml of water and the ascorbic acid and boil until soft",
+      "Drain thoroughly and place the liquid in an ovenproof bowl (reserving the flesh). Place some cedar wood chips in a foil tray, set alight and place a wire rack on top. Place the bowl of artichoke liquid on the rack, place in the oven and leave to smoke for 1 hour (you could also do this in a smoker if you have one)",
+      "Reduce the vermouth to a thick syrup and add to a blender with the smoked Jerusalem artichoke liquid and flesh, oil and salt. Blitz until you have a smooth sauce",
+      "To form the tortellini, use a pasta machine to roll out the dough to a thickness of 6mm. Cut the pasta into 5x5cm squares and pipe 4g of the filling into the centre of each square",
+      "Brush egg yolk around the edge, then fold into tortellini shapes by folding the dough corner to corner around the casing (ensuring all the air has been removed) and bringing the two folded corners together to meet. Keep the rolled out dough under a slightly damp cloth to prevent it from drying out",
+      "Continue until you have 18 tortellini per serving. Cook the pasta in salted boiling water for 2 minutes",
+      "Blend the cloves to a powder in a spice grinder",
+      "Strain the pasta, transfer to a bowl and add a drizzle of olive oil and 25g of the sauce per serving. Combine well and plate with a dusting of powdered clove"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "around 12 medium yolks",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ascorbic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "g",
+        "notes": "finely ground",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "about 4–5 yolks",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jerusalem Artichoke",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ascorbic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Chips",
+        "unit": null,
+        "notes": "preferably cedar",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": "to seal the tortellini",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "353e20885c12c282b41e92c37cdae3682228bd47d6d5881b47c6773a71e12167",
+    "lineage_hash": "55387cf5663bfff208c9f958eb480f95476f00b2d529ee5ea14f3ec474f4644d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/capon-tortellini-recipe",
+    "fetchedAt": "2026-08-02T00:07:04.584Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/capon-tortellini-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

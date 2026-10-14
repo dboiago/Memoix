@@ -1,0 +1,56 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-spinach-and-peanut-salad/",
+  "slug": "chinese-spinach-salad-with-peanuts_omnivorescookbook_dd209b07",
+  "title": "Chinese Spinach Salad with Peanuts (老醋菠菜花生)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:35:42.707Z",
+  "ldName": "Chinese Spinach Salad with Peanuts (老醋菠菜花生)",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1/2 lb (225 g) spinach (, tough ends removed and rinsed thoroughly)",
+    "1 tablespoon Chinkiang vinegar",
+    "1 teaspoon light soy sauce ((or soy sauce))",
+    "1 teaspoon sugar",
+    "1/4 teaspoon salt",
+    "2 teaspoons ginger (, minced)",
+    "1/4  scant cup salted roasted peanuts (, coarsely chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Bring a large pot of water to a boil. Add spinach and cook over medium heat until cooked through, about 1 minute. Drain, quickly rise with cold tap water, then drain again. Squeeze extra water out of the spinach with both hands. Chop spinach into pieces about 3” (8 cm) in length and transfer a serving bowl.",
+    "Combine black vinegar, light soy sauce, sugar, salt, and ginger in a small bowl, mix well.",
+    "Right before serving, top the spinach with peanuts and drizzle with the vinegar sauce. Serve immediately as a cold appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "73 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "4.1 g",
+    "fatContent": "4.8 g",
+    "saturatedFatContent": "0.7 g",
+    "sodiumContent": "269 mg",
+    "fiberContent": "2.1 g",
+    "sugarContent": "1.6 g"
+  },
+  "htmlIngredientLines": [
+    "1/2 lb (225 g) spinach , tough ends removed and rinsed thoroughly",
+    "1 tablespoon Chinkiang vinegar",
+    "1 teaspoon light soy sauce (or soy sauce)",
+    "1 teaspoon sugar",
+    "1/4 teaspoon salt",
+    "2 teaspoons ginger , minced",
+    "1/4 scant cup salted roasted peanuts , coarsely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

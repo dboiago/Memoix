@@ -1,0 +1,239 @@
+{
+  "recipe": {
+    "name": "Easy Egg Ghee Roast Masala (Mangalorean spl Egg Curry)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a stock pot, add ghee, once it's hot, add onions and saute for 2-4 minutes.",
+      "Add tender coriander stem, black peppercorn, black cardamom, water, cashewnut, salt to taste, tamarind and simmer it for a while.",
+      "Blend the mixture with the help of a hand blender and grind it to smooth puree.",
+      "Strain the stock and keep it aside for further use.",
+      "In a bowl, add soaked bedgi dry red chillies and garlic cloves.",
+      "Transfer it to a grinder jar and grind into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a handi, add ghee, once it's hot, add cinnamon stick, prepared paste and saute it for 4-5 minutes.",
+      "Gradually add stock, salt to taste, curry leaves and cook it on medium flames for a while.",
+      "Add ghee and let it simmer until oil is separated.",
+      "Add boiled eggs and cook it well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with lachha paratha or neer dosa."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cashew Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Bedgi Red Chillies",
+        "unit": null,
+        "notes": "seedless & soaked overnight",
+        "amount": "10-12",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Stock",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "2",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Stock",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "No. Boiled Eggs",
+        "unit": null,
+        "notes": "hard",
+        "amount": "6-7",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "For Anda Ghee Roast",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78673b164629114d7b1a180f80fe6c9bc8b4592aefeb380ae2b03445f58c84fd",
+    "lineage_hash": "1d3d977a87cdb986a9906a1750b3dae4edad88e53198eb393a0dcdbf157ea9a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/egg-ghee-roast-masala/",
+    "fetchedAt": "2026-08-02T20:06:26.054Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/egg-ghee-roast-masala/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/sichuan-spicy-shrimp-stir-fry/",
+  "slug": "chinese-chili-garlic-shrimp_omnivorescookbook_d50490dd",
+  "title": "Chinese Chili Garlic Shrimp",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T05:31:14.698Z",
+  "ldName": "Chinese Chili Garlic Shrimp",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "takeout",
+  "ldIngredientsRaw": [
+    "1 lb  raw shrimp (, peeled &amp; deveined (*Footnote 1))",
+    "1 teaspoon Shaoxing wine ((Optional))",
+    "1/2 teaspoon salt",
+    "1 1/2 tablespoons cornstarch",
+    "1 tablespoon all-purpose flour",
+    "1/4 cup chili garlic sauce",
+    "2 tablespoons brown sugar",
+    "2 teaspoons light soy sauce ((or soy sauce))",
+    "4 1/2 tablespoons peanut oil ((or vegetable oil))",
+    "1 tablespoon minced ginger"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the shrimp and Shaoxing wine in a medium-sized bowl. Sprinkle evenly with salt. Mix until the salt is evenly dispersed. Set aside while preparing the rest of the ingredients.",
+    "Combine all the sauce ingredients in a bowl and stir until the brown sugar is dissolved. Set aside.",
+    "Heat 4 tablespoons of oil (or just enough to cover the bottom of the pan) in a medium-sized skillet until hot. Meanwhile, add the cornstarch and all-purpose flour to the bowl with the shrimp. Toss until the shrimp are fully coated.",
+    "Shake the extra flour off the shrimp and add them to the pan. You might need to cook them in two batches. Let the shrimp cook without touching them, until the bottom turns golden, 2 to 3 minutes. Flip to brown the other side, another 2 to 3 minutes. Once done, transfer the shrimp to a large plate without overlapping and keep cooking the rest.",
+    "Once you’re done cooking the shrimp, turn off the stove and use paper towels to wipe the pan to remove any residue.",
+    "Add the remaining 1/2 tablespoon of oil to the pan and heat over medium heat. Add the ginger and stir until fragrant, about 1 minute.",
+    "Add the sauce to the pan. Cook and stir until the sauce becomes thick and glossy, 20 to 30 seconds.",
+    "Turn the heat off and return the shrimp into the pan, tossing to coat thoroughly. Serve hot as a main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "201 kcal",
+    "carbohydrateContent": "9.1 g",
+    "proteinContent": "6.3 g",
+    "fatContent": "15.8 g",
+    "saturatedFatContent": "2.7 g",
+    "cholesterolContent": "53 mg",
+    "sodiumContent": "517 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "4.8 g"
+  },
+  "htmlIngredientLines": [
+    "[Shrimp]",
+    "1 lb  raw shrimp , peeled & deveined (*Footnote 1)",
+    "1 teaspoon Shaoxing wine (Optional)",
+    "1/2 teaspoon salt",
+    "1 1/2 tablespoons cornstarch",
+    "1 tablespoon all-purpose flour",
+    "[Sauce]",
+    "1/4 cup chili garlic sauce",
+    "2 tablespoons brown sugar",
+    "2 teaspoons light soy sauce (or soy sauce)",
+    "[Stir Fry]",
+    "4 1/2 tablespoons peanut oil (or vegetable oil)",
+    "1 tablespoon minced ginger"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

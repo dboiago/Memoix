@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Betty Lou’s Bourbon Balls",
+    "time": "8 hours 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large mixing bowl, cream together the butter, sugar, bourbon, chopped pecans and vanilla with a fork until smooth. Cover the bowl and chill in the refrigerator for 8 hours, or overnight.",
+      "Roll the candy into 1- to 2-inch balls, working quickly so the mixture doesn’t melt from the heat of your hands. Transfer the balls to a baking sheet lined with waxed paper, then freeze them overnight.",
+      "Slowly heat the chocolate in a double boiler or microwave until just melted, then stir until smooth.",
+      "Line a baking sheet with waxed paper. Remove the balls from the freezer. Spear a candy ball with a toothpick and dip into the melted chocolate to coat, using a spoon if easier. Roll off the excess chocolate and transfer each ball to the baking sheet. Use a second toothpick to gently push the candy off the dipping toothpick.",
+      "Top the ball with a pecan half, covering the toothpick mark, then repeat with the remaining balls. Move the baking sheet to the refrigerator to cool until the chocolate has set.",
+      "TIP: To keep the candy from becoming too soft, work in smaller quantities. Melt the chocolate in batches, and only remove as many balls from the freezer and you can work with at one time. Once set, the bourbon balls will keep in a cool, dark container for up to a month, or longer in the freezer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "coarsely chopped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate Chips",
+        "unit": "oz",
+        "notes": "alt: chopped chocolate",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0f0cb1e8d497be970a36f7df3947e20b626f754907b6c2fc798c19d40100cb06",
+    "lineage_hash": "755eb56b1f254504a7e96e72ae677c32d98793231a725ed353279769a4b986e3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-balls/",
+    "fetchedAt": "2026-08-03T18:22:41.117Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

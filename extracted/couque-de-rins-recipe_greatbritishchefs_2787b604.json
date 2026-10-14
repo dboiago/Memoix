@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Couque de Rins",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the honey and sugar in a medium saucepan over a low heat and remove from the heat just before it starts to boil, at the moment when the honey starts to move inward. Put the flour, potassium carbonate and cinnamon into a large bowl and make a well in the centre, then pour in the hot honey mixture and stir with a sturdy wooden spoon. The dough will seem too runny, but will firm up after a night’s rest. Set aside to rest overnight",
+      "Preheat the oven to 210°C/gas mark 7. Do not use the fan setting. Line a baking tray with baking paper",
+      "Scrape the dough out of the bowl and knead on a floured work surface until it is no longer crumbly and sticky",
+      "Roll out until 5 mm thick and use a 7 cm diameter cutter to cut out rounds. Lay them on the baking tray with ample space between them, as they will spread to 10 cm diameter",
+      "Bake for 10 minutes or until golden, not golden brown. Transfer to a wire rack to cool, then keep in an airtight container for up to 3 weeks"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "270",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potassium Carbonate Powder",
+        "unit": "g",
+        "notes": "sometimes this is sold as crystals, but you can crush them to powder using a mortar and pestle",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "704a9aabca56d0286a791366d07eab5c1a4f8aa54abde9342fdb3c8482641d1d",
+    "lineage_hash": "a05be2f74523a916b7fddf18a9b5ac668b33319840d99a94c2c4841bd514a0b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/couque-de-rins-recipe",
+    "fetchedAt": "2026-08-02T16:39:21.523Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/couque-de-rins-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

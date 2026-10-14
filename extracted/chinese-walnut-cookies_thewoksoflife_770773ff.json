@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Walnut Cookies",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "461",
+      "carbohydrateContent": "49",
+      "fatContent": "27",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Sift the cake flour, baking soda and baking powder together and set aside. Mix the butter, sugar, and salt in a large mixing bowl, stir thoroughly until the mixture is creamed. Now add the flour mixture to the butter mixture along with the finely chopped walnuts. Beat the egg, put aside 2 teaspoons of the beaten egg and add the rest to the dough mixture. Work the mixture into a dough ball. You can do this by hand or with an electric mixer. Just note that the dough might be lightly crumbly, but it should come together when you take the time and work it into a ball.",
+      "Line a baking sheet with parchment paper. On a clean surface, divide the dough into 12 equal pieces and roll each into a ball, position them on the baking sheet a couple inches apart. All of the cookies should fit onto one pan.",
+      "Take the walnut halves and gently press one into each cookie. Let the cookies rest for 15 to 20 minutes while covered with a clean kitchen towel.",
+      "While that’s happening, preheat the oven to 350 degrees F. Once the dough is done resting, brush each with the beaten egg that you put aside and then bake for 20 minutes. Turn off the oven and let the cookies sit inside the oven for another 5 minutes before taking them out. Let cool and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": "270 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "2 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "alt: lard, 4 oz or 115g, at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "115 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten and divided; the egg I used weighed about 62 g with shell on",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Walnuts",
+        "unit": "C",
+        "notes": "75 g, finely, chopped, plus 12 raw walnut halves",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2355fa2c852af47627173345f64c030fbca6da84cc3388306445220664886e7a",
+    "lineage_hash": "a3af300dbf9ee8ac5076d20d60203171671e479d4cf7c3d93d51a4fce20642db"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-walnut-cookies/",
+    "fetchedAt": "2026-08-02T11:28:11.867Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-walnut-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

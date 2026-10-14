@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Dunmore Cobbler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cobbler",
+    "garnish": [
+      "Angostura Bitters"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with crushed ice and pour into a chilled glass. Dash bitters on top; garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amontillado Sherry",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "oz",
+        "notes": "such as Small Hand Foods, or homemade",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blended Scotch Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4899c9c0ffebb095b4bf79f10e63f0e5c9e910d4beb5798dd98feb9df620875c",
+    "lineage_hash": "c7298f8ed745f47e00612560b077dac0b1151e7ea5619f9e0e0d66bb0eb8ddc3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dunmore-cobbler-recipe/",
+    "fetchedAt": "2026-08-03T23:34:08.912Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dunmore-cobbler-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

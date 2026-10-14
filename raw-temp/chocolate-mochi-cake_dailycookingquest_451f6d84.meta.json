@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/chocolate-mochi-cake.html",
+  "slug": "chocolate-mochi-cake_dailycookingquest_451f6d84",
+  "title": "Chocolate Mochi Cake",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:01:11.448Z",
+  "ldName": "Chocolate Mochi Cake",
+  "ldTime": "PT1H15M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "16"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Dessert",
+  "ldKeywords": [
+    "Hawaiian butter mochi cake, chocolate version",
+    "Rice"
+  ],
+  "ldIngredientsRaw": [
+    "1 cup mochiko (sweet rice flour)",
+    "1 cup sugar",
+    "1/4 teaspoon salt",
+    "1 1/2 teaspoon baking soda",
+    "1/4 cup unsalted butter",
+    "1/2 cup semi-sweet chocolate",
+    "1 can (12 ounce) evaporated milk",
+    "1 teaspoon vanilla",
+    "1 egg"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 Fahrenheit (180 Celcius). Grease an 8\"x8\" cake pan and set it aside.",
+    "Sift together mochiko, sugar, salt, and baking soda. Set aside.",
+    "Melt butter and chocolate in a small saucepan over low heat, then transfer it into a clean mixing bowl.",
+    "Using an electric mixer on low speed, slowly add evaporated milk, vanilla, and egg into the butter and chocolate mixture.",
+    "Using an electric mixer on low speed, slowly add evaporated milk, vanilla, and egg into the butter and chocolate mixture.",
+    "Pour the cake batter into the prepared pan. Bake in the preheated oven for 50-60 minutes or until the cake no longer jiggles.",
+    "Remove the pan from the oven, and let the cake cool completely in the pan. Slice the cake into 16 pieces and serve at room temperature.",
+    "Store the leftovers in an airtight container at room temperature. Please consume the cake within two days, and please do not refrigerate the cake."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 cup mochiko (sweet rice flour)",
+    "1 cup sugar",
+    "1/4 teaspoon salt",
+    "1 1/2 teaspoon baking soda",
+    "1/4 cup unsalted butter",
+    "1/2 cup semi-sweet chocolate",
+    "1 can (12 ounce) evaporated milk",
+    "1 teaspoon vanilla",
+    "1 egg"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

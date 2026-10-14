@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Alternative Medicine from Sparrow",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake to chill. Strain into a double Old Fashioned glass over one large ice cube and garnish.",
+      "Black Pepper-Turmeric Apple Brandy: Peel 40 grams of turmeric root, then thinly slice. Lightly crack 5 grams of black peppercorn. Combine the turmeric, black peppercorn, and 1 bottle of bonded apple brandy (Sparrow uses Laird’s) in a non-reactive container. Cover and refrigerate overnight. Strain through cheesecloth.",
+      "Ginger Syrup: Combine 1 part ginger juice to 1½ parts sugar in a blender until the sugar dissolves. Store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Pepper-turmeric Apple Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2431d16dd2b76238aa1d0f458c8ae668bb4381674eee22448c56817cf3193e8a",
+    "lineage_hash": "2694691e18e56668da0f5628ef9e9068f4cbd6e876f975cb947b4d66fd910312"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alternative-medicine-sparrow/",
+    "fetchedAt": "2026-08-03T19:50:47.470Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alternative-medicine-sparrow/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Cilantro Chutney",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a blender and blend until smooth.",
+      "Use as a dressing for grilled, baked or bbq’d meats and or seafood."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch Cilantro",
+        "unit": "small",
+        "notes": "alt: culantro, bandhania",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno Seeded",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento",
+        "unit": null,
+        "notes": "alt: hot pepper optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar Optional",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c079311a85c8a6715266c1ad25a8e7f18f0df652d36f1a61889c8cd6fd674f8e",
+    "lineage_hash": "d162819f046a0b65fa4de7f6dbce7630dec09687a69379d600eab6e07b0c2e8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2020/07/cilantro-chutney-cilantro-dressing/",
+    "fetchedAt": "2026-09-25T19:39:58.106Z"
+  },
+  "rawSource": "https://cookingwithria.com/2020/07/cilantro-chutney-cilantro-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

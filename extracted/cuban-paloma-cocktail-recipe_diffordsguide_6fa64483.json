@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Cuban Paloma Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "172",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of grapefruit wedge.",
+      "SHAKE first 3 ingredients with ice.",
+      "STRAIN into ice-filled glass whilst also pouring grapefruit soda.",
+      "Garnish with grapefruit wedge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Gold Rum 1-3yo",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Grapefruit Soda",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b7fc74ec79fb798f683911c787759578c2cfcfd66f6b1672f98ecf40b5218269",
+    "lineage_hash": "d4f6114ed18a0b480a2807cc3f0a928fa16a321ed32949fc93fe95b5eee93e53"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/38412/cuban-paloma",
+    "fetchedAt": "2026-08-03T21:45:19.468Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/38412/cuban-paloma",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

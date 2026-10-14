@@ -1,0 +1,360 @@
+{
+  "recipe": {
+    "name": "Blackberry Tart",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "There are many different elements to this recipe, all of which can be made in advance (although the arlette and cake are best if made on the same day you plan to serve the dish). If you're planning to tackle this recipe be sure to read it through and come up with a plan of attack. Note the pickled blackberries take 3 weeks and the saffron infusion takes 3 days. We've broken the recipe up into micro-recipes which cover each element to make it easier to follow. Good luck!",
+      "To make the pickled blackberries: place the water, sugar and vinegar in a pan, bring to the boil and remove from the heat. Fill a sterilised jar (or several smaller jars) with the blackberries, packing them down gently until the jar is full. Ladle the hot pickling liquor over the berries until they are completely submerged, then closed and seal the jar. Turn it upside down, leave to cool overnight then store in the fridge for a minimum of 3 weeks to pickle",
+      "To make the saffron infusion: grind the saffron and sugar together in a pestle and mortar, then combine with the vodka. Cover and leave to infuse for 3 days",
+      "To make the meadowsweet ice cream: place the milk, cream and milk powder in a pan over a medium-high heat and bring to 60°C. Remove from the heat, add the dried meadowsweet, cover with cling film and leave to infuse for 10 minutes. Meanwhile, whisk the egg yolks and sugar together and set aside",
+      "Strain the milk mixture through a fine sieve into a clean pan and bring to 52°C. Pour one-third of the warm liquid over the egg yolks, whisking to incorporate, then pour that mixture back into the pan. Stir slowly over a medium heat until the temperature reaches 70°C, then remove from the heat. Pour one-third of the ice cream mixture into a bowl set over an ice bath and leave to cool fully. Once cool, add the yoghurt and blitz with a hand blender to incorporate, then add the rest of the ice cream and blitz once again. Transfer to an ice cream maker and churn according to the manufacturer’s instructions, then store in the freezer until ready to serve. You will need roughly 250g of ice cream for this recipe, so you may have a little leftover",
+      "To make the pumpkin Arlette: preheat an oven to 200°C/gas mark 6. Place the puff pastry on a sheet of baking paper and dust with a little icing sugar. Place another sheet of baking paper on top and begin to roll out the pastry. Every few rolls, lift off the top sheet of baking paper, dust with a little more icing sugar, replace the paper and flip the lot upside-down. Continue this process, dusting and flipping the pastry, until it is paper thin (around 1mm)",
+      "Place the rolled-out pastry, still in between the sheets of baking paper, onto an upside-down baking tray. Top with another baking tray, this time facing up, so it is sandwiched between the two trays (this will keep it flat and thin as it cooks). Bake for 15 minutes, then rotate the tray and bake for another 10 minutes to ensure an even bake. Once the Arlette is caramelised and golden, remove from the oven and gently peel off the top sheet of baking paper. Sprinkle over the pumpkin seeds, place the paper back on top and give it a final roll to secure the seeds in place. Once fully cooled, carefully peel off the paper with the help of a knife, then break the Arlette into large shards and store in an airtight container until ready to serve",
+      "To make the blackberry gel: place the water, apple and malic acid in a small saucepan and bring to the boil. Remove from the heat and add the bay leaves, then cover and leave to infuse for 30 minutes. Strain the liquid through a sieve into a Thermomix, add the blackberry purée and bring to 85°C on speed 4. Add the gellan gum type F and blitz for 10 seconds, then scrape the sides and blitz for another 2 minutes on speed 8 until fully incorporated. Pour the mixture into a bowl set over an ice bath and leave to cool",
+      "Once the gel has set, transfer it back into the Thermomix and blitz on speed 8 for 3 minutes, scraping the sides of the jug where necessary. Transfer the gel to a shallow container, place into a chamber sealer and seal on the lowest setting. Allow the fluid gel to rise to the top of the container, then stop and open the machine. Repeat this process several times until there are no more bubbles in the gel. Pass through a fine sieve, add a little lime juice to taste and refrigerate in a squeezy bottle until required",
+      "To make the saffron cake: preheat an oven to 165°C/gas mark 3. Place the marzipan paste and trimoline into the bowl of a stand mixer with a paddle attachment and start mixing on a low speed. Sift in the gluten-free flour, cornflour and baking powder, then start adding the eggs, incorporating each one before adding the next, until fully combined. With the mixer still running on a low speed add the olive oil and 17.5g of the saffron infusion",
+      "Grease and line a medium-sized baking tray with baking paper and pour the cake batter into it – you want the batter to fill the tray to ensure an even bake. Bake for 20–30 minutes, checking the cake regularly with a skewer to see if it is cooked towards the end of the cooking time. Once cooked and golden, remove the cake from the oven and leave to cool, then cut out 10 circles with a 75mm cutter. Set aside in an airtight container until ready to serve",
+      "To make the meadowsweet powder: place the meadowsweet and sugar in a high-powered blender and blitz to a fine powder. Set aside until required",
+      "To serve the dish: place some of the blackberry gel onto a plate and roll the saffron cakes in it to cover the outside ring. Pour pumpkin seeds onto another plate and then roll the sponges in the seeds – the gel should allow the seeds to stick to the cake. Place a rolled sponge in the centre of each plate and use a 35mm cutter to cut a hole in the centre of each one. Fill this hole with extra thick double cream, then place 6 drops of the saffron infusion and pumpkin oil around the top of each sponge (they should soak into the cake)",
+      "Add a sprinkling of lemon zest on top of each cake, then take shards of the Arlette and use them to top the cake – they should not overlap the top of the sponge by more than 1cm, so you may need to break them into smaller pieces. Place 6 pickles blackberries in a circle on top of each Arlette, with slices of pear rolled up into circles in between. Finish with Greek basil leaves, a medium-sized dot of blackberry gel alongside the cake and dust the meadowsweet powder all over. Finally, place a rocher of the meadowsweet ice cream on top of each tart"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meadowsweet",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puff Pastry",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "g",
+        "notes": "available online, spray-dried",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "0.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum Type F",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marzipan",
+        "unit": "g",
+        "notes": "best quality",
+        "amount": "483",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "207",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gluten-free Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meadowsweet",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": null,
+        "notes": "extra thick",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pear",
+        "unit": null,
+        "notes": "peeled and cut into very fine ribbons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Basil",
+        "unit": null,
+        "notes": "small leaves only",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04c0c228674cb55182015f5414a8e91311e4d8f0e18bd550b2cd4af2b3df8f06",
+    "lineage_hash": "07002526ac89285b183b51c3209a46d33a58cc59b84c46a6c7f959b4934ff0fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-saffron-tart-recipe",
+    "fetchedAt": "2026-08-03T06:18:38.336Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-saffron-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

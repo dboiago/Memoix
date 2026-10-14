@@ -1,0 +1,342 @@
+{
+  "recipe": {
+    "name": "Braised Brisket With Chocolate, Chilli and Crispy Capers",
+    "time": "1 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by preparing the brisket. Mix together all of the ingredients for the spice rub and rub all over the brisket with a pinch of salt",
+      "Place a large ovenproof casserole dish on a medium heat with the vegetable oil. Once it reaches smoking point, sear the brisket on all sides until deeply golden, then remove and turn the heat down to low",
+      "Add the onions, carrots and celery to the pan and sweat until softened but without colour. Add in the garlic and cook for 1 minute until fragrant then stir through the flour. Cook out the flour for 1 minute or so, then stir through the ancho chillies and chipotle chilli paste",
+      "Deglaze with the red wine and turn up the heat slightly. Simmer to reduce the wine by half, then add in the chopped tomatoes and beef stock. Bring to a simmer, season with salt and pepper then add the beef brisket back into the dish",
+      "Cover, transfer to the oven and cook for 4-5 hours until the meat is falling apart",
+      "For the crispy capers, cover the base of a wide pan with vegetable oil. Once shimmering hot, lower in all but 1 tbsp of the capers and fry for around 3 minutes until crisp. Remove with a slotted spoon and drain on kitchen paper. Set aside",
+      "For the lemon gremolata, blitz all of the ingredients except the olive oil in a food processor with the reserved capers. Stir through the olive oil then season to taste with salt and pepper. Remove and set aside",
+      "An hour before you want to eat, make the cumin polenta. Bring the chicken stock to a boil on a high heat then add in the polenta, cumin and garlic powder while whisking well. Turn the heat down to low and cook for 45 minutes, stirring regularly to break up any lumps",
+      "After 45 minutes, add the Taleggio and Parmesan and whisk well to combine. Whisk through the milk and butter to loosen slightly, then taste and season with salt and pepper as needed",
+      "Once the beef is tender and falling apart, remove it from the sauce and shred it using two forks. Set aside briefly",
+      "Put the sauce back on the heat, add the dark chocolate and anchovies, if using, and simmer gently to reduce and thicken it, stirring regularly and adding a slurry of cornflour and water to help thicken the stew if needed. Once thickened to your liking, season to taste with salt and pepper, add the shredded beef back in and stir to coat",
+      "To serve, plate up the polenta into bowls, followed by the stew. Spoon over the gremolata, crispy capers and a final twist of pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chipotle Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Brisket",
+        "unit": "kg",
+        "notes": "trimmed of silverskin and excess fat",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chillies",
+        "unit": null,
+        "notes": "rehydrated in boiling water and finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chopped Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": "optional, roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": null,
+        "notes": "to thicken if needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "g",
+        "notes": "drained and patted dry",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for shallow-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Taleggio",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5db86e98c279e7286038ddc1e1e3006c439e2bd78f5f9b1f59f7007fa6e7efd0",
+    "lineage_hash": "dffb161c4e6f3b931161c3889abdc5ccea38ce2a68a938aaa6ff1fc6b2d1b298"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-brisket-chocolate-chilli-crispy-capers-recipe",
+    "fetchedAt": "2026-08-01T21:18:26.372Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-brisket-chocolate-chilli-crispy-capers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

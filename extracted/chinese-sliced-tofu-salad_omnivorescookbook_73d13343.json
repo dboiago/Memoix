@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Chinese Sliced Tofu Salad (凉拌豆腐丝)",
+    "time": "5 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "108",
+      "carbohydrateContent": "6.9",
+      "fatContent": "6",
+      "proteinContent": "5.4"
+    },
+    "directions": [
+      "Bring a small pot of water to a boil. Add the sliced tofu and stir for a few seconds. Rinse the sliced tofu with tap water, drain thoroughly, and set aside to cool.",
+      "Add sesame oil and garlic into a small bowl. Heat in microwave for 30 seconds, or cook until the oil just starts to bubble and the garlic turns tender.(*Footnote 1)",
+      "Right before serving, add sliced tofu, carrot and bell peppers into a big bowl. Add the sesame oil and garlic, green onion, rice vinegar, salt, and chili oil (if using). Toss to mix well.",
+      "Garnish with cilantro and serve as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tofu",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "or pepper, or celery, slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "or tamari for gluten-free option",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro for Garnish",
+        "unit": "Tbsp",
+        "notes": "Optional, chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a8d30b969d11db9560cb03db71cc55499aa90edf097684ea70e597c958b22fe",
+    "lineage_hash": "712cc30b82e22b3990df0b164e0aa21a25d2f912f4c0a73847d54f9bbeb83027"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/sliced-tofu-salad/",
+    "fetchedAt": "2026-08-01T19:29:26.302Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/sliced-tofu-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Beef Ragù with Brown Butter Gnocchi",
+    "time": "3 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the confit garlic, add the garlic cloves and oil to a small pan with a pinch of salt. Put over a low heat and gently cook for 35-40 minutes until the cloves are soft, pale gold and creamy. Set aside",
+      "Season the beef heavily with salt and pepper. Put a large saucepan or casserole over a medium-high heat with a dash of oil, then brown the beef in batches. Set aside",
+      "Add the onion, celery and carrots (with a splash more oil if you need it) and cook for 10-12 minutes until soft, sweet and lightly caramelised. Add the garlic and cook for a minute or two, then add the tomato purée and cook for another 2 minutes",
+      "Pour in the wine to deglaze, then add the stock, tomatoes, bay and thyme. Tip the beef back in, then bring to a gentle simmer. Cook uncovered for 2.5-3 hours, stirring occasionally, until the beef collapses into the sauce and everything becomes nice and thick. Season to taste",
+      "When the ragù is ready, add the butter for the gnocchi to a wide saucepan over a medium heat. Cook for about 8 minutes until it turns golden and smells nutty. Add the sage leaves and gnocchi, then cook, stirring regularly, until everything is golden and beginning to crisp",
+      "To serve, divide the gnocchi among bowls, then top with a generous amount of the ragù. Nestle some confit garlic cloves into each serving, then shower with grated Parmesan"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": "to fry",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Skirt",
+        "unit": "kg",
+        "notes": "cut into large chunks",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": null,
+        "notes": "finely grated, to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ready-made Potato Gnocchi",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled but left whole",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34d421ade53efed177df6d4e20dac8fd9fc14d478bed65bc84d2fc44b3354435",
+    "lineage_hash": "4a4ef07d886e257006eaf18052514293bc23f6e24061dd8f6777503d74e80b05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-ragu-gnocchi-recipe",
+    "fetchedAt": "2026-08-01T23:13:01.467Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-ragu-gnocchi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

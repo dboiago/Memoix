@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Chicken Cutlet",
+    "time": "2 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "325",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Chop the chicken into 3-cm cubes, and put them in the freezer for about 30 to 40 minutes to harden slightly. It's easier to grind semi-frozen chicken so that it doesn't become too pastey.",
+      "Transfer to a grinder and grind to a mince. You can also use chicken keema if you like.",
+      "In a mixing bowl, add the keema, salt, sugar, pepper, Kashmiri red chilli powder, gorom moshla, bhaja moshla, and MSG. Squeeze in some lime juice and tomato ketchup.",
+      "Now, finely chop the ginger and garlic, green chillies, coriander leaves, mint leaves, and parsley. Add these to the mixing bowl too, and mix well.",
+      "For easier shaping, chill the mixture again for 1 hour. Once done, divide it into 60-g portions.",
+      "For breading, in two separate flat dishes, take breadcrumbs and beaten eggs. Season each with some salt.",
+      "Grease your palms with vegetable oil. Take a portion of the chilled chicken keema mixture and roll it to form a 12-cm long log. Taper the ends and using the breadcrumbs for dusting, gently flatten the log into a diamond-shaped cutlet 5-mm thick. Shape using a bench-scraper or a wide chopper/knife. Try to flatten the top and straighten the edges as much as possible.",
+      "Once the basic shaping has been done, it's time to bread the cutlets. We will double-bread the cutlets to give them a substantial, crisp crust.",
+      "For that, first dip the cutlet in the beaten eggs and shake off any excess. Then, dust it in breadcrumbs, pressing them on, so that they stick to the egg.",
+      "Repeat the previous step once again: that is, dip the cutlet in egg and then breadcrumbs for a second time.",
+      "\\[Throughout this process keep your 'dry' and 'wet' hands separate, such that you handle the eggs (wet) with your left hand, and breadcrumbs (dry) with your right hand. Reverse this if you're left-handed. This is to avoid the clumping of the dry ingredients.\\]",
+      "Heat vegetable oil and deep-fry the cutlets on medium heat (oil temperature: ~180°C), until they are evenly brown.",
+      "Serve hot with kasundi, and a salad of sliced onions, cucumber and beetroot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "boneless",
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gorom Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bhaja Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "MSG",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d5d24b6511f697133c7c6507ba802e002fb40076fe6a16b861be45873c78a0a7",
+    "lineage_hash": "12a958da68e34bf3d19610efcd1b07bd0b2cf9b1aa9380080f0e62299a924957"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/kolkata-chicken-cutlet",
+    "fetchedAt": "2026-08-01T21:01:17.314Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/kolkata-chicken-cutlet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

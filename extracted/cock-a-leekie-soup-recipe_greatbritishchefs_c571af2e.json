@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Cock a leekie soup",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Roast the chicken pieces for around 30 minutes then place in a heavy bottomed pot along with any juices which have come out. Pour water over the chicken until it is covered. Bring to the boil and then simmer for 1 hour to give a stock",
+      "Add in the vegetables, prunes, herbs, a good grinding of pepper and half a teaspoon of salt. Cook until the vegetables are tender, around 20 minutes. Remove the chicken, take the meat from the bones and stir back into soup",
+      "Discard the bones and the herbs, check for seasoning and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": "or 6 drumsticks",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77c104d54728300f9a1f1826c65370d1d5a4544d7619f1452e6300c6488b7afa",
+    "lineage_hash": "cf3256a673997d5cde7593e9bc4149998db0f5767011f5c913844584e0ffdc30"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cock-a-leekie-soup-recipe",
+    "fetchedAt": "2026-08-04T00:04:17.906Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cock-a-leekie-soup-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

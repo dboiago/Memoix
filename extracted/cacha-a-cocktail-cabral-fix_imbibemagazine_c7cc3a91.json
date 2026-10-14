@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Cachaça Cocktail: Cabral Fix",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the cucumber, lime, and agave. Add the remaining ingredients, whip shake (a brief shake just to integrate the ingredients), then pour into the glass. Top with crushed ice, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suze",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Nectar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "704f017694e4d2910cb9fb42f5c42d6a576d8ec91eb128805e041735b8b1167b",
+    "lineage_hash": "30d1379e2655f3139481b9647d7a87758b12ad178cdb2725647311dd34a3abd9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cachaca-cocktail-cabral-fix/",
+    "fetchedAt": "2026-08-03T18:08:34.840Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cachaca-cocktail-cabral-fix/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

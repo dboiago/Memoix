@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Noodles with Green Beans",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "510",
+      "carbohydrateContent": "39",
+      "fatContent": "34",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Prepare the ingredients. Cut the green beans into sections, slice the pork belly. Prepare minced garlic, scallion, ginger and mashed garlic.",
+      "Add a very small amount of oil in wok and then place Sichuan peppercorn and star anise. Fry for around half minute and then you well smell the strong aroma of the spices. Remove them out.",
+      "Fry pork belly until browned. Then remove all the oil and leave only the pork belly slices in wok.",
+      "Add garlic, ginger and scallion to fry until aromatic. Then place beans in.",
+      "Add all seasonings, light soy sauce, dark soy sauce, salt and sugar, then fry for half minute. Place around 2 cups of water in. Cover and simmer for 2 minutes.",
+      "Then scoop around 1/2 cup liquid out, then spread the noodles in. Cover to cook 2 minutes and then add the pour the liquid on top. Continue cooking 1 minute.",
+      "Add mashed garlic and add around 1 teaspoon of vinegar along with the edges. Mix well. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Servings Fresh Noodles",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": "you can adjust based on personal preference",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "if you are using other part of pork instead of pork belly",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallios",
+        "unit": null,
+        "notes": "cut into pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "or slightly more if needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50e34b726f07cd8fc5cfc4c9c2936fa6e9c7932d99e5a8978378214f25699da9",
+    "lineage_hash": "70ff507a67d3eae3ff1e702774a3ab2f7d2989f29e2ec3e4ec649dda4c349357"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-noodles-with-green-beans/",
+    "fetchedAt": "2026-08-02T00:17:19.522Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-noodles-with-green-beans/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

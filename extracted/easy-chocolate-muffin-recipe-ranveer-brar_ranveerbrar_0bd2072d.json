@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Chocolate Muffin",
+    "time": "55 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160 degree C. Mix all the dry ingredients in a large bowl.",
+      "Mix the egg, milk, oil and sugar together in the jug.",
+      "Pour the egg mixture into the bowl and mix until combined.",
+      "Spoon mixture into greased muffin moulds and put the tray in the oven at 160C for 20 mins until set and cracked at the top if not quite set put back in for a further 10 mins.",
+      "Remove and cool for few minutes. Serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sieved",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coco Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b011b538a3fd51ad3488d0ff8db862d2bc6b0f5a37df28d5f257c1862f67145",
+    "lineage_hash": "db04b734e0354a14ae7d7c0643b2e0490085da5b719bb0b7d32ca997de7315e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chocolate-muffin/",
+    "fetchedAt": "2026-08-02T12:46:11.820Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chocolate-muffin/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chhanar Payesh",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "227",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Soak pistachios in hot water for 5 minutes. Remove their outer covering to reveal bright-green pistachios. Set aside.",
+      "Set 1 L milk to boil in a saucepan along with split cardamom pods, sugar and salt. Reduce it on low heat to 30% of its original volume, about 30 to 40 minutes.",
+      "Meanwhile, in a second saucepan, heat another 1 L of milk. When it comes to a boil, turn off the heat and allow it to cool for 2 minutes. Add vinegar and cover for 10 minutes. When the milk has curdled, strain it over a fine-mesh strainer or a cheesecloth.",
+      "Once the milk in the first saucepan has properly thickened, and the chhana has been drained of all the excess whey, crumble the chhana into the thickened milk.",
+      "Add blanched pistachios and rose water. Cook until you see steam coming out (don't overcook the chhana at this stage or it will become dry and squeaky). Turn off the heat and transfer to a dish to cool.",
+      "Refrigerate for 6 hours, and serve chilled with a garnish of dried rose petals rehydrated in water."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "blanched and peeled",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals (for Garnishing)",
+        "unit": null,
+        "notes": "dried",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "026b0ca20b95ce07ecdc9dff6b7fc90d1536379246961a0aa6b2631c14660e57",
+    "lineage_hash": "47e9271a8523191a3f292a7d7d9b04b75460111a02f3f922fc36218e16cdf8c0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chhanar-payesh",
+    "fetchedAt": "2026-08-01T18:08:09.116Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chhanar-payesh",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

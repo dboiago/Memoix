@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Buffalo Brisket Burnt Ends",
+    "time": "6 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients for the rub in a mixing bowl and mix with your fingers.    Note: this may make more rub than you’ll need.   Store any excess in a sealed jar away from heat and light—it will keep for several weeks.",
+      "Trim the brisket point, leaving a 1/4-inch layer of fat.   Brush the brisket on all sides with olive oil.   Place in an aluminum foil drip pan and season on all sides with the rub.   Optional: Cover with plastic wrap and marinate the brisket overnight in the refrigerator.",
+      "The next day, set up your smoker or grill and heat to 250 degrees.   Add wood following the manufacturer’s instructions.",
+      "Place the brisket point, fat side up, in the smoker or grill.   Cook for 1 hour.",
+      "Meanwhile, combine the wine and vinegar in a spray bottle.   Spray the brisket with this mixture to moisten it. Continue smoking for 4 hours, spraying the brisket with the wine mixture every 45 minutes.",
+      "Lay a 2-foot square sheet of heavy-duty aluminum foil on your work surface.   Place the brisket point on top.   Spray with the wine mixture.   Tightly wrap the brisket in the foil, pleating the seams to make a tight seal.",
+      "Return the wrapped brisket point to the smoker and continue cooking until very tender and the internal temperature is 205 degrees, 2 to 3 hours more.   (Insert the thermometer probe right through the foil into the thickest part of the point.)",
+      "Transfer the brisket point to an insulated cooler and let it rest for 30 minutes to 1 hour.    Meanwhile, make the Jalapeño Buffalo Sauce: (Melt the butter in skillet over medium-high heat.   (Bubbles will dance when you dip a chile slice in the butter.)    Add the chile slices and cilantro to the butter and cook until fragrant, 2 minutes.   Stir in the hot sauce and bring to a boil.",
+      "Unwrap the brisket point, transfer to a cutting board, and cut into 1-inch cubes.   Transfer to a couple of large aluminum foil drip pans.   (You want a single layer of cubes.)   Pour Jalapeño Buffalo Sauce over the brisket—enough to lightly coat the pieces—gently tossing to coat the cubes with sauce.   Serve any extra sauce on the side.",
+      "Return the brisket to the smoker and cook until the cubes are sizzling and caramelized, 5 to 10 minutes.   Serve the burnt ends hot off the smoker, with the remaining sauce on the side.  Get ready for some amazing burnt ends!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coarse Sea Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Peppercorns",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Onion",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Garlic",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9804810345b9b1bcdcbf2cae7c4e679c6dedd8c0900189ffe3837e7da2ab8039",
+    "lineage_hash": "d010a6d166653c6b1daee373dee73523f8d94ce93d5a424ddf8857834c56dc0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/buffalo-brisket-burnt-ends/",
+    "fetchedAt": "2026-08-03T08:25:28.817Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/buffalo-brisket-burnt-ends/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

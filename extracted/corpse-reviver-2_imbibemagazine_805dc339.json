@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Corpse Reviver #2",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all ingredients with ice, strain into a chilled glass, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2c9b1928a3cb65edba1b32d672fadfe59e99bea78a8ef80b86099afaed521ff",
+    "lineage_hash": "0fe0d19170e82e1f1dc1ec3c1b1938a20704ab3caa6a401324d5b2d3c595350e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/corpse-reviver-2-recipe/",
+    "fetchedAt": "2026-08-03T21:39:36.447Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/corpse-reviver-2-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,268 @@
+{
+  "recipe": {
+    "name": "Dulcey Chocolate with Fig, Blackcurrant and Almond",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The day before you plan to serve the dish, make the namelaka. Add the milk and glucose to a pan and bring to the boil. Remove from the heat and whisk in the gelatine, then whisk in the melted chocolate. Use a stick blender to smooth the mixture, then add the whipping cream and stir. Leave in the fridge to crystallise overnight",
+      "Make the sorbet the day before too. Bring the water to 40°C in a saucepan, then add the sugar, dextrose and super neutrose and bring to the boil. Mix together the two purees in a bowl, then pour the contents of the pan over the top of them and blitz with a stick blender. Leave to mature overnight in the fridge",
+      "The next day, blend the sorbet mixture once more with a stick blender, then churn in an ice cream maker according to the manufacturer’s instructions. Freeze until ready to serve",
+      "Remove the namelaka from the fridge and beat to loosen slightly. Transfer to a piping bag and reserve in the fridge until ready to serve",
+      "To make the almond sable, place the butter, icing sugar and salt in the bowl of a stand mixer with a paddle attachment and mix on a slow speed. Add the egg along with the ground almonds and 10g of the flour. Once incorporated, add the remaining flour and mix until smooth",
+      "Roll the sable dough between 2 sheets of baking paper until 2mm thick, then place in the freezer for a few hours until solid",
+      "For the fig and blackcurrant compote, place the purees, the figs, water and the orange zest to a pan and heat to 40°C. Add the sugar and pectin, bring the mixture to the boil and simmer for 5–10 minutes. Remove from the heat, allow to cool then transfer to a piping bag and reserve in the fridge until ready to serve",
+      "To make the blackcurrant coulis, mix the sugar syrup and blackcurrant puree together in a blender, then transfer to a squeezy bottle",
+      "Preheat an oven to 160°C/gas mark 3. Remove the sable dough from the freezer and cut out 30 discs measuring 25mm in diameter. Bake in the oven (along with any excess dough, which can be crumbled to sit under the sorbet) for 10 minutes or until golden, then allow to cool",
+      "To serve, pipe interweaving lines of namelaka and compote to one side of each plate. Add dots of the blackcurrant coulis around them, then add 3 almond sable biscuits and 3 pieces of fig along the line. Add a small mound of crumbled almond sable alongside, then top with a quenelle of the sorbet. Finish with a stick of Dulcey chocolate, if using"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "113",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona Dulcey Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "193",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Gelatine",
+        "unit": "g",
+        "notes": "mixed with 10ml water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "227",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "ideally Solliès figs, finely chopped",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrant Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fig Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrant Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "205",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "43",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Super Neutrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fig Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrant Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T45 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "36",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Valrhona Dulcey Chocolate",
+        "unit": null,
+        "notes": "optional",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c1888435a7aaa404ef9fa6219f8e30957e7ae64aef7d80e49f202785b8a9a3ef",
+    "lineage_hash": "024288cb5c01887ba3d487555a38b94665e3c146ed27873f54d7630a2806dca1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/white-chocolate-fig-blackcurrant-almond-recipe",
+    "fetchedAt": "2026-08-03T05:53:44.047Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/white-chocolate-fig-blackcurrant-almond-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

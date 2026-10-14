@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Arancia Julius",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine everything except the soda water in a tin and shake with ice. In the bottom of a Collins glass, pour 1/2 oz. of soda water. Strain the contents of the shaker tin into the Collins glass on top of the soda and add ice to fill the glass. Top with the remaining 1/2 oz. soda."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Galliano Authentico",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bols Genever",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half and Half",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b9432f11b5cbddc1d7d3c9f3664522f09e8a1dd3fec875ca9d9a8de5a806dbf",
+    "lineage_hash": "dfa81557862245073900aa3d400ef7e4940f6f96f379a2336c9b2165507de31f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/arancia-julius-cocktail/",
+    "fetchedAt": "2026-08-03T21:59:25.750Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/arancia-julius-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

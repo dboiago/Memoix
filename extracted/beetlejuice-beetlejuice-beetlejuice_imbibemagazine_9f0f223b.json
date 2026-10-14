@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Beetlejuice",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a highball over ice, stir, then garnish.",
+      "Strawberry Syrup1 cup granulated sugar\n1 cup strawberries (tops removed and cut in half)\n1 cup water",
+      "Heat all the ingredients in saucepan until the sugar is dissolved. Allow to cool, then strain into a bottle and refrigerate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Pernod Absinthe",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": "C",
+        "notes": "tops removed and cut in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a1e62e9445f5362cdd0512091a2d579022c5bfd509afeb80ae13456bbde7b05",
+    "lineage_hash": "374c54b6090fb2a8bea9f9d86ad12f89a701c485a815045f9d5264da29139f43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beetlejuice-beetlejuice-beetlejuice/",
+    "fetchedAt": "2026-08-03T22:36:04.021Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beetlejuice-beetlejuice-beetlejuice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

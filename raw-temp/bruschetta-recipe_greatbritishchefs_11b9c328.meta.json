@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/bruschetta-recipe",
+  "slug": "bruschetta-recipe_greatbritishchefs_11b9c328",
+  "title": "Bruschetta Recipe",
+  "byline": "by Giorgio and Gian Pietro Damini",
+  "fetchedAt": "2026-08-03T20:18:32.622Z",
+  "ldName": "Plum tomato bruschetta with poached eggs",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Starter",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "8 plum tomatoes, large, diced",
+    "2 garlic cloves, crushed",
+    "1/4 bunch of thyme, leaves picked",
+    "1 tsp sugar",
+    "1/2 tsp salt",
+    "4 slices of sourdough bread",
+    "1/2 bunch of basil, chopped",
+    "1 pinch of black pepper",
+    "2 pinches of flaky sea salt",
+    "4 tbsp of olive oil",
+    "4 large eggs",
+    "1 tsp vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "Place the tomatoes, garlic, thyme, sugar and a pinch of sea salt into a small saucepan over a moderate heat and then leave to gently simmer",
+    "Meanwhile, heat a large griddle pan until hot. Oil each side of the slices of bread and sprinkle with sea salt. Grill each slice until well coloured, then set aside",
+    "Add vinegar and salt to a pot of water and bring to a gentle simmer. Break the eggs into cups or ramekins, whisk the water then gently pour the eggs in, ensuring the water is still swirling",
+    "Once the whites are set, remove with a slotted spoon and place the poached eggs onto paper towels",
+    "Sprinkle the tomato mix with sea salt and pepper. Mix the chopped basil into the mix and then spoon onto the 4 toasts. Top each with a poached egg and serve immediately"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Caramelized Pork Chops",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut each slab of pork loin into three equal slices. Tenderize each slice with the back of a knife/cleaver. You should end up with 9 slices of pork loin.",
+      "In a mixing bowl, marinate the pork slices with light soy sauce, sweet soy sauce, and gently massage the dry rub into the meat. Let the pork marinate for 30 minutes.",
+      "Heat a cast-iron grill pan on medium-high heat for 5 minutes. You can check if the pan is ready by flicking a few drops of water on to the grill pan. If the water evaporates quickly, it’s ready. Also, you don’t want the pan to be too hot, meaning you shouldn’t see smoke rising from the pan.",
+      "Dip a brush/paper towel in oil and rub the surface of the preheated grill pan to prevent food from sticking to the pan, then start placing the marinated pork onto the hot surface.",
+      "Grill both sides until slightly charred and caramelized, up to 2 minutes per side should be enough.",
+      "Let the cooked pork chops rest for 10 minutes on a cutting board covered loosely with a piece of aluminum foil, then cut into thin strips and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Slabs of Pork Loin (about 700-800 Gram)",
+        "unit": null,
+        "notes": "about 1\" thick each",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap manis",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d769b118448fa67750ee66636196f616573a8ed9ec19b5daf6ee1aa9ead3e30f",
+    "lineage_hash": "e3e0a0b83ace3f983c1761cb9973684435b5e998bd7fb07828c429b03ad4404e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/caramelized-pork-chops.html",
+    "fetchedAt": "2026-08-01T21:44:52.838Z"
+  },
+  "rawSource": "https://dailycookingquest.com/caramelized-pork-chops.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,379 @@
+{
+  "recipe": {
+    "name": "3 Types Summer Drinks",
+    "time": "25-30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a sauce pot, add gooseberries, mango ginger, sugar, water, ginger, fennel seeds, jaggery, cover it with the lid and cook for 12-15 minutes or until everything is cooked. Transfer it into the bowl and leave it aside to cool down the temperature.",
+      "Transfer it into the mixer grinder jar and grind it into a smooth fine paste. keep it aside for further use.",
+      "In a sauce pan, add water, ragi flour and cook it on low flames for a while until it is properly cooked. Transfer it into the bowl and keep it aside for further use.",
+      "In a saucepot or handi, add kolam rice, water, cover it with the lid and cook for 20-25 minutes until rice gets mushy in texture. Transfer it to a bowl and leave it aside for further use.",
+      "In a serving bowl, add onion, green chillies, fresh coriander leaves, cooked ragi mixture and give it a good mix. Add ice cubes, curd, water, salt to taste, lemon juice and give it a good mix. Transfer it into the serving glass and serve chilled.",
+      "In a mortar pestle, add lemon leaves, mango ginger, green chilli and grind it into a coarse paste. Keep it aside for further use.",
+      "In a clay pot, add cooked rice, sufficient water and cover it with a muslin cloth and keep it aside for fermentation for 1 day or at least 18-20 hours.",
+      "In a clay pot, add fermented rice water, curd, prepared torani paste, curry leaves, fresh red chilli, lemon, lemon juice, salt to taste, cumin powder and give it a good mix. Transfer it into the serving glass or clay glass and serve chilled.",
+      "In a serving bowl or jar, add grated gooseberry, ginger, crushed black peppercorns. Add prepared amla paste, ice cubes, water as required, a pinch of salt, fresh mint leaves and mix everything well. Transfer it into the serving glass, garnish it with lemon slices, mint sprig and ice cubes. Serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gooseberries",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "250",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Ginger",
+        "unit": "inch",
+        "notes": "roughly chopped",
+        "amount": "¼",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "¼",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amla Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Ragi Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ragi Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "For Ragi Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Kolam Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooking Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & finely chopped",
+        "amount": "2",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, finely chopped",
+        "amount": "2",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Ragi Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1-2",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Ragi Ambala",
+        "isOptional": false
+      },
+      {
+        "name": "No. Lemon Leaves",
+        "unit": null,
+        "notes": "roughly torn",
+        "amount": "3-4",
+        "section": "For Torani Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "½",
+        "section": "For Torani Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Torani Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Fermentation",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Fermentation",
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Rice Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Torani Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "roughly torn",
+        "amount": "1-2",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "No. Red Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "No. Lemon",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tanka Torani",
+        "isOptional": false
+      },
+      {
+        "name": "No. Gooseberry",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & grated",
+        "amount": "¼",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Amla Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "No. Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh & roughly torn",
+        "amount": "1-2",
+        "section": "For Amla Sharbat",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64b197661174bffa1960ffa36c5f2046f1e9835b2c4b50b1e0ba7d998f276c8c",
+    "lineage_hash": "1377c28d715d5ed767250dda7ee818ea996fcafb2a1f6008693992f591c04ef5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/3-types-summer-drinks/",
+    "fetchedAt": "2026-08-02T20:42:40.153Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/3-types-summer-drinks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

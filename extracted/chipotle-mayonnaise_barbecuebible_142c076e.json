@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Chipotle Mayonnaise",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the mayonnaise, chipotle(s), and paprika in a small nonreactive bowl and whisk to mix.",
+      "If not serving at once, cover and refrigerate. The mayonnaise will keep for several days, covered, in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "preferably Hellmann’s",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chiles in Adobo",
+        "unit": null,
+        "notes": "minced, plus 2 teaspoons can juices",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6d01ca5a75afc8e1ab4ecb44e913f489edda3b5b85c1260d526242a67389f6d",
+    "lineage_hash": "a12b314014574b9527d35e584a8a4c06d78052b86d42d3b56121564a44af25b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-mayonnaise/",
+    "fetchedAt": "2026-08-03T05:46:34.495Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-mayonnaise/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

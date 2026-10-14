@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Chinese Sticky Rice with Ribs (Lo Mai Fun)",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "409",
+      "carbohydrateContent": "44",
+      "fatContent": "20",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Rinse the sticky rice and then soak with enough cold water at the previous night. Room temperature in winter and fridge in summer.",
+      "Soak the ribs with cold water for around 30 minutes. Change clean water once and then drain with kitchen paper. Add all the seasonings sauces and ginger expect sesame oil. Mix well. Cover with plastic wrapper and marinate overnight. Fridge in hot days.",
+      "Line the steamer with a clean gauze (I use dried lotus leaf). Drain the sticky rices completely and spread them on the lined steamer. Mix sesame oil with the ribs and then place on the sticky rice one by one. Then sprinkle the hydrated shiitake mushroom strips.",
+      "Set up the steamer and steam for around 1 hour over slow to medium fire after boils. I usually make a broth or stock along with the steamed rice. Note: if you do not want to steam them, you can place all the ingredients in a rice cooker and cook as normal rice. The sticky rice will be softer and much watery.",
+      "In a small bowl, mix light soy sauce, oyster sauce and sesame oil well. Drizzle the sauce over the rice. Serve with scallions as garnishing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sticky Rice",
+        "unit": "C",
+        "notes": "around 200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ribs",
+        "unit": "g",
+        "notes": "4cm sections",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried, hydrated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce and Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce and Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce and Garnishing",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Sauce and Garnishing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1986200b85c7affa54dd39e29acdf722355f263c9406c5a307e061fff5b45ef7",
+    "lineage_hash": "21a07f9538e100760a7e3e463c3c58fe92e8d6cf27137993a0ae1de30b45f700"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-sticky-rice-with-ribs/",
+    "fetchedAt": "2026-08-02T02:29:54.648Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-sticky-rice-with-ribs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

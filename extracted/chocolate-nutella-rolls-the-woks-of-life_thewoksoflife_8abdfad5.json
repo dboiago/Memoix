@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chocolate Nutella Rolls",
+    "time": "3 hr 15 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "301",
+      "carbohydrateContent": "44",
+      "fatContent": "11",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In the bowl of an electric mixer, add the ingredients in the following order: heavy cream, milk, egg, sugar, cake flour, bread flour, yeast, salt and cocoa powder. Using the dough hook attachment, turn the mixer on at the lowest setting. Let the dough come together for 15 minutes, occasionally pausing the mixer to push the dough together with a rubber spatula. If you're in a humid climate, and the dough is too sticky, feel free to add a little more flour 1 tablespoon at a time until it comes together. If you don't have a mixer and would like to knead by hand, extend the kneading time by at least 5-10 minutes.",
+      "After 15 minutes of mixing, the dough is ready for proofing. Cover the bowl with a damp towel and place in a warm spot for 1 hour. I proofed the dough in my oven (I had the oven on rapid proof for 5 minutes, turned the oven off, and then closed the oven door). The dough will grow to 1½ times its original size. (Just so you know, in some cases, readers have reported that their proofing takes slightly longer than 1 hour.)",
+      "In the meantime, prepare 16 4” x 4” pieces of parchment paper and a large baking sheet.",
+      "After the dough finishes proofing, put the dough back in the mixer, and stir for another 5 minutes to get rid of any air bubbles.",
+      "Dump the dough onto a lightly floured surface, and cut into 16 equal pieces. To assemble the buns, follow the photos. Roll each piece of dough out into a rough rectangle, and spread each piece with a tablespoon of nutella. Partially slice the rectangle into ½ inch strips, keeping them all connected at one end. Then roll them over diagonally, and curl the resulting cigar-shape into a snail-shape.",
+      "Once shaped, lay each bun on a prepared piece of parchment paper and arrange them on the baking sheet with at least 2 inches of space between them. Let the buns proof for another hour.",
+      "Preheat the oven to 350 degrees F. Brush the risen buns with egg wash and sprinkle with sliced almonds. Bake for 14-16 minutes. Remove from the oven and brush the buns with simple syrup to give them a really great shine, sweetness, and color."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "plus 1 tbsp, at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutella (about 1 Tablespoon for Each Bun)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Wash (1 Egg Whisked with 1 Teaspoon Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "dissolved in 2 teaspoons of hot water to make a simple syrup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "90755bf8f876fad573c14e7476315944cd27828a6841cc5b39549ddd80955880",
+    "lineage_hash": "ec2894a18e57790a7dad7470fbd4d564c298f31b752c515f4470f0fc3ec537b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chocolate-nutella-rolls/",
+    "fetchedAt": "2026-08-02T15:16:15.351Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chocolate-nutella-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

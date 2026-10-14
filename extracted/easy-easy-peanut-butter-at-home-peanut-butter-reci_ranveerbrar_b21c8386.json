@@ -1,0 +1,291 @@
+{
+  "recipe": {
+    "name": "Peanut Butter",
+    "time": "30-40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add peanuts and dry roast it for a few minutes or until light golden on medium flames.",
+      "Transfer it to a tray and deskin it by rubbing with the help of hands or with the cloth.",
+      "Keep it aside for further use.",
+      "In a grinder jar, add roasted peanuts and grind it into coarse powder.",
+      "Add coconut oil, salt to taste and grind it until smooth.",
+      "Add honey, peanut oil and grind it well for a minute.",
+      "Transfer it to a bowl and keep aside for further use.",
+      "Store it in a cleaned and airtight container.",
+      "In a grinder jar, add prepared base peanut butter, dark chocolate, peanut oil and grind it well.",
+      "Transfer it to a bowl and keep aside for further use.",
+      "Store it in a cleaned and airtight container.",
+      "In a grinder jar, add prepared base peanut butter, peanut oil, honey and grind into a smooth paste.",
+      "Add peanut oil and grind it well for a minute.",
+      "Transfer it to a bowl and keep aside for further use.",
+      "Store it in a cleaned and airtight container.",
+      "In a grinder jar, add prepared base peanut butter, peanut oil, honey and grind it to a smooth paste. Add roasted peanuts and grind it for a few seconds.",
+      "Transfer it to a bowl and keep aside for further use.",
+      "Store it in a cleaned and airtight container.",
+      "In a grinder jar, add banana, chocolate peanut butter, milk, a few ice cubes, honey and grind it into a thick shake.",
+      "Transfer it to a serving glass, garnish it with chocolate chips and banana slices.",
+      "Serve chill.",
+      "Spread smooth peanut butter on one bread slice and chocolate peanut butter on another bread slice.",
+      "Add banana and make a sandwich.",
+      "In a pan add butter, place the toast and toast it from both the sides.",
+      "Cut it into a half and transfer it to a serving dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grms Peanuts",
+        "unit": null,
+        "notes": null,
+        "amount": "600",
+        "section": "For Roasting",
+        "isOptional": false
+      },
+      {
+        "name": "Grms Roasted Peanuts",
+        "unit": null,
+        "notes": "deskin",
+        "amount": "600",
+        "section": "For Base Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2",
+        "section": "For Base Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Base Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Base Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil/salad Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2-3",
+        "section": "For Base Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Base Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chocolate Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": "For Chocolate Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil/salad Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2",
+        "section": "For Chocolate Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Base Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Regular/ Smooth Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil/salad Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2",
+        "section": "For Regular/ Smooth Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Regular/ Smooth Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil/salad Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2",
+        "section": "For Regular/ Smooth Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Base Peanut Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chunky Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil/salad Oil",
+        "unit": "Tbsp",
+        "notes": "cold pressed",
+        "amount": "2",
+        "section": "For Chunky Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chunky Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chunky Peanut Butter",
+        "isOptional": false
+      },
+      {
+        "name": "No. Banana",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Peanut Butter Smoothie",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Chocolate Peanut Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Peanut Butter Smoothie",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Peanut Butter Smoothie",
+        "isOptional": false
+      },
+      {
+        "name": "Few Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Peanut Butter Smoothie",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Peanut Butter Smoothie",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bread Slice",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Peanut Butter Toast",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Peanut Butter Toast",
+        "isOptional": false
+      },
+      {
+        "name": "Smooth Peanut Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Peanut Butter Toast",
+        "isOptional": false
+      },
+      {
+        "name": "No. Banana",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Peanut Butter Toast",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Peanut Butter Toast",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9757d1d10d64e3a6aa55890304a642768ad140a4571c31d0117837d88a602383",
+    "lineage_hash": "94cb0c24519114be0ddfcb5e371cd06c6baff71abede0a55b2ecf8bdc642385f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/peanut-butter/",
+    "fetchedAt": "2026-08-02T15:26:34.027Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/peanut-butter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

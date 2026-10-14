@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Asparagus Panuchos",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour boiling water over the dried seaweed and set aside to rehydrate. Meanwhile, place a large dry frying pan over a medium-high heat and add the unpeeled garlic cloves, quarter of the onion and cherry tomatoes. Dry-roast in the pan until blackened and charred all over, then leave until cool enough to handle. Peel the garlic and onion, then set aside",
+      "Make the salsa by placing the chile de àrbol powder in a food processor or pestle and mortar along with the roasted tomatoes, onion and 1 of the garlic cloves. Grind together to make a paste, then season with salt and set aside",
+      "For the filling, heat the rapeseed oil in a small pan then add the pumpkin seeds, green chilli and remaining roasted garlic clove. Fry until the seeds become toasted, then transfer the contents of the pan to a food processor or pestle and mortar. Add the parsley and 60ml of the water used to soak the seaweed, then blitz with a pinch of salt. Set aside",
+      "To make the panuchos, combine the masa harina and water together to create a dough. Divide this mixture into 6 balls, weighing approx. 35g each, then use a tortilla press or 2 sheets of greaseproof paper and a rolling pin to roll each ball into a tortilla. Cook the tortillas in a dry pan until they puff up; at this point, slice them open and spread with the pumpkin seed filling. Reserve the panuchos under a tea towel to prevent them drying out",
+      "Cook the asparagus spears in a pan with the butter and oil for a few minutes until tender, then cover and leave to finish cooking off the heat for 5 minutes. Drain the rehydrated seaweed and chop together with the asparagus spears",
+      "To serve, reheat the panuchos briefly, then add the asparagus and seaweed on top. Garnish with the pickled radishes (or sauerkraut), finish with the radish tops or herbs, then serve with the salsa on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Masa Harina",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seaweed",
+        "unit": "g",
+        "notes": "dried, such as dulse",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radishes",
+        "unit": null,
+        "notes": "pickled, or 6 tsp sauerkraut",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Herbs",
+        "unit": null,
+        "notes": "fresh, or radish tops, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird's Eye Chilli",
+        "unit": null,
+        "notes": "green",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "blanched",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chile De Árbol",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5d05bf2148786eb18d8fec889a13beee8e1704d034ff12ea5e605587b38c6e4",
+    "lineage_hash": "a6146a47fcfcf2117d4f64d32c717f38d8c0ddf0cb10b50eb197fbf4cb79ed78"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-panuchos-recipe",
+    "fetchedAt": "2026-08-03T04:21:16.898Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-panuchos-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Better Buck Tomorrow",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice Cube-filled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake the first 5 ingredients with ice and strain into an ice cube-filled glass, then top with sparkling water and garnish.",
+      "Ginger Syrup Combine 4 oz. of fresh ginger juice with 3 oz. of rich simple syrup (2:1). Keeps refrigerated for up to 2 weeks.",
+      "Rooibos Tea Syrup Boil 2 cups of water and remove from heat. Add 2 oz. of dried rooibos tea and let steep for 4 1/2 minutes, then strain. Weigh the liquid and add an equal amount of granulated sugar, stirring until the sugar is fully dissolved. Keeps refrigerated for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rooibos Tea Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Sparkling Water",
+        "unit": null,
+        "notes": "Topo Chico recommended",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b6eb03c11393ab7592cafff9e53ca88af7a5b2d94d1defe88028e219596baa5",
+    "lineage_hash": "47044f54f4d367f3b61f81cdcb092ea0ae5f00ba19e4227830597a90f35a3a1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/better-buck-tomorrow-whiskey-buck/",
+    "fetchedAt": "2026-08-03T20:31:51.060Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/better-buck-tomorrow-whiskey-buck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

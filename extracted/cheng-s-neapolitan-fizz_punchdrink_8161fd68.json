@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Cheng’s Neapolitan Fizz",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": "Collins",
+    "garnish": [
+      "Birthday Cake Sprinkles"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine egg white, heavy whipping cream, lemon juice, orange juice, strawberry syrup, Campari and Frangelico in a cocktail shaker.",
+      "Dry shake (without ice) to emulsify the ingredients, then add ice and shake vigorously until chilled.",
+      "Add soda water to the bottom of a chilled Collins glass, then fine-strain three-quarters of the shaken ingredients over the soda water.",
+      "Allow to sit for 3 minutes, then pour the Cynar into the Collins glass. (It will sink to the bottom.)",
+      "Top with the remaining blend in the cocktail shaker.",
+      "Garnish with birthday cake sprinkles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Whipping Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strawberry Syrup",
+        "unit": "oz",
+        "notes": "preferably Torani",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Frangelico",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soda Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f2e61d99e2871bbc0214e4ed091b7c629a78ff5dcb7c6acc12423d902848e720",
+    "lineage_hash": "9e81ff69dc7ceed678e65efb857a79e6a85f8df1d015f6880296154588927252"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/chengs-neapolitan-fizz/",
+    "fetchedAt": "2026-08-02T20:13:50.843Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/chengs-neapolitan-fizz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

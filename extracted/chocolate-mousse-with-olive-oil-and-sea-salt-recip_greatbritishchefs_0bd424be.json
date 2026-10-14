@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse With Olive Oil and Sea Salt",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the chocolate mousse base. Separate the eggs and whip the whites into stiff peaks",
+      "Melt the chocolate in a heatproof bowl over a gently simmering pot of water. Once fully melted, remove from the heat",
+      "Add the yolks to the chocolate a small amount at a time, mixing well after each addition",
+      "Allow to thicken slightly, then add one large spoonful of the beaten whites to the chocolate base",
+      "Fold a small amount of the egg whites into the chocolate, then repeat with the remaining egg white mix",
+      "Once the chocolate and whites are folded together and there are no large clumps of whites remaining, transfer the mix to a bowl and cover with a layer of cling film",
+      "Chill the mix in the fridge for around 4–6 hours, or until fully set",
+      "Meanwhile, prepare the tuile base. Beat together the butter and sugar in a large bowl using an electric whisk",
+      "Once creamed together, add in the egg whites and beat until a smooth paste forms",
+      "Add in the flour and lemon juice then beat until the mix is smooth",
+      "Use a small spatula or mini palette knife to spread the mixture into the silicone tuile moulds",
+      "Bake for 2 minutes 30 seconds, then leave to cool in the moulds before removing",
+      "To serve, use a microplane to grate the white chocolate over the plate then use a large, hot spoon to place a scoop of the chocolate mousse, around ⅕ of the mix, over the top. Dip a spoon into hot water then use the back to create a dent in the top of the mousse",
+      "Drizzle in the extra virgin olive oil, then top with generous sprinkle of flaky salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "64% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature and diced",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "280d00939d759d9e97870dad0f89ad30c203aff8e7eb5fa449348132993e2ea8",
+    "lineage_hash": "b012913a1136893f01043e3ed444004a76febab68092327138a50797336f9b55"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-olive-oil-sea-salt-recipe",
+    "fetchedAt": "2026-08-02T11:31:07.052Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-olive-oil-sea-salt-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

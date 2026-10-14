@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Cider Squirt",
+    "time": "5 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a heavy saucepan and bring to a boil. Reduce the heat and simmer the sauce for 5 minutes. Let cool to room temperature. Transfer the sauce to a food-safe spray bottle and use right away or refrigerate. Use within 1 to 2 days of making."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": "alt: juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": "or more apple cider",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6181cd16ee4c6d7aec42d8d1d89f78b271b5fafb39b8079d1d74cb807f86feb4",
+    "lineage_hash": "8a08c51bf05564d9e74f5b8d1085bf0a02aebba3a9477172ac4b32d3e196056c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cider-squirt/",
+    "fetchedAt": "2026-08-03T05:40:14.750Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cider-squirt/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

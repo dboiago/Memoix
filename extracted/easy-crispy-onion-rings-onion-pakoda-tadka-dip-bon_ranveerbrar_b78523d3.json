@@ -1,0 +1,275 @@
+{
+  "recipe": {
+    "name": "Crispy Onion Rings (Onion Pakoda Tadka Dip bonus)",
+    "time": "25-30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take fresh bread slices, trim the edges, transfer it to a mixer grinder jar and grind it until crumbly.",
+      "In a pan, add fresh bread crumbs, salt to taste and toss it on low flames until golden in color.",
+      "Add semolina and give it a good mix..",
+      "In a pan, add oil, once it's hot, add mustard seeds, curry leaves and let it splutter.",
+      "Add green chillies, ketchup, water and simmer it for a minute.",
+      "Transfer it to a bowl and keep it aside for further use.",
+      "In a bowl, add mayonnaise, garlic, dry oregano, chili flakes and give it a good mix.",
+      "Keep it aside for further use.",
+      "In a bowl, add gram flour, refined flour, salt to taste, turmeric powder, degi red chili powder, curd, ginger garlic paste, water and make a smooth batter.",
+      "Keep it aside for further use.",
+      "In a bowl, add gram flour, refined flour and mix it well.",
+      "Add salt to taste, degi red chili powder, black pepper powder and give it a good mix.",
+      "Cut onions into roundels and separate the layers.",
+      "Coat the onion rings in a dry mixture, dip it into batter and coat it well evenly.",
+      "Transfer it to bread crumbs and crumb coat it well. Transfer it to a plate and keep it aside for further use.",
+      "Heat oil in a kadhai, add onion rings, fry it until crispy and golden brown.",
+      "Transfer it to a serving dish and serve hot with prepared dips."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No. Onion",
+        "unit": null,
+        "notes": "roundels",
+        "amount": "7-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Bread Slice",
+        "unit": null,
+        "notes": "trim the edges",
+        "amount": "9-10",
+        "section": "For fresh Bread crumbs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For fresh Bread crumbs",
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For fresh Bread crumbs",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "¼",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tadka Ketchup Dip",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2-3",
+        "section": "For Italian Chilli Garlic dip",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Italian Chilli Garlic dip",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dry",
+        "amount": "1",
+        "section": "For Italian Chilli Garlic dip",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Italian Chilli Garlic dip",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Gram Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Refined Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Cornstarch",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dry Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Gram Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dry Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dry Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dry Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dry Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cee1628e56145829fcd887dbc7dfc24ca9bf35441378566d884b428c226d2820",
+    "lineage_hash": "fb56287ed20746ba10d74475ffcb97c3a7d5bbb9ae97bb468ecafec10b76c80d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/onion-rings/",
+    "fetchedAt": "2026-08-02T18:44:53.804Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/onion-rings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

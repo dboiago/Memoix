@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Braised Beef Noodle Soup",
+    "time": "1 hr",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "533",
+      "carbohydrateContent": "61",
+      "fatContent": "15",
+      "proteinContent": "36"
+    },
+    "directions": [
+      "Cut brisket into large cubes around 3-4 cm long. Soak in clean water for around 2 hours. Change water for 4 to 5 times to remove the blood water.",
+      "In a high pressure cooker, add spices star anise, cinnamon bark, chili peppers, Sichuan peppercorn, scallion, ginger slices in to cook. Press meat to cook for 15 minutes after boiling.",
+      "Pick the cooked brisket out and filter the soup base. Wash the brisket with warm water and drain.",
+      "Heat up cooking oil in wok, and then stir fry doubanjiang, ginger slices and green onion sections until aroma. Return cooked brisket in. Add light soy sauce and fry for around 2 to 3 minutes. Add radish cubes and enough soup in to cover the brisket.",
+      "Add sugar and salt as needed. Turn up the fire to thicken the sauce(to reduce around 1/2 of the water contained in the soup).",
+      "Cook noodles in boiling water for 4 minutes or follow the instructions, add Bok Choy and continue cook for another minute.",
+      "Transfer noodles and Bok Choy out. Serve with braised beef soup and green onion.For a lighter version, add 1/2 cup of noodle water (water used for boiling the noodles) for each serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size White Radish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": "can be replaced by other chili paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped, white part and green part separately",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystal Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noodles As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tree Bok Choy",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Cinnamon Bark",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leave",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "if you want a darker color, use soy sauce or dark soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee1236e542941f4dad04e60e2b93402aa2f43411bfa32cd36c2b6d7b6e3a0673",
+    "lineage_hash": "c062576195e100daa423465a75f80ba5c0453add27cadab966bacb700492a3d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-beef-noodles/",
+    "fetchedAt": "2026-08-01T15:37:01.860Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-beef-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

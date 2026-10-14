@@ -1,0 +1,62 @@
+{
+  "url": "https://thewoksoflife.com/braised-daikon-pork-glass-noodles/",
+  "slug": "braised-daikon-with-salted-pork-glass-noodles_thewoksoflife_e336224c",
+  "title": "Braised Daikon with Salted Pork & Glass Noodles",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-01T22:51:04.471Z",
+  "ldName": "Braised Daikon with Salted Pork and Glass Noodles",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "braised daikon",
+  "ldIngredientsRaw": [
+    "3 tablespoons oil",
+    "3 cloves garlic",
+    "3  scallions ((the white and green parts separated))",
+    "5 ounces salted pork belly ((140g, sliced))",
+    "1½ pounds daikon radish ((cut into small pieces))",
+    "3½ cups chicken stock",
+    "75 grams mung bean vermicelli ((2 small bundles))",
+    "½ teaspoon sesame oil",
+    "¼ teaspoon white pepper",
+    "Salt ((to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the oil in a wok over medium heat. Cook the garlic, the white parts of the scallion, and the salted pork belly for a couple of minutes until the pork fat turns transparent. Now add the daikon, and stir to combine. Add the stock, cover, and simmer for 15 minutes over medium heat until the daikon is cooked through.",
+    "Meanwhile, rinse the glass noodles and soak in cold water for five minutes. After five minutes, drain and set aside. After the 15 minutes of simmering have elapsed, add the sesame oil, white pepper, and salt to taste. Mix everything well. Add the glass noodles on top of the daikon, cover, and simmer for another three minutes. Uncover and add in the green parts of the scallions. Give everything a quick stir to combine and serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "416 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "9 g",
+    "fatContent": "31 g",
+    "saturatedFatContent": "8 g",
+    "cholesterolContent": "26 mg",
+    "sodiumContent": "111 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 tablespoons oil",
+    "▢ 3 cloves garlic",
+    "▢ 3 scallions (the white and green parts separated)",
+    "▢ 5 ounces salted pork belly (140g, sliced)",
+    "▢ 1½ pounds daikon radish (cut into small pieces)",
+    "▢ 3½ cups chicken stock",
+    "▢ 75 grams mung bean vermicelli (2 small bundles)",
+    "▢ ½ teaspoon sesame oil",
+    "▢ ¼ teaspoon white pepper",
+    "▢ Salt (to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

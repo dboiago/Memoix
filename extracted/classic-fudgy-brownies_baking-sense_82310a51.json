@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Classic Fudgy Brownies",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "168",
+      "carbohydrateContent": "19",
+      "fatContent": "10",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Butter a 9\" square baking pan and line the pan in one direction with parchment paper.",
+      "Combine 5 ounces semi-sweet chocolate and 4 oz unsalted butter in a microwave safe bowl. Microwave for 1 minute, stir to combine. Microwave in 30 second increments (stirring between) until all the chocolate is melted.",
+      "Add 4 oz granulated sugar, 2 oz brown sugar, ¼ teaspoon table salt and 2 teaspoons vanilla extract, stir to combine. Add 2 large eggs, stir until combined then stir vigorously for 30 seconds.",
+      "Add 2 ½ oz all purpose flour, stir just until combined. Spread the batter evenly into the prepared pan.",
+      "Bake until the brownies puff up a bit and a toothpick inserted in the center comes out with a few moist crumbs (20-25 minutes).",
+      "Cool in the pan to room temperature then refrigerate until the brownies are firm.",
+      "Use the parchment paper to lift the brownies out of the pan onto a cutting board. Cut into 12 large or 16 small brownies."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cut into 1″ chunks",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "½ cup, see note",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "239025bfec2c755d1a0b35d4ad126f8c16706c08ce9b1e2b7510e4dd80a5794d",
+    "lineage_hash": "7047ea71a9f4ce11d83e79d13522982c6e9f1b481274b862b7fd5eca12624fcb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/04/08/fudgy-brownies/",
+    "fetchedAt": "2026-08-02T04:58:56.051Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/04/08/fudgy-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

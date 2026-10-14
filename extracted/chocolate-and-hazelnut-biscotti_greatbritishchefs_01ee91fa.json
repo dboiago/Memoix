@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Chocolate and hazelnut biscotti",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a baking tray with greaseproof paper and mark two 10cm lines evenly apart. Remove any rings on your hands because this is gonna get sticky!",
+      "Chop the nuts roughly in half. Not too small or you won’t get the nice bites through the biscotti. Whisk the egg and caster sugar in a large bowl until the texture is light and fluffy",
+      "Stir in the plain flour and cocoa powder and then add the chopped nuts and chocolate chips. You should have a sticky dough. Flour your hands and then split the dough into two portions in the bowl",
+      "Take one portion and shape it into a log approx 10cm long using the lines on your baking paper to help. It does not look pretty I know but it will taste good",
+      "Place the log onto the greaseproof paper. Repeat with the other portion of dough",
+      "Bake the logs for approx 20-30 minutes. There should be a nice crust on the top",
+      "Take the baking tray out of the oven and let the logs cool completely. Once they are cool, using a sharp serrated knife, cut slices approximately 1 cm wide and then place the pieces back on the baking tray",
+      "Bake again for 5 minutes on each side to dry them out"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "shelled",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": "at least 80% cocoa solids",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "good quality",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "58c6a9038c15485c2c9af69a5fbfe013842abdca2df7a2b69dc8a88025baefe5",
+    "lineage_hash": "d85001183d02388b0df01445e205fd8bda2706c22344c7cb3d1ea89e817aff73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-biscotti-recipe",
+    "fetchedAt": "2026-08-03T23:06:41.841Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-hazelnut-biscotti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

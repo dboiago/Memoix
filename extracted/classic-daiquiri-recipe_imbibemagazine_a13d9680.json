@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Classic Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a shaker with ice, shake to chill and strain into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b67531f66f7d161b9692df06696f6b839c7975dfeb2df25ea3e06f87b73a83d",
+    "lineage_hash": "6561f38c052fa079c04c425ff00b18222ddd70f9aed5358bc70ad1e9800c78d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/classic-daiquiri/",
+    "fetchedAt": "2026-08-03T13:59:06.495Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/classic-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

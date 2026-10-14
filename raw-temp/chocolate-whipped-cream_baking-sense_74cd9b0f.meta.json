@@ -1,0 +1,54 @@
+{
+  "url": "https://www.baking-sense.com/2018/02/13/chocolate-whipped-cream/",
+  "slug": "chocolate-whipped-cream_baking-sense_74cd9b0f",
+  "title": "Chocolate Whipped Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:44:51.990Z",
+  "ldName": "Chocolate Whipped Cream Recipe",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy, frosting",
+  "ldIngredientsRaw": [
+    "6 ounces semi sweet chocolate (chopped)",
+    "16 ounces heavy cream (2 cups)",
+    "1 tablespoon dark rum (optional)",
+    "2 ounces confectioner sugar (½ cup)"
+  ],
+  "ldInstructionsRaw": [
+    "In a microwave safe bowl heat 6 ounces&#32;semi sweet chocolate in 30 second increments, stirring in between, until completely melted. Set the chocolate aside to cool. You want the chocolate to be barely room temperature. Not very hot but not beginning to set either.",
+    "Whip 16 ounces&#32;heavy cream with 1 tablespoon&#32;dark rum and 2 ounces&#32;confectioner sugar to soft peak. Whisk 1 cup of the cream into the chocolate until it&#39;s completely combined. With the mixer running on low, add the chocolate cream back into the bowl. Increase the speed to high and whisk until the cream is at full peak.",
+    "If you&#x27;re using the cream in a cake or other dessert, pipe or spread the cream as soon as it&#x27;s mixed. It will firm up as it chills.",
+    "Refrigerate until serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "232 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "2 g",
+    "fatContent": "19 g",
+    "saturatedFatContent": "12 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "44 mg",
+    "sodiumContent": "12 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "11 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "6 ounces semi sweet chocolate (chopped)",
+    "16 ounces heavy cream (2 cups)",
+    "1 tablespoon dark rum (optional)",
+    "2 ounces confectioner sugar (½ cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

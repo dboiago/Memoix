@@ -1,0 +1,36 @@
+{
+  "url": "https://www.bongeats.com/recipe/chilli-pork",
+  "slug": "chilli-pork-recipe-by-bong-eats_bongeats_9374fe69",
+  "title": "Chilli Pork recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T18:36:05.736Z",
+  "ldName": "Chilli Pork",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT15M",
+  "ldYield": "6 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "main",
+  "ldKeywords": "kolkata style recipe, chilli pork recipe, tangra chilli pork recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": ""
+  },
+  "htmlIngredientLines": [
+    "1 kg pork belly or shoulder (5-cm logs)",
+    "20 g ginger (roughly chopped)",
+    "10 g garlic (sliced)",
+    "300 g onions (3-cm squares)",
+    "25 g green chillies (slit)",
+    "60 g tomatoes (diced)",
+    "20 g vegetable oil",
+    "2–3 pcs star anise",
+    "25 g soy sauce (½ light, ½ dark)",
+    "23 g salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

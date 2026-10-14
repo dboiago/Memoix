@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Ancho Chile Cocktail: Nonna's Biscotto",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients without ice until foamy, then add ice and shake hard for 20 seconds. Double strain into a chilled coupe, and garnish.\nBurnt Sugar SyrupConstantly stir 1 cup of granulated white sugar in a saucepan over medium-high heat until it begins to melt. (Take care—the sugar will get very hot.) When the sugar turns dark brown and just starts to smoke, remove from the heat and immediately add 3⁄4 cup of hot water (careful, it will splatter), then stir constantly until the water is fully incorporated. Return to medium-high heat and continue stirring until the syrup thickens and dime-size bubbles appear, about 3 minutes. Let cool, then bottle and keep refrigerated for up to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ancho Reyes Chile Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": "fresh, pasteurized, if you like",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burnt Sugar Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0af513bc401a03dc2c0730dd051e4b4c68ab8e4ba75361e213f8e69ca040b7e",
+    "lineage_hash": "9353b31fad4e40e14c6d81f9aa85d2752cc28d1eb527326b695f237b1c3811ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ancho-chile-cocktail-nonnas-biscotto/",
+    "fetchedAt": "2026-08-04T00:15:01.956Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ancho-chile-cocktail-nonnas-biscotto/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

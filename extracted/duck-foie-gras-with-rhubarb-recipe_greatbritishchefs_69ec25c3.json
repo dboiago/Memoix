@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Duck Foie Gras with Rhubarb",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start, mix together the salt, pepper, sugar and Sauternes in a shallow bowl, then marinade the foie gras with this mixture for 24 hours",
+      "After the 24 hours, heat the duck fat in a pan to 80°C and carefully poach the marinated foie gras in the fat for 18 minutes",
+      "Remove the foie gras from the fat and put onto a kitchen cloth. Place the lobe flat on a chopping board and make an incision with a sharp knife to expose the central veins. Carefully remove the 2 veins by pulling gently",
+      "Press the deveined foie gras into a rectangular mould and cover with clingfilm. Cut a piece of cardboard to the same size as the mould and wrap this tightly with clingfilm; use this to press the terrine with a weight on top (such as canned vegetables). Leave to set for 24 hours in the fridge",
+      "Cut the rhubarb into 5cm sticks and place in an airtight container with a lid. Place the rest of the rhubarb ingredients into a small saucepan and bring to the boil",
+      "Pour the pomegranate liquor over the rhubarb and seal the container with a lid. Leave for 2 hours",
+      "To make the port jelly, bring the port to the boil with the spices and leave to cool slightly. Meanwhile, soften the gelatine sheets in a bowl of cold water",
+      "Strain the port and spices into a a clean pan and add the softened gelatine. Leave to cool to room temperature before pouring over the pressed foie gras. Return the foie gras to the fridge to set",
+      "Remove the rhubarb from the liquor and set aside. Reduce the liquid in a small pan to a syrup consistency, then use to glaze the rhubarb sticks",
+      "To plate, slice the foie gras into 6 portions and place one slice on each plate. Put 2 pieces of rhubarb on each plate and drizzle with a little extra syrup. Garnish with some chopped pistachios, borage flowers and basil cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lobe of Foie Gras",
+        "unit": null,
+        "notes": "roughly 500g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauternes Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berry",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Gold Gelatine",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grenadine Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pistachio Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Borage Flowers",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f594aae0ef7d88e5432a7674fba3eb2ece517eced517f5b184f362b725072d1f",
+    "lineage_hash": "e0510b1ae7e50748e552f76bc168d6da407206d3839b827f0a3939a19c9b4d68"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/foie-gras-rhubarb-pistachio-recipe",
+    "fetchedAt": "2026-08-03T15:47:59.891Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/foie-gras-rhubarb-pistachio-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

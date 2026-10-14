@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Mesquite Cookies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare two baking sheets covered with parchment paper or lined with silicone baking mats.",
+      "Preheat the oven to 375ºF (190ºC).",
+      "In a bowl, whisk together the flours, baking powder, baking soda and salt.",
+      "In the bowl of a stand mixer with the paddle attachment, or by hand in a large bowl (and a strong arm!), beat the butter until soft. Add the sugar and beat until creamy. If using a mixer, stop it once or twice and scrape down the sides.",
+      "Add the eggs one at a time until completely incorporated, then the vanilla.",
+      "Add the flour mixture in three batches, incorporating it as you go.",
+      "Mix in the oats and chocolate chips. The dough is quite stiff at this point and if you’re not using a powerful standing electric mixer, you may wish to roll up your sleeves and use your hands, like I did.",
+      "Set mounds, each a generous two tablespoons (about the size of an unshelled walnut) of dough, evenly-spaced onto the baking sheet. Use your hand to slightly flatten the tops of the rounds of cookie dough.",
+      "Bake for 10-11 minutes, until just beginning to set. A few minutes before they'd done, open the oven door and use a pancake turner or metal spatula to lightly tap the tops of the cookies down, so the tops are flat. This helps keeps the cookies moist, once baked. (These cookies are better underdone than overdone, so keep an eye on them closely near the end of the suggested baking time.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose",
+        "unit": "C",
+        "notes": "alt: whole-wheat pastry flour, 330g",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mesquite Flour",
+        "unit": "C",
+        "notes": "100g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminum-free",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 cup, 225g, cubed, at room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "180g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "160g, not instant",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "C",
+        "notes": "alt: semisweet chocolate, 360g, coarsely, chopped, or chocolate chips",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de0eb95506d9fc911f7a9692620f1504d671c69d45a6fd52be550c09ccaf5850",
+    "lineage_hash": "95af7c1a59160d1382bcf8e8ff1b47432e2567318eacdb0b359fc11497d4dc03"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/a-chocolate-chi/",
+    "fetchedAt": "2026-08-02T22:22:46.434Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/a-chocolate-chi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

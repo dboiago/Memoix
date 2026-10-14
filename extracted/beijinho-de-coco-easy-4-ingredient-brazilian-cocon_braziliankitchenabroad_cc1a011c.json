@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Beijinho de Coco (Brazilian Coconut Fudge Balls)",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the condensed milk, the butter, and the cream to a medium sauce pan and place it over medium heat until the butter melts.",
+      "After the butter has melted, add half of the shredded coconut (1/2 cup) to the pan and stir.",
+      "Continue to cook over medium heat, for approximately 10 mins, stirring repeatedly, scraping the sides and the bottom of the pan with a spatula to avoid burning."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Condensed Milk",
+        "unit": "can",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d64c84d43bb20ca8d04607a3c7f2002a350e294e9a7a4720a7493e852689929d",
+    "lineage_hash": "593ea818d5075b57a2b8473f94ee790a74f90d0032dd7fc5aa4914b02e6fda93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/web-stories/beijinho-de-coco-easy-4-ingredient-brazilian-coconut-fudge-balls/",
+    "fetchedAt": "2026-09-26T00:26:31.568Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/web-stories/beijinho-de-coco-easy-4-ingredient-brazilian-coconut-fudge-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

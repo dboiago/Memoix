@@ -1,0 +1,70 @@
+{
+  "url": "https://www.baking-sense.com/2022/06/23/chocolate-cherry-cheesecake-tart-aka-tart-michel/",
+  "slug": "chocolate-cherry-cheesecake-tart-michel_baking-sense_6c1eff8c",
+  "title": "Chocolate Cherry Cheesecake (\"Tart Michel\")",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T02:43:56.935Z",
+  "ldName": "\"Tart Michel\" Chocolate Cherry Cheesecake Tart",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT90M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "12",
+    "12 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "cheesecake, cherry, chocolate, tart",
+  "ldIngredientsRaw": [
+    "1 recipe Tart dough (chilled)",
+    "4 oz unsalted butter (room temperature)",
+    "6 oz granulated sugar",
+    "1 teaspoon vanilla extract",
+    "½ teaspoon lemon zest",
+    "½ teaspoon lemon juice",
+    "¼ teaspoon table salt",
+    "8 oz cream cheese (room temperature)",
+    "2 each large eggs (room temperature)",
+    "4 oz semi sweet chocolate (finely chopped)",
+    "16 oz dark cherries"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375°. Roll the dough to 1/4&quot; thick and line a 10&quot; or 12&quot; fluted tart pan. Prick the bottom of the tart dough all over with a fork. If the dough has softened while rolling, set the unbaked tart in the refrigerator to firm up before baking.",
+    "Bake the shell until it&#39;s just beginning to take on a little color (about 12-15 minutes). Remove the tart from the oven and reduce the temperature 350°F.",
+    "Cheesecake Filling",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "sodiumContent": "167 mg",
+    "sugarContent": "23 g",
+    "fiberContent": "2 g",
+    "cholesterolContent": "41 mg",
+    "calories": "304 kcal",
+    "transFatContent": "1 g",
+    "saturatedFatContent": "11 g",
+    "fatContent": "19 g",
+    "proteinContent": "3 g",
+    "carbohydrateContent": "32 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "1 recipe Tart dough (chilled)",
+    "[Cheesecake Filling]",
+    "4 oz unsalted butter (room temperature)",
+    "6 oz granulated sugar",
+    "1 teaspoon vanilla extract",
+    "½ teaspoon lemon zest",
+    "½ teaspoon lemon juice",
+    "¼ teaspoon table salt",
+    "8 oz cream cheese (room temperature)",
+    "2 each large eggs (room temperature)",
+    "[Assembly]",
+    "4 oz semi sweet chocolate (finely chopped)",
+    "16 oz dark cherries"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

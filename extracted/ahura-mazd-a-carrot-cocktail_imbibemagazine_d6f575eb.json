@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Ahura Mazdā: A Carrot Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice, shake for 10-15 seconds, then double strain into a glass and garnish.\nHoney Turmeric SyrupMix 1/2 tsp. of turmeric into 2 cups of honey syrup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Turmeric Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f6611233bc5fdd44809d65d1d6aeacd582489b52e39d036f05092dc7c3daed1",
+    "lineage_hash": "5de8b3c14711fe2a3d7d77425c906c30b8d609346abcf535139dc5bf290b7ec0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ahura-mazda-a-carrot-mezcal-cocktail/",
+    "fetchedAt": "2026-08-04T02:07:41.536Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ahura-mazda-a-carrot-mezcal-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

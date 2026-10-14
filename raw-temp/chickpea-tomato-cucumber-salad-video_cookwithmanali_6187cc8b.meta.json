@@ -1,0 +1,68 @@
+{
+  "url": "https://www.cookwithmanali.com/chickpea-tomato-cucumber-salad/",
+  "slug": "chickpea-tomato-cucumber-salad-video_cookwithmanali_6187cc8b",
+  "title": "Chickpea Tomato Cucumber Salad + Video",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T19:54:26.429Z",
+  "ldName": "Chickpea Tomato Cucumber Salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Continental",
+  "ldCategory": "Salad",
+  "ldKeywords": "Chickpea, chickpea salad, Chickpea Tomato Cucumber Salad, Cucumber, Salad, Tomato",
+  "ldIngredientsRaw": [
+    "1.25 cups cooked chickpeas",
+    "3/4 cup diced tomato",
+    "2/3 cup diced cucumber",
+    "1/2 cup diced celery",
+    "1/4 cup pomegranate arils",
+    "3 tablespoons olive oil",
+    "2.5 teaspoons red wine vinegar",
+    "2 teaspoons maple syrup",
+    "1  large garlic clove (minced)",
+    "10-15  basil leaves (finely chopped, I used small basil leaves)",
+    "salt (to taste)",
+    "black pepper (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "To a large bowl, add chickpeas, tomato, cucumber, celery and pomegranate arils. Set aside.",
+    "To a mason jar (or any other bowl) add olive oil, red wine vinegar, maple syrup, minced garlic, chopped basil leaves, salt and pepper. Shake the jar to combine the dressing or use a whisk if using a bowl.",
+    "Pour dressing over the salad, toss to combine.",
+    "Keep in refrigerator for 2 hours for the flavors to blend in.",
+    "Serve chilled and enjoy."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "418 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "11 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "40 mg",
+    "fiberContent": "10 g",
+    "sugarContent": "15 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1.25 cups cooked chickpeas",
+    "▢ 3/4 cup diced tomato",
+    "▢ 2/3 cup diced cucumber",
+    "▢ 1/2 cup diced celery",
+    "▢ 1/4 cup pomegranate arils",
+    "[Dressing]",
+    "▢ 3 tablespoons olive oil",
+    "▢ 2.5 teaspoons red wine vinegar",
+    "▢ 2 teaspoons maple syrup",
+    "▢ 1 large garlic clove, minced",
+    "▢ 10-15 basil leaves, finely chopped, I used small basil leaves",
+    "▢ salt, to taste",
+    "▢ black pepper, to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

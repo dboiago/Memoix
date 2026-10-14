@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Cinnamon Raisin Bread",
+    "time": "3 hr 5 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "178",
+      "carbohydrateContent": "36",
+      "fatContent": "2",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Warm 12 oz whole milk in the microwave to about 110°F. Stir 1 oz unsalted butter into the warm milk to melt.",
+      "In the bowl of a stand mixer or a large mixing bowl, combine the milk, 1 oz granulated sugar, the yeast and 10 oz all purpose flour. Mix to form a loose batter. Cover the bowl and set the sponge aside for 30-60 minutes.",
+      "Uncover the bowl with the sponge. Add 1 teaspoons ground cinnamon and 1 ½ teaspoons table salt. Stir to combine. Use the dough hook if working on a stand mixer.",
+      "With the mixer running, slowly add the remaining 5 oz all purpose flour until the dough gathers on the hook and clears the sides of the bowl. If mixing by hand, stir in as much flour as you can then turn the dough out onto a floured surface and knead in the remaining flour. Knead for about 5 minutes to develop the gluten in the dough.",
+      "Remove the dough from the bowl onto a lightly floured surface. The dough should be soft and slightly sticky. Knead 5 oz raisins into the dough then form it into a smooth ball. If the dough is very sticky sprinkle a little more flour as you knead.",
+      "Place the dough in an oiled bowl, turning once to coat the dough. Cover with plastic wrap and set aside in a warm spot to rise for about 1-1.5 hours hours, until doubled in size. (At this point the dough can be refrigerated overnight and continue with shaping the loaf in the morning.)",
+      "Generously butter a 9\"x 5\" loaf pan. Combine 3 oz granulated sugar and 3 teaspoons ground cinnamon in a small bowl.",
+      "Turn the dough out onto a floured surface and roll it into a 8\"x16\" rectangle. Brush the dough with egg wash then sprinkle with the cinnamon sugar. Roll the dough from the short side to form a log. Pinch the seam to form a tight seal.",
+      "Set the dough into the pan, seam side down. Cover with plastic wrap. Set in a warm place and rise until the dough fills the pan and comes about 1\" over the top, about 1 hour (may take a little longer if the dough had been refrigerated).",
+      "Preheat the oven to 350°F. Brush the loaf with egg wash. Bake about 40 minutes until golden brown and the interior temp is 200°F.",
+      "If any raisins on the surface look burnt you can pluck them off the loaf. Cool in the pan about 10 minutes before turning out onto a cooling rack. Finish cooling to room temperature before slicing,"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": "1 packet",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 cups, see note",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg for Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5985ce8314e1ee4155dcee77a5595e22e0fc96def1daa482bb2abd19055ca3d9",
+    "lineage_hash": "a4d6e1f63aef2206175188a28a9011ef870577b962e41cdb614528dc66bb9809"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/09/15/swirled-cinnamon-raisin-bread/",
+    "fetchedAt": "2026-08-02T06:53:58.109Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/09/15/swirled-cinnamon-raisin-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

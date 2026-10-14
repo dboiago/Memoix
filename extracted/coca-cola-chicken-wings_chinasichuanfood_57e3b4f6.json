@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Coca Cola Chicken Wings",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "454",
+      "carbohydrateContent": "31",
+      "fatContent": "25",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Make some cuts on the back of the chicken wings, making the flavors better absorbing.",
+      "Add the chicken wings to cold water and cookign wine.   Cook for about 1 minute after boiling. This is optional, but it helps to remove the odd taste further.",
+      "Add about 1/2 tablespoon of cooking oil to a pan and fry the chicken wings until slightly browned. This step is a must. Browned and crispy surface brings lots of flavors.",
+      "Add coca cola in with allions and several slices of ginger. Then season with a very small pinch of salt, light soy sauce and oyster sauce.",
+      "Add the cola to the chicken wings. Simmer for 10 minutes, then turn up the fire and cook for another 10 minutes. During this process, pick up ginger and scallion and remove the floats on the surface.",
+      "Cook until all the sauce is coated on the chicken wings. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "g",
+        "notes": "around 12 to 14 middle wings",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coca Cola",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "optional for a mild spicy version",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab6913cad5a10920d5e327b8fbb874002198c02c73540c494372645bc9dc7048",
+    "lineage_hash": "75d41b92aacb03e43640a498bf7443fd281ab9b736d92e7fdf1b7e89102c0a0e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/coca-cola-chicken-wings/",
+    "fetchedAt": "2026-08-01T15:36:42.031Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/coca-cola-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

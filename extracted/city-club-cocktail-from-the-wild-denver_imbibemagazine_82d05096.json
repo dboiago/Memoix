@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "City Club Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker and dry shake (no ice). Then add ice and shake again. Double strain into a chilled coupe. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dolin Blanc Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquafaba",
+        "unit": "oz",
+        "notes": "alt: fresh egg white, pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d64010bc33abbcff586d1f8217302f202df1664481bdbaa9a150d9bec3af860a",
+    "lineage_hash": "5327f94c1deb0216ab237929d8f33d9fc528736e3210eb56c254e5e9f405bb59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-wild-denver-city-club/",
+    "fetchedAt": "2026-08-03T22:15:50.562Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-wild-denver-city-club/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

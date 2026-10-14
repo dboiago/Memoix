@@ -1,0 +1,252 @@
+{
+  "recipe": {
+    "name": "Brown Butter Sea Bass with Tangerine Dipping Sauce and Herbs",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pat the sea bass with kitchen towel to make sure it’s as dry as possible",
+      "Transfer the sea bass to a 33 x 26cm non-stick high-sided baking tray, arranging it diagonally, so it fits. The tray shouldn’t be much bigger than the fish, otherwise the citrus butter will burn. Season the cavity with ¼ teaspoon of fine salt, then stuff with the rosemary and spring onions",
+      "Put all the ingredients for the citrus butter into a small saucepan and place on a medium heat until the butter has melted. Pour over and around the fish",
+      "Bake for 14 minutes (or longer if your fish is larger than 800g)",
+      "Baste the fish well and turn the oven to the highest grill setting. Grill on the top shelf of the oven for 4–6 minutes, or until the skin begins to bubble and crisp. Keep a close eye, as some grills are much hotter than others",
+      "While the fish is cooking, make the tangerine dipping sauce. Put the pul biber, garlic, ginger, tomato purée/paste and fine salt into a mortar and pound with a pestle to a rough paste",
+      "Heat the oil in a small saucepan on a medium heat for 1 minute, then pour the hot oil into the mortar",
+      "Stir together, then add the chopped tomatoes, tangerine juice, lime juice and fish sauce",
+      "Once cooked, transfer the sea bass to a large platter with the browned citrus butter. Discard the garlic skins",
+      "Serve with the lettuce and soft herbs to make parcels with, and the dipping sauce and lime wedges alongside"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bass",
+        "unit": null,
+        "notes": "around 800g, and at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": "about 4 thin ones",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "skin left on and crushed with the side of a knife",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": "(about 20 twists of the mill)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pul Biber Chilli Flakes",
+        "unit": "tsp",
+        "notes": "use red bell pepper flakes if you don’t like heat",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": null,
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mild Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Datterini Tomatoes",
+        "unit": "g",
+        "notes": "or other very ripe cherry tomatoes, very finely chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce to Season",
+        "unit": null,
+        "notes": "or light soy sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce",
+        "unit": null,
+        "notes": "leaves separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Wedges",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d9dfb1812caf2b4541a54e32a850f663c5e86e5a9a4710de6487e7b7a07cec17",
+    "lineage_hash": "8aab3a9946f5e40763c490a02b09cf58682407815fd8948bfd555017b6810c34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brown-butter-sea-bass-tangerine-dipping-sauce-herbs-recipe",
+    "fetchedAt": "2026-08-02T17:59:10.081Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brown-butter-sea-bass-tangerine-dipping-sauce-herbs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

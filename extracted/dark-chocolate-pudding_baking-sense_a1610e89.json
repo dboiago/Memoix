@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Pudding",
+    "time": "2 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "397",
+      "carbohydrateContent": "37",
+      "fatContent": "26",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "In a large bowl, whisk together ¼ cup of milk with 1 oz corn starch. Add 6 large egg yolks and ¼ teaspoon table salt. Set this aside.",
+      "Combine 8 oz granulated sugar and 1 oz cocoa powder in a medium sauce pan. Slowly whisk in the remaining ¾ cup of milk until there are no lumps of cocoa.  Whisk in16 oz heavy cream. Heat over medium-high until scalding.",
+      "As soon as the milk/cocoa mixture is scalding, pour it into the the cornstarch/yolk mixture, vigorously whisking as you pour. Return the entire mixture to the pan.",
+      "Stirring constantly, cook over low heat until the pudding begins to thicken and just starts to simmer.",
+      "Immediately remove from the heat and pour the pudding through a sieve back into the mixing bowl. Whisk in the 2 tablespoons dark rum and 1 tablespoon vanilla extract.",
+      "Divide the pudding among 8 serving dishes or one large serving bowl.",
+      "Chill until set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "1 cup, divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c23e8bc1b467ac58d791f9c8e20ce6cf50eb62ca0a209f91d299e4df28945ee2",
+    "lineage_hash": "ce627001a17ee28cd004cf792253f15137794ba5a9606264035816c0590f54a7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/09/17/a-dark-chocolate-pudding-recipe/",
+    "fetchedAt": "2026-08-02T03:01:16.424Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/09/17/a-dark-chocolate-pudding-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

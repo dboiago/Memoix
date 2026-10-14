@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Bijou Riff",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Nick & Nora",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in a mixing glass with ice and stir to chill. Strain into a Nick & Nora glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d414c657090c3886d60007153886ddc87a954d9d7440c0e273f834022ffe0e41",
+    "lineage_hash": "7defa8d48f86b59655e6679e38f623d0c671915c6796f42c9d3c56ddbf3ee562"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bijou-riff-teatro/",
+    "fetchedAt": "2026-08-03T19:49:56.906Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bijou-riff-teatro/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

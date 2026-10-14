@@ -1,0 +1,292 @@
+{
+  "recipe": {
+    "name": "Cod With Corn Bisque",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the bavarois, remove the sweetcorn kernels from the husk and reserve for later. Chop up the cores, cover with water and bring to the boil. Simmer for 1 hour",
+      "Strain and measure out 250ml of the stock. Sauté the shallot in butter, then add the corn stock, lime juice, salt, and pepper. Simmer for a few minutes",
+      "Finely blend the mixture with a hand blender, pass through a sieve and add the gelatine, stirring until dissolved. Allow to cool, add the semi-whipped cream and allow to rest in the fridge for 2–3 hours before serving",
+      "For the bisque, sauté the fennel with garlic and butter, deglaze with vermouth and cognac and allow to reduce. Add 100g of the corn kernels, the canned cherry tomatoes, saffron, ginger and spices. Cook for 30 minutes",
+      "Add the shellfish stock and cook for another 10 minutes, adding a bouquet of tarragon and thyme to infuse as it simmers. Mix well, remove the star anise and cardamon pods then stir in the crème fraîche and lemon juice",
+      "Cut 4 slices of brioche as thinly as possible and cut out with a 4cm cutter Stamp out the centres with 2cm cutters and discard, leaving you with small brioche rings. Bake in the oven between two flat trays for 6–8 minutes until golden brown. Leave the oven on for the cod",
+      "Blanch the baby corn in salted boiling water then cut in half and pan-fry until golden brown",
+      "To cook the cod, heat a non-stick frying pan over high heat and add the cod skin-side down. Cook for 2–3 minutes until golden brown, then transfer to the oven for a further 2 minutes or until the fish is cooked through",
+      "To serve, place a poached quail egg on each bowl, season with black salt and place a circle of brioche on top",
+      "Season 20g of corn kernels and the baby corn and arrange them in the bowls with some popcorn. Garnish with dill sprigs and quenelle of bavarois. Add the cod and serve the cold bisque separately in a teapot"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillets",
+        "unit": null,
+        "notes": "each weighing 150g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": "softened in iced water",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "semi-whipped",
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espelette Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": null,
+        "notes": "1 can",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shellfish Stock",
+        "unit": "ml",
+        "notes": "preferably lobster",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brioche Loaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Corn",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quail Eggs",
+        "unit": null,
+        "notes": "poached",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Popcorn",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ec95ecbb54268d7b8a118c69c4763876fc73711147e901b7b2672bf8236a102",
+    "lineage_hash": "3163641dde0e3962ed22860f30b81c936c0d6413961fe4884be6b13579050fe2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cod-with-corn-recipe",
+    "fetchedAt": "2026-08-02T07:34:44.376Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cod-with-corn-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

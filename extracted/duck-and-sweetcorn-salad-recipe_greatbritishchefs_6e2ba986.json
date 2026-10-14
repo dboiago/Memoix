@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Duck and Sweetcorn Salad",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the duck breast skin-side down in a hot, dry pan and allow the skin to reach a deep golden colour - the fat will render out as you cook",
+      "Turn the breasts over, cook for a further 2 minutes and remove from the pan. Allow the duck to rest and cook through. After 15 minutes, transfer the breasts to the fridge to cool",
+      "Use a peeler to remove the skin of the orange, avoiding as much of the white pith as possible. Slice into thin strips, place in a pan of water and bring to the boil. Repeat this 3 times to remove any bitterness, each time with fresh water",
+      "Char the kernels of corn with a blowtorch or over a naked flame, then slice the kernels from the cob into small clusters",
+      "Quickly toast the pine nuts in a hot, dry pan until golden",
+      "Cut the duck into thin slices and season with salt. Scatter over the toasted pine nuts, dandelion, coriander leaves and corn. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dandelion Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca0db68b05e7e9fe4af92c5204c331e621d4d0885ef5493135fa066d092dc789",
+    "lineage_hash": "5ca26948e3ec22712bc69335d921ccad0187c2b28e43717d35567fa9e44466a2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-sweetcorn-salad-recipe",
+    "fetchedAt": "2026-08-02T22:22:02.733Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-sweetcorn-salad-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

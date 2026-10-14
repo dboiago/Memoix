@@ -1,0 +1,187 @@
+{
+  "recipe": {
+    "name": "Chocolate Tart with Cobnuts",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the ice cream, mix all the ingredients together in a saucepan and bring to the boil. Remove from the heat, then cover with clingfilm and allow to infuse for at least 6 hours",
+      "Pass the cream through a fine sieve, then churn in an ice cream machine until ready",
+      "For the pastry, bring all the ingredients together to form a dough (this can be done by hand or with a mixer and paddle attachment)",
+      "Wrap in clingfilm, then let the dough rest for 30 minutes in the fridge. Roll the dough to a thickness of 1–2mm. Line a 20cm tart or springform cake tin with the dough. Trim the edges with a small knife",
+      "Preheat the oven to 180 °C/gas mark 4",
+      "Blitz the nuts in a food processor until finely ground. Tip into a bowl and mix with the icing sugar and cardamom. Add the butter and combine, before adding in the eggs a little at a time",
+      "Sift the flour with the cocoa powder and fold this into the nut batter. Pour into the pastry case and gently push the physalis pieces into the filling. Sprinkle the top with the brown sugar",
+      "Bake for 20–30 minutes until the filling has cooked, then leave to cool",
+      "To serve, careful unmold the tart and cut into thin slices. Add a scoop of the basil ice cream and a fresh basil leaf to garnish. If liked, a purée of physalis could add some colour to the plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "525",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": "skimmed",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": "g",
+        "notes": "plus extra to garnish",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnuts",
+        "unit": "g",
+        "notes": "or hazelnuts",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Physalis",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33e028b01f5dae6b93cbb4a8111d3215df23d0038f704320bac82f36ea55a5b6",
+    "lineage_hash": "5dded827a2ded7c7469db702635e65d1a9e26829696679620ddb1901a7dedffe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe-with-basil-ice-cream",
+    "fetchedAt": "2026-08-03T14:46:17.620Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe-with-basil-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.baking-sense.com/2017/10/24/anise-orange-biscotti/",
+  "slug": "almond-biscotti_baking-sense_e5cc29d9",
+  "title": "Almond Biscotti",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T05:47:05.228Z",
+  "ldName": "Anise & Orange Biscotti",
+  "ldTime": "PT110M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "30",
+    "30 cookies"
+  ],
+  "ldCuisine": "Italian",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "almond, anise",
+  "ldIngredientsRaw": [
+    "4  large eggs (plus 1 for egg wash)",
+    "2 oz olive oil (¼ cup)",
+    "1 teaspoon vanilla",
+    "2  large oranges (finely grated zest)",
+    "1 oz dark rum (2 tablespoons)",
+    "16 oz all purpose flour (3 ¼ cups, see note)",
+    "1 ½ oz corn meal (¼ cup)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "1 tablespoons baking powder",
+    "½ teaspoon table salt",
+    "1 tablespoon anise seeds",
+    "12 oz toasted almonds (2 cups, roughly chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "In a small bowl combine the 4&#32;large eggs, 2 oz&#32;olive oil, 1 teaspoon&#32;vanilla, finely grated zest from 2&#32;large oranges and 1 oz&#32;dark rum, set aside. In a mixing bowl combine 16 oz&#32;all purpose flour, 1 ½ oz&#32;corn meal, 12 oz&#32;granulated sugar, 1 tablespoons&#32;baking powder, ½ teaspoon&#32;table salt, and 1 tablespoon&#32;anise seeds. Mix the dry ingredients for 30 seconds to combine.",
+    "Add the egg mixture to the dry ingredients and mix until almost combined. Add 12 oz&#32;toasted almonds and mix to until almost combined. Turn the dough out onto a lightly floured surface and finish mixing by hand.",
+    "Cover the dough with plastic wrap and allow it to rest for 15-20 minutes. Preheat the oven to  350 °F. Line a ½ sheet pan with parchment paper or a silicone baking mat.",
+    "Split the dough into 2 equal portions. Use your hands to roll each piece of dough to a 13&quot; x 2&quot; log. Set the logs onto the sheet pan, leaving at least 3&quot; between them. Brush each log with egg wash and sprinkle with 2 tablespoons of sugar.",
+    "Bake until golden brown and feels firm when pressed in the middle, about 35 minutes. Allow the cookies to cool completely.",
+    "Use a serrated knife to cut each log into ¾&quot; slices on a slight diagonal. Lay the cookies flat on the sheet pans and bake 10-15 minutes until toasty and golden brown (see note). Flip the cookies over and bake on the other side for another 10-15 minutes. Cool on a wire rack.",
+    "Store in a cookie jar for up to 2 weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cookie",
+    "calories": "198 kcal",
+    "carbohydrateContent": "27 g",
+    "proteinContent": "5 g",
+    "fatContent": "8 g",
+    "saturatedFatContent": "1 g",
+    "transFatContent": "0.004 g",
+    "cholesterolContent": "22 mg",
+    "sodiumContent": "109 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "12 g",
+    "unsaturatedFatContent": "7 g"
+  },
+  "htmlIngredientLines": [
+    "4 large eggs (plus 1 for egg wash)",
+    "2 oz olive oil (¼ cup)",
+    "1 teaspoon vanilla",
+    "2 large oranges (finely grated zest)",
+    "1 oz dark rum (2 tablespoons)",
+    "16 oz all purpose flour (3 ¼ cups, see note)",
+    "1 ½ oz corn meal (¼ cup)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "1 tablespoons baking powder",
+    "½ teaspoon table salt",
+    "1 tablespoon anise seeds",
+    "12 oz toasted almonds (2 cups, roughly chopped)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

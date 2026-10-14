@@ -1,0 +1,306 @@
+{
+  "recipe": {
+    "name": "Bihari style Fish Curry (spicy Fish Curry)",
+    "time": "35-40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add yellow mustard seeds, black mustard seeds, turmeric powder, coriander seeds, cumin seeds, garlic cloves, green chillies, salt to taste, black peppercorns, mustard oil and water.",
+      "Transfer it to a grinder jar and make a smooth paste.",
+      "Keep it aside for further use.",
+      "In a bowl, add fish, salt to taste, turmeric powder, degi red chili powder, mustard oil and mix it well.",
+      "Keep it aside for further use.",
+      "In a kadai, add mustard oil, once it’s hot, add marinated fish and fry for 3-4 minutes or until 70% cooked.",
+      "Transfer it to a tray and keep it aside for further use.",
+      "In the same kadai, add fried fish oil, once it’s hot, add black mustard seeds and let it splutter well.",
+      "Add tomatoes, coriander leaves and saute for a minute.",
+      "Add prepared paste and cook it for a while.",
+      "Add degi red chili powder, turmeric and mix well. Add water, salt to taste, green chillies and let it simmer for a while.",
+      "Add coriander leaves, tomatoes, fried fish and cook for 5-7 minutes on low flame.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Yellow Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "7-8",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "Less spicy & broken into half",
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "6-7",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Rohu Fish/ River Fish",
+        "unit": null,
+        "notes": "cut in darne",
+        "amount": "6-7",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": null,
+        "notes": "For shallow fry",
+        "amount": "0",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Fish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "cut into cubes",
+        "amount": "1½",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": "Tbsp",
+        "notes": "heaped",
+        "amount": "2",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "2",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "cubed",
+        "amount": "½",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Fish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Fish Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f444a164fddd05e13fa1eb97ccc589faef9471821703b2cfb1ffb156346611be",
+    "lineage_hash": "997218386292963450b541fe40e954417bd983542bf892251356a98d8c3f3bc2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bihari-style-fish-curry/",
+    "fetchedAt": "2026-08-02T12:51:22.188Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bihari-style-fish-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

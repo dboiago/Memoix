@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Confit Milk-Fed Lamb Shoulder",
+    "time": "4 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a large frying pan over a medium heat, season the lamb shoulders with salt and pepper then colour each one in the pan until golden brown",
+      "Transfer to a large, deep baking tray and cover with the cumin, ras el hanout, herbs and garlic",
+      "In the same pan, colour the carrot and onion until caramelised, then add to the tray with the shoulder",
+      "Wash the potatoes and add to the baking tray. Cover the ingredients with the olive oil and cook in the oven for 4 hours",
+      "While the lamb is cooking, prepare the vegetables. Bring a large pan of salted water to the boil and peel the asparagus and carrots",
+      "Blanch the asparagus for 3 minutes, then refresh immediately in iced water. Repeat this process with the peas for 1 minute, the spring onions for 2 minutes, the carrots for 3 minutes and finally the broad beans for 2 minutes. It is important to blanch the broad beans last as they will discolour the water and affect the flavour of the other vegetables",
+      "Drain the vegetables, dry on kitchen paper and reserve",
+      "When the lamb is cooked, carefully remove from the tray and drain in a colander with the potatoes and garlic. Reserve the oil, as it can be reused",
+      "Place the roasting tray over a medium heat and deglaze with the chicken stock, reducing until a sauce consistency is achieved",
+      "Foam the butter for the vegetables in a frying pan with some salt and pepper, add the blanched vegetables and cook until nicely coloured. Finish with the cumin",
+      "To plate, arrange the vegetables, potatoes and garlic on two large serving dishes and place each lamb shoulder on top. Drizzle with the sauce and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk-fed Lamb Shoulders",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ras El Hanout",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "g",
+        "notes": "podded",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "g",
+        "notes": "shelled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63977f4106ad9e90350fcd68c0773a406c0204cc50a44a1eaa2f8cd40e821ef7",
+    "lineage_hash": "44aefc4b2affdc1b372fd241c297e55b8a6400c1bda0a4e5695c09c4bb695060"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-milk-fed-lamb-shoulder",
+    "fetchedAt": "2026-08-03T15:55:04.361Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-milk-fed-lamb-shoulder",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

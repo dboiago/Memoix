@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chocolate Espresso Revel Bars",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180ºC (160ºC fan). Lightly grease a 9x13 inch light coloured baking tin and line with a strip of parchment paper so the excess hangs over the long sides of the tin.",
+      "For the filling, in a small saucepan, add the cream, sugar, espresso powder and salt and over medium stir together and cook until it reaches a bare simmer. Turn off the heat, add the chocolate and let sit for 1 minute before whisking until smooth and glossy. Set aside to cool.",
+      "For the dough add the oats, flour, espresso powder, baking soda and salt to a large bowl and whisk to combine. In the bowl of an electric mixer, fitted with the paddle attachment, beat the butter on medium speed for about 1 minute, or until creamy. Add the brown sugar and vanilla and beat for about 1 minute more to until smooth and lightened a little in colour. Beat in the eggs, one at a time, mixing until fully combined. Reduce the speed to low and gradually mix in the oat mixture until fully combined. Transfer a rough 1/3 of the dough to a clean bowl and set aside for the moment. To the remaining dough stir in the chocolate chips.",
+      "Spread the chocolate chip laced dough into the prepared pan, pressing into an even flat layer that coats the entire tin. Pour the ganache filling over the base, drizzling it in thick ribbons - no need to smooth it evenly. Using your fingertips pinch off generous tablespoons of the remaining cookie dough and drop them randomly over the ganache filling.",
+      "Bake in the preheated oven for a out 35-40 minutes or until the top is golden and the bars are beginning to pull away from the sides of the tin. Let cool completely in the tin, set atop a wire rack, for about 2 hours before using the excess parchment to lift the bars from the tin (you may need to use a knife to tease the bars away from the shorter sides of the tin). To make cleaner cuts refrigerate the bars for an hour after removing them from the tin. Stored in an airtight container these will keep for at least three days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": "Filling and Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Filling and Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Filling and Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Filling and Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "60% cocoa content",
+        "amount": "170",
+        "section": "Filling and Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Old Fashioned Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "225",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Muscavado Sugar",
+        "unit": "g",
+        "notes": "see note",
+        "amount": "395",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": "Dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c4dace967e8db6e8df6f1558fa70041ceb33479d2f76019d1c1cd39b82f77ae",
+    "lineage_hash": "3b348600e9ccff667d18cd75bb37c3ba778cfa51db6cee1ab421041a480f1392"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2020/2/5/chocolate-espresso-revel-bars",
+    "fetchedAt": "2026-08-01T18:35:25.865Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2020/2/5/chocolate-espresso-revel-bars",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

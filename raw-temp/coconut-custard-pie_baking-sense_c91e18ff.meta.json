@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2026/04/02/coconut-custard-pie/",
+  "slug": "coconut-custard-pie_baking-sense_c91e18ff",
+  "title": "Coconut Custard Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:10:19.695Z",
+  "ldName": "Coconut Custard Pie",
+  "ldTime": "PT75M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "10",
+    "10 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "coconut",
+  "ldIngredientsRaw": [
+    "½ recipe Perfect Pie Crust ( or store bought pie crust)",
+    "6 oz shredded sweetened coconut (2 cups)",
+    "4 oz granulated sugar (½ cup)",
+    "½ oz corn starch (1 ½ tablespoons )",
+    "⅛ teaspoon table salt",
+    "1  large egg",
+    "2  yolks",
+    "4 oz heavy cream (½ cup)",
+    "8 oz canned coconut milk (1 cups)",
+    "½ teaspoon almond extract",
+    "2 teaspoons vanilla extract",
+    "2 teaspoons granulated sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Roll the pie dough and line a 9&quot; pie pan. Crimp the edges of the shell. Use a fork to dock the bottom of the crust 3 or 4 times. Refrigerate the pie shell while you preheat the oven.",
+    "Preheat the oven to 350 °F. Line the chilled pie shell with aluminum foil and fill the foil with pie weights, dry beans or granulated sugar (see note).",
+    "Bake the pie shell for about 15 minutes, until the dough is set but still pale.",
+    "When the pie shell comes out of the oven place a sheet pan onto the bottom rack of the oven to preheat.",
+    "Filling"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "313 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "4 g",
+    "fatContent": "24 g",
+    "saturatedFatContent": "18 g",
+    "transFatContent": "0.002 g",
+    "cholesterolContent": "68 mg",
+    "sodiumContent": "120 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "½ recipe Perfect Pie Crust ( or store bought pie crust)",
+    "6 oz shredded sweetened coconut (2 cups)",
+    "4 oz granulated sugar (½ cup)",
+    "½ oz corn starch (1 ½ tablespoons )",
+    "⅛ teaspoon table salt",
+    "1 large egg",
+    "2 yolks",
+    "4 oz heavy cream (½ cup)",
+    "8 oz canned coconut milk (1 cups)",
+    "½ teaspoon almond extract",
+    "2 teaspoons vanilla extract",
+    "2 teaspoons granulated sugar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

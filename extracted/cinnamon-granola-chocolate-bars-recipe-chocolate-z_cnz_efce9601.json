@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Cinnamon Granola Chocolate Bars",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150°C (300°F) and grease a rimmed baking sheet.",
+      "In a medium bowl, combine the rolled grains, nuts, coconut oil, honey, and cinnamon, and stir until thoroughly combined.",
+      "Spread out on the baking sheet and bake for 25 to 30 minutes, until toasted and lightly browned, stirring well every 10 minutes. Let cool completely, and measure 120 grams (1 cup) of the granola. (You can keep the rest for topping yogurt and snacking.)",
+      "Line a 20-by-20-cm (8-by-8-inch) square pan with parchment paper as neatly as possible, and use clothes pins or chip clips to keep it in place.",
+      "Have ready a large bowl of ice water, and a food thermometer with a probe.",
+      "Put the finely chopped chocolate in a heat-resistant bowl and place it over a pan of just-simmering water over low heat.",
+      "Melt the chocolate slowly, stirring frequently to ensure even melting, until the chocolate reaches 50-55°C (122-131°F). Don't let it go over 55°C (131°F).",
+      "Place the top bowl containing the chocolate over the bowl of ice water and, scraping the bottom of the bowl and stirring continuously, bring the chocolate down to 28-29°C (82-84°F).",
+      "Return the bowl of chocolate over the pan of just-simmering water and, still stirring continuously, allow the chocolate to come up to 31-32°C (88-90°F). Don't go over that temperature or you'll have to start the tempering process from the start.",
+      "Immediately pour the chocolate into the prepared pan.",
+      "Melt the chocolate slowly in a double boiler, stirring frequently to ensure even melting, and remove from the heat as soon as it's entirely melted. Pour the chocolate into the prepared pan.",
+      "Sprinkle the surface of the chocolate evenly with the salt first, and follow with the 120 grams (1 cup) granola you've set aside. Use the tip of a rubber spatula to push the granola topping gently down into the chocolate, to make sure it's securely embedded.",
+      "Allow the chocolate to set at cool room temperature for at least 2 hours or overnight.",
+      "Lift the parchment paper from the pan, loosen it gently from the sides of the chocolate, and break the chocolate into chunks, with your (clean, dry, and cool) fingers or a parmesan knife.",
+      "The chocolate will keep for several weeks in an airtight container at cool room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Grains",
+        "unit": "g",
+        "notes": "2 cups, choose gluten-free grains as needed",
+        "amount": "180",
+        "section": "For the granola",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds and Hazelnuts",
+        "unit": "g",
+        "notes": "1 cup, roughly chopped",
+        "amount": "120",
+        "section": "For the granola",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the granola",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "or rice syrup",
+        "amount": "3",
+        "section": "For the granola",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "freshly ground",
+        "amount": "2",
+        "section": "For the granola",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "14 ounces, high-quality bittersweet couverture, at least 60% cacao, finely chopped",
+        "amount": "400",
+        "section": "For the chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "¼",
+        "section": "For the chocolate base",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bca26545e3f1b8e296640d906fff91a77460c8a3fbdf201573d466696b6010b6",
+    "lineage_hash": "74aa3b865e355cdeff9ac48822ecdb76836c5c458eba3fbf53482d9ca9702dc7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/cinnamon-granola-chocolate-bars-recipe/",
+    "fetchedAt": "2026-09-30T19:15:17.706Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/cinnamon-granola-chocolate-bars-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

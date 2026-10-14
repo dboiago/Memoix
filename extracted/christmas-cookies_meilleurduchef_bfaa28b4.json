@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Almond Tuiles",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Almond Tuiles recipe, make sure you have organised all the necessary ingredients.",
+      "Place the egg whites in a [mixing bowl](https://www.meilleurduchef.com/en/shop/kitchenware/utensils/mixing-bowls/mfr-stainless-steel-mixing-bowl-25cm.html \"Stainless Steel Mixing Bowl - Ø 25cm - Matfer\").",
+      "Add the castor sugar, a pinch of salt...",
+      "... and flour.",
+      "Combine well with a [whisk](https://www.meilleurduchef.com/en/shop/kitchenware/utensils/whisk/mfe-stainless-steel-whisk-25-cm.html \"Stainless Steel Whisk - 25cm - Saint Romain\").",
+      "Add the melted butter. Combine again.",
+      "Add the flaked almonds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2dff950dd3ae36dcc182e063adeb6091efeac6134ec0d7011269bd34dc89ec8",
+    "lineage_hash": "3ac9270e4ebeee0fe89bfc2c6a6f2e8f2245f4d4a1a9286cfa26e7e595a39538"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/christmas-recipes/christmas-butter-cookies.html",
+    "fetchedAt": "2026-08-01T21:55:37.496Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/christmas-recipes/christmas-butter-cookies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

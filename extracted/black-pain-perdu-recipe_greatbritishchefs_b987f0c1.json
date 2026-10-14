@@ -1,0 +1,391 @@
+{
+  "recipe": {
+    "name": "Black Pain Perdu",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the eggs, milk, sugar and yeast to the bowl of a stand mixer, and mix well",
+      "Add the flour and charcoal powder and mix again using the dough hook for 2 minutes on a low speed. Turn the speed up to medium and mix for 8 more minutes",
+      "Add the butter in three additions, mixing well between each one. Finally, add the salt and mix until the dough is smooth and elastic. Form the dough roughly into a boule and transfer to the fridge in a lidded container to rise overnight",
+      "The following day deflate the dough and then shape it and transfer to a greased loaf tin to proof at room temperature for 3 hours (or at 25°C with 65% humidity)",
+      "Towards the end of the rising time, preheat the oven to 170°C",
+      "Bake the bread for 30 minutes, then remove from the oven and leave to cool",
+      "Let the bread dry out and stale for 2 days, before slicing into 2.5cm thick pieces",
+      "For the ice cream, mix the milk and cooked seoritae together, then transfer to a Thermomix with the rest of the ingredients. Mix at speed 6, 83°C for 5 minutes",
+      "Pass the mixture through a fine mesh sieve and cool quickly over an ice bath",
+      "Transfer to the fridge to chill overnight, then either churn in an ice cream machine or transfer to a Pacojet container and freeze it",
+      "For the burnt vanilla sauce, first preheat the oven to 180°C",
+      "Line an oven tray with a baking mat. Add the vanilla pods and toast in the oven for 6 minutes",
+      "Carefully torch the vanilla pods with a blow torch and then transfer to a dehydrator. Dehydrate until fully dry",
+      "Once dry, blend in a high-speed blender to a powder",
+      "Weigh out 11g of the vanilla powder and add to a pan with the remaining ingredients for the burnt vanilla sauce. Bring to a boil, then blend until smooth",
+      "Strain through a fine mesh sieve and let cool",
+      "Use the sugar to make a dry caramel. Carefully add the butter and salt, and mix well, then add the pecans",
+      "Stir to coat, then transfer to a baking parchment-lined oven tray and leave to cool and harden",
+      "Bring the water, salt and butter for the gavotte to the boil",
+      "Sieve all of the dry ingredients onto the egg whites, and mix everything together",
+      "Pour the hot liquid into the egg white paste and mix together",
+      "Spread the gavotte mixture onto an oven tray lined with greased baking parchment, trying to get it as even and flat as possible",
+      "Bake for 12 minutes, then set aside to cool",
+      "For the pain perdu mixture, simply whisk all the ingredients together until smooth",
+      "Soak the slices of brioche in the pain perdu mixture for an hour on each side",
+      "Once finished soaking, preheat the oven to 180°C",
+      "Remove the brioche from the mixture and cook it in the pan with the clarified butter and sugar until caramelised, adding more butter and sugar as you go if needed",
+      "Transfer the slices of bread to an oven tray and cook for 3 minutes",
+      "To serve, place a piece of pain perdu in the centre of each bowl. Top with a teaspoon of pecan brittle and a quenelle of ice cream. Top the ice cream with two pieces of gavotte, and pour the burnt vanilla sauce all around the bowl"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "83",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "252",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charcoal Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and diced into cubes",
+        "amount": "108",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Seoritae",
+        "unit": "g",
+        "notes": "Korean black soybeans",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atomised Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stabiliser",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skimmed Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "112",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seoritae Powder",
+        "unit": "g",
+        "notes": "Korean black soybean powder",
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "106",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅖",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seoritae Powder",
+        "unit": "g",
+        "notes": "Korean black soybean powder",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Charcoal Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "92",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Seoritae Powder",
+        "unit": "g",
+        "notes": "Korean black soybean powder",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e42377133a1d566b9030e884eccb60162115dbd77e5dcb58ca0e9966e8a949a",
+    "lineage_hash": "5db4f02a7265c512864c140974274e1c5b3b2ee893d95b991beade108cdee515"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pain-perdu-recipe",
+    "fetchedAt": "2026-08-02T15:23:25.936Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pain-perdu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

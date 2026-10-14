@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Apple Halwa (सेब का हलवा)",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Core the apples and grate them.",
+      "Heat ghee in a kadai on medium flame. Add apples and cook till they are soft, for about 6-7 mins.",
+      "They will turn brown. Add milk and cook on low flame for 10mins, keep stirring.",
+      "When the moisture is evaporated, add khoya and sugar cook for 5 mins.",
+      "Add cinnamon powder, cook again for 2 mins.",
+      "Add almonds and pistachios. Switch off the flame.",
+      "Serve warm or cooled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "large, cored and grated",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khoya",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "adjust based on apple sweetness",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aaa5d3e44ff5a401751207643633950621dee79c9938021625f1c038e6b30dca",
+    "lineage_hash": "96e08c6279f8557b250456e9146ab5385744fbca704c8ef1245cd60097608954"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/apple-halwa/",
+    "fetchedAt": "2026-08-02T18:26:35.829Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/apple-halwa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

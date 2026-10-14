@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Mushroom Soup",
+    "time": "1 hr 30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "273",
+      "carbohydrateContent": "5",
+      "fatContent": "18",
+      "proteinContent": "21"
+    },
+    "directions": [
+      "First, wash the dried shiitake mushrooms a couple of times and rinse thoroughly. Then soak them in 8 cups of water in the soup pot for 6 hours or overnight. Trim away the stems (after soaking) before cooking and add the mushrooms back to the pot of water.",
+      "Add the dried goji berries and dried Chinese dates to the soup pot (no need to soak these beforehand). Bring to a boil over high heat, and then immediately turn the heat down to low.",
+      "Prepare the chicken while that’s simmering. Wash the chicken and pat it dry with a paper towel. Trim and set aside the chicken breasts for another dish. Cut the rest of the chicken into large pieces. Set aside.",
+      "Once the soup has simmered for 30 minutes, heat a wok over medium high heat until it starts to smoke slightly. Turn the heat down to medium, and add the oil and the ginger slices. Cook for a minute or two.",
+      "Spread the oil around the wok to coat. Then spread the chicken out in a single layer, and lightly brown the chicken before stirring. Once the majority of each piece has been cooked through, turn off the heat.",
+      "Add the chicken to the soup pot. Deglaze the wok with ½ cup water, and add it to the soup pot as well. Finally, add the Shaoxing wine and cover. Simmer for another 30 minutes over medium heat. Add salt to taste and sprinkle with chopped scallions right before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "small",
+        "notes": "dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "plus 1/2 cup, divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Dates",
+        "unit": null,
+        "notes": "dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "small",
+        "notes": "3½-4 pounds, organic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d20389adf048b06dd572b421c69795583117b71e07e7acb04651727d92d4d4f",
+    "lineage_hash": "2e719f1e66b4eecd453524a9e7fbf3953810795be2c927ef6442b82761bcc264"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-chicken-mushroom-soup/",
+    "fetchedAt": "2026-08-02T13:52:27.603Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-chicken-mushroom-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

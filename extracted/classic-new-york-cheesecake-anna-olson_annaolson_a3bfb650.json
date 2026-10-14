@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Classic New York Cheesecake",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 ºF (180 ºC).",
+      "For the crust, stir the graham crumbs, sugar and melted butter until evenly combined and press this into the bottom of an ungreased 9-inch (23 cm) springform pan. Bake this for 10 minutes, then cool. Brush the sides of the pan with a little melted butter.",
+      "For the cheesecake, increase the oven temperature to 400 ºF (200 ºC). Beat the cream cheese until light and fluffy. Add the 1 ¼ cups (250 g) of sugar a little at a time, and scraping the sides and bottom of the bowl often. Beat in the cornstarch, vanilla and lemon zest. Beat in the eggs one at a time, on a lower speed, and scraping after each addition, then beat in the yolk. Still on low speed, beat in ¾ cup (190 g) of sour cream. Scrape this over the cooled crust.",
+      "Bake the cheesecake for 10 minutes at 400 ºF (200 ºC) and then reduce the oven temperature to 225 ºF (105 ºC) and bake for 25 more minutes. Turn off the oven, and leave the cheesecake in for an hour, cracking the oven door after 30 minutes. While the cheesecake is baking, prepare the sour cream layer.",
+      "Stir the remaining ¾ cup (190 g) of sour cream with the remaining 2 Tbsp (25 g) of sugar and the lemon juice. Spread this over the top of the cheesecake as soon as it has come out of the oven. Allow the cheesecake to cool completely to room temperature, then carefully run a spatula around the outside of the cheesecake to loosen it from the pan, then chill the cheesecake for at least 6 hours before slicing and serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Graham Cracker Crumbs",
+        "unit": "C",
+        "notes": "120 g",
+        "amount": "1",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "60 g, plus extra for greasing the pan",
+        "amount": "¼",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Pkg Cream Cheese",
+        "unit": null,
+        "notes": "250 g each, at room temperature",
+        "amount": "4",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "250g + 25 g, + 2 Tbsp",
+        "amount": "1¼",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "22 g",
+        "amount": "3",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "10 mL",
+        "amount": "2",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "10 mL, finely grated",
+        "amount": "2",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "380 g, divided",
+        "amount": "1½",
+        "section": "Cheesecake",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "10 mL",
+        "amount": "2",
+        "section": "Cheesecake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79ec09b82f73f142a481e6e544436a7fb0af6b83ec3c7224360b665caca1c51b",
+    "lineage_hash": "2cc388f2a4bf7ff3ee6dff3c15546a9e743794b1478b8f6316b9071667aaca6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-new-york-cheesecake/",
+    "fetchedAt": "2026-08-01T19:31:57.495Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-new-york-cheesecake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

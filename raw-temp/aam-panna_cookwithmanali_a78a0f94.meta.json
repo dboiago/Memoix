@@ -1,0 +1,56 @@
+{
+  "url": "https://www.cookwithmanali.com/aam-panna/",
+  "slug": "aam-panna_cookwithmanali_a78a0f94",
+  "title": "Aam Panna",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T17:00:33.105Z",
+  "ldName": "Aam Panna",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Beverage",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "350 grams raw green mangoes (around 6 small)",
+    "4 cups water (divided)",
+    "3/4 cup granulated white sugar",
+    "1.5 teaspoon cumin powder",
+    "1/4 teaspoon black pepper (or as needed)",
+    "1 teaspoon black salt",
+    "25-30  mint leaves"
+  ],
+  "ldInstructionsRaw": [
+    "Peel the raw mangoes and then cut them into small pieces.",
+    "Transfer the cut pieces to a pan and add 1 cup water to it. Cook on medium heat till the mangoes pieces are soft, around 10 minutes.",
+    "Remove pan from heat and transfer the softened mango (along with the water in which it was cooked) to a blender. Let it cool down a little.",
+    "Add 3 cups cold water, mint leaves and sugar. Blend to a smooth paste.",
+    "Strain the liquid into another bowl, add cumin powder, black salt and black pepper. Mix till everything is well combined.",
+    "Transfer aam panna to a glass bottle and keep refrigerated.",
+    "To serve, fill 2/3rd to 3/4th of a glass with aam panna mixture, fill remaining with cold water and serve chilled with fresh mint leaves."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "136 kcal",
+    "carbohydrateContent": "34 g",
+    "sodiumContent": "398 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "32 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 350 grams raw green mangoes, around 6 small",
+    "▢ 4 cups water, divided",
+    "▢ 3/4 cup granulated white sugar",
+    "▢ 1.5 teaspoon cumin powder",
+    "▢ 1/4 teaspoon black pepper, or as needed",
+    "▢ 1 teaspoon black salt",
+    "▢ 25-30 mint leaves"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

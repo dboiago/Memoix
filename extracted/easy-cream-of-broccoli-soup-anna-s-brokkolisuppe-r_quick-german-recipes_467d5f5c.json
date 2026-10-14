@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Cream of Broccoli Soup (Brokkolisuppe)",
+    "time": "25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan, sauté the onion in the olive oil until translucent, but not browned.",
+      "Add potatoes, broccoli, and broth.",
+      "Bring to boil and simmer about 15 minutes or until vegetables are tender.",
+      "Using an immersion blender, cream the soup. If you want a really silky texture, pour the soup through a strainer and return to the pot.",
+      "Season with salt, pepper, and nutmeg.",
+      "Stir in the sour cream and readjust seasonings if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "30 milliliters",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "peeled and cubed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "lb",
+        "notes": "681 grams, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": "1.2 liters",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "240 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d75118f2ef7e29c57d558e2049454269e29dafff495252b3b8a0caf06b2bb569",
+    "lineage_hash": "e4a5b3c3881d3e91eeac940323454979e909da205af5f7a31b47372ba04ab387"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/broccoli-soup.html",
+    "fetchedAt": "2026-09-25T20:41:44.906Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/broccoli-soup.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

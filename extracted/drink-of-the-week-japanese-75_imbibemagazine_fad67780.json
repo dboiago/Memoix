@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Japanese 75",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": "Highball",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a 10-ounce highball, combine gin, simple syrup and lemon juice and stir gently.",
+      "Fill glass halfway with cracked ice.",
+      "Top with chilled sparkling sake.",
+      "Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "freshly squeezed",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Sake",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d21c12c9953d398e1e1508ee40f1f876d05588edabe1fa17be53ecf0666b2aa",
+    "lineage_hash": "39b6ce87887a5a44d097ca15830aada119170b03f9016ce8e00953da5b1116f7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/drink-of-the-week-japanese-75/",
+    "fetchedAt": "2026-08-02T20:20:41.727Z"
+  },
+  "rawSource": "https://imbibemagazine.com/drink-of-the-week-japanese-75/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

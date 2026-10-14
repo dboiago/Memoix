@@ -1,0 +1,51 @@
+{
+  "url": "https://dailycookingquest.com/chives-pancake.html",
+  "slug": "chives-pancake_dailycookingquest_753ae484",
+  "title": "Chives Pancake",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:00:34.686Z",
+  "ldName": "Chives Pancake",
+  "ldTime": "PT0H15M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Egg",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "4 eggs, lightly beaten",
+    "1/4 cup water",
+    "1/2 teaspoon oyster sauce",
+    "1/2 teaspoon fish sauce",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon ground white pepper",
+    "80 gram chives, chop into 1 cm lengths",
+    "2 tablespoon oil"
+  ],
+  "ldInstructionsRaw": [
+    "Heat a 10-inch (or an 8-inch) frying pan over medium-high heat.",
+    "In a mixing bowl, combine lightly beaten egg with water, oyster sauce, fish sauce, salt, and pepper. Mix well and then toss in the chopped chives and stir to combine.",
+    "Reduce the heat to a medium, add 2 tablespoons of oil, then swirl to coat the frying pan.",
+    "Pour the egg mixture. Once the bottom is browned and set, flip and cook the other side until set.",
+    "Remove the pancake from the pan, cut into wedges and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4 eggs, lightly beaten",
+    "1/4 cup water",
+    "1/2 teaspoon oyster sauce",
+    "1/2 teaspoon fish sauce",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon ground white pepper",
+    "80 gram chives, chop into 1 cm lengths",
+    "2 tablespoon oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

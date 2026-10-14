@@ -1,0 +1,388 @@
+{
+  "recipe": {
+    "name": "Dak Bunglaw Chicken curry (Chicken Aloo curry)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add chicken pieces, salt to taste, curd, degi red chili powder, turmeric powder.",
+      "Add coriander powder, ginger garlic paste and marinate well and keep aside for further use.",
+      "In a shallow pan, add oil, add black cardamom, green cardamom, coriander seeds, cumin seeds.",
+      "Add black peppercorns, cinnamon stick, bay leaf and let it splutter well. Switch off the flame.",
+      "Add fresh coconut, ginger, garlic cloves, salt to taste and mix well.",
+      "Add chilled water and transfer it into a bowl, add degi red chili powder and mix well.",
+      "Transfer it into a grinder jar and grind it into a smooth paste. Keep aside for further use.",
+      "In a mortar pestle, add garlic, ginger, dry red chili and grind it into a rough paste and keep aside for further use.",
+      "In a large handi or pot, add mustard oil, oil once it is hot, add onion, and saute it until light brown in color.",
+      "Add red chili paste, potatoes and saute it for 2-3 minutes on medium flame.",
+      "Add tomato, salt to taste and mix well. Add marinated chicken and saute it well.",
+      "Add warm water and mix well. Add prepared paste and mix everything well.",
+      "Cover it with a lid and cook on medium flame until the chicken is cooked well.",
+      "Add fried eggs and give it a boil. Add coriander leaves and mix well.",
+      "Once the chicken is cooked well, transfer it into a serving dish, garnish it with coriander sprig.",
+      "Serve hot with steam rice.",
+      "In a shallow pan, add oil, boiled eggs, degi red chilli powder, a pinch of asafoetida, salt to taste and fry on low flame for 2-3 minutes.",
+      "Keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "cut into big pieces",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "3",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "fresh, grated",
+        "amount": "¼",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "½",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Red Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "½",
+        "section": "For Red Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Red Chilli Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "slice",
+        "amount": "4",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Red Chilli Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "peeled, dice",
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "For Frying Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Frying Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Frying Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45185ae0e1c3dace28f91f0b8de68a694261718d7a61389d96f0889009c9cae0",
+    "lineage_hash": "7d2d28f3d234472683480f7940c5e37c9973c3c51917815612d3ec503d507357"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dak-bunglaw-chicken-curry/",
+    "fetchedAt": "2026-08-02T14:00:03.876Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dak-bunglaw-chicken-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

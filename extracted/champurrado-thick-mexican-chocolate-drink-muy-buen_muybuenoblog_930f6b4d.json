@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Champurrado (Thick Mexican Chocolate Drink)",
+    "time": "1 hr 15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "133",
+      "carbohydrateContent": "22",
+      "fatContent": "4",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "In a large saucepan boil water with the two cinnamon sticks and anise star. Remove from the heat, cover and let the cinnamon sticks and anise star steep for about 1 hour. Remove the cinnamon sticks and anise star, return to low heat and slowly add the masa harina to the warm water, whisking until combined. Add milk, chocolate, and piloncillo.",
+      "Heat over medium heat just until boiling; reduce heat. Simmer, uncovered, about 10 minutes or until chocolate is completely melted and sugar is dissolved, whisking occasionally. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anise Star",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Masa Harina",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Disk Mexican Chocolate",
+        "unit": null,
+        "notes": "Abuelita or Ibarra",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo",
+        "unit": "oz",
+        "notes": "chopped or 1/2 cup packed brown sugar",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b630657f348b3267cbcb451ed5186c9794b4412e95caa48c05570c5011c09655",
+    "lineage_hash": "ae2e030c9d46e7684bdcc31bd180781afd1c2b9c034ccc6e74c85899a4b3edd2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/champurrado-mexican-hot-chocolate/",
+    "fetchedAt": "2026-08-02T05:46:49.780Z"
+  },
+  "rawSource": "https://muybuenoblog.com/champurrado-mexican-hot-chocolate/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

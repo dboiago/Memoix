@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Cuban Special",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "177",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "STRAIN into ice-filled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light White Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d72fed6bee1ed3dcfa933bfad0e1ddf9f6ea7b0d16c0ce26bce63d6a02e1187",
+    "lineage_hash": "4b21bb789e83210da96ccd604956be0e248108e94f827749718b89c339c3a4e0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/497/cuban-special",
+    "fetchedAt": "2026-08-02T05:40:43.086Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/497/cuban-special",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

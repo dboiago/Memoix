@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-steamed-ribs-with-black-bean/",
+  "slug": "chinese-steamed-ribs-with-fermented-black-bean_chinasichuanfood_f156e703",
+  "title": "Chinese Steamed Ribs with Fermented Black Bean",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:50:27.744Z",
+  "ldName": "Steamed Ribs with Black Bean Sauce",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "500 g ribs",
+    "1 tbsp. Chinese Shaoxing wine",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. oyster sauce",
+    "1/4 tsp. sugar",
+    "1/4 tsp. white pepper powder",
+    "2  spring onions",
+    "1 thumb ginger (, shredded)",
+    "1 tbsp. cornstarch",
+    "4  garlic cloves (, finely chopped)",
+    "1 tbsp. fermented black beans",
+    "2 tbsp. vegetable cooking oil",
+    "beech mushooms (, root removed)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the ribs and then soak in clean water for half hour. Replace the water with clean water once again.  Then drain completely.",
+    "Add white pepper, sugar, ginger, fermented black beans, oyster sauce, light soy sauce and cooking wine. Combine well, covered and set aside for at least 3 hours or overnight.",
+    "Add 1 tablespoon of cornstarch and mix well. Then place in garlic and fermented black beans. Pour around 2 tablespoons of hot oil on surface.",
+    "Steam the ribs for 30 minutes after the water boils. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "879 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "44 g",
+    "fatContent": "72 g",
+    "saturatedFatContent": "32 g",
+    "transFatContent": "5 g",
+    "cholesterolContent": "188 mg",
+    "sodiumContent": "947 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "38 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "500 g ribs",
+    "[Marinating]",
+    "1 tbsp. Chinese Shaoxing wine",
+    "1 tbsp. light soy sauce",
+    "1/2 tbsp. oyster sauce",
+    "1/4 tsp. sugar",
+    "1/4 tsp. white pepper powder",
+    "2 spring onions",
+    "1 thumb ginger , shredded",
+    "[Other]",
+    "1 tbsp. cornstarch",
+    "4 garlic cloves , finely chopped",
+    "1 tbsp. fermented black beans",
+    "2 tbsp. vegetable cooking oil",
+    "beech mushooms , root removed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

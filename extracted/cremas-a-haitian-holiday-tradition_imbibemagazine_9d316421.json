@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Cremas",
+    "time": "1 hr 15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "HT",
+    "glass": "Snifter",
+    "garnish": [
+      "Fresh Grated Nutmeg",
+      "Lime Zest"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large, heavy-bottomed saucepan over low heat, add the evaporated coconut milk and regular coconut milk, stirring to combine.",
+      "Add the coconut cream and condensed coconut milk, stirring until combined and fats have dissolved.",
+      "Add the sugar, cinnamon, star anise, nutmeg, vanilla extract, and orgeat. Stir until the sugar has completely dissolved.",
+      "Continue to cook over low heat for about 30 to 45 minutes, stirring often as to not let the cremas burn; do not bring to a boil.",
+      "Remove the mixture from heat and allow it to cool slightly.",
+      "Use a sieve to strain out the spices.",
+      "Allow the mixture to cool in the refrigerator for at least 4 to 6, or ideally overnight.",
+      "Lastly, stir in the rum and transfer to a sealable container, storing in the fridge for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Evaporated Coconut Milk",
+        "unit": "can",
+        "notes": "12 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Coconut Milk",
+        "unit": "can",
+        "notes": "11 1/4 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Coconut Milk",
+        "unit": "can",
+        "notes": "13 oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "oz",
+        "notes": "unsweetened, not cream of coconut",
+        "amount": "44",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Haitian Rum",
+        "unit": "oz",
+        "notes": "Kann uses Rhum Barbancourt 4 Years",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d390112dbccee3c1389702c16e69fd6bada6b0b17d9976c605462201b103e983",
+    "lineage_hash": "36decedefa687994b89cb7bfa6edff0cbe606e8459d35f7b04752f006c79e813"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/haitian-cremas/",
+    "fetchedAt": "2026-08-03T11:58:24.117Z"
+  },
+  "rawSource": "https://imbibemagazine.com/haitian-cremas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

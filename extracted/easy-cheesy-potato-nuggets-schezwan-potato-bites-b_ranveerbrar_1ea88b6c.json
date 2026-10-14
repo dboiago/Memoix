@@ -1,0 +1,407 @@
+{
+  "recipe": {
+    "name": "Cheesy Potato Nuggets (Schezwan Potato Bites)",
+    "time": "30-35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Spring Onion",
+      "Coriander Sprig",
+      "Tomato"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take a bowl, add water, peeled potatoes and keep aside for further use.",
+      "Take a kadai or shallow pan, add butter, and oil once the butter is melted.",
+      "Add garlic, chilli flakes, water, salt to taste, and sugar. Add grated potatoes and cook on medium flame for 2-3 minutes.",
+      "Add rice flour and mix it well, add butter and cook it well.",
+      "Add the other half grated potato and mix it well. Once it is cooked well, transfer it into a tray.",
+      "Keep in a refrigerator until it cools down completely.",
+      "In another bowl, add boiled grated potatoes, add the cooked potato mixture.",
+      "Add salt to taste, bread crumbs, baking powder, baking soda, black pepper powder.",
+      "Add pizza cheese blend and mix everything well.",
+      "Divide the mixture into small bite size portions and give it any shape you desire.",
+      "repeat this and make with the rest of the mixture.",
+      "Heat oil in a kadai, once the oil is medium hot.",
+      "Meanwhile, take one shaped nuggets and coat it in the season flour, now dip the shaped nuggets in the slurry and then in a fresh bread crumb and coat it properly from all sides.",
+      "repeat this process for all other balls.",
+      "Heat oil in a kadai, dip one by one nuggets into the oil.",
+      "Fry on medium to from all the sides until golden in color and crisp.",
+      "Remove on an absorbent paper and keep aside.",
+      "Garnish it with spring onion, coriander sprig, tomato and serve hot with ketchup.",
+      "In a shallow non-stick pan, add butter, oil once it’s melted, add garlic, chilli flakes and sauté it well.",
+      "Add water, grated potatoes, salt to taste, sugar and cook on medium flame.",
+      "Add turmeric powder and mix it well. Add rice flour and mix it well.",
+      "Once the potatoes are half cooked, add butter and mix it well.",
+      "Now, add the other half grated potatoes and mix well. Switch off the flame.",
+      "Let it cook on its own heat. Transfer it into a tray and Keep in a refrigerator until it cools down completely.",
+      "Once it cools down, transfer it into a bowl and mix it well. Divide the mixture into small bite size portions and give it any shape you desire.",
+      "Heat oil in a kadai, dip one by one nuggets into the oil.",
+      "Fry on medium to from all the sides until golden in color and crisp.",
+      "Remove on an absorbent paper and keep aside.",
+      "In a deep pan or wok, add schezwan sauce, type 2 fried potato nuggets and toss everything well.",
+      "Add Spring onion and toss well. Garnish it with coriander sprig and serve hot.",
+      "In a bowl, add refined flour, salt to taste, degi red chilli powder mix well.",
+      "Keep aside for further use.",
+      "In a bowl, make slurry by mixing refined flour, salt to taste, degi red chilli powder and water, it should be a coating consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cube",
+        "amount": "1",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-4",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Potato",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "2",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "peeled, grated",
+        "amount": "2",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Size Potato",
+        "unit": "medium",
+        "notes": "boiled, grated",
+        "amount": "2",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Pizza Cheese",
+        "unit": "C",
+        "notes": "blend",
+        "amount": "¼",
+        "section": "For Potato Nuggets Type 1",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "peeled, grated",
+        "amount": "2",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "large",
+        "notes": "peeled, grated",
+        "amount": "1",
+        "section": "For Potato Nuggets Type 2",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumbs",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Schezwan Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Schezwan Style Nuggets",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Potato Nuggets Type 2",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Schezwan Style Nuggets",
+        "isOptional": false
+      },
+      {
+        "name": "Few Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "For Schezwan Style Nuggets",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "984ad0c59b00720d307bbd6e891f3a7bd7103226cb29404a203957ccff6fec64",
+    "lineage_hash": "b26797669b82c08dcb79910657b8d6b38ec40e0f77da63dd8d22d74ca1558ba5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheesy-potato-nuggets/",
+    "fetchedAt": "2026-08-02T12:22:05.239Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheesy-potato-nuggets/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

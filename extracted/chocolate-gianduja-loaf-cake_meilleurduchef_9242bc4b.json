@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Chocolate & Gianduja Loaf Cake",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate & Gianduja Loaf Cake recipe, organise all the necessary ingredients.",
+      "For the chocolate batter:  Place the almond paste in the stand mixer bowl, cutting it in small chunks with your fingers (heat in the microwave for a few seconds until soft if necessary).",
+      "Add 35 grams of castor sugar in the bowl.",
+      "Beat the ingredients with the flat beater. The ingredients should be totally incorporated and no chunks should remain (this operation is easier if you heat the almond paste in the microwave at step #2).",
+      "When the preparation is homogeneous, gradually add the egg yolk while beating.\nIf necessary, increase the speed to smoothen the consistency of the almond paste.",
+      "When the preparation is pale, add the rest of the egg yolks...",
+      "... and stop mixing when creamy and homogeneous.",
+      "Pour the egg whites in the stand mixer recipient...",
+      "... and beat until firm.",
+      "When the egg whites have a foamy consistency, add the rest of the sugar and beat until stiff. Continue beating.",
+      "On a sheet of greaseproof paper...",
+      "... sift the flour and cocoa powder.",
+      "Pour the almond paste mix over the beaten egg whites.",
+      "Combine gently with a rubber spatula,\nworking in circular motions to ensure the preparation does not collapse.",
+      "Gradually add the sifted flour and cocoa powder and incorporate carefully with the spatula.",
+      "Ideally, two people will perform the operation: while one is pouring the sifted powder, the other is incorporating the ingredients.",
+      "If you're making this recipe by yourself, work in several batches. Add the rest of the sifted flour and cocoa powder...",
+      "... and combine.",
+      "When homogeneous...",
+      "... take a small ladle of chocolate preparation...",
+      "... and combine with the melted butter (make sure it has cooled down).",
+      "It is important to mix these two ingredients beforehand to prevent the preparation from collapsing.",
+      "Add this mix to the chocolate preparation...",
+      "... and incorporate gently.",
+      "The chocolate batter is ready.",
+      "Grease a loaf cake mould with an oil spray.",
+      "Pour the chocolate batter in the mould...",
+      "... and even the surface with a small cranked spatula.",
+      "Insert chunks of gianduja chocolate on the surface of the cake.",
+      "Bury them in the preparation with a teaspoon.",
+      "Place in a fan-assisted oven preheated at 160°C (gas 3) and bake on the middle rack between 35 and 40 minutes.",
+      "When cooked, remove the mould from the oven. Insert the blade of a knife in the centre of the cake. The blade should be dry when you take it out.",
+      "Carefully release the cake from the mould...",
+      "... while the cake is still hot.",
+      "Flip carefully and leave aside to cool.",
+      "Sprinkle the surface with a thin layer of icing sugar...",
+      "... or Codineige decorating sugar.",
+      "Slice the cake using a serrated knife in order not to break the moist centre.",
+      "This cake is delicious either served warm or cold. A family favourite for children of all ages!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Almond Paste 50%",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": "35 + 35",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plein Arôme Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gianduja Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "alt: Codineige non-melting sugar",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32d30517496b242a181e24a1f3964b63fe84f09b47feff984281eb7562531898",
+    "lineage_hash": "2e1e5843e8af8af67d66a7a07c52f79f168d772db3781995355c22b4fef260dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-gianduja-loaf-cake.html",
+    "fetchedAt": "2026-08-02T03:57:27.081Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-gianduja-loaf-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

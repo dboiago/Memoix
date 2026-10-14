@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Duck Ragù with Bigoli",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the duck ragù, heat the oil in a large, heavy-based pan set over a medium heat. Once hot, add the garlic and rosemary and allow them to infuse in the oil for a couple of minutes, stirring often",
+      "Next, add the duck mince and increase to a medium-high heat. Cook for 4–5 minutes, until evenly browned; season generously",
+      "Pour in the wine and stock and add the juniper berries. Bring everything to a simmer then reduce the heat to low and cover with a lid",
+      "Cook the ragù for at least 1 hour, stirring occasionally and adding a little stock if the ragù becomes too dry",
+      "Once the liquid has reduced completely and only and oily sauce remains, remove from the heat and discard the rosemary, juniper and garlic. Cover and keep warm",
+      "Finally, bring a large pan of salted water to a rolling boil. Lower in the bigoli and cook for 5–6 minutes if fresh, about 10 minutes if dry (the exact time will depend on the type of pasta, try to keep it al dente)",
+      "Meanwhile, set the ragù back over a medium heat. When the pasta is ready, drain and top it with the meat sauce and half of the grated Parmesan. Toss until any water has been absorbed and the pasta is evenly seasoned. Serve along side the rest of the grated Parmesan"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": "g",
+        "notes": "ideally from Barbary or Muscovy duck, minced, including fat and skin",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "slightly crushed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Stock",
+        "unit": "ml",
+        "notes": "or vegetable stock",
+        "amount": "480",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bigoli Pasta",
+        "unit": "g",
+        "notes": "or thick fresh spaghetti, fresh",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd326b58f2b5fae271242f1848b58a801cecaf4163fc559cc3adf5fd9278b153",
+    "lineage_hash": "234b008527c0027ecd51685135cb968621d1a4eaaf7b1d459abfb5420afbf808"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/duck-ragu-recipe-with-bigoli",
+    "fetchedAt": "2026-08-01T23:56:26.904Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/duck-ragu-recipe-with-bigoli",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

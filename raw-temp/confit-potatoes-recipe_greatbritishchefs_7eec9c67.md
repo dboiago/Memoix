@@ -1,0 +1,3 @@
+Just when you thought [potatoes](https://www.greatbritishchefs.com/ingredients/potato-recipes) had been cooked in every way possible, along comes this legendary side dish from The Quality Chop House. Thinly sliced potatoes are confit in duck fat before being pressed overnight and deep-fried until crisp. The shattering crunch and almost creamy centre make these better than any chips or roast potatoes you've had before.
+
+This recipe is taken from _The Quality Chop House: Modern Recipes and Stories from a London Classic_ by William Lander, Daniel Morgenthau & Shaun Searley (Quadrille, £30). Photography by Andrew Montgomery.

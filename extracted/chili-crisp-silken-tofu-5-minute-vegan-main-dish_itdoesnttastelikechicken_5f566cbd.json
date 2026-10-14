@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chili Crisp Silken Tofu",
+    "time": "5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "221",
+      "carbohydrateContent": "12",
+      "fatContent": "15",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Prepare the tofu: Do not press the tofu. Silken tofu is very delicate, almost like pudding, so handle it gently. Open the package, drain off any water, then carefully invert it onto your serving dish. Gently squeeze the sides of the container if needed to release it. Leave it whole or slice into large cubes or thick slices. No cooking needed.",
+      "Make the sauce: In a small bowl, mix together the soy sauce, chili crisp, rice vinegar, maple syrup, and sesame oil.",
+      "Assemble: Spoon the sauce evenly over the tofu. Garnish with green onions and sesame seeds",
+      "Serve: Serve immediately and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Block (10.5-16 Oz) Silken Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Crisp",
+        "unit": "tsp",
+        "notes": "adjust to taste",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "tsp",
+        "notes": "agave, or sugar",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0518d2980c6ccde819c6eac1675d408c9f0c1624ae899e019d00db5c82a365c1",
+    "lineage_hash": "fd24069ab05a4693fc7943eaa78d9c8204e189a194a8212ba8df3213cf9686b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chili-crisp-silken-tofu/",
+    "fetchedAt": "2026-08-02T09:52:06.146Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chili-crisp-silken-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

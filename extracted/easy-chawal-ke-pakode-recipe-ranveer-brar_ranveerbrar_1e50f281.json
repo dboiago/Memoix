@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Chawal ke pakode (Rice Pakoras)",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a deep frying pan, put oil on gas for deep frying.",
+      "in a mixing bowl, take 2 cups of leftover rice.",
+      "Mash it smooth with your hands, till it turns into sticky.",
+      "Add onion, carrot, cabbage, coriander, grated ginger, green chili, coriander leaves, chat masala, roasted cumin powder, chili powder, chaat masala, salt, besan and give it a good mix, in between squeeze and then mix.",
+      "Wet your hand and take a ball sized batter and deep fry them.",
+      "Keep stirring occasionally, till they gets crisp and golden brown.Drain on paper towel.",
+      "Serve hot with chutney or ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "leftover",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Vegetables",
+        "unit": "C",
+        "notes": "cabbage, carrot, finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Besan/ Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba3d3e76629feace3bb50a7aab2d6c075edb78b2f07c7df30a4d7868746b9c67",
+    "lineage_hash": "dcf7ff5d6187f4fd73268efccdef6af26f6460e941f079bcd620fd3155500783"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chawal-ke-pakode/",
+    "fetchedAt": "2026-08-02T10:28:45.886Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chawal-ke-pakode/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

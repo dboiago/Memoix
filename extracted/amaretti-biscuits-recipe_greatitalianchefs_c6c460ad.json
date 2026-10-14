@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Amaretti Biscuits",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ground almonds, sugar and bicarbonate of soda in a bowl and mix together",
+      "Stir in the egg whites, vanilla essence and Amaretto, mixing until you have a thick paste",
+      "Transfer the mixture to a piping bag, then snip a 1.5cm hole at the end",
+      "Pipe even blobs, around 2.5cm in diameter, onto a baking tray lined with greaseproof paper",
+      "Using a damp pastry brush, dab each blob to get a smooth top, then dust with icing sugar",
+      "Bake for 20–25 minutes, or until the biscuits are cracked and pale gold",
+      "Leave to cool a little then dust with more icing sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "to dust",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ede30b7ce225808fbdb4b3bff73db4e8b88e477823b96fd3e21f8217191d0df8",
+    "lineage_hash": "71fb7507f66a489acaa8885568fae3ea1f27b49a59f193b9378caaffae65efe4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/amaretti-recipe",
+    "fetchedAt": "2026-08-01T18:50:37.425Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/amaretti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

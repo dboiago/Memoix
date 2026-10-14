@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Duck Breast, Radicchio, Girolle, Walnut and Redcurrant",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brine the duck in a 5% salt solution for 1 hour in the fridge",
+      "Remove, dry well, then break down the duck",
+      "Vacuum seal the duck breasts and cook sous-vide at 58°C for 1 hour. Once cooked, chill immediately in ice water to stop cooking and firm up",
+      "For the duck sauce, heat 5 tablespoons of vegetable oil in a pan. Fry the duck bones and trim until caramelised",
+      "Drain the contents of the pan through a colander, discarding the oil. Put the duck trim back into the saucepan",
+      "Pour in half the chicken stock and reduce on a high heat until almost dry",
+      "Once dry, add the remaining chicken stock and reduce by half",
+      "Strain the liquid through a fine chinois into a clean container. Place in the fridge to chill overnight",
+      "The following day, skim off any solidified fat, then reduce until thick enough to coat the back of a spoon",
+      "For the pickled redcurrants, bring the vinegar, water, sugar, and salt to a boil",
+      "Pour the brine over the redcurrants and allow to pickle for at least 1 hour",
+      "For the radicchio, heat the water, vinegar, sugar, and salt until boiling",
+      "Pour over the radicchio wedges in a container and leave to pickle for at least 1 hour. This will finish the cooking process",
+      "Add the walnuts, green peppercorns and 20g pickled red currants to the duck sauce",
+      "Boil the beetroots until tender, then strain the water, reserving the liquid",
+      "Blend at full power until smooth, adjusting the consistency with the strained water",
+      "Season with salt and a splash of sherry vinegar",
+      "Place a dot of beetroot purée onto each plate",
+      "Fry the duck breast on a medium heat until golden brown and the skin is rendered and crispy. Rest for six minutes",
+      "Add a few leaves of pickled radicchio and the girolles",
+      "Slice the duck breast and place on the plate, skin side up. Spoon over duck sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brine Solution",
+        "unit": null,
+        "notes": "as needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Green Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrants",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radicchio",
+        "unit": null,
+        "notes": "cut into wedges and lightly charred on a barbecue or grill",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Beetroot",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chanterelles",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c0426ea6fa12436799dd32491290f0b51f1b09950d5706ea444626d064ace13",
+    "lineage_hash": "80d515dd76aebaf19bd1b795b173ca871d2923efba1d93c082ef740b760231d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-radicchio-girolle-walnut-redcurrant-recipe",
+    "fetchedAt": "2026-08-02T01:51:37.017Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-radicchio-girolle-walnut-redcurrant-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

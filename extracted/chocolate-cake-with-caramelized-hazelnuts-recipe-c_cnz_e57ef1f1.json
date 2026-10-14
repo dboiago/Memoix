@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chocolate Cake with Caramelized Hazelnuts",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put the hazelnuts in the bowl of the food processor, and pulse just a couple of times to chop them roughly. Separate the chunks of hazelnuts from the hazelnut powder this has also created, and reserve the hazelnut powder in a small bowl.",
+      "Toast the hazelnut chunks in a small dry skillet over high heat, set aside.",
+      "In the same small preferably non-stick skillet, pour the amount of sugar indicated for the topping and just a little splash of water. Let this melt over medium-high heat until you get a lightly golden syrup. Add the toasted hazelnut chunks and toss to coat.",
+      "Pour the caramelized hazelnuts to cool in a single layer on a sheet of parchment paper or a silicon baking mat. Once cooled, separate the hazelnuts that may have stuck together.",
+      "Preheat the oven to 180°C (360°F). Line the inside of a 24 cm (8-inch) square baking pan with two long pieces of foil crosswise. Spray the foil with nonstick cooking spray, or lightly brush with oil.",
+      "Break the chocolate and dice the butter in a medium heatproof bowl. Put the bowl over a saucepan of almost-simmering water, stirring from time to time, until the chocolate and butter are thoroughly melted. Whisk in the cocoa powder until smooth. Set aside to cool slightly.",
+      "In the bowl of a food processor, mix the eggs, the sugar, the vanilla, and the salt in a few short pulses. Add in the chocolate mixture, pulse a couple more times. Add in the flour, the hazelnut powder you previously set aside, and mix until just combined.",
+      "Pour the batter into the pan and smooth it out with a spatula. Sprinkle the caramelized hazelnuts evenly over the surface.",
+      "Put into the oven to bake for 35 to 40 minutes, until slightly puffed and a toothpick inserted in center comes out with a small amount of sticky crumbs clinging to it.",
+      "Transfer to a rack to cool for about 2 hours, before removing the cake from the pan.",
+      "Sieve confectioner’s sugar all over the surface. Cut into 1-inch squares and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semisweet",
+        "unit": "g",
+        "notes": "alt: bittersweet chocolate",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3a748c7eca921609d87812905d92ebe9411f50a89796c93900d20a9874a73623",
+    "lineage_hash": "f8cca7296d1da6bef200c661e9ac2a5523ebf4edf024aefe101424ee63968f71"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-cake-with-caramelized-hazelnuts-recipe/",
+    "fetchedAt": "2026-09-30T18:37:04.589Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-cake-with-caramelized-hazelnuts-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

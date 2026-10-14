@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2021/02/04/classic-brioche-bread/",
+  "slug": "classic-brioche_baking-sense_477c30e0",
+  "title": "Classic Brioche",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T00:42:57.267Z",
+  "ldName": "Classic Brioche",
+  "ldTime": "PT460M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT40M",
+  "ldYield": [
+    "32",
+    "32 slices"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Breakfast, brunch, Lunch, Snack",
+  "ldKeywords": "classic",
+  "ldIngredientsRaw": [
+    "6 oz whole milk (¾ cup, scalded and cooled)",
+    "2 ¼ teaspoons dry yeast",
+    "17 ½ oz bread flour (3 ½ cups, see note)",
+    "4  large eggs (room temperature)",
+    "3 oz granulated sugar (⅓ cup)",
+    "1 ½ teaspoons salt",
+    "8 oz unsalted European butter (at cool room temperature)",
+    "1  egg (for egg wash)"
+  ],
+  "ldInstructionsRaw": [
+    "In the bowl of a stand mixer with the paddle attachment, combine 6 oz&#32;whole milk, 2 ¼ teaspoons&#32;dry yeast and 1 cup (5 oz) flour. Mix to form a thick batter. Cover the bowl and set aside for 30 minutes.",
+    "After 30 minutes uncover the bowl. With the mixer running, add 4&#32;large eggs, 3 oz&#32;granulated sugar, 1 ½ teaspoons&#32;salt, and another cup of the flour. Mix until combined. Switch to the dough hook. With the mixer running on low, add the remaining flour.",
+    "Increase the speed to medium and knead the dough for 10-15 minutes until the dough gathers on the hook, becomes smooth and silky and slaps the sides of the bowl.",
+    "If you&#39;re using a European butter you might not need to work the butter if it&#39;s already pliable. While the dough is kneading, turn 8 oz&#32;unsalted European butter out onto the work surface and knead it with a bench scraper or pound it with a rolling pin until it&#39;s soft and pliable and has a similar texture to the dough. You want it pliable but not melted and greasy.",
+    "Reduce the mixer speed to low. A tablespoon at a time, add the butter to the dough. The dough will break apart, keep adding the rest of the butter. Stop the mixer and scrape the sides if the butter builds up on the bowl. Increase the speed to medium and knead until the dough comes back together, gathers on the hook and again slaps the sides of the bowl.",
+    "Turn the dough out onto a floured surface. The dough should be quite soft and a little sticky at this point. Form the dough into a large ball and transfer to an oiled bowl, turning once to coat the dough.",
+    "Cover the bowl and set aside for 1½ - 2 hours until it doubles in volume. Turn the dough out onto a floured surface. Knead the the dough to form a ball and return to the bowl. Cover and refrigerate 4 hours or overnight. Chilling the dough will firm up the butter and make the dough easier to handle. (see note)",
+    "To make loaves:Butter or spray two 9&quot;x5&quot; loaf pans. Divide the dough in half. Divide one half of the dough into 6 equal pieces. On a lightly floured surface, roll each piece of dough under your cupped hand to form a smooth ball. Line the 6 dough balls into one of the pans in 3 rows of 2. Make the other loaf in the same way using the other half of the dough. Cover the pans and set aside to rise until doubled in size, 1½ - 2 hours.",
+    "To make classic &quot;tete&quot; briocheButter two 8&quot; brioche molds. Divide the dough in half. Divide one half of the dough into 2/3 and 1/3 portions. Form the 2/3 portion into a large ball and set it into one of the buttered pans. Roll the 1/3 portion to a teardrop shape. Poke a hole in the top of the brioche and set the teardrop, pointed side down, into the loaf. Repeat with the other piece of dough to make another brioche. Cover the pans and set aside to rise until doubled in size, 1½ - 2 hours.",
+    "Preheat the oven  to 375 °F. Brush the loaves with egg wash and bake until golden brown and the interior is 200 °F, about 30 minutes.",
+    "Turn the pan out onto a cool rack and cool completely before slicing."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "131 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "3 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "4 g",
+    "transFatContent": "0.2 g",
+    "cholesterolContent": "41 mg",
+    "sodiumContent": "167 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "3 g",
+    "unsaturatedFatContent": "2.5 g"
+  },
+  "htmlIngredientLines": [
+    "6 oz whole milk (¾ cup, scalded and cooled)",
+    "2 ¼ teaspoons dry yeast",
+    "17 ½ oz bread flour (3 ½ cups, see note)",
+    "4 large eggs (room temperature)",
+    "3 oz granulated sugar (⅓ cup)",
+    "1 ½ teaspoons salt",
+    "8 oz unsalted European butter (at cool room temperature)",
+    "1 egg (for egg wash)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

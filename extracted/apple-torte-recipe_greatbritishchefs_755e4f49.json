@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Apple Torte",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160°C/ gas mark 3",
+      "In a large bowl, lightly whisk the egg and then whisk in the sugar and almond extract. Stir in the apple slices and sift in the flour, baking powder and salt. Stir until well combined",
+      "Very generously grease an 18cm ring mould with the butter and carefully spoon in the batter, trying not to get any mixture on the edges to allow for spreading during the cooking process. Do not fill the tin more than two-thirds full",
+      "Bake in the oven for 25 minutes, or until the cake is golden and a skewer inserted into the middle comes out clean",
+      "Remove from the oven and leave to cool in the tin for 15 minutes before turning out onto a plate. Serve warm with plenty of whipped cream, though it is delicious served cold too"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "peeled, cored and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "for greasing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped to soft peaks",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c57de9aa4239b779cf56273b3287da5edbc100e97a90858e22aba47a8bb9ec80",
+    "lineage_hash": "febf2de6cfa77f8327587c7af8f40707731c9cfb5f0fa6ca77d9fab2ec162e52"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-torte-recipe",
+    "fetchedAt": "2026-08-02T22:28:21.340Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-torte-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cuban Sarsaparilla Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": "Highball",
+    "garnish": [
+      "Long Lemon Zest Twist"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "SHAKE first 4 ingredients with ice and strain into ice-filled glass",
+      "TOP with rootbeer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cacao Spiced Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bitter Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Bitters",
+        "unit": "drop",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a64e1f7d47e34d1607931754da75c9e7a22cac838bd4e911713da4902bceba4",
+    "lineage_hash": "59bfffcf3c57e402dfc2ca881a130d939b3286ded5516348061cbef6356c1293"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4882/cuban-sarsaparilla",
+    "fetchedAt": "2026-08-03T14:39:33.448Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4882/cuban-sarsaparilla",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

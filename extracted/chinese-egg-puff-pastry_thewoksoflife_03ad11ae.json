@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chinese Egg Puff Pastry",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "461",
+      "carbohydrateContent": "32",
+      "fatContent": "32",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Preheat the oven to 400°F/200°C. On a lightly floured surface, use a rolling pin to roll the dough out into a rectangle roughly 12x16 inches (30x40 cm) in size. It should be about 5mm thick.",
+      "Transfer the dough to a baking sheet lined with parchment paper, and fold over the edges to form a ½-inch (1.25cm) wide crust.",
+      "Beat one egg with 1 tablespoon of water to make an egg wash. Brush the egg wash onto the puff pastry to help the sesame seeds and scallions adhere. Use a fork to poke holes all over the middle of the puff pastry. Score the inner edge of the crust with a paring knife.",
+      "Sprinkle the sesame seeds liberally over the crust, then sprinkle the salt and five spice powder evenly over the center of the puff pastry. Follow with a little over half of the scallions.",
+      "Bake the puff pastry for 20-22 minutes. Remove from the oven and use a spoon to make six indentations in the pastry. Crack the remaining 6 eggs, 1 in each indentation. Bake for another 6-10 minutes, depending on how runny/firm you like your yolks. Keep in mind, they will continue to cook a bit after you take them out of the oven.",
+      "Mix the soy sauce and the chili oil, and drizzle it evenly over the eggs. Top with the remaining scallions, cut into six pieces, and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Puff Pastry Dough",
+        "unit": "oz",
+        "notes": "thawed; all-butter puff pastry preferred; see our rough puff pastry recipe",
+        "amount": "14-16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "divided",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b58e8364024d98409de1146b1b0b1a9bc08522ff0092f22c8be4c1ecae204593",
+    "lineage_hash": "1f0938f6b763267f4cbaf0d7e34883d299809fab55036f23927f873d270cda9f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-eggs-puff-pastry/",
+    "fetchedAt": "2026-08-02T18:45:19.429Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-eggs-puff-pastry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

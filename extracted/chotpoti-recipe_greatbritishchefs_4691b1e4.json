@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chotpoti",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak the dried peas in water with the baking powder for at least 4 hours or ideally overnight",
+      "Drain the soaked peas, rinse under cold running water and drain again. Place in a pan with plenty of fresh water and bring to the boil, then cover and simmer until the peas are tender, up to 1 hour.",
+      "Meanwhile, boil the potato in its skin until tender, then drain and cool",
+      "Remove the skin and cut into small cubes",
+      "Chop the cucumber and tomato to match the size of the potato cubes. Set aside",
+      "Dry-roast the cumin seeds and dried chillies (for the tamarind chutney) in a heavy-based frying pan until they darken a couple of shades. Transfer to a plate to cool and then grind to a powder in a spice grinder. Set aside",
+      "When the peas are cooked, drain and transfer to a bowl. Add the salt and mix",
+      "For the tamarind chutney, boil the measured water, add the dried tamarind pulp, and bring to a gentle boil. Reduce the heat to a simmer and cook the tamarind uncovered over a low heat for 15 minutes. Remove from the heat and leave to cool.",
+      "When cool enough to touch, use your hands to pulp the rehydrated tamarind and ensure all the tamarind pulp is released from the seeds and pod",
+      "Strain the tamarind pulp into a bowl and add the roasted cumin and chilli powder, sugar, kala namak, and salt. Mix well. Taste and adjust the balance of sweet, salty, and tangy. (If you can’t get dried tamarind pulp, you can use tamarind concentrate, but this will be at the expense of flavour.)",
+      "Mix the potatoes, cucumber, tomatoes, and chopped onion into the peas. Add the tamarind chutney and mix well",
+      "Garnish with sliced egg and chopped coriander, and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Peas",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Potato",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Egg",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "pcs",
+        "notes": "dried, golf-ball-sized",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kala Namak",
+        "unit": "tsp",
+        "notes": "Himalayan rock salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb24ade75c7e68221446998253682de3d62f36200ef2727ea11e5234852a0805",
+    "lineage_hash": "07385ccd3807b50faeb47068638e01f9ca46593870d7935be7870db0e5e8f0a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chotpoti-recipe",
+    "fetchedAt": "2026-08-02T04:43:53.100Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chotpoti-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

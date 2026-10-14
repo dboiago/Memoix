@@ -1,0 +1,234 @@
+{
+  "recipe": {
+    "name": "Beef Stew And Dumplings",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the braising beef into large pieces - you are going to braise the meat until tender, if the pieces are cut too small they may break up",
+      "Place a large pan over a medium heat and add a dash of oil. Add the meat and pancetta, cook until browned then add the vinegar and stir thoroughly for 1-2 minutes. Remove from the heat",
+      "Place a saucepan over a medium heat and add a knob of butter. Once melted, add the leek, celery and carrots and cook until soft and golden brown, then remove from the heat",
+      "In a separate pan, repeat the process with the sliced onion, star anise and butter. Then, do the same in another pan using the large flat mushrooms and a knob of butter",
+      "Cut the tomato in half and toss with the caster sugar in a bowl. Arrange cut-side down on a baking tray and drizzle with a dash of olive oil",
+      "Cook the tomatoes in the oven for 20 minutes, or until tender and caramelised",
+      "Combine all of the caramelised vegetables with the meat, pancetta, tomatoes and bouquet garni in a flameproof casserole dish. Pour in enough stock to cover and simmer for 2 1/2 hours",
+      "Once the meat is very tender, strain the sauce from the pot into a separate pan. Return the sauce to the hob and simmer until it reduces down to a thin gravy-like consistency",
+      "Return the solids to the pan with the sauce and remove from the heat",
+      "Place a frying pan over a medium heat and add a knob of butter. Add the baby onions and cook until browned. Then, remove the onions and set aside",
+      "Add another knob of butter to the same pan and return to the heat. Add the button mushrooms and fry until browned. Add both the baby onions and mushrooms to the beef stew",
+      "For the dumplings, mix the flour, baking powder and salt in a bowl. Add the suet and enough water to bind the mix",
+      "Roll the dough into small dumplings - approximately the size of cherry tomatoes. This mix should yield 16 dumplings",
+      "Bring a large pan of lightly salted water to a simmer and add the dumplings. Cover the pan and poach for 15-20 minutes",
+      "Reheat the stew on the stove until hot",
+      "Divide the hot stew into bowls and finish with chopped parsley and the dumplings. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braising Beef",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knobs of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Large Flat Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Tomato",
+        "unit": "large",
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bouquet Garni",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Light Suet",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76e61eeb22357d74777cdcc6bbfb4367db3de48cd7dc78f8384fab6000b7443b",
+    "lineage_hash": "40e61221f96f9deefb32095e6ff213282153e5f3156ee620a83e38bc6c72c9c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-stew-dumplings-recipe",
+    "fetchedAt": "2026-08-03T20:01:03.448Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-stew-dumplings-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

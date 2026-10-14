@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Dr Pepper Barbecue Sauce",
+    "time": "1 hr 15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the lemon in half cross wise and cut a 1/4-inch slice off of one half. Remove any seeds in this slice. Juice the remaining lemon: You should have 2 to 3 tablespoons juice.",
+      "Place the lemon slice, 2 table spoons of the lemon juice, and the garlic, onion slice, Dr Pepper, ketchup, Worcestershire sauce, steak sauce, hot sauce, vinegar, liquid smoke, and pepper in a heavy nonreactive saucepan and gradually bring to a boil over medium heat.",
+      "Reduce the heat slightly to maintain a gentle simmer. Let the sauce simmer gently until thick and richly flavored, 10 to 15 minutes. Taste for seasoning, adding more lemon juice, hot sauce, and/or vinegar as necessary and seasoning with salt to taste, if desired.",
+      "Strain the sauce into a bowl (or clean glass jars) and let cool to room temperature, then refrigerate, covered, until serving. The sauce will keep for several months in the refrigerator.",
+      "Bring to room temperature before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Juicy Lemon",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and lightly crushed with the side of a cleaver",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin (1/4-inch) Slice Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dr Pepper",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A.1. Steak Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Hot Sauce",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": "or more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Smoke",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "12cf990b91e9f8c851eb3263ec06f2da1f94e28d9b17ce1ae2e61a1b7edefb3e",
+    "lineage_hash": "f59ec6dd91d7169cda0f6931dba6c79beb9d15b7d6dbe450546769bd27c76dfa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/dr-pepper-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T05:59:35.399Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/dr-pepper-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

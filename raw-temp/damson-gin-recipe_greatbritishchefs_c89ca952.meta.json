@@ -1,0 +1,31 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/damson-gin-recipe",
+  "slug": "damson-gin-recipe_greatbritishchefs_c89ca952",
+  "title": "Damson Gin Recipe",
+  "byline": "by GIC Kitchen",
+  "fetchedAt": "2026-08-03T06:23:00.100Z",
+  "ldName": "Damson gin",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Drink",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of damsons, ripe, washed",
+    "150g of sugar",
+    "600ml of gin"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the ripe damsons and gently prick each one with a fork",
+    "Place the damsons into a clean 1l jar along with the sugar and gin. Close the lid and give it a good shake",
+    "Store in a cool dark place for 3 months. After 3 months, strain the damsons and taste the gin. If you'd like it a little sweeter, you can add more sugar at this stage",
+    "Transfer to a bottle  – the damson gin is now ready to drink, though really benefits from ageing. We would recommend making a few batches so you can drink one and keep one for the next year (which will taste even better)"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

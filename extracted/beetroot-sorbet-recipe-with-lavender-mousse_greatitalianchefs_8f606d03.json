@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Beetroot Sorbet with Lavender Mousse",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the verbena meringue. Heat the water in a small saucepan and bring up to the boil. Once boiling, remove from the heat and add the verbena. Leave to rest for 5 minutes, then strain through fine sieve into a clean pan",
+      "Add the sugar and a pinch of salt to the pan with the verbena water and heat, allowing the mixture to reduce down to 125g. Remove from the heat and pour into a stand mixer, then add the egg white and whisk until light and fluffy",
+      "Line a baking tray with greaseproof paper and spread the meringue mixture evenly across it. Sprinkle with the cornflower petals and a little extra dried verbena, then place in a dehydrator and dry at 50°C for 16 hours. Once dry, break into large shards and store in an airtight container until ready to serve",
+      "Meanwhile, prepare the beetroot sorbet. Place the prepared beetroot in a pan with the water and bring up to the boil. Allow to simmer until the liquid has reduced to 350ml, then carefully drain the beetroot water through a sieve into a clean pan and discard the beetroot",
+      "Add the beetroot powder, sugar, glucose and raspberries to the pan with the beetroot water and gently bring up to the boil, stirring well. Squeeze any excess water from the gelatine leaf and, removing the pan from the heat, stir in the gelatine until combined. Pour into a Pacojet container and transfer to the freezer to set overnight",
+      "The next day, prepare the lavender mousse. Combine the milk, cream, sugar and lavender together in a saucepan and stir well. Bring the mixture up to the boil, then remove from the heat and leave to rest for 5 minutes to infuse",
+      "Pass the lavender cream through a sieve into a clean pan or bowl. Squeeze any excess liquid from the gelatine and add to the cream, stirring well until dissolved. Pour the lavender cream into a siphon with 2 charges and transfer to the fridge until required",
+      "When ready to serve, process the beetroot sorbet in a Pacojet until smooth. Meanwhile, chop the walnuts into quarters and set to one side",
+      "To serve, add a shot of lavender mousse into the centre of each plate and top with a quenelle of beetroot sorbet. Scatter over the walnut pieces, wood sorrel and shards of meringue and garnish with a few sprigs of celery leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beetroot",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "mashed",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water until softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Verbena",
+        "unit": "tsp",
+        "notes": "dried, plus extra for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflowers",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender Flowers",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water until softened",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Walnuts",
+        "unit": null,
+        "notes": "in syrup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Wood Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "01373e7bb4a97348e3d5ca03a13dddcd2427da122f2a153b555217742053b67e",
+    "lineage_hash": "9c513878c32818dfbbc3b3af9e79c331968e4ceb8ad5c4933ccaf5e92b3714ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/beetroot-raspberry-sorbet-recipe",
+    "fetchedAt": "2026-08-02T04:09:51.461Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/beetroot-raspberry-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

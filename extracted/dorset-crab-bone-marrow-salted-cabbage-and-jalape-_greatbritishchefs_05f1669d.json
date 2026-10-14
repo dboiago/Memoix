@@ -1,0 +1,267 @@
+{
+  "recipe": {
+    "name": "Dorset Crab, Bone Marrow, Salted Cabbage and Jalapeño Verde",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the bone marrow and crab ragout, soak the bone marrow for 24 hours in cold water to draw out the blood",
+      "The next day, drain the bone marrow and bring it to room temperature",
+      "Light a barbecue for direct cooking over a gentle heat and place the bone marrow on it. Slowly roast the bone marrow pieces over the coals, open side up, until they start to soften; cooking them slowly will allow you to get some of the smoke flavour into the marrow. When the centre section slides out easily, they are ready (alternatively, you could place the bone marrow bones on a baking tray and roast in the oven at 220C for 20  minutes)",
+      "Add the jalapeño chillies to the barbecue and cook for around 15 minutes, turning regularly, until charred all over. Set aside for use in the jalapeno verde",
+      "Using a spoon, scoop out the marrow, place in a bowl, and season with salt",
+      "Pop the crabs into the freezer for 20 minutes - this will put them to sleep before cooking",
+      "Bring a large pan of water to the boil and blanch the crabs for 6 mins, then allow to cool to one side",
+      "Heat a large pan, add the pomace oil and caramelise the onions, leeks, celery, fennel and garlic until soft",
+      "Add the tomato paste, saffron, Old Bay, fennel seeds and coriander seeds and wine, bring to a simmer and reduce by half",
+      "Once cool, break down the crab into brown and white meat and refrigerate both for later, reserving the shell and legs",
+      "Add the crab shell and legs to the pan and cover them with water, then bring to the boil. Reduce to a simmer and cook for 1 hour",
+      "Remove the crab shell and legs and continue to reduce by half again until you have a rich, tasty crab stock",
+      "In a pan, combine the brown and white crab meat with the chopped bone marrow, loosen with a little of the stock (any leftover stock can be frozen) and season with salt and lemon juice to taste",
+      "To make the salted cabbage, combine the white cabbage with a good pinch of Maldon sea salt and  crush a little with your hands until the cabbage is a little broken down and well seasoned",
+      "To make the jalapeño verde, finely chop the garlic and herbs and combine with the capers and chopped chives. Skin and finely chop the jalapeños and add those too",
+      "Add the vinegar, then slowly stir in the oil until the sauce is the consistency of a salsa verde",
+      "To finish, toast the slice of sourdough and drizzle the toast with the olive oil or melted beef fat. Top with the crab ragout, salted cabbage and jalapeño verde"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Centre-cut Beef Marrow Bones",
+        "unit": "kg",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cock Crab",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomace Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Celery",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Strands",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Bay Seasoning",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "slice",
+        "notes": "make sure it's nice and thick",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "or beef fat",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cabbage",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeños",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Flat-leaf Parsley Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Capers",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Chives",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c94f3176aae4f393ec7501cc899bb2d7ca0223bdcc73700f85e6f6625b6d3d89",
+    "lineage_hash": "e0274fa19ae46d5875be6188dbd6e22c85d04e1fb8b320b3c99dc22111909693"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dorset-crab-bone-marrow-salted-cabbage-jalapeno-verde-recipe",
+    "fetchedAt": "2026-08-02T18:21:01.421Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dorset-crab-bone-marrow-salted-cabbage-jalapeno-verde-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

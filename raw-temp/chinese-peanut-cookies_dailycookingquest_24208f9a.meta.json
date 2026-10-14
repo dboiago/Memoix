@@ -1,0 +1,55 @@
+{
+  "url": "https://dailycookingquest.com/chinese-peanut-cookies.html",
+  "slug": "chinese-peanut-cookies_dailycookingquest_24208f9a",
+  "title": "Chinese Peanut Cookies",
+  "byline": "",
+  "fetchedAt": "2026-08-02T05:48:01.353Z",
+  "ldName": "Chinese Peanut Cookies",
+  "ldTime": "PT1H25M",
+  "ldPrepTime": "PT1H0M",
+  "ldCookTime": "PT0H25M",
+  "ldYield": [
+    "40",
+    "200 cookies"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": [
+    "Chinese New Year",
+    "CNY cookies",
+    "Chinese New Year cookies",
+    "easy",
+    "authentic",
+    "festive cookies",
+    "Chinese cookies",
+    "Nuts and Seeds"
+  ],
+  "ldIngredientsRaw": [
+    "3 cup (450 gram) roasted peanuts, grind (*)",
+    "3 cup (360 gram) all-purpose flour",
+    "3 stick (1 1/2 cup, or 340 gram) unsalted butter, melted (**)",
+    "1 cup (120 gram) powdered sugar",
+    "1/8 teaspoon salt",
+    "1 egg yolk"
+  ],
+  "ldInstructionsRaw": [
+    "In a mixing bowl, combine ground peanut, flour, sugar, and salt. Mix well. Slowly pour melted butter into the dry ingredients and mix until it become a smooth dough.",
+    "Pinch a small amount of dough (about 10 gram, or a heaping teaspoon), roll into a ball and place on a baking tray lined with parchment paper. Repeat until all dough is used up.",
+    "To make the indentation in the cookies, I use the cap of a ballpoint.",
+    "Brush the top of the cookies with egg yolk.",
+    "Preheat oven to 170 Celcius (340 Fahrenheit), bake for 25 minutes until golden brown.",
+    "Let cool completely before storing."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 cup (450 gram) roasted peanuts, grind (*)",
+    "3 cup (360 gram) all-purpose flour",
+    "3 stick (1 1/2 cup, or 340 gram) unsalted butter, melted (**)",
+    "1 cup (120 gram) powdered sugar",
+    "1/8 teaspoon salt",
+    "1 egg yolk"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

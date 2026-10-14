@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "BBQ Baby Back Ribs",
+    "time": "5 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the marinade, place all of the ingredients in a pan over a medium heat and cook for 10–15 minutes until the prunes are very soft and the liquid has thickened slightly",
+      "Switch off the heat, allow to cool a little and place the contents of the pan in a blender. Blend on high power until mushy and incorporated. If necessary add a bit of water to loosen the mixture",
+      "If not using immediately, store in a clean jar with the lid on and allow to cool before placing in the fridge. It keeps for 1 week in the refrigerator",
+      "Prepare the ribs a day before barbecuing. \r\nPreheat the oven at 130°C/gas mark 1/2",
+      "Massage the ribs with the prune marinade (reserving a little for later) and place in a roasting tray. Add 200ml of water to the tray, cover with aluminium foil and cook in the oven for 4 hours",
+      "Remove from the oven and allow to cool. Add more prune marinade and place in the fridge ready to be barbecued next day",
+      "Remove the ribs from the refrigerator 1 hour before grilling. Place the ribs on a coal barbecue and cook until they are slightly blackened, glistening and sticky",
+      "Serve with grilled spring onions, golden and red plums and green salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Back Ribs",
+        "unit": "g",
+        "notes": "in one rack",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71d683e6997080e892cb96cf545f68f7a1c581327083eaa45a52971036cda8d9",
+    "lineage_hash": "d65cad5f68a5ce01f29be63b44bb22f5f997f086aecf4206fb770bebcf43540e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bbq-baby-back-ribs-recipe",
+    "fetchedAt": "2026-08-03T12:36:56.380Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bbq-baby-back-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

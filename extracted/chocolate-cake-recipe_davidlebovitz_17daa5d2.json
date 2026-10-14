@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Chocolate Idiot Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (175ºC).",
+      "Butter a 9-inch (23cm) springform pan and dust it with cocoa powder, tapping out any excess. Wrap the outside with aluminum foil, in several layers if necessary (see headnote), making sure it goes all the way up to the outer rim.",
+      "Melt the chocolate and butter in a double boiler (or microwave), stirring occasionally, until smooth. Remove from heat.",
+      "In a large bowl, whisk together the eggs and sugar, then whisk in the melted chocolate mixture until smooth.",
+      "Pour the batter into the prepared springform pan and cover the top of the cake pan snugly with a sheet of foil. Put the springform pan into a larger baking pan, such as a roasting pan, and add enough hot water to the baking pan to reach halfway up to the outside of the cake pan.",
+      "Bake the cake for about 1 hour and 15 minutes. It should feels just set in the center, like quivering chocolate pudding. If you gently touch the center, your finger should come away almost clean.",
+      "Lift the cake pan from the water bath and remove the foil. Let cake cool completely on a cooling rack.",
+      "When cool, serve thin wedges of this very rich cake at room temperature, with crème anglaise, ice cream, or whipped cream. It could also be served with a drizzle of chocolate sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 290gr, coarsely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": "200gr, salted or unsalted, cut into pieces",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200gr",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": null,
+        "notes": "for preparing the cake pan",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "249416b571f4026b452344ee2a9a4c313f9049f5e520c54e6ec167ca856f4cd2",
+    "lineage_hash": "ff52d7bcb2b93fdaccc5bf52806d0f2acceb47182aa4fd9d1479ba1dc3979443"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/shf-27-chocolat-1/",
+    "fetchedAt": "2026-08-02T22:50:56.067Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/shf-27-chocolat-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

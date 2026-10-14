@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Barrel Colada Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Mint Bouquet",
+      "Dehydrated Banana"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker tin and shake to chill. Strain over crushed ice. Garnish with a mint bouquet and dehydrated banana.",
+      "Banana Coconut Syrup: Toast 2 cups of unsweetened coconut flakes until fragrant, then add 1½ cups of coconut milk and 1 cup of white sugar. Stir until dissolved and strain out the solids. Add 1 oz. of Giffard banana liqueur and shake to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Barrel-aged Gin",
+        "unit": "oz",
+        "notes": "Gandee uses Watershed barrel-aged gin",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "Gandee uses Hamilton Demerara",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Coconut Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flakes",
+        "unit": "C",
+        "notes": "unsweetened",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Giffard Banana Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1526282f725af0fbab78cbf04a7cac0bf191f2b11e2dd07f5ea6cbef0801924d",
+    "lineage_hash": "e2c2c414588f8f89740a891d2e67b218a2e395b8029eb6c3cb993355f2c58bbe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/barrel-colada/",
+    "fetchedAt": "2026-08-03T19:25:08.923Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/barrel-colada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

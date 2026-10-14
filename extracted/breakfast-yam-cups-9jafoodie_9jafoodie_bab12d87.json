@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Breakfast Yam Cups",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "NG",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the cut and washed yams in a pot of salted water. Cook until tender (time required will vary based on new Vs old yam). Drain off excess water.",
+      "Season the chopped vegetables with salt, pepper and any other spices you prefer. Set in the fridge",
+      "Whisk the eggs, maggi cube, salt, seasoning and spices. Add in the corned beef. Set in the fridge",
+      "Set your oven to 350 F",
+      "Mash up the cooked yam. Seasoning with salt and pepper. Add in butter, milk, egg mix and vegetables mix. combine",
+      "Generously grease your baking dish or muffin pan.  Pour the yam batter into the bakeware.",
+      "Bake for 25-30 minutes (yam is done when toothpick insert comes out clean). Remove from oven and set aside to cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "African Yam",
+        "unit": "g",
+        "notes": "About 6 regular round pieces",
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable of Choice",
+        "unit": "C",
+        "notes": "chopped, Onion and peppers",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cube Maggi",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornedbeef",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Other Seasonings of Choice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a02f571a30bef5b0751b16ea0abc96322323fa0a5a720e488103086710536c75",
+    "lineage_hash": "638fda5d4397ff10e1ec33c3db0798912335df47ffcaa0b9170eca20a6718b05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://9jafoodie.com/breakfast-yam-cups/",
+    "fetchedAt": "2026-09-25T20:37:11.654Z"
+  },
+  "rawSource": "https://9jafoodie.com/breakfast-yam-cups/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Dutch Tea Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Nick & Nora",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "145",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a NICK & NORA GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Breakfast Tea",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "024df45b15845416d1323569bcb16e6ea06d5e481edc58ad4d4cc8ee0f0838ed",
+    "lineage_hash": "109a4723961d1f3306edb21e4fb743e4f0ebcfa92d720bb0250af4746034d2f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4374/dutch-tea-cocktail",
+    "fetchedAt": "2026-08-03T13:26:51.996Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4374/dutch-tea-cocktail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

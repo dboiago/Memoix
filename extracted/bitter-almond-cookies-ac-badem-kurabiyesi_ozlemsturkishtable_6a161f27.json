@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Bitter almond cookies (Acıbadem kurabiyesi)",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "TR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour in hot water on a large pan until half way and sit a heat proof glass mixing bowl over the pan. Make sure the bowl is not touching the hot water. Bring to a gentle simmer and stir in the egg whites, sugar, pinch of salt and lemon juice to the bowl. Stir continuously to combine all the ingredients over medium heat until the sugar is melted completely and all mixed well. The mixture should be just warm enough to touch and with a gooey texture. Turn the heat off and place the bowl on a clean, cool surface.",
+      "Preheat fan oven to 140C/160C/325F.",
+      "Stir in the ground almonds to the bowl and combine well to turn to a very soft, sticky dough texture. Transfer the cookie mixture on another clean, wide mixing bowl; stir occasionally and let it completely cool. Once cool, spoon the mixture into a piping bag. Have a large baking tray and spread a little of the remaining cookie mixture from the bowl at the corners of the tray and place baking paper on, press gently to stick. Pipe the cookie mixture as 6cm in diameter circles over the baking paper, leaving 3cm between each cookie, as they will expand during baking. Place an almond in the middle of each cookie and bake in the preheated oven for 27-28 minutes, until the cookies look cracked and crispy outside and soft to touch inside (It is important not to overbake and keep inside soft, as this moisture will help the cookies stick together, as we traditionally do, and will give the chewy texture).",
+      "Place the cookie tray on a metal rack to cool for 5 minutes. If they are sticking to the baking paper, gently turn the baking paper upside down on the tray and wipe the back of the cookies over the baking paper with damp towel, this will help cookies to peel off from the paper easily. Turn the baking paper back again and place the acıbadem kurabiyesi on a serving plate. If you like, gently press and stick 2 soft bottoms of the cookies to form one big cookie, as we traditionally do."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": "medium",
+        "notes": "free range",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Almonds",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84b233cde250497c52912d487b5bf51f6243dccf49191b20d3b50dd56a468118",
+    "lineage_hash": "596f9c62dc1da1897be94abe004edbd592350d6c4ef0eff62ab5f8095ae332ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ozlemsturkishtable.com/2022/10/bitter-almond-cookies-acibadem-kurabiyesi/",
+    "fetchedAt": "2026-09-25T23:11:39.510Z"
+  },
+  "rawSource": "https://ozlemsturkishtable.com/2022/10/bitter-almond-cookies-acibadem-kurabiyesi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

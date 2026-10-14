@@ -1,0 +1,294 @@
+{
+  "recipe": {
+    "name": "Paneer Sizzler",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai heat oil, ginger, garlic, green chillies, onion and saute for a minute.",
+      "Then add black pepper cons, bay leaf and saute for 2-3 minutes.",
+      "Now add tomato ketchup, water, soya sauce, coriander stems and boil it for 5-6 minutes on medium heat.",
+      "After the add mustard sauce, mix and strain in a bowl and keep aside for further use.",
+      "In a bowl add dried oregano, degi red chilli powder, salt, ginger-garlic water, oil, coriander leaves and mix everything together.",
+      "Now add paneer, onion, tomato, capsicum and mix it by coating it properly and keep aside for 5-10 minutes.",
+      "After that heat a grill pan and add oil, meanwhile put on capsicum, one onion, then one paneer, one tomato on it then again one paneer and close it with one onion, capsicum and keep aside, then mare rest of them in the same way.",
+      "Now place in the hot pan and grill them properly from all sides until golden brown.",
+      "In a pan heat butter and add mixed herbs saute for half a minute.",
+      "Then add the cooked rice, sprinkle some water cover and cook for 2-3 minutes on medium heat.",
+      "Remove the lid and add the coriander leaves mix and keep aside for further use.",
+      "Take a super hot sizzler plate and place some cabbage leaves, french fries, then add the buttered rice, green peas, now place the paneer shashlik, add the bbq sauce and finish with cold butter and garnish with coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "No Tender Coriander Stems",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Sauce/ Mustard Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For BBQ Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Paneer Shashlik",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Buttered Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Buttered Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Dried Herbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Buttered Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "For Buttered Rice",
+        "isOptional": false
+      },
+      {
+        "name": "French Fries",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "Tbsp",
+        "notes": "boiled",
+        "amount": "3",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fe97976e9790d393af0d01372f2cbd1f54036dc9683c8310eeb2503e2199fc71",
+    "lineage_hash": "62c3da9d5eadba2ddb0feeee57413842485ed45977cd209339e500ee0f702f7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/paneer-sizzler/",
+    "fetchedAt": "2026-08-01T23:07:28.121Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/paneer-sizzler/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

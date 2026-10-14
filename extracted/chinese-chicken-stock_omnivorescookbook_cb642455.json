@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Stock",
+    "time": "6 hr 40 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "80",
+      "carbohydrateContent": null,
+      "fatContent": "2.1",
+      "proteinContent": "14.5"
+    },
+    "directions": [
+      "Use a pair of poultry shears to clip off the nails from the chicken feet. Add the chicken feet into a big pot and add enough cold water to cover. Heat over medium-high heat until brought to a boil. Boil for 10 minutes. Then drain and discard the boiling water. Wash the chicken with running tap water thoroughly, then transfer to a large pot or dutch oven (5 1/2 qt or bigger).",
+      "In the same pot, add the chicken pieces, prosciutto if using, green onion and ginger. Pour in the water.",
+      "Heat over medium-high heat until boiling. Boil for 10 to 15 minutes while using a colander to remove the brown foam from the top, until the broth is clear. Turn to medium-low heat and cover. Simmer for 2.5 to 3 hours.",
+      "Remove the chicken pieces and all the aromatics. If using the stock immediately, use a strainer to remove the chicken fat from the top. Alternatively, you can store the stock in the fridge. Once the soup is chilled, you can easily remove the chicken fat that’s coagulated on top.",
+      "Now you can enjoy the stock by itself, use it in cooking, or store it for later use. Store it in the fridge for 3 to 4 days, or in the freezer for up to 3 months. (*Footnote 4)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Feet",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bone-in Pieces",
+        "unit": "lb",
+        "notes": "*Footnote 2",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto (or Other Cured Ham)",
+        "unit": "oz",
+        "notes": "optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "large sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Tap Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4f73de6c3798e093e4054e25df7e0e92fda5c5c26260a0e8ede802b4f5876ef0",
+    "lineage_hash": "e3477d495e0577254c650c6f9f269ae69055bae79e38aaa834d805fc611a945d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-chicken-stock/",
+    "fetchedAt": "2026-08-02T06:39:11.044Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-chicken-stock/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Cranberry Margarita",
+    "time": "20 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": "Sugar-rimmed",
+    "garnish": [
+      "Cranberry Swizzle Stick",
+      "Orange Twist"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "168",
+      "carbohydrateContent": "11",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "In a saucepan over medium heat, melt the sugar in the orange juice. Add the cranberries and cook over low heat for 10 minutes. Set aside and let it cool.",
+      "Blend cranberries in a blender, then strain to make the puree",
+      "In a shaker add crushed ice, 1 1/2 ounces of tequila, 1/2 ounce of Grand Marnier, 1 1/2 ounces of cranberry puree and shake to mix.",
+      "Pour drink into a sugar-rimmed glass. Add a cranberry swizzle stick for garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshly Squeezed Orange Juice",
+        "unit": "C",
+        "notes": "about 4 oranges",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila Blanco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Puree",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Skewer Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Karo Corn Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b53e7ab5110069daa647ef46a8a35a81e545ca259b602cd9868efa8086f5ace4",
+    "lineage_hash": "9240073138c10d7352841182736398f047aaeb5c421c163d3a69463c32e858df"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/cranberry-margarita/",
+    "fetchedAt": "2026-08-01T23:22:50.933Z"
+  },
+  "rawSource": "https://muybuenoblog.com/cranberry-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

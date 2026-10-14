@@ -1,0 +1,42 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/le-souffle-recipe",
+  "slug": "chocolate-souffl-with-pistachio-ice-cream-recipe_greatbritishchefs_80e7a50a",
+  "title": "Chocolate Soufflé with Pistachio Ice Cream Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T15:48:22.837Z",
+  "ldName": "Le Soufflé",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "180g of pistachio paste",
+    "250ml of milk",
+    "480ml of whipping cream",
+    "200g of pasteurised egg yolk",
+    "140g of sugar",
+    "145g of Valrhona Guanaja dark chocolate, 70%, and 55g of Valrhona Guanaja dark chocolate, 80%",
+    "265g of egg white",
+    "36g of sugar",
+    "butter, for greasing",
+    "caster sugar, for dusting"
+  ],
+  "ldInstructionsRaw": [
+    "To begin, make the ice cream. Place the milk, whipping cream and pistachio paste in a saucepan and bring to the boil",
+    "Add the egg yolk and sugar and gradually bring to 82°C, stirring as the mixture heats. Pass through a fine sieve, chill in a bowl over ice then churn in an ice cream machine once cool",
+    "Brush the soufflé moulds with softened butter then dust with sugar. Tap out any excess that collects in the bases of the moulds",
+    "Melt the chocolate over a bain marie until it reaches 40°C. Preheat the oven to 170°C/gas mark 3",
+    "Whisk the egg whites with the sugar in a standing mixer until stiff peaks form",
+    "Using a spatula, carefully fold the melted chocolate into the egg whites until fully incorporated, trying not to knock out the air as you do so",
+    "Spoon the mixture into the moulds, tap the mould gently on the worktop then use a palette knife to scrape off the tops to create a level surface. Bake in the oven for 10 minutes",
+    "Serve immediately with a scoop of the ice cream on the side"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

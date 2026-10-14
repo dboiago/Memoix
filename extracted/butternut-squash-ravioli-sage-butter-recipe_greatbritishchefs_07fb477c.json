@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Butternut Squash Ravioli & Sage Butter",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the diced butternut squash in a pan with a little butter until very soft. Blend in a food processor and pass through a sieve. Hang in muslin cloth in fridge to dry out overnight",
+      "While the butternut squash is straining, begin to make your pasta dough. Add the saffron threads to 200ml of water in a pan and bring to a simmer. Reduce until the pan is almost dry and there is approximately 20ml of liquid remaining",
+      "Mix the saffron liquid with egg yolks. Combine the salt and flour in a food processor. Pulse in the egg yolk mixture slowly until just combined. It should resemble large breadcrumbs – if it is too dry add 1/2 an egg yolk to bring it together. Turn out onto a lightly floured surface and knead until a smooth but firm dough forms. Wrap in cling film and leave to rest in the fridge for 2 hours",
+      "Once the butternut squash is thoroughly strained, mix together with the grated truffle, pecorino and salt to taste",
+      "Remove the pasta dough from the fridge and leave to come up to room temperature. This will make it easier to work with and roll. Roll out the dough on the pasta machine,  being sure to put through 4 times on each setting until down to the number 1 thickness. Be sure to lightly flour the dough which will ensure it does not stick together",
+      "Use all the dough to cut at least 36, 20cm circles. If you have enough dough cut extra circles in case you have any leftover filling or breakage. Line up the circles and lightly brush, what will be the bottom half of the ravioli, with egg wash",
+      "Take a heaped tablespoon of the ravioli filling and place in the middle of the egg washed circles. Try and do 6-10 at a time as this will speed up your cooking time. Place a dry circle of the top of the filling and seal the edges. Be sure to remove all excess air that may be trapped within the ravioli. This is easily achieved by taking the ravioli in both hands and creating a neat flying saucer shape. Place on a lightly floured tray in the fridge for 30 minutes",
+      "Bring a large pot of salted water to the boil, ready to drop in the ravioli. For the ravioli sauce, place a frying pan on a medium heat and add the butter. Make a beurre noisette by allowing the butter to foam and then brown. As soon as the browning begins, add the chopped sage, then shortly after, the lemon juice and salt to taste",
+      "Drop the ravioli into the boiling water for three minutes, add to the sauce and gently toss to coat. Add a little freshly chopped sage to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecorino",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasta Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Threads",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69e633340b2b919b1c0cc32558cf80c236e2f1fe912136ee8eee57f5f877f7b2",
+    "lineage_hash": "268223939025ef8b583157c3782334c7f2d2c82874c9c2de93cb46ef319287de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butternut-squash-ravioli-recipe-sage-butter",
+    "fetchedAt": "2026-08-03T16:03:59.736Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butternut-squash-ravioli-recipe-sage-butter",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

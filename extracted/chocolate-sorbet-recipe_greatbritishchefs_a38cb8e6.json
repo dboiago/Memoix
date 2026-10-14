@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Chocolate Sorbet",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine 150ml of water and 150g of caster sugar in a saucepan and bring to the boil while whisking to dissolve",
+      "Remove from the heat and whisk in the chocolate until melted. Allow to cool slightly and add the Grand Marnier and remaining 600ml of water. Using a blender, blitz until smooth",
+      "Place the mixture into an ice cream maker and churn until a sorbet consistency is reached (If the sorbet mix is too thick to pour into the ice cream maker, whisk thoroughly to loosen. Freeze until ready to use"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "448d39d57b84f69edc272f5cf5441e43f3ffed10fcf2a286ce7c8cf59b87eb4e",
+    "lineage_hash": "8e00b62171d5eafe518dbfca4ab8cbf6cf888d8ec3172862e077cc56702641e8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-sorbet-recipe",
+    "fetchedAt": "2026-08-03T18:52:21.098Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

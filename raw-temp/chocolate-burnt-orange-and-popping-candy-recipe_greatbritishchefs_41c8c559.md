@@ -1,0 +1,154 @@
+1.  !['Ember' – Chocolate with mandarin, burnt orange and popping candy ](https://media-cdn2.greatbritishchefs.com/media/xargcmhz/crockers-selects-20.whqc_768x512q90.jpg)
+    
+
+Item 1 of 1
+
+-   medium
+    
+-   4
+    
+-   2 hours plus freezing time
+    
+
+Tom Westerland's playful dessert 'Ember' is based on the timeless flavour combination of [chocolate](https://www.greatbritishchefs.com/collections/chocolate-recipes "Chocolate") and [orange](https://www.greatbritishchefs.com/collections/orange-recipes "Orange"). He creates little chocolate rocks out of a rich dark [chocolate mousse](https://www.greatbritishchefs.com/collections/chocolate-mousse-recipes "Chocolate mousse"), which sit on a crumble of chocolate and freeze-dried mandarin resembling the glowing embers of a fire. Any leftover burnt orange purée freezes well and can be used in other desserts or goes nicely with duck or game.
+
+First published in 2022
+
+### Metric
+
+### Imperial
+
+#### Chocolate mousse
+
+-   3 gelatine leaves, soaked in cold water
+-   4 [egg yolks](https://www.greatbritishchefs.com/collections/egg-recipes)
+-   250g of caster sugar
+-   220ml of double cream
+-   160ml of whole milk
+-   85g of [70% dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes)
+-   10g of [cocoa powder](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+
+#### Chocolate dip
+
+-   150g of [70% dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes)
+-   150g of [cocoa butter](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+-   powdered black food colouring, (optional) – ensure it is fat- and heat-stable if using
+
+#### Chocolate crumble
+
+-   65g of [unsalted butter](https://www.greatbritishchefs.com/collections/butter-recipes)
+-   40g of sugar
+-   1 tbsp of [cocoa powder](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+-   1 tsp [salt](https://www.greatbritishchefs.com/collections/salt-recipes)
+-   90g of plain flour
+-   40g of dark brown sugar
+-   100g of popping candy
+-   1 tbsp of milk powder
+-   2 tbsp of freeze-dried mandarin, or orange, broken into rough pieces
+
+#### Burnt orange purée
+
+-   8 [oranges](https://www.greatbritishchefs.com/collections/orange-recipes)
+-   300g of sugar
+
+#### Mandarin tuile
+
+-   250g of isomalt sugar
+-   150g of freeze-dried mandarin, or orange
+
+-   Silikomart stone mousse moulds SF163
+-   Thermometer
+-   Cocktail sticks
+
+1
+
+The mousses need time to freeze, so preparing them the day before is a good idea. Bring the milk and half of the cream to the boil. While it's coming to the boil, whisk the egg yolks and sugar until pale. Once boiling, pour a little over the egg and sugar mix and whisk well to temper. Pour this tempered egg mixture into the pan and cook over a gentle heat, stirring continuously, until it reaches 85ºC. Meanwhile, soak the gelatine leaves in warm water to soften them
+
+-   160ml of whole milk
+-   110ml of double cream
+-   4 [egg yolks](https://www.greatbritishchefs.com/collections/egg-recipes)
+-   250g of caster sugar
+-   3 gelatine leaves, soaked in cold water
+
+2
+
+Once the mixture hits 85°C, add the cocoa powder, chocolate and whisk until smooth. Whisk in the softened gelatine leaves (giving them a squeeze before you do so to remove excess water), then leave to cool. Whip the remaining cream to soft peaks and fold together with the chocolate custard mix
+
+-   10g of [cocoa powder](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+-   85g of [70% dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes)
+-   110ml of double cream
+
+3
+
+Once fully mixed, transfer to a piping bag and pipe into silicone moulds, scraping off any excess using a palette knife to create a smooth base. Tom uses a specific mould called Silikomart SF163, but any silicone mould that holds approx. 85ml will work too. You'll need 12 'rocks' of mousse in total. Place in the freezer overnight or until completely frozen. Once frozen, pop out of the moulds and keep in the freezer
+
+4
+
+To make the chocolate crumble, preheat an oven to 180ºC/gas mark 4. Place all the ingredients apart from the popping candy, milk powder and dried orange into a food mixer bowl and mix on a medium speed with a beater attachment until combined. It should have a sandy, crumbly texture. Once combined, transfer to a tray and bake for 10 minutes
+
+-   65g of [unsalted butter](https://www.greatbritishchefs.com/collections/butter-recipes)
+-   40g of sugar
+-   1 tbsp of [cocoa powder](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+-   1 tsp [salt](https://www.greatbritishchefs.com/collections/salt-recipes)
+-   90g of plain flour
+-   40g of dark brown sugar
+
+5
+
+After this time, the mix should have started melting and colouring slightly. Using a spatula, mix the crumble and break up any large pieces. Return to the oven and repeat this process until fully cooked and crunchy. Once cooked, remove from the fridge and leave to cool. Once cool, mix with the milk powder, dried orange and popping candy. You want the freeze-dried mandarin (or orange) to be in roughly the same-sized pieces as the chocolate crumble. Store in an airtight container
+
+-   1 tbsp of milk powder
+-   2 tbsp of freeze-dried mandarin, or orange, broken into rough pieces
+-   100g of popping candy
+
+6
+
+To make the burnt orange purée, preheat a barbecue until hot or preheat the oven to 180ºC/gas mark 4. Wrap the oranges in foil individually, and place either in the hot embers of the barbecue or the oven. Cook until burnt on the outside and soft in the middle (around 30 minutes). Once cooked, place the oranges (including their peel) in a food processor with the sugar, then blend until smooth (you may need to work in batches). Pass through a sieve and transfer to a squeezy bottle. Reserve in the fridge
+
+-   8 [oranges](https://www.greatbritishchefs.com/collections/orange-recipes)
+-   300g of sugar
+
+7
+
+To make the mandarin tuile, pour the isomalt into a heavy-bottomed pan. Place over a medium heat and bring to 119ºC. Once at this temperature, pour onto an oven tray lined with silicone or baking paper and leave to cool completely. When cool and set, smash into small pieces and transfer to a food processor, ensuring the bowl is completely dry. Add the freeze-dried mandarin and blend into a fine powder
+
+-   250g of isomalt sugar
+-   150g of freeze-dried mandarin, or orange
+
+8
+
+Preheat the oven to 180ºC/gas mark 4. Line a tray lined with baking paper then dust the orange powder over the top using a fine sieve. You want an even layer that's around the same thickness as the greaseproof paper. Place in the preheated oven and cook until melted, usually around 5–6 minutes. Once melted, remove from the oven and leave to cool
+
+9
+
+Now to finish the mousses. Make the chocolate dip by melting the chocolate and cocoa butter in a bain-marie or the microwave. Whisk together to emulsify, then add enough food colouring (if using) to turn it a thick jet black
+
+-   150g of [70% dark chocolate](https://www.greatbritishchefs.com/collections/chocolate-dessert-recipes)
+-   150g of [cocoa butter](https://www.greatbritishchefs.com/collections/cocoa-recipes)
+-   powdered black food colouring, (optional) – ensure it is fat- and heat-stable if using
+
+10
+
+Using a temperature probe, ensure the chocolate dip is sitting between 50℃ and 60ºC. Remove the rocks of chocolate mousse from the freezer and push a wooden cocktail stick into each one. Dip the frozen mousse individually into the chocolate dip. Remove and place onto a metal tray, lifting the mousse off the cocktail stick with a fork. Once dipped, place in the fridge to set
+
+11
+
+To serve, scatter a large spoonful of the chocolate and orange crumb on the bottom of a dessert plate. Pipe 6 dots of burnt orange purée on top. Place 3 of your dipped chocolate mousses around the plate and finish by decorating with shards of the mandarin tuile
+
+[](https://www.greatbritishchefs.com/contributors/tom-westerland)
+
+Tom Westerland is the head chef at Crockers Henley.
+
+## Subscribe to the
+
+## Great British Chefs Newsletter
+
+Join an ever-growing community of food lovers now by subscribing to our newsletter and get all the latest recipes, features and much more to your inbox
+
+Terms and conditions
+
+## Get in touch
+
+Please sign in or [register](https://www.greatbritishchefs.com/unlocked?source-component=GetInTouch) to send a comment to Great British Chefs.
+
+## You may also like

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Black Sesame Soup (芝麻糊)",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "158",
+      "carbohydrateContent": "12",
+      "fatContent": "11",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "If you use leftover rice, make sure you reheat it for this recipe. The purpose of this ingredient is to thicken the soup, so the rice should be softened and warm.",
+      "If using store-bought toasted black sesame seeds, it is a good idea to toast them in a dry pan or wok for a couple of minutes over medium-low heat until you start to smell the sesame aroma. It is important to bring back the aroma for this recipe.",
+      "Toast the walnuts in a dry pan over medium heat for 6-7 minutes, until fragrant.",
+      "To a high-powered blender, add the warmed cooked black rice, toasted sesame seeds, toasted walnut halves, and just-boiled water. Cover tightly and securely (the contents are hot!), and blend on high speed for 2 minutes. Pour into 2-3 bowls. Serve hot or warm, adding honey or sugar to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cooked Black Rice",
+        "unit": "C",
+        "notes": "warmed; see how to cook black rice. Can also substitute cooked white rice, brown rice or sticky rice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Black Sesame Seeds",
+        "unit": "C",
+        "notes": "see how to toast sesame seeds or use store-bought",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey (or Sweetener of Your Choice, to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7997cf9ff1dfde8bcf8e10edb28a969070958e56bc3112070d49028855762b83",
+    "lineage_hash": "64ea355d34cc32d5b587dfe39331ad6b3c7317714d5e4f63546db37753881a84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/black-sesame-soup/",
+    "fetchedAt": "2026-08-02T16:32:17.922Z"
+  },
+  "rawSource": "https://thewoksoflife.com/black-sesame-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

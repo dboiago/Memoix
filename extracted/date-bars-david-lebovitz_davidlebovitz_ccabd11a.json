@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Date Bars",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toss the dates in the rum and let them sit for a few hours.",
+      "Preheat the oven to 350ºF (175ºC). Line a 9-inch (23 cm) square pan with foil and coat the inside with non-stick spray.",
+      "In a small bowl, whisk together the flour and baking powder.",
+      "In a large bowl, whisk together the sugar, salt, and eggs until smooth. Mix in the butter, hot water, and vanilla, then stir in the flour mixture. Use a spatula to stir in the dates (and any liquid) and the pecans.",
+      "Scrape the mixture into the prepared pan and bake for 25 to 30 minutes, or until the top is golden brown and a toothpick inserted in the center comes out clean.",
+      "Let date bars cool, then lift out the bars. Peel away the foil and cut into squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dates",
+        "unit": "oz",
+        "notes": "1 1/2 cups, 225g, diced, pitted",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted, salted or unsalted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pecans",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df85c05f1540e0b88d80d3edbcf8b10152c257b4fffdc47d56ec3fa755a703aa",
+    "lineage_hash": "67b38c2f98f411fe02fd185422c6a251b612e2b9698ba5af6bb900705ae92eb7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/date-bars-recipe/",
+    "fetchedAt": "2026-08-02T22:29:06.970Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/date-bars-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

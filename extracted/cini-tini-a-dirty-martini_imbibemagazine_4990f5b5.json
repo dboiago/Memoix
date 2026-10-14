@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Cini Tini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Olive Oil",
+      "Peychaud’s Bitters"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice and shake until cloudy cold. Strain into a chilled coupe. Using a small dropper, add 3 drops of olive oil and a drop of Peychaud’s bitters on the cocktail’s surface to replicate a pimento-stuffed olive."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Brine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepperoncini Brine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Splash Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02f4659197c4a13cf999f91fafe6e55453ed1c24909cdb53c6afec27c98f7d82",
+    "lineage_hash": "a0e40d3366aae2fc328af8f628d3926a9a7950210f51cdc6c112416c7e0c112f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cini-tini-dirty-martini-riff/",
+    "fetchedAt": "2026-08-03T22:58:41.675Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cini-tini-dirty-martini-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

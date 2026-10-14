@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Classic Brioche",
+    "time": "7 hr 40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "32",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "131",
+      "carbohydrateContent": "14",
+      "fatContent": "7",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "In the bowl of a stand mixer with the paddle attachment, combine 6 oz whole milk, 2 ¼ teaspoons dry yeast and 1 cup (5 oz) flour. Mix to form a thick batter. Cover the bowl and set aside for 30 minutes.",
+      "After 30 minutes uncover the bowl. With the mixer running, add 4 large eggs, 3 oz granulated sugar, 1 ½ teaspoons salt, and another cup of the flour. Mix until combined. Switch to the dough hook. With the mixer running on low, add the remaining flour.",
+      "Increase the speed to medium and knead the dough for 10-15 minutes until the dough gathers on the hook, becomes smooth and silky and slaps the sides of the bowl.",
+      "If you're using a European butter you might not need to work the butter if it's already pliable. While the dough is kneading, turn 8 oz unsalted European butter out onto the work surface and knead it with a bench scraper or pound it with a rolling pin until it's soft and pliable and has a similar texture to the dough. You want it pliable but not melted and greasy.",
+      "Reduce the mixer speed to low. A tablespoon at a time, add the butter to the dough. The dough will break apart, keep adding the rest of the butter. Stop the mixer and scrape the sides if the butter builds up on the bowl. Increase the speed to medium and knead until the dough comes back together, gathers on the hook and again slaps the sides of the bowl.",
+      "Turn the dough out onto a floured surface. The dough should be quite soft and a little sticky at this point. Form the dough into a large ball and transfer to an oiled bowl, turning once to coat the dough.",
+      "Cover the bowl and set aside for 1½ - 2 hours until it doubles in volume. Turn the dough out onto a floured surface. Knead the the dough to form a ball and return to the bowl. Cover and refrigerate 4 hours or overnight. Chilling the dough will firm up the butter and make the dough easier to handle. (see note)",
+      "To make loaves:Butter or spray two 9\"x5\" loaf pans. Divide the dough in half. Divide one half of the dough into 6 equal pieces. On a lightly floured surface, roll each piece of dough under your cupped hand to form a smooth ball. Line the 6 dough balls into one of the pans in 3 rows of 2. Make the other loaf in the same way using the other half of the dough. Cover the pans and set aside to rise until doubled in size, 1½ - 2 hours.",
+      "To make classic \"tete\" briocheButter two 8\" brioche molds. Divide the dough in half. Divide one half of the dough into 2/3 and 1/3 portions. Form the 2/3 portion into a large ball and set it into one of the buttered pans. Roll the 1/3 portion to a teardrop shape. Poke a hole in the top of the brioche and set the teardrop, pointed side down, into the loaf. Repeat with the other piece of dough to make another brioche. Cover the pans and set aside to rise until doubled in size, 1½ - 2 hours.",
+      "Preheat the oven  to 375 °F. Brush the loaves with egg wash and bake until golden brown and the interior is 200 °F, about 30 minutes.",
+      "Turn the pan out onto a cool rack and cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¾ cup, scalded and cooled",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "3 ½ cups, see note",
+        "amount": "17½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted European Butter",
+        "unit": "oz",
+        "notes": "at cool room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "for egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a92de663e27b7d7b212d50adf825a4f3fc14175853e09b5fb7039a848c72ef95",
+    "lineage_hash": "4fa938de4f92a6a06547aae63de5e03b696cb17e979062ce456176da16b587b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/02/04/classic-brioche-bread/",
+    "fetchedAt": "2026-08-02T00:42:57.267Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/02/04/classic-brioche-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

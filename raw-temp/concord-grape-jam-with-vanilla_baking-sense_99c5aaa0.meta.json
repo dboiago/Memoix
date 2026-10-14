@@ -1,0 +1,55 @@
+{
+  "url": "https://www.baking-sense.com/2017/09/19/concord-grape-jam/",
+  "slug": "concord-grape-jam-with-vanilla_baking-sense_99c5aaa0",
+  "title": "Concord Grape Jam with Vanilla",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T20:24:06.151Z",
+  "ldName": "Concord Grape Jam with Vanilla",
+  "ldTime": "PT55M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "96",
+    "96 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, brunch, Lunch, Snack",
+  "ldKeywords": "canning, preserves",
+  "ldIngredientsRaw": [
+    "7 cups fresh concord grapes (measure after plucking from the stems)",
+    "4 oz water (½ cup)",
+    "¼  vanilla bean (split)",
+    "2 ½ lbs granulated sugar (5 cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Put a small plate or bowl in the freezer to chill while you prepare the jam. You&#x27;ll use this to test if the jam is gelled.",
+    "Separate the skins from the pulp from 7 cups&#32;fresh concord grapes, reserving both. In a food processor or blender, pulse the grape skins with 4 oz&#32;water until you have a chunky puree.",
+    "In a large pan, cook the pulp ¼&#32;vanilla bean over medium heat until soft, about 10-15 minutes, stirring frequently. Remover the vanilla bean pod and run the grape pulp through a food mill or strainer to remove the seeds",
+    "Scrape the the seeds from vanilla bean and add them to the pulp. Combine the strained pulp with the skins and 2 ½ lbs&#32;granulated sugar in a large saucepan. Bring the mixture to a boil and cook about 15-20 minutes until it begins to thicken.",
+    "To check if the jam is ready, take the plate from the freezer and put a small dollop of jam onto the cold plate. Let it cool then push on the jam. If it wrinkles it&#39;s ready. If it&#39;s still runny cook it a few more minutes.",
+    "Pour the hot jam into sterilized canning jars. Use a wet paper towel to wipe the rims of the jars to make sure they&#39;re clean. Any bits of fruit can prevent the lids from sealing properly. Cover and process the jars in a boiling water bath for 15 minutes (see note).",
+    "Remove from the water and allow to cool at room temperature. You should hear the lids &quot;pop&quot; to let you know the jars are sealed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "57 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "0.1 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.01 g",
+    "sodiumContent": "1 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "0.011 g"
+  },
+  "htmlIngredientLines": [
+    "7 cups fresh concord grapes (measure after plucking from the stems)",
+    "4 oz water (½ cup)",
+    "¼ vanilla bean (split)",
+    "2 ½ lbs granulated sugar (5 cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

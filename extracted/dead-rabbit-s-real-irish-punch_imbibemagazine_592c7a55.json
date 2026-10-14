@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Dead Rabbit's Real Irish Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [
+      "Freshly Grated Nutmeg"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a large punch bowl with a block of ice and add all the ingredients. Stir to combine. Use a ladle to pour single servings into glasses and garnish with freshly grated nutmeg.",
+      "Cinnamon Syrup: 1 oz. crushed cassia cinnamon bark\n3 cups water\n3 cups fine sugar",
+      "Combine all the ingredients in a pot. Bring to a boil, stirring frequently. Remove from the heat and store in a clean container at room temperature for 12 hours. Strain through a fine mesh strainer, bottle, label and store in refrigerator. Makes 1 liter.",
+      "Genmaicha Tea Syrup: 1 oz. Genmaicha tea\n3 cups water\n3 cups fine sugar",
+      "Combine all the ingredients in a pot. Bring to a boil, stirring frequently. Remove from the heat and store in a clean container at room temperature for 30 mins. Strain through a fine mesh strainer, bottle, label and store in refrigerator. Makes 1 liter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Irish Whiskey",
+        "unit": "oz",
+        "notes": "Vose uses Bushmills Red Bush",
+        "amount": "10½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Calvados",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Genmaicha Green Tea Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Bitters",
+        "unit": "dashes",
+        "notes": "Vose uses Bittered Sling",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassia Cinnamon Bark",
+        "unit": "oz",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "Cinnamon Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Cinnamon Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Cinnamon Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Genmaicha Tea",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": "Genmaicha Tea Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Genmaicha Tea Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Genmaicha Tea Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "53854b86a95dcb0f692f611126919f06fc95eab1e5530009e29e0e66abec3f14",
+    "lineage_hash": "8018c22ccad7413937ebde50c137e006737cd887dd916e5dea604a853f33ea2f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dead-rabbits-real-irish-punch/",
+    "fetchedAt": "2026-08-03T18:17:46.857Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dead-rabbits-real-irish-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,55 @@
+{
+  "recipe": {
+    "name": "Chocolate Dipped Apricots",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the chocolate in a double-boiler (or in a heat-resistant bowl set over a pan of simmering water).",
+      "Remove from heat.",
+      "Drop the apricots in the chocolate and stir until well coated.",
+      "Use a fork to lift the apricots from the bowl, and deposit them carefully on a feuille guitare, a sheet of parchment paper or a silicon baking mat.",
+      "Leave out to dry, preferably somewhere cool and safely hidden from children, chocoholics, or any combination of the two."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricots",
+        "unit": null,
+        "notes": "dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4bdf838a715f7e7b954fe66b6edf3bccba4e3477aad7c3a81826a152d905181c",
+    "lineage_hash": "7a726cfa231f45553b3f9dc5ca5f8647ca5573e93161352440a79e51e9137bca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/chocolate-dipped-apricots-recipe/",
+    "fetchedAt": "2026-09-30T18:33:47.994Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/chocolate-dipped-apricots-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chocolate Buttermilk Cake",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "327",
+      "carbohydrateContent": "43",
+      "fatContent": "17",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line the bottom of two 8\" round cake pans with parchment paper, or butter and flour the bottom of the pans (don't butter/flour the sides).",
+      "Combine 2 ounces Dutch process cocoa powder and ½ teaspoon baking soda in a small heat-proof bowl. Whisk 4 ounces boiling water into the cocoa, it will foam up a bit from the baking soda. Set aside to cool while preparing the other ingredients.",
+      "Sift 9 ounces cake flour with 1 teaspoon baking powder and ½ teaspoon table salt, set aside.",
+      "Combine 8 ounces vegetable oil, 4 large eggs, 8 ounces buttermilk,1 tablespoon vanilla extract and 16 ounces granulated sugar in a mixer bowl. Mix on medium speed to combine the ingredients, continue mixing for 2-3 minutes to emulsify the ingredients.",
+      "With the mixer running on low, add the flour and then add the cocoa mixture. Mix until completely incorporated.",
+      "Divide the batter evenly between the two pans. Bake until the top springs back when lightly pressed or a toothpick inserted in the middle of the cake comes out clean, about 30 minutes.",
+      "Cool in the pan for 20 minutes before turning out onto a cooling rack. Cool completely before filling and icing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2 cups",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a40abf3d5140fa99cbda1973c0a15d51da3cbd54c95d4ced118c46ee492593a",
+    "lineage_hash": "2503a42bbe961a6de1b63007303dc81c6af8b58eaf66cf4bdb06938caabaec08"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2018/02/22/old-fashioned-chocolate-cake/",
+    "fetchedAt": "2026-08-02T04:36:38.310Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2018/02/22/old-fashioned-chocolate-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

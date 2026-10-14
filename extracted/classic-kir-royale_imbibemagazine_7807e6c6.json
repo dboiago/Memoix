@@ -1,0 +1,51 @@
+{
+  "recipe": {
+    "name": "Kir Royale",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Flute",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour chilled champagne into a flute, then slowly add the crème de cassis."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crème De Cassis",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9c37e90654e12c112423d4a69125f8735410f7f820bb5d348d09d5b427dc37f2",
+    "lineage_hash": "30744991b2c26a8f6750d548c2804ffabfd1a5eae1f68a35a5a4815b41e30a36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/recipe-kir-royale/",
+    "fetchedAt": "2026-08-03T18:19:52.766Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/recipe-kir-royale/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

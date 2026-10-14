@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Bourbon-Brined Chicken",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the brine, combine the bourbon, salt, brown sugar, lemon slices, garlic, peppercorns, and mustard and coriander seeds in a large nonreactive bowl with 4 cups of water and whisk until the salt and brown sugar dissolve.",
+      "If using whole chicken breasts, cut each breast in half. Trim any sinews or excess fat off the breasts and discard. Rinse the breasts under cold running water, then drain. Place the chicken breasts in a large resealable plastic bag and add the brine. Let the breasts brine in the refrigerator for 2 to 3 hours, turning the breasts twice so that they brine evenly.",
+      "Set up the grill for direct grilling by placing the grate over your heat source, and preheat to high. If using a gas grill, place all of the wood chips or chunks, if desired, in the smoker box or in a smoker pouch and run the grill on high until you see smoke. If using a charcoal grill, preheat it to high, then toss all of the wood chips or chunks, if desired, on the coals.",
+      "When ready to cook, drain the brine off the chicken and blot the breasts dry with paper towels. Discard the brine. Lightly brush both sides of the breasts with the melted butter. Brush and oil the grill grate, then arrange the chicken breasts on the hot grate, placing them on a diagonal to the bars. Grill the breasts for 2 minutes then rotate them a quarter turn to create an attractive crosshatch of grill marks. Continue grilling the breasts on that side for 2 minutes longer. Turn the breasts over and grill until cooked through, 4 to 6 minutes longer, again rotating them after 2 minutes to create a crosshatch of grill marks. The total cooking time will be 8 to 10 minutes, depending on the thickness of the chicken breasts. To test for doneness, poke a breast in the thickest part with your finger; it should feel firm to the touch. Transfer the grilled chicken breasts to a platter or plates and serve at once with your favorite barbecue sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "C",
+        "notes": "kosher or sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "slices",
+        "notes": "each 1/4-inch thich",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and gently crushed with the side of a cleaver",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0aa5fdb16d9efb1f703078e6f77308e59cae41516ec2271d64f930945dd567d",
+    "lineage_hash": "b0e243d88bc007d495262fe15e618c6f993aee11f1d4c970fed6282ab130a4c2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bourbon-brined-chicken/",
+    "fetchedAt": "2026-08-03T09:35:52.373Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bourbon-brined-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

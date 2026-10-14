@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Byrrh Cassis Aperitif Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Collins",
+    "garnish": [
+      "Orange Wheel",
+      "Berries"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the Byrrh and crème de cassis into a Collins glass or tumbler. Add the sparkling water and stir briefly.",
+      "Add a generous amount of ice cubes and garnish with orange and berries, if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Byrrh",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Wheel",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Few Berries",
+        "unit": null,
+        "notes": "if desired",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f52ad78080fc34cdac4b4e194a5d042e1c2db2134fd272c184fceec12746feb0",
+    "lineage_hash": "d5b89dbe45c093201dc7be001cf57c82e5a08a2d0c3a970ea04ad50a1b199b48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/byrrh-cassis-aperitif-creme-de-cassis-blackcurrant-cocktail-recipe/",
+    "fetchedAt": "2026-08-03T02:42:01.368Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/byrrh-cassis-aperitif-creme-de-cassis-blackcurrant-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Apple, Cranberry and Pecan Strudel",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a medium-sized bowl with cold water and add the lemon juice. Peel and core the apples then dice into small pieces. Place them in the bowl with the water and lemon juice so the apple doesn't discolour",
+      "Drain the diced apple through a sieve, shaking off as much water as possible, and tip into a medium saucepan. Add 75g of the sugar, the cranberries, orange zest and 1 teaspoon of the cinnamon",
+      "Place the pan over a low heat and cook gently for 15 minutes or until the apple is soft, turning up the heat towards the end to reduce any liquid. Remove from the pan with a slotted spoon and place in a bowl. Set aside to cool completely",
+      "Finely chop 50g of pecans, reserving the rest for the topping. Take a small bowl and mix the remaining 25g of sugar with the remaining teaspoon of cinnamon",
+      "Melt the butter in a small saucepan. Place a sheet of baking paper on a flat \t\t\t\tbaking tray and lay the first sheet of filo over it (keep the rest of the pastry under a damp tea towel). Brush all over with melted butter and sprinkle over some chopped pecans and cinnamon sugar. Place the next sheet of pastry on top and repeat with all six sheets",
+      "Spread the cooled apple mixture along the long top edge of the layered pastry. Fold the edge of the short sides over the apple. Gently lift the baking paper and roll the pastry up lengthways, as if it were a Swiss roll, finishing with the seam underneath",
+      "Top with the remaining pecans and bake for 25–30 minutes, or until the pastry is golden",
+      "Serve the strudel warm, with cream or ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Filo Pastry",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b1a0b30ac794c2a855d12bf7257f7f661d829f4d3c5e126fe08fd0e82e97d7c",
+    "lineage_hash": "13bc931fa46e22822da63b4fb59a6a669794144007142a6759c75a72a12fb4fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-cranberry-strudel-recipe",
+    "fetchedAt": "2026-08-03T09:23:27.692Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-cranberry-strudel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

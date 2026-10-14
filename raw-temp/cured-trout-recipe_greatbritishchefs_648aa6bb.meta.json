@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cured-trout-recipe",
+  "slug": "cured-trout-recipe_greatbritishchefs_648aa6bb",
+  "title": "Cured Trout Recipe",
+  "byline": "by Steve Groves",
+  "fetchedAt": "2026-08-03T11:55:54.147Z",
+  "ldName": "Cured Fjord Trout with coriander, celery, lime and apple salad",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Starter",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1 side of trout, skin on, pinboned",
+    "1 handful of fine sea salt",
+    "1 handful of caster sugar",
+    "1 tbsp of coriander seeds, crushed",
+    "1 lime, zested",
+    "1 handful of coriander leaves",
+    "1 handful of celery leaves",
+    "1 bunch of coriander leaves",
+    "1 apple, green",
+    "2 tbsp of olive oil",
+    "1 lime",
+    "salt",
+    "pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Lay the trout, skin-side down, on a large piece of cling film. Sprinkle over the salt and sugar, followed by the coriander seeds, lime zest and coriander leaves",
+    "Wrap in cling film and place flesh-side down on a baking tray. Top with another tray, then place light weights on top to gently press the trout",
+    "Refrigerate for 8 hours depending on the thickness of the fish, turning often",
+    "Once cured, remove from the fridge and carefully rinse under cold water to remove the excess cure. Pat dry",
+    "Slice thinly and arrange on serving plates. Brush with olive oil and garnish with celery and coriander leaves, batons of apple, salt and pepper",
+    "Grate over a little more lime zest to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

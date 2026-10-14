@@ -1,0 +1,46 @@
+{
+  "recipe": {
+    "name": "Allan's Slow-Smoked Brisket",
+    "time": "12 hr",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the brisket in a large disposable foil pan.",
+      "Combine the rub ingredients in a mixing bowl. Use your fingers or a wooden spoon to combine the spices and break up any lumps. Generously season the brisket on all sides with the rub. (Store any leftovers in a lidded jar and store away from heat and light for up to 3 months.)",
+      "Set up your grill for indirect grilling and heat to 225 to 250 degrees. Place 2 to 3 wood chunks on top of the coals.",
+      "Continue to cook at 265 degrees for 4 hours, or until the meat reaches 205 degrees. (You can do this in the oven, if desired.) Let the brisket rest for several hours in the cooling oven or an insulated cooler. Slice against the grain into pencil-thick slices before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Packer Brisket",
+        "unit": null,
+        "notes": "excess fat trimmed to 1/4-inch",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47f4f9bab57620cbf578cd4b01e57a39655745f7ac49ac3da8b1c260a028f5cd",
+    "lineage_hash": "96c03d6eb1bc13dfa28cca4d9291cbe885b1f3fa5dea66defca17a3bfc4ab00c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/allans-slow-smoked-brisket/",
+    "fetchedAt": "2026-08-03T08:31:08.480Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/allans-slow-smoked-brisket/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

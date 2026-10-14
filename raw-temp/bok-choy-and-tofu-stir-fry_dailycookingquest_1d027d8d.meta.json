@@ -1,0 +1,56 @@
+{
+  "url": "https://dailycookingquest.com/bok-choy-and-tofu-stir-fry.html",
+  "slug": "bok-choy-and-tofu-stir-fry_dailycookingquest_1d027d8d",
+  "title": "Bok Choy and Tofu Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-02T09:33:32.819Z",
+  "ldName": "Bok Choy and Tofu Stir Fry",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H20M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish, Vegetarian",
+  "ldKeywords": [
+    "Tofu",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "2 tablespoon oil",
+    "2 cloves garlic (Indonesian: bawang putih), minced",
+    "1 inch ginger (Indonesian: jahe), peeled and cut into match sticks",
+    "100 gram deep fried tofu (Indonesian: tahu goreng), blanced in hot water to remove excess oil, thinly sliced",
+    "300 gram bok choy, separate stems from leaves, washed and drained",
+    "2 tablespoon water",
+    "2 tablespoon soy sauce",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon sesame oil (optional)",
+    "corn starch liquid (1/2 tablespoon corn starch + 1 tablespoon water)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat oil in a frying pan/wok, sauté garlic and ginger until fragrant, about 2 minutes.",
+    "Add deep fried tofu and bok choy stems, cook for 2 minutes.",
+    "Add bok choy leaves, water, soy sauce, salt, and sugar. Stir and cook until the leaves look wilted, about 2 minutes.",
+    "Add sesame oil, mix well, and thicken sauce with corn starch liquid. Transfer to a serving plate and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 tablespoon oil",
+    "2 cloves garlic (Indonesian: bawang putih), minced",
+    "1 inch ginger (Indonesian: jahe), peeled and cut into match sticks",
+    "100 gram deep fried tofu (Indonesian: tahu goreng), blanced in hot water to remove excess oil, thinly sliced",
+    "300 gram bok choy, separate stems from leaves, washed and drained",
+    "2 tablespoon water",
+    "2 tablespoon soy sauce",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon sesame oil (optional)",
+    "corn starch liquid (1/2 tablespoon corn starch + 1 tablespoon water)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

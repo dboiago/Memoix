@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Chinese-Style Quick Pickled Shallots",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "9",
+      "carbohydrateContent": "1.8",
+      "fatContent": null,
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Place the shallots in a heat proof bowl.",
+      "Add the peppercorns to a small pot. Toast over medium-low heat until fragrant, 30 seconds to 1 minute. Add the vinegar, water, sugar, and salt to the pot. Cook and stir until the sugar and salt are fully dissolved and the liquid is coming to a simmer.",
+      "Pour the hot pickling liquid over the shallots. Let the shallots cool completely.",
+      "Serve immediately, or you can store them in the fridge for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shallot",
+        "unit": null,
+        "notes": "sliced into 1/4\" (1/2 cm) round pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "or black peppercorns",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cf6cbc8a338763ffa7773a348a426060b21f5ceb44a3f900db017f9099b9df21",
+    "lineage_hash": "a5612bf3d190650838aa67e5bc7c088da1ef18906c2213547fdaae427b39eb18"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/quick-pickled-shallots/",
+    "fetchedAt": "2026-08-01T22:08:27.858Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/quick-pickled-shallots/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

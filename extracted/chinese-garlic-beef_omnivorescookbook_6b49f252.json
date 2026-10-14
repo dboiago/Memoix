@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Chinese Garlic Beef",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "354",
+      "carbohydrateContent": "8.6",
+      "fatContent": "19.7",
+      "proteinContent": "34.2"
+    },
+    "directions": [
+      "Combine all the marinating ingredients in a medium-sized bowl and mix well. Let sit for 15 minutes while preparing other ingredients.",
+      "Mix the sauce ingredients together in a small bowl.",
+      "Heat oil in a large skillet over medium-high heat until hot. Add the garlic and turn to medium-low heat. Cook and stir until the garlic has turned golden on both sides, but not too browned. Transfer the garlic to a plate and set aside. Reserve the garlic oil in the pan.",
+      "Spread the beef in the pan without overlapping and turn to medium-high heat. Let the bottom cook without touching until turning golden brown, 2 minutes or so. Flip to cook the other sides, until most sides have browned and the inside is still a bit pink (the beef will continue to cook until done in the sauce).",
+      "Add back the cooked garlic and butter. Turn to medium heat again. Stir and cook until the butter melts.",
+      "Pour in the sauce. Stir immediately to coat everything while the sauce thickens, 1 to 2 minutes. Transfer everything into a plate and serve hot over rice as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "lb",
+        "notes": "diced into 1” (2 cm) cubes",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "heads",
+        "notes": "peeled, outer larger cloves halved lengthwise",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c44d8a15e18e51fedb472c8e8eac89608fc798f9d76f1b5c8f1e07088738b244",
+    "lineage_hash": "d56ce9e4f4eec16ab177c109d958072f9e1bc2eb1348fb301ca02e930f165099"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/garlic-beef/",
+    "fetchedAt": "2026-08-02T07:37:53.322Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/garlic-beef/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

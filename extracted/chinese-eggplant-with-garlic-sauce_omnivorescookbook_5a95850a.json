@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chinese Eggplant with Garlic Sauce",
+    "time": "40 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "122",
+      "carbohydrateContent": "11",
+      "fatContent": "8.7",
+      "proteinContent": "1.4"
+    },
+    "directions": [
+      "(Option 1) Place eggplant in a large bowl and add water to cover. Add 1 teaspoon salt, mix well. Place a pot lid on top to keep the eggplant under water for 15 minutes. Drain and pat dry.",
+      "(Option 2) Spread the sliced eggplant out on a paper towel. Sprinkle Kosher salt on both sides of the eggplant slices. Allow to rest for 15 minutes. Rinse with running tap water to wash off the salt, then pat dry thoroughly.",
+      "Combine the sauce ingredients in a small bowl, mix well.",
+      "Sprinkle eggplant with 1 tablespoon cornstarch and mix by hand, until eggplant is evenly coated with with a thin layer of cornstarch.",
+      "Add 2 tablespoons oil to a big nonstick skillet and heat over medium high heat until hot. Spread eggplant across the bottom of the skillet without overlapping. Cook the eggplant one side at a time until all the surfaces are charred and the eggplant turns soft, 8 to 10 minutes in total. Transfer the eggplants to a plate. If the skillet gets too hot and starts to smoke, turn to medium heat.",
+      "Add the remaining 1/2 teaspoon oil, the ginger and garlic into the same skillet. Stir a few times until fragrant. Add all the eggplant back into the skillet. Mix the sauce again until cornstarch is fully dissolved and pour it over the eggplant. Immediately stir a few times, until the eggplant is evenly coated and the sauce thickens. Transfer everything to a big plate.",
+      "Serve hot as a side or as main over steamed rice or noodles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chinese Eggplant (about 2 Small Eggplant)",
+        "unit": "oz",
+        "notes": "*Footnote 1, chopped to bite-size pieces",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": "Sauce (*footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce (*footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": "*see footnote 3",
+        "amount": "½",
+        "section": "Sauce (*footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce (*footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce (*footnote 2)",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2½",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir-fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Stir-fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a84a6ebdd3f6b0fcce6afff9cedce515cd884256f95e30d1e28802faf7ccb5e",
+    "lineage_hash": "bc876cda74b420aeff534f2bd2b46371eccc4970f8c529b30de80881a38b7d3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-eggplant-with-garlic-sauce/",
+    "fetchedAt": "2026-08-02T03:52:49.619Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-eggplant-with-garlic-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

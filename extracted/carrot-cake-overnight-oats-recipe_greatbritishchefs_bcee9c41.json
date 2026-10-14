@@ -1,0 +1,191 @@
+{
+  "recipe": {
+    "name": "Carrot Cake Overnight Oats",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the overnight oats. Add the oats, carrots, honey, chia seeds, spices and milk to a bowl and mix well. Divide between six containers, cover and chill in the fridge overnight",
+      "The next day, to make the nutmeg crumb, preheat the oven to 170°C",
+      "Spread the nuts and oats on a lined baking tray. Dot around the butter and sprinkle over the nutmeg and a pinch of salt before using your hands to toss. Roast in the oven for around 15 minutes or until golden",
+      "For the yoghurt frosting, first mix the yoghurt with an electric whisk, then whisk in the vanilla bean paste. Add the icing sugar bit by bit, then transfer to a piping bag fitted with a star nozzle",
+      "Take the oats out of the fridge, pipe over the whipped yoghurt frosting, and sprinkle over the nutmeg crumb, some chia seeds, and a pinch of nutmeg. Finish with a drizzle of honey and some sliced banana"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "coarsley grated",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "g",
+        "notes": "plus extra to drizzle",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": "plus extra for garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "Tbsp",
+        "notes": "plus extra for garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64c7f5984e6c562d49cefe7eccac46cd25cdd128ccc4a657d2bf0fb5fa3e0921",
+    "lineage_hash": "e2ce1181c445677ab3fb21621f71a8109107c540efb7ddbaf5ccb8a2f2b5e298"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/spiced-carrot-cake-overnight-oats-recipe",
+    "fetchedAt": "2026-08-01T23:04:17.276Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/spiced-carrot-cake-overnight-oats-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

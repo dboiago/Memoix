@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Smoked Buttermilk dressing",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the ingredients except the coal, butter n oil and half the onion seeds in a big bowl.",
+      "In a small steel bowl add the coal, pour ghee and oil and the onion seeds, and float it on the dressing and cover.",
+      "Keep aside for 10 minutes, remove the coal bowl, stir and the dressing is ready."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated/juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pc Burning Coal",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter and Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4613c7e620dce8f3a846bc79c49da4babe83628ae138c890d96bdf77d55ef040",
+    "lineage_hash": "503eb010ceae68bbdbad2e1d868571e8223f48c3509131096939843c6603b6b6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/all-things-smoked/",
+    "fetchedAt": "2026-08-01T18:31:04.416Z"
+  },
+  "rawSource": "https://ranveerbrar.com/all-things-smoked/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Brazilian Fried Rice with Ham and Egg",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the butter and the ham to a medium pan with over medium heat, and brown the ham a few minutes.",
+      "Add in the onions and saute until they are transparent.",
+      "The, add in the eggs, and stir to scramble them.",
+      "Add in the cooked rice stir, and cook until rice is warmed up - about 2-3 minutes.",
+      "Lastly, mix in the peas and cook just long enough to heat them up, about 2-3 minutes, stirring occasionally.",
+      "Serve and top with potato sticks and fresh parsley."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "C",
+        "notes": "cubed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas No Need to Thaw!",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Sticks to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parseley",
+        "unit": "Tbsp",
+        "notes": "fresh, minced optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8861e74b4120eae5c31371e824b33a9f9b16fb9229a40f8a05c4ba5ac0fc0216",
+    "lineage_hash": "849e552005549fd8fa84e9c5512b2bc1b1de57d91e0f085919d714bc6d66e24c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/brazilian-fried-rice-with-ham-and-egg/",
+    "fetchedAt": "2026-09-25T19:51:54.662Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/brazilian-fried-rice-with-ham-and-egg/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

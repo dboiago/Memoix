@@ -1,0 +1,59 @@
+{
+  "url": "https://thewoksoflife.com/chinese-walnut-cookies/",
+  "slug": "chinese-walnut-cookies_thewoksoflife_770773ff",
+  "title": "Chinese Walnut Cookies",
+  "byline": "Kaitlin",
+  "fetchedAt": "2026-08-02T11:28:11.867Z",
+  "ldName": "Chinese Walnut Cookies",
+  "ldTime": "PT70M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert and Sweet Stuff",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 cups cake flour ((270 g))",
+    "1/2 teaspoon baking soda ((3 g))",
+    "1/4 teaspoon baking powder ((2 g))",
+    "8 tablespoons butter or lard",
+    "1/2 cup sugar ((115 g))",
+    "1/4 teaspoon salt ((1 g))",
+    "1  egg ((beaten and divided; the egg I used weighed about 62 g with shell on))",
+    "3/4 cup finely chopped toasted walnuts, plus 12 raw walnut halves ((75 g))"
+  ],
+  "ldInstructionsRaw": [
+    "Sift the cake flour, baking soda and baking powder together and set aside. Mix the butter, sugar, and salt in a large mixing bowl, stir thoroughly until the mixture is creamed. Now add the flour mixture to the butter mixture along with the finely chopped walnuts. Beat the egg, put aside 2 teaspoons of the beaten egg and add the rest to the dough mixture. Work the mixture into a dough ball. You can do this by hand or with an electric mixer. Just note that the dough might be lightly crumbly, but it should come together when you take the time and work it into a ball.",
+    "Line a baking sheet with parchment paper. On a clean surface, divide the dough into 12 equal pieces and roll each into a ball, position them on the baking sheet a couple inches apart. All of the cookies should fit onto one pan.",
+    "Take the walnut halves and gently press one into each cookie. Let the cookies rest for 15 to 20 minutes while covered with a clean kitchen towel.",
+    "While that’s happening, preheat the oven to 350 degrees F. Once the dough is done resting, brush each with the beaten egg that you put aside and then bake for 20 minutes. Turn off the oven and let the cookies sit inside the oven for another 5 minutes before taking them out. Let cool and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "461 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "8 g",
+    "fatContent": "27 g",
+    "saturatedFatContent": "11 g",
+    "cholesterolContent": "67 mg",
+    "sodiumContent": "333 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "17 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups cake flour (270 g)",
+    "▢ 1/2 teaspoon baking soda (3 g)",
+    "▢ 1/4 teaspoon baking powder (2 g)",
+    "▢ 8 tablespoons butter or lard (4 oz or 115g, at room temperature)",
+    "▢ 1/2 cup sugar (115 g)",
+    "▢ 1/4 teaspoon salt (1 g)",
+    "▢ 1 egg (beaten and divided; the egg I used weighed about 62 g with shell on)",
+    "▢ 3/4 cup finely chopped toasted walnuts, plus 12 raw walnut halves (75 g)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

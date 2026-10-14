@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chinese Honey Soy Chicken Wings",
+    "time": "2 hr 40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "364",
+      "carbohydrateContent": "23",
+      "fatContent": "20",
+      "proteinContent": "23"
+    },
+    "directions": [
+      "Combine the marinade ingredients in a small bowl. Mix until the sugar is dissolved. Transfer to a large ziplock bag. Add the chicken wings. Massage a few times to mix well. Squeeze as much air out as you can and seal the bag. Let marinate for a minimum of 2 hours (*Footnote 1), up to overnight in the fridge. Flip the bag in between, for even marinating.",
+      "Preheat the oven to 400ºF (200ºC). Line a baking sheet with parchment paper or aluminum foil for easy cleanup.",
+      "Drain the marinated chicken wings and place them on the lined baking sheet, skin side down. Bake for 15 minutes. Take the wings out. Brush both sides with the honey (*Footnote 2), this time placing them skin side up. Bake for another 10 minutes.",
+      "Brush the top with more glaze, sprinkle with sesame seeds. Bake for another 5 minutes, until the wings are cooked through and the surface turns golden brown and sticky. If the wings have not turned golden, bake for another 5 to 10 minutes.",
+      "Let cool for 5 minutes. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "4",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Glaze & garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Glaze & garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "457c51d075bc0fcafffb07e9d3c80975ca1972c7f5d7177252ac4a4aa9e274ae",
+    "lineage_hash": "0da5c8f85f18c3c262c5e62606432e158afc760298e63c8be9389119090403d2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-honey-soy-chicken-wings/",
+    "fetchedAt": "2026-08-02T09:54:31.282Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-honey-soy-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

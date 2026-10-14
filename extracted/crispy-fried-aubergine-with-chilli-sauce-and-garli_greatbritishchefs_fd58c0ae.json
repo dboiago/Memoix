@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Crispy Fried Aubergine with Chilli Sauce and Garlic Yoghurt",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat an oven to 200°C/180°C fan/gas mark 6. Prick the aubergines all over with the tip of a knife. Place the aubergines on a baking sheet lined with foil and place into the oven for 45–60 minutes or until the aubergines are soft to touch",
+      "Leave them to cool completely and then carefully peel off the skin, ensuring you keep it whole and the stalk attached. Split the aubergines in half (keeping the stalk attached) and sit in a sieve to let excess liquid drain out",
+      "To make the chilli sauce, blend the shallots and garlic in a food processor to a fine paste. Heat a large wide-based pan over a medium heat and add the shallot paste along with the olive oil. Cook for 10 minutes, stirring occasionally, and ensuring you scrape the bottom of the pan if any sticky bits form (this is the good stuff). Add the pepper paste into the pan and cook for another 5 minutes, stirring a few times",
+      "Put the tomatoes in a food processor and blitz as fine as they will go. Add the blitzed tomatoes, 250ml water and the ketchup to the pan and turn the heat down to low. Cook for 25–35 minutes or until a thick sauce has formed. Take off the heat and taste to check the seasoning – as the pepper paste contains salt it may not need any",
+      "Blitz the finished sauce in a food processor again to achieve a smooth finish, if you like. Once cooled, add the pickle juice. This sauce will store in an airtight container in the fridge for 3–4 weeks",
+      "Whisk together the yoghurt, garlic, olive oil and a little salt. Put the flour, egg and breadcrumbs into dishes large enough to hold the aubergine. Season the aubergine a little on both sides using fine salt. Coat the aubergines in the flour, shaking off any excess, then into the egg and then into the panko breadcrumbs, ensuring you push the breadcrumbs onto the aubergine so they stick well. The trick to this crumbing process is to keep one hand dry and one hand wet so you don’t end up with clumps",
+      "Heat the oven to 170°C/150°C fan/gas mark 3. Fill a large frying pan halfway up with clarified butter or ghee and place over a medium–high heat. Once the fat is hot, carefully add the crumbed aubergine, ensuring you lay it away from you to avoid any splatter-related incidents. Fry on one side for 1–2 minutes or until the crumbs are golden brown",
+      "Turn over and fry for another 1–2 minutes on the other side. If frying in batches, place each fried aubergine onto a rack with a baking sheet underneath, then place into the oven and warm through for 5 minutes",
+      "Add the capers to the hot pan and fry until crispy. Drain on paper towel. Sprinkle the aubergines with a little sea salt, pipe or spoon the chilli sauce and garlic yoghurt on top, or serve them on the side as a dip. Sprinkle over the crispy capers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": "large",
+        "notes": "or 4 small",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clarified Butter",
+        "unit": null,
+        "notes": "or ghee, for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lilliput Capers",
+        "unit": "Tbsp",
+        "notes": "rinsed and dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turkish Hot Pepper Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ripe Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickle Juice",
+        "unit": "Tbsp",
+        "notes": "from any pickles you may have in the fridge",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a742e7393c87865b4073002dad4541362514883651346abd9b8a291157eec022",
+    "lineage_hash": "323a4306bd855c8fde12b90f7b03ca872e40e97f6bf7feeb2eeba125d8f09c39"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/fried-aubergine-chilli-yoghurt-recipe",
+    "fetchedAt": "2026-08-02T19:12:27.430Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/fried-aubergine-chilli-yoghurt-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

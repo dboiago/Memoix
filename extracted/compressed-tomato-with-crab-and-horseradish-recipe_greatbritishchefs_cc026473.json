@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Compressed Tomato with Crab and Horseradish",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the horseradish cream. Mix together the horseradish sauce, cream and lemon juice  until thoroughly combined, then leave for an hour to infuse. Once infused strain the cream through a fine sieve and set aside until required",
+      "To make the horseradish granita combine 350g of the infused horseradish cream with the milk and salt and mix together thoroughly. Spread the mixture onto a tray and transfer to the freezer until frozen. Once frozen, scrape with a fork to create a coarse powder and return to the freezer until ready to serve",
+      "To make the crab tuile, blend everything together in a food processor and leave in the fridge for an hour to set. Spoon the crab mixture onto a non-stick baking tray and spread evenly into a thin layer. Bake for 8–10 minutes until golden and crisp",
+      "Slice the cucumber into 12 pieces, approximately 1cm thick. Season well and place into a vacuum bag, then seal and leave in the fridge for 1 hour",
+      "Meanwhile, blanch the tomatoes in boiling water and refresh quickly in iced water. Carefully remove the skin and seeds from the tomato, reserving the seeds for garnish",
+      "Mix 50g of the horseradish cream with the white crab meat and fill the tomatoes with the crab. Seal the stuffed tomatoes in a vacuum bag and leave for ten minutes",
+      "To serve, divide the stuffed tomatoes between six plates. Arrange two pieces of cucumber alongside the tomato, slicing the bases of the cucumber pieces so they stand upright, and add a generous serving of the granita to the centre of the plate. Spoon the reserved tomato seeds onto the plate and garnish with pieces of the crab tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Horseradish Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Plum Tomatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9c68520e04cf7c6dd7a14ef40cd064ab6608d6fd974df62bac5d062b15ea6bf",
+    "lineage_hash": "9276ac553d8b0ea6f71af3a313b1cb82cd037132298f4117c8db3b834d3b9b5d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/compressed-tomato-crab-recipe",
+    "fetchedAt": "2026-08-03T14:16:17.798Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/compressed-tomato-crab-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

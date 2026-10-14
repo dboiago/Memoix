@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Carrot Fudge",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the ghee over a medium heat. Add the cashew nuts and raisins and cook until golden. Remove with a slotted spoon and drain on kitchen paper",
+      "Grate the carrots and add them to the pan, and cook for a couple of minutes.  Make sure they are well coated with the ghee. Add the milk, reduce the heat and simmer until the milk has evaporated",
+      "Add the khoya and cook, stirring constantly, for up to 30 minutes until the consistency is soft and fudge-like",
+      "Add the sugar and return the cashew nuts and raisins to the pan. Cook, stirring, until the sugar has melted. Remove from the heat and sprinkle in the ground cardamom",
+      "Leave to cool, then fill the pastry cases with the mixture to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "coarsely chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and grated",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Khoya",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Pastry Cases",
+        "unit": null,
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d6d2892da786fbf88ef24d5d83bada22f374c1a21ef917543da197079b10ff6",
+    "lineage_hash": "6eea7ffc95bc54503f732f3fbe58eab2ce6a5fe1f23c4556bbec43570a9fcd21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/carrot-fudge-recipe",
+    "fetchedAt": "2026-08-03T16:01:23.682Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/carrot-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

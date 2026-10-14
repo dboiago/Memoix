@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Cucumber Basil Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add a basil leaf to a shaker and gently muddle it. Add the rest of the ingredients to the shaker with ice. Shake vigorously and strain into the glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderflower Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "968d4e6e32cb2841e914afa4c0fe406ef393f03fa20ec724eb9fddfc4c6cd140",
+    "lineage_hash": "3ca8cf2f82fc3c53e70c697d7f5ce359c0729f47cc575ed41dcc24eaaafaf08a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cucumber-basil-margarita/",
+    "fetchedAt": "2026-08-04T00:35:30.620Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cucumber-basil-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

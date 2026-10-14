@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-sea-salt-brownie-recipe",
+  "slug": "chocolate-and-fudge-brownies-recipe_greatbritishchefs_d6ac0af6",
+  "title": "Chocolate and Fudge Brownies Recipe",
+  "byline": "by Massimo Spigaroli",
+  "fetchedAt": "2026-08-03T15:13:16.307Z",
+  "ldName": "Chocolate, fudge and Cornish sea salt brownies",
+  "ldTime": "PT55M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Petit four",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "225g of unsalted butter",
+    "275g of 70% bitter chocolate",
+    "400g of caster sugar",
+    "5 eggs",
+    "200g of plain flour",
+    "100g of fudge, chopped",
+    "10g of Cornish sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Begin the brownies by preheating the oven to 150°C/gas mark 2",
+    "In a bain marie, melt the butter, chocolate and sugar over simmering water",
+    "Meanwhile, in a separate bowl, whisk the eggs until light and foamy",
+    "When the chocolate mixture is melted, carefully fold it into the eggs",
+    "Sieve the flour and fold it into the chocolate mix. Add in the chopped fudge and the sea salt",
+    "Pour the batter into a greaseproof paper-lined baking tray and bake for 20 minutes, or until the brownies are cooked so that they are set but still slightly soft in the middle",
+    "Remove from the oven and cool. Once cool, cut into desired shapes and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

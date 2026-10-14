@@ -1,0 +1,254 @@
+{
+  "recipe": {
+    "name": "Cheese Grits With Jerk Pork",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Note: You’ll need to start this recipe at least a day in advance.",
+      "To make the pork: In a large measuring cup, combine the rum, brown sugar, soy sauce, salt, molasses, Worcestershire, ginger, allspice, and cinnamon with 3 1/2 cups [840 ml] of water. Stir until the salt and sugar dissolve. Put the pork in a large bowl and pour the brine over the pork. Cover with plastic wrap and refrigerate for at least 4 and up to 6 hours.",
+      "To make the marinade: In a blender, purée the orange juice, rum, onion, vinegar, olive oil, peppers, garlic, thyme, lime juice, and brown sugar. Remove the pork from the brine and pat dry. Discard the brine. Using a fork or knife, poke holes in the pork butt and pour the marinade over the top. Cover and refrigerate the pork for 24 hours. Prepare a grill for indirect cooking over medium-low heat, 325°F [165°C]. Remove the pork from the marinade (reserve the marinade) and place on the cool side of the grill with the fat cap facing up. Cover the grill and cook, basting every 30 minutes with the reserved marinade, for roughly 2 1/2 hours, or until the internal temperature reaches 190°F [90°C] in the center and the juices run clear. Remove from the grill and let cool slightly.",
+      "To make the grits: In a medium saucepan over medium-low heat, combine the broth, milk, butter, and garlic powder (the liquid should have some flavor before adding the grits). Bring to a simmer. Increase the heat to medium-high and gradually add the grits, whisking continuously. Whisk until the grits are smooth and creamy but still toothsome, about 30 minutes. You can add more milk if they get too thick. Turn off the heat, add the cheese, and whisk in until combined. Season with salt and set aside, covered, until ready to use. When the pork is cool enough to hand shred, place some on top of a bowl of cheese grits, and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rum",
+        "unit": "C",
+        "notes": "120 ml",
+        "amount": "½",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "50 g",
+        "amount": "¼",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced fresh",
+        "amount": "1",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Shoulder",
+        "unit": "lb",
+        "notes": "bone-in",
+        "amount": "5",
+        "section": "Pork and Brine",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": "720 ml",
+        "amount": "3",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "C",
+        "notes": "240 ml",
+        "amount": "1",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "1",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Scotch Bonnet Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "crushed",
+        "amount": "4",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Jerk Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "480 ml",
+        "amount": "2",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "480 ml, plus more as needed",
+        "amount": "2",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "55 g",
+        "amount": "4",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Stone-ground Grits",
+        "unit": "C",
+        "notes": "140 g",
+        "amount": "1",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "C",
+        "notes": "120 g, shredded",
+        "amount": "1½",
+        "section": "Cheese Grits",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Cheese Grits",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3d74bcf6aabd97e737183cfebd092af19e6881b53f82fb60063ad5273d74c244",
+    "lineage_hash": "44dd3a1d8bf19d0190000c3bdc867959817e6d6a434b517ccb8e8e0143a9b137"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cheese-grits-with-jerk-pork/",
+    "fetchedAt": "2026-08-03T21:05:21.219Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cheese-grits-with-jerk-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

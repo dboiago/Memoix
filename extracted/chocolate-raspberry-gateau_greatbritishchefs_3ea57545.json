@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chocolate raspberry gateau",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "175°C/gas mark 4. Grease and line two cake tins measuring 20cms/8”. (Or one cake tin of the same diameter, but deeper)",
+      "Whisk all of the cake ingredients together, except the hot water, until light and fluffy for at least 3 minutes. Then add the hot water and whisk again for 3 minutes until the cake mixture is extremely light and fluffy",
+      "Divide the cake mixture between the two prepared cake tins (or one cake tin if using) and bake for 20 to 30 minutes, or until the cakes are firm to touch and well risen (You can also check by inserting a skewer into the middle of the cakes, and if the skewer is clean when taken out, the cakes are cooked)",
+      "Allow the cakes to cool in the tin for a few minutes, before carefully turning them out on to a wire cooking rack. Allow to cool completely before filling and icing with buttercream, cream and raspberries",
+      "Meanwhile, make the icing/frosting. Sit a bowl over a pan of simmering water and add the chocolate and cream to the bowl and gently melt, stirring all the time until the chocolate and cream are blended and smooth",
+      "Remove the chocolate and cream from the heat. Add the butter to the hot chocolate and cream mixture and stir it until smooth. Sift in half the icing sugar and mix well, add the remaining icing sugar and mix until very creamy and smooth. Set aside to cool until thickened",
+      "When you are ready to ice and fill the cakes, spread half of the icing/frosting (or the whipped cream) over one of the cakes, add three quarters of the raspberries and then place the other cake on top",
+      "Gently swirl the rest of the icing/frosting over the top of the cake, pipe it on if you wish, and then scatter the rest of the raspberries over the icing on the top of the cake. Sprinkle with cocoa. You can also add jam to the filling; cherry jams are lovely, or add some fresh fruit to the filling as well as decorating with fresh fruit on top",
+      "Serve in thin slices with tea or coffee"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drinking Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "hot but not boiling",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "fresh or frozen",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": "to sprinkle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9bcd074b788e73a79366b2f7aaffb04f9ca8df11e5aece90f3dfe7bf78860783",
+    "lineage_hash": "ef841e477b46f5604b5f52e7743e4f55fbefcd74f1cf740639d7ef44a372bb4b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-raspberry-gateau-recipe",
+    "fetchedAt": "2026-08-03T22:51:30.272Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-raspberry-gateau-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

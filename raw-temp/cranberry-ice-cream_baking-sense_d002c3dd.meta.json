@@ -1,0 +1,62 @@
+{
+  "url": "https://www.baking-sense.com/2023/11/21/cranberry-ice-cream/",
+  "slug": "cranberry-ice-cream_baking-sense_d002c3dd",
+  "title": "Cranberry Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T01:45:21.263Z",
+  "ldName": "Cranberry Ice Cream Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "ice cream",
+  "ldIngredientsRaw": [
+    "1  large orange",
+    "12 oz cranberries (fresh or frozen)",
+    "12 oz granulated sugar (1 ½ cups, divided)",
+    "1  cinnamon stick",
+    "12 oz heavy cream (1 ½ cups)",
+    "5  egg yolks",
+    "6 oz white chocolate chips (1 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Use a potato peeler to peel strips of zest from 1&#32;large orange, trying not to get too much of the white pith. Juice the orange. You should get about 1/2 cup of juice.",
+    "Combine 12 oz&#32;cranberries, orange zest and juice, half of the sugar and 1&#32;cinnamon stick in a small saucepan. Cook over medium heat until the mixture comes to a boil. Cook about 5 minutes until most of the berries have popped and the juice is boiling thickly. Transfer the berries to a bowl and set it aside to cool.",
+    "In the same pan, heat 12 oz&#32;heavy cream over medium high heat until scalding hot. While the cream heats up, whisk 5&#32;egg yolks with the rest of the sugar in a small bowl.",
+    "Once the cream is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+    "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a full boil. Remove from the heat and strain the custard back into the bowl from the yolks. Remove the orange zest and cinnamon stick from the cranberries then stir them into the custard.",
+    "Cover the bowl and chill until very cold. At least 4-5 hours or over night. This makes a fairly large batch so if you have a smaller ice cream maker you might want to run 2 batches. Freeze according to the directions for your ice cream machine. Just before removing the ice cream from the machine, add the white chocolate chips.",
+    "Scoop the ice cream into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface, cover tightly and freeze until firm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "8 g",
+    "calories": "325 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "3 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "116 mg",
+    "sodiumContent": "25 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "40 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "1 large orange",
+    "12 oz cranberries (fresh or frozen)",
+    "12 oz granulated sugar (1 ½ cups, divided)",
+    "1 cinnamon stick",
+    "12 oz heavy cream (1 ½ cups)",
+    "5 egg yolks",
+    "6 oz white chocolate chips (1 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

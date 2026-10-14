@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Dhaba Style Aloo Rasedar",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "192",
+      "carbohydrateContent": "6",
+      "fatContent": "6",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Press the saute button on the Instant Pot. Once it displays hot, add the ghee and then add the cumin seeds and methi seeds. Let them sizzle for few seconds and then dried red chilies and hing.",
+      "Stir and then add the chopped ginger and green chili. Saute for 1 minute.",
+      "Then add the pureed tomatoes and mix well.Add the spices- coriander powder, turmeric, kashmiri red chili powder, amchur, fennel powder. Cook for 1 minute.",
+      "Add the diced potatoes and stir. Then add the salt and mix.",
+      "Add water and stir and close the pot with the lid.",
+      "Press the manual or pressure cook button and cook on high pressure for 3 minutes with the pressure valve in the sealing position. Let the pressure release naturally for 4 minutes and then do a quick pressure release.",
+      "Open the lid and press the saute button. Then with a potato masher lightly mashed the potatoes.You don't have to mash them completely, just slightly crushed as shown in the picture.",
+      "Add kasuri methi and garam masala. Simmer on saute for 2 minutes, the curry will thicken as it simmers. You can add more water here if you want to thin out the curry a little. I did add 2 tablespoons extra water here. Garnish with cilantro and serve aloo rasedar with kachori or puri!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Methi Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "chopped, adjust to taste, add more for spicier version",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "pureed, 350 grams, make the puree using a blender",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "500 grams, cut into 1/2 inch pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "12 oz + more as needed later on",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kasuri Methi",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a67a3cd1ccb8e122967e3b1237b562609cb68421648b66c4752f5083e5c91a5",
+    "lineage_hash": "2606b17d4df57da9be7ab0182d8cf1221a78c02049bd1cd6dcaedcdc6f406ba7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dhaba-style-aloo-rasedar-instant-pot/",
+    "fetchedAt": "2026-08-01T23:52:58.788Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dhaba-style-aloo-rasedar-instant-pot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,129 @@
+{
+  "recipe": {
+    "name": "Crimson Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Double Rocks",
+    "garnish": [
+      "Blood Orange Crescent",
+      "Lemon Wheel"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the sweet vermouth, lemon juice, blood orange juice, cacao-infused Campari, and syrup in a shaker. Add ice and give it a short shake. Strain into a double rocks glass over crushed ice. Top with more ice and snow-cone it. Garnish with a blood orange crescent and lemon wheel. Serve with a straw.",
+      "Cacao Nib Campari\nPreheat the oven to 350°F. Meanwhile, fill a basin with water and set an immersion circulator to 130°F. Spread the cacao nibs in a single layer on a baking sheet. Toast until fragrant and dark brown, 3 to 4 minutes. Let cool. Combine with the Campari in a sealable, heatproof silicone bag, making sure to push out all the air. Once the circulator has reached the desired temperature, place the sealed bag in the water bath. Let cook for 2 hours. Once done, transfer the infusion to an ice bath until it reaches room temperature. Strain through a chinois. Rebottle and store in the fridge for up to 2 weeks.",
+      "No sous vide? In a large sealable container, combine the cooled toasted cacao nibs with the Campari. Cover and let sit for 24 hours. Strain through a chinois.",
+      "Vanilla Syrup\nIn a medium bowl, combine the syrup, vanilla extract, lactic acid, and salt. Using a whisk, combine until the lactic acid and salt are dissolved. Store in a sealed container in the fridge for up to 4 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Full-bodied Sweet (red) Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nib Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Bottle Campari",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cacao Nib Campari",
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "g",
+        "notes": "1:1",
+        "amount": "500",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Tahitian Vanilla Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Lactic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Vanilla Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "60967e03fed194aa0879d3d4ad716be17dbbd2188f8631adbf3a7b83caae2321",
+    "lineage_hash": "66df3910a918150e24a9404ebe9c0d8d4c59b397830ee92ae9a176b704a3be87"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/crimson-sour-low-abv-holiday-cocktail/",
+    "fetchedAt": "2026-08-03T21:16:11.732Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/crimson-sour-low-abv-holiday-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

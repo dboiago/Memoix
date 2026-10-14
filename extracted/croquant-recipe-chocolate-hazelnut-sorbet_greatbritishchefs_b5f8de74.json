@@ -1,0 +1,267 @@
+{
+  "recipe": {
+    "name": "Croquant Recipe, Chocolate Hazelnut & Sorbet",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the croquant base, whisk the egg whites and sugar together, fold in the ground almonds and icing sugar, then spread into deep trays and sprinkle with the hazelnuts. Bake for 10–15 minutes at 160°C, then leave to cool",
+      "Melt together the butter, praline, chocolates and cream. Add the hazelnuts and then the cornflakes and spread on the cold base",
+      "To make the sorbet, bring the milk, butter, syrup and glucose to the boil and add the popcorn. Leave to infuse for 2 hours",
+      "Pass through a sieve and cool. Put the set butter into an ice cream maker and churn",
+      "To make the chocolate sauce for plating, break the chocolate into small pieces and cut the butter into small pieces also. Place all of the ingredients together in a saucepan and heat over a low heat, stirring continuously. Once all the ingredients have melted and blended together, remove from the heat and transfer to a piping bag with a thin nozzle",
+      "To make the raspberry coulis, simmer the fruit with the caster sugar and 4 tablespoons of water until the fruit bursts. Cool, then whizz in a food processor with the vanilla extract. Strain",
+      "Lastly, start the sugar work for plating. Put the sugar, hot water and lemon juice in a very clean saucepan, place over a low heat and use a spoon to agitate the sugar so that it dissolves",
+      "Increase the heat to high to begin rapid boiling: you need to boil the sugar syrup down to either a caramel or a 'hard crack' stage which occurs at 155-160°C. Take one whole hazelnut per plate and dip it into the sugar. Leave the cool for a few seconds, then carefully pinch the sugar at the top of the nut and pull, stretching the sugar out",
+      "To plate, pipe some of the chocolate across the plate. Position some droplets of the coulis to one side of the plate. Position a serving of the croquant next to the coulis, and quenelle some sorbet on top. Position the sugared nut next to the croquant and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Hazelnuts",
+        "unit": "g",
+        "notes": "toasted and chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Praline",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Hazelnuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7362b070b72c864bc80d656a4c05944d74def5110327ed65ccaa022c795ca05",
+    "lineage_hash": "6c4d476aa317c243b68af091089b1e5f92ec16f448936ba0f85cfc571400ef1b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/croquant-chocolate-hazelnut-popcorn-sorbet",
+    "fetchedAt": "2026-08-03T20:10:08.377Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/croquant-chocolate-hazelnut-popcorn-sorbet",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

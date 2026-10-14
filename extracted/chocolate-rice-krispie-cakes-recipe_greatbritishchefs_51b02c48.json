@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Chocolate Rice Krispie Cakes",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a baking tray (32 x 23 x 5cm) with baking paper",
+      "Place the chocolate in a bowl and heat on a low power in the microwave - stirring every 45 seconds until completely melted",
+      "Stir in the crème fraîche, zest of 2 oranges and the Rice Krispies. Allow to cool slightly",
+      "Gently stir in the popping candy. Pour onto the lined tray",
+      "Use the back of a large spoon to spread evenly onto the tray and while still soft sprinkle with the zest of the 3rd orange and the grated white chocolate",
+      "Place in the fridge to set for a minimum of 2 hours before cutting into bite-size squares and serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Cooking Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Krispies",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popping Candy",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3db205fd9da7e37225c350d9ab8e6c2d71e4640b6b574381f0ae1c7cb7e8cd96",
+    "lineage_hash": "056543dfb96a119810848b73b4c629dfc9d9ed13b8f625a28fb5f64132fb433c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-rice-krispie-cakes-recipe",
+    "fetchedAt": "2026-08-03T12:17:35.315Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-rice-krispie-cakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

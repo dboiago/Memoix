@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Dutch Oven Apple Cranberry Crisp",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Streusel. Combining the flour, sugar, and cinnamon. Beat the egg, add it and mix until crumbly.",
+      "Make the compote. Coat the inside of the Dutch oven with butter, but not the inside of the lid. Make the compote by peeling the apples, cutting them in quarters, and removing the cores. Then cut the apples into slices about 1/4\" (6.3 mm) thick, and drop them into a mixing bowl. Dump in the cranberries, flour, and the sugar. Scrape the zest off the lemon and add that. Then squeeze in the juice of the lemon (watch for seeds). Add the cinnamon and the salt. Pour the compote into the Dutch oven and top with the crumble. Pour the melted butter over the crumble.",
+      "Fire up. Start a chimney of about 36 charcoal briquets (half a Weber chimney). Wait til the get hot and are coated with white ash. Pour about 12 white briquets on the ground or on the charcoal grate of your grill and arrange them in a circle the same width of your Dutch oven.",
+      "Cook. Place the Dutch oven on top of the coals and place the lid on the pot. Add another 18 to 24 hot briquets to the top of the lid. Bake for about 45 minutes or until you see the juices bubbling. Take the lid off, let it cool for about 20 minutes (this is the hardest part of the recipe, not burning your mouth because you are impatient).",
+      "Serve. Scoop fruit and topping into bowls and top with whipped cream, sour cream, yogurt, or ice cream. Or nothing! Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Firmly Packed Brown Sugar",
+        "unit": "C",
+        "notes": "light or dark",
+        "amount": "¾",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "4",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Ingredients For The Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Butter to Coat the Pot",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Firm Baking Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Fresh",
+        "unit": "C",
+        "notes": "alt: frozen cranberries or other fruit like blueberries",
+        "amount": "2",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Ingredients For The Compote",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7694eb86dde2f7c7fb46e8e5017b60b32e1e0771544f5c8917d079a328a6b843",
+    "lineage_hash": "46f486da1ae2455b162999ceabba313f9850e4394533ec7fcc62a7512e6a192d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/dessert-recipes/dutch-oven-apple-cranberry-crisp-recipe/",
+    "fetchedAt": "2026-08-02T03:24:42.944Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/dessert-recipes/dutch-oven-apple-cranberry-crisp-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

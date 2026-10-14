@@ -1,0 +1,29 @@
+{
+  "url": "https://www.bongeats.com/recipe/chaler-attar-rooti",
+  "slug": "chal-er-atta-r-rooti-recipe-by-bong-eats_bongeats_8909ffe1",
+  "title": "Chal'er Atta'r Rooti recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:53:04.086Z",
+  "ldName": "Chal&#39;er Atta&#39;r Rooti",
+  "ldTime": "PT3H",
+  "ldPrepTime": "PT2H",
+  "ldCookTime": "PT1H",
+  "ldYield": "13",
+  "ldCuisine": "Indian",
+  "ldCategory": "main",
+  "ldKeywords": "chaler atar ruti, chita ruti, rice flour chapati, how to make round rotis",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "106"
+  },
+  "htmlIngredientLines": [
+    "350 g rice flour (made from non-parboiled, aatop rice) + extra for dusting",
+    "775–800 ml hot water",
+    "8 g salt"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

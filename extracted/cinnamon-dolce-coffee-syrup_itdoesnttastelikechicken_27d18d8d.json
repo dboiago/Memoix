@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "name": "Cinnamon Dolce Coffee Syrup",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "51",
+      "carbohydrateContent": "13",
+      "fatContent": "0.04",
+      "proteinContent": "0.02"
+    },
+    "directions": [
+      "Add the water, white sugar, brown sugar, and cinnamon sticks to a small saucepan. Bring to a gentle boil and cook for 10 minutes without stirring. Remove from the heat then stir in the vanilla extract. Allow the syrup to cool then transfer to a sealable bottle or jar to store the syrup in. I like to put the cinnamon stick in the jar along with the syrup as the cinnamon flavor will continue to infuse in the syrup the longer it sits. It also looks pretty! The syrup can be stored at room temperate or in the fridge for up to 6 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebb743cc58c464a098ca48336232decd53dd7f08db703bc77ec0cb55d187eab8",
+    "lineage_hash": "82db88db2c3b8b50a5179b4680faca68dd8fea20c46cf3f1cd4d89ee0d016445"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/cinnamon-dolce-coffee-syrup/",
+    "fetchedAt": "2026-08-02T02:56:18.130Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/cinnamon-dolce-coffee-syrup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

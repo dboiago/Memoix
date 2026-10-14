@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Baked Vegetable Jalfrezi Lasagna",
+    "time": "2 hr 25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the oil and fry the onions, ginger-garlic paste until they turn light pink.",
+      "Add the capsicum and tomatoes and fry again for 2 minutes.",
+      "Add the vegetables, chilli powder, garam masala, coriander and salt and cook for a few minutes.",
+      "In baking tray spread lasagna sheets and spread tomato gravy then vegetables & crumbled paneer.",
+      "Make 2 layers like this and sprinkle a little crumbled paneer over it.",
+      "Bake in a hot oven at 200Â°C for 10 minutes.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mixed Boiled Vegetable",
+        "unit": "C",
+        "notes": "carrots, French beans, cauliflower, green peas, chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "Tbsp",
+        "notes": "crumbled low fat, plus a little extra for topping",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lasagna Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2adba10ab5cbc1c0cd96629c9b370a4980601ecb5af931be3eff3186876e7d3f",
+    "lineage_hash": "09b512bb0a94bb0d7012827d7ccb7958069432ce863ca19c396864228cc75276"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/baked-vegetable-jalfrezi-lasagna/",
+    "fetchedAt": "2026-08-02T09:24:59.213Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/baked-vegetable-jalfrezi-lasagna/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

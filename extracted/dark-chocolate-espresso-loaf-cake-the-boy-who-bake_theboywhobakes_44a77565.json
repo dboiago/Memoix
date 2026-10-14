@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Dark Chocolate Espresso Loaf Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180C (160C Fan) and lightly grease a 2 lb loaf pan, lining with parchment paper. This is a large sized loaf pan, if the one you have is smaller (a 1lb / 450g sized pan is very common) you can happily half the recipe, or use the excess batter to make cupcakes.",
+      "In a large bowl beat together the butter and sugar, for about 5 minutes or until light and fluffy. Add the vanilla and beat for a few seconds to combine. Add the egg one at a time, making sure you’re beating fully between each addition.",
+      "Meanwhile mix together the flour, almonds, cocoa powder, baking soda and salt, then pass it through a fine mesh sieve to remove any lumps of cocoa. Add the dry goods to the butter mixture in three additions, alternating with sour cream. Finish by mixing in the hot coffee, until you have a smooth cake batter.",
+      "Scrape the finished batter into the prepared loaf pan, gently smoothing out the top. Bake in the preheated oven for about 50 minutes or until a skewer inserted into the middle of the cake comes out clean.",
+      "Allow the cake to cool in the loaf pan for about 15 minutes before transferring to a wire rack to cool completely.",
+      "For the glaze place all of the ingredients into a large bowl and set over a pan of simmering water. Heat, stirring occasionally, until everything has melted and you have a smooth silky ganache.",
+      "Pour the ganache over the cooled cake, allowing it drip down the sides of the cake. Set aside for about an hour or so until the ganache has a chance to set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doves Farm Organic Stoneground Wholemeal Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Coffee",
+        "unit": "ml",
+        "notes": "see note",
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0eb80872ab7bdaa4d9df68de2334b9fce128de6bb275a239848dcff39f416654",
+    "lineage_hash": "46df5255894d09aa7dd36971d8020d7a2941c3c5659c45991704f1f48f83c70e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2019/4/18/dark-chocolate-espresso-loaf-cake",
+    "fetchedAt": "2026-08-01T19:24:09.448Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2019/4/18/dark-chocolate-espresso-loaf-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

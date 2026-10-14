@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Almond Paste Lemon Poppy Seed Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180C (160C fan) and lightly grease, and line with parchment paper, a 9x5 inch loaf pan.",
+      "For the batter mix together the flour, baking powder, salt and poppy seeds, setting aside for the moment.",
+      "Add the almond paste, in small pieces, into the bowl of a stand mixer and mix on low speed, with the paddle attachment, for a few minutes to soften.",
+      "Add in the sugar a little bit at a time, mixing until the almond paste breaks down into a coarse crumbly mixture.",
+      "If you do this stage too quickly and not allow the almond paste to break down into a coarse crumb, you risk the finished batter having lumps.",
+      "Add the butter a couple pieces at a time.",
+      "Once all of the butter has been incorporated and a paste like texture has formed, add the lemon zest and up the speed to medium and cream together for about 5 minutes or until the mixture is pale and fluffy.",
+      "Adding the lemon zest at this stage rather than folding in with the dry ingredients helps to draw out the oils making the finished cake more flavourful.",
+      "Add the eggs one at a time, beating until fully combined before adding another.",
+      "Once all the eggs have been mixed in remove the bowl from the mixer, add in the dry goods and mix by hand until evenly combined.",
+      "Scrape the finished batter into the prepared loaf pan and bake in the preheated oven for about 45-50 minutes or until the cake springs back to the touch or a skewer inserted into the middle of the cake comes out clean.",
+      "Allow the cake to cool in the pan for 10-15 minutes whilst you make the simple syrup.",
+      "To make the syrup juice 2 lemons and add the same amount of sugar, by weight, to a saucepan along with the juice. Cook over medium heat for a couple minutes or until the juice has come to a simmer and the sugar has dissolved. Turn off the heat and set aside.",
+      "Carefully turn the cake out onto a wire rack set over a sheet pan or a piece of parchment. I like to use this cake upside down but do as you prefer.",
+      "Using a skewer or toothpick prick the cake all over and then brush the syrup all over the top and sides of the cake.",
+      "Allow the cake to cool fully before glazing.",
+      "To make it slice off the top and bottom of the lemon and then cut into wedges. Carefully slice away the flesh of the fruit leaving just the pith and peel. cut each wedge into thin strips.",
+      "Place the strips of lemon peel into a saucepan and cover with cold water. Bring to a boil and cook for 5 minutes, then drain off the water and repeat with about 750ml water, simmering for 30 minutes this time.",
+      "Drain the water as before but rather than discarding we need to measure how much we are left with. Add the water back into the pan with an equal amount of sugar, by weight, along with the peel (for me this meant roughly 350g sugar). This time we want to simmer the mixture for about 20-25 minutes or until the peel becomes slightly translucent, meaning it has absorbed enough of the syrup is properly candied.",
+      "During this process be careful not to cook the peel too long as it will become too soft, losing any texture, I like mine to still have a little bite.",
+      "Strain off the syrup (keep for when you need a simple syrup - great for cocktails) and allow to cool for a couple minutes.",
+      "Toss the pieces of peel in a bowl of sugar, making sure to coat fully then place onto a wire rack to cool completely.",
+      "Once fully cooled store in a sealed container in a dark cool spot.",
+      "For the glaze mix the juice of 1 lemon with just enough icing sugar to form a thick but pourable glaze, adding a pinch of salt to balance out the sweetness a little.",
+      "Pour the glaze onto the top of the cake and use a spoon to tease it over the edges so it drips down the side.",
+      "Top the cake with some of the candied peel (it makes more than you need but if your going to go to the lengths to actually make some you might as well make a little extra).",
+      "Finish with a little sprinkling of poppy seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tablespoons Poppy Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "225",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Almond Paste Cake Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Lemon Simple Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Lemon Simple Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Candied Lemon Peel",
+        "isOptional": false
+      },
+      {
+        "name": "Water Caster Sugar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": "Candied Lemon Peel",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": "Lemon Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Lemon Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2d6a12bb6a5b7556240ac868f5076e319100d38fac19aba379c052ef7fd73ae2",
+    "lineage_hash": "e2b6922b33aa24f775c9f03de0f1287eca40000630f8c9f5eaff3bb2c3afc887"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2019/3/22/almond-paste-lemon-poppy-seed-cake",
+    "fetchedAt": "2026-08-01T19:29:58.667Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2019/3/22/almond-paste-lemon-poppy-seed-cake",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Asian Spicy Cucumber Salad",
+    "time": "20 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "177",
+      "carbohydrateContent": "5",
+      "fatContent": "17",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Place a pair of chopsticks and then add the cucumber in the middle. Hold the knife perpendicular to the chopsticks, then start slicing from one end of the cucumber to the other, stopping when you reach the bottom chopstick. You can cut the cucumber into smaller sections for better serving or leave it as a fun to break them when eating.",
+      "Place the cut cucumbers in a bowl and sprinkle with 1/2 tsp salt. Mix well. Let sit for 10 minutes. This salt treatment will draw out excess moisture.",
+      "Gently squeeze the cucumber to remove the extra liquid.",
+      "Combine the minced garlic, chili flakes, sugar, soy sauce, vinegar, and sesame oil in a small bowl.",
+      "Heat 1 tbsp cooking oil in a small pan or wok until smoky hot. Carefully pour the hot oil over the garlic and dried chili pepper. The hot oil will help release the aromas of the seasoning mix.",
+      "Pour the mixed sauce to serving plate. Serve immediatly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Persian Cucumber",
+        "unit": null,
+        "notes": "alt: 1 Japanese or English Cucumber",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Minced",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper Cut Into Sections",
+        "unit": null,
+        "notes": "or you can choose to use pepper flakes, dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Oil Heat Until Smoky",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "! Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05f0777e2947d11a04f2bb279dbea398375fe495345d8b30422da85dc14960ff",
+    "lineage_hash": "53fe0fb54a3ba4c8edd35913f1ca589b1c688cab1d2ef1651a531d72964c1e46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/asian-spicy-cucumber-salad/",
+    "fetchedAt": "2026-08-02T08:50:01.960Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/asian-spicy-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cider-Molasses Barbecue Sauce",
+    "time": "1 hr 30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan, heat the canola oil over medium heat. When the oil is hot, add the onion and cook, stirring, until lightly caramelized, about 15 minutes. Add 2 tablespoons water to the pan and use a wooden spoon to scrape up the browned bits from the bottom of the pan. When the water has cooked off, add the garlic and chile powder and cook, stirring frequently, for 2 minutes more, then add the chopped tomatoes and tomato paste, reduce the heat to low, and cook, stirring frequently, for 4 to 5 minutes more.",
+      "Add the cider, stock, vinegar, brown sugar, and molasses. Bring the mixture to a boil, then reduce the heat to low and simmer, stirring occasionally, until the sauce has thickened and has the texture of ketchup, about 30 minutes.",
+      "Working in batches, carefully transfer the sauce to a blender and puree until smooth (alternatively, you can blend the sauce directly in the pot using an immersion blender). If the sauce is too thick, thin it with an extra splash of stock; if it’s too thin, return it to the pot and cook over low heat until it reaches the desired consistency.",
+      "Season the sauce with salt and pepper and strain through a fine-mesh strainer into a clean bowl, pushing the sauce through the strainer with a rubber spatula.",
+      "The sauce can be used immediately or transferred to a lidded jar and refrigerated for up to 2 weeks. Warm the sauce over low heat before using it on the wings or brushing it onto grilled chicken or pork chops."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canola Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "medium",
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Chile Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": "lb",
+        "notes": "halved, seeded, and chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "plus more as needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Dark Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackstrap Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d6c45437410b952520f55406d08b918d13cde7af946a9b8e2c1613e21704dd3",
+    "lineage_hash": "ad56e4ad6062bf625aca374bc40ea64562f481ed9ae90f46a91e064723d3a600"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cider-molasses-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T05:19:13.121Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cider-molasses-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

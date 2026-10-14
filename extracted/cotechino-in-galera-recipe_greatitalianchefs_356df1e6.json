@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cotechino in Galera",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Gently pierce the cotechino all over with a toothpick. Place into a pot and cover with cold water. Set over a very low heat and bring to a simmer. Cook for 2 hours, making sure the simmer does not grow into a boil",
+      "Remove the cotechino from the water and leave until cool enough to handle. Peel off the casing. Lay out the beef rump over a work surface – it should be wide and long enough to completely cover the cotechino. Top the beef with the prosciutto slices, then place the cotechino in the centre. Wrap the cotechino with the meat and tie with cooking twine",
+      "Heat the oil in a deep pan over a medium heat. Add the cotechino and brown on all sides, then pour over the wine. Lower the heat, cover and cook for about one hour, turning halfway through. At the end you should be left with a thin layer of glistening cooking juices in the bottom of the pan",
+      "Cut off the twine, slice and serve with the leftover juices alongside mashed potatoes or lentils"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cotechino",
+        "unit": null,
+        "notes": "not parboiled, weighing approximately 600g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Rump",
+        "unit": "slice",
+        "notes": "weighing approximately 400g, pounded out and flattened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosciutto Crudo",
+        "unit": "g",
+        "notes": "thinly sliced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Wine",
+        "unit": "ml",
+        "notes": "ideally Lambrusco",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ab0406e5debf1adbf39f3f712fccaa54d397dc17c9e3c01b69706e31cb8e62c2",
+    "lineage_hash": "7606c283650219f473133b8d0420b606446302b9f657c8ebc03fe13a3c0d4cb7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cotechino-in-galera-recipe",
+    "fetchedAt": "2026-08-01T18:42:16.250Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cotechino-in-galera-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

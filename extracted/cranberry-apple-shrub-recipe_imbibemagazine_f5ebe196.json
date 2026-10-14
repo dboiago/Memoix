@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Cranberry-Apple Shrub",
+    "time": "24 hr 10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Use a muddler or wooden spoon to crush the cranberries. Combine all ingredients in a saucepan over medium heat. Bring to a simmer and let cook for 10 minutes; remove from the heat, cover, and let steep 24 hours at room temperature. Strain through a fine-mesh strainer and bottle for use. Store in refrigerator, and use within two months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fuji Apples",
+        "unit": "oz",
+        "notes": "peeled, chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple-cider Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ec15806171be5f1db7891dfe0c78c97ba5584ea7d51800cf55f1daafaac2eab",
+    "lineage_hash": "be5c9340bbea27d6d7609cfed1ac3a82e1fa31a4b1da2ec47a4cbaa13ea0486c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cranberry-apple-shrub/",
+    "fetchedAt": "2026-08-03T18:39:08.932Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cranberry-apple-shrub/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

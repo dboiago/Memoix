@@ -1,0 +1,205 @@
+{
+  "recipe": {
+    "name": "Dim Sum Tripe Stew",
+    "time": "1 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "167",
+      "carbohydrateContent": "10",
+      "fatContent": "7",
+      "proteinContent": "15"
+    },
+    "directions": [
+      "Thoroughly rinse the tripe under cold running water. In your wok, add the tripe, water, salt, ginger, scallion, and shaoxing wine. Place it over high heat until the water comes to a boil. Turn off the heat and let it sit for 5 minutes. Remove the tripe from the wok and rinse with cold water. Put in a colander to drain. This step \"cleans\" the tripe and makes the flavor a little bit more mild.",
+      "After the tripe has cooled, cut it into 1 1/2 x 2 1/2 inch pieces. In Dim Sum restaurants that serve this dish, this is generally the minimum size because the tripe will shrink further as it cooks. But you can really cut whatever size you prefer.",
+      "Heat a large pot over medium high heat and add the oil, ginger slices, and star anise. Let it cook for about 30 seconds. Turn the heat to high and immediately add the tripe. Cook, stirring constantly, for about 2 minutes. Add the shaoxing wine and stir another 30 seconds.",
+      "Next, add soy sauces, brown sugar, water, sesame oil and white pepper. Stir until everything's combined. Bring the mixture to a boil and turn it down to a simmer. Cook for 20 minutes, stirring frequently. Cook the beef tripe a bit longer if you like your tripe more tender but Chinese like the tripe in this dish a little bit chewy.",
+      "Add the turnips and continue to cook for another 20 minutes or until the turnips are tender. If you like the turnips softer, then you can certainly cook them a bit longer. Taste for seasoning, and if it needs more salt, then add some now.",
+      "To finish the dish, turn the heat to medium high until the liquid comes to a boil. Stir in the cornstarch slurry and the white parts of the chopped scallions. Mix well for 30 seconds, until thickened slightly. Serve, garnishing with the rest of the scallions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Honeycomb Beef Tripe",
+        "unit": "lb",
+        "notes": "900g, fresh",
+        "amount": "2",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": "1.9L",
+        "amount": "2",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "smashed",
+        "amount": "2",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "cut into 2-inch pieces and smashed with the cleaver or knife",
+        "amount": "1",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stage 1",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "smashed",
+        "amount": "3",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": null,
+        "notes": "about 1.5 pounds, cut into 1 1/2 inch cubes",
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "mixed into a slurry with 1 tablespoon water",
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Stage 2",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "170ab9015c1bdcaccfb8355c47d9525afe129332d32adc43564a10f33f34a323",
+    "lineage_hash": "e961f7a57a392e07453fb18f67268e5c5be1da446d7ed99bb4e4643cb045e327"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/dim-sum-tripe-stew/",
+    "fetchedAt": "2026-08-02T02:55:05.348Z"
+  },
+  "rawSource": "https://thewoksoflife.com/dim-sum-tripe-stew/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

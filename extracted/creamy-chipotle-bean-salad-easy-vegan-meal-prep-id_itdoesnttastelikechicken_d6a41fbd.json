@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Creamy Chipotle Bean Salad",
+    "time": "15 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "256",
+      "carbohydrateContent": "41",
+      "fatContent": "7",
+      "proteinContent": "11"
+    },
+    "directions": [
+      "Make the dressing: In a small bowl or jar, whisk together the vegan mayonnaise, lime juice, minced chipotle pepper, maple syrup, smoked paprika, garlic powder, and salt until smooth and creamy.",
+      "Assemble the salad: In a large bowl, add the black beans, kidney beans, white beans, corn, cherry tomatoes, bell pepper, red onion, and cilantro.",
+      "Toss everything together: Pour the dressing over the salad and toss well until everything is evenly coated.",
+      "Serve or chill: Serve right away, or cover and refrigerate for at least 30 minutes to let the flavors meld.",
+      "Before serving: Give the salad a good stir and garnish with extra cilantro if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Beans",
+        "unit": "can",
+        "notes": "15.5 oz / 439 g, or 1½ cups cooked, drained and rinsed",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Kidney Beans",
+        "unit": "can",
+        "notes": "15.5 oz / 439 g, or 1½ cups cooked, drained and rinsed",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "White Kidney Beans",
+        "unit": "can",
+        "notes": "alt: cannellini beans, 15.5 oz / 439 g, or 1½ cups cooked, drained and rinsed",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Kernels",
+        "unit": "can",
+        "notes": "11 oz / 312 g, or 1¾ cups frozen and thawed, drained",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "C",
+        "notes": "halved",
+        "amount": "2",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": "large",
+        "notes": "red, orange, or yellow, chopped",
+        "amount": "1",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "plus more for garnish, fresh, chopped",
+        "amount": "⅓",
+        "section": "salad",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Pepper in Adobo Sauce",
+        "unit": null,
+        "notes": "finely minced",
+        "amount": "1",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: agave",
+        "amount": "1",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": "creamy chipotle dressing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "abc7f4f88b22629762c7b2b3ceeee389d247b2afa0e80d4485915699a6d0c76d",
+    "lineage_hash": "9d6402136256ff2d3ae22410ccb7fbdd2578b4d94dbf598751b617288164e874"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-chipotle-lime-bean-salad/",
+    "fetchedAt": "2026-08-02T09:57:26.045Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-chipotle-lime-bean-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

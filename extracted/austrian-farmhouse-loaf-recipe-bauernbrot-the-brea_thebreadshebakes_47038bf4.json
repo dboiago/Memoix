@@ -1,0 +1,116 @@
+{
+  "recipe": {
+    "name": "Austrian Farmhouse Loaf (Bauernbrot)",
+    "time": "3 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a large bowl",
+      "Knead for 10 mins",
+      "Cover and prove for approx. 2 hours",
+      "Give the dough another brief knead",
+      "Divide into two equal parts and shape into two loaves",
+      "Place the loaves on a baking tray lined with baking paper",
+      "Cover with a kitchen towel and rest for another 1.5 hours",
+      "Preheat the oven to 200°C",
+      "Bake for 40 mins at 200°C and for a further 20 mins at 150°C",
+      "Cool on a wire rack"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "100% Hydration Rye Sourdough",
+        "unit": "g",
+        "notes": "prepared the day before",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Spices",
+        "unit": "g",
+        "notes": "Austrian dark breads, Brotgewürz",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lukewarm Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78d161224b9237978e249b90b51f303508fa32391aec9f4072878a28a7269ef1",
+    "lineage_hash": "0afa9e947b35686f1d46a409eeff277f97387b538d043aa24e339e9ab5e9f113"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2014/02/austrian-farmhouse-bread-recipe-bauernbrot/",
+    "fetchedAt": "2026-08-01T17:50:18.356Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2014/02/austrian-farmhouse-bread-recipe-bauernbrot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

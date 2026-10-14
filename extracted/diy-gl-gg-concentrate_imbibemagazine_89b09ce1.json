@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "DIY Gløgg Concentrate",
+    "time": "20 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the citric acid and grape/apple juice concentrate (if using) in a large saucepan. Bring to a simmer, stirring to dissolve the sugar. Cover and simmer for 20 minutes. Remove from the heat. Allow to cool to room temperature, then strain through a fine mesh strainer. Add the citric acid (or lemon juice) and juice concentrate (if using) to the syrup. Store in an airtight container in the fridge for up to two weeks. To use, warm up red wine, then stir in the gløgg concentrate to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "fresh, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Peel",
+        "unit": null,
+        "notes": "peel removed with a vegetable peeler",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "tsp",
+        "notes": "or juice of one lemon",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Juice",
+        "unit": "C",
+        "notes": "alt: apple juice concentrate, optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd2e837b9635e5ed091854e9532f05bde016defceda7f6754e7da77e366b8b2d",
+    "lineage_hash": "3b1400e8529cee274852dc75dd6f54dd8664582e4450ee3b6e9c5fae646af7e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/diy-glogg-concentrate/",
+    "fetchedAt": "2026-08-03T22:48:16.160Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/diy-glogg-concentrate/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

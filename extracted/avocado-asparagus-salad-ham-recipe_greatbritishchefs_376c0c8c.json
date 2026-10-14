@@ -1,0 +1,336 @@
+{
+  "recipe": {
+    "name": "Avocado, Asparagus Salad, Ham",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the avocado purée, blend the flesh of one avocado with the lime juice, water and olive oil until you achieve a smooth purée",
+      "Finely chop the chilli, coriander, spring onions and shallots and drop them into the blender whilst continuously blending",
+      "Scrape down the sides and finely pulse the remaining avocado flesh. Season to taste and set aside. Clean the blender ready for the guacamole",
+      "To make the guacamole, very finely chop the chilli and coriander",
+      "Finely chop the red onion. Add the onion, chilli, coriander and remaining ingredients to the blender until the tomato is chopped. Season to taste. Set aside and clean the blender ready for the lemon dressing",
+      "To make the lemon oil dressing, grind the salt, sugar and lemon peelings in the blender",
+      "Add the rest of the ingredients and blend for 1 minute. Add more sugar if necessary and season to taste. The dressing will keep in a sterilised bottle in the refrigerator for up to three weeks",
+      "To make the salad, brush the croutons with olive oil and bake until golden. Blanch the asparagus spears",
+      "To plate, place a quarter of the guacamole on the top and the centre of a large square white plate",
+      "Place three chicory leaves into the guacamole so they are standing vertically and are evenly spaced",
+      "Place a crouton horizontally between the first and second, and second and third chicory leaf",
+      "Place a single pissant leaf in front of the central chicory leaf so that it stands vertically and leaning slightly forward",
+      "Spoon on two stripes of avocado purée from the centre of the mound of guacamole to the bottom two corners of the plate and place an asparagus spear next to each",
+      "Scatter over a quarter of the ham batons, Parmesan shavings and pea shoots and finish the plate with drops of the lemon dressing. Repeat the entire process on the remaining three plates"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long Croutons",
+        "unit": null,
+        "notes": "cut from a baguette",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "blanched",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chicory Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pissant Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamón Ibérico De Bellota",
+        "unit": "g",
+        "notes": "cut into batons",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Shavings",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Pea Shoots",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "peeled and stoned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "large",
+        "notes": "cut in 2 cm lengths",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "peeled and quartered",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "peeled and stoned",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomato",
+        "unit": null,
+        "notes": "peeled and deseeded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "skin thinly peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groundnut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34b37f04dd19fec3ac2d4c650ab6c91c65d06ede680c1089ebeba9a88f1cea55",
+    "lineage_hash": "9549b422cf388a05e7743dd75f1be2742443af501436877a9eba2a0ac999a9fc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/avocado-asparagus-salad-ham",
+    "fetchedAt": "2026-08-03T17:24:41.150Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/avocado-asparagus-salad-ham",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Chapati Noodles",
+    "time": "25-30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly, take 5 chapatis and roll tight.",
+      "Cut into thin strips forming noodles.",
+      "Separate the chapati strips and keep aside.",
+      "Now, in a wok heat oil and saute garlic, green chilli, onion, carrot, cabbage, capsicum for 1 minute on high heat.",
+      "Saute slightly till the vegetables shrink.",
+      "Now add salt, tomato ketchup, vinegar, soy sauce and mix well making sure sauces are combined well.",
+      "Then add the prepared chapati strips and toss it well.",
+      "Finally, serve chapati noodles hot and garnish with spring onion."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leftover Chapati",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "julienne",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit in half",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "slice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "julienne",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bell Pepper",
+        "unit": "C",
+        "notes": "tricoloured, julienne",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Few Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c479d7bcf0963b553199215b5047d58c59927473609f872fe0579022378f670e",
+    "lineage_hash": "6cda6cc5415d4bfdb001b71dd3bd59ac5d7d04cfdff6a87b0b657c7f67ccb89e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chapati-noodles/",
+    "fetchedAt": "2026-08-02T12:29:42.423Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chapati-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

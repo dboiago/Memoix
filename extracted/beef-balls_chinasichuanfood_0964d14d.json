@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Beef Balls",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "82",
+      "carbohydrateContent": "1",
+      "fatContent": "6",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preparation: Chill the blender and beef firstly. Prepare the ice cubes and chilled water.",
+      "Blending process: Place minced beef in blender, place sha cha sauce, fried garlic, salt, baking soda, pepper, fish sauce. Blend for 15 seconds with pauses.",
+      "Then add  tapioca starch and 1/2 of the iced water. Continue blending for another 10 seconds. When the water is well absorbed, add the remaining half.",
+      "Continue blending for around 1 minutes until the mixture becomes fluffy in texture and light (turns into pink ) in color. Once it reaches the texture, stop immediately. Over blending will higher the temperature and further spoil the balls.",
+      "Shape the balls: prepare a large pot with enough warm water and a small cup of clear water for wetting the scoop. Grasp beef paste on left hand and hold a scoop with the right hand. Shape the paste to a ball with the help of left index finger and thumb. Dip the scoop into clean water and use scoop to transfer the fish ball to the warm water. Watch out and don’t let the water boils. Heat with slowest fire to keep the temperature.",
+      "Cook them well: When all the fish balls are done, turn up the fire to middle and cook the balls for 7-8 minutes. It can be served directly or packaged after cooled for later soups or hot pot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sha Cha Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Garlic",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Starch",
+        "unit": "Tbsp",
+        "notes": "recommend tapioca starch",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water with Ice Cubes",
+        "unit": "C",
+        "notes": "plus 20ml more for adjusting.",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da09566036c5976bcf7b002d011ba609e58fb958238293697530d9fdc0c461ee",
+    "lineage_hash": "1c7f412517da843e0981035fc7bc4a80462879df04c5bfd359d34cd70134134a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/beef-balls/",
+    "fetchedAt": "2026-08-02T07:07:00.342Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/beef-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

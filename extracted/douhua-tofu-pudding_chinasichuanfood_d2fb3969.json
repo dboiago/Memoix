@@ -1,0 +1,246 @@
+{
+  "recipe": {
+    "name": "Douhua",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the soybeans and then soak the soybeans overnight until softened. Transfer to a blender and add water. Blend until very smooth.",
+      "Whisk GDL with 1 tablespoon of water in a small bow.",
+      "Place gauze on a strainer and then strain the soy milk.  Bring the soy milk to a boil. Watch carefully since it overflows easily. Skin off the bubbles on the surface. Remove from heat and rest for 2 minutes until the temperature drops around 80 degrees C to 90 degrees C.",
+      "Gently stir the GDL water in the soy milk. Then rest for 15 to 20 minutes until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soy Beans",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gdl",
+        "unit": "g",
+        "notes": "no sweeping, around 1 tablespoon",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Brown sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Brown sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Piece Ginger",
+        "unit": null,
+        "notes": "peeled and shredded",
+        "amount": "1",
+        "section": "Brown sugar syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sichuan hot  Style for each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sichuan hot  Style for each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Zhai Cai",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Sichuan hot  Style for each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger and Garlic Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sichuan hot  Style for each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion and Coriander to Taste",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Sichuan hot  Style for each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "cut into small shreds",
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "shredded",
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Hydrated Wood Ear Mushroom",
+        "unit": null,
+        "notes": "cut into small shreds",
+        "amount": "10",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "fresh, cut into slices",
+        "amount": "2",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced and then shredded",
+        "amount": "4",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "whisked with 2 tablespoons of water",
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Northern Style",
+        "isOptional": false
+      },
+      {
+        "name": "Salt If Necessary",
+        "unit": null,
+        "notes": "note 1",
+        "amount": "0",
+        "section": "Northern Style",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1293a8b0b3106297f9d7dabdc7bac451227cbee51d9f07ff77ef0165cf42f99a",
+    "lineage_hash": "1ab763e7eab202766ec583afac09c4952aaa864c32f88f41e1695efab75d3aeb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/douhua/",
+    "fetchedAt": "2026-08-02T05:50:06.652Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/douhua/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

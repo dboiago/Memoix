@@ -1,0 +1,250 @@
+{
+  "recipe": {
+    "name": "Christmas Cake",
+    "time": "50-60 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shallow pan, add ghee, once it is melted, add jaggery powder and mix well.",
+      "Keep aside for further use.",
+      "In a large bowl, add refined flour, ginger powder, clove powder, cinnamon powder, nutmeg powder, crushed black peppercorns and mix well.",
+      "Add a pinch of salt, melted ghee & jaggery powder and mix everything well.",
+      "Add eggs and make a smooth batter. Add marmalad, vanilla essence and mix well.",
+      "Grease and line the cake tin with parchment paper.",
+      "Pour half the batter in the cake tin and layer it with a few peta, pour the other batch of the batter in the tin, layer it with remaining peta and put it in the oven. Bake it at 170Â°c for 40-45 minutes.",
+      "Check the cake by pricking the toothpick in the center, if it comes out clear take the cake tin out of the oven.",
+      "In a sauce pot, add sugar, water and let it melt on medium flame.",
+      "Once the sugar is melted, add rum and mix well.",
+      "Keep aside for further use.",
+      "In a bowl, add icing sugar, lemon juice, warm water and mix it well.",
+      "Make a semi thick icing and coat the cake.",
+      "Once the cake is cool, demould the cake on a serving dish.",
+      "Pour the prepared sugar syrup and let it soak.",
+      "Spread the icing evenly on the christmas cake, dust some desiccated coconut and top it up with candied cherries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Melting Jaggery",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Melting Jaggery",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch Clove Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch Cinnamon Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch Nutmeg Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "pinch",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee & Jaggery Powder",
+        "unit": null,
+        "notes": "melted",
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Ash Gourd & Peta",
+        "unit": "C",
+        "notes": "slice",
+        "amount": "¼",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Marmalade",
+        "unit": "tsp",
+        "notes": "alt: murabba",
+        "amount": "1½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sugar Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Icing",
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Candied Cherry",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Candied Ash Gourd & Pets",
+        "unit": null,
+        "notes": "cut into half",
+        "amount": "2",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "34dae6188eb27d49d6192d29cdd268dba2e684b62cbcae62775b71dd4a65de68",
+    "lineage_hash": "1b166edf29dff3dde6ab30b58f0c2bca1939d6dade292c904fed0e889d70256a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/allahabadi-christmas-cake/",
+    "fetchedAt": "2026-08-02T20:02:23.346Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/allahabadi-christmas-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

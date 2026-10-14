@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Buttermilk Spice Cake with Whipped Ganache",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "501",
+      "carbohydrateContent": "53",
+      "fatContent": "30",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "In a small bowl, whisk together all the spices and set aside.",
+      "In another small bowl, whisk together 6 large yolks, ½ cup of the buttermilk and 2 teaspoons vanilla extract, set aside.",
+      "Sift 9 oz cake flour, 1 ¼ cups of sugar, 4 teaspoons spice mix, ¾ teaspoon baking powder, ¾ teaspoon table salt and ¼ teaspoon baking soda into a mixer bowl. Mix on low speed to combine the dry ingredients. Toss 9 oz unsalted butter chunks into the flour mixture.",
+      "Add the reserved ½ cup of buttermilk increase the speed to medium. Mix on medium high for 2 minutes to aerate the batter. Scrape the bowl. Add the yolk/buttermilk mixture in 3 batches, scraping the bowl between each addition.",
+      "In another bowl, whip 3 large egg whites on medium high until they form soft peaks. Turn the mixer to medium low and slowly add the remaining ¼ cup of sugar. Turn the mixer to medium high and whip the whites to full peak. Fold the whites into the base in 2 parts, folding just until there are no streaks of egg whites.",
+      "Divide the batter evenly between the prepared pans and spread the batter to level.",
+      "Bake until the cake springs back when lightly pressed or a toothpick inserted into the center comes out clean, about 25 minutes. Cool for 10 minutes in the pans. Turn the cakes out onto a cooling rack and cool to room temperature.",
+      "Combine 8 oz heavy cream and 4 teaspoons spice mix in a microwave proof bowl. Heat the cream in 1 minute increments until it is scalding hot (this could also be done on the stove).",
+      "Immediately pour the cream over 16 oz white chocolate (chopped), add 1 tablespoon brandy (optional) and let it sit for 2-3 minutes. Gently stir the ganache until it comes together and all the bits of white chocolate are melted. If some of the chocolate doesn't melt, remove ½ cup of the ganache and heat for 30 seconds in the microwave. Stir the heated ganache back into the bowl. Repeat until all the bits of chocolate are melted.",
+      "Chill the ganache until the edges are starting to set and the center is cool but still liquid. (If you let the ganache set completely it won’t whip up as light.)",
+      "Trim the tops of the cakes so they are level. Split each cake into 2, horizontally, so you have 4 layers. Place the first layer onto the serving platter.",
+      "Whip the ganache until it is light and fluffy with the texture of whipped cream.",
+      "Stack the cake, spreading 1/4 of the ganache between each of the layers. Place the 4th layer on the cake. Ice the top and sides of the cake with the remaining ganache."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Anise Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "9",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, divided",
+        "amount": "12",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Spice Mix",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature, cut into 1″ chunks",
+        "amount": "9",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "3",
+        "section": "Spice Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": "Spiced Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Spice Mix",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Spiced Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": "finely chopped",
+        "amount": "16",
+        "section": "Spiced Ganache",
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Spiced Ganache",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f7514b87202902a81b6af4323e0cdccae89ad386da9120d24c768788b13909c",
+    "lineage_hash": "21abd33049d2b20afa20e14cbc7dd303612a51d1f608fe5c9c290f2ae16736a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/10/23/spice-cake/",
+    "fetchedAt": "2026-08-02T01:59:10.688Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/10/23/spice-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

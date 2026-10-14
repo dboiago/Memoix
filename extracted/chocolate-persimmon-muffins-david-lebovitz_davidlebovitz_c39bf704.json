@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Chocolate Persimmon Muffins",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF (180ºC). Butter eight of the inserts of a muffin tin (with a 1/3-cup capacity each).",
+      "Sift together all of the dry ingredients into a bowl, pressing through any lumps of leavening, then tilt any bits of grain left in the strainer back into the mixture.",
+      "In a stand mixer, or by hand, beat the butter with the brown and granulated sugars until light and creamy, for three to five minutes.",
+      "Add the eggs one at a time, scraping down the sides of the bowl to make sure they’re incorporated.",
+      "Add the yogurt, then half of the persimmon puree.",
+      "Stir in half of the dry ingredients, then add the remaining persimmon puree.",
+      "Gently mix in the remaining dry ingredients until almost incorporated, then fold in the chocolate chunks and any chocolate dust.",
+      "Divide the batter into the muffin tins and if there are any bits of persimmon visible in the batter, lift them out with a spoon and distribute them over the top.",
+      "Bake the muffins for 30 to 35 minutes, rotating the muffin pan midway during baking. The muffins are done when they still feel still soft in the center and spring back lightly when pressed.",
+      "Let the muffins cool for a few minutes, until you can handle them, then lift them out of the pan and set them on a cooling rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buckwheat Flour",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "1",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "preferably Dutch-process (see headnote), 20g",
+        "amount": "6",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "1",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "85g, cold, cut into bits",
+        "amount": "6",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "¼",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "¼",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "120g, whole or lowfat",
+        "amount": "½",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Hachiya Persimmon Puree",
+        "unit": "C",
+        "notes": "500ml, from about 2-pounds, 800g of persimmons",
+        "amount": "2",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 115, chopped into 1/4-inch (1cm) chunks",
+        "amount": "4",
+        "section": "wet ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8a61a0b6edab9b02f0ee928b5d45967707d52b0957e8cd137f27316baf6321c9",
+    "lineage_hash": "02695252ca9aaccc0ae2b7ba5921e2be89c1a563ecdba60e907172bca0bffa84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-persimmon-muffins-recipe-kim-boyce-good-to-the-grain/",
+    "fetchedAt": "2026-08-02T22:46:58.003Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-persimmon-muffins-recipe-kim-boyce-good-to-the-grain/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

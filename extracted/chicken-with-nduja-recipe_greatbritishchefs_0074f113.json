@@ -1,0 +1,106 @@
+{
+  "recipe": {
+    "name": "Chicken with 'nduja",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200˚C/gas mark 6.",
+      "Use your fingers to gently separate the skin from the flesh of each breast to create a cavity. Stuff 30g of the 'nduja into the cavity",
+      "Pull the skin back over the breast to seal in the 'nduja stuffing. Brush or rub the entire chicken breast with the rapeseed oil and season with sea salt",
+      "Heat a cast iron or non-stick frying pan over a medium heat. Place the chicken breast, skin-side down, into the pan and fry until the skin turns a light golden brown colour. Turn the breast over and cook on the opposite side for a further minute",
+      "Transfer the chicken to the oven and cook for 15-18 minutes, occasionally basting with the juices from the frying pan. Once the chicken breast is cooked, transfer to a large plate and leave to rest for 3-4 minutes",
+      "While the chicken is resting, cook the beans in lightly salted boiling water for 3 minutes, drain and refresh in ice-cold water for another 4 minutes",
+      "For the dressing, combine the sour cream with the rapeseed oil in a large bowl. Add the cooked beans and rocket, toss to coat",
+      "To serve, slice the chicken breast in half and serve warm with the salad and a wedge of lemon"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Free Range Chicken Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "'nduja",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Beans",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "98c232a7fd344dac8858472d4c01d90e2bf922832ed725202117204cb97055f7",
+    "lineage_hash": "4b7652f8bc62392f308a1317dfdb5ff12c4f68bc0b94b9dd9b4f76d1108aa832"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-breast-nduja-recipe",
+    "fetchedAt": "2026-08-03T18:11:56.486Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-breast-nduja-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

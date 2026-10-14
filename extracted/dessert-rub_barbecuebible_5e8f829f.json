@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Dessert Rub",
+    "time": null,
+    "course": "rubs",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar in a bowl and whisk in the cinnamon, nutmeg, allspice, and cloves.",
+      "Transfer to a jar, cover, and store away from heat and light."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turbinado Sugar",
+        "unit": "C",
+        "notes": "such as Sugar in the Raw",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "27b0e88a64eb28a381ac56d5b7fa357373eb4b34f9dc819ea5ad6442c474bb83",
+    "lineage_hash": "23c8124472c1576137fed4008343d601818ff89523dc5604533980a67bae8aff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/dessert-rub/",
+    "fetchedAt": "2026-08-03T04:40:17.465Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/dessert-rub/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

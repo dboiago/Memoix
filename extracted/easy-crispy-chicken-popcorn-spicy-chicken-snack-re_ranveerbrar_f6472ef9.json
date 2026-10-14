@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Crispy Chicken Popcorn (Spicy Chicken snack)",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, add chicken cubes, salt to taste, degi red chilli powder, turmeric powder, coriander powder, asafoetida, vinegar, coriander leaves and ginger garlic paste mix it well.",
+      "Add egg white, cornstarch and mix everything well.",
+      "In another bowl, add cornflakes and crumb it well.",
+      "Add bread crumbs and mix it well.",
+      "One by one coat the chicken cubes into the corn flakes crumb properly.",
+      "Heat oil in a kadai, once it's medium hot. Gently slide the pieces one after the other to the oil.",
+      "Fry chicken popcorn in batches.",
+      "Deep fry evenly till golden on medium flame.",
+      "Drain and Keep on an absorbent paper.",
+      "Garnish it with coriander sprig and lemon wedge.",
+      "Serve hot with dip.",
+      "In a bowl, add garlic, green chilli, coriander leaves, olive oil and blend it with the help of a blender.",
+      "Transfer the mixture into another bowl, add mayonnaise, black pepper and mix it well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No Chicken Breast",
+        "unit": null,
+        "notes": "cut into small cubes",
+        "amount": "3",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "C",
+        "notes": "crumble",
+        "amount": "1",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "broken",
+        "amount": "1",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Block",
+        "unit": null,
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dip",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "48969bf5d9d8c6978085f1ca3b6ef8359bc66cbea0c68887ccb2814435b100a4",
+    "lineage_hash": "cf2d273c31a397c200f35295e7c5b62de29a3f8a2fa6f916a0eca0c2f7b0398b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-chicken-popcorn-spicy-chicken-snack/",
+    "fetchedAt": "2026-08-02T21:08:24.315Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-chicken-popcorn-spicy-chicken-snack/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

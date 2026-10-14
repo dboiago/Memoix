@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Kappa Kuzhachathu",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the tapioca pieces in salted water and sieve out.",
+      "Grind the cumin, turmeric powder, coconut, garlic, green chilies, and shallots coarsely.",
+      "Mash the tapioca in a heavy bottomed pan and mix in the ground coconut on medium flame for about 3-4 minutes and then turn off the flame.",
+      "in a small pan, for seasoning, heat oil, pop mustard seeds, add in curry leaves and fry the shallots till they are golden brown in color.",
+      "mix the seasoning well into the cooked tapioca mix and garnish with chopped fresh coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tapioca",
+        "unit": "kg",
+        "notes": "cleaned and roughly chopped into cubes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Scraped Coconut",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For grinding",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "5",
+        "section": "For seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": "Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d350f7f0abbc8054cf259240717636f16bc5f15cdb790b66eb90b602908618af",
+    "lineage_hash": "5d852ded1b6341a988f9da7706256d9838312ba2d4eeb3b2b92cacdaac38e7fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/digging-out-tapioca/",
+    "fetchedAt": "2026-08-01T18:03:02.179Z"
+  },
+  "rawSource": "https://ranveerbrar.com/digging-out-tapioca/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

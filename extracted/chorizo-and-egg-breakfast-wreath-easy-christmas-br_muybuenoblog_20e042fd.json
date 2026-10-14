@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Chorizo and Egg Breakfast Wreath",
+    "time": "43 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "198",
+      "carbohydrateContent": "1",
+      "fatContent": "15",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Crumble the chorizo into a skillet and cook the chorizo over medium heat for 10 minutes.",
+      "In a medium bowl whisk eggs. Add eggs to cooked chorizo; cook for 2 to 3 minutes or until eggs are cooked thoroughly.",
+      "Preheat oven to 375°F.",
+      "Unroll can of dough; separate into 8 triangles. On a parchment sheet on a large cookie sheet or pizza stone, arrange triangles with shortest sides toward center, overlapping in wreath shape and leaving 4-inch round circle open in center. Crescent dough points may overlap edge of cookie sheet.",
+      "Spoon mixture onto widest part of dough.",
+      "Sprinkle with shredded cheese.",
+      "Pull end points of triangles over chorizo and egg mixture and cheese and tuck under dough to form ring (filling will be visible). Carefully brush dough with olive oil; sprinkle with sesame seeds.",
+      "Bake 17 to 20 minutes or until golden brown. Cool 2 minutes. With broad spatula, carefully place wreath on serving platter and slide off parchment sheet from under.",
+      "Slice in between each crescent to make 8 individual pieces. Serve warm with salsa."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mexican Pork Chorizo",
+        "unit": "oz",
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Can Refrigerated Crescent Rolls",
+        "unit": null,
+        "notes": "8-ounce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca Cheese",
+        "unit": "C",
+        "notes": "or Mexican blend, Monterey Jack, cheddar, or pepper jack, shredded",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b57d13bb10fc9a7194106ff87e52ab09fc6e9af1646f2c9db783e467bac917a8",
+    "lineage_hash": "2387f722cb74ceca714df488458f077e0a99b01c1000f5c39ecba4aad1ff653d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chorizo-and-egg-christmas-wreath/",
+    "fetchedAt": "2026-08-02T11:01:15.881Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chorizo-and-egg-christmas-wreath/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

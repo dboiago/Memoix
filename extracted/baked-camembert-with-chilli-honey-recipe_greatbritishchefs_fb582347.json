@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Baked Camembert with Chilli Honey",
+    "time": "1 hr 60 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the chilli honey as the more time it has to infuse, the better. Toast the chillies in a hot dry pan for a minute or so, until just starting to colour a little (take care not to burn them). Remove from the pan and roughly chop",
+      "Return the chopped chillies to the pan, cover with the honey and turn down the heat to very low. You just want to heat the honey so the chilli flavour infuses, so once it is warm take off the heat and return to the jar. Seal and leave to infuse for at least an hour. The honey keeps indefinitely and takes on more heat from the chillies as time goes on",
+      "Next, make the breadsticks. Place the flour, yeast and salt into the bowl of a stand mixer, then pour in the oil and warm water and mix for 5 minutes. Alternatively, you can knead the dough by hand, but it is quite a wet, sticky dough at first (rubbing your hands with a little oil makes it easier). Once the dough has been kneaded enough it should be smooth and elastic. Place in a clean bowl, cover with a wet cloth and leave in a warm place to prove for 1 hour",
+      "Preheat an oven to 190ºC/gas mark 5 and line a large baking tray with baking paper",
+      "Divide the dough into 12 equal pieces, then roll out each one into a thick elongated baton. At this point, you can pick up each end and stretch it out to create a long breadstick. Place each one onto the lined tray, then sprinkle them with sesame seeds",
+      "Bake the breadsticks for 20–25 minutes, until golden and solid when tapped. Leave to cool and store in an airtight container if not using straight away (though they are best straight from the oven)",
+      "Whilst the breadsticks are baking, remove the paper wrapping from the camembert then place it back inside the box it came in. Score the top in a cross-hatch pattern",
+      "Finely slice the garlic clove lengthways, then insert the slivers into the scores in the cheese. Top with a handful of fresh thyme and a drizzle of oil. Once the breadsticks are out of the oven, pop the cheese in and bake for 10 minutes",
+      "Serve the baked camembert alongside the freshly baked breadsticks and drizzle it with plenty of chilli honey"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jar of Honey",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": "you may not need it all",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Camembert",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fresh Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b9909a3fabe2cf1006063c1f69d778fb0fbb96a9d9d622c2566dbef395dc405",
+    "lineage_hash": "10b511d84f487f0f77adafc16471cb1da45e0f0cf9ce02d4c58ba2260cd7bd59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/garlic-thyme-baked-camembert-recipe",
+    "fetchedAt": "2026-08-02T20:40:52.169Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/garlic-thyme-baked-camembert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

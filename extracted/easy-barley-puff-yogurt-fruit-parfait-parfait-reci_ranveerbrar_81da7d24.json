@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Barley Puff, Yogurt & Fruit Parfait",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine yogurt, honey and mix well.",
+      "Now take glass or jar to form parfait.",
+      "At the base place a layer for yogurt then place some fruits and barley puffs. Repeat the layers. Fruit layer should be the top layer.",
+      "Now place a dollop of yogurt on top and put mint sprig. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Thick Yogurt",
+        "unit": "C",
+        "notes": "chilled & beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kiwi",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "small",
+        "notes": "cored & cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Grapes",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barley Puffs",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Few Mint Sprigs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "294cb093e97b7d125d4fc419e9c9953453ef0971dcc3db12b82661e4ab556a8c",
+    "lineage_hash": "bd2744f153c3e616270b03c3a86af088c9bc2671346a4b46c2bc2469f642ce19"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/barley-puff-yogurt-fruit-parfait/",
+    "fetchedAt": "2026-08-02T02:58:13.285Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/barley-puff-yogurt-fruit-parfait/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

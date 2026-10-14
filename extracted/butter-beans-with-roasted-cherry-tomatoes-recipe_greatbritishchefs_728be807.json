@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Butter Beans with Roasted Cherry Tomatoes",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toss the tomatoes with 2 teaspoons of the oil and spread them on a parchment-lined baking tray. Roast for 20 minutes, until the skins have loosened and the tomatoes are soft and have shrunk a little. Remove from the oven and transfer the tomatoes, along with all their juices, to a shallow bowl to cool",
+      "Re-line the baking tray with a fresh sheet of baking parchment and reduce the oven temperature to 100°C fan",
+      "Once cool enough to handle, pinch the skins off the tomatoes and place the skins on the lined baking tray. Return the tray to the oven for about 45 minutes, until the skins are dry and crisp, giving them a good stir a couple of times during baking. Set the skinless tomatoes aside",
+      "Put the remaining 75ml of oil into a medium saucepan and place on a medium heat. Add the onion, garlic, oregano, thyme, fennel seeds and bay leaf and cook for 10–12 minutes, until the onion has softened but has not taken on too much colour",
+      "Add the wine, simmer for 2 minutes to reduce, then add the paprika. Cook for another minute, then add the reserved tomato flesh, along with 1 teaspoon of salt. Simmer gently for about 15 minutes, stirring often so that the tomatoes break down",
+      "Add the beans and a good grind of pepper and stir to combine",
+      "Cook for a couple of minutes, just to warm through, then remove from the heat",
+      "Spread the yoghurt over a serving plate and then pile the beans on top. Crumble over the dried tomato skins, finish with a sprinkling of thyme leaves and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherry Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "150g, finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "roughly chopped, plus a few whole thyme leaves to garnish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "toasted and lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar of Good-quality Butter Beans",
+        "unit": "g",
+        "notes": "drained and rinsed",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek-style Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "30d3d075af8b9df34614680bdffadb0d0dc7fceb89993e80d57524d509e15b44",
+    "lineage_hash": "7eec2bcd55850c5fc15b2d904a11d61285fcccd22dc95238a7a8df3723fc0158"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/butter-beans-roasted-cherry-tomatoes-recipe",
+    "fetchedAt": "2026-08-02T08:05:14.905Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/butter-beans-roasted-cherry-tomatoes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

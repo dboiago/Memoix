@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-fried-peanuts/",
+  "slug": "chinese-fried-peanuts_chinasichuanfood_4fdffbc2",
+  "title": "Chinese Fried Peanuts",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:44:21.760Z",
+  "ldName": "Chinese Fried Peanuts",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "peanuts",
+  "ldIngredientsRaw": [
+    "100 g fresh peanuts with skin",
+    "1/4 cup oil",
+    "pinch of salt for garnishing ( , to taste)",
+    "1 tsp. liquor ( , like vodka)"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse peanuts and drain.",
+    "Add peanuts along with the oil to a pan and then turn on the fire to medium slow fire. Shake your pan and stir the peanuts from time to time.",
+    "After 4-5 minutes, there will be “pa” sound in the pan. Turn off the heat and shake the pan for another minute. Transfer out and filter any oil.",
+    "Add 1 teaspoon of liquor and garnish salt. Mix well. Serve after completely cooled down."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "538 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "13 g",
+    "fatContent": "52 g",
+    "saturatedFatContent": "5 g",
+    "sodiumContent": "1948 mg",
+    "fiberContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "100 g fresh peanuts with skin",
+    "1/4 cup oil",
+    "pinch of salt for garnishing  , to taste",
+    "1 tsp. liquor  , like vodka"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "Bok Choy with Oyster Sauce",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "65",
+      "carbohydrateContent": "6.3",
+      "fatContent": "3.9",
+      "proteinContent": "3.5"
+    },
+    "directions": [
+      "Cut off the ends of baby bok choy and discard. Separate the larger leaves of baby bok choy. Soak in cold water for 2 minutes, then rinse to remove any dust. Cut the stems into 1/2” pieces and the leaves into 2” pieces. Separate the whites and greens. Halve the cores.",
+      "Heat oil in a wok over medium-high heat until smoking. Add chili peppers and ginger. Stir a few times to release fragrance.",
+      "Add the baby bok choy whites and turn to high heat. Stir a few times to coat evenly with oil, spread them out and sear until the white part just starts to turn tender, 1 to 2 minutes.",
+      "Add the baby bok choy greens and sprinkle with sugar. Stir to mix well. Add the soy sauce and oyster sauce. Stir immediately to mix the ingredients. Cook and stir until the greens are wilted, then transfer everything to a big serving plate. Serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baby Bok Choy",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4140145ca4ee0788cb3d113ac7e87db4a75cc074a16695796cafe0f67ffabc38",
+    "lineage_hash": "e6ac1f7650b3915b563235d281f50a97885f1c19c5efebe9a0210b053628561d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/bok-choy-with-oyster-sauce/",
+    "fetchedAt": "2026-08-02T09:17:03.995Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/bok-choy-with-oyster-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

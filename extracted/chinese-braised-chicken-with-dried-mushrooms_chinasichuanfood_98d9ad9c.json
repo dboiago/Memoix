@@ -1,0 +1,212 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Chicken with Dried Mushrooms",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "379",
+      "carbohydrateContent": "10",
+      "fatContent": "25",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Cut the chicken into small chunks and then cook in boiling water for 3-4 minutes. Transfer the chicken out and clean with warm water. Drain and set aside.",
+      "Heat up 2 tablespoons of cooking oil in a claypot or stewing pot, fry garlic, ginger and scallion until aromatic over slow fire. Add chicken chunks in and fry until slightly browned. Add cooking wine and light soy sauce, continue frying for 1 to 2 minutes.Add spices and rock sugar.",
+      "Pour in enough hot water to cover the chicken chunks and the water level should be at last 3 cm higher if you plan to cook noodles in the dish. Otherwise, use water to cover the chickens.",
+      "Cover and simmer for 20 to 30 minutes until the chicken is soft enough. Season with salt and white pepper.",
+      "Add fresh mushrooms in, cook for 5 minutes and then place the pre-soaked noodles in. Cook for 2 minutes and serve with green onions"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Young Chicken",
+        "unit": null,
+        "notes": "around 1000g, cut into one bite sizes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Dried Shiitake Mushrooms",
+        "unit": null,
+        "notes": "pre-hydrated and then cut into small chunks",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions White",
+        "unit": null,
+        "notes": "cut into small sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water for Simmering",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Tangerine Peel",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Cardamomum Pod",
+        "unit": null,
+        "notes": "砂仁",
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Tsaoko",
+        "unit": null,
+        "notes": "草果",
+        "amount": "1",
+        "section": "Spices",
+        "isOptional": false
+      },
+      {
+        "name": "Pre-soaked Vermicelli Noodles",
+        "unit": null,
+        "notes": "alt: rice sticks",
+        "amount": "0",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "fresh, cut into one bite size",
+        "amount": "10",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": "C",
+        "notes": "finely, chopped",
+        "amount": "½",
+        "section": "Others",
+        "isOptional": false
+      },
+      {
+        "name": "Corianders",
+        "unit": "C",
+        "notes": "finely, chopped, optional",
+        "amount": "½",
+        "section": "Others",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1be1f52b919ebb08bbab4db775e5c97b78a1288aeb5d988b0043d7279739d512",
+    "lineage_hash": "a571d1ce9a8b8da6f3dffc7e24a97bfa05a01c7fd27a325087af93b2fb7555bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-chicken-with-dried-mushrooms/",
+    "fetchedAt": "2026-08-01T15:37:40.186Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-chicken-with-dried-mushrooms/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

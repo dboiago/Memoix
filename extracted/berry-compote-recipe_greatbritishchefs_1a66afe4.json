@@ -1,0 +1,52 @@
+{
+  "recipe": {
+    "name": "Berry Compote",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the berries in a small saucepan over a low heat with the brown sugar and bring to a simmer",
+      "Cook the fruit for around 20-30 minutes until soft, then remove from the heat and allow to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mixed Berries",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "370",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbaddd056f31a4931c7ece93b6f4c8df27678ba0e9e545a6f9e3e820664069e1",
+    "lineage_hash": "eeb04076579d66bc6ab32a28d750253ed7df353b8634c968b811038c92bc0d15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/berry-compote-recipe",
+    "fetchedAt": "2026-08-03T17:15:00.599Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/berry-compote-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

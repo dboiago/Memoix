@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Crispy Fried Pumpkin with Salted Egg Yolk",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "194",
+      "carbohydrateContent": "18.1",
+      "fatContent": "13.1",
+      "proteinContent": "2.7"
+    },
+    "directions": [
+      "Place the pumpkin in a deep plate. Sprinkle with the 1/2 teaspoon salt. Toss with your hands to coat the pumpkin evenly with salt. Let it rest for 15 minutes.",
+      "Crush the cooked yolks with a fork in a small bowl, until they are very well crumbled.",
+      "Drain off the liquid from the pumpkin and transfer it to a big bowl. Add the cornstarch and toss to coat completely.",
+      "Prepare a large plate and top it with a few layers of paper towels. Or prepare a medium-sized baking tray with a wire rack.",
+      "Heat the oil in a large skillet over medium-high heat until hot. Add the coated pumpkin. Cook until the bottom turns crisp, about 2 to 3 minutes. Flip the pumpkin to cook the other side, for another 2 to 3 minutes, until it turns crispy throughout and cooked through.",
+      "Turn off the heat. Transfer the cooked pumpkin using a spider strainer or a slotted spoon to the prepared plate (or rack) to drain the excess oil.",
+      "Remove the extra oil and only save 1 tablespoon of oil by either pouring the oil into a heat-proof bowl, or using a big ladle.",
+      "Turn the heat to medium-low. Add the garlic and fry until fragrant, 30 seconds or so.",
+      "Add the crumbled salted yolk. Cook and stir until it is thick and foaming but not browning, a few seconds.",
+      "Pour in the Shaoxing wine. Cook and stir until the liquid is mostly evaporated.",
+      "Add the fried pumpkin back to the pan and sprinkle the sugar over it. Stir everything together for 1 minute, or until the pumpkin pieces are evenly coated with the yolk. Transfer to a plate immediately.",
+      "Serve hot as a side dish or over steamed rice as a main."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pumpkin",
+        "unit": "lb",
+        "notes": "alt: winter squash, 450, peeled, cut into 2”x1/2” (5 cm x 1 cm) sticks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "C",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Duck Yolks",
+        "unit": null,
+        "notes": "*Footnote 1, cooked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8483fe7f18887ed5b5d3d6de450942b56c2cb9a7df5c58a72a614d4ad9f0f4b",
+    "lineage_hash": "00d4860d9b2010d9b3570bcf2b7853441f39c937a856c6c822a33dee2bdf4ab4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/crispy-fried-pumpkin-salted-egg-yolk/",
+    "fetchedAt": "2026-08-01T21:35:18.800Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/crispy-fried-pumpkin-salted-egg-yolk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

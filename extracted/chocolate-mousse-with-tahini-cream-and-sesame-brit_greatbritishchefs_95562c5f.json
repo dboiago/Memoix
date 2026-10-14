@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse with Tahini Cream and Sesame Brittle",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the two chocolates and butter together gently in a bain marie",
+      "In a bowl, whisk together the egg yolks and sugar until they look pale and foamy and the mixture forms a ribbon when lifted",
+      "On medium speed, whisk the 6 egg whites together in a bowl with the lemon juice and salt until they are ‘barely soft peaks’ - the lemon juice helps stabilise the egg whites",
+      "Pour the melted chocolate mixture into the egg yolks and sugar and whisk to combine",
+      "Fold the whipped egg whites into the mixture in 3 additions, making sure not to over mix",
+      "Divide into 4-6 serving dishes (depending on size), cover and refrigerate for at least 4 hours but ideally overnight",
+      "To make the brittle, heat the caster sugar in a heavy-based saucepan over medium heat until melted, then pour in the sesame seeds. Tip out onto a baking tray lined with greaseproof paper and leave to cool",
+      "To make the tahini cream, whip together the cream, icing sugar and vanilla until the ‘barely soft peaks’ stage. Whisk in the tahini until just combined",
+      "To serve, remove the mousses from the fridge 30 minutes before serving, then top them with generous spoonfuls of the cream. Break the brittle into shards and use to garnish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": "at room temperature, yolks and whites separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "or vanilla bean paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": "mixed well",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7316c54b2a90f0b88d00bdeec7a6a153bb7c12e8fa5837aa85d116a722917dd7",
+    "lineage_hash": "b5e62e4868aba115d8267b9891829ec987740897a2a65470a47be817561fca9e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-tahini-cream-sesame-brittle-recipe",
+    "fetchedAt": "2026-08-02T15:50:26.538Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-tahini-cream-sesame-brittle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

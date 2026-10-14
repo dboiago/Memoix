@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Chilli-Cured Monkfish with Pink Pickled Onions",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the cure ingredients together apart from the fish. Rub the mixture evenly over the monkfish fillet. Wrap in cling film and refrigerate for 4-6 hours to cure",
+      "Meanwhile, make the pickled onions. Mix the vinegar, water, sugar and salt in a bowl until dissolved. Add the sliced onions, stir, and set aside for at least 30 minutes",
+      "Once cured, rinse the monkfish under cold water and pat dry. Slice thinly",
+      "Arrange the radish slices on serving plates. Lay thin slices of monkfish over the radish",
+      "Top with dill, pickled onions, and capers. Drizzle generously with olive oil before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Monkfish Tail",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Fronds of Fresh Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon Radish",
+        "unit": null,
+        "notes": "very thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56ceefa07881a84ad8a7e40d3c81570650ab8fafaf543ace3d6ea527f261f1b4",
+    "lineage_hash": "2022639e5c45eb5c1885271fefa837bcf84618f977b47e6afea5148cc9b60272"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-cured-monkfish-pink-pickled-onions-recipe",
+    "fetchedAt": "2026-08-02T05:09:52.681Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-cured-monkfish-pink-pickled-onions-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Amaranth Cookies",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Crushed Walnuts"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-heat oven at 180Â°C.",
+      "Add sugar and oil in a bowl and whisk till combined.",
+      "Add amaranth flour, baking powder, salt and cinnamon powder and mix them together until a dough consistency is formed.",
+      "Add in the crushed walnuts and fold well.",
+      "Divide prepared dough into equal portions and flatten out into Â½ inch small disc on a parchment paper.",
+      "Place the parchment paper on a baking tray and bake at 180Â°C for 40-45",
+      "Allow to cool on a wire rack.",
+      "Serve with milk or just like that."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amaranth Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsps Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "optional, crushed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b698296f66ec0437e885fe96f45beb44728fb161c81bcc6944c58eb63a74fd93",
+    "lineage_hash": "de796993e582c0fca3fb9212ca3d669281d33ffe3cf4d3355b30acbe5099699e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/amaranth-cookies/",
+    "fetchedAt": "2026-08-02T02:33:46.388Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/amaranth-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

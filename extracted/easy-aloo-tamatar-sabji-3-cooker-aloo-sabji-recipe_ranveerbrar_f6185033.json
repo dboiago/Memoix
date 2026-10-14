@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Aloo Tamatar sabji (Aloo Pyaz Tamatar Ki Sabji)",
+    "time": "20-25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker, add mustard oil, once it's smoky hot, add cumin seeds, fennel seeds, small mustard seeds, black peppercorns and let it splutter well.",
+      "Add a pinch of asafoetida, onions and cook for a while.",
+      "Add tomatoes and cook it for a while, add degi red chili powder, turmeric powder, coriander powder, potatoes, salt to taste, water and give it a good mix.",
+      "Cover it with the lid and pressure cook it for 1-2 whistles or until cooked well.",
+      "Finish it with prepared tadka, fresh coriander leaves and mix well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti.",
+      "In a pan, add ghee, once it's hot, add dry red chillies and fry them for a while.",
+      "Add tomato, salt to taste and toss them for a minute."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": "small",
+        "amount": "½",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "7-8",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "roughly diced",
+        "amount": "3",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "peeled & cut into diced",
+        "amount": "6",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Tadka",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Aloo Pyaz Tamatar Ki Sabji",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "cut into diced",
+        "amount": "1",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21a92a4140925d142978514da06c264a95a02d58d070631c75a89586c3b6b187",
+    "lineage_hash": "381c79c4e663d95de427765da8687e0ea417e3d1676313da4872ec32222b32ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-tamatar-sabji/",
+    "fetchedAt": "2026-08-02T17:40:54.203Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-tamatar-sabji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

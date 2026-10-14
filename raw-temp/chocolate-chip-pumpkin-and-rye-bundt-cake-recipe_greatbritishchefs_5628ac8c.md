@@ -1,0 +1,5 @@
+As soon as there's a chill in the air and the unmistakable signs of Autumn everywhere, all I want to do is pull on a thick jumper and bake comforting things (standing in front of a warm oven is a bonus, obviously). I crave hot chocolate, warming soups and start using even more cinnamon than usual.
+
+One of my favourite ways to pair cinnamon is to use it with an incredibly stereotypical Autumnal ingredient - pumpkin! The combination of that deep orange colour, which I associate so strongly with this time of year, and the sweet, aromatic cinnamon is a lovely thing to have in the form of a cake. The pumpkin also keeps the cake incredibly moist without having to use an excessive amount of oil.
+
+Along with the cinnamon, I added some rye flour for its earthy, complex flavour and a scattering of chocolate chips (because it's chocolate week!). To simply finish the cake I dusted it with icing sugar, that way there's less fuss and you can dig into the cake even sooner.

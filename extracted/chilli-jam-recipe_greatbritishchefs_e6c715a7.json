@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Chilli Jam",
+    "time": "1 hr 20 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sterilise the jam jars and set aside to cool",
+      "Place the chillies in a food processor - if you are looking for a milder flavour, remove the seeds from the chillies beforehand. Pulse until finely chopped, add the peppers and pulse again until finely chopped. Add the ginger and pulse until combined",
+      "Add the sugar and vinegar to a medium pan and place over a low heat, without stirring, until the sugar has dissolved",
+      "Add the chilli and pepper mixture to the pan, bring to the boil and leave at a rapid boil for 10 minutes",
+      "Remove from the heat and leave the mixture to cool - it will thicken as the temperature drops. After approximately 45 minutes, or once the red chilli flecks are fairly evenly dispersed in the jelly, transfer to jam jars and seal tightly"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Chillies",
+        "unit": "g",
+        "notes": "long, cut into pieces",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppers",
+        "unit": "g",
+        "notes": "red and yellow, cut into chunks",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jam Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f94eb99adc0f31cb541e737a3790d92ba5451f96c9b7617bcecc2feb4e35b19b",
+    "lineage_hash": "042c74ffb06331eaa6306be4b028478d67778dcec184e20c26abae2168b20550"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-jam-recipe",
+    "fetchedAt": "2026-08-02T22:24:20.220Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

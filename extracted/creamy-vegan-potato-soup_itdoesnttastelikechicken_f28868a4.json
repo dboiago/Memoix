@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Potato Soup",
+    "time": "35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "329",
+      "carbohydrateContent": "50",
+      "fatContent": "12",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Sauté the onion: In a large soup pot or Dutch oven over medium heat, melt the vegan butter. Add the onion and garlic and cook for 5 minutes until softened.",
+      "Add the flour: Sprinkle in the flour and stir well to coat. Cook for 60 seconds, stirring often, to toast the flour.",
+      "Simmer the soup: Add the potatoes, 4 cups vegetable broth, coconut milk, nutritional yeast (if using), salt, pepper, and thyme. Stir well and bring to a gentle simmer.Cook uncovered for about 10 to 15 minutes, until the potatoes are fork tender.",
+      "Blend for creaminess: Use an immersion blender to partially blend the soup, leaving plenty of potato chunks. Alternatively, carefully transfer about half of the soup to a blender and blend until smooth, then return it to the pot. Or, if you prefer a completely smooth potato soup (no chunks), blend the entire soup until smooth.If the soup is thicker than you like, stir in more broth as needed.",
+      "Serve: Taste and adjust seasoning as needed. Ladle into bowls and pile on your favorite toppings."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "or olive oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yukon Gold Potatoes",
+        "unit": "lb",
+        "notes": "about 6 medium potatoes, peeled and chopped into 1-inch cubes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Canned Coconut Milk",
+        "unit": "C",
+        "notes": "or vegan heavy cream",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": "optional for cheesy taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toppings of Choice: Vegan Bacon Bits",
+        "unit": null,
+        "notes": "shredded vegan cheese, vegan sour cream, chopped green onions or chives, croutons, crispy onions, smoked paprika, hot sauce, fresh parsley",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3810d1142a4641ae53a0e9a45e061697736b95d93fe125fa7a6b243b4c6a51a",
+    "lineage_hash": "25abdd1267c9c01bcba109a86e7bd59c144ec5a997ae5b5b202101aff0779a52"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-vegan-potato-soup/",
+    "fetchedAt": "2026-08-01T23:22:36.950Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-vegan-potato-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://thewoksoflife.com/chinese-pickled-long-beans-pork/",
+  "slug": "chinese-pickled-long-beans-with-pork_thewoksoflife_42e62e08",
+  "title": "Chinese Pickled Long Beans with Pork",
+  "byline": "Kaitlin",
+  "fetchedAt": "2026-08-01T20:32:10.491Z",
+  "ldName": "Pickled Long Beans with Pork Stir Fry",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Pork",
+  "ldKeywords": "pickled long beans",
+  "ldIngredientsRaw": [
+    "8 ounces ground pork ((225g))",
+    "3 tablespoons vegetable oil ((divided))",
+    "2 teaspoons cornstarch",
+    "1 teaspoon soy sauce",
+    "1 teaspoon Shaoxing wine",
+    "2 teaspoons minced ginger",
+    "5 cloves garlic ((chopped))",
+    "1 tablespoon spicy bean paste ((dou ban jiang))",
+    "1  small green bell pepper ((diced))",
+    "1  small red bell pepper ((diced))",
+    "3 to 10  bird’s eye chilies ((thinly sliced, depending on your desired heat level))",
+    "1 package Chinese pickled long beans ((chopped into ¼” pieces))",
+    "1 teaspoon sugar",
+    "1/8 teaspoon white pepper"
+  ],
+  "ldInstructionsRaw": [
+    "First, marinate the ground pork. Mix it with 1 tablespoon of the oil, 2 teaspoons cornstarch, 1 teaspoon soy sauce, and 1 teaspoon Shaoxing wine. Set aside while you gather your other ingredients.",
+    "Heat the remaining 2 tablespoons of oil in a wok or cast-iron skillet over high heat. Add the pork and stir-fry until cooked through and lightly crisped. Add the ginger and allow to infuse the oil for another minute. Next, add the garlic and cook until the garlic is lightly browned. Add the spicy bean paste and stir to combine.",
+    "Add the diced green and red bell peppers and cook until they are slightly softened. Add the chilies, long beans, sugar, and white pepper, and cook for a few minutes to heat the long beans through. If you want an extra kick, add the chilies early on along with the ginger to really infuse the oil.",
+    "Serve with plenty of white rice!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "343 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "14 g",
+    "fatContent": "23 g",
+    "saturatedFatContent": "13 g",
+    "cholesterolContent": "41 mg",
+    "sodiumContent": "570 mg",
+    "fiberContent": "7 g",
+    "sugarContent": "9 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 8 ounces ground pork (225g)",
+    "▢ 3 tablespoons vegetable oil (divided)",
+    "▢ 2 teaspoons cornstarch",
+    "▢ 1 teaspoon soy sauce",
+    "▢ 1 teaspoon Shaoxing wine",
+    "▢ 2 teaspoons minced ginger",
+    "▢ 5 cloves garlic (chopped)",
+    "▢ 1 tablespoon spicy bean paste (dou ban jiang)",
+    "▢ 1 small green bell pepper (diced)",
+    "▢ 1 small red bell pepper (diced)",
+    "▢ 3 to 10 bird’s eye chilies (thinly sliced, depending on your desired heat level)",
+    "▢ 1 package Chinese pickled long beans (chopped into ¼” pieces)",
+    "▢ 1 teaspoon sugar",
+    "▢ 1/8 teaspoon white pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

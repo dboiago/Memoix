@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Easy Banana Bread",
+    "time": "1 hr 10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a 1kg loaf tin with baking paper",
+      "In the bowl of an electric mixer with a paddle attachment, put the butter, sugar, eggs, flour and vanilla extract. Alternatively use a large bowl and a handheld electric mixer. Beat on medium speed for a few minutes, until everything is well combined",
+      "Stir in the baking powder and bicarbonate of soda and mashed bananas",
+      "Turn into the prepared tin and smooth the surface with the back of a spoon. Loosely cover the tin with baking paper or foil and bake in the middle of the oven for 45 minutes–1 hour, removing the paper or foil for the last 20 minutes",
+      "Meanwhile make the toffee topping. Melt the caster sugar and water in a pan and then bubble over a medium heat until golden. Reduce the heat and then beat in the double cream (take care as the mixture will splutter). Mix until smooth and then transfer to a bowl to cool",
+      "When the cake is ready, leave to settle in the tin for 10 minutes before turning out on to a wire rack. When it is still just warm, transfer to a plate",
+      "Spread with the toffee topping and decorate with dried banana chips, or whatever tickles your fancy"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Soft Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": "ripe (approx. 400g peeled), mashed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": null,
+        "notes": "dried, to decorate",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b88994b9ece5d79b8d56bca74f82f34b9f4f3dfbfe71d697526fbb217593e31b",
+    "lineage_hash": "e8b55c00220315d00bfceb4cf5acfd3b31f3807fa52969b06c3f3c51fc076823"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easy-banana-bread-recipe",
+    "fetchedAt": "2026-08-03T14:08:30.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easy-banana-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

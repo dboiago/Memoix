@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Bacon and Smoked Cheese Burgers",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Divide the meat into six equal portions. Lightly wet your hands with cold water, then form each portion of meat into a round patty, 4 inches across and of an even thickness.",
+      "Wrap each meat patty with 2 slices of bacon. Set up the grill for direct cooking and preheat to high.",
+      "When ready to cook, brush and oil the grill grate.",
+      "If using onion slices, brush them on both sides with melted butter and season with salt and pepper. Place the onion on the hot grate and grill until nicely browned, about 4 minutes per side, then transfer to a plate.",
+      "Brush one side of the meat patties lightly with melted butter and season with salt and pepper. Arrange the burgers, buttered side down, on the hot grate and grill until the bottoms are nicely browned, 4 to 5 minutes. Brush the tops lightly with some of the melted butter and season them with salt and pepper. Using a spatula, turn the burgers and grill until they are browned and cooked to taste, 4 to 5 minutes longer for medium. Meanwhile, brush the cut sides of the buns with the remaining melted butter and toast them, cut sides down, on the grill during the last 2 minutes the burgers cook.",
+      "Set out the toppings. Put the burgers on buns and top with cheese. The heat of the burgers will melt the cheese. Add the onion slices and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Round",
+        "unit": "lb",
+        "notes": "chuck, or sirloin",
+        "amount": "2¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vidalia",
+        "unit": "slices",
+        "notes": "alt: other sweet onion, 1⁄2 inch thick, optional",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted, or 2 tablespoons extra-virgin olive oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices of Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Mozzarella",
+        "unit": "slices",
+        "notes": "alt: other smoked cheese, 1⁄4 inch thick",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hamburger Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef6d2266c3cbaa07e11c3fa5fc47d4d23ff2ae6a1a755e4776a9e8f5554b291a",
+    "lineage_hash": "f5d2b491dfc7a699acd8fee938cd6e1dee11aaa6d238f4bd71bdca0728befc14"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/bacon-smoked-cheese-burgers/",
+    "fetchedAt": "2026-08-03T03:39:29.186Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/bacon-smoked-cheese-burgers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

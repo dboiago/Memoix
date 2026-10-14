@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Chinese Zucchini Pancakes",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "212",
+      "carbohydrateContent": "15",
+      "fatContent": "15",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Wash the zucchini clean and dry it with a kitchen towel.",
+      "Grate the zucchini using the coarse grate side of a box grater. In a large bowl, mix the grated zucchini with ¾ teaspoon of salt. Let sit for 15 minutes, and you’ll see visible zucchini juice at the bottom of the bowl, which we will keep. Now mix in 2 eggs, 2 chopped scallions, ¼ teaspoon ground white pepper, 1 teaspoon sesame oil, ½ teaspoon sugar, and about ½ cup all-purpose flour.",
+      "If you feel like you need more flour (this could depend on the size of the eggs, for example), add it 1 tablespoon at a time. The final batter should look like similar to regular ol’ breakfast pancake batter.",
+      "Now heat a flat-bottomed pan over medium heat, lightly brush the bottom with some oil, and pour some batter into the pan (make the pancakes whatever size you like). Sprinkle sesame seeds over the top and cook each side until lightly golden brown, about 3 minutes on each side. Repeat until you’ve used all the batter.",
+      "You can serve with a simple soy dipping sauce, chili oil, or whatever other condiments you like!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Zucchini",
+        "unit": null,
+        "notes": "about 250 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "more or less",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds for Sprinkling (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8cc385a4c5e7602b5340c105e287360605ee0a55bfd3ba0056709d12e15d3342",
+    "lineage_hash": "10f3e877a91aa2e524f0657ac615ab9458103ea8d269b349a72b0dbb759a5666"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-zucchini-pancakes/",
+    "fetchedAt": "2026-08-02T18:03:48.552Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-zucchini-pancakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

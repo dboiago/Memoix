@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Cucumber Mint Cooler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Tumbler",
+    "garnish": [
+      "Mint",
+      "Lime",
+      "Cucumber"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the cucumber into cubes. Put them in a blender, preferably a high-powered one, along with the mint and the sugar. Zest the limes right into the blender then add the juice of the limes to the blender along with a pinch of salt.",
+      "Cover the blender and blend at high speed until the mixture is completely pureed. It'll take a little longer than you think, so don't be afraid to really blitz the ingredients.",
+      "If you plan to serve the Cucumber Lime Cooler by the carafe or small pitcher, measure the amount of the \"base\" (it should be around 1 cup/250ml) then add an equivalent amount of cold water to it and blend them together. Chill thoroughly, or serve immediately with ice. Garnish with mint, lime and/or cucumber."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English",
+        "unit": "large",
+        "notes": "alt: seedless cucumber, see headnote, unpeeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Fresh Mint Leaves",
+        "unit": "C",
+        "notes": "8g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "75-100g, preferably granulated fine natural cane sugar",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": "medium",
+        "notes": "preferably unsprayed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": null,
+        "notes": "fresh, lime, and/or cucumber, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17e9ae76f36260890c15c40a08309147405f0a83276b968b90b2e08424cc0c79",
+    "lineage_hash": "88ba31643657673d83992de8b9cd5628606a1e2c3fac4fe3668f7671365abece"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cucumber-mint-cooler-recipe-mokonuts-paris/",
+    "fetchedAt": "2026-08-02T20:09:00.497Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cucumber-mint-cooler-recipe-mokonuts-paris/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

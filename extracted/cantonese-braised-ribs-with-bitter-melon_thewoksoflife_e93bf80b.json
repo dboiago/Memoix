@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Cantonese Braised Ribs with Bitter Melon",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "338",
+      "carbohydrateContent": "10",
+      "fatContent": "26",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Soak the ribs in cold water for 1 hour, changing the water once at the halfway point. Meanwhile, slice the bitter melons in half lengthwise and use a spoon to thoroughly scoop out the seeds and any white pith. With your knife at a 45° angle, slice the bitter melon into ½-inch thick pieces. To reduce bitterness, you can drop the bitter melon pieces into boiling water for 1 minute, then drain and set aside. Also prepare the bell pepper, ginger, and garlic.",
+      "Once the ribs are done soaking, drain, squeeze them and shake off any excess water. In a large bowl, combine the ribs with the cornstarch, white pepper, Shaoxing wine, light soy sauce, and dark soy sauce. Mix well and marinate for 20 minutes.",
+      "Preheat a wok over medium-high heat until lightly smoking, and add 1 tablespoon of neutral oil along with the bitter melon and bell pepper. Stir-fry for about 3 minutes, then remove and set aside.",
+      "In the same wok over medium-high heat, add 1 more tablespoon of oil to coat the bottom. Pan-fry the ribs until lightly browned, stirring occasionally so they don’t stick.",
+      "Now push the ribs aside to make space at the bottom of the wok. Reduce the heat to medium, and add the remaining tablespoon of oil, along with the fermented black beans, ginger, garlic, Chee Hou sauce, and oyster sauce. Cook for about 1 minute, stirring often to prevent burning.",
+      "Now add the water to cover the ribs, along with the stir-fried bitter melon and peppers. Mix well, cover, and simmer for 15-20 minutes over medium heat. You can cook it longer if you want the ribs to be super tender. Check occasionally to make sure the sauce does not dry out.",
+      "Uncover the wok. There should be a lot of liquid left, if not, add in a bit more water. Mix everything well. Cover and simmer for another 10 minutes over medium heat.",
+      "Uncover and add salt to taste. Increase the heat to reduce the sauce, stirring constantly, until it coats the ribs and vegetables. Serve with steamed rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Ribs",
+        "unit": "lb",
+        "notes": "pre-cut into bite-size pieces",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Bitter Melon",
+        "unit": "lb",
+        "notes": "2 medium",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "seeded cut into large chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as avocado, canola, or vegetable oil; divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Fermented Black Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chee Hou Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eea4cb53762c717090e28689d7e9cfb0eb84ba3040caf6b0660a7a2d228d6031",
+    "lineage_hash": "efb8d39ba3e1b796e49c479cb621c5c929538fbede8c6a38bb04261d96ef780b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/cantonese-braised-ribs-bitter-melon/",
+    "fetchedAt": "2026-08-02T18:40:12.870Z"
+  },
+  "rawSource": "https://thewoksoflife.com/cantonese-braised-ribs-bitter-melon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

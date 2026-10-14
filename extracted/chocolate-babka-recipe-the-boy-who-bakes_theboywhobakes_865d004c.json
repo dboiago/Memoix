@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Chocolate and Pistachio Babka",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the flour, yeast, salt and sugar in the bowl of an electric mixer and mix briefly together to combine.",
+      "Pour in the milk and the eggs and, with the dough hook attached, mix together on low/medium speed for about 10-15 minutes or until the dough is no longer sticking to the sides of the bowl and is elastic.",
+      "With the mixer still running add the butter and mix until fully incorporated into the dough then continue mixing for a further 10-15 minutes or until elastic and no longer sticking to the bowl.",
+      "Form the dough into a ball and place into a lightly oiled bowl, cover with clingfilm and refrigerate overnight.",
+      "In the morning start off by making the chocolate filling. Place all of the ingredients except the pistachios into a small saucepan and cook over low heat until fully melted and smooth.",
+      "Be very careful, stirring constantly, to prevent the chocolate catching on the pan and burning.",
+      "Set aside for 20 minutes to cool and thicken slightly.",
+      "Remove the dough from the fridge and divide into two equal sized pieces.",
+      "On a lightly floured worksurface roll out into a rectangle roughly 30x40cm.",
+      "Spread half of the chocolate mixture all over the dough, leaving a small border around the outside.",
+      "Roll the dough, along the long edge, into a tight spiral then using a very sharp knife cut through the middle, cutting the dough into two long pieces.",
+      "Place one piece of dough over the second forming an x then braid together the two pieces of dough.",
+      "Gently place the babka into a 9x4 loaf pan that has been lightly greased and lined with a strip of parchment paper.",
+      "Cover the tin with clingfilm and set aside for about an hour and a half or until the dough has about doubled in size.",
+      "Repeat with the second piece of dough.",
+      "Whilst the loaves are rising preheat the oven to 180C (170C Fan).",
+      "When risen remove the clingfilm and bake for about 30-35 minutes or until the loaves are golden brown on top.",
+      "Whilst the loaves bake, make the syrup by placing the sugar and water into a small saucepan and bringing to a simmer.",
+      "Once the sugar has fully dissolved turn off the heat and set aside until needed.",
+      "Once the babka has baked remove from the oven and brush liberally with the syrup, it will seem like a lot but trust me and use it all.",
+      "Allow the loaves to cool fully before cutting into them, otherwise the bread will end up doughy and dense.",
+      "If you are freezing one of the loaves, once cooled wrap in two layers of clingfilm and a layer of foil.",
+      "When you come to defrost the loaf leave it at room temperature, still wrapped, for a few hours.",
+      "This way as the babka defrosts the condensation that forms ends up on the outside of the loaf and doesn't effect the quality.",
+      "Fresh from the oven the babka will keep for about three days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "7",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": "Babka Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "100",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "60-70% cocoa solids",
+        "amount": "120",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "120",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Large Pinch Flaked Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Chocolate Pistachio Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": "Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0066f26b441c9924871c7e55d814d50524032babd2b6ab0790fbe6a94e036405",
+    "lineage_hash": "af3f08c0fb773ff01ca88db175cbc775ede485ea09cfa13081175091a004c4dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2018/5/24/chocolate-babka-recipe",
+    "fetchedAt": "2026-08-01T20:20:20.406Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2018/5/24/chocolate-babka-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

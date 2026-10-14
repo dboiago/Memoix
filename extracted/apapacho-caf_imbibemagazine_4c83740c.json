@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Apapacho",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Nutmeg",
+      "Pinole (with Nutmeg)"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the first 4 ingredients into the glass and gently stir. Add the whipping cream to a shaker with an ice cube and shake very hard. Strain over the cocktail, then grate the nutmeg over the top.",
+      "Note: The bar mixes a bit of pinole with nutmeg (4:1) for the garnish, but nutmeg alone works fine if you don’t have pinole."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vermouth Rosso",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh-brewed Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ea2e3e4606a1f839b29ea0d12bcb4253ccc70b4531720d7923997e2703156ed",
+    "lineage_hash": "f811e1490332ed5c0bf4d2f07a239ecac55bbe5d18b25f274184e2efee6285cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/apapacho-irish-coffee/",
+    "fetchedAt": "2026-08-03T23:02:40.710Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/apapacho-irish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

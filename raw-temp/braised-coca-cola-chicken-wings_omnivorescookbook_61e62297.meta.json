@@ -1,0 +1,63 @@
+{
+  "url": "https://omnivorescookbook.com/braised-coca-cola-chicken-wings/",
+  "slug": "braised-coca-cola-chicken-wings_omnivorescookbook_61e62297",
+  "title": "Braised Coca-Cola Chicken Wings",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T05:09:24.391Z",
+  "ldName": "Coca-Cola Chicken Wings (可乐鸡翅)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 tablespoon peanut oil ((or vegetable oil))",
+    "1.5 to 2 lbs chicken wings (, patted dry with a paper towel)",
+    "2  dried chili peppers",
+    "3  green onions (, cut into 4” (10cm) pieces (and extra for garnish, if needed))",
+    "3 slices ginger",
+    "2 tablespoons Shaoxing wine ((or dry sherry))",
+    "1 can  Coca-Cola (12 oz / 350 ml can)",
+    "2 tablespoons soy sauce ((*Footnote 1))",
+    "1 teaspoon salt ((use 1/2 teaspoon salt if you do not plan to serve the dish with rice))"
+  ],
+  "ldInstructionsRaw": [
+    "Heat 1/2 tablespoon oil in a large skillet over medium-high heat until hot. Add the chicken wings, skin side down without overlapping. Let cook without moving until the bottom side turns golden, 3 to 4 minutes. Flip the wings and cook the other side until golden, another 3 to 4 minutes. Turn to medium-low heat and transfer the wings to a big plate.",
+    "Add the remaining 1/2 tablespoon oil and turn to medium-high heat again. Add the chili pepper, green onion and ginger. Stir for 1 minute to release the fragrance.",
+    "Pour in the Shaoxing wine and use a spatula to scrape off any brown bits from the pan. Add the Coca-Cola, soy sauce, and salt. Add the chicken wings. Stir a few times to coat with sauce.",
+    "When the sauce starts to boil, turn to medium heat or the heat level needed to maintain a vibrant boil for a total of 20 minutes. During the first 5 minutes, use a fine mesh strainer to skim off and discard any brown foam from the top of the broth. Check on the sauce every 5 minutes and flip the wings occasionally. During the last 5 minutes, the sauce will reduce to a lower level and you should check on the sauce often, because the sauce will start to thicken very quickly. When the sauce thickens, stir and flip the wings to coat them well with the sauce. Turn off the heat and transfer the wings to a serving platter to prevent the sauce from reducing too much.",
+    "Garnish with green onion if using. Serve hot as a main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "281 kcal",
+    "carbohydrateContent": "13.1 g",
+    "proteinContent": "31.2 g",
+    "fatContent": "11.2 g",
+    "saturatedFatContent": "2.7 g",
+    "cholesterolContent": "93 mg",
+    "sodiumContent": "902 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "10 g"
+  },
+  "htmlIngredientLines": [
+    "1 tablespoon peanut oil (or vegetable oil)",
+    "1.5 to 2 lbs chicken wings , patted dry with a paper towel",
+    "2 dried chili peppers",
+    "3 green onions , cut into 4” (10cm) pieces (and extra for garnish, if needed)",
+    "3 slices ginger",
+    "2 tablespoons Shaoxing wine (or dry sherry)",
+    "1 can  Coca-Cola (12 oz / 350 ml can)",
+    "2 tablespoons soy sauce (*Footnote 1)",
+    "1 teaspoon salt (use 1/2 teaspoon salt if you do not plan to serve the dish with rice)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

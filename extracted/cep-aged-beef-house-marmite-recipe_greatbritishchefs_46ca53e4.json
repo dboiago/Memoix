@@ -1,0 +1,209 @@
+{
+  "recipe": {
+    "name": "Cep, Aged Beef, House Marmite",
+    "time": "1 hr 10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the Marmite. Soak the sourdough in the water with the yeast and sugar for 12 hours, then remove all the bread, squeeze out the liquid and discard the solids. Ferment the liquid for two days at room temperature then place over a high heat and reduce the liquid to a thick Marmite consistency (which will take several hours). This should leave you with about 200ml of Marmite. Once reduced and thick, transfer to a container and set aside",
+      "To make the aged beef emulsion, dice the beef trim into 1-inch pieces, then cover with the oil and warm up to 70ºC. Leave at this temperature for 1 hour then strain and chill the oil",
+      "Once the oil is cold, whisk the egg yolk, sherry vinegar and salt together until well emulsified, then slowly whisk in the beef oil until you have a thick emulsion (it should be a similar consistency to mayonnaise). Check the seasoning and reserve in the fridge for later",
+      "Cook the amaranth in a dry pan over a medium-high heat – keep shaking it occasionally and the grains will eventually pop like popcorn. Once most of the grains have puffed up, remove from the pan and reserve for later",
+      "Take the aged beef fat and render it gently in a pan over a low heat, then add the garlic and thyme sprigs. Bring the fat to a temperature of 85ºC and add the mushrooms, cooking them for 10 minutes, then remove and cut into 1.5cm dice",
+      "Lightly sauté the diced ceps in the butter and beef fat, then add the diced field mushrooms and a teaspoon of the Marmite. Season to taste",
+      "To serve, brush the bottom of the plate with some of the Marmite, then spoon on the mushroom mix. Top with some of the aged beef emulsion and a sprinkling of puffed amaranth, then cover with lots of thinly sliced button mushrooms and finish with a pinch of cep powder and some picked thyme leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sourdough",
+        "unit": "kg",
+        "notes": "toasted and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry-aged Beef Trim",
+        "unit": "g",
+        "notes": "taken from the outside of a piece of dry-aged beef",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Field Mushrooms",
+        "unit": "large",
+        "notes": "peeled and stalk removed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry-aged Beef Fat",
+        "unit": "g",
+        "notes": "or beef dripping",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaranth Grain",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ceps",
+        "unit": null,
+        "notes": "medium size, cut into 1.5cm dice",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry-aged Beef Fat",
+        "unit": "tsp",
+        "notes": "or beef dripping",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cep Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a69647b95883acef071d0909fcb9c6a356b1c611c455ea8806f266047ff4703",
+    "lineage_hash": "14339fc027e6c758e1049fefc42be882e15f1e5e049ec0dd1c35212f608b20bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cep-aged-beef-marmite-recipe",
+    "fetchedAt": "2026-08-03T04:51:28.686Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cep-aged-beef-marmite-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

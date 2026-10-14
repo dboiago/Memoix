@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cannellini bean dip",
+    "time": "10 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all ingredients in a food processor and blend until smooth, or less if you prefer a coarse texture"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tinned Cannellini Beans",
+        "unit": "g",
+        "notes": "drained weight",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4c8d8b53bfdcb90fd8b09df582e19f5fb1b1e16f1fb8fc9218225c3263c9701",
+    "lineage_hash": "bf5df054619efdbbb4656f1a4b4456ac6182c10a9df78a382afacdac85e7d68d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cannellini-bean-dip-recipe",
+    "fetchedAt": "2026-08-03T23:38:30.936Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cannellini-bean-dip-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

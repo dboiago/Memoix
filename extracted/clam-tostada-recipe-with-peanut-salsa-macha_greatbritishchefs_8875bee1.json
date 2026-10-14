@@ -1,0 +1,200 @@
+{
+  "recipe": {
+    "name": "Clam Tostada with Peanut Salsa Macha",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Submerge the clams in cold water to clean. Boil a large pan of water and add the clams. Drain as soon as the shells open and set aside to cool",
+      "Slice the fennel bulb in half and thinly slice using a mandoline. Set aside in a bowl of iced water with a wedge of lemon inside to prevent discolouration",
+      "For the salsa macha, toast the habanero, pasilla and chipotle chillies in a dry frying pan until they release a small amount of smoke (be careful to not burn them), then transfer to a blender. In the same pan, cook the garlic and toast until blackened and charred. Peel, then add to the blender along with the cumin, garlic and star anise, blitzing until you have a coarse powder. Place this mixture into a large heatproof bowl",
+      "Heat the oil to 180°C in a large pan. Being very, very careful, pour the oil over the chilli mixture. Stand back as it may spit and splutter. Mix in the peanuts and set aside",
+      "Remove the clams from their shells. Mix around 2–3 tablespoons of the salsa macha into the clams alongside the lime juice, ponzu and soy. Check the seasoning – the clams should taste bright from the citrus, smoky and spicy from the chilli and salty from the soy",
+      "Place a tablespoon of crushed avocado atop each tostada. Top with slices of fennel, a couple of tablespoons of clams and a few slices of kumquat and chilli. Garnish with coriander and sesame seeds and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Palourde Clams",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ponzu",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedge",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Habanero Chilli",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasilla Chilli",
+        "unit": null,
+        "notes": "dried, or 1 dried guajillo chilli",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chilli",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": "toasted",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Peanuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tostadas",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocados",
+        "unit": null,
+        "notes": "peeled, pitted and mashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kumquats",
+        "unit": null,
+        "notes": "washed and thinly sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "deseeded and finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20a16ec31cf571aecfd12ff866f82360e1fe6902515ddaeb8dd5f75328e910d1",
+    "lineage_hash": "43561011742322d40f848e6252ae099a8e40a12ce481c859492c563a3ba7288d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/clam-tostada-recipe",
+    "fetchedAt": "2026-08-03T07:27:02.948Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/clam-tostada-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

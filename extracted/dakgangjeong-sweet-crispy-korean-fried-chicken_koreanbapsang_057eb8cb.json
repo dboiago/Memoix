@@ -1,0 +1,202 @@
+{
+  "recipe": {
+    "name": "Dakgangjeong (Sweet Crispy Korean Fried Chicken)",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Remove any visible fat. Cut the chicken into bite sized pieces.",
+      "Soak the chicken pieces in milk for at least 30 minutes in the fridge. This step is optional.",
+      "Drain well. Mix with the salt, pepper, rice wine (if you didn’t use milk) garlic, and ginger. Let it sit for 20 to 30 minutes.",
+      "In a pan, add all the sauce ingredients, and stir well. Bring it to a boil. When it starts to bubble, reduce the heat to medium low, and simmer until it thickens slightly, about 3 to 4 minutes. Turn the heat off.",
+      "Coat each chicken piece well with the potato (or corn) starch.",
+      "Pour about 1 inch of oil in to a heavy bottom pan. Use a narrow and deep pan if available, When the oil is sufficiently hot (330°F), drop the chicken pieces in one at a time. Fry them in two batches. Overcrowding will drop the oil temperature too quickly. Cook until light golden brown, about 3 minutes. Remove and set them on a wire rack or a paper towel-lined plate.",
+      "Reheat the oil to 330°F. Deep fry again until golden brown, about a minute or two. You can do the second frying in one batch.",
+      "Heat the sauce over medium low heat. Add the chicken and stir well until the chicken pieces are evenly coated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thigh And/or Breast",
+        "unit": "lb",
+        "notes": "boneless, skinless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Optional",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine If Not Using Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch (or Corn Starch) You Can Use More",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Rice Wine Mirim (미림)",
+        "unit": "Tbsp",
+        "notes": "Matsul (맛술), or Mirin",
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar (or Rice Vinegar)",
+        "unit": "Tbsp",
+        "notes": "alt: other clear vinegar",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "Also see note, 고추장 (Korean red chili pepper paste) Omit for a mild version and add 1 more tablespoon soy sauce",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "alt: oligo syrup (oligodang, 올리고당), rice syrup (jocheong, 조청), or corn syrup - use 4 tablespoons if using syrup",
+        "amount": "3",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "Tbsp",
+        "notes": "alt: seeds, coarsely, chopped",
+        "amount": "1-2",
+        "section": "Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "87adfaa752e83fc57f90ec237e51e251cfa25d763c563117a21f8f82e1ccb365",
+    "lineage_hash": "fc7d444a6a2d2c63a999eca1c0f1ab78c7846bd6af060a3b422c369b11836a9b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.koreanbapsang.com/dakgangjeong-sweet-crispy-chicken/",
+    "fetchedAt": "2026-08-01T20:47:15.303Z"
+  },
+  "rawSource": "https://www.koreanbapsang.com/dakgangjeong-sweet-crispy-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

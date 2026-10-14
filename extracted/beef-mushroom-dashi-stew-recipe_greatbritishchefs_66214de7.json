@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Beef & Mushroom Dashi Stew",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the mushroom dashi. Clean the dried shiitake with a very soft, dry brush to remove any grit or dirt",
+      "In a large container with a lid, immerse the dried mushrooms and kombu in cold water and place it in the fridge. After 8 hours, remove the kombu and leave the mushrooms to soak for another 16 hours at 5°C in the fridge",
+      "Pass through a fine sieve and it's ready to use",
+      "Now make the stew. Add the coconut oil to a large saucepan and brown the beef over high heat, stirring occasionally for about 15 minutes. Set aside",
+      "Stir together the soy sauce, mirin, sugar and (if using) the shiitake powder in a bowl until incorporated",
+      "Add the soy sauce mixture, leeks and 710ml of the mushroom dashi to the browned meat and cook over low heat for 40 minutes, until tender",
+      "Meanwhile, make the rice. Place the rice in a medium saucepan and add the water, along with 100ml of dashi. Cook over a low heat for 10-15 minutes, then rest for 10 minutes before serving",
+      "When ready to serve, add the mushrooms to the stew and cook for a further 2 minutes. Add the watercress, turn off the heat and serve with the rice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Tenderloin",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Japanese Mushrooms",
+        "unit": "g",
+        "notes": "fresh, cleaned and trimmed",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leeks",
+        "unit": null,
+        "notes": "cut diagonally into 4cm pieces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom Powder",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "or rice of your choice",
+        "amount": "210",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "ml",
+        "notes": "basic",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "g",
+        "notes": "about 14 mushrooms, dried",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": null,
+        "notes": "1 postcard-sized piece",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59cd7f17ed9f17e2ba485da9c8f5b1f49c91bde6948ad3ac13619461553201c0",
+    "lineage_hash": "f776e667aefeaac5a1d074d2b5415af6fbdc67659c55d225e8e784bde62313b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-mushroom-dashi-stew-recipe",
+    "fetchedAt": "2026-08-03T12:18:01.744Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-mushroom-dashi-stew-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

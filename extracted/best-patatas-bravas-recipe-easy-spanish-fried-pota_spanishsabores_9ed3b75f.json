@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Patatas Bravas",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "202",
+      "carbohydrateContent": "38.86",
+      "fatContent": "3.75",
+      "proteinContent": "4.71"
+    },
+    "directions": [
+      "Peel the potatoes, then rinse and dry them thoroughly to help them crisp up.  Cut into bite-sized chunks.",
+      "Heat the olive oil 350°F (176°C) in a large skillet over medium heat. Add the potatoes and turn the heat to the lowest setting, then cook for a couple of minutes.",
+      "Remove the potatoes from the oil with a skimmer, and let them cool in the fridge for a few minutes.",
+      "Turn the heat up to high and reheat the oil to 350°F (176°C), then add the potatoes back into the pan. Fry until crispy and golden.",
+      "Use a skimmer to transfer the potatoes to a paper towel-lined plate to cool, and sprinkle with salt to taste.",
+      "Drizzle the bravas sauce over the potatoes, then serve immediately. Serve with toothpicks if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil for Frying",
+        "unit": "C",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Bravas Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75aae233617d15f2405f63bab85621f81fb929312e08e2de19def706005e5b19",
+    "lineage_hash": "442b8f5db7d41444f08a43fce01c994a588d23286886e5d551a4b57a01ad465f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://spanishsabores.com/patatas-bravas-recipe-spanish-fried-potatoes-with-spicy-sauce/",
+    "fetchedAt": "2026-08-02T08:24:44.614Z"
+  },
+  "rawSource": "https://spanishsabores.com/patatas-bravas-recipe-spanish-fried-potatoes-with-spicy-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

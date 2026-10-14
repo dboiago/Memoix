@@ -1,0 +1,69 @@
+{
+  "url": "https://www.baking-sense.com/2019/03/12/cheese-scones/",
+  "slug": "cheddar-cheese-scones_baking-sense_4187f130",
+  "title": "Cheddar Cheese Scones",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:02:39.819Z",
+  "ldName": "Cheese Scones Recipe",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "18",
+    "18 scones"
+  ],
+  "ldCuisine": "American, Irish",
+  "ldCategory": "Breakfast, brunch, Snack",
+  "ldKeywords": "cheesecake, irish, scones",
+  "ldIngredientsRaw": [
+    "2  large eggs",
+    "14 oz buttermilk (1 ¾ cups)",
+    "25 oz unbleached all purpose flour (5 cups, see note)",
+    "2 tablespoons baking powder",
+    "½ teaspoon salt",
+    "2 oz granulated sugar (¼ cup)",
+    "6 oz unsalted butter (cold, cut into 1\" chunks)",
+    "8 oz Cheddar Cheese (cut into ¼&quot; cubes)",
+    "1 bunch scallions (chopped to ¼&quot; pieces)",
+    "flakey sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 375 °F. Line two ½ sheet pans with parchment paper or silicone baking mats.",
+    "In a bowl or measuring cup, whisk together 2&#32;large eggs and 14 oz&#32;buttermilk and set aside. In a larger mixing bowl, whisk together 25 oz&#32;unbleached all purpose flour, 2 tablespoons&#32;baking powder, ½ teaspoon&#32;salt and 2 oz&#32;granulated sugar. Toss in 6 oz&#32;unsalted butter chunks. Use your fingers to work in the butter until the bits are the size of a pea. Toss in 8 oz&#32;Cheddar Cheese cubes and 1 bunch&#32;scallions, chopped.",
+    "Add the buttermilk mixture all at once and mix until just barely combined. Some loose flour may remain at the bottom of the bowl. DON&#39;T OVER MIX.",
+    "Dump the dough onto a floured surface and finish kneading by hand until all the loose flour is absorbed.",
+    "Use your hands to pat the dough on a floured surface until it is ¾&quot;-1&quot; thick. Use a 2 ½-3&quot; biscuit cutter to cut scones. Re-roll the scraps and continue cutting until all the dough is used.",
+    "Line the scones onto the prepared baking sheet, leaving 1&quot; space between. Brush the tops of the scones with buttermilk and sprinkle lightly with flakey sea salt.",
+    "Bake until the scones are golden brown and sound hollow when the bottom is tapped. Turn the trays halfway through baking for even browning. Total baking time 15-20 minutes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 scone",
+    "calories": "296 kcal",
+    "carbohydrateContent": "35 g",
+    "proteinContent": "8 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.3 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "320 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "2 large eggs",
+    "14 oz buttermilk (1 ¾ cups)",
+    "25 oz unbleached all purpose flour (5 cups, see note)",
+    "2 tablespoons baking powder",
+    "½ teaspoon salt",
+    "2 oz granulated sugar (¼ cup)",
+    "6 oz unsalted butter (cold, cut into 1″ chunks)",
+    "8 oz Cheddar Cheese (cut into ¼\" cubes)",
+    "1 bunch scallions (chopped to ¼\" pieces)",
+    "flakey sea salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

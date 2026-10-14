@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Cantaloupe Juice",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glasses",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Put everything in a blender and process until smooth.",
+      "Transfer to pretty serving glasses (or jars) and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "A Cantaloupe",
+        "unit": null,
+        "notes": "about 400 gram",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Drinking Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8eff3b6350c903c71841f882ffac6cc0a31b56a0532eea17984ccb83b7a28d3e",
+    "lineage_hash": "3011ea0280cfe858e194d7cbdbdf4ec5583caf9086af6488c90dbfa631d5c4c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/cantaloupe-juice.html",
+    "fetchedAt": "2026-08-02T11:18:54.356Z"
+  },
+  "rawSource": "https://dailycookingquest.com/cantaloupe-juice.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Carrot & Cabbage Egg Rolls (Chả Giò Chiên Cà Rốt Bắp Cải)",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large bowl, combine ground pork, mushroom, bean thread noodles, green onions and yellow onion. Marinate mixture with sugar, black pepper, sesame oil, salt, oyster sauce and chicken bouillon powder. Set aside.",
+      "In a large skillet, bring 1/2 cup water to a boil. Add and cook for 30 seconds to 1 minute. Add cabbage and toss around until cabbage is limp and moisture has all evaporated. Drain excess water (if any) by pouring the carrot and cabbage through a colander. Add to the ground pork mixture.",
+      "Thaw out the egg roll wrappers if frozen. Separate into individual sheets by pulling them apart slowly. Lay the wrapper in a diamond shape in front of you. Fold the bottom corner of the wrapper up to the center of the wrapper. Add about 1/3 cup filling on the folded corner. Fold the two sides over then roll upward, neatly tucking everything in. Dab top corner with the beaten egg to seal.",
+      "In a wok or tall skillet, heat vegetable oil to 325°F. Fry in small batches for around 5 minutes until egg rolls are golden brown. Transfer to a wire rack to drain off excess oil.",
+      "You can enjoy the eggrolls by themselves or wrapped with lettuce and assorted Vietnamese herbs. Serve with Vietnamese fish sauce dipping sauce (Nuoc Mam Cham). Leftover uncooked egg rolls can be frozen and deep-fried straight from the freezer. Frozen egg rolls take about 10 minutes to cook."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Woodear Mushrooms",
+        "unit": "C",
+        "notes": "rehydrate in water for 30 minutes or until soften then finely mince, dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Thread Vermicelli/cellophane Noodles",
+        "unit": "oz",
+        "notes": "~1 cup, rehydrate in water 30 minutes or until soft, then finely mince, dried",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "trim off ends and slice thinly",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": "small",
+        "notes": "peel and finely dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "peel and thinly shred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "small",
+        "notes": "thinly shred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Menlo All Purpose Wrappers",
+        "unit": null,
+        "notes": "alt: TYJ Spring Roll Pastry Wrappers (40 sheets)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "to seal egg rolls, beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vietnamese Fish Sauce Dipping Sauce (nuoc Mam Cham)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "606ee95e677c56e854c62d59e3d59834ed49f9db8023db277e1593cce9813218",
+    "lineage_hash": "bf268b996204b66e2fdd96c9c3109f82ee4a0aab1329823371b2da5604fe64ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/carrot-cabbage-egg-rolls/",
+    "fetchedAt": "2026-08-01T20:28:00.715Z"
+  },
+  "rawSource": "https://vickypham.com/blog/carrot-cabbage-egg-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

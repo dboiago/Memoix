@@ -1,0 +1,54 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/chipotle-guacamole-recipe/",
+  "slug": "chipotle-guacamole-recipe-copycat_itdoesnttastelikechicken_6d4f2971",
+  "title": "Chipotle Guacamole Recipe (Copycat)",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T09:48:53.034Z",
+  "ldName": "Chipotle Guacamole Recipe (Copycat)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Mexican, Tex-Mex",
+  "ldCategory": "sauce, Side Dish",
+  "ldKeywords": "avocado, chipotle, copycat, guacamole",
+  "ldIngredientsRaw": [
+    "3 ripe avocados",
+    "2 tablespoons lime juice ((about 1 lime))",
+    "1/4 teaspoon salt ((plus more to taste))",
+    "2 tablespoons red onion (finely chopped )",
+    "2 tablespoons fresh cilantro (chopped)",
+    "1/2  jalapeño (finely chopped)"
+  ],
+  "ldInstructionsRaw": [
+    "Mash the avocados: Scoop the avocados into a medium bowl and mash with a fork until chunky but creamy.",
+    "Season the guacamole: Add the lime juice and salt and gently stir to combine. Fold in the red onion, cilantro, and jalapeño. Taste and add more salt or lime juice if needed.",
+    "Serve: Serve right away with tortilla chips, tacos, burrito bowls, or your favorite Mexican-inspired dishes."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1  serving (recipe makes 4 servings)",
+    "calories": "246 kcal",
+    "carbohydrateContent": "14 g",
+    "proteinContent": "3 g",
+    "fatContent": "22 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "156 mg",
+    "fiberContent": "10 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "18 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 ripe avocados",
+    "▢ 2 tablespoons lime juice, (about 1 lime)",
+    "▢ ¼ teaspoon salt, (plus more to taste)",
+    "▢ 2 tablespoons red onion, finely chopped",
+    "▢ 2 tablespoons fresh cilantro, chopped",
+    "▢ ½ jalapeño, finely chopped"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

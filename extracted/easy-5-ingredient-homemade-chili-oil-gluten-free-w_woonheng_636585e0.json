@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Homemade Chili Oil",
+    "time": "5 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all dry ingredients in a heat-safe bowl or mason jar.",
+      "Place oil in a tall shallow saucepan, then heat the oil to around 300-320°F (150-160°C).",
+      "Slowly pour hot oil into the ingredients' jar and stir to combine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chili Flakes Used Crushed Pepper",
+        "unit": "C",
+        "notes": "20g",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce/tamari",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": "use less sugar or omit if preferred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil Use Oil That Can Withstand High Heat",
+        "unit": "C",
+        "notes": "75g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba55eeca057fdfc59b7d13975e6f0dfb1f4fb73181f5bc4948e0e59dcf065ff4",
+    "lineage_hash": "9a418ebc4b07f24b51e495a40740e86086bdcc603506169ddb52c22c72bbccbb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://woonheng.com/easy-homemade-chili-oil/",
+    "fetchedAt": "2026-08-01T16:11:40.901Z"
+  },
+  "rawSource": "https://woonheng.com/easy-homemade-chili-oil/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

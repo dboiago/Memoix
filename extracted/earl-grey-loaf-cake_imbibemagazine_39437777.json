@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Earl Grey Loaf Cake",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To Make the CakePreheat the oven to 350°F (180°C) with an oven shelf in the middle of the oven. Line a small (about 16 oz. or 450 g) loaf pan with baking parchment.",
+      "Add the sugar, flour, and tea leaves to a high-powered blender and blitz briefly to extract the bergamot flavor. Transfer to a large bowl and stir in the baking powder. Add the olive oil and plant-based milk and use a whisk to mix all the ingredients together until fully combined.",
+      "Pour the batter into the lined loaf pan and bake for 30-35 minutes until golden and the top of the loaf is set and springs back when gently pressed with your fingertips, or a skewer inserted into the center of the cake comes out clean.",
+      "With the help of the baking parchment, remove the loaf from the tin and leave to cool on a wire rack with a rimmed baking sheet underneath.",
+      "To Make the IcingSlowly mix the confectioners’ sugar and water together in a small bowl or measuring jug until it is fully combined and smooth.",
+      "Drizzle the icing on top of the cooled cake (still on the wire rack with the baking sheet underneath to catch the drips) and leave to set for 30 minutes to 1 hour. Decorate with the blue cornflower petals.",
+      "This cake keeps at room temperature, well-wrapped in plastic wrap or in an airtight container for up to 5 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Superfine Caster Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6.3",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "oz",
+        "notes": "gluten-free flour will also work",
+        "amount": "7",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Leaves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners’ Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5.6",
+        "section": "For the icing",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.6",
+        "section": "For the icing",
+        "isOptional": false
+      },
+      {
+        "name": "Blue Cornflower Petals",
+        "unit": "pinch",
+        "notes": "dried, to decorate",
+        "amount": "1",
+        "section": "For the icing",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3e22cdc5d424e2a443a670190cc68e35685401244c8e96fcd3aaf9f3dbe293a9",
+    "lineage_hash": "28857920b90321cc9e7c88f1e386bf8d2729dd0257df3669134ea2a04f65d93a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/earl-grey-cake/",
+    "fetchedAt": "2026-08-03T22:37:55.986Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/earl-grey-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

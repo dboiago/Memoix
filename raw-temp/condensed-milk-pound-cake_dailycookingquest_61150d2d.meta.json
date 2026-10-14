@@ -1,0 +1,51 @@
+{
+  "url": "https://dailycookingquest.com/condensed-milk-pound-cake.html",
+  "slug": "condensed-milk-pound-cake_dailycookingquest_61150d2d",
+  "title": "Condensed Milk Pound Cake",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:00:01.819Z",
+  "ldName": "Condensed Milk Pound Cake",
+  "ldTime": "PT0H55M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H40M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": [
+    "cake flour pound cake",
+    "Moist, tender, soft, and fluffy pound cake with sweetened condensed milk"
+  ],
+  "ldIngredientsRaw": [
+    "120 gram (1 cup) cake flour (Note 1)",
+    "3/4 teaspoon baking powder",
+    "1/4 teaspoon salt",
+    "125 gram (4.5 oz/9 tablespoon) unsalted butter, room temperature",
+    "50 gram (1/4 cup) sugar",
+    "1/2 cup condensed milk",
+    "1 1/2 teaspoon vanilla extract",
+    "2 large egg"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 175 Celcius (350 Fahrenheit). Grease and flour an 8.5\"x4.5\" loaf pan, set aside.",
+    "Sift together cake flour, baking powder, and salt in a mixing bowl. Set aside.",
+    "In another mixing bowl, cream together butter and sugar with medium speed until white and fluffy. Add in sweetened condensed milk and vanilla, beat until well mixed. Add eggs, one at a time, and beat until well mixed. Sift in the flour mixture and beat with the lowest speed (or use a spatula) just until you no longer see flour streaks.",
+    "Pour the batter into prepared pan, bake for 35-40 minutes, or until a cake tester comes out clean.",
+    "Cool the cake in the pan for 10 minutes, then carefully remove from pan and cool on a wire rack to room temperature. Cut into slices and serve."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "120 gram (1 cup) cake flour (Note 1)",
+    "3/4 teaspoon baking powder",
+    "1/4 teaspoon salt",
+    "125 gram (4.5 oz/9 tablespoon) unsalted butter, room temperature",
+    "50 gram (1/4 cup) sugar",
+    "1/2 cup condensed milk",
+    "1 1/2 teaspoon vanilla extract",
+    "2 large egg"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

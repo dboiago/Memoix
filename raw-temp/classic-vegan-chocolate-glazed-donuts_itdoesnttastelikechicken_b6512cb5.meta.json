@@ -1,0 +1,70 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/classic-vegan-chocolate-glazed-donuts/",
+  "slug": "classic-vegan-chocolate-glazed-donuts_itdoesnttastelikechicken_b6512cb5",
+  "title": "Classic Vegan Chocolate Glazed Donuts",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T23:34:32.737Z",
+  "ldName": "Classic Vegan Chocolate Glazed Donuts",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT14M",
+  "ldYield": [
+    "6",
+    "6 donuts"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, Dessert",
+  "ldKeywords": "dessert, vegan",
+  "ldIngredientsRaw": [
+    "1 cup all-purpose flour",
+    "1 teaspoon baking powder",
+    "1/4 teaspoon baking soda",
+    "1/4 teaspoon nutmeg",
+    "2/3 cup plant-based milk ((such as soy or almond))",
+    "1/3 cup brown sugar",
+    "2 tablespoons vegan butter, (melted)",
+    "1 1/2 teaspoons vanilla extract",
+    "1 teaspoon lemon juice or apple cider vinegar",
+    "1 cup powdered sugar",
+    "3 tablespoons cocoa powder",
+    "2 tablespoons plant-based milk ((such as soy or almond))",
+    "1/2 teaspoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "To make the donuts:",
+    "To make the chocolate glaze:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "238 kcal",
+    "carbohydrateContent": "49 g",
+    "proteinContent": "2 g",
+    "fatContent": "3 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "81 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "31 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[dry ingredients]",
+    "▢ 1 cup all-purpose flour",
+    "▢ 1 teaspoon baking powder",
+    "▢ ¼ teaspoon baking soda",
+    "▢ ¼ teaspoon nutmeg",
+    "[wet ingredients]",
+    "▢ ⅔ cup plant-based milk, (such as soy or almond)",
+    "▢ ⅓ cup brown sugar",
+    "▢ 2 tablespoons vegan butter,, melted",
+    "▢ 1 ½ teaspoons vanilla extract",
+    "▢ 1 teaspoon lemon juice or apple cider vinegar",
+    "[chocolate glaze]",
+    "▢ 1 cup powdered sugar",
+    "▢ 3 tablespoons cocoa powder",
+    "▢ 2 tablespoons plant-based milk, (such as soy or almond)",
+    "▢ ½ teaspoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

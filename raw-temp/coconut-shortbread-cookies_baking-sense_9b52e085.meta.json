@@ -1,0 +1,64 @@
+{
+  "url": "https://www.baking-sense.com/2022/06/17/coconut-shortbread-cookies/",
+  "slug": "coconut-shortbread-cookies_baking-sense_9b52e085",
+  "title": "Coconut Shortbread Cookies",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T22:56:54.048Z",
+  "ldName": "Coconut Shortbread",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "25",
+    "25 cookies"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": "shortbread",
+  "ldIngredientsRaw": [
+    "8 oz unsalted butter (1 cup, room temperatures (see note *))",
+    "5 oz granulated sugar (2/3 cup)",
+    "1/4 teaspoon table salt",
+    "2 oz Coconut Flour (1/2 cup)",
+    "5 oz all purpose flour (1 cup, see note)",
+    "3 tbsp granulated sugar",
+    "1 tbsp Coconut Flour"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 8 oz&#32;unsalted butter, 5 oz&#32;granulated sugar and 1/4 teaspoon&#32;table salt in a mixer bowl and beat until softened and combined, do not aerate. Add 2 oz&#32;Coconut Flour and mix to combine. Add 5 oz&#32;all purpose flour. Mix until a dough comes together.",
+    "To make square cookies: On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 10&quot;x 10&quot; square. Use the straight edge of a ruler or a bench scraper to square off the edges. Slide the paper on to a sheet pan and chill for 30 minutes. (At this stage the dough can be wrapped frozen for later use). Meanwhile, preheat the oven to 325°F.",
+    "To make &quot;petticoat tail&quot; cookies: On a sheet of parchment paper pat the dough to a small disc. Lightly flour the top of the dough and roll to a 10 round. Use your fingers or a fork to crimp the edges of the round. Use a long knife to score the round into 16 wedges, do not slice all the way through the dough. Poke each wedge with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. (At this stage the dough can be wrapped and frozen for later use). Meanwhile, preheat the oven to 325°F.",
+    "While the dough is chilling, combine 3 tbsp&#32;granulated sugar and1 tbsp&#32;Coconut Flour in a small bowl.",
+    "For square cookies: Remove the pan from the refrigerator and slide the paper with the dough off the pan. Use a pizza cutter or paring knife to cut the dough into twenty five 2&quot; x 2&quot; squares. Slide the dough with the cookies back onto the sheet pan and space them out evenly. Poke each cookie 3x with a fork. Sprinkle the cookies with the coconut sugar, reserving a couple of tablespoons to add after baking.",
+    "For petticoat tails: Remove the pan from the refrigerator and sprinkle the cookies with the coconut sugar, reserving a couple of tablespoons to add after baking.",
+    "Bake the cookies until the center is set and the edges are lightly browned, about 10-20 minutes (shorter for square cookies, longer for petticoat tails). If you&#39;re oven bakes unevenly, rotate the tray halfway through baking. As soon as the cookies come out of the oven, sprinkle them with a light coating of the reserved coconut sugar. For the petticoat tails allow the round to cool completely then use a long knife to cut along the scored lines."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "2 cookie",
+    "calories": "124 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "1 g",
+    "fatContent": "8 g",
+    "sodiumContent": "30 mg",
+    "sugarContent": "7 g",
+    "fiberContent": "1 g",
+    "cholesterolContent": "20 mg",
+    "transFatContent": "1 g",
+    "saturatedFatContent": "5 g",
+    "unsaturatedFatContent": "3 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz unsalted butter (1 cup, room temperatures (see note *))",
+    "5 oz granulated sugar (2/3 cup)",
+    "1/4 teaspoon table salt",
+    "2 oz Coconut Flour (1/2 cup)",
+    "5 oz all purpose flour (1 cup, see note)",
+    "[Coconut Sugar]",
+    "3 tbsp granulated sugar",
+    "1 tbsp Coconut Flour"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

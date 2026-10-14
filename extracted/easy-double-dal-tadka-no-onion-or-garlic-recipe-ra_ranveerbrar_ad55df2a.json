@@ -1,0 +1,289 @@
+{
+  "recipe": {
+    "name": "Double Dal Tadka (No Onion or Garlic)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add toor dal, yellow moong dal, water and rinse it well.",
+      "Keep it aside for further use.",
+      "In a pressure cooker, add ghee, once it's hot, add cumin seeds and let it splutter.",
+      "Add wash dal, ginger, green chillies, salt to taste, water, tender coriander stems, turmeric powder, degi red chili powder, coriander powder and mix it well.",
+      "Cover it with the lid and cook for 3-4 whistles until mushy on medium to high flames.",
+      "Add water, salt to taste and stir well and give it a quick boil.",
+      "Transfer it into the serving bowl, pour the tadka on it and garnish it with coriander sprig.",
+      "Serve hot.",
+      "In a pan, add oil, once it's hot, add cumin seeds and let it splutter.",
+      "Add green chillies, coriander leaves, cooked rice, butter and toss it well on medium flames.",
+      "Transfer it to a serving bowl with prepared dal and garnish it with coriander sprig.",
+      "Serve hot.",
+      "In a pan, add oil, ghee, once it's hot, add bedgi red chili, a pinch of asafoetida and saute it well.",
+      "Add ginger, green chili, degi red chili powder and mix it well.",
+      "Turn off the flame and keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Toor Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Washing Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Moong Dal",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Washing Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Washing Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Washed Dal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stem",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "1",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Jeera Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Bedgi Red Chili",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & finely chopped",
+        "amount": "½",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Double Dal Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "501bfb5442d1b33b7a69b59f6f5133b6ed0bcc8acc14b3e7f50483ccfbd8bb51",
+    "lineage_hash": "7d003f0f2b14004aa48460cefb6fe7a6a6a28bc3ff5f2d8041530e0b3e31839f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/double-dal-tadka/",
+    "fetchedAt": "2026-08-02T16:40:09.374Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/double-dal-tadka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

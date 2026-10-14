@@ -1,0 +1,40 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/blackberry-muffins-recipe",
+  "slug": "blackberry-muffins-recipe_greatbritishchefs_91338811",
+  "title": "Blackberry Muffins Recipe",
+  "byline": "by Shaun Rankin",
+  "fetchedAt": "2026-08-03T06:56:45.488Z",
+  "ldName": "Blackberry muffins",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "350g of plain flour",
+    "3 tsp baking powder",
+    "1 tsp bicarbonate of soda",
+    "150g of sugar",
+    "1 pinch of salt",
+    "3 Freshlay Farms Golden Yolker® eggs",
+    "140g of butter, melted",
+    "120ml of milk",
+    "250g of blackberries"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180C/gas mark 4",
+    "Grease your muffin tin, or line with muffin cases",
+    "Sift the dry ingredients into one bowl and combine the wet ingredients in another bowl",
+    "Add the wet ingredients to the dry bowl and stir to combine. Don’t over work the mixture or you could end up with dense muffins",
+    "Half any of the larger blackberries, then fold them through the mixture",
+    "Divide the mixture between the 12 muffin cases and bake for 20 minutes or until a skewer comes out clean when inserted in the middle",
+    "Remove from the tray and let cool on a wire cooling rack"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

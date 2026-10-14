@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Chocolate Mint Brownies",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 425ºF (218ºC).",
+      "Line a 9 x 13-inch baking pan with foil, shiny side down. Smooth the foil then butter it lightly or coat it with nonstick spray.",
+      "Chop the chocolate and cut the butter into cubes, then warm them together in a medium bowl set over a pan of barely simmering water, stirring occasionally. Remove from heat as soon as both are melted and smooth.",
+      "In the bowl of a stand mixer fitted with the whisk attachment or by hand, whip the eggs, vanilla, salt, instant coffee, and sugar on high speed for about ten minutes until foamy and stiff.",
+      "By hand, stir in the chocolate mixture, then the flour followed by the nuts, if using.",
+      "Smooth half of the batter into the pan. Place a layer of thin mints over the chocolate, breaking the mints into pieces to fill in any large gaps.",
+      "Pour the rest of the batter over the mints and smooth the top.",
+      "Bake the brownies for 35 minutes, rotating the brownies midway during baking.",
+      "When the brownies are done, they will have a firm crust on top but a toothpick inserted into the center should come out wet. Do not overbake the brownies.",
+      "Let the brownies cool completely, then lift them out of the pan and slice into rectangles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsweetened Chocolate",
+        "unit": "oz",
+        "notes": "225g, see Note",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "225g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "Tbsp",
+        "notes": "alt: espresso",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "700g",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "170g, sifted",
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate-covered Thin Mints",
+        "unit": "lb",
+        "notes": "900g, peppermint patties",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "C",
+        "notes": "optional, 150g, pecans, or almonds, toasted and coarsely chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04581581d0ea7523298eedfeac71151e1be3a209d53019370726d9cee9b98c84",
+    "lineage_hash": "23220c7a99070be3c1fe959c38863f21a5f619056df44d20163c0569e6a300ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-mint-brownies/",
+    "fetchedAt": "2026-08-02T21:28:32.725Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-mint-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

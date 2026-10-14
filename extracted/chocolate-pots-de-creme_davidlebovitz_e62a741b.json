@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Chocolate Pots de Creme",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325ºF (160ºC).",
+      "Put the chocolate in a medium bowl. Heat the cream, milk, and salt in a small saucepan. When it begins to simmer, remove it from the heat and pour it over the chocolate. Stir with a whisk until smooth.",
+      "In a medium bowl, whisk together the egg yolks, then whisk in the sugar. Gradually add the melted chocolate mixture while whisking until well-blended. Strain the mixture into a large measuring cup or pitcher, or another bowl.",
+      "Place 6 ramekins or custard cups in a roasting pan or baking dish. Divide the custards amongst the ramekins. Add hot water to the baking dish until it reaches halfway up the outside of the ramekins.",
+      "Cover snugly with foil and carefully place the pan in the oven. Bake until the custards are set around the edges but still slightly soft and jiggly when you nudge them, about 30 to 35 minutes, but check them before as ovens can vary. Remove the pan of custards from the oven and lift off the foil.",
+      "As soon as the custards are cool enough to handle, remove them from the hot water bath and place them on a cooling rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "oz",
+        "notes": "225g, coarsely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "430ml",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole",
+        "unit": "C",
+        "notes": "alt: lowfat milk, 125ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5ea9e644ef9da203056d60368ed090ca81a4109f5c65c463e1d4ecc07c43f2ee",
+    "lineage_hash": "dc3a6010786f6034a6be146fef1caad29bd7f4d987680a4e61cf6a7559900873"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-pots-de-creme-custard-recipe/",
+    "fetchedAt": "2026-08-03T02:52:32.540Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-pots-de-creme-custard-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

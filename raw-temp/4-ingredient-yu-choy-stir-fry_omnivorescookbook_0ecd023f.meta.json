@@ -1,0 +1,49 @@
+{
+  "url": "https://omnivorescookbook.com/yu-choy-stir-fry/",
+  "slug": "4-ingredient-yu-choy-stir-fry_omnivorescookbook_0ecd023f",
+  "title": "4-Ingredient Yu Choy Stir Fry (清炒菜心)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:33:34.955Z",
+  "ldName": "4-Ingredient Yu Choy Stir Fry (清炒菜心)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb (450 g) yu choy",
+    "3 cloves garlic (, coarsely chopped)",
+    "1 tablespoon peanut oil ((vegetable oil))",
+    "1/4 teaspoon salt ((or to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the tough ends of the yu choy. Slice the stem into small bite-size pieces, and cut the leaves into large bite-size pieces. Separate the stems and leaves.",
+    "Heat oil in a large skillet (or wok) over high heat until hot. Add the garlic. Stir a few times to release fragrance.",
+    "Add the yu choy stems. Stir and cook for 30 seconds. Add the leaves. Stir a few times to coat with oil. Sprinkle the salt evenly. Keep stirring until the leaves are just withered and the stems turn tender. Turn to low heat and taste the yu choy carefully. Adjust seasoning by adding more salt, if needed. Transfer everything to a plate and serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "39 kcal",
+    "carbohydrateContent": "1.6 g",
+    "proteinContent": "0.7 g",
+    "fatContent": "3.4 g",
+    "saturatedFatContent": "0.6 g",
+    "sodiumContent": "154 mg",
+    "fiberContent": "0.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb (450 g) yu choy",
+    "3 cloves garlic , coarsely chopped",
+    "1 tablespoon peanut oil (vegetable oil)",
+    "1/4 teaspoon salt (or to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,442 @@
+{
+  "recipe": {
+    "name": "Coconut Dessert",
+    "time": "1 day",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the mint oil, bring a litre of water to the boil, add the caster sugar, then add the mint leaves straight away and cook until just soft - this should take 45-60 seconds",
+      "Remove the leaves from the boiling water and drain them in a colander. Place into iced water and leave for a minute until completely cold",
+      "Drain and squeeze the water out of the mint and place this into the blender with the olive oil, blitz until puréed. Drain the mint oil through muslin cloth",
+      "To prepare the mint powder, mix 50ml of the mint oil and the maltodextrin/absorbit together with a whisk until the oil turns into a powdery consistency",
+      "For the mint syrup, bring the glucose, caster sugar and water  to a simmer, then add the mint. Cook for 30-45 seconds until the leaves are just soft",
+      "Place the mint syrup into the blender and purée until smooth. Pass through a fine sieve, pressing well, then chill the mint syrup instantly, retaining the mint purée for the foam",
+      "Cut the rind off the watermelon and trim to a neat shape. Place the trimmed watermelon into a sous vide bag with 100ml of the mint syrup, then vacuum pack on full and leave in the fridge overnight",
+      "Once ready to serve, cut into rectangles approximately 1cm thick by 2 1/2cm wide and 4cm long",
+      "For the coconut sorbet, bring all the ingredients to a simmer and then freeze in an ice cream maker",
+      "To prepare the coconut jelly, split and scrape the vanilla pods and bring to a simmer with the coconut purée, milk, sugar and salt",
+      "Soak the gelatine leaves in cold water for 5 minutes to soften. Add the soaked gelatine leaves to the mixture and pass this through a fine sieve. Set this in a square tray just over 5mm deep",
+      "Once ready to serve, cut the jelly into 1cm sized cubes",
+      "To make the chilli jelly, split the chillies (making sure there are no seeds left) and simmer with the water, watermelon and sugar for 5 minutes. Take 200ml of the syrup and the chillies and blend together in a blender",
+      "Soak the gelatine in cold water for 5 minutes to soften. Pass through a fine chinois and set with the 2 leaves of soaked gelatine. Set this in a square tray just over 5mm deep",
+      "Once ready to serve, cut the jelly into 1cm sized cubes",
+      "For the coconut foam, bring the sugar and 40ml of the water to the boil to make a syrup. Split and scrape the vanilla pod, then blend the pod, remaining water, lecithin, coconut purée and sugar syrup for a minute and pass through a fine sieve",
+      "For the mint foam, place 75ml of the mint syrup, 25g of the reserved mint purée, the water and lecithin into a blender, whizz and then pass through a fine sieve",
+      "To prepare the Italian meringue for the coconut mousse, bring the sugar, water and glucose to the boil, skimming off any scum. Separate the eggs and once the sugar has reached 110°C, start to whisk in the egg whites",
+      "Bring the sugar to a soft boil. Once it reaches 121°C, remove from the heat. Turn down the mixer and slowly add the sugar. Beat until cool for approximately 15 minutes",
+      "To prepare the mousse, warm the coconut purée up with the split and scraped vanilla pod. Soak the gelatine in cold water for 5 minutes to soften, then add the gelatine and melt. Pass through a fine sieve, then set over a bowl of iced water, stirring occasionally",
+      "Once almost set, fold in the semi-whipped cream, 100g of the meringue and then the Malibu and lime. Place this into small metal square moulds that are 2.5-3cm square and leave to set for 2 hours",
+      "Once set, turn out of the moulds and roll in the dessicated toasted coconut",
+      "Place a sweep of the mint purée onto each plate, followed by the flat piece of watermelon. Place the cubes of the 2 jellies at the back of each plate and add the coconut sorbet",
+      "Add the grated fresh coconut followed by the mint powder, 2 foams, the toasted desiccated coconut and the herb sprigs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Watermelon",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absorbit",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum Type F",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lecithin",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lecithin",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malibu",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "Tbsp",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "Tbsp",
+        "notes": "freshly grated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Thai Basil Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bronze Fennel",
+        "unit": null,
+        "notes": null,
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "527861f624c2b25416ed17c29a83c80fb64c60c09ed24b083c3b9738f1726061",
+    "lineage_hash": "0e08ffb859be4b134b58401ac5fcc1e9e05e05a01134f862b7f620e5d224573c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-dessert-recipe",
+    "fetchedAt": "2026-08-03T20:54:58.259Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

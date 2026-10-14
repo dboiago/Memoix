@@ -1,0 +1,59 @@
+{
+  "url": "https://muybuenoblog.com/avocado-and-tomatillo-salsa/",
+  "slug": "creamy-tomatillo-avocado-salsa-muy-bueno_muybuenoblog_c270cb2a",
+  "title": "Creamy Tomatillo Avocado Salsa - Muy Bueno",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T20:50:14.058Z",
+  "ldName": "Tomatillo Avocado Salsa (Salsa de Tomatillo y Aguacate)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 cups"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, condiment, Side Dish",
+  "ldKeywords": "authentic Mexican salsa recipe, avocado salsa recipe, green tomato salsa",
+  "ldIngredientsRaw": [
+    "8   tomatillos (husks removed, rinsed)",
+    "1   Serrano peppers (stemmed - or up to 2 )",
+    "2  jalapeño peppers (stemmed)",
+    "1  unpeeled clove garlic",
+    "3  large avocados (pitted and peeled)",
+    "1  handful cilantro",
+    "1-2 cups water",
+    "1 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to broil. Roast the tomatillos, serrano peppers, jalapeño peppers, and garlic on a foil-lined baking sheet until blackened all over, about 5 minutes. Flip them over and roast the other sides for an additional 4 to 5 minutes. Watch carefully to prevent the tomatillos from burning.",
+    "Place roasted peppers in a plastic bag, close the bag and allow the peppers to steam until the skins loosen, about 10 minutes.",
+    "While the peppers are cooling off, peel off skin from garlic and discard. After the peppers have steamed, peel skin off and discard.",
+    "Place in a blender the cooled tomatillos, roasted and peeled peppers, roasted garlic, avocados, cilantro, add water slowly and blend until desired consistency. Season with salt."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 cup",
+    "calories": "267 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "4 g",
+    "fatContent": "23 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "600 mg",
+    "fiberContent": "12 g",
+    "sugarContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 8  tomatillos, husks removed, rinsed",
+    "▢ 1  Serrano peppers, stemmed – or up to 2",
+    "▢ 2 jalapeño peppers, stemmed",
+    "▢ 1 unpeeled clove garlic",
+    "▢ 3 large avocados, pitted and peeled",
+    "▢ 1 handful cilantro",
+    "▢ 1-2 cups water",
+    "▢ 1 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

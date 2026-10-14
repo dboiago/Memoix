@@ -1,0 +1,57 @@
+{
+  "url": "https://www.baking-sense.com/2020/03/12/american-buttercream/",
+  "slug": "american-buttercream-frosting_baking-sense_472d52a3",
+  "title": "American Buttercream Frosting",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T20:34:36.485Z",
+  "ldName": "American Buttercream Recipe",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": null,
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy, icing",
+  "ldIngredientsRaw": [
+    "12 oz unsalted butter (room temperature)",
+    "20 oz confectioner's sugar (5 cups)",
+    "2 tablespoon vanilla extract",
+    "2 oz whole milk (¼ cup)",
+    "3 oz light corn syrup (¼ cup)",
+    "¼ tsp table salt"
+  ],
+  "ldInstructionsRaw": [
+    "Place 12 oz&#32;unsalted butter in the bowl of a stand mixer or in a large mixing bowl, Use the paddle or beater to beat the butter on medium speed until it is softened and smooth.",
+    "With the mixer running on low, slowly add 20 oz&#32;confectioner's sugar and mix until completely combined. Run the mixer on medium speed for 2-3 minutes.",
+    "Scrape the sides of the bowl and the paddle. Switch to the whisk attachment. On low speed, whisk 2 tablespoon&#32;vanilla extract, 2 oz&#32;whole milk, 3 oz&#32;light corn syrup and ¼ tsp&#32;table salt.",
+    "Beat on medium until light and fluffy, about 3-4 minutes. Use right away. Can be stored at room temperature for 1-2 days or frozen for up to 3 months."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 e",
+    "calories": "174 kcal",
+    "carbohydrateContent": "40 g",
+    "proteinContent": "0.3 g",
+    "fatContent": "17 g",
+    "saturatedFatContent": "11 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "46 mg",
+    "sodiumContent": "43 mg",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz unsalted butter (room temperature)",
+    "20 oz confectioner’s sugar (5 cups)",
+    "2 tablespoon vanilla extract",
+    "2 oz whole milk (¼ cup)",
+    "3 oz light corn syrup (¼ cup)",
+    "¼ tsp table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,363 @@
+{
+  "recipe": {
+    "name": "Cured Sea Bass with Avocado and Ponzu",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by pickling the cucumber (this can be done a day in advance). Peel the cucumber (reserving the skin), then halve it lengthways and scoop out the watery seeds. Cut the cucumber into small 1cm pieces, either with a knife or a small Parisienne scoop. Season the cucumber flesh with salt and place in a colander to drain",
+      "Meanwhile, place the cucumber skin, yuzukosho, white balsamic and cider vinegar in a blender and blitz, drizzling in a little olive oil to slightly emulsify the mixture. Pass the mixture through a sieve and use it to coat the salted cucumber. Cover and leave in the fridge to pickle for at least a few hours",
+      "For the squid ink tuille (which can also be made in advance), place the tapioca pearls in a small saucepan and pour over enough water or fish stock to just cover. Bring to a simmer and cook until the pearls are tender (around 15 minutes). Remove from the heat and stir in enough squid ink to turn the mixture black, then blitz a third of the mixture in a blender before folding it back into the rest",
+      "Spread the tapioca mixture out on a non-stick baking mat and dehydrate in an oven set to 60°C (or a dehydrator if you have one) for several hours until it snaps when bent. Bring a deep pan of oil to 200°C, break the tuilles into shards and deep-fry for a few minutes until crisp and puffed up. Season lightly, drain on kitchen paper then store in an airtight container until ready to serve",
+      "For the white ponzu, place the mirin, sake, rice vinegar, bonito, kombu, coriander seeds and shiitake mushroom in a saucepan over a medium heat. Bring to a simmer, cook for 5 minutes, then remove from the heat and add the orange slice. Leave to cool, then stir in the ponzu and white soy. Place in the fridge to infuse while you prepare the rest of the dish",
+      "Cure the seabass by mixing the peppercorns, coriander seeds, sugar and salt together in a bowl. Add the zest and juice of the 3 fruits, mix together well, then use this to coat the seabass liberally. Leave to cure in the fridge for 2 hours (or slightly longer, depending on the size and shape of your seabass)",
+      "While the fish cures, make the avocado mousse. Halve and destone the avocado, then scoop out the flesh into a blender. Zest a quarter of the lemon and add to the blender, along with the lemon oil, ginger and a pinch of salt. Blitz until smooth, then taste and add salt, lemon juice and white balsamic vinegar until you’re happy with the flavour. Transfer to a squeezy bottle and keep refrigerated until needed",
+      "When ready to serve, wash the cure off the seabass and dice into chunks. Finely slice the radish (using a mandoline if you have one) and keep the slices in iced water to crisp up. Pass the white ponzu through a sieve into a clean jug, and drain the cucumber from the pickling liquid",
+      "To serve, divide the seabass between 4 bowls and pour over some of the white ponzu. Pipe dots of the avocado mousse on top and add some pickled cucumber. Finish with the squid ink tuilles, chilli, radish, shiso cress and caviar (if using). Sprinkle over a little togarashi and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wild Sea Bass",
+        "unit": "g",
+        "notes": "skinned",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Peppercorns",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "ripe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Oil",
+        "unit": "g",
+        "notes": "or lemon-infused olive oil",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bonito Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ponzu",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yuzu Koshō",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Pearls",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Squid Ink Sachet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "or fish stock, as needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radish",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso Cress Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Togarashi",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caviar",
+        "unit": null,
+        "notes": "(optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f19330cc7a7633f8dc8bf1c367fbc36b3ac79a75878b1936543c7e82d95b2de",
+    "lineage_hash": "b1119fd201b39fcf2691b4932e7d9f5252cea400639e839327c09e5d197bf77d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/seabass-avocado-ponzu-recipe",
+    "fetchedAt": "2026-08-03T04:09:35.419Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/seabass-avocado-ponzu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

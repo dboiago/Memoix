@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Chinese Chicken Noodle Soup",
+    "time": "25 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "291",
+      "carbohydrateContent": "17.3",
+      "fatContent": "13.4",
+      "proteinContent": "26.2"
+    },
+    "directions": [
+      "Heat the oil in a 3.5 qt pot or dutch oven over medium heat until hot. Add the chicken thighs. Cook undisturbed for a minute or until the bottom turns light golden.",
+      "Flip the chicken thighs. Add the garlic, ginger, green onion, cumin, and Sichuan peppercorns. Cook for 1 minute, stirring occasionally, until the spices release fragrance.",
+      "Add the Shaoxing wine, stock, cilantro, and bay leaf. Bring to a boil over medium-high heat, then reduce to a simmer. Cook covered for 20 minutes.",
+      "Meanwhile, cook the noodles in a separate pot according to package directions.",
+      "Remove the chicken with a pair of tongs and transfer it to a plate. Use two forks to remove and discard the chicken skin. Then use the forks to shred the chicken meat.",
+      "Use a mesh colander to remove the solid ingredients and discard them.",
+      "Add the soy sauce and taste the broth to adjust the seasoning. Heat over medium-high heat again, to return to a boil.",
+      "Add the carrots and cook for 3 minutes. Add the bok choy for another minute or until it reaches the desired texture. Add back the shredded chicken and give it a stir, so it warms up again.",
+      "Transfer the noodles, the broth and vegetables to serving bowls. Garnish with a sprig of cilantro and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": "or chicken fat",
+        "amount": "1",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Thighs (or Boneless Skinless Thighs)",
+        "unit": "pcs",
+        "notes": "*footnote 2, bone-in, skin-on",
+        "amount": "2",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "4",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "½",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "1",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "or low-sodium chicken broth",
+        "amount": "4",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "bunch",
+        "notes": "about 1 cup packed, including leaves and stems",
+        "amount": "½",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Broth (*Footnote 1)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "½",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Noodles",
+        "unit": "oz",
+        "notes": "*Footnote 3, dried",
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Bok Choy",
+        "unit": null,
+        "notes": "cut into 6 pieces lengthwise",
+        "amount": "3",
+        "section": "Soup",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "Soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fd7de892530e695efc35355f41c555b479ebd1ea01c8b6feca253e78adc3f0c",
+    "lineage_hash": "b7c0f812e37c7413e4b40d794af044d501d2f756dea251011cd9129e12311269"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-chicken-noodle-soup/",
+    "fetchedAt": "2026-08-02T03:50:05.948Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-chicken-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

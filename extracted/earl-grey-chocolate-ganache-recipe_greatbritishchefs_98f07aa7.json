@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Earl Grey Chocolate Ganache",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the ganache. Make up the Earl Grey tea with the hot water and leave to steep for several minutes to ensure a strong flavour",
+      "Strain the tea into a pan with the sugar and bring to a simmer. Place the chopped chocolate in a large bowl, then pour over the hot sweetened tea, whisking together until the chocolate is smooth and glossy",
+      "Line a 15cm square baking tin with a double layer of cling film. Pour in the ganache and level the surface. Chill in the fridge for at least 2 hours until fully set",
+      "Lay the rhubarb pieces in a single layer across a large baking tray or ovenproof dish. Sprinkle over the sugar and vodka then cover everything with foil. Cook in the oven for 20 minutes then set aside to cool, still covered with the foil",
+      "Once cool, transfer the rhubarb pieces to kitchen towel to drain off any excess liquid. Pour the remaining cooking liquor from the tray into a small pan and place over a medium heat. Allow to reduce for 5 minutes or until syrupy",
+      "To serve, divide the pieces of rhubarb between serving plates, lining up neatly in rows. Swirl over some of the reduced rhubarb syrup",
+      "Remove the set ganache from the fridge and turn out onto a large piece of greaseproof paper. Peel off the cling film and cut into portions the same size as the rhubarb. Dip the knife in hot water before cutting to help give a neat edge",
+      "Place the cut ganache on top of the rhubarb. Use a large knife or vegetable peeler to shave the white chocolate into thick curls and shards then scatter on top of the ganache",
+      "Sprinkle over the dried rose petals to garnish. If desired, decorate with a little edible gold leaf for an added flourish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Earl Grey Tea Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rhubarb",
+        "unit": "g",
+        "notes": "cut into 7.5cm lengths",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d3de1522b2850762ad2ea6391350a328b63159297e37c27580d3fb95bf16e396",
+    "lineage_hash": "bd9dc4e1a6bffbacdb71e028d497d2c5638e3eb9629d2b9c10b3b9c985f72f34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/earl-grey-chocolate-ganache-recipe",
+    "fetchedAt": "2026-08-03T12:51:45.697Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/earl-grey-chocolate-ganache-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

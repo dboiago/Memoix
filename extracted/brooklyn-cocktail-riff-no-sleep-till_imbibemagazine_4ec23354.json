@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Brooklyn Cocktail Riff: No Sleep Till",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice to chill, then strain into a glass.",
+      "Coriander-Infused Dry VermouthAdd 15 grams of crushed coriander seed to one 750 ml. bottle of dry vermouth into a sealed freezer bag and submerge in a very hot water bath for 15 minutes (or sous vide at 145 degrees F). Strain and rebottle for use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": "Scotch Lodge uses Los Vecinos",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": "Scotch Lodge uses Glenmorangie 10 year",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amer Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander-infused Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2da92b3ccde250610c6a59a40ca10b2f8307309c988ecdebf23aae811e141e2f",
+    "lineage_hash": "d72ffc5f5e18498bb74d0335e9899a8fbe499741e665f7fa67770b47c3df5b06"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/no-sleep-till-brooklyn-cocktail-riff/",
+    "fetchedAt": "2026-08-04T02:01:21.544Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/no-sleep-till-brooklyn-cocktail-riff/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

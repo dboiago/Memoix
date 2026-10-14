@@ -1,0 +1,190 @@
+{
+  "recipe": {
+    "name": "Chinese Duck Stir Fry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "385",
+      "carbohydrateContent": "13.3",
+      "fatContent": "20.4",
+      "proteinContent": "36.8"
+    },
+    "directions": [
+      "To marinate the duck: Combine the duck, Shaoxing wine, grated ginger, salt and cornstarch in a medium bowl. Mix well with your hands until the duck is evenly coated.",
+      "Mix the 2 teaspoons of Shaoxing wine and 2 teaspoons soy sauce together in a small bowl.",
+      "Combine the cumin powder, chili flakes and salt in another small bowl.",
+      "To make the stir fry: Cook the sliced duck skin in a large skillet or wok over medium heat, until the oil has rendered and the skin has turned crispy. Remove and discard the dark skin, reserving the oil. Add the duck without overlapping. Sear until the bottom side turns golden brown, 1 to 2 minutes. Flip to cook the other side for another minute or so. Transfer the duck to a big plate, reserving the oil in the pan.",
+      "Add the ginger, garlic, chili pepper, and ground Sichuan peppercorns. Stir and cook over medium heat for 30 seconds, to release fragrance.",
+      "Turn to medium-high heat and add the chili pepper and red pepper. Cook over medium-high heat for 1 minute, until al dente.",
+      "Add back the cooked duck. Pour in the Shaoxing wine and soy sauce mixture. Sprinkle the cumin powder mixture evenly over everything. Cook and stir until evenly coated, 1 to 2 minutes. Turn to low heat and taste the duck. Sprinkle with more salt to adjust the seasoning if needed. Turn off the heat and transfer everything to a large serving plate. Serve hot as a main dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breast (about 1 Lb)",
+        "unit": null,
+        "notes": "skin removed, sliced against the grain into 1/8” (3mm) thick pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "1",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "thinly sliced into coin sized pieces",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "sliced into 1/3” (1cm) pieces, white and green parts separated",
+        "amount": "2",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "dried, halved and seeds removed",
+        "amount": "4-5",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Anaheim Chili Pepper (or Other Hot Pepper You Prefer)",
+        "unit": null,
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": "or 1 whole pepper if not using chili pepper",
+        "amount": "½",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f9dc948ff61352ab7813bffbd377da281ecf42a16ad07ef39fe77bbdd612fba",
+    "lineage_hash": "4846e22b25f4066be05595ab2b7cfe17386947706609aa6f8ea4c711b744b615"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-duck-stir-fry/",
+    "fetchedAt": "2026-08-02T07:50:53.921Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-duck-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

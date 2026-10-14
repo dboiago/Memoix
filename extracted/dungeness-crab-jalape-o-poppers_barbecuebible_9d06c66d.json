@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Dungeness Crab Jalapeño Poppers",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the top off each jalapeño, and using a pepper corer or the blade of a vegetable peeler, carefully remove the seed core from each pepper. Reserve the tops. Arrange the peppers upright in a chile roasting rack.",
+      "In a small mixing bowl, combine the cream cheese, lemon zest, and paprika and stir vigorously with a wooden spoon until smooth. Stir in the crab. Fill each pepper with this mixture. Wrap a strip of bacon around each pepper and secure with a toothpick. Replace the tops.",
+      "Set up your grill for indirect grilling and preheat to medium-high. Put the rack with the chile peppers on the grill grate away from heat. Toss the wood chips, if using, on the coals. Smoke-roast until the bacon is browned, the chiles are tender, and the filling is bubbling, 20 minutes. Dig in."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jalapeño Peppers",
+        "unit": "large",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "at room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet or Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dungeness Crab Meat",
+        "unit": "oz",
+        "notes": "or other crab meat",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strips Thin-sliced Bacon",
+        "unit": null,
+        "notes": "each strip cut crosswise into thirds",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0a96b90da77a86e74da9fd7f0958b919db8166655417e9ecabd12f18010c30a",
+    "lineage_hash": "08a6e3ec727fae7273052999246e52ae9bab510747865197313d549a851a415a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/dungeness-crab-jalapeno-poppers/",
+    "fetchedAt": "2026-08-03T09:38:08.454Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/dungeness-crab-jalapeno-poppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

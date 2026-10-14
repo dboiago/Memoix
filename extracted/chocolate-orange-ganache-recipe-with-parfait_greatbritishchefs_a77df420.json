@@ -1,0 +1,324 @@
+{
+  "recipe": {
+    "name": "Chocolate & Orange Ganache Recipe With Parfait",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the orange purée, cover the oranges with cold water, bring to the boil, and once boiling, remove from the heat and refresh under cold water. Repeat this process 10 times",
+      "Then, cut the oranges into small pieces. Place in a pan and add the 75g of sugar and the orange juice, whisking as you sprinkle. Place on the heat, and simmer until the orange is tender",
+      "Mix the 5g of sugar with the agar agar and sprinkle on to the orange. Boil for 2 minutes, then pour into a dish and set in the fridge",
+      "Once set, place into a blender and blend until completely smooth. Pass through a fine seive, and reserve in the fridge",
+      "To make the chocolate liquor ganache, make a creme anglaise. Put the milk and the cream in a pan on the stove. Whisk the egg yolks and dextrose together. Bring the milk and cream to the boil then pour onto the egg yolk mixture",
+      "Mix well and return to a clean pan. Cook the anglaise to 86°C, then pass through a fine seive and chill over a bain marie. Blend in the xanthan gum using a hand blender",
+      "Melt the dark chocolate over a bain marie, melting the cacao butter in a separate pan. Pour the anglaise slowly onto the dark chocolate mixture and emulsify using the hand blender",
+      "Continue to blend and gradually pour in the melted cacao butter and the orange liquor. Pour into an airtight container and rest in the fridge over night",
+      "For the chocolate orange ganache, soak the gelatine in cold water. Heat the milk in a pan, and add the drained gelatine. Mix well",
+      "Melt the chocolate over a bain marie to 45°C. Warm the orange purée in a suitable sized pan, add to the milk and mix well. Melt the cacao butter in a pan",
+      "Then pour the purée slowly onto the chocolate and emulsify using the hand blender. Continue to blend and gradually pour in the cacao butter.  Pour into a dish, then leave to rest in the fridge until set",
+      "Once set, pipe with a 2cm nozzle onto cling film 12cm long, wrap tightly, then freeze",
+      "When frozen, cut the ganache down to 10cm and remove the cling film.  Leave in the fridge to defrost (this should take 30 – 35 minutes)",
+      "To make the grue nib tuile, cook the sugar and glucose to 150°C. Stir in the butter and grue nib, then spread on a silicone baking mat and leave to cool",
+      "Once cool, tip into a blender and blitz. Spread thinly back on the silicone baking mat and cook for approximately 5 minutes at 180°C/Gas mark 6. While still hot, cover with greaseproof paper and roll out as thin as possible",
+      "Remove from the tray and turn over. Allow to cool slightly and peel the sheet off, then break into shards",
+      "For the orange jelly, soak the gelatine in cold water, then take ¼ of the orange juice and add the agar agar to it and allow to sit for 20 minutes",
+      "Place onto the stove and boil. Then,  remove from the stove, add the drained gelatine and mix thoroughly. Whisk in the remaining orange juice. Place 115g into a suitable sized tray or dish, put into the fridge and allow to set",
+      "For the orange parfait, soak the gelatine in cold water. Line a wooden mould (19 x 9 x 0.7 cm) with cling film. Place the yolks in a bowl and start to whisk slowly",
+      "Cook the sugar and water to 121°C, then pour the sugar over the egg yolks and continue to whisk. Add the drained soaked gelatine, and whisk until cold",
+      "Remove from the bowl and place into a clean bowl, then whisk in the orange purée. Whisk the cream to a soft peak, then fold the cream into the sabayon mix",
+      "Pour into the mould and place in the freezer. Once set, cut out with the 2cm cutter",
+      "To serve, position the chocolate orange ganache between 12 and 4 o’clock of the plate – just off centre. Pipe random blobs of orange purée around the ganache",
+      "Using a hot teaspoon, position 2 quenelles of the chocolate liquor ganache in front of the chocolate orange ganache. Now scatter orange segments around the plate",
+      "Using a teaspoon, put drops of orange jelly around the plate. Crush some of the cocoa nib tuile and sprinkle over the garnish",
+      "Now stick 6 shards of the tuile into the chocolate orange ganache. Finish with 3 pieces of orange parfait"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Purée",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curacao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Uht Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "65% Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curacao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "47",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": "whipped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Purée",
+        "unit": "ml",
+        "notes": null,
+        "amount": "133",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grue Nib",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4130a613f13e3a2c449bf98f8ebd5f46ea20e6bfcae7f48b42f1a9a19912ad64",
+    "lineage_hash": "c346bc7ca557fa1f824917e2e21076400252e3868c19cd679aa2538c7046584a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-and-orange-ganache-orange-parfait",
+    "fetchedAt": "2026-08-03T21:34:04.613Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-and-orange-ganache-orange-parfait",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

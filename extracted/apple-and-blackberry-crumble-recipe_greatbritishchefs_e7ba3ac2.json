@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Apple and Blackberry Crumble",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the crumble topping, combine all of the ingredients in a food processor and blend until they resemble breadcrumbs",
+      "Spread out the crumble on a baking tray and bake in the oven for 30-40 minutes, being sure to stir the crumble mixture every 10 minutes. Remove when the mixture is golden-brown and set aside to cool",
+      "To make the apple and blackberry filling, peel and core the apples then cut them into even-sized pieces, about 3-4cm wide",
+      "Put a heavy-based saucepan over a medium heat and add the butter. When it starts to foam, add the apple pieces",
+      "Cook gently for 5–8 minutes until the apple is just becoming tender, then add the blackberries and sugar and continue cooking for a further 8–10 minutes",
+      "Spoon the filling into an ovenproof dish and sprinkle liberally with the crumble topping. Bake for 10–12 minutes before serving with hot custard, cream, vanilla ice cream, or all three!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "nibbed",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "drops",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edbd5043ba474c6e6ff4f29aaf03fcb66023d77aba11224e79eb68f98e0374af",
+    "lineage_hash": "2659cdb0e3764d64b816bf199dd403425b52a73c257b1c943e346c9731aebc84"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-and-blackberry-crumble-recipe",
+    "fetchedAt": "2026-08-03T16:21:36.243Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-and-blackberry-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

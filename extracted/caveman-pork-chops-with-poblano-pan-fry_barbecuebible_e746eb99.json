@@ -1,0 +1,55 @@
+{
+  "recipe": {
+    "name": "Caveman Pork Chops with Poblano Pan-Fry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build a charcoal fire, and using a grill hoe, rake the coals into an even layer. (Leave the front third of your grill coal-free.) When the coals glow orange, fan them with a newspaper to disperse any loose ash.",
+      "Generously—and I mean generously—season the pork chops on both sides with salt and pepper.",
+      "Lay the chops directly on the embers. Grill until cooked to taste, 4 to 5 minutes per side for medium (145 degrees), turning with tongs. (Wear leather gloves to protect your hands.)",
+      "Using tongs, lift the chops out of the fire, shaking to dislodge any clinging embers. Using a stiff-bristled basting brush, brush off any loose ash and arrange the chops on a wire rack over a rimmed baking sheet. Let rest for 2 minutes.",
+      "Meanwhile, make the Poblano Pan-Fry: Pour the oil in the cast-iron skillet (it helps to use a long-handled skillet) and heat it directly on the embers. Add a strip of pepper. When bubbles dance around it, the oil is ready. Add the poblano, peppers, jalapenos, shallots, and mint. Cook until the peppers begin to brown, 2 minutes. Pour the sizzling peppers and oil over the pork chops and dig in!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Thick Pork Chops",
+        "unit": null,
+        "notes": "each about 1 1/2 inches thick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4046d2602b41ef8fc78cce434a34267fe9c18ba8f382d423559b04c12d7240ea",
+    "lineage_hash": "05b96beb1920db5bc83a3dc6cf9bf3a6236a4366d77c56fd948b327b348c809a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-pork-chops-poblano-pan-fry/",
+    "fetchedAt": "2026-08-03T05:33:12.748Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-pork-chops-poblano-pan-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

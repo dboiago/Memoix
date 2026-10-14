@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Caveman Tri-Tip with Ember Salsa",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Build a charcoal fire (preferably with natural lump charcoal) and rake the coals into an even layer. (Leave the front third of your grill coal-free.) When the coals glow orange, fan them with a newspaper to blow off any loose ash.",
+      "Make the salsa: Using long-handled tongs, lay the tomatoes, onion, poblano, and jalapeños directly on the embers. Grill until the vegetables are charred on the outside, but still raw inside, turning with tongs. You’ll need about 2 minutes for the tomatoes, 6 minutes for the onion, 5 minutes for the poblano, and 1 minute for the jalapeños. Transfer to a heatproof platter to cool. Scrape any cinders or really burnt parts off the veggies and cut into ¼-inch dice. Place in a mixing bowl with the cilantro and lime juice. Stir to mix, adding salt and pepper to taste. The salsa should be highly seasoned. Note: you can prepare the salsa up to 4 hours ahead to this stage (but of course, that would require you lighting your grill twice).",
+      "Grill the tri-tip. Just before serving, generously, and I mean generously, season the meat on both sides with salt and pepper. Place the tri-tip directly on the embers. Grill until cooked to taste, about 2 minutes per side for medium-rare, turning with tongs.",
+      "Using tongs, lift the tri-tips off of the fire, shaking to dislodge any clinging embers. Using a natural bristle basting brush, brush off any loose ash and arrange the steaks on a platter. Let rest for 2 minutes, then slice and serve, with the ember salsa spooned over the meat or served on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poblano Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly and Coarsely Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3c1c318d06991ea2f74786c1ed034c845448cddc5987f868f3a5a3721dd7cca6",
+    "lineage_hash": "7586ad2860048e2e2ae7f39fec71a307b12e271932ab5dfa80c1506ca2f0ce99"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/caveman-tri-tip-with-ember-salsa/",
+    "fetchedAt": "2026-08-03T04:14:48.837Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/caveman-tri-tip-with-ember-salsa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chai Town: A Malört Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a mixing glass with ice. Stir and strain over a large ice cube in a glass. Express orange peel across the top and discard. Garnish.",
+      "Golden Raisin and Chai Spice-Infused Bourbon Peel the ginger with a spoon and then chop into small pieces; chop the golden raisins; smash the spices into bits. Combine spice blend with bourbon in a sealable jar to infuse for 24 hours. Strain and store for up to 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Golden Raisin and Chai Spice-infused Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocchi Americano",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jeppson's Malört",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dolin Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisin and Chai Spice-infused Bourbon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Raisins",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": "whole",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn",
+        "unit": "g",
+        "notes": "whole",
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": "g",
+        "notes": "whole",
+        "amount": "3.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9b601b018cfb081f1c7ac8f30b774f0d1f96dde028c7e5d5d4e38eac2956237",
+    "lineage_hash": "b9c1401729b80f567e9bbcf8c62ce499dbab442d3e402f439e8494e4bec24f42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chai-town-malort-cocktail/",
+    "fetchedAt": "2026-08-03T21:38:53.002Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chai-town-malort-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

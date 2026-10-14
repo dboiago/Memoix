@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Confetti Sugar Cookie Squares",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "48",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 ºF (180 ºC). Lightly grease a 9-x-13-inch (3 L) pan and line it with parchment so that the paper comes up the sides.",
+      "Cream the butter and sugar by hand in a large mixing bowl, until fluffy. Beat in the egg. In a separate bowl, sift the flour, cream of tartar, baking powder and salt. Add this all at once to the butter mixture and stir until the mixture is an even but rough crumbly texture (it will not come together as a dough). Stir in the sprinkles. Press this into the prepared pan and bake for about 20 minutes, until it just begins to brown at the edges. Cool the cookie in the pan on a rack completely before frosting.",
+      "For the frosting, use electric beaters or a stand mixer fitted with the paddle attachment to beat the butter until smooth. Add about half of the icing sugar and beat in first on low speed, and then increase to medium-high and beat until fluffy and scarping down the sides of the bowl once or twice. Add the cream and vanilla and beat in until smooth. Add the remaining icing sugar and beat again on low and then increasing to medium-high, until the frosting is fluffy. Spread this over the cookie base and top with sprinkles. Let the pan sit uncovered for an hour and then cut the cookies into squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Coloured Sprinkles",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cookie:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "3¼",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Half-&-half Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Coloured Sprinkles",
+        "unit": null,
+        "notes": "for décor",
+        "amount": "0",
+        "section": "Frosting:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b8069890d1ad37df98d488a72626960efbc99551bb1383b4c8202133629c83a",
+    "lineage_hash": "a8cb28b737e5c485753f7da1eecf4e69dd04b0637aedf0a916adeb472a38a745"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/confetti-sugar-cookie-squares/",
+    "fetchedAt": "2026-08-01T19:37:57.776Z"
+  },
+  "rawSource": "https://annaolson.ca/project/confetti-sugar-cookie-squares/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

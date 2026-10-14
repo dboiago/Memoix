@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Air Fryer Korean BBQ Chickpeas",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "154",
+      "carbohydrateContent": "21",
+      "fatContent": "5",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "AIR FRYER METHOD (FASTER!)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Canned Chickpeas (400g / 15 Ounces)",
+        "unit": null,
+        "notes": "rinsed & well-drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes (gochugaru)",
+        "unit": "tsp",
+        "notes": "alt: cayenne pepper powder, 1/4 tsp to 1/2 tsp",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fa4a2fedcca97bb3039d4a8b68963c7f691de32ef101b088248a49a2b67303d",
+    "lineage_hash": "6ec762eb3498db435a1a390e237b998c9ab8a7db0b6a389ce397bda6823aa72c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/air-fryer-chickpeas/",
+    "fetchedAt": "2026-08-01T22:00:48.253Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/air-fryer-chickpeas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

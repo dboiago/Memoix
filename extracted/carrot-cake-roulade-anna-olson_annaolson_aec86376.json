@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Carrot Cake Roulade",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C) and line a 10 × 15-inch (25 × 39 cm) jelly roll pan (a baking tray with a lip).",
+      "For the cake, using electric beaters or a mixer fitted with the whip attachment, whip the eggs, brown sugar, granulated sugar, oil and vanilla at high speed until thick and frothy, about 3 minutes. Whisk in the carrots by hand.",
+      "In a separate bowl, sift the flour, baking powder, cinnamon and salt and add all at once to the batter, stirring until combined. Pour the batter into the prepared pan and coax it into the edges with a spatula (the batter is fluid).",
+      "Bake the cake for about 25 minutes, until the cake springs back when gently pressed. Cool the cake in its pan on a rack for 10 minutes.",
+      "Run a spatula along the inside edge of the still-warm cake to loosen it. Dust the surface of the cake with icing sugar and place a clean tea towel over the top. Place a second baking tray or a cutting board over the cake, and invert everything. Lift the jelly roll pan the cake was baked in (now on top) off of the cake and peel away the parchment paper. Dust this side of the cake with icing sugar.",
+      "Starting at one short end of the cake, loosely roll up the cake with the tea towel (so the cake doesn’t stick to itself). Return it, all rolled up, to the cooling rack to cool completely.",
+      "For the candied carrot garnish, use a spiralizer to make carrot curls (see note). Bring the sugar, water and lemon juice to a full simmer over medium-high heat, then add the carrot. Reduce the heat to medium and simmer the carrot in the syrup for about 8 minutes, until tender. Drain the syrup and chill the candied carrot until ready to use.",
+      "To assemble, gently unroll the cake and remove the tea towel (you will find that the cake holds a bit of its curl). Spread a generous amount of the frosting over the entire surface of the cake, leaving 1 inch (2.5 cm) free at the least-curled short side. Roll up the cake again and place on a serving plate. Pipe or spread the remaining cream cheese frosting on top, arrange the candied carrot curls over the frosting and chill until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "⅓",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine",
+        "amount": "½",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": "Cake:",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": "Candied Carrot Garnish and Assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Candied Carrot Garnish and Assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Candied Carrot Garnish and Assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Candied Carrot Garnish and Assembly:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": "Cream Cheese Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Pkg Cream Cheese",
+        "unit": null,
+        "notes": "room temperature",
+        "amount": "¾",
+        "section": "Cream Cheese Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "2",
+        "section": "Cream Cheese Frosting:",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Cheese Frosting:",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcb72ab54ad37b29e7d0f31fa48697fdf82d29aa25940211983f3192a3414642",
+    "lineage_hash": "f83de4c4b0d29e0f519b8415c520bb20d70e71e40b0a4bbb4a870f3583ce8aaa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/carrot-cake-roulade/",
+    "fetchedAt": "2026-08-01T19:43:58.009Z"
+  },
+  "rawSource": "https://annaolson.ca/project/carrot-cake-roulade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

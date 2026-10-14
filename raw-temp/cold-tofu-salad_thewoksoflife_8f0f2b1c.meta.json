@@ -1,0 +1,41 @@
+{
+  "url": "https://thewoksoflife.com/cold-tofu-salad/",
+  "slug": "cold-tofu-salad_thewoksoflife_8f0f2b1c",
+  "title": "Cold Tofu Salad",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T05:02:37.263Z",
+  "ldName": "Cold Tofu Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Tofu",
+  "ldKeywords": "tofu salad",
+  "ldIngredientsRaw": [
+    "1 package tofu “noodles”",
+    "1  carrot ((sliced into thin matchsticks))",
+    "1  long hot green pepper ((sliced into long, thin strips))",
+    "1 ½ teaspoons sesame oil",
+    "salt and white pepper",
+    "1 teaspoon toasted sesame seeds"
+  ],
+  "ldInstructionsRaw": [
+    "Start by blanching your cut carrot and green pepper in some simmering water for one minute. Remove the veggies from the pot and place them into a bowl of ice water to preserve color and crunch.",
+    "In a serving bowl, add the raw tofu noodles with your veggies. Toss in the sesame oil, salt, and white pepper. Mix it together well and garnish with toasted black or white sesame seeds."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 1 package tofu “noodles”",
+    "▢ 1 carrot (sliced into thin matchsticks)",
+    "▢ 1 long hot green pepper (sliced into long, thin strips)",
+    "▢ 1 ½ teaspoons sesame oil",
+    "▢ salt and white pepper",
+    "▢ 1 teaspoon toasted sesame seeds"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

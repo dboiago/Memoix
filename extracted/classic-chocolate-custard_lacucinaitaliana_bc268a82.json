@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Classic Chocolate Custard",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the milk, bringing it almost to a boil. In another saucepan, melt the butter with the sugar, then incorporate the flour and the cocoa powder sifted together. Gradually pour the milk in and combine; this will prevent lumps from forming. Bring back over the heat and cook for 4-5 minutes after it comes to a boil.",
+      "Turn off the heat, add the finely chopped chocolate, and stir until it has melted. Pour the mixture into a mold brushed with rum. Tap it on a work surface to prevent air bubbles from forming; cover with aluminum foil and let cool, then refrigerate for at least 4 hours. Briefly immerse the mold in hot water, then turn the custard over onto a serving dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "qt",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "6570% Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3036f353fad5f6f469f73478c42d234b7bab72591808c2669692d1d187ba75a7",
+    "lineage_hash": "0d6338cc1b15f8ccb1eb9583a65218c123a1ce833f9b4f154728f1e6eb8c8dea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/classic-chocolate-custard",
+    "fetchedAt": "2026-08-03T08:01:13.324Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/classic-chocolate-custard",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

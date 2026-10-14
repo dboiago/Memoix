@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chinese Walnut Cookie",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "141",
+      "carbohydrateContent": "14",
+      "fatContent": "8",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "In a mixing bowl, combine sugar, vegetable oil with egg.",
+      "Shift cake flour, baking soda, baking powder and salt. Combine well.",
+      "Add walnuts and combine well.",
+      "Divide into similar portions (25g to 30g each one) and shape to round balls.",
+      "Flat each one, brush the egg wash and decorate with black sesame seeds (slightly press to avoid dropping off after baking). You can create cracked edges by flatting only the middle part of the cookie. I love smooth edges. Set the cookie aside for 10 minutes to 15 minutes.",
+      "Pre-heat oven to 180 degree C and then bake for 20 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ab695cd4baa535883ea5ef07e2ff433d053b110bb4df60ebc5109ec46b58d91",
+    "lineage_hash": "35e3f18b115aba386ec7499e42b45722cafc90b7bb7cc126af820b86e732ab34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-walnut-cookie/",
+    "fetchedAt": "2026-08-02T01:59:42.427Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-walnut-cookie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

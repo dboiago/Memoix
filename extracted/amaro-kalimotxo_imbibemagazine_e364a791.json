@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Amaro Kalimotxo",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the wine, Ramazotti and bitters to a Collins glass and stir to combine. Fill with ice and top with cola. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Wine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ramazzotti Amaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Coca Cola",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b2770e66d153ef340e15f1ca4790d6098c806f0d2789d769e7290c01a5436412",
+    "lineage_hash": "c30c764018ea6e826e2afb03a7783d557cf3b67e37c92be9d77fd1047f3f5f07"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/amaro-kalimotxo/",
+    "fetchedAt": "2026-08-03T22:55:09.455Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/amaro-kalimotxo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

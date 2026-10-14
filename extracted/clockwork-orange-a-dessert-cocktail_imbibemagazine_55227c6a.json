@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Clockwork Orange",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Orange Peel"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients together with ice, then fine strain into a rocks glass over a single large ice cube. Carefully flame the orange peel over the top of the drink and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aquavit",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Press Coffee",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aperol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bdc89d18e2707c3e41c680ea1442820ba0506964bb5786a7a8aeb94ab80d7c45",
+    "lineage_hash": "3507384c3f75c4bcf662e5f35b7cb7bc12189308b5fd96feab9ffc043548c9cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/clockwork-orange-dessert-cocktail/",
+    "fetchedAt": "2026-08-03T20:10:01.640Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/clockwork-orange-dessert-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

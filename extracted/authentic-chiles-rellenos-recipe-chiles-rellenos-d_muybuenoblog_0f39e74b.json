@@ -1,0 +1,215 @@
+{
+  "recipe": {
+    "name": "Chiles Rellenos (Chiles Rellenos de Queso)",
+    "time": "50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "437",
+      "carbohydrateContent": "19",
+      "fatContent": "30",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "Boil jalapeño, chiles güeros or peppers until soft. Remove stems and chop. Heat olive oil in a saucepan and sauté onion, celery, and boiled chiles for 3 minutes.",
+      "Add tomatoes and garlic, and sauté for an additional 3 minutes. Add flour and stir for 2 minutes.",
+      "Add water, salt, black pepper, and granules and simmer about 5 to 10 minutes.",
+      "After roasting and peeling the chiles, carefully slit the bottom half of the chiles. For a milder chile relleno remove the stems and pull out the membranes and seeds being careful not to tear the chiles. Fill each chile with some cheese and set aside.",
+      "On a plate combine flour, 1⁄2 teaspoon salt, and 1⁄2 teaspoon black pepper. Place the filled chiles in the flour and coat all sides well. Shake off any excess flour. Reserve.",
+      "Using a stand mixer or an electric hand mixer beat the egg whites and cream of tartar, 2 teaspoons salt, and 1⁄2 teaspoon pepper on high speed until soft peaks form.",
+      "Add in the egg yolks, and carefully fold the egg yolks into the egg whites being careful not to mix too much so the egg whites don’t fall.",
+      "Fill a large heavy-bottomed saucepan about a third of the way up with canola oil and heat on medium-high heat. You want to get the oil very hot before frying your chile rellenos. Test the oil by dropping some of the egg white mixture into the oil. If the mixture sizzles and floats to the top, it’s the right temperature. If it sinks, the oil is not hot enough.",
+      "Dip the filled and flour-dusted chiles into the egg mixture until well coated, forming a little cocoon. Coat each chile one at a time just prior to frying. Carefully place the egg-coated chile rellenos in the hot oil, about 2 at a time. Fry until golden brown, turning once. Drain on paper towels. Change paper towels 2 to 3 times to absorb excess oil.",
+      "Arrange the chiles rellenos on a serving platter and drizzle each with some warm ranchero sauce and serve.",
+      "Make ahead: Roast, peel, and stuff chiles up to 1 day in advance. Store covered in the refrigerator, then dredge, batter, and fry just before serving.",
+      "Best chiles for chiles rellenos: Anaheim, Hatch, or poblano chiles all work well. Poblanos are traditional, but Anaheim or Hatch (like Big Jim) are commonly used in Northern Mexican cooking.",
+      "Cheese options: Queso Oaxaca is traditional, but Monterey Jack, asadero, or Muenster are great melting alternatives.",
+      "For less heat: Remove seeds and membranes. For more heat, leave them intact.",
+      "Egg batter tip: Make sure no yolk gets into the egg whites or they won’t whip properly.",
+      "Drain properly: After frying, place chiles on paper towels and change towels as needed to absorb excess oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chiles Güeros",
+        "unit": null,
+        "notes": "alt: sweet mini peppers",
+        "amount": "2",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stalk",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon",
+        "unit": "tsp",
+        "notes": "granules",
+        "amount": "1",
+        "section": "Ranchero Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Anaheim",
+        "unit": "large",
+        "notes": "Hatch, or poblano chiles, roasted and peeled",
+        "amount": "12",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Queso Oaxaca",
+        "unit": "C",
+        "notes": "sliced, Monterey Jack, Muenster, quesadilla, or asadero cheese",
+        "amount": "4",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "2½",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "divided",
+        "amount": "1",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "separated",
+        "amount": "8",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Cream of Tartar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil for Frying",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Chiles Rellenos",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a3daeb869c69b1f07f372bfbaf53086f2d923b78db093234d9179b33a3c9f7e3",
+    "lineage_hash": "e348128e787bdbadf207b9397ee07b282b49215f64687b154f6473276fd85837"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chiles-rellenos-video/",
+    "fetchedAt": "2026-08-02T11:30:46.384Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chiles-rellenos-video/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

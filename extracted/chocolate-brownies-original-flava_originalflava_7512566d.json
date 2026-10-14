@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chocolate Brownies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "chop your chocolate bar into small pieces then place into a mixing bowl, then add cocoa and expresso powder then set aside",
+      "In a medium sauce pan add unsalted butter and cook until a smooth liquid for 5 minutes. Then immediately pour onto the chocolate mixture then which until smooth",
+      "in a separate mixing bowl add sugar, vanilla extract, salt, then in a separate bowl crack 6 eggs and whisk into the sugar mixture individually. Continue to whisk then add the cocoa mixture while still whisking",
+      "Now sieve in 1 cup of plain flour and cocoa powder then mix and fold",
+      "Pour mixture into a grease proof baking tray. Then place in a pre-heated oven for 20 minutes on 180 degrees. Take out of the oven then give it a shake. Then place back in oven for 25 more minutes",
+      "Cool down for 10 minutes"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Definite Cocoa Bar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "34",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Expresso Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Unsalted Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "134",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "563b6e2124760fda949d269bbc6aee0ee16099619664e442e3ff7f7f100b4c9c",
+    "lineage_hash": "c6683cc7bf54f5eee6902968f64bd82909b8f8372eeccc4559cb32c6af4a8f51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/uncategorized/chocolate-brownies/",
+    "fetchedAt": "2026-09-30T17:36:55.039Z"
+  },
+  "rawSource": "https://originalflava.com/uncategorized/chocolate-brownies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

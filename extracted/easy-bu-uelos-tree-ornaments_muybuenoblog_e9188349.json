@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Buñuelos",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "46",
+      "carbohydrateContent": "10",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat oven to 400F. Oil 1 large baking sheet. Using cookie cutters or scissors, cut any shape from the tortillas.",
+      "Make small hole in each shape so you can hang the ornament (I took the eraser out of a lead pencil and used that to punch out the little holes). Place ornaments on prepared baking sheet, spacing apart, and brush with additional oil (work in batches if they don’t all fit on one sheet).",
+      "Top with second baking sheet. (Flour tortillas tend to puff while frying or cooking so I stack two baking sheets to get them to pre-bake, stay flat and hold their shape. That way, when you go to fry them, they only bubble slightly). Bake 10 minutes or until golden.",
+      "Meanwhile, mix sugar and cinnamon on a large plate. Remove ornaments from oven and cool slightly.",
+      "Heat enough oil to come halfway up a medium saucepan to 350F. Fry ornaments in batches until dark golden, about 4 minutes. Transfer to paper towels to drain. Transfer to cinnamon-sugar while still warm and toss to coat completely. Place hooks in ornaments and hang on tree."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uncooked Flour Tortillas",
+        "unit": null,
+        "notes": "also works with regular flour tortillas although results are not as crispy",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "df531aa59179746a50ae8f53c1315a828c3902a1b096922c65f92d3965d04a4b",
+    "lineage_hash": "3a47f0508e49a8fd366d7a14f652f4f2360e348e8514f8a3547e949877e7d341"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/easy-bunuelos-tree-ornaments/",
+    "fetchedAt": "2026-08-01T22:27:10.164Z"
+  },
+  "rawSource": "https://muybuenoblog.com/easy-bunuelos-tree-ornaments/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

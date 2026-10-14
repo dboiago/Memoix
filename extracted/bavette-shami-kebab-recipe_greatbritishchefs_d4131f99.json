@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Bavette Shami Kebab",
+    "time": "3 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, add the first 10 ingredients to a heavy-based saucepan and add 1 ½ pint of water. Bring to a boil then return to a simmer, cover  with a lid and leave to cook for about 3 hours on a low heat. Keep checking to make sure the meat doesn’t stick at the bottom and ensure that you stir it occasionally. Do not add any more water",
+      "After about 2 hours or so, check to see that all of the moisture has gone, the meat is tender and falling apart and the lentils are mushy",
+      "Break and pull apart the meat and add the finely chopped ginger, chopped mint, coriander and green chillies. Mix until combined with the meat",
+      "Measure out approximately 2 tbsp of the meat mixture and using your hands, form flat burger patty shapes to make the shami kebabs. Repeat until all of the mix has been used, then dip each kebab into the egg and set aside on a plate",
+      "Heat some vegetable oil in a shallow frying pan and once hot, add 3-4 shami kebabs into the pan. Fry for approximately 1 minute on each side, until medium brown all over. Serve hot with any a hot sauce or ketchup"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bavette Steak",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Channa Daal",
+        "unit": "g",
+        "notes": "soaked for about 30 minutes-overnight before cooking",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cumin",
+        "unit": "tsp",
+        "notes": "or regular cumin if not available",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "dried, 2-3",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": "8-10",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "1/2 inch in length, very finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for shallow frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d731cee70977345cb4cf075c1fe0421f037aeb758331e1e5f45f2f6d4ac132dd",
+    "lineage_hash": "a44b96dff42331c28fcbccbcfe71df4c5ffb70b510ab70d6cb30723bac7ee50e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bavette-shami-kebab-recipe",
+    "fetchedAt": "2026-08-03T15:26:38.474Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bavette-shami-kebab-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

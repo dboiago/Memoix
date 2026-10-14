@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Cake with Candied Orange",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Break up the chocolate into large pieces, wrap it in plastic wrap, and place it in the freezer to harden and chill. In the meantime, whisk the egg yolks together with the sugar, but don’t beat them. Then add in the cream; sift the flour together with the cocoa powder and baking powder, and slowly add it into the egg yolks; then carefully incorporate the butter, which should be melted but not hot; finally, add in about 1/2 of the chocolate (it will melt while cooking) and 2/3 of the candied orange cut into thin strips.",
+      "Butter a round baking pan (10-inch diameter, 1 1/2 inches high), dust it with flour, and line the bottom with a disc of parchment paper; butter and flour the parchment paper, as well. Pour the batter into the baking pan, only filling it halfway so it bakes evenly and thoroughly. Sprinkle the remaining chocolate and candied orange on top. Bake at 340°F on the convection setting for about 50 minutes, covering it with a sheet of aluminum foil during the last 10-15 minutes; take it out of the oven and remove it from the pan once it has cooled.",
+      "Top to taste with a bit of apricot jam diluted with a splash of water to add a nice sheen, and garnish with berries or small fruit. We used fresh goji berries, but currants, cranberries, raspberries, etc. would also work well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "lb",
+        "notes": "about 14",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gianduja Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange",
+        "unit": "lb",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick of Butter",
+        "unit": null,
+        "notes": "plus extra",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4d76af1328017dc38fa97ba52e5e583beb7c02c43d89ed60a64039f902bf4263",
+    "lineage_hash": "075e9b197f97b5cd4d4d069dbfe0cf87fb2b911807e7fbd9c93a12997b8911c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-hazelnut-cake-with-candied-orange",
+    "fetchedAt": "2026-08-02T09:45:05.205Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-hazelnut-cake-with-candied-orange",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

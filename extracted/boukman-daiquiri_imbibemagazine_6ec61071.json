@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Boukman Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients with ice and shake. Strain into a chilled cocktail glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c24dc41783eac7e1b3f3fa8742c95dcfd04d46112de171438c0f284c4effcfa5",
+    "lineage_hash": "d9cce0e3bc8ea4ffb5a3c714895a9800f7f850733a98132a102bbc7f44461928"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boukman-daiquiri-recipe/",
+    "fetchedAt": "2026-08-04T01:55:03.206Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boukman-daiquiri-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Calebassito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tumbler",
+    "garnish": [
+      "Cardamom"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine first 6 ingredients in a mixing glass with ice and stir to combine. Strain into a tumbler over fresh ice. Top with ginger beer and sprinkle cardamom over the top of the drink."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal Espadín",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strega",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Lava Salt",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Ale",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dd51e65817c830c450f5514fed6e94c09ea57169550c53d30b65bffea3d40a56",
+    "lineage_hash": "1c882e15153cd2831316708cb315867dab4e697f90835f87b5483641c57bee7f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calebassito-cocktail/",
+    "fetchedAt": "2026-08-03T18:12:54.208Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calebassito-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

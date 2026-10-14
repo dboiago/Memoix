@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Awaze Chicken Thigh",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the awaze paste. Mix together all the ingredients in a bowl, taste, and adjust seasoning with salt and lime juice",
+      "Pour the awaze paste over the chicken thighs and leave to marinate for at least 1 hour",
+      "Cook in the oven for 20 minutes, or until the juices run clear",
+      "Serve with the roasting juices drizzled over the top and lime wedges on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "free-range, bone-in, skin-on",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Berbere",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Granules",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tej",
+        "unit": "ml",
+        "notes": "(Ethiopian honey wine) or a dry sherry",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31f0215b20fdd84ea47b518df57b68e4123f4c2fa3d8be47ff9220cd02ed3763",
+    "lineage_hash": "ed67bbb658b6f3a5febd26223ff72fd06f7f5b652075a9a6f7d536737ebb2e4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/awaze-chicken-recipe",
+    "fetchedAt": "2026-08-03T09:54:22.366Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/awaze-chicken-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

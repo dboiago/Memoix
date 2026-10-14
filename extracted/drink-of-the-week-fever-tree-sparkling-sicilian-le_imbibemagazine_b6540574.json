@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Sicilian Iced Tea",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": "Highball",
+    "garnish": [
+      "Mint",
+      "Lemon"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the measured boiling water over the tea bags in a large pot and brew for 1 minute.",
+      "Remove the tea bags and wait until the tea is cool and then place in the refrigerator to chill.",
+      "When the tea is cold, fill a pitcher 3/4 full with ice.",
+      "Pour in the bourbon, peach liqueur, and chilled tea.",
+      "Add the mint leaves and stir gently.",
+      "Top with the lemonade.",
+      "To serve, pour into an ice-filled glass and garnish with mint and lemon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Breakfast Teabags",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fever-tree Sparkling Sicilian Lemonade",
+        "unit": "oz",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "068624ba10147e29493a0ce3d8ed26bc8cf738fd802db3195794ab2017bd9af8",
+    "lineage_hash": "275b698d58fb501b8393257720a58cb644069e752428d6d987d6c479eae1ac13"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/drink-of-the-week-fever-tree-sparkling-sicilian-lemonade/",
+    "fetchedAt": "2026-08-03T09:11:59.425Z"
+  },
+  "rawSource": "https://imbibemagazine.com/drink-of-the-week-fever-tree-sparkling-sicilian-lemonade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

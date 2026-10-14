@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse with Hot Coffee",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the recipe of the easy chocolate mousse with hot coffee, break the chocolate, melt it in a bain-marie or in the microwave (power 500 W for 2-3 minutes) then let it cool down.",
+      "Whip the cream, leaving it rather soft (half-whipped). Little by little pour the cream over the melted chocolate, mixing gently.",
+      "Pour the mousse obtained in the coffee cups that you will put in the freezer for about 30 minutes.",
+      "Remove from the freezer just before serving, pouring espresso coffee into each cup, and topping with a sprinkle of cinnamon."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demitasse Cups of Espresso Coffee",
+        "unit": null,
+        "notes": "about 5 fluid ounces",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "78f4b90adbe3a23d1db0ec3356c073060802f08a484c27c0d58ed985e4b95a46",
+    "lineage_hash": "8ef073aa33f89f19a86cfe985a800d19edc67576eb6b36cac011491ab99feeb6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/easy-chocolate-mousse-with-hot-coffee",
+    "fetchedAt": "2026-08-02T18:53:08.976Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/easy-chocolate-mousse-with-hot-coffee",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Cod Burgers",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the tomato ketchup, place a large pan over a medium heat and add a tbsp of oil",
+      "Once the oil is hot, add the onion and garlic and cook for 2 minutes, or until the onion is soft and translucent",
+      "Wrap the peppercorns up in muslin cloth, tie up firmly with cooking string",
+      "Add the tomatoes, thyme, cinnamon, sugar, peppercorn bundle and bay leaves to the pan",
+      "Cook for 15 minutes, or until the tomatoes have broken down and their liquid has been released",
+      "Continue to cook until the tomato liquid has reduced and the tomatoes start to catch. Then, add the vinegar, turn up the heat and boil for 5 minutes",
+      "Transfer the contents of the pan to a blender, removing the cinnamon stick, bay leaves and peppercorn bundle",
+      "Blend the tomatoes until smooth and then pass through a sieve",
+      "Transfer to a container and allow to cool. The ketchup will keep in the fridge for 1 week or in the freezer for 1 month",
+      "For the cod burgers, place a frying pan over a medium heat and add 2 tbsp of oil. Once hot, add the shallots and garlic and sweat for 2 minutes",
+      "Remove the mixture from the pan and allow to cool",
+      "Blend the cod in a food processor for 1 minute - you may have to do this in 2 batches",
+      "Scrape the fish into a mixing bowl and add the shallot mixture, parsley, basil, eggs and breadcrumbs. Mix well and add seasoning",
+      "At this stage it is good to fry off a little piece of the patty mix to use as a tester, then you can adjust the seasoning as you wish",
+      "Divide the mixture into 100g balls and then mould into patties",
+      "Lay the patties out on a tray and refrigerate until required. When you are ready to cook, preheat the oven to 200°C/gas mark 6",
+      "Place a frying pan over a medium heat and add 2 tbsp of olive oil. Once hot, fry the patties for 2 minutes on each side, or until golden all over",
+      "Transfer the patties to a baking tray and cook through in the oven for 3 minutes",
+      "Whilst they are cooking, slice your rolls and add a drizzle of olive oil followed by a slice or 2 of tomato and some rocket",
+      "Remove the patties from the oven and arrange on top of the rocket. Top with some tomato ketchup and serve with some more rocket"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": "kg",
+        "notes": "skinless and boneless, diced",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Burger Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Tomatoes",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rocket",
+        "unit": "g",
+        "notes": "washed",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "washed and chopped",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a3f2bff382c2a5dc81691ee795c189d0734d938a43b02e4aba8a5b9f55df9025",
+    "lineage_hash": "0839767ecd98688f8f417436d3bcecba169794874b38831b56e9f038bad79157"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-burgers-recipe",
+    "fetchedAt": "2026-08-03T18:51:51.370Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-burgers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

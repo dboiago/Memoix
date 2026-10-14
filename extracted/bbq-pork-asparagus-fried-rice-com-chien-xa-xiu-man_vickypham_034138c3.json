@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "BBQ Pork Asparagus Fried Rice (Com Chien Xa Xiu Mang Tay)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large wok, heat up the vegetable oil on medium high. Swirl oil around so that it coats all the way up to the sides of the wok. Add garlic and stir until fragrant but not brown (about 15 seconds).",
+      "Add eggs and swirl the liquid eggs up to sides of the oiled wok. Push edges of the eggs into the center to allow any liquid egg to run into the now empty areas of the wok. When the eggs look mostly cooked and still slightly wet, break the eggs into small pieces with a wooden spoon.",
+      "Toss to combine.",
+      "Add mushroom/chicken bouillon powder, garlic powder, salt, sugar and ground black pepper. Toss everything together until combined. Top with green onions (optional) and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peel and mince",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked BBQ Pork",
+        "unit": "C",
+        "notes": "Thit Xa Xiu/Char Siu, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "C",
+        "notes": "finely, sliced",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Day-old Rice",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "Tbsp",
+        "notes": "alt: mushroom bouillon powder",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "optional; slice thin",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d7627540d5497221d8af53b88123e9f29b161881e4d1acf31bad0a0b9e33bfce",
+    "lineage_hash": "e0a69437fb9f033ca9b372dd12a89b36bc3ef0a2efae64a94919d540c96b1353"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/bbq-pork-fried-rice-asparagus-com-chien-xa-xiu-mang-tay/",
+    "fetchedAt": "2026-08-01T22:31:07.806Z"
+  },
+  "rawSource": "https://vickypham.com/blog/bbq-pork-fried-rice-asparagus-com-chien-xa-xiu-mang-tay/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

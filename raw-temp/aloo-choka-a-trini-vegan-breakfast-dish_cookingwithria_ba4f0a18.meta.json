@@ -1,0 +1,55 @@
+{
+  "url": "https://cookingwithria.com/2024/06/aloo-choka-a-trini-vegan-breakfast-dish/",
+  "slug": "aloo-choka-a-trini-vegan-breakfast-dish_cookingwithria_ba4f0a18",
+  "title": "Aloo Choka - A Trini Vegan Breakfast Dish",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T19:50:05.970Z",
+  "ldName": "Aloo Choka",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Caribbean, Trinidadian, West Indian",
+  "ldCategory": "Breakfast, dinner, lunch",
+  "ldKeywords": "aloo choka, aloo recipes, Baigan Choka, trini choka, trinidad choka",
+  "ldIngredientsRaw": [
+    "2 lbs potatoes (peeled, cubed)",
+    "1/4  onion (thinly sliced)",
+    "4 cloves garlic (minced)",
+    "4 leaves culantro (finely chopped or minced)",
+    "Hot pepper (to taste)",
+    "3 tbs extra virgin olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by peeling the potatoes and cutting each one into 8 equal pieces. Place the potato pieces in a colander and rinse them thoroughly under running water. Allow them to drain.",
+    "Take a medium-sized pot and fill it with water. Stir in 1 tablespoon of salt. Add the drained potato pieces to the pot and bring the water to a boil over high heat. Cook the potatoes until they become tender, approximately 20 minutes. Once done, drain the cooked potatoes and transfer them to a mixing bowl.",
+    "Using a potato ricer or masher, mash the potatoes until the mixture is smooth, ensuring there are no remaining chunks. Season the mashed potatoes with onion, minced garlic, hot pepper, culantro, and salt to taste.",
+    "In a small frying pan, heat some oil. Add one sliced clove of garlic (along with onion and hot pepper if desired) and cook until the edges turn brown. Pour this garlic-infused oil into the mashed and seasoned potatoes, and thoroughly mix everything together to combine the flavors."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "183 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "3 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "10 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "6 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 lbs potatoes peeled, cubed",
+    "1/4 onion thinly sliced",
+    "4 cloves garlic minced",
+    "4 leaves culantro finely chopped or minced",
+    "Hot pepper to taste",
+    "3 tbs extra virgin olive oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

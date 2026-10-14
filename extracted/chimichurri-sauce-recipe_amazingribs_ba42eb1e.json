@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chimichurri Sauce",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Remove the thick woody stems stems from the herbs leaving behind the tender stems. Measure the herbs by packing them into a measuring cup first, and then rinse in a colander to get any dirt off. Shake off the extra moisture, but you don't have to get the leaves perfectly dry.",
+      "Peel the garlic clove.",
+      "Peel and quarter the small onion.",
+      "Combine all the ingredients in a food processor or blender. Pulse until the green parts are small bits pushing down any leaves that crawl up the sides. You don't have to make this sauce homogeneous, chunks are OK.",
+      "Serve. Grill the meat and spoon a small amount of sauce over the top or on the side when you serve it. Not too much, it is strong, and we don't want to cover that great steak taste. People can always add more if they want. And there's a good chance they'll want."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Italian Parsley Leaves",
+        "unit": "C",
+        "notes": "packed, fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Mixed with Fresh Oregano Leaves",
+        "unit": "C",
+        "notes": "packed, fresh, or just one or the other, you decide the ratio",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inexpensive Balsamic Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "Tbsp",
+        "notes": "alt: lime juice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b70eed58ee80e4c693f2202cfeab4b42eac1f95262e08442337f52771883bba3",
+    "lineage_hash": "88ae9d93bb7840253382f3cbe02c5b9146ffd65a7a00122d132eb8dc00d173cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/chimichurri-sauce-recipe/",
+    "fetchedAt": "2026-08-02T07:23:02.757Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/other-fun-sauce-recipes/chimichurri-sauce-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

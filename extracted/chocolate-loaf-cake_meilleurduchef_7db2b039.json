@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Chocolate Loaf Cake",
+    "time": "1 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Chocolate Loaf Cake recipe, make sure you have organised all the necessary ingredients.",
+      "Macerate the candied orange cubes in Cointreau (or Grand-Marnier).",
+      "Pass the flour, cocoa powder and baking powder through a sifter.",
+      "Use your fingers to make sure the whole mixture is sifted.",
+      "This operation will ensure a lump-free, fluid result.",
+      "In a mixing bowl, place the soft butter and castor sugar.",
+      "Beat vigorously with a spatula until smooth. Add the eggs one by one.",
+      "Combine well. Repeat this operation until all the eggs are incorporated.",
+      "Add the sifted mixture.",
+      "Combine with a spatula...",
+      "... until the consistency is homogeneous and lump-free.",
+      "Add the candied orange cubes, together with the alcohol (do not drain).",
+      "Pour the preparation into an . Exoglass loaf cakemould.",
+      "Preheat the oven to 180°C (gas 4) and bake for 25 minutes.",
+      "Reduce the heat down to 170°C (gas 3) and cook for a further 30 minutes.",
+      "The cake is cooked when puffed. To check whether the cake is cooked all the way through, insert the blade of a knife. The blade should be dry when you take it out.",
+      "Remove from the oven and set aside to cool.",
+      "Release from the mould (the special Exoglass material makes this operation very easy).",
+      "Place the cold cake on the kitchen worktop.",
+      "Sprinkle with icing sugar.",
+      "Using a serrated knife, gently cut the loaf cake into regular slices.",
+      "Serve and enjoy! This chocolate loaf cake makes a delicious dessert with crème anglaise, or a divine afternoon treat with a cup of tea."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Cubes",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "10cl Cointreau",
+        "unit": null,
+        "notes": "alt: Grand-Marnier",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a4e5bc02647fcf53ad2178c519054aa43f7bd1bbd23d58ab74641ef1792a7df1",
+    "lineage_hash": "4a2473014f33ac2c5795ae238fa45126fe7b9c3c3f040fbf8ff1979c175e0974"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-loaf-cake.html",
+    "fetchedAt": "2026-08-02T03:56:03.966Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-loaf-cake.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

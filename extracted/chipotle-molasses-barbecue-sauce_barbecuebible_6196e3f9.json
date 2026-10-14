@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Chipotle Molasses Barbecue Sauce",
+    "time": "15 to 20 minutes",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a heavy saucepan and bring to a boil over medium heat. Reduce the heat and gently simmer the sauce, uncovered, until thick and richly flavored, 15 to 20 minutes. Correct the seasoning, adding salt, pepper, and additional hot sauce and / sugar, as desired. Let the sauce cool to room temperature for serving. Store in clean jars away from heat or light. Refrigerated, the sauce will last for at least a week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish Mustard",
+        "unit": "C",
+        "notes": "alt: Dijon-style mustard",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Whisky",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": "light or dark—your choice",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Molasses",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chili with Can Juices",
+        "unit": "Tbsp",
+        "notes": "or to taste, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Garlic",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ac4b6007b41ca5bf1badc8b73b1ff21e1de9d00456216b2abe84aafe7a055d18",
+    "lineage_hash": "4d3a375fed6d7dada65835a562f8040c95763576807667bd87755132dfaac55a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/chipotle-molasses-barbecue-sauce/",
+    "fetchedAt": "2026-08-03T06:04:31.757Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/chipotle-molasses-barbecue-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

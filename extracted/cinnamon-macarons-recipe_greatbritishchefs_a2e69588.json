@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Cinnamon Macarons",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pre-heat oven to 130°C/Gas mark 1/2. Line a baking sheet with greaseproof paper. Sift the icing sugar and almonds together with the cinnamon into a bowl",
+      "In another bowl whisk the egg whites to soft peaks, adding the vanilla then the caster sugar. Whisk until glossy and then fold in the almonds and sugar",
+      "Transfer the mixture to a piping bag and pipe small rounds onto the baking sheet, around the size of walnuts",
+      "Allow 10 to 15 minutes to dry until the mounds have formed a slight 'skin' and then bake for 20 minutes. They should have shiny shells and the characteristic 'ridge' at the bottom of each",
+      "The cinnamon macarons are ready when you can lift them off the tray; they hold and are crisp on the outside but soft in the middle",
+      "Bring the cream to a boil in a saucepan. Remove from the heat and add the butter and cinnamon. Stir well. Allow to cool until thickened",
+      "Using your thumb, carefully make a small opening on the flat side of one macaron shell. Place a teaspoon of filling over the opening. Cover with another shell and twist until filling is evenly spread",
+      "Serve in a bowl, dusting ground cinnamon over the top if you so wish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61014e1ca9edc86d3ecaf129ff319cf7fea54674b93c7ca5d0ba82021d5b8810",
+    "lineage_hash": "b4df09f3ebb710a1fb002a56fe7db83cd2acfa049415b7e6984c6d601e143800"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cinnamon-macarons",
+    "fetchedAt": "2026-08-03T22:08:51.758Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cinnamon-macarons",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

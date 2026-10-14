@@ -1,0 +1,39 @@
+{
+  "url": "https://dailycookingquest.com/coco-pandan-syrup.html",
+  "slug": "coco-pandan-syrup_dailycookingquest_97786046",
+  "title": "Coco Pandan Syrup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T08:31:40.423Z",
+  "ldName": "Coco Pandan Syrup",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H5M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "8",
+    "1 cup"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Sauce, Vegetarian",
+  "ldKeywords": [
+    "Simple syrup from pandan leaves and coconut water",
+    "Using leftover pulverized pandan leaves from making pandan extract to make simple syrup"
+  ],
+  "ldIngredientsRaw": [
+    "250 ml coconut water (Indonesian: air kelapa muda)",
+    "125 gram sugar",
+    "4 tablespoon pandan leaf pulp (or 5 pandan leaves) (*)"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a sauce pot and bring to a boil. Keep cooking until the liquid has thickened slightly. You can control how thick or thin you want your syrup to be.",
+    "Turn off heat, and strain into clean jar(s). Let it cool to room temperature, then store in the fridge and consumed within 1 month."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "250 ml coconut water (Indonesian: air kelapa muda)",
+    "125 gram sugar",
+    "4 tablespoon pandan leaf pulp (or 5 pandan leaves) (*)"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

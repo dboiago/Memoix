@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Crisp Hazelnut and Pepper Cookies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Toast the hazelnuts in a dry skillet until fragrant. If the hazelnuts are still in their papery husks, you can remove some of it by rubbing them in a clean dishcloth while they’re still warm; you don’t have to, though. Let cool and chop roughly (see tip above).",
+      "Combine the hazelnuts with the rest of the dry ingredients, from flour to pepper, in a medium mixing bowl. Stir with a wooden spoon until blended.",
+      "Add the diced butter and rub it into the dry ingredients with your fingers or a wire pastry blender until the mixture resembles coarse meal. Add the rose water and stir it in until the dough comes together just enough that you can gather it in two balls. If it’s not enough, add a little more rose water, little by little, until the dough reaches the desired consistency.",
+      "Cover the bowl with a dishcloth and set aside somewhere cool for 1 hour.",
+      "Preheat the oven to 150°C (300°F) and line a baking sheet with parchment paper. Shape the dough into balls a bit larger than walnuts, flatten them slightly, and place them on the prepared baking sheet, leaving them a little elbowroom to expand.",
+      "Bake for 25 minutes, until golden and set. Let stand for 5 minutes on the baking sheet before transferring to a rack to cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "whole",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "g",
+        "notes": "a mix of T65 and T110",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Spelt",
+        "unit": "g",
+        "notes": "or other old-fashioned rolled grains, such as oats",
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unrefined Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": "substitute 1/4 teaspoon curry powder or 1/2 teaspoon good cinnamon",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "chilled and finely diced",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "Tbsp",
+        "notes": "orange flower water, or just plain water, plus a little more as needed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "05f7e73b36cf2eadc6c6774dc5aeb4c56bd5139f61918c9c0954566c615db100",
+    "lineage_hash": "276be581c5202e44af573ef0ace4a15408ad993c2bf1e69e49195aca8f604d15"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/books-cookbooks/crisp-hazelnut-and-pepper-cookies-recipe/",
+    "fetchedAt": "2026-09-30T18:29:15.143Z"
+  },
+  "rawSource": "https://cnz.to/books-cookbooks/crisp-hazelnut-and-pepper-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

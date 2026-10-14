@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Berry Custard Pie",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the berry filling. Place the berries and sugar in a pan and cook over a gentle heat for 20 minutes, stirring occasionally, until the liquid forms a syrup. Set aside and leave to cool completely",
+      "Meanwhile, make the custard. Whisk together the egg yolks and sugar in a large mixing bowl for 2 minutes until pale and fluffy, then mix in the plain flour, cornflour and a dash of milk to loosen up the mixture. Whisk until completely combined and set aside",
+      "Place the milk and vanilla seeds in a pan and bring to the boil over a medium heat. Quickly whisk in the egg and sugar mixture and continue to heat through until the custard thickens, stirring continuously to help the cornflour cook out",
+      "Once thickened, pour the custard into a deep baking tray or tin and cover with clingfilm – this will help it to cool quicker. Place in the fridge for 30 minutes",
+      "Remove the pastry from the fridge 20 minutes before using to allow it to come to room temperature",
+      "Preheat the oven to 200°C/gas mark 6 and line a large baking tray with baking paper",
+      "Roll the pastry out to a thickness of a pound coin and cut out 4 circles, each about the size of a small side plate or roughly 18cm in diameter",
+      "Spread a layer of the chilled custard over half of each circle, leaving a border. Make a slight indent in the middle of the custard and add a good spoonful of the cooled berries",
+      "Dampen the pastry border with a little water and fold over the plain half to cover the fillings, making a semi-circle shape. Use a fork to seal the edges together, pressing down firmly to create a lined pattern",
+      "Make 3 small slashes with a sharp knife in the top of each pie to allow steam to escape, then brush the tops liberally with the beaten egg to glaze. Sprinkle over a thick coating of Demerara sugar and transfer the pies to the lined tray",
+      "Bake for 10 minutes then turn the oven temperature down to 160°C/gas mark 3 and bake for a further 15 minutes until golden and crisp",
+      "Remove the pies from the oven and leave to cool for a few minutes as the filling will be extremely hot. Serve warm with vanilla ice cream, or leave to cool completely if not eating straight away"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Shortcrust Pastry",
+        "unit": "g",
+        "notes": "chilled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Berries",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f9ea69307afec288885c53f966903785d2e235fbfa712f612ad34dc99b548b9d",
+    "lineage_hash": "4a0c63f1c12c229b4ea764c17a3889a79fdfa3aaf27eafc095cdc141c8aad91b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/berry-custard-pies-recipe",
+    "fetchedAt": "2026-08-03T13:22:58.069Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/berry-custard-pies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

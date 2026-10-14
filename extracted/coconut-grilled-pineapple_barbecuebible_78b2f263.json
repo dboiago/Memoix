@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Coconut-Grilled Pineapple",
+    "time": "12 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up the grill for direct grilling and preheat to high.",
+      "Peel, slice, and core the pineapple. Shake the coconut milk well before opening the can. Pour it into a bowl. Put the cinnamon and sugar in a small bowl and stir with a fork or spoon to combine.",
+      "When ready to cook, brush and oil the grill grate. Brush each pineapple slice on both sides with coconut milk, and sprinkle, also on both sides, with the cinnamon and sugar mixture. Arrange the slices on the hot grate, and grill until nicely browned on both sides, 4 to 6 minutes per side. If a crosshatch of grill marks is desired, rotate each slice 60 degrees after 2 or 3 minutes on each side. Transfer the pineapple slices to plates or a platter for serving; top each slice with a scoop of vanilla ice cream and garnish with mint leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Golden Pineapple",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Coconut Milk",
+        "unit": "can",
+        "notes": "14 ounces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Sugar",
+        "unit": "C",
+        "notes": "alt: granulated sugar",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sprigs of Fresh Mint",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Ice Cream",
+        "unit": "qt",
+        "notes": "alt: frozen yogurt, for serving",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cd5ea2340bf26658dece9ed886e8606c432b368de437e1d8b6beff9cdbfcb048",
+    "lineage_hash": "4f980319469e1b3618c15334f170dde7982be3eff20850b0c51d83ddd68a962f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/coconut-grilled-pineapple/",
+    "fetchedAt": "2026-08-03T04:49:30.653Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/coconut-grilled-pineapple/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

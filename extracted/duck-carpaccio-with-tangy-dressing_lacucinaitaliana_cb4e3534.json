@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Duck Carpaccio with Tangy Dressing",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Score the skin of the duck breast with 5-6 parallel, diagonal cuts and then 5-6 more cuts crosswise to form a grill pattern. Place it in a dish with 1 cup of red wine and 1 cup of black currant syrup, cover the dish with plastic wrap and let the duck marinate for 12 hours in the refrigerator, turning every so often.",
+      "Remove the duck breast from the liquid and brown in a pan on low heat with 2 tablespoons of oil, 1 teaspoon of butter, 1 sprig of rosemary and 1 clove of garlic, unpeeled; cook the skin side first for 4 minutes, then season with salt, turn it over and cook for 2 more minutes, always",
+      "on low heat. Finally, brown the sides for less than 1 minute.",
+      "Let the duck breast drain on a rack for 5 minutes. Transfer to a plate, let cool, then wrap in parchment paper and put in the freezer for 15 minutes; this will make it easier to slice.",
+      "Slice the shallot and brown in a thin layer of peanut oil. Drain",
+      "the slices on a paper towel.",
+      "Brown 2 tablespoons of capers in a thin layer of peanut oil and drain on a paper towel.",
+      "Mix the hard-boiled egg yolks with 1/4 cup of extra-virgin olive oil using a whisk, season with salt and pepper, add another 1/4 cup of extra-virgin olive oil, 1 tablespoon of mustard and the juice of 1/2 lemon; it will look like curdled mayonnaise. Flavor this dressing with 5-6 chopped chives. (The amounts listed are the minimum needed to make this dressing successfully). Use the remaining dressing for toasts or to dip crudités.)",
+      "Slice the duck breast very thinly, with a meat slicer if possible, and serve with a little dressing and the browned shallots and capers. Garnish with grated lemon zest."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breast",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs. Hardboiled Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Shallot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Currant Syrup",
+        "unit": "C",
+        "notes": "cassis",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "unpeeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "rinsed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extravirgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c0ad2829641416ff30998f94483df908afb973b77c7bd58302c25c8b5963f0b",
+    "lineage_hash": "66657bce0d0645fe53d4ef21c304c77e13e3effdf2696dca3f2424725d09ba48"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/appetizers/duck-carpaccio-with-tangy-dressing",
+    "fetchedAt": "2026-08-02T07:43:08.689Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/appetizers/duck-carpaccio-with-tangy-dressing",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

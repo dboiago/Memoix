@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Crayfish Summer Roll",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the dipping sauce ingredients in a small bowl, stir and leave to sit while making the summer rolls",
+      "Put the vermicelli in a large bowl of boiling salted water, cover the top with a dinner plate or kitchen foil and leave for 5 minutes, or until the noodles are soft. Drain and run them under the cold tap to cool",
+      "Meanwhile, blanch the beansprouts in a large saucepan of boiling water for 2 minutes, then drain in a colander and run them under the cold tap to cool",
+      "Put about 5cm of warm water in a shallow dish or tray big enough to comfortably hold a rice paper disc. Briefly dip the rice paper in the water so it is fully submerged, but don’t linger, then place it on a chopping board or plate. Don’t worry if the rice paper feels hard, it will have softened by the time you roll",
+      "Place a row of crayfish tails in a neat line about 4cm up from the bottom, followed by some beansprouts, then a layer of noodles. Rest a lettuce leaf on top, then a layer of herbs. Fold the sides of the rice paper in and then, starting from the edge nearest you, roll the filling up in the rice paper, tucking everything in neatly as you go. Repeat with the remaining rice paper discs and serve immediately with the dipping sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Vermicelli",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beansprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Paper Discs",
+        "unit": null,
+        "notes": "16cm",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish Tails",
+        "unit": "g",
+        "notes": "or you can use 24 peeled and deveined king prawns, cooked and peeled",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Gem Lettuce Leaves",
+        "unit": null,
+        "notes": "central stalks removed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mixed Herbs",
+        "unit": null,
+        "notes": "coriander, mint, thai basil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "light",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass Stalk",
+        "unit": null,
+        "notes": "trimmed, bruised and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c78401a4313ea6c9bc317899b8f1462ffab2b3f8eb0d35ba478d4eeb04c9f3f5",
+    "lineage_hash": "55293cddbd32a26b65fa7877002223d74a1a13621c194b2bc0aa1fadd673b4f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crayfish-summer-rolls-recipe",
+    "fetchedAt": "2026-08-03T11:14:56.809Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crayfish-summer-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

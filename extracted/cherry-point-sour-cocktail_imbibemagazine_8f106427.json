@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cherry Point Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all ingredients except wine in a mixing tin with ice. Strain into glass over fresh ice. Gently pour the wine over the back of a barspoon to float over the drink and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scotch",
+        "unit": "oz",
+        "notes": "Mazeau uses Famous Grouse Smoky Black",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bordeaux",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbc61c290fee115c48129acf9074d65385136cab81e791bc38d7fcfc00b19647",
+    "lineage_hash": "a0a8a4ec2f4e0109b25474b54d56f27cb038e50a7ce3ebbc4c37905ef2f9d847"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-point-sour-cocktail/",
+    "fetchedAt": "2026-08-03T19:54:38.170Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-point-sour-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

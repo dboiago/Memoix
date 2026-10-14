@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Creamy Caesar Dressing for Salad",
+    "time": null,
+    "course": "salad",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If using a blender, add all of the ingredients and puree to a smooth creamy dressing. Correct the seasoning, adding salt and pepper to taste.",
+      "If using a food processor, add the garlic, anchovy, mustard, mayonnaise, and cheese and grind to a paste. Gradually work in the olive oil, lemon juice, Worcestershire sauce, and salt and pepper to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": "rough chopped, or 2 teaspoons anchovy paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Grated Pecorino-romano Cheese",
+        "unit": "C",
+        "notes": "about 1-1/2 ounces",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh, or more to taste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "96dda3909cdff9620d08bcf385041e4a00ee127c42508e516dc189f990d1c96e",
+    "lineage_hash": "2b288799b8031600317355914af8b764bbf953fa23a7b09b2f3684eb91dd609c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/creamy-caesar-dressing-for-salad/",
+    "fetchedAt": "2026-08-03T02:39:18.723Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/creamy-caesar-dressing-for-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

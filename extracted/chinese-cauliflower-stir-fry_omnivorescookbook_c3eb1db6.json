@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Chinese Cauliflower Stir Fry",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "123",
+      "carbohydrateContent": "14.4",
+      "fatContent": "7",
+      "proteinContent": "3.2"
+    },
+    "directions": [
+      "Cut the cauliflower into bite-sized florets. Rinse, drain, and set aside.",
+      "Mix the sauce ingredients in a small bowl.",
+      "Heat oil over medium-high heat in a large carbon steel (or non stick skillet) over medium-high heat until hot. Add the dried chili peppers, shallots, garlic, and ginger. Stir a few times to release the fragrance. Add the Doubanjiang and ground Sichuan peppercorns. Cook and stir to roast the doubanjiang, for 1 minute or so, or until the aromatics are evenly coated. If the doubanjiang looks dry and starts to burn, pour in a spoonful of Shaoxing wine (or water) and stir to bring down the pan temperature.",
+      "Add the cauliflower. Stir and cook for 1 minute.",
+      "Pour in the sauce. Stir again to mix well. Cover the pan. Let steam until the cauliflower turns tender. It takes 6 to 8 minutes to cook through Chinese cauliflower, and 3 to 4 minutes to cook through regular cauliflower. Check on the cauliflower every 2 to 3 minutes, stirring a few times when you check it. Add a bit of water or veggie broth if the pan gets too dry.",
+      "Uncover. If there’s still a lot of liquid in the pan, you can turn up the heat, cook and stir a few more times to let the liquid evaporate. Transfer everything to a plate.",
+      "Serve hot as a side or main dish over steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Head (18 Oz./500g) Chinese Cauliflower",
+        "unit": "small",
+        "notes": "or regular cauliflower",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers",
+        "unit": null,
+        "notes": "Optional, dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "or 1/2 white onion, sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang (spicy Fermented Bean Paste)",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1, or 1 tablespoon for a less spicy and less salty dish",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "C",
+        "notes": "or water",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "or soy sauce",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cca62e65cb2f25edb4e209c2a154abb956f9b089e511bc1d819aa2e2e07329f0",
+    "lineage_hash": "02ac8bd36c13edbaf591446867d909a96a46d73ca4f9f06cb7d215e813df6ec8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/spicy-cauliflower-stir-fry/",
+    "fetchedAt": "2026-08-02T00:49:11.257Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/spicy-cauliflower-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

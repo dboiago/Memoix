@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dutch Martini",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Martini",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "165",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "STIR all ingredients with ice.",
+      "STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Curaçao",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ca439cdb0863ba031e8d6c5d1315a8e42542ece93f7e7a949b63e61e20f1c724",
+    "lineage_hash": "a42c6be7339cdf95bbb0777feb441b67f9abdd381d92f251db07ba88c9c26b1f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2389/dutch-martini",
+    "fetchedAt": "2026-08-03T05:17:01.490Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2389/dutch-martini",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

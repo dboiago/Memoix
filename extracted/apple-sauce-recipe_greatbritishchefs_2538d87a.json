@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Apple Sauce",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, peel, core and dice the apples",
+      "Melt the butter in a pan over a low-medium heat. Add the apples, sugar and water and cook gently until soft and puréed",
+      "Stir in the cinnamon and lemon juice, then transfer to a jar. Allow to cool a little before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bramley Apples",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61f766d202099e2b1c263c6938a8665dad5b91d47efd8315376a36bd68c81503",
+    "lineage_hash": "853db7ee738b077e552726d670f80e49d93e0ee37fdd05835e503609f8c4138d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apple-sauce-recipe",
+    "fetchedAt": "2026-08-03T07:37:38.586Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apple-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

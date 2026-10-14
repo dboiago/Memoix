@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Braised Chicken Drumstick Fillets with Prunes and Saffron",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large sauté pan or casserole dish over a high heat and add a splash of oil. Season the drumstick fillets with salt and pepper and sear them in the pan for 5 minutes on each side until golden",
+      "Transfer the drumstick fillets to a plate lined with kitchen paper to drain the excess oil. Lower the heat to medium and sweat the sliced onion in the same pan until soft and just starting to caramelise (about 10 minutes)",
+      "Add the crushed garlic, tomato paste, cumin, turmeric and Aleppo chilli flakes and fry for another minute until fragrant",
+      "Add the seared drumstick fillets back into the pan along with the split peas, chicken stock and prunes. Bring to a gentle simmer",
+      "Grind the saffron in a pestle and mortar with the sugar, then mix with 2 tablespoons of warm water. Leave for 5 minutes to bloom, then add to the stew. Taste the sauce at this point and adjust the seasoning as necessary, as this is the liquid that will flavour the split peas.",
+      "Put a lid on the pan and cook at a gentle simmer for 40 minutes, or until the split peas are cooked through – they will absorb lots of liquid so check them half way through and add a bit of extra liquid if necessary. Finish with a tablespoon of sherry vinegar and a handful of coriander leaves."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Drumstick Fillets",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aleppo Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Split Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": null,
+        "notes": "pitted",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron Stalks",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e3dbe9823d11576fd12d5166ca8b347b463ed0a54096a439d5bc1b1a3e57909a",
+    "lineage_hash": "e11b1dcbb60feedc48db59282914faacf3411d925d3dbf325f436cbd61fbaec3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-prunes-saffron-recipe",
+    "fetchedAt": "2026-08-03T06:16:40.555Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-prunes-saffron-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

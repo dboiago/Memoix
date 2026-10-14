@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Cassatelle di Agira",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the dough. In a large bowl mix together the flour, sugar, suet, egg and a couple of tablespoons of water (add more if the dough is dry), until you obtain a smooth dough. Cover the bowl with cling film and leave to rest for 1 hour",
+      "Meanwhile, prepare the filling. Add all the ingredients (except the chickpea flour) to a large saucepan and bring to the boil. Add the chickpea flour and stir with a wooden spoon to avoid lumps. Cook the mixture until thick enough to hold a wooden spoon vertically when stuck in the middle of the pan",
+      "Roll the dough into thin sheet and cut into rounds with a 8.5cm pastry cutter. Place a spoonful of filling in the middle of each pastry round and fold like a little empanada or turnover (make sure that all the edges are well-sealed)",
+      "Brush with extra virgin olive oil and transfer to a baking tray lined with parchment paper",
+      "Cook for 25 minutes, then allow to cool for 15 minutes or so. Dust with icing sugar and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": "or butter",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "370",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only, grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpea Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e965ced76406e9b35170ee48094033704bdfbce2e73079d4ef09682bc86b4a0",
+    "lineage_hash": "64e34bd431a63586c8b02476b19e7ead93ffd09e92bf036f539c78c6ee6a7bbf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cassatelle-di-agira-recipe",
+    "fetchedAt": "2026-08-02T06:23:38.378Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cassatelle-di-agira-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

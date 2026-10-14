@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Dessert Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [
+      "Cherry",
+      "Orange Wheel",
+      "Bay Leaf"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a mixing glass with ice. Add the vermouth, gin and Campari, stir to chill, and then strain over ice into an Old Fashioned glass. Top with the soda, stir and add a scoop of blood orange sorbet. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cinzano 1757 Rosso Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinotto Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Blood Orange Sorbet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4644cde2851fb3eac2dfb068f31887d8893dcba8bfce65a7eaad61093035d738",
+    "lineage_hash": "fcf25980bae1d9e23582aaf0a8f88286d2b71331cba71a175d210c73ed8ed8c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dessert-negroni/",
+    "fetchedAt": "2026-08-03T17:47:02.992Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dessert-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

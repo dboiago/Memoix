@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Cilantro Lime Noodles",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "194",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "This recipe is so quick and easy! Ready? Add the cashews, cilantro, water, garlic, lime zest, lime juice, salt, and pepper to a blender and combine until smooth and creamy.",
+      "Cook the Tofu Shiritaki noodles according to directions, drain then return to the pot. Add the cilantro lime sauce to the noodles, and toss to combine. Heat for another 1-2 minutes until the sauce has thickened and everything is heated through. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "soaked or boiled if not using a high-speed blender, see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful Cilantro",
+        "unit": "small",
+        "notes": "about ½ cup packed_",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packages Tofu Shirataki Spaghetti Shaped Noodles",
+        "unit": null,
+        "notes": "or sub thin rice noodles",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d9638a4b9a81e5d45e21ded3d25245fbd552639930f59ddec01c751f41c9039",
+    "lineage_hash": "fdec79d34ded592cdda9eef3582b18e062c3db1a5f6aabfff44c06763c8ba5dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-vegan-cilantro-lime-noodles/",
+    "fetchedAt": "2026-08-01T23:50:02.539Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-vegan-cilantro-lime-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

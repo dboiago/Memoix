@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Classic Pie Dough",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the dry ingredients by stirring the flour, sugar and salt in a large bowl. Add the oil. Using a pastry cutter, electric beaters or a mixer fitted with the paddle attachment, blend until the flour looks evenly crumbly.",
+      "Add the butter and cut in until the dough is rough and crumbly but small pieces of butter are still visible.",
+      "Add the liquids. Place the water and vinegar (or lemon juice) in a small bowl, stir together and then add all at once to the flour mixture, mixing just until the dough comes together. Shape it into two discs, wrap well and chill until firm, at least 1 hour."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "375 g",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": "12 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "45 mL",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "225 g, cut in pieces; does not have to be ice-cold",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cool Water",
+        "unit": "C",
+        "notes": "60 mL",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "alt: fresh lemon juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7f837767419636ee44fadc69cbfbf29f7207bb429e903caae9e1e4ffaaac1c8b",
+    "lineage_hash": "f00da59ada2a683bc1254769fb9d9fcd9760e2239639ab8abaca0559220673a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-pie-dough/",
+    "fetchedAt": "2026-08-01T19:33:52.949Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-pie-dough/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

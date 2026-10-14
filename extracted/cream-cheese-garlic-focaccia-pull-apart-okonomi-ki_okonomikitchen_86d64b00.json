@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Cream Cheese Garlic Focaccia (Pull Apart)",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "3950",
+      "carbohydrateContent": "332",
+      "fatContent": "245",
+      "proteinContent": "82"
+    },
+    "directions": [
+      "Preheat: oven to 350°F (175°C).",
+      "Make the Cream Cheese Filling: In a medium bowl, add the softened cream cheese. Using a spatula or hand mixer, beat until smooth and creamy. Mix in the scallions, parsley, roasted or raw garlic, garlic powder, mozzarella, cheddar, honey (if using), salt, and pepper. Stir until the mixture is fully combined. Transfer the filling to a piping bag (or a zip-top bag with the corner snipped). Set aside.",
+      "Make the Garlic Butter Custard: In another bowl, whisk together the melted butter, kewpie mayo, egg, parsley, raw garlic, condensed milk (or sugar), and salt. Mix until smooth and emulsified. The mixture should look slightly thick and glossy.",
+      "Prepare the Focaccia: Place the baked focaccia on a cutting board. Using a sharp serrated knife, cut diagonal slits across the loaf, making sure not to slice all the way through the bottom — the pieces should stay attached so it becomes pull-apart style. Place it onto a piece of parchment paper and then transfer it onto a baking tray. \n\nTip: Aim for 8–10 sections depending on the size of your loaf.",
+      "Fill & Coat the Focaccia: Slowly pour the garlic butter custard between each slit, letting it seep down into the bread. Use a pastry brush to coat the top and inside of the cuts so every surface is well saturated. Pipe the cream cheese filling generously into each slit.",
+      "Add Cheese & Bake: Sprinkle the top with shredded parmesan or mozzarella. Cover the focaccia with foil and bake for 10–15 minutes to warm through. Remove the foil and bake for another 5–10 minutes, or until the top is lightly golden and the cheese is melted.",
+      "Serve: Let cool for 5 minutes, then serve warm. This focaccia is best enjoyed the same day when it’s ultra-soft, buttery, and gooey. Enjoy!!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tub (227 G) Cream Cheese",
+        "unit": null,
+        "notes": "softened",
+        "amount": "1",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallions (20 G)",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "2",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "handful",
+        "notes": "finely, chopped",
+        "amount": "1",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Garlic",
+        "unit": "head",
+        "notes": "alt: 2 tbsp (20 g) minced raw garlic",
+        "amount": "1",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Loosely Packed Shredded Cheese",
+        "unit": "C",
+        "notes": "60 g, I used mozzarella and sharp white cheddar, optional",
+        "amount": "½",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Cracked Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cream Cheese Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "80 g, omit salt if using salted butter, melted",
+        "amount": "6",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Kewpie Mayo",
+        "unit": "Tbsp",
+        "notes": "20 g",
+        "amount": "1½",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Flat Leaf Parsley",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "⅓",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Garlic",
+        "unit": "Tbsp",
+        "notes": "16 g, minced",
+        "amount": "2",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "Tbsp",
+        "notes": "or sugar",
+        "amount": "1",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Garlic Butter Custard",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bc582e9244d7f58ff1eb756efab73706628e1c863c78c904995525fb731bddd",
+    "lineage_hash": "a34a965be65f3c9f0e6694f31d12a9c65a4b5c80e03d8f2e92c8dd1bd7de32d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/cream-cheese-garlic-focaccia-pull-apart/",
+    "fetchedAt": "2026-09-26T01:25:50.256Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/cream-cheese-garlic-focaccia-pull-apart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

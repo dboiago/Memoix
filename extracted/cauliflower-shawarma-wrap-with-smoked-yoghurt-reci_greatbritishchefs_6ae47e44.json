@@ -1,0 +1,304 @@
+{
+  "recipe": {
+    "name": "Cauliflower Shawarma Wrap with Smoked Yoghurt",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, smoke your yoghurt. Set up your barbecue (with a couple of wood chunks nestled in the charcoal) for indirect cooking and preheat to 100°C",
+      "Put the yoghurt in a foil tray, place it on the grill and close the lid. Leave to smoke for 20 minutes or so and then taste. If you are happy with the level of smokiness, season the yoghurt with salt and place in the fridge to chill. Alternatively, leave it to smoke for longer until you're happy with the flavour",
+      "Place a pizza stone on your barbecue and increase the temperature to 350°C (or as hot as you can get it)",
+      "While the barbecue is heating up, make the flatbread dough. Add the yeast, sugar  and milk to a bowl and stir well. Leave to activate for 10 minutes",
+      "Use a fork to stir the salt into the flour in a separate bowl, then add the activated yeast mixture to the flour bit by bit (you may not need it all). Keep stirring with a fork until the dough comes together, then tip onto a floured work surface and knead the dough for 8 minutes",
+      "Place into a lightly oiled bowl and lightly oil the top of the dough. Cover with cling film and leave to prove for 1 hour",
+      "Now make the shawarma spice blend. Toast the whole spices in a hot, dry pan until fragrant, for about 30 seconds. Transfer to a spice grinder and blitz to a powder. Fold through the powdered spices and store in an airtight container. This blend will keep indefinitely, but is best enjoyed within 6 months",
+      "Cut the cauliflower into florets and dice the stalk into 1.5cm pieces. Chop the red onion into wedges (keeping the root attached so the wedges stay intact) and place in a bowl with the cauliflower",
+      "Make a marinade by mixing together 2 tbsp of the shawarma spice blend, 2 tbsp of oil, a pinch of salt and the juice of half a lemon. Pour this into the bowl with the caluflower and onions and mix well so everything is coated evenly",
+      "Assemble the skewers by alternating pieces of cauliflower and red onion",
+      "Once the dough has proved, knock back the air by ‘punching’ the dough until the large air bubbles have gone. Divide the dough into 4 and roll out into 2mm-thin flatbreads",
+      "Cook each flatbread on the pizza stone with the lid closed for 1–2 minutes on each side. You want it to bubble up and brown slightly with a slight crispiness, but still soft enough to make into a wrap",
+      "Once the flatbreads are cooked, remove the pizza stone and set up the barbecue for direct cooking. Place the kebabs on the grill and cook, turning every few minutes to get a nice even charring. When ready, the cauliflower should be soft all the way through but charred and crispy on the outside",
+      "Serve the kebabs in the flatbreads with shredded lettuce, cabbage, tomatoes, herbs and pickles. Drizzle with smoked yoghurt and sprinkle with pomegranate seeds, pistachios and a pinch of sumac to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": "weighing approx. 500g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Berries",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Granules",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Romaine Lettuce",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "shredded and dressed with lemon juice",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Green Chillies",
+        "unit": null,
+        "notes": "or gherkins (or both)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint",
+        "unit": null,
+        "notes": "coriander and parlsey leaves",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sumac",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "872c14da0aa6ed45cf0c17be896cbe2387ce1e6218e0072c3bbaa984b0744016",
+    "lineage_hash": "9f68650fda5a33dd66500112663b01eaf61e6f80868f6454e94d175f1dd17b03"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/shawarma-cauliflower-recipe",
+    "fetchedAt": "2026-08-03T07:40:40.342Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/shawarma-cauliflower-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

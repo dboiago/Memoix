@@ -1,0 +1,70 @@
+{
+  "url": "https://www.cookwithmanali.com/baked-feta-pasta/",
+  "slug": "baked-feta-pasta_cookwithmanali_5c7ced55",
+  "title": "Baked Feta Pasta",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-02T08:46:28.268Z",
+  "ldName": "Baked Feta Pasta",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Mediterranean",
+  "ldCategory": "Main Course",
+  "ldKeywords": "baked feta pasta",
+  "ldIngredientsRaw": [
+    "2 pints cherry or grape tomatoes (610 grams approx )",
+    "1 large red pepper (sliced)",
+    "1 medium red onion (sliced)",
+    "4-5 large garlic cloves (sliced)",
+    "1 teaspoon Italian seasoning",
+    "1/2 teaspoon dried oregano",
+    "1/2 teaspoon red chili flakes",
+    "1/4 teaspoon salt (or to taste)",
+    "1/4 teaspoon black pepper (or to taste)",
+    "1/2 cup extra virgin olive oil (4 oz, you can 1/3 cup if you want to use less )",
+    "8 oz block feta cheese",
+    "8 oz pasta (of choice, I used elbow macaroni pasta)",
+    "1/3 cup fresh basil (chopped + more to serve)"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat oven to 400 F degrees. To a baking dish (mine is 3 qt 12.5&quot; x 8.25&quot;), add cherry or grape tomatoes, followed by sliced red pepper, onion and garlic.",
+    "Add 1/4 cup olive oil. Then add all the seasonings- Italian seasoning, dried oregano, red chili flakes, salt and black pepper.",
+    "Mix it all together and then create some space in the center of the baking dish and place a block of feta cheese. Drizzle the block of feta with the remaining 1/4 cup olive oil.Bake at 400 F degrees for 35 minutes. Meanwhile boil the pasta according to instructions on the package and set aside.",
+    "Take the baking dish out of the oven. The tomatoes would have burst by now releasing all the beautiful flavor and the cheese will be super melt-y.Take a spatula and mash the cheese and mix everything together. Mash the garlic cloves.",
+    "Add in the boiled pasta and mix until it&#039;s all well combined. Stir in 1/3 cup of chopped fresh basil and mix. Top with more fresh basil and serve the baked feta pasta warm!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "504 kcal",
+    "carbohydrateContent": "41 g",
+    "proteinContent": "13 g",
+    "fatContent": "32 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "40 mg",
+    "sodiumContent": "632 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "5 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 pints cherry or grape tomatoes, 610 grams approx",
+    "▢ 1 large red pepper, sliced",
+    "▢ 1 medium red onion, sliced",
+    "▢ 4-5 large garlic cloves, sliced",
+    "▢ 1 teaspoon Italian seasoning",
+    "▢ 1/2 teaspoon dried oregano",
+    "▢ 1/2 teaspoon red chili flakes",
+    "▢ 1/4 teaspoon salt, or to taste",
+    "▢ 1/4 teaspoon black pepper, or to taste",
+    "▢ 1/2 cup extra virgin olive oil, 4 oz, you can 1/3 cup if you want to use less",
+    "▢ 8 oz block feta cheese",
+    "▢ 8 oz pasta, of choice, I used elbow macaroni pasta",
+    "▢ 1/3 cup fresh basil, chopped + more to serve"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

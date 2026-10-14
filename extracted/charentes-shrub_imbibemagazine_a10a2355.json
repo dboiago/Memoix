@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Charentes Shrub",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all ingredients into a shaker, except the IPA. Add ice and shake. Strain into an ice-filled glass, top with IPA and garnish.\nTea-Infused Pineau des CharentesSoak 1 Earl Grey teabag in half a 750 ml. bottle of Pineau for 1 ½ hours.\nRosemary-Pineapple ShrubSlice a small pineapple, place in a jar and cover with cider vinegar. Infuse for 4 days, shaking once a day. Filter through cheesecloth and bring 6 ounces of pineapple vinegar to a boil with 5 ounces of superfine sugar. When sugar dissolves, skim off top layer and add 1 sprig of fresh rosemary. Boil for 10 minutes, remove from heat, filter and cool before bottling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey-infused Pineau Des Charentes",
+        "unit": "oz",
+        "notes": "Pineau des Charentes is a French aperitif available at well-stocked wine shops",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary-pineapple Shrub",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "IPA",
+        "unit": "oz",
+        "notes": "Sierra Nevada works well",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6581a36c636a4bf5fa0a1e1d0e3effe84a1784c70a050c1455995ffb9f145896",
+    "lineage_hash": "519738f3877f54bf0896f1830c81640fbcfd21c4d1d87297844f6672a3716da5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/charentes-shrub-recipe/",
+    "fetchedAt": "2026-08-04T00:18:18.645Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/charentes-shrub-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

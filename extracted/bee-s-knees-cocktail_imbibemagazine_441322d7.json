@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Bee's Knees Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker with ice. Shake, strain into a chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "964619b75d105e0bb7be0b5a56ff7760b30e8be772e4d4fedf113ab6d9b98010",
+    "lineage_hash": "12a2269d01d45536b8d761faccf30bc1aeaa8fd4b2c4c33dd630bb3a18c6e2b7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bee-s-knees-2/",
+    "fetchedAt": "2026-08-03T20:40:03.151Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bee-s-knees-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Black Bean Salsa",
+    "time": "1 hr 5 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "371",
+      "carbohydrateContent": "45",
+      "fatContent": "15",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Place all the ingredients in a medium bowl, and stir gently to combine.",
+      "Cover the bowl, and let it sit in your refrigerator for a least an hour developing flavors before serving.",
+      "Serve with plantain chips, tortilla chips, bread or with a salad!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leftover Vegan Black Beans",
+        "unit": "C",
+        "notes": "alt: canned black beans",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar If Using Canned Beans",
+        "unit": "tsp",
+        "notes": "you may want to add a little more for extra flavor.",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "diced about a 1/4 cup",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper Flakes More If You Like Spicy!",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Pinch of Cumin",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little More Vinegar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little More Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8128564aedef266f64ad466e91d37b6f2ce1aee8dc276d8635d282e4bcf18b83",
+    "lineage_hash": "f9eda35c3d7d6c066850d9e990215ea2055687b4bbf41d5abd02507acfe825a9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://braziliankitchenabroad.com/black-bean-salsa-recipe/",
+    "fetchedAt": "2026-09-25T20:00:42.854Z"
+  },
+  "rawSource": "https://braziliankitchenabroad.com/black-bean-salsa-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

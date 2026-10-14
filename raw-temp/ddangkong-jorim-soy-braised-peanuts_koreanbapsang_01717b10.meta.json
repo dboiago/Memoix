@@ -1,0 +1,45 @@
+{
+  "url": "https://www.koreanbapsang.com/ddangkong-jorim-soy-braised-peanuts/",
+  "slug": "ddangkong-jorim-soy-braised-peanuts_koreanbapsang_01717b10",
+  "title": "Ddangkong Jorim (Soy Braised Peanuts)",
+  "byline": "Hyosun",
+  "fetchedAt": "2026-08-02T00:03:36.862Z",
+  "ldName": "Ddangkong Jorim (Soy Braised Peanuts)",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side Dish",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 cup raw shelled peanuts with skins",
+    "2 tablespoons soy sauce",
+    "2 tablespoons rice wine or mirin (or white wine)",
+    "1 tablespoon sugar",
+    "2 tablespoons corn syrup, Korean oligodang",
+    "1 cup water or dasima broth",
+    "1/4 teaspoon sesame seeds - optional garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Add the peanuts and 2 cups of water to a small pot, bring it to a boil, and boil for about 5 minutes.",
+    "Drain the peanuts, discarding the cooking liquid.",
+    "Return the peanuts to the pot. Add the soy sauce, rice wine (or mirin), sugar, corn syrup, and water (or dasima broth).",
+    "Bring it to a boil. Reduce the heat to medium and gently boil, uncovered, until almost all the sauce has evaporated, about 20 to 25 minutes. You can increase the heat to medium high during the last few minutes. Stir occasionally and keep your eyes on the pot to avoid burning the peanuts. Sprinkle with the sesame seeds."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 1 cup raw shelled peanuts with skins",
+    "▢ 2 tablespoons soy sauce",
+    "▢ 2 tablespoons rice wine or mirin (or white wine)",
+    "▢ 1 tablespoon sugar",
+    "▢ 2 tablespoons corn syrup, Korean oligodang or honey (1.5 TB)",
+    "▢ 1 cup water or dasima broth",
+    "▢ 1/4 teaspoon sesame seeds - optional garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

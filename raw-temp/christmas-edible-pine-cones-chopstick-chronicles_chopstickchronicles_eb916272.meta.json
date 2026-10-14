@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chopstickchronicles.com/christmas-edible-pine-cones/",
+  "slug": "christmas-edible-pine-cones-chopstick-chronicles_chopstickchronicles_eb916272",
+  "title": "Christmas Edible Pine Cones 食べられる松ぼっくり - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T22:07:25.597Z",
+  "ldName": "Christmas Sweets-edible pine cones 食べられる松ぼっくり",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": "Europian/Japanese",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "#Christmas sweets, #edible pine cones",
+  "ldIngredientsRaw": [
+    "350 g purple sweet potatoes peeled and chopped (*1)",
+    "15 g unsulted butter",
+    "2 tbsp  sugar (*2)",
+    "1 tbsp cocoa powder",
+    "1 packet Chocolate coated corn flakes (*3)"
+  ],
+  "ldInstructionsRaw": [
+    "Place sweet potatoes in a pot and enough water just cover the potatoes.&nbsp;",
+    "Bring it to boil on high heat then turn the heat down to medium and simmer for 10-15 min till the potato is soft and cooked.&nbsp;",
+    "Drain the cooking water and add butter while the sweetpotato is still hot.&nbsp;",
+    "Add sugar, and cocoa powder and mash them all together with a potato masher.&nbsp;",
+    "Take about 2 tbs of mashed sweet potato on to a cling wrap.",
+    "Wrap the sweet potatoes and shape it like a cone.&nbsp;",
+    "Tap it onto the kitchen bench to flatten the bottom gently 2-3 times.&nbsp;",
+    "Unwrap the cling wrap and start inserting bigger pieces of choco flakes from the bottom side.&nbsp;",
+    "Continue inserting choco flakes bigger pieces from the bottom to smaller pieces to the top.&nbsp;",
+    "Repeat same for the remaining ingredients.  It will make about 10 pine cones. *4"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "229 kcal",
+    "carbohydrateContent": "16 g",
+    "proteinContent": "1 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "cholesterolContent": "3 mg",
+    "sodiumContent": "57 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 350 g purple sweet potatoes peeled and chopped *1",
+    "▢ 15 g unsulted butter",
+    "▢ 2 tbsp  sugar *2",
+    "▢ 1 tbsp cocoa powder",
+    "▢ 1 packet Chocolate coated corn flakes *3"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

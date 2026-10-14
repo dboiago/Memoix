@@ -1,0 +1,121 @@
+{
+  "recipe": {
+    "name": "Ajo Blanco with Mixed Herb Oil",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Tear the bread into pieces and combine with the milk. Set aside to soak",
+      "Toast the almonds in a dry pan until they're starting to turn golden in patches. Set aside some for garnish – a few for each bowl",
+      "Transfer the remaining almonds to a blender. Squeeze out the bread and add it too, then add a splash of water and blend until you have a paste",
+      "With the motor running, slowly add the water",
+      "Then add the garlic, oil and vinegar and blend until smooth. Season really well with salt and white pepper",
+      "Strain the soup through a fine sieve then transfer to the fridge until well chilled",
+      "To serve, divide between bowls, top with the grapes and dots of herb oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Bread",
+        "unit": "g",
+        "notes": "slightly stale, crusts removed",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cold Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapes",
+        "unit": null,
+        "notes": "halved, to garnish",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Herb Oil",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db35fc6ae78f316d171609eecfd728b1325b8631d11b35598c197d83f25e0738",
+    "lineage_hash": "e1134c5fad7f3dd126d60c0caa2524051f968459c3788565d44237658f9e6235"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ajo-blanco-mixed-herb-oil-recipe",
+    "fetchedAt": "2026-08-02T15:11:29.005Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ajo-blanco-mixed-herb-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

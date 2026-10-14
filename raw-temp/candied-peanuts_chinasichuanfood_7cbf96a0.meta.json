@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chinasichuanfood.com/syrup-coated-peanut/",
+  "slug": "candied-peanuts_chinasichuanfood_7cbf96a0",
+  "title": "Candied Peanuts",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:21:00.081Z",
+  "ldName": "Candied Peanut",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT2M",
+  "ldCookTime": "PT13M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Snack",
+  "ldKeywords": "coated, peanuts",
+  "ldIngredientsRaw": [
+    "300 g peanuts",
+    "150 g granulated sugar ( , or more as needed)",
+    "1/2 cup clean water",
+    "a small pinch of salt"
+  ],
+  "ldInstructionsRaw": [
+    "Pre-heat oven to 150 degree C. Spread peanuts evenly on baking sheet and roast for 15 to 20 minutes. Mix the peanuts evenly once or twice to make sure they are evenly cooked.&nbsp;&nbsp;",
+    "Heat the sugar along with water and a small pinch of salt in a pan. Heat over medium to low fire. Stir from time to time until the thin syrup form large white bubbles . Slow down fire, stir in the peanuts and make the peanuts well coated with syrup.&nbsp;",
+    "Transfer out gently and cool until completely cooled down. Transfer to air-tight container. Keep in shadow place up to 1 week."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "1259 kcal",
+    "carbohydrateContent": "126 g",
+    "proteinContent": "39 g",
+    "fatContent": "74 g",
+    "saturatedFatContent": "11 g",
+    "sodiumContent": "36 mg",
+    "fiberContent": "14 g",
+    "sugarContent": "74 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "300 g peanuts",
+    "150 g granulated sugar  , or more as needed",
+    "1/2 cup clean water",
+    "a small pinch of salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

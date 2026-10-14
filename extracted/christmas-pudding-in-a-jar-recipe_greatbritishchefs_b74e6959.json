@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding in a Jar",
+    "time": "10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Layer the dried ingredients in a 1 litre Kilner jar with clip-top lid and a rubber seal, in the order that they are listed",
+      "Attach the gift label with cooking instructions as shown above",
+      "You can add a silver sixpence to the mix in the jar – make sure you tell the recipient it is in there – it’s best to place it on top. A wooden spoon and pudding basin can also be added to this edible gift, and if you have hens, why not add fresh eggs too?"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "sultanas and currants",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citrus Peel",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glacé Cherries",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Suet",
+        "unit": "g",
+        "notes": "vegetarian, grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "771bcdd1dbc31f6efd410eec8a3099a635f92051ab52831284091d8111a50805",
+    "lineage_hash": "da0756d63a83abd98935ea8d4a3a81a77f3c3b6f90ab3084fef33303459ef286"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-in-jar-recipe",
+    "fetchedAt": "2026-08-02T22:07:51.304Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-in-jar-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

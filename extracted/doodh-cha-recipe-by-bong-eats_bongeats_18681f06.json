@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Doodh Cha",
+    "time": "15 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "140",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Using a mortar and pestle, roughly crush the clove and cardamom pod. This will help release their flavours.",
+      "Wash, peel, and dice the ginger roughly.",
+      "Set a saucepan over medium-high heat and add the water, clove, cardamom, and ginger.",
+      "Cover the pan and let the water come to a boil. Allow the spices to bubble in water for about 4 minutes.",
+      "Add the milk, and once it has heated up, add in the tea and sugar.",
+      "Allow this milky mixture to boil vigorously. Just when the tea is about to boil over, drop the heat and let it simmer for about 4 minutes. You can see the tea change colour from light brown to a rosy kind of orange.",
+      "Strain and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ctc Tea",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "44b59fef1e21b0b5be2c48f01cab487f2154b895737ac4ff2cb54540a46ca4f4",
+    "lineage_hash": "c1d54be77e0f0a6da7f2287645bb88bad9f8e20ed7cafd5a1904bbba3d02cf3b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/doodh-cha",
+    "fetchedAt": "2026-08-01T19:18:40.926Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/doodh-cha",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

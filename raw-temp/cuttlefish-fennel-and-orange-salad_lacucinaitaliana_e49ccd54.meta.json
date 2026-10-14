@@ -1,0 +1,49 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/appetizers/cuttlefish-fennel-and-orange-salad",
+  "slug": "cuttlefish-fennel-and-orange-salad_lacucinaitaliana_e49ccd54",
+  "title": "Cuttlefish, Fennel, and Orange Salad",
+  "byline": "by  Editorial staff   August 4, 2021",
+  "fetchedAt": "2026-08-02T10:36:35.846Z",
+  "ldName": "Cuttlefish, Fennel, and Orange Salad",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "appetizers",
+  "ldKeywords": "Natale,Natale 2016",
+  "ldIngredientsRaw": [
+    "1LB. cuttlefish, cleaned",
+    "4OZ. fennel (around 1/2 of a bulb)",
+    "2OZ. baby spinach",
+    "2 oranges",
+    "1 apple",
+    "parsley",
+    "shallot",
+    "wasabi",
+    "dry white wine",
+    "extra-virgin olive oil"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Remove the tentacles from the cuttlefish and place them in a saucepan with a sprig of parsley, 2 Tbsp. oil, and 2 ladlefuls of water; cook over minimum heat with the lid on for 10-12 minutes. Add the cuttlefish bodies and cook for another 10 minutes. Turn off the heat and let the cuttlefish rest in their water.&nbsp;</p>",
+    "<p>Slice the fennel thinly and place in water. Grate the zest from the oranges, then remove the peel and white pith, and cut the flesh into slices.</p>",
+    "<p>Peel the apple and cut it into quarters. Cook in a saucepan with half a sliced shallot, a splash of wine, and a ladleful of water for 10 minutes; add wasabi to taste and three pieces of orange peel. Remove the orange peels and blend the rest to obtain a sauce.</p>",
+    "<p>Drain the cuttlefish and the fennel. Serve the cuttlefish with the orange and fennel slices, and spinach; dress with the sauce and top with grated orange zest.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 LB. of cuttlefish, cleaned",
+    "4 OZ. of fennel (around 1/2 of a bulb)",
+    "2 OZ. of baby spinach",
+    "2  of oranges",
+    "1  of apple",
+    "parsley",
+    "shallot",
+    "wasabi",
+    "dry white wine",
+    "extra-virgin olive oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

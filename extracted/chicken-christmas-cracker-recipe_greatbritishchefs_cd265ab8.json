@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Chicken Christmas Cracker",
+    "time": "1 hr 20 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large saucepan over a medium heat and add oil. Once hot, add the onions and stir until soft and golden",
+      "Then, stir in the chicken and cook until golden brown, approximately 5 minutes",
+      "Add both types of mushroom and cook for a further 5 minutes",
+      "Add the broccoli and chicken stock and reduce until the pan is almost dry",
+      "Stir in the crème fraîche and then season to taste. Transfer this mixture to a bowl and allow to cool. Once cool, store in the fridge for 20 minutes until cold and set",
+      "Lay a sheet of filo pastry on a work surface. Brush 1 half of the sheet with butter and fold over to create 1 double-layered square. Repeat with the remaining filo to make 8 double-layered squares",
+      "Divide the mix into 8 portions and shape each portion into a cylinder",
+      "Place a cylinder of the chicken mixture across the middle of a square of pastry towards the front edge. Fold the edge into the filling and roll to make a cylinder. Just before getting to the opposite edge, brush with melted butter to seal",
+      "Twist the ends of the pastry to make it look like a cracker - trim off some pastry if it looks too big. Brush the whole cracker lightly with melted butter and place on a non-stick baking tray. Repeat to make more crackers",
+      "Place the baking tray of crackers in the middle of the oven for 20 minutes, or until golden brown",
+      "Meanwhile, in a bowl, fold the paprika and chives into the crème fraîche",
+      "Once the crackers are cooked, remove and serve with a dollop of the crème fraiche on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skinless, cut into 2cm cubes",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "cut into 1cm slices",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": null,
+        "notes": "cut into 1cm slices",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": "g",
+        "notes": "small",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half Fat Crème Fraîche",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Filo Pastry Sheets",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half Fat Crème Fraîche",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32696a8cf019978075508f5343291bd4b27a95c9e670ded9ba0b0f531ab67991",
+    "lineage_hash": "4ae672253a58eef63265ff87456346664aa3677d453d76bbb3112010888463af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-christmas-cracker-recipe",
+    "fetchedAt": "2026-08-03T21:55:40.670Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-christmas-cracker-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

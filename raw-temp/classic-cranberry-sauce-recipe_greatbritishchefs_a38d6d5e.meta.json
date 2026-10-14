@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cranberry-sauce-recipe",
+  "slug": "classic-cranberry-sauce-recipe_greatbritishchefs_a38d6d5e",
+  "title": "Classic Cranberry Sauce Recipe",
+  "byline": "by Kevin Mangeolles",
+  "fetchedAt": "2026-08-03T21:58:05.580Z",
+  "ldName": "Classic cranberry sauce",
+  "ldTime": "PT35M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Condiment",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "1000g of cranberries",
+    "2 oranges, zested",
+    "400ml of orange juice",
+    "1 pinch of ground ginger",
+    "1 pinch of mixed spice",
+    "1 pinch of cinnamon",
+    "400g of brown sugar"
+  ],
+  "ldInstructionsRaw": [
+    "Start the cranberry sauce by combining the orange juice, zest and spices in a heavy based saucepan. Bring to a simmer and reduce by half. Add the cranberries and cook on a low heat to slowly stew the fruit without burning",
+    "As soon as the cranberry mixture resembles a loose jam like consistency, add the sugar and bring back to the boil. Reduce the heat to a simmer and cook for a further 10 minutes, then remove from the heat",
+    "When warm, taste for sweetness, adding sugar to taste. Remember that you want to achieve a balance between sweet and sour. Freeze if storing for more than 3 days or refrigerate before serving",
+    "Serve either with Christmas dinner or the following day with cold cuts of meat"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

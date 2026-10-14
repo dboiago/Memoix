@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Brioche Buns",
+    "time": "6 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Brioche dough (make the day before):  To make this recipe for chocolate chip brioche buns, start by preparing the brioche dough. Pour the warm milk into the stand mixer bowl.",
+      "Add the crumbled fresh baker's yeast...",
+      "...and mix these two ingredients together with a whisk to fully dissolve the yeast in the milk...",
+      "...until smooth.",
+      "Add the flour...",
+      "...the fine salt...",
+      "...and the caster sugar.",
+      "Also add the tempered whole eggs...",
+      "...and knead everything with the dough hook attachment on medium speed...",
+      "...until the dough is homogeneous. Continue kneading at high speed.",
+      "When the dough starts pulling away from the sides of the bowl, add the softened butter cut into pieces...",
+      "...gradually, in several batches. Make sure you don't incorporate the butter all at once.",
+      "Knead the dough until the butter is fully incorporated.",
+      "During kneading, check the dough temperature using a laser thermometer. It should not exceed 25°C.",
+      "The brioche dough is ready when it completely detaches from the sides of the bowl...",
+      "...as shown in this photo. Stop the mixer.",
+      "Remove the mixing bowl and cover it tightly with a sheet of plastic wrap. Let it proof in a proofing chamber set at 28°C until the dough doubles in volume. This will take about 1 hour 30 minutes to 2 hours.",
+      "At the end of the proofing time, you will see that the dough has doubled in volume.",
+      "Remove the plastic wrap.",
+      "This is what the result should look like.",
+      "Deflate the dough by pressing it down with the back of your hand to release as much gas as possible.",
+      "Cover the surface of the dough with plastic wrap, ensuring that no air gets in contact with it.",
+      "Stretch a second sheet of plastic wrap over the container and refrigerate overnight.",
+      "The next day, the brioche dough should have slightly risen, which is completely normal.",
+      "Remove the plastic wrap...",
+      "...and transfer the dough onto a lightly floured work surface.",
+      "Divide the brioche dough using a dough scraper...",
+      "...into portions of 50g each. To ensure uniform-sized brioche buns, it is recommended to use a kitchen scale.",
+      "Roll a piece of dough in the palm of your hand, rotating it on the floured work surface.",
+      "Repeat with all the dough pieces.",
+      "Place these dough balls into brioche moulds Ø 7cm.",
+      "This is what the result should look like.",
+      "Place the moulds on a baking sheet and transfer them to the proofing chamber set at 28°C, until the buns double in volume. This will take approximately 1 hour 30 minutes.",
+      "Finish:  At the end of the proofing time, apply an egg wash to the surface of the brioche buns using a pastry brush. This egg wash consists of one beaten egg yolk mixed with a tablespoon of water.",
+      "Sprinkle the brioche buns with chocolate chips. You can also incorporate chocolate chips into the cold dough at step 26 by gently kneading them in by hand.",
+      "Place the baking sheet in a convection oven preheated to 180°C and bake for 20 to 25 minutes. Baking time may vary depending on the oven.",
+      "Once baked, remove the brioche buns from the oven.",
+      "This is what the result should look like.",
+      "Release the chocolate chip brioche buns and place them on a wire rack to cool completely. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "T45 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baker's Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "18",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Eggs",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "egg wash",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b62739e592ff977c96d697f4fed11193be8d7faefee7d1219cf2385db1de2fa7",
+    "lineage_hash": "19b65cfca582918c3a9bdcac94166c567480bdadfe27f2bd349c66fb173f7124"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/chocolate-chip-brioche-bun.html",
+    "fetchedAt": "2026-08-02T01:50:11.723Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/chocolate-chip-brioche-bun.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

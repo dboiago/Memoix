@@ -1,0 +1,60 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-coriander-salad/",
+  "slug": "chinese-coriander-salad_chinasichuanfood_4b5fe396",
+  "title": "Chinese Coriander Salad",
+  "byline": "",
+  "fetchedAt": "2026-08-02T00:00:14.997Z",
+  "ldName": "Chinese Coriander Salad",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "Coriander",
+  "ldIngredientsRaw": [
+    "1  bunch fresh coriander ( , around 150g)",
+    "1/4  middle size red onion ( , shredded)",
+    "1 tablespoon Chinese red oil",
+    "1  garlic clove ( , mashed)",
+    "1 tablespoon sesame oil",
+    "1/2 tablespoon black vinegar",
+    "1 teaspoon sugar ( , optional)",
+    "2 tablespoons light soy sauce",
+    "pinch of salt if needed"
+  ],
+  "ldInstructionsRaw": [
+    "Wash coriander cut into small sections.",
+    "Place coriander with shredded red onion in a salad bowl.",
+    "Add all the seasonings in and mix well. Wait for several minutes and top with some red oil for decoration before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "167 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "3 g",
+    "fatContent": "14 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "2009 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 bunch fresh coriander  , around 150g",
+    "1/4 middle size red onion  , shredded",
+    "[Seasonings]",
+    "1 tablespoon Chinese red oil",
+    "1 garlic clove  , mashed",
+    "1 tablespoon sesame oil",
+    "1/2 tablespoon black vinegar",
+    "1 teaspoon sugar  , optional",
+    "2 tablespoons light soy sauce",
+    "pinch of salt if needed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Southside",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Coupe",
+    "garnish": [
+      "Mint Sprig"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a shaker with ice.",
+      "Shake until chilled.",
+      "Strain into a chilled coupe.",
+      "Affix a mint sprig to the coupe using a tiny clothespin."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": "preferably Greenall’s",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38204c69aaa80392718b1b52cbe44f0f1f258e07ccc2b4671acccf72f8bfc3ba",
+    "lineage_hash": "08ececefb9604ff8d7dd79def5223425afa869c9daf10646fa46f2db48f61ece"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/dutch-courages-southside/",
+    "fetchedAt": "2026-08-03T03:00:54.705Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/dutch-courages-southside/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

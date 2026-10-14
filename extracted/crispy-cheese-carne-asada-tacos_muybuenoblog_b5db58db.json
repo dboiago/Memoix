@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Crispy Cheese Carne Asada Tacos",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "192",
+      "carbohydrateContent": "12",
+      "fatContent": "6",
+      "proteinContent": "22"
+    },
+    "directions": [
+      "Sprinkle diced beef with salt, pepper, garlic powder, and onion powder. Stir until the meat is evenly coated with the seasonings.",
+      "Heat a large skillet over medium-high heat. Add the seasoned beef and cook for about 10 minutes, turning occasionally, until browned and cooked through.",
+      "Heat a comal or nonstick skillet over medium heat. Sprinkle about ¼ cup of shredded Oaxaca cheese directly onto the surface in the shape of a tortilla. Let the cheese melt and cook until golden and crispy around the edges.",
+      "Place a tortilla on top of the melted cheese. Once the cheese adheres to the tortilla, gently flip it so the tortilla side is down and the cheese crisps up beautifully on the outside.",
+      "Fill each cheesy tortilla with the cooked beef and your favorite toppings like guacamole, salsa, cilantro, and onions.",
+      "Serve warm with grilled cebollitas, Chile de Árbol Salsa, and an ice-cold chelada for a truly irresistible meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Taco Meat",
+        "unit": "lb",
+        "notes": "or cubed carne asada, finely diced",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oaxaca Cheese",
+        "unit": "C",
+        "notes": "or Monterey Jack or mozzarella, shredded",
+        "amount": "1-1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fdfd50a98c6cec6132681bc90dc29dec1b5f8fd87bf67f0263988022f801f15f",
+    "lineage_hash": "0bd918375d771c104686a2efcc5b68fb17779c9023ec22d3d1936e83aef36b73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/crispy-cheese-carne-asada-tacos/",
+    "fetchedAt": "2026-08-02T10:52:42.655Z"
+  },
+  "rawSource": "https://muybuenoblog.com/crispy-cheese-carne-asada-tacos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

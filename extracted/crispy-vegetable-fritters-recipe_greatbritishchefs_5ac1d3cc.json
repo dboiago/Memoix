@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Crispy Vegetable Fritters",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the oil into a pan to a depth of approximately 2.5cm. Heat the oil until it is just beginning to smoke",
+      "Meanwhile, mix together the flour, paprika and cayenne pepper in a large bowl. Add the cauliflower, broccoli and carrots and mix with your hands to get the vegetables nicely coated",
+      "Once the oil is hot enough, remove a couple of the florets from the bowl (it's best to fry in batches), shake off the excess flour and lower into the oil. Fry until golden, remove and place on kitchen towel to absorb the excess oil",
+      "Serve the fritters warm with a slice of lemon and a pinch of salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cauliflower Florets",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Florets",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": "for frying",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79a27b74aaec1faedf95c8c904aac9bea4e29736c282c21b083f7f3f9c142609",
+    "lineage_hash": "fc4cd7f8bdf44e6b453bde624e532a4f13b81809dcccf9d5c5a905c100703184"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-vegetable-fritters-recipe",
+    "fetchedAt": "2026-08-03T17:05:36.904Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-vegetable-fritters-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

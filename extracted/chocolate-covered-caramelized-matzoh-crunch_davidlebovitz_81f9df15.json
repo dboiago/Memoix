@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chocolate-Covered Caramelized Matzoh Crunch",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a rimmed baking sheet (approximately 11 x 17″, 28 x 42cm) completely with foil, making sure the foil goes up and over the edges. Cover the foil with a sheet of parchment paper.",
+      "Preheat the oven to 375ºF (190ºC).",
+      "Line the bottom of the sheet with matzoh, breaking extra pieces as necessary to fill in any spaces.",
+      "In a 3-4 quart (3-4l) heavy duty saucepan, melt the butter and brown sugar together, and cook over medium heat, stirring, until the butter is melted and the mixture is beginning to boil. Boil for 3 minutes, stirring constantly. Remove from heat, add the salt and vanilla, and pour over matzoh. Working quickly, spread the caramel with a heatproof spatula.",
+      "Put the pan in the oven and reduce the heat to 350ºF (175ºC) degrees. Bake for 15 minutes. As it bakes, it will bubble up but make sure it’s not burning every once in a while. If it is in spots, remove from oven and reduce the heat to 325F (160C), then replace the pan.",
+      "Remove from oven and immediately cover with chocolate chips. Let stand 5 minutes, then spread with an offset spatula.",
+      "If you wish, sprinkle with toasted almonds (or another favorite nut, toasted and coarsely-chopped), a sprinkle of flaky sea salt, or roasted cocoa nibs.",
+      "Let cool completely, the break into pieces and store in an airtight container until ready to serve. It should keep well for about one week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sheets Unsalted Matzohs",
+        "unit": null,
+        "notes": null,
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "8 ounces, 230g, cut into chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Firmly-packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "215g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Pinch of Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semisweet Chocolate Chips",
+        "unit": "C",
+        "notes": "240g, or chopped bittersweet or semisweet chocolate",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sliced Almonds",
+        "unit": "C",
+        "notes": "80g, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "031edb28c920e13a795c12fa7093ff12d798a6ed5e49a1615a1cefbb10d03fe4",
+    "lineage_hash": "a671eec5933a1a27f78dfc6ef92c9849367833537ba237e0725fe437dc404e4f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolatecovere/",
+    "fetchedAt": "2026-08-03T02:38:14.974Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolatecovere/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

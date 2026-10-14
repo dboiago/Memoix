@@ -1,0 +1,61 @@
+{
+  "url": "https://spanishsabores.com/canarian-mojo-verde-sauce-recipe/",
+  "slug": "canarian-mojo-verde-sauce-recipe_spanishsabores_234aa5ea",
+  "title": "Canarian Mojo Verde Sauce Recipe",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:33:46.336Z",
+  "ldName": "Canarian Mojo Verde Sauce Recipe",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Sauce",
+  "ldKeywords": "mojo sauce, Mojo Verde Sauce",
+  "ldIngredientsRaw": [
+    "1 bunch fresh cilantro (stems removed)",
+    "1/2 bunch fresh parsley (stems removed)",
+    "5  large garlic cloves",
+    "2  small green peppers (either bell peppers or spicy ones)",
+    "1-2 teaspoons sea salt",
+    "1/4 teaspoon ground cumin",
+    "1 cup good quality extra virgin olive oil",
+    "2 tablespoons sherry or red wine vinegar"
+  ],
+  "ldInstructionsRaw": [
+    "Remove the stems from the cilantro and parsley and roughly chop the leaves",
+    "Roughly chop the garlic and mash it to a paste in a mortar and pestle",
+    "Add the cilantro, parsley, mashed garlic, chopped pepper, sea salt and cumin to a blender or food processor and pulse a couple of times.",
+    "Slowly drizzle in the olive oil while blending slowly (you don't want to over process the sauce, the truly traditional way would be to do it all in a mortar and pestle).",
+    "Add the vinegar to taste, and then adjust for salt and cumin."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "6 serving",
+    "calories": "333.18 kcal",
+    "carbohydrateContent": "3.07 g",
+    "proteinContent": "0.69 g",
+    "fatContent": "36.14 g",
+    "saturatedFatContent": "5 g",
+    "sodiumContent": "393.73 mg",
+    "fiberContent": "0.93 g",
+    "sugarContent": "1.03 g",
+    "unsaturatedFatContent": "30.13 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 bunch fresh cilantro stems removed",
+    "▢ ½ bunch fresh parsley stems removed",
+    "▢ 5 large garlic cloves",
+    "▢ 2 small green peppers either bell peppers or spicy ones",
+    "▢ 1-2 teaspoons sea salt",
+    "▢ ¼ teaspoon ground cumin",
+    "▢ 1 cup good quality extra virgin olive oil",
+    "▢ 2 tablespoons sherry or red wine vinegar"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

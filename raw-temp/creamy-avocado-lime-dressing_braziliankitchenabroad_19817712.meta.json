@@ -1,0 +1,58 @@
+{
+  "url": "https://braziliankitchenabroad.com/creamy-avocado-lime-dressing/",
+  "slug": "creamy-avocado-lime-dressing_braziliankitchenabroad_19817712",
+  "title": "Creamy Avocado Lime Dressing",
+  "byline": "Aline Shaw",
+  "fetchedAt": "2026-09-25T20:28:29.722Z",
+  "ldName": "Creamy Lime Avocado Dressing",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4",
+    "4 Servings"
+  ],
+  "ldCuisine": null,
+  "ldCategory": "Salad, sauces",
+  "ldKeywords": "salad dressing, salad dressing recipe",
+  "ldIngredientsRaw": [
+    "1  Ripe Avocado",
+    "3  cloves of garlic",
+    "1/4 cup of extra virgin olive oil",
+    "1/4 cup of fresh cilantro leaves",
+    "1/4 cup of lime juice (freshly squeezed)",
+    "1/2 cup of water",
+    "salt and pepper to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Add the ripe avocado, garlic, olive oil, cilantro, lime juice and water to a food processor. Season with salt and pepper.",
+    "Blend until creamy.",
+    "Taste, and add additional salt and pepper, if necessary. Add extra water if you want the dressing to be more pourable. (You might also have to add additional salt, pepper and lime juice if you do this.)",
+    "Serve or store."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "207 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "1 g",
+    "fatContent": "21 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "6 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "17 g"
+  },
+  "htmlIngredientLines": [
+    "1 Ripe Avocado",
+    "3 cloves of garlic",
+    "1/4 cup of extra virgin olive oil",
+    "1/4 cup of fresh cilantro leaves",
+    "1/4 cup of lime juice freshly squeezed",
+    "1/2 cup of water",
+    "salt and pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "BR",
+  "siteCourseHint": null
+}

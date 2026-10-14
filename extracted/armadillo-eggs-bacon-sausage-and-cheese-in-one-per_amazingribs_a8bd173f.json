@@ -1,0 +1,245 @@
+{
+  "recipe": {
+    "name": "Armadillo Eggs",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Finely dice the garlic.",
+      "Blend together the breakfast sausage, Italian sausage, and chorizo and refrigerate until ready to use.",
+      "For the rub, mix all of the ingredients and store the rub in an airtight container.",
+      "Mix together the cream cheese, cheddar cheese and garlic until well blended. Taste and add salt if needed.",
+      "Remove the stems from the jalapeños and cut in half lengthwise. Scoop out the seeds and then cut the sliced jalapenos in half, so one jalapeño should get you 4 quarters.",
+      "Place about a teaspoon (5 grams) of the cream cheese filling in each jalapeño quarter.",
+      "Take about 1/3 cup (45 grams) of the sausage and pat it into a 3-inch (7-centimeter) circle and place the stuffed jalapeño in the center of the sausage. Wrap the sausage around the stuffed jalapeño until it’s completely covered, and form into an egg shape.",
+      "Wrap each egg with one strip of bacon making sure the seam is down. Season each egg with dry rub.",
+      "Fire up. Prepare a smoker or a grill for 2-zone indirect cooking. Adjust the smoker or grill to bring the temperature to about 225°F (107.2°C) in the indirect zone and place 2 to 3 chunks of your favorite smoking wood on the fire.",
+      "Cook. Place sausage-wrapped jalapeños directly on the top grate of the WSM. Cook for 1–1½ hours, or until the sausage is cooked.",
+      "Serve with ranch dressing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "softened",
+        "amount": "8",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Jalapenos",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Jimmy Dean Ground Breakfast Sausage",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Italian Sausage",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chorizo",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Bacon Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Ranch Dressing",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Armadillo Eggs",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chipotle Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Turbinado Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ancho Chili Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Morton Coarse Kosher Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Marjoram",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "2",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seed",
+        "unit": "tsp",
+        "notes": "or ½ tsp celery seed powder",
+        "amount": "1",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Allspice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Smokin’ Hoggz All-Purpose Rub",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17c48176149e7778c20ec6b8432da227dec43747deed39dd7495aebb95b6929d",
+    "lineage_hash": "4340b8a54276979146e9f56c4b373d3a671678408470b1a735531a6f945a4ebc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/armadillo-eggs/",
+    "fetchedAt": "2026-08-01T19:26:56.256Z"
+  },
+  "rawSource": "https://amazingribs.com/armadillo-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

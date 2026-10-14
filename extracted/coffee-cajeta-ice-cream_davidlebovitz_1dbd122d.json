@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Coffee Cajeta Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a medium saucepan, warm the milk or half-and-half with 1 cup (250ml) of the heavy cream, 1/2 cup (100g) of the sugar, ground coffee, and salt. Once the mixture is warm, remove from heat, cover, and let steep for 15 minutes.",
+      "In a bowl, whisk together the egg yolks with the remaining 1/4 cup (50g) of the sugar.",
+      "Make an ice bath in a large bowl and set a medium-size bowl in the ice. Set a mesh strainer over the top and pour the remaining 1 cup (250ml) cream into the bowl.",
+      "Gradually add the warm coffee-infused milk into the egg yolks, while whisking constantly. Scrape the mixture back into the saucepan and cook over medium heat, stirring constantly with a flexible spatula (or similar utensil), until the mixture thickens and coats the back of the spatula. Immediately pour the custard through the strainer, into the cream, pressing gently to make sure as much of the coffee-flavored custard passes through the strainer as possible.",
+      "Stir the ice cream custard over the ice bath until cool, then refrigerate the ice cream mixture until thoroughly chilled, at least 4 hours, but preferably overnight.",
+      "Churn the ice cream in your ice cream maker according to the manufacturer's instructions. (You can strain the custard right before freezing if you want to get rid of any coffee grinds that may remain, for appearance and texture, although they are edible.) While it's churning, drizzle some of the cajeta into a freezer container and sprinkle with some of the chocolate chips. Place the container in the freezer.",
+      "When the ice cream is ready, spread the ice cream in batches in the container, layering cajeta and chocolate chips between the ice cream as you remove it from the machine. Avoid swirling or stirring the ice cream, to keep the layer of cajeta as distinct as possible."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "alt: half-and-half, 250ml",
+        "amount": "1",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "500ml",
+        "amount": "2",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Medium-ground Coffee",
+        "unit": "Tbsp",
+        "notes": "30g",
+        "amount": "6",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "¼",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": "coffee custard",
+        "isOptional": false
+      },
+      {
+        "name": "Cajeta",
+        "unit": "C",
+        "notes": "alt: dulce de leche, 160ml, plus additional for serving, if desired",
+        "amount": "⅔",
+        "section": "assembling the ice cream",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "oz",
+        "notes": "170g, see post, chopped, or handmade chocolate chips",
+        "amount": "6",
+        "section": "assembling the ice cream",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7cdf43c1903860c2479ccb59527c1edebb63bd11e0013f78b01bb7bd2d46bb52",
+    "lineage_hash": "63112e66f8c4179763ddd4e768d13ee97dd790c13d95e5e45b52f70131601a8e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/coffee-cajeta-chocolate-chip-ice-cream-recipe/",
+    "fetchedAt": "2026-08-02T22:53:39.364Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/coffee-cajeta-chocolate-chip-ice-cream-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

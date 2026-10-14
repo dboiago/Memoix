@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Cream Cheese Frosting",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "154",
+      "carbohydrateContent": "22",
+      "fatContent": "16",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cream 8 oz unsalted butter in a mixing bowl until softened. Add 12 oz confectioner's sugar (3 cups) and mix until combined with no lumps. Scrape the bowl and beater attachment.",
+      "With the mixer running, toss in 8 oz cream cheese. Scrape the bowl and beater completely, add ⅛ teaspoon table salt, 1 teaspoon lemon juice and 1 tablespoon vanilla extract. Switch to the whisk attachment.",
+      "Whip the mixture on medium high until light and fluffy",
+      "Best used immediately after it's made."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "3 cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a34764497a5fa9a11bbd889b6ae60a472b57c4bb69d673badd5dcc5721f17854",
+    "lineage_hash": "72c2dcb955f5b8dfc0c86b5a6bdb72ebb115e00f2c871fed95cf92e0227ed0da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2017/01/28/cream-cheese-frosting/",
+    "fetchedAt": "2026-08-01T17:04:07.349Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2017/01/28/cream-cheese-frosting/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

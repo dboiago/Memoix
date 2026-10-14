@@ -1,0 +1,73 @@
+{
+  "recipe": {
+    "name": "Classic Vegan Protein Smoothie",
+    "time": "3 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "294",
+      "carbohydrateContent": "28",
+      "fatContent": "8",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "Choose 1 - 2 vegan protein options (see notes). Then choose your plant-based milk option. Some kinds of plant-based milk have a lot of extra protein so it's a great way to add even more protein to your smoothie if desired (see notes for a guide).",
+      "To a blender, add your protein option, 1 cup of plant-based milk, your frozen fruit of choice, and any optional boosters you like. Blend until smooth and creamy. If the smoothie is too thick, add up to 1/2 cup more plant-based milk until you reach your desired consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Serving Vegan Protein",
+        "unit": null,
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "½ Cups Cup Plant-based Milk",
+        "unit": null,
+        "notes": "see notes",
+        "amount": "1-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Cup Frozen Fruit",
+        "unit": null,
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boosters (optional)",
+        "unit": null,
+        "notes": "see notes",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ca8574a4b627081224b31a73c83d692c7cb3623770cbfadb3aed5b836da7d14",
+    "lineage_hash": "8078562cd401b6727caa08f37e1cd0c74f0c444b01bcaac25b9b8f30c843101f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/classic-vegan-protein-smoothie/",
+    "fetchedAt": "2026-08-02T05:10:35.310Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/classic-vegan-protein-smoothie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

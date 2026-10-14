@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Bijou Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing glass, stir all of the ingredients with ice, strain into a chilled glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Old Tom Gin",
+        "unit": "oz",
+        "notes": "such as Hayman's",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "Deleon uses Dolin Rouge",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a62f7da9a569e9595041616c0bcf47f8c885b8612c67472050b96a6b3518f27",
+    "lineage_hash": "cd097daa07efe22a9f1100f242dca0bdac069b1e967422a0969700275b417de6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bijou-cocktail-recipe/",
+    "fetchedAt": "2026-08-04T00:34:23.395Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bijou-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Dahi Wala Paneer",
+    "time": "25-30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a handi or kadai, add mustard oil, once it's smoky hot, add bay leaf, green cardamom, black cardamom, cumin seeds and let it splutter well.",
+      "Add onions and cook it well until translucent.",
+      "Add prepared curd mixture, green chillies, tender coriander stems, salt to taste and cook it for 5-6 minutes on medium flames.",
+      "Add paneer, water, tomatoes and let it simmer for a while.",
+      "Finish it with jaggery and mix well.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti or naan.",
+      "In a bowl, add curd, ginger garlic paste, degi red chili powder, turmeric powder, coriander powder, cumin powder and give it a good mix.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "2",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "2-3",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems with Roots",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cubed",
+        "amount": "500",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "2",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Dahi Wala Paneer",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e29202b05158ff8a785c93a41b8626d50258ab330f7733f4a15f4ae1a969563d",
+    "lineage_hash": "b165480a9b2da90355c1053c7769d6c3d0ca5eeea33082c2ba10aab5d2d7bbf9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-wala-paneer/",
+    "fetchedAt": "2026-08-02T18:58:25.144Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-wala-paneer/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

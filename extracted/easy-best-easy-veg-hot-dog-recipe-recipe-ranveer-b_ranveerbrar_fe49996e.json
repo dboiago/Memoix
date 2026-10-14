@@ -1,0 +1,253 @@
+{
+  "recipe": {
+    "name": "Veg Hot dog",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan heat oil and add ginger, garlic, onion and saute it until light golden brown.",
+      "Now add tomatoes, saute until cooked properly or soft.",
+      "Then add salt, degi red chilli powder, vinegar and cook until the off smell of the vinegar is gone.",
+      "Now add sugar, soaked kashmiri dry red chillies, water, tomato ketchup and mix everything properly, let it cook for 3-4 minutes.",
+      "Remove in a bowl and blend it properly with the help of a hand blender. Keep aside for further use.",
+      "In a pan heat oil and add ginger, garlic and capsicum and saute until lightly charred.",
+      "Now add soya vadi powder saute until fragrant and then add the soaked soya mince, paneer mix everything once and add the hot dog sauce mix and finish with fresh coriander leaves.",
+      "Firstly take some filling and shape it like sausage and keep aside.",
+      "Now cut the hot dog bun and apply mayonnaise and the hot dog sauce in it.",
+      "Heat a flat pan and add butter, place the filling shaped like sausage and cook it until light brown on the outer side and also in the same pan heat the bun for a minute on both sides.",
+      "Take the bun and keep the sausage shaped filling in it and grate a generous amount of cheese on it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Dry Red Chillies",
+        "unit": null,
+        "notes": "soaked",
+        "amount": "8-10",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For Hot Dog Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "½",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Vadi Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Soya Mince",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "1½",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Hot Dog Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Assembling Hot Dog",
+        "isOptional": false
+      },
+      {
+        "name": "Veg Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Assembling Hot Dog",
+        "isOptional": false
+      },
+      {
+        "name": "Hot Dog Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Assembling Hot Dog",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Assembling Hot Dog",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "¼",
+        "section": "For Assembling Hot Dog",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e368b33de829511f0c5076a6c7d5e2e0b9c0bd52aa934b4d06ef012b0620c081",
+    "lineage_hash": "270e467dbb1b82fa269f4788562bd4a17d21d7a2f94dbef3b99507f80374cebc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/veg-hot-dog-recipe/",
+    "fetchedAt": "2026-08-01T21:59:03.231Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/veg-hot-dog-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

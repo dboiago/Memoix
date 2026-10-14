@@ -1,0 +1,52 @@
+{
+  "url": "https://omnivorescookbook.com/quick-pickled-shallots/",
+  "slug": "chinese-style-quick-pickled-shallots_omnivorescookbook_76231a21",
+  "title": "Chinese-Style Quick Pickled Shallots",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T22:08:27.858Z",
+  "ldName": "Chinese-Style Quick Pickled Shallots",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Condiment, Side",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1  shallot (, sliced into 1/4&quot; (1/2 cm) round pieces)",
+    "1/4 teaspoon Sichuan peppercorns ((or black peppercorns))",
+    "3 tablespoons rice vinegar",
+    "2 tablespoons water",
+    "1 tablespoon sugar",
+    "1/2 teaspoon salt"
+  ],
+  "ldInstructionsRaw": [
+    "Place the shallots in a heat proof bowl.",
+    "Add the peppercorns to a small pot. Toast over medium-low heat until fragrant, 30 seconds to 1 minute. Add the vinegar, water, sugar, and salt to the pot. Cook and stir until the sugar and salt are fully dissolved and the liquid is coming to a simmer.",
+    "Pour the hot pickling liquid over the shallots. Let the shallots cool completely.",
+    "Serve immediately, or you can store them in the fridge for up to 2 weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "9 kcal",
+    "carbohydrateContent": "1.8 g",
+    "proteinContent": "0.2 g",
+    "sodiumContent": "51 mg",
+    "sugarContent": "0.7 g"
+  },
+  "htmlIngredientLines": [
+    "1 shallot , sliced into 1/4\" (1/2 cm) round pieces",
+    "1/4 teaspoon Sichuan peppercorns (or black peppercorns)",
+    "3 tablespoons rice vinegar",
+    "2 tablespoons water",
+    "1 tablespoon sugar",
+    "1/2 teaspoon salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Bengali Fish Fry (बंगाली फिश फ्राई)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take about 600 gms of Rawas fish (flesh without bones) and make about 12 pieces of filets (flat slice).",
+      "Mix turmeric paste, red chilli powder, ginger garlic paste and salt together.",
+      "Allow the fish filets to marinate for 15-20 minutes in the paste.",
+      "Heat oil in frying pan. Fry the fish till it turns golden brown.",
+      "Take out the fried fish pieces and put over kitchen napkin to soak the excess oil. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rawas Fish Fillets",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Turmeric Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f53fea1ef428c63a999e955f76a4b252a82bd2f228f3131413445a5880ad8267",
+    "lineage_hash": "5bbe852d122f86975e931d14088b3fe08dbe9bf747613cc4bc04ad23c28f7764"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bengali-fish-fry/",
+    "fetchedAt": "2026-08-02T11:51:23.451Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bengali-fish-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,112 @@
+{
+  "recipe": {
+    "name": "Beetroot & Banana Ketchup (चुकंदर और केला केचप)",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan add banana, beetroot, water, salt, ginger, vinegar, sugar, black pepper cons then cover and cook until the beetroot is completely cooked.",
+      "Once cooked, take a hand blender and blend it into a fine paste.",
+      "Now add more water, degi red chilli powder then boil it for 10-15 minutes.",
+      "Remove the lid, stir it once then strain it properly through a strainer.",
+      "Then add back the strained mixture to the pan then add some water and give it a final boil.",
+      "Remove and let it cool down properly then store it in an airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Big Banana",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb9f7e36e758bc744b80501328e49601f32bbed914f3d205cdbcc7aac27fc912",
+    "lineage_hash": "3c2bc7bcd09ac00c0d7d69d6950b8f3d116b99229ed6df36b676335f501a90b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/beetroot-banana-ketchup/",
+    "fetchedAt": "2026-08-02T07:09:03.953Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/beetroot-banana-ketchup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,221 @@
+{
+  "recipe": {
+    "name": "Brixham Crab With Jerusalem Artichoke",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the Jerusalem artichoke crush, place the artichokes in a pan of water, bring to the boil then cook until soft",
+      "Once cool enough to handle, peel off and discard the skins, then roughly crush the flesh. Lightly combine with the butter and ponzu then set aside to cool completely. Add the chives and season to taste. Keep in the fridge until needed",
+      "For the crab tuile, preheat the oven to 150°C. Combine all of the ingredients except the hazelnuts in a blender and blend until smooth",
+      "Spread very thinly over a nonstick baking mat or baking sheet lined with baking paper then evenly sprinkle over the hazelnuts. Bake in the oven for 3 minutes until golden brown, then leave to cool. Break into shards and set aside",
+      "Check the white crab meat for any shell then put in a bowl. Combine the mayonnaise and hazelnut oil to create a hazelnut mayo (you want a subtle hazelnut flavour), then stir this through the crab. Season to taste and set aside in the fridge until needed",
+      "For the brown crab pâté, check the brown crab meat for any shell then place in a blender and blend with the panko and paprika until smooth. Transfer to a piping bag and keep in the fridge until needed",
+      "For the Jerusalem artichoke purée, preheat an oven to 180°C. Place the whole artichokes on a baking sheet and bake until soft. Once cool enough to handle, halve the artichokes and scrape out the flesh, trying to keep the skin intact and removing as much flesh as possible. Set aside the skins",
+      "Blend the artichoke flesh, butter and cream to a smooth purée then season to taste. Transfer to a piping bag",
+      "To serve, bring the crab out of the fridge to come up to room temperature. Heat a pan a third full of vegetable oil or a deep-fat fryer to 190°C. Deep-fry the skins until crispy, then season",
+      "To plate, quenelle two mounds of the white crab per portion alongside a quenelle of the artichoke crush. Pipe the artichoke purée and crab pâté around in dots. Place around the hazelnuts and lemon sorrel",
+      "Just before serving, place the crab tuiles and fried artichoke skins onto the plate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jerusalem Artichokes",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ponzu",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crab",
+        "unit": "g",
+        "notes": "alt: shellfish stock, reduced to 50g and the consistency of yeast extract",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jerusalem Artichokes",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Hazelnuts",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "45adfaac19a5a716721fd7c0411d8fb7119110ee7f0f1d5c260afeafd2f34dd2",
+    "lineage_hash": "3a85090d5df041315c64efbae0a3b8f4c8adca8fde60e762324c4b4db37b3a5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brixham-crab-jerusalem-artichoke-recipe",
+    "fetchedAt": "2026-08-01T20:52:56.812Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brixham-crab-jerusalem-artichoke-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

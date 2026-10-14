@@ -1,0 +1,312 @@
+{
+  "recipe": {
+    "name": "Crispy Bhajiya",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan add coriander seeds, fennel seeds, carom seeds and roast it lightly.",
+      "Remove and crush them using a rolling pin and keep aside for further use.",
+      "In a bowl add raw mango, spinach, onion, prepared masala, salt, turmeric powder, asafoetida, green chillies, ginger-garlic paste and mix everything properly and keep aside for 5-10 minutes.",
+      "Meanwhile in kadhai heat oil.",
+      "Now in the mixture add gram flour, rice flour and minutes of oil and baking soda, mix everything properly.",
+      "Fry small portions of the batter in medium hot oil until golden brown.",
+      "Serve with chutney.",
+      "In a bowl add pineapple, sweet corn, ginger-garlic paste, green chillies, coriander leaves, turmeric powder, red chilli powder, asafoetida, prepared masala, lime juice, salt and mix everything properly and keep aside for 5-10 minutes.",
+      "Meanwhile in kadhai heat oil.",
+      "Now in the mixture add gram flour, rice flour and minutes of oil and baking soda, mix everything properly.",
+      "Fry small portions of the batter in medium hot oil until golden brown.",
+      "Serve with chutney.",
+      "To make chutney add tender coriander & mint stems with leaves, raw mango, green chillies, ginger, onion, salt in a grinder jar and grind it into a smooth paste.",
+      "Serve it with bhajia's."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Mango",
+        "unit": "C",
+        "notes": "chopped & julienned",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "Tbsp",
+        "notes": "besan",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Pakoda Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Pakoda Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Pakoda Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Corn & Pineapple Pakoda",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander & Mint Stems with Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95991eee7c5d0e0685b9289ffb9ef5b327653dc7338487dbf8f96ae8c1d3f826",
+    "lineage_hash": "e03d5c544e03b7a37cfc2ddd481262fe1f4affc559731443cb3dc3a63998d3e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-bhajiya-recipe/",
+    "fetchedAt": "2026-08-02T15:34:55.754Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-bhajiya-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

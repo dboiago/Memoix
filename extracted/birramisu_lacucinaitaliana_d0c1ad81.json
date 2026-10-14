@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Birramisu",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make birramisu, in a stand mixer combine the cream, mascarpone, sugar, vanilla sugar and 7 tablespoons of beer until it forms a thick cream. In a container (glass or whatever you like), place a layer of cream, then a layer of ladyfingers dipped in beer, followed by another layer of cream, and so on.",
+      "Continuing adding layers at least 2 or 3 more times, depending on the size of the container. Keep the birramisu refrigerated for about 3 hours.",
+      "Before serving, dust with cocoa powder and garnish as you like."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beer",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet Vanilla Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ladyfingers",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "91e9b6ece4528be34e7a16a66e3d04d3ef5f4fc83a29166e555bb3c96a05a0eb",
+    "lineage_hash": "fa814d5deb99debe7e28dcf239c2ab760e4bc6487fcc5139a6478d0b88510db8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/birramisu",
+    "fetchedAt": "2026-08-02T22:09:30.298Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/birramisu",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

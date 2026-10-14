@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Braised Beef with Five-Spice and Star Anise",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place a large ovenproof casserole-style pot over a medium heat and add half the rapeseed oil along with the onion, ginger, garlic, chilli, star anise and the five-spice. Sweat without colour for approximately 3 minutes (or until just cooked). Remove from the pan and put to one side",
+      "Place the diced beef in a large bowl and toss with the spelt flour to coat evenly",
+      "Add the remaining oil to the pot and fry off the beef until nice and evenly coloured – you may need to work in batches",
+      "Return the onion and chilli mixture to the casserole with the beef. Add the brown sugar and sherry (or white wine) then bring to the boil",
+      "Once boiling, pour in the beef stock and soy sauce. Bring back to the boil",
+      "Place the lid on top of the pot or cover with greaseproof paper and cook in the oven for 60–90 minutes until the meat is soft and tender",
+      "Serve with boiled basmati rice and sprinkle the cabbage, spring onions and coriander over the top to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "quartered",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chuck Steak",
+        "unit": "kg",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry",
+        "unit": "ml",
+        "notes": "or dry white wine",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock Cube",
+        "unit": null,
+        "notes": "dissolved into 500ml boiling water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "reduced salt",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander",
+        "unit": null,
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2117d4e1f2e5e086430dc9c7f0be3692bfeb6bbc59f45989d50caef3814f6570",
+    "lineage_hash": "03dc5b031894f45e365e88e1b86321f2ac5e95d36cd567273b38467ec0d99f51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-beef-with-five-spice-recipe",
+    "fetchedAt": "2026-08-03T08:18:20.516Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-beef-with-five-spice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

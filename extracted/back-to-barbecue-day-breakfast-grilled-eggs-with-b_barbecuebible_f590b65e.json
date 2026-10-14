@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Grilled Eggs with Bacon and Parmesan Cheese",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up your grill for indirect grilling and heat to medium-high (400 degrees).",
+      "Arrange the bacon in the cold skillet and place it directly over one of the fires on your grill. Fry the bacon until crisp and brown, 3 to 4 minutes per side, turning with tongs. Transfer the bacon to paper towels to drain and cool, then break it into 1-inch pieces. Pour out all but 1 tablespoon of bacon fat (save the excess for later use). Let the skillet cool to room temperature.",
+      "Crack the eggs into the skillet, keeping the yolks intact, and season with salt and pepper. Drizzle the heavy cream evenly over the top. Arrange the bacon pieces over the cream and sprinkle with the cheese and breadcrumbs. Dot the breadcrumbs with the thinly sliced butter.",
+      "Add the wood chips or chunks to the coals (if working on a charcoal grill) or place the wood chips in the smoker box of your gas grill. (There’s no need to add wood to a pellet grill.)",
+      "Place the skillet with the eggs on the grill away from the heat. Indirect grill until the bread crumbs are browned and the eggs are just set, 7 to 10 minutes. (The yolks should remain a little runny in the center.) Serve the eggs at once. Grilled bread slices make a great accompaniment."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strips Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "preferably farm eggs or organic",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly and Finely Grated Parmesan",
+        "unit": "oz",
+        "notes": "alt: other cheese, 1/2 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Bread Crumbs",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Butter",
+        "unit": "Tbsp",
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "09497fc03d645b763edf79e48f6038f2a6a731b512cc1344b470b87ac797c4dd",
+    "lineage_hash": "437acb37d186b7052b238ff6afb174df48dfba59c480e4c76e0c261628b8b8b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/back-to-barbecue-day-breakfast-grilled-eggs-with-bacon-and-parmesan-cheese/",
+    "fetchedAt": "2026-08-03T08:42:09.644Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/back-to-barbecue-day-breakfast-grilled-eggs-with-bacon-and-parmesan-cheese/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

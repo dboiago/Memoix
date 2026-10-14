@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Chinese Pickled Cucumber with Soy Sauce and Vinegar",
+    "time": "2 days",
+    "course": "sides",
+    "rating": 0,
+    "serves": "100",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "29",
+      "carbohydrateContent": "4",
+      "fatContent": null,
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Remove any tough skin from your cucumber. Clean and drain.",
+      "In a deep pot, add light soy sauce, Chinese black vinegar, water and ginger slices. Bring the content to boil and then blanch the cucumber for around 15 seconds.",
+      "Transfer the cucumber along with the liquid to a clean container (cleaned and no oil). Add peeled garlic and cover the lid and set aside for 2 days.",
+      "Cut the cucumber into slices and decorate with roasted sesame seeds.",
+      "If you prefer a more moist taste, mix the cucumber slices with drops of sesame oil."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumbers",
+        "unit": "g",
+        "notes": "fresh, tenders one are highly recommended",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Black Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clean Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds and Sesame Oil for Serving",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "168fd3116e68218c08de41223298837d0d2ba1d1bbd9c2455f29c3282cf88a2c",
+    "lineage_hash": "b957cc148422bb13cfe932878cba8b1e3630153c3c2d9904e269af95675d4446"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/pickled-cucumber-with-soy-sauce-and-vinegar/",
+    "fetchedAt": "2026-08-02T00:15:39.204Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/pickled-cucumber-with-soy-sauce-and-vinegar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

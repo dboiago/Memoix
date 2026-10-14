@@ -1,0 +1,30 @@
+{
+  "url": "https://imbibemagazine.com/recipe/culiniaria-recipe/",
+  "slug": "culiniaria_imbibemagazine_f3afc8b7",
+  "title": "Culiniaria",
+  "byline": "",
+  "fetchedAt": "2026-08-03T18:55:05.987Z",
+  "ldName": "Culiniaria",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "10",
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]",
+    "[object Object]"
+  ],
+  "ldInstructionsRaw": [
+    "Combine all ingredients and shake. Strain into an ice-filled glass and garnish."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

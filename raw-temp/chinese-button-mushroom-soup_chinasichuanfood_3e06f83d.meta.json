@@ -1,0 +1,55 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-button-mushroom-soup/",
+  "slug": "chinese-button-mushroom-soup_chinasichuanfood_3e06f83d",
+  "title": "Chinese Button Mushroom Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T07:08:21.708Z",
+  "ldName": "Button Mushroom Soup",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "3"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "10  button mushrooms (, ends removed )",
+    "1 tbsp. vegetable cooking oil",
+    "4  slices ginger",
+    "4  scallion sections",
+    "1 tbsp. light soy sauce",
+    "dash of white pepper",
+    "1/2 tsp. salt"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the mushrooms and remove the ends. Add some vegetable cooking oil and fry the mushrooms surface down so the bottom shape can help to hold the juice. Use slowest fire during the process to avoid burnt bottom.",
+    "Break the mushrooms into smaller pieces with a scoop. Place in 3 slices of ginger and 4-5 green onion sections. Fry until aromatic.",
+    "Add around 800ml to 1 L water. Bring to boil, season with salt, light soy sauce and white pepper."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "60 kcal",
+    "carbohydrateContent": "2 g",
+    "proteinContent": "3 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "4 g",
+    "sodiumContent": "597 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "10 button mushrooms , ends removed",
+    "1 tbsp. vegetable cooking oil",
+    "4 slices ginger",
+    "4 scallion sections",
+    "1 tbsp. light soy sauce",
+    "dash of white pepper",
+    "1/2 tsp. salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

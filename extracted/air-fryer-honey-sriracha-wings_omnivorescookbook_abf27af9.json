@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Air Fryer Honey Sriracha Wings",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "463",
+      "carbohydrateContent": "18.2",
+      "fatContent": "29",
+      "proteinContent": "32.4"
+    },
+    "directions": [
+      "Thoroughly pat chicken wings dry with paper towels. Transfer to a big bowl. Add the salt and mix evenly with your hands.",
+      "Place the wings in the air fryer basket with as little overlap as possible (*Footnote 1). Place the basket in the air fryer and air fry at 400°F (200°C). Cook until golden brown and crispy, 18 to 25 minutes. Flip the wings halfway through.",
+      "When the chicken wings are cooking, combine the sriracha, honey, Shaoxing wine, and light soy sauce in a small sauce pan. Cook over medium-low heat while mixing, until bubbling, then simmer for 2 minutes. Stir in the butter and turn to low heat. Whisk until just combined. Turn off the heat and add the lime juice. Mix again. Set the sauce aside to cool off for 10 minutes before tossing. (*Footnote 2)",
+      "Once the chicken wings are done cooking, transfer the chicken wings into a big bowl. Right before serving, pour in half of the sauce and toss to coat evenly. Serve immediately as an appetizer with the remaining sauce on the side and extra lime wedges. You can also serve the wings with the sauce on the side, without tossing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juiced",
+        "unit": null,
+        "notes": "plus extra for garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8cb41c80ba0040fa44f716b7b99dbdabfcbc5c144ab5b09330f27a621081863",
+    "lineage_hash": "184e7dcab71c1c734f64429ea62ce331e366ba1f98704d34a8ef61213252ab37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/air-fryer-honey-sriracha-wings/",
+    "fetchedAt": "2026-08-02T07:33:06.108Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/air-fryer-honey-sriracha-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

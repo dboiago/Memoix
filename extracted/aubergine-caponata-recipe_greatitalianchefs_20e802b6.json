@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Aubergine Caponata",
+    "time": "1 hr 15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the caponata, cut the aubergines into 3cm cubes and transfer to a bowl of cold salty water for half an hour. Meanwhile, heat a deep-fryer or deep pan of oil to 190°C",
+      "When ready, drain the aubergine pieces and pat dry with kitchen paper. Deep-fry in the hot vegetable oil until golden and cooked through, then place on a plate lined with kitchen paper to drain the excess oil",
+      "Blanch the chopped celery in salted boiling water, then set aside and reserve the water",
+      "Place the onion in a saucepan and cover with half a glass of water. Cook until the water evaporates, then add the extra virgin olive oil and sauté the onions in it for a minute or two. Add the tomato paste, capers, olives, pine nuts, raisins, and the blanched celery with a little of its reserved cooking water. Cook the sauce for 5 minutes",
+      "Add the fried aubergine cubes and mix gently. Dissolve the sugar in the vinegar, add it to the caponata and cook for 2 minutes on a medium-high flame, then take off the heat and let it cool down",
+      "Caponata is best served at room temperature. Sprinkle with the crushed toasted almonds and serve with warm bread"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Celery",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": "rinsed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": null,
+        "notes": "pitted and halved",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "toasted and crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7b7261c3347a021ce364923ba1811bf98cfdc3a6b9cd08b9cb429321fbccef76",
+    "lineage_hash": "68510be879aac443590701fded4d0f6847379709aa274b8416b0d1dd55b6453a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/aubergine-caponata-recipe",
+    "fetchedAt": "2026-08-02T00:49:51.079Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/aubergine-caponata-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

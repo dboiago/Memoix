@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Cornbread with Harissa Butter",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 400ºF (200ºC). Have ready a 8- or 9-inch cast iron skillet and drop the 1/2 tablespoon of butter in it. If you don’t have a cast iron skillet, butter an 8-inch (20cm) square pan, or similar sized baking pan.",
+      "In a medium bowl, use a whisk to mix together the flour, cornmeal, baking powder, baking soda, and salt, until there are no lumps. If you see lumps, sift the ingredients together.",
+      "In a separate bowl, mix together the buttermilk, melted butter, egg, and honey.",
+      "About 5 minutes before you’re ready to mix and bake the cornbread, put the cast iron skillet with the butter in it in the oven, to melt the butter and warm the skillet. (If using a buttered baking pan, no need to put it in the oven first.)",
+      "Make a well in the center of the dry ingredients, then mix in the wet ingredients using a spatula. Stir just until the dry ingredients are moistened. Small lumps are okay, but don’t overmix; that will result in tough, dense cornbread.",
+      "Wearing an oven mitt, carefully pull the very hot skillet out of the oven, being conscious of how hot it is. Spread the butter around the inside of the pan with a paper towel or brush, then pour the batter into the pan.",
+      "Bake the cornbread until the center just feels like it’s about set; in a cast iron skillet, it will take 10 to 12 minutes, in a baking pan, it will take about 15 to 18 minutes.",
+      "While the cornbread is baking, mix together the softened salted butter with the harissa until thoroughly blended.",
+      "Let the cornbread cool slightly, then cut squares of the cornbread. Serve warm, slathered with butter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Cornmeal",
+        "unit": "C",
+        "notes": "120g, preferably stone-ground",
+        "amount": "¾",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": "preferably aluminium-free",
+        "amount": "2",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "4 tablespoons, 60ml, melted, salted or unsalted, cooled until tepid, plus 1/2 tablespoon of butter for greasing the pan",
+        "amount": "¼",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "cornbread",
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "oz",
+        "notes": "8 tablespoons, 115g, softened to room temperature",
+        "amount": "4",
+        "section": "harissa butter",
+        "isOptional": false
+      },
+      {
+        "name": "Harissa",
+        "unit": "tsp",
+        "notes": "see Note, below, or to taste",
+        "amount": "1",
+        "section": "harissa butter",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c729f0daa1ada29c4c16a748c2f5cf116b87a781738fcb6515e0b17f542b2192",
+    "lineage_hash": "8ff7bf6c010964627dcbfba9543326a43b6ce58c1e8552e99ef5db18a5e93625"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/cornbread-recipe-with-harissa-butter/",
+    "fetchedAt": "2026-08-02T18:44:57.475Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/cornbread-recipe-with-harissa-butter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

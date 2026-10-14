@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Dark Rye Bread",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the starter. Combine the dry ingredients in a large bowl. In a separate bowl, mix together the water and buttermilk",
+      "Crumble the yeast into the buttermilk mix, then pour into the bowl of dry ingredients. Continue to stir until thoroughly combined",
+      "Cover the bowl tightly with cling film and refrigerate for 24 hours. Remove the starter from the fridge 1 hour before making the dough",
+      "To prepare the rye bread, combine the yeast, 75g of the water and the dextrose in the bowl of an electric mixer fitted with a dough hook attachment. Leave to stand for 10 minutes, then add the starter and the oil",
+      "Combine the flours and salt and sift into the mixer bowl. Turn the mixer on to the lowest speed, gradually add the remaining water and mix for 12 minutes",
+      "Scrape the bowl down to incorporate any unmixed flour and mix for a further 8 minutes on a low speed. Remove the bowl from the mixer, scrape down the sides and spray the surface of the dough with Trenwax or vegetable oil spray",
+      "Cover tightly with cling film and prove in a lukewarm place until doubled in size, for approximately 40 minutes depending on room temperature",
+      "Scrape the dough onto a work surface and gently divide into 4 pieces using a bread scraper. Shape into boules by folding in half, in half again in the opposite direction and finally in half once more, creating tension in the dough with each fold",
+      "Gently shape the dough into a smooth, round ball by dragging the dough towards you, keeping your hands in constant contact with the work surface. Once smooth, place into floured or lined proving baskets",
+      "Allow to prove until the dough has doubled in size, then gently invert onto floured baking trays. Slash the tops of the loaves with the tip of a sharp knife to create a crisscross pattern, spray with water and dust with rye flour",
+      "Preheat the oven to 230˚C/gas mark 9 (refer to step 13 if using a non-steam oven)",
+      "Cover and prove for a further 10-15 minutes, then bake in the oven for 15 minutes, with shots of steam at 5 minute intervals",
+      "In a non steam/combi oven, place 2 small metal dishes in the oven in step 11. Once you put the dough in the oven, pour a cup of water into one dish. Pour water into the other dish 5 minutes later",
+      "Whichever oven you are using, lower the temperature to 180°C/gas mark 4 and cook for a further 10 minutes - the loaves are cooked when they sound hollow if tapped on the base. Allow to cool for 30 minutes before slicing"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rye Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "T55 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": "finely ground",
+        "amount": "22",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1d3b76ffbe2af289f0471d30bf64cdc89558c427525dd02c4470f95eb90afaa5",
+    "lineage_hash": "479a4a6b2b034941d8695684de7ce0f2098b0507a222b7232873ca629ae0fed1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dark-rye-bread-recipe",
+    "fetchedAt": "2026-08-03T20:49:15.005Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dark-rye-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Bûche de Nöel",
+    "time": "4 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 100°C/gas mark 1/4. Line a baking tray with parchment or silicone paper",
+      "Whisk the egg whites with the salt until stiff before gradually adding the sugar, a little at a time, whisking between each addition. You should be left with a stiff, glossy and pipeable meringue",
+      "Spoon the meringue into a piping bag fitted with a plain, large nozzle and pipe the mushroom caps – little rounds of about 2-inches wide. Next, pipe the mushroom stalks, by piping little upright peaks. Bake for 1 hour, turn off the oven and leave to cool and dry out – preferably overnight",
+      "Melt the chocolate and paint the underside of each cap with it, using a pastry brush. Glue the stalks on to the caps with a little more melted chocolate (you can, if you need to, create a cone-shaped hole in the caps with a small knife, to make attaching the stalks easier)",
+      "Leave the mushrooms to set upside down, before lightly dusting their tops with cocoa for a more naturalistic look",
+      "For the Bûche de Nöel, preheat the oven to 180°C/gas mark 4. Line a 9” x 13” roulade tray with baking parchment",
+      "Whisk the egg whites and salt until stiff. Using the same beaters,but in a separate bowl, whisk the yolks and sugar until pale, thick and creamy",
+      "Whisk the chocolate and chestnut flour into the sugar and yolks before vigorously beating in a couple of tbsp. of whipped egg whites, to slacken the mixture",
+      "Gently fold in the remaining whites with a large metal spoon, being careful not to lose any of the air. Pour the batter into your prepared tin and bake for about 20 minutes or until an inserted skewer comes out clean",
+      "For the chestnut cream, simply whip the cream and mix in the chestnut purée. Upturn your chocolate and chestnut roulade on to a sheet of baking parchment and spread over a generous layer of the chestnut cream",
+      "Roll up the cake, using the parchment to help you. Transfer your roll, seam side down, on to a plate or board and pop in the fridge until ready to ice",
+      "Now make the ganache topping. I like to blitz my chocolate in the food processor for speed, but you can chop you chocolate with a knife if you prefer",
+      "Transfer the chopped chocolate to a heatproof bowl. Place the sugar and cream in a saucepan and stir over a gentle heat until the sugar has melted. Increase the heat and bring to the boil before taking off the heat and leaving to stand for 1 minute",
+      "Pour the hot cream over the chopped chocolate and mix with a rubber spatula until smooth, thick and glossy. Leave to cool slightly before spreading it all over the roulade",
+      "To make it look more like a log, scratch the surface of the ganache with a knife or fork for a bark-y effect. Pop it back in the fridge to set",
+      "Decorate your serving plate/board, if you wish (I painted mine with textured melted chocolate and added a few sprigs of Christmas tree) before carefully transferring the cake into the centre. It’s easiest to employ a large palette knife or fish slice to do this. Drift the whole board with sifted icing sugar and/or edible snowflake lustre",
+      "Place your meringue mushrooms in clusters on and around your Yule log and serve. Please remember that fresh cream can only be left out of the fridge for up to 4 hours",
+      "If you want to leave your Bûche de Nöel out for longer, I would suggest swapping the cream for chestnut buttercream (75g soft, unsalted butter, 150g sifted icing sugar and a few generous spoonfuls of chestnut purée whisked together until soft, light and fluffy)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg White",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": "heaped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "melted and cooled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "or whipping cream",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Purée",
+        "unit": "g",
+        "notes": "sweetened",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4ac6b7516c696f2d51ad922dc4b9bf0f1f19368779b6d6efc7cf6f6eab4778da",
+    "lineage_hash": "a0f6b9300a538e74405ed556d61ace3cac44ab042f5506957bffc7c02b7abeec"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/yule-log-buche-de-noel-recipe",
+    "fetchedAt": "2026-08-04T00:05:14.208Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/yule-log-buche-de-noel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

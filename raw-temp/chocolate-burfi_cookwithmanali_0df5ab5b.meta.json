@@ -1,0 +1,56 @@
+{
+  "url": "https://www.cookwithmanali.com/chocolate-burfi/",
+  "slug": "chocolate-burfi_cookwithmanali_0df5ab5b",
+  "title": "Chocolate Burfi",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T17:31:19.983Z",
+  "ldName": "Chocolate Burfi",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "16",
+    "16 burfis"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Indian Sweet",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1.5 cups milk powder",
+    "¾ cup powdered sugar",
+    "¼ cup + 2 tablespoons milk",
+    "4 tablespoons unsalted butter",
+    "½ teaspoon cardamom powder",
+    "2  drops of kewra essence",
+    "1.25 cups milk powder",
+    "3 tablespoons cocoa powder",
+    "¾ cup powdered sugar",
+    "¼ cup + 2 tablespoons milk",
+    "4 tablespoon unsalted butter"
+  ],
+  "ldInstructionsRaw": [
+    "Make the milk burfi layer",
+    "Make the chocolate layer",
+    "Set the burfi"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "[Milk Burfi Layer]",
+    "▢ 1.5 cups milk powder",
+    "▢ ¾ cup powdered sugar",
+    "▢ ¼ cup + 2 tablespoons milk",
+    "▢ 4 tablespoons unsalted butter",
+    "▢ ½ teaspoon cardamom powder",
+    "▢ 2 drops of kewra essence",
+    "[Chocolate Burfi Layer]",
+    "▢ 1.25 cups milk powder",
+    "▢ 3 tablespoons cocoa powder",
+    "▢ ¾ cup powdered sugar",
+    "▢ ¼ cup + 2 tablespoons milk",
+    "▢ 4 tablespoon unsalted butter",
+    "[Chandi ka Varak (edible silver leaves), for garnishing]"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Arvi Methi Cutlet",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and clean the arvi in running water.",
+      "Peel it and cut it roughly into cubes.",
+      "Allow it to cook in water for 10 minutes or until done. Remove and allow it to cool.",
+      "In the mixing bowl add cooked arvi, chopped onion, pav bhaji masala, cumin powder, garlic powder, freshly chopped ginger and green chilies, nachni flour, methi leaves. Mix well and make small patties.",
+      "Heat oil in non stick pan and shallow fry cutlet 3 minutes each sides on medium flame or until turn golden brown and crisp.",
+      "Remove and serve immediately with tomato chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Arvi",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pav Bhaji Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilies",
+        "unit": "tsp",
+        "notes": "fresh, chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nachni Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Methi Leaves",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil/ Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faadce91b42083c02737e1de32e0a1e2a08f20124f6486563eeeca9443332422",
+    "lineage_hash": "dc5a60b4bf625f88c59c3a5e397b61de1416d31e6c35f3fb8096f58e14369fe5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/arvi-methi-cutlet/",
+    "fetchedAt": "2026-08-02T12:28:56.827Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/arvi-methi-cutlet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

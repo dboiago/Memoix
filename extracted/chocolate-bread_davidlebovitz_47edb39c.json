@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chocolate Bread",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of a stand mixer or in a large bowl, sprinkle the yeast over the milk. Add one tablespoon (11g) sugar, then set aside in a warm place for 10 to 15 minutes, until bubbles form on the surface.",
+      "While the yeast is activating, in a small saucepan, melt the butter and 3 ounces (85g) chocolate over a pan of barely simmering water. Stir occasionally, until the chocolate is melted and the mixture is smooth. Remove from heat.",
+      "Once the yeast mixture is frothy, mix in the remaining sugar, the instant coffee (if using), the egg, vanilla, and sea salt.",
+      "Stir in half the flour and cocoa powder, then the melted butter and chocolate, then the remaining flour mixture, stirring until well-incorporated. If using a stand mixer, attach the dough hook and beat for five minutes, until smooth. If making by hand, mix vigorously with a flexible spatula for the same amount of time. The dough will seem quite moist, resembling sticky brownie batter when ready.",
+      "Cover the bowl and let rise in a warm place for 2 hours.",
+      "Butter a 9-inch (23cm) loaf pan.",
+      "Stir in the chopped chocolate and nuts, if using. Then use a spatula to fold the dough over on itself in the bowl for about thirty seconds, then transfer it to the buttered pan, pressing a bit to spread it to the corners. Let rise in a warm place for one hour.",
+      "Ten minutes before you’re ready to bake the bread, preheat the oven to 350ºF (175ºC.)",
+      "Bake the bread for 35 to 40 minutes, until it feels done and sounds hollow when you tap it. You can stick an instant-read thermometer in the bottom if you’re unsure; the bread is done when the temperature reads 180ºF (82Cº)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole",
+        "unit": "C",
+        "notes": "alt: low-fat milk, heated until just tepid",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Envelope Active Dry Yeast (1/4 Ounce, or 2 1/4 Teaspoons)—see Note",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "75g",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "55g, salted or unsalted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 85g, coarsely chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "tsp",
+        "notes": "alt: espresso powder, optional",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher",
+        "unit": "tsp",
+        "notes": "alt: sea salt",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "C",
+        "notes": "280 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Dutch-process Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": "alt: coarsely chopped bittersweet or semisweet chocolate, 3 1/2 ounces, 90 g",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pecans",
+        "unit": "C",
+        "notes": "70g, optional, walnuts, almonds, or hazelnuts, coarsely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d0750c23d4d81b8a47cb9a7e8d92c83dc0605c7c72cffb960d6b21b820ed1d4",
+    "lineage_hash": "048772fc292b091e4bcc69a0352e85e33ddd04c5b702d00437f558bcee651a2b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-bread-recipe/",
+    "fetchedAt": "2026-08-02T18:10:35.952Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

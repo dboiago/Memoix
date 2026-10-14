@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Crispy Plaice and Pickled Cucumber Crispbread",
+    "time": "1 hr",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin with the pickled cucumber. Place the cucumber slices in a colander placed over a bowl and sprinkle over the salt, mixing to fully coat. Allow to drain for 30 minutes",
+      "Meanwhile, mix together all the ingredients for the mayonnaise and reserve in the fridge until ready to serve",
+      "Once drained, squeeze out any remaining moisture from the cucumber and place the slices in a bowl with the vinegar and sugar. Mix well, then set aside to pickle while preparing the plaice",
+      "To make the crispy coating, break up the large crispbread and blitz in a food processor to fine crumbs (or, alternatively, crush by hand). Pour onto a plate and mix in a little salt and pepper to season",
+      "Pat the plaice portions dry with kitchen paper to help the coating stick. Dip the plaice portions first in the beaten eggs, then roll in the seasoned crumbs until fully coated",
+      "Melt the butter in a frying pan over a medium heat. Once foaming, add the coated plaice and fry for 1–2 minutes on each side until golden brown and crisp, taking care not to let the butter burn",
+      "Drain the cooked plaice portions on kitchen paper while assembling the crispbreads",
+      "Smear 4 small dollops of the herb mayonniase on the crispbread and sit the plaice portions on top. Spoon the remaining mayonnaise on top of each portion",
+      "Drain the vinegar from the pickled cucumber and squeeze out any excess liquid. Mound some of the cucumber on top of the mayonniase and scatter over the brown shrimp and capers. Garnish with a few sprigs of chervil to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plaice",
+        "unit": null,
+        "notes": "skinned and filleted and cut into 4 portions",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispbread",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crispbread",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Shrimp",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Capers",
+        "unit": "Tbsp",
+        "notes": "drained and rinsed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ce91ac04eb8d43ad2c6bfec0f514f4118a824d292e8c90f1acd8afe3b5bd831",
+    "lineage_hash": "457e91cdfee6c51de84a821ad8f6916c97bd693a269e7159d1cad27dfc82a13f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/plaice-pickled-cucumber-crispbread-recipe",
+    "fetchedAt": "2026-08-03T12:54:03.025Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/plaice-pickled-cucumber-crispbread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

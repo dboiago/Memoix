@@ -1,0 +1,294 @@
+{
+  "recipe": {
+    "name": "Crab, Courgette Flower, Dubu, Sesame and Pine Nut",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If making the pine nut milk, first heat up the olive oil in a pan. Cook the shallot and garlic slowly until softened, then add the remaining ingredients and a pinch of salt",
+      "Cook for 10 more minutes over a very low heat, or until the rice is completely tender",
+      "Transfer the pine nut milk to a blender and blend until very smooth. Strain through a fine sieve and season with salt to taste",
+      "Mix all of the ingredients for the courgette flower stuffing together except for the courgette flowers. Add salt and, if using, sesame and pine nut milk to taste. Transfer to a piping bag",
+      "Fill the raw courgette flowers with the mixture, making sure to push the stuffing all the way to the back of the flower. You should have enough space left so that you can twist the tip of the flower petals closed and cold them over to seal the filling in",
+      "To make the crab broth, bring all the ingredients to a simmer, then skim off any scum that rises to the surface. Simmer the broth for 40 minutes, then strain, season with salt to taste, and set aside",
+      "To make the basil oil, first quickly blanch and then shock the basil in ice water",
+      "Squeeze as much liquid as you can out of the basil, and then transfer it to a blender with oil. Blend until completely smooth, and then pass through muslin cloth",
+      "To make the pomelo gel, blanch the skins several times until tender, then weigh them in a bowl with the simple syrup. Measure out 1% of their weight in agar agar. Blend the pomelo gel and simple syrup until completely smooth, then add the 1% of agar agar and blend again. Transfer to a piping bag",
+      "Transfer the stuffed courgette flowers to a steamer, and steam for 5 minutes",
+      "Once steamed, brush the flowers with basil oil and add season with salt",
+      "Add them to a deep bowl, and pipe pomelo gel over the top. Garnish with Thai basil and pour the crab broth over the dish at the table. Add extra basil oil to finish"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "or dashi",
+        "amount": "380",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dubu (korean Tofu)",
+        "unit": "g",
+        "notes": "weight of blanched and squeezed tofu",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomelo Pulp",
+        "unit": "g",
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette Flowers",
+        "unit": null,
+        "notes": "insides removed",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashima",
+        "unit": "g",
+        "notes": "Korean kombu",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crab Shell",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "cut in half lengthwise",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gochugaru",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "g",
+        "notes": "cut into a large dice",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iced Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "in",
+        "notes": "juiced and then skinned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomelo",
+        "unit": null,
+        "notes": "skin separated from the pulp",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Basil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cc379d92bc759a5fe4c2565e4ea6bd472ca6528a1d86f7a8093b0d8736cab81e",
+    "lineage_hash": "da305ba0e4333ca0c586d02c16da6d15f9e3459555c811cfca2e50b872823571"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-courgette-flower-dubu-sesame-pine-nut-recipe",
+    "fetchedAt": "2026-08-02T15:14:19.650Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-courgette-flower-dubu-sesame-pine-nut-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Deep-fried Rice Crackers (Age Okaki)",
+    "time": "4345 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "238",
+      "carbohydrateContent": "41",
+      "fatContent": "6.4",
+      "proteinContent": "4.1"
+    },
+    "directions": [
+      "Slice each rice cake into about 5mm thick pieces (note 4).",
+      "Put the rice cake slices on a rack, without overlapping.",
+      "Place the rack on a table/bench to dry for about 3⅜ days (note 5). They should show fractures. They sometimes even crack a bit.",
+      "Heat oil to 160°C / 320°F. The depth of the oil should be about 2cm.",
+      "Add the rice cake pieces to the oil (note 6) and fry for about 10 minutes until the rice cake explodes in the centre (sometimes a couple of times) and the surface becomes light golden brown. The fried rice cake should be almost double in size. occasionally turn the rice cracker pieces while frying.",
+      "Transfer to the tray lined with kitchen paper to drain excess oil.",
+      "Sprinkle salt (and aonori if using) over while hot.",
+      "Serve when cooled down."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rectangle Rice Cakes",
+        "unit": null,
+        "notes": "50g / 1.8oz each, note 1",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinches",
+        "notes": "note 2",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aonori",
+        "unit": "tsp",
+        "notes": "note 3",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0eb2933ab8685dd028575c92a1f0fbe6f565e6976467dc40eb9ab13c431334c",
+    "lineage_hash": "8433eba954115ba4fca69887aa62232b901b3a240414337a81580409295b04f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/deep-fried-rice-crackers-age-okaki/",
+    "fetchedAt": "2026-08-01T20:19:55.663Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/deep-fried-rice-crackers-age-okaki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

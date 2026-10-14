@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Apple Slices with Frozen Sheep's Milk Yogurt",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the raisins and liqueur in a small bowl and set aside to plump up. (Leave them in overnight if you can.)",
+      "Preheat the oven to 160° C (320° F) and butter a rectangular baking pan (about 20 x 30 cm or 9 by 13 inches; I used my Baker’s Edge pan).",
+      "Combine the flour, ground almonds, baking soda, and salt in a medium mixing bowl and set aside.",
+      "In the bowl of a food processor, or by hand with a sturdy spatula, cream together the sugar, butter, and egg yolk. Add the dry ingredients and blend them in until you get a crumb-like consistency; don’t overmix.",
+      "Pour into the prepared pan and use the back of a spoon to spread the crumbs into an even layer, but without packing it too hard, or it will be tough.",
+      "Peel and core the apples, and cut them into chunks. Put them in a medium bowl (such as the one you used for the dry ingredients above), with the cinnamon, nutmeg, and pepper, and toss to coat. Add the drained raisins (reserve the remaining liqueur for another use, see below) and mix again. Arrange this mixture evenly over the crust and sprinkle with the sliced almonds.",
+      "Cover loosely with foil and bake for 45 to 50 minutes, removing the foil for the last 10-15 minutes of baking, until the apples are cooked through and the almonds are toasted.",
+      "Dust with confectioner’s sugar and serve, slightly warm or at room temperature.",
+      "Whisk all the ingredients together, chill for an hour, and churn in your ice cream maker.",
+      "Don’t have an ice cream maker? You can still make this recipe on a day when you’re home most of the time. Prepare the mixture in early afternoon. Pour it into a freezer-safe container and place in the freezer. An hour later, remove the container from the freezer, draw the sides in with a fork (the ice cream will set from the sides in), stir vigorously, and return to the freezer. Repeat every hour. The ice cream will be ready by dinnertime."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "1 1/4 cups",
+        "amount": "150",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": "1/3 cup",
+        "amount": "35",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": "I use semi-salted butter so I skip that",
+        "amount": "1",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": "6 tablespoons",
+        "amount": "80",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "6 tablespoons, softened, plus a pat for the pan",
+        "amount": "80",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": "use the eggwhite in the frozen yogurt recipe below",
+        "amount": "1",
+        "section": "For the crust",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "35",
+        "section": "For the raisins",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Liqueur",
+        "unit": "Tbsp",
+        "notes": "Navan, which is like Grand Marnier but flavored with vanilla instead of orange; substitute dark rum if unavailable",
+        "amount": "3",
+        "section": "For the raisins",
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Apples",
+        "unit": "g",
+        "notes": "1 1/3 pounds, preferably of two different varieties for more complexity; I like to use boskoop and/or reinettes and/or canada apples",
+        "amount": "600",
+        "section": "For the apples",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the apples",
+        "isOptional": false
+      },
+      {
+        "name": "A Touch Freshly Ground Nutmeg",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For the apples",
+        "isOptional": false
+      },
+      {
+        "name": "A Touch Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For the apples",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "Tbsp",
+        "notes": "sliced",
+        "amount": "4",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Sheep’s Milk Yogurt",
+        "unit": "g",
+        "notes": "2 cups, substitute goat’s milk yogurt or Greek-style yogurt; adjust the name accordingly!",
+        "amount": "500",
+        "section": "Frozen Sheep’s Milk Yogurt",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Liqueur",
+        "unit": "Tbsp",
+        "notes": "the liqueur leftover from soaking the raisins; substitute dark rum or vanilla extract",
+        "amount": "1",
+        "section": "Frozen Sheep’s Milk Yogurt",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": "Frozen Sheep’s Milk Yogurt",
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "g",
+        "notes": "1/4 cup, or honey or maple syrup",
+        "amount": "80",
+        "section": "Frozen Sheep’s Milk Yogurt",
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Frozen Sheep’s Milk Yogurt",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c14221a7c638a52ff74981f58e73abc8a3c2a50a33bf01d36518f59703f6bfe",
+    "lineage_hash": "8851485375843d814c55c33088bd7503e73d680847758b1a3afe5eefc4942751"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/apple-slices-with-frozen-sheeps-milk-yogurt-recipe/",
+    "fetchedAt": "2026-09-30T18:27:43.409Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/apple-slices-with-frozen-sheeps-milk-yogurt-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

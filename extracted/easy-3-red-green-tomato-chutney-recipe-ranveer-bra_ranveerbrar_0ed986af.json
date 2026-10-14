@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Red & Green Tomato Chutney",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadai heat oil and add dry red chillies, fenugreek seeds, onion seeds let them crackle.",
+      "Now add tomatoes, salt, degi red chilli powder saute for a minute, cover and cook until 15-20 minutes.",
+      "Meanwhile in a small pan add vinegar, bay leaves, cloves and boil it on high flames until it's half.",
+      "Remove the lid and add the boiled vinegar, jaggery, mix everything together and saute for a minute and enjoy with rice or roti.",
+      "In a kadai heat oil whole black gram, chana dal saute until light golden brown.",
+      "Now add dry red chillies, ginger, onion, salt saute until translucent.",
+      "Then add tomatoes, degi red chilli powder, mix everything properly, cover and cook for 15-20 minutes or until soft.",
+      "Once soft remove and let it cool a little then put it in a grinder jar and grind into a fine paste.",
+      "Remove in a serving bowl and add the tempering on it and serve it.",
+      "In a tempering pan heat oil, whole black gram, mustard seeds, curry leaves saute for a minute and it's ready."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "5",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For North Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Gram",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For South Style Tomato Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Gram",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6122c9662e30c3e38afbc6dae2ccb9b1b13e864991b3f51261922020fe80b1fa",
+    "lineage_hash": "8d025a12e4508a88487473e5dac31c68e2727856d88ff04dd995d41cf4f2f9ea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/tomato-chutney/",
+    "fetchedAt": "2026-08-01T20:22:01.601Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/tomato-chutney/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

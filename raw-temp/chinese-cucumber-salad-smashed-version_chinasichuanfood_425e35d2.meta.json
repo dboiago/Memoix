@@ -1,0 +1,59 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-cucumber-salad/",
+  "slug": "chinese-cucumber-salad-smashed-version_chinasichuanfood_425e35d2",
+  "title": "Chinese Cucumber Salad - Smashed Version",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:16:56.726Z",
+  "ldName": "Chinese Cucumber Salad",
+  "ldTime": "PT7M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT2M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Salad",
+  "ldKeywords": "Cucumber",
+  "ldIngredientsRaw": [
+    "1  fresh English cucumber ( , or two smaller ones, around 350g)",
+    "3  garlic cloves ( , mashed and then chopped)",
+    "1/4 tsp. sugar (, optional)",
+    "salt to taste",
+    "1 tbsp. sesame oil",
+    "1 tbsp. light soy sauce (, optional)",
+    "1 tsp. black vinegar (, optional)",
+    "1 ~2 tsp. chili oil to taste (, optional)"
+  ],
+  "ldInstructionsRaw": [
+    "For long English cucumber, wash the cucumber and peel off tough skins. For small cucumber, remove the two ends.",
+    "Smash with a wide kitchen knife (like Chinese slicing knife) until the cucumber is well crushed. Then cut into one bite pieces.",
+    "Transfer all cucumber cubes into a bowl. Mix well with mashed garlic, salt and sugar.",
+    "Or further add light soy sauce and vinegar to make a more strong version.",
+    "Or add chili oil for a hot version."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "113 kcal",
+    "carbohydrateContent": "10 g",
+    "proteinContent": "2 g",
+    "fatContent": "7 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "417 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 fresh English cucumber  , or two smaller ones, around 350g",
+    "3 garlic cloves  , mashed and then chopped",
+    "1/4 tsp. sugar , optional",
+    "salt to taste",
+    "1 tbsp. sesame oil",
+    "1 tbsp. light soy sauce , optional",
+    "1 tsp. black vinegar , optional",
+    "1 ~2 tsp. chili oil to taste , optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

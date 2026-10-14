@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "BBQ Scallops",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat a barbecue for direct cooking (but don’t put the grill on top). The coals are ready when glowing and covered in a layer of grey ash",
+      "Open the scallops by sliding a knife between the two shells and slide it around gently, cutting the muscle which joins the two halves together. Twist the blade of the knife to separate the two shells. Use the knife to remove the tough muscle attached to the side (the flappy, translucent thing), then lift the scallop carefully from the shell",
+      "Wash and dry the shells, then brush the scallops with a little oil so they don't stick and place inside the clean curved half of the shell. Set aside",
+      "Dot each of the scallops with pork fat, a pinch of sliced garlic and a pinch of pimentón then carefully place each shell directly onto the coals (or a griddle pan) - it’s best to put them around the edges of the coals rather than right in the middle, where they might catch and burn. Grill for 2 minutes",
+      "Carefully turn the scallops within their shells using tongs - be careful they will be very hot. Baste with the melted fat and add a pinch of breadcrumbs to each shell. Cook for a further 2 minutes",
+      "Once cooked through (exact cooking time will depend on the size of the scallops) use tongs and heavy duty heatproof gloves to remove the scallops from the heat and garnish with the parsley and more pimentón. Serve immediately with lemon wedges"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scallops",
+        "unit": null,
+        "notes": "in their shells",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Iberico Pork Fat",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Spanish Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Breadcrumbs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Flat-leaf Parsley",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f73c363a4bbac57ff906ebd704aed2c3cf0d5f79493edf8fdfac49c0893f321",
+    "lineage_hash": "b91d760a8cb9156704eb068819ce60f1b239d1a5b730fb3013374f6ac1df44e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bbq-scallops-recipe",
+    "fetchedAt": "2026-08-02T17:46:29.079Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bbq-scallops-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

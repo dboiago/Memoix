@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Candied Almonds and Hazelnuts",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 150°C (300°F) and line a rimmed baking sheet with parchment paper.",
+      "In a medium saucepan, combine the sugar and 15 ml (1 tablespoon) water. Place over medium heat, stir just until the sugar is completely dissolved, then bring to the boil without disturbing.",
+      "Remove from the heat, add the almonds and hazelnuts, and stir until evenly coated. Pour onto the prepared baking sheet and spread out into a single layer with a spatula. Sprinkle with fleur de sel.",
+      "Insert in the middle of the oven and bake for 20 minutes, stirring with a spatula every 5 minutes, until the nuts are coated with a golden brown crystallized sugar crust.",
+      "Let cool completely before transferring to an airtight jar. Once they're in the jar, take care not to shake it too much, or the sugar crust will loosen and fall on some of the nuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "don't use unrefined sugar: the impurities it contains would prevent it from candying properly",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "not blanched",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "not blanched",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "tsp",
+        "notes": "or other flaky sea salt",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c81c988a411a5009a1350999213faa25f8c34d57fd85bd4e7b6967235fdcc2d3",
+    "lineage_hash": "0f258272baf5ea35595e00cf4712214fe5e8ea19ec0af9221728b906e3f6b760"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/candy-mignardises/easy-candied-almonds-and-hazelnuts-recipe/",
+    "fetchedAt": "2026-09-30T19:08:38.564Z"
+  },
+  "rawSource": "https://cnz.to/recipes/candy-mignardises/easy-candied-almonds-and-hazelnuts-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

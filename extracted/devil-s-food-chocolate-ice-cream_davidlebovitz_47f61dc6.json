@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Devil's Food Chocolate Ice Cream",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the chocolate base by whisking together in a medium saucepan, the 3/4 cup sugar and cocoa powder. Add the heavy cream and whisk until smooth. (It'll seem thick now, but will be fine when you cook it in the next step.) Add the chocolate.",
+      "Heat the mixture over moderate heat, whisking constantly, until the mixture starts to bubble and boil. Scrape the chocolate base into a large bowl and set a mesh strainer over the top. Try to scrape as much of the chocolate out of the pan as possible, so you can use it in the next step. (Or you can use another saucepan.)",
+      "To make the ice cream base, in a medium saucepan, whisk together the egg yolks, 1/4 cup sugar, milk, and salt. Set the pan over medium heat and stir with a silicone spatula constantly, until the custard base is warm. Continue to cook, stirring, until the custard starts to steam and thicken. Scrape the custard into the chocolate, add the vanilla and liqueur, and stir until smooth.",
+      "Chill the mixture thoroughly, then freeze in your ice cream maker according to the manufacturer's instructions. (The mixture will be quite thick after chilling in the refrigerator, so you may want to beat it with a spatula to thin it out before churning.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Dutch-process Cocoa Powder",
+        "unit": "C",
+        "notes": "3oz, 85g",
+        "amount": "1",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "375ml",
+        "amount": "1½",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 85g, 1/2 cup, chopped",
+        "amount": "3",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "Tbsp",
+        "notes": "alt: coffee-based liqueur, such as crème de cacao or Kalhuà",
+        "amount": "2",
+        "section": "chocolate base",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "ice cream custard base",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "50g",
+        "amount": "¼",
+        "section": "ice cream custard base",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "C",
+        "notes": "250ml",
+        "amount": "1",
+        "section": "ice cream custard base",
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": "alt: kosher salt, Diamond brand",
+        "amount": "¼",
+        "section": "ice cream custard base",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b43c20448a61d81a743233b11b88b22652306c55b7889b5fc0f5fa010fe235ce",
+    "lineage_hash": "3f0d77691c8a7d7fefde1697751512c85cb1652ab8947d79771049bc9b5346b9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/devils-food-chocolate-ice-cream-recipe-bravetart-stella-parks/",
+    "fetchedAt": "2026-08-02T21:47:25.312Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/devils-food-chocolate-ice-cream-recipe-bravetart-stella-parks/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

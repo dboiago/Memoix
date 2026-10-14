@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Driftwood Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Wine",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a wine glass, first add the prosecco followed by the remaining ingredients, and stir gently to combine. Fill the glass with ice, and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Prosecco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ramazzotti",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crodino Soda",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e48e93d3d93fbae93c5c6c07be7f10b139e1188313986fe946088427ce04029",
+    "lineage_hash": "87ed0b7fbd194fd18868ca04d186b58deb725e674af316a4ee710da021455b05"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/driftwood-spritz/",
+    "fetchedAt": "2026-08-03T21:02:21.258Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/driftwood-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,395 @@
+{
+  "recipe": {
+    "name": "Bharwa Karela",
+    "time": "35 min - 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a saucepan, add bitter gourd skin, water, jaggery, ginger, fennel seeds, carom seeds, salt to taste, ghee and stir it well. Boil for 10-12 minutes at low flame.",
+      "Pour it in a serving cup, add lemon juice and mix it well.",
+      "Serve hot.",
+      "In a bowl, add salt to taste, turmeric powder, water and mix well.",
+      "Add bitter gourd, bitter gourd skin and soak it for a while.",
+      "In a handi or kadai, add mustard oil, once it's hot, add soaked bitter gourd and saute it for a minute.",
+      "Add water and cover it with the lid and cook it for 7-8 minutes or until half cooked on medium flame.",
+      "Transfer it to a tray or plate and keep it aside for further use.",
+      "In a handi or kadai, add ghee, once it's hot, add ginger, onions and cook it until translucent.",
+      "Add bitter gourd skin and cook it for 4-5 minutes or until golden in color.",
+      "Add prepared besan mixture and saute it well.",
+      "Add salt to taste, dry mango powder and give it a good mix.",
+      "Transfer it to a tray or plate and keep it aside to cool at temperature.",
+      "Take sauteed karelas and stuffed with prepared masala mixture.",
+      "Seal the edges with thread and keep it aside for further use.",
+      "In a pan, add ghee, once it's hot, add fennel seeds and let it splutter.",
+      "Add gram flour, raisins and cook for a minute.",
+      "Add turmeric powder, degi red chili powder, coriander powder and mix it well.",
+      "Keep it aside for further use.",
+      "In a bowl, add degi red chili powder, turmeric powder, coriander powder, a pinch of asafoetida, curd and mix it well.",
+      "Keep it aside for further use.",
+      "In a kadai, heat mustard oil, add prepared curd mixture and cook it for 2-3 minutes.",
+      "Place stuffed karela, add salt to taste, cover it with the lid and cook it for 10-12 minutes on low flame.",
+      "Transfer it to a serving dish, garnish it with tomato wedges and coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bitter Gourd Skin",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & broken into half",
+        "amount": "1",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Kaadha",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bitter Gourd",
+        "unit": null,
+        "notes": "peeled & cored",
+        "amount": "10-12",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Gourd Skin",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Soaking",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sauteing Karela",
+        "isOptional": false
+      },
+      {
+        "name": "No. Soaked Bitter Gourd",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Sauteing Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Sauteing Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1½",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "10-12",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Gourd Skin",
+        "unit": "C",
+        "notes": "soaked & chopped",
+        "amount": "¼",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Besan Mixture",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Masala Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Gram Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Besan Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Bharwa Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Curd Mixture",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Bharwa Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Stuffed Karela",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Bharwa Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Bharwa Karela",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "wedges",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10d04e7cec36ae67f37292615999b05041b716be28e219af3bfab11e651f2998",
+    "lineage_hash": "4f87675718db49de446ab2a574d332614c455efcaf795d608c8e217b23c6f1e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bharwa-karela/",
+    "fetchedAt": "2026-08-02T16:27:13.428Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bharwa-karela/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

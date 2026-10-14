@@ -1,0 +1,65 @@
+{
+  "url": "https://thewoksoflife.com/chinese-chicken-mushroom-soup/",
+  "slug": "chinese-chicken-mushroom-soup_thewoksoflife_8188e0ca",
+  "title": "Chinese Chicken Mushroom Soup",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T13:52:27.603Z",
+  "ldName": "Chinese Chicken Mushroom Soup",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT85M",
+  "ldYield": [
+    "8"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soups and Stocks",
+  "ldKeywords": "chicken mushroom soup",
+  "ldIngredientsRaw": [
+    "20  small dried shiitake mushrooms",
+    "8 cups water ((plus 1/2 cup, divided))",
+    "2 tablespoons dried goji berries",
+    "4  dried Chinese dates",
+    "1  small organic chicken ((3½-4 pounds))",
+    "1 tablespoon oil",
+    "5 slices ginger",
+    "2 tablespoons Shaoxing wine",
+    "Salt ((to taste))",
+    "1  scallion ((finely chopped))"
+  ],
+  "ldInstructionsRaw": [
+    "First, wash the dried shiitake mushrooms a couple of times and rinse thoroughly. Then soak them in 8 cups of water in the soup pot for 6 hours or overnight. Trim away the stems (after soaking) before cooking and add the mushrooms back to the pot of water.",
+    "Add the dried goji berries and dried Chinese dates to the soup pot (no need to soak these beforehand). Bring to a boil over high heat, and then immediately turn the heat down to low.",
+    "Prepare the chicken while that’s simmering. Wash the chicken and pat it dry with a paper towel. Trim and set aside the chicken breasts for another dish. Cut the rest of the chicken into large pieces. Set aside.",
+    "Once the soup has simmered for 30 minutes, heat a wok over medium high heat until it starts to smoke slightly. Turn the heat down to medium, and add the oil and the ginger slices. Cook for a minute or two.",
+    "Spread the oil around the wok to coat. Then spread the chicken out in a single layer, and lightly brown the chicken before stirring. Once the majority of each piece has been cooked through, turn off the heat.",
+    "Add the chicken to the soup pot. Deglaze the wok with ½ cup water, and add it to the soup pot as well. Finally, add the Shaoxing wine and cover. Simmer for another 30 minutes over medium heat. Add salt to taste and sprinkle with chopped scallions right before serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "273 kcal",
+    "carbohydrateContent": "5 g",
+    "proteinContent": "21 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "5 g",
+    "cholesterolContent": "82 mg",
+    "sodiumContent": "380 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 20 small dried shiitake mushrooms",
+    "▢ 8 cups water (plus 1/2 cup, divided)",
+    "▢ 2 tablespoons dried goji berries",
+    "▢ 4 dried Chinese dates",
+    "▢ 1 small organic chicken (3½-4 pounds)",
+    "▢ 1 tablespoon oil",
+    "▢ 5 slices ginger",
+    "▢ 2 tablespoons Shaoxing wine",
+    "▢ Salt (to taste)",
+    "▢ 1 scallion (finely chopped)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

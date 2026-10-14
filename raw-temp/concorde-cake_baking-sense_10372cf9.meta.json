@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2024/04/19/concorde-cake/",
+  "slug": "concorde-cake_baking-sense_10372cf9",
+  "title": "Concorde Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:20:50.154Z",
+  "ldName": "Concorde Cake",
+  "ldTime": "PT480M",
+  "ldPrepTime": "PT60M",
+  "ldCookTime": "PT180M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "chocolate, chocolate mousse, meringue",
+  "ldIngredientsRaw": [
+    "8 oz confectioner sugar (2 cups )",
+    "4 oz dutch process cocoa powder (1 cup)",
+    "9  large egg whites (11 oz, at room temperature)",
+    "14 oz granulated sugar (1 ¾ cups)",
+    "16 oz heavy cream (2 cups)",
+    "10 oz semi-sweet chocolate (chopped)",
+    "5  large egg yolk",
+    "2 oz Grand Marnier (¼ cup, optional)",
+    "4 oz granulated sugar (½ cup, divided)",
+    "2  large egg whites"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 200 °F. Line 3 half sheet pans with parchment paper. On one sheet of paper trace two 8&quot; circles with a dark marker. Flip the paper so the marker side is down. Trace one circle on another piece of paper and flip that too.",
+    "Sift together 8 oz&#32;confectioner sugar and 4 oz&#32;dutch process cocoa powder and set it aside.",
+    "On medium speed, whip 9&#32;large egg whites to soft peak. With the mixer running, very slowly add 14 oz&#32;granulated sugar. Increase the speed to medium high and whip to full peak. Remove the bowl from the mixer. Sift 1/3 of the cocoa mixture over the meringue and fold until mostly combined. Continue sifting and folding the rest of the cocoa in 2 increments. Fill a piping bag fitted with a 1/2&quot; plain tip with the meringue.",
+    "Pipe the meringue in a spiral to fill each of the circles. On the other sheet pan and on the pan with one circle, pipe long strips of meringue the length of the pan. Bake for 2-3 hours until completely dry. The strips will bake faster. Remove them from the oven and let the discs finish drying. The discs may take another hour or so.",
+    "The meringues with be very light and completely firm when dry. They should easily release from the parchment paper. Cool completely before assembling the cake. The meringue can be made 1 day ahead and stored on tightly wrapped sheet pans.",
+    "Chocolate Mousse",
+    "Assembly"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "446 kcal",
+    "carbohydrateContent": "65 g",
+    "proteinContent": "6 g",
+    "fatContent": "20 g",
+    "saturatedFatContent": "12 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "94 mg",
+    "sodiumContent": "49 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "58 g",
+    "unsaturatedFatContent": "7 g"
+  },
+  "htmlIngredientLines": [
+    "[Meringue]",
+    "8 oz confectioner sugar (2 cups )",
+    "4 oz dutch process cocoa powder (1 cup)",
+    "9 large egg whites (11 oz, at room temperature)",
+    "14 oz granulated sugar (1 ¾ cups)",
+    "[Chocolate Mousse]",
+    "16 oz heavy cream (2 cups)",
+    "10 oz semi-sweet chocolate (chopped)",
+    "5 large egg yolk",
+    "2 oz Grand Marnier (¼ cup, optional)",
+    "4 oz granulated sugar (½ cup, divided)",
+    "2 large egg whites"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

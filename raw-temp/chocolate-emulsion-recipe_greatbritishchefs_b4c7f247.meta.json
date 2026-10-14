@@ -1,0 +1,32 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-emulsion-recipe",
+  "slug": "chocolate-emulsion-recipe_greatbritishchefs_b4c7f247",
+  "title": "Chocolate Emulsion Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T19:55:29.224Z",
+  "ldName": "Warm milk chocolate emulsion",
+  "ldTime": "PT20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "280g of milk chocolate",
+    "150ml of double cream",
+    "45ml of milk",
+    "1 egg"
+  ],
+  "ldInstructionsRaw": [
+    "To start the dish, melt the chocolate. Place in the microwave for 1 minute on a medium heat. Stir the chocolate, then return to the microwave for 30 seconds at a time until the chocolate has melted completely",
+    "Add the milk and cream to a pan and bring to a boil. In a heatproof bowl, whisk the egg, then slowly pour the boiled cream onto the egg, whisking continuously",
+    "Whisk the egg and cream mix into the melted chocolate in three separate batches, until emulsified and smooth",
+    "Pour into an espuma gun and add 1 gas charge. Turn upside down, shake and keep warm until ready to serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

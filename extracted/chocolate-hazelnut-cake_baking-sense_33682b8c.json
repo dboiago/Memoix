@@ -1,0 +1,103 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "328",
+      "carbohydrateContent": "24",
+      "fatContent": "24",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F.  Generously butter a 9\"x3\" spring-form pan. Set aside 1 oz (¼ cup) of the hazelnut flour.  Use half of the set-aside hazelnut flour to dust the buttered pan.",
+      "Melt 4 oz unsalted butter in a small saucepan. Cook until the milk solids sink to the bottom of the pan and become brown. Drain the butter into a microwave safe  bowl, leaving the solids in the pan.",
+      "Add the chopped 6 oz semi-sweet chocolate into the bowl with the browned butter. Microwave for 30 seconds and then stir. Continue microwaving and stirring in 30 second increments until all the chocolate is melted.",
+      "Stir the remaining 5 oz of hazelnut flour and 2 oz (¼ cup) of the granulated sugar into the chocolate mixture. Add 2 teaspoon vanilla extract.",
+      "In a large mixing bowl, whisk 6 large eggs, ¼ teaspoon table salt and remaining 4 oz (½ cup) sugar on medium-high speed until tripled in volume and the color turns pale yellow. Fold ⅓ of the eggs into the chocolate then fold the chocolate into the remaining eggs. Mix until no streaks of eggs are visible.",
+      "Pour the batter into the prepared pan. Sprinkle the rest of the set-aside hazelnut flour evenly across the top of the batter.",
+      "Bake until the batter is set and a toothpick inserted in the center comes out with a few wet crumbs, about 30-35 minutes.",
+      "Cool 10 minutes before unmolding. Serve the cake slightly warm or room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, separated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "¾ cup, separated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9fd8b5a05662ff2086e5d8374412e4cb32a56141cff24dcb458366b8ed07d169",
+    "lineage_hash": "41ef22d7ec1888264d930f43bf391ca81cfdd7642957b23df2939fe414ce91d3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2024/11/26/chocolate-hazelnut-cake/",
+    "fetchedAt": "2026-08-02T02:45:20.129Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2024/11/26/chocolate-hazelnut-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

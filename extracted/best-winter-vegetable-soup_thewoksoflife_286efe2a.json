@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Winter Vegetable Soup",
+    "time": "1 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "123",
+      "carbohydrateContent": "18",
+      "fatContent": "5",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Preheat the oven to 375°F/190°C. On a parchment-lined sheet pan, toss the cubed squash with the olive oil, salt and pepper. Roast for 30 minutes. Meanwhile, prepare the rest of the ingredients for the soup.",
+      "In a large soup pot over medium-low heat, add the olive oil, tomato paste, and onion. Cook for a few minutes until the onion turns translucent, stirring often to avoid burning.",
+      "Next, add the water, yellow split peas, carrots, mushrooms, cabbage, oregano, thyme, bay leaves, salt, pepper. Also add the roasted pumpkin. Bring to a boil over high heat.",
+      "Once boiling, reduce heat to medium. Cover and cook for 30 minutes to an hour, depending on how tender you like your vegetables. Serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Kabocha",
+        "unit": "lb",
+        "notes": "alt: butternut squash, cubed",
+        "amount": "1½",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "squash",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Paste",
+        "unit": "Tbsp",
+        "notes": "3 oz, or 1/2 a can",
+        "amount": "5",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "1 large onion = about 8 oz/225g, diced",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "10",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Split Peas",
+        "unit": "C",
+        "notes": "rinsed and drained",
+        "amount": "½",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "2",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Button",
+        "unit": "oz",
+        "notes": "alt: cremini mushrooms, diced",
+        "amount": "8",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "lb",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "½",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "dried",
+        "amount": "6",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1",
+        "section": "rest of the soup",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the soup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b80b46179d6af8bbae6cad732504146383b8ce3d4035556a3406b8cd37590e0b",
+    "lineage_hash": "1e018e438e584a00b374ff5811edb09906b971ccea3578be17f37589c24413af"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/winter-vegetable-soup/",
+    "fetchedAt": "2026-08-02T17:10:41.587Z"
+  },
+  "rawSource": "https://thewoksoflife.com/winter-vegetable-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

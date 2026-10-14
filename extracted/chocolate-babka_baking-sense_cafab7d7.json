@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Chocolate Babka",
+    "time": "10 hr 35 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "274",
+      "carbohydrateContent": "31",
+      "fatContent": "15",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Form a sponge with the milk, yeast and a portion of the flour. After 30 minutes add the eggs, sugar, salt and more flour to form a thick batter.",
+      "Mix until combined and switch to the dough hook.",
+      "Add the remaining flour to form a shaggy dough.",
+      "Knead until the dough clears the sides of the bowl.",
+      "Add the butter gradually with the mixer running.",
+      "The dough will break apart; scrape the bowl if butter sticks to the sides.",
+      "Continue kneading until the dough comes back together and clears the sides of the bowl again.",
+      "The dough will be soft but strong and elastic.",
+      "Allow the dough to rise until doubled in volume.",
+      "Make the filling and set aside to cool.",
+      "Refrigerate the dough overnight.",
+      "The next day, divide the chilled dough in half.",
+      "Roll, fill, and shape the logs. Freeze briefly to make splitting easier.",
+      "Split the logs lengthwise and twist into a coil.",
+      "Place in pans, allow the final rise, and bake.",
+      "Turn out and brush with syrup. Cool before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¾ cup, scalded and cooled",
+        "amount": "6",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Yeast",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¼",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Flour",
+        "unit": "oz",
+        "notes": "4 cups, see note",
+        "amount": "20",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temperature",
+        "amount": "4",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted European Butter",
+        "unit": "oz",
+        "notes": "at cool room temperature",
+        "amount": "8",
+        "section": "Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Semi-sweet Chocolate",
+        "unit": "oz",
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Chocolate Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "04f8ea7c7962ebf3d70176084a60a537eca94a30b67c9002b9440e099f0633c8",
+    "lineage_hash": "dc76f9652a222deabf0cd90290b617793bfb2f48e40b302e4a91b1526eec21c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/11/11/chocolate-babka/",
+    "fetchedAt": "2026-08-02T02:41:03.363Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/11/11/chocolate-babka/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

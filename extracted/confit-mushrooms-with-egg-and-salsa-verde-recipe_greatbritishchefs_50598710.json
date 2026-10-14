@@ -1,0 +1,294 @@
+{
+  "recipe": {
+    "name": "Confit Mushrooms with Egg and Salsa Verde",
+    "time": "2 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The green powder scattered over the top of this dish is used regularly at Ivan's restaurant Native. He takes the tops of vegetables and any green leaves that would otherwise go to waste, dehydrates them (using a dehydrator or a low oven) until crisp, then blitzes them into a powder. This step is optional, but it's a great way to utilise ingredients that would otherwise be thrown away",
+      "For the confit mushrooms, mix the salt and sugar together and then lightly season the mushrooms all over with the mixture, reserving any left over for another time. Place the mushrooms in an ovenproof dish with the herbs and cover with the oil. Cook in the oven for 45 minutes – the mushrooms should retain their texture, colour and individuality",
+      "Now make the mushroom ketchup. Cover the dried mushrooms with just-boiled water and set aside to hydrate",
+      "Squeeze any excess liquid out of the hydrated mushrooms and place to one side, reserving the mushroom stock. Fry the hydrated and portobello mushrooms in a dash of oil until golden-brown, then add the sugar and caramelise further. Deglaze the pan with the soy sauce and vinegar, then reduce the liquid until syrupy",
+      "Strain the reserved mushroom stock and measure out 100ml. Add the stock to the pan with the fried mushrooms, stir in the treacle, and reduce again until thickened",
+      "Stir in the cream and cook for 2 minutes before transferring the contents of the pan to a blender. Blitz until a smooth ketchup consistency is reached, then set aside",
+      "Preheat a water bath to 63°C. Place the yolks in a small metal tray and pour over the oil. Agitate the tray gently to ensure that the yolks aren’t stuck together. Place the tray in the water bath and leave to cook for 1 hour. Once ready, leave submerged in the oil until needed. Alternatively, if you don’t have a water bath at home, you can confit the egg yolks in a very low oven",
+      "For the sourdough crackers, spread the sourdough starter in a 1mm thick layer on a silicone baking mat and season with sea salt. Bake for 15 minutes, then carefully separate the cracker from the mat and turn over. Increase the oven temperature to 170°C/gas mark 3.5 and bake for a further 5 minutes, until dark brown. Allow to cool",
+      "Deep-fry the reindeer moss until crispy, then drain on kitchen paper. Set aside",
+      "To make the salsa verde, finely chop all of the ingredients and combine in a bowl with enough smoked rapeseed oil to create a loose dressing",
+      "To serve, transfer the ketchup to a piping bag, and pipe into the base of each bowl. Create an indentation in the centre of the ketchup and place a confit egg yolk in it",
+      "Surround the egg yolk with confit mushrooms and spoon over the smoked salsa verde. Garnish with sourdough crackers, reindeer moss and the green powder (if using)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wild Mushrooms",
+        "unit": "g",
+        "notes": "mixed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portobello Mushroom",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Treacle",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Buckthorn Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Rapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reindeer Moss",
+        "unit": "g",
+        "notes": "dehydrated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Tops",
+        "unit": null,
+        "notes": "turnip tops and green leaves (anything that would normally go to waste)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dc1d8773ec511d0ad4261bf94b4a37206aefb9ea367a34f4bd63c6908cb42d6b",
+    "lineage_hash": "9dadc34f1e90c881fc7c64f161f209791125adf0a72dd346f54560a925a46241"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-mushrooms-salsa-verde-recipe",
+    "fetchedAt": "2026-08-03T05:13:33.373Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-mushrooms-salsa-verde-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

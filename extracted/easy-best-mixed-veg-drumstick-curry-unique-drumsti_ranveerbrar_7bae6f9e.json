@@ -1,0 +1,331 @@
+{
+  "recipe": {
+    "name": "Mixed Veg Drumstick Curry",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pressure cooker, add ghee, once it’s hot, ginger, cumin seeds and let it splutter well.",
+      "Add drumstick, green chilli, yellow moong dal, salt to taste, turmeric powder, a pinch of asafoetida, ghee and mix it well.",
+      "Add water, cover it with the lid and cook it for 2-3 whistles until cooked.",
+      "Keep it aside to cool down at room temperature.",
+      "Transfer the mixture into a mixer grinder jar and grind it into a smooth paste.",
+      "Keep it aside for further use.",
+      "In a bowl, add water, coriander powder, turmeric powder, degi red chili powder, dry mango powder and mix it well.",
+      "Keep it aside for further use.",
+      "In a handi or kadai, add ghee, once it’s hot, add cumin seeds, ginger, green chillies, asafoetida and let it splutter well.",
+      "Add prepared mixture, carrots and cook it for 5-6 minutes.",
+      "Add potatoes, salt to taste, cover it with the lid and cook for a while on medium flame.",
+      "Add cooked dal, water, salt to taste and simmer it for 10-12 minutes.",
+      "Add water, cauliflower, french beans and cook it well.",
+      "Finish it with ghee, tender coriander stems, tomato and give it a quick boil.",
+      "Transfer it to a serving dish and garnish it with coriander sprig."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & sliced",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Drumstick",
+        "unit": null,
+        "notes": "remove edge and cut into 1 inch long",
+        "amount": "3",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chilli",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Moong Dal",
+        "unit": "C",
+        "notes": "soaked",
+        "amount": "2",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "For Cooking Dal",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Spice Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Spice Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Spice Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Spice Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Spice Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly chopped",
+        "amount": "4",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "peeled & large diced",
+        "amount": "2",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "peeled & diced",
+        "amount": "2",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Dal",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "medium",
+        "notes": "florets",
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "No. French Beans",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "10-12",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Ghee",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tender Coriander Stem",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "1",
+        "section": "For Drumstic Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9d08dc26397fe95af382e7a96219456cfb180d096b668c65c1a03a6a6c3c8fd3",
+    "lineage_hash": "d62e6c8485ca5227aac3f9a4800d2927b343e71ac7de0e54b1e89b926354f3e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/best-mixed-veg-drumstick-curry/",
+    "fetchedAt": "2026-08-02T20:25:19.093Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/best-mixed-veg-drumstick-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

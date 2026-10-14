@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Chocolate Biscuits",
+    "time": "50 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using an electric mixer, beat the butter until smooth. Add both sugars and continue beating on a high speed for 1 minute until fully incorporated",
+      "Add the egg white and vanilla and beat until smooth, scraping down the side of the bowl as necessary",
+      "Sift the flour, cocoa, spices, salt and bicarb into the mixer",
+      "Beat on a low speed until a soft dough forms. If the dough is too dry, add a splash of milk to the mix",
+      "Divide the dough into 2 equal portions, then roll into 2.5cm thick logs. Wrap tightly in cling film and chill for at least 10 minutes",
+      "Before baking, cut horizontally across the logs to make 2-3mm thick discs and arrange on an oiled baking sheet. Transfer to the oven and bake for 11 minutes",
+      "Remove the biscuits from the oven and allow to cool on a wire rack",
+      "Meanwhile, place the white chocolate in a bowl and heat on a low power in the microwave - stirring every 45 seconds until completely melted",
+      "Once the biscuits have cooled, drizzle with chocolate and place in the fridge to set. Then, place in an airtight container and store at room temperature before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "185",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": "or extract",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cayenne Pepper",
+        "unit": "pinches",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ajwain Seeds",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "844c8a9fa05367e6bba015de21dfae5aae30fd9aab011a02648d3031e9c63e75",
+    "lineage_hash": "01b4159499bf084eff2446b9e2e8b10c015408a292574c2f2cb0d2bf2481536a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-biscuits-recipe",
+    "fetchedAt": "2026-08-03T11:46:43.288Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-biscuits-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

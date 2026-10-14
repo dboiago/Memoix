@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cavolo Nero with Hazelnut Pesto",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by toasting the hazelnuts. Place the nuts on a baking tray in an even single layer and toast in the oven for 5 minutes. Check, stir and toast for a further 3 minutes until golden brown",
+      "Allow the nuts to cool then transfer to a blender with the garlic, Parmesan and hazelnut oil. Blitz to a coarse pesto, taste, and season with salt and pepper",
+      "Blanch the cavolo nero in salted boiling water for 3 minutes",
+      "Drain and toss with the pesto and a squeeze of lemon. Season to taste"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "use a similar hard cheese made with vegetarian rennet, if preferred, grated",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cavolo Nero",
+        "unit": "g",
+        "notes": "trimmed, thick stalks cut out",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": "a squeeze",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ce449341c33126b1a7a423a9ea467594faa1f7fb178fd70b4878b40eb97ea69d",
+    "lineage_hash": "5711b7a13aaecdc97600cb9786ad4a8a375ab3e410504a4d983b4d81480dcb6e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cavolo-nero-hazelnut-pesto-recipe",
+    "fetchedAt": "2026-08-03T08:39:02.687Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cavolo-nero-hazelnut-pesto-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

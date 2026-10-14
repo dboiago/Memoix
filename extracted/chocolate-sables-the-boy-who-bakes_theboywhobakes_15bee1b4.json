@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chocolate Sables",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift the flour, cocoa powder and bicarbonate of soda into a medium bowl and add the sea salt, then stir together. Set aside.",
+      "Put the butter in large mixing bowl and, using an electric mixer, beat until smooth and light. Add the sugars and vanilla extract, and beat together for 2 minutes until smooth.",
+      "Add the dry ingredients to the bowl and mix together until you have a mixture that looks sandy (which is what sablé means in English), add the chocolate and mix to combine.",
+      "Tip out the mixture onto a work surface and gently press together to form a uniform dough. Divide in half and roll into two logs, 4cm thick.",
+      "Wrap in clingfilm and put them in the fridge to chill for 3 hours or until firm. (At this point you can freeze the dough for baking at a later date, or do as I do and bake one half of the dough and freeze the second.)",
+      "Preheat the oven to 180C (160C fan oven)/gas 4 and line three baking trays with baking parchment.",
+      "Remove the dough from the fridge and, using a thin, sharp knife, cut into rounds about 1cm thick. Put the biscuits onto the baking trays, leaving 2cm between each one.",
+      "Bake for 10–12 minutes until set around the outside but still soft in the centre.",
+      "Leave the biscuits to cool on the trays for 10 minutes, then transfer to a wire rack to cool completely.",
+      "Line a baking tray with baking parchment. Once the biscuits are cool, dip each one halfway into the tempered chocolate, allowing the excess to drip off. Put onto the prepared tray and sprinkle with a few cacao nibs before allowing the chocolate to set fully at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature, diced",
+        "amount": "200",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "60–70% cocoa solids, finely chopped",
+        "amount": "175",
+        "section": "For the sablé dough",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "60–70% cocoa solids, tempered",
+        "amount": "250",
+        "section": "For the coating",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": null,
+        "notes": "to sprinkle (optional)",
+        "amount": "0",
+        "section": "For the coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76a7f545351e05575bbb210fd59b1449e8759a6421cd0fe45e887bd303ac1723",
+    "lineage_hash": "11369fc80fccb289839988fe386a9a8c602407e52e63f3c15fd83ab1b898c77e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2016/10/10/chocolate-sables",
+    "fetchedAt": "2026-08-01T21:35:47.399Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2016/10/10/chocolate-sables",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

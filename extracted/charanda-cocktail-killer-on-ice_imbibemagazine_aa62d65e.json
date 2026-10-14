@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Charanda Cocktail (Killer on Ice)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing glass, combine all the ingredients with ice, then stir to chill. Strain into a glass over a large ice cube and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Charanda Blanco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc Vermouth",
+        "unit": "oz",
+        "notes": "Moser uses Dolin",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scrappy's Celery Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73554d2e99405368a828eafe0e9702a80e232e3f38afffb613ddf8753b52e908",
+    "lineage_hash": "3e3c697c5a2251e017d7e3f4ca59ef8d49d108dcf35af7bd2190dafb5dde6c54"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/charanda-cocktail-killer-on-ice/",
+    "fetchedAt": "2026-08-03T18:54:06.756Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/charanda-cocktail-killer-on-ice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

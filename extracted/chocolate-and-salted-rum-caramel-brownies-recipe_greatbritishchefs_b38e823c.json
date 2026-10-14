@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chocolate and Salted Rum Caramel Brownies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160ºC fan/gas mark 4",
+      "Grease and line a 23cm square baking tin with baking paper",
+      "Melt the butter in a saucepan then add the chocolate. Remove from heat and allow it to melt for a couple of minutes before stirring until smooth",
+      "Beat the eggs and sugar together until pale, then whisk in the chocolate and butter mixture",
+      "Combine the the flour, cocoa powder, the baking powder and a pinch of salt in another bowl then sift onto the chocolate mixture and beat until just combined",
+      "Combine the caramel with the rum and mix well",
+      "Spoon half the brownie mix into the tin",
+      "Add half the caramel in 3 evenly spaced stripes",
+      "Add the second half of the brownie mix",
+      "Add the remaining caramel in 3 stripes on top of the brownies then use a toothpick or chopstick to swirl it in",
+      "Bake for 25 minutes - the centre should still have a wobble"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Caramel",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20d3b31815f2474c08c84dda896079b28bbaad069c870e59fac7a41690a4378f",
+    "lineage_hash": "7201052756bdb8d46d1c91be1a171ba14e89905e6a5e4e48aea49887258cfeb9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-salted-rum-caramel-brownies-recipe",
+    "fetchedAt": "2026-08-02T15:43:34.784Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-salted-rum-caramel-brownies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

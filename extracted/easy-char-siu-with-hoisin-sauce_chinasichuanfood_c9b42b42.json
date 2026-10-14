@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Easy Char Siu with Hoisin Sauce",
+    "time": "40 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "247",
+      "carbohydrateContent": "11",
+      "fatContent": "8",
+      "proteinContent": "29"
+    },
+    "directions": [
+      "Firstly, poke some small holes on the pork butt so it can absorb the flavor better and cut into 2 cm wide and 4 cm thick long strips. Set aside and drain.",
+      "In a large bowl, mix hoisin sauce, cooking wine, honey, light soy sauce, oyster sauce and Chinese five spice.  Combine well.",
+      "Add garlic and ginger and pour the Char Siu sauce over the meat or you can use a bag. Turn over for 2-3 times during the marinating process. Keep in fridge for 24 to 48 hours.",
+      "Pre-heat oven to 200-degree C (around 400-degree F)",
+      "Before baking, add around ½ tablespoon of warm water and ½ tablespoon of char siu sauce with 1 tablespoon of honey. Combine well.",
+      "Place the pork on grill and with a layered baking tray. Brush the honey water on both sides.",
+      "Place on middle track and back for 10 minutes. And re-brush the honey mixture on both sides again.",
+      "Roast again on middle track for another 10 minutes. If you want to hardening the surface, move the grill to up track and roast for another 2 minutes.",
+      "Transfer out and brush some sesame oil on surface. Cool down for 3-4 minutes and cut into slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Butt",
+        "unit": "g",
+        "notes": "tenderloin and pork belly can also work",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": "alt: rose wine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Previous Made Char Siu Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil for Brushing Optional",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "145e44ec0f2859622f2a39e6bcc993aeee06fa1f7765f5d2d66ebc1394b482ab",
+    "lineage_hash": "3fbd9892fddefd635e9c1144c8e41cbd93d6b9f9cfa1f2e5b348871344f3ffe1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-char-siu-with-hoisin-sauce/",
+    "fetchedAt": "2026-08-02T03:59:00.718Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-char-siu-with-hoisin-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

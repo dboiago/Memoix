@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Beer Me Up Scotty: A Mai Tai Riff",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the cream ale, to a shaker, shake, and strain into an ice-filled rocks glass. Top with the cream ale and give it a light stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Rum Blend",
+        "unit": "oz",
+        "notes": "Apothecary uses 1/2 oz. Plantation O.F.T.D. Rum and 1/2 oz. Bounty Dark Rum",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curaçao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Ale",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "691f7fa58e65961b224fa77cd284176a2e929ea04d56386590eb6464802d12bc",
+    "lineage_hash": "fcfdbdf65356a29a7e912a37c9a6032245e89a4e7c8b8eef8f02931e25ec84d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beer-me-up-scotty-mai-tai-recipe/",
+    "fetchedAt": "2026-08-03T21:28:01.856Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beer-me-up-scotty-mai-tai-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

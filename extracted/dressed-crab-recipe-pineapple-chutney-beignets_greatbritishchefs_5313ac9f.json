@@ -1,0 +1,201 @@
+{
+  "recipe": {
+    "name": "Dressed Crab",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pinepple chutney, lightly fry the diced shallot, ginger and chilli in oil. When the shallots are soft add the sugar and cook until a dark amber colour",
+      "Add the pineapple and cook gently until the contents of the pan dry out and become sticky. Leave to cool before lightly pulsing in a food processor",
+      "For the beignets, beat the cheese with the cream until soft. Season and pipe into 3 cm tubes and refrigerate",
+      "Once cool, lightly dust the beignets with the flour and dip into the beaten egg and breadcrumbs and return to the fridge",
+      "Once firm, drop the beignets in a deep fat fryer set to 190°C for 2-3 minutes or until golden",
+      "To dress the crab, mix all of the ingredients in a bowl, making sure the crab meat is coated in the mixture",
+      "To plate, serve up the dressed crab with a tablespoon of the pineapple chutney, a beignet or two, as well some slices of pineapple, coriander cress, goat's curd and a handful of black olives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Goat's Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goat's Curd",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "slices",
+        "notes": "fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Cress",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "adcb49a0e589059fb460eb7dc342584d8f6c400d1a571b6cdd4986910c24d682",
+    "lineage_hash": "522a2b22485beba14302598ec6977e35e2dccc4eac587c3e06c0f9907bd17417"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-recipe-pineapple-chutney-goats-cheese",
+    "fetchedAt": "2026-08-03T19:23:54.795Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-recipe-pineapple-chutney-goats-cheese",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

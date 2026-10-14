@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Coal-Roasted Leeks with Walnut Tarator",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by lighting a barbecue and waiting for the coals to turn red hot with no flames. Place the leeks on the grill, ensuring they’re not over a very hot heat (push the coals to one side to create an indirect heat zone, or ensure the grill is set high above the coals). Gently barbecue the leeks, turning occasionally, until the first few outer layers begin turning black and the interior steams and softens completely. You’ll know when they’re ready by squeezing them with your fingertips – they should have no resistance or crunch. Once they’re cooked, remove the leeks from the grill and place them in a bowl. Cover with cling film and set aside to steam for 30 minutes",
+      "While the leeks cook and steam, prepare the tarator. Preheat an oven to 180°C/gas mark 3. Place the walnuts on a tray and roast for 3 minutes, then transfer to a food processor with the garlic, vinegar, oils and sage. Blitz until well combined, then add the yoghurt and buttermilk to create a thick purée. Taste for seasoning and set aside. Lower the temperature of the oven to 140°C/gas mark 1",
+      "Once the leeks have steamed in the covered bowl for 30 minutes, peel away the blackened outer layers and place in the oven so they can dry out and crisp up further while you carry on preparing the dish",
+      "Cut the peeled leeks in half lengthways, trying to keep them in whole large pieces, then set aside for a final char on the barbecue before serving",
+      "To make the burnt butter, place the butter in a saucepan over a medium heat. Keep a close eye on the colour and the smell – once it starts smelly nutty and the milk solids turn golden, remove from the heat. Add a splash of lemon juice and date molasses to taste, then keep warm",
+      "To finish the dish, place the leek halves cut-side down on the barbecue, season with salt and cook for a few minutes until lightly charred. Fry the sage leaves in butter or oil until crisp and remove the burnt layers of leek from the oven",
+      "To serve, add a large spoonful of the tarator to each dish and make a well in the middle. Tear the leeks into rough ribbons and lay along the centre of the plate, then top with the crispy sage leaves and crisp burnt leek. Finish with a generous drizzling of the date butter, ensuring the well in the tarator gets filled with it too"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leeks",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "bunch",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Butter",
+        "unit": null,
+        "notes": "or dash of oil, for frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Moscatel Vinegar",
+        "unit": "g",
+        "notes": "also known as muscat vinegar",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": "ideally early harvest",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Date Molasses",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "683ea3693fd7687f7fe4e052ec9e45d1b79fda0cb6bf21e4bd241e14a39c6d90",
+    "lineage_hash": "f790452acda303354cce3187d0755a71ac33e288f6dd54ca29d1f4bdc270adfb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/leeks-walnut-tarator-recipe",
+    "fetchedAt": "2026-08-03T03:09:56.274Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/leeks-walnut-tarator-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

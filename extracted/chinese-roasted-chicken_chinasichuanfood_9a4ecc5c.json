@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chinese Roasted Chicken",
+    "time": "49 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "778",
+      "carbohydrateContent": "9",
+      "fatContent": "50",
+      "proteinContent": "66"
+    },
+    "directions": [
+      "Clean the chicken and soak in clean water for 15 minutes. Then message with white vinegar, set aside for 10 minutes. Then rinse the chicken with paper (drying process is quite important).",
+      "Combine all the marinade ingredient in a small bowl.",
+      "Prepare a large bag, place the chicken in and then add all the marinade sauce. Rub the bag gently to make sure the chicken is evenly coated by the sauce. Keep in fridge at least overnight to 48 hours. Flip 2-3 times.",
+      "Take only the chicken out (discard the liquid and all the other spices). Truss the legs and place on a baking sheet (beast up) and then air dry until the skin becomes tightened and dry (usually take 1 to 4 hours based on the room condition).",
+      "Preheat the oven to 200 degree C (400 Degree F). Place the chicken on the low rack and roast for 30 minutes. Lower the temperature to 120 degree C (250 degree F) and bake for another 20 minutes (you can rotate the baking pan).",
+      "Cooled down for 15 minutes before shredding and enjoy. You can serve it with spicy sauce, soy sauce or plum sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "around 1 kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "cut into smaller sections",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a2a3fe90016f7dcf95d0dc58b39b0c0420a7af8bcd260234b8c1482125ea9903",
+    "lineage_hash": "71554177d510a1f257614c6788ebdbe817f0d2569dabb665e74b160b0f85082e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-roasted-chicken/",
+    "fetchedAt": "2026-08-02T03:06:06.481Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-roasted-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

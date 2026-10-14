@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Canadian Tuxedo Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Fresh Strawberry"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "179",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of a fresh strawberry.",
+      "STIR all ingredients with ice.",
+      "STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+      "Garnish with strawberry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gentian Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro",
+        "unit": "ml",
+        "notes": "e.g. Montenegro",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canadian Rye Whisky",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be14f2d019078a6696fb995ba6c95fe96d4a0439c5fd6d75f37944a916bdceb5",
+    "lineage_hash": "f0f96686282d989d03c1134865ab4ec16688de6704c332e4bb6eff340895f268"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4362/canadian-tuxedo",
+    "fetchedAt": "2026-08-03T13:23:57.811Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4362/canadian-tuxedo",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

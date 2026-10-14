@@ -1,0 +1,71 @@
+{
+  "url": "https://thewoksoflife.com/almond-cookies-chinese/",
+  "slug": "chinese-almond-cookies_thewoksoflife_3797c789",
+  "title": "Chinese Almond Cookies",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T17:03:05.366Z",
+  "ldName": "Chinese Almond Cookies (RE-TESTED!)",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT70M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "15"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Dessert",
+  "ldKeywords": "almond cookies",
+  "ldIngredientsRaw": [
+    "½ cup almond flour",
+    "2/3 cups granulated sugar",
+    "1 1/4 cups all-purpose flour",
+    "½ tsp baking soda",
+    "⅛ teaspoon baking powder",
+    "¼ teaspoon salt",
+    "1  egg yolk",
+    "¼ cup melted lard",
+    "1¼ teaspoon almond extract",
+    "5 tablespoons salted butter ((at room temperature))",
+    "15  almonds",
+    "1  egg ((beaten))"
+  ],
+  "ldInstructionsRaw": [
+    "Arrange a rack in the center of your oven and preheat to 350°F/175°C.",
+    "Lightly toast the almond flour in a dry pan over medium heat, stirring constantly, until it turns one shade darker.",
+    "Whisk together the toasted almond flour, sugar, all-purpose flour, baking soda, baking powder, and salt. (This is a crumbly dough, so proper measuring is very important. If you pack the flour too tightly into the measuring cup, the dough may end up too dry. If this happens, you can add 1-2 tablespoons of water to help the dough come together.)",
+    "Whisk 1 egg yolk with the melted lard and almond extract, and add it to the dry ingredients, along with the softened butter. Mix with your hands or a stiff rubber spatula to form a soft dough.",
+    "Make ping pong sized balls of dough, flatten them into little discs, and place 2 inches apart on a parchment lined baking sheet. You should have about 15 cookies, which can fit on a single baking sheet. Press an almond into the center of each cookie. If the cookies crack slightly when you press the almond in, that’s okay, but push any larger cracks back together.",
+    "Brush the cookies with beaten egg, and bake for 13-15 minutes, until lightly golden. Cool completely before enjoying."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "172 kcal",
+    "carbohydrateContent": "18 g",
+    "proteinContent": "3 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "4 g",
+    "cholesterolContent": "37 mg",
+    "sodiumContent": "110 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "9 g",
+    "transFatContent": "0.2 g",
+    "unsaturatedFatContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ ½ cup almond flour",
+    "▢ 2/3 cups granulated sugar",
+    "▢ 1 1/4 cups all-purpose flour",
+    "▢ ½ tsp baking soda",
+    "▢ ⅛ teaspoon baking powder",
+    "▢ ¼ teaspoon salt",
+    "▢ 1 egg yolk",
+    "▢ ¼ cup melted lard",
+    "▢ 1¼ teaspoon almond extract",
+    "▢ 5 tablespoons salted butter (at room temperature)",
+    "▢ 15 almonds",
+    "▢ 1 egg (beaten)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

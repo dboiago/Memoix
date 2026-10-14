@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Courgette Quick Bread",
+    "time": "1 hr 30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grate the courgettes on the largest holes of the grater and add to a colander. Sprinkle with 2 tsp of\r\nflaky sea salt (most of this will be drained away later) and toss with your hands to combine. Leave to \r\ndrain in the sink for at least 30 minutes. When the courgettes have softened and released quite a bit of liquid, transfer half of the grated vegetable to the middle of a clean tea towel, bunch all the corners together and twist to squeeze out as much liquid as possible. Set aside.",
+      "In a large bowl, mix together all the dry ingredients (the flours, baking powder/soda and 1 tsp flaky sea salt) until well combined.",
+      "Add the courgettes (grated, salted and squeezed). Finely slice the spring onions and add to the bowl.",
+      "Roughly chop the basil and add to the bowl. Divide the cheddar in two – grate one half and cut the other half into 1cm cubes – and add to the bowl. Mix everything together well with your hands.",
+      "In a separate, medium-sized bowl whisk together the eggs and buttermilk.",
+      "Fold the buttermilk and egg mixture into the dry ingredients, mixing only until just combined – any \r\nmore and the bread could turn out tough.",
+      "Divide the batter between small, disposable loaf pans, filling only about three-quarters of the volume – any more and the mixture will overflow and drip onto the oven bottom as it rises (like mine did!).",
+      "Bake for about 45 minutes until very well browned and a toothpick inserted into the centre comes out clean. It might seem like a long time for such small loaves, but any shorter and the middle won’t be cooked. The loaves will look very brown for at least the last 15 minutes of cooking.",
+      "Cool completely before removing from the loaf casings – if you don’t, you won’t be able to get them\r\nout of the loaf casings and will be left with a horrible, depressing mess. Leaving the bread to cool fully also improves the texture of the crumb."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "2 medium courgettes",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "g",
+        "notes": "whole wheat",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sodium Bicarbonate",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73c67b9731ac1a12bb0898c9721b3e3fd13ab3a27209e88630f17e8600674fb7",
+    "lineage_hash": "a649f40f8fd8993229b3a48b7daf574b769084990a21097b2f77d19cae10b668"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-quick-bread-recipe",
+    "fetchedAt": "2026-08-03T15:02:15.362Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-quick-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

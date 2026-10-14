@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Crab Cakes",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the crab cakes, carefully pick through the crab meat for any pieces of cartilage or shell. Combine in a bowl with the eggs, breadcrumbs, spring onions, fish and soy sauces, ginger, garlic and lime juice",
+      "Season to taste with a little salt and pepper. Divide the mix into 50g portions and shape into even-sized round cakes and lightly coat with flour",
+      "Heat the vegetable oil in a large non-stick frying pan on a medium heat. When the pan has come to temperature, carefully arrange the crab cakes in the pan, making sure they don’t touch each other",
+      "Allow the cakes to cook for 3-4 minutes on each side so they are hot in the centre and golden-brown on the outside. Use a palette knife to transfer the crab cakes from the pan on to kitchen paper to drain off excess oil",
+      "Serve the crab cakes on a warm plate with a garnish of a few salad leaves dressed with a little olive oil and a squeeze of lime juice"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fine",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Fresh Ginger",
+        "unit": null,
+        "notes": "around 2.5cm in length, peeled and finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": "freshly ground",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salad Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7d605873ddc1984b84ec5ff32f91adbf97358efefad6dc0c4d365263d57b6f2",
+    "lineage_hash": "13c51ab17d0dabe3aaad3edd360c86c4149a8762fe694cd056257bd7b1756b90"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-cakes-recipe",
+    "fetchedAt": "2026-08-03T19:13:00.331Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-cakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

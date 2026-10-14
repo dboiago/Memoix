@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Assunta: An Italian Mule",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the ingredients, except the ginger beer, to a shaker with ice and shake vigorously. Pour into a highball filled with crushed ice and top with ginger beer, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretto",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": null,
+        "notes": "Saint Theo's uses Fever-Tree",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f75dad0a65b3a8434ce039ee97c8818777753ca27d012f15cc7c142454958d1",
+    "lineage_hash": "defa2986d0a0dbb7d034a5aed9460f09ae5f17674d63d100ed90035fd74cea42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/assunta-an-italian-mule/",
+    "fetchedAt": "2026-08-03T23:45:33.733Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/assunta-an-italian-mule/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

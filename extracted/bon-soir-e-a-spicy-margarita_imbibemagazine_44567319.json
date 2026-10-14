@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bon Soirée: A Spicy Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tajin",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rim a chilled glass with tajin. Combine the ingredients in a shaker with ice. Shake to chill, then strain into the prepared glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saline Solution",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Sauce",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "802fa8d2c76baa5571c3e051e51ae7878c23b9d5241edbebea195764b050e642",
+    "lineage_hash": "cf2748cb48b9baf16e282648f4be6f85491d7dd74fda6a509524594f03584b29"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bon-soiree-spicy-margarita/",
+    "fetchedAt": "2026-08-04T00:31:17.517Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bon-soiree-spicy-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

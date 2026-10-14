@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Dayvan Cowboy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice, then double strain into a rocks glass over a large cube. Garnish.\nSage-Infused BourbonAdd 1 1/2 tsp. chopped fresh sage to 750ml bourbon and allow to infuse for 2 days, then strain and bottle."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sage-infused Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "oz",
+        "notes": "fresh, pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Lemon Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "13fbca92be8966db5c64ea72d9ea8ad218fc76a260624ecc9afa8ba1643fcdd8",
+    "lineage_hash": "71e477306377a328a7472d0f94f70c3bfb4da9797858d6297afb0f7ccff41008"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dayvan-cowboy-sage-bourbon-sour/",
+    "fetchedAt": "2026-08-04T01:57:40.215Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dayvan-cowboy-sage-bourbon-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

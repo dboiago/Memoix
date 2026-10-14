@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Creamy Vegan Pesto",
+    "time": "10 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "102",
+      "carbohydrateContent": "4",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Blend: Add the basil, cashews, nutritional yeast, olive oil, lemon juice, garlic, salt, and black pepper to a small food processor and blend until smooth. If needed, add 2–3 tablespoons water (or a little extra olive oil) to thin to your desired consistency.",
+      "Taste & adjust: Taste and adjust with more salt, lemon juice, or black pepper as needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Basil Leaves",
+        "unit": "C",
+        "notes": "1.6 oz, fresh, loosely packed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "or pine nuts or walnuts",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove Garlic",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "plus more to taste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "or more olive oil, as needed to thin",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4290f2f6078792e298f1756d03a7fcc5329c811bc460a08ef419b25a4c7c9b18",
+    "lineage_hash": "8747fd7f5b7d90f7d53131e96ed3802432f638b0ac76382478fc756bd1fbdda5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/vegan-pesto-recipe/",
+    "fetchedAt": "2026-08-02T09:54:18.878Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/vegan-pesto-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

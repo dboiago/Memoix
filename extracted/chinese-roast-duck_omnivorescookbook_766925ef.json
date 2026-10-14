@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Chinese Roast Duck",
+    "time": "1650 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "555",
+      "carbohydrateContent": "7.4",
+      "fatContent": "29.5",
+      "proteinContent": "61.1"
+    },
+    "directions": [
+      "To prepare the duck: First remove any giblets and neck pieces from the cavity, and tear off the excess fat found inside the bird. Next, remove the wings by cutting through the joints, but keep the drumettes on the bird. Remove any remaining pieces of feather with kitchen tweezers.",
+      "Have the skewers ready within reach. Cut off two pieces of 2’ (60 cm)-long kitchen twine, and place them within reach.",
+      "Seal the front of the duck: Threading a skewer through both layers of skin. Seal the top by tying twine under the skewer. The top must be sealed before adding the marinade.",
+      "Add the marinade: Combine the wet seasonings in a small bowl and mash the fermented tofu to mix well. Add the dry seasonings into the duck cavity, using your hands to rub the cavity a few times. Add all of the seasonings, ensuring they are snug within the cavity. Carefully pour the wet seasonings into the cavity, making sure that they do not leak out of the duck.",
+      "Seal the tail of the duck: To close the duck’s cavity, carefully thread a skewer through both layers of the skin, and tie twine under the skewer to seal the bird. It is best to hold the duck at an angle, so the wet seasonings do not escape the cavity.",
+      "Pump the air under the duck skin: After the duck has been closed, place the duck breast side up. Insert an air pump with a fine tip where the leg meets the breast of the duck. Begin pumping air into the bird, and ensure that the skin is separated from the meat as much as possible. Switch to the opposite side to guarantee all the skin has lifted up from the meat. Then insert the tip from the top of the breast pointing to the leg direction, and pump again to lift the breast skin. Do the same with the opposite side. (*Footnote 4)",
+      "To blanch the duck: Prepare a tray that can fit into your fridge. Line it with a wire rack. Add all the blanching ingredients into a big wok, dutch oven or a large pot. Bring all the blanching ingredients to a boil over medium-high heat. Turn to medium heat. Carefully lower the duck into the seasoned water. Ladle hot water and pour over the duck until the skin becomes tight and smooth, about 30 seconds.(*Footnote 5) Use a spider strainer to lift the duck and transfer it to the lined tray. If the duck is too heavy, you can also use a spatula to lift the tail end, then use your hands to lift the leg bones (they won’t be too hot).",
+      "Rest overnight: Once the duck has cooled off slightly, transfer it into the fridge. Allow to marinate and air dry in your fridge for at least 24 hours before roasting. (*Footnote 7)",
+      "To roast the duck: Preheat your oven to 450°F (232°C). (*Footnote 8) If your oven has convection, roast at 425°F (218°C) with convection instead. This helps the duck cook more evenly. Wipe the duck skin with a paper towel, to remove any oil on the surface.",
+      "Roast at high temperature: Transfer the duck to the oven. Roast at 450°F (232°C) for a total of 20 minutes. After 10 minutes, rotate the duck around (180 degrees, don’t flip it), and cook for 10 minutes more.",
+      "Roast at a lower temperature: Lower the temperature to 350°F (176°C) or 325°F (163°C) convection, and rotate the duck again. Roast for another 30 minutes in total if using a 3.5-4 lb (1.6-1.8 kg) duck. Rotate after 15 minutes. If your duck is bigger, add 10 to 15 minutes of cooking time for a 4-5.5 lb (2-2.5 kg) duck, or add 20 to 25 minutes for a 6-6.5 lb (2.7-2.9kg) duck. Rotate every 15 minutes to ensure even cooking. (*Footnote 9)",
+      "Test the doneness: The duck should have developed a nice golden brown color. Make an incision with a paring knife poking through the thickest part of the breast meat, then press the skin. If the juice runs clear, it is cooked. (*Footnote 10) If the juice is red, keep cooking for another 10 to 15 minutes.",
+      "Rest the duck: Once the duck is cooked, transfer the duck to your kitchen counter. Let rest for at least 40 minutes.",
+      "Drain the duck: Once the duck has cooled enough to handle, prepare a big bowl. Untie the tail end and remove the skewer. Use a sharp knife to cut through the skin and remove the part where you sealed the duck, exposing the cavity. Very carefully lift the duck over the bowl to drain the liquid from the cavity, then remove any solid aromatics. The inside of the duck will be very hot and you should handle it very carefully. Then remove the twine and skewer from the neck area.",
+      "Carve the duck: Carve the duck by cutting through the part where the leg meets the breast. Find the joint of the thigh bone and cut through it to remove the duck leg. Then find the joint of the drumstick and the thigh, cut through it. Then cut down the center of the breast to remove both breasts.",
+      "Reheat the duck (Optional): If you’re not serving the duck immediately, or you accidentally get the duck skin wet when draining and carving the duck, I highly recommend this step. Heat your oven to 450°F (232°C). Place all the carved duck pieces onto a baking sheet lined with a wire rack, skin side up. Heat in the oven for 5 to 10 minutes, until the skin is crispy again. Slice the breast into 1/2” (6 mm) thick pieces, and place them on a platter with the legs and thighs.",
+      "How to serve: Serve hot or warm with plum sauce or ginger scallion sauce."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Duck",
+        "unit": null,
+        "notes": "*Footnote 1, preferably Pekin duck, 3.5-4.5 lbs (1.6-2 kg)",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dry Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Cubes Red Fermented Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Wet Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Wet Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Hoisin Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wet Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Whole Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "cut into 4” (6 cm) long pieces",
+        "amount": "1",
+        "section": "Whole Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "” Ginger",
+        "unit": null,
+        "notes": "cut into large slices",
+        "amount": "1",
+        "section": "Whole Seasonings",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "8",
+        "section": "Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Honey (or Brown Sugar Syrup, or Maltose)",
+        "unit": "C",
+        "notes": "*Footnote 2",
+        "amount": "½",
+        "section": "Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Red Vinegar",
+        "unit": "C",
+        "notes": "or cider vinegar, malt vinegar",
+        "amount": "½",
+        "section": "Blanching",
+        "isOptional": false
+      },
+      {
+        "name": "Plum Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Serving options",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Scallion Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Serving options",
+        "isOptional": false
+      },
+      {
+        "name": "Skewers",
+        "unit": null,
+        "notes": "metal or wooden",
+        "amount": "2",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Kitchen Twine",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      },
+      {
+        "name": "Pump with a Fine Tip",
+        "unit": null,
+        "notes": "electric or hand pump (*Footnote 3)",
+        "amount": "0",
+        "section": "Special equipment",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9465569c0ecaac71d97c9f0054b7a53de5e468b903d23815973011b51c158615",
+    "lineage_hash": "fcf27c26b97f4dc0bd7869c74b1b993552b956575a98e4305f0d0bcd9e822742"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-roast-duck/",
+    "fetchedAt": "2026-08-02T05:41:42.639Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-roast-duck/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

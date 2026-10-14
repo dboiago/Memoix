@@ -1,0 +1,34 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-fudge-recipe",
+  "slug": "dark-chocolate-fudge-recipe_greatbritishchefs_eea9f797",
+  "title": "Dark Chocolate Fudge Recipe",
+  "byline": "by Emanuele Scarello",
+  "fetchedAt": "2026-08-03T18:35:50.567Z",
+  "ldName": "Dark chocolate fudge",
+  "ldTime": "PT1H",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Petit four",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "200g of dark chocolate buttons",
+    "210ml of double cream",
+    "340g of caster sugar",
+    "170ml of liquid glucose",
+    "60g of unsalted butter, plus more for greasing"
+  ],
+  "ldInstructionsRaw": [
+    "Begin this recipe by greasing a baking tray and lining with parchment or silicone paper",
+    "Place the cream, sugar and glucose into a heavy-based saucepan. Bring to a soft boil until the mixture reaches 120°C on a food thermometer, trying not to stir or shake the pan",
+    "Add the butter and return to a soft boil until the temperature reaches 120°C again",
+    "Remove from the heat and stir in the chocolate until it is completely dissolved",
+    "Pour the chocolate fudge mix into the baking tray and allow to set for 30 minutes. Cut the fudge into cubes and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Baileys Irish Cream Bundt Cakes",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "526",
+      "carbohydrateContent": "79",
+      "fatContent": "21",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Toss the mini chocolate chips with a little water and then flour.",
+      "Set the chips aside while you make the batter. A sticky paste will coat the chips to keep them from sinking as the cakes bake.",
+      "It’s imperative that you thoroughly butter the intricately shaped pans.",
+      "You can use pan spray or melted butter and a light coating of flour.",
+      "After spooning the batter into the mini pans use a chopstick or skewer to swirl the batter and even it out.",
+      "Set a cooling rack over a clean sheet pan so you can collect and reuse the glaze as you go.",
+      "Glaze the cakes while they’re still warm so the glaze will melt and set to a shiny finish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mini Chocolate Chips",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "oz",
+        "notes": "¾ cup, divided",
+        "amount": "6",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup, divided",
+        "amount": "8",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "7",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "6",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cakes",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner Sugar",
+        "unit": "oz",
+        "notes": "4 cups",
+        "amount": "16",
+        "section": "Bailey’s Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Baileys Irish Cream",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Bailey’s Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae0d48b1077d2d75dafb9219119efa0447dc8f203c1d51cd603f2a06510a03ab",
+    "lineage_hash": "46d98d1bd98e7d634911769c2d1ceae56754990685f3dfc4e9f57035802e3e3a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/03/11/baileys-baby-bundts-with-chocolate-chips/",
+    "fetchedAt": "2026-08-01T22:29:27.131Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/03/11/baileys-baby-bundts-with-chocolate-chips/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,64 @@
+{
+  "recipe": {
+    "name": "Double Smoked Ham",
+    "time": "2 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": "20",
+      "fatContent": "19",
+      "proteinContent": "44"
+    },
+    "directions": [
+      "Fire up. Prepare your grill for 2-zone cooking and preheat it to about 225°F (107.2°C) on the indirect side. Or fire up your smoker to 225°F (107.2°C).",
+      "Prep the glaze. You can do this step well in advance. Make 1 1/4 cups of Chris Lilly's Spicy Apricot Glaze.",
+      "Prep the meat. If the skin has not been removed, remove it, and trim off almost all the fat leaving no more than a thin layer. The fat does not penetrate the meat (fat is oil, meat is 75% water) and people will just trim it off at the table and there goes your glaze. If it came with a prepackaged glaze, throw it out. If there is a glaze already on the meat, rinse it off. Chris' glaze is better. If it is spiral-sliced, let some water get into the sliced areas to help reduce moisture loss.",
+      "Cook. On a smoker place the meat where it will get the most smoke. On a grill, place the meat on the indirect side flat side down, add a handful or two of wood for smoking as described in my articles on the Best Setup for a Charcoal Grill, the Best Setup for a Gas Grill. Close the lid, and smoke for about 60 minutes.",
+      "Tear off about 6 feet (2 m) of aluminum foil, if you have double strength, that's better. Fold it in half to make it about 3 feet (1 meter) in length. Pour about 4 tablespoons of the glaze into the center of the foil. Take the ham off the cooker, place the flat side on the glaze on the foil making sure you don't puncture the foil with the bone, pour 1/2 of the glaze mix over the meat and spread it all over with a brush. Seal the meat and glaze in the foil making it look like a giant candy kiss. Crimp the seams tight. We don't want any steam escaping or broth leaking. This technique helps it cook faster by generating a little steam, which penetrates faster than dry heat, and keeps the meat moist. If it is leaking, use another layer of foil or place it in a pan. Place it back in the cooker. If you have a leave-in meat thermometer, insert it now through the foil into the fat end above the liquid level, so the tip is about 1 inch (2.5 cm) away from the bone. Watch the oven temp and try to keep it around 225°F (107.2°C). Although if you are in a hurry you can crank it up a bit.",
+      "When the meat temp hits about 130°F (54.4°C), open the foil, paint on more glaze, leave the foil open to catch drips and close the lid. How long will it take to hit 130°F (54.4°C)? That depends on the thickness of the meat and the accuracy of your oven thermometer. As I tend to repeat in every recipe, you cannot trust your grill thermometer no matter how much you spent on your grill, and you need a meat thermometer to tell when the meat is done. Please read my article on thermometers and take action. That said, it could take 3 to 4 hours to hit 130°F.",
+      "Glaze the ham. After about 10 minutes, open the grill, dip your basting brush in the pools of broth/glaze on the foil and paint the meat again. Add more full strength glaze if you wish. Now remove the foil, and pour it into a sauce pan. That's the basis for your sauce. Taste it. Add more glaze or broth as you wish. The thinner it is the easier it soaks into the meat. Don't get too sweet. Keep it warm on the grill or indoors.",
+      "Finish. On a grill, leave the lid open, remove the thermometer and move the ham over to the hot side of the grill and lay it on a curved side so the glaze is facing the heat and the bare meat is not. On a smoker, if you have a gas grill, fire it up na move the ham over the direct heat. Stand right there and watch so the glaze does not burn. Don't walk away even to get a beer. Let the glaze sizzle, but not blacken. You are just trying to caramelize the sugars and develop more flavor. After about 3 or 4 minutes, roll it a bit and keep rolling it until all sides have sizzled except the flat side. Leave it bare. By now the temp should have risen to safe temp of 140°F (60°C). Go ahead and check if you want, but trust me, it's there.",
+      "Serve. Place the meat on a cutting board and slice inward towards the bone, not parallel to the bone as in the illustration. Pour the remaining glaze into a gravy boat and serve it alongside the sliced ham."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Precooked Wet Cured Ham",
+        "unit": "lb",
+        "notes": "bone-in",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chris Lilly's Spicy Apricot Glaze",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c0565e7c9a4fee8568e1bd36e402cc9935e55f2081b5c7f9ddd62ab6752a6832",
+    "lineage_hash": "ac25051f1b32c165ff511881efec2e232cea365010622f167b88590dceb51bf1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/tested-recipes/pork-recipes/ultimate-smoked-ham-recipe/",
+    "fetchedAt": "2026-08-02T08:23:12.631Z"
+  },
+  "rawSource": "https://amazingribs.com/tested-recipes/pork-recipes/ultimate-smoked-ham-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

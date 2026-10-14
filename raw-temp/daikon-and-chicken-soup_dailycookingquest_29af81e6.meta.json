@@ -1,0 +1,54 @@
+{
+  "url": "https://dailycookingquest.com/daikon-and-chicken-soup.html",
+  "slug": "daikon-and-chicken-soup_dailycookingquest_29af81e6",
+  "title": "Daikon and Chicken Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:56:16.456Z",
+  "ldName": "Daikon and Chicken Soup",
+  "ldTime": "PT1H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT1H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "1 daikon, peeled and cut into sticks",
+    "½ onion, finely chopped",
+    "3 cloves garlic, minced",
+    "2 inches ginger, peeled and bruised",
+    "1 liter water",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "2 stalks scallion, thinly sliced",
+    "2 stalks celery, thinly sliced, reserve the leaves for garnish"
+  ],
+  "ldInstructionsRaw": [
+    "Boil daikon for 10 minutes in a pot, drained and set aside.",
+    "Heat 2 tablespoon oil in a pot, fry onion and garlic until fragrant, about 2-3 minutes. Add chicken pieces and ginger and cook until chicken is no longer pink.",
+    "Add water, salt. and sugar and bring to a boil. Reduce heat and simmer for 30 minutes, or until chicken pieces are cooked and tender.",
+    "Add boiled daikon, scallion and celery and cook for another 3-5 minutes.",
+    "Pour into serving bowls and garnish with celery leaves."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 free range chicken (Indonesian: ayam kampung), cut into 4-8 pieces",
+    "1 daikon, peeled and cut into sticks",
+    "½ onion, finely chopped",
+    "3 cloves garlic, minced",
+    "2 inches ginger, peeled and bruised",
+    "1 liter water",
+    "2 teaspoon salt",
+    "1 teaspoon sugar",
+    "2 stalks scallion, thinly sliced",
+    "2 stalks celery, thinly sliced, reserve the leaves for garnish"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Sesame Cookie Balls (Fried Sesame Balls)",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": "10",
+      "fatContent": "2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Shift flour, baking powder, salt and set aside. Then dissolve sugar in warm water and whisk egg.",
+      "Then mix all the dry ingredients with sugar water, egg and oil. Knead into a soft dough. Then divide into 40 small portions and round each one into a small ball.",
+      "Strain some water on surface and roll into sesame balls.",
+      "Heat up oil to 160 degree C and dip the sesame balls in. Deep-fry for 4-5 minutes with medium to slow fire. Stir the balls at intervals so they can be evenly fried."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cake Flour",
+        "unit": "g",
+        "notes": "about 2.5 cups",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tiny Pinch of Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "scant 3/4 cup",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "warm water",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31f952204294043cdbc0e993755754468987485b2d51c1309510791f9d4120c5",
+    "lineage_hash": "f29af4882eeaa4a233222704f10e11600414d1fd5fb1e54ba043784855703049"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-laughing-balls-fried-sesame-balls/",
+    "fetchedAt": "2026-08-02T02:55:53.786Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-laughing-balls-fried-sesame-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

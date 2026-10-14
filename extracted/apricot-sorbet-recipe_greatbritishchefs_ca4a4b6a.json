@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Apricot Sorbet",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar and water into a pan, bring to the boil then remove from the heat and set aside to cool",
+      "Once cool, add the apricot purée to the syrup and mix well to combine. Churn in an ice cream maker, then freeze in a sealable container until needed. Serve with some fresh mint leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricot Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh, for garnish",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "99da05d3edd7763d8488a31a21d9b103a57cf9f7b9246de9e75cf4012763c520",
+    "lineage_hash": "0a369006da3df6a525667085a5306b2b027dcf18c85169ddfcef8233e70f5aad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apricot-sorbet-recipe",
+    "fetchedAt": "2026-08-03T16:24:23.958Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apricot-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

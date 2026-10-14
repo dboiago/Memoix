@@ -1,0 +1,53 @@
+{
+  "url": "https://mykoreankitchen.com/brown-rice-and-pumpkin-porridge-hyunmi-danhobak-mium/",
+  "slug": "brown-rice-and-pumpkin-porridge-hyunmi-danhobak-mi_mykoreankitchen_a1185090",
+  "title": "Brown Rice and Pumpkin Porridge (Hyunmi Danhobak Mium)",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T18:30:53.556Z",
+  "ldName": "Brown Rice and Pumpkin Porridge (Hyunmi Danhobak Mium)",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1/2 Tbsp brown rice",
+    "120 g pumpkin (seeded and skinned, (approx. 100g steamed pumpkin))",
+    "1 cup water",
+    "1 Tbsp brown rice",
+    "210 g pumpkin (seeded and skinned, (approx. 195g steamed pumpkin))",
+    "1 cup water"
+  ],
+  "ldInstructionsRaw": [
+    "Wash/rinse the brown rice. Soak the rice in some water for 30 mins. Drain the water after 30 mins.",
+    "While waiting, wash, cut and peel the skin of the pumpkin. Steam it on a boiling pot until it is cooked (20 to 25 mins). It can be quicker if the pumpkin is chopped thinner and smaller.",
+    "Add the rice, steamed pumpkin and the water into a blender then blend it. (1 to 2 mins)",
+    "Pour the mixture into a small pot then boil it on high heat for 2 mins. Reduce the heat to low then simmer for 5 mins. Stir constantly while simmering.",
+    "Sieve the boiled porridge. (Discard what is left on the sieve).",
+    "Cool it down for 10 to 20 mins then serve it (or distribute among pre-portioned containers for later consumption)."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "9 kcal",
+    "carbohydrateContent": "2 g",
+    "sodiumContent": "2 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[up to 6 months old babies (Or who still need runny textured solids)]",
+    "▢ 1/2 Tbsp brown rice",
+    "▢ 120 g pumpkin seeded and skinned, (approx. 100g steamed pumpkin)",
+    "▢ 1 cup water",
+    "[babies older than 7 months (Or who are used to taking more solid food)]",
+    "▢ 1 Tbsp brown rice",
+    "▢ 210 g pumpkin seeded and skinned, (approx. 195g steamed pumpkin)",
+    "▢ 1 cup water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

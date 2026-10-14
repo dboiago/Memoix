@@ -1,0 +1,56 @@
+{
+  "url": "https://www.baking-sense.com/2015/11/24/cranberries-in-red-wine/",
+  "slug": "cranberry-compote_baking-sense_fca5e2c6",
+  "title": "Cranberry Compote",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T01:36:00.315Z",
+  "ldName": "Cranberry Compote Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Side Dish",
+  "ldKeywords": "christmas, holidays",
+  "ldIngredientsRaw": [
+    "12 oz cranberries (fresh or frozen)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz red wine (1 cup (light to medium bodied))",
+    "1  cinnamon stick",
+    "1  orange (zest peeled in a long strip (avoid white pith))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 12 oz&#32;cranberries, 12 oz&#32;granulated sugar, 8 oz&#32;red wine, 1&#32;cinnamon stick, and the zest from 1&#32;orange in a saucepan. Heat over medium high until the wine begins to boil and the cranberries start to pop.",
+    "Reduce the heat to medium -low and continue cooking for about 10 minutes (see note). The majority of the cranberries should have popped and the mixture will be a little thicker.",
+    "Remove the pot from the heat and cool to room temperature.",
+    "Remove the cinnamon stick and orange zest. If you&#x27;d like you can slice the orange zest into thin strips and return to the sauce. I just take it out.",
+    "Place in a covered container and chill for several hours. The mixture will continue to thicken as it cools.",
+    "The cooked cranberries will keep for several weeks in the refrigerator."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "139 kcal",
+    "carbohydrateContent": "32 g",
+    "proteinContent": "0.2 g",
+    "fatContent": "0.1 g",
+    "saturatedFatContent": "0.003 g",
+    "sodiumContent": "2 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "30 g",
+    "unsaturatedFatContent": "0.03 g"
+  },
+  "htmlIngredientLines": [
+    "12 oz cranberries (fresh or frozen)",
+    "12 oz granulated sugar (1 ½ cups)",
+    "8 oz red wine (1 cup (light to medium bodied))",
+    "1 cinnamon stick",
+    "1 orange (zest peeled in a long strip (avoid white pith))"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

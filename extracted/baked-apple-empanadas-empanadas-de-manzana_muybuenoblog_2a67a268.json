@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Baked Apple Empanadas",
+    "time": "55 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "138",
+      "carbohydrateContent": "19.08",
+      "fatContent": "5.93",
+      "proteinContent": "2.46"
+    },
+    "directions": [
+      "Peel and dice apples. In a stockpot, combine apples, lemon juice, sugar, water, cinnamon, and cloves.",
+      "Bring to a boil over medium heat, stirring constantly. Cook until apples are fork tender, about 5 minutes.",
+      "Bring to a boil, reduce to a simmer, and cook till soft (about 15 minutes) stirring occasionally so apples do not burn. Remove from heat and drain excess liquid thoroughly. Discard the cinnamon and cloves, and set the filling aside or refrigerate to cool.",
+      "In a stand mixer mix the first 5 dry ingredients. Add in the shortening. In a separate bowl whisk the eggs and milk and combine with dry ingredients. Continue to combine until you have a soft dough. Split the dough in half. If not using immediately, wrap in plastic wrap and refrigerate.",
+      "Preheat the oven to 350 degrees F.",
+      "Divide empanada dough into 24 pieces. On a floured surface, roll out the dough pieces into small round circles. Place a small dollop of apple filling on one half of each of the rolled out circles. Fold over the dough and seal off the edges with a fork by pressing down along the edges. Or pressing a flat knife edge along the border creates a beautiful design. Both make for a pretty pattern when baked.",
+      "Brush each empanada with egg whites or some canned evaporated milk, sprinkle with cinnamon-sugar mixture. Puncture the top of each empanada with a fork to allow steam to escape while baking.",
+      "Place the empanadas on a parchment lined cookie sheet and bake for 15 to 20 minutes on middle rack in the oven. If after 15 minutes you notice the bottoms of the empanadas starting to brown, move the cookie sheet to the top rack and continue to bake for the last 5 minutes, until golden brown.",
+      "Dough Tips – You’ve heard it before and you’ll hear it again—don’t overwork the empanada dough. Once the ingredients are mixed and no dry pockets of flour remain, give it a rest.",
+      "Rolling Tips – My grandma’s wooden palote is my favorite rolling pin of all time—it’s beautiful and easy to use. To help, consider using round cookie cutters.",
+      "Neater Edges – I like the rustic look of empanadas sealed with the tines of a fork. If you prefer a more polished edge, use a ravioli wheel after sealing to remove any ragged edges.",
+      "Why We Need To Vent – Since we’re using fresh fruit for our filling, the apples will give off steam. This can create a big air pocket if there’s nowhere for it to go and empanadas will potentially bust open.",
+      "Prep. Before storing, make sure you allow your apple pie empanadas to cool completely to room temperature. This is essential! If you skip this step, condensation will collect in your storage container and make them soggy.",
+      "Room Temp. They should be kept well lightly covered with a kitchen towel or paper towel at room temperature for up to 2-3 days.",
+      "Refrigerator. To extend their shelf life, store the empanadas in a covered container in the fridge for up to 5 days.",
+      "Freezer. To get a head start on preparation, make the apple empanada filling and freeze it for up to 3 months. Make the dough up to 3 days prior and refrigerate it until you’re ready to use it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apples",
+        "unit": "C",
+        "notes": "peeled, cored, and diced",
+        "amount": "6",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Sticks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Apple Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "All-vegetable Shortening",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Empanada Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Wash",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon-sugar Mixture",
+        "unit": null,
+        "notes": "1 teaspoon ground cinnamon mixed with 1/4 cup sugar",
+        "amount": "0",
+        "section": "Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1838120aa9021e8627b7ff1aac0be06962b6c98c97970c8bad4717bb2b009a3b",
+    "lineage_hash": "2a937c140d1b4897d5709ac4091daf9028dfae68f7a19fb602d9374f16c2ed11"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/apple-empanadas/",
+    "fetchedAt": "2026-08-02T04:00:55.427Z"
+  },
+  "rawSource": "https://muybuenoblog.com/apple-empanadas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Chipotle Barbecued Short Ribs",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, add the coffee beans, chillies and cumin seeds to the Vitamix and pulse on Variable 5 until you have a medium to coarse spice rub consistency",
+      "Rub the paste all over the ribs and leave to marinate 24 hours (this is an important length of time, do not reduce it because it will affect the final texture and moisture of meat)",
+      "When ready to cook, remove the tough membrane from the ribs (the meat-side, not the bone-side), and cook at around 105°C on offset heat in a barbecue or smoker. The length of time will depend on the thickness of the ribs, and could take 5–8 hours"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rack of Beef Short Ribs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Dried Chipotle Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17c1a9823514cf252aade823aa179b1ac17b7fa55832ae64352736c783ee3bf0",
+    "lineage_hash": "afe69595c85f5448594c503dc90c4137275a4ee2d9174daa8008d1bc8394d4bd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chipotle-barbecued-short-ribs-recipe",
+    "fetchedAt": "2026-08-03T11:15:51.016Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chipotle-barbecued-short-ribs-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

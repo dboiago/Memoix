@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Barbecued Yoghurt Lamb Chops",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by marinating your lamb chops – do this the day before to give the marinade plenty of time to tenderise the lamb. Mix together all of the ingredients in the marinade, then coat the lamb thoroughly and leave in the fridge overnight, or for at least an hour. We find this easiest to do in a ziplock bag",
+      "The next day, preheat your barbecue to 300ºC and set up for direct cooking, using the cast iron grate in the lower position – this will help you get a really nice sear on your lamb chops. You can roast your cashew nuts in a small tray on the barbecue as it preheats, just be careful not to burn them!",
+      "Whilst the barbecue is preheating, make the cashew pilaf. Put a large saucepan over a medium heat and pour in the olive oil, then add the black mustard seeds, cinnamon stick, cloves and cardamom pods. Fry for a couple of minutes until fragrant, then add the diced onion, garlic, cashews and a large pinch of salt and sweat until lightly caramelised",
+      "Add the rice to the pan and fry with the onion mix for a minute or two. Add the water with another pinch of salt, bring to the boil then simmer gently with a lid on until the rice has absorbed all the water – around 15 minutes. Once the rice is ready you can leave it to steam gently in the pan whilst you cook the lamb chops",
+      "Take your lamb chops out of the marinade, shake off any excess yoghurt and sear them on the barbecue, starting with the fat side. Once the fat is nicely seared, flip them all over and sear for 4–5 minutes until the yoghurt has formed a golden crust. Look for spots of blood to appear on the surface of the lamb – as soon as you see them, turn the lamb over and sear on the other side, again for around 4–5 minutes. This should give you lamb chops cooked to medium – about 60ºC internal temperature",
+      "Remove the lamb chops and rest under a sheet of tin foil",
+      "To make your chopped salad, mix the cucumber, tomato, onion and chilli in a bowl and dress with the lime juice and olive oil and a pinch of salt. Mix in the shredded mint right at the end",
+      "Serve the lamb chops with the cashew pilaf, chopped salad and a lime wedge on the side, either in individual portions or as a big platter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Chops",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": null,
+        "notes": "seeds removed and diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "seeds removed and finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Mint Leaves",
+        "unit": null,
+        "notes": "finely shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nuts",
+        "unit": "g",
+        "notes": "roasted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Mustard Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "lightly crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basmati Rice",
+        "unit": "g",
+        "notes": "washed thoroughly",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8408ca53b059ac8e31f247eb331d394497e947a7d39b0e56562955ef057c9fe8",
+    "lineage_hash": "07414e32dd8787fa8734af33ad299454b433b064e299d42a98cebf9a6509bbed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/barbecued-yoghurt-lamb-chops-recipe",
+    "fetchedAt": "2026-08-03T06:44:06.680Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/barbecued-yoghurt-lamb-chops-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

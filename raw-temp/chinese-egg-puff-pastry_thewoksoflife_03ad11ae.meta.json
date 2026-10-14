@@ -1,0 +1,65 @@
+{
+  "url": "https://thewoksoflife.com/chinese-eggs-puff-pastry/",
+  "slug": "chinese-egg-puff-pastry_thewoksoflife_03ad11ae",
+  "title": "Chinese Egg Puff Pastry",
+  "byline": "Kaitlin",
+  "fetchedAt": "2026-08-02T18:45:19.429Z",
+  "ldName": "Chinese Egg Puff Pastry",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Chinese Fusion",
+  "ldCategory": "Breakfast",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "14-16 ounces puff pastry dough",
+    "7  eggs ((divided))",
+    "1 tablespoon water",
+    "2 tablespoons toasted sesame seeds",
+    "¼ teaspoon salt",
+    "½ teaspoon five spice powder",
+    "¾ cup chopped scallion",
+    "1 tablespoon light soy sauce",
+    "2 teaspoons chili oil ((or to taste))"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 400°F/200°C. On a lightly floured surface, use a rolling pin to roll the dough out into a rectangle roughly 12x16 inches (30x40 cm) in size. It should be about 5mm thick.",
+    "Transfer the dough to a baking sheet lined with parchment paper, and fold over the edges to form a ½-inch (1.25cm) wide crust.",
+    "Beat one egg with 1 tablespoon of water to make an egg wash. Brush the egg wash onto the puff pastry to help the sesame seeds and scallions adhere. Use a fork to poke holes all over the middle of the puff pastry. Score the inner edge of the crust with a paring knife.",
+    "Sprinkle the sesame seeds liberally over the crust, then sprinkle the salt and five spice powder evenly over the center of the puff pastry. Follow with a little over half of the scallions.",
+    "Bake the puff pastry for 20-22 minutes. Remove from the oven and use a spoon to make six indentations in the pastry. Crack the remaining 6 eggs, 1 in each indentation. Bake for another 6-10 minutes, depending on how runny/firm you like your yolks. Keep in mind, they will continue to cook a bit after you take them out of the oven.",
+    "Mix the soy sauce and the chili oil, and drizzle it evenly over the eggs. Top with the remaining scallions, cut into six pieces, and serve!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "461 kcal",
+    "carbohydrateContent": "32 g",
+    "proteinContent": "11 g",
+    "fatContent": "32 g",
+    "saturatedFatContent": "8 g",
+    "transFatContent": "0.02 g",
+    "cholesterolContent": "164 mg",
+    "sodiumContent": "494 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "22 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 14-16 ounces puff pastry dough (thawed; all-butter puff pastry preferred; see our rough puff pastry recipe)",
+    "▢ 7 eggs (divided)",
+    "▢ 1 tablespoon water",
+    "▢ 2 tablespoons toasted sesame seeds",
+    "▢ ¼ teaspoon salt",
+    "▢ ½ teaspoon five spice powder",
+    "▢ ¾ cup chopped scallion",
+    "▢ 1 tablespoon light soy sauce",
+    "▢ 2 teaspoons chili oil (or to taste)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

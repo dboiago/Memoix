@@ -1,0 +1,46 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cake-with-chocolate-coffee-frosting",
+  "slug": "chocolate-cake-with-chocolate-coffee-frosting_lacucinaitaliana_f7dfaa03",
+  "title": "Chocolate Cake with Chocolate Coffee Frosting",
+  "byline": "by  Editorial staff   July 16, 2019",
+  "fetchedAt": "2026-08-03T01:03:28.767Z",
+  "ldName": "Chocolate Cake with Chocolate Coffee Frosting",
+  "ldTime": "PT150M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "12",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Torta Al Cioccolato,Torte,Torte",
+  "ldIngredientsRaw": [
+    "1LB. dark chocolate",
+    "2 2/3STICKS butter",
+    "3/4C. granulated sugar",
+    "1 1/2C. almond flour",
+    "1 1/4C. powdered sugar",
+    "2/3C. ricotta cheese",
+    "2OZ. amaretti cookies",
+    "2/3C. coffee liqueur",
+    "4TBSP. instant coffee",
+    "4WHOLE eggs"
+  ],
+  "ldInstructionsRaw": [
+    "Using an electric hand mixer, cream half of the butter with the granulated sugar on low speed for at least 15 minutes: it should be soft and velvety; the sugar should be melted but it shouldn’t be too airy. Add in one egg at a time, ensuring it is thoroughly incorporated before adding in the next. Grind the amaretti cookies into a powder and add 1 1/2 ounces to the mixture, along with the almond flour. Melt 2/3 pound of chocolate over a bain-marie; let it cool to room temperature, then incorporate it into the mixture; add in the ricotta, then the coffee liqueur. Butter a round baking pan (10-inch diameter) and dust it with the remaining ground amaretti cookies; pour in the batter and bake at 350°F for 1 hour.|In the mean time, make the frosting: combine the rest of the butter with the powdered sugar until velvety. Melt the rest of the chocolate over a bain-marie and let it cool; then add in the butter mixture; ensure the instant coffee is ground into a fine powder and add it into the mixture; combine everything and place in the refrigerator for 15 minutes to set. Check that the cake is baked by looking at the edges: they should have slightly pulled away from the pan. Let the cake cool in the pan before removing it. Transfer the cake onto a serving dish. Place the frosting in a pastry bag and decorate with small dollops."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 LB. of dark chocolate",
+    "2 2/3 STICKS of butter",
+    "3/4 C. of granulated sugar",
+    "1 1/2 C. of almond flour",
+    "1 1/4 C. of powdered sugar",
+    "2/3 C. of ricotta cheese",
+    "2 OZ. of amaretti cookies",
+    "2/3 C. of coffee liqueur",
+    "4 TBSP. of instant coffee",
+    "4 WHOLE of eggs"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

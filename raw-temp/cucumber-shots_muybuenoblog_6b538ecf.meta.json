@@ -1,0 +1,61 @@
+{
+  "url": "https://muybuenoblog.com/cucumber-shots/",
+  "slug": "cucumber-shots_muybuenoblog_6b538ecf",
+  "title": "Cucumber Shots",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T02:33:31.279Z",
+  "ldName": "Cucumber Shots",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "cocktail with cucumber",
+  "ldIngredientsRaw": [
+    "3  medium cucumbers",
+    "Tajin",
+    "1  cucumber (peeled and seeded)",
+    "2  limes (juiced)",
+    "1/2 cup water",
+    "1 tablespoon  agave nectar",
+    "6 ounces tequila blanco"
+  ],
+  "ldInstructionsRaw": [
+    "Peel cucumbers and cut the ends, then cut each cucumber in half.",
+    "Using a small melon baller, scoop out the seeds and some pulp of the cucumber. Be careful not to scoop the base or liquid will drip out.",
+    "Rim cucumbers with Tajín.",
+    "In a blender add cucumber, lime juice, water and agave nectar and blend until smooth.",
+    "Strain the liquid into a cocktail shaker or mason jar and discard the pulp.",
+    "Add tequila, ice, and shake.Strain into cucumber cups.",
+    "Serve immediately."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "6 g",
+    "calories": "93 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.02 g",
+    "sodiumContent": "3 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "0.03 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 medium cucumbers",
+    "▢ Tajin",
+    "[Spiked Agua de Pepino]",
+    "▢ 1 cucumber, peeled and seeded",
+    "▢ 2 limes, juiced",
+    "▢ 1/2 cup water",
+    "▢ 1 tablespoon  agave nectar",
+    "▢ 6 ounces tequila blanco"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

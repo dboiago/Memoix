@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Coconut Berry Frappé",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a blender and blend for 30 seconds. Pour into glasses and grate nutmeg on top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Old Tom Gin",
+        "unit": "oz",
+        "notes": "Robin Room uses Hayman’s",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Liqueur",
+        "unit": "oz",
+        "notes": "or sub Coco Lopez",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strained Cherry Syrup From Black Cherries",
+        "unit": "oz",
+        "notes": "Filthy or Luxardo",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d6c22a2a4af2e3928906e05985b24551a2cc2702a1857e9e45ea6bb9f47e096",
+    "lineage_hash": "62e9c36081bf37e271362ce9c23dcfb022120ee0446ca3b7a9c24dc10e03ed0f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-berry-frappe/",
+    "fetchedAt": "2026-08-04T01:03:09.010Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-berry-frappe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Agave Gracias",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a glass filled with a single large ice cube, and garnish.",
+      "Piloncillo Syrup In a saucepan over medium heat, combine one 8-oz. cone of piloncillo with 1 cup of water (this recipe can be scaled up or down, just keep the piloncillo and water at equal parts). Stir until the sugar has fully dissolved, then bottle for use; keeps refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Braulio",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piloncillo Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94e41242c56d58e98c1e585d3dc839108e4b77ab01fbf80b60999aebe4a8118c",
+    "lineage_hash": "c7920f9f563e700a3f3b4a88e827508c15833bfb6c3889aefd8a53b63d660a4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/agave-gracias/",
+    "fetchedAt": "2026-08-03T21:34:42.946Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/agave-gracias/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

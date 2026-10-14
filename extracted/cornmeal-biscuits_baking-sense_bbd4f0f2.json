@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Cornmeal Biscuits",
+    "time": "32 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "359",
+      "carbohydrateContent": "43",
+      "fatContent": "18",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Preheat the oven to 425°F. Line a half sheet pan with parchment paper.",
+      "Combine the all purpose flour, cornmeal, baking powder, baking soda and salt in a mixing bowl. Whisk the dry ingredients to combine.",
+      "Mix the butter into the flour with your fingers until it's broken down into bits slightly larger than a pea. Whisk the honey into the buttermilk and add to the flour all at once. Mix until about 2/3 of the dry ingredients are absorbed.",
+      "Turn the dough onto a generously floured surface and gently knead together to incorporate the remaining dry flour (this should only take about 6-8 kneads). The dough will be quite wet.",
+      "Gently pat the dough to a 1/2\" thick, brush off excess flour and fold the dough in 1/2 and fold in half again. Pat the dough to a 1/2\" again and do another two folds. Pat the dough to 3/4\" thick  and cut with a 3\" biscuit cutter. Gather the scraps together and continue cutting until all the dough is used up.",
+      "Set the biscuits onto the prepared baking sheet and brush the tops with buttermilk. Bake until golden brown, about 10-12 minutes.",
+      "If the bottoms of the biscuits are browning too fast set another sheet pan under the biscuits after 5 minutes of baking. As soon as the biscuits come out of the oven brush them lightly with honey."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 3/4 cups, see note",
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stone Ground Cornmeal",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "7½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold and cut into 16 pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "plus more for brushing",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "2 cups plus more for brushing",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "825c40c6de0fbddbc1ce7ecacae8d9e6aea7292ba49c11f03d820d137ea13fa7",
+    "lineage_hash": "4cc70db51efe8e04b370b89e774e3e6029d357b99fff0bcfb2df510293c674cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/11/04/fluffy-cornmeal-biscuits/",
+    "fetchedAt": "2026-08-02T01:54:32.508Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/11/04/fluffy-cornmeal-biscuits/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

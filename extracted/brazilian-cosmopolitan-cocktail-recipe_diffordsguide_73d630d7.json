@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Brazilian Cosmopolitan Cocktail",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "146",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of orange zest twist.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS orange zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saline Solution 4:1",
+        "unit": "drop",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "50a025d3919974d7516b832b09413be09e98eb725b6839aaa6614895a0320c27",
+    "lineage_hash": "5dcb90378c0c2aeeae631288c554ede764338568577bf9281f7db0f51cd0a602"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/565/brazilian-cosmopolitan",
+    "fetchedAt": "2026-08-02T07:05:12.889Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/565/brazilian-cosmopolitan",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Ayam Madu Kecap Limo (Soy Sauce and Lime Honey Chicken)",
+    "time": "2 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place chicken thighs in a mixing bowl with the marinating sauce. Cover and refrigerate for 2 hours. Stir every so often.",
+      "Heat oil in a frying pan on medium high. Cook each side of the thigh for 7 to 8 minutes. Keep basting with the marinating sauce every 2 minutes. Set the chicken thighs on a serving plate.",
+      "Pour the remaining marinating sauce into the pan and bring to a boil. When the sauce thickens and turns to a glace, pour it on top of the chicken thighs. Serve immediately with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": null,
+        "notes": "Indonesian: paha ayam utuh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marinating Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "Indonesian: kecap asin",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "Indonesian: madu",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "Indonesian: air jeruk nipis",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chili",
+        "unit": "tsp",
+        "notes": "Indonesian: bubuk cabe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "63e0230cbbf6c8dc2b27d38a38f5606ad2c70b6963711e28909e9a287bac9be4",
+    "lineage_hash": "30c3dd233b91e33b165e22d202dc7cf52604786e4ef51251ad98f735a6dfd3bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/ayam-madu-kecap-limo-soy-sauce-and-lime-honey-chicken.html",
+    "fetchedAt": "2026-08-02T10:50:38.424Z"
+  },
+  "rawSource": "https://dailycookingquest.com/ayam-madu-kecap-limo-soy-sauce-and-lime-honey-chicken.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

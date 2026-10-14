@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Budae Jjigae (Army Stew)",
+    "time": "30 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "653",
+      "carbohydrateContent": "51",
+      "fatContent": "35",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Assemble the main ingredients (except for instant ramen noodles, rice cakes, green onion and cheese) in a shallow pot. Add the sauce in the middle. Pour the stock in the corner of the pot. Close the lid and boil it on medium high heat until the stock starts to boil (about 8 mins).",
+      "Add the remaining ingredients – instant ramen noodles, rice cakes, green onion and cheese on top of the pot and boil uncovered until the noodles are cooked (about 2 to 3 mins). Reduce the heat to low (if you’re cooking on a portable burner and sharing the food at the dinning table).",
+      "Start dishing out soup, protein and vegetables onto your own soup bowl. Serve with steamed rice (& with other Korean side dishes)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Stock (1 Litre) *see Notes Above",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Spam Thinly Sliced",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Cocktail Frankfurt Sausages (150g) Thinly & Diagonally Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Tofu Sliced",
+        "unit": "g",
+        "notes": "about 1.5cm, 1/2 inch thickness",
+        "amount": "250",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Enoki Mushrooms Base Stem Removed & Stems Separated",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "King Oyster Mushrooms Thinly Sliced Length Ways",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom Caps Thinly Sliced",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Aged Kimchi",
+        "unit": "C",
+        "notes": "cut into bite sized pieces",
+        "amount": "½",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Ramen Noodles",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Rice Cakes for Soup Soaked in Cold Water for 15 Mins If It Was Frozen",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion Thinly & Diagonally Sliced",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1-2",
+        "section": "Main",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chili Flakes",
+        "unit": "Tbsp",
+        "notes": "Gochugaru",
+        "amount": "2",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "Tbsp",
+        "notes": "mirin",
+        "amount": "2",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Korean Chilli Paste",
+        "unit": "Tbsp",
+        "notes": "Gochujang",
+        "amount": "½",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      },
+      {
+        "name": "Few Sprinkles Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Sauce (Mix these in a small bowl)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "987bc22bea9e2b306220a7df8a93bde0f7e3b1e4fe99d51522ea85d55507be95",
+    "lineage_hash": "5bfe1535ee5dba86759dc46299438b4f366236bb90fed1981df6f14f6cb42b90"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/army-stew-budae-jjigae/",
+    "fetchedAt": "2026-08-01T23:12:31.180Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/army-stew-budae-jjigae/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

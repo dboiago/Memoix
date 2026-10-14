@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Easy Asian Creamy Cucumber Salad",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice cucumbers into thin discs. I use a mandolin slicer on the #3 setting for even slices.",
+      "Add salt and toss well to coat. Let them sit for about 20 minutes to draw out excess water. Pour out the liquid that collects at the bottom of the bowl. Then, gently squeeze the cucumbers by the handful to remove any remaining moisture. Do not rinse.",
+      "Add the rest of the ingredients to the bowl with the cucumbers. Toss everything together until well coated. Taste and adjust as needed. Serve and enjoy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "English Cucumber",
+        "unit": null,
+        "notes": "alt: 3 Persian cucumbers, about 11 oz",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewpie Mayo",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha Chili Sauce",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "32949bebaac6be1318bf48dc0b807ee7d2996459888a28fd2d807b9f9eb10db3",
+    "lineage_hash": "f9b78148e8a27d5519901bd1bc912e009de4d90e5779ef38a8b5cabae125b749"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/easy-asian-creamy-cucumber-salad/",
+    "fetchedAt": "2026-08-01T23:41:51.042Z"
+  },
+  "rawSource": "https://vickypham.com/blog/easy-asian-creamy-cucumber-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

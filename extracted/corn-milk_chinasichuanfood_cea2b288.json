@@ -1,0 +1,74 @@
+{
+  "recipe": {
+    "name": "Corn Milk",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "52",
+      "carbohydrateContent": "8",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Cut the corns off the cob. And place it in a blender. Add water and milk and blend until smooth.",
+      "Strain the liquid if you want a smooth version. Transfer the strained liquid into a small pot, add sugar and simmer to a boiling. The drink becomes thick itself since the corn fluids contains starch.",
+      "Serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Corns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": "optional if you prefer a healthier version",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "113978afacfaef0213b360c8b3bafd5243d664378b325710071ac9323c1f289b",
+    "lineage_hash": "f8f4c20d0e3e2ca1aeb2e1a2fd71d32d0b678356e0dfbbe18c633756fc2fe2b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/corn-milk/",
+    "fetchedAt": "2026-08-02T04:23:37.611Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/corn-milk/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

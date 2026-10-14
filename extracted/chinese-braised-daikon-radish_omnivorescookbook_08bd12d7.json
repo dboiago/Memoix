@@ -1,0 +1,141 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Daikon Radish",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "279",
+      "carbohydrateContent": "8.4",
+      "fatContent": "10.8",
+      "proteinContent": "35.7"
+    },
+    "directions": [
+      "Heat a medium-size dutch oven (or heavy duty pot) over medium heat until hot. Add a tablespoon of oil. Add green onion and ginger. Cook for a minute to release the flavor.",
+      "Add ground meat. Cook and stir until surface turns brown.",
+      "Add the doubanjiang. Cook and stir until the meat is evenly coated.",
+      "Add the radish. Cook and stir to mix well.",
+      "Add Shaoxing wine, chicken stock, soy sauce, sugar, and five spice powder. Cook over medium high heat until brought to a boil. Turn to medium low heat. Simmer for 15 to 20 minutes, or until the radish turns tender. Add salt to taste.",
+      "Serve with steamed rice or by itself."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Meat",
+        "unit": "lb",
+        "notes": "450 grams, beef, pork, chicken, or turkey",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "tsp",
+        "notes": "Spicy Fermented Bean Paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": null,
+        "notes": "about 700 grams / 2 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": "vegetable stock, or water",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine (or Dry Sherry)",
+        "unit": "Tbsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five-spice Powder",
+        "unit": "tsp",
+        "notes": "the homemade version works better",
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "795f83aa522b6109ada9d6f283ed58d8f3b0e079563b7aa20b7c82c2c33d735a",
+    "lineage_hash": "10182cc8c118a707664efc1ac42b9db381e1d1750d9c93ccbf705dee6ac45146"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/braised-daikon/",
+    "fetchedAt": "2026-08-01T19:47:27.079Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/braised-daikon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

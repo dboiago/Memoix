@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Chocolate and Passion Fruit Bavarois",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the chocolate biscuit base, place the biscuits in a bowl and crush with a rolling pin, or alternatively blitz in a food processor for a few seconds until the mixture resembles fine sand. Melt the butter and stir through the crushed biscuits until evenly incorporated",
+      "Place the metal rings on a small tray lined with greaseproof paper. Divide the biscuit mixture into four and press down well into the base of the rings in an even layer. Place the tray in the freezer while you make the passion fruit curd",
+      "For the passion fruit curd, place the gelatine leaf in a bowl of cold water and heat the passion fruit pulp in a small saucepan until bubbling. Meanwhile, whisk together the eggs and caster sugar in a small bowl. Pour the hot passion fruit over the eggs and caster sugar, whisking thoroughly until fully incorporated",
+      "Return the passion fruit mixture to the pan and stir continuously on a low heat for 3–4 minutes until thickened. Squeeze out the gelatine leaf and add it to the hot mixture, stirring until it has completely dissolved. Stir through the cubes of butter and remove from the heat",
+      "Once the passion fruit curd has cooled for 5–10 minutes, remove the ring moulds from the freezer and carefully spoon the curd equally into the four moulds. Return the moulds to the freezer to set",
+      "For the chocolate bavarois, place the gelatine leaf in a bowl of cold water to soak. Heat the milk in a small saucepan until just below boiling, then add the chopped chocolate and stir to dissolve",
+      "Whisk the egg and the sugar together then pour the hot chocolate milk over the mix, whisking continuously. Return the chocolate mixture to the pan and cook on a low heat, stirring constantly for 3–4 minutes until thickened",
+      "Squeeze out the gelatine leaf and stir it through the chocolate custard until fully incorporated. Set aside to cool for 10–15 minutes",
+      "Whisk the double cream to soft peaks then take a tablespoon of it and mix it well into the slightly cooled chocolate custard. Carefully fold the remaining double cream through the chocolate mixture until smoothly incorporated",
+      "Remove the ring moulds from the freezer and carefully pour the chocolate mixture evenly between the four moulds. Return the bavarois to the freezer to chill for 30 minutes, then chill in the fridge until needed",
+      "To unmould the bavarois, very gently and quickly run a blowtorch around the edges of the ring moulds, being careful not to hold the blowtorch on any one spot for more than a second or the chocolate will dissolve. Gently pull the ring moulds off",
+      "To decorate, warm the remaining chocolate in your hands quickly, before peeling long chocolate curls off with a speed peeler directly over the desserts. The desserts will keep for 2 days in the fridge, but will hold their shape best if unmoulded 1 hour before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-chocolate Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit",
+        "unit": "g",
+        "notes": "approx 4 passion fruits, pulp",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cut into small cubes",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": "to decorate",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f497a750758781e2e706e41490ce1007c8fb65761a2388e5f02906058ca72a3a",
+    "lineage_hash": "cbb33a1cbca5d9517e0558323db7cc2586964ee3846c65ceffa4e0afe09e33fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-bavarois-recipe",
+    "fetchedAt": "2026-08-03T14:57:46.789Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-bavarois-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

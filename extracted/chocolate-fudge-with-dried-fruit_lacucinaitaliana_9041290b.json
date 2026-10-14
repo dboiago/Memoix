@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chocolate Fudge with Dried Fruit",
+    "time": "12 hours",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the chocolate into pieces and melt it over a bain-marie. Remove it from the heat when you see that it is almost completely melted, but there are still some whole pieces; they will finish melting away from the heat. Heat the cream with the condensed milk and the honey; pour half over the chocolate and stir, then pour the remaining half and stir again until you obtain a cream. If it needs to be combined even more, you can mix it quickly with an immersion blender.",
+      "Add some salt flakes and pour the mixture into a 7” x 7” square pan (2 inches deep). Sprinkle the top with the dried fruit and walnuts (either whole or cut into pieces) and a few salt flakes. Let it rest for at least 12 hours out of the fridge. Cut the fudge into cubes and wrap them up."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fruit",
+        "unit": "lb",
+        "notes": "dried, walnuts, and mixed seeds",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Acacia Honey Salt Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bc4f12f5387a01c0f91ae1068b891db9d3bce63f58b48f0071d87265ebdb5b6",
+    "lineage_hash": "20b2829a6f2cd4b93a6b8bcc512d6889fca67d9a2469780092af756ea4d99f37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-fudge-with-dried-fruit",
+    "fetchedAt": "2026-08-03T08:10:14.208Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-fudge-with-dried-fruit",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

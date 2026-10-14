@@ -1,0 +1,66 @@
+{
+  "url": "https://www.baking-sense.com/2020/09/17/a-dark-chocolate-pudding-recipe/",
+  "slug": "dark-chocolate-pudding_baking-sense_a1610e89",
+  "title": "Dark Chocolate Pudding",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T03:01:16.424Z",
+  "ldName": "Dark Chocolate Pudding",
+  "ldTime": "PT160M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "chocolate, cocoa powder, custard",
+  "ldIngredientsRaw": [
+    "8 oz whole milk (1 cup, divided)",
+    "1 oz corn starch (¼ cup)",
+    "6  large egg yolks",
+    "¼ teaspoon table salt",
+    "8 oz granulated sugar (1 cup)",
+    "1 oz cocoa powder (¼ cup)",
+    "16 oz heavy cream (2 cups)",
+    "2 tablespoons dark rum (optional)",
+    "1 tablespoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, whisk together ¼ cup of milk with 1 oz&#32;corn starch. Add 6&#32;large egg yolks and ¼ teaspoon&#32;table salt. Set this aside.",
+    "Combine 8 oz&#32;granulated sugar and 1 oz&#32;cocoa powder in a medium sauce pan. Slowly whisk in the remaining ¾ cup of milk until there are no lumps of cocoa.  Whisk in16 oz&#32;heavy cream. Heat over medium-high until scalding.",
+    "As soon as the milk/cocoa mixture is scalding, pour it into the the cornstarch/yolk mixture, vigorously whisking as you pour. Return the entire mixture to the pan.",
+    "Stirring constantly, cook over low heat until the pudding begins to thicken and just starts to simmer.",
+    "Immediately remove from the heat and pour the pudding through a sieve back into the mixing bowl. Whisk in the 2 tablespoons&#32;dark rum and 1 tablespoon&#32;vanilla extract.",
+    "Divide the pudding among 8 serving dishes or one large serving bowl.",
+    "Chill until set."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "397 kcal",
+    "carbohydrateContent": "37 g",
+    "proteinContent": "5 g",
+    "fatContent": "26 g",
+    "saturatedFatContent": "15 g",
+    "cholesterolContent": "213 mg",
+    "sodiumContent": "107 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "32 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz whole milk (1 cup, divided)",
+    "1 oz corn starch (¼ cup)",
+    "6 large egg yolks",
+    "¼ teaspoon table salt",
+    "8 oz granulated sugar (1 cup)",
+    "1 oz cocoa powder (¼ cup)",
+    "16 oz heavy cream (2 cups)",
+    "2 tablespoons dark rum (optional)",
+    "1 tablespoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

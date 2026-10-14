@@ -1,0 +1,352 @@
+{
+  "recipe": {
+    "name": "Christmas cookies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Beat margarine, egg, egg yolk, 1/2 cup sugar, and vanilla. Add flour, and when a dough is formed, cover and refrigerate for 1 hour. Preheat the oven to 360ºF.",
+      "In a small bowl combine raisins, pecans, 1/2 cup sugar, honey, Rum, lime juice, and candied orange peel. Roll the dough and form two rectangles. Spread the fruit mixture in one rectangle, leaving 1/2 inch space in the borders. Cover with the remaining dough and press the borders to seal. Pinch with a fork.",
+      "Bake for 25 minutes.",
+      "In the meantime, make the glace combining confectioners´sugar and Rum. Drizzle over the pastry while hot. Cut in stripes when cool.",
+      "Note: These are very fragile.",
+      "In a saucepan heat the honey with sugar, margarine, cinnamon, cloves, ginger, and salt. Cool.",
+      "When cool add the flour, egg and baking soda dissolved in the milk, and knead lightly. Cover and refrigerate overnight.",
+      "The next day preheat the oven to 350ºF. Roll the dough using a rolling pin, cut with cookie cutters, and bake in greased baking trays or over Silpat, about 25 minutes.",
+      "With a wire whisk, beat the egg white and add confectioners´sugar, little by little. If you want to color the glace, add a few drops of vegetable coloring.",
+      "Pour the glacé in a piping bag and decorate the cookies to your liking. Add sprinkles.",
+      "Note: Bake these cookies up to a month in advance and store in tightly sealed cans. When recently baked, these cookies are hard but after a few days they are at their best, tender, fragrant and tasty.",
+      "Beat butter and confectioners´sugar, egg, and vanilla until creamy. Add flour by hand, keading lightly, cover, and refrigerate for 1 hour.",
+      "Beat egg whites until firm, adding 4 tablespoons sugar, one by one, and continue beating for 2 minutes. Add the ground almonds and lemon zest. Preheat the oven to 350ºF.",
+      "Using a rolling pin, roll the dough until 1/4 inch or less, cut flowers with a cookie cutter, and put in a greased baking sheet. Place 1/2 candied cherry on top of each cookie and some of the almond mixture. Bake for 25 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Margarine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pastry Flour",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Pecans",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Juice From Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Peel",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "RUMSTREIFEN",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners´sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Glace",
+        "isOptional": false
+      },
+      {
+        "name": "Rum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Glace",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Margarine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3½",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "1",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Pastry Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "LIBKUCHEN",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White Confectioners´sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "Glace",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners´sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": "Glace",
+        "isOptional": false
+      },
+      {
+        "name": "Sprinkles",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Glace",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "1",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioners´sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Pastry Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cherries",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "½",
+        "section": "CHRISTBLUMEN",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4089f673a3e54ae883fd2f958e1decec343096ea28f84b07a4e3958f747db9ac",
+    "lineage_hash": "fd4ad8cf46aa331b8bb35d3f3d262e84ebb1815bf59112804dfcf6f9fdf0c14c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/christmas-cookies-from-germany-with-love/",
+    "fetchedAt": "2026-09-26T00:04:45.160Z"
+  },
+  "rawSource": "https://perudelights.com/christmas-cookies-from-germany-with-love/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

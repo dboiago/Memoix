@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "American Tiki",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Tiki Mug",
+    "garnish": [
+      "Cloves",
+      "Orange Bitters"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a tall glass mug or tiki mug.",
+      "Add crushed ice and mix with a swizzle stick or spoon to combine.",
+      "Top with more crushed ice to fill the glass.",
+      "Garnish with cloves and a few dashes of orange bitters."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": "preferably Prichard's Crystal Rum",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Blackstrap Rum",
+        "unit": "oz",
+        "notes": "preferably Thomas Tew Widows Walk Overproof Blackstrap Rum",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3a564c0e606a3397a612e3d78bc8b056e515e88b8ed30d89b14803c783178a9",
+    "lineage_hash": "57f50c061c9bcd891e9e405be5c43ca5a224efcd19abdbb5dde92cd09e34957c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/american-tiki/",
+    "fetchedAt": "2026-08-02T22:32:31.469Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/american-tiki/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Chettinad Idlis (चेट्टीनाड इडली)",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a pan, add chopped onions and sautÃ© for 2-3 minutes.",
+      "Add all the rest of the blanched vegetables and mix well.",
+      "Add spices, chettinad powder and salt and cook for 10 minutes until the tomatoes are fully cooked.",
+      "Balance the consistency by adding water. Cook the mixture thoroughly.",
+      "Now take the idli steamer. In the mould pour in half ladle of the batter. Add 1 spoon of the vegetable chettinad mixture and then pour the other half ladle of the idli batter on top.",
+      "Steam the idlis for 8-10 minutes until well cooked.",
+      "Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Idli Batter",
+        "unit": "kg",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "blanched and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beans",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "blanched",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Chettinad Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4536d68baab4e77c654617b53ee7a0b648fa8b02af4f718263fb5afbc8a24b39",
+    "lineage_hash": "fa02e6a4b4aeab9b582cfcd29d869960fb7ed6b2dbda1674b216f7899e1d3692"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chettinad-idlis/",
+    "fetchedAt": "2026-08-02T18:11:34.791Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chettinad-idlis/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

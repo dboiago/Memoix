@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2025/10/08/chocolate-cupcakes/",
+  "slug": "chocolate-cupcakes_baking-sense_635b257d",
+  "title": "Chocolate Cupcakes",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:41:34.820Z",
+  "ldName": "Chocolate Cupcakes",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT25M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "12",
+    "12 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "buttermilk, cocoa powder",
+  "ldIngredientsRaw": [
+    "1 ounce Dutch process cocoa powder (¼ cup)",
+    "¼ teaspoon baking soda",
+    "2 ounces boiling water (¼ cup, see note)",
+    "4 ½ ounces cake flour (1 cups, see note)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon table salt",
+    "4 ounces vegetable oil (½ cup)",
+    "2  large eggs",
+    "4 ounces buttermilk (½ cup)",
+    "2 teaspoons vanilla extract",
+    "8 ounces granulated sugar (1 cups)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 °F. Line a 12 muffin pan with cupcake liners.",
+    "Sift together 1 ounce&#32;Dutch process cocoa powder and ¼ teaspoon&#32;baking soda in a small heat-proof bowl. Whisk 2 ounces&#32;boiling water into the cocoa, it will foam up a bit from the baking soda. Set aside to cool while preparing the other ingredients.",
+    "Sift 4 ½ ounces&#32;cake flour with ½ teaspoon&#32;baking powder and ¼ teaspoon&#32;table salt, set aside.",
+    "Combine 4 ounces&#32;vegetable oil, 2&#32;large eggs, 4 ounces&#32;buttermilk, 2 teaspoons&#32;vanilla extract and 8 ounces&#32;granulated sugar in a mixer bowl. Mix on medium speed to combine the ingredients, continue mixing for 2-3 minutes to emulsify the ingredients.",
+    "With the mixer running on low, add the flour and then add the cocoa mixture. Mix until completely incorporated.",
+    "Use a scoop to portion the batter evenly between the cupcakes. Bake until the top springs back on a cupcake in the middle of the pan when lightly pressed, about 10 minutes.",
+    "Cool completely before icing. Sprinkle with jimmies for a burst of color."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "12 g",
+    "calories": "218 kcal",
+    "carbohydrateContent": "29 g",
+    "proteinContent": "3 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "2 g",
+    "transFatContent": "0.1 g",
+    "cholesterolContent": "28 mg",
+    "sodiumContent": "110 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "20 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "1 ounce Dutch process cocoa powder (¼ cup)",
+    "¼ teaspoon baking soda",
+    "2 ounces boiling water (¼ cup, see note)",
+    "4 ½ ounces cake flour (1 cups, see note)",
+    "½ teaspoon baking powder",
+    "¼ teaspoon table salt",
+    "4 ounces vegetable oil (½ cup)",
+    "2 large eggs",
+    "4 ounces buttermilk (½ cup)",
+    "2 teaspoons vanilla extract",
+    "8 ounces granulated sugar (1 cups)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Creole Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chill a mixing glass and coupe in the freezer before assembling the cocktail. When ice cold, add the rye and Bénédictine to the mixing glass and stir without ice. Add the vermouth, Picon and cold water, then stir more to incorporate. Strain into the prepared coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": "Estopinal uses Sazerac 6 year",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amer Picon",
+        "unit": "oz",
+        "notes": "such as Golden Moon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "oz",
+        "notes": "very cold",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6e0f2e38290307f120c1feaea61b7742ddbe776945ac7d49132680292dcec52e",
+    "lineage_hash": "bae508720cde34a529d18cf5328a0d189dd4abab608b15bb2254fa5c2ea8d0cd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/creole-cocktail/",
+    "fetchedAt": "2026-08-03T17:59:15.845Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/creole-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

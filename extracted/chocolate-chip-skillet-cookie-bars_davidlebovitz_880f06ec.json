@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Skillet Cookie Bars",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325ºF (160ºC). Butter a 10-inch cast-iron skillet.",
+      "Pour very hot water over the cranberries, enough to cover them, and set them aside to plump.",
+      "In the bowl of a stand mixer fitted with the paddle attachment, cream the butter on medium speed with the granulated and brown sugar, and salt, for 3 minutes, scraping down the side of the bowl as necessary. In a separate bowl, whisk together the flour and baking soda.",
+      "Add the egg to the butter mixture and continue to mix. Add the yolk and keep mixing, stopping the mixer to scrape down the sides to make sure the eggs are incorporated. Mix in the vanilla extract.",
+      "Drain the cranberries, squeeze them dry and blot away up any excess moisture with a paper towel.",
+      "On low speed, or by hand, mix in the flour mixture until it's mostly incorporated. Stir in the coconut, chopped chocolate and dried cranberries until completely combined. Scrape the cookie batter into the prepared pan and even it out. (Using a clean, damp hand is the best tool for doing this.)",
+      "Bake the skillet cookie for about 45 to 50 minutes, until they are golden brown across the top and the center feels just-slightly set. (The original instructions said to bake them for about an hour, so they may take that amount of time. The variance likely depends on the thickness and material of the pan.)",
+      "Remove from the oven and run a knife around the edge of the cookie, then let cool completely before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "90g, dried",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "6 ounces, 170g, cubed, at room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "plus 2 tablespoons (120g) granulated sugar",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "90g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened",
+        "unit": "C",
+        "notes": "alt: unsweetened coconut, 170g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "C",
+        "notes": "10 ounces, 285g, or chocolate chips, coarsely, chopped",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e238c5815b83cea7fc1860e1031f943b568414be824985de48c8fbd4d3797a48",
+    "lineage_hash": "c2b014fd85569eaf3311801355bb9c1f9f204634f07bd861e739af5ea5935dba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/chocolate-chip-skillet-cookie-bars-recipe/",
+    "fetchedAt": "2026-08-02T22:24:37.813Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/chocolate-chip-skillet-cookie-bars-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

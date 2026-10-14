@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Chocolate Marble Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 165°C (330°F); you can use the preheating oven to melt the butter, as described here. Use a little of the melted butter to grease a loaf pan.",
+      "Melt the chocolate in a double boiler or in the microwave, and set aside. Combine the flour with the baking powder and set aside.",
+      "Prepare the two batters side by side: in the first mixing bowl, beat 2 of the eggs with half of the sugar. Add in half the yogurt and whisk to combine. In a second mixing bowl, beat the 2 remaining eggs with the rest of the sugar, and whisk in the rest of the yogurt.",
+      "Fold half of the flour mixture into the first batter, then incorporate half of the melted butter and the vanilla, without overmixing. Fold the remaining flour mixture into the second batter, then add the rest of the butter and the melted chocolate.",
+      "In the prepared pan, pour a third of the vanilla batter. Add in half of the chocolate batter, and sprinkle with half the cacao nibs if using. Add another third of the vanilla batter, then the rest of the chocolate batter. Sprinkle with the remaining cacao nibs, and top with the remaining vanilla batter.",
+      "Bake for 45 to 50 minutes, until a cake tester comes out clean.",
+      "While the cake bakes, place the syrup ingredients in a small pan over medium-high heat. Bring to a simmer, then remove from heat and set aside.",
+      "When the cake is baked, use a pastry brush to soak it with the syrup, until you've used it all up. Let rest for 30 minutes, then unmold and let cool on a rack. Serve slightly warm or at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bittersweet Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "I use a blond unrefined cane sugar",
+        "amount": "220",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "ml",
+        "notes": "alt: buttermilk",
+        "amount": "120",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted and cooled; I use semi-salted, add a good pinch of salt if you use unsalted",
+        "amount": "120",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": "possibly homemade",
+        "amount": "1",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "For the cake",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": "For the syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Liqueur",
+        "unit": "Tbsp",
+        "notes": "or liqueur/brandy of your choice; optional",
+        "amount": "1",
+        "section": "For the syrup",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": "For the syrup",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bcaea4c570358e417f77ea526517d1b4d6a23bf4c5d1cc68aa4dd9b4b662bb5",
+    "lineage_hash": "64aff7d292d72e1c0c87657ca3163ff71a07ccc29bf8bef75c75f54cf9c08ae4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cakes-tarts/chocolate-marble-cake-recipe/",
+    "fetchedAt": "2026-09-30T19:02:57.858Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cakes-tarts/chocolate-marble-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

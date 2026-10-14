@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Corn Cheese Pasta (स्वीट कॉर्न पास्ता)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Fresh Oregano Sprigs"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pot add water, salt and bring it to a boil, then add pasta and boil it according to the time written on the packet.",
+      "Remove and strain all the water and apply some oil on the pasta and keep aside for further use.",
+      "In a pan add milk, cloves, black pepper cons and bring it to a boil.",
+      "In another pan add butter, refined flour and cook it on low heat until fragrant.",
+      "Now strain the milk in the flour mixture and mix it properly without forming lumps.",
+      "Then continue cooking until cooked or semi thick.",
+      "Switch off the flames and strain it again in a bowl and add some butter on it and keep aside for further use.",
+      "In a pan heat olive oil then add onion, garlic, green chilli and saute for translucent.",
+      "Now add corn sautÃ© for a minute and add some water, salt, prepared white sauce, boiled pasta and mix everything properly and cook for 2 minutes on medium heat.",
+      "Then add grated cheese, oregano, black pepper powder, mix and serve hot in a plate and garnish with oregano."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For White Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ltr Water",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Pasta",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Boiling Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared White Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Pasta",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Cube Cheese",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Other Ingredients For Corn Cheese Pasta",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b6344aa5892e0bced7853f4aeb7c45a8275ed328364f123a758f4b36aa1ac3d",
+    "lineage_hash": "d457cd3362fb7d197e61e45453f7bc8c09b47d33f5f4c4fa1e3a5718d60eaefc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/corn-cheese-pasta/",
+    "fetchedAt": "2026-08-02T12:49:11.394Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/corn-cheese-pasta/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Coconut Cream Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sift together the plain flour, baking powder, bicarbonate of soda and salt in a bowl and keep aside. Separate about 2 tbsp of sugar from the lot and keep aside. If you are making your own buttermilk, add 1/2 tbsp vinegar to a bowl and pour in 1/2 a cup of milk. Let it stand for about 5, after which you can stir and use as required in the recipe",
+      "Line three 6 inch cake pans with baking paper. Cream together the butter and sugar in the bowl of an electric mixer using the paddle attachment, till light and fluffy, about 3 to 4 minutes. If you don’t have an electric mixer, then a sturdy spatula would do. You may have to work it a bit longer though",
+      "Add the egg yolks, one at a time, beating well after each addition. Tip in the vanilla extract. Mix together the buttermilk and coconut milk in a measuring cup and keep ready. Turn down the mixer speed to lowest and add the flour and buttermilk mix one after the other, starting and ending with the flour",
+      "Into a clean bowl pour in the egg whites and whisk them (with the whisk attachment) until nice and frothy. Add the 2 tbsp of sugar you had kept aside to the egg whites and continue whisking till they turn glossy and stiff peaks begin to form. Make sure you don’t over do it, or else the meringue would become dry. Gently fold the egg whites into the flour mix, making sure you you don’t deflate the egg whites. Continue to fold them into the batter till no traces of egg white is visible",
+      "Pour the batter into prepared pans and bake in the centre rack of the preheated oven for about 20 to 25 minutes or till a skewer inserted into the centre of the cakes come out clean. Transfer the cakes to a cooling rack and after about 10 minutes remove from container and leave aside to cool completely",
+      "When ready to frost, tip in the double cream, icing sugar and coconut powder into a clean bowl. Whisk the mix using a wire whisk or a whisk attachment till soft peaks form. Add vanilla extract and continue to whisk till stiff peaks form. If you over do the whisking, the cream can split and there is no way to rectify this. So be very careful",
+      "To assemble, mix together the desiccated coconut and icing sugar. Place the first cake on a serving plate and spread about 3 to 4 tbsp of frosting over it, using a spatula. It need not be perfectly spread out, but make sure you try and get them right to the sides. Sprinkle some of the desiccated coconut over the cream and top with the next cake, followed by frosting. Be generous with the frosting on top of the final cake. Even it out as much as possible, sprinkle desiccated coconut and garnish with a few berries",
+      "Please note: The cake needs to be stored in the refrigerator. The cakes can be made a day or 2 ahead and stored in the refrigerator. Cling wrap them once they have completely cooled and store. You may also want to moisten the cakes if making them ahead. You could soak the cake with some coconut rum, or a simple syrup of equal parts of sugar and water will do the trick as well"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "at room temperature",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "seperated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "cold",
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "ml",
+        "notes": "or replace with 1/4 cup coconut milk powder",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "904935cfd18cbc9c5fc1d6a90de7721f6f3add864a048e32e18c48f5e4f7e3b8",
+    "lineage_hash": "1f369c2d77a5b66df44ac393d7d7d393c3d61f9d71e05e4c07a571cba383a060"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-cream-cake-recipe",
+    "fetchedAt": "2026-08-03T23:53:36.295Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-cream-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

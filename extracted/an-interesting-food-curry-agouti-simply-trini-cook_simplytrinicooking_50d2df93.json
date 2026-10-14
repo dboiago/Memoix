@@ -1,0 +1,210 @@
+{
+  "recipe": {
+    "name": "Curry Agouti",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash the agouti meat with the lemon and drain the excess water. Add the curry",
+      "Blend the other ingredients: salt, portugal skin, onion, garlic, bay leaf, thyme, chive, chadon beni, pimento pepper. Add the green seasoning, clove powder and grated ginger. Mix it up and marinate for at least an hour.",
+      "Time to cook the ‘gouti. Sauté the garlic and add the geera and curry powder.",
+      "The curry looks good now. Add the agouti meat. Let the meat simmer in its own juices for about 3 minutes. Stir occasionally.",
+      "Add some water: about 1/2 cup. Add the coconut milk. Cover the pot and allow to simmer. After about 10 minutes or so check the water level and adjust to suit.",
+      "To speed up cooking time we’re going to add a cup of chopped green paw paw. This will help tenderize the agouti meat.",
+      "Continue cooking until tender.",
+      "Adjust salt and pepper to taste. Serve with roti or bake etc."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Agouti Meat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clove Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Geera",
+        "unit": "tsp",
+        "notes": "powder",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bayleaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Peppers",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blades Fever Grass",
+        "unit": null,
+        "notes": "lemon grass",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bundles Chive",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Portugal Skin",
+        "unit": "pc",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leaves Chadon Beni",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Geera Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped finely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Paw Paw",
+        "unit": "C",
+        "notes": "papaya, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6ada57429e2ea8e860b8e6de75bcc4046620fd8349335ff14a76b0aec4f1fd8",
+    "lineage_hash": "f5bdd1f56d22e7e3ba7411fba4043543eb8a22131c2ec6dfe66d65ba351c64ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/curry-agouti/",
+    "fetchedAt": "2026-09-26T01:25:43.040Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/curry-agouti/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

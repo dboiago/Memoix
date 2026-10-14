@@ -1,0 +1,261 @@
+{
+  "recipe": {
+    "name": "Confit Pork Belly",
+    "time": "7 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the pork belly into a suitable tray and pour over the salt. Rub evenly over the entire surface, cover with cling film and place in the fridge for 24 hours",
+      "Preheat the oven to 130°C/gas mark 1. Wash the salt off the pork belly and place in a deep metal tray",
+      "Add the carrots, onion, garlic and coriander seeds to the tray and pour in enough water to just cover. Cover tightly with foil and cook in the oven for approximately 7 hours. Remove and allow to cool in the liquid once cooked",
+      "Once cool, use a knife to carefully remove the skin from the belly. Scrape away all the fat from the underside of the skin. Cut the skin  into 2 inch squares and place between 2 sheets of greaseproof paper",
+      "Place onto an oven tray and press down with a tray of the same size. Return to the oven set to 125°C/gas mark 1 and cook for 6 hours until dark golden and crisp. Remove from the oven and allow the crackling squares to cool",
+      "Cut 2 more large pieces of greaseproof paper and place the belly between them. Use a rolling pin to gently and evenly flatten the belly to 1cm thick",
+      "Shape and roll the black pudding into a 1inch thick log (this may be easier if the black pudding has had time to soften slightly at room temperature). Place the black pudding at one edge of the pork belly and roll up tightly in cling film. Leave to set in the fridge",
+      "Remove any undesirable outer leaves from the red cabbage. Slice in half, wash thoroughly and slice finely",
+      "Add a generous amount of olive oil to a large saucepan placed over a medium heat. Add the red cabbage and slowly sweat until soft. Once soft, add the sugar, red wine, vinegar, star anise, and cinnamon stick",
+      "Reduce the heat and cook slowly for about 1 hour until the liquid is reduced and the cabbage is cooked and evenly coated by the juices in the pan",
+      "Remove one third of the cabbage, place into a blender and blitz on a high speed to form a smooth purée. Pass through a fine strainer and into a small pot to reheat later",
+      "Place the potatoes in a pot and cover with water. Add a pinch of salt. Bring to the boil, then reduce the heat and simmer for 15 minutes, or until cooked and tender",
+      "Once cooked, drain the potatoes and allow to steam for a few minutes. Heat the butter and milk in a small saucepan until the butter melts. Add the potatoes back to the pot, followed by the hot milk and butter mixture and mash throughly. Season to taste with salt and pepper, cover and set aside in a warm place",
+      "Add a small drizzle of vegetable oil to a saucepan placed over a medium-high heat. Once hot, add the carrot, onion and celery and sweat until soft. Add the cider vinegar and reduce until the pan is almost dry",
+      "Add the cider and reduce by half. Then, add the beef stock. Bring to a simmer, add the thyme and reduce for a further 20-30 minutes until you have a thin gravy-like consistency. Pass through a fine strainer, season to taste with salt and set aside",
+      "Preheat the oven to 180˚C/gas mark 4. Once the pork belly is set, remove from the cling film and cut into 8 even round portions. Heat a small drizzle of vegetable oil in large frying pan and place on a high heat",
+      "Sear each piece of belly in the pan (black pudding side down) until crispy and then transfer into the oven to heat through for 12 minutes",
+      "Meanwhile, reheat the cabbage, cabbage purée and mash potato",
+      "Add a spoonful of purée to each plate and top with a bed of cabbage. Add two rounds of the pork belly per portion and finish with a large spoonful of mash potato, a couple of crackling squares and a drizzle of the cider jus. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "large dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "cut in half",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Floury Potatoes",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1cda316d0326f266e7eb784450157a381908b1f6f16f3775a7ecac590138db88",
+    "lineage_hash": "21ad288a5f5f66477a1d45a835516b31d2b697db337677b2850dfa6ac4ba61ad"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-pork-belly-recipe",
+    "fetchedAt": "2026-08-03T19:34:07.749Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-pork-belly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/creme-caramel",
+  "slug": "cr-me-caramel_lacucinaitaliana_66892058",
+  "title": "Crème caramel",
+  "byline": "by  Editorial staff   April 29, 2020",
+  "fetchedAt": "2026-08-03T05:56:44.924Z",
+  "ldName": "Crème caramel",
+  "ldTime": "PT45M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Creme,Crème Caramel,Dolce,Dolci,Dolci Al Cucchiaio",
+  "ldIngredientsRaw": [
+    "2C. milk",
+    "3/4C. cream",
+    "1C. sugar",
+    "Lemon zest",
+    "1 tsp. vanilla extract",
+    "4 eggs",
+    "2 egg yolks"
+  ],
+  "ldInstructionsRaw": [
+    "<p>In a saucepan, bring to a boil 2 cups milk with 3/4 cup cream and 1/4 cup sugar, the lemon zest and vanilla.</p>",
+    "<p>Drizzle in 4 whole eggs and 2 egg yolks beaten together with 1/4 cup sugar, mix together and allow to cool. Melt a scant 1/2 cup sugar with 2 tablespoons water until it begins to turn darker; pour it into 8 ramekins, then pour in the cooled cream mixture.</p>",
+    "<p>Place the ramekins in a cake pan and fill it with hot water to half the height of the ramekins. Bake at 250°F for 45 minutes, then turn off the oven and leave it in the oven for another 10 minutes.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 C. of milk",
+    "3/4 C. of cream",
+    "1 C. of sugar",
+    "Lemon zest",
+    "1 tsp. vanilla extract",
+    "4 eggs",
+    "2 egg yolks"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

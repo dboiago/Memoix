@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Brazilian Coffee Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "BR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "225",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a TODDY GLASS.",
+      "Prepare garnish of coffee beans.",
+      "BLEND ingredients with 6oz scoop of crushed ice.",
+      "Pour into glass.",
+      "Serve with straws."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça",
+        "unit": "ml",
+        "notes": "unaged",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Coffee",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20d2da7130915f7887badacda8c17d952915e6a6086aa55d3ee6236342e6f324",
+    "lineage_hash": "fe0684d52288bec3935d6383ef6d3b3e5b0e7fe847a2db2c9d4343efa4fee20b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/319/brazilian-coffee",
+    "fetchedAt": "2026-08-02T01:36:04.681Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/319/brazilian-coffee",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

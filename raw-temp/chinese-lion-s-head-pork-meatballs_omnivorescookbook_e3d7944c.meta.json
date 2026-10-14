@@ -1,0 +1,71 @@
+{
+  "url": "https://omnivorescookbook.com/lions-head-pork-meatballs/",
+  "slug": "chinese-lion-s-head-pork-meatballs_omnivorescookbook_e3d7944c",
+  "title": "Chinese Lion’s Head Pork Meatballs",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T04:47:33.290Z",
+  "ldName": "Lion’s Head Meatballs (狮子头, Shi Zi Tou)",
+  "ldTime": "PT90M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb  ground pork",
+    "4 tablespoons Shaoxing wine ((or dry sherry))",
+    "3 tablespoons light soy sauce ((or soy sauce))",
+    "1 teaspoon dark soy sauce",
+    "1 1/4 teaspoons salt ((*Footnote 1))",
+    "2 teaspoons sugar",
+    "2 teaspoons grated ginger",
+    "4  green onions (, minced)",
+    "1 tablespoon cornstarch",
+    "12  water chestnuts (one 8-oz / 227-g can) (, finely chopped)",
+    "3  eggs",
+    "1 cup panko ((Japanese breadcrumbs))",
+    "2 tablespoons sesame oil",
+    "1 tablespoon peanut oil ((or vegetable oil))"
+  ],
+  "ldInstructionsRaw": [
+    "Prepare the meatballs",
+    "Cook the meatballs",
+    "Storage and reheat"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "285 kcal",
+    "carbohydrateContent": "19.2 g",
+    "proteinContent": "24.2 g",
+    "fatContent": "12.2 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "137 mg",
+    "sodiumContent": "922 mg",
+    "fiberContent": "0.5 g",
+    "sugarContent": "4.6 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb  ground pork",
+    "4 tablespoons Shaoxing wine (or dry sherry)",
+    "3 tablespoons light soy sauce (or soy sauce)",
+    "1 teaspoon dark soy sauce",
+    "1 1/4 teaspoons salt (*Footnote 1)",
+    "2 teaspoons sugar",
+    "2 teaspoons grated ginger",
+    "4 green onions , minced",
+    "1 tablespoon cornstarch",
+    "12 water chestnuts (one 8-oz / 227-g can) , finely chopped",
+    "3 eggs",
+    "1 cup panko (Japanese breadcrumbs)",
+    "2 tablespoons sesame oil",
+    "1 tablespoon peanut oil (or vegetable oil)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

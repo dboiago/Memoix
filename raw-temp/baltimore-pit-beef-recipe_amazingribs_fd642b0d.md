@@ -1,0 +1,5 @@
+Before you can post a comment or question you must sign into our commenting partner, Disqus. This helps make sure everyone hanging around the grill is civil. We do not tolerate nastiness, racism, porn, inappropriate language, or attacks on others. All comments are the property of AmazingRibs.com and we reserve the right to quote them, edit them, delete them, and block people from making future comments.
+
+Please leave comments and questions on the same page that is devoted to that subject so others can see questions and our answers when they are reading about the subject. You must enable JavaScript to use the comments section, and you must accept cookies to post comments. Note: the software that runs Disqus is different from the Pitmaster Club, so members need to sign into the Pitmaster Club separately.
+
+Click to comment or ask a question...

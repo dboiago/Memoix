@@ -1,0 +1,195 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding Soufflé",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the brandy anglaise for the soufflé. Combine the milk, cream and vanilla in a pan and bring to the boil. Meanwhile, whisk together the eggs and sugar in a separate bowl until thoroughly combined. Remove the vanilla pod",
+      "Pour the hot liquid over the egg mix, whisking well to combine, then return to the pan and cook to 85°C. Place in a bowl to cool, then remove 80g and whisk in the brandy. Return the mixture to the anglaise and whisk through to combine",
+      "Place the Christmas pudding and 40g of the anglaise in a blender and blend until smooth",
+      "To make the cranberry sorbet, place the sugar in a pan and bring to a light caramel. Add the cranberries, cook for 3 minutes then add the water and bring to the boil. Cook for 3 minutes",
+      "Add the lemon juice, citric acid, a pinch of salt and the gelatine and transfer to a blender. Blitz until smooth, pass through a fine strainer and leave to chill. Once cool, churn in an ice cream maker",
+      "Butter the ramekins with a pastry brush using smooth upstrokes. Mix the sugar with dehydrated cranberry powder and dust the buttered ramekins with sugar, knocking them to discard any loose sugar",
+      "To finish the soufflé, place the egg whites in a mixer with a whisk attachment and whisk on full speed, gradually adding the sugar until firm. Remove a small amount and combine with pre-made Christmas pudding soufflé base using a rubber spatula. Slowly fold into the rest of the egg white",
+      "Pipe into ramekins, smooth off the top and place in the oven for 6–9 minutes until risen. Gently warm the brandy anglaise on the hob",
+      "Serve the soufflés immediately with a scoop of the cranberry sorbet and the anglaise on the side"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split with seeds scraped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Christmas Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened for greasing",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberry Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea88a79c6ac9cbcaf603b1b3a71ea6ae2ba47983eb5c856fa4d48917c4661192",
+    "lineage_hash": "ad31b6e1f023a742d4e6b3268a57f1a39a1e9bf1e29a2f46f1446d58c9b497c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-souffle-recipe",
+    "fetchedAt": "2026-08-03T13:46:52.798Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-souffle-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

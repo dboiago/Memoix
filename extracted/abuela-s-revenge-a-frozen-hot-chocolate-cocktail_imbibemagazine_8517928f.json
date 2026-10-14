@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Abuela's Revenge: A Frozen Hot Chocolate Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Grated Cinnamon",
+      "Dehydrated Orange Slice"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the Abuelita hot chocolate according to the directions on the package, then chill completely. Shake all of the ingredients with ice, then strain into a Collins glass filled with crushed ice. Top with sweet cold foam and garnish with grated cinnamon and a dehydrated orange slice.",
+      "Sweet Cold FoamCombine 1/4 cup of 2 percent milk, 1/4 tsp. of vanilla extract, and 1 Tbsp. of powdered sugar in a mixing glass. Froth with a handheld milk frother for about 30-45 seconds, until it reaches the desired fluffy texture. (Prepared sweet cream cold foam can also often be found in the grocery store near the whipping cream.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Abuelita Hot Chocolate",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Chile Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spicy Bitters",
+        "unit": "dashes",
+        "notes": "Broken Shaker uses Scrappy's Fire Tincture",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "2 percent",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11008743127cec69cd33e8522850487f3c78b2cf1a5954f2068e6481b43ade6e",
+    "lineage_hash": "04bb22836fe878cfedda814777323e528d326621442a3f9bd470f7a0205adb21"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/abuelas-revenge-frozen-hot-chocolate-cocktail/",
+    "fetchedAt": "2026-08-04T00:25:48.808Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/abuelas-revenge-frozen-hot-chocolate-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Caipi Lychee Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice and shake. Pour into the glass over crushed ice. Garnish.",
+      "Lychee CordialAdd the contents of one 20 oz. can of Chaokoh lychee in syrup and 5 raspberries to a blender and blend on low speed. Strain the blended contents. Mix the liquid part with 2/3 cup of sugar and stir until the sugar dissolves.\nRectified Lime JuiceClean 2 whole limes in a baking soda and apple vinegar water solution. Cut each lime into 8 pieces. Weigh out 2 oz. of lime pieces on the scale. Combine 20 oz. of fresh lime juice and the lime pieces in the blender and blend on high speed for about 30 seconds. Strain using a fine strainer. Let the juice rest for at least one hour in the refrigerator before use. The cordial will keep in the refrigerator for up to three weeks.",
+      "“We started rectifying lime juice to avoid the labor-intensive and inconsistent process of muddling limes in high-volume bars. Muddling limes can be challenging because each lime varies in size, and bartenders apply different amounts of force. By rectifying lime juice, we can precisely control the levels of acidity and flavor intensity,” says Jankovic."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cachaça Prata",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "oz",
+        "notes": "Junmai",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lychee Cordial",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rectified Lime Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italicus",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "36b8ebc4949c0d5c721af9f0fd3e4e69f1deeb53a3805ade4e52fa03760ffdbc",
+    "lineage_hash": "15fe468a5d714374c4b5e66d0f186aa0f427cd6852745b92896fd3e283a0b5df"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/caipi-lychee-cocktail/",
+    "fetchedAt": "2026-08-03T23:54:18.968Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/caipi-lychee-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

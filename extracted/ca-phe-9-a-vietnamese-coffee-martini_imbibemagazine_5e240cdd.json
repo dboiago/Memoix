@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Ca Phe 9: A Vietnamese Coffee Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Martini",
+    "garnish": [
+      "Cocoa Powder",
+      "Lemon Peel",
+      "Coffee Candy"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with a large ice cube and shake hard. Strain into a chilled glass. Dust the drink with cocoa powder, then express a lemon peel over the top and discard. Clip a piece of coffee candy to the rim.\nNoteJaruthiphayakhantha uses coffee blends of Robusta and Arabica beans from Vietnam’s Buôn Ma Thuột Province."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Japanese Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cacao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ruby Port",
+        "unit": "oz",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vietnamese Coffee",
+        "unit": "oz",
+        "notes": "see Note",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "35a253ca63a88b96841f02ca7f1bfbd73d783a040267acc997994e947b5d888d",
+    "lineage_hash": "fc1085b2b4f19ae62ecd433c79d2eafc1ad990c4d314cfd83d33f8696a061348"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ca-phe-9-vietnamese-coffee-martini/",
+    "fetchedAt": "2026-08-04T01:01:37.706Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ca-phe-9-vietnamese-coffee-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

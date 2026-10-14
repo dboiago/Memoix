@@ -1,0 +1,58 @@
+{
+  "url": "https://dailycookingquest.com/chicken-floss.html",
+  "slug": "chicken-floss_dailycookingquest_2b3a5adb",
+  "title": "Chicken Floss",
+  "byline": "",
+  "fetchedAt": "2026-08-02T04:26:45.656Z",
+  "ldName": "Chicken Floss",
+  "ldTime": "PT2H0M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT1H45M",
+  "ldYield": [
+    "8",
+    "2 cups"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side Dish",
+  "ldKeywords": [
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "a pair boneless skinless chicken breast, about 650-700 gram",
+    "3 scallions, knotted",
+    "1 inch ginger, cut into thin slices",
+    "2 tablespoon soy sauce",
+    "2 tablespoon Shaoxing wine",
+    "4 cups water",
+    "3 tablespoon soy sauce",
+    "2 tablespoon fish sauce",
+    "1/2 tablespoon oyster sauce",
+    "4 tablespoon sugar",
+    "1/2 tablespoon brown sugar",
+    "1/2 teaspoon ground white pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Place chicken breast, scallions, ginger, soy sauce, Shaoxing wine, and water in a pot. Bring to a boil. Reduce to a simmer, cover the pot, and cook for 30 minutes. Turn off heat, remove the chicken from the pot and set aside to cool.",
+    "Once the chicken is cool enough to handle, tear the meat into thin shreds. I use my hands, but you can use two forks.",
+    "In a mixing bowl, mix the shredded chicken meat with soy sauce, fish sauce, oyster sauce, sugar, brown sugar, and ground white pepper.",
+    "Heat 3 tablespoon oil in a wok/frying pan on medium heat. Add the chicken into the pan. Stir until dry, about 10-15 minutes. Then turn the heat to low, keep stirring and tossing until fully dry and even slightly toasty, about 45 minutes."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "a pair boneless skinless chicken breast, about 650-700 gram",
+    "3 scallions, knotted",
+    "1 inch ginger, cut into thin slices",
+    "2 tablespoon soy sauce",
+    "2 tablespoon Shaoxing wine",
+    "4 cups water",
+    "3 tablespoon soy sauce",
+    "2 tablespoon fish sauce",
+    "1/2 tablespoon oyster sauce",
+    "4 tablespoon sugar",
+    "1/2 tablespoon brown sugar",
+    "1/2 teaspoon ground white pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

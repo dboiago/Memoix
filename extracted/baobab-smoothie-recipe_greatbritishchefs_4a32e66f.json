@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Baobab Smoothie",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Tall",
+    "garnish": [],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all of the ingredients into a blender and blitz until smooth. To serve, pour into a tall glass with a straw"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baobab Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blueberry Purée",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soya Milk",
+        "unit": "ml",
+        "notes": "rice milk or almond milk",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a70f1936ed553dc6dc27455c143c3968304d5049d697b79174121d4ff6a597a2",
+    "lineage_hash": "743c2dd2f55192d2827a273e8afc6227ad534534ab014592da286225693df9eb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baobab-smoothie-recipe",
+    "fetchedAt": "2026-08-03T18:05:46.266Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baobab-smoothie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

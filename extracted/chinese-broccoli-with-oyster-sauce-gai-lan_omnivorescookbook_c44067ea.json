@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Chinese Broccoli with Oyster Sauce (Gai Lan)",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "101",
+      "carbohydrateContent": "8.8",
+      "fatContent": "6.8",
+      "proteinContent": "3.9"
+    },
+    "directions": [
+      "Combine the oyster sauce, sugar and 2 tablespoons of water in a small bowl. Mix well and set aside.",
+      "Bring a large pot of water to a boil. Add a pinch of salt and a drizzle of oil for vibrant color (Optional). Add the Chinese broccoli and boil over medium heat, until the broccoli is cooked through and the stem part remains crisp, 1 to 2 minutes. Drain broccoli, rinse with cold tap water for a few seconds to stop cooking, then drain again and transfer to a large plate. Spread them out so there’s little overlap. If the Chinese broccoli is very wet, you can use paper towels to pat the surface dry.",
+      "Heat a small skillet or a saucepan over medium heat until hot. Add peanut oil, garlic and ginger. Stir a few times until fragrant.",
+      "Turn to low heat. Add the oyster sauce mixture and stir immediately. When the sauce becomes fragrant, after 10 to 20 seconds, pour the oyster sauce over the Chinese broccoli. Serve immediately as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Broccoli",
+        "unit": "oz",
+        "notes": "tough ends and stem surfaces removed",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c400ddf4132fecfdc8d32dd7b0cd19004442e5214386f6be48da9648d7304c06",
+    "lineage_hash": "c0c37fb6a0c35af951b0c7ad4203839d4d76598e13e6b7d484707fed206863c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-broccoli-with-oyster-sauce/",
+    "fetchedAt": "2026-08-02T04:50:15.159Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-broccoli-with-oyster-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

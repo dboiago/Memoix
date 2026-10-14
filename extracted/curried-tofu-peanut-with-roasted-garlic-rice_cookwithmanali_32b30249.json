@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Curried Tofu & Peanut with Roasted Garlic Rice",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "454",
+      "carbohydrateContent": "77",
+      "fatContent": "8",
+      "proteinContent": "16"
+    },
+    "directions": [
+      "Cook Uncle Ben's Roasted Garlic Rice according to instructions on the package. Set aside.",
+      "Press tofu by placing some heavy object on top for 20-30 minutes to get rid of all water. Once all the water has been drained, cut it into cubes.",
+      "Heat 1.5 teaspoon canola oil in a pan on medium heat.",
+      "Once hot, add tofu, curry powder, black pepper and salt. Mix till tofu cubes are well coated with the spices. Cook the tofu cubes, 2-3 minutes on each side or till they turn golden brown in color. Remove from pan and set aside.",
+      "To assemble the dish, add the prepared rice and tofu to the bowl. Add roasted peanuts, chopped spring onion and squeeze in some fresh lime juice.",
+      "Garnish with cilantro (optional) and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Uncle Ben's Roasted Garlic Rice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Firm Tofu",
+        "unit": "oz",
+        "notes": "cut into cubes",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canola Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "alt: to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": "sprig",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e0a1b9426b344af2d6608c98f60f6a1bef4387b0dd91d597f08e32cbc9b077a2",
+    "lineage_hash": "fe3d4ddd391eee5a0f5bd59e6e041a631375b95d603faa9ec0fdaa0cec542cf0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/curried-tofu-peanut-with-roasted-garlic-rice/",
+    "fetchedAt": "2026-08-01T16:33:34.434Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/curried-tofu-peanut-with-roasted-garlic-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

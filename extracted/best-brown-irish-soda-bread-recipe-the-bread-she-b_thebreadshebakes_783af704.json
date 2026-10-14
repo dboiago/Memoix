@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Brown Irish Soda Bread",
+    "time": "1 hr 10 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C",
+      "Grease a large baking tin",
+      "Thoroughly combine all the dry ingredients in a large mixing bowl",
+      "Add the buttermilk and beaten eggs",
+      "Mix (best to use your hands) to quickly combine all the ingredients. The dough will need only the minimum amount of handling. Kneading the dough is unnecessary and would in fact toughen the bread.",
+      "Bake for 60 minutes",
+      "Remove the bread from the tin and put back in upside down",
+      "Bake for a further 10 minutes",
+      "Remove from the tin and cool on a wire rack"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coarse Wholemeal Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Wholemeal Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheatgerm",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bran",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "735",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d0fec254c2db4a64392c750e68c5251fdb10fb416a58c0d22a0e2f02e3a956f8",
+    "lineage_hash": "2f8da754d88f3be7f505c65cbe946b204b505cc07e830c3e26d3091ef9f069b1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2014/08/best-irish-brown-soda-bread-recipe/",
+    "fetchedAt": "2026-08-01T18:01:17.517Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2014/08/best-irish-brown-soda-bread-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

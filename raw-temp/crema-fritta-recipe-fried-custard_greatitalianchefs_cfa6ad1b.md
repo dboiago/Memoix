@@ -1,0 +1,5 @@
+Though present in similar forms in other italian regions, crema fritta – also called cremini – is one of the most classic and nostalgic dishes from Marche. Together with [olive ascolane](https://www.greatitalianchefs.com/recipes/olive-ascolane-recipe-deep-fried-olives) and fried sage leaves, it is part of the traditional [fritti platter](https://www.greatitalianchefs.com/features/le-marche-fried-food-fritto-misto), which is served at the start of a meal or as a side to other fried foods, such as lamb and vegetables.
+
+Pairing sweet custard with savoury foods might sound odd. In fact, it’s a fine balancing game – the sweetness of the crema serving as a counterpart to the slight bitterness of the olives (all’ascolana).
+
+If the thought of having custard as a side dish doesn’t seem too appealing, you can save this crema fritta for dessert. Washed down by a glass of sweet wine, it make for a great end to an Italian-inspired meal.

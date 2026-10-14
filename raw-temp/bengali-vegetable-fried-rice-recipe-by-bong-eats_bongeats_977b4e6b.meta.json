@@ -1,0 +1,43 @@
+{
+  "url": "https://www.bongeats.com/recipe/bengali-vegetable-fried-rice",
+  "slug": "bengali-vegetable-fried-rice-recipe-by-bong-eats_bongeats_977b4e6b",
+  "title": "Bengali Vegetable Fried Rice recipe by Bong Eats",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:13:47.430Z",
+  "ldName": "Bengali Vegetable Fried Rice",
+  "ldTime": "PT60M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT30M",
+  "ldYield": "4 servings",
+  "ldCuisine": "Indian",
+  "ldCategory": "main",
+  "ldKeywords": "veg pulao, bengali vegetarian recipe",
+  "ldIngredientsRaw": null,
+  "ldInstructionsRaw": null,
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "432"
+  },
+  "htmlIngredientLines": [
+    "300 g basmati rice",
+    "100 g carrots",
+    "100 g beans",
+    "50 g peas",
+    "4 pcs bay leaves",
+    "1 stick cinnamon",
+    "4 pcs cardamom",
+    "4 pcs cloves",
+    "25 g cashew nuts",
+    "25 g raisins",
+    "6 pcs green chillies",
+    "½ tsp peppercorns",
+    "½ tsp garam masala powder",
+    "‍16 g salt",
+    "26 g sugar",
+    "10 g ghee",
+    "15 g vegetable oil"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

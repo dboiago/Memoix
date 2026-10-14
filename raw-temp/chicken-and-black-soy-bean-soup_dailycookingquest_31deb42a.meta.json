@@ -1,0 +1,46 @@
+{
+  "url": "https://dailycookingquest.com/chicken-and-black-soy-bean-soup.html",
+  "slug": "chicken-and-black-soy-bean-soup_dailycookingquest_31deb42a",
+  "title": "Chicken and Black Soy Bean Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-02T08:21:12.382Z",
+  "ldName": "Chicken and Black Soy Bean Soup",
+  "ldTime": "PT2H30M",
+  "ldPrepTime": "PT0H30M",
+  "ldCookTime": "PT2H0M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": [
+    "Bean",
+    "Chicken"
+  ],
+  "ldIngredientsRaw": [
+    "1 free range chicken, cut into 8 pieces",
+    "100 gram dry black soy bean, soaked in cold water overnight and drained",
+    "2 tomatoes, cut each into halves",
+    "2 medium (or 1 big) carrot, peeled and cut into slices",
+    "4 cups water",
+    "2 teaspoon salt, or to taste",
+    "1 teaspoon sugar, or to taste"
+  ],
+  "ldInstructionsRaw": [
+    "Place all ingredients in a soup pot and bring to a boil. Reduce heat and simmer for 1 to 2 hours or until chicken is tender and fully cooked and the bean is soft to your likeness. Adjust salt and sugar as needed.",
+    "Remove from heat and serve warm."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 free range chicken, cut into 8 pieces",
+    "100 gram dry black soy bean, soaked in cold water overnight and drained",
+    "2 tomatoes, cut each into halves",
+    "2 medium (or 1 big) carrot, peeled and cut into slices",
+    "4 cups water",
+    "2 teaspoon salt, or to taste",
+    "1 teaspoon sugar, or to taste"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

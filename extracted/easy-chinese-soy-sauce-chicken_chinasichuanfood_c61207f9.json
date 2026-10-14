@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Chinese Soy Sauce Chicken",
+    "time": "4 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1161",
+      "carbohydrateContent": "31",
+      "fatContent": "69",
+      "proteinContent": "89"
+    },
+    "directions": [
+      "Firstly, remove the chicken feet and clean the main body. Add all of the marinating ingredients and massage the chicken for couple of minutes. Set aside for at least 3 hours. Turn over at least twice during the time.",
+      "Transfer the marinating juice to a pot (just enough to hold the chicken, do not use oversized pot). Add around 1 cup of chicken stock or water. Bring it to a boiling.",
+      "Place the chicken in and keep spreading the sauce on the chicken with the help of a scoop. After adding the chicken, the temperature of the liquid will drop quickly. Use medium to slow fire and keep the liquid almost simmering but not boiling. This is the key to keep the chicken tender.",
+      "Simmer one side for 10 to 12 minutes and then turn over, simmer the other side and the stomach for another 10 to 15 minutes until 3/4 of the sauce are cooked off. Cover the lid and let the chicken stay inside for 10 minutes, with no heat and covered.",
+      "Transfer out and then cut into large bite size pieces.",
+      "The best way is to serve it with steamed rice. In addition, you can spread the remaining liquid on the rice and make the dish ever better."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "1 Whole Organic Chicken",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Steamed Rice for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Chicken Stock",
+        "unit": "C",
+        "notes": "alt: water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger",
+        "unit": "inch",
+        "notes": "smashed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "cut into small sections",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "smashed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Cinnamon",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Sand Ginger 沙姜，recommended to Include It",
+        "unit": "small",
+        "notes": "alt: you can use dried ones",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d462ee0a67cedbe95fd168e0313ef91ebff1b09c7edc7d9241affaa28c5705fc",
+    "lineage_hash": "141abc82c65626d4767355302672b0abbfa6ac161bdf7536bd94b8cf6747ef22"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-chinese-soy-sauce-chicken/",
+    "fetchedAt": "2026-08-01T19:24:49.433Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-chinese-soy-sauce-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

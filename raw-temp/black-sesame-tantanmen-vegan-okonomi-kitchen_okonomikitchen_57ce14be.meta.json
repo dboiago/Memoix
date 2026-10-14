@@ -1,0 +1,61 @@
+{
+  "url": "https://www.okonomikitchen.com/black-sesame-tantanmen/",
+  "slug": "black-sesame-tantanmen-vegan-okonomi-kitchen_okonomikitchen_57ce14be",
+  "title": "Black Sesame Tantanmen (Vegan) - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-25T22:51:10.029Z",
+  "ldName": "Black Sesame Tantanmen",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Entree",
+  "ldKeywords": "vegan ramen, vegan tantanmen, black sesame ramen, sesame tantanmen, sesame dandan noodles",
+  "ldIngredientsRaw": [
+    "1 piece garlic (5g)",
+    "1 piece ginger (8g)",
+    "6 oz vegan grounds (168g)*",
+    "1 tbsp sake (15g)",
+    "2 tsp soy sauce, optional (10ml)",
+    "1 tsp sugar (4g)",
+    "1 tsp doubanjiang (5g)",
+    "1 tbsp miso paste (17g)",
+    "2 tsp sesame oil (10ml)",
+    "2/3 cup soy milk (160ml)",
+    "2 tbsp black sesame paste (32g)",
+    "1 ½ cup water (360ml)",
+    "2 tsp vegan &#8216;chicken&#8217; bouillon (10g)",
+    "1 tbsp soy sauce (15ml)",
+    "2 tsp rice vinegar (10ml)",
+    "1 tbsp ra-yu (15ml)",
+    "1 tsp sugar (5g)",
+    "1 tsp salt",
+    "¼ tsp black pepper",
+    "2 servings ramen noodles",
+    "1/2 cup bean sprouts (80g)",
+    "1 bok choy, quartered (90g)",
+    "2 scallions, sliced (26g)",
+    "2 tbsp black garlic oil (32g)",
+    "1 ½ tbsp black sesame seeds, grinded (12g)",
+    "1 ½ tbsp peanuts, chopped or grinded (10g)"
+  ],
+  "ldInstructionsRaw": [
+    "Vegetables &amp; garnishes: Bring a pot of water to a boil for bok choy. Once boiling, add the bok choy and parboil for 1-2 minutes or until vibrant green. Remove the bok choy and rinse with cold water. While the water is still boiling, add the mung bean sprouts and cook for 20-30 seconds. Strain, rinse in cold water and set aside. While this is going, slice the scallions and grind the sesame seeds and peanuts.",
+    "Add soy milk and black sesame paste to a pot. Use a whisk to dissolve the paste. Turn on the heat to medium, then add in the water and bouillon, whisking until dissolved. Once broth starts to bubble, reduce heat to low. Stir in the soy sauce, rice vinegar, ra-yu, sugar, pepper and salt. Taste and adjust seasoning by adding more salt or pepper. Leave on the stove over very low heat to keep it warm. Add water to a pot for the noodles and bring to a boil.",
+    "Add garlic and ginger to a pan over medium heat and fry for 30-60 seconds. Add in the vegan grounds and use a wooden spoon to break up the grounds. Add sake, soy sauce and sugar and mix. Then add the doubanjiang and miso paste and fry until well combined. Then drizzle in the sesame oil to finish cooking. Set aside.",
+    "Once water is boiling, cook the noodles following manufacturer&#8217;s directions (minus 20 seconds). Strain and add to serving bowl.",
+    "Pour soup on top of the noodles. Add the vegan grounds on top along with bok choy and mung bean sprouts. Garnish with sesame seeds, peanuts, scallions, scorched garlic oil and chili oil. Serve immediently and enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

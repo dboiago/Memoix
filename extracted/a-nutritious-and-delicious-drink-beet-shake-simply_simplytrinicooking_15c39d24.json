@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Beet Shake",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cook the beet: wash the beet and roast or boil in water until tender. Or, keep in its raw form.",
+      "In a blender or food processor, blend together all the ingredients until smooth. Serve with ice. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sized Beet Root Cooked",
+        "unit": "medium",
+        "notes": "alt: raw, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Chopped",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Milk Vanilla Flavour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters Just for the Trini Flavour",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2ab2e7438627202547d2036b10e8b82e81961c291d77af348c3fa560c12b9e6c",
+    "lineage_hash": "d0e7eec123fcfc5925f0fcadddfe3cdfea90104b0b139d124b34e1898e3892c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/beet-shake/",
+    "fetchedAt": "2026-09-25T21:33:06.992Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/beet-shake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

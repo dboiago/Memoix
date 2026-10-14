@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "whole wheat nachos (Aloo Paratha Nachos)",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, add grated potato, whole wheat flour, carom seeds, degi red chilli powder and mix well.",
+      "Add salt to taste, oil and water knead a soft dough, cover and keep aside for 10 minutes.",
+      "Now take a medium portion of the dough and roll it thin using a rolling pin.",
+      "The half cook it on a hot flat pan from both sides and then cut in strips and then in triangle shape.",
+      "Heat oil for deep frying and then fry these triangles in medium hot oil until golden brown and crispy.",
+      "Remove on an absorbent paper, then add the Nacho spice and mix it properly, then keep aside for further use.",
+      "For Dip",
+      "In a bowl, add hung curd whisk it properly.",
+      "Heat oil in a tadka pan, add mustard seeds, chana dal, gota urad and fenugreek seeds let it splutter.",
+      "Add Dry kashmiri chilli, ginger, curry leaves and mix well.",
+      "Pour the tadka over the hung curd and mix well."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "boiled, grated",
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Seasoning",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Gota Urad",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Kashmiri Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, chopped",
+        "amount": "1",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-15",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2-4",
+        "section": "For Dip Tadka",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c8977cc78a3fe52fd50c9054189392203cd466b698303b51aaff1eec99d9d5f",
+    "lineage_hash": "77298ed1c52e36b53efdd8106c1da75cb4246be3446ff8e79e9c947681ef214c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/easy-whole-wheat-nachos/",
+    "fetchedAt": "2026-08-02T09:33:48.623Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/easy-whole-wheat-nachos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

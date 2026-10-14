@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Chipotle Rice (Cilantro Lime Rice)",
+    "time": "25 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "174",
+      "carbohydrateContent": "39",
+      "fatContent": "0.3",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Rinse the rice: Add the rice to a fine mesh sieve and rinse under cold water until the water runs mostly clear. This helps remove excess starch so the rice cooks up fluffy and separate.",
+      "Cook the rice (stovetop): Add the rinsed rice, water, and salt to a medium saucepan. Bring to a boil, then cover, reduce the heat to low, and cook for 15 minutes, or until the water is absorbed and the rice is tender. Remove the pot from the heat and let it sit, covered, for 5 minutes. Fluff gently with a fork.Rice cooker method: Add the rinsed rice, water, and salt to your rice cooker and cook according to the manufacturer’s instructions. Once cooked, let the rice rest for 5 minutes, then fluff gently with a fork.",
+      "Season the rice: Add the lime zest, lime juice, and chopped cilantro. Gently fluff again until everything is evenly mixed. Taste and add more salt if needed."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long-grain White Rice",
+        "unit": "C",
+        "notes": "such as basmati or jasmine",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "about 2 tablespoons juice, zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "fresh, finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64dc6a39dd6c81ee3733e3b170e15f55f9e5a2e61f8a45aa3f3a61c97534999c",
+    "lineage_hash": "045a35ee1d73f508d957c482406727e95590a589d21983c8cd9ab3a2fafb2a8f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/chipotle-rice-recipe/",
+    "fetchedAt": "2026-08-02T09:47:44.991Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/chipotle-rice-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

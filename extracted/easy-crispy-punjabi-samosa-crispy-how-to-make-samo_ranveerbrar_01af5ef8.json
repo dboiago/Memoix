@@ -1,0 +1,214 @@
+{
+  "recipe": {
+    "name": "Crispy Punjabi Samosa",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add maida, salt, carom seeds, ghee and mix everything properly until it resembles bread crumb consistency.",
+      "Now add cold water and knead a hard dough. Cover and keep aside for resting at least for 15-20 minutes.",
+      "In a pan add coriander seeds, cumin seeds, fennel seeds and roast them lightly.",
+      "Transfer them into a motor-pastel and crush them coarsely and keep aside for further use.",
+      "In a pan add ghee, ginger, garlic, green chillies and saute for a minute.",
+      "Now add raisins, turmeric powder, degi red chilli powder, asafoetida, potatoes, green peas and mash it coarsely, mix everything properly and cover and cook for 4-5 minutes on medium heat.",
+      "Now remove the cover and cook on high flames for 3-4 minutes or until light charred.",
+      "Add the prepared masala, black pepper powder, dry Mango powder, salt and mix everything properly. And keep aside for further use.",
+      "Take a medium portion of the dough, make a round peda and roll it thin in an oval shape.",
+      "Now cut in from the centre and take one half of it and make a cone shape of it and add the filling in it.",
+      "Now apply water on the open ends of the cone and fold it towards you, keep it down and give it a gentle press so that it can stand, make all others in the similar way.",
+      "Heat oil in a kadhai on medium heat and fry the samosas in it until golden brown from all sides, remove on an absorbent paper. Serve hot with tomato ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maida",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Carom Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Samosa Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Samosa Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "boiled & slightly mashed",
+        "amount": "4-5",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Samosa Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f9c043c6626804b3e4923282445c7ef020109bcdabe9ef7df4549742e504c45",
+    "lineage_hash": "2c3a7a1763c0d7a28943b819044c09e1f323745be5347b752e043133d4198548"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/panjabi-samosa/",
+    "fetchedAt": "2026-08-01T20:56:36.079Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/panjabi-samosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

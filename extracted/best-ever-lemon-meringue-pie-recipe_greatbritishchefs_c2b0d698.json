@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Lemon Meringue Pie",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the curd. Zest and juice the lemons, reserving both – you want around 160ml of lemon juice in total. Place 4 of the juiced lemon halves into a pan and cover with cold water. Bring to the boil, cook for 30 seconds, then drain. Repeat this process of submerging the juiced lemons with cold water, bringing it to the boil and then cooking for 30 seconds up to 8 more times, until the lemons are incredibly soft. This process may seem laborious but it removes all the bitter flavours from the lemon peel, leaving just the sweetness and the pectin required to thicken the curd",
+      "Once the lemon halves are soft and tender, roughly chop them and place in a pan with the lemon juice, zest, slaked cornflour and sugar. Bring to a simmer and cook gently for 10 minutes, then transfer to a blender. Blitz in the saffron and drained gelatine leaves, then add the butter a little at a time with the motor still running. Once completely smooth and fully incorporated, transfer to a bowl and cover with cling film, ensuring the film is touching the surface of the curd. Set aside in the fridge",
+      "To make the base, crush the biscuits with your hands or the end of a rolling pin and place in a mixing bowl. Stir in the melted butter and white chocolate, mixing until fully combined. Divide the base into your chosen serving dishes (Phil uses small copper pans, but any dish with a rim will work), packing and pressing the mixture with your hands, then transfer to the freezer for 10 minutes (or the fridge for 30 minutes) to set",
+      "Once the bases have set, pipe, spread or spoon the lemon curd on top and return to the fridge or freezer to set",
+      "Preheat an oven to 190°C/gas mark 4½. To make the meringues, whisk the egg whites and vinegar in a stand mixer until stiff peaks form. Stir the cornflour into a little of the sugar, ensuring that there are no lumps, then add this to the egg whites. Start adding the remaining sugar a tablespoon at a time until all incorporated, then whisk for a further 5 minutes on maximum speed",
+      "Pipe or spoon the meringue onto the set curd, then bake the pies for 10-15 minutes, until they begin to turn golden on top",
+      "Finish the meringues with a blowtorch to give them more colour. If any peaks set on fire then just blow them out (but a little charring is fine). Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unwaxed Lemons",
+        "unit": null,
+        "notes": "ideally from Amalfi or very high-quality",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": "mixed with 1 tbsp water to create a paste",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "bloomed in cold water for 10 minutes before using",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7a6839daee9ac2e30ecbe0ee10cb99def3b8fc7f33c942e58622b286fc6ac2e5",
+    "lineage_hash": "396a7f61ae6d8127b6ca35ed7a32e9a21bc2f8463ed05c765d8834a748faf61b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/best-lemon-meringue-pie-recipe",
+    "fetchedAt": "2026-08-03T04:17:35.124Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/best-lemon-meringue-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

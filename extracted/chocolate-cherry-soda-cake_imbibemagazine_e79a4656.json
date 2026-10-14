@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Chocolate Cherry Soda Cake",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the CakePreheat your oven to 350°F and spray a 9-by-5-inch loaf pan with baking spray and line with parchment paper, leaving an overhang along the long edges, spray parchment. Set aside.",
+      "In a medium bowl, whisk together the flour, cocoa powder, baking powder, baking soda, and salt until evenly combined. Set aside.",
+      "In a small bowl, whisk together the buttermilk and cherry soda. Set aside.",
+      "In a separate medium bowl with an electric hand mixer, cream the butter and sugar until light and fluffy, 2 to 3 minutes. Add the eggs and vanilla and mix until combined, about 1 minute.",
+      "Gradually add the dry ingredients to the butter-sugar ingredients, alternating with the buttermilk-soda mixture until smooth and well combined. Fold in the cherries.",
+      "Pour the batter into the prepared pan, tap the pan to release the air bubbles, and level the batter. Bake for 40 to 50 minutes, or until a toothpick or cake tester inserted in the middle comes out clean. Set on a wire rack and let cool completely.",
+      "Prepare the ButtercreamIn a medium bowl with an electric hand mixer, cream the butter, powdered sugar, and salt until light and fluffy, 2 to 3 minutes. Add the maraschino liquid and mix until evenly combined and pale pink.",
+      "Once the cake is cooled, remove from the pan lifting up from the parchment overhang. Frost the top of the cake with buttercream in an even layer. With a fine grater, generously shave the chocolate bar over the buttercream. Top with maraschino cherries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Soda",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Cherries",
+        "unit": "C",
+        "notes": "drained (liquid reserved), and chopped",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "softened",
+        "amount": "½",
+        "section": "Maraschino Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Maraschino Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Maraschino Buttercream",
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liquid",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Maraschino Buttercream",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "24b92e7293884c6fca54f28a61e583ac4c556d7dacc6d417af46c97cc7068c6f",
+    "lineage_hash": "4f1d62c02a2a3f1c6ab0f2e9df7d0b5ae07c33558764dfa7056181de689c1ab1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/chocolate-cherry-soda-cake/",
+    "fetchedAt": "2026-08-04T00:49:19.999Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/chocolate-cherry-soda-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

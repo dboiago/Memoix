@@ -1,0 +1,91 @@
+{
+  "recipe": {
+    "name": "Bulletin Place Cocktail: Dante’s Peak",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients except the soda water in a shaker and shake with a single ice cube until the cube melts. Add 1 oz. of chilled soda to the shaker and pour into an ice-filled glass, adding more soda if needed. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blended Scotch Whisky",
+        "unit": "oz",
+        "notes": "Spector uses Johnny Walker Black",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Heering",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "tsp",
+        "notes": "1:1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Soda Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b13ba6fac9e8986b0261d0c94ebbcca5c83da5978bb9bb8aaa70cc07c4efa546",
+    "lineage_hash": "ba103afc6faeb386e9bd7207f94f2d530627195f87d3431bcf10f44df2765b0a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bulletin-place-dantes-peak/",
+    "fetchedAt": "2026-08-03T23:20:46.733Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bulletin-place-dantes-peak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

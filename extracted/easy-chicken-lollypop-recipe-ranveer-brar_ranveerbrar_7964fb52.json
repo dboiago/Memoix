@@ -1,0 +1,211 @@
+{
+  "recipe": {
+    "name": "Chicken Lollypop",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the marination ingredients into bowl except corn flour, maida and oil. Massage the chicken wings with the marination.",
+      "Keep aside for 30 minutes.",
+      "Heat oil in kadai and just putting into the oil add maida and cornflour into marinated lollipops and coat well.",
+      "Deep fry lollipops in batches until turn golden brown and crisp in texture.",
+      "Remove on kitchen absorbent paper. Keep aside for later use.",
+      "Heat sesame oil into wok.",
+      "Add in onion, ginger and garlic. Saute until light pink in colour.",
+      "Addin stock followed by all the sauces and stir well.",
+      "Adjust salt and add prepared lollipops. Coat well with the sauce and finish with chopped spring onion, fresh green chilli. Stir one last time and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "No Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "to deep-fry",
+        "amount": "0",
+        "section": "Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock/water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli",
+        "unit": null,
+        "notes": "fresh, sliced",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c8f489d6f541aad2a653db2825887579b489e6c8c686dfb13a7c63d66babd53",
+    "lineage_hash": "1d342291a4923c031f963661dc2dd6b738a6d8c01378e533f497cdc974da163a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-lollypop/",
+    "fetchedAt": "2026-08-02T14:41:57.061Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-lollypop/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

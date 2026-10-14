@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Chocolate Salami",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Chop up the biscuits and transfer to a large bowl. Add the sugar. Add 4-5 tablespoons of bitter cocoa, sifting it to remove any lumps. Mix all the dry ingredients together. Mix in 2 whole eggs. Melt the butter, let it cool, and pour it into the bowl. Using a spatula, knead everything together.",
+      "Transfer the mixture onto a large sheet of baking parchment and shape it into the form of a salami. Wrap it in baking parchment and aluminum foil. Put the chocolate salami in the freezer for 30 minutes. Then transfer to a fridge for a couple of hours. Finally, remove the two layers of foil and parchment. Roll the salami in powdered sugar. Serve in slices. Covered in plastic wrap, chocolate salami will last in the fridge for 1-2 days or 1 month in the freezer: Just thaw it in the fridge before eating it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Biscuits",
+        "unit": "oz",
+        "notes": "alt: cookies",
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter Cocoa",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6c0bec98bb26c2fb1fca033bc0f229994f243adb0c333da3b20a5cc4197ca67",
+    "lineage_hash": "8f15bcb13a46729a9494b5d9e9b9e14a4afc547e7ace8746550d4b52ab330741"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-salami-simple-and-quick-dessert-recipe",
+    "fetchedAt": "2026-08-03T08:33:24.932Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-salami-simple-and-quick-dessert-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

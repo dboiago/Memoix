@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Thor's Hammer Tacos",
+    "time": "6 hr 55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep. Season the beef shanks generously with a blend of Big Poppa’s Cash Cow and Jallelujah Lime Seasoning. Allow them to rest while you prepare your smoker or grill.",
+      "Roughly chop the onion. Remove the stem and seeds from the red bell pepper and roughly chop. Chop the cilantro if using.",
+      "Fire up. Pre-heat your smoker, or if you are using a grill, set it up for indirect cooking. Bring the temperature of the smoker or grill to 250°F (107°C).",
+      "Cook. Place the beef shanks bone side up on the smoker or grill over indirect heat. Let them cook for 4 hours.",
+      "After 4 hours, lay the beef shanks horizontally on the smoker or grill over indirect heat. Cook them until the meat reaches an internal temperature reaches 180°F, approximately 20 minutes.",
+      "Transfer the beef shanks to a foil pan. Pour half of a 25-ounce bottle of Chef Merito Fajitas Marinade over them. Cover the meat and pan with foil and return to the smoker or grill at 275°F until they reach an internal temperature of 195°F, approximately 2 hours.",
+      "While the meat is resting, heat a grill to at least 450°F (232.2°C), a.k.a. Warp 10. If you do not have an additional grill available, wait until you remove the meat then crank the heat up while the meat rests.",
+      "Grill the Mexican green onions, white onions, jalapenos, and red bell peppers, turning them frequently. Season them with Big Poppa’s Little Louie’s Garlic Pepper as you grill them. Grill the vegetables until they have a nice char, approximately 10 minutes.",
+      "Once the meat reaches an internal temperature of 195°F, remove the pan from the smoker or grill and allow them to rest for 10 minutes or until the vegetables are grilled before shredding.",
+      "Serve. Shred the beef shanks and serve them alongside the corn tortillas and optional taco toppings and sides such as beans, Spanish rice, pickled jalapenos and carrots, guacamole, salsa, cilantro, and/or sour cream. Create a taco assembly station with the grilled vegetables for a festive and customizable dining experience."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Shanks",
+        "unit": null,
+        "notes": "8-10 pounds each",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Poppa’s Cash Cow Seasoning",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Poppa’s Jallelujah Lime Seasoning",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chef Merito Fajitas Marinade",
+        "unit": "oz",
+        "notes": null,
+        "amount": "12½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mexican Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapenos",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Poppa’s Little Louie’s Garlic Pepper",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Tortillas",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Mexican Pinto Beans",
+        "unit": null,
+        "notes": "alt: refried beans (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spanish Rice (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Jalapenos and Carrots",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Guacamole",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Salsa",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebbc01d61d6f4a6ab02d5c4bab1d3d52c60d8f52f0e4eaf6bbd92fa2527e3475",
+    "lineage_hash": "9dc6618f441b173539649766c2c8cfe0d75f9390fc850ee1dc56e2f8177ed6dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://amazingribs.com/thors-hammer-tacos/",
+    "fetchedAt": "2026-08-01T18:04:13.003Z"
+  },
+  "rawSource": "https://amazingribs.com/thors-hammer-tacos/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

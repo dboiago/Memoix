@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Cinnamon Buns",
+    "time": "1 hr 45 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the dough, measure all the ingredients into a bowl and stir with a wooden spoon, or blend in a stand mixer fitted with the hook attachment until evenly combined. If mixing by hand, turn the dough out onto a work surface and knead until smooth, about 5 minutes, or if in a mixer, knead for about 3 minutes. Transfer the dough to an oiled bowl, cover with plastic wrap and let rise until doubled in size, 90 minutes to 2 hours.",
+      "For the filling, stir the brown sugar and cinnamon together and set aside. Have the melted butter ready.",
+      "Turn the risen dough onto a lightly floured surface and roll it out into a rectangle about 18-x-12 inches (46-x-30 cm). Brush the entire surface of the dough with the melted butter and sprinkle with the cinnamon brown sugar mixture. Roll up the dough from the longer side and then cut the roll into 12 pieces. Place these into a greased 9-x-13-inch (3 L) pan, evenly spaced, cover with plastic wrap or tea towel and let rise for an hour.",
+      "Preheat the oven to 350 ºF (180 ºC). Uncover the risen sticky buns and bake them for 40-45 minutes, until they are a rich golden brown. It is recommended to cool the sticky buns for 15 minutes in the pan before inverting to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "105 F, 2% milk, just above body temperature",
+        "amount": "1¼",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Dry Yeast",
+        "unit": "tsp",
+        "notes": "1 pkg",
+        "amount": "2¼",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3½",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Dough:",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "⅔",
+        "section": "Filling & Assembly*",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Filling & Assembly*",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Filling & Assembly*",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c45a1706f2349c627ff977523ad6d6dbfeea4984a1f8f5204fb12c164fa0e37d",
+    "lineage_hash": "0c5f9638a1be2508e48b796d81b9cfbdd8a921e91860a148b39b9ffd94183e44"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cinnamon-buns/",
+    "fetchedAt": "2026-08-01T19:02:15.969Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cinnamon-buns/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

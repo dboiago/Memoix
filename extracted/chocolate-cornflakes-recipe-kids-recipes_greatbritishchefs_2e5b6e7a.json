@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Chocolate Cornflakes",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the butter, chocolate and golden syrup in a saucepan over a low heat. Cook until the chocolate melts",
+      "Allow to cool a little, then pour over the cornflakes",
+      "Use a wooden spoon to gently stir all the ingredients together",
+      "Spoon the mixture into a tin lined with cupcake cases and sprinkle with hundreds and thousands. Place in the fridge to set, then serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "broken up",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hundreds and Thousands",
+        "unit": "tsp",
+        "notes": "for sprinkling",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67efaea390cd344c637e6f1486ccd1d8fe422813c52aebe7852b3025f1f227bc",
+    "lineage_hash": "8eec6d0d0f66dc8187d444f042ffddbab5edb18f2510d23086d8b7996b152b1d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cornflakes-recipe",
+    "fetchedAt": "2026-08-03T20:05:42.973Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cornflakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

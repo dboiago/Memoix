@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Chinese Steamed Eggplant",
+    "time": "40 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "170",
+      "carbohydrateContent": "8",
+      "fatContent": "15",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Yu Xiang Eggplant, a famous Sichuan hot garlic sauce.",
+      "Sichuan eggplant",
+      "Chinese stuffed eggplants, also known as eggplant box",
+      "Super easy eggplants with garlic and fresh pepper",
+      "Chinese eggplant with minced pork"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long Eggplants",
+        "unit": "small",
+        "notes": "or one large one",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": "for soaking optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Peppers 1 Red and 1 Green| Cut Into Small Circles",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "mashed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion White",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt or As Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Warm Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5bf3117ae1cfd8d02263538143d9c23e88f720c35887580ce4f165a47f3afc6f",
+    "lineage_hash": "c11ff8c74fa9bfa03f15b7747ffc9b510ae821eccd3bdd0b798abae341a633d6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-eggplant-salad-recipe/",
+    "fetchedAt": "2026-08-01T21:44:13.087Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-eggplant-salad-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

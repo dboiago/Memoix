@@ -1,0 +1,115 @@
+### Metric
+
+### Imperial
+
+-   1 bunch of [parsley](https://www.greatbritishchefs.com/collections/parsley-recipes), large, leaves picked
+-   1 bunch of [chives](https://www.greatbritishchefs.com/collections/chive-recipes), roughly chopped
+-   100ml of vegetable oil
+
+#### Pickled courgettes
+
+-   1 [yellow courgette](https://www.greatbritishchefs.com/collections/courgette-recipes)
+-   50g of caster sugar
+-   100g of white wine vinegar
+-   150g of water
+
+#### Quinoa
+
+-   250g of [quinoa](https://www.greatbritishchefs.com/collections/quinoa-recipes)
+-   250ml of vegetable stock
+-   vegetable oil, for deep-frying
+-   1 bunch of [chives](https://www.greatbritishchefs.com/collections/chive-recipes), finely chopped
+-   1 pinch of [salt](https://www.greatbritishchefs.com/collections/salt-recipes)
+
+#### Sour cream
+
+-   100g of sour cream
+-   1 bunch of [dill](https://www.greatbritishchefs.com/collections/dill-recipes), roughly chopped
+
+#### Yeast sauce
+
+-   100g of fresh yeast
+-   1 [banana shallot](https://www.greatbritishchefs.com/collections/shallot-recipes), sliced
+-   3 [garlic cloves](https://www.greatbritishchefs.com/collections/garlic-recipes), sliced
+-   1 dash of olive oil
+-   150g of white wine
+-   150g of double cream
+-   150g of vegetable stock
+
+1
+
+You need to make the herb oil, roasted yeast and marinade for the courgettes a day before you plan to serve the dish. To begin, make the herb oil. Place the parsley leaves, chives and oil in a blender and blitz for a few minutes until you have a bright green oil. Place a j-cloth or piece of muslin in a sieve, set this over a bowl, then pour the oil into the sieve. Leave to strain in the fridge overnight
+
+2
+
+To make the marinade for the courgettes, peel the garlic cloves from the head of garlic and add to a food processor or blender. Peel and roughly chop the ginger and add this to the blender along with a generous glug of olive oil. Blitz until smooth – you may need to add a little more olive oil to create a loose paste. Transfer to a jar and store in the fridge – you will have more than you need for this dish, but it will keep for up to a week and is very useful when cooking all sorts of other dishes
+
+3
+
+Wash, top and tail the green courgettes, then slice each one into 4 equal pieces. Place them in a container and add a few tablespoons of the ginger-garlic paste, ensuring they are well coated. Cover and leave in the fridge overnight
+
+4
+
+For the roasted yeast, preheat an oven to 180°C/gas mark 4 and place the block of fresh yeast on a tray lined with baking paper. Roast the yeast for around 25 minutes – it will at first melt and turn liquid, but eventually the water will evaporate and it will turn into a crispy crumb. Store in an airtight container until needed
+
+5
+
+On the day you plan to serve the dish, prepare the pickled courgette. Add the water, sugar and vinegar to a saucepan and gently bring to the boil. Meanwhile, use a mandoline or vegetable peeler to cut the yellow courgette into thin ribbons
+
+6
+
+If you’re planning to barbecue the courgettes, make sure your barbecue is lit so it’s ready for cooking later. Otherwise, you can use a griddle pan
+
+7
+
+Once the pickling liquor is boiling, pour this over the courgette ribbons and set aside at room temperature
+
+8
+
+To make the sauce, sweat the shallots and garlic in a dash of oil with a pinch of salt until soft (around 5 minutes). Add the white wine, bring to a simmer and leave to reduce by half
+
+9
+
+While the sauce reduces, place the sour cream and dill into a blender and blitz until smooth and pale green. Season to taste, transfer to a squeezy bottle and store in the fridge until needed
+
+10
+
+Once the wine has reduced by half, add the vegetable stock and leave to reduce by half once more. Once reduced, add the cream, bring to a simmer, then blitz in a blender. Add a little of the roasted yeast, blitzing to incorporate, then continue tasting the sauce, adding a little more yeast at a time, until you’re happy with the flavour (you probably won’t need to use all the yeast). When it tastes good, season with salt and lemon juice, then pass through a fine sieve into a clean pan to reheat later
+
+11
+
+Place the quinoa in a saucepan with the vegetable stock and a pinch of salt. Bring to a simmer and cook the quinoa for 15 minutes, or until just cooked. Use a slotted spoon to remove half of the quinoa and set aside, but continue cooking the remaining quinoa for a further 10 minutes until overcooked (adding a splash more water if needed)
+
+12
+
+Drain the overcooked quinoa of water by squeezing it in a j-cloth or tea towel and bring a deep pan of oil to 180°C. Very carefully lower the overcooked quinoa into the oil – it will splutter. Deep-fry for a few minutes until the quinoa crisps up and turns golden in colour, whisking it occasionally so it doesn’t clump up. Once crisp, drain on a j-cloth and season with salt
+
+13
+
+If you’re not using a barbecue to cook the courgettes, preheat a griddle pan until smoking hot. Place the marinated courgettes cut-side down on the barbecue or pan and leave to cook until nicely charred on one side and softened (but not mushy) throughout
+
+14
+
+While the courgettes cook, stir the chopped chives into the quinoa you haven’t deep-fried and season to taste. Gently reheat the sauce, and roll the pickled courgette ribbons into tight curls
+
+15
+
+To serve, place a small ring of the non-deep fried quinoa on the base of each plate. Slice the barbecued courgettes into pieces, then place these on top of the quinoa along with curls of pickled courgette. Add dots of sour cream, spoon over the crispy quinoa and add micro cress (if using). Finish by splitting the reheated yeast sauce with a spoonful of the herb oil, then pour this into the centre of the plate
+
+[](https://www.greatbritishchefs.com/contributors/tomas-lidakevicius)
+
+Tomas Lidakevicius is the head chef at Turnips in Borough Market, London.
+
+## Subscribe to the
+
+## Great British Chefs Newsletter
+
+Join an ever-growing community of food lovers now by subscribing to our newsletter and get all the latest recipes, features and much more to your inbox
+
+Terms and conditions
+
+## Get in touch
+
+Please sign in or [register](https://www.greatbritishchefs.com/unlocked?source-component=GetInTouch) to send a comment to Great British Chefs.
+
+## You may also like

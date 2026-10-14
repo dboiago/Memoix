@@ -1,0 +1,120 @@
+{
+  "recipe": {
+    "name": "Chicken and Ham Involtini",
+    "time": "35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the involtini by stuffing a slice of cooked ham and a slice of fontina cheese into each halved chicken breast. Tightly roll the chicken up into little bundles, securing with a toothpick if necessary and topping with a sage leaf. Place in the fridge and leave to sit for at least 20 minutes, as this helps the involtini stay together whilst cooking",
+      "Place the flour onto a plate and then roll each involtini lightly in the flour",
+      "Heat the extra virgin olive oil in a pan with two cloves of garlic. Do not peel the garlic: it will infuse the olive oil with its aroma without burning",
+      "When the olive oil is hot, add the involtini. Cook them over a medium heat for about 10 minutes, turning often until they are golden brown on each side (you may need to remove the cocktail sticks to get a nice even colour, but they should stay together after being in the fridge). As the cheese melts it will begin to leak out into the pan, which will flavour the sauce",
+      "Pour the white wine into the pan, season generously with salt and pepper and cook until the wine has reduced, creating a glossy sauce with the cheese",
+      "Serve the involtini warm with a side salad of rocket dressed in olive oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "carefully sliced in half horizontally",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fontina Cheese",
+        "unit": "slices",
+        "notes": "you can use gouda or mozzarella as a substitute",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06a8726076f434efb53ba5e0ce7a5da81752704b016ea6d211c258e9ad0b2033",
+    "lineage_hash": "f780afea7f6841d225cdbf66afa818469751f1a02ebd21171819b6f183bad9da"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chicken-involtini-recipe",
+    "fetchedAt": "2026-08-01T16:15:17.621Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chicken-involtini-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

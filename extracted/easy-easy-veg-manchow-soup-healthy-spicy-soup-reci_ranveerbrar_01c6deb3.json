@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Veg Manchow Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a wok or kadai heat oil and add ginger, garlic, green chilli, onion and saute for a minute.",
+      "Now add charred dry red chilli and then add carrot, cabbage, mushroom saute for 2-3 minutes on high flames.",
+      "Then add soya sauce, salt, black pepper powder, sugar, water and boil it for 5-6 minutes.",
+      "Add the vinegar boil for a minute and add french beans, spring onion, coriander leaves, mix it then add corn-starch slurry and stir it continuously until lightly thickened.",
+      "Serve hot with fried noodles.",
+      "In a bowl add boiled noodles, corn-starch and mix properly.",
+      "Now deep fry in hot oil until golden brown.",
+      "Remove and keep aside for further use.",
+      "In a small bowl add corn-starch, black pepper powder, water mix it properly and keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves Garlic",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chilli",
+        "unit": "small",
+        "notes": "charred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "medium",
+        "notes": "finely diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom",
+        "unit": "medium",
+        "notes": "small diced",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "French Beans",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Spring Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noodles",
+        "unit": "C",
+        "notes": "boiled",
+        "amount": "1",
+        "section": "For Fried Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Corn-starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Fried Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Fried Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Corn-starch",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Slurry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Slurry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb9a64fca774f11598292a24bc02b5934b5a5cd5e679ff2d7b3599cfd9d38cef",
+    "lineage_hash": "dc9942df7aac76835f575d52c4424b25e10fdbeba06faa5681b1a058e641013e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/manchow-soup-2/",
+    "fetchedAt": "2026-08-01T22:33:03.646Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/manchow-soup-2/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

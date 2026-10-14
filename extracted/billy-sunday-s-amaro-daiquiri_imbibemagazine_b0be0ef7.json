@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Billy Sunday's Amaro Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker with ice, then shake to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Braulio Amaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sfumato Rabarbaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gomme Syrup",
+        "unit": "oz",
+        "notes": "or ¾ oz. of 1:1 simple syrup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "61b2038f6ca8eaf541f09c3d1b0cecfb5c8a616f573e6b15dd08d71e51dd18f7",
+    "lineage_hash": "d725d5311f5cf711af200c217344c5d462b5bcd394862009f98b6de3ba5edaba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/billy-sundays-amaro-daiquiri/",
+    "fetchedAt": "2026-08-03T18:56:02.001Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/billy-sundays-amaro-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

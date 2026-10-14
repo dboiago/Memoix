@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Creamy Lemon Pepper Chickpeas",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "229",
+      "carbohydrateContent": "30.1",
+      "fatContent": "9.5",
+      "proteinContent": "8.5"
+    },
+    "directions": [
+      "Heat the olive oil in a skillet over medium-high heat. When hot add the onions and garlic and sauté until the onion turns translucent and begins to brown, about 5 minutes.",
+      "Sprinkle in the flour and stir and cook for an additional 30 seconds to heat up the flour. Now add the vegetable broth, lemon juice, lemon zest, salt, and pepper. Stir and scrape the bottom of the pan to remove on any stuck on bits. Stir in the chickpeas and bring to a simmer. Cook for another 5 to 10 minutes until the sauce has thickened.",
+      "Stir in the coconut milk. If you find your sauce a little too thick, you can add more broth to thin, and if you find your sauce a little too thin, just cook down a bit more. Garnish with cilantro or parsley and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "gluten-free if preferred",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1",
+        "unit": null,
+        "notes": "19oz can chickpeas (about 2 cups), drained and rinsed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Handful Cilantro",
+        "unit": null,
+        "notes": "alt: parsley, chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e262a62f00d29d669755ed4c95c32df126dc55f41741b5f2a87815b7a32a738",
+    "lineage_hash": "bb7ab5d02e1d5388ebe3786c794dbe508dad98e9ee9b9d1b7fa328dda7eb5fef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-lemon-pepper-chickpeas/",
+    "fetchedAt": "2026-08-01T23:43:06.368Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-lemon-pepper-chickpeas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

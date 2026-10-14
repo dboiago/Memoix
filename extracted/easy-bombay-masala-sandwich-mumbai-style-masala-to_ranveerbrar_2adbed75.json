@@ -1,0 +1,292 @@
+{
+  "recipe": {
+    "name": "Bombay Masala Sandwich (Mumbai style Masala Toast)",
+    "time": "25 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a nonstick pan, add mustard seeds, curry leaves let it splutter.",
+      "Add boiled potato and mash well.",
+      "Add asafoetida, turmeric powder and salt to taste and mix everything well and cook for a few minutes.",
+      "Add chopped green chilli, coriander leaves and green peas, mix well and cook for more 2 minutes.",
+      "Once it's done, transfer it into a bowl.",
+      "In a grinder jar, add ginger, green chilli, coriander leaves, mint leaves, ice cube and water as required grind it into a smooth paste.",
+      "Transfer it into a bowl, add salt to taste, chaat masala and mix well.",
+      "Spread butter evenly on the bread slices.",
+      "Now spread the coriander chutney.",
+      "Spread the potato masala filling on the bread slices.",
+      "Place the slices of onion, tomato, capsicum, beetroot.",
+      "Sprinkle a pinch of chaat masala, salt to taste and roasted cumin powder.",
+      "Place the cheese slice on top.",
+      "Cover with the slices on which we have spread the butter and chutney.",
+      "In a preheated grill pan. Grease it with some butter and place the sandwiches.",
+      "Toast the sandwiches from both sides till crisp and golden.",
+      "Remove from the grill pan and spread some green chutney, grated cheese, sev on top of the sandwiches.",
+      "Cut into halves and Serve with tomato ketchup and coriander chutney."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "boiled",
+        "amount": "2-4",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Green Peas",
+        "unit": "C",
+        "notes": "boiled",
+        "amount": "¼",
+        "section": "For Potato masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, slice",
+        "amount": "½",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Green chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Slice",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": null,
+        "notes": "slice",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "slice",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "slice",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese Slice",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": null,
+        "notes": "boiled, slice",
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Cheese",
+        "unit": null,
+        "notes": "grated",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Sev",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faf1415e4fef0fa3519ed7ac5c37d6650cfea6af416637523455198eec171fc4",
+    "lineage_hash": "50eec8601a6827ab37ab81e797923ec9c9a9ea5462d16de482540c379fbabed9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bombay-toast-sandwich/",
+    "fetchedAt": "2026-08-02T00:32:56.193Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bombay-toast-sandwich/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

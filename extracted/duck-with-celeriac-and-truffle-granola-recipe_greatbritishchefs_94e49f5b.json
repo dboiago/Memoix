@@ -1,0 +1,287 @@
+{
+  "recipe": {
+    "name": "Duck with Celeriac and Truffle Granola",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The truffle granola and sauce in this recipe can be made up to a day in advance, so begin with these. To make the truffle granola, preheat an oven to 160ºC/gas mark 3. Roughly chop the hazelnuts, place on a tray and roast for 5 minutes or until golden brown, then leave to cool",
+      "Mix the rest of the ingredients together in a bowl, then spread the mixture out on a baking tray and bake for 30-40 minutes, stirring every 10 minutes, until golden brown. Leave to cool, then stir through the hazelnuts. Reserve in an airtight container until needed",
+      "To make the sauce, place a large pan over a medium heat and add the oil. Once hot, add the mirepoix and sauté until golden brown (about 7 minutes). Turn the heat down and add the honey to the pan",
+      "Cook until the honey starts to bubble and darkens to a caramel colour (keep an eye on it as the honey will burn quickly after darkening). Pour in the chicken stock and add the cloves. Bring the mixture to a boil, then turn down to a simmer and cook for 15 minutes",
+      "After this time, pass the sauce through a sieve and measure out 500g of it into a pan (any leftover sauce can be frozen and kept for another dish). Add the butter, then place over a medium heat and reduce until the butter emulsifies with the stock and it looks a bit like butter scotch. Remove from the heat and pass through a sieve into a smaller pan. Cover with a lid and reserve in the fridge to reheat before serving",
+      "On the day you plan to serve, make the salt-baked celeriac. Preheat the oven to 180ºC/gas mark 4. Peel the celeriac and rub with a little oil and plenty of sea salt. Place in the centre of a sheet of tin foil, place the thyme on top and wrap tightly. Place in the oven and cook for 45–60 minutes, or until tender",
+      "While the celeriac bakes, make the mushroom ketchup. Place a pan over a medium heat with the sunflower oil and diced onions. Cook for about 8 minutes until soft and caramelised, then add the spices and cook for one more minute",
+      "Add the rest of the ingredients and cook until all the liquid has reduced and the mushrooms are cooked through. Transfer to a blender and blitz into a smooth ketchup. Place in a pan and cover, ready to reheat before serving",
+      "Once the celeriac has cooked through and is tender, leave to cool then cut into thick rectangles. Reserve these batons on a baking tray and drizzle with a little olive oil, ready to reheat later",
+      "Now everything else is ready, you can cook the duck breasts. Turn the oven down to 100ºC/gas mark 1/4. Score the skin and season the breasts on both sides. Place the breasts in a frying pan over a low heat skin-side down and slowly render down the fat until the skin turns golden and crisp (do not turn the duck over)",
+      "Once nice and golden, remove the duck from the pan, place on a cold tray skin-side up and cook in the oven until the duck reaches a core temperature of 50ºC, which will take about 5–8 minutes. Leave to rest in a warm place for 5 minutes before carving",
+      "While the duck cooks and rests, gently reheat the mushroom ketchup and sauce over a low heat and place the celeriac in the oven to warm through",
+      "To plate, carve the duck breasts in half lengthways and divide between plates. Follow with the celeriac and mushroom ketchup, using a piping bag if you have one or a spoon if not. Garnish the plate with the granola, mushroom slices, truffle shavings and picked chervil and finish the with the honey sauce"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirepoix",
+        "unit": "g",
+        "notes": "carrot, onion, leek and garlic, diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chestnut Mushrooms",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "King Oyster Mushroom",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chervil",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Truffle",
+        "unit": null,
+        "notes": "finely sliced (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1b391fec05008455d7ccfc391e37176552b4def54bcead0dc2ceefa972726ab4",
+    "lineage_hash": "701c25aedf547df8dc8abb9fb4d6c3817beca442e6260a9e3d26db494261010a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-celeriac-truffle-honey-recipe",
+    "fetchedAt": "2026-08-02T19:46:06.310Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-celeriac-truffle-honey-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

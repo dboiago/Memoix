@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Dutch Count Negroni / Red Light Negron",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Old-fashioned",
+    "garnish": [
+      "Orange Slice"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "165",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare orange slice for garnish.",
+      "POUR ingredients into ice-filled glass.",
+      "Garnish with orange slice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bitter Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6a07f5ccc2614ec94d1ffac2d190cfed294df328b116436d0e57ec371ddd99cc",
+    "lineage_hash": "5c2a3cb966885815571f5c4c6c73c6f6757e9e4e0400738e7b07e9e6ae65eec9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/3090/dutch-count-negroni-red-light-negron",
+    "fetchedAt": "2026-08-03T09:11:23.406Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/3090/dutch-count-negroni-red-light-negron",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,3 @@
+It always pays to have a reliable dessert in your back pocket, and Joe Fox's chocolate torte, inspired by Delia Smith's Famous Chocolate Truffle Torte, is the perfect recipe to please a crowd. An amaretti biscuit base, luscious rum-spiked chocolate ganache filling and a few rum-soaked raisins on top for good measure create something guaranteed to go down a storm.
+
+This recipe is doubly useful as it's very adaptable. You could trade the rum for a different spirit, amaretti biscuits can become digestives and clotted cream can become ice cream, if you so wished.

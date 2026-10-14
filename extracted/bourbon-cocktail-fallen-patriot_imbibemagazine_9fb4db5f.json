@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Bourbon Cocktail: Fallen Patriot",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake until chilled. Strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": "Flower uses Elijah Craig",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Licor 43",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Dram",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da9ca6a5d78731f5883154cfe688fc51c02da20254e3c059f3125a19a4a01a37",
+    "lineage_hash": "3268387d3fde10a5bbd418f3bc71c240bbfa9badee2785bef51b287dbcf13eac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bourbon-cocktail-fallen-patriot/",
+    "fetchedAt": "2026-08-04T00:24:22.998Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bourbon-cocktail-fallen-patriot/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

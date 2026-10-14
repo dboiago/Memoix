@@ -1,0 +1,249 @@
+{
+  "recipe": {
+    "name": "Crispy Fries NO Potato (Sooji Snack)",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a Kadai heat ghee and add green chillies, curry leaves, ginger, coriander leaves and saute for half a minute.",
+      "Now bring it to one side and on the other side heat ghee then add cumin seeds, mustard seeds, let them crackle and then pour in the water, mix everything together.",
+      "Then add salt, turmeric powder, curd, roasted bombay rava and mix everything properly and continue cooking until it soft dough or its comes together.",
+      "Remove on a greased tray and even it out then keep in the fridge to set properly.",
+      "Once set properly remove it out from the tray and cut in fingers then deep fry in medium hot oil until golden brown and crispy. Serve hot with fresh salad and chilli garlic mayonnaise.",
+      "In a bowl add tomatoes, onion, purple cabbage, salt, green chillies, curry leaves, lemon juice, flavourless oil and mix everything properly and keep aside for further use.",
+      "In a bowl add chopped garlic, coriander leaves, red chilli flakes, mayonnaise and mix everything properly and keep aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Bombay Rava",
+        "unit": "C",
+        "notes": "roasted",
+        "amount": "1",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Upma",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "julienned",
+        "amount": "2",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "½",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Purple Cabbage",
+        "unit": "small",
+        "notes": "shredded",
+        "amount": "½",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "roughly torn",
+        "amount": "4-5",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "small",
+        "notes": null,
+        "amount": "½",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "flavourless",
+        "amount": "1",
+        "section": "For Fresh Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "5-6",
+        "section": "For Chilli Garlic Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Chilli Garlic Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Garlic Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chilli Garlic Mayonnaise",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a681f66a580675a71b00fdf6681471d016c6ae81938b4aea601de2113bc2c20f",
+    "lineage_hash": "727be10f4e674e94b6aa016cfcb5db019dd41075309291b35c4a6518f8633875"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-fries-no-potato/",
+    "fetchedAt": "2026-08-02T18:19:11.012Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-fries-no-potato/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

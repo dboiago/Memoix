@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Barbecued Hasselback Butternut Squash",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Set up the barbecue for indirect cooking and bring up the temperature to around 200°C",
+      "Wash the butternut squash well, as the skin is kept on for this recipe. Slice in half lengthways and scoop out the seeds",
+      "Place two wooden spoons on each side of the squash halves – this is a trick to stop you accidentally cutting all the way through, helping to achieve a nice even hasselback. Slice into the squash halves until you hit the spoons, leaving a 1cm gap between each cut",
+      "Make the butter by mixing all the ingredients together. Spread around half of it over both sides of the squash",
+      "Slot the bay leaves into the cracks at intervals down the squash, then place on the barbecue cut-side down and cook for 30 minutes with the lid closed. The butter will melt and drip creating smoke, which adds to the flavour",
+      "After 30 minutes, add and little more butter (making sure you keep some for the sage leaves) and flip the butternut over to get some colour on the skin. The squash will have softened so be careful not to break them when flipping. Cook for another 10 minutes",
+      "In the meantime, make the sage salsa verde by blending the ingredients together. Taste and season with salt and more lemon juice if needed. Be careful with the amount of salt if you are using anchovies, and remember to leave them out altogether to keep the dish vegetarian",
+      "Melt the remaining rosemary and pink peppercorn butter in a pan with the sage leaves until they crisp up",
+      "When the squash is ready, pour over the browned sage butter and drizzle with the salsa verde. Discard the bay leaves and garnish with the crispy sage"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butternut Squash",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "sprig",
+        "notes": "leaves picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "leaves picked and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovies",
+        "unit": null,
+        "notes": "optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18bcd17bfeaf2b2ee460b8bfd7ccb681f6faf345d1b54e8e0ef14f025c68089a",
+    "lineage_hash": "a75fef45dd8e93097be4d45c9edf97cfaa8ee047b218a176d09b78933314c44e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/hasselback-butternut-sage-salsa-verde-recipe",
+    "fetchedAt": "2026-08-03T07:39:21.432Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/hasselback-butternut-sage-salsa-verde-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

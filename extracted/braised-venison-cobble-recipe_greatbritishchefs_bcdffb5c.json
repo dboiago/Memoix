@@ -1,0 +1,274 @@
+{
+  "recipe": {
+    "name": "Braised Venison Cobble",
+    "time": "2 hr 45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the braised venison. Dust the venison evenly in flour, shaking each piece to remove any excess. Add the oil to a large saucepan pan and add a batch of the venison when hot. Cook until golden, drain and set aside. Repeat with the rest of the venison – it’s important to work in batches so you don’t overcrowd the pan",
+      "Place a large, deep sauté pan with a lid over a medium-high heat, add the pancetta and cook until caramelised and golden. Drain the bacon, keeping the fat in the pan, and add the onions, diced carrots and parsnips. Cook until golden, then add the garlic and tomato purée and cook out for 2–3 minutes",
+      "Add the beer and wine to deglaze, scraping the bottom of the tray to remove any reside, then reduce by two thirds. Add the stock, return the bacon and venison to the pan (plus any juices that have escaped) and top up with a little more stock if needed. Bring to a simmer, add the bay leaf and thyme and cover with a lid. Cook over a low heat for 1 ½–2 hours, or until the meat is tender and the sauce is rich – you may need to top it up with a little more stock if it’s getting a little dry",
+      "While the venison is cooking, make the scones. Rub all the dry ingredients with the butter until the mixture resembles breadcrumbs. Add the horseradish, followed with enough milk to form a nice dough. Do not overwork the mixture, or the scones will be tough",
+      "Wrap in cling film and rest in the fridge for 30–40 minutes",
+      "Dress the baby parsnips with a little oil and season. Spread out on a roasting tray and cook for approximately 25 minutes",
+      "Roll out the scone dough until 2cm thick on a lightly floured work surface. But out 12 scones using a 4.5cm diameter cutter",
+      "Arrange the scones on top of the venison mixture and brush the top with egg yolk. Place in the oven with the parsnips for approximately 12–15 minutes, or until the scones are golden and the venison is bubbling away. Remove and top with a grating of horseradish and finely chopped parsley before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Venison Haunch",
+        "unit": "kg",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pancetta",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Parsnips",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Porter",
+        "unit": "ml",
+        "notes": "or stout",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mature Cheddar",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creamed Horseradish",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Parsnips",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Horseradish",
+        "unit": null,
+        "notes": "fresh, for grating",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5addacbd4c5b771c6c3ecc4ce3005f2488a6e573f88408a63a08185ef7695689",
+    "lineage_hash": "cc90443e18a5d3422286377193e0aeac7b984de162aff7508640591a24883a89"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/braised-venison-cobbler-recipe",
+    "fetchedAt": "2026-08-03T09:25:30.645Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/braised-venison-cobbler-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

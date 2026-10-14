@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum Leaves Goma-ae (Sweet Sesame Dressing)",
+    "time": "10 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If the stems of chrysanthemum leaves are thick and hard, remove the leaves off the thick part of the stems. Then cut the thick part of the stem off and discard.",
+      "Boil a good amount of water in a large pot. Add a pinch of salt and put in the chrysanthemum leaves.",
+      "When the water starts boiling again, cook for another 15 seconds. Remove the pot from the heat. Drain the water, leaving the chrysanthemum leaves in the pot. Use the lid or tongs to hold the leaves in the pot as you drain the water.",
+      "Run cold clean water into the pot with the chrysanthemum leaves in it. Continue to run water and rinse them well with your hands, while at the same time cooling it down quickly.",
+      "Take stems and loose leaves of the chrysanthemum leaves, squeezing the water out as much as you can and place them on a cutting board. If necessary, do it in batches.",
+      "Align all the stems with stem side on the right (if you are a right hander). Starting from the stem end, cut the chrysanthemum leaves into about 4cm (1½\") length.",
+      "Take each bunch of cut leaves, squeeze residual water out and place them in a bowl.",
+      "Using a mortar and pestle, grate sesame seeds until most of the seeds are grated (note 2).",
+      "Add the remaining Goma-ae Dressing ingredients to the mortar. Mix well.",
+      "Add the goma-ae dressing to the bowl and mix well ensuring that the chrysanthemum leaves are thoroughly coated with the dressing.",
+      "Place chrysanthemum leaves in a large bowl or individually. Sprinkle roasted white sesame seeds."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "(10.6oz) Chrysanthemum Leaves (note 1)",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted White Sesame Seeds for Decoration (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3cecfd91f532b93749575fd0a79f4f656a4b28d05090c01dd44e31cbe731fedf",
+    "lineage_hash": "92db51a2ebfa2b8ecafe56293f4a3756f572bb597b86ded8f516e65f35d7d453"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/chrysanthemum-leaves-goma-ae-sweet-sesame-dressing/",
+    "fetchedAt": "2026-08-01T15:53:51.620Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/chrysanthemum-leaves-goma-ae-sweet-sesame-dressing/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

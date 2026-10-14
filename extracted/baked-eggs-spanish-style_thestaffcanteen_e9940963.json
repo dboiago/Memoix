@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Baked Eggs Spanish Style",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 200°C/400°F/gas mark 6.",
+      "In a frying pan with an ovenproof handle, heat the olive oil, add the onion and chorizo, and cook for 4-5 minutes until soft.",
+      "Add the peppers, garlic and smoked paprika and continue to cook for 2-3 minutes until softened.",
+      "Deglaze the pan with sherry vinegar, and reduce until the vinegar has almost evaporated.",
+      "Add the tomatoes, lower the heat, and simmer for 10 minutes until the tomatoes are reduced slightly and softened. Taste and season.",
+      "Make 8 wells in the peppery sauce and crack an egg into each.",
+      "Place the pan in the preheated oven for 8-10 minutes until the egg whites are set but the yolks are still runny.",
+      "Scatter with parsley and serve with the grilled bread, drizzled with a little olive oil and seasoned."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and Finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Chorizo Picante",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": null,
+        "notes": "Finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Pepper",
+        "unit": null,
+        "notes": "Finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "peeled and Finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "chopped, canned",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free Range Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat Leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Country-style Bread",
+        "unit": "slices",
+        "notes": "grilled",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f16b6553a7f91b99b4679d1df1a58a2687d045e2271d22f4f443c0c0161a378",
+    "lineage_hash": "537ed48123446d14d902346ccc320fe6be5ee450c945cf4115fb40628c20ff46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Baked-Eggs--Spanish-Style-",
+    "fetchedAt": "2026-08-03T12:05:45.398Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Baked-Eggs--Spanish-Style-",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

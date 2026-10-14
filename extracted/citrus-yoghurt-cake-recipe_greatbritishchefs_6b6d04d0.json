@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Citrus Yoghurt Cake",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Whisk the eggs with the sugar until pale. Add the extra virgin olive oil and yoghurt and stir to mix",
+      "Sift in the flour, the baking powder and the grated peel of one orange and one lemon",
+      "Butter and dust with flour a 24 cm round cake tin, scrape the batter into the tin and bake for about 30 minutes until golden and dry inside. Use a toothpick to test if it is dry inside",
+      "Remove from the oven, let it cool down for a few minutes and remove from the cake tin. Let it cool down completely on a wire rack, then dust with sugar. It will keep fresh for several days if stored perfectly wrapped in a kitchen towel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "380",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yoghurt",
+        "unit": "g",
+        "notes": "full-fat",
+        "amount": "245",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d6b1ef92a5392bce24e15e58fe5841739b33dc22bb6067d5b45fc06b4d03d8bb",
+    "lineage_hash": "89d138986ac44fe43bcd1c14951357a2f8d2d033b6c19cda10fa989807fa566f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/yoghurt-cake-recipe",
+    "fetchedAt": "2026-08-04T00:03:25.051Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/yoghurt-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

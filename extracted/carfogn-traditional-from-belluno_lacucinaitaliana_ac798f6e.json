@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Carfogn: Traditional from Belluno",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "35",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, granulated sugar, butter and a pinch of salt; then knead in the egg, egg yolk, wine and aquavite. Cover the dough and refrigerate for 1 hour.",
+      "For the filling: toast the poppy seeds in a pan for 2-3 minutes. Melt the chocolate over a bain-marie. Coarsely chop the biscotti. Purée the poppy seeds with the sugar, then add first the biscotti, then the chocolate, and finally the milk and the aquavite. Let it rest for 10 minutes, then transfer the filling to a pastry bag. Roll out the dough into 2 rectangular sheets, about 1/8-inch thick. Add small mounds of filling to one sheet, spaced about 2 inches apart.",
+      "Cover with the second sheet, pressing along the edges to remove any excess air, then cut the rectangular carfogn using a pastry wheel. Fry the carfogn, a few at a time, in plenty of peanut oil for a couple of minutes, until they start to turn golden. Drain on paper towels, sprinkle with powdered sugar and serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "3⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry White Wine",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Aquavite",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Poppy Seeds",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Biscotti",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Aquavite",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c66aa1dc2f3a9459eb17764348f320f0786389c8292726e2315ca2001717c14",
+    "lineage_hash": "5b13fd0d5e10aa3303e00e120e302a04d570e666010fefe383b2c78f4fef06be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/carfogn-Traditional-from-Belluno",
+    "fetchedAt": "2026-08-03T06:08:06.332Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/carfogn-Traditional-from-Belluno",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Coconut Caramel Shrimp",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pat the shrimp gently with paper towels to absorb any excess moisture. Set aside.",
+      "In a medium bowl, mix the coconut water, sugar, caramel, and fish sauce until well-combined. (Andrea recommends tasting it to make sure it has a nice balance of sugar and fish sauce. If necessary, add a little more of either.)",
+      "Heat the coconut oil in a large skillet with the shallots and garlic over medium heat. Cook the shallots and garlic, stirring frequently, until they're translucent. Turn off heat and let cool a few minutes.",
+      "Add the coconut water to the skillet and turn the heat up to medium-high until the coconut water starts to boil. Let the mixture reduce at a steady simmer, adjusting the heat as necessary so it stays there, until it's reduced to about 1/2 cup (125ml). It will take 10 to 12 minutes. Add the shrimp and cook, stirring constantly, until the shrimp are just cooked through and the sauce is reduced to a loose, yet thickened syrup. If you think the shrimp are cooking too fast before the sauce is properly reduced, you can remove them with a slotted spoon, let the sauce reduce, then add them back.",
+      "Turn off the heat and stir in the scallions as well as a good amount of black pepper. Let the mixture sit for a minute or so before serving, stirring the shrimp so it gets coated in the sauce. If the juices get too thick, you can dribble in a little more coconut water to loosen things up."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Large or Jumbo Shrimp",
+        "unit": "lb",
+        "notes": "570g, peeled and deveined",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "C",
+        "notes": "375ml",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel (see Note, Below)",
+        "unit": "Tbsp",
+        "notes": "or light molasses or sorghum syrup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Virgin Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "but not too thin, peeled and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "large",
+        "notes": "peeled and thinly sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "just the green parts, thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d023500467d8fbe4dd9a3da917d57dcbc78be82a79418915f23a5a6539da080e",
+    "lineage_hash": "6e7d964beb34876564a373685989bd650f4e6128352a6f638a0f91e26af5eda9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/coconut-caramel-shrimp-vietnamese-recipe-andrea-nguyen/",
+    "fetchedAt": "2026-08-03T03:12:31.224Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/coconut-caramel-shrimp-vietnamese-recipe-andrea-nguyen/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

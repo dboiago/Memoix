@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Cornbread with Halloumi",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the dry ingredients (polenta, flour, baking powder/soda and salt) in a large bowl. Cut the halloumi into 1.5cm cubes and add to the bowl. Finely chop the fresh chilli and add to the bowl. Set aside.",
+      "Cut the kernels off the ears of corn and add to a food processor.",
+      "Blend until very smooth and lump-free.",
+      "Add the corn purée to a medium saucepan and cook over medium heat, stirring and scraping the bottom constantly, until very thick – 5-10 minutes depending on the heat under the pan.",
+      "Turn off the heat and add the honey and butter (leaving 15g of butter for later), stirring until melted. Stir in the buttermilk. Add the eggs and yolks and whisk everything until fully blended.",
+      "Scrape the wet mixture into the dry mixture and fold everything together until just combined – do not \r\novermix or the bread could turn out tough.",
+      "Heat a 30cm cast iron frying pan (or similar heavy pan) over medium heat until hot. Add the last 15g \r\nbutter and swirl until completely melted. Scrape the cornbread mixture into the frying pan and smooth \r\nthe top. Sprinkle with the sesame seeds and bake in the hot oven for about 20 minutes – when the \r\ncornbread is ready, the top will be golden brown and a toothpick inserted into the centre will come out clean.",
+      "Remove from the oven and allow to cool and firm up for about 5 minutes. Shake the pan to make sure the bread is loose and carefully slide onto a wire rack to cool.",
+      "Serve warm, cut into wedges, possibly with a little salted butter melting over the crumb."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sodium Bicarbonate",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeños",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Halloumi",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn on the Cob",
+        "unit": null,
+        "notes": "fresh, 3 ears",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": "very heaped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "plus 2 large yolks",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e21c6f79d44858a67afa11a2dd41d41fce2f9858f629b792862dcbe4510554f0",
+    "lineage_hash": "54869d52fa9467c7097ef240fb131ee986debe2c4bb8c86232e9770d3e59273c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cornbread-with-halloumi-recipe",
+    "fetchedAt": "2026-08-03T15:02:38.881Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cornbread-with-halloumi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

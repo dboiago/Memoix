@@ -1,0 +1,178 @@
+{
+  "recipe": {
+    "name": "Coffee Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the topping, mix together the 1 ½ cups flour, the brown sugar, cinnamon, salt, 1/2 cup of melted butter, and vanilla in a medium bowl. Stir in the butter and vanilla until the mixture is well-combined and crumbly. Set aside.",
+      "Butter a 9-inch (23cm) square cake pan and line the bottom with parchment paper or dust it with flour and tap out any excess. Preheat the oven to 325ºF (160ºC.)",
+      "To make the cake batter, in the bowl of a stand mixer fitted with the paddle attachment, or in a large mixing bowl using a spoon or spatula, cream the 1/2 cup of softened butter and granulated sugar until light and smooth. Add the egg and the yolk, stopping the mixer to scrape down the sides.",
+      "In a medium bowl, whisk together the 2 cups of flour, salt, baking powder, and baking soda, until well combined.",
+      "Stir in half of the dry ingredients, then the yogurt or sour cream and vanilla, then the rest of the dry ingredients, mixing just until the dry ingredients are moistened. Don’t overmix. If using a stand mixer, you may want to finish mixing the batter with a spatula, by hand.",
+      "Drop the thick better into four large dollops, equally spaced apart, into the prepared pan. Use a metal offset spatula, or another utensil, to spread the batter as even as you can making sure you the batter reaches into the corners.",
+      "Going by handfuls, strew the topping over the cake batter in the pan, gently pressing down each handful into the batter as you go, with enough pressure to gently “fuse” it into the batter but not enough to crush or flatten it. Any monster-sized chunks can be broken up with your fingertips, but it’s nice to have both large and small chunks in there. (Although just be aware the big chunks will fall off when you slice it. However they’re excellent gobbled up as a “bakers bonus.”)",
+      "Bake on the middle rack of the oven for 45 to 50 minutes, until a toothpick inserted in the center comes out clean. (The original recipe gave the baking time as 60 to 70 minutes, although mine was done around the 45 minutes mark. Yours may take longer.) Let cool completely, then slice into squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "210g",
+        "amount": "1½",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "120g",
+        "amount": "⅔",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115g, cubed and melted",
+        "amount": "½",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115g, cubed, at room temperature",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "150g",
+        "amount": "¾",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "280g",
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powde",
+        "unit": "tsp",
+        "notes": "preferably aluminium-free",
+        "amount": "½",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Plain Whole Milk Yogurt",
+        "unit": "C",
+        "notes": "alt: sour cream, 180g",
+        "amount": "¾",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": "optional, for dusting the cake",
+        "amount": "0",
+        "section": "Cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47f02bd9319228baa4d7f77ada34580a0267cfb5629b1fa6912b8f49c3fe05dc",
+    "lineage_hash": "a5a018d30e76b93a02a97be6c98e3e1e2f39c4071faa9c65d4f33eb50bfff011"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/coffee-crumb-cake-recipe/",
+    "fetchedAt": "2026-08-02T22:41:09.584Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/coffee-crumb-cake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

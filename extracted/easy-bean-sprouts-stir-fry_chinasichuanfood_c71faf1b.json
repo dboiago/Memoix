@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Bean Sprouts Stir Fry",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "201",
+      "carbohydrateContent": "9",
+      "fatContent": "18",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Remove the roots of the bean sprouts. Wash gently and drain thoroughly. This is the key step to guaranteeing the dish’s success.",
+      "Heat the wok first, and pour in the oil. Add dried chili pepper, to fry over a slow fire until an aromatic, place in garlic and ginger too.",
+      "Add Bean sprouts immediately. Quickly fry the bean sprouts and green onion sections, and add salt, light soy sauce, and vinegar. This process should be finished within 30 seconds.",
+      "Mix with sesame oil and transfer out immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bean Sprouts",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves Sliced",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Root Ginger Minced",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Pepper Depending How Spicy You Want It to Be",
+        "unit": null,
+        "notes": "dried",
+        "amount": "3-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt or As Needed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Cut Into Sections",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e4c00616c6c4218ec659e78043aa2b095b17fa5f2392ae5b7efe09e9111b8deb",
+    "lineage_hash": "a3362af0ef6b3124124f401c92e21a8251acee91850988b0d772ce4f2772a016"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-bean-sprouts-stir-fry/",
+    "fetchedAt": "2026-08-02T09:27:41.727Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-bean-sprouts-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

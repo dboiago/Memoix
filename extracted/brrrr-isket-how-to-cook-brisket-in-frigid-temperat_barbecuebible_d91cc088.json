@@ -1,0 +1,53 @@
+{
+  "recipe": {
+    "name": "Brisket",
+    "time": "8 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start cooking the brisket eight hours before dinner.",
+      "Rub the meat the night before and pull it out of the refrigerator to warm to room temperature.",
+      "Set up the kettle for indirect heat with fresh charcoal intermixed with hot coals and a large drip pan in the middle.",
+      "Use a considerable amount of charcoal, both for the long cooking time and the cold.",
+      "Put the meat on the grate fat side down.",
+      "Baste the brisket every 30 minutes with its drippings and beer.",
+      "Add dry wood chips to an open but nearly stalled fire to quickly revive it.",
+      "After about seven hours on the grill, tightly wrap the brisket with foil and transfer it to a hot oven to finish.",
+      "Spread the remaining charcoal and coals in an even layer, add a cast iron pan full of oil, and work the potatoes.",
+      "After about an hour, transfer the brisket to a cutting board to rest.",
+      "Thinly slice the brisket against the grain."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Brisket Flat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "408a3678b63d64e04d08ffe1efe1aa8fecccf7bc17dd708079709d6f346e8d82",
+    "lineage_hash": "446ac42ff0916197d1f94ea5fa43dc25d06b7ba149bcdb954fea2cc1446c454b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2023/01/06/how-to-cook-brisket-in-cold-weather/",
+    "fetchedAt": "2026-08-02T18:30:28.233Z"
+  },
+  "rawSource": "https://barbecuebible.com/2023/01/06/how-to-cook-brisket-in-cold-weather/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

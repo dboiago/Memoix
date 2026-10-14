@@ -1,0 +1,167 @@
+{
+  "recipe": {
+    "name": "Buttermilk Foam, Carrot Jam and Flaked Almonds",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 50°C or set up a dehydrator. Put the crumbled carrot cake on a tray and into the oven or dehydrator overnight, until the crumbs are super crisp. Keep in an airtight container until needed",
+      "Put all the ingredients for the carrot coulis in a small saucepan over a medium heat. Leave to simmer and reduce until syrupy. Transfer to a squeezy bottle and keep in the fridge until needed",
+      "To make the carrot jam, put all the ingredients in a saucepan and gently cook, stirring regularly, until it reaches 105°C. Leave to cool, then keep covered in the fridge until needed",
+      "To make the buttermilk foam, whisk all the ingredients together until fully combined. Transfer the mixture into a whipped cream dispenser and, when ready to serve, charge it with gas",
+      "To serve, add a spoonful of the carrot jam to the base of each bowl, then top with some flaked almonds. Add the whipped buttermilk foam on top, filling the bowl, then sprinkle the top with the crispy carrot cake crumbs. Drizzle the carrot coulis on top, then finish with lemon balm cress."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Leftover Carrot Cake",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaked Almonds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Balm Cress",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "coarsely grated",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jam Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "seeds extracted and crushed",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "finely zested, plus half its juice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "47b63357d361e2c72886ce63cd2232d383804f5ec85a40595b23f5943141a892",
+    "lineage_hash": "2bdf1f79b79759106a830001cc3942eadb4cb26191ddf96c53bcf80cd103e531"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/buttermilk-carrot-jam-recipe",
+    "fetchedAt": "2026-08-01T23:52:30.829Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/buttermilk-carrot-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

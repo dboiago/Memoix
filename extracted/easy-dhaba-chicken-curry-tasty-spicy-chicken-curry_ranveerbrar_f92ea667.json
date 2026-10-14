@@ -1,0 +1,292 @@
+{
+  "recipe": {
+    "name": "Dhaba Chicken Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add black cardamom, green cardamom, coriander seeds, mace, black peppercorns, cumin seeds, cloves and salt dry roast on low flame until the spices turn aromatic.",
+      "Transfer it into a grinder jar and grind into a fine powder. Keep it aside for further use.",
+      "In a motarpestel, add ginger, garlic, green chilli, salt, oil and make a smooth paste out of it.",
+      "In a bowl, add chicken and prepared ginger garlic paste marinated well. Keep it for 10-15 minutes.",
+      "Heat oil in a heavy bottom pot, add cumin seeds, black cardamom and saute well.",
+      "Add onion and saute for 5 minutes until translucent.",
+      "Add turmeric powder, degi red chilli powder, coriander powder and saute for 2-4 minutes.",
+      "Add marinated chicken and mix everything well.",
+      "Add tomato puree, water as required and cook for atls 15-20 minutes on medium flamme.",
+      "Add prepared chicken masala and mix well.",
+      "Garnish it with coriander sprig and serve hot with mirch roti.",
+      "Take a lemon size ball dough and dust with wheat flour.",
+      "Roll gently to medium thickness.",
+      "sprinkle little chilli flakes and spread uniformly making sure well combined.",
+      "Fold it into envelope shape and start rolling.",
+      "On the other side spread fresh mint leaves and press it gently.",
+      "Now on a hot tawa place the rolled roti and cook for a minute.",
+      "flip again once or twice till both the sides are cooked properly."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "No Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "12-15",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No Mace",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Corn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "No Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "swaadanasar",
+        "amount": "¼",
+        "section": "For Chicken Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "with bone, cut in big pieces",
+        "amount": "750",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "swaadanasar",
+        "amount": "½",
+        "section": "For Marinating Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "No Black Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "No Onion",
+        "unit": null,
+        "notes": "medium, chopped",
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "No Tomato Puree",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": "as required",
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Chicken Masala",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Balls Whole Wheat Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Mirchi Roti",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirchi Roti",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Mirchi Roti",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Mirchi Roti",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c3977d7c5f35eede9467e7b68d7fbffa16531fcf3a457df154e86067c418cd9",
+    "lineage_hash": "b3165f90b25890214d22d84ff51839e1f43a88fb3ca5747431cbb37d658cb506"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dhaba-chicken-curry/",
+    "fetchedAt": "2026-08-02T14:00:49.637Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dhaba-chicken-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

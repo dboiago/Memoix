@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Cranberry Compote",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "139",
+      "carbohydrateContent": "32",
+      "fatContent": "0.1",
+      "proteinContent": "0.2"
+    },
+    "directions": [
+      "Combine 12 oz cranberries, 12 oz granulated sugar, 8 oz red wine, 1 cinnamon stick, and the zest from 1 orange in a saucepan. Heat over medium high until the wine begins to boil and the cranberries start to pop.",
+      "Reduce the heat to medium -low and continue cooking for about 10 minutes (see note). The majority of the cranberries should have popped and the mixture will be a little thicker.",
+      "Remove the pot from the heat and cool to room temperature.",
+      "Remove the cinnamon stick and orange zest. If you'd like you can slice the orange zest into thin strips and return to the sauce. I just take it out.",
+      "Place in a covered container and chill for several hours. The mixture will continue to thicken as it cools.",
+      "The cooked cranberries will keep for several weeks in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh or frozen",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine (1 Cup (light to Medium Bodied))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange (zest Peeled in a Long Strip (avoid White Pith))",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "afc0396cb608121de7b5fc1200e64d50fa46045783d75e852709fd38d6d0f08d",
+    "lineage_hash": "b63d1576c561a4114c67a8b2ec6e92c9f21bd2f3c8e4add16c3a079cd5e2fcd3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/11/24/cranberries-in-red-wine/",
+    "fetchedAt": "2026-08-02T01:36:00.315Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/11/24/cranberries-in-red-wine/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

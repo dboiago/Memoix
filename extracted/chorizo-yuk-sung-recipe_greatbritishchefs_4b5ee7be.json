@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chorizo Yuk Sung",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the wild rice, heat up a small pan of oil to around 200ºC. Add the rice and wait until it puffs up and turns slightly golden. Use a slotted spoon to remove the rice, drain on kitchen paper and lightly season with salt",
+      "Place a frying pan over a medium heat and add the diced chorizo. Cook until the fat has rendered out and the chorizo is nicely golden, then remove the chorizo from the pan leaving the bright orange oil behind (reserve the cooked chorizo)",
+      "Add the pork mince to the pan and cook for a few minutes in the chorizo oil until almost cooked. Use a slotted spoon to remove the mince from the pan and set it aside with the chorizo. Again, try to leave as much of the chorizo oil in the pan as possible",
+      "Return the pan with the oil to the heat and add the diced carrot. Sweat for a couple of minutes, then add the garlic and ginger. Cook for another 2 minutes then add the mushrooms",
+      "Once the mushrooms have softened, add the chorizo and pork mince back into the pan and turn up the heat. Add the light soy sauce with the honey and bring to the boil, then add the cornstarch-water mixture and cook out for a minute until the sauce has thickened slightly",
+      "Remove from the heat and stir the spring onions through the mixture (reserving a small handful for garnish)",
+      "Lay out the little gem leaves onto serving plates and add a spoonful of the crispy puffed rice onto each, followed by a spoonful of the mince mixture. Top with the sliced chillies, more spring onion and a final sprinkle of the puffed rice and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chorizo",
+        "unit": "g",
+        "notes": "picante or regular, finely diced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "brunoise, peeled and finely diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, finely sliced into matchsticks",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Button Mushrooms",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "g",
+        "notes": "mixed with 40g water",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Little Gem Lettuces",
+        "unit": null,
+        "notes": "separated into 20 leaves and washed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "113a83f091fcb55c66efd25489ddee4255ac4f952a2a28227d6e8e497d408ee7",
+    "lineage_hash": "882f9fb78105df9eeb909372b9e60d8e6bea4de5a84a4c90b1d548eb09252018"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-yuk-sung-recipe",
+    "fetchedAt": "2026-08-02T21:26:35.029Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-yuk-sung-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

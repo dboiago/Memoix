@@ -1,0 +1,73 @@
+{
+  "url": "https://www.cookwithmanali.com/dahi-aloo/",
+  "slug": "dahi-aloo_cookwithmanali_b1f18462",
+  "title": "Dahi Aloo",
+  "byline": "Manali Singh",
+  "fetchedAt": "2026-08-01T21:10:55.443Z",
+  "ldName": "Dahi Aloo",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Indian",
+  "ldCategory": "Main Course",
+  "ldKeywords": "dahi aloo",
+  "ldIngredientsRaw": [
+    "1 tablespoon ghee (or use oil)",
+    "1/2 teaspoon cumin seeds",
+    "1 tablespoon finely chopped ginger",
+    "1-2  green chilies (chopped, adjust to taste)",
+    "3 medium potatoes (around 600 grams, boiled and slightly crushed)",
+    "1 teaspoon coriander powder",
+    "1/2 teaspoon turmeric powder",
+    "1/4 teaspoon red chili powder (or to taste)",
+    "1 cup whisked plain yogurt (245 grams)",
+    "2 cups water (16 oz)",
+    "3/4 teaspoon salt (or to taste)",
+    "cilantro (to garnish)"
+  ],
+  "ldInstructionsRaw": [
+    "Whisk the yogurt until smooth before you start.&nbsp;",
+    "Boil 3 medium potatoes. You can either boil them in a pressure cooker or a stove-top. If using a traditional pressure cooker, cook on high heat for 7-8 whistles. If using a stove-top, cut into quarter and cook for 20-25 minutes until done.",
+    "Peel the skin of the potatoes and crush them slightly. You just want to break them into pieces, best done by your hands. Do not mash them. Set them aside.",
+    "Heat a heavy bottom pot or kadai on medium heat. Once hot, add ghee to the pot and then add the cumin seeds, chopped ginger and chopped green chili.",
+    "Saute for 1 to 2 minutes until the ginger starts turning golden brown in color.&nbsp;Stir in the crushed boiled potatoes into the pot.",
+    "Give a quick stir and then add the spices- coriander powder, turmeric and red chili powder. Toss the potatoes until well coated with the spices.",
+    "Now remove the pot from heat and then stir in the yogurt, one tablespoon at a time and stirring continuously.",
+    "Keep stirring for 2 minutes until all the yogurt is well combined, this prevents the yogurt from curdling. This is also why we also remove the pot from heat while adding the yogurt.",
+    "Transfer the pot back on to the stove and add in 2 cups water. Let it come to a slight boil.",
+    "Lower the heat, then add the salt and mix.&nbsp;Cover the pot and let dahi aloo simmer on low heat for 3 to 4 minutes.",
+    "Garnish dahi aloo with cilantro and serve with roti/rice/poori or paratha. I add quite a bit of water as&nbsp;it thickens as it cools down.&nbsp;"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "78 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "2 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "cholesterolContent": "17 mg",
+    "sodiumContent": "511 mg",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 tablespoon ghee, or use oil",
+    "▢ 1/2 teaspoon cumin seeds",
+    "▢ 1 tablespoon finely chopped ginger",
+    "▢ 1-2 green chilies, chopped, adjust to taste",
+    "▢ 3 medium potatoes, around 600 grams, boiled and slightly crushed",
+    "▢ 1 teaspoon coriander powder",
+    "▢ 1/2 teaspoon turmeric powder",
+    "▢ 1/4 teaspoon red chili powder, or to taste",
+    "▢ 1 cup whisked plain yogurt, 245 grams",
+    "▢ 2 cups water, 16 oz",
+    "▢ 3/4 teaspoon salt, or to taste",
+    "▢ cilantro, to garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "IN",
+  "siteCourseHint": null
+}

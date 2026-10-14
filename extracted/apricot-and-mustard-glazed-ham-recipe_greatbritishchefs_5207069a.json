@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Apricot and Mustard-Glazed Ham",
+    "time": "2 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the gammon in a stock pot with the vegetables, peppercorns and thyme. Add enough water to just cover the joint, then place over a medium heat and simmer for 1.5 hours",
+      "Parboil the potatoes in salted water for 15 minutes. Drain then place in a roasting tray. Use the bottom of a large pan to crush the potatoes. You want the skins to split to create jagged edges which will crisp up nicely in the oven",
+      "Once the gammon is cooked, strain the stock and reserve for another recipe (it is delicious in soups). When the meat is cool enough to handle, slice off the rind, leaving as much fat attached to the joint as possible. Score the fat in a diagonal pattern, which will help the glaze stay in place",
+      "Place the gammon on a wire rack set over a roasting tray and add a cup of water in the bottom of the tray. This will stop the gammon from drying out whilst it is roasting",
+      "Place the ingredients for the glaze in a bowl and stir together. Brush the glaze all over the gammon, ensuring you get plenty into the scored lines on the fat. Place in the oven and roast for 30 minutes, brushing on more glaze every 10 minutes until you have a nice sweet sticky finish",
+      "At the same time, sprinkle the smashed potatoes with smoked paprika and toss with the oil until evenly coated. Place in the hot oven and cook for 30–40 minutes",
+      "Meanwhile, pick the tarragon leaves and finely chop. Stir through the mayonnaise, taste and season with salt. The ham and potatoes should be ready at roughly the same time – once the glaze is sticky and the potatoes are crisp, serve immediately with the mayonnaise. Any leftover ham makes amazing sandwiches"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsmoked Gammon Joint",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "peeled and roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "bunch",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Jam",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wholegrain Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e6ef37a20accc437f1f7b92cc480edf552e8c4b3b7c74f70490625bc5a473184",
+    "lineage_hash": "03a123d26f1d74fd165a8066dc11f2b7bd72d60a9c1ed204d6aa5e8d11450af8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apricot-mustard-glazed-ham-recipe",
+    "fetchedAt": "2026-08-03T05:06:43.782Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apricot-mustard-glazed-ham-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

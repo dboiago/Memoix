@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Chocolate and Cacao Nib Cookies",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt together 90 g (3 oz) of the chocolate and all of the butter in a small saucepan over low heat. Tranfer into a large mixing-bowl and let cool for ten minutes.",
+      "In the meantime, combine the flour, cocoa powder, and baking powder in another mixing-bowl, and set aside.",
+      "Finely chop the reserved chocolate, and set aside.",
+      "Whisk the eggs into the cooled melted chocolate. Add in the sugar and mix again.",
+      "Sift in the flour mixture, and stir with a wooden spoon until well combined. The batter will be thick.",
+      "Fold in the chopped chocolate, cacao nibs and fleur de sel.",
+      "Preheat the oven to 180° C (350° F) and line a cookie sheet with parchment paper.",
+      "Scoop out rounded teaspoons of batter, shape them into balls with the tips of your fingers, and line them up on the cookie sheet, leaving a little space between them.",
+      "Put the cookie sheet in the refrigerator for 10 minutes (if the sheet and batter are cold, the cookies are less likely to spread).",
+      "Insert the cookie sheet into the oven to bake for 8 to 10 minutes, until the tops feel just set. Don't overbake, or they won't be as moist inside.",
+      "Transfer to a rack to cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fleur De Sel",
+        "unit": "tsp",
+        "notes": "substitute 1/4 teaspoon regular salt",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "56bbef8c32904046bf9778df6842b4cdffc149064005620f78bd051cfb89c7a7",
+    "lineage_hash": "82dc25cd02a362a5b7c20452d1eab9a263820ea1771ee62e84af6180167ea5ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chocolate-and-cacao-nib-cookies-recipe/",
+    "fetchedAt": "2026-09-30T19:39:01.758Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chocolate-and-cacao-nib-cookies-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

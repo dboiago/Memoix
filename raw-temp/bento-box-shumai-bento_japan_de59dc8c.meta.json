@@ -1,0 +1,46 @@
+{
+  "url": "https://japan.recipetineats.com/bento-box-shumai-bento/",
+  "slug": "bento-box-shumai-bento_japan_de59dc8c",
+  "title": "Bento Box – Shumai Bento",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T20:11:43.429Z",
+  "ldName": "Bento Box – Shumai Bento",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main",
+  "ldKeywords": "bento, bento box, shumai",
+  "ldIngredientsRaw": [
+    "1 cup cooked rice ((note 1))",
+    "5 pieces Shumai  ((note 2))",
+    "½ portion Iri Tamago from Sanshoku Bento recipe",
+    "½ portion Peas from Sanshoku Bento recipe",
+    "3 round slices  of carrot cut into flower shape ((3mm (⅛\") thickness, Note 3))",
+    "2 tbsp Sweet and Sour Pickled Red Cabbage",
+    "1  okazu cup"
+  ],
+  "ldInstructionsRaw": [
+    "Fill about half of the bento box with the rice, allowing for 1cm / ⅜” margin at the top (see the first photo in this post).",
+    "Place Shumai pieces next to the rice, filling most of the remaining space of the bento box.",
+    "Put Pickled Red Cabbage in the okazu cup and place it next to the shumai.",
+    "Cover half of the rice with Iri Tamago and the rest with Peas.",
+    "Place the flower-shaped carrots over the line between the egg and the peas."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcup\n\t\t\t\t\t\t\t\t\t\tcooked rice\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "5\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tpieces\n\t\t\t\t\t\t\t\t\t\tShumai \n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tportion\n\t\t\t\t\t\t\t\t\t\tIri Tamago from Sanshoku Bento recipe",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tportion\n\t\t\t\t\t\t\t\t\t\tPeas from Sanshoku Bento recipe",
+    "3\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tround slices \n\t\t\t\t\t\t\t\t\t\tof carrot cut into flower shape\n\t\t\t\t\t\t\t\t\t\t(3mm (⅛\") thickness, Note 3)",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tSweet and Sour Pickled Red Cabbage",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tokazu cup"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

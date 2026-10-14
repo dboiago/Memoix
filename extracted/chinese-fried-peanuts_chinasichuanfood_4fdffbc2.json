@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Chinese Fried Peanuts",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "538",
+      "carbohydrateContent": "7",
+      "fatContent": "52",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Rinse peanuts and drain.",
+      "Add peanuts along with the oil to a pan and then turn on the fire to medium slow fire. Shake your pan and stir the peanuts from time to time.",
+      "After 4-5 minutes, there will be “pa” sound in the pan. Turn off the heat and shake the pan for another minute. Transfer out and filter any oil.",
+      "Add 1 teaspoon of liquor and garnish salt. Mix well. Serve after completely cooled down."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peanuts with Skin",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt for Garnishing",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquor",
+        "unit": "tsp",
+        "notes": "like vodka",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "52424953bf1c13b1a35b2b6871835c514e44d1a3ff484f5cb53218c88b4d394d",
+    "lineage_hash": "fbb596886bfce4e42d923beedbb8941f0a6a401e272dfc598280aa109bf0048d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-fried-peanuts/",
+    "fetchedAt": "2026-08-02T01:44:21.760Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-fried-peanuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

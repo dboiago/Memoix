@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Downtown Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a shaker with ice and shake well. Strain into the glass over fresh ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Gum Syrup",
+        "unit": "oz",
+        "notes": "Kindred uses Small Hand Foods",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3eefe8dbddab2efa8fb0bcdb6b06160ea9774a2b8a1c338fa5fbd6a6e2deb7f5",
+    "lineage_hash": "11dfa87c3d23d16e60a21daa1126c898a0ab669a32f8c6e01a394823c7384901"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/downtown-daiquiri/",
+    "fetchedAt": "2026-08-03T20:50:52.879Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/downtown-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "A La Louisiane",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients in a mixing glass with ice. Strain into a chilled coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dashes",
+        "notes": "The Driftwood uses Lucid",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud’s Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9543de28cc6a7dbbae1d86c291283885da723feaeb28e5e396aabf3f8ba1f659",
+    "lineage_hash": "ec3627c87144d4415fd0c4aab7bdaf255283a5b6ddb833dc5e5703c57f87a746"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/a-la-louisiane/",
+    "fetchedAt": "2026-08-03T23:35:39.009Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/a-la-louisiane/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

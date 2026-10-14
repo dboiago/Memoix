@@ -1,0 +1,276 @@
+{
+  "recipe": {
+    "name": "Bream, Tamarind and Jalapeño Papdi",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin two days before by making the roomali roti papadi dough. Place the ingredients in the bowl of a food mixer with dough hook attached and kneed the dough on a medium strength for 10–15 minutes. Place in a container, cover and leave to cool",
+      "Once cooled, divide into 100g balls, cover in clingfilm and leave to rest in the fridge overnight",
+      "The following morning, heat up an ulta tawa (inverted wok) or a large flat frying pan, over a medium heat. Roll out the dough to a 1mm thickness and cook for one minute on each side.While hot, cut the cooked roti with a large ring cutter and leave to dry overnight at room temperature",
+      "Fillet and skin the bream. Vacuum seal inside a bag with a little oil and blast chill to freeze – this helps to break down the flesh a little but also ensures that the fish is safer to consume raw",
+      "Once frozen solid, remove the fish from the freezer and leave to thaw in the fridge until the fish is half-frozen. At this stage, slice into a clean, fine dice",
+      "To make the jalapeño emulsion, place all ingredients except the grapeseed oil in a blender and blitz on a medium low-speed until smooth. Slowly stream in the grapeseed oil, until emulsified, then store in a squeezy bottle in the fridge for up to two days",
+      "To make the tamarind dressing, blend all the ingredients until a thick, viscous dressing comes together",
+      "Now all of the elements are complete, heat some neutral vegetable oil to 160˚C. Fry the disks of roti on each side until light golden. These continue to colour once removed from the oil due to high sugar content of Indian chakki atta. Drain on kitchen paper and leave to cool",
+      "Place the diced bream in a bowl and dress with finely sliced green chilli, some of the dressing and season with maldon salt. Taste and adjust seasoning if needed",
+      "While the fish marinates, spread a little jalapeno emulsion onto a papdi (like a tostada). Top with the bream (about 40g per portion) and garnish with the coriander leaves, radish and onion. Finish with the dianthus flowers"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sea Bream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chakki Atta Flour",
+        "unit": "g",
+        "notes": "wholemeal",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "g",
+        "notes": "warmed to 40ºC",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": "warmed to 40ºC",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalepeno Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pre-hydrated Xanthan Gum",
+        "unit": "g",
+        "notes": "10g water mixed with 0.2g xanthan gum",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "g",
+        "notes": "gently warmed",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": "cold pressed",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Leaf Chaat Masala",
+        "unit": "g",
+        "notes": "or any store bought chaat masala with dried lime leaves added in",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-dried Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon Radish",
+        "unit": null,
+        "notes": "julienned and placed in ice water to crisp up",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Coriander Leaves",
+        "unit": null,
+        "notes": "julienned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bombay Onion",
+        "unit": null,
+        "notes": "julienned and placed in ice water to crisp up",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dianthus Flowers",
+        "unit": null,
+        "notes": "petals picked",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c04f91f6f410a7e36a0119915858104efcc8bedc5b176f6ac73079c910a977a",
+    "lineage_hash": "d989c574ba8435bad0991e0ee7d0d44c0a3cc6aa61fbaa6257b998039db2f422"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bream-tamarind-papdi-recipe",
+    "fetchedAt": "2026-08-02T19:05:34.419Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bream-tamarind-papdi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

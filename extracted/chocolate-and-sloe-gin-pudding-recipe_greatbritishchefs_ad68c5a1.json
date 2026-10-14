@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Chocolate and Sloe Gin Pudding",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the ice cream base. Combine the milk and double cream in a saucepan. Split the vanilla pod and scrape out to separate the seeds. Add both the seeds and remaining pod to the pan and place over a medium heat",
+      "While the cream mixture is on the heat, whisk together the egg yolks and sugar until pale and creamy in texture. Once the cream mixture comes to the boil, remove from the heat and pour slowly onto the egg yolks, continuously whisking until all of the ingredients are thoroughly combined",
+      "Return the mixture to the saucepan and place over a low-medium heat. Stir continuously until the mixture thickens slightly to coat the back of a wooden spoon or spatula (80˚C). Remove from the heat immediately and pass through a fine strainer into a bowl to cool, stirring occasionally. Refrigerate until required",
+      "To make the damson fool, add the damsons, sugar and water to a pan and bring to the boil. Place a lid on the pan, simmer for 10 minutes and remove from the heat",
+      "Pass the mixture through a sieve into a bowl, allow to cool then chill in the fridge until ready to churn the ice cream",
+      "Churn the ice cream base in an ice cream maker. Once thickened, fold in the damson purée. Continue to churn until combined and keep in the freezer until required",
+      "For the chocolate puddings, whisk together the eggs and sugar until pale and fluffy. Meanwhile, melt the chocolate and butter together in a bain-marie or microwave",
+      "Once melted, add the chocolate and butter mixture to the eggs and whisk together. Add the dry ingredients, fold in gently, then stir in the sloe gin",
+      "Transfer either to individual ramekins or to 1 large oven dish. Set aside",
+      "Cook the puddings in the oven for 5-10 minutes, depending on the size of dish that you are using - the puddings should be soft in the centre with a nice crust on the outside. Dust with cocoa powder and serve immediately with a scoop of the ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "tsp",
+        "notes": "ground",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sloe Gin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Damsons",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "or 2-3 drops of essence",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6770517b700a23eb21eef97413a3c743bac92a6f5a92261cd92211f2e07d2902",
+    "lineage_hash": "0a1d25d51a57e74e6678e6d3b6ca784c53971f457f90844620524d8c7e8f6e2d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-sloe-gin-pudding-recipe",
+    "fetchedAt": "2026-08-03T20:25:04.778Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-sloe-gin-pudding-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

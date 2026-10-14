@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Rose Dumpling",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "621",
+      "carbohydrateContent": "91",
+      "fatContent": "16",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Chop the cabbage and green shallots finely. Sprinkle 1/2 tsp of salt over it and leave it for about 5 minutes.",
+      "Squeeze out the excess water from the cabbage and shallots. Place them in a mixing bowl. *3",
+      "Add the pork mince and all sauces to the bowl and mix them together till the mince becomes a bit sticky.",
+      "Place one wrapper on a chopping board and wet one side edge with water and overwrap with another wrapper.",
+      "Repeat the same with two more wrappers (altogether 4).",
+      "Spoon about a heaped teaspoon amount of the pork mixture onto the centre of each gyoza wrapper.",
+      "Wet the edge of the wrappers with water with your finger and fold them in half from the right-hand side.",
+      "Seal and close up the gyoza wrapper firmly and roll them up from one side.",
+      "Wet the end of one side of the gyoza rose to close the gyoza. Repeat this step with 28 wrappers to make 8 gyoza roses altogether.",
+      "Heat some oil in a frying pan over medium heat and place the gyoza in the pan and let the bottom of the rose brown.",
+      "Pour 1/4 cup of water into the pan and put a lid on it to steam the gyoza for about 5 minutes.",
+      "Take the lid off and let the water evaporate. Turn off the heat and serve the gyoza on a plate."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gyoza Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "32",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Chopped Green Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sake",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Sesame Seed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0a8f3ee0da509b2cdc31df4f93ce92d88102b914aed33188a885f6a6c8fe37f3",
+    "lineage_hash": "d8988bce81d589a398249e75ab033bf8983ac48a0f3f26a9e908deace60b378b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/rose-dumplings/",
+    "fetchedAt": "2026-08-01T19:04:48.201Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/rose-dumplings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

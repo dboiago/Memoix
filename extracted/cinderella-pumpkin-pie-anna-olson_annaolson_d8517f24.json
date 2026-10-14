@@ -1,0 +1,193 @@
+{
+  "recipe": {
+    "name": "Cinderella Pumpkin Pie",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C) and grease a 9-inch (23 cm) springform pan.",
+      "For the crust, stir the cookie crumbs with the brown sugar and cinnamon and then stir in the melted butter until evenly combined. Press into the bottom and all the way up the sides of the pan. Bake for 10 minutes (no change will be noticeable). Cool on a wire rack before filling. Leave the oven on.",
+      "For the cheesecake layer, beat the cream cheese until smooth (by hand is easy enough) and then beat in the sugar, cinnamon, cloves and nutmeg. Switch to a whisk and whisk in the egg, followed by the pumpkin.",
+      "Scrape the batter into the cooled crust and bake for 30 minutes, until the cheesecake no longer jiggles in the centre. While this layer bakes, prepare the pumpkin pie layer.",
+      "Whisk the pumpkin with the brown and granulated sugars and then whisk in the cinnamon, cloves and nutmeg. Whisk in the eggs followed by the whipping cream. Once the cheesecake layer has baked for 30 minutes, remove the pan from the oven and gently pour the pumpkin pie filling over the cheesecake it will fill the pan right to the top.",
+      "Return the pan to the oven and bake for 50 to 60 minutes more, until only the centre of the pie shows signs of jiggling. Cool the pie, in its pan, on a wire rack to room temperature, up to 4 hours. Chill the cooled pie uncovered in the fridge overnight to set the filling.",
+      "To decorate the pie, remove it from the pan and carefully slide it onto a cake stand or a platter. Scoop the whipped cream into a piping bag fitted with plain or star tip and pipe a crown just around the top of the pie. Chill until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "2 ¾ Cups Chocolate Cookie Crumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "390",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": "25 g",
+        "amount": "2",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "1.5 g",
+        "amount": "½",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "115 g, melted",
+        "amount": "½",
+        "section": "Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Pkg Cream Cheese",
+        "unit": null,
+        "notes": "8 oz/250 g, at room temperature",
+        "amount": "1",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "70 g",
+        "amount": "⅓",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "1",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Pumpkin Purée",
+        "unit": "C",
+        "notes": "125 mL",
+        "amount": "½",
+        "section": "Cheesecake Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Pure Pumpkin Purée",
+        "unit": "C",
+        "notes": "500 mL",
+        "amount": "2",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Packed Light Brown Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": "3 g",
+        "amount": "1",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Nutmeg",
+        "unit": "tsp",
+        "notes": "1 g",
+        "amount": "¼",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": "250 mL",
+        "amount": "1",
+        "section": "Pumpkin Pie Layer",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4da6fa81dafe771e1d02ba1bd73eb451e42cd4994fc9538b9bcd2f8c656f8d8",
+    "lineage_hash": "acc0994cf43e599a328008519a26f415cea8423f1ac595d19772daf54cce5f10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cinderella-pumpkin-pie/",
+    "fetchedAt": "2026-08-01T18:58:19.401Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cinderella-pumpkin-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

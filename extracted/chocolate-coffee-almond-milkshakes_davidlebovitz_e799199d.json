@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Chocolate-Coffee Almond Milkshakes",
+    "time": null,
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the milk, espresso powder, and almond extract in a blender and blend to mix thoroughly, about 15 seconds.",
+      "Add the slightly-softened ice cream and sorbet and pulse several times to begin breaking the scoops up. With the blender motor off, use a flexible spatula to mash the mixture down onto the blender blades.",
+      "Continue pulsing, stopping, and mashing until the mixture is well blended, thick, and moves easily in the blender jar. Pour into a chilled glasses, and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cold Whole",
+        "unit": "C",
+        "notes": "alt: low-fat milk, 125ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoops French",
+        "unit": "medium",
+        "notes": "vanilla ice cream (about 1 pint/340g), softened until just melty at the edges",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoops Chocolate Sorbet (about 1 Pint/340g)",
+        "unit": "medium",
+        "notes": "or chocolate sherbet, softened until just melty at the edges",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c4c46c07088fda0779ff256482bbf93d3388fdcc83fcbaaaa985a50f029100a",
+    "lineage_hash": "c84042552bb4ef20b5aa41138cd74807a099d525661aa4f1aefea30d4a8b33ff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/lopera-chocolate-milkshake-with/",
+    "fetchedAt": "2026-08-03T02:32:20.778Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/lopera-chocolate-milkshake-with/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

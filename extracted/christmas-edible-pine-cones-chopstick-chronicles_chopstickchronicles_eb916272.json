@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Christmas Edible Pine Cones (Japanese)",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "229",
+      "carbohydrateContent": "16",
+      "fatContent": "2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Place sweet potatoes in a pot and enough water just cover the potatoes.",
+      "Bring it to boil on high heat then turn the heat down to medium and simmer for 10-15 min till the potato is soft and cooked.",
+      "Drain the cooking water and add butter while the sweetpotato is still hot.",
+      "Add sugar, and cocoa powder and mash them all together with a potato masher.",
+      "Take about 2 tbs of mashed sweet potato on to a cling wrap.",
+      "Wrap the sweet potatoes and shape it like a cone.",
+      "Tap it onto the kitchen bench to flatten the bottom gently 2-3 times.",
+      "Unwrap the cling wrap and start inserting bigger pieces of choco flakes from the bottom side.",
+      "Continue inserting choco flakes bigger pieces from the bottom to smaller pieces to the top.",
+      "Repeat same for the remaining ingredients.  It will make about 10 pine cones. *4"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Purple Sweet Potatoes Peeled and Chopped",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsulted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Packet Chocolate Coated Corn Flakes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b626bcd458ed1e123366648576dd77c5d7843a6413cdd4d67bd64ac70697d5da",
+    "lineage_hash": "6138611ae02428e9ca3feb6b26fbef579b86a05779d97b5761c30e2987085f82"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chopstickchronicles.com/christmas-edible-pine-cones/",
+    "fetchedAt": "2026-08-01T22:07:25.597Z"
+  },
+  "rawSource": "https://www.chopstickchronicles.com/christmas-edible-pine-cones/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

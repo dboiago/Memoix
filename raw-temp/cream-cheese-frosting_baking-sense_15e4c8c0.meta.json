@@ -1,0 +1,58 @@
+{
+  "url": "https://www.baking-sense.com/2017/01/28/cream-cheese-frosting/",
+  "slug": "cream-cheese-frosting_baking-sense_15e4c8c0",
+  "title": "Cream Cheese Frosting",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T17:04:07.349Z",
+  "ldName": "Cream Cheese Frosting Recipe",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "best, easy, frosting",
+  "ldIngredientsRaw": [
+    "8 oz unsalted butter (room temperature)",
+    "12 oz confectioner's sugar (3 cups)",
+    "8 oz cream cheese (room temperature)",
+    "⅛ teaspoon table salt",
+    "1 teaspoon lemon juice",
+    "1 tablespoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Cream 8 oz&#32;unsalted butter in a mixing bowl until softened. Add 12 oz&#32;confectioner's sugar (3 cups) and mix until combined with no lumps. Scrape the bowl and beater attachment.",
+    "With the mixer running, toss in 8 oz&#32;cream cheese. Scrape the bowl and beater completely, add ⅛ teaspoon&#32;table salt, 1 teaspoon&#32;lemon juice and 1 tablespoon&#32;vanilla extract. Switch to the whisk attachment.",
+    "Whip the mixture on medium high until light and fluffy",
+    "Best used immediately after it's made."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "154 kcal",
+    "carbohydrateContent": "22 g",
+    "proteinContent": "1 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "10 g",
+    "cholesterolContent": "45 mg",
+    "sodiumContent": "64 mg",
+    "sugarContent": "1 g",
+    "transFatContent": "0.5 g",
+    "fiberContent": "0.001 g",
+    "unsaturatedFatContent": "5 g"
+  },
+  "htmlIngredientLines": [
+    "8 oz unsalted butter (room temperature)",
+    "12 oz confectioner’s sugar (3 cups)",
+    "8 oz cream cheese (room temperature)",
+    "⅛ teaspoon table salt",
+    "1 teaspoon lemon juice",
+    "1 tablespoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

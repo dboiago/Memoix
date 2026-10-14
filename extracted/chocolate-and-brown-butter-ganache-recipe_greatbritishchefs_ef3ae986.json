@@ -1,0 +1,374 @@
+{
+  "recipe": {
+    "name": "Chocolate and Brown Butter Ganache",
+    "time": "3 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To start the dish, make the coconut chips. Preheat the oven to 120°C/gas mark 1/2",
+      "Slice the coconut on a mandoline as finely as possible to get thin crescent shapes",
+      "Place the caster sugar, water and Malibu into a saucepan, bring to the boil and add the lime juice. Add the coconut slices and lower the heat until gently simmering. Poach for 20 minutes then drain, reserving the syrup for future use",
+      "Carefully lay the coconut slices on a silicone mat-lined tray and place in the oven for 4-5 hours until crisp and dry. Remove from the oven and leave to cool",
+      "Once cool, break into smaller pieces and store in an airtight container until needed",
+      "For the coconut gel, place all of the ingredients into a saucepan. Bring to the boil, whisking continuously",
+      "Cook for 2 minutes, then transfer to a blender and blitz. Pass through a fine chinoise and set aside in the fridge until cold and set hard",
+      "Return to the blender and blitz until smooth. Keep in a squeezy bottle",
+      "For the avocado ice cream, pour the milk and double cream into a heavy-based saucepan and bring to a gentle boil",
+      "Meanwhile, whisk the egg yolks, caster sugar and dextrose together. Pour half of the milk mixture onto the egg yolks, whisking to combine, then pour back into the pan",
+      "Cook over a low heat, stirring constantly with a wooden spoon, until the mixture is thick enough to coat the back of the spoon (it should register about 84°C on a thermometer). Strain immediately through a fine sieve into a bowl and leave to cool",
+      "Place the avocado, rum, vitamin c powder, lime juice and zest in a blender and blitz until smooth",
+      "Pour the custard over the avocado mixture and blitz again until smooth. Pass through a fine sieve and churn in an ice cream maker",
+      "For the chocolate crumble, place all of the ingredients into a mixing bowl and mix to a crumble consistency. Place in the fridge to chill for 2 hours",
+      "Cook the crumbs in the oven, stirring regularly. Once ready, set aside until ready to serve",
+      "For the chocolate and brown butter ganache, melt the butter in a frying pan until it turns a nice golden brown colour. Pass through a sieve and allow to cool",
+      "Place 125g of the double cream in a thick-bottomed saucepan, bring to the boil and dissolve the glucose in the cream. Remove from the heat",
+      "Mix the 2 melted chocolates together in a heatproof bowl and pour the cream onto them. Mix until smooth and set aside",
+      "In a mixing bowl, whisk the yolks and salt until pale and creamy, then add the cocoa powder. Slowly drizzle in the beurre noisette, as if making a mayonnaise. Then, fold this into the chocolate and cream mix",
+      "Finally, whip the remaining double cream to ribbon stage and fold into the mix. Pour the mixture into 12 metal rings, 5cm in diameter and 5cm high, filling them two thirds full",
+      "Chill for 2 hours until set, keeping the remaining chocolate mixture at room temperature. Once the chocolate has set, push it up the sides of the moulds with your fingers so a well is formed in the centre",
+      "Squeeze in the coconut gel to just below the height of the chocolate. Place back in the fridge to set",
+      "For the chicory glaze, place the water and caster sugar in a small thick-bottomed saucepan. Dissolve the sugar slowly then raise the heat until a deep and dark caramel forms",
+      "Whisk in the double cream and the chicory essence - be careful as it will splutter",
+      "Stir until the sugar has dissolved, then whisk the soaked gelatine into the caramel. Whisk in the vegetable oil, bring back to the boil then pass through a fine chinois",
+      "Remove the chocolate ganaches from the fridge, cover with the remaining chocolate to within 2mm from the top of the ring and smooth over. Pour the chicory glaze onto the chocolate until level with the top of the moulds. Return to the fridge until needed",
+      "15 minutes before serving, remove the ice cream from the freezer and place in the fridge. Remove the ganache from the fridge and unmould",
+      "To serve, place a line of crumble on each plate then arrange the ganache alongside. Dot with the coconut gel and garnish the ganache with coconut chips. Place a quenelle of ice cream next to the ganache and lay a strip of butterscotch across the ice cream. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "64% Dark Chocolate",
+        "unit": "g",
+        "notes": "bitter, melted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "bitter",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicory Essence",
+        "unit": "g",
+        "notes": null,
+        "amount": "17",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "135",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": null,
+        "notes": "shelled",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malibu",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": "Sicoly",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malibu",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": "g",
+        "notes": "flesh only",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juice and zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vitamin C Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "100%",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b82bb330e48614be3417d144829163557a49ea4a049a57010271291d504cdc02",
+    "lineage_hash": "be0e3bf5132ad1bd2cfadde5d8e934bb262f290917156573e4a8db930500165f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-brown-butter-ganache-recipe",
+    "fetchedAt": "2026-08-03T17:19:02.754Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-brown-butter-ganache-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

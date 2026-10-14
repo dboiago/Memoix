@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Corned Beef and Cabbage",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the corned beef in a Dutch oven. Preheat the grill to medium, about 300°F.",
+      "Tie the bay leaves, mustard seeds, peppercorns, and allspice berries in a square of cheesecloth (alternatively, wrap them in aluminum foil, then perforate the bundle with a fork). Add the spice bundle to the pot and add beer or water to cover by a depth of 2 inches.",
+      "Cook the corned beef for 6 to 8 hours, occasionally skimming off any foam that rises to the surface with a ladle or slotted spoon. Continue to cook (use just few coals if using charcoal) on low and gently simmer the corned beef, uncovered, until nearly tender, 2 additional hours, or longer, if needed.",
+      "Remove any wilted or blemished outside leaves from the cabbage. Cut the cabbage in half through the core. Make V-shaped cuts to remove the core, then cut each cabbage half into quarters to obtain 8 wedges.",
+      "Add the cabbage, carrots, onions, and potatoes to the pot, and continue cooking until tender, 1 to 1-1/2 hours more, or as needed. There should be enough liquid to cover the corned beef and vegetables by a depth of 1 inch; add beer or water as needed. (If there’s too much liquid, keep the Dutch oven uncovered after adding the vegetables.)",
+      "To serve, remove and discard the spice bundle. Transfer the corned beef to a welled cutting board and use a sharp knife to slice it across the grain as thickly or thinly as you desire. Transfer the slices to a platter or plates, and use a slotted spoon to arrange the boiled vegetables beside the meat, leaving the cooking liquid in the pot.",
+      "Strain 1-1/2 cups of the cooking liquid into a large heatproof bowl. Whisk in the butter until melted. Spoon this buttery sauce over the corned beef and vegetables. Dust with parsley, if using, and serve plenty of spicy mustard alongside."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Corned Beef",
+        "unit": null,
+        "notes": "3 to 4 pounds, uncooked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "crumbled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice Berries",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottle of Guinness",
+        "unit": null,
+        "notes": "water, or another brand of beer, or more, if needed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savoy Cabbage",
+        "unit": null,
+        "notes": "about 2 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "large",
+        "notes": "trimmed, peeled, and cut crosswise into 2-inch sections",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "peeled and quartered",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yukon Gold",
+        "unit": "lb",
+        "notes": "alt: boiling potatoes, scrubbed and cut into 2-inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "alt: chives, optional, chopped, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spicy Mustard",
+        "unit": null,
+        "notes": "for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2354b7268e24b9fb9bd5a4fd5a4e2138969c61fce0ff9e14c59b2c0e54cbc2ec",
+    "lineage_hash": "97b617e4cb23f2ab86e03b2a411b1364bfe49e1aab67df6f228a11e451b557ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/corned-beef-and-cabbage/",
+    "fetchedAt": "2026-08-03T10:15:06.209Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/corned-beef-and-cabbage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

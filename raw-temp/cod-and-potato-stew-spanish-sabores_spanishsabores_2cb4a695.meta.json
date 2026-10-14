@@ -1,0 +1,62 @@
+{
+  "url": "https://spanishsabores.com/cod-and-potato-stew/",
+  "slug": "cod-and-potato-stew-spanish-sabores_spanishsabores_2cb4a695",
+  "title": "Cod and Potato Stew - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T11:40:34.516Z",
+  "ldName": "Spanish Cod and Potato Stew",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Stew",
+  "ldKeywords": "cod stew recipe, fish stew, potato stew recipe",
+  "ldIngredientsRaw": [
+    "1/4 cup extra virgin olive oil",
+    "1  large onion (diced)",
+    "1  leek (diced)",
+    "2 sprigs fresh rosemary",
+    "1 pound dried salt cod (desalinated and chopped)",
+    "4  medium red potatoes (peeled and cut in wedges)",
+    "1/2 cup homemade shrimp stock (or store bought)",
+    "2 cups water (possibly more if needed)"
+  ],
+  "ldInstructionsRaw": [
+    "Heat the olive oil in a heavy pan and when hot but not smoking, add the diced onion and leek and sauté over a medium heat for about 5 minutes.",
+    "Add the rosemary and the chopped desalinated salt cod and sauté for another 5 minutes.",
+    "Add the potato wedges and cover with 1/2 cup shrimp stock and two cups of water (or enough water to cover the potatoes and cod).",
+    "Bring to a slow boil and then lower to a simmer. Cook until the potatoes are tender, about 20 minutes.",
+    "Adjust seasoning with salt and pepper and serve piping hot. Watch out for small bones when eating. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "626.81 kcal",
+    "carbohydrateContent": "39.73 g",
+    "proteinContent": "76.49 g",
+    "fatContent": "16.77 g",
+    "saturatedFatContent": "2.53 g",
+    "cholesterolContent": "172.37 mg",
+    "sodiumContent": "8118.96 mg",
+    "fiberContent": "4.5 g",
+    "sugarContent": "4.81 g",
+    "unsaturatedFatContent": "12.86 g"
+  },
+  "htmlIngredientLines": [
+    "▢ ¼ cup extra virgin olive oil",
+    "▢ 1 large onion diced",
+    "▢ 1 leek diced",
+    "▢ 2 sprigs fresh rosemary",
+    "▢ 1 pound dried salt cod desalinated and chopped",
+    "▢ 4 medium red potatoes peeled and cut in wedges",
+    "▢ ½ cup homemade shrimp stock or store bought",
+    "▢ 2 cups water possibly more if needed"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

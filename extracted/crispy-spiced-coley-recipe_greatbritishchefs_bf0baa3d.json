@@ -1,0 +1,243 @@
+{
+  "recipe": {
+    "name": "Crispy Spiced Coley",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by brining the fish, which will not only season it but firm up the flesh too, ensuring it doesn't fall apart when cooking. Place the fish in a high-sided container on a pair on scales. Set the weight to 0 then pour in enough cold water to cover the fillets. Work out 10% of the weight of the water and add this amount of salt. (E.g 500g of water would require 50g of salt). Stir to dissolve the salt, then place in the fridge for 20 minutes to brine",
+      "While the fish brines, prepare the coating by combining the gram flour with the cornflour and spices. Mix well, then pass through a sieve onto a tray to remove any lumps",
+      "Place the beaten egg white in a bowl next to the tray of spiced flour and prepare a third tray lined with baking paper",
+      "Once the fillets have brined for 20 minutes, drain them and pat dry with kitchen paper. Dip the fillets in the egg white, ensuring they're completely coated, then dust them all over with the spiced flour. Place them on the paper-lined tray and transfer to the fridge until ready to cook. Keep the remaining egg white and flour to one side for later",
+      "To make the lentil sauce, sauté the shallots, garlic, ginger, turmeric, curry leaves and bay leaf in the oil for around 5 minutes, until soft but not coloured. Add the lentils and stock and cook for 20-30 minutes, or until the lentils are very tender",
+      "Stir in the tamarind and chutney and cook for a further 5 minutes on a low simmer. Add the lemon juice then transfer to a blender and blitz to a smooth sauce. Season to taste with salt, then place in a saucepan ready to reheat before serving",
+      "Remove the fish from the fridge and heat a large amount of vegetable oil in a heavy-bottomed wide saucepan – you want at least a few centimetres of oil in the bottom. Heat the oil to 180°C",
+      "Dredge the fish fillets in the egg white and flour once again, then fry for 2 1/2 minutes. Flip them and cook for another 2 1/2 minutes, then remove and drain on absorbent paper",
+      "Reheat the lentil sauce and whisk in the butter for a rich, silky finish, if desired. Serve up with the cripsy coley and chips"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coley Fillets",
+        "unit": null,
+        "notes": "weighing 200g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": "or tapioca flour",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Coriander",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "peeled and finely grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": "ideally fresh but you could used dried too",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Fresh Turmeric",
+        "unit": null,
+        "notes": "peeled and finely grated",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Lentils",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricot Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7705308bb19da55e22ea56aa86bebc88a29451f128c4e14be437abb660efed2a",
+    "lineage_hash": "cc1c445e9ff719cc50ae9f189b209b9433e216446fc238364c281e0dc1d8101d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-spiced-coley-recipe",
+    "fetchedAt": "2026-08-03T03:17:24.401Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-spiced-coley-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

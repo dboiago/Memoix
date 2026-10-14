@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Cultured Seaweed Butter",
+    "time": "30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the black ale vinegar to pickle the seaweed for the butter. Pour the ale into a glass jar, add the apple vinegar with the mother and cover in a muslin cloth. Leave for 2 weeks at room temperature",
+      "When the vinegar is ready, pass through a muslin cloth into a clean jar to strain out the mother culture",
+      "Once the vinegar is ready, place the seaweed in the jar with the vinegar, making sure the seaweed is fully submerged. Put a lid on the jar and leave at room temperature for 4–5 days. After this time, keep in the refrigerator until needed",
+      "To make the cultured butter, mix the double cream and yoghurt together and place in a vacuum bag. Seal in a chamber sealer and place in the water bath for 48 hours",
+      "Remove from the water bath and cool to 15°C. You will need 200g for this recipe, but you can save the remaining butter for use in other dishes, or freeze it",
+      "Place the 200g of cultured butter in an electric mixer and whisk slowly for 5 minutes, or until the butter separates from the buttermilk. Pour off the buttermilk and keep stored for baking recipes, such as scones and soda bread. Wash the butter in ice cold water then squeeze out and pat dry",
+      "Whisk 1 tbsp of the seaweed vinegar into the softened cultured butter. Add the sea salt and shony seaweed flakes to the bowl and incorporate into the cultured butter and vinegar mixture. Taste, adding more seaweed flakes, vinegar or salt if required. Store and keep refrigerated until required"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ale",
+        "unit": "ml",
+        "notes": "Scott uses Skye Black Ale",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Vinegar with the Mother",
+        "unit": "ml",
+        "notes": "unrefined, unpasteurised vinegar",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Kelp",
+        "unit": "g",
+        "notes": "freshly washed, or use dulse, kombu or sea lettuce if prefered",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "960",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shony Seaweed Flakes",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": "Scott uses Isle of Skye",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b4786f3d1467ebd650566d7626ec698a2a78b71ac75eceaf5f3faa38e675325",
+    "lineage_hash": "dddcc7b1c9c3f5a4523aaf776e93c27c2cf40e90f3346270fc0d4c7eef6daef6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cultured-seaweed-butter-recipe",
+    "fetchedAt": "2026-08-03T10:58:30.754Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cultured-seaweed-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

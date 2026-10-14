@@ -1,0 +1,236 @@
+{
+  "recipe": {
+    "name": "Confit of Cod",
+    "time": "2 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Skin the cod, remove the bones and reserve 200-300g for the fish fumée",
+      "Combine the sugar, salt and kombu in a coffee or spice grinder or in a powerful blender. Cure the cod in the kombu mixture for 35 minutes",
+      "Preheat the oven to 45°C. Rinse the cod in water and cut into 6 portions. Place the cod on a tray, pour over the olive oil and cook for 20 minutes",
+      "Turn the oven up to 65°C. Fill an oven tray with the olive oil, 4cm high. Separate the egg yolks from whites and add the yolks, one by one, into the oil. Place in the fan oven to confit for 55 minutes",
+      "Rinse the 200-300g of fish bones in cold water for 20 minutes, then drain. Chop the fennel, onion and garlic and sweat in a pot, adding the orange and lemon zest",
+      "Place your fish bones in a deep roasting tray and stir in the fennel mix. Cover with water and cook in the fan oven at 120°C/gas mark 1 for 1 1/2 hours",
+      "Heat the saffron gently in a dry frying pan until it starts to look toasted and gives off an aroma. Strain the fish liquid into a bowl. Add 1 confit yolk along with the toasted saffron and a dash of butter. Blitz the fumée with a hand blender until it foams",
+      "Boil the potatoes in water with the olive oil, garlic, fresh thyme and salt until soft. Drain and allow to cool slightly before peeling",
+      "Preheat the fan oven to 180°C/gas mark 4. Roast the bulb of garlic for 30 minutes, squeeze the garlic out of its skins and then purée. Mix the purée with 2 of the confit yolks and a pinch of salt, then slowly add the oil to make a mayonnaise",
+      "To serve, place the pieces of confit cod on each plate, and position a confit yolk next to each. Spoon over the fish fumée until almost covered. Spoon small droplets of mayonnaise next to the cod and yolks, then scatter half a sprig of torn dill across each plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod",
+        "unit": "g",
+        "notes": null,
+        "amount": "720",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kombu",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jersey Royal Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "Tbsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f389f224dedccf2bb27b83eb3cfff5add355e1b40e368cfb9afad92e94eac4ed",
+    "lineage_hash": "a4de8b642971320e2bbd162a59c2d2607827f0606adfb17dbc8e85c9187c3ec5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/confit-cod-recipe",
+    "fetchedAt": "2026-08-03T22:20:28.838Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/confit-cod-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

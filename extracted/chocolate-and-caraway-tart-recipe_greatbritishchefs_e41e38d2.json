@@ -1,0 +1,188 @@
+{
+  "recipe": {
+    "name": "Chocolate and Caraway Tart",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making a custard for the chocolate tart mix. Combine the milk, cream and caraway in a saucepan and bring to the boil. Once boiling, remove from the heat. Beat the sugar with the egg yolks until light and creamy in texture",
+      "To temper the egg yolks, slowly pour in the hot milk and cream mixture while whisking continuously. Pour back into the saucepan and bring to 80°C, stirring continuously so the custard does not catch",
+      "Remove from the heat, pour directly over the chocolate pistoles and whisk until smooth and thoroughly combined. Place a sheet of cling film over the surface of the custard to avoid a skin forming. Set aside to cool to room temperature",
+      "For the tart base, blend the digestive biscuits, coconut and macadamia nuts into a coarse powder. Combine in a bowl with the feuilletine and melted butter to form a moist, crumble-like mixture",
+      "Place 8 x 8cm pastry rings on a lined tray and divide the mix into them. Press down firmly to form a base, using the back of a spoon to ensure it is well compacted and even",
+      "At this stage the chocolate custard mix should be cool. Divide evenly between the 8 pastry rings, allowing for 120-130g per portion. Place in the fridge to set for 4-5 hours or overnight if you have the time",
+      "To poach the rhuabarb, trim off any leaves so the sticks are nice and even. Wash thoroughly and place into a deep-sided oven tray. Combine the orange zest with the juice and drizzle over the rhubarb, followed by a sprinkling of the sugar",
+      "Place into the oven and bake until just tender so the rhubarb still holds it shape, approximately 15-20 minutes. Remove and allow to cool, then cut into 6-8cm batons. Store any leftover rhubarb to use in other dishes",
+      "Just before serving, lightly toast the hazelnuts in a dry pan over a medium heat until golden. Remove from the pan and set aside",
+      "Whip the cream until medium peaks form and set aside. To remove each tart from the pastry ring moulds, carefully run a knife around the edge to loosen. Serve with poached rhubarb, cream and hazelnuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "pistoles",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": "pistoles",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caraway Seeds",
+        "unit": "Tbsp",
+        "notes": "lighty toasted and ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "145",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Coconut Flakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macadamia Nuts",
+        "unit": "g",
+        "notes": "lightly toasted",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Rhubarb",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zest only",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "792b80c779e5a97e761f8e72302b3da1cba68dd772d0dd0563baf6f78353e168",
+    "lineage_hash": "19a92b23f76380c5beda02932a6749c34e9bdf37f0be8ab825654978fe20b893"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-caraway-tart-recipe",
+    "fetchedAt": "2026-08-03T21:29:03.405Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-caraway-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

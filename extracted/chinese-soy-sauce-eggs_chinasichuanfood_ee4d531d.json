@@ -1,0 +1,196 @@
+{
+  "recipe": {
+    "name": "Chinese Soy Sauce Eggs",
+    "time": "1 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "108",
+      "carbohydrateContent": "3",
+      "fatContent": "6",
+      "proteinContent": "9"
+    },
+    "directions": [
+      "Add soy sauce, dark soy sauce, water, sugar, salt, vinegar, and Chinese five-spice powder to a small pot and simmer for 3-5 minutes. Set aside to cool completely, as the eggs should be soaked in the cold marinating sauce.",
+      "If you are making soft-boiled soy sauce eggs, the stock may overheat the eggs.",
+      "We will add lots of spices and aromatics to this stock to create a unique hot, spicy, fresh and savory soaking stock.",
+      "Half-fill a large pot with water and bring it to a boil. Add a small pinch of salt.",
+      "Lower the eggs into boiling water carefully using a ladle, then immediately reduce the heat. Simmer for 6 minutes (for a softer texture) or 7 minutes (for a more complex texture). Stir the eggs in the first two minutes.",
+      "Transfer the eggs to cold water and gently peel the shells once they have cooled. (If you feel it is pretty hard to handle, place the eggs under small running water and peel the shells.)",
+      "Add soft-boiled eggs to the marinating sauce, soaking for overnight (12-20 hours) until well salted. Transfer them out when the eggs are well salted.",
+      "I use smaller eggs (around 45g each), and boil them for about 6 to 7 minutes to test the yolk texture.",
+      "Half-fill a large pot with water and bring it to boil. Add a small pinch of salt.",
+      "Lower the eggs into boiling water carefully using a ladle and slow down the fire immediately. Simmer for 6 minutes (for softer texture) or 7 minutes (for harder texture). Stir the eggs in first two minutes.",
+      "Transfer the eggs out to cold water and gently peel the shells after cooled down. (If you feel it is quite hard to handle, place the eggs under small running water and peel the shells.)",
+      "Add soft boiled eggs in the marinating stock, either option 1 or option 2, soaking for overnight (12-20 hours until well salted). Transfer them out when the eggs are well salted.",
+      "Cut lengthwise and serve with rice or noodles."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs You Can Use One Stock. I Divide Them Into Two Versions",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pinch of Salt",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Soy Sauce Marinating sauce – Option 1",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce If You Are Using Light Soy Sauce",
+        "unit": "C",
+        "notes": "mix it with 1 tablespoon of dark soy sauce",
+        "amount": "1",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Peppers",
+        "unit": null,
+        "notes": "cut into circles",
+        "amount": "4",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Fresh Chili Marinating Sauce – Option 2",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "16515b008e98928478d967037b0612dd512282bb00da751dd96d4814b14b9fe0",
+    "lineage_hash": "74eac33b606ea70d95958734f8d1e72b951aa9b2ac7ce67b2dd37d8effd49816"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/soy-sauce-eggs/",
+    "fetchedAt": "2026-08-02T01:11:37.085Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/soy-sauce-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

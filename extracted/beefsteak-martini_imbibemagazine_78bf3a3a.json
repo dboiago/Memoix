@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Beefsteak Martini",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Shiso Leaf Around the Glass’s Rim"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice until chilled, and strain into a chilled glass. Garnish by spritzing the cocktail several times with an atomizer filled with shiso-infused gin (or simply rub a torn shiso leaf around the glass’s rim).\nShiso-Infused GinIn a quart jar, combine 1 bottle of gin with 25 grams of fresh shiso leaves. Cover the jar and let infuse at room temperature overnight, then strain and bottle for use. The infusion will last indefinitely, but the shiso character will fade over time."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiso-infused Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanc",
+        "unit": "oz",
+        "notes": "alt: bianco vermouth",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0c13eb7231186b8137ef2e06fc0ea79d958df685a5fa086ae27fafb8b4a6a869",
+    "lineage_hash": "a8a88dcf8cab6b2c40e176310ff9c59e0c55deff0108918e6b131b57320c3040"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/beefsteak-martini/",
+    "fetchedAt": "2026-08-04T02:08:15.893Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/beefsteak-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

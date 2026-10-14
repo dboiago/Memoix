@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Baked Cod Loin with Braised Cucumber",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the sourdough crumbs by tearing the bread into pieces and blitzing in a food processor. It’s good to have a mixture of sizes, so don’t go too fine. Place the crumbs on a baking tray, pour over a liberal coating of oil and mix altogether",
+      "Place in the oven for 5–7 minutes, until the crumbs have become crisp and golden. Put to one side",
+      "Next, place a wide saucepan over a medium- high heat on the hob and add the rapeseed oil. When it is hot, add the fennel wedges and briskly fry for about 10 minutes, turning them frequently as they colour. Then turn the heat down and continue to cook for another 10–15 minutes, until golden and caramelised",
+      "Now add the cucumber, half of the smoked pancetta and the garlic and cook off for another 5 minutes before adding the lemon zest and water. Cover and braise for 10 minutes",
+      "Whilst the vegetables are softening down, prepare your cod loin by cutting out four squares of foil. Place a couple of slices of lemon on each one and then place the cod on top. Drizzle some rapeseed oil over the cod and scatter the fennel fronds on top",
+      "Wrap the foil up so that you have space for steam to flow (create a foil bag in other words) and bake in the oven for 8–10 minutes",
+      "When ready to plate up, take a frying pan and quickly fry off the remaining pancetta over a high heat, so that it crisps up nicely",
+      "For presentation (and to get a nice circle) I often like to remove the bottom from a flan tin and place the ring in the centre of the plate, but you could also just spoon straight on",
+      "Take the braised fennel and cucumber and stir in the mint. Spread it evenly onto your plate, sprinkle over a liberal amount of sourdough crumb and place the cod loin on top. Finish by dotting some pancetta around over the crumb and drizzle any leftover oily pan juices all over"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Portions of Cod Loin",
+        "unit": null,
+        "notes": "each weighing 180g",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulbs",
+        "unit": null,
+        "notes": "small trimmed (keep the fronds) and sliced into 2cm wedges",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumbers",
+        "unit": null,
+        "notes": "deseeded and sliced into half rounds",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Pancetta",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": "g",
+        "notes": "stale",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to serve",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "43e9650207299f12daee242c921415c7d5eb5d7c8abf0d7fca80f94275fd0a50",
+    "lineage_hash": "7c0f0b19a47a4c79998f329203559d3d0beb0b30447670c210785e7d19555c7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-cod-loin-recipe-gratin",
+    "fetchedAt": "2026-08-03T13:06:45.807Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-cod-loin-recipe-gratin",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

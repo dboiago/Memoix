@@ -1,0 +1,146 @@
+{
+  "recipe": {
+    "name": "Creamy Tom Yum Goong",
+    "time": "35 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse shrimp well, then peel and devein them (see video for a cool deveining trick!) and place all heads and shells into a stock pot. Put the pot over medium high heat and saute the shrimp shells until stuff that sticks to the pot starts to brown slightly. It should smell like shrimp on the grill!",
+      "Add water, scrape off the browned bits that are stuck to the pot, and bring to a boil. Lower the heat to maintain a simmer, and let it cook for 5 minutes. Then, use a slotted skimmer to remove the shells, making sure to drain off as much of the liquid as you can.",
+      "If using chicken stock, start from here: Smash lemongrass and cut into chunks. Roughly tear the kaffir lime leaves. Finely chop the chilies or pound in a mortar and pestle into a paste.",
+      "Bring the stock to a simmer, then add lemongrass, galangal, makrut lime leaves and chilies (if you pounded the chilies, rinse the mortar with some of the stock to make sure you get all the chili bits into the pot). Simmer for 5 minutes. Note: The herbs are not meant to be eaten, so at this point you can either fish them out, but I like to leave some in there for garnish. Just be sure to tell your guests not to eat them!",
+      "Add the evaporated milk, fish sauce and chili paste and bring to boil, stirring to dissolve the chili paste. Add the mushrooms and cook for 1-2 minutes or until mushrooms are done.",
+      "Add the shrimp and cook just until done, 30 seconds to a minute depending on the size. Turn off the heat.",
+      "Let the soup cool down slightly, until all bubbling has stopped, then add lime juice while stirring (this will minimize curdling.) Stir in sawtooth coriander or cilantro, then taste and adjust seasoning as needed.",
+      "To serve, you can pour the soup over rice, add rice to the soup bowl, or have the soup on the side as part of a meal. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Medium Sized Shrimp",
+        "unit": "g",
+        "notes": "shell-on, head-on if possible",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water (or Use 3½ Cups (840 ML) Unsalted Chicken Stock If Not Using Shell on Shrimp)",
+        "unit": "C",
+        "notes": "960 ml",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalks",
+        "notes": "see note, bottom half only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Galangal",
+        "unit": "slices",
+        "notes": "cut into thin rounds",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Makrut Lime Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilies",
+        "unit": null,
+        "notes": "or to taste",
+        "amount": "1-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk (unsweetened)",
+        "unit": "C",
+        "notes": "alt: full-fat coconut milk, 120 ml",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Mushrooms",
+        "unit": "C",
+        "notes": "straw mushrooms, or another Asian mushroom",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chili Paste",
+        "unit": "C",
+        "notes": "60 ml, nam prik pao",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "45 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "C",
+        "notes": "60 ml",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Big Handful of Chopped Sawtooth Coriander (culantro)",
+        "unit": null,
+        "notes": "alt: cilantro",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e90c374d5135e6773bd83bb535ec1688c902942d2f310ab13f79e789602cf15",
+    "lineage_hash": "b8dceac21f231e183ac7f3302bda5281023741bcc137c1584d1afdc77db1a3ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/creamy-tom-yum/",
+    "fetchedAt": "2026-08-02T00:18:12.826Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/creamy-tom-yum/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,100 @@
+{
+  "recipe": {
+    "name": "Creole Mustard Sauce",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the ingredients in a mixing bowl and whisk to mix.",
+      "Any leftover sauce will keep in the refrigerator for several days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "preferably Hellmann’s or Best Foods",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creole Mustard",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Horseradish",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "tsp",
+        "notes": "alt: your favorite hot sauce, or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Olives",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drained Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0175337166fe62626bcb848cb278890433bb86fae5f0a274c7873f9dee66a9c",
+    "lineage_hash": "2c37f7f027179551b19d1648b15f172d4e27e029fe49d5b6fb09069dc7f0f5fd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/creole-mustard-sauce/",
+    "fetchedAt": "2026-08-03T09:16:37.561Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/creole-mustard-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

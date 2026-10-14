@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Traveler",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the bitters, vanilla and allspice in a shaker with ice. Pull a shot of espresso, let it chill, then add it to the shaker and shake. Add the cola to the shaker (but don’t shake) and strain into a glass with 1 large ice cube."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coca Cola",
+        "unit": "oz",
+        "notes": "or other cola",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Shot Espresso",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Angostura Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "dash",
+        "notes": "ground",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pump Monin Vanilla Syrup",
+        "unit": null,
+        "notes": "or 1/4 oz. vanilla syrup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3ca9c5ea3a8a4d20ecb7c9f3227411183419cb9ef6c20841b48f41307a9f1776",
+    "lineage_hash": "933d48b76b8dfd966c66b99caa16fef6864130523e2f41b8a1728fbc3769bc1a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/the-traveler-coffee-drink/",
+    "fetchedAt": "2026-08-03T21:06:33.269Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/the-traveler-coffee-drink/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

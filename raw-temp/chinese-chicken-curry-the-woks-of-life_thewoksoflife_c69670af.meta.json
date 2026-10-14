@@ -1,0 +1,64 @@
+{
+  "url": "https://thewoksoflife.com/chicken-curry-takeout/",
+  "slug": "chinese-chicken-curry-the-woks-of-life_thewoksoflife_c69670af",
+  "title": "Chinese Chicken Curry - The Woks of Life",
+  "byline": "Sarah",
+  "fetchedAt": "2026-08-02T19:25:57.690Z",
+  "ldName": "15-Minute Chicken Curry, Takeout-Style",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Chicken and Poultry",
+  "ldKeywords": "chicken curry, Chinese chicken curry",
+  "ldIngredientsRaw": [
+    "12 oz. boneless skinless chicken breast ((thinly sliced))",
+    "Vegetable oil",
+    "1 teaspoon light soy sauce",
+    "2 teaspoons cornstarch ((divided))",
+    "1  medium onion ((halved and sliced into small wedges))",
+    "1 ½ cups chicken stock",
+    "4 teaspoons curry powder",
+    "1 teaspoon turmeric",
+    "1/2 teaspoon sugar",
+    "salt"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium bowl, combine the sliced chicken breast, 1 teaspoon vegetable oil, 1 teaspoon soy sauce, and 1 teaspoon cornstarch.",
+    "Heat your wok over high heat until smoking. Add a couple tablespoons of oil, and then add the chicken to the pan in one layer. Stir-fry the chicken just until it turns opaque, and remove from the wok. Set aside.",
+    "Add another tablespoon of oil to the wok, and add the onions. Stir-fry for one minute, then stir in the chicken stock, curry powder, turmeric, sugar, and salt to taste.",
+    "Combine the remaining 1 teaspoon of cornstarch with 2 teaspoons of water and mix until the cornstarch is dissolved. Stir it into the curry and stock mixture, and simmer for 1 minute, until thickened. If the sauce isn’t thick enough, add more cornstarch slurry. If it’s too thick, add more chicken stock.",
+    "Add the cooked chicken back to the wok, and stir for another 30 seconds. Serve with steamed rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "197 kcal",
+    "carbohydrateContent": "7 g",
+    "proteinContent": "21 g",
+    "fatContent": "10 g",
+    "saturatedFatContent": "6 g",
+    "cholesterolContent": "54 mg",
+    "sodiumContent": "618 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 12 oz. boneless skinless chicken breast (thinly sliced)",
+    "▢ Vegetable oil",
+    "▢ 1 teaspoon light soy sauce",
+    "▢ 2 teaspoons cornstarch (divided)",
+    "▢ 1 medium onion (halved and sliced into small wedges)",
+    "▢ 1 ½ cups chicken stock",
+    "▢ 4 teaspoons curry powder",
+    "▢ 1 teaspoon turmeric",
+    "▢ 1/2 teaspoon sugar",
+    "▢ salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

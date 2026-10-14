@@ -1,0 +1,238 @@
+{
+  "recipe": {
+    "name": "Beer-Braised Beef Cheek",
+    "time": "4 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim the outside sinew from the beef cheeks and sear in a hot pan with oil to caramelise",
+      "Add the other ingredients, cover with parchment paper and tin foil and cook in the oven for 3 hours, until just tender",
+      "Allow the meat to cool in the cooking liquor. Pass the cooking liquid through a fine sieve, wrap the cheeks in cling film and keep in the fridge until needed. Reduce the liquid down to a glaze and reserve until needed",
+      "Preheat a deep-fryer or pan of oil to 160°C",
+      "For the crispy onion, fry the onions until golden brown. Drain and transfer to a dehydrator at 50°C for 2 hours",
+      "Blend the black garlic with the egg yolks and water to a smooth paste. Slowly whick in the sunflower oil to emulsify, then pass through a fine sieve",
+      "Mix the vinegar, sugar and water together and add the shimeji mushrooms. Set aside for 30 minutes",
+      "Cut the Roscoff onions in half and cover with the whey. Poach gently until just tender",
+      "Salt the girolles lightly for 5 minutes, brown the butter and dress the girolles just before serving. Add the lemon juice to taste",
+      "Gently heat and whisk together the butter and water to make an emulsion for the three-cornered garlic and add the leaves. Wilt for 30 seconds",
+      "To finish the dish, glaze the cheeks in the reduced liquor by warming gently. Spread some black garlic purée on each plate, then arrange the other ingredients on top",
+      "Chop the crispy onions into a crumb, sprinkle over the dish and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Cheeks",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitter",
+        "unit": "ml",
+        "notes": null,
+        "amount": "570",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "g",
+        "notes": "reduced to 300g",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "cut into brunoise",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shimeji Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roscoff Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whey",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Girolles",
+        "unit": "g",
+        "notes": "yellow",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Three-cornered Garlic",
+        "unit": "g",
+        "notes": "stalks removed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e75b7e4018c0523e095e70ee5a51b72cd2b245a2448b2bfb8e293fd4d69970f",
+    "lineage_hash": "eefd4696614ad1efe3990b35ea2af8a5eb3948405179ebf0bde386c6f8ef9fd1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-braised-beef-cheek-recipe",
+    "fetchedAt": "2026-08-03T14:02:22.374Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-braised-beef-cheek-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Asian Garlic Butter Noodles (Mi Xao Toi Bo)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "according to the package instructions. Drain, rinse lightly, and set aside.",
+      "in a medium pan.",
+      "and sauté until softened and fragrant, about 30 seconds.",
+      "Stir in sugar, soy sauce, oyster sauce, fish sauce, and garlic powder. Mix well to combine. Adjust with salt, if needed.",
+      "Toss everything together until cheese is melted (about 2 minutes). Turn off heat and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Unsalted Butter",
+        "unit": null,
+        "notes": "8 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced, fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maggi Sauce",
+        "unit": "Tbsp",
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "see notes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan Cheese",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3fb9c22985027660fd908a3d1132a8ef44caab7c9e28b5a4121c6175ba06821b",
+    "lineage_hash": "aef6e8a0f115d69e834f0fcb41c618218dd414ef03620028962fdd7e60a47998"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/asian-garlic-noodles/",
+    "fetchedAt": "2026-08-01T23:55:58.575Z"
+  },
+  "rawSource": "https://vickypham.com/blog/asian-garlic-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

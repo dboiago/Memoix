@@ -1,0 +1,182 @@
+{
+  "recipe": {
+    "name": "Beef and Chinese Broccoli (芥蓝牛肉)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "280",
+      "carbohydrateContent": "8.9",
+      "fatContent": "14.7",
+      "proteinContent": "28.1"
+    },
+    "directions": [
+      "Combine the beef with the marinade ingredients in a medium-sized bowl. Mix to coat evenly. Let marinate for 10 to 15 minutes while preparing other ingredients.",
+      "Mix the sauce ingredients in a medium-sized bowl and set aside.",
+      "Heat oil in a large skillet over high heat until hot. Spread the beef with as little overlap as possible. Cook without touching until the bottom turns golden brown. Flip to cook the other side until just cooked through, and the inside of the beef is still slightly pink. Remove the beef from the pan and transfer to a plate.",
+      "Add the remaining 1 tablespoon of oil and the ginger and garlic. Cook and stir until the edge of the garlic turns golden, 30 seconds.",
+      "Add the gai lan. Stir and cook a few times until the leaves just start to wilt, 30 seconds to 1 minute.",
+      "Return the beef to the pan. Stir the sauce again until the cornstarch dissolves completely, then pour it into the pan. Stir and cook until the sauce thickens and coats all the ingredients.",
+      "Transfer everything to a big plate and serve hot over steamed rice as a main course."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Flank Steak",
+        "unit": "oz",
+        "notes": "340 g, or skirt, or flat iron, sliced to 1/4” (4mm) pieces against the grain",
+        "amount": "12",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "tsp",
+        "notes": "or canola oil",
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": "or chicken broth, or water",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce (optional)",
+        "unit": "tsp",
+        "notes": "*Footnote 1",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": "tsp",
+        "notes": "Optional, but highly recommend",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or canola oil",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "Gai Lan",
+        "unit": "oz",
+        "notes": "225 g, or 6 to 8 stalks, stem thinly sliced, leaves cut to big bite size pieces",
+        "amount": "8",
+        "section": "Stir Fry",
+        "isOptional": false
+      },
+      {
+        "name": "” (2 Cm) Ginger",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir Fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e2b30d80b0529fe9b333e01eb088a34c349cfedb7b7f145d617833afcfb97107",
+    "lineage_hash": "2289620210e1e51ea302c13b59429c8472501dda0986caf93ab740dbd97d788c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/beef-and-chinese-broccoli/",
+    "fetchedAt": "2026-08-02T02:40:44.264Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/beef-and-chinese-broccoli/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

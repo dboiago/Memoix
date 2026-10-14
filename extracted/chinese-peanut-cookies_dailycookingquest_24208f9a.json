@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Chinese Peanut Cookies",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "40",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, combine ground peanut, flour, sugar, and salt. Mix well. Slowly pour melted butter into the dry ingredients and mix until it become a smooth dough.",
+      "Pinch a small amount of dough (about 10 gram, or a heaping teaspoon), roll into a ball and place on a baking tray lined with parchment paper. Repeat until all dough is used up.",
+      "To make the indentation in the cookies, I use the cap of a ballpoint.",
+      "Brush the top of the cookies with egg yolk.",
+      "Preheat oven to 170 Celcius (340 Fahrenheit), bake for 25 minutes until golden brown.",
+      "Let cool completely before storing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": "450 gram, *, grind",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "360 gram",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick (1 1/2 Cup, or 340 Gram) Unsalted Butter",
+        "unit": null,
+        "notes": "**, melted",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "120 gram",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85f1e8c5c1cc5321d4d11739494101031f5c45b36206fa7d0d0ed195198e0a0a",
+    "lineage_hash": "90a001183f537e731d73421ad92fa870cbcf918651d63499f20cb70f7f076259"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/chinese-peanut-cookies.html",
+    "fetchedAt": "2026-08-02T05:48:01.353Z"
+  },
+  "rawSource": "https://dailycookingquest.com/chinese-peanut-cookies.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

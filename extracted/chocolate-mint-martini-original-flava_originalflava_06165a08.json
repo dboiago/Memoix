@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Chocolate Mint Martini",
+    "time": "30 sec",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": "Martini",
+    "garnish": [
+      "Belize Cocoa Powder",
+      "Choc Sticks",
+      "Mint Leaves"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Grab yourself a mixer and add dry white wine, vodka, gin, chocolate liquor ice cubes, Belize cocoa powder, mint leaves then SHAKE for 30 seconds.",
+      "Pour over Glass with ice and garnish with Belize cocoa powder, mint leaves and Belize chocolate sticks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Liquor",
+        "unit": "ml",
+        "notes": "alt: Irish cream",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Belize Cocoa Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b3fea79e69ca0ed65db0d727476d812339621ee4bdfce43c06669031697ec44",
+    "lineage_hash": "6adee69471db1dfa6720c7b5781369ff272dcf40cb4146dd796a4d59837657f1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/drinks/chocolate-mint-martini/",
+    "fetchedAt": "2026-09-30T17:35:57.717Z"
+  },
+  "rawSource": "https://originalflava.com/drinks/chocolate-mint-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

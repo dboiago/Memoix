@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Mango Sorbet",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the mango; mark lengthwise then crosswise and scoop out the pulp with a spoon.",
+      "Blend the pulp then add the lime juice. Add the sugar and blend until the sugar is dissolved.",
+      "Place in a metal baking pan and cover with foil. Freeze until firm (about 3 hours). Alternatively, you can freeze in an ice cream maker according to manufacturer's instructions.",
+      "Let the sorbet soften at room temperature before serving. If you don't have an ice cream maker, freeze the mango until firm (about 3 hours) then take a fork and mash the sorbet, then freeze until firm again before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mango Pulp I Used Julie Mango",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Granulated",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb728e3e65732d3bb623e999450b0ca170636cb4d6f2b361c82a7df106606d9a",
+    "lineage_hash": "417b39a9ad91a5b26f35fdaab25692e2bc8adf4e4b9297eb1a270f5a3dc16c20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/mango-sorbet/",
+    "fetchedAt": "2026-09-26T01:13:42.616Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/mango-sorbet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

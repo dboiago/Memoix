@@ -1,0 +1,151 @@
+{
+  "recipe": {
+    "name": "Braised Pork Spare Ribs & Quail Eggs (Sườn Rim Trứng Cút)",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "5",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a medium pot of water to a boil. Boil quail eggs for 5 minutes, then transfer to an ice bath to cool. Peel and set aside. Cut pork spare ribs into bite-sized pieces. Blanch in the boiling water for 3 minutes, or until scum rises. Drain and rinse under cold running water until clean.",
+      "Clean the pot if reusing. Heat oil over medium-high heat. Add shallots, garlic, and the whites of green onions. Sauté for about 15 seconds until fragrant.",
+      "Add blanched pork ribs and toss to coat with aromatics. Stir in chicken bouillon, fish sauce, oyster sauce, ground black pepper, caramel cooking syrup, and sugar. Add water, cover, and braise over medium-low heat for 30 minutes.",
+      "Remove the lid and add hard-boiled quail eggs, tossing gently to coat. Cook for about 15 minutes, or until the sauce reduces by half. Turn occasionally for even color. Taste test and add more fish sauce if needed.",
+      "Garnish with the remaining green onions, extra ground black pepper, and optional chili peppers. Serve hot with steamed rice and a vegetable side dish for a complete meal."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Spare Ribs",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Quail Eggs",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "small",
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "large",
+        "notes": "finely diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Bouillon Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramel Cooking Syrup",
+        "unit": "tsp",
+        "notes": "see notes below",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced, whites and greens separated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilies (optional)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a7657ad026a704ab6bd0ba06d7d5b4a8b3a6354ef4a23fb8c6cba5c54822ae84",
+    "lineage_hash": "3518e51123cf6c45ca0973ba95af99f433f1e845642ee5b2855f031f4e520d18"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/vietnamese-braised-pork-spare-quail-eggs/",
+    "fetchedAt": "2026-08-02T01:00:56.548Z"
+  },
+  "rawSource": "https://vickypham.com/blog/vietnamese-braised-pork-spare-quail-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

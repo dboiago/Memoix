@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Calgary Hot Wings",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the chicken wings under cold running water and blot dry with paper towels. Cut the tips off the wings and discard them (or leave the tips on if you don’t mind munching a morsel that’s mostly skin and bones). Cut each wing into 2 pieces through the joint. Place the wings in a large nonreactive bowl or resealable plastic bag and add the beer. Let the wings marinate for 12 to 24 hours; the longer they marinate, the more pronounced the beer flavor will be.",
+      "Place the salt, pepper, paprika, chili powder, and celery seed in a small bowl and whisk to mix. Set the rub aside.",
+      "Drain the wings in a colander and blot them dry with paper towels, then place them in a large mixing bowl. Add the rub and toss to coat the wings evenly. Add the olive oil and toss well to mix.",
+      "Set up the grill for indirect grilling and preheat to medium. If using a gas grill, place all the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke; then reduce the heat to medium. If using a charcoal grill, place a large drip pan in the center, preheat the grill to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, brush and oil the grate. Place the wings in the center of the hot grate, over the drip pan and away from the heat, and cover the grill. Cook the wings, turning periodically, until the skin is golden brown and crisp, and the meat is cooked through, 30 to 40 minutes. To test for doneness, make a tiny cut in the thickest part of one of the larger wing halves. There should be no trace of red at the bone.",
+      "Transfer the wings to a clean shallow serving bowl. Pour the butter, Sriracha, and hot sauce over them and stir to mix. Sprinkle the cilantro over the wings, if desired, and serve at once. You’ll want to provide plenty of napkins to your guests."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken Wings",
+        "unit": null,
+        "notes": "about 2 pounds",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Beer",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "kosher or sea",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Seed",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "1/2 stick, melted",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sriracha (thai Hot Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystal Hot Sauce",
+        "unit": "C",
+        "notes": "alt: Tabasco sauce",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "alt: flat-leaf parsley, optional, chopped, fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "955a0560f9a56f05adc8ae793c48a19452939de0f8402de5692fdcc0fe27af96",
+    "lineage_hash": "4bf477defb6ce56ab9b09621a20bf7baceb60c1ea92888e5f24983adffc1ea5f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/calgary-hot-wings/",
+    "fetchedAt": "2026-08-03T04:44:16.410Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/calgary-hot-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

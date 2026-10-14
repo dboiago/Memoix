@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Burnt Spring Onion Crema",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the crema. Place the double cream in a pan and heat until it reaches 35°C. Remove from the heat, transfer to a glass jar and pour in the buttermilk",
+      "Loosely place the lid on the jar and set aside in a warm place for 24 hours. After this time, tighten up the lid and store in the fridge",
+      "Trim and clean the spring onions and preheat a griddle pan or better still, a barbecue. If you're using a pan, wipe the surface with some neutral oil (like rapeseed oil) and place the spring onions over a medium-high heat",
+      "Cook until the spring onions are nicely blackened, turning occasionally until deeply charred and caramelised",
+      "When the onions are ready, transfer to a high-powered blender and blitz with the crema (or sour cream) until as smooth as possible. Season to taste"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Spring Onions",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": "preferably organic",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "Tbsp",
+        "notes": "preferably organic",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "299d0ec9feb072391995d5677933d45e76272f27a3b4399f87510391f8c11062",
+    "lineage_hash": "dfc3636366bf5b4a944405ef2e21ed774883382394c34900323f6150fd8516a6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/burnt-spring-onion-crema-recipe",
+    "fetchedAt": "2026-08-03T11:13:37.052Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/burnt-spring-onion-crema-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

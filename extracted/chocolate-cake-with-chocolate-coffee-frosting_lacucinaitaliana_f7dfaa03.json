@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Chocolate Cake with Chocolate Coffee Frosting",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Using an electric hand mixer, cream half of the butter with the granulated sugar on low speed for at least 15 minutes: it should be soft and velvety; the sugar should be melted but it shouldn’t be too airy. Add in one egg at a time, ensuring it is thoroughly incorporated before adding in the next. Grind the amaretti cookies into a powder and add 1 1/2 ounces to the mixture, along with the almond flour. Melt 2/3 pound of chocolate over a bain-marie; let it cool to room temperature, then incorporate it into the mixture; add in the ricotta, then the coffee liqueur. Butter a round baking pan (10-inch diameter) and dust it with the remaining ground amaretti cookies; pour in the batter and bake at 350°F for 1 hour.|In the mean time, make the frosting: combine the rest of the butter with the powdered sugar until velvety. Melt the rest of the chocolate over a bain-marie and let it cool; then add in the butter mixture; ensure the instant coffee is ground into a fine powder and add it into the mixture; combine everything and place in the refrigerator for 15 minutes to set. Check that the cake is baked by looking at the edges: they should have slightly pulled away from the pan. Let the cake cool in the pan before removing it. Transfer the cake onto a serving dish. Place the frosting in a pastry bag and decorate with small dollops."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "2⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaretti Cookies",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole of Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fcefd73c8e653f5264d4dd8ffa958be882d9ec7fe23d2acd43fc1548f61e4770",
+    "lineage_hash": "111b36405b1c33dae1cd2c43581ddfa0da3af13d039783c0e3de73e7bb7268b4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cake-with-chocolate-coffee-frosting",
+    "fetchedAt": "2026-08-03T01:03:28.767Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cake-with-chocolate-coffee-frosting",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,242 @@
+{
+  "recipe": {
+    "name": "Beef with Stuffed Roscoff Onion",
+    "time": "2 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the onion purée. Peel and slice the onions, then add to a pan with the butter and thyme and cook slowly on a very low heat until caramelised - this should take about 4 hours. Add the double cream to the pan with the caramelised onions and bring to the boil, then remove from the heat and transfer to a blender, discarding the thyme. Add the milk and salt to the blender and blitz until smooth. Pass the purée through a fine sieve and refrigerate until required",
+      "Season the roscoff onions with salt and olive oil, then wrap tightly in foil. Bake at 190°C/gas mark 5 for 15-25 minutes. Remove from the oven and leave to cool, then peel the skin and slice off the top of the baked onions. Scoop out the soft flesh from the inside leaving the two outer layers and set to one side",
+      "To make the filling for the stuffed onions sweat the shallots in butter until tender. Add the girolles, flash fry on a high heat then deglaze with the sherry. Add the cream to the pan and stir well, simmering until the liquid has reduced by half. Add the chopped herbs to the sauce, then spoon the mixture into the hollowed out onions. Sprinkle over the Parmesan followed by the breadcrumbs and set aside to grill later",
+      "Preheat the oven to 180°C/gas mark 4 and remove the rump cap from the fridge",
+      "Once the beef rump has reached room temperature season liberally with salt and pepper, then sear the beef on all sides in a very hot pan. Remove the rump from the pan and place in the oven, cooking for approximately 15 minutes or until it reaches a core temperature of 37°C",
+      "While the beef is cooking prepare the onion rings for the garnish. Preheat a deep-fryer to 150°C and using a sharp knife - or mandoline if you have one - finely slice the onion into rings 1.5mm thick. Combine the egg white and salt together in a bowl and dip the onion slices into the mixture before coating them in the flour. Fry until crisp and leave to drain on kitchen paper until required",
+      "Remove the beef from the oven and allow to rest in a warm place for a further 15 minutes. Meanwhile, gently warm the onion purée in a saucepan ready to serve and place the stuffed onions under a hot grill to warm through and turn golden brown on top",
+      "Place a spoonful of the warm onion purée onto each plate followed by the stuffed onion. Slice the beef rump against the grain into generous portions and place a large slice on each place. Garnish with the crispy onion rings and land cress"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Rump Cap",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roscoff Onions",
+        "unit": null,
+        "notes": "medium",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "medium and fine diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Girolles",
+        "unit": "g",
+        "notes": "small, preferably Scottish",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "tsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "finely grated",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": "1",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Land Cress",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4af5dac48181bc0a03c0ddac07fd7e25a2908da7254113068817bd62cefd1cc0",
+    "lineage_hash": "9199eadc93d45ee3ad7d208ad4022e4316d9c307f19826c7e3e422ba69f144f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-with-roscoff-onion-recipe",
+    "fetchedAt": "2026-08-03T14:46:52.297Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-with-roscoff-onion-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

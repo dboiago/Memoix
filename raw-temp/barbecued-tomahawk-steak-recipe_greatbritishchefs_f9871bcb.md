@@ -1,0 +1,3 @@
+This recipe is inspired by a Lisbon institution – Cervejaria Ramiro – which serves enormous scarlet prawns on soft, buttery bread. The idea is to squeeze all the prawn juices over the bread as you remove the shell, then eat the prawn, and finally, eat the bread.
+
+That idea has been reimagined here – by serving your steak on a bed of garlic bread, all the meat juices soak into the bread, along with the tarragon salsa verde and miso butter. You might even say that the bread is the tastiest part of this dish!

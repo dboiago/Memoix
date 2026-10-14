@@ -1,0 +1,41 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/creamy-pumpkin-soup-recipe-sage",
+  "slug": "cream-of-pumpkin-soup-recipe-with-sage_greatbritishchefs_1386bc50",
+  "title": "Cream of Pumpkin Soup Recipe with Sage",
+  "byline": "by Daniele Usai",
+  "fetchedAt": "2026-08-03T20:19:10.606Z",
+  "ldName": "Cream of pumpkin and sage soup",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Starter",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "500g of pumpkin",
+    "1 onion",
+    "500ml of chicken stock",
+    "1 tsp sugar",
+    "1 tbsp of cornflour",
+    "1 1/2 tbsp of water",
+    "150ml of cream",
+    "50g of butter",
+    "sea salt to season",
+    "pepper to season",
+    "1 dash of olive oil",
+    "6 sage leaves"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the pumpkin into large pieces, place in a hot pan with a little olive oil for about 3 minutes until lightly coloured",
+    "Add the chicken stock, onion and sugar and simmer until the pumpkin and onion are cooked for about 15 minutes",
+    "Add the cream and bring to the boil, mix the cornflour and water together and stir in.",
+    "Allow to cool a little before placing in a liquidiser, with the butter for about 1 minute.",
+    "Return to the pan and add the sage, bring to the boil and season with freshly milled pepper and salt as necessary and finish with a drizzle of olive oil and a few sage leaves"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

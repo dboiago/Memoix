@@ -1,0 +1,51 @@
+{
+  "url": "https://www.chopstickchronicles.com/amazake/",
+  "slug": "amazake_chopstickchronicles_32341779",
+  "title": "Amazake",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-02T02:51:30.544Z",
+  "ldName": "Amazake 甘酒",
+  "ldTime": "PT485M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT480M",
+  "ldYield": [
+    "1",
+    "1 jar"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Drinks",
+  "ldKeywords": "Amazake, koji",
+  "ldIngredientsRaw": [
+    "100 g Koji rice mold",
+    "150 g cooked rice",
+    "200 ml water",
+    "100 g Koji",
+    "100 ml water"
+  ],
+  "ldInstructionsRaw": [
+    "Koji and cooked rice",
+    "Koji only"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "595 kcal",
+    "carbohydrateContent": "128 g",
+    "proteinContent": "8 g",
+    "fatContent": "1 g",
+    "sodiumContent": "24 mg",
+    "sugarContent": "82 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Koji and Cooked rice]",
+    "▢ 100 g Koji rice mold",
+    "▢ 150 g cooked rice",
+    "▢ 200 ml water",
+    "[Koji only]",
+    "▢ 100 g Koji",
+    "▢ 100 ml water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

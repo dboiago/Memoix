@@ -1,0 +1,256 @@
+{
+  "recipe": {
+    "name": "Crispy Pig Cheek, Pickled Fennel and Chilli",
+    "time": "3 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prep the pork cheek by removing the sinew from one side",
+      "In a hot pan sear the cheeks until golden brown, remove from the pan and set aside",
+      "Put the pan back on the heat, add the spring onions and cook for 2 more minutes",
+      "Add all the other ingredients and pig cheeks, bring to a simmer",
+      "Cook for between 2 hours and 2 hours 30 minutes, or until the cheeks are tender. Stick a fork in one of the pig cheeks to check, and make sure there is no resistance in the meat",
+      "While the pig cheeks cook, make the pickled fennel. Put all the ingredients apart from the fennel into a pan and bring up to the boil. Add the fennel and bring back to the boil",
+      "Take the fennel off the heat and cool in a blast chiller",
+      "Once the cheeks are cooked, take them off the heat and cool to room temperature in the stock. Next, remove the cheeks from the stock and place on a tray",
+      "Pass the pork cheek cooking liquid through a chinois into a fresh pan and reduce until it coats the back of a spoon, about 10–12 minutes",
+      "Add the flour, eggs and panko to 3 separate containers",
+      "Roll the pig cheeks in flour, then dust off the excess. Place each cheek into the egg then into the panko. Roll them around in the panko until completely covered",
+      "Coat all the pig cheeks in another layer of egg, and then another layer of panko. Line a container with panko and then place the breaded cheeks on top in a single layer",
+      "When ready to serve, heat a few centimetres of vegetable oil in a heavy, high-sided pan for frying the pork cheeks. Fry each cheek until golden brown, and 70°C at the thickest part of the meat",
+      "Warm up the reduction, and add 1 tablespoon to each plate. Top the reduction with the crispy pig cheek, and about 40g of pickled fennel. Garnish the fennel with 4–5 slices of chilli and some chives"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Cheeks",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sushi Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Fennel",
+        "unit": null,
+        "notes": "sliced on a mandolin into 2mm thick slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": "plus more for storing the pig cheeks",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chillies",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2242e73158c9d593be898b7c4f3c78dc2317c144266eb05375145a69d13aa6f2",
+    "lineage_hash": "bf3e53e0b31f1f102cde7d265a2054a6ac1537d8591f815ac9def94d07e7e4e4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-pig-cheek-pickled-fennel-chilli-recipe",
+    "fetchedAt": "2026-08-02T16:14:44.044Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-pig-cheek-pickled-fennel-chilli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

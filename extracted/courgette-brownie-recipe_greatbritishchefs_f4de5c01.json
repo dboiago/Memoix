@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Courgette Brownie",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C/gas mark 4. Grease a 20x20cm baking tin and line with baking parchment",
+      "In a large bowl, whisk together the eggs, vanilla, salt, sugars, oil, ground pistachios, cinnamon and crushed cardamom. In another bowl, mix together the cocoa, baking powder and flour",
+      "Sift this into the wet mixture and fold gently to combine. Fold in the grated courgettes and chocolate chips, and mix until just combined",
+      "Pour into the prepared tin, scatter over the chopped pistachios and bake for 30–40 minutes, until the batter has set and springs back when pressed in the middle. Leave to cool",
+      "Slice into 16 squares and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "g",
+        "notes": "flavourless, such as vegetable or rice bran",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "finely ground in a food processor",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": "husks discarded and seeds crushed in a food processor",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spelt Flour",
+        "unit": "g",
+        "notes": "or plain flour",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": null,
+        "notes": "or 2 large courgettes, grated",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "chopped, to decorate",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2e5a7495fb79ac5e592785ce8803e1d35faee779cbde6060dcd4c65671c8eee3",
+    "lineage_hash": "a16486c2862f77563905b9d77a9a3ac7cf2e551bc2c9a33df20433c3e642e101"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/courgette-brownie-recipe",
+    "fetchedAt": "2026-08-03T14:45:41.527Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/courgette-brownie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

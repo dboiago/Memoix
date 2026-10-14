@@ -1,0 +1,54 @@
+{
+  "url": "https://www.koreanbapsang.com/daegu-tangjiri-mild-cod-fish-stew/",
+  "slug": "daegu-tang-mild-cod-fish-stew_koreanbapsang_364ed3a9",
+  "title": "Daegu Tang (Mild Cod Fish Stew)",
+  "byline": "Hyosun",
+  "fetchedAt": "2026-08-01T23:14:55.362Z",
+  "ldName": "Daegu Tang (Mild Cod Fish Stew)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Main Course",
+  "ldKeywords": "anchovy broth, cod fish, daegu, daegu jiri, daegutang, mu, napa cabbage, radish",
+  "ldIngredientsRaw": [
+    "1 pound cod fish (daegu, 대구) (preferably steak cuts, but fillets are okay too)",
+    "3-4  little neck clams or shrimp",
+    "3 ounces Korean radish",
+    "1 piece dasima (dried kelp, kombu), about 3-inch square",
+    "6 ounces tofu",
+    "1 tablespoon minced garlic",
+    "1  or 2 scallions",
+    "1  red or green chili pepper",
+    "1 ounce enoki mushrooms (optional)",
+    "a handful of watercress, crown daisy leaves (ssukgat) or minari.",
+    "salt and pepper ((a little bit of saeujeot (salted shrimp or fish sauce is great as an additional seasoning.))"
+  ],
+  "ldInstructionsRaw": [
+    "Clean the fish and clams (or shrimp).",
+    "Clean the vegetables. Cut the radish into thin bite sizes. Roughly slice the scallions and chili pepper. Cut the tofu into 1/2-inch thick bite size pieces.",
+    "Add 4 cups of water (or anchovy broth) to a medium size pot along with the radish and dasima (dried kelp). Bring it to a boil over high heat. Cook until the radish turns soft, about 5 minutes. Remove the dried kelp. Season with salt and pepper to taste.",
+    "Drop in the fish, clams and tofu. Add the garlic. When it comes to a boil again, reduce the heat to medium high. Cook until the clams are open and the fish is almost cooked through, 4 to 5 minutes. (Do not overcook. The fish will continue to cook in the boiling hot broth while being served and eaten.) Adjust the seasoning if needed.",
+    "Add the enoki mushrooms, if using, scallions, and chili pepper. Continue to boil for a minute, and add the watercress or crown daisy leaves. Turn the heat off. Serve piping hot."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 1 pound cod fish (daegu, 대구) preferably steak cuts, but fillets are okay too",
+    "▢ 3-4 little neck clams or shrimp",
+    "▢ 3 ounces Korean radish",
+    "▢ 1 piece dasima (dried kelp, kombu), about 3-inch square",
+    "▢ 6 ounces tofu",
+    "▢ 1 tablespoon minced garlic",
+    "▢ 1 or 2 scallions",
+    "▢ 1 red or green chili pepper",
+    "▢ 1 ounce enoki mushrooms optional",
+    "▢ a handful of watercress, crown daisy leaves (ssukgat) or minari.",
+    "▢ salt and pepper (a little bit of saeujeot (salted shrimp or fish sauce is great as an additional seasoning.)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

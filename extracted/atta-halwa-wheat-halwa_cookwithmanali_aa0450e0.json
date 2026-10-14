@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Atta Halwa (Wheat Halwa)",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "558",
+      "carbohydrateContent": "72",
+      "fatContent": "31",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Melt ghee in a pan on medium heat. Once the ghee melts, add atta to it and mix to combine well with the ghee.",
+      "Meanwhile heat 1 cup water in a pan on another stove. You want to the water to be boiling hot when you add it to the ghee-atta mix. So keep it ready to go.",
+      "Continue to stir the atta and cook until it turns brown in color and gives a nice aroma, take around 6 to 7 minutes on medium heat.Be careful to not burn the atta here.",
+      "Add the hot water now. Be careful as you add it since the halwa will bubble like crazy.",
+      "Stir continuously for a minute or two as you add the water and the water gets absorbed by the flour.",
+      "Add in the sugar and mix. The halwa consistency will become liquid-y again after adding sugar. Continue to cook for 2-3 more minutes on medium heat after adding the sugar.",
+      "Add cardamom powder and mix (optional). Stir to mix in the cardamom powder and remove pan from heat.",
+      "Serve atta halwa immediately. It tastes best when warm! You may garnish with some nuts."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "not melted, clarified butter, 75 grams",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Atta",
+        "unit": "C",
+        "notes": "whole wheat flour, 75-80 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "8 oz",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C",
+        "notes": "100 grams",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Powder",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0beb52f0b061a5f5f6e6ced09a8d22011b4c4ce489f94a6f981d33580d174eb2",
+    "lineage_hash": "f0953c11296e4b4f4987d1be8c445096ec02170ceeebdb87c413a727a457b38b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/atta-halwa/",
+    "fetchedAt": "2026-08-02T00:36:54.225Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/atta-halwa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

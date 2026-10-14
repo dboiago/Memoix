@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Black Pepper and Oyster Sauce Venison",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "This is a quick dish to cook, so first prepare all of your ingredients. Finely matchstick the ginger and spring onions",
+      "Chop the chives or green beans into 3 or 4cm lengths, then blanch them in boiling water for 2 minutes. Drain and set aside",
+      "Slice the venison steaks into large 1–2cm chunks, put them in a mixing bowl and add the light soy sauce and Shaoxing wine",
+      "Using your hands, massage the marinade into the meat until well coated, then add the cornflour and repeat until everything is well combined",
+      "Mix the sauce ingredients together in a small bowl then build your 'wok clock' on a large plate. Place your venison at 12 o’clock, then arrange the ginger, spring onions, Chinese chives or long green beans, and lastly the sauce bowl, clockwise around your plate",
+      "Heat 1 tablespoon of vegetable oil in a wok over a high heat until smoking hot and allow the oil to smoke up the wok for 5–10 seconds, then place the venison into the wok and stir fry for 30 seconds to 1 minute, to sear the pieces of meat",
+      "Now remove the venison from the wok into a bowl ready for later. Clean the wok and then heat the remaining tablespoon of oil in the wok again, over a high heat. Once smoking hot, add the ginger and half the spring onion and stir-fry for 30 seconds to 1 minute, until the spring onions have softened",
+      "Push the ingredients to the side of the wok, add the Chinese chives or long green beans and stir-fry for 1 minute, then return the venison to the wok and bring the wok to a smoking point once again",
+      "Once smoking hot, allow the smoke to build up for 10 seconds before pouring the sauce around the edge of the wok. Bring to a vigorous boil and continue to stir-fry for a further 30 seconds to 1 minute over a high heat. Scatter over the remaining spring onion and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "roughly the size of half a thumb",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chives",
+        "unit": null,
+        "notes": "or long green beans",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Venison Steak",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "011da0af3075a4e735d4611b51ef4a1a604fe011ad38d9c63a23b5d685f57a37",
+    "lineage_hash": "471721f7b2d6d75d27861697cfdaebad256775d20c8f8a4c4ce992b66ce65392"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-pepper-oyster-sauce-venison-recipe",
+    "fetchedAt": "2026-08-03T05:15:10.908Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-pepper-oyster-sauce-venison-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

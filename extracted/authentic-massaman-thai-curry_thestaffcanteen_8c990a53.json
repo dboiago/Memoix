@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Authentic Massaman Thai Curry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the chicken into chunks, around 2 inches in length.",
+      "In a wok, heat the vegetable oil, curry paste and 200ml of coconut milk. Keep stirring over a low heat until fragrant.",
+      "Add the chicken to the wok, turning frequently so all the meat is covered in sauce.",
+      "Pour in the remaining 400ml of coconut milk and simmer gently for 5 minutes.",
+      "Add the cubed potatoes, roasted peanuts, onions, fish sauce, palm sugar, tamarind juice, bay leaves, cardamom and cinnamon. Keep over a low heat to simmer until all the ingredients are tender.",
+      "Remove from the heat and serve with steamed white rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": null,
+        "notes": "cubed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Massaman Curry Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pc",
+        "notes": "roasted, 1cm long",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pod",
+        "unit": null,
+        "notes": "roasted",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5b52f8f7c8fc1311ada2d79af2ad57983540db4049e113662b7a17fceeb5e702",
+    "lineage_hash": "fb8882369581ea396ebfd9f3aac7c3399e5a953cbc225ce8b7b8a979c587487d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/Authentic-Massaman-Thai-Curry",
+    "fetchedAt": "2026-08-03T12:43:42.376Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/Authentic-Massaman-Thai-Curry",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

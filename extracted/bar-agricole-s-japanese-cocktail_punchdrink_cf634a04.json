@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Japanese Cocktail",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all ingredients to a shaker with ice and shake until chilled.",
+      "Double strain into a coupe glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "California Brandy",
+        "unit": "oz",
+        "notes": "such as Bar Agricole Biodynamic California Brandy",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orgeat",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1aba3a222fb2c71b2ba4caa45aff8171ebcd3a087fc3858ac7b3a3af96f23dd2",
+    "lineage_hash": "a16ef2370690bbdc34bcbfb4e9760e7a164e3bc9485b9cb45839b06e13a9a369"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/bar-agricoles-japanese-cocktail/",
+    "fetchedAt": "2026-08-03T06:57:33.353Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/bar-agricoles-japanese-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

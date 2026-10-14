@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Chocolate Crème Brulee",
+    "time": "2 hr 10 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the cream and the milk together. Mix the egg yolks with the seeds of half a vanilla bean pod, the sugar, and a pinch of salt; then briefly beat everything together with an electric hand mixer. Break up the chocolate into a bowl; add half of the hot milk and melt the chocolate completely.",
+      "Then add in the rest of the milk and mix well; finally, incorporate the egg yolks and continue to combine until you obtain a smooth, shiny mixture. On the bottom of a large baking pan with high edges, lay down 1 or 2 sheets of parchment paper so it is covered completely, then pour in about 2 inches of water and place 6 ramekins inside. Distribute the mixture evenly throughout each ramekin and bake at 300°F for 30 minutes.",
+      "Remove the baking pan from the oven, remove the ramekins from the water, and let them cool. Add a layer of sugar to the top of each ramekin. Use a blowtorch to caramelize the sugar or place the ramekins under the broiler until the top forms into a golden crust. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ebb877c0b3a2f1153536e8805b19f8b4dbaa8692b40c2b17c79a35b0a8bd9878",
+    "lineage_hash": "87fc9d5211e754dbb42b53814a117d8ce19f260afc1d578fe8586e38fc70ca01"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-creme-brulee",
+    "fetchedAt": "2026-08-02T19:00:22.778Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-creme-brulee",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

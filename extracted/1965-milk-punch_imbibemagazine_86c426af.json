@@ -1,0 +1,99 @@
+{
+  "recipe": {
+    "name": "1965 Milk Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing tin without ice and stir vigorously to make sure the vanilla is fully dispersed in the mix (you can also use an immersion blender). Pour into chilled cups, then grate fresh nutmeg over the top."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jamaican Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half & Half",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grade a",
+        "unit": "oz",
+        "notes": "alt: B maple syrup",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cacao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97c330fc8c6b933006363a0518cabd94304ca221434dd4c6b8d362f0bcdc2139",
+    "lineage_hash": "a698d11158a2eb53366ecd1e45990f08ad10e71da32c8b5a5c973fa181116198"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/matties-1965-milk-punch/",
+    "fetchedAt": "2026-08-03T19:40:55.897Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/matties-1965-milk-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

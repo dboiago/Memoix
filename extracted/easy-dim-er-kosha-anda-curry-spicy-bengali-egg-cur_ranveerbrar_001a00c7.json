@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Dim'er Kosha Anda Curry (Spicy Bengali Egg Curry)",
+    "time": "30-35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a non-stick kadai, add mustard oil, once it's smoky hot, add potatoes and fry them until golden brown or until cooked well.",
+      "Transfer it to an absorbent paper and keep it aside.",
+      "Add boiled eggs and fry them for a while until golden brown.",
+      "Transfer it to an absorbent paper and keep it aside for further use.",
+      "In the same kadai, add mustard oil, once it's smoky hot, add bay leaf, dry red chillies, cumin seed and let it splutter well.",
+      "Add onions and saute it for a while until golden in color.",
+      "Add prepared masala mixture and cook it for 2-3 minutes.",
+      "Add tomatoes, fried potatoes, water, green chillies, cover it with the lid and cook for a while until the tomatoes are mushy.",
+      "Add water to adjust the consistency, salt to taste, fried eggs and give it a quick boil.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with paratha or steam rice.",
+      "In a bowl, add coriander powder, cumin powder, degi red chili powder, turmeric powder, ginger garlic paste, water and give it a good mix.",
+      "Keep it aside for further use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "peeled & diced",
+        "amount": "2",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "No. Eggs",
+        "unit": null,
+        "notes": "hard boiled",
+        "amount": "8-9",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "C",
+        "notes": "Remaining",
+        "amount": "⅓",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "No. Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "2½",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Masala Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & roughly torn",
+        "amount": "2",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dimer Kosha",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tsp Degi Red Chili Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Masala Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c8b5fb7417efa48c170c883edac444259ba0c8a4815acc0c3a24c973e67989d",
+    "lineage_hash": "4f2dc6f74fb1c891e570d4d6449d83047e0d5fcf01325a85492edca8b747e5a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dimer-kosha-anda-curry/",
+    "fetchedAt": "2026-08-02T17:51:40.075Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dimer-kosha-anda-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "2 Ingredient Vegan Chicken",
+    "time": "3 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "222",
+      "carbohydrateContent": "8",
+      "fatContent": "1",
+      "proteinContent": "45"
+    },
+    "directions": [
+      "Make the dough ball (10 minutes active work)",
+      "Soak the dough (1 - 2 hours hands-off)",
+      "Wash the dough (15 - 20 minutes active work)",
+      "Braid and knot the dough (5 minutes active work)",
+      "Cool the dough (1 hour - overnight hands-off)",
+      "Shred the vegan chicken (5 minutes active work)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "vegan chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1¾",
+        "section": "vegan chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": "vegetable broth simmer (feel free to season as you prefer)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "vegetable broth simmer (feel free to season as you prefer)",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "vegetable broth simmer (feel free to season as you prefer)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "vegetable broth simmer (feel free to season as you prefer)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ea2879eb1eef1b691d0795d69d0acd247d1236287cb5112f718869d80aecf682",
+    "lineage_hash": "ac01fbe4d8b3a72fe431fe9ab7a344b27bfc6c8d272a9176b8d124ba3cc40298"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/2-ingredient-vegan-chicken-washed-flour-seitan/",
+    "fetchedAt": "2026-08-02T03:48:29.588Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/2-ingredient-vegan-chicken-washed-flour-seitan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

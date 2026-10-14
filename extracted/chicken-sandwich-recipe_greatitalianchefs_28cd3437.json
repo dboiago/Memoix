@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chicken Sandwich",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by brining the chicken. Combine the water, salt and sugar together in a large bowl and stir well to combine. Place the chicken breast in the bowl and leave to brine for 1 hour",
+      "Drain the chicken from the brine and place in a deep baking tray. Pour in 1cm of water, cover the tray with foil and steam in the oven for 20 minutes, or until tender and cooked through",
+      "Allow the chicken to cool, then dice into small cubes and place in a bowl with diced apple, celery and orange zest",
+      "In a separate bowl, whisk the mustard into the mayonnaise to form a creamy dressing. Fold this through the chicken salad mixture, ensuring everything is evenly coated",
+      "Halve the buns and fill with the chicken mixture. Add fresh pomegranate seeds and walnut pieces to taste, garnishing with alfalfa sprouts to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "And Skinless Chicken Breast",
+        "unit": null,
+        "notes": "boneless",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "plus extra for steaming",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "small green variety, diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ciabatta Buns",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alfalfa Sprouts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07a636f8962246e1383130c775845b6cc7d85b5bdeda9ef59510757b257ccb9d",
+    "lineage_hash": "595d50d44ceab107ff75ec891e8871c17273084034ad950ed8e962697c1fb226"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/chicken-sandwich-recipe",
+    "fetchedAt": "2026-08-02T04:01:31.321Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/chicken-sandwich-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

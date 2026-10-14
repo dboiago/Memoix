@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Chinese Pickled Cabbage",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "32",
+      "carbohydrateContent": "7.6",
+      "fatContent": "0.1",
+      "proteinContent": "0.9"
+    },
+    "directions": [
+      "Combine the rice vinegar, water, sugar, salt, and chili peppers in a small saucepan. Heat over medium heat until it reaches a simmer. Cook, stirring occasionally, for 5 minutes, until the sugar is dissolved. Use a clean spoon to taste the pickling liquid to see if it has the desired spice level. You can simmer it for a bit longer if you want the liquid to taste spicier. Once done, set aside and allow to cool.",
+      "Meanwhile, prepare the veggies. Cut out the cabbage core and discard it. Tear the leaves into bite-size pieces. Cut the carrot into 1/4” (1/2 cm) thick half-moon shaped slices.",
+      "Combine the cabbage, carrots, and 2 tablespoons of salt in a big bowl. Toss it with your hands so the veggies are coated with salt. Let sit at room temperature for 30 minutes, up to 1 hour (no more than an hour).",
+      "Drain and discard the salted water released by the veggies. Rinse the veggies with tap water twice. Drain thoroughly, and squeeze out the excess water from the veggies. Transfer them into a large container (or a jar).",
+      "Add the crushed garlic and Sichuan peppercorns (if using) into the same container.",
+      "Add the cooled pickling liquid. Press the veggies so they are submerged in the liquid. It is fine if a small fraction of the veggies are poking out from the liquid (because the veggies will shrink over time and become submerged). Seal the container and allow to pickle for 3 days in the fridge.",
+      "The pickles will start to taste good after 1 day, but the sourness will come through at day 3. Make sure to use clean chopsticks (or flatware) to pick out the pickles every time you serve them. They will stay good in the fridge for 2 to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "3",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Peppers More If Desired",
+        "unit": null,
+        "notes": "Optional",
+        "amount": "4",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Pickling mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cabbage",
+        "unit": "lb",
+        "notes": "450 g, about half of a small head of cabbage",
+        "amount": "1",
+        "section": "Prep",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "large",
+        "notes": "peeled",
+        "amount": "1",
+        "section": "Prep",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Prep",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "743637bb5a918a9a628793ef449aea67d47e0a86a411226c0df217ea374bf908",
+    "lineage_hash": "6dcb0dd925831c6005ebfcb63199de6a2ec9e22ec0ca3584bca98c1fc2bd969b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-pickled-cabbage/",
+    "fetchedAt": "2026-08-02T01:07:19.560Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-pickled-cabbage/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

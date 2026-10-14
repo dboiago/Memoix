@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Chinese Duck Soup",
+    "time": "3 hr 45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "448",
+      "carbohydrateContent": "6",
+      "fatContent": "41",
+      "proteinContent": "13"
+    },
+    "directions": [
+      "Rinse and clean the duck inside out. Remove and discard the tail, trim off excess fat and fatty skin, and remove any remaining feathers. Cut the duck into large chunks. Add the duck pieces to a soup pot with enough water to cover. Bring to a boil over high heat, and boil for 1 minute, stirring to make sure all the pieces are evenly blanched. Drain the duck pieces in a colander, and rinse them clean. Rinse out the pot as well.",
+      "Bring 4 quarts of water to a boil (or skip this step if you prefer a clear broth instead of a milky one).",
+      "While that’s happening, pre-heat your wok over high heat until it starts to smoke. Add the oil, and brown the duck pieces for about 15 minutes. Start with high heat, then reduce the heat once the pieces brown.",
+      "Turn off the heat and strain out any fat into a heat-proof bowl. Increase the heat to high, and pour half the water (cold water for clear soup or boiling water for milky soup) into the wok. Bring the soup to a boil and carefully transfer everything to a large soup pot along with the rest of the water (again, cold for clear soup, or boiling for milky soup).",
+      "Place over high heat, and add the ginger and white parts of the scallion. Bring to a boil. For a clear broth, reduce the heat to medium, and add the Sichuan peppercorns (if using), star anise, and dried orange peel. Cover and let the soup simmer for 45 minutes. For a milky broth, cover and boil vigorously for 15 minutes. Then reduce the heat to medium-high, and add the Sichuan peppercorns, star anise, and dried orange peel. Cover and simmer for 30 minutes.",
+      "Add the daikon, wood ear, and shiitake mushrooms. Bring back to a boil, cover, and simmer for another 30 minutes over medium heat. In the last 5 minutes of cooking, add the goji berries.",
+      "Before serving, salt to taste (don’t be shy with the salt, as we haven’t added salt up to this point) and add the scallion greens. Serve with white pepper powder on the table so everyone can season to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Duck",
+        "unit": "lb",
+        "notes": null,
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "qt",
+        "notes": "plus more for blanching the duck",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Slices Ginger",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "chopped, white and green parts separated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Dried Mandarin Orange Peel",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Daikon Radish",
+        "unit": "lb",
+        "notes": "cut into large chunks",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear",
+        "unit": "g",
+        "notes": "soaked, rehydrated and washed, dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushroom",
+        "unit": "g",
+        "notes": "rehydrated—soak in hot water for 2 hours, dried",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Goji Berries",
+        "unit": "Tbsp",
+        "notes": "optional, dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper Powder (to Serve)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e28ace82acf208607faea7af954428b56b9c904383dca7bdcf4f5f52906afcc",
+    "lineage_hash": "3a2db1832f0d24736ac137287772782f4b216c84e6ce247fdc7dc59f08384939"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-duck-soup-recipe/",
+    "fetchedAt": "2026-08-02T19:11:04.951Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-duck-soup-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Dirty Verde",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Paprika Oil"
+    ],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in an ice-filled shaker, shake and strain in a Collins glass. Garnish with paprika oil.",
+      "Paprika Oil: Mix 1 tsp. paprika with 1 cup virgin olive oil. Warm over low heat until paprika has fully dissolved. Let cool. Store at room temperature in a glass bottle. May require shaking before next use. Caution: Do not bring oil to high heat. It will catch fire."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Verde Poblano Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "14a8dc5ea9a7702b8ef18e01bfe2499a65e024fde2686c874c30aa3033b283ce",
+    "lineage_hash": "d7c1aaa0a84478a2dce759b3b814ca04d4ce0cb86820aafe24f4b2ac0cfe3443"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dirty-verde-from-kettner-exchange/",
+    "fetchedAt": "2026-08-03T20:40:58.690Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dirty-verde-from-kettner-exchange/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

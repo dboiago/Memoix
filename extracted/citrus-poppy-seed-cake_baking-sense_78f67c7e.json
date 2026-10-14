@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Citrus Poppy Seed Cake",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "283",
+      "carbohydrateContent": "40",
+      "fatContent": "15",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Pour milk over the poppy seeds and stir to combine.",
+      "Set the seeds aside to soak for 3 hours.",
+      "Drain the seeds and discard the milk.",
+      "In a large mixing bowl, combine the dry ingredients with the citrus zest.",
+      "Cream the dry ingredients with the butter and beat until aerated. Add the egg yolks.",
+      "Add the soaked poppy seeds.",
+      "Fold the batter together until the seeds are evenly distributed.",
+      "Fold in the whipped egg whites.",
+      "Spread the batter into the prepared pan and bake.",
+      "While the cake bakes, combine the citrus juice with powdered sugar to make a glaze and with granulated sugar to make a syrup.",
+      "As soon as the cake comes out of the oven, drizzle half the syrup over the cake. After 10 minutes flip the cake out of the pan and drizzle with the rest of the syrup.",
+      "Drizzle the glaze over the cake and allow it to set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Poppy Seeds",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "6¾",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cup + 2 tblsp",
+        "amount": "9",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "finely rated zest",
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "finely rated zest",
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "finely rated zest",
+        "amount": "1",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "8",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "separated, room temperature",
+        "amount": "6",
+        "section": "Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "2",
+        "section": "Syrup & Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "2 tblsp",
+        "amount": "1",
+        "section": "Syrup & Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "2 tblsp",
+        "amount": "1",
+        "section": "Syrup & Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Confectioner’s Sugar",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "4",
+        "section": "Syrup & Glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": "Syrup & Glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c20f7b48c2956cc1cdbd89c23716b7a3b4688bca6dfd0daddca4a6c38f881ef4",
+    "lineage_hash": "0aec2c8c66066eb7c31aa90020ac53fcf0479d689c83162ee9c67480698aba1a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2016/04/06/triple-citrus-poppy-seed-cake/",
+    "fetchedAt": "2026-08-02T05:57:15.995Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2016/04/06/triple-citrus-poppy-seed-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Black Sesame Ice Cream (No-Churn)",
+    "time": "5 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "249",
+      "carbohydrateContent": "26.4",
+      "fatContent": "14.3",
+      "proteinContent": "4.9"
+    },
+    "directions": [
+      "Chill a 6-cup loaf pan or baking pan in the freezer.",
+      "Add the black sesame seeds into a medium-sized skillet and toast them over medium heat. Stir occasionally until you can hear a gentle sizzle as you lean towards the pan, about 5 minutes. Turn to low heat and toast for another minute, or until you smell a strong nutty aroma. Transfer to a big plate to cool for 5 minutes.",
+      "Transfer the sesame seeds to a food processor. Mix until it just starts to form a paste. Add condensed milk, vanilla and salt. Mix until everything is combined. Transfer to a big bowl.",
+      "Pour the heavy cream into a large, deep bowl. Whip with a mixer on medium-high speed, until it forms firm peaks, about 2 minutes. Transfer about 1 cup of the whipped cream into the condensed milk mixture. Fold with a rubber spatula until just combined. Then transfer the condensed milk mixture into the whipped cream. Fold until just blended. Pour it into the loaf pan. Cover and transfer into the freezer.",
+      "Freeze until the ice cream turns solid, about 5 hours or so. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": "roasted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "can",
+        "notes": "14-oz., sweetened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": "cold",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9a9e13db359e7ae1c8dc6dd6a69b425e4cbc2830eea9b625dc0f10dba8699c09",
+    "lineage_hash": "206279e9cc1bf11b7fdab98aee88f3aee4e8ed4c23881990c86f351952783af2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/black-sesame-ice-cream/",
+    "fetchedAt": "2026-08-02T03:05:21.160Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/black-sesame-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

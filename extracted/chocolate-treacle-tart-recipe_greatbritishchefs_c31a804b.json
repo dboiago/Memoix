@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Chocolate treacle tart",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the flour, salt, cocoa powder, sugar and butter to a food processor. Blitz until it resembles a fine crumb",
+      "With the motor running, add the water, a little at a time until everything starts to come together",
+      "Press the dough into a ball, wrap in clingfilm and refrigerate for around 20 minutes",
+      "Roll out on a floured surface until it’s large enough to line the base and sides of your loose bottomed flan tin",
+      "Trim the edges, cover with a sheet of baking paper and lay baking beans on top",
+      "Bake in the oven for 15 minutes, and then an additional 5 minutes with the paper and beans removed",
+      "Set aside whilst you make the filling. Add the golden syrup, cocoa powder and butter to a saucepan",
+      "Heat gently and whisk until melted and smooth. Stir in the breadcrumbs and pour into the pastry case",
+      "Make the topping by blitzing the cornflakes, cocoa and sugar in a food processor. Tip the topping onto the filling and smooth over gently",
+      "Place in the oven and bake for 30 minutes. Drizzle melted chocolate over the top and leave to cool"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cold",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "cold",
+        "amount": "3½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": null,
+        "notes": "melted for drizzling",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c7f058b73e8faeb11cc2809349c632f7f6a0b64d62d310a8561c723a5c4789ee",
+    "lineage_hash": "53c5e6b982fe956bb77e27e09bc04325d6e7ffc5630cecb20aec92032d5911bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-treacle-tart-recipe",
+    "fetchedAt": "2026-08-03T22:54:58.382Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-treacle-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

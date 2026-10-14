@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Classic Carrot Cake with Cream Cheese Frosting",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 325°F. Grease a 9-inch cake pan.",
+      "Sift the flour, baking powder, baking soda, cinnamon and salt into a large bowl. Stir in the grated carrots. In a separate bowl, whisk the brown sugar, oil and eggs and add this to the carrot mixture, stirring until well blended. Stir in the raisins or walnuts (if using) and scrape the batter into the prepared cake pan. Bake the cake for 40 to 50 minutes, until a tester inserted in the centre of the cake comes out clean. Cool the cake for 20 minutes in the pan, then turn out to cool completely.",
+      "For the frosting, beat the butter and cream cheese for 3 minutes or until fluffy. Add the icing sugar and vanilla and beat gently until the sugar is incorporated, then beat more vigorously until the icing is fluffy.",
+      "Cut the cake in half horizontally and place one cake layer on a platter. Spread a cupful of the frosting over the cake and top with the second cake layer. Spread the remaining frosting on the top and side of the cake. Garnish the edge of the cake with walnut halves, if you wish. Store the cake refrigerated."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "C",
+        "notes": "coarsely, grated, loosely packed",
+        "amount": "3",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "⅔",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": "alt: walnut pieces, optional",
+        "amount": "½",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": null,
+        "notes": "for garnish (optional)",
+        "amount": "0",
+        "section": "Carrot Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": "Cream Cheese Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "C",
+        "notes": "at room temperature",
+        "amount": "¾",
+        "section": "Cream Cheese Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "C",
+        "notes": "sifted",
+        "amount": "2",
+        "section": "Cream Cheese Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Cream Cheese Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "013ee1b212ec9fb544c87b3f47e603d5776ec5a30a1c68ae83028532a64c9174",
+    "lineage_hash": "f6b9b2caed6bd2048d0e6febf089627092c3f0450b2a29f9629976e20a92edde"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-carrot-cake-with-cream-cheese-frosting/",
+    "fetchedAt": "2026-08-01T19:10:08.832Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-carrot-cake-with-cream-cheese-frosting/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

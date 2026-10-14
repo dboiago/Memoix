@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Dorayaki",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, beat egg with a whisk, add sugar and mix well. Keep beating until mixture is whitish and stringy.",
+      "Mix baking soda with 1 teaspoon of water and add this to the egg mixture. Add half of the water (200 ml) and mix well.",
+      "Stir in the flour, then gradually add the rest of the water into batter, mix well.",
+      "Lightly oil a skillet/girdle, pour 1 ladle of the batter, making round shapes of 4 inches diameter (just like making pancakes).",
+      "When the top surface is half dry and you can see bubbles, check if the bottom is golden brown, flip with a spatula and cook until dry. Repeat until all batter is used up.",
+      "Sort pancakes into pairs, sandwich 2 tablespoon of red bean paste between a pair of pancakes and press lightly to secure."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Red Bean Paste",
+        "unit": "g",
+        "notes": "*",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42bdcbe34d5e4e59ac77c326aaac9b50c9f582875013b73c58c77e359498ad46",
+    "lineage_hash": "ab9b9d5a03650d77ace033e79a5e4a30f1a83bdb63cb3df9fc299875f230d710"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/dorayaki.html",
+    "fetchedAt": "2026-08-02T12:05:00.896Z"
+  },
+  "rawSource": "https://dailycookingquest.com/dorayaki.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

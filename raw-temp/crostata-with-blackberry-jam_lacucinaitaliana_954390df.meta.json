@@ -1,0 +1,42 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/crostata-blackberry-jam",
+  "slug": "crostata-with-blackberry-jam_lacucinaitaliana_954390df",
+  "title": "Crostata with Blackberry Jam",
+  "byline": "by  Editorial staff   September 17, 2020",
+  "fetchedAt": "2026-08-03T09:03:29.956Z",
+  "ldName": "Crostata with Blackberry Jam",
+  "ldTime": "PT1.2M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Crostata,Jam,Blackberries",
+  "ldIngredientsRaw": [
+    "2CUPS flour",
+    "2/3CUPS butter",
+    "2/3CUPS caster sugar (superfine)",
+    "1 egg",
+    "1 egg yolk",
+    "blackberry jam"
+  ],
+  "ldInstructionsRaw": [
+    "<p><span lang=\"en-US\">To make our recipe for this delightful blackberry jam crostata, start by mixing flour with butter, caster sugar, 1 whole egg, and 1 egg yolk.</span></p>",
+    "<p><span lang=\"en-US\">Transfer the crostata dough to the fridge or let it rest in a cool, dark place for half an hour. &nbsp;</span>&nbsp;</p>",
+    "<p><span lang=\"en-US\">Roll out half the dough into a glass or ceramic baking dish lined with baking parchment.</span></p>",
+    "<p><span lang=\"en-US\">Form the edges, pressing into the dough with the tines of a fork.&nbsp;</span>&nbsp;</p>",
+    "<p><span lang=\"en-US\">Distribute the jam over the tart dough and use the rest of the crostata dough to cover the surface, arranged in a grid pattern. Bake at 355°F (180°C) for about 40 minutes.</span></p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 CUPS of flour",
+    "2/3 CUPS of butter",
+    "2/3 CUPS of caster sugar (superfine)",
+    "1  of egg",
+    "1  of egg yolk",
+    "blackberry jam"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Classic Lemon Layer Cake with Buttercream & Lemon Curd",
+    "time": "4 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place one cooled cake layer on a cake wheel or cake stand. Fill a piping bag (no tip needed) with about 1 cup (250 mL) buttercream. Pipe a ring on the top outside edge of the cake, then spoon in a third of the chilled lemon curd and spread it to the edges of the buttercream. Top with a second cake layer and repeat with the buttercream piping and curd. Top with the final cake layer.",
+      "To cover and decorate the cake, spread an even layer of buttercream over the top of the cake, pushing any excess buttercream right to the outside edge of the cake—this makes it easier to join the buttercream from the sides with the frosting from the top. Smooth an even layer of buttercream on the sides of the cake. The buttercream can be sheer on the sides of the cake, if replicating the décor pictured, but the top of the cake should be fully covered and as level as possible. Chill the cake for 2 hours before finishing the décor.",
+      "Fill a large piping bag fitted with a small straight petal tip (see note) with buttercream. To create each vertical ruffled row, hold the piping tip as upright as possible with the wide end of the petal tip against the bottom edge of the cake. Pipe back and forth in a 1-inch (2.5 cm) width and pipe up the side of the cake, until you reach the top. Repeat with another ruffle next to the first. Continue to repeat the ruffles as you work around the entire cake.",
+      "Chill the cake for at least 2 hours before serving. The whole cake will keep, uncovered, in the fridge for up to 2 days. Once the cake is sliced, cover the exposed surface of the cake with parchment or plastic wrap and refrigerate for up to 3 days."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Recipe Golden Vanilla Cake",
+        "unit": null,
+        "notes": "with the finely grated zest of 2 lemons added with the butter, and baked into three 8-inch (20 cm) rounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Swiss Buttercream",
+        "unit": null,
+        "notes": "with the finely grated zest of 1 lemon added with the vanilla, freshly prepared",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe Creamy Lemon Curd",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b9de5c5f7cbaf2cc942f72e8a4811d0e973150313c0526e000302b732d3bb895",
+    "lineage_hash": "a94834a4c006eeb971a0f4e0c1db0aec2c43baa9ece60c9115d269371ef25cf5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/classic-lemon-layer-cake-with-buttercream-lemon-curd/",
+    "fetchedAt": "2026-08-01T19:24:07.610Z"
+  },
+  "rawSource": "https://annaolson.ca/project/classic-lemon-layer-cake-with-buttercream-lemon-curd/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

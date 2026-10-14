@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Avocado Daiquiri",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Cocktail",
+    "garnish": [
+      "Pomegranate Hearts"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend ingredients well. Pour into a glass. For garnish, spoon the pomegranate concentrate (the purée, not the juice; it’s available online and at some gourmet markets or health food stores) into a plastic squeeze bottle or a pastry tube and draw a zigzag pattern across the top. Drag two straws through the middle to make a series of pomegranate hearts. Serve with a straw."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Silver Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Half and Half",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "medium ripe, peeled and pitted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "81d82361f979d5794b36710511ac498b5f352e45864e796a9520235feb651798",
+    "lineage_hash": "3e447aa8da0cd895bdbb79357d87431d706373be93ed6c959a10d415290b3a56"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/avocado-daiquiri/",
+    "fetchedAt": "2026-08-04T00:55:58.851Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/avocado-daiquiri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

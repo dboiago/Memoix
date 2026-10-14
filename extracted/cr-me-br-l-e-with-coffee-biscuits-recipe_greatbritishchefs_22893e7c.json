@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Crème Brûlée with Coffee Biscuits",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the crème brûlée. Preheat the oven to 150°C",
+      "Heat the cream and vanilla in a saucepan until just below boiling. Remove from the heat and allow to cool to around 45°C",
+      "Whisk the egg yolks and sugar until pale, then gradually whisk in the warm cream. Strain the mixture into two ramekins",
+      "Place the ramekins in a deep baking dish, fill halfway with boiling water, and bake for 30–40 minutes until set but slightly wobbly in the middle. Cool, then chill for at least 4 hours",
+      "Next, make the coffee biscuits. Cream the butter and sugar together until light and fluffy. Stir in the dissolved coffee, then mix in the flour and baking powder to form a dough",
+      "Roll into a log, wrap in cling film, and chill for 30 minutes",
+      "Slice into 1 cm slices and bake on a lined tray at 180°C for 12–15 minutes. Cool completely",
+      "To caramelise the brûlée, sprinkle a thin, even layer of sugar over each crème brûlée. Use a kitchen blowtorch to caramelise the sugar until golden. Let cool briefly to harden",
+      "Serve the crème brûlée with coffee biscuits on the side and garnish with fresh mixed berries"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "or 1.5 tsp vanilla bean paste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": "plus extra for caramelising",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "65",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Powder",
+        "unit": "tsp",
+        "notes": "dissolved in ½ tsp hot water",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ef432cea601ad8dc67cf3e4073dad895a507e964c09747f35316a568f4651caf",
+    "lineage_hash": "d2d699f70dc7e2162f8c1dee172489a56d2996de53a067827836826a85608297"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/creme-brulee-coffee-biscuits-recipe",
+    "fetchedAt": "2026-08-02T06:16:09.478Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/creme-brulee-coffee-biscuits-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

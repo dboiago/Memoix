@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Bibim Guksu (Korean Cold Noodle Salad)",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "KR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "518",
+      "carbohydrateContent": "98",
+      "fatContent": "10",
+      "proteinContent": "17"
+    },
+    "directions": [
+      "Boil the noodles in rolling boiling water following the package instructions. (I boiled mine for 3 mins.) Drain the noodles and run some cold water over the noodles to cool them down. Drain.",
+      "Place the noodles in a large serving bowl and add the salad ingredients and sauce. Serve.",
+      "To eat, mix all ingredients well with chopsticks and indulge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Buckwheat Noodles (or Soba Noodles)",
+        "unit": "g",
+        "notes": "6.3 ounces, dried",
+        "amount": "180",
+        "section": "NOODLES",
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaves (40g / 1.5 Ounces)",
+        "unit": null,
+        "notes": "e.g. butter or oakleaf lettuce, thinly sliced",
+        "amount": "2",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage (140g / 5 Ounces)",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "¼",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber (60g / 2 Ounces)",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "½",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot (40g / 1.4 Ounces)",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "⅓",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Red Radish (60g / 2 Ounces)",
+        "unit": null,
+        "notes": "optional, julienned",
+        "amount": "1",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "A Few Snow Pea Sprouts",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Kimchi",
+        "unit": "Tbsp",
+        "notes": "cut into thumbnail size",
+        "amount": "2",
+        "section": "SALAD OPTIONS",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "SAUCE (MIX THESE IN A BOWL)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a5d79a3a059b88e1131487820bf2a1fa98034b736dad0270982e8f26f95c6a7",
+    "lineage_hash": "cb8eb5c24a3c89f563765b61053fe2bd160378e1d211885fd5681bc0165517ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://mykoreankitchen.com/spicy-sweet-and-vinegary-noodles-bibim-guksu/",
+    "fetchedAt": "2026-08-01T23:00:11.276Z"
+  },
+  "rawSource": "https://mykoreankitchen.com/spicy-sweet-and-vinegary-noodles-bibim-guksu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

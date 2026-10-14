@@ -1,0 +1,115 @@
+{
+  "recipe": {
+    "name": "Broccoli with Garlic Sauce",
+    "time": "23 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "169",
+      "carbohydrateContent": "34",
+      "fatContent": "3.7",
+      "proteinContent": "3.1"
+    },
+    "directions": [
+      "Heat 1” water in a large frying pan over medium-high heat until boiling. Add the broccoli. Cover the pan and cook for 2 minutes, until al dente. Drain the broccoli and set aside.",
+      "Mix the sauce ingredients together in a small bowl.",
+      "Wipe the pan clean and heat the oil over medium-high heat until shimmering. Add the ginger and garlic. Stir and cook for 30 seconds to release fragrance.",
+      "Add the broccoli. Stir and cook for 1 minute, until coated evenly with oil and the extra moisture from blanching has been cooked off. Stir the sauce again until the cornstarch is fully dissolved, then pour it into the pan. Immediately stir to mix everything well until the sauce thickens. Transfer everything to a plate and serve hot as a side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Broccoli",
+        "unit": "lb",
+        "notes": "cut into bite size pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Stir fry",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "Stir fry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cdbd2e842088e985d06d7080630a0b96df7da8d6d1c2de825ece14f3c32636ed",
+    "lineage_hash": "7ecedef0b7d450eedfecf9c60c00bcb3c15793f7106903381abf0ca7b11004b5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/broccoli-with-garlic-sauce/",
+    "fetchedAt": "2026-08-02T06:56:16.671Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/broccoli-with-garlic-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Toast and Marmalade",
+    "time": null,
+    "course": "pickles",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients well, pour the contents into a double rocks glass. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Drambuie",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Orange Marmalade",
+        "unit": null,
+        "notes": "heaping",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittermen's Mole Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "19734c5e3813a860faefe3a112d8d699ad0df040c5b7beb5cf03b80edf9d8d98",
+    "lineage_hash": "d2450ddbc2540c313b9b7921c3d8d7e85e667a1e3bba308834c4ffd3e5f2062c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/breakfast-cocktail-toast-and-marmalade/",
+    "fetchedAt": "2026-08-04T01:52:25.201Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/breakfast-cocktail-toast-and-marmalade/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Bajra Muthiya (बाजरा मुठिया)",
+    "time": "40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For Muthiya dough, combine all the ingredients in a mixing bowl and mix well.",
+      "Add water and knead into a soft dough.",
+      "Apply a little oil on your hands and divide the mixture into equal portions and shape into cylinders.",
+      "Place the muthiyas on a greased plate and steam the muthiyas for 10-12mins.",
+      "In a pan heat oil for add the mustard seeds, jeera, sesame seeds, curry leaves and hing. Now add the",
+      "Stir on a medium flame till it turns crispy.",
+      "Switch off the flame and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bajra Atta",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili Ginger Garlic Paste",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1-2",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "Tbsp",
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": "For Muthiya Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Few Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Tempering",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a6262a893cc816907cefb79c119ceee02f5bb1e90c08542d545e55fc9034b52e",
+    "lineage_hash": "435999f7237b3ef74c0cc2c0543ce99d18585496d8f4e5078ab06ecfb149b6d8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/bajra-muthiya/",
+    "fetchedAt": "2026-08-02T10:17:54.238Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/bajra-muthiya/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

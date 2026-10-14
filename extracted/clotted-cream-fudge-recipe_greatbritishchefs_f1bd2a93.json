@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Clotted Cream Fudge",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line an 18cm square tin with baking paper",
+      "Combine all the ingredients in a large saucepan and place over a medium heat. Cook for 15–20 minutes, stirring occasionally to stop the mixture from catching on the bottom of the pan",
+      "The fudge is ready when it reaches 116°C on a sugar thermometer",
+      "When the fudge reaches 116°C on a sugar thermometer remove from the heat. Leave to cool slightly before beating with a wooden spoon until the mixture turns from shiny to matte",
+      "Spread out in the lined tin and cover with baking paper. Transfer to the fridge for 1 hour to set before cutting in to squares to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clotted Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c528dcfa9e513102a8dc37862fa57b4632a2b30c1f8084db4b5c5b4142d9358",
+    "lineage_hash": "36ab1877ee440d1f995621aea0a8bf228f57e091535b943ec8e6035fd02c9773"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/clotted-cream-fudge-recipe",
+    "fetchedAt": "2026-08-03T13:16:17.021Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/clotted-cream-fudge-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

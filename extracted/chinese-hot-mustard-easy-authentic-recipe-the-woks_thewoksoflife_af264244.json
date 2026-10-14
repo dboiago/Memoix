@@ -1,0 +1,98 @@
+{
+  "recipe": {
+    "name": "Chinese Hot Mustard",
+    "time": "15 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "13",
+      "carbohydrateContent": "1",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Mix the dry ingredients together in a small bowl until evenly combined. Add water and stir well until a liquid paste forms and all dry ingredients are absorbed. Next, add oil and vinegar and stir well until evenly combined.",
+      "Let your Chinese hot mustard rest for 10 minutes covered, and re-stir to ensure the dry ingredients have fully absorbed. At this point, taste your Chinese Hot Mustard and adjust it to your own preferences.",
+      "Add a little more water or oil if you like a thinner in consistency. Add more vinegar if you like it a tad tart. Omit the vinegar altogether if you like it spicier, since vinegar makes your mustard a bit mellower in flavor. Add more white pepper and/or mustard powder if you like it spicier. Add sugar if you want to tone down the bitterness of the dry mustard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mustard Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar Optional",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c31b7c2e9193834033ad25ee2cad42e4317aed1c70f2f256aa0fa81f6e936e80",
+    "lineage_hash": "c644f850a3bf655472f6eda6d7237fd4b6abce878d50cc8edb65d17bb8683b37"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-hot-mustard/",
+    "fetchedAt": "2026-08-02T13:50:57.010Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-hot-mustard/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

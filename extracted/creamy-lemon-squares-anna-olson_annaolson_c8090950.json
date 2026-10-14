@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Creamy Lemon Squares",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 °F (180 °C). Grease and line a 9-inch (23 cm) square pan with parchment paper so that the paper comes up the sides.",
+      "To prepare the base, pulse the flour and sugar in a food processor to combine. Add the butter and pulse it until the mixture is an even crumbly texture, but the dough should not comes together. Press this into the prepared pan.",
+      "Bake for 15 to 18 minutes until the base turns golden around the edges. Prepare the filling while the crust cools.",
+      "In the food processor, pulse the cream cheese with ½ cup (100 g) of the sugar until smooth. Add the remaining 1 cup (200 g) of sugar, the flour, lemon zest and baking powder and blend. Add the lemon juice and eggs and blend until smooth, scraping down the sides of the processor once or twice. Pour the filling over the cooled crust.",
+      "Bake for 35 to 40 minutes, until the edges are set and just show signs of soufflé-ing a little, but the centre should still have a bit of a jiggle to it. Cool the squares to room temperature before chilling for at least 3 hours before slicing and dusting with icing sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Base",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Base",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cold, cut into pieces",
+        "amount": "½",
+        "section": "Base",
+        "isOptional": false
+      },
+      {
+        "name": "Pkg Oz Cream Cheese",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": "Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "77cc9c9efc0780dd1f81e9a4f496c46d2d1e698863ef2b924aad171837063729",
+    "lineage_hash": "98045f71866665b6be462fdb9f63c7a634695331c95595946b06446beb5dd08d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/creamy-lemon-squares/",
+    "fetchedAt": "2026-08-01T20:28:18.755Z"
+  },
+  "rawSource": "https://annaolson.ca/project/creamy-lemon-squares/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

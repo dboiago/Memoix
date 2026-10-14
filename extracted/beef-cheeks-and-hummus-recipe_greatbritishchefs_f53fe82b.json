@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Beef Cheeks and Hummus",
+    "time": "4 hr 50 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a large, heavy-based ovenproof pan with a drizzle of oil over a high heat",
+      "Season the meat generously with salt and pepper on all sides",
+      "When the pan starts to smoke, add the meat in batches (do not overcrowd the pan as the cheeks won’t seal properly) and brown on all sides",
+      "Remove the meat from the pan and set aside. Add a drizzle more oil, then add the vegetables to the pan and cook until over a medium heat until caramelised at the edges – this can take 20–25 minutes, so be patient",
+      "Add the tomato purée and red wine to the vegetables in the pan and cook until the wine has reduced by half",
+      "Return the beef cheeks to the pan, add the bay leaves, garlic and cover with stock",
+      "Bring to the boil and cover tightly with foil and cook in the oven for 2.5 –3 hours. The best way to check the meat is done is to take one cheek out onto a plate and to taste it – it should be really soft, but not falling apart",
+      "For the hummus, rinse the chickpeas for a few minutes, then drain and place in a stockpot with enough water to cover. Add the bicarbonate of soda, bring to the boil and simmer for about 2 hours, or until the chickpeas are soft enough to yield easily when pinched",
+      "Drain the chickpeas, saving 125 ml of the cooking liquid",
+      "Leave the chickpeas to cool slightly, then transfer to a food processor and blitz for 3–4 minutes. Add the cooking liquid and blitz for a further 2 minutes. Add the salt, lemon juice and tahini and blitz for another 2 minutes. Store in the refrigerator. It will keep for up to 3 days",
+      "Once it's ready, remove the meat from the pan and keep covered in a warm place",
+      "Pass the stock through a fine sieve into a small saucepan and set over medium heat. Reduce the stock by simmering it for a few minutes until reduced by two-thirds",
+      "Strain and serve the cheeks with the sauce and 2 tbsp hummus per person"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Cheek",
+        "unit": "kg",
+        "notes": "trimmed",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Onions",
+        "unit": "g",
+        "notes": "cut into 2 cm cubes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium Leeks",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "peeled and cut into 2 cm cubes",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "ml",
+        "notes": "plus optional extra 300ml to reheat the cheeks",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chickpeas",
+        "unit": "g",
+        "notes": "dried, soaked in plenty of water for 24 hours",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tahini",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b0b114c612af25012dceee690d3c25ad52d6308055a0e3a9fdab6aabd3efbbcb",
+    "lineage_hash": "489f21b79a556a0b6ddb765cb5a81af486b0744f8f2858d0bffd79a26f81dd42"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-cheeks-hummus-recipe",
+    "fetchedAt": "2026-08-02T17:50:17.897Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-cheeks-hummus-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

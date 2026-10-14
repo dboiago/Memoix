@@ -1,0 +1,192 @@
+{
+  "recipe": {
+    "name": "Catalan Courgette, Tomato, Pepper & Egg Pie",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat the olive oil in a pan, add the onions, celery, garlic, peppers and smoked paprika; cook over medium heat for 8-10 minutes.",
+      "Add the tomatoes and saffron, cook for 5 minutes, then add the courgettes. Raise the heat to evaporate excess moisture and reduce the tomatoes to a pulp. Season to taste.",
+      "Add the sultanas, chopped eggs and capers, cook for a final minute and transfer to a deep 23cm ovenproof dish.",
+      "In a bowl whisk together the eggs and yoghurt.",
+      "Stir in the polenta, half the cheese, flour and baking powder, mixing well.",
+      "Spread the topping over the vegetables in the pie dish to form a thick crust.",
+      "Sprinkle over the remaining cheese, baking for 25 minutes until the crust is golden and crusty.",
+      "Serve with your choice of salads.",
+      "Built by Chefs. Powered by You.",
+      "For 18 years, The Staff Canteen has been the meeting place for chefs and hospitality professionals—your stories, your skills, your space.",
+      "Every recipe, every video, every news update exists because this community makes it possible.",
+      "We’ll never hide content behind a paywall, but we need your help to keep it free.",
+      "If The Staff Canteen has inspired you, informed you, or simply made you smile, chip in £3—less than a coffee—to keep this space thriving.",
+      "Together, we keep the industry connected. Together, we move forward."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cheddar Cheese",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Polenta",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "large",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stick Celery",
+        "unit": null,
+        "notes": "peeled and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tb Smoked Paprika",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Peppers",
+        "unit": null,
+        "notes": "halved, deseeded and chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Good Pinch of Saffron",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgettes",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hard-boiled Eggs",
+        "unit": null,
+        "notes": "shelled and chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tb Capers",
+        "unit": null,
+        "notes": "rinsed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d701ded947e40c02e5117292e963d3cfde5d1a6543ba127864a5d32081136ae0",
+    "lineage_hash": "c50ed78c837da8415afae755debd3cb296d9cf8382595d69db318c511ee00cfe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/catalan-courgette-tomato-pepper-egg-pie",
+    "fetchedAt": "2026-08-03T07:48:02.704Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/catalan-courgette-tomato-pepper-egg-pie",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Dirty Thai Fried Rice",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Trim off any unwanted fat-tissues attached, then soak the chicken liver in milk for a few hours to overnight, to draw out excess blood.",
+      "Drain off the milk and add the liver to a blender, along with diced lemongrass, Asian shallots, garlic, ginger, kaffir lime leaves (the soft leaf-parts only), soy sauce, shrimp paste and ground white pepper. Blend until smooth and pureed (the livers and vegetables should emit enough liquid to blend).",
+      "Heat up 3 tbsp of oil in a skillet over high heat, then cook the paste until slightly browned, approx 3 min. The paste should lose most of the liquid. Set aside (can be made the day ahead).",
+      "Mix 1/2 tbsp of fish sauce together with soy sauce, then set aside.",
+      "Mix the remaining 1/2 tbsp of fish sauce with shrimps with a bit of cracked black pepper, set aside.",
+      "Beat the eggs only slightly, and have all the rest of the components ready on the side.",
+      "Heat 1 tbsp of oil in a skillet over high heat, and cook the shrimps until just cooked through, then remove from the skillet.",
+      "Add another 1 tbsp of oil and add the slightly beaten eggs. Scramble with a spatula until 1/2 of the eggs are cooked with the other 1/2 still runny.",
+      "Add the rice right now so it can be partially coated with the runny eggs.",
+      "Once the rice is added, add another 2 tbsp of oil and the fish sauce/soy sauce mixture, then quickly but gently break up the rice with wooden spatula, fold and cook over high heat until some of the eggs are slightly browned.",
+      "The faster you fry the rice, the shinier and prettier it will remain (so the higher the heat, the better).",
+      "Now add the liver paste, cooked shrimp, old bay seasoning and dried chili fakes, and scalllions. Fold and cook only for a min until fragrant, and evenly incorporated.",
+      "Transfer to a serving dish immediately and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Liver",
+        "unit": "oz",
+        "notes": "trim off any unwanted fat-tissues attached, soak in milk for a few hours to overnight",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemongrass",
+        "unit": "stalks",
+        "notes": "white parts only, diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Shallots",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "smashed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaffir Lime Leaves",
+        "unit": null,
+        "notes": "tough ribs removed, soft leaf-parts only",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Shrimp Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": "preferably jasmine rice, cooled or 1 day-old",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shrimps",
+        "unit": "C",
+        "notes": "peeled and deveined",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beat slightly",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": "divided in half",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Bay Seasoning and Dried Chili Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Scallions",
+        "unit": null,
+        "notes": "finely diced or cut into thin strips",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "21a1710c98abc38dec2c8b78144236cecbed5cf234ae0ba409950f83ac73fcfb",
+    "lineage_hash": "fd8a98e11a3f4138ae80f1b675b1131a029898aa1458d21d5117d829384494d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2014/09/15/dirty-thai-fried-rice/",
+    "fetchedAt": "2026-08-01T23:41:27.550Z"
+  },
+  "rawSource": "https://ladyandpups.com/2014/09/15/dirty-thai-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

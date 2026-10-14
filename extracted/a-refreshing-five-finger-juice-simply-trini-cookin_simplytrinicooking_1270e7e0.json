@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Five Finger Juice",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash and cut up the five finger. Blend with 1 cup of water and strain. Note: Squeeze the pulp to extract more juice. Add two more cups of water. Add bitters and sugar to taste and stir. Mix well.",
+      "Adjust sugar if necessary. Serve chilled or with ice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Five Finger Starfruit",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water Divided",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6556f3992dfac895c98df225303e4c7a9d8145cc84fdbabd66549c762ec8173",
+    "lineage_hash": "94a84b2b8d466878d8bdb29ca81873e17e1c76599f5ea73cd5f941be85f5a10b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/five-finger-juice/",
+    "fetchedAt": "2026-09-26T01:10:33.210Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/five-finger-juice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Cardinale Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir the gin, Campari, and vermouth with ice in an Old Fashioned glass, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2f1b688441f0b6e50fe86d651f09792a71ebcedc54f26f9b5c34ae7493b0a05b",
+    "lineage_hash": "46cd169990f4517d02a1260499c24d1aecbd58b3cc8ba083b388b99175f016bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cardinale-negroni/",
+    "fetchedAt": "2026-08-03T18:00:47.521Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cardinale-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

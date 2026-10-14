@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Cranberry Crumb Pie",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "437",
+      "carbohydrateContent": "76",
+      "fatContent": "15",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 350°F (175°C). Roll the pie dough to line a 9\" deep dish pie pan. Crimp the edges with a fork or your fingers.",
+      "In a large bowl toss together the cranberries, granulated sugar, corn starch, orange zest, cinnamon and ginger. Pour the cranberries into the dough-lined pie plate.",
+      "Combine the flour, oats, baking soda, salt, cinnamon, ginger, brown sugar and granulated sugar in a large mixing bowl or in the bowl of a food processor. Mix to combine the ingredients or pulse a few times in the processor.",
+      "Toss in the butter and mix with your fingers until the butter bits are no larger than a pea and the dough clumps together when squeezed. If working in a food processor, pulse until the butter is fully combined and the dough begins to form clumps.",
+      "Crumble the topping evenly over the cranberry filling.",
+      "Place the pie on a sheet tray and bake until golden brown and the fruit in the middle of the pie is actively bubbling - about 1 hour.",
+      "Cool completely to set the filling before slicing."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Each Perfect Pie Crust",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Or Frozen (defrosted) Cranberries",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 1/2 cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Each Orange",
+        "unit": null,
+        "notes": "finely grated zest",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Old Fashioned Rolled Oats",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1/4 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cool and slightly pliable",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49dbcf6269d354730b248628c9cf52a43e919622198d153c16379c1bd2a2f313",
+    "lineage_hash": "2a354bc60e0ae5a1c33fb76a4444f811b182fff5bd26166a520760632c47821d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2021/10/21/cranberry-crumb-pie/",
+    "fetchedAt": "2026-08-02T01:17:58.382Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2021/10/21/cranberry-crumb-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

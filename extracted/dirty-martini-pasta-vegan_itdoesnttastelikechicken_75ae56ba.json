@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Dirty Martini Pasta (vegan)",
+    "time": "20 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "358",
+      "carbohydrateContent": "45",
+      "fatContent": "13",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Bring a large pot of water to a boil. Cook the pasta according to the package directions. Before draining the pasta, reserve 1/4 cup of the cooking water. This recipe goes quickly, so I like to make sure my pasta is cooked before beginning the next step.",
+      "In a large skillet or saucepan, heat the olive oil over medium-high heat. When hot add the garlic, and sauté for about 60 seconds. Now add the olives and lemon zest, stir and cook for another 1 - 2 minutes until fragrant and the garlic begins to brown.",
+      "Add the shot of vodka or gin and simmer down for a minute or two.",
+      "Add the reserved pasta water, olive brine, lemon juice, and vegan butter. Melt the vegan butter into the sauce.",
+      "Finally, add the pasta, and toss well to combine. Garnish with parsley, black pepper, and extra olives if desired. Serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pasta of Choice",
+        "unit": "oz",
+        "notes": "gluten-free of preferred",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "thinly sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pimento Stuffed Olives",
+        "unit": "C",
+        "notes": "about 14 olives, roughly chopped, plus more for garnish",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shot Gin",
+        "unit": null,
+        "notes": "alt: vodka, 3 tablespoons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reserved Pasta Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Brine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "C",
+        "notes": "fresh, roughly chopped, for garnish",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "95b2749deca502dde35dd6fa38b4410ea414125a854fec8d3b49a7bc84c0a057",
+    "lineage_hash": "8e3a2634e67b6d5a28e16ac9088437b6e4e78e270761ae944faea639d2f756c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/dirty-martini-pasta-vegan/",
+    "fetchedAt": "2026-08-02T02:41:55.641Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/dirty-martini-pasta-vegan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

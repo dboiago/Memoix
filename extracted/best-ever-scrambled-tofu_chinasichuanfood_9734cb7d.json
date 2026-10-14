@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Scrambled Tofu",
+    "time": "15 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "185",
+      "carbohydrateContent": "10",
+      "fatContent": "14",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Smash the tofu in a large bowl. Combine cornstarch with water.",
+      "Heat 2 tablespoon of cooking oil (or you can use 1 tablespoon) and fry doubanjiang over slow fire for a while until the oil turns red.",
+      "Add garlic and ginger, fry until aromatic.",
+      "Place tofu in, add sugar and light soy sauce. Let the tofu simmer for 4-5 minutes over slow fire.",
+      "Gently stir the starch water to avoid the starch settling to the bottom. Pour in the starch water in the tofu and make a quick stir to combine everything. Then place half of the scallions in. Combine well. Transfer out and sprinkle the remaining scallion as decoration."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Box of Silken Tofu",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4c8090c3fcc1a9056d925aae9c7ae474ce783165c64693281c6ac3c6f6355681",
+    "lineage_hash": "b7932fa1a2f4c661781f1ef4cbb0b2ab9d7120df270a6debc08839dda05cbedb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/best-ever-scrambled-tofu/",
+    "fetchedAt": "2026-08-02T04:48:15.923Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/best-ever-scrambled-tofu/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

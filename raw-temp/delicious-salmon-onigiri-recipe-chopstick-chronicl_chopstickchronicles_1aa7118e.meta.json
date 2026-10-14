@@ -1,0 +1,49 @@
+{
+  "url": "https://www.chopstickchronicles.com/sake-onigiri/",
+  "slug": "delicious-salmon-onigiri-recipe-chopstick-chronicl_chopstickchronicles_1aa7118e",
+  "title": "Delicious Salmon Onigiri Recipe - Chopstick Chronicles",
+  "byline": "Author: Shihoko | Chopstick Chronicles",
+  "fetchedAt": "2026-08-01T21:16:38.405Z",
+  "ldName": "Sake Onigiri 塩鮭のおにぎり",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 rice balls"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Rice, Rice dish, Snack",
+  "ldKeywords": "#sake onigiri, #salmon onigiri, #salmon rice balls",
+  "ldIngredientsRaw": [
+    "2 cups of cooked rice",
+    "1 piece of cooked shiosake",
+    "1  nori sheet"
+  ],
+  "ldInstructionsRaw": [
+    "Preparation of Rice &amp; Salted Salmon",
+    "Shaping Sake Onigiri"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "228 kcal",
+    "carbohydrateContent": "45 g",
+    "proteinContent": "7 g",
+    "cholesterolContent": "5 mg",
+    "sodiumContent": "80 mg",
+    "fatContent": "2 g",
+    "saturatedFatContent": "0.4 g",
+    "fiberContent": "1 g",
+    "sugarContent": "0.3 g",
+    "unsaturatedFatContent": "0.2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups of cooked rice",
+    "▢ 1 piece of cooked shiosake",
+    "▢ 1 nori sheet"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

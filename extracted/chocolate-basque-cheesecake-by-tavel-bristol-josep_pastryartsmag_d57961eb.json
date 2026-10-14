@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Chocolate Basque Cheesecake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In the bowl of an electric mixer fitted with the paddle, mix the cream cheese with the sugar to combine, then mix on high speed until smooth and creamy.",
+      "In another bowl, mix together the flour and cream until smooth. Add to the cream cheese mixture and mix to combine. While mixing, add the eggs and yolk ¼ at a time, scraping down the sides of the bowl as necessary and mixing until blended.",
+      "In another bowl, stir together the Ghirardelli Sweet Ground Powder Dark Chocolate and Cocoa with the melted Ghirardelli 60% Dark Chocolate until blended. Slowly add half of the cheesecake batter to the chocolate mixture, then add the remaining batter and mix until smooth. Scrape the mixing bowl with a rubber spatula to ensure the batter is well blended.",
+      "Line a springform pan with parchment paper and add the batter. Bake at 450˚F (232˚C) with level 1 fan for 30 minutes, without opening the oven. Cool completely."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cream Cheese",
+        "unit": "g",
+        "notes": "room temperature",
+        "amount": "1020",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "484",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghirardelli Sweet Ground Powder",
+        "unit": "g",
+        "notes": "Dark Chocolate and Cocoa",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghirardelli 60% Dark Chocolate",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "170",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51e52d833975756324022d1f2be4c7bd449c8bff49d83a443d7531ba56e42958",
+    "lineage_hash": "60f266d944704d42d21b79377aeb2c27e7b816776487e827c105f7636a685090"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://pastryartsmag.com/general/chocolate-basque-cheesecake-by-tavel-bristol-joseph/",
+    "fetchedAt": "2026-08-02T14:01:19.162Z"
+  },
+  "rawSource": "https://pastryartsmag.com/general/chocolate-basque-cheesecake-by-tavel-bristol-joseph/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

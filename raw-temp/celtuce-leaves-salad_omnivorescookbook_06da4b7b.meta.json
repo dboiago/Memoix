@@ -1,0 +1,59 @@
+{
+  "url": "https://omnivorescookbook.com/celtuce-leaves-salad/",
+  "slug": "celtuce-leaves-salad_omnivorescookbook_06da4b7b",
+  "title": "Celtuce Leaves Salad (凉拌莴笋叶)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T16:34:39.276Z",
+  "ldName": "Celtuce Leaves Salad (凉拌莴笋叶)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Salad",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1 small batch celtuce leaves (, cut into bite size pieces (yields about 4 cups))",
+    "Toasted sesame seeds ((for garnish) (Optional))",
+    "2 tablespoons Chinese sesame paste ((or unsweetened natural peanut butter, or tahini))",
+    "2 tablespoons Chinkiang vinegar ((or rice vinegar))",
+    "1 tablespoon light soy sauce ((or soy sauce))",
+    "2 teaspoons maple syrup ((or sugar))",
+    "2 teaspoons homemade chili oil ((Optional))",
+    "1 clove garlic (, grated)"
+  ],
+  "ldInstructionsRaw": [
+    "To prepare the celtuce leaves, tear the leaves off the stem and rinse them thoroughly with cold tap water to remove any dirt. Once done, drain well and set aside to dry. If the leaves are still wet when you prepare the salad, pat them dry with paper towels. Cut the celtuce leaves into bite-sized pieces and place them on a serving plate.",
+    "Mix the sauce ingredients in a small bowl and stir until smooth. Pour half of the sauce onto the celtuce.",
+    "Serve the celtuce with the rest of the sauce. Drizzle more sauce if needed."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "160 kcal",
+    "carbohydrateContent": "9.3 g",
+    "proteinContent": "3.9 g",
+    "fatContent": "12.9 g",
+    "saturatedFatContent": "1.8 g",
+    "sodiumContent": "482 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "4.1 g"
+  },
+  "htmlIngredientLines": [
+    "1 small batch celtuce leaves , cut into bite size pieces (yields about 4 cups)",
+    "Toasted sesame seeds (for garnish) (Optional)",
+    "[Sauce]",
+    "2 tablespoons Chinese sesame paste (or unsweetened natural peanut butter, or tahini)",
+    "2 tablespoons Chinkiang vinegar (or rice vinegar)",
+    "1 tablespoon light soy sauce (or soy sauce)",
+    "2 teaspoons maple syrup (or sugar)",
+    "2 teaspoons homemade chili oil (Optional)",
+    "1 clove garlic , grated"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

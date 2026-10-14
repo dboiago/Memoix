@@ -1,0 +1,58 @@
+{
+  "url": "https://japan.recipetineats.com/chicken-patties-wrapped-in-perilla/",
+  "slug": "chicken-patties-wrapped-in-perilla_japan_48d9d954",
+  "title": "Chicken Patties Wrapped in Perilla",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T21:35:20.562Z",
+  "ldName": "Chicken Patties wrapped in Shiso",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2",
+    "2 as main, 4 as side"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Main, Side",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "8  shiso leaves ((note 1))",
+    "1 tbsp vegetable oil",
+    "100g (3.5 oz)  silken tofu",
+    "250g (8.8 oz)  chicken mince",
+    "5  shiso leaves finely chopped ((optional, note 2))",
+    "1½ tsp miso ((note 3))",
+    "1 tsp light soy sauce ((note 4))",
+    "pinch of salt and pepper",
+    "1 tbsp corn flour ((corn starch))"
+  ],
+  "ldInstructionsRaw": [
+    "Wrap tofu in a clean cloth or 2-3 layers of paper towel and squeeze water out until most of it is removed.",
+    "Add tofu and all other Chicken Patties ingredients in a bowl, except corn flour, and mix well, ensuring that miso is distributed evenly and there are no large pieces of tofu.",
+    "Sprinkle corn flour widely (so that it doesn't become a big lump) and mix well.",
+    "Level the surface of the chicken mixture and draw lines to divide the mixture into 8 equal portions.",
+    "Oil (not in Ingredients) your palms and roll each portion into a ball, then flatten it to make a flat oval patty of about 1.5cm (⅝”) thickness.",
+    "Wrap the patty with a shiso leaf so that equal portions of the leaf cover both sides of the patty. The leaf will not cover the entire patty but this is intentional. (See the last photo in the post).",
+    "Repeat step 5 and 6 to make 8 patties.",
+    "Heat oil in a fry pan or skillet over medium low heat.",
+    "Place the patties in the pan with the upper half of the leaf face down. Cook for about 2-3 minutes until light golden brown. Then turn over the patties.",
+    "Turn down the heat to low, cover with a lid and cook for 2-3 minutes until the bottom of the patties is golden brown.",
+    "Turn the heat off and serve."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "8\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tshiso leaves\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tvegetable oil",
+    "[Chicken Patties]",
+    "100g (3.5 oz)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsilken tofu",
+    "250g (8.8 oz)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tchicken mince",
+    "5\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tshiso leaves finely chopped\n\t\t\t\t\t\t\t\t\t\t(optional, note 2)",
+    "1½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tmiso\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tlight soy sauce\n\t\t\t\t\t\t\t\t\t\t(note 4)",
+    "pinch\n\t\t\t\t\t\t\t\t\t\tof salt and pepper",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tcorn flour\n\t\t\t\t\t\t\t\t\t\t(corn starch)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

@@ -1,0 +1,51 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/cinnamon-dolce-coffee-syrup/",
+  "slug": "cinnamon-dolce-coffee-syrup_itdoesnttastelikechicken_27d18d8d",
+  "title": "Cinnamon Dolce Coffee Syrup!",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T02:56:18.130Z",
+  "ldName": "Cinnamon Dolce Coffee Syrup",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "16",
+    "16 (makes about 1 cup)"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breakfast, Drinks",
+  "ldKeywords": "cinnamon, coffee, syrup",
+  "ldIngredientsRaw": [
+    "1 cup water",
+    "3/4 cup white sugar",
+    "1/4 cup brown sugar",
+    "2  cinnamon sticks",
+    "1 teaspoon vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Add the water, white sugar, brown sugar, and cinnamon sticks to a small saucepan. Bring to a gentle boil and cook for 10 minutes without stirring. Remove from the heat then stir in the vanilla extract. Allow the syrup to cool then transfer to a sealable bottle or jar to store the syrup in. I like to put the cinnamon stick in the jar along with the syrup as the cinnamon flavor will continue to infuse in the syrup the longer it sits. It also looks pretty! The syrup can be stored at room temperate or in the fridge for up to 6 months."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 tablespoon",
+    "calories": "51 kcal",
+    "carbohydrateContent": "13 g",
+    "proteinContent": "0.02 g",
+    "fatContent": "0.04 g",
+    "saturatedFatContent": "0.001 g",
+    "sodiumContent": "2 mg",
+    "fiberContent": "0.2 g",
+    "sugarContent": "13 g",
+    "unsaturatedFatContent": "0.001 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup water",
+    "▢ ¾ cup white sugar",
+    "▢ ¼ cup brown sugar",
+    "▢ 2 cinnamon sticks",
+    "▢ 1 teaspoon vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

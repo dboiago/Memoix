@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Bubur Ketan Hitam (Glutinous Black Rice Sweet Porridge)",
+    "time": "3 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "ID",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Soak glutinous black rice in cold water for 4 hours, preferrably overnight, drained.",
+      "In a soup pot, add the glutinous rice, water, pandan leaves, and salt and bring to boil. Cook until the liquid has thickened.",
+      "Reduce heat, cover the lid and simmer until it reaches a porridge like consistency.",
+      "Add the sugar and stir until sugar has fully dissolved. Turn off the heat.",
+      "Divide into serving bowls and add 1 tablespoon of thick coconut milk (or coconut cream) per serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Black Glutinous Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": "8 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pandan Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "g",
+        "notes": "or regular sugar",
+        "amount": "100-150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thick Coconut Milk",
+        "unit": "Tbsp",
+        "notes": "or coconut cream",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "15feceefaa2082cc680d3476a86b8fbf81c153e00b15f477ff7cd9da7c1cfb6d",
+    "lineage_hash": "a70f730bbd13d01789b4c40ecb8895824ee974f3f78b8bc57512c58ca5c98838"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/bubur-ketan-hitam-glutinous-black-rice-sweet-porridge.html",
+    "fetchedAt": "2026-08-02T00:30:56.044Z"
+  },
+  "rawSource": "https://dailycookingquest.com/bubur-ketan-hitam-glutinous-black-rice-sweet-porridge.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

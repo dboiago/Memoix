@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Chinese Deviled Eggs",
+    "time": "17 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "112",
+      "carbohydrateContent": "3.6",
+      "fatContent": "8.5",
+      "proteinContent": "5.7"
+    },
+    "directions": [
+      "To boil the eggs, fill a pot with enough water to cover the eggs. Bring the water to a boil, then slowly lower the eggs using a ladle. Boil for 12 minutes, stirring the water in a circular motion with a spoon for the first minute (to keep the egg yolk in the center). Once the eggs are done, run them under cold tap water to stop cooking.",
+      "Once the eggs are cooled, peel them and slice them in half lengthwise.",
+      "Gently pop out the cooked yolks into a big bowl using a small spoon. Mash them with the backside of a spoon. Make sure to mash them as finely as you can, so the finished filling will be smooth.",
+      "Add the mayonnaise, wasabi or mustard, and rice vinegar to the bowl. Mix with a spatula (or an immersion blender) just until it forms a smooth paste. You can adjust the taste by adding more mayo, wasabi, or vinegar.",
+      "Add the zha cai pickles, if using. Mix again to distribute throughout the yolk mixture.",
+      "Transfer the yolk mixture to a piping bag with a large star tip, or a small ziplock bag with a corner cut off.",
+      "Pipe the yolks into the halved egg white cups.",
+      "Garnish the eggs with chili flakes (or hot sauce) and green onions. Serve as an appetizer.",
+      "These eggs can be made ahead of time and stored in the fridge in a sealed container for up to 2 days. For the best result, you should serve them the same day you cooked them."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Extra Large Pete and Gerry’s Organic Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": "or to taste",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Teaspoon Wasabi",
+        "unit": null,
+        "notes": "alt: Chinese hot mustard, or to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Zha Cai Chinese Pickled Mustard Greens",
+        "unit": "Tbsp",
+        "notes": "diced (Optional)",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Flakes (or Your Favorite Chili Sauce)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de1b3608461cc1f832d9712b2ca4f706c3b9c93394f26d28c30620b43685b34c",
+    "lineage_hash": "0cdf75677c7007ba9e1b99fe6cbc1522fc1a2968717f296ffcd0667595a5c92f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-deviled-eggs/",
+    "fetchedAt": "2026-08-01T21:54:52.484Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-deviled-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

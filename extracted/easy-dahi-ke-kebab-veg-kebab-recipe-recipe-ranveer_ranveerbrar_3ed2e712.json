@@ -1,0 +1,272 @@
+{
+  "recipe": {
+    "name": "Dahi ke Kebab (Veg Kebab)",
+    "time": "35 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add ghee, cashew nuts roast them until golden in colour.",
+      "Transfer it into a plate, chop and keep it aside.",
+      "In a bowl, add roasted chopped cashew nut, fried onion, fennel seeds, chopped green chilli, coriander leaves, salt to taste, red chilli powder, roasted cumin powder mix it well.",
+      "Add a little hung curd and mix everything well. Keep it aside for future use.",
+      "In a large bowl, add salt to taste, black pepper powder, fresh bread crumb, grated nutmeg and roasted gram flour mix everything well.",
+      "Take a small portion of dahi kebab and stuff the filling and seal it properly to make a round ball.",
+      "Coat it with the bread crumb mixture. Make the rest of it with the remaining filling as same.",
+      "Keep in the refrigerator for 5 minutes so that it holds its shape.",
+      "Heat oil in a kadai, fry the dahi kebab on medium flame until nice golden in color and crisp from all the sides.",
+      "Remove on a absorben paper to remove an excess amount of oil.",
+      "Serve hot with tomato chutney.",
+      "In a large bowl, add fresh bread crumb and crushed poha mix well.",
+      "In a grinder jar, add halved tomatoes, ginger, green chilli, cashewnut, salt to taste, red chilli powder, jaggery, oil and lemon juice grind it into a smooth paste.",
+      "Transfer it into a bowl."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cashew Nut",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": "crushed",
+        "amount": "½",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "⅓",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": "grated",
+        "amount": "½",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dahi Kebab",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "2",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Poha",
+        "unit": "C",
+        "notes": "crushed",
+        "amount": "⅓",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for shallow fry",
+        "amount": "0",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "into halved",
+        "amount": "4-5",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, slice",
+        "amount": "½",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnut",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tamatar ki Chutney",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c950f167a70e70799ea79f82d65cc261f87290d681a0c2e8d311530f4e6168cf",
+    "lineage_hash": "8364c428d764af549959bb503b077d66aee816692285bf0a68d3b53a95bd97f6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dahi-kebab/",
+    "fetchedAt": "2026-08-02T00:34:34.216Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dahi-kebab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

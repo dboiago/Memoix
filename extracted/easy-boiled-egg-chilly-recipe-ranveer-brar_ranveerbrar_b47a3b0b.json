@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Boiled Egg Chilly (उबला अंडा मिर्च)",
+    "time": "50-55 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For batter combine refined flour, corn flour, red chili powder, salt and mix.",
+      "Add water to make a thick batter. Heat oil for deep frying.",
+      "Dip the quarters of eggs in the batter and deep fry on medium flame till golden. Remove on absorbent paper and drain off the excess oil. Keep aside.",
+      "Now for the sauce, heat oil in a wok on high flame.",
+      "Saute garlic, ginger, green chili till fragrant. Add spring onion and saute for 2mins.",
+      "Add bell peppers and stir fry few seconds.",
+      "Now soy sauce, red chili sauce, vinegar and mix.",
+      "Season with salt and black pepper.",
+      "Lastly add fried eggs and toss everything well.",
+      "Garnish with spring onion and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Nos. Boiled Eggs",
+        "unit": null,
+        "notes": "cut into quarters",
+        "amount": "4",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep frying",
+        "amount": "0",
+        "section": "For Frying",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": "tsp",
+        "notes": "chopped",
+        "amount": "1-2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tri Coloured Bell Peppers",
+        "unit": "C",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chili Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b4c79aa7e48cc09741101dcc65d3c61e51b7a4a095f2eee034a26a878160f81a",
+    "lineage_hash": "109eb02bf4b59d777ea7cdbcfd7b677164e80dd688696fe8536491c73d86b78e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/boiled-egg-chilly/",
+    "fetchedAt": "2026-08-02T14:55:24.536Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/boiled-egg-chilly/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

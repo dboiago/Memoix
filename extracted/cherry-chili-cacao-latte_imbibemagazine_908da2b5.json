@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Cherry Chili Cacao Latte",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cherry chili cacao syrup to a mug and pull the espresso shots on top. Stir to incorporate. Top with steamed milk of choice, or ice and cold milk. Garnish with a sprinkle of candied cacao nibs.",
+      "Cherry Chili Cacao Syrup20 grams cacao nibs (approx. ¼ cup)\n2 grams dried Thai chilis (1-2 ea.)\n150 grams frozen pitted cherries (approx. 1 cup)\n330 grams sugar (approx. 1 ½ cups)\n414 grams water (approx. 1 ¾ cup)",
+      "Heat oven to 350ºF. Spread the cacao nibs on a baking sheet and toast in oven for 3 minutes. Combine all of the ingredients, except the cherries, in a pot, and lightly crumble chilis by hand when adding (wear gloves). Stir well to incorporate sugar. Heat on medium-high until syrup reaches a low simmer, then stir in cherries. Increase heat to high and bring to a rolling boil, then reduce heat to medium-high and boil for 30 minutes. Remove from heat and allow mixture to cool for 1 hour at room temperature. Transfer to an airtight container and allow to steep in the refrigerator overnight. Strain through cheesecloth, squeezing to extract juices from the cherries. Bottle the syrup and store refrigerated for up to 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cherry Chili Cacao Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shots Espresso",
+        "unit": null,
+        "notes": "preferably Latin American coffee",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk of Choice",
+        "unit": "oz",
+        "notes": "steamed or cold",
+        "amount": "9-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Cacao Nibs",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": "approx. ¼ cup",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thai Chilis",
+        "unit": "g",
+        "notes": "dried, 1-2 ea.",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "g",
+        "notes": "frozen, pitted, approx. 1 cup",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "approx. 1 ½ cups",
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": "approx. 1 ¾ cup",
+        "amount": "414",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "747acd98e9ef827c924682822ed087dab609d5ae663105d0a1e8f28bdc9bcdab",
+    "lineage_hash": "42841f23484de0be21141efd0b2a186100940286309e890e9112698f117961bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cherry-chili-cacao-latte/",
+    "fetchedAt": "2026-08-03T20:06:56.118Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cherry-chili-cacao-latte/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

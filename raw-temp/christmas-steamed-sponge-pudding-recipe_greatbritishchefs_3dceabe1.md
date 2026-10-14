@@ -1,0 +1,5 @@
+‘[Stir-up Sunday](https://www.greatbritishchefs.com/collections/stir-up-sunday-recipes)’ falls on the last Sunday before advent and is traditionally a day for families to make their Christmas pudding. When everyone takes a turn to stir the pudding and make a wish for the year ahead. But what if, like me, you are one of those people who really does not like Christmas pudding? Perhaps it is time to create a new tradition.
+
+If you would like to try something a little different this year, this lighter steamed pudding is a great alternative, even if you do like Christmas pudding. It uses all the wonderful festive flavours of orange, cinnamon, nutmeg and cloves, along with prunes, dates and golden syrup to create a deliciously moist sponge.
+
+The pudding is so simple to make, yet looks just as impressive as the traditional version. I am sure this will become as much of a Christmas favourite in your house, as it is in mine.

@@ -1,0 +1,159 @@
+{
+  "recipe": {
+    "name": "Chocolate Torte",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 160°C/gas mark 3 and line the cake tin with greaseproof paper",
+      "To make the biscuit base, blitz the biscuits and cocoa powder to a fine crumb in a blender. Pour in the butter and pulse until fully combined. Spoon the mixture into the cake\r\ntin and spread out to create an even layer",
+      "To make the torte, melt the chocolate in a bain-marie then add the ground almonds and breadcrumbs, mixing well to combine. Cream the butter and sugar until light and fluffy in a separate bowl then beat in the eggs 1 at a time, followed by the vanilla. Add the chocolate mixture to the butter and eggs and mix until smooth and incorporated. Pour the mixture into the cake tin and bake in the oven for 55 minutes, until set and cooked through. Allow to cool",
+      "For the chocolate ganache, place the chocolate in a large bowl. Bring the cream and icing sugar to the boil in a saucepan then pour over the chocolate, stirring until the chocolate has melted and the mixture is smooth. Set aside to cool",
+      "Spread the ganache over the cooled chocolate torte, using a hot palette knife to ensure it is distributed evenly. Once the ganache has set, slice the torte and serve with raspberries and cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Breadcrumbs",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "340",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "drop",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Digestive Biscuits",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Raspberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": null,
+        "notes": "extra thick",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1e8fb0b747024b09d299e0df818eae6d749845637bdf7b68b72c2f28163d22d1",
+    "lineage_hash": "76facfede05ab9ad663b8e3d238fe3ad90d28494ec30787559c0a70f372f03ae"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-torte-recipe",
+    "fetchedAt": "2026-08-03T19:30:03.192Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-torte-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

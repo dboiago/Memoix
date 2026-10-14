@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Citrus Sorbet",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the lemon sorbet, place the zest, sugar, glucose and water in a pan over a medium heat. Bring to the boil to dissolve the sugar then take off the heat and leave to cool",
+      "Repeat with the same ingredients for the orange sorbet, heating the zest, glucose, sugar and water until boiling before removing from the heat and allowing to cool",
+      "Lastly, repeat for the blood orange sorbet, keeping all 3 mixtures separate as they cool",
+      "Once cool, mix in the lemon, orange and blood orange juice into each respective pan and stir until well combined",
+      "The sorbets can then be churned individually in an ice cream machine according to the manufacturer's instructions and stored in the freezer until serving",
+      "Alternatively, pour each mixture into a suitable container and place in the freezer. After an hour, remove each container and whisk the mixture with a fork to break up the ice crystals. Return to the freezer, repeating the process 3 or 4 times until frozen and smooth",
+      "To serve, cut off the top third of each remaining citrus fruit and carefully scoop out the flesh from each piece. Fill the larger pieces with scoops of sorbet and top with the remaining pieces to form a lid"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemons",
+        "unit": null,
+        "notes": "zested",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blood Oranges",
+        "unit": null,
+        "notes": "zested",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "lemons and blood oranges, 1 for each serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4be97e3c37b5e8ffcb44f9c9720042ae1bc8b0f9fd864e942927e6311d3129b2",
+    "lineage_hash": "00b712f7859bcdabf63a709036a1851c1b4bd9c353e43e87f961f95f97fe81a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/citrus-sorbet-recipe",
+    "fetchedAt": "2026-08-03T12:33:43.072Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/citrus-sorbet-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

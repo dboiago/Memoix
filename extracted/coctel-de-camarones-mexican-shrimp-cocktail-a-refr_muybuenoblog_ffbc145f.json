@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Coctel de Camarones (Mexican Shrimp Cocktail)",
+    "time": "17 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "252",
+      "carbohydrateContent": "17",
+      "fatContent": "9",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Stir together the ketchup, vegetable juice, horseradish, lime juice, hot sauce, and garlic powder until well combined. Taste and add more chile or hot sauce if you would like it spicier.",
+      "Add the onion, jalapeno (if using), cilantro, and shrimp and mix well. Gently stir in the avocado.",
+      "Cover and refrigerate 2 to 3 hours.",
+      "Serve in 4-ounce glasses with saltine crackers or corn tortilla chips."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Juice",
+        "unit": "C",
+        "notes": "recommend V8",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creamy Horseradish",
+        "unit": "Tbsp",
+        "notes": "add more or less according to spicy tolerance",
+        "amount": "1-2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juice of 2 Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bottled Hot Sauce",
+        "unit": "tsp",
+        "notes": "recommend Tabasco",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeno",
+        "unit": null,
+        "notes": "optional, diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium to Large Shrimp",
+        "unit": "lb",
+        "notes": "shelled, deveined, and cooked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Avocado",
+        "unit": null,
+        "notes": "pitted, peeled, and chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saltine Crackers",
+        "unit": null,
+        "notes": "alt: tortilla chips, for serving",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "873dd1c3763e83abc578c4b637bc25cedb5f495bf535c42d526fb002754e38ed",
+    "lineage_hash": "f8dc7af141a6c38f4aeeec10d1dab2dd4fbf895d7fea7d98c3f72dca54d7532a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/coctel-de-camarones-mexican-shrimp-cocktail/",
+    "fetchedAt": "2026-08-02T09:44:32.563Z"
+  },
+  "rawSource": "https://muybuenoblog.com/coctel-de-camarones-mexican-shrimp-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

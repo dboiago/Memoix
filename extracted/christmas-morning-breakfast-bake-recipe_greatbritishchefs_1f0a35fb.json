@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Christmas Morning Breakfast Bake",
+    "time": "1 hr 15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rapeseed oil to a large frying pan and gently sauté the bacon, sausage, onion andgarlic for about 5–8 minutes until the bacon is crisp and the sausages are cooked. Add the spinach and cook until it is wilted, for about 2 minutes",
+      "Add the chopped sun-dried tomatoes to the mixture and set aside",
+      "Mix the milk with the eggs and season to taste with salt, pepper and the smoked paprika",
+      "Scatter the baguette cubes over the bottom of a large baking dish, and top with half of the spinach mixture",
+      "Top with the remaining baguette cubes and spinach mixture and then pour the egg and milk mixture over the top",
+      "Push the bread down into the egg mixture, cover and allow to sit for at least 2–3 hours (or overnight)",
+      "Bake uncovered for 45–50 minutes, until the bake is puffed up and golden brown. Allow to cool for 5 minutes before serving"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Streaky Bacon",
+        "unit": "g",
+        "notes": "diced, or lardons",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork and Herb Sausages",
+        "unit": "g",
+        "notes": "skinned and cut into small pieces",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": null,
+        "notes": "drained, finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baguette",
+        "unit": null,
+        "notes": "large, cut into cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e5950dd37adf7787026cf786fcddb78207c59c301a91441d11fa9b1d038880dd",
+    "lineage_hash": "2063109382cf4d99a8c6d0fccc24f4d6f7f13c98e2cad7582b8e7b025aad5eb0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-morning-breakfast-bake-recipe",
+    "fetchedAt": "2026-08-03T14:03:52.602Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-morning-breakfast-bake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

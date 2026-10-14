@@ -1,0 +1,124 @@
+{
+  "recipe": {
+    "name": "Easter Eggs Cocktail",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the hay cognac, first wash the hay well in hot water and squeeze out any excess liquid",
+      "Place the hay in a clean, non-reactive container and pour over the cognac. Seal the container and leave to infuse for 24 hours",
+      "After this time, line a funnel or sieve with a coffee filter or clean cloth and place over a jar. Strain the cognac through the filter and seal, reserving until ready to serve",
+      "For the liqueur, melt the chocolate buttons in a bowl set over a pan of barely simmering water, stirring gently as the chocolate starts to melt  – be careful not to let the bowl touch the water as the chocolate may seize",
+      "In a separate bowl, mix together the water with the milk powder until combined. Add this to the melted chocolate and mix gently until smooth",
+      "Remove the bowl from the heat and allow to cool, then mix in the vodka until thoroughly combined. Chill in the fridge for at least 1 hour so that the fats from the chocolate start to separate and solidify",
+      "Once chilled, pass the liquid through a fine sieve to remove the solids. Seal in a bottle or jar and reserve in the fridge for up to a week",
+      "To make the sugar syrup, boil together the water and sugar in a small pan over a medium heat. Allow to bubble for a few minutes until syrupy, then set aside to cool. Keep in the fridge until ready to serve",
+      "To make the finished cocktail, place 75ml of the white chocolate liqueur, 25ml of the hay cognac and 15ml of the sugar syrup in a cocktail shaker. Crack in 1 egg and shake everything together well",
+      "Add a handful of ice cubes and shake again. Strain through a sieve into a serving glass, or divide between cleaned egg shells"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Chocolate Buttons",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vodka",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hay",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "optional, plus extra for serving",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "378ec3b97798f90c8b9fd18fb506ef62d100aa07776ee2c1d60d61b34ca42a07",
+    "lineage_hash": "68fa0f9322af5ea7e920f500946761eed8c1584f4342d714ebfd352bf1ce636c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-eggs-cocktail-recipe",
+    "fetchedAt": "2026-08-03T13:14:43.503Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-eggs-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

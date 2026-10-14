@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Dà Lat Highlands",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all of the ingredients with ice until chilled. Double strain into a chilled glass, then garnish.\nChamomile-Infused VodkaCombine 5 grams of chamomile and 1 liter of vodka in a large covered container and let sit at room temperature for 24 hours. Double strain the infusion and bottle; use within 2 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chamomile-infused Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76b54f35c7945e28aee9893f6ba0714ef7d9b29466c1d7d16d88aedce16bb73d",
+    "lineage_hash": "a7060f1aa4458886bb80764ddf58b584be701a9dcdbe643440b5ed2b8f18063c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/da-lat-highlands-a-chamomile-cocktail/",
+    "fetchedAt": "2026-08-04T01:50:26.540Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/da-lat-highlands-a-chamomile-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

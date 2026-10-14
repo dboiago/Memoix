@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "Curry Salted Parsnip Crisps",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 100°C/gas mark 1/2. Peel the parsnips and use a peeler to cut them into long, thin strips",
+      "Place the parsnips on a tray to dry out in the oven for 15-20 minutes",
+      "Preheat the oil in a deep-fat fryer to 170°C and then fry until golden brown",
+      "Remove the parsnips from the fryer and place on kitchen towel to drain",
+      "Just before serving, sprinkle over the curry salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Parsnips",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "02a66bd73a0b5e8e9d850dea68e048d845389353e96ff7f636f93505a38074f9",
+    "lineage_hash": "a27f9279e5b92d55c1c085bef1ed0b34f19e238822a0d6052ea6d5208248bbea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curry-salted-parsnip-crisp-recipe",
+    "fetchedAt": "2026-08-03T21:26:37.897Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curry-salted-parsnip-crisp-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

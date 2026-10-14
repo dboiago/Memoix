@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Cold Sesame Wonton",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "841",
+      "carbohydrateContent": "72",
+      "fatContent": "47",
+      "proteinContent": "35"
+    },
+    "directions": [
+      "Add all the seasonings for wonton filling and then mix well. Keep stirring in one direction until the filling becomes slightly sticky. Refrigerate for around 15 minutes for a better flavor (optional).",
+      "Assemble wonton one by one.",
+      "Tune the sesame paste texture: slightly add light soy sauce, sesame oil, salt and cold water in sesame paste. Stir to combine well. The sesame paste should be running but not thin. So it can cling to the wonton and melt in mouth after biting.",
+      "Bring a large pot of water to a boil and then cook the wonton by batches until they float on the surface. Get a large bowl with enough cold water and soak the wonton to make them cooled down quickly.",
+      "Darin and place in serving bowls.",
+      "To assemble the wonton: drizzle around 2 to 3 tablespoons of sesame mixture, then followed with 1 tablespoon of chili oil. Sprinkle Szechuan peppercorn powder and finally top with scallion and Zha-cai (Szechuan pickled mustard) or you can simply use crushed toasted peanuts.  This recipe can yield 3 bowls of cold sesame wonton."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Wonton Wrappers",
+        "unit": null,
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "g",
+        "notes": "fat vs lean meat: 3:7",
+        "amount": "250",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water Plus More If Necessary",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": "recommend 1 tsp",
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "Wonton filling",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Sichuan Peppercorn",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Zha-cai",
+        "unit": "C",
+        "notes": "chopped, or you can use crushed peanuts for the crispy taste",
+        "amount": "1",
+        "section": "To serve",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "To serve",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "11c1db0476739c8be90249c7d9bb6b5f3d5a2e800e5febdfa84922823cdba7dd",
+    "lineage_hash": "ae660101e92395814ade4888e91389113052bb6d9dad39f69f830d5858eadbcd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/cold-sesame-wonton/",
+    "fetchedAt": "2026-08-02T03:32:49.113Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/cold-sesame-wonton/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

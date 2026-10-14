@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Dregs and Fruit Crumble",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large, wide baking dish, combine the fruit and wine and gently stir in the light brown sugar, cornstarch, salt, and lemon zest and juice. Set aside. In a large bowl, combine the butter, all-purpose flour, almond flour, sugar, salt, cinnamon, and vanilla. Massage the ingredients together with your fingers until large, craggy crumbs form and no large pieces of butter remain. Cover and place in the refrigerator until you’re ready to bake.",
+      "Preheat the oven to 375°F (190°C). Top the fruit evenly with the crumble. There may be some leftover. Bake until the fruit juices are bubbling and the crumble topping is deeply golden brown, 40 to 50 minutes.",
+      "Serve warm or at room temperature with ice cream or whipped cream if you like. Serves 4 to 6.",
+      "Note:Extra crumble topping can be stored in an airtight container in the refrigerator for 1 week or in the freezer for up to 3 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peaches",
+        "unit": "C",
+        "notes": "from 2 pounds/900 grams fruit, nectarines, plums, cherries, berries, apples, pitted and roughly chopped",
+        "amount": "4",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Leftover White Wine",
+        "unit": "C",
+        "notes": "alt: rosé",
+        "amount": "½",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "¼",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": null,
+        "notes": "zest of 1 lemon, plus 1 Tbsp. lemon juice",
+        "amount": "1",
+        "section": "For the fruit",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": "salted or unsalted, at room temperature",
+        "amount": "¾",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Almond Flour",
+        "unit": "C",
+        "notes": "or equal quantity of any ground nut or quick-cook oats—or replace with an additional cup of all-purpose flour",
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the topping",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For the topping",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f0463805d7a72c27eec5fef18a44922c01e644361f07c8f05d0a4826d9c5e57",
+    "lineage_hash": "d7bdb0bb61f9e5dc6bfde3ce276b531e3c5385ec8e8b2f2bfc4611eb423e101f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dregs-and-fruit-crumble/",
+    "fetchedAt": "2026-08-03T20:48:09.386Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dregs-and-fruit-crumble/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

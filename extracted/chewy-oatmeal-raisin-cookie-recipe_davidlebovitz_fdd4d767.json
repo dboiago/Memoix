@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chewy Oatmeal Raisin Cookies",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "1. Preheat the oven to 375ºF and set the rack on the lower and upper thirds of the oven.",
+      "2. In a small bowl, whisk together the flour, baking powder, baking soda, and salt.",
+      "3. In a large mixing bowl, beat the butter and granulated sugar until smooth. Mix in the brown sugar, then the egg, applesauce, and vanilla.",
+      "4. Stir in the dry ingredients, then the oats and raisins.",
+      "5. Roll the dough into 1 1/4-inch (4cm) balls and place them 2-inches (7cm)  apart on the baking sheets. Use a fork to gently flatten the dough slightly.",
+      "6. Bake until the cookies are a gentle brown all across the top, about 12-14 minutes, rotating the baking sheets midway during baking for even heating."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "spoon flour into dry-measure and level off",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Applesauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": "not instant",
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Raisins",
+        "unit": "C",
+        "notes": "or dried cranberries",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Sheets Lined with Parchment Paper",
+        "unit": null,
+        "notes": "foil, or silicone mats",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8507c724ea4194cd01fa1d0175042b16ffc9fe472648ebc1b3dcf4dfe653bc41",
+    "lineage_hash": "8be75e0cead8434709dc9a1d473714dce7e6bf13340a0c41daa166fbef6b6729"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/nick-malgieris/",
+    "fetchedAt": "2026-08-02T18:02:53.293Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/nick-malgieris/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

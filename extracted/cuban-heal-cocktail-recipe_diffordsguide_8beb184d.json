@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Cuban Heal",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CU",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Zest Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS lemon zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light White Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar/carciofo Amaro",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limoncello Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Creole Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2189d2c09450ed1c229c2ea6c5e32a1bf6ff45b2f78c550a6f489c6ef816143d",
+    "lineage_hash": "df00029bcd3477ed13c0d6bddd72296cebc2f77592785d62950473dfdb1c357e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/2361/cuban-heal",
+    "fetchedAt": "2026-08-03T05:06:56.791Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/2361/cuban-heal",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

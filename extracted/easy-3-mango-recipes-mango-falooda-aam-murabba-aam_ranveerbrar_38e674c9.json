@@ -1,0 +1,255 @@
+{
+  "recipe": {
+    "name": "Mango Falooda, Aam Murabba, Aam ki Chutney, Mango Ice cream",
+    "time": "25-30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a kadhi add oil, panch phoran and let it crackle.",
+      "Now add raw mango seeds, raw mango trimmings, jaggery powder, ginger, vinegar, Water and salt, mix it properly and let it cook completely until jamy.",
+      "Remove and let it cool down and then store it in an airtight container.",
+      "In a pan add oil, byadgi red chilli, ginger and saute it for a minute then switch off the flames and add raw mango, salt, jaggery powder.",
+      "Let it cool down a little and then grind it properly.",
+      "Store it in an airtight container in the fridge.",
+      "In a bowl mix corn starch and water properly without lumps.",
+      "Add it in a pan and cook it properly by stirring constantly.",
+      "To ensure it's cooked, put a small amount of the mixture in cold water and if it holds its shape then it's cooked.",
+      "Now fill it in a squeezy bottle or in sev mould and pipe out the noodles in cold water.",
+      "Add frozen Mango and banana in a blender jar and blend it into a smooth mixture.",
+      "Remove and keep in the freezer for further use.",
+      "In a serving glass add rose syrup then the soaked basil seeds, mango cubes, prepared noodles, chilled milk and some scoops mango ice cream and garnish with mint leaves. Serve chilled."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Panch Phoran",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango Seeds",
+        "unit": null,
+        "notes": "with some flesh",
+        "amount": "4-5",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango Flesh Trimmings",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Jaggery Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Aam Ka Murabba",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Byadgi Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango Flesh",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mango Dry Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": "For Noodles",
+        "isOptional": false
+      },
+      {
+        "name": "Banana",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "1",
+        "section": "For Mango Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "1",
+        "section": "For Mango Ice Cream",
+        "isOptional": false
+      },
+      {
+        "name": "Rose Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Basil Seeds",
+        "unit": "Tbsp",
+        "notes": "sabja seeds",
+        "amount": "2",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Cubes",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Noodles",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Scoop Mango Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": null,
+        "notes": "garnish",
+        "amount": "0",
+        "section": "For Mango Falooda",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f811261a8182cb7028406fa4cb708acaa08e09e70bbb93f28511b49cc2431820",
+    "lineage_hash": "64d33e37fc00bfe672d63ebbd27c2c3fbba93ddbb5cc4b4bb916ed923ff25406"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/3-mango-recipes/",
+    "fetchedAt": "2026-08-02T05:40:34.459Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/3-mango-recipes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

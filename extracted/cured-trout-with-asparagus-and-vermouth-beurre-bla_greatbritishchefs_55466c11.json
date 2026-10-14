@@ -1,0 +1,139 @@
+{
+  "recipe": {
+    "name": "Cured trout with asparagus and vermouth beurre blanc",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cure the trout 48 hours before you want to make the dish. Mix together the sea salt, sugar and chopped dill",
+      "Rub this mixture into the trout, then transfer to a dish. Cover well and refrigerate for 48 hours, turning once halfway through",
+      "Lift the trout from the cure and wipe well with a dry cloth. Discard the cure. Cut the trout into 6 equal-sized fillets and lay side by side in an ovenproof dish. Set aside",
+      "Place the shallot, vermouth and vinegar in a pan and simmer until only a teaspoon of liquid remains",
+      "Add the cream and bring to a simmer. Remove the pan from the heat and whisking all the while, gradually add all the butter",
+      "Pass the sauce through a sieve (discarding the shallots), season with lemon, to taste, and reserve until needed – but not too long",
+      "Add the olive oil and 6 tablespoons of water to the fish, cover and bake for 8-10 minutes depending on how pink you want it",
+      "Meanwhile, boil the asparagus in lightly salted water until just tender (about 3-4 minutes)",
+      "Place each piece of trout on a warm plate, skin-side up. Divide the asparagus evenly between the plates then pour the beurre blanc onto each plate. Serve swiftly with a Sweet pea martini"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Trout",
+        "unit": "g",
+        "notes": "in a single piece, trimmed and pin-boned",
+        "amount": "900",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": "trimmed and the bottom 3cm of the spears peeled with a paring knife or vegetable peeler",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunches",
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noilly Prat Original Dry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "finely chopped, at room temperature",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5e8541d61aec26e8a9ac5dfcb3d7b58764f54e13ae2accf6abab80c21fb86bd1",
+    "lineage_hash": "6add9e245f22e7934b9cd702f83225284a8f2ac9c7a5bb0dfa5e59af0f48fda0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-trout-asparagus-vermouth-beurre-blanc-recipe",
+    "fetchedAt": "2026-08-01T16:53:31.721Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-trout-asparagus-vermouth-beurre-blanc-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

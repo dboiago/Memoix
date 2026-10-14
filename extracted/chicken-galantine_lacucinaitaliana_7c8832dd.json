@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Chicken Galantine",
+    "time": "6 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the chicken open from the back, remove the bones or have the butcher remove them, keeping the skin intact. Keep the bones. Clean and pare the onion, the carrot and the celery. Cut them in pieces and place them in a large oval saucepan with 5 whole cloves, 1 bay leaf, a pinch of salt and the chicken bones; cover with 6 quarts of water and boil for 1 hour to obtain a tasty broth. Remove the meat from the chicken, separating it from the skin without tearing it.",
+      "Cut the tongue, 10 ounces chicken breast, the bacon and the cooked prosciutto into cubes about 1/2 inch wide, then put only the chicken cubes into 5 teaspoons Cognac to marinate for 10 minutes.  Mince 1 pound chicken, choosing the more flavorful meat of the legs and the thighs, and the truffle; mix these in a bowl with the ground veal and pork, the whole pistachios, the cubes of bacon, tongue, prosciutto and chicken, with the Cognac used for the marinade, then add the cream, a pinch of salt and the eggs and mix it all with your hands to obtain an even filling.",
+      "Stretch out the chicken skin and put the filling in the shape of a cylinder in the middle of it, along the entire length, then wrap the cylinder in the skin so you have a roll (the galantine) about 12 inches long and 1 1/2 inches wide; wrap this roll in a tea towel and tie it up the way you would a salami.",
+      "Cook the galantine in barely simmering broth for 1 hour and 30 minutes, then drain it, remove it from the tea towel and wrap it up again after 5 minutes. Allow it to cool unrefrigerated, covered by a moderate weight to compact it, then put it in the refrigerator for at least 3 hours, preferably overnight. Serve in slices."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Chicken",
+        "unit": "lb",
+        "notes": null,
+        "amount": "2.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tongue in Brine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Veal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Prosciutto Ham",
+        "unit": "oz",
+        "notes": "sliced thick",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canadian Bacon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Pistachios",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Truffle",
+        "unit": "oz",
+        "notes": "summer truffle",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "stalk",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "42f55bd547bffd4589afadbfe75d074f826c7f38a9e7211ee6bf880f9025d819",
+    "lineage_hash": "9c07615aa7ba9329900d07951f47933bccc8810f88be3cb929c9f93ece094910"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-galantine",
+    "fetchedAt": "2026-08-02T18:32:47.244Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/main-course/chicken-galantine",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

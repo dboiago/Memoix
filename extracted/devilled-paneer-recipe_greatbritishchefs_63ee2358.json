@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Devilled Paneer",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the paneer, ground turmeric and salt in a bowl and leave to marinate for 15 minutes",
+      "Make the devilled sauce. Heat the oil in a saucepan over medium heat and fry the ginger and garlic for about two minutes until fragrant and golden",
+      "Add the curry leaves, black peppercorns, cinnamon stick and chilli flakes and fry for a few seconds. Stir in the soy sauce, tomato paste and tomato ketchup along with half a cup of water and continue to cook until thick. Add the vinegar, season with salt and cook for a further minute. Set aside",
+      "Heat the rapeseed oil for the paneer in a clean deep non-stick pan or wok and fry the paneer on all sides until golden",
+      "Add the banana pepper, red onion and green chillies. Stir fry for 30 seconds, then add the devilled sauce and continue to stir fry for a further 2-3 minutes until the sauce is coating the paneer and vegetables and piping hot. Garnish with the spring onions and serve straight away"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "cut into 2.5cm cubes or rectangles",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Pepper",
+        "unit": null,
+        "notes": "deseeded and cut into 2.5cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "small",
+        "notes": "cut into 2.5cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "deseeded and sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "fresh, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": "around 5cm in length",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Concentrated Tomato Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73a922e920fc2d9fcf47c42836d6b7d9a31f0523ab17b10632dedfcea87717b2",
+    "lineage_hash": "395fe13c1e722c64541a65b16158233424a5b0051ad99284411498faac605af1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/devilled-paneer-recipe",
+    "fetchedAt": "2026-08-02T18:26:49.202Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/devilled-paneer-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

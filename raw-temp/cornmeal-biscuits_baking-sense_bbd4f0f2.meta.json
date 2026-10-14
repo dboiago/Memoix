@@ -1,0 +1,65 @@
+{
+  "url": "https://www.baking-sense.com/2021/11/04/fluffy-cornmeal-biscuits/",
+  "slug": "cornmeal-biscuits_baking-sense_bbd4f0f2",
+  "title": "Cornmeal Biscuits",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T01:54:32.508Z",
+  "ldName": "Cornmeal Biscuits",
+  "ldTime": "PT32M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "12",
+    "12 biscuits"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Breads, Breakfast, Side Dish, Snack",
+  "ldKeywords": "biscuit, cornmeal",
+  "ldIngredientsRaw": [
+    "14 oz All purpose flour (2 3/4 cups, see note)",
+    "7 1/2 oz Stone ground cornmeal (1 1/2 cups)",
+    "4 teaspoons Baking powder",
+    "1 teaspoon Baking soda",
+    "1 teaspoon Salt",
+    "8 oz unsalted butter (cold and cut into 16 pieces)",
+    "2 tablespoons Honey  (plus more for brushing)",
+    "16 oz Buttermilk  (2 cups plus more for brushing)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 425°F. Line a half sheet pan with parchment paper.",
+    "Combine the all purpose flour, cornmeal, baking powder, baking soda and salt in a mixing bowl. Whisk the dry ingredients to combine.",
+    "Mix the butter into the flour with your fingers until it's broken down into bits slightly larger than a pea. Whisk the honey into the buttermilk and add to the flour all at once. Mix until about 2/3 of the dry ingredients are absorbed.",
+    "Turn the dough onto a generously floured surface and gently knead together to incorporate the remaining dry flour (this should only take about 6-8 kneads). The dough will be quite wet.",
+    "Gently pat the dough to a 1/2&quot; thick, brush off excess flour and fold the dough in 1/2 and fold in half again. Pat the dough to a 1/2&quot; again and do another two folds. Pat the dough to 3/4&quot; thick  and cut with a 3&quot; biscuit cutter. Gather the scraps together and continue cutting until all the dough is used up.",
+    "Set the biscuits onto the prepared baking sheet and brush the tops with buttermilk. Bake until golden brown, about 10-12 minutes.",
+    "If the bottoms of the biscuits are browning too fast set another sheet pan under the biscuits after 5 minutes of baking. As soon as the biscuits come out of the oven brush them lightly with honey."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "12 g",
+    "calories": "359 kcal",
+    "carbohydrateContent": "43 g",
+    "proteinContent": "7 g",
+    "fatContent": "18 g",
+    "saturatedFatContent": "11 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "45 mg",
+    "sodiumContent": "470 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "5 g",
+    "unsaturatedFatContent": "6 g"
+  },
+  "htmlIngredientLines": [
+    "14 oz All purpose flour (2 3/4 cups, see note)",
+    "7 1/2 oz Stone ground cornmeal (1 1/2 cups)",
+    "4 teaspoons Baking powder",
+    "1 teaspoon Baking soda",
+    "1 teaspoon Salt",
+    "8 oz unsalted butter (cold and cut into 16 pieces)",
+    "2 tablespoons Honey  (plus more for brushing)",
+    "16 oz Buttermilk  (2 cups plus more for brushing)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

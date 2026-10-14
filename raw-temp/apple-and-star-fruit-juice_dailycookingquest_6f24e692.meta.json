@@ -1,0 +1,41 @@
+{
+  "url": "https://dailycookingquest.com/apple-and-star-fruit-juice.html",
+  "slug": "apple-and-star-fruit-juice_dailycookingquest_6f24e692",
+  "title": "Apple and Star Fruit Juice",
+  "byline": "",
+  "fetchedAt": "2026-08-02T11:44:06.549Z",
+  "ldName": "Apple and Star Fruit Juice",
+  "ldTime": "PT0H10M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H0M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Indonesian",
+  "ldCategory": "Drink, Vegetarian",
+  "ldKeywords": [
+    "How can I enjoy star fruit",
+    "Homemade star fruit fruit",
+    "Fruit"
+  ],
+  "ldIngredientsRaw": [
+    "1 Fuji apple, peeled and cored",
+    "2 star fruits, peeled and seeded",
+    "3 Pontianak/Medan oranges, juiced (about 200 ml)",
+    "2 tablespoon honey"
+  ],
+  "ldInstructionsRaw": [
+    "Put all ingredients in a blender and process until smooth.",
+    "Strain into serving glasses to get a clear juice and serve immediately."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 Fuji apple, peeled and cored",
+    "2 star fruits, peeled and seeded",
+    "3 Pontianak/Medan oranges, juiced (about 200 ml)",
+    "2 tablespoon honey"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

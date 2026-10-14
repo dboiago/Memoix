@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Chilli Pork",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the pork in a pressure cooker, along with ginger, garlic, 50 g onions, 2 green chillies, 2 star anise, 18 g salt, and 350 g water. Boil the pork in the pressure cooker on medium heat for 45 minutes. Transfer the pork to a plate and chill it in the fridge for about 30 minutes, to enable clean slicing later on. Once chilled, slice the pork about 5 mm wide.",
+      "Heat vegetable oil in a wok on high heat. Add the star anise, sliced pork, and half the green chillies. Toss or stir until fat renders from the pork. This should take about 4 to 5 minutes.",
+      "Then add the onion squares and fry for about 6 minutes until they are softened. Add the tomatoes and green chillies and fry for another 2 minutes.",
+      "Finally, add the soy sauce and salt. Toss to combine. You may garnish with some green onions if you like, but this is optional."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Belly",
+        "unit": "kg",
+        "notes": "alt: shoulder, 5-cm logs",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": "3-cm squares",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": "g",
+        "notes": "slit",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "g",
+        "notes": "½ light, ½ dark",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f849a46994f162f1823f4c80fabde331a63483b3cc786abdb0994b34d68819bf",
+    "lineage_hash": "e0198720933d6bb3274551a84d9b29dd4dd2170f87bb5be4c5f4ec36921ee5ab"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/chilli-pork",
+    "fetchedAt": "2026-08-01T18:36:05.736Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/chilli-pork",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

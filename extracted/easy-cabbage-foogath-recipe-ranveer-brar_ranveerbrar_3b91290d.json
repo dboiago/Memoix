@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Cabbage Foogath (गोभी फूगथ)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat coconut oil in a kadai, add cumin seeds, ginger, garlic, red green chilli, curry leaves saute it well.",
+      "Add onion, salt to taste, turmeric powder and saute it well.",
+      "Add cabbage, carrot, fresh coconut and mix everything well.",
+      "Cover it with the lid and cook for 5-10 minutes on medium flame.",
+      "Finally, add coriander leaves and toss well.",
+      "Garnish it with coriander sprig and seve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cabbage",
+        "unit": null,
+        "notes": "thinly shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "julienne",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Green Chilli",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Size Onion",
+        "unit": "medium",
+        "notes": "slice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "Tbsp",
+        "notes": "fresh, grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Few Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2239b656ec24f6cf51a0c2b8189b0e4193ae7e8ca5906c68318cd06dd8826bc7",
+    "lineage_hash": "d2ebd3e20dd77d60ef71af00593414d5e51499479998b904bb11f50113baf664"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cabbage-foogath/",
+    "fetchedAt": "2026-08-02T06:07:22.947Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cabbage-foogath/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

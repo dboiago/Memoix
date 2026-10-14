@@ -1,0 +1,337 @@
+{
+  "recipe": {
+    "name": "Beef Cheek, Beef Fillet, Snails, Parsnip",
+    "time": "5 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the beef cheeks, heat the oven to 140ºC/Gas mark 1",
+      "Seal the beef cheeks in a hot pan with a little oil until browned. Remove the cheeks from pan. Deglaze the pan with the red wine, and boil until the liquid is reduced by half",
+      "In a separate pan, sweat of all the diced vegetables, garlic, thyme and bay in a little oil",
+      "Mix the vegetables with the reduced red wine, tomato purée, star anise and chicken stock",
+      "Put in an ovenproof pan and add the beef cheeks",
+      "Cover with a lid then braise in the oven for 2 hours and 30 minutes. Remove and allow to cool at room temperature",
+      "For the parsnips, vac-pac the parsnips with the cream and milk. Whizz to a purée in a blender. Season then pass through a sieve and chill",
+      "Steam at 100ºC for 25 minutes then blend in a blender for 6 minutes",
+      "For the snails, heat the oven to 140ºC/Gas mark 1",
+      "Heat the oil and sweat the vegetables and herbs until golden brown. Add the Madeira and reduce until syrupy",
+      "Transfer to an ovenproof dish, add the purged snails and braise for 3 hours 30 minutes - 4 hours 30 minutes until tender",
+      "To finish, heat the butter until foaming. Add the garlic and parsley then add the drained snails and heat through",
+      "For the wild garlic crust, blanch the wild garlic by dropping it into boiling seasoned water for 4 minutes. Drain, cool and chill",
+      "Put the wild garlic into a freezer container and freeze. When it starts to harden, transfer it to a food processor and whizzing, before mixing with butter and breadcrumbs",
+      "Roll out the crust out between 2 sheets of parchment paper then freeze again. Cut, once frozen, into 4cm square pieces",
+      "For the beef, cut the 500g piece of fillet into 6 pieces, approximately 85g each. Season with salt",
+      "Heat the oven to 200ºC/Gas mark 6. Sear the beef fillet in the oil quickly all over in a hot pan then transfer to the oven for 15-20 minutes for rare meat",
+      "Roast the parsnip in the moderately hot oil, add the butter and allow to foam",
+      "Turn the heat down and baste the foaming butter over the parsnips continuously for 6-8 minutes until cooked all the way through",
+      "To plate, reheat the cheek through in the red wine gravy and place a piece of the wild garlic crust over the top before glazing under the grill",
+      "Reheat the parsnip purée and check for seasoning",
+      "Place a spoonful of parsnip purée to the left of the plate and the rested fillet on the opposing side. Cut the top end off the parsnips and stand one in the centre of the parsnip purée",
+      "Place the now glazed beef cheek on top of the fillet and dress the crust with the braised snail and snail shells"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ox Cheek",
+        "unit": "g",
+        "notes": "trimmed",
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": null,
+        "notes": "diced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Stick",
+        "unit": null,
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "diced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ready Purged Snails",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnip",
+        "unit": "g",
+        "notes": "peeled and diced",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsnips",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e51c25aeef28a0d3c0be50fca57458d18a26bd0d1f21792952da348aa0762098",
+    "lineage_hash": "bee1823ae041d429b0e98f0a1fd47ab86eab4c6798877fa76ccd2649da3bde93"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-cheek-beef-fillet-snails-parsnip",
+    "fetchedAt": "2026-08-03T18:26:15.897Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-cheek-beef-fillet-snails-parsnip",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

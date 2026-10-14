@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Artichokes Barigoule",
+    "time": "40 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Tie the fennel seeds in a muslin cloth and set aside",
+      "Heat the olive oil in a large pan over a medium heat. Add the artichoke hearts and season with a pinch of salt. Add the diced carrot and celeriac and cook for 2-3 minutes - making sure they do not colour",
+      "Turn up the heat. Add the wine and garlic to the pan and cook until almost dry",
+      "Add the fennel seeds (tied in muslin), chicken stock and caster sugar to the pan. Turn down the heat and simmer the artichokes until they are just cooked through (up to 5 minutes) and the liquid is reduced - the artichokes are cooked when a sharp knife is inserted and there is no resistance",
+      "Add the white wine vinegar to the pan. Remove the muslin cloth containing the fennel seeds from the pan. Divide the artichokes barigoule across plates and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Globe Artichoke Hearts",
+        "unit": null,
+        "notes": "halved",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "cut into a 5mm dice",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "cut into a 5mm dice",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": "or vegetable stock",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "665ac9a8e6e82106035bcb770864506ca68e70b958609a60d7caf66dee34be2e",
+    "lineage_hash": "efb939ea10612d6a557b0052854da0fcb790d2e4a5dc7efec1a65bf843eff926"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/artichokes-barigoule-recipe",
+    "fetchedAt": "2026-08-03T16:24:12.838Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/artichokes-barigoule-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

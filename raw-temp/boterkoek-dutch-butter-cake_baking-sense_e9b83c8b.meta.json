@@ -1,0 +1,59 @@
+{
+  "url": "https://www.baking-sense.com/2020/03/26/boterkoek-dutch-butter-cake/",
+  "slug": "boterkoek-dutch-butter-cake_baking-sense_e9b83c8b",
+  "title": "Boterkoek - Dutch Butter Cake",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T07:24:54.155Z",
+  "ldName": "Boterkoek",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "16",
+    "16 slices"
+  ],
+  "ldCuisine": "Dutch",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "buttery, easy, rich",
+  "ldIngredientsRaw": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz superfine sugar (1 cup (see note))",
+    "¼ teaspoon table salt",
+    "8 oz unsalted butter (room temperature)",
+    "1  egg (whisked)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 400 °F. Line the bottom of a 9&quot; tart pan or spring form pan with a parchment paper round.",
+    "In a large mixing bowl or the bowl of a stand mixer, combine 10 oz&#32;all purpose flour, 8 oz&#32;superfine sugar and ¼ teaspoon&#32;table salt. Toss in 8 oz&#32;unsalted butter and use your fingers or the mixer paddle to work the butter into the flour until there are no large lumps of butter.",
+    "Remove 1 tablespoon of the whisked egg and set it aside. Add the rest of the egg to the dough and mix just until it comes together.",
+    "Press the dough into the prepared pan. Smooth until the top is level and flat.",
+    "Brush the reserved egg onto the top of the dough. Use a fork to create a lattice pattern on top of the dough.",
+    "Bake until the edges and top of the cake are golden brown, about 20-25 minutes.",
+    "Cool completely in the pan. Cut into 16 wedges to serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "225 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "2 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "0.5 g",
+    "cholesterolContent": "41 mg",
+    "sodiumContent": "42 mg",
+    "fiberContent": "0.5 g",
+    "sugarContent": "14 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "10 oz all purpose flour (2 cups, see note)",
+    "8 oz superfine sugar (1 cup (see note))",
+    "¼ teaspoon table salt",
+    "8 oz unsalted butter (room temperature)",
+    "1 egg (whisked)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

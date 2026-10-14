@@ -1,0 +1,213 @@
+{
+  "recipe": {
+    "name": "Duck with Lavender",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the compressed peach. Halve and deseed the peaches, carefully peel off the skin and place into vac pac bags with a small dash of white balsamic vinegar. Seal tightly and leave to marinate in the fridge for 1-2 hours",
+      "For the sauce, caramelise the honey in a pan until bubbling and add the lavender and the orange juice. Reduce on a high heat for 3 minutes, then reduce to a simmer and cook for 5 minutes",
+      "Add the chicken stock and simmer for 60 minutes, or until reduced to a sauce-like consistency. Pass through a fine sieve and set aside until ready to plate",
+      "30 minutes before roasting, remove the duck breasts from the fridge and allow to come up to room temperature",
+      "Gently rub the duck breasts with olive oil, season and place on a baking tray. Roast in the oven for 40 minutes",
+      "Meanwhile, prepare the purées. For the fennel purée, thinly slice the fennel, including the tips and leaves/fronds. Place a low-sided pan over a medium heat and add a small dash of oil. Sweat the fennel until soft, then add 100ml of water and cook until soft",
+      "Tip the mix into a blender, blitz until smooth then season to taste. Pass through a fine strainer and set aside until ready to serve",
+      "For the peach purée, cook the peaches gently in simmering water for 15 minutes. Drain, cut each peach in half and remove the stones. Purée the flesh and skins in a blender until smooth, then add the vinegar and purée again. Pass through a fine strainer and set aside",
+      "To prepare the fennel, cut each bulb into quarters and cook in salted simmering water for 10-15 minutes. Strain and then sear in a hot pan with a dash of oil, until browned on both sides. Remove from the pan and keep warm",
+      "Meanwhile, remove the compressed peaches from the fridge and allow to come to room temperature, remove the duck breasts from the oven. Allow the duck to rest for 10 minutes before carving",
+      "Remove the bones from the breasts and roll in honey and then lavender. Carve into rectangular pieces, or as desired, and plate with roches of the fennel purée, spots of peach puree, the fennel and compressed peach. Garnish with chopped chives and fennel fronds and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Peach",
+        "unit": null,
+        "notes": "halved, deseeded, peeled, marinated in white balsamic vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "L Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breast",
+        "unit": "g",
+        "notes": "on the bone",
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulbs",
+        "unit": null,
+        "notes": "large, leaves intact",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peaches",
+        "unit": null,
+        "notes": "cooked in simmering water, cut in half, stones removed",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Balsamic Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Fennel",
+        "unit": null,
+        "notes": "quartered with leaves reserved",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lavender",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Fronds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3bb56f40a52967997bfe98649342604f9fef3f8794ffc564af7907e8730d4f3c",
+    "lineage_hash": "37b75fc3d7bf030797ecb1b6ef2cac123499678dc09a0cc9605257e83bbb6eaa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-with-lavender-recipe",
+    "fetchedAt": "2026-08-03T18:31:44.374Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-with-lavender-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

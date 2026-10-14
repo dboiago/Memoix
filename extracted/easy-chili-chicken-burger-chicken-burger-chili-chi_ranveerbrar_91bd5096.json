@@ -1,0 +1,306 @@
+{
+  "recipe": {
+    "name": "Chili Chicken Burger",
+    "time": "30-40 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add oil, once it's hot, add onion, carrot, ginger, green chillies and saute for a minute or until the onions are translucent.",
+      "Add light soy sauce and cook until the mixture is dry.",
+      "Keep it aside for further use.",
+      "In a bowl, add chicken minced, boiled potatoes, sauteed veggies and mix.",
+      "Add salt to taste, black pepper powder, coriander leaves and mix everything well.",
+      "Divide the mixture in equal parts, dip the patty in beaten egg and coat it well with bread crumbs.",
+      "In a pan, add oil, once it's medium hot, add the patty and shallow fry until golden brown in color.",
+      "Keep it aside for further use.",
+      "In a pan, add oil, once it's hot, add onion, capsicum, ginger green chillies and saute.",
+      "Add dark soy sauce, tomato ketchup and saute for a minute or until the onions are soft.",
+      "Keep it aside for further use.",
+      "In a pan, add butter and toss the burger buns.",
+      "Spread mayonnaise on the bottom bun, add tomato, prepared relish, lettuce, patty, cheese slice, relish and close it with another bun.",
+      "Prick the skewer to get the hold on the burger.",
+      "Garnish it with cherry tomato, lemon slice and coriander spring.",
+      "Serve it with fries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2-3",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Carrot",
+        "unit": "medium",
+        "notes": "peeled, chopped",
+        "amount": "1",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "1",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauteed Veggies",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Mince",
+        "unit": "g",
+        "notes": null,
+        "amount": "700",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "boiled, grated",
+        "amount": "2",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Sautee Veggies",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorn Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1½",
+        "section": "For Patty",
+        "isOptional": false
+      },
+      {
+        "name": "No. Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Bread Crumb",
+        "unit": "C",
+        "notes": "fresh, fresh",
+        "amount": "½",
+        "section": "For Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & chopped",
+        "amount": "2",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chilli Chicken Relish",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": "cubed",
+        "amount": "½",
+        "section": "For Toasting Bun",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for shallow fry",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "No. Burger Bun",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Relish",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cheese Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Tomato",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8ebfb1b37249c4f701911099be2f7a711068f566467c7a68381978618090c6a8",
+    "lineage_hash": "e62094170e9b1038a25368b825403a3fd747a43a4c808f0919a4522b0f6c99c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chili-chicken-burger/",
+    "fetchedAt": "2026-08-02T13:43:17.108Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chili-chicken-burger/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

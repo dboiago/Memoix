@@ -1,0 +1,62 @@
+{
+  "url": "https://mykoreankitchen.com/egg-in-a-basket/",
+  "slug": "baked-egg-in-a-basket_mykoreankitchen_c570aa6f",
+  "title": "Baked Egg in a Basket",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T22:14:13.186Z",
+  "ldName": "Baked Egg in a Basket",
+  "ldTime": "PT40M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Korean Fusion",
+  "ldCategory": "Breakfast",
+  "ldKeywords": "baked egg in a hole, egg in a basket, egg in a hole, korean mayo egg toast",
+  "ldIngredientsRaw": [
+    "2 slices white bread",
+    "1  egg",
+    "2 Tbsp mayonnaise",
+    "1/2 slice ham (or 1 rindless bacon rasher)",
+    "A pinch  fine sea salt",
+    "1 slice cheese ((optional))",
+    "A pinch  parsley ((optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 180ºC / 356F.",
+    "Cut the ham/bacon rasher into 4 small square pieces for a simple Korean flag version (per TV program). Alternatively, you could slice the ham/bacon into the real Korean flag stripes.",
+    "Place one slice of bread on a board. Squeeze and spread mayonnaise with a spread knife thoroughly on one side.",
+    "Place another slice of bread on a board. Make a round hole on the bread using a round shaped cookie cutter or any round shaped object that’s strong and sharp enough to cut through the bread. (I used 1/2 cup stainless steel measuring cup.)",
+    "Place the bread slice (with a hole) from step 4 on top of the mayo spread bread slice from step 3. (Optionally, you could insert a slice of cheese in between the bread for a more savory cheesy taste.)",
+    "Squeeze the mayonnaise around the edge of the top bread slice.",
+    "Break the egg in the hole and sprinkle a pinch of salt on the egg. (Optionally, you could also add a pinch parsley on the egg.) Place the ham/bacon on the four corners of the bread.",
+    "Cook the bread in the oven for 20 mins. (If you prefer slightly runnier egg white and yolk, cook it for 15 mins or less.)",
+    "Serve. (It tastes great with a cup of fresh fruit juice.)"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "530 kcal",
+    "carbohydrateContent": "25 g",
+    "proteinContent": "20 g",
+    "fatContent": "38 g",
+    "saturatedFatContent": "12 g",
+    "cholesterolContent": "213 mg",
+    "sodiumContent": "823 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 slices white bread",
+    "▢ 1 egg",
+    "▢ 2 Tbsp mayonnaise",
+    "▢ 1/2 slice ham or 1 rindless bacon rasher",
+    "▢ A pinch fine sea salt",
+    "▢ 1 slice cheese (optional)",
+    "▢ A pinch parsley (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

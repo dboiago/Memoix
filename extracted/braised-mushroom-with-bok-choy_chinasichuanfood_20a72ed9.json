@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Braised Mushroom with Bok Choy",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "141",
+      "carbohydrateContent": "9",
+      "fatContent": "12",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Remove any bad leaves of Bok Choy. Wash carefully and cut into halves if you get larger ones.",
+      "Wash the shitake mushrooms. And mix all of the ingredients for stir-fry sauce in a small bowl.",
+      "Heat up around 1 tablespoon of oil in pan and then stir fry garlic slices until aroma. Add shitake mushroom in and fry until soft. During the washing process, shiitake mushroom will absorb some water. If they get too dry and hard to cook, sprinkle some water in.",
+      "Meanwhile. In a large pot, bring enough water to a boiling and then cook bok choy until soft. Add 1/4 teaspoon of salt and 1/4 teaspoon of oil to keep the green color and crispy taste of Bok Choy. But do not kill your vegetables. Transfer out and lay them in the bottom of the serving plate.",
+      "Stir in stir fry sauce and wait for around 30 seconds over medium to slow fire until the sauce is appropriately thickened. Transfer the mushrooms to serving plate too and pour over all the sauce left."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "fresh, cut into 4 pieces",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": null,
+        "notes": "dried, pre-soaked, can be substituted with fresh shiitake mushrooms",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bok Choy",
+        "unit": null,
+        "notes": null,
+        "amount": "5-8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b2e2bd108536fb19ec07512b78eca559b12a9aafbbbd7efa8968a8161eaad52",
+    "lineage_hash": "28f7a4aec3d4cc48d151347bf906a830949252e5a51a5c2d40acaf3615bdf2e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/braised-mushroom-with-bok-choy/",
+    "fetchedAt": "2026-08-02T05:14:13.820Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/braised-mushroom-with-bok-choy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

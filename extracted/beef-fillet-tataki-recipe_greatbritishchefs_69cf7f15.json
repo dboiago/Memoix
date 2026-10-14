@@ -1,0 +1,153 @@
+{
+  "recipe": {
+    "name": "Beef Fillet Tataki",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the ponzu sauce. Mix together the soy sauce, rice vinegar and lemon juice, stirring until well combined. Weigh out 35g for the salsa, reserving the rest for serving",
+      "For the onion salsa, combine the ponzu sauce with the onion and garlic purée and mix well. Slowly whisk in the grapeseed oil and refrigerate until required",
+      "To make the garlic crisps, use a mandoline to finely slice the cloves into thin pieces and place them into a saucepan. Cover with milk and bring to the boil, then immediately remove from the heat. Drain the garlic and rinse gently in cold running water, patting dry on a piece of kitchen towel",
+      "Heat the vegetable oil in a small saucepan until it reaches 140°C, then fry the garlic slices in small batches until they are golden brown. Drain well on kitchen paper and keep in a warm place until required",
+      "Place a cast iron pan over a high heat and allow to heat up until almost smoking. Meanwhile, generously season the beef fillet all over with salt and pepper. Drizzle over a small amount of grapeseed oil, then place the fillet into the hot pan to sear on all sides",
+      "Once the fillet has colour on the outside but is still very rare quickly remove it from the pan and plunge the beef into an ice bath to halt the cooking process. Leave to chill for 1 minute, then remove from the ice bath and place on a sheet of kitchen paper to rest",
+      "Thinly slice the fillet into even pieces and arrange across a deep plate or dish. \r\nSpoon a line of the onion salsa across the beef slices and top with a row of sliced spring onion. Drizzle over a little of the leftover ponzu sauce and garnish with the garlic crisps"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Fillet",
+        "unit": "g",
+        "notes": "trimmed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "dash",
+        "notes": "or another neutral flavoured oil",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Purée",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": "for frying",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": "washed and finely sliced into round slices",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "adeae13e1a2aecc56becc08981bd48e87cd2e937da8602c8b7363f753d5cf125",
+    "lineage_hash": "c1743eeac71ef9e318c600d1562d6a4f4c16cdaf4db50fdb11ccc845bcdce339"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-tataki-recipe",
+    "fetchedAt": "2026-08-03T13:38:34.030Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-tataki-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://cookingwithria.com/2015/02/boil-and-fry-black-eyed-peas/",
+  "slug": "boil-and-fry-black-eye-peas-not-a-music-group_cookingwithria_a1361356",
+  "title": "Boil and Fry Black Eye Peas -- Not a Music Group!",
+  "byline": "CookingwithRia",
+  "fetchedAt": "2026-09-25T21:04:39.078Z",
+  "ldName": "Boil and Fry BlackEyed Peas - Googanee",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Caribbean, Trini, Trinidad, Trinidadian",
+  "ldCategory": "Breakfast, dinner, lunch, Main Course, Salad, Side Dish, Snack",
+  "ldKeywords": "Boil and fry blackeyed peas, goganee, trini goganee",
+  "ldIngredientsRaw": [
+    "1 cup blackeyed peas (dried)",
+    "6 cups water",
+    "1 teaspoon salt",
+    "3 tablespoons extra virgin olive oil",
+    "1  onion (medieum, chopped ( I only use sweet onion))",
+    "½  red bell pepper (large, optional )",
+    "½   orange bell pepper (or yellow, optional )",
+    "1 tablespoon garlic (minced, if you love garlic like me, use two tablespoon, )",
+    "¼ cup chopped fresh herbs (scallion, cilantro or culantro/shado beni)",
+    "1 teaspoon thyme leaves",
+    "½ teaspoon ground roasted cumin (geera, optional)",
+    "Hot pepper ((scotch Bonnet, habanero), to taste, optional)",
+    "2  pimento peppers (chopped, optional)",
+    "Salt and freshly ground pepper (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "Pick over beans. Soak beans overnight or a few hours. Place drained black eye peas,  6 cups of clean water (meaning not the water you soaked it in) and salt in a pot over high heat. Bring to a boil, lower heat and cook until tender but still firm. Drain and set aside. While beans are boiling, chop onion, mince or grate garlic, chop peppers and herbs.",
+    "Heat oil in a dutch oven or heavy bottomed pot, over medium heat. Add onion, Cook 1 minute or until translucent. Add garlic and cook another minute. Add peppers and herbs including thyme leaves and cook for 3-5 minutes until tender.",
+    "Add black eye peas, salt, freshly ground black pepper and cook about 5 minutes, stirring constantly, to prevent sticking. Add cumin, stir and remove from the heat. Test for salt and add more if desired."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "168 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "4 g",
+    "fatContent": "11 g",
+    "saturatedFatContent": "2 g",
+    "sodiumContent": "605 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "9 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[To boil]",
+    "1 cup blackeyed peas dried",
+    "6 cups water",
+    "1 teaspoon salt",
+    "[To Cook]",
+    "3 tablespoons extra virgin olive oil",
+    "1 onion medieum, chopped ( I only use sweet onion)",
+    "½ red bell pepper large, optional",
+    "½  orange bell pepper or yellow, optional",
+    "1 tablespoon garlic minced, if you love garlic like me, use two tablespoon,",
+    "¼ cup chopped fresh herbs scallion, cilantro or culantro/shado beni",
+    "1 teaspoon thyme leaves",
+    "½ teaspoon ground roasted cumin geera, optional",
+    "Hot pepper (scotch Bonnet, habanero), to taste, optional",
+    "2 pimento peppers chopped, optional",
+    "Salt and freshly ground pepper to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

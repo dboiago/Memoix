@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Brisket Burgers",
+    "time": "1 hr 6 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the ground brisket and chopped cooked brisket in a large bowl and mix with a wooden spoon. Moisten your hands with cold water and form the mixture into 4 equal patties, each 3/4 inch thick. Dimple the center slightly with your thumb (burgers rise more in the center as they cook, so these will remain an even thickness). Chill on a plastic wrap-lined plate in the refrigerator for 1 hour.",
+      "While the burgers chill, make the Chipotle Mayonnaise, following the recipe below. Keep chilled until serving.",
+      "Set up your grill for direct grilling and heat to high. Ideally, you’ll be grilling over wood or a wood-enhanced fire. Brush or scrape the grill grate clean and oil it well.",
+      "Season the burgers generously on both sides with salt and pepper. Arrange on the grate and grill until the bottoms are sizzling and browned, 3 to 4 minutes. Give each a quarter turn after 1-1/2 minutes so they grill evenly. Turn the burgers and lay the provolone slices (if using) on top. Close the grill lid and continue grilling until the cheese is melted and the burgers are cooked to taste. The USDA recommends an internal temperature of 160 degrees (medium). Insert the probe of an instant-read meat thermometer through the side of the burger to check it.",
+      "Meanwhile, butter the cut sides of the pretzel rolls. Toast the buns, cut sides down, on the grill, 30 seconds or as needed.",
+      "To assemble the burgers, line the bottom of each toasted bun with a lettuce leaf, if using (this keeps the burger juices from making it soggy). Add the burger and any of the embellishments, including your favorite condiments. Add the top bun and dig in."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Brisket",
+        "unit": "lb",
+        "notes": "cut from the fatty deckle section—you want about 20 percent fat",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Your Favorite Barbecued Brisket",
+        "unit": "lb",
+        "notes": "cooled and finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Sharp Provolone Cheese",
+        "unit": null,
+        "notes": "optional",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d04bc9749eb7f5cd5e84fd30129b11409d62bf4d1d37bb2d40fbd02fcfc781c6",
+    "lineage_hash": "21fad4eb9d4289a0a6d16a4e076dcf4aa6ee39859e722088ae02adb46f61e256"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/brisket-burgers/",
+    "fetchedAt": "2026-08-03T06:39:08.162Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/brisket-burgers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

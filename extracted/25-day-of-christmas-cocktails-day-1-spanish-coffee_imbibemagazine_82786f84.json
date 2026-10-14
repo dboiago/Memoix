@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "Spanish Coffee",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "ES",
+    "glass": "Red Wine or Irish Coffee",
+    "garnish": [
+      "Lightly Whipped Cream",
+      "Sprinkling of Ground Nutmeg"
+    ],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the rum and the triple sec to the sugar-rimmed glass and carefully ignite.",
+      "Add Kahlúa (the flame should go out at this point) and top with hot coffee.",
+      "Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rum",
+        "unit": "oz",
+        "notes": "151-proof",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kahlúa",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fresh-brewed Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e7825586ca831a95f3a19692222a2494d12994b076bb7ab306e73c55ef654f7f",
+    "lineage_hash": "3537e9c7a7041f0765c14d044c166621cda61ac5278569997e445a2cf8827ca5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/25-day-of-christmas-cocktails-day-1-spanish-coffee/",
+    "fetchedAt": "2026-08-02T11:11:50.294Z"
+  },
+  "rawSource": "https://imbibemagazine.com/25-day-of-christmas-cocktails-day-1-spanish-coffee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

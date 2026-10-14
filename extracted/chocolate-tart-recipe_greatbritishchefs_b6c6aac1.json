@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chocolate Tart",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by making the tart base. Cream the butter and icing sugar together, then add the flour, hazelnuts, salt and zest. Add 30g of the beaten egg and slowly mix together until it forms a dough. Lightly knead to form a ball, wrap in cling film and rest for 1 hour in the fridge before use",
+      "Preheat the oven to 170°C/gas mark 3. Remove the pastry dough from the fridge and roll it out onto a flat work surface to a thickness of 3 mm. Use a 23 cm loose-bottomed tart tin and line with greaseproof paper. Next, carefully line the tin with the rolled pastry",
+      "Brush the tart base with the egg wash and blind bake until the tart is golden brown, about 15-20 minutes. Allow to cool while you make the chocolate filling",
+      "For the filling, place the chocolate pistoles in a large mixing bowl. In a pan, heat the trimoline with the cream until hot, being careful not to boil. Once hot, pour it over the chocolate pistoles and stir until the chocolate has melted. Once the chocolate has melted, add butter and continue to stir until fully melted",
+      "Spoon a little chocolate filling around the edges of the tart base to fill in any holes. Allow this chocolate to set in the fridge, then pour in the rest of the chocolate mix to fill the ring",
+      "Place the chocolate tart to set in the fridge for at least 4 hours, or ideally overnight. To serve, use a hot knife to cut the tart into slices"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "plus more for greasing the tart tin",
+        "amount": "155",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "70% Dark Chocolate Pistoles",
+        "unit": "g",
+        "notes": null,
+        "amount": "365",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "390",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Trimoline",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5943a5c87095cf4b91927f20555b123912334c99fd55c35c1fdd253ba2a9d30e",
+    "lineage_hash": "1fde96bd791626895be03a0d42da414ba01eee4c7686452bc9476c8962a4fc80"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe",
+    "fetchedAt": "2026-08-03T17:17:49.379Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

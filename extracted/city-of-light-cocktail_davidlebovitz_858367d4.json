@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "City of Light cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Stemmed Wine",
+    "garnish": [
+      "Lemon Wheel",
+      "Orange Wheel"
+    ],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Fill a small pitcher halfway with ice. Add vermouth, Lillet, and orange liqueur, and stir briskly until well-chilled. Strain into a stemmed wine glass.",
+      "Add a generous handful of fresh ice and top with a pour of Prosecco. Drop in a lemon and orange wheel, and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": "preferably Dolin",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lillet Blanc",
+        "unit": "oz",
+        "notes": "white",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Liqueur",
+        "unit": "oz",
+        "notes": "such as Grand Marnier or Cointreau",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prosecco",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wheel and Orange Wheel",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8d557a93e5a1dba30f26f1ca1175cfc473a5985be1ca72f8ceccf63a913f0e06",
+    "lineage_hash": "f568cc38c11bfb2d341c5b7fb4c6012a4de5cd2de901ea765e862a5650040125"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/city-of-light-cocktail-recipe-lucques/",
+    "fetchedAt": "2026-08-02T20:26:23.517Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/city-of-light-cocktail-recipe-lucques/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://www.baking-sense.com/2019/10/10/san-sebastian-cheesecake/",
+  "slug": "basque-burnt-cheesecake-the-original-san-sebasti-n_baking-sense_351d0b5e",
+  "title": "Basque Burnt Cheesecake – The Original San Sebastián Recipe",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T08:05:03.607Z",
+  "ldName": "Basque Burnt Cheesecake Recipe",
+  "ldTime": "PT280M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT25M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Dessert",
+  "ldKeywords": "basque, easy",
+  "ldIngredientsRaw": [
+    "32 oz cream cheese",
+    "14 oz granulated sugar (1 ¾ cups)",
+    "7  large eggs",
+    "1 teaspoon table salt",
+    "8 oz heavy cream (1 cup)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 500 °F. Line a 10&quot; spring form pan with 2 sheets of parchment paper, leaving a 2&quot; border of  paper extending from the top of the pan. The paper will not lie flat against the pan, this is ok.",
+    "Place 32 oz&#32;cream cheese and 14 oz&#32;granulated sugar in the bowl of a food processor. Pulse a few times to combine the ingredients. Add 7&#32;large eggs, 1 teaspoon&#32;table salt and 8 oz&#32;heavy cream. Process the batter for 3 minutes to completely emulsify the batter. If you don&#39;t have a food processor the batter can be mixed in the same order of ingredients a stand or hand mixer. Just be sure to mix the batter until very smooth and glossy.",
+    "Pour the batter into the prepared pan and immediately place it in the oven. Bake until the top of cheesecake is very dark brown and the sides of the cake are risen-up and set, about 25 minutes. The center of the cake will still be quite soft and will jiggle like a liquid if you shake the pan.",
+    "Remove the cake from the oven and cool to room temperature on a cooling rack. Refrigerate the cake until completely chilled, at least 4 hours.  The cake will be soft and fluffy around the edges and custardy in the center. The center will be set just enough to slice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "370 kcal",
+    "carbohydrateContent": "28 g",
+    "proteinContent": "6 g",
+    "fatContent": "27 g",
+    "saturatedFatContent": "15 g",
+    "transFatContent": "0.01 g",
+    "cholesterolContent": "145 mg",
+    "sodiumContent": "355 mg",
+    "sugarContent": "27 g",
+    "unsaturatedFatContent": "8 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "32 oz cream cheese",
+    "14 oz granulated sugar (1 ¾ cups)",
+    "7 large eggs",
+    "1 teaspoon table salt",
+    "8 oz heavy cream (1 cup)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

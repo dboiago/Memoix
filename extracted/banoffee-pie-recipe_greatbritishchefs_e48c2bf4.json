@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Banoffee Pie",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the pastry, beat together the butter and sugar, then mix in the egg and coffee until well-combined. Mix through the flour to form a smooth paste – if the mix is very sticky add a little extra flour. Form into a block, wrap in cling film then let rest in the fridge for at least 1 hour",
+      "Flour the work surface and roll the pastry out to a thickness of 3–4mm. Line a 23cm fluted tart tin with the pastry, letting it hang over the sides",
+      "Spread a double layer of cling film out on the work surface and smooth it out until flat. Place this over the pastry and fill with baking beads or rice",
+      "Bake the pastry for 10–15 minutes then remove the beads and bake for a further 10 minutes until the pastry is cooked and crisp",
+      "Melt the butter with the soft brown sugar and add the caramel. Bring to the boil then pour into the pastry shell and transfer to the fridge for 1 hour to set",
+      "Slice the bananas and layer over the caramel in a spiral shape. Sprinkle liberally with caster sugar and use a blowtorch to caramelise the sugar. Leave to cool in the fridge for a further 15 minutes",
+      "Whip the double cream and transfer to a piping bag with a flower nozzle. Pipe rose shapes over the top of the bananas, leaving the outer ring on show. Grate over some dark chocolate and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "g",
+        "notes": "dissolved in 25ml hot water",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Canned Caramel",
+        "unit": "g",
+        "notes": null,
+        "amount": "397",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bananas",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": null,
+        "notes": "for dusting",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "22ae7c33ab0cad988fb660ec3ba4d330cfae10ecf5e24bdc60ac9c6b123b8f32",
+    "lineage_hash": "4ff73afec347ab8717304703d704f67386f92f8638dee57e4c897cfce178b549"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/banoffee-pie-recipe",
+    "fetchedAt": "2026-08-03T12:23:40.062Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/banoffee-pie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Chocolate Box Cakes",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oven to 180ºC/gas mark 4. Grease 12 x muffin or individual Victoria sandwich tins",
+      "Mix the flour, sugar, salt and cocoa together. Rub the butter into the flour mixture. Beat the eggs with the milk",
+      "Stir in the egg and milk mixture with the vanilla extract into the dry ingredients and beat well",
+      "Spoon the mixture into the prepared tins and bake for about 22 to 25 minutes until well risen. Allow them to cool before cutting the cakes in half",
+      "To make the buttercream, add the softened butter to the cocoa and then stir in the icing sugar, milk and vanilla extract. Beat until smooth and thick",
+      "Sandwich the cakes with buttercream in the middle and spread some buttercream on top.  Decorate each cake with a chocolate from a box of chocolates"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": "mixed with 1 tsp vanilla extract",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolates",
+        "unit": null,
+        "notes": "of your choice",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd4e0379ff71268246caeb1dde2030b77f352428ae69a0f3ef3d99f3ab0a8518",
+    "lineage_hash": "672dc985ae16c1bf1746d501f95562e597d1c07a12321cae9405853303b9c389"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-box-cakes-recipe",
+    "fetchedAt": "2026-08-03T22:55:16.136Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-box-cakes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

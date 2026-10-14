@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Bobby Burns Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir ingredients in a mixing glass with ice; strain into a glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Highland Malt Scotch",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5465835a002f3a21a8786e105d3c0bea2fd2a9ed5da54353bb2b0693bae6a015",
+    "lineage_hash": "e96ac280a3f86804ed7c10bc7fc746bfec8b6af4613aae3e57a36eb32227090f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bobby-burns-cocktail/",
+    "fetchedAt": "2026-08-03T23:48:57.876Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bobby-burns-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

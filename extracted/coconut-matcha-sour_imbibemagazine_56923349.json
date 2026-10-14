@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Coconut Matcha Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Matcha Dusted on the Surface"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a shaker and blend with an immersion blender until the mixture is very foamy. (Alternatively, shake all of the ingredients without ice until the mixture foams.) Add ice and shake again until chilled, then strain into a chilled glass. Using a fine-mesh strainer, lightly dust the drink’s surface with matcha."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": "fresh, pasteurized if you like",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "38f49357dda64b56e40b0777359eff7e5d64281323a3a4b97486db6e20a3db1e",
+    "lineage_hash": "b4c2ca6319d91e72ee503722c66dc3e6e972effad959fa63d03593aa686e1c9b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coconut-matcha-sour/",
+    "fetchedAt": "2026-08-03T22:32:05.018Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coconut-matcha-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

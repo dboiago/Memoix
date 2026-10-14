@@ -1,0 +1,184 @@
+{
+  "recipe": {
+    "name": "Chocolate Fruit Truffles",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring the cream up to a full simmer while you have the chopped chocolate and corn syrup ready in a bowl. Pour the hot cream over the chocolate, let it sit a minute, and then gently stir with a spatula, starting the motion in the centre and widening the stirring circle outward as the chocolate melts. If the chocolate does not melt fully, then place the bowl over a pot of barely simmering water, stirring very gently until smooth. Stir in the butter and then the dried cherries. Set this aside to cool completely to room temperature – this can take up to 90 minutes.",
+      "Use a very small scoop or two teaspoons to scoop spoonfuls of truffle onto a plate. Roll the truffles between your palms to shape into balls and then roll them in the cocoa nibs.",
+      "Bring the cream up to a full simmer while you have the chopped chocolate and corn syrup ready in a bowl. Pour the hot cream over the chocolate, let it sit a minute, and then gently stir with a spatula, starting the motion in the centre and widening the stirring circle outward as the chocolate melts. If the chocolate does not melt fully, then place the bowl over a pot of barely simmering water, stirring very gently until smooth. Stir in the butter and then the orange zest. Set this aside to cool completely to room temperature – this can take up to 90 minutes.",
+      "Use a very small scoop or two teaspoons to scoop spoonfuls of truffle onto a plate. Roll the truffles between your palms to shape into balls and then roll them in the cookie or cornflake crumbs.",
+      "Bring the cream up to a full simmer while you have the chopped chocolate, corn syrup and coconut oil together ready in a bowl.  Pour the hot cream over the chocolate, let it sit a minute, and then gently stir with a spatula, starting the motion in the centre and widening the stirring circle outward as the chocolate melts.  If the chocolate does not melt fully, then place the bowl over a pot of barely simmering water, stirring very gently until smooth.  Stir in the dried blueberries.  Set this aside to cool completely to room temperature – this can take up to 90 minutes.",
+      "Use a very small scoop or two teaspoons to scoop spoonfuls of truffle onto a plate.  Roll the truffles between your palms to shape into balls and then roll them in the coconut."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "oz",
+        "notes": "less than 70%, chopped",
+        "amount": "8",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "tsp",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "C",
+        "notes": "dried, finely chopped",
+        "amount": "¼",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Nibs",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dark Chocolate & Cherry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Couverture Milk Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature",
+        "amount": "1",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Zest of 1 Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Feuilletine Wafer Cookies",
+        "unit": "C",
+        "notes": "crushed, or cornflake cereal crumbs",
+        "amount": "1",
+        "section": "Milk Chocolate Orange Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "oz",
+        "notes": "chopped",
+        "amount": "8",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "White Corn Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Virgin Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Blueberries",
+        "unit": "Tbsp",
+        "notes": "dried",
+        "amount": "3",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Flaked Coconut",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "White Chocolate Blueberry Truffles",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9bd37106b01ce9953b4cae08bc5f6aa174b1ead97015b0d4f4f6cbe473f67183",
+    "lineage_hash": "b8598ef0d8db9297b082e6bb074aa0c4c0c82fe2eebf4d39d0a1c842e28039de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-fruit-truffles/",
+    "fetchedAt": "2026-08-01T18:39:50.559Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-fruit-truffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

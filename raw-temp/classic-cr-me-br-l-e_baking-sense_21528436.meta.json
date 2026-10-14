@@ -1,0 +1,62 @@
+{
+  "url": "https://www.baking-sense.com/2015/08/27/creme-brulee-and-sauternes-a-classic-pairing/",
+  "slug": "classic-cr-me-br-l-e_baking-sense_21528436",
+  "title": "Classic Crème Brûlée",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T18:35:18.383Z",
+  "ldName": "Classic Creme Brulee",
+  "ldTime": "PT180M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "custard",
+  "ldIngredientsRaw": [
+    "1 quart heavy cream",
+    "½  vanilla bean",
+    "12  large egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "4 oz granulated sugar (½ cup, for topping)"
+  ],
+  "ldInstructionsRaw": [
+    "Arrange eight 6-oz ramekins in a large baking pan. Preheat the oven to 300 °F, don&#39;t use convection setting for this recipe.",
+    "Pour 1 quart&#32;heavy cream into a small saucepan. Split ½&#32;vanilla bean and scrape out the seeds. Add the vanilla seeds and pod to the cream.",
+    "Heat the cream until scalding hot. Do not allow it to boil.",
+    "While the cream is heating, whisk together 12&#32;large egg yolks, 8 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt. Slowly whisk the hot cream into the egg yolk mixture. Strain the custard through a fine sieve into a pitcher or large measuring cup with a pour spout.",
+    "Divide the custard evenly between the ramekins. Pour water into the baking dish so that the level comes 1/2 way up the sides of the ramekins. I like to pour from a corner to avoid spilling into the ramekins.",
+    "Carefully transfer the baking dish to the middle rack of the preheated oven. Bake just until the custard is set, about 30 minutes. The exact baking time will depend on the size and shape of the ramekins, check after 20 minutes and continue checking every five minutes until they&#x27;re done.",
+    "Carefully life the ramekins out of the water bath and set on a wire rack to cool. Refrigerate the custards until cold, at least 2-3 hours, can be made the day before.",
+    "Sprinkle an even layer of granulated sugar (4 oz&#32;granulated sugar over the surface of each custard, the exact amount will depend on the size and shape of the ramekins. The sugar should not be too thick or it won&#39;t caramelize evenly.",
+    "Use a blow torch to caramelize the sugar by evenly waving the flame across the surface of the sugar. Do not hold the flame in one spot, keep the flame moving until the sugar is melted and nicely browned.",
+    "You can brown the custards just before dinner and keep in the refrigerator until serving."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "653 kcal",
+    "carbohydrateContent": "47 g",
+    "proteinContent": "8 g",
+    "fatContent": "50 g",
+    "saturatedFatContent": "30 g",
+    "cholesterolContent": "425 mg",
+    "sodiumContent": "82 mg",
+    "sugarContent": "46 g",
+    "unsaturatedFatContent": "17 g"
+  },
+  "htmlIngredientLines": [
+    "1 quart heavy cream",
+    "½ vanilla bean",
+    "12 large egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt",
+    "4 oz granulated sugar (½ cup, for topping)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

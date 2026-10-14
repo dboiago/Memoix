@@ -1,0 +1,421 @@
+{
+  "recipe": {
+    "name": "Beef Tartare and Potted Beef",
+    "time": "4 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the beef rump for the potted beef. Add the rump to a large container and add the wine, vegetables (not including the diced shallots) and thyme to cover. Leave to marinate for 24 hours",
+      "The night before serving, cut the plum tomatoes for the gentleman's relish in half. Spread applewood chips in a deep flameproof baking tray and place over a high flame, allowing the chips to smoke and catch fire. As soon as the chips catch, smother with a lid to extinguish and top with a wire rack that fits inside the tray",
+      "Place the tomato halves on the rack and seal the entire tray with tin foil to create a smoke box. At this point, remove from the heat and leave the tomatoes covered for a few hours to infuse. Transfer to a container with a sealable lid and place in the fridge overnight",
+      "The next day, place the tomatoes in a heavy-based pan along with the rest of the ingredients. Cook for 2–3 hours over a medium heat until the liquid has reduced by 3/4",
+      "Drain the beef rump from the marinade and reserve the wine and vegetables separately",
+      "Place a large pan over a medium-high heat with a dash of oil and add the beef. Colour all over until nicely caramelised then remove from the pan and add the vegetables. Brown the vegetables nicely then transfer to a large saucepan, along with the beef",
+      "Add the wine to the pan and reduce by half. Transfer to the saucepan with the beef and vegetables, add the stock and top the pan with a lid. Cook over a low heat for 3–4 hours until the beef is tender and breaking apart",
+      "Meanwhile, place the eggs for the confit egg yolks in a waterbath preheated to 62°C and cook for 2 hours",
+      "Add the finely diced shallots for the beef to a small pan and submerge in oil. Confit very slowly over a low heat until the shallots are soft and caramelised. Drain and set aside",
+      "When the beef is ready, remove the meat from the pan and flake into a mixing bowl. Pass the cooking liquid through a sieve into a clean pan and reduce the liquid until thick and rich. Add to the meat, season with salt and pepper and stir through. Season with sherry vinegar and the confit shallots",
+      "Once all mixed and tasting good, transfer to small pots and even out the top. Place in the fridge to set before capping with the beef dripping",
+      "Transfer the gentleman's relish to a liquidiser, blend until smooth then pass through a fine sieve. Transfer to sterilised jars and keep in the fridge",
+      "To finish the confit egg yolk, peel each egg and blend the yolks in a liquidiser until smooth. Pass through a fine sieve and transfer to piping bags or squeezy bottles",
+      "To prepare the dripping to cap the potted beef, add the fat, water and thyme to a pan and place over a low heat. Allow the fat to slowly render",
+      "Once all of the fat has been released, pass through a fine sieve and season with salt. Pour over the set rump pots (it’s crucial that the beef is cold and set before topping with the fat). Chill in the fridge to set, then remove prior to serving to allow the fat to soften slightly",
+      "To make the gribiche for the tartare, simply stir together all of the ingredients",
+      "Finely slice then dice the beef rump for the tartare and add to a bowl. Add the shallots and gribiche, then a few drops of Tabasco to taste for a kick of heat",
+      "To serve, place the ring mould on a plate and add a portion of beef tartare. Remove the ring and pipe a round of egg yolk on top before repeating with the other plates",
+      "Add a dish of the potted beef to the plate and pipe on some gentleman's relish. Finish with slices of sourdough toast and wood sorrel leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Rump",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled and cut into 4 pieces",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and halved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plums",
+        "unit": "kg",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Prunes",
+        "unit": "g",
+        "notes": "pitted",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granny Smith Apples",
+        "unit": null,
+        "notes": "no need to peel, cored and chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Plums",
+        "unit": null,
+        "notes": "stoned and chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Mixed Spice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "fresh",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Fat",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "hard-boiled for 10 minutes then grated",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornichons",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "37",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lilliput Capers",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Rump",
+        "unit": "g",
+        "notes": "trimmed of fat and sinew",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallot",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": null,
+        "notes": "2–3 drops",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Bread",
+        "unit": null,
+        "notes": "toasted",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Sorrel",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f60986ca279947eaad8060be6c486d14f52076150c2a41222f60f70062778284",
+    "lineage_hash": "919c192a594c2091c219d42a5ca7e134c4f472c8862a014a3d56cc96f7cfeb20"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/potted-beef-steak-tartare-recipe",
+    "fetchedAt": "2026-08-03T11:32:27.197Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/potted-beef-steak-tartare-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

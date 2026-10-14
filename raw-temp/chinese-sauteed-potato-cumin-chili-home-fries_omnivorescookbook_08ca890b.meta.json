@@ -1,0 +1,59 @@
+{
+  "url": "https://omnivorescookbook.com/sauteed-potato/",
+  "slug": "chinese-sauteed-potato-cumin-chili-home-fries_omnivorescookbook_08ca890b",
+  "title": "Chinese Sauteed Potato (Cumin Chili Home Fries)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T01:52:42.231Z",
+  "ldName": "Chinese Sauteed Potato (Cumin Chili Home Fries)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "1 lb (450 g) potatoes ((about 2 small russet potatoes), cut into 1” (1.5 cm) pieces (*Footnote 1))",
+    "2 teaspoons Chinese chili flakes ((Optional))",
+    "2 teaspoons cumin powder",
+    "1/4 teaspoon ground Sichuan peppercorn",
+    "2 tablespoons peanut oil ((or vegetable oil))",
+    "1/4 teaspoons salt",
+    "2 cloves garlic (, minced)",
+    "2  green onion (, sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Add potatoes to a medium pot and water to cover potatoes. Bring to a boil, and continue to boil until the potatoes just turn soft, about 5 minutes.",
+    "Once done, rinse the potatoes with cold tap water to stop cooking. Drain potatoes thoroughly and let them dry a bit. This helps crisp up the potatoes.",
+    "Mix the chili flakes, cumin powder, and ground Sichuan peppercorn powder in a small bowl.",
+    "Heat oil in a large non-stick skillet and heat over medium-high heat until hot. Add the potato and sprinkle with the salt. Stir a few times to coat well with oil then spread out into a single layer without overlapping. Cook, stirring occasionally, until the surfaces turn golden crispy, about 8 minutes or so. Add the garlic, green onion, and sprinkle with the spice mix. Pour in a bit of oil if the potatoes look dry. Cook and stir until everything is mixed well together. Serve hot as a side or as breakfast with sunnyside eggs."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "147 kcal",
+    "carbohydrateContent": "19.4 g",
+    "proteinContent": "2.4 g",
+    "fatContent": "7.1 g",
+    "saturatedFatContent": "1.2 g",
+    "sodiumContent": "157 mg",
+    "fiberContent": "3.1 g",
+    "sugarContent": "1.5 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb (450 g) potatoes (about 2 small russet potatoes), cut into 1” (1.5 cm) pieces (*Footnote 1)",
+    "2 teaspoons Chinese chili flakes (Optional)",
+    "2 teaspoons cumin powder",
+    "1/4 teaspoon ground Sichuan peppercorn",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "1/4 teaspoons salt",
+    "2 cloves garlic , minced",
+    "2 green onion , sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

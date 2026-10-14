@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Dairy- and Gluten-Free Yorkshire Pudding",
+    "time": "35 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the oil into a 20x30cm metal baking tin and place into the oven to heat up",
+      "Meanwhile, make the batter by whisking together the eggs, milk, salt and pepper. Add the flours and baking powder and whisk again, then add in the chives and tomatoes and stir well",
+      "Once the oil has become smoking hot remove the tin from the oven and carefully pour in the batter",
+      "Return the tray to the oven and bake for 20 minutes, until the Yorkshire pudding has risen and become golden brown in colour. Slice into 4 pieces and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice Bran Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oat Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tapioca Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gluten-free Oat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gram Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gluten-free Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chives",
+        "unit": null,
+        "notes": "chopped or snipped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sun-dried Tomatoes",
+        "unit": null,
+        "notes": "drained of oil and chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8dcd6db2b2b0ae79ec4f8f68f0fffd62c1be610a7ea50bfde7725340c308feb9",
+    "lineage_hash": "5e4e725db2bca37b3d46fef32de888e28b9a7d5082b1cae21314ff01edb9e768"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/herby-gluten-free-yorkshire-puddings",
+    "fetchedAt": "2026-08-03T13:51:17.075Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/herby-gluten-free-yorkshire-puddings",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "Crispy Duck with Coleslaw",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Press down firmly on the duck to flatten out. Place the duck, breast-side up, onto a rack over a roasting tray and pierce the skin all over with a sharp knife or skewer",
+      "Boil a kettle and pour the boiling water over the skin of the duck - this will help it to crisp up during cooking. Discard the water from the tray, pat the duck dry with kitchen paper, then rub some sea salt and white pepper over the skin. Place in the oven and roast for 1 - 1 1/4 hours, or until crisp and golden brown",
+      "Remove from the oven and set aside to rest for 10 minutes. Remove all of the duck skin and meat from the carcass and shred finely using 2 forks. Set aside on kitchen paper to remove any excess oil",
+      "For the coleslaw, remove the white heart of the cabbage using a sharp knife and discard. Finely chop the red cabbage, grate the carrots and finely slice the red onion. Add the cabbage, carrot and onion to a bowl and mix to combine",
+      "Add the yoghurt, mix well and season to taste with salt and pepper",
+      "For the watercress and orange salad, wash the watercress and set aside to drain in a colander",
+      "Place the orange juice in a pan and bring to the boil. Whisk in the clear honey, pour the mixture into a bowl and slowly whisk in the rapeseed oil until it forms a dressing",
+      "To serve, place the shredded duck back into the oven for 5 minutes to heat through. Meanwhile, spoon a pile of the red cabbage coleslaw onto the middle of each serving plate and scatter the watercress around the outside",
+      "Remove the crispy duck from the oven and place on top of the coleslaw. Liberally drizzle the orange honey dressing over the duck and salad and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck",
+        "unit": null,
+        "notes": "2kg in weight, backbone removed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": "natural",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": "freshly milled",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "freshly squeezed",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Clear Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "94a5940dda90921958309da1980a8513d1c5ca8cf4535e8893014b80dc5847dd",
+    "lineage_hash": "8c88a68be9b5aebe7de76e472b535dd71b231a7d96233c8188a3252026a93ffc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-duck-with-coleslaw-recipe",
+    "fetchedAt": "2026-08-02T22:23:53.757Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-duck-with-coleslaw-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

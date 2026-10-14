@@ -1,0 +1,131 @@
+{
+  "recipe": {
+    "name": "American Style Pancakes with Maple Syrup Butter and Bacon",
+    "time": "45 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix all the dry ingredients ie baking powder, salt, sugar and flour together.",
+      "Gradually add melted butter, eggs and milk.",
+      "Beat until it’s a lovely thick batter.",
+      "Can refrigerate for up 3 days.",
+      "Bring syrup to the boil. Cook for 5 minutes and then add the cubed butter gradually.",
+      "Transfer mixture to a bowl and mix until it cools down.",
+      "Can keep for up to a month, if you haven’t drank it all before.",
+      "Spoon in the batter into a medium hot frying pan. Fry on both sides until golden and delicious.",
+      "Lay 3 pancakes on top of each other, followed by some sliced strawberries or blueberries, crispy streaky bacon and top with the maple syrup butter."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Self Raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": "melted",
+        "amount": "30",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "280",
+        "section": "For the American Style Pancakes",
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "For the Maple Syrup Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "cut into small cubes",
+        "amount": "250",
+        "section": "For the Maple Syrup Butter",
+        "isOptional": false
+      },
+      {
+        "name": "Bacon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Optional",
+        "isOptional": false
+      },
+      {
+        "name": "Strawberries",
+        "unit": null,
+        "notes": "alt: blueberries",
+        "amount": "0",
+        "section": "Optional",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f640df66fffdeeba12bfd0c8f58a689d2243376def95e12485d2c1af55a4e67b",
+    "lineage_hash": "02d45a7b4c3eaf768cd205c4653a72e46f654cee1f44045a7639823c5b283220"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thestaffcanteen.com/chefs-recipes/American-Style-Pancakes-with-Maple-Syrup-Butter-and-Bacon",
+    "fetchedAt": "2026-08-03T10:19:23.852Z"
+  },
+  "rawSource": "https://www.thestaffcanteen.com/chefs-recipes/American-Style-Pancakes-with-Maple-Syrup-Butter-and-Bacon",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

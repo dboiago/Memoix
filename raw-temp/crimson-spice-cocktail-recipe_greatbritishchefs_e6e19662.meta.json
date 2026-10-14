@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/crimson-spice-cocktail-recipe",
+  "slug": "crimson-spice-cocktail-recipe_greatbritishchefs_e6e19662",
+  "title": "Crimson Spice Cocktail Recipe",
+  "byline": "by Asma Khan",
+  "fetchedAt": "2026-08-03T11:48:42.583Z",
+  "ldName": "Crimson spice",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "350g of sugar",
+    "350g of water",
+    "1 cinnamon stick",
+    "1 orange, peeled",
+    "3 sprigs of fresh mint, plus extra to garnish",
+    "2 tsp pomegranate seeds, plus extra to garnish",
+    "crushed ice",
+    "30ml of vodka",
+    "10ml of ginger liqueur",
+    "10ml of lime juice, freshly squeezed",
+    "40ml of soda water"
+  ],
+  "ldInstructionsRaw": [
+    "Begin by preparing the syrup. Combine the sugar and water in a pan and bring to the boil, stirring until the sugar has dissolved fully. Remove from the heat and transfer to a bottle or jar, adding the cinnamon stick and orange peel. Seal and leave to infuse for two days",
+    "Muddle the mint and pomegranate together in a cocktail glass using a bar spoon, then fill with enough crushed ice to come two thirds of the way up the glass",
+    "Pour in the vodka, ginger, lime and 10ml of the cinnamon-orange syrup and use the bar spoon to swizzle the ingredients around in the glass for approximately 10 seconds. Add more crushed ice to the glass and pour over the soda water",
+    "Garnish with more fresh mint and pomegranate seeds and serve immediately with a long straw"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

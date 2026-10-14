@@ -1,0 +1,45 @@
+{
+  "url": "https://www.diffordsguide.com/cocktails/recipe/24540/creole-cocktail",
+  "slug": "creole-cocktail-recipe_diffordsguide_9396bcda",
+  "title": "Creole Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T20:06:43.847Z",
+  "ldName": "Creole Cocktail",
+  "ldTime": "PT03M0S",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "1",
+    "1 cocktail"
+  ],
+  "ldCuisine": "Cocktail",
+  "ldCategory": "Drink",
+  "ldKeywords": [
+    "After dinner/digestif",
+    "Aperitivo/aperitif",
+    "Classic/vintage",
+    "Nightcap/sipping",
+    "Spirit-forward"
+  ],
+  "ldIngredientsRaw": [
+    "37.5 ml Rye whiskey 50% abv",
+    "37.5 ml Rosso/sweet vermouth",
+    "10 ml Amer Picon",
+    "7.5 ml Bénédictine D.O.M."
+  ],
+  "ldInstructionsRaw": [
+    "Select and pre-chill a COUPE GLASS.",
+    "Prepare garnish of lemon zest twist.",
+    "STIR all ingredients with ice.",
+    "FINE STRAIN into chilled glass.",
+    "EXPRESS lemon zest twist over the cocktail and use as garnish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "200 calories"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": null,
+  "siteCourseHint": "Drinks"
+}

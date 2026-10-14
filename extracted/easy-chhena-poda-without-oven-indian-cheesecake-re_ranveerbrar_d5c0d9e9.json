@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Chhena Poda (Indian Cheesecake)",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large sauce pot, add milk and bring it to boil.",
+      "Add lime juice. Keep on stirring and you will see the milk getting curdled.",
+      "Onces the milk gets curdled, pour the curdled milk into a bowl lined with a thin cotton napkin or muslin cloth.",
+      "Gently squeeze out the remaining whey from it. Keep the remaining whey for further use.",
+      "In a parat or bowl, add the prepared chenna crumble and mash slightly, making sure the texture is uniform.",
+      "Add sugar, green cardamom powder and mix well until the sugar melts completely.",
+      "Add all dry fruits, semolina and mix it well.",
+      "In a small bowl mix oil and baking soda together, transfer it into a parat and mix it well.",
+      "Add little remaining whey water and prepare a smooth cake batter consistency.",
+      "Preheat the oven at 200Â° C.",
+      "Grease a cake mould with oil. Place the sal leaves into the cake mould.",
+      "Pour the chenna poda mixture into the mould and tap twice. Cover the mould with a lid",
+      "Bake in the preheated oven for 1 hour or 50 minutes in the pressure cooker.",
+      "Bake chena poda till the top crust gets a dark golden color.",
+      "Remove from the oven once done.",
+      "Then check with a bamboo skewer or toothpick and it should be clean. There should be no sticky batter on the toothpick.",
+      "Let the chenna poda cool completely in the pan. Then remove it.",
+      "Cut into pieces. Transfer into a serving plate and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salt",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ltr Milk",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cashewnut",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "5-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachios",
+        "unit": null,
+        "notes": "blanched, chopped",
+        "amount": "6-8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semolina",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tp Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Remaining Chenna Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sal Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "10d44f3bfec215869ea6a6ca009869c7288d335f163955a2ee48ddee0fca04d5",
+    "lineage_hash": "f291cf18c76d83b9dff6b3ecee824d4462528c09ccb4b8ca3575e8e1bed2ebea"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chhena-poda-without-oven/",
+    "fetchedAt": "2026-08-02T19:43:04.632Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chhena-poda-without-oven/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

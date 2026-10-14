@@ -1,0 +1,43 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/cinnamon-doughnuts-chocolate-sauce",
+  "slug": "cinnamon-doughnuts-chocolate-sauce-recipe_greatbritishchefs_3e260aec",
+  "title": "Cinnamon Doughnuts Chocolate Sauce Recipe",
+  "byline": "by Massimo Spigaroli",
+  "fetchedAt": "2026-08-03T21:38:13.788Z",
+  "ldName": "Cinnamon doughnuts and chocolate sauce",
+  "ldTime": "PT40M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "125g of plain flour",
+    "20g of sugar",
+    "1 orange, zested",
+    "20g of butter",
+    "20g of yeast",
+    "1 tbsp of milk",
+    "1 egg",
+    "75g of dark chocolate, broken into cubes",
+    "10g of butter",
+    "5 tbsp of milk",
+    "3 tbsp of cream",
+    "sugar",
+    "1 pinch of ground cinnamon"
+  ],
+  "ldInstructionsRaw": [
+    "To make the doughnuts, mix the flour, butter, sugar and zest together",
+    "Mix the yeast and milk together and add to the flour along with the egg and mix",
+    "Place the mixture in the fridge for 2 hours. When ready, remove from the fridge, roll out to ½ cm thick and cut into thin strips",
+    "Heat a deep fat fryer and deep fry the doughnut strips in the hot oil. When golden brown, remove from the oil and roll in the sugar and cinnamon mix",
+    "Place the cubes of chocolate and butter in a large bowl. Boil the milk and cream in a saucepan and then pour over the chocolate and butter, stirring until all of the chocolate has melted",
+    "Pour into a serving cup with the cinnamon doughnut strips on the side and serve"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

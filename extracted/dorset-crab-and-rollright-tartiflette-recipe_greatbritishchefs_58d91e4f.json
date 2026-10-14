@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Dorset Crab and Rollright Tartiflette",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by boiling the pink firs in salted water. Once soft, allow to steam dry and then slice them into rounds",
+      "Caramelise the rounds in butter until crispy and golden brown on both sides. The potatoes should have a crisp texture and be firm enough to hold their own shape",
+      "Sweat the shallots and garlic in 100g butter",
+      "Once softened, but before they start to caramelise, add the paprika and vermouth",
+      "Reduce the vermouth by half, then stir in the crème fraîche",
+      "Stir in the brown crab meat and season to taste",
+      "Add the fried potatoes to the tartiflette mix and combine, taking care not to break them",
+      "Add the tartiflette mix to a heatproof dish. Cut the Rollright cheese into chunks and place it on top of the tartiflette mix",
+      "Bake in the oven until the cheese melts and forms a golden crust, about 10 minutes",
+      "For the topping, add the white crab meat and mayonnaise to a bowl and combine, before adding the lemon zest and the lemon juice into the mixture. The mayonnaise should be just enough to combine and create a structure - not too much, not too little",
+      "Once the tartiflette is baked and ready, top it with the white crab mixture. Finish with some dill fronds and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pink Fir Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "plus extra for the potatoes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and sliced lengthways",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rollright Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "978b1ee81ba5f85aa0e06dfdc82554b8636ebc1fc879c507c6f458ec8295c0c0",
+    "lineage_hash": "59c4b42099c35e859d5188bce1b4d24a432624c1467a249316b7cf878493cdce"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/dorset-crab-rollright-tartiflette-recipe",
+    "fetchedAt": "2026-08-02T05:05:45.916Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/dorset-crab-rollright-tartiflette-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

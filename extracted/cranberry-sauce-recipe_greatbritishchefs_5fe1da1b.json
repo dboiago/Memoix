@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Cranberry Sauce",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place all of the ingredients into a saucepan, pop the lid on top and then place over a high heat",
+      "Allow the sauce to come to the boil. Once boiling, give the pan a good shake, then remove it from the heat and allow the sauce to cool completely with the lid on. Store in the fridge until needed"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orange",
+        "unit": "large",
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "fresh or frozen",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrant Jelly",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f7e6a85617afce7c4c5495a22373a2a7b6b724f9d6dd266821b8ba6ad403c3c3",
+    "lineage_hash": "d981d08e6f3e247f7709cd1be9bfee578372c52456f719b480f60596d1c286a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranberry-orange-sauce",
+    "fetchedAt": "2026-08-03T03:28:06.696Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranberry-orange-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

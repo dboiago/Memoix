@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding Cocktail",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": "Rocks",
+    "garnish": [
+      "Star Anise",
+      "Cinnamon Stick",
+      "Redcurrants",
+      "Dried Orange Crisp",
+      "Vanilla Pod"
+    ],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the mulled wine syrup, reduce 500ml of mulled wine in a small pan down to 200ml. Be sure to do this on a gentle simmer so the sugars in the mulled wine do not caramelise and burn",
+      "If necessary, strain out the spices and allow to cool before using. This can be stored in the fridge for up to 1 month",
+      "Fill a shaker halfway with ice cubes. Pour in the Calvados and infused Grand Marnier, seal with a lid or Boston Glass and shake well for 30 seconds",
+      "Fill the rocks glass to the top with ice cubes and using a Hawthorne strainer, pour the contents into the prepared glass",
+      "Top up with ginger beer and add a dash of the mulled wine syrup. You can garnish with the spices, redcurrants and orange crisp, or simply serve straight up"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Henry De Querville Calvados",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "ml",
+        "notes": "infused with cinnamon and vanilla pod",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Beer",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mulled Wine Syrup",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice Cubes",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Redcurrants",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Crisp",
+        "unit": "slice",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f37aa970e54aadf078f5472bd090f949106063db4cbce881fb1b45719eaaa2a",
+    "lineage_hash": "cbee3ae39deaeac5e1cc0b2a8b6b60ae5b7f3762d7f60f17885f6d97eb0a3369"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-cocktail-recipe",
+    "fetchedAt": "2026-08-03T11:48:15.212Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-cocktail-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

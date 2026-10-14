@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Chinese Beef Congee",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "189",
+      "carbohydrateContent": "38",
+      "fatContent": "1",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Make basic congee. Wash the rice in advance and then soak with clean water for 30 minutes. Mix with 1/2 tablespoon of vegetable cooking oil or sesame oil. Set aside for 15 minutes. You can freeze the rice in the previous day.Bring the water to a boiling in a pot and then add the soaked rice. Heat until boiling again and slow down the fire and continue cooking for 30 minutes. Then transfer half of the congee to a serving claypot.",
+      "Marinate beef slice with salt, ground white pepper, ginger and 1/2 teaspoon of cornstarch. Mix for half minute. Then place the beef slice in the congee.",
+      "Stir quickly to separate the beef slices as soon as possible. Continue cooking for 1 minute. Add salt and mix well. Turn off fire, add chopped lettuce, shredded ginger and white pepper."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "C",
+        "notes": "washed and soaked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lettuce Leaf",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "sliced",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "54a21b8b5eb24a5c987c69b1bd5a9b6dec089c3cd09638f7d6667a1f900719ad",
+    "lineage_hash": "5159e3c34597f1c09ebeb7f8d4436741b3c33cee0006d05b8f9d9320b9ca6545"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-beef-congee/",
+    "fetchedAt": "2026-08-02T07:24:10.504Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-beef-congee/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Boulevardier Riff: Stay Woke",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing glass with ice and stir to chill. Strain into a coupe and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punt E Mes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b01cd239bc7a4437497291cb5c8e9fa369b6d3afacd339e491424d5e092ef0ae",
+    "lineage_hash": "f34555a5b000b9cc4211405df93de5eb33405f16286daa55a754fe81e4762f36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/boulevardier-riff-stay-woke/",
+    "fetchedAt": "2026-08-03T17:30:46.204Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/boulevardier-riff-stay-woke/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

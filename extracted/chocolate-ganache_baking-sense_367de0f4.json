@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Chocolate Ganache",
+    "time": "25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "96",
+      "carbohydrateContent": "7",
+      "fatContent": "8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Chop the chocolate into small pieces, none larger than 1/2\" or chop roughly and finish chopping in a food processor. Place the butter in a large, heatproof bowl with the chopped chocolate.",
+      "Pour the cream into a microwave safe bowl or measuring cup and heat until scalding. You want to get the cream as hot as you can without it boiling over. The time will depend on your microwave. Mine takes about 2-3 minutes for a cup of cream",
+      "Pour the cream all at once over the chocolate. Do not stir for 2-3 minutes to allow the chocolate to begin melting",
+      "Gently stir, trying not to incorporate any air, until all the chocolate bits are melted. Stir in the corn syrup if using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Corn Syrup (2 Tablespoons, Optional (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "467344399d08d64ea0cc1d3da91b12989b024620aa2f594b73cb90d5239f8d6d",
+    "lineage_hash": "725f94542e2a672a0ae01842f3c7e67b990bbf3f2ddab23ae51504f25018670c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/05/11/dark-chocolate-ganache/",
+    "fetchedAt": "2026-08-02T03:55:48.872Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/05/11/dark-chocolate-ganache/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

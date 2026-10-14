@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cold-Brew Cocktail: All Father's Eye",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice for around 30 seconds, then strain into chilled glass and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aquavit",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amaro Meletti",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold-brew Coffee",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittercube Cherry Bark Vanilla Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aba820386810e5745c94cdc944a84ce57be3c3bb3ff7d55be07a7f91d0a83eb0",
+    "lineage_hash": "ce5ce89f8bfd0482eb58eae7548fd22de0129c0ac6da90bdf1464d7459fa0196"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-brew-cocktail-all-fathers-eye/",
+    "fetchedAt": "2026-08-03T22:35:54.957Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-brew-cocktail-all-fathers-eye/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

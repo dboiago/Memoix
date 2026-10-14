@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chocolate Shortcake Biscuits",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "408",
+      "carbohydrateContent": "49",
+      "fatContent": "21",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Preheat the oven to 375 °F. Line a 1/2 sheet pan with parchment paper or a silicone baking mat.",
+      "Whisk together 10 oz all purpose flour, 6 ¾ oz cake flour, 2 oz cocoa powder, 1 teaspoon table salt, 2 tablespoons baking powder, and 2 oz granulated sugar. Toss 6 oz mini chocolate chips into the flour and use a whisk to distribute the chips.",
+      "Toss 8 oz unsalted butter slices into the flour. Use your fingers to work the butter into the flour until the pieces are no larger than a pea.",
+      "Whisk 2 large eggs into 12 oz buttermilk and pour them into flour mixture. Toss the mixture with a spoon or spatula until it begins to form a dough. Turn the dough out onto a well floured surface and lightly knead about 5-10 times to bring the dough together. This is a very wet dough so keep your hands well floured and use a light touch while kneading. You don't wan't to knock all the air out of the dough.",
+      "Use your hands to pat dough to ¾\" thick. Cut rounds with a 3\" biscuit cutter. Gently knead together the scraps to cut remaining biscuits. Place the rounds on the sheet pan. Brush with buttermilk and sprinkle with granulated sugar. Bake until well puffed and set, 12 to 14 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "2 cups, see note",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "6¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar (¼ Cup (see Note))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mini Chocolate Chips",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "cold, cut into ¼\" slices",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Buttermilk and Sugar for Topping",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "cb2eb2a9f8efe5d7f1d7abd5f42ee577696840fd5127259a7be4211dc46c9ffb",
+    "lineage_hash": "ce84498d67bf36be826c38a9c3c8dbcae705354a4616adb53e8aadf189e7ff34"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2020/05/20/chocolate-shortcakes-with-chocolate-chips/",
+    "fetchedAt": "2026-08-02T07:36:50.410Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2020/05/20/chocolate-shortcakes-with-chocolate-chips/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

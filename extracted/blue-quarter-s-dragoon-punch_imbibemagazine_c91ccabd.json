@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "name": "Blue Quarter's Dragoon Punch",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Collins",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To serve hot, combine all the ingredients except the tea in a mixing glass and stir without ice. Add freshly brewed hot tea and stir again to incorporate. Pour the contents of the mixing glass into tea cup, express the lemon twist over the cup and discard. To serve cold, combine the ingredients (except the tea) in a mixing glass and stir without ice. Add freshly brewed hot tea and stir again to incorporate. Let the mixture chill in the refrigerator. When it’s cold enough to serve, pour it into a Collins glass over fresh ice, express a lemon twist over the glass and discard."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brandy",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plantation Oftd Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peach Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Black Tea",
+        "unit": "oz",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5fe7a0d5c0ad8c49a9ae02c7ec9abd8b0af3bda8ad1e2b6dddad622dff67e68c",
+    "lineage_hash": "c40ac47cda7c35ce522ef695b5bc2f286d8fac9de59f0c0f6fe1f9d1efcd2305"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dragoon-punch-blue-quarter/",
+    "fetchedAt": "2026-08-04T00:22:25.483Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dragoon-punch-blue-quarter/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

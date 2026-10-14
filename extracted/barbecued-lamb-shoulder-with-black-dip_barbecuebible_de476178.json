@@ -1,0 +1,57 @@
+{
+  "recipe": {
+    "name": "Barbecued Lamb Shoulder with Black Dip",
+    "time": "8 to 10 hours",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Generously season the lamb on all sides with salt and pepper.",
+      "Prepare the basting sauce: Combine the water, vinegar, Worchestershire sauce, salt, lemon juice, and black pepper in a large saucepan and bring to a boil. Set aside.",
+      "Prepare the black dip: Combine the water, Worchestershire sauce, vinegar, brown sugar, lemon juice, pepper, salts, garlic powder, MSG (if using) and allspice in a large saucepan, bring to a boil, and cook until richly flavored and slightly reduced, about 5 minutes. Transfer the sauce to a serving bowl and set aside to cool.",
+      "Set up your smoker following the manufacturer’s instructions and preheat to 250 degrees. Add the wood as specified by the manufacturer.",
+      "Place the lamb, fat side up, on the grate over the drip pan away from the heat.",
+      "Smoke the lamb until fall-off-the-bone tender and the internal temperature reaches 195 degrees, 8 to 10 hours. (The cooking time will depend on the size of the roast and heat of the grill.) Add charcoal and wood chunks as needed. Baste the lamb with the basting sauce every hour. If the lamb starts to burn, tent the meat with foil. If desired, transfer the lamb (wrapped in foil) to an insulated cooler to rest. In the meantime, brush the buns with melted butter and grill, cut sides down, until lightly toasted.",
+      "Transfer the lamb to a cutting board. (Let it rest for at least 5 minutes if you did not rest it in a cooler.) Thinly slice it across the grain or finely chop it with a cleaver. Spoon half the dipping sauce over the meat. Serve the lamb on toasted or grilled hamburger buns or slices of white bread or all by itself, passing the remaining dip on the side."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lamb Shoulder",
+        "unit": null,
+        "notes": "about 6 pounds",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt (kosher or Sea) and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": "about 1 tablespoon each",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb7fc2c04d8f123786850222dbe867d751240937e97387f5c0d7022a156099e3",
+    "lineage_hash": "8f6e30fa84fe0e6442616f8794de8683cb6cc3507c907d3a5982432a5fca5d1b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/kentucky-barbecued-lamb-shoulder/",
+    "fetchedAt": "2026-08-03T07:05:25.993Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/kentucky-barbecued-lamb-shoulder/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

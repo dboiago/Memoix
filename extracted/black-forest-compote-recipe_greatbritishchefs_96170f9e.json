@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Black Forest Compote",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the sugar and pectin together and set aside",
+      "Add the cherry purée, water, scraped vanilla seeds and Morello cherries to a pan and slowly bring to the boil. Whisk in the sugar and pectin mixture and the lemon juice, then allow to re-boil for a few minutes",
+      "Set aside to cool, and use in cakes, macarons and for topping any desserts you like. We added a spoonful of the Black Forest compote to a little pot of Pots & Co 70% Chocolate Ganache and finished it with some grated chocolate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morello Cherry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds scraped out",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Morello Cherries",
+        "unit": "g",
+        "notes": "fresh, chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "932215c7bfd801f66baad2711ef13552499fec8d3b4ac7208c0d353e608d4ffe",
+    "lineage_hash": "91c841e57555506938f2110293ebbe7ebbcbc5820fc3eabaf151cf6006a4fec7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/black-forest-compote-recipe",
+    "fetchedAt": "2026-08-02T15:49:04.032Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/black-forest-compote-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,37 @@
+{
+  "url": "https://www.davidlebovitz.com/city-of-light-cocktail-recipe-lucques/",
+  "slug": "city-of-light-cocktail_davidlebovitz_858367d4",
+  "title": "City of Light cocktail",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T20:26:23.517Z",
+  "ldName": "City of Light",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 1/2 ounces dry vermouth (preferably Dolin)",
+    "1 ounce Lillet blanc ((white))",
+    "1 ounce orange liqueur (such as Grand Marnier or Cointreau)",
+    "1 ounce Prosecco",
+    "lemon wheel and orange wheel"
+  ],
+  "ldInstructionsRaw": [
+    "Fill a small pitcher halfway with ice. Add vermouth, Lillet, and orange liqueur, and stir briskly until well-chilled. Strain into a stemmed wine glass.",
+    "Add a generous handful of fresh ice and top with a pour of Prosecco. Drop in a lemon and orange wheel, and serve."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 1/2 ounces dry vermouth, preferably Dolin",
+    "1 ounce Lillet blanc, (white)",
+    "1 ounce orange liqueur, such as Grand Marnier or Cointreau",
+    "1 ounce Prosecco",
+    "lemon wheel and orange wheel"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

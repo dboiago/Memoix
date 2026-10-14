@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Brand New Antique",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 3 ingredients in a shaker with ice and shake vigorously to chill. Pour the Champagne into the shaker (do not shake again), then gently double strain the cocktail into a chilled coupe. Garnish.",
+      "Green tea–infused honey syrup: Pour 8 oz. of hot water (about 180 degrees F) over 6 grams of gunpowder green tea and steep for 15 minutes. Fine strain the tea directly into 8 oz. of honey and stir until uniformly combines. Store in the refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rémy Martin 1738",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Tea–infused Honey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Meyer Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Champagne",
+        "unit": "oz",
+        "notes": "chilled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": "oz",
+        "notes": "about 180 degrees F",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gunpowder Green Tea",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f68071bd36bd79648cfa72638a6ac396cc869d902d565b52adacaacf8e287b66",
+    "lineage_hash": "dc1c2914384971ecc39bd2037ae7442273121bc7a54dc17c5c7e9f260bb58511"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brand-new-antique-french-75/",
+    "fetchedAt": "2026-08-03T19:16:20.563Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brand-new-antique-french-75/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

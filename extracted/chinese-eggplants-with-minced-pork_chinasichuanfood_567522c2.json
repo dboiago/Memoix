@@ -1,0 +1,157 @@
+{
+  "recipe": {
+    "name": "Chinese Eggplants with Minced Pork",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "354",
+      "carbohydrateContent": "14",
+      "fatContent": "29",
+      "proteinContent": "7"
+    },
+    "directions": [
+      "Remove the ends of Asian eggplants and then cut into small cubes (for the best flavor, try to cut each cubes with some skin). Transfer them into a large pot filled with water, add 1 tbsp. salt and soak for 10 minutes. Add a weight if necessary to make sure the eggplants is well soaked. Set aside to drain completely.",
+      "Heat 3 tablespoons of oil in wok and fry the eggplants for 6-9 minutes until the eggplants become soft and withered. Transfer eggplants out and leave the oil in.",
+      "Add minced pork to stir-fry until aromatic and slightly golden brown. Add shaoxing wine along the edges.  Transfer to the edges of the wok and place the doubanjiang in to fry for another 1 minute. Slow down the fire.",
+      "Add garlic, ginger and scallion onion until aroma.",
+      "Return the eggplants along with fried minced pork, soy sauce, sugar, salt and sesame oil. Mix well.",
+      "Garnish chopped green onion (green parts) and serve with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long Asian Eggplants",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork",
+        "unit": "C",
+        "notes": "minced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "white half and green half divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doubanjiang",
+        "unit": "Tbsp",
+        "notes": "skip this if you prefer a mild taste or double for a hotter version",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6752b3f1e0288ca29556886e9cffe3aea3a00461386188d0150f2b76c1642e2e",
+    "lineage_hash": "4ddfce55f152066e71ef9548d9bf9d7608c984c9a2be2dc40c6efbb135831c4a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-eggplants-with-minced-pork/",
+    "fetchedAt": "2026-08-02T01:13:18.660Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-eggplants-with-minced-pork/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

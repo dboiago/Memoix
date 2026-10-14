@@ -1,0 +1,61 @@
+{
+  "url": "https://mykoreankitchen.com/cold-cucumber-soup/",
+  "slug": "cold-cucumber-soup_mykoreankitchen_3f008bd5",
+  "title": "Cold Cucumber Soup",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T16:12:11.567Z",
+  "ldName": "Cold Cucumber Soup",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Soup",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1  cucumber ((180g / 6.3 ounces ), chilled and julienned (Lebanese cucumber or English cucumber works well.))",
+    "5 g dried seaweed ((0.17 ounces))",
+    "3 cups water (, filtered &amp; chilled)",
+    "1 tsp toasted sesame seeds",
+    "fine sea salt (to taste (optional, I didn't use it.))",
+    "1  red chili ((optional), thinly sliced)",
+    "1.333 Tbsp apple cider vinegar ((or white vinegar))",
+    "1 Tbsp sugar ((raw))",
+    "1/2 Tbsp soy sauce ((regular))",
+    "1/2 tsp fine sea salt",
+    "1/4 tsp minced garlic"
+  ],
+  "ldInstructionsRaw": [
+    "Soak the dried seaweed in some cold water until hydrated (5 to 10 mins). Drain and squeeze out the water from the seaweed. Set it aside. If your dried seaweed is not already cut into bite sized pieces, cut them now with scissors. I always buy pre-cut dried seaweed for convenience.",
+    "Combine the seaweed and the seasoning sauce in a mixing bowl. Mix them well.",
+    "Add the cucumber and water into the bowl. Stir well. Garnish with sesame seeds and red chili (optional). Serve cold. (Some people like adding ice blocks, but I don’t like adding them as it dilutes the soup and you will have to re-balance the taste later. If you use chilled water, you won’t need to balance the taste.) It can be stored in the fridge for a few days."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "30 kcal",
+    "carbohydrateContent": "5 g",
+    "sodiumContent": "305 mg",
+    "sugarContent": "4 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 1 cucumber (180g / 6.3 ounces ), chilled and julienned (Lebanese cucumber or English cucumber works well.)",
+    "▢ 5 g dried seaweed (0.17 ounces)",
+    "▢ 3 cups water , filtered & chilled",
+    "▢ 1 tsp toasted sesame seeds",
+    "▢ fine sea salt to taste (optional, I didn't use it.)",
+    "▢ 1 red chili (optional), thinly sliced",
+    "[SEASONING FOR COLD CUCUMBER SOUP (MIX THESE WELL IN A BOWL)]",
+    "▢ 1.333 Tbsp apple cider vinegar (or white vinegar)",
+    "▢ 1 Tbsp sugar (raw)",
+    "▢ 1/2 Tbsp soy sauce (regular)",
+    "▢ 1/2 tsp fine sea salt",
+    "▢ 1/4 tsp minced garlic"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

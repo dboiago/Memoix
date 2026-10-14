@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Curry Crab",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prep the crabs, check out our Scallion Ginger Cantonese Crab recipe for very detailed instructions. They should be as fresh as possible! After the crabs are prepared, pat them dry and dredge them with flour. Set aside.",
+      "In most restaurants, crabs are almost always deep fried first, so they are cooked quickly and the juices get sealed in. But since we're doing this at home, we don't have to get out the deep fryer. The way to do it is to sear the crabs on all sides to get the same effect. Heat the wok over high heat and add 3 tablespoons of oil. Sear the crabs, paying special attention to the open dredged areas in order to seal in the juices. Turn the heat to medium and fry until they've turned red-orange. This process should take about 5 minutes and the crab should be about 80% done. Set them aside.",
+      "There should be a tablespoon or more oil left in the wok and if not, add more until you have at least 1 ½ tablespoons. Add the ginger. Caramelize for 1-2 minutes on low heat, and then add the garlic, shallots, and the white portions of the scallion. Cook until softened.",
+      "Turn heat to medium high and add the curry, turmeric, salt, sugar, water and wine, and stir until mixed well. Toss in the crab until coated and cover the wok. Cook for about 1 minute and stir and toss the crab until the liquid is reduced. Garnish with the green portion of the scallions and serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Maryland Blue Crabs",
+        "unit": "large",
+        "notes": "alt: similar variety, or softshell crabs",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thin Slices Fresh Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "3-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "diced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "93e91037dacd28a480ed26b447cf36e17488a67f9acdd2f6b6d04e87ae60fa80",
+    "lineage_hash": "c642d1a510a8ad62d3bdfa01b6451e65d09469004863c8f5c7695dae35101294"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/curry-crab/",
+    "fetchedAt": "2026-08-02T03:05:19.314Z"
+  },
+  "rawSource": "https://thewoksoflife.com/curry-crab/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

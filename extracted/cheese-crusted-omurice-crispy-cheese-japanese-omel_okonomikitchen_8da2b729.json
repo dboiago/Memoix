@@ -1,0 +1,197 @@
+{
+  "recipe": {
+    "name": "Cheese Crusted Omurice (Crispy Cheese Japanese Omelette Rice)",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "680",
+      "carbohydrateContent": "65",
+      "fatContent": "34",
+      "proteinContent": "28"
+    },
+    "directions": [
+      "Make fried rice if not using leftovers.",
+      "Melt cheese: Heat a nonstick pan over medium heat and add mozzarella in an even layer, letting it melt into a thin cheese crust.",
+      "Make omelette: Pour in whisked eggs with salt and tilt the pan to spread evenly over the cheese. Cook until the eggs are about 80% set, then turn off the heat and let residual heat finish cooking while keeping the center soft.",
+      "Add rice: Add the fried rice to the center of the omelette.",
+      "Shape the omelette: Fold the eggs over the rice (or in half if preferred).",
+      "Serve: Carefully flip onto a plate so the crispy cheese layer is on top. Add sauces and toppings as desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mozzarella Cheese",
+        "unit": "C",
+        "notes": "80 g, shredded",
+        "amount": "¾",
+        "section": "Omelette",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Omelette",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Omelette",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Omelette",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Fried Rice",
+        "unit": "C",
+        "notes": "250 g, see gochujang version below, or use ketchup rice, kimchi fried rice, curry fried rice or garlic rice, etc.",
+        "amount": "1¼",
+        "section": "Fried Rice (250 g total, use any style)",
+        "isOptional": false
+      },
+      {
+        "name": "Kewpie Mayo",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": null,
+        "notes": "dried",
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Toppings",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Beef",
+        "unit": "oz",
+        "notes": "42 g, or chicken, spam, bacon, ham, sausage, etc",
+        "amount": "1.5",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "separate white and green parts, sliced",
+        "amount": "1",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Kimchi",
+        "unit": "C",
+        "notes": "50 g, roughly chopped, optional",
+        "amount": "¼",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely minced",
+        "amount": "1",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Cooked Rice",
+        "unit": "C",
+        "notes": "200 g, preferably day old",
+        "amount": "1",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Gochujang",
+        "unit": "Tbsp",
+        "notes": "20 g",
+        "amount": "1",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": "1 tsp if using kimchi, 3 tsp if not",
+        "amount": "1-3",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Gochujang Fried Rice (Optional)",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d0f5951377c56cf33bc0c19b98be0f2290a8a1b9e74c3bd4e2f8d74f10ea7eb",
+    "lineage_hash": "4794fb4270fabfeb9e56abc7ee7a930b7ce81dbe45a5e9cc6fc315be71041040"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/cheese-crusted-omurice/",
+    "fetchedAt": "2026-09-26T01:38:18.445Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/cheese-crusted-omurice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/curried-bulgur-wheat-salad-recipe",
+  "slug": "bulgur-wheat-salad-recipe_greatbritishchefs_902085b0",
+  "title": "Bulgur Wheat Salad Recipe",
+  "byline": "by Costardi Brothers",
+  "fetchedAt": "2026-08-03T23:37:03.301Z",
+  "ldName": "Curried bulgur wheat salad",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Side",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of bulgur wheat",
+    "2 tbsp of extra virgin olive oil",
+    "2 tbsp of agave syrup",
+    "1/2 tsp curry powder, adjust to taste",
+    "1 carrot, grated",
+    "1 green pepper, finely diced",
+    "3 spring onions, sliced",
+    "150g of sweetcorn",
+    "40g of pine nuts",
+    "4 tbsp of coriander, chopped",
+    "salt",
+    "black pepper"
+  ],
+  "ldInstructionsRaw": [
+    "To start the dish, Boil the bulgur wheat according to the instructions on the packet (around 10 minutes)",
+    "Combine the olive oil, agave nectar, curry powder, and some salt and pepper in a jug, and mix well",
+    "When the bulgur wheat is cooked, drain it and add the dressing and all other ingredients. Mix well, and either serve immediately, or keep in the fridge for a few days"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

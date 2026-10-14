@@ -1,0 +1,54 @@
+{
+  "url": "https://mykoreankitchen.com/daikon-radish-salad/",
+  "slug": "daikon-radish-salad_mykoreankitchen_ae793dfe",
+  "title": "Daikon Radish Salad",
+  "byline": "Sue",
+  "fetchedAt": "2026-08-01T16:45:58.539Z",
+  "ldName": "Daikon Radish Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "12"
+  ],
+  "ldCuisine": "Korean",
+  "ldCategory": "Side dishes",
+  "ldKeywords": "daikon, radish",
+  "ldIngredientsRaw": [
+    "750 g daikon radish (/ white radish, peeled)",
+    "2 Tbsp green onion ((optional), finely chopped)",
+    "1 Tbsp korean chili flakes ((gochugaru) or more to taste)",
+    "1 Tbsp korean fish sauce",
+    "1 Tbsp sugar",
+    "1/2 Tbsp minced garlic",
+    "1 tsp fine sea salt"
+  ],
+  "ldInstructionsRaw": [
+    "Julienne the radish with your knife or using a mandolin slicer. Ideal size would be 6 cm to 7 cm (about 2.5 inch) long match stick style.",
+    "Put the radish into a mixing bowl then add the sauce. Mix them well with your hands. Garnish with the green onion.",
+    "Transfer the seasoned radish into a glass container and rest it for 30 mins in the fridge then serve. Or you can eat it straight away.&nbsp;Any unused portion can be refrigerated for 5 to 7 days."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "18 kcal",
+    "carbohydrateContent": "4 g",
+    "sodiumContent": "335 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[MAIN]",
+    "▢ 750 g daikon radish / white radish, peeled",
+    "▢ 2 Tbsp green onion (optional), finely chopped",
+    "[SAUCE (MIX THESE IN A BOWL)]",
+    "▢ 1 Tbsp korean chili flakes (gochugaru) or more to taste",
+    "▢ 1 Tbsp korean fish sauce",
+    "▢ 1 Tbsp sugar",
+    "▢ 1/2 Tbsp minced garlic",
+    "▢ 1 tsp fine sea salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

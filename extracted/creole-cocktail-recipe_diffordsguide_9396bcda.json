@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Creole Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "200",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "EXPRESS lemon zest twist over the cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey 50% ABV",
+        "unit": "ml",
+        "notes": null,
+        "amount": "37.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "37.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amer Picon",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine D.o.m",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc9bacd3cd747fd1caf79003a9a919e29f0c6bfd37c2581016b6598564921e02",
+    "lineage_hash": "3c1f3045d0db2a773a5e376f6a80cd489b0967e071fb9cac9939f7334bca85f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/24540/creole-cocktail",
+    "fetchedAt": "2026-08-03T20:06:43.847Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/24540/creole-cocktail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

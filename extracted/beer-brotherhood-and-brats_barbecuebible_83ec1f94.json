@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Mile Long Brat Sandwich",
+    "time": "1 hr 5 min",
+    "course": "smoking",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Thread onion wedges onto skewers and set aside.",
+      "Set up grill for direct grilling and preheat to high.",
+      "Grill bell peppers until darkly browned on all sides, 15 to 20 minutes in all, turning with tongs.",
+      "Transfer peppers to a cutting board and let cool.",
+      "Core, seed and cut lengthwise into strips.",
+      "If any of the skins have burned, simply scrape them off.",
+      "Lightly brush onion wedges with about 2 tablespoons melted butter and season with salt and pepper.",
+      "Direct grill onion over high to medium-high heat until golden brown, 4 to 6 minutes per side.",
+      "Remove onion from skewers and break into segments.",
+      "There are two strategies for cooking the bratwurst. One is smoke-roasting, which is indirect grilling of the brats by tossing wood chips on the coals to generate wood smoke. If you do this, preheat the grill to medium (350 degrees). Indirect grill the brats until golden brown, firm and cooked through (170 degrees inside). Insert an instant-read meat thermometer in one end to check. This will probably take about 40 minutes.",
+      "The other cooking strategy is to direct grill the brats. In this case, set up the grill for direct grilling and set the heat on medium, with one portion of the grill set on low or turned off to serve as a safety zone. The brats can be moved to this spot if there are flare-ups.",
+      "Grill the brats until golden brown and cooked through, turning often with tongs.",
+      "Do not stab brats with a barbecue fork or the juices will drain out.",
+      "Cooking time over medium heat will be about 12 to 15 minutes per side. Don’t rush it. Test with an instant-read meat thermometer in one end. Temperature should be 170 degrees inside.",
+      "Cut French bread loaves through the side, almost in half so they can be opened like a book.",
+      "Cut off the right end of one loaf and the left end of the other loaf so loaves will butt together and look like one long sandwich.",
+      "Lightly brush inside of French breads with remaining melted butter and lightly toast bread on grill. This will take 2 to 4 minutes.",
+      "To assemble the mile-long sandwich, lay French breads on a very long platter. (You can make one by overlapping paper plates or lining up several cutting boards. My assistant, Nancy Loseke, uses butcher paper or cooking parchment torn from a roll.) Or place on a serving table, butting the cut ends together so it looks like you have a single loaf.",
+      "Line up brats inside and top them with grilled pepper strips, grilled onion and room-temperature sauerkraut.",
+      "Squirt a decorative squiggle of mustard down the center.",
+      "To serve, cut sandwich into single bratwurst lengths. (A serrated knife or electric knife works best.)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut in 1-inch wedges",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Bell Pepper",
+        "unit": null,
+        "notes": "or more red or green",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "Tbsp",
+        "notes": "melted, divided",
+        "amount": "4-6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Sea Salt",
+        "unit": null,
+        "notes": "and freshly ground black pepper",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bratwurst",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Loaves French Bread",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sauerkraut",
+        "unit": "C",
+        "notes": "drained",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard",
+        "unit": null,
+        "notes": "favorite (I like horseradish-flavored) in a squeeze bottle",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hickory Wood Chips",
+        "unit": "C",
+        "notes": "optional, soaked in water for 1 hour and drained",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "75bd5b01fce8bcf43ac85e7adf360d05df3c0ea8693afad9c6f4022229f79db4",
+    "lineage_hash": "cd083dcf56abd40dfc6990ef18359742d79747caae4feef67bab2228bdcc6533"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2007/10/05/beer-brotherhood-and-brats/",
+    "fetchedAt": "2026-08-02T01:03:31.475Z"
+  },
+  "rawSource": "https://barbecuebible.com/2007/10/05/beer-brotherhood-and-brats/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

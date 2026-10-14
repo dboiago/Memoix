@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Aloo Mirch Masala Sabji",
+    "time": "25-30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add ginger, garlic cloves, green chili and grind into a coarse paste.",
+      "Keep aside for further use.",
+      "In a bowl, add curd, turmeric powder, degi red chili powder, coriander powder, asafoetida and mix well.",
+      "Keep aside for further use.",
+      "In a heavy bottom pan or kadai, add oil. Once it's hot, add cumin seeds, fenugreek seeds, onion seeds and let it splutter.",
+      "Add ginger garlic paste and sautÃ© for a minute.",
+      "Add bhavnagri chillies, salt to taste and sear it well for 2-3 minutes.",
+      "Add tomato and sautÃ©. Add some water and let it cook well.",
+      "Add prepared curd mixture and sautÃ© it well. Add potatoes and mix.",
+      "Sprinkle some water, cover it with a lid and cook it for 6-7 minutes.",
+      "Finish it with coriander leaves and ghee.",
+      "Transfer it to a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & slice",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chili",
+        "unit": null,
+        "notes": "broken into half",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Onion Seeds",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Bhavnagri Mirchi",
+        "unit": null,
+        "notes": "slit into half",
+        "amount": "6-7",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": "large",
+        "notes": "dice",
+        "amount": "1",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Curd Mixture",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "boiled, peeled & cut into ¼",
+        "amount": "3-4",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": "for finishing",
+        "amount": "½",
+        "section": "For Aloo Mirch Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "⅓",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Curd Mixture",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d92ab393de0006b65b4000f8844ba9720ebe29357b83a8a2b01ddcdf86dc31de",
+    "lineage_hash": "be28f96a490ea5806ea285a784a6cb241fc21e7fdb0e051c748e9c2e35d6898c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/aloo-mirch-masala-sabji/",
+    "fetchedAt": "2026-08-02T11:52:12.989Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/aloo-mirch-masala-sabji/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

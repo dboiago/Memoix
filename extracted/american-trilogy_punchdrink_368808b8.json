@@ -1,0 +1,72 @@
+{
+  "recipe": {
+    "name": "American Trilogy",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Long, Curly Orange Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a rocks glass, add sugar cube and saturate with orange bitters.",
+      "Gently muddle to make a granulated paste.",
+      "Add whiskey and ice (preferably an oversized cube).",
+      "Garnish with a long, curly orange peel."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Applejack",
+        "unit": "oz",
+        "notes": "bonded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar Cube",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "204d86976012291e9ab74ef7383c804230d09614fe7507c6c6d5dbb0bc9d9e72",
+    "lineage_hash": "10c3ffe225717ccc2fc4b2a5006323f91257c7a084b536cce6229268a33bf0a8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/american-trilogy/",
+    "fetchedAt": "2026-08-03T04:51:42.389Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/american-trilogy/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

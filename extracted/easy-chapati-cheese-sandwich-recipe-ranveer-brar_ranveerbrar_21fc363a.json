@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chapati Cheese Sandwich (चपाती पनीर सैंडविच)",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Take a chapati, apply tomato ketchup and sprinkle cheese.",
+      "Place onion, capsicum, corn, potato over the cheese.",
+      "Sprinkle Italian herbs, salt and grate some more cheese on top.",
+      "Cover this carefully with another Repeat with the other chapatis as well.",
+      "Lightly grease a tava with butter and grill the chapati sandwiches till nice and crisp from both the sides.",
+      "Serve hot with tomato ketchup."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chapati",
+        "unit": "small",
+        "notes": null,
+        "amount": "4",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Pizza Cheese / Processed Cheese",
+        "unit": null,
+        "notes": "grated",
+        "amount": "1",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Capsicum",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Boiled Corn Kernels",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Potato",
+        "unit": "medium",
+        "notes": "boiled & cubed",
+        "amount": "1",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Italian Herbs",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For the Sandwich",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": null,
+        "notes": "to serve",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc6a02630780cda1e124520b75d68cf63c21a06da4bfead9b4ab8dea79ed2a11",
+    "lineage_hash": "ea038cfeb49f46f4c59b9375e43603c176c5fe08facd6b614425ff898d270f45"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chapati-cheese-sandwich/",
+    "fetchedAt": "2026-08-02T11:02:20.433Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chapati-cheese-sandwich/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

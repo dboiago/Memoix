@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "DIY Pineapple-Coconut Rum",
+    "time": "24 hr",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small skillet over medium heat, toast the coconut until it’s light brown, stirring to ensure an even toast. (Alternatively, toast the coconut on a foil-lined tray in a toaster oven.)",
+      "In a jar, combine the rum and the warm, toasted coconut. Shake and let sit overnight. Peel and core the pineapple and chop it into 1/2-inch cubes. Add the cubes to the jar with the rum mixture until almost completely full; save the remaining pineapple for another use. Gently muddle the pineapple into the mixture, then secure the lid and shake to combine. Let the mixture sit overnight, shaking occasionally. Strain the mixture into a clean container through a funnel lined with a double-layer of cheesecloth. Cap and use within 1 month."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Coconut",
+        "unit": "C",
+        "notes": "dried, shredded",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": null,
+        "notes": "whole, fresh, ripe; peeled, cored, chopped into 1/2-inch cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "79cd01edc163d7a9386585766d1b5dda5c014f6a1a3a448bce1e1e8c8de1bce7",
+    "lineage_hash": "5612131318b4c25c891b4a01efb8f2205e5c2b94131ca1e47685dece03d2c12f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/diy-pineapple-coconut-rum/",
+    "fetchedAt": "2026-08-03T20:47:11.371Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/diy-pineapple-coconut-rum/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

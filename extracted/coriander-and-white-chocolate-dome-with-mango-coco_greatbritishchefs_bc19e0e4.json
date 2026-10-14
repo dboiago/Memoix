@@ -1,0 +1,405 @@
+{
+  "recipe": {
+    "name": "Coriander and White Chocolate Dome with Mango, Coconut and Lime",
+    "time": "5 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the mango sorbet. Bring the water and sugar to the boil, add it to the rest of the ingredients and blend together. Pass through a fine sieve and cool, then transfer into a Pacoject beaker and freeze, or churn in an ice cream machine",
+      "For the lemongrass jelly, bash the lemongrass with the flat side of a knife, making sure to break up the fibres, then finely chop. Bring the lemongrass, water, sugar and citric acid to the boil, then remove from the heat and leave to infuse for 2 hours",
+      "Measure out 220ml of the lemongrass infusion and bring to the boil. Whisk in the vege gel and return to the boil, whisking constantly. Pour the mixture into a 15x6cm lightly oiled container and transfer to the fridge. Allow the jelly to set, then portion into 1cm cubes",
+      "Next, make the coriander and white chocolate dome. Place the dome moulds into the freezer to chill and preheat the oven to 160°C/gas mark 3",
+      "Place the cocoa butter in a Thermomix, set the temperature 50°C and blend for 10 minutes. Melt the white chocolate separately, ensuring it doesn't exceed 40°C. Toast the coriander seeds on a tray in the oven for 2 minutes. Once the cocoa butter has melted, turn off the heat on the Thermomix. Add the coriander leaves and seeds and blend for 1 minute, then pass the mixture through a fine sieve",
+      "Pour the mixture into a centrifuge beaker. Spin for 20 minutes at 10°C (the mix will separate but won't split). Pour the coriander cocoa butter into the white chocolate and stir to combine. The temperature of the mixture needs to be around 26°C to be able to line the moulds. Fill the moulds one at a time with the chocolate, then tip out the excess to leave a very thin even coating of chocolate. Scrape across the top of the mould to clean it then place the domes into the freezer",
+      "For the puffed jasmine rice, preheat a dehydrator to the highest setting possible and a deep fat fryer to 210°C",
+      "Place the rice in a saucepan and cover with water. Bring to a simmer and cook until the rice is overdone. Drain and spread the rice onto dehydrator trays. Dry, moving the rice around every 10 minutes. The rice needs to have a little moisture left so it's able to puff when fried",
+      "Deep fry the rice until puffed up and white, then dry on kitchen paper and lightly season with salt. Set aside",
+      "For the mango delice, bring the dextrose and water to the boil in a pan to form a stock syrup then chill. Place the egg white powder into an electric mixer and mix it with 60g of the stock syrup to make the meringue. Turn the mixer onto full power and, when the meringue is whipped and light, add another 80g of stock syrup in two batches, allowing the meringue to expand each time",
+      "Dissolve the gelatine in the remaining 40g of syrup and blend with the purée, Sosa Gelespessa, salt and lime juice. Add this mixture into the meringue on half speed until fully incorporated. Line a mould three times with cling film and fill so the mix comes to a depth of 2cm. Flatten the top using a stepped palette knife and place into the fridge. When the delice is set, cut into 3cm discs",
+      "For the coconut foam, place all the ingredients into a blender and blend until smooth. Pass the mixture through a fine sieve, place into an espuma gun and charge once. Shake well then store in the fridge",
+      "For the lime caramel, place the sugar in a heavy-based saucepan set over a medium heat and cook it until it forms a medium caramel. Carefully add in the butter, lime juice and zest and reduce the caramel to a light consistency. Allow to cool slightly then transfer into a squeezy bottle",
+      "For the lime gel, place all the ingredients into a pan and bring to the boil, whisking constantly. Pour into a container and allow to set. When set, blend in a blender and pass through a fine sieve. Store in a squeezy bottle",
+      "For the lime tuiles zest the limes, making sure to avoid the pith, into a pan of water. Bring to the boil, then refresh in cold water. Repeat this process twice more, then place in a dehydrator for 2 hours",
+      "Place the fondant and glucose into a pan. Stir constantly until it reaches 160°C, then add the dried lime zest and pour onto a silicone baking mat. Allow to cool at room temperature then break into small pieces. Blend the pieces to a fine powder",
+      "Place an 8cm ring onto a silicone baking mat and shake the powder into it. Remove the stencil to reveal a disc of powder. Bake until the mix melts together to form a perfectly round tuile. If it bakes for too long, the mixture will start to bubble and disrupt the shape. Allow the tuile to cool on the mat then carefully peel it off. Store in an airtight container with a lid",
+      "Prepare the lime cells just before serving. Segment the limes and place them into a metal bowl with liquid nitrogen. Allow the nitrogen to evaporate then smash up the lime into single cells",
+      "To serve, place a 5cm ring mould onto the plate and place cubes of mango and lemongrass jelly around the inside of the ring. Place a disc of delice into the centre of the ring. Lightly brush the tuiles with lime gel then cover in puffed rice, sprinkle with the cubes of crystallised ginger and the lime cells, grate over some peanut and finish with a little lime zest. Place a large blob of lime caramel in the bottom of a coriander and white chocolate dome, add a few lime cells then fill it three-quarters of the way up with coconut foam. Using a small ice cream baller, place a ball of mango sorbet on the top of the delice. Place the filled dome over the top, and add a dot of lime gel on top, then balance on the dressed tuile"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ascorbic Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sosa Procrema",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sticks of Lemongrass",
+        "unit": null,
+        "notes": "1",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vege Gel",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "220",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Valrhona White Chocolate",
+        "unit": "g",
+        "notes": "35%",
+        "amount": "282",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dextrose",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheets of Bronze Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sosa Gelespessa",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malibu",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "110",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "33",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vege Gel",
+        "unit": "g",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fondant",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": "zested",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Limes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Nitrogen",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": null,
+        "notes": "roasted at 160°C for 4 minutes",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crystallised Stem Ginger",
+        "unit": "g",
+        "notes": "diced into 3mm cubes",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "peeled and diced into 1cm cubes",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aa98c350f95d001e817983cf8e5bbdc8ebd4b68f9794318a84c497c863611584",
+    "lineage_hash": "cd1d8b422bdf66cd9268a7319e44d5c0afcbec1bea66f8cf19c2ac2e7347d3f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coriander-white-chocolate-dome-coconut-espuma-recipe",
+    "fetchedAt": "2026-08-03T08:48:08.749Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coriander-white-chocolate-dome-coconut-espuma-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

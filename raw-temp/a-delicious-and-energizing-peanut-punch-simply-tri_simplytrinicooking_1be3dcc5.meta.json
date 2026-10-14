@@ -1,0 +1,41 @@
+{
+  "url": "https://www.simplytrinicooking.com/peanut-punch/",
+  "slug": "a-delicious-and-energizing-peanut-punch-simply-tri_simplytrinicooking_1be3dcc5",
+  "title": "A Delicious and Energizing Peanut Punch | Simply Trini Cooking",
+  "byline": "Author Felix (Simply Trini Cooking)",
+  "fetchedAt": "2026-09-26T00:17:41.863Z",
+  "ldName": "Peanut Punch",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "International",
+  "ldCategory": "Drink",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 cups milk",
+    "7 tbsp. peanut butter",
+    "1 tbsp. sugar",
+    "3 tbsp. granola (optional)",
+    "1 tsp. cinnamon",
+    "½ tbsp glucose (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Pour the milk into a blender. Add the peanut butter and sugar (if you're using the glucose add it with the sugar). Blend until smooth.",
+    "Add cinnamon and granola. Blend well. Stir before serving."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "2 cups milk",
+    "7 tbsp. peanut butter",
+    "1 tbsp. sugar",
+    "3 tbsp. granola optional",
+    "1 tsp. cinnamon",
+    "½ tbsp glucose optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

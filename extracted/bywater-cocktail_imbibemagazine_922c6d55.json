@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Bywater Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [
+      "Orange Twist",
+      "Cherry"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice, then strain into a chilled glass. Twist a piece of orange peel over the drink to express its oils and discard, then garnish with a cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Aged Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Averna",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chartreuse",
+        "unit": "oz",
+        "notes": "or another green Alpine liqueur",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud’s Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dashes",
+        "notes": "Hannah uses Regan’s",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f759f5047dd991812e8fd6add30afe7ddd36cf77bbba2afbd644c05ed4bc38ae",
+    "lineage_hash": "c10cb1feb587b8a046b6ece9f3ebe85fdbe4ffd0b3f4b2f766fdf34e67f3316f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/bywater-cocktail/",
+    "fetchedAt": "2026-08-04T02:07:34.403Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/bywater-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

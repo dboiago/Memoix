@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Chocolate Cupcakes",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "218",
+      "carbohydrateContent": "29",
+      "fatContent": "11",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a 12 muffin pan with cupcake liners.",
+      "Sift together 1 ounce Dutch process cocoa powder and ¼ teaspoon baking soda in a small heat-proof bowl. Whisk 2 ounces boiling water into the cocoa, it will foam up a bit from the baking soda. Set aside to cool while preparing the other ingredients.",
+      "Sift 4 ½ ounces cake flour with ½ teaspoon baking powder and ¼ teaspoon table salt, set aside.",
+      "Combine 4 ounces vegetable oil, 2 large eggs, 4 ounces buttermilk, 2 teaspoons vanilla extract and 8 ounces granulated sugar in a mixer bowl. Mix on medium speed to combine the ingredients, continue mixing for 2-3 minutes to emulsify the ingredients.",
+      "With the mixer running on low, add the flour and then add the cocoa mixture. Mix until completely incorporated.",
+      "Use a scoop to portion the batter evenly between the cupcakes. Bake until the top springs back on a cupcake in the middle of the pan when lightly pressed, about 10 minutes.",
+      "Cool completely before icing. Sprinkle with jimmies for a burst of color."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "oz",
+        "notes": "¼ cup, see note",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 cups, see note",
+        "amount": "4½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 cups",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d75d3ad23f654992e1a5f604571b9274df59cc1e7375aba1c1e1b428be31f25b",
+    "lineage_hash": "665f6312efe07e03e3a2bc7ceb5e341add473dace221bad03e8394d0d2f38ab2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2025/10/08/chocolate-cupcakes/",
+    "fetchedAt": "2026-08-02T07:41:34.820Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2025/10/08/chocolate-cupcakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

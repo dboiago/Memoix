@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Chocolate Surprise Cupcake",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the cupcakes, preheat the oven to 180Â°C and line a muffin tin with paper liners.",
+      "In a large bowl, whisk together the refined flour, baking powder, salt, cocoa powder and granulated sugar.",
+      "In a small bowl, stir together the instant coffee and Â½ cup of boiling water, then add it to the flour mixture along with the olive oil, milk, vanilla & egg.",
+      "Stir well to combine , fold in shredded basil leaves.",
+      "Divide the prepared batter into the lined muffin tin equally. Do not fill the liners till top.",
+      "Bake the muffins for 15-20 minutes on 180Â°C",
+      "Once done, insert a toothpick in the muffin and if it comes out cleans, means the muffin is perfectly cooked.",
+      "Set them aside to cool down on a wire rack.",
+      "Meanwhile, prepare the frosting.",
+      "Add butter, marmalade, milk, coconut milk, cardamom powder and half the sugar in a bowl and beat with an electric whisk on medium speed till it begins to look creamy and fluffy.",
+      "Fold in the orange rind, leave some to sprinkle as garnish.",
+      "Spread the prepared frosting on the prepared muffins, as required. Garnish by sprinkling orange rind.",
+      "Serve at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Mineral Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Granulated",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "Tbsp",
+        "notes": "shredded",
+        "amount": "1",
+        "section": "For Cupcakes",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Marmalade",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Powdered",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Rind",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "0",
+        "section": "Frosting",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b46f14723b4ddad312f6b55a577869075a290f3fd2876f30e7607d256348dec5",
+    "lineage_hash": "942b6c321acff85e50c37520581e9ab3c5b092c83ed8942a230c7a3e720ad63b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chocolate-surprise-cupcake/",
+    "fetchedAt": "2026-08-02T19:52:46.851Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chocolate-surprise-cupcake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

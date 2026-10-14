@@ -1,0 +1,122 @@
+{
+  "recipe": {
+    "name": "Cacao Nib Cookie",
+    "time": "1 hr",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 170°C/gas mark 3 and grease 2 baking trayss",
+      "Melt the butter in a wok (yes I know this sounds rather odd but I use the wok as a mixing bowl too so it saves on a bit of washing up)",
+      "Meanwhile, measure out all of the dry ingredients and set aside",
+      "When the butter had melted, add the golden syrup and stir it in well.  Add the boiling water, then quickly add the bicarbonate of soda and whisk in. It will start to foam and fizz up – this is good. Quickly add the dry ingredients and mix it all together",
+      "Take a handful of the mixture, roll into a ball and place the onto one of the greased baking trays. You need to leave a few centimetres of space between the balls so about 6 to a tray should be enough",
+      "Bake for about 20–25 minutes until the balls have flattened into a disc and are still a little soft",
+      "If you prefer the more traditional flapjack square, simply grease and line an 8 inch baking tin and press the mixture firmly in. Bake for around the same time. Score it into pieces when it comes out of the oven and then when it’s cooled you’ll have nine flapjack bars",
+      "Remove the cookies from the oven and leave to cool and firm up. You can keep these in an airtight container for a couple of weeks. Or freeze them. I find that taking a frozen few out in the morning before I go to work means they don’t mush up in my bag on the commute and are defrosted in time for the 10am nibble"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": "or treacle",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5c13785de193ac3a8614cff5bbd58398e3b5a4f647aad8fe258fc8d2378c8cd6",
+    "lineage_hash": "0da17b450e9d3a8743b5f5850c7caf77d03b2e410d562bd2707dc37573125cc0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cacao-nib-cookie-recipe",
+    "fetchedAt": "2026-08-03T12:01:27.441Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cacao-nib-cookie-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

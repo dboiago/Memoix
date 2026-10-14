@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Cold Sesame Noodles",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "987",
+      "carbohydrateContent": "115",
+      "fatContent": "49",
+      "proteinContent": "24"
+    },
+    "directions": [
+      "Tune the sesame paste texture: slightly add light soy sauce, sesame oil, salt and cold water in sesame paste. Stir to combine well. The sesame paste should be running but not thin.",
+      "Assemble the noodles by each serving (we can make 3 this time)"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Noodles for 3 Servings",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "5",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Black Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sesame sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Paste Texture",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Sichuan Peppercorn",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Zha-cai",
+        "unit": "Tbsp",
+        "notes": "alt: you can use crushed peanuts, chopped, for the crispy taste",
+        "amount": "1",
+        "section": "each serving",
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Chili Oil for Drizzling",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "each serving",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e2467f582bcc97d2fff4df3d9147c737cf1b77b9cb8093917fc49dcea1b38a21",
+    "lineage_hash": "666e18ccad5717e195bc14223523a29cf9017f13d9ca0bb34e20678f03cfe95a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/sesame-cold-noodles/",
+    "fetchedAt": "2026-08-01T19:50:39.093Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/sesame-cold-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

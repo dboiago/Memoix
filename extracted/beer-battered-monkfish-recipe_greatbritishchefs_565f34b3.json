@@ -1,0 +1,170 @@
+{
+  "recipe": {
+    "name": "Beer-Battered Monkfish",
+    "time": "1 hr 15 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the wild garlic oil, wash and blanch the wild garlic for 35 seconds in heavily salted water. Strain and refresh in ice cold water before straining agin and patting dry",
+      "Roughly chop the wild garlic and place into a blender with the rapeseed oil. Start on a low speed and slowly increase to a high speed for 30 seconds to 1 minute untill the oil turns a vibrant green",
+      "Pass the oil through a fine strainer and then coffee filter or muslin before storing in the fridge until required",
+      "For the mayonnaise, whisk together the egg yolks with the mustard and vinegar. While still whisking, pour in the wild garlic oil in a steady stream to ensure that the oil emulsifies into one with the egg mixture to form a mayonnaise. Reserve a small amount of the oil to garnish the final dish",
+      "Once all the oil has been added, season to taste with salt and pepper and store in the fridge until required",
+      "To prepare the beer batter, whisk together the flour, yeast, salt, sugar and beer. Once the mixture is smooth, leave in a warm place for 10 - 15 minutes to activate the yeast. Move to a cooler place until ready for frying",
+      "Dice the monkish into 2cm chunks, lightly coat in the extra flour and then dip in the batter to cover. Deep fry at 190°C until golden brown, for around 2-3 minutes",
+      "Place a generous amount of the wild garlic mayonnaise in the bottom of each bowl, followed by the crispy hot monkfish, rocket, watercress and drizzle of wild garlic oil"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Monkfish Tail",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "230",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lager Beer",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wild Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "English Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Watercress",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Rocket",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3583ee5a3ab151bfb4f1cb1d22d5ea76b59a251113594e155ff72866efee21c0",
+    "lineage_hash": "59b18bd72f4c3e01d21adc32896e5eaa75358f090cda9f492d36f5e225dc324a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beer-battered-monkfish-recipe",
+    "fetchedAt": "2026-08-03T21:27:22.917Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beer-battered-monkfish-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

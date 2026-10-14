@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Chinese Brown Sauce",
+    "time": null,
+    "course": "mains",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix cornstarch with water first and make sure there is no pump inside.",
+      "Add oil and fry minced garlic in a small pot over a slow fire for about 10 seconds until slightly browned.",
+      "Add the seasonings, and let it combine for a while.",
+      "Stir the starch water and then pour it in. Let it simmer for about 1 minute or until the sauce slightly thickens. I found that it would be much thicker once it cooled down.",
+      "Mix in sesame oil.  If you want to keep it for later, store in air-tight glass jars."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Minced",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7c6b23e5785b7e90ca15b8ce36d219b00e5eb69dcf8ef26b20492139ae6cf066",
+    "lineage_hash": "d7b762d19becca4ebb376642c9da52f8b8a43ecb01d871f2b73de19810952462"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-brown-sauce/",
+    "fetchedAt": "2026-08-02T09:44:04.513Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-brown-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

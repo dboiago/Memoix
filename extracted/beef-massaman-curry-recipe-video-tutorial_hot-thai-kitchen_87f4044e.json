@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Beef Massaman Curry (แกงมัสมั่นเนื้อ)",
+    "time": "3 hr 20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the beef off the bones and, if necessary, cut them down into large cubes.",
+      "In a heavy bottomed pot, add just enough oil to coat the bottom and heat over medium high heat until very hot. Without crowding the pot, sear the beef in the oil until well browned on 2 sides (or you can sear it on 3-4 sides if you have the patience). Do this in as many batches as necessary.",
+      "Once all the beef is seared, add it all back into the pot, along with the bones you removed.",
+      "Add 1/2 cup of coconut milk and just enough water to keep everything submerged. Add 1 Tbsp of the curry paste, 1 Tbsp fish sauce, and simmer gently for 2 - 2 1/2 hours or until the beef is fork tender. Set it aside.",
+      "In another heavy bottomed pot (this will be your curry pot), add about 3/4 cup of the remaining coconut milk and bring to a boil. Let it boil until reduced by about half, and the coconut milk looks significantly thicker.",
+      "Add the remaining curry paste and saute it in the coconut milk over medium-low heat, stirring constantly, until the coconut oil separates from the paste (it will start to sizzle around the edges of the paste). If the paste sticks to the pot before it is ready, you can deglaze with a splash of the remaining coconut milk as needed.",
+      "Once the paste is ready, add the remaining coconut milk and stir to dissolve the paste. Add 1 Tbsp of the fish sauce, palm sugar and tamarind.",
+      "Using tongs, remove the beef from the braising liquid and add it to the curry pot, saving the cooking liquid. (Do not add the bones back in unless there's still meat on it that you want to eat.) Then add the onion, potato and peanuts to the curry.",
+      "Skim off the fat and scum from the beef cooking liquid, then add just enough of the liquid to the curry to keep everything submerged.",
+      "Bring the curry to a simmer the let it cook gently for another 10-15 minutes until the sweet potatoes are fork tender.",
+      "TASTE and adjust final seasoning with more fish sauce, sugar or tamarind as needed. This is very important because everyone will end up with a different amount of salt at this point depending on the saltiness of your curry paste and also how much cooking liquid you end up adding. So, TASTE.",
+      "Serve with jasmine rice. Enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef Short Ribs",
+        "unit": "lb",
+        "notes": "see note, bone-in",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Recipe of Massaman Curry Paste",
+        "unit": null,
+        "notes": "alt: 5-6 Tbsp store-bought paste",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Palm Sugar",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Juice",
+        "unit": "Tbsp",
+        "notes": "a.k.a. tamarind concentrate or tamarind paste",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White-flesh Sweet Potato",
+        "unit": "large",
+        "notes": "the orange flesh ones are not as good in this dish, cut into big chunks",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Large Onion",
+        "unit": null,
+        "notes": "cut into 1/2-inch strips",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice for Serving",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "07b712aacd099de665294bfd4412150f32f797d2f69989a99bf795aaabf1081c",
+    "lineage_hash": "0103b8fea4a012f6b12bb3a4977c4a6f12b7616a5b28a247d1cf185a977eeb59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/beef-massaman-curry/",
+    "fetchedAt": "2026-08-02T02:09:50.363Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/beef-massaman-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

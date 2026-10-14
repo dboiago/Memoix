@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Cinnamon Streusel Coffee Cake",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F (180°C). Grease an 8-inch square pan and line the bottom and sides with parchment paper.",
+      "For the streusel, stir the flour, brown sugar, cinnamon and salt in a small bowl with a fork to combine.",
+      "Add the melted butter and stir until the mixture is evenly moistened. For the cake, beat the butter and sugar until it is light and fluffy. Add the egg, then the egg yolk, beat well after each addition. Stir in the sour cream and vanilla. In a separate bowl, sift the flour, baking powder, baking soda and salt. Add the flour mixture to the butter mixture and stir just until blended.",
+      "Spread the batter in the pan and top with the streusel. Bake the cake for about 30 minutes, until a tester inserted into the centre of the cake comes out clean. Allow the cake to cool completely in the pan, and then cut into squares as needed to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": "packed",
+        "amount": "½",
+        "section": "Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": "Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "melted",
+        "amount": "¼",
+        "section": "Streusel Topping",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "room temperature",
+        "amount": "½",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coffee Cake",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coffee Cake",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c6c8d3a176a39006d2057b64d98a06a6f3a2d289bda4fef93104b717699a3fec",
+    "lineage_hash": "0a22e439c2aad35585dac8cedcbf1dadc2afeadb5245c424313f3ec9251b69bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/cinnamon-streusel-coffee-cake/",
+    "fetchedAt": "2026-08-01T19:04:15.566Z"
+  },
+  "rawSource": "https://annaolson.ca/project/cinnamon-streusel-coffee-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

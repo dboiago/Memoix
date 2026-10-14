@@ -1,0 +1,152 @@
+{
+  "recipe": {
+    "name": "Avial (Kerala Mix Vegetable Curry)",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut all the vegetables and keep aside.",
+      "Heat oil in a kadhai and crackle some mustard seeds.",
+      "Now add onion, curry leaves, garlic, ginger and green chilies. SautÃ© until it turn light pink in color.",
+      "Now add vegetable and stir for 2-3 minutes. Add salt, turmeric, ground coriander and fresh coconut, sautÃ© for a minute.",
+      "Now add coconut milk and water. Cover and cook until vegetables are cooked.",
+      "Serve hot with rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Oil/ Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp",
+        "unit": null,
+        "notes": "chopped garlic",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tsp",
+        "unit": null,
+        "notes": "chopped ginger",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped green chilies",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gms",
+        "unit": null,
+        "notes": "cut into cubes (drumsticks, brinjal, pumpkin, raw banana, cucumber) mixed vegetable",
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cup",
+        "unit": null,
+        "notes": "grated fresh coconut",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c093bca2314350f985cb3a93d601391f840b79cfc12d108b90015e272a51ff25",
+    "lineage_hash": "34e8bf9f73e5d043bcd5d97975187fcc477df9b99cbe92c33335d7c357ba562c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/avial-kerala-mix-vegetable-curry/",
+    "fetchedAt": "2026-08-02T02:23:14.535Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/avial-kerala-mix-vegetable-curry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

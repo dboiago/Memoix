@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Chinese Tomato Egg Stir Fry",
+    "time": "15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "354",
+      "carbohydrateContent": "4",
+      "fatContent": "33",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "In a small bowl, crack and add a small pinch of salt and pepper. Whisk until there is a small layer of fine bubbles and the mixture becomes slightly white.",
+      "Cut tomato in halves and remove the core and then further cut into small wedges.",
+      "Heat up oil in wok until really hot, stir egg mixture in. Wait for seconds until the egg liquid firms. Turn off the fire immediately and then break the egg into small pieces. Transfer the egg out and leave the oil in.",
+      "Add tomato wedges in, fry until juicy. Return egg pieces, add salt, sugar and light soy sauce. allion. Do a quick stir fry to combine everything well. Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Middle Size Tomatoes",
+        "unit": null,
+        "notes": "cut into small wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Small Pinch of Salt and Pepper",
+        "unit": null,
+        "notes": "for egg liquid",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "cut into inch pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "124e760dc624077a5ceb972110fb396c269325e8048d1b03d28fa57a79eaccde",
+    "lineage_hash": "48fdf0ca5249811ac6482f3741ebd5db389952ae9bc6c44e60e254fe2c32bf7a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-tomato-and-egg-stir-fry/",
+    "fetchedAt": "2026-08-02T02:05:49.172Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-tomato-and-egg-stir-fry/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

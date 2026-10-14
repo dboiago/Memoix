@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Clementine Jelly",
+    "time": "1 hr 10 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix the caster sugar with 10g of pectin and stir it into the purée. Add the granulated sugar and glucose.  Add the remaining pectin and boil for 4 minutes",
+      "Remove from the heat, add the citric acid, stir until dissolved then pour into a medium sized tin lined with silicone paper",
+      "Cool and leave to set. Do not refrigerate",
+      "Make the spiced sugar in a spice blender; blend the spices until very fine. Mix with the granulated sugar",
+      "To finish, once the jelly has set, cut it into cubes toss them in the spiced sugar"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Clementine",
+        "unit": "g",
+        "notes": "puréed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "ml",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "550",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin Jaune",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1fec23586ca6dbc158b4e6931d6a18267aa7695192e3a689522a04f4ffac3067",
+    "lineage_hash": "f317c60da63cb8b01ec44bf2cd5626c5b7a7866ba38d691f35f51d9d236457a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/clementine-jelly-recipe",
+    "fetchedAt": "2026-08-03T11:46:16.958Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/clementine-jelly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

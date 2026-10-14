@@ -1,0 +1,176 @@
+{
+  "recipe": {
+    "name": "Easter Sweet Spiced Fruit Bread",
+    "time": "1 hr",
+    "course": "breads",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, soak the fruit and mixed peel in the hot tea for 1 hour",
+      "Meanwhile, place the butter and milk in a small saucepan and heat until the butter melts. Remove from the heat and set aside to cool",
+      "In the bowl of an electric mixer, or a large mixing bowl if kneading by hand, mix the flours, caster sugar and spices. Place the salt on one side of the bowl and the yeast on the other side",
+      "When the butter/milk mixture has cooled to body temperature, beat the egg in a small bowl. Reserve 1 tsp of the beaten egg, and add the rest to the milk and butter",
+      "Add the egg and butter mixture to the flour and mix with a wooden spoon to form a sticky dough. Knead for 10 minutes either by hand or with a food mixer fitted with a dough hook",
+      "The dough will be quite wet, so keep persevering until it becomes manageable. Return the dough to a bowl, cover with a clean tea towel and leave to rise for 1 hour, or until doubled in size",
+      "Drain the soaked fruit (discard the tea). Add the fruit to the dough and knead well until evenly distributed. If doing this by hand, it helps to scatter the fruit over the flattened dough and fold the dough up around it like a parcel, then keep kneading to spread the fruit throughout the dough",
+      "Divide the dough into 3 equal pieces. Roll each piece into a long cylinder, about 30–35cm long and 5cm wide. Put each strand next to each other vertically in front of you, leaving a small gap between each",
+      "Squash the top of the strands together, then plait them. To do this, cross the left strand over the middle, then the right strand over the middle and repeat until all the dough is plaited",
+      "Squash the end nearest you together, then tuck both squashed ends slightly under the loaf to neaten it up",
+      "Carefully transfer the loaf to a baking sheet lined with non-stick baking paper and leave to rise again for about 1 hour, or until doubled in size",
+      "Preheat the oven 200°C/gas mark 6. Place a baking dish filled with water in the bottom of the oven",
+      "Add 1 tsp of milk to the reserved beaten egg and mix to combine. Brush this all over the risen loaf (be gentle – you don’t want to knock the air out). Scatter the loaf with sesame seeds and place in the preheated oven for 10 minutes",
+      "Lower the temperature to 180°C/gas mark 4 and bake for a further 20–25 minutes, until the bread is shiny and golden brown. Remove to a wire rack and leave to cool. Slice and serve with butter"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tea",
+        "unit": "ml",
+        "notes": "(I used Earl Grey), hot",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sultanas",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Semi-skimmed Milk",
+        "unit": "ml",
+        "notes": "plus 1 tsp extra for glazing",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "275",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b3615824d564da777be1e1b09c09cb5b76836d1bb74111edee0e4944c24404af",
+    "lineage_hash": "bf30c517e5b7ad03dcbd1852e79e06a981142fb7674b32b7068e1a01f9004bf6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/easter-spiced-fruit-bread-recipe",
+    "fetchedAt": "2026-08-03T13:21:51.368Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/easter-spiced-fruit-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

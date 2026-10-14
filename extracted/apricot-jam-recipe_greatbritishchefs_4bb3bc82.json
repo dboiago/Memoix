@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Apricot Jam",
+    "time": "1 hr",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Layer the apricots and sugar in a large preserving pan, add the juice of the lemon and leave overnight",
+      "When you are ready to make the jam, place two or three saucers into the freezer beforehand - to check the set",
+      "Place the pan over a low to medium heat, and allow the sugar to dissolve slowly. As soon as the sugar has dissolved, turn the heat up and bring the jam to a rolling boil. Allow to boil for about 10-15 minutes, stirring it every now and then, until a set has been reached",
+      "After about 5 minutes, check for a set. Take one of the cold saucers out of the freezer, take the jam off the heat and place a teaspoon of the jam on the saucer. Allow it to cool for a few seconds then push it with your finger: if a crinkly skin has formed on the jam, then it has set. If it hasn't set, boil it again for another 5 minutes and do another test",
+      "When you have a set, remove the preserve from the heat and allow it to settle for 5 minutes. Stir the jam and spoon off any scum before pouring it into the warmed sterilised jars. Seal while still warm and label the jars when cold"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apricot",
+        "unit": "kg",
+        "notes": "fresh, halved and pitted",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Cane Sugar",
+        "unit": "kg",
+        "notes": "granulated",
+        "amount": "1.2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3546ee26d60bfdd33542dc5841b5a7e254bc438280e0f081a16b1bced41c391f",
+    "lineage_hash": "69cf708e995bf0ec1186ad980feddc508083de3364bc6b7323549ac84dfed301"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/apricot-jam-recipe",
+    "fetchedAt": "2026-08-03T15:19:00.919Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/apricot-jam-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

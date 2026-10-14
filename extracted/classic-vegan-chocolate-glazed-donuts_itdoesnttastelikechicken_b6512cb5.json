@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Classic Vegan Chocolate Glazed Donuts",
+    "time": "20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "238",
+      "carbohydrateContent": "49",
+      "fatContent": "3",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Preheat your oven to 350F (180C). Lightly grease a donut baking pan.",
+      "In a large bowl, whisk together all the dry ingredients.",
+      "In a medium bowl mix together all the wet ingredients. Now add the wet ingredients into the dry ingredients and stir until _just_ combined. Do not over mix, lumps are totally cool.",
+      "Scoop the batter into a large ziplock bag and cut the corner off of the bag. Alternatively, use a pastry bag.  Pipe the batter into the donut pan, dividing it evenly among the 6 donuts wells.",
+      "Bake for 10 to 14 minutes until the donuts have fluffed up and bottoms are lightly browned. Take out of the oven and cool for 5 minutes then flip the donuts over so the bottoms can steam off a bit and don't hold too much moisture.",
+      "Add all of the ingredients to a bowl and mix well. If the glaze is a bit too thick at 1 teaspoon non-dairy milk at a time to reach desired consistency.",
+      "Dip the donuts into the glaze half way up and carefully lift the donut back out again. The frosting will set as it rests. If you have leftover glaze, use it to drizzle over vegan ice cream, or dip fruit into it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "dry ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or almond",
+        "amount": "⅔",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": "alt: apple cider vinegar",
+        "amount": "1",
+        "section": "wet ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "chocolate glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "chocolate glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "Tbsp",
+        "notes": "such as soy or almond",
+        "amount": "2",
+        "section": "chocolate glaze",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "chocolate glaze",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1534620c24de25d4db721f3a651c8b5c55a355b73ecf53c1ddc552fe20109c8f",
+    "lineage_hash": "2a1104e12bb92ac726156a021ddd0754d8f179f4fa7fc6176eb132123031a9e2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/classic-vegan-chocolate-glazed-donuts/",
+    "fetchedAt": "2026-08-01T23:34:32.737Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/classic-vegan-chocolate-glazed-donuts/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

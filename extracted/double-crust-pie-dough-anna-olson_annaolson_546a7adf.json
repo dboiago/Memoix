@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Double Crust Pie Dough",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the flour, sugar and salt. Cut butter into small pieces (you can pull the butter from the fridge 30 minutes before adding) and add to the flour, mixing it in until the dough is a rough, crumbly texture.",
+      "Whisk the egg, water and vinegar or lemon juice and add it all at once, mixing until dough comes together. Shape dough into two logs or discs, wrap them in plastic and chill for at least one hour before rolling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "cut into small pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "directly from the fridge",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Vinegar",
+        "unit": "tsp",
+        "notes": "alt: lemon juice",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7cad1f5ec78c2b1b892c05b61117dda85b6241f6c1ba40a13c2b02406672ce0e",
+    "lineage_hash": "f2279a95732097198ee14014ce8aa99e8002e7bab0542c1daf1497ab71743fe3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/double-crust-pie-dough/",
+    "fetchedAt": "2026-08-01T22:42:32.080Z"
+  },
+  "rawSource": "https://annaolson.ca/project/double-crust-pie-dough/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

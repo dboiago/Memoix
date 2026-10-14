@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Cowboy Tea",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Large Ice Cube",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all of the ingredients with ice. Strain into glass over a large ice cube and garnish.",
+      "Vanilla-infused green ChartreuseAdd 2 to 3 split vanilla beans to a bottle of green Chartreuse and allow to infuse for at least 24 hours or longer, if preferred. Strain out beans and rebottle for use.",
+      "Orange Vanilla BittersRemove the dasher top from a bottle of orange bitters (Kellum uses Scrappy’s) and add a single vanilla bean, then replace the dasher top. Let the vanilla infuse for at least 24 hours before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla-infused Green Chartreuse",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar",
+        "unit": "oz",
+        "notes": "alt: Gran Classico",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Bitters",
+        "unit": "dashes",
+        "notes": "Kellum uses Fee Brothers",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Vanilla Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b29d2f3341a0fbae093333511393776715914e750b6c032253bf87c7f2cffdc",
+    "lineage_hash": "3e431919ee7c4fed0a3688af0e24804d2067172d5b0e24531dcdd6939b0db31a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cowboy-tea-from-fin-and-fino/",
+    "fetchedAt": "2026-08-03T21:08:27.331Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cowboy-tea-from-fin-and-fino/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

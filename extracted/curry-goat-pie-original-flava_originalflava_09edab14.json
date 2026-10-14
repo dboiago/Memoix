@@ -1,0 +1,194 @@
+{
+  "recipe": {
+    "name": "Curry Goat Pie",
+    "time": "2 hr 35 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "JM",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly you’ll need to wash your Goat meat with water, vinegar and lemon and pat dry.",
+      "Season meat with salt,black pepper, dried thyme, garlic powder, curry powder, ground pimento and marinate in fridge for a few hours or overnight for best results.",
+      "In a large pot add 2 tbsp. Of olive oil on a high heat and add onions, garlic, then cook down until di ting transparent. Then add A likkle curry powder with some ginger and bun it up till dark brown. Now add some coconut milk a create a likkle paste",
+      "Now add the goat meat to the pot and cook until browned, then add some water. Add fresh thyme, all purpose seasoning and cook for 1.5 hours until goat is tender. Then add carrots and 1 scotch bonnet and cook on low heat for 30 mins.",
+      "Creamy Coconut potato topping",
+      "Peel 5 large potatoes and cut into quarts, then add to a large pot of boiling water an boil di ting till potatoes are soft and tender. Then drain the water, and add some coconut milk or whole milk. 1 large whisked egg and season with salt, pepper, dried thyme all purpose seasoning and mix potatoes until thick and creamy.",
+      "Now use a medium sized casserole dish and butter butter up di ting, then add the curry goat to the pan then add thick layers of potatoes on top and smooth out",
+      "Cook in a pre heated oven for 35 mins on 180 degrees."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Goat Meat",
+        "unit": "lb",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pimento",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bunch of Fresh Thyme",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Seasoning",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": "cut in quarters",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": "alt: coconut milk",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "whisked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "359958d33267c8c5dbc7aab3230d06bdad48e800243156f79b2cad3cd2a15ab5",
+    "lineage_hash": "f74bd3acad701347fc9788e83a1c2d99deeb1165c5ae78883a8cfb6002077241"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://originalflava.com/meals/curry-goat-pie/",
+    "fetchedAt": "2026-09-30T17:32:25.511Z"
+  },
+  "rawSource": "https://originalflava.com/meals/curry-goat-pie/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,165 @@
+{
+  "recipe": {
+    "name": "Double Chocolate Loaf Cake with Whipped Caramelised White Ganache",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180ºC (160ºC Fan) and lightly grease your loaf pan and line with a strip of parchment paper that overhangs the long sides of the tin, securing in place with metal binder clips.",
+      "Place the butter in a small saucepan and place over low/medium heat and cook until the butter is fully melted. Remove from the heat and set aside for the moment.",
+      "In a large bowl add the sugars and eggs and using an electric mixer whisk together for a minute or two until fully combined. Add the sour cream, and coffee and whisk briefly to combine.",
+      "In a separate bowl whisk together the plain flour, cocoa powder, Doves Farm Organic White Rye Flour, baking powder and salt. As we are using both light brown sugar and cocoa powder it is advisable to sieve this mixture as both of these ingredients have a nasty habit of clumping.",
+      "Add the dry goods to the egg mixture and use a balloon whisk to gently stir the batter together. Pour in the cooled melted butter and fold with the whisk until combined.",
+      "Add the chocolate chips and very briefly mix into the batter. Be careful to only mix as needed, cakes with rye flour can become gummy if mixed for too long.",
+      "Scrape the batter into the prepared loaf pan and bake in the preheated oven for about 60 minutes or until a skewer inserted into the cake comes out clean.",
+      "Remove the pan from the oven and set aside for 20 minutes before carefully unfolding and setting onto a wire rack to cool completely. To ensure the crust of the cake is tender and hasn’t dried out, whilst the cake is still warm cover with a clean kitchen towel.",
+      "For the ganache place the chocolate and the cream into a small bowl and place over a pan of simmering water. Stir occasionally until the chocolate has fully melted.",
+      "Remove from the heat and stir until you have a smooth silky ganache. Refrigerate for up to 30 minutes or until the ganache has thickened up but is still spreadable.",
+      "Remove from the fridge and using an electric mixer whisk the ganache until it turns into a pale and fluffy cream like texture. Spread this over the top of the cake and decorate with the chopped mini eggs."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong Black Coffee",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": "dutched/black",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Doves Farm Organic White Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate Chips",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caramelised White Chocolate",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Mini Eggs",
+        "unit": null,
+        "notes": "roughly chopped, for decoration",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3b14b4bc1f523133f611cae16835993458fcb1b99400c7ec34ca9fb52802d79e",
+    "lineage_hash": "c163dabe3b445ab01dc08b0a8dbd6070688c98f1982e49c5f7902924965b4ea2"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2022/4/11/ol4n8ftvt163tvzvnl71am5v7m3tdq",
+    "fetchedAt": "2026-08-01T16:37:17.489Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2022/4/11/ol4n8ftvt163tvzvnl71am5v7m3tdq",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

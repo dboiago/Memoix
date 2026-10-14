@@ -1,0 +1,175 @@
+{
+  "recipe": {
+    "name": "Curry Chicken With Pigeon Peas",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "452",
+      "carbohydrateContent": "15",
+      "fatContent": "16",
+      "proteinContent": "60"
+    },
+    "directions": [
+      "Pre Boil Peas-place peas in a small pot, cover with water. Bring to a boil, then lower heat to medium and cook for 5 minutes. Drain and set aside.",
+      "Prepare Chicken: Cut up chicken into 2 inch pieces if required. Wash chicken with lemon, removing skin if you wish, excess fat and rub off slime. Drain well in a colander.",
+      "Season chicken with 4 tbs green seasoning, 1 tbs minced garlic, 1/2 of the sliced onion and hot pepper, tomato, thyme, salt and black pepper. Allow it to marinate for several hours or overnight, optional.",
+      "Make Curry Paste: In a small bowl, add 6 tablespoons curry powders and cumin along with 1/2 cup of water, 2 tbs green seasoning and 1 tbs minced garlic. Mix well and set aside.",
+      "In a heavy bottomed pot or dutch oven over medium heat, heat oil, add the reserved pieces of onions and pepper and cook until golden brown. Add curry mixture and cook until grainy and curry separates from the oil, stirring constantly and scraping bottom of pot to prevent it from sticking and burning, 3-5 minutes.",
+      "Add seasoned chicken and pwas to pot.  Mix well to combine.",
+      "Cover pot and cook on medium heat until meat has released its juices and evaporates about 30-40 minutes, gently stirring every 10 minutes or so in a basting motion (pouring the pan juices over the chicken).",
+      "If water has evaporated during this time, add hot water to make sauce, about 1-2 cups.  Bring to a boil, lower heat to medium, cover pot and cook until sauce has thickened about 5-10 minutes. Taste for salt and add more if required.  Garnish with chopped cilantro or bandhania. Serve hot with roti or rice and a salad."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": "lb",
+        "notes": "thighs or a whole chicken cut up into 2 inch pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Green Seasoning",
+        "unit": null,
+        "notes": "alt: minced culantro or minced culantro, divided",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Minced Garlic Minced",
+        "unit": null,
+        "notes": "divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Sliced and Divided",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet",
+        "unit": null,
+        "notes": "alt: habanero pepper- sliced divided",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomato Chopped",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Chopped",
+        "unit": "sprigs",
+        "notes": "about 2 tbs",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tbs Himalayan Salt",
+        "unit": null,
+        "notes": "alt: more to taste",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck and Goat Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amchar Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pigeon Peas Fresh",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bandhania Culantro for Finishing",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c11bd669405664d94d3d63dc95b9f35dabd183da35e5ac118ef6c73855ece0f0",
+    "lineage_hash": "bf0b5720091aab37ec482ffa93fbd65a0c3567c8828b46129dd9b6996278b9dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cookingwithria.com/2022/12/curry-chicken-with-pigeon-peas/",
+    "fetchedAt": "2026-09-25T20:31:08.860Z"
+  },
+  "rawSource": "https://cookingwithria.com/2022/12/curry-chicken-with-pigeon-peas/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

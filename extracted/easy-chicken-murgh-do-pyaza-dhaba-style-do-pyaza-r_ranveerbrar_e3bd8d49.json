@@ -1,0 +1,303 @@
+{
+  "recipe": {
+    "name": "Chicken Do Pyaza (Murgh Do Pyaza)",
+    "time": "40-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mortar pestle, add ginger, garlic, green chillies and grind it into a rough paste and keep aside for further use.",
+      "In a bowl, add chicken, salt to taste, degi red chilli powder, turmeric powder, ginger garlic paste.",
+      "Add curd and marinated well. Keep it for 10-15 minutes.",
+      "In a deep handi or pot, add ghee, oil once it's hot, add cumin seeds, green cardamom, and cloves.",
+      "Add black peppercorns and let it splutter well. Add onions and saute until translucent.",
+      "Add ginger garlic paste and saute it for 4-5 minutes on medium flame.",
+      "Add tomato puree and keep sauteing on medium flame. Add ghee mix well.",
+      "Add coriander powder, degi red chilli powder, curd and mix it well.",
+      "Add marinated chicken mix well. Cover it with the lid and let it cook for 6-10 minutes.",
+      "Add water and cover it with the lid and cook for 5-7 minutes.",
+      "Add onion, capsicum, tomato mix well, cover it with the lid and cook for a few minutes on low flame.",
+      "Finish it with kewra water, coriander leaves. Switch off the flame.",
+      "Transfer it into a serving dish, garnish it with coriander sprig and serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "slice",
+        "amount": "1",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "less spicy",
+        "amount": "2-3",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Ginger Garlic Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "kg",
+        "notes": "Drumstick, thigh",
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": "beaten",
+        "amount": "2",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-4",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Onions",
+        "unit": "medium",
+        "notes": "chopped",
+        "amount": "3",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "½",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Coriander Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "½",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Little Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Sized Onions",
+        "unit": "medium",
+        "notes": "dice",
+        "amount": "2",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Size Capsicum",
+        "unit": "medium",
+        "notes": "dice",
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Size Tomato",
+        "unit": "medium",
+        "notes": "dice",
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Water",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Do Pyaza",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ae62a844f14d3b3b4f8e7f910b3eb6bddf24a0931cb61a9826b31621b0a26f29",
+    "lineage_hash": "7785c1af513e05beac5d13432d05002c5346a45cd43a7badd8c7f0c0ac9b0495"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-murgh-do-pyaza/",
+    "fetchedAt": "2026-08-02T14:08:29.399Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-murgh-do-pyaza/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

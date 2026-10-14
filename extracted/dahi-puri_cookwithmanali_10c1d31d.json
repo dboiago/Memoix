@@ -1,0 +1,126 @@
+{
+  "recipe": {
+    "name": "Dahi Puri",
+    "time": "30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "161",
+      "carbohydrateContent": "11",
+      "fatContent": "4",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Arrange the golgappas on a serving plate. Carefully break each golgappa in the center using your fingers. This is to make space for all the filling.",
+      "Add the boiled potato cubes to each of the golgappa. Make sure to chop the potato into small pieces. Then add the chopped onion.",
+      "Sprinkle cumin powder, black salt, chaat masala, and red chili powder over the top of each golgappa.",
+      "Then fill each golgappa with cilantro chutney, followed by tamarind chutney. You can add around 1/2 to 1 teaspoon of each, this depends on the size of golgappas you are using.",
+      "Then fill each golgappa with the prepared yogurt. Add lot of yogurt, since this is dahi puri, yogurt has to be the star ingredient.",
+      "Sprinkle cumin powder, black salt (kala namak), chaat masala, and red chili powder again on top of the yogurt.",
+      "Top with nylon sev and then with chopped cilantro. Serve dahi puri immediately else it will get soggy."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "I used whole milk full fat yogurt, mixed with 4 tablespoon water and 2 teaspoons sugar",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiled & Cubed Potato",
+        "unit": "C",
+        "notes": "cut into small cubes",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro Chutney",
+        "unit": "C",
+        "notes": "or more as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Chutney",
+        "unit": "C",
+        "notes": "or more as needed",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golgappe/panipuri",
+        "unit": null,
+        "notes": "store bought or homemade",
+        "amount": "15-20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": null,
+        "notes": "black salt, to sprinkle, as needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": null,
+        "notes": "red chili powder, to sprinkle, as needed",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nylon Sev",
+        "unit": "Tbsp",
+        "notes": "thin sev",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1cf1be578f226ecdd7d6d0d6fc4a50f5ad7a797a72c85dce1b779df663d890fc",
+    "lineage_hash": "443a59722e49e32ee000711bc7784f0c2083ebd18ddc7ca138d0dec0a226066e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/dahi-puri/",
+    "fetchedAt": "2026-08-02T07:18:00.145Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/dahi-puri/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

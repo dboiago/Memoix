@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Fruit Bars",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "18",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In saucepan, melt butter and add the oil.Add dates and apricots. Stir then remove from heat and set aside to cool.",
+      "In the mean time, combine dry ingredients.Beat the egg and vanilla together.",
+      "Add to the fruit mixture, then pour over the dry ingredients. Mix well.",
+      "Pour in a greased baking dish (9×13 inch pan). Bake in an oven for 20 min at 350 degrees F. Cool and cut. Serve cool."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Enriched Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts*",
+        "unit": "C",
+        "notes": "alt: almonds or peanuts",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apricots Sunsweet California Sun Dried",
+        "unit": "C",
+        "notes": "chopped, dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs Beaten",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder*",
+        "unit": "tsp",
+        "notes": "alt: 1 tsp. baking soda",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5326d11239b487b27a45c14ebe2a0fd52eaab51e46cfcc42a79c7ed85cf5b613",
+    "lineage_hash": "ca565228699d1aa0855fead3c82c4a053c0c16741977e10869927a60b1a3bcc3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/fruit-bars/",
+    "fetchedAt": "2026-09-25T21:24:21.917Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/fruit-bars/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

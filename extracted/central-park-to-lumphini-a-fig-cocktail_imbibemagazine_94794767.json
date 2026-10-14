@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Central Park to Lumphini: A Fig Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker with ice. Shake to chill and dump into a glass over a large ice cube. Garnish.\nFig-Infused MezcalAdd 2 cut-up figs to 750ml of mezcal. Let sit in an airtight container for 12-24 hours, and then strain. Will keep for a year at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fig-infused Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Fig Spread/fig Jam",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5aaa4142238e50bc73b5610beda90016203536d10b309115e05cbc610e79cb47",
+    "lineage_hash": "0e84b6ac9d657dd14d3922b8ffb9b46c95a92a79f11a11e2b950ceb3e69457bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/central-park-to-lumphini-fig-cocktail/",
+    "fetchedAt": "2026-08-04T01:29:57.055Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/central-park-to-lumphini-fig-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

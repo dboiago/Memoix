@@ -1,0 +1,172 @@
+{
+  "recipe": {
+    "name": "Crème Fraîche Panna Cotta",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the panna cotta. Soak the gelatine leaves in the milk for 5 minutes. Split the vanilla pod in half, scrape out the seeds and add the seeds and pod to a pan with the remaining ingredients (except the milk and gelatine)",
+      "Heat the cream and crème fraîche mix until it almost comes to the boil, then reduce the heat and add the gelatine and milk. Stir over a moderate heat - the gelatine will eventually dissolve. Pour the mix into dariole moulds and store in the fridge overnight to set",
+      "For the sorbet, place the water, caster sugar and glucose syrup in a pan. Bring to the boil to make a syrup, then remove from the heat and add the mint. Infuse for 1 hour, then remove the sprigs",
+      "Add the orange juice and stir well. Allow to cool, churn in an ice cream maker and store in the freezer until required",
+      "To prepare the blackcurrant powder, spread the blackcurrants out on a lined baking tray and dry out in the oven for 10-12 hours. Once completely dry, remove from the oven and blitz in a food processor until a fine powder forms",
+      "Pass the powder through a fine sieve to remove any large particles and set aside until ready to plate",
+      "For the coulis, place the fruit and sugar in a heavy-based pan over a low heat and allow the sugar to melt. Simmer for 1-2 minutes, then blitz the mix in a food processor and pass through a very fine sieve to remove the seeds. Set aside until required",
+      "For the sugar swirls, melt the sugar in a heavy-based pan over a medium heat until a light caramel colour, then leave to cool for 1 minute. Place a sheet of greaseproof paper or a silicone sheet on a work surface",
+      "Take the handle of a wooden spoon, dip it into the melted sugar and lift over the paper, allowing it to fall and creating shapes by moving the spoon. Allow to cool completely before removing from the paper",
+      "To serve, sweep a handful of blackcurrant powder across each plate. Carefully place the panna cottas on top of the powder, adding a quenelle of the sorbet. Finish with a few drops of the blackcurrant coulis and decorate with shards of sugar swirls"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crème Fraîche",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Glucose Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrants",
+        "unit": "g",
+        "notes": "fresh or frozen",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Blackcurrants",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0aaa160321480d042746e17d7a51157140edf943d7dc3aafadc6645c3c43c48d",
+    "lineage_hash": "4b544936658b9f7f9946dc1a563bf4c52a0b41227807c512df79ed7b555e519f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/creme-fraiche-panna-cotta-recipe",
+    "fetchedAt": "2026-08-02T22:35:31.057Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/creme-fraiche-panna-cotta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

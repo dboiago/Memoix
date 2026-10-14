@@ -1,0 +1,171 @@
+{
+  "recipe": {
+    "name": "Apple Spice Cake",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the 2 tablespoons (30 g) of butter in a large skillet and sauté the apples over medium-high heat until the turn golden brown, stirring them as little as possible as they cook.",
+      "Once cooked through, add the 2 tablespoons (30 g) of sugar and cook until the apples cubes are nicely glazed. (Maria mentioned to cook them until all the liquid had evaporated, but mine had no liquid. So it depends on your apples.) Transfer apples to a plate and cool to room temperature.",
+      "Preheat the oven to 350F (180C) and butter and flour a 12-cup (3l) bundt pan, tapping out any excess flour.",
+      "In a stand mixer, or by hand, beat the 12 tablespoons (170 g) of butter with the sugar until light and fluffy. Add the eggs one at a time, then the vanilla, stopping the mixer between additions to scrape the batter down on the sides, as necessary.",
+      "In a small bowl, toss the dates, if using, with about a tablespoon of the flour to separate them.",
+      "In a medium bowl, sift together the remaining flour, baking powder, baking soda, salt, cinnamon, nutmeg, and cloves.",
+      "Stir half of the dry ingredients into the creamed butter mixture, then mix in the buttermilk or yogurt. Then stir in the remaining dry ingredients until just almost mixed in completely, but do not overmix. Visible wisps of flour are normal.",
+      "Fold in the cooked apples, and dates (if using). Scrape the batter into the prepare bundt pan and bake for 45 minutes, or until a toothpick inserted into the center of the cake comes out clean.",
+      "Let the cake cool in the pan for 10 minutes, then turn the cake out onto a cooling rack. Once cool, dust with powdered sugar, or glaze, if you wish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "30g, salted or unsalted, salted or unsalted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tart",
+        "unit": null,
+        "notes": "firm medium-size baking apples, peeled, cored and cut into 3/4-inch (2 cm) cubes",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": "30g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "6 ounces, 170g, at room temperature",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "350g",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "C",
+        "notes": "optional, 110g, pitted, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "420g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly-grated Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "C",
+        "notes": "alt: plain yogurt, 240g, regular or low-fat",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6fbf4f553c1f72095b2dccda973c9e179f6fe8963f78dcc16f7f6af3086a0ecf",
+    "lineage_hash": "1a97dfc98af6ed69d8630a911dceb3857b3148cdea71178f1497ae563ea7e31e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/apple-spice-cake/",
+    "fetchedAt": "2026-08-02T22:48:42.757Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/apple-spice-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

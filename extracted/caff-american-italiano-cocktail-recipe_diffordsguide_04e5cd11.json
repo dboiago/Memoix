@@ -1,0 +1,68 @@
+{
+  "recipe": {
+    "name": "Caffè American Italiano",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "145",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill an OLD-FASHIONED GLASS.",
+      "Prepare garnish of lemon zest twist.",
+      "STIR all ingredients with ice.",
+      "STRAIN into ice-filled glass (preferably over a large cube or chunk of block ice).",
+      "EXPRESS lemon or orange zest twist over cocktail and use as garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "37.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosso/sweet Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "37.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso Coffee",
+        "unit": "ml",
+        "notes": "hot",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "85c74061a8f6b06913604e62356c0e14f5e9e949e7dd1a666cb8206865f48819",
+    "lineage_hash": "877800e18a75520ae43d1d7f1779313548d8826e180eb897f1365100a7cb06a3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/37996/caffe-american-italiano",
+    "fetchedAt": "2026-08-03T22:52:08.019Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/37996/caffe-american-italiano",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

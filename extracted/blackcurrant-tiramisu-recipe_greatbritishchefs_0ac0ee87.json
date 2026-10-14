@@ -1,0 +1,231 @@
+{
+  "recipe": {
+    "name": "Blackcurrant Tiramisu",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the pain de gene. Preheat an oven to 145°C/gas mark 1. Place the marzipan into the bowl of a stand mixer with a paddle attachment and start to beat until softened. Add the sugar and mix well, then slowly add the eggs, a little at a time, until fully incorporated",
+      "Sieve the flour, cocoa powder and baking powder into the bowl, beat gently until smooth, then take a little of the mixture and stir it into the melted butter. Add the melted butter mixture back into the mixing bowl and bring together until smooth",
+      "Pour the cake batter onto a lined baking tray so it is around 3mm thick, then bake for 15–20 minutes or until it springs back when pressed. Remove from the oven, allow to cool, then place in the freezer while you get on with the rest of the dish",
+      "For the blackcurrant filling, place the sugar, vanilla and lemon zest into a large heavy-based pan over a medium heat. Once the sugar begins to melt, start adding the blackcurrants a little at a time, so as not to cool the sugar too much. Once all the currants are added, continue to cook until the mixture reduces to a thick sauce consistency",
+      "Remove the blackcurrants from the heat and allow to cool slightly, then whisk in the drained gelatine. Discard the lemon peel, pour into a shallow tray so it will set around the same height as the blackcurrants, then place in the freezer to set completely",
+      "Make the Italian meringue by placing the sugar and water in a pan and bringing the mixture to 121°C. While it heats, whisk the egg whites with an electric whisk until foamy. Whilst whisking, slowly pour the hot sugar syrup into the eggs, then continue to whisk until the mixture thickens and cools to room temperature. Weigh out 175g of the meringue and set aside",
+      "For the mascarpone mix, heat 75g of the whipping cream and add the drained soaked gelatine, whisking to combine. Combine this cream with the remaining cream, then mix this into the mascarpone gently. Fold in the 175g of Italian meringue until smooth, then set aside",
+      "Cut the frozen pain de gene and blackcurrant filling to the size of your moulds – if using a doughnut mould, you want to cut the sponge into 7cm rings with a small hole in the centre, and the blackcurrant mixture into rings slightly smaller than the sponge",
+      "Fill the moulds three-quarters of the way up with the mascarpone mixture, pulling it up the sides of the mould with a spoon. Place the blackcurrant ring in the centre, then top with more of the mousse to cover it. Place the ring of sponge on top, then place the moulds in the freezer to set",
+      "Meanwhile, melt the white chocolate and cocoa butter together in a heatproof bowl set over a pan of simmering water. Use a hand blender to blend in the food colouring, then pass through a fine sieve and keep warm at around 29°C",
+      "Remove the frozen mousses from the freezer and turn out of their moulds. Reset lightly in the freezer for 10 minutes",
+      "To finish with the tempered white chocolate, place the mousses onto an upside-down mould, sponge-side up. Using a piping bag, gently pipe the chocolate round the edge of the mousse and let it run down to create runs and a ‘needle effect’. Leave to set, then remove from the mould and turn the right way up and reserve in the freezer. If you used doughnut-shaped moulds to make the mousse, use the same technique but ensure there is a small gap between the mould and the mousse in the centre hole, to allow the chocolate to flood and run around the inside as well as the outside. Once the chocolate has set solid in the freezer, spray with the red cocoa butter (if using)",
+      "To serve, allow the chocolate-covered mousses to defrost to room temperature, then garnish with chopped pistachios"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Marzipan",
+        "unit": "g",
+        "notes": "50%",
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "155",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Flour",
+        "unit": "g",
+        "notes": "or pastry flour",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackcurrants",
+        "unit": "g",
+        "notes": "frozen",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split and seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "soaked in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "260",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mascarpone",
+        "unit": "g",
+        "notes": "beaten until smooth",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": "g",
+        "notes": "soaked in cold water",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "couverture quality",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Food Colouring",
+        "unit": "g",
+        "notes": "for chocolate, powdered",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": null,
+        "notes": "chopped, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Butter",
+        "unit": null,
+        "notes": "red, for spraying (optional)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f23085e1ad4c111b4a5d93729bfaa7542da8050565c456f17c21641f9afe147e",
+    "lineage_hash": "3fc6702249dff65ac409c74469df80cf915f06a8d402eee7a2020fae66c490cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackcurrant-tiramisu-recipe",
+    "fetchedAt": "2026-08-03T05:30:09.617Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackcurrant-tiramisu-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

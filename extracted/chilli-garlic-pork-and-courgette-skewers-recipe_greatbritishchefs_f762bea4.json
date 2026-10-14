@@ -1,0 +1,128 @@
+{
+  "recipe": {
+    "name": "Chilli Garlic Pork and Courgette Skewers",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut the pork loin into even bite-sized cubes, about 2cm. Stir together all the ingredients for the marinade. Add the pork and toss to coat. Cover and refrigerate for at least 2 hours, preferably overnight",
+      "Meanwhile, place 12 wooden skewers in a large roasting tray of cold water to soak – this will stop them burning",
+      "30 minutes before you’re ready to cook, take the pork out of the fridge to allow it come to room temperature. Meanwhile, slice the courgettes into 1cm rounds. Toss with the groundnut oil and season with sea salt",
+      "Drain the skewers and alternately thread the pork and courgette onto them",
+      "Fire up your barbecue. Grill for 6–8 minutes until cooked through, turning often to get the pork and courgette golden and lightly charred on all sides",
+      "Finish with a sprinkle of sesame seeds and spring onions. Serve straight away"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Tenderloin",
+        "unit": "g",
+        "notes": "trimmed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Courgette",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Groundnut Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Sesame Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Garlic Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Runny Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ba15f39c4f294c3fbb37e50ac098cb5a1652ec716243bb6b0332e1f34bcd6807",
+    "lineage_hash": "64248d9faea17f23174d19819c2e63cdc343b8e6e76db0c4389e7ea3c601019b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilli-pork-skewers-recipe",
+    "fetchedAt": "2026-08-03T09:47:30.389Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilli-pork-skewers-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

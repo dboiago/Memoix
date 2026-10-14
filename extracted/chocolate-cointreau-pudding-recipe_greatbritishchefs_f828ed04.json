@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Chocolate & Cointreau Pudding",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180ºC/Gas mark 4 and grease 4 ramekins",
+      "Cream the butter and sugar together, and then add the eggs, orange juice and zest. Mix the flour, baking powder and cocoa powder together and then fold this into the butter mixture",
+      "Divide the mixture evenly between the ramekins and use any leftover to make small additional puddings",
+      "For the sauce, mix the cocoa powder and brown sugar together and sprinkle over the ramekins",
+      "Pour 100ml boiling water over the mixture in each ramekin, and then place the ramekins into the oven for 10-15 minutes. Add the Cointreau evenly to the ramekins, then bake for a further 5 minutes",
+      "Serve with a large dollop of vanilla ice-cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened plus extra for greasing",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": "boiling",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cointreau",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tub of Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c51bbe90382c40b8e1528828b7a0d2d1de32782cd906aa03ee520d294b859087",
+    "lineage_hash": "0c1f6f9e65097fd3d3128c4839a272bfd00faee0b3807aad6bce52aa2f71971c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-cointreau-self-saucing-puddings",
+    "fetchedAt": "2026-08-03T21:14:53.490Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-cointreau-self-saucing-puddings",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

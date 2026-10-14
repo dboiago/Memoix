@@ -1,0 +1,134 @@
+{
+  "recipe": {
+    "name": "Baked Conchiglioni Stuffed with Broccoli and Anchovy and Tomato Sauce",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a large pan of water to the boil and season well with salt. Cook the pasta as per the instructions until al dente",
+      "Remove the pasta shells from the water using a slotted spoon or lifter and transfer to a colander. Keep the water in the pan. Toss through a drizzle of olive oil to prevent them sticking and allow to cool",
+      "Roughly cut the broccoli into florets and, in the same pan as the pasta, boil for 3 minutes or until just cooked through. Strain off the water and allow broccoli to cool",
+      "In another saucepan add half of the olive oil, half of the sliced garlic, and all of the chopped chilli and anchovy fillets. Gently cook over a low heat for 5–10 minutes until the garlic is very soft but not brown at all. Add a splash of water if it begins to take on colour",
+      "Roughly chop the cooked broccoli and add to the pan and continue to cook for another 10–15 minutes, stirring frequently, until the broccoli has all broken down and any remaining liquid has evaporated",
+      "Grate in half of the parmesan and stir through then set aside to cool down",
+      "In another saucepan add the remaining olive oil and remaining garlic. Gently cook over a low heat, again until the garlic is soft but not brown at all",
+      "Empty the tins of tomatoes into a bowl and crush them with your hands then empty them into the pan",
+      "Simmer over a low to medium heat for 20 minutes until you see the oil begin to rise to the surface and the sauce has thickened slightly. Season with salt and transfer to a shallow ovenproof dish",
+      "Fill the pasta shells with the broccoli anchovy mix until it is all used up and place them face up in the dish with the tomato sauce. You want the pasta almost submerged in the sauce with just the open side visible, and tightly packed. If necessary loosen up the sauce with a little water as it will thicken up in the oven. Mix the remaining parmesan with the breadcrumbs and sprinkle over the whole dish",
+      "Bake in the oven for 20 minutes or until golden brown on top",
+      "Serve immediately with a good crack of black pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Garofalo Conchiglioni Pasta",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "heads",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "head",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillets",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": "grated",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Plum Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "64b2d9035c9c28c04c1c69853487ca4cedc7718b29ecd578bf3278c38282c251",
+    "lineage_hash": "552123ff4034613a27402fd7a7ac1657451ae7efb073f1dcf95f4d1735f48ba7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-conchiglioni-stuffed-broccoli-anchovy-tomato-sauce-recipe",
+    "fetchedAt": "2026-08-02T14:20:07.405Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-conchiglioni-stuffed-broccoli-anchovy-tomato-sauce-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

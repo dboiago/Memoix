@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Pumpkin Pie Spice",
+    "time": "1 min",
+    "course": "rubs",
+    "rating": 0,
+    "serves": "3",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "6",
+      "carbohydrateContent": "2.1",
+      "fatContent": "0",
+      "proteinContent": "0"
+    },
+    "directions": [
+      "Add all the spices into a spice jar and shake until combined.",
+      "Use for all recipes that call for pumpkin pie spice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Spice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5161b9f97c0d53cd777af884909799cd56b6570e01d7353326f6fc91f6a977eb",
+    "lineage_hash": "6f3a4f63202b2c132de735194f9f9cf228949023ac6c8166a22de624b24f6cd5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.okonomikitchen.com/pumpkin-spice-recipe/",
+    "fetchedAt": "2026-09-25T21:43:21.992Z"
+  },
+  "rawSource": "https://www.okonomikitchen.com/pumpkin-spice-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

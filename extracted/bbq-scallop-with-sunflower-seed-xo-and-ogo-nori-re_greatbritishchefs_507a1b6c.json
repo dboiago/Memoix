@@ -1,0 +1,264 @@
+{
+  "recipe": {
+    "name": "BBQ Scallop with Sunflower Seed XO and Ogo Nori",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Wash any excess salt off the ogo nori, and then dehydrate at 70°C overnight",
+      "For the pickled pumpkin or butternut squash, begin by by peeling the skin off the pumpkin and then cutting it in half lengthways. Carefully slice thin pieces using a Japanese chiba peeler-style mandolin",
+      "Bring all the ingredients for the pickle liquor to a simmer, and then strain out the seasonings",
+      "Pour 250ml of the boiling pickling liquid over the butternut/pumpkin ribbons",
+      "Cover the ribbons with a tight lid or some cling film. Once cool, store in an airtight container in the fridge",
+      "For the sunflower seed sauce, fry the onions and garlic until golden and crispy and, in a separate pan, sweat off the chilli until softened",
+      "Toast the sunflower seeds and then roughly chop them",
+      "Combine all the remaining seasonings together with the onion, garlic, chillies and sunflower seeds",
+      "For the pumpkin purée, warm a little oil in a sauté pan, then add the pumpkin and season with salt",
+      "Cook the pumpkin gently over a medium heat, ensuring that you are moving the pan regularly to make sure it is browning evenly. Remove from the pan and set aside",
+      "Add the butter and increase the temperature to medium high. Once the butter begins to foam, add the pumpkin back in and continue to cook until pumpkin is tender, stirring often to ensuring that the pumpkin is being roasted evenly",
+      "Once soft, add the lemon juice and then remove from the heat",
+      "Blend with the xanthan gum until it forms a fine purée",
+      "Remove the scallops from their shells, and remove flesh from all connective tissues",
+      "Gently wash the scallops in lightly salted water",
+      "Dry the scallops on a cloth in the fridge to remove excess water. Once dry, swap out the damp cloth for a fresh one and return to the fridge",
+      "Fry the nori at 180°C for 10 seconds, and then place on a draining tray lined with paper towel",
+      "Season the scallops with some salt, heat up a little vegetable oil in a non-stick pan until almost smoking, and then add the scallops",
+      "Sear the scallops on one side for 1–2 minutes, then transfer to the barbecue",
+      "Cook for roughly 3 minutes on the barbecue, then flip over and cook for another 30 seconds",
+      "Remove the scallop from the barbecue and transfer to a paper towel. Season with some lemon juice",
+      "Pipe some of the brown butter pumpkin onto each plate. Slice the scallop and place on top of the purée, and then top with sunflower seed sauce, pickled pumpkin, fried ogo nori and gently drizzle more sunflower seed XO around the plate"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ogo Nori",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "or butternut squash",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chillies",
+        "unit": null,
+        "notes": "finely diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pumpkin",
+        "unit": "g",
+        "notes": "diced into 1 cm pieces",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallops",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for cooking",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3af792a51c4b2c9651b2719b8113626d2c14b1f16c5015335f292426c648bb90",
+    "lineage_hash": "1d4fbdcb1486969b4f1b1bc2af39e5fc775bb075fc09ab35dbbb88e073a45d47"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bbq-scallop-sunflower-seed-xo-ogo-nori-recipe",
+    "fetchedAt": "2026-08-02T12:03:03.930Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bbq-scallop-sunflower-seed-xo-ogo-nori-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

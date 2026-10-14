@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Dulce de Leche Brownies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF degrees (175 C.)",
+      "Line an 8-inch (20 cm) square pan with a long sheet of aluminum foil that covers the bottom and reaches up the sides. If it doesn’t reach all the way up and over all four sides, cross another sheet of foil over it, making a large cross with edges that overhang the sides. Grease the bottom and sides of the foil with some softened butter or non-stick spray.",
+      "Melt the butter in a medium saucepan. Add the chocolate and stir constantly over very low heat until the chocolate is melted. Remove from heat and whisk in the cocoa powder until smooth. Add in the eggs one at a time, then stir in the sugar, vanilla, then the flour. Mix in the nuts, if using.",
+      "Scrape half of the batter into the prepared pan. Drop one-third of the dulce de leche by scant tablespoons evenly spaced over the brownie batter. Either drag a butter knife through the dulce de leche mounds to swirl them very slightly, being careful not to overdo it, or leave the mounds as they are. Spread the remaining brownie batter over, then drop spoonfuls of the remaining dulce de Leche in dollops over the top of the brownie batter. Use a knife to swirl the dulce de Leche slightly.",
+      "Bake until the center feels just-slightly firm, but still jiggly, about 30 minutes, but check them at the 25-minute mark as different chocolates behave differently and with these brownies, as with most brownies, you want to catch them before they become overbaked. Remove from the oven and cool completely. Once cool, lift the brownies out of the pan by grabbing the edges of the foil to remove them from the pan."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Salted",
+        "unit": "Tbsp",
+        "notes": "alt: unsalted butter, 115g, cut into pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bittersweet",
+        "unit": "oz",
+        "notes": "alt: semisweet chocolate, 170g, finely chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsweetened Cocoa Powder",
+        "unit": "C",
+        "notes": "25g, preferably Dutch-process",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "200g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "140g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Pecans",
+        "unit": "C",
+        "notes": "alt: walnuts, optional, 100g, coarsely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dulce De Leche",
+        "unit": "C",
+        "notes": "260g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "18f0b692bce4c69bfbce238452da479296de0a87aeb597a25b3012a824daf08d",
+    "lineage_hash": "a91acc3088ac60a001f0ae16576bbb16ca5efa3b97a078ea3f6bfed39c30880f"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/dulce-de-leche/",
+    "fetchedAt": "2026-08-02T22:20:57.607Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/dulce-de-leche/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Claire’s Cranberry Walnut Bread",
+    "time": "1 hr 5 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350 degrees. Pick through the cranberries, removing any stems or shriveled berries.",
+      "Toast the walnuts in a dry cast iron skillet over medium-high heat until fragrant and lightly browned, 3 to 5 minutes. Let cool.",
+      "Brush the loaf pan with melted butter, chill, brush it again with butter, and lightly dust it with flour.",
+      "Sift the flour into a bowl, followed by the spices, salt, baking powder, and baking soda. Whisk in the brown sugar. Add the butter, egg, orange juice, and orange zest, and whisk until thoroughly mixed. Fold in the cranberries and walnuts. Spoon the batter into the loaf pan and tap a couple times to dislodge any air bubbles.",
+      "Bake the bread until puffed and browned and sounds hollow when tapped, 40 to 60 minutes. (When done, an inserted skewer will come out clean.)",
+      "Unmold the cranberry bread onto a cooling rack and cool for 30 minutes. Serve right away, or wrap in plastic and let “ripen” overnight at room temperature before serving. Slice with a serrated knife."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "fresh",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnut Halves",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Unbleached Flour",
+        "unit": "C",
+        "notes": "plus flour for the loaf pan",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted, plus 1 tablespoon for the loaf pan",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten with a fork",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "The Grated Zest of 1 Orange (about 1 Tablespoon)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": "from 2 to 3 oranges including the one grated for the zest, fresh",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "28dc11dbe7afe91f78c2e2c178d6c2d400c175f3f2fd14d06d3aca0c8228d1bd",
+    "lineage_hash": "ead067088a4893d6b7db2b7c6d9ca91bf6618b74ba56988e2fcf0f09a3b0ba3e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/claires-cranberry-walnut-bread/",
+    "fetchedAt": "2026-08-03T07:54:54.052Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/claires-cranberry-walnut-bread/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

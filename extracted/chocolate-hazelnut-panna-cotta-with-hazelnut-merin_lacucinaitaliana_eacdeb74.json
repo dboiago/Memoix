@@ -1,0 +1,101 @@
+{
+  "recipe": {
+    "name": "Chocolate Hazelnut Panna Cotta with Hazelnut Meringue Sticks",
+    "time": "3 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Finely chop the gianduja chocolate and place it in a large bowl. Soak the gelatin in cold water. In a small saucepan, bring the milk to a boil; then remove it from the heat and melt the drained gelatin. Pour the boiling water into the bowl with the chocolate and mix well until you obtain a smooth cream; let it cool until it reaches room temperature.",
+      "Mix the cream into the warm chocolate mixture, then pour everything into 6 silicone or aluminum molds (2 1/2 to 3 inches in diameter) and let them set in the refrigerator for at least 2 hours. Begin to beat the egg white with the granulated sugar; then, as soon as it is slightly beaten, add in the powdered sugar and continue to beat until it forms stiff peaks. Gently incorporate the hazelnut flour into the beaten egg white, folding from bottom to top with a spoon, not mixing with the beaters.",
+      "Transfer the meringue into a pastry bag with a smooth tip (1/2-inch diameter) and form long log shapes, similar to large breadsticks, on a baking tray lined with parchment paper. Bake at 250°F for 1 hour. Remove the panna cotta from the molds and serve them with the meringue sticks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gianduja Chocolate",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnut Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Sheet",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7d5454f5bff783aa7ab9cf42c4633caffac16aa5f635f159a4869c5b529ecd09",
+    "lineage_hash": "83e528532f8a7dc55d51cc056867e030a0c632417961d5e9aa560b62e18e4484"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-hazelnut-panna-cotta-with-hazelnut-meringue-sticks",
+    "fetchedAt": "2026-08-02T19:06:08.983Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-hazelnut-panna-cotta-with-hazelnut-meringue-sticks",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

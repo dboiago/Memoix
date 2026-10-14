@@ -1,0 +1,169 @@
+{
+  "recipe": {
+    "name": "Curried Scallops With Dhal and Coconut",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large saucepan, heat the chicken stock over a medium heat. Add the turmeric, season with salt and add the lentils",
+      "Bring to the boil then simmer for 15 to 20 minutes or until the lentils are tender. Strain the lentils and discard the cooking juices",
+      "Melt the butter in a pan and sauté the onion with the cumin seeds until browned. Add the lentils, coconut milk, baby spinach and three quarters of the coriander and cook on a medium heat until heated through. Keep warm",
+      "To cook the scallops, mix the curry powder and salt in a bowl. Dip the scallops one by one into the curry salt (one side only)",
+      "Knock off the excess powder by holding the scallop in one hand while tapping your wrist with the other. Place the scallops on a plate with the curry-salt-side facing up",
+      "Add the olive oil to a hot frying pan. Place the scallops in the pan, curry-salt-side down. Cook for 1 minute each side, until golden brown",
+      "Cut the apples into 5mm batons. Spoon the warm dahl onto four plates and arrange the scallops on top. Place the apple on top of the scallops and garnish with the remaining chopped coriander and the diced tomato"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Scallops",
+        "unit": null,
+        "notes": "cleaned and coral removed",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Lentils",
+        "unit": "g",
+        "notes": "soaked overnight and drained",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "peeled and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Spinach",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": "peeled and cored",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomato",
+        "unit": null,
+        "notes": "skin removed and diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2b1b5157011e2fce600e3679ccc590fc991e2e60097a33fe30e268fb9c72e0cc",
+    "lineage_hash": "4081227537b64c2e998c1b89206e146bcf076120b1cde2057e5cb3d6e95cd47c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/curried-scallops-recipe-dhal-coconut-coriander",
+    "fetchedAt": "2026-08-03T15:40:43.822Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/curried-scallops-recipe-dhal-coconut-coriander",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

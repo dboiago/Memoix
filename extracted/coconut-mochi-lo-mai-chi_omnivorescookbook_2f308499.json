@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Coconut Mochi (糯米滋, Lo Mai Chi)",
+    "time": "1 hr 35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "193",
+      "carbohydrateContent": "15.9",
+      "fatContent": "10.1",
+      "proteinContent": "10.9"
+    },
+    "directions": [
+      "Combine the glutinous flour, cornstarch, and sugar in a big bowl. Drizzle the coconut milk while stirring to mix until the batter becomes smooth. Run the batter through a sieve and press down on any bits that are not fully dissolved. Repeat two more times until there’s no clumps left.",
+      "Prepare a steamer by adding 2” (5 cm) water to the steamer pot and bring the water to a boil. Place the bowl of batter onto the steamer rack. Cover and steam over medium-high heat for 25 minutes. (*Footnote 1) Test the dough by inserting a chopstick into the center. The chopstick should come out clean.",
+      "Meanwhile, prepare the filling by dividing the red bean paste into 10 pieces, about 1 tablespoon (20 g) per piece. Shape the red bean paste with your hands into a ball. Place all the red bean paste balls onto a plate and cover with plastic wrap. Store in the fridge until ready to use.",
+      "Once the batter is steamed, remove from the steamer. Let the dough cool off for 10 minutes. Add the coconut oil (or butter). Use a spatula to mix in the oil. If you find the oil hard to mix in, let the dough cool off a bit more and work it with your hands when the dough has cooled enough to handle. Gently fold the dough until the oil is fully incorporated. (*Footnote 2)",
+      "When the dough is cool enough to handle, line your working surface with plastic wrap and wear a pair of plastic (or vinyl) gloves. Transfer the dough onto the working surface. Fold the dough a few more times, then shape it into a ball. Wrap the dough with plastic wrap and let cool in the fridge for 20 minutes, until it has cooled down more.",
+      "When the dough has cooled (warm dough is OK), put on your gloves again. Divide the dough into 10 even pieces (*Footnote 3), about 45 g per piece. Shape each piece of dough into a round disk with your hands, about 3.5” (9 cm) in diameter. Add the red bean paste ball in the center. Seal the dough by wrapping the disk towards the top center. Pinch well to seal the filling. Roll the wrapped mochi a few times into a round shape, then roll the mochi in the bowl with shredded coconut to coat well. Transfer the mochi to a cupcake liner. Repeat with the rest of the mochi.",
+      "Enjoy the mochi at room temperature. You can also store them in the fridge for 3 to 4 days, or freeze them for up to 3 months. Once refrigerated, you should heat the mochi gently in the microwave so the texture will soften."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Glutinous Rice Flour",
+        "unit": "g",
+        "notes": "1 cup + 2 tablespoons",
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "30 g",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Sugar",
+        "unit": "g",
+        "notes": "1/4 cup",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "C",
+        "notes": "or other plant milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "g",
+        "notes": "2 tablespoons, or butter",
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bean Paste",
+        "unit": "g",
+        "notes": "3/4 cup",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut",
+        "unit": "C",
+        "notes": "shredded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bdfce51aa730c0f440a7ef5ce39750e1c2d79505566819d2b49b6315b07f7c49",
+    "lineage_hash": "c436196a1220f190fbe6b0603a2f2f7509b66796219615dc707209ce3525559d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/coconut-mochi/",
+    "fetchedAt": "2026-08-02T02:42:09.856Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/coconut-mochi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

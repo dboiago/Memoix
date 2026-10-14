@@ -1,0 +1,66 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-fried-chicken-wings/",
+  "slug": "chinese-fried-chicken-wings_omnivorescookbook_55f908c3",
+  "title": "Chinese Fried Chicken Wings",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T08:14:18.742Z",
+  "ldName": "Chinese Fried Chicken Wings",
+  "ldTime": "PT150M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "restaurant-style",
+  "ldIngredientsRaw": [
+    "12  chicken wings",
+    "2 cloves garlic (, grated)",
+    "1  scallion (, minced)",
+    "1 tablespoon Shaoxing wine",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1/4 teaspoon salt",
+    "3 tablespoons all-purpose flour",
+    "4 tablespoons cornstarch",
+    "Neutral oil (for deep-frying)"
+  ],
+  "ldInstructionsRaw": [
+    "Use a fork to poke holes in the back of the wings, to help the wings absorb the flavor better. Transfer wings to a big bowl. Add the garlic, scallion, Shaoxing wine, light soy sauce, oyster sauce and salt. Marinate for 2 hours at room temperature or up to overnight in the refrigerator.",
+    "When ready to cook, drain any liquid from the wings. Add the all-purpose flour. Mix with your hands until the flour is mixed evenly. The wings should be coated with a sticky batter without any dry flour.",
+    "Add the cornstarch and mix with your hands again until all the wings are evenly coated.",
+    "Heat 3” oil in a medium deep pot to 320°F (160°C). Line a baking sheet with a wire rack.",
+    "Shake off excess cornstarch from the wings, and carefully add into the oil. Fry in batches if needed so you don’t crowd the pot. Fry for 3 minutes at 320°F (160°C). Do not touch the wings during the first 1 to 2 minutes of frying. Then stir gently a few times. Fry until the wings are golden. Transfer the chicken onto the lined baking sheet to drain excess oil. Repeat to fry the rest of the wings.",
+    "Raise the oil temperature to 350°F (180°C). Return the wings to the oil and fry for another 2 minutes, until the crust becomes golden brown. Transfer to the lined baking sheet to drain off excess oil. Serve as an appetizer."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "346 kcal",
+    "carbohydrateContent": "17.7 g",
+    "proteinContent": "33.3 g",
+    "fatContent": "15.1 g",
+    "saturatedFatContent": "3.1 g",
+    "cholesterolContent": "97 mg",
+    "sodiumContent": "518 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1.7 g"
+  },
+  "htmlIngredientLines": [
+    "12 chicken wings",
+    "2 cloves garlic , grated",
+    "1 scallion , minced",
+    "1 tablespoon Shaoxing wine",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1/4 teaspoon salt",
+    "3 tablespoons all-purpose flour",
+    "4 tablespoons cornstarch",
+    "Neutral oil for deep-frying"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

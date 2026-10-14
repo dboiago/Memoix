@@ -1,0 +1,71 @@
+{
+  "url": "https://www.baking-sense.com/2021/12/16/chocolate-mousse-pie/",
+  "slug": "chocolate-mousse-pie_baking-sense_b7b1aa76",
+  "title": "Chocolate Mousse Pie",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:17:10.318Z",
+  "ldName": "Chocolate Mousse Pie Recipe",
+  "ldTime": "PT130M",
+  "ldPrepTime": "PT120M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "10",
+    "10 slices"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate, chocolate mousse, pie",
+  "ldIngredientsRaw": [
+    "36  Oreo cookies (One 14.3 oz package)",
+    "3 oz melted butter (6 tablespoons)",
+    "16 oz heavy Cream (2 cups)",
+    "10 oz semi sweet chocolate (chopped)",
+    "5 ea egg yolks (large eggs)",
+    "1 oz dark rum (optional)",
+    "4 oz granulated sugar (1/2 cup, divided)",
+    "2 each egg whites (large)",
+    "12  oz heavy Cream (1 1/2 cups)",
+    "2 oz confectioner&#39;s sugar (1/2 cup)",
+    "1/2 teaspoon vanilla extract",
+    "4 oz semi sweet chocolate (melted)"
+  ],
+  "ldInstructionsRaw": [
+    "Chocolate Oreo Crust",
+    "Chocolate Mousse"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 slice",
+    "calories": "569 kcal",
+    "carbohydrateContent": "37 g",
+    "proteinContent": "4 g",
+    "fatContent": "48 g",
+    "saturatedFatContent": "29 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "134 mg",
+    "sodiumContent": "111 mg",
+    "fiberContent": "2 g",
+    "sugarContent": "23 g",
+    "unsaturatedFatContent": "16 g"
+  },
+  "htmlIngredientLines": [
+    "[Chocolate Oreo Crust]",
+    "36 Oreo cookies (One 14.3 oz package)",
+    "3 oz melted butter (6 tablespoons)",
+    "[Chocolate Mousse]",
+    "16 oz heavy Cream (2 cups)",
+    "10 oz semi sweet chocolate (chopped)",
+    "5 ea egg yolks (large eggs)",
+    "1 oz dark rum (optional)",
+    "4 oz granulated sugar (1/2 cup, divided)",
+    "2 each egg whites (large)",
+    "[Topping]",
+    "12  oz heavy Cream (1 1/2 cups)",
+    "2 oz confectioner's sugar (1/2 cup)",
+    "1/2 teaspoon vanilla extract",
+    "4 oz semi sweet chocolate (melted)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Day Dream (Polish Holiday Punch)",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all the ingredients to an ice-filled shaker and shake well. Strain into the glass over a large cube. Garnish.",
+      "Susz: In a large jar or other airtight container, combine a chopped ¼ cup each of dried apples, dried pears, dried apricots and dried plums with a 750-ml. bottle of vodka. Allow the mixture to infuse for 24 hours, then strain and bottle for use.",
+      "Ginger-cardamom honey syrup: In a blender, combine 14 oz. of honey (by weight), 3½ Tbsp. of peeled, chopped ginger, 10 cardamom pods and ½ cup of warm water. Blend for 1 to 2 minutes, then fine strain into a jar. It will keep for 2 to 3 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Susz",
+        "unit": "oz",
+        "notes": "vodka infused with dried fruits",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-cardamom Honey Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6b09c9f99c39746b76190c338c543187933c1964e1d6d0b53290d93c710ea2c0",
+    "lineage_hash": "beaf91613e531a4a2caaa0a0d65c741903533c82413d2ad8fe7859064a4d40f4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/polish-holiday-punch/",
+    "fetchedAt": "2026-08-04T01:21:27.271Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/polish-holiday-punch/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

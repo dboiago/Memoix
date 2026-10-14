@@ -1,0 +1,163 @@
+{
+  "recipe": {
+    "name": "Chinese Pickled Long Bean Noodle Soup",
+    "time": "30 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "633",
+      "carbohydrateContent": "69",
+      "fatContent": "28",
+      "proteinContent": "33"
+    },
+    "directions": [
+      "First, marinate the ground pork. Mix it with 1 tablespoon of the oil, 2 teaspoons cornstarch, 1 teaspoon soy sauce, and 1 teaspoon Shaoxing wine. Set aside while you gather your other ingredients.",
+      "Heat the remaining 2 tablespoons of oil in a wok or cast-iron skillet over high heat. Add the pork and stir-fry until cooked through and lightly crisped. Add the ginger and allow to infuse the oil for another minute. Next, add the garlic and cook until the garlic is lightly browned.",
+      "Add the diced green and red bell peppers and cook until they are slightly softened. Add the chilies, long beans, sugar, and white pepper, and cook for a few minutes to heat the long beans through. If you want an extra kick, add the chilies early on along with the ginger to really infuse the oil.",
+      "To prepare the noodle soup, place the noodles and soup in a bowl, and top with a few spoonfuls of the pickled long bean stir-fry. Add salt and/or chili oil to taste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "oz",
+        "notes": "225g",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "divided",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "tsp",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Bell Pepper",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Bell Pepper",
+        "unit": "small",
+        "notes": "diced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bird’s Eye Chilies",
+        "unit": null,
+        "notes": "thinly sliced, depending on your desired heat level",
+        "amount": "3-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Package Chinese Pickled Long Beans",
+        "unit": null,
+        "notes": "chopped into ¼” pieces",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Choice of Noodles to Serve",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Broth",
+        "unit": "C",
+        "notes": "about 2 cups per serving",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e37970f05a636c0c1dbdf0dcb10b618e163fd8d274781f751040daaa59c5c45b",
+    "lineage_hash": "96d62c3b12dd7d351873be9f8389398a3b96aba0edbde36a24fbe3866da2410c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/pickled-long-bean-noodle-soup/",
+    "fetchedAt": "2026-08-01T20:30:11.587Z"
+  },
+  "rawSource": "https://thewoksoflife.com/pickled-long-bean-noodle-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

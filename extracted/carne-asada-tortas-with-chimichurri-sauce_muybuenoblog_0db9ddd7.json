@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Carne Asada Tortas with Chimichurri Sauce",
+    "time": "55 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "595",
+      "carbohydrateContent": "38",
+      "fatContent": "25",
+      "proteinContent": "56"
+    },
+    "directions": [
+      "Puree all ingredients in a blender. Transfer to a bowl. (Can be made 2 hours ahead. Cover and let stand at room temperature.)",
+      "In a bowl, combine the olive oil, lime juice, garlic, cilantro, and onion and mix well.",
+      "Place steak in a large Ziploc bag and pour the marinade over steak. Zip up the bag and massage marinade around so that the steak is well covered. Let stand at room temperature for 30 minutes or in the refrigerator for up to 2 hours.",
+      "Preheat a grill or grill pan to high. Remove the steak from the plastic bag and season with salt and pepper. Grill the steak for 4 to 5 minutes per side for medium-rare. Let rest 10 minutes, and then slice the steak against the grain into 1/2-inch pieces.",
+      "Place desired amount of meat onto a warm toasted bolillo. Top with chimichurri sauce. Garnish with avocado slices, if desired.",
+      "I served these tortas with Mexican street corn, cebollitas, and slices of avocados."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Italian Parsley",
+        "unit": "handful",
+        "notes": "stems removed",
+        "amount": "1",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": "fresh, stems removed",
+        "amount": "1",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "tsp",
+        "notes": "dried, crushed",
+        "amount": "¾",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cumin",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chimichurri Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "chopped, fresh",
+        "amount": "¼",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "sliced",
+        "amount": "½",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Flap Steak",
+        "unit": "lb",
+        "notes": "alt: skirt steak",
+        "amount": "2",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt and Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Carne Asada",
+        "isOptional": false
+      },
+      {
+        "name": "Bolillos",
+        "unit": null,
+        "notes": "Mexican rolls or French sandwich rolls, lightly buttered and toasted",
+        "amount": "4-6",
+        "section": "Tortas",
+        "isOptional": false
+      },
+      {
+        "name": "Chimichurri Sauce",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Tortas",
+        "isOptional": false
+      },
+      {
+        "name": "Avocado Slices",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": "Tortas",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "edc9804066e5a79e519f57a471044cb55c1b47f87fb4c463298f1d655ad0af8b",
+    "lineage_hash": "d36bc3db40e7e28c1a0330ca28ae59a0a1832b7b29318d7a724e19d35d331292"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/carne-asada-tortas-with-chimichurri-sauce/",
+    "fetchedAt": "2026-08-01T20:54:05.392Z"
+  },
+  "rawSource": "https://muybuenoblog.com/carne-asada-tortas-with-chimichurri-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

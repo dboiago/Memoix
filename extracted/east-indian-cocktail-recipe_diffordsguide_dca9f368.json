@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "East Indian Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "108",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of skewered green olives.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with skewered olives."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Fino Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Vermouth",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "ml",
+        "notes": "2:1",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5dc9b4c9d9c6dbade2ff891dd49a3323b07b40da7b509e1a1dcd1c86275dccfa",
+    "lineage_hash": "96e9503396eda9829c445ef2ce9393e276e97ab205db0b3b179ce7eb7c6de1fe"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/688/east-indian",
+    "fetchedAt": "2026-08-02T09:34:57.107Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/688/east-indian",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

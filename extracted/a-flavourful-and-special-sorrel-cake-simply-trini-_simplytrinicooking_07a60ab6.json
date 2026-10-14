@@ -1,0 +1,166 @@
+{
+  "recipe": {
+    "name": "Sorrel Cake",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "The sorrel is boiled a bit and strained. (Note: If you're making sorrel drink this Christmas just save some of the sorrel sepals after boiling).",
+      "Mince the sorrel. Wash and dry the fruits. Mince half the fruits. Mix all the fruits with the blended sorrel pulp. Add the almond essence, vanilla essence, pour 3/4 cup of the cherry brandy, and 1/2 cup of the rum on to the mixed fruit.",
+      "Cream butter and sugar until light. Whisk eggs and add to butter mixture. Mix well. Add the fruits and colouring; mix well. Sift together the flour and baking powder. Add the salt, cinnamon, and nutmeg. Stir until smooth.",
+      "Pour into greased tin and bake in a low oven ( 180 degrees F ) until golden brown on the top and when stuck with a knife, it comes out clean. Pour the remaining liquor over the cake (This part is of course optional if you wish to limit the amount of alcohol in the cake)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Strained Sorrel Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Peel",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": "alt: 1/2 tsp vanilla extract",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Essence",
+        "unit": "tsp",
+        "notes": "alt: extract",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Food Colouring Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Granulated",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raisins",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherry Brandy",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter Unsalted",
+        "unit": "lb",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rum Distilled",
+        "unit": "C",
+        "notes": "80 proof",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d96a0b8c4ac7cbc1d161c2aa44e1a37a389ca9c15376254f23807ae33ed1a765",
+    "lineage_hash": "f7c0433a7a1319fd58a0b6f7dea596d8d7d1e275c65bb997ea59e4d8fc703cd8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/sorrel-cake/",
+    "fetchedAt": "2026-09-25T20:52:36.967Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/sorrel-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

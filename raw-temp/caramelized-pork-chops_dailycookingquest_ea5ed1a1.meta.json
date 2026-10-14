@@ -1,0 +1,52 @@
+{
+  "url": "https://dailycookingquest.com/caramelized-pork-chops.html",
+  "slug": "caramelized-pork-chops_dailycookingquest_ea5ed1a1",
+  "title": "Caramelized Pork Chops",
+  "byline": "",
+  "fetchedAt": "2026-08-01T21:44:52.838Z",
+  "ldName": "Caramelized Pork Chops",
+  "ldTime": "PT0H20M",
+  "ldPrepTime": "PT0H10M",
+  "ldCookTime": "PT0H10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Dish",
+  "ldKeywords": [
+    "Pork"
+  ],
+  "ldIngredientsRaw": [
+    "3 slabs of pork loin (about 700-800 gram), about 1\" thick each",
+    "2 tablespoon light soy sauce",
+    "2 tablespoon sweet soy sauce (Indonesian: kecap manis)",
+    "2 tablespoon sugar",
+    "2 tablespoon cornstarch",
+    "1 teaspoon Chinese five-spice powder",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon ground pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Cut each slab of pork loin into three equal slices. Tenderize each slice with the back of a knife/cleaver. You should end up with 9 slices of pork loin.",
+    "In a mixing bowl, marinate the pork slices with light soy sauce, sweet soy sauce, and gently massage the dry rub into the meat. Let the pork marinate for 30 minutes.",
+    "Heat a cast-iron grill pan on medium-high heat for 5 minutes. You can check if the pan is ready by flicking a few drops of water on to the grill pan. If the water evaporates quickly, it’s ready. Also, you don’t want the pan to be too hot, meaning you shouldn’t see smoke rising from the pan.",
+    "Dip a brush/paper towel in oil and rub the surface of the preheated grill pan to prevent food from sticking to the pan, then start placing the marinated pork onto the hot surface.",
+    "Grill both sides until slightly charred and caramelized, up to 2 minutes per side should be enough.",
+    "Let the cooked pork chops rest for 10 minutes on a cutting board covered loosely with a piece of aluminum foil, then cut into thin strips and serve with steamed white rice."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "3 slabs of pork loin (about 700-800 gram), about 1\" thick each",
+    "2 tablespoon light soy sauce",
+    "2 tablespoon sweet soy sauce (Indonesian: kecap manis)",
+    "Dry rub (mix together the following ingredients)",
+    "2 tablespoon sugar",
+    "2 tablespoon cornstarch",
+    "1 teaspoon Chinese five-spice powder",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon ground pepper"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

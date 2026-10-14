@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Coffee and Chocolate Mousse, Rum Caramel, Orange Curd, Hazelnuts",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the chocolate and coffee mousse. Melt the chocolates in a heatproof bowl over a pot of warm water",
+      "Warm 50ml of the cream, add the coffee and stir to dissolve",
+      "Whisk the water, egg yolks, whole eggs and sugar together. Place in a heatproof bowl over a pot of simmering water and whisk continuously until it reaches 74°C",
+      "Fold the sabayon (egg mixture), chocolate and coffee together then allow to cool until it is lukewarm",
+      "Lightly whip the remaining cream to soft peaks and fold through the chocolate mixture",
+      "Transfer to a container and allow to cool and set in the fridge for 3–4 hours",
+      "Place the hazelnuts on a tray and pop in the oven for 10–12 minutes until golden brown",
+      "Once toasted, set aside to cool then cut in half",
+      "Place all the ingredients for the orange curd in a pot and, over a low heat, whisk until the mix has thickened enough to coat the back of a spoon (about 82°C)",
+      "Remove the curd from the heat and transfer to a container. Cover with cling film, making sure that the film is touching the top of the mix, to stop it from forming a skin. Allow to cool then transfer to the fridge to set and chill fully",
+      "To make the rum caramel sauce, slowly melt together the water, butter and soft dark brown sugar over a medium heat. Bring to a boil, add in the cream and bring to a boil again",
+      "Take off the heat and whisk in the rum. Allow to cool then transfer to the fridge to chill",
+      "To serve, place a generous spoonful of mousse on each plate. Wet the back of a spoon with warm water and make an indentation into the mousse. Spoon the orange curd into the indentation. Drizzle the rum caramel around the mousse, finish with sprinkling of hazelnuts"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Egg",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "medium",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "95",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "46665abb960f7a480f1caf919dcd64b252776c3880f9177ad876109ef3bb3ac1",
+    "lineage_hash": "5ccb11279b2028266992825b78f40d3e8b86f3a2aaddec9907ccf9fe876b65a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-chocolate-mousse-rum-caramel-recipe",
+    "fetchedAt": "2026-08-02T13:21:03.081Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-chocolate-mousse-rum-caramel-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

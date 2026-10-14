@@ -1,0 +1,55 @@
+{
+  "url": "https://www.simplytrinicooking.com/brown-bread/",
+  "slug": "a-quick-and-easy-brown-bread-simply-trini-cooking_simplytrinicooking_1d2487c1",
+  "title": "A Quick and Easy Brown Bread | Simply Trini Cooking",
+  "byline": "Author Felix (Simply Trini Cooking)",
+  "fetchedAt": "2026-09-25T21:19:50.618Z",
+  "ldName": "Brown Bread",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT45M",
+  "ldYield": [
+    "10"
+  ],
+  "ldCuisine": "Fusion, International",
+  "ldCategory": "Breads",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "Bundt or tube pan",
+    "1 cup white flour",
+    "2 cup whole wheat flour",
+    "1 cup buttermilk",
+    "1 cup minced raisins",
+    "2 tsp. baking powder",
+    "1 tsp baking soda",
+    "1/2 cup coconut oil",
+    "1 tsp cinnamon",
+    "1/2 tsp. nutmeg",
+    "2  eggs",
+    "1/2 tsp. vanilla extract"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat oven to 325 degrees F.",
+    "Mince the raisins. Beat together the eggs, vanilla extract, buttermilk and oil.",
+    "Sift the flour and add the cinnamon, nutmeg and baking powder. Mix well and add the liquid mixture to make a soft dough. Stir well in the minced raisins.",
+    "Pour into a greased pan and bake for 35 to 45 minutes or till brown. Allow to cool before serving."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "Bundt or tube pan",
+    "1 cup white flour",
+    "2 cup whole wheat flour",
+    "1 cup buttermilk",
+    "1 cup minced raisins",
+    "2 tsp. baking powder",
+    "1 tsp baking soda",
+    "1/2 cup coconut oil",
+    "1 tsp cinnamon",
+    "1/2 tsp. nutmeg",
+    "2 eggs",
+    "1/2 tsp. vanilla extract"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "TT",
+  "siteCourseHint": null
+}

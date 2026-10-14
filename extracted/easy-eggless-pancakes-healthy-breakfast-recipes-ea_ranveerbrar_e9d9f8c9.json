@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Easy Eggless Pancakes",
+    "time": "30-35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Maple Syrup",
+      "Few Strawberry",
+      "Icing Sugar",
+      "Few Blueberry"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add refined flour, powdered sugar, melted butter, vanilla essence, condensed milk, baking powder, honey, milk and mix well and make a batter.",
+      "Now heat a non-stick pan and a ladle full of the batter and cook it until golden brown then flip it on to the other side and cook that as well.",
+      "Repeat this process with the rest of the batter. And let them cool down a little.",
+      "Garnish it with strawberry, blue berry, maple syrup and icing sugar.",
+      "Serving immediately and enjoying it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Condensed Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6368f1a9e16efc1bac20083f04356df8ce562e3607d8a8e8c58d3bd2dd03e68",
+    "lineage_hash": "e2db0dd464e520c0235de6b3e806bcdf26342d629ccaea44ffd06b693c1e7d4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/eggless-pancakes/",
+    "fetchedAt": "2026-08-02T19:40:09.346Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/eggless-pancakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "url": "https://www.chinasichuanfood.com/chicken-broccoli-stir-fry/",
+  "slug": "chicken-broccoli-stir-fry_chinasichuanfood_a9a4210e",
+  "title": "Chicken Broccoli Stir Fry",
+  "byline": "",
+  "fetchedAt": "2026-08-01T17:57:37.581Z",
+  "ldName": "Broccoli and Chicken Stir Fry",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "stir fry",
+  "ldKeywords": "Broccoli, chicken",
+  "ldIngredientsRaw": [
+    "2  chicken thighs",
+    "1  small head of broccoli",
+    "1.5 tablespoon cooking oil",
+    "1 inch ginger section sliced",
+    "2 cloves garlic sliced",
+    "2 teaspoons light soy sauce",
+    "1  small red chili pepper ( , optional)",
+    "1 teaspoon salt",
+    "1 teaspoon starch",
+    "2 teaspoons cooking wine"
+  ],
+  "ldInstructionsRaw": [
+    "Cut the meat off the bone of the chicken thighs; And further cut into small pieces.",
+    "Mix the chicken with marinade sauce evenly in a small bowl and set aside for 10 minutes.",
+    "Cut the broccoli crowns into small pieces you like.",
+    "Bring some water to a boiling in wok and then rinse the crowns pieces around 2 minutes. Move the broccoli out and drain.",
+    "Heat up the cooking oil in wok. Add sliced ginger and garlic until you can smell the aroma. And then discard both the ginger and garlic slices. Leave the oil in wok.",
+    "Add chicken pieces in to stir-fry until the color changes. And then add chopped chili peppers, boiled broccoli and around 2 teaspoons of light soy sauce. Mix thoroughly.",
+    "Serve hot!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "457 kcal",
+    "carbohydrateContent": "6 g",
+    "proteinContent": "26 g",
+    "fatContent": "35 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "147 mg",
+    "sodiumContent": "1631 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "2 chicken thighs",
+    "1 small head of broccoli",
+    "1.5 tablespoon cooking oil",
+    "1 inch ginger section sliced",
+    "2 cloves garlic sliced",
+    "2 teaspoons light soy sauce",
+    "1 small red chili pepper  , optional",
+    "[Marinade sauce]",
+    "1 teaspoon salt",
+    "1 teaspoon starch",
+    "2 teaspoons cooking wine"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

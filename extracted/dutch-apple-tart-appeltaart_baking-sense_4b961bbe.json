@@ -1,0 +1,150 @@
+{
+  "recipe": {
+    "name": "Dutch Apple Tart (appeltaart)",
+    "time": "2 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "498",
+      "carbohydrateContent": "76",
+      "fatContent": "21",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Combine the dry ingredients with lemon zest in a mixing bowl.",
+      "With the mixer running, add the butter and mix until it looks like crumbs.",
+      "Add the egg.",
+      "Mix until the dough comes together.",
+      "Divide the dough into 2/3 and 1/3 pieces and refrigerate until firm.",
+      "Toss the sliced apples with sugar and cinnamon.",
+      "Roll the larger portion of dough to fit a 9″ springform pan.",
+      "Fit the dough into the pan. If the soft dough breaks apart just piece it back together, ensuring there are no gaps in the dough.",
+      "Sprinkle dry bread crumbs into the pan.",
+      "Pour the apples into the pan.",
+      "Roll the smaller portion of dough to a 10″ by 14″ rectangle. Cut the dough into 1″ strips.",
+      "Lay the strips in a lattice pattern over the apples. You can weave the lattice or simply lay them in a criss-cross pattern. Either way it bakes up with a pretty top.",
+      "Cut the dough from the sides to be level with the top.",
+      "Brush the tart with egg wash and sprinkle with granulated sugar.",
+      "Bake until the apples in the center are tender."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "3 cups, see note",
+        "amount": "15",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "4",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "finely grated zest",
+        "amount": "1",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temperature",
+        "amount": "10",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "whisked",
+        "amount": "1",
+        "section": "Tart Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Tart Apples",
+        "unit": "lb",
+        "notes": "peeled and cored",
+        "amount": "3",
+        "section": "Filling/Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "½ cup plus 2 tablespoons",
+        "amount": "5",
+        "section": "Filling/Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Filling/Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Bread Crumbs",
+        "unit": "oz",
+        "notes": "¼ cup",
+        "amount": "1",
+        "section": "Filling/Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": "large",
+        "notes": "whisked for egg wash",
+        "amount": "1",
+        "section": "Filling/Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f83d8d982171ea104af2f497eba85f56122b457cb919696bd65acc586125363a",
+    "lineage_hash": "6e82fc6e23096c79df976fdacd0f37c1d85e4b1a198c32dcce7bfff334834264"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/12/01/dutch-apple-tart-appeltaart/",
+    "fetchedAt": "2026-08-02T07:28:29.071Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/12/01/dutch-apple-tart-appeltaart/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

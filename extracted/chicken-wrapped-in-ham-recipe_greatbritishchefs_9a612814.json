@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Chicken Wrapped in Ham",
+    "time": "1 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make a small incision in the thickest part of each chicken breast, being careful not to cut all the way through but allowing enough room for the stuffing",
+      "Divide the cranberries into 4 equal portions and stuff into the incision of each breast. Season the chicken with a pinch of salt and pepper and arrange 2-3 basil leaves on top of each breast",
+      "Wrap a slice of Parma ham around each breast, ensuring you cover the basil and the opening of the incision. Wrap each breast tightly in cling film and place in the fridge",
+      "Remove the stem from the cauliflower and cut into quarters. Using a small sharp knife or your hands, break the cauliflower up into small florets",
+      "In a large bowl, combine the vegetable oil, salt, garlic and cauliflower. Toss to coat the florets and spread out on a baking tray",
+      "Place into the oven for 20-25 minutes until tender and browned at the edges",
+      "Meanwhile, add the breadcrumbs, parsley, thyme, oregano, olive oil and Parmesan to a bowl and mix well",
+      "Once tender, remove the cauliflower from the oven and toss with the crumb mixture. Place back on the baking tray and set aside. Increase the oven temperature to 220˚C/gas mark 7",
+      "Place a heavy-based pan over a high heat and add olive oil. Once hot, add the chicken breasts and cook until golden, approximately 2-3 minutes. Turn and repeat to cook the opposite sides",
+      "Transfer the breasts to an oven dish and bake for 10–12 minutes, or until the chicken is cooked through. 5 minutes before the chicken is ready, return the cauliflower to the oven",
+      "Remove the breasts and cauliflower from the oven and divide onto 4 plates. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "unit": null,
+        "notes": "skinless",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parma Ham",
+        "unit": "slices",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "peeled and crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parmesan",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dc7ccc3c9bd86346d43c54bfb6f65aaf38c4870908e00169651137d078fd66e9",
+    "lineage_hash": "3e7b8182d4919649cfcdb5223ef56d85ed18c85db7343fb9460e16d27c300d09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chicken-wrapped-in-ham-recipe",
+    "fetchedAt": "2026-08-03T20:14:56.214Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chicken-wrapped-in-ham-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

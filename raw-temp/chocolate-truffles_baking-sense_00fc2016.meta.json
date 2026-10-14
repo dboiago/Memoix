@@ -1,0 +1,60 @@
+{
+  "url": "https://www.baking-sense.com/2022/11/08/homemade-chocolate-truffles/",
+  "slug": "chocolate-truffles_baking-sense_00fc2016",
+  "title": "Chocolate Truffles",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-02T06:41:45.227Z",
+  "ldName": "Chocolate Truffles Recipe",
+  "ldTime": "PT48M",
+  "ldPrepTime": "PT45M",
+  "ldCookTime": "PT3M",
+  "ldYield": [
+    "36",
+    "36 servings"
+  ],
+  "ldCuisine": "French",
+  "ldCategory": "Dessert",
+  "ldKeywords": "chocolate",
+  "ldIngredientsRaw": [
+    "8 oz semi sweet chocolate",
+    "8 oz heavy cream (1 cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "½ oz dark rum (liquor of your choice or optional)",
+    "1 cup chocolate sprinkles (or your choice of toppings)"
+  ],
+  "ldInstructionsRaw": [
+    "Chop the chocolate into small pieces, none larger than 1/2&quot; or chop roughly and finish chopping in a food processor. Place the butter in a large, heatproof bowl with the chopped chocolate.",
+    "Pour the cream into a microwave safe bowl or measuring cup and heat until scalding. You want to get the cream as hot as you can without it boiling over. The time will depend on your microwave. Estimate 2-3 minutes for a cup of cream.",
+    "Pour the cream all at once over the chocolate. Do not stir for 2-3 minutes to allow the chocolate to begin melting",
+    "Gently stir, trying not to incorporate any air, until all the chocolate bits are melted.",
+    "Stir the optional liquor into the ganache then set it aside to cool completely at room temperature. Once the ganache is set at room temperature, chill for several hours before forming the truffles.",
+    "Use small scooper or teaspoon measure to scoop 1&quot; balls of ganache. Line them up on a tray. If they start to get too soft chill before proceeding.",
+    "Roll each truffle in traditional cocoa, sprinkles or your choice of topping.",
+    "Continue coating all the truffles, line them up on pan lined with clean parchment and store at cool room temperature for 1-2 days. Refrigerated for a week or frozen for a month. Serve at room temperature."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "62 kcal",
+    "carbohydrateContent": "3 g",
+    "proteinContent": "1 g",
+    "fatContent": "5 g",
+    "saturatedFatContent": "3 g",
+    "transFatContent": "0.02 g",
+    "cholesterolContent": "8 mg",
+    "sodiumContent": "2 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "2 g",
+    "unsaturatedFatContent": "1.2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "8 oz semi sweet chocolate",
+    "8 oz heavy cream (1 cup)",
+    "½ oz unsalted butter (1 tablespoon)",
+    "½ oz dark rum (liquor of your choice or optional)",
+    "1 cup chocolate sprinkles (or your choice of toppings)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

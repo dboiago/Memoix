@@ -1,0 +1,73 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/avocado-cashew-caesar-salad/",
+  "slug": "avocado-cashew-caesar-salad_itdoesnttastelikechicken_f5d96bdf",
+  "title": "Avocado Cashew Caesar Salad",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-02T06:27:52.613Z",
+  "ldName": "Avocado Cashew Caesar Salad",
+  "ldTime": "PT25M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "American, Italian",
+  "ldCategory": "Salad",
+  "ldKeywords": "caesar, Italian",
+  "ldIngredientsRaw": [
+    "1 ripe avocado",
+    "1/2 cup raw cashews (softened if needed (see step 1))",
+    "1/2 cup water (plus more if needed)",
+    "1/4 cup nutritional yeast",
+    "2 tablespoons lemon juice",
+    "1 tablespoon Dijon mustard",
+    "1 clove garlic",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 large head romaine lettuce ((or two romaine hearts), washed and chopped)",
+    "1 cup homemade or store-bought vegan croutons ((see recipe notes for homemade croutons))",
+    "1 ripe avocado (sliced)",
+    "1/2 cup roasted salted cashews ((see recipe notes for homemade roasted cashews))",
+    "1/4 cup vegan parmesan cheese"
+  ],
+  "ldInstructionsRaw": [
+    "Soften the Cashews (Optional): Softening the cashews helps them blend smoothly. If you have a high-powered blender, you can skip this step. Otherwise, add the cashews to a small pot, cover with water, and boil for about 10 minutes until very tender. Drain and rinse well before using. Alternatively, you can soak the cashews in cool water overnight.",
+    "Prepare the Dressing: In a blender, combine the avocado, raw cashews, water, nutritional yeast, lemon juice, Dijon mustard, garlic, salt, and pepper. Blend until smooth. If the dressing is too thick, add more water, one tablespoon at a time, until the desired consistency is reached. The dressing should be thick and creamy.",
+    "Assemble the Salad: In a large bowl, add the chopped romaine lettuce. Add some of the dressing to the lettuce and toss until evenly coated, using tongs if you prefer. Add more dressing to taste if needed. Top the salad with sliced avocado, croutons, roasted cashews, and vegan parmesan cheese.",
+    "Storage: Store leftover dressing in an airtight container in the fridge for up to 4 days. Use it for another salad, as a dip, or a sandwich spread."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving of salad (made with 1/2 the dressing",
+    "calories": "255 kcal",
+    "carbohydrateContent": "23 g",
+    "proteinContent": "10 g",
+    "fatContent": "16 g",
+    "saturatedFatContent": "3 g",
+    "sodiumContent": "391 mg",
+    "fiberContent": "7 g",
+    "sugarContent": "4 g",
+    "unsaturatedFatContent": "9 g"
+  },
+  "htmlIngredientLines": [
+    "[Dressing (makes enough for 2 salads)]",
+    "▢ 1 ripe avocado",
+    "▢ ½ cup raw cashews, softened if needed (see step 1)",
+    "▢ ½ cup water, plus more if needed",
+    "▢ ¼ cup nutritional yeast",
+    "▢ 2 tablespoons lemon juice",
+    "▢ 1 tablespoon Dijon mustard",
+    "▢ 1 clove garlic",
+    "▢ ½ teaspoon salt",
+    "▢ ¼ teaspoon black pepper",
+    "[Caesar Salad]",
+    "▢ 1 large head romaine lettuce, (or two romaine hearts), washed and chopped",
+    "▢ 1 cup homemade or store-bought vegan croutons, (see recipe notes for homemade croutons)",
+    "▢ 1 ripe avocado, sliced",
+    "▢ ½ cup roasted salted cashews, (see recipe notes for homemade roasted cashews)",
+    "▢ ¼ cup vegan parmesan cheese, store-bought or homemade (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

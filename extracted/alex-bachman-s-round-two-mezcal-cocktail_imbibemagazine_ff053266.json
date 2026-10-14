@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Alex Bachman's Round Two Mezcal Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Chilled",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Stir all the ingredients together with ice in a mixing glass. Strain into a chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": "Bachman uses Siete Misterios DobaYej",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sotol",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gran Classico",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Walnut Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f01ffac445fe5df360225482289f7d08fc0b7711885f7b5a393e0a46e356de6",
+    "lineage_hash": "fd81663bcda9bc885c1800637785204f27b9320a4d126e38e83a483767eb05a4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/alex-bachmans-round-two-mezcal-cocktail/",
+    "fetchedAt": "2026-08-03T23:20:03.085Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/alex-bachmans-round-two-mezcal-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

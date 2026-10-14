@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Agua de Melón (Melon Water)",
+    "time": "8 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "72",
+      "carbohydrateContent": "18",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Slice cantaloupe in half and scoop out seeds. Chop melon and place in blender with 2 cups water and blend until smooth.",
+      "Pour through a course strainer and into a large pitcher or vitrolero.",
+      "Add remaining 6 cups water and sugar. Stir until the sugar dissolves. Serve over ice.",
+      "Strain for a smoother drink."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ripe Cantaloupe",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "divided",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Cane Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d93fb0bd12c9b25a757a6f4535034981dedd03415d8227b330da96bc69956ff2",
+    "lineage_hash": "6c558ec48b3daa34650e0e466125b8c4bf83dbbcd42531e2464a2eaacf2e074b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/agua-de-melon/",
+    "fetchedAt": "2026-08-02T10:23:41.078Z"
+  },
+  "rawSource": "https://muybuenoblog.com/agua-de-melon/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

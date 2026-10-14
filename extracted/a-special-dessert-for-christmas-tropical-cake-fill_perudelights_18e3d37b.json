@@ -1,0 +1,199 @@
+{
+  "recipe": {
+    "name": "Tropical Cake Filled with Mango Mousse and Fruit Salad",
+    "time": "1 hr 10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "PE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350ºF.",
+      "In the mixer beat the egg yolks with ½ cup sugar until it is very pale and makes a ribbon when the beaters are lifted.",
+      "In another bowl beat egg whites with the remaining sugar until firm, and fold into the egg yolks using a spatula.",
+      "Finally sift the flour over the egg mixture, fold carefully and spread the batter on a sheet pan covered with parchment paper or with Silpat.",
+      "Bake for 10 minutes. Take off the oven and cool.",
+      "In a bowl combine all the ingredients. Reserve.",
+      "In a small bowl combine gelatin with ¼ cup cold water and let rest for 5 minutes. Heat over very low heat to dissolve the gelatin. Cool to room temperature",
+      "In the mixer, beat the egg whites adding the sugar by spoonfuls. Combine with the mango juice, the melted gelatin, and the whipped cream.",
+      "Using a round baking pan or a pastry ring, cut two rounds from the biscuit for the base and the top of the dessert, and place one at the bottom of the pan.",
+      "Line the edge of the pan with ladyfingers.",
+      "Drain the fruits, and place ½ of them over the biscuit. Cover with ½ of the mousse.",
+      "Pour the remaining fruit and top with the remaining mousse.",
+      "Finish the dessert with the extra biscuit round. Cover and place in the refrigerator."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Biscuit",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": "Biscuit",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Biscuit",
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Biscuit",
+        "isOptional": false
+      },
+      {
+        "name": "Papaya",
+        "unit": "C",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "Fruit salad",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": "C",
+        "notes": "cubed",
+        "amount": "1",
+        "section": "Fruit salad",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Fruit salad",
+        "isOptional": false
+      },
+      {
+        "name": "Pisco",
+        "unit": "oz",
+        "notes": "or Brandy",
+        "amount": "1",
+        "section": "Fruit salad",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice",
+        "amount": "½",
+        "section": "Fruit salad",
+        "isOptional": false
+      },
+      {
+        "name": "Unflavored Gelatin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": "minus 1 tablespoon",
+        "amount": "1",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Mango Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Pisco",
+        "unit": "oz",
+        "notes": "or Brandy",
+        "amount": "1",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Lightly Whipped Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "Mousse",
+        "isOptional": false
+      },
+      {
+        "name": "Ladyfingers",
+        "unit": null,
+        "notes": null,
+        "amount": "24",
+        "section": "Assemble",
+        "isOptional": false
+      },
+      {
+        "name": "Mango",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": "Assemble",
+        "isOptional": false
+      },
+      {
+        "name": "Kiwi",
+        "unit": null,
+        "notes": "peeled and sliced",
+        "amount": "2",
+        "section": "Assemble",
+        "isOptional": false
+      },
+      {
+        "name": "Raspberries",
+        "unit": "C",
+        "notes": "strawberries or blackberries",
+        "amount": "1",
+        "section": "Assemble",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "3f4ffc98bec1c5edcfd074a2752345fddc600a4620c1d64e94cebdb150d98b19",
+    "lineage_hash": "98d8a7826a1be10140303a239148b9f9e787cad3977c81537e94792d1622992c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://perudelights.com/a-special-dessert-for-christmas-tropical-cake-filled-with-mango-mousse-and-fruit-salad/",
+    "fetchedAt": "2026-09-25T22:16:28.461Z"
+  },
+  "rawSource": "https://perudelights.com/a-special-dessert-for-christmas-tropical-cake-filled-with-mango-mousse-and-fruit-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

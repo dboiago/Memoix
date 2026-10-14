@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Brave Margot",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [
+      "Crushed Ice",
+      "Garnish"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake all the ingredients except the Fernet together with ice, then strain into an ice-filled glass. Top with crushed ice, garnish, then spritz Fernet Branca on top of the drink.",
+      "Pineapple SyrupCombine 1 cup of fresh pineapple juice with 1 cup of sugar and shake to combine. Store in refrigerator for up to 2 weeks."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackstrap Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Velvet Falernum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spritz Fernet Branca",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e4cc7b9116a47666156b1c9cd1215d7166e95dd0f723ccb60d27194598d604f",
+    "lineage_hash": "4d6c70b5735169616fd52667a6a0dcf41b5a077724014f77e1d8f5b576d3c165"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/brave-margot-from-bar-marilou/",
+    "fetchedAt": "2026-08-03T23:20:18.446Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/brave-margot-from-bar-marilou/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

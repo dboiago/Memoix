@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Cedar-Planked Wild Salmon with a Juniper and Wild Berry Glaze",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the glaze. Place the berries in a small heavy saucepan with 2 tablespoons water. Cover the pan and cook over medium heat for 2 minutes. Uncover the pan, reduce the heat to medium-low or low and cook until the berries cook down to a jam-like paste, stirring often with a wooden spoon, about 10 minutes. Add a little water if needed–do not let burn. Taste the mixture for sweetness, adding a little sugar or maple syrup to taste if desired. (If the berries you’ve selected are very sweet, you may not need to add any additional syrup or sugar.)",
+      "Make the rub. Place the juniper berries and peppercorns in a spice mill or coffee grinder and grind to a fine powder. Grind in the salt, running the grinder in short bursts.",
+      "Set up your grill for indirect grilling and preheat to medium-high (400 degrees F). If working on a charcoal grill, rake the coals into two mounds at opposite sides of the grill and cook the fish in the center. If using a 2 burner gas grill, light one side and cook the fish on the opposite side, rotating the plank 180 degrees halfway through cooking. If using a 3 burner gas grill, light the front and rear or left and right burners and cook the fish in the center. If using a 4 to 6 burner gas grill, light the outside burners and cook the fish in the center.",
+      "Just before cooking, season the fish on both sides with the juniper rub. Arrange the fish skin side down on the plank. Arrange the plank on the grill away from the heat. Close the grill lid. Indirect grill until the fish is nearly cooked through, about 15 minutes. Drizzle the berry glaze over the salmon in an attractive pattern. Indirect grill for another 5 to 10 minutes, or until the fish is cooked through. (When done, a slender metal skewer inserted through the side and left there for 20 seconds will feel hot to the touch when removed). The plank may become singed at the edges, but if you’re indirect grilling, it shouldn’t catch fire. If it does, extinguish the flames with a squirt gun.",
+      "Transfer the fish on its plank to a platter and serve it right off the plank, spooning the remaining berry mixture on top, if desired. Garnish with fresh berries."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mixed Fresh Berries (try to Use a Blend of Wild Blueberries, Marionberries, Raspberries, Currants, And/or Gooseberries",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pure Maple Syrup",
+        "unit": null,
+        "notes": "alt: sugar, or more to taste",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e009c0b6ee2becb7f26114cabe114b901b7c42d4440494ef13bb4341c6e4f511",
+    "lineage_hash": "6ffb1c64a5faa1d224e50ebfd9ad01386971c178e2ac83d017e579cba36d3416"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/cedar-planked-wild-salmon-juniper-wild-berry-glaze/",
+    "fetchedAt": "2026-08-03T08:59:51.613Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/cedar-planked-wild-salmon-juniper-wild-berry-glaze/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

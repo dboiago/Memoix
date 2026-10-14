@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Coconut Rose Cookies",
+    "time": "1 hr 5 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "16",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "135",
+      "carbohydrateContent": "13",
+      "fatContent": "9",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Pre-heat oven to 375 F degrees and line a baking sheet with parchment paper.In a large bowl, whisk together flour, desiccated coconut powder, baking powder, cardamom powder and salt. Set aside.",
+      "Now, add ghee and powdered sugar to your stand mixer or use your hand mixer. Using the paddle attachment of the stand mixer, beat the ghee and sugar until well combined.",
+      "Then add in the prepared dry flour mixture and mix.",
+      "Add rose water and mix.",
+      "The dough will come together if using a stand mixer. If using a hand mixer, you might have to use your hands to bring the dough together. Cover the dough with a cling sheet and refrigerate 20 minutes.",
+      "Take a small portion of the dough (around 25 grams) and roll it between your palms, then press lightly (just a bit don't flatten it). Make all cookies similarly and arrange on a baking sheet. You will get around 16-17 cookies. Top all cookies with crushed dried rose petal. Bake at 375 F degrees for around 15 minutes or until the the bottom of the cookies starts becoming light golden brown in color. Let the cookies cool completely and then store in an airtight container at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All Purpose Flour",
+        "unit": "C",
+        "notes": "130 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut Powder",
+        "unit": "C",
+        "notes": "82 grams",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "C",
+        "notes": "not melted, 100 grams, in semi-solid state",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "90 grams",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Water",
+        "unit": "Tbsp",
+        "notes": "45 ml",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rose Petals",
+        "unit": null,
+        "notes": "crushed, dried, to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0e5a181c082fc33cb28cfed3132fd556a787bc0a157d6ecb872243d6e9177525",
+    "lineage_hash": "7a22b0b13f740429f8e6461ae7b94fee1ffac90956ba37d950997b032ed6d91c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/coconut-rose-cookies/",
+    "fetchedAt": "2026-08-02T05:19:50.538Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/coconut-rose-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

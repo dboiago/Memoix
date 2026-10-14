@@ -1,0 +1,73 @@
+{
+  "url": "https://thewoksoflife.com/asian-chicken-salad-lemon/",
+  "slug": "asian-chicken-salad-with-lemon_thewoksoflife_60e8bcae",
+  "title": "Asian Chicken Salad with Lemon",
+  "byline": "Judy",
+  "fetchedAt": "2026-08-02T07:27:07.459Z",
+  "ldName": "Asian Chicken Salad with Lemon",
+  "ldTime": "PT30M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "chicken salad",
+  "ldIngredientsRaw": [
+    "3 slices ginger ((about 1/8 inch thick x 2 inches wide, or 0.3cm x 5 cm))",
+    "1  scallion",
+    "1 pound boneless skinless chicken thighs",
+    "2 tablespoons vegetable oil",
+    "4 cloves garlic ((minced, about 2 tablespoons))",
+    "1 teaspoon Shaoxing wine",
+    "1 1/2 tablespoons light soy sauce",
+    "1 1/2 teaspoons rice vinegar",
+    "1 tablespoon oyster sauce",
+    "1-2  Thai bird chilies ((finely chopped, optional))",
+    "1/4 cup cilantro ((chopped))",
+    "1/2  lemon ((de-seeded and very thinly sliced))",
+    "salt (to taste)"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium pot, bring 6 to 7 cups of water to a boil, along with 3 slices of ginger and 1 scallion.",
+    "Add the chicken thighs, and bring the water to a boil again. Immediately turn off the heat, cover tightly, and let the chicken sit in the pot for 12 to 15 minutes (depending on the size of your chicken thighs). The chicken is done when you poke the thickest part of the thigh with a chopstick and the juice runs clear.",
+    "Meanwhile, make the sauce. Heat the oil in a small saucepan over medium heat. Add the minced garlic, and cook for 15 seconds. Then add the Shaoxing wine, and bring the mixture to a simmer.",
+    "When it starts to simmer, immediately turn off the heat. Stir in the light soy sauce, rice vinegar and oyster sauce.",
+    "When the chicken is cooked through, transfer it to an ice bath to stop the cooking process. Use your hands to shred it into smaller bite-sized pieces, and transfer to a mixing bowl.",
+    "Add the sauce to the chicken, along with the chilies (if using), cilantro, and lemon slices. Toss well, and add salt to taste. Serve."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "217 kcal",
+    "carbohydrateContent": "4 g",
+    "proteinContent": "23 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "7 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "108 mg",
+    "sodiumContent": "603 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1 g",
+    "unsaturatedFatContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 slices ginger (about 1/8 inch thick x 2 inches wide, or 0.3cm x 5 cm)",
+    "▢ 1 scallion",
+    "▢ 1 pound boneless skinless chicken thighs",
+    "▢ 2 tablespoons vegetable oil",
+    "▢ 4 cloves garlic (minced, about 2 tablespoons)",
+    "▢ 1 teaspoon Shaoxing wine",
+    "▢ 1 1/2 tablespoons light soy sauce",
+    "▢ 1 1/2 teaspoons rice vinegar",
+    "▢ 1 tablespoon oyster sauce",
+    "▢ 1-2 Thai bird chilies (finely chopped, optional)",
+    "▢ 1/4 cup cilantro (chopped)",
+    "▢ 1/2 lemon (de-seeded and very thinly sliced)",
+    "▢ salt to taste"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

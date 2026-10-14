@@ -1,0 +1,52 @@
+{
+  "url": "https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH",
+  "slug": "ayam-percik-southeast-asian-recipes_nyonyacooking_896edadd",
+  "title": "Ayam Percik - Southeast Asian Recipes",
+  "byline": "Emily Halim",
+  "fetchedAt": "2026-08-01T16:24:31.464Z",
+  "ldName": "Ayam Percik",
+  "ldTime": "PT02H10M",
+  "ldPrepTime": "PT00H30M",
+  "ldCookTime": "PT01H40M",
+  "ldYield": 4,
+  "ldCuisine": "Malay, Malaysian",
+  "ldCategory": "Main",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4  chicken thigh(s)",
+    "2.5 cm ginger",
+    "0.5 tbsp turmeric powder",
+    "1 tsp salt",
+    "7  shallot(s)",
+    "2  garlic clove(s)",
+    "1.5 tbsp shrimp paste (dried)",
+    "2  lemongrass (white parts only)",
+    "3 tbsp chilli paste (cili boh)",
+    "2 cups coconut milk",
+    "2  lemongrass stalk(s)",
+    "0.5 tbsp salt",
+    "3 tbsp sugar",
+    "1 tbsp tamarind paste"
+  ],
+  "ldInstructionsRaw": [
+    "In a large bowl, combine grated ginger, salt and turmeric powder. Rub the mixture onto the chicken thighs. Once done, set them aside to marinate.",
+    "Steam the marinated chicken thighs for 15  minutes and set them aside.",
+    "In a blender, add shallots, garlic cloves, shrimp paste and lemongrass. Blend until it becomes a smooth paste.",
+    "In a pan (oil it if it is not non-stick), cook chilli paste over medium to low heat for 1 to 2 minutes. Then, add the blended aromatics and cook over low heat for 15 minutes. Stir continuously before adding the coconut milk.",
+    "Add bruised lemongrass to the pan. Subsequently, add salt, sugar and tamarind paste. Continue stirring for another 15 minutes over low heat. The sauce should thicken once ready.",
+    "Place steamed chicken thighs into the gravy. Simmer for 5 minutes. Transfer the chicken onto a lined baking tray. Meanwhile, continue simmering the sauce for another 5 minutes before turning the heat off.",
+    "Bake the chicken thigh for 30 minutes at 200 degrees Celsius or until they are browned. Once ready, spoon some of the remaining sauce onto the cooked chicken. Serve with rice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 Servings",
+    "calories": "849 kcal",
+    "proteinContent": "40 g",
+    "fatContent": "58 g",
+    "carbohydrateContent": "48 g"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "MY",
+  "siteCourseHint": null
+}

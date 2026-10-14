@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Chinese Chili Oil",
+    "time": "20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "20",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "22",
+      "carbohydrateContent": "2",
+      "fatContent": "2",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Place around 1 cup of red pepper powder in a bowl.  Stir in 3 tablespoons of clean water. Combine and let the pepper flakes absorb the water.  If you want a crispy version, then skip mixing in the water.",
+      "Pour around 3 cups of oil into a wok, add scallion, coriander, white onion, and smashed ginger first because they contain water. Heat over a slow fire until the aromatics begin to wither. Place all the spices in.",
+      "Continue heating with slow fire for another 6 to 8 minutes until the contents are all withered and browned. Take out all of the spices and aromatics.",
+      "Heat the oil for another 2 or 3 minutes until slightly smoky. Pour ⅓ of the oil to the bowl. Mix to combine.",
+      "Repeat the above process twice to add all oil to the pepper flakes. Add toasted sesame seeds.",
+      "Keep the chili oil in an air-tight container and this can be kept for up to one month at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Pepper Flakes",
+        "unit": "C",
+        "notes": "Sichuan style pepper flakes is fried before curshing",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted White Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": "must",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": "must",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": "must",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bark Chinese Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion Whites",
+        "unit": null,
+        "notes": "must",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": "must",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Tsao-ko",
+        "unit": null,
+        "notes": "Cao Guo",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Amomum Kravanh",
+        "unit": null,
+        "notes": "White Dou Kou",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "76b25845c7249bf877b53e07721f4bd11328a74c001a4b360747c83ecfeb0317",
+    "lineage_hash": "e65a597a22f01472719659178b3d3152fc873be1d1fb93a1f3d4628591e888c7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-chili-oil/",
+    "fetchedAt": "2026-08-02T01:26:51.902Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-chili-oil/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

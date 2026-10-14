@@ -1,0 +1,144 @@
+{
+  "recipe": {
+    "name": "Belgian Beef Stew With Beer",
+    "time": "1 hr 30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "BE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat oil in a large, heavy pot, add the meat and sear over high heat until all sides are browned. Remove meat from pot and set aside, reserving any oil in the pot.",
+      "Reduce the heat to medium, add garlic and onions to oil and sauté until light brown.",
+      "Return meat to pot and add beer, broth, herbs and bay leaves.",
+      "Cover the pot and bring to a boil, reduce heat and simmer, covered, on low heat for 45 minutes to an hour, or until meat is fork-tender.",
+      "Add red currant jelly, salt and pepper and continue to simmer, uncovered, for 5 to 10 minutes.",
+      "For a thicker stew, make a roux: Melt half a stick of butter in a pan with a half cup of flour, sauté until golden brown and whisk this mixture into boiling stew one tablespoon at a time until stew is the desired consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Lean Beef Stew Meat",
+        "unit": "lb",
+        "notes": "cut into 1 ¼-inch cubes",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Cloves Garlic",
+        "unit": null,
+        "notes": "trimmed",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "½ Oz Brown Ale",
+        "unit": null,
+        "notes": "Stoddart uses Leffe Brune",
+        "amount": "1-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Dry Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Currant Jelly",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e1e1f121ca104308421c318cee9d913335184915098d57f341637a36872771b4",
+    "lineage_hash": "12f6c2fbb32e9d55fcfef1582a20d0e1635ea770cf9639865799dd75907fb0d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/belgian-beef-stew-recipe/",
+    "fetchedAt": "2026-08-03T15:31:14.527Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/belgian-beef-stew-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

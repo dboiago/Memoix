@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Chorizo-Stuffed Squid",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat a frying pan and add the chorizo, letting it fry gently. Once the fat begins to melt out, add the onion and cook for a few minutes, stirring occasionally. Add the garlic and cook for a minute more",
+      "Mix with the rice, lemon juice and parsley and mix well. Taste the mixture and add a little salt if you want to",
+      "Stuff the mixture into the squid, taking care not to over-stuff as they will shrink a little when you cook them. Seal the open ends with cocktail sticks and score the flesh with a very sharp knife on each side – this will help the heat penetrate and allow the squid to cook evenly",
+      "Rub with a little oil and grill on the barbecue or in a griddle pan for a couple of minutes on each side. Serve whole or sliced with a sharply dressed salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Squid",
+        "unit": "medium",
+        "notes": "cleaned",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Rice",
+        "unit": "g",
+        "notes": "cooked and cooled with cold water",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chorizo Sarta",
+        "unit": "g",
+        "notes": "finely diced",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped or crushed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Parsley",
+        "unit": null,
+        "notes": "finely chopped, plus extra to garnish",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6c821976da32317640a36161f563fcf72c3def3b121d29a0d997e55b15ecd91",
+    "lineage_hash": "929b83d484431bf013e9eba0a8d9ce19ba47a1a9bff32d5f7e9729e4e0b93f59"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chorizo-stuffed-squid-recipe",
+    "fetchedAt": "2026-08-03T09:49:47.367Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chorizo-stuffed-squid-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

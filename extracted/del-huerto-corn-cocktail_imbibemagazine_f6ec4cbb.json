@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Del Huerto Corn Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Muddle the corn in a shaker tin. Add the remaining ingredients with ice and shake to chill. Double strain over fresh ice into a rocks glass rimmed with salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grilled Corn",
+        "unit": "oz",
+        "notes": "by weight",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c0bd85a0fd20e62da43282560208ca3b5127e8fd269c48e5b527f9336991b743",
+    "lineage_hash": "4e10d13709690253458bcda1af5f6b22e9ced501389743b4c88333ccda4a91e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/del-huerto-corn-cocktail/",
+    "fetchedAt": "2026-08-03T21:10:08.307Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/del-huerto-corn-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

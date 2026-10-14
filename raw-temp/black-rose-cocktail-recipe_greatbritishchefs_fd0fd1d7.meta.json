@@ -1,0 +1,37 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/black-rose-cocktail-recipe",
+  "slug": "black-rose-cocktail-recipe_greatbritishchefs_fd0fd1d7",
+  "title": "Black Rose Cocktail Recipe",
+  "byline": "",
+  "fetchedAt": "2026-08-03T10:41:14.522Z",
+  "ldName": "Black Rose",
+  "ldTime": "PT5M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Cocktail",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "140g of blackberries",
+    "100g of granulated sugar",
+    "100ml of water",
+    "1 lemon, zested",
+    "2 sprigs of thyme",
+    "50ml of premium gin",
+    "Indian tonic water, to top up",
+    "1 slice of lime",
+    "1 sprig of rosemary"
+  ],
+  "ldInstructionsRaw": [
+    "To make the blackberry syrup, heat the blackberries, sugar and measured water in a saucepan until boiling. Reduce the heat and simmer for 20 minutes",
+    "Remove from the heat, add the lemon zest and thyme and leave to steep for 20 minutes. Strain and pour into a sterilised glass bottle. This will keep in the sealed bottle in a cool, dark place for up to 2 weeks",
+    "To make the cocktail, put the gin, 2 tbsp syrup and lime wheel into a cocktail shaker. Shake well and muddle.",
+    "Add ice cubes and shake, then strain into a chilled goblet over ice. Top up with the tonic water and garnish with a rosemary sprig"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

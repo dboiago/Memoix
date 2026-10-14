@@ -1,0 +1,71 @@
+{
+  "recipe": {
+    "name": "French Martini",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": "Coupe",
+    "garnish": [
+      "Lemon Twist"
+    ],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a cocktail shaker with ice and shake until chilled.",
+      "Strain into a chilled coupe.",
+      "Garnish with a lemon twist."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": "preferably Fords",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chambord",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Barspoon Raspberry Marmalade",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "20329cc12b8bb180d50da9db33478dab5049b5b26291f5af8e45d95127e4f4fc",
+    "lineage_hash": "cbc82436ee44b17ad78a5646287fd3d11dbe13dc4a349c5eccd0d56d905926dc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://punchdrink.com/recipes/dreamlands-french-martini/",
+    "fetchedAt": "2026-08-03T03:02:06.130Z"
+  },
+  "rawSource": "https://punchdrink.com/recipes/dreamlands-french-martini/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

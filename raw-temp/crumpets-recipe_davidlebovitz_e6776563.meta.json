@@ -1,0 +1,50 @@
+{
+  "url": "https://www.davidlebovitz.com/crumpets-recipe/",
+  "slug": "crumpets-recipe_davidlebovitz_e6776563",
+  "title": "Crumpets recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-02T21:53:32.019Z",
+  "ldName": "Crumpets",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "20",
+    "20 crumpets"
+  ],
+  "ldCuisine": null,
+  "ldCategory": "Breakfast",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "1 1/2 cups (355ml) milk, regular or lowfat (at slightly above room temperature (about 110ºF, 43ºC) )",
+    "1 teaspoon  sugar",
+    "2 1/4 teaspoons active dry yeast",
+    "2 3/4 cup (390g) all-purpose flour",
+    "1 teaspoon kosher salt or sea salt",
+    "3/4 cup, plus 1 tablespoon (195ml) tepid water",
+    "1/2 teaspoon baking soda"
+  ],
+  "ldInstructionsRaw": [
+    "In the bowl of a stand mixer, mix the tepid milk with the sugar and yeast. Let proof for 10 minutes, or until the yeast starts to bubble.",
+    "Fit the mixer with the paddle attachment and gradually mix in the flour and salt. Turn the mixer to high speed and beat for 3 minutes. (You can also make this by hand in a large bowl, and beat the mixture vigorously.)",
+    "Cover the bowl with a kitchen towel and let rise in a warm place until the dough has doubled, about 1 hour.",
+    "Mix the water and baking soda together and beat them into the dough.",
+    "Heat a wide skillet over medium heat. Pour some neutral-flavored oil into a small bowl and use a paper towel to wipe the bottom of the pan with oil, and the inside of the crumpet rings or molds. (Mine were 4-in/10cm, but you can use another size.)",
+    "Place the rings in the pan and fill the molds with batter so they&#39;re halfway full. Let the crumpets cook; bubbles will appear on the top while the bottom browns. Cook them long enough so bubbles can form, checking the bottom (and perhaps adjusting the heat) to make sure the undersides of the crumpets aren&#39;t getting too dark.",
+    "When there are bubbles on top and the bottoms are browned, about 4 to 5 minutes, use tongs to remove the rings and flip the crumpets over. (Tip: You can actually remove the rings once the crumpets appear set, so they have a few minutes to cool down before you reuse for the next batch.) Cook the crumpets on the other side until golden brown. If you&#39;re like me, you&#39;ll probably toast them so they don&#39;t need to be very dark. When done, place the crumpets on a cooling rack.",
+    "Wipe the inside of the crumpet rings clean of any stuck-on bits, wipe the bottom of the pan with a bit of additional oil, and repeat the process, making more crumpets with the remaining batter."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "1 1/2 cups (355ml) milk, regular or lowfat, at slightly above room temperature (about 110ºF, 43ºC)",
+    "1 teaspoon  sugar",
+    "2 1/4 teaspoons active dry yeast",
+    "2 3/4 cup (390g) all-purpose flour",
+    "1 teaspoon kosher salt or sea salt",
+    "3/4 cup, plus 1 tablespoon (195ml) tepid water",
+    "1/2 teaspoon baking soda"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

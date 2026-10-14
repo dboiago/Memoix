@@ -1,0 +1,36 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/beignets-with-rum-mousse",
+  "slug": "beignets-with-rum-mousse_lacucinaitaliana_e7e0bc3a",
+  "title": "Beignets with Rum Mousse",
+  "byline": "by  Editorial staff   March 27, 2020",
+  "fetchedAt": "2026-08-03T05:30:51.882Z",
+  "ldName": "Beignets with Rum Mousse",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "6",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Pasticceria",
+  "ldIngredientsRaw": [
+    "18 small beignets",
+    "3/4C. cream",
+    "3 1/2OZ. dark chocolate",
+    "Rum"
+  ],
+  "ldInstructionsRaw": [
+    "<p>Over a double boiler, melt the chocolate, then let it cool to 83°F.</p>",
+    "<p>Then, combine the melted chocolate with the whipped cream and 1 spoonful of rum to form a soft mousse.</p>",
+    "<p>Use the cream as a filling for the beignets. Fill the beignets just before serving for a perfect result. Serve immediately.</p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "18 small beignets",
+    "3/4 C. of cream",
+    "3 1/2 OZ. of dark chocolate",
+    "Rum"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

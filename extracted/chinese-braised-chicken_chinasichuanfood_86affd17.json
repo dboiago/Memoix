@@ -1,0 +1,180 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Chicken",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "1250",
+      "carbohydrateContent": "36",
+      "fatContent": "76",
+      "proteinContent": "101"
+    },
+    "directions": [
+      "Clean the chicken and then soak in clean water for 30 minutes. Drain.",
+      "And then add all the marinating ingredients and marinate for 2-3 hours (the inner side should be well marinated too).",
+      "Transfer only the chicken to a large pot, add enough water to cover. Add all the spices, green onion, sugar and soy sauce. Bring to a boil and then simmer for 30 minutes. Turn off the fire and let the chicken soak in the liquid overnight. Re-heat the content to a boiling and pick the chicken out and air dry naturally.",
+      "Then pre-heat oven to 180 degree C, brush a small layer of honey (optional) and roast in middle rack for 15 minutes.",
+      "Cut into small chunks and serve warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken",
+        "unit": null,
+        "notes": "1 to 1.5kg",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five Spice Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Thumb Ginger",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Rock Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Star Anises",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Bark Chinese Cinnamon",
+        "unit": null,
+        "notes": "break into small sections",
+        "amount": "1",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorn",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Water As Needed",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "Slow Braising Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Wash",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Wash",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b5ed7cdd4634c87562d382b0d0c1ad4d1788adb7f2f3955db3ec69d643499ce4",
+    "lineage_hash": "12964cbb19c54f8cdd7cb7e551bc614f687c1559c78fc1369ee109b8c0862ace"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-braised-chicken/",
+    "fetchedAt": "2026-08-02T03:03:14.250Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-braised-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

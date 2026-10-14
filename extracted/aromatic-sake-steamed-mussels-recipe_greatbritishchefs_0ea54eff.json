@@ -1,0 +1,110 @@
+{
+  "recipe": {
+    "name": "Aromatic Sake Steamed Mussels",
+    "time": "25 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Clean and debeard the mussels. Tap any open ones and discard any whose shells do not close. Transfer the mussels to a bowl of salted iced water. A great tip for ensuring a grit-free dish is to scatter a handful of oats over the top of the water and set aside for 45 minutes – the mussels feed off the oats and, in feeding, expel any sand trapped inside their shells",
+      "In a large pan, soften the garlic in a little oil and stir through the ginger. Pour in the sake and simmer for 5 minutes before adding the tamari",
+      "Toss in the spring onions and chillies, followed by the mussels. Place a lid on the pan and steam for 3–5 minutes, or until the mussels have opened",
+      "Take the pan off the heat and scatter over the chopped parsley. Serve immediately in warmed bowls"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mussels",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "pc",
+        "notes": "fresh, peeled and sliced finely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": "Ginjo, Shirataki Jozen Mizuno Gotoshi Pure Rice Wine",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "or more if liked, finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Chopped Flat-leaf Parsley",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f4f4c943e03648341a5a452ddc49d5e78626fc9bfca512016b2cea0a7c088526",
+    "lineage_hash": "828f1ba4eefa0ceed1a3ffc7a4041d505350e7ff25662a6a4a64cea145a7939b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/sake-steamed-mussels-recipe",
+    "fetchedAt": "2026-08-03T14:22:19.334Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/sake-steamed-mussels-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

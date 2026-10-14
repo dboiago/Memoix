@@ -1,0 +1,154 @@
+{
+  "recipe": {
+    "name": "Chicken Fried Rice (鸡肉炒饭)",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "465",
+      "carbohydrateContent": "57.3",
+      "fatContent": "15.3",
+      "proteinContent": "22.6"
+    },
+    "directions": [
+      "Combine the chicken with the marinade ingredients in a small bowl. Mix until the chicken is evenly coated. Let marinate while preparing the other ingredients.",
+      "In another bowl, combine the sauce ingredients and mix well.",
+      "Use your fingers or a fork to separate any clumps of rice before cooking.",
+      "Heat 1 tablespoon of oil over high heat in a large skillet until hot. Spread the marinated chicken into a single layer in the pan. Cook without moving until the bottom turns golden, 2 minutes or so. Flip to cook the other side until golden, another 2 minutes. Stir a few times, then transfer the chicken to a plate.",
+      "Add 2 tablespoons of oil and the green onions. Cook and stir to release the fragrance, 30 seconds or so. (*Footnote 4)",
+      "Add the rice and turn to medium-high heat. Stir to separate the grains and coat the grains evenly with the oil. Let the rice toast, stirring occasionally, until the rice appears dried and crispy, 5 minutes or so. Turn to medium heat if the pan gets too hot.",
+      "Pour in the sauce. Stir and cook until the rice is evenly coated.",
+      "Move the rice to one side of the pan. Add 1/2 tablespoon of oil to the other side and then the frozen vegetables. Cook until the vegetables are fully thawed and the excess moisture is cooked off, 1 to 2 minutes. Stir everything together and move everything to one side of the pan again.",
+      "Add the remaining 1/2 tablespoon of oil to the empty side of the pan and pour in the beaten eggs. Cook until the bottom is set. Stir a few times to scramble it, then stir it together with the rice.",
+      "Add the cooked chicken back into the pan. Stir everything together.",
+      "Serve hot as a main or side dish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs (or Chicken Breast)",
+        "unit": "oz",
+        "notes": "cut into 1/2” (1 cm) pieces",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "or dry sherry",
+        "amount": "2",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": "*Footnote 1",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": "or black pepper",
+        "amount": "¼",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "*Footnote 2",
+        "amount": "3",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "or 1/2 small onion, diced, sliced",
+        "amount": "4",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Cold Day-old Rice",
+        "unit": "C",
+        "notes": "*Footnote 3",
+        "amount": "4",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Mixed Vegetables",
+        "unit": "C",
+        "notes": "frozen",
+        "amount": "1",
+        "section": "Rice",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "3",
+        "section": "Rice",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "528c7722056f7ec6c75d904b5568851846444d2cf26ee7dc8d82b3c1cc9b6f7d",
+    "lineage_hash": "7a8798910aba989131a280dfd3b0e0c960980bdfc4f57336209b431cc70bc0d5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chicken-fried-rice/",
+    "fetchedAt": "2026-08-02T07:39:02.138Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chicken-fried-rice/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,55 @@
+{
+  "url": "https://japan.recipetineats.com/dashimaki-tamago-japanese-rolled-omelette/",
+  "slug": "dashimaki-tamago-japanese-rolled-omelette_japan_c1b15d1d",
+  "title": "Dashimaki Tamago (Japanese Rolled Omelette)",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T16:32:22.744Z",
+  "ldName": "Dashimaki Tamago (Japanese Rolled Omelette)",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Side",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "4  eggs ((note 1))",
+    "4 tbsp dashi stock ((note 2))",
+    "½ tbsp light soy sauce",
+    "½ tbsp sake",
+    "2 tsp sugar",
+    "1½ tbsp oil with a small piece of paper towel soaked in",
+    "2 tbsp grated daikon ((white radish))"
+  ],
+  "ldInstructionsRaw": [
+    "Gently beat eggs in a bowl or a large measuring cup, trying to cut the egg white into small chunks but do not beat hard (note 3).",
+    "Add all the ingredients except oil into the bowl/measuring cup and mix until sugar is dissolved.",
+    "Place a non-stick frypan (note 4) or a tamagoyaki pan over medium low to medium heat and oil using the oil-soaked paper towel as if you are wiping the pan so that the amount of oil is not excessive.",
+    "When the frypan and oil is heated up (note 5), pour about 1/5 of the egg mixture into the pan. The egg should start cooking straight away and you should see some bubbles lifting the surface of the egg.",
+    "Poke the large bubbles to flatten using chopsticks or the edge of a spatula.",
+    "When the surface of the egg starts drying but is still half wet, fold the both sides of the egg sheet inwards using a spatula so that the sides are straight instead of round (frypan only). Use a spatula to roll the egg starting from the furthest end from you. Place the spatula underneath the egg about 1.5cm (½”) into the egg, then lift and flip towards you. It will fold with about 1.5cm (½”) width.",
+    "Repeat to roll the rest using the first fold as the core of the roll until the egg roll shifts to the end of the frypan closest to you.",
+    "Tidy up the rolled egg using the spatula so that the width of the egg is even (note 6).",
+    "Lightly oil the farthest end part of the frypan using the oiled paper towel. Slide the egg to the farthest end of the frypan and oil the rest of the frypan lightly.",
+    "Pour 1/5 of the original egg mixture amount to the frypan. Do not pour the egg mixture over the cooked egg roll but lift the egg roll slightly so that the new egg mixture goes underneath it.",
+    "Repeat steps 5 to 10 until the egg mixture is used up (note 7), ending with step 8.",
+    "Transfer the egg to a cutting board (note 8). Slice it or dice it and place the pieces on serving plates.",
+    "Squeeze excess water out of grated daikon, add it next to the egg slices and serve."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "4\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\teggs\n\t\t\t\t\t\t\t\t\t\t(note 1)",
+    "4\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdashi stock\n\t\t\t\t\t\t\t\t\t\t(note 2)",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tlight soy sauce",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsake",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsugar",
+    "1½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\toil with a small piece of paper towel soaked in",
+    "[Garnish (optional)]",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tgrated daikon\n\t\t\t\t\t\t\t\t\t\t(white radish)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

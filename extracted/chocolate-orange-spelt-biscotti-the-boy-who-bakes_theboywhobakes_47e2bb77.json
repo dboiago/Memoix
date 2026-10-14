@@ -1,0 +1,140 @@
+{
+  "recipe": {
+    "name": "Chocolate Orange Spelt Biscotti",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180ºC (160ºC Fan) and line a large baking tray with parchment paper.",
+      "In a large bowl mix together the flour, baking powder, salt and sugar.",
+      "Place the honey, butter and orange zest and place into a small saucepan and over low/medium heat cook until the butter has melted and the mixture is combined. Set aside for 5 minutes to cool.",
+      "Pour the butter mixture, eggs, almonds and cacoa nibs into the bowl with the flour and use a wooden spoon to stir together to form a soft dough.",
+      "Dust the worksurface with more flour and turn out the dough and cut into two even pieces. Roll each piece into a log that is 5cm wide and place onto the prepared baking tray.",
+      "Bake in the preheated oven for about 25 minutes or until golden brown then remove from the oven and allow to cool for 10 minutes.",
+      "Once cooled use a large serrated knife to cut into slices, about 2cm wide. Turn the slices cut side up and bake for a further 10 minutes.",
+      "Remove and allow to cool fully. At this stage you can store the cookies in an airtight container for up to two weeks.",
+      "But if you want to serve them as I prefer, melt the chocolate and dip the cookies halfway into the chocolate. Allow any excess to drip back into the chocolate before transferring to a sheet of parchment.",
+      "Once all of the cookies have been dipped grate the orange zest over the cookies. Set in the fridge for 15 minutes or until the chocolate has set."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Doves Farm Organic Wholemeal Spelt Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "335",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Fine Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "g",
+        "notes": "raw, skin on",
+        "amount": "100",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Cacoa Nibs",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Biscotti",
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Coating",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c8f6604e4bc7abb16cb02e1b1c9b4f9fadc7b4c4dfdce89ca00907dd14b85a5",
+    "lineage_hash": "28c6183eb3e6280a52772fe60d0f800d3968a1d509866c0a3946806e05af4458"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2019/11/29/chocolate-orange-spelt-biscotti",
+    "fetchedAt": "2026-08-01T18:48:05.898Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2019/11/29/chocolate-orange-spelt-biscotti",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

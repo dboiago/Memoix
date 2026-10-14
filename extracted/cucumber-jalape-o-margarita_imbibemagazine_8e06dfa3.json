@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Cucumber Jalapeño Margarita",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a shaker, muddle the jalapeño and cucumber. Add the other ingredients and shake with ice. Strain into an ice-filled glass; garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanco Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Triple Sec",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Agave Syrup",
+        "unit": "oz",
+        "notes": "1:1",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño Wheels",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Wheels",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6ffee99e6a76959656b69a5ebeb91916a1ebcc99a2c8140cd19f8da6803bf576",
+    "lineage_hash": "a02eb0409de781eee02fa4e250e58de57b494fb7abf1b5f2c2fb2d514ebac4f3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cucumber-jalapeno-margarita/",
+    "fetchedAt": "2026-08-03T22:25:35.082Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cucumber-jalapeno-margarita/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

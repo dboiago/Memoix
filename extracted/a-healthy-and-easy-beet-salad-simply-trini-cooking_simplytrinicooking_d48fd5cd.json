@@ -1,0 +1,84 @@
+{
+  "recipe": {
+    "name": "Beet Salad",
+    "time": "10 min",
+    "course": "salad",
+    "rating": 0,
+    "serves": "11",
+    "source": "scraped",
+    "cuisine": "TT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Lightly saute the broccoli in the coconut oil.",
+      "Add all the ingredients into a large bowl and toss."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Iceberg Lettuce",
+        "unit": "C",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": "C",
+        "notes": "diced",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beet",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots Julienne",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b8dab977324b99d408cf64b5405f6d44fb0b0742d07e6ef027222f515c0d25dc",
+    "lineage_hash": "c1145a0f62c8634448c92e6e01161ce7f34ad8f10b2ca52d0d0c08a597791a97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.simplytrinicooking.com/beet-salad/",
+    "fetchedAt": "2026-09-26T01:22:25.671Z"
+  },
+  "rawSource": "https://www.simplytrinicooking.com/beet-salad/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

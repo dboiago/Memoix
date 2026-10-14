@@ -1,0 +1,55 @@
+{
+  "url": "https://spanishsabores.com/non-alcoholic-sangria-recipe/",
+  "slug": "best-non-alcoholic-sangria-mocktail-spanish-sabore_spanishsabores_8a968e3c",
+  "title": "Best Non-Alcoholic Sangria Mocktail - Spanish Sabores",
+  "byline": "Lauren Aloise",
+  "fetchedAt": "2026-08-02T10:27:35.587Z",
+  "ldName": "Spanish Virgin Sangria Mocktail",
+  "ldTime": "PT65M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": null,
+  "ldYield": [
+    "6"
+  ],
+  "ldCuisine": "Spanish",
+  "ldCategory": "Cocktail",
+  "ldKeywords": "non-alcoholic sangria, sangria mocktail",
+  "ldIngredientsRaw": [
+    "1  lemon (thinly sliced, peel on)",
+    "1  orange (thinly sliced, peel on)",
+    "1  apple (cored, thinly sliced, skin on)",
+    "1 cup assorted fresh berries",
+    "1 cup grape juice",
+    "1 cup water",
+    "4 cups sparkling water (chilled)"
+  ],
+  "ldInstructionsRaw": [
+    "Place all of the sliced fruit and berries in a large pitcher. Pour in the grape juice and still water and leave in the fridge for at least an hour. You can also leave it in the fridge overnight if you have the time!",
+    "When ready to serve, top up the pitcher with the sparkling water and serve immediately, poured over ice."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "70.61 kcal",
+    "carbohydrateContent": "18.25 g",
+    "proteinContent": "0.82 g",
+    "fatContent": "0.27 g",
+    "saturatedFatContent": "0.03 g",
+    "sodiumContent": "38.11 mg",
+    "fiberContent": "2.43 g",
+    "sugarContent": "14.09 g",
+    "unsaturatedFatContent": "0.1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 lemon thinly sliced, peel on",
+    "▢ 1 orange thinly sliced, peel on",
+    "▢ 1 apple cored, thinly sliced, skin on",
+    "▢ 1 cup assorted fresh berries",
+    "▢ 1 cup grape juice",
+    "▢ 1 cup water",
+    "▢ 4 cups sparkling water chilled"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "ES",
+  "siteCourseHint": "Mains"
+}

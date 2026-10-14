@@ -1,0 +1,346 @@
+{
+  "recipe": {
+    "name": "Chatpata Imli Chicken",
+    "time": "35-45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [
+      "Coriander Sprig"
+    ],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add coriander stems, ginger, garlic, onions, salt to taste and transfer it into a mixer grinder jar.",
+      "Grind it into a smooth fine paste and keep it aside for further use.",
+      "In a bowl, add chicken, degi red chili powder, asafoetida, turmeric powder, coriander powder, mustard oil, salt to taste and marinate it well.",
+      "Keep it aside for 10-15 minutes to rest.",
+      "In a shallow pan, heat mustard oil, oil, add marinated chicken, dry red chillies and cook it until tender.",
+      "Transfer it to a plate and keep it aside for further use.",
+      "In a handi or saucepot, heat mustard oil, oil, add black peppercorns, cloves, fenugreek seeds, cumin seeds, fennel seeds and let it splutter.",
+      "Add prepared paste, ghee and sauté it for 7-8 minutes on moderate heat.",
+      "Add roasted chicken and mix it well.",
+      "Add tamarind pulp, degi red chili powder, sugar, water and stir it well.",
+      "Cover it with the lid and cook it for 10-15 minutes on moderate heat.",
+      "Add coriander leaves, ginger, ghee, salt to taste and give it a quick boil.",
+      "Transfer it on a serving dish and garnish it with coriander sprig.",
+      "Serve hot with roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tamarind",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Soaking Tamarind",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1⅓",
+        "section": "For Soaking Tamarind",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Stems",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled",
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "less spicy & broken into half",
+        "amount": "3",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Paste",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken",
+        "unit": "g",
+        "notes": "drumstick & thigh with bones",
+        "amount": "900",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasting Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Roasting Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Marinated Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Roasting Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "4-5",
+        "section": "For Roasting Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Black Peppercorns",
+        "unit": null,
+        "notes": null,
+        "amount": "5-6",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves with Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & chopped",
+        "amount": "½",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1-2",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Imli Chicken",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "faf459e7be186febf975c9de0fe4348151f81ad34dafb3feafb4176060de4bea",
+    "lineage_hash": "e18869b62b6670f3995ab44247c4bb7e6fe1c57c4182dd48a4b3d287c7cbb339"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chatpata-imli-chicken/",
+    "fetchedAt": "2026-08-02T16:15:06.728Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chatpata-imli-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

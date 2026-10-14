@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Air Fryer Sweet Potato",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DE",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat air fryer to 400°F on roast.",
+      "Slice sweet potatoes into halves.",
+      "Brush olive oil over both skin and flesh sides of the halves.",
+      "Sprinkle salt and pepper on the flesh side.",
+      "Place flesh side down on tray (or 2 trays, depending on the size of your sweet potatoes) and cook for 40 minutes on middle rack of fryer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sweet Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt and Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4fb2d75b36166b50c0341d936657f64d79303581c9a797bfef8ca50a3a9fe6fd",
+    "lineage_hash": "36b7732e66c54d82cb0779c7da97ff230f0ff15cb7e68e1e4633dcd29bf98fa7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.quick-german-recipes.com/easy-sweet-potato-recipe.html",
+    "fetchedAt": "2026-09-25T20:08:31.643Z"
+  },
+  "rawSource": "https://www.quick-german-recipes.com/easy-sweet-potato-recipe.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

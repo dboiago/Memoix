@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Ciderhouse Mule",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the sparkling rosé, to a shaker with ice. Shake until chilled. Add the sparkling rosé to the shaker before straining the cocktail into a glass filled with ice. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raspberry Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sparkling Rosé",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c38c7f65c1159e18aa3779be862ae1a6ded073f56b66d75a852a8c734fda1776",
+    "lineage_hash": "32626cdfe3666322b427e0424fb7c3d9eb1266a3d459c788c5eda04e3d87f878"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ciderhouse-mule-from-pebble-bar/",
+    "fetchedAt": "2026-08-03T22:42:35.213Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ciderhouse-mule-from-pebble-bar/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

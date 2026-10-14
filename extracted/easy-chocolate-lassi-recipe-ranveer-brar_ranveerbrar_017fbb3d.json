@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Chocolate lassi (चॉकलेट लस्सी)",
+    "time": "5 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a blender, add curd, milk, chocolate syrup, roasted almond, jaggery and blend it into a smoothie texture.",
+      "Pour it into the glass. Garnish with almonds and serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jaggery",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Almonds",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "10-15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e257ffbe075d948f61eac16db07ed4690d2dea080238ff1e5e5eee8c503eee73",
+    "lineage_hash": "3c5b1143471afb6045b652b61bade0691d515d1f9823f413843c21f2af3d00e9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chocolate-lassi/",
+    "fetchedAt": "2026-08-02T11:21:58.925Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chocolate-lassi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

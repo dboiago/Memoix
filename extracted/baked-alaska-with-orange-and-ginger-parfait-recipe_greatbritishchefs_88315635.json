@@ -1,0 +1,235 @@
+{
+  "recipe": {
+    "name": "Baked Alaska with Orange and Ginger Parfait",
+    "time": "2 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the ginger parfait. Add the egg yolks to the bowl of a stand mixer fitted with the whisk attachment, and whisk until pale and fluffy",
+      "Simmer the water and sugar until they reach 119°C",
+      "Once at temperature, slowly pour the hot syrup over the egg yolks and whisk on full speed until cool, then add the stem ginger and ground ginger",
+      "Once the egg yolk mix is cool to the touch, gradually fold in the whipped cream",
+      "Once the cream is folded in, transfer to a piping bag and pipe into smaller silicone half sphere moulds",
+      "For the second parfait, the process is the same. Add egg yolks to the bowl of a stand mixer fitted with the whisk attachment, and whisk until pale and fluffy",
+      "Simmer the water and sugar until they reach 119°C",
+      "Once at temperature, slowly pour the hot syrup over the egg yolks and whisk on full speed until cool then add the orange compound and citric acid. Set aside to cool",
+      "Once the egg yolk mix is cool to the touch, gradually fold in the whipped cream",
+      "Once the cream is folded in, transfer to a piping bag and pipe into the larger silicone doughnut moulds",
+      "Cover the parfaits with a sheet of baking parchment and freeze until completely solid. Ideally, if you have a very powerful freezer, to -18",
+      "For the shortbread, using a food processor, blitz together the flour, sugar and the cold butter until it forms a crumb",
+      "Transfer to a bowl and then add vanilla",
+      "Mix to combine, and knead slightly by hand until it starts to come together. Wrap in cling film and chill for 1 hour",
+      "Once chilled, preheat the oven to 160°C, fan speed 2",
+      "Roll the shortbread out to to 2.5mm, and then cut out circles using a 10 cm round cutter",
+      "Bake the shortbread on a lined tray for 12 minutes, then remove and let cool",
+      "For your meringue, whisk the egg whites in a stand mixer until they form semi stiff peaks",
+      "Heat the sugar and water until the syrup reaches 119°C",
+      "Slowly and carefully drizzle the hot syrup into the egg whites while whisking",
+      "Once all the syrup is added, mix on full speed until the meringue is cool to the touch",
+      "Place an orange parfait on a piece of shortbread. Press together two of the ginger parfait half spheres and place on top of the orange parfait, inside the indent",
+      "Carefully pipe the Italian meringue over the parfaits. Stu uses a record player to rotate the parfaits to ensure he's precise! Once the parfaits are covered, transfer the Alaskas to the freezer until solid",
+      "Once frozen, remove from the freezer and blow torch until evenly charred",
+      "Garnish with marigold leaves, segmented orange and gingerbread"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pasteurised Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stem Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": "softly whipped",
+        "amount": "612",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pasteurised Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Compound",
+        "unit": "g",
+        "notes": null,
+        "amount": "66",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Citric Acid",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": "softly whipped",
+        "amount": "612",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "735",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cane Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "190",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "chilled and diced",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marigold Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "cut into segments",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gingerbread",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8e567877a9a34e5665629da94d855a25248baa5a993a0279fabb20e30417f5e4",
+    "lineage_hash": "f9e7d7ebc7f5ee2a317792e8413e37ed8c58cc31844643c0de03c38f644b6a2c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-alaska-orange-ginger-parfait-recipe",
+    "fetchedAt": "2026-08-02T11:37:22.492Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-alaska-orange-ginger-parfait-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

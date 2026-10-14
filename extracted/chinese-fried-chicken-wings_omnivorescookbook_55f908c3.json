@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Chinese Fried Chicken Wings",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "346",
+      "carbohydrateContent": "17.7",
+      "fatContent": "15.1",
+      "proteinContent": "33.3"
+    },
+    "directions": [
+      "Use a fork to poke holes in the back of the wings, to help the wings absorb the flavor better. Transfer wings to a big bowl. Add the garlic, scallion, Shaoxing wine, light soy sauce, oyster sauce and salt. Marinate for 2 hours at room temperature or up to overnight in the refrigerator.",
+      "When ready to cook, drain any liquid from the wings. Add the all-purpose flour. Mix with your hands until the flour is mixed evenly. The wings should be coated with a sticky batter without any dry flour.",
+      "Add the cornstarch and mix with your hands again until all the wings are evenly coated.",
+      "Heat 3” oil in a medium deep pot to 320°F (160°C). Line a baking sheet with a wire rack.",
+      "Shake off excess cornstarch from the wings, and carefully add into the oil. Fry in batches if needed so you don’t crowd the pot. Fry for 3 minutes at 320°F (160°C). Do not touch the wings during the first 1 to 2 minutes of frying. Then stir gently a few times. Fry until the wings are golden. Transfer the chicken onto the lined baking sheet to drain excess oil. Repeat to fry the rest of the wings.",
+      "Raise the oil temperature to 350°F (180°C). Return the wings to the oil and fry for another 2 minutes, until the crust becomes golden brown. Transfer to the lined baking sheet to drain off excess oil. Serve as an appetizer."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil for Deep-frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f8ed78f287eb182e9eb95c6849a857e3e154c3856d817ab54f7e104d4947699b",
+    "lineage_hash": "8fc41ea8ce316bef3cd189984ddec4178891cd94f2bd2cf344b8f00dae076417"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/chinese-fried-chicken-wings/",
+    "fetchedAt": "2026-08-02T08:14:18.742Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/chinese-fried-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

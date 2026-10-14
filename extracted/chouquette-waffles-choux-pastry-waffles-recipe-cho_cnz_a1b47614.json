@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Chouquette Waffles (Choux Pastry Waffles)",
+    "time": "1 hr 5 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Have all the ingredients measured out before you start.",
+      "Combine the butter, salt, and water in a medium saucepan (not non-stick), and bring to a simmer over medium-low heat.",
+      "Remove from the heat, add the flour all at once, and stir quickly with a wooden spoon until well blended and smooth. This is your panade.",
+      "Return the pan over medium-low heat, and keep stirring until the dough is satiny and leaves a slight film at the bottom of the pan, about 5 minutes; this means that all the excess water has evaporated.",
+      "Cool for 3 minutes. Add the eggs, one by one, stirring well between each addition; I like to use a dough whisk for this, but a wooden spatula works too. At each extra egg it will seem like the dough won't absorb it, but it will.",
+      "Cover and refrigerate for at least 1 hour, and up to 1 day.",
+      "Just before cooking the waffles, fold in the pearl sugar.",
+      "Preheat your waffle iron (I use this griddle and waffle iron) to medium-high.",
+      "Scoop 1/4 cup (75 grams) of the choux pastry in each of the waffle prints, close the waffle iron, and cook for 5 to 7 minutes, until puffy and golden-brown.",
+      "Cool for 5 to 10 minutes on a rack and serve, slightly warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "fine sea",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": "all-purpose",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "at room temperature",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pearl Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "59224988d396e8019240141b51fccb88eeb65924f0f964a5c8f6881d9a6670e3",
+    "lineage_hash": "13709ff0ec96eb5c4dd7433afafa003747b6942dd9ba1fc4143c7635b6461d7e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://cnz.to/recipes/cookies-small-cakes/chouquette-choux-pastry-waffles-recipe/",
+    "fetchedAt": "2026-09-30T19:58:47.495Z"
+  },
+  "rawSource": "https://cnz.to/recipes/cookies-small-cakes/chouquette-choux-pastry-waffles-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

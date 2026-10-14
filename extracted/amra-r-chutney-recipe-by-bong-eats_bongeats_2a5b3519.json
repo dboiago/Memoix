@@ -1,0 +1,125 @@
+{
+  "recipe": {
+    "name": "Amra'r Chutney",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "15",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "73",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Peel all the amra, and cook them in the pressure cooker with 350 ml water and 8 g salt, until soft.",
+      "Once they are cool enough to touch, extract the pulp.",
+      "Heat vegetable oil, and temper it with a dried red chilli and panch phoron.",
+      "Add the pulp and the water that was used for boiling the amra. Add a pinch of turmeric and mix everything together.",
+      "Add sugar and allow it to bubble until the chutney has reached the desired consistency.",
+      "Finish with coarsely ground bhaja moshla."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Biliti Amra",
+        "unit": "g",
+        "notes": "'English' hog plum",
+        "amount": "360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Deshi Amra",
+        "unit": "g",
+        "notes": "local hog plum",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "dried",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panch Phoron",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bhaja Moshla",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70650581b8a5ccec2171c9738d6c5244b74bc10628d07c69b0259920b4a29a9f",
+    "lineage_hash": "069232266bd406a509c57ab8c6f3b62c1157fd0cfc861b40e13c8b305c2b21e6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/amra-chutney",
+    "fetchedAt": "2026-08-01T16:44:35.235Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/amra-chutney",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

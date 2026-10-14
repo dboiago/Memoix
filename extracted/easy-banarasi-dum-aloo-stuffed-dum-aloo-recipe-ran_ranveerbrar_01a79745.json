@@ -1,0 +1,198 @@
+{
+  "recipe": {
+    "name": "Banarasi Dum Aloo (Stuffed Dum Aloo)",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add cumin seeds, bay lead, fennel seeds, cloves, green cardamom pods and fenugreek seeds to a pan and dry roast till fragrant.",
+      "Allow to cool to room temperature and grind to a fine powder. Set aside till in use.",
+      "Prick the potatoes with a fork, set aside till in use.",
+      "Heat ghee in a pan, add green chillies and ginger, saute till fragrant.",
+      "Add the pricked potatoes, cook for 3-4 minute.",
+      "Add the tomato puree and salt, cook till the puree releases oil.",
+      "Mix coriander powder, turmeric powder, kashmiri red chilli powder, dum aloo spice mix and yogurt together in a bowl.",
+      "Add the yogurt mixture to the cooked puree, mix well and cook for 3-4 minutes on medium low flame.",
+      "Add cream and mix well, cook for 2-3 minutes.",
+      "Add water and cook till it comes to a boil.",
+      "Check seasoning and cook on simmer for 3-4 minutes.",
+      "Garnish with coriander and serve hot with Khameeri roti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Green Cardamom Pods",
+        "unit": null,
+        "notes": "crushed",
+        "amount": "2",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Fenugreek Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dum Aloo Spice Mix",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "2",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Baby Potatoes",
+        "unit": null,
+        "notes": "pricked with a fork",
+        "amount": "15",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Puree",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Yogurt",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Kashmiri Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "for garnish",
+        "amount": "0",
+        "section": "Dum Aloo Curry",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5a08c6c8f249ebccbd216c9c505e94028af17bc58399aa8de9fc320efdfb8322",
+    "lineage_hash": "fb5f6c4efa254c60e7a7e52ddd729c55831aa284a4b2463f297187f0a1a3b158"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/banarsi-dum-aloo/",
+    "fetchedAt": "2026-08-01T22:42:21.699Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/banarsi-dum-aloo/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Enchilada Sauce (Red Chile Sauce)",
+    "time": "30 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "45",
+      "carbohydrateContent": "10",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Remove stems, seeds, and veins from the chile pods. Place in a colander and rinse well with cool water.",
+      "Add the chiles to a large pot and add enough water so they are just covered. Bring water to a boil. Lower the heat, cover, and simmer for about 20 minutes. After 10 minutes turn the chiles over with tongs to make sure the chiles soften evenly. Drain cooked pods and allow time to cool down before blending. Discard water.",
+      "Fill blender with 3 cups of water, half of the cooled chile pods, 3 tablespoons flour, 2 cloves garlic, and half of the salt. Blend until smooth. Strain sauce through a fine sieve to remove skins and seeds; discard skins and seeds. Repeat blending and straining process with remaining water, pods, flour, garlic, and salt. If necessary, season with more salt."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "California",
+        "unit": "oz",
+        "notes": "alt: New Mexico red chile pods",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "Tbsp",
+        "notes": "sub gluten free if necessary",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c77b915ef4f180d35c8038d97542446e578147f1521031ab3daa356545592a8c",
+    "lineage_hash": "bd37627ba44fdd64276967515e8aaa86e9fb2a1f6ab236423df7aa8d50d527cc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/make-authentic-red-chile-sauce/",
+    "fetchedAt": "2026-08-02T03:12:22.057Z"
+  },
+  "rawSource": "https://muybuenoblog.com/make-authentic-red-chile-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

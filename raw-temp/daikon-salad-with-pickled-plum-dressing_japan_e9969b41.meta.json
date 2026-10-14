@@ -1,0 +1,54 @@
+{
+  "url": "https://japan.recipetineats.com/daikon-salad-with-pickled-plum-dressing/",
+  "slug": "daikon-salad-with-pickled-plum-dressing_japan_e9969b41",
+  "title": "Daikon Salad with Pickled Plum Dressing",
+  "byline": "Yumiko",
+  "fetchedAt": "2026-08-01T17:49:46.379Z",
+  "ldName": "Daikon Salad with Pickled Plum Dressing",
+  "ldTime": "PT15M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Salad",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "200g (7oz)  diakon ((about 2 x 4cm (1½\") thick discs, note 1))",
+    "60-80g (2.1-2.8oz)  baby spinach or mizuna",
+    "1  umeboshi ((note 3), seed removed, cut into very small pieces)",
+    "2 tbsp dashi stock ((note 3))",
+    "1 tbsp rice vinegar",
+    "1 tbsp salad oil",
+    "½ tsp soy sauce",
+    "½ tsp sugar",
+    "1 cup bonito flakes ((note 3))",
+    "¼  sheet roasted seaweed (, finely julienned into about 3cm (1¾\") long pieces (optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Put all the Dressing ingredients in a jar with a lid and shake well (or in a bowl and mix very well). It is OK to have chunks of umeboshi left in the dressing.",
+    "Place a daikon disk on a cutting board, circle face down. Slice 2mm (1/16\") thick, then cut the slices same direction into 2mm matchsticks. Leave the daikon sticks in a bowl filled with chilled water (not in ingredients) for 5 minutes to make them crisp. Drain.",
+    "Spread baby spinach on a cutting board and cut them 3-4 times at equal intervals. This will make the size of spinach smaller. If using mizuna, cut them into 4cm (1½\") long.",
+    "Mix daikon and spinach in a bowl. Then, transfer the salad onto a serving plate.",
+    "Top with bonito flakes and roasted seaweed if using. Pour the plum dressing over the salad and serve, or serve the salad with the dressing on the side."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "200g (7oz)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tdiakon\n\t\t\t\t\t\t\t\t\t\t(about 2 x 4cm (1½\") thick discs, note 1)",
+    "60-80g (2.1-2.8oz)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tbaby spinach or mizuna",
+    "[Plum Dressing]",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tumeboshi\n\t\t\t\t\t\t\t\t\t\t(note 3), seed removed, cut into very small pieces",
+    "2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tdashi stock\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\trice vinegar",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttbsp\n\t\t\t\t\t\t\t\t\t\tsalad oil",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsoy sauce",
+    "½\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\ttsp\n\t\t\t\t\t\t\t\t\t\tsugar",
+    "[Topping]",
+    "1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tcup\n\t\t\t\t\t\t\t\t\t\tbonito flakes\n\t\t\t\t\t\t\t\t\t\t(note 3)",
+    "¼\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsheet roasted seaweed\n\t\t\t\t\t\t\t\t\t\t, finely julienned into about 3cm (1¾\") long pieces (optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

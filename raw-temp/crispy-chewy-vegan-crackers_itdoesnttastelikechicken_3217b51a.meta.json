@@ -1,0 +1,57 @@
+{
+  "url": "https://itdoesnttastelikechicken.com/crispy-chewy-vegan-crackers/",
+  "slug": "crispy-chewy-vegan-crackers_itdoesnttastelikechicken_3217b51a",
+  "title": "Crispy Chewy Vegan Crackers",
+  "byline": "Sam Turnbull @ It Doesn't Taste Like Chicken",
+  "fetchedAt": "2026-08-01T20:37:57.997Z",
+  "ldName": "Crispy Chew Vegan Crackers",
+  "ldTime": "PT63M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT53M",
+  "ldYield": [
+    "1",
+    "1 loaf (around 30 crackers)"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Snack",
+  "ldKeywords": "snack",
+  "ldIngredientsRaw": [
+    "1 cup whole wheat flour",
+    "1/2 cup dried fruit ((cranberries, raisins, chopped figs, chopped dates, chopped apricots))",
+    "1/4 cup finely chopped nuts ((pecans, walnuts, hazelnuts, cashews, almonds))",
+    "2 tablespoons seeds ((sesame, poppy, chia, flax, pumpkin))",
+    "2 tablespoons brown sugar",
+    "1 tablespoon chopped fresh rosemary or thyme ((Optional))",
+    "1 teaspoon baking soda",
+    "1/2 teaspoon salt",
+    "1 cup plant-based milk ((such as soy or almond))",
+    "1 tablespoon lemon juice"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 350 F (180C), and lightly grease a loaf pan.",
+    "In a large bowl, mix together the dry ingredients. Now add in the wet ingredients and mix until just combined. Pour the batter into the prepared loaf pan and bake 35 minutes. The loaf will feel like a dense bread. Let cool completely.",
+    "Once cooled, use a serrated knife to slice the loaf as thinly as possible into cracker slices. The thinner the cracker, the crispier. I got about 30 crackers. Spread the crackers on a baking pan in a single layer, and bake at 350F (180C) for an additional 15 - 18 minutes until they are lightly brown all over. They will get crisp as they cool. Store in an airtight bag or container at room temperature for up to two weeks."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "32 kcal",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "[Dry Ingredients]",
+    "▢ 1 cup whole wheat flour",
+    "▢ ½ cup dried fruit, (cranberries, raisins, chopped figs, chopped dates, chopped apricots)",
+    "▢ ¼ cup finely chopped nuts, (pecans, walnuts, hazelnuts, cashews, almonds)",
+    "▢ 2 tablespoons seeds, (sesame, poppy, chia, flax, pumpkin)",
+    "▢ 2 tablespoons brown sugar",
+    "▢ 1 tablespoon chopped fresh rosemary or thyme, (Optional)",
+    "▢ 1 teaspoon baking soda",
+    "▢ ½ teaspoon salt",
+    "[Wet Ingredients]",
+    "▢ 1 cup plant-based milk, (such as soy or almond)",
+    "▢ 1 tablespoon lemon juice"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Veg'n"
+}

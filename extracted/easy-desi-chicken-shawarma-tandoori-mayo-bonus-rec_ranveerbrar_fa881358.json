@@ -1,0 +1,376 @@
+{
+  "recipe": {
+    "name": "Desi Chicken Shawarma",
+    "time": "20-30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pan, add turmeric powder, oil and roast it for 10-15 seconds.",
+      "Add degi red chili powder, coriander powder, cumin powder, garam masala and mix it well.",
+      "Add dry mango powder and cook for a few seconds. Transfer it to a bowl, add mayonnaise and mix it well.",
+      "Keep it aside for further use.",
+      "In a bowl, add refined flour, salt to taste, oil, curd, water and knead it into a semi soft dough.",
+      "Apply oil and keep it aside for 10-15 minutes to rest.",
+      "Divide the dough into lemon size balls, apply oil and flatten the dough with the help of a rolling pin.",
+      "Make a semi thick roti and add white sesame seeds.",
+      "In a tawa, heat oil, place prepared roti and cook it well on both the sides.",
+      "Transfer it to a plate and keep it aside for further use.",
+      "In a bowl, add beetroot, green chilies, salt to taste, onion, vinegar and mix it well.",
+      "Keep it aside for further use.",
+      "In a bowl, add garlic, hung curd, mayonnaise, oregano, degi red chili powder, salt to taste, lemon juice, chicken breast and mix it well.",
+      "Keep it aside for 10-15 minutes to marinate.",
+      "In a grilled pan, heat oil, place marinated chicken and sear it for 5-6 minutes on both sides.",
+      "Transfer it to a plate and cut the chicken into strips.",
+      "In a pan, heat oil, add onion, seared chicken and sautÃ© it for 5-6 minutes on high flame.",
+      "Add tandoori mayonnaise, coriander leaves and toss it well.",
+      "Keep it aside for further use.",
+      "Take the prepared shawarma roti, apply hung curd, tandoori mayonnaise and spread evenly.",
+      "Place prepared salad, sauteed chicken and roll it.",
+      "Serve hot with prepared dip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Garam Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Mango Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tandoori Mayonnaise",
+        "isOptional": false
+      },
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": "medium",
+        "notes": "peeled & batons",
+        "amount": "2",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chili",
+        "unit": null,
+        "notes": "less spicy & sliced",
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "sliced",
+        "amount": "1",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Salad",
+        "isOptional": false
+      },
+      {
+        "name": "No. Garlic Cloves",
+        "unit": null,
+        "notes": "grated",
+        "amount": "2-4",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Breast",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": "For Chicken Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "No. Onion",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "½",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Seared Chicken",
+        "unit": null,
+        "notes": "cut into strips",
+        "amount": "0",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Tandoori Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "roughly torn",
+        "amount": "1",
+        "section": "For Sauteing Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "White Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "for roasting roti",
+        "amount": "½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": "for searing chicken",
+        "amount": "1½",
+        "section": "Other Ingredients",
+        "isOptional": false
+      },
+      {
+        "name": "Roti",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Hung Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Tandoori Mayonnaise",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Salad",
+        "unit": null,
+        "notes": "prepared",
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      },
+      {
+        "name": "Sauteed Chicken",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Assembling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "49f01a04def2cadf504b532c9e9b52f237b15546b8fa7d209203103dff2327fe",
+    "lineage_hash": "23143313e6ffa4f12f4a378cd9fb973be6cc019ee1cc74cdfa33323394cb0789"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/desi-chicken-shawarma/",
+    "fetchedAt": "2026-08-02T16:22:37.970Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/desi-chicken-shawarma/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

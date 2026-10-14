@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Aam Pora Shorbot",
+    "time": "30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "71",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Char the green mangoes on open flame (grill, barbecue or stovetop), or under the oven broiler, until the skin has turned crisp and black, and has pulled away from the flesh.",
+      "Once cool, remove the outer coating, and you should be left with the yellow pulp. Remove the central seed, and roughly break up the larger lumps (some are fine; you needn't make it completely smooth).",
+      "Mix together 100 g of the aampora pulp with black salt, sugar and water.",
+      "In a bottle, add slit green chillies, then the drink.",
+      "Set it in the fridge until well chilled. Enjoy cold or over ice!",
+      "First prepare a rich syrup by heating together 2 parts sugar and 1 part water until it comes to a boil. Turn off the heat to allow the sugar to dissolve in residual heat. When cool, store in the fridge.",
+      "When ready to serve, add aampora pulp, tequila/mezcal, rich syrup, salt and green chilli to your shaker.",
+      "Shake with ice and double-strain into a glass. Serve immediately!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Green Mangoes",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aampora Pulp",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "slit",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aampora Pulp",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila/mezcal",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rich Syrup",
+        "unit": "ml",
+        "notes": "2 parts sugar :1 part water",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Green Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ice for Shaking",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4e8065f490c5953c231e1f5dc186976a1b73207ed29dabb8274abfb11962da55",
+    "lineage_hash": "9e3e14deabfbedfbc21608a0d6b2ba489abbf9044b022c7effb5b1486b28af36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/aam-pora-shorbot",
+    "fetchedAt": "2026-08-01T16:24:33.247Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/aam-pora-shorbot",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

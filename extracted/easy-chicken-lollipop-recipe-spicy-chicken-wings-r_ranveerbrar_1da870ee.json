@@ -1,0 +1,334 @@
+{
+  "recipe": {
+    "name": "Chicken Lollipop",
+    "time": "25-30 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add red chili sauce, green chili sauce, egg white, light soy sauce, salt to taste and mix it well.",
+      "Add chicken wings and mix everything well, add dark soy sauce and mix well.",
+      "Rest it for ½ hour and keep it aside for further use.",
+      "In a sauce pot, add chicken winglet, water and reduce it to half.",
+      "Let all the flavors immerse into the stock. Keep it aside for further use.",
+      "In a bowl, add degi red chili powder, water as required, salt to taste and mix well.",
+      "Add vinegar, cornflour, dark soy sauce, powdered sugar and make a thin batter.",
+      "Add the marinated chicken wings in the batter and coat it well.",
+      "Heat oil in a deep kadai on low to medium flame.",
+      "Dip the coated lollipop into the hot oil and fry until it’s crisp from all the sides and cooked well.",
+      "Drain on absorbent paper and keep it aside for further use.",
+      "In a bowl, add prepared stock, chili flakes, red chili sauce, tomato ketchup, dark soy sauce, tender coriander stems, vinegar and mix everything well.",
+      "Keep it aside for further use.",
+      "In wok or kadai, add oil, once it gets hot, add ginger, garlic, green chili, spring onion bulbs and saute it for 5-10 seconds.",
+      "Now, add prepared sauce mixture and cook for a while.",
+      "Add cornstarch slurry and mix well to thicken the sauce.",
+      "Add fried chicken lollipop, coriander leaves and toss it well.",
+      "Add chili oil and toss everything well.",
+      "Once the lollipop gets well coated, switch off the flame.",
+      "Transfer it into a serving plate, garnish with spring onion, coriander sprig and serve hot."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Chili Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Garlic Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Wings",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Marination",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Winglet",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Stock",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled, finely chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "4-5",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "less spicy, chopped",
+        "amount": "3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion (white Part)",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch Slurry",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Fried Chicken Lollipop",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Chili Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Degi Red Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "as required for thin batter",
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": "For Batter",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tomato Ketchup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Sprig",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f0bfc2c867882973807abbbd036e6be45fb5896ceddef93388636f3ae9df1e08",
+    "lineage_hash": "c06ae8601a30fd83743cab0ce96da92eca95d7be5dcb281af5a5be305bc47706"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chicken-lollipop-recipe/",
+    "fetchedAt": "2026-08-02T13:58:33.489Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chicken-lollipop-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

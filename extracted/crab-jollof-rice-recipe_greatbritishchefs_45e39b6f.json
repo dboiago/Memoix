@@ -1,0 +1,428 @@
+{
+  "recipe": {
+    "name": "Crab Jollof Rice",
+    "time": "2 hr 15 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the jollof sauce – this will later be used to cook the rice. Add a generous amount of grapeseed oil to a very hot pan and, when smoking, add the tomatoes. Leave the tomatoes to sizzle in the oil for several minutes, allowing them to slightly burn and smoke on the bottom. Turn over after 5 minutes and continue to cook on a high heat until reduced and broken down",
+      "Toss the roughly chopped peppers, onions, garlic and ginger in some oil and grill until very charred. Be sure to char the garlic and ginger for less time as they can become bitter. Place all the charred vegetables into the reduced tomatoes, along with the spices and other condiments (save the dashi for later). Cover with a lid and cook on a low heat until soft and reduced",
+      "Blitz very well, loosening with the dashi to adjust the consistency to that of a smooth sauce, and pass through a sieve. Transfer the pulp remaining in the sieve to a bag made from double layers of muslin and use this to sqeeze out the last drops of sauce",
+      "Now make the wok hei paste. Blitz the garlic, ginger and spring onion to a smooth paste. Place in a deep pot",
+      "Heat the oil to over 280°C. Wearing heavy-duty gloves and staying well away from any open flames, immediately and carefully pour the oil over the paste and stir quickly. Set aside",
+      "Finely dice and de-seed the chillies and fold into the cooled paste. Set aside",
+      "To make the crab salad, finely slice the coriander leaves with a very sharp knife. Finely slice the chives into small rounds. Peel the apple and dice very finely. Mix all the ingredients well and reserve in the fridge",
+      "For the crab custard, blitz all the ingredients in a high-power blender for 5 minutes, then pass through a fine sieve into a pan. Heat the mixture gently on the hob, until thickened enough to coat the back of a spoon",
+      "Wash the rice well, then drain. Place in a large pan with the jollof sauce and simmer until cooked through",
+      "To serve, roast the rice in a hot pan with a spoonful of the wok hei paste. Divide between bowls, drizzle with the crab custard and top with the crab salad. Serve immediately garnished with fresh sorrel"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Grapeseed Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tomatoes",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "975",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Pepper",
+        "unit": "g",
+        "notes": "cut into large chunks",
+        "amount": "375",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Onion",
+        "unit": "g",
+        "notes": "cut into large chunks",
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "cut into large chunks",
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "cut into large chunks",
+        "amount": "38",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chillies",
+        "unit": "g",
+        "notes": "deseeded",
+        "amount": "33",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crayfish Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chillies",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madras Curry Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoke Powder",
+        "unit": "g",
+        "notes": "Jeremy uses Sosa smoke powder",
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": "toasted then ground",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tabasco",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamari",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Worcestershire Sauce",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "49",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "g",
+        "notes": "you might not need all of it, to loosen the mix",
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Crab Meat",
+        "unit": "g",
+        "notes": "picked and chilled in the fridge",
+        "amount": "113",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": null,
+        "amount": "13",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": null,
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Paprika",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Turmeric",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Crab Meat",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chilli",
+        "unit": null,
+        "notes": "deseeded",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": "you might need a dash more",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": null,
+        "amount": "330",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scotch Bonnet Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jasmine Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a66b4e47d426bc6b3e294313c3e5b71a80dcfc99b1a0255a7a9f1595f0f2d652",
+    "lineage_hash": "fc1049edc19633c46ad05fff562e2ebd592dddd833d0ab5be1b13c3f19a5ec46"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crab-jollof-rice-recipe",
+    "fetchedAt": "2026-08-03T07:56:11.086Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crab-jollof-rice-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,113 @@
+{
+  "recipe": {
+    "name": "Bavette with Pumpkin and Cime Di Rapa",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Sprinkle a generous amount of salt over the bavette, then rub in the olive oil and grape must. Set aside in the fridge to marinate for 2 hours",
+      "Take the meat out of the fridge and allow to come to temperature for 30 minutes before cooking",
+      "Place a griddle pan over a very high heat and wait until the pan is smoking hot. Place the bavette on there and leave to cook, turning occasionally, until deeply charred all over – around 8-10 minutes will give you a medium-rare finish, but for more accuracy use a temperature probe and cook to 53°C",
+      "Meanwhile, place a wide frying pan over a medium heat and add a generous drizzle of olive oil. Place the pumpkin wedges in the pan, sprinkle with salt and leave to cook, turning occasionally, until golden and tender throughout. Once cooked, reduce the heat right down and add the chopped chilli, stirring occasionally so it infuses into the oil",
+      "When the beef is cooked to your liking, leave to rest while you prepare the cime di rapa and the pumpkin finishes cooking",
+      "Place a saucepan over a large heat and add a drizzle of olive oil.  Add the anchovy to the oil and leave to sizzle and dissolve into the oil, then roughly tear the cime di rapa and add it to the pan. Cook for a few minutes until wilted, tossing regularly, then finish with the lemon juice",
+      "To serve, carve the bavette into thick slices against the grain. Layer up the pumpkin, cime di rapa and bavette slices in a stack on each plate, then drizzle with a little extra olive oil and grape must"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bavette Steak",
+        "unit": "kg",
+        "notes": "in a single piece",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grape Must",
+        "unit": "ml",
+        "notes": "plus a little extra for drizzling",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": "plus extra for drizzling",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Delica Pumpkin",
+        "unit": null,
+        "notes": "cut into wedges",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Anchovy Fillet",
+        "unit": null,
+        "notes": "best quality",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turnip Tops",
+        "unit": "g",
+        "notes": "also known as cime di rapa",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1ef882454164bb328ec681493fc016a8a668353ed31b2517cef3fcbc5e5a76c3",
+    "lineage_hash": "afab6d4aada9e04963cc233fae682ab937de6f0d56e6542b659f64d8e00f0039"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/bavette-grape-must-pumpkin-recipe",
+    "fetchedAt": "2026-08-03T03:05:12.134Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/bavette-grape-must-pumpkin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

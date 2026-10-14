@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Chinese Braised Pork Trotters",
+    "time": "2 hr 10 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "417",
+      "carbohydrateContent": "5.6",
+      "fatContent": "27.3",
+      "proteinContent": "37.8"
+    },
+    "directions": [
+      "Place the pork trotters and half of the ginger slices in a large pot and add cold tap water to cover. Bring the water to a boil. Stir occasionally to prevent the bottom from sticking. Continue boiling while skimming off the brown foam from the top until the broth is mostly clear, 10 to 15 minutes. Transfer the pork to an Instant Pot (or pressure cooker). If the boiling broth is clear and doesn't have a strong smell, transfer 5 cups of broth to the pot with the trotters, or until the broth almost covers everything. If the broth looks very cloudy and smells strong, discard the broth and add 5 cups of cold tap water. (*Footnote 2)",
+      "Set the pressure to high and timer to 15 minutes for fall-off-the-bone tender pork (or 12 minutes for tender pork with some texture). Press start. (*Footnote 3)",
+      "Once the Instant Pot is done cooking, release pressure naturally for at least 15 minutes. Then switch the valve to fast release. Transfer pork and the broth back to the large pot.",
+      "Add the rest of the ingredients into the same pot and turn to medium-high heat. After bringing the broth to a boil, reduce to medium-low heat and simmer for 40 minutes or so, until the pork has absorbed a lot of flavor. Stir pork occasionally to avoid burning on the bottom.",
+      "Transfer the pork to a large bowl. Use a ladle to remove and discard the solid spices and aromatics from the broth. Turn to medium-high heat to boil the broth until it reduces to half of the volume and gets thicker, 15 minutes or so. Keep an eye on the broth so it doesn’t reduce too much. The broth will continue to thicken when it cools down a bit, so you don’t need to reduce it too much.",
+      "Add the trotters back to the pot and mix everything together. Serve hot as a main dish. You can store the leftovers in the fridge for 3 to 4 days, or in the freezer for up to 3 to 4 months."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pork Trotters",
+        "unit": "lb",
+        "notes": "*Footnote 1, cut into large cubes",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thumbs Ginger",
+        "unit": null,
+        "notes": "thickly sliced and divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": "or dry sherry",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "or 2 Chinese scallions, cut into 4” pieces",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Chili Peppers",
+        "unit": null,
+        "notes": "dried",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaping Tablespoon Rock Sugar",
+        "unit": null,
+        "notes": "or regular sugar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0eaa3b8019cad9f9d64ad3679cb988af8a809cf424a0d02ba74973b85312870d",
+    "lineage_hash": "408b7ce8a099022f4eb04fac929effafbf85dad582d413466bb6335c47d68aff"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/hardcore-chinese-braised-pork-feet/",
+    "fetchedAt": "2026-08-02T04:40:39.712Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/hardcore-chinese-braised-pork-feet/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

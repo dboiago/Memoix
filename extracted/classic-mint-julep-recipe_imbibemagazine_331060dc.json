@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Mint Julep",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Julep Cup",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the mint leaves and 1/4 oz. of the simple syrup in a julep cup and gently muddle. Loosely pack the cup with crushed ice extending above the rim, then add the bourbon and drizzle remaining syrup on top. Garnish.",
+      "TIP Because the sugar syrup is heavier than the alcohol, it will sink to the bottom of the cup, and so McMillian recommends drizzling it over the drink at the end. “I’ve tried every method in the world over the years, but I think ultimately pouring the sweetener over the top of the drink at the end and letting it trickle through the ice is probably as good a distribution as you’re going to get.”"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mint Leaves",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bourbon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bd053a36f3c9e8ce0bb5f8a846368a9a54be5b33bc55a55c5088fe35099e0449",
+    "lineage_hash": "db373b70637a96573cb088b1138a4586136ec87083e360c672f0bbea42ff6245"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/classic-mint-julep/",
+    "fetchedAt": "2026-08-04T00:46:39.954Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/classic-mint-julep/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

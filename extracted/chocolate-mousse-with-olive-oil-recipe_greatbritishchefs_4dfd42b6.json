@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Chocolate Mousse with Olive Oil",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line 8 mousse moulds (2 inches wide and 2 inches deep) with cling film",
+      "Melt chocolate over a gentle bain-marie. Once melted remove from the heat. Warm the milk in a separate pan to no more than 60°C",
+      "Whip the egg whites, gradually adding the sugar as you go, until they form soft peaks",
+      "Whisk the egg yolk into the warm, melted chocolate. Next, slowly add the warmed milk to the egg yolk mixture and whisk gently. Finally, add in the olive oil",
+      "Add the whipped egg white, starting with a small amount to stabilise the mixture, and then gently folding in the remainder with a rubber spatula",
+      "Decant the mousse into piping bags, and distribute evenly between the lined moulds. Drizzle with more olive oil to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "70% Dark Chocolate",
+        "unit": "g",
+        "notes": "Peter used Amedei Toscano Black 70% chocolate",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arbequina Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69cb3bfbf6fcaad06af06c12cce0c9afea96695ab5fa0744c614b6da8fec9f74",
+    "lineage_hash": "f3e37637aa235623e773044ac1c35bb6dee177f54882c8cbf9ad85124c611d67"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-with-olive-oil-recipe",
+    "fetchedAt": "2026-08-02T14:41:25.976Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-mousse-with-olive-oil-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

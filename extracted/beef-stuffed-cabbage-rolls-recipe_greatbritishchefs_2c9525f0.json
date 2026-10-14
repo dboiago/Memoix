@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Beef-Stuffed Cabbage Rolls",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start the recipe by washing the rice thoroughly and adding to a pan with 400ml of water. Season the rice with a little salt and place on a medium heat. Bring to a simmer and cook for 10 minutes before draining and allowing to steam cool",
+      "Add the butter to a saucepan, heat until melted then stir in the onion and garlic. Cook until soft but without colour. Strip the thyme leaves from the branch, add to the pan then remove from the heat",
+      "Transfer the mixture to a large clean bowl. Finely chop the sage and add this to the cooked onion mixture",
+      "Add the minced beef, egg and the cooked rice, season with a little salt and mix everything together. Set aside",
+      "Take a large pan of water, add a good pinch of salt and place on a high heat until boiling. Separate the cabbage into individual leaves and place in the boiling water to cook for 3 minutes, or until tender. Remove the leaves from the water and place onto a cooling rack or dry tea towel to drain off any excess water",
+      "Lay the leaves out on a chopping board. Using a sharp knife, remove much of the tough stem in the middle. Place a 50g ball of the beef mixture into the centre of each cabbage leaf and fold the sides in before rolling into a ball. Place each of the cabbage parcels seam-side down into a steamer and cover with a tight fitting lid. Steam the cabbage parcels over a pan of simmering water for 10 minutes",
+      "When cooked, transfer the steamed cabbage parcels to a medium sized ovenproof dish",
+      "For the tomato ragout, place a medium-sized saucepan over a moderate heat. Add the butter to the pan along with the chopped onion and garlic and sweat gently for 30 seconds, until soft but without colour",
+      "Add the tomatoes and bay leaf and season with a little salt. Simmer for 5 minutes, until slightly thickened",
+      "When the ragout is ready, pour around the stuffed cabbage balls then place the dish  into the oven for 10 minutes, or until the cabbage browns slightly on top. Remove from the oven and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beef",
+        "unit": "g",
+        "notes": "minced",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sage",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Savoy Cabbage",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tin of Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "small",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "326e3b60a64b788bec707997de735791401f17819035f8c3bb2f7edb9e7fb60b",
+    "lineage_hash": "faaf8ae976ccbc0332f59344070a11929ec019de92076a82f57c741000f860ed"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/beef-stuffed-cabbage-rolls-recipe",
+    "fetchedAt": "2026-08-03T09:12:31.009Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/beef-stuffed-cabbage-rolls-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

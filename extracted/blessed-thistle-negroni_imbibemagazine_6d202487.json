@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Blessed Thistle Negroni",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all ingredients in a mixing glass with ice and stir to chill. Strain into a rocks glass over a large cube. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "London Dry Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Campari",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ciociaro Amaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "92c541e4a32c8f039807fb27a8484f290f015fefe8c860eeba8e6e93ac2544a6",
+    "lineage_hash": "5d446d9229d8eed5f50121b391e99ae1db1ce2d0339c004420dee69622497795"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/blessed-thistle-negroni/",
+    "fetchedAt": "2026-08-03T17:53:23.578Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/blessed-thistle-negroni/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

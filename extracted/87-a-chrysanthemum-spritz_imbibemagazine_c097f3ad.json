@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Chrysanthemum Spritz",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [],
+    "subcategory": "Sparkling",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients, except the sparkling wine, to an ice-filled glass and stir to combine. Top with chilled sparkling wine and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Vermouth",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bénédictine",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Absinthe",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Bitters",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Dry Sparkling Wine",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "844abc7dceb7a6e541baa09563f506d1f3a4804b1ef0339f4ec4bf356d010481",
+    "lineage_hash": "209419d536aba3bbda5a596236c46b6f68b50a702a792ddbe76acadac1ec43de"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/87-a-chrysanthemum-spritz/",
+    "fetchedAt": "2026-08-04T01:57:47.909Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/87-a-chrysanthemum-spritz/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

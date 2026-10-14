@@ -1,0 +1,147 @@
+{
+  "recipe": {
+    "name": "Chinese Pastry Roast Pork Puffs",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "169",
+      "carbohydrateContent": "11",
+      "fatContent": "12",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Heat the oil in a wok over medium heat and stir-fry the onion until translucent. Add the sugar, soy sauce, oyster sauce, sesame oil, and dark soy sauce and cook until it starts to bubble up. Add the chicken stock and flour. Reduce the heat to medium low and cook, stirring, for a couple minutes until thickened. Remove from the heat and stir in the pork. Set aside to cool completely.",
+      "Preheat the oven to 400 degrees F (200 degrees C). On a lightly floured surface, roll out the puff pastry to smooth out the seams. Once rolled, the puff pastry square should be 30% larger than where you started. Cut into equal squares (whatever size you prefer). Ours were about the size of a large ravioli.",
+      "Put about 1 1/2 teaspoons of filling onto a pastry square and brush the edges with egg wash. Cover with another pastry square and use a fork to crimp it closed. Make sure they're tightly sealed. Repeat until all the filling and/or pastry has been used.",
+      "Brush the tops of the pastries with egg wash and sprinkle with sesame seeds. Bake for 18-20 minutes, or until puffed and golden brown. Serve warm!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": "C",
+        "notes": "or onion, finely chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Roast Pork",
+        "unit": "C",
+        "notes": "char siu, finely chopped – you can buy this from your Chinese grocery store's hot bar, or make your own with our char siu recipe",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sheet Store-bought Puff Pastry",
+        "unit": null,
+        "notes": "or homemade rough puff pastry, thawed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Wash (1 Egg, Beaten with a Tablespoon of Water)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2daba79ef996a6fbbf2e1133b5ab86235d8e82920c3eadd39025fc2d9a7cf9f2",
+    "lineage_hash": "2e66b61f41e9f55588a1883d8f48f6db3949f2f6e90ca74ef3a6a08b876c27a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-roast-pork-puffs/",
+    "fetchedAt": "2026-08-02T03:02:24.838Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-roast-pork-puffs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

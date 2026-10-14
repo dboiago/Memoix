@@ -1,0 +1,88 @@
+{
+  "recipe": {
+    "name": "Kouign Amann",
+    "time": "25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Proof the yeast with 3 tablespoons room-temperature water, then mix with the flour.",
+      "Add the sugar, then the butter.",
+      "Give it 4 turns, like puff pastry.",
+      "Let sit 15 minutes between each turn.",
+      "Place in a buttered mold. Score with a fork and place in the oven.",
+      "Dredge with more sugar when you remove it from the oven and serve at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gr Flour",
+        "unit": null,
+        "notes": null,
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pincée Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gr Yeast",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jeaune D’oeuf Egg Yolk",
+        "unit": null,
+        "notes": "optional, for coloring",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "754847b89a61c83db1d7088455f521164fa4926769212811148fb046ab10bb90",
+    "lineage_hash": "b761c04499f7e7bbc1c5d175686cb4bbdd63fbae1641a62fb3b2199a25fe9568"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.davidlebovitz.com/allegedly-the-b-1/",
+    "fetchedAt": "2026-08-02T03:58:35.436Z"
+  },
+  "rawSource": "https://www.davidlebovitz.com/allegedly-the-b-1/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Coconut Shortbread Cookies",
+    "time": "30 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "25",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "124",
+      "carbohydrateContent": "13",
+      "fatContent": "8",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Combine 8 oz unsalted butter, 5 oz granulated sugar and 1/4 teaspoon table salt in a mixer bowl and beat until softened and combined, do not aerate. Add 2 oz Coconut Flour and mix to combine. Add 5 oz all purpose flour. Mix until a dough comes together.",
+      "To make square cookies: On a sheet of parchment paper pat the dough to a small square. Lightly flour the top of the dough and roll to a 10\"x 10\" square. Use the straight edge of a ruler or a bench scraper to square off the edges. Slide the paper on to a sheet pan and chill for 30 minutes. (At this stage the dough can be wrapped frozen for later use). Meanwhile, preheat the oven to 325°F.",
+      "To make \"petticoat tail\" cookies: On a sheet of parchment paper pat the dough to a small disc. Lightly flour the top of the dough and roll to a 10 round. Use your fingers or a fork to crimp the edges of the round. Use a long knife to score the round into 16 wedges, do not slice all the way through the dough. Poke each wedge with a fork 3x. Slide the paper on to a sheet pan and chill for 30 minutes. (At this stage the dough can be wrapped and frozen for later use). Meanwhile, preheat the oven to 325°F.",
+      "While the dough is chilling, combine 3 tbsp granulated sugar and1 tbsp Coconut Flour in a small bowl.",
+      "For square cookies: Remove the pan from the refrigerator and slide the paper with the dough off the pan. Use a pizza cutter or paring knife to cut the dough into twenty five 2\" x 2\" squares. Slide the dough with the cookies back onto the sheet pan and space them out evenly. Poke each cookie 3x with a fork. Sprinkle the cookies with the coconut sugar, reserving a couple of tablespoons to add after baking.",
+      "For petticoat tails: Remove the pan from the refrigerator and sprinkle the cookies with the coconut sugar, reserving a couple of tablespoons to add after baking.",
+      "Bake the cookies until the center is set and the edges are lightly browned, about 10-20 minutes (shorter for square cookies, longer for petticoat tails). If you're oven bakes unevenly, rotate the tray halfway through baking. As soon as the cookies come out of the oven, sprinkle them with a light coating of the reserved coconut sugar. For the petticoat tails allow the round to cool completely then use a long knife to cut along the scored lines."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter (1 Cup, Room Temperatures (see Note *))",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "2/3 cup",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flour",
+        "unit": "oz",
+        "notes": "1/2 cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All Purpose Flour",
+        "unit": "oz",
+        "notes": "1 cup, see note",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a149617af872b0d2e4db93bdc3294caab12c5ca329a522bbc67f08d348a71e3e",
+    "lineage_hash": "b7c6fd81559771e2545308f0efa3d9fe6356949aab93347fd6b7cde985d2e161"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/06/17/coconut-shortbread-cookies/",
+    "fetchedAt": "2026-08-01T22:56:54.048Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/06/17/coconut-shortbread-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

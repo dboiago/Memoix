@@ -1,0 +1,60 @@
+{
+  "recipe": {
+    "name": "Black Gato Nightcap",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in a mixing glass with ice and stir to chill. Strain into a rocks glass over a few cubes of ice or one large cube.",
+      "Coffee-Infused Mezcal: Add 1 scoop of espresso to a bottle of mezcal and let sit for  for 3-4 hours. Strain the coffee out of the bottle before use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee-infused Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cacao",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Averna Amaro",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2170e6eccfc7e0b95713dbb231e259a1624ddc9e1aeb3d138c241a0937fdd5f1",
+    "lineage_hash": "5d5101dbbd53bbee3e01dd3df1e56adcf5c38cabfde79413baaba992c01dc196"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/black-gato-nightcap-recipe/",
+    "fetchedAt": "2026-08-04T01:15:22.083Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/black-gato-nightcap-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

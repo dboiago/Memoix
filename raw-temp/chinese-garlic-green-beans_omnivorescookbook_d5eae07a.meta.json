@@ -1,0 +1,60 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-garlic-green-beans/",
+  "slug": "chinese-garlic-green-beans_omnivorescookbook_d5eae07a",
+  "title": "Chinese Garlic Green Beans",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T07:25:56.778Z",
+  "ldName": "Chinese Garlic Green Beans",
+  "ldTime": "PT22M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT12M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle, restaurant-style",
+  "ldIngredientsRaw": [
+    "1 lb green beans (, tough ends removed)",
+    "3 to 4  tablespoons peanut oil ((or vegetable))",
+    "6 cloves garlic (, minced)",
+    "1 thumb minced ginger",
+    "1 tablespoon Shaoxing wine ((or dry sherry, or chicken broth))",
+    "1 teaspoon soy sauce",
+    "1/2 teaspoon salt",
+    "Chinese chili flakes ((for garnish) (Optional))"
+  ],
+  "ldInstructionsRaw": [
+    "Thoroughly pat the green beans dry with paper towels to prevent oil splatter.",
+    "Heat 3 tablespoons of oil in a large skillet over medium-high heat until hot. Turn to medium heat and add the green beans. Toss to coat well with the oil. Spread out the green beans as much as possible with minimal overlap and sprinkle with the salt. Let cook without touching for 2 to 3 minutes, until the bottom starts to blister and turn golden. Remove any green beans that have blistered and charred on one side and transfer them to a big plate. Keep cooking the rest of the green beans, flipping occasionally and taking out the ones that are blistered. The whole process should take about 6 to 8 minutes.",
+    "If your pan looks dry, add the remaining 1 tablespoon of oil. Otherwise, directly add the garlic and ginger to the pan. Stir and cook for a few minutes to release fragrance. Add back all the cooked green beans and stir to mix a few times.",
+    "Pour in the Shaoxing wine and soy sauce and sprinkle with salt. Stir immediately to mix everything well. Taste the green beans. Adjust seasoning by adding more salt or soy sauce, if needed.",
+    "Transfer everything to a big plate. Sprinkle with chili flakes, if using. Serve hot as a side dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "169 kcal",
+    "fatContent": "13.7 g",
+    "saturatedFatContent": "2.3 g",
+    "sodiumContent": "406 mg",
+    "fiberContent": "4 g",
+    "sugarContent": "2.7 g",
+    "carbohydrateContent": "11.6 g",
+    "proteinContent": "2.5 g"
+  },
+  "htmlIngredientLines": [
+    "1 lb green beans , tough ends removed",
+    "3 to 4  tablespoons peanut oil (or vegetable)",
+    "6 cloves garlic , minced",
+    "1 thumb minced ginger",
+    "1 tablespoon Shaoxing wine (or dry sherry, or chicken broth)",
+    "1 teaspoon soy sauce",
+    "1/2 teaspoon salt",
+    "Chinese chili flakes (for garnish) (Optional)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

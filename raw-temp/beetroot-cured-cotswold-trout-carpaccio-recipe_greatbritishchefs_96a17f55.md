@@ -1,0 +1,3 @@
+Cured fish is simple to prepare at home, and adding [beetroot](https://www.greatbritishchefs.com/ingredients/beetroot-recipes) to the mix gives it a beautiful red hue. In this recipe, Kuba Winkowski serves wafer-thin slices of beetroot-cured [trout](https://www.greatbritishchefs.com/ingredients/trout-recipes) with fermented [radish](https://www.greatbritishchefs.com/ingredients/radish-recipes) slices, dressed beetroot and sour cream, resulting in a stunning starter that is bound to earn you brownie points at the dinner table.
+
+While you do need to leave the radishes for a week and curing the trout takes several days, both of these elements can be made well in advance, requiring you to simply cook the beetroot and plate the dish on the day itself.

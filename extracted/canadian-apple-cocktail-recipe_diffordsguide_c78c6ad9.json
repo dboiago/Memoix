@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Canadian Apple Cocktail",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": "Collins",
+    "garnish": [
+      "Apple Slice"
+    ],
+    "subcategory": "Mocktail",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "134",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COLLINS GLASS.",
+      "Prepare garnish of apple slice.",
+      "SHAKE all ingredients with ice.",
+      "FINE STRAIN into ice-filled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Apple Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "105",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2af49f8fb6d4f708b89d6d987d6a614b13dde329a137427d004e673e9a65929a",
+    "lineage_hash": "5e24525c17e2a9916ad5cf25a1f228456c4e8cf470f32774c9357de6b15199fa"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/569/canadian-apple",
+    "fetchedAt": "2026-08-02T07:10:24.060Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/569/canadian-apple",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

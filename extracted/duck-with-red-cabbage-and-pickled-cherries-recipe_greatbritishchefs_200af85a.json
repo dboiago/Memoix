@@ -1,0 +1,772 @@
+{
+  "recipe": {
+    "name": "Duck with Red Cabbage and Pickled Cherries",
+    "time": "6 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make this complex recipe easier to follow, we have divided up the steps into micro-recipes to tackle each element. Many of these can (and in the case of the pickled cherries and duck hearts, must) be cooked or prepared in advance, so be sure to read the whole recipe through thoroughly and come up with a plan of action. You will need to reheat and finish off some elements before serving. Good luck!",
+      "To make the pickled cherries: tie the peppercorns, star anise, cardamom, cloves and mace into a muslin bag. Place the wine, vinegar and sugar in a pan and bring to a simmer, reducing the mixture to 500ml. Add the cherries and the spice pouch to the pan, then leave to simmer until the cherries soften. Remove from the heat and strain the cherries (reserving the liquid) onto a tray, so they lie in a single layer. Pour the pickling liquid over the top and place in the fridge to cool. Once cold, transfer the cherries and pickling liquor to a vacuum bag and seal, then leave in the fridge for at least a week to pickle. You will only need 15 cherries for this recipe, but the rest can be used in other dishes and have a shelf life of 6 months",
+      "To cook the duck hearts: toast all the spices in a dry frying pan then lightly crush. Place in a muslin bag with the rest of the ingredients (apart from the breasts, hearts, duck fat, water and salt). Place the water and salt in a large pan along with the muslin parcel and bring to the boil. Remove from the heat and allow to cool completely to create a brine for the duck hearts. Once cooled, add the duck hearts to the brine and leave for 2 hours, then rinse under cold running water for 30 minutes and pat dry. Reserve the brine for the duck breasts",
+      "Place the hearts in a vacuum bag with the smoked duck fat and seal. Preheat a water bath to 60°C and cook for 5 ½ hours, then cool in iced water and store in the fridge until required (leave the sous vide on for the duck breasts)",
+      "To cook the duck breasts: use a sharp knife to score the fatty skin, then place in the brine for 2 hours. Rinse under cold running water for 30 minutes, then place into individual vacuum bags and seal. Place in a 60°C water bath for 25 minutes, then set aside to rest for at least 10 minutes",
+      "To make the duck sauce: preheat the oven to 180°C/gas mark 4. Place the duck carcasses onto roasting trays and cook for 1 hour until golden brown, then chill. Add half the duck fat to a large pressure cooker and heat until it reaches 180°C. Place the tomatoes in the cooker, cut-side down, and caramelise for 8 minutes. Remove the tomatoes and set aside, then add the remaining duck fat with the onions and star anise. Cook until softened, then add the carrots, garlic, coriander and peppercorns and cook until the carrots soften",
+      "Add the white port, duck carcasses, tomatoes and water to the pot and bring to a simmer. Skim off any impuritites from the surface, then add the thyme and bay leaves. Secure the lid and cook under full pressure for 2 hours. Pass the stock through a fine sieve and muslin then chill. Once cold, remove the fat from the surface of the stock and transfer the liquid to a pan. Reduce to 200ml, then add 30g of the pickling liquor from the cherries. Check for seasoning then place in the fridge to reheat later – you will need 150g of sauce for this recipe",
+      "To make the pickled red cabbage gel: place the red cabbage, apple juice and water in a saucepan and cook, covered, over a medium heat for 20 minutes, stirring regularly. Remove the lid and continue to cook until all the liquid has evaporated, then add the cinnamon, star anise, 70g of the vinegar and wine. Cook until all the liquid evaporates",
+      "Add the redcurrant jelly, stir, then add the vegetable stock and red cabbage juice. Simmer for 5 minutes, then cover and chill. Leave to infuse for 12 hours, then strain (ensuring to squeeze the red cabbage to get all the liquid)",
+      "Measure out 500ml of the red cabbage liquid into a Thermomix jug and add the salt. Bring to 85°C on speed 3, then add the gellan and blitz for 2 minutes on speed 8 until dissolved. Pour the mixture into a bowl set over an ice bath and allow to set, then place the gel along with the remaining Cabernet Sauvignon vinegar back into the Thermomix and blitz for 2 minutes, scraping down the sides as you go. Transfer to a shallow container, place in a vacuum sealer and compress on the lowest setting. Allow the gel to rise to the top of the container, then stop. Repeat the process until there are no more air bubbles left in the gel, then pass it through a fine sieve, season and store in the fridge until you are ready to serve. You will need 500g of fluid gel for this recipe",
+      "To make the braised red cabbage: add the olive oil to a large saucepan and sweat the carrots and onions until soft. Add the leeks, fennel and garlic and sweat for a further few minutes, then add the vegetable stock, water, half the Chardonnay vinegar, half the lemon juice and the reduced white wine. Simmer for 30 minutes, then remove from the heat and add the rosemary and thyme. Leave to infuse for 10 minutes, then add the parsley and leave for 5 more minutes. Add the coriander seeds, black peppercorns, tarragon and lemon peel, then leave for another 5 minutes",
+      "Pass the liquid through a fine sieve and a double layer of muslin, then add the salt, extra virgin olive oil, the remaining Chardonnay vinegar and the remaining lemon juice. Check for seasoning, then place in the fridge to cool",
+      "To cook the red cabbage in the braising liquid, preheat a water bath to 90°C. Measure out 500g of the liquid. Trim the cabbage wedges and remove any damaged leaves, then divide them between two vacuum bags. Add 250g of braising liquid to each bag, seal, then cook for 45–50 minutes. Plunge into an ice bath to quickly chill, then place in the fridge until required",
+      "To make the spice salt: toast the spices in a dry pan and leave to cool. Blitz into a fine powder, then weigh out 3.2g of the spice mix. Blitz this with the Maldon salt and set aside",
+      "To make the umble crumb: combine the breadcrumbs with the parsley, baby fennel and 10g of the spice salt. Add fennel pollen to taste and set aside in an airtight container until ready to serve. You will need 100g for this recipe",
+      "When ready to serve, reheat the braised red cabbage, pickled red cabbage fluid gel and duck sauce. Cook the rainbow chard by placing the water in a small pan over a low heat and gradually add the butter, whisking to combine. When all the butter is added, blitz with a hand blender. Add the chard leaves, cover and cook for a few minutes until soft but with a bite. Season",
+      "Meanwhile, remove the rested duck breasts from their bags and pat dry, then sear the fatty sides of the breast on a plancha. Once crispy, brush the skin with a little of the duck sauce, then season the breasts with the spice salt and freshly ground black pepper",
+      "Place 50g of the fluid gel on the plate and drag your spoon across it. Slice each duck breast in 2 and arrange over the top. Place 25g of rainbow chard over each pair of duck halves. Cut each cabbage wedge into 3 and place over the top of the chard, then arrange 3 pickled cherry halves alongside. Cut the duck hearts in half and sprinkle 5g of the umble crumb over each, arranging 2 duck heart halves per plate next to the duck. Finish with 15g of the duck sauce and season with a little of the spice salt"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Hearts",
+        "unit": null,
+        "notes": "rinsed under running water for 10 minutes",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": "smoked",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "240",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "26",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅖",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "g",
+        "notes": "fresh, peeled and thinly sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cherries",
+        "unit": "kg",
+        "notes": "stones in, washed and stems picked",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": "ideally Shiraz",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "166",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "23",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Long Pepper",
+        "unit": "g",
+        "notes": "crushed",
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cardamom Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peppercorns",
+        "unit": "g",
+        "notes": "ideally Tasmanian",
+        "amount": "⅗",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Carcasses",
+        "unit": "kg",
+        "notes": "chopped",
+        "amount": "2.8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plum Tomatoes",
+        "unit": "g",
+        "notes": "halved",
+        "amount": "420",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "1.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Port",
+        "unit": "g",
+        "notes": "reduced by half",
+        "amount": "124",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "L",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": "kg",
+        "notes": "reserve trimmings, cut into quarters, cored and thinly sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Juice",
+        "unit": "g",
+        "notes": "ideally Copella cloudy apple juice",
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cabernet Sauvignon Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "88",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "g",
+        "notes": "ideally Shiraz",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Redcurrant Jelly",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gellan Gum Type F",
+        "unit": "g",
+        "notes": null,
+        "amount": "5.25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbages",
+        "unit": null,
+        "notes": "trimmed and each cut into 6 wedges",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": "toasted and lightly crushed",
+        "amount": "2.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "pinch",
+        "notes": "toasted and lightly crushed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": "ideally Trea Greek",
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Leek",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "g",
+        "notes": "finely sliced",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Stock",
+        "unit": "g",
+        "notes": null,
+        "amount": "325",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "325",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chardonnay Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "g",
+        "notes": "reduced to 167g",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "g",
+        "notes": null,
+        "amount": "4.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary Leaves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tarragon Leaves",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Peel",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "11",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "g",
+        "notes": "ideally Trea Greek",
+        "amount": "62",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Allspice",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Peppercorns",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mace",
+        "unit": "g",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maldon Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": "fried in oil until golden brown",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Pollen",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "pinch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Cress",
+        "unit": "pinch",
+        "notes": "ideally true baby fennel, finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rainbow Chard",
+        "unit": "g",
+        "notes": "leaves only, washed and dried",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "diced into 2cm cubes",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9b00843cdb4c5b74891253d800ee744a1052197978de206d50b6945d46033cf8",
+    "lineage_hash": "dff0a6ffb23f6e5f9a576b9e3dd8e0831581d892316fad7b19032f8a45fcbdf5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-braised-cabbage-pickled-cherries-recipe",
+    "fetchedAt": "2026-08-03T06:17:58.106Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-braised-cabbage-pickled-cherries-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

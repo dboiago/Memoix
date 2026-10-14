@@ -1,0 +1,164 @@
+{
+  "recipe": {
+    "name": "Cod Popcorn",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First, prepare the batter for the cod. Add the flour and baking powder to a bowl, pour in the milk and whisk to form a thick pancake-like batter. If too thick, add a little milk to loosen",
+      "Fold in the diced cod, shallots and spring onions. Season with salt and pepper and set aside",
+      "To prepare the salad, rinse and scrub the potatoes. Use an apple corer to punch out cylinders in the potatoes",
+      "Bring a large pan of salted water to the boil. Add the potato cylinders and simmer over a medium heat until almost cooked, approximately 15 minutes",
+      "Once cooked, use a slotted spoon to gently remove the potatoes from the water, transfer to a container or salad bowl and set aside",
+      "Heat a deep-fat fryer to 150°C. Alternatively, fill a deep saucepan with oil to a third of the way up. Caution: hot oil can be dangerous",
+      "Use a teaspoon to carefully drop pieces of the cod mixture into the hot oil. Fry until golden for about 3-4 minutes",
+      "Remove the cod popcorn carefully with a slotted spoon. Drain on kitchen towel",
+      "Meanwhile, combine the cucumber ribbons and potatoes in a large bowl. In a small bowl, mix the buttermilk, mayonnaise and chives and spoon into the bowl with the potatoes and cucumber",
+      "Divide the cod popcorn onto plates and serve alongside the cucumber and potato salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillet",
+        "unit": "g",
+        "notes": "boneless, cut into 1cm cubes",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "large",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": "peeled and cut into ribbons",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Buttermilk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ffb54b27fde3f5adf7d5a89e430df68dfe9722f14644b6aa87fa6fd9dee66fb2",
+    "lineage_hash": "368ea36656cd409f27bce0c1edc842ff8a7702d38345e870f51c2720902878b3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-popcorn-recipe",
+    "fetchedAt": "2026-08-03T19:29:17.792Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-popcorn-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

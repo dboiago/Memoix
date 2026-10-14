@@ -1,0 +1,93 @@
+{
+  "recipe": {
+    "name": "Dutch Nemesis",
+    "time": "4 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "173",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of pineapple wedge.",
+      "SHAKE first 4 ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "TOP with sparkling wine.",
+      "Garnish with pineapple wedge on rim."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Oude Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kummel Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "22.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aromatic Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brut Sparkling Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "486c96f5c7ea111ae238f759106549c37eef6c3ff7892fae9ec147d03ce13619",
+    "lineage_hash": "8f824672d7ba87c96716b7ce2ebf6d117f0a7040bdb90e3db56a5dbdb845f3bf"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/22426/dutch-nemesis",
+    "fetchedAt": "2026-08-03T19:37:53.343Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/22426/dutch-nemesis",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

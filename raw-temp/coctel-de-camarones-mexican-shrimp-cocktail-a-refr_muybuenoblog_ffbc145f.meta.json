@@ -1,0 +1,68 @@
+{
+  "url": "https://muybuenoblog.com/coctel-de-camarones-mexican-shrimp-cocktail/",
+  "slug": "coctel-de-camarones-mexican-shrimp-cocktail-a-refr_muybuenoblog_ffbc145f",
+  "title": "Coctel de Camarones (Mexican Shrimp Cocktail) – A Refreshing No-Cook Appetizer",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T09:44:32.563Z",
+  "ldName": "Coctel de Camarones (Mexican Shrimp Cocktail)",
+  "ldTime": "PT17M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT2M",
+  "ldYield": [
+    "4",
+    "4 to 6 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "5 de mayo recipe, Mexican shrimp cocktail recipe, shrimp cocktail",
+  "ldIngredientsRaw": [
+    "1/2 cup ketchup",
+    "1 1/2 cups vegetable juice (recommend V8)",
+    "1 to 2 tablespoons creamy horseradish ((add more or less according to spicy tolerance))",
+    "Juice of 2 limes",
+    "1/2 teaspoon bottled hot sauce (recommend Tabasco)",
+    "1/8 teaspoon garlic powder",
+    "1/4 cup diced red onion",
+    "1  jalapeno (diced (optional))",
+    "1/4 cup chopped cilantro",
+    "1 pound medium to large shrimp (shelled, deveined, and cooked)",
+    "1  avocado (pitted, peeled, and chopped)",
+    "Saltine crackers or tortilla chips (for serving)"
+  ],
+  "ldInstructionsRaw": [
+    "Stir together the ketchup, vegetable juice, horseradish, lime juice, hot sauce, and garlic powder until well combined. Taste and add more chile or hot sauce if you would like it spicier.",
+    "Add the onion, jalapeno (if using), cilantro, and shrimp and mix well. Gently stir in the avocado.",
+    "Cover and refrigerate 2 to 3 hours.",
+    "Serve in 4-ounce glasses with saltine crackers or corn tortilla chips."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "252 kcal",
+    "sugarContent": "10 g",
+    "sodiumContent": "1328 mg",
+    "fatContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "17 g",
+    "fiberContent": "4 g",
+    "proteinContent": "25 g",
+    "cholesterolContent": "286 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1/2 cup ketchup",
+    "▢ 1 1/2 cups vegetable juice, recommend V8",
+    "▢ 1 to 2 tablespoons creamy horseradish, (add more or less according to spicy tolerance)",
+    "▢ Juice of 2 limes",
+    "▢ 1/2 teaspoon bottled hot sauce, recommend Tabasco",
+    "▢ 1/8 teaspoon garlic powder",
+    "▢ 1/4 cup diced red onion",
+    "▢ 1 jalapeno, diced (optional)",
+    "▢ 1/4 cup chopped cilantro",
+    "▢ 1 pound medium to large shrimp, shelled, deveined, and cooked",
+    "▢ 1 avocado, pitted, peeled, and chopped",
+    "▢ Saltine crackers or tortilla chips, for serving"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

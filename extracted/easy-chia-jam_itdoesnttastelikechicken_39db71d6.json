@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Easy Chia Jam",
+    "time": "10 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "40",
+      "carbohydrateContent": "8",
+      "fatContent": "1",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Start by adding your chosen fruit to a medium saucepan. Cook the fruit over medium-high heat, stirring occasionally, until it softens and begins to bubble. This should take about 5-10 minutes. If the fruit starts to stick, add a small splash of water to the saucepan.",
+      "Once the fruit is cooked, use a potato masher or a spoon to mash it to your desired consistency. For chunkier jam, mash less; for a smoother texture, mash more.",
+      "Next, stir in the chia seeds. Add sweetener to taste, using either maple syrup or agave. Some fruits might be sweet enough on their own and not require any added sweetener, so taste the mixture and adjust the sweetness accordingly. Mix in lemon juice and lemon zest, if you like a bit of extra zing.",
+      "Remove the jam from heat and let it cool. As it cools, it will thicken. Once cooled, transfer the jam to an airtight container. Store it in the refrigerator for 1-2 weeks, or freeze it for up to 8 months. Use your homemade chia jam as desired—spread it on toast, swirl it into oatmeal, top off vegan yogurt bowls, drizzle on vegan ice cream, spread on pastries, or use any way you like."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Or Frozen Fruit",
+        "unit": "C",
+        "notes": "fresh, (such as raspberries, strawberries, blueberries, blackberries, cherries, peaches, mangoes, pineapple, apricots, plums, kiwi, or a mix) *see notes",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chia Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "Tbsp",
+        "notes": "alt: agave, optional",
+        "amount": "1-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "pinch",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c625e7c32bcc653696878a35bb2ffaa140cb5c012415a1d201d0cf4ded95aff3",
+    "lineage_hash": "20c5411c8ed5aa06ab5509936ca8e690e72bedb5aa5e1ba3e0e0c796cdce2823"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-chia-jam/",
+    "fetchedAt": "2026-08-02T05:05:05.131Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-chia-jam/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,86 @@
+{
+  "recipe": {
+    "name": "Creole Contentment",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Coupe",
+    "garnish": [
+      "Luxardo Maraschino Cherry"
+    ],
+    "subcategory": "Brandy",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "161",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a COUPE GLASS.",
+      "Prepare garnish of Luxardo Maraschino Cherry.",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with maraschino cherry."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "unit": "ml",
+        "notes": "brandy",
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sercial (dry) Madeira Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chilled Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da4507ccd1911c619f713ef992abc56b8779836fc1ad416f880b304db168763b",
+    "lineage_hash": "a7914da806a19a4f312aa08d0adb98fc8add7861494499244f30d9c86b7942e7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/3131/creole-contentment",
+    "fetchedAt": "2026-08-03T09:22:30.699Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/3131/creole-contentment",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

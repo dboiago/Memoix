@@ -1,0 +1,69 @@
+{
+  "recipe": {
+    "name": "Coastal Mimosa",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a small saucepan, combine the passion fruit pulp and sugar and set over high heat. Bring to a boil, stirring occasionally, and simmer until the sugar fully dissolves, about 2 minutes. Transfer to a heatproof container. Once cooled, store in the fridge until ready to use.",
+      "Make sure the sparkling wine and orange juice are well chilled. When ready to serve, combine the wine, orange juice, and passion fruit juice in a large pitcher. Serve immediately, and garnish each glass with a halved passion fruit, if using.\n\nTipIf you’re in a pinch and don’t have time to make your own passion fruit pulp, you can find it sold frozen in most Latin markets or large grocery stores. This recipe calls for half a 14-ounce bag. Fully defrost before use.",
+      "If you like your cocktails not too sweet, simply halve the amount of sugar."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bottle (750ml) Dry Sparkling Wine",
+        "unit": null,
+        "notes": "chilled",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "C",
+        "notes": "chilled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e9f53926878247288849e7a8dbc526d0651a31e065a2b7b55214f41566ab0908",
+    "lineage_hash": "ad2821272f5f4baf06d4333645246589baae11b7ddd2ad2a7cfc930cb153b77a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coastal-mimosa-a-passion-fruit-mimosa/",
+    "fetchedAt": "2026-08-04T01:58:15.372Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coastal-mimosa-a-passion-fruit-mimosa/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

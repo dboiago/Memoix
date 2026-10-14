@@ -1,0 +1,45 @@
+{
+  "url": "https://www.davidlebovitz.com/apple-jelly-jam-recipe/",
+  "slug": "apple-jelly-recipe_davidlebovitz_ccb0bcc0",
+  "title": "Apple Jelly recipe",
+  "byline": "David",
+  "fetchedAt": "2026-08-03T03:46:56.146Z",
+  "ldName": "Apple Jelly",
+  "ldTime": null,
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": [
+    "6",
+    "6 jars, 1 cup (250ml) each"
+  ],
+  "ldCuisine": null,
+  "ldCategory": null,
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "8 pounds (3.75kg) apples",
+    "10 cups (2.25L) water",
+    "6 cups (1,2kg) sugar",
+    "1/4 cup (60ml) freshly squeezed lemon juice",
+    "2 teaspoons Calvados (brandy, or Cognac)"
+  ],
+  "ldInstructionsRaw": [
+    "Rinse the apples and cut them coarsely into chunks, then put them and the cores and seeds, into a very large stockpot.",
+    "Add the water, cover, and bring to a boil. When bubbling, reduce the heat a bit, leave the lid askew, and cook for 20 to 30 minutes, until the apples are tender and cooked through.",
+    "Line a mesh colander with a piece of muslin cloth or a few folds of cheesecloth (or use a jelly bag and stand) and set it over a deep bowl, then ladle the apples and the liquid into the colanders. (I use two lined colanders since it was quite a bit of apples.)",
+    "Let stand or at least 3 hours (but you&#39;ll get more juice if you let the apples drain around ~8 hours), and during that time, no matter how tempting it looks, do not press down at any time on the apples to extract more juice or the jelly will get cloudy.",
+    "The next day, measure out the juice. You should have about 8 cups (2L) but may get a little more. Pour the juice into a large, non-reactive pot fitted with a candy thermometer, add the sugar and lemon juice, and bring to a boil. During cooking, as any white foam forms on the surface while the jelly is cooking, gently skim it off with a ladle. (See Note at the end of the recipe for some idea about repurposing the apples and the foam.)",
+    "Cook until the temperature reaches 220ºF (104ºC). At that point, turn off the heat and begin testing the jelly on a chilled plate in the freezer, using the method mentioned in the headnote. When it wrinkles and holds its shape, it’s done. If not, continue to cook and re-test it at intervals. This batch set at 230ºF (110ºC).",
+    "Remove from heat, stir in the liquor, and ladle into clean jars, then cap tightly."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "8 pounds (3.75kg) apples",
+    "10 cups (2.25L) water",
+    "6 cups (1,2kg) sugar",
+    "1/4 cup (60ml) freshly squeezed lemon juice",
+    "2 teaspoons Calvados, brandy, or Cognac"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "FR",
+  "siteCourseHint": "Desserts"
+}

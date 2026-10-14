@@ -1,0 +1,59 @@
+{
+  "url": "https://www.baking-sense.com/2023/09/28/concord-grape-ice-cream/",
+  "slug": "concord-grape-ice-cream_baking-sense_3a51d2d7",
+  "title": "Concord Grape Ice Cream",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:10:05.119Z",
+  "ldName": "Concord Grape Ice Cream Recipe",
+  "ldTime": "PT380M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "16",
+    "16 servings"
+  ],
+  "ldCuisine": "American",
+  "ldCategory": "Dessert",
+  "ldKeywords": "concord grapes, ice cream",
+  "ldIngredientsRaw": [
+    "16 oz Concord grapes (weight without stems)",
+    "16 oz heavy cream (2 cups)",
+    "5  egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "ldInstructionsRaw": [
+    "In a food processor, puree 16 oz&#32;Concord grapes until smooth. Strain the puree through a fine sieve to remove the seeds. You should have about 1½ cups of puree after straining. Refrigerate the puree it while you make the ice cream base.",
+    "Heat 16 oz&#32;heavy cream in a small saucepan over medium high heat until scalding hot.",
+    "While the cream heats up, whisk together 5&#32;egg yolks 8 oz&#32;granulated sugar and ⅛ teaspoon&#32;table salt in a small bowl.",
+    "Once the cream mixture is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+    "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a full boil. Remove from the heat and pour back into the bowl from the yolks. Add the cold grape puree to the custard and stir to combine.",
+    "Cover the bowl and chill until very cold. At least 4-5 hours or over night.",
+    "Freeze according to the directions for your ice cream machine.",
+    "When the ice cream is ready, scoop it into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface of the ice cream, cover tightly and freeze until firm."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "8 g",
+    "calories": "189 kcal",
+    "carbohydrateContent": "20 g",
+    "proteinContent": "2 g",
+    "fatContent": "12 g",
+    "saturatedFatContent": "7 g",
+    "cholesterolContent": "93 mg",
+    "sodiumContent": "29 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "19 g",
+    "unsaturatedFatContent": "4 g"
+  },
+  "htmlIngredientLines": [
+    "16 oz Concord grapes (weight without stems)",
+    "16 oz heavy cream (2 cups)",
+    "5 egg yolks",
+    "8 oz granulated sugar (1 cup)",
+    "⅛ teaspoon table salt"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

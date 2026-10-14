@@ -1,0 +1,179 @@
+{
+  "recipe": {
+    "name": "Arbroath Smokie Croquettes with Katsuobushi",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a pan then add the flour and cook gently until golden, about 10 minutes",
+      "Add the warm fish stock slowly whilst whisking constantly until it turns into a glue-like texture. Cook the mixture low and slow for about 30 mins",
+      "Add the chives and Arbroath smokies and season with salt and dashi powder. Let the mixture cool",
+      "Roll the croquette mixture into 15g balls and then freeze until solid",
+      "Whisk together the eggs, milk and salt for the egg wash",
+      "Toss each croquette first in flour, then egg wash, then panko and finally the sesame seeds",
+      "Heat a few centimetres of oil in a heavy, high-sided frying pan to 180°C for deep-frying",
+      "Deep-fry the croquettes until golden, about 3–4 mins per croquette",
+      "Garnish with furikake, tonkatsu sauce, Kewpie mayo, chives, pickled daikon and katsuobushi"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "plus extra for the pané",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Stock",
+        "unit": "L",
+        "notes": "warmed in a pan",
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Arbroath Smokies",
+        "unit": "g",
+        "notes": "poached and flesh picked",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "g",
+        "notes": "plus extra for the garnish",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Sesame Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Furikake Seasoning",
+        "unit": "g",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonkatsu Sauce",
+        "unit": "g",
+        "notes": "to garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewpie Mayonnaise",
+        "unit": "g",
+        "notes": "to garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pickled Daikon",
+        "unit": "g",
+        "notes": "to garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Katsuobushi",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "72adfdf8aab3d4551af200a0d8f7eaf28a0990c9dec860bf2d55cd7a76ad46bd",
+    "lineage_hash": "3a2af39d58050135d28d5396864b8de6bfae5a1b296b790ed314ae598d211dd8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/arbroath-smokie-croquettes-katsuobushi-recipe",
+    "fetchedAt": "2026-08-02T13:08:11.178Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/arbroath-smokie-croquettes-katsuobushi-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

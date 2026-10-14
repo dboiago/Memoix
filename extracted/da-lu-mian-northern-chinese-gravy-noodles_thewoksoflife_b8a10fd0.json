@@ -1,0 +1,216 @@
+{
+  "recipe": {
+    "name": "Da Lu Mian (Northern Chinese Gravy Noodles)",
+    "time": "3 hr 20 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "656",
+      "carbohydrateContent": "59",
+      "fatContent": "40",
+      "proteinContent": "19"
+    },
+    "directions": [
+      "Rinse the dried shiitake mushrooms, then soak them in 1½ cups of water for a few hours (or overnight) until completely softened. In two separate bowls, soak the wood ear mushrooms and dried lily flowers with plenty of water. Keep everything in the refrigerator if soaking overnight.",
+      "Rinse the pork belly, and add the whole piece to a medium pot along with 6 cups water, the ginger, 2 whole scallions, the star anise, and Shaoxing wine. Cover and bring to a boil. Reduce the heat to medium-high and cook for about 30 minutes. Poke the pork with a fork; it is done when the fork comes out easily. Remove the pork belly from the pot and let it cool on a plate. Remove the star anise and scallions from the pork stock, leaving the ginger slices behind, and set aside.",
+      "Meanwhile, squeeze the shiitake mushrooms dry, trim off any tough stems, and thinly slice. Save the mushroom soaking water. Rinse the wood ears and julienne them. Trim away the tough ends of the lily flowers, and cut each one in half.",
+      "In a wok over medium-low heat, add the oil and Sichuan peppercorns. Let the peppercorns infuse the oil for about 10 minutes and adjust heat to avoid burning. Turn off the heat, discard the Sichuan peppercorns, and transfer the infused oil to a heat-proof bowl to serve with the noodles later, leaving 1 tablespoon of oil behind in the wok.",
+      "Once the pork belly has cooled, cut it into bite-size slices. Add the slices to the wok over medium-high heat, and cook for 3-5 minutes until they start to release fat. Add the shiitake mushrooms and cook for a few more minutes until fragrant.",
+      "Next, add the mushroom soaking water (avoid any sediment at the bottom of the bowl), the pork stock and ginger slices, the wood ears, and lily flowers. (If using a thick bottomed pot instead of a wok, use only 4 cups of the pork stock along with mushroom water). Bring to a boil over high heat. Add the light soy sauce, dark soy sauce, sugar, white pepper, and five spice powder (if using).",
+      "Cover and simmer for 15 minutes over medium-high heat. Bring a separate pot of water to a boil to cook the noodles.",
+      "Mix cornstarch with water to make a slurry, and with the soup mixture bubbling, stir it in. Drizzle in the beaten eggs in a large circle. Do not touch the eggs until cooked. Once the egg is set, stir in the raw garlic, chopped scallion, and salt. Mix well. (The sauce should be slightly salty as it will need to flavor the noodles.)",
+      "Boil the noodles according to package instructions. To serve, drain the noodles and divide them amongst 6-8 bowls. To serve, top with a large ladle of the gravy and drizzle with a couple teaspoons of the infused Sichuan peppercorn oil. Mix and enjoy!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "plus more for soaking dried ingredients",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shiitake Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lily Flower",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "slices",
+        "notes": "⅛-inch/3mm thick, 2 inches/5cm wide",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallions",
+        "unit": null,
+        "notes": "2 whole, 2 chopped; divided",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "C",
+        "notes": "such as vegetable, canola, or avocado oil",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sichuan Peppercorns",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Five Spice Powder",
+        "unit": "tsp",
+        "notes": "optional",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "mixed with ½ cup/120ml water",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wheat Noodles",
+        "unit": "lb",
+        "notes": "alt: 2 1/2 pounds/1200g fresh wheat noodles, dried",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a54b290058f4449abe5c57e567bf1828442f724a5a42cbfbe7f2875af592c689",
+    "lineage_hash": "4340a8e94bd9c074ded151cacb2f9f34196f0a8c23b8399fc116488bfb447982"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/da-lu-mian-northern-chinese-gravy-noodles/",
+    "fetchedAt": "2026-08-02T19:26:29.069Z"
+  },
+  "rawSource": "https://thewoksoflife.com/da-lu-mian-northern-chinese-gravy-noodles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

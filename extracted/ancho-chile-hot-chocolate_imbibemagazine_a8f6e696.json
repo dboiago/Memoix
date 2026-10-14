@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Ancho Chile Hot Chocolate",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine ingredients in the mug, stir to combine, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Reposado Tequila",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ancho Reyes Chile Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "51f29352751a24324287fa2a5cd80e640f72b48807b4129c84283743e9c36c29",
+    "lineage_hash": "ea732d054e50ea4cc73ec553f27e022cb836ed955437c9279fd0ffad394010a5"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ancho-chile-hot-chocolate/",
+    "fetchedAt": "2026-08-03T22:46:17.005Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ancho-chile-hot-chocolate/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

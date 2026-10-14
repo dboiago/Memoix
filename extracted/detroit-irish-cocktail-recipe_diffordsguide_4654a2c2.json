@@ -1,0 +1,79 @@
+{
+  "recipe": {
+    "name": "Detroit Irish Cocktail",
+    "time": "3 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IE",
+    "glass": "Martini",
+    "garnish": [
+      "Mint Leaf",
+      "Shamrock"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "256",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Select and pre-chill a MARTINI GLASS.",
+      "Prepare garnish of mint leaf (or shamrock).",
+      "STIR all ingredients with ice.",
+      "FINE STRAIN into chilled glass.",
+      "Garnish with mint leaf (or shamrock)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon Whiskey",
+        "unit": "ml",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tuaca Liqueur",
+        "unit": "ml",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grand Marnier",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Sugar Syrup",
+        "unit": "ml",
+        "notes": null,
+        "amount": "7.5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1be4be4bcb5c2c3d2a21ba4b72a88106c084dc096dca4813a0bbed2d668103f0",
+    "lineage_hash": "946f57791df47b048c441ae061e4c822fa69641a899d079dd7ae39970b75d698"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/5766/detroit-irish-cocktail",
+    "fetchedAt": "2026-08-03T15:30:19.691Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/5766/detroit-irish-cocktail",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

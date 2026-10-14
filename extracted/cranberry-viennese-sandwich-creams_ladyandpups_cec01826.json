@@ -1,0 +1,135 @@
+{
+  "recipe": {
+    "name": "Cranberry Viennese Sandwich Creams",
+    "time": "1 hr 30 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "AT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "TO MAKE THE CRANBERRY BUTTER FROSTING: In a food-processor, pulse dried cranberries for about 2 min until it comes into a paste-like consistency. Add the unsalted butter and run until the mixture is evenly blended. You should NOT be able to see bits of butter in the mixture. Add the creme fraiche and run again until smooth, then add the powdered sugar and salt and run until evenly mixed (you may have to scrape the sides/bottom a few times). Transfer into a bowl and set aside.",
+      "TO MAKE THE VIENNESE WHIRLS: Preheat the oven on 350 F/175 C. Rinse the food-processor bowl and blade under hot tap-water until clean, then dry with a clean towel. Add the unsalted butter and powdered sugar, then run the machine for 3~4 min, scraping the sides/bottom a few times in between, until the butter is extremely soft and silky. It should be in a consistency where it does not clump up at the side of the food-processor bowl, but is able to move fluidly in the motion of the blade. Now add the creme fraiche and run just until evenly mixed, then add flour, potato starch (or cornstarch), vanilla extract and salt. Pulse a few times in the beginning to get it going, scraping the sides/bottom a few times, then run continuously for about 30 seconds until the cookie-paste is very smoothly blended.",
+      "Transfer the cookie-paste into a piping bag attached with a small star-shaped tip (if you don’t have a star-shaped tip, just a round hole will do fine). I find it much easier to pipe when the bag is only filled half-way, then refill later. Squeeze and knead the cookie-paste inside the piping-bag as you push it towards the tip. This softens the paste further, making it easier to pipe, and also eliminates air-bubbles and makes it a smoother paste. Rub a bit of vegetable oil on a baking-sheet then line with parchment paper (the oil sticks the parchment so it doesn’t move, which makes the piping a lot easier). Pipe the cookie-paste into small rounds about 1 1/4″ (3 cm) in diameter, with about 2″ (5 cm) of space in between.",
+      "Sprinkle a few specks of sea salt on each, then bake in the oven for 16~18 min until the edges are slightly browned. Let cool on the sheet for 5 min, then transfer to a cooling rack to cool completely. Repeat with the rest of the cookie-paste.",
+      "TO SANDWICH THE COOKIE: Place a generous nub, about 1 heaping tsp of the cranberry butter frosting between 2 cookies, then gently press them together until the filling extend to the edge."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cranberries",
+        "unit": "C",
+        "notes": "dried, 125 grams",
+        "amount": "1",
+        "section": "Cranberry Butter Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "42 grams, softened",
+        "amount": "3",
+        "section": "Cranberry Butter Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Creme Fraiche",
+        "unit": "Tbsp",
+        "notes": "51 grams",
+        "amount": "3",
+        "section": "Cranberry Butter Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "180 grams",
+        "amount": "1½",
+        "section": "Cranberry Butter Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "Cranberry Butter Frosting",
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "C",
+        "notes": "220 grams, softened",
+        "amount": "1",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": "60 grams",
+        "amount": "½",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "Creme Fraiche",
+        "unit": "Tbsp",
+        "notes": "16 grams",
+        "amount": "1",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "248 grams",
+        "amount": "2",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "Potato Starch",
+        "unit": "C",
+        "notes": "alt: cornstarch, 67 grams",
+        "amount": "½",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "+ ⅛ tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      },
+      {
+        "name": "Flakey Sea Salt",
+        "unit": null,
+        "notes": "to dust",
+        "amount": "0",
+        "section": "Viennese Whirls",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "88979563676d759ccef8dbf091eac64262ea53bfa734e5ad25b5508310f32e3b",
+    "lineage_hash": "a18f2427da7c6a9247eaafffc65600c93558894e2ffc96318077ad887127fb09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ladyandpups.com/2015/11/04/cranberry-viennese-sandwich-creams/",
+    "fetchedAt": "2026-08-02T03:51:14.098Z"
+  },
+  "rawSource": "https://ladyandpups.com/2015/11/04/cranberry-viennese-sandwich-creams/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

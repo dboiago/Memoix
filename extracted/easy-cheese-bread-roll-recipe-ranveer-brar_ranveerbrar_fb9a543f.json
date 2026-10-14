@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Cheese Bread Roll (चीज़ ब्रेड रोल)",
+    "time": "25 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add potatoes, paneer, salt, red chilli powder, chaat masala, crushed black pepper, coriander leaves and green chillies. Mix well till a smooth dough like mixture is formed.",
+      "Set aside till in use.",
+      "Add grated Pizza Cheese to a bowl along with oregano, chilli flakes and black olives. Mix well.",
+      "Take the potato mixture, fill cheese in between and give it a cylindrical shape. Keep aside till further use.",
+      "Take the bread, dip it in water, cover the prepared mixture with bread and make an oval shape.",
+      "Once all are prepared, set them in the refrigerator to cool down for about 30-40 minutes.",
+      "Heat oil in a kadhai, deep-fry the prepared cheese bread rolls till golden brown and crisp.",
+      "Drain on absorbent paper.",
+      "Serve with tomato ketchup or choice of dip."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread Slices",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "medium",
+        "notes": "boiled & grated",
+        "amount": "2",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Paneer",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "100",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Red Chilli Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Chaat Masala",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Crushed Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "0",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "3",
+        "section": "For Bread Roll",
+        "isOptional": false
+      },
+      {
+        "name": "Pizza Cheese",
+        "unit": "C",
+        "notes": "grated",
+        "amount": "1½",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Chilli Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "Tbsp",
+        "notes": "pitted and chopped",
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": "Other Ingredients",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "69ddb20b8434a5a5081aeeccdff1a83e386e093e58a17df970d796e47dddad37",
+    "lineage_hash": "6349b90bd9c238e466d5f325c48dab8d1c5ad981fa8a89fe9eea1c39f40c2d49"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cheese-bread-roll/",
+    "fetchedAt": "2026-08-02T05:16:33.198Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cheese-bread-roll/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

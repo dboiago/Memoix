@@ -1,0 +1,72 @@
+{
+  "url": "https://www.chinasichuanfood.com/crispy-pork-belly-siu-yuk/",
+  "slug": "crispy-pork-belly-recipe-siu-yuk_chinasichuanfood_db08ba49",
+  "title": "Crispy Pork Belly Recipe (Siu Yuk)",
+  "byline": "",
+  "fetchedAt": "2026-08-01T20:19:03.883Z",
+  "ldName": "Crispy Pork Belly (Siu Yuk)",
+  "ldTime": "PT780M",
+  "ldPrepTime": "PT720M",
+  "ldCookTime": "PT60M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main Course",
+  "ldKeywords": "Crispy, Pork Belly",
+  "ldIngredientsRaw": [
+    "1000 g pork belly with beautiful layers",
+    "2  small chunks of ginger",
+    "2  scallions",
+    "1 tbsp. cooking wine",
+    "6-10  Sichuan peppercorns ( ,optional)",
+    "1.5 tsp. salt",
+    "2 tsp. Chinese five spice",
+    "1/2 tsp. sugar",
+    "1 tsp. white pepper",
+    "sea salt to cover the meat",
+    "white vinegar for brushing"
+  ],
+  "ldInstructionsRaw": [
+    "Place the pork belly in a large pot with clean water, add cooking wine, scallion, ginger and sichuan peppercorn. Continue cook for 3 minutes after boiling.",
+    "Transfer the pork out and pat dry the water. Then pork as many holes on the rind. Back and forth and repeat several times. This is the most important step.",
+    "After the hard pork process, apply a small pinch of salt on the rind.",
+    "Cut two shallow lines on the pork (only the lean part, not deep to touch the fat) and then sprinkle the dry rub evenly.",
+    "Wrap the pork belly with foil wrappers and place in fridge overnight.Uncovered please, we need the rind to be dry before roasting.",
+    "Pre-heat oven to 180 degree C. Brush a thin layer of vinegar and spread salt evenly to form a protecting layer. Roast for 50 minutes to 1 hour.",
+    "Remove the salt and place the pork belly on the middle rack. Remember to use a tray to catch the dropping oils. Use upper fire only at the temperature of 220 degree C, and roast until the rind is golden brown and well crackled.",
+    "Let the pork belly stay in the oven for 10 to 15 minutes until slightly cooled down. Transfer out and cut into small bites.",
+    "Cutting tips: when cutting the pork belly, place the skin side down. Cut the meat part firstly and then press the knife to break the crispy rinds."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "5268 kcal",
+    "carbohydrateContent": "15 g",
+    "proteinContent": "96 g",
+    "fatContent": "531 g",
+    "saturatedFatContent": "193 g",
+    "cholesterolContent": "720 mg",
+    "sodiumContent": "3193 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "3 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1000 g pork belly with beautiful layers",
+    "2 small chunks of ginger",
+    "2 scallions",
+    "1 tbsp. cooking wine",
+    "6-10 Sichuan peppercorns  ,optional",
+    "[Marinating]",
+    "1.5 tsp. salt",
+    "2 tsp. Chinese five spice",
+    "1/2 tsp. sugar",
+    "1 tsp. white pepper",
+    "[Roasting]",
+    "sea salt to cover the meat",
+    "white vinegar for brushing"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

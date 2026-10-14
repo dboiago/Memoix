@@ -1,0 +1,158 @@
+{
+  "recipe": {
+    "name": "Easy Curry Chicken",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "235",
+      "carbohydrateContent": "14",
+      "fatContent": "16",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Marinate the chicken: Toss chicken with the marinade ingredients and rest 10 minutes.",
+      "Sauté aromatics: Heat oil in wok and cook onion, garlic, ginger until fragrant.",
+      "Add vegetables: Add potato and carrot and stir fry briefly.",
+      "Simmer curry: Add water to cover all the contents, then place in curry paste, soy sauce and bring to a simmer. Simmer for around 15 to 20 minutes until the sauce is slightly thickened.",
+      "Sear chicken: Heat oil in skillet and pan-fry marinated chicken until browned.",
+      "Simmer chicken in curry: Add seared chicken to the curry pot and cook for another 5 minutes.",
+      "Serve over rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Leg Deboned and Cut Into Large Pieces",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potato Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrot Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion Diced",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Piece Ginger Minced",
+        "unit": "small",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block Curry Paste",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hot Water",
+        "unit": null,
+        "notes": "2 cm higher than the content",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cooking Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil for Coating the Chicken Meat",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bb2c4b58e2764072d0e3d35fe7eaad7584fe2cf40b958379e34cdc33b24d0421",
+    "lineage_hash": "c04eb417241ab57927017a9ae393fbffa39daa1fed9dccc5f9891c4803f542f0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/easy-curry-chicken/",
+    "fetchedAt": "2026-08-02T08:55:39.952Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/easy-curry-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

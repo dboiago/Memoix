@@ -1,0 +1,142 @@
+{
+  "recipe": {
+    "name": "Coconut Pineapple Loaf Cake",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 350°F and grease a 9-x-5-inch (2 L) loaf pan, lining it with parchment paper if you wish.",
+      "Whisk the sugar, yogurt, oil, eggs, orange zest and vanilla together.",
+      "Sift the flour, baking powder, cinnamon and salt over the batter and stir to combine. Stir in the pineapple, raisins and coconut. Scrape the batter into the prepared pan.",
+      "Bake for 60 to 70 minutes, until a tester inserted in the centre of the cake comes out clean. Cool the cake for 30 minutes, and then tap the cake out of the pan to cool completely on a cooling rack."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "200 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Yogurt",
+        "unit": "C",
+        "notes": "160 mL",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": "90 ml",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "large, at room temperature",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Zest",
+        "unit": "tsp",
+        "notes": "finely grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "250 g",
+        "amount": "1⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple",
+        "unit": "C",
+        "notes": "fresh, finely diced, OR a 14-oz (398 mL) tin crushed pineapple, well-drained",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden",
+        "unit": "C",
+        "notes": "alt: Thompson raisins, 75 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Shredded Coconut",
+        "unit": "C",
+        "notes": "35 g",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b10042cb9570029f92d3955f372c2e8e57552452bfdce4ccc41306081a31f842",
+    "lineage_hash": "2271e984dd6a060111dac5d34eb957ff51c005f8d622c9764c8d1f7d09931c43"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/coconut-pineapple-loaf-cake/",
+    "fetchedAt": "2026-08-01T23:52:21.336Z"
+  },
+  "rawSource": "https://annaolson.ca/project/coconut-pineapple-loaf-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

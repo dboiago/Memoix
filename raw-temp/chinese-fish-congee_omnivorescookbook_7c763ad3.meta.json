@@ -1,0 +1,70 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-fish-congee/",
+  "slug": "chinese-fish-congee_omnivorescookbook_7c763ad3",
+  "title": "Chinese Fish Congee (生滚鱼片粥)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:00:22.244Z",
+  "ldName": "Chinese Fish Congee (生滚鱼片粥)",
+  "ldTime": "PT35M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT20M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Side",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "8 oz (225 g) white fish (sea bass, tilapia etc) (, thinly sliced )",
+    "2 teaspoons Shaoxing wine",
+    "2 teaspoons light soy sauce",
+    "1 teaspoon grated ginger",
+    "1 teaspoon cornstarch",
+    "1/4 teaspoon white pepper",
+    "1/2 cup (120 ml) uncooked short grain white rice ((or medium grain))",
+    "4 cups chicken broth ((*Footnote 1))",
+    "2 large slices ginger",
+    "2  green onions (, thinly sliced)",
+    "1/4 teaspoon salt ((or to taste))",
+    "1 teaspoon toasted sesame oil"
+  ],
+  "ldInstructionsRaw": [
+    "Add the rice into a medium-sized bowl and water to cover. Gently rinse the rice a few times with your fingers and drain. Repeat one to two more times. Drain well.",
+    "Method 1 - Use an Instant Pot",
+    "Method 2 - Stovetop method",
+    "Marinate and cook the fish"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "197 kcal",
+    "carbohydrateContent": "23.6 g",
+    "proteinContent": "17.4 g",
+    "fatContent": "3.2 g",
+    "saturatedFatContent": "0.8 g",
+    "cholesterolContent": "28 mg",
+    "sodiumContent": "956 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "1.6 g"
+  },
+  "htmlIngredientLines": [
+    "[Marinating]",
+    "8 oz (225 g) white fish (sea bass, tilapia etc) , thinly sliced",
+    "2 teaspoons Shaoxing wine",
+    "2 teaspoons light soy sauce",
+    "1 teaspoon grated ginger",
+    "1 teaspoon cornstarch",
+    "1/4 teaspoon white pepper",
+    "[Congee]",
+    "1/2 cup (120 ml) uncooked short grain white rice (or medium grain)",
+    "4 cups chicken broth (*Footnote 1)",
+    "2 large slices ginger",
+    "2 green onions , thinly sliced",
+    "1/4 teaspoon salt (or to taste)",
+    "1 teaspoon toasted sesame oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

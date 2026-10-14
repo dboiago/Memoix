@@ -1,0 +1,207 @@
+{
+  "recipe": {
+    "name": "Duck with Flapjack",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter and sugar in a pan, add the golden syrup and tamarind",
+      "Mix the cornflakes, plain flour, baking powder, oats and chopped peanuts until well combined",
+      "Place the mixture into a silicone lined baking tray. Press down until approximately half an inch thick",
+      "Bake in the oven for 15-20 minutes until nicely browned - it is important that the flapjack is well cooked",
+      "Remove from the oven and allow to cool",
+      "Cut into fingers and spread generously with peanut butter",
+      "Season the duck breast with salt and ground star anise",
+      "Fry the duck breast, skin-side down, in a hot, dry pan until the skin is golden and crispy, then finish in the oven for 7-8 minutes",
+      "Remove from the oven and allow to rest to 4-5 minutes. This should result in a medium-rare finish",
+      "In a hot pan, sauté the mushrooms in a small amount of oil, season lightly and remove the pan from the heat until ready to serve",
+      "Cut the root off the pak choi and separate the leaves. Wash the leaves then cook in boiling chicken stock for 1 minute, remove the pak choi, leaving the pan on the heat, and keep warm until required",
+      "Add the tamarind, sherry and star anise to the reduced chicken stock. Reduce by half, check the seasoning",
+      "Once ready, place a piece of the flapjack into the centre of each plate. Slice the duck breast and place on top of flapjack. Garnish with the warm mushrooms and pak choi, drizzle over the sauce and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Breast",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Star Anise",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Demerara Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "55",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rolled Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mousseron Mushrooms",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pak Choi",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "295",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tamarind Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Sherry",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "06f4722a8ac02bb94567d2cfb416835d573aec389fa71d4d2d2eb85a4c230567",
+    "lineage_hash": "486e7aa63f908cc9db08f97907a009b87c5698a904cc15a2ec7ce31fbe9b6ee3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-with-flapjack-recipe",
+    "fetchedAt": "2026-08-03T20:57:22.820Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-with-flapjack-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

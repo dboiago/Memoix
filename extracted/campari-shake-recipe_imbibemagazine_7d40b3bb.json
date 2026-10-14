@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Campari Shake",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Liqueur",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend first 4 ingredients. Add remaining ingredients and blend until just combined. Pour into glasses and garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kosher Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Pulp",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scoops Vanilla Ice Cream",
+        "unit": null,
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e85d3d77916132cba16e81a350cb041920e5867979fc0a0b08a277130497fad8",
+    "lineage_hash": "edbb8c908805ca6a70f6ae61213e5b9bcdf23d103296a8282f396c1bd96b59c9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/campari-shake-recipe/",
+    "fetchedAt": "2026-08-03T23:14:56.061Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/campari-shake-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

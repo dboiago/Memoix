@@ -1,0 +1,53 @@
+{
+  "url": "https://www.baking-sense.com/2016/07/27/caipirinha-sorbet/",
+  "slug": "caipirinha-sorbet-frozen-caipirinha_baking-sense_bec2a87b",
+  "title": "Caipirinha Sorbet - Frozen Caipirinha",
+  "byline": "Eileen Gray",
+  "fetchedAt": "2026-08-01T19:35:51.590Z",
+  "ldName": "Caipirinha Sorbet",
+  "ldTime": "PT505M",
+  "ldPrepTime": "PT20M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "6",
+    "6 servings"
+  ],
+  "ldCuisine": "brazilian",
+  "ldCategory": "Dessert, Snack",
+  "ldKeywords": "easy, frozen dessert",
+  "ldIngredientsRaw": [
+    "10 oz granulated sugar (1 ¼ cups)",
+    "8 oz water (1 cup)",
+    "6 oz lime juice (¾ cup, about 6-8 limes)",
+    "2 ½ oz cachaça (5 tablespoons)"
+  ],
+  "ldInstructionsRaw": [
+    "Combine 10 oz&#32;granulated sugar and 8 oz&#32;water in a small saucepan and stir over medium heat until the sugar is dissolved.",
+    "Zest and juice the limes. Add all the zest, 6 oz&#32;lime juice and 2 ½ oz&#32;cachaça to the syrup and allow it to cool to room temperature",
+    "Refrigerate until the mix is very cold, at least 3-4 hours or overnight",
+    "Run in your ice cream machine according to the manufacturer&#39;s directions. (See Note)",
+    "Pack into a plastic container, cover the surface with plastic wrap, cover and freeze overnight"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "216 kcal",
+    "carbohydrateContent": "49 g",
+    "sodiumContent": "3 mg",
+    "sugarContent": "48 g",
+    "proteinContent": "0.1 g",
+    "fatContent": "0.2 g",
+    "saturatedFatContent": "0.002 g",
+    "fiberContent": "0.1 g",
+    "unsaturatedFatContent": "0.012 g"
+  },
+  "htmlIngredientLines": [
+    "10 oz granulated sugar (1 ¼ cups)",
+    "8 oz water (1 cup)",
+    "6 oz lime juice (¾ cup, about 6-8 limes)",
+    "2 ½ oz cachaça (5 tablespoons)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": null,
+  "siteCourseHint": "Desserts"
+}

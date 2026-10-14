@@ -1,0 +1,38 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/butter-garlic-crab-recipe",
+  "slug": "butter-garlic-crab-recipe_greatbritishchefs_f2bd52ab",
+  "title": "Butter Garlic Crab Recipe",
+  "byline": "by James Cochran",
+  "fetchedAt": "2026-08-03T02:46:22.259Z",
+  "ldName": "Butter garlic crab",
+  "ldTime": "PT10M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Snack",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "150g of unsalted butter",
+    "4 tbsp of garlic, finely chopped",
+    "3 tsp green chillies, finely chopped",
+    "4 tsp freshly ground black pepper",
+    "350g of white crab meat, picked",
+    "40g of brown crab meat, picked",
+    "2 tbsp of lime juice",
+    "1 handful of coriander leaves",
+    "sea salt, to taste",
+    "bread, or papads, for dipping",
+    "1 nori sheet, blitzed to a powder (optional)"
+  ],
+  "ldInstructionsRaw": [
+    "Place a heavy-based saucepan over a medium heat and add a few tablespoons of water. Add the butter and stir until it melts and forms an emulsion",
+    "Add the garlic, green chillies and black pepper and cook for a few seconds before adding the white and brown crab meat. Cover and cook for 5 minutes, until the crab has absorbed most of the liquid and the consistency is creamy and smooth",
+    "Remove the pan from the heat, finish with the lime juice and coriander and season to taste with salt. Spoon into a bowl and serve with the papads or bread, dusted with the nori powder (if using)"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

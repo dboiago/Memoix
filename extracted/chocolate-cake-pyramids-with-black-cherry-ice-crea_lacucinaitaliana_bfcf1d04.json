@@ -1,0 +1,161 @@
+{
+  "recipe": {
+    "name": "Chocolate Cake Pyramids with Black Cherry Ice Cream",
+    "time": "2 hr 50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Butter and flour a sheet of parchment paper, then place it on a tray (12 x 15 1/2 inches). With an electric hand mixer, cream 3 eggs with 1/2 cup of granulated sugar, the seeds scraped from the vanilla bean pod, and a pinch of salt, until you obtain a frothy mixture: this will take 10-15 minutes.",
+      "Sift the flour and cocoa powder together; gently incorporate them into the egg mixture, then mix in the room temperature melted butter; distribute everything onto the tray, level it, and bake in a 350°F oven on the convection setting for 8 minutes.",
+      "Dust a large sheet of parchment paper with powdered sugar; remove the cake from the oven, turn it over onto the parchment paper, and leave it under the tray so it cools gently and the humidity inside keeps it soft.",
+      "Chop the black cherries. In a bowl, mix the milk, cream, 3 tablespoons of granulated sugar, the sour cream, and half of the black cherry syrup; pour everything into an ice cream maker and let it work for 30-40 minutes, until it reaches an ice cream consistency, adding in the chopped cherries after 15 minutes.",
+      "In a bowl, mix the remaining black cherry syrup, 1 tablespoon of Alchermes liqueur, and 2 tablespoons of water.",
+      "Cut the cake into 3 rectangles the same size as the walls of a long equilateral triangular baking mold (11 inches long, 2 3/4-inch sides, 2 1/2-inch height); if you are using a rectangular loaf pan, cut it into 4 rectangles: 2 the size of the long walls and 2 the size of bottom. Brush the rectangles with the liqueur mixture and use them to line the walls (and the bottom if you're using a rectangular loaf pan); fill with the ice cream, close with the last rectangle of cake, and place in the freezer for at least 1 hour.",
+      "Beat the egg whites to stiff peaks; then, continuing to beat, add in the rest of the granulated sugar a little at a time. Turn the mold over onto a tray lined with parchment paper to remove the triangle; use a pastry bag to cover it with the beaten egg whites. In an oven set to the maximum temperature, bake the cake for 30-40 seconds, until the egg whites are golden and smell sweet."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cherries in Syrup",
+        "unit": "lb",
+        "notes": "pitted",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "lb",
+        "notes": "plus extra",
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Cherry Syrup",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": "melted, plus extra",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Alchermes Liqueur",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "c00cc1f190b82bc1c92125caf81edcf53e0612f36c41e5e6d49f3e79be597026",
+    "lineage_hash": "a3697d7d312498727b3909699372c650826abb22940b67fcd0c57beb293b70ef"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cake-pyramids-with-black-cherry-ice-cream",
+    "fetchedAt": "2026-08-02T22:08:28.019Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/chocolate-cake-pyramids-with-black-cherry-ice-cream",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

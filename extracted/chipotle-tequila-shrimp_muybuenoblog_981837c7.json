@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Chipotle-Tequila Shrimp",
+    "time": "32 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "MX",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "200",
+      "carbohydrateContent": "1",
+      "fatContent": "6",
+      "proteinContent": "31"
+    },
+    "directions": [
+      "Preheat a grill or griddle pan.",
+      "In a bowl, mix the melted butter, tequila, lime juice, and minced chile.",
+      "Thread the shrimp onto skewers and rub the marinade all over the shrimp. Season the shrimp with salt and pepper and sprinkle with cilantro. Let stand for 15 minutes.",
+      "Oil the grate. Grill the shrimp over moderate heat, until just cooked through, 7 minutes.",
+      "Serve with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Reposado Tequila",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chipotle Chile Peppers in Adobo Sauce",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "handful",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra-large Shrimp",
+        "unit": "lb",
+        "notes": "shelled and deveined, tails left on",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bed440db0375eee44edffb1209f75a3562ad2bd096991fb408a146683cde507e",
+    "lineage_hash": "0791145681b2fc97870f09814826e58e8b626ade958817ab698bfd95734f6ecd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://muybuenoblog.com/chipotle-tequila-shrimp/",
+    "fetchedAt": "2026-08-01T20:52:10.792Z"
+  },
+  "rawSource": "https://muybuenoblog.com/chipotle-tequila-shrimp/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

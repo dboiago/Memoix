@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Crispy Poha Vada (Quick Easy Snack)",
+    "time": "30-35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Firstly, in a bowl, add poha, water and wash them properly.",
+      "Transfer the washed poha into a large bowl and mashed them properly.",
+      "In a tadka pan, add oil, chana dal, and mustard seeds let it splutter well.",
+      "Add fennel seeds, urad dal, curry leaves and pour this mixture into the bowl.",
+      "Add onion, ginger, green chilli, sugar, salt to taste and mix everything well.",
+      "Add a little curd and mix it well. Take a spoonful mixture and make a tikki of it flatten slightly.",
+      "Heat oil in a shallow pan.",
+      "Once the oil is hot, slide the vada into the hot oil.",
+      "Once the vada is slightly golden, turn over the other side. Fry the vada on medium flame so that it's cooked from inside.",
+      "Remove it on a kitchen tissue.",
+      "Fry them again so that it turns evenly crisp and golden in color.",
+      "Drain them on a kitchen tissue to remove excess oil.",
+      "Finally serve poha vada with green chutney and fresh salad.",
+      "In a grinder jar, add raw mango, ginger, whole spring onion, coriander leaves and oil grind it into a smooth paste.",
+      "Transfer this into a bowl, add curd, black pepper powder, sugar, salt to taste and mix it well.",
+      "Keep aside for future use."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Pressed Rice (poha)",
+        "unit": "C",
+        "notes": "thick variety",
+        "amount": "1¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chana Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Urad Dal",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "large",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chilli",
+        "unit": null,
+        "notes": "fresh, chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Curd",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Raw Mango",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": null,
+        "amount": "½",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Spring Onions",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Salad",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be80aebd94d1205413646ca63d5a90b5f45cfc1c54044430f1b14f8c48837681",
+    "lineage_hash": "e36bff1af9b0976696150524b34805afe7eec682e5cb4595b27f2921841ed84b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/crispy-poha-vada/",
+    "fetchedAt": "2026-08-02T11:16:07.878Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/crispy-poha-vada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

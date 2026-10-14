@@ -1,0 +1,148 @@
+{
+  "recipe": {
+    "name": "Cinnamon Buns",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the milk to a small pan and heat to just below boiling point. Remove from the heat and allow to cool slightly before using",
+      "In a large mixing bowl whisk together the egg, sugar, cardamom, salt, yeast and warm milk. Slowly mix in two-thirds of the bread flour a little at a time",
+      "Add the remaining flour and softened butter and bring the mixture together with your hands to form a soft and sticky dough",
+      "Turn the dough out on to a floured worktop, sprinkle with a little more flour and knead lightly until just smooth. Do not overwork the dough; it should only just hold together as a semi-smooth ball",
+      "Place the dough in a clean bowl and leave covered at room temperature for 1 hour, or until about doubled in size",
+      "Turn out the risen dough on a floured worktop, sprinkle with a little more flour and roll out into a large rectangle about 13mm thick. Spread the dough with the softened butter and sprinkle evenly with the dark brown sugar and cinnamon",
+      "Gently roll the dough into a sausage, short end to short end, then slice into 25mm rounds. Place these on lined baking sheets and leave to rise for 20 minutes",
+      "Brush the risen buns with beaten egg before baking for 8–10 minutes, then transfer the cooked buns to a cooling rack",
+      "To glaze the finished buns, dissolve the light brown sugar in 1 tablespoon of water and brush this mixture lightly over the buns while they cool",
+      "Serve the cinnamon buns warm with coffee. They are best eaten the same day, although you can freeze the buns and refresh in the oven to enjoy at a later date"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fast-action Dried Yeast",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Free-range Egg",
+        "unit": "medium",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cardamom",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Flour",
+        "unit": "g",
+        "notes": "plus extra for dusting",
+        "amount": "450",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Light Brown Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d19ca6d89eedbf2fd7bcba8e9881f98cd6f4fe399744d3b061072b188d5705b1",
+    "lineage_hash": "4f05bceb6bf61dc0c77299846883ca4325d58b00c515a38579e1baeadab60223"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cinnamon-buns-recipe",
+    "fetchedAt": "2026-08-03T14:07:32.360Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cinnamon-buns-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

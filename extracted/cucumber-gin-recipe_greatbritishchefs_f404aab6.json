@@ -1,0 +1,62 @@
+{
+  "recipe": {
+    "name": "Cucumber Gin",
+    "time": "10 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "500",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Peel and deseed the cucumber, then slice into batons",
+      "Place into a jar along with the sugar (if using) and gin",
+      "Leave to infuse in a cool dark place for 24 hours",
+      "Strain through a muslin cloth, then decant the gin into a bottle. Serve chilled. Best enjoyed within 1 month of making"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cucumber",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6d37225c694008df7627c4fdc520b521c89d13e1f4615949d0b3973299ac5a1f",
+    "lineage_hash": "108976463ee28b126b70c936117496920e004bb3a68af7a5c54d22a754b9b25c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cucumber-gin-recipe",
+    "fetchedAt": "2026-08-03T07:15:08.097Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cucumber-gin-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

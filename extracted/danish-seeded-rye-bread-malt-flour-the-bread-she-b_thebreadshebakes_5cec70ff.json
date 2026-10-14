@@ -1,0 +1,173 @@
+{
+  "recipe": {
+    "name": "Danish Seeded Rye Bread Malt Flour",
+    "time": "1 hr 30 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "DK",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the starter, flours and water in a bowl, mix well, cover with a lid and leave to rest at room temperature for 16 – 24 hours.",
+      "Toast the sunflower seeds and oats in a non-stick frying pan. Turn them often and watch the seeds and oats closely to avoid burning. Combine the toasted seeds and oats, the flaxseed and cracked whole rye in a bowl, add the salt and the boiling water. Mix well, cover with a lid and leave to rest for 16 – 24 hours.",
+      "Place the rye berries in a small pot and cover with cold water. Bring to boil and continue for about 45 minutes. Top up with more water if needed. Using a sieve, discard any remaining water. Leave to cool.",
+      "Combine 400g of the sourdough, the toasted seed and oat mix, the boiled rye berries and the final dough ingredients in a large bowl.",
+      "Mix with your hands – you won’t be able to knead the dough as it’s too sticky.",
+      "Cover the bowl and leave the mixture to rest for 30 minutes at room temperature.",
+      "Butter a large loaf tin (I used a tin 33 x 10 x 10 cm).",
+      "Give the dough mixture another good mix with your hands.",
+      "Move the dough into the loaf tin and spread evenly. Cover the loaf tin and place the dough in the fridge overnight (approx. 12 hours).",
+      "Remove the tin from the fridge for approx. 1 hour before baking to bring the dough back to room temperature.",
+      "Bake for 15 mins at 250°C and for a further 50 mins at 200°C."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Rye Sourdough Starter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Sourdough",
+        "isOptional": false
+      },
+      {
+        "name": "Wholemeal Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Sourdough",
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Sourdough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Sourdough",
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Flaxseed",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Cracked Whole Rye",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "8",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": "Toasted seed soaker",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Rye Berries",
+        "unit": "g",
+        "notes": null,
+        "amount": "65",
+        "section": "Boiled rye berries",
+        "isOptional": false
+      },
+      {
+        "name": "Rye Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": "Preparing the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Strong White Wheat Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": "Preparing the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Malted Flour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Preparing the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "435",
+        "section": "Preparing the final dough",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "22",
+        "section": "Preparing the final dough",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d16e2087b66165dfa0eab442a2f413ea94cb8ea394c9d655a2c64759ff4dcc3c",
+    "lineage_hash": "41f7a7b0e57517119bde8cf86a82a13c57e66109832f1b308915d5df9942bb1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.thebreadshebakes.com/2015/08/danish-seeded-rye-bread-with-malted-flour/",
+    "fetchedAt": "2026-08-01T18:39:59.179Z"
+  },
+  "rawSource": "https://www.thebreadshebakes.com/2015/08/danish-seeded-rye-bread-with-malted-flour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

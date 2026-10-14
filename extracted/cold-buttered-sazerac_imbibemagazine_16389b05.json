@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Cold Buttered Sazerac",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Old Fashioned",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rinse the Old Fashioned glass with toasted caraway absinthe and set aside. In a mixing glass, Then add the remaining ingredients with ice and stir to chill. Strain into the prepared glass and garnish.",
+      "Brown Butter Fat-Washed Japanese Whisky: Melt 100 grams of butter in a saucepan until it browns. Add to 32 ounces of Japanese whisky. Place in the refrigerator overnight. Strain solids through a coffee filter before use. Store in the refrigerator.",
+      "Toasted Caraway Absinthe: Toast 30 grams of caraway seeds in a saucepan. Add to 100 grams of absinthe. Let sit for three days. Strain seeds out of absinthe before using."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Butter Fat-washed Japanese Whisky",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cognac",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Toasted Caraway Absinthe",
+        "unit": "dashes",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e12699aa3b742c5fc61857fecd0fb4a9a74284854c94292971a89278b0cebc72",
+    "lineage_hash": "97ac38e562fd96444ec87e012273a23e0d18f82f8515c6dd3f996ea6fa8dbd36"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cold-buttered-sazerac-recipe/",
+    "fetchedAt": "2026-08-03T20:04:46.407Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cold-buttered-sazerac-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

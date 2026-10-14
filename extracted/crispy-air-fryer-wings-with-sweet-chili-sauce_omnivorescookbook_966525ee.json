@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Crispy Air Fryer Wings with Sweet Chili Sauce",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "216",
+      "carbohydrateContent": "17.2",
+      "fatContent": "9.9",
+      "proteinContent": "12.3"
+    },
+    "directions": [
+      "Thoroughly pat chicken wings dry with paper towels. Transfer to a big bowl. Add the salt and baking powder. Mix evenly with your hands. (*Footnote 1)",
+      "Preheat air fryer to 400°F (200°C). Place the chicken wings in the air fryer tray without overlapping. Air fry for 10 minutes, flipping the wings once in the middle, then flipping them back at the 10-minute mark. Keep air frying for another 5 to 10 minutes (*Footnote 2), or until the skin is golden and crispy. Test the doneness of the wings by inserting a paring knife into the thickest part of the wings, and the juice should run clear. Transfer the chicken to a big plate to cool slightly before mixing the sauce.",
+      "Mix the Thai sweet chili sauce, Shaoxing wine, soy sauce, rice vinegar, Shaoxing wine, and lime juice together in a small bowl.",
+      "(Option 1) Heat peanut oil in a medium saucepan over medium heat until hot. Add the ginger and green onion. Stir a few times to release the fragrance. Pour in the mixed sauce. Stir and cook until the sauce thickens, 1 to 2 minutes.",
+      "Add back the air frier wings and stir immediately to coat well. Then transfer everything to a serving platter. Serve immediately with lime wedges.",
+      "(Option 2) You can also cook the sauce according to step 4, then transfer the sauce to a small bowl. Mix the sauce with the wings right before serving, or serve the sauce on the side as a dipping sauce. This option yields crispier wings if you’re not serving them immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": "450 g",
+        "amount": "1",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Chicken",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Sweet Chili Sauce",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Rice Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "tsp",
+        "notes": "Optional",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Juice From 1/4 of a Lime",
+        "unit": null,
+        "notes": "and extra lime wedges to serve with",
+        "amount": "0",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": "Tbsp",
+        "notes": "or vegetable oil",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced",
+        "amount": "1",
+        "section": "Sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "2",
+        "section": "Sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17b8dc19fc21f8f03995b28054cba24a59f7a6afb35d09479b578a82a58561f3",
+    "lineage_hash": "39e7bdac4480042406964969e48817e8bb51eff06fb8bdf0147b78191d4bac45"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://omnivorescookbook.com/crispy-air-fryer-wings-with-sweet-chili-sauce/",
+    "fetchedAt": "2026-08-02T08:37:41.746Z"
+  },
+  "rawSource": "https://omnivorescookbook.com/crispy-air-fryer-wings-with-sweet-chili-sauce/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

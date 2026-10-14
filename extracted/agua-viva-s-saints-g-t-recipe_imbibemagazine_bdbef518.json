@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Saints G&T",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour all of the ingredients into a glass. Fill the glass with ice, then stir to combine. Garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Germain Elderflower Liqueur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chareau Aloe Liqueur",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tonic Water",
+        "unit": "oz",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0be333f9c7475d856deb646a88dc850cb8423f222db847a311b1f66490f6e76c",
+    "lineage_hash": "fb6bcd09e2ae33c1d192dc246e7085a63c01ed81e6546881906db35bd5f8824b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/agua-viva-saints-gt/",
+    "fetchedAt": "2026-08-03T22:14:32.274Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/agua-viva-saints-gt/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

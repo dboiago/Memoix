@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Curry Fish Balls",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "519",
+      "carbohydrateContent": "15",
+      "fatContent": "37",
+      "proteinContent": "34"
+    },
+    "directions": [
+      "Heat up around 1 tablespoon of cooking oil and fry red onion or shallots until slightly softened.",
+      "Add the curry paste in, heat over slow fire until dissolved. Pour in stock and milk, slightly slide the fish balls in. Simmer for 10 minutes over slow fire after boiling.",
+      "Turn off the fire and slightly thicken the sauce. Serve hot!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Red Onion",
+        "unit": "C",
+        "notes": "alt: shallots, minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Cooking Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Balls (home Made)",
+        "unit": null,
+        "notes": "or store bought",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "1 Box of Thai Golden Curry Paste",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "C",
+        "notes": "alt: coconut milk",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": "alt: stock",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "83227615c5d14efdcef1861891d5a88a617f6d79846cfd1524c55f3233c8b279",
+    "lineage_hash": "5f27e1fa59b2f0cad6107e8fbdc18fc328299387101adaafa48fbe4cd7aa3df9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/curry-fish-balls/",
+    "fetchedAt": "2026-08-02T04:11:24.709Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/curry-fish-balls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.chinasichuanfood.com/chongqing-noodles/",
+  "slug": "chongqing-noodles_chinasichuanfood_10936f0b",
+  "title": "Chongqing Noodles",
+  "byline": "",
+  "fetchedAt": "2026-08-02T01:31:43.006Z",
+  "ldName": "Chongqing Noodles",
+  "ldTime": "PT20M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": "PT10M",
+  "ldYield": [
+    "2"
+  ],
+  "ldCuisine": "Sichuan cuisine",
+  "ldCategory": "Breakfast, staple",
+  "ldKeywords": "noodles",
+  "ldIngredientsRaw": [
+    "1  serving fresh noodles ( , you can use thin dried noodles instead)",
+    "handful Chinese water spinach or Bok Choy",
+    "2  garlic cloves ( , peeled and minced)",
+    "1  green onion ( , white part and green part separated)",
+    "1 teaspoon minced ginger",
+    "1 tablespoon smashed peanuts",
+    "1 tablespoon minced coriander",
+    "1 tablespoon minced Zha Cai ( , optional)",
+    "1 tablespoon soy sauce",
+    "pinch of salt if necessary",
+    "1/4 teaspoon gourmet powder",
+    "2 teaspoons lard",
+    "1 teaspoon sesame oil",
+    "1/4 teaspoon black vinegar",
+    "1 to 2 tablespoons Chinese red oil",
+    "1/8 teaspoon Sichuan peppercorn powder (to strong the numbing tastes, optional)"
+  ],
+  "ldInstructionsRaw": [
+    "In the serving bowl, add a small pinch of salt, vinegar, soy sauce, gourmet powder, minced green onion whites, minced garlic, minced ginger, chili oil, sesame oil and lard.",
+    "Cook noodles in boiling water according to the instructions on the package. Pour some noodle cooking soup into the serving bowl to tune the seasonings. And then transfer the noodles to serving bowl. Rinse the greens and transfer to serving bowl too.",
+    "Garnish peanuts, minced green onions, minced coriander and minced Za cai. Add more chili oil if a stronger taste is wanted!"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "673 kcal",
+    "carbohydrateContent": "83 g",
+    "proteinContent": "16 g",
+    "fatContent": "31 g",
+    "saturatedFatContent": "11 g",
+    "sodiumContent": "3068 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "2 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 serving fresh noodles  , you can use thin dried noodles instead",
+    "handful Chinese water spinach or Bok Choy",
+    "2 garlic cloves  , peeled and minced",
+    "1 green onion  , white part and green part separated",
+    "1 teaspoon minced ginger",
+    "1 tablespoon smashed peanuts",
+    "1 tablespoon minced coriander",
+    "1 tablespoon minced Zha Cai  , optional",
+    "1 tablespoon soy sauce",
+    "pinch of salt if necessary",
+    "1/4 teaspoon gourmet powder",
+    "2 teaspoons lard",
+    "1 teaspoon sesame oil",
+    "1/4 teaspoon black vinegar",
+    "1 to 2 tablespoons Chinese red oil",
+    "1/8 teaspoon Sichuan peppercorn powder to strong the numbing tastes, optional"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

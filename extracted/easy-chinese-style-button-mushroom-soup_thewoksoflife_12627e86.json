@@ -1,0 +1,109 @@
+{
+  "recipe": {
+    "name": "Chinese-Style Button Mushroom Soup",
+    "time": "20 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "30",
+      "carbohydrateContent": "6",
+      "fatContent": "1",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Wash the mushrooms clean of any dirt, and dry them thoroughly with a clean kitchen towel. Detach the stems (you will add them to the soup also).",
+      "Place a medium soup pot over medium high heat. When the pan is very hot, add the oil and mushrooms cup-side up in a single layer. (Add the stems in too to avoid waste.)",
+      "Reduce the heat to medium, and cook until the mushroom caps are browned, and each cup fills with liquid (that’s the juices in the mushroom seeping out!). Also check the stems for browning. Avoid stirring during this pan-frying process as it’s the key step to developing flavor for this soup. (You also want to keep the mushroom juices in the caps.)",
+      "When the mushrooms are nicely browned, add the water and light soy sauce. Bring to a boil. Cover and simmer for 5 minutes over medium low heat.",
+      "Add salt to taste, and stir in the cornstarch slurry (if using). Simmer the soup for 30 seconds until thickened.",
+      "Just before serving, add the cilantro and scallions. If you like cilantro (like me) this soup can take a lot of cilantro!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Button Mushrooms",
+        "unit": "oz",
+        "notes": "the smaller the better",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt (to Taste)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "combined into a slurry with 2 tablespoons water, optional",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cilantro",
+        "unit": "C",
+        "notes": "finely chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Scallion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be0f1b74038183d7728e9fd4688b9f86bc57672c1a38ff8bace41ed1aff7e3a7",
+    "lineage_hash": "eda0dc975e0dd0146b9664a3ea4023264c1ba684ef07d0defb84020a2beab587"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/chinese-button-mushroom-soup/",
+    "fetchedAt": "2026-08-02T07:54:23.143Z"
+  },
+  "rawSource": "https://thewoksoflife.com/chinese-button-mushroom-soup/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

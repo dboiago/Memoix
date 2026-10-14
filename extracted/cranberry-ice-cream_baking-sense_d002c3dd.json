@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "name": "Cranberry Ice Cream",
+    "time": "6 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "325",
+      "carbohydrateContent": "43",
+      "fatContent": "17",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Use a potato peeler to peel strips of zest from 1 large orange, trying not to get too much of the white pith. Juice the orange. You should get about 1/2 cup of juice.",
+      "Combine 12 oz cranberries, orange zest and juice, half of the sugar and 1 cinnamon stick in a small saucepan. Cook over medium heat until the mixture comes to a boil. Cook about 5 minutes until most of the berries have popped and the juice is boiling thickly. Transfer the berries to a bowl and set it aside to cool.",
+      "In the same pan, heat 12 oz heavy cream over medium high heat until scalding hot. While the cream heats up, whisk 5 egg yolks with the rest of the sugar in a small bowl.",
+      "Once the cream is scalding hot, pour it into the bowl with the yolks and whisk to combine",
+      "Return the entire mixture to the saucepan and heat over medium low heat, stirring constantly. Cook the custard until it thickens enough to coat the back of a spatula or wooden spoon. Do not allow it to come to a full boil. Remove from the heat and strain the custard back into the bowl from the yolks. Remove the orange zest and cinnamon stick from the cranberries then stir them into the custard.",
+      "Cover the bowl and chill until very cold. At least 4-5 hours or over night. This makes a fairly large batch so if you have a smaller ice cream maker you might want to run 2 batches. Freeze according to the directions for your ice cream machine. Just before removing the ice cream from the machine, add the white chocolate chips.",
+      "Scoop the ice cream into a container and smooth to an even layer. Lay a piece of plastic wrap directly on the surface, cover tightly and freeze until firm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Orange",
+        "unit": "large",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "oz",
+        "notes": "fresh or frozen",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ½ cups, divided",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon Stick",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 ½ cups",
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate Chips",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dbf34897acffabd1177dfdbccdc1f9ff51644a55ae6bfa6dea5e4851e29333d1",
+    "lineage_hash": "e5b2ed590edc91355f1d7975b0cb294105a503997f80b138a1d87ff1bc670a88"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2023/11/21/cranberry-ice-cream/",
+    "fetchedAt": "2026-08-02T01:45:21.263Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2023/11/21/cranberry-ice-cream/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

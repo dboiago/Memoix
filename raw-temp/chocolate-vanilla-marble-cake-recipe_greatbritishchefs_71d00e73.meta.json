@@ -1,0 +1,39 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/marble-cake-recipe",
+  "slug": "chocolate-vanilla-marble-cake-recipe_greatbritishchefs_71d00e73",
+  "title": "Chocolate & Vanilla Marble Cake Recipe",
+  "byline": "by Valeria Necchio",
+  "fetchedAt": "2026-08-03T12:24:18.599Z",
+  "ldName": "Chocolate and vanilla marble cake",
+  "ldTime": "PT1H20M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "300g of butter",
+    "200g of caster sugar",
+    "4 free-range eggs, lightly whisked",
+    "200g of self-raising flour",
+    "1 tsp vanilla essence",
+    "3 tbsp of cocoa powder",
+    "2 tbsp of milk"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat the oven to 170°C/gas mark 3. Line a 30cm loaf tin with baking paper",
+    "Whisk together the butter, sugar and vanilla essence until pale and fluffy",
+    "Whisk in the eggs a little at a time until fully incorporated",
+    "Gently fold in the flour in 2 stages, then place ⅓ of the mix into a separate bowl and fold in the cocoa powder",
+    "The mix should gently fall from a spoon when lifted – if it is a little thick let it down with the milk",
+    "Pour ¼ of the vanilla batter into the lined tin and spread out evenly. Pour ½ of the chocolate mixture on top in a swirling motion then cover with the remaining vanilla mixture",
+    "Finish with the rest of the chocolate mixture then use a metal skewer to swirl the chocolate through the vanilla to create the marbled effect",
+    "Bake for 45–50 minutes, until a metal skewer inserted into the middle of the cake comes out clean. Leave to cool on a wire rack before slicing and serving"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

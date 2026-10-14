@@ -1,0 +1,105 @@
+{
+  "recipe": {
+    "name": "Easy Creamy Edamame Dip",
+    "time": "10 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "143",
+      "carbohydrateContent": "5",
+      "fatContent": "13",
+      "proteinContent": "4"
+    },
+    "directions": [
+      "Add the edamame, spinach, olive oil, lemon juice, jalapeno, garlic, salt, and pepper to your food processor. Jalapenos can range greatly in spice level, so I recommend starting with 1/4 of a jalapeno and adding more as desired. Blend until super creamy and as smooth as possible, stopping to scrape the sides as needed. I recommend blending for several minutes to make sure the olive oil emulsifies and the dip gets extra creamy. If your dip is too thick, add 1 tablespoon of water at a time to reach desired consistency.",
+      "Serve the dip with your favorite dippers such as chips, pita chips, bread or veggies, or use it as a sandwich spread. Store covered in the fridge or you can freeze it."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Shelled Edamame",
+        "unit": "C",
+        "notes": "frozen, thawed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spinach",
+        "unit": "C",
+        "notes": "frozen, thawed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "see notes for oil-free option",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": "Tbsp",
+        "notes": "about 1 lemon, juice",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jalapeño",
+        "unit": null,
+        "notes": "optional for spice, roughly chopped",
+        "amount": "¼-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ceeb118c88dc068f9b2a627dd7db449b890fcc3d7308140fe8f927b2f2675c09",
+    "lineage_hash": "472961982d0850dde5e4b889a5d858f6c9591564f29af959065b2e4106b63e4d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-creamy-edamame-dip/",
+    "fetchedAt": "2026-08-01T23:57:15.661Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-creamy-edamame-dip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,44 @@
+{
+  "url": "https://dailycookingquest.com/bacon-wrapped-tomato-skewers.html",
+  "slug": "bacon-wrapped-tomato-skewers_dailycookingquest_ebfc460e",
+  "title": "Bacon-Wrapped Tomato Skewers",
+  "byline": "",
+  "fetchedAt": "2026-08-01T19:33:20.259Z",
+  "ldName": "Bacon-Wrapped Tomato Skewers",
+  "ldTime": "PT0H30M",
+  "ldPrepTime": "PT0H15M",
+  "ldCookTime": "PT0H15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Japanese",
+  "ldCategory": "Snack",
+  "ldKeywords": [
+    "quick and easy skewered appetizer",
+    "two ingredients recipe",
+    "Pork",
+    "Vegetables"
+  ],
+  "ldIngredientsRaw": [
+    "8 bacon slices",
+    "24 cherry tomatoes",
+    "8 bamboo skewers"
+  ],
+  "ldInstructionsRaw": [
+    "Cut each slice of bacon into three equal-length pieces. You should end up with 24 smaller pieces from the original eight slices of bacon.",
+    "Wrap each cherry tomato with a piece of bacon. You should end up with 24 bacon-wrapped cherry tomatoes.",
+    "Thread 3 bacon-wrapped cherry tomatoes into each bamboo skewer.",
+    "Heat the grill pan over medium heat. Once the pan is hot, brush the grills with a little bit of oil.",
+    "If you are using a 10.5-inch Lodge grill pan, you can grill four skewers at a time. It should take about 3-4 minutes per side to cook the bacon until golden brown and slightly crispy.",
+    "Serve the grilled bacon-wrapped tomato skewers immediately. Remember to open a bottle of cold beer."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "8 bacon slices",
+    "24 cherry tomatoes",
+    "8 bamboo skewers"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": null,
+  "siteCourseHint": "Sides"
+}

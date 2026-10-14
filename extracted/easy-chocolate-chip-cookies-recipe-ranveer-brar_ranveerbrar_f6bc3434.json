@@ -1,0 +1,94 @@
+{
+  "recipe": {
+    "name": "Chocolate Chip Cookies",
+    "time": "1 hr 5 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In mixing bowl add brown sugar, castor sugar, 2 eggs, plain flour, baking powder, vanilla essence and chocolate chips and mix well.",
+      "Keep the batter to rest for 30 mins.",
+      "After resting put the batter in piping bag and put cookies on butterpaper.",
+      "bake in preheated oven for 15-20 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Castor Sugar",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "C",
+        "notes": "maida",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Chips",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "84fde169afa8a38d75f4f118c47a59b25064d9942e1a17a4303628d546509e15",
+    "lineage_hash": "d4ad53b74addf402c54de4d4f5cd363a15eb9bdf5a3d3f5e2e5c689f3017f176"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chocolate-chip-cookies/",
+    "fetchedAt": "2026-08-02T03:09:47.190Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chocolate-chip-cookies/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

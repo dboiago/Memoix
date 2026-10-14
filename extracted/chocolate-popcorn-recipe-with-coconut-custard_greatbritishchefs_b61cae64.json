@@ -1,0 +1,143 @@
+{
+  "recipe": {
+    "name": "Chocolate Popcorn With Coconut Custard",
+    "time": "50 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "First make the coconut custard. Add the coconut rum to a pan, place on a medium heat and reduce by half. Once reduced, set aside to cool",
+      "Add the cream, vanilla pods and seeds and coconut milk to a pan and bring to the boil",
+      "Meanwhile, whisk together the yolks and sugar until pale and smooth",
+      "Measure out 50ml of the hot coconut cream mixture and add to another small pan. Squeeze out the gelatine to remove excess liquid, then add to the coconut cream in the small pan, stirring to dissolve",
+      "Whisk the remaining coconut cream into the egg and sugar mix until smooth. Return this mixture to the pan and place over a low heat, cooking and stirring until thick enough to coat the back of a spoon",
+      "Stir the gelatine coconut cream into the custard",
+      "Mix in the reduced rum and pass through a sieve into a clean bowl, then set aside to cool",
+      "To make the popcorn, place a pan (with a lid) over a medium heat and add a splash of oil. When the oil is hot, add the popcorn kernels and replace the lid",
+      "Keep shaking the pan over the heat until there is no more popping. Spread the cooked popcorn out onto a tray, discarding any un-popped kernels",
+      "Melt the chocolate, stirring until nice and smooth, then stir in the popping candy and peanuts",
+      "Stir the popcorn into the chocolate until nicely coated, then spread out onto a lined tray and place in the fridge for 10 - 15 minutes to set",
+      "One set and hard, break the popcorn sheet into bite-size pieces",
+      "To assemble the dish, add the custard to a piping bag and pipe into the bottom of serving glasses. Top with the chocolate popcorn and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Rum",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": "seeds scraped out and reserved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water until soft",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn Kernels",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Peanuts",
+        "unit": "g",
+        "notes": "chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popping Candy",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ed2deef988c9695184bdb3ff3db893da9692d2694ab9bc5ddbfefe540cbe11a5",
+    "lineage_hash": "c3682bb097afa6a0276658625588259115c0d249a0aecfa9486a01a998b6ea97"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-peanut-popcorn-recipe-coconut-custard",
+    "fetchedAt": "2026-08-03T18:50:04.818Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-peanut-popcorn-recipe-coconut-custard",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

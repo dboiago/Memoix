@@ -1,0 +1,35 @@
+{
+  "url": "https://www.greatbritishchefs.com/recipes/chocolate-fondue-recipe",
+  "slug": "chocolate-fondue-recipe_greatbritishchefs_2c023b2c",
+  "title": "Chocolate Fondue Recipe",
+  "byline": "by Adam Bennett",
+  "fetchedAt": "2026-08-03T19:37:57.741Z",
+  "ldName": "Chocolate fondue with marshmallow and banana",
+  "ldTime": "PT30M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": null,
+  "ldCuisine": null,
+  "ldCategory": "Dessert",
+  "ldKeywords": "easy",
+  "ldIngredientsRaw": [
+    "200g of milk chocolate",
+    "1 banana, chopped",
+    "1 handful of grapes",
+    "50g of marshmallow",
+    "5g of popping candy, optional",
+    "1 tsp edible glitter",
+    "1 tsp desiccated coconut, optional"
+  ],
+  "ldInstructionsRaw": [
+    "First, melt the chocolate. Add the chocolate to a bowl and place over a pan of hot water - don’t let the base of the bowl come into contact with the water. Gently stir until all of the chocolate melts",
+    "Add the chopped banana to a bowl along with the grapes. Empty the marshmallows into a separate bowl",
+    "Alternately thread the fruit and marshmallows onto cocktail sticks or skewers. Dip into the chocolate to coat and place onto a plate",
+    "Lastly, sprinkle over the popping candy and edible glitter, or, if you prefer, desiccated coconut"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "GB",
+  "siteCourseHint": null
+}

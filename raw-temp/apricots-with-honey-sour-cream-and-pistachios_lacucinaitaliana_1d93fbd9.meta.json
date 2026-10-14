@@ -1,0 +1,40 @@
+{
+  "url": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/apricots-honey-sour-cream-and-pistachios",
+  "slug": "apricots-with-honey-sour-cream-and-pistachios_lacucinaitaliana_1d93fbd9",
+  "title": "Apricots with Honey, Sour Cream and Pistachios",
+  "byline": "by  Editorial staff   July 11, 2023",
+  "fetchedAt": "2026-08-03T09:06:13.201Z",
+  "ldName": "Apricots with Honey, Sour Cream and Pistachios",
+  "ldTime": "PT15M",
+  "ldPrepTime": null,
+  "ldCookTime": null,
+  "ldYield": "4",
+  "ldCuisine": "Italian",
+  "ldCategory": "cakes and desserts",
+  "ldKeywords": "Apricot",
+  "ldIngredientsRaw": [
+    "10 apricots",
+    "10TBSP. sour cream",
+    "2TBSP. honey",
+    "1/4CUP pistachios",
+    "Lemon verbena or lemongrass"
+  ],
+  "ldInstructionsRaw": [
+    "<p><span lang=\"en-US\">To make our recipe for apricots with honey, sour cream, and pistachios, start by washing the apricots. Divide them in half and remove the pit. &nbsp;</span>&nbsp;</p>",
+    "<p><span lang=\"en-US\">Sprinkle a pan with honey over high heat. Once the honey starts to simmer (after a few seconds), transfer the apricots to the pan, pit side facing down. Sauté for a couple of minutes until lightly caramelized.</span></p>",
+    "<p><span lang=\"en-US\">In the meantime, chop the pistachios and mince the verbena.</span></p>",
+    "<p><span lang=\"en-US\">Serve the apricots with the sour cream, pistachios and verbena.</span></p>",
+    "<p>Extra Tip: <span lang=\"en-US\">You can replace the sour cream with mozzarella or yogurt ice cream. For a richer flavor, use infused honey.</span></p>"
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "10  of apricots",
+    "10 TBSP. of sour cream",
+    "2 TBSP. of honey",
+    "1/4 CUP of pistachios",
+    "Lemon verbena or lemongrass"
+  ],
+  "htmlIngredientConfig": "generic-container",
+  "siteRegionHint": "IT",
+  "siteCourseHint": null
+}

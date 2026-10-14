@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Crunchy Nut Panna Cotta",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the milk ice cream a day in advance. Simply stir the stock syrup into the evaporated milk, churn in an ice cream machine and freeze",
+      "Make the panna cottas a day in advance too. Soak the gelatine leaves in a bowl of cold water for 5 minutes to soften. Place the milk, sugar and double cream in a pan over a high heat and bring to the boil, then remove from the heat. Squeeze the gelatine leaves to remove excess water, then stir them into the cream until dissolved",
+      "Add the cornflakes to the pan. Cover with clingfilm and leave to infuse for 30 minutes",
+      "After 30 minutes, strain the cream through a sieve into a jug and fill 8 panna cotta moulds – you want approx. 85g of mixture per mould. If you don't have panna cotta moulds, you could also divide the mixture between serving bowls and leave them to set in place. Place in the fridge to set overnight",
+      "The next day, make the oat crumble. Preheat an oven to 170ºC/gas mark 3. Mix the oats with the salt, beurre noisette and golden syrup then spread out on a tray lined with baking paper and bake for 6 minutes",
+      "Remove from the oven and give everything a stir, then add the hazelnuts and grate the white chocolate over the top. Place back in the oven for another 6 minutes or until golden brown. Leave to cool, then break into pieces",
+      "To serve, demould the panna cottas by dipping the container into hot water to loosen then tip straight into bowls (if you let them set them in bowls, then just take them out of the fridge). Sprinkle with the crumble and top with a rocher of milk ice cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Crunchy Nut Cornflakes",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "160",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Stock Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Evaporated Milk",
+        "unit": "cans",
+        "notes": "approx. 800g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beurre Noisette",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dbf826e0d324fe26859bfb10c900e6cff9d2da1a8e3e5e3cdd6654eaf549f835",
+    "lineage_hash": "cf1422b570d4518d4f3a225a38922f01240106bfbfe6d39aa8ba07a63a6ac83b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crunchy-nut-panna-cotta-recipe",
+    "fetchedAt": "2026-08-02T19:45:33.600Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crunchy-nut-panna-cotta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

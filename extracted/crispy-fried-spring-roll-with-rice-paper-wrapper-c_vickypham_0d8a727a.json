@@ -1,0 +1,155 @@
+{
+  "recipe": {
+    "name": "Crispy Fried Spring Roll with Rice Paper Wrapper (Cha Gio)",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "VN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rehydrate mushrooms and noodles: In a medium bowl, rehydrate dried wood ear mushroom and dried vermicelli noodles in warm water for 15 minutes. Remove from water and rinse. Mince finely and set aside.",
+      "Combine ingredients: In a medium-size bowl, mix together ground pork, minced wood ear mushroom, minced vermicelli noodles, green onion, shallot, sugar, black pepper, sesame oil, salt, oyster sauce, and mushroom bouillon powder. Set aside.",
+      "Wet the rice paper: Quickly submerge a netted rice paper in a shallow water bowl so that top and bottom are wet then immediately transfer to a large plate or clean flat surface.",
+      "Add filling: Add 2 tablespoons of filling towards the bottom end of the rice paper.",
+      "Roll and seal: Roll the rice paper up to cover the filling until you reach the middle. Tuck in both sides. Continue to roll up to seal.",
+      "Heat oil: In a wok or tall skillet, heat vegetable oil to 325°F or when a small piece of rice paper wrapper dropped in oil starts to sizzle gently. Oil can be warmer than needed, as you can always increase the temperature without ruining the spring roll. Oil too hot will produce a burnt crust and an uncooked interior. Not good.",
+      "Fry in batches: Once you get the right temperature, fry in small batches for 4-5 minutes or until spring rolls are golden brown. Transfer spring rolls onto a wire rack or a paper-towel-lined plate to absorb excess oil.",
+      "Sauce: It’s best to accompany the fried spring rolls immediately after frying for the crispy crust. Serve with a traditional homemade Vietnamese Fish sauce dipping sauce (Nuoc Mam Cham) or you can get your favorite sweet chili sauce from the store.",
+      "Serve: Serve these spring rolls on their own or, my favorite, with a platter of fresh leafy lettuce for wrapping and pickled daikon and carrots (Do Chua). You can also serve them as a component of a noodle dish (Bun Thit Nuong)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ground Pork",
+        "unit": "lb",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Wood Ear Mushrooms",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bean Thread Vermicelli/cellophane Noodles",
+        "unit": "oz",
+        "notes": "dried",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion",
+        "unit": null,
+        "notes": "slice thinly",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallot",
+        "unit": "large",
+        "notes": "peel and dice finely",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mushroom",
+        "unit": "tsp",
+        "notes": "alt: chicken bouillon powder, optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Package Netted Rice Paper Wrapper",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil for Frying",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Homemade Vietnamese Fish Sauce Dipping Sauce (nuoc Mam Cham)",
+        "unit": null,
+        "notes": "alt: a store-bought sweet chili sauce",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f5946daa5db2147214e2be62bd19e0d5a00d5178af07c86c248835667763271a",
+    "lineage_hash": "d00689140f85909c91c747e3bb266f8b700b465a544e32640cd4169232e8867e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://vickypham.com/blog/crispy-fried-spring-rolls/",
+    "fetchedAt": "2026-08-02T04:33:46.600Z"
+  },
+  "rawSource": "https://vickypham.com/blog/crispy-fried-spring-rolls/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

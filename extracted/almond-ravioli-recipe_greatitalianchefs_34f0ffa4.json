@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Almond Ravioli",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the ravioli, add all of the ingredients (except the pinch of sugar) to a standing mixer fitted with a paddle and mix for 5 minutes",
+      "Wrap the dough in cling film and leave to rest in the fridge for 30 minutes",
+      "Meanwhile, make the cassata filling. Heat the sugar syrup to 100°C and pour over the ricotta cheese. Allow to cool and mix with the remaining ingredients in a large bowl",
+      "Pass the dough through a pasta machine several times, decreasing the thickness setting each time to create a thin sheet of pasta. Cut the sheet in half",
+      "Pipe the cassata filling in spaced intervals along 1 sheet of the pasta. Place the other sheet of pasta on top of the first and press out any air pockets around the filling",
+      "Cut out the ravioli with a square pasta cutter or fluted pasta wheel and leave to dry on a floured surface",
+      "For the orange soup, mix the cornflour with a little water to a slightly runny consistency. Peel the oranges, scrape any white pith from the zest and cut the zest into thin matchsticks. Segment the oranges",
+      "Place the orange segments, zest, orange juice, sugar and saffron in a saucepan and heat without boiling",
+      "Add the cornflour mixture to the saucepan and quickly stir through to thicken. Cook for 2 minutes then remove from the heat and allow to cool slightly",
+      "Cook the ravioli for about 3 minutes in a large saucepan of boiling water with a pinch of sugar",
+      "To serve, pour the orange sauce into a shallow bowl while still warm and place the ravioli on top. Garnish with saffron and finely chopped pistachios"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "00 Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Almonds",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almond Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ricotta",
+        "unit": "g",
+        "notes": "sheep's",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "flakes",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Candied Orange Zest",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oranges",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Saffron",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pistachio Nuts",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8c87c3480e83f17aee113aa7d1a36b0cdcec6f607dc16102aa84d70b9e7d74a3",
+    "lineage_hash": "4a99e0201d59f4477661ba77d59dc0dffc76a8216a40842ac5b154f5a5fdc0c3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/almond-ravioli-recipe",
+    "fetchedAt": "2026-08-02T06:06:26.590Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/almond-ravioli-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

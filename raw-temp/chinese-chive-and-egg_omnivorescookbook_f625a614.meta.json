@@ -1,0 +1,54 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-chive-and-egg/",
+  "slug": "chinese-chive-and-egg_omnivorescookbook_f625a614",
+  "title": "Chinese Chive and Egg (韭菜炒鸡蛋)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T02:58:00.930Z",
+  "ldName": "Chinese Chive and Egg (韭菜炒鸡蛋)",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT5M",
+  "ldYield": [
+    "2",
+    "2 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Main",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "25 stalks (120 g) Chinese chives",
+    "2 tablespoons peanut oil ((or vegetable oil))",
+    "4  eggs",
+    "1/2 teaspoon salt ((*Footnote 1))",
+    "1/4 teaspoon white pepper"
+  ],
+  "ldInstructionsRaw": [
+    "Wash the Chinese chives thoroughly to remove any dirt. Then drain thoroughly. Cut and discard the tough ends, about 1” (2.5 cm). Cut the chives into 1/2” (1 cm) pieces.",
+    "Heat 1 tablespoon of oil in a large skillet over medium-high heat until hot. Add the chives. Cook and stir until the chives turn tender, 1 to 2 minutes. Transfer to a plate to cool slightly.",
+    "Beat the eggs in a large bowl with salt and white pepper. Add back the cooked chives. Mix well.",
+    "Heat the remaining oil in the same skillet over medium-high heat until hot. Pour in the egg and chive mixture. Scramble the eggs lightly. Cook until the eggs reach the desired texture - you can keep the eggs a bit tender and silky, or cook until the eggs are lightly browned on the outside for a crispy texture. Transfer to a plate and serve hot as a side or main dish."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "281 kcal",
+    "carbohydrateContent": "3.6 g",
+    "proteinContent": "14.6 g",
+    "fatContent": "23.9 g",
+    "saturatedFatContent": "5.5 g",
+    "cholesterolContent": "372 mg",
+    "sodiumContent": "530 mg",
+    "fiberContent": "1.6 g",
+    "sugarContent": "1.9 g"
+  },
+  "htmlIngredientLines": [
+    "25 stalks (120 g) Chinese chives",
+    "2 tablespoons peanut oil (or vegetable oil)",
+    "4 eggs",
+    "1/2 teaspoon salt (*Footnote 1)",
+    "1/4 teaspoon white pepper"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

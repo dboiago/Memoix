@@ -1,0 +1,89 @@
+{
+  "recipe": {
+    "name": "Christmas Pudding Ice Cream",
+    "time": "1 hr",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cream and milk to a pan and scrape in the seeds from the vanilla pod. Add the scraped pod and place the pan over a medium-high heat",
+      "Bring to a gentle simmer, then remove from the heat and set aside to infuse for 30 minutes",
+      "In a bowl, whisk the egg yolks and sugar until pale and smooth. Bring the milk and cream back up to a simmer",
+      "While slowly whisking the eggs, gradually pour in the hot cream",
+      "Return the mixture to the saucepan. Place the pan over a low heat and stir continuously until you have a thin custard that coats the back of a wooden spoon",
+      "Remove the pan from the heat. Pass the custard through a fine sieve into a bowl and allow to cool completely, laying cling film directly on top of the custard to prevent a skin forming",
+      "Churn the custard in an ice cream maker, stirring in the Christmas pudding as the mixture begins to thicken and freeze. Store in the freezer until ready to serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Christmas Pudding",
+        "unit": "g",
+        "notes": "crumbled into pieces",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Single Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "split lengthways",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5efe6310537509bbf21ba75f8449cff1d188321cb0c4ee7902dfbba15cf83c0b",
+    "lineage_hash": "f44683bc01f6df7575b7e2c7803ab48b75e0422687f76f181068bbb68f674a9e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-pudding-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T19:42:39.316Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-pudding-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

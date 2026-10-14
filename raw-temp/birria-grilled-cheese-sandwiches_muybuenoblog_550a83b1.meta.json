@@ -1,0 +1,57 @@
+{
+  "url": "https://muybuenoblog.com/birria-grilled-cheese-sandwiches/",
+  "slug": "birria-grilled-cheese-sandwiches_muybuenoblog_550a83b1",
+  "title": "Birria Grilled Cheese Sandwiches",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T02:12:37.175Z",
+  "ldName": "Birria Grilled Cheese Sandwiches",
+  "ldTime": "PT525M",
+  "ldPrepTime": "PT30M",
+  "ldCookTime": "PT15M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Dinner, Main Course, tacos",
+  "ldKeywords": "beef",
+  "ldIngredientsRaw": [
+    "2 cups Birria de Res",
+    "2 cups Consomme",
+    "8  sourdough bread (sliced)",
+    "4 tablespoons butter",
+    "8  Pepperjack cheese (sliced)"
+  ],
+  "ldInstructionsRaw": [
+    "Preheat a skillet to medium-high heat.",
+    "Butter one side of each slice of bread.",
+    "Working one or two at a time, add bread, buttered side down into the skillet. While it is cooking, top with half cup shredded birria, slices of pepper jack cheese, and another slice of bread, buttered side up.",
+    "Cook over medium-low heat for 5-7 minutes; then, flip over the sandwich and cook another 5-7 minutes, or until golden brown.",
+    "Serve with consommé (leftover juices) from the slow cooker for dipping."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "677 kcal",
+    "carbohydrateContent": "67 g",
+    "proteinContent": "38 g",
+    "fatContent": "29 g",
+    "saturatedFatContent": "14 g",
+    "transFatContent": "1 g",
+    "cholesterolContent": "114 mg",
+    "sodiumContent": "1415 mg",
+    "fiberContent": "3 g",
+    "sugarContent": "6 g",
+    "servingSize": "4 g",
+    "unsaturatedFatContent": "14 g"
+  },
+  "htmlIngredientLines": [
+    "▢ 2 cups Birria de Res",
+    "▢ 2 cups Consomme",
+    "[Sandwiches]",
+    "▢ 8 sourdough bread, sliced",
+    "▢ 4 tablespoons butter",
+    "▢ 8 Pepperjack cheese, sliced"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Drunken Steak",
+    "time": "4 hr 6 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make the marinade: In a mixing bowl, combine the bourbon, soy sauce, sesame oil, sugar, garlic, and ginger. Whisk until the sugar dissolves. Place the steak in a roasting pan just large enough to hold it. Pour the marinade over it, turning the steak once or twice to coat it evenly with the marinade. Let the steak marinate for 4 hours in the refrigerator, covered, turning it once more.",
+      "Set up the grill for direct grilling using a two-zone fire. If using a gas grill, place all of the wood chips or chunks in the smoker box or in a smoker pouch and run the grill on high until you see smoke, then lower one burner to medium. If using a charcoal grill, preheat one zone to high and the other to medium, then toss all of the wood chips or chunks on the coals.",
+      "When ready to cook, brush and oil the grill grate. Drain the marinade off the steak and discard the marinade. Place the steak on the hot grate and grill until cooked to taste, 6 to 8 minutes per side for medium-rare. Start by searing the steak over the hot zone for about 2 minutes, then move it over the medium zone. Repeat on the other side. To test for doneness, insert an instant-read thermometer in the side of the beef: The internal temperature should be 140° to 145°F for medium-rare. Generously season the steak with salt and pepper as it cooks.",
+      "Transfer the grilled steak to a cutting board. Stick the piece of butter on the end of a fork and rub it over the top of the beef. Let the steak rest for about 3 minutes.",
+      "Using a sharp knife, carve the beef into broad thin slices, holding the knife blade at a 45 degree angle to the top of the meat. Pour the juices over the slices and serve at once."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "C",
+        "notes": "preferably Kikkoman",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian (dark) Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "minced, peeled, fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ff48bd48bf97ccdf970e76b930f69fe8f0d4b2aef36b0bdc60366c93819aa650",
+    "lineage_hash": "29564c3037c156b460330081937c397785998b05349ee35243760f296646ba24"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/drunken-steak/",
+    "fetchedAt": "2026-08-03T03:34:32.723Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/drunken-steak/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

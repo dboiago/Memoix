@@ -1,0 +1,183 @@
+{
+  "recipe": {
+    "name": "Confit Chicken Terrine",
+    "time": "2 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the chicken terrine, put the duck fat into a large pan with all the vegetables and herbs. Heat and season the fat with some salt - not too much or your chicken terrine will become salty",
+      "Put the chicken legs into a large pan as compactly as possible and pour the warm duck fat and vegetables over the chicken. Put a lid on the pan. The chicken should now be totally submerged in fat",
+      "Bring the fat up to the boil then reduce the heat. The legs should be poaching just below boiling point in the duck fat. The meat is cooked when it falls off the bone; this will take about 1 ½ hours",
+      "When the meat is cooked drain off the fat and separate the meat from the vegetables. Take the chicken legs and remove all of the skin, bone and cartilage. Put into a bowl and season if required with salt, pepper and balsamic vinegar. Put to one side and keep warm",
+      "Cut the foie gras into slices approximately 2cm thick and sear very quickly in a hot pan on both sides. Put the slices onto a tray and season lightly  with salt and pepper. Place the foie gras into a medium oven for a minute or so just to warm it through all the way",
+      "Pour the fat that comes out of the foie gras into the confit chicken and add a little bit more of the duck fat as this will help keep the terrine moist and help it to set",
+      "Line a terrine mould with a couple of layers of cling film. Divide the chicken into 3 equal amounts. Put the first batch of chicken into the terrine and push it down to level it off. Put half of the seared foie gras on top of the first layer of chicken",
+      "Now put the second batch of confit chicken on top of the foie gras and press it down. Now put the remaining foie gras into the terrine mould and cover that with the remaining confit chicken mix push this down evenly",
+      "Cover this with a couple of layers of cling film and put the terrine onto a tray. Lightly press down, then place in the refrigerator for a minimum of six hours",
+      "For the celeriac remoulade, peel the celeriac removing all of the outer skin and cut into match stick sized pieces",
+      "Have a pan of boiling salted water and a bowl of iced water ready. Place the celeriac into the boiling water then immediately remove it and cool in the iced water straight away. When cold, remove from the water and drain",
+      "Mix the celeriac with a little bit of mayonnaise, whole grain mustard, and a squeeze of lemon juice to taste",
+      "To plate, place a little celeriac remoulade in the centre of the plate. Slice a piece of terrine and lay it on top of the remoulade. Place some fresh watercress leaves around the outside the terrine. It is best served at room temperature"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "kg",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Carrots",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celery Sticks",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bulb of Garlic",
+        "unit": null,
+        "notes": "halved",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Balsamic Vinegar",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Celeriac",
+        "unit": null,
+        "notes": "small",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grain Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handfuls of Watercress",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "114c283aa7eaa58c9aea1c4356cd13dd7b4218f1a06d8cc43f899cd7a1da4113",
+    "lineage_hash": "9e471875fb2988228c72d8861970ac55c59e7791a0101a83e7e251414c17a401"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/terrine-confit-chicken-foie-gras-celeriac-remoulade",
+    "fetchedAt": "2026-08-03T21:59:41.554Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/terrine-confit-chicken-foie-gras-celeriac-remoulade",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

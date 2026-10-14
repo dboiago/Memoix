@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Crispy Amritsari Kulcha",
+    "time": "1-29 minutes",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl add refined flour, baking powder, baking soda, caster sugar, ghee, curd mix well and knead a semi soft dough.",
+      "In a pan, add cumin Seeds , Coriander Seeds Dry roast them well, crushed it coarsely and keep it aside.",
+      "In a mixing bowl, add onion, green chilli, fresh coriander leaves, add the crushed cumin seeds, coriander seeds, amchur powder and mix well.",
+      "Add boiled potatoes and mashed well. Mix well till the mixture gets creamy texture. Add salt to taste and mix well and keep it aside.",
+      "In a bowl, add water, salt and mix well.",
+      "Make medium size ball from the dough, place the stuffing in the center bring the edges together and join them at the center.",
+      "Gently roll to a large disc of about 5 to 6 inches in diameter.",
+      "Apply some ghee, coriander leaves and gently press the kulcha so that it get stuck to the dough.",
+      "Heat the cooker on high flame. Once the cooker is hot sprinkle salt water in the cooker so that the kulcha stick to it. Gently place the kulcha.",
+      "Once it is cooked from both sides, place the kulcha on the rack and apply some ghee."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Refined Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": "beaten",
+        "amount": "¼",
+        "section": "For Dough",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted, crushed",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "Tbsp",
+        "notes": "toasted, crushed",
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "2",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "2-3",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Amchur Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": null,
+        "notes": "boiled, peeled, mashed",
+        "amount": "4",
+        "section": "For Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": "For Filling",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "de88085ff298f0b0f77355cb4919525dc777459ca6782e0317e085c32eeb5ba7",
+    "lineage_hash": "c3296ec8fc834f12ccc9127876a9aa309ef98cb3e496997bb17fb43eda9b136d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/cooker-wala-kulcha/",
+    "fetchedAt": "2026-08-02T00:19:55.078Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/cooker-wala-kulcha/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,119 @@
+{
+  "recipe": {
+    "name": "Chipotle Steak with Salted Chilli Watermelon Salad",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by sprinkling the steak with the salt and chipotle chilli flakes on both sides. Set aside to come to room temperature",
+      "Prepare the watermelon by slicing off the skin and cutting into small wedges. Place in a salad bowl and sprinkle with the Barbacoa sea salt flakes and toss to combine",
+      "Place two large frying pans over a high heat. In one, add the sugar snap peas with a very small dash of oil and char in the pan until starting to blacken. Toss the pan every now and then to char on both sides. Once nicely charred, tip out onto a plate to cool",
+      "In the second pan, add a dash of oil, then once smoking hot, add the bavette steak. Cook for 3 minutes on each side, then remove from the pan and leave to rest for 5 minutes before carving",
+      "To assemble the salad, add the charred sugar snaps to the salted watermelon along with the feta, almonds and mint and toss to combine. Slice up the steak once rested and serve with the salad"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bavette Steak",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bart Chipotle Chilli Flakes",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watermelon",
+        "unit": "g",
+        "notes": null,
+        "amount": "600",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bart Barbacoa Sea Salt Flakes",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Snap Peas",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Feta",
+        "unit": "g",
+        "notes": "crumbled",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Almond",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "sprigs",
+        "notes": "leaves picked",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b95e4e6884c299706df9e756260f31647568279ad4b6664ad05ae0f35ea7ad84",
+    "lineage_hash": "1e9e570e33bf952d3fa077d9d0841ec3c5f096c4567f97a7292ac20f63beb435"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chipotle-steak-with-watermelon-recipe",
+    "fetchedAt": "2026-08-02T18:36:56.469Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chipotle-steak-with-watermelon-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

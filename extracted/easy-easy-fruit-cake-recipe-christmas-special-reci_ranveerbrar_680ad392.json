@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Fruit Cake",
+    "time": "50 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a mixing bowl, add butter, sugar, tutti fruiti and mix well till the butter change the colour.",
+      "Add vanilla essence, flour and mix well, add egg and mix well.",
+      "Add almonds, walnuts, tutti fruiti mix well by cut and fold method.",
+      "Grease the mould with butter and place butter papper.",
+      "Pour the batter into the mould and bake it at 165 to 170 for 40 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Fruiti",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "C",
+        "notes": "chopped",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts Chopped",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Fruiti",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8fe990750bc7f3504506cb399b053403afc24135842a91159e953f04d0eae5ff",
+    "lineage_hash": "ed067b83ec96069d729d3a65fad50402a4c9a619e01fb456682a9edd89adb9e1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/fruit-cake/",
+    "fetchedAt": "2026-08-02T19:42:30.571Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/fruit-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

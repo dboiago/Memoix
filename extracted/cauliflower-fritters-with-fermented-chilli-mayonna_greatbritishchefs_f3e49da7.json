@@ -1,0 +1,145 @@
+{
+  "recipe": {
+    "name": "Cauliflower Fritters with Fermented Chilli Mayonnaise",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the mayonnaise, mix the egg, mustard and lime juice and a pinch of salt together with a whisk",
+      "Slowly drizzle in the vegetable oil a drop at a time, whisking all the time, until a thick, pale yellow emulsion forms. Once the oil and egg yolks begin to emulsify, you can add the oil slightly faster",
+      "Once all the vegetable oil has been incorporated, add the olive oil in a steady stream, whisking constantly. Taste, and adjust seasoning as needed, then stir in fermented hot sauce to taste and set aside",
+      "Cook the cauliflower florets and leaves for 3 minutes in boiling salted water, then drain and rinse under cold water",
+      "Sift the flour and baking powder into a bowl and mix in the curry powder. Make a well in the centre and add the eggs, then mix well. Add the florets and leaves and mix to coat",
+      "Heat oil for deep-frying to a temperature of 180°C. Deep fry the leaves and florets for a couple of minutes, or until golden brown. Drain on kitchen paper",
+      "Serve the fritters with the fermented chilli mayonnaise"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Freshlay Farms Golden Yolker® Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Chilli Sauce to Taste",
+        "unit": null,
+        "notes": "see above",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cauliflower",
+        "unit": "large",
+        "notes": "small leaves and florets separated",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshlay Farms Golden Yolker® Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": null,
+        "notes": "for deep-frying",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "008f11efc8a844380f28e9dec4cf22d50a829409186d1dbe338a7d9183535f70",
+    "lineage_hash": "a55d27e33c51d7cfdc47fe207c5073636ba3e30d9952afd77a29129ffb9ddb77"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cauliflower-fritters-fermented-chilli-mayonnaise-recipe",
+    "fetchedAt": "2026-08-02T16:00:57.019Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cauliflower-fritters-fermented-chilli-mayonnaise-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

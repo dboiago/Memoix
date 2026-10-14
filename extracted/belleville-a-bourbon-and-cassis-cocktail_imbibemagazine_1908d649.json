@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Belleville: A Bourbon and Cassis Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Large Ice Cube",
+    "garnish": [
+      "Lemon Peel"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all of the ingredients in a mixing glass with ice and expressed lemon peel. Stir to chill, then strain over a large ice cube in the glass. Garnish with a lemon peel.",
+      "Note“This cocktail calls for a very under-utilized technique called the ‘Royal Stir’ where we incorporate a lemon peel in the mixing glass to gently add brightness and texture during the stir—but not getting in the way of the aromatics of the final cocktail via an expression. We encourage home bartenders to experiment with this approach if they want to highlight the high quality of the spirits that are being used rather than the citrus garnish.”—Allison Lovelace"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Crème De Cassis",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bigallet China China",
+        "unit": "oz",
+        "notes": "scant",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "Little Sparrow uses Bordiga Rosso",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Vermouth",
+        "unit": "oz",
+        "notes": "Little Sparrow uses Lustau Vermut Rojo",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bc1329e45f44e6031901b045df6ba50bfad57d3db32a24c3db992a58c4836f4f",
+    "lineage_hash": "e3a15daf89729cc0b903d10168331aabdffb0970d40787e3b3dab4ebd8799db7"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/belleville-bourbon-and-cassis-cocktail/",
+    "fetchedAt": "2026-08-04T01:45:11.348Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/belleville-bourbon-and-cassis-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

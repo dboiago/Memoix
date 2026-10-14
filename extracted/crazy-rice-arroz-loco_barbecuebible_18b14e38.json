@@ -1,0 +1,61 @@
+{
+  "recipe": {
+    "name": "Crazy Rice (Arroz Loco)",
+    "time": "45 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the rice: Place the rice in a large bowl and add cold water to cover by 3 inches. Swirl the rice around with your fingers until the water clouds, then put the rice in a strainer to drain. Repeat the process until the water remains clear. This could take 4 to 6 rinses.",
+      "Place the rice in a large, heavy pot. Add enough water to cover by 3/4 inch (about 2 1/2 cups). Stir in the salt and butter and bring to a boil over high heat. Tightly cover the pan, reduce the heat to low, and cook the rice until it is tender, about 18 minutes, but check after 15 minutes: If the rice is too wet, set the lid ajar to allow some of the liquid to evaporate. If the rice is too dry, add 2 to 3 more tablespoons of water. Remove the pot from the heat and let the rice stand, covered, for 5 minutes. Fluff it with a fork and set aside.",
+      "Prepare the flavorings: Heat the olive oil in a large skillet over medium heat. Add the bacon and cook until lightly browned, about 4 minutes. Pour off all but 2 tablespoons of the fat. Add the onion, garlic, green and red bell peppers, corn, raisins, and the parsley. Cook until the onion is golden, about 5 minutes. Stir the rice into the flavorings and cook until thoroughly heated through, about 2 minutes. Taste for seasoning, adding salt and black pepper to taste, then serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Long-grain Rice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coarse Salt",
+        "unit": "tsp",
+        "notes": "sea or kosher",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "5923851f817b38a2abeae7c7b4f78501bef5256fd4114429c87763e0ad485020",
+    "lineage_hash": "07fee266a3dee186235771f973032ac76c616f389777677726dfe0c2c9a3c050"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/crazy-rice-arroz-loco/",
+    "fetchedAt": "2026-08-03T08:41:48.627Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/crazy-rice-arroz-loco/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

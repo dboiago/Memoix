@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Crema Fritta",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Line a square baking tray –approximately 23x23cm in size – with cling film and put it in the fridge to cool",
+      "To make the custard, pour the milk in a heavy-bottomed saucepan and set it over a low heat. Add the strip of lemon zest and bring to a simmer",
+      "Meanwhile, in a large glass bowl, whisk the egg yolks with the sugar until it has dissolved. Add the cornstarch and flour and whisk to incorporate, then add a ladle of hot milk to loosen up the mixture",
+      "Remove the lemon peel and add the egg mixture to the milk. Whisking all the while, cook the custard until it has reached a thick, velvety, pudding-like texture",
+      "Remove the lined baking tray from the fridge; pour in the hot custard to a 2cm depth and and spread it out with a spatula. Allow the custard to come to room temperature",
+      "Once the custard has cooled and hardened a little, cut into squares or diamonds. Dip them into the beaten egg and then roll them in the breadcrumbs",
+      "Heat up the sunflower oil in deep-fryer or pan to 180°C and fry the breaded custard squares until golden on all sides",
+      "Drain with a slotted spoon and carefully place on kitchen paper to absorb any excess fat. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "slice",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Starch",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Breadcrumbs",
+        "unit": null,
+        "notes": null,
+        "amount": "as needed",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sunflower Oil",
+        "unit": "L",
+        "notes": "for frying",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fd2e0eaa15c27adae95d4d2ad51523f4a83c4ef15c412aa3c7a7e92c3d1a2153",
+    "lineage_hash": "4046ee5a8027e4baf180f78ec7a40d7c3749daa4349148ec399013bfb34c2259"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/crema-fritta-recipe",
+    "fetchedAt": "2026-08-01T21:49:47.906Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/crema-fritta-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

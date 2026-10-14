@@ -1,0 +1,45 @@
+{
+  "url": "https://www.okonomikitchen.com/baked-japanese-sweet-potatoes-yaki-imo/",
+  "slug": "baked-japanese-sweet-potatoes-authentic-yaki-imo-o_okonomikitchen_5e3b6923",
+  "title": "Baked Japanese Sweet Potatoes (Authentic Yaki Imo) - Okonomi Kitchen",
+  "byline": "Lisa Kitahara",
+  "fetchedAt": "2026-09-25T23:56:57.939Z",
+  "ldName": "Perfect Baked Japanese Sweet Potatoes",
+  "ldTime": "PT1H3M",
+  "ldPrepTime": "PT3M",
+  "ldCookTime": "PT1H",
+  "ldYield": [
+    "5",
+    "5 servings"
+  ],
+  "ldCuisine": "gluten free",
+  "ldCategory": "Sides",
+  "ldKeywords": "roasted sweet potatoes, japanese sweet potato, satsumaimo, yaki imo",
+  "ldIngredientsRaw": [
+    "5 Japanese sweet potatoes (approx. 250-350g each)"
+  ],
+  "ldInstructionsRaw": [
+    "Wash and dry the sweet potatoes. Prick a few holes into them with a fork. Wrap with foil or leave them as is (see blog post for details).",
+    "Without pre-heating, place them into the oven (you can use a baking tray or place them straight onto the wire rack int he oven) and bake at 325 F (300 F convection) for 70-90 minutes OR 375 F (350 F convection) for 50-65 minutes (see blog post for textural difference between the two temperatures) or until you can insert a chopstick through the potatoes easily.",
+    "Turn off the oven and them rest in the oven with the door closed until cooled down, about 1 hour. Enjoy!"
+  ],
+  "ldNutritionRaw": {
+    "servingSize": "1 serving",
+    "calories": "264 calories",
+    "sugarContent": "13g",
+    "sodiumContent": "8mg",
+    "fatContent": "0.4g",
+    "saturatedFatContent": "0",
+    "unsaturatedFatContent": "0",
+    "transFatContent": "0",
+    "carbohydrateContent": "63g",
+    "fiberContent": "4.6g",
+    "proteinContent": "2.4g",
+    "cholesterolContent": "0",
+    "@type": "nutritionInformation"
+  },
+  "htmlIngredientLines": null,
+  "htmlIngredientConfig": null,
+  "siteRegionHint": "JP",
+  "siteCourseHint": null
+}

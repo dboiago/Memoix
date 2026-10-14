@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Guava Chutney (चटपटी अमरुद की चटनी)",
+    "time": "45 min",
+    "course": "sauces",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add guava, salt, sugar, vinegar, red chilli powder and mix everything properly and keep aside for further use.",
+      "In a kadai heat oil and add ginger, black pepper cons, cloves saute for a minute.",
+      "Then add the guava mixture, water, cover and cook on low flame for 15-20 minutes.",
+      "Remove the lid and add guava juice and continue cooking for 5-10 or until soft and thick.",
+      "Now add the coriander stems and cook for 2 minutes, switch off the flames and let it cool down.",
+      "Store in the fridge in a airtight container."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Guava",
+        "unit": "kg",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Tbsp Red Chilli Powder",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Inch Ginger",
+        "unit": "inch",
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper Cons",
+        "unit": null,
+        "notes": null,
+        "amount": "10-15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Guava Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tender Coriander Stems",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dde9ea5bcf905ace42bbea2e8f294c0d8068b104d9da1fa40faf23f044554fbb",
+    "lineage_hash": "b2dad613a005d503edf0b8862ac07fe8a2fca301ef0dcd2c0c729ef35e482e6c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/chutney-recipes/",
+    "fetchedAt": "2026-08-02T09:34:50.963Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/chutney-recipes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

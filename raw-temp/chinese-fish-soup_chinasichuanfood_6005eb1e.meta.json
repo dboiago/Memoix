@@ -1,0 +1,57 @@
+{
+  "url": "https://www.chinasichuanfood.com/chinese-fish-soup/",
+  "slug": "chinese-fish-soup_chinasichuanfood_6005eb1e",
+  "title": "Chinese Fish Soup",
+  "byline": "",
+  "fetchedAt": "2026-08-01T22:18:58.109Z",
+  "ldName": "Chinese Fish Soup",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "fish",
+  "ldIngredientsRaw": [
+    "1  fresh fish around",
+    "Half of a middle size white radish ( , finely shredded)",
+    "1/4 block  tofu  (, cut into strips )",
+    "4 slices of ginger",
+    "1  green onion",
+    "1/2 teaspoon salt or as needed",
+    "2 L hot water",
+    "1 tbsp.  cooking oil",
+    "Coriander for decorating and garnishing"
+  ],
+  "ldInstructionsRaw": [
+    "Preparation",
+    "Pan-fry the fish",
+    "Cook the soup"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "88 kcal",
+    "carbohydrateContent": "1 g",
+    "proteinContent": "15 g",
+    "fatContent": "2 g",
+    "cholesterolContent": "37 mg",
+    "sodiumContent": "361 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "1 fresh fish around",
+    "Half of a middle size white radish  , finely shredded",
+    "1/4 block  tofu  , cut into strips",
+    "4 slices of ginger",
+    "1 green onion",
+    "1/2 teaspoon salt or as needed",
+    "2 L hot water",
+    "1 tbsp.  cooking oil",
+    "Coriander for decorating and garnishing"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": "Mains"
+}

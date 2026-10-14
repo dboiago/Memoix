@@ -1,0 +1,149 @@
+{
+  "recipe": {
+    "name": "Currant Cheesecake Tartlets",
+    "time": "2 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the shortcrust pastry: combine the flour with the butter, a pinch of salt, 1/4 cup of sugar, the seeds of half a vanilla bean pod, and a pinch of lemon zest. When it forms into a crumbly mixture, add one egg yolk and knead to obtain an even dough. Let the shortcrust pastry rest for at least 30 minutes in the fridge, covered.",
+      "Place one egg yolk in a saucepan with 1/4 cup of sugar and 1 1/2 tablespoons of water; stir and cook until it coats the spoon once lifted out of the pot (175-180°F). While continuing to stir, incorporate the soaked and drained gelatin sheets. Let the cream cool, then gently combine it with the cream cheese and then the whipped cream. Pour the mixture into 12 half-sphere molds (2 inches in diameter) and refrigerate to set for at least 2 hours.",
+      "Roll out the dough until it is 1/8-inch thick and cut out discs measuring 2 3/4 inches in diameter. Line 12 tartlet tins (2 1/2 inch diameter, 3/4-inch deep); level out the edges, perforate the bottom with a fork, and bake at 350°F for 10-12 minutes. Remove from the oven, remove the crusts from the tins, and let cool. Fill the crusts with a tablespoon of currant jam. Remove the cheesecakes from the molds and place them on top of the tartlets. Garnish with fresh currants."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅔",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Pod",
+        "unit": null,
+        "notes": "seeds",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Zest",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currant Jam",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "C",
+        "notes": "whipped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatin Sheets",
+        "unit": null,
+        "notes": "soaked and drained",
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Currants",
+        "unit": null,
+        "notes": "fresh, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7586378b78ff076b584cf6861f2b5223fa6a1cb43cd8859c1a5250f4f2d43650",
+    "lineage_hash": "2a4dd64e51be4f4d4cb9e0c0450021fba01ee13b506c992406062a54633a6914"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/currant-cheesecake-tartlets",
+    "fetchedAt": "2026-08-02T17:08:19.951Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/currant-cheesecake-tartlets",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

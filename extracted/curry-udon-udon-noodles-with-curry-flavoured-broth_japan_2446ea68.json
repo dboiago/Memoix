@@ -1,0 +1,156 @@
+{
+  "recipe": {
+    "name": "Curry Udon (Udon Noodles with Curry Flavoured Broth)",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "JP",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Cut shallots diagonally into about 5cm (2”) long pieces. Slice chikuwa diagonally into 4 cm long, 5mm (3/16”) wide pieces.",
+      "Pour boiling water (not in ingredients) over the aburaage to remove excess oil and squeeze moisture out. Cut the aburaage into two lengthwise, then cut them crosswise into 1.5 - 2cm (½”) wide pieces.",
+      "Add all the Curry Mixture ingredients to a bowl and mix well using a whisk, ensuring that corn flour is dissolved.",
+      "Add oil to a large fry pan or a saucepan and heat over medium high heat. Add pork, season with a pinch of salt and pepper, and cook for 1-2 minutes until the pork pieces are nearly cooked.",
+      "Add shallots, chikuwa and aburaage to the pan and cook further 30 seconds.",
+      "Add dashi stock and turn the heat up to high. When it starts boiling, scum might surface. Remove as much as possible.",
+      "Mix the curry mixture in the bowl again ensuring that corn flour has not collected at the bottom of the bowl. Add the mixture to the pan and turn down the heat to medium.",
+      "The sauce will start to thicken. When the sauce starts boiling, turn the heat off.",
+      "Transfer heated udon noodles to two serving bowls and pour curry sauce over the udon.",
+      "Serve immediately."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Servings of Fresh Udon Noodles",
+        "unit": null,
+        "notes": "note 1",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "scallions",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Short Chikuwa Sticks",
+        "unit": null,
+        "notes": "note 2",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aburaage",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pork Belly",
+        "unit": "g",
+        "notes": "thinly sliced into bite size pieces (note 3)",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt & Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curry Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour/corn Starch",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dashi",
+        "unit": "Tbsp",
+        "notes": "alt: water",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mirin",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a00ab5a420aa469f0fe7782d623dd984bf06f6573188dfd6efab7c006f0e750a",
+    "lineage_hash": "1934ad8c20e01d59e7e8bdf03cc1c92f3a36536a25cc43de66f7dbf344c2b78b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://japan.recipetineats.com/curry-udon-udon-noodles-with-curry-flavoured-broth/",
+    "fetchedAt": "2026-08-01T21:19:42.283Z"
+  },
+  "rawSource": "https://japan.recipetineats.com/curry-udon-udon-noodles-with-curry-flavoured-broth/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Cucumber Gin & Tonic Popsicles",
+    "time": "1 hr 30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Gin",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a pitcher, combine all ingredients, except cucumber slices, and stir. Place cucumber slices into popsicle molds, then pour in tonic mix. Freeze overnight before serving. Makes about 6 popsicles, depending on the size of your mold."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tonic Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gin",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cucumber Slices",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7e63750270ef3edea6324337ccf20c24c1096fbd9f3013b6c138717a229dcdf9",
+    "lineage_hash": "3f7aea098300f8bd2ad5ffaa2e541c50b7cb921f82c505008903df18d5f4e516"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/cucumber-gin-tonic-popsicles/",
+    "fetchedAt": "2026-08-03T23:47:16.653Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/cucumber-gin-tonic-popsicles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

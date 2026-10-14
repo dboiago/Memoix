@@ -1,0 +1,81 @@
+{
+  "recipe": {
+    "name": "Crème Anglaise",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Before starting this Crème Anglaise recipe, make sure you have organised all the necessary ingredients.",
+      "Split the vanilla pod lengthwise and scrape the seeds out.",
+      "Place the vanilla pod and seeds in the milk and bring to a boil.",
+      "In a flat-bottomed pastry bowl, clarify the eggs. Pour the sugar in a thin stream over the egg yolks...",
+      "... while stirring with a whisk.",
+      "Beat the eggs and sugar vigorously until light and fluffy.",
+      "When the milk starts boiling...",
+      "... pour over the egg yolk mixture...",
+      "... and beat with a whisk.",
+      "Transfer the mixture into the recipient used to boil the milk.",
+      "Slowly cook the custard over very gentle heat or on a hot plate (medium intensity).",
+      "Stir continuously during cooking. Use a wooden spatula and stir, making 8-shaped motions at the bottom of the recipient. This technique ensures that the whole bottom surface is scraped with the whisk and prevents the cream from sticking and curdling.\nThis cooking method is called 'à la nappe'. The final consistency should coat the back of the spoon. This step is quite tricky: if the heat is too strong, the eggs will coagulate and lumps will appear. You should pay extra attention during the cooking process.",
+      "To check whether the custard is cooked, pass the cream through à sieve.",
+      "Squeeze the vanilla to extract the remaining beans.",
+      "Set aside to cool, stirring frequently. When the crème anglaise is cold, reserve in the fridge until ready to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "8-10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8684a891f2f40dd1fe8e0365a54a6c2f1f2c6888c2f8021bb08caccf8436acf2",
+    "lineage_hash": "353cd681a60a7e1f22ef5da812a4565004dd7ab1f1a655391866ed9900876e51"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.meilleurduchef.com/en/recipe/creme-anglaise-custard.html",
+    "fetchedAt": "2026-08-02T06:40:45.799Z"
+  },
+  "rawSource": "https://www.meilleurduchef.com/en/recipe/creme-anglaise-custard.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

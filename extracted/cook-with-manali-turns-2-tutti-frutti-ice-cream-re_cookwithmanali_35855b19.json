@@ -1,0 +1,90 @@
+{
+  "recipe": {
+    "name": "Tutti Frutti Ice Cream",
+    "time": "45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add heavy cream and milk. Add milk powder and granulated sugar to it. Also add the kewra essence.",
+      "Mix everything till well combined.",
+      "Pass the ice cream mixture through a sieve to get a smooth ice cream base.",
+      "Chill the mixture for a minimum of 4 hours or overnight.",
+      "Make the ice cream according to your ice cream maker manufacturer's instructions.",
+      "After the ice cream has been churning for around 15-20 minutes, add the tutti frutti and let it churn for a minute.",
+      "The ice cream is done when it reaches this soft serve consistency.",
+      "Transfer the ice cream to an ice cream container and freeze for a minimum for 4 hours or overnight before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1.5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk [i Used 2%]",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dry Milk Powder",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated White Sugar",
+        "unit": "C + 3 tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kewra Essence",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tutti Frutti",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17df9f95e03aef3268be64bc2f044399eab97f5995e8e9c9827a3258c270890b",
+    "lineage_hash": "b886ab0052e675ab78979990543afae5e63a6595a39b3fd31c7501dda8f530bc"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.cookwithmanali.com/tutti-frutti-ice-cream-recipe/",
+    "fetchedAt": "2026-08-01T17:53:05.979Z"
+  },
+  "rawSource": "https://www.cookwithmanali.com/tutti-frutti-ice-cream-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

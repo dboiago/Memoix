@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Blue Cheese Drizzle",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "If working at home, place the cheese in a food processor and grind to a coarse paste. (Alternatively, push the cheese through a sieve at the site of your tailgate.)",
+      "Add the mayonnaise, sour cream, and pepper and stir until smooth. Work in enough cream or milk to obtain a creamy pourable sauce.",
+      "Squirt it over the broccoli from a squeeze bottle or drizzle it over with a spoon. Or transfer it to a small bowl for dipping."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Smoked Blue Cheese",
+        "unit": "oz",
+        "notes": "alt: Roquefort or gorgonzola cheese",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "C",
+        "notes": "preferably Hellmann’s",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sour Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper to Taste",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "Tbsp",
+        "notes": "alt: milk",
+        "amount": "2-4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "71f2b4c26088503cee363da0d5c6f31ee115f097b0612e997ac81523c3a0d8dc",
+    "lineage_hash": "097b46c94fd152e5413aab71c7640434b51020f64970277ca1f8126eaaa3d481"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/recipe/blue-cheese-drizzle/",
+    "fetchedAt": "2026-08-03T07:45:12.401Z"
+  },
+  "rawSource": "https://barbecuebible.com/recipe/blue-cheese-drizzle/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

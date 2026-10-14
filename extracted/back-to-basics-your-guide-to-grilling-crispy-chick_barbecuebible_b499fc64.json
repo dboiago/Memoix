@@ -1,0 +1,63 @@
+{
+  "recipe": {
+    "name": "Crispy Chicken Wings",
+    "time": "1 hr",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Heat your grill to 425 degrees.",
+      "Arrange the wings on the cooler side of the grill.",
+      "Add hardwood chunks or soaked and drained smoking chips to the coals and replace the grill lid.",
+      "Grill the wings for 45 minutes to 1 hour, turning every 15 minutes, until the wings are nicely browned and the meat is cooked.",
+      "Brush the wings on both sides with your favorite sauce the last 10 minutes of grilling."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Wings",
+        "unit": "lb",
+        "notes": "cut apart, drumettes and flats used, wingtips discarded or saved for stock",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aluminum-free Baking Powder",
+        "unit": "Tbsp",
+        "notes": "per 3 pounds of wings",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "da4c03293ea80cfa4515c8345e6e1ab872d3e8dede59cf0a0b5a03b55f57fa8c",
+    "lineage_hash": "b1c96220b54adfe4f5ee40f4304e76375d0d530ae5e58debf9a5dc9a41ed68f9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://barbecuebible.com/2024/01/30/grilling-crispy-chicken-wings/",
+    "fetchedAt": "2026-08-02T20:51:15.503Z"
+  },
+  "rawSource": "https://barbecuebible.com/2024/01/30/grilling-crispy-chicken-wings/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

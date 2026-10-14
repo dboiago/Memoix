@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Coconut and Lime Mousse with Rum Jelly",
+    "time": "15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the rum jelly, boil the water with the brown sugar. Add the rum and gelatine, then transfer to a tray to set",
+      "For the mousse, mix the coconut and lime juice with the cream and icing sugar until thoroughly combined. Transfer the mixture to a siphon with 1 gas charge to form a mousse",
+      "To serve, arrange 6 pieces of popcorn on the bottom of a glass, covering with a generous helping of the mousse. Cut the rum jelly into rough chunks and sprinkle over the mousse, topping with a little more popcorn and grated lime zest"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coconut Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "350",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "g",
+        "notes": null,
+        "amount": "290",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaves",
+        "unit": null,
+        "notes": "soaked in cold water",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Popcorn",
+        "unit": "g",
+        "notes": "salted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "aedb3981f2d9262a0916e2a5fbc822f4fc4d39ee068bbba3d7e20d5fc3600f74",
+    "lineage_hash": "bc12cb6b70f26e417c2ac5124d9ea63951ff2cc974e5f1cc5dae3012ac0b68be"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/coconut-lime-mousse-rum-jelly-recipe",
+    "fetchedAt": "2026-08-02T07:59:25.707Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/coconut-lime-mousse-rum-jelly-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

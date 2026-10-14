@@ -1,0 +1,59 @@
+{
+  "url": "https://muybuenoblog.com/cinnamon-horchata-rice-pudding/",
+  "slug": "cinnamon-horchata-rice-pudding_muybuenoblog_fc28da7c",
+  "title": "Cinnamon Horchata Rice Pudding",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-01T19:45:25.233Z",
+  "ldName": "Cinnamon Horchata Rice Pudding",
+  "ldTime": "PT50M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "8",
+    "8 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Breakfast, Dessert",
+  "ldKeywords": "almond milk, Mexican rice pudding, Mexican rice pudding recipe",
+  "ldIngredientsRaw": [
+    "1 cup long-grain rice (or Arborio Rice)",
+    "1/4 cup granulated sugar",
+    "2 cups vanilla-flavored almond milk",
+    "3 cups rice milk",
+    "1 teaspoon Mexican vanilla extract",
+    "2  cinnamon sticks",
+    "2  cloves",
+    "Ground cinnamon to garnish"
+  ],
+  "ldInstructionsRaw": [
+    "In a large saucepan, combine rice, sugar, almond milk, rice milk, vanilla extract, cinnamon sticks, and cloves.",
+    "Bring to a boil and then lower heat to low heat and simmer the rice until it is very soft and achieves a thick, pudding-like consistency, about 35 minutes. Cover and let rest for 10 minutes.",
+    "Remove the cinnamon sticks and cloves.",
+    "This rice pudding can be served warm or chilled and sprinkled with ground cinnamon."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "166 kcal",
+    "carbohydrateContent": "35 g",
+    "proteinContent": "2 g",
+    "fatContent": "2 g",
+    "saturatedFatContent": "1 g",
+    "sodiumContent": "117 mg",
+    "fiberContent": "1 g",
+    "sugarContent": "11 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 1 cup long-grain rice, or Arborio Rice",
+    "▢ 1/4 cup granulated sugar",
+    "▢ 2 cups vanilla-flavored almond milk",
+    "▢ 3 cups rice milk",
+    "▢ 1 teaspoon Mexican vanilla extract",
+    "▢ 2 cinnamon sticks",
+    "▢ 2 cloves",
+    "▢ Ground cinnamon to garnish"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

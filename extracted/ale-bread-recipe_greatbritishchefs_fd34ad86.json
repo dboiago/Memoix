@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Ale Bread",
+    "time": "1 hr",
+    "course": "sides",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the flours, yeast and salt to a mixing bowl. Using a freestanding mixer with a dough hook attachment, mix on a low setting for 1 minute, or until combined",
+      "While still on a low setting, slowly add the oil, then slowly add the ale until a soft dough forms – you may require more or less ale, depending on your bread flour",
+      "Knead on a medium setting for 10 minutes until the dough has a smooth surface. Place in a lightly greased bowl, cover with cling film and allow to prove for at least 1 hour, or until doubled in size",
+      "Tip the dough onto a lightly floured surface and knead for 5 minutes. Divide into 2, roll into lengths and place in flour-lined tins. Prove again in a warm place until doubled in size",
+      "Bake the loaves for 18-20 minutes until golden in colour and hollow-sounding when tapped on the bottom"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Two Chefs Ale",
+        "unit": "ml",
+        "notes": null,
+        "amount": "575",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain White Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "750",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granary Bread Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yeast",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "525f32f92e3807583f14177ddce37eeed794ee8de688d46c2f9c5d6a716a17bd",
+    "lineage_hash": "d87e7c4a6b349915e6b6cad90f567780febff547c57290fac7360f9b494ac387"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/ale-bread-recipe",
+    "fetchedAt": "2026-08-03T16:27:16.022Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/ale-bread-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

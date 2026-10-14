@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Dulce de Leche Coffee",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Coffee",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the dulce de leche and coffee and stir to combine. Keep hot. In a separate bowl, whisk together the cream with the sugar until stiff. Divide the coffee/dulche de leche mixture among six glasses. Top with a heaping tablespoon of whipped cream and grated chocolate. Serves 6.",
+      "Ree Drummond, author of The Pioneer Woman Cooks: Recipes from an Accidental Country Girl and The Pioneer Woman Cooks: Food from My Frontier, host of The Pioneer Woman on the Food Network and keeper of thepioneerwoman.com"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dulce De Leche",
+        "unit": "oz",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee",
+        "unit": "C",
+        "notes": "strongly brewed good",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate",
+        "unit": "Tbsp",
+        "notes": "grated",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "be5e762d165505222dfcba4cda182b1c7e8eb5e1d9c830a68266b31ba98a1eb2",
+    "lineage_hash": "ee0e2cf41d048712ebb5bf60c4c6f206be388fbd4e57ffc3e836161d2e00305c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/dulce-de-leche-coffee-recipe/",
+    "fetchedAt": "2026-08-03T18:32:23.057Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/dulce-de-leche-coffee-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

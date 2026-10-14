@@ -1,0 +1,59 @@
+{
+  "recipe": {
+    "name": "Ahumado Seco",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Ice-filled",
+    "garnish": [],
+    "subcategory": "Tequila",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Shake ingredients with ice. Strain into an ice-filled glass; garnish.\nHibiscus Agua FrescaIn a saucepan, simmer 1 cup of dried hibiscus, 1 quart of water and 2 oz. (by weight) of peeled, chopped ginger, until reduced by 2/3. Cool, then fine strain, pressing solids to release juices. Add 4 oz. of simple syrup (1:1) and 4 oz. of lemon juice. Shake and refrigerate for up to 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Mezcal",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Liqueur",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hibiscus Agua Fresca",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2a372e03dbc0b1db45912640278ee2cf2824f3f68356c761f48a60f425830cf9",
+    "lineage_hash": "7433797c19e690e9c0916bc9d5092afa8c496beaf929ba040897503def928e73"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/ahumado-seco-recipe/",
+    "fetchedAt": "2026-08-04T01:53:11.280Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/ahumado-seco-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

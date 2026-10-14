@@ -1,0 +1,95 @@
+{
+  "recipe": {
+    "name": "Brill with New Potatoes",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the potatoes in cold, salted water and bring to a gentle boil. Cook until tender, approximately 10 minutes",
+      "In a food processor, pulse together the fresh lovage and sourdough breadcrumbs to form the crust. Set aside until required",
+      "In a bowl, squeeze the wasabi into the soft cheese to taste",
+      "Place the brill under a hot grill for 3 minutes on each side. Remove and then spread the cream cheese/wasabi mixture over the top of the fish - use the back of a spoon to do so and be gentle or the fish will start to break up. Sprinkle over the flavoured breadcrumbs and place under the grill again until the crust browns",
+      "To plate, arrange the potatoes onto plates and lay the brill fillets on top. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Brill Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "New Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sourdough Breadcrumbs",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lovage",
+        "unit": "g",
+        "notes": "fresh",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tube of Wasabi",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Cream Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2543d1f900ff54262ed1e22f4e2482774a5edaa60a669b4c5bd81de59d6187f3",
+    "lineage_hash": "8859bdb3bae1dadc83ff7b8d5463ac5837783d28629210f5174268a84d214fd6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/brill-new-potatoes-recipe",
+    "fetchedAt": "2026-08-03T16:54:22.534Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/brill-new-potatoes-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

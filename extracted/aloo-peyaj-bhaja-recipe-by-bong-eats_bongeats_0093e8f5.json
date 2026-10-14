@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Aloo Peyaj Bhaja",
+    "time": "20 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "176",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "Peel and cut potatoes in 1 cm-wide sticks. Slice onions. Slit green chillies.",
+      "Heat mustard oil. Allow the oil to start smoking gently and turn pale yellow.",
+      "Temper oil with dried red chillies and kaalo jeere. Add potatoes. Add turmeric and mix. Fry on medium-high heat for 2 minutes.",
+      "Add onions and green chillies. Fry for 2 minutes.",
+      "Add salt and mix everything well.",
+      "Add sugar. This cooks in 6–8 minutes; work quickly and stir gently so that potatoes don't break. Keep frying until onions have browned and potatoes are cooked.",
+      "Serve hot with ruti."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kaalo Jeere",
+        "unit": "tsp",
+        "notes": "nigella seeds",
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Dried Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pcs Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Turmeric Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9aba727b73a7597e17724c5fde4020ff050e50190f25688282bd23f993a23f1b",
+    "lineage_hash": "e25deabbe243203a82d8fcae78225c72d1a01db2e0485df55fecb463d08dd4d4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.bongeats.com/recipe/alu-peyaj-bhaja",
+    "fetchedAt": "2026-08-01T16:35:52.056Z"
+  },
+  "rawSource": "https://www.bongeats.com/recipe/alu-peyaj-bhaja",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

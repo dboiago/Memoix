@@ -1,0 +1,133 @@
+{
+  "recipe": {
+    "name": "Buffalo Cauliflower Wings",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "280",
+      "carbohydrateContent": "42",
+      "fatContent": "11",
+      "proteinContent": "6"
+    },
+    "directions": [
+      "Prep the oven: Preheat your oven to 400°F (200°C). Line a large baking sheet with parchment paper or lightly grease it.",
+      "Set up your dredging stations:Flour coating: Add the flour to a shallow bowl.Vegan egg: In a second bowl, whisk together the ground chia or flax with warm water. Let sit for a few minutes to thicken.Cornflake crust: Add the cornflakes, garlic powder, smoked paprika, salt, and pepper to a food processor. Pulse until the texture is coarse, similar to panko breadcrumbs. No food processor? Add everything to a large zip-top bag and crush with a rolling pin until coarsely ground. Then transfer to a third bowl.",
+      "Coat the cauliflower: Rinse your cauliflower florets so they’re slightly damp. Working in batches, coat the florets first in the flour, then in the chia mixture, and finally in the cornflake coating. Press gently to help the coating stick. Arrange on the baking sheet without overcrowding.",
+      "Bake: Bake for 20 to 25 minutes, or until the cauliflower is tender and the coating is golden and crisp. You can test for doneness by piercing a floret with a knife.",
+      "Make the buffalo sauce: Stir together the melted vegan butter and hot sauce.",
+      "Serve: For maximum crispiness, serve the buffalo sauce on the side for dipping. For a more traditional version, gently toss the baked cauliflower in the sauce just before serving."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": "or gluten-free all-purpose flour blend",
+        "amount": "½",
+        "section": "Flour Coating",
+        "isOptional": false
+      },
+      {
+        "name": "Ground Chia",
+        "unit": "Tbsp",
+        "notes": "alt: ground flax",
+        "amount": "2",
+        "section": "Vegan Egg",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": "Vegan Egg",
+        "isOptional": false
+      },
+      {
+        "name": "Corn Flakes",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": "Cornflake Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cornflake Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cornflake Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Cornflake Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Cornflake Crust",
+        "isOptional": false
+      },
+      {
+        "name": "Head of Cauliflower",
+        "unit": "small",
+        "notes": "about 4 heaping cups, cut into florets",
+        "amount": "1",
+        "section": "Rest",
+        "isOptional": false
+      },
+      {
+        "name": "Frank's Red Hot",
+        "unit": "C",
+        "notes": "or similar hot sauce",
+        "amount": "½",
+        "section": "Rest",
+        "isOptional": false
+      },
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "melted",
+        "amount": "3",
+        "section": "Rest",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "febaf765d866e012b36dfe5099143ffb38d229cfd2c4ddc2b2e05c93efaec06d",
+    "lineage_hash": "af5654b117cfdbd76e26fe265cf94d4a381a484c071fc459dbffbb0bc7e1051d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/crispy-buffalo-cauliflower/",
+    "fetchedAt": "2026-08-02T06:05:44.457Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/crispy-buffalo-cauliflower/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

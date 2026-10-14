@@ -1,0 +1,75 @@
+{
+  "recipe": {
+    "name": "Clarified New York Sour",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Glass",
+    "garnish": [],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the bourbon, lemon, and simple syrup and pour over the milk in a glass container. Let sit for 30 minutes, allowing the milk to curdle. Strain the milk mixture through a coffee filter. If it’s not clear, re-pour through the same filter. To serve, pour the mixture over a large ice cube in a glass. Float with red wine."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "unit": "oz",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": null,
+        "notes": "to top",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "97b7b0719e904d9cb616c3221685e086fae8a612743b6c2150bc148a03d0ae7c",
+    "lineage_hash": "1b9f543e683eeaea4cfdeddf9cdb55c180ec9b50d1f59cf093f648c4f01a631b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/clarified-new-york-sour/",
+    "fetchedAt": "2026-08-03T22:19:26.047Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/clarified-new-york-sour/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

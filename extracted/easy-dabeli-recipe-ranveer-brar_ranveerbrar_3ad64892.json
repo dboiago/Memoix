@@ -1,0 +1,258 @@
+{
+  "recipe": {
+    "name": "Dabeli (दाबेली)",
+    "time": "45 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For dabeli masala add in all dry spices into blender & blend into fine powder. Keep aside for later use.",
+      "For filling heat oil and saute onion and hing. Add in mashed potato, dabeli masala, water, salt, sweet tamarind chutney and mix well; cook for 2-3 minutes.",
+      "When done remove filling onto a plate and spread. Top it with pomegranate pearls & coriander leaves.",
+      "For garlic chutney; add in all ingredients into a blender and blend into a smooth paste. Keep aside for later use.",
+      "In a plate add nylon sev, peanuts and coriander leaves.",
+      "Apply sweet chutney on 1 side of paav and green chutney on the other side of paav.",
+      "Stuff paav with prepared potato filling. Add some chopped onion and coriander leaves.",
+      "Top it up with peanuts and sev."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dry Kashmiri Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dabeli Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dabeli Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Dabeli Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "inch",
+        "notes": null,
+        "amount": "1",
+        "section": "Dabeli Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "Dabeli Masala",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Hing",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Medium",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "1",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Well Mashed Potato",
+        "unit": null,
+        "notes": null,
+        "amount": "3-4",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Prepared Dabeli Masala",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Tamarind Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Warm Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Pomegranate Pearls",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Potato Filling",
+        "isOptional": false
+      },
+      {
+        "name": "Soaked Kashmiri Red Chilli",
+        "unit": null,
+        "notes": null,
+        "amount": "10-12",
+        "section": "For Garlic Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "For Garlic Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "No Lime Juice",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": "For Garlic Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "To Taste Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": "For Garlic Chilli Chutney",
+        "isOptional": false
+      },
+      {
+        "name": "Buns Paav",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Red Garlic Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Sweet Tamarind Chutney",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Masala Peanuts",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Nylon Sev",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Cups",
+        "unit": null,
+        "notes": "chopped onion",
+        "amount": "¼",
+        "section": "Assembly",
+        "isOptional": false
+      },
+      {
+        "name": "Tbsp",
+        "unit": null,
+        "notes": "chopped coriander leaves",
+        "amount": "1",
+        "section": "Assembly",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7bf66ece7952bc3290ae64a77454033551cb65ad1bb42db0f09a0be36da1db78",
+    "lineage_hash": "48c276eb34832a2264d3ca7d4379c265cb7145bdd60a1703237619625c8e37d1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dabeli/",
+    "fetchedAt": "2026-08-02T10:51:56.354Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dabeli/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

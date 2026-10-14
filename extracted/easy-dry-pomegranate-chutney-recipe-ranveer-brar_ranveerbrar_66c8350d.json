@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Dry Pomegranate Chutney",
+    "time": null,
+    "course": "sauces",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl, add tomatoes, fresh mint leaves, fresh coriander leaves, ginger, green chillies, dry pomegranate pearls, salt to taste, onion, oil and give it a good mix.",
+      "Transfer it into the mixer grinder jar and grind it into a smooth fine paste."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "unit": "large",
+        "notes": "diced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": "C",
+        "notes": "roughly chopped",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "inch",
+        "notes": "peeled & roughly chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "No. Green Chillies",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "4-5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heaped Tbsp Dry Pomegranate Seeds",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onion",
+        "unit": "medium",
+        "notes": "cut into half",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fa919401edd7e15b2b04616613b4363ae78c90ca6a80263162c52d035458da7b",
+    "lineage_hash": "d3ceb120aea9b63dc374b7cc0ae951e58a112f1d47d8120c2f59e0e77aa7fda6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/dry-pomegranate-chutney/",
+    "fetchedAt": "2026-08-02T21:05:12.154Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/dry-pomegranate-chutney/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

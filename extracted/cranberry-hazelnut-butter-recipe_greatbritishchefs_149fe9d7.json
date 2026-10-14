@@ -1,0 +1,70 @@
+{
+  "recipe": {
+    "name": "Cranberry Hazelnut Butter",
+    "time": "15 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Pour the hazelnuts onto a baking tray and toast in the oven for about 7 minutes or until golden and shiny",
+      "Transfer the nuts to a high-powered blender while the nuts are still warm. This is important as the natural oils released by toasting them will help to emulsify the butter without having to add any additional fat",
+      "Blend on a low speed for about 5 minutes until it starts to resemble a nut butter consistency. Keep an eye on your blender, you may need to switch off in intervals to give the motor a break if the machine gets too hot",
+      "Stir in the cinnamon, salt and dried cranberries. Store in airtight jars in the fridge for up to a month"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Blanched Hazelnuts",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cranberries",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "130",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c0120865de3347b7f0659935a21340ead44a1373f12ba9e09324e6ec80986bc",
+    "lineage_hash": "c52f38866edbe99c3fbe0d130cb7d58290d7368610ed860322dfd65834023250"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cranberry-hazelnut-butter-recipe",
+    "fetchedAt": "2026-08-03T10:20:21.234Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cranberry-hazelnut-butter-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

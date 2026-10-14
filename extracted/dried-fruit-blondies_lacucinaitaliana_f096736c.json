@@ -1,0 +1,117 @@
+{
+  "recipe": {
+    "name": "Dried Fruit Blondies",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a food processor, roughly chop the almonds, walnuts, and hazelnuts together with the powdered sugar. Mix them with the chopped dates, and then the flour.",
+      "Beat the egg whites together with the brown sugar and the granulated sugar; add in the dried fruit mixture, then pour everything into a baking pan lined with a buttered and floured sheet of parchment paper.",
+      "The baking pan’s edges should be at least 3/4-inch high; you can also use a disposable aluminum tray lined with parchment paper. Bake at 340°F for 40 minutes: do not open the oven while it is baking, otherwise it will sag and collapse. Remove it from the oven and let it cool off a bit; remove the blondie from the tray and let it cool completely on a grate, then cut it into squares."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Almonds",
+        "unit": "lb",
+        "notes": "shelled and unpeeled",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Powdered Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dates",
+        "unit": "oz",
+        "notes": "dried, pitted",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flour",
+        "unit": "C",
+        "notes": "plus extra",
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hazelnuts",
+        "unit": "oz",
+        "notes": "peeled and toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shelled Walnuts",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bfb63bed025d25d21797350b29dff47f1923dbb1f66fffe01f1e5787f7c2dbf2",
+    "lineage_hash": "c2b9768fd7ffe82371db8757fe88939c372c2b730aa1c18868ce977407c8d43b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/dried-fruit-blondies",
+    "fetchedAt": "2026-08-02T01:41:05.006Z"
+  },
+  "rawSource": "https://www.lacucinaitaliana.com/recipe/cakes-and-desserts/dried-fruit-blondies",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

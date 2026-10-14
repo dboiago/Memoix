@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Beetroot khandvi",
+    "time": "40 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a bowl add gram flour, curd, beetroot juice, water, salt, ginger-green chilli paste and mix everything properly, then strain it through a strainer .",
+      "Now pour in a kadai and cook on medium low heat until thickened and stir it continuously while cooking.",
+      "Once thickened properly, quickly add some mixture on a flat surface and spread it thin.",
+      "Then sprinkle some grated coconut, sesame seeds, julienned beetroot and roll it up",
+      "Keep in the serving plate and pour hot tempering on it and serve warm and garnish with coriander leaves.",
+      "In a pan heat oil, then add sesame seeds, mustard seeds, curry leaves, dry red chillies, asafoetida, curry leaves and saute for a minute."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Gram Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Curd",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger-green Chillies Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut – Grated",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Beetroot",
+        "unit": "small",
+        "notes": "julienned",
+        "amount": "¼",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "For Stuffing",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Mustard Seeds",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Dry Red Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "2-3",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Asafoetida",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Curry Leaves",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": "For Tempering",
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Leaves",
+        "unit": null,
+        "notes": "fresh",
+        "amount": "0",
+        "section": "For Garnish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "812d349313bb3ce4f2c60e3215f61e391c9cf357157aa456f8788a657fd29418",
+    "lineage_hash": "cff8674bc0b36b31fe139de973b411442d8cdee143713a3471d4a7a816a2ef64"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/beetroot-khandvi/",
+    "fetchedAt": "2026-08-02T05:45:44.367Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/beetroot-khandvi/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

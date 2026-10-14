@@ -1,0 +1,92 @@
+{
+  "recipe": {
+    "name": "Coconut Macaroon Easter Eggs",
+    "time": "1 hr 20 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "24",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "91",
+      "carbohydrateContent": "12",
+      "fatContent": "5",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Preheat the oven to 350 °F. Line a 1/2 sheet pan with parchment paper or a silicone baking mat.",
+      "Whisk 3 egg whites until soft peaks form, slowly add 3 ounces granulated sugar and whip to full peak. Add 1/8 teaspoon table salt and 1 teaspoon vanilla extract to the egg whites. Fold 14 ounces sweetened coconut flakes into the egg whites, making sure to break up any clumps.",
+      "Scoop the dough into egg size portions using a small cookie scoop or soup spoon. Gently form the cookie into an egg shape. Don't compact the dough too much. Moisten your hands with a little water if the dough is sticking.",
+      "Place the cookies on the prepared baking sheet. Bake for 10 minutes and then slide a second pan under the cookies to keep the bottoms from over-browning. Bake another 10 minutes until lightly golden brown and the cookies bounce back when you squeeze gently. Transfer the parchment with the cookies to a cooling rack.",
+      "Use a wooden skewer to poke a hole on one end of a cookie. Gently wiggle the skewer to open up a cavity in the cookie, being careful not to crack the cookie. Fill a pastry bag fitted with a small round tip (Bismark tip is the best) with 3/4 cup passion fruit curd tinted with egg yellow coloring. Fill each cookie."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Egg Whites",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "⅓ cup",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Coconut Flakes",
+        "unit": "oz",
+        "notes": null,
+        "amount": "14",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passion Fruit Curd Tinted with Egg Yellow Coloring",
+        "unit": "C",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eb78c4dd64be8aa89ee1aed2918e75e7f0df99a6ef0b9f40e948c2b8048af0bd",
+    "lineage_hash": "ad3a41ceaf668a86b043763d2953f9f21e6fcaed9071d4a68a16f60a18498109"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2015/03/26/coconut-macaroon-easter-eggs/",
+    "fetchedAt": "2026-08-01T23:04:01.042Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2015/03/26/coconut-macaroon-easter-eggs/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

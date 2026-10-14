@@ -1,0 +1,189 @@
+{
+  "recipe": {
+    "name": "Duck Liver Parfait",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Two days before serving, soak the duck livers in the milk and water with a good pinch of salt - this will help to reduce any bitterness",
+      "The day before serving, start making the terrine. Slice the shallots, crush the garlic and place both in a wide pan with the fresh rosemary, sprigs of thyme, bay leaves, brandy, port and Madeira. Heat gently, reducing down until you have approximately 100ml remaining and then pass through a fine sieve",
+      "Slowly melt the butter in a small pan",
+      "Drain the duck livers, rinse off then dry off and excess liquid. Using a high-powered liquidiser, place half of the livers, half of the reduction and half of the butter in the liquidiser",
+      "Blend the mix until very smooth, then pass through a fine sieve. Repeat again with the remaining duck livers, reduction and butter",
+      "Season well with salt and white pepper and taste a small amount of the mix to ensure that it is seasoned correctly - note that it should be slightly over-seasoned as it will be served at room temperature",
+      "Line a 2 pint terrine mould with cling film that has been lightly oiled on both sides. Pour the mix in - it should come just to the top",
+      "Bake the terrine in a bain marie in the oven for 50 minutes. To check it is done, insert a temperature probe - the parfait should be 63°C in the centre",
+      "Once cooked, remove from the oven, allow to chill and then refrigerate overnight",
+      "To serve, unmould the duck liver parfait, slice off the ends and discard. Slice off a 1cm thick slice and place on a small slate or starter plate",
+      "Slice the smoked duck breast on an angle and lay over the duck liver parfait. Serve with warm toast and chutney"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Liver",
+        "unit": "kg",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "475",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rosemary",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Madeira",
+        "unit": "ml",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bread",
+        "unit": "slices",
+        "notes": "toasted",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chutney",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f6caafb840cd0e6d7d7a1b9421474e7bd118235a00847464afe499a0e77c6245",
+    "lineage_hash": "116d5afa5e9c44134e2c8d4886398cc73df6abb3cf45a63d7ad2d907848c2db9"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-liver-parfait-recipe-smoked-duck",
+    "fetchedAt": "2026-08-03T21:41:22.316Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-liver-parfait-recipe-smoked-duck",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

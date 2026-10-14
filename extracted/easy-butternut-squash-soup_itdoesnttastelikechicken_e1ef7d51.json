@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Easy Butternut Squash Soup",
+    "time": "45 min",
+    "course": "soup",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "171",
+      "carbohydrateContent": "24",
+      "fatContent": "9",
+      "proteinContent": "3"
+    },
+    "directions": [
+      "Melt the vegan butter in a large soup pot, add the onions and garlic and sauté until the onions turn translucent and begin to brown, about 5 minutes.",
+      "Add the cubed squash, vegetable broth, salt, sage, nutmeg, and pepper. Cover and bring to a boil, reduce to simmer and cook until the squash is fork tender, 15 - 25 minutes.",
+      "Working in batches, carefully transfer the soup to a blender, being careful not to overfill the blender so that it doesn’t erupt. Blend until completely smooth and creamy. Alternatively, an immersion blender will work in a pinch, but I generally prefer a standing blender as it usually does a better job of making the soup super smooth and creamy.",
+      "Return the blended soup to the pot, and bring it back to a gentle simmer. Stir in the coconut milk if using. Serve hot with an extra drizzle of coconut milk if desired."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vegan Butter",
+        "unit": "Tbsp",
+        "notes": "or sub olive oil",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Yellow Onion",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced or pressed",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butternut Squash",
+        "unit": "medium",
+        "notes": "about 3 lbs, no need to peel it, cleaned, seeded, and cubed",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Broth",
+        "unit": "C",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": "or to taste",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Sage",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutmeg",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Full-fat Coconut Milk",
+        "unit": "C",
+        "notes": "optional, for extra creaminess",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "879b0706c4a5597cd2aca6f2e5459073c6b89fa9fb6f0f964eaa23fc7a4512c8",
+    "lineage_hash": "4bbcce20f6e18140d9bc1e2c5c7812eec90e475d3d2bffb2e20d63a1c1dc43d0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/easy-butternut-squash-soup-recipe-vegan/",
+    "fetchedAt": "2026-08-02T02:22:45.654Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/easy-butternut-squash-soup-recipe-vegan/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,96 @@
+{
+  "recipe": {
+    "name": "Amla Sherbat (अमला शरबत)",
+    "time": "25-30 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "IN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a wet grinder, combine chopped amla and ginger, add 2 tbsp water and blend to as much as possible fine puree.",
+      "Now pass the puree through muslin cloth and squeeze out the all the possible juice out of it. Keep the juice aside.",
+      "Now heat water in a pan, add sugar and mix well. When it is completely dissolved and a white froth forms, immediately add amla juice and lemon juice. Mix well and cook for 2mins.",
+      "Add rock salt, roasted cumin powder and mix well. Turn off the flame and let it cool completely.",
+      "Store in air tight container in refrigerator.",
+      "When serving, put 1 tbsp of amla mixture in the glass and pour chilled water."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Amla/lindian Gooseberry",
+        "unit": "C",
+        "notes": "de seeded & chopped",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger",
+        "unit": "Tbsp",
+        "notes": "roughly chopped",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "C",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "C",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Roasted Cumin Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0107a9437902cb8d5b270373733acc6e5a90f49da53c1cdd35569df6ab545000",
+    "lineage_hash": "0f809a65b080a69314cbef000548216a3399b5e8b0504506b19371098d882d17"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://ranveerbrar.com/recipes/amla-sherbat/",
+    "fetchedAt": "2026-08-02T08:26:03.383Z"
+  },
+  "rawSource": "https://ranveerbrar.com/recipes/amla-sherbat/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

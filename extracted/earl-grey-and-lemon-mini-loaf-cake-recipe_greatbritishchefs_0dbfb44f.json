@@ -1,0 +1,123 @@
+{
+  "recipe": {
+    "name": "Earl Grey and Lemon Mini Loaf Cake",
+    "time": "1 hr 15 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, place the milk in a small saucepan and bring to a simmer. Take it off the heat and immerse the Earl Grey tea bags in the hot milk. Cover the pan and set aside for 40 minutes",
+      "Squeeze the teabags out of the liquid and set aside to cool some more",
+      "Preheat the oven to 180°C/gas mark 4. Grease and line 8 mini loaf tins with a strip of baking paper along the base",
+      "Cream the butter and sugar together using an electric whisk or free standing mixer with a paddle attachment. It takes a while – about 10 minutes and you’ll need to scrape down the sides of the bowl from time to time",
+      "When it’s light and fluffy add the eggs one by one and mix well. Add half of the flour and half of the tea-infused milk and mix until combined. Add the rest of the flour and milk and mix until there are no traces of flour in the bowl",
+      "Divide the mixture between the mini loaf tins. They should be approximately two thirds full",
+      "Bake them for 25 minutes until golden brown. To check that they are cooked all the way through, insert a cocktail stick into the centre of each one. If it comes out clean they are ready. Set them on a wire rack to cool",
+      "To make the icing, mix the lemon juice, zest and icing sugar together into a smooth paste. It should be quite gloopy so it doesn’t dribble too much down the sides (though a little dribble is okay)",
+      "Pour over the loaves and leave the icing to set for about 30 minutes. Decorate with sugar flowers (optional) and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Earl Grey Tea Bags",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "soft",
+        "amount": "115",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "225",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Self-raising Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juice and zest of",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar Flowers",
+        "unit": null,
+        "notes": "optional",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1a67deabe5f8ec1cb6106e8968a5626b3d07a0831a690f19e90d3950f1d5a7a9",
+    "lineage_hash": "02819703ba6d59cba038aa60bbcab21a38fc621dfed4f48ea38effce97840509"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/earl-grey-lemon-loaf-cake-recipe",
+    "fetchedAt": "2026-08-03T15:16:30.942Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/earl-grey-lemon-loaf-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

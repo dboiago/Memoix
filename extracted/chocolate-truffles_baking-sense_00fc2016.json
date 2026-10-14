@@ -1,0 +1,87 @@
+{
+  "recipe": {
+    "name": "Chocolate Truffles",
+    "time": "48 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "36",
+    "source": "scraped",
+    "cuisine": "FR",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "62",
+      "carbohydrateContent": "3",
+      "fatContent": "5",
+      "proteinContent": "1"
+    },
+    "directions": [
+      "Chop the chocolate into small pieces, none larger than 1/2\" or chop roughly and finish chopping in a food processor. Place the butter in a large, heatproof bowl with the chopped chocolate.",
+      "Pour the cream into a microwave safe bowl or measuring cup and heat until scalding. You want to get the cream as hot as you can without it boiling over. The time will depend on your microwave. Estimate 2-3 minutes for a cup of cream.",
+      "Pour the cream all at once over the chocolate. Do not stir for 2-3 minutes to allow the chocolate to begin melting",
+      "Gently stir, trying not to incorporate any air, until all the chocolate bits are melted.",
+      "Stir the optional liquor into the ganache then set it aside to cool completely at room temperature. Once the ganache is set at room temperature, chill for several hours before forming the truffles.",
+      "Use small scooper or teaspoon measure to scoop 1\" balls of ganache. Line them up on a tray. If they start to get too soft chill before proceeding.",
+      "Roll each truffle in traditional cocoa, sprinkles or your choice of topping.",
+      "Continue coating all the truffles, line them up on pan lined with clean parchment and store at cool room temperature for 1-2 days. Refrigerated for a week or frozen for a month. Serve at room temperature."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Semi Sweet Chocolate",
+        "unit": "oz",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Heavy Cream",
+        "unit": "oz",
+        "notes": "1 cup",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "1 tablespoon",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Rum",
+        "unit": "oz",
+        "notes": "liquor of your choice or optional",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chocolate Sprinkles",
+        "unit": "C",
+        "notes": "or your choice of toppings",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "dcd6788c99440fb789f6fc117b59b8bf0b477b88d6d797e5459979f458d23532",
+    "lineage_hash": "77d50d46b829addf4edfee55bf13a2c5c54efc04cbffe754a35d303cffcdbf09"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2022/11/08/homemade-chocolate-truffles/",
+    "fetchedAt": "2026-08-02T06:41:45.227Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2022/11/08/homemade-chocolate-truffles/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

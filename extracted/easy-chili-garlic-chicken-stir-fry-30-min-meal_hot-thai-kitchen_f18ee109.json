@@ -1,0 +1,136 @@
+{
+  "recipe": {
+    "name": "Chili Garlic Chicken Stir Fry",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "TH",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "267",
+      "carbohydrateContent": "6",
+      "fatContent": "13",
+      "proteinContent": "30"
+    },
+    "directions": [
+      "Mix the chicken thighs with the fish sauce and sugar; let sit while you prep other ingredients.",
+      "If using large chili flakes or whole chilies, blitz them in a coffee grinder to turn them into finer flakes.",
+      "Make the sauce by combining the oyster sauce, Golden Mountain sauce, water, and sugar, and stir to dissolve the sugar.",
+      "Heat the wok over high heat until very hot, then add just enough oil to coat the bottom. Add the chicken and spread it out into one layer and let it sear for about 2 minutes until the underside is brown. Give the chicken a flip so most pieces are turned over (don't worry about every piece), and let them cook on the other side for another 2 minutes, stirring occasionally, until the chicken is fully cooked.",
+      "Remove the chicken from the pan, leaving all of the oil and juices behind.",
+      "In the same wok, with the heat still off, add the garlic. Turn the heat on medium and saute the garlic until they start to turn golden. Add the chili flakes and stir for about 30 seconds until the chilies smell toasty and are darkened slightly, adding more oil if it looks dry.",
+      "Once the chilies are toasted, immediately add the sauce (do this quickly as the chilies burn fast) and stir to mix. Let the sauce simmer for 15-30 seconds until it is reduced slightly.",
+      "Add the chicken back in, along with all the collected juices, and toss the chicken in the sauce until all the pieces are coated. If there's a lot of sauce pooling, keep cooking to dry it out a bit. There will be some oil pooling, but most of the sauce should be reduced enough to coat the chicken pieces.",
+      "Plate, and top with chopped green onions, cilantro or some Thai basil leaves, if desired. Enjoy with jasmine rice!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Chicken Thighs",
+        "unit": "lb",
+        "notes": "boneless, skinless, cut into ½ inch strips, halve the strip if long",
+        "amount": "1.3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fish Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Flakes",
+        "unit": "tsp",
+        "notes": "alt: chili powder, see note 1, mild to medium",
+        "amount": "3-4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "chopped",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": null,
+        "notes": "chopped, cilantro or Thai basil leaves, for garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Mountain Sauce",
+        "unit": "Tbsp",
+        "notes": "alt: soy sauce, see note 2",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "73fe066e7804dd095dc8334a7120a3f305d4a40f4e769eca683f834995beff3b",
+    "lineage_hash": "353ad995463414e2178a347788f6f1b842e9676b91de99ba7fc07d49e1d5f68c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://hot-thai-kitchen.com/chili-garlic-chicken/",
+    "fetchedAt": "2026-08-02T02:45:08.596Z"
+  },
+  "rawSource": "https://hot-thai-kitchen.com/chili-garlic-chicken/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

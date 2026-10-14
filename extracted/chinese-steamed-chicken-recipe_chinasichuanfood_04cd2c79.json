@@ -1,0 +1,137 @@
+{
+  "recipe": {
+    "name": "Chinese Steamed Chicken",
+    "time": "30 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "445",
+      "carbohydrateContent": "4",
+      "fatContent": "32",
+      "proteinContent": "32"
+    },
+    "directions": [
+      "Clean the chicken and then spread the marinating sauce evenly on both sides.",
+      "Lay ginger shreds and green onion shreds over to marinate at least 30 minutes. Then place in your steamer. I am using the steamer of my electric rice cooker. If you are using a steamer with wok or pot, steam with high fire around 20 minutes until soft (or you can easily insert a chop sticker in). Transfer out and cut into chunks of your favorite size. Decorate with green onions."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "A Whole Chicken",
+        "unit": null,
+        "notes": "around 1 and 1/2 pound",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ginger Shreds",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Onion Shreds",
+        "unit": "Tbsp",
+        "notes": "white part",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Cooking Wine",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "Marinating sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Green Onions",
+        "unit": "Tbsp",
+        "notes": "chopped",
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Dip sauce",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d4c3e15d18da99b2fa2795a3636d652387cbe53a33da53bc734cf7c19a510378",
+    "lineage_hash": "75ebe8ba48ef819bcd4629d89a07de1dda2dd7fc26b8d5592f489c668f79e246"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-steamed-chicken-recipe/",
+    "fetchedAt": "2026-08-01T21:32:31.352Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-steamed-chicken-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Confleur's Piña Colada",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Hurricane",
+    "garnish": [
+      "Pineapple Leaf"
+    ],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine all the ingredients in an ice-filled cocktail shaker and shake to chill. Strain into a hurricane glass filled with pebble ice, then garnish with pineapple leaf."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bumbu Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spiced Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coconut Cream",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7cec1602825fdb6b005a5cb23cd185fe6817331c7032804d3120676cce8533ee",
+    "lineage_hash": "4bc29cdb23e6e90c56f89a23a5767714c3b94f202da8086d278d85577bccdf5e"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/confleurs-pina-colada/",
+    "fetchedAt": "2026-08-03T19:25:00.394Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/confleurs-pina-colada/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

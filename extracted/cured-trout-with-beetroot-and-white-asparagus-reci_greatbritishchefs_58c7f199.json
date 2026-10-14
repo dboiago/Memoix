@@ -1,0 +1,217 @@
+{
+  "recipe": {
+    "name": "Cured Trout with Beetroot and White Asparagus",
+    "time": "50 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the trout the day before you plan to serve, as it takes 12 hours to cure which can be done overnight. Place the fennel, spices, dill and sake into a blender and blitz until smooth. Add the sugar and salt to the mixture and briefly mix them in. Pour half your curing mix onto a large tray and place the trout on top. Pour the remaining mix on top of the fish and tightly cover the tray in clingfilm. Put the tray in the fridge and allow the trout to cure for twelve hours",
+      "Also on the day before, prepare the basil oil. Add the basil leaves (reserve the stalks for the sauce) and the vegetable oil to a pan and warm to around 50°C. Transfer to a blender and blitz for 3 minutes. Prepare a large bowl of ice and place a smaller bowl on top, then line a sieve with a piece of muslin cloth (or a j-cloth) and place this on top of the bowl. Pour the blitzed oil into the muslin and transfer everything to the fridge to strain overnight",
+      "The next day, remove the fish from the marinade and rinse it for five minutes under cold water. Dry the trout on kitchen paper, cut into six portions and set aside in the fridge until ready to serve",
+      "To prepare the beetroots, rinse well then place them in a large pot. Cover the beetroots with cold water and add the thyme, the garlic and a pinch of salt. Bring the water to the boil and then reduce to a simmer. Cook the beetroots for 20 minutes or until tender, then drain and allow to cool",
+      "While the beetroot cook and cool, get on with the white asparagus sauce. Add the butter, reserved basil stalks, white pepper and a pinch of salt to a pan along with 200ml of water. Bring to a simmer and then add the white asparagus. Cook the asparagus for 4-5 minutes or until tender then remove the pan from the heat. Discard the basil stalks, transfer the contents of the pan to a blender and blitz until smooth. Pour into a bowl set over ice to chill quickly",
+      "Once the beetroot are cool enough to handle, rub the skins off and slice into discs. You now have all the elements needed to assemble the dish – if making them in advance, ensure you take them out of the fridge for around 30 minutes before serving",
+      "When ready to serve, place a piece of trout on each serving dish, brushing with rapeseed oil to shine up the surface and season with a crack of black pepper. Arrange slices of beetroot alongside, add small piles of caviar to the beetroot, then garnish with jasmine flowers. Pour the asparagus sauce into a jug, then add enough basil oil to split it. Bring the plates to the table and pour the sauce into each dish in front of your guests"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Side of Trout",
+        "unit": null,
+        "notes": "ideally Chalkstream trout, weighing approx. 1kg, skinned and pinboned",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": null,
+        "notes": "small, chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dill",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sake",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": null,
+        "notes": "for brushing",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baby Beetroot",
+        "unit": "g",
+        "notes": "ideally a mix of golden and candy",
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprigs",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caviar",
+        "unit": null,
+        "notes": "to garnish (Stuart uses Exmoor caviar)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Edible Flowers",
+        "unit": null,
+        "notes": "to garnish (Stuart uses jasmine flowers)",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil",
+        "unit": "g",
+        "notes": "leaves and stalks separated",
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "165",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Asparagus Spears",
+        "unit": null,
+        "notes": "chopped",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "bbc116a62bb7293edc00b7c90440ffe8ac8d9078663983b1ad5f345690aae76d",
+    "lineage_hash": "256a7a2bff3143ef93ed874b82e18a1e944de62002b3a164b27ad31e5ca56e1c"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cured-trout-beetroot-asparagus-recipe",
+    "fetchedAt": "2026-08-02T22:52:25.109Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cured-trout-beetroot-asparagus-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

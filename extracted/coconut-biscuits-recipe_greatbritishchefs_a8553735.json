@@ -1,0 +1,107 @@
+{
+  "recipe": {
+    "name": "Coconut Biscuits",
+    "time": "35 min",
+    "course": "standalone",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 175°C/gas mark 4",
+      "Line a baking tray with baking parchment",
+      "In a large mixing bowl, combine the flour, sugar, coconut and oats, blending well",
+      "In a small pan, melt the butter and golden syrup over a low heat",
+      "In a small bowl, dissolve the bicarbonate soda in the 2 tbsp of boiling water. Combine with the golden syrup and butter",
+      "Make a well in the centre of the dry ingredients, pour in the warm golden syrup mixture, mixing well to form a dough",
+      "Separate the mixture into balls. Place the balls onto a baking tray and press down slightly to flatten into cookies",
+      "Place into the preheated oven for 15-20 minutes until the biscuits are golden",
+      "Once baked, remove and place straight onto a wire rack to cool. Serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Jumbo Rolled Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Light Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Desiccated Coconut",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bicarbonate of Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": "boiling",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1930f63c0345b93da2df5f50d78cfd81bb4ff6e061e73487f5d446b183302044",
+    "lineage_hash": "11745f658e7ae4d6e51908414904d6512ae3503467a25e80a05b0cb38c9e7646"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coconut-biscuit-recipe",
+    "fetchedAt": "2026-08-03T17:03:21.533Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coconut-biscuit-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

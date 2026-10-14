@@ -1,0 +1,261 @@
+{
+  "recipe": {
+    "name": "Cobnut Apple Crumble with Elderberry Sorbet",
+    "time": "3 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4 and line a terrine or loaf tin with greaseproof paper",
+      "To make the pressed apple, peel and core the apples and slice them very thinly on a mandolin. Toss the apple slices in the melted butter and pectin (if using) and layer them neatly and evenly in the tin. Cover with foil and bake for 1 hour",
+      "Meanwhile, make the sorbet. Put the elderberries, water and glucose into a saucepan and bring to a simmer. Mix the sugar with the stabiliser and add to the fruit mixture to dissolve, then transfer to a blender and blitz to a smooth purée",
+      "Squeeze the excess water from the gelatine before adding to the purée along with lemon juice. Pass the mixture through a fine sieve. Leave to cool before churning in an ice cream machine until set. Transfer to a suitable container and freeze until ready to serve",
+      "Remove the foil and replace with a piece of parchment paper. Firmly press the apples down before returning to the oven and continue to cook for another hour or until lightly coloured and completely soft",
+      "To make the cobnut cream, bring the cobnuts, milk and cream to the boil and simmer for 5 minutes. Remove from the heat and cover the pan with cling film, leaving to infuse for 1 hour",
+      "Remove the apple from the oven and leave to cool a little, then place a weight on top to press and refrigerate for at least 2 hours",
+      "For the cobnut cream whisk the yolks, sugar and cornflour together until pale, then add the infused milk to the pan, discarding the cobnuts. Bring up to the boil, stirring continuously, and simmer for 2 minutes until thickened. Pour into a blender and blitz to a smooth cream, then pass through a fine sieve and transfer to a piping bag. Refrigerate until ready to serve",
+      "Place the blackberries into a pan with the water and warm through until they just start to soften and release their juice, taking care not to overcook or allow the fruit to become mushy",
+      "To make the cobnut crumble mix all the dry ingredients together and, using your fingers, rub the butter in to the mixture, leaving it fairly lumpy. Spread evenly across a lined baking tray and bake for 12 minutes or until crisp and golden",
+      "To serve, turn out the apple, remove the parchment and cut into neat slices. Place a slice on each plate with 5 blackberries, juice from the pan and a few dots of cobnut cream. Put a scoop of sorbet on top of the apple, sprinkle the crumble and garnish with a few wild sorrel leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cox’s Orange Pippin Apples",
+        "unit": null,
+        "notes": "or braeburn apples",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "melted",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": "optional",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Liquid Glucose",
+        "unit": "g",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Super Neutrose",
+        "unit": "g",
+        "notes": "stabiliser",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "soaked in cold water to bloom",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnut",
+        "unit": "g",
+        "notes": "roasted and skinned",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "from large eggs",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Muscovado Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cobnuts",
+        "unit": "g",
+        "notes": "skinned and chopped",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jumbo Porridge Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sorrel Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "b6e2bbd6071b98718e10dba2c089160808aa00a34d5a90327d910d5a04ac0c5f",
+    "lineage_hash": "db5a44336a11b6ba94d64d91cbfae2a0bdda8c63f85ac2a4c662d86a77a04aa3"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cobnut-apple-crumble-recipe",
+    "fetchedAt": "2026-08-03T13:31:12.439Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cobnut-apple-crumble-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

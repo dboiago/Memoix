@@ -1,0 +1,177 @@
+{
+  "recipe": {
+    "name": "Aubergine, Green Chilli and Fish Claypot",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Slice the aubergines in half lengthways, before cutting into 3-4cm chunks – you should end up with around 8–10 pieces. Slice the chillies in half and cut into 1-2cm chunks, then pick the coriander leaves and finely chop the stalks. Take care to keep the chillies and coriander separate",
+      "Mix together all the ingredients for the marinade in a small bowl and add the fish, massaging the marinade into each piece",
+      "In a separate bowl, mix together all the ingredients for the sauce",
+      "Place a frying pan or wok over a medium heat and massage around 1.5 tablespoons of sesame oil into the pieces of aubergine. Once hot, add the aubergine to the pan flesh-side down and cook for 3–4 minutes. Continue to cook on all sides until well charred, then remove from the heat and set aside",
+      "Place the same pan or wok back over a high heat and add the remaining sesame oil. Once smoking hot, carefully place the marinated fish into the hot oil. Baste the fish with the oil, taking care not to move the pieces too much – you're looking to just sear them. Continue to do this for 1-2 minutes to crisp up the fish, then drain in a sieve set over a heatproof bowl to drain off any excess oil (being sure to reserve the oil)",
+      "Place a claypot or heavy-bottomed pan over a high heat. Add a tablespoon of the reserved oil and, once hot, add the chillies, ginger and garlic, immediately followed by the aubergine and coriander stalks. Cook for 2-3 minutes, then pour the sauce into the pot. Bring to a vigorous boil, then add the chicken stock and turn the heat down to medium-low. Leave to simmer for 10 minutes",
+      "Add the seared fish and bring back to a high heat. Boil vigorously for 3-5 minutes, then scatter with coriander leaves and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Knob of Ginger",
+        "unit": null,
+        "notes": "the size of half a thumb, peeled and finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Fish",
+        "unit": "g",
+        "notes": "cut into 4-5cm chunks",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aubergines",
+        "unit": null,
+        "notes": "ideally Chinese aubergines, or 1 regular aubergine",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": null,
+        "notes": "to garnish",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fermented Chilli Bean Paste",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Rice Vinegar",
+        "unit": "tsp",
+        "notes": "Chinkiang vinegar",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "6c7180020aab69dc8b91917a2722941785753e2f8bd7341cd97a6ab91cb407ee",
+    "lineage_hash": "ff19617eda14e7fd4f580264d3a0c38a20894ca31a0d67fabaa4ccbbe868bd31"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/aubergine-fish-claypot-recipe",
+    "fetchedAt": "2026-08-03T05:16:28.603Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/aubergine-fish-claypot-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

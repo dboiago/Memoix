@@ -1,0 +1,168 @@
+{
+  "recipe": {
+    "name": "Cured Sea Trout with Pickled Kohlrabi and Parsley",
+    "time": "45 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Make a pickle liquor for the kohlrabi by bringing the sugar, vinegar and water to the boil. Remove from the heat and allow to cool",
+      "Thinly slice the kohlrabi to about 1mm thickness using a mandoline, then pour over the pickle liquor, cover and leave in the fridge for 3 days",
+      "For the parsley emulsion, start by making the parsley oil. Heat the vegetable oil to around 75ºC, then pour into a blender along with the parsley. Blend for about 8 minutes until the oil is as smooth as possible, then strain through a double layer of muslin cloth overnight in the fridge",
+      "Blend together the egg yolk, mustard and cider vinegar as you would to make a mayonnaise, then gradually add 250ml of the cold parsley oil whilst blending to make the parsley emulsion. Season and store in a squeezy bottle ready for plating",
+      "For the trout, clean and trim the fish and coat in the sugar and sea salt. Place in the fridge to cure for 4 hours, then rinse off the salt and dice the trout into small cubes",
+      "To plate, dress the trout in a little parsley emulsion, sliced chives, lime juice and zest, and fill the kohlrabi with the mixture to make little parcels. Place five parcels on a plate along with five dots of the parsley emulsion. Dress the plate with some of the leftover pickle juice, a little bit of sea salt, extra parsley oil and a few sprigs of dill"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Kohlrabi",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Trout",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sea Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Parsley",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dijon Mustard",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cider Vinegar",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chives",
+        "unit": "bunch",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fronds of Fresh Dill",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flaky Sea Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fed9eefd115313aad2b38eb75b8701990050ecd34bfe5684ca688a66e19a1a61",
+    "lineage_hash": "f44ac1de8c017aefd07dfbe5ba700a59f2b6772234192fe35ebb0b3dfec9c026"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/sea-trout-kohlrabi-parsley-recipe",
+    "fetchedAt": "2026-08-03T05:26:11.718Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/sea-trout-kohlrabi-parsley-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

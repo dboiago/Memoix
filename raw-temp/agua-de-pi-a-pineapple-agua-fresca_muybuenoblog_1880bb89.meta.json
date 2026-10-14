@@ -1,0 +1,47 @@
+{
+  "url": "https://muybuenoblog.com/agua-de-pina-pineapple-cooler/",
+  "slug": "agua-de-pi-a-pineapple-agua-fresca_muybuenoblog_1880bb89",
+  "title": "Agua de Piña (Pineapple Agua Fresca)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T05:39:08.102Z",
+  "ldName": "Agua de Piña (Pineapple Cooler)",
+  "ldTime": "PT8M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT3M",
+  "ldYield": [
+    "14",
+    "14 cups"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Drinks",
+  "ldKeywords": "agua fresca recipes, Mexican fruit water, pineapple cooler recipe",
+  "ldIngredientsRaw": [
+    "Light simple syrup (1 cup of granulated sugar and 2 cups of water)",
+    "2  ripe pineapples (cubed)",
+    "8 cups water"
+  ],
+  "ldInstructionsRaw": [
+    "Simple Syrup:",
+    "Agua de Piña:"
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "65 kcal",
+    "sugarContent": "13 g",
+    "sodiumContent": "8 mg",
+    "fatContent": "1 g",
+    "saturatedFatContent": "1 g",
+    "carbohydrateContent": "17 g",
+    "fiberContent": "2 g",
+    "proteinContent": "1 g",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ Light simple syrup, 1 cup of granulated sugar and 2 cups of water",
+    "▢ 2 ripe pineapples, cubed",
+    "▢ 8 cups water"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

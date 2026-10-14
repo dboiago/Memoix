@@ -1,0 +1,330 @@
+{
+  "recipe": {
+    "name": "Duck Breast with Fig",
+    "time": "3 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "2",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Rub the salt and five spice into the duck legs and leave overnight in the fridge",
+      "Wipe the excess salt off the legs and put into an oven proof dish. Cover with the duck fat and place into the oven for 2 hours 30 minutes. Leave to cool in the fat",
+      "For the fig purée, bring all the ingredients to the boil in a small saucepan and cook for 3 minutes. Transfer the mixture to a blender and blitz until smooth. Pass through a fine sieve",
+      "For the fennel powder, put the fennel seeds on a baking tray and cook for 7-8 minutes until toasted, blitz to a coarse powder in a spice blender or chop by hand",
+      "To make the duck sauce preheat the oven to 180c. Roast the duck bones for 30-40 minutes, until golden brown. Meanwhile, reduce the red wine to 25ml and add the chicken stock and roasted bones. Bring to the boil then simmer for 45 minutes. Strain Stir in the xantham gum and season with salt, vinegar and 50g of the fig puree",
+      "Sieve, then add the fennel seeds, garlic and thyme and infuse for 1-2 minutes. Sieve again and reserve",
+      "For the confit fennel, cut the fennel into 2cm thick sections,keeping the root intact. Put a little oil in a large pan and add the sections cut side down, season with salt and sweat for 2-3 minutes on each side",
+      "Add the Pernod, Noilly Prat and star anise and cover. Cook for 20-30 minutes or until tender",
+      "For the fig and fennel purée, put the oil, fennel, water and salt in a pan, cover and sweat over a high heat until soft",
+      "Add the milk, bring to the boil and then pour into a blender. Add 60g of the fig purée and blend. Pass through a fine sieve",
+      "For the confit figs, split the figs in half lengthways and put on a baking tray cut side up. Coat with the reduced red wine. Place under a low grill for 5 minutes or until the figs are and soft. Sprinkle with fennel powder",
+      "Season the duck breasts and put them into a cold frying pan skin side down over a low heat. Slowly cook the breasts until they start to brown and the fat renders out, which should take about 10-15 minutes. Once they are golden brown turn over and cook for a further 2-3 minutes. Remove from the pan and leave to rest",
+      "To finish the duck legs, heat the oven to 180°C/gas mark 6. Scrape away any excess fat, place on an oven rack over a roasting tin and cook for 15-20 minutes until heated through and the skin is crispy",
+      "For the Swiss chard, remove the leaves and blanch in salted boiling water, then refresh in iced water. Warm through in the duck sauce when needed",
+      "To plate, cut the duck breast in half and remove the bone from the duck leg and cut into two. Spoon some sauce into the centre of the plate. Place a droplet of purée onto the side of the plate.",
+      "Position a piece of the duck breast on top of the sauce, with a piece of the confit duck to the right\r\nPlace a confit fig and confit fennel to the left, and scatter the plate with the chard. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Duck Legs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Fat",
+        "unit": "L",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rock Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chinese Five-spice Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Figs",
+        "unit": "g",
+        "notes": "dried",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Bones",
+        "unit": "g",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "ml",
+        "notes": null,
+        "amount": "1000",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "g",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "28",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme Leaves",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Seeds",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel Bulb",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pernod",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Noilly Prat",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Star Anise",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Figs",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": "reduced by half",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fennel",
+        "unit": "g",
+        "notes": "finely chopped",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Duck Breasts",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Swiss Chard",
+        "unit": "g",
+        "notes": "stems removed",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "8f82b67e1d2ccb1493a0d4fc7e198310e20d78c15e89128977e3dd1025498a5a",
+    "lineage_hash": "c6177f281210c601d415ba03e19dd13f1915c987966a9cbbf9874108e9aa19dd"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/duck-breast-fig-recipe",
+    "fetchedAt": "2026-08-03T17:29:22.217Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/duck-breast-fig-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

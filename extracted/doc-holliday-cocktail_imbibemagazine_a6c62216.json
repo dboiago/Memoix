@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "name": "Doc Holliday Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Highball",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Combine the first 3 ingredients and shake with ice. Pour the contents into a highball glass. Add the huckleberry tea. Add ice to fill the glass. Garnish.\nMacerated HuckleberriesStir 1 cup of fresh, ripe huckleberries, 2 Tbsp. of superfine sugar, and zest from 1 lime together and refrigerate overnight."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Light Sugarcane Rum",
+        "unit": "oz",
+        "notes": null,
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Macerated Huckleberries",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Huckleberry-flavored Black Tea",
+        "unit": "oz",
+        "notes": "find it at culinaryteas.com or well-stocked tea shops, chilled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ffbaa5be2cb158f26b7c1e1025dad31f762839fd8aba6db90a5d7e4fe982471c",
+    "lineage_hash": "c18cdf9b7fd1255ad61f6971ddc93b419e9fe27e98db2fae152b1ea92a330cdb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/doc-holliday-cocktail-recipe/",
+    "fetchedAt": "2026-08-04T00:09:59.803Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/doc-holliday-cocktail-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

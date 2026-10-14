@@ -1,0 +1,104 @@
+{
+  "recipe": {
+    "name": "Creamy Red Pepper Cashew Dip",
+    "time": "20 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "209",
+      "carbohydrateContent": "13",
+      "fatContent": "15",
+      "proteinContent": "8"
+    },
+    "directions": [
+      "Add the raw cashews, 1/2 cup non-dairy milk, the red pepper, nutritional yeast, garlic, lemon juice, chili powder, and salt to a blender. Combine until smooth, stopping to scrape the sides as needed, and adding up to 1/2 cup more non-dairy milk as needed to reach desired consistency."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Raw Cashews",
+        "unit": "C",
+        "notes": "see nots, soaked or boiled",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plant-based Milk",
+        "unit": "C",
+        "notes": "such as soy or almond",
+        "amount": "½-1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "A Red Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Nutritional Yeast",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "minced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Chili Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "eeb8c91fef8d3874c12a3a40a947c067b8cebf288a98ac3a5d08e9334e1deacf",
+    "lineage_hash": "b5e9788d1b2115404b839ec9fa985999076f249b7c50efa2b5c39705c25901ac"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://itdoesnttastelikechicken.com/creamy-red-pepper-cashew-dip/",
+    "fetchedAt": "2026-08-01T21:25:19.947Z"
+  },
+  "rawSource": "https://itdoesnttastelikechicken.com/creamy-red-pepper-cashew-dip/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

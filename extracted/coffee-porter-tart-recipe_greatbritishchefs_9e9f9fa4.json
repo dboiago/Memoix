@@ -1,0 +1,260 @@
+{
+  "recipe": {
+    "name": "Coffee Porter Tart",
+    "time": "1 hr 45 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by preparing the ice cream. Add the reduced Porter, espresso, milk, vanilla pods and instant coffee to a pan and bring to just below boiling point. Meanwhile, add the sugar and egg yolks to a heatproof bowl and whisk together until pale",
+      "Slowly pour the contents of the pan into the egg and sugar mixture, whisking to combine, then transfer back to the pan and cook until the mix reaches 82°C. Stir in the whipping cream, then freeze the mixture in Pacojet containers and blitz for 1 hour before using. Alternatively, churn in an ice cream maker according to manufacturers instructions",
+      "For the tart, melt the butter in a pan over a medium heat and, once melted, add the golden syrup, malt, beer and double cream. Whisk together until combined, then add the egg and egg yolks to the mix, whisking in quickly. Add the lemon juice and whisk again to combine",
+      "Pour the mix onto the oats and mix to combine. Spread the mixture out in a 10 x 10cm shallow, lined baking tray and bake in the oven for 30 minutes. Once baked, allow to cool to room temperature",
+      "To prepare the candied pecans, which will be used in the parfait and as a garnish, add the sugar to a pan and heat until a light caramel forms. As soon as it reaches this stage, remove from the heat, add the toasted pecans, then transfer to a tray and allow the candied pecans to cool",
+      "Once cool, break into a coarse crumb, keeping half for the parfait and the other half for garnish",
+      "For the parfait, add the milk, vanilla pods and extract to a pan and bring to the boil. Meanwhile, whisk together the egg yolks and sugar in a heatproof bowl, then whisk half of the boiling milk into the egg mix until combined",
+      "Pour this back into the pan with the milk and cook to 85°C. Add the gelatine, stir to dissolve and pass through a sieve into a bowl. Allow the mixture to cool completely, then fold in the semi-whipped cream",
+      "Fold in half of the reserved crushed pecans, then transfer to a piping bag. Pipe into silicon circular moulds and place in the freezer until completely set",
+      "To serve, slice the tart into thin slices and divide onto plates. Warm the outsides of the parfait moulds, then turn out onto a surface, cut in half and place a half onto each plate. Sprinkle the pecan crumb on top, followed by some whole and roughly chopped pecan halves and a quenelle of the ice cream. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Coffee Porter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Golden Syrup",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Malt Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oats",
+        "unit": "g",
+        "notes": null,
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coffee Porter",
+        "unit": "g",
+        "notes": "reduced to 20g",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Espresso",
+        "unit": "ml",
+        "notes": "reduced to 10ml",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pods",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Coffee Granules",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "85",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whipping Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "g",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolk",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gelatine Leaf",
+        "unit": null,
+        "notes": "bloomed in ice water",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": "semi-whipped",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pecan Nuts",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4b0f28fc3fc5c529f5e61532029147d81ec1ed1f27ab49399683199df6f5d2a7",
+    "lineage_hash": "38601feab2df3bc0b149ce3b68e2d68145ca4e770f50bf033ade84df99aed580"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/coffee-porter-tart-recipe",
+    "fetchedAt": "2026-08-03T21:59:14.696Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/coffee-porter-tart-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

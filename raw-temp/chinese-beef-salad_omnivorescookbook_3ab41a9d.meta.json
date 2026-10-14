@@ -1,0 +1,64 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-beef-salad/",
+  "slug": "chinese-beef-salad_omnivorescookbook_3ab41a9d",
+  "title": "Chinese Beef Salad",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-01T17:03:46.502Z",
+  "ldName": "Chinese Beef Salad",
+  "ldTime": "PT10M",
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "2",
+    "2 to 4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Appetizer",
+  "ldKeywords": "home style",
+  "ldIngredientsRaw": [
+    "1 cup homemade braised beef shank (, thinly sliced (or roast beef deli meat))",
+    "1  stalk Chinese celery (, thinly sliced (or 1/2 stalk regular celery, diced))",
+    "1  green onion (, thinly sliced)",
+    "2  birds eye chilis (, sliced (Optional))",
+    "1/4 cup cilantro (, chopped)",
+    "1 tablespoon peanuts (, chopped)",
+    "2  to 3 tablespoons homemade chili oil",
+    "2 teaspoons light soy sauce",
+    "1 teaspoon Chinkiang vinegar",
+    "1 tablespoon broth from homemade braised beef shank (, heated up in the microwave (Optional) (*Footnote 1))"
+  ],
+  "ldInstructionsRaw": [
+    "Combine the dressing ingredients in a small bowl, stir, and set aside.",
+    "Add to a bowl the beef shank, celery, green onion, chilis, and half of the cilantro and peanuts. Drizzle the dressing onto it and gently toss.",
+    "Plate the salad, drizzle with some extra chili oil if desired, and garnish with the remaining cilantro and peanuts."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "157 kcal",
+    "carbohydrateContent": "1.1 g",
+    "proteinContent": "13.8 g",
+    "fatContent": "10.8 g",
+    "saturatedFatContent": "2.2 g",
+    "cholesterolContent": "38 mg",
+    "sodiumContent": "184 mg",
+    "fiberContent": "0.4 g",
+    "sugarContent": "0.3 g"
+  },
+  "htmlIngredientLines": [
+    "1 cup homemade braised beef shank , thinly sliced (or roast beef deli meat)",
+    "1 stalk Chinese celery , thinly sliced (or 1/2 stalk regular celery, diced)",
+    "1 green onion , thinly sliced",
+    "2 birds eye chilis , sliced (Optional)",
+    "1/4 cup cilantro , chopped",
+    "1 tablespoon peanuts , chopped",
+    "[Dressing]",
+    "2  to 3 tablespoons homemade chili oil",
+    "2 teaspoons light soy sauce",
+    "1 teaspoon Chinkiang vinegar",
+    "1 tablespoon broth from homemade braised beef shank , heated up in the microwave (Optional) (*Footnote 1)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

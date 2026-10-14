@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "name": "Christmas Ice Cream",
+    "time": "40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Split the vanilla pod lengthways with the tip of a sharp knife and scrape the inside to remove the seeds. Add both the pod and the seeds to a heavy-based saucepan with the milk and bring to the boil. Once boiling, remove from the heat and set aside - remember to remove the scraped out vanilla pod",
+      "In a separate bowl, whisk together the sugar and egg yolks until creamy in colour. Then, gradually whisk in the hot milk",
+      "Pour the mixture into a separate saucepan over a low-medium heat and keep stirring with a wooden spoon until the mix thickens in consistency enough to coat the back of the spoon. Do not allow to boil as the mix will curdle",
+      "Gently incorporate the crumbled Christmas pudding and continue to stir gently",
+      "Pour the contents of the pan into a large bowl and allow to cool slightly",
+      "Meanwhile, whip the double cream until soft peaks form and add to the bowl, along with the drops of vanilla essence",
+      "Churn in an ice cream maker, or if you do not have this piece of equipment, simply place the mix into the freezer and whisk every once in a while until it has frozen"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Christmas Pudding",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Essence",
+        "unit": "drops",
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "d45f6e8507a7d5541bd16fed4230454cd962cc7cc79e0e3a0e92cb3fcede50ea",
+    "lineage_hash": "97f88fa1a2b03b5c59f1ce8abf2b31f12693c2c2016b6c5e48537b7e0912bbd1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/christmas-ice-cream-recipe",
+    "fetchedAt": "2026-08-03T15:00:41.944Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/christmas-ice-cream-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

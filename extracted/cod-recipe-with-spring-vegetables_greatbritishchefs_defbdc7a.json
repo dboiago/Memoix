@@ -1,0 +1,204 @@
+{
+  "recipe": {
+    "name": "Cod Recipe with Spring Vegetables",
+    "time": "1 hr",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, prepare the vegetables. Prepare the artichokes by trimming the stems until about 5cm long. Snap away the outer leaves until the paler centre leaves are revealed",
+      "Use a vegetable peeler to remove any remaining hard outer leaves and cut across the top of the artichoke to reveal the ‘choke’ inside. Scoop out the chokes using a spoon and place immediately into acidulated water to prevent discolouration, if not cooking immediately",
+      "To cook the artichokes, bring a large pan of water to the boil and add a good pinch of salt. Add the prepared artichokes and cook until tender",
+      "Meanwhile, boil the Jersey Royals until tender, then drain and allow to cool slightly. Cut lengthways into quarters and set aside",
+      "Cook the peas and broad beans separately in salted boiling water, then drain (reserving a little pea cooking liquid for later). Shell the broad beans. Steam or boil the asparagus until tender, depending on your preference",
+      "Set all of your cooked vegetables aside while you prepare the butter sauce. Add the shallots, white wine and white wine vinegar to a saucepan and cook until the shallots are tender and you’re left with approximately 1 tsp of liquid in the pan – it should not be too dry. Whisk the butter into the shallots over a gentle heat. Once smooth and combined, pass the sauce through a sieve into a clean pan and set aside",
+      "To cook the cod, whisk together the lemon juice, olive oil and water to combine. Place the cod portions in an ovenproof pan or baking dish and drizzle over the liquid",
+      "Place in the oven and cook gently in the oven for 5–6 minutes, depending on the thickness of your cod. After this time, gently prod the fish to check how much resistance it has. Once ready, remove from the oven, season and set aside",
+      "While the cod is cooking, add the cooked vegetables to a pan with 8 tbsp of the pea cooking liquid, the lemon juice and a good glug of oil. Gently warm the vegetables in the mixture for approximately 5 minutes, until the vegetables have heated through nicely. Season to taste",
+      "To serve, divide the vegetables between plates and top with the cod. Drizzle over the butter sauce and scatter with chopped mint and parsley"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Portions",
+        "unit": null,
+        "notes": "weighing 150–180g each",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Globe Artichokes",
+        "unit": "small",
+        "notes": null,
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jersey Royal Potatoes",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Broad Beans",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus Spears",
+        "unit": null,
+        "notes": null,
+        "amount": "12",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Extra Virgin Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Shallots",
+        "unit": null,
+        "notes": "peeled and very finely sliced",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Wine Vinegar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "diced",
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Flat-leaf Parsley",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint Leaves",
+        "unit": "Tbsp",
+        "notes": "finely chopped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "7786d34e54ab3ffe61d9c77616402e7209c7348ab51e02108b1b6cf61182fd1f",
+    "lineage_hash": "a013b192ca5e5244c8759e7c7a0266526c9260ea250664b39c8df8e9ca367607"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/cod-spring-vegetables-recipe",
+    "fetchedAt": "2026-08-03T09:59:52.495Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/cod-spring-vegetables-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

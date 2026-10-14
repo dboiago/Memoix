@@ -1,0 +1,83 @@
+{
+  "recipe": {
+    "name": "Calypso: A Tropical Port Cocktail",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add all of the ingredients to a shaker, add ice, then shake vigorously. Double-strain into a rocks glass with a large cube, then garnish."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Barbados Rum",
+        "unit": "oz",
+        "notes": "Armani/Ristorante 5th Avenue uses Mount Gay Eclipse",
+        "amount": "1½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tawny Port",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pineapple Juice",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "oz",
+        "notes": "fresh",
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Italicus Rosolio Di Bergamotto",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Simple Syrup",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "db810b319d154231febc82a93a07b38444e4cc9e7085c5c86faaf3e4a226f4eb",
+    "lineage_hash": "148b88ddfacf47551fa94c10ad6d4d9b9fdde0a1075dc35d9a8494ab4c0de8ca"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/calypso-tropical-port-cocktail/",
+    "fetchedAt": "2026-08-03T19:21:17.074Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/calypso-tropical-port-cocktail/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

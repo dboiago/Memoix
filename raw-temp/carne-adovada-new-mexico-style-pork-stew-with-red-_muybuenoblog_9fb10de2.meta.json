@@ -1,0 +1,73 @@
+{
+  "url": "https://muybuenoblog.com/carne-adobada/",
+  "slug": "carne-adovada-new-mexico-style-pork-stew-with-red-_muybuenoblog_9fb10de2",
+  "title": "Carne Adovada (New Mexico-Style Pork Stew With Red Chiles)",
+  "byline": "Yvette Marquez-Sharpnack | Muy Bueno",
+  "fetchedAt": "2026-08-02T01:05:40.193Z",
+  "ldName": "Carne Adovada (New Mexico-Style Pork Stew With Red Chiles)",
+  "ldTime": "PT220M",
+  "ldPrepTime": "PT5M",
+  "ldCookTime": "PT35M",
+  "ldYield": [
+    "6",
+    "6 to 8 servings"
+  ],
+  "ldCuisine": "Mexican",
+  "ldCategory": "Appetizer, Main Course",
+  "ldKeywords": "Mexican pork, pork taco filling, taco filling",
+  "ldIngredientsRaw": [
+    "3  dried ancho chiles (stemmed and seeded)",
+    "3  dried guajillo chiles (stemmed and seeded)",
+    "3  dried pasilla chiles (stemmed and seeded)",
+    "3 cups water",
+    "2  garlic cloves",
+    "1/2   medium onion",
+    "1 cup white vinegar",
+    "1 1/2 teaspoons coarse salt",
+    "1/4 teaspoon ground cumin",
+    "1/2 teaspoon freshly ground black pepper",
+    "1/2 teaspoon dried oregano",
+    "1/4  teaspoon  ground cinnamon",
+    "2 pounds pork shoulder roast (chopped)",
+    "2 tablespoons vegetable oil"
+  ],
+  "ldInstructionsRaw": [
+    "In a medium saucepan, bring the dried chiles and water to a boil over high heat. Cover, reduce the heat to low, and simmer for about 5 minutes, until the chiles have softened. Remove from the heat and cool to room temperature. Drain.",
+    "Blend the softened chiles, garlic, onion, vinegar, salt, cumin, pepper, oregano, and cinnamon in a blender until smooth.",
+    "In a large bowl or baking dish, mix together the pork and chile purée until the meat is coated. Cover with plastic wrap and refrigerate for at least 3 hours and up to overnight.",
+    "In a large skillet, heat the oil over high heat. Add the carne adobada and cook for 10 to 15 minutes, until the meat is cooked through. Cover, reduce the heat to low, and simmer, stirring occasionally, for 12 to 15 minutes, until most of the juices from the meat and adobo sauce have evaporated and the meat has started to brown.",
+    "Serve with beans and rice, or use as a filling for tacos."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "calories": "255 kcal",
+    "sugarContent": "8 g",
+    "sodiumContent": "677 mg",
+    "fatContent": "12 g",
+    "saturatedFatContent": "6 g",
+    "carbohydrateContent": "15 g",
+    "fiberContent": "6 g",
+    "proteinContent": "20 g",
+    "cholesterolContent": "62 mg",
+    "servingSize": "1 serving"
+  },
+  "htmlIngredientLines": [
+    "▢ 3 dried ancho chiles, stemmed and seeded",
+    "▢ 3 dried guajillo chiles, stemmed and seeded",
+    "▢ 3 dried pasilla chiles, stemmed and seeded",
+    "▢ 3 cups water",
+    "▢ 2 garlic cloves",
+    "▢ 1/2  medium onion",
+    "▢ 1 cup white vinegar",
+    "▢ 1 1/2 teaspoons coarse salt",
+    "▢ 1/4 teaspoon ground cumin",
+    "▢ 1/2 teaspoon freshly ground black pepper",
+    "▢ 1/2 teaspoon dried oregano",
+    "▢ 1/4  teaspoon  ground cinnamon",
+    "▢ 2 pounds pork shoulder roast, chopped",
+    "▢ 2 tablespoons vegetable oil"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "MX",
+  "siteCourseHint": null
+}

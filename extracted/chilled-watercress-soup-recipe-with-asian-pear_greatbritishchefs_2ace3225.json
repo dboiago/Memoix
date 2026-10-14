@@ -1,0 +1,127 @@
+{
+  "recipe": {
+    "name": "Chilled Watercress Soup With Asian Pear",
+    "time": "25 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Melt the butter in a large pan over a medium heat. Add the onions and sauté until translucent. Add the watercress (reserving some leaves for garnish), the milk and 700ml cold water to the pan and bring to the boil",
+      "Once boiled, remove from the heat. Ladle the mixture into a food processor and liquidise until smooth. Season with salt and pepper",
+      "Peel the pear, remove the core then cut into fine strips and dress with the lemon juice and sugar",
+      "Boil the peas for 2-3 minutes then drain",
+      "Serve the soup either hot or cold, and garnish with the peas, dressed Asian pear and a few watercress leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Onions",
+        "unit": null,
+        "notes": "peeled and finely sliced",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Watercress Leaves",
+        "unit": "bunches",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "700",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asian Pear",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peas",
+        "unit": "Tbsp",
+        "notes": "fresh",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Pepper",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1c5f73d131cd15666e0f6398153dd5613b0f04421810bdedefd0199934a7a673",
+    "lineage_hash": "345edf0178e299c7e71cb1a6f93c7e12f9adc5a7e82ba0927ee3b34495e5389b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chilled-watercress-soup-recipe-asian-pear-peas",
+    "fetchedAt": "2026-08-03T22:15:14.540Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chilled-watercress-soup-recipe-asian-pear-peas",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

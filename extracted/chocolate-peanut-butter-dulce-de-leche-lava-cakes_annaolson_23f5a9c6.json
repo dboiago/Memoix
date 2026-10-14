@@ -1,0 +1,130 @@
+{
+  "recipe": {
+    "name": "Chocolate Peanut Butter & Dulce de Leche Lava Cakes",
+    "time": "35 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "CA",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Prepare the dishes. Grease six 5 oz (150 mL) ramekins and dust with cocoa powder to coat evenly, tapping out any excess.",
+      "Melt the chocolate and butter. Fill a pot with an inch (2.5 cm) of water and bring to a gentle simmer over medium heat. Set a metal bowl on top, add the chocolate and butter and stir gently until smooth. Remove from the heat to cool for 5 minutes.",
+      "Whisk the eggs, egg yolks, sugar and vanilla together by hand until combined, then whisk vigorously by hand for a minute more. This final minute builds in structure, but you won’t see any visible difference.",
+      "Whisk in the melted chocolate followed by the cocoa powder, cornstarch and salt until combined.",
+      "Portion part of the batter and freeze. Divide half of the batter between the six ramekins and put them in the freezer for 15 minutes.",
+      "Finish the filling. Remove the ramekins from the freezer. Spoon 1 tsp each of the peanut butter and dulce de leche into the centre of each ramekin. Divide the remaining cake batter equally among the ramekins. Chill the lava cakes, uncovered, until ready to bake. (You can make lava cakes up to a day ahead.)",
+      "Preheat the oven to 375°F (190°C).",
+      "Bake the cakes. Place the ramekins on a baking tray and bake for 20 minutes, until the cakes lose their shine on the surface. Let the cakes rest for 5 minutes. To serve, run a small palette knife around the inside edge of each ramekin. Place a small plate over one ramekin at a time and invert both together. Lift the ramekin off and serve immediately while warm."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Dark Baking/couverture Chocolate",
+        "unit": "oz",
+        "notes": "210 g, chopped",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "Tbsp",
+        "notes": "90 g, diced, plus extra for greasing",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": "large",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "C",
+        "notes": "100 g",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cocoa Powder",
+        "unit": "Tbsp",
+        "notes": "7 g, plus extra for dusting",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "Tbsp",
+        "notes": "8 g",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Fine Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smooth Peanut Butter",
+        "unit": "Tbsp",
+        "notes": "30 g",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dulce De Leche",
+        "unit": "Tbsp",
+        "notes": "30 mL",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "70d2d519306d11b1fef8e62782e1c905760f7b9f403a9102acc84d822d008033",
+    "lineage_hash": "85232934de0cf33e6af29889ff8aaec1c180e331668aee86f892bf9c8be7a1ba"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://annaolson.ca/project/chocolate-peanut-butter-dulce-de-leche-lava-cakes/",
+    "fetchedAt": "2026-08-01T20:01:45.717Z"
+  },
+  "rawSource": "https://annaolson.ca/project/chocolate-peanut-butter-dulce-de-leche-lava-cakes/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

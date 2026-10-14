@@ -1,0 +1,108 @@
+{
+  "recipe": {
+    "name": "Corn Yuzu Hot Sauce Coleslaw",
+    "time": null,
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "DK",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Add the cabbage, carrots, and spring onion to a large mixing bowl.",
+      "Add the lemon zest and juice, mayonnaise, Greek yogurt, and Corn Yuzu Hot Sauce. Season generously with salt and toss well until nicely incorporated. This dish can be prepared ahead of time to ensure more time with your guests!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Carrot",
+        "unit": null,
+        "notes": "grated",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Cabbage",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pointed Cabbage",
+        "unit": null,
+        "notes": "finely sliced",
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onion",
+        "unit": "bunch",
+        "notes": "finely sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mayonnaise",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "to taste",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Corn Yuzu Hot Sauce",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "ee4bb90f336d6a8cd531f3432b73eab2bc78880af664209b33dc0e4c183b62ff",
+    "lineage_hash": "4a3eb5441e829e7f651d64e12e68e018677198801a44b0b1b0ff81077a440576"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://nomaprojects.com/blogs/recipes/corn-yuzu-hot-sauce-coleslaw",
+    "fetchedAt": "2026-08-01T22:49:12.774Z"
+  },
+  "rawSource": "https://nomaprojects.com/blogs/recipes/corn-yuzu-hot-sauce-coleslaw",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,76 @@
+{
+  "recipe": {
+    "name": "Coquito",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": "Rum",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Blend the milks, rum and egg yolks until frothy; chill in the refrigerator. Pour into glasses, sprinkle with cinnamon and serve with cinnamon sticks. Makes 4 cups.",
+      "Homemade Coconut Milk: Combine 1 (8-ounce) package of unsweetened shredded coconut with 4 cups of hot filtered water in a blender and blend until creamy. Line a bowl with dampened cheesecloth. Pour the coconut milk into the cheesecloth and squeeze out any excess liquid. Store in a jar in the refrigerator for up to 1 week. Homemade coconut milk will separate, so shake before use. Makes 4 cups. When fresh coconut milk is required, but not available, use a BPA- free can of unsweetened coconut milk. Shake the can vigorously before opening. Pour the coconut milk into a bowl, and let stand for several hours. Then squeeze through cheesecloth."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Homemade Coconut Milk",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sweetened Condensed Milk",
+        "unit": "can",
+        "notes": "14-oz.",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Puerto Rican Rum",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "lightly beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ground Cinnamon",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "39f5ce7f14f04bd03f89a6ead9267cc4b628056d4f90149146da17b8b511dbcf",
+    "lineage_hash": "1294f352a4f7a66f70e57de6bb98003cf7d6b3896a80792d2ae58f8f08380586"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/coquito-recipe/",
+    "fetchedAt": "2026-08-03T19:59:13.533Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/coquito-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

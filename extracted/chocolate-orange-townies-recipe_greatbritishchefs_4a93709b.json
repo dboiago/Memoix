@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chocolate orange townies",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "For the pastry, heap the flour on the work surface and make a large well in the centre. Place the butter, icing sugar and salt in the well, and cream the three ingredients together with your fingertips",
+      "Add the egg yolks and delicately work them in with your fingertips",
+      "Bit by bit, draw the flour into the centre and rub the mixture between your fingertips until the dough comes together. Knead 3 or 4 times until completely smooth, then roll into a ball, wrap with clingfilm and rest in the fridge for at least 10 minutes",
+      "On a lightly floured work surface, roll out the dough to 3mm thickness, and cut out rounds slightly larger than the tart tin diameter. Place the rounds into the tart tin, and press the dough gently into the tin. Roll over the edge with a rolling pin to trim the excess pastry. If you have time, rest for 20 minutes in the fridge",
+      "Prick the pastry bases with a fork, and line with baking paper and baking beans. Bake for 5-10 minutes, making sure that the edges don’t colour too quickly",
+      "Remove the paper and baking beans, being careful as they will be hot, and bake for another 5 minutes, or until the base is lightly golden",
+      "Meanwhile for the filling, place the chocolate and butter in a heatproof bowl over a saucepan of simmering water (do not let the base of the bowl touch the water). Leave until melted and smooth",
+      "Remove from the heat. Add the sugar, flour and orange zest and stir until well mixed. Then stir in the eggs with the orange zest, and mix until thick and smooth",
+      "Pour the filling into the tart shells, and bake for 5 minutes. Reduce the heat to 140˚C and bake for a further 5-8 minutes, or until flaky on the top and soft in the centre",
+      "Leave to cool in the tins before turning them out. Warm in a low oven before serving with whipped cream"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": "slightly softened, cut into small pieces",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "roughly chopped",
+        "amount": "140",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange",
+        "unit": null,
+        "notes": "zested",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "f98bc147a13279ef0cecdd8ad1e0a1cc2355bca7d207458cf8fcfb4a4870f31d",
+    "lineage_hash": "2911826758f0e05350592d9c4623439cad60099883edf9a6f6794d40d70d7ba6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-orange-townies-recipe",
+    "fetchedAt": "2026-08-03T23:40:20.666Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-orange-townies-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

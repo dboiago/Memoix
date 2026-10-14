@@ -1,0 +1,185 @@
+{
+  "recipe": {
+    "name": "Chocolate Custard-Filled Choux Bun",
+    "time": "1 hr 15 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "30",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To begin, make the choux. Gently heat the milk, water, butter, salt and sugar in a saucepan until melted together, then add the flour. Beat the mixture over a moderate heat until it's smooth and comes away from the sides of the pan when mixed. Transfer to the Vitamix, select Variable 5 and start blending. Remove the vent and add the eggs, one at a time, blending between each addition until smooth and incorporated",
+      "Increase the speed to Variable 7 and mix for 30 seconds or so, regularly using the tamper to drive the dough into the blades. Transfer to a piping bag and allow to cool",
+      "To make the chocolate custard, heat the milk and cream in a saucepan with the scraped vanilla pod (but not the seeds). Meanwhile, whisk the egg yolks with the sugar and vanilla seeds until pale and thick. Pour the milk over the egg mixture while whisking constantly. Return to a clean pan and cook the mixture over a low heat, stirring continuously until it reaches 75°C (or any bubbles on the surface have nearly disappeared)",
+      "When ready, remove the vanilla pod and pour the custard into the Vitamix over the chocolate. Blend on Variable 1, gradually increasing to Variable 5, then leave to mix for 3 minutes to emulsify. Pour into a bowl to cool before transferring to a piping bag fitted with a fine nozzle",
+      "To make the lime syrup, bring the sugar, water and lime juice to the boil in a saucepan. Remove from the heat and grate in the lime zest",
+      "Pipe balls of choux about the size of a 2 pence piece onto a tray lined with parchment paper and cook for 15 minutes. Reduce the oven temperature to 160°C/gas mark 3, cook for a further 5 minutes then remove form the oven and allow to cool",
+      "To serve, cut a small hole in each choux bun and fill with the chocolate custard. Drizzle the lime syrup over the buns, transfer to a plate and grate over a little extra lime zest. Serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "53%",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Pod",
+        "unit": null,
+        "notes": "seeds scraped",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Juice",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": "from 1 lime",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lime Zest",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "893ea3838e07050b6ea858ab9ebead6b482a3b23be3ef6eda8fd9b5fb4e40948",
+    "lineage_hash": "7856d95b7497c6536882917d05b90319eeede2deed6614270c8b56f01d7a7ee8"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/chocolate-custard-choux-buns-recipe",
+    "fetchedAt": "2026-08-03T10:13:21.276Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/chocolate-custard-choux-buns-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

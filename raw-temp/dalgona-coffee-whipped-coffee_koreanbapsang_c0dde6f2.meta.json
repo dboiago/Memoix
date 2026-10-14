@@ -1,0 +1,38 @@
+{
+  "url": "https://www.koreanbapsang.com/dalgona-coffee-whipped-coffee/",
+  "slug": "dalgona-coffee-whipped-coffee_koreanbapsang_c0dde6f2",
+  "title": "Dalgona Coffee (Whipped Coffee)",
+  "byline": "Hyosun",
+  "fetchedAt": "2026-08-01T21:42:04.311Z",
+  "ldName": "Dalgona Coffee",
+  "ldTime": null,
+  "ldPrepTime": "PT10M",
+  "ldCookTime": null,
+  "ldYield": [
+    "1"
+  ],
+  "ldCuisine": "Asian, Korean",
+  "ldCategory": "Drinks",
+  "ldKeywords": null,
+  "ldIngredientsRaw": [
+    "2 tablespoons instant coffee",
+    "2 tablespoons sugar",
+    "2 tablespoons hot water",
+    "1 cup milk"
+  ],
+  "ldInstructionsRaw": [
+    "Add the coffee, sugar and hot water to a large bowl.",
+    "Whip it with a hand mixer until the mix turns to light caramel color and frothy, about 3 to 4 minutes. Start at a low speed and increase to a higher speed after the coffee and sugar are dissolved. Scrape down the sides with a rubber spatula once or twice during whipping. Or, whisk it vigorously by hand with a whisk (or spoon). This will take much longer, depending on how thick you want your whipped coffee to be.",
+    "Fill up a cup with about a ⅔ to ¾ way up with milk along with some ice cubes, if desired, and top it with the whipped coffee. A rubber spatula works great to scrape it off from the bowl. You can use warm milk if you want."
+  ],
+  "ldNutritionRaw": null,
+  "htmlIngredientLines": [
+    "▢ 2 tablespoons instant coffee",
+    "▢ 2 tablespoons sugar",
+    "▢ 2 tablespoons hot water",
+    "▢ 1 cup milk"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "KR",
+  "siteCourseHint": null
+}

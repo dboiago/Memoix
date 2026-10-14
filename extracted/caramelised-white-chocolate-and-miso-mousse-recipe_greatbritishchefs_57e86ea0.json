@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Caramelised White Chocolate and Miso Mousse",
+    "time": "30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Begin by making the granita. Dissolve the sugar into the espresso, stir in the tequila then place in a suitable container and freeze for at least 4 hours (this step can of course be done well in advance)",
+      "Preheat an oven to 190°C/gas mark 5. Break the white chocolate into pieces and place on a silicone mat or in a non-stick baking dish. Bake for 8-10 minutes, mixing the chocolate every few minutes to ensure an even colour – the edges will brown faster than the centre. Once brown and caramelised, scrape into a beaker or jug and set aside",
+      "Pour the cream, oat cream or coconut milk into a pan and bring to the boil, then pour into the jug with the caramelised chocolate and add the miso. Use a stick blender to blitz the mixture until smooth",
+      "Pour the aquafaba through a sieve into the bowl of a stand mixer with a whisk attached (or use a handheld electric whisk). Whisk until the aquafaba thickens and becomes very stiff, then add the xanthan gum and whisk again until very stiff. Pour this over the chocolate mix and fold together, then place in the fridge for a few hours to firm up",
+      "When ready to serve, place the cocoa nibs in a frying pan and toast over a medium heat for a few minutes until they turn shiny. Use a hot spoon to scoop 2 large spoonfuls of mousse onto each plate, then use a fork to scrape the frozen coffee mixture into a snow-like granita. Add this over the top of the mousse then finish with the toasted cocoa nibs"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Espresso",
+        "unit": "ml",
+        "notes": null,
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tequila",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Chocolate",
+        "unit": "g",
+        "notes": "or non-dairy white chocolate",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "g",
+        "notes": "oat cream or coconut milk",
+        "amount": "90",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Miso Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Aquafaba",
+        "unit": "g",
+        "notes": "from a can of chickpeas",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Xanthan Gum",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅓",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cacao Nibs",
+        "unit": "g",
+        "notes": "to serve",
+        "amount": "40",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0b9d86641a634c6c672e89fd134c2ed612691be154210d5f0ee0bc5fdee799bb",
+    "lineage_hash": "fbfa0b4e506f92544311dc84c2cd453bd4ace0b23a9922cca975c65ee77222bb"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/white-chocolate-miso-mousse-recipe",
+    "fetchedAt": "2026-08-03T04:13:18.082Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/white-chocolate-miso-mousse-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

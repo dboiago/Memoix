@@ -1,0 +1,114 @@
+{
+  "recipe": {
+    "name": "Baked Cod",
+    "time": "40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Preheat the oven to 180°C/gas mark 4. Rinse the rice under cold water for 1-2 minutes and set aside to drain",
+      "Add the rice and water to a pan and place over a high heat. Bring to the boil, then cover and reduce to the lowest heat possible",
+      "Cook for 35-40 minutes, stirring after this time to make sure all the water has been absorbed",
+      "Meanwhile, squeeze the olives between your thumb and forefinger to remove the pips",
+      "Place the tomatoes, olives, garlic, capers and sugar into an ovenproof pan and cook gently on a low to medium heat for 15 minutes, stirring occasionally",
+      "Carefully place the fish into the pan and spoon over the tomato sauce to make sure the cod is completely submerged",
+      "Bring the sauce back to a gentle simmer and then place into the oven to cook for 10-12 minutes, or until the cod is cooked through and tender",
+      "Dish the cod up onto plates along with the brown rice and scatter the basil leaves over the top. Spoon over the remaining sauce and serve immediately"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Fillets",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Tinned Chopped Tomatoes",
+        "unit": "g",
+        "notes": null,
+        "amount": "800",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "peeled",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": "torn",
+        "amount": "8",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Rice",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "650",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "31c9ec5e67c35f71392459c1340b9bb67feb25172869187c6314e4ca894796ac",
+    "lineage_hash": "5741d65d86f9a0c9b432460b6b47b9d4d410e196a9a2142fb151e510128c4c10"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/baked-cod-recipe-tomato-sauce",
+    "fetchedAt": "2026-08-03T21:16:03.316Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/baked-cod-recipe-tomato-sauce",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,82 @@
+{
+  "recipe": {
+    "name": "Dutch Coupe",
+    "time": "2 min",
+    "course": "drinks",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "NL",
+    "glass": "Coupe",
+    "garnish": [
+      "Orange Zest Twist"
+    ],
+    "subcategory": "Whiskey",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "196",
+      "carbohydrateContent": null,
+      "fatContent": null,
+      "proteinContent": null
+    },
+    "directions": [
+      "STIR all ingredient with ice and strain into chilled glass."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Barrel Aged Genever",
+        "unit": "ml",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vermouth Alla Vaniglia",
+        "unit": "ml",
+        "notes": null,
+        "amount": "15",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cynar/carciofo Amaro",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Bitters",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Flower Water",
+        "unit": "drop",
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "0d2c29b1a7d2945c579881b67f1c06c7e8c78dadc32c6e11052b01dd7e9e935c",
+    "lineage_hash": "522d071144eb7d1bcb69d9834e8b1f020cafe7b0de5dd79195f830dd405c7988"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.diffordsguide.com/cocktails/recipe/4119/dutch-coupe",
+    "fetchedAt": "2026-08-03T12:32:01.051Z"
+  },
+  "rawSource": "https://www.diffordsguide.com/cocktails/recipe/4119/dutch-coupe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,111 @@
+{
+  "recipe": {
+    "name": "Asparagus with Hempseed Chutney",
+    "time": "20 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Bring a pan of salted water to the boil. Prep the asparagus, removing any particularly woody ends, then blanch the spears in the boiling water for 1 minute. Drain and plunge into iced water to halt the cooking process",
+      "To make the chutney, lightly toast the hemp seeds in a dry frying pan until toasty and golden (make sure they don’t burn). Set them aside, then lightly toast the cumin seeds in the same pan",
+      "Place the hemp seeds in a blender with the toasted cumin seeds, chillies, herbs and lemon juice. Blitz, adding a splash of water as needed, until you have a pesto-like consistency. Season to taste with salt then transfer to an airtight container. The chutney will keep in the fridge for up to a week",
+      "When ready to serve, light a barbecue or heat a griddle pan over a high heat. Brush the blanched asparagus with a little oil and salt, then grill or griddle until nicely charred all over",
+      "To serve, spread a bed of chutney on the base of a plate. Put the asparagus on top, drizzle over a little more chutney and sprinkle over a few sliced mint leaves"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Asparagus",
+        "unit": "bunch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Hulled Hemp Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cumin Seeds",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Green Chillies",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Coriander",
+        "unit": "g",
+        "notes": "fresh, roughly chopped",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Mint",
+        "unit": "g",
+        "notes": "fresh, roughly chopped, plus a few sliced leaves to garnish",
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Rapeseed Oil",
+        "unit": "dash",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "4a42cdde4b2bfba818a0613f180ec3245d52b023c43f61223be3c644c213cc73",
+    "lineage_hash": "909ac3956b34bfb4c450eeb29cd0d0e1676291d896c2804a1123e15ae755b459"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/asparagus-hempseed-chutney-recipe",
+    "fetchedAt": "2026-08-02T19:09:47.992Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/asparagus-hempseed-chutney-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,247 @@
+{
+  "recipe": {
+    "name": "Blackberry Marshmallow Cake",
+    "time": "1 hr 40 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": null,
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To make the chocolate cake, preheat the oven to 170°C/gas mark 3. Grease and line the bases of two 6 inch deep cake tins with baking parchment and set aside",
+      "Place the cocoa powder, vanilla extract and boiling water in a bowl and whisk until completely combined. Set aside",
+      "Add the softened butter and both types of sugar to the bowl of a stand mixer. Beat them together until pale and creamy. You may need to scrape the sides of the bowl down to make sure they are mixed evenly",
+      "Add the eggs to the butter mixture a little at a time and beat between each addition so that the ingredients are combined. It may look a little gloopy, but that’s fine",
+      "When all of the eggs have been added, scrape in the chocolate mixture and beat well to combine",
+      "Add the salt, baking powder and a third of the flour to the mixing bowl. Beat to combine, scraping down the sides as necessary. When all of the flour has been mixed in, add another third of the flour and half of the milk. When fully mixed add the remaining flour and milk and combine",
+      "Divide the mixture evenly between the two cake tins, smooth the tops so they are as even as possible and bake in the preheated oven for 60 minutes or until a skewer comes out clean",
+      "When cooked, leave the cakes to cool completely in their tins, then turn them onto a wire rack, removing the greaseproof paper from the bottom",
+      "To make the blackberry jam combine 60g of the sugar and the blackberry purée in a saucepan and heat gently until all of the sugar has dissolved",
+      "In a small bowl, mix the remaining 60g of sugar and pectin together and add to the saucepan. Stir to mix it in evenly and cook the mixture until it reaches 104°C. Add the liqueur, cook for a couple more minutes then place in a sterilised jar and leave to cool until you add the lid. This makes more jam than you need, so you’ll have some leftover for breakfast",
+      "To make the buttercream, combine the butter and icing sugar in the bowl of a stand mixer and beat them together at a low speed. When the butter and icing sugar are blended together, add the milk and beat further. Finally, add the marshmallow fluff and beat until fully combined",
+      "Take the cooled cakes and trim the tops to make them flat. Cut each cake in half so you have four layers of cake. Place a blob of buttercream on a plate or cake stand to secure the sponge and put the first layer of cake on top of it. Pipe a ring of buttercream around the edge of the cake and spread an even layer of jam inside the ring",
+      "Place the other piece of cake on top, pipe a ring of buttercream around the edge of the cake and spread a layer of jam inside the ring. Add the top layer of the other cake as the third layer and pipe a ring of buttercream and fill it with jam. The final layer should be the bottom layer of the final cake – ensure the bottom of the cake is now the top so that the flat side is facing upwards",
+      "Spread a thin layer of buttercream on the outside of the cake and the top, you will still be able to see the cake through the buttercream. This crumb coat is just to make icing the cake easier. Place the cake in the fridge for 45 minutes to firm up",
+      "When the icing is firm, spread the rest of the icing over the cake, reserving a little so that you can pipe blobs on top of the cake",
+      "Return the cake to the fridge and make the glaze by adding the butter and chocolate to a saucepan and heating gently until they both melt and mix together",
+      "Allow the glaze to cool to room temperature, then using a spoon trickle the glaze over the edge of the cake so it drips down and then pour the remainder of the glaze over the top of the cake so that the top is covered",
+      "To make the chocolate decorations, prepare your tempered chocolate and spread onto strips of food grade acetate. Drag a cake comb along the strip to create lines of chocolate",
+      "While the chocolate is still wet, curve the acetate into a cylinder and place in a mug or other cylindrical object while it dries. Once dry, peel off the acetate and loosen the rings",
+      "Take the remaining buttercream and place it in a piping bag fitted with a French tip. Pipe a ring of blobs around the edge of the cake fill in the ring with blackberries and decorate with gold leaf and tempered chocolate curls",
+      "The cake can be stored at room temperature, but if it’s quite warm then it should be stored in the fridge as the marshmallow buttercream can melt a little"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cocoa Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "175",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Dark Brown Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "beaten",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "180",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberry Purée",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pectin",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cassis",
+        "unit": "Tbsp",
+        "notes": "or other blackberry liqueur",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Marshmallow Creme",
+        "unit": "g",
+        "notes": "such as Marshmallow Fluff",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "softened",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Icing Sugar",
+        "unit": "g",
+        "notes": "sifted",
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "45",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "70%",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dark Chocolate",
+        "unit": "g",
+        "notes": "tempered",
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Blackberries",
+        "unit": null,
+        "notes": "1 punnet",
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Gold Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "682c375abe533ea4b9dc269dce2a983d409688128cb64b048880bc8182e55c3f",
+    "lineage_hash": "7f8f24ec746ab979289847352fc8f6bea0c3621de0e359041be7f0b912cfe607"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/blackberry-marshmallow-cake-recipe",
+    "fetchedAt": "2026-08-03T12:10:04.084Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/blackberry-marshmallow-cake-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

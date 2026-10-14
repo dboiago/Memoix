@@ -1,0 +1,174 @@
+{
+  "recipe": {
+    "name": "Crispy Chickpea, Goat's Cheese and Spring Vegetable Salad",
+    "time": "50 min",
+    "course": "sides",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the olive oil in a frying pan over a medium-high heat. Once hot, add the chickpeas and fry until golden and crisp, shaking regularly, then remove to kitchen paper to drain. Sprinkle with flaky sea salt and smoked paprika and set aside",
+      "For the vinaigrette, place all of the ingredients in a small blender and blitz until smooth. Adjust the consistency with a dash of cold water as needed, then taste and season with salt and pepper. Set aside",
+      "Preheat a cast-iron griddle pan on a high heat. Once hot, char the spring onions until softening and lightly charred, then remove and leave to cool slightly",
+      "Toss all of the salad ingredients (except the goat’s cheese) in a large bowl with the vinaigrette, then transfer to a serving platter. Top with the crispy chickpeas and goat’s cheese, along with a little olive oil and salt and pepper"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": "plus extra to drizzle",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Jar of Cooked Chickpeas",
+        "unit": null,
+        "notes": "drained and patted dry",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Paprika",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Goat's Cheese",
+        "unit": "g",
+        "notes": null,
+        "amount": "70",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Honey",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple Cider Vinegar",
+        "unit": "g",
+        "notes": null,
+        "amount": "60",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Natural Yoghurt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon",
+        "unit": null,
+        "notes": "zested and juiced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Spring Onions",
+        "unit": "bunches",
+        "notes": "trimmed",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Asparagus",
+        "unit": "bunches",
+        "notes": "trimmed and shaved into ribbons",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Romanesco Cauliflower",
+        "unit": null,
+        "notes": "cut into small florets",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Radicchio",
+        "unit": null,
+        "notes": "shredded",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Winter Tomatoes",
+        "unit": "g",
+        "notes": "quartered",
+        "amount": "250",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Walnuts",
+        "unit": "g",
+        "notes": "toasted and roughly chopped",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pine Nuts",
+        "unit": "g",
+        "notes": "toasted",
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Soft Goat's Cheese",
+        "unit": "g",
+        "notes": "broken into pieces",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "fb9418b9d6d13283e77f7571ff9e24568aa1d49fb6201d7453450882ec345250",
+    "lineage_hash": "223fda1ef6a769172085624f99695982511c113d6f3d899281f348fd92d99e7b"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/crispy-fried-chickpeas-salad",
+    "fetchedAt": "2026-08-01T21:00:58.474Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/crispy-fried-chickpeas-salad",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

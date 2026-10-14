@@ -1,0 +1,138 @@
+{
+  "recipe": {
+    "name": "Cream Cheese & Berries Jam Bread Rolls",
+    "time": "1 hr 25 min",
+    "course": "breads",
+    "rating": 0,
+    "serves": "8",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Mix together active dry yeast, 5 gram sugar, and lukewarm milk. Set aside to bloom, or until foamy and frothy, about 10 minutes.",
+      "In a mixing bowl, sift together all-purpose flour, sugar, and salt. Make a well, then add in egg yolks, butter, and yeast solution. Knead until smooth and soft, only adding a bit of flour if necessary. Kneading time is about 20-30 minutes.",
+      "Place bread dough in a bowl, cover with a wet kitchen towel/saran plastic. Set aside to proof until volume is almost doubled, about 1 hour in a warm kitchen.",
+      "Meanwhile, let's make the filling. Mix together cream cheese and berries jam. Chill in the fridge until needed.",
+      "Once the bread has finished proofing, punch down to remove air bubbles. Then transfer the bread to a lightly floured work surface. Knead for 2 minutes, then divide into 8 portions.",
+      "Roll a portion of dough into a rectangle. Place 1.5 tablespoon of cream cheese and berries jam filling at lightly off center nearer the top of the dough. Fold the top part of dough over filling to encase, pinch lightly. Make thin slits to the bottom part of dough. Fold these toward the top to fully encase the filling.",
+      "Arrange bread on a baking tray lined with a parchment paper. Cover with wet kitchen towel/saran, and proof again for 45 minutes.",
+      "Preheat oven to 180 Celsius (350 Fahrenheit). Sprinkle the bread with some all-purpose flour, and bake in the preheated oven for 20-25 minutes."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Bread Dough",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Active Dry Yeast",
+        "unit": "g",
+        "notes": "1 packet, or 2 1/4 teaspoon",
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "~ 1 teaspoon",
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Milk",
+        "unit": "ml",
+        "notes": "13.5 tablespoon, 38 Celsius/100 Fahrenheit, lukewarm",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "All-purpose Flour",
+        "unit": "g",
+        "notes": "~ 3 cup",
+        "amount": "320-360",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": "~ 6 tablespoon",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "g",
+        "notes": "~ 2.5 tablespoon, softened",
+        "amount": "35",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream Cheese & Berries Jam Filling",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Block (8 Oz./227 Gram) Cream Cheese",
+        "unit": null,
+        "notes": "softened",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Berries Jam",
+        "unit": "g",
+        "notes": "any kind of berries jam is fine, I use blackberry for this post",
+        "amount": "80",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a78f34d72d24935a1712b5c1eec4655d5a3c3cfb56cba5c70d8b01bb12083ef1",
+    "lineage_hash": "56e861068956f5320d24a40f81e451c4906ac71f12120cff63fd9bb9472b2570"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://dailycookingquest.com/cream-cheese-berries-jam-bread-rolls.html",
+    "fetchedAt": "2026-08-02T00:54:02.921Z"
+  },
+  "rawSource": "https://dailycookingquest.com/cream-cheese-berries-jam-bread-rolls.html",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://omnivorescookbook.com/chinese-milky-fish-soup/",
+  "slug": "chinese-milky-fish-soup_omnivorescookbook_3eb1b7cf",
+  "title": "Chinese Milky Fish Soup (奶白鱼汤)",
+  "byline": "Maggie Zhu",
+  "fetchedAt": "2026-08-02T09:23:46.772Z",
+  "ldName": "Chinese Milky Fish Soup (奶白鱼汤)",
+  "ldTime": "PT45M",
+  "ldPrepTime": "PT15M",
+  "ldCookTime": "PT30M",
+  "ldYield": [
+    "4",
+    "4 servings"
+  ],
+  "ldCuisine": "Chinese",
+  "ldCategory": "Soup",
+  "ldKeywords": "homestyle",
+  "ldIngredientsRaw": [
+    "2 whole (about 1 lb) sea carp ((or 1 whole branzino) (*Footnote 1))",
+    "6 cups boiling water",
+    "2 tablespoons vegetable oil",
+    "1 tablespoon Shaoxing wine",
+    "1 thumb ginger (, sliced)",
+    "3  scallions (, halved crosswise, green part thinly sliced)",
+    "1 block firm tofu (, cut into bite sized pieces.)",
+    "1/2 teaspoon salt ((or to taste))",
+    "1/8 teaspoon white pepper ((*Optional) (*Footnote 2))"
+  ],
+  "ldInstructionsRaw": [
+    "When you purchase the fish, ask the fishmonger to gut and scale the fish. Before cooking, check to see if the fish is fully scaled by running your fingers from the tail of the fish to the head. Use kitchen shears to scale further if needed. Wash the fish thoroughly with cold tap water and drain. Score the fish with 1” space in between cuts. Dry the fish very thoroughly with paper towels.",
+    "Boil 6 cups of water, then reduce to low heat to keep it hot.",
+    "Add oil into a wok and heat over medium-high heat until smoking. Lower the fish carefully into the wok. Let cook without moving until the bottom is brown, 3 to 4 minutes. Flip the fish and add the ginger and scallion whites into the oil. Cook for 3 to 4 minutes until the bottom of the fish is browned.",
+    "Swirl in the Shaoxing wine along the side of the wok to deglaze. Use a wok spatula to detach the fish from the wok. Pour in the boiling water carefully down the side of the wok (*Footnote 3).",
+    "Cook over high heat until boiling, then turn to medium-high heat to maintain a rolling boil. Cook covered for 10 minutes. Add tofu and salt. Keep cooking for another 10 minutes.",
+    "Turn off the heat. Add white pepper if using. Adjust seasoning with more salt if needed. Garnish with scallion greens. Serve hot."
+  ],
+  "ldNutritionRaw": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 serving",
+    "calories": "112 kcal",
+    "carbohydrateContent": "2.2 g",
+    "proteinContent": "7.3 g",
+    "fatContent": "8.5 g",
+    "saturatedFatContent": "1.7 g",
+    "cholesterolContent": "11 mg",
+    "sodiumContent": "349 mg",
+    "fiberContent": "0.3 g",
+    "sugarContent": "1.2 g"
+  },
+  "htmlIngredientLines": [
+    "2 whole (about 1 lb) sea carp (or 1 whole branzino) (*Footnote 1)",
+    "6 cups boiling water",
+    "2 tablespoons vegetable oil",
+    "1 tablespoon Shaoxing wine",
+    "1 thumb ginger , sliced",
+    "3 scallions , halved crosswise, green part thinly sliced",
+    "1 block firm tofu , cut into bite sized pieces.",
+    "1/2 teaspoon salt (or to taste)",
+    "1/8 teaspoon white pepper (*Optional) (*Footnote 2)"
+  ],
+  "htmlIngredientConfig": "wprm",
+  "siteRegionHint": "CN",
+  "siteCourseHint": null
+}

@@ -1,0 +1,118 @@
+{
+  "recipe": {
+    "name": "Coffee Caramel Flan",
+    "time": "1 hr 30 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "6",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Place the sugar and water for the caramel into a small saucepan and place over medium heat and cook, swirling occasionally but definitely not stirring, until the sugar has dissolved, the mixture is bubbling and eventually turns to a rich golden brown.",
+      "Once at the desired colour add an extra tablespoon of hot water to thin the caramel a little (be careful, the water will make the caramel bubble violently). Divide the caramel evenly between the prepared moulds and set aside for the moment.",
+      "Add the milk, cream, vanilla and half of the sugar into a medium sized saucepan and add the coffee. Place the pan over medium heat and bring to a simmer. Remove the pan from the heat, cover, and set aside for about 30 minutes to allow to infuse.",
+      "Preheat the oven to 150ºC.",
+      "Bring the coffee mixture back to a simmer. Once at temperature pour the dairy through a fine mesh sieve to remove as much of the ground coffee as possible.",
+      "Place the eggs, salt and remaining sugar into a large bowl and whisk together just to combine. Your aim here is to combine everything without adding any air, bubbles are the enemy of a silky smooth custard.",
+      "Pour the infused dairy into the eggs, as you stir constantly to prevent the eggs from scrambling.",
+      "Divide the custard evenly between the moulds. If there are bubbles on the surface of the custard you can help them disappear by lightly waving a kitchen blowtorch over the surface and you’ll see any visible bubbles pop.",
+      "Cover each mould with a small piece of foil and place the custards into a large roasting tray (I use a 9x13 brownie tin) with a kitchen towel lining the base of the tin. Place the tin into the oven and carefully pour boiling water into the tin, adding enough to go about 1/2 way up the sides of the moulds.",
+      "Bake in the oven for about 40 minutes or until the custards are set around the outside with just a little wobble in the middle. Remove the tin from the oven and allow the custards to cool in the water for 30 minutes before removing and allowing to cool to room temperature.",
+      "Once room temperature place the custards in the fridge for at least 4 hours.",
+      "To serve, dip each mould in hot water for 5-10 seconds to loosen. Use a very thin knife to loosen the sides of the custard from the moulds and then invert onto a plate to serve."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "150",
+        "section": "Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "ml",
+        "notes": null,
+        "amount": "25",
+        "section": "Caramel",
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "ml",
+        "notes": null,
+        "amount": "550",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Double Cream",
+        "unit": "ml",
+        "notes": null,
+        "amount": "175",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Bean Paste",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Freshly Ground Coffee",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": null,
+        "amount": "5",
+        "section": "Coffee Custard",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "Coffee Custard",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "33385bb32e0bf17bdf3b8a9b95d94840d5310d0446f482c8ad59281d5cae6b23",
+    "lineage_hash": "f061fc14a6b3e862c8d6d2b6d951cac506fc4b1026dc7404f43c6294edb319b0"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.theboywhobakes.co.uk/recipes/2020/3/18/coffee-caramel-flan",
+    "fetchedAt": "2026-08-01T18:20:41.717Z"
+  },
+  "rawSource": "https://www.theboywhobakes.co.uk/recipes/2020/3/18/coffee-caramel-flan",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

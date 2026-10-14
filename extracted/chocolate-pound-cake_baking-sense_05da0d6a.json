@@ -1,0 +1,132 @@
+{
+  "recipe": {
+    "name": "Chocolate Pound Cake",
+    "time": "1 hr 25 min",
+    "course": "desserts",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "346",
+      "carbohydrateContent": "38",
+      "fatContent": "21",
+      "proteinContent": "5"
+    },
+    "directions": [
+      "Preheat the oven to at 350 °F. Butter and flour a 9\"x5\" loaf pan or Bundt pan.",
+      "Combine 3 large eggs, 4 egg yolks, 1 teaspoon vanilla extract and half the milk in a small bowl, whisk to combine and set aside.",
+      "Sift together 6 oz cake flour, 2 oz Dutch process cocoa powder, ¼ teaspoon table salt, 1 teaspoon baking powder and 1 tablespoon instant espresso powder in a mixing bowl. Add 10 oz granulated sugar to the flour and mix at low speed for 30 seconds. Add 9 oz unsalted butter to the flour and mix until combined. Add the other ½ of the milk and increase the speed to medium high. Mix for a full 2-3 minutes. The batter will lighten in color and texture. If your using a hand mixer add another minute or two to the mixing time.",
+      "Scrape the bowl and paddle thoroughly. On low speed, add the egg mixture in 3 increments, scraping the bowl after each addition. Mix just until the eggs are incorporated.",
+      "Pour the batter into the prepared pan and smooth to an even layer. Bake until a toothpick inserted in the middle comes out clean (about 55 minutes)."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "unit": "large",
+        "notes": "room temp",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg Yolks",
+        "unit": null,
+        "notes": "room temp",
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vanilla Extract",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Whole Milk",
+        "unit": "oz",
+        "notes": "¼ cup, divided",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cake Flour",
+        "unit": "oz",
+        "notes": "1 ½ cups, see note",
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Dutch Process Cocoa Powder",
+        "unit": "oz",
+        "notes": "½ cup",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Table Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Baking Powder",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Instant Espresso Powder",
+        "unit": "Tbsp",
+        "notes": "optional",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Granulated Sugar",
+        "unit": "oz",
+        "notes": "1 ¼ cups",
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Unsalted Butter",
+        "unit": "oz",
+        "notes": "room temp",
+        "amount": "9",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "17756d270eda63f522f65e1f405000fe41481319323b30d4d148ee28374ce860",
+    "lineage_hash": "66fd78c025d8f3f10f8f7b6ff97f20f6ec06fcf5a231284bf0c13daa1587b1c6"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.baking-sense.com/2019/12/13/chocolate-pound-cake/",
+    "fetchedAt": "2026-08-02T04:31:09.908Z"
+  },
+  "rawSource": "https://www.baking-sense.com/2019/12/13/chocolate-pound-cake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

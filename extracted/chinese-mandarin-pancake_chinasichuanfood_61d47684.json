@@ -1,0 +1,77 @@
+{
+  "recipe": {
+    "name": "Chinese Mandarin Pancake",
+    "time": "50 min",
+    "course": "brunch",
+    "rating": 0,
+    "serves": "12",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "128",
+      "carbohydrateContent": "19",
+      "fatContent": "4",
+      "proteinContent": "2"
+    },
+    "directions": [
+      "Pour the flour into a large bowl. Prepare boiling water and a pair of chop stickers. Slowly pour the water in, at the meantime stir the flour in one direction immediately. Then pour the cold water with the same process.",
+      "Wait for the flour to cool down to room temperature. Then knead the dough until smooth (around 6-10 minutes, you can use a stand mixer to help this process). Cover with wet towel and set aside for 20 to 30 minutes.",
+      "Transfer the dough into a floured surface. Roll the dough into a long strip and then cut into 10 equal sections. Press each a little bit to a thick wrapper.",
+      "Prepare two wrappers. Brush some oil on top of one wrapper, and also the bottom of the other one. Press the two together. Roll the overlapped pancake to a large circle.",
+      "Brush some oil in your pan and then fry the pancake over middle heat until one side becomes slightly browned, turn over to fry the other side until slightly browned too.",
+      "Tear one pancake from the other one."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "All-purpose Flour",
+        "unit": "C",
+        "notes": null,
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Boiling Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cold Water",
+        "unit": "C",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sesame Oil",
+        "unit": "Tbsp",
+        "notes": "alt: other vegetable oil",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "e8fbfcf89b0eb6a300a41f66bef8632811130e957822b04fa480a6d419aa7819",
+    "lineage_hash": "0396c609c81e1fbd52bc124490ef696c25030a8557694189c1ab6edf74ea0455"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.chinasichuanfood.com/chinese-mandarin-pancake/",
+    "fetchedAt": "2026-08-01T21:16:49.308Z"
+  },
+  "rawSource": "https://www.chinasichuanfood.com/chinese-mandarin-pancake/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

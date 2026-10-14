@@ -1,0 +1,78 @@
+{
+  "recipe": {
+    "name": "Basil Smash",
+    "time": null,
+    "course": "drinks",
+    "rating": 0,
+    "serves": "10",
+    "source": "scraped",
+    "cuisine": "US",
+    "glass": "Rocks",
+    "garnish": [
+      "Basil Leaf"
+    ],
+    "subcategory": "Vodka",
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "In a large shaker tin, muddle the basil, lemon and cordial. Add the remaining spirits and shake with ice. Strain into a rocks glass and add fresh ice cubes. Smack a basil leaf to release its flavorful oils, then place it on the drink as a garnish.",
+      "Grapefruit CordialFirst wash, then peel a medium grapefruit, reserving the peel. Juice the grapefruit. Whatever volume of juice you get from your grapefruit, add the same amount of white granulated sugar. One medium grapefruit typically yields 1 cup of juice. Stir or shake to dissolve the sugar into the juice. Add the grapefruit peels to your juice/sugar mixture and gently press with a muddler or the back of a wooden spoon to release the oils, cover, refrigerate and let sit 24 hours. Strain off your peels, cover, refrigerate and use within 1 week."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "unit": "oz",
+        "notes": "Peake uses Tito’s",
+        "amount": "1¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "St. Germain",
+        "unit": "oz",
+        "notes": null,
+        "amount": "¾",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Grapefruit Cordial",
+        "unit": "oz",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Basil Leaves",
+        "unit": null,
+        "notes": null,
+        "amount": "5",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Wedges",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "a9b538a23677f0ff8cd7236abca3b2cad6b64f2d47c7ed3435a6dc33fdf199ad",
+    "lineage_hash": "98ad1632bb2f264fd88190ddbc9d711bb4dc6993de2c4d76fed27a61b9a4a6c4"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://imbibemagazine.com/recipe/basil-smash-recipe/",
+    "fetchedAt": "2026-08-04T00:01:46.219Z"
+  },
+  "rawSource": "https://imbibemagazine.com/recipe/basil-smash-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

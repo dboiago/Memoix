@@ -1,0 +1,394 @@
+{
+  "recipe": {
+    "name": "Duck, Apple, Foie Gras & Smoked Eel",
+    "time": "3 hr 40 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "GB",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "Start by placing a large pot of water on a high heat and bring to a boil. While waiting, move on to butchering the 2 ducks to separate the breasts from the legs - you should have 2 carcasses left over as a result. Reserve the breasts for cooking later",
+      "Preheat oven to 200°C/gas mark 6. Immerse the duck carcasses into boiling water for 1 minute then remove to drain. Roast the carcasses and legs in the oven until golden brown – this should take 30-40 minutes",
+      "While the bones are browning, place enough vegetable oil to cover the base of a large pot and place on a high heat. Caramelise the shallots and garlic until dark brown being careful not to burn. Add bay, thyme and juniper and cook for a further 2 minutes",
+      "Add red wine vinegar and reduce until almost dry. Add the red wine and reduce by two thirds. Add both the veal and chicken stock, plus the carcasses and bring to a boil. Reduce to a simmer for 45 minutes. Strain the contents through a fine chinoise and return to the heat with the duck legs and simmer to reduce by another two thirds",
+      "While the sauce is reducing, combine the orange juice, zest, brandy and port. Once the reduction is finished, add the orange juice mixture and strain. Add salt to taste and elderberries before serving",
+      "For the foie gras, place a dry heavy based pan on a high heat until it begins to smoke. Add the large dice of foie gras and sauté until it turns dark brown",
+      "Meanwhile, place the yoghurt in a blender and add the remaining ingredients, including the hot sautéed foie gras and season while still warm. Blend until just combined. Store in a suitable container to set in refrigerator",
+      "Take the duck breasts and remove the skin. Dip the top of the breasts in the flour, egg and then the breadcrumbs to create a crust. Heat some butter and oil in a pan until the butter starts to foam. Then, place the duck breast in the hot pan and cook until the breadcrumbs are golden brown",
+      "For the orange jelly, reduce 200ml of orange juice on a low heat until you have a syrup-like consistency, approximately three quarters. Add the remaining juice, salt, sugar, vinegar and whisk in vegetal. Return to the heat and bring to a boil. Remove from the heat and strain. Set in a rectangular tray lined with cling film",
+      "Start on the apple purée by placing the butter in a medium sized saucepan on a medium heat. Add the peeled diced apple and remaning ingredients. Cook until the apple is tender, remove from the heat and blend while warm until smooth",
+      "Preheat oven to 160°C/gas mark 3. Line a large baking tray with silicon paper and place potatoes flat and evenly on tray. Brush with clarified butter and season lightly. Place another layer of silicon paper on top of the potatoes and another baking tray on top to keep the potatoes flat. Bake for 8 minutes, then turn the potatoes and bake for a further 8. Cool on resting rack and season to taste",
+      "For the breasts, cook in a water bath for 25 minutes at 60˚C. Remove from the water and place on a tray to cool. Once the breasts have cooled to room temperature, preheat the oven to 180˚C/gas mark 4. Arrange the flour, eggs, and panko in separate bowls. Season the flour with a little salt",
+      "Dredge the skin side of the duck breasts in flour, then eggs, then panko breadcrumbs. Heat the butter and oil in an ovenproof pan and briefly fry the breasts for a few minutes until the breadcrumbs turn golden brown",
+      "Transfer the pan to the oven and cook for a further 4 minutes. Remove from the oven and allow to rest for a further 3 minutes. While the duck is resting, heat a small amount of butter in a small pan on a medium heat. When hot, add the watercress, cook until wilted and season to taste",
+      "Warm the eel in the oven for 2 minutes, whilst letting the apple purée reach room temperature. Heat up the duck sauce to a simmer. Place a small bed of watercress on one side of the plate, a piece of eel in the middle, a small open sandwich of foie gras yoghurt, using two potato crisps as the outer layers",
+      "Smear the apple purée around the other components and place the hot duck breast on the bed of watercress. Garnish with the duck sauce, micro cress and some freshly sliced apple"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Ducks",
+        "unit": "medium",
+        "notes": "breasts reserved",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Banana Shallots",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": null,
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Bay Leaf",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Thyme",
+        "unit": "sprig",
+        "notes": "fresh",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Juniper Berries",
+        "unit": null,
+        "notes": null,
+        "amount": "4",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Red Wine",
+        "unit": "ml",
+        "notes": null,
+        "amount": "400",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Veal Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brown Chicken Stock",
+        "unit": "L",
+        "notes": null,
+        "amount": "1.6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": "plus zest",
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Port",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Brandy",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Punnet of Elderberries",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "g",
+        "notes": "large dice",
+        "amount": "150",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Foie Gras",
+        "unit": "g",
+        "notes": "small dice",
+        "amount": "75",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Greek Yoghurt",
+        "unit": "g",
+        "notes": null,
+        "amount": "125",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Pink Salt",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "pinch",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Orange Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetal Powder",
+        "unit": "g",
+        "notes": null,
+        "amount": "7",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sherry Vinegar",
+        "unit": "ml",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "10",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elison Orange Apples",
+        "unit": null,
+        "notes": "large",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salted Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Lemon Juice",
+        "unit": "ml",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Caster Sugar",
+        "unit": "g",
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Maris Piper Potatoes",
+        "unit": "large",
+        "notes": "2mm, washed and sliced thinly",
+        "amount": "3",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Ghee",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt to Season",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Butter",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Vegetable Oil",
+        "unit": "ml",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Plain Flour for Dusting",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Panko Breadcrumbs (1)",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Eggs",
+        "unit": null,
+        "notes": "whisked",
+        "amount": "2",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Apple",
+        "unit": "slices",
+        "notes": null,
+        "amount": "16",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Smoked Eel Fillet",
+        "unit": "g",
+        "notes": "bone and sinew removed, cut into small squares",
+        "amount": "200",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Handful of Watercress",
+        "unit": null,
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Elderberries",
+        "unit": null,
+        "notes": null,
+        "amount": "20",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "9f51a0d234d5e308ed7c9681f35d40736142a1fac51de12b8607c6975c57ab27",
+    "lineage_hash": "d24edb151313b918c04f92315c37e5015019a06995988f6d92b4c161479e796d"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatbritishchefs.com/recipes/wild-duck-recipe-apple-smoked-eel",
+    "fetchedAt": "2026-08-03T20:34:03.732Z"
+  },
+  "rawSource": "https://www.greatbritishchefs.com/recipes/wild-duck-recipe-apple-smoked-eel",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

@@ -1,0 +1,181 @@
+{
+  "recipe": {
+    "name": "Broccoli Stem Stir-fry",
+    "time": "45 min",
+    "course": "mains",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "241",
+      "carbohydrateContent": "8",
+      "fatContent": "18",
+      "proteinContent": "12"
+    },
+    "directions": [
+      "Thinly slice the meat against the grain, and then cut those slices lengthwise into thin strips. (This is easier to do when the meat is partially frozen.) Transfer to a medium bowl. Add the water, cornstarch, oil, and oyster sauce. Mix well, and set aside to marinate at room temperature while you prepare the rest of the dish.",
+      "Trim about ½ inch from the ends of your broccoli stems. Use a vegetable peeler to peel the fibrous outer layer from each stem. Slice the stems lengthwise, and fan out the slices straight across like you’re spreading a deck of cards. Then using a rocking back and forth motion, run your knife through to julienne the slices.",
+      "Prepare the sauce by combining the chicken stock, cornstarch, light soy sauce, dark soy sauce, and oyster sauce, sugar, and salt.",
+      "Place your wok over high heat until it’s just starting to smoke. Add 1 tablespoon of neutral oil, and tilt the wok to spread it evenly around the perimeter. Add the marinated meat in 1 layer, and let it sear for 30 to 40 seconds without moving, then stir-fry for another 30 to 40 seconds, until the meat is about 75% cooked. Remove from the wok, and set aside.",
+      "Let the empty wok heat again over high heat, and add the remaining tablespoon of oil, along with the garlic, broccoli stems, and bamboo shoots. Stir-fry for 30 seconds, then add the Shaoxing wine to deglaze the wok.",
+      "Add the meat back to the wok, along with any juices. Stir up the sauce mixture to ensure that the cornstarch is well-incorporated, and add it to the wok. Stir-fry over high heat for another minute, until the sauce is thick enough to coat a spoon. Serve with steamed rice."
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Beef",
+        "unit": "oz",
+        "notes": "partially frozen/thawed and julienned, boneless, chicken, or pork",
+        "amount": "8",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "tsp",
+        "notes": "such as canola, vegetable, or avocado oil",
+        "amount": "1",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "meat & marinade",
+        "isOptional": false
+      },
+      {
+        "name": "Broccoli Stems",
+        "unit": null,
+        "notes": "from two bunches broccoli",
+        "amount": "6",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Chicken Stock",
+        "unit": "C",
+        "notes": null,
+        "amount": "⅓",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Dark Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": "such as canola, vegetable, or avocado oil",
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic",
+        "unit": "clove",
+        "notes": "sliced",
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Canned Julienned Bamboo Shoots",
+        "unit": "oz",
+        "notes": "you get 5 ounces/140g drained from an 8-ounce/225g can or fresh bamboo shoots",
+        "amount": "5",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "67dd33ded46185692c18405ac1a445e7c29bd51ac245d961dcf5f7812f773f34",
+    "lineage_hash": "1d837da648da68612525a0d458d69572ce1bbdc689311f3bcebb4accd6f7574a"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/broccoli-stem-stir-fry-recipe/",
+    "fetchedAt": "2026-08-02T16:03:13.279Z"
+  },
+  "rawSource": "https://thewoksoflife.com/broccoli-stem-stir-fry-recipe/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

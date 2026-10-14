@@ -1,0 +1,186 @@
+{
+  "recipe": {
+    "name": "Beef with Pickled Peppers",
+    "time": "35 min",
+    "course": "pickles",
+    "rating": 0,
+    "serves": "4",
+    "source": "scraped",
+    "cuisine": "CN",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": {
+      "calories": "272",
+      "carbohydrateContent": "5",
+      "fatContent": "16",
+      "proteinContent": "25"
+    },
+    "directions": [
+      "Add the sliced beef to a medium bowl. Add the baking soda, cornstarch, water, oil, oyster sauce, and light soy sauce. Marinate for 20 minutes, or up to overnight.",
+      "Heat a wok over medium-high heat until it’s just smoking. Add the oil, spreading it evenly around the wok. Add the beef, spreading it out in one layer. When it’s seared on one side, stir-fry to cook until it’s medium-rare. Remove from the wok, leaving any oil behind.",
+      "Add the ginger, and let it infuse the oil. Add the garlic, Thai chilies, and celery. Stir-fry for 1 minute. Pour the Shaoxing wine around the perimeter of the wok. Use your wok spatula to deglaze the pan. Add the beef back, along with the sugar, white pepper, oyster sauce, and light soy sauce. Stir-fry, then stir in the pickled peppers. Serve!"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Flank Steak",
+        "unit": "lb",
+        "notes": "thinly sliced against the grain",
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Baking Soda",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Cornstarch",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Water",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Oil",
+        "unit": "tsp",
+        "notes": "any neutral oil, such as avocado, vegetable or canola oil",
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "beef",
+        "isOptional": false
+      },
+      {
+        "name": "Neutral Oil",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2½",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Piece of Ginger",
+        "unit": "inch",
+        "notes": "cut into thin slices",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Cloves",
+        "unit": null,
+        "notes": "roughly chopped",
+        "amount": "6",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Thai Bird’s Eye Chili Peppers",
+        "unit": null,
+        "notes": "you can also use red holland peppers for a milder flavor",
+        "amount": "5",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Celery",
+        "unit": "C",
+        "notes": "cut into thin 2-inch/5cm lengths on a diagonal—both Chinese celery and regular celery work well",
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Shaoxing Wine",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "2",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Sugar",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "¼",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "White Pepper",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "⅛",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Oyster Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Light Soy Sauce",
+        "unit": "tsp",
+        "notes": null,
+        "amount": "1",
+        "section": "rest of the dish",
+        "isOptional": false
+      },
+      {
+        "name": "Pepperoncini Peppers",
+        "unit": "C",
+        "notes": "thinly sliced; this is a substitute for spicier Chinese yellow pickled xiaomila peppers – 泡小米辣 – if you have these spicier Chinese variety, use 5-10 peppers, to taste",
+        "amount": "⅓-½",
+        "section": "rest of the dish",
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "1f3f7eda70c738f928b3c7f25dc2c67e933ab28598ccdba671e09dd15856995d",
+    "lineage_hash": "1a7a3dba79898e1599156b5cce86d6330d712ac1c9943fcd7d26d09c77c23633"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://thewoksoflife.com/beef-pickled-peppers/",
+    "fetchedAt": "2026-08-02T18:32:23.187Z"
+  },
+  "rawSource": "https://thewoksoflife.com/beef-pickled-peppers/",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}

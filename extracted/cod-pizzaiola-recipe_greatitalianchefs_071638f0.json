@@ -1,0 +1,162 @@
+{
+  "recipe": {
+    "name": "Cod Pizzaiola",
+    "time": "1 hr 30 min",
+    "course": "apps",
+    "rating": 0,
+    "serves": "1",
+    "source": "scraped",
+    "cuisine": "IT",
+    "glass": null,
+    "garnish": [],
+    "subcategory": null,
+    "comments": null,
+    "cookCount": 0,
+    "nutrition": null,
+    "directions": [
+      "To prepare the black olives, spread out onto a dehydrator tray and dry overnight at 60°C",
+      "The next morning, finely chop with a knife and store in an airtight container",
+      "To make the pizzaiola sauce, sweat the garlic in some olive oil then add the capers. Stir in the passata and oregano and cook for 30 minutes",
+      "After this time, blitz in a blender until smooth then reserve until needed",
+      "For the potato cream, boil the potatoes in salted boiling water until soft, then blend with the cream, 100g of the cooking water, the salt and olive oil. Transfer to a siphon, charge with 3 gas canisters and keep warm",
+      "Preheat a deep-fryer or deep pan of peanut oil to 180°C",
+      "To cook the cod, roll each piece in egg white, followed by the cornflour. Deep-fry the cod pieces until cooked through and crispy then drain on kitchen paper and season with salt",
+      "To serve, roll the cod in the pizzaiola sauce until very well-coated and place in serving dishes. Squirt a shot of the potato cream over the top, sprinkle over the black olive crumb and serve"
+    ],
+    "recipeType": "standard",
+    "ingredients": [
+      {
+        "name": "Cod Loin",
+        "unit": "g",
+        "notes": "cut into 4 portions",
+        "amount": "280",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Egg White",
+        "unit": "g",
+        "notes": null,
+        "amount": "30",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cornflour",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Peanut Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Garlic Clove",
+        "unit": null,
+        "notes": "sliced",
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Capers",
+        "unit": "Tbsp",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Passata",
+        "unit": "g",
+        "notes": null,
+        "amount": "300",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Oregano",
+        "unit": "sprig",
+        "notes": null,
+        "amount": "1",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": null,
+        "notes": null,
+        "amount": "0",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Potatoes",
+        "unit": "g",
+        "notes": "peeled",
+        "amount": "500",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Cream",
+        "unit": "g",
+        "notes": null,
+        "amount": "120",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Salt",
+        "unit": "g",
+        "notes": null,
+        "amount": "6",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Olive Oil",
+        "unit": "g",
+        "notes": null,
+        "amount": "50",
+        "section": null,
+        "isOptional": false
+      },
+      {
+        "name": "Black Olives",
+        "unit": "g",
+        "notes": null,
+        "amount": "100",
+        "section": null,
+        "isOptional": false
+      }
+    ],
+    "isFavourite": false,
+    "content_hash": "2c71fd0168f56c3117fb4f6d2fece80a4364448bbbeaf9b60c06a4807c4f4168",
+    "lineage_hash": "fe6762a06eb699b4388b384f2d56bac766e813ed62c1d6b8f0576133edc0d5c1"
+  },
+  "metadata": {
+    "appVersion": "corpus-pipeline",
+    "buildNumber": "0",
+    "sourceUrl": "https://www.greatitalianchefs.com/recipes/cod-pizzaiola-recipe",
+    "fetchedAt": "2026-08-02T01:39:30.481Z"
+  },
+  "rawSource": "https://www.greatitalianchefs.com/recipes/cod-pizzaiola-recipe",
+  "domainType": "recipe",
+  "schemaVersion": 2
+}
